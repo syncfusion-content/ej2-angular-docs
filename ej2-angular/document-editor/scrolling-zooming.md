@@ -61,191 +61,227 @@ this.documentEditor.fitPage('Fit page width');
 The following code example shows how to provide zoom options in document editor.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DocumentEditorComponent } from '@syncfusion/ej2-angular-documenteditor';
 import {
-    DocumentEditorComponent
-} from '@syncfusion/ej2-angular-documenteditor';
+  ItemModel,
+  DropDownButtonModule,
+} from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
-    selector: 'app-container',
-    template: `<div>
-     <ejs-documenteditor #documenteditor_editor (selectionChange)='onSelectionChange()' (viewChange)='onViewChange($event)' (documentChange)='onDocumentChange()' (created)="onCreated()" [enableSelection]=true [isReadOnly]=false height="330px" style="display:block"></ejs-documenteditor>
-    </div>
-    <div id="documenteditor_statusbar">
-        <label style="margin-top: 6px;margin-right: 2px">Page </label>
-        <div class="single-line e-de-pagenumber-text" (keydown)='pageKeydownEvent($event)' (click)='pagerClickEvent($event)' id="editablePageNumber" style="font-size:12px;font-weight: 700;display: inline-flex;height: 17px;padding: 0px 4px;" contenteditable="false">
-            <label id="documenteditor_page_no" style="text-transform:capitalize;white-space:pre;overflow:hidden;user-select:none;cursor:text;height:17px;max-width:150px">{{currentPage}}</label>
-        </div>
-        <label id="documenteditor_pagecount_separator" style="margin-left:2px;letter-spacing: 1.05px">of</label>
-        <label id="documenteditor_pagecount" style="margin-left:6px;letter-spacing: 1.05px">{{pageCount}}</label>
-        <button ejs-dropdownbutton class="e-de-statusbar-zoom" [items]="zoomItems" [content]="zoomContent" (select)="onZoom($event)" iconCss="e-ddb-icons e-profile"></button>
-    </div>
-    `,
-    encapsulation: ViewEncapsulation.None
+  imports: [
+    ButtonModule,
+    ToolbarModule,
+    DocumentEditorAllModule,
+    ComboBoxModule,
+    ColorPickerModule,
+    DropDownButtonModule,
+  ],
+
+  standalone: true,
+  selector: 'app-container',
+  template: `<div>
+  <ejs-documenteditor #document_editor height="330px" style="display:block" (created)="onCreated()" (selectionChange)='onSelectionChange()' (viewChange)='onViewChange($event)' (documentChange)='onDocumentChange()' [isReadOnly]=false [enableEditor]=true ></ejs-documenteditor>
+  <button ejs-dropdownbutton class="e-de-statusbar-zoom" [content]="zoomContent"  [items]="zoomItems" (select)="onZoom($event)" iconCss="e-ddb-icons e-profile"></button>
+ 
+  </div>
+  <div id="documenteditor_statusbar">
+       <label style="margin-top: 6px;margin-right: 2px">Page </label>
+       <div class="single-line e-de-pagenumber-text" (keydown)='pageKeydownEvent($event)' (click)='pagerClickEvent()' id="editablePageNumber" style="font-size:12px;font-weight: 700;display: inline-flex;height: 17px;padding: 0px 4px;" contenteditable="false">
+           <label id="documenteditor_page_no" style="text-transform:capitalize;white-space:pre;overflow:hidden;user-select:none;cursor:text;height:17px;max-width:150px"></label>
+       </div>
+       <label id="documenteditor_pagecount_separator" style="margin-left:2px;letter-spacing: 1.05px">of</label>
+       <label id="documenteditor_pagecount" style="margin-left:6px;letter-spacing: 1.05px"></label>
+ 
+   </div>`,
+  encapsulation: ViewEncapsulation.None,
 })
-
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
-    public zoomContent: string = "100%";
-    public zoomItems = [
-        {
-            text: '150%',
-        },
-        {
-            text: '125%',
-        },
-        {
-            text: '100%',
-        },
-        {
-            text: '75%',
-        },
-        {
-            text: '50%',
-        },
-        {
-            separator: true
-        },
-        {
-            text: 'Fit one page'
-        },
-        {
-            text: 'Fit page width',
-        }];
-    public pageCount: number = 1;
-    public currentPage: number = 1;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
+  public zoomContent: string = '100%';
+  public zoomItems: ItemModel[] = [
+    {
+      text: '200%',
+    },
+    {
+      text: '150%',
+    },
+    {
+      text: '125%',
+    },
+    {
+      text: '100%',
+    },
+    {
+      text: '75%',
+    },
+    {
+      text: '50%',
+    },
+  ];
+  public onZoom(args: any) {
+    let zoomValue = args.item.text;
 
-    onCreated(): void {
-        if (this.documentEditor.isDocumentLoaded) {
-            let sfdt: string = `{
-                "sections": [
-                    {
-                        "blocks": [
-                            {
-                                "paragraphFormat": {
-                                    "styleName": "Normal"
-                                },
-                                "inlines": [
-                                    {
-                                        "text": "First page"
-                                    }
-                                ]
-                            }
-                        ],
-                        "headersFooters": {},
-                    },
-                    {
-                        "blocks": [
-                            {
-                                "paragraphFormat": {
-                                    "styleName": "Normal"
-                                },
-                                "inlines": [
-                                    {
-                                        "text": "Second page"
-                                    }
-                                ]
-                            }
-                        ],
-                        "headersFooters": {},
-                    },
-                    {
-                        "blocks": [
-                            {
-                                "paragraphFormat": {
-                                    "styleName": "Normal"
-                                },
-                                "inlines": [
-                                    {
-                                        "text": "Third page"
-                                    }
-                                ]
-                            }
-                        ],
-                        "headersFooters": {},
-                    }
-                ],
-                "characterFormat": {},
-                "paragraphFormat": {},
-                "background": {
-                    "color": "#FFFFFFFF"
+    switch (zoomValue) {
+      case '50%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 0.5;
+        break;
+      case '75%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 0.75;
+        break;
+      case '100%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 1;
+        break;
+      case '125%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 1.25;
+        break;
+      case '150%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 1.5;
+        break;
+      case '200%':
+        (this.documentEditor as DocumentEditorComponent).zoomFactor = 2;
+        break;
+    }
+  }
+  public pageCount: number = 1;
+  public currentPage: number = 1;
+  onCreated(): void {
+    if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
+      let sfdt: any = {
+        sections: [
+          {
+            blocks: [
+              {
+                paragraphFormat: {
+                  styleName: 'Normal',
                 },
-                "styles": [
-                    {
-                        "type": "Paragraph",
-                        "name": "Normal",
-                        "next": "Normal"
-                    },
-                    {
-                        "type": "Character",
-                        "name": "Default Paragraph Font"
-                    }
-                ]
-            }`;
-            //Open the default document.
-            this.documentEditor.open(JSON.stringify(sfdt));
-        }
+                inlines: [
+                  {
+                    text: 'First page',
+                  },
+                ],
+              },
+            ],
+            headersFooters: {},
+          },
+          {
+            blocks: [
+              {
+                paragraphFormat: {
+                  styleName: 'Normal',
+                },
+                inlines: [
+                  {
+                    text: 'Second page',
+                  },
+                ],
+              },
+            ],
+            headersFooters: {},
+          },
+        ],
+        characterFormat: {},
+        paragraphFormat: {},
+        background: {
+          color: '#FFFFFFFF',
+        },
+        styles: [
+          {
+            type: 'Paragraph',
+            name: 'Normal',
+            next: 'Normal',
+          },
+          {
+            type: 'Character',
+            name: 'Default Paragraph Font',
+          },
+        ],
+      };
+      //Open the document in Document Editor.
+      (this.documentEditor as DocumentEditorComponent).open(
+        JSON.stringify(sfdt)
+      );
     }
+  }
+  public onViewChange(args: any) {
+    //Set current page number in status bar.
+    this.currentPage = args.startPage;
+  }
+  public onSelectionChange() {
+    ////Set current page number on selection change.
+    this.currentPage = (
+      this.documentEditor as DocumentEditorComponent
+    ).selection.startPage;
+  }
+  public onDocumentChange() {
+    //Get page count.
+    this.pageCount = (this.documentEditor as DocumentEditorComponent).pageCount;
+    this.zoomContent =
+      Math.round(
+        (this.documentEditor as DocumentEditorComponent).zoomFactor * 100
+      ) + '%';
+  }
+  // Handle page keydown event to allow for page navigation
+  public pageKeydownEvent(e: any) {
+    if (e.which === 13) {
+      e.preventDefault();
+      let pageNumber = parseInt(
+        document.getElementById('editablePageNumber')!.textContent!,
+        0
+      );
+      this.pageCount = (
+        this.documentEditor as DocumentEditorComponent
+      ).pageCount;
+      if (pageNumber > this.pageCount) {
+        // this.documentEditor!.pageCount) {
+        this.updatePageNumber();
+      } else {
+        this.documentEditor?.selection.goToPage(pageNumber);
+      }
+      document.getElementById('editablePageNumber')!.contentEditable = 'false';
+      if (document.getElementById('editablePageNumber')!.textContent === '') {
+        this.updatePageNumber();
+      }
+    }
+    if (e.which > 64) {
+      e.preventDefault();
+    }
+  }
 
-    public onViewChange(args: any) {
-        //Set current page number in status bar.
-        this.currentPage = args.startPage;
+  // Handle the page number blur event
+  public pageBlurEvent() {
+    if (
+      document.getElementById('editablePageNumber')!.textContent === '' ||
+      parseInt(document.getElementById('editablePageNumber')!.textContent!, 0) >
+        this.documentEditor!.pageCount
+    ) {
+      this.updatePageNumber();
     }
-    public onSelectionChange(args: any) {
-        ////Set current page number on selection change.
-        this.currentPage = this.documentEditor.selection.startPage;
-    }
-    public onDocumentChange() {
-        //Get page count.
-        this.pageCount = this.documentEditor.pageCount
-        this.zoomContent = Math.round(this.documentEditor.zoomFactor * 100) + '%';
-    }
-    public onZoom(args: any) {
-        let zoomValue = args.item.text;
-        if (zoomValue.match('Fit one page')) {
-            this.documentEditor.fitPage('FitOnePage');
-        } else if (zoomValue.match('Fit page width')) {
-            this.documentEditor.fitPage('FitPageWidth');
-        } else {
-            //Set zoom factor.
-            this.documentEditor.zoomFactor = parseInt(zoomValue, 0) / 100;
-        }
-        this.zoomContent = Math.round(this.documentEditor.zoomFactor * 100) + '%';
-    }
-    public pageKeydownEvent(e: any) {
-        if (e.which === 13) {
-            e.preventDefault();
-            let pageNumber = parseInt(document.getElementById("editablePageNumber").textContent, 0);
-            if (pageNumber > this.documentEditor.pageCount) {
-                this.updatePageNumber();
-            } else {
-                //Navigate to specified page number.
-                this.documentEditor.selection.goToPage(parseInt(document.getElementById("editablePageNumber").textContent, 0));
-            }
-            document.getElementById("editablePageNumber").contentEditable = 'false';
-            if (document.getElementById("editablePageNumber").textContent === '') {
-                this.updatePageNumber();
-            }
-        }
-        if (e.which > 64) {
-            e.preventDefault();
-        }
-    }
-    public pageBlurEvent() {
-        if (document.getElementById("editablePageNumber").textContent === '' || parseInt(document.getElementById("editablePageNumber").textContent, 0) > this.documentEditor.pageCountt) {
-            this.updatePageNumber();
-        }
-        document.getElementById("editablePageNumber").contentEditable = 'false';
-    }
-    public pagerClickEvent() {
-        document.getElementById("editablePageNumber").contentEditable = 'true';
-        document.getElementById("editablePageNumber").focus();
-        window.getSelection().selectAllChildren(document.getElementById("editablePageNumber"));
-    }
-    public updatePageNumber() {
-        //Update current page number.
-        this.currentPage = this.documentEditor.selection.startPage.toString();
-    }
+    document.getElementById('editablePageNumber')!.contentEditable = 'false';
+  }
+
+  // Handle page number click to enable editing
+  public pagerClickEvent() {
+    document.getElementById('editablePageNumber')!.contentEditable = 'true';
+    document.getElementById('editablePageNumber')!.focus();
+    window
+      .getSelection()
+      ?.selectAllChildren(document.getElementById('editablePageNumber')!);
+  }
+  public updatePageNumber() {
+    //Update current page number.
+    this.currentPage = (
+      this.documentEditor as DocumentEditorComponent
+    ).selection.startPage;
+  }
 }
 ```

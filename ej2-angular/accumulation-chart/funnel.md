@@ -124,6 +124,42 @@ Individual points can be customized using the `pointRender` event.
   
 {% previewsample "page.domainurl/samples/chart/series/funnel-cs7" %}
 
+## Modes
+
+The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`funnelMode`](https://helpej2.syncfusion.com/angular/documentation/api/accumulation-chart/funnelModes/) is `Standard`.
+
+### Standard
+
+The `Standard` funnel mode follows the traditional funnel shape, with the width continuously narrowing down to a point at the bottom.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/funnel-cs12/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/funnel-cs12/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs12" %}
+
+### Trapezoidal
+
+The `Trapezoidal` mode is a modified funnel shape where the width narrows, but features a flattened or parallel section near the top, creating a trapezoidal appearance. This mode helps compare different data points more clearly while maintaining a funnel-like structure.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/funnel-cs13/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/funnel-cs13/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs13" %}
+
 ## See Also
 
 * [Data label](./data-label/)

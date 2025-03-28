@@ -15,35 +15,92 @@ domainurl: ##DomainURL##
 DocumentEditorContainer allows you to add a new button to the existing items in a toolbar using [`CustomToolbarItemModel`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/customToolbarItemModel/) and with existing items in [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/#toolbaritems) property. Newly added item click action can be defined in [`toolbarclick`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/clickEventArgs/).
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations'
-import { DocumentEditorContainerComponent, ToolbarService, CustomToolbarItemModel } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import {
+  CustomToolbarItemModel,
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-root',
-      template: '<ejs-documenteditorcontainer [height]="600px" [toolbarItems]=items (toolbarClick)="onToolbarClick($event)" #documenteditor_default style="display:block;" [enableToolbar]=true></ejs-documenteditorcontainer>',
-      styleUrls: ['./app.component.css'],
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [toolbarItems]="items" 
+      (toolbarClick)="onToolbarClick($event)" 
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+  `,
 })
-export class AppComponent {
-    @ViewChild('documenteditor_default', { static: true })
-    container: DocumentEditorContainerComponent;
-    //Custom toolbat item.
-    public toolItem: CustomToolbarItemModel = {
-        prefixIcon: "e-save icon",
-        tooltipText: "Save the Document",
-        text: "Save",
-        id: "save"
-    };
-    public items = ['New' ,'Open', this.toolItem, 'Separator' ,'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
-    public onToolbarClick(args: ClickEventArgs): void {
-        switch (args.item.id) {
-            case 'save':
-                //Disable image toolbar item.
-                this.container.documentEditor.save('sample', 'Docx');
-                break;
-        }
-    };
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+
+  // Define custom toolbar item
+  public toolItem: CustomToolbarItemModel = {
+    prefixIcon: 'e-save icon',
+    tooltipText: 'Save the Document',
+    text: 'Save',
+    id: 'save',
+  };
+
+  // Define toolbar items array
+  public items = [
+    'New',
+    'Open',
+    this.toolItem,
+    'Separator',
+    'Undo',
+    'Redo',
+    'Separator',
+    'Image',
+    'Table',
+    'Hyperlink',
+    'Bookmark',
+    'TableOfContents',
+    'Separator',
+    'Header',
+    'Footer',
+    'PageSetup',
+    'PageNumber',
+    'Break',
+    'InsertFootnote',
+    'InsertEndnote',
+    'Separator',
+    'Find',
+    'Separator',
+    'Comments',
+    'TrackChanges',
+    'Separator',
+    'LocalClipboard',
+    'RestrictEditing',
+    'Separator',
+    'FormFields',
+    'UpdateFields',
+    'ContentControl',
+  ];
+
+  ngOnInit(): void {}
+
+  // Event handler for toolbar clicks
+  onToolbarClick(args: ClickEventArgs): void {
+    switch (args.item.id) {
+      case 'save':
+        //Disable image toolbar item.
+        this.container?.documentEditor.save('sample', 'Docx');
+        break;
+    }
+  }
 }
 ```
 

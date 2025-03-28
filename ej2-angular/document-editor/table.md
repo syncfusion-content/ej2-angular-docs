@@ -41,7 +41,7 @@ this.documentEditor.editor.insertRow();
 //Inserts a row above the row at cursor position
 this.documentEditor.editor.insertRow(false);
 //Inserts three rows below the row at cursor position
-this.documentEditor.editor.insertRow(true, 3)
+this.documentEditor.editor.insertRow(true, 3);
 ```
 
 ## Insert columns

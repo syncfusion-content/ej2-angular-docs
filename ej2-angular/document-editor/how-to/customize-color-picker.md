@@ -18,18 +18,37 @@ The following example code illustrates how to customize the color picker in the 
 
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
-import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "colorPickerSettings" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [documentEditorSettings]= "colorPickerSettings"
+      [enableToolbar]=true >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
-    public colorPickerSettings = {colorPickerSettings: { mode: 'Palette', modeSwitcher: true, showButtons: true }};
-    ngOnInit(): void {
-    }
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+  public colorPickerSettings = {
+    colorPickerSettings: {
+      mode: 'Palette',
+      modeSwitcher: true,
+      showButtons: true,
+    },
+  };
+  ngOnInit(): void {}
 }
 ```
 

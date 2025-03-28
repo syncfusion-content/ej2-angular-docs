@@ -65,7 +65,7 @@ The following code illustrates context menu click.
 
 ### Context menu open
 
-In certain situations, you may want to hide specific menu items based on the selected elements in the diagram. This can be achieved using the [`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs) event. When the context menu is opened via right-click, the `contextMenuOpen` event is triggered. Within this event, you can create an array of menu items to hide for the selected element and pass it to the [`hiddenItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs/#hiddenitems) property of the contextMenuOpen event argument. 
+In certain situations, you may want to hide specific menu items based on the selected elements in the diagram. This can be achieved using the [`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenuopen) event. When the context menu is opened via right-click, the `contextMenuOpen` event is triggered. Within this event, you can create an array of menu items to hide for the selected element and pass it to the [`hiddenItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs/#hiddenitems) property of the contextMenuOpen event argument. 
 
 The following example demonstrates how to display different custom menu items for nodes, connectors, and the diagram based on the selection.
 
@@ -122,7 +122,7 @@ In the following example, menu items are rendered with shortcut key codes for sp
 |Event|Description|
 |----|----|
 |[`contextMenuBeforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenubeforeitemrender)|Triggers while initializing each menu item.|
-|[`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs)|Triggers upon right-click before opening the context menu.|
+|[`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenuopen)|Triggers upon right-click before opening the context menu.|
 |[`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenuclick)|Triggers when a menu item is clicked.|
 
 The following example shows how to get these events.
