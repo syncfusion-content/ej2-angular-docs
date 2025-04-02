@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit } from '@angular/core';
 import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
 
@@ -15,7 +16,7 @@ interface Order {
 }
 
 @Component({
-    imports: [ GridModule],
+    imports: [ GridModule, ButtonModule],
     providers: [PageService],
     standalone: true,
     selector: 'app-root',

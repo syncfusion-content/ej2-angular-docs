@@ -73,6 +73,10 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started">TreeGrid</a></div>
          <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/getting-started">Spreadsheet</a></div>
+          <div><p class="controlcategory">INTERACTIVE CHAT
+         </p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ai-assistview/getting-started">AI AssistView</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chat-ui/getting-started">Chat UI</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Document Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started">In-place Editor</a></div>
@@ -143,6 +147,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started">Rating</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/otp-input/getting-started">OTP Input</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speech-to-text/getting-started">Speech To Text</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started">Query Builder</a></div>
     </td>
