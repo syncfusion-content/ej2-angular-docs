@@ -480,6 +480,7 @@ namespace EditTemplate.Server.Controllers
                     // Update the existing record.
                     data.OrderID = updatedOrder.OrderID;
                     data.CustomerID = updatedOrder.CustomerID;
+                    data.EmployeeID = updatedOrder.EmployeeID;
                     data.ShipCity = updatedOrder.ShipCity;
                     data.ShipCountry = updatedOrder.ShipCountry;
                 }
