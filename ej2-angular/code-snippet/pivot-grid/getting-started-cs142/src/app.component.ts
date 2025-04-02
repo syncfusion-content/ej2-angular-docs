@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, GroupingBarService, FieldRemoveEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, GroupingBarService, FieldRemoveEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,11 +21,11 @@ standalone: true,
   selector: 'app-container',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  (fieldRemove)='fieldRemove($event)' width=width></ejs-pivotview>`
+  (fieldRemove)='fieldRemove($event)' [width]=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     fieldRemove(args: FieldRemoveEventArgs): void {
         if(args.fieldName === 'Country') {

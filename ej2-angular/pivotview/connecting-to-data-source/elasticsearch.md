@@ -77,7 +77,8 @@ This section describes how to retrieve data from Elasticsearch database using [N
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { FieldListService, IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { FieldListService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
      selector: 'app-root',
@@ -87,7 +88,7 @@ import { FieldListService, IDataOptions, IDataSet } from '@syncfusion/ej2-angula
 })
 export class AppComponent implements OnInit {
     public pivotData: IDataSet[] | undefined;
-    public dataSourceSettings: IDataOptions | undefined;
+    public dataSourceSettings: DataSourceSettingsModel | undefined;
 
     ngOnInit(): void {
         this.dataSourceSettings = {
@@ -103,7 +104,8 @@ export class AppComponent implements OnInit {
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { FieldListService, IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { FieldListService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   selector: 'app-root',
@@ -114,7 +116,7 @@ import { FieldListService, IDataOptions, IDataSet } from '@syncfusion/ej2-angula
 })
 export class AppComponent implements OnInit {
     public pivotData: IDataSet[] | undefined;
-    public dataSourceSettings: IDataOptions | undefined;
+    public dataSourceSettings: DataSourceSettingsModel | undefined;
 
     ngOnInit(): void {
 

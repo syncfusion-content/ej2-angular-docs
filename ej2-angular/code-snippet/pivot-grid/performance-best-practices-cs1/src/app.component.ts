@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, GroupingService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, GroupingBarService, GroupingService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { Group_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
     imports: [
@@ -15,14 +16,14 @@ import { Group_Data } from './datasource';
     selector: 'app-container',
     providers: [GroupingBarService, GroupingService],
     // specifies the template string for the pivot table component
-    template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' allowGrouping='true' width=width height=height></ejs-pivotview>`
+    template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' allowGrouping='true' [width]=width height=height></ejs-pivotview>`
 })
 
 export class AppComponent {
 
     public width?: string;
     public height?: number;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     ngOnInit(): void {
         this.width = "100%";

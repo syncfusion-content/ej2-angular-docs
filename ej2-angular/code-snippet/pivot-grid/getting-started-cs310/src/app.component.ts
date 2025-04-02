@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { PivotView, FieldListService, IDataSet, IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, FieldListService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Grid } from '@syncfusion/ej2-grids';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -21,14 +22,14 @@ standalone: true,
   providers: [FieldListService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings [gridSettings]='gridSettings'
-    width=width height=height showFieldList='true' (enginePopulated)='enginePopulated($event)'></ejs-pivotview>`
+    [width]=width height=height showFieldList='true' (enginePopulated)='enginePopulated($event)'></ejs-pivotview>`
 })
 
 export class AppComponent implements OnInit {
 
   public width?: string;
   public height?: number;
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   public gridSettings?: GridSettings;
 
   @ViewChild('pivotview', { static: false })

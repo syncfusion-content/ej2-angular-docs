@@ -52,7 +52,7 @@ In the meantime, the JSON data from the local *.json file type can also be conne
 ```javascript
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 import { Uploader } from '@syncfusion/ej2-inputs';
 
 @Component({
@@ -60,7 +60,7 @@ import { Uploader } from '@syncfusion/ej2-inputs';
     template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
     public width: string;
     public uploadObj: Uploader;
 
@@ -133,7 +133,7 @@ In the meantime, the CSV data from the local *.csv file type can also be connect
 ```javascript
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 import { Uploader } from '@syncfusion/ej2-inputs';
 
 @Component({
@@ -141,7 +141,7 @@ import { Uploader } from '@syncfusion/ej2-inputs';
     template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
     public uploadObj: Uploader;
 
     ngOnInit(): void {

@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { PivotViewComponent, IDataOptions, IDataSet, FieldListService, PivotView, DataSourceSettings, PivotEngine } from '@syncfusion/ej2-angular-pivotview';
+import { PivotViewComponent, IDataSet, FieldListService, PivotView, DataSourceSettings, PivotEngine } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -21,12 +22,12 @@ standalone: true,
   providers: [FieldListService],
   // specifies the template string for the pivot table component
   template: `<div class="col-md-8"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings
-    showFieldList="true" width=width  height=height></ejs-pivotview></div><div class="col-md-2">
+    showFieldList="true" [width]=width  height=height></ejs-pivotview></div><div class="col-md-2">
     <button ej-button id='refresh' (click)='applyData($event)'>Refresh</button></div>`
 })
 export class AppComponent implements OnInit {
     public pivotData?: IDataSet[];
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public button?: Button;
     public width?: string;
     public height?: string;

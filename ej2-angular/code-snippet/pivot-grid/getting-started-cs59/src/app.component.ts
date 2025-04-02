@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, DrillThroughService, EditCompletedEventArgs, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, DrillThroughService, EditCompletedEventArgs, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,14 +21,14 @@ standalone: true,
   selector: 'app-container',
   providers: [DrillThroughService],
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [editSettings]='editSettings'
-              allowDrillThrough='true' width=width (editCompleted)='editCompleted($event)'></ejs-pivotview>`
+              allowDrillThrough='true' [width]=width (editCompleted)='editCompleted($event)'></ejs-pivotview>`
 })
 
 export class AppComponent {
 
     public width?: string;
      public editSettings?: CellEditSettings;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     editCompleted(args:EditCompletedEventArgs) {
         //triggers when a value cell is edited

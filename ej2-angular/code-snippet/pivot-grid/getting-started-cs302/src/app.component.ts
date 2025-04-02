@@ -5,9 +5,10 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, ViewChild } from '@angular/core';
-import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataOptions, IDataSet,
+import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataSet,
     EnginePopulatedEventArgs, VirtualScrollService, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Browser, setStyleAttribute, prepend } from '@syncfusion/ej2-base';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -26,7 +27,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     data(count: number) {
       let result: Object[] = [];
       let dt: number = 0;

@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { PivotView, FieldListService, IDataSet, IDataOptions, IAxisSet } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, FieldListService, IDataSet, IAxisSet } from '@syncfusion/ej2-angular-pivotview';
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 let headerTooltip: Tooltip;
 
@@ -22,14 +23,14 @@ standalone: true,
   providers: [FieldListService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings (dataBound)="dataBound($event)"
-    width=width height=height showFieldList='true'></ejs-pivotview>`
+    [width]=width height=height showFieldList='true'></ejs-pivotview>`
 })
 
 export class AppComponent implements OnInit {
 
   public width?: string;
   public height?: number;
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   @ViewChild('pivotview', { static: false })
   public pivotGridObj?: any;
 
