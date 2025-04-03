@@ -48,7 +48,8 @@ The [`maxRowsInDrillThrough`](https://ej2.syncfusion.com/react/documentation/api
 
 ```typescript
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldService, DrillThroughService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, FieldListService, CalculatedFieldService, DrillThroughService } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   selector: 'app-container',
@@ -58,7 +59,7 @@ import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldSer
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
     ngOnInit(): void {
         this.dataSourceSettings = {
             catalog: 'Adventure Works DW 2008 SE',

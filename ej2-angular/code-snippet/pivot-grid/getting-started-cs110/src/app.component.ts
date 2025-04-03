@@ -6,8 +6,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component } from '@angular/core';
 import { L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { IDataOptions, IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 setCulture('de');
 setCurrencyCode('EUR');
@@ -29,7 +30,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public width?: string;
     ngOnInit(): void {
         L10n.load({

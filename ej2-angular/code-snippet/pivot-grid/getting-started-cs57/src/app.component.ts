@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, CellEditSettings, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, CellEditSettings, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { pivot_flatdata } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -28,7 +29,7 @@ export class AppComponent {
 
     public width?: string;
     public editSettings?: CellEditSettings
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public gridSettings?: any;
 
     ngOnInit(): void {

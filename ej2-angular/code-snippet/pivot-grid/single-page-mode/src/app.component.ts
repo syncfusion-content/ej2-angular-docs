@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, VirtualScrollService, VirtualScrollSettingsModel } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, VirtualScrollService, VirtualScrollSettingsModel } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -21,7 +22,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit  {
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   public virtualScrollSettings?: VirtualScrollSettingsModel;
 
   data(count: number) {

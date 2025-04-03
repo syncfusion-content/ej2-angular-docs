@@ -5,12 +5,13 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, ViewChild } from '@angular/core';
-import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataOptions, IDataSet,
+import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataSet,
     EnginePopulatedEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Browser, setStyleAttribute, prepend } from '@syncfusion/ej2-base';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -29,7 +30,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public gridSettings?: GridSettings;
     public button?: Button;
 

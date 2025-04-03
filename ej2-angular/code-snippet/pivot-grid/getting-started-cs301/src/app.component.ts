@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -24,7 +25,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit  {
-public dataSourceSettings?: IDataOptions;
+public dataSourceSettings?: DataSourceSettingsModel;
 public date1?: number;
 public date2?: number;
 data(count: number) {

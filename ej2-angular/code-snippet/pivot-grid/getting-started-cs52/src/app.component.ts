@@ -5,9 +5,10 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, DrillThroughService, BeginDrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, DrillThroughService, BeginDrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 import { Grid, Group, Sort, Filter} from '@syncfusion/ej2-grids';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,12 +21,12 @@ imports: [
 standalone: true,
   selector: 'app-container',
   providers: [DrillThroughService],
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowDrillThrough='true' width=width (beginDrillThrough)='beginDrillThrough($event)'></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowDrillThrough='true' [width]=width (beginDrillThrough)='beginDrillThrough($event)'></ejs-pivotview>`
 })
 
 export class AppComponent {
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     beginDrillThrough(args: BeginDrillThroughEventArgs) {
         if (args.gridObj) {

@@ -4,9 +4,10 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component, ViewChild, OnInit } from '@angular/core';
 import {
-    PivotView, FieldListService, IDataOptions, LoadEventArgs
+    PivotView, FieldListService, LoadEventArgs
 } from '@syncfusion/ej2-angular-pivotview';;
 import { enableRipple } from '@syncfusion/ej2-base';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 let parentProp: any = {};
@@ -31,7 +32,7 @@ standalone: true,
 
 export class AppComponent implements OnInit {
 
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     @ViewChild('pivotview', { static: false })
     public pivotGridObj?: PivotView;

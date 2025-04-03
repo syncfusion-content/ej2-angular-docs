@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   imports: [
@@ -15,7 +16,7 @@ import { Pivot_Data } from './datasource';
   template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings  width='250' (load)="load($event)"></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
 
   @ViewChild('pivotview', { static: false })
   public pivotGridObj?: PivotView;

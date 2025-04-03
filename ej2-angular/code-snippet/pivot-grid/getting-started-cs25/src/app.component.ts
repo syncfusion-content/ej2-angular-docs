@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { DataManager } from '@syncfusion/ej2-data';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -18,10 +19,10 @@ imports: [
 
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   public data?: DataManager;
   public width?: string;
 

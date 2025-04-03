@@ -6,13 +6,14 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component } from '@angular/core';
 import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { IDataOptions, IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 import * as currencies from './currencies.json';
 import * as cagregorian from './ca-gregorian.json';
 import * as numbers from './numbers.json';
 import * as timeZoneNames from './timeZoneNames.json';
 import * as numberingSystems from './numberingSystems.json';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 loadCldr(currencies, cagregorian, numbers, timeZoneNames, numberingSystems);
 setCulture('de');
@@ -35,7 +36,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public width?: string;
     ngOnInit(): void {
         

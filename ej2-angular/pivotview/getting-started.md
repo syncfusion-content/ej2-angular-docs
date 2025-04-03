@@ -137,7 +137,8 @@ Add the Angular pivot table by using  `<ejs-pivotview>` selector in `template` s
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -151,7 +152,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
     }
@@ -167,7 +168,8 @@ The Pivot Table component further needs to be populated with an appropriate data
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -181,7 +183,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 
@@ -225,7 +227,8 @@ In this illustration, "Year" and "Quarter" are added in column, "Country" and "P
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -239,7 +242,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 
@@ -272,7 +275,8 @@ Formatting defines a way in which values should be displayed. For example, forma
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -286,7 +290,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 

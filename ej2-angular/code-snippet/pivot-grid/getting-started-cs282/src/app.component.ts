@@ -5,10 +5,11 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DisplayOption, IDataOptions, IDataSet, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
+import { DisplayOption, IDataSet, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -24,7 +25,7 @@ standalone: true,
   template: `<span><button ej-button id='save'>Save</button></span><span><button ej-button id='load'>Load</button></span><div><ejs-pivotview #pivotview id='PivotView' height='300' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' ></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public chartSettings?: ChartSettings;
     public displayOption?: DisplayOption;
     public saveButton?: Button;

@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
             title: 'month',
             valueType: 'Category'
         };
-        this.cornerRadius = {topRight: 10 , topLeft: 10},
+        this.cornerRadius = { topLeft: 10, bottomLeft: 10, topRight: 10, bottomRight: 10 },
         this.title = 'Maximum and minimum Temperature';
     }
     public pointRender(args: IPointRenderEventArgs) {

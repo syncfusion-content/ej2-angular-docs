@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { PivotView, FieldListService, IDataSet, IDataOptions, AggregateTypes } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, FieldListService, IDataSet, AggregateTypes } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 import { L10n } from '@syncfusion/ej2-base';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 let SummaryType: string[] = [
     'Sum',
@@ -28,14 +29,14 @@ imports: [
 standalone: true,
     selector: 'app-container',
     providers: [FieldListService],
-    template: `<div class="col-md-8"> <ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height=height 
+    template: `<div class="col-md-8"> <ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings [width]=width height=height 
    (aggregateCellInfo)='aggregateCellInfo($event)' showFieldList='true' (dataBound)="dataBound($event)"></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
 
     public width?: string;
     public height?: number;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     @ViewChild('pivotview', { static: false })
     public pivotGridObj: any;

@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, PDFExportService, DisplayOption } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, PDFExportService, DisplayOption } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -21,12 +22,12 @@ standalone: true,
   providers: [PDFExportService],
   template: `<div class="col-md-8">
   <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true'
-  [displayOption]='displayOption' [chartSettings]='chartSettings' width=width></ejs-pivotview></div>
+  [displayOption]='displayOption' [chartSettings]='chartSettings' [width]=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public displayOption?: DisplayOption;
     public chartSettings?: ChartSettings;
     public button?: Button;

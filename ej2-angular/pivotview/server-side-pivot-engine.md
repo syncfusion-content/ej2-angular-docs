@@ -39,7 +39,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 ```javascript
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
     selector: 'app-container',
@@ -47,7 +47,7 @@ import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
+  public dataSourceSettings: DataSourceSettingsModel;
 
   ngOnInit(): void {
     this.width = '100%';
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
 ```javascript
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
     selector: 'app-container',
@@ -73,7 +73,7 @@ import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
+  public dataSourceSettings: DataSourceSettingsModel;
 
   ngOnInit(): void {
     this.width = '100%';

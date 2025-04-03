@@ -10,9 +10,9 @@ import {
   WorkWeekService,
   MonthService,
   AgendaService,
-  PrintService,
-  ItemModel
+  PrintService
 } from '@syncfusion/ej2-angular-schedule';
+import { ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -28,7 +28,7 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('scheduleObj') public scheduleObj!: ScheduleComponent;
-  public selectedDate: Date = new Date();
+  public selectedDate: Date = new Date(2025, 1, 15);
   public scheduleViews = ['Day', 'Week', 'WorkWeek', 'Month'];
 
   private currentUser = this.getCurrentUserInfo();

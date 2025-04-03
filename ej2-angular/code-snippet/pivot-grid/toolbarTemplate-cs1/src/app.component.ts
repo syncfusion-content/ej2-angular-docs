@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, ToolbarService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, ToolbarService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 @Component({
@@ -35,7 +36,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public gridSettings?: GridSettings;
     public toolbarOptions?: string;
     public btnExpand?: Button;

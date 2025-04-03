@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,12 +21,12 @@ standalone: true,
   selector: 'app-container',
   providers: [ConditionalFormattingService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowConditionalFormatting='true' width=width height='350'></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowConditionalFormatting='true' [width]=width height='350'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
     public height?: number;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     ngOnInit(): void {
 

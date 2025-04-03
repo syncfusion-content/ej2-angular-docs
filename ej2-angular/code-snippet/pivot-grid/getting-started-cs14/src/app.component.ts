@@ -5,10 +5,11 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, CalculatedFieldService, PivotView,
+import { IDataSet, CalculatedFieldService, PivotView,
     FieldListService, PivotActionCompleteEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -22,10 +23,10 @@ standalone: true,
   selector: 'app-container',
   providers: [FieldListService, CalculatedFieldService],
   template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (actionComplete)='actionComplete($event)'  showFieldList='true'
-  allowCalculatedField='true' width=width></ejs-pivotview></div>`
+  allowCalculatedField='true' [width]=width></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   public button?: Button;
   public width?: string;
 

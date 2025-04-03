@@ -243,7 +243,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs9" %}
 
-## Corner Radius
+## Corner radius
 
 The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
@@ -263,7 +263,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs9A" %}
 
-### Point Corner Radius
+### Point corner radius
 
 We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
 

@@ -6,10 +6,11 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component, ViewChild } from '@angular/core';
 import {
-    IDataOptions, PivotView, FieldListService, CalculatedFieldService, NumberFormattingService,
+    PivotView, FieldListService, CalculatedFieldService, NumberFormattingService,
     ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet, PivotActionFailureEventArgs
 } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -27,7 +28,7 @@ standalone: true,
 })
 
 export class AppComponent {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public toolbarOptions?: ToolbarItems[];
     public displayOption?: DisplayOption;
 
