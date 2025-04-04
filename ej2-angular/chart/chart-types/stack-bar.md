@@ -282,7 +282,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
 
-## Stack Labels
+## Stack labels
 
 The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
 
@@ -302,7 +302,7 @@ The stack labels in stacked charts display cumulative total values for stack seg
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs22" %}
 
-### Stack Labels Customization
+### Stack labels customization
 Stack labels have various properties for customization to enhance the visual based on your requirements:
 
 * [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
@@ -331,7 +331,7 @@ Stack labels have various properties for customization to enhance the visual bas
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs22A" %}
 
-## Corner Radius
+## Corner radius
 
 The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
@@ -351,7 +351,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs10A" %}
 
-### Point Corner Radius
+### Point corner radius
 
 We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
 

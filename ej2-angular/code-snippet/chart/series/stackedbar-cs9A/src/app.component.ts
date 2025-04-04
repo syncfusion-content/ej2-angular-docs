@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         this.chartData = stackedData;
         this.primaryXAxis = {
             valueType: 'Category',
-            title: 'Months'
+            title: 'Years'
         };
         this.cornerRadius = { topRight: 10, bottomRight: 10 };
         this.title = 'Sales Comparison';

@@ -118,7 +118,7 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 
 {% previewsample "page.domainurl/samples/chart/export-cs1" %}
 
-## Excel Export
+## Excel export
 
 You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The [`excelProperties`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs/#excelproperties) property in the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs/) event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
 

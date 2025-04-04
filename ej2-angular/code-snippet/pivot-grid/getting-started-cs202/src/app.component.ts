@@ -5,9 +5,10 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, PagerSettings, PageSettings, PagerService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, PagerSettings, PageSettings, PagerService } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -19,11 +20,11 @@ imports: [
 
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width [gridSettings]='gridSettings' enablePaging="true" [pageSettings]="pageSettings" [pagerSettings]="pagerSettings"></ejs-pivotview>`,
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width [gridSettings]='gridSettings' enablePaging="true" [pageSettings]="pageSettings" [pagerSettings]="pagerSettings"></ejs-pivotview>`,
     providers: [PagerService]
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public remoteData?: DataManager;
     public width?: string;
     public gridSettings?: GridSettings;

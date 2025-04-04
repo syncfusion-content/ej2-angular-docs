@@ -1,71 +1,52 @@
-import { Component, ViewChild } from '@angular/core';
-import { 
-    ScheduleComponent, 
-    EventSettingsModel, 
-    View, 
-    TooltipOpenEventArgs, 
-    DayService, 
-    WeekService, 
-    WorkWeekService, 
-    MonthService, 
-    YearService, 
-    AgendaService, 
-    MonthAgendaService, 
-    TimelineViewsService, 
-    TimelineMonthService, 
-    TimelineYearService, 
-    ResizeService, 
-    DragAndDropService 
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import {
+  DayService,
+  WeekService,
+  WorkWeekService,
+  MonthService,
+  AgendaService,
+  MonthAgendaService,
+  TimelineViewsService,
+  EventSettingsModel,
+  TooltipOpenEventArgs,
 } from '@syncfusion/ej2-angular-schedule';
+
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { eventsData } from './datasource';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports: [ScheduleModule, TimePickerModule, CommonModule],
+
   providers: [
-    DayService, 
-    WeekService, 
-    WorkWeekService, 
-    MonthService, 
-    YearService, 
-    AgendaService, 
-    MonthAgendaService, 
-    TimelineViewsService, 
-    TimelineMonthService, 
-    TimelineYearService, 
-    ResizeService, 
-    DragAndDropService
+    DayService,
+    WeekService,
+    WorkWeekService,
+    MonthService,
+    AgendaService,
+    MonthAgendaService,
+    TimelineViewsService,
   ],
+  standalone: true,
+  selector: 'app-root',
+  // specifies the template string for the Schedule component
+  templateUrl: './app.component.html',
+  styleUrls: ['./index.css'],
 })
 export class AppComponent {
-  @ViewChild('scheduleObj') public scheduleObj!: ScheduleComponent;
   public selectedDate: Date = new Date(2025, 1, 15);
-  public currentView: View = 'Month';
-  public scheduleViews: View[] = [
-    'Day', 'Week', 'WorkWeek', 'Month', 'Year', 'Agenda', 
-    'MonthAgenda', 'TimelineDay', 'TimelineWeek', 'TimelineWorkWeek', 
-    'TimelineMonth', 'TimelineYear'
-  ];
-  
   public eventSettings: EventSettingsModel = {
     dataSource: eventsData,
     enableTooltip: true,
-    fields: {
-      subject: { title: 'Name', name: 'Subject' },
-      location: { title: 'Country Name', name: 'Location' },
-      description: { title: 'Summary', name: 'Description' },
-      startTime: { title: 'From', name: 'StartTime' },
-      endTime: { title: 'To', name: 'EndTime' },
-      startTimezone: { title: 'Origin', name: 'StartTimezone' },
-      endTimezone: { title: 'Destination', name: 'EndTimezone' }
-    }
   };
-
-  public onTooltipOpen(args: TooltipOpenEventArgs): void {
+  public tootipOpen(args: TooltipOpenEventArgs): void {
     let record = args.data as { Subject: string };
     if (record.Subject === 'Vacation') {
       args.cancel = true;
     }
   }
+  currentView: any;
 }

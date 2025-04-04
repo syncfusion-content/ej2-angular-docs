@@ -365,7 +365,7 @@ For example, the report shown in the following code snippet will be passed to th
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-  IDataOptions, PivotView, FieldListService, CalculatedFieldService,
+  PivotView, FieldListService, CalculatedFieldService,
   ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet,
   NumberFormattingService,
   FetchReportArgs,
@@ -377,6 +377,7 @@ import {
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 @Component({
@@ -387,7 +388,7 @@ enableRipple(false);
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions | undefined;
+  public dataSourceSettings: DataSourceSettingsModel | undefined;
   public gridSettings: GridSettings | undefined;
   public toolbarOptions: ToolbarItems[] | undefined;
   public chartSettings: ChartSettings | undefined;
@@ -519,7 +520,7 @@ For example, if the report name **"Sample Report 1"** is selected from a dropdow
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-  IDataOptions, PivotView, FieldListService, CalculatedFieldService,
+  PivotView, FieldListService, CalculatedFieldService,
   ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet,
   NumberFormattingService,
   FetchReportArgs,
@@ -531,6 +532,7 @@ import {
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 @Component({
@@ -541,7 +543,7 @@ enableRipple(false);
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions | undefined;
+  public dataSourceSettings: DataSourceSettingsModel | undefined;
   public gridSettings: GridSettings | undefined;
   public toolbarOptions: ToolbarItems[] | undefined;
   public chartSettings: ChartSettings | undefined;
@@ -669,7 +671,7 @@ For example, if we rename the current report from **"Sample Report 1"** to **"Sa
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-  IDataOptions, PivotView, FieldListService, CalculatedFieldService,
+  PivotView, FieldListService, CalculatedFieldService,
   ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet,
   NumberFormattingService,
   FetchReportArgs,
@@ -681,6 +683,7 @@ import {
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 @Component({
@@ -691,7 +694,7 @@ enableRipple(false);
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions | undefined;
+  public dataSourceSettings: DataSourceSettingsModel | undefined;
   public gridSettings: GridSettings | undefined;
   public toolbarOptions: ToolbarItems[] | undefined;
   public chartSettings: ChartSettings | undefined;
@@ -837,7 +840,7 @@ For example, if we delete the current report **"Sample Report 2"** from the pivo
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-  IDataOptions, PivotView, FieldListService, CalculatedFieldService,
+  PivotView, FieldListService, CalculatedFieldService,
   ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet,
   NumberFormattingService,
   FetchReportArgs,
@@ -849,6 +852,7 @@ import {
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 enableRipple(false);
 
 @Component({
@@ -859,7 +863,7 @@ enableRipple(false);
 })
 
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions | undefined;
+  public dataSourceSettings: DataSourceSettingsModel | undefined;
   public gridSettings: GridSettings | undefined;
   public toolbarOptions: ToolbarItems[] | undefined;
   public chartSettings: ChartSettings | undefined;

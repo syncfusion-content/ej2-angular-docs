@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -25,7 +26,7 @@ standalone: true,
 export class AppComponent implements OnInit {
     public width?: string;
     public height?: number;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     @ViewChild('pivotview', {static: false})
     public pivotGridObj?: PivotView;
 

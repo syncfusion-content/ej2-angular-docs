@@ -24,7 +24,7 @@ Accumulation Chart can be given a title using [`title`](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs27" %}
 
-## Title Customization
+## Title customization
 
 Accumulation Chart can be customizing a title using [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#titlestyle) property.
 
@@ -73,7 +73,7 @@ about the data plotted.
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs29" %}
 
-## SubTitle Customization
+## SubTitle customization
 
 Accumulation Chart can be customizing a subtitle using [`subTitleStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#subtitlestyle) property.
 

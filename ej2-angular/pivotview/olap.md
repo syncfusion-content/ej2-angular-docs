@@ -135,7 +135,7 @@ After initialization, add the the following code in **[src/app/app.component.ts]
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   selector: 'app-root',
@@ -143,7 +143,7 @@ import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
 
     ngOnInit(): void {
 
@@ -525,7 +525,8 @@ Users can configure basic authentication information to access the OLAP cube usi
 
 ```typescript
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   selector: 'app-container',
@@ -535,7 +536,7 @@ import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
     ngOnInit(): void {
         this.dataSourceSettings = {
             catalog: 'Adventure Works DW 2008 SE',
@@ -583,7 +584,8 @@ SQL Server Analysis Services uses [`roles`](https://learn.microsoft.com/en-us/an
 
 ```typescript
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
   selector: 'app-container',
@@ -593,7 +595,7 @@ import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivot
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings: DataSourceSettingsModel;
     ngOnInit(): void {
         this.dataSourceSettings = {
             catalog: 'Adventure Works DW 2008 SE',

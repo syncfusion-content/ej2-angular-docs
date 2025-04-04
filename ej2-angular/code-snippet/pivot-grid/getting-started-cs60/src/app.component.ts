@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, CellEditSettings, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, CellEditSettings, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -18,14 +19,14 @@ imports: [
 
 standalone: true,
   selector: 'app-container',  
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (actionBegin)='actionBegin($event)' [editSettings]=editSettings width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (actionBegin)='actionBegin($event)' [editSettings]=editSettings [width]=width></ejs-pivotview>`
 })
 
 export class AppComponent {
 
     public width?: string;
     public editSettings?: CellEditSettings
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Add new record' || args.actionName == 'Save edited records') {
