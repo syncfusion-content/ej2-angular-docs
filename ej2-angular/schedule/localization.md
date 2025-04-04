@@ -20,7 +20,7 @@ The Internationalization library provides support for formatting and parsing the
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
-* Install the `ej2-cldr-data` package using the Syncfusion npm package by running the command below..
+* Install the `ej2-cldr-data` package using the Syncfusion<sup style="font-size:70%">&reg;</sup> npm package by running the command below..
 
   ```
   npm install @syncfusion/ej2-cldr-data --save

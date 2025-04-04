@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row drag and drop in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the tree grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one tree grid to another tree grid, as well as drag and drop rows to custom components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the tree grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one tree grid to another tree grid, as well as drag and drop rows to custom components.
 
 To use the row drag and drop feature in TreeGrid component, you need to inject the **RowDDService** in the provider section of the **AppModule**. The **RowDDService** is responsible for handling the row drag and drop functionality in the TreeGrid component. Once you have injected the **RowDDService**, you can then use the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowrowdraganddrop) and [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings/#targetid) properties to enable and configure the row drag and drop feature in the Tree Grid.
 
@@ -523,5 +523,5 @@ In the following example, the drop action of the **Child** position is prevented
 
 ## See also
 
-[Sorting data in the Syncfusion Tree Grid](https://ej2.syncfusion.com/documentation/treegrid/sorting)
-[Filtering data in the Syncfusion Tree Grid](https://ej2.syncfusion.com/documentation/treegrid/filtering/filtering)
+[Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid](https://ej2.syncfusion.com/documentation/treegrid/sorting)
+[Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid](https://ej2.syncfusion.com/documentation/treegrid/filtering/filtering)

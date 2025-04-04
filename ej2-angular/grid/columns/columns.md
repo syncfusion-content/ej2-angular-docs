@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Grid Component
 
-In Syncfusion Angular Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
 ## Column types
 
-The Syncfusion Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -49,7 +49,7 @@ Here is an example of how to specify column types in a grid using the types ment
 3. When the grid column `type` is a **checkbox**, the selection type of the grid `selectionSettings` will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column Width
 
@@ -58,14 +58,14 @@ To adjust the column width in a Grid, you can use the [width](https://ej2.syncfu
 1. Grid column width is calculated based on the sum of column widths. For example, a grid container with 4 columns and a width of 800 pixels will have columns with a default width of 200 pixels each.
 2. If you specify widths for some columns but not others, the Grid will distribute the available width equally among the columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
 3. Columns with percentage widths are responsive and adjust their width based on the size of the grid container. For example, a column with a width of 50% will occupy 50% of the grid width and will adjust proportionally when the grid container is resized to a smaller size.
-4. When you manually resize columns in Syncfusion Grid, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
+4. When you manually resize columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
 5. If the total width of all columns exceeds the width of the grid container, a horizontal scrollbar will automatically appear to allow horizontal scrolling within the grid.
 6. When the columns is hide using the column chooser, the width of the hidden columns is removed from the total grid width, and the remaining columns will be resized to fill the available space.
 7. If the parent element has a fixed width, the grid component will inherit that width and occupy the available space. However, if the parent element does not have a fixed width, the grid component will adjust its width dynamically based on the available space.
 
 **Supported types for column width**
 
-Syncfusion Grid supports the following three types of column width:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports the following three types of column width:
 
 **1. Auto**
 
@@ -105,7 +105,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 ## Column formatting
 
-Column formatting is a powerful feature in Syncfusion Grid that allows you to customize the display of data in grid columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
+Column formatting is a powerful feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid that allows you to customize the display of data in grid columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
 
 You can use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property to specify the format for column values. 
 
@@ -255,7 +255,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-Syncfusion Grid allows you to customize the formatting of data in the grid columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to grid columns in Syncfusion Grid, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the formatting of data in the grid columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to grid columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
 
 In the below example, the **numberFormatOptions** object is used as the `format` property for the **'Freight'** column to apply a custom numeric format with four decimal places. Similarly, the **dateFormatOptions** object is used as the `format` property for the **'OrderDate'** column to apply a custom date format displaying the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g. Sun, May 8, '23).
 
@@ -383,7 +383,7 @@ You can enable this feature by setting the [autoFit](https://ej2.syncfusion.com/
 
 ### AutoFit columns when changing column visibility using column chooser
 
-In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
 
 Here's an example code snippet in Angular that demonstrates how to auto fit columns when changing column visibility using column chooser:
 
@@ -421,9 +421,9 @@ Here is an example of how to autofit columns with specific rows. The first param
 
 ## Locked columns
 
-The Syncfusion Grid allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#lockcolumn) property to **true**, which locks the column and moves it to the first position in the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#lockcolumn) property to **true**, which locks the column and moves it to the first position in the grid.
 
-Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion Grid:
+Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -442,7 +442,7 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 ## Show or hide columns
 
-The Syncfusion Grid control allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
 
 > To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
 
@@ -509,7 +509,7 @@ Here's an example of how to show or hide a column based on the field in the Angu
 
 ## Controlling Grid actions
 
-You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion Angular Grid using the following properties:
+You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using the following properties:
 
 * [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowediting): Enables or disables editing for a column.
 * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowfiltering): Enables or disables filtering for a column.
@@ -539,11 +539,11 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Manipulating columns
 
-The Syncfusion Grid for Angular provides powerful features for manipulating columns in a grid. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion Grid properties, methods, and events.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid for Angular provides powerful features for manipulating columns in a grid. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion<sup style="font-size:70%">&reg;</sup> Grid properties, methods, and events.
 
 ### Accessing Columns
 
-To access columns in the Syncfusion Grid, you can use the following methods in the grid.
+To access columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the following methods in the grid.
 
 * **[getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumns)**:
 
@@ -633,7 +633,7 @@ Here's an example of how you can add and remove a column from the grid:
 
 ### How to refresh columns
 
-You can use the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method of the Syncfusion Grid to refresh the columns in the grid. This method can be used when you need to update the grid columns dynamically based on user actions or data changes.
+You can use the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to refresh the columns in the grid. This method can be used when you need to update the grid columns dynamically based on user actions or data changes.
 
 ```ts
 this.grid.refreshColumns();
@@ -641,7 +641,7 @@ this.grid.refreshColumns();
 
 ## Responsive columns
 
-The Syncfusion Angular Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

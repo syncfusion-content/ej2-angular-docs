@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # How to use Custom CSS File in Angular Application
 
-This guide details the step-by-step process to incorporate custom styles in an Angular application using Essential JS 2 Angular components. The styles will be created using the [Theme Editor](https://ej2.syncfusion.com/themestudio/?theme=material).
+This guide details the step-by-step process to incorporate custom styles in an Angular application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular components. The styles will be created using the [Theme Editor](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 ## Create an Angular application
 
-Begin by setting up an Angular application with Essential JS 2 components. Follow our [Getting Started documentation](../../getting-started/angular-cli) for detailed instructions on setting up your project environment and integrating the necessary components.
+Begin by setting up an Angular application with Essential<sup style="font-size:70%">&reg;</sup> JS 2 components. Follow our [Getting Started documentation](../../getting-started/angular-cli) for detailed instructions on setting up your project environment and integrating the necessary components.
 
 ## Generating custom CSS file
 
-Customize your style by using the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). This tool allows you to generate a custom CSS file tailored to your design preferences. Select your desired theme, modify the elements as needed, and download your custom CSS.
+Customize your style by using the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). This tool allows you to generate a custom CSS file tailored to your design preferences. Select your desired theme, modify the elements as needed, and download your custom CSS.
 
 ## Adding custom CSS in Angular application
 
@@ -43,4 +43,4 @@ With everything configured, run your Angular application using the command:
 ng serve
 ```
 
-Now, your Essential JS 2 Angular components will reflect the custom styles specified in your CSS file.
+Now, your Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular components will reflect the custom styles specified in your CSS file.

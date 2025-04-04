@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Excel export options in Angular Grid component
 
-The Syncfusion Angular Grid component allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 
 The Excel or CSV export action can be customized based on your requirements using the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property. By using the `excelExportProperties` property, you can export specific columns, exclude or include hidden column, export with custom data source, enable filter in the exported excel or CSV file, change the file name, add header and footer, multiple grid exporting, customize the data based on query, define delimiter for CSV exporting and set the theme.
 
 ## Export current page records
 
-Exporting the current page in Syncfusion Angular Grid to a Excel or CSV document provides the ability to export the currently displayed page records. This feature allows for generating Excel or CSV documents that specifically include the content from the current page of the grid. 
+Exporting the current page in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to a Excel or CSV document provides the ability to export the currently displayed page records. This feature allows for generating Excel or CSV documents that specifically include the content from the current page of the grid. 
 
 To export the current page of the grid to an Excel or CSV document, you need to specify the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#exporttype) property. This property allows you to define which records you want to export. You can choose between two options:
 
@@ -89,7 +89,7 @@ The following example demonstrates how to export grouped records to an Excel doc
 
 ## Export with hidden columns
 
-Exporting hidden columns in the Syncfusion Angular Grid allows you to include hidden columns in the exported Excel document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
+Exporting hidden columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to include hidden columns in the exported Excel document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
 
 To export hidden columns of the grid to a Excel or CSV file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#includehiddencolumn) property as **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property.
 
@@ -137,19 +137,19 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 ## Show or hide columns while exporting with stacked header
 
-The Syncfusion Angular Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
 
-To implement the show or hide columns feature during Excel export in the Syncfusion Angular Grid, follow these steps:
+To implement the show or hide columns feature during Excel export in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, follow these steps:
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the Syncfusion Angular Grid.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property of the column to **true** or **false**.
 
-3. Export the Syncfusion Angular Grid to Excel document using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#csvexport)  method.
+3. Export the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to Excel document using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#csvexport)  method.
 
 4. Handle the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event to restore the column visibility to its original state.
 
-In the following example, the **ShipName** is initially a hidden column in the Syncfusion Angular Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,7 +185,7 @@ The following example demonstrates how to export data with filter options to an 
 
 ## Define file name
 
-The Syncfusion Angular Grid component allows you to specify a custom file name for the exported Excel or CSV document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to specify a custom file name for the exported Excel or CSV document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
 
 To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property to the desired file name.
 

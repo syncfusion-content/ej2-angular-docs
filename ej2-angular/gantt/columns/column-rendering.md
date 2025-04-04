@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column rendering in Angular Gantt component
 
-In Syncfusion Angular Gantt chart, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the gantt chart.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the gantt chart.
 
 The column definitions are used as the data source schema in the gantt chart. The gantt operations such as sorting, filtering are performed based on column definitions. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property of gantt chart column is necessary to map the datasource values in the gantt chart columns.
 
@@ -22,7 +22,7 @@ The column definitions are used as the data source schema in the gantt chart. Th
 
 To define columns manually in gantt chart, you can use the `e-columns` to define the columns and represent each column with its respective properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width) set accordingly. This allows you to customize the column's behavior and appearance based on the requirements.
 
-Here's an example code snippet that demonstrates how to define columns manually in the Syncfusion Angular Gantt chart:
+Here's an example code snippet that demonstrates how to define columns manually in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,11 +37,11 @@ Here's an example code snippet that demonstrates how to define columns manually 
 
 ## Dynamic column generation 
 
-The Syncfusion Gantt chart component allows you to dynamically generate columns at runtime, based on the data provided. This feature is useful when you need to display data with varying columns based on user requirements or dynamic data sources.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart component allows you to dynamically generate columns at runtime, based on the data provided. This feature is useful when you need to display data with varying columns based on user requirements or dynamic data sources.
 
 ### Using ngFor directive
 
-To create dynamically generated columns in the Syncfusion Gantt chart component using the ngFor directive, you will first need to define an array of column objects in your component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property, which will be used to bind the corresponding properties of the **e-column** component.
+To create dynamically generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart component using the ngFor directive, you will first need to define an array of column objects in your component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property, which will be used to bind the corresponding properties of the **e-column** component.
 
 Here is an example for dynamically generate columns in the gantt chart using ngFor directive:
 

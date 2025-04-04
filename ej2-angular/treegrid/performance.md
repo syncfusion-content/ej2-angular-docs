@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Performance best practices for Angular TreeGrid Component
-This article offers essential strategies for enhancing the loading performance of the Angular Tree Grid, particularly when managing complex hierarchical data with numerous columns. It discusses practical methods to efficiently bind large datasets while maintaining optimal performance. With a focus on actionable insights and tailored recommendations, this guide equips users with the techniques required to fine-tune the performance of the Angular Tree Grid, enabling smoother interactions and a better overall user experience, even with extensive data scenarios.
+This article offers Essential<sup style="font-size:70%">&reg;</sup> strategies for enhancing the loading performance of the Angular Tree Grid, particularly when managing complex hierarchical data with numerous columns. It discusses practical methods to efficiently bind large datasets while maintaining optimal performance. With a focus on actionable insights and tailored recommendations, this guide equips users with the techniques required to fine-tune the performance of the Angular Tree Grid, enabling smoother interactions and a better overall user experience, even with extensive data scenarios.
 
 ## How to improve loading performance by binding a large dataset
 The Tree Grid component displays hierarchical data using rows and columns. When working with large datasets, it's crucial to optimize the rendering process for enhanced performance. For example, binding a dataset with 10 parent rows, each containing 10 child rows, and displaying 10 columns results in 1100 elements rendered in the DOM (Document Object Model).

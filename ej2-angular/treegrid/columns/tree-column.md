@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tree Column in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
 
 ```ts
 
@@ -22,7 +22,7 @@ The Syncfusion Angular TreeGrid component provides a convenient way to represent
 
 ## Change expand and collapse icon 
 
-The Syncfusion Angular TreeGrid component allows to customize the default expand and collapse icons by applying custom CSS styles.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component allows to customize the default expand and collapse icons by applying custom CSS styles.
 
 To customize the expand and collapse icons, use the following CSS styles:
 

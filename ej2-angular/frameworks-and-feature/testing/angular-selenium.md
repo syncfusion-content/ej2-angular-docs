@@ -120,9 +120,9 @@ webdriver-manager start
 {% endhighlight %}
 {% endtabs %}
 
-## Testing Syncfusion Angular Component using Protractor
+## Testing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Component using Protractor
 
-The Syncfusion Angular Components are accessed using Protractor locators like ID, CSS, name, and more. The following code samples explain how to use the Angular button component in Protractor testing.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components are accessed using Protractor locators like ID, CSS, name, and more. The following code samples explain how to use the Angular button component in Protractor testing.
 
 1.To install the Angular Button component, refer to the [Getting Started](https://ej2.syncfusion.com/angular/documentation/button/getting-started#installing-syncfusion-button-package) documentation.
 
@@ -182,4 +182,4 @@ ng e2e
 ## See also
 
 * [Migration from Protractor to Cypress](https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress)
-* [Cypress Testing of Syncfusion Angular Components](./testing-with-cypress)
+* [Cypress Testing of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components](./testing-with-cypress)

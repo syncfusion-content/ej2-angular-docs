@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Accordion component
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and Localization
 
 <!-- markdownlint-disable MD033 -->
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> `<ej-accordion id="Accordion" [allowKeyboardNavigation]="false" ></ej-accordion>`  | <b>Not Applicable</b> |
 | Localization | <b>Not Applicable</b>  | **Property** : locale<br/> `<ejs-accordion id="Accordion" locale="fr-BE" ></ejs-accordion>`  |
@@ -26,7 +26,7 @@ This article describes the API migration process of Accordion component from Ess
 
 <!-- markdownlint-disable MD033 -->
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | **Property** : ajaxSettings<br/> `<ej-accordion id="accordion" [ajaxSettings.type]="GET"></ej-accordion>` | <b>Not Applicable</b>  |
 | Asynchronous | **Property** : ajaxSettings.async <br/> `<ej-accordion id="accordion" [ajaxSettings.async]="true "></ej-accordion>`| <b>Not Applicable</b>  |
@@ -44,7 +44,7 @@ This article describes the API migration process of Accordion component from Ess
 
 <!-- markdownlint-disable MD033 -->
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default |<b>Not Applicable</b> | **Property** :animation<br/> `<ejs-accordion id='accordion' [animation]="animation"></ejs-accordion>`<br/> **TS:**<br/>  public animation: Object[] = [{collapse: { effect: 'FlipXDownIn', duration: 600, easing: 'ease' }, expand: { effect: 'FlipXUpIn', duration: 600, easing: 'ease' }}] |
 | EnableAnimation | **Property** :animation<br/> `<ej-accordion id="Accordion" [enableAnimation]="false"></ej-accordion>`<br/> | <b>Not Applicable</b>|
@@ -58,7 +58,7 @@ This article describes the API migration process of Accordion component from Ess
 
 <!-- markdownlint-disable MD033 -->
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | <b>Not Applicable</b> | **Property** : items<br/> `<ejs-accordion id="Accordion" [items]="items"> </ejs-accordion>` |
 | Content | <b>Not Applicable</b> | **Property** : items[0].content <br/> `<ejs-accordion id="Accordion" [items]="items"> </ejs-accordion>`<br/> **TS:**<br/> public items: Object[] = [{ content: 'Contents'}];|
@@ -91,7 +91,7 @@ This article describes the API migration process of Accordion component from Ess
 
 <!-- markdownlint-disable MD033 -->
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Collapsible | **Property** : collapsible <br/> `<ej-accordion id="Accordion" [collapsible]="false"> </ej-accordion>`| <b>Not Applicable</b> |
 | Collapse speed | **Property** : collapseSpeed <br/> `<ej-accordion id="Accordion"  collapseSpeed="500"> </ej-accordion>`| <b>Not Applicable</b> |

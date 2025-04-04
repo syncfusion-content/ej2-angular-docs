@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add font awesome in Angular Toolbar component
 
-You can customize the Toolbar component items by using third-party icons other than the icons available in the Syncfusion library. In the following example, font awesome icons are used as toolbar items.
+You can customize the Toolbar component items by using third-party icons other than the icons available in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. In the following example, font awesome icons are used as toolbar items.
 
 * Refer to the third-party reference link. Here, the CDN link of font awesome is referred.
 

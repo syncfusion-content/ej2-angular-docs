@@ -51,17 +51,17 @@ Next, navigate to the created project folder:
 cd data-app
 ```
 
-## Installing Syncfusion Data package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Data package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [@syncfusion/ej2-data](https://www.npmjs.com/package/@syncfusion/ej2-data/v/20.2.38) package to the application.
 
@@ -71,7 +71,7 @@ npm install @syncfusion/ej2-data --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [@syncfusion/ej2-angular-grids@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
 
@@ -306,13 +306,13 @@ The **page** method of the Query class is used to get range of data based on the
 
 ## Component binding
 
-DataManager component can be used with Syncfusion components which supports data binding.
+DataManager component can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components which supports data binding.
 
 In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
 ### Local data binding
 
-A DataSource can be created in-line with other Syncfusion component configuration settings.
+A DataSource can be created in-line with other Syncfusion<sup style="font-size:70%">&reg;</sup> component configuration settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -328,7 +328,7 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 
 ### Remote data binding
 
-To bind remote data to Syncfusion component, you can assign a service data as an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
+To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

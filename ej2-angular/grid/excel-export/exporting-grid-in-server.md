@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Exporting grid in server in Angular Grid component
 
-The Syncfusion Grid component in Angular provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in Angular provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
 
 ## Server dependencies
 
-To enable the server-side export functionality for the Syncfusion Grid component in Angular, you need to include the required dependencies for Grid server-side Excel exporting. These dependencies are essential for handling the export process on the server-side.
+To enable the server-side export functionality for the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in Angular, you need to include the required dependencies for Grid server-side Excel exporting. These dependencies are Essential<sup style="font-size:70%">&reg;</sup> for handling the export process on the server-side.
 
-The server-side export functionality is provided in the **Syncfusion.EJ2.GridExport** package, which is available in Essential Studio and can also be obtained from [nuget.org](https://www.nuget.org/).
+The server-side export functionality is provided in the **Syncfusion.EJ2.GridExport** package, which is available in Essential Studio<sup style="font-size:70%">&reg;</sup> and can also be obtained from [nuget.org](https://www.nuget.org/).
 
 The following list of dependencies is required for Grid server-side Excel exporting action:
 
-* **Syncfusion.EJ2**: This is the core package that includes the main components and functionalities of Syncfusion Essential JS 2.
+* **Syncfusion.EJ2**: This is the core package that includes the main components and functionalities of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 * **Syncfusion.EJ2.GridExport**: This package contains the server-side export functionality specifically for the Grid component. It provides the necessary APIs and tools to handle data export to Excel on the server.
 
@@ -216,7 +216,7 @@ public object CsvExport(string gridModel)
 
 ## Merge grid's memory stream
 
-The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
+The [Essential<sup style="font-size:70%">&reg;</sup> XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
 
 You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 

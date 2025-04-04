@@ -16,7 +16,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Properties
 
-|   Behavior   | API in Essential JS 1 | API in Essential JS 2 |
+|   Behavior   | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------------|-----------------------|-----------------------|
 | To change the display of days count in agenda view | **Property:** *agendaViewSettings.daysInAgenda* <br/> <br/> `<ej-schedule id="Schedule" currentview="currentview" [agendaViewSettings]="AgendaSettings">`<br>`</ej-schedule>`<br>**TS**<br>`this.AgendaSettings = {`<br>`daysInAgenda: 5};`| **Property:** *agendaDaysCount* <br/><br/> `<ejs-schedule [(currentView)]="currentView" [agendaDaysCount]= "agendaDaysCount">`<br>`</ejs-schedule>`<br>**TS**<br>`this.currentView = ['Agenda'];`<br>`this.agendaDaysCount=7;`|
 | Preventing deletion of appointment | **Property:** *allowDelete* <br/> <br/> `<ej-schedule id="Schedule" [allowDelete]="false">`<br>`</ej-schedule>` | Not applicable |
@@ -69,7 +69,7 @@ Enable load on demand | **Property:** *enableLoadOnDemand* <br/> <br/> `<ej-sche
 
 ### Resources
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To define resource datasource |  **Property:** *resources* <br/><br/>  `<ej-schedule id="Schedule" appointmentSettings.resourceFields="RoomId">`<br>`<e-resources>`<br>`<e-resource field="RoomId" title="Room" name="Rooms" [allowMultiple]="true" [resourceSettings]=ownerData></e-resource>`<br>`</e-resources>`<br>`</ej-schedule>`<br>**TS**<br>`this.ownerData = {`<br>`dataSource: [{`<br>`OwnerText: "Nancy",`<br>`id: 1,`<br>`OwnerColor: "#f8a398"}],`<br>`text: "OwnerText",`<br>`id: "id",`<br>`color: "OwnerColor"};` | **Property:** *resources* <br/> <br/> `<ejs-schedule width='100%' height='550px'>`<br>`<e-resources>`<br>`<e-resource field='ProjectId' title='Project' [dataSource]='resourceDataSource' name='Project' textField='text' idField='id' colorField='color'>`<br>`</e-resource>`<br>`</e-resources>`<br>`</ejs-schedule>`<br>**TS**<br>`this.ProjectDataSource: Object[] = [`<br>`{ text: 'PROJECT 1', id: 1, color: '#cb6bb2'}];` |
 | Allowing multiple selection of resources in event window | **Property:** *e-allowMultiple* <br/> <br/> `<ej-schedule id="Schedule" appointmentSettings.resourceFields="RoomId">`<br>`<e-resources>`<br>`<e-resource field="RoomId" title="Room" name="Rooms" [allowMultiple]="true" [resourceSettings]=roomData></e-resource>`<br>`<e-resource field="OwnerId" title="Owner" name="Owners" [allowMultiple]="true" [resourceSettings]=ownerData></e-resource>`<br>`</e-resources>`<br>`</ej-schedule>`<br>**TS**<br> `this.roomData = {`<br>`dataSource: [{`<br>`RoomText: "Room1",`<br>`id: 1,`<br>`RoomColor: "#f8a398"},`<br>`{ RoomText: "Room2",`<br>`id: 2,`<br>`RoomColor: "#f8a398"}],`<br>`text: "RoomText",`<br>`id: "id",`<br>`color: "RoomColor"};`<br>`this.ownerData = {`<br>`dataSource: [{`<br>`OwnerText: "Nancy",`<br>`id: 1,`<br>`OwnerColor: "#f8a398"},`<br>`{ OwnerText: "Steven",`<br>`id: 2,`<br>`OwnerColor: "#f8a398"}],`<br>`text: "OwnerText",`<br>`id: "id",`<br>`color: "OwnerColor"};`| **Property:** *allowMultiple* <br/> <br/>  `<ejs-schedule width='100%' height='550px'>`<br>`<e-resources>`<br>`<e-resource field='ProjectId' title='Room' [dataSource]='ProjectDataSource' name='Project' textField='text' idField='id' colorField='color'>`<br>`</e-resource>`<br>`</e-resources>`<br>`</ejs-schedule>`<br>**TS**<br>`this.ProjectDataSource: Object[] = [`<br>`{ text: 'PROJECT 1', id: 1, color: '#cb6bb2'},`<br>`{ text: 'PROJECT 2', id: 2, color: '#cb6bb2'}];` |
@@ -77,7 +77,7 @@ Enable load on demand | **Property:** *enableLoadOnDemand* <br/> <br/> `<ej-sche
 
 ### Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To group the resources in scheduler layout | **Property:** *group* <br/> <br/> `<ej-schedule id="Schedule" width="100%" height="525px" appointmentSettings.resourceFields="OwnerId,RoomId" [group]="group">`<br>`<e-resources>`<br>`<e-resource field="OwnerId" title="Owner" name="Owners" [resourceSettings]="ownerData"></e-resource>`<br>`<e-resource field="RoomId" title="Room" name="Rooms" [allowMultiple]="true" [resourceSettings]="roomData"></e-resource>`<br>`</e-resources>`<br>`</ej-schedule>`<br>**TS**<br>`this.group = {`<br>`resources: ["Owners", "Rooms"]};`<br>`this.ownerData = {`<br>`dataSource: [{`<br>`OwnerText: "Nancy",`<br>`id: 1,`<br>`OwnerColor: "#f8a398"}],`<br>`text: "OwnerText",`<br>`id: "id",`<br>`color: "OwnerColor"};`<br>`this.roomData = {`<br>`dataSource: [{`<br>`text: "Room1",`<br>`id: 1,`<br>`color: "#f8a398"}],`<br>`text: "text",`<br>`id: "id",`<br>`color: "color"};` | **Property:** *group* <br/><br/> `<ejs-schedule width='100%' height='550px' [group]="group">`<br>`<e-resources>`<br>`<e-resource field='ProjectId' title='Project' [dataSource]='ProjectDataSource' name='Projects' textField='text' idField='id' colorField='color'>`<br>`</e-resource>`<br>`<e-resource field='CategoryId' title='Category' [dataSource]='CategoryDataSource' name='Categories' textField='text' idField='id' colorField='color'>`<br>`</e-resource>`<br>`</e-resources>`<br>`</ejs-schedule>`<br>**TS**<br>`this.group = {resources: ['Project','Category'] };`<br>`this.ProjectDataSource: Object[] = [`<br>`{ text: 'PROJECT1', id: 1, color: '#cb6bb2'}];`<br>`this.CategoryDataSource: Object[] = [`<br>`{ text: 'Testing', id: 1, color: '#cb6bb2'}];` |
 | Allow group editing | **Property:** *allowGroupEditing* <br/> <br/>`<ej-schedule id="Schedule" appointmentSettings.resourceFields="RoomId">`<br>`<e-resources>`<br>`<e-resource field="RoomId" title="Room" name="Rooms" [allowMultiple]="true" [resourceSettings]="ownerData" [group]="group"></e-resource>`<br>`</e-resources>`<br>`</ej-schedule>`<br>**TS**<br>`this.group = {`<br>`resources: ["Owners", "Rooms"], [allowGroupEditing]= "true"};`<br>`this.ownerData = {`<br>`dataSource: [{`<br>`OwnerText: "Nancy",`<br>`id: 1,`<br>`OwnerColor: "#f8a398"},`<br>`{ OwnerText: "Steven",`<br>`id: 2,`<br>`OwnerColor: "#f8a398"}],`<br>`text: "OwnerText",`<br>`id: "id",`<br>`color: "OwnerColor"};` | **Property:** *allowGroupEdit* <br/> <br/> `<ejs-schedule width='100%' height='550px' [group]="group">`<br>`<e-resources>`<br>`<e-resource field='RoomId' title='Room' [dataSource]='resourceDataSource' name='Room' textField='text' idField='id' colorField='color'>`<br>`</e-resource>`<br>`</e-resources>`<br>`</ejs-schedule>`<br>**TS**<br>`this.group = {allowGroupEdit: true, resources:['Room'] };`<br>`this.ProjectDataSource: Object[] = [`<br>`{ text: 'PROJECT1', id: 1, color: '#cb6bb2'},`<br>`{ text: 'PROJECT2', id: 2, color: '#cb6bb2'},`<br>`{ text: 'PROJECT3', id: 2, color: '#cb6bb2'}];` |
@@ -88,13 +88,13 @@ Enable load on demand | **Property:** *enableLoadOnDemand* <br/> <br/> `<ej-sche
 
 ### Header Rows
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom rows in the header in timeline views | Not applicable | **Property:** *HeaderRows* <br/><br/> `<ejs-schedule width='100%' height='650px' [(currentView)]="currentView">`<br>  `<e-header-rows>`<br>`<e-header-row option='Month'>`<br>`</e-header-row>`<br>`<e-header-row option='Week'>`<br>`</e-header-row>`<br>`<e-header-row option='Date'>`<br>`</e-header-row>`<br>`</e-header-rows>`<br>`<e-views>`<br>`<e-view displayName='Timeline Month' option='TimelineMonth' [interval]="monthInterval"></e-view>`<br>`</e-views>`<br>`</ejs-schedule>`<br>**TS**<br>`this.monthInterval= 12;`<br>`this.currentView='TimelineMonth';` |
 
 ### TimeScale
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Enabling time scale | **Property:** *timeScale.enable* <br/> <br/>  `<ej-schedule id="Schedule" [timeScale.enable]="true">`<br>`</ej-schedule>` |  **Property:** *enable* <br/><br/> `<ejs-schedule [timeScale]="timeScale">`<br>`</ejs-schedule>`<br>**TS**<br>`this.timeScale= { enable: true};` |
 | Setting major interval on time scale | **Property:** *timeScale.majorSlot* <br/> <br/> `<ej-schedule id="Schedule" [timeScale.enable]="true" [timeScale.majorSlot]="60">`<br>`</ej-schedule>` | **Property:** *interval* <br/><br/> `<ejs-schedule [timeScale]="timeScale">`<br>`</ejs-schedule>`<br>**TS**<br>`this.timeScale= { enable: true, interval: 60};` |
@@ -104,13 +104,13 @@ Enable load on demand | **Property:** *enableLoadOnDemand* <br/> <br/> `<ej-sche
 
 ### Quick info templates
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Template for quick popup | Not applicable | **Property:** *quickInfoTemplates* <br/><br/> `<ejs-schedule width='100%' height='550px'>`<br>`<ng-template #quickInfoTemplatesHeader>`You can add template elements here`</ng-template>`<br>`<ng-template #quickInfoTemplatesContent>`You can add template elements here`</ng-template>`<br>`<ng-template #quickInfoTemplatesFooter>`You can add template elements here`</ng-template>`<br>`</ejs-schedule>` |
 
 ### Event settings
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Datasource for events | **Property:** *appointmentSettings.dataSource* <br/> <br/>  `<ej-schedule id="Schedule" [appointmentSettings.dataSource]=dataSource>`<br>`</ej-schedule>`<br>**TS**<br>`this.dataSource = [{`<br>`Id: 1,`<br>`Subject: "Testing",`<br>`StartTime: new Date(2017, 1, 7, 6, 0),`<br>`EndTime: new Date(2017, 1, 7, 7, 30)}];` | **Property:** *dataSource* <br/><br/> `<ejs-schedule [eventSettings]="eventSettings">`<br>`</ejs-schedule>`<br>**TS**<br>`public data: Object[] = [{`<br>`Id: 2,`<br>`Subject: 'Paris',`<br>`StartTime: new Date(2018, 1, 15, 10, 0),`<br>`EndTime: new Date(2018, 1, 15, 12, 30),`<br>`IsAllDay: false,`<br>`RecurrenceID: 10,`<br>`}];`<br>`this.eventSettings= {`<br>`dataSource: this.data};` |
 | Appointment fields |  `<ej-schedule id="Schedule" [appointmentSettings.dataSource]="appointments">`<br>`</ej-schedule>`<br>**TS**<br>`this.appointments = [{`<br>`Id: 1,`<br>`Subject: "Testing",`<br>`StartTime: new Date(2017, 1, 7, 6, 0),`<br>`EndTime: new Date(2017, 1, 7, 7, 30)}];` | `<ejs-schedule [eventSettings]="eventSettings">`<br>`</ejs-schedule>`<br>**TS**<br>`public data: Object[] = [{`<br>`Id: 2,`<br>`Subject: 'Paris',`<br>`StartTime: new Date(2018, 1, 15, 10, 0),`<br>`EndTime: new Date(2018, 1, 15, 12, 30),`<br>`IsAllDay: false,`<br>`RecurrenceID: 10,`<br>`}];`<br>`this.eventSettings= {`<br>`dataSource: this.data,fields: {`<br>`id: 'Id',`<br>`subject: { name: 'Subject' },`<br>`isAllDay: { name: 'IsAllDay' },`<br>`location: { name: 'Location' },`<br>`description: { name: 'Description' },`<br>`recurrenceID : { name: 'RecurrenceID' }`<br>`}};` |
@@ -122,7 +122,7 @@ Enable load on demand | **Property:** *enableLoadOnDemand* <br/> <br/> `<ej-sche
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To add appointments manually | **Method:** *saveAppointment()* <br/> <br/> `export class AppComponent {`<br>`@ViewChild('schedule') Schedule: EJComponents<any, any>;`<br> `ngAfterViewInit(){`<br>`var data = {`<br> `Id: 1,`<br>`Subject: "Testing",`<br>`StartTime: new Date(2014, 4, 5, 10, 00),`<br>`EndTime: new Date(2014, 4, 5, 12, 00)};`<br>`this.Schedule.widget.saveAppointment(data);`<br>`}`<br>`}` |  **Method:** *addEvent()* <br/><br/> `@ViewChild('schedule') Schedule: ScheduleComponent;`<br>`public data = {`<br> `Id: 1,`<br>`Subject: "New Event",`<br>`StartTime: new Date(2014, 4, 5, 10, 00),`<br>`EndTime: new Date(2014, 4, 5, 12, 00)};`<br>`this.Schedule.addEvent(data);` |
 | To add resources dynamically | **Method:** *addResource()* <br/><br/> `export class AppComponent {`<br>`@ViewChild('schedule') Schedule: EJComponents<any, any>;`<br> `ngAfterViewInit(){`<br>`var data = { text: "Paul", id: 1, groupId: 3, color: "#cc99ff" };` <br> `var index = 0;` <br>`this.Schedule.widget.addResource(data, "Owners", index);`<br>`}`<br>`}` | **Method:** *addResource()* <br/><br/> `@ViewChild('schedule') Schedule: ScheduleComponent;`<br>`public data = { text: "Paul", id: 3, groupId: 1, color: "#cc99ff" };`<br>`public index = 0;`<br>`this.Schedule.addResource(data, "Owners", index);` |
@@ -158,7 +158,7 @@ Get resource details using index | Not applicable | **Method:** *getResourceByIn
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on the beginning of each scheduler action | **Event:** *actionBegin* <br/><br/> `<ej-schedule #schedule (actionBegin) = "onActionBegin($event)">`<br>`</ej-schedule>`<br> **TS** <br>`onActionBegin(e: any){}`| **Event:** *actionBegin* <br><br>`<ejs-schedule (actionBegin)='onActionBegin($event)'>`<br>`</ejs-schedule>`<br> **TS** <br>`onActionBegin(args: any): void{}` |
 | Fires on the completion of each scheduler action | **Event:** *actionComplete* <br/><br/> `<ej-schedule #schedule (actionComplete) = "onActionComplete($event)">`<br>`</ej-schedule>`<br> **TS** <br>`onActionComplete(e: any){}`| **Event:** *actionComplete* <br><br>`<ejs-schedule (actionComplete)='onActionComplete($event)'>`<br>`</ejs-schedule>`<br> **TS** <br>`onActionComplete(args: any): void{}` |

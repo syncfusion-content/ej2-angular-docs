@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Tree shaking is a powerful optimization technique used in modern JavaScript and TypeScript development with tools like Webpack or Rollup. Its main goal is to remove dead or unused code from the application's bundle, resulting in smaller, more efficient, and faster-loading web applications.
 
-In this guide, we explore how tree shaking is implemented in Angular applications and how it synergizes with Syncfusion Angular components to optimize performance.
+In this guide, we explore how tree shaking is implemented in Angular applications and how it synergizes with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to optimize performance.
 
 ## Tree Shaking in Angular  
 
@@ -20,15 +20,15 @@ The Angular CLI, utilizing Webpack for bundling script files, has supported tree
 
 N> Ahead Of Time (AOT) compilation process performs tree shaking in the Angular application, which was enabled by default starting from Angular version 9. To know more about AOT compilation, refer to this [documentation](./angular-aot).
 
-## Using Syncfusion components with Tree Shaking 
+## Using Syncfusion<sup style="font-size:70%">&reg;</sup> components with Tree Shaking 
 
-Syncfusion Angular components support Tree Shaking by default and do not require any additional changes at the application level.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support Tree Shaking by default and do not require any additional changes at the application level.
 
 ## Implementing Tree Shaking in an Angular Application 
 
-Follow these steps to implement an Angular application with Syncfusion components, optimizing it through tree shaking:
+Follow these steps to implement an Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components, optimizing it through tree shaking:
 
-1. **Create an Angular Application:** Begin with the Syncfusion Angular DataGrid component as outlined in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone) guide using Angular Standalone.
+1. **Create an Angular Application:** Begin with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid component as outlined in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone) guide using Angular Standalone.
 
 2. **Configuration for Tree Shaking:** Modify the `angular.json` configuration file to enable optimization features for tree shaking.
 
@@ -57,7 +57,7 @@ Follow these steps to implement an Angular application with Syncfusion component
 
 By adhering to these practices, you can significantly enhance the performance of your Angular application and deliver an improved user experience.
 
-## Bundle size for Syncfusion Angular Grid component
+## Bundle size for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component
 
 The following table demonstrates the size of the Grid module and includes the addition of some features to it in the Angular application.
 

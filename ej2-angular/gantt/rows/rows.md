@@ -14,7 +14,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Customize row styles 
 
-Customizing the styles of rows in a Syncfusion Gantt chart allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the gantt chart. To customize the row styles in the gantt, you can use CSS, properties, methods, or event support provided by the Syncfusion Angular Gantt chart component.
+Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the gantt chart. To customize the row styles in the gantt, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component.
 
 ### Using event
 
@@ -114,7 +114,7 @@ Please refer to the following example.
 
 ## Auto focus taskbar on row click 
 
-The Syncfusion Gantt chart allows you to auto-scroll to the taskbar position in timeline when clicking the particular row. You can control this behaviour by using the [autofocustasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autofocustasks) property of the Gantt chart component.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows you to auto-scroll to the taskbar position in timeline when clicking the particular row. You can control this behaviour by using the [autofocustasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autofocustasks) property of the Gantt chart component.
 
 Here's an example of how you can utilize the `autofocustasks` property to auto-scroll the taskbar on row click.
 
@@ -131,7 +131,7 @@ Here's an example of how you can utilize the `autofocustasks` property to auto-s
 
 ## Row height
 
-The Syncfusion Gantt chart allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property of the Gantt chart component. This property allows you to change the height of the entire gantt row to your desired value.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property of the Gantt chart component. This property allows you to change the height of the entire gantt row to your desired value.
 
 In the following example, the demonstration illustrates how to dynamically alter the row height using the `rowHeight` property.
 
@@ -292,7 +292,7 @@ export class AppComponent {
 
 ## Adding a new row programmatically
 
-The Syncfusion Gantt chart provides a way to add a new row to the gantt chart programmatically. This feature is useful when you want to add a new record to the gantt without having manually enter data in the gantt. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method of the Gantt chart.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides a way to add a new row to the gantt chart programmatically. This feature is useful when you want to add a new record to the gantt without having manually enter data in the gantt. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method of the Gantt chart.
 
 The `addRecord` method takes three parameters:
 
@@ -326,7 +326,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 
 ## Show or hide a row using an external actions
 
-In a Syncfusion gantt chart, you can show or hide a particular row based on some external action, such as a checkbox click. This can be useful in scenarios where you want to hide certain rows from the gantt temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of treegrid object in gantt instance, [getRowByIndex](https://ej2.syncfusion.com/documentation/api/gantt/#getrowbyindex) method of gantt chart component and `getRowsObject` method of grid object within the gantt instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox
+In a Syncfusion<sup style="font-size:70%">&reg;</sup> gantt chart, you can show or hide a particular row based on some external action, such as a checkbox click. This can be useful in scenarios where you want to hide certain rows from the gantt temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of treegrid object in gantt instance, [getRowByIndex](https://ej2.syncfusion.com/documentation/api/gantt/#getrowbyindex) method of gantt chart component and `getRowsObject` method of grid object within the gantt instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the grid part. You can use this method to iterate through all the rows and access their data and index.
 

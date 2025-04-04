@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Sorting in Angular Grid component
 
-You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion Angular Grid component using CSS.You can use the available Syncfusion [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme. Here's how to do it:
 
 ## Customizing the grid sorting icon
 

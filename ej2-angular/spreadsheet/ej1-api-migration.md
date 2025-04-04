@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Spreadsheet component
 
-This article describes the API migration process of the Spreadsheet component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of the Spreadsheet component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Editing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the editing feature | **Property:** *allowEditing* <br><br>`<ej-spreadsheet [allowEditing]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowEditing* <br><br>`<ejs-spreadsheet [allowEditing]="true">`<br>`</ejs-spreadsheet>`|
 | Edit a particular cell | **Method:** *XLEdit.editCell* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLEdit.editCell(1, 1); }`| **Method:** *startEdit* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.selectRange('A1'); this.spreadsheetObj.startEdit();`|
@@ -25,7 +25,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Selection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the selection feature | **Property:** *allowSelection* <br><br>`<ej-spreadsheet [allowSelection]="true">`<br>`</ej-spreadsheet>`| **Property:** *selectionSettings.mode* <br><br>`<ejs-spreadsheet [selectionSettings]="selectionSettings">`<br>`</ejs-spreadsheet>`<br>**TS**<br>`this.selectionSettings = { mode: 'Multiple' };`|
 | Defines active cell in the sheet | **Property:** *selectionSettings.activeCell* <br><br>`<ej-spreadsheet [selectionSettings]="selectionSettings">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.selectionSettings = { activeCell: "A1" };`| **Property:** *activeCell* <br><br>`<ejs-spreadsheet>`<br>`<e-sheets><e-sheet activeCell="A1"></e-sheet></e-sheets>`<br>`</ejs-spreadsheet>`|
@@ -37,7 +37,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Clipboard
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the clipboard feature | **Property:** *allowClipboard* <br><br>`<ej-spreadsheet [allowClipboard]="true">`<br>`</ej-spreadsheet>`| **Property:** *enableClipboard* <br><br>`<ejs-spreadsheet [enableClipboard]="true">`<br>`</ejs-spreadsheet>`|
 | Copy the selected cells | **Method:** *XLClipboard.copy* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLClipboard.copy(); }`| **Method:** *copy* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.copy("A1");`|
@@ -46,7 +46,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Formulas
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the formula bar | **Property:** *allowFormulaBar* <br><br>`<ej-spreadsheet [allowFormulaBar]="true">`<br>`</ej-spreadsheet>`| **Property:** *showFormulaBar* <br><br>`<ejs-spreadsheet [showFormulaBar]="true">`<br>`</ejs-spreadsheet>`|
 | Set name manager | **Property:** *nameManager* <br><br>`<ej-spreadsheet [nameManager]="nameManager">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.nameManager:[{ name: "inputRange", refersto: "=Sheet1!$A$1:$A$2" }];`| **Property:** *definedNames* <br><br>`<ejs-spreadsheet [definedNames]="definedNames">`<br>`</ejs-spreadsheet>`<br>**Ts**<br>`this.definedNames= [{ name: 'namedRange1', refersTo: 'Sheet1!A1:B5' }];`|
@@ -57,7 +57,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Formatting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the cell format feature | **Property:** *allowCellFormatting* <br><br>`<ej-spreadsheet [allowCellFormatting]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowCellFormatting* <br><br>`<ejs-spreadsheet [allowCellFormatting]="true">`<br>`</ejs-spreadsheet>`|
 | Enables or disables the conditional format feature | **Property:** *allowConditionalFormats* <br><br>`<ej-spreadsheet [allowConditionalFormats]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowConditionalFormat* <br><br>`<ejs-spreadsheet [allowConditionalFormat]="true">`<br>`</ejs-spreadsheet>`|
@@ -73,7 +73,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Filtering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the filtering feature | **Property:** *allowFiltering* <br><br>`<ej-spreadsheet [allowFiltering]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowFiltering* <br><br>`<ejs-spreadsheet [allowFiltering]="true">`<br>`</ejs-spreadsheet>`|
 | Clear the filter in the filtered columns | **Method:** *XLFilter.clearFilter* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLFilter.clearFilter(); }`| **Method:** *clearFilter* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.clearFilter();`|
@@ -81,14 +81,14 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the sorting feature | **Property:** *allowSorting* <br><br>`<ej-spreadsheet [allowSorting]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowSorting* <br><br>`<ejs-spreadsheet [allowSorting]="true">`<br>`</ejs-spreadsheet>`|
 | Sort a particular range of cells based on its values | **Method:** *XLSort.sortByRange* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLSort.sortByRange("A1:D3", "B",  "ascending"); }`| **Method:** *sort* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.sort({ sortDescriptors: { order: 'Ascending' }, containsHeader: true}, 'A1:H11');`|
 
 ## Hyperlink
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the hyperlink feature | **Property:** *allowHyperlink* <br><br>`<ej-spreadsheet [allowHyperlink]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowHyperlink* <br><br>`<ejs-spreadsheet [allowHyperlink]="true">`<br>`</ejs-spreadsheet>`|
 | Remove the hyperlink in the specified cells | **Method:** *removeHyperlink* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.removeHyperlink("A2:A3"); }`| **Method:** *removeHyperlink* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.removeHyperlink("A2:A3");`|
@@ -96,7 +96,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Protection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the lock cell feature | **Property:** *allowLockCell* <br><br>`<ej-spreadsheet [allowLockCell]="true">`<br>`</ej-spreadsheet>`| By default, it is enabled.|
 | Protect or Unprotect the active sheet | **Method:** *protectSheet* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.protectSheet(); }`| **Method:** *protectSheet* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.protectSheet(0, {});`|
@@ -104,7 +104,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Find and Replace
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the find & replace feature | **Property:** *allowSearching* <br><br>`<ej-spreadsheet [allowSearching]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowFindAndReplace* <br><br>`<ejs-spreadsheet [allowFindAndReplace]="true">`<br>`</ejs-spreadsheet>`|
 | Find the next occurrence of the given value | **Method:** *XLSearch.findNext* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLSearch.findNext("g", {isCSen: false, isEMatch: false, type: "value", mode: "sheet", searchBy: "rows"}, 1); }`| **Method:** *find* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.find({ value: "Jenna Schoolfield", sheetIndex: 1, findOpt: "next", mode: "Sheet", isCSen: false, isEMatch: false, searchBy: "By Row" });`|
@@ -114,7 +114,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Ribbon
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Show or hide the ribbon | **Property:** *showRibbon* <br><br>`<ej-spreadsheet [showRibbon]="true">`<br>`</ej-spreadsheet>`| **Property:** *showRibbon* <br><br>`<ejs-spreadsheet [showRibbon]="true">`<br>`</ejs-spreadsheet>`|
 | Add the menu items in the file menu | **Method:** *XLRibbon.addMenuItem* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLRibbon.addMenuItem([{ id: "newitem", text: "New Item", parentId: "FILE" }], 2); }`| **Method:** *addFileMenuItems* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.addFileMenuItems([{ text: 'New Item' }], "Save As");`|
@@ -126,14 +126,14 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Undo and Redo
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the undo and redo feature | **Property:** *allowUndoRedo* <br><br>`<ej-spreadsheet [allowUndoRedo]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowUndoRedo* <br><br>`<ejs-spreadsheet [allowUndoRedo]="true">`<br>`</ejs-spreadsheet>`|
 | Update the details for custom undo and redo operations. | **Method:** *updateUndoRedoCollection* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.updateUndoRedoCollection({ action: "custom", cell: xlObj.getActiveCell(), sheetIndex: 1 }); }`| **Method:** *updateUndoRedoCollection* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.updateUndoRedoCollection({ eventArgs: { class: 'customClass', rowIdx: 0, colIdx: 0, action: 'customCSS' } });`|
 
 ## Worksheet
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Set active sheet index in the workbook | **Property:** *activeSheetIndex* <br><br>`<ej-spreadsheet [activeSheetIndex]="true">`<br>`</ej-spreadsheet>`| **Property:** *activeSheetIndex* <br><br>`<ejs-spreadsheet [activeSheetIndex]="true">`<br>`</ejs-spreadsheet>`|
 | Specifies the rows for a sheet | **Property:** *sheets.rows* <br><br>`<ej-spreadsheet [sheets]="sheets">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.sheets = [{ rows:[{ height:30, index: 1, cells:[{ value: "Item Name" }] }] }]`| **Property:** *sheets.rows* <br><br>`<ejs-spreadsheet>`<br>`<e-sheets><e-sheet><e-rows><e-row height=30 index=1><e-cells><e-cell value="Item Name"></e-cell></e-cells></e-row></e-rows></e-sheet></e-sheets><br>`</ejs-spreadsheet>`|
@@ -147,7 +147,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Open and Save
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the import feature | **Property:** *allowImport* <br><br>`<ej-spreadsheet [allowImport]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowOpen* <br><br>`<ejs-spreadsheet [allowOpen]="true">`<br>`</ejs-spreadsheet>`|
 | Enables or disables the exporting feature | **Property:** *exportSettings.allowExporting* <br><br>`<ej-spreadsheet [exportSettings]="exportSettings">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.exportSettings = { allowExporting: true }`| **Property:** *allowSave* <br><br>`<ejs-spreadsheet [allowSave]="true">`<br>`</ejs-spreadsheet>`|
@@ -164,13 +164,13 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Data Binding
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Specifies the single range or multiple range settings for a sheet | **Property:** *sheets.rangeSettings* <br><br>`<ej-spreadsheet [sheets]="sheets">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.sheets = [{ rangeSettings: [{ dataSource: defaultData, showHeader: true, startCell: "A1", query: ej.Query().take(50) }] }]`| **Property:** *sheets.ranges* <br><br>`<ejs-spreadsheet>`<br>`<e-sheets><e-sheet><e-ranges><e-range [dataSource]="defaultData" startCell="A1" [showFieldAsHeader]="true" [query]="query"></e-range></e-ranges></e-sheet></e-sheets><br>`</ejs-spreadsheet>`|
 
 ## Context Menu
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the context menu | **Property:** *enableContextMenu* <br><br>`<ej-spreadsheet [enableContextMenu]="true">`<br>`</ej-spreadsheet>`| **Property:** *enableContextMenu* <br><br>`<ejs-spreadsheet [enableContextMenu]="true">`<br>`</ejs-spreadsheet>`|
 | Dynamically add items in the context menu | **Method:** *XLCMenu.addItem* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insertbefore'); }`| **Method:** *addContextMenuItems* <br><br>`<ejs-spreadsheet (contextMenuBeforeOpen)="contextMenuBeforeOpen($event)" #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`contextMenuBeforeOpen(args) { this.spreadsheetObj.addContextMenuItems([{ text: 'Custom Item' }], 'Paste Special', false); }`|
@@ -182,14 +182,14 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Cell Template
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the cell type feature | **Property:** *allowCellType* <br><br>`<ej-spreadsheet [allowCellType]="true">`<br>`</ej-spreadsheet>`| By default, it is enabled. |
 | Specifies the cell types for a cell or range | **Property:** *sheets.cellTypes* <br><br>`<ej-spreadsheet [sheets]="sheets">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.sheets = [{  cellTypes: [{ range: 'F5', settings: { type: ej.Spreadsheet.CustomCellType.Button, background-color': 'yellow', color: 'black', text: 'BUTTON' } }] }];`| **Property:** *sheets.ranges.template* <br><br>`<ejs-spreadsheet>`<br>`<e-sheets><e-sheet><e-ranges><e-range template="<button class='e-button-template'>BUTTON</button>" address="F5"></e-range></e-ranges></e-sheet></e-sheets>`<br>`</ejs-spreadsheet>`|
 
 ## Merge
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the  merge feature | **Property:** *allowMerging* <br><br>`<ej-spreadsheet [allowMerging]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowMerge* <br><br>`<ejs-spreadsheet [allowMerge]="true">`<br>`</ejs-spreadsheet>`|
 | Merge cells across | **Method:** *mergeAcrossCells* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.mergeAcrossCells("A3:B5"); }`| **Method:** *merge* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.merge("A3:B5", "Horizontally");`|
@@ -198,7 +198,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Insert and Delete
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the delete feature | **Property:** *allowDelete* <br><br>`<ej-spreadsheet [allowDelete]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowDelete* <br><br>`<ejs-spreadsheet [allowDelete]="true">`<br>`</ejs-spreadsheet>`|
 | Enables or disables the insert feature | **Property:** *allowInsert* <br><br>`<ej-spreadsheet [allowInsert]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowInsert* <br><br>`<ejs-spreadsheet [allowInsert]="true">`<br>`</ejs-spreadsheet>`|
@@ -212,7 +212,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Clear
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the clear feature | **Property:** *allowClear* <br><br>`<ej-spreadsheet [allowClear]="true">`<br>`</ej-spreadsheet>`| By default, it is enabled. |
 | Clear all the data and format in the specified range of cells | **Method:** *clearAll* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.clearAll("A2:A6"); }`| **Method:** *clear* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.clear({ type: "Clear All", range: "A2:A6" });`|
@@ -221,7 +221,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Data Validation
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the data validation feature | **Property:** *allowDataValidation* <br><br>`<ej-spreadsheet [allowDataValidation]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowDataValidation* <br><br>`<ejs-spreadsheet [allowDataValidation]="true">`<br>`</ejs-spreadsheet>`|
 | Apply data validation rules in a selected range of cells based on the defined condition | **Method:** *XLValidate.applyDVRules* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.XLValidate.applyDVRules("A1:D3", ["Between", "15", "20"], "number" ,true, true); }`| **Method:** *addDataValidation* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.addDataValidation({ type: 'TextLength', operator: 'LessThanOrEqualTo', value1: '4' }, 'A2:A5');`|
@@ -231,7 +231,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Wrap
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the wrap text feature | **Property:** *allowWrap* <br><br>`<ej-spreadsheet [allowWrap]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowWrap* <br><br>`<ejs-spreadsheet [allowWrap]="true">`<br>`</ejs-spreadsheet>`|
 | Unwrap the specified range of cells | **Method:** *unWrapText* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.unWrapText("A1:B3"); }`| **Method:** *wrap* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.wrap("A1:B3", false);`|
@@ -239,7 +239,7 @@ This article describes the API migration process of the Spreadsheet component fr
 
 ## Scrolling
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the scrolling feature | **Property:** *scrollSettings.allowScrolling* <br><br>`<ej-spreadsheet [scrollSettings]="scrollSettings">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.scrollSettings = { allowScrolling: true };`| **Property:** *allowScrolling* <br><br>`<ejs-spreadsheet [allowScrolling]="true">`<br>`</ejs-spreadsheet>`|
 | Enables or disables the sheet on demand | **Property:** *scrollSettings.allowSheetOnDemand* <br><br>`<ej-spreadsheet [scrollSettings]="scrollSettings">`<br>`</ej-spreadsheet>`<br>**Ts**<br>`this.scrollSettings = { allowSheetOnDemand: true };`| By default, each sheet will be rendered on demand |
@@ -307,7 +307,7 @@ The following table compares Excel functionality with the availability of EJ1 an
 
 ## Common Properties
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Enables or disables the keyboard navigation feature | **Property:** *allowKeyboardNavigation* <br><br>`<ej-spreadsheet [allowKeyboardNavigation]="true">`<br>`</ej-spreadsheet>`| **Property:** *enableKeyboardNavigation* <br><br>`<ejs-spreadsheet [enableKeyboardNavigation]="true">`<br>`</ejs-spreadsheet>`|
 | Enables or disables the resizing feature | **Property:** *allowResizing* <br><br>`<ej-spreadsheet [allowResizing]="true">`<br>`</ej-spreadsheet>`| **Property:** *allowResizing* <br><br>`<ejs-spreadsheet [allowResizing]="true">`<br>`</ejs-spreadsheet>`|
@@ -322,7 +322,7 @@ The following table compares Excel functionality with the availability of EJ1 an
 
 ## Common Methods
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Get the data in the specified range | **Method:** *getRangeData* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.getRangeData({range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1}); }`| **Method:** *getData* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`@ViewChild('default') public spreadsheetObj: SpreadsheetComponent;`<br>`this.spreadsheetObj.getData(getRangeAddress('A1:D5')).then((cells)=>{ cells.forEach((cell, key)=>{  }) });`|
 | Get the range indices array based on the specified alpha range | **Method:** *getRangeIndices* <br><br>`<ej-spreadsheet id="spreadsheet">`<br>`</ej-spreadsheet>`<br>**TS**<br>`ngAfterViewInit(){ let xlObj = $("#spreadsheet").data("ejSpreadsheet");  xlObj.getRangeIndices("A1:A9"); }`| **Method:** *getRangeIndexes* <br><br>`<ejs-spreadsheet #default>`<br>`</ejs-spreadsheet>`<br>**TS**<br>`import { getRangeIndexes } from '@syncfusion/ej2-spreadsheet';`<br>`getRangeIndexes("A1:A9")`|
@@ -343,7 +343,7 @@ The following table compares Excel functionality with the availability of EJ1 an
 
 ## Common Events
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Triggers for every action before it starts | **Event:** *actionBegin* <br><br>`<ej-spreadsheet id="spreadsheet" (actionBegin)="onActionBegin($event)">`<br>`</ej-spreadsheet>`<br>**TS**<br>`onActionBegin(args){ }`| **Event:** *actionBegin* <br><br>`<ejs-spreadsheet (actionBegin)="onActionBegin($event)">`<br>`</ejs-spreadsheet>`<br>**TS**<br>`onActionBegin(args){ }`|
 | Triggers for every completed action | **Event:** *actionComplete* <br><br>`<ej-spreadsheet id="spreadsheet" (actionComplete)="onActionComplete($event)">`<br>`</ej-spreadsheet>`<br>**TS**<br>`onActionComplete(args){ }`| **Event:** *actionComplete* <br><br>`<ejs-spreadsheet (actionComplete)="onActionComplete($event)">`<br>`</ejs-spreadsheet>`<br>**TS**<br>`onActionComplete(args){ }`|

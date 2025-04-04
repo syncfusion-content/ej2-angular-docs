@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
 > * The chunk upload works in asynchronous upload only.
-* This feature is available from the Essential Studio Vol 2, 2018 release.
+* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
 
 To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#chunksize) option of the upload and it receives the value in `bytes`.
 

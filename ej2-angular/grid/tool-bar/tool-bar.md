@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Grid component
 
-The toolbar in the Syncfusion Angular Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
+The toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 
 To enable the toolbar functionality, you need to inject the **ToolbarService** in the provider section of your **AppModule**. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/) objects for custom toolbar items.
 
@@ -30,7 +30,7 @@ The following example demonstrates how to enable toolbar items in the grid.
 
 ## Enable or disable toolbar items
 
-Enabling or disabling toolbar items dynamically in Syncfusion Angular Grid is to provide control over the availability of specific functionality based on application logic. This feature allows you to customize the toolbar based on various conditions or individuals interactions. 
+Enabling or disabling toolbar items dynamically in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is to provide control over the availability of specific functionality based on application logic. This feature allows you to customize the toolbar based on various conditions or individuals interactions. 
 
 You can enable or disable toolbar items dynamically by using the [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
 
@@ -50,7 +50,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 
 ## Add toolbar at the bottom of grid
 
-By adding the toolbar at the bottom of the Syncfusion Angular Grid, important actions and functionality remain consistently visible and easily accessible, providing easy access to actions and operations without the need for scrolling.
+By adding the toolbar at the bottom of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, important actions and functionality remain consistently visible and easily accessible, providing easy access to actions and operations without the need for scrolling.
 
 To add the toolbar at the bottom of the Grid, you can utilize the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
 
@@ -70,7 +70,7 @@ The following example shows how to add the toolbar items at the bootom using `cr
 
 ## Customize toolbar buttons using CSS
 
-Customizing toolbar buttons in Syncfusion Angular Grid using CSS involves modifying the appearance of built-in toolbar buttons by applying CSS styles. This provides a flexible and customizable way to enhance the visual presentation of the toolbar and create a cohesive interface.
+Customizing toolbar buttons in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using CSS involves modifying the appearance of built-in toolbar buttons by applying CSS styles. This provides a flexible and customizable way to enhance the visual presentation of the toolbar and create a cohesive interface.
 
 The appearance of the built-in toolbar buttons can be modified by applying the following CSS styles.
 

@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Supported Versions
+# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Supported Versions
 
 ## Angular Version Compatibility
 
-The table below outlines the compatible Angular versions for different releases of Syncfusion Angular UI components.
+The table below outlines the compatible Angular versions for different releases of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
 
-| Angular Version | Syncfusion Angular Components Version |
+| Angular Version | Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | --------------- | ------------------------------------- |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
@@ -30,11 +30,11 @@ The table below outlines the compatible Angular versions for different releases 
 | [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27/) | 17.1.50 and above |
 | [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c/) | 16.3.32 and above |
 
-> From version 20.2.36 onwards, Syncfusion Angular packages are compatible with the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy), supporting Angular 12 and above. For versions >=20.2.36, add the suffix `-ngcc` to the package version in the `package.json` (e.g., `@syncfusion/ej2-angular-grids: "20.2.38-ngcc"`). For more details on Angular package installation, refer to [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
+> From version 20.2.36 onwards, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy), supporting Angular 12 and above. For versions >=20.2.36, add the suffix `-ngcc` to the package version in the `package.json` (e.g., `@syncfusion/ej2-angular-grids: "20.2.38-ngcc"`). For more details on Angular package installation, refer to [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
 
-## Syncfusion Version Information
+## Syncfusion<sup style="font-size:70%">&reg;</sup> Version Information
 
-Syncfusion adheres to a quarterly release schedule, delivering new volumes every three months. To streamline tracking of these releases, Syncfusion Angular components use a semantic versioning system with the format **Major.Minor.Revision**. This system allows developers to easily follow changes with each new version.
+Syncfusion<sup style="font-size:70%">&reg;</sup> adheres to a quarterly release schedule, delivering new volumes every three months. To streamline tracking of these releases, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components use a semantic versioning system with the format **Major.Minor.Revision**. This system allows developers to easily follow changes with each new version.
 
 For instance, a release version like `22.1.34` can be interpreted as follows:
 
@@ -44,6 +44,6 @@ For instance, a release version like `22.1.34` can be interpreted as follows:
 
 ## See Also
 
-* [Syncfusion Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)

@@ -88,4 +88,4 @@ The accessibility compliance of the NumericTextBox component is shown in the fol
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

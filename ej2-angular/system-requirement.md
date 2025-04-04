@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # System Requirements for Angular Components 
 
-This section outlines the essential system requirements needed to work effectively with Syncfusion Angular UI components.
+This section outlines the Essential<sup style="font-size:70%">&reg;</sup> system requirements needed to work effectively with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
 
 ## Angular Version
 
-Ensure your Angular version is 6 or above to seamlessly integrate Syncfusion Angular UI components into your project.
+Ensure your Angular version is 6 or above to seamlessly integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components into your project.
 
 To verify your Angular CLI version, execute the following command in your terminal:
 
@@ -34,13 +34,13 @@ node -v
 
 ## Browser Support
 
-Syncfusion Angular UI components are compatible only with modern browsers. For detailed compatibility information, refer to the [browser compatibility](./browser/) section.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible only with modern browsers. For detailed compatibility information, refer to the [browser compatibility](./browser/) section.
 
 ## Angular Supported Versions
 
-The table below lists the Angular versions supported by various Syncfusion Angular UI component releases:
+The table below lists the Angular versions supported by various Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component releases:
 
-| Version | Syncfusion Angular Components Version |
+| Version | Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | ------------- | ------------- |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
@@ -60,7 +60,7 @@ The table below lists the Angular versions supported by various Syncfusion Angul
 
 - [Upgrade Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
 
-Gain insights on how to upgrade your Syncfusion components seamlessly with our comprehensive upgrade guide.
+Gain insights on how to upgrade your Syncfusion<sup style="font-size:70%">&reg;</sup> components seamlessly with our comprehensive upgrade guide.
 
 - [Setting Up the Local Environment and Workspace](https://v17.angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)
 

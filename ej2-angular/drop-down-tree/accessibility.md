@@ -91,4 +91,4 @@ The accessibility compliance of the Dropdown Tree component is shown in the foll
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

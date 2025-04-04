@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion Angular Grid
+# CustomAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid
 
-The `CustomAdaptor` in the Syncfusion Angular Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
+The `CustomAdaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
 
 ## Types of CustomAdaptor methods
 
@@ -86,11 +86,11 @@ public override processResponse() {
 }
 ```
 
-This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion Angular Grid.
+This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ## Creating an Custom service
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
 
 **1. Project Creation:**
 
@@ -215,13 +215,13 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
 
-## Connecting Syncfusion Angular Grid to an Custom service extending the ODataV4 service
+## Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to an Custom service extending the ODataV4 service
 
-To integrate the Syncfusion Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
 
-**Step 1: Install Syncfusion Package**
+**Step 1: Install Syncfusion<sup style="font-size:70%">&reg;</sup> Package**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Open your terminal in the project's client folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -252,7 +252,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular Grid:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -307,7 +307,7 @@ export class SerialNoAdaptor extends ODataV4Adaptor {
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5: Adding Syncfusion Component**
+**Step 5: Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component**
 
 In your component file (e.g., app.component.ts), import `DataManager` from `@syncfusion/ej2-data` and `CustomAdaptor` from `./customadaptor` file. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
 
@@ -706,9 +706,9 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid within an Angular application, follow the below steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.html" %}
@@ -776,11 +776,11 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Syncfusion Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
 /// <summary>
@@ -806,7 +806,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
 
 ```cs
 /// <summary>
@@ -837,7 +837,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updatedOrder)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
 ```cs
 /// <summary>

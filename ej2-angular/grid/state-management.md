@@ -38,7 +38,7 @@ The grid will persist only the last selected row index.
 
 ## Restore initial Grid state
 
-In the Syncfusion Angular Grid component, you have the capability to restore the grid to its initial state, reverting all changes and configurations made during the interaction. This feature can be particularly useful when you want to reset the grid to its original settings, eliminating any applied filters, sorting, or column reordering.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you have the capability to restore the grid to its initial state, reverting all changes and configurations made during the interaction. This feature can be particularly useful when you want to reset the grid to its original settings, eliminating any applied filters, sorting, or column reordering.
 
 Here are the steps to reset the grid to its initial state, even when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is enabled:
 
@@ -80,7 +80,7 @@ Here is an example code on how to clear local storage to retain its default stat
 
 ## Restore to specific state version
 
-Syncfusion Angular Grid supports version-based persistence for easy restoration to a specific state. To enable version based persistence, import `enableVersionBasedPersistence` from `@syncfusion/ej2-base` and set it globally to **true**. Define the grid in the template with properties, bind data, and configure persistence using [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) and [ej2state-persistenceVersion](https://ej2.syncfusion.com/angular/documentation/api/grid/#ej2state-persistenceversion). 
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports version-based persistence for easy restoration to a specific state. To enable version based persistence, import `enableVersionBasedPersistence` from `@syncfusion/ej2-base` and set it globally to **true**. Define the grid in the template with properties, bind data, and configure persistence using [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) and [ej2state-persistenceVersion](https://ej2.syncfusion.com/angular/documentation/api/grid/#ej2state-persistenceversion). 
 
 In the below example, the `clickHandler` method is responsible for handling button clicks corresponding to different versions. Inside this method, the targeted version is assigned to the grid's `ej2state-persistenceVersion` dynamically. The code checks if there is already a persisted state for the selected version in the local storage. If found, the grid is updated with the settings retrieved from the local storage, including columns, filter settings, group settings, sort settings, page settings, and selected row index. If no persisted state is found, the current grid state is persisted to the local storage using the [getPersistData](https://ej2.syncfusion.com/angular/documentation/api/grid/#getpersistdata) method.
 
@@ -156,11 +156,11 @@ export class AppComponent implements OnInit {
 
 ## Restore to previous state
 
-The Syncfusion Angular Grid component allows you to save and restore its state using local storage. This feature is helpful when you want to preserve the current state of the Grid, such as column order, sorting, and filtering, so that you can return to your previous work or configurations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to save and restore its state using local storage. This feature is helpful when you want to preserve the current state of the Grid, such as column order, sorting, and filtering, so that you can return to your previous work or configurations.
 
 To implement this functionality, use the `getItem` and `setItem` methods for local storage, along with the Grid component's `setProperties` and [getPersistData](https://ej2.syncfusion.com/angular/documentation/api/grid/#getpersistdata) methods.
 
-The provided code demonstrates how to save and restore the previous state of a Syncfusion Angular Grid component using local storage.
+The provided code demonstrates how to save and restore the previous state of a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component using local storage.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -265,7 +265,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the Syncfusion Angular Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/), [Paging](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/), [Filtering](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/), [Paging](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/), [Filtering](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
@@ -283,11 +283,11 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 
 ## Add to persist
 
-Persistence can be added to a Syncfusion Angular Grid component to enhance the user experience. Persistence allows saving and restoring the state of the grid, including column layouts, sorting, filtering, and other user-specific settings. In this documentation, you will explore how to persist column templates, header templates, and header text settings in the Angular Grid.
+Persistence can be added to a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component to enhance the user experience. Persistence allows saving and restoring the state of the grid, including column layouts, sorting, filtering, and other user-specific settings. In this documentation, you will explore how to persist column templates, header templates, and header text settings in the Angular Grid.
 
 ### Add a new column in persisted columns list
 
-When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to true in the Syncfusion Grid component, column configurations are persisted. If you need to add new columns to the existing persisted state, you can achieve this by using the Grid's built-in methods like `column.push`, and then call the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to update the UI with the new columns.
+When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to true in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, column configurations are persisted. If you need to add new columns to the existing persisted state, you can achieve this by using the Grid's built-in methods like `column.push`, and then call the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to update the UI with the new columns.
 
 Here's an example of how to add a new column to a list of persisted columns:
 
@@ -307,7 +307,7 @@ Here's an example of how to add a new column to a list of persisted columns:
 
 ### Persist the column template, header template and header text
 
-By default, when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to **true** in the Syncfusion Grid component, certain column properties such as column template, header text, header template, column formatter, and value accessor are not persisted. This is because these properties can be customized at the application level.
+By default, when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to **true** in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, certain column properties such as column template, header text, header template, column formatter, and value accessor are not persisted. This is because these properties can be customized at the application level.
 
 To restore these column properties and achieve persistence, you can follow the approach of cloning the grid's columns property using JavaScript Object's assign method and manually storing it along with the persist data. When restoring the settings, this cloned column object must be assigned to the grid's columns property to restore the column settings. The following sample demonstrates this process:
 

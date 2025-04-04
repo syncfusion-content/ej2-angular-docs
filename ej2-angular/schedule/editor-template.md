@@ -215,7 +215,7 @@ Each field defined within template should contain the **e-field** class, so as t
 
 >Note: **e-field** class only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox** and **TextBox** components. Since we have processed the field values internally for the above mentioned components.
 
-As we are using our Syncfusion sub-components within our editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event. This particular step can be skipped, if the user needs to simply use the usual form elements.
+As we are using our Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within our editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event. This particular step can be skipped, if the user needs to simply use the usual form elements.
 
 Learn the easiest way to customize the editor window of Angular Scheduler with your own design by watching this video:
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Checkbox Column in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid component supports checkbox selection in tree column with hierarchical selection of checkboxes using the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#autocheckhierarchy) property of tree grid and showcheckbox property of column. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component supports checkbox selection in tree column with hierarchical selection of checkboxes using the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#autocheckhierarchy) property of tree grid and showcheckbox property of column. 
 
 When the `autoCheckHierarchy` property is enabled, checking a parent record's checkbox automatically checks the checkboxes of its child records. Checkboxes can be rendered only in the tree column by setting the [column.showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#showcheckbox) property to true.
 

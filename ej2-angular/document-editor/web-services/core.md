@@ -18,7 +18,7 @@ DocumentEditor depends on server side interaction for below listed operations ca
 * Spell Check
 * Save as file formats other than SFDT and DOCX
 
->Note: Syncfusion provides a predefined [Word Processor server docker image](https://hub.docker.com/r/syncfusion/word-processor-server) targeting ASP.NET Core 2.1 framework. You can directly pull this docker image and deploy it in server on the go. You can also create own docker image by customizing the existing [docker project from GitHub](https://github.com/SyncfusionExamples/Word-Processor-Server-Docker). To know more, refer this link.[Word Processor Server Docker Image Overview](../../document-editor/server-deployment/word-processor-server-docker-image-overview)
+>Note: Syncfusion<sup style="font-size:70%">&reg;</sup> provides a predefined [Word Processor server docker image](https://hub.docker.com/r/syncfusion/word-processor-server) targeting ASP.NET Core 2.1 framework. You can directly pull this docker image and deploy it in server on the go. You can also create own docker image by customizing the existing [docker project from GitHub](https://github.com/SyncfusionExamples/Word-Processor-Server-Docker). To know more, refer this link.[Word Processor Server Docker Image Overview](../../document-editor/server-deployment/word-processor-server-docker-image-overview)
 
 This section explains how to create the service for DocumentEditor in ASP.NET Core.
 

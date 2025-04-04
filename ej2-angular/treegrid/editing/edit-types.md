@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Edit types in Angular TreeGrid component
 
-The Angular TreeGrid component in Syncfusion provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
+The Angular TreeGrid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 
 ## Default cell edit type editor
 
@@ -429,7 +429,7 @@ To render a DropDownList in the edit form, you need to define an [editTemplate](
 
 To display an image in the DropDownList editor component, you can utilize the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#itemtemplate) property. This property allows you to customize the content of each item in the dropdown list.
 
-The following example demonstrates how to render images in the DropDownList editor component using the `itemTemplate` within the **EmployeeID** column of the Syncfusion Grid. Additionally, the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event is handled to update the edited value in the tree grid when the save button is clicked:
+The following example demonstrates how to render images in the DropDownList editor component using the `itemTemplate` within the **EmployeeID** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Additionally, the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event is handled to update the edited value in the tree grid when the save button is clicked:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

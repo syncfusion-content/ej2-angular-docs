@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column reorder in Angular Grid component
 
-The Syncfusion Angular Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the **ReorderService** in the provider section of your **AppModule**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the **ReorderService** in the provider section of your **AppModule**.
 
 To reorder the columns, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowreordering) property to **true** in the grid.
 
@@ -33,7 +33,7 @@ Here's an example for column reordering in your Grid component:
 
 ## Prevent reordering for particular column
 
-By default, all columns in the Syncfusion Angular Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
+By default, all columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
 
 In this example, the **ShipCity** column is prevented from being reordered by setting the `allowReordering` property to **false**.
 
@@ -51,7 +51,7 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 
 ## Reorder columns externally
 
-The Syncfusion Grid Angular allows you to reorder columns externally, which means that using methods you can programmatically move columns around within the grid, based on their index or target index, or by using their field name.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Angular allows you to reorder columns externally, which means that using methods you can programmatically move columns around within the grid, based on their index or target index, or by using their field name.
 
 > When reordering columns externally, you must set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) property of the grid to **true**.
 
@@ -122,7 +122,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 ## Reorder events
 
-When reordering columns in the Syncfusion Angular Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
+When reordering columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
 
 1.The [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndragstart) event triggers when column header element drag (move) starts.
 
@@ -130,7 +130,7 @@ When reordering columns in the Syncfusion Angular Grid component, you may want t
 
 3.The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) event triggers when a column header element is dropped on the target column.
 
-In the following example, we have implemented the `columnDragStart`, `columnDrag`, and `columnDrop` events in the Syncfusion Grid component.
+In the following example, we have implemented the `columnDragStart`, `columnDrag`, and `columnDrop` events in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -137,7 +137,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 The Grid provides a feature that allows users to expand the detail row of a grid using an external button. By default, detail rows render in a collapsed state, but this feature enables users to view additional details associated with a particular row. 
 
-To achieve expanding the detail row of a grid using an external button, you need to invoke the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method provided by the **detailRowModule** object of the Syncfusion Grid library. This method will expand the detail row of a specific grid row.
+To achieve expanding the detail row of a grid using an external button, you need to invoke the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method provided by the **detailRowModule** object of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid library. This method will expand the detail row of a specific grid row.
 
 Here is an example of how to use the `expand` method to expand a detail row:
 
@@ -263,7 +263,7 @@ export class AppComponent implements OnInit {
 
 ## Customize detail template icon
 
-The detail template icon in the Syncfusion Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
+The detail template icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
 
 ```css
 

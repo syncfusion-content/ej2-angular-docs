@@ -16,7 +16,7 @@ This feature can be enabled by utilizing the [childGrid](https://ej2.syncfusion.
 
 To enable the Hierarchy Grid feature:
 
-1. Inject the **DetailRowService** in the provider section of your **AppModule**. This service is essential for handling the hierarchy grid functionality.
+1. Inject the **DetailRowService** in the provider section of your **AppModule**. This service is Essential<sup style="font-size:70%">&reg;</sup> for handling the hierarchy grid functionality.
 
 2. Define the `childGrid` property within the Grid component configuration. This property describes the options of the child grid.
 
@@ -38,7 +38,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) is enabled.
-> * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
+> * In Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Bind hierarchy grid with different field
 
@@ -64,7 +64,7 @@ In the following example, the `load` event is utilized to customize the mapping 
 
 ## Expand child grid initially
 
-Expanding the child grid initially in the Syncfusion Angular Grid component is helpful when you want to display the child rows of the hierarchical grid expanded by default upon grid load. This can be beneficial in scenarios where you want to provide immediate visibility into the hierarchical data without requiring you to manually expand each child row.
+Expanding the child grid initially in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is helpful when you want to display the child rows of the hierarchical grid expanded by default upon grid load. This can be beneficial in scenarios where you want to provide immediate visibility into the hierarchical data without requiring you to manually expand each child row.
 
 To achieve this, you can use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method with the desired target index (number) in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid. 
 
@@ -86,7 +86,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 
 ## Dynamically load child grid data
 
-Dynamically load child grid data in Syncfusion Angular Grid helps improve performance, optimize data transmission, and enhance the your experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which helps improve the overall efficiency of your application.
+Dynamically load child grid data in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid helps improve performance, optimize data transmission, and enhance the your experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which helps improve the overall efficiency of your application.
 
 To dynamically load the `dataSource` of a child grid in the Grid, you can utilize the [load](https://ej2.syncfusion.com/angular/documentation/api/grid/#load) event of parent grid. This event allows you to customize the loading behavior of the child grid based on the data of parent grid.
 
@@ -106,7 +106,7 @@ The following example demonstrates how to dynamically load child grid data using
 
 ## Dynamically bind data to child grid based on parent row data
 
-Dynamically binding data to a child grid based on the parent row data in the Syncfusion Angular Grid component is useful when you want to display child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
+Dynamically binding data to a child grid based on the parent row data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is useful when you want to display child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
 
 To dynamically bind data to the child grid based on the parent row data instead of using the [queryString](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) property, you can utilize the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound) event of the grid. This event is triggered when expanding the child grid.
 
@@ -126,7 +126,7 @@ In the `detailDataBound` event handler, you can filter the child grid's dataSour
 
 ## Adding record in child grid
 
-Adding a record in a child grid within the Syncfusion Angular Grid component is useful when you want to provide the ability to add new records to the child grid. This feature allows you to input and save additional data specific to each parent row.
+Adding a record in a child grid within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is useful when you want to provide the ability to add new records to the child grid. This feature allows you to input and save additional data specific to each parent row.
 
 To maintain the parent-child relationship in the Grid when adding a record to the child grid, you need to set the value for the `queryString` in the added data. This can be done using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
@@ -146,7 +146,7 @@ In the following example, the parent and child grids are related by the **Employ
 
 ## Template column in child grid
 
-A template column in a child grid within the Syncfusion Angular Grid component is valuable when you want to customize the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
+A template column in a child grid within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is valuable when you want to customize the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
 
 To achieve this, you can utilize the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property of a column to display a custom element instead of a field value in the Grid. Template columns defined in the child grid will be null in the **ngOnInit** method, which means they will not be shown in the UI. They will be rendered after the entire HTML view rendering process, and you can access and utilize them in the **ngAfterViewInit** method to display the template columns in the child grid.
 
@@ -257,7 +257,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 
 ## Render aggregates in child grid
 
-The Aggregates feature in the Syncfusion angular Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
+The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> angular Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
 
 Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
 
@@ -276,7 +276,7 @@ The following example demonstrates how to render aggregates in a child grid to d
 
 ## Expand all by external button
 
-The Hierarchy Grid in the Syncfusion Angular Grid component allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
+The Hierarchy Grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
 
 By default, Grid renders all child grid rows in collapsed state. To expand all child grid rows in the Grid using an external button, you can utilize the [expandAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expandall) method provided by the DetailRow module. Similarly, to collapse all grid rows, you can use the [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#collapseall) method. 
 
@@ -298,7 +298,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 ## Customize hierarchy grid icons
 
-You can customize the default expand/collapse icons in the Hierarchy Grid of Syncfusion Grid component using custom CSS, allowing you to modify their visual representation. To achieve this, add the following CSS to your index.html file:
+You can customize the default expand/collapse icons in the Hierarchy Grid of Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component using custom CSS, allowing you to modify their visual representation. To achieve this, add the following CSS to your index.html file:
 
 ```
     .e-grid .e-icon-grightarrow::before,
@@ -328,7 +328,7 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 
 ## Hide the expand/collapse icon in parent row when no record in child grid
 
-The Syncfusion Angular Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
 
 To achieve this, you can utilize the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event to hide the icon when there are no records in the child grid.
 
@@ -379,7 +379,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 
 ## Customize the child grid
 
-The Syncfusion Angular Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
 
 ### Header
 
@@ -519,7 +519,7 @@ In this example, the **.e-currentitem** class targets the current page numeric i
 
 ### Sorting
 
-You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 **Customizing the child grid sorting icon**
 
@@ -720,7 +720,7 @@ To customize the appearance of the group expand/collapse icons in the child grid
 }
 ```
 
-In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion icons based on your theme.
+In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> icons based on your theme.
 
 ![Child Grid group expand or collapse icons in Angular.](images/angular-grid-child-group-expand-or-collapse-icons.png)
 

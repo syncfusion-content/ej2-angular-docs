@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Toolbar component
 
-This article describes the API migration process of Toolbar component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Toolbar component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and Localization
 
 <!-- markdownlint-disable MD033 -->
 
-|   **Behavior**  | **Property in Essential JS 1** | **Property in Essential JS 2** |
+|   **Behavior**  | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |-----------------|--------------------------------|--------------------------------|
 |   Localization   | <b>Not Applicable</b>  | **Property** : locale<br/> `<ejs-toolbar id='toolbar' locale='fr-BE'></ejs-toolbar>`  |
 |   Right to left  | **Property:** enableRTL<br/> `<ej-toolbar id="toolbar" [enableRTL]="true"></ej-toolbar>` | **Property:** enableRTL<br/> `<ejs-toolbar id='toolbar' [enableRTL]='true'> </ejs-toolbar>`  |
@@ -25,7 +25,7 @@ This article describes the API migration process of Toolbar component from Essen
 
 <!-- markdownlint-disable MD033 -->
 
-|   **Behavior**   | **Property in Essential JS 1** | **Property in Essential JS 2** |
+|   **Behavior**   | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------------|--------------------------------|--------------------------------|
 | DataSource | **Property** : dataSource<br/> `<ej-toolbar id="toolbar" [dataSource]="items" ></ej-toolbar>` | <b>Not Applicable</b>  |
 | Query | **Property** : query <br/> `<ej-toolbar id="toolbar" [query]="query"></ej-toolbar>`| <b>Not Applicable</b>  |
@@ -44,7 +44,7 @@ This article describes the API migration process of Toolbar component from Essen
 
 <!-- markdownlint-disable MD033 -->
 
-|  **Behavior**  | **Property in Essential JS 1** | **Property in Essential JS 2** |
+|  **Behavior**  | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |----------------|--------------------------------|--------------------------------|
 | Default | <**Property** : items<br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>` | **Property** : items<br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>` |
 | Align | <b>Not Applicable</b> | **Property** : items[0].Align <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>`<br/> **TS:**<br/>  public items: Object[] = [{ align: 'center'}];|
@@ -86,7 +86,7 @@ This article describes the API migration process of Toolbar component from Essen
 
 <!-- markdownlint-disable MD033 -->
 
-|  **Behavior**  | **Property in Essential JS 1** | **Property in Essential JS 2** |
+|  **Behavior**  | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | -------------- | ------------------------- | ------------------------- |
 | Custom class   | **Property** : cssClass <br/> `<ej-toolbar id="toolbar" cssClass="customClass" > </ej-toolbar>`| <b>Not Applicable</b> |
 | Enabled | **Property** : enabled <br/> `<ej-toolbar id="toolbar" enabled="false"> </ej-toolbar>`| <b>Not Applicable</b>|

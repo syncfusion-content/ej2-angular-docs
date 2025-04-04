@@ -29,11 +29,11 @@ import { setSpinner } from '@syncfusion/ej2-angular-popups';
 setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rolling"><div></div></div>'});
 ```
 
-> You should set the template to the Spinner before creating the respective Essential JS 2 component.
-> Also,until we replace `setSpinner` template, the further Essential JS 2 component rendering is created
+> You should set the template to the Spinner before creating the respective Essential<sup style="font-size:70%">&reg;</sup> JS 2 component.
+> Also,until we replace `setSpinner` template, the further Essential<sup style="font-size:70%">&reg;</sup> JS 2 component rendering is created
 > with given template only.
 
-* Now, render the Essential JS 2 component. It's render the Spinner with the template specified in the `setSpinner` method.
+* Now, render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component. It's render the Spinner with the template specified in the `setSpinner` method.
 
 > In the below sample, we have rendered the Grid component with custom Spinner using `setSpinner` method.
 > You have to define the styles for the template in `index.css`.

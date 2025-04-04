@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Template editing in Angular Grid component
 
-The Syncfusion Angular Grid component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. This feature allows you to use Angular templates to define the structure and content of the cells within the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. This feature allows you to use Angular templates to define the structure and content of the cells within the grid.
 
 ## Inline or dialog template editing 
 
-The Syncfusion Grid provides support for inline and dialog template editing, allowing you to customize the editing using either [Reactive](https://v17.angular.io/guide/reactive-forms) or [Template-driven](https://v17.angular.io/guide/forms#template-driven-forms) Forms. These forms can be utilized to add and update grid records.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for inline and dialog template editing, allowing you to customize the editing using either [Reactive](https://v17.angular.io/guide/reactive-forms) or [Template-driven](https://v17.angular.io/guide/forms#template-driven-forms) Forms. These forms can be utilized to add and update grid records.
 
 To enable this feature, you need to set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) property of the Grid to either **Normal** or **Dialog** and define the grid editors using the **editSettingsTemplate** template variable of **ngTemplate**.
 
@@ -89,7 +89,7 @@ The following code example demonstrates the usage of the `isAdd` property in an 
 
 ### Render editors as components 
 
-The Syncfusion Grid provides a powerful feature that allows you to dynamically render Syncfusion EJ2 controls as form editors during the editing process. This functionality is particularly useful when you want to provide feature-rich controls for data entry within the edit form.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a powerful feature that allows you to dynamically render Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality is particularly useful when you want to provide feature-rich controls for data entry within the edit form.
 
 To achieve this by utilizing the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid and specifying `requestType` as **beginEdit** or **add**.
 
@@ -108,7 +108,7 @@ The following code example illustrates rendering the `DropDownList` component in
 
 ### Get value from editor
 
-The get value from editor feature in the Syncfusion Grid allows you to read, format, and update the current editor value before it is saved. This feature is particularly valuable when you need to perform specific actions on the data, such as formatting or validation, before it is committed to the underlying data source. 
+The get value from editor feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to read, format, and update the current editor value before it is saved. This feature is particularly valuable when you need to perform specific actions on the data, such as formatting or validation, before it is committed to the underlying data source. 
 
 To achieve this feature, you can utilize the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event with the **requestType** set to **save**.
 
@@ -125,7 +125,7 @@ In the following code example, the freight value has been formatted and updated.
 
 ### Set focus to particular column editor 
 
-The Syncfusion Grid allows you to control the focus behavior of input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, in scenarios where the first input element is disabled or hidden, you can specify which valid input element should receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid,  where the **requestType** is set to **beginEdit**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to control the focus behavior of input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, in scenarios where the first input element is disabled or hidden, you can specify which valid input element should receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid,  where the **requestType** is set to **beginEdit**.
 
 In the following code example, the CustomerID column focused.
 
@@ -140,7 +140,7 @@ In the following code example, the CustomerID column focused.
 
 ### Disable default form validation 
 
-The Syncfusion Grid provides built-in support for [angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. However, there might be scenarios where you want to disable the default form validation rules. This can be achieved using the [removeRules](https://helpej2.syncfusion.com/documentation/api/form-validator/#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides built-in support for [angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. However, there might be scenarios where you want to disable the default form validation rules. This can be achieved using the [removeRules](https://helpej2.syncfusion.com/documentation/api/form-validator/#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid.
 
 To disable default form validation rules in the Grid, follow these steps:
 
@@ -157,7 +157,7 @@ To disable default form validation rules in the Grid, follow these steps:
 
 ### Adding validation rules for custom editors
 
-The Syncfusion Grid provides the ability to add validation rules for fields that are not present in the column model. This feature is particularly useful to prevent erroneous or inconsistent data from being submitted, ultimately enhancing the reliability of your application's data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides the ability to add validation rules for fields that are not present in the column model. This feature is particularly useful to prevent erroneous or inconsistent data from being submitted, ultimately enhancing the reliability of your application's data.
 
 To accomplish this, you can utilize the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator/#addrules) method.
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Menu component
 
-This article describes the API migration process of Menu component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation type on hover or click on the menu items | **Property:** *animationType* <br/><br/> `<ej-menu id="menu" [animationType]="animationType"></ej-menu>` <br/> animationType: any = ej.AnimationType.Default; | Not applicable |
 | Context menu target  | **Property:** *contextMenuTarget* <br/><br/> `<ej-menu id="menu" contextMenuTarget="#target"></ej-menu>` | Not applicable |
@@ -45,7 +45,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Disable Method | **Method:** *disable* <br/><br/> `<ej-menu id="menu" #menu [fields.dataSource]="data"></ej-menu>` <br/> @ViewChild('menu') <br/> public menu: MenuComponent; <br/> this.menu.disable(); | Not applicable |
 | Disable menu items | **Method:** *disableItem* <br/><br/> `<ej-menu id="menu" #menu [fields.dataSource]="data"></ej-menu>`<br/> @ViewChild('menu') <br/> public menu: MenuComponent; <br/> this.menu.disableItem("File");| **Method:** *enableItems* <br/><br/> `<ejs-menu id="menu" #menu [items]="menuItems"></ejs-menu>` <br/> @ViewChild('menu') <br/> public menu: MenuComponent; <br/> this.menu.enableItems("File", false) |
@@ -64,7 +64,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers before opening the menu | **Events:** *beforeOpen* <br/><br/> `<ej-menu id="menu" (beforeOpen)="beforeOpen($event)"></ej-menu>` <br/> beforeOpen(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } | **Events:** *beforeOpen* <br/><br/> `<ejs-menu id="menu" [items]="menuItems" (beforeOpen)="beforeOpen($event)"></ejs-menu>` <br/> beforeOpen(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |
 | Triggers before closing the menu | Not applicable | **Events:** *beforeClose* <br/><br/> `<ejs-menu id="menu" [items]="menuItems" (beforeClose)="beforeClose($event)"></ejs-menu>` <br/> beforeClose(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |

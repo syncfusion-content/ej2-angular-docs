@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Syncfusion Angular Grid Component
+# WebApiAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component
 
-The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
+The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 
 To enable the OData query option for a Web API, please refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options), which provides detailed instructions on configuring the endpoint to understand OData-formatted queries.
 
@@ -19,7 +19,7 @@ This section describes a step-by-step process for retrieving data service using 
 
 ## Creating a Web API service
 
-To configure a server for use with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server for use with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
 
 **1. Project Creation:**
 
@@ -131,13 +131,13 @@ After running the application, you can verify that the server-side API controlle
 
 ![WebApiAdaptor-data](../images/webapi-adaptor-data.png)
 
-## Connecting Syncfusion Angular Grid to an API service
+## Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to an API service
 
-To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
 
-**1: Install Syncfusion Package**
+**1: Install Syncfusion<sup style="font-size:70%">&reg;</sup> Package**
 
-Open your terminal in the project's root directory of client folder and install the required Syncfusion packages using npm:
+Open your terminal in the project's root directory of client folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -154,7 +154,7 @@ In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -172,7 +172,7 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Syncfusion Component**
+**Step 4: Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component**
 
 In your component file (e.g., app.component.ts), import `DataManager` and `WebApiAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Orders) using the `url` property and set the adaptor `WebApiAdaptor`.
 
@@ -564,9 +564,9 @@ export class AppComponent {
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the WebApiAdaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PUT, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the WebApiAdaptor, follow the provided guide for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PUT, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component within an Angular application, follow the below steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -613,7 +613,7 @@ export class AppComponent {
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ![WebApiAdaptor-Insert-record](../images/webapiadaptor-insert-record.png)
 
@@ -635,7 +635,7 @@ public void Post([FromBody] OrdersDetails newRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPut` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid can be achieved by utilizing the `HttpPut` method in your controller. Here's a sample implementation of updating a record:
 
 ![WebApiAdaptor-Update-record](../images/webapiadaptor-update-record.png)
 
@@ -665,7 +665,7 @@ public void Put(int id, [FromBody] OrdersDetails updatedOrder)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
 ![WebApiAdaptor-Delete-record](../images/webapiadaptor-delete-record.png)
 

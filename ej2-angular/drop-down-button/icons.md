@@ -45,7 +45,7 @@ down arrow `e-caret-hide` class is added using [`cssClass`](https://ej2.syncfusi
   
 {% previewsample "page.domainurl/samples/drop-down-button/icon-only-cs1" %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the DropDownButton using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#iconcss) property.
 
 ### DropDownButton with sprite image
@@ -66,7 +66,7 @@ In this following example, `e-image` class is added with background url of the s
   
 {% previewsample "page.domainurl/samples/drop-down-button/sprite-cs1" %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the DropDownButton using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#iconcss) property.
 
 ## Vertical button

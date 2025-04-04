@@ -283,4 +283,4 @@ Below is the featured sample output:
 
 ## See also
 
-* [Getting Started with Syncfusion Angular Smart Paste Button](./getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart Paste Button](./getting-started)

@@ -73,4 +73,4 @@ The accessibility compliance of the Drop down button component is shown in the f
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

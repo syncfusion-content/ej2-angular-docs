@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tree Column in Angular Gantt component
 
-The Syncfusion Angular Gantt component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
 
 ```ts
 
@@ -22,7 +22,7 @@ The Syncfusion Angular Gantt component provides a convenient way to represent pa
 
 ## Change expand and collapse icon
 
-The Syncfusion Angular Gantt component allows to customize the default expand and collapse icons by applying custom CSS styles.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows to customize the default expand and collapse icons by applying custom CSS styles.
 
 To customize the expand and collapse icons, use the following CSS styles:
 
@@ -87,7 +87,7 @@ In the following demo, all parent rows are rendered in collapsed state in initia
 
 ## Retain expanded and collapsed state
 
-To maintain the expanded and collapsed state of specific parent rows in the Syncfusion Angular Gantt, utilize the [`expandState`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property. This property corresponds to a value within the data object of the data source, signifying the expand status of the parent row.
+To maintain the expanded and collapsed state of specific parent rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, utilize the [`expandState`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property. This property corresponds to a value within the data object of the data source, signifying the expand status of the parent row.
 
 In the following demonstration, the parent rows are rendered in an expanded or collapsed state based on the value of the `expandState` property in the data source.
 

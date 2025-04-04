@@ -16,7 +16,7 @@ Before diving into the setup, let's explore a **real-life use case** — buildin
 
 {% youtube "https://www.youtube.com/watch?v=EWGZJ9T7K40" %}  
 
-Once you’ve seen this use case in action, we’ll move on to setting up an Angular app and integrating Syncfusion UI Kit blocks.
+Once you’ve seen this use case in action, we’ll move on to setting up an Angular app and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
 
 ## Create a new Angular app
 To create a new Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
@@ -77,10 +77,10 @@ If you choose **Tailwind** theme, follow these steps to configure it.
       }
     </script>
     ```
-    > The Syncfusion Angular components uses **Indigo** for light mode and **Cyan** for dark mode. So, please change the primary color accordingly to maintain a uniform appearance.
+    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses **Indigo** for light mode and **Cyan** for dark mode. So, please change the primary color accordingly to maintain a uniform appearance.
 
 
-3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion Angular components in the `<head>` tag.
+3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in the `<head>` tag.
 
    - For **light mode**:
 
@@ -130,7 +130,7 @@ If you choose **Bootstrap 5.3** theme, follow these steps to configure it.
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      ```
 
-3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion Angular components in the `<head>` tag.
+3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in the `<head>` tag.
 
    - For **light mode**:
 
@@ -193,11 +193,11 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 > 1. In the HTML, the **Tailwind** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
 > 2. Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
-## Steps to install and configure Syncfusion Angular components
+## Steps to install and configure Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
 
-While copying and pasting the HTML code, you'll notice that Syncfusion Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src -> app -> app.component.ts** file for the app to run.
+While copying and pasting the HTML code, you'll notice that Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src -> app -> app.component.ts** file for the app to run.
 
-In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
+In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
 
 ![Adding required packages for Syncfusion components](images/adding-required-packages-for-syncfusion-components.png)
 
@@ -205,7 +205,7 @@ Once the necessary packages are added, run the `npm install` command via the ter
 
 ![Install Syncfusion component packages](images/install-syncfusion-component-packages.png)
 
-Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) or the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular) and copy the required **TypeScript** code into your app. This typically includes the import module to run Syncfusion Angular components and any basic code required for the component to function.
+Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) or the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular) and copy the required **TypeScript** code into your app. This typically includes the import module to run Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components and any basic code required for the component to function.
 
 ![Import Syncfusion component module in TypeScript](images/import-syncfusion-component-module-in-typescript.png)
 

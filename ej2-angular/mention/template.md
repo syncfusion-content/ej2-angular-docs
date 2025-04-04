@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Template in Angular Mention component
 
-The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 

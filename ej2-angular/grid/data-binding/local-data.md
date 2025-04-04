@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Local data in Angular Grid component
 
-The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
@@ -30,9 +30,9 @@ The following example demonstrates how to utilize the local data binding feature
 
 ## Data binding with SignalR 
 
-The syncfusion Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
+The syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
-To achieve real-time data binding with SignalR in your Syncfusion Angular Grid, follow the steps below:
+To achieve real-time data binding with SignalR in your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, follow the steps below:
 
 **Step 1:** Install the necessary SignalR package for your client application using npm:
 
@@ -392,7 +392,7 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 ## Binding data from excel file
 
-The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component [change](https://ej2.syncfusion.com/angular/documentation/api/uploader#change) event.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component [change](https://ej2.syncfusion.com/angular/documentation/api/uploader#change) event.
 
 To import excel data in to grid, you can follow these steps:
 
@@ -416,11 +416,11 @@ The following example demonstrates how to import Excel data into the grid by uti
 
 ## Binding data and performing CRUD actions via Fetch request
 
-The Syncfusion Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
 
-**Step 1:** Include the Syncfusion Grid in your HTML with necessary configurations:
+**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your HTML with necessary configurations:
 
 ```html
 
@@ -682,11 +682,11 @@ The following screenshot represents loading data when the button is clicked and 
 
 ### Display the loading indicator with local data. 
 
-The Syncfusion Grid allows you to display a loading indicator while loading local data. This feature is useful when there is a delay in loading data from a local source, and you want to inform the you that the data is being fetched.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display a loading indicator while loading local data. This feature is useful when there is a delay in loading data from a local source, and you want to inform the you that the data is being fetched.
 
 To display the loading indicator with local data, you need to set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) events:
 
 ```typescript
 
@@ -728,11 +728,11 @@ export class AppComponent implements OnInit {
 ```
 ## Binding data and performing CRUD actions via AJAX request
 
-The Syncfusion Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
 
-**Step 1:** Include the Syncfusion Grid in your HTML with necessary configurations:
+**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your HTML with necessary configurations:
 
 ```html
             <button ejs-button (click)="click()">Bind data via ajax</button>
@@ -998,11 +998,11 @@ The following screenshot represents loading data when the button is clicked and 
 
 ### Display the loading indicator using AJAX. 
 
-The Syncfusion Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
 
 To display the loading indicator with local data, you need to set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) events:
 
 ```typescript
 
@@ -1053,7 +1053,7 @@ export class AppComponent implements OnInit {
 
 ## Managing spinner visibility during data loading
 
-Showing a spinner during data loading in the Syncfusion Angular Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
+Showing a spinner during data loading in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
 To show or hide a spinner during data loading in the grid, you can utilize the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidespinner) methods provided by the Grid component
 
@@ -1072,7 +1072,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableImmutableMode) property as **true**.
 

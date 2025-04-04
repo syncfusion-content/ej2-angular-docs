@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 In Jasmine, test cases are typically executed synchronously, which means that any asynchronous code within a test case will not be executed properly. For instance, if you have a Grid component that takes time to render and populate data based on your data consumption timing, your test case might fail if it runs before the Grid has finished filling data. To prevent this situation, it is advisable to write asynchronous test cases utilizing Jasmine's Async feature.
 
-When `Async` testing code relies on asynchronous operations, it's essential to ensure that the test case waits for those operations to complete before making assertions or evaluating the results. The Jasmine testing framework provides a feature called [fakeAsync](https://angular.io/api/core/testing/fakeAsync) that addresses this. By using the `fakeAsync` function, you can simulate the passage of time and control the execution of asynchronous operations within a synchronous test. It creates a "fake" zone where time can be manipulated and controlled. To create a Jasmine test case for the Grid component, follow the below steps:
+When `Async` testing code relies on asynchronous operations, it's Essential<sup style="font-size:70%">&reg;</sup> to ensure that the test case waits for those operations to complete before making assertions or evaluating the results. The Jasmine testing framework provides a feature called [fakeAsync](https://angular.io/api/core/testing/fakeAsync) that addresses this. By using the `fakeAsync` function, you can simulate the passage of time and control the execution of asynchronous operations within a synchronous test. It creates a "fake" zone where time can be manipulated and controlled. To create a Jasmine test case for the Grid component, follow the below steps:
 
 **Step 1: Set up the Jasmine testing environment.**
 
@@ -20,9 +20,9 @@ When `Async` testing code relies on asynchronous operations, it's essential to e
 
 You need to verify if the installed version of Node is 14 or higher. If it is below version 14, you must install a version of Node above 14. You can refer the following link to install the [node version](https://nodejs.org/en/download). You can select the any node version is 14 or above and installed.
 
-**II. Create an Angular application and install the Syncfusion Grid package:**
+**II. Create an Angular application and install the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid package:**
 
-To create an Angular application and install the Syncfusion Grid package, you can refer to the [Getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
+To create an Angular application and install the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid package, you can refer to the [Getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
 **III. Install the Jasmine and karma:**
 

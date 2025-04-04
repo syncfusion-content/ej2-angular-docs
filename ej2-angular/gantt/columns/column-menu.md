@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular Gantt component
 
-The column menu in the Syncfusion Angular Gantt chart component provides options to enable features such as sorting, filtering, column chooser, and autofit. When click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumnmenu) property to **true** in the Gantt configuration.
+The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component provides options to enable features such as sorting, filtering, column chooser, and autofit. When click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumnmenu) property to **true** in the Gantt configuration.
 
 To use the column menu, inject the **ColumnMenuService** in the provider section of **AppModule**.
 
@@ -42,7 +42,7 @@ The default column menu items are displayed in following table.
 
 ## Add custom column menu item
 
-The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion Gantt chart. These custom menu items can be defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel/) objects. You can define the actions for these custom items in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuclick) event.
+The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart. These custom menu items can be defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel/) objects. You can define the actions for these custom items in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuclick) event.
 
 Consider the following example, which demonstrates how to add a custom column menu item to clear the sorting of the gantt:
 
@@ -116,7 +116,7 @@ To customize the column menu icon, follow these steps:
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
 ```
 
-Here is an example that demonstrates how to customize the column menu icon in the Syncfusion Gantt chart:
+Here is an example that demonstrates how to customize the column menu icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -131,7 +131,7 @@ Here is an example that demonstrates how to customize the column menu icon in th
 
 ## Column menu events
 
-The column menu in Syncfusion Angular Gantt chart provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
+The column menu in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
 
 1.The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuopen) event triggers before the column menu opens.
 

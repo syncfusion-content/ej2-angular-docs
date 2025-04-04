@@ -14,7 +14,7 @@ This section explains different types of avatar.
 
 ## Avatar size
 
-The Essential JS 2 Avatar has the following predefined sizes that can be used with the `.e-avatar` class to change the appearance of the avatar.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar has the following predefined sizes that can be used with the `.e-avatar` class to change the appearance of the avatar.
 
 | Class Name         | Description
 | :-------------     |:-------------
@@ -42,7 +42,7 @@ The Essential JS 2 Avatar has the following predefined sizes that can be used wi
 
 ## Avatar types
 
-The types of Essential JS 2 avatar are:
+The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 avatar are:
 
 * Default
 * Circle

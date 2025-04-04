@@ -179,7 +179,7 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
   
 {% previewsample "page.domainurl/samples/spreadsheet/local-data-binding-cs4" %}
 
-The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
+The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion<sup style="font-size:70%">&reg;</sup> in the dialog box.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

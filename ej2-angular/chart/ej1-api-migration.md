@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Chart component
 
-This article describes the API migration process of  {Component Name} component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  {Component Name} component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Chart
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotation | **Property:**  *annotation*  <br/> <br/> `<ej-chart> `<br>`<e-annotations>`<br>`<e-annotation>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` | **Property:**  *e-annotation*  <br/> <br/> `<ejs-chart> `<br>`<e-annotations>`<br>`<e-annotation>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ejs-chart>`|
 | Background | **Property:**  *background*  <br/> <br/> `<ej-chart background='red'> `<br>`</ej-chart>` | **Property:**  *background*  <br/> <br/> `<ej-chart background='red'> `<br>`</ej-chart>`|
@@ -46,13 +46,13 @@ This article describes the API migration process of  {Component Name} component 
 
 ## 3DChart
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | 3D chart | **Property:**  *enable3D*  <br/> <br/> `<ej-chart [enable3D]='enable'> `<br>`</ej-chart>` <br> <code>this.enable = true | **Property:**  Not Applicable|
 
 ## Annotations
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotation | **Property:**  *annotation*  <br/> <br/> `<ej-chart> `<br>`<e-annotations>`<br>`<e-annotation [visible]='visible'>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` <br> <br> <code>this.visible = true | **Property:**  *e-annotation*  <br/> <br/> `<ejs-chart> `<br>`<e-annotations>`<br>`<e-annotation>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ejs-chart>`|
 | Angle of annotation | **Property:**  *annotation.angle*  <br/> <br/> `<ej-chart> `<br>`<e-annotations>`<br>`<e-annotation [angle]='angle'>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` <br> <code> this.angle = 60 | **Property:** Not Applicable
@@ -69,7 +69,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Columns
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Column of the chart | **Property:**   *columnDefintions*  <br/> <br/> `<ej-chart> `<br>`<e-columnDefinitions>`<br>`<e-columnDefinition>`<br>`</e-columnDefinition>`<br>`</e-columnDefinitions>`<br>`</ej-chart>` |  **Property:**   *columns*  <br/> <br/>`<ej-chart> `<br>`<e-columns>`<br>`<e-column>`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-chart>`
 | Width of columns | **Property:**   *columnDefinition.width*  <br/> <br/> `<ej-chart> `<br>`<e-columnDefinitions>`<br>`<e-columnDefinition [width]='width'>`<br>`</e-columnDefinition>`<br>`</e-columnDefinitions>`<br>`</ej-chart>`this.width = 20;  <br> <br> <code> |  **Property:**   *column.width*  <br/> <br/>`<ej-chart> `<br>`<e-columns>`<br>`<e-column [width]='width>`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-chart>` <br> <br> this.width = '400';
@@ -79,7 +79,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Rows
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |row of the chart | **Property:**   *rowDefintions*  <br/> <br/> `<ej-chart> `<br>`<e-rowDefinitions>`<br>`<e-rowDefinition>`<br>`</e-rowDefinition>`<br>`</e-rowDefinitions>`<br>`</ej-chart>` |  **Property:**   *rows*  <br/> <br/>`<ej-chart> `<br>`<e-rows>`<br>`<e-row>`<br>`</e-row>`<br>`</e-rows>`<br>`</ej-chart>`
 | height of rows | **Property:**   *rowDefinition.height*  <br/> <br/> `<ej-chart> `<br>`<e-rowDefinitions>`<br>`<e-rowDefinition [height]='height'>`<br>`</e-rowDefinition>`<br>`</e-rowDefinitions>`<br>`</ej-chart>`this.height = 20;  <br> <br> <code> |  **Property:**   *row.height*  <br/> <br/>`<ej-chart> `<br>`<e-rows>`<br>`<e-row [height]='height>`<br>`</e-row>`<br>`</e-rows>`<br>`</ej-chart>` <br> <br> this.height = '400';
@@ -89,13 +89,13 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Common Series Options
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Common series option | **Property:**   *commonSeriesOptions*  <br/> <br/> `<ej-chart [commonSeriesOptions]='commonSeriesOption'> `<br>`</ej-chart>` <br> <br><code>this.commonSeriesOption = { } |  **Property:**  *border*  <br/> <br/> `<ejs-chart [commonSeriesOption]='commonSeriesOption'> `<br>`</ejs-chart>` <br> <br><code>this.commonSeriesOptions = { }|
 
 ## Crosshair
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |crossHair | **Property:**   *visible*  <br/> <br/> `<ej-chart [crosshair]='crosshair'> `<br>`</ej-chart>` <br> <br><code>this.crosshair = { visible: true } |  **Property:**   *enable*  <br/> <br/> `<ejs-chart [crosshair]='crosshair'> `<br>`</ejs-chart>` <br> <br><code>this.crosshair = { enable: true }
 |type of cross hair | **Property:**   *type*  <br/> <br/> `<ej-chart [crosshair]='crosshair'> `<br>`</ej-chart>` <br> <br><code>this.crosshair = { visible: true } |  **Property:**   Not Applicable
@@ -105,7 +105,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Indicator
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Indicators | **Property:**   *indicator*  <br/> <br/> `<ej-chart> `<br>`<e-indicators>`<br>`<e-indicator>`<br>`</e-indicator>`<br>`</e-indicators>`<br>`</ej-chart>` |  **Property:**   *indicator*  <br/> <br/>`<ejs-chart> `<br>`<e-indicators>`<br>`<e-indicator>`<br>`</e-indicator>`<br>`</e-indicators>`<br>`</ejs-chart>`
 | Indicator type | **Property:**   *type*  <br/> <br/> `<ej-chart> `<br>`<e-indicators>`<br>`<e-indicator type='Tma'>`<br>`</e-indicator>`<br>`</e-indicators>`<br>`</ej-chart>` |  **Property:**   *type*  <br/> <br/>`<ejs-chart> `<br>`<e-indicators>`<br>`<e-indicator type='Tma' >`<br>`</e-indicator>`<br>`</e-indicators>`<br>`</ejs-chart>`
@@ -143,7 +143,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Legend
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Visibility of legend | **Property:**  *legend.visible*  <br/> <br/> `<ej-chart [legend]='legend'>`<br>`</ej-chart>` <br> <br> <code> this.legend = { visible: true } | **Property:**  *legend.visible*  <br/> <br/> `<ejs-chart [legend]='legend'>`<br>`</ejs-chart>` <br> <br> <code> this.legend = { visible: true }
 | Height of legend | **Property:**  *legend.size.height*  <br/> <br/> `<ej-chart [legend]='legend'>`<br>`</ej-chart>` <br> <br> <code> this.legend = { size: { height: 20 }} | **Property:**  *legend.height*  <br/> <br/> `<ejs-chart [legend]='legend'>`<br>`</ejs-chart>` <br> <br> <code> this.legend = { height: '40' }
@@ -169,7 +169,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## PrimaryXAxis
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default | **Property:**  *primaryXAxis*  <br/> <br/> `<ej-chart [primaryXAxis]='primaryXAxis'>`<br>`</ej-chart>` <br> <br> <code> this.primaryXAxis = { } | **Property:**  *primaryXAxis*  <br/> <br/> `<ejs-chart [primaryXAxis]='primaryXAxis'>`<br>`</ejs-chart>` <br> <br> <code> this.primaryXAxis = {  }
 | Alternate grid band for axis | **Property:**  *primaryXAxis.alternateGridBand*  <br/> <br/> `<ej-chart [primaryXAxis]='primaryXAxis'>`<br>`</ej-chart>` <br> <br> <code> this.primaryXAxis = { alternateGridBand: { even:{ fill: 'black' }} } | **Property:**  Not Applicable
@@ -244,7 +244,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## PrimaryYAxis
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default | **Property:**  *primaryYAxis*  <br/> <br/> `<ej-chart [primaryYAxis]='primaryYAxis'>`<br>`</ej-chart>` <br> <br> <code> this.primaryYAxis = { } | **Property:**  *primaryYAxis*  <br/> <br/> `<ejs-chart [primaryYAxis]='primaryYAxis'>`<br>`</ejs-chart>` <br> <br> <code> this.primaryYAxis = {  }
 | Alternate grid band for axis | **Property:**  *primaryYAxis.alternateGridBand*  <br/> <br/> `<ej-chart [primaryYAxis]='primaryYAxis'>`<br>`</ej-chart>` <br> <br> <code> this.primaryYAxis = { alternateGridBand: { even:{ fill: 'black' }} } | **Property:**  Not Applicable
@@ -319,7 +319,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Axes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default | **Property:**  *axis*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` </e-axes> `<br>`</ej-chart>`  | **Property:**  *axis*  <br/> <br/> `<ejs-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` </e-axes> `<br>`</ejs-chart>`
 | Alternate grid band for axis | **Property:**  *axis.alternateGridBand*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis [alternateGridBand]='band'> `<br>` </e-axis> `<br>` </e-axes> `<br>`</ej-chart>` <br> <br> <code> this.band = {  even:{ fill: 'black' } } | **Property:**  Not Applicable
@@ -393,7 +393,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Series
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Series | **Property:**   *series*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` | **Property:**   *series*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>` |
 |bearFillColor | **Property:**   *bearFillColor*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series bearFillColor='red'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` | **Property:**   *bearFillColor*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series bearFillColor='pink'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>` |
@@ -446,7 +446,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Marker
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Fill color in series| **Property:**   *series.marker.fill*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br> <code> this.marker = { fill: 'red'} | **Property:**   *series.marker.fill*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>` <br><br> <code>this.marker = { fill: 'red'} |
 |Opacity of marker| **Property:**   *series.marker.opacity*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br> <code> this.marker = { opacity: 0.4 } | **Property:**   *series.marker.fill*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>` <br><br> <code>this.marker = { opacity: 0.4} |
@@ -475,7 +475,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Error bar
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Type of error bar | **Property:**   *series.errorBar.type*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [errorbar]='errorBar' >`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br> <code>this.errorBar = { type: 'StandardDeviation'} | **Property:**   *series.errorBar.type*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series [errorBar]='errorBar' >`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>`<br> <br> <code>this.errorBar = { type: 'StandardDeviation' } |
 | mode of error bar | **Property:**   *series.errorBar.mode*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [errorbar]='errorBar' >`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br> <code>this.errorBar = { mode: 'Horizontal'} | **Property:**   *series.errorBar.mode*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series [errorBar]='errorBar' >`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>`<br> <br> <code>this.errorBar = { mode: 'Horizontal' } |
@@ -491,7 +491,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Trendlines
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Trendsline type of series| **Property:**   *trendlines.type*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`<e-trendlines> `<br>` <e-trendline type='Linear'>  `<br> ` </e-trendline> `<br>` <e-trendlines>  `<br> ` </e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` | **Property:**   *trendLines.type*  <br/> <br/> `<ejs-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`<e-trendlines> `<br>` <e-trendline  type='Linear'>  `<br> ` </e-trendline> `<br>` <e-trendlines>  `<br> ` </e-series>`<br>`</e-series-collection>`<br>`</ejs-chart>` |
 | Visiblity of Trendslines| **Property:**   *trendlines.visible*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`<e-trendlines> `<br>` <e-trendline [visible]='visible'>  `<br> ` </e-trendline> `<br>` <e-trendlines>  `<br> ` </e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br><br> <code>this.visible: true | **Property:**   Not Applicable |
@@ -511,7 +511,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Striplines
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default | **Property:**  *striplines*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-striplines> `<br>` <e-stripline> `<br>` </e-stripline> `<br>` <e-striplines> `<br>` </e-axes> `<br>`</ej-chart>`  | **Property:**  *striplines* <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-striplines> `<br>` <e-stripline> `<br>` </e-stripline> `<br>` <e-striplines> `<br>` </e-axes> `<br>`</ej-chart>`
 | Color of stripines | **Property:**  *striplines*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-striplines> `<br>` <e-stripline color='pink'> `<br>` </e-stripline> `<br>` <e-striplines> `<br>` </e-axes> `<br>`</ej-chart>`  | **Property:**  *striplines* <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-striplines> `<br>` <e-stripline color='pink'> `<br>` </e-stripline> `<br>` <e-striplines> `<br>` </e-axes> `<br>`</ej-chart>`
@@ -528,7 +528,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Multilevel labels
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default | **Property:**  *multilevellabels*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-multilevellabels> `<br>` <e-multilevellabel> `<br>` </e-multilevellabel> `<br>` <e-multilevellabels> `<br>` </e-axes> `<br>`</ej-chart>`  | **Property:**  *multilevellabels* <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-multilevellabels> `<br>` <e-multilevellabel> `<br>` </e-multilevellabel> `<br>` <e-multilevellabels> `<br>` </e-axes> `<br>`</ej-chart>`
 | Text alignment in labels | **Property:**  *textAlignment*  <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-multilevellabels> `<br>` <e-multilevellabel textAlignment='near'> `<br>` </e-multilevellabel> `<br>` <e-multilevellabels> `<br>` </e-axes> `<br>`</ej-chart>`  | **Property:**  *multilevellabels* <br/> <br/> `<ej-chart>`<br>` <e-axes> `<br>` <e-axis> `<br>` </e-axis> `<br>` <e-multilevellabels> `<br>` <e-multilevellabel alignment='near'> `<br>` </e-multilevellabel> `<br>` <e-multilevellabels> `<br>` </e-axes> `<br>`</ej-chart>`
@@ -541,7 +541,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation | **Property:**  *chart.animate*  <br/> <br/> `<ej-chart (animate)='animation'>`<br>`</ej-chart>` <br> <br> <code> this.animate(args) { } |  **Property:**  Not Applicable
 | Redraw  | **Property:**  *chart.redraw*  <br/> <br/> `<ej-chart (redraw)='redraw'>`<br>`</ej-chart>` <br> <br> <code> this.redraw(args) { } |  **Property:** *chart.refresh*  <br/> <br/> `<ej-chart (refresh)='refresh'>`<br>`</ej-chart>` <br> <br> <code> this.refresh(args) { }
@@ -552,7 +552,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on annotation click  | **Property:**  *chart.annotationClick*  <br/> <br/> `<ej-chart (annotationClick)='annotationClick($event)'>`<br>`</ej-chart>` <br> <br> <code> this.annotationClick(args) { } |  **Property:** Not Applicable
 | Fires on after animation | **Property:**  *chart.animationComplete*  <br/> <br/> `<ejs-chart (animationComplete)='animationComplete($event)'>`<br>`</ejs-chart>` <br> <br> <code> this.animationComplete(args) { } |  **Property:** *chart.animationComplete*  <br/> <br/> `<ejs-chart (refresh)='refresh'>`<br>`</ejs-chart>` <br> <br> <code> this.refresh(args) { }
