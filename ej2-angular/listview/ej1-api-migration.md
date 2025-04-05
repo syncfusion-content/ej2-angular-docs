@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular ListView component
 
-This article describes the API migration process of ListView component from Essential JS 1 to Essential JS 2
+This article describes the API migration process of ListView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-| Behaviour | API in Essential JS 1 | API in Essential JS 2 |
+| Behaviour | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Virtualization | **Property:**  *allowVirtualScrolling*  <br  />`<ej-listview [dataSource]="data" [allowVirtualScrolling]='true' [virtualScrollMode]='normal' ></ej-listview>` | **Property:**  *enableVirtualization*  <br  />`<ejs-listview [dataSource]='data' [enableVirtualization]='true'></ejs-listview>` |
 | Checkbox | **Property:**  *enableCheckMark*  <br/>`<ej-listview [dataSource]='data' [enableCheckMark]='true' ></ej-listview>`| **Property:**  *showCheckBox*  <br  />`<ejs-listview [dataSource]='data' [showCheckBox]='true'></ejs-listview>`|

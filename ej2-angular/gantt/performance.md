@@ -39,7 +39,7 @@ When integrating image or template elements into a gantt column, it's recommende
 
 ## How to improve loading performance by referring individual script and CSS
 
-To enhance the performance of the Syncfusion Gantt component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
+To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
 
 [CRG website link](https://crg.syncfusion.com/) 
 
@@ -77,11 +77,11 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Optimizing Angular app performance with multiple gantts and templates
 
-The performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion Gantt.
+The performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt.
 
 When your application's DOM is populated with a large number of items, performance issues arise due to continuous change detection (e.g., typing into an input continuously). For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
   
-In [Angular](https://angular.io/api/core/ChangeDetectionStrategy), there are two default change detection strategies available:
+In [Angular](https://v17.angular.io/api/core/ChangeDetectionStrategy), there are two default change detection strategies available:
   
 * **Default Change Detection**:               
 Utilizes the default `CheckAlways` strategy, where change detection is automatic until explicitly deactivated. For example, entering a value into a text box triggers continuous change detection for all template references, leading to the reported issue. 
@@ -101,9 +101,9 @@ To address this, it's recommended to implement the OnPush change detection strat
 ```
 Using the OnPush strategy may lead to child components not being updated when the input changes. You can address this by referring to the following links,
 * [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
-* [ApplicationRef - Tick](https://angular.io/api/core/ApplicationRef#tick)
-* [Tick - Description](https://angular.io/api/core/testing/tick#description)
-* [DetectChange - Anchor](https://angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
+* [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
+* [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
+* [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
 
 ## Microsoft excel limitation while exporting millions of records to excel file format
 

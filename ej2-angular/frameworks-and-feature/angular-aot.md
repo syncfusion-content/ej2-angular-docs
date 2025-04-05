@@ -24,9 +24,9 @@ The advantages of utilizing AOT compilation in Angular applications include:
 
 - **Early Error Detection**: AOT compilation identifies template errors during build time rather than runtime, allowing for early detection and resolution of issues in the development cycle.
 
-## Using Syncfusion components with AOT
+## Using Syncfusion<sup style="font-size:70%">&reg;</sup> components with AOT
 
-All [Syncfusion Angular components](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-) are compatible with AOT compilation.
+All [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-) are compatible with AOT compilation.
 
 ## Implementation of AOT Compilation in an Angular Application
 

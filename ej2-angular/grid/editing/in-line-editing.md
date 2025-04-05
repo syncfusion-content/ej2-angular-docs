@@ -217,7 +217,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 
 ## Show add new row always in grid
 
-The Syncfusion Grid simplifies the addition of new records by consistently presenting a blank, "add new row" form within the grid. To enable this feature, you can set the `showAddNewRow` property within the `editSettings` configuration to **true**. This allows for continuous addition of new records. You can display the add a new row at either the **top** or **bottom** of the grid content, depending on the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#newrowposition) property of `editSettings`. By default, the add new row is displayed at the top row of the grid content.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid simplifies the addition of new records by consistently presenting a blank, "add new row" form within the grid. To enable this feature, you can set the `showAddNewRow` property within the `editSettings` configuration to **true**. This allows for continuous addition of new records. You can display the add a new row at either the **top** or **bottom** of the grid content, depending on the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#newrowposition) property of `editSettings`. By default, the add new row is displayed at the top row of the grid content.
 
 The following sample demonstrates how to add a new record continuously using `showAddNewRow` property.
 
@@ -263,7 +263,7 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 
 ## Enable editing in single click
 
-Enabling single-click editing in the Syncfusion Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods.
+Enabling single-click editing in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods.
 
 To implement this feature, you need to bind the `mouseup` event for the Grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures that the editing mode is triggered when clicking on a specific element within the Grid.
 
@@ -283,7 +283,7 @@ The following sample demonstrates how to enable editing in a single click using 
 
 ## Disable editing for a particular row
 
-In the Syncfusion Grid component, you can prevent editing of specific rows based on certain conditions. This feature is useful when you want to restrict editing for certain rows , such as read-only data, calculated values, or protected information. It helps maintain data integrity and ensures that only authorized changes can be made in the grid.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, you can prevent editing of specific rows based on certain conditions. This feature is useful when you want to restrict editing for certain rows , such as read-only data, calculated values, or protected information. It helps maintain data integrity and ensures that only authorized changes can be made in the grid.
 
 To disable editing for a particular row, use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the grid based on **requestType** as **beginEdit**. You can then set the **args.cancel** property to **true** to prevent editing for that row.
 

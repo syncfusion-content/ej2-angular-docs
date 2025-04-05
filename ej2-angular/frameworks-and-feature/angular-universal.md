@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Angular is a widely-used client-side web development framework, primarily running on the client-side by default. However, many web applications require server-side capabilities for enhanced SEO and performance. Angular Universal bridges this gap by enabling server-side rendering (SSR) for Angular applications, which can significantly improve SEO, load times, and accessibility when integrated with tools like ASP.NET WebForms and ASP.NET MVC.
 
-This guide explains how to use Angular Universal in conjunction with Syncfusion Angular components to create efficient and performant applications.
+This guide explains how to use Angular Universal in conjunction with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to create efficient and performant applications.
 
 ## What is Angular Universal
 
@@ -28,9 +28,9 @@ Server-side rendering (SSR) in Angular Universal enhances application performanc
 
 ## Create an Angular Universal application
 
-Syncfusion Angular UI Components support SSR in Angular Universal applications. Follow these steps to integrate SSR with Syncfusion components:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support SSR in Angular Universal applications. Follow these steps to integrate SSR with Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
-1. **Set up an Angular Application**: Start by creating an Angular application with Syncfusion Angular DataGrid, as outlined in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) guide using Angular CLI.
+1. **Set up an Angular Application**: Start by creating an Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid, as outlined in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) guide using Angular CLI.
 
 2. **Add Server-Side Rendering**: Incorporate SSR into your application with the following command:
 

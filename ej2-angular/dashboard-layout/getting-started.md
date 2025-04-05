@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 # Getting started with Angular Dashboard Layout component
 
-The following section explains the steps required to create the Syncfusion Angular Dashboard Layout component.
+The following section explains the steps required to create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dashboard Layout component.
 The Dashboard Layout is a grid-structured Layout component that helps create static and dynamic Dashboard Layouts with panels. It is also referred as Angular Dashboard Layout Template.
 
 To get start quickly with Angular Dashboard Layout using CLI and Schematics, you can check on this video:
@@ -48,7 +48,7 @@ Navigate to the created project folder by using following command.
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+>Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
 
 ## Adding Dependencies
 
@@ -62,17 +62,17 @@ The following list of dependencies are required to use the Dashboard Layout comp
 
 ```
 
-## Installing Syncfusion DashboardLayout package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> DashboardLayout package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38) package to the application.
 
@@ -82,7 +82,7 @@ npm install @syncfusion/ej2-angular-layouts --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package to the application.
 
@@ -114,7 +114,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
->Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add Dashboard Layout to the application
 

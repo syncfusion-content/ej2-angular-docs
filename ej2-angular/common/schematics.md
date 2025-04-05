@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Schematics
 
-The Syncfusion Angular components now supports the [schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components now supports the [schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
 The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI [`add`](https://github.com/angular/angular-cli) command.
 
 ## Creating Angular application
@@ -29,15 +29,15 @@ ng new my-app
 
 This command sets up a new project by downloading all necessary files and initializing the NPM components.
 
-## Syncfusion package initialization
+## Syncfusion<sup style="font-size:70%">&reg;</sup> package initialization
 
-    All the Syncfusion Angular packages can be installed using the following command in the CLI application.
+    All the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages can be installed using the following command in the CLI application.
 
 ```
 ng add 'package-name'
 ```
 
-For instance, to include the Syncfusion Grid component:
+For instance, to include the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
 ```
 ng add @syncfusion/ej2-angular-grids
@@ -47,7 +47,7 @@ This command will execute the following configurations in your Angular applicati
  
  * Adds `@syncfusion/ej2-angular-grids` package and its peer dependencies to your `package.json` file.
  * Imports the `GridModule` in your application module `app.module.ts`.
- * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
+ * Registers the Syncfusion<sup style="font-size:70%">&reg;</sup> UI default theme (material) in the `angular.json` file.
 
 ## Adding specific modules from multiple component package
 

@@ -68,7 +68,7 @@ The Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 | `aria-labelledby`   | Provides an accessible name for the checkbox labels in excel filter, checkbox filter and column chooser dialog.                                                    |
 | `aria-describedby`  | Provides an description about the features enabled in the header when the grid header cell is focused.                                                             |
 
-The Syncfusion Grid component is structured with a two-table architecture for its header and content. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for both the grid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools. It's important to note that these limitations do not affect the readability of the grid content over screen readers.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component is structured with a two-table architecture for its header and content. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for both the grid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools. It's important to note that these limitations do not affect the readability of the grid content over screen readers.
 
 The accessibility checker tools highlights the following known issues:
 
@@ -208,7 +208,7 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 ### How to prevent default key action behavior
 
-The Syncfusion Angular Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
 
 To prevent the default key action behavior in the grid, you can utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
@@ -228,7 +228,7 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion Angular Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
 To achieve this, you can utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
@@ -248,7 +248,7 @@ And prevented the default actions associated with the following keyboard shortcu
 * Delete 
 * Enter
 
-You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion Angular Grid component.
+You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -377,4 +377,4 @@ export class AppComponent implements OnInit {
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

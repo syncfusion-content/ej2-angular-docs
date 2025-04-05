@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Footer aggregate in Angular Grid component
 
-The Syncfusion Angular Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) property to render the aggregate value in the footer cells.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) property to render the aggregate value in the footer cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,7 +57,7 @@ The Syncfusion Angular Grid component allows you to calculate and display aggreg
 
 ## Format the aggregate value
 
-To format the aggregate value result in the Syncfusion Angular Grid component, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+To format the aggregate value result in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

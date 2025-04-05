@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Syncfusion Angular Components
+# Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
 ## Accessibility overview
 
@@ -18,7 +18,7 @@ Accessibility in software components involves designing user interfaces that are
 
 A component is considered accessible when it complies with specific standards designed to enhance accessibility.
 
-Syncfusion Angular components meet the following accessibility standards:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components meet the following accessibility standards:
 
 - **[ADA](https://www.ada.gov/)**: A law ensuring equal access and opportunities for people with disabilities compared to those without disabilities.
 
@@ -30,25 +30,25 @@ Syncfusion Angular components meet the following accessibility standards:
 
 * [Keyboard navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - It refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
 
-Syncfusion Angular components adhere to these established standards.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components adhere to these established standards.
 
 ## Accessibility compliance
 
-The accessibility support provided by Syncfusion Angular components is based on a collection of methodologies for adhering to and applying [recognized standards and technical specifications](#accessibility-standards) to ensure an intuitive experience for people with disabilities.
+The accessibility support provided by Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components is based on a collection of methodologies for adhering to and applying [recognized standards and technical specifications](#accessibility-standards) to ensure an intuitive experience for people with disabilities.
 
-There are several methodologies of accessibility validation that can be performed on the Syncfusion Angular components, such as:
+There are several methodologies of accessibility validation that can be performed on the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, such as:
 
-* The [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/) are followed by the Syncfusion Angular components to enable appreciable accessibility.
+* The [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/) are followed by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to enable appreciable accessibility.
 
 * Each Angular component is subjected to manual testing with a screen reader and also automated test cases to ensure the component's required attributes. Tools such as aXe, Lighthouse, and Accessibility Scanner are employed to ensure comprehensive coverage and compliance.
 
 * Attributes are allocated and updated correctly during interaction as well. Each component has been assigned a distinct `Role` attribute and its own set of ARIA attributes defined by the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) specification.
 
-In addition to the methodologies mentioned above, Syncfusion Angular components are constructed to support the following accessibility aspects.
+In addition to the methodologies mentioned above, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are constructed to support the following accessibility aspects.
 
 ### Screen reader support
 
-A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion Angular components followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC, along with JAWS and NVDA, among others.
+A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC, along with JAWS and NVDA, among others.
 
 ### Right-To-Left support
 
@@ -56,25 +56,25 @@ Right-to-Left (RTL) support allows applications to cater to languages written fr
 
 ### Color contrast
 
-Syncfusion Angular components come with [predefined themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) that ensure satisfactory color contrast. Developers can customize these themes for improved contrast.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components come with [predefined themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) that ensure satisfactory color contrast. Developers can customize these themes for improved contrast.
 
 ### Mobile device support
 
-Syncfusion Angular components are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
 
 ### Keyboard navigation support
 
-Syncfusion Angular components support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
 
 ## Ensuring accessibility
 
-Ensuring the accessibility of Syncfusion Angular components is crucial for making the product inclusive and user-friendly for individuals with disabilities. This process involves various types of accessibility testing, including:
+Ensuring the accessibility of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components is crucial for making the product inclusive and user-friendly for individuals with disabilities. This process involves various types of accessibility testing, including:
 
-* **Automated testing**: The Syncfusion Angular component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools. These tools provide in-depth analysis and reporting of accessibility compliance.
+* **Automated testing**: The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools. These tools provide in-depth analysis and reporting of accessibility compliance.
 
-* **Manual testing**: This type of testing involves manually evaluating the Syncfusion Angular components. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
+* **Manual testing**: This type of testing involves manually evaluating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
 
-Syncfusion Angular components will keep improving when there is anything required. It also involves client feedback to make the component more accessible, incorporating suggestions and real-world observations.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components will keep improving when there is anything required. It also involves client feedback to make the component more accessible, incorporating suggestions and real-world observations.
 
 ## Voluntary Product Accessibility Template
 
@@ -82,13 +82,13 @@ The [Voluntary Product Accessibility Template (VPAT)](https://www.itic.org/polic
 
 [Download the Latest VPAT Document](https://www.itic.org/dotAsset/0d397438-611d-47da-861a-be9ee508da51.docx)
 
-To review the accessibility conformance of Syncfusion products, you can download the latest version of the **Syncfusion VPAT document** here: [VPAT Document](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx)
+To review the accessibility conformance of Syncfusion<sup style="font-size:70%">&reg;</sup> products, you can download the latest version of the **Syncfusion<sup style="font-size:70%">&reg;</sup> VPAT document** here: [VPAT Document](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx)
 
-This document provides detailed information on how Syncfusion products meet accessibility requirements, ensuring they are inclusive and usable for all individuals, including those with disabilities.
+This document provides detailed information on how Syncfusion<sup style="font-size:70%">&reg;</sup> products meet accessibility requirements, ensuring they are inclusive and usable for all individuals, including those with disabilities.
 
 ## Accessibility support for specific components
 
-Syncfusion Angular components are designed to ensure compliance with key accessibility standards, including **Section 508**, **WAI-ARIA**, **WCAG 2.2**, and **keyboard navigation**. Below, you’ll find control-specific documentation that provides detailed guidance on how each control meets these standards.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are designed to ensure compliance with key accessibility standards, including **Section 508**, **WAI-ARIA**, **WCAG 2.2**, and **keyboard navigation**. Below, you’ll find control-specific documentation that provides detailed guidance on how each control meets these standards.
 
 <style>
 #table

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Heatmap chart component
 
-This article describes the API migration process of heat map component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Members
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Specifies the width of the heat map | **Property:**  *width*<br/><br/><code>`<ej-heatmap id="HeatMap" [width]="100%">`<br/>`</ej-heatmap>`</code>| **Property:**  *width*<br/><br/><code>`<ejs-heatmap id='container' [width]='width'>`</ejs-heatmap>` <br> <br><code>this.width = '300'</code>|
 | Specifies the height of the heat map| **Property:**  *height*<br/><br/><code>`<ej-heatmap id="HeatMap" [height]="100%">`<br/>`</ej-heatmap>`</code>| **Property:**  *height*<br/><br/><code>`<ejs-heatmap id='container' [height]='height'>`<br/>`</ejs-heatmap>` <br> <br><code>this.height = '300'</code>|
@@ -39,6 +39,6 @@ This article describes the API migration process of heat map component from Esse
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggered when the cell get clicked.| **Property:**  *cellSelected*<br/><br/><code>`<ej-heatmap (actionComplete)="actionComplete($event)">`<br>`</ej-heatmap>`<br> <br><code>this.actionComplete = function(args) {}</code>| **Property:**  *cellClick*<br/><br/><code>`<ejs-heatmap id='container' (cellClick)='cellClick($event)'>`<br>`</ejs-heatmap>`<br><br><code> this.cellClick = function(args) {} </code>|

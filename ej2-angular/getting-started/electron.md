@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular and Electron
 
-This guide is designed to help you create a basic Angular application using the `Electron Framework` and integrate `Syncfusion Angular UI components`.
+This guide is designed to help you create a basic Angular application using the `Electron Framework` and integrate **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components**.
 
 ## Prerequisites
 
@@ -36,9 +36,9 @@ npm install -g electron
 
 >Note: Refer to this [getting started guide](https://electronjs.org/docs/tutorial/installation) to install the Electron framework.
 
-## Installing Syncfusion Menu package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Menu package
 
-Syncfusion packages are available on npm under the `@syncfusion` scope. You can explore all Angular Syncfusion packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. You can explore all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 To install the Menu package, execute the following command:
 
@@ -50,7 +50,7 @@ npm i @syncfusion/ej2-angular-navigations@ngcc --save
 
 ## Adding the Menu Module
 
-Once the package is installed, component modules are available for configuration in your application. The Syncfusion Angular package offers two types of ng-Modules.
+Once the package is installed, component modules are available for configuration in your application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package offers two types of ng-Modules.
 
 Import the Menu module into your Angular application (`app.module.ts`) from the `@syncfusion/ej2-angular-navigations` package.
 
@@ -71,9 +71,9 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-## Adding Syncfusion Menu Component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Menu Component
 
-To integrate the Syncfusion Menu component into your application, update the template in the `app.component.ts` file by adding the `ejs-menu` element and binding it to the `menuItems` variable.
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Menu component into your application, update the template in the `app.component.ts` file by adding the `ejs-menu` element and binding it to the `menuItems` variable.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -201,7 +201,7 @@ Modify the `package.json` to include the following entries:
 
 ## Running the application
 
-To launch the application, execute the following command lines. The Syncfusion Essential JS 2 Menu component will be rendered within the Electron framework:
+To launch the application, execute the following command lines. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Menu component will be rendered within the Electron framework:
 
 ```bash
 npm  run electron-build 

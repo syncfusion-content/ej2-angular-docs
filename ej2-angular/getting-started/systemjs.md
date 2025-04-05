@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion Angular and SystemJS
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular and SystemJS
 
-Follow these steps to create an Angular application using `SystemJS` with Syncfusion Angular UI Components (Essential JS 2).
+Follow these steps to create an Angular application using `SystemJS` with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
 
 ## Cloning Angular Quick Start 
 
@@ -22,13 +22,13 @@ cd quickstart
 npm install 
 ```
 
-Follow these steps to integrate Syncfusion Angular components into an Angular app utilizing SystemJS.
+Follow these steps to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into an Angular app utilizing SystemJS.
 
 `NOTE:` The [`Angular QuickStart`](https://github.com/angular/quickstart) project has been deprecated. To create new Angular projects, [`Angular CLI`](./angular-cli/) is recommended as the preferred approach.
 
-## Installing Syncfusion Grid Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
-Syncfusion packages are distributed via npm under the `@syncfusion` scope. You can explore all Angular Syncfusion packages on npm [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed via npm under the `@syncfusion` scope. You can explore all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Add the `@syncfusion/ej2-angular-grids` package to your application:
 
@@ -40,7 +40,7 @@ npm i @syncfusion/ej2-angular-grids --save
 
 ## Adding Grid Module
 
-Once the package is installed, component modules from the Syncfusion package can be configured into your application. The Syncfusion Angular package provides various `ngModules`.
+Once the package is installed, component modules from the Syncfusion<sup style="font-size:70%">&reg;</sup> package can be configured into your application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package provides various `ngModules`.
 
 Refer to [`Ng-Module`](../common/ng-module.html) for more details on `ngModules`.
 
@@ -75,7 +75,7 @@ import { GridAllModule } from '@syncfusion/ej2-angular-grids';
 export class AppModule { }
 ```
 
-## Adding Syncfusion Component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component
 
 Include the grid component snippet in `app.component.ts` as shown below.
 
@@ -132,7 +132,7 @@ The necessary CSS files are available within the `../node_modules/@syncfusion` p
 
 The `SystemJS` configuration file is located in the project template at `src/systemjs.config.js`. 
 
-To add the Syncfusion Angular packages, refer to the code snippet below. Add the required Syncfusion packages in the `systemjs.config.js` file under the `map` section:
+To add the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, refer to the code snippet below. Add the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages in the `systemjs.config.js` file under the `map` section:
 
 ```typescript
       map:{

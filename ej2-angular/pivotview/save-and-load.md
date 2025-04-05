@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Export and import reports as JSON through custom toolbar options
 
-The Syncfusion Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) through custom toolbar options. This function simplifies report configuration by allowing options to be exported and imported as JSON files.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) through custom toolbar options. This function simplifies report configuration by allowing options to be exported and imported as JSON files.
 
 ## Customizing the Toolbar
 
@@ -22,9 +22,9 @@ The **Save** button, which rendered as an anchor element, it allows users to dow
 
 ### Open Button
 
-The **Open** button, which rendered as an input file element, it allows users to select a JSON file containing report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) from their file system. When a file is selected, the [change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) event retrieves the report settings from the JSON file and assigns them to the Syncfusion Pivot Table component.
+The **Open** button, which rendered as an input file element, it allows users to select a JSON file containing report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) from their file system. When a file is selected, the [change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) event retrieves the report settings from the JSON file and assigns them to the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component.
 
-Here is an example demonstrating how to add **Save** and **Open** buttons to the toolbar and handle exporting and importing report configurations in the Syncfusion Pivot Table component:
+Here is an example demonstrating how to add **Save** and **Open** buttons to the toolbar and handle exporting and importing report configurations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

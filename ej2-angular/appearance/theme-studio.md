@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Theme Studio in Angular Appearance Component
 
-The Theme Studio for Syncfusion Angular UI Components offers the ability to customize existing themes. However, it does not support Data Visualization components like Chart, Diagram, Gauge, Range Navigator, or Maps.
+The Theme Studio for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components offers the ability to customize existing themes. However, it does not support Data Visualization components like Chart, Diagram, Gauge, Range Navigator, or Maps.
 
 ## Customizing Theme Color in Theme Studio
 
-Syncfusion Angular UI Components are created using SCSS, with each theme containing unique common variables. By altering these variable color codes, styles across all Syncfusion Angular UI Components can be modified. These styles are influenced by these [theme-based common variables](../appearance/overview#common-variables), which are managed within the Theme Studio application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are created using SCSS, with each theme containing unique common variables. By altering these variable color codes, styles across all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components can be modified. These styles are influenced by these [theme-based common variables](../appearance/overview#common-variables), which are managed within the Theme Studio application.
 
 **Step 1:** Visit the Theme Studio at [https://ej2.syncfusion.com/themestudio/](https://ej2.syncfusion.com/themestudio/).
 
@@ -26,13 +26,13 @@ Syncfusion Angular UI Components are created using SCSS, with each theme contain
 
 ![color-picker](images/colorpicker.png)
 
-**Step 4:** Once colors are selected, the Essential JS 2 components in the preview section will reflect the changes.
+**Step 4:** Once colors are selected, the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components in the preview section will reflect the changes.
 
 ![customized](images/customized.png)
 
 ### Filtering a Specific List of Components
 
-With Theme Studio, you can customize selected components. This is beneficial when focusing on a specific suite of Syncfusion Angular UI Components in your application. The Studio filters these components to customize and decrease final output file size.
+With Theme Studio, you can customize selected components. This is beneficial when focusing on a specific suite of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application. The Studio filters these components to customize and decrease final output file size.
 
 **Step 1:** Click the Filter icon in the top right, then choose components for theme customization.
 
@@ -54,11 +54,11 @@ After customizing, you can download your theme styles.
 
 ![download-icon](images/download-icon.png)
 
-**Step 2:** Enter a theme name in File Name and click Download. If using both Essential JS 1 and Essential JS 2 components, check "Include compatibility CSS" to ensure compatibility with Essential JS 1 styles. More details are available [here](https://ej2.syncfusion.com/documentation/getting-started/compatible-with-essential-js1/).
+**Step 2:** Enter a theme name in File Name and click Download. If using both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, check "Include compatibility CSS" to ensure compatibility with Essential<sup style="font-size:70%">&reg;</sup> JS 1 styles. More details are available [here](https://ej2.syncfusion.com/documentation/getting-started/compatible-with-essential-js1/).
 
 ![download-dialog](images/download-dialog.png)
 
-**Step 3:** The styles download as a zip containing SCSS and CSS files for selected Syncfusion Angular UI Components. Current settings are stored in `settings.json`.
+**Step 3:** The styles download as a zip containing SCSS and CSS files for selected Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components. Current settings are stored in `settings.json`.
 
 ![output-files](images/output-files.png)
 
@@ -76,7 +76,7 @@ Incorporate the customized CSS file directly into your web application.
 </head>
 ```
 
-> For applications using both Essential JS 1 and Essential JS 2, copy the customized CSS file from the `compatibility` folder from the downloaded location.
+> For applications using both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2, copy the customized CSS file from the `compatibility` folder from the downloaded location.
 
 ## Import Previously Changed Settings into Theme Studio
 
@@ -102,4 +102,4 @@ If you need to adjust your application theme and UI design later, you don't have
 
 ### Tailwind Theme
 
-Syncfusion Angular UI Components provide Tailwind theme support for EJ2 components, adhering to UI design principles and theme colors. The Tailwind theme is crafted according to Tailwind UI design guidelines.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components provide Tailwind theme support for EJ2 components, adhering to UI design principles and theme colors. The Tailwind theme is crafted according to Tailwind UI design guidelines.

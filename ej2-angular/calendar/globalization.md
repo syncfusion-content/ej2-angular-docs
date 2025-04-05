@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/internationalization/) and also add culture specific customization and translation to the text [`localization`](../common/localization/).
 
-By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [`Essential JavaScript 2 Internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html) package to parse and format the date object based on the culture by uses the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data and also it provides the [`loadCldr`](http://ej2.syncfusion.com/documentation/base/internationalization#cldr-data-dependencies) method to load the culture specific CLDR JSON data.
+By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](http://ej2.syncfusion.com/documentation/base/intl.html) package to parse and format the date object based on the culture by uses the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data and also it provides the [`loadCldr`](http://ej2.syncfusion.com/documentation/base/internationalization#cldr-data-dependencies) method to load the culture specific CLDR JSON data.
 
 To go with the different culture other than `English`, follow the below steps.
 

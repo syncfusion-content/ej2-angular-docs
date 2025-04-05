@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Browser Compatibility in Angular
 
-Syncfusion Angular UI components are compatible with modern browsers. The following versions are supported:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with modern browsers. The following versions are supported:
 
 |    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    iOS    |    Android    |    Windows Mobile    |
 |:--------------:|:---------------:|:--------------:|:------------:|:------------:|:--------------:|:-----------:|:---------------:|:--------------:|
@@ -20,7 +20,7 @@ Syncfusion Angular UI components are compatible with modern browsers. The follow
 
 A polyfill is code that provides modern functionality on older browsers that lack native support.
 
-Syncfusion Angular UI components are compatible with Internet Explorer 11 (IE 11) when using the ES6 Promise polyfill.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Internet Explorer 11 (IE 11) when using the ES6 Promise polyfill.
 
 ## Ways to Add Polyfills
 

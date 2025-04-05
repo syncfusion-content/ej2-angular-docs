@@ -89,9 +89,9 @@ export class AppComponent implements OnInit {
 
 ## Row template with formatting
 
-The row template feature in Syncfusion Tree Grid allows you to customize the layout of rows in the tree grid. This is useful when you want to display images, buttons, or other custom content within the rows of a tree grid.
+The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to customize the layout of rows in the tree grid. This is useful when you want to display images, buttons, or other custom content within the rows of a tree grid.
 
-By default, Syncfusion Tree Grid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to format the values displayed in each column. However, when using the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to format the values displayed in each column. However, when using the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
 
 To format the values within the row template, you can define a global function that handles the formatting logic. This function can be invoked inside the template to format the corresponding values.
 
@@ -181,15 +181,15 @@ export interface DateFormat extends Window {
   
 {% previewsample "page.domainurl/samples/treegrid/row-cs9" %}
 
->When using the `rowTemplate` feature in Syncfusion Tree Grid, any formatting applied to columns using the `columns.format` property will not work inside the template.
+>When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, any formatting applied to columns using the `columns.format` property will not work inside the template.
 
-## Render syncfusion control in row template
+## Render syncfusion<sup style="font-size:70%">&reg;</sup> control in row template
 
-The Tree Grid allows you to render custom Syncfusion controls within the rows of the tree grid. This feature is helpful as it enables you to display interactive Syncfusion controls instead of field values in the tree grid.
+The Tree Grid allows you to render custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the tree grid. This feature is helpful as it enables you to display interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the tree grid.
 
-To enable a Syncfusion control in a row template, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
+To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
 
-Here is an example that demonstrates rendering Syncfusion controls within a row template :
+Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> controls within a row template :
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

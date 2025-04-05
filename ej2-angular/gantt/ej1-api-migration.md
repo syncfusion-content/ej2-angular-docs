@@ -14,7 +14,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Data Binding and Task mapping
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Data Binding | **Property:** *dataSource* <br/><br/> `<ej-gantt [dataSource]="ganttData">`<br>`</ej-gantt>` | **Property:** *dataSource* <br/><br/>`<ejs-gantt [dataSource]="ganttData">`<br>`</ejs-gantt>`|
 | To map id of task from data source | **Property:** *taskIdMapping* <br/><br/> `<ej-gantt taskIdMapping= "taskID">`<br>`</ej-gantt>` | **Property:** *taskFields.id* <br/><br/>`<ejs-gantt [taskFields]="taskSettings">`<br>`</ejs-gantt>` <br> **TS** <br>`this.taskSettings = { id: 'TaskID' };` |
@@ -36,7 +36,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *allowSorting* <br/><br/> `<ej-gantt [allowSorting]="true">`<br>`</ej-gantt>` | **Property:** *allowSorting* <br/><br/>`<ejs-gantt [allowSorting]="true">`<br>`</ejs-gantt>` |
 | To enable/disable multiple sorting option | **Property:** *allowMultiSorting* <br/><br/> `<ej-gantt [allowMultiSorting]="true">`<br>`</ej-gantt>` | **Property:** *allowSorting* <br/><br/>`<ejs-gantt [allowSorting]="true">`<br>`</ejs-gantt>` |
@@ -46,7 +46,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Filtering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Filter column Initially | **Property:** *filterSettings.filteredColumns* <br/><br/> `<ej-gantt [filterSettings]="filterSettings">`<br>`</ej-gantt>` <br> **TS** <br>`this.filterSettings = {`<br>&nbsp;&nbsp;`filteredColumns: [ { value: "plan", field: "taskName", predicate: "and", operator: "startswith" } ]`<br>`};` | **Property:** *filterSettings.columns* <br/><br/>`<ejs-gantt [filterSettings]="filterSettings">`<br>`</ejs-gantt>` <br> **TS** <br>`this.filterSettings = {`<br>&nbsp;&nbsp;`columns: [ { field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' } ]`<br>`};`|
 | Filter records in Gantt | **Method:** *filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])* <br/><br/>`export class AppComponent {`<br>`constructor() {`<br>&nbsp;&nbsp;`//...`<br>`}`<br>`public filterColumn(event) {`<br>&nbsp;&nbsp;`var ganttObj = $("#Gantt").ejGantt("instance");`<br>&nbsp;&nbsp;`ganttObj.filterColumn("taskName", "startswith", "plan");`<br/>`}`<br>`}` | **Method:** *filterByColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase],[ignoreAccent])* <br/><br/>`@ViewChild('gantt')`<br>`public ganttObj: GanttComponent;`<br/>`this.ganttObj.filterByColumn('taskName', 'startswith', 'plan');` |
@@ -55,14 +55,14 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Searching
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *toolbarSettings.toolbarItems* <br><br> `<ej-gantt [toolbarSettings]="toolbarSettings">`<br>`</ej-gantt>` <br> **TS** <br>`this.toolbarSettings = {`<br>&nbsp;&nbsp;`showToolbar: true,`<br>&nbsp;&nbsp;`toolbarItems : [ej.Gantt.ToolbarItems.Search]`<br>`};` | **Property:** *toolbar* <br><br> `<ejs-gantt [toolbar]="toolbar>`<br>`</ejs-gantt>` <br> **TS** <br>`this.toolbar = ['Search'];`<br>|
 | Search records in Gantt | **Method:** *searchItem(key)* <br/><br/>`export class AppComponent {`<br>`constructor() {`<br>&nbsp;&nbsp;`//...`<br>`}`<br>`public searchItem(event) {`<br>&nbsp;&nbsp;`var ganttObj = $("#Gantt").ejGantt("instance");`<br>&nbsp;&nbsp;`ganttObj.searchItem("plan");`<br/>`}`<br>`}` | **Method:** *search(key)* <br/><br/>`@ViewChild('gantt')`<br>`public ganttObj: GanttComponent;`<br/>`this.ganttObj.search('plan');` |
 
 ## Selection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *allowSelection* <br><br> `<ej-gantt [allowSelection]="true">`<br>`</ej-gantt>`| **Property:** *allowSelection* <br><br>`<ejs-gantt [allowSelection]="true">`<br>`</ejs-gantt>` |
 | To define selection type in Gantt | **Property:** *selectionType* <br/><br/> `<ej-gantt selectionType="single`<br>`</ej-gantt>`| **Property:** *selectionSettings.type* <br/><br/>`<ejs-gantt [selectionSettings]="selectionSettings">`<br>`</ejs-gantt>` <br> **TS** <br>`this.selectionSettings = { type: 'Multiple' };`|
@@ -78,7 +78,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Editing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *editSettings* <br><br> `<ej-gantt [editSettings]= "editSettings">`<br>`</ej-gantt>` <br> **TS** <br>`this.editSettings  = {`<br>&nbsp;&nbsp;`allowEditing: true,`<br>&nbsp;&nbsp;`allowAdding: true,`<br>&nbsp;&nbsp;`allowDeleting: true,`<br>&nbsp;&nbsp;`showDeleteConfirmDialog: true};`<br>`});` | **Property:** *editSettings* <br><br> `<ejs-gantt [editSettings]="editSettings">`<br>`</ejs-gantt>`<br> **TS** <br>`this.editSettings = {`<br>&nbsp;&nbsp;`allowEditing: true,`<br>&nbsp;&nbsp;`allowAdding: true,`<br>&nbsp;&nbsp;`allowDeleting: true,`<br>&nbsp;&nbsp;`showDeleteConfirmDialog: true};`|
 |   Cell Editing           | **Property:** *editSettings.editMode* <br/> <br/> `<ej-gantt [editSettings]="editSettings">`<br>`</ej-gantt>` <br> **TS** <br>`this.editSettings  = { editMode: "cellEditing" };`| **Property:** *editSettings.mode* <br/><br/> `<ejs-gantt [editSettings]="editSettings">`<br>`</ejs-gantt>`<br> **TS** <br>`this.editSettings = { mode: "Auto" };`|
@@ -106,7 +106,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable/disable column resize | **Property:** *allowColumnResize* <br/> <br/> `<ej-gantt [allowColumnResize]="true">`<br>`</ej-gantt>`| **Property:** *allowResizing* <br/><br/> `<ejs-gantt [allowResizing]="true">`<br>`<ejs/gantt>`|
 | To enable/disable column chooser | **Property:** *showColumnChooser* <br/><br/> `<ej-gantt [showColumnChooser]="true">`<br>`</ej-gantt>`| **Property:** *showColumnMenu* <br/><br/>`<ejs-gantt [showColumnMenu]="true">`<br>`<ejs/gantt>`|
@@ -118,7 +118,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Toolbar
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To configure default toolbars of Gantt | **Property:** *toolbarSettings.toolbarItems* <br/> <br/> `<ej-gantt [toolbarSettings]= "toolbarSettings">`<br>`</ej-gantt>`<br> **TS** <br>`this.toolbarSettings = {`<br>&nbsp;&nbsp;`showToolbar: true,`<br>&nbsp;&nbsp;`toolbarItems: [`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Add,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Edit,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Delete,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Update,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Cancel,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.ExpandAll,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.CollapseAll,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Search,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.PrevTimeSpan,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.NextTimeSpan`<br>`],`<br>`};`<br>`</ej-gantt>`|  **Property:** *toolbar* <br/><br/> `<ejs-gantt [toolbar]="toolbar">`<br>`</ejs-gantt>`<br> **TS** <br>`this.toolbar = ['Add','Edit','Delete','Update','Cancel','ExpandAll',`<br>&nbsp;&nbsp;`'CollapseAll','Search','PrevTimeSpan','NextTimeSpan'];` |
 | Other toolbars | **Property:** *toolbarSettings.toolbarItems* <br/> <br/> `<ej-gantt [toolbarSettings]= "toolbarSettings">`<br>`</ej-gantt>`<br> **TS** <br>`this.toolbarSettings = {`<br>&nbsp;&nbsp;`showToolbar: true,`<br>&nbsp;&nbsp;`toolbarItems: [`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Indent,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.Outdent,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.CriticalPath,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.ExcelExport,`<br>&nbsp;&nbsp;`ej.Gantt.ToolbarItems.PdfExport`<br>`];`| Not applicable |
@@ -127,7 +127,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## ToolTip
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable taskbar tooltip | **Property:** *enableTaskbarTooltip* <br/> <br/> `<ej-gantt [enableTaskbarTooltip]="true">`<br>`</ej-gantt>`|  **Property:** *tooltipSettings.showTooltip* <br/><br/> `<ejs-gantt [tooltipSettings]="tooltipSettings">`<br>`></ejs-gantt>`<br> **TS** <br>`this.tooltipSettings = { showTooltip: true } >` |
 | To define tooltip for all cells | **Property:** *cellTooltipTemplate* <br/><br/> `<ej-gantt cellTooltipTemplate="#CustomToolTip">`<br>`</ej-gantt>`| Not applicable|
@@ -145,7 +145,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Timeline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To configure timeline settings in Gantt | **Property:** *scheduleHeaderSettings* <br/><br/> `<ej-gantt [scheduleHeaderSettings]="scheduleHeaderSettings">`<br>`<ej-gantt>`<br> **TS** <br>`this.scheduleHeaderSettings =`<br/>`{`<br/>`weekHeaderFormat: "MMM dd , yyyy",`<br/> `dayHeaderFormat: "dd,MM,yy",` <br/>`yearHeaderFormat: "yyyy",`<br/> `monthHeaderFormat: 'MMM",`<br/>`hourHeaderFormat: "HH",`<br/> `scheduleHeaderType: "week",` <br/> `minutesPerInterval: "auto",`<br/>`weekendBackground: "#F2F2F2",`<br/> `timescaleStartDateMode: "auto",` <br/> `timescaleUnitSize:"100%",` <br/> `weekStartDay: 0,`<br/> `updateTimescaleView: true` <br/> `}>`<br>`</ej-gantt>`| **Property:** *timelineSettings* <br/><br/>`<ejs-gantt [timelineSettings]="timelineSettings">`<br>`</ejs-gantt>`<br> **TS** <br>`this.timelineSettings = {`<br/>&nbsp;`timelineViewMode: 'Week',`<br/>&nbsp;`timelineUnitSize: 33,`<br/>&nbsp;`weekStartDay: 0,`<br/>&nbsp;`showTooltip: true,`<br/>&nbsp;`weekendBackground: ' '`<br/>&nbsp;`updateTimescaleView: true,`<br/>&nbsp;`topTier: {`<br/>&nbsp;&nbsp;&nbsp;`unit: 'Week',`<br/>&nbsp;&nbsp;&nbsp;`format: 'MMM dd, y',`<br/>&nbsp;&nbsp;&nbsp;`count: 1,`<br/>&nbsp;&nbsp;&nbsp;`formatter: null`<br/>`},`<br/>&nbsp;`bottomTier: {`<br/>&nbsp;&nbsp;&nbsp;`unit: 'Day',`<br/>&nbsp;&nbsp;&nbsp;`format: 'dd',`<br/>&nbsp;&nbsp;&nbsp;`count: 1,`<br/>&nbsp;&nbsp;&nbsp;`formatter: null`<br/>`}`<br>`};`|
 | To define weekend background in Gantt | **Property:** *weekendBackground* <br/> <br/> `<ej-gantt weekendBackground= "blue">`<br>`</ej-gantt>;` | Not applicable|
@@ -157,7 +157,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Rows
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable/disable row drag and drop | **Property:** *allowDragAndDrop* <br/> <br/> `<ej-gantt [allowDragAndDrop]="true">`<br>`</ej-gantt>`| Not applicable |
 | To enable/disable alternate row background | **Property:** *enableAltRow* <br/> <br/> `<ej-gantt [enableAltRow]="true">`<br>`</ej-gantt>`| Not applicable |
@@ -177,7 +177,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Resources
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To map resources | **Property:** *resources* <br><br> `<ej-gantt [resources]="resources">`<br>`</ej-gantt>`<br> **TS** <br>`this.resources =[{id:1; name:"jack" }];`| **Property:** *resources* <br><br>`<ejs-gantt [resources]="resources">`<br>`</ejs-gantt>`<br> **TS** <br>`this.resources =[{ resourceId: 1, resourceName: 'Martin Tamer' }];`|
 | To map resource id field from resource collection | **Property:** *resourceIdMapping* <br/> <br/> `<ej-gantt resourceIdMapping ="id">`<br>`</ej-gantt>`|  **Property:** *resourceIDMapping* <br/><br/> `<ejs-gantt resourceIDMapping='resourceId'>`<br>`</ejs-gantt>` |
@@ -191,14 +191,14 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Baseline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To render baseline | **Property:** *renderBaseline* <br><br> `<ej-gantt [renderBaseline] = "true">`<br>`</ej-gantt>`| **Property:** *renderBaseline* <br><br>`<ejs-gantt [renderBaseline]="true">`<br>`</ejs-gantt>` |
 | To define baselineColor | **Property:** *baselineColor* <br><br> `<ej-gantt [baselineColor]= "blue">`<br>`</ej-gantt>`| **Property:** *baselineColor* <br><br>`<ejs-gantt baselineColor="red">`<br>`</ejs-gantt>` |
 
 ## Context Menu
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable context menu | **Property:** *enableContextMenu* <br><br> `<ej-gantt [enableContextMenu]="true">`<br>`</ej-gantt>`| **Property:** *enableContextMenu* <br><br>`<ejs-gantt [enableContextMenu]="true" >` |
 | To define custom menu items  | **Event:** *contextMenuOpen* <br><br>`<ej-gantt id="Gantt" (contextMenuOpen)="contextMenuOpen($event)">`<br>`</ej-gantt>`<br> **TS** <br>`contextMenuOpen(event) {`<br/>&nbsp;&nbsp;`event.contextMenuItems.push({`<br>&nbsp;&nbsp;&nbsp;`headerText: "Expand/Collapse",`<br>&nbsp;&nbsp;&nbsp;`menuId: "expand",`<br>&nbsp;&nbsp;&nbsp;`iconPath: "url(Expand-02-WF.png)",`<br>&nbsp;&nbsp;&nbsp;`eventHandler: function() {`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//event handler for custom menu items`<br>&nbsp;&nbsp;&nbsp;`}`<br>`});`<br>`}`<br>`}`| **Property:** *contextMenuItems* <br><br>`<ejs-gantt [contextMenuItems]="contextMenuItems">`<br>`</ejs-gantt>`<br> **TS** <br>`this.contextMenuItems = [` <br>&nbsp;`{ text: 'Collapse the Row', target: '.e-content', id: 'collapserow' } as ContextMenuItemModel,`<br>&nbsp;`{ text: 'Expand the Row', target: '.e-content', id: 'expandrow' } as ContextMenuItemModel`<br>`];`|
@@ -206,7 +206,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Scheduling Tasks
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define task scheduling mode in Gantt | **Property:** *taskSchedulingMode* <br/><br/> `<ej-gantt [taskSchedulingMode]= "taskSchedulingMode">`<br>`</ej-gantt>`<br> **TS** <br>`this.taskSchedulingMode = ej.Gantt.TaskSchedulingMode.Auto;`| Not applicable |
 | To map task scheduling mode from data source | **Property:** *taskSchedulingModeMapping* <br/><br/> `<ej-gantt taskSchedulingModeMapping= "taskMode">`<br>`</ej-gantt>`| Not applicable |
@@ -220,7 +220,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Appearance and Customizations
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define taskbar background type in Gantt | **Property:** *taskbarBackground* <br/><br/> `<ej-gantt taskbarBackground = "#F2F2F2">`<br>`</ej-gantt>`| Not applicable |
 | To define background color for parent taskbar | **Property:** *parentTaskbarBackground* <br/><br/> `<ej-gantt parentTaskbarBackground= "#F2F2F2">`<br>`</ej-gantt>`| Not applicable |
@@ -246,20 +246,20 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Stripline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define striplines | **Property:** *stripLines* <br><br> `<ej-gantt [stripLines]= "stripLines">`<br>`</ej-gantt>`<br> **TS** <br>`this.stripLines = [ { day: "01/02/2014",label: "Project Release", lineStyle: "dotted", lineColor: "blue", lineWidth: 2 } ];`| **Property:** *eventMarkers* <br><br>`<ejs-gantt [eventMarkers]="eventMarkers">`<br>`</ejs-gantt>`<br> **TS** <br>`this.eventMarkers = [ { day: '04/10/2019', cssClass: 'e-custom-event-marker', label: 'Project approval and kick-off'} ];` |
 
 ## Holidays
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define holidays | **Property:** *holidays* <br><br> `<ej-gantt [holidays]= "holidays">`<br>`</ej-gantt>`<br> **TS** <br>`this.holidays = [ { day: "2/03/2014", label: " Public holiday", background: "yellow" } ];`| **Property:** *holidays* <br><br>`<ejs-gantt [holidays] = "holidays">`<br>`</ejs-gantt>`<br> **TS** <br>`this.holidays = [ { from: "04/04/2019", to:"04/05/2019", label: " Public holidays", cssClass:"e-custom-holiday"} ];` |
 | To define days in holiday collection | **Property:** *holidays.day* <br/><br/> `<ejs-gantt [holidays] = "holidays">`<br>`</ejs-gantt>`<br> **TS** <br>`this.holidays = [ { day:"12/2/2000" } ];`| **Property:** *holidays.from* <br/><br/>`<ejs-gantt [holidays] = "holidays">`<br>`</ejs-gantt>`<br> **TS** <br>`this.holidays = [ { from: "3/20/2018" } ];`|
 
 ## Others
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define height for Gantt | **Property:** *sizeSettings.height* <br/><br/> `<ej-gantt [sizeSettings]= "sizeSettings">`<br>`</ej-gantt>`<br> **TS** <br>`this.sizeSettings = { height: "450px" };`|  **Property:** *height* <br/><br/>`<ejs-gantt height="430px">`<br>`</ejs-gantt>`|
 | To define width for Gantt | **Property:** *sizeSettings.width* <br/><br/> `<ej-gantt [sizeSettings]= "sizeSettings">`<br>`</ej-gantt>`<br> **TS** <br>`this.sizeSettings = { width: "700px" }>`<br>`</ej-gantt>`|  **Property:** *width* <br/><br/>`<ejs-gantt width="700px">`<br>`</ejs-gantt>`|

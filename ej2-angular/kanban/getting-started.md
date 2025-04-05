@@ -29,17 +29,17 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Kanban package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Kanban package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components. They are:
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components. They are:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
 
 Add [`@syncfusion/ej2-angular-kanban`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38) package to the application.
 
@@ -49,7 +49,7 @@ npm install @syncfusion/ej2-angular-kanban --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the following command.
+For Angular version below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following command.
 
 Add [`@syncfusion/ej2-angular-kanban@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38-ngcc) package to the application.
 

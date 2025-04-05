@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Localization
 
-The Localization library in Syncfusion's Angular UI Components enables you to display text content in languages other than English. This feature is essential for applications serving a global audience by providing a native language experience.
+The Localization library in Syncfusion's Angular UI Components enables you to display text content in languages other than English. This feature is Essential<sup style="font-size:70%">&reg;</sup> for applications serving a global audience by providing a native language experience.
 
 ## Loading translations
 
@@ -32,7 +32,7 @@ For instance, to load translations for English (`en`) and French (`fr`), the fol
 
 ## Changing current locale
 
-The current locale can be changed for all the Syncfusion Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
+The current locale can be changed for all the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
 
 ```typescript
 import { L10n, setCulture } from '@syncfusion/ej2-base';

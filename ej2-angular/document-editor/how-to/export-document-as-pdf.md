@@ -111,9 +111,9 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## Export document as pdf in server-side using Syncfusion DocIO
+## Export document as pdf in server-side using Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO
 
-With the help of [`Syncfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
+With the help of [Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
 
 The following way illustrates how to convert the document as PDF:
 

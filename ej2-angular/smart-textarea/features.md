@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Inherited Features from TextArea
 
-The Syncfusion Angular Smart TextArea component fully inherits all the properties, features, and styling options of the Syncfusion Angular TextArea component. This means that you can leverage the existing features of the Syncfusion Angular TextArea while benefiting from the enhanced functionality of the Smart TextArea.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart TextArea component fully inherits all the properties, features, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TextArea component. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TextArea while benefiting from the enhanced functionality of the Smart TextArea.
 
 * [Form Support](https://ej2.syncfusion.com/angular/documentation/textarea/form-support)
 * [Floating Labels](https://ej2.syncfusion.com/angular/documentation/textarea/floating-label)
@@ -21,4 +21,4 @@ The Syncfusion Angular Smart TextArea component fully inherits all the propertie
 
 ## See also
 
-* [Getting Started with Syncfusion Angular Smart TextArea](./getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart TextArea](./getting-started)

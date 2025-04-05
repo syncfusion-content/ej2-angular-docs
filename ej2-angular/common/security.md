@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-#  Syncfusion Angular Components - Security
+#  Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components - Security
 
-Security is paramount in web application development to guard against various threats and vulnerabilities. Essential practices include using HTTPS for data encryption, validating and sanitizing user inputs, and implementing robust authentication measures such as multi-factor authentication.
+Security is paramount in web application development to guard against various threats and vulnerabilities. Essential<sup style="font-size:70%">&reg;</sup> practices include using HTTPS for data encryption, validating and sanitizing user inputs, and implementing robust authentication measures such as multi-factor authentication.
 
-Syncfusion Angular components are engineered with these critical security measures in mind, integrating seamlessly with Angular's built-in security features.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are engineered with these critical security measures in mind, integrating seamlessly with Angular's built-in security features.
 
 * [Security in Angular](https://v17.angular.io/guide/security)
 
@@ -25,10 +25,10 @@ Security vulnerabilities in web applications arise from weaknesses in the design
 
 * Injection Attacks - These occur when an attacker injects malicious code (such as SQL injection, XML injection, or command injection) into input fields or parameters of a web application. If the application does not properly sanitize or validate user inputs, it can execute unintended commands or gain unauthorized access to sensitive data.
 
-Syncfusion Angular components support the implementation of secure web applications by addressing these vulnerabilities.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support the implementation of secure web applications by addressing these vulnerabilities.
 ## Security Considerations
 
-Security should be a foundational aspect of software development. Syncfusion adheres to comprehensive security protocols in the development of Angular components, focusing on the following aspects:
+Security should be a foundational aspect of software development. Syncfusion<sup style="font-size:70%">&reg;</sup> adheres to comprehensive security protocols in the development of Angular components, focusing on the following aspects:
 * [Content Security Policy](#content-security-policy)
 * [HTML Sanitizer](#html-sanitizer)
 * [Browser Storage](#browser-storage)
@@ -37,11 +37,11 @@ Security should be a foundational aspect of software development. Syncfusion adh
 
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (CSP) is a one of the security feature, that helps the detect the cross-site-scripting(XSS) attacks and malicious code injection. It will throw the errors and warnings while using the inline-styles and inline scripts, eval, new Function, etc in your applications.
 
-To implement Content Security Policy (CSP) in your application, include a `<meta>` tag with specified CSP directives. Syncfusion Angular components have been designed and implemented with adherence to these CSP directives, ensuring enhanced security. These directives are below.
+To implement Content Security Policy (CSP) in your application, include a `<meta>` tag with specified CSP directives. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components have been designed and implemented with adherence to these CSP directives, ensuring enhanced security. These directives are below.
 
 #### CSP Directives
 
-For using Syncfusion Angular components effectively, the following directives are advised:
+For using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components effectively, the following directives are advised:
 |    Directives    |    Description    |    Examples    |
 |------------------|-------------------|----------------|
 |  `style-src`  | Defines the allowed sources for loading stylesheets. This helps mitigate style-based attacks by restricting the locations from which styles can be applied. | `style-src 'self' https://cdn.syncfusion.com/ https://fonts.googleapis.com/ 'unsafe-inline';`|
@@ -67,11 +67,11 @@ To know more information about the CSP, refer this [documentation](https://ej2.s
 
 An HTML sanitizer removes potentially harmful code from HTML documents, preventing XSS attacks by eliminating malicious code like script tags or inline styles.
 
-Syncfusion ensures security by offering the [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/button#enablehtmlsanitizer) API. It sanitizes HTML strings, reducing potential threats.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ensures security by offering the [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/button#enablehtmlsanitizer) API. It sanitizes HTML strings, reducing potential threats.
 
 The `enableHtmlSanitizer` property, when enabled, ensures content undergoes rigorous sanitization to mitigate XSS risks, strengthening component security.
 
-Here is a sample code to sanitize input values using Syncfusion:
+Here is a sample code to sanitize input values using Syncfusion<sup style="font-size:70%">&reg;</sup>:
 
 ```ts
 import { SanitizeHtmlHelper } from '@syncfusion/ej2-base';
@@ -103,10 +103,10 @@ When `enableHtmlSanitizer` is `false` or not included this property, the malicio
 
 ### Browser Storage
 
-Browser storage refers to the mechanisms provided by web browsers to store data locally on a user's device. Syncfusion Angular components utilize the following storage options only.
+Browser storage refers to the mechanisms provided by web browsers to store data locally on a user's device. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components utilize the following storage options only.
 
 * Local Storage
 
 #### Local Storage
 
-[Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) allows persistent data storage on client devices using key-value pairs, accessible through Angular. Syncfusion uses local storage only when persistence is enabled.
+[Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) allows persistent data storage on client devices using key-value pairs, accessible through Angular. Syncfusion<sup style="font-size:70%">&reg;</sup> uses local storage only when persistence is enabled.

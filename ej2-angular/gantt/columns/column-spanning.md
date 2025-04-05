@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column spanning in Angular Gantt component
 
-The column spanning feature in the Syncfusion Gantt chart allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) attribute in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the gantt.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) attribute in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the gantt.
 
 In the following demo, **Work**  cells have been spanned.
 

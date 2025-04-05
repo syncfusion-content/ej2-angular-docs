@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
 
-Syncfusion's Grid component seamlessly integrates with GraphQL servers using the [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) in the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). This specialized adaptor simplifies the interaction between the Syncfusion Grid and GraphQL servers, allowing efficient data retrieval with support for various operations like CRUD (Create, Read, Update, Delete), paging, sorting, and filtering.
+Syncfusion's Grid component seamlessly integrates with GraphQL servers using the [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) in the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). This specialized adaptor simplifies the interaction between the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and GraphQL servers, allowing efficient data retrieval with support for various operations like CRUD (Create, Read, Update, Delete), paging, sorting, and filtering.
 
 This section describes a step-by-step process for retrieving data from GraphQL service using `GraphQLAdaptor`, then binding it to the Angular Grid component to facilitate data and CRUD operations.
 
 ## Configure GraphQL Server
 
-To configure a GraphQL server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a GraphQL server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
 
 **Step 1: Create Service for GraphQL**
 
@@ -78,11 +78,11 @@ Ensure that the GraphQL server is properly configured and dependencies are insta
 
 In the context of GraphQL, a schema defines the structure of the data that clients can query from the server. It serves as a contract between the client and the server, outlining the types of data available, the operations that can be performed, and how the data is related.
 
-When integrating GraphQL with the Syncfusion Grid, defining a schema involves specifying the types of data the Grid expects to receive from the GraphQL server, along with any additional parameters for operations like sorting, filtering, and paging.
+When integrating GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, defining a schema involves specifying the types of data the Grid expects to receive from the GraphQL server, along with any additional parameters for operations like sorting, filtering, and paging.
 
-Here's how you can define a schema for the Syncfusion Grid:
+Here's how you can define a schema for the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-* **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
+* **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> extends from `UrlAdaptor`, it expects a JSON response with specific properties:
    *  **result**: An array containing the data entities.
    *  **count**: The total number of records.
    *  **aggregates**: Contains total aggregate data(optional).
@@ -234,9 +234,9 @@ The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents 
 
 ## Connecting grid to an GraphQL service
 
-To integrate GraphQL with the Syncfusion Grid in your Angular application, follow the below steps:
+To integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your Angular application, follow the below steps:
 
-**Step 1: Create an Syncfusion Angular Grid:**
+**Step 1: Create an Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:**
 
 Start a new Angular application using below Angular CLI command.
 
@@ -250,9 +250,9 @@ This command will prompt you for a few settings for the new project, such as whe
 cd GridClient
 ```
 
-**Step 2: Adding Syncfusion Grid Package**
+**Step 2: Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package**
 
-To use Syncfusion Grid component and Datamanager, install the packages using the below command.
+To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datamanager, install the packages using the below command.
 
 ```bash
 npm i @syncfusion/ej2-data 
@@ -356,13 +356,13 @@ npm i
 ng serve
 ```
 
-By following these steps, you will successfully integrate GraphQL with the Syncfusion Grid in your Angular application. Ensure that the GraphQL server is running smoothly and is accessible at the specified URL.
+By following these steps, you will successfully integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your Angular application. Ensure that the GraphQL server is running smoothly and is accessible at the specified URL.
 
 You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-GraphQLAdaptor) link.
 
 ## Handling searching operation
 
-To handle search operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.search` parameters and executing the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
+To handle search operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.search` parameters and executing the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.search` parameters:
 
@@ -459,7 +459,7 @@ export class AppModule { }
 
 ## Handling filtering operation
 
-To handle filter operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.where` parameters and executing the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows you to efficiently filter through the grid's data and retrieve relevant information based on specified criteria.
+To handle filter operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.where` parameters and executing the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows you to efficiently filter through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.where` parameters:
 
@@ -561,7 +561,7 @@ export class AppModule { }
 
 ## Handling sorting operation
 
-To handle sort operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.sorted `parameters and executing the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
+To handle sort operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.sorted `parameters and executing the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
 
 In the image below, you can see the values of `datamanager.sorted` parameters:
 
@@ -661,7 +661,7 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To handle page operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.skip` and `datamanager.take` parameters and executing the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
+To handle page operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.skip` and `datamanager.take` parameters and executing the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
 
 In the image below, you can see the value of `datamanager.skip` and `datamanager.take` parameters:
 
@@ -759,7 +759,7 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-Syncfusion Grid seamlessly integrates with GraphQL servers using the `GraphQLAdaptor`, enabling efficient CRUD (Create, Read, Update, Delete) operations on your data. The below steps explains how to perform CRUD actions using `GraphQLAdaptor` in Syncfusion Grid.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid seamlessly integrates with GraphQL servers using the `GraphQLAdaptor`, enabling efficient CRUD (Create, Read, Update, Delete) operations on your data. The below steps explains how to perform CRUD actions using `GraphQLAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
 **Insert operation**
 

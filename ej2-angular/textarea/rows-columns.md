@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Rows and Columns in Angular TextArea Component
 
-Two essential attributes, `rows` and `columns`, play a pivotal role in customizing the TextArea's appearance and layout.
+Two Essential<sup style="font-size:70%">&reg;</sup> attributes, `rows` and `columns`, play a pivotal role in customizing the TextArea's appearance and layout.
 The `rows`attribute determines the initial visible number of lines within the TextArea, controlling its vertical size. Conversely, the `columns` attribute specifies the visible width of the TextArea in characters per line, determining its initial width.
 
 

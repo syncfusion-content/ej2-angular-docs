@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Grid component
 
-Validation is a crucial aspect of data integrity in any application. The Angular Grid component in Syncfusion provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
+Validation is a crucial aspect of data integrity in any application. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 
 ## Column validation
 
@@ -128,11 +128,11 @@ Here's an example that demonstrates how to change the position of the validation
 
 ## Show custom error message while performing CRUD actions
 
-While performing CRUD actions in the Syncfusion Angular Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
+While performing CRUD actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is Essential<sup style="font-size:70%">&reg;</sup> for providing meaningful error messages when an operation fails.
 
 To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
 
-The following sample demonstrates how to retrieve and display error messages in the Syncfusion Angular Grid:  
+The following sample demonstrates how to retrieve and display error messages in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:  
  
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

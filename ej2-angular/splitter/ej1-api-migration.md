@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Splitter component
 
-This article describes the API migration process of Splitter component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br /><br /> `<ej-splitter id="splitter" cssClass="customClass"></ej-splitter>` | **Property:** *cssClass* <br />`<ejs-splitter id=”splitter” cssClass=”customClass”></ejs-splitter>` <br /> |
 | Adjusting Height | **Property:** *height* <br /><br /> `<ej-splitter id="splitter" height="100%"></ej-splitter>` | **Property:** *height* <br /> `<ejs-splitter id=”splitter” height=”100%”></ejs-splitter>` |
@@ -31,26 +31,26 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Accessibility and Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> `<ej-splitter id=”splitter” #splitter  allowKeyboardNavigation =’true’></ej-splitter>` | No separate property for enable/disable keyboard navigation.  Its enabled by default. |
 | Right to Left | **Property:** *enableRTL* <br /><br /> `<ej-splitter id=”splitter” #splitter enableRTL =’false’></ej-splitter>` | **Property:** *enableRtl*<br /><br /> `<ejs-splitter id=”splitter” #splitter [enableRtl]=’false’></ejs-splitter>` |
 
 ## Control State
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Enable/Disable the control | Not Available | **Property:** *enabled* <br /><br /> `<ejs-splitter id=”splitter” #splitter [enabled]=’true’></ejs-splitter>` |
 
 ## State Maintenance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Save the model value in local storage or cookies | Not Available | **Property:** *enablePersistence* <br /><br /> `<ejs-splitter id=”splitter” #splitter [enablePersistence] =’true’></ejs-splitter>` |
 
 ## Pane Properties
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *properties* <br /><br /> `<ej-splitter id=”splitter” #splitter [properties]=”proper”></ej-splitter>`<br/>**TS**<br/>export class AppComponent{<br/>proper: any;<br/>constructor() {<br/>this.proper = [];<br/> } <br/>} | **Property:** *paneSettings* <br /> `<ejs-splitter id=”splitter” #splitter [paneSettings]=”panes”></ejs-splitter>`**TS**<br/>public panes: object[] = [];<br/>  |
 | Pane Content | Not Available | **Property:** *content* <br /> `<ejs-splitter id=”splitter” #splitter [paneSettings]=”panes”></ejs-splitter>`<br/>**TS**<br/>public panes: object[] = [{<br/>content: ‘First Pane Content’}];<br/> |
@@ -74,7 +74,7 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | EnableAnimation | **Property:** *enableAnimation* <br /><br />`<ej-splitter id=”splitter” #splitter enableAnimation=”true”></ej-splitter>`<br /> &nbsp; | Not Available |
 | AnimationSpeed | **Property:** *animationSpeed* <br /><br /> `<ej-splitter id=”splitter” #splitter animationSpeed =150></ej-splitter>` <br />&nbsp; | Not Available |

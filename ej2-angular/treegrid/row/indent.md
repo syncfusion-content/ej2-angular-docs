@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Indent and outdent in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid component provides built-in support for indenting and outdenting rows, allowing you to easily adjust the hierarchy level of rows within the tree grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides built-in support for indenting and outdenting rows, allowing you to easily adjust the hierarchy level of rows within the tree grid.
 
 **Indent** - The indent feature moves the selected row to a deeper hierarchical level within the tree grid, indenting it by one level of hierarchy. The indent action moves the selected row as the last child of its previous row.
 

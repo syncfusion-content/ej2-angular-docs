@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate treeview inside the accordion in Angular Accordion component|Syncfusion
+title: Integrate treeview in Angular Accordion component | Syncfusion
 description: Learn here all about Integrate treeview inside the accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Integrate treeview inside the accordion 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate treeview inside the accordion in Angular Accordion component
 
-Accordion supports to render other Essential JS 2 Components by using content property.
+Accordion supports to render other Essential<sup style="font-size:70%">&reg;</sup> JS 2 Components by using content property.
 You can give content as an element string like below, for initializing the component.
 
   ```js

@@ -44,11 +44,11 @@ Once the project is set up, navigate to your project directory:
 cd syncfusion-angular-app
 ```
 
-## Installing Syncfusion Angular Packages
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
 
 Syncfusion's Angular packages are available under the `@syncfusion` scope on npm. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-To add the latest Syncfusion Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
+To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
 
 ```bash
 ng add @syncfusion/ej2-angular-grids@latest
@@ -58,13 +58,13 @@ This command performs the following configurations in your Angular application:
 
 - Adds the `@syncfusion/ej2-angular-grids` package and its peer dependencies to `package.json`.
 - Imports `GridModule` into your application's default standalone component `app.component.ts`.
-- Registers Syncfusion's default material theme in `angular.json`.
+- Registers Syncfusion's<sup style="font-size:70%">&reg;</sup> default material theme in `angular.json`.
 
-These steps simplify adding Syncfusion's Angular Grid module to your project for immediate use.
+These steps simplify adding Syncfusion's<sup style="font-size:70%">&reg;</sup> Angular Grid module to your project for immediate use.
 
-## Adding Syncfusion Angular Components
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-To incorporate Syncfusion Angular components, define them in your template and configure their properties in the component class.
+To incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, define them in your template and configure their properties in the component class.
 
 In `src/app/app.component.ts`, you can utilize column directives with `<ejs-grid>` selector and define `<e-column>` elements inside `<ejs-grid>`. Each `e-column` specifies attributes like field name, header text, and data type for the Grid columns.
 
@@ -136,4 +136,4 @@ Execute the `ng serve` command in your terminal to launch the application. Once 
 
 ![Output](./images/ang-cli.PNG)
 
->Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion components. Visit our [Licensing Overview](../licensing/overview/) page for detailed instructions on obtaining and registering your license key.
+>Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. Visit our [Licensing Overview](../licensing/overview/) page for detailed instructions on obtaining and registering your license key.

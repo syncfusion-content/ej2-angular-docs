@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Tooltip component
 
-This article describes the API migration process of Tooltip component from Essential JS 1 to Essential JS 2
+This article describes the API migration process of Tooltip component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Position | **Property:**  *position*  <br  /> `<ej-tooltip content='Tooltip' [position]='target'>Tooltip</ej-tooltip>`<br/><br/>`public  target  = {` <br/> `target: {` <br/> `horizontal:  'center',`<br/> `vertical:  'top'`<br/> `},`<br/> `stem: {`<br/> `horizontal:  'center',`<br/> `vertical:  'bottom'`<br/> `}`| **Property:**  *position*  <br  />`<ejs-tooltip position="TopCenter" content='Tooltip'>Tooltip</ejs-tooltip>`|
 | Animation | **Property:**  *animation*  <br/> `<ej-tooltip content='Tooltip' [animation ]='animation '>Tooltip</ej-tooltip>`<br/><br/>`public  animation  = { effect :  "slide", speed :  1000};` | **Property:**  *animation*  <br  />`<ejs-tooltip [animation]="animation" content='Tooltip'>Tooltip</ejs-tooltip>`<br  /><br  />`public animation = { open: { effect: 'FadeIn', duration: 150, delay: 0 }, close: { effect: 'FadeOut', duration: 150, delay: 0 } }`|

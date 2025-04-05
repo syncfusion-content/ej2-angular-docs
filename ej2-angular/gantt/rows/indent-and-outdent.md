@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Indent and outdent in Angular Gantt component
 
-The Syncfusion Angular Gantt component provides built-in support for indenting and outdenting rows, allowing you to easily adjust the hierarchy level of rows within the gantt.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides built-in support for indenting and outdenting rows, allowing you to easily adjust the hierarchy level of rows within the gantt.
 
 **Indent** - The indent feature moves the selected row to a lower hierarchical level within the gantt, indenting it by one level. The indent action moves the selected row as the last child of its previous row.
 

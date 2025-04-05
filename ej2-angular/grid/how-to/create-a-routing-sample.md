@@ -14,7 +14,7 @@ Angular routing is a feature of the Angular framework which facilitates the cont
 
 In Angular routing, you can able to configure the different routes for different URL's or paths, allowing you to navigate between different sections or pages of the application. This approach is particularly advantageous for SPA's since it permits the loading of content dynamically without requiring a complete page refresh.
 
-**1. Creating an angular application and integrating the Syncfusion Grid component:**
+**1. Creating an angular application and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:**
 
 A simple angular project can be created by following the steps under the [getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) section of this documentation by enabling the routing option.
 

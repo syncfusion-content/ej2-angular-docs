@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Undo and redo actions in the Angular Image Editor
 
-The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are essential for maintaining control and flexibility during the editing process. 
+The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are Essential<sup style="font-size:70%">&reg;</sup> for maintaining control and flexibility during the editing process. 
 
 In an image editor, the undo and redo history typically have a limited capacity, and the number of steps that can be stored is 16 steps, meaning that the editor keeps track of the most recent 16 actions performed on the image. Once the history reaches its maximum capacity, any new actions beyond the 16th step will result in the removal of the oldest action from the history.
 
