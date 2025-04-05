@@ -158,7 +158,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs6" %}
 
-## Closest Tooltip
+## Closest tooltip
 
 The [`showNearestTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shownearesttooltip) property in the chart tooltip displays tooltips based on the data points closest to the cursor.
 

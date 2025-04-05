@@ -43,17 +43,17 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Stepper Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Stepper Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [@syncfusion/ej2-angular-navigations](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/21.1.35) package to the application.
 
@@ -63,7 +63,7 @@ npm install @syncfusion/ej2-angular-navigations --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [@syncfusion/ej2-angular-navigations@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/21.1.35-ngcc) package to the application.
 
@@ -89,7 +89,7 @@ Add Stepper component's styles as given below in `style.css`.
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 ```
 
-## Adding Syncfusion Stepper component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Stepper component
 
 Modify the template in `app.component.ts` file with `ejs-stepper` to render the Stepper component.
 

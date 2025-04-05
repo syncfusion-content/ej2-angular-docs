@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Radio button component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
-platform: ej2-Angular
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -59,10 +59,10 @@ The Radio button component followed the [keyboard interaction](https://www.w3.or
 
 The Radio button component component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Radio button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/Radio button.html) in a new window to evaluate the accessibility of the Radio button component with accessibility tools.
+The accessibility compliance of the Radio button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/radiobutton.html) in a new window to evaluate the accessibility of the Radio button component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/radio-button/accessibility-cs1" %}
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

@@ -1,45 +1,116 @@
 ---
 layout: post
-title: Extract text in Angular Pdfviewer component | Syncfusion
-description: Learn here all about Extract text in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
-control: Extract text 
+title: Extract Text in Vue Pdfviewer component | Syncfusion
+description: Learn about the Extract Text in Syncfusion Vue Pdfviewer component of Syncfusion Essential JS 2 and more.
+control: Extract Text
+platform: ej2-vue
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Extract Text using the Syncfusion PDF Viewer
+# Extract Text Method in Syncfusion PdfViewer Control
 
-The PDF Viewer library allows you to extract the text from a page along with the bounds. Text extraction can be done using the [**isExtractText**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#isextracttext) property and [**extractTextCompleted**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#extracttextcompleted) event.
+The `extractText` method of the Syncfusion PdfViewer control enables text extraction from one or more pages in a PDF document. This method is useful for retrieving the text content along with its associated data, such as the bounds of each text element.
 
-The following steps are used to extract the text from the page.
+### extractText Method
+The extractText method retrieves text data from the specified page(s) of a PDF document. It can extract text from one page, a range of pages, or even provide detailed text data, depending on the options specified.
 
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
+#### Parameters:
+**startIndex:** The starting page index for text extraction (0-based index).
 
-**Step 2:** The following code snippet explains how to extract the text from a page .
+**endIndex Or isOptions:** This can either be the ending page index for the text extraction (for extracting from multiple pages) or an option specifying text extraction criteria for a single page.
 
-```html
-<ejs-pdfviewer #pdfViewer id="pdfViewer"
-               [serviceUrl]='service'
-               [documentPath]='document'
-               (extractTextCompleted)='extractTextCompleted($event)'
-               [isExtractText]=true
-               style="height:640px;display:block">
-</ejs-pdfviewer>
-```
+**options (optional):** Specifies additional options, such as extracting plain text `TextOnly` or more detailed text data `TextAndBounds`. You can specify various options for text extraction. These options determine whether you want to extract plain text, text with bounds, or detailed text data.
 
-```typescript
-public extractTextCompleted(e: ExtractTextCompletedEventArgs): void {
-// Extract the Complete text of load document
-console.log(e);
-console.log(e.documentTextCollection[1]);
-// Extract the Text data.
-console.log(e.documentTextCollection[1][1].TextData);
-// Extract Text in the Page.
-console.log(e.documentTextCollection[1][1].PageText);
-// Extract Text along with Bounds
-console.log(e.documentTextCollection[1][1].TextData[0].Bounds);
+***TextOnly:*** Extracts only the plain text content without bounds or additional information.
+
+***TextAndBounds:*** Extracts text content along with its bounds (coordinates) within the PDF.
+
+#### Returns:
+The method returns a Promise that resolves to an object containing two properties:
+
+**textData:** An array of TextDataSettingsModel objects, each representing the details of the extracted text (including bounds, page text, etc.).
+
+**pageText:** A concatenated string of plain text extracted from the specified page(s).
+
+### Usage of extractText in Syncfusion PdfViewer Control
+Here is an example that demonstrates how to use the extractText method:
+
+```ts
+import { Component, OnInit } from '@angular/core';
+import {
+  LinkAnnotationService,
+  BookmarkViewService,
+  MagnificationService,
+  ThumbnailViewService,
+  ToolbarService,
+  NavigationService,
+  AnnotationService,
+  TextSearchService,
+  TextSelectionService,
+  FormFieldsService,
+  FormDesignerService,
+  PrintService
+} from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <div class="content-wrapper">
+    <button #btn1 (click)="extrctText()">extrctText</button>
+    <button #btn2 (click)="extrctsText()">extrctsText</button>
+      <ejs-pdfviewer 
+        id="pdfViewer"
+        [resourceUrl]="resourceUrl"
+        [documentPath]="document"
+        style="height: 640px; display: block;">
+      </ejs-pdfviewer>
+    </div>
+  `,
+  providers: [
+    LinkAnnotationService,
+    BookmarkViewService,
+    MagnificationService,
+    ThumbnailViewService,
+    ToolbarService,
+    NavigationService,
+    AnnotationService,
+    TextSearchService,
+    TextSelectionService,
+    FormFieldsService,
+    FormDesignerService,
+    PrintService
+  ]
+})
+export class AppComponent implements OnInit {
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  public resourceUrl: string = 'https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2-pdfviewer-lib';
+
+  ngOnInit(): void { }
+  // Function to extract text from a specific page (page 1)
+ extrctText(): void {   
+  const viewer = (document.getElementById('pdfViewer') as any).ej2_instances[0];
+  viewer.extractText(1, 'TextOnly').then((val: any) => {
+     console.log('Extracted Text from Page 1:');
+      console.log(val);
+  });
+}
+
+// Function to extract text from a range of pages (pages 0 to 2)
+extrctsText(): void {    
+  const viewer = (document.getElementById('pdfViewer') as any).ej2_instances[0];
+  viewer.extractText(0, 2, 'TextOnly').then((val: any) => {
+     console.log('Extracted Text from Pages 0 to 2:');
+     console.log(val);
+  });
+}
+
 }
 ```
 
-Find the Sample, [how to Extract Text](https://stackblitz.com/edit/angular-uvgdd7?devtoolsheight=33&file=app.component.html)
+#### Explanation:
+**Single Page Extraction:** The first `extractText` call extracts text from page 1 (`startIndex = 1`), using the 'TextOnly' option for plain text extraction.
+
+**Multiple Pages Extraction:** The second extractText call extracts text from pages 0 through 2 (`startIndex = 0, endIndex = 2`), using the `TextOnly` option for plain text extraction.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to)

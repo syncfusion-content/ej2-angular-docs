@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Progress bar component
 
-The Essential EJ2 ProgressBar is a control that indicates the progress of a task with customizable visuals. It includes features to visualize progress in rectangular and circular shapes, determinate and indeterminate states, segments, and customized ranges in different colors. It also supports animation.
+The Essential<sup style="font-size:70%">&reg;</sup> EJ2 ProgressBar is a control that indicates the progress of a task with customizable visuals. It includes features to visualize progress in rectangular and circular shapes, determinate and indeterminate states, segments, and customized ranges in different colors. It also supports animation.
 
 ## Key features
 

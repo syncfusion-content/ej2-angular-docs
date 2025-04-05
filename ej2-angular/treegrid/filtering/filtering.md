@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular TreeGrid component
 
-Filtering is a powerful feature in the Syncfusion TreeGrid component that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
+Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
@@ -150,7 +150,7 @@ The following example demonstrates how to perform an initial filter with multipl
 
 ## Filter operators
 
-The Syncfusion TreeGrid component provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicateModel/#operator) property in the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#columns) object.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicateModel/#operator) property in the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#columns) object.
 
 The available operators and its supported data types are,
 
@@ -221,7 +221,7 @@ Here’s an example that demonstrates how to remove the filter bar for the taskN
 
 In the TreeGrid component, you can execute filtering actions using the remote data binding feature. This guide provides step-by-step instructions on how to carry out filtering actions with remote data binding, focusing on server-side handling based on hierarchy modes.
 
-When implementing filtering with remote data in the tree grid, it's essential to manage the server-side logic for handling the filtered records according to the filter hierarchy mode.
+When implementing filtering with remote data in the tree grid, it's Essential<sup style="font-size:70%">&reg;</sup> to manage the server-side logic for handling the filtered records according to the filter hierarchy mode.
 
 For further information about the filter hierarchy mode, refer to [this section](https://ej2.syncfusion.com/angular/documentation/treegrid/filtering/filtering#filter-hierarchy-modes).
 
@@ -512,7 +512,7 @@ The following example demostrates, how to programmatically filter the tree grid 
 
 ## How to get filtered records
 
-Retrieving filtered records in the tree grid is essential when you want to work with data that matches the currently applied filters. You can achieve this using available properties in the TreeGrid component.
+Retrieving filtered records in the tree grid is Essential<sup style="font-size:70%">&reg;</sup> when you want to work with data that matches the currently applied filters. You can achieve this using available properties in the TreeGrid component.
 
 **1.Using the Filtered result property**
 

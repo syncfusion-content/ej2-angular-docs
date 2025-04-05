@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and localization in Angular Pivotview component | Syncfusion
+title: Globalization in Angular Pivotview component | Syncfusion
 description: Learn here all about Globalization and localization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Globalization and localization 
@@ -16,7 +16,7 @@ Globalization is the combination of Internationalization and localization. You c
 
 Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
 
-By default, all the Essential JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
+By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 

@@ -25,7 +25,8 @@
                 "glob": "*.css",
                 "input": "",
                 "output": ""
-              }
+              },
+              "src/assets"
             ]
           },
           "configurations": {

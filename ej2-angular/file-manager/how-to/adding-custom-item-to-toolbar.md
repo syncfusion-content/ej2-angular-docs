@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding custom item to toolbar in Angular File Manager component | Syncfusion
+title: Adding custom item in Angular File Manager component | Syncfusion
 description: Learn here all about Adding custom item to toolbar in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adding custom item to toolbar in Angular File Manager component
 
-You can modify the items displayed in the toolbar by using the [toolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#toolbaritems) API. To display both default and customized items, it's essential to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon** and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
+You can modify the items displayed in the toolbar by using the [toolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#toolbaritems) API. To display both default and customized items, it's Essential<sup style="font-size:70%">&reg;</sup> to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon** and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
 
 Here's an example of how to add a custom checkbox to the toolbar using the **template** property. In this example, we have modified the default `New Folder` item and added a custom toolbar item for selection.
 

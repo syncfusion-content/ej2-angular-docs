@@ -174,109 +174,46 @@ export let projectNewData: Object[] = [
         ]
     }
 ];
-export let timelineTemplateData: Object[] = [
-    {
-        TaskID: 1,
-        TaskName: 'Product Concept',
-        StartDate: new Date('03/31/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            { TaskID: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('03/31/2024'), Duration: 3,Progress: 30 },
-            { TaskID: 3, TaskName: 'Defining target audience', StartDate: new Date('03/31/2024'), Duration: 3 },
-            { TaskID: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('03/31/2024'), Duration: 3, Predecessor: "2" ,Progress: 30},
-        ]
-    },
-    { TaskID: 5, TaskName: 'Concept Approval', StartDate: new Date('03/31/2024'), Duration: 0, Predecessor: "3,4" },
-    {
-        TaskID: 6,
-        TaskName: 'Market Research',
-        StartDate: new Date('03/31/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            {
-                TaskID: 7,
-                TaskName: 'Demand Analysis',
-                StartDate: new Date('03/31/2024'),
-                EndDate: new Date('04/21/2024'),
-                subtasks: [
-                    { TaskID: 8, TaskName: 'Customer strength', StartDate: new Date('03/31/2024'), Duration: 4,Progress: 30 },
-                    { TaskID: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('03/31/2024'), Duration: 4,}
-                ]
-            },
-            { TaskID: 10, TaskName: 'Competitor Analysis', StartDate: new Date('03/31/2024'), Duration: 4, Predecessor: "7,8" ,Progress: 30},
-            { TaskID: 11, TaskName: 'Product strength analysis', StartDate: new Date('03/31/2024'), Duration: 4, Predecessor: "9" },
-            { TaskID: 12, TaskName: 'Research complete', StartDate: new Date('03/31/2024'), Duration: 0, Predecessor: "10" }
-        ]
-    },
-    {
-        TaskID: 13,
-        TaskName: 'Product Design and Development',
-        StartDate: new Date('03/31/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            { TaskID: 14, TaskName: 'Functionality design', StartDate: new Date('03/31/2024'), Duration: 7,Progress: 30 },
-            { TaskID: 15, TaskName: 'Quality design', StartDate: new Date('03/31/2024'), Duration: 5 },
-            { TaskID: 16, TaskName: 'Define Reliability', StartDate: new Date('03/31/2024'), Duration: 5,Progress: 30 },
-            { TaskID: 17, TaskName: 'Identifying raw materials ', StartDate: new Date('03/31/2024'), Duration: 4 },
-            {
-                TaskID: 18,
-                TaskName: 'Define cost plan',
-                StartDate: new Date('03/31/2024'),
-                EndDate: new Date('04/21/2024'),
-                subtasks: [
-                    { TaskID: 19, TaskName: 'Manufacturing cost', StartDate: new Date('03/31/2024'), Duration: 1,Progress: 30 },
-                    { TaskID: 20, TaskName: 'Selling cost', StartDate: new Date('04/04/2024'), Duration: 1 }
-                ]
-            },
-            {
-                TaskID: 21,
-                TaskName: 'Development of the final design',
-                StartDate: new Date('04/04/2024'),
-                EndDate: new Date('04/21/2024'),
-                subtasks: [
-                    { TaskID: 22, TaskName: 'Defining dimensions and package volume', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30 },
-                    { TaskID: 23, TaskName: 'Develop design to meet industry standards', StartDate: new Date('04/04/2024'), Duration: 3 },
-                    { TaskID: 24, TaskName: 'Include all the details', StartDate: new Date('04/04/2024'), Duration: 5 }
-                ]
-            },
-            { TaskID: 25, TaskName: 'CAD Computer-aided design', StartDate: new Date('04/04/2024'), Duration: 10,Progress: 30 },
-            { TaskID: 26, TaskName: 'CAM Computer-aided manufacturing', StartDate: new Date('04/04/2024'), Duration: 10 }
-        ]
-    },
-    { TaskID: 27, TaskName: 'Prototype Testing', StartDate: new Date('04/04/2024'), Duration: 12,Progress: 30 },
-    { TaskID: 28, TaskName: 'Include feedback', StartDate: new Date('04/04/2024'), Duration: 5 },
-    { TaskID: 29, TaskName: 'Manufacturing', StartDate: new Date('04/04/2024'), Duration: 9 ,Progress: 30},
-    { TaskID: 30, TaskName: 'Assembling materials to finished goods', StartDate: new Date('04/04/2024'), Duration: 12 },
-    {
-        TaskID: 31,
-        TaskName: 'Feedback and Testing',
-        StartDate: new Date('04/04/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            { TaskID: 32, TaskName: 'Internal testing and feedback', StartDate: new Date('04/04/2024'), Duration: 5,Progress: 30 },
-            { TaskID: 33, TaskName: 'Customer testing and feedback', StartDate: new Date('04/04/2024'), Duration: 7,Progress: 30 }
-        ]
-    },
-    {
-        TaskID: 34,
-        TaskName: 'Product Development',
-        StartDate: new Date('04/04/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            { TaskID: 35, TaskName: 'Important improvements', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30 },
-            { TaskID: 36, TaskName: 'Address any unforeseen issues', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30 }
-        ]
-    },
-    {
-        TaskID: 37,
-        TaskName: 'Final Product',
-        StartDate: new Date('04/04/2024'),
-        EndDate: new Date('04/21/2024'),
-        subtasks: [
-            { TaskID: 38, TaskName: 'Branding product', StartDate: new Date('04/04/2024'), Duration: 5 },
-            { TaskID: 39, TaskName: 'Marketing and pre-sales', StartDate: new Date('04/04/2024'), Duration: 10,Progress: 30 }
-        ]
-    }
+export let GanttData: Object[] = [
+    { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('03/31/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('03/31/2024'), Duration: 3,Progress: 30, ParentId: 1 },
+    { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('03/31/2024'), Duration: 3, ParentId: 1 },
+    { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('03/31/2024'), Duration: 3, Predecessor: "2" ,Progress: 30, ParentId: 1},
+    { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('03/31/2024'), Duration: 0, Predecessor: "3,4" },
+    { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('03/31/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('03/31/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('03/31/2024'), Duration: 4,Progress: 30, ParentId: 7 },
+    { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('03/31/2024'), Duration: 4, ParentId: 7},
+    { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('03/31/2024'), Duration: 4, Predecessor: "7,8" ,Progress: 30, ParentId: 6},
+    { TaskId: 11, TaskName: 'Product strength analysis', StartDate: new Date('03/31/2024'), Duration: 4, Predecessor: "9", ParentId: 6 },
+    { TaskId: 12, TaskName: 'Research complete', StartDate: new Date('03/31/2024'), Duration: 0, Predecessor: "10", ParentId: 6 },
+    { TaskId: 13, TaskName: 'Product Design and Development', StartDate: new Date('03/31/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 14, TaskName: 'Functionality design', StartDate: new Date('03/31/2024'), Duration: 7,Progress: 30, ParentId: 13 },
+    { TaskId: 15, TaskName: 'Quality design', StartDate: new Date('03/31/2024'), Duration: 5, ParentId: 13 },
+    { TaskId: 16, TaskName: 'Define Reliability', StartDate: new Date('03/31/2024'), Duration: 5,Progress: 30, ParentId: 13 },
+    { TaskId: 17, TaskName: 'Identifying raw materials ', StartDate: new Date('03/31/2024'), Duration: 4, ParentId: 13 },
+    { TaskId: 18, TaskName: 'Define cost plan', StartDate: new Date('03/31/2024'), EndDate: new Date('04/21/2024'), ParentId: 13 },
+    { TaskId: 19, TaskName: 'Manufacturing cost', StartDate: new Date('03/31/2024'), Duration: 1,Progress: 30, ParentId: 18 },
+    { TaskId: 20, TaskName: 'Selling cost', StartDate: new Date('04/04/2024'), Duration: 1, ParentId: 18 },
+    { TaskId: 21, TaskName: 'Development of the final design', StartDate: new Date('04/04/2024'), EndDate: new Date('04/21/2024'), ParentId: 13 },
+    { TaskId: 22, TaskName: 'Defining dimensions and package volume', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30, ParentId: 21 },
+    { TaskId: 23, TaskName: 'Develop design to meet industry standards', StartDate: new Date('04/04/2024'), Duration: 3, ParentId: 21 },
+    { TaskId: 24, TaskName: 'Include all the details', StartDate: new Date('04/04/2024'), Duration: 5, ParentId: 21 },
+    { TaskId: 25, TaskName: 'CAD Computer-aided design', StartDate: new Date('04/04/2024'), Duration: 10,Progress: 30, ParentId: 13 },
+    { TaskId: 26, TaskName: 'CAM Computer-aided manufacturing', StartDate: new Date('04/04/2024'), Duration: 10, ParentId: 13 },
+    { TaskId: 27, TaskName: 'Prototype Testing', StartDate: new Date('04/04/2024'), Duration: 12,Progress: 30 },
+    { TaskId: 28, TaskName: 'Include feedback', StartDate: new Date('04/04/2024'), Duration: 5, },
+    { TaskId: 29, TaskName: 'Manufacturing', StartDate: new Date('04/04/2024'), Duration: 9 ,Progress: 30},
+    { TaskId: 30, TaskName: 'Assembling materials to finished goods', StartDate: new Date('04/04/2024'), Duration: 12 },
+    { TaskId: 31, TaskName: 'Feedback and Testing', StartDate: new Date('04/04/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 32, TaskName: 'Internal testing and feedback', StartDate: new Date('04/04/2024'), Duration: 5,Progress: 30, ParentId: 31 },
+    { TaskId: 33, TaskName: 'Customer testing and feedback', StartDate: new Date('04/04/2024'), Duration: 7,Progress: 30, ParentId: 31 },
+    { TaskId: 34, TaskName: 'Product Development', StartDate: new Date('04/04/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 35, TaskName: 'Important improvements', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30, ParentId: 34 },
+    { TaskId: 36, TaskName: 'Address any unforeseen issues', StartDate: new Date('04/04/2024'), Duration: 2,Progress: 30, ParentId: 34 },
+    { TaskId: 37, TaskName: 'Final Product', StartDate: new Date('04/04/2024'), EndDate: new Date('04/21/2024'), },
+    { TaskId: 38, TaskName: 'Branding product', StartDate: new Date('04/04/2024'), Duration: 5, ParentId: 37 },
+    { TaskId: 39, TaskName: 'Marketing and pre-sales', StartDate: new Date('04/04/2024'), Duration: 10,Progress: 30, ParentId: 37 }
 ];
 export let editingResources: Object[] = [
     { resourceId: 1, resourceName: 'Martin Tamer' },

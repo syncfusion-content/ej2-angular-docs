@@ -16,7 +16,7 @@ The tools in the diagram control can perform various actions such as selecting, 
 - `Pan`: Enables you to move the view of the diagram to different areas without altering the elements.
 - `Draw`: Provides the ability to draw new shapes, connectors, on the diagram surface.
 
-These tools are essential for creating, editing, and navigating complex diagrams efficiently.
+These tools are Essential<sup style="font-size:70%">&reg;</sup> for creating, editing, and navigating complex diagrams efficiently.
 
 ## Drawing tools
 

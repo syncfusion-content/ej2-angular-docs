@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Button component
 
-This article describes the API migration process of Button component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Specifies the text of the button | **Property:** *text* <br/><br/> `<button ej-button id="btn" text="Button"></button>` | **Property:** *content* <br/><br/> `<button ejs-button id="btn" content="Button"></button>` |
 | Specifies the content type of the button | **Property:** *ContentType* <br/><br/>  `<button ej-button id="btn" text="Save" contentType="TextAndImage" prefixIcon="e-icon e-save"></button>`| Not applicable |
@@ -37,7 +37,7 @@ This article describes the API migration process of Button component from Essent
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroys the control | **Methods:** *destroy* <br/><br/> `<button ej-button #btn id="btn" text="Button"></button>` <br/> @ViewChild('btn') <br/> public btnObj: ButtonComponent; <br/> this.btnObj.destroy(); | **Methods:** *destroy* <br/><br/> `<button ejs-button #btn id="btn" content="Button"></button>` <br/> @ViewChild('btn') <br/> public btnObj: ButtonComponent; <br/> this.btnObj.destroy(); |
 | Disables the button | **Methods:** *disable* <br/><br/> `<button ej-button #btn id="btn" text="Button"></button>` <br/> @ViewChild('btn') <br/> public btnObj: ButtonComponent; <br/> this.btnObj.disable(); | Not applicable |
@@ -45,7 +45,7 @@ This article describes the API migration process of Button component from Essent
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers while clicking the button | **Events:** *click* <br/><br/> `<button ej-button id="btn" text="Button" (click)="btnClick($event)"></button>` <br/> btnClick(args) {<br/>/** code block */<br/>} | Not applicable |
 | Triggers once the component rendering is completed | **Events:** *create* <br/><br/> `<button ej-button id="btn" text="Button" (click)="create($event)"></button>` <br/> create(args) {<br/>/** code block */<br/>} | **Events:** *created* <br/><br/> `<button ejs-button id="btn" content="Button" (created)="created()"></button>`<br/> created() {<br/>/** code block */<br/>} |

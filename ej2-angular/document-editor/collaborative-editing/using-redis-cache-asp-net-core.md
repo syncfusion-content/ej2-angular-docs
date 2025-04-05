@@ -22,7 +22,7 @@ The following are needed to enable collaborative editing in Document Editor.
 
 ## SignalR
 
-In collaborative editing, real-time communication is essential for users to see each other's changes instantly. We use a real-time transport protocol to efficiently send and receive data as edits occur. For this, we utilize SignalR, which supports real-time data exchange between the client and server. SignalR ensures that updates are transmitted immediately, allowing seamless collaboration by handling the complexities of connection management and offering reliable communication channels.
+In collaborative editing, real-time communication is Essential<sup style="font-size:70%">&reg;</sup> for users to see each other's changes instantly. We use a real-time transport protocol to efficiently send and receive data as edits occur. For this, we utilize SignalR, which supports real-time data exchange between the client and server. SignalR ensures that updates are transmitted immediately, allowing seamless collaboration by handling the complexities of connection management and offering reliable communication channels.
 
 To make SignalR work in a distributed environment (with more than one server instance), it needs to be configured with either Azure SignalR Service or a Redis backplane.
 

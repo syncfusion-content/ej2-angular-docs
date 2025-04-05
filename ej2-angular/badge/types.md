@@ -14,7 +14,7 @@ This section explains different styles and types of the badges.
 
 ## Badge styles
 
-The Essential JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
 
 | Class Name        | Description
 | :-------------    |:-------------
@@ -43,7 +43,7 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 
 ## Badge types
 
-The types of Essential JS 2 badges are as follows:
+The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 badges are as follows:
 
 * Circle
 * Pill

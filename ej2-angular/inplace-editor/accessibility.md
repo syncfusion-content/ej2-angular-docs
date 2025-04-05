@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Inplace editor component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
-platform: ej2-Angular
+platform: ej2-angular 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -57,4 +57,4 @@ The accessibility compliance of the Inplace editor component is shown in the fol
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

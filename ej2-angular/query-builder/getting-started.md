@@ -44,7 +44,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Query Builder package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder package
 
 To install Query Builder package, use the following command.
 
@@ -54,7 +54,7 @@ npm install @syncfusion/ej2-angular-querybuilder --save
 
 The above package installs [Query Builder dependencies](./getting-started#dependencies) which are required to render the component in the Angular environment.
 
-## Adding Syncfusion Query Builder component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder component
 
 Modify the template in `app.component.ts` file to render the Angular Query Builder component.
 

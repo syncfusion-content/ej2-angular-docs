@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Globalization is the combination of internationalization and localization. You can adapt the component to various languages by means of parsing and formatting the date or number [`internationalization`](../common/Globalization/internationalization/) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 
-By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [`Essential JavaScript 2 Internationalization`](../common/Globalization/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To go with the different culture other than `English`, follow the steps below.
+By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/Globalization/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To go with the different culture other than `English`, follow the steps below.
 
 * Install the `CLDR-Data` package by using the following command (it installs all the CLDR JSON data.
 To known more about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.

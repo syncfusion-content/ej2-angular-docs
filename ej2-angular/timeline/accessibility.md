@@ -51,4 +51,4 @@ The Timeline component's accessibility levels are ensured through an [accessibil
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

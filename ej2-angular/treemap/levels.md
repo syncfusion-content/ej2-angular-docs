@@ -86,7 +86,7 @@ Customize the font color, family, weight, opacity and size using the [`headerSty
 
 ## Header template and position
 
-The TreeMap header supports to customize header of each item using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treemap/levelSettingsModel/#headertemplate) property. It uses Essential JS2 Template engine to render the elements. You can position the template using the [`templatePosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/levelSettingsModel/#templateposition) property.
+The TreeMap header supports to customize header of each item using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treemap/levelSettingsModel/#headertemplate) property. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 Template engine to render the elements. You can position the template using the [`templatePosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/levelSettingsModel/#templateposition) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

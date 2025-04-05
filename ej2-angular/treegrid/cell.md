@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Cell in Angular TreeGrid component
 
-In the Syncfusion Angular TreeGrid, a **cell** refers to an individual data point or a unit within a tree grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, a **cell** refers to an individual data point or a unit within a tree grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 
 The TreeGrid component allows you to customize the appearance and behavior of cells using various features and options. You can define templates, format cell values, enable or disable editing, and perform various other operations on the cells to create interactive and informative tree grids in your web applications.
 
@@ -211,7 +211,7 @@ The Tree Grid allows you to display information about the tree grid columns to t
 
 ### Render bootstrap tooltip in grid cells
 
-The TreeGrid component allows rendering Bootstrap tooltips in the cells. To enable this feature, you need to add the Bootstrap CDN link and use the [ngAfterViewChecked](https://angular.io/api/core/AfterViewChecked) method to initialize the tooltip. 
+The TreeGrid component allows rendering Bootstrap tooltips in the cells. To enable this feature, you need to add the Bootstrap CDN link and use the [ngAfterViewChecked](https://v17.angular.io/api/core/AfterViewChecked) method to initialize the tooltip. 
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **priority** field using `ng-template` in tree grid cells,
 
@@ -298,7 +298,7 @@ export class AppComponent implements AfterViewChecked {
         $('[data-toggle="tooltip"]').tooltip();
     }   
 }
-{% endraw%}
+{% endraw %}
 
 ```
 

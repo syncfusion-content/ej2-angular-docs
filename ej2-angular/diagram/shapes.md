@@ -107,7 +107,7 @@ The following table illustrates all the possible scale options for the image nod
 | Slice |![Slice Alignment](images/Image3.png) |
 | Stretch |![Stretch Alignment](images/Image4.png) |
 
-N> To visualize the changes in image scaling, it is essential to use the align property along with scale.
+N> To visualize the changes in image scaling, it is Essential<sup style="font-size:70%">&reg;</sup> to use the align property along with scale.
 
 ## HTML
 

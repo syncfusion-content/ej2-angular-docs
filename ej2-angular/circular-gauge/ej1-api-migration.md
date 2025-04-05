@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Circular gauge component
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Circular gauge dimensions
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *height*<br/><br/> `<ej-circulargauge id="gauge" height="150"> </ej-circulargauge>`|**Property:** *height*<br/><br/> `<ejs-circulargauge id="gauge" height="150px"></ejs-circulargauge>`|
 |Width| **Property:** *width*<br/><br/>`<ejs-circulargauge id="gauge" width="200"></ej-circulargauge>`|**Property:** *width*<br/><br/> `<ej-circulargauge id="gauge" width="200px"></ejs-circulargauge>`|
@@ -23,7 +23,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis Line
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Axisline Width| **Property:** *scales.size*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale  showScaleBar= "true", size= "6" ></e-scale></e-scales></ej-circulargauge>`|**Property:** *axes.lineStyle.width*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis ></e-axis></e-axes></ejs-circulargauge>`|
 |Axisline Color| **Property:** *scales.size*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale   showScaleBar= "true" backgroundColor= "red"  ></e-scale></e-scales></ej-circulargauge>`|**Property:** *axes.lineStyle.width*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis ></e-axis></e-axes></ejs-circulargauge>`|
@@ -37,7 +37,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ticks
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type of Ticks| **Property:** *scales.ticks.type*<br/><br/>`<ej-circulargauge id="gauge"><e-scales><e-scale><e-ticks><e-tick type="major"></e-tick></e-ticks></e-scale></e-scales> </ej-circulargauge>`| **Property:** *axes.majorTicks.height*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis [majorTicks]='majorTicks'></e-axis></e-axes> </ejs-circulargauge>`<br></br>`public majorTicks: Object= { }`|
 |Height of Major Ticks| **Property:** *scales.ticks.height*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale><e-ticks><e-tick type="major" height= "8"></e-tick></e-ticks></e-scale></e-scales> </ej-circulargauge>`|**Property:** *axes.majorTicks.height*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis [majorTicks]='majorTicks'></e-axis></e-axes> </ejs-circulargauge>`<br><br/>`public majorTicks: Object= { height: 8 }`|
@@ -55,7 +55,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Autoangle| **Property:** *scales.labels.autoAngle*<br/><br/>`<ej-circulargauge id="gauge"><e-scales><e-scale [labels]="labels"></e-scale></e-scales> </ej-circulargauge>`<br><br/>`publiclabels:Object[] = [{ showLabels: true,autoAngle: true}]`| **Property:** *axes.labelStyle.autoAngle*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis [labelStyle]= "labelStyle"></e-axis></e-axes> </ejs-circulargauge>`<br><br/>`public labelStyle: Object= { autoAngle: true }`|
 |Angle| **Property:** *scales.labels.angle*<br/><br/>`<ej-circulargauge id="gauge"><e-scales><e-scale [labels]="labels"></e-scale></e-scales> </ej-circulargauge>`<br><br/>`publiclabels:Object[] = [{ showLabels: true,angle: 10}]`| Not Applicable|
@@ -72,7 +72,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ranges
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Start Value| **Property:** *scales.ranges.startValue*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale><e-ranges><e-range  showRanges="true" startValue="20"></e-range></e-ranges></e-scale> </e-scales> </ej-circulargauge>`| **Property:** *axes.ranges.start*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis ><e-ranges><e-range start= "20" ></e-range></e-ranges></e-axis></e-axes> </ejs-circulargauge>`|
 |End Value| **Property:** *scales.ranges.endValue*<br/><br/>`<ej-circulargauge id="gauge"><e-scales><e-scale><e-ranges><e-range showRanges="true" endValue= "20" ></e-range></e-ranges></e-scale> </e-scales> </ej-circulargauge>`| **Property:** *axes.ranges.end*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis ><e-ranges><e-range end= "20"></e-range></e-ranges></e-axis></e-axes> </ejs-circulargauge>`|
@@ -89,7 +89,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Needle Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Needle Pointer| **Property:** *scales.pointers.type*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale><e-pointers><e-pointer  type= 'needle'><e-pointer></e-pointers></e-scale> </e-scales></ej-circulargauge>`| **Property:** *axes.pointers.type*<br/><br/> `<ejs-circulargauge id="gauge" type= 'needle' value= 20 ><e-axes> <e-axis><e-pointers><e-pointer ></e-pointer></e-pointers></e-axis></e-axes></ejs-circulargauge>`|
 |Needle Pointer Color| **Property:** *scales.pointers.backgroundColor*<br/><br/>`<ej-circulargauge id="gauge"><e-scales><e-scale><e-pointers><e-pointer  type='needle' backgroundColor='red'><e-pointer></e-pointers></e-scale></e-scales></ej-circulargauge>`| **Property:** *axes.pointers.color*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-pointers><e-pointer type= 'needle' color: 'red'></e-pointer></e-pointers></e-axis></e-axes></ejs-circulargauge>`|
@@ -102,7 +102,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Marker Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Marker Pointer| **Property:** *scales.pointers.type*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale><e-pointers><e-pointer type='marker'><e-pointer></e-pointers></e-scale></e-scales></ej-circulargauge>`| **Property:** *axes.pointers.type*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-pointers><e-pointer type= 'marker' value= 20></e-pointer></e-pointers> </e-axis></e-axes></ejs-circulargauge>`|
 |Marker Type| **Property:** *scales.pointers.markerType*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale><e-pointers><e-pointer type= 'marker' markerType= "rectangle"><e-pointer> </e-pointers></e-scale></e-scales></ej-circulargauge>`| **Property:** *axes.pointers.markerShape*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-pointers><e-pointer type= 'marker' markerShape= 'Diamond'  ></e-pointer></e-pointers></e-axis></e-axes></ejs-circulargauge>`|
@@ -113,14 +113,14 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Rangebar Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Rangebar| Not Applicable| **Property:** *axes.pointers.type*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-pointers><e-pointer type: 'RangeBar'></e-pointer></e-pointers> </e-axis></e-axes></ejs-circulargauge>`|
 |Rounded Corner Radius| Not Applicable| **Property:** *axes.pointers.roundedCornerRadius*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-pointers><e-pointer type= 'RangeBar' roundedCornerRadius= 10 ></e-pointer></e-pointers> </e-axis></e-axes></ejs-circulargauge>`|
 
 ## Annotations
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Content| **Property:** *scales.customLabels.value*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale [customLabels]="customLabels"></e-scale></e-scales></ej-circulargauge>`<br></br>`public customLabels:Object ={value: 'Lineargauge' }`| **Property:** *axes.annotations.content*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-annotations><e-annotation  content='Annotation'></e-annotation> </e-annotations> </e-axis></e-axes> </ejs-circulargauge>`|
 |Angle| **Property:** *scales.customLabels.textAngle*<br/><br/> `<ej-circulargauge id="gauge"><e-scales><e-scale [customLabels]="customLabels"></e-scale></e-scales></ej-circulargauge>`<br></br>`public customLabels:Object ={textAngle: 90}`| **Property:** *axes.annotations.angle*<br/><br/> `<ejs-circulargauge id="gauge"><e-axes><e-axis><e-annotations><e-annotation angle= 90 ></e-annotation> </e-annotations> </e-axis></e-axes> </ejs-circulargauge>`|
@@ -134,7 +134,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Title| Not Applicable| **Property:** *title*<br/><br/> `<ejs-circulargauge id="gauge" title= 'Circular Gauge' ></ejs-circulargauge>`|
 |Background Color| **Property:** *backgroundColor*<br/><br/> `<ej-circulargauge id="gauge"  backgroundColor= "red"></ej-circulargauge>`| **Property:** *background*<br/><br/> `<ejs-circulargauge id="gauge"  background="red" ></ejs-circulargauge>`|
@@ -147,7 +147,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Annotation Event| **Event:** *drawCustomLabel*<br/><br/> `<ej-circulargauge id="gauge" (drawCustomLabel)="onDrawCustomLabel($event)"></ej-circulargauge>`<br><br/>`onDrawCustomLabel(sender){}`| **Event:** *annotationRender*<br/><br/> `<ejs-circulargauge id="gauge"  (annotationRender)='annotationRender($event)'></ejs-circulargauge>`<br><br/>`public  annotationRender(args: IAnnotationRenderEventArgs): void {}`|
 |Label Event| **Event:** *drawLabels*<br/><br/> `<ej-circulargauge id="gauge" (drawLabels)="DrawLabels($event)"></ej-circulargauge>`<br><br/>`DrawLabels(sender){}`| **Event:** *axisLabelRender*<br/><br/> `<ejs-circulargauge id="gauge"  ( axisLabelRender)=' axisLabelRender($event)'></ejs-circulargauge>`<br><br/>`public axisLabelRender(args: IAxisLabelRenderEventArgs): void {}`|

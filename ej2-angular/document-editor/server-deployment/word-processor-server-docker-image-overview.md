@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Word processor server docker image overview in Angular Document editor component | Syncfusion
+title: Image overview in Angular Document editor component | Syncfusion
 description: Learn here all about Word processor server docker image overview in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Word processor server docker image overview 
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 # Word processor server docker image overview in Angular Document editor component
 
-The Syncfusion **Word Processor (also known as Document Editor)** is a component with editing capabilities like Microsoft Word. It is used to create, edit, view, and print Word documents. It provides all the common word processing abilities, including editing text; formatting contents; resizing images and tables; finding and replacing text; importing, exporting, and printing Word documents; and using bookmarks and tables of contents.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> **Word Processor (also known as Document Editor)** is a component with editing capabilities like Microsoft Word. It is used to create, edit, view, and print Word documents. It provides all the common word processing abilities, including editing text; formatting contents; resizing images and tables; finding and replacing text; importing, exporting, and printing Word documents; and using bookmarks and tables of contents.
 
 This Docker image is the predefined Docker container of Syncfusion’s Word Processor backend. You can deploy it quickly to your infrastructure.
 

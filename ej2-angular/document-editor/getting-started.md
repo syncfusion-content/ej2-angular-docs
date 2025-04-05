@@ -18,7 +18,7 @@ To get started quickly with DocumentEditor component using CLI, you can check th
 
 ## Prerequisites
 
-[System requirements for Syncfusion Angular Document Editor](../system-requirement)
+[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Document Editor](../system-requirement)
 
 ## Dependencies
 
@@ -84,9 +84,9 @@ Next, navigate to the created project folder:
 cd my-app
 ```
 
-## Adding Syncfusion Document Editor package
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Document Editor package
 
-All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Document Editor component, use the following command.
 
@@ -173,7 +173,7 @@ DocumentEditorContainer output will be displayed as follows.
   
 {% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs2" %}
 
->Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
+>Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
 ### DocumentEditor Component
 
@@ -227,7 +227,7 @@ Output will be displayed as follows.
   
 {% previewsample "page.domainurl/samples/document-editor/getting-started-cs1" %}
 
->Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
+>Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
 ## Frequently Asked Questions
 

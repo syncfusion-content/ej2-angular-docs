@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Excel like filter in Angular TreeGrid component
 
-The Syncfusion TreeGrid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the tree grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the tree grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 
 Here is an example showcasing how to render the excel like filter within the tree grid:
 

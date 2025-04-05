@@ -116,4 +116,4 @@ The accessibility compliance of the Spreadsheet component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility)

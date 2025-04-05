@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switching older themes style in Angular Pivotview component | Syncfusion
+title: Switching themes style in Angular Pivotview component | Syncfusion
 description: Learn here all about Switching older themes style in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Switching older themes style 
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Switching older themes style in Angular Pivotview component
 
-From Volume 1, 2020 onwards Syncfusion has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
+From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 
 ## CSS Selectors
 

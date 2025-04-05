@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Gantt component
 
-In Syncfusion Angular Gantt component, columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the gantt.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the gantt.
 
 The column definitions are used as the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) schema in the gantt. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property of the [column](https://ej2.syncfusion.com/angular/documentation/api/gantt/#column) is necessary to map the data source values in gantt columns.
 
 ## Column types
 
-The Syncfusion Gantt component allows you to specify the type of data that a column binds using the `column.type` property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component allows you to specify the type of data that a column binds using the `column.type` property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data. 
 
 Gantt supports the following column types:
 
@@ -50,7 +50,7 @@ Here is an example of how to specify column types in a gantt using the types men
 3. When the gantt column `type` is a **checkbox**, the selection type of the gantt [selectionSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/) will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the gantt will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column width
 
@@ -59,7 +59,7 @@ To adjust the column width in a Gantt, you can use the [width](https://ej2.syncf
 1. Gantt column width is calculated based on the sum of column widths. For example, a gantt container with 4 columns and a width of 800 pixels will have columns with a default width of 200 pixels each.
 2. If you specify widths for some columns but not others, the Gantt will distribute the available width equally among the columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
 3. Columns with percentage widths are responsive and adjust their width based on the size of the gantt container. For example, a column with a width of 50% will occupy 50% of the gantt width and will adjust proportionally when the gantt container is resized to a smaller size.
-4. When you manually resize columns in Syncfusion Gantt, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
+4. When you manually resize columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
 5. If the total width of all columns exceeds the width of the gantt container, a horizontal scrollbar will automatically appear to allow horizontal scrolling within the gantt.
 6. If the parent element has a fixed width, the gantt component will inherit that width and occupy the available space. However, if the parent element does not have a fixed width, the gantt component will adjust its width dynamically based on the available space.
 
@@ -67,7 +67,7 @@ To adjust the column width in a Gantt, you can use the [width](https://ej2.syncf
 
 #### Supported types for column width:
 
-Syncfusion Gantt supports the following three types of column width:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 
 **1. Auto**
 
@@ -106,7 +106,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 ## Column formatting
 
-Column formatting is a powerful feature in Syncfusion Gantt that allows you to customize the display of data in gantt columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
+Column formatting is a powerful feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt that allows you to customize the display of data in gantt columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
 
 You can use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format) property to specify the format for column values. 
 
@@ -268,7 +268,7 @@ export class AppComponent{
 
 ### Custom formatting
 
-Syncfusion Gantt allows you to customize the formatting of data in the gantt columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to gantt columns in Syncfusion Gantt, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt allows you to customize the formatting of data in the gantt columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to gantt columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
 
 In the below example, the **numberFormatOptions** object is used as the `format` property for the **'Progress'** column to apply a custom numeric format with four decimal places. Similarly, the **dateFormatOptions** object is used as the `format` property for the **'StartDate'** column to apply a custom date format displaying the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g. Sun, May 8, '23).
 
@@ -375,9 +375,9 @@ To use `autoFitColumns` method, you need to inject **ResizeService** in the prov
 
 ## Locked columns
 
-The Syncfusion Gantt allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#lockcolumn) property of treegrid object in gantt instance to **true**, which locks the column and moves it to the first position in the gantt.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#lockcolumn) property of treegrid object in gantt instance to **true**, which locks the column and moves it to the first position in the gantt.
 
-Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion Gantt. Additionally, in the code snippet below, differentiate the locked column using CSS with a custom attributes property.
+Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt. Additionally, in the code snippet below, differentiate the locked column using CSS with a custom attributes property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -392,7 +392,7 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 ## Show or hide columns
 
-The Syncfusion Gantt control allows you to show or hide columns dynamically by using property or methods available in the gantt. This feature can be useful when you want to customize the visibility of columns in the Gantt based on the requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt control allows you to show or hide columns dynamically by using property or methods available in the gantt. This feature can be useful when you want to customize the visibility of columns in the Gantt based on the requirements.
 
 ### Using property
 
@@ -455,7 +455,7 @@ Here's an example of how to show or hide a column based on the field in the Angu
 
 ## Controlling Gantt actions
 
-You can control various actions such as filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion Angular Gantt using the following properties:
+You can control various actions such as filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the following properties:
 
 * [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel/#allowediting): Enables or disables editing for a column.
 * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel/#allowfiltering): Enables or disables filtering for a column.
@@ -484,11 +484,11 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Manipulating columns
 
-The Syncfusion Gantt for Angular provides powerful features for manipulating columns. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion Tree Gantt properties, methods, and events.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular provides powerful features for manipulating columns. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Gantt properties, methods, and events.
 
 ### Accessing columns
 
-To access columns in the Syncfusion Gantt component, you can use the following methods of gantt and treegrid object in gantt instance:
+To access columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component, you can use the following methods of gantt and treegrid object in gantt instance:
 
 * **[getGanttColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getganttcolumns)**:
 
@@ -576,7 +576,7 @@ this.gantt.treeGrid.refreshColumns();
 
 ## Responsive columns
 
-The Syncfusion Angular Gantt provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a gantt that displays data with two columns: **Task Name and Duration**. We have set the `hideAtMedia` property of the **Task Name** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

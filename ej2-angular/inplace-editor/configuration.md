@@ -41,7 +41,7 @@ In the following sample, the **In-place Editor** renders with `Inline` mode. You
 
 **In-place Editor** popup mode can be customized by using the [title](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/#title) and [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/#model) properties in [popupSettings](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/) API.
 
-Popup mode rendered by using the Essential JS 2 Tooltip component, so you can use tooltip properties and events to customize the behavior of popup via the [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/#model) property of [popupSettings](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/) API.
+Popup mode rendered by using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip component, so you can use tooltip properties and events to customize the behavior of popup via the [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/#model) property of [popupSettings](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings/) API.
 
 > For more details, refer the tooltip documentation [section](../tooltip/).
 

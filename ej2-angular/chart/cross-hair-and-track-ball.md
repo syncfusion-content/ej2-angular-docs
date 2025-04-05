@@ -99,7 +99,7 @@ To known about Crosshair and Trackball, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=IiSuXTKG2ac" %}
 
-## Crosshair Highlight Category
+## Crosshair highlight category
 
 The [`highlightCategory`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#highlightcategory) property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the [`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#color) property within the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/) configuration.
 

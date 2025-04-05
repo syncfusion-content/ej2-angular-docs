@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Maskedtextbox component
 
-This article describes the API migration process of MaskEdit component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of MaskEdit component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="9999" cssClass = "custom" />` | **Property:** *cssClass*<br /><br />`<ejs-maskedtextbox #mask cssClass = "custom" mask='9999'></ejs-maskedtextbox>` |
 | Destroy editor | Not Applicable | **Method:** *destroy*<br /><br />`<ejs-maskedtextbox #mask mask="00-000"></ejs-maskedtextbox>`<br />`@ViewChild("mask") mask: MaskedTextBoxComponent;`<br />`mask.destroy();` |
@@ -43,7 +43,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *change*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="00-00" (change)="onChange()"/>`<br /><br />**script**<br />`onChange() {}` | **Event:** *change*<br /><br />`<ejs-maskedtextbox mask='00-00' (change) = "onChange()"></ejs-maskedtextbox>`<br /><br />**script**<br />`public onChange(): void {}` |
 | Clears maskedit text/value | **Method:** *clear*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="0000" value="1234"/>`<br />`var maskObj = $(“#mask”).data(“ejMaskEdit”);`<br />`maskObj.clear();` | **Can be achieved using**<br/>**script**<br />`<ejs-maskedtextbox #mask mask="00-00" value="1234"></ejs-maskedtextbox>`<br />`@ViewChild("mask") mask: MaskedTextBoxComponent;`<br />`mask.value = ""` |
@@ -66,7 +66,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Displays error until correct value is entered | **Property:** *showError*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="99-999" showError="true"/>` | **MaskedTextBox by default shows error until the correct value is entered**<br/>**script**<br />`<ejs-maskedtextbox #mask mask="00-00" value="1234"></ejs-maskedtextbox>` |
 | Validation message | **Property:** *validationMessage*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="0000"/>`<br /><br />**script**<br />`constructor() {`<br />`this.validationRules = {required: true};`<br />`this.validationMessage = {required: "Required value"}`<br />`}` | **Can be achieved using Form Validation**<br/>`<form #formElement class="form-horizontal">`<br />`<ejs-maskedtextbox id="masktextbox" #mask="" mask='000-000-0000' name="mask_value" placeholder= 'Mobile Number' floatLabelType= 'Always'>`<br />`</ejs-maskedtextbox>`<br/>`</form>`<br/>**Script**<br/> `@ViewChild('formElement') element;` <br />`@ViewChild('mask') mask: MaskedTextBoxComponent;`</br>`public formObject: FormValidator;`<br/> `let options: FormValidatorModel = {`<br/>`rules: {`<br/>`'mask_value': { required: [true, 'Enter valid mobile number'] },`<br/>`}`<br/>`}`<br/>`this.formObject = new FormValidator(this.element.nativeElement, options);`<br/>`let customPlace: (element: HTMLElement, error: HTMLElement) => void = (element: HTMLElement, error: HTMLElement) => {`<br/>`document.querySelector(".form-group").appendChild(error);`<br/>`};`<br/>`this.formObject.customPlacement = customPlace;`<br/>`}` |

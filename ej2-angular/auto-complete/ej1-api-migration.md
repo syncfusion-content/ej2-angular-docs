@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Auto complete component
 
-This article describes the API migration process of  AutoComplete component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 > MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
 
 ## DataBinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *dataSource* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [dataSource]="states" />`| **Property:** *datasource*<br/>`<ejs-autocomplete [datasource]="data"></ejs-autocomplete>`|
 | **Fields for mapping** | **Property:** *fields*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [fields]="fields" />`| **Property:** *fields*<br/>`<ejs-autocomplete id="country" [fields]="fields"></ejs-autocomplete>` |
@@ -27,7 +27,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Case sensitivity** | **Property**: *caseSensitiveSearch*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [caseSensitiveSearch]="true" />`|**Property:** *ignoreCase*<br/>`<ejs-autocomplete id="autocomplete" [ignoreCase]="ignoreCase"></ejs-autocomplete>`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`ejs-autocomplete id="autocomplete" [ignoreAccent]="ignoreAccent"></ejs-autocomplete>`|
@@ -40,14 +40,14 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Placeholder
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *watermarkText* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [watermarkText]="select" />`| **Property:** *placeholder* <br/>`ejs-autocomplete id="autocomplete" [placeholder]="select"></ejs-autocomplete>`|
 | **Floating  of watermark text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`ejs-autocomplete id="autocomplete" [floatLabelType]="floatLabelType"></ejs-autocomplete>`|
 
 ## Popup
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records showing** | **Property:** *showEmptyResultText* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [showEmptyResultText]="true" />` | **Not applicable** |
 | **Popupbutton** | **Property:** *showPopupButton*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [showPopupButton]="true" />` | **Property:** *showPopupButton*<br/> `<ejs-autocomplete id="autocomplete" [showPopupButton]="true"></ejs-autocomplete>`|
@@ -65,7 +65,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## CSS
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [cssClass]="cssClass" />` | **Property:** *cssClass* <br/> `<ej-autocomplete id="autocomplete" [cssClass]="customClass"></ej-autocomplete>`|
 | **Height** | **Property:** *height* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [height]="height" />`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#cssclass) property.** |
@@ -75,19 +75,19 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Grouping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *fields*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [fields]="fields" />`  |**Property:** *fields* <br/>`<ejs-autocomplete id="country" [fields]="fields"></ejs-autocomplete>`|
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *locale* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [locale]="fr-FE" />`| **Property:** *locale* <br/>`<ejs-autocomplete id="country" [locale]="locale"></ejs-autocomplete>`|
 
 ## Template
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *template* `<input type="text" id="databindinglocal" ej-autocomplete [template]="template" />`|**Property:** *itemTemplate*<br/> `<ejs-autocomplete id="employees" [itemTemplate]="itemTemplate">></ejs-autocomplete>` |
 | **Group Template** | **Not Applicable**  | **Property:** *groupTemplate* <br/>`<ejs-autocomplete id="employees" [groupTemplate]="groupTemplate"></ejs-autocomplete>`|
@@ -99,20 +99,20 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *allowSorting* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [allowSorting]="true" />` | **Acheivable through the [sortOrder](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#sortorder) property.** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [sortOrder]="sortOrder" />`|**Property:** *sortOrder*<br/> `<ejs-autocomplete id="country" [sortOrder]="sortOrder"></ejs-autocomplete>`|
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **RTL support** | **Property:** *enableRtl* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [enableRtl]="true" />` | **Property:** *enableRtl* <br/>`<ejs-autocomplete id="country" [enableRtl]="true"></ejs-autocomplete>`|
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
 |**Selecting particular value**| **Property**: *selectValueByKey* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [selectValueByKey]="selectValueByKey" />`|**Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#value) property.**  | **Property**: *value*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [value]="value" />` | **Property:** *value*<br/> `<ejs-autocomplete id="country" [value]="data"></ejs-autocomplete>`|
 | **Selecting particular text** | **Property:** *text*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [text]="text" />` | **Not applicable** |
@@ -122,7 +122,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Miscellaneous
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *enabled*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [enabled]="true" />` | **Property:** *enabled* <br/>`<ejs-autocomplete id="country" [enabled]="true"></ejs-autocomplete>`|
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [enablePersistence]="true" />`  | **Property:** *enablePersistence* <br/> `<ejs-autocomplete id="country" [enablePersistence]="true"></ejs-autocomplete>`|
@@ -132,7 +132,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Addition of new option watermark text** | **Property:** *addNewText* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [addNewText]="addNewText" />` | **Not applicable** |
 | **Addition of new item** | **Property:**  *allowAddNew* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [allowAddNew]="allowAddNew" />`  | **Property:** *allowCustom*<br/> `<ej-autocomplete id="autocomplete" [allowCustom]="true"></ej-autocomplete>`|

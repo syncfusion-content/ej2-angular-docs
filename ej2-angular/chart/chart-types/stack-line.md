@@ -262,7 +262,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/stackedline-cs9" %}
 
-## Stack Labels
+## Stack labels
 
 The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
 
@@ -282,7 +282,7 @@ The stack labels in stacked charts display cumulative total values for stack seg
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs31" %}
 
-### Stack Labels Customization
+### Stack labels customization
 Stack labels have various properties for customization to enhance the visual based on your requirements:
 
 * [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.

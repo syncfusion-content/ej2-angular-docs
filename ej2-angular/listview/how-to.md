@@ -40,7 +40,7 @@ The `getSelectedItems` method returns the following items from the selected list
 
 ## Use dynamic templates of ListView based on device
 
-The Syncfusion Essential JS2 components are desktop and mobile-friendly. So, you can use Syncfusion components in both modes. The component templates are not always fixed. Applications may need to load various templates depending upon the device.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 components are desktop and mobile-friendly. So, you can use Syncfusion<sup style="font-size:70%">&reg;</sup> components in both modes. The component templates are not always fixed. Applications may need to load various templates depending upon the device.
 
 ### Integration
 
