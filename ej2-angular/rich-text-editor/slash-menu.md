@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Slash Menu in the Angular Rich Text Editor component
+# Slash Commands in the Angular Rich Text Editor Component
 
 The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
-## Enabling the Slash Menu
+## Enabling the slash menu
 
 To use the Slash Menu feature, inject SlashMenuService in the provider section of AppComponent.
 
 To enable the Slash Menu, set the `enable` property within [`slashMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#slashmenusettings) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
 
-## Configuring the Slash Menu Items
+## Configuring the slash menu items
 
 The slashMenuSettings property allows customization of the `items` displayed in the Slash Menu. By defining the [`items`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/slashMenuSettingsModel/#items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
 
@@ -33,7 +33,7 @@ slashMenuSettings: {
 
 ```
 
-## Customizing the Popup Width and Height
+## Customizing the popup width and height
 
 The size of the Slash Menu popup can be customized using the [`popupWidth`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/slashMenuSettingsModel/#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/slashMenuSettingsModel/#popupheight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
 
@@ -50,7 +50,7 @@ slashMenuSettings: {
 
 ```
 
-## Adding Custom Slash Menu Items
+## Adding custom slash menu items
 
 Custom items can be added by defining the items property inside slashMenuSettings. This property accepts either a string of predefined items or an array of objects representing custom menu items.
 

@@ -24,7 +24,7 @@ export class AppComponent {
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
         // Navigation Pane settings customization
-        this.navigationPaneSettings = { maxWidth: '850px', minWidth: '140px', visible: true };
+        this.navigationPaneSettings = { maxWidth: '850px', minWidth: '140px', visible: true, sortOrder: 'Ascending' };
     };
 }
 

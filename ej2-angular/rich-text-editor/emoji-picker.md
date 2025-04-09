@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 
-## Configuring Emoji Picker Tool with Custom Emojis in the Toolbar
+## Configuring emoji picker tool in the toolbar
 
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -131,13 +131,13 @@ The following code example shows how to add the emoji picker tool in the Rich Te
 
 > Rich Text Editor features are segregated into individual feature-wise modules. In this demo, we have used the following injectable service `EmojiPickerService` in the `@NgModule.providers section`.
 
-## Using Shortcut Keys to Open the Emoji Picker
+## Using shortcut keys to open the emoji picker
 
 Quickly access the emoji picker by pressing the colon (:) key while typing a word prefix in an editor, allowing instant emoji selection and display. Moreover, continue typing in the editor after the colon (:) to filter and refine your search for the desired emojis.
 
 ![Angular Rich Text Editor Emoji Picker](./images/angular-richtexteditor-emoji-picker-web.png)
 
-## Navigating and Selecting Emojis Using the Keyboard
+## Navigating and selecting emojis using the keyboard
 
 The emoji picker popup offers keyboard navigation options, allowing you to move the emoji focus from one emoji to another. The following keys are used for navigation:
 

@@ -40,17 +40,11 @@ export class AppComponent implements OnInit {
         this.title = 'Sales Comparison';
     }
     public pointRender(args: IPointRenderEventArgs) {
-        if (args.point.index === 1 && args.point.series.index === 2) {
-            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        if (args.point.index % 2 !==0 ) {
+            args.fill = '#ff6347';
         }
-        if (args.point.index === 4 && args.point.series.index === 2) {
-            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
-        }
-        if (args.point.index === 6 && args.point.series.index === 2) {
-            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
-        }
-        if (args.point.index === 8 && args.point.series.index === 2) {
-            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        else {
+            args.fill = '#009cb8';
         }
     }
 }

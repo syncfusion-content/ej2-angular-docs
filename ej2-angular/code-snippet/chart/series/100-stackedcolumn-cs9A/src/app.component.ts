@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
 import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
-    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
+    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService, IPointRenderEventArgs
  } from '@syncfusion/ej2-angular-charts'
 
 

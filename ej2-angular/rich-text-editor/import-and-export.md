@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content Import/Export in Angular Rich Text Editor component
+# Content Import/Export in Angular Rich Text Editor Component
 
-## Importing Content from Microsoft Word
+## Importing content from Microsoft Word
 
 The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, preserving the original formatting and structure. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
 
@@ -30,7 +30,7 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 
 {% previewsample "page.domainurl/samples/rich-text-editor/import-cs1" %}
 
-## Exporting Content to PDF and Microsoft Word
+## Exporting content to PDF and Microsoft Word
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 

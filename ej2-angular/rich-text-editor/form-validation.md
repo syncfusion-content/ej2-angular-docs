@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor supports both the reactive and template-driven form-building technologies.
 
-## Template-Driven Forms
+## Template-Driven forms
 
 The template-drive forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 
@@ -35,7 +35,7 @@ The following example demonstrates how to achieve a two-way data binding.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/form-support-cs1" %}
 
-## Reactive Forms
+## Reactive forms
 
 The reactive forms use the reactive model-driven technique to handle form data between the component and view. So, it is called as `model-driven` forms. It listens the form data changes between App component and view also returns the valid states and values of form elements.
 
@@ -57,11 +57,11 @@ The following example demonstrates how to bind the Syncfusion Rich Text Editor t
   
 {% previewsample "page.domainurl/samples/rich-text-editor/form-support-cs2" %}
 
-## Disabling the Rich Text Editor Component in Reactive Forms (Angular 15+)
+## Disabling the Rich Text Editor Component in reactive forms (Angular 15+)
 
 In Angular 15 and later versions, you can dynamically enable or disable the Syncfusion Rich Text Editor when using Reactive Forms. This is particularly useful when the editor’s availability depends on user actions, form validation states, or other conditions.
 
-### Managing the Disabled State
+### Managing the disabled state
 
 With Angular's FormControl, you can use the `disable()` and `enable()` methods to programmatically control the editor's availability.
 

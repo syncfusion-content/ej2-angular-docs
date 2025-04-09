@@ -28,7 +28,7 @@ The following sample demonstrates the resizable feature.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs1" %}
 
-## Setting Editor Resize Limits
+## Restrict resize
 
 To restrict the resizable area of the Rich Text Editor, set the `min-width`, `max-width`, `min-height`, and `max-height` CSS properties for the component's wrapper element. 
 
@@ -59,7 +59,7 @@ For example, add the following to the `app.component.css` file:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/rename-image-cs1" %}
 
-## See Also
+## See also
 
 * [Working with IFrame Editing Mode](./iframe)
-* [Using the Markdown Editor](./markdown)
+* [Using the Markdown Editor](../markdown-editor/getting-started)
