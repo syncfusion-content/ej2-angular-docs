@@ -1,0 +1,23 @@
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+
+.control-section {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#dashboardLayout {
+    padding: 10px;
+}
+
+#dashboardLayout .e-panel .e-panel-container {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    line-height: 90px;
+}

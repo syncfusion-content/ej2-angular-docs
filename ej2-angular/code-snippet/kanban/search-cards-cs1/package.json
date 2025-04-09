@@ -16,6 +16,7 @@
     "@syncfusion/ej2-angular-inputs": "*",
     "@syncfusion/ej2-angular-kanban": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-kanban": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-dropdowns": "*",
     "@syncfusion/ej2-inputs": "*",

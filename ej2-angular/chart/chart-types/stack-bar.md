@@ -240,48 +240,6 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.s
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs8" %}
 
-## Events
-
-### Series render 
-
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/stackbar-cs9/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackbar-cs9/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/stackbar-cs9/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/chart/series/stackbar-cs9" %}
-
-### Point render
-
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/stackbar-cs10/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackbar-cs10/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/stackbar-cs10/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
-
 ## Stack labels
 
 The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
@@ -370,6 +328,49 @@ We can customize the corner radius for individual points in the chart series usi
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs10B" %}
+
+## Events
+
+### Series render 
+
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackbar-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackbar-cs9/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackbar-cs9/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/stackbar-cs9" %}
+
+### Point render
+
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
+
 
 ## See also
 
