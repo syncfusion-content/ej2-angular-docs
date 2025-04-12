@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
 
 const SERVICE_URI: string = 'https://ej2services.syncfusion.com/production/web-services/';
@@ -16,8 +17,8 @@ interface Order {
 }
 
 @Component({
-    imports: [ GridModule, ButtonModule],
-    providers: [PageService],
+    imports: [ GridModule, ButtonModule, CommonModule ],
+    providers: [ PageService ],
     standalone: true,
     selector: 'app-root',
     template: `
@@ -33,22 +34,23 @@ interface Order {
                 <e-column field='Freight' headerText='Freight' width='150' format="C2" textAlign='Right'></e-column>
                 <e-column field='ShipCountry' headerText='Ship Country' width='150' ></e-column>
             </e-columns>
-        </ejs-grid>`
+        </ejs-grid>
+    `
 })
 
 export class AppComponent implements OnInit {
     public statusMessage: string = '';
-    public getData: DataManager;
+    public getData!: DataManager;
     public result: Order[] = [];
 
     public ngOnInit(): void {
-       this.getData= new DataManager({ 
+       this.getData = new DataManager({ 
             url: SERVICE_URI + 'api/Orders', 
             adaptor: new WebApiAdaptor() 
         });
     }
 
-    public executeQuery(event:MouseEvent): void { 
+    public executeQuery(event: MouseEvent): void { 
         this.statusMessage = "Fetching data...";
         this.getData.executeQuery(new Query()).then((e: ReturnOption) => {
             this.result = e.result as Order[];
