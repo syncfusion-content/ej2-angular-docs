@@ -2,11 +2,9 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ListViewComponent, ListViewModule } from '@syncfusion/ej2-angular-lists';
 import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-enableRipple(true);
 
 interface FruitItem {
     text: string;
