@@ -14,13 +14,13 @@ template: `<ejs-grid #persistGrid height="400" id="persistGrid" [dataSource]="da
                 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 ></e-column>
                 <e-column field='CustomerID' headerText='Customer ID' width=150 ></e-column>
                 <e-column field='ShipCity' headerText='Ship City' width=150 ></e-column>
-                <e-column field='ShipName' headerText='Ship Name' width=150 template='#template' ></e-column>
+                <e-column field='ShipName' headerText='Ship Name' width=150 ></e-column>
               </e-columns>
             </ejs-grid>`,
     providers: [GroupService, SortService, FilterService, PageService]
 })
-export class AppComponent implements OnInit {
-    @ViewChild('persistGrid', { static: true }) grid: GridComponent;
+export class AppComponent {
+    @ViewChild('persistGrid', { static: true }) grid!: GridComponent;
     public data: Observable<DataStateChangeEventArgs>;
     public pageSettings = { pageSize: 12, currentPage: 2 };
     public sortSettings = {
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
       this.data = service;
     }
     public created(): void {
-      const queries = this.grid.getDataModule().generateQuery(); // Generate the initial query state from the Grid's data module.
+      const queries = this.grid!.getDataModule().generateQuery(); // Generate the initial query state from the Grid's data module.
       const state = getStateEventArgument(queries); // Retrieve the Grid's current state based on the generated query.
       this.service.execute(state); // Send the retrieved state to the service to fetch data accordingly.
     }

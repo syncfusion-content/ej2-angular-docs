@@ -1320,4 +1320,4 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/adapter-result" %}
+{% previewsample "page.domainurl/samples/grid/adapter-result" %} 

@@ -339,6 +339,29 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
   
 {% previewsample page.domainurl/samples/grid/localization-cs6 %}
 
+### Set different locale text for two Grids in same page
+
+The Syncfusion Angular Grid allows configuring different [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) settings for multiple Grids displayed on the same page. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages.
+
+In this setup, each Grid can display text in a different language based on its assigned `locale`. The `load` function is used to define translations for specific languages, ensuring that each Grid correctly applies the localized text for headers, toolbar items, and action buttons.
+
+For example, when the first Grid is set to use the **fr-FR** locale, it applies the French translations loaded via **L10n.load**. The second Grid, set to **en-US**, retains the default English text. This demonstrates how localization can be customized per Grid without affecting other components on the page.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/localization-cs7/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="locale.json" %}
+{% include code-snippet/grid/localization-cs7/src/locale.json %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/localization-cs7/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample page.domainurl/samples/grid/localization-cs7 %} 
+
 ## Internationalization
 
 The Internationalization library in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a localized display of number, date, and time values in the Grid component based on the preferred language and region.
