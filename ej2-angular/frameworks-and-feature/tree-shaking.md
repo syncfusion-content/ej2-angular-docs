@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Tree shaking is a powerful optimization technique used in modern JavaScript and TypeScript development with tools like Webpack or Rollup. Its main goal is to remove dead or unused code from the application's bundle, resulting in smaller, more efficient, and faster-loading web applications.
 
-In this guide, we explore how tree shaking is implemented in Angular applications and how it synergizes with Syncfusion Angular components to optimize performance.
+In this guide, how tree shaking is implemented in Angular applications and how it synergizes with Syncfusion Angular components to optimize performance is explored.
 
 ## Tree Shaking in Angular  
 
@@ -55,7 +55,7 @@ Follow these steps to implement an Angular application with Syncfusion component
 
 > [Explore the Angular Tree Shaking Example on GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-tree-shaking)
 
-By adhering to these practices, you can significantly enhance the performance of your Angular application and deliver an improved user experience.
+By adhering to these practices, the performance of the Angular application can be significantly enhanced, delivering an improved user experience.
 
 ## Bundle size for Syncfusion Angular Grid component
 
@@ -70,7 +70,7 @@ The following table demonstrates the size of the Grid module and includes the ad
 | FilterService       | 1.68 MB  | 333.16 kB     |
 | GroupService        | 1.73 MB  | 340.22 kB     |
 
-N> Make sure you are using `GridModule` for the DataGrid component instead of `GridAllModule`. Using `GridAllModule` will increase the bundle size by including all features of DataGrid. To know about the feature modules of DataGrid, refer to this [documentation](https://ej2.syncfusion.com/angular/documentation/grid/module).
+N> Make sure to use `GridModule` for the DataGrid component instead of `GridAllModule`. Using `GridAllModule` will increase the bundle size by including all features of DataGrid. To know about the feature modules of DataGrid, refer to this [documentation](https://ej2.syncfusion.com/angular/documentation/grid/module).
 
 ## See also
 

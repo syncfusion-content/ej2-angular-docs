@@ -8,60 +8,65 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# System Requirements for Angular Components 
+# System Requirements for Syncfusion Angular Components
 
-This section outlines the essential system requirements needed to work effectively with Syncfusion Angular UI components.
+This guide outlines the essential system requirements for optimal performance and compatibility when working with Syncfusion Angular UI components.
 
 ## Angular Version
 
-Ensure your Angular version is 6 or above to seamlessly integrate Syncfusion Angular UI components into your project.
-
-To verify your Angular CLI version, execute the following command in your terminal:
+Syncfusion Angular UI components are compatible with Angular 12 and above. To verify the Angular CLI version, run the following command in the terminal:
 
 ```bash
-ng --version
+ng version
 ```
 
 ## Node.js
 
-For Angular to function properly, an [active LTS or maintenance LTS](https://nodejs.org/en/about/previous-releases) version of Node.js is required.
+Angular requires an [active LTS or maintenance LTS version](https://nodejs.org/en/about/releases) of Node.js. The latest LTS version is recommended for best performance and security.
 
-For installation guidance, visit [nodejs.org](https://nodejs.org/en/). To check the Node.js version installed on your system, enter the following command in the terminal:
+To install Node.js, visit [nodejs.org](https://nodejs.org/en/). After installation, check the Node.js version by running:
 
 ```bash
-node -v
+node --version
 ```
 
-## Browser Support
+## Development Environment
 
-Syncfusion Angular UI components are compatible only with modern browsers. For detailed compatibility information, refer to the [browser compatibility](./browser/) section.
+While not strictly necessary, an Integrated Development Environment (IDE) or a robust text editor can significantly enhance the Angular development experience. Some popular options include:
 
-## Angular Supported Versions
+- Visual Studio Code (with Angular extensions)
+- WebStorm
+- Sublime Text
+- Atom
 
-The table below lists the Angular versions supported by various Syncfusion Angular UI component releases:
+Alternatively, Angular development can be carried out using any text editor and the Angular CLI (Command Line Interface) in a terminal.
 
-| Version | Syncfusion Angular Components Version |
-| ------------- | ------------- |
-| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
-| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
-| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
-| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 and above |
-| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 and above |
-| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 and above |
-| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
-| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 and above |
-| [Angular v11](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7/) | 18.4.31 and above |
-| [Angular v10](https://blog.angular.io/version-10-of-angular-now-available-78960babd41/) | 18.2.55 and above |
-| [Angular v9](https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3/) | 17.4.51 and above |
-| [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27/) | 17.1.50 and above |
-| [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c/) | 16.3.32 and above |
+## Browser Compatibility
 
-## See Also
+Syncfusion Angular UI components are designed to work with modern browsers. For detailed compatibility information, refer to the [browser compatibility guide](./browser/).
 
-- [Upgrade Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
+## Angular Version Compatibility
 
-Gain insights on how to upgrade your Syncfusion components seamlessly with our comprehensive upgrade guide.
+The table below shows which Syncfusion Angular UI component versions are compatible with different Angular releases:
 
-- [Setting Up the Local Environment and Workspace](https://v17.angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)
+| Angular Version | Minimum Syncfusion Angular Components Version |
+|-----------------|-----------------------------------------------|
+|[ Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/)| 21.1.39 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+|[Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/)| 20.2.36 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above | | 19.4.38 |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
 
-Learn the steps necessary to establish your local development environment and workspace effectively.
+
+> Note: Using the latest version of Syncfusion Angular components compatible with the project's Angular version is recommended for the best features and performance.
+
+## Additional Resources
+
+- [Upgrading Syncfusion Components](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/): Instructions for upgrading Syncfusion components to the latest version.
+
+- [Setting Up the Development Environment](https://angular.io/guide/setup-local): Official Angular guide on setting up a local development environment.
+
+- [Syncfusion Angular Getting Started Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli): Step-by-step instructions to start using Syncfusion Angular components in a project.
