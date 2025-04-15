@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Context menu component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Context menu component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Context Menu Component | Syncfusion
+description: Checkout and learn about getting started with Angular Context Menu component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Context menu component
+# Getting Started with Angular Context Menu Component
 
 This section explains how to create a simple ContextMenu, and demonstrate the basic usage of the ContextMenu component in an Angular environment.
 
@@ -179,7 +179,7 @@ The following example shows a basic `ContextMenu` component.
 
 ## Rendering items with Separator
 
-The Separators are the horizontal lines used to separate the menu items. You `cannot` select the separators. You can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property. Cut, Copy, and Paste menu items are grouped using `separator` property in the following sample.
+The Separators are the horizontal lines used to separate the menu items. You `cannot` select the separators. You can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property. Cut, Copy, and Paste menu items are grouped using `separator` property in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,5 +195,5 @@ The Separators are the horizontal lines used to separate the menu items. You `ca
   
 {% previewsample "page.domainurl/samples/context-menu/separators-cs1" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property should not be given along with
-the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property should not be given along with
+the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/).
