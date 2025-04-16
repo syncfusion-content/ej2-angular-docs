@@ -41,7 +41,7 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/globalization/localization" %}
+{% previewsample "page.domainurl/samples/speech-to-text/globalization/localization/index" %}
 
 ## RTL
 
@@ -59,4 +59,4 @@ RTL provides an option to switch the text direction and layout of the SpeechToTe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/globalization/rtl" %}
+{% previewsample "page.domainurl/samples/speech-to-text/globalization/rtl/index" %}

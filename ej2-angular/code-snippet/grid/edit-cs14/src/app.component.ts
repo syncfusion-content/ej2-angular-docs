@@ -8,40 +8,34 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
 import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 import { purchaseData } from './datasource';
 import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DatePickerAllModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        MultiSelectModule,
-        AutoCompleteModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+  imports: [
+    GridModule,
+    DatePickerAllModule,
+    FormsModule,
+    TimePickerModule,
+    FormsModule,
+    TextBoxModule,
+    MultiSelectModule,
+    AutoCompleteModule
+  ],
+  providers: [EditService, ToolbarService, SortService, PageService],
+  standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true'  width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' type= 'string' [edit]='daParams' width=140></e-column>
-                    <e-column field='Freight' headerText='Freight' type= 'number' textAlign= 'Right' editType= 'numericedit' format= 'C2' width=120></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'yMd' editType= 'datepickeredit' width=150></e-column>
-                </e-columns>
-               </ejs-grid>`,
-  providers: [ToolbarService, EditService, PageService],
+  template: `
+    <ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
+      <e-columns>
+        <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true'  width=100></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' type= 'string' [edit]='daParams' width=140></e-column>
+        <e-column field='Freight' headerText='Freight' type= 'number' textAlign= 'Right' editType= 'numericedit' format= 'C2' width=120></e-column>
+        <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'yMd' editType= 'datepickeredit' width=150></e-column>
+      </e-columns>
+    </ejs-grid>`,
 })
 export class AppComponent implements OnInit {
   public data?: object[];
@@ -93,6 +87,3 @@ export class AppComponent implements OnInit {
     };
   }
 }
-
-
-

@@ -26,7 +26,7 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/transcript" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/transcript/index" %}
 
 ## Setting language
 
@@ -44,7 +44,7 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/language" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/language/index" %}
 
 ## Allowing interim results
 
@@ -62,7 +62,7 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/interimResults" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/interimResults/index" %}
 
 ## Managing listening state
 
@@ -94,7 +94,7 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/listeningState" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/listeningState/index" %}
 
 ## Show or hide tooltip
 
@@ -112,7 +112,7 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/showTooltip" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/showTooltip/index" %}
 
 ## Setting disabled
 
@@ -130,7 +130,7 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/disabled" %}
+{% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/disabled/index" %}
 
 ## Setting html attributes
 
