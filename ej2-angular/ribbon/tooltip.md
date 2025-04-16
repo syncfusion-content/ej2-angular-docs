@@ -27,9 +27,6 @@ You can use the [title](https://ej2.syncfusion.com/angular/documentation/api/rib
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/TooltipTitle/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/TooltipTitle/src/app.component.css %}
-{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/ribbon/TooltipTitle" %}
@@ -48,9 +45,6 @@ You can use the [content](https://ej2.syncfusion.com/angular/documentation/api/r
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/TooltipContent/src/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/TooltipContent/src/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   

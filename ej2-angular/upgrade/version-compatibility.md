@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Supported Versions
+# Angular Version Compatibility for Syncfusion<sup style="font-size:70%">&reg;</sup> Components
 
-## Angular Version Compatibility
+## Supported Angular Versions
 
-The table below outlines the compatible Angular versions for different releases of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
+The following table outlines the compatibility between Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components and supported Angular versions:
 
-| Angular Version | Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
-| --------------- | ------------------------------------- |
+| Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
+| --------------- | ------------------------------------------------ |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
@@ -24,26 +24,64 @@ The table below outlines the compatible Angular versions for different releases 
 | [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 and above |
 | [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
 | [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 and above |
-| [Angular v11](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7/) | 18.4.31 and above |
-| [Angular v10](https://blog.angular.io/version-10-of-angular-now-available-78960babd41/) | 18.2.55 and above |
-| [Angular v9](https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3/) | 17.4.51 and above |
-| [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27/) | 17.1.50 and above |
-| [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c/) | 16.3.32 and above |
 
-> From version 20.2.36 onwards, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy), supporting Angular 12 and above. For versions >=20.2.36, add the suffix `-ngcc` to the package version in the `package.json` (e.g., `@syncfusion/ej2-angular-grids: "20.2.38-ngcc"`). For more details on Angular package installation, refer to [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
+## Ivy and Non-Ivy Package Compatibility
 
-## Syncfusion<sup style="font-size:70%">&reg;</sup> Version Information
+Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy compiler](https://angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two different package distributions:
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> adheres to a quarterly release schedule, delivering new volumes every three months. To streamline tracking of these releases, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components use a semantic versioning system with the format **Major.Minor.Revision**. This system allows developers to easily follow changes with each new version.
+1. **Ivy-compatible packages**: These are the default packages and do not require any special suffix.
 
-For instance, a release version like `22.1.34` can be interpreted as follows:
+2. **Non-Ivy (View Engine) packages**: For applications still using the View Engine, append the `-ngcc` suffix to the package version in the `package.json` file.
 
-* **22** - Indicates the `major release` version, updated every three months including major enhancements, new features, bug fixes, and breaking changes.
-* **1** - Represents the `minor release` version, highlighting new features and bug fixes without introducing breaking changes.
-* **34** - Stands for the `revision number`, incremented for weekly patch releases, mainly consisting of bug fixes without new features or breaking changes.
+### Usage of ngcc Packages
 
-## See Also
+The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compatible with Ivy-based applications. For Syncfusion<sup style="font-size:70%">&reg;</sup> components, use the following guidelines:
 
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
+- **For Ivy-based applications (Angular 12 and above)**: Use the default packages without any suffix.
 
-* [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)
+  Example:
+  ```json
+  "@syncfusion/ej2-angular-grids": "20.2.38"
+  ```
+
+- **For non-Ivy applications (using View Engine)**: Add the `-ngcc` suffix to the package version.
+
+  Example:
+  ```json
+  "@syncfusion/ej2-angular-grids": "20.2.38-ngcc"
+  ```
+
+> **Note:** The `-ngcc` suffix is only required for versions 20.2.36 and later when using non-Ivy applications. For Ivy-based applications, which is the default for Angular 12 and above, use the packages without the suffix.
+
+For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-syncfusion-grid-package).
+
+## Understanding Syncfusion<sup style="font-size:70%">&reg;</sup> Version Numbers
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
+
+For example, a release version `22.1.34` can be interpreted as follows:
+
+**22** - Major version (updated quarterly)
+This number represents significant updates to the library. It may include major enhancements, new features, bug fixes, and potential breaking changes. Syncfusion<sup style="font-size:70%">&reg;</sup> increments this number every three months as part of their quarterly release cycle.
+
+**1** - Minor version
+The minor version indicates the release of new features and bug fixes that maintain backward compatibility. When Syncfusion<sup style="font-size:70%">&reg;</sup> adds functionality in a backwards-compatible manner, they increment this number.
+
+**34** - Patch version
+This number is incremented for weekly patch releases. These releases primarily consist of bug fixes and minor improvements that do not introduce new features or breaking changes.
+
+By understanding this versioning system, developers can easily assess the impact and nature of each Syncfusion<sup style="font-size:70%">&reg;</sup> update, helping them make informed decisions about when to upgrade their applications.
+
+## Staying Up-to-Date
+
+To ensure optimal performance and access to the latest features, it's recommended to keep Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components updated to the most recent version compatible with the Angular version in use. Regular updates provide:
+
+1. Access to new features and improvements
+2. Enhanced performance and stability
+3. Timely bug fixes and security patches
+
+## Additional Resources
+
+* [Syncfusion Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
+* [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade-guide/)
+* [Angular Update Guide](https://update.angular.io/)
