@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Datetimepicker component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Datetimepicker component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular DateTime Picker Component | Syncfusion
+description: Checkout and learn about getting started with Angular DateTime Picker component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Datetimepicker component
+# Getting Started with Angular DateTime Picker Component
 
 The following section explains the steps required to create a simple DateTimePicker component and also it demonstrates the basic usage of the DateTimePicker.
 
@@ -194,7 +194,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 
 > If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
 
-N> You can refer to our [Angular DateTime Picker]( https://www.syncfusion.com/angular-ui-components/angular-datetime-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular DateTime Picker example](https://ej2.syncfusion.com/angular/demos/#/material/datetimepicker/default) that shows how to render the DateTime Picker in Angular.
+N> You can refer to our [Angular DateTime Picker]( https://www.syncfusion.com/angular-components/angular-datetime-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular DateTime Picker example](https://ej2.syncfusion.com/angular/demos/#/material/datetimepicker/default) that shows how to render the DateTime Picker in Angular.
 
 ## See Also
 
