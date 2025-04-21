@@ -15,10 +15,10 @@ The features of the ListView component such as remote data-binding take more tim
 Refer to the following code sample to render the spinner component.
 
 ```typescript
-    createSpinner({
-        target: this.spinnerEle.nativeElement
-    });
-    showSpinner(this.spinnerEle.nativeElement);
+createSpinner({
+    target: this.spinnerEle.nativeElement
+});
+showSpinner(this.spinnerEle.nativeElement);
 ```
 
 Refer to the following code sample to render the ListView component.

@@ -6,8 +6,8 @@ import { Component, ViewChild } from '@angular/core';
 // Add the node to the TreeView component
 @Component({
   imports: [
-          TreeViewModule
-      ],
+    TreeViewModule
+  ],
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>        
@@ -32,7 +32,7 @@ export class AppComponent {
     { id: 10, pid: 7, name: 'Child 3' },
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
-  
+
   //Add parent node and child node to the TreeView component
   onClick1(event: any) {
     (this.tree as TreeViewComponent).addNodes([

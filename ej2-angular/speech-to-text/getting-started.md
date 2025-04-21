@@ -135,7 +135,7 @@ The following example shows a default SpeechToText component.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/getting-started" %}
+{% previewsample "page.domainurl/samples/speech-to-text/getting-started/index" %}
 
 > The [SpeechToText](../api/speech-to-text/) component requires an internet connection and using a browser that supports [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) from the Web Speech API.
 
@@ -157,4 +157,4 @@ The following example shows how to configure `buttonSettings` in SpeechToText co
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/button-settings" %}
+{% previewsample "page.domainurl/samples/speech-to-text/button-settings/index" %}

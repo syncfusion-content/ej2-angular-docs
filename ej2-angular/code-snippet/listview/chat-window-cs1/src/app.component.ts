@@ -2,22 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ListViewModule, ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    ListViewModule, ButtonModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
     <ejs-listview id='List' #list [dataSource]='data' headerTitle="Chat" showHeader="true" width="350px" [fields]='fields'>
         <ng-template #template let-data="">
             <div class="settings" *ngIf="data.chat!='receiver' then senderTemplate else receiverTemplate "></div>
@@ -43,7 +36,7 @@ standalone: true,
     <div style="width: 350px;margin: 0 auto;"><input #textbox id="name" style="width: 275px" class="e-input" type="text" placeholder="Type your message" />
     <button ejs-button id="btn" style="float:right" (click)="btnClick()">Send</button> </div>
         `,
-  })
+})
 
 export class AppComponent {
 

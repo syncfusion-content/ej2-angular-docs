@@ -19,6 +19,5 @@ export class AppComponent {
     { content: 'Design approved' },
     { content: 'Product delivered' }
   ];
-
 }
 

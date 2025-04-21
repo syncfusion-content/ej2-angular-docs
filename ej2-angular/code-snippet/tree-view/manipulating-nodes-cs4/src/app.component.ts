@@ -5,12 +5,12 @@ import { Component, ViewChild } from '@angular/core';
 
 // Refresh the node in TreeView component
 @Component({
-    imports: [
-            TreeViewModule
-        ],
-    standalone: true,
-    selector: 'app-container',
-    template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'>
+  imports: [
+    TreeViewModule
+  ],
+  standalone: true,
+  selector: 'app-container',
+  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'>
     </ejs-treeview></div>
     <div id="btn">
         <button id="button" (click)="onClick($event)">Refresh Node</button></div>`
@@ -33,8 +33,8 @@ export class AppComponent {
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
   onClick(event: any) {
     // Refresh the node having id 4 in the TreeView component.
-    let nodeData = (this.tree as TreeViewComponent).getTreeData('4');    
-      nodeData[0]['name'] = 'Node refreshed';    
-      (this.tree as TreeViewComponent).refreshNode('4', nodeData); // Refresh the node with new data.    
+    let nodeData = (this.tree as TreeViewComponent).getTreeData('4');
+    nodeData[0]['name'] = 'Node refreshed';
+    (this.tree as TreeViewComponent).refreshNode('4', nodeData); // Refresh the node with new data.    
   }
 }

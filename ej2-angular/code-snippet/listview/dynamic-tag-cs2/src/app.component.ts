@@ -29,7 +29,7 @@ import { CommonModule } from '@angular/common';
             <span class="advanced-option-list">
               <span *ngFor="let tag of data.tags" class="advanced-option">
                 <span class="label">{{tag}}</span>
-                <span class="delete" (click)="removeTag(data, tag)">×</span>
+                <span class="e-icons e-close" (click)="removeTag(data, tag)"></span>
               </span>
             </span>
           </div>

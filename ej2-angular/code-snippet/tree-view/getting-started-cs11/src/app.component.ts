@@ -6,12 +6,10 @@ import { Component, ViewChild } from '@angular/core';
 import { NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        FormsModule,TreeViewModule
+    imports: [
+        FormsModule, TreeViewModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     // specifies the template string for the TreeView component
     template: `<div id='treeparent'><ejs-treeview #tree id='treeelement' [fields]='field' [allowMultiSelection]='allowMultiSelection' [selectedNodes]='selectedNodes' (nodeSelected)='nodeSelected($event)'></ejs-treeview></div>`
@@ -54,7 +52,7 @@ export class AppComponent {
     // set the Multi Selection option to the TreeView
     public allowMultiSelection: boolean = true;
     //set the Selected nodes to the TreeView
-    public selectedNodes: string[] = ['2','6'];
+    public selectedNodes: string[] = ['2', '6'];
     //Bind the nodeSelected event
     public nodeSelected(e: NodeSelectEventArgs) {
         alert("The selected node's id: " + this.tree?.selectedNodes); // To alert the selected node's id.

@@ -7,8 +7,8 @@ import { Component, ViewChild } from '@angular/core';
 // Move the node to the target node
 @Component({
   imports: [
-          TreeViewModule
-      ],
+    TreeViewModule
+  ],
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
@@ -33,6 +33,6 @@ export class AppComponent {
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
   onClick(event: any) {
     // Move the node with id 2 to the target node with id 3 to the index of 1.
-    (this.tree as TreeViewComponent).moveNodes(['2'], '3', 1); 
+    (this.tree as TreeViewComponent).moveNodes(['2'], '3', 1);
   }
 }

@@ -35,12 +35,12 @@ You can customize the ListView using the [template](https://ej2.syncfusion.com/a
 
   ```typescript
     <ng-template #template let-data="">
-                  <div class="e-list-wrapper e-list-multi-line e-list-avatar">
-                      <span class="e-avatar e-avatar-circle" *ngIf="data.avatar !== ''">{{data.avatar}}</span>
-                      <span class="{{data.pic}} e-avatar e-avatar-circle" *ngIf="data.pic !== '' "> </span>
-                      <span class="e-list-item-header">{{data.text}}</span>
-                      <span class="e-list-content">{{data.contact}}</span>
-                  </div>
+      <div class="e-list-wrapper e-list-multi-line e-list-avatar">
+          <span class="e-avatar e-avatar-circle" *ngIf="data.avatar !== ''">{{data.avatar}}</span>
+          <span class="{{data.pic}} e-avatar e-avatar-circle" *ngIf="data.pic !== '' "> </span>
+          <span class="e-list-item-header">{{data.text}}</span>
+          <span class="e-list-content">{{data.contact}}</span>
+      </div>
       </ng-template>
   ```
 

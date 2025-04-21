@@ -28,15 +28,13 @@ In this section, we will discuss about rendering of list items in grid layout.
 
 * Now, add the below CSS to list item. This will make list items to render in grid layout
 
-        ```css
-
-        #element .e-list-item {
-                height: 100px;
-                width: 100px;
-                float: left;
-        }
-
-        ```
+```css
+#element .e-list-item {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+```
 
 In the below sample, we have rendered List items in grid layout.
 
@@ -64,10 +62,9 @@ We can add list item using [`addItem`](https://ej2.syncfusion.com/angular/docume
 
 ```typescript
 
- this.$refs.listViewInstance.addItem([{text: 'Apricot', id: '32'}]);
+this.$refs.listViewInstance.addItem([{text: 'Apricot', id: '32'}]);
 
 ```
-
 In the below sample, you can add new fruit item by clicking add button which will open dialog box with fruit name and image URL text box. After entering the item details, click the add button. This will add your new fruit item.
 
 ### Remove item

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Validate the text when renaming the tree node in Angular TreeView component
 
-You can validate the tree node text while editing using the[`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event of the TreeView.
+You can validate the tree node text while editing using the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event of the TreeView.
 
 The following example demonstrates how to validate and prevent empty values in a tree node
 
