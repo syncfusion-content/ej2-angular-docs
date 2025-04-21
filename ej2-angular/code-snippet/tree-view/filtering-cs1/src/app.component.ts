@@ -3,10 +3,9 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 import { FieldsSettingsModel } from '@syncfusion/ej2-navigations';
-import {MaskedTextBoxComponent} from "@syncfusion/ej2-angular-inputs"
+import { MaskedTextBoxComponent } from "@syncfusion/ej2-angular-inputs"
 import { Component, Inject, ViewChild } from '@angular/core';
 import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-data';
 
@@ -14,12 +13,10 @@ import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-dat
  * Filtering tree nodes sample
  */
 @Component({
-imports: [
-        FormsModule,TreeViewModule,MaskedTextBoxModule 
+    imports: [
+        FormsModule, TreeViewModule, MaskedTextBoxModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'><ejs-maskedtextbox #maskObj id="search" (change)="searchNodes($event)"></ejs-maskedtextbox><ejs-treeview #treeviewObj id="default" [fields]='field'></ejs-treeview></div>`
 })
@@ -58,12 +55,12 @@ export class AppComponent {
     ];
 
     // Mapping TreeView fields property with data source properties
-    public field:Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', expanded: "expanded" }
+    public field: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', expanded: "expanded" }
 
-   //Change the dataSource for TreeView
+    //Change the dataSource for TreeView
     public changeDataSource(data: Object[]) {
         (this.listTreeObj as TreeViewComponent).fields = {
-            dataSource: data, id: 'id', text: 'name',parentID: 'pid', hasChildren: 'hasChild'
+            dataSource: data, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild'
         } as FieldsSettingsModel;
     }
 
@@ -107,7 +104,7 @@ export class AppComponent {
         let nodes = [];
         nodes.push(fList["id"] as any);
         let query2 = new Query().where('id', 'equal', fList["pid"], false);
-        let fList1 = new  DataManager(list).executeLocal(query2);
+        let fList1 = new DataManager(list).executeLocal(query2);
         if (fList1.length != 0) {
             let pNode = this.getFilterItems(fList1[0], list);
             for (let i = 0; i < pNode.length; i++) {

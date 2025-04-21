@@ -16,21 +16,20 @@ enableRipple(true);
     standalone: true,
     selector: 'my-app',
     template: `<div id="text1">
-            <input #textbox class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name" (keyup)="onFirstKeyUp($event)" />
-              </div>
-            <ejs-listview #list1 id='list-1' [dataSource]='firstListData' [fields]='fields' [sortOrder]='Ascending'  (select)="onFirstListSelect()"></ejs-listview>
-             <div id="btn">
-             <button ejs-button #btn1 id="firstBtn" (click)="firstbtnclick()"> >> </button>
-             <button ejs-button #btn2 id="secondBtn" [disabled]=true (click)="secondbtnclick()"> > </button>
-             <button ejs-button #btn3 id="thirdBtn" [disabled]=true (click)="thirdbtnclick()"> < </button>
-             <button ejs-button #btn4 id="fourthBtn" (click)="fourthbtnclick()"> << </button>
-             </div>
-
-            <div id="text2">
-            <input #text class="e-input" type="text" id="secondInput" placeholder="Filter" title="Type in a name" (keyup)="onSecondKeyUp($event)" />
+        <input #textbox class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name" (keyup)="onFirstKeyUp($event)" />
             </div>
-            <ejs-listview #list2 id='list-2' [dataSource]='secondListData' [fields]='fields' [sortOrder]='Ascending' (select)="onSecondListSelect()"></ejs-listview>
-        `,
+        <ejs-listview #list1 id='list-1' [dataSource]='firstListData' [fields]='fields' [sortOrder]='Ascending'  (select)="onFirstListSelect()"></ejs-listview>
+            <div id="btn">
+            <button ejs-button #btn1 id="firstBtn" (click)="firstbtnclick()"> >> </button>
+            <button ejs-button #btn2 id="secondBtn" [disabled]=true (click)="secondbtnclick()"> > </button>
+            <button ejs-button #btn3 id="thirdBtn" [disabled]=true (click)="thirdbtnclick()"> < </button>
+            <button ejs-button #btn4 id="fourthBtn" (click)="fourthbtnclick()"> << </button>
+            </div>
+
+        <div id="text2">
+        <input #text class="e-input" type="text" id="secondInput" placeholder="Filter" title="Type in a name" (keyup)="onSecondKeyUp($event)" />
+        </div>
+        <ejs-listview #list2 id='list-2' [dataSource]='secondListData' [fields]='fields' [sortOrder]='Ascending' (select)="onSecondListSelect()"></ejs-listview>`,
 })
 
 export class AppComponent {
@@ -199,5 +198,3 @@ export class AppComponent {
 
     }
 }
-
-

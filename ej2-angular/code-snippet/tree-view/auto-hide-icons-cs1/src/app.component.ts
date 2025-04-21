@@ -2,29 +2,23 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent} from '@syncfusion/ej2-angular-navigations';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 /**
  * TreeView Auto hide/show expand/collapse icons
  */
 @Component({
-imports: [
-        FormsModule,TreeViewModule
-    ],
-
-
-standalone: true,
-    selector: 'app-container',
-    template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' (created)='onCreate($event)'></ejs-treeview></div>`
+  imports: [
+    FormsModule, TreeViewModule
+  ],
+  standalone: true,
+  selector: 'app-container',
+  template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' (created)='onCreate($event)'></ejs-treeview></div>`
 })
-export class AppComponent {
 
-   // Data source for TreeView component
-   public countries: Object[] = [
+export class AppComponent {
+  // Data source for TreeView component
+  public countries: Object[] = [
     { id: 1, name: 'India', hasChild: true },
     { id: 2, pid: 1, name: 'Assam' },
     { id: 3, pid: 1, name: 'Bihar' },
@@ -49,39 +43,39 @@ export class AppComponent {
     { id: 23, pid: 21, name: 'Shanghai' },
     { id: 24, pid: 21, name: 'Beijing' },
     { id: 25, pid: 21, name: 'Shantou' }
-    ];
-    public field:Object ={ dataSource: this.countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
+  ];
+  public field: Object = { dataSource: this.countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
 
-    @ViewChild ('treevalidate') tree?: TreeViewComponent;
+  @ViewChild('treevalidate') tree?: TreeViewComponent;
 
-    public onCreate(args: any): void {
-      let collapse: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-collapsible') as NodeListOf<Element>;
-      let expand: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-expandable') as NodeListOf<Element>;
+  public onCreate(args: any): void {
+    let collapse: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-collapsible') as NodeListOf<Element>;
+    let expand: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-expandable') as NodeListOf<Element>;
+    this.hideIcon(expand, collapse);
+    (this.tree as any)?.element.addEventListener('mouseenter', (event: any) => {
+      this.showIcon(expand, collapse);
+    });
+    (this.tree as any)?.element.addEventListener('mouseleave', (event: any) => {
       this.hideIcon(expand, collapse);
-      (this.tree as any)?.element.addEventListener('mouseenter', (event:any) => {
-        this.showIcon(expand, collapse);
-      });
-      (this.tree as any)?.element.addEventListener('mouseleave', (event:any) => {
-        this.hideIcon(expand, collapse);
-      });
+    });
+  }
+  // hides expand/collapse icon on hovering the mouse
+  public hideIcon(expand: NodeListOf<Element>, collapse: NodeListOf<Element>) {
+    for (let i: number = 0; i < collapse.length; i++) {
+      collapse[i].setAttribute('style', 'visibility: hidden');
     }
-    // hides expand/collapse icon on hovering the mouse
-    public hideIcon(expand: NodeListOf<Element>, collapse: NodeListOf<Element>) {
-      for(let i: number = 0; i < collapse.length; i++ ){
-        collapse[i].setAttribute('style','visibility: hidden');
-      }
-      for(let j: number = 0; j < expand.length; j++ ){
-        expand[j].setAttribute('style','visibility: hidden');
-      }
+    for (let j: number = 0; j < expand.length; j++) {
+      expand[j].setAttribute('style', 'visibility: hidden');
     }
+  }
 
   // shows expand/collapse icon while leaving the mouse
   public showIcon(expand: NodeListOf<Element>, collapse: NodeListOf<Element>) {
-    for(let i: number = 0; i < collapse.length; i++ ){
-      collapse[i].setAttribute('style',"visibility");
+    for (let i: number = 0; i < collapse.length; i++) {
+      collapse[i].setAttribute('style', "visibility");
     }
-    for(let j: number = 0; j < expand.length; j++ ){
-      expand[j].setAttribute('style',"visibility");
+    for (let j: number = 0; j < expand.length; j++) {
+      expand[j].setAttribute('style', "visibility");
     }
   }
 }

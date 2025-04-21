@@ -34,4 +34,4 @@ The following example demonstrates how to configure the SpeechToText events.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/speech-to-text/events" %}
+{% previewsample "page.domainurl/samples/speech-to-text/events/index" %}

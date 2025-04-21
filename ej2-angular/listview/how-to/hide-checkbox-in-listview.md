@@ -15,12 +15,12 @@ The checkbox of the any list item can be hidden by using [`htmlAttributes`](http
 In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
 
 ```typescript
-    {
-        'text': 'New York',
-        'id': '3002',
-        'category': 'USA',
-        'htmlAttributes': { 'class': 'e-file e-checkbox-hidden' }
-    }
+{
+    'text': 'New York',
+    'id': '3002',
+    'category': 'USA',
+    'htmlAttributes': { 'class': 'e-file e-checkbox-hidden' }
+}
 ```
 
 Even though we have hidden the checkbox the functionality will be same for the list item which might affect the [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#getselecteditems) method. So, to counteract that we will follow certain logic in the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event. The Logic here is to remove the `e-active` class from the other checkbox hidden list item which will be added when we select on that item and retain `e-active` on currently selected item.

@@ -19,11 +19,10 @@ import { Component, ViewChild } from '@angular/core';
             </ng-template>
         </ejs-listview>
     </div>
-        `,
+    `,
 })
 
 export class AppComponent {
-
     public data = [
         { text: 'Date', id: '1', imgUrl: './dates.jpg' },
         { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
@@ -36,7 +35,4 @@ export class AppComponent {
         { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
         { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
     ];
-
 }
-
-

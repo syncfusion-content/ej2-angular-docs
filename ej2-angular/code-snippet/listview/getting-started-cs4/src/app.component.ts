@@ -1,60 +1,53 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component, ViewChild, AfterViewInit, ViewEncapsulation } from "@angular/core";
 import { DataManager, Query, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { createSpinner, showSpinner, setSpinner } from '@syncfusion/ej2-angular-popups';
 import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 
 @Component({
-imports: [
-        
+    imports: [
         ListViewModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <ejs-listview id='element' #list [dataSource]='dataSource' [width]='300' [query]='query' [fields]='fields' [showHeader]='true' [headerTitle]='headertitle' (actionComplete)='onActionComplete($event)' >
     </ejs-listview>
        <div #spinner id="spinner" ></div>
       `,
-        styles: [`
+    styles: [`
         #element {
-    display: block;
-    max-width: 400px;
-    min-height: 200px;
-    margin: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}
+            display: block;
+            max-width: 400px;
+            min-height: 200px;
+            margin: auto;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+        }
         `],
-        encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
-    @ViewChild('spinner') spinnerEle:any;
-    public dataSource= new DataManager({
+    @ViewChild('spinner') spinnerEle: any;
+    public dataSource = new DataManager({
         url: 'http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/',
         crossDomain: true
     })
     public query = new Query().from('Products').select('ProductID,ProductName').take(10);
-    public fields: Object = { id: 'ProductID', text: 'ProductName'  };
+    public fields: Object = { id: 'ProductID', text: 'ProductName' };
     public headertitle = 'Product Name';
-    AfterViewInit(){
-    createSpinner({
-        target: this.spinnerEle.nativeElement
-    });
-    showSpinner(this.spinnerEle.nativeElement);
-   }
-   onActionComplete(args:any){
-    this.spinnerEle.nativeElement.style.display = "none";
-   }
+    AfterViewInit() {
+        createSpinner({
+            target: this.spinnerEle.nativeElement
+        });
+        showSpinner(this.spinnerEle.nativeElement);
+    }
+    onActionComplete(args: any) {
+        this.spinnerEle.nativeElement.style.display = "none";
+    }
 }
 
 

@@ -18,7 +18,6 @@ import { ListViewComponent } from "@syncfusion/ej2-angular-lists";
 })
 
 export class AppComponent {
-
     public dataSource: Object = [
         {
             'text': 'Asia',

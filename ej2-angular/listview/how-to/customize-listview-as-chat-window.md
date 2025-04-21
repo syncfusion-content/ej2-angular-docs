@@ -18,26 +18,26 @@ ListView can be customizable as chat window. To achieve that, use ListView [temp
 Refer the below template code snippet for Template of chat window.
 
 ```typescript
-        <ng-template #template let-data="">
-            <div class="settings" *ngIf="data.chat!='receiver' then senderTemplate else receiverTemplate "></div>
-            <ng-template #senderTemplate>
-                <div id="content">
-                    <div class="name">{{data.text}}</div>
-                    <div id="info">{{data.contact}}</div>
-                </div>
-                <div id="image" *ngIf="data.avatar!=''"><span class="e-avatar img1 e-avatar-circle">{{data.avatar}}</span></div>
-                <div id="image" *ngIf="data.avatar==''"><span class="{{data.pic}} img1 e-avatar e-avatar-circle"> </span></div>
-            </ng-template>
-
-            <ng-template #receiverTemplate>
-                <div id="image2" *ngIf="data.avatar!=''"><span class="e-avatar img2 e-avatar-circle">{{data.avatar}}</span></div>
-                <div id="image2" *ngIf="data.avatar==''"><span class="{{data.pic}} img2 e-avatar e-avatar-circle"> </span></div>
-                <div id="content1">
-                    <div class="name1">{{data.text}}</div>
-                    <div id="info1">{{data.contact}}</div>
-                </div>
-            </ng-template>
+    <ng-template #template let-data="">
+        <div class="settings" *ngIf="data.chat!='receiver' then senderTemplate else receiverTemplate "></div>
+        <ng-template #senderTemplate>
+            <div id="content">
+                <div class="name">{{data.text}}</div>
+                <div id="info">{{data.contact}}</div>
+            </div>
+            <div id="image" *ngIf="data.avatar!=''"><span class="e-avatar img1 e-avatar-circle">{{data.avatar}}</span></div>
+            <div id="image" *ngIf="data.avatar==''"><span class="{{data.pic}} img1 e-avatar e-avatar-circle"> </span></div>
         </ng-template>
+
+        <ng-template #receiverTemplate>
+            <div id="image2" *ngIf="data.avatar!=''"><span class="e-avatar img2 e-avatar-circle">{{data.avatar}}</span></div>
+            <div id="image2" *ngIf="data.avatar==''"><span class="{{data.pic}} img2 e-avatar e-avatar-circle"> </span></div>
+            <div id="content1">
+                <div class="name1">{{data.text}}</div>
+                <div id="info1">{{data.contact}}</div>
+            </div>
+        </ng-template>
+    </ng-template>
 ```
 
 ## Chat order in template

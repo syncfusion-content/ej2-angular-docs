@@ -5,7 +5,6 @@ import { Component, ViewChild } from "@angular/core";
 
 @Component({
   imports: [
-
     ListViewModule
   ],
   standalone: true,

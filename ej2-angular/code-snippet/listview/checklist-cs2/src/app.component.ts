@@ -25,10 +25,8 @@ export class AppComponent {
         { 'text': 'McLaren P1', 'id': 'list-09' },
         { 'text': 'Ferrari LaFerrari', 'id': 'list-10' }
     ];
-
     public fields: Object = { text: 'text', id: 'id' };
     public position = 'Right';
-
 }
 
 

@@ -60,7 +60,6 @@ export class AppComponent {
                 }]
             }]
         },
-
         {
             'text': 'North America',
             'id': '02',
@@ -106,7 +105,6 @@ export class AppComponent {
                 }]
             }]
         },
-
         {
             'text': 'Europe',
             'id': '03',
@@ -240,11 +238,7 @@ export class AppComponent {
             }]
         }
     ];
-
     public fields: { [key: string]: string } = { tooltip: 'text' };
     public headertitle = 'Continent';
     public animation: Object = { duration: 0 };
-
 }
-
-

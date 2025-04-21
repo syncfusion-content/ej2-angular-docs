@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
+    imports: [
         ListViewModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `<ejs-listview id='List' [dataSource]='dataSource' [template]='templatecheck ? mob_template : win_template' headerTitle='Syncfusion Blog' [showHeader]='true'>
         <ng-template #mob_template let-dataSource="">
@@ -63,18 +56,18 @@ standalone: true,
 })
 
 export class AppComponent {
-   //Define an array of JSON data
+    //Define an array of JSON data
     public dataSource: any = [
         { Name: 'IBM Open-Sources Web Sphere Liberty Code', content: 'In September, IBM announced that it would be open-sourcing the code for WebSphere...', id: '1', image: 'https://ej2.syncfusion.com/demos/src/listview/images/1.png', timeStamp: 'Syncfusion Blog - October 19, 2017' },
-        { Name: 'Must Reads: 5 Big Data E-books to upend your development', content: 'Our first e-book was published in May 2012-jQuery Succinctly was the start of over...', id: '2', image: 'https://ej2.syncfusion.com/demos/src/listview/images/2.png', timeStamp: 'Syncfusion Blog - October 18, 2017'  },
-        { Name: 'The Syncfusion Global License: Your Questions, Answered ', content: 'Syncfusion recently hosted a webinar to cover the ins and outs of the Syncfusion global...', id: '4', image: 'https://ej2.syncfusion.com/demos/src/listview/images/3.png', timeStamp: 'Syncfusion Blog - October 18, 2017'  },
-        { Name: 'Know: What is Coming from Microsoft this Fall ', content: 'On October 17, Microsoft will release its Fall Creators Update for the Windows 10 platform...', id: '5', image: 'https://ej2.syncfusion.com/demos/src/listview/images/6.png', timeStamp: 'Syncfusion Blog - October 17, 2017'  }
+        { Name: 'Must Reads: 5 Big Data E-books to upend your development', content: 'Our first e-book was published in May 2012-jQuery Succinctly was the start of over...', id: '2', image: 'https://ej2.syncfusion.com/demos/src/listview/images/2.png', timeStamp: 'Syncfusion Blog - October 18, 2017' },
+        { Name: 'The Syncfusion Global License: Your Questions, Answered ', content: 'Syncfusion recently hosted a webinar to cover the ins and outs of the Syncfusion global...', id: '4', image: 'https://ej2.syncfusion.com/demos/src/listview/images/3.png', timeStamp: 'Syncfusion Blog - October 18, 2017' },
+        { Name: 'Know: What is Coming from Microsoft this Fall ', content: 'On October 17, Microsoft will release its Fall Creators Update for the Windows 10 platform...', id: '5', image: 'https://ej2.syncfusion.com/demos/src/listview/images/6.png', timeStamp: 'Syncfusion Blog - October 17, 2017' }
     ];
-public fields: Object = { text: 'Name' };
-public templatecheck?:Boolean;
-constructor(){
-    this.templatecheck = Browser.isDevice;
-}
+    public fields: Object = { text: 'Name' };
+    public templatecheck?: Boolean;
+    constructor() {
+        this.templatecheck = Browser.isDevice;
+    }
 }
 
 
