@@ -39,7 +39,7 @@ This section describes step by step process how to use Entity Framework to retri
 
 **3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Syncfusion Angular Grid.
 
-**4** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a Microsoft SQL Server database using the provided connection string. It includes a **DbSet<Orders>** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects as shown in the following code snippet.
+**4** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a Microsoft SQL Server database using the provided connection string. It includes a *DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1060,6 +1060,7 @@ When you run the application, the resultant Syncfusion Angular Grid will look li
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
 
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20UrlAdaptor/Grid_EntityFramework).
 
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
@@ -1076,7 +1077,7 @@ This section describes step by step process how to use Entity Framework to retri
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a **DbSet<Orders>** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
+  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a *DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
 
   * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
@@ -2121,4 +2122,6 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif) 
+![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20CustomAdaptor/Grid_EntityFramework).

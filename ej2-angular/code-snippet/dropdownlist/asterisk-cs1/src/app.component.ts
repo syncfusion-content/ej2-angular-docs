@@ -17,7 +17,15 @@ imports: [
 standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component with dataSource
-    template: `<ejs-dropdownlist id='ddlelement' [dataSource]='data' placeholder = 'Select a game' floatLabelType="Auto"></ejs-dropdownlist>`
+    template: `<ejs-dropdownlist id='ddlelement' [dataSource]='data' placeholder = 'Select a game' floatLabelType="Auto"></ejs-dropdownlist>`,
+    styles: [
+        `
+            .e-input-group.e-control-wrapper.e-float-input .e-float-text::after {
+                content: ' *';
+                color: red;
+            }
+        `,
+      ],
 })
 export class AppComponent {
     constructor() {
