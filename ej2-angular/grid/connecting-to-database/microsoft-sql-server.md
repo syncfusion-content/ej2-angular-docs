@@ -951,6 +951,8 @@ When you run the application, the resultant Syncfusion Angular Grid will look li
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
 
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20UrlAdaptor/Grid_MSSQL).
+
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
 This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
@@ -1924,3 +1926,5 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20CustomAdaptor/Grid_MSSQL).
