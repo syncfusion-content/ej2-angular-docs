@@ -20,7 +20,6 @@ export class AppComponent {
         { text: 'Pay Phone bill', id: '4' },
         { text: 'Play Football with your friends', id: '5' },
     ];
-
     public fields: Object = { text: 'text', id: 'id' };
 }
 

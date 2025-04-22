@@ -18,13 +18,13 @@ import { createSpinner, showSpinner, setSpinner } from '@syncfusion/ej2-angular-
       `,
     styles: [`
         #element {
-    display: block;
-    max-width: 400px;
-    min-height: 200px;
-    margin: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}
+            display: block;
+            max-width: 400px;
+            min-height: 200px;
+            margin: auto;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+        }
         `]
 })
 

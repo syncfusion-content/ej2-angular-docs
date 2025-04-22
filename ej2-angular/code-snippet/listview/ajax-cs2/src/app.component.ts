@@ -29,12 +29,10 @@ export class AppComponent {
   ];
   public fields: Object = { text: 'name', id: 'id' };
   ngOnInit() {
-    let ajax = new Ajax('./template.html', 'GET', false);
+    let ajax = new Ajax('https://helpej2.syncfusion.com/angular/documentation/code-snippet/listview/ajax-cs1/template', 'GET', false);
     ajax.onSuccess = (e: any) => {
       this.listtemplate = e;
     };
     ajax.send();
   }
 }
-
-

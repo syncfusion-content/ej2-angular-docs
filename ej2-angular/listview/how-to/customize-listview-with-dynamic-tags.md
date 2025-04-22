@@ -52,7 +52,6 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
             this.listObj.dataBind();
             this.dialog.show();
         }
-
     }
 
     ```
@@ -66,7 +65,7 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
         this.parentNode.parentNode.remove();
     }
 
-```
+    ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

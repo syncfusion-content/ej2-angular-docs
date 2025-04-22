@@ -14,11 +14,11 @@ We can set external `HTML` page content as [`template`](https://ej2.syncfusion.c
 
 ```typescript
 
-let ajax = new Ajax('./template.html', 'GET', false);
-    ajax.onSuccess = (e)=>{
-        this.listtemplate = e;
-    };
-    ajax.send();
+let ajax = new Ajax('https://helpej2.syncfusion.com/angular/documentation/code-snippet/listview/ajax-cs1/template', 'GET', false);
+ajax.onSuccess = (e)=>{
+    this.listtemplate = e;
+};
+ajax.send();
 
 ```
 

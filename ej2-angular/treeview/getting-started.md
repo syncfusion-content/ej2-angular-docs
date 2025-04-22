@@ -67,7 +67,7 @@ To mention the ngcc package in the **package.json** file, add the suffix `-ngcc`
 
 ## Adding CSS Reference
 
-* Add TreeView component's styles as given below in **styles.css**.
+Add TreeView component's styles as given below in **styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";

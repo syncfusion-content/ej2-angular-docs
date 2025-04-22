@@ -14,35 +14,35 @@ import { SelectEventArgs } from '@syncfusion/ej2-lists';
     `,
     styles: [`
     #listview {
-    display: block;
-    max-width: 400px;
-    margin: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
 
-#listview.e-listview .e-list-icon {
-    height: 24px;
-    width: 30px;
-}
+    #listview.e-listview .e-list-icon {
+        height: 24px;
+        width: 30px;
+    }
 
-.folder, .file  {
-    background: url('http://ej2.syncfusion.com/demos/src/listview/images/file_icons.png') no-repeat;
-    background-size: 300%;
-}
+    .folder, .file  {
+        background: url('http://ej2.syncfusion.com/demos/src/listview/images/file_icons.png') no-repeat;
+        background-size: 300%;
+    }
 
-.folder{
-    background-position: -5px -461px;
-}
+    .folder{
+        background-position: -5px -461px;
+    }
 
-.file {
-    background-position: -5px -151px;
-}
+    .file {
+        background-position: -5px -151px;
+    }
 
-.list {
-    color:deeppink !important;
-}
-`],
+    .list {
+        color:deeppink !important;
+    }
+    `],
     encapsulation: ViewEncapsulation.None
 })
 

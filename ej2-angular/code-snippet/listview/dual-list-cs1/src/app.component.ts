@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild } from "@angular/core";
 import { enableRipple } from "@syncfusion/ej2-base";
 import { DataManager, Query, ODataV4Adaptor } from "@syncfusion/ej2-data";
@@ -13,13 +10,10 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 enableRipple(true);
 
 @Component({
-imports: [
-        
+    imports: [
         ListViewModule, ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `<div id="text1">
             <input #textbox class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name" (keyup)="onFirstKeyUp($event)" />
@@ -43,38 +37,38 @@ export class AppComponent {
     public fields?: Object;
     public firstListData?: any; secondListData: any;
     Ascending: any;
-    constructor(){
-    this.firstListData  = [
-    { text: "Hennessey Venom", id: "list-01" },
-    { text: "Bugatti Chiron", id: "list-02" },
-    { text: "Bugatti Veyron Super Sport", id: "list-03" },
-    { text: "SSC Ultimate Aero", id: "list-04" },
-    { text: "Koenigsegg CCR", id: "list-05" },
-    { text: "McLaren F1", id: "list-06" }
-    ];
+    constructor() {
+        this.firstListData = [
+            { text: "Hennessey Venom", id: "list-01" },
+            { text: "Bugatti Chiron", id: "list-02" },
+            { text: "Bugatti Veyron Super Sport", id: "list-03" },
+            { text: "SSC Ultimate Aero", id: "list-04" },
+            { text: "Koenigsegg CCR", id: "list-05" },
+            { text: "McLaren F1", id: "list-06" }
+        ];
 
-   this.secondListData = [
-    { text: 'Aston Martin One- 77', id: 'list-07' },
-    { text: 'Jaguar XJ220', id: 'list-08' },
-    { text: 'McLaren P1', id: 'list-09' },
-    { text: 'Ferrari LaFerrari', id: 'list-10' },
-  ];
+        this.secondListData = [
+            { text: 'Aston Martin One- 77', id: 'list-07' },
+            { text: 'Jaguar XJ220', id: 'list-08' },
+            { text: 'McLaren P1', id: 'list-09' },
+            { text: 'Ferrari LaFerrari', id: 'list-10' },
+        ];
 
- this.fields = { text: "text", id: "id" };
-  }
-    @ViewChild('list1')firstListObj?: ListViewComponent;
-    @ViewChild('list2')secondListObj?: ListViewComponent;
-    @ViewChild('btn1')firstBtnObj?: ButtonComponent;
-    @ViewChild('btn2')secondBtnObj?: ButtonComponent;
-    @ViewChild('btn3')thirdBtnObj?: ButtonComponent;
-    @ViewChild('btn4')fourthBtnObj?: ButtonComponent;
-    @ViewChild('textbox')textboxEle: any;
-    @ViewChild('text')textEle: any;
-    ngAfterViewInit(){
+        this.fields = { text: "text", id: "id" };
+    }
+    @ViewChild('list1') firstListObj?: ListViewComponent;
+    @ViewChild('list2') secondListObj?: ListViewComponent;
+    @ViewChild('btn1') firstBtnObj?: ButtonComponent;
+    @ViewChild('btn2') secondBtnObj?: ButtonComponent;
+    @ViewChild('btn3') thirdBtnObj?: ButtonComponent;
+    @ViewChild('btn4') fourthBtnObj?: ButtonComponent;
+    @ViewChild('textbox') textboxEle: any;
+    @ViewChild('text') textEle: any;
+    ngAfterViewInit() {
         this.firstListData = ((this.firstListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
         this.secondListData = ((this.secondListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
     }
-       //Here, all list items are moved to the second list on clicking move all button
+    //Here, all list items are moved to the second list on clicking move all button
     firstbtnclick() {
         let e = this.firstListObj?.getSelectedItems();
         (this.secondListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (this.secondListObj as ListViewComponent).dataSource);
@@ -83,44 +77,44 @@ export class AppComponent {
         this.firstListData = this.firstListData.concat((this.firstListObj as ListViewComponent).dataSource);
         this.secondListData = ((this.secondListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
         (this.firstBtnObj as ButtonComponent).disabled = true;
-        this.onFirstKeyUp((e: any) => {});
+        this.onFirstKeyUp((e: any) => { });
         this.setButtonState();
     }
 
     //Here, the selected list items are moved to the second list on clicking move button
-  secondbtnclick() {
+    secondbtnclick() {
         let e = this.firstListObj?.getSelectedItems();
         (this.secondListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.secondListObj as ListViewComponent).dataSource, (e as any).data);
-        (this.firstListObj as any).removeItem((e: any) => {});
+        (this.firstListObj as any).removeItem((e: any) => { });
         this.firstListData = (this.firstListObj as ListViewComponent).dataSource;
         (this.secondListData = (this.secondListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
-        this.onFirstKeyUp((e: any) => {});
+        this.onFirstKeyUp((e: any) => { });
         (this.secondBtnObj as ButtonComponent).disabled = true;
         this.setButtonState();
     }
 
     //Here, the selected list items are moved to the first list on clicking move button
-   thirdbtnclick () {
+    thirdbtnclick() {
         let e = this.secondListObj?.getSelectedItems();
         (this.firstListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (e as any).data);
-        (this.secondListObj as any).removeItem((e: any) => {});
+        (this.secondListObj as any).removeItem((e: any) => { });
         this.secondListData = (this.secondListObj as ListViewComponent).dataSource;
         this.firstListData = ((this.firstListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
-        this.onSecondKeyUp((e: any) => {});;
+        this.onSecondKeyUp((e: any) => { });;
         (this.thirdBtnObj as ButtonComponent).disabled = true;
         this.setButtonState();
 
     }
 
     //Here, all list items are moved to the first list on clicking move all button
-   fourthbtnclick() {
+    fourthbtnclick() {
         let e = this.secondListObj?.getSelectedItems();
         (this.firstListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (this.secondListObj as ListViewComponent).dataSource);
         this.updateSecondListData();
         this.secondListObj?.removeMultipleItems((this.secondListObj as any).liCollection);
         this.secondListData = this.secondListData.concat((this.secondListObj as ListViewComponent).dataSource);
         this.firstListData = ((this.firstListObj as ListViewComponent).dataSource as { [key: string]: Object; }[]).slice();
-        this.onSecondKeyUp((e: any) => {});;
+        this.onSecondKeyUp((e: any) => { });;
         this.setButtonState();
 
     }
@@ -134,7 +128,7 @@ export class AppComponent {
                 }
             });
         });
-        this.textboxEle.nativeElement.value= '';
+        this.textboxEle.nativeElement.value = '';
         let ds: any = [];
         this.firstListData.forEach((data: any) => {
             ds.push(data);
@@ -179,8 +173,8 @@ export class AppComponent {
         }
     }
     //Here, filtering is handled using the dataManager for the second list
-     onSecondKeyUp(e:any) {
-        let value =this.textEle.nativeElement.value;
+    onSecondKeyUp(e: any) {
+        let value = this.textEle.nativeElement.value;
         let data = new DataManager(this.secondListData).executeLocal(new Query().where('text', 'startswith', value, true));
         if (!value) {
             (this.secondListObj as ListViewComponent).dataSource = this.secondListData.slice();
@@ -204,7 +198,6 @@ export class AppComponent {
             (this.fourthBtnObj as ButtonComponent).disabled = true;
             (this.thirdBtnObj as ButtonComponent).disabled = true;
         }
-
     }
 }
 

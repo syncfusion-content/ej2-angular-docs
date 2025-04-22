@@ -6,8 +6,8 @@ import { Component, ViewChild } from '@angular/core';
 // Update the node in TreeView component
 @Component({
   imports: [
-          TreeViewModule
-      ],
+    TreeViewModule
+  ],
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowEditing='allowEditing' [fields]='listfields'>

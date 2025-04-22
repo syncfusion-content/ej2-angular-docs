@@ -2,21 +2,14 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { ListViewComponent, ScrolledEventArgs } from '@syncfusion/ej2-angular-lists';
 
 @Component({
-imports: [
-        
-        ListViewModule, ButtonModule
-    ],
-
-
-standalone: true,
+  imports: [
+    ListViewModule, ButtonModule
+  ],
+  standalone: true,
   selector: 'my-app',
   template: `<div class="grid-container"><div><h3>Chat</h3>
     <ejs-listview id='listview' #list [dataSource]='result' height= 320
@@ -118,6 +111,3 @@ export class AppComponent {
     }
   }
 }
-
-
-

@@ -18,8 +18,7 @@ TreeView has `load on demand` (Lazy load), by default. This reduces bandwidth us
 
 By default, the `loadOnDemand` is set to true. By disabling this property, all the tree nodes are rendered at the beginning itself.
 
-You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview#databound) event to perform actions.
-This event will be triggered once the data source is populated in the TreeView.
+You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview#databound) event to perform actions. This event will be triggered once the data source is populated in the TreeView.
 
 ## Local data
 
@@ -27,8 +26,7 @@ To bind local data to the TreeView, you can assign a JavaScript object array to 
 
 The TreeView component requires three fields (**id**, **text**, and **parentID**) to render local data source.
 
-When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be
-provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
+When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
 
 * Hierarchical data
 
