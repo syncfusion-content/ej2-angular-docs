@@ -10,28 +10,30 @@ domainurl: ##DomainURL##
 
 # Build your first Angular app with our blocks
 
+This tutorial guides you through building an Angular application using Syncfusion's UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
+
 ## Before You Start: Real-Life Use Case  
 
 Before diving into the setup, let's explore a **real-life use case** — building a **Customer Support Portal** using our Angular UI Kit. This video tutorial walks you through the process step by step.  
 
 {% youtube "https://www.youtube.com/watch?v=EWGZJ9T7K40" %}  
 
-Once you’ve seen this use case in action, we’ll move on to setting up an Angular app and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
+Once you’ve seen this use case in action, the next step is to set up an Angular app and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
 
 ## Create a new Angular app
-To create a new Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
+To create a new Angular app, refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
 
-## Setting up Tailwind or Bootstrap 5.3 theme in the app
+## Setting up Tailwind CSS or Bootstrap 5.3 theme in the app
 
-After creating the new Angular app named **my-angular-app**, open it in Visual Studio Code (which we'll be using throughout this walkthrough). Once the app is open, before proceeding further, navigate to the **src -> app -> app.component.html** file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
+After creating the new Angular app named **my-angular-app**, open it in Visual Studio Code (which will be used throughout this walkthrough). Once the app is open, before proceeding further, navigate to the **src -> app -> app.component.html** file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
 
-The next step is to choose a theme, either **Tailwind** or **Bootstrap 5.3**, in either light or dark mode, and configure the app accordingly.
+The next step is to choose a theme, either **Tailwind CSS** or **Bootstrap 5.3**, in either light or dark mode, and configure the app accordingly.
 
-### Tailwind configuration
+### Tailwind CSS configuration
 
-If you choose **Tailwind** theme, follow these steps to configure it.
+If you choose **Tailwind CSS** theme, follow these steps to configure it.
 
 1. In **src -> index.html** file, add the following code for light mode (`class="light"`) and dark mode (`class="dark"`) in the `<html>` tag.
 
@@ -47,7 +49,7 @@ If you choose **Tailwind** theme, follow these steps to configure it.
     <html lang="en" class="dark">
     ```
 
-2. In **src -> index.html** file, add the following scripts in the `<head>` tag.
+2. In **src -> index.html** file, add the following scripts in the `<head>` tag. The main purpose of these scripts is to dynamically generate the appropriate Tailwind CSS classes at runtime based on the styles used in the application, and to replace the primary (highlight) color in the CSS with a custom indigo color palette.
 
     ```html
     <script src="https://cdn.tailwindcss.com"></script>
@@ -77,7 +79,7 @@ If you choose **Tailwind** theme, follow these steps to configure it.
       }
     </script>
     ```
-    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses **Indigo** for light mode and **Cyan** for dark mode. So, please change the primary color accordingly to maintain a uniform appearance.
+    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses **Indigo** for light mode and **Cyan** for dark mode. To maintain a uniform appearance, change the primary color accordingly.
 
 
 3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in the `<head>` tag.
@@ -94,7 +96,7 @@ If you choose **Tailwind** theme, follow these steps to configure it.
      <link href="https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css" rel="stylesheet" />
      ```
 
-4. **OPTIONAL**: If you wish to use our font icons prepared for **Tailwind**, you can include the following CDN link:
+4. **OPTIONAL**: If you wish to use our font icons prepared for **Tailwind CSS**, you can include the following CDN link:
 
     ```html
     <link href="https://cdn.syncfusion.com/ej2/angular/ui-kit/font-icons/tailwind-icons.css" rel="stylesheet" />
@@ -102,9 +104,9 @@ If you choose **Tailwind** theme, follow these steps to configure it.
      
 You can refer to the consolidated screenshot below for more details.
 
-![Tailwind configuration](images/tailwind-configuration.png)
+![Tailwind CSS configuration](images/tailwind-configuration.png)
 
-Now that the **Tailwind** theme is configured for either light or dark mode of your choice, the app is ready for the next set of processes.
+Now that the **Tailwind CSS** theme is configured for either light or dark mode of your choice, the app is ready for the next set of processes.
 
 ### Bootstrap 5.3 configuration
 
@@ -168,7 +170,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 2. On the demo page, go to the first demo, which showcases a simple sign-in block. Choose the desired theme, then switch from the "Preview" tab to the "Code" tab.
 
-    ![Choose Tailwind or Bootstrap theme](images/choose-tailwind-or-bootstrap-theme.png)
+    ![Choose Tailwind CSS or Bootstrap theme](images/choose-tailwind-or-bootstrap-theme.png)
 
 3. In the "Code" tab, copy the HTML code using the "Copy to clipboard" option and paste it into the **src -> app -> app.component.html** file.
 
@@ -190,7 +192,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 > **Note:**
 > 
-> 1. In the HTML, the **Tailwind** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
+> 1. In the HTML, the **Tailwind CSS** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
 > 2. Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
 ## Steps to install and configure Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
