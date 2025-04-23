@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Overview: Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular
 
-The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises over 160 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
+The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises over 160 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind CSS and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
 
 <table>
   <tr>
