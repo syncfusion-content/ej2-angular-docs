@@ -629,5 +629,12 @@ vertical-align: top;
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/accessibility">Documentation</a></td>
     </tr>
+        <tr>
+        <td>DropDownList</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/accessibility">Documentation</a></td>
+    </tr>
 </tbody>
 </table>
