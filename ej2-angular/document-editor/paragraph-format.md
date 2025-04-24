@@ -163,6 +163,6 @@ The following sample demonstrates the paragraph formatting options using a toolb
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)
 * [Paragraph dialog](../document-editor/dialog#paragraph-dialog)
 * [Keyboard shortcuts](../document-editor/keyboard-shortcut#paragraph-formatting)

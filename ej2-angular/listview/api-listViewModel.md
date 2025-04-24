@@ -26,11 +26,11 @@ We can trigger `actionComplete` event for every ListView action success event wi
 
 We can trigger `actionFailure` event for every ListView action failure event with the dataSource parameter.
 
-### select [`EmitType<SelectEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-selectEventArgs.html)
+### select [`EmitType<SelectEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectEventArgs/)
 
 We can trigger the `select` event when we select the list item in the component.
 
-### animation [`AnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api-animationSettings.html)
+### animation [`AnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api/list-view/animationSettings/)
 
 It is used to apply the animation to sub list navigation of list items.
 

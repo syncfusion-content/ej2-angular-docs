@@ -109,7 +109,7 @@ The Grid provides below methods to customize the appearance of the grid rows :
 5. [getSelectedRowIndexes](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrowindexes): This method returns an array of the indexes of the selected rows in the Grid. You can use this method to apply custom styles to the selected rows.
 6. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrows):This method returns an array of the HTML elements representing the selected rows in the grid. You can use this method to directly loop through the selected rows and customize their styles.
 
-The following example demonstrates how to use [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyindex) methods to customize the appearance of the row inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid.
+The following example demonstrates how to use [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid/#getrowbyindex) methods to customize the appearance of the row inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
