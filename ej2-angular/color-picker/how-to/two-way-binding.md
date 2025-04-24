@@ -14,7 +14,7 @@ ColorPicker component supports two-way property binding.
 
 The steps to perform two-way binding.
 
-* Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property as like the below code snippet.
+* Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#value) property as like the below code snippet.
 
   ```
 
@@ -48,4 +48,4 @@ The steps to perform two-way binding.
   
 {% previewsample "page.domainurl/samples/colorpicker/ng-model-cs1" %}
 
->> By default, the selected color value returns 8 digit hex code in [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property. Some browser like IE won't support the 8 digit hex code. In such case, you can use getter setter method to change the value to supported format as like the above sample.
+>> By default, the selected color value returns 8 digit hex code in [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#value) property. Some browser like IE won't support the 8 digit hex code. In such case, you can use getter setter method to change the value to supported format as like the above sample.
