@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 
-
-
-
 import { L10n, loadCldr, setCulture } from '@syncfusion/ej2-base';
 import * as gregorian from './ca-gregorian.json';
 import * as numbers from './numbers.json';
@@ -51,10 +48,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
     }
 }
-
-
-
