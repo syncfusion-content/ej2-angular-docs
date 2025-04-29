@@ -62,4 +62,4 @@ For example, add the following to the `app.component.css` file:
 ## See Also
 
 * [Working with IFrame Editing Mode](./iframe)
-* [Using the Markdown Editor](./markdown)
+* [Using the Markdown Editor](../../markdown-editor/getting-started)
