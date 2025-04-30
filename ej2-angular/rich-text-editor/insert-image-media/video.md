@@ -421,8 +421,6 @@ Once a video file has been inserted, you can replace it using the Rich Text Edit
 
 ![Angular Rich Text Editor Embed Video Replace](../images/angular-richtexteditor-video-replace-embed.png)
 
-![Angular Rich Text Editor Web Video Replace](../images/angular-richtexteditor-video-replace-web.png)
-
 ## Deleting video
 
 To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` button from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#removeurl) is given.
