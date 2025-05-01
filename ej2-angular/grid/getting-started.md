@@ -224,11 +224,11 @@ The Grid has an option to define columns as directives. In these column directiv
 
 Let’s check the properties used here:
 
-* We have added [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
-* We have added [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) to change the title of columns.
-* We have used [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) to change the alignment of columns.
-By default, columns will be left aligned. To change columns to right align, we need to define [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) as **Right**.
-* Also, we have used another useful property, [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
+* We have added [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
+* We have added [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) to change the title of columns.
+* We have used [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) to change the alignment of columns.
+By default, columns will be left aligned. To change columns to right align, we need to define [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) as **Right**.
+* Also, we have used another useful property, [`format`](./columns/#format).
 Using this, we can format number and date values to standard or custom formats.
 Here, we have defined it for the conversion of numeric values to currency.
 

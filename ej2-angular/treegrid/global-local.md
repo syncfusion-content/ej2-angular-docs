@@ -128,7 +128,7 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
+The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
