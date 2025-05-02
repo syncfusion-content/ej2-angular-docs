@@ -52,6 +52,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 | Property | Behaviour |
 |---|---|
 | columns | It is used to render the ColorPicker palette with specified columns. Defaults to 10 |
@@ -60,3 +62,5 @@ export class AppComponent implements OnInit {
 | modeSwitcher | It is used to show / hide the mode switcher button of ColorPicker component. Defaults to true |
 | showButtons | It is used to show / hide the control buttons (apply / cancel) of ColorPicker component. Defaults to true |
 
+
+>**Note**: According to the Word document specifications, it is not possible to modify the **`Predefined Highlight colors`**. This limitation means that the range of highlight colors provided by default cannot be customized or expanded upon by the user to suit individual preferences. Consequently, users must work within the confines of the existing color palette, as no functionality currently exists to modify or personalize these predefined highlighting options.

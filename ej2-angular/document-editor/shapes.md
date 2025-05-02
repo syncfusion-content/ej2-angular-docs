@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Shapes in Angular Document editor component
 
-Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry. At present, Document Editor does not have support to insert shapes. however, if the document contains a shape while importing, it will be preserved properly.
+Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry.
+
+>Note: At present, Document Editor does not have support to insert shapes. however, if the document contains a shape while importing, it will be preserved properly.
 
 ## Supported shapes
 
