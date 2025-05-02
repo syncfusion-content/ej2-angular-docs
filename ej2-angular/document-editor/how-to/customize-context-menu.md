@@ -85,6 +85,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 ### Customize custom option in context menu
 
 Document Editor allows you to customize the added custom option and also to hide/show default context menu.
@@ -142,6 +144,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 #### Customize added context menu items
 
 The following code shows how to hide/show added custom option in context menu using the [`customContextMenuBeforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/beforeOpenCloseCustomContentMenuEventArgs/).
@@ -196,6 +200,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 The following is the output of custom context menu with customization.
 
 {% tabs %}
@@ -209,3 +215,73 @@ The following is the output of custom context menu with customization.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/document-editor/customize-context-menu-cs1" %}
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
+#### Customize Context Menu with sub-menu items
+
+Document Editor allows you to customize the Context Menu with sub-menu items. It can be achieved by using the [`addCustomMenu()`](../../api/document-editor/contextMenu/#addcustommenu) method.
+
+The following code shows how to add a sub items in the custom option in context menu in Document Editor Container.
+ 
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+  CustomContentMenuEventArgs,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { MenuItemModel } from '@syncfusion/ej2-navigations';
+@Component({
+  imports: [DocumentEditorContainerModule],
+
+  standalone: true,
+  selector: 'app-container',
+  // specifies the template string for the DocumentEditorContainer component
+  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block"  [enableToolbar]=true (created)="onCreate()"> </ejs-documenteditorcontainer>`,
+  providers: [ToolbarService],
+})
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+  ngOnInit(): void {}
+  onCreate() {
+    debugger;
+    // creating Custom Options
+    let menuItems = [
+      {
+        text: 'Form field',
+        id: 'form field',
+        iconCss: 'e-de-formfield e-icons',
+        items: [
+          {
+            text: 'Text form',
+            id: 'Text form',
+            iconCss: 'e-icons e-de-textform',
+          },
+          {
+            text: 'Check box',
+            id: 'Check box',
+            iconCss: 'e-icons e-de-checkbox-form',
+          },
+          {
+            text: 'Drop down',
+            id: 'Drop down',
+            iconCss: 'e-icons e-de-dropdownform',
+          },
+        ],
+      },
+    ];
+
+    (
+      this.container as DocumentEditorContainerComponent
+    ).documentEditor.contextMenu.addCustomMenu(menuItems, false, true);
+  }
+}
+```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
