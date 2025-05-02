@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize document editor in Angular Document editor component | Syncfusion
+title: Resize in Angular Document editor component | Syncfusion
 description: Learn here all about Resize document editor in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Resize document editor 
@@ -38,6 +38,8 @@ ngOnInit(): void {
 
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 Similarly, you can use [`height`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#height) property for DocumentEditor also.
 
 ## Change width of Document Editor
@@ -65,6 +67,8 @@ ngOnInit(): void {
 }
 
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 Similarly, you can use [`width`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#width) property for DocumentEditor also.
 
@@ -109,3 +113,5 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
