@@ -191,7 +191,7 @@ The below example demonstrates the DateRangePicker with startDate and endDate.
   
 {% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs6" %}
 
-> You can refer to our [Angular Date Range Picker](https://www.syncfusion.com/angular-ui-components/angular-daterangepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Date Range Picker example](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/default) that shows how to render the Date Range Picker in Angular.
+> You can refer to our [Angular Date Range Picker](https://www.syncfusion.com/angular-components/angular-daterangepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Date Range Picker example](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/default) that shows how to render the Date Range Picker in Angular.
 
 ## See Also
 
