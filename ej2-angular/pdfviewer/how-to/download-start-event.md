@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Controlling File Downloads in Syncfusion PDF Viewer
+# Controlling File Downloads in Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer
 
-In the Syncfusion PDF Viewer, we've introduced a new feature that enables you to manage file downloads more effectively. This feature allows you to intercept and potentially skip the download process of a PDF document, providing enhanced control over user interactions within your application.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer, we've introduced a new feature that enables you to manage file downloads more effectively. This feature allows you to intercept and potentially skip the download process of a PDF document, providing enhanced control over user interactions within your application.
 
 ### Using the downloadStart Event
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Extract Text Method in Syncfusion PdfViewer Control
+# Extract Text Method in Syncfusion<sup style="font-size:70%">&reg;</sup> PdfViewer Control
 
 The `extractText` method of the Syncfusion PdfViewer control enables text extraction from one or more pages in a PDF document. This method is useful for retrieving the text content along with its associated data, such as the bounds of each text element.
 

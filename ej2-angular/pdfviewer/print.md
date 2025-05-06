@@ -160,7 +160,7 @@ By setting the printMode to [NewWindow](https://ej2.syncfusion.com/angular/docum
 
 ## Limiting the Dialog Opening for Printing
 
-In the Syncfusion PDF Viewer, you can control the printing process by leveraging the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) event. This event enables you to customize the printing behavior, particularly restricting the dialog opening. Below is a code snippet demonstrating how to utilize this event
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer, you can control the printing process by leveraging the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) event. This event enables you to customize the printing behavior, particularly restricting the dialog opening. Below is a code snippet demonstrating how to utilize this event
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}

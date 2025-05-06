@@ -460,7 +460,7 @@ The prefix property is used to set the CSS class or icon that should be added as
 The id property within a CustomToolbarItemModel is a compulsory attribute that plays a vital role in toolbar customization. It serves as a unique identifier for each toolbar item, facilitating distinct references and interactions.
 
 When defining or customizing toolbar items, it is mandatory to assign a specific and descriptive id to each item. 
-These properties are commonly used when defining custom toolbar items with the `CustomToolbarItemModel`` in the context of Syncfusion PDF Viewer. When configuring the toolbar using the `ToolbarSettings`` property, you can include these properties to customize the appearance and behavior of each toolbar item.
+These properties are commonly used when defining custom toolbar items with the `CustomToolbarItemModel` in the context of Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer. When configuring the toolbar using the `ToolbarSettings` property, you can include these properties to customize the appearance and behavior of each toolbar item.
 
 N> When customizing toolbar items, you have the flexibility to include either icons or text based on your design preference.
 

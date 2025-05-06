@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Get Page Info in Angular PDF Viewer component
 
-The PDF Viewer library allows you to retrieves the information of a specified page in the viewer using the **getPageInfo()** method.This provides essential information such as the dimensions, and rotation.
+The PDF Viewer library allows you to retrieves the information of a specified page in the viewer using the **getPageInfo()** method.This provides Essential<sup style="font-size:70%">&reg;</sup> information such as the dimensions, and rotation.
 
 The following steps are used to getPageInfo.
 

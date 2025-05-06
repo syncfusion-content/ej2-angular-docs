@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Minimum and Maximum Zoom Properties
 
-The Syncfusion PDF Viewer provides the ability to control zoom levels for viewing PDF documents. The `minZoom` and `maxZoom` properties enable developers to set the minimum and maximum zoom levels, ensuring a consistent and controlled viewing experience.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer provides the ability to control zoom levels for viewing PDF documents. The `minZoom` and `maxZoom` properties enable developers to set the minimum and maximum zoom levels, ensuring a consistent and controlled viewing experience.
 
 ### minZoom
 
