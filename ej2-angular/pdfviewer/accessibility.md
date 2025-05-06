@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Syncfusion Angular PDF Viewer components
+# Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular PDF Viewer components
 
 The PDF Viewer component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -259,4 +259,4 @@ The accessibility compliance of the PDF Viewer component is shown in the followi
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

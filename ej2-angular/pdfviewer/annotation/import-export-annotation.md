@@ -625,6 +625,194 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 
 >Run the [web service](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices/tree/main/ASP.NET%20Core/PdfViewerWebService_3.0) and then the angular code. Also note that, the XFDF file for importing the annotation should be placed in the location as specified in the GetDocumentPath method of the PdfViewerController.
 
+## Importing Annotation Using Base64 Data
+
+You can import annotations into the Syncfusion Angular PDF Viewer by decoding Base64-encoded JSON annotation data at runtime and passing the parsed object to the importAnnotation API, as shown in the following code snippet.
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { Component, OnInit } from '@angular/core';
+import {
+  LinkAnnotationService, BookmarkViewService, MagnificationService,
+  ThumbnailViewService, ToolbarService, NavigationService,
+  TextSearchService, TextSelectionService, PrintService,
+  FormDesignerService, FormFieldsService, AnnotationService,
+  PageOrganizerService
+} from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <!-- Button to trigger annotation import -->
+    <button (click)="fileInput.click()">Import Annotation</button>
+
+    <!-- Hidden file input (only JSON files allowed) -->
+    <input type="file" #fileInput accept=".json" style="display:none" (change)="onFileSelected($event)" />
+
+    <!-- PDF Viewer container -->
+    <div class="content-wrapper">
+      <ejs-pdfviewer id="pdfViewer"
+        [documentPath]="document"
+        [resourceUrl]="resource"
+        style="height:640px;display:block">
+      </ejs-pdfviewer>
+    </div>
+  `,
+  // Register all necessary PDF viewer services
+  providers: [
+    LinkAnnotationService, BookmarkViewService, MagnificationService,
+    ThumbnailViewService, ToolbarService, NavigationService,
+    TextSearchService, TextSelectionService, PrintService,
+    AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService
+  ]
+})
+export class AppComponent implements OnInit {
+  // URL of the sample PDF document
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/handwritten-signature.pdf';
+
+  // Syncfusion PDF viewer resource URL
+  public resource: string = 'https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2-pdfviewer-lib';
+
+  ngOnInit(): void {}
+
+  /**
+   * Triggered when a file is selected from the input.
+   * Handles reading and importing the JSON annotation file.
+   */
+  onFileSelected(event: any): void {
+    const file = event.target.files[0];
+
+    // Validate that the selected file is a .json file
+    if (!file || !file.name.endsWith('.json')) {
+      alert('Please select a valid JSON file.');
+      return;
+    }
+
+    const reader = new FileReader();
+
+    // When file reading is done
+    reader.onload = (e: any) => {
+      // Extract Base64 string (after the "data:application/json;base64," part)
+      const base64String = e.target.result.split(',')[1];
+
+      // Decode Base64 to original JSON string
+      const decodedJsonString = atob(base64String);
+
+      try {
+        // Parse the JSON string into a JavaScript object
+        const annotationData = JSON.parse(decodedJsonString);
+
+        // Get reference to the PDF viewer instance
+        const viewer = (document.getElementById('pdfViewer') as any).ej2_instances[0];
+
+        // Import the parsed annotation data into the viewer
+        viewer.importAnnotation(annotationData);
+      } catch (err) {
+        // Handle errors (e.g., invalid JSON)
+        console.error('Invalid JSON file:', err);
+        alert('Failed to parse JSON.');
+      }
+    };
+
+    // Start reading the file as a data URL (Base64 encoded)
+    reader.readAsDataURL(file);
+  }
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import {
+  LinkAnnotationService, BookmarkViewService, MagnificationService,
+  ThumbnailViewService, ToolbarService, NavigationService,
+  TextSearchService, TextSelectionService, PrintService,
+  FormDesignerService, FormFieldsService, AnnotationService,
+  PageOrganizerService
+} from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <!-- Button to trigger annotation import -->
+    <button (click)="fileInput.click()">Import Annotation</button>
+
+    <!-- Hidden file input (only JSON files allowed) -->
+    <input type="file" #fileInput accept=".json" style="display:none" (change)="onFileSelected($event)" />
+
+    <!-- PDF Viewer container -->
+    <div class="content-wrapper">
+      <ejs-pdfviewer id="pdfViewer"
+        [documentPath]="document"
+        [serviceUrl]="service"
+        style="height:640px;display:block">
+      </ejs-pdfviewer>
+    </div>
+  `,
+  // Register all necessary PDF viewer services
+  providers: [
+    LinkAnnotationService, BookmarkViewService, MagnificationService,
+    ThumbnailViewService, ToolbarService, NavigationService,
+    TextSearchService, TextSelectionService, PrintService,
+    AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService
+  ]
+})
+export class AppComponent implements OnInit {
+  // URL of the sample PDF document
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/handwritten-signature.pdf';
+
+  // Syncfusion PDF viewer resource URL
+  public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+
+  ngOnInit(): void {}
+
+  /**
+   * Triggered when a file is selected from the input.
+   * Handles reading and importing the JSON annotation file.
+   */
+  onFileSelected(event: any): void {
+    const file = event.target.files[0];
+
+    // Validate that the selected file is a .json file
+    if (!file || !file.name.endsWith('.json')) {
+      alert('Please select a valid JSON file.');
+      return;
+    }
+
+    const reader = new FileReader();
+
+    // When file reading is done
+    reader.onload = (e: any) => {
+      // Extract Base64 string (after the "data:application/json;base64," part)
+      const base64String = e.target.result.split(',')[1];
+
+      // Decode Base64 to original JSON string
+      const decodedJsonString = atob(base64String);
+
+      try {
+        // Parse the JSON string into a JavaScript object
+        const annotationData = JSON.parse(decodedJsonString);
+
+        // Get reference to the PDF viewer instance
+        const viewer = (document.getElementById('pdfViewer') as any).ej2_instances[0];
+
+        // Import the parsed annotation data into the viewer
+        viewer.importAnnotation(annotationData);
+      } catch (err) {
+        // Handle errors (e.g., invalid JSON)
+        console.error('Invalid JSON file:', err);
+        alert('Failed to parse JSON.');
+      }
+    };
+
+    // Start reading the file as a data URL (Base64 encoded)
+    reader.readAsDataURL(file);
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Exporting annotation from the PDF document
 
 The PDF Viewer control provides the support to export the annotations as JSON file or JSON object and XFDF file using annotation toolbar.

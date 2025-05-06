@@ -30,9 +30,9 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion PDF Viewer package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer package
 
-All the available Essential JS 2 packages are published in `npmjs.com` registry. 
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in `npmjs.com` registry. 
 
 * To install PDF Viewer component, use the following command.
 

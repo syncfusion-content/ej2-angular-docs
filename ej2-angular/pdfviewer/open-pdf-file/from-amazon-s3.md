@@ -40,7 +40,7 @@ AWS.config.update({
 });
 ```
 
-3. Sets the parameters for fetching the PDF document from S3, including the bucket name and file key. Then Uses the getObject method of the S3 instance to retrieve the document. Converts the document data to a Base64 string and loads it into the Syncfusion PDF Viewer then load Base64 strikng generated into the viewer.load method.
+3. Sets the parameters for fetching the PDF document from S3, including the bucket name and file key. Then Uses the getObject method of the S3 instance to retrieve the document. Converts the document data to a Base64 string and loads it into the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer then load Base64 strikng generated into the viewer.load method.
 
 N> Replace **Your Bucket Name** with the actual Bucket name of your AWS S3 account and **Your Key** with the actual File Key of your AWS S3 account.
 

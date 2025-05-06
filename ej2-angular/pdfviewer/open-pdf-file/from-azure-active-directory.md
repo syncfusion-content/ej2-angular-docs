@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ### **Overview**
 
-The Syncfusion PDF Viewer allows you to load and save PDF files directly from Azure Active Directory (AAD). Below are the steps to securely load and store PDF documents from and to AAD using the PDF Viewer.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer allows you to load and save PDF files directly from Azure Active Directory (AAD). Below are the steps to securely load and store PDF documents from and to AAD using the PDF Viewer.
 
 ### **Steps to Open the PDF File from Azure Active Directory**
 
@@ -94,7 +94,7 @@ The Syncfusion PDF Viewer allows you to load and save PDF files directly from Az
 ### **Step 6: Client-Side Configuration**
 
 1. **Run the Angular Sample**:
-   - Start the Angular sample that includes the Syncfusion PDF Viewer.
+   - Start the Angular sample that includes the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer.
 
 2. **Load PDF from AAD**:
    - When the user clicks the **Load from AAD** button, the Angular client will make an HTTP request to the server-side API to fetch the PDF from Azure Blob Storage.

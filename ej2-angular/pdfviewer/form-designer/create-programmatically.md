@@ -589,7 +589,7 @@ OnImportXml() {
 
 ## Form field properties
 
-Form field properties in Syncfusion PDF Viewer allow you to customize and interact with form fields embedded within PDF documents. This documentation provides an overview of the form field properties supported by the Syncfusion PDF Viewer and explains how to use them effectively.
+Form field properties in Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer allow you to customize and interact with form fields embedded within PDF documents. This documentation provides an overview of the form field properties supported by the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer and explains how to use them effectively.
 
     * Textbox
     * Password
