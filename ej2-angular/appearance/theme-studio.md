@@ -16,7 +16,7 @@ Theme Studio for Syncfusion Angular UI Components can be used to customize a new
 
 The Syncfusion Angular UI Components themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion Angular UI Components. All the Syncfusion Angular UI Component styles are derived from these [theme-based common variables](../appearance/overview#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
-**Step 1:** Navigate to the theme studio application at [https://ej2.syncfusion.com/themestudio/](https://ej2.syncfusion.com/themestudio/).
+**Step 1:** Navigate to the theme studio application at [https://ej2.syncfusion.com/themestudio/?theme=fluent2](https://ej2.syncfusion.com/themestudio/?theme=fluent2).
 
 **Step 2:** The theme studio application page can be divided into two sections: the components preview section on the left, and the theme customization section on the right.
 
