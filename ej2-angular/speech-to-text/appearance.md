@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Appearance with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Appearance in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about appearance in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Customizing the button
 
-You can use the [buttonSettings](../api/speech-to-text#buttonSettings) property to customize the appearance of the start and stop buttons in the speech to text conversion.
+You can use the [buttonSettings](../api/speech-to-text/#buttonSettings) property to customize the appearance of the start and stop buttons in the speech to text conversion.
 
 ### Setting start content
 
@@ -56,7 +56,7 @@ Below code sample demonstrates how to configure the button with above mentioned 
 
 ## Customizing the tooltips
 
-You can use the [tooltipSettings](../api/speech-to-text#tooltipSettings) property to customize the content and positions of the tooltip.
+You can use the [tooltipSettings](../api/speech-to-text/#tooltipSettings) property to customize the content and positions of the tooltip.
 
 ### Setting start content
 
@@ -88,20 +88,20 @@ Below code sample demonstrates how to configure the tooltip with above mentioned
 
 ## Setting button styles
 
-The SpeechToText component supports the following predefined styles that can be defined using the [cssClass](../api/speech-to-text#cssClass) property. You can customize by adding the cssClass property with the below defined class. 
+The SpeechToText component supports the following predefined styles that can be defined using the [cssClass](../api/speech-to-text/#cssClass) property. You can customize by adding the cssClass property with the below defined class. 
 
 | cssClass | Description | 
 | -------- | -------- | 
 | `e-primary` | Used to represent a primary action. | 
-| `e-outline` |  Used to represent an appearance of button with outline. | 
-| `e-info` |  Used to represent an informative action. | 
+| `e-outline` | Used to represent an appearance of button with outline. | 
+| `e-info` | Used to represent an informative action. | 
 | `e-success` | Used to represent a positive action. | 
 | `e-warning` | Used to represent an action with caution. | 
 | `e-danger` | Used to represent a negative action. |
 
 ## Setting cssclass
 
-You can use the [cssClass](../api/speech-to-text#cssClass) property to customize the appearance of the SpeechToText component.
+You can use the [cssClass](../api/speech-to-text/#cssClass) property to customize the appearance of the SpeechToText component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Speech recognition in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Speech recognition with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Speech recognition in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about speech recognition in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Retrieving transcripts
 
-You can use the [transcript](../api/speech-to-text#transcript) property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
+You can use the [transcript](../api/speech-to-text/#transcript) property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 
 ## Setting language
 
-You can use the [lang](../api/speech-to-text#lang) property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
+You can use the [lang](../api/speech-to-text/#lang) property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 
 ## Allowing interim results
 
-You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults) property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
+You can use the [allowInterimResults](../api/speech-to-text/#allowInterimResults) property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 
 ## Managing listening state
 
-You can use the [listeningState](../api/speech-to-text#listeningState) property to manage the listening state of the component. The possible values are [Inactive](../api/speech-to-text/speechToTextState/) , [Listening](../api/speech-to-text/speechToTextState/) and [Stopped](../api/speech-to-text/speechToTextState/). By default, the value is `Inactive`.
+You can use the [listeningState](../api/speech-to-text/#listeningState) property to manage the listening state of the component. The possible values are [Inactive](../api/speech-to-text/speechToTextState/) , [Listening](../api/speech-to-text/speechToTextState/) and [Stopped](../api/speech-to-text/speechToTextState/). By default, the value is `Inactive`.
 
 ### Inactive
 
@@ -80,7 +80,7 @@ It is actively listening which captures and transcribes speech with a stop icon 
 
 Denotes the speech recognition has ended, and no further speech is being processed.
 
-Below sample demonstrates the usage of [listeningState](../api/speech-to-text#listeningState) property.
+Below sample demonstrates the usage of [listeningState](../api/speech-to-text/#listeningState) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,7 +98,7 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 
 ## Show or hide tooltip
 
-You can use the [showTooltip](../api/speech-to-text#showTooltip) property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
+You can use the [showTooltip](../api/speech-to-text/#showTooltip) property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +116,7 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 
 ## Setting disabled
 
-You can use the [disabled](../api/speech-to-text#disabled) property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
+You can use the [disabled](../api/speech-to-/#disabled) property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 
 ## Setting html attributes
 
-You can use the [htmlAttributes](../api/speech-to-text#htmlAttributes) property to assign custom attributes to the SpeechToText component for the button element.
+You can use the [htmlAttributes](../api/speech-to-text/#htmlAttributes) property to assign custom attributes to the SpeechToText component for the button element.
 
 ## Error handling
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Angular SpeechToText component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular SpeechToText component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular SpeechToText Component | Syncfusion
+description: Learn here all about accessibility in Syncfusion Essential Angular SpeechToText component, its elements, and more.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug

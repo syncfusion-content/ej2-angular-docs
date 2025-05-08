@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Security concerns in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Security concerns with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Security concerns in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about security concerns in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
