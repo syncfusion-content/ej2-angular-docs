@@ -28,9 +28,9 @@ For a complete list of available Syncfusion<sup style="font-size:70%">&reg;</sup
 
 ## Additional Resources
 
-- [Installation Guide for Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/installation/)
+- [Installation Guide for Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/installation)
 - [Download Syncfusion Essential JavaScript 2 Installer](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/download/#download-javascript--ej2-installer)
 - [Syncfusion Product Lifecycle Overview](https://www.syncfusion.com/support/product-lifecycle/)
-- [Updating Syncfusion Angular NPM Packages](https://ej2.syncfusion.com/angular/documentation/common/how-to/update-npm-package/)
+- [Updating Syncfusion Angular NPM Packages](https://ej2.syncfusion.com/angular/documentation/common/how-to/update-npm-package)
 
 By leveraging individual NPM packages for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components, developers can create more efficient and performant applications while maintaining flexibility in component selection and updates.
