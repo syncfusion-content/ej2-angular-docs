@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Getting started with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about getting started with Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular SpeechToText component
+# Getting Started with Angular SpeechToText component
 
 This section explains how to create a default SpeechToText component and demonstrate the basic usage of the SpeechToText.
 
@@ -43,7 +43,7 @@ cd my-app
 
 ## Installing Syncfusion OTP Input package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
@@ -141,7 +141,7 @@ The following example shows a default SpeechToText component.
 
 ## Adding button content
 
-You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text/#buttonSettings) property.
 
 The following example shows how to configure `buttonSettings` in SpeechToText component.
 

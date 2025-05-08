@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Events in Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Events in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about events in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug

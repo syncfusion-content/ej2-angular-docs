@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Globalization with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Globalization in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about globalization in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
@@ -45,7 +45,7 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the SpeechToText component from right to left by setting the [enableRtl](../api/speech-to-text#enableRtl) property to true.
+RTL provides an option to switch the text direction and layout of the SpeechToText component from right to left by setting the [enableRtl](../api/speech-to-text/#enableRtl) property to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
