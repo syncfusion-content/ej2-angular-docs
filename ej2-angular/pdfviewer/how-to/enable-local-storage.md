@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Managing Local Storage in Syncfusion PDF Viewer
+# Managing Local Storage in Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer
 
-The Syncfusion PDF Viewer provides the `enableLocalStorage` property, which allows you to control how session-specific data is stored. You can choose to store this data in an internal collection or rely on the default session storage.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer provides the `enableLocalStorage` property, which allows you to control how session-specific data is stored. You can choose to store this data in an internal collection or rely on the default session storage.
 
 ### Using the enableLocalStorage Property
 

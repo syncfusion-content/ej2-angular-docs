@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ### Overview
 
-When exporting annotations from the PDF Library, you may need to convert the bounds values into the PDF Viewer format. This guide will help you achieve that using the Syncfusion PDF Viewer component.
+When exporting annotations from the PDF Library, you may need to convert the bounds values into the PDF Viewer format. This guide will help you achieve that using the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer component.
 
 ### How to Convert Bounds Values
 

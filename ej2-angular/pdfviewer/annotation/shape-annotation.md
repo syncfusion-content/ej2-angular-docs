@@ -288,7 +288,7 @@ export class AppComponent implements OnInit {
 
 ## Edit the existing shape annotation programmatically
 
-To modify existing shape annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+To modify existing shape annotation in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer programmatically, you can use the **editAnnotation()** method.
 
 Here is an example of how you can use the **editAnnotation()** method:
 

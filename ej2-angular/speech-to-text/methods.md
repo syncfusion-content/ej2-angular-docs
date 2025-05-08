@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in Angular SpeechToText component | Syncfusion
-description: Checkout and learn about Methods with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+title: Methods in Angular SpeechToText Component | Syncfusion
+description: Checkout and learn about methods in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 ## Start listening
 
-You can use the [startListening](../api/speech-to-text#startListening) public method to initiate the speech recognition and begins the conversion of the speech to text.
+You can use the [startListening](../api/speech-to-text/#startListening) public method to initiate the speech recognition and begins the conversion of the speech to text.
 
 ## Stop listening
 
-You can use the [stopListening](../api/speech-to-text#stopListening) public method to stop capturing your speech and ends the speech recognition.
+You can use the [stopListening](../api/speech-to-text/#stopListening) public method to stop capturing your speech and ends the speech recognition.
 
 Below sample demonstrates the SpeechToText component configured with above methods.
 

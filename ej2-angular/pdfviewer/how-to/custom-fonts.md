@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to add custom fonts to the PDF viewer used in the PDF document
 
-To use custom fonts in the Syncfusion PDF Viewer within your PDF document, you need to add the custom TTF font files to the resource URL directory and configure the viewer to load these fonts. You can specify the custom font names using the
+To use custom fonts in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer within your PDF document, you need to add the custom TTF font files to the resource URL directory and configure the viewer to load these fonts. You can specify the custom font names using the
 **customFonts** property, which accepts an array of font names.
 
 The following steps are used to customize the selection border.
