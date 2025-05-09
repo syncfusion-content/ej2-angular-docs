@@ -126,7 +126,7 @@ The following example demonstrates how to change the default frozen line color u
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs4" %}
 
-## Render DatePicker in frozen columns in Angular Grid
+## Render DatePicker in frozen columns in Grid
 
 The Syncfusion Angular Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property, where a custom editor (DatePicker) is assigned to the specific column.
 
