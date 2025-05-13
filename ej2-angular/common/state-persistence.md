@@ -256,11 +256,11 @@ DateTimePicker, Slider, Dropdown Tree</td>
 
 For a deeper understanding of state persistence and its application in various components, please refer to the following documentation pages for individual components:
 
-* [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence/)
-* [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence/)
-* [Pivot Table](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence/)
-* [Gantt](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence/)
-* [Kanban](https://ej2.syncfusion.com/angular/documentation/kanban/persistence/)
-* [Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence/)
-* [QueryBuilder](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence/)
-* [Tabs](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component/)
+* [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-management)
+* [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence)
+* [Pivot Table](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence)
+* [Gantt](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence)
+* [Kanban](https://ej2.syncfusion.com/angular/documentation/kanban/persistence)
+* [Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence)
+* [QueryBuilder](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence)
+* [Tabs](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component)
