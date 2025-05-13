@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scatter in Angular Chart component | Syncfusion
-description: Learn here all about Scatter in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Scatter Chart in Angular Charts | Syncfusion
+description: Learn here all about Scatter in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Scatter
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scatter in Angular Chart component
+# Scatter Chart in Angular Charts
 
 ## Scatter
 

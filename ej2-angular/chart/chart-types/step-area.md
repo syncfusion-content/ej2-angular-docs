@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Step Area Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Step Area Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Step Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Step Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Step Area Area Chart
+control: Step Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Step area in Angular Chart component
+# Step Area Chart in Angular Charts
 
-## Step area
+## Step Area
 
 To render a [step area](https://www.syncfusion.com/angular-components/angular-charts/chart-types/step-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spline Chart in Angular Chart component | Syncfusion
-description: Learn here all about Spline Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Spline Chart in Angular Charts | Syncfusion
+description: Learn here all about Spline Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Spline Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Spline Chart in Angular Chart component
+# Spline Chart in Angular Charts
 
 ## Spline
 

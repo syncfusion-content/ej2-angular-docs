@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Polar in Angular Chart component | Syncfusion
-description: Learn here all about Polar in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Polar Chart in Angular Charts | Syncfusion
+description: Learn here all about Polar in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Polar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Polar in Angular Chart component
+# Polar Chart in Angular Charts
 
 ## Polar
 

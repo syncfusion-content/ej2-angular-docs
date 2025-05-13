@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spline Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Spline Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Spline Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Spline Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Spline Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Spline Area in Angular Chart component
+# Spline Area Chart in Angular Charts
 
 ## Spline Area
 

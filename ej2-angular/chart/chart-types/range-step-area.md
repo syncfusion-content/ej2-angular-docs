@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Range Step Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Range Step Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Range Step Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Range Step Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Range Step Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range step area in Angular Chart component
+# Range Step Area Chart in Angular Charts
 
-## Range step area
+## Range Step Area
 
 To render a range step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

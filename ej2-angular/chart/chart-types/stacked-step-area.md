@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacked Step Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Stacked Step Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Step Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Stacked Step Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Stacked Step Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked step area in Angular Chart component
+# Stacked Step Area Chart in Angular Charts
 
-## Stacked step area
+## Stacked Step Area
 
 To render a stacked step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chart in Angular Chart component | Syncfusion
-description: Learn here all about Column Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Column Chart in Angular Charts | Syncfusion
+description: Learn here all about Column Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Column chart
+control: Column Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column in Angular Chart component
+# Column Chart in Angular Charts
 
 ## Column
 
