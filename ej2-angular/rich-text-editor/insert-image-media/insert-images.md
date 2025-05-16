@@ -326,7 +326,7 @@ You can allow the specific images alone to be uploaded using the the allowedType
 ``` typescript
 
     insertImageSettings: {
-      allowedTypes: ['.jpg']
+      allowedTypes: ['.jpg', '.png', '.jpeg']
     }
 
 ```

@@ -5,8 +5,10 @@ import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-import {  PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfPen, PdfStringFormat, PdfTextAlignment, PdfVerticalAlignment} from '@syncfusion/ej2-pdf-export';
+
+import {  PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfStandardFont, PdfPen, PdfStringFormat, PdfTextAlignment, PdfVerticalAlignment} from '@syncfusion/ej2-pdf-export';
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
+
 
 import { editingData } from './data';
 @Component({
@@ -48,8 +50,9 @@ export class AppComponent {
       startDate: 'StartDate',
       endDate:'EndDate',
       duration: 'Duration',
+      dependency:'Predecessor',
       progress: 'Progress',
-      child: 'subtasks'
+      parentID:'ParentID',
     };
     this.eventMarkers =[
       {

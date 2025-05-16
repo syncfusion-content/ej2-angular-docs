@@ -6,6 +6,7 @@ import {
   PdfExportService,
   SelectionService,
 } from '@syncfusion/ej2-angular-gantt'
+import './app.component.css';
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import {
@@ -36,25 +37,16 @@ standalone: true,
             <span class="e-span">{{ data.TaskName }}</span>
            </div>
        </ng-template>
-       <ng-template #milestoneTemplate let-data>
+      <ng-template #milestoneTemplate let-data>
        <div>
-           <div class="e-gantt-milestone" style="position:absolute;">
+           <div class="e-gantt-milestone" style="width:26px;height:26px;position:absolute;transform: rotate(45deg);left:1px;">
                <div class="image" style="position:absolute; left: 8px ; top: 4px">
-                  <img class="moments" src={{data.ganttProperties.resourceInfo[0].resourceId}}.png height="30px" width="30px" />
+                  <img class="moments" src={{data.ganttProperties.resourceInfo[0].resourceId}}.png height="25px" width="25px" />
                </div>
-               <div
-                   class="e-milestone-top"
-                   style="border-right-width:26px; margin-top: -4px;border-left-width:26px;border-bottom-width:26px;"
-               ></div>
-               <div
-                   class="e-milestone-bottom"
-                   style="top:16px;border-right-width:26px; border-left-width:26px; border-top-width:26px;"
-               ></div>
            </div>
        </div>
-   </ng-template>
+      </ng-template>
      </ejs-gantt>`,
-  styleUrls: ['app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
@@ -73,10 +65,10 @@ export class AppComponent {
       this.taskSettings = {
         id: 'TaskID',
         name: 'TaskName',
-        resourceInfo: 'resources',
+        resourceInfo: 'Resources',
         startDate: 'StartDate',
         duration: 'Duration',
-        child: 'subtasks',
+        parentID:'ParentID',
       };
     this.toolbar = ['PdfExport'];
     this.columns =  [
@@ -87,8 +79,8 @@ export class AppComponent {
       columnIndex: 1,
     };
     this.resourceFields = {
-      id: 'resourceId',
-      name: 'resourceName',
+      id: 'ResourceId',
+      name: 'ResourceName',
     };
     this.resources = editingResources;
   }

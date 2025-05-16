@@ -37,11 +37,12 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            dependency: 'Predecessor',
+            parentID:'ParentID',
         };
         this.columns =  [
             { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText:  'Task Name', width: '150', visible: false },
+            { field: 'TaskName', headerText:  'Task Name', width: '150' },
             { field: 'StartDate', headerText:  'StartDate', width: '150' },
             { field: 'Duration', headerText:  'Duration', width: '150' },
             { field: 'Progress', headerText:  'Progress', width: '150' }

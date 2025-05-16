@@ -160,6 +160,10 @@ The Rich Text Editor offers custom font and background colors along with the exi
 
 Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [`modeSwitcher`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontColorModel/#modeswitcher) feature.
 
+We can specify the number of columns in the color palette for both `FontColor` and `BackgroundColor` using the [columns](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColorModel/#columns) property.
+
+The [default](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColorModel/#default) property specifies the default `FontColor` and `BackgroundColor` that is applied when no color is explicitly selected by the user. This color will be preselected in the `FontColor` and `BackgroundColor` color palettes and used as the initial highlight color for text.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs26/src/app.component.ts %}

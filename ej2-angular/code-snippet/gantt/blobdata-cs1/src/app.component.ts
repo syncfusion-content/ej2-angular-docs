@@ -1,32 +1,28 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule ,ExcelExportService,ExcelExport, GanttAllModule} from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttAllModule} from '@syncfusion/ej2-angular-gantt'
 
 
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 
-import { Gantt, Toolbar, PdfExport, Selection,  ExcelExportService, PdfExportService,
-   ToolbarService, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { ExcelExportCompleteArgs, PdfExportCompleteArgs, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
 
 @Component({
 imports: [
-         GanttModule,GanttAllModule
+         GanttAllModule
     ],
 
-providers: [ToolbarService, PdfExportService, SelectionService, ExcelExportService],
 standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar"
        (toolbarClick)="toolbarClick($event)"  (excelExportComplete)='excelExpComplete($event)' (pdfExportComplete)='pdfExpComplete($event)' allowPdfExport='true' allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None,
-    providers: [ToolbarService, ExcelExportService, PdfExportService]
 })
 export class AppComponent{
     // Data for Gantt
@@ -43,7 +39,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['PdfExport','ExcelExport'];
     }

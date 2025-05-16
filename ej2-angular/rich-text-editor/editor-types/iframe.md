@@ -66,6 +66,26 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
 
 > You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/iframe) that shows how to render the iframe in Angular Rich Text Editor.
 
+## Integrating Mention with Iframe
+
+Rich Text Editor supports advanced features such as Mention component, even when it is rendered inside an iframe. To enable mention functionality within the iframe-mode Rich Text Editor, you need to correctly set the [target](https://helpej2.syncfusion.com/angular/documentation/api/mention#target) of the Mention component.
+
+Specifically, assign the `inputElement` of the Rich Text Editor to the target property of the Mention component. This ensures that the Mention popup is triggered correctly when the user types a designated character (such as @) inside the Rich Text Editor's editable area.
+
+Here's an example of how to integrate Mention with Iframe editor,
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/mention-iframe/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/mention-iframe/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/mention-iframe" %}
+
 ## See also
 
 * [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-editing)

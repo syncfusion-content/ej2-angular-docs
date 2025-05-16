@@ -38,6 +38,7 @@ let exportProperties: PdfExportProperties = {
 
         ]
     }
+}
 
 ```
 
@@ -76,7 +77,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Add page number in header and footer
 
-This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [footer](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfFooter/) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties/).
+This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#header) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#footer) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties/).
 
 * `type` indicates that the content is a page number.
 * `pageNumberType` specifies the type of numbering to be used.
@@ -113,7 +114,7 @@ Supported page number types:
 
 ## Insert an image in header and footer
 
-This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfHeader/) or [footer](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfFooter/) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties/).
+This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#header) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#footer) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/).
 
 * `type` indicates that the content is an image.
 * `src` specifies the source of the image, which should be Base64 string. 
