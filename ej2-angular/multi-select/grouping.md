@@ -52,7 +52,6 @@ Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
 >Note: When using the MultiSelect component with CheckBox mode and grouping enabled, the enableSelectionOrder property (default to true) causes selected items to move out of their original group headers in the popup. To keep selected items under their respective group headers, set enableSelectionOrder to false.
 
 
-
 ## See Also
 
 * [Group Template support to MultiSelect](./templates#group-template).

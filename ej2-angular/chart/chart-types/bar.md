@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bar Chart in Angular Chart component | Syncfusion
-description: Learn here all about Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Bar Chart in Angular Charts | Syncfusion
+description: Learn here all about Bar Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Bar chart
+control: Bar Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bar in Angular Chart component
+# Bar Chart in Angular Charts
 
 ## Bar
 

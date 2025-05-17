@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content Import/Export in Angular Rich Text Editor component
+# Content Import/Export in Angular Rich Text Editor Component
 
-## Importing Content from Microsoft Word
+## Importing content from Microsoft Word
 
 The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, preserving the original formatting and structure. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
 
@@ -28,14 +28,12 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/rich-text-editor/import-cs1" %}
-
 Here’s how to handle the server-side action for importing content from Word.
 
 ```csharp
 
 public class RichTextEditorController : Controller
-
+    
     {       
         public IWebHostEnvironment _webHostEnvironment;
 
@@ -96,7 +94,9 @@ public class RichTextEditorController : Controller
 
 ```
 
-## Exporting Content to PDF and Microsoft Word
+{% previewsample "page.domainurl/samples/rich-text-editor/import-cs1" %}
+
+## Exporting content to PDF and Microsoft Word
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
@@ -114,14 +114,12 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/rich-text-editor/export-cs1" %}
-
 Here’s how to handle the server-side action for exporting content to PDF and Microsoft Word
 
 ```csharp
 
 public class RichTextEditorController : Controller
-
+    
     {       
         public IWebHostEnvironment _webHostEnvironment;
 
@@ -190,10 +188,10 @@ public class RichTextEditorController : Controller
         {
             if (args.Uri.StartsWith("https://"))
             {
-                #pragma warning disable SYSLIB0014 // Type or member is obsolete
+#pragma warning disable SYSLIB0014 // Type or member is obsolete
                 WebClient client = new WebClient();
-                #pragma warning restore SYSLIB0014 // Type or member is obsolete
-                //Download the image as a stream.
+#pragma warning restore SYSLIB0014 // Type or member is obsolete
+                                  //Download the image as a stream.
                 byte[] image = client.DownloadData(args.Uri);
                 Stream stream = new MemoryStream(image);
                 //Set the retrieved image from the input Markdown.
@@ -208,3 +206,5 @@ public class RichTextEditorController : Controller
     }    
 
 ```
+
+{% previewsample "page.domainurl/samples/rich-text-editor/export-cs1" %}

@@ -46,11 +46,11 @@ Below is the list of available validators:
 |   **range**   | This validator validates the form controls value is should be within the specific range value. Syntax: `FormValidator.range(18,50)` | this.reactForm = new FormGroup({ `age`: new FormControl('', [FormValidators. range(18,50)]) });    |
 |   **rangeLength** | This validator validates the form controls value is should be within the specific range length. Syntax: `FormValidator.rangeLength(100,150)`    | this.reactForm = new FormGroup({`age`: new FormControl('', [FormValidators. rangeLength(100,150)]) });  ||
 
-## Creating Angular Reactive Form with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validator
+## Creating Angular Reactive Form with Syncfusion Angular UI Validator
 
 **Step 1:** Get started with an Angular Reactive Form by referring to the [Angular Reactive form guide](https://v17.angular.io/guide/reactive-forms).
 
-**Step 2:** To incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation, import the Validator class from the `@syncfusion/ej2-angular-inputs` package:
+**Step 2:** To incorporate Syncfusion Angular UI Validation, import the Validator class from the `@syncfusion/ej2-angular-inputs` package:
 
 ```
 import { FormValidators } from '@syncfusion/ej2-angular-inputs';
@@ -66,4 +66,4 @@ this.reactForm = new FormGroup({
       'state': new FormControl('', [FormValidators.required]),
     });
 ```
-To see a simple example of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation in action, visit this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).
+To see a simple example of Syncfusion Angular UI Validation in action, visit this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).

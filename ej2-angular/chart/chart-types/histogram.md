@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Histogram in Angular Chart component | Syncfusion
-description: Learn here all about Histogram in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Histogram Chart in Angular Charts | Syncfusion
+description: Learn here all about Histogram in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Histogram
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Histogram in Angular Chart component
+# Histogram Chart in Angular Charts
 
 ## Histogram
 

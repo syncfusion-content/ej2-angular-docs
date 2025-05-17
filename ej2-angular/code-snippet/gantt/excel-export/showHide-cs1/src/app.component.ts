@@ -40,7 +40,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.columns =  [
             { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },

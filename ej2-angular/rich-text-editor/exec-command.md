@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Execute command in Angular Rich text editor component
+# Execute Command in Angular Rich Text Editor Component
 
 The executeCommand is used to perform command for the modification of content in editable area. The list of valid executeCommand are given in the below table.
 
@@ -49,4 +49,4 @@ The executeCommand is used to perform command for the modification of content in
 | insertAudio | Insert a audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
 
->Note: The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor
+>Note: The `ExecuteCommand` public method is not supported in Syncfusion Markdown Editor.

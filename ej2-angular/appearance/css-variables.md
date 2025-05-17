@@ -12,16 +12,16 @@ domainurl: ##DomainURL##
 
 [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), or custom properties, are entities defined by CSS authors that hold specific values applicable throughout a CSS file. They are named with two hyphens (--) followed by an identifier. These variables can take any valid CSS value including colors, lengths, or fonts. To access the value of a CSS variable, use the var() function.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides modern, highly customizable themes using CSS variables. These themes deliver a consistent, visually appealing appearance across Syncfusion<sup style="font-size:70%">&reg;</sup> components. Available themes include:
+Syncfusion provides modern, highly customizable themes using CSS variables. These themes deliver a consistent, visually appealing appearance across Syncfusion components. Available themes include:
 
 * Material 3 Theme
 * Fluent 2 Theme
 * Bootstrap 5.3 Theme
 * Tailwind 3.4 Theme
 
-## CSS Themes - Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Controls
+## CSS Themes - Syncfusion Angular Controls
 
-The [Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew), [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/), and [Tailwind 3.4](https://tailwindcss.com/docs/installation/using-vite) themes have been integrated into all EJ2 Controls, featuring `light` and `dark` variants. These themes use `CSS variables`, simplifying control color customization within CSS. You can effortlessly switch between light and dark modes, accommodating user preferences and application necessities.
+The [Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew), [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/), and [Tailwind 3.4](https://tailwindcss.com/docs/installation) themes have been integrated into all EJ2 Controls, featuring `light` and `dark` variants. These themes use `CSS variables`, simplifying control color customization within CSS. You can effortlessly switch between light and dark modes, accommodating user preferences and application necessities.
 
 > Note: In the Material 3 theme, color CSS variables are defined with rgb() values. Using hex values might cause improper functionality. For instance, earlier versions of Material used $primary: #6200ee;. Now in Material 3, it's --color-sf-primary: 98, 0, 238;.
 
@@ -51,7 +51,7 @@ Below are examples of defining CSS variables in these themes:
 
 ### Obtaining these Themes
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers themes via two main methods:
+Syncfusion offers themes via two main methods:
 
 * Package
 * CDN links
@@ -161,7 +161,7 @@ Example of `Tailwind 3.4` customization using CSS classes.
 
 ![customized primary value](images/tailwind3-customize.png)
 
-Easily customize color variable values for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components with CSS variables.
+Easily customize color variable values for Syncfusion Angular Components with CSS variables.
 
 ### Light and Dark Mode Switching with CSS Variables
 
@@ -251,4 +251,4 @@ To enable dark mode, simply add the `e-dark-mode` class to your application's bo
 
 The ThemeStudio application now offers integration with the Material 3, Fluent 2, and Bootstrap 5.3 themes, creating a comprehensive solution for theme customization. This enhancement enables effortless theme customization and personalization.
 
-Access the Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio application with our themes via this link: [Link to Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)
+Access the Syncfusion ThemeStudio application with our themes via this link: [Link to Syncfusion ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)

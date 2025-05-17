@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Area Chart in Angular Chart component
+# Area Chart in Angular Charts
 
 ## Area
 

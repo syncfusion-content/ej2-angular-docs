@@ -22,7 +22,7 @@ export class OrdersService extends Subject<DataStateChangeEventArgs> {
         `&$orderby=` +
         state.sorted
           .map((obj: Sorts) => {
-            return obj.direction?.toLowerCase() === 'descending'
+            return obj.direction.toLowerCase() === 'descending'
               ? `${obj.name} desc`
               : obj.name;
           })

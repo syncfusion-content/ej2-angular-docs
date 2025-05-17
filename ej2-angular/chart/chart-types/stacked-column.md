@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 100% Stacked Column Chart in Angular Chart component | Syncfusion
-description: Learn here all about 100% Stacked Column Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: 100% Stacked Column Chart in Angular Charts | Syncfusion
+description: Learn here all about 100% Stacked Column Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: 100% Stacked column chart
+control: 100% Stacked Column Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# 100% Stacked Column in Angular Chart component
+# 100% Stacked Column Chart in Angular Charts
 
-## 100% Stacked column
+## 100% Stacked Column
 
 To render a [100% stacked column](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-column-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

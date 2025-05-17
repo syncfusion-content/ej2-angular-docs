@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Browser Compatibility in Angular
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work seamlessly with modern web browsers. This document outlines the supported browser versions and provides key information on browser compatibility.
+Syncfusion Angular UI components are designed to work seamlessly with modern web browsers. This document outlines the supported browser versions and provides key information on browser compatibility.
 
 ## Supported Browser Versions
 
@@ -30,13 +30,13 @@ For the most up-to-date information on supported browsers, please refer to the o
 
 ## Modern Web Development and Browser Support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components leverage modern web standards for optimal performance and reduced dependency on polyfills or compatibility layers.
+Syncfusion Angular UI components leverage modern web standards for optimal performance and reduced dependency on polyfills or compatibility layers.
 
 Key points:
 
 1. **Evergreen Browsers**: Components perform best with automatically updating browsers (Chrome, Firefox, Edge, Safari).
 
-2. **Angular Compatibility**: Syncfusion<sup style="font-size:70%">&reg;</sup> components align with Angular's browser support policy.
+2. **Angular Compatibility**: Syncfusion components align with Angular's browser support policy.
 
 3. **Mobile Support**: Full support for the latest versions of mobile browsers on iOS and Android platforms.
 
@@ -58,4 +58,4 @@ For detailed information on polyfills and browser support in Angular, refer to t
 - [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation/)
 - [Can I Use](https://caniuse.com/) - Check browser support for web technologies
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components enable the creation of robust, cross-browser compatible applications that deliver excellent user experiences across a wide range of modern browsers.
+Syncfusion Angular UI components enable the creation of robust, cross-browser compatible applications that deliver excellent user experiences across a wide range of modern browsers.

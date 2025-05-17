@@ -1,24 +1,18 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { ExcelExport, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
-import { ExcelExportService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
 imports: [
-         GanttModule
+         GanttAllModule
     ],
-
-providers: [ToolbarService, ExcelExportService, SelectionService],
 standalone: true,
     selector: 'app-root',
     template:
@@ -41,14 +35,14 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['ExcelExport'];
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                let excelExportProperties: ExcelExport| any = {
-                   dataSource: editingData[1]
+                let excelExportProperties: ExcelExportProperties = {
+                    dataSource: editingData.slice(0, 4)
                 };
                 this.ganttObj!.excelExport(excelExportProperties);
             }

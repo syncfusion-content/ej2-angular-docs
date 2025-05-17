@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # NgModule
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular has an NgModule for each component with two implementations, as given below.
+Syncfusion Angular has an NgModule for each component with two implementations, as given below.
 
 1. Component Module
 2. Component All Module

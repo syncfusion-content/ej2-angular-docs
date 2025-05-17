@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization
 
-Localization library allows you to localize the text content of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
+Localization library allows you to localize the text content of the Syncfusion Angular UI Components.
 
 ## Loading translations
 
@@ -30,7 +30,7 @@ To load a translation object in your application use [`load`](https://ej2.syncfu
 
 ## Changing current locale
 
-Current locale can be changed for all the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
+Current locale can be changed for all the Syncfusion Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
 
 ```typescript
 import {L10n, setCulture} from '@syncfusion/ej2-base';

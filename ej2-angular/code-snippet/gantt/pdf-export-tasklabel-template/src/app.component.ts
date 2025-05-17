@@ -54,7 +54,7 @@ export class AppComponent {
   public customFunction(data: any): string {
     var container = document.createElement('div');
     if (data.ganttProperties.resourceNames) {
-      var resources = data.resources.split(',');
+      var resources = data.Resources.split(',');
       for (var i = 0; i < resources.length; i++) {
         var subContainer = document.createElement('div');
         var img = document.createElement('img');
@@ -81,19 +81,19 @@ export class AppComponent {
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
-      resourceInfo: 'resources',
+      resourceInfo: 'Resources',
       progress : 'Progress',
       startDate: 'StartDate',
       duration: 'Duration',
-      child: 'subtasks',
+      parentID:'ParentID',
     };
     this.toolbar = ['PdfExport'];
     this.splitterSettings = {
       columnIndex: 1,
     };
     this.resourceFields = {
-      id: 'resourceId',
-      name: 'resourceName',
+      id: 'ResourceId',
+      name: 'ResourceName',
     };
     this.labelSettings = {
       taskLabel: '${Progress}%',

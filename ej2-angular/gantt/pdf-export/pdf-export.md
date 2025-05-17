@@ -37,11 +37,11 @@ These indicators, represented by images,can be effortlessly defined using the  [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/src/app.component.ts %}
+{% include code-snippet/gantt/pdf-export-cs15/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/src/main.ts %}
+{% include code-snippet/gantt/pdf-export-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

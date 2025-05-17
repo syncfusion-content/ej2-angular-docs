@@ -16,7 +16,7 @@ To enable virtualization in the Grid, you need to inject the **VirtualScrollServ
 
 ## Row virtualization
 
-Row virtualization is a feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
+Row virtualization is a feature in the Syncfusion Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
 
 To set up row virtualization, you need to define the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) property as **true** and specify the content height using the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property in the Grid configuration.
 
@@ -63,7 +63,7 @@ The following example enable row virtualization using `enableVirtualization` pro
 
 ## Column virtualization
 
-Column virtualization feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
+Column virtualization feature in the Syncfusion Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
 
 To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
 
@@ -136,7 +136,7 @@ You can prevent the height limitation problem in the browser when scrolling thro
 
 In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in Grid. Once you reach the last page of 0.5 million records, the **Load Next Set** button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 0.5 million records in Grid. Also, the **Load Previous Set** button will be shown at the top of the Grid to load the previous set of 0.5 million records.
 
-Let's see the step by step procedure for how we can overcome the limitation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
+Let's see the step by step procedure for how we can overcome the limitation in the Syncfusion Grid component.
 
 1. Create a custom adaptor by extending UrlAdaptor and binding it to the grid DataSource property. In the processQuery method of the custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
 

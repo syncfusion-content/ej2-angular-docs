@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Index with Angular Getting started component
 
-The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Essential JS 2 components.
 
 ## Key Features
 

@@ -939,9 +939,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![Angular Grid Component bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
-
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20UrlAdaptor/Grid_Dapper).
+![Angular Grid Component bound with Microsoft SQL Server using Dapper data](.../images/connecting-micro-curd.gif)
 
 ## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
 
@@ -1788,7 +1786,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation:**
+## Batch Operation:
 
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
@@ -1907,5 +1905,3 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
-
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20CustomAdaptor/Grid_Dapper_CustomAdaptor).

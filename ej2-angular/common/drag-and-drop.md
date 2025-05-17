@@ -12,10 +12,10 @@ domainurl: ##DomainURL##
 
 Drag and drop is a feature of a user interface that allows users to select an item or items and then move them to a different location or onto another interface element by "dragging" the selected item(s) with a pointing device (such as a mouse) and then "dropping" them at the desired location.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components offer robust drag and drop functionality facilitated by two primary libraries: [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/).
+Syncfusion Angular components offer robust drag and drop functionality facilitated by two primary libraries: [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/).
 ## Draggable
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) library empowers developers to make any DOM element draggable by initializing a `Draggable` object with the element as a parameter. This functionality is Essential<sup style="font-size:70%">&reg;</sup> for interactive applications, enabling users to reorder items dynamically. Below is a demonstration of how to implement draggable functionality for a specific DOM element.
+The Syncfusion [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) library empowers developers to make any DOM element draggable by initializing a `Draggable` object with the element as a parameter. This functionality is essential for interactive applications, enabling users to reorder items dynamically. Below is a demonstration of how to implement draggable functionality for a specific DOM element.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/draggable-default-cs1/src/app.component.ts %}
@@ -30,7 +30,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Draggable`](https://ej2.s
 
 ### Clone draggable element
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a clone of a draggable element while the user is dragging it. It can be achieved by setting the [clone](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone) property to `true`. Here's an example of how to create a clone of a draggable element.
+Syncfusion provides the option to create a clone of a draggable element while the user is dragging it. It can be achieved by setting the [clone](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone) property to `true`. Here's an example of how to create a clone of a draggable element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

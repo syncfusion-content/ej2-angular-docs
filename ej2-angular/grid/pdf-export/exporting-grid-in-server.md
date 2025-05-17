@@ -14,12 +14,12 @@ The Grid component provides an option to export grid data to a PDF document on t
 
 ## Server dependencies
 
-To enable server-side PDF exporting in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you need to include the following dependencies:
+To enable server-side PDF exporting in the Syncfusion Angular Grid component, you need to include the following dependencies:
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.GridExport
 
-These dependencies are available in the Essential Studio<sup style="font-size:70%">&reg;</sup> package and can also be obtained from [nuget.org](https://www.nuget.org/).
+These dependencies are available in the Essential Studio package and can also be obtained from [nuget.org](https://www.nuget.org/).
 
 ## Server configuration
 
@@ -126,7 +126,7 @@ public object PdfExport(string gridModel)
 
 ## Merge grid's memory stream
 
-The [Essential<sup style="font-size:70%">&reg;</sup> PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/pdf/merge-documents).
+The [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/pdf/merge-documents).
 
 You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 
@@ -306,7 +306,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 ## Passing additional parameters to the server while exporting
 
-Passing additional parameters to the server when exporting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+Passing additional parameters to the server when exporting data in the Syncfusion Angular Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
 You can achieve this by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 

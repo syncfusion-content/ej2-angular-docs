@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Timezone in Angular Gantt component
 
-The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
+The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timezone) property needs to be used.
 
 ## Understanding date manipulation in JavaScript
 

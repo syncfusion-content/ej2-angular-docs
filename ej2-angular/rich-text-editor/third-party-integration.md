@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Third party integration in Angular Rich text editor component
+# Third Party Integration in Angular Rich Text Editor Component
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 
@@ -16,7 +16,7 @@ To get start quickly with Third-Party Integration for Angular Rich Text Editor c
 
 {% youtube "https://www.youtube.com/watch?v=F4UATDBVxXM" %}
 
-## CodeMirror Integration
+## CodeMirror integration
 
 RichTextEditor comes with a basic HTML source editor through the view-source property. CodeMirror plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
 
@@ -52,7 +52,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs29" %}
 
-## Embedly Integration
+## Embedly integration
 
 This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
 
@@ -77,4 +77,3 @@ The above script is added to the page.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/embedly-cs1" %}
-

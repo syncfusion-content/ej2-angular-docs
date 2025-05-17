@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Radar in Angular Chart component | Syncfusion
-description: Learn here all about Radar in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Radar Chart in Angular Charts | Syncfusion
+description: Learn here all about Radar in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Radar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Radar in Angular Chart component
+# Radar Chart in Angular Charts
 
 ## Radar
 

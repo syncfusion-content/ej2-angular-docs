@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacked Bar Chart in Angular Chart component | Syncfusion
-description: Learn here all about Stacked Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Bar Chart in Angular Charts | Syncfusion
+description: Learn here all about Stacked Bar Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Stacked bar chart
+control: Stacked Bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked Bar in Angular Chart component
+# Stacked Bar Chart in Angular Charts
 
-## Stacked bar
+## Stacked Bar
 
 To render a [stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

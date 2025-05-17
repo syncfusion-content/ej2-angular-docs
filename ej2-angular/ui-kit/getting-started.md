@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular
+# Getting Started with Essential UI Kit for Angular
 
-Follow the steps below to get started with Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular. You can begin in one of two ways:
+Follow the steps below to get started with Essential UI Kit for Angular. You can begin in one of two ways:
 
 - **Download the App from GitHub**: Get the full free source code and run the app locally to explore the blocks.
 - **View the Online Demo**: Alternatively, you can try out the blocks directly through the online demo to see them in action without needing to download anything.
@@ -33,7 +33,7 @@ In Visual Studio Code, go to the **Terminal** menu and select **New Terminal** t
 Run the following commands one after the other in the terminal:
 
 1. **Install dependencies**  
-   Run the command below to install all necessary packages related to the blocks, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, and the sample browser.
+   Run the command below to install all necessary packages related to the blocks, the Syncfusion Angular components, and the sample browser.
 
     ![Installing the required dependencies](images/installing-the-required-dependencies.png)
 
@@ -52,10 +52,10 @@ Run the following commands one after the other in the terminal:
 
 ### Step 4: License Key Requirement
 
-The blocks include several Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components that require an active license key for proper display and usage. To activate the license, refer to the topics below:
+The blocks include several Syncfusion Angular components that require an active license key for proper display and usage. To activate the license, refer to the topics below:
 
 #### How to Obtain the License Key
-To obtain the license key, visit the following page: [Syncfusion<sup style="font-size:70%">&reg;</sup> License](https://ej2.syncfusion.com/angular/documentation/licensing/overview).
+To obtain the license key, visit the following page: [Syncfusion License](https://ej2.syncfusion.com/angular/documentation/licensing/overview).
 
 #### How to Register the License Key in the App
 Once you have your license key, add it to the **src/main.ts** file for seamless browsing and usage of the blocks.
@@ -71,4 +71,4 @@ By adding the license key, you ensure that the blocks are fully functional and f
 
 ## Get Started by Viewing the Online Demo
 
-If you prefer a quick demo instead of downloading the app, you can explore the blocks directly through the online demo. Simply visit the official [Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) website to interact with the blocks.
+If you prefer a quick demo instead of downloading the app, you can explore the blocks directly through the online demo. Simply visit the official [Essential UI Kit for Angular](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) website to interact with the blocks.

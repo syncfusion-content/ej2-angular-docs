@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Waterfall in Angular Chart component | Syncfusion
-description: Learn here all about Waterfall in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Waterfall Chart in Angular Charts | Syncfusion
+description: Learn here all about Waterfall Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Waterfall
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Waterfall in Angular Chart component
+# Waterfall Chart in Angular Charts
 
 ## Waterfall Chart
 

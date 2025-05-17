@@ -37,7 +37,7 @@ When integrating image or template elements into a column, it's recommended to u
 
 ## How to improve loading performance by referring individual script and CSS
 
-To improve the performance of Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
+To improve the performance of Syncfusion Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
 
 [CRG website link](https://crg.syncfusion.com/) 
 
@@ -81,7 +81,7 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Optimizing Angular app performance with multiple grids and templates
 
-The reported performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
+The reported performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion Grid.
 
 When your application's DOM is populated with a large number of items, this problem arises as continuous change detection is applied (e.g., typing into an input continuously). For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) links:
   

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hilo in Angular Chart component | Syncfusion
-description: Learn here all about Hilo in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: High Low Chart in Angular Charts | Syncfusion
+description: Learn here all about High Low in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Hilo
+control: High Low
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hilo in Angular Chart component
+# High Low Chart in Angular Charts
 
 ## Hilo
 

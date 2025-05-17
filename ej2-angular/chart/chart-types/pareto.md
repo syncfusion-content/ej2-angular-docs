@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pareto in Angular Chart component | Syncfusion
-description: Learn here all about Pareto in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Pareto Chart in Angular Charts | Syncfusion
+description: Learn here all about Pareto in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Pareto
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pareto in Angular Chart component
+# Pareto Chart in Angular Charts
 
 ## Pareto
 

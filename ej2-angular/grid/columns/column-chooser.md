@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column chooser in Angular Grid component
 
-The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property as **true**.
+The column chooser feature in the Syncfusion Angular Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property as **true**.
 
 To use the column chooser, you need to inject the **ColumnChooserService** in the provider section of **AppModule**.
 
@@ -51,7 +51,7 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
 
 ## Open column chooser by externally
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser/#opencolumnchooser) method.
+The Syncfusion Angular Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser/#opencolumnchooser) method.
 
 Here's an example of how to open the column chooser in the Grid using an external button:
 
@@ -69,7 +69,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
+The column chooser dialog in Syncfusion Angular Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
 To customize the column chooser dialog size, you can use the following CSS styles:
 
 ```css
@@ -96,9 +96,9 @@ To customize the column chooser dialog size, you can use the following CSS style
 
 ## Change default search operator of the column chooser 
 
-The column chooser dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
+The column chooser dialog in the Syncfusion Angular Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to use the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#operator) property of the column chooser.
+To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#operator) property of the column chooser.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the Angular Grid:
 
@@ -132,7 +132,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs6" %}
 
-## Column Chooser Template in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid
+## Column Chooser Template in Syncfusion Angular Grid
 
 The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property.
 
@@ -144,7 +144,7 @@ To implement a custom column chooser template in the Grid, use the following pro
 
 * **columnChooserSettings.footerTemplate** - Defines the footer template.
 
-In this example, the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeView component is rendered inside the column chooser using the **ng-template** directive. To use the TreeView component, install the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeView package as described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettingsTemplate` reference variable is assigned an **ng-template**, where the TreeView component is rendered with checkboxes for selecting columns. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
+In this example, the Syncfusion TreeView component is rendered inside the column chooser using the **ng-template** directive. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettingsTemplate` reference variable is assigned an **ng-template**, where the TreeView component is rendered with checkboxes for selecting columns. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
 
 The column chooser footer is customized using the `columnChooserSettingsFooterTemplate` reference variable, which is assigned an **ng-template**, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `Click` event. Additionally, the header is customized using the `columnChooserSettingsHeaderTemplate` reference variable, which is assigned an **ng-template** to include a title and an icon.
 

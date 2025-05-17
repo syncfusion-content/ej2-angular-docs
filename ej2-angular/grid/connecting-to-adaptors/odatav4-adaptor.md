@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component
+# ODataV4Adaptor in Syncfusion Angular Grid Component
 
-The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component allows seamless integration of the Angular Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component.
+The `ODataV4Adaptor` in the Syncfusion Angular Grid Component allows seamless integration of the Angular Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion Angular Grid Component.
 
 ## Creating an OData service
 
-To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
 
 **1. Project Creation:**
 
@@ -138,13 +138,13 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
 
-## Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to an OData service
+## Connecting Syncfusion Angular Grid to an OData service
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
 
-**1: Install Syncfusion<sup style="font-size:70%">&reg;</sup> Package**
+**1: Install Syncfusion Package**
 
-Open your terminal in the project's client folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
+Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -175,7 +175,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular component:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -193,7 +193,7 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component**
+**Step 4: Adding Syncfusion Component**
 
 In your component file (e.g., app.component.ts), import `DataManager` and `ODataV4Adaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/odata/Orders) using the `url` property and set the adaptor `ODataV4Adaptor`.
 
@@ -613,9 +613,9 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow the below steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -685,7 +685,7 @@ export class AppModule { }
 
 **Insert Record**
 
-To insert a new record into your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
 /// <summary>
@@ -710,7 +710,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
 
 ```cs
 /// <summary>
@@ -741,7 +741,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updateRecord)
 
 **Delete Record**
 
-To delete a record from your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
 ```cs
 /// <summary>
@@ -766,11 +766,11 @@ public IActionResult Delete(int key)
 
 ## Odata with custom url
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's Essential<sup style="font-size:70%">&reg;</sup> to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
 
 **Configuring Custom URLs**
 
-To work with custom URLs for CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the following properties:
+To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
 
 * insertUrl: Specifies the custom URL for inserting new records.
 * removeUrl: Specifies the custom URL for deleting records.

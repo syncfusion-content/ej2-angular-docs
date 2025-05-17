@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting Started with Ionic and Angular
 
-This guide assists you in creating a simple Angular application using the `Ionic Framework` and integrating **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components** for enhanced functionality and a polished appearance.
+This guide assists you in creating a simple Angular application using the `Ionic Framework` and integrating `Syncfusion Angular UI components` for enhanced functionality and a polished appearance.
 
 ## Prerequisites
 
-Before integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an Ionic project with Angular, ensure the following prerequisites are installed on your development machine:
+Before integrating Syncfusion Angular Components in an Ionic project with Angular, ensure the following prerequisites are installed on your development machine:
 
-* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * Ionic CLI version `^6.x.x` or later
 
 ## Create an Application
@@ -39,9 +39,9 @@ This command will generate a new Ionic template application in a directory named
 
 > Refer to this [getting started guide](https://ionicframework.com/#cli) for Ionic framework installation details.
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
+## Installing Syncfusion Grid Package
 
-To integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, run the appropriate command. Below is the command for adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid package:
+To integrate Syncfusion Angular packages, run the appropriate command. Below is the command for adding the Syncfusion Angular Grid package:
 
 ```bash
 npm i @syncfusion/ej2-angular-grids --save
@@ -49,9 +49,9 @@ npm i @syncfusion/ej2-angular-grids --save
 
 ## Adding Grid Module
 
-After package installation, the component modules from Syncfusion<sup style="font-size:70%">&reg;</sup> are available to configure your application.
+After package installation, the component modules from Syncfusion are available to configure your application.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component
+## Adding Syncfusion Component
 
 After importing the package, add the following grid component code snippet in the `~/src/app/home/home.page.ts` file.
 
@@ -123,7 +123,7 @@ Include the following Grid component styles in the `~/src/global.scss` file.
 
 ## Running the Application
 
-Finally, use the following command to start the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component will be rendered within the Ionic framework.
+Finally, use the following command to start the application. The Syncfusion Angular Grid component will be rendered within the Ionic framework.
 
 ```bash
 ionic serve 

@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Internationalization
 
-The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](https://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
+The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](https://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion Angular UI Components.
 
 ## Loading Culture Data
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package contains only JSON data files generated using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. This helps users avoid utilizing the existing [cldr-data](https://www.npmjs.com/package/cldr-data) package, which has third-party library vulnerabilities. The `loadCldr` function is required to load the following CLDR data for cultures other than `en-US`.
+Syncfusion CLDR data package contains only JSON data files generated using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. This helps users avoid utilizing the existing [cldr-data](https://www.npmjs.com/package/cldr-data) package, which has third-party library vulnerabilities. The `loadCldr` function is required to load the following CLDR data for cultures other than `en-US`.
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package is published based on the releases of the Unicode CLDR JSON data. The package will be published within a week after the official [Unicode CLDR](http://cldr.unicode.org/) JSON data is released.
+N> Syncfusion CLDR data package is published based on the releases of the Unicode CLDR JSON data. The package will be published within a week after the official [Unicode CLDR](http://cldr.unicode.org/) JSON data is released.
 
 ### Individual file path reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data can be loaded by referring to individual paths from the package below, such as:
+Syncfusion CLDR data can be loaded by referring to individual paths from the package below, such as:
 
 | File Name | Path |
 | ------------- | ------------- |
@@ -32,7 +32,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data can be loaded by refe
 
 ### Single file path reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data can also be loaded by referring to a single path from the package below, such as:
+Syncfusion CLDR data can also be loaded by referring to a single path from the package below, such as:
 
 | File Name | Path |
 | ------------- | ------------- |
@@ -43,7 +43,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data can also be loaded by
 
 ### Installing CLDR Data
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data is available as npm package. So, we can install it through below command to our package.
+Syncfusion CLDR data is available as npm package. So, we can install it through below command to our package.
 
 ```bash
 npm install @syncfusion/ej2-cldr-data
@@ -62,7 +62,7 @@ loadcldr(enNumberData, entimeZoneData);
 
 ## Changing Global Culture and Currency Code
 
-To set the default culture and the currencyCode for all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
+To set the default culture and the currencyCode for all Syncfusion Angular UI Components, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
 
 ### Setting Global Culture
 
