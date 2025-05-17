@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Grid component
 
-The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property.
+The grouping feature in the Syncfusion Angular Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property.
 
 To use the Grouping feature, need to inject **GroupService** in the provider section of your **AppModule**.
 
@@ -69,7 +69,7 @@ The Grid component provides the ability to prevent grouping for a particular col
 
 By default, the Grid provides a drop area for grouping columns. This drop area allows you to drag and drop columns to group and ungroup them. However, in some cases, you may want to prevent ungrouping or further grouping a column after initial grouping.
 
-To hide the drop area in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you can set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showdroparea) property to **false**. 
+To hide the drop area in the Syncfusion Angular Grid, you can set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showdroparea) property to **false**. 
 
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to hide or show the drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
@@ -89,7 +89,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Show the grouped column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings.showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showgroupedcolumn) property to **true**.
+The Syncfusion Angular Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings.showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showgroupedcolumn) property to **true**.
 
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to hide or show the grouped columns. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly. 
 
@@ -107,7 +107,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Reordering on grouped columns 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to easily reorder the grouped columns by dragging and dropping the grouped header cells in the group drag area. By changing the order of the grouped columns, the corresponding changes are automatically reflected in the grouping hierarchy of the grid. The grid dynamically adjusts the grouping based on the reordered columns in the group drag area. Additionally, you can also drop new columns into specific positions within the group drag area.
+The Syncfusion Angular Grid allows you to easily reorder the grouped columns by dragging and dropping the grouped header cells in the group drag area. By changing the order of the grouped columns, the corresponding changes are automatically reflected in the grouping hierarchy of the grid. The grid dynamically adjusts the grouping based on the reordered columns in the group drag area. Additionally, you can also drop new columns into specific positions within the group drag area.
 
 To enable this feature, you have to set the [groupSettings.allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#allowReordering) property as **true**. This is demonstrated in the sample below.
 
@@ -169,7 +169,7 @@ The following example demonstrates how to perform a group action using the `enab
 
 ## Collapse all grouped rows at initial rendering
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. The option is useful when dealing with a large dataset that contains many groups, and there is a need to provide a summarized view by initially hiding the details.
+The Syncfusion Angular Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. The option is useful when dealing with a large dataset that contains many groups, and there is a need to provide a summarized view by initially hiding the details.
 
 To collapse all grouped rows at the initial rendering of the Grid using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event along with the [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/group/#collapseall) method.
 
@@ -201,7 +201,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 
 ## Group or ungroup column externally
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
+By default, the Syncfusion Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
 The following example demonstrates how to group and ungroup the columns in a grid. It utilizes the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
 
@@ -219,7 +219,7 @@ The following example demonstrates how to group and ungroup the columns in a gri
 
 ## Expand or collapse externally
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. This section will provide guidance on enabling this functionality and integrating it into your application using the Grid properties and methods.
+The Syncfusion Angular Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. This section will provide guidance on enabling this functionality and integrating it into your application using the Grid properties and methods.
 
 ### Expand or collapse all grouped rows
 
@@ -241,7 +241,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ### Expand or collapse selected grouped row
 
-Expanding or collapsing selected grouped rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid involves implementing the functionality to expand or collapse grouped records programatically.
+Expanding or collapsing selected grouped rows in a Syncfusion Angular Grid involves implementing the functionality to expand or collapse grouped records programatically.
 
 To enable the expand and collapse functionality for grouped rows in a grid, you can utilize the [expandCollapseRows](https://ej2.syncfusion.com/angular/documentation/api/grid/group/#expandcollapserows) method. This method is designed to handle two scenarios such as expanding collapsed grouped records and collapsing expanded grouped records.
 
@@ -346,7 +346,7 @@ export class AppComponent implements OnInit {
 
 ## Clear grouping 
 
-The clear grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to removing all the grouped columns from the grid. This feature provides a convenient way to clear the grouping of columns in your application.
+The clear grouping feature in the Syncfusion Angular Grid allows you to removing all the grouped columns from the grid. This feature provides a convenient way to clear the grouping of columns in your application.
 
 To clear all the grouped columns in the Grid, you can utilize the [clearGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#cleargrouping) method of the grid.
 

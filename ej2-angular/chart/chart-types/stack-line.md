@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked Line Chart in Angular Chart component | Syncfusion
-description: Learn here all about Stacked Line Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Line Chart in Angular Charts | Syncfusion
+description: Learn here all about Stacked Line Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Stacked Line Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Stacked Line Chart in Angular Chart component
+# Stacked Line Chart in Angular Charts
 
 ## Stacked Line
 

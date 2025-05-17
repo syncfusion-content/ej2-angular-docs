@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Version Compatibility for Syncfusion<sup style="font-size:70%">&reg;</sup> Components
+# Angular Version Compatibility for Syncfusion Components
 
 ## Supported Angular Versions
 
-The following table outlines the compatibility between Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components and supported Angular versions:
+The following table outlines the compatibility between Syncfusion Angular UI components and supported Angular versions:
 
-| Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
+| Angular Version | Compatible Syncfusion Angular Components Version |
 | --------------- | ------------------------------------------------ |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
@@ -27,7 +27,7 @@ The following table outlines the compatibility between Syncfusion<sup style="fon
 
 ## Ivy and Non-Ivy Package Compatibility
 
-Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy compiler](https://angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two different package distributions:
+Starting from version 20.2.36, Syncfusion Angular packages are compatible with the [Angular Ivy compiler](https://angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion provides two different package distributions:
 
 1. **Ivy-compatible packages**: These are the default packages and do not require any special suffix.
 
@@ -35,7 +35,7 @@ Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 ### Usage of ngcc Packages
 
-The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compatible with Ivy-based applications. For Syncfusion<sup style="font-size:70%">&reg;</sup> components, use the following guidelines:
+The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compatible with Ivy-based applications. For Syncfusion components, use the following guidelines:
 
 - **For Ivy-based applications (Angular 12 and above)**: Use the default packages without any suffix.
 
@@ -55,26 +55,26 @@ The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compa
 
 For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-syncfusion-grid-package).
 
-## Understanding Syncfusion<sup style="font-size:70%">&reg;</sup> Version Numbers
+## Understanding Syncfusion Version Numbers
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
+Syncfusion follows a quarterly release cycle for major updates. The version numbering system for Syncfusion Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
 
 For example, a release version `22.1.34` can be interpreted as follows:
 
 **22** - Major version (updated quarterly)
-This number represents significant updates to the library. It may include major enhancements, new features, bug fixes, and potential breaking changes. Syncfusion<sup style="font-size:70%">&reg;</sup> increments this number every three months as part of their quarterly release cycle.
+This number represents significant updates to the library. It may include major enhancements, new features, bug fixes, and potential breaking changes. Syncfusion increments this number every three months as part of their quarterly release cycle.
 
 **1** - Minor version
-The minor version indicates the release of new features and bug fixes that maintain backward compatibility. When Syncfusion<sup style="font-size:70%">&reg;</sup> adds functionality in a backwards-compatible manner, they increment this number.
+The minor version indicates the release of new features and bug fixes that maintain backward compatibility. When Syncfusion adds functionality in a backwards-compatible manner, they increment this number.
 
 **34** - Patch version
 This number is incremented for weekly patch releases. These releases primarily consist of bug fixes and minor improvements that do not introduce new features or breaking changes.
 
-By understanding this versioning system, developers can easily assess the impact and nature of each Syncfusion<sup style="font-size:70%">&reg;</sup> update, helping them make informed decisions about when to upgrade their applications.
+By understanding this versioning system, developers can easily assess the impact and nature of each Syncfusion update, helping them make informed decisions about when to upgrade their applications.
 
 ## Staying Up-to-Date
 
-To ensure optimal performance and access to the latest features, it's recommended to keep Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components updated to the most recent version compatible with the Angular version in use. Regular updates provide:
+To ensure optimal performance and access to the latest features, it's recommended to keep Syncfusion Angular components updated to the most recent version compatible with the Angular version in use. Regular updates provide:
 
 1. Access to new features and improvements
 2. Enhanced performance and stability

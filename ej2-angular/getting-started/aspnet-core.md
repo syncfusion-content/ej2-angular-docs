@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting Started with ASP.NET Core and Angular using Project Template
 
-This guide provides detailed instructions on creating a simple ASP.NET Core application with the Angular Framework using the dotnet CLI, integrating it with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
+This guide provides detailed instructions on creating a simple ASP.NET Core application with the Angular Framework using the dotnet CLI, integrating it with Syncfusion Angular UI components.
 
 ## Prerequisites
 
-Ensure the following prerequisites are installed on your development machine before you start using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an ASP.NET Core with Angular project:
+Ensure the following prerequisites are installed on your development machine before you start using Syncfusion Angular Components in an ASP.NET Core with Angular project:
 
-* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 ## Create an Application
@@ -67,11 +67,11 @@ dotnet build
 
 5. The ASP.NET Core with Angular project template has been successfully created.
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
+## Installing Syncfusion Grid Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. Access all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages via this [npm link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion packages are available on npm under the `@syncfusion` scope. Access all Syncfusion Angular packages via this [npm link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-To install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid package, navigate to the ClientApp folder and execute the following commands:
+To install the Syncfusion Angular DataGrid package, navigate to the ClientApp folder and execute the following commands:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -85,7 +85,7 @@ npm install @syncfusion/ej2-angular-grids --save
 
 ## Adding Grid Module
 
-After installing the package, configure the component modules in your application using the installed Syncfusion<sup style="font-size:70%">&reg;</sup> package. Open the `~/src/app.module.ts` file located in the `ClientApp` folder using Visual Studio Code or your preferred code editor, and use the following code snippet to import the Grid module.
+After installing the package, configure the component modules in your application using the installed Syncfusion package. Open the `~/src/app.module.ts` file located in the `ClientApp` folder using Visual Studio Code or your preferred code editor, and use the following code snippet to import the Grid module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.module.ts" hl_lines="14 29" %}
@@ -134,7 +134,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component
+## Adding Syncfusion Component
 
 Insert the following grid component code snippet in the `~/src/home/home.component.ts` file as follows.
 
@@ -186,7 +186,7 @@ export class HomeComponent {
 
 ## Adding CSS Reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components come with a range of pre-built [themes](../appearance/theme-studio/) that are easily incorporated into your project. You can achieve this by importing the necessary CSS files directly from the `~/node_modules/@syncfusion` package. Below, you will find the styles specific to the Grid component, which need to be added to your `~/src/styles.css` file.
+Syncfusion Angular components come with a range of pre-built [themes](../appearance/theme-studio/) that are easily incorporated into your project. You can achieve this by importing the necessary CSS files directly from the `~/node_modules/@syncfusion` package. Below, you will find the styles specific to the Grid component, which need to be added to your `~/src/styles.css` file.
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}

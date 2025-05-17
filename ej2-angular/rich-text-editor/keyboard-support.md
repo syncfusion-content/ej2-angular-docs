@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Keyboard support in Angular Rich text editor component
+# Keyboard Support in Angular Rich Text Editor Component
 
 The Rich Text Editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists and dialogs.
 
@@ -132,7 +132,6 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
 | Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

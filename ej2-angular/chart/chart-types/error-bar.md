@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Error Bar in Angular Chart component | Syncfusion
-description: Learn here all about Error Bar in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Error Bar Chart in Angular Charts | Syncfusion
+description: Learn here all about Error Bar in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Error Bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Error Bar in Angular Chart component
+# Error Bar Chart in Angular Charts
 
-## Error bar
+## Error Bar
 
 Error bars are graphical representations of the variability of data and are used on graphs to indicate the error or uncertainty in a reported measurement.
 

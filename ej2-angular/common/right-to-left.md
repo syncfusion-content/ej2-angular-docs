@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Right-To-Left support in Syncfusion Angular Components
 
 Right-to-Left (RTL) support allows applications to cater to languages written from right to left, such as Arabic and Hebrew. This feature enhances the accessibility and usability of web applications for a broader audience.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components provide built-in RTL support. By setting the `enableRtl` property to `true`, you can render Syncfusion<sup style="font-size:70%">&reg;</sup> components in a right-to-left direction. This automatically applies the `e-rtl` class to the component's HTML element.
+Syncfusion Angular UI components provide built-in RTL support. By setting the `enableRtl` property to `true`, you can render Syncfusion components in a right-to-left direction. This automatically applies the `e-rtl` class to the component's HTML element.
 
 ## Enable RTL for all components
 
-To enable RTL support globally across all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, set the `enableRtl` property at the application level. This ensures a consistent RTL layout throughout your application. Below is an example using the ListView component:
+To enable RTL support globally across all Syncfusion Angular components, set the `enableRtl` property at the application level. This ensures a consistent RTL layout throughout your application. Below is an example using the ListView component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,4 +48,4 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
 
 ## Summary
 
-Utilizing the RTL support provided by Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components allows effective service for users of right-to-left languages. Whether implemented globally or tailored to specific components, Syncfusion<sup style="font-size:70%">&reg;</sup> offers the versatility needed to enhance the user experience across diverse linguistic audiences.
+Utilizing the RTL support provided by Syncfusion Angular components allows effective service for users of right-to-left languages. Whether implemented globally or tailored to specific components, Syncfusion offers the versatility needed to enhance the user experience across diverse linguistic audiences.

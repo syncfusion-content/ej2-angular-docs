@@ -24,6 +24,7 @@ You can define string content for the Timeline items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/content/string-based/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/content/string-based/src/main.ts %}
 {% endhighlight %}
@@ -49,7 +50,9 @@ You can specify the template content for the items, by using the selector for an
 {% include code-snippet/timeline/items/content/template-based/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
+{% raw %}
 {% include code-snippet/timeline/items/content/template-based/src/app.component.html %}
+{% endraw %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/timeline/items/content/template-based/src/styles.css %}
@@ -66,6 +69,7 @@ You can add additional information to each Timeline item, by using the [opposite
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/opposite-content/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/opposite-content/src/main.ts %}
 {% endhighlight %}
@@ -99,6 +103,7 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/dot-item/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/dot-item/src/main.ts %}
 {% endhighlight %}
@@ -120,6 +125,7 @@ You can use the [disabled](api/timeline/timelineItem/#disabled) property to disa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/disabled/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/disabled/src/main.ts %}
 {% endhighlight %}
@@ -141,6 +147,7 @@ You can customize the appearance of the Timeline item by specifying a custom CSS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/css-class/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/css-class/src/main.ts %}
 {% endhighlight %}
@@ -151,5 +158,5 @@ You can customize the appearance of the Timeline item by specifying a custom CSS
 {% include code-snippet/timeline/items/css-class/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
-
+  
 {% previewsample "page.domainurl/samples/timeline/items/css-class" %}

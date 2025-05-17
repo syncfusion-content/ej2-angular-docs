@@ -18,9 +18,9 @@ Additionally, leverage the power of Observables for data retrieval and operation
 
 [Observables](https://v17.angular.io/guide/observables) are a core concept in reactive programming and are widely used in the Angular framework. An Observable represents a stream of data or events that can be observed over time. It provides a way to handle asynchronous operations, such as handling developer's input, dealing with HTTP requests, and managing events.
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, seamlessly utilize the power of [Observables](https://v17.angular.io/guide/observables) through the async pipe for effortless binding of grid data. The [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe) efficiently subscribes to the observable, extracting the latest emitted value structured with `result` and `count` properties, aligning perfectly with the grid's data expectations.
+In the Syncfusion Angular Grid, seamlessly utilize the power of [Observables](https://v17.angular.io/guide/observables) through the async pipe for effortless binding of grid data. The [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe) efficiently subscribes to the observable, extracting the latest emitted value structured with `result` and `count` properties, aligning perfectly with the grid's data expectations.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **searching**, **filtering**, **sorting**, **grouping**,  and **paging**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event, which provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
+The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **searching**, **filtering**, **sorting**, **grouping**,  and **paging**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event, which provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
 **Using the dataStateChange event**
 
@@ -365,7 +365,7 @@ The Grid component provides powerful options for dynamically inserting, deleting
 
 **Integrating CRUD Operations**
 
-To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
+To implement CRUD operations using Syncfusion Grid, follow these steps:
 
 1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
 
@@ -446,7 +446,7 @@ The following example demonstrates how to bind observable data with using async 
 
 Export all records with async pipe is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties` in conjunction with the Async Pipe for data binding.
+By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties` in conjunction with the Async Pipe for data binding.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -940,7 +940,7 @@ The Grid component provides powerful options for dynamically inserting, deleting
 
 **Integrating CRUD Operations**
 
-To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
+To implement CRUD operations using Syncfusion Grid, follow these steps:
 
 1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
 
@@ -1019,7 +1019,7 @@ The following example demonstrates how to bind observable data without using asy
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows you to export all records, including those from multiple pages, by configuring the pdfExportProperties and excelExportProperties.
+By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the pdfExportProperties and excelExportProperties.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -1177,13 +1177,13 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Sending additional parameters to the server
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+The Syncfusion Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
 
 By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property of the grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every grid action.
 
 To enable custom parameters in data requests for the grid component, follow these steps:
 
-**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Syncfusion Grid component.
 
 **2. Initialize the Query Object:** Create a new instance of the `Query` class and use the `addParams` method to add the custom parameters.
 
@@ -1244,7 +1244,7 @@ export class AppComponent implements OnInit {
 
 ## Fetch result from the DataManager query using external button 
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
 
 To achieve this, you can use the `executeQuery` method of `DataManager` with a **Query** object. This method allows you to run a custom query and retrieve results dynamically.
 
@@ -1252,72 +1252,11 @@ The following example demonstrates how to fetch data from the server when an ext
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit } from '@angular/core';
-import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
-
-const SERVICE_URI: string = 'https://ej2services.syncfusion.com/production/web-services/';
-
-// Define an interface for Order data.
-interface Order {
-    OrderID: number;
-    CustomerID: string;
-    Freight: number;
-    OrderDate: string;
-}
-
-@Component({
-    imports: [ GridModule, ButtonModule],
-    providers: [PageService],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-        <div style="padding-bottom:20px">
-            <button ejs-button (click)="executeQuery($event)">Execute Query</button>
-        </div>
-        <p *ngIf="statusMessage" style="text-align:center;color:red">{{ statusMessage }}</p>
-        <ejs-grid #grid [dataSource]='result' allowPaging='true'>
-            <e-columns>
-                <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-                <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-                <e-column field='EmployeeID' headerText='Employee ID' width='120' textAlign='Right'></e-column>
-                <e-column field='Freight' headerText='Freight' width='150' format="C2" textAlign='Right'></e-column>
-                <e-column field='ShipCountry' headerText='Ship Country' width='150' ></e-column>
-            </e-columns>
-        </ejs-grid>`
-})
-
-export class AppComponent implements OnInit {
-    public statusMessage: string = '';
-    public getData: DataManager;
-    public result: Order[] = [];
-
-    public ngOnInit(): void {
-       this.getData= new DataManager({ 
-            url: SERVICE_URI + 'api/Orders', 
-            adaptor: new WebApiAdaptor() 
-        });
-    }
-
-    public executeQuery(event:MouseEvent): void { 
-        this.statusMessage = "Fetching data...";
-        this.getData.executeQuery(new Query()).then((e: ReturnOption) => {
-            this.result = e.result as Order[];
-            this.statusMessage = `Data fetched successfully! Total Records: ${this.result.length}`;
-        }).catch((error) => {
-            this.statusMessage = "Error fetching data!";
-        });
-    }
-}
-{% endraw %}
+{% include code-snippet/grid/adapter-result/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/adapter-result/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/adapter-result" %} 
+{% previewsample "page.domainurl/samples/grid/adapter-result" %}

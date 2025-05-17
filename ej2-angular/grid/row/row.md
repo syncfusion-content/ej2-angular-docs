@@ -14,7 +14,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Customize row styles 
 
-Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+Customizing the styles of rows in a Syncfusion Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion Angular Grid component.
 
 ### Using event
 
@@ -42,7 +42,7 @@ You can apply styles to the rows using CSS selectors. The Grid provides a class 
 
 **Customize alternate rows**
 
-You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
+You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
 
 To change the background color of the alternate rows, you can add the following CSS code to your application's stylesheet:
 
@@ -119,7 +119,7 @@ The following example demonstrates how to use [getRowByIndex](https://ej2.syncfu
 
 ## Row height
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property of the Grid component. This property allows you to change the height of the entire grid row to your desired value.
+The Syncfusion Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property of the Grid component. This property allows you to change the height of the entire grid row to your desired value.
 
 In the below example, we will demonstrate how to dynamically change the height of the rows using the `rowHeight` property.
 
@@ -192,7 +192,7 @@ You can retrieve row information when hovering over a specific cell. This can be
 * The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Grid element.
 * The `getRowInfo` method is used to retrieve the row information when hovering over a specific cell. This method takes a single parameter, which is the target element that is being hovered over.
 
-Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
+Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -210,7 +210,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 ## Row pinning (Frozen)
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
+The Syncfusion Angular Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
 
 In the following example, the [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property is set to **2**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
 
@@ -233,7 +233,7 @@ In the following example, the [frozenRows](https://ej2.syncfusion.com/angular/do
 
 ### Change default frozen rows line color
 
-You can easily customize the frozen line background color of frozen rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component by applying custom CSS styles to the specific frozen row. This allows you to change the background color of frozen rows to match your application's design and theme.
+You can easily customize the frozen line background color of frozen rows in the Syncfusion Grid component by applying custom CSS styles to the specific frozen row. This allows you to change the background color of frozen rows to match your application's design and theme.
 
 To change the default frozen rows line color, you can use the following CSS class:
 
@@ -276,7 +276,7 @@ Previous | Current | Explanation
 
 ## Adding a new row programmatically
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a way to add a new row to the grid programmatically. This feature is useful when you want to add a new record to the grid without having the manually enter data in the grid.This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#addrecord) method of the Grid.
+The Syncfusion Grid provides a way to add a new row to the grid programmatically. This feature is useful when you want to add a new record to the grid without having the manually enter data in the grid.This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#addrecord) method of the Grid.
 
 The addRecord method takes two parameters:
 
@@ -303,7 +303,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 
 ## Show or hide a row using an external actions
 
-In a Syncfusion<sup style="font-size:70%">&reg;</sup> grid, you can show or hide a particular row based on some external action, such as a checkbox click.This can be useful in scenarios where you want to hide certain rows from the grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid/#getrowbyindex) and `getRowsObject` methods of the grid along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox
+In a Syncfusion grid, you can show or hide a particular row based on some external action, such as a checkbox click.This can be useful in scenarios where you want to hide certain rows from the grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid/#getrowbyindex) and `getRowsObject` methods of the grid along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the grid. You can use this method to iterate through all the rows and access their data and index.
 

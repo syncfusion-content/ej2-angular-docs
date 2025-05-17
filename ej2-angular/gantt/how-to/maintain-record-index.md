@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Maintain record index in Angular Gantt component
 
-Row dropped record’s index position can be maintained in the Gantt chart by changing the database table index position using the `rowDrop` event. In this event, the `fromIndex` and `dropIndex` values can be passed to the server side using Ajax request. On the server side, the `insert` and `insertAtTop` methods are used to update the row index position. The following code snippets explain the solution.
+Row dropped record’s index position can be maintained in the Gantt chart by changing the database table index position using the [`rowDrop`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event. In this event, the `fromIndex` and `dropIndex` values can be passed to the server side using Ajax request. On the server side, the `insert` and `insertAtTop` methods are used to update the row index position. The following code snippets explain the solution.
 
 ```typescript
 

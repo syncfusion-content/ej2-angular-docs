@@ -4,9 +4,10 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { editingData } from './data';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
-  imports: [GanttModule],
+  imports: [GanttModule, CommonModule],
   standalone: true,
   selector: "app-root",
   template: `
@@ -100,6 +101,7 @@ export class AppComponent {
       id: "TaskID",
       name: "TaskName",
       startDate: "StartDate",
+      endDate: 'EndDate',
       duration: "Duration",
       progress: "Progress",
       dependency: "Predecessor",

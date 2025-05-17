@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Box and Whisker in Angular Chart component | Syncfusion
-description: Learn here all about Box and Whisker in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Box and Whisker Chart in Angular Charts | Syncfusion
+description: Learn here all about Box and Whisker in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Box and Whisker
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Box and Whisker in Angular Chart component
+# Box and Whisker Chart in Angular Charts
 
 ## Box and Whisker
 

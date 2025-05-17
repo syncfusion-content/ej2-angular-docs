@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
+# State Persistence in Syncfusion Angular components
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
+Syncfusion Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
 
 Below is an example demonstrating how to set the `enablePersistence` property for the Grid component:
 
@@ -28,7 +28,7 @@ Below is an example demonstrating how to set the `enablePersistence` property fo
 
 ## State Persistence supported components and properties
 
-The table below lists the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components that support state persistence, along with the properties stored in `localStorage`. Utilizing these properties ensures that significant component configurations are preserved across sessions:
+The table below lists the Syncfusion Angular components that support state persistence, along with the properties stored in `localStorage`. Utilizing these properties ensures that significant component configurations are preserved across sessions:
 
 <!-- markdownlint-disable MD033 -->
 

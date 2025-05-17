@@ -18,11 +18,11 @@ In this guide, how tree shaking is implemented in Angular applications and how i
 
 The Angular CLI, utilizing Webpack for bundling script files, has supported tree shaking since Angular CLI version 2. Tree shaking operates on the static structure of ES2015 module syntax, using `import` and `export` declarations. Any exported functions or methods that are not used in your code are considered unnecessary and removed from the output bundle. This results in improved performance, with faster load times and consequently a better user experience.
 
-N> Ahead Of Time (AOT) compilation process performs tree shaking in the Angular application, which was enabled by default starting from Angular version 9.
+N> Ahead Of Time (AOT) compilation process performs tree shaking in the Angular application, which was enabled by default starting from Angular version 9. To know more about AOT compilation, refer to this [documentation](./angular-aot).
 
-## Using Syncfusion<sup style="font-size:70%">&reg;</sup> components with Tree Shaking 
+## Using Syncfusion components with Tree Shaking 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support Tree Shaking by default and do not require any additional changes at the application level.
+Syncfusion Angular components support Tree Shaking by default and do not require any additional changes at the application level.
 
 ## Implementing Tree Shaking in an Angular Application 
 
@@ -57,7 +57,7 @@ Follow these steps to implement an Angular application with Syncfusion component
 
 By adhering to these practices, the performance of the Angular application can be significantly enhanced, delivering an improved user experience.
 
-## Bundle size for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component
+## Bundle size for Syncfusion Angular Grid component
 
 The following table demonstrates the size of the Grid module and includes the addition of some features to it in the Angular application.
 
@@ -71,3 +71,7 @@ The following table demonstrates the size of the Grid module and includes the ad
 | GroupService        | 1.73 MB  | 340.22 kB     |
 
 N> Make sure to use `GridModule` for the DataGrid component instead of `GridAllModule`. Using `GridAllModule` will increase the bundle size by including all features of DataGrid. To know about the feature modules of DataGrid, refer to this [documentation](https://ej2.syncfusion.com/angular/documentation/grid/module).
+
+## See also
+
+* [Ahead-Of-Time (AOT) compilation](./angular-aot)

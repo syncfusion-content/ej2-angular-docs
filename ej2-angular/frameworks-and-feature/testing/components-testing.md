@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Component Testing in Jasmine/Karma Environment for Angular
 
-This guide explains on how to configure Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular components]("https://www.syncfusion.com/angular-components/") within the test bed, enabling interaction with component instances or selectors, leveraging the built-in testing support with the [Jasmine]("https://jasmine.github.io/") test framework in projects created with [Angular]("https://angular.io/guide/testing") CLI. With this setup, you can seamlessly implement [Unit Testing](#unit-tesing), [Integration Testing](#integration-testing) and [End-to-End Testing](#end-to-end-testing) with our components.
+This guide explains on how to configure Syncfusion [Angular components]("https://www.syncfusion.com/angular-components/") within the test bed, enabling interaction with component instances or selectors, leveraging the built-in testing support with the [Jasmine]("https://jasmine.github.io/") test framework in projects created with [Angular]("https://angular.io/guide/testing") CLI. With this setup, you can seamlessly implement [Unit Testing](#unit-tesing), [Integration Testing](#integration-testing) and [End-to-End Testing](#end-to-end-testing) with our components.
 
 ## Setting Up the Test Environment
 
-To initiate the testing process, we need to configure and integrate an [Angular]("https://angular.io/") application with our [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components]("https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli"). In this guide, we will specifically concentrate on testing the Syncfusion<sup style="font-size:70%">&reg;</sup> [grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) component. Also if you notice a license banner in karma automation browsers, it means that you need to obtain a Syncfusion<sup style="font-size:70%">&reg;</sup> license key and register it in your application using [npx command]("https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-using-the-npx-command").
+To initiate the testing process, we need to configure and integrate an [Angular]("https://angular.io/") application with our [Syncfusion Angular components]("https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli"). In this guide, we will specifically concentrate on testing the Syncfusion [grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) component. Also if you notice a license banner in karma automation browsers, it means that you need to obtain a Syncfusion license key and register it in your application using [npx command]("https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-using-the-npx-command").
  
 ## Unit Testing
 
-Unit testing allows you to test specific features or functionalities in your codebase, focusing on individual units such as functions or classes, also helps to ensure that each part of your code works as expected on its own. This allows you to catch and fix issues early in the development process, leading to more robust and reliable application. The code snippet provided showcases how to set up Angular's TestBed configuration and how to test the rendering of grid rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> grid component.
+Unit testing allows you to test specific features or functionalities in your codebase, focusing on individual units such as functions or classes, also helps to ensure that each part of your code works as expected on its own. This allows you to catch and fix issues early in the development process, leading to more robust and reliable application. The code snippet provided showcases how to set up Angular's TestBed configuration and how to test the rendering of grid rows in a Syncfusion grid component.
 
 ```typescript 
 // app.component.spec.ts
@@ -64,7 +64,7 @@ Run `ng test` command to see the test report.
 
 ## Integration Testing
 
-Integration testing allows you to test a component as a whole, rather than testing individual units separately. This approach treats all units as a single entity and provides a broader view of your application's functionality, helping to uncover issues that may arise from the integration of various components. In the provided code snippet, we have an integration test for the AppComponent with Syncfusion<sup style="font-size:70%">&reg;</sup> grid using Angular's testing utilities.
+Integration testing allows you to test a component as a whole, rather than testing individual units separately. This approach treats all units as a single entity and provides a broader view of your application's functionality, helping to uncover issues that may arise from the integration of various components. In the provided code snippet, we have an integration test for the AppComponent with Syncfusion grid using Angular's testing utilities.
 
 ```typescript
 // app.component.spec.ts
@@ -108,7 +108,7 @@ Run `ng test` command to see the test report.
 
 ## End-to-End Testing
 
-End-to-End testing focuses on evaluating Syncfusion<sup style="font-size:70%">&reg;</sup> components from the perspective of a user, disregarding the internal structure of the components. In the provided code snippet, the testing framework is programmed to simulate a user's action of clicking on the pager within a Syncfusion<sup style="font-size:70%">&reg;</sup> grid component. This interaction triggers a response from the application, such as fetching and displaying additional records. The test then visually inspects the outcome of this interaction to ensure that the expected behavior is achieved.
+End-to-End testing focuses on evaluating Syncfusion components from the perspective of a user, disregarding the internal structure of the components. In the provided code snippet, the testing framework is programmed to simulate a user's action of clicking on the pager within a Syncfusion grid component. This interaction triggers a response from the application, such as fetching and displaying additional records. The test then visually inspects the outcome of this interaction to ensure that the expected behavior is achieved.
 ```typescript
 // app.component.spec.ts
 

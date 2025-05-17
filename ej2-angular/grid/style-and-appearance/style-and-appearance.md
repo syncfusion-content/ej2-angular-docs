@@ -32,14 +32,14 @@ Here's a basic example of how you can override the header background color of th
 
 Syncfusion's Theme Studio tool allows you to create custom themes for all their controls, including the Grid. This is a more advanced approach that lets you define a comprehensive set of styles to achieve a consistent look and feel throughout your application.
 
-1. Visit the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
+1. Visit the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 2. Select the Grid control from the left panel.
 3. Customize various aspects of the control's appearance, such as colors, typography, and spacing.
 4. Once done, you can download the generated CSS file and include it in your Angular project.
 
 ## Customizing the grid root element
 
-To customize the appearance of the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you can use CSS. Here's an example of how to modify the font family and row colors using CSS:
+To customize the appearance of the root element of the Syncfusion Angular Grid component, you can use CSS. Here's an example of how to modify the font family and row colors using CSS:
 
 ```css
 .e-grid {
@@ -50,7 +50,7 @@ To customize the appearance of the root element of the Syncfusion<sup style="fon
 
 ![grid root element](../images/whole-grid.png)
 
-The above code snippet, the **.e-grid** class targets the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, and the `font-family` property is set to cursive to change the font family of the grid content.
+The above code snippet, the **.e-grid** class targets the root element of the Syncfusion Angular Grid component, and the `font-family` property is set to cursive to change the font family of the grid content.
 
 In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
 

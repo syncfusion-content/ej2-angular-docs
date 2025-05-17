@@ -63,19 +63,19 @@ export class AppComponent {
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
-      resourceInfo: 'resources',
+      resourceInfo: 'Resources',
       progress : 'Progress',
       startDate: 'StartDate',
       duration: 'Duration',
-      child: 'subtasks',
+      parentID:'ParentID',
     };
     this.toolbar = ['PdfExport'];
     this.splitterSettings = {
       columnIndex: 1,
     };
     this.resourceFields = {
-      id: 'resourceId',
-      name: 'resourceName',
+      id: 'ResourceId',
+      name: 'ResourceName',
     };
     this.labelSettings = {
       taskLabel: '${Progress}%',

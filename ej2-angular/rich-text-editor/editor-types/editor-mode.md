@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editor mode in Angular Rich text editor component
+# Editor Mode in Angular Rich text editor component
 
 The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 
-* HTML Editor
-* Markdown Editor
+* HTML editor
+* Markdown editor
 
-## HTML Editor
+## HTML editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
@@ -61,7 +61,13 @@ export class AppComponent  {
 
 ```
 
-## Markdown Editor
+## IFrame editor
+
+The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
+
+For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe) documentation.
+
+## Markdown editor
 
 Set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
 
@@ -107,3 +113,7 @@ export class AppComponent  {
 }
 
 ```
+
+## See also
+
+* [Markdown Editor](https://ej2.syncfusion.com/angular/documentation/markdown-editor/getting-started)

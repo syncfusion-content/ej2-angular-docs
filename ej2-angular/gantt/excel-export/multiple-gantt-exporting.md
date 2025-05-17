@@ -15,7 +15,7 @@ In Gantt, the Excel export provides support to export multiple Gantt data in new
 
 ## Same sheet
 
-The Excel export provides support to export multiple Gantt data in the same sheet. To export in same sheet, define `multipleExport.type` as `AppendToSheet` in `ExcelExportProperties`. You can also provide blank rows between exported multiple Gantt data. These blank rows count can be defined using `multipleExport.blankRows`.
+The Excel export provides support to export multiple Gantt data in the same sheet. To export in same sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as `AppendToSheet` in [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). You can also provide blank rows between exported multiple Gantt data. These blank rows count can be defined using `multipleExport.blankRows`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,7 +33,7 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 ## New sheet
 
-The Excel exporting provides support to export multiple Gantt in new sheet. To export in new sheet, define `multipleExport.type` as `NewSheet` in `ExcelExportProperties`.
+The Excel exporting provides support to export multiple Gantt in new sheet. To export in new sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as `NewSheet` in [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,7 +53,7 @@ Gantt Excel export allows the users to customize the exported document based on 
 
 ### Export hidden columns
 
-In Gantt, the Excel export provides an option to export hidden columns by defining `includeHiddenColumn` as `true`.
+In Gantt, the Excel export provides an option to export hidden columns by defining [`includeHiddenColumn`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/treeGridExcelExportProperties/#includehiddencolumn) as `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +109,7 @@ In the following sample, the background color has been customized for `TaskID` c
 
 The Excel export also provides an option to include custom theme for exported Excel document.
 
-To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
+To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +143,7 @@ The Excel export also allows users to include header and footer contents to the 
 
 ### File name for exported document
 
-You can set the required file name for the exported document by defining the `fileName` property in `ExcelExportProperties`.
+You can set the required file name for the exported document by defining the [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property in `ExcelExportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

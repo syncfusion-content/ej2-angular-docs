@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent, ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
@@ -19,7 +15,6 @@ import { editingData} from './data';
 imports: [
          GanttModule
     ],
-
 providers: [EditService, SelectionService, ToolbarService],
 standalone: true,
     selector: 'app-root',
@@ -59,7 +54,7 @@ export class AppComponent{
             endDate: 'EndDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.editSettings = {
              allowEditing: true,

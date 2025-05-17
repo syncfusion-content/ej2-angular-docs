@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Size Mode for Syncfusion Angular Components
 
-Modern web applications are designed to accommodate various devices, including desktops and mobile, often necessitating distinct layouts or interfaces for optimal viewing on smaller screens. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support two size modes: touch (bigger) and normal. The touch mode enhances mobile device responsiveness by incorporating the `e-bigger` class for improved interaction and visibility.
+Modern web applications are designed to accommodate various devices, including desktops and mobile, often necessitating distinct layouts or interfaces for optimal viewing on smaller screens. Syncfusion Angular components support two size modes: touch (bigger) and normal. The touch mode enhances mobile device responsiveness by incorporating the `e-bigger` class for improved interaction and visibility.
 
 ## Size Mode for Application
 

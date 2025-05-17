@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application creates the application with the required Syncfusion<sup style="font-size:70%">&reg;</sup> references, namespaces and CDN links for making the development earlier with the Syncfusion<sup style="font-size:70%">&reg;</sup> components.
+Syncfusion provides the **Visual Studio Project Templates** for create the Syncfusion Angular Application. The Syncfusion Angular application creates the application with the required Syncfusion references, namespaces and CDN links for making the development earlier with the Syncfusion components.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project templates are available from v17.1.0.47.
+> The Syncfusion Angular project templates are available from v17.1.0.47.
 
-The following steps help you to create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application through the Visual Studio:
+The following steps help you to create the Syncfusion Angular application through the Visual Studio:
 
 1. Open the Visual Studio 2022.
 
-2. To create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project, follow either one of the options below:
+2. To create a Syncfusion Angular project, follow either one of the options below:
   
     **Option 1:**
 
@@ -32,7 +32,7 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
      **Option 2:**
 
-      Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion<sup style="font-size:70%">&reg;</sup> or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion<sup style="font-size:70%">&reg;</sup> for ASP.NET Core.
+      Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion for ASP.NET Core.
 
       ![syncfusion template](images/create-new-project.png)
 
@@ -42,16 +42,16 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
     ![syncfusion template](images/syncfusion-template.png)
 
-4. Name the Project, choose the destination location and then click Create button. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core project configuration wizard appears.
+4. Name the Project, choose the destination location and then click Create button. The Syncfusion ASP.NET Core project configuration wizard appears.
 
     ![project configuration](images/angular-project-wizard.png)
 
-    Choose the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular template and choose required theme, authentication type and asset.
+    Choose the Syncfusion Angular template and choose required theme, authentication type and asset.
 
-    > Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project template available from .NET 6.0 and .NET 7.0
+    > Syncfusion Angular project template available from .NET 6.0 and .NET 7.0
 
-5. Click the Create button, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application has been created.
+5. Click the Create button, the Syncfusion Angular application has been created.
 
-6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion.
+6. The created Syncfusion Angular application configured with Syncfusion.
 
-7. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages, scripts, and selected styles have been configured with the created Angular application.
+7. The required Syncfusion Angular NPM packages, scripts, and selected styles have been configured with the created Angular application.

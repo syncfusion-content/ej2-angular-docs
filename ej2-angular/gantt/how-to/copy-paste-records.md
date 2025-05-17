@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Copy paste records in Angular Gantt component
 
-You can copy and paste a record in the Gantt chart by using the `addRecord` method and `custom context menu`. It is also possible to copy and paste the parent record with multiple hierarchical child records on the required position.
+You can copy and paste a record in the Gantt chart by using the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method and `custom context menu`. It is also possible to copy and paste the parent record with multiple hierarchical child records on the required position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bubble in Angular Chart component | Syncfusion
-description: Learn here all about Bubble in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Bubble Chart in Angular Charts | Syncfusion
+description: Learn here all about Bubble in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Bubble
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bubble in Angular Chart component
+# Bubble Chart in Angular Charts
 
 ## Bubble
 

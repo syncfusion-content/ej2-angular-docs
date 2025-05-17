@@ -45,7 +45,7 @@ The Gantt component supports three types of selection modes that can be set by u
 
 ## Toggle selection
 
-The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the `enableToggle` property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa. By default, the `enableToggle` property is set to `false`.
+The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the [`enableToggle`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#enabletoggle) property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa. By default, the `enableToggle` property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

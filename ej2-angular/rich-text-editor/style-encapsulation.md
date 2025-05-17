@@ -45,3 +45,7 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/style-encapsulation" %}
+
+## See also
+
+* [Iframe Editor](./iframe)

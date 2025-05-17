@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core'
 import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 import { FileManagerComponent } from '@syncfusion/ej2-angular-filemanager';
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     imports: [FileManagerModule, TabAllModule, ButtonModule, CheckBoxModule],

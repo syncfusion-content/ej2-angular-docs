@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Excel like filter in Angular Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
+The Syncfusion Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 
-Here is an example that showcasing how to render the excel like filter within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+Here is an example that showcasing how to render the excel like filter within the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,9 +32,9 @@ Here is an example that showcasing how to render the excel like filter within th
 
 ## Checkbox filtering
 
-The checkbox filtering feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables you to filter data based on checkbox selections within a column. This powerful filtering option simplifies the process of narrowing down data, providing a more efficient and user-friendly experience. The check box filter feature is particularly useful when dealing with columns containing categorical data.
+The checkbox filtering feature in Syncfusion Angular Grid enables you to filter data based on checkbox selections within a column. This powerful filtering option simplifies the process of narrowing down data, providing a more efficient and user-friendly experience. The check box filter feature is particularly useful when dealing with columns containing categorical data.
 
-Here is an example that showcasing how to render the check box filter within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+Here is an example that showcasing how to render the check box filter within the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +84,7 @@ The following image describes the above mentioned behavior.
 
 ## Show customized text in checkbox list data
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
+The Syncfusion Angular Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
 
 To customize the text in the Excel/Checkbox filter, you can define a `filterItemTemplate` and bind it to the desired column. The `filterItemTemplate` property allows you to create custom templates for filter items. You can use any logic and HTML elements within this template to display the desired text or content.
 
@@ -154,7 +154,7 @@ export class AppComponent implements OnInit {
 
 ## Show template in checkbox list data
 
-The `filterItemTemplate` property in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to customize the appearance of filter items in the grid's filter checkbox list for a specific column. This property is useful when you want to provide a custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
+The `filterItemTemplate` property in the Syncfusion Angular Grid allows you to customize the appearance of filter items in the grid's filter checkbox list for a specific column. This property is useful when you want to provide a custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
 
 In this example, you can see how to use the `filterItemTemplate` to render icons along with the category names in the filter checkbox list for the **Category Name** column.
 
@@ -233,7 +233,7 @@ export class AppComponent implements OnInit {
 
 ## Customize the excel filter dialog using CSS
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you have the flexibility to enhance the visual presentation of the excel filter dialog. This can be achieved by utilizing CSS styles to modify the dialog's appearance according to the specific needs and aesthetics of your application.
+In the Syncfusion Angular Grid, you have the flexibility to enhance the visual presentation of the excel filter dialog. This can be achieved by utilizing CSS styles to modify the dialog's appearance according to the specific needs and aesthetics of your application.
 
 **Removing context menu option**
 
@@ -262,7 +262,7 @@ The following example demonstrates how to remove the context menu option in the 
 
 ## Bind custom remote datasource for excel/checkbox filtering
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) as the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype), as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+The Syncfusion Angular Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) as the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype), as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
 
 The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
 
@@ -280,7 +280,7 @@ The following example demonstrates how to dynamically change the remote custom d
 
 ## Hide sorting option in filter dialog
 
-The Excel-like filter dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
+The Excel-like filter dialog in the Syncfusion Angular Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
 
 ```
 .e-excel-ascending,

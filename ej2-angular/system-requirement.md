@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# System Requirements for Syncfusion Angular Components
 
-This guide outlines the essential system requirements for optimal performance and compatibility when working with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
+This guide outlines the essential system requirements for optimal performance and compatibility when working with Syncfusion Angular UI components.
 
 ## Angular Version
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Angular 12 and above. To verify the Angular CLI version, run the following command in the terminal:
+Syncfusion Angular UI components are compatible with Angular 12 and above. To verify the Angular CLI version, run the following command in the terminal:
 
 ```bash
 ng version
@@ -43,13 +43,13 @@ Alternatively, Angular development can be carried out using any text editor and 
 
 ## Browser Compatibility
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work with modern browsers. For detailed compatibility information, refer to the [browser compatibility guide](./browser/).
+Syncfusion Angular UI components are designed to work with modern browsers. For detailed compatibility information, refer to the [browser compatibility guide](./browser/).
 
 ## Angular Version Compatibility
 
-The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component versions are compatible with different Angular releases:
+The table below shows which Syncfusion Angular UI component versions are compatible with different Angular releases:
 
-| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
+| Angular Version | Minimum Syncfusion Angular Components Version |
 |-----------------|-----------------------------------------------|
 |[ Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
@@ -61,7 +61,7 @@ The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Ang
 | [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
 
 
-> Note: Using the latest version of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components compatible with the project's Angular version is recommended for the best features and performance.
+> Note: Using the latest version of Syncfusion Angular components compatible with the project's Angular version is recommended for the best features and performance.
 
 ## Additional Resources
 

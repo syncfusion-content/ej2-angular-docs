@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent, ToolbarItem ,ExcelExport} from '@syncfusion/ej2-angular-gantt';
+import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
 @Component({
 imports: [
-         GanttModule
+         GanttAllModule
     ],
-
-providers: [ToolbarService, ExcelExportService, SelectionService],
 standalone: true,
     selector: 'app-root',
     template:
@@ -40,7 +36,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.columns =  [
             { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
@@ -53,7 +49,7 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                let excelExportProperties: ExcelExport| any = {
+                let excelExportProperties: ExcelExportProperties = {
                     includeHiddenColumn: true
                 };
                 this.ganttObj!.excelExport(excelExportProperties);

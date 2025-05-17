@@ -9,9 +9,9 @@ domainurl: ##DomainURL##
 ---
 
 
-# Update Syncfusion<sup style="font-size:70%">&reg;</sup> npm package
+# Update Syncfusion npm package
 
-Keeping your Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages up-to-date ensures you are using the latest features and security updates. This guide will take you through the steps to update these packages using the [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) tool.
+Keeping your Syncfusion npm packages up-to-date ensures you are using the latest features and security updates. This guide will take you through the steps to update these packages using the [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) tool.
 
 ## Global Installation of npm-check-updates
 

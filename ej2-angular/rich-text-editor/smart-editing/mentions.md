@@ -39,6 +39,6 @@ In the following sample, we configured the following properties with popup dimen
 
 > [View Sample](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/mention-integration)
 
-## See Also
+## See also
 
 * [Getting Started with Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/)

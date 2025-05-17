@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Column Chart in Angular Chart component | Syncfusion
-description: Learn here all about Range Column Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Range Column Chart in Angular Charts | Syncfusion
+description: Learn here all about Range Column Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Range Column Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range Column in Angular Chart component
+# Range Column Chart in Angular Charts
 
 ## Range Column
 

@@ -36,15 +36,16 @@ export class AppComponent {
   ngOnInit(): void {
     this.taskData = editingData;
     this.taskFields = {
-      id: 'TaskId',
+      id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
       duration: 'Duration',
       progress: 'Progress',
       dependency: 'Predecessor',
-      parentID:'ParentId'
+      parentID:'ParentID',
     };
     this.columns = [
+      { field: 'TaskID' },
       { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
       { field: 'StartDate' },
       { field: 'Duration' }

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## CDN
 
-The CDN links are provided individually for all the scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
+The CDN links are provided individually for all the scripts and style sheets of Syncfusion Angular UI Components.
 
 The CDN links are provided to following files in the package
 
@@ -32,11 +32,11 @@ For example:
 
 ## Packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are available as npm packages, which are published in the public [npm registry](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal).
+Syncfusion Angular UI Components are available as npm packages, which are published in the public [npm registry](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal).
 
 ### Anatomy of NPM packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are shipped as npm packages. Following table explains the purpose of each file available in the package.
+Syncfusion Angular UI Components are shipped as npm packages. Following table explains the purpose of each file available in the package.
 
 |    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

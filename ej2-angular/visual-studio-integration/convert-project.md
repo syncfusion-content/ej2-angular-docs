@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Convert Project 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular conversion is a Visual Studio add-in that converts an existing Angular application into a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Web application.
+Syncfusion Angular conversion is a Visual Studio add-in that converts an existing Angular application into a Syncfusion Angular Web application.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project conversion are available from v17.3.0.9.
+> The Syncfusion Angular Project conversion are available from v17.3.0.9.
 
-The steps below help you to convert the Angular application to Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application through the Visual Studio:
+The steps below help you to convert the Angular application to Syncfusion Angular application through the Visual Studio:
 
 1. Open your existing Angular application or create a new Angular application
 
-2. To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Project Conversion Wizard, follow either one of the options below:
+2. To open the Syncfusion Project Conversion Wizard, follow either one of the options below:
 
     **Option 1:**
 
@@ -34,17 +34,17 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
     ![convert to syncfusion](images/Convert-angular-context.png)
 
-3. The **Syncfusion Angular Project Conversion** window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular version, Assets from, and Themes to convert the application.
+3. The **Syncfusion Angular Project Conversion** window will appear. You can choose the required version of Syncfusion Angular version, Assets from, and Themes to convert the application.
 
     ![project-conversion-wizard](images/angular-conversion-window.PNG)
 
-    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular versions are loaded from published Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM package versions and it requires the internet connectivity.
+    > The Syncfusion Angular versions are loaded from published Syncfusion Angular NPM package versions and it requires the internet connectivity.
 
     The following configurations are used in the Project conversion wizard.
 
-    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
+    **Assets From:** Load the Syncfusion Essential JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Choose the Theme:** Choose the required theme.
 
@@ -58,4 +58,4 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
     ![BackupLocation](images/BackupLocation.png)
 
-6. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages with selected version, scripts and selected style are added in the application.
+6. The required Syncfusion Angular NPM packages with selected version, scripts and selected style are added in the application.

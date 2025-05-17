@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Aggregates in Angular Grid component
 
-The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> angular Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type).
+The Aggregates feature in the Syncfusion angular Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type).
 
 To use aggregate feature, you need to inject the **AggregateService** module into the **@NgModule.providers** section.
 
@@ -67,7 +67,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides several built-in aggregate types that can be specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to configure an aggregate column.
+The Syncfusion Angular Grid component provides several built-in aggregate types that can be specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to configure an aggregate column.
 
 The available built-in aggregate types are:
 
@@ -79,7 +79,7 @@ The available built-in aggregate types are:
 * **TrueCount:** Counts the number of true values in the column.
 * **FalseCount:** Counts the number of false values in the column.
 
-Here is an example that demonstrates how to use built-in aggregates types in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
+Here is an example that demonstrates how to use built-in aggregates types in the Syncfusion Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,9 +132,9 @@ Multiple aggregates for a column allows you to calculate and display different s
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid by specifying the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) as an array.
+You can use multiple aggregates for a single column in the Syncfusion Angular Grid by specifying the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) as an array.
 
-Here's an example of how to use multiple aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+Here's an example of how to use multiple aggregates in the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

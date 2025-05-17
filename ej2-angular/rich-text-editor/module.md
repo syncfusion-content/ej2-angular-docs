@@ -30,15 +30,15 @@ The following example demonstrates how to import and inject modules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs1/src/app.component.ts %}
+{% include code-snippet/rich-text-editor/module-inject/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs1/src/main.ts %}
+{% include code-snippet/rich-text-editor/module-inject/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/module-inject" %}
 
 ## Available modules in Rich Text Editor
 

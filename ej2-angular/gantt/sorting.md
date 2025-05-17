@@ -101,7 +101,7 @@ During the sort action, the Gantt component triggers two events. The [`actionBeg
 
 ## Sorting Custom Columns
 
-In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection, you can perform initial sort using the `sortSettings` or you can also sort the column dynamically by a button click.
+In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection, you can perform initial sort using the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) or you can also sort the column dynamically by a button click.
 
 The following code snippets explains how to achieve this.
 

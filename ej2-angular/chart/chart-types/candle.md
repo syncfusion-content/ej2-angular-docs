@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Candle in Angular Chart component | Syncfusion
-description: Learn here all about Candle in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Candle Chart in Angular Charts | Syncfusion
+description: Learn here all about Candle in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Candle
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Candle in Angular Chart component
+# Candle Chart in Angular Charts
 
 ## Candle
 

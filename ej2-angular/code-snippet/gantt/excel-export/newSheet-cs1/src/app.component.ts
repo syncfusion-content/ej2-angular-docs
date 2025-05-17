@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { ExcelExport, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
 @Component({
 imports: [
-         GanttModule
+         GanttAllModule
     ],
-
-providers: [ToolbarService, ExcelExportService, SelectionService],
 standalone: true,
     selector: 'app-root',
     template:
@@ -39,15 +35,15 @@ export class AppComponent{
     @ViewChild('gantt1', {static: true}) public fGantt?: GanttComponent;
     @ViewChild('gantt2', {static: true}) public sGantt?: GanttComponent;
     public ngOnInit(): void {
-        this.fData = [GanttData[0]];
-        this.sData = [GanttData[1]];
+        this.fData = GanttData.slice(0,4);
+        this.sData = GanttData.slice(4,8);
         this.fTaskSettings = {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.sTaskSettings = {
             id: 'TaskID',
@@ -55,7 +51,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['ExcelExport'];
         this.projectStartDate = new Date('03/31/2019');
@@ -63,7 +59,7 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault1_excelexport') {
-                const appendExcelExportProperties: ExcelExport| any = {
+                const appendExcelExportProperties: ExcelExportProperties = {
                 multipleExport: { type: 'NewSheet' }
             };
 

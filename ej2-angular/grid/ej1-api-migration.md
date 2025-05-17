@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Grid component
 
-This article describes the API migration process of Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Grid component from Essential JS 1 to Essential JS 2.
 
 ## Sorting
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowSorting* <br><br>`<ej-grid [allowSorting]="true">`<br>`</ej-grid>`| **Property:** *allowSorting* <br><br>`<ejs-grid [allowSorting]="true">`<br>`</ejs-grid>`|
 |Clear the Sorted columns | **Method:** *clearSorting()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSorting();`<br> &nbsp;`}`<br>`}` | **Method:** *clearSorting()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.clearSorting()`
@@ -24,7 +24,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Grouping
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowGrouping* <br><br>`<ej-grid [allowGrouping]="true">`<br>`</ej-grid>`| **Property:** *allowGrouping* <br><br>`<ejs-grid [allowGrouping]="true">`<br>`</ejs-grid>`|
 |Group Columns initially | **Property:** *groupSettings.groupedColumns* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.groupOptions = {groupedColumns:["OrderID"]};`| **Property:** *groupSettings.columns* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {columns:["OrderID"]};`|
@@ -40,7 +40,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Filtering
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowFiltering* <br><br>`<ej-grid [allowFiltering]="true">`<br>`</ej-grid>`| **Property:** *allowFiltering* <br><br>`<ejs-grid [allowFiltering]="true">`<br>`</ejs-grid>`|
 |Menu Filtering | **Property:** *filterSettings.filterType* <br><br>`<ej-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.filterOptions = { filterType : "menu" };`| **Property:** *filterSettings.type* <br><br>`<ejs-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { type:'Menu' };`|
@@ -52,7 +52,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Searching
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [allowSearching]="true" [toolbarSettings]="toolbarOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarOptions = {showToolbar:true,toolbarItems:["search"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Search'];`|
 |Clear the Searched values | **Method:** *clearSearching()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSearching();`<br> &nbsp;`}`<br>`}` | **Method:** *searchModule.search()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.searchModule.search("");`
@@ -60,7 +60,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Paging
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowPaging* <br><br>`<ej-grid [allowPaging]="true">`<br>`</ej-grid>`| **Property:** *allowPaging* <br><br>`<ejs-grid [allowPaging]="true">`<br>`</ejs-grid>`|
 |Customize Paging | **Property:** *pageSettings.pageSize* <br><br>`<ej-grid [allowPaging]="true" [pageSettings]="pageOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.pageOptions = {pageSize: 5};`| **Property:** *pageSettings.pageSize* <br><br>`<ejs-grid [allowPaging]="true"[pageSettings]="pageOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 5,pageSizes:["10, 15"]}`|
@@ -72,7 +72,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Selection
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowSelection* <br><br>`<ej-grid [allowSelection]="true">`<br>`</ej-grid>`| **Property:** *allowSelection* <br><br>`<ejs-grid [allowSelection]="true">`<br>`</ejs-grid>`|
 |Single Selection | **Property:** *selectionType* <br><br>`<ej-grid [allowSelection]="true" selectionType="single"`<br>`</ej-grid>`| **Property:** *selectionSettings.type* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { type: 'Single' };`|
@@ -100,7 +100,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Editing
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *editSettings* <br><br>`<ej-grid [editSettings]="editSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.editSettings = {allowEditing: true, allowAdding: true, allowDeleting: true};`| **Property:** *editSettings* <br><br>`<ejs-grid [editSettings]="editSettings">`<br>`</ejs-grid>`<br>**TS**<br>`this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };`|
 |Inline Editing  | **Property:** *editSettings.editMode* <br><br>`<ej-grid [editSettings]="editSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.editSettings = {allowEditing: true, allowAdding: true, allowDeleting: true, editMode : "normal"};`| **Property:** *editSettings.mode* <br><br>`<ejs-grid [editSettings]="editSettings">`<br>`</ejs-grid>`<br>**TS**<br>`this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };`|
@@ -137,7 +137,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Resizing
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowResizing* <br><br>`<ej-grid [allowResizing]="true">`<br>`</ej-grid>`| **Property:** *allowResizing* <br><br>`<ejs-grid [allowResizing]="true">`<br>`</ejs-grid>`|
 |Resize a column by using the method| **Method:** *resizeColumns(column,width)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.resizeColumns("OrderID",'150');`<br> &nbsp;`}`<br>`}` | **Property:** *columns.width*<br><br>To resize a column, set width to that particular column and then refresh the grid by using the refresh method<br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.columns[1].width = 100;`<br>`this.Grid.refresh();`
@@ -147,7 +147,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Reordering
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowReordering* <br><br>`<ej-grid [allowReordering]="true">`<br>`</ej-grid>`| **Property:** *allowReordering* <br><br>`<ejs-grid [allowReordering]="true">`<br>`</ejs-grid>`|
 |Reorder Columns| **Method:** *reorderColumns(fromFieldName, toFieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.reorderColumns("OrderID", "CustomerID");`<br> &nbsp;`}`<br>`}` | **Method:** *reorderColumns(fromFieldName, toFieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.reorderColumns("OrderID", "CustomerID");`
@@ -155,7 +155,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Context Menu
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default  | **Property:** *contextMenuSettings.enableContextMenu* <br><br>`<ej-grid [contextMenuSettings]="contextMenuSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.contextMenuSettings = {enableContextMenu: true};`| **Property:** *contextMenuItems* <br><br>`<ejs-grid [contextMenuItems]="contextMenuItems">`<br>`</ejs-grid>`<br>**TS**<br>`this.contextMenuItems = ['AutoFit', 'AutoFitAll'];`|
 |Triggers when context menu item is clicked| **Event:** *contextClick* <br><br>`<ej-grid #grid (contextClick) = "contextClick($event)”>`<br>`</ej-grid>`<br> **TS** <br>`contextClick(e: any){}`| **Event:** *contextMenuClick* <br><br>`<ejs-grid (contextMenuClick)='contextMenuClick($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`contextMenuClick(args: any): void{}`
@@ -163,7 +163,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Toolbar
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Print  | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [toolbarSettings]="toolbarSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarSettings = {showToolbar: true,toolbarItems: ["print"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Print'];`|
 | Add  | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [toolbarSettings]="toolbarSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarSettings = {showToolbar: true,toolbarItems: ["add"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Add'];`|
@@ -179,13 +179,13 @@ This article describes the API migration process of Grid component from Essentia
 
 ## GridLines
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Default  | **Property:** *gridLines* <br><br>`<ej-grid [gridLines]="gridLines"`<br>`</ej-grid>`<br> **TS** <br>`this.gridLines = ['Both'];`| **Property:** *gridLines* <br><br>`<ejs-grid [gridLines]="gridLines">`<br>`</ejs-grid>`<br>**TS**<br>`this.gridLines = ['Both'];`|
 
 ## Templates
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Detail Template  | **Property:** *detailsTemplate* <br><br>`<ej-grid>`<br>`<ng-template #detailsTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ej-grid>`| **Property:** *detailTemplate* <br><br>`<ejs-grid >`<br>`<ng-template #detailTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ejs-grid>`|
 | Row Template  | **Property:** *rowTemplate* <br><br>`<ej-grid>`<br>`<ng-template #rowTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ej-grid>`| **Property:** *rowTemplate* <br><br>`<ejs-grid >`<br>`<ng-template #rowTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ejs-grid>`|
@@ -197,7 +197,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row/Column Drag and Drop
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowRowDragAndDrop* <br><br>`<ej-grid [allowRowDragAndDrop]="true"`<br>`</ej-grid>`| **Property:** *allowRowDragAndDrop* <br><br>`<ejs-grid [allowRowDragAndDrop]="true">`<br>`</ejs-grid>`|
 |Triggers when the row is<br>being dragged| **Event:** *rowDrag* <br><br>`<ej-grid #grid (rowDrag) = "rowDrag($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDrag(e: any){}`| **Event:** *rowDrag* <br><br>`<ejs-grid (rowDrag)='rowDrag($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDrag(args: any): void{}`
@@ -210,20 +210,20 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Frozen Rows and Columns
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *scrollSettings.frozenRows* <br><br>`<ej-grid [allowScrolling]="true" [scrollSettings]="scrollSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.scrollSettings = {frozenRows: 2, frozenColumn: 1};`| **Property:** *frozenRows* <br><br>`<ejs-grid [frozenRows]='2' [frozenColumns]='1'>`<br>`</ejs-grid>`|
 |isFrozen | **Property:** *columns.isFrozen* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="Freight" [isFrozen]="true">`<br>`</e-column>`<br>`</ej-grid>`| **Property:** *columns.isFrozen* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' [isFrozen]="true">`<br>`</e-column>`<br>`</ejs-grid>`|
 
 ## ForeignKey
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *columns.foreignKeyValue* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *columns.foreignKeyValue* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' foreignKeyValue='FirstName' [dataSource]='employeeData'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Auto Wrap
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowTextWrap* <br><br>`<ej-grid [allowTextWrap]="true">`<br>`</ej-grid>`| **Property:** *allowTextWrap* <br><br>`<ejs-grid [allowTextWrap]='true'>`<br>`</ejs-grid>`|
 |Both | **Property:** *textWrapSettings.wrapMode* <br><br>`<ej-grid [allowTextWrap]="true" [textWrapSettings]="textWrapSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.textWrapSettings = { wrapMode: "both"};`| **Property:** *textWrapSettings.wrapMode* <br><br>`<ejs-grid [allowTextWrap]='true' [textWrapSettings]='textWrapSettings'>`<br>`</ejs-grid>`<br>**TS**<br>`this.textWrapSettings = { wrapMode: 'Both' };`|
@@ -232,31 +232,31 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Responsive
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *isResponsive* <br><br>`<ej-grid [isResPonsive]="true" [enableResponsiveRow]="true>`<br>`</ej-grid>`| Not Applicable
 
 ## State Persistence
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *enablepersistence* <br><br>`<ej-grid [enablepersistence]="true">`<br>`</ej-grid>`| **Property:** *enablepersistence* <br><br>`<ejs-grid [enablepersistence]='true' >`<br>`</ejs-grid>`|
 
 ## Right to Left - RTL
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *enableRTl* <br><br>`<ej-grid [enableRTl]="true" >`<br>`</ej-grid>`| **Property:** *enableRTl* <br><br>`<ejs-grid [enableRTl]='true' >`<br>`</ejs-grid>`|
 
 ## ToolTip
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *clipMode* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="ShipName" [clipMode]="clip">`<br>`</e-column>`<br>`<e-column field="ShipCity"  [clipMode]="ellipsis">`<br>`</e-column>`<br>`<e-column field="Freight" [clipMode]="ellipsiswithtooltip">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *clipMode* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='ShipName' [clipMode]='Clip'>`<br>`</e-column>`<br>`<e-column field='ShipCity' [clipMode]='Ellipsis'>`<br>`</e-column>`<br>`<e-column field='Freight' [clipMode]='EllipsisWithTooltip'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Aggregate/Summary
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Footer Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`title: "Sum",`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Sum,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`}]`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #footerTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
 |Caption Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`showCaptionSummary: true,`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Average,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`prefix: "Average = "`<br>`}],`<br>`showTotalSummary: false`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #groupCaptionTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
@@ -264,13 +264,13 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Grid Export
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Adds a grid model property which is to be ignored on exporting<br>grid | **Method:** *addIgnoreOnExport(propertyNames)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.addIgnoreOnExport(filterSettings);`<br> &nbsp;`}`<br>`}` | Not Applicable
 
 ## Columns
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Add or Remove Columns| **Method:** *columns(columnDetails, [action])-columnDetails(array of columns or string of field name)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.columns("OrderID", "remove");`<br>&nbsp;&nbsp;`this.Grid.widget.columns("CustomerID", "add");`<br> &nbsp;`}`<br>`}` | **Property:** *columns* <br><br> Grid is initially rendered with `OrderID` and `CustomerId` columns.Then if you want to add `ShipAddress` column, you have to reset the value for `column` property as `this.Grid.columns = [{field:"OrderID"}, {field:"CustomerId"}, {field:"ShipAddress"}];` Then to remove the `CustomerId` column, reset the `column` property as, `this.Grid.columns = [{field:"OrderID"}, {field:"ShipAddress"}];`
 |Get Column By Field| **Method:** *getColumnByField(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getColumnByField("OrderID");`<br> &nbsp;`}`<br>`}` | **Method:** *getColumnByField(fieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getColumnByField("OrderID")`
@@ -288,7 +288,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Enable Hover | **Property:** *enableRowHover* <br><br>`<ej-grid [enableRowHover]="true" >`<br>`</ej-grid>`| **Property:** *enableHover* <br><br>`<ejs-grid [enableHover]='true'>`<br>`</ejs-grid>`|
 |Get Row Height| **Method:** *getRowHeight()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getRowHeight();`<br> &nbsp;`}`<br>`}` | **Method:** *getRowHeight()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getRowHeight();`
@@ -300,20 +300,20 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Show/Hide Columns
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Hide Columns by using method| **Method:** *hideColumns(headerText)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.hideColumns("Order ID");`<br> &nbsp;`}`<br>`}` | **Method:** *hideColumns(headerText)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.hideColumns("Order ID");`
 |Show Columns by using method| **Method:** *showColumns(headerText)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.showColumns("Order ID");`<br> &nbsp;`}`<br>`}` | **Method:** *showColumns(headerText)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.showColumns("Order ID");`
 
 ## Column Chooser
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *showColumnChooser* <br><br>`<ej-grid [showColumnChooser]="true">`<br>`<e-columns>`<br>`<e-column field="ShipName" [showInColumnChooser]="false">`<br>`</e-column>`<br>`<e-column field="ShipCity">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *showColumnChooser* <br><br>`<ejs-grid [showColumnChooser]= 'true'>`<br>`<e-columns>`<br>`<e-column field='CustomerName' [showInColumnChooser]='false'>`<br>`</e-column>`<br>`<e-column field='Country'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Header
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Refresh Header| **Method:** *refreshHeader()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.refreshHeader();`<br> &nbsp;`}`<br>`}` | **Method:** *refreshHeader()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.refreshHeader();`
 |Triggers every time a request is made to access particular header cell information, element and data.| **Event:** *mergeHeaderCellInfo* <br><br>`<ej-grid #grid (mergeHeaderCellInfo) = "mergeHeaderCellInfo($event)”>`<br>`</ej-grid>`<br> **TS** <br>`mergeHeaderCellInfo(e: any){}`| Not Applicable
@@ -321,35 +321,35 @@ This article describes the API migration process of Grid component from Essentia
 
 ## DataSource
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |DataSource-When templateRefresh(optional) is set true, both header and contents get refreshed| **Method:** *dataSource(newDatasource,[templateRefresh])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.dataSource(newdataSource);`<br> &nbsp;`}`<br>`}` | **Property:** *dataSource*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.datasource = newdataSource;`
 
 ## Print
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Print the grid| **Method:** *print()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.print();`<br> &nbsp;`}`<br>`}` | **Method:** *print()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.print();`
 |Triggers before printing the grid| **Event:** *beforePrint* <br><br>`<ej-grid #grid (beforePrint) = "beforePrint($event)”>`<br>`</ej-grid>`<br> **TS** <br>`beforePrint(e: any){}`| **Event:** *beforePrint* <br><br>`<ejs-grid (beforePrint)='beforePrint($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`beforePrint(args: any): void{}`
 
 ## Scrolling
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Get ScrollObject| **Method:** *getScrollObject()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getScrollObject();`<br> &nbsp;`}`<br>`}` | **Property:** *grid.scrollModule*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`var scrollObj = this.Grid.scrollModule;`
 
 ## PrimaryKey
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Set PrimaryKey Column | **Property:** *columns.isPrimaryKey* <br><br>`<ej-grid >`<br>`<e-columns>`<br>`<e-column field="OrderID" [isPrimaryKey]="true">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *columns.isPrimaryKey* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' [isPrimaryKey]='true'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 |Get the PrimaryKey fieldnames| **Method:** *getPrimaryKeyFieldNames()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getPrimaryKeyFieldNames();`<br> &nbsp;`}`<br>`}` | **Method:** *getPrimaryKeyFieldNames()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getPrimaryKeyFieldNames();`
 
 ## Grid
 
-|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+|Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Get the Browser Details| **Method:** *getBrowserDetails()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getBrowserDetails();`<br> &nbsp;`}`<br>`}` | In Essential<sup style="font-size:70%">&reg;</sup> JS 2, it can be <br>achieved by using `Browser` class of `ej2-base`
+|Get the Browser Details| **Method:** *getBrowserDetails()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getBrowserDetails();`<br> &nbsp;`}`<br>`}` | In Essential JS 2, it can be <br>achieved by using `Browser` class of `ej2-base`
 |Set dimension for the grid| **Method:** *setDimension(height, width)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.setDimension(300, 400);`<br> &nbsp;`}`<br>`}` | Not Applicable
 |set maximum width for mobile| **Method:** *setPhoneModeMaxWidth(value)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.setPhoneModeMaxWidth(500);`<br> &nbsp;`}`<br>`}` | Not Applicable
 |Render the grid| **Method:** *render()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.render();`<br> &nbsp;`}`<br>`}` | **Method:** *render()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.render();`

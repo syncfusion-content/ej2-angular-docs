@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Grid component
 
-Validation is a crucial aspect of data integrity in any application. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
+Validation is a crucial aspect of data integrity in any application. The Angular Grid component in Syncfusion provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 
 ## Column validation
 
@@ -128,11 +128,11 @@ Here's an example that demonstrates how to change the position of the validation
 
 ## Show custom error message while performing CRUD actions
 
-While performing CRUD actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is Essential<sup style="font-size:70%">&reg;</sup> for providing meaningful error messages when an operation fails.
+While performing CRUD actions in the Syncfusion Angular Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
 
 To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
 
-The following sample demonstrates how to retrieve and display error messages in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:  
+The following sample demonstrates how to retrieve and display error messages in the Syncfusion Angular Grid:  
  
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -388,29 +388,3 @@ namespace UrlAdaptor.Server.Models
 The following screenshot illustrates how to retrieve and display error messages when CRUD operations fail:
 
 ![custom error message](../../grid/images/custom-error-message.png)
-
-## Prevent adding duplicate rows with custom validation
-
-The Syncfusion Angular Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
-
-To prevent adding duplicate rows in the Grid, follow these steps:
-
-1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource). This allows editing an existing row without triggering a duplicate error.
-
-2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
-
-3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
-
-For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs55/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs55/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/grid/edit-cs55" %}

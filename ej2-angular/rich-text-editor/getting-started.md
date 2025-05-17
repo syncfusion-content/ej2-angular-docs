@@ -7,6 +7,7 @@ control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
+
 # Getting started with Angular Rich text editor component
 
 This section explains the steps required to create a simple Angular Rich Text Editor component and configure its available functionalities.
@@ -93,7 +94,7 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 })
 
 export class AppComponent {
-  public value:string = `<p>The Syncfudion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
+  public value:string = `<p>The Syncfusion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
     <li>
         <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p>
     </li>
@@ -207,7 +208,7 @@ To get the maximum number of characters in the Rich Text Editor's content, use [
 
 > You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap4/rich-text-editor/rich-text-editor) to knows how to render and configure the rich text editor tools.
 
-## See Also
+## See also
 
 * [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-modes)
 * [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe)
