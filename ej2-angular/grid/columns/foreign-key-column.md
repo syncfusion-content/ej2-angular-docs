@@ -642,6 +642,6 @@ app.Run();
 
 ```
 
-![Edit template in foreign key column using remote data](../grid/images/save.gif)
+![Edit template in foreign key column using remote data](../../grid/images/save.gif)
 
 
