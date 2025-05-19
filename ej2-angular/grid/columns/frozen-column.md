@@ -30,6 +30,7 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
 > * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the columns that are visible in the current view.
 > * You can use both `frozenColumns` property and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property in the same application.
+> * When both frozen columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
 
 ## Freeze particular columns
 

@@ -38,11 +38,12 @@ The following example demonstrates row virtualization using `enableVirtualizatio
 ### Limitations 
 
 * Row virtual scrolling is not compatible with the following feature
-	1. Batch editing
-	2. Detail template
-	3. Row template
-	4. Rowspan
-	5. Autofill
+   1. Batch editing
+   2. Checkbox selection
+   3. Detail template
+   4. Row template
+   5. Rowspan
+   6. Autofill
 	
 * It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
@@ -96,12 +97,13 @@ The following example demonstrates column virtualization using `enableColumnVirt
 * Column virtual scrolling is not compatible with the following feature
     1. Colspan
     2. Batch editing
-    3. Column with infinite scrolling
-    4. Stacked header
-    5. Row template
-    6. Detail template
-    7. Autofill
-    8. Column chooser
+    3. Checkbox selection
+    4. Column with infinite scrolling
+    5. Stacked header
+    6. Row template
+    7. Detail template
+    8. Autofill
+    9. Column chooser
 
 ## Browser height limitation in virtual scrolling and solution
 
