@@ -15,8 +15,8 @@ import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
+    imports: [
+
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -27,8 +27,8 @@ imports: [
         AutoCompleteModule
     ],
 
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid style="padding:70px" #grid id="grid" [dataSource]='data' height='272px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
     (created)="created()" (load)="load()">
@@ -54,14 +54,14 @@ export class AppComponent implements OnInit {
     public freightrules?: Object;
     public shipCountryrules?: Object;
     public orderDaterules?: Object;
-    
+
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-        this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
+            this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
         this.orderIDrules = { required: true, number: true };
         this.customerIDrules = { required: true };
-        this.freightrules =  { min:1,max:1000 };
+        this.freightrules = { min: 1, max: 1000 };
         this.shipCountryrules = { required: true };
         this.orderDaterules = { required: true };
     }
@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).getContentTable().addEventListener('click', (args) => {
             if ((args.target as HTMLElement).classList.contains('e-rowcell')) {
                 (this.grid as GridComponent).editModule.editCell(parseInt(((args.target as HTMLElement).getAttribute('index') as string)),
-                (this.grid as GridComponent).getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('data-colindex') as string)).field);
+                    (this.grid as GridComponent).getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('aria-colindex') as string) - 1).field);
             }
         });
     };
@@ -77,30 +77,29 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).element.addEventListener('keydown', (e) => {
             var closesttd = (e.target as HTMLElement).closest('td');
             if (e.keyCode === 39 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).nextSibling as HTMLElement))) {
-                this.editACell(((closesttd as HTMLTableCellElement).nextSibling as  HTMLElement));
+                this.editACell(((closesttd as HTMLTableCellElement).nextSibling as HTMLElement));
             }
             if (e.keyCode === 37 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement)) &&
                 !(this.grid as GridComponent).getColumnByIndex(
-                    parseInt((((closesttd as HTMLTableCellElement).previousSibling  as HTMLElement).getAttribute('data-colindex') as string))).isPrimaryKey)
-            {
+                    parseInt((((closesttd as HTMLTableCellElement).previousSibling as HTMLElement).getAttribute('aria-colindex') as string)) - 1).isPrimaryKey) {
                 this.editACell(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement));
             }
-            if (e.keyCode === 40 && !isNullOrUndefined((((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling as HTMLElement ))) {
+            if (e.keyCode === 40 && !isNullOrUndefined((((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling as HTMLElement))) {
                 this.editACell(
-                    (((closesttd as HTMLTableCellElement).closest('tr') as  HTMLTableRowElement).nextSibling as HTMLElement).querySelectorAll('td')[
-                    parseInt(((closesttd as HTMLTableCellElement).getAttribute('data-colindex') as string))]);
+                    (((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling as HTMLElement).querySelectorAll('td')[
+                    parseInt(((closesttd as HTMLTableCellElement).getAttribute('aria-colindex') as string)) - 1]);
             }
-            if ( e.keyCode === 38 && !isNullOrUndefined((((closesttd as HTMLTableCellElement ).closest('tr') as HTMLTableRowElement).previousSibling as ChildNode))) {
+            if (e.keyCode === 38 && !isNullOrUndefined((((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).previousSibling as ChildNode))) {
                 this.editACell(
                     (((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).previousSibling as HTMLElement).querySelectorAll('td')[
-                     parseInt(((closesttd as HTMLTableCellElement).getAttribute('data-colindex') as string))]);
+                    parseInt(((closesttd as HTMLTableCellElement).getAttribute('aria-colindex') as string)) - 1]);
             }
         });
     };
     public editACell(args: HTMLElement) {
         (this.grid as GridComponent).editModule.editCell(
             parseInt((args.getAttribute('index') as string)),
-            (this.grid as GridComponent).getColumnByIndex(parseInt(args.getAttribute('data-colindex') as string)).field);
+            (this.grid as GridComponent).getColumnByIndex(parseInt(args.getAttribute('aria-colindex') as string) - 1).field);
     }
 }
 
