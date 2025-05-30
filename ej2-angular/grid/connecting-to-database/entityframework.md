@@ -1,62 +1,58 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion Angular Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client,bind it to Syncfusion Grid, and perform CRUD operations.
+title: Bind SQL Server Data in Syncfusion Angular Grid using Entity Framework
+description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion Angular Grid, and performing CRUD operations.
 platform: ej2-angular
 control: grid
-keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
+keywords: adaptors, customadaptor, urladaptor, entityframework, remotedata 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL data to Syncfusion Angular Grid using Dapper
+# Connecting SQL Server data to Syncfusion Angular Grid using Entity Framework
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion Angular Grid.
+This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion Angular Grid.
 
-Microsoft SQL Server database can be bound to Grid using **Dapper** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Dapper**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+Microsoft SQL Server database can be bound to the Grid using **Entity Framework** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Entity Framework**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
-**Dapper**
+**Entity Framework**
 
-Dapper is an open-source and micro **ORM** (object-relational mapping) product developed by the StackOverflow team. It is very lightweight and straightforward to use with a project. It supports **PostgreSQL**, **MySQL**, **SQL** Server, and other databases.
-
-Dapper expands upon the functionality of the [IDbConnection interface](https://learn.microsoft.com/en-us/dotnet/api/system.data.idbconnection?view=net-8.0), which offers a connection to a data source compatible with the .NET Framework. Additionally, Dapper facilitates writing queries. It simplifies the execution of SQL queries on a database and the mapping of results to C# domain classes.
-
-Dapper can be used to interact with a Microsoft SQL Server database in conjunction with **Microsoft.Data.SqlClient**.
+Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki/Object-relational_mapping) for .NET applications supported by Microsoft. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. With the Entity Framework, developers can work at a higher level of abstraction when they deal with data, and can create and maintain data-oriented applications with less code compared with traditional applications.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion Angular Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
-## Binding data using Dapper from Microsoft SQL Server via an API service
+## Binding data using Entity Framework from Microsoft SQL Server via an API service.
 
-This section describes step by step process how to use Dapper to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
+This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using an API service and bind it to the Syncfusion Angular Grid.
 
 ### Creating an API service
 
-**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_Dapper**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_EntityFramework**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
-**2.** To use Dapper and access the Microsoft SQL Server database in our Angular application, need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and [Dapper](https://www.nuget.org/packages/Dapper) NuGet packages. To add **Microsoft.Data.SqlClient** and Dapper in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To use Entity Framework and access the Microsoft SQL Server database in our Angular application, need to install the [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) and [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) NuGet packages. To add **Microsoft.EntityFrameworkCore** and **Microsoft.EntityFrameworkCore.SqlServer** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
-**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
+**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Syncfusion Angular Grid.
 
-**4.** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of `Orders` objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable** as shown in the following code snippet.
+**4** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a Microsoft SQL Server database using the provided connection string. It includes a *DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_EntityFramework.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -67,7 +63,7 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -90,25 +86,45 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      using (OrderDbContext Context = new OrderDbContext(ConnectionString))
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
+        // Retrieve orders from the orders DbSet and convert to list asynchronously.
+        List<Orders> orders = Context.Orders.ToList();
         return orders;
       }
     }
 
+    // Create a class that inherits from DbContext(Entity Framework Core).
+    public class OrderDbContext : DbContext
+    {
+      //Declare a private variable to store the connection string.
+      private readonly string _ConnectionString;
+
+      //Define a constructor that accepts a connection string.
+      public OrderDbContext(string ConnectionString)
+      {
+        //Store the provided connection string.
+        _ConnectionString = ConnectionString;
+      }
+
+      //Override the onConfiguring method to tell EF Core to use SQL server.
+      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+      {
+        // Use the connection string to configure the database connection.
+        optionsBuilder.UseSqlServer(_ConnectionString);
+      }
+      
+      // Define a DbSet to represent the orders table in the database.
+      public DbSet<Orders> Orders { get; set; }
+    }
+        
     public class Orders
     {
       [Key]
       public int? OrderID { get; set; }
       public string? CustomerID { get; set; }
       public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
+      public decimal Freight { get; set; }
       public string? ShipCity { get; set; }
     }
   }
@@ -119,17 +135,17 @@ namespace Grid_Dapper.Server.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database using Dapper which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** Finally, the retrieved data from Microsoft SQL Server database using Entity Framework which is in the form of list  can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
 
 ![Hosted API URL](../images/Ms-Sql-data.png)
 
 ### Connecting Syncfusion Angular Grid to an API service
 
-To integrate Syncfusion Angular Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Angular Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
 
 **Step 1: Install Syncfusion Package**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Open your terminal in the project client folder and install the required Syncfusion packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -142,25 +158,25 @@ In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular component:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 
 {% endhighlight %}
 {% endtabs %}
 
-**2.** In your component file (e.g., app.component.ts), import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+**2.** In your component file (e.g., **app.component.ts**), import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/grid) using the `url` property and set the adaptor `UrlAdaptor`.
 
 **3.** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
 
@@ -185,7 +201,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new UrlAdaptor()
     });
   }
@@ -210,17 +226,14 @@ export class AppComponent {
 {% highlight cs tabtitle="GridController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
-using Azure;
-using System.Collections.Generic;
-using System.Collections;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_EntityFramework.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -231,13 +244,16 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
     {
       // Retrieve data from the data source (e.g., database).
       IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+
+      // Get the total count of records.
+      int totalRecordsCount = DataSource.Count();
 
       // Return data based on the request.
       return new { result = DataSource, count = totalRecordsCount };
@@ -251,25 +267,45 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      using (OrderDbContext Context = new OrderDbContext(ConnectionString))
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
+        // Retrieve orders from the orders DbSet and convert to list asynchronously.
+        List<Orders> orders = Context.Orders.ToList();
         return orders;
       }
     }
 
+    // Create a class that inherits from DbContext(Entity Framework Core).
+    public class OrderDbContext : DbContext
+    {
+      //Declare a private variable to store the connection string.
+      private readonly string _ConnectionString;
+
+      //Define a constructor that accepts a connection string.
+      public OrderDbContext(string ConnectionString)
+      {
+        //Store the provided connection string.
+        _ConnectionString = ConnectionString;
+      }
+
+      //Override the onConfiguring method to tell EF Core to use SQL server.
+      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+      {
+        // Use the connection string to configure the database connection.
+        optionsBuilder.UseSqlServer(_ConnectionString);
+      }
+      
+      // Define a DbSet to represent the orders table in the database.
+      public DbSet<Orders> Orders { get; set; }
+    }
+        
     public class Orders
     {
       [Key]
       public int? OrderID { get; set; }
       public string? CustomerID { get; set; }
       public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
+      public decimal Freight { get; set; }
       public string? ShipCity { get; set; }
     }
   }
@@ -278,12 +314,12 @@ namespace Grid_Dapper.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-
-> Replace https://localhost:xxxx/api/grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
 **5.** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
 
-> Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
+> Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing), if necessary.
+
   ```cs
   [program.cs]
   builder.Services.AddCors(options =>
@@ -300,7 +336,7 @@ namespace Grid_Dapper.Server.Controllers
 > * The Syncfusion Angular Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) package. Let’s explore how to manage these data operations using the `UrlAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest` and `QueryableOperation`, import `Syncfusion.EJ2.Base` in `GridController.cs` file.
-
+ 
 ### Handling searching operation
 
 To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
@@ -315,16 +351,16 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 [HttpPost]
 [Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest)
+public object Post([FromBody] DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling searching operation.
-  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+  if(DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0) 
   {
     DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
     //Add custom logic here if needed and remove above method.
@@ -355,11 +391,10 @@ import { GridComponent, ToolbarItems, GridModule, ToolbarService } from '@syncfu
 export class AppComponent {
   @ViewChild('grid') public grid?: GridComponent;
   public data?: DataManager;
-  public toolbar?: ToolbarItems[];
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new UrlAdaptor()
     });
     this.toolbar = ['Search'];
@@ -372,11 +407,11 @@ export class AppComponent {
 
 <ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" height="348px">
   <e-columns>
-      <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-      <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-      <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-      <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-      <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
+    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
+    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
+    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
   </e-columns>
 </ejs-grid>
 
@@ -397,7 +432,7 @@ To handle filtering operation, ensure that your API endpoint supports custom fil
 /// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 [HttpPost]
 [Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest)
+public object Post([FromBody] DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
@@ -406,11 +441,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling filtering operation.
-  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) 
   {
-    foreach (WhereFilter condition in DataManagerRequest.Where)
+    foreach (WhereFilter condition in DataManagerRequest.Where) 
     {
-      foreach (WhereFilter predicate in condition.predicates)
+      foreach (WhereFilter predicate in condition.predicates) 
       {
         DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
         //Add custom logic here if needed and remove above method.
@@ -431,7 +466,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 import { Component, ViewChild } from '@angular/core';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-mport { GridComponent, FilterService, GridModule } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, FilterService, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -441,10 +476,10 @@ mport { GridComponent, FilterService, GridModule } from '@syncfusion/ej2-angular
   imports: [GridModule],
 })
 export class AppComponent {
-  @ViewChild('grid')public grid?: GridComponent;
+  @ViewChild('grid') public grid?: GridComponent;
   public data?: DataManager;
 
- public ngOnInit(): void {
+  public ngOnInit(): void {
     this.data = new DataManager({
       url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new UrlAdaptor()
@@ -458,11 +493,11 @@ export class AppComponent {
 
 <ejs-grid #grid [dataSource]='data' allowFiltering="true" height="348px">
   <e-columns>
-      <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-      <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-      <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-      <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-      <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
+    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
+    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
+    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
   </e-columns>
 </ejs-grid>
 
@@ -472,7 +507,6 @@ export class AppComponent {
 ### Handling sorting operation
 
 To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
-
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -484,7 +518,7 @@ To handle sorting operation, ensure that your API endpoint supports custom sorti
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 [HttpPost]
 [Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest)
+public object Post([FromBody] DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
@@ -493,10 +527,10 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   QueryableOperation queryableOperation = new QueryableOperation(); 
 
   // Handling sorting operation.
-  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+  if(DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) 
   {
     DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-    //Add custom logic here if needed and remove above method.s
+    //Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -539,11 +573,11 @@ export class AppComponent {
 
 <ejs-grid #grid [dataSource]='data' allowSorting="true" height="348px">
   <e-columns>
-      <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-      <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-      <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-      <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-      <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
+    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
+    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
+    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
   </e-columns>
 </ejs-grid>
 
@@ -552,7 +586,7 @@ export class AppComponent {
 
 ### Handling paging operation
 
-To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip`method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -564,11 +598,11 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 [HttpPost]
 [Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest)
+public object Post([FromBody] DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
+  
   // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation();
 
@@ -576,12 +610,12 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   int totalRecordsCount = DataSource.Count();
 
   // Handling paging operation.
-  if (DataManagerRequest.Skip != 0)
+  if (DataManagerRequest.Skip != 0) 
   {
     DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
     //Add custom logic here if needed and remove above method.
   }
-  if (DataManagerRequest.Take != 0)
+  if (DataManagerRequest.Take != 0) 
   {
     DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
     //Add custom logic here if needed and remove above method.
@@ -676,12 +710,12 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove',
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
+      insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
+      updateUrl: 'https://localhost:xxxx/api/Grid/Update',
+      removeUrl: 'https://localhost:xxxx/api/Grid/Remove', 
       // Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate',
+      //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate', 
       adaptor: new UrlAdaptor()
     });
     this.employeeIDRules = { required: true, number: true };
@@ -697,15 +731,15 @@ export class AppComponent {
 
 {% highlight html tabtitle="app.component.html" %}
 
-<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" [editSettings]="editSettings" height="348px">
-  <e-columns>
+  <ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" [editSettings]="editSettings" height="348px">
+    <e-columns>
       <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-column>
       <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width='160'></e-column>
-      <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' field='EmployeeID'></e-column>
+      <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' textAlign='Right'></e-column>
       <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' format="C2" width='160' textAlign='Right'></e-column>
       <e-column field='ShipCity' headerText='Ship City' [validationRules]='shipCityRules' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
+    </e-columns>
+  </ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -715,7 +749,7 @@ export class AppComponent {
 
 **Insert Operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, the record will be inserted into the **Orders** table by calling the following **POST** method of an API. Utilizing `Dapper` simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -727,20 +761,42 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Insert")]
-public void Insert([FromBody] CRUDModel<Orders> value)
+public void Insert([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
+    // Add the provided order to the orders DbSet.
+    Context.Orders.Add(value.value);
+
+    // Save changes to the database.
+    Context.SaveChanges();
   }
 
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -760,7 +816,7 @@ public class CRUDModel<T> where T : class
 
 **Update Operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -772,20 +828,46 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Update")]
-public void Update([FromBody] CRUDModel<Orders> value)
+public void Update([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
+    Orders existingOrder = Context.Orders.Find(value.value.OrderID);
+    if (existingOrder != null)
+    {
+      // Update the existing order with the new values.
+      Context.Entry(existingOrder).CurrentValues.SetValues(value.value);
+
+      // Save changes to the database.
+      Context.SaveChanges();
+    }
   }
-  
+
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -805,7 +887,7 @@ public class CRUDModel<T> where T : class
 
 **Delete Operation:**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -817,21 +899,47 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// <return>Returns void.</return>
 [HttpPost]
 [Route("api/[controller]/Remove")]
-public void Remove([FromBody] CRUDModel<Orders> value)
+public void Remove([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  int OrderId = Convert.ToInt32(value.key.ToString());
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
+    Orders Order = Context.Orders.Find(OrderId);
+    if (Order != null)
+    {
+      // Remove the order from the orders DbSet.
+      Context.Orders.Remove(Order);
+
+      // Save changes to the database.
+      Context.SaveChanges();
+    }
   }
 
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -851,7 +959,7 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation:**
 
-To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -863,63 +971,74 @@ To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/an
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/BatchUpdate")]
-public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
+public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value) 
 {
-  if (value.changed != null && value.changed.Count > 0)
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    foreach (Orders Record in (IEnumerable<Orders>)value.changed)
+    if (value.changed != null && value.changed.Count > 0)
     {
-      //Create query to update the changes into the database by accessing its properties.
-      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.changed)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
+        // Update the changed records.
+        Context.Orders.UpdateRange(Record);
       }
-
-      //Add custom logic here if needed and remove above method.
     }
-  }
-  if (value.added != null && value.added.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.added)
+
+    if (value.added != null && value.added.Count > 0)
     {
-      //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.added)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
+        foreach (Orders order in value.added)
+        {
+          // This ensures EF does not try to insert OrderID.
+          order.OrderID = default; 
+        }
+        // Add new records.
+        Context.Orders.AddRange(value.added);
       }
-
-      //Add custom logic here if needed and remove above method.
     }
-  }
-  if (value.deleted != null && value.deleted.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
+
+    if (value.deleted != null && value.deleted.Count > 0)
     {
-      //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
+        // Find and delete the records.
+        Orders ExistingOrder = Context.Orders.Find(Record.OrderID);
+        if (ExistingOrder != null)
+        {
+          Context.Orders.Remove(ExistingOrder);
+        }
       }
-
-      //Add custom logic here if needed and remove above method.
     }
+
+    // Save changes to the database.
+    Context.SaveChanges();
   }
   return new JsonResult(value);
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -937,19 +1056,19 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-When you run the application, the resultant Grid will look like this
+When you run the application, the resultant Syncfusion Angular Grid will look like this
 
-![Angular Grid Component bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
+![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20UrlAdaptor/Grid_Dapper).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20UrlAdaptor/Grid_EntityFramework).
 
-## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
+## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
+This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion Angular Grid to an API service](#connecting-syncfusion-angular-grid-to-an-api-service)
 
-**2.** To use **Dapper** and access the Microsoft SQL Server database in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To use `Entity Framework` and access the Microsoft SQL Server database in our Angular application, we need to install the [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) and [Microsoft.EntityFrameworkCore.SqlServer ](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) NuGet packages. To add **Microsoft.EntityFrameworkCore** and **Microsoft.EntityFrameworkCore.SqlServer** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
@@ -958,9 +1077,9 @@ This section describes step by step process how to retrieve data from a Microsof
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of **Orders** objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable**
+  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a *DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
 
-  * Finally, return the response as a **result** and **count** pair object in the `processResponse` method to bind the data to the Grid.
+  * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -979,10 +1098,10 @@ import { CustomAdaptor } from './CustomAdaptor'
 export class AppComponent {
   @ViewChild('grid') public grid?: GridComponent;
   public data?: DataManager;
-
+    
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
+      url: 'https://localhost:xxxx/api/Grid',
       adaptor: new CustomAdaptor()
     });
   }
@@ -996,7 +1115,7 @@ export class AppComponent {
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
     <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' field='EmployeeID'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
     <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
     <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
   </e-columns>
@@ -1021,17 +1140,14 @@ export class CustomAdaptor extends UrlAdaptor {
 {% highlight cs tabtitle="GridController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
-using Azure;
-using System.Collections.Generic;
-using System.Collections;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_EntityFramework.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -1042,7 +1158,7 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -1065,25 +1181,45 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      using (OrderDbContext Context = new OrderDbContext(ConnectionString))
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
+        // Retrieve orders from the orders DbSet and convert to list asynchronously.
+        List<Orders> orders = Context.Orders.ToList();
         return orders;
       }
     }
 
+    // Create a class that inherits from DbContext(Entity Framework Core).
+    public class OrderDbContext : DbContext
+    {
+      //Declare a private variable to store the connection string.
+      private readonly string _ConnectionString;
+
+      //Define a constructor that accepts a connection string.
+      public OrderDbContext(string ConnectionString)
+      {
+        //Store the provided connection string.
+        _ConnectionString = ConnectionString;
+      }
+
+      //Override the onConfiguring method to tell EF Core to use SQL server.
+      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+      {
+        // Use the connection string to configure the database connection.
+        optionsBuilder.UseSqlServer(_ConnectionString);
+      }
+      
+      // Define a DbSet to represent the orders table in the database.
+      public DbSet<Orders> Orders { get; set; }
+    }
+        
     public class Orders
     {
       [Key]
       public int? OrderID { get; set; }
       public string? CustomerID { get; set; }
       public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
+      public decimal Freight { get; set; }
       public string? ShipCity { get; set; }
     }
   }
@@ -1096,9 +1232,9 @@ namespace Grid_Dapper.Server.Controllers
 
 ### Handling searching operation
 
-When utilizing the `CustomAdaptor` in Angular, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in Angular, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class. 
 
-In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Grid.
+In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Syncfusion Angular Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1116,9 +1252,9 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
+  QueryableOperation queryableOperation = new QueryableOperation();   
 
-  // Handling searching operation.                                       
+  // Handling searching operation.                                     
   if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0) 
   {
     DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
@@ -1155,7 +1291,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new CustomAdaptor()
     });
     this.toolbar = ['Search'];
@@ -1197,7 +1333,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 When utilizing the `CustomAdaptor` in Angular, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Grid.
+In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Syncfusion Angular Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1299,7 +1435,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 When utilizing the `CustomAdaptor` in Angular, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Grid.
+In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Syncfusion Angular Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1317,7 +1453,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();         
+  QueryableOperation queryableOperation = new QueryableOperation();      
 
   // Handling sorting operation.
   if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) 
@@ -1396,7 +1532,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 When utilizing the `CustomAdaptor` in Angular, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Grid.
+In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Syncfusion Angular Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1412,8 +1548,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation();
 
   // Get the total count of records.
@@ -1496,23 +1630,23 @@ export class CustomAdaptor extends UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion Angular Grid, utilize the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/) property. The Grid offers multiple edit modes including the Inline/Normal, Dialog and Batch editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) documentation.
+To enable editing in the Syncfusion Angular Grid, utilize the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) documentation.
 
-In this scenario, the inline edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property configured to display toolbar items for editing purpose.
+In this scenario, the inline edit `mode` and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property configured to display toolbar items for editing purpose.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 
 import { Component, ViewChild } from '@angular/core';
 import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, EditSettingsModel, ToolbarItems,EditService, ToolbarService, GridModule } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, EditSettingsModel, ToolbarItems,EditService, ToolbarService,GridModule } from '@syncfusion/ej2-angular-grids';
 import { CustomAdaptor } from './CustomAdaptor'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  providers: [EditService, ToolbarService],
+  providers: [EditService, ToolbarService ],
   imports: [GridModule],
 })
 export class AppComponent {
@@ -1527,12 +1661,12 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove',
-      / Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate',
+      url: 'https://localhost:xxxx/api/Grid',
+      insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
+      updateUrl: 'https://localhost:xxxx/api/Grid/Update',
+      removeUrl: 'https://localhost:xxxx/api/Grid/Remove',
+      // Enable batch URL when batch editing is enabled.
+      //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate',
       adaptor: new CustomAdaptor()
     });
     this.employeeIDRules = { required: true, number: true };
@@ -1548,11 +1682,11 @@ export class AppComponent {
 
 {% highlight html tabtitle="app.component.html" %}
 
-<ejs-grid #grid [dataSource]='data' height="348px" [toolbar]="toolbar" [editSettings]="editSettings">
+<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" [editSettings]="editSettings" height="348px">
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-column>
     <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' field='EmployeeID' textAlign='Right'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' textAlign='Right'></e-column>
     <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' format="C2" width='160' textAlign='Right'></e-column>
     <e-column field='ShipCity' headerText='Ship City' [validationRules]='shipCityRules' width='150'></e-column>
   </e-columns>
@@ -1561,7 +1695,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
 
 The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
@@ -1571,11 +1705,11 @@ The CRUD operations can be performed and customized on our own by overriding the
 * update
 * batchRequest
 
-Let’s see how to perform CRUD operations using Dapper in Microsoft SQL Server data with the Syncfusion Angular Grid.
+Let’s see how to perform CRUD operations using Entity Framework in Microsoft SQL Server data with Syncfusion Angular Grid.
 
 **Insert Operation:**
 
-To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor` . Modify the logic within this method according to the requirements of your application. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1584,7 +1718,6 @@ import { UrlAdaptor } from '@syncfusion/ej2-data';
 
 export class CustomAdaptor extends UrlAdaptor {
   public override processResponse(): any {
-    // Calling base class processResponse function.
     const original: any = super.processResponse.apply(this, arguments as any);
     return original;
   }
@@ -1601,7 +1734,6 @@ export class CustomAdaptor extends UrlAdaptor {
     };
   }
 }
-  
 {% endhighlight %}
 
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1613,20 +1745,42 @@ export class CustomAdaptor extends UrlAdaptor {
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Insert")]
-public void Insert([FromBody] CRUDModel<Orders> value)
+public void Insert([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
+    // Add the provided order to the orders DbSet.
+    Context.Orders.Add(value.value);
+
+    // Save changes to the database.
+    Context.SaveChanges();
   }
 
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -1646,7 +1800,7 @@ public class CRUDModel<T> where T : class
 
 **Update Operation:**
 
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1684,20 +1838,46 @@ export class CustomAdaptor extends UrlAdaptor {
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Update")]
-public void Update([FromBody] CRUDModel<Orders> value)
+public void Update([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
+    Orders existingOrder = Context.Orders.Find(value.value.OrderID);
+    if (existingOrder != null)
+    {
+      // Update the existing order with the new values.
+      Context.Entry(existingOrder).CurrentValues.SetValues(value.value);
+
+      // Save changes to the database.
+      Context.SaveChanges();
+    }
   }
 
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -1717,7 +1897,7 @@ public class CRUDModel<T> where T : class
 
 **Delete Operation:**
 
-To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing `Entity Framework` simplifies database tasks by managing database connections and queries through object-oriented programming, making it easier to work with databases in C# code, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1747,7 +1927,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 {% endhighlight %}
 
-{% highlight cs tabtitle="GridController.cs" %}
+{% highlight ts tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Remove a specific data item from the data collection.
@@ -1756,21 +1936,47 @@ export class CustomAdaptor extends UrlAdaptor {
 /// <return>Returns void.</return>
 [HttpPost]
 [Route("api/[controller]/Remove")]
-public void Remove([FromBody] CRUDModel<Orders> value)
+public void Remove([FromBody] CRUDModel<Orders> value) 
 {
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
-
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  int OrderId = Convert.ToInt32(value.key.ToString());
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
+    Orders Order = Context.Orders.Find(OrderId);
+    if (Order != null)
+    {
+      // Remove the order from the orders DbSet.
+      Context.Orders.Remove(Order);
+
+      // Save changes to the database.
+      Context.SaveChanges();
+    }
   }
 
   //Add custom logic here if needed and remove above method.
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -1790,7 +1996,7 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation:**
 
-To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
+To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1831,64 +2037,74 @@ export class CustomAdaptor extends UrlAdaptor {
 /// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/BatchUpdate")]
-public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
+public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value) 
 {
-  if (value.changed != null && value.changed.Count > 0)
+  using (OrderDbContext Context = new OrderDbContext(ConnectionString))
   {
-    foreach (Orders Record in (IEnumerable<Orders>)value.changed)
+    if (value.changed != null && value.changed.Count > 0)
     {
-      //Create query to update the changes into the database by accessing its properties.
-      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.changed)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
+        // Update the changed records.
+        Context.Orders.UpdateRange(Record);
       }
-      //Add custom logic here if needed and remove above method.
-
     }
-  }
-  if (value.added != null && value.added.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.added)
+
+    if (value.added != null && value.added.Count > 0)
     {
-      //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.added)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
+        foreach (Orders order in value.added)
+        {
+          // This ensures EF does not try to insert OrderID.
+          order.OrderID = default; 
+        }
+        // Add new records.
+        Context.Orders.AddRange(value.added);
       }
-
-      //Add custom logic here if needed and remove above method.
     }
-  }
-  if (value.deleted != null && value.deleted.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
+
+    if (value.deleted != null && value.deleted.Count > 0)
     {
-
-      //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
       {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
+        // Find and delete the records.
+        Orders ExistingOrder = Context.Orders.Find(Record.OrderID);
+        if (ExistingOrder != null)
+        {
+          Context.Orders.Remove(ExistingOrder);
+        }
       }
-
-      //Add custom logic here if needed and remove above method.
     }
+
+    // Save changes to the database.
+    Context.SaveChanges();
   }
   return new JsonResult(value);
+}
+
+// Create a class that inherits from DbContext(Entity Framework Core).
+public class OrderDbContext : DbContext
+{
+  //Declare a private variable to store the connection string.
+  private readonly string _ConnectionString;
+
+  //Define a constructor that accepts a connection string.
+  public OrderDbContext(string ConnectionString)
+  {
+    //Store the provided connection string.
+    _ConnectionString = ConnectionString;
+  }
+
+  //Override the onConfiguring method to tell EF Core to use SQL server.
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    // Use the connection string to configure the database connection.
+    optionsBuilder.UseSqlServer(_ConnectionString);
+  }
+      
+  // Define a DbSet to represent the orders table in the database.
+  public DbSet<Orders> Orders { get; set; }
 }
 
 public class CRUDModel<T> where T : class
@@ -1906,6 +2122,6 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion Angular Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
+![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20CustomAdaptor/Grid_Dapper_CustomAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20CustomAdaptor/Grid_EntityFramework).

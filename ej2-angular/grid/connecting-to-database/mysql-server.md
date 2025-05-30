@@ -1017,7 +1017,9 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Syncfusion Angular Grid will look like this
 
-![Grid bound with MySQL Server data](.../images/connecting-micro-curd.gif)
+![Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MySQL%20database%20using%20UrlAdaptor/Grid_MySQL).
 
 ## Binding data from MySQL Server using CustomAdaptor
 
@@ -1899,7 +1901,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-## Batch Operation:
+**Batch Operation:**
 
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
@@ -2038,3 +2040,5 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Syncfusion Angular Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MySQL%20database%20using%20CustomAdaptor/Grid_MySQL).
