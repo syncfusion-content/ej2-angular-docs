@@ -51,7 +51,7 @@ The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includ
 | aria-disabled       | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
-For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](../../toolbar/accessibility.html) documentation.
+For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility) documentation.
 
 * The Rich Text Editor element is assigned the role of `application`.
 

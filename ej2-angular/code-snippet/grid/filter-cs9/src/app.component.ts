@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { MessageModule } from '@syncfusion/ej2-angular-notifications'
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        
+        CommonModule
         GridModule,
         ButtonModule,
         MessageModule
@@ -22,12 +22,11 @@ standalone: true,
   templateUrl: 'app.template.html',
 })
 export class AppComponent implements OnInit {
+  @ViewChild('grid')
+  public grid?: GridComponent;
   public data?: Object[];
   public pageOptions?: Object;
   public filteredData?: Object;
-
-  @ViewChild('grid')
-  public grid?: GridComponent;
   showRecords?: boolean;
   showWarning?: boolean;
 
