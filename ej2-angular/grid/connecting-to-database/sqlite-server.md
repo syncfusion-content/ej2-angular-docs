@@ -1,49 +1,41 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion Angular Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client,bind it to Syncfusion Grid, and perform CRUD operations.
+title: Bind SQLite Server Data in Syncfusion Angular Grid
+description: Learn how to consume data from SQLite Server, bind it to Syncfusion Angular Grid, and perform CRUD operations.
 platform: ej2-angular
 control: grid
-keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
+keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL data to Syncfusion Angular Grid using Dapper
+# Connecting SQLite Server data to Syncfusion Angular Grid
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion Angular Grid.
+This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion Angular Grid.
 
-Microsoft SQL Server database can be bound to Grid using **Dapper** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Dapper**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+SQLite Server database can be bound to the Grid in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a SQLite Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
-**Dapper**
+* **Using UrlAdaptor**
 
-Dapper is an open-source and micro **ORM** (object-relational mapping) product developed by the StackOverflow team. It is very lightweight and straightforward to use with a project. It supports **PostgreSQL**, **MySQL**, **SQL** Server, and other databases.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the SQLite Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
-Dapper expands upon the functionality of the [IDbConnection interface](https://learn.microsoft.com/en-us/dotnet/api/system.data.idbconnection?view=net-8.0), which offers a connection to a data source compatible with the .NET Framework. Additionally, Dapper facilitates writing queries. It simplifies the execution of SQL queries on a database and the mapping of results to C# domain classes.
-
-Dapper can be used to interact with a Microsoft SQL Server database in conjunction with **Microsoft.Data.SqlClient**.
-
-**1. Using UrlAdaptor**
-
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
-
-**2. Using CustomAdaptor**
+* **Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion Angular Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
-## Binding data using Dapper from Microsoft SQL Server via an API service
+## Binding data from SQLite Server using an API service
 
-This section describes step by step process how to use Dapper to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
+This section describes step by step process how to retrieve data from a SQLite Server using an API service and bind it to the Grid.
 
 ### Creating an API service
 
-**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_Dapper**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_SQLite**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
-**2.** To use Dapper and access the Microsoft SQL Server database in our Angular application, need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and [Dapper](https://www.nuget.org/packages/Dapper) NuGet packages. To add **Microsoft.Data.SqlClient** and Dapper in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To connect a SQLite Server database using the SQLite driver in your application, you need to install the [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) NuGet package. To add **Microsoft.Data.Sqlite** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
 
-**4.** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of `Orders` objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable** as shown in the following code snippet.
+**4.** In an API controller (aka, GridController), connect to SQLite Server. In the **GetOrderData()** method **SqliteConnection** helps to connect the SQLite Server database. Next, the **SqliteCommand** is used to retrieve the desired collection from the database. Then populate the data collection from the **SqliteCommand** into a list using the **Read** method of **SqliteDataReader** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -52,11 +44,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
+using Microsoft.Data.Sqlite;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_SQLite.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -67,7 +57,7 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -90,16 +80,38 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
+      // SQL query to fetch all records from the orders table and sort them by OrderID.
+      string queryStr = "SELECT * FROM Orders ORDER BY OrderID;";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      // Creates an empty list to store the retrieved orders from the database.
+      List<Orders> DataSource = new List<Orders>();
+
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to enable SQL queries.
+      Connection.Open();
+
+      //Using SqliteCommand and query create connection with database.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      // Execute the SQLite command and retrieve data using SqliteDataReader.
+      using (SqliteDataReader reader = Command.ExecuteReader())
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
-        return orders;
+        while (reader.Read())
+        {
+          Orders order = new Orders
+          {
+            OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+            CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+            EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+            ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+            Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+          };
+          DataSource.Add(order);
+        }
       }
+      return DataSource;
     }
 
     public class Orders
@@ -119,7 +131,7 @@ namespace Grid_Dapper.Server.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database using Dapper which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** Finally, the retrieved data from SQLite Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
 
 ![Hosted API URL](../images/Ms-Sql-data.png)
 
@@ -185,7 +197,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new UrlAdaptor()
     });
   }
@@ -213,14 +225,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
-using Azure;
-using System.Collections.Generic;
-using System.Collections;
+using Microsoft.Data.Sqlite;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_SQLite.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -231,7 +238,7 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -251,16 +258,38 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
+      // SQL query to fetch all records from the orders table and sort them by OrderID.
+      string queryStr = "SELECT * FROM Orders ORDER BY OrderID;";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      // Creates an empty list to store the retrieved orders from the database.
+      List<Orders> DataSource = new List<Orders>();
+
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to enable SQL queries.
+      Connection.Open();
+
+      //Using SqliteCommand and query create connection with database.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      // Execute the SQLite command and retrieve data using SqliteDataReader.
+      using (SqliteDataReader reader = Command.ExecuteReader())
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
-        return orders;
+        while (reader.Read())
+        {
+          Orders order = new Orders
+          {
+            OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+            CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+            EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+            ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+            Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+          };
+          DataSource.Add(order);
+        }
       }
+      return DataSource;
     }
 
     public class Orders
@@ -279,7 +308,7 @@ namespace Grid_Dapper.Server.Controllers
 {% endtabs %}
 
 
-> Replace https://localhost:xxxx/api/grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
 **5.** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
 
@@ -359,7 +388,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new UrlAdaptor()
     });
     this.toolbar = ['Search'];
@@ -496,7 +525,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
   {
     DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-    //Add custom logic here if needed and remove above method.s
+    //Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -676,12 +705,12 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove',
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
+      insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
+      updateUrl: 'https://localhost:xxxx/api/Grid/Update',
+      removeUrl: 'https://localhost:xxxx/api/Grid/Remove',
       // Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate',
+      //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate',
       adaptor: new UrlAdaptor()
     });
     this.employeeIDRules = { required: true, number: true };
@@ -715,7 +744,7 @@ export class AppComponent {
 
 **Insert Operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, the record will be inserted into the **Orders** table by calling the following **POST** method of an API. Utilizing `Dapper` simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -730,15 +759,22 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 public void Insert([FromBody] CRUDModel<Orders> value)
 {
   //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+  string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.value.CustomerID}','{value.value.Freight}','{value.value.ShipCity}','{value.value.EmployeeID}')";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
-  }
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
 
   //Add custom logic here if needed and remove above method.
 }
@@ -760,7 +796,7 @@ public class CRUDModel<T> where T : class
 
 **Update Operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -775,16 +811,23 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 public void Update([FromBody] CRUDModel<Orders> value)
 {
   //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+  string queryStr = $"Update Orders set CustomerID='{value.value.CustomerID}', Freight='{value.value.Freight}',EmployeeID='{value.value.EmployeeID}',ShipCity='{value.value.ShipCity}' where OrderID='{value.value.OrderID}'";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
-  }
-  
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
+
   //Add custom logic here if needed and remove above method.
 }
 
@@ -805,7 +848,7 @@ public class CRUDModel<T> where T : class
 
 **Delete Operation:**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -820,16 +863,22 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 public void Remove([FromBody] CRUDModel<Orders> value)
 {
   //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+  string queryStr = $"Delete from Orders where OrderID={value.key}";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
-  }
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
 
   //Add custom logic here if needed and remove above method.
 }
@@ -851,7 +900,7 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation:**
 
-To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -870,16 +919,23 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.changed)
     {
       //Create query to update the changes into the database by accessing its properties.
-      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+      string queryStr = $"Update Orders set CustomerID='{Record.CustomerID}', Freight='{Record.Freight}',EmployeeID='{Record.EmployeeID}',ShipCity='{Record.ShipCity}' where OrderID='{Record.OrderID}'";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
 
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
+      
       //Add custom logic here if needed and remove above method.
     }
   }
@@ -888,15 +944,22 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.added)
     {
       //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+      string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{Record.CustomerID}','{Record.Freight}','{Record.ShipCity}','{Record.EmployeeID}')";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
 
       //Add custom logic here if needed and remove above method.
     }
@@ -906,15 +969,22 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
     {
       //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+      string queryStr = $"Delete from Orders where OrderID={Record.OrderID}";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
 
       //Add custom logic here if needed and remove above method.
     }
@@ -939,17 +1009,17 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![Angular Grid Component bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
+![Angular Grid Component bound with SQLite Server data](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20UrlAdaptor/Grid_Dapper).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20SQLite%20using%20UrlAdaptor/Grid_SQLite).
 
-## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
+## Binding data from SQLite Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
+This section describes step by step process how to retrieve data from a SQLite Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion Angular Grid to an API service](#connecting-syncfusion-angular-grid-to-an-api-service)
 
-**2.** To use **Dapper** and access the Microsoft SQL Server database in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To connect a SQLite Server database using the SQLite driver in your application, you need to install the [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) NuGet package. To add **Microsoft.Data.Sqlite** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
@@ -958,9 +1028,10 @@ This section describes step by step process how to retrieve data from a Microsof
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of **Orders** objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable**
 
-  * Finally, return the response as a **result** and **count** pair object in the `processResponse` method to bind the data to the Grid.
+  * In this **GetOrderData** method, the SQLite Server database data is fetch by using the **SqliteDataReader** class.
+  * Employ the `processResponse` method to asynchronously iterate over the results retrieved by executing the SQL query with **ExecuteReaderAsync** method, gathering the data into a list.
+  * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -982,7 +1053,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
+      url: 'https://localhost:xxxx/api/Grid',
       adaptor: new CustomAdaptor()
     });
   }
@@ -1024,14 +1095,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using Syncfusion.EJ2.Linq;
-using Azure;
-using System.Collections.Generic;
-using System.Collections;
+using Microsoft.Data.Sqlite;
 
-namespace Grid_Dapper.Server.Controllers
+namespace Grid_SQLite.Server.Controllers
 {
   [ApiController]
   public class GridController : ControllerBase
@@ -1042,7 +1108,7 @@ namespace Grid_Dapper.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    /// <returns>Returns a JSON object along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -1065,16 +1131,38 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
     {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
+      // SQL query to fetch all records from the orders table and sort them by OrderID.
+      string queryStr = "SELECT * FROM Orders ORDER BY OrderID;";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
+      // Creates an empty list to store the retrieved orders from the database.
+      List<Orders> DataSource = new List<Orders>();
+
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to enable SQL queries.
+      Connection.Open();
+
+      //Using SqliteCommand and query create connection with database.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      // Execute the SQLite command and retrieve data using SqliteDataReader.
+      using (SqliteDataReader reader = Command.ExecuteReader())
       {
-        Connection.Open();
-        // Dapper automatically handles mapping to your orders class.
-        List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
-        return orders;
+        while (reader.Read())
+        {
+          Orders order = new Orders
+          {
+            OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+            CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+            EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+            ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+            Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+          };
+          DataSource.Add(order);
+        }
       }
+      return DataSource;
     }
 
     public class Orders
@@ -1155,7 +1243,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
       adaptor: new CustomAdaptor()
     });
     this.toolbar = ['Search'];
@@ -1505,14 +1593,14 @@ In this scenario, the inline edit [mode](https://ej2.syncfusion.com/angular/docu
 
 import { Component, ViewChild } from '@angular/core';
 import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, EditSettingsModel, ToolbarItems,EditService, ToolbarService, GridModule } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, EditSettingsModel, ToolbarItems,EditService, ToolbarService,GridModule } from '@syncfusion/ej2-angular-grids';
 import { CustomAdaptor } from './CustomAdaptor'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  providers: [EditService, ToolbarService],
+  providers: [EditService, ToolbarService ],
   imports: [GridModule],
 })
 export class AppComponent {
@@ -1527,12 +1615,12 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove',
+      url: 'https://localhost:xxxx/api/Grid',
+      insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
+      updateUrl: 'https://localhost:xxxx/api/Grid/Update',
+      removeUrl: 'https://localhost:xxxx/api/Grid/Remove',
       / Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate',
+      //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate',
       adaptor: new CustomAdaptor()
     });
     this.employeeIDRules = { required: true, number: true };
@@ -1552,7 +1640,7 @@ export class AppComponent {
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-column>
     <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' field='EmployeeID' textAlign='Right'></e-column>
+    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' field='EmployeeID'  textAlign='Right'></e-column>
     <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' format="C2" width='160' textAlign='Right'></e-column>
     <e-column field='ShipCity' headerText='Ship City' [validationRules]='shipCityRules' width='150'></e-column>
   </e-columns>
@@ -1571,11 +1659,11 @@ The CRUD operations can be performed and customized on our own by overriding the
 * update
 * batchRequest
 
-Let’s see how to perform CRUD operations using Dapper in Microsoft SQL Server data with the Syncfusion Angular Grid.
+Let’s see how to perform CRUD operation using SQLite Server data with Grid.
 
 **Insert Operation:**
 
-To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1616,15 +1704,22 @@ export class CustomAdaptor extends UrlAdaptor {
 public void Insert([FromBody] CRUDModel<Orders> value)
 {
   //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+  string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.value.CustomerID}','{value.value.Freight}','{value.value.ShipCity}','{value.value.EmployeeID}')";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
-  }
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
 
   //Add custom logic here if needed and remove above method.
 }
@@ -1646,7 +1741,7 @@ public class CRUDModel<T> where T : class
 
 **Update Operation:**
 
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1687,15 +1782,22 @@ export class CustomAdaptor extends UrlAdaptor {
 public void Update([FromBody] CRUDModel<Orders> value)
 {
   //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+  string queryStr = $"Update Orders set CustomerID='{value.value.CustomerID}', Freight='{value.value.Freight}',EmployeeID='{value.value.EmployeeID}',ShipCity='{value.value.ShipCity}' where OrderID='{value.value.OrderID}'";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, value.value);
-  }
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
 
   //Add custom logic here if needed and remove above method.
 }
@@ -1717,7 +1819,7 @@ public class CRUDModel<T> where T : class
 
 **Delete Operation:**
 
-To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
@@ -1759,16 +1861,22 @@ export class CustomAdaptor extends UrlAdaptor {
 public void Remove([FromBody] CRUDModel<Orders> value)
 {
   //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+  string queryStr = $"Delete from Orders where OrderID={value.key}";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
-  }
+  // Establishes a connection to the SQLite database using the provided connection string.
+  SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+  // Opens the database connection to execute queries.
+  Connection.Open();
+
+  //Execute the SQLite command.
+  SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+  //Execute this code to reflect the changes into the database.
+  Command.ExecuteNonQuery();
+
+  // Close the database connection after executing the query.
+  Connection.Close();
 
   //Add custom logic here if needed and remove above method.
 }
@@ -1838,17 +1946,24 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.changed)
     {
       //Create query to update the changes into the database by accessing its properties.
-      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+      string queryStr = $"Update Orders set CustomerID='{Record.CustomerID}', Freight='{Record.Freight}',EmployeeID='{Record.EmployeeID}',ShipCity='{Record.ShipCity}' where OrderID='{Record.OrderID}'";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
+      
       //Add custom logic here if needed and remove above method.
-
     }
   }
   if (value.added != null && value.added.Count > 0)
@@ -1856,15 +1971,22 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.added)
     {
       //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+      string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{Record.CustomerID}','{Record.Freight}','{Record.ShipCity}','{Record.EmployeeID}')";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
 
       //Add custom logic here if needed and remove above method.
     }
@@ -1873,17 +1995,23 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
   {
     foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
     {
-
       //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+      string queryStr = $"Delete from Orders where OrderID={Record.OrderID}";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
-      }
+      // Establishes a connection to the SQLite database using the provided connection string.
+      SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+      // Opens the database connection to execute queries.
+      Connection.Open();
+
+      //Execute the SQLite command.
+      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the query.
+      Connection.Close();
 
       //Add custom logic here if needed and remove above method.
     }
@@ -1906,6 +2034,6 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion Angular Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
+![Syncfusion Angular Grid bound with SQLite Server data](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20CustomAdaptor/Grid_Dapper_CustomAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20SQLite%20using%20CustomAdaptor/Grid_SQLite).
