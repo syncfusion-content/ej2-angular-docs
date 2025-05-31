@@ -1,32 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
-import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations';
 
-
-
-
-import { Component, ViewEncapsulation, Inject } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-imports: [
-        
-        AccordionModule
-    ],
-
-
-standalone: true,
+  imports: [AccordionModule],
+  standalone: true,
   selector: 'my-thing',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
 })
 export class AccordionComponent {}
 
 @Component({
+  imports: [AccordionComponent],
+  standalone: true,
   selector: 'control-content',
   templateUrl: './reusable-content.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-export class MyApp {}
-
-
-
+export class AppComponent {}
