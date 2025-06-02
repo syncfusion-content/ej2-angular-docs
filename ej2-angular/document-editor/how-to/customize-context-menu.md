@@ -164,7 +164,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
     onCreate() {
-        debugger;
      // creating Custom Options
      let menuItems: MenuItemModel[] = [
         {
