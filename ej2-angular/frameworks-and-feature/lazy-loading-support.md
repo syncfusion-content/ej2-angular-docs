@@ -10,97 +10,269 @@ domainurl: ##DomainURL##
 
 # Angular Lazy Loading
 
-Lazy loading is an optimization technique used in Angular applications to improve performance by loading only the necessary modules on demand. This section provides a detailed guide on implementing lazy loading with Essential JS2 Angular components, including Syncfusion controls. Lazy loading is instrumental in minimizing the initial loading time, thereby enhancing user experience significantly.
+Lazy loading is an optimization technique used in Angular applications to improve performance by loading only the necessary modules on demand. This section provides a detailed guide on implementing lazy loading with Essential<sup style="font-size:70%">&reg;</sup> JS2 Angular components, including Syncfusion<sup style="font-size:70%">&reg;</sup> controls. Lazy loading is instrumental in minimizing the initial loading time, thereby enhancing user experience significantly.
 
 ## Lazy Loading
 
-Lazy loading is a technique that loads additional payload only when needed, which can improve the overall performance and user experience of your Angular application. By using code splitting, you can lazy load the Syncfusion components and routes in Angular. This can reduce the initial loading time of the application.
+Lazy loading is a technique that loads additional payload only when needed, which can improve the overall performance and user experience of your Angular application. By using code splitting, you can lazy load the Syncfusion<sup style="font-size:70%">&reg;</sup> components and routes in Angular. This can reduce the initial loading time of the application.
 
-## Creating a Syncfusion component in Angular
+# 🧱 Folder Structure Overview
 
-Begin developing your Angular application with Syncfusion components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
+```ruby
+src/
+├── app/
+│   ├── home/           # Lazy-loaded feature module with Syncfusion Grid
+│   ├── about/          # Lazy-loaded feature module with Syncfusion Dropdown
+│   ├── app-routing.module.ts # Root routing config with lazy loading
+│   └── app.component.ts      # Root component with navigation
+```
 
-Here's an example demonstrating the routing setup in an Angular application that implements lazy loading for `CustomersComponent` and `OrdersComponent`.
+## Creating a Syncfusion<sup style="font-size:70%">&reg;</sup> component in Angular
 
-In the `customers.component.ts` file, we integrate the Syncfusion Calendar component:
+Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
 
-```typescript
+# Project Setup
+
+### 1. Create App & Install Syncfusion<sup style="font-size:70%">&reg;</sup> components
+
+Run these commands to create a standalone Angular project and install Syncfusion<sup style="font-size:70%">&reg;</sup> components:
+
+```bash
+ng new ngmodule-lazy-demo --routing --style=css
+cd ngmodule-lazy-demo
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns
+npm install @syncfusion/ej2-angular-buttons
+```
+### Step 2: Generate Feature Modules
+
+Run the following commands to generate feature modules for `home` and `about`. These modules will include routing configuration.
+
+```bash
+ng generate module home --route home --module app.module
+ng generate module about --route about --module app.module
+```
+## Add the css in the styles.css
+
+```bash
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+```
+# Home Module - Displays Grid with local data
+
+### home.component.ts
+
+Displays a simple Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using local in-memory data.
+
+```ts
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-customers',
-  template: `<ejs-calendar [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-calendar>`
+  selector: 'app-home',
+  template: `
+    <h2>🏠 Home Page with Syncfusion Grid</h2>
+    <ejs-grid [dataSource]="data">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="100" textAlign="Right"></e-column>
+        <e-column field="name" headerText="Name" width="150"></e-column>
+        <e-column field="role" headerText="Role" width="150"></e-column>
+      </e-columns>
+    </ejs-grid>
+  `
 })
-export class CustomersComponent implements OnInit {
-  public month: number = new Date().getMonth();
-  public fullYear: number = new Date().getFullYear();
-  public dateValue: Date = new Date(this.fullYear, this.month, 11);
-  public minDate: Date = new Date(this.fullYear, this.month, 9);
-  public maxDate: Date = new Date(this.fullYear, this.month, 15);
-  constructor() { }
+export class HomeComponent implements OnInit {
+  public data = [
+    { id: 1, name: 'Alice', role: 'Admin' },
+    { id: 2, name: 'Bob', role: 'User' },
+    { id: 3, name: 'Carol', role: 'Moderator' }
+  ];
 
   ngOnInit() {}
 }
+
 ```
+# Home Module - Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid
 
-In the `orders.component.ts` file, implement the Syncfusion Grid component:
+### home.module.ts
 
-```typescript
+Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
+
+```ts
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home.component';
+import { RouterModule, Routes } from '@angular/router';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent }
+];
+
+@NgModule({
+  declarations: [HomeComponent],
+  imports: [
+    CommonModule,
+    GridModule,
+    RouterModule.forChild(routes)
+  ]
+})
+export class HomeModule {}
+
+```
+# About Module - Displays Dropdown List
+
+### about.component.ts
+
+Displays a Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown List with a simple string array.
+
+```ts
 import { Component, OnInit } from '@angular/core';
-import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 @Component({
-  selector: 'app-orders',
-  template: ` <ejs-grid [dataSource]='data'>
-    <e-columns>
-      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-      <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-      <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-      <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-    </e-columns>
-  </ejs-grid>`
+  selector: 'app-about',
+  template: `
+    <h2>ℹ️ About Page with Syncfusion Dropdown</h2>
+    <ejs-dropdownlist [dataSource]='languages' placeholder='Select a language'></ejs-dropdownlist>
+    <br/><br/>
+  `
 })
-export class OrdersComponent implements OnInit {
-  public data: DataManager;
-  constructor() { }
+export class AboutComponent implements OnInit {
+  public languages: string[] = ['JavaScript', 'TypeScript', 'Python', 'C#'];
 
-  ngOnInit() {
-    this.data = new DataManager({
-      url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
-      adaptor: new ODataV4Adaptor()
-    });
-  }
+  ngOnInit() {}
 }
+
 ```
+# About Module - Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown
 
-Configure `app-routing.module.ts` for lazy loading by dynamically importing the required modules:
+### about.module.ts
 
-```typescript
+Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown.
+
+```ts
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AboutComponent } from './about.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+
+const routes: Routes = [
+  { path: '', component: AboutComponent }
+];
+
+@NgModule({
+  declarations: [AboutComponent],
+  imports: [
+    CommonModule,
+    DropDownListModule,
+    RouterModule.forChild(routes)
+  ]
+})
+export class AboutModule {}
+
+
+```
+# App Routing - Connects lazy-loaded routes
+
+Configure `app-routing.module.ts` for lazy loading by dynamically importing the required modules
+
+### app-routing.module.ts
+
+Defines route-level code-splitting using loadChildren for Home and About modules.
+
+```ts
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'customers',
-    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'orders',
-    loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule)
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+
+```
+In the above code block, we are using loadChildren property in the routing configuration to lazily load the `HomeModule` and `AboutModule` when the user navigates to the corresponding routes. This way, the application only loads the necessary modules on demand, improving the initial loading time and performance of the application.
+
+### app.module.ts
+
+The app.module.ts file in an Angular application holds the following key elements:
+
+- Angular built-in modules (like BrowserModule, FormsModule, HttpClientModule, etc.).
+  
+- Third-party libraries or feature-specific modules.
+  
+- Custom or feature modules created in the app.
+
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    GridModule, PagerModule,ButtonModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+### app.component.ts
+
+The app.component.ts file in an Angular application is the root component of the app, typically responsible for controlling the main view or layout of the application. 
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <h1>Angular Standalone Lazy Loading</h1>
+  <div class="e-section-control" style="text-align: center; margin: 20px 0;">
+  <button ejs-button class="e-primary" routerLink="/home">Home</button>
+  <button ejs-button class="e-success" routerLink="/about" style="margin-left: 15px;">About</button>
+</div>
+    <router-outlet></router-outlet>
+  `,
+})
+export class AppComponent { }
 ```
 
-In the above code block, we are using loadChildren property in the routing configuration to lazily load the `CustomersModule` and `OrdersModule` when the user navigates to the corresponding routes. This way, the application only loads the necessary modules on demand, improving the initial loading time and performance of the application.
-
-## Lazy loading using standalone application
+## Lazy loading using standalone<sup style="font-size:70%">&reg;</sup> application
 
 This update enhances the previous documentation, focusing on Angular 17's latest features and improvements for building a standalone application with lazy loading.
 
@@ -110,79 +282,210 @@ Angular 17 introduces the standalone component—a component not part of any ngM
 
 In the past, a lazy route pointed to an NgModule with child routes. As there are no NgModules anymore, loadChildren can now directly point to a lazy routing configuration:
 
-## The standalone flag and component imports
+# Angular Lazy Loading using Standalone Components  
 
-Components, directives, and pipes can now be marked as standalone: true. Angular classes marked as standalone do not need to be declared in an NgModule (the Angular compiler will report an error if you try).
+This guide demonstrates lazy loading using Angular’s modern standalone components without NgModules. This approach improves maintainability and embraces Angular 17+ best practices. Each route lazily loads a feature using Syncfusion® UI components and local data.
 
-In Standalone application ensure `standalone: true` is added to both @Component decorators in customers.component.ts and orders.component.ts.
+## 🧱 Folder Structure Overview
 
-In the `customers.component.ts` file, the Syncfusion Grid component is added as follows,
+```bash
+src/
+├── app/
+│   ├── home/                  # Home standalone component with Syncfusion Grid
+│   │   └── home.routes.ts     # Lazy routing definition for Home
+│   ├── about/                 # About standalone component with Dropdown
+│   │   └── about.routes.ts    # Lazy routing definition for About
+│   ├── app.routes.ts          # Root route configuration with lazy loading
+│   └── app.component.ts       # Root component with router navigation
+```
+## Project Setup
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-@Component({
-  selector: 'app-customers',
-  standalone:true,
-  imports: [
-    CalendarModule,
-    CommonModule,
-    RouterModule
-  ],
-  template: `<ejs-calendar [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-calendar> 
-  `
-})
-export class CustomersComponent implements OnInit {
-  public month: number = new Date().getMonth();
-  public fullYear: number = new Date().getFullYear();
-  public dateValue: Date = new Date(this.fullYear, this.month, 11);
-  public minDate: Date = new Date(this.fullYear, this.month, 9);
-  public maxDate: Date = new Date(this.fullYear, this.month, 15);
-  constructor() { }
-    ngOnInit() {
-  }
-}
+1. Create App & Install Syncfusion
+Run the following commands to create a new Angular standalone project and install Syncfusion<sup style="font-size:70%">&reg;</sup> components:
+
+```bash
+ng new standalone-lazy-demo --routing --standalone --style=css
+cd standalone-lazy-demo
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns
+npm install @syncfusion/ej2-angular-buttons
 ```
 
-In the `orders.component.ts` file, the Syncfusion Grid component is added as follows,
+### Add the style in styles.css file
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
-import { analyze } from 'eslint-scope';
+```bash
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+```
+### Step 2: Generate the `home` Component
+
+Run the following command to generate the `home` component as a standalone component, which will not generate module files:
+
+```bash
+ng generate component home --standalone --skip-tests
+```
+### Generate the `about` Component
+
+Run the following command to generate the `about` component as a standalone component, which will not generate module files:
+
+```bash
+ng generate component about --standalone --skip-tests
+```
+## Home Component - Displays Grid
+
+### home.component.ts  
+
+Standalone component that displays Syncfusion Grid with local static data.
+
+```ts
+import { Component } from '@angular/core';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-@Component({
-  selector: 'app-orders',
-  standalone: true,
-  imports: [
-    GridModule,
-    CommonModule,
-    RouterModule
-  ],
-  template: ` <ejs-grid [dataSource]='data'>
-  <e-columns>
-      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-      <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-      <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-      <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-  </e-columns>
-  </ejs-grid>`,
-})
-export class OrdersComponent implements OnInit {
-  public data!: DataManager;
-  constructor() { }
 
-  ngOnInit() {
-    this.data = new DataManager({
-      url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
-      adaptor: new ODataV4Adaptor()
-    });
-  }
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, GridModule],
+  template: `
+    <h2>Home Page</h2>
+    <ejs-grid [dataSource]="orders">
+      <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+        <e-column field="ShipCity" headerText="Ship City" width="150"></e-column>
+        <e-column field="ShipName" headerText="Ship Name" width="150"></e-column>
+      </e-columns>
+    </ejs-grid>
+  `
+})
+export class HomeComponent {
+  public orders = [
+    { OrderID: 10248, CustomerID: 'VINET', ShipCity: 'Reims', ShipName: 'Vins et alcools Chevalier' },
+    { OrderID: 10249, CustomerID: 'TOMSP', ShipCity: 'Münster', ShipName: 'Toms Spezialitäten' },
+    { OrderID: 10250, CustomerID: 'HANAR', ShipCity: 'Rio de Janeiro', ShipName: 'Hanari Carnes' }
+  ];
 }
+```
+# About Component - Displays Dropdown
+
+### about.component.ts  
+
+Standalone component using Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown List with string array as options.
+
+```ts
+import { Component } from '@angular/core';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-about',
+  standalone: true,
+  imports: [CommonModule, DropDownListModule],
+  template: `
+    <h2>About Page</h2>
+    <h5>Having Dropdown Here</h5>
+    <ejs-dropdownlist [dataSource]="items" placeholder="Select an item"></ejs-dropdownlist>
+  `
+})
+export class AboutComponent {
+  public items: string[] = ['Option 1', 'Option 2', 'Option 3'];
+}
+```
+## Manually Creating the Route File for Standalone Components
+
+Unfortunately, by default, Angular CLI doesn't generate a route.ts file for routing when you create a standalone component using ng generate component.
+You can manually create a corresponding `home.routes.ts` and `about.routes.ts` file for routing
+
+# Route Definitions
+
+### home.routes.ts  
+
+Defines the lazy route for the HomeComponent.
+
+```ts
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home.component';
+
+export default [
+  { path: '', component: HomeComponent }
+] as Routes;
+```
+### about.routes.ts
+
+Defines the lazy route for the AboutComponent.
+
+```ts
+import { Routes } from '@angular/router';
+import { AboutComponent } from './about.component';
+
+export default [
+  { path: '', component: AboutComponent }
+] as Routes;
+```
+# App Routing - Lazy Loading via loadChildren
+
+### app.routes.ts  
+
+Main route configuration using dynamic imports for lazy loading each route.
+
+```ts
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.routes')
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.routes')
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  }
+];
+```
+# App Component - Navigation Setup
+
+### app.component.ts  
+
+Displays links to lazy-loaded routes and handles route view display.
+
+```ts
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterModule, ButtonModule],
+  template: `
+    <h1>Angular Standalone Lazy Loading</h1>
+  <div class="e-section-control" style="text-align: center; margin: 20px 0;">
+  <button ejs-button class="e-primary" routerLink="/home">Home</button>
+  <button ejs-button class="e-success" routerLink="/about" style="margin-left: 15px;">About</button>
+</div>
+    <router-outlet></router-outlet>
+  `,
+})
+export class AppComponent { }
+```
+## Run the App
+
+```bash
+ng serve
 ```
 
 ## Routing With Standalone Component
@@ -191,50 +494,6 @@ With NgModules, each lazy module introduced a new injector and hence a new injec
 
 To cover such use cases, the Router now allows for introducing providers for each route. These services can be used by the route in question and their child routes:
 
-In the `customers.routes.ts` file, the Syncfusion Calendar component is added as follows,
-
-```typescript
-import { Routes } from '@angular/router';
-import { Customers } from './customer.component';
-
-export const Customer: Routes = [
-    {
-        path: '',
-        component: Customers
-    }
-];
-```
-
-In the `orders.routes.ts` file, the Syncfusion Grid component is added as follows,
-
-```typescript
-import { Routes } from '@angular/router';
-import { Orders } from './order.component';
-
-export const Order: Routes = [
-    {
-        path: '',
-        component: Orders
-    }
-];
-```
-
-In the `app.routes.ts` file, code splitting to dynamically import the components has been implemented.
-
-```typescript
-import { Routes } from '@angular/router';
-
-export const routes: Routes = [
-    {
-        path: 'order',
-        loadChildren: () => import('./customers/customers.routes').then((m) => m.OrderModule)
-    },
-    {
-        path: 'customer',
-        loadChildren: () => import('./orders/orders.routes').then((m) => m.CustomerModule)
-    }
-];
-```
 
 To ensure proper navigation between components in your Angular application, it is crucial to import the `RouterModule` in each of your component modules.
 
@@ -252,3 +511,18 @@ import { RouterModule } from '@angular/router';
 ```
 
 The `RouterModule` provides essential functionality for routing, allowing seamless navigation between different views.
+
+## Before Angular 17
+
+- NgModules were used to group all components, services, and other things.
+- When using lazy loading with NgModules, every lazy-loaded module had its own "scope" and injector. This scope was used to provide services only needed for that module.
+
+## What Changed in Angular 17
+
+- Angular 17 allows you to use standalone components, which don’t need NgModules.
+- You can still lazily load components, but now you can define services that are only available for the route that loads, instead of loading services for the entire module.
+
+## Benefits of This Approach
+
+- **Simplified Structure**: No need for NgModules, making the code cleaner and easier to manage.
+- **Faster Load**: Only necessary components are loaded, improving initial load time.
