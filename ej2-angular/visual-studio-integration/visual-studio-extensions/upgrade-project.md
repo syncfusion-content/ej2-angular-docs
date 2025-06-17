@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Upgrade project in Angular Visual studio integration 
 
-The Syncfusion Angular migration add-in for Visual Studio allows you to migrate an existing Syncfusion Angular application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 > The Syncfusion Angular Project migration are available from v17.3.0.9.
 

@@ -89,7 +89,7 @@ This will:
 - Create `main.server.ts`
 - Add SSR-related npm scripts
 
-Update your `app.component.ts` to use Syncfusion components:
+Update your `app.component.ts` to use Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
 ```ts
 import { GridModule } from '@syncfusion/ej2-angular-grids'

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading syncfusion in Angular Upgrade component | Syncfusion
+title: Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> in Angular Upgrade component | Syncfusion
 description: Learn here all about Upgrading syncfusion in Syncfusion Angular Upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Upgrading syncfusion 
@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upgrading Syncfusion JavaScript Packages
+# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Packages
 
-Syncfusion regularly releases new volumes every three months, introducing exciting new features and enhancements. Each volume release is followed by a Service Pack release that addresses significant bug fixes found in the initial volume releases.
+Syncfusion<sup style="font-size:70%">&reg;</sup> regularly releases new volumes every three months, introducing exciting new features and enhancements. Each volume release is followed by a Service Pack release that addresses significant bug fixes found in the initial volume releases.
 
-You can upgrade to the latest version from any currently installed Syncfusion version.
+You can upgrade to the latest version from any currently installed Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 Refer to our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)"** for JavaScript – EJ2 to gain insights into “Breaking Changes, Bug Fixes, New Features, and Known Issues” between your current version and the version to which you're upgrading.
 
 ## Upgrading to the Latest Version
 
-To install the most recent version of Syncfusion JavaScript – EJ2, click on the “Latest Version: {Version}” link located at the top of the Syncfusion JavaScript – EJ2 Control Panel.
+To install the most recent version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2, click on the “Latest Version: {Version}” link located at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
 
 ![license download](images/upgrade3.png)
 

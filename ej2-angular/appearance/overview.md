@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Theme in Syncfusion Components
+# Angular Theme in Syncfusion<sup style="font-size:70%">&reg;</sup> Components
 
-Syncfusion Angular UI components allow you to apply styles to your application. The library includes a selection of themes:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components allow you to apply styles to your application. The library includes a selection of themes:
 
 |Theme |Style Sheet Name|
 |--------|--------|
@@ -36,7 +36,7 @@ Syncfusion Angular UI components allow you to apply styles to your application. 
 
 ## Optimized CSS Files
 
-Syncfusion components provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, granting a standard look suitable for all devices. The **bigger size mode** enhances interactions, visibility, and user experience by enlarging UI components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> components provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, granting a standard look suitable for all devices. The **bigger size mode** enhances interactions, visibility, and user experience by enlarging UI components.
 
 The bigger size mode is optimal for projects requiring enlarged display, whereas the normal size suits applications maintaining default appearances.
 
@@ -44,7 +44,7 @@ See below for a Button component comparison in both size modes:
 
 ![bigger-sized-button](./images/bigger-theme-button.png)
 
-Each theme includes both normal and bigger sizes, increasing overall file size. To enhance performance, Syncfusion offers optimized theme files (e.g., `fluent2-lite.css`), which contain only normal size mode styles. These reduce file size, improving load times and application performance, especially when the bigger mode is not needed.
+Each theme includes both normal and bigger sizes, increasing overall file size. To enhance performance, Syncfusion<sup style="font-size:70%">&reg;</sup> offers optimized theme files (e.g., `fluent2-lite.css`), which contain only normal size mode styles. These reduce file size, improving load times and application performance, especially when the bigger mode is not needed.
 
 Refer to the comparison for theme file sizes:
 
@@ -54,7 +54,7 @@ Refer to the comparison for theme file sizes:
 
 ## Installation
 
-Syncfusion Angular UI themes can be included in your application by four different methods:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI themes can be included in your application by four different methods:
 
 ### Install via NPM
 
@@ -70,7 +70,7 @@ To install combined CSS files, run:
 
 Instead of local resources, use a cloud CDN to reference theme style sheets.
 
-Syncfusion Angular Themes are available via CDN. Ensure the URL version matches your Syncfusion Angular Package to avoid compatibility issues.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Themes are available via CDN. Ensure the URL version matches your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Package to avoid compatibility issues.
 
 ```html
 <head>
@@ -117,7 +117,7 @@ For optimized CSS files, use:
 
 Precompiled signifies minified and optimized CSS.
 
-Syncfusion Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ```css
 @import "./node_modules/@syncfusion/ej2/<theme_name>.css";
@@ -181,13 +181,13 @@ For individual component's optimized CSS from individual packages:
 
 ### Compiling Themes from SCSS Source File
 
-The Syncfusion Angular UI theme includes SCSS file compilation. Refer to [Compiling SCSS file](../common/how-to/sass/) for more information.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes SCSS file compilation. Refer to [Compiling SCSS file](../common/how-to/sass) for more information.
 
 ## Common Variables
 
-Below is a list of common variables used in Syncfusion Angular library themes for all UI components. These can be customized to change respective theme properties.
+Below is a list of common variables used in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular library themes for all UI components. These can be customized to change respective theme properties.
 
-### Syncfusion Tailwind 3.4 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Tailwind 3.4 theme
 
 <table>
     <style>
@@ -396,7 +396,7 @@ Below is a list of common variables used in Syncfusion Angular library themes fo
     </tbody>
 </table>
 
-### Syncfusion Bootstrap 5.3 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap 5.3 theme
 
 <table>
     <style>
@@ -641,7 +641,7 @@ Below is a list of common variables used in Syncfusion Angular library themes fo
     </tbody>
 </table>
 
-### Syncfusion Fluent 2 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Fluent 2 theme
 
 <table>
     <style>
@@ -922,7 +922,7 @@ Below is a list of common variables used in Syncfusion Angular library themes fo
     </tbody>
 </table>
 
-### Syncfusion Material 3 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Material 3 theme
 
 <table>
     <style>
@@ -3239,6 +3239,6 @@ Below is a list of common variables used in Syncfusion Angular library themes fo
 
 ## Suggested Links
 
-* [Syncfusion Icons and Customization](../appearance/icons)
-* [Theme Studio for Syncfusion Components](../appearance/theme-studio)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Icons and Customization](../appearance/icons)
+* [Theme Studio for Syncfusion<sup style="font-size:70%">&reg;</sup> Components](../appearance/theme-studio)
 * [Angular with SCSS Compilation](../common/how-to/sass)

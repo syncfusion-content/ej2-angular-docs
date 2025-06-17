@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular UI Components (Essential JS 2)
+# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential JS 2)
 
-Syncfusion Angular UI (Essential JS 2) offers a comprehensive suite of modern, TypeScript-based true Angular components. These components support Ahead Of Time (AOT) compilation and Tree-Shaking, ensuring optimal performance. Each component is designed to be lightweight, responsive, modular, and touch-friendly to cater to diverse user needs.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI (Essential JS 2) offers a comprehensive suite of modern, TypeScript-based true Angular components. These components support Ahead Of Time (AOT) compilation and Tree-Shaking, ensuring optimal performance. Each component is designed to be lightweight, responsive, modular, and touch-friendly to cater to diverse user needs.
 
 
 ## Components list
 
-The Syncfusion Angular UI components are listed below.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are listed below.
 
 <style>
 #table
@@ -201,18 +201,18 @@ letter-spacing: 0.7px;
 
 - If there's something you require that isn't covered, request it through our [feedback portal](https://www.syncfusion.com/feedback/angular).
 
-> Note: Syncfusion does not collect any data from customer applications utilizing our components.
+> Note: Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any data from customer applications utilizing our components.
 
 ## See Also
 
 - [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
-- [Getting Started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
 
-- [Getting Started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
 
-- [Getting Started with Syncfusion Angular on ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular on ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 
-- [Getting Started with Syncfusion Angular on ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular on ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 
-- [Getting Started with Syncfusion Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)

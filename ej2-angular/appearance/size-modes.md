@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size Mode for Syncfusion Angular Components
+# Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Modern web applications are designed to accommodate various devices, including desktops and mobile, often necessitating distinct layouts or interfaces for optimal viewing on smaller screens. Syncfusion Angular components support two size modes: touch (bigger) and normal. The touch mode enhances mobile device responsiveness by incorporating the `e-bigger` class for improved interaction and visibility.
+Modern web applications are designed to accommodate various devices, including desktops and mobile, often necessitating distinct layouts or interfaces for optimal viewing on smaller screens. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support two size modes: touch (bigger) and normal. The touch mode enhances mobile device responsiveness by incorporating the `e-bigger` class for improved interaction and visibility.
 
 ## Size Mode for Application
 
@@ -72,10 +72,10 @@ You can switch a component's size mode between touch and normal at runtime by to
 
 ## See Also
 
-* [Sidebar Responsiveness](https://ej2.syncfusion.com/angular/documentation/sidebar/auto-close/)
-* [DataGrid Responsiveness](https://ej2.syncfusion.com/angular/documentation/grid/columns/responsive-columns/)
-* [TreeGrid Responsiveness](https://ej2.syncfusion.com/angular/documentation/treegrid/scrolling/#responsive-with-parent-container)
-* [Dashboard Layout Responsiveness](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/responsive-adaptive/)
-* [Kanban Responsiveness](https://ej2.syncfusion.com/angular/documentation/kanban/responsive-mode/)
-* [Toolbar Responsiveness](https://ej2.syncfusion.com/angular/documentation/toolbar/responsive-mode/)
-* [Tab Responsiveness](https://ej2.syncfusion.com/angular/documentation/tab/adaptive/)
+* [Sidebar Responsiveness](https://ej2.syncfusion.com/angular/documentation/sidebar/auto-close)
+* [DataGrid Responsiveness](https://ej2.syncfusion.com/angular/documentation/grid/columns/responsive-columns)
+* [TreeGrid Responsiveness](https://ej2.syncfusion.com/angular/documentation/treegrid/scrolling#responsive-with-parent-container)
+* [Dashboard Layout Responsiveness](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/responsive-adaptive)
+* [Kanban Responsiveness](https://ej2.syncfusion.com/angular/documentation/kanban/responsive-mode)
+* [Toolbar Responsiveness](https://ej2.syncfusion.com/angular/documentation/toolbar/responsive-mode)
+* [Tab Responsiveness](https://ej2.syncfusion.com/angular/documentation/tab/adaptive)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Installation in Angular 
 
-This guide provides detailed instructions on installing Syncfusion Angular UI Components (Essential JS 2) packages, which extend Angular applications with a wide range of UI controls. These components are available via npm, making installation straightforward and consistent with standard Angular practices.
+This guide provides detailed instructions on installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential JS 2) packages, which extend Angular applications with a wide range of UI controls. These components are available via npm, making installation straightforward and consistent with standard Angular practices.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ To ensure a smooth installation process, make sure you have the following prereq
 
 ## Installing Package
 
-Syncfusion publishes its Angular UI components on [npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal). You can install any specific component package using npm. For example, to add the Syncfusion Grid component to your Angular project, use the following command:
+Syncfusion<sup style="font-size:70%">&reg;</sup> publishes its Angular UI components on [npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal). You can install any specific component package using npm. For example, to add the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component to your Angular project, use the following command:
 
 ```sh
 npm install @syncfusion/ej2-angular-grids --save
@@ -32,9 +32,9 @@ This command will add the Grid package to your project and update the `package.j
 
 ## Install by using `package.json`
 
-To streamline the integration of Syncfusion components via your `package.json` file, follow these steps:
+To streamline the integration of Syncfusion<sup style="font-size:70%">&reg;</sup> components via your `package.json` file, follow these steps:
 
-1. Open your `package.json` file located at the root of your Angular project. Add the Syncfusion Angular UI component library to the `dependencies` section, like so:
+1. Open your `package.json` file located at the root of your Angular project. Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component library to the `dependencies` section, like so:
 
     ```json
     {
@@ -55,6 +55,6 @@ This approach takes advantage of the package management capabilities of npm, ens
 
 > For a deeper understanding of the `package.json` file and its configuration options, see the [official npm documentation](https://docs.npmjs.com/files/package.json).
 
-These steps will integrate the Syncfusion Angular components into your project, enabling you to start utilizing its features. Different module systems such as ES6 and UMD are supported by Syncfusion, ensuring compatibility across various project setups.
+These steps will integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your project, enabling you to start utilizing its features. Different module systems such as ES6 and UMD are supported by Syncfusion, ensuring compatibility across various project setups.
 
-By following the above instructions, you will successfully add Syncfusion Angular components to your project, equipping it with robust and high-performance UI elements.
+By following the above instructions, you will successfully add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to your project, equipping it with robust and high-performance UI elements.

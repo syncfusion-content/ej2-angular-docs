@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Syncfusion Angular Components
+# Templates in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Syncfusion Angular components provide a pre-defined layout or structure that defines how the component should be rendered on the user interface. When you need to customize the component's appearance or functionality to meet specific application needs, Syncfusion Angular components offer template support to achieve this.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide a pre-defined layout or structure that defines how the component should be rendered on the user interface. When you need to customize the component's appearance or functionality to meet specific application needs, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components offer template support to achieve this.
 
 Template support is implemented using Angular's `ng-template` directive, which creates reusable templates that can be invoked throughout the application. This approach allows you to define a template with a specified structure and logic, then reuse it multiple times without writing duplicate code.
 
