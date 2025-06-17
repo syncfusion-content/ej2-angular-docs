@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
 
@@ -18,7 +18,7 @@ Syncfusion publishes the Visual Studio extension in the below Visual Studio mark
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as for creating, adding snippet, converting, and upgrading Syncfusion ASP.NET Core applications.
+The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as for creating, adding snippet, converting, and upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core applications.
 
 * [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -26,7 +26,7 @@ The following software prerequisites must be installed to install the Syncfusion
 
 ## Install through the Visual Studio Manage Extensions
 
-The steps below assist you to install the Syncfusion ASP.NET Core extensions from **Visual Studio Manage Extensions**.
+The steps below assist you to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extensions from **Visual Studio Manage Extensions**.
 
 1. Open the Visual Studio.
 
@@ -34,7 +34,7 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
     N>  In Visual Studio 2017, go to Tools -> Extensions and Updates.
 
-3. On the left, click the **Online** tab and type **"Syncfusion EJ2"** in the **search box**.
+3. On the left, click the **Online** tab and type **"Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2"** in the **search box**.
 
     ![Online-Manage-Extension-window](images/OnlineExtension.png)
 
@@ -48,17 +48,17 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
 7. After the installation is completed, open Visual Studio.
 
-8. Now, under the menu **Extensions**, you can use the Syncfusion extensions from the Visual Studio.
+8. Now, under the menu **Extensions**, you can use the Syncfusion<sup style="font-size:70%">&reg;</sup> extensions from the Visual Studio.
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-    N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu
+    N> In Visual Studio 2017, you can see the Syncfusion<sup style="font-size:70%">&reg;</sup> menu directly in the Visual Studio menu
 
 ## Install from the Visual Studio Marketplace
 
-The steps below illustrate how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.  
+The steps below illustrate how to download and install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension from the Visual Studio Marketplace.  
 
-1. Download the Syncfusion ASP.NET Core Extensions from the below Visual Studio Marketplace.
+1. Download the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extensions from the below Visual Studio Marketplace.
 
     [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
 
@@ -72,8 +72,8 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET Co
 
 4. Click the **Modify** button.
 
-5. After the installation is complete, open Visual Studio. You can now use Syncfusion extensions from the Visual Studio under the **Extensions** menu.
+5. After the installation is complete, open Visual Studio. You can now use Syncfusion<sup style="font-size:70%">&reg;</sup> extensions from the Visual Studio under the **Extensions** menu.
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-     N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu
+     N> In Visual Studio 2017, you can see the Syncfusion<sup style="font-size:70%">&reg;</sup> menu directly in the Visual Studio menu

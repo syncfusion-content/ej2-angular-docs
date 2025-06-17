@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular CLI as Front End in ASP.NET MVC
 
-This guide details the process for creating an ASP.NET MVC framework with an Angular CLI project serving as the front end, and how to integrate Syncfusion Angular UI components.
+This guide details the process for creating an ASP.NET MVC framework with an Angular CLI project serving as the front end, and how to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
 
 ## Prerequisites
 
-Ensure the following requirements are met before integrating Syncfusion Angular Components in an ASP.NET MVC with Angular project:
+Ensure the following requirements are met before integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an ASP.NET MVC with Angular project:
 
-* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
 ## Create an ASP.NET MVC Web Application
@@ -53,7 +53,7 @@ Follow these steps to create a new ASP.NET MVC Web application using the Microso
 
    ![Navigate to Angular App root](images/angular-root.png)
 
-4. Install and add the Syncfusion Angular components by following the instructions in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
+4. Install and add the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components by following the instructions in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
 
 5. Update the `outputPath` value in the `angular.json` file for the production build to `../Scripts/ClientApp`.
 

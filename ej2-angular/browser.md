@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Browser Compatibility in Angular
 
-Syncfusion Angular UI components are designed to work seamlessly with modern web browsers. This document outlines the supported browser versions and provides key information on browser compatibility.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work seamlessly with modern web browsers. This document outlines the supported browser versions and provides key information on browser compatibility.
 
 ## Supported Browser Versions
 
@@ -26,17 +26,17 @@ The following table lists the minimum supported versions for various browsers:
 
 > Note: "Latest" refers to the most recent stable version of the browser.
 
-For the most up-to-date information on supported browsers, please refer to the official Angular documentation on [Supported Browsers](https://angular.io/guide/browser-support#supported-browsers).
+For the most up-to-date information on supported browsers, please refer to the official Angular documentation on [Supported Browsers](https://v17.angular.io/guide/browser-support#supported-browsers).
 
 ## Modern Web Development and Browser Support
 
-Syncfusion Angular UI components leverage modern web standards for optimal performance and reduced dependency on polyfills or compatibility layers.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components leverage modern web standards for optimal performance and reduced dependency on polyfills or compatibility layers.
 
 Key points:
 
 1. **Evergreen Browsers**: Components perform best with automatically updating browsers (Chrome, Firefox, Edge, Safari).
 
-2. **Angular Compatibility**: Syncfusion components align with Angular's browser support policy.
+2. **Angular Compatibility**: Syncfusion<sup style="font-size:70%">&reg;</sup> components align with Angular's browser support policy.
 
 3. **Mobile Support**: Full support for the latest versions of mobile browsers on iOS and Android platforms.
 
@@ -54,8 +54,8 @@ For detailed information on polyfills and browser support in Angular, refer to t
 
 ## Additional Resources
 
-- [Angular Browser Support](https://angular.io/guide/browser-support)
-- [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation/)
-- [Can I Use](https://caniuse.com/) - Check browser support for web technologies
+- [Angular Browser Support](https://v17.angular.io/guide/browser-support)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
+- [Can I Use](https://caniuse.com) - Check browser support for web technologies
 
-Syncfusion Angular UI components enable the creation of robust, cross-browser compatible applications that deliver excellent user experiences across a wide range of modern browsers.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components enable the creation of robust, cross-browser compatible applications that deliver excellent user experiences across a wide range of modern browsers.

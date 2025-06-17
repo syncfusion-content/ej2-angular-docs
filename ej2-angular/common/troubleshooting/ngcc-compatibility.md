@@ -8,23 +8,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Compatibility Issues with Syncfusion Angular Packages and Latest Angular CLI
+# Compatibility Issues with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages and Latest Angular CLI
 
-This article addresses potential issues you may encounter when using Syncfusion Angular UI components with the latest Angular CLI, offering solutions and insights to improve your development experience.
+This article addresses potential issues you may encounter when using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components with the latest Angular CLI, offering solutions and insights to improve your development experience.
 
-## Are Syncfusion Angular packages compatible with the latest Angular CLI?
+## Are Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages compatible with the latest Angular CLI?
 
-Yes, the Syncfusion Angular IVY packages are fully compatible with the latest Angular CLI. Leveraging the latest Angular features can enhance your application performance and development workflow.
+Yes, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular IVY packages are fully compatible with the latest Angular CLI. Leveraging the latest Angular features can enhance your application performance and development workflow.
 
-## If Syncfusion Angular packages are compatible with Latest Angular CLI, what version should we prepare?
+## If Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with Latest Angular CLI, what version should we prepare?
 
-For optimal compatibility and access to the latest features, it is recommended to use version 21.1.39 or the latest available version of the Syncfusion Angular packages. You can verify the [version compatibility](../../upgrade/version-compatibility/) for detailed insights.
+For optimal compatibility and access to the latest features, it is recommended to use version 21.1.39 or the latest available version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages. You can verify the [version compatibility](../../upgrade/version-compatibility/) for detailed insights.
 
-## How can I check the compatibility of Syncfusion Angular packages with a specific version of Angular CLI?
+## How can I check the compatibility of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages with a specific version of Angular CLI?
 
-To ensure that your Syncfusion Angular packages are compatible with your specific version of the Angular CLI, refer to the comprehensive compatibility [documentation](../../upgrade/version-compatibility/).
+To ensure that your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with your specific version of the Angular CLI, refer to the comprehensive compatibility [documentation](../../upgrade/version-compatibility/).
 
-## What compatibility issues were encountered while using Syncfusion Angular NGCC packages with the latest version of Angular CLI? 
+## What compatibility issues were encountered while using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NGCC packages with the latest version of Angular CLI? 
 
 Some new features introduced in Angular CLI 16, such as the modified Ivy rendering engine, may cause compatibility issues with NGCC component packages. This might trigger errors indicating incompatibility with libraries such as `@syncfusion/ej2-angular-grids`.
 
@@ -38,7 +38,7 @@ The error message encountered during the compile time and suggests that the libr
 
 E> This likely means that the library (@syncfusion/ej2-angular-grids) which declares GridModule has not been processed correctly by ngcc, or is not compatible with Angular Ivy.
 
-## How can I resolve the compatibility issue encountered when using Syncfusion Angular NGCC packages with the latest version of Angular CLI?
+## How can I resolve the compatibility issue encountered when using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NGCC packages with the latest version of Angular CLI?
 
 One way to resolve the issue is to use IVY compiled [packages](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids) instead of NGCC compiled packages.
 

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion Angular components
+# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
 
-Syncfusion Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
 
 Below is an example demonstrating how to set the `enablePersistence` property for the Grid component:
 
@@ -28,7 +28,7 @@ Below is an example demonstrating how to set the `enablePersistence` property fo
 
 ## State Persistence supported components and properties
 
-The table below lists the Syncfusion Angular components that support state persistence, along with the properties stored in `localStorage`. Utilizing these properties ensures that significant component configurations are preserved across sessions:
+The table below lists the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components that support state persistence, along with the properties stored in `localStorage`. Utilizing these properties ensures that significant component configurations are preserved across sessions:
 
 <!-- markdownlint-disable MD033 -->
 
@@ -256,11 +256,11 @@ DateTimePicker, Slider, Dropdown Tree</td>
 
 For a deeper understanding of state persistence and its application in various components, please refer to the following documentation pages for individual components:
 
-* [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence/)
-* [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence/)
-* [Pivot Table](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence/)
-* [Gantt](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence/)
-* [Kanban](https://ej2.syncfusion.com/angular/documentation/kanban/persistence/)
-* [Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence/)
-* [QueryBuilder](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence/)
-* [Tabs](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component/)
+* [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence)
+* [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence)
+* [Pivot Table](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence)
+* [Gantt](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence)
+* [Kanban](https://ej2.syncfusion.com/angular/documentation/kanban/persistence)
+* [Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence)
+* [QueryBuilder](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence)
+* [Tabs](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component)

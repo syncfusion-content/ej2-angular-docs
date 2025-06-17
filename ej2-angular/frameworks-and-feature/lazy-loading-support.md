@@ -344,7 +344,7 @@ ng generate component about --standalone --skip-tests
 
 ### home.component.ts  
 
-Standalone component that displays Syncfusion Grid with local static data.
+Standalone component that displays Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with local static data.
 
 ```ts
 import { Component } from '@angular/core';
