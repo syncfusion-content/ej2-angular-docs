@@ -46,6 +46,6 @@ Please note that this license key is different from the installer unlock key tha
 
 ## See Also
 
-* [How to Generate Syncfusion EJ2-Angular License Key?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation/)
-* [How to Register Syncfusion License Key in EJ2-Angular Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration/)
-* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/)
+* [How to Generate Syncfusion EJ2-Angular License Key?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation)
+* [How to Register Syncfusion License Key in EJ2-Angular Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration)
+* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)
