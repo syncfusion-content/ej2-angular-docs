@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Standalone Component
 
-Standalone components in Angular offer a streamlined method to build applications by reducing reliance on NgModules. This approach allows for simpler application authoring without disrupting existing module-based applications, which can incrementally integrate standalone components without breaking changes.
+Standalone components in Angular provide a streamlined approach to building applications without relying heavily on NgModules. This simplifies the development process while maintaining compatibility with existing module-based architectures. You can gradually adopt standalone components in legacy projects without introducing breaking changes.
 
 ## Create a New Application
 
-After installing the latest Angular CLI, initiate a new Angular project by executing the below command:
+Ensure that the latest Angular CLI is installed, then create Angular project by executing the below command:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-This command will initiate the setup process, prompting you to select configurations such as the stylesheet format for your project.
+This command initiates the project setup and prompts you to select your preferred configuration options, such as stylesheet format.
 
 ![Initial Setup](./images/Initial_setup.PNG)
 
@@ -38,7 +38,7 @@ Angular enhances developer productivity with server-side rendering (SSR) and sta
 ng new syncfusion-angular-app --ssr
 ```
 
-Once the project is set up, navigate to your project directory:
+Once the setup is complete, navigate into your project directory:
 
 ```bash
 cd syncfusion-angular-app
@@ -136,4 +136,4 @@ Execute the `ng serve` command in your terminal to launch the application. Once 
 
 ![Output](./images/ang-cli.PNG)
 
->Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. Visit our [Licensing Overview](../licensing/overview/) page for detailed instructions on obtaining and registering your license key.
+>Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. Visit our [Licensing Overview](../licensing/overview) page for detailed instructions on obtaining and registering your license key.

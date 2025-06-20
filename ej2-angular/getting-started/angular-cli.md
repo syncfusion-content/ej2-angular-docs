@@ -14,6 +14,8 @@ This guide provides a step-by-step walkthrough for setting up an Angular project
 
 The Angular CLI is a powerful command-line tool that simplifies the creation, management, and building of Angular applications, enabling a quick start to development.
 
+> Note: This guide supports **Angular 12 to Angular 17**. If you’re using Angular 9 or later, Ivy is the default rendering engine. Please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility) for detailed compatibility.
+
 ## Prerequisites
 
 Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](../system-requirement).
@@ -107,7 +109,7 @@ For more details on version compatibility, refer to the [Version Compatibility](
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio/). See the [themes topic](https://ej2.syncfusion.com/angular/documentation/appearance/theme/) for details on built-in themes and ways to reference them.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
 The `Material` theme is integrated within the `styles.css` upon running the `ng add` command by default.
 
@@ -128,7 +130,7 @@ To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> compon
 
 > Ensure that the import order aligns with the component's dependency sequence.
 
-For using SCSS styles, refer to [this guide](../common/how-to/sass/).
+For using SCSS styles, refer to [this guide](../common/how-to/sass).
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
@@ -286,7 +288,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
 
-By utilizing the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you can integrate a powerful data grid into your Angular application, supporting advanced features like paging and sorting. For additional details, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../grid/getting-started/) documentation.
+By utilizing the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, you can integrate a powerful data grid into your Angular application, supporting advanced features like paging and sorting. For additional details, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../grid/getting-started) documentation.
 
 ## Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Showcase Samples
 

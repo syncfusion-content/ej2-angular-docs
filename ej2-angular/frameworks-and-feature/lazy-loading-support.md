@@ -16,7 +16,7 @@ Lazy loading is an optimization technique used in Angular applications to improv
 
 Lazy loading is a technique that loads additional payload only when needed, which can improve the overall performance and user experience of your Angular application. By using code splitting, you can lazy load the Syncfusion<sup style="font-size:70%">&reg;</sup> components and routes in Angular. This can reduce the initial loading time of the application.
 
-# 🧱 Folder Structure Overview
+## Folder Structure Overview
 
 ```ruby
 src/
@@ -31,7 +31,7 @@ src/
 
 Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
 
-# Project Setup
+## Project Setup
 
 ### 1. Create App & Install Syncfusion<sup style="font-size:70%">&reg;</sup> components
 
@@ -67,7 +67,7 @@ ng generate module about --route about --module app.module
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
-# Home Module - Displays Grid with local data
+## Home Module - Displays Grid with local data
 
 ### home.component.ts
 
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
 }
 
 ```
-# Home Module - Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid
+## Home Module - Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid
 
 ### home.module.ts
 
@@ -128,7 +128,7 @@ const routes: Routes = [
 export class HomeModule {}
 
 ```
-# About Module - Displays Dropdown List
+## About Module - Displays Dropdown List
 
 ### about.component.ts
 
@@ -152,7 +152,7 @@ export class AboutComponent implements OnInit {
 }
 
 ```
-# About Module - Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown
+## About Module - Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown
 
 ### about.module.ts
 
@@ -181,7 +181,7 @@ export class AboutModule {}
 
 
 ```
-# App Routing - Connects lazy-loaded routes
+## App Routing - Connects lazy-loaded routes
 
 Configure `app-routing.module.ts` for lazy loading by dynamically importing the required modules
 
@@ -282,11 +282,11 @@ Angular 17 introduces the standalone component—a component not part of any ngM
 
 In the past, a lazy route pointed to an NgModule with child routes. As there are no NgModules anymore, loadChildren can now directly point to a lazy routing configuration:
 
-# Angular Lazy Loading using Standalone Components  
+## Angular Lazy Loading using Standalone Components  
 
 This guide demonstrates lazy loading using Angular’s modern standalone components without NgModules. This approach improves maintainability and embraces Angular 17+ best practices. Each route lazily loads a feature using Syncfusion® UI components and local data.
 
-## 🧱 Folder Structure Overview
+## Folder Structure Overview
 
 ```bash
 src/
@@ -375,7 +375,7 @@ export class HomeComponent {
   ];
 }
 ```
-# About Component - Displays Dropdown
+## About Component - Displays Dropdown
 
 ### about.component.ts  
 
@@ -405,7 +405,7 @@ export class AboutComponent {
 Unfortunately, by default, Angular CLI doesn't generate a route.ts file for routing when you create a standalone component using ng generate component.
 You can manually create a corresponding `home.routes.ts` and `about.routes.ts` file for routing
 
-# Route Definitions
+## Route Definitions
 
 ### home.routes.ts  
 
@@ -431,7 +431,7 @@ export default [
   { path: '', component: AboutComponent }
 ] as Routes;
 ```
-# App Routing - Lazy Loading via loadChildren
+## App Routing - Lazy Loading via loadChildren
 
 ### app.routes.ts  
 
@@ -456,7 +456,7 @@ export const routes: Routes = [
   }
 ];
 ```
-# App Component - Navigation Setup
+## App Component - Navigation Setup
 
 ### app.component.ts  
 
@@ -522,7 +522,16 @@ The `RouterModule` provides essential functionality for routing, allowing seamle
 - Angular 17 allows you to use standalone components, which don’t need NgModules.
 - You can still lazily load components, but now you can define services that are only available for the route that loads, instead of loading services for the entire module.
 
-## Benefits of This Approach
+## Troubleshooting
 
-- **Simplified Structure**: No need for NgModules, making the code cleaner and easier to manage.
-- **Faster Load**: Only necessary components are loaded, improving initial load time.
+- **Grid or Dropdown Not Rendering**: Ensure all required CSS files are imported in `styles.css`. Verify that the `dataSource` property in `ejs-grid` or `ejs-dropdownlist` is correctly set (e.g., not null or undefined).
+- **Routing Errors**: Confirm that `RouterModule` is imported in `app.module.ts` (for module-based) or `app.component.ts` (for standalone). Check that route paths in `app-routing.module.ts` or `app.routes.ts` match the `routerLink` values.
+- **Syncfusion Component Errors**: Ensure you have a valid Syncfusion license and that the correct Syncfusion packages are installed.
+
+For additional help, refer to the [Angular Documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) or [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
+
+## Benefits of Lazy Loading
+
+- **Faster Initial Load**: Lazy loading delays loading of non-essential components, reducing the initial bundle size. For example, a 500KB module can be deferred, cutting load time by up to 50% in apps with multiple features.
+- **Simplified Structure (Standalone)**: Standalone components eliminate NgModule boilerplate, reducing project complexity and making maintenance easier.
+- **Resource Efficiency**: Only loads necessary code, saving memory and bandwidth, especially for users on slower networks.
