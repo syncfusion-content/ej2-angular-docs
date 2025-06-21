@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion JavaScript – EJ2 Mac Installer
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Mac Installer
 
 ## Steps to resolve the warning message in Catalina OS or later
 
@@ -45,9 +45,9 @@ The steps below show how to install the Essential Studio JavaScript - EJ2 Mac in
 
    ![License Agree Confirmation](images/Mac_Installer4.png)
 
-   N> The Unlock key is not required to install the Mac installer. The Syncfusion Essential Studio JavaScript - EJ2 Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript - EJ2 Mac installer can be used for development purposes without registering the Unlock key.
 
-5. Now you can open the folder to explore the Syncfusion Essential Studio Mac installer.
+5. Now you can open the folder to explore the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio Mac installer.
 
    ![Destination](Images/Mac_Installer5.png)
 

@@ -12,14 +12,14 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-The Syncfusion Essential Studio for Angular extensions for Visual Studio that allow you to use the Syncfusion component easier by creating Syncfusion Angular application in Visual Studio and option upgrading the Syncfusion version from the application.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular extensions for Visual Studio that allow you to use the Syncfusion<sup style="font-size:70%">&reg;</sup> component easier by creating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application in Visual Studio and option upgrading the Syncfusion<sup style="font-size:70%">&reg;</sup> version from the application.
 
-The Syncfusion Angular provides the following supports in Visual Studio:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular provides the following supports in Visual Studio:
 
-1. [Project template](./visual-studio-extensions/create-project): Creates the Syncfusion Angular application by adding the required Syncfusion Angular components.
+1. [Project template](./visual-studio-extensions/create-project): Creates the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup>  Angular components.
 
-2. [Convert project](./visual-studio-extensions/convert-project): Converts an existing Angular application into a Syncfusion Angular application by adding the required Syncfusion NPM and resource files.
+2. [Convert project](./visual-studio-extensions/convert-project): Converts an existing Angular application into a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup> NPM and resource files.
 
-3. [Migrate project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion Angular application from one Essential Studio version to another version.
+3. [Migrate project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version.
 
-> > In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
+> > In Visual Studio 2017, you can see the Syncfusion<sup style="font-size:70%">&reg;</sup> menu directly in the Visual Studio menu.

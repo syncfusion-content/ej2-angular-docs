@@ -18,7 +18,7 @@ Begin by setting up an Angular application with Essential JS 2 components. Follo
 
 ## Generating custom CSS file
 
-Customize your style by using the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). This tool allows you to generate a custom CSS file tailored to your design preferences. Select your desired theme, modify the elements as needed, and download your custom CSS.
+Customize your style by using the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). This tool allows you to generate a custom CSS file tailored to your design preferences. Select your desired theme, modify the elements as needed, and download your custom CSS.
 
 ## Adding custom CSS in Angular application
 
