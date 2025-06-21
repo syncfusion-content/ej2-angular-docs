@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Universal: Server-side Rendering in Angular Frameworks
+# Server-side Rendering in Angular Frameworks
 
 Angular is a widely-used client-side web development framework, primarily running on the client-side by default. However, many web applications require server-side capabilities for enhanced SEO and performance. Angular Universal bridges this gap by enabling server-side rendering (SSR) for Angular applications, which can significantly improve SEO, load times, and accessibility when integrated with tools like ASP.NET WebForms and ASP.NET MVC.
 
@@ -30,7 +30,7 @@ Server-side rendering (SSR) in Angular Universal enhances application performanc
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support SSR in Angular Universal applications. Follow these steps to integrate SSR with Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
-# Step-by-Step Setup
+## Step-by-Step Setup
 
 ## 1️.Create a New Angular SSR-Enabled App
 
@@ -53,7 +53,7 @@ This will automatically:
 - Add `server.ts`, `main.server.ts`, `app.server.module.ts`
 - Configure SSR targets in `angular.json`
 
-# 2. Add Syncfusion<sup style="font-size:70%">&reg;</sup> (after SSR setup)
+## 2. Add Syncfusion<sup style="font-size:70%">&reg;</sup> (after SSR setup)
 
 Once SSR is integrated, install Syncfusion<sup style="font-size:70%">&reg;</sup> packages (e.g., Grid or Calendar):
 
@@ -75,7 +75,7 @@ Add styles in the `/src/styles.css`
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
 
-# 3.Add Angular Universal (SSR)
+## 3.Add Angular Universal (SSR)
 
 Incorporate SSR into your application with the following command:
 
@@ -193,7 +193,7 @@ export class AppRoutingModule { }
 
 ```
 
-# 4. **Build and Serve the Application**: 
+## 4. **Build and Serve the Application**: 
 
 Use the following command to build and serve your application with SSR capabilities:
 
@@ -239,5 +239,5 @@ angular.json             # SSR targets added here
 ## See also
 
 * [Angular Universal](https://github.com/angular/universal)
-* [Getting Started ASP.NET Core with Angular](../getting-started/aspnet-core/)
-* [Getting Started ASP.NET MVC with Angular](../getting-started/aspnet-mvc/)
+* [Getting Started ASP.NET Core with Angular](../getting-started/aspnet-core)
+* [Getting Started ASP.NET MVC with Angular](../getting-started/aspnet-mvc)
