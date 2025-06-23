@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## How to use angular routing
+# How to use angular routing
 
 Angular routing is a feature of the Angular framework which facilitates the control of navigation within a single-page application (SPA). It provides a mechanism for managing navigation between different components or views within an application.
 
