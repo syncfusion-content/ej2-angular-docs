@@ -20,6 +20,12 @@ The list of dependencies required to use the BlockEditor component in your appli
 |-- @syncfusion/ej2-angular-blockeditor
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-splitbuttons
+    |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-dropdowns
+    |-- @syncfusion/ej2-inputs
 ```
 
 ## Setup Angular environment
@@ -39,17 +45,17 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion BlockEditor package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> BlockEditor package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/20.4.38) package to the application.
 
@@ -59,7 +65,7 @@ npm install @syncfusion/ej2-angular-blockeditor --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/20.4.38-ngcc) package to the application.
 
@@ -77,26 +83,31 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS reference
 
-Add BlockEditor component's styles as given below in `style.css`.
+The following CSS files are available in `../node_modules/@syncfusion` package folder.
+This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-blockeditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
 ```
 
 ## Adding Syncfusion BlockEditor component
 
-Modify the template in `app.component.ts` file to render the BlockEditor component.
+Modify the template in [src/app/app.component.ts] file to render the BlockEditor component. Add the Angular BlockEditor by using `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
 
 ```typescript
 
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor'
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
 
 @Component({
-    imports: [
-        BlockEditorModule
-    ],
+    imports: [ BlockEditorModule ],
     standalone: true,
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->

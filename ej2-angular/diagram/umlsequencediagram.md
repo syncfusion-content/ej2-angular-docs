@@ -82,7 +82,6 @@ The following code example illustrates how to create messages:
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-2" %}
-{% endif %}
 
 ### Activation Boxes
 

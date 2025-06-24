@@ -175,3 +175,21 @@ The [default](https://helpej2.syncfusion.com/angular/documentation/api/rich-text
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs26" %}
+
+### Show recent color
+
+The [showRecentColors](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontColor/#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
+
+This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/show-recent-color/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/show-recent-color/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/show-recent-color" %}

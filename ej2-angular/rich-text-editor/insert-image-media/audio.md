@@ -66,6 +66,40 @@ You can use the `browse` option on the audio dialog, to select the audio from th
 
 If the path field is not specified in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings), the audio will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
+## Maximum file size restriction
+
+You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
+
+```typescript
+
+import { Component } from '@angular/core';
+import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, AudioService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
+@Component( {
+    imports: [
+    RichTextEditorAllModule
+    ],
+    selector: 'app-root',
+    standalone: true,
+    template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertAudioSettings] ='insertAudioSettings'>
+    </ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, AudioService, TableService, PasteCleanupService],
+} )
+
+export class AppComponent {
+    private toolbarSettings: object = {
+        items: [ 'Audio', 'Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'Blockquote', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'CreateTable', 'Image', '|', 'SourceCode', '|', 'Undo', 'Redo' ]
+    };
+    private  insertAudioSettings: Object = {
+        maxFileSize: 30000000
+    };
+}
+
+```
+
 ## Saving audio to the server
 
 [saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
@@ -276,49 +310,6 @@ public void Rename()
         Response.Status = "204 No Content";
         Response.StatusDescription = e.Message;
         Response.End();
-    }
-}
-
-```
-
-
-### Restricting audio by size
-
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
-In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
-
-```typescript
-
-import { Component } from '@angular/core';
-import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, AudioService } from '@syncfusion/ej2-angular-richtexteditor';
-import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
-
-@Component( {
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertAudioSettings] = 'insertAudioSettings' (fileUploading) = 'onAudioUpload($event)' >
-    </ejs-richtexteditor>`,
-    providers: [
-        ToolbarService, QuickToolbarService, LinkService, AudioService, HtmlEditorService,
-    ],
-} )
-
-export class AppComponent {
-    public toolbarSettings: object = {
-        items: [ 'Audio' ]
-    };
-    public insertAudioSettings: Object = {
-        saveUrl: 'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save',
-        path: '../Files/'
-    };
-    public onAudioUpload = ( args: UploadingEventArgs ) => {
-        let sizeInBytes: number = args.fileData.size;
-        let fileSize: number = 500000;
-        if ( fileSize < sizeInBytes ) {
-            args.cancel = true;
-        }
     }
 }
 

@@ -3,3 +3,7 @@
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
