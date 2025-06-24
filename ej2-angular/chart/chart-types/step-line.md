@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Step Line Chart in Angular Chart component | Syncfusion
-description: Learn here all about Step Line Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Step Line Chart in Angular Charts | Syncfusion
+description: Learn here all about Step Line Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Step Line Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Step line chart in Angular Chart component
+# Step Line Chart in Angular Charts
 
-## Step line
+## Step Line
 
 To render a [step line](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stepline-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

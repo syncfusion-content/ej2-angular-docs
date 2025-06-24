@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Searching in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid component includes a powerful built-in searching feature that facilitates searching for specific data within the tree grid. This feature enables efficient filtering of tree grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component includes a powerful built-in searching feature that facilitates searching for specific data within the tree grid. This feature enables efficient filtering of tree grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
 To enable the searching feature in the tree grid, set the [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowsearching) property to **true**.
 

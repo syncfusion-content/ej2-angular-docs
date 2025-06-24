@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ListViewModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    ListViewModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
           <div id="sample">
     <ejs-listview id='List' [dataSource]='data' headerTitle='Search engines' showHeader='true'>
     <ng-template #template let-data="">
@@ -25,17 +18,17 @@ standalone: true,
     </ejs-listview>
   </div>
         `,
-  })
+})
 
 export class AppComponent {
 
-  public data=[
-        {name: 'Google', url: 'https://www.google.com'},
-        {name: 'Bing', url: 'https://www.bing.com' },
-        {name: 'Yahoo', url: 'https://www.yahoo.com'},
-        {name: 'Ask.com', url: 'https://www.ask.com'},
-        {name: 'AOL.com', url: 'https://www.aol.com'},
-    ];
+  public data = [
+    { name: 'Google', url: 'https://www.google.com' },
+    { name: 'Bing', url: 'https://www.bing.com' },
+    { name: 'Yahoo', url: 'https://www.yahoo.com' },
+    { name: 'Ask.com', url: 'https://www.ask.com' },
+    { name: 'AOL.com', url: 'https://www.aol.com' },
+  ];
 
 }
 

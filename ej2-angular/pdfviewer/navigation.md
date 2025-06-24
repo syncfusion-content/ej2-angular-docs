@@ -374,7 +374,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
 ## Keyboard navigation with Tab and Shift+Tab keys
 
-The Syncfusion PDF Viewer component supports keyboard navigation for the form fields in a PDF document using the `Tab` and `Shift+Tab` keys. This allows users to easily navigate through the form fields in a PDF document, making it easier for them to fill out forms.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer component supports keyboard navigation for the form fields in a PDF document using the `Tab` and `Shift+Tab` keys. This allows users to easily navigate through the form fields in a PDF document, making it easier for them to fill out forms.
 
 Here's how it works:
 

@@ -173,8 +173,8 @@ Use the below CSS to prevent the animation transition for the Sidebar component.
 ```css
 
 .e-sidebar-context .e-content-animation {
-    transition: none !important;
-    transform: none !important;
+    transition: none;
+    transform: none;
 }
 
 ```

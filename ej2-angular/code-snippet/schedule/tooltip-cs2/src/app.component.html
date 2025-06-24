@@ -1,0 +1,16 @@
+<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" cssClass='e-schedule-event-tooltip' [(currentView)]="currentView" [eventSettings]="eventSettings">
+	<ng-template #eventSettingsTooltipTemplate  let-data>
+    <div class="tooltip-wrap">
+      <div class="image {{data.EventType}}"></div>
+      <div class="content-area"><div class="name">{{data.Subject}}</div>    
+    
+    <div *ngIf="data.City != null && data.City !=undefined"> 
+     	<div class="city">{{data.City}}</div>
+    </div> 
+    <div class="time">From&nbsp;:&nbsp;{{data.StartTime.toLocaleString()}} </div>
+    <div class="time">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;{{data.EndTime.toLocaleString()}} </div>
+    </div></div>
+	  
+	</ng-template>
+	   
+</ejs-schedule>

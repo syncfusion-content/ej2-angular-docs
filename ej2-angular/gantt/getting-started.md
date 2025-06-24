@@ -30,9 +30,9 @@ ng new my-app
 cd my-app
 ```
 
-## Adding Syncfusion Gantt package
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt package
 
-All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Gantt component, use the following command.
 
@@ -56,6 +56,7 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-grids/styles/material.css';

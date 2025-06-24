@@ -72,6 +72,16 @@ The following example demonstrates how to customize the filter choice count in t
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
+## Add current selection to filter Checkbox/Excel
+
+By default, the CheckBox/Excel filter in Syncfusion Angular Grid filters only the selected items. When multiple filtering actions are performed on the same column, the previously filtered values are cleared.
+
+With the `Add current selection to filter` checkbox, it is possible to retain previous filter values while performing new searches. This checkbox appears when searching data in the CheckBox/Excel filter's search bar, allowing users to include the new selections without removing the previously applied filters.
+
+The following image describes the above mentioned behavior.
+
+![Checkbox filter](../images/checkboxfilter.png)
+
 ## Show customized text in checkbox list data
 
 The Syncfusion Angular Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
@@ -249,6 +259,24 @@ The following example demonstrates how to remove the context menu option in the 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs8" %}
+
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion Angular Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) as the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype), as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/filtering-custom-datasouce-cs1" %}
 
 ## Hide sorting option in filter dialog
 

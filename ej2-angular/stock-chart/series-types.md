@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Series types in Angular Stock chart component
 
-Essential JS 2 StockChart supports 7 major types of series namely `Line`, `Spline`, `Area`, `Hilo`, `HiloOpenClose`, `Hollow Candle` and `Candle` . By using the series dropdown button you can navigate between the above listed series types.
+Essential<sup style="font-size:70%">&reg;</sup> JS 2 StockChart supports 7 major types of series namely `Line`, `Spline`, `Area`, `Hilo`, `HiloOpenClose`, `Hollow Candle` and `Candle` . By using the series dropdown button you can navigate between the above listed series types.
 
 <!-- markdownlint-disable MD036 -->
 

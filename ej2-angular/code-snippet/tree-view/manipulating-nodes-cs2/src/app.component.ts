@@ -6,8 +6,8 @@ import { Component, ViewChild } from '@angular/core';
 // Remove the node from TreeView component
 @Component({
   imports: [
-          TreeViewModule
-      ],
+    TreeViewModule
+  ],
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview></div>
@@ -31,13 +31,13 @@ export class AppComponent {
     { id: 10, pid: 7, name: 'Child 3' },
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
-  
+
   //Remove single node from the TreeView component
   onClick1(event: any) {
     (this.tree as TreeViewComponent).removeNodes(['7']);
   }
   // Remove multiple nodes from the TreeView component
   onClick2(event: any) {
-    (this.tree as TreeViewComponent).removeNodes(['3','4']);
+    (this.tree as TreeViewComponent).removeNodes(['3', '4']);
   }
 }

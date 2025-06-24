@@ -2,15 +2,10 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-
 import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { editingData } from './data';
+import { editingData1, editingData2 } from './data';
 
 @Component({
 imports: [
@@ -40,15 +35,15 @@ export class AppComponent{
     @ViewChild('gantt1', {static: true}) public fGantt?: GanttComponent;
     @ViewChild('gantt2', {static: true}) public sGantt?: GanttComponent;
     public ngOnInit(): void {
-        this.fData = [editingData[0]];
-        this.sData = [editingData[1]];
+        this.fData = editingData1;
+        this.sData = editingData2;
         this.fTaskSettings = {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.sTaskSettings = {
             id: 'TaskID',
@@ -56,7 +51,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['PdfExport'];
         this.projectStartDate = new Date('03/31/2019');

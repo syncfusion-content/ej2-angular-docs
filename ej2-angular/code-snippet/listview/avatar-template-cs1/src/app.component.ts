@@ -74,7 +74,6 @@ export class AppComponent {
       pic: ""
     }
   ];
-
 }
 
 

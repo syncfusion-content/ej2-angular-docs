@@ -41,7 +41,7 @@ Start a new Angular application using below Angular CLI command.
 ng new my-app
 cd my-app
 ```
-## Installing Syncfusion progressbar package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> progressbar package
 
 * Install progressbar packages using below command.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Dropdown Tree component
 
-The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential JS 2 Template engine to compile and render the elements properly.
+The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render the elements properly.
 
 ## Item template
 
@@ -154,7 +154,7 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 
 ## Custom template to show selected items in input
 
-In Dropdown Tree, while selecting more than one items via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#mode) property as ***Custom*** and [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#customTemplate) property.
+In Dropdown Tree, while selecting more than one items via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#mode) property as ***Custom*** and [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#customtemplate) property.
 
 When the **mode** property is set as **Custom**, the Dropdown Tree displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized by setting **customTemplate**  property.
 

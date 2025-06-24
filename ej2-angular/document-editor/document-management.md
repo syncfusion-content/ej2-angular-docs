@@ -64,8 +64,10 @@ The following code shows Restrict Editing Pane. To unprotect the document, use p
   
 {% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs1" %}
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 ## See Also
 
-* [How to protect the document in form filling mode](../document-editor/form-fields/#protect-the-document-in-form-filling-mode)
-* [How to protect the document in comments only mode](../document-editor/comments/#protect-the-document-in-comments-only-mode)
+* [How to protect the document in form filling mode](../document-editor/form-fields#protect-the-document-in-form-filling-mode)
+* [How to protect the document in comments only mode](../document-editor/comments#protect-the-document-in-comments-only-mode)
 * [How to protect the document in track changes only mode](../document-editor/track-changes/#protect-the-document-in-track-changes-only-mode)

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Numerictextbox component
 
-This article describes the API migration process of NumericTextBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on creation | **Event** *create*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="120" (create)="onCreate()"/>`<br /><br />**script**<br />`onCreate() {}` | **Event:** *created*<br /><br />`<ejs-numerictextbox value="120" (created)="onCreate()"></ejs-numerictextbox>`<br /><br />**script**<br />`public onCreate(): void {}` |
 | Adding custom classes | **Property** *cssClass*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="120" cssClass="custom"/>` | **Property:** *cssClass*<br /><br />`<ejs-numerictextbox value="120" cssClass="custom"></ejs-numerictextbox>` |
@@ -36,20 +36,20 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Globalization
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Localization culture | **Property** *locale*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="80" locale="de-DE"/>` | **Property:** *locale*<br /><br />`<ejs-numerictextbox value="80" locale="de-DE"></ejs-numerictextbox>` |
 
 ## Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Group digits in editor | **Property** *groupSize*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="100" groupSize="2"/>` | Not Applicable |
 | Group Separator | **Property** *groupSeparator*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="100" groupSeparator="-"/>` | Not Applicable |
 
 ## Numeric configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *change*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="120" (change)="onChange()"/>`<br /><br />**script**<br />`onChange() {}`| **Event:** *change*<br /><br />`<ejs-numerictextbox value="120" (change)="onChange()"></ejs-numerictextbox>`<br /><br />**script**<br />`public onChange(): void {}` |
 | Sets digits allowed after decimal point | **Property** *decimalPlaces*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="100" decimalPlaces="2"/>` | **Property:** *decimals*<br /><br />`<ejs-numerictextbox value="80" format="n2" decimals="2"></ejs-numerictextbox>` |
@@ -69,14 +69,14 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Number Formats
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Set Currency symbol | **Property** *currencySymbol*<br /><br />`<input id="currency" type="text" ej-currencytextbox value="100" currencySymbol="EUR">` | **Property:** *currency*<br /><br />`<ejs-numerictextbox value="100" format="c2" currency="EUR"></ejs-numerictextbox>` |
 | Number Format | Not Applicable | **Property:** *format*<br /><br />`<ejs-numerictextbox value="200" format="n2"></ejs-numerictextbox>` |
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Strict Mode | **Property** *enableStrictMode*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="80" enableStrictMode=true />` | **Property:** *strictMode*<br /><br />`<ejs-numerictextbox value="80" strictMode=true></ejs-numerictextbox>` |
 | Validation on typing | **Property** *validateOnType*<br /><br />`<input id="numeric" type="text" ej-numerictextbox value="80" validateOnType=true />` | **Property:** *validateDecimalOnType*<br /><br />`<ejs-numerictextbox value="100" validateDecimalOnType=true></ejs-numerictextbox>` |

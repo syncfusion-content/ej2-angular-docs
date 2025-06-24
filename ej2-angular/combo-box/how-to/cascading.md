@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the [change](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#change) event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
 
+To learn more about how to create a Cascading ComboBox in Angular, you can check the video below.
+
+{% youtube "https://youtu.be/M3h_4_yVWLg?si=zTTizkJdINqJxk4k" %}
+
 The following example, shows the cascade behavior of country, state, and city ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately to the ComboBox.
 
 {% tabs %}

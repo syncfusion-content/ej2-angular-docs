@@ -52,7 +52,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Image Editor package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor package
 
 To install Image Editor package, use the following command.
 
@@ -63,7 +63,7 @@ npm install @syncfusion/ej2-angular-image-editor --save
 The above package installs [Image Editor dependencies](./getting-started#dependencies) which
 are required to render the component in the Angular environment.
 
-## Adding Syncfusion Image Editor component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor component
 
 Modify the template in `app.component.ts` file to render the Angular Image Editor component.
 

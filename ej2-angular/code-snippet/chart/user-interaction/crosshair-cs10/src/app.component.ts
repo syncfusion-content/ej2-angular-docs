@@ -1,0 +1,55 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService, CrosshairService} from '@syncfusion/ej2-angular-charts'
+
+
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService, CrosshairService],
+standalone: true,
+    selector: 'app-container',
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair' >
+        <e-series-collection>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
+})
+export class AppComponent implements OnInit {
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public crosshair?: Object;
+    ngOnInit(): void {
+        this.chartData = [
+             { country: "USA", gold: 50 },
+             { country: "China", gold: 40 },
+             { country: "Japan", gold: 70 },
+             { country: "Australia", gold: 60 },
+             { country: "France", gold: 50 },
+             { country: "Germany", gold: 40 },
+             { country: "Italy", gold: 40 },
+             { country: "Sweden", gold: 30, silver: 25 }
+        ];
+        this.primaryXAxis = {
+            valueType: 'Category',
+            title: 'Countries'
+        };
+        this.crosshair = { enable: true, line: { color: 'red' }, lineType: 'Vertical', highlightCategory: true };
+        this.primaryYAxis = {
+            minimum: 0, maximum: 80,
+            interval: 20, title: 'Medals'
+        };
+        this.title = 'Olympic Medals';
+    }
+
+}
+
+

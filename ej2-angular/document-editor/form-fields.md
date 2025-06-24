@@ -24,7 +24,7 @@ this.documentEditor.editor.insertFormField('Text');
 //Insert Checkbox form field
 this.documentEditor.editor.insertFormField('CheckBox');
 //Insert Drop down form field
-this.documentEditor.editor.insertFormField('Dropdown');
+this.documentEditor.editor.insertFormField('DropDown');
 ```
 
 ## Get form field names
@@ -69,7 +69,7 @@ this.documentEditor.setFormFieldInfo('Check1',checkboxfieldInfo);
 
 // Set checkbox form field properties
 let dropdownfieldInfo: DropDownFormFieldInfo = this.documentEditor.getFormFieldInfo('Drop1') as DropDownFormFieldInfo;
-dropdownfieldInfo.dropDownItems = ['One','Two', 'Three'];
+dropdownfieldInfo.dropdownItems = ['One','Two', 'Three'];
 dropdownfieldInfo.name = "Drop2";
 this.documentEditor.setFormFieldInfo('Drop1',dropdownfieldInfo);
 ```
@@ -113,32 +113,49 @@ Document editor provides an option to protect and unprotect document using [`enf
 The following example code illustrates how to enforce and stop protection in Document editor container.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      // specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
-      <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
-      <ejs-documenteditorcontainer #document_editor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer></div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
+  <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+</div>
+  `,
 })
-export class AppComponent {
-    @ViewChild('document_editor')
-    public container: DocumentEditorContainerComponent;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
 
-    public protectDocument(): void {
-        //enforce protection
-        container.documentEditor.editor.enforceProtection('123', 'FormFieldsOnly');
-    }
+  ngOnInit(): void {}
+  public protectDocument(): void {
+    //enforce protection
+    this.container?.documentEditor.editor.enforceProtection(
+      '123',
+      'FormFieldsOnly'
+    );
+  }
 
-    public unProtectDocument(): void {
-        //stop the document protection
-        container.documentEditor.editor.stopProtection('123');
-    }
+  public unProtectDocument(): void {
+    //stop the document protection
+    this.container?.documentEditor.editor.stopProtection('123');
+  }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 >Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

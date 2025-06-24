@@ -18,7 +18,7 @@ To get started quickly with DocumentEditor component using CLI, you can check th
 
 ## Prerequisites
 
-[System requirements for Syncfusion Angular Document Editor](../system-requirement/)
+[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Document Editor](../system-requirement)
 
 ## Dependencies
 
@@ -84,9 +84,9 @@ Next, navigate to the created project folder:
 cd my-app
 ```
 
-## Adding Syncfusion Document Editor package
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Document Editor package
 
-All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Document Editor component, use the following command.
 
@@ -151,6 +151,8 @@ export class AppComponent implements OnInit {
 
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 #### Run the DocumentEditorContainer application
 
 The quickstart project is configured to compile and run the application in a browser. Use the following command to run the application.
@@ -172,6 +174,8 @@ DocumentEditorContainer output will be displayed as follows.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs2" %}
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 >Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
@@ -205,6 +209,8 @@ export class AppComponent implements OnInit {
 
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 #### Run the  DocumentEditor application
 
 The quickstart project is configured to compile and run the application in a browser. Use the following command to run the application.
@@ -227,7 +233,8 @@ Output will be displayed as follows.
   
 {% previewsample "page.domainurl/samples/document-editor/getting-started-cs1" %}
 
->Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 
 ## Frequently Asked Questions
 

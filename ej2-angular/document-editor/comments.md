@@ -126,33 +126,52 @@ Document editor provides an option to protect and unprotect document using [`enf
 The following example code illustrates how to enforce and stop protection in Document editor container.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import {
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      // specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
-      <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
-      <ejs-documenteditorcontainer #document_editor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer></div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
+  <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+</div>
+  `,
 })
-export class AppComponent {
-    @ViewChild('document_editor')
-    public container: DocumentEditorContainerComponent;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
 
-    public protectDocument(): void {
-        //enforce protection
-        container.documentEditor.editor.enforceProtection('123', 'CommentsOnly');
-    }
+  ngOnInit(): void {}
+  public protectDocument(): void {
+    //enforce protection
+    this.container?.documentEditor.editor.enforceProtection(
+      '123',
+      'CommentsOnly'
+    );
+  }
 
-    public unProtectDocument(): void {
-        //stop the document protection
-        container.documentEditor.editor.stopProtection('123');
-    }
+  public unProtectDocument(): void {
+    //stop the document protection
+    this.container?.documentEditor.editor.stopProtection('123');
+  }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
@@ -186,3 +205,49 @@ export class AppComponent implements OnInit {
     }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
+## Events
+
+DocumentEditor provides [beforeCommentAction](../api/document-editor/#beforecommentaction) event, which is triggered on comment actions like Post, edit, reply, resolve and reopen. This event provides an opportunity to perform custom logic on comment actions like Post, edit, reply, resolve and reopen. The event handler receives the [CommentActionEventArgs](../api/document-editor/commentActionEventArgs) object as an argument, which allows access to information about the comment.
+
+To demonstrate a specific use case, let’s consider an example where we want to restrict the delete functionality based on the author’s name. The following code snippet illustrates how to allow only the author of a comment to delete:
+
+```typescript
+import { Component, OnInit, ViewChild} from '@angular/core';
+import { ToolbarService , DocumentEditorSettingsModel, DocumentEditorContainerModule, CommentActionEventArgs, DocumentEditorContainerComponent, beforeCommentActionEvent } from '@syncfusion/ej2-angular-documenteditor';
+@Component({
+  imports: [
+    DocumentEditorContainerModule
+  ],
+  standalone: true,
+  selector: 'app-root',
+  // specifies the template string for the DocumentEditorContainer component
+  template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" #documenteditor_default [documentEditorSettings]= "settings" (beforeCommentAction)="beforeComment($event)" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+  providers: [ToolbarService]
+})
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default', { static: true }) 
+  public container!: DocumentEditorContainerComponent;
+  public mentionData: any = [
+    { "Name": "Mary Kate", "EmailId": "marry@company.com" },
+    { "Name": "Andrew James", "EmailId": "james@company.com" },
+    { "Name": "Andrew Fuller", "EmailId": "andrew@company.com" }
+  ];
+  public settings: DocumentEditorSettingsModel = { mentionSettings: { dataSource: this.mentionData, fields: { text: 'Name' } } };
+  ngOnInit(): void {
+    this.container.currentUser="Guest User";
+  }
+  // Event get triggerd on comment actions like Post, edit, reply, resolve and reopen
+  public beforeComment(args: CommentActionEventArgs) {
+    // Check the type and author of the comment and current user are different
+    if (args.type === "Delete" && this.container.currentUser !== args.author) {
+      // Cancel the comment action
+      args.cancel = true;
+    }
+  }
+}
+```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.

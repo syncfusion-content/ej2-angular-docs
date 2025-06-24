@@ -20,7 +20,7 @@ This page illustrates how to create web service in Java for the server-side depe
 
 ## Supported Java versions
 
-Syncfusion Java library supports Java SE 8.0(1.8) or above versions.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Java library supports Java SE 8.0(1.8) or above versions.
 
 ## External Jars Required
 
@@ -32,11 +32,11 @@ The following jar files are required to be referenced in your Java application.
 
 ## Download JAR file
 
-The JAR file is available in both [Syncfusion Essential-JS2](https://www.syncfusion.com/downloads/essential-js2) build and maven repository.
+The JAR file is available in both [Syncfusion<sup style="font-size:70%">&reg;</sup> Essential-JS2](https://www.syncfusion.com/downloads/essential-js2) build and maven repository.
 
-### Get JAR file from Syncfusion build
+### Get JAR file from Syncfusion<sup style="font-size:70%">&reg;</sup> build
 
-You can get the `syncfusion-ej2-wordprocessor.jar` and its dependent jar files from Syncfusion build installed location.
+You can get the `syncfusion-ej2-wordprocessor.jar` and its dependent jar files from Syncfusion<sup style="font-size:70%">&reg;</sup> build installed location.
 
 **Syntax:**
 > Jar file: `(installed location)/Syncfusion/Essential Studio/{Platform}/{version}/JarFiles/syncfusion-ej2-wordprocessor-{version}.jar`
@@ -52,13 +52,13 @@ You can also get the jar files by installing [file formats controls](https://www
 **Example:**
 > Jar file: `C:/Program Files (x86)/Syncfusion/Essential Studio/FileFormats/18.4.0.30/JarFiles/syncfusion-ej2-wordprocessor-18.4.0.30.jar`
 
-### Referring JAR from Syncfusion Maven Repository
+### Referring JAR from Syncfusion<sup style="font-size:70%">&reg;</sup> Maven Repository
 
-You can download the jars from the Syncfusion [maven repository](https://jars.syncfusion.com/) to use our artifacts in your projects. It helps to use the Syncfusion Java packages without installing Essential Studio or platform installation to development with Syncfusion controls.
+You can download the jars from the Syncfusion<sup style="font-size:70%">&reg;</sup> [maven repository](https://jars.syncfusion.com/) to use our artifacts in your projects. It helps to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Java packages without installing Essential Studio<sup style="font-size:70%">&reg;</sup> or platform installation to development with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
-#### Download Syncfusion Java packages
+#### Download Syncfusion<sup style="font-size:70%">&reg;</sup> Java packages
 
-You can easily download the Syncfusion packages for Java via maven repository. Follow the below guidelines to configure as per the tool.
+You can easily download the Syncfusion<sup style="font-size:70%">&reg;</sup> packages for Java via maven repository. Follow the below guidelines to configure as per the tool.
 
 #### Refer the maven repository in build tool
 
@@ -83,7 +83,7 @@ You can easily download the Syncfusion packages for Java via maven repository. F
     </repository>
 ```
 
-#### Refer the Syncfusion package in your project as the dependency
+#### Refer the Syncfusion<sup style="font-size:70%">&reg;</sup> package in your project as the dependency
 
 ##### Gradle
 

@@ -1,6 +1,7 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { RichTextEditorModule, RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, ActionBeginEventArgs } from '@syncfusion/ej2-angular-richtexteditor';
 import { DropDownListModule, DropDownListComponent, FieldSettingsModel } from '@syncfusion/ej2-angular-dropdowns';
+
 @Component({
     imports: [
         RichTextEditorModule,

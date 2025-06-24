@@ -20,6 +20,18 @@ The following example demonstrates how to enable track changes.
  <ejs-documenteditor [enableTrackChanges]=true height="330px" style="display:block"></ejs-documenteditor>
 ```
 
+>Track changes are document level settings. When opening a document, if the document does not have track changes enabled, then enableTrackChanges will be disabled even if we set [enableTrackChanges] = true in the initial rendering. If you want to enable track changes for all the documents, then we recommend enabling track changes during the document change event. The following example demonstrates how to enable Track changes for the all the Document while Opening.
+
+```typescript
+<ejs-documenteditorcontainer #documenteditor_default [enableToolbar]=true [locale]="culture" (created)="onCreate()" (documentChange)="onDocumentChange()" height="600px" [serviceUrl]="hostUrl"  style="display:block;"></ejs-documenteditorcontainer>
+
+onDocumentChange(): void {
+  if (this.container !== null) {
+    this.container.documentEditor.enableTrackChanges = true;
+  }
+}
+```
+
 ## Get all tracked revisions
 
 The following example demonstrate how to get all tracked revision from current document.
@@ -130,6 +142,8 @@ export class AppComponent {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 Tracked changes only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
 ![Enable track changes only protection](images/tracked-changes.png)
@@ -141,19 +155,38 @@ Tracked changes only protection can be enabled in UI by using [Restrict Editing 
 You can restrict the accept and reject changes based on the author name. The following example demonstrates how to restrict an author from accept/reject changes.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import {
+  CustomToolbarItemModel,
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-  selector: 'app-your-component',
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
   template: `
-    <DocumentEditorContainerComponent #container style="display: block;" [height]="'590px'" (beforeAcceptRejectChanges)="beforeAcceptRejectChanges($event)" [enableToolbar]="true"></DocumentEditorContainerComponent>
-  `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      (beforeAcceptRejectChanges)="beforeAcceptRejectChanges($event)"
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+  `,
 })
-export class YourComponent {
-  @ViewChild('container', { static: true }) container: DocumentEditorContainerComponent;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
 
-  beforeAcceptRejectChanges(args) {
+  ngOnInit(): void {}
+  beforeAcceptRejectChanges(args: { author: string; cancel: boolean }) {
     // Check the author of the revision
     if (args.author !== 'Hary') {
       // Cancel the accept/reject action

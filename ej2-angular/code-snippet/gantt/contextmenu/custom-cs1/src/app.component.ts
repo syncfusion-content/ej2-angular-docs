@@ -9,7 +9,6 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-angular-gantt';
 import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
-import { editingData} from './data';
 
 @Component({
 imports: [
@@ -20,20 +19,38 @@ providers: [SelectionService, ContextMenuService, EditService, SortService, Resi
 standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt #customcontextmenu id="ganttCustomContextmenu" height="430px" [dataSource]="editingData" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
+       `<ejs-gantt #customcontextmenu id="ganttCustomContextmenu" height="430px" [dataSource]="data" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent{
     // Data for Gantt
-    public editingData?: object[];
+    public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
     public contextMenuItems?: (string | ContextMenuItemModel)[];
     @ViewChild('customcontextmenu', {static: true})
     public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
-        this.editingData = editingData;
+        this.data = [
+            {
+                TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
+            },
+            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+            {
+                TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
+            },
+            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+            { TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
+            {
+                TaskID: 10, TaskName: 'Project Approval and kick off', StartDate: new Date('04/04/2019'),
+                EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9'
+            },
+        ];
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',
@@ -41,7 +58,7 @@ export class AppComponent{
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'ParentID'
         };
         this.editSettings = {
         allowAdding: true,

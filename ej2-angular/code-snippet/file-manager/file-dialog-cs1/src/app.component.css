@@ -1,6 +1,7 @@
 .upload-dialog {
     height: 550px !important;
 }
+
 .sample-container {
     margin: 10px 10px 10px 10px;
 }
@@ -21,6 +22,7 @@
     max-height: 500px !important;
 }
 
-#uploadFileManager .e-file-drop, #uploadFileManager .e-css.e-btn {
+#uploadFileManager .e-file-drop,
+#uploadFileManager .e-css.e-btn {
     display: none;
 }

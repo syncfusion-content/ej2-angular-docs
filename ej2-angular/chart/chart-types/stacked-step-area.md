@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacked Step Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about Stacked Step Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Step Area Chart in Angular Charts | Syncfusion
+description: Learn here all about Stacked Step Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Stacked Step Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked step area in Angular Chart component
+# Stacked Step Area Chart in Angular Charts
 
-## Stacked step area
+## Stacked Step Area
 
 To render a stacked step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
@@ -239,6 +239,55 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs8" %}
 
+## Stack labels
+
+The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs11" %}
+
+### Stack labels customization
+Stack labels have various properties for customization to enhance the visual based on your requirements:
+
+* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#format) - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
+* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#angle) - Specifies the rotation angle for stack labels in degrees. Default is 0.
+* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
+* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+* [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#margin) - Configures the margin around the stack label (left, right, top, and bottom).
+* [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#border) - Configures the appearance of the stack label's border.
+* [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#font) - Customizes the stack label text, including font size, color, style, weight, and family.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11A/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11A/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackedsteparea-cs11A/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs11A" %}
+
 ## Events
 
 ### Series render
@@ -280,6 +329,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs10" %}
+
 
 ## See also
 

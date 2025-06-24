@@ -34,7 +34,7 @@ The File Manager supports for selecting files and folders in specific ranges thr
 
 ### Enabling Range Selection
 
-To enable range selection, you need to set the [enableRangeSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property.
+To enable range selection, you need to set the [enableRangeSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,3 +49,21 @@ To enable range selection, you need to set the [enableRangeSelection](https://ej
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/file-manager/rangeselection-cs1" %}
+
+## Disable Multi selection
+
+Setting the [`allowMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showitemcheckboxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/disablemultiselection/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/disablemultiselection/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/disablemultiselection/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/disablemultiselection" %}

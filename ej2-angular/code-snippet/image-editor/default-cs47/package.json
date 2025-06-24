@@ -14,6 +14,7 @@
     "@angular/platform-browser": "17.1.2",
     "@angular/platform-browser-dynamic": "17.1.2",
     "@syncfusion/ej2-angular-image-editor": "*",
+    "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-lists": "*",

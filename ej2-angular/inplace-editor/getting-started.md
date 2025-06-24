@@ -18,7 +18,7 @@ The following section explains the steps required to create a simple `angular-cl
 
 ### Prerequisites
 
-To get started with Syncfusion Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
+To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
 
 * Angular : 6+
 * TypeScript : 2.6+
@@ -65,17 +65,17 @@ Navigate to the created project folder.
 
 ```
 
-## Installing Syncfusion In-place Editor package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> In-place Editor package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-inplace-editor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inplace-editor/v/20.2.38) package to the application.
 
@@ -85,7 +85,7 @@ npm install @syncfusion/ej2-angular-inplace-editor --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-inplace-editor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inplace-editor/v/20.2.38-ngcc) package to the application.
 
@@ -166,7 +166,7 @@ Run the `ng serve` command in command window, it will serve your application and
 
 ## Add the In-place Editor with Textbox
 
-By default, the Essential JS2 TextBox component is rendered in **In-place Editor** with [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property sets as Text.
+By default, the Essential<sup style="font-size:70%">&reg;</sup> JS2 TextBox component is rendered in **In-place Editor** with [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property sets as Text.
 
 Modify the template in `src/app/app.component.ts` file to render the `ej2-angular-inplace-editor` component.
 
@@ -192,7 +192,7 @@ export class AppComponent {
 
 ## Configuring DropDownList
 
-You can render the Essential JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) and configure its properties and methods using the `model` property.
 
 In the following sample, [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) component.
 
@@ -219,7 +219,7 @@ export class AppComponent {
 
 ## Integrate DatePicker
 
-You can render the Essential JS2 [DatePicker](https://ej2.syncfusion.com/angular/documentation/api/datepicker/) by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`Date`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#model) property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 [DatePicker](https://ej2.syncfusion.com/angular/documentation/api/datepicker/) by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`Date`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#model) property.
 
 ```javascript
 

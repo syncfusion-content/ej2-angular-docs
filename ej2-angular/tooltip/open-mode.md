@@ -29,7 +29,7 @@ By default, it takes `Auto` value.
 | `Focus` | Tooltip appears when you focus (say through tab key) on a target element. | Tooltip appears with a single tap on the target element. |
 | `Custom` | Tooltip is not triggered by any default action. So, you have to bind your own events and use either `open` or `close` public methods. | Same as Desktop. |
 
-To open the Tooltip for multiple actions, say while hovering over or clicking on a target element, the `opensOn` property can be assigned with multiple values, separated by space as `hover click`.
+To open the Tooltip for multiple actions, say while hovering over or clicking on a target element, the [`opensOn`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#openson) property can be assigned with multiple values, separated by space as `hover click`.
 
 > `Auto` value cannot be used with any combination for multiple values.
 
@@ -49,7 +49,7 @@ The following code example shows how to set the open mode for Tooltips.
 
 ## Custom open mode
 
-Other than the above specified options, the `custom` mode makes the Tooltip appear on screen for user-defined custom actions such as `right-click`, `double-click`, and so on. Here, the Tooltip is not triggered by any default action, and you have to bind your own events and use either `open` or `close` public methods to show or hide the Tooltips.
+Other than the above specified options, the `custom` mode makes the Tooltip appear on screen for user-defined custom actions such as `right-click`, `double-click`, and so on. Here, the Tooltip is not triggered by any default action, and you have to bind your own events and use either [`open`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#open) or [`close`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#close) public methods to show or hide the Tooltips.
 
 The following code example shows how to define custom open mode for the Tooltip.
 

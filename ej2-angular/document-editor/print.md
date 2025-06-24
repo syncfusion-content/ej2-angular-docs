@@ -63,6 +63,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 >Note: By default, printDevicePixelRatio value is 1.
 
 ## Print using window object
@@ -70,29 +72,66 @@ export class AppComponent implements OnInit {
 You can print the document in document editor by passing the window instance. This is useful to implement print in third party frameworks such as electron, where the window instance will not be available. Refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, PrintService, SelectionService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  PrintService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="onPrint()" >Print</button>
-      <ejs-documenteditor #document_editor height="330px" style="display:block" [enablePrint]=true></ejs-documenteditor>
+      <ejs-documenteditor #document_editor height="330px" style="display:block" [enablePrint]=true (created)="onCreated()"></ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [PrintService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [PrintService],
 })
-
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public onPrint(): void {
-        //Print the document content.
-        this.documentEditor.print(window);
+  onCreated(): void {
+    if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
+      let sfdt: string = `{
+                "sections": [
+                    {
+                        "blocks": [
+                            {
+                                "inlines": [
+                                    {
+                                        "characterFormat": {
+                                            "bold": true,
+                                            "italic": true
+                                        },
+                                        "text": "Hello World"
+                                    }
+                                ]
+                            }
+                        ],
+                        "headersFooters": {
+                        }
+                    }
+                ]
+            }`;
+      //Open the default document.
+      (this.documentEditor as DocumentEditorComponent).open(sfdt);
     }
+  }
+
+  public onPrint(): void {
+    //Print the document content.
+    (this.documentEditor as DocumentEditorComponent).print(window);
+  }
 }
 ```
 

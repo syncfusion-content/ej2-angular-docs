@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row drag and drop in Angular Gantt component
 
-The Syncfusion Angular Gantt chart component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the gantt by dragging and dropping them to new positions. Additionally, you can also drag and drop rows to custom components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the gantt by dragging and dropping them to new positions. Additionally, you can also drag and drop rows to custom components.
 
 To use the row drag and drop feature in Gantt chart component, you need to inject the **RowDDService** in the provider section of the **AppComponent**. The **RowDDService** is responsible for handling the row drag and drop functionality in the Gantt component. Once you have injected the **RowDDService**, you can  use the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
 
@@ -112,7 +112,7 @@ Here's an example of how to enable taskbar drag and drop within the Gantt:
 
 In the Gantt chart component, you can perform row drag and drop operations on interaction with the server side. This guide provides step-by-step instructions on how to carry out row drag and drop operations with with server-side integration.
 
-When implementing row drag and drop interactions with server side, it's essential to manage the server-side logic for handling the dragged record and its placement upon dropping. The dragged record details are sent to the server side for processing through the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event. This involves adding and removing records at the server end based on the dragged record and drop position.
+When implementing row drag and drop interactions with server side, it's Essential<sup style="font-size:70%">&reg;</sup> to manage the server-side logic for handling the dragged record and its placement upon dropping. The dragged record details are sent to the server side for processing through the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event. This involves adding and removing records at the server end based on the dragged record and drop position.
 
 From the arguments of the `rowDrop` event, you can access the following details to handle row drag and drop operations on the server end:
 
@@ -522,5 +522,5 @@ In the following example, the drop action of the dragged row in **Child** positi
 
 ## See also
 
-* [Sorting data in the Syncfusion Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)
-* [Filtering data in the Syncfusion Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/filtering/filtering)
+* [Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)
+* [Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/filtering/filtering)

@@ -40,7 +40,7 @@ export class AppComponent{
             endDate: "EndDate",
             duration: "Duration",
             progress: "Progress",
-            child: "subtasks",
+            parentID:'ParentID',
             segments: "Segments"
         };
         this.editSettings = {

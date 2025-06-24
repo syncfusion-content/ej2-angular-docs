@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initialize Sidebar using systemjs in Angular Sidebar component | Syncfusion
+title: Initialize Sidebar in Angular Sidebar component | Syncfusion
 description: Learn here all about Initialize Sidebar using systemjs in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Sidebar 
@@ -24,7 +24,7 @@ Sidebar can also be initialized using `SystemJS` as follows:
 
 For more information, refer to [Angular sample setup](https://angular.io/docs/ts/latest/guide/setup.html).
 
-* Install Syncfusion Sidebar packages using the below command.
+* Install Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar packages using the below command.
 
    ```sh
    npm install @syncfusion/ej2-angular-navigations --save

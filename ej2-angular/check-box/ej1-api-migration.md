@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Check box component
 
-This article describes the API migration process of Checkbox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Checkbox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Checkbox label | **Property:** *text* <br/><br/> `<ej-checkbox id="checkbox" text="Checkbox"></ej-checkbox>` | **Property:** *label* <br/><br/> `<ejs-checkbox id="checkbox" label="Checkbox"></ejs-checkbox>` |
 | Checked state | **Property:** *enableTriState and checkState* <br/><br/> `<ej-checkbox id="checkbox" [enableTriState]="true" text="Checked state" checkState="check"></ej-checkbox>` | **Property:** *checked* <br/><br/> `<ejs-checkbox id="checkbox" [checked]="true" label="Checked state"></ejs-checkbox>` |
@@ -36,7 +36,7 @@ This article describes the API migration process of Checkbox component from Esse
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroy | **Method:** *destroy* <br/><br/> `<ej-checkbox #checkbox id="checkbox" text="Checkbox"></ej-checkbox>` <br/> @ViewChild('checkbox') <br/> public checkbox: CheckBoxComponent; <br/> this.checkbox.destroy(); | **Method:** *destroy* <br/><br/> `<ejs-checkbox #checkbox id="checkbox" label="Checkbox"></ejs-checkbox>` <br/> @ViewChild('checkbox') <br/> public checkbox: CheckBoxComponent; <br/> this.checkbox.destroy(); |
 | Disable the Checkbox | **Method:** *disable* <br/><br/> `<ej-checkbox #checkbox id="checkbox" text="Checkbox"></ej-checkbox>` <br/> @ViewChild('checkbox') <br/> public checkbox: CheckBoxComponent; <br/> this.checkbox.disable(); | Not applicable |
@@ -45,7 +45,7 @@ This article describes the API migration process of Checkbox component from Esse
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | BeforeChange Event | **Events:** *beforeChange* <br/><br/> `ej-checkbox id="checkbox" text="Checkbox" (beforeChange)="beforeChange($event)"></ej-checkbox>`<br/>beforeChange(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | Not applicable |
 | Change Event | **Events:** *change* <br/><br/> `<ej-checkbox id="checkbox" text="Checkbox" (change)="change($event)"></ej-checkbox>`<br/>change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | **Events:** *change* <br/><br/> `<ejs-checkbox id="checkbox" label="Checkbox" (change)="change($event)"></ejs-checkbox>`<br/>change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} |

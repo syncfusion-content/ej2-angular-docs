@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column chooser in Angular TreeGrid component
 
-The column chooser feature in the Syncfusion Angular TreeGrid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#showcolumnchooser) property as **true**.
+The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#showcolumnchooser) property as **true**.
 
 To use the column chooser, you need to inject the **ColumnChooserService** in the provider section of **AppModule**.
 
@@ -48,7 +48,7 @@ In this example, the `column.showInColumnChooser` property is set to false for t
 
 ## Open column chooser by externally
 
-The Syncfusion Angular Tree Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the TreeGrid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnChooser/#opencolumnchooser) method.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the TreeGrid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnChooser/#opencolumnchooser) method.
 
 Here's an example of how to open the column chooser in the tree grid using an external button:
 
@@ -65,7 +65,7 @@ Here's an example of how to open the column chooser in the tree grid using an ex
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion Angular Tree Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
+The column chooser dialog in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
 
 To customize the column chooser dialog size, you can use the following CSS styles:
 
@@ -93,9 +93,9 @@ To customize the column chooser dialog size, you can use the following CSS style
 
 ## Change default search operator of the column chooser 
 
-The column chooser dialog in the Syncfusion Angular Tree Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
+The column chooser dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion Tree Grid, you need to use the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#operator) property of the columnChooserSettings through `grid` property object of tree grid instance in [load](https://ej2.syncfusion.com/angular/documentation/api/treegrid/load) event of the tree grid.
+To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, you need to use the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#operator) property of the columnChooserSettings through `grid` property object of tree grid instance in [load](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#load) event of the tree grid.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the tree grid:
 
@@ -112,7 +112,7 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the tree grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnChooserSettings/#ignoreaccent) property to **true** through `grid` property object of tree grid instance with [load](https://ej2.syncfusion.com/angular/documentation/api/treegrid/load) event.
+By default, the tree grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnChooserSettings/#ignoreaccent) property to **true** through `grid` property object of tree grid instance with [load](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#load) event.
 
 Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
 

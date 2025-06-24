@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Treegrid component
 
-The Essential Studio for JavaScript TreeGrid is a feature-rich control used to visualize  self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager` and binding data fields to columns. It also expands or collapses child data using the tree column.
+The Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular TreeGrid is a feature-rich control used to visualize  self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager` and binding data fields to columns. It also expands or collapses child data using the tree column.
 
 The most important features available in the TreeGrid component are paging, sorting, filtering and searching.
 

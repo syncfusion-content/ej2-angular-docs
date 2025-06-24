@@ -7,32 +7,3 @@
   top: 45%;
   left: 45%;
 }
-
-#wrapper {
-  height: 350px;
-  width: 650px;
-}
-
-#suggestions-template.e-aiassistview .e-views .e-suggestions li {
-  padding: 0;
-  border: none;
-  box-shadow: none;
-}
-
-#suggestions-template .suggestion-item {
-  display: flex;
-  align-items: center;
-  background-color: #686868;
-  color: white;
-  padding: 4px 10px;
-  opacity: 0.8;
-  gap: 5px;
-  height: 35px;
-  border-radius: 5px;
-}
-
-#suggestions-template .suggestion-item .content {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}

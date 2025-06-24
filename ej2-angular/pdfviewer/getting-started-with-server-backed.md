@@ -32,9 +32,9 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion PDF Viewer package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer package
 
-All the available Essential JS 2 packages are published in `npmjs.com` registry. To install PDF Viewer component, use the following command.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in `npmjs.com` registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
@@ -118,6 +118,7 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+N> The Web API hosted link https://services.syncfusion.com/angular/production/api/pdfviewer utilized in the PDF viewer's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/pdfviewer-server) for hosting your own web service and use for the serviceUrl property. **We strongly recommend using the standalone mode.**
 
 ## Run the application
 
@@ -182,7 +183,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
       ngOnInit(): void {
       }
    ```
-N> When configuring the server-backed PDF viewer, it's essential to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
+N> When configuring the server-backed PDF viewer, it's Essential<sup style="font-size:70%">&reg;</sup> to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
 
 N> For hosting the web service on the Linux platform, ensure to include the [SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6). Additionally, for AWS environments, utilize the following packages:
 

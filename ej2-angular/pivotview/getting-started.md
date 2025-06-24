@@ -71,17 +71,17 @@ The following list of dependencies are required to use the pivot table component
 |-- @syncfusion/ej2-angular-base
 ```
 
-## Installing Syncfusion PivotView package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> PivotView package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-pivotview`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38) package to the application.
 
@@ -91,7 +91,7 @@ npm install @syncfusion/ej2-angular-pivotview --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-pivotview@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38-ngcc) package to the application.
 
@@ -137,7 +137,8 @@ Add the Angular pivot table by using  `<ejs-pivotview>` selector in `template` s
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -151,7 +152,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
     }
@@ -167,7 +168,8 @@ The Pivot Table component further needs to be populated with an appropriate data
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -181,7 +183,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 
@@ -225,7 +227,8 @@ In this illustration, "Year" and "Quarter" are added in column, "Country" and "P
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -239,7 +242,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 
@@ -272,7 +275,8 @@ Formatting defines a way in which values should be displayed. For example, forma
 
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [        
@@ -286,7 +290,7 @@ imports: [
 })
 export class AppComponent implements OnInit {
     public pivotData!: IDataSet[];
-    public dataSourceSettings!: IDataOptions;
+    public dataSourceSettings!: DataSourceSettingsModel;
 
     ngOnInit(): void {
 

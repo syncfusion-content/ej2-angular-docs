@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Uploader component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
-platform: ej2-Angular
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -61,7 +61,7 @@ The following are the standard keys that works on uploader component.
 
 {% previewsample "page.domainurl/samples/uploader/uploader-cs16" %}
 
->You can also explore [Angular File Upload](https://www.syncfusion.com/Angular-ui-components/Angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/Angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+>You can also explore [Angular File Upload](https://www.syncfusion.com/Angular-ui-components/Angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material3/uploader/default) to understand how to browse the files which you want to upload to the server.
 
 ## Ensuring accessibility
 
@@ -73,4 +73,4 @@ The accessibility compliance of the Uploader component is shown in the following
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

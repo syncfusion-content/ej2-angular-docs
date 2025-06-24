@@ -14,13 +14,13 @@ domainurl: ##DomainURL##
 
 * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-* The [`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#datamanager-datamanager) property is used to define the data source either as a collection of objects or as an instance of `DataManager` that needs to be populated in the diagram.
+* The [`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#datamanager) property is used to define the data source either as a collection of objects or as an instance of `DataManager` that needs to be populated in the diagram.
 
-* The [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#id-string) property is used to define the unique field of each JSON data.
+* The [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#id) property is used to define the unique field of each JSON data.
 
-* The [`parentId`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#parentid-string) property is used to defines the parent field which builds the relationship between ID and parent field.
+* The [`parentId`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#parentid) property is used to defines the parent field which builds the relationship between ID and parent field.
 
-* The [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#root-string) property is used to define the root node for the diagram populated from the data source.
+* The [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#root) property is used to define the root node for the diagram populated from the data source.
 
 * To explore those properties, see [`DataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel).
 

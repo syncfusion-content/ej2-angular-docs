@@ -152,6 +152,30 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
   
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs1" %}
 
+## Show/hide weekends
+
+The [timelineSettings.showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
+
+>Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](https://ej2.syncfusion.com/angular/documentation/gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/show-weekend-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/show-weekend-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/timeline/show-weekend-cs1" %}
+
+> Limitations
+>* The `showWeekend` feature does not support baselines.
+>* The `showWeekend` is not compatible with the manual task mode.
+>* Non-working hours cannot be excluded when `showWeekend` is set to false.
+>* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+
 ## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
@@ -167,36 +191,32 @@ The following code example how to customize the top tier to display the week's w
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule, ViewEncapsulation, ViewChild } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { Component, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { timelineTemplateData } from './data';
+
+import { GanttModule, GanttComponent} from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation,ViewChild,ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GanttData } from './data';
 
 @Component({
-  imports: [
-    GanttModule,
-    CommonModule 
-  ],
-  standalone: true,
   selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule,CommonModule],
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ejs-gantt
-      id="TimelineTemplate"
-      height="430px"
-      [dataSource]="data"
-      [taskFields]="taskSettings"
-      [allowSelection]="true"
-      [labelSettings]="labelSettings"
-      [treeColumnIndex]="1"
-      [columns]="columns"
-      [timelineSettings]="timelineSettings"
-      [splitterSettings]="splitterSettings"
-      [projectStartDate]="projectStartDate"
-      [projectEndDate]="projectEndDate"
-      [holidays]="holidays"
+        #gantt
+        id="ganttChart"
+        height="430px"
+        [dataSource]="taskData"
+        [taskFields]="taskFields"
+        [treeColumnIndex]="1"
+        [columns]="columns"
+        [timelineSettings]="timelineSettings"
+        [splitterSettings]="splitterSettings"
+        [projectStartDate]="projectStartDate"
+        [projectEndDate]="projectEndDate"
+        [holidays]="holidays"
     >
       <ng-template #timelineTemplate let-data>
         <ng-container *ngIf="data.tier === 'topTier'">
@@ -220,111 +240,107 @@ import { CommonModule } from '@angular/common';
       </ng-template>
     </ejs-gantt>
   `,
-  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  @ViewChild('ganttObj')
-  public ganttObj!: GanttComponent;
-
-  // Data for Gantt
-  public data?: object[];
-  public taskSettings?: object;
-  public holidays?: object[];
-  public labelSettings?: object;
-  public projectStartDate?: Date;
-  public projectEndDate?: Date;
-  public timelineSettings?: object;
-  public columns?: object[];
-  public splitterSettings?: object;
-
-  public bgColor(value: string, date: string): string {
-    if (value === "S") {
-      return "#7BD3EA";
+    public taskData?: object;
+    public taskFields?: object;
+    public timelineSettings?: object;
+    public columns?: object[];
+    public splitterSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    @ViewChild('gantt')
+    public ganttRef?: GanttComponent;
+    public holidays?: object[];
+    public bgColor(value: string, date: string): string {
+        if (value === "S") {
+          return "#7BD3EA";
+        }
+        const parsedDate = new Date(date);
+        const holidays = this.ganttRef?.holidays ?? [];
+        for (let i = 0; i < holidays.length; i++) {
+          const holiday: any = this.ganttRef?.holidays[i];
+          const fromDate: Date = new Date(holiday.from);
+          const toDate: Date = new Date(holiday.to);
+          if (parsedDate >= fromDate && parsedDate <= toDate) {
+            return "#97E7E1";
+          }
+        }
+        return "#E0FBE2";
     }
-    const parsedDate = new Date(date);
-    for (let i = 0; i < this.ganttObj?.holidays.length; i++) {
-      const holiday: any = this.ganttObj?.holidays[i];
-      const fromDate: Date = new Date(holiday.from);
-      const toDate: Date = new Date(holiday.to);
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        return "#97E7E1";
-      }
+
+    private currentIndex: number = 1;
+    
+    public imagedate(): string {
+        const getImage = this.currentIndex;
+        this.currentIndex = this.currentIndex < 4 ? this.currentIndex + 1 : 1; // Loop 1-4
+
+        return `assets/images/${getImage}.svg`;
     }
-    return "#E0FBE2";
-  }
-
-  public imagedate() {
-    const getImage = Math.floor(Math.random() * 5) + 1;
-    return "./images/" + getImage + ".svg";
-  }
-
-  public holidayValue(value: string, date: string) {
-    const parsedDate = new Date(date);
-    for (let i = 0; i < this.ganttObj?.holidays.length; i++) {
-      const holiday: any = this.ganttObj?.holidays[i];
-      const fromDate: Date = new Date(holiday.from);
-      const toDate: Date = new Date(holiday.to);
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        const options: any = { weekday: 'short' };
-        return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
-      }
+    
+    public holidayValue(value: string, date: string): string {
+        const parsedDate = new Date(date);
+        const holidays = this.ganttRef?.holidays ?? [];
+        for (let i = 0; i < holidays.length; i++) {
+          const holiday: any = this.ganttRef?.holidays[i];
+          const fromDate: Date = new Date(holiday.from);
+          const toDate: Date = new Date(holiday.to);
+          if (parsedDate >= fromDate && parsedDate <= toDate) {
+            const options: any = { weekday: 'short' };
+            return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
+          }
+        }
+        return value;
     }
-    return value;
-  }
-
-  public ngOnInit(): void {
-    this.data = timelineTemplateData;
-    this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      dependency: 'Predecessor',
-      child: 'subtasks'
-    };
-    this.columns = [
-      { field: 'TaskID', visible: false },
-      { field: 'TaskName', width: 300 },
-      { field: 'StartDate' },
-      { field: 'EndDate' },
-      { field: 'Duration' },
-      { field: 'Progress' }
-    ];
-    this.splitterSettings = {
-      columnIndex: 1
-    };
-    this.timelineSettings = {
-      topTier: {
-        unit: 'Week',
-        format: 'dd/MM/yyyy'
-      },
-      bottomTier: {
-        unit: 'Day',
-        count: 1
-      },
-      timelineUnitSize: 100
-    };
-    this.holidays = [ 
-      {
-        from: new Date('04/04/2019'),
-        to: new Date('04/04/2019'),
-        label: 'Local Holiday'
-      },
-      {
-        from: new Date('04/19/2019'),
-        to: new Date('04/19/2019'),
-        label: 'Good Friday'
-      }
-    ];
-    this.projectStartDate = new Date('03/31/2024');
-    this.projectEndDate = new Date('04/23/2024');
-    this.labelSettings = {
-      leftLabel: 'TaskName',
-      taskLabel: 'Progress'
-    };
-  }
+    public ngOnInit(): void {
+        this.taskData = GanttData;
+        this.taskFields = {
+            id: 'TaskId',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            endDate: 'EndDate',
+            duration: 'Duration',
+            progress: 'Progress',
+            dependency: 'Predecessor',
+            parentID: 'ParentId',
+        };
+        this.timelineSettings = {
+            topTier: {
+                unit: 'Week',
+                format: 'dd/MM/yyyy'
+            },
+            bottomTier: {
+                unit: 'Day',
+                count: 1
+            },
+            timelineUnitSize: 100
+        };
+        this.columns = [
+            { field: 'TaskId', width: 80 },
+            { field: 'TaskName', headerText: 'Job Name', width: '250', clipMode: 'EllipsisWithTooltip' },
+            { field: 'StartDate' },
+            { field: 'EndDate' },
+            { field: 'Duration' },
+            { field: 'Progress' },
+            { field: 'Predecessor' }
+        ];
+        this.projectStartDate = new Date('03/31/2024');
+        this.projectEndDate = new Date('04/23/2024');
+        this.holidays = [ 
+            {
+              from: new Date('04/04/2024'),
+              to: new Date('04/04/2024'),
+              label: 'Local Holiday'
+            },
+            {
+              from: new Date('04/19/2024'),
+              to: new Date('04/19/2024'),
+              label: 'Good Friday'
+            }
+        ];
+    }
 }
+
 {% endraw %}
 {% endhighlight %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datamatrixgenerator in Angular Barcode component | Syncfusion
-description: Learn here all about Datamatrixgenerator in Syncfusion Angular Barcode component of Syncfusion Essential JS 2 and more.
+title: Datamatrixgenerator in Angular Barcode component | Syncfusion®
+description: Learn here all about Datamatrixgenerator in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Datamatrixgenerator 
 documentation: ug

@@ -135,6 +135,19 @@ documenteditor.selection.characterFormat.fontSize= 32;
 
 ## Color
 
+### Change Font Color by UI Option
+
+In the Document Editor, the Text Properties pane features two icons for managing text color within the user interface (UI):
+
+* **Colored Box:** This icon visually represents the **current color** applied to the selected text.
+* **Text (A) Icon:** Clicking this icon allows users **to modify the color** of the selected text by choosing a new color from the available options.
+
+This Font Color option appear as follows.
+
+![Font Color](images/fontColor.PNG)
+
+### Change Font Color by Code
+
 The color of selected text can be get or set using the following code.
 
 ```typescript
@@ -173,111 +186,198 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 Refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, EditorService, SelectionService, EditorHistoryService, SfdtExportService, ContextMenuService
+  DocumentEditorComponent,
+  EditorService,
+  SelectionService,
+  SfdtExportService,
+  TableDialogService,
+  EditorHistoryService,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { ItemModel, Toolbar } from '@syncfusion/ej2-navigations';
+
+import { classList, createElement } from '@syncfusion/ej2-base';
 
 @Component({
-      selector: 'app-container',
-      styleUrls: ['styles.css'],
-      template: `<div>
-      <div>
-          <ejs-toolbar (clicked)='toolbarClickHandler($event)'>
-              <e-items>
-                  <e-item prefixIcon="e-de-ctnr-bold e-icons" tooltipText="Bold" id="bold"></e-item>
-                  <e-item prefixIcon="e-de-ctnr-italic e-icons" tooltipText="Italic" id="italic"></e-item>
-                  <e-item prefixIcon="e-de-ctnr-underline e-icons" tooltipText="Underline" id="underline"></e-item>
-                  <e-item prefixIcon="e-de-ctnr-strikethrough e-icons" tooltipText="Strikethrough" id="strikethrough"></e-item>
-                  <e-item prefixIcon="e-de-ctnr-subscript e-icons" tooltipText="Subscript" id="subscript"></e-item>
-                  <e-item prefixIcon="e-de-ctnr-superscript e-icons" tooltipText="Superscript" id="superscript"></e-item>
-                  <e-item type="Seperator"></e-item>
-                  <e-item type="Input">
-                  <ng-template #template>
-                    <ejs-colorpicker [value]='#000000' [showButtons]=true (change)='onFontColorChange()' ></ejs-colorpicker>
-                  </ng-template>
-                  </e-item>
-                  <e-item type="Seperator"></e-item>
-                  <e-item type="Input">
-                    <ng-template #template>
-                        <ejs-combobox [dataSource]='fontStyle' [width]='120' [index]='2' [allowCustom]=true (change)='onFontFamilyChange()' [showClearButton]=false></ejs-combobox>
-                    </ng-template>
-                  </e-item>
-                  <e-item type="Input">
-                    <ng-template #template>
-                      <ejs-combobox [dataSource]='fontSize' [width]='80' [index]='2' [allowCustom]='true' (change)='onFontSizeChange()'  [showClearButton]='false'></ejs-combobox>
-                    </ng-template>
-                  </e-item>
-              </e-items>
-          </ejs-toolbar>
-        </div>
-        <ejs-documenteditor #document_editor (selectionChange)='onSelectionChange()' [enableSelection]='true' [isReadOnly]='false' [enableEditor]=true [enableEditorHistory]=true [enableSfdtExport]=true [enableContextMenu]=true height="330px" style="display:block"></ejs-documenteditor>
-      </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [EditorService, SelectionService, EditorHistoryService, SfdtExportService, ContextMenuService]
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+
+  //specifies the template string for the Document Editor Container component
+  template: `<div style="width:100%;">
+      <ejs-documenteditor #document_editor  id="container" height="330px"  
+        style="display:block" [isReadOnly]=false [enableEditor]=true [enableSfdtExport]=true [enableEditorHistory]=true
+    [enableTableDialog]=true (selectionChange)='onSelectionChange()'> </ejs-documenteditor></div>`,
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    EditorService,
+    SelectionService,
+    SfdtExportService,
+    TableDialogService,
+    EditorHistoryService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
+  public fontStyle: string[] = [
+    'Algerian',
+    'Arial',
+    'Calibri',
+    'Cambria',
+    'Cambria Math',
+    'Candara',
+    'Courier New',
+    'Georgia',
+    'Impact',
+    'Segoe Print',
+    'Segoe Script',
+    'Segoe UI',
+    'Symbol',
+    'Times New Roman',
+    'Verdana',
+    'Windings',
+  ];
+  public fontSize: string[] = [
+    '8',
+    '9',
+    '10',
+    '11',
+    '12',
+    '14',
+    '16',
+    '18',
+    '20',
+    '22',
+    '24',
+    '26',
+    '28',
+    '36',
+    '48',
+    '72',
+    '96',
+  ];
+  public toolBar: Toolbar = new Toolbar({
+    clicked: this.toolbarButtonClick.bind(this),
+    items: [
+      {
+        prefixIcon: 'e-de-ctnr-bold e-icons',
+        tooltipText: 'Bold',
+        id: 'bold',
+      },
+      {
+        prefixIcon: 'e-de-ctnr-italic e-icons',
+        tooltipText: 'Italic',
+        id: 'italic',
+      },
+      {
+        prefixIcon: 'e-de-ctnr-underline e-icons',
+        tooltipText: 'Underline',
+        id: 'underline',
+      },
+      {
+        prefixIcon: 'e-de-ctnr-strikethrough e-icons',
+        tooltipText: 'strikethrough',
+        id: 'strikethrough',
+      },
+      {
+        prefixIcon: 'e-de-ctnr-subscript e-icons',
+        tooltipText: 'subscript',
+        id: 'subscript',
+      },
+      {
+        prefixIcon: 'e-de-ctnr-superscript e-icons',
+        tooltipText: 'superscript',
+        id: 'superscript',
+      },
+    ],
+  });
+  ngAfterViewInit() {
+    if (this.toolBar) {
+      this.toolBar.appendTo('#toolbar'); // Ensure #toolbar exists in your template
+    }
+  }
 
-    public fontStyle: string[] = ['Algerian', 'Arial', 'Calibri', 'Cambria', 'Cambria Math', 'Candara', 'Courier New', 'Georgia', 'Impact', 'Segoe Print', 'Segoe Script', 'Segoe UI', 'Symbol', 'Times New Roman', 'Verdana', 'Windings'];
+  toolbarButtonClick(arg: { item: { id: any } }) {
+    switch (arg.item.id) {
+      case 'bold':
+        //Toggles the bold of selected content
+        this.documentEditor?.editor.toggleBold();
+        break;
+      case 'italic':
+        //Toggles the Italic of selected content
+        this.documentEditor?.editor.toggleItalic();
+        break;
+      case 'underline':
+        //Toggles the underline of selected content
+        this.documentEditor?.editor.toggleUnderline('Single');
+        break;
+      case 'strikethrough':
+        //Toggles the strikethrough of selected content
+        this.documentEditor?.editor.toggleStrikethrough();
+        break;
+      case 'subscript':
+        //Toggles the subscript of selected content
+        this.documentEditor?.editor.toggleSubscript();
+        break;
+      case 'superscript':
+        //Toggles the superscript of selected content
+        this.documentEditor?.editor.toggleSuperscript();
+        break;
+    }
+  }
 
-    public fontSize: string[] = ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72', '96'];
+  public changeFontFamily(args: { value: any }) {
+    (
+      this.documentEditor as DocumentEditorComponent
+    ).selection.characterFormat.fontFamily = args.value;
+    this.documentEditor?.focusIn();
+  }
+  //To Change the font Size of selected content
+  public changeFontSize(args: { value: any }) {
+    (
+      this.documentEditor as DocumentEditorComponent
+    ).selection.characterFormat.fontSize = args.value;
+    this.documentEditor?.focusIn();
+  }
+  //To Change the font Color of selected content
+  public changeFontColor(args: { currentValue: any }) {
+    (
+      this.documentEditor as DocumentEditorComponent
+    ).selection.characterFormat.fontColor = args.currentValue.hex;
+    this.documentEditor?.focusIn();
+  }
+  // Handle selection change for toolbar state toggling
+  public onSelectionChange(): void {
+    const characterFormat = this.documentEditor?.selection.characterFormat;
+    const properties = [
+      characterFormat?.bold,
+      characterFormat?.italic,
+      characterFormat?.underline,
+      characterFormat?.strikethrough,
+    ];
+    var toggleBtnId = ['bold', 'italic', 'underline', 'strikethrough'];
 
-    public toolbarButtonClick(arg: any) {
-        switch (arg.item.id) {
-            case 'bold':
-                //Toggles the bold of selected content
-                this.documentEditor.editor.toggleBold();
-                break;
-            case 'italic':
-                //Toggles the Italic of selected content
-                this.documentEditor.editor.toggleItalic();
-                break;
-            case 'underline':
-                //Toggles the underline of selected content
-                this.documentEditor.editor.toggleUnderline('Single');
-                break;
-            case 'strikethrough':
-                //Toggles the strikethrough of selected content
-                this.documentEditor.editor.toggleStrikethrough();
-                break;
-            case 'subscript':
-                //Toggles the subscript of selected content
-                this.documentEditor.editor.toggleSubscript();
-                break;
-            case 'superscript':
-                //Toggles the superscript of selected content
-                this.documentEditor.editor.toggleSuperscript();
-                break;
-        }
+    for (var i = 0; i < properties.length; i++) {
+      var toggleBtn = document.getElementById(toggleBtnId[i]) as HTMLElement;
+      if (
+        (typeof properties[i] == 'boolean' && properties[i] == true) ||
+        (typeof properties[i] == 'string' && properties[i] !== 'None')
+      ) {
+        toggleBtn.classList.add('e-btn-toggle');
+      } else {
+        if (toggleBtn.classList.contains('e-btn-toggle'))
+          toggleBtn.classList.remove('e-btn-toggle');
+      }
     }
-    public onFontFamilyChange(args) {
-        this.documentEditor.ej2Instances.selection.characterFormat.fontFamily = args.value;
-        this.documentEditor.focusIn();
-    }
-    public onFontSizeChange(args) {
-        this.documentEditor.ej2Instances.selection.characterFormat.fontSize = args.value;
-        this.documentEditor.focusIn();
-    }
-    public onFontColorChange(args) {
-        this.documentEditor.ej2Instances.selection.characterFormat.fontColor = args.currentValue.hex;
-        this.documentEditor.focusIn();
-    }
-    public onSelectionChange() {
-        var characterformat = this.documentEditor.ej2Instances.selection.characterFormat;
-        var properties = [characterformat.bold, characterformat.italic, characterformat.underline, characterformat.strikeThrough];
-        var toggleBtnId = ["bold", "italic", "underline", "strikethrough"];
-        for (var i = 0; i < properties.length; i++) {
-            let toggleBtn: HTMLElement = document.getElementById(toggleBtnId[i]);
-            if ((typeof (properties[i]) == 'boolean' && properties[i] == true) || (typeof (properties[i]) == 'string' && properties[i] !== 'None'))
-                toggleBtn.classList.add("e-btn-toggle");
-            else {
-                if (toggleBtn.classList.contains("e-btn-toggle"))
-                    toggleBtn.classList.remove("e-btn-toggle");
-            }
-        }
-    }
+  }
 }
 ```
 

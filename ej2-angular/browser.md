@@ -10,51 +10,52 @@ domainurl: ##DomainURL##
 
 # Browser Compatibility in Angular
 
-Syncfusion Angular UI components are compatible with modern browsers. The following versions are supported:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work seamlessly with modern web browsers. This document outlines the supported browser versions and provides key information on browser compatibility.
 
-|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    iOS    |    Android    |    Windows Mobile    |
-|:--------------:|:---------------:|:--------------:|:------------:|:------------:|:--------------:|:-----------:|:---------------:|:--------------:|
-|    63+    |    58+    |    50+    |    13+    |    11+    |    9+    |    9+    |    4.4+    |    IE 11+    |
+## Supported Browser Versions
 
-## Required Polyfills
+The following table lists the minimum supported versions for various browsers:
 
-A polyfill is code that provides modern functionality on older browsers that lack native support.
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS  | Latest 2 versions |
+| Mozilla Firefox	 | Latest version |
+| Microsoft Edge	    | Latest 2 versions |
+| Apple Safari, including iOS	  | Latest 2 versions |
 
-Syncfusion Angular UI components are compatible with Internet Explorer 11 (IE 11) when using the ES6 Promise polyfill.
 
-## Ways to Add Polyfills
+> Note: "Latest" refers to the most recent stable version of the browser.
 
-There are two primary methods to integrate polyfills into your application:
+For the most up-to-date information on supported browsers, please refer to the official Angular documentation on [Supported Browsers](https://v17.angular.io/guide/browser-support#supported-browsers).
 
-### Polyfill with CDN
+## Modern Web Development and Browser Support
 
-Add the ES6 Promise polyfill to your HTML file using the following CDN links:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components leverage modern web standards for optimal performance and reduced dependency on polyfills or compatibility layers.
 
-```html
-<!-- Automatically provides/replaces `Promise` if missing or broken. -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
-<!-- Minified version of `es6-promise-auto` below. -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-```
+Key points:
 
-### Polyfill with NPM
+1. **Evergreen Browsers**: Components perform best with automatically updating browsers (Chrome, Firefox, Edge, Safari).
 
-You can also install the ES6 Promise polyfill using npm.
+2. **Angular Compatibility**: Syncfusion<sup style="font-size:70%">&reg;</sup> components align with Angular's browser support policy.
 
-To install via npm, use the following command:
+3. **Mobile Support**: Full support for the latest versions of mobile browsers on iOS and Android platforms.
 
-```bash
-yarn add es6-promise
-# or
-npm install es6-promise
-```
+## Considerations for Internet Explorer 11
 
-Incorporate it into your code as shown below:
+While IE11 is supported, developers should be aware of the following:
 
-```typescript
-var Promise = require('es6-promise').Promise;
-```
+- Some features may have limited functionality or require additional polyfills.
+- Performance may be impacted compared to modern browsers.
+- As IE11 usage continues to decline, consider the necessity of extensive IE11 support in new projects.
 
-For additional details, refer to [this link](https://github.com/stefanpenner/es6-promise).
+For detailed information on polyfills and browser support in Angular, refer to the official Angular documentation:
+- [Angular Versions and Polyfills](https://angular.dev/reference/versions#polyfills)
+  
+
+## Additional Resources
+
+- [Angular Browser Support](https://v17.angular.io/guide/browser-support)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
+- [Can I Use](https://caniuse.com) - Check browser support for web technologies
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components enable the creation of robust, cross-browser compatible applications that deliver excellent user experiences across a wide range of modern browsers.

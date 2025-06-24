@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 100% Stacked Bar Chart in Angular Chart component | Syncfusion
-description: Learn here all about 100% Stacked Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: 100% Stacked Bar Chart in Angular Charts | Syncfusion
+description: Learn here all about 100% Stacked Bar Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: 100% Stacked bar chart
+control: 100% Stacked Bar chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# 100% Stacked Bar in Angular Chart component
+# 100% Stacked Bar Chart in Angular Charts
 
-## 100% Stacked bar
+## 100% Stacked Bar
 
 To render a [100% stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
@@ -219,6 +219,46 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs7" %}
 
+## Corner radius
+
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9A/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9A/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9A/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/stackedbar-cs9A" %}
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9B/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9B/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackedbar-cs9B/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/stackedbar-cs9B" %}
+
 ## Events
 
 ### Series render
@@ -260,6 +300,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs9" %}
+
 
 ## See also
 

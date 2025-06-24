@@ -351,7 +351,7 @@ Find the sample [how to move the free text annotation programmatically](https://
 
 ## Get the newly added free text annotation ID
 
-To get the ID of a newly added free text annotation in the Syncfusion PDF viewer, you can use the **annotationAdd()** event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
+To get the ID of a newly added free text annotation in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer, you can use the **annotationAdd()** event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
 
 Here is an example of how you can use the **annotationAdd()** event to get the ID of a new free text annotation:
 
@@ -369,7 +369,7 @@ Find the sample [how to get the newly added free text annotation id](https://sta
 
 ## Change the content of an existing Free text annotation programmatically
 
-To change the content of an existing free text annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+To change the content of an existing free text annotation in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer programmatically, you can use the **editAnnotation()** method.
 
 Here is an example of how you can use the **editAnnotation()** method to change the content of a free text annotation:
 

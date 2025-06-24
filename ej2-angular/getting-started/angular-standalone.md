@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Standalone Component
 
-Standalone components in Angular offer a streamlined method to build applications by reducing reliance on NgModules. This approach allows for simpler application authoring without disrupting existing module-based applications, which can incrementally integrate standalone components without breaking changes.
+Standalone components in Angular provide a streamlined approach to building applications without relying heavily on NgModules. This simplifies the development process while maintaining compatibility with existing module-based architectures. You can gradually adopt standalone components in legacy projects without introducing breaking changes.
 
 ## Create a New Application
 
-After installing the latest Angular CLI, initiate a new Angular project by executing the below command:
+Ensure that the latest Angular CLI is installed, then create Angular project by executing the below command:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-This command will initiate the setup process, prompting you to select configurations such as the stylesheet format for your project.
+This command initiates the project setup and prompts you to select your preferred configuration options, such as stylesheet format.
 
 ![Initial Setup](./images/Initial_setup.PNG)
 
@@ -38,17 +38,17 @@ Angular enhances developer productivity with server-side rendering (SSR) and sta
 ng new syncfusion-angular-app --ssr
 ```
 
-Once the project is set up, navigate to your project directory:
+Once the setup is complete, navigate into your project directory:
 
 ```bash
 cd syncfusion-angular-app
 ```
 
-## Installing Syncfusion Angular Packages
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
 
 Syncfusion's Angular packages are available under the `@syncfusion` scope on npm. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-To add the latest Syncfusion Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
+To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
 
 ```bash
 ng add @syncfusion/ej2-angular-grids@latest
@@ -62,9 +62,9 @@ This command performs the following configurations in your Angular application:
 
 These steps simplify adding Syncfusion's Angular Grid module to your project for immediate use.
 
-## Adding Syncfusion Angular Components
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-To incorporate Syncfusion Angular components, define them in your template and configure their properties in the component class.
+To incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, define them in your template and configure their properties in the component class.
 
 In `src/app/app.component.ts`, you can utilize column directives with `<ejs-grid>` selector and define `<e-column>` elements inside `<ejs-grid>`. Each `e-column` specifies attributes like field name, header text, and data type for the Grid columns.
 
@@ -136,4 +136,4 @@ Execute the `ng serve` command in your terminal to launch the application. Once 
 
 ![Output](./images/ang-cli.PNG)
 
->Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion components. Visit our [Licensing Overview](../licensing/overview/) page for detailed instructions on obtaining and registering your license key.
+>Note: If a license banner appears when running your application, you need to acquire and register a license key to use Syncfusion<sup style="font-size:70%">&reg;</sup> components. Visit our [Licensing Overview](../licensing/overview) page for detailed instructions on obtaining and registering your license key.

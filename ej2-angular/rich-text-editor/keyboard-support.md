@@ -8,51 +8,130 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Keyboard support in Angular Rich text editor component
+# Keyboard Support in Angular Rich Text Editor Component
 
 The Rich Text Editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists and dialogs.
 
-## HTML formation shortcut key
+## HTML editor shortcut keys
 
-You can use the following key shortcuts when the Rich Text Editor renders with HTML edit mode.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) as `HTML`.
 
-| Actions | Keyboard shortcuts |
-|----------------|---------|
-| Toolbar focus | <kbd>Alt</kbd> + <kbd>f10</kbd> |
-| Insert link | <kbd>Ctrl</kbd> + <kbd>k</kbd> |
-| Insert image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
-| Insert audio | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> |
-| Insert video | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>v</kbd> |
-| Insert table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
-| Undo | <kbd>Ctrl</kbd> + <kbd>z</kbd> |
-| Redo | <kbd>Ctrl</kbd> + <kbd>y</kbd> |
-| Copy | <kbd>Ctrl</kbd> + <kbd>c</kbd> |
-| Cut | <kbd>Ctrl</kbd> + <kbd>x</kbd> |
-| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
-| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
-| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
-| Underline| <kbd>Ctrl</kbd> + <kbd>u</kbd> |
-| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
-| Inline Code | <kbd>Ctrl</kbd> + <kbd>`</kbd> |
-| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
-| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
-| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
-| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
-| Indents| <kbd>Ctrl</kbd> + <kbd>]</kbd> |
-| Outdents| <kbd>Ctrl</kbd> + <kbd>[</kbd> |
-| HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd> |
-| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
-| Exit Fullscreen| <kbd>Esc</kbd> |
-| Justify center| <kbd>Ctrl</kbd> + <kbd>e</kbd> |
-| Justify full | <kbd>Ctrl</kbd> + <kbd>j</kbd> |
-| Justify left | <kbd>Ctrl</kbd> + <kbd>l</kbd> |
-| Justify right | <kbd>Ctrl</kbd> + <kbd>r</kbd> |
-| Clear format | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> |
-| Ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
-| Unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
-| Format Painter Copy| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> |
-| Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
-| Format Painter Escape | <kbd>Esc</kbd> |
+### Toolbar
+
+The toolbar shortcuts allow quick navigation and interaction with the toolbar elements, including focusing, moving between tools, and executing actions like closing menus and dialogs.
+
+| Actions | Windows | Mac |
+|----------------|---------| --------- |
+| Focus on toolbar | <kbd>Alt</kbd> + <kbd>F10</kbd> | <kbd>⌥</kbd> + <kbd>F10</kbd> |
+| Move to the next tool | <kbd>→</kbd> | <kbd>→</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd>  |
+| Move to the previous tool | 	<kbd>←</kbd> | <kbd>←</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd> |
+| Close dropdowns/menu and dialogs | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
+| Execute the currently focused tool action | <kbd>Enter</kbd>, <kbd>Space</kbd> | <kbd>Enter</kbd>, <kbd>Space</kbd> |
+
+### Content editing and formatting
+
+These keyboard shortcuts allow for quick access to content editing features like bold, italic, and text selection.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Select all content | <kbd>Ctrl</kbd> + <kbd>A</kbd> | <kbd>⌘</kbd> + <kbd>A</kbd> |
+| Insert a hard line break (a new paragraph) | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
+| Insert a soft line break (without starting a new paragraph) | <kbd>Shift</kbd> + <kbd>Enter</kbd> | <kbd>⇧</kbd> + <kbd>Enter</kbd> |
+| Make text bold | <kbd>Ctrl</kbd> + <kbd>B</kbd> | <kbd>⌘</kbd> + <kbd>B</kbd> |
+| Italicize text | <kbd>Ctrl</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>I</kbd> |
+| Apply strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> |
+| Insert inline code | <kbd>Ctrl</kbd> + <kbd>&#96;</kbd> | <kbd>⌘</kbd> + <kbd>&#96;</kbd> |
+| Create link | <kbd>Ctrl</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>K</kbd> |
+| Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
+| Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
+| Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
+| Tab space (when [enableTabKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+
+### Inserting
+
+These shortcuts enable you to quickly insert tables, images, audio, and videos into your content.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Open the insert table dialog | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>E</kbd> |
+| Open the insert image dialog | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> |
+| Open the insert audio dialog | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>A</kbd> |
+| Open the insert video dialog | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>V</kbd> |
+
+### Table cell 
+
+These shortcuts assist in navigating between table cells and managing table rows easily.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Move the selection to the next cell | <kbd>Tab</kbd>  |  <kbd>Tab</kbd> |
+| Move the selection to the previous cell | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> |
+| Insert a new table row (when in the last cell) | <kbd>Tab</kbd>  | <kbd>Tab</kbd>  |
+| Navigate through the table (using arrow keys) | <kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd> | <kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd> |
+
+### Text manipulation
+
+These shortcuts allow you to manipulate text, such as changing case or applying superscript/subscript formatting.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Convert text to uppercase | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>U</kbd> |
+| Convert text to lowercase | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> |
+| Apply superscript | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>=</kbd> |
+| Apply subscript | <kbd>Ctrl</kbd> + <kbd>=</kbd> | <kbd>⌘</kbd> + <kbd>=</kbd> |
+
+### Alignment and formatting
+
+These shortcuts help you quickly adjust text alignment and formatting, such as left, center, or right justification.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Align text to the center | <kbd>Ctrl</kbd> + <kbd>E</kbd> | <kbd>⌘</kbd> + <kbd>E</kbd> |
+| Justify text | <kbd>Ctrl</kbd> + <kbd>J</kbd> | <kbd>⌘</kbd> + <kbd>J</kbd> |
+| Align text to the left | <kbd>Ctrl</kbd> + <kbd>L</kbd> | <kbd>⌘</kbd> + <kbd>L</kbd> |
+| Align text to the right | <kbd>Ctrl</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>R</kbd> |
+
+### List and indentation
+
+These shortcuts help with creating and adjusting ordered and unordered lists, and modifying indentations.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Increase indent | <kbd>Ctrl</kbd> + <kbd>]</kbd> | <kbd>⌘</kbd> + <kbd>]</kbd> |
+| Decrease indent | <kbd>Ctrl</kbd> + <kbd>[</kbd> | <kbd>⌘</kbd> + <kbd>[</kbd> |
+| Create an ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>O</kbd> |
+| Create an unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>O</kbd> |
+
+### Clipboard operations
+
+These shortcuts streamline copying, cutting, pasting, and pasting content as plain text.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Copy the selected content  | <kbd>Ctrl</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>C</kbd> |
+| Cut the selected content | <kbd>Ctrl</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>X</kbd> |
+| Paste the copied or cut content | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> |
+| Paste content as plain text | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>V</kbd> |
+
+### Undo & Redo
+
+These shortcuts allow you to quickly undo and redo changes to your content.
+
+| Actions | Windows | Mac | 
+|----------------|---------| --------- |
+| Undo| <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd>+<kbd>Z</kbd> |
+| Redo| <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd>+<kbd>Y</kbd> |
+
+### Other actions
+
+These miscellaneous shortcuts help with actions like toggling fullscreen, clearing formatting, and accessing the HTML source.
+
+| Actions | PC | Mac | 
+|----------------|---------| --------- |
+| View HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> |
+| Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
+| Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
+| Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,44 +144,6 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs13" %}
-
-## Markdown formation shortcut key
-
-You can use the following key shortcuts when the Rich Text Editor renders with Markdown edit mode
-
-| Actions | Keyboard shortcuts |
-|----------------|---------|
-| Toolbar focus| <kbd>Alt</kbd> + <kbd>f10</kbd> |
-| Insert link| <kbd>Ctrl</kbd> + <kbd>k</kbd> |
-| Insert image| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
-| Insert table| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
-| Undo| <kbd>Ctrl</kbd> + <kbd>z</kbd> |
-| Redo| <kbd>Ctrl</kbd> + <kbd>y</kbd> |
-| Copy| <kbd>Ctrl</kbd> + <kbd>c</kbd> |
-| Cut| <kbd>Ctrl</kbd> + <kbd>x</kbd> |
-| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
-| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
-| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
-| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
-| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
-| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
-| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
-| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
-| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
-| Ordered list| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
-| Unordered list| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs14/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs14/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs14" %}
 
 ## Custom key config
 

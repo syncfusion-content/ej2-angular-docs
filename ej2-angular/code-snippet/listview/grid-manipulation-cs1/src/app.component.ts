@@ -2,24 +2,17 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { closest, enableRipple } from '@syncfusion/ej2-base';
 import { DataManager, Query } from "@syncfusion/ej2-data";
 enableRipple(true);
 
 @Component({
-imports: [
-        
+    imports: [
         ListViewModule,
         DialogModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
           <div id="sample">
@@ -47,80 +40,80 @@ standalone: true,
             </ejs-listview>
     </div>
         `,
-  })
+})
 
 export class AppComponent {
-  @ViewChild('listview') listViewInstance: any;
-  @ViewChild('dialogObj')dialogObj: any;
-  @ViewChild('searchEle')searchEle: any;
-  public  fruitsdata = [
-    { text: 'Date', id: '1', imgUrl: './dates.jpg' },
-    { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
-    { text: 'Apple', id: '3', imgUrl: './apple.png' },
-    { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
-    { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
-    { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
-    { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
-    { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
-    { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
-];
-public addButtons= [{
+    @ViewChild('listview') listViewInstance: any;
+    @ViewChild('dialogObj') dialogObj: any;
+    @ViewChild('searchEle') searchEle: any;
+    public fruitsdata = [
+        { text: 'Date', id: '1', imgUrl: './dates.jpg' },
+        { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
+        { text: 'Apple', id: '3', imgUrl: './apple.png' },
+        { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
+        { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
+        { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
+        { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
+        { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
+        { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
+        { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
+    ];
+    public addButtons = [{
         click: this.dlgButtonClick.bind(this), buttonModel: { content: 'Add', isPrimary: true }
     }];
- wireEvents() {
-    Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), (ele: any) => {
-        ele.addEventListener('click', this.onDeleteBtnClick.bind(this));
-    });
+    wireEvents() {
+        Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), (ele: any) => {
+            ele.addEventListener('click', this.onDeleteBtnClick.bind(this));
+        });
     }
-addItem(args:any) {
-    ((document.getElementById("name") as HTMLElement ) as HTMLInputElement).value = "";
-    ((document.getElementById("imgurl") as HTMLElement ) as HTMLInputElement).value = "";
-    this.dialogObj.show();
-}
-sortItems(args:any) {
-    let ele = (document.getElementById("sort") as HTMLElement | any).firstElementChild;
-    let des = (ele as Element).classList.contains('e-sort-icon-descending') ? true : false;
-    if (des) {
-        (ele as Element).classList.remove('e-sort-icon-descending');
-        (ele as Element).classList.add('e-sort-icon-ascending');
-        this.listViewInstance.sortOrder = 'Ascending';
-    } else {
-        ele.classList.remove('e-sort-icon-ascending');
-        ele.classList.add('e-sort-icon-descending');
-        this.listViewInstance.sortOrder = 'Descending'
+    addItem(args: any) {
+        ((document.getElementById("name") as HTMLElement) as HTMLInputElement).value = "";
+        ((document.getElementById("imgurl") as HTMLElement) as HTMLInputElement).value = "";
+        this.dialogObj.show();
     }
-    this.listViewInstance?.dataBind();
-    this.wireEvents();
-}
-onKeyUp(e: any) {
-    let value = this.searchEle.nativeElement.value;
-    let data = new DataManager(this.fruitsdata).executeLocal(
-        new Query().where("text", "startswith", value, true)
-    );
-    if (!value) {
-        this.listViewInstance.dataSource = this.fruitsdata.slice();
-    } else {
-        this.listViewInstance.dataSource = data;
+    sortItems(args: any) {
+        let ele = (document.getElementById("sort") as HTMLElement | any).firstElementChild;
+        let des = (ele as Element).classList.contains('e-sort-icon-descending') ? true : false;
+        if (des) {
+            (ele as Element).classList.remove('e-sort-icon-descending');
+            (ele as Element).classList.add('e-sort-icon-ascending');
+            this.listViewInstance.sortOrder = 'Ascending';
+        } else {
+            ele.classList.remove('e-sort-icon-ascending');
+            ele.classList.add('e-sort-icon-descending');
+            this.listViewInstance.sortOrder = 'Descending'
+        }
         this.listViewInstance?.dataBind();
+        this.wireEvents();
     }
-}
-onDeleteBtnClick(e: any) {
-    e.stopPropagation();
-    let li = closest(e.currentTarget, '.e-list-item');
-    let data = this.listViewInstance?.findItem(li);
-    this.listViewInstance?.removeItem(data);
-    new DataManager(this.fruitsdata).remove('id', { id: data.id });
-}
- dlgButtonClick() {
-    let name = ((document.getElementById("name") as HTMLElement ) as HTMLInputElement).value;
-    let url = ((document.getElementById("imgurl") as HTMLElement ) as HTMLInputElement).value;
-    let id = `${Math.random() * 10000}`;
-    this.listViewInstance?.addItem([{ text: name, id: id, imgUrl: url }]);
-    this.fruitsdata.push({ text: name, id: id, imgUrl: url });
-    this.listViewInstance?.element.querySelector('[data-uid="'+ id + '"]').getElementsByClassName('e-delete-btn')[0].addEventListener('click', this.onDeleteBtnClick.bind(this));
-    this.dialogObj.hide();
-}
+    onKeyUp(e: any) {
+        let value = this.searchEle.nativeElement.value;
+        let data = new DataManager(this.fruitsdata).executeLocal(
+            new Query().where("text", "startswith", value, true)
+        );
+        if (!value) {
+            this.listViewInstance.dataSource = this.fruitsdata.slice();
+        } else {
+            this.listViewInstance.dataSource = data;
+            this.listViewInstance?.dataBind();
+        }
+    }
+    onDeleteBtnClick(e: any) {
+        e.stopPropagation();
+        let li = closest(e.currentTarget, '.e-list-item');
+        let data = this.listViewInstance?.findItem(li);
+        this.listViewInstance?.removeItem(data);
+        new DataManager(this.fruitsdata).remove('id', { id: data.id });
+    }
+    dlgButtonClick() {
+        let name = ((document.getElementById("name") as HTMLElement) as HTMLInputElement).value;
+        let url = ((document.getElementById("imgurl") as HTMLElement) as HTMLInputElement).value;
+        let id = `${Math.random() * 10000}`;
+        this.listViewInstance?.addItem([{ text: name, id: id, imgUrl: url }]);
+        this.fruitsdata.push({ text: name, id: id, imgUrl: url });
+        this.listViewInstance?.element.querySelector('[data-uid="' + id + '"]').getElementsByClassName('e-delete-btn')[0].addEventListener('click', this.onDeleteBtnClick.bind(this));
+        this.dialogObj.hide();
+    }
 }
 
 

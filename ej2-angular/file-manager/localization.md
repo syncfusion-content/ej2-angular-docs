@@ -71,7 +71,7 @@ The File Manager can be localized to any culture by defining its texts and messa
 |Header-Rename|Rename|
 |Content-Rename|Enter your new name|
 |Header-Rename-Confirmation|Rename Confirmation|
-|Content-Rename-Confirmation|If you change a file name extension| the file might become unstable. Are you sure you want to change it?|
+|Content-Rename-Confirmation|If you change a file name extension, the file might become unstable. Are you sure you want to change it?|
 |Header-Delete|Delete File|
 |Content-Delete|Are you sure you want to delete this file?|
 |Header-Multiple-Delete|Delete Multiple Files|
@@ -85,7 +85,7 @@ The File Manager can be localized to any culture by defining its texts and messa
 |Validation-Empty|The file or folder name cannot be empty.|
 |Validation-Invalid|The file or folder name {0} contains invalid characters. Please use a different name. Valid file or folder names cannot end with a dot or space, and cannot contain any of the following characters: \\/:*?\"<>\||
 |Validation-NewFolder-Exists|A file or folder with the name {0} already exists.|
-|Validation-Rename-Exists|Cannot rename {0} to {1}| destination already exists.|
+|Validation-Rename-Exists|Cannot rename {0} to {1}, destination already exists.|
 |Folder-Empty|This folder is empty|
 |File-Upload|Drag files here to upload|
 |Search-Empty|No results found|

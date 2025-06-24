@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Best practices to improve the performance of the Pivot Table
 
-Performance optimization is crucial when working with large datasets in the [Syncfusion Angular Pivot Table](https://www.syncfusion.com/angular-components/angular-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
+Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table](https://www.syncfusion.com/angular-components/angular-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
 ## How do I improve the loading performance of the Pivot Table?
 

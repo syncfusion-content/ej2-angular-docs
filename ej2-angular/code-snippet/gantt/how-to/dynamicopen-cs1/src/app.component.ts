@@ -51,7 +51,7 @@ export class AppComponent{
                 duration: 'Duration',
                 progress: 'Progress',
                 dependency: 'Predecessor',
-                child: 'subtasks',
+                parentID:'ParentID',
                 notes: 'info',
                 resourceInfo: 'resources'
         };
@@ -65,6 +65,7 @@ export class AppComponent{
         this.resourceIdMapping = 'resourceId';
         this.resources = editingResources;
         this.editSettings = {
+                allowAdding: true,
                 allowEditing: true,
                 allowTaskbarEditing: true
         };

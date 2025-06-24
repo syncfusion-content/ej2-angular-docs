@@ -300,6 +300,31 @@ In the following code, the `Progress Bar` component render in the Grid **Freight
   
 {% previewsample "page.domainurl/samples/grid/template-cs9" %}
 
+### Render RadioButton in a column 
+
+The Syncfusion Angular Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion Angular Grid by defining the `template` property.
+
+```
+    <div style="display: flex; flex-direction: column; align-items: start; gap: 8px;">
+        <ejs-radiobutton label="Pending" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Pending'"></ejs-radiobutton>
+        <ejs-radiobutton label="Confirmed" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Confirmed'"></ejs-radiobutton>
+        <ejs-radiobutton label="Shipped" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Shipped'"></ejs-radiobutton>
+    </div>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-radiobutton/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-radiobutton/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/template-radiobutton" %}
+
 ## Using condition template
 
 The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) allows you to display template elements based on specific conditions.
@@ -474,3 +499,70 @@ The following example demonstrates how to add template column using external but
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/template-cs10" %}
+
+## Enhancing Grid performance by enabling or disabling Aria Labels
+
+By default, the Syncfusion Angular Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
+
+If your application doesn’t require screen reader support and includes multiple template columns, Aria labels may impact performance. To improve rendering, you can disable them for all template columns by setting the `enableAriaLabel` property to **false** in the `templateOptions` of those columns. If accessibility is needed, set it to **true** to retain Aria labels.
+
+The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion Angular Grid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
+import { employeeData } from './datasource';
+
+@Component({
+imports: [
+    ChipListModule,
+    GridModule
+],
+standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='315px'>
+                    <e-columns>
+                        <e-column headerText='Employee Image' width='150' templateOptions="imageTemplateOptions" textAlign='Center'>
+                            <ng-template #template let-data>
+                                <div class="image">
+                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='FirstName' headerText='FirstName' templateOptions="nameTemplateOptions" width=100>
+                            <ng-template #template let-data>
+                                <div class="chip">
+                                    <ejs-chiplist id="chip" [text]="data.FirstName"></ejs-chiplist>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='LastName' headerText='Last Name' width=100></e-column>
+                        <e-column field='City' headerText='City' width=100></e-column>
+                    </e-columns>
+                </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public imageTemplateOptions: object;
+    public nameTemplateOptions: object;
+    ngOnInit(): void {
+        this.data = employeeData;
+        this.imageTemplateOptions = { enableAriaLabel: true };
+        this.nameTemplateOptions = { enableAriaLabel: false };
+    }
+}
+{% endraw %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-cs11/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/template-cs11" %}

@@ -16,23 +16,23 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiColumn ComboBox component with change event
-    template: `<ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='dataSource' [placeholder]='waterMark' [fields]='fields' popupHeight='230px'>
+    template: `<ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='dataSource' [placeholder]='waterMark' [enableVirtualization]='true' [gridSettings]='gridSettings' [fields]='fields' popupHeight='230px'>
                   <e-columns>
-                    <e-column field='EmployeeID' header='Employee ID' width='120'></e-column>
-                    <e-column field='FirstName' header='Name' width='120'></e-column>
-                    <e-column field='Designation' header='Designation' width='120'></e-column>
-                    <e-column field='Country' header='Country' width='100'></e-column>
+                    <e-column field='OrderID' header='Order ID' width='120'></e-column>
+                    <e-column field='CustomerID' header='Customer ID' width='130'></e-column>
+                    <e-column field='ShipCountry' header='Ship Country' width='120'></e-column>
                   </e-columns>
                </ejs-multicolumncombobox>`
 })
 export class AppComponent {
     public dataSource = new DataManager({
-    url: 'https://services.syncfusion.com/js/production/api/Employees',
+    url: 'https://services.syncfusion.com/js/production/api/Orders',
     adaptor: new WebApiAdaptor,
     crossDomain: true
   });
-  public fields: Object = { text: 'FirstName', value: 'EmployeeID' };
+  public fields: Object = { text: 'ShipCountry', value: 'CustomerID' };
   public waterMark: string = 'Select a name';
+  public gridSettings: Object = { rowHeight: 40 };
 }
 
 

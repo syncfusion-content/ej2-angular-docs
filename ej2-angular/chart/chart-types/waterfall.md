@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Waterfall in Angular Chart component | Syncfusion
-description: Learn here all about Waterfall in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Waterfall Chart in Angular Charts | Syncfusion
+description: Learn here all about Waterfall Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Waterfall
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Waterfall in Angular Chart component
+# Waterfall Chart in Angular Charts
 
 ## Waterfall Chart
 
@@ -142,6 +142,46 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
   
 {% previewsample "page.domainurl/samples/chart/series/waterfall-cs5" %}
 
+## Corner radius
+
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6A/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6A/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6A/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/waterfall-cs6A" %}
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6B/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6B/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6B/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/waterfall-cs6B" %}
+
 ## Events
 
 ### Series render
@@ -183,6 +223,8 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/waterfall-cs6" %}
+
+
 
 ## See Also
 

@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule, View } from '@syncfusion/ej2-angular-schedule'
-
-
-
 import { Component } from '@angular/core';
 import { WeekService, MonthService, WorkWeekService, EventSettingsModel } from '@syncfusion/ej2-angular-schedule';
 import { defaultData } from './datasource';
 
 @Component({
-imports: [
-        
-        ScheduleModule
-    ],
-standalone: true,
+  imports: [ScheduleModule],
+  standalone: true,
   selector: 'app-root',
   providers: [WeekService, MonthService, WorkWeekService],
   // specifies the template string for the Schedule component
@@ -25,5 +19,3 @@ export class AppComponent {
   public showWeekend: boolean = false;
   public eventSettings: EventSettingsModel = { dataSource: defaultData };
 }
-
-

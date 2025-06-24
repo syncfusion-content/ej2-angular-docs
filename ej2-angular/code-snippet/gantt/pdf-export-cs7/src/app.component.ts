@@ -2,12 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -42,11 +37,12 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            dependency: 'Predecessor',
+            parentID:'ParentID',
         };
         this.columns =  [
             { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText:  'Task Name', width: '150', visible: false },
+            { field: 'TaskName', headerText:  'Task Name', width: '150' },
             { field: 'StartDate', headerText:  'StartDate', width: '150' },
             { field: 'Duration', headerText:  'Duration', width: '150' },
             { field: 'Progress', headerText:  'Progress', width: '150' }

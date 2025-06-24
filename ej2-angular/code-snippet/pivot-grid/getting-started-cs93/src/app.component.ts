@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,13 +21,13 @@ standalone: true,
   selector: 'app-container',
   providers: [GroupingBarService, FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' width=width maxNodeLimitInMemberEditor='100' showFieldList='true'></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' [width]=width maxNodeLimitInMemberEditor='100' showFieldList='true'></ejs-pivotview></div>`
 })
 
 export class AppComponent {
 
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public maxNodeLimitInMemberEditor?: number;
     public date1?: number;
     public date2?: number;

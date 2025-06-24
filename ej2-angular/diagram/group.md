@@ -178,6 +178,51 @@ The following code illustrates how to add Padding to the node group.
   
 {% previewsample "page.domainurl/samples/diagram/groups/group-padding" %}
 
+
+## Group flip
+
+The flip functionality for a group node works similarly to that of normal nodes. However, when flipping a group node, the flip of its child nodes is combined with the group's flip. This combination ensures that the child nodes inherit the group’s flip while retaining their own individual flips.
+
+`Example`:
+
+- If a child node’s flip is set to Vertical and the group node’s flip is set to Horizontal, the resulting flip for the child node will be a combination of Vertical and Horizontal (effectively a "both" flip).
+- This ensures that the child nodes’ orientations adapt dynamically based on the group’s flip while maintaining their unique flip settings.
+
+The following example shows how to apply flip for group node.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/groups/group-flip/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/groups/group-flip/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/groups/group-flip" %}
+
+### Group flip mode
+
+The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipMode/) of a group node also behave similarly to those of normal nodes. However,When you apply a flip mode to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
+
+For example, in the below code,
+the flipMode for the child node `Node1` is set to `LabelText`.
+The flipMode for the group node is set to `Label`.
+As a result, the effective flipMode for both the child node and the group node will be Label, as the group node’s flipMode overrides the child’s.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/groups/group-flipMode/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/groups/group-flipMode/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/groups/group-flipMode" %}
+
 ## Nested group
 
 Nested groups are essentially groups within groups, where a group can contain other groups as its children, creating a hierarchy that helps manage complexity and relationships between different elements.

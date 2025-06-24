@@ -32,7 +32,7 @@ For instance, to load translations for English (`en`) and French (`fr`), the fol
 
 ## Changing current locale
 
-The current locale can be changed for all the Syncfusion Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
+The current locale can be changed for all the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
 
 ```typescript
 import { L10n, setCulture } from '@syncfusion/ej2-base';

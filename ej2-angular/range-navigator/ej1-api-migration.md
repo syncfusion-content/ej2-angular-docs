@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Range navigator component
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## RangeNavigator
 
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD038 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Allow snapping| **Property:** *allowSnapping* <br/><br/>`<ej:RangeNavigator`<br/>`[allowSnapping]="true">` <br/>`</ej:RangeNavigator>`|**Property:** *allowSnapping* <br/><br/>`<ejs-rangenavigator  [allowSnapping]='allowSnapping'>`<br/>`</ejs-rangenavigator>`<br/>this.allowSnapping= true; |
 |Animation duration| Not Applicable|**Property:** *animationDuration* <br/><br/>`<ejs-rangenavigator  [animationDuration]='animationDuration''>`<br/>`</ejs-rangenavigator>`<br/>this.animationDuration= 2000;|
@@ -54,7 +54,7 @@ This article describes the API migration process of Chart component from Essenti
 ## Series
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |animation| **Property:** *enableAnimation* <br/><br>`<ej:RangeNavigator`<br/>`enableAnimation="true">` <br/>`</ej:RangeNavigator>`|**Property:** *animation.enable* <br/><br/>`<ejs-rangenavigator  [animation]='animation'>`<br/>`</ejs-rangenavigator>`<br/>this.animation={ enable: true}|
 |Border for range navigator series| **Property:** *border* <br/><br>this.series = [{ border: { color: 'transparent', width: 2 } }];<br/>`<ej:RangeNavigator`<br/>`series={series}>` <br/>`</ej:RangeNavigator>`|**Property:** *border* <br/><br/>`<e-rangenavigator-series`<br/>`border={ color: 'pink', width: 2}>`<br/>`</e-rangenavigator-series>`|
@@ -70,7 +70,7 @@ This article describes the API migration process of Chart component from Essenti
 ## StyleSettings
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Style settings of range navigator| **Property:** *navigatorStyleSettings* <br/><br>this.navigatorStyleSettings = { leftThumbTemplate: 'left' };<br/>`<ej:RangeNavigator`<br/>`[navigatorStyleSettings]="navigatorStyleSettings">` <br/>`</ej:RangeNavigator>`|**Property:** *navigatorStyleSettings* <br/><br/>`<ejs-rangenavigator `<br/>`[navigatorStyleSettings]='navigatorStyleSettings'`<br/>`</ejs-rangenavigator>`<br/>this.navigatorStyleSettings = { leftThumbTemplate: 'left' };|
 |Selected region color of range navigator| **Property:** *selectedRegionColor* <br/><br/>this.navigatorStyleSettings = { selectedRegionColor: 'red' };<br/>`<ej:RangeNavigator`<br/>`[navigatorStyleSettings]="navigatorStyleSettings">` <br/>`</ej:RangeNavigator>`|**Property:** *selectedRegionColor* <br/><br/>`<ejs-rangenavigator `<br/>`[navigatorStyleSettings]='navigatorStyleSettings'`<br/>`</ejs-rangenavigator>`<br/>this.navigatorStyleSettings = { selectedRegionColor: 'red' };|
@@ -88,7 +88,7 @@ This article describes the API migration process of Chart component from Essenti
 ## Tooltip
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |tooltip| **Property:** *visible* <br/><br>this.tooltipSettings = { visible: true};<br/>`<ej:RangeNavigator`<br/>`[tooltipSettings]= "Tooltip">` <br/>`</ej:RangeNavigator>`|**Property:** *enable* <br/><br/>`<ejs-rangenavigator `<br/>`[tooltip]='tooltip'`<br/>`</ejs-rangenavigator>`<br/>this.tooltip= { enable: true }|
 |background color of tooltip| **Property:** *backgroundColor* <br/><br>this.tooltipSettings = { backgroundColor: 'red'};<br/>`<ej:RangeNavigator`<br/>`[tooltipSettings]= "Tooltip">` <br/>`</ej:RangeNavigator>`|**Property:** *fill* <br/><br/>`<ejs-rangenavigator `<br/>`[tooltip]='tooltip'`<br/>`</ejs-rangenavigator>`<br/>this.tooltip= { fill: 'pink' }|
@@ -102,14 +102,14 @@ This article describes the API migration process of Chart component from Essenti
 ## Period Selector
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |period Selector position|Not Applicable|**Property:** *periodSelectorSettings.position* <br/><br/>`<ejs-rangenavigator `<br/>`[periodSelectorSettings]='periodsValue'`<br/>`</ejs-rangenavigator>`<br/>this.periodsValue = { }|
 
 ## Methods
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Print|Not Applicable|**Property:** *print()* <br/><br/><br/>`<ejs-rangenavigator `<br/>`#range id="range"`<br/>`</ejs-rangenavigator>`<br/>print(){<br/>this.RangeObj.print();}|
 |Export|Not Applicable|**Property:** *export()* <br/><br/><br/>`<ejs-rangenavigator `<br/>`#range id="range"`<br/>`</ejs-rangenavigator>`<br/>export(){<br/>this.RangeObj.export('PNG', 'result',  null, [this.RangeObj]);}|
@@ -117,7 +117,7 @@ This article describes the API migration process of Chart component from Essenti
 ## Events
 
 <!-- markdownlint-disable MD033 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Fires before loading the RangeNavigator.| **Property:** *load* <br/><br/>`<ej:RangeNavigator`<br/>`(load)="load($event)">` <br/>`</ej:RangeNavigator>`<br/>load(sender){ };|**Property:** *load* <br/><br/>`<ejs-rangenavigator `<br/>`load={this.load.bind(this)}`<br/>`</ejs-rangenavigator>`<br/> public load(): void { };|
 |Fires before loading the RangeNavigator.| **Property:** *loaded* <br/><br/>`<ej:RangeNavigator`<br/>`(loaded)="onLoaded($event)">` <br/>`</ej:RangeNavigator>`<br/>loaded(sender){ };|**Property:** *loaded* <br/><br/>`<ejs-rangenavigator `<br/>`loaded={this.loaded.bind(this)}`<br/>`</ejs-rangenavigator>`<br/> public loaded(): void { };|

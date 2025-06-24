@@ -1,24 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { ButtonModule, CheckBoxModule   } from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { NgModule } from '@angular/core'
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
-import { Component , ViewChild, Inject} from '@angular/core';
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
+import { Component, ViewChild, Inject } from '@angular/core';
 import { UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { FileManagerComponent, FileOpenEventArgs } from '@syncfusion/ej2-angular-filemanager';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [FileManagerModule,  UploaderModule , DialogModule, ButtonModule, CheckBoxModule ],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule, UploaderModule, DialogModule, ButtonModule, CheckBoxModule],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<div class="sample-container">
@@ -76,8 +71,8 @@ export class AppComponent {
         let file = (args as any).fileDetails;
         if (file.isFile) {
             args.cancel = true;
-            if (file.size <= 0 ) { file.size = 10000; }
-            (this.uploadObj as UploaderComponent).files = [{name: file.name, size: file.size, type: file.type }];
+            if (file.size <= 0) { file.size = 10000; }
+            (this.uploadObj as UploaderComponent).files = [{ name: file.name, size: file.size, type: file.type }];
             this.dialogObj?.hide();
         }
     }
@@ -105,6 +100,3 @@ export class AppComponent {
         }
     }
 }
-
-
-

@@ -1,16 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { editingData } from './data';
 
 @Component({
@@ -30,22 +21,22 @@ export class AppComponent{
     // Data for Gantt
     public data?: object[];
     public taskSettings?: object;
-    public toolbar?: ToolbarItem[];
+    public toolbar?: string[];
     @ViewChild('gantt', {static: true})
-    public ganttChart?: GanttComponent;
+    public ganttObj?: GanttComponent;
     columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; })[] | undefined;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
-            id: 'TaskID',
+            id: 'TaskId',
             name: 'TaskName',
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentId',
         };
         this.columns =  [
-            { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
+            { field: 'TaskId', headerText:  'Task ID', textAlign: 'Left', width: '100' },
             { field: 'TaskName', headerText:  'Task Name', width: '150' },
             { field: 'StartDate', headerText:  'StartDate', width: '150' },
             { field: 'Duration', headerText:  'Duration', width: '150', visible: false },
@@ -53,16 +44,13 @@ export class AppComponent{
         ];
         this.toolbar =  ['PdfExport'];
     }
-    public toolbarClick(args: ClickEventArgs): void {
-            if (args.item.id === 'ganttDefault_pdfexport') {
-                this.ganttChart!.pdfExport();
-            }
+    public toolbarClick(args: any): void {
+        if (args.item.id === 'ganttDefault_pdfexport') {
+            (this.ganttObj as any).pdfExport();
+        }
     };
     public beforePdfExport(): void {
-        (this.ganttChart!.treeGrid.columns[2] as any).visible = false;
-        (this.ganttChart!.treeGrid.columns[3] as any).visible = true;
+        ((this.ganttObj as any).treeGrid.columns[2] as any).visible = false;
+        ((this.ganttObj as any).treeGrid.columns[3] as any).visible = true;
     };
 }
-
-
-

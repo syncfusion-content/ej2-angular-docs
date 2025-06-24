@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Nodes Manipulation in ##Platform_Name## TreeView component
 
-The TreeView component provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
+The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
 
 * [addNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes)

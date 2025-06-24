@@ -2,12 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-
 import { Gantt, Toolbar, PdfExport, Selection, Filter, PdfExportProperties, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -41,7 +36,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['PdfExport'];
     }

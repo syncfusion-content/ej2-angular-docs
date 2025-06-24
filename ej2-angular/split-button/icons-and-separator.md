@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## SplitButton Icons
 
-SplitButton can have an icon to provide the visual representation of the action. To place the icon on a SplitButton, set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/split-button#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the SplitButton. You can customize the icon's position by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/split-button#iconposition) property
+SplitButton can have an icon to provide the visual representation of the action. To place the icon on a SplitButton, set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/split-button/#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the SplitButton. You can customize the icon's position by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/split-button/#iconposition) property
 
 The following example illustrates how to place icon in SplitButton component.
 
@@ -28,12 +28,12 @@ The following example illustrates how to place icon in SplitButton component.
   
 {% previewsample "page.domainurl/samples/split-button/icon-cs1" %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the splitBtn using the `iconCss`property.
 
 ### Vertical Button
 
-Vertical Button in SplitButton can be achieved by adding `e-vertical` class using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/split-button#cssclass) property.
+Vertical Button in SplitButton can be achieved by adding `e-vertical` class using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/split-button/#cssclass) property.
 
 The following example illustrates how to vertical support in SplitButton component.
 
@@ -49,7 +49,7 @@ The following example illustrates how to vertical support in SplitButton compone
   
 {% previewsample "page.domainurl/samples/split-button/vertical-cs1" %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the SplitButton using the `iconCss`property.
 
 ## Separator

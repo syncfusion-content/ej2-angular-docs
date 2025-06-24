@@ -42,7 +42,7 @@ export class AppComponent{
                 duration: 'Duration',
                 progress: 'Progress',
                 dependency: 'Predecessor',
-                child: 'subtasks',
+                parentID:'ParentID',
         };
         this.toolbar =  ['PdfExport'];
     }

@@ -14,7 +14,7 @@ The Angular File Manager component provides a [uploadSettings](https://ej2.syncf
 
 ## Directory Upload
 
-The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadSettingsModel/#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion Angular File Manager component. 
+The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadSettingsModel/#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -60,7 +60,7 @@ In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and th
 
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
-![Angular File Manager with chunkUpload](./images/filemanager-chunkupload.png "File Manager chunkUpload")
+![Angular File Manager with chunkUpload](./images/filemanager-chunkupload.png)
 
 >Note: 
 >1. Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it upload the files normally. 
@@ -128,9 +128,11 @@ If you want to allow only image files like .jpg and .png, you would set the prop
 
 The File Manager component provides support for external drag-and-drop functionality for uploading files by dragging it from local file system to File Manager.
 
-Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/angular/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager component
+Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager component
 
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/angular/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager component.
 
 The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the File Manager component with uploadSettings functions.
 

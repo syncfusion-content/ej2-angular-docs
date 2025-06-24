@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, FieldListService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -20,13 +21,13 @@ standalone: true,
   selector: 'app-container',
   providers: [FieldListService, GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' showGroupingBar='true' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' showGroupingBar='true' [width]=width></ejs-pivotview></div>`
 })
 
 export class AppComponent {
 
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
 
     ngOnInit(): void {
 

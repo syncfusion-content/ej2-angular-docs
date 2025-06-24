@@ -40,7 +40,7 @@ The accessibility compliance for the List box component is outlined below.
 
 ## WAI-ARIA attributes
 
-The List box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/List box/) patterns to meet the accessibility. The following ARIA attributes are used in the List box component:
+The List box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the List box component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -51,7 +51,7 @@ The List box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 
 ## Keyboard interaction
 
-The List box component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/List box/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the List box component.
+The List box component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the List box component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -75,4 +75,4 @@ The accessibility compliance of the List box component is shown in the following
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

@@ -43,29 +43,51 @@ Document Editor expose API to enable local paste within the control. On enabling
 Refer to the following sample code.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, EditorService, SelectionService, SfdtExportService, EditorHistoryService, BookmarkDialogService
+  DocumentEditorComponent,
+  EditorService,
+  SelectionService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="pasteLocal()" >Paste local</button>
-      <ejs-documenteditor #document_editor id="container" height="330px" style="display:block" [isReadOnly]=false [enableEditor]=true [enableLocalPaste]=true>
-      </ejs-documenteditor></div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [EditorService, SelectionService, SfdtExportService]
+  imports: [
+    ButtonModule,
+    ToolbarModule,
+    DocumentEditorAllModule,
+    ComboBoxModule,
+    ColorPickerModule,
+  ],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div><button ejs-button (click)="pasteLocal()" >Paste local</button>
+    <ejs-documenteditor #document_editor [enableSelection]='true' [isReadOnly]='false' [enableEditor]=true [enableLocalPaste]=true height="330px" style="display:block"></ejs-documenteditor>
+      </div>`,
+  encapsulation: ViewEncapsulation.None,
+  //Provide necessary service.
+  providers: [
+    EditorService,
+    SelectionService
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public pasteLocal(): void {
-          //paste copied content.
-          this.documentEditor.editor.paste();
-    }
+  public pasteLocal(): void {
+    //paste copied content.
+    this.documentEditor?.editor.paste();
+  }
 }
+
 ```
 
 By default, **enableLocalPaste** is false.

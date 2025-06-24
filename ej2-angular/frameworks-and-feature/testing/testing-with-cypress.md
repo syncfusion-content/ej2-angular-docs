@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Cypress Testing
 
-This document explains how to perform the E2E and Component testing with Syncfusion Angular components in Angular web applications using Cypress.
+This document explains how to perform the E2E and Component testing with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in Angular web applications using Cypress.
 
 ## Cypress
 
@@ -22,7 +22,7 @@ For more information about Cypress, refer to this [documentation](https://docs.c
 
 To integrate Cypress with Angular, follow the below steps.
 
-1.Create the angular application and add the Syncfusion DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
+1.Create the angular application and add the Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
 
 2.Once create the application, run the below command to install the Cypress.
 
@@ -45,7 +45,7 @@ Cypress supports two [types of testing](https://docs.cypress.io/guides/core-conc
 
 For Cypress testing type comparison, refer to this [documentation](https://docs.cypress.io/guides/core-concepts/testing-types#Testing-Type-Comparison).
 
-## Cypress E2E Testing of Syncfusion Angular Components 
+## Cypress E2E Testing of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components 
 
 The following steps explain how to test the Angular DataGrid component using Cypress E2E testing.
 
@@ -91,7 +91,7 @@ ng e2e
 
 For more information about Cypress E2E testing, refer to this [documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test).
 
-## Cypress Component Testing of Syncfusion Angular Components 
+## Cypress Component Testing of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components 
 
 The following steps explain how to test the Angular DataGrid component in [Cypress component testing](https://docs.cypress.io/guides/component-testing/overview).
 
@@ -137,7 +137,7 @@ ng e2e
 
 ![Cypress test result](../../common/how-to/images/cypress-testing.png)
 
-6.To resolve the license banner in the automation browsers, [register the Syncfusion license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) in the `./cypress/support/component.ts` file as follows.
+6.To resolve the license banner in the automation browsers, [register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) in the `./cypress/support/component.ts` file as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.cy.ts" %}
@@ -150,4 +150,4 @@ registerLicense('License Key');
 {% endhighlight %}
 {% endtabs %}
 
-> [View the Syncfusion Angular Cypress testing sample on GitHub](https://github.com/SyncfusionExamples/Syncfusion-Angular-Cypress-Testing)
+> [View the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Cypress testing sample on GitHub](https://github.com/SyncfusionExamples/Syncfusion-Angular-Cypress-Testing)

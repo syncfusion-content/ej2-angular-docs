@@ -50,7 +50,7 @@ The following example shows the rounded and squared appearance of the message, w
 
 ## CSS Message
 
-The Essential JS 2 Message has predefined CSS classes that can be defined in the HTML elements, which renders the message without any script reference. This can display a simple message with content and make the code lighter.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message has predefined CSS classes that can be defined in the HTML elements, which renders the message without any script reference. This can display a simple message with content and make the code lighter.
 
 The following DOM structure is required to display the simple message with the content.
 

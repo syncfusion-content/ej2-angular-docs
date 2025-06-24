@@ -17,7 +17,7 @@ standalone: true,
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' width=3 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>
-    <button ej-button id='update' (click)='click()'>Update Data</button>`
+   `
 })
 export class AppComponent implements OnInit {
     @ViewChild('chart')
@@ -62,25 +62,36 @@ export class AppComponent implements OnInit {
     }
     public chartMouseClick(args: IMouseEventArgs): void {
         let isRemoved: boolean = false;
-        if (args.axisData) {
+        if (args.axisData && this.chart?.series) {
             for (let i: number = 0; i < (this.chart.series[0] as Series).points.length; i++) {
-                let markerWidth: number = (this.chart.series[0] as Series).marker.width / 2;
+                let markerWidth: number = (this.chart.series[0] as Series).marker?.width ?? 0 / 2;
                 let roundedX: number = Math.round(args.axisData['primaryXAxis']) + markerWidth;
-                    let roundedY: number = Math.round(args.axisData['primaryYAxis']) + markerWidth;
-                    let pointX: number = Math.round((this.chart.series[0] as Series).points[i].x as number) + markerWidth;
-                    let pointY: number = Math.round((this.chart.series[0] as Series).points[i].y as number) + markerWidth;
-                    if ((roundedX === pointX || roundedX + 1 === pointX || roundedX - 1 === pointX) &&
-                        (roundedY === pointY || roundedY + 1 === pointY || roundedY - 1 === pointY)) {
+                let roundedY: number = Math.round(args.axisData['primaryYAxis']) + markerWidth;
+                let pointX: number = Math.round((this.chart.series[0] as Series).points[i].x as number) + markerWidth;
+                let pointY: number = Math.round((this.chart.series[0] as Series).points[i].y as number) + markerWidth;
+                if ((roundedX === pointX || roundedX + 1 === pointX || roundedX - 1 === pointX) &&
+                    (roundedY === pointY || roundedY + 1 === pointY || roundedY - 1 === pointY)) {
                     if ((this.chart.series[0] as Series).points.length > 1) {
                         const points = (this.chart.series[0] as Series).points;
                         const duration: number = i === 0 || i === points[points.length - 1].index ? 500 : 0;
-                        this.chart.series[0].removePoint(i, duration);
+                        if (this.chart?.series?.length) {
+                            if (typeof this.chart.series[0].removePoint === 'function') {
+                                this.chart.series[0].removePoint(i, duration);
+                            }
+                        }
                     }
                     isRemoved = true;
                 }
             }
             if (!isRemoved) {
-                this.chart.series[0].addPoint({ x: Math.round(args.axisData['primaryXAxis']), y: Math.round(args.axisData['primaryYAxis']) });
+                if (this.chart?.series?.length) {
+                    if (typeof this.chart.series[0].addPoint === 'function') {
+                        this.chart.series[0].addPoint({
+                            x: Math.round(args.axisData['primaryXAxis']),
+                            y: Math.round(args.axisData['primaryYAxis'])
+                        });
+                    }
+                }
             }
         }
     };

@@ -183,6 +183,53 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 >* The Grid state persistence feature does not support the  `changeDataSource` method.
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/flexible-data) resource.
 
+## Prevent to convert local time zone format for date column
+
+By default, Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without any timezone conversion.
+
+To prevent timezone conversion for a date column, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to **0** ensures that dates remain in the original format received from the server without conversion to the local timezone.
+
+The following example demonstrates how to prevent local time zone conversion for date columns in Syncfusion Angular Grid by using the `DataUtil.serverTimezoneOffset` property:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/databinding-timezone/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/databinding-timezone/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/databinding-timezone" %}
+
+## How to set custom headers using a custom adaptor in Syncfusion Angular Grid
+
+Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion Angular Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
+
+This method is particularly useful when integrating the Grid with authenticated APIs, where requests must include authorization tokens or other security credentials to ensure secure access.
+
+To achieve this, the `WebApiAdaptor` can be extended to create the custom adaptor. The `beforeSend` method in the custom adaptor allows modifying request headers before sending them to the server. This ensures that every request from the Grid includes the required headers.
+
+The following example demonstrates how to set custom headers using the custom adaptor in Syncfusion Angular Grid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-headers-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% include code-snippet/grid/custom-headers-cs1/src/app.template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-headers-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/custom-headers-cs1" %}
+
+![CustomHeaders](../images/custom-headers.png)
+
 ## See also
 
 * [Binding a firebase data source to Grid using AngularFire2](https://www.syncfusion.com/blogs/post/binding-a-firebase-data-source-to-grid-using-angularfire2.aspx)

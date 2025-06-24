@@ -85,3 +85,13 @@ Use the following CSS to customize the Chips avatar text properties.
     color: #fafafa;
 }
 ```
+
+## Customizing the Chips height
+
+Use the following CSS to customize the Chips height.
+
+```css
+.e-chip-list.e-chip {
+    height: 60px;
+  }
+```

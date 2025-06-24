@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customizing Appearance of Suggestions
 
-The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api/smart-textarea/#aisuggestionhandler) property in Syncfusion Angular Smart TextArea allows you to control how text suggestions are displayed to the users.
+The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api/smart-textarea/#aisuggestionhandler) property in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart TextArea allows you to control how text suggestions are displayed to the users.
 
 * If `ShowSuggestionOnPopup` is `Enable`, suggestions displayed in the pop-up window
 
@@ -43,4 +43,4 @@ By default `showSuggestionOnPopup` is `None`.
 
 ## See also
 
-* [Getting Started with Syncfusion Angular Smart TextArea](./getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart TextArea](./getting-started)

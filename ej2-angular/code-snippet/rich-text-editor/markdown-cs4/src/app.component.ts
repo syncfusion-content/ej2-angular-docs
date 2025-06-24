@@ -1,9 +1,9 @@
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
 import { Component, ViewChild } from '@angular/core';
 import { RichTextEditorModule, ToolbarSettingsModel, ContentRender, RichTextEditorComponent, MarkdownFormatter, ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
-import * as Marked from 'marked';
-
+import { marked } from 'marked';
 enableRipple(true);
+
 @Component({
     imports: [RichTextEditorModule],
     standalone: true,
@@ -12,6 +12,7 @@ enableRipple(true);
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService]
 })
+
 export class AppComponent {
     @ViewChild('mdCustom')
     public editorObj?: RichTextEditorComponent;
@@ -51,7 +52,7 @@ export class AppComponent {
         if (this.mdsource ?.classList.contains('e-active')) {
             let id: string = this.editorObj ?.getID() + 'html-view';
             let htmlPreview: Element = this.editorObj!.element.querySelector('#' + id) as Element;
-            htmlPreview.innerHTML = await Marked.parse(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = await marked(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
         }
     }
     public async fullPreview(): Promise<void> {
@@ -70,7 +71,7 @@ export class AppComponent {
             }
             this.textArea!.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = await Marked.parse(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = await marked(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
             this.mdsource!.parentElement!.title = 'Code View';
         }
     }

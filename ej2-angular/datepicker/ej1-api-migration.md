@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Datepicker component
 
-This article describes the API migration process of DatePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of DatePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Date Selection
 
@@ -19,8 +19,8 @@ This article describes the API migration process of DatePicker component from Es
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -53,8 +53,8 @@ Setting the value
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -103,8 +103,8 @@ Day header format
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -158,8 +158,8 @@ Depth view
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -213,8 +213,8 @@ Maximum date
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -259,8 +259,8 @@ public disableDate(args) {
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -838,8 +838,8 @@ public onOpen(args:any) {
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -872,8 +872,8 @@ Enable/Disable the RTL
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -906,8 +906,8 @@ Enable/Disable the persistence
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -998,8 +998,8 @@ this.formObject = new FormValidator('#form-element', options);
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1277,8 +1277,8 @@ Specify the placeholder text behavior
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1332,8 +1332,8 @@ First day of week
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1366,8 +1366,8 @@ Strict mode
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1509,8 +1509,8 @@ public onCreate(args:any){
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>

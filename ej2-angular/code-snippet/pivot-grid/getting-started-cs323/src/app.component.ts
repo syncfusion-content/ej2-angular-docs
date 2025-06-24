@@ -4,13 +4,13 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component, OnInit } from '@angular/core';
 import {
-  IDataOptions,
   IDataSet,
   DisplayOption,
   PivotChartService
 } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 import { Observable } from 'rxjs';
 @Component({
 imports: [
@@ -27,7 +27,7 @@ standalone: true,
   [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`,
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings?: IDataOptions;
+  public dataSourceSettings?: DataSourceSettingsModel;
   public chartSettings?: ChartSettings;
   public displayOption?: DisplayOption;
   public observable = new Observable();

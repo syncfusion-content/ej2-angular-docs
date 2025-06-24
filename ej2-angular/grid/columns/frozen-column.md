@@ -30,6 +30,7 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
 > * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the columns that are visible in the current view.
 > * You can use both `frozenColumns` property and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property in the same application.
+> * When both frozen columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
 
 ## Freeze particular columns
 
@@ -125,6 +126,26 @@ The following example demonstrates how to change the default frozen line color u
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs4" %}
+
+## Render DatePicker in frozen columns in Angular Grid
+
+The Syncfusion Angular Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property, where a custom editor (DatePicker) is assigned to the specific column.
+
+To integrate a `DatePicker` in a frozen column, configure the column’s `edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
+
+The following example demonstrates how to render the `DatePicker` in the **OrderDate** column while keeping it frozen. Here the datepicker object is appended to the corresponding input element in the editing row.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/frozencolumns-cs5/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/frozencolumns-cs5/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/frozencolumns-cs5" %}
 
 ## Deprecated methods 
 

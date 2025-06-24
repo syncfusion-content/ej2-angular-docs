@@ -67,7 +67,11 @@ export class AppComponent implements OnInit {
         };
     }
     click() {
+        if (this.chart?.series?.length) {
+            if (typeof this.chart.series[0].removePoint === 'function') {
         this.chart?.series[0].removePoint(0);
+            }
+        }
     }
 }
 

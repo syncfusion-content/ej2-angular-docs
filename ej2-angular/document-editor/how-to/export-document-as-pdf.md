@@ -24,75 +24,98 @@ The following example code illustrates how to export the document as pdf in clie
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ImageFormat, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 import {
-    PdfBitmap,
-    PdfDocument,
-    PdfPageOrientation,
-    PdfPageSettings,
-    PdfSection,
-    SizeF,
-  } from '@syncfusion/ej2-pdf-export';
+  ToolbarService,
+  DocumentEditorContainerComponent,
+  ImageFormat,
+} from '@syncfusion/ej2-angular-documenteditor';
+import {
+  PdfBitmap,
+  PdfDocument,
+  PdfPageOrientation,
+  PdfPageSettings,
+  PdfSection,
+  SizeF,
+} from '@syncfusion/ej2-pdf-export';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<button id='export'(click)="onClick()">Export</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+    [enableToolbar]=true >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
-    @ViewChild('documenteditor_default')
-    public container: DocumentEditorContainerComponent;
-    ngOnInit(): void {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+  ngOnInit(): void {}
+  onClick(): void {
+    let pdfdocument: PdfDocument = new PdfDocument();
+    let count: number = (this.container as DocumentEditorContainerComponent)
+      .documentEditor.pageCount;
+    let documentName: string = (
+      this.container as DocumentEditorContainerComponent
+    ).documentEditor.documentName;
+    (
+      this.container as DocumentEditorContainerComponent
+    ).documentEditor.documentEditorSettings.printDevicePixelRatio = 2;
+    let loadedPage = 0;
+    for (let i = 1; i <= count; i++) {
+      setTimeout(() => {
+        let format: ImageFormat = 'image/jpeg' as ImageFormat;
+        // Getting pages as image
+        let image = this.container?.documentEditor.exportAsImage(i, format);
+        (image as HTMLImageElement).onload = function () {
+          let imageHeight = parseInt(
+            (image as HTMLImageElement).style.height
+              .toString()
+              .replace('px', '')
+          );
+          let imageWidth = parseInt(
+            (image as HTMLImageElement).style.width.toString().replace('px', '')
+          );
+          let section: PdfSection = pdfdocument.sections.add() as PdfSection;
+          let settings: PdfPageSettings = new PdfPageSettings(0);
+          if (imageWidth > imageHeight) {
+            settings.orientation = PdfPageOrientation.Landscape;
+          }
+          settings.size = new SizeF(imageWidth, imageHeight);
+          (section as PdfSection).setPageSettings(settings);
+          let page = section.pages.add();
+          let graphics = page.graphics;
+          let imageStr = (image as HTMLImageElement).src.replace(
+            'data:image/jpeg;base64,',
+            ''
+          );
+          let pdfImage = new PdfBitmap(imageStr);
+          graphics.drawImage(pdfImage, 0, 0, imageWidth, imageHeight);
+          loadedPage++;
+          if (loadedPage == count) {
+            // Exporting the document as pdf
+            pdfdocument.save(
+              (documentName === '' ? 'sample' : documentName) + '.pdf'
+            );
+          }
+        };
+      }, 500);
     }
-    onClick():void {
-        let obj = this;
-        let pdfdocument: PdfDocument = new PdfDocument();
-        let count: number = obj.container.documentEditor.pageCount;
-        obj.container.documentEditor.documentEditorSettings.printDevicePixelRatio = 2;
-        let loadedPage = 0;
-        for (let i = 1; i <= count; i++) {
-          setTimeout(() => {
-            let format: ImageFormat = 'image/jpeg' as ImageFormat;
-            // Getting pages as image
-            let image = obj.container.documentEditor.exportAsImage(i, format);
-            image.onload = function () {
-              let imageHeight = parseInt(
-                image.style.height.toString().replace('px', '')
-              );
-              let imageWidth = parseInt(
-                image.style.width.toString().replace('px', '')
-              );
-              let section: PdfSection = pdfdocument.sections.add() as PdfSection;
-              let settings: PdfPageSettings = new PdfPageSettings(0);
-              if (imageWidth > imageHeight) {
-                settings.orientation = PdfPageOrientation.Landscape;
-              }
-              settings.size = new SizeF(imageWidth, imageHeight);
-              (section as PdfSection).setPageSettings(settings);
-              let page = section.pages.add();
-              let graphics = page.graphics;
-              let imageStr = image.src.replace('data:image/jpeg;base64,', '');
-              let pdfImage = new PdfBitmap(imageStr);
-              graphics.drawImage(pdfImage, 0, 0, imageWidth, imageHeight);
-              loadedPage++;
-              if (loadedPage == count) {
-                  // Exporting the document as pdf
-                pdfdocument.save(
-                  (obj.container.documentEditor.documentName === ''
-                    ? 'sample'
-                    : obj.container.documentEditor.documentName) + '.pdf'
-                );
-              }
-            };
-          }, 500);
-        }
-    }
+  }
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 ## Export document as pdf in server-side using Syncfusion DocIO
 
-With the help of [`Syncfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
+With the help of [Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
 
 The following way illustrates how to convert the document as PDF:
 
@@ -101,33 +124,45 @@ The following way illustrates how to convert the document as PDF:
 The following example code illustrates how to convert the document to sfdt and pass it to server-side.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService]
+  imports: [DocumentEditorContainerModule],
+
+  standalone: true,
+  selector: 'app-container',
+  // specifies the template string for the DocumentEditorContainer component
+  template: `<button id='export'(click)="onClick()">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+  providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
-    @ViewChild('documenteditor_default')
-    public container: DocumentEditorContainerComponent;
-    ngOnInit(): void {
-    }
-    onClick():void {
-        let obj=this;
-        let http: XMLHttpRequest = new XMLHttpRequest();
-        // Replace your running web service Url here
-        http.open('POST', 'http://localhost:62869/api/documenteditor/ExportPdf');
-        http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-        http.responseType = 'json';
-        //Serialize document content as SFDT.
-        let sfdt: any = { content: obj.container.documentEditor.serialize() };
-        //Send the sfdt content to server side.
-        http.send(JSON.stringify(sfdt));
-    }
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+
+  ngOnInit(): void {}
+  onClick(): void {
+    let obj = this;
+    let http: XMLHttpRequest = new XMLHttpRequest();
+    // Replace your running web service Url here
+    http.open('POST', 'http://localhost:62869/api/documenteditor/ExportPdf');
+    http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    http.responseType = 'json';
+    //Serialize document content as SFDT.
+    let sfdt: any = { content: obj.container?.documentEditor.serialize() };
+    //Send the sfdt content to server side.
+    http.send(JSON.stringify(sfdt));
+  }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 * Using Save API in server-side, you can convert the sfdt to stream.
 * Finally, convert the stream to PDF using [`Syncfusion.DocIORenderer.Net.Core`](https://www.nuget.org/packages/Syncfusion.DocIORenderer.Net.Core) library.

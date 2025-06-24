@@ -33,6 +33,7 @@ popupWidth='250px' popupHeight='200px'>
 `,
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
+
 export class AppComponent {
   public value: string = "<p>Hello <span contenteditable=\"false\" class=\"e-mention-chip\"><a href=\"mailto:maria@gmail.com\" title=\"maria@gmail.com\">&#64;Maria</a></span>&#8203;</p><p>Welcome to the mention integration with rich text editor demo. Type <code>&#64;</code> character and tag user from the suggestion list.</p>";
   @ViewChild('mention') mentionObj!: Mention;

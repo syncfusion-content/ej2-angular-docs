@@ -1,17 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerAllModule,NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
+import { FileManagerAllModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [FileManagerAllModule, ],
-
-providers:[NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerAllModule,],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [showHiddenItems]='showHiddenItems' height="375px">

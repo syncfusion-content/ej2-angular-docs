@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
 
-import { Component, HostListener, ViewChild } from '@angular/core';
-import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
-
+import { Component } from '@angular/core';
 
 @Component({
     imports: [ FormsModule, ReactiveFormsModule, AIAssistViewModule ],

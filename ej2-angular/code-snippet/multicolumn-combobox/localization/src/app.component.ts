@@ -21,7 +21,7 @@ import { L10n } from '@syncfusion/ej2-base';
                     <e-column field='ContactName' header='Contact Name' width='90'></e-column>
                     <e-column field='CustomerID' header='Customer ID' width='120'></e-column>
                   </e-columns>
-              </ejs-multicolumncombobox></div>`
+              </ejs-multicolumncombobox>`
 })
 export class AppComponent {
   public waterMark: string = 'Sélectionnez un client';

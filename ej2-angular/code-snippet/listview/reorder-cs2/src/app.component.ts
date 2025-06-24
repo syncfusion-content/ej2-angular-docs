@@ -17,7 +17,6 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-
     public data = [
         { text: 'Hennessey Venom', id: 'list-01' },
         { text: 'Bugatti Chiron', id: 'list-02' },
@@ -30,9 +29,7 @@ export class AppComponent {
         { text: 'McLaren P1', id: 'list-09' },
         { text: 'Ferrari LaFerrari', id: 'list-10' },
     ];
-
     public fields = { dataSource: this.data, id: 'id', text: 'text' };
-
     onDragStop(args: any) {
         //Block the Child Drop operation in TreeView
         let draggingItem = document.getElementsByClassName("e-drop-in");

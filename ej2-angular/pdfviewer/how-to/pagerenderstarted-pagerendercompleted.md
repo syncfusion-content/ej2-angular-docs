@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # PageRenderInitiate and PageRenderComplete event
 
-In Syncfusion PDF Viewer, [pageRenderInitiate](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderInitiateEventArgs/) and [pageRenderComplete](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderCompleteEventArgs/)actions are events that occur during the rendering process of PDF documents. 
+In Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer, [pageRenderInitiate](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderInitiateEventArgs/) and [pageRenderComplete](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderCompleteEventArgs/)actions are events that occur during the rendering process of PDF documents. 
 
 **pageRenderInitiate** 
 
@@ -44,6 +44,6 @@ public pageRenderComplete(args: any): void {
 }
 ```
 
-The provided code demonstrates how to subscribe to the [pageRenderInitiate](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderInitiateEventArgs/) and [pageRenderComplete](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderCompleteEventArgs/) events in the Syncfusion PDF Viewer component. 
+The provided code demonstrates how to subscribe to the [pageRenderInitiate](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderInitiateEventArgs/) and [pageRenderComplete](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/pageRenderCompleteEventArgs/) events in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer component. 
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/PageRenderStarted%20and%20PageRenderCompleted%20event)

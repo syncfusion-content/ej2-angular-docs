@@ -266,6 +266,28 @@ The following example demonstrates how to clear the searched records using an ex
 
 > You can also clear the searched records by using the clear icon within the search input field.
 
+## Retrieving searched records using a button click
+
+The Syncfusion Angular Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
+
+To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
+
+The following example demonstrates how to retrieve searched records using an external button.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/src/app.template.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/retrieve-searched-records-cs1" %}
+
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering#wildcard-and-like-operator-filter)

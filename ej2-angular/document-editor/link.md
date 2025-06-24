@@ -70,6 +70,8 @@ export class AppComponent {
 }
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 If the selection is in hyperlink, trigger this event by calling `navigateHyperlink` method of `Selection` instance. Refer to the following example.
 
 ```typescript
@@ -113,7 +115,7 @@ Refer to the following example.
 You can customize the screen tip text for the hyperlink by using below sample code.
 
 ```typescript
-this.documentEditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
+this.documentEditor.editor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
 Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)

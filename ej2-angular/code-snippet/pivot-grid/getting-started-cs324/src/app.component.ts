@@ -1,0 +1,43 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
+
+@Component({
+  imports: [
+    PivotViewAllModule,
+    PivotFieldListAllModule
+  ],
+  standalone: true,
+  selector: 'app-container',
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings  width='250' (load)="load($event)"></ejs-pivotview></div>`
+})
+export class AppComponent implements OnInit {
+  public dataSourceSettings?: DataSourceSettingsModel;
+
+  @ViewChild('pivotview', { static: false })
+  public pivotGridObj?: PivotView;
+
+  load(args: any): void {
+    if (this.pivotGridObj) {
+      this.pivotGridObj.minWidth = 250;
+    }
+  }
+
+  ngOnInit(): void {
+    this.dataSourceSettings = {
+      dataSource: Pivot_Data as IDataSet[],
+      expandAll: false,
+      enableSorting: true,
+      drilledMembers: [{ name: 'Country', items: ['France'] }],
+      columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+      values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+      rows: [{ name: 'Country' }, { name: 'Products' }],
+      formatSettings: [{ name: 'Amount', format: 'C0' }],
+      filters: [],
+    };
+  }
+}

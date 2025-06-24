@@ -4,9 +4,6 @@ import { GanttModule, GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { editingData, editingResources } from './data';
 import { DragAndDropEventArgs } from '@syncfusion/ej2-navigations';
@@ -45,7 +42,7 @@ export class AppComponent{
     public gridLines?: string;
     public resources?: object[];
     public resourceFields?: object;
-    public field: Object = { dataSource: editingResources, id: 'resourceId', text: 'resourceName' };
+    public field: Object = { dataSource: editingResources, id: 'ResourceId', text: 'ResourceName' };
     public allowDragAndDrop: boolean = true;
     @ViewChild('gantt')
     public ganttObj?: GanttComponent| any;
@@ -61,9 +58,9 @@ timelineSettings: any;
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            child: 'subtasks',
-            notes: 'info',
-            resourceInfo: 'resources'
+            parentID:'ParentID',
+            notes: 'Info',
+            resourceInfo: 'Resources'
         };
         this.editSettings = {
             allowAdding: true,
@@ -76,12 +73,12 @@ timelineSettings: any;
             type: 'Multiple'
         };
         this.resourceFields = {
-            id: 'resourceId',
-            name: 'resourceName'
+            id: 'ResourceId',
+            name: 'ResourceName'
         };
         this.labelSettings = {
             leftLabel: 'TaskName',
-            rightLabel: 'resources'
+            rightLabel: 'Resources'
         };
         this.projectStartDate= new Date('03/28/2019');
         this.projectEndDate= new Date('07/06/2019');
@@ -108,18 +105,18 @@ timelineSettings: any;
         }
         let record: any = args.draggedNodeData;
         let selectedData = this.ganttObj.flatData[this.ganttObj.selectedRowIndex];
-        let selectedDataResource = selectedData.taskData.resources;
+        let selectedDataResource = selectedData.taskData.Resources;
         let resources = [];
         if (selectedDataResource) {
             for (var i = 0; i < selectedDataResource.length; i++) {
-              resources.push(selectedDataResource[i].resourceId);
+              resources.push(selectedDataResource[i].ResourceId);
             }
         }
         resources.push(parseInt(record.id));
         if (chartEle || gridEle) {
             var data = {
                 TaskID: selectedData.taskData.TaskID,
-                resources: resources
+                Resources: resources
             };
             this.ganttObj.updateRecordByID(data);
         }

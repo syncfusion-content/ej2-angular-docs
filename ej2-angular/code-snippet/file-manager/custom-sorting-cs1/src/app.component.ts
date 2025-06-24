@@ -1,15 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 import { sortComparer } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
-imports: [FileManagerModule, ],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule,],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings' [sortComparer]='sortComparer' [detailsViewSettings]='detailsViewSettings' height="375px"></ejs-filemanager>`
@@ -29,9 +27,9 @@ export class AppComponent {
         this.sortComparer = sortComparer;
         this.detailsViewSettings = {
             columns: [
-                {field: 'name', headerText: 'File Name', minWidth: 120, width: 'auto', customAttributes: { class: 'e-fe-grid-name' },template: '${name}', sortComparer : sortComparer},
-                {field: 'size', headerText: 'File Size',minWidth: 50, width: '110', template: '${size}'},
-                { field: '_fm_modified', headerText: 'Date Modified',minWidth: 50, width: '190'}
+                { field: 'name', headerText: 'File Name', minWidth: 120, width: 'auto', customAttributes: { class: 'e-fe-grid-name' }, template: '${name}', sortComparer: sortComparer },
+                { field: 'size', headerText: 'File Size', minWidth: 50, width: '110', template: '${size}' },
+                { field: '_fm_modified', headerText: 'Date Modified', minWidth: 50, width: '190' }
             ]
         };
     }

@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
@@ -38,7 +34,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
     }
     change(): void {

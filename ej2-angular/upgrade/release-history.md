@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Release History
 
-Each new Syncfusion release introduces exciting features and improvements. To gain insights into the specific changes included with each release, consult the Syncfusion Angular [release notes](https://ej2.syncfusion.com/angular/documentation/release-notes/index/).
+Each new Syncfusion<sup style="font-size:70%">&reg;</sup> release introduces exciting features and improvements. To gain insights into the specific changes included with each release, consult the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular [release notes](https://ej2.syncfusion.com/angular/documentation/release-notes/index/).
 
 For additional guidance, refer to our [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components) for Angular to learn more about:
 

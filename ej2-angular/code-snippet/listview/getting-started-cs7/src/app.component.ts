@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
 import { SelectEventArgs } from "@syncfusion/ej2-lists";
 @Component({
-imports: [
-        
-        ListViewModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `<div id="sample">
+  imports: [
+    ListViewModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `<div id="sample">
       <div class="content-wrapper">
     <ejs-listview id='listview-def' [dataSource]='listData' [width]='250' (select)='onSelect($event)' (actionBegin)='onActionBegin($event)' (actionComplete)='onActionComplete($event)'></ejs-listview>
          </div>
@@ -32,88 +25,88 @@ standalone: true,
                 </div>
             </div>
         </div>`,
-        styles: [`
-       #EventLog b {
-  color: #388e3c;
-}
+  styles: [`
+      #EventLog b {
+        color: #388e3c;
+      }
 
-#listview-def {
-  border: 1px solid #dcdcdc;
-}
-.content-wrapper {
-  padding-left: 40px;
-  padding-top: 36px;
-}
+      #listview-def {
+        border: 1px solid #dcdcdc;
+      }
+      .content-wrapper {
+        padding-left: 40px;
+        padding-top: 36px;
+      }
 
-.evtbtn {
-  margin-top: 40px;
-  margin-left: 70px;
-}
+      .evtbtn {
+        margin-top: 40px;
+        margin-left: 70px;
+      }
 
-/* csslint ignore:start */
+      /* csslint ignore:start */
 
-hr {
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
-}
+      hr {
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+      }
 
-/* csslint ignore:end */
+      /* csslint ignore:end */
 
-#evt {
-  border: 1px solid #dcdcdc;
-  padding: 10px;
-  min-width: 10px;
-}
+      #evt {
+        border: 1px solid #dcdcdc;
+        padding: 10px;
+        min-width: 10px;
+      }
 
-#sample {
-  display: inline-flex;
-}
+      #sample {
+        display: inline-flex;
+      }
 
-.eventarea {
-  min-width: 250px;
-}
+      .eventarea {
+        min-width: 250px;
+      }
 
-#list_event {
-  margin-top: -25px;
-  padding-left:40px;
-  min-width: 200px;
-}
+      #list_event {
+        margin-top: -25px;
+        padding-left:40px;
+        min-width: 200px;
+      }
         `],
-        encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
-    @ViewChild('EventLog') EventLogEle:any;
-    public listData: Object =  [
-  { text: "Hennessey Venom", id: "list-01" },
-  { text: "Bugatti Chiron", id: "list-02" },
-  { text: "Bugatti Veyron Super Sport", id: "list-03" },
-  { text: "SSC Ultimate Aero", id: "list-04" },
-  { text: "Koenigsegg CCR", id: "list-05" },
-  { text: "McLaren F1", id: "list-06" },
-  { text: "Aston Martin One- 77", id: "list-07" },
-  { text: "Jaguar XJ220", id: "list-08" },
-  { text: "McLaren P1", id: "list-09" },
-  { text: "Ferrari LaFerrari", id: "list-10" }
-];
-   onclick(event: any){
+  @ViewChild('EventLog') EventLogEle: any;
+  public listData: Object = [
+    { text: "Hennessey Venom", id: "list-01" },
+    { text: "Bugatti Chiron", id: "list-02" },
+    { text: "Bugatti Veyron Super Sport", id: "list-03" },
+    { text: "SSC Ultimate Aero", id: "list-04" },
+    { text: "Koenigsegg CCR", id: "list-05" },
+    { text: "McLaren F1", id: "list-06" },
+    { text: "Aston Martin One- 77", id: "list-07" },
+    { text: "Jaguar XJ220", id: "list-08" },
+    { text: "McLaren P1", id: "list-09" },
+    { text: "Ferrari LaFerrari", id: "list-10" }
+  ];
+  onclick(event: any) {
     this.EventLogEle.nativeElement.innerHTML = "";
-   }
-   onSelect(args: SelectEventArgs){
+  }
+  onSelect(args: SelectEventArgs) {
     this.appendElement(args.text + "<b>&nbsp;&nbsp;is selected</b><hr>");
-   }
-   onActionBegin(args:any){
-     this.appendElement("<b>actionBegin </b> event is triggered<hr>");
-   }
-   onActionComplete(args:any){
-     this.appendElement("<b>actionComplete</b> is triggered <hr>");
-   }
+  }
+  onActionBegin(args: any) {
+    this.appendElement("<b>actionBegin </b> event is triggered<hr>");
+  }
+  onActionComplete(args: any) {
+    this.appendElement("<b>actionComplete</b> is triggered <hr>");
+  }
   appendElement(html: string): void {
-     let span: HTMLElement = document.createElement("span");
-     span.innerHTML = html;
-     let log: HTMLElement = this.EventLogEle.nativeElement;
-     log.insertBefore(span, log.firstChild);
-}
+    let span: HTMLElement = document.createElement("span");
+    span.innerHTML = html;
+    let log: HTMLElement = this.EventLogEle.nativeElement;
+    log.insertBefore(span, log.firstChild);
+  }
 }
 
 

@@ -21,7 +21,7 @@ import { Pager } from "@syncfusion/ej2-angular-grids";
       <table class="w-100"> <tr><td class="w-25">Order ID</td><td class="w-45">Ship       Name</td><td class="w-25">Ship City</td></tr></table>
     </ng-template>
     <ng-template #template let-data="">
-      <table class="w-100"> <tr><td class="w-25">{{data.OrderID}}</td><td class="w-45">{{data.ShipName}}</td><td class="w-25" >{{data.ShipCity}}</td></tr></table>
+      <table class="w-100"> <tr><td class="w-25" title="{{data.OrderID}}">{{data.OrderID}}</td><td class="w-45" title="{{data.ShipName}}">{{data.ShipName}}</td><td class="w-25" title="{{data.ShipCity}}">{{data.ShipCity}}</td></tr></table>
     </ng-template>
   </ejs-listview>
   <ejs-pager [pageSize]= 'pagesize' [totalRecordsCount]='totalrec' [pageCount]='pageCount' (click)='clickevent($event)'>

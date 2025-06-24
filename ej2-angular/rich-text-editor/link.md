@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## Inserting a Link
+## Insert link
 
 To insert a hyperlink:
 
@@ -43,7 +43,7 @@ To insert a hyperlink:
 
 > The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
-## Removing a Link
+## Edit and remove link
 
 To remove a hyperlink:
 
@@ -52,41 +52,30 @@ To remove a hyperlink:
 
 This action will remove the hyperlink while keeping the original text or image intact.
 
-## Auto Link Generation
+## Auto link generation
 
 The Rich Text Editor supports automatic link generation. When you type a URL and press Space or Enter, the editor automatically converts the typed URL into a clickable hyperlink.
 
-## Customizing the Link Quick Toolbar
+## Inserting a related link
 
-The Rich Text Editor allows you to customize the tools in the link quick toolbar. You can add or remove items by using the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
+By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
 
-
-The quick toolbar for the Link has the following options.
-
-| Tools | Description |
-|----------------|--------------------------------------|
-| Open | Opens the linked page in a new window. |
-| Edit Link | Allows you to edit the selected link. |
-| Remove Link | Removes the link from the selected content. |
-| Custom Tool | Adds custom options to the quick toolbar. |
-
-
-The following example demonstrates how to customize the link quick toolbar using the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
+However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17/src/app.component.ts %}
+{% include code-snippet/rich-text-editor/relative-url/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17/src/main.ts %}
+{% include code-snippet/rich-text-editor/relative-url/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/relative-url" %}
 
-## See Also
+## See also
 
-* [Quick Toolbars in Toolbar](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
-* [Image with links](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/images#hyperlinking-images)
+* [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
+* [Image with links](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/insert-images#hyperlinking-images)
 * [Insert File Attachments](./how-to/file-attachments)

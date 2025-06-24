@@ -27,24 +27,24 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI command.
 
 ```bash
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Schedule package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-schedule`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/20.2.38) package to the application.
 
@@ -54,7 +54,7 @@ npm install @syncfusion/ej2-angular-schedule --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-schedule@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/20.2.38-ngcc) package to the application.
 
@@ -149,7 +149,7 @@ The output will display the empty scheduler.
 
 ## Populating appointments
 
-To populate the empty Scheduler with appointments, define either the local JSON data or remote data through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property available within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) option. To define any appointments, start and end time fields are mandatory. In the following example, you can see the appointment defined with default fields such as Id, Subject, StartTime and EndTime.
+To populate an empty Scheduler with appointments, define either the local JSON data or remote data through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property available within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) option. To define any appointments, start and end time fields are mandatory. In the following example, you can see the appointment defined with default fields such as Id, Subject, StartTime and EndTime.
 
 `[src/app/app.component.ts]`
 

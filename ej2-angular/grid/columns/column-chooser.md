@@ -131,3 +131,51 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs6" %}
+
+## Column Chooser Template in Syncfusion Angular Grid
+
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property.
+
+To implement a custom column chooser template in the Grid, use the following properties:
+
+* **columnChooserSettings.headerTemplate** - Defines the header template of the column chooser.
+
+* **columnChooserSettings.template**- Defines the content template.
+
+* **columnChooserSettings.footerTemplate** - Defines the footer template.
+
+In this example, the Syncfusion TreeView component is rendered inside the column chooser using the **ng-template** directive. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettingsTemplate` reference variable is assigned an **ng-template**, where the TreeView component is rendered with checkboxes for selecting columns. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
+
+The column chooser footer is customized using the `columnChooserSettingsFooterTemplate` reference variable, which is assigned an **ng-template**, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `Click` event. Additionally, the header is customized using the `columnChooserSettingsHeaderTemplate` reference variable, which is assigned an **ng-template** to include a title and an icon.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/column-chooser-template/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/column-chooser-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/column-chooser-template" %}
+
+## Enable and disable search option
+
+By default, the search option in the column chooser allows filtering specific columns from the Grid's column list.
+
+The search option is enabled by default in the column chooser. However, you can disable it by setting the `columnChooserSettings.enableSearching` property to **false**.
+
+The following example demonstrates how to enable or disable the search option dynamically using a [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) and its [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event in the Grid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/columnchooser-enable-disable/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/columnchooser-enable-disable/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/columnchooser-enable-disable" %}

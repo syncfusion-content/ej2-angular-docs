@@ -19,29 +19,42 @@ You can use [`insertText`](https://ej2.syncfusion.com/angular/documentation/api/
 The following example illustrates how to add the text in current selection.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-    DocumentEditorContainerComponent, ToolbarService
+  ToolbarService,
+  DocumentEditorContainerComponent,
+  ImageFormat,
 } from '@syncfusion/ej2-angular-documenteditor';
 
-@Component({
-      selector: 'app-container',
-      // specifies the template string for the Document Editor container component
-      template: `<div><button ejs-button (click)="insertText()" >Insert Text</button>
-      <ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer></div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [ToolbarService]
-})
-export class AppComponent {
-    @ViewChild('documenteditor_default')
-    public container: DocumentEditorContainerComponent;
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 
-    public insertText(): void {
-        // It will insert the provided text in current selection
-        this.container.documentEditor.editor.insertText('Syncfusion');
-    }
+@Component({
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<div><button ejs-button (click)="insertText()" >Insert Text</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true >
+    </ejs-documenteditorcontainer>
+</div>
+  `,
+})
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+  ngOnInit(): void {}
+  public insertText(): void {
+    // It will insert the provided text in current selection
+    this.container?.documentEditor.editor.insertText('Syncfusion');
+  }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 ## Insert paragraph in current cursor position
 
@@ -70,48 +83,60 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "searchHighlightColor" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<button ejs-button (click)="insertText()" >Export HTML</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
-  onCreated() {
+  public insertText(): void {
     let proxy = this;
     let htmltags: string =
       "<?xml version='1.0' encoding='utf - 8'?><!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN''http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns ='http://www.w3.org/1999/xhtml' xml:lang='en' lang ='en'><body><h1>The img element</h1><img src='https://www.w3schools.com/images/lamp.jpg' alt ='Lamp Image' width='500' height='600'/></body></html>";
-      document.getElementById('export').addEventListener('click', () => {
-          let http: XMLHttpRequest = new XMLHttpRequest();
-          http.open('POST', 'http://localhost:5000/api/documenteditor/LoadString');
-          http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-          http.responseType = 'json';
-          http.onreadystatechange = function () {
-            if (http.readyState === 4) {
-              if (http.status === 200 || http.status === 304) {
-                // Insert the sfdt content in cursor position using paste API
-                proxy.container.documentEditor.editor.paste(http.response);
-              } else {
-                alert('failed;');
-              }
-            }
-          };
+    let http: XMLHttpRequest = new XMLHttpRequest();
+    http.open('POST', 'http://localhost:62869/api/documenteditor/LoadString');
+    http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    http.responseType = 'json';
+    http.onreadystatechange = function () {
+      if (http.readyState === 4) {
+        if (http.status === 200 || http.status === 304) {
+          // Insert the sfdt content in cursor position using paste API
+          proxy.container?.documentEditor.editor.paste(http.response);
+        } else {
+          alert('failed;');
+        }
+      }
+    };
 
-          let htmlContent: any = { content: htmltags };
-          http.send(JSON.stringify(htmlContent));
-      });
+    let htmlContent: any = { content: htmltags };
+    http.send(JSON.stringify(htmlContent));
   }
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 * Please refer the following code example for server-side web implementation for HTML conversion using DocumentEditor.
 
 ```c#
 //API controller for the conversion.
+[AcceptVerbs("Post")]
 [HttpPost]
+[EnableCors("AllowAllOrigins")]
+[Route("LoadString")]
 public string LoadString([FromBody]InputParameter data)
 {
       // You can also load HTML file/string from server side.

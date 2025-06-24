@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Loading Themes Without Internet Access
 
-Syncfusion's default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion provides an `offline-theme` file to reference Material styles with local fonts, ensuring the components function seamlessly without internet connectivity.
+Syncfusion's default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an `offline-theme` file to reference Material styles with local fonts, ensuring the components function seamlessly without internet connectivity.
 
 ## Material Theme Package
 
@@ -68,4 +68,4 @@ Post-installation, import the styles into your application by including the styl
 @import '../node_modules/@syncfusion/ej2-tailwind-theme/styles/offline-theme/tailwind.css';
 ```
 
-Syncfusion understands the necessity for offline-capable applications and offers an offline-theme file referencing themes with local fonts. This strategy guarantees a smooth user experience, making components adaptability possible even in environments with limited or no internet access.
+Syncfusion<sup style="font-size:70%">&reg;</sup> understands the necessity for offline-capable applications and offers an offline-theme file referencing themes with local fonts. This strategy guarantees a smooth user experience, making components adaptability possible even in environments with limited or no internet access.

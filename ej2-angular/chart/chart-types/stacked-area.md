@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 100% Stacked Area Chart in Angular Chart component | Syncfusion
-description: Learn here all about 100% Stacked Area Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: 100% Stacked Area Chart in Angular Charts | Syncfusion
+description: Learn here all about 100% Stacked Area Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 100% Stacked Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# 100% Stacked Area in Angular Chart component
+# 100% Stacked Area Chart in Angular Charts
 
 ## 100% Stacked Area
 

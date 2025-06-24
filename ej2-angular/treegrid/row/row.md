@@ -14,7 +14,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Customize row styles 
 
-Customizing the styles of rows in a Syncfusion Tree Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the tree grid. To customize the row styles in the tree grid, you can use CSS, properties, methods, or event support provided by the Syncfusion Angular TreeGrid component.
+Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the tree grid. To customize the row styles in the tree grid, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component.
 
 ### Using event
 
@@ -89,7 +89,7 @@ The following example demonstrates how to use `getRowByIndex` method to customiz
 
 ## Styling alternate rows
 
-You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion Tree Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
+You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
 
 To change the background color of the alternate rows, you can add the following CSS code to your application's stylesheet:
 
@@ -133,7 +133,7 @@ Please refer to the following example.
 
 ## Row height
 
-The Syncfusion Tree Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component. This property allows you to change the height of the entire tree grid row to your desired value.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component. This property allows you to change the height of the entire tree grid row to your desired value.
 
 In the following example, the demonstration illustrates how to dynamically alter the row height using the `rowHeight` property.
 
@@ -297,7 +297,7 @@ You can retrieve row information when hovering over a specific cell. This can be
 * The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Tree Grid element.
 * The `getRowInfo` method is used to retrieve the row information when hovering over a specific cell. This method takes a single parameter, which is the target element that is being hovered over.
 
-Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion Tree Grid.
+Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -314,7 +314,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 ## Adding a new row programmatically
 
-The Syncfusion Tree Grid provides a way to add a new row to the tree grid programmatically. This feature is useful when you want to add a new record to the tree grid without having the manually enter data in the tree grid. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method of the Tree Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides a way to add a new row to the tree grid programmatically. This feature is useful when you want to add a new record to the tree grid without having the manually enter data in the tree grid. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method of the Tree Grid.
 
 The `addRecord` method takes three parameters:
 
@@ -348,7 +348,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 
 ## Show or hide a row using an external actions
 
-In a Syncfusion tree grid, you can show or hide a particular row based on some external action, such as a checkbox click. This can be useful in scenarios where you want to hide certain rows from the tree grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of the treegrid and `getRowsObject` method of the grid object within the tree grid instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox.
+In a Syncfusion<sup style="font-size:70%">&reg;</sup> tree grid, you can show or hide a particular row based on some external action, such as a checkbox click. This can be useful in scenarios where you want to hide certain rows from the tree grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of the treegrid and `getRowsObject` method of the grid object within the tree grid instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox.
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the tree grid. You can use this method to iterate through all the rows and access their data and index.
 

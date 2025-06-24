@@ -26,18 +26,29 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true [showPropertiesPane]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [showPropertiesPane]=false
+      [enableToolbar]=true >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 >Note: Positioning and customizing the properties pane in Document editor container is not possible. Instead, you can hide the exiting properties pane and create your own pane using public API's.
 
@@ -53,17 +64,28 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=false >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
 }
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/angular/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 ## See Also
 

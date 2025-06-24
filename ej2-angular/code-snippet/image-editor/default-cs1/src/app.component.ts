@@ -5,18 +5,18 @@ import { enableRipple } from '@syncfusion/ej2-base'
 
 
 
-import { Component,ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
 import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
-imports: [
-        
+    imports: [
+
         ImageEditorModule
     ],
 
 
-standalone: true,
+    standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render Image Editor. -->
@@ -33,8 +33,8 @@ export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
     public toolbar: string[] = [];
-      public created(): void {
-      if (Browser.isDevice) {
+    public created(): void {
+        if (Browser.isDevice) {
             this.imageEditorObj?.open('./flower.png');
         } else {
             this.imageEditorObj?.open('./bridge.png');
@@ -42,17 +42,14 @@ export class AppComponent {
     }
     btnClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawText(dimension?.x, dimension?.y);
+        this.imageEditorObj?.drawText(dimension.x, dimension.y);
     }
     outlineText(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawText(dimension.x, dimension.y+100, 'Syncfusion', 'Arial', 70, false, false, '', false, 0, '', 'green', 8);
+        this.imageEditorObj?.drawText(dimension.x + 50, dimension.y + 50, 'Syncfusion', 'Arial', 30, false, false, '', false, 0, '', 'green', 8);
     }
     bgColour(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawText(dimension.x, dimension.y+200, 'Syncfusion', 'Arial', 70, false, false, '', false, 0, 'red', '', 0);
+        this.imageEditorObj?.drawText(dimension.x + 100, dimension.y + 100, 'Syncfusion', 'Arial', 30, false, false, '', false, 0, 'red', '', 0);
     }
 }
-
-
-

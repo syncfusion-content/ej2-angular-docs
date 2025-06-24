@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Columns in Angular TreeGrid component
 
-In Syncfusion Angular TreeGrid component, columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the tree grid.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component, columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the tree grid.
 
 The column definitions are used as the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#dataSource) schema in the tree grid. The [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) property of the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#column) is necessary to map the data source values in tree grid columns.
 
 ## Column types
 
-The Syncfusion TreeGrid component allows you to specify the type of data that a column binds using the [column.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows you to specify the type of data that a column binds using the [column.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data.
 
 Tree Grid supports the following column types:
 
@@ -50,7 +50,7 @@ Here is an example of how to specify column types in a tree grid using the types
 3. When the tree grid column `type` is a **checkbox**, the selection type of the tree grid [selectionSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#mode) will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the Tree Grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion TreeGridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column width
 
@@ -59,7 +59,7 @@ To adjust the column width in a Tree Grid, you can use the [width](https://ej2.s
 1. Tree Grid column width is calculated based on the sum of column widths. For example, a tree grid container with 4 columns and a width of 800 pixels will have columns with a default width of 200 pixels each.
 2. If you specify widths for some columns but not others, the Tree Grid will distribute the available width equally among the columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
 3. Columns with percentage widths are responsive and adjust their width based on the size of the  container. For example, a column with a width of 50% will occupy 50% of the tree grid width and will adjust proportionally when the tree grid container is resized to a smaller size.
-4. When you manually resize columns in Syncfusion Tree Grid, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
+4. When you manually resize columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, a minimum width is set to ensure that the content within the cells remains readable. By default, the minimum width is set to 10 pixels if not explicitly specified for a column.
 5. If the total width of all columns exceeds the width of the tree grid container, a horizontal scrollbar will automatically appear to allow horizontal scrolling within the tree grid.
 6. When the columns are hidden using the column chooser, the width of the hidden columns is removed from the total tree grid width, and the remaining columns will be resized to fill the available space.
 7. If the parent element has a fixed width, the TreeGrid component will inherit that width and occupy the available space. However, if the parent element does not have a fixed width, the TreeGrid component will adjust its width dynamically based on the available space.
@@ -68,7 +68,7 @@ To adjust the column width in a Tree Grid, you can use the [width](https://ej2.s
 
 #### Supported types for column width:
 
-Syncfusion Tree Grid supports the following three types of column width:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid supports the following three types of column width:
 
 **1. Auto**
 
@@ -107,7 +107,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 ## Column formatting
 
-Column formatting is a powerful feature in Syncfusion Tree Grid that allows you to customize the display of data in columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
+Column formatting is a powerful feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid that allows you to customize the display of data in columns. You can apply different formatting options to columns based on your requirements, such as displaying numbers with specific formats, formatting dates according to a specific locale, and using templates to format column values.
 
 You can use the [column.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to specify the format for column values.
 
@@ -254,7 +254,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-Syncfusion Tree Grid allows you to customize the formatting of data in the tree grid columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to tree grid columns in Syncfusion Tree Grid, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to customize the formatting of data in the tree grid columns. You can apply custom formats to numeric or date columns to display data in a specific way according to the requirements. To apply custom formatting to tree grid columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property. Here's an example of how you can use custom formatting for numeric and date columns:
 
 In the below example, the **numberFormatOptions** object is used as the `format` property for the **'units'** column to apply a custom numeric format with four decimal places. Similarly, the **dateFormatOptions** object is used as the `format` property for the **'OrderDate'** column to apply a custom date format displaying the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g. Sun, May 8, '23).
 
@@ -380,7 +380,7 @@ You can enable this feature by enabling the [autoFit](https://ej2.syncfusion.com
 
 ### AutoFit columns when changing column visibility using column chooser
 
-In Syncfusion Tree Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
 
 Here's an example code snippet in Angular that demonstrates how to auto fit columns when changing column visibility using column chooser:
 
@@ -397,9 +397,9 @@ Here's an example code snippet in Angular that demonstrates how to auto fit colu
 
 ## Locked columns
 
-The Syncfusion Tree Grid allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#lockcolumn) property to **true**, which locks the column and moves it to the first position in the tree grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#lockcolumn) property to **true**, which locks the column and moves it to the first position in the tree grid.
 
-Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion tree grid. Additionally, in the code snippet below, differentiate the locked column using CSS with a custom attributes property.
+Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> tree grid. Additionally, in the code snippet below, differentiate the locked column using CSS with a custom attributes property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -417,7 +417,7 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 ## Show or hide columns
 
-The Syncfusion TreeGrid component allows you to show or hide columns dynamically by using property or methods available in the tree grid. This feature can be useful when you want to customize the visibility of columns in the Tree Grid based on the requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows you to show or hide columns dynamically by using property or methods available in the tree grid. This feature can be useful when you want to customize the visibility of columns in the Tree Grid based on the requirements.
 
 ### Using property
 
@@ -480,7 +480,7 @@ Here's an example of how to show or hide a column based on the field in the tree
 
 ## Controlling Tree Grid actions
 
-You can control various actions such as filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion Angular Tree Grid using the following properties:
+You can control various actions such as filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid using the following properties:
 
 * [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#allowediting): Enables or disables editing for a column.
 * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#allowfiltering): Enables or disables filtering for a column.
@@ -510,11 +510,11 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Manipulating columns
 
-The Syncfusion Tree Grid for Angular provides powerful features for manipulating columns. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion Tree Grid properties, methods, and events.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid for Angular provides powerful features for manipulating columns. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid properties, methods, and events.
 
 ### Accessing columns
 
-To access columns in the Syncfusion TreeGrid component, you can use the following methods:
+To access columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component, you can use the following methods:
 
 * **[getColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumns)**:
 
@@ -594,14 +594,14 @@ Here's an example of how you can add and remove a column from the tree grid:
 
 ### How to refresh columns
 
-You can use the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method of the Syncfusion Tree Grid to refresh the columns in the tree grid. This method can be used when you need to update the tree grid columns dynamically based on user actions or data changes.
+You can use the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method of the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid to refresh the columns in the tree grid. This method can be used when you need to update the tree grid columns dynamically based on user actions or data changes.
 
 ```ts
 this.treegrid.refreshColumns();
 ```
 ## Responsive columns
 
-The Syncfusion Angular TreeGrid component provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a tree grid that displays data with two columns: **Task ID and Start Date**. We have set the `hideAtMedia` property of the **Task ID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Accumulation chart component
 
-This article describes the API migration process of  {Component Name} component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  {Component Name} component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accumulation Chart
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotation | **Property:**  *annotation*  <br/> <br/> `<ej-chart> `<br>`<e-annotations>`<br>`<e-annotation>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` | **Property:**  *e-annotation*  <br/> <br/> `<ejs-accumulationchart> `<br> `<e-annotations>` <br>`<e-annotation>` <br> `<e-annotation>` <br> `</e-annotations> `<br> `</ejs-accumulationchart>`|
 | Background | **Property:**  *background*  <br/> <br/> `<ej-chart background='red'> `<br>`</ej-chart>` | **Property:**  *background*  <br/> <br/> `<ejs-accumulationchart background='red'>` <br> `</ejs-accumulationchart>`|
@@ -39,7 +39,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Annotations
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotation | **Property:**  *annotation*  <br/> <br/> `<ej-chart> `<br> `<e-annotations>` <br> `<e-annotation [visible]='visible'>`<br>`<e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` <br> <br>  this.visible = true | **Property:**  *e-annotation*  <br/> <br/> `<ejs-accumulationchart> `<br> `<e-accumulation-annotations>` <br>`<e-accumulation-annotation>` <br> `</e-accumulation-annotation>` <br> `</e-accumulation-annotations>` <br>`</ejs-accumulationchart>`|
 | Annotation content | **Property:**  *annotation.content*  <br/> <br/> `<ej-chart> `<br>`<e-annotations>`<br>`<e-annotation>`<br>`<e-annotation content='<div>Chart</div>'>`<br>`</e-annotations>`<br>`</ej-chart>` | **Property:**  *annotation.content*  <br/> <br/> `<ejs-accumulationchart> `<br>`<e-accumulation-annotations>`<br> `<e-annotation content='<div>Chart</div>'>` <br> `</e-accumulation-annotation>` <br> `</e-accumulation-annotations>` <br>`</ejs-accumulationchart>`|
@@ -54,7 +54,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Series
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 |Series | **Property:**   *series*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series>`<br>`</e-series>`<br>`</e-series-collection>`<br> `</ej-chart>` | **Property:**   *series*  <br/> <br/> `<ejs-accumulationchart> `<br> `<e-accumulation-series-collection>` <br>`<e-accumulation-series>`<br> `</e-accumulation-series>`<br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` |
 | Enable animation for series | **Property:**   *series.enableAnimation*  <br/> <br/> `<ej-chart> `<br> `<e-series-collection>` <br> `<e-series [enableAnimation]='animation'>` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ej-chart>` <br>  this.animation = true | **Property:**   *series.animation.enable*  <br/> <br/> `<ejs-accumulationchart> `<br> `<e-accumulation-series-collection>` <br> `<e-accumulation-series [animation]='animation' >` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>`<br> <br>  this.animation = { enable: true} |
@@ -93,7 +93,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## DataLabel
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | DataLabel of series| **Property:**   *series.marker.dataLabel*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br>   this.marker = { dataLabel: { visible: true } } | **Property:**   *series.marker.dataLabel*  <br/> <br/> `<ejs-accumulationchart> `<br>`<e-accumulation-series-collection>`<br>`<e-accumulation-series [marker]='marker'>`<br>`</e-accumulation-series>`<br>`</e-accumulation-series-collection>`<br>`</ejs-accumulationchart>` <br><br>  this.marker = { dataLabel: {  visible: true } }  |
 | Border of datalabel| **Property:**   *marker.dataLabel.border*  <br/> <br/> `<ej-chart> `<br>`<e-series-collection>`<br>`<e-series [marker]='marker'>`<br>`</e-series>`<br>`</e-series-collection>`<br>`</ej-chart>` <br> <br>  this.marker = { dataLabel: { border: { color: 'red', width: 2} } } | **Property:**   *marker.dataLabel.border*  <br/> <br/> `<ejs-accumulationchart> `<br>`<e-accumulation-series-collection>`<br>`<e-accumulation-series [marker]='marker'>` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` <br><br> this.marker = { dataLabel: {  border: { width: 2, color: 'blue'} } }  |
@@ -107,7 +107,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Legend
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Visibility of legend | **Property:**  *legend.visible*  <br/> <br/> `<ej-chart [legend]='legend'>`<br>`</ej-chart>` <br> <br>    this.legend = { visible: true } | **Property:**  *legend.visible*  <br/> <br/> `<  ejs-accumulationchart [legend]='legend'>`<br>`</  ejs-accumulationchart>` <br> <br>  this.legend = { visible: true } |
 | Height of legend | **Property:**  *legend.size.height*  <br/> <br/> `<ej-chart [legend]='legend'>`<br>`</ej-chart>` <br> <br>    this.legend = { size: { height: 20 }} | **Property:**  *legend.height*  <br/> <br/> `<  ejs-accumulationchart [legend]='legend'>`<br>` </ejs-accumulationchart>` <br> <br> this.legend = { height: '40' } |
@@ -132,7 +132,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation | **Property:** *chart.animate*  <br/> <br/> `<ej-chart (animate)='animation'>`<br>`</ej-chart>` <br> <br>  this.animate(args) { } |  **Property:** Not Applicable |
 | Redraw  | **Property:** *chart.redraw* <br/> <br/> `<ej-chart (redraw)='redraw'>` <br> `</ej-chart>` <br> <br>  this.redraw(args) { } | **Property:** *chart.refresh*  <br/> <br/> `<ejs-accumulationchart (refresh)='refresh'>` <br> `</ejs-accumulationchart>` <br> <br>  this.refresh(args) { } |
@@ -143,7 +143,7 @@ This article describes the API migration process of  {Component Name} component 
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on annotation click  | **Property:**  *chart.annotationClick*  <br/> <br/> `<ej-chart (annotationClick)='annotationClick($event)'>`<br>`</ej-chart>` <br> <br>  this.annotationClick(args) { } |  **Property:** Not Applicable |
 | Fires on after animation | **Property:**  *chart.animationComplete*  <br/> <br/> `<ej-chart (animationComplete)='animationComplete($event)'>`<br>`</ej-chart>` <br> <br>  this.animationComplete(args) { } |  **Property:** *chart.animationComplete*  <br/> <br/> `<ejs-accumulationchart (refresh)='refresh'>`<br>`</ejs-accumulationchart>` <br> <br>  this.refresh(args) { } |

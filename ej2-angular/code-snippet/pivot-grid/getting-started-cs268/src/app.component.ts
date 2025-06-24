@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { PivotView, IAxisSet, IFieldOptions, PivotViewComponent, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { renewableEnergy } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -19,14 +20,14 @@ imports: [
 standalone: true,
   selector: 'app-container',
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings (dataBound)='trend()' width=width height=height [cellTemplate]=cellTemplate></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings (dataBound)='trend()' [width]=width height=height [cellTemplate]=cellTemplate></ejs-pivotview>`
 })
 
 export class AppComponent implements OnInit {
 
     public width?: string;
     public height?: number;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public cellTemplate?: string;
 
     @ViewChild('pivotview', {static: false})

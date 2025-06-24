@@ -22,15 +22,16 @@ The content for the tip pointer arrow has been added. To customize the curved ti
 
 ```typescript
 
-      .e-arrow-tip-outer.e-tip-bottom,
-      .e-arrow-tip-outer.e-tip-top {
-           border-left: none !important;
-           border-right: none !important;
-           border-top: none !important;
-      }
-      .e-arrow-tip.e-tip-top {
-           transform: rotate(170deg);
-      }
+.e-arrow-tip-outer.e-tip-bottom,
+.e-arrow-tip-outer.e-tip-top {
+     border-left: none !important;
+     border-right: none !important;
+     border-top: none !important;
+}
+
+.e-arrow-tip.e-tip-top {
+     transform: rotate(170deg);
+}
 
 ```
 
@@ -40,19 +41,19 @@ The two `divs`(inner div and outer div) have been added to achieve the bubble ti
 
 ```typescript
 
-    .e-arrow-tip-outer.e-tip-bottom, .e-arrow-tip-outer.e-tip-top
-      {
-         border-radius: 50px;
-         height: 10px;
-         width: 10px;
-      }
+.e-arrow-tip-outer.e-tip-bottom, .e-arrow-tip-outer.e-tip-top
+{
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+}
 
-      .e-arrow-tip-inner.e-tip-bottom, .e-arrow-tip-inner.e-tip-top
-        {
-         border-radius: 50px;
-         height: 10px;
-         width: 10px;
-        }
+.e-arrow-tip-inner.e-tip-bottom, .e-arrow-tip-inner.e-tip-top
+  {
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+  }
 
 ```
 

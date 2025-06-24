@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService } from '@syncfusion/ej2-angular-gantt'
 
-
-
-
 import { Component, ViewEncapsulation, OnInit,  ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
@@ -27,6 +24,7 @@ standalone: true,
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar" (dataBound)="dataBound($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent{
     // Data for Gantt
     public data?: object[];
@@ -44,7 +42,7 @@ export class AppComponent{
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID:'ParentID',
         };
         this.toolbar =  ['ZoomToFit'];
     }
@@ -55,6 +53,3 @@ export class AppComponent{
       this.ganttObj.dataSource = data;
     };
 }
-
-
-

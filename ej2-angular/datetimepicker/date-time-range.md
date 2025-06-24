@@ -42,7 +42,7 @@ Always the minTime value has to be lesser than the maxTime value.
 
 When minTime and maxTime are set, the component will prioritize min if minTime is less than the current min time, and max if maxTime is greater than the current max time. Conversely, it will prioritize minTime if it is greater than the current min time, and maxTime if it is less than the current max time. These behaviors apply only when min and max Dates are selected or pre-bounded, with minTime and maxTime values set for all other dates apart from min and max dates.
 
-The value property depends on the minTime/maxTime with respect to [`strictMode`](./strict-mode/) property.
+The value property depends on the minTime/maxTime with respect to [`strictMode`](./strict-mode) property.
 
 The below example allows selecting a time within the range from 10:00 AM to 8:30 PM of each day.
 

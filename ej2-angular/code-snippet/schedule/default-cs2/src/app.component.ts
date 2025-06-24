@@ -2,30 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
-import {
-  ScheduleComponent,
-  DayService,
-  WeekService,
-  WorkWeekService,
-  MonthService,
-  AgendaService,
-  ResizeService,
-  DragAndDropService,
-  MonthAgendaService
-} from '@syncfusion/ej2-angular-schedule';
-let initialLoad = true;
+import { ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService,
+  AgendaService, ResizeService, DragAndDropService, MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
+
+  let initialLoad = true;
 @Component({
-imports: [
-        
-        ScheduleModule,
-        ButtonModule
-    ],
-standalone: true,
+  imports: [ScheduleModule, ButtonModule],
+  standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
     <div class="col-lg-12 content-wrapper">
@@ -47,10 +32,9 @@ standalone: true,
 export class AppComponent {
   @ViewChild('scheduleObj') public scheduleObj?: ScheduleComponent;
 
-  dataBound(eventData: any) {
-
+  dataBound() {
     if (initialLoad) {
-      let elements:HTMLElement=this.scheduleObj?.element.querySelector('.e-all-day-appointment-section') as HTMLElement;
+      let elements: HTMLElement = this.scheduleObj?.element.querySelector('.e-all-day-appointment-section') as HTMLElement;
       elements.click();
       initialLoad = false;
     }

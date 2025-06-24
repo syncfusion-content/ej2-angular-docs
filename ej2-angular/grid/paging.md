@@ -16,7 +16,7 @@ To enable paging, you need to set the [allowPaging](https://ej2.syncfusion.com/a
 
 To use paging, you need to inject the **PageService** into the provider section of your **AppModule**. This service provides the necessary methods and events to handle paging functionality.
 
-Paging options can be configured through the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings) property. The `pageSettings` object allows you to control various aspects of paging, such as the page size, current page, and total number of records.
+Paging options can be configured through the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/) property. The `pageSettings` object allows you to control various aspects of paging, such as the page size, current page, and total number of records.
 
 > You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
 
@@ -225,7 +225,7 @@ The following example demonstrate how to customize the default values of the pag
 
 Navigating to a particular page in the Syncfusion Grid is particularly useful when dealing with large datasets. It provides a quick and efficient way to jump to a specific page within the grid.
 
-To achieve page navigation, you can use the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid#gotopage) method provided by Syncfusion Grid. This method allows you to programmatically navigate to a specific page within the grid.
+To achieve page navigation, you can use the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method provided by Syncfusion Grid. This method allows you to programmatically navigate to a specific page within the grid.
 
 The following example demonstrates how to dynamically navigate to a particular page using the `goToPage` method triggered by an external button click based on **TextBox** input:
 

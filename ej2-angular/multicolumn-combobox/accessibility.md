@@ -74,4 +74,4 @@ The MultiColumn ComboBox component's accessibility levels are ensured through an
 
 ## See also
 
-* [Accessibility in Syncfusion components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)

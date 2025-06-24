@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Qrcodegenerator in Angular Barcode component | Syncfusion
-description: Learn here all about Qrcodegenerator in Syncfusion Angular Barcode component of Syncfusion Essential JS 2 and more.
+title: Qrcodegenerator in Angular Barcode component | Syncfusion®
+description: Learn here all about Qrcodegenerator in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Qrcodegenerator 
 documentation: ug

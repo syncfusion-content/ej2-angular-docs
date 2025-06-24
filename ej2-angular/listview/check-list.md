@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Check list in Angular ListView component
 
-The ListView supports checkbox in default and group-lists which is used to select multiple items.
-The checkbox can be enabled by the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showcheckbox) property.
+The ListView supports checkbox in default and group-lists which is used to select multiple items. The checkbox can be enabled by the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showcheckbox) property.
 
 The Checkbox will be useful in the scenario where we need to select multiple options. For Example, in Shipping cart we can be able to select or unselect the desired items before checkout and also it will be useful in selecting multiple items that belongs to same category using the group list.
 

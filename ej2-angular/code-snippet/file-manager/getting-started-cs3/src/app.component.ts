@@ -1,16 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
+import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [FileManagerModule, ],
-
-
-standalone: true,
+  imports: [FileManagerModule,],
+  standalone: true,
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
   template: `<ejs-filemanager id='default-filemanager' #filemanagerObj [ajaxSettings]='ajaxSettings' [view]='view' height="375px">

@@ -5,10 +5,11 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Grid } from '@syncfusion/ej2-angular-grids';
 import { Pivot_Data } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -22,11 +23,11 @@ standalone: true,
   selector: 'app-container',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' width=width></ejs-pivotview>`
+  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' [width]=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public gridSettings?: GridSettings;
     public columnGrandTotalIndex: any;
     public rowGrandTotalIndex: any;

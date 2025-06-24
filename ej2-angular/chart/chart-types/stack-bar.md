@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacked Bar Chart in Angular Chart component | Syncfusion
-description: Learn here all about Stacked Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Bar Chart in Angular Charts | Syncfusion
+description: Learn here all about Stacked Bar Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Stacked bar chart
+control: Stacked Bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked Bar in Angular Chart component
+# Stacked Bar Chart in Angular Charts
 
-## Stacked bar
+## Stacked Bar
 
 To render a [stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
@@ -240,6 +240,95 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.s
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs8" %}
 
+## Stack labels
+
+The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bar-cs22/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bar-cs22/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/bar-cs22/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs22" %}
+
+### Stack labels customization
+Stack labels have various properties for customization to enhance the visual based on your requirements:
+
+* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#format) - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
+* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#angle) - Specifies the rotation angle for stack labels in degrees. Default is 0.
+* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
+* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+* [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#margin) - Configures the margin around the stack label (left, right, top, and bottom).
+* [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#border) - Configures the appearance of the stack label's border.
+* [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings/#font) - Customizes the stack label text, including font size, color, style, weight, and family.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bar-cs22A/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bar-cs22A/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/bar-cs22A/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs22A" %}
+
+## Corner radius
+
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10A/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10A/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10A/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs10A" %}
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10B/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10B/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackbar-cs10B/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs10B" %}
+
 ## Events
 
 ### Series render 
@@ -281,6 +370,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
+
 
 ## See also
 

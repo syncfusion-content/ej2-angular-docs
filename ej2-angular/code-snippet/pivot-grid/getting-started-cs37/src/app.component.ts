@@ -5,8 +5,9 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, EnginePopulatedEventArgs, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { EnginePopulatedEventArgs, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { noData } from './datasource';
+import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
 imports: [
@@ -18,10 +19,10 @@ imports: [
 
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height='350' (enginePopulated)='enginePopulated($event)'></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings [width]=width height='350' (enginePopulated)='enginePopulated($event)'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings?: IDataOptions;
+    public dataSourceSettings?: DataSourceSettingsModel;
     public width?: string;
     public height?: number;
     enginePopulated(args: EnginePopulatedEventArgs) {

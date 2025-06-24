@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom data source in Angular Gantt component
 
-The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
+The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) in [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
