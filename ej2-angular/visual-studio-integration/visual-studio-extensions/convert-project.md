@@ -30,11 +30,11 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
     **Option 2:**
 
-    Right-click on the **Angular Application** from the Solution Explorer and select the **Syncfusion<sup style="font-size:70%">&reg;</sup> Web** and choose the **Convert to Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application...**
+    Right-click on the **Angular Application** from the Solution Explorer and select the **Syncfusion Web** and choose the **Convert to Syncfusion Angular application...**
 
     ![convert to syncfusion](images/Convert-angular-context.png)
 
-3. The **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project Conversion** window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular version, Assets from, and Themes to convert the application.
+3. The **Syncfusion Angular Project Conversion** window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular version, Assets from, and Themes to convert the application.
 
     ![project-conversion-wizard](images/angular-conversion-window.PNG)
 
@@ -42,9 +42,9 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
     The following configurations are used in the Project conversion wizard.
 
-    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
+    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
 
     **Choose the Theme:** Choose the required theme.
 

@@ -28,7 +28,7 @@ The steps below show how to install the Essential Studio JavaScript – EJ2 inst
 
     ![license download](images/offline1.png)
 
-    >Note: The Installer wizard extracts the syncfusionejs2 (version).exe dialog, which displays the package’s unzip operation.
+    >Note: The Installer wizard extracts the syncfusion<sup style="font-size:70%">&reg;</sup> ejs2 (version).exe dialog, which displays the package’s unzip operation.
 
 2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, you have two options:
 
@@ -36,7 +36,7 @@ The steps below show how to install the Essential Studio JavaScript – EJ2 inst
     * Use Unlock Key
 
     **Login To Install**
-    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don’t already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **“Create an account”**. If you have forgotten your password, click on **“Forgot Password”** to create a new one. Once you’ve entered your Syncfusion<sup style="font-size:70%">&reg;</sup> email and password, click Next.
+    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don’t already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **“Create an account”**. If you have forgotten your password, click on **“Forgot Password”** to create a new one. Once you’ve entered your Syncfusion email and password, click Next.
 
     ![license download](images/offline2.png)
 
@@ -99,9 +99,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript
 To install through the Command Line in Silent mode, follow the steps below.
 
 1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
-2. The file syncfusionejs2_(version).exe file will be extracted into the Temp directory.
+2. The file syncfusion<sup style="font-size:70%">&reg;</sup>ejs2_(version).exe file will be extracted into the Temp directory.
 3. Run %temp%. The Temp folder will be opened. The syncfusionejs2_(version).exe file will be located in one of the folders.
-4. Copy the extracted syncfusionejs2_(version).exe file in local drive.
+4. Copy the extracted syncfusion<sup style="font-size:70%">&reg;</sup>ejs2_(version).exe file in local drive.
 5. Exit the Wizard.
 6. Run Command Prompt in administrator mode and enter the following arguments.
 
@@ -121,11 +121,11 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript – EJ2 ca
 
 1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-2. The syncfusionejs2_(version).exe file will be extracted into the Temp directory.
+2. The syncfusion<sup style="font-size:70%">&reg;</sup>ejs2_(version).exe file will be extracted into the Temp directory.
 
-3. Run %temp%. The Temp folder will be opened. The syncfusionejs2_(version).exe file will be located in one of the folders.
+3. Run %temp%. The Temp folder will be opened. The syncfusion<sup style="font-size:70%">&reg;</sup>ejs2_(version).exe file will be located in one of the folders.
 
-4. Copy the extracted syncfusionejs2_(version).exe file in local drive.
+4. Copy the extracted syncfusion<sup style="font-size:70%">&reg;</sup>ejs2_(version).exe file in local drive.
 
 5. Exit the Wizard.
 

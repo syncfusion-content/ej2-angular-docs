@@ -10,7 +10,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        CommonModule
+        CommonModule,
         GridModule,
         ButtonModule,
         MessageModule

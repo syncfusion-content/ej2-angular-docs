@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet utility for Visual Studio Code provides snippets for adding a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component with various features in the html code editor file of the Angular Application.
 
-   > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet is available from Essential Studio 2021 Vol 3 (`v19.3.0.43`).
+   > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet is available from Essential Studio<sup style="font-size:70%">&reg;</sup> 2021 Vol 3 (`v19.3.0.43`).
 
 ## Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component
 

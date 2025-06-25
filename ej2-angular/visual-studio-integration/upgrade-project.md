@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Upgrade Project in Angular Visual studio integration 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project migration are available from v17.3.0.9.
 
@@ -26,7 +26,7 @@ The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&re
 
     ![menu](images/migrate-menu.png)
 
-     > In Visual Studio 2017, you can see the **Syncfusion<sup style="font-size:70%">&reg;</sup>** menu directly in the Visual Studio menu
+     > In Visual Studio 2017, you can see the **Syncfusion** menu directly in the Visual Studio menu
 
     **Option 2:**
 
@@ -40,9 +40,9 @@ The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&re
 
     ![Migration Window](images/migration-window.PNG)
 
-    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
+    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
 
 4. Check the **“Enable a backup before migrating** checkbox if you want to take the project backup and choose the location.
 

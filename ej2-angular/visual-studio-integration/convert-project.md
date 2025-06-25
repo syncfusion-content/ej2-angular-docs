@@ -42,9 +42,9 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
     The following configurations are used in the Project conversion wizard.
 
-    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
+    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
 
     **Choose the Theme:** Choose the required theme.
 

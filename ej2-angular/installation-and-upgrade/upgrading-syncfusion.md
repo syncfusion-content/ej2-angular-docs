@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> in Angular 
+# Upgrading syncfusion<sup style="font-size:70%">&reg;</sup> in Angular 
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

@@ -18,11 +18,11 @@ Yes, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular IVY packages a
 
 ## If Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with Latest Angular CLI, what version should we prepare?
 
-For optimal compatibility and access to the latest features, it is recommended to use version 21.1.39 or the latest available version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages. You can verify the [version compatibility](../../upgrade/version-compatibility/) for detailed insights.
+For optimal compatibility and access to the latest features, it is recommended to use version 21.1.39 or the latest available version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages. You can verify the [version compatibility](../../upgrade/version-compatibility) for detailed insights.
 
 ## How can I check the compatibility of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages with a specific version of Angular CLI?
 
-To ensure that your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with your specific version of the Angular CLI, refer to the comprehensive compatibility [documentation](../../upgrade/version-compatibility/).
+To ensure that your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with your specific version of the Angular CLI, refer to the comprehensive compatibility [documentation](../../upgrade/version-compatibility).
 
 ## What compatibility issues were encountered while using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NGCC packages with the latest version of Angular CLI? 
 

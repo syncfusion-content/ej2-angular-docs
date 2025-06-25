@@ -18,13 +18,13 @@ Licensing error popup is displayed with various messages under different circums
 
 The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application or if the trial key has expired after 30 days.
 
-**Error message:** <br /> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio. You should include the valid license key to remove the license validation message permanently.
+**Error message:** <br /> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. You should include the valid license key to remove the license validation message permanently.
 
 ![License key not registered](images/licensing-error-5.png)
 
 **Solution:**
 
-* If you use EJ2-Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* If you use EJ2-Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you **have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -50,7 +50,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* If you use EJ2-Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* If you use EJ2-Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -72,13 +72,13 @@ If the application is registered with an invalid key, another version of license
 
 The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application.
 
-**Error message:** <br /> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors#license-key-not-registered) for more information.
+**Error message:** <br /> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors#license-key-not-registered) for more information.
 
 ![License key not registered](images/licensing-error-1.png)
 
 **Solution:**
 
-* If you use EJ2-Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* If you use EJ2-Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you **have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -102,7 +102,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* If you use EJ2-Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* If you use EJ2-Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -136,7 +136,7 @@ If the application is registered with another platform’s license key, the foll
 
 **Solution:**
 
-* License keys are version and product specific. So, if you use EJ2 Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* License keys are version and product specific. So, if you use EJ2 Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -158,7 +158,7 @@ If the application is registered with another version’s license key, the follo
 
 **Solution:**
 
-* License keys are version and product specific. So, if you use EJ2 Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* License keys are version and product specific. So, if you use EJ2 Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -180,7 +180,7 @@ If you are using `npx syncfusion-license activate` command with an invalid licen
 
 **Solution:**
 
-* If you use EJ2-Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* If you use EJ2-Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -203,7 +203,7 @@ If the application is activated with a license key from another version, the fol
 
 **Solution:**
 
-* License keys are version, platform and product specific. So, if you use EJ2 Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* License keys are version, platform and product specific. So, if you use EJ2 Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -223,7 +223,7 @@ If the application is activated with another platform’s license key, the follo
 
 **Solution:**
 
-* License keys are version, platform and product specific. So, if you use EJ2 Angular components through Syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+* License keys are version, platform and product specific. So, if you use EJ2 Angular components through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/downloads).
 
