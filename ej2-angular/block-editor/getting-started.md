@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting Started with Angular BlockEditor Component | Syncfusion
-description: Checkout and learn about getting started with Syncfusion Essential Angular BlockEditor component, its elements, and more details.
+title: Getting Started with Angular Block Editor Component | Syncfusion
+description: Checkout and learn about getting started with Syncfusion Essential Angular Block Editor component, its elements, and more details.
 platform: ej2-angular
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular BlockEditor component
+# Getting Started with Angular Block Editor component
 
-This section explains how to create a default BlockEditor component and demonstrate the basic usage of the BlockEditor.
+This section explains how to create a default Block Editor component and demonstrate the basic usage of the Block Editor.
 
 ## Dependencies
 
-The list of dependencies required to use the BlockEditor component in your application is given below:
+The list of dependencies required to use the Block Editor component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-angular-blockeditor
@@ -45,7 +45,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> BlockEditor package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
@@ -97,9 +97,9 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
 ```
 
-## Adding Syncfusion BlockEditor component
+## Adding Syncfusion Block Editor component
 
-Modify the template in [src/app/app.component.ts] file to render the BlockEditor component. Add the Angular BlockEditor by using `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the Block Editor component. Add the Angular Block Editor by using `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
 
 ```typescript
 
@@ -128,7 +128,7 @@ Run the application in the browser using the following command:
 ng serve
 ```
 
-The following example shows a default BlockEditor component.
+The following example shows a default Block Editor component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
