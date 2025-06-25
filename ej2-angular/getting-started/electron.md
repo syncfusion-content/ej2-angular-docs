@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular and Electron
 
-This guide demonstrates how to build a basic Angular 17 application using a standalone component structure with the Electron framework and integrate `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
+This guide demonstrates how to build a basic Angular 19 application using a standalone component structure with the Electron framework and integrate `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
 
 ## Prerequisites
 
@@ -41,9 +41,9 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm u
 To install the Grid package, execute the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-grids
+npm install @syncfusion/ej2-angular-grids@ngcc --save
 (or)
-npm i @syncfusion/ej2-angular-grids
+npm i @syncfusion/ej2-angular-grids@ngcc --save
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Menu Component

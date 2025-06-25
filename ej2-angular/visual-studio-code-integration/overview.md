@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio Web extension for Visual Studio Code allows you to use the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components(React, Angular, and Vue) easily by configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages and themes.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Web extension for Visual Studio Code allows you to use the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components(React, Angular, and Vue) easily by configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages and themes.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Web Extension provides the following support in Visual Studio Code:
 

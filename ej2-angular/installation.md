@@ -51,10 +51,10 @@ To streamline the integration of Syncfusion<sup style="font-size:70%">&reg;</sup
     npm install
     ```
 
-This approach takes advantage of the package management capabilities of npm, ensuring that all specified dependencies, including those for Syncfusion, are installed together.
+This approach takes advantage of the package management capabilities of npm, ensuring that all specified dependencies, including those for Syncfusion<sup style="font-size:70%">&reg;</sup>, are installed together.
 
 > For a deeper understanding of the `package.json` file and its configuration options, see the [official npm documentation](https://docs.npmjs.com/files/package.json).
 
-These steps will integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your project, enabling you to start utilizing its features. Different module systems such as ES6 and UMD are supported by Syncfusion, ensuring compatibility across various project setups.
+These steps will integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your project, enabling you to start utilizing its features. Different module systems such as ES6 and UMD are supported by Syncfusion<sup style="font-size:70%">&reg;</sup>, ensuring compatibility across various project setups.
 
 By following the above instructions, you will successfully add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to your project, equipping it with robust and high-performance UI elements.

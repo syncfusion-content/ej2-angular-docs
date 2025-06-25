@@ -14,7 +14,7 @@ You can refer to the [Download](../installation-and-upgrade/download/) section t
 
 ## Overview
 
-For the Essential Studio JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/account/downloads).
+For the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio<sup style="font-size:70%">&reg;</sup> products you have chosen. You can get the most recent version of Essential Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads).
 
 The frameworks listed below are supported in this installer.
 
@@ -26,8 +26,8 @@ The frameworks listed below are supported in this installer.
 
 ## Installation
 
-The steps below show how to install Essential Studio JavaScript – EJ2 Web Installer.
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+The steps below show how to install Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer.
+1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![license download](images/1.png)
 
@@ -99,7 +99,7 @@ The steps below show how to install Essential Studio JavaScript – EJ2 Web Inst
 
     * To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control** Panel.
 
-12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> control panel entries, as shown below. The Essential Studio entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
+12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> control panel entries, as shown below. The Essential Studio<sup style="font-size:70%">&reg;</sup> entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
 
     ![license download](images/13.png)
 
@@ -110,13 +110,13 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer ca
 * Uninstall the JavaScript – EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 web installer
 * Uninstall the JavaScript – EJ2 from Windows Control Panel
 
-Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 installer
+Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer
 
 ### Option 1: Uninstall the JavaScript–EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript–EJ2 web installer
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
 ![license download](images/u1.png)
 
@@ -126,11 +126,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Inst
 
 ### Option 2: Uninstall the JavaScript–EJ2 from Windows Control Panel
 
-You can uninstall all the installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall JavaScript – EJ2 alone by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio for JavaScript – EJ2 {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+You can uninstall all the installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall JavaScript – EJ2 alone by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript – EJ2 {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
 ![license download](images/u3.png)
 
->Note: If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+>Note: If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
 1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
 

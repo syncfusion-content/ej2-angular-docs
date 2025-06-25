@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet utility for Visual Studio Code provides snippets for adding a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component with various features in the html code editor file of the Angular Application.
 
-   > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet is available from Essential Studio 2021 Vol 3 (`v19.3.0.43`).
+   > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet is available from Essential Studio<sup style="font-size:70%">&reg;</sup> 2021 Vol 3 (`v19.3.0.43`).
 
 ## Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component
 
@@ -37,7 +37,7 @@ The following steps help you to use the Syncfusion<sup style="font-size:70%">&re
 
     ![Help](images/Help.png)
 
-## Configure Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup>
+## Configure Angular application with Syncfusion
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular snippet only add the code snippet alone in the html file. You need to configure the Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM, component modules, and themes by manually. To configure, refer the steps below:
 

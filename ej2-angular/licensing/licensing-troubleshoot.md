@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Licensing troubleshoot in Angular Licensing component | Syncfusion
-description: Learn here all about Licensing troubleshoot in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Licensing component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Licensing troubleshoot in Syncfusion Angular Licensing component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Licensing troubleshoot 
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Is an internet connection required for license validation
 
-No, Internet connection is not required for the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio license validation. The Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
+No, Internet connection is not required for the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> license validation. The Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
 ## Upgrade from the trial version after purchasing a license
 
@@ -64,7 +64,7 @@ Yes, you can use the same license key for all the web apps.
 
 No, the license registration doesn't access any data or resources.
 
-## License & Downloads shows the "Essential Studio Enterprise Edition Binary with Test Studio" and the "Project License". Which license to use
+## License & Downloads shows the "Essential Studio<sup style="font-size:70%">&reg;</sup> Enterprise Edition Binary with Test Studio" and the "Project License". Which license to use
 
 Use any licenses shown on the [accounts & downloads](https://www.syncfusion.com/account/downloads) page. It shows two licenses because if you are part of your company's enterprise portal Global license and an individual license is also assigned to your account, on your account & downloads page, the individual license and your enterprise portal Global license are shown.
 
@@ -78,7 +78,7 @@ The application registered license key is set priority and used for license vali
 
 ## Reactivating license once after updating the package version while using npx
 
-It is essential to reactivate the license key when upgrading the Syncfusion<sup style="font-size:70%">&reg;</sup> packages while the license has been registered through the `npx` command.
+It is Essential<sup style="font-size:70%">&reg;</sup> to reactivate the license key when upgrading the Syncfusion<sup style="font-size:70%">&reg;</sup> packages while the license has been registered through the `npx` command.
 
 ## Potential causes of licensing errors in applications.
 
@@ -106,7 +106,7 @@ One of the possible cases on experiencing license issues in your application is 
 
 ### Invalid license issue because of Syncfusion<sup style="font-size:70%">&reg;</sup> packages referred with multiple version
 
-It is essential to ensure that all the components used in a project are compatible and work seamlessly together. One common issue that arises in such scenarios is `version mismatch`. Version mismatch occurs when `different components` have `different major versions`, leading to compatibility issues and difficulties in license registration.
+It is Essential<sup style="font-size:70%">&reg;</sup> to ensure that all the components used in a project are compatible and work seamlessly together. One common issue that arises in such scenarios is `version mismatch`. Version mismatch occurs when `different components` have `different major versions`, leading to compatibility issues and difficulties in license registration.
 
 For example, consider a situation where one component in the project has a version of `v20.1.XX`, while another component has a version of `v20.2.XX`. When such components are used together, a `version mismatch` occurs, leading to license errors. To avoid version mismatch and ensure smooth functioning of the project, it is crucial to use the `same major version` for all the Syncfusion<sup style="font-size:70%">&reg;</sup> components. This will ensure compatibility and prevent any licensing issues that may arise due to version incompatibility.
 
@@ -114,11 +114,11 @@ For example, consider a situation where one component in the project has a versi
 
 When developing an application with Syncfusion<sup style="font-size:70%">&reg;</sup> packages, it is important to register the appropriate license key that matches the version of the package installed. Failure to do so may result in license errors within the application. 
 
-For instance, if you are using a component version labeled as `(v20.4.XX)`, it is essential to register the license key generated `specifically` for that version. By doing so, it ensures the smooth functioning of the controls and provides access to all features and functionality without encountering any license validation errors.
+For instance, if you are using a component version labeled as `(v20.4.XX)`, it is Essential<sup style="font-size:70%">&reg;</sup> to register the license key generated `specifically` for that version. By doing so, it ensures the smooth functioning of the controls and provides access to all features and functionality without encountering any license validation errors.
 
 ### License issue due to including non-Angular packages in the dependencies
 
-When integrating Syncfusion<sup style="font-size:70%">&reg;</sup> with your Angular project, it's essential to include only our Angular component packages in the dependencies, as shown in the image below.
+When integrating Syncfusion<sup style="font-size:70%">&reg;</sup> with your Angular project, it's Essential<sup style="font-size:70%">&reg;</sup> to include only our Angular component packages in the dependencies, as shown in the image below.
 
 ![Including our Angular component packages](images/angularpackages.png)
 

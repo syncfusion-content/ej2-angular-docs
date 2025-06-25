@@ -87,7 +87,7 @@ The following are possible causes of this error:
 
 **Reason** <br /> You are trying to install when another installation is already running in your machine.
 
-**Suggested solution** <br /> Open and kill the msiexec process in the task manager and then continue to install Syncfusion. If the problem is still present, restart the computer and try Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
+**Suggested solution** <br /> Open and kill the msiexec process in the task manager and then continue to install Syncfusion<sup style="font-size:70%">&reg;</sup>. If the problem is still present, restart the computer and try Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
 
 1. Open the Windows Task Manager.
 
