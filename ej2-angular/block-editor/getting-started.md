@@ -57,7 +57,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/20.4.38) package to the application.
+Add [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-blockeditor --save
@@ -67,7 +67,7 @@ npm install @syncfusion/ej2-angular-blockeditor --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/20.4.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-blockeditor@ngcc --save
@@ -134,12 +134,10 @@ The following example shows a default Block Editor component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/block-editor/getting-started/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/block-editor/getting-started/src/styles.css %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/block-editor/getting-started/index.html %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/getting-started/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/block-editor/getting-started/index" %}
+{% previewsample "page.domainurl/code-snippet/block-editor/getting-started" %}

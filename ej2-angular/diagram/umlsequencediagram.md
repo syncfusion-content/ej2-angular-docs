@@ -30,7 +30,7 @@ A sequence diagram includes several key elements such as participants, messages,
 | showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
 | activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
 
-The following code example illustrates how to create participants.
+The following code example illustrates how to create participants:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,11 +38,11 @@ The following code example illustrates how to create participants.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-1/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-1" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-1" %}
 
 ### Messages
 
@@ -77,11 +77,11 @@ The following code example illustrates how to create messages:
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-2/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-2" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-2" %}
 
 ### Activation Boxes
 
@@ -95,7 +95,7 @@ The following code example illustrates how to create messages:
 | startMessageID | string \| number | ID of the message that initiates the activation |
 | endMessageID | string \| number | ID of the message that terminates the activation |
 
-The following code example illustrates how to create activation boxes.
+The following code example illustrates how to create activation boxes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,11 +103,11 @@ The following code example illustrates how to create activation boxes.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-3/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-3" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-3" %}
 
 ### Fragments
 
@@ -139,7 +139,7 @@ The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/a
 | messageIds | (string \| number)[] | Collection of message IDs included in this condition section |
 | fragmentIds | string[] | Collection of nested fragments ids (for complex structures) |
 
-The following code example illustrates how to create fragments.
+The following code example illustrates how to create fragments:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,11 +147,11 @@ The following code example illustrates how to create fragments.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-4/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-4" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-4" %}
 
 ### Customizing Participant Spacing in Sequence Diagram 
 

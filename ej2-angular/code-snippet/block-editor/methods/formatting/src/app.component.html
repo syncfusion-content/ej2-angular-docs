@@ -1,0 +1,16 @@
+<div id="container">
+    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" ></div>
+    <div id="controls">
+        <h3>Formatting Methods</h3>
+        <div class="button-group">
+            <button (click)="applyBold()">Apply Bold </button>
+            <button (click)="applyColor()">Apply Color</button>
+            <button (click)="enableToolbarItems()">Enable Toolbar Items</button>
+            <button (click)="disableToolbarItems()">Disable Toolbar Items</button>
+        </div>
+        <div class="instruction">
+            <p><strong>Instructions:</strong> Select some text in the editor first, then click the formatting buttons to see the effects.</p>
+        </div>
+        <div id="output">{{output}}</div>
+    </div>
+</div>

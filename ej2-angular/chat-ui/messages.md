@@ -33,6 +33,78 @@ You can use the [text](../api/chat-ui/messageModel/#text) property to add messag
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/text" %}
 
+### Setting pinned
+
+You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/pinned/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/pinned/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/pinned/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/messages/pinned" %}
+
+### Setting reply to
+
+You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond to the original message preserving context and creating a threaded conversation.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/messages/replyTo" %}
+
+### Setting forward
+
+You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to specify the user when the message is forwarded.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/messages/forwarded" %}
+
+### Setting compact mode
+
+You can use the `enableCompactMode` property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/messages/compactmode" %}
+
 ### Defining current user
 
 You can use the [author](../api/chat-ui/messageModel/#author) property to identify the current user of the chat. Each user can be configured with options such as [id](../api/chat-ui/userModel/#id), [user](../api/chat-ui/userModel/#user), [avatarUrl](../api/chat-ui/userModel/#avatarurl) and more.
@@ -288,78 +360,6 @@ You can use the [suggestions](../api/chat-ui/#suggestions) property, to add the 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/suggestions" %}
-
-### Setting pinned
-
-You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/pinned/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/pinned/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/pinned/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/pinned" %}
-
-### Setting reply to
-
-You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond to the original message preserving context and creating a threaded conversation.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/replyTo" %}
-
-### Setting forward
-
-You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to specify the user when the message is forwarded.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/forwarded" %}
-
-## Setting compact mode
-
-You can use the `enableCompactMode` property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/compactmode" %}
 
 ## Configure message options
 

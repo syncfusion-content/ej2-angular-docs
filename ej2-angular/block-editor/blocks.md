@@ -46,17 +46,81 @@ You can configure the type of each block using the [type](../api/blockeditor/blo
 
 You can render Paragraph blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/paragraph-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/paragraph-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/paragraph-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/paragraph-block" %}
+
 ### Configure heading block
 
 You can render Heading blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Heading1`, `Heading2`, `Heading3`, or `Heading4`. Heading blocks (Heading1 to Heading4) are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/heading-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/heading-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/heading-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/heading-block" %}
 
 ### Configure toggle blocks
 
 You can render Toggle blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `ToggleParagraph` or `ToggleHeading1` to `ToggleHeading4`. Toggle blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/toggle-block" %}
+
 ### Configure list blocks
 
 You can render List blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+
+> Refer to [CheckedState](#configure-checked-state) section for more details about the checked state.
+
+Below example illustrates how to render the different types of blocks in the Block Editor.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/list-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/list-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/list-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/list-block" %}
 
 ### Configure code block
 
@@ -64,17 +128,77 @@ You can render Code blocks by setting the [type](../api/blockeditor/blockModel/#
 
 > Refer to the [CodeSettings](#configure-code-settings) section for more details about the code settings.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/code-block" %}
+
 ### Configure quote block
 
 You can render Quote blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/quote-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/quote-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/quote-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/quote-block" %}
 
 ### Configure callout block
 
 You can render Callout blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/callout-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/callout-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/callout-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/callout-block" %}
+
 ### Configure divider block
 
 Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Divider`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/divider-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/divider-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/divider-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/divider-block" %}
 
 ### Configure image block
 
@@ -82,15 +206,50 @@ You can render Image blocks by setting the [type](../api/blockeditor/blockModel/
 
 > Refer to the [ImageSettings](#configure-image-settings) section for more details about the image settings.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/image-block" %}
+
 ### Adding template
 
 You can render Template blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Template`. Template blocks enable you to use predefined content structures or custom templates.
+
+> Refer to [Template](#configure-template) section for more details about the template type block.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/template-block" %}
 
 ## Configure content
 
 Content in the Block Editor is managed through the [content](../api/blockeditor/blockModel/#content) property of blocks.
 
-Each content element can have properties like [id](../api/blockeditor/contentModel/#id), [type](../api/blockeditor/contentModel/#type), [content](../api/blockeditor/contentModel/#content), [styles](../api/blockeditor/contentModel/#styles), and more to customize the appearance and behavior of your text.
+Each content can have properties like [id](../api/blockeditor/contentModel/#id), [type](../api/blockeditor/contentModel/#type), [content](../api/blockeditor/contentModel/#content), [styles](../api/blockeditor/contentModel/#styles), and more to customize the appearance and behavior of your text.
 
 ### Setting content type
 
@@ -136,7 +295,24 @@ By default, labels are triggered by the `$` character. You can customize the lab
 
 > Refer to the [LabelSettings](#Configuring-label-settings) section for more details about the label settings.
 
-### Customize content
+Below is an example of how to configure different types of content in the Block Editor.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/content-types/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/content-types/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/content-types/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/content-types" %}
+
+### Setting content styles
 
 The Block Editor allows you to customize the appearance of content using the [styles](../api/blockeditor/contentModel/#styles) property. This property provides rich formatting options to style your text and content elements.
 
@@ -158,7 +334,23 @@ The [styles](../api/blockeditor/contentModel/#styles) property supports the foll
 
 You can apply one or more of these styles to any content element for rich text formatting:
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/content-styles/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/content-styles/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/content-styles/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/content-styles" %}
+
 ### Configure link settings
+
 Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the [linkSettings](../api/blockeditor/contentModel/#linksettings) property.
 
 The [linkSettings](../api/blockeditor/contentModel/#linksettings) property supports the following options:
@@ -168,11 +360,42 @@ The [linkSettings](../api/blockeditor/contentModel/#linksettings) property suppo
 | [url](../api/blockeditor/linkSettingsModel/#url)          | Specifies the URL of the link.  
 | [openInNewWindow](../api/blockeditor/linkSettingsModel/#openinnewwindow)    | Specifies whether the link should open in a new window/tab.           | false         |
 
+```typescript
+    blocks: [{
+        type: 'Paragraph',
+        content: [
+            {
+                type: 'Link',
+                content: 'hyperlinks',
+                linkSettings: {
+                    url: 'https://ej2.syncfusion.com/documentation/',
+                    openInNewWindow: true
+                }
+            }
+        ]
+    }]
+```
+
 ## Configure indent
 
 You can specify the indentation level of a block using the [indent](../api/blockeditor/blockModel/#indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
 
 By default, the [indent](../api/blockeditor/blockModel/#indent) property is set to `0`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/indent/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/indent/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/indent/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/indent" %}
 
 ## Configure checked state
 
@@ -180,15 +403,63 @@ For blocks that support selection states such as `CheckList`, you can configure 
 
 By default, the [isChecked](../api/blockeditor/blockModel/#ischecked) property is set to `false`.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/isChecked/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/isChecked/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/isChecked/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/isChecked" %}
+
 ## Configure expanded state
 
 You can control whether a block is expanded or collapsed using the [isExpanded](../api/blockeditor/blockModel/#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Toggle blocks.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/toggle-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/toggle-block" %}
 
 ## Configure CSS class
 
 You can apply custom styling to individual blocks using the [cssClass](../api/blockeditor/blockModel/#cssclass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/cssClass/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/cssClass/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/cssClass/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/cssClass/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/cssClass" %}
 
 ## Configure image settings
 
@@ -199,7 +470,7 @@ The [imageSettings](../api/blockeditor/blockModel/#imagesettings) property suppo
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | [src](../api/blockeditor/imageSettingsModel/#src) | URL or data URI of the image | '' |
-| [saveFormat](../api/blockeditor/imageSettingsModel/#saveformat) | Format to save the image ('base64' or 'blob') | 'base64' |
+| [saveFormat](../api/blockeditor/imageSettingsModel/#saveformat) | Format to save the image ('Base64' or 'Blob') | 'Base64' |
 | [allowedTypes](../api/blockeditor/imageSettingsModel/#allowedtypes) | Array of allowed file extensions | ['.jpg', '.jpeg', '.png'] |
 | [width](../api/blockeditor/imageSettingsModel/#width) | Width of the image (px or %) | '' |
 | [height](../api/blockeditor/imageSettingsModel/#height) | Height of the image (px or %) | '' |
@@ -212,6 +483,22 @@ The [imageSettings](../api/blockeditor/blockModel/#imagesettings) property suppo
 | [readOnly](../api/blockeditor/imageSettingsModel/#readonly) | Prevents modification of the image | false |
 
 These settings give you fine-grained control over how images appear and behave within your Block Editor.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/image-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/image-block" %}
+
 
 ## Configure code settings
 
@@ -228,8 +515,36 @@ Each language object in the `languages` array should have:
 [language](../api/blockeditor/codeLanguageModel/#language): The language value used for syntax highlighting
 - [label](../api/blockeditor/codeLanguageModel/#label): The display name shown in the language selector
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/code-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/code-block" %}
+
+
 ## Configuring label settings
+
 The [labelSettings](../api/blockeditor/#labelsettings) property of the Block Editor provides options for configuring how labels work in your editor. It allows you to define the trigger character and available label items.
+
+### Built-in items
+
+The Block Editor comes with offers different built-in options. These include:
+
+-   **Progress**: In-progress, On-hold, Done
+-   **Priority**: High, Medium, Low
+
+### Customize label
+
+You can customize the labels by using the [labelSettings](../api/blockeditor/#labelsettings) property.
 
 ### Trigger Character configuration
 
@@ -254,13 +569,63 @@ When users type the trigger character followed by text, a popup will appear show
 
 Labels with the same [groupHeader](../api/blockeditor/labelItemModel/#groupheader) value will be grouped together in the label selection popup:
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/label-settings/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/label-settings/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/label-settings/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/label-settings" %}
+
 ## Configure template
 
 The Block Editor allows you to use custom templates for specialized content using the [template](../api/blockeditor/blockModel/#template) property. Templates can be defined as strings, functions, or HTML elements.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/template-block" %}
+
 ## Configure placeholder
 
 You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+
+The below sample demonstrates the configuration of placeholder in the Block Editor for the paragraph block.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/placeholder/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/placeholder/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/placeholder/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/placeholder" %}
 
 ## Configure children
 
@@ -271,3 +636,20 @@ Child blocks can be configured with all the same properties as top-level blocks.
 ### Configure parent id
 
 For proper hierarchy, you should ensure that the [parentId](../api/blockeditor/blockModel/#parentid) of each child block matches the [id](../api/blockeditor/blockModel/#id) of its parent block. This structure helps maintain the nested relationships within the editor.
+
+The below sample demonstrates the configuration of children in the Block Editor using parentId.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/children/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/children/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/children/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/blocks/children" %}

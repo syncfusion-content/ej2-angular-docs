@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The [**Syncfusion<sup style="font-size:70%">&reg;</sup> Spreadsheet (also known as Excel Viewer)**](https://www.syncfusion.com/angular-components/angular-spreadsheet) is a feature-rich control for organizing and analyzing data in a tabular format. It provides all the common Excel features, including data binding, selection, editing, formatting, resizing, sorting, filtering, importing, and exporting Excel documents.
 
-This Docker image is the pre-defined Docker container for Syncfusion's Spreadsheet backend functionalities. This server-side Web API project targets ASP.NET Core 6.0.
+This Docker image is the pre-defined Docker container for Syncfusion's Spreadsheet backend functionalities. This server-side Web API project targets ASP.NET Core 8.0.
 
 You can deploy it quickly to your infrastructure. If you want to add new functionality or customize any existing functionalities, create your own Docker file by referencing the existing [Spreadsheet Docker project](https://github.com/SyncfusionExamples/Spreadsheet-Server-Docker).
 
@@ -45,7 +45,7 @@ services:
       # Provide your license key for activation
       SYNCFUSION_LICENSE_KEY: YOUR_LICENSE_KEY
     ports:
-      - "6002:80"
+      - "6002:8080"
 ```
 
 **Note:** The Spreadsheet is a commercial product. It requires a valid [license key](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key) to use in a production environment. Please replace `YOUR_LICENSE_KEY` with the valid license key in the `docker-compose.yml` file.
@@ -105,7 +105,7 @@ services:
       LANGUAGE: de_DE.UTF-8
       LANG: de_DE.UTF-8
     ports:
-      - "6002:80"
+      - "6002:8080"
 ```
 
 Please refer to these getting started pages to create a Spreadsheet in [`Javascript`](https://ej2.syncfusion.com/javascript/documentation/spreadsheet/getting-started), [`React`](https://ej2.syncfusion.com/react/documentation/spreadsheet/getting-started), [`Vue`](https://ej2.syncfusion.com/vue/documentation/spreadsheet/getting-started), [`ASP.NET Core`](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/getting-started-core), and [`ASP.NET MVC`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/getting-started-mvc).

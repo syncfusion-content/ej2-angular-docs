@@ -31,8 +31,17 @@ export class AppComponent {
         ],
         itemClicked: (args: MessageToolbarItemClickedEventArgs) => {
             if (args.item.prefixIcon === 'e-icons e-chat-forward') {
-                const newMessageObj = args.message;
-                newMessageObj.isForwarded = true;
+                const newMessageObj = {
+                    id: 'chat-message-' + (this.chatUI.messages.length + 1).toString(),
+                    isForwarded: true,
+                    isPinned: args.message.isPinned,
+                    author: args.message.author,
+                    text: args.message.text,
+                    timeStamp: args.message.timeStamp,
+                    timeStampFormat: args.message.timeStampFormat,
+                    status: args.message.status,
+                    replyTo: args.message.replyTo
+                };
                 this.chatUI.addMessage(newMessageObj);
             }
         }

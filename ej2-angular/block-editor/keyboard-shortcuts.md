@@ -80,10 +80,23 @@ For other operations, you can customize the keyboard shortcuts by configuring th
 In the below example, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
 
 ```typescript
-const editor = new BlockEditor({
-    keyConfig: {
-        'bold': 'alt+b',
-        'italic': 'alt+i'
-    }
-});
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+
+@Component({
+    imports: [ BlockEditorModule ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render BlockEditor component. -->
+    <div class="container" style="width: 40px; margin: 50px auto;">
+        <div ejs-blockeditor [keyConfig]="keyConfig" ></div>
+    </div>`
+})
+
+export class AppComponent {
+    keyConfig = {
+        bold: 'alt+b',
+        italic: 'alt+i'
+    };
+}
 ```
