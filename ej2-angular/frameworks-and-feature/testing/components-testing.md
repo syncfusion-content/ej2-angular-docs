@@ -161,7 +161,7 @@ Run `ng test` command to see the test report.
 ## See also
 
 * [Unit Jasmine Testing Documentation](https://ej2.syncfusion.com/angular/documentation/grid/how-to/unit-jasmine-testing)
-* [Selenium E2E Testing using Protractor in Angular](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/angular-selenium/)
+* [Selenium E2E Testing using Protractor in Angular](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/angular-selenium)
 
 
 

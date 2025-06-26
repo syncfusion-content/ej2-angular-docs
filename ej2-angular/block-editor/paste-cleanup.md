@@ -25,11 +25,24 @@ By default, following styles are allowed:
 In the below example, only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
 
 ```typescript
-const editor = new BlockEditor({
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+
+@Component({
+    imports: [ BlockEditorModule ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render BlockEditor component. -->
+    <div class="container" style="width: 40px; margin: 50px auto;">
+        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+    </div>`
+})
+
+export class AppComponent {
     pasteSettings: {
         allowedStyles: ['font-weight', 'font-style']
     }
-});
+}
 ```
 
 ## Setting denied tags
@@ -39,23 +52,66 @@ The [deniedTags](../api/blockeditor/pasteSettingsModel/#deniedtags) property in 
 In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
 
 ```typescript
-const editor = new BlockEditor({
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+
+@Component({
+    imports: [ BlockEditorModule ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render BlockEditor component. -->
+    <div class="container" style="width: 40px; margin: 50px auto;">
+        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+    </div>`
+})
+
+export class AppComponent {
     pasteSettings: {
         deniedTags: ['script', 'iframe']
     }
-});
+}
 ```
+
+Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/paste-cleanup/allowedstyle/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/paste-cleanup/allowedstyle/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/paste-cleanup/allowedstyle/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/paste-cleanup/allowedstyle" %}
 
 ## Disable Keep format
 
 By default, the editor attempts to keep the formatting of the pasted content (e.g., bold, italics, links). You can disable this behavior by setting the [keepFormat](../api/blockeditor/pasteSettingsModel/#keepformat) property to `false` in [pasteSettings](../api/blockeditor/#pastesettings). When disabled, the editor will primarily paste the content as plain text regardless of `allowedStyles`.
 
 ```typescript
-const editor = new BlockEditor({
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+
+@Component({
+    imports: [ BlockEditorModule ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render BlockEditor component. -->
+    <div class="container" style="width: 40px; margin: 50px auto;">
+        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+    </div>`
+})
+
+export class AppComponent {
     pasteSettings: {
         keepFormat: false
     }
-});
+}
 ```
 
 ## Allowing plain text
@@ -63,12 +119,42 @@ const editor = new BlockEditor({
 To paste content purely as plain text, stripping all HTML tags and inline styles, you can set the [plainText](../api/blockeditor/pasteSettingsModel/#plaintext) property to `true` in [pasteSettings](../api/blockeditor/#pastesettings). This ensures that only the raw textual content is inserted into the editor, making it ideal for maintaining strict content consistency. By default, the `plainText` property is set to `false`.
 
 ```typescript
-const editor = new BlockEditor({
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+
+@Component({
+    imports: [ BlockEditorModule ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render BlockEditor component. -->
+    <div class="container" style="width: 40px; margin: 50px auto;">
+        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+    </div>`
+})
+
+export class AppComponent {
     pasteSettings: {
         plainText: true
     }
-});
+}
 ```
+
+Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/paste-cleanup/plaintext/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/paste-cleanup/plaintext/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/paste-cleanup/plaintext/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/paste-cleanup/plaintext" %}
 
 ### Events
 

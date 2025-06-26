@@ -137,9 +137,9 @@ To show a large number of columns when printing, you can adjust the scale option
 
 ## Show or hide columns while printing
 
-In the Syncfusion Angular Grid, you have the flexibility to control the visibility of columns during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) and [printComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#printcomplete) events while printing. This capability enhances your control over which columns are included in the printed output, allowing you to tailor the printed grid to your specific needs.
+In the Syncfusion Angular Grid, you have the flexibility to control the visibility of columns during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) and [printComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#printcomplete) events while printing. This capability enhances your control over which columns are included in the printed output, allowing you to tailor the printed grid to your specific needs.
 
-In the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event, you can show or hide columns by setting [column.visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** respectively.
+In the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event, you can show or hide columns by setting [column.visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** respectively.
 
 In the `printComplete` event, the column visibility state is reset back to its original configuration.
 

@@ -31,7 +31,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { registerLicense } from '@syncfusion/ej2-base';
 
-// Registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key
+// Registering Syncfusion license key
 registerLicense('Replace your generated license key here');
 
 if (environment.production) {
@@ -42,7 +42,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 ```
 
->Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential JavaScript 2 products.
+>Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key using the npx command
 
@@ -152,7 +152,7 @@ The following sections show how to use an environment variable in CI services.
   - name: Install node modules
     run: npm install
 
-  - name: Activate Syncfusion<sup style="font-size:70%">&reg;</sup> License
+  - name: Activate Syncfusion License
     run: npx syncfusion-license activate
     env:
       SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}

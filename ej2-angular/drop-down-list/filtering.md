@@ -100,6 +100,22 @@ In the following sample,data with diacritics are bound as dataSource for DropDow
   
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs10" %}
 
+## Debounce delay
+
+You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/dropdownlist/getting-started-cs23/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/dropdownlist/getting-started-cs23/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs23" %}
+
 ## See Also
 
 * [How to limit the search result while filtering](./how-to/search-on-filtering)

@@ -72,6 +72,37 @@ You can use the `browse` option on the video dialog to select the video from the
 
 If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
+## Maximum file size restrictions
+
+You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
+
+```typescript
+
+import { Component } from '@angular/core';
+import { RichTextEditorModule, ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, VideoService, ImageService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+
+@Component( {
+    imports: [RichTextEditorModule],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] ='insertVideoSettings'>
+    </ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, AudioService, TableService, PasteCleanupService, VideoService],
+} )
+
+export class AppComponent {
+    private toolbarSettings: ToolbarSettingsModel = {
+        items: [ 'Video', 'Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'Blockquote', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'CreateTable', 'Image', '|', 'SourceCode', '|', 'Undo', 'Redo' ]
+    };
+    private  insertVideoSettings: VideoSettingsModel = {
+        maxFileSize: 30000000
+    };
+}
+
+```
+
 ## Saving video to the server
 
 Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#path) properties.
@@ -320,50 +351,6 @@ public void Rename()
         Response.Status = "204 No Content";
         Response.StatusDescription = e.Message;
         Response.End();
-    }
-}
-
-```
-
-### Restricting video by size
-
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
-In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
-
-```typescript
-
-import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, VideoService, ImageService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
-import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
-
-@Component( {
-    imports: [RichTextEditorModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] = 'insertVideoSettings' (fileUploading) = 'onVideoUpload($event)' >
-    </ejs-richtexteditor>`,
-    providers: [
-        ToolbarService, QuickToolbarService, LinkService, VideoService, HtmlEditorService, ImageService, TableService, PasteCleanupService
-    ],
-} )
-
-export class AppComponent {
-    public toolbarSettings: ToolbarSettingsModel = {
-        items: [ 'Video' ]
-    };
-    public insertVideoSettings: VideoSettingsModel = {
-        saveUrl: 'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save',
-        path: '../Files/'
-    };
-    public onVideoUpload = ( args: UploadingEventArgs ) => {
-        let sizeInBytes: number = args.fileData.size;
-        let fileSize: number = 500000;
-        if ( fileSize < sizeInBytes ) {
-            args.cancel = true;
-        }
     }
 }
 

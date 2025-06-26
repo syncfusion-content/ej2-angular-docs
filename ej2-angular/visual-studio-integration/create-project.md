@@ -34,7 +34,7 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
       Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion<sup style="font-size:70%">&reg;</sup> or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion<sup style="font-size:70%">&reg;</sup> for ASP.NET Core.
 
-      ![Syncfusion<sup style="font-size:70%">&reg;</sup> template](images/create-new-project.png)
+      ![syncfusion template](images/create-new-project.png)
 
       > In Visual Studio 2017, choose **File > New > Project** and navigate to **Syncfusion > .NET Core > Syncfusion ASP.NET Core Web Application** in **Visual Studio**.
 
@@ -42,7 +42,7 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
     ![syncfusion template](images/syncfusion-template.png)
 
-4. Name the Project, choose the destination location and then click Create button. The Syncfusion ASP.NET Core project configuration wizard appears.
+4. Name the Project, choose the destination location and then click Create button. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core project configuration wizard appears.
 
     ![project configuration](images/angular-project-wizard.png)
 

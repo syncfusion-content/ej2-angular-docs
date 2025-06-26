@@ -26,7 +26,7 @@ The steps below show how to install JavaScript Linux installer.
    N> The Unlock key is not required to install the Linux installer.
 
 
-3. You can launch the demo source and use the NuGet packages included in the Linux installer.
+4. You can launch the demo source and use the NuGet packages included in the Linux installer.
 
 
 
@@ -34,5 +34,5 @@ The steps below show how to install JavaScript Linux installer.
 
 After the installation, the license key is required to register the demo source that is included in the linux installer. To learn about the steps for license registration for the JavaScript - EJ2 linux installer, please refer to this.
 
-* [Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in the project](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project)
+* [Register Syncfusion License key in the project](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-using-the-npx-command)

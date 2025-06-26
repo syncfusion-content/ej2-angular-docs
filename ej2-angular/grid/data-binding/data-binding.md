@@ -203,7 +203,7 @@ The following example demonstrates how to prevent local time zone conversion for
   
 {% previewsample "page.domainurl/samples/grid/databinding-timezone" %}
 
-## How to set custom headers using a custom adaptor
+## How to set custom headers using a custom adaptor in Syncfusion Angular Grid
 
 Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion Angular Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
 

@@ -461,4 +461,4 @@ ng serve --prod
 
 For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-angular-pivot-table-component-in-angular-18)
 
-> You can also explore our [Angular Pivot Table example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.
+> You can also explore our [Angular Pivot Table example](https://ej2.syncfusion.com/angular/demos/#/material/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.

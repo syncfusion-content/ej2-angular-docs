@@ -32,7 +32,7 @@ The following steps explain how to install the Syncfusion<sup style="font-size:7
 
 2. Go to **View > Extensions**, and open Manage Extensions.
 
-3. Type **“Syncfusion<sup style="font-size:70%">&reg;</sup> Web** in the search box.
+3. Type **“Syncfusion Web** in the search box.
 
      ![Extension](images/Extension.png)
 

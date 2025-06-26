@@ -102,7 +102,7 @@ import { HubConnectionBuilder, HttpTransportType, HubConnectionState, HubConnect
 import { hideSpinner, showSpinner } from '@syncfusion/ej2-popups';
  
 //Inject collaborative editing module.
-DocumentEditor.Inject(CollaborativeEditingHandler);
+DocumentEditorComponent.Inject(CollaborativeEditingHandler);
 
 @Component({
   selector: 'app-root',
