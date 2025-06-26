@@ -1,0 +1,21 @@
+<div id="container">
+    <div id="blockeditor" ejs-blockeditor [blocks]="blockData" [pasteSettings]="pasteSettings" (afterPaste)="handleAfterPaste($event)"></div>
+    <div id="controls">
+        <h4>Test Content to Copy and Paste:</h4>
+        <div class="test-content">
+            <div id="sampleContent" contenteditable="true">
+                <h2 style="color: red; font-weight: bold; font-size: 24px;">Formatted Heading</h2>
+                <p style="background-color: yellow; font-style: italic;">
+                    This is a <span style="font-weight: bold;">bold paragraph</span> with 
+                    <span style="color: blue; font-style: italic;">italic text</span> and 
+                    <span style="text-decoration: underline;">underlined content</span>.
+                </p>
+                <div style="border: 1px solid black; padding: 10px;">
+                    <span style="font-weight: 600;">Heavy text</span> and 
+                    <span style="color: green; font-size: 18px;">colored text</span>
+                </div>
+            </div>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>

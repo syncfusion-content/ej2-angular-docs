@@ -1,0 +1,14 @@
+<div id="container">
+    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" ></div>
+    <div id="controls">
+            <h3>Data Export Methods</h3>
+            <div class="button-group">
+                <button (click)="getAllDataJson()">Get All Data as JSON</button>
+                <button (click)="getBlockDataJson()">Get Block Data as JSON</button>
+                <button (click)="getAllDataHtml()">Get All Data as HTML</button>
+                <button (click)="getBlockDataHtml()">Get Block Data as HTML</button>
+                <button (click)="printContent()">Print Editor Content</button>
+            </div>
+            <div id="output">{{output}}</div>
+    </div>
+</div>

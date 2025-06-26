@@ -17,11 +17,7 @@ The Block Editor component provides a comprehensive set of events that allow you
 The [created](../api/blockeditor/#created) event is triggered when the Block Editor component is successfully initialized and ready for use. This event is useful for performing setup operations or initializing additional features after the editor is created.
 
 ```typescript
-const editor = new BlockEditor({
-    created: () => {
-        // You may initialize custom plugins or features
-    }
-});
+<div ejs-blockeditor (created)="onCreated()" ></div>
 ```
 
 ## ContentChanged
@@ -29,11 +25,7 @@ const editor = new BlockEditor({
 The [contentChanged](../api/blockeditor/#contentchanged) event is triggered whenever the content within the editor is modified. This includes content additions, deletions, or any structural modifications to the document.
 
 ```typescript
-const editor = new BlockEditor({
-    contentChanged: (args: ContentChangedEventArgs) => {
-        // You may implement auto-save functionality
-    }
-});
+<div ejs-blockeditor (contentChanged)="onContentChanged()" ></div>
 ```
 
 ## SelectionChanged
@@ -41,11 +33,8 @@ const editor = new BlockEditor({
 The [selectionChanged](../api/blockeditor/#selectionchanged) event is triggered when the user's text selection changes within the editor. This can be useful for updating UI elements based on the current selection.
 
 ```typescript
-const editor = new BlockEditor({
-    selectionChanged: (args: SelectionChangedEventArgs) => {
-        // You can update formatting toolbar based on selection
-    }
-});
+<div ejs-blockeditor (selectionChanged)="onSelectionChanged()" ></div>
+
 ```
 
 ## UndoRedoPerformed
@@ -53,11 +42,7 @@ const editor = new BlockEditor({
 The [undoRedoPerformed](../api/blockeditor/#undoredoperformed) event is triggered when an undo or redo operation is executed. This event provides information about the action performed and the state before and after the operation.
 
 ```typescript
-const editor = new BlockEditor({
-    undoRedoPerformed: (args: UndoRedoEventArgs) => {
-        // You may log undo/redo actions for analytics
-    }
-});
+<div ejs-blockeditor (undoRedoPerformed)="undoRedoPerformed()" ></div>
 ```
 
 ## BlockAdded
@@ -65,11 +50,7 @@ const editor = new BlockEditor({
 The [blockAdded](../api/blockeditor/#blockadded) event is triggered when a new block is added to the editor. This includes blocks added through user interaction, paste operations, or programmatic insertion.
 
 ```typescript
-const editor = new BlockEditor({
-    blockAdded: (args: BlockAddedEventArgs) => {
-        // You may trigger custom actions when a block is added
-    }
-});
+<div ejs-blockeditor (blockAdded)="onBlockAdded()" ></div>
 ```
 
 ## BlockRemoved
@@ -82,6 +63,7 @@ const editor = new BlockEditor({
         // You may trigger custom actions when a block is removed
     }
 });
+<div ejs-blockeditor (blockRemoved)="onBlockRemoved()" ></div>
 ```
 
 ## BlockMoved
@@ -89,11 +71,7 @@ const editor = new BlockEditor({
 The [blockMoved](../api/blockeditor/#blockmoved) event is triggered when blocks are moved from one position to another within the editor. This includes drag-and-drop operations, through keyboard shortcuts or programmatic block reordering.
 
 ```typescript
-const editor = new BlockEditor({
-    blockMoved: (args: BlockMovedEventArgs) => {
-        // You may trigger custom actions when blocks are moved
-    }
-});
+<div ejs-blockeditor (blockMoved)="onBlockMoved()" ></div>
 ```
 
 ## BlockDragStart
@@ -101,12 +79,7 @@ const editor = new BlockEditor({
 The [blockDragStart](../api/blockeditor/#blockdragstart) event is triggered at the beginning of a block drag operation, providing information about the blocks being dragged and their initial position.
 
 ```typescript
-const editor = new BlockEditor({
-    blockDragStart: (args: BlockDragEventArgs) => {
-        // You may cancel the drag operation for certain block types
-        // or trigger custom actions when a block drag operation starts
-    }
-});
+<div ejs-blockeditor (blockDragStart)="onBlockDragStart()" ></div>
 ```
 
 ## BlockDrag
@@ -114,11 +87,7 @@ const editor = new BlockEditor({
 The [blockDrag](../api/blockeditor/#blockdrag) event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
 
 ```typescript
-const editor = new BlockEditor({
-    blockDrag: (args: BlockDragEventArgs) => {
-        // You may trigger custom actions during a block drag operation based on the current position
-    }
-});
+<div ejs-blockeditor (blockDrag)="onBlockDrag()" ></div>
 ```
 
 ## BlockDrop
@@ -126,11 +95,7 @@ const editor = new BlockEditor({
 The [blockDrop](../api/blockeditor/#blockdrop) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
 
 ```typescript
-const editor = new BlockEditor({
-    blockDrop: (args: BlockDropEventArgs) => {
-        // You may trigger custom actions when blocks are dropped
-    }
-});
+<div ejs-blockeditor (blockDrop)="onBlockDrag()" ></div>
 ```
 
 ## Focus
@@ -138,11 +103,7 @@ const editor = new BlockEditor({
 The [focus](../api/blockeditor/#focus) event is triggered when the editor gains focus. This is useful for updating UI states and managing editor interactions.
 
 ```typescript
-const editor = new BlockEditor({
-    focus: (args: FocusEventArgs) => {
-        // Custom actions when the editor gains focus
-    }
-});
+<div ejs-blockeditor (focus)="onFocus()" ></div>
 ```
 
 ## Blur
@@ -150,11 +111,7 @@ const editor = new BlockEditor({
 The [blur](../api/blockeditor/#blur) event is triggered when the editor loses focus. This is commonly used for auto-saving content or hiding UI elements.
 
 ```typescript
-const editor = new BlockEditor({
-    blur: (args: BlurEventArgs) => {
-        // Custom actions when the editor loses focus
-    }
-});
+<div ejs-blockeditor (blur)="onBlur()" ></div>
 ```
 
 ## KeyActionExecuted
@@ -162,11 +119,7 @@ const editor = new BlockEditor({
 The [keyActionExecuted](../api/blockeditor/#keyactionexecuted) event is triggered when a keyboard shortcut is executed. This provides information about the key combination used and the corresponding action performed.
 
 ```typescript
-const editor = new BlockEditor({
-    keyActionExecuted: (args: KeyActionExecutedEventArgs) => {
-        // Custom actions when a keyboard shortcut is executed
-    }
-});
+<div ejs-blockeditor (keyActionExecuted)="onKeyActionExecuted()" ></div>
 ```
 
 ## BeforePaste
@@ -174,11 +127,7 @@ const editor = new BlockEditor({
 The [beforePaste](../api/blockeditor/#beforepaste) event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
 
 ```typescript
-const editor = new BlockEditor({
-    beforePaste: (args: BeforePasteEventArgs) => {
-        // You may cancel paste if content contains restricted elements
-    }
-});
+<div ejs-blockeditor (beforePaste)="onBeforePaste()" ></div>
 ```
 
 ## AfterPaste
@@ -186,9 +135,5 @@ const editor = new BlockEditor({
 The [afterPaste](../api/blockeditor/#afterpaste) event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
 
 ```typescript
-const editor = new BlockEditor({
-    afterPaste: (args: AfterPasteEventArgs) => {
-        // Process pasted content or update UI
-    }
-});
+<div ejs-blockeditor (afterPaste)="onAfterPaste()" ></div>
 ```

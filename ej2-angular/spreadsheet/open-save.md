@@ -329,6 +329,38 @@ The following code snippet demonstrates how to configure the deserialization opt
 
 {% previewsample "page.domainurl/samples/spreadsheet/open-from-json" %}
 
+### Improving Excel file open performance with parsing options
+
+Opening large Excel files into the Angular Spreadsheet can sometimes lead to slower performance and increased memory usage. This is often caused by the processing of additional elements such as styles and number formats—even when the actual data content is minimal. For example, an Excel file with only a small amount of data but a large number of styled or formatted empty cells can significantly impact load time and memory consumption.
+
+To address this, we've introduced parsing options that allow users to selectively skip non-essential features during the open process. By enabling options like `IgnoreStyle` and `IgnoreFormat`, you can reduce the amount of data processed, resulting in:
+* Faster load times
+* Lower memory usage
+* Smaller JSON responses
+
+These enhancements are especially beneficial for users working with large or complex Excel files, offering a more efficient and responsive experience.
+
+> **Note:** These options are ideal when styles and number formats are not critical to your use case and the focus is on loading the actual data efficiently. 
+
+The code example below demonstrates how to configure the `IgnoreStyle` and `IgnoreFormat` parsing options on the `server-side`.
+
+**Code Snippet:**
+
+**Server-Side Configuration:**
+```csharp
+public IActionResult Open(IFormCollection openRequest) 
+{
+    OpenRequest open = new OpenRequest();
+    ...
+    open.ParseOptions = new WorkbookParseOptions() { 
+        IgnoreStyle = true, 
+        IgnoreFormat = true
+    }; 
+    ...
+    return Content(Workbook.Open(open)); 
+} 
+```
+
 ### Chunk response processing
 
 When opening large Excel files with many features and data, the server response can become very large. This might cause memory issues or connection problems during data transmission. The `Chunk Response Processing` feature solves this by dividing the server response into smaller parts, called chunks, and sending them to the client in parallel. The client receives these chunks and combines them to load the Excel data smoothly into the spreadsheet.
@@ -848,7 +880,7 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
 
-And also refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/open-save/#server-dependencies) for more information.
+And also refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/open-save#server-dependencies) for more information.
 
 ## Supported File Formats
 

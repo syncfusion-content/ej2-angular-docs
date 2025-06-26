@@ -100,6 +100,22 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
   
 {% previewsample "page.domainurl/samples/multiselect/getting-started-cs11" %}
 
+## Debounce delay
+
+You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/multiselect/getting-started-cs19/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/multiselect/getting-started-cs19/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs19" %}
+
 ## See Also
 
 * [How to bind the data](./data-binding/)

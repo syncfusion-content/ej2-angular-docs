@@ -239,6 +239,32 @@ Bezier segments are annotated with two thumbs representing the control points. T
 
 ![Connector interaction](./images/connector-interaction.gif)
 
+## Restrict Interaction in Negative Axis Area
+
+The Diagram component includes a built-in option to restrict user interactions within the negative axis region—areas defined by negative X or Y coordinates. By enabling the `RestrictNegativeAxisDragDrop` constraint, the following interactions are prevented:
+
+* **Dragging**: Diagram elements cannot be dragged into areas with negative coordinates.
+* **Resizing**: The size of diagram objects cannot be adjusted to extend into the negative axis.
+* **Dropping Symbols**: Symbols from the palette cannot be dropped in the negative region.
+
+```typescript
+@Component({
+  selector: "app-container",
+  // specifies the template string for the diagram component with constraints
+  template: `<ejs-diagram id="diagram" width="100%" height="580px" [constraints]='constraints'>
+             </ejs-diagram>`
+})
+export class AppComponent {
+// Prevent diagram interactions in the negative region
+public constraints: DiagramConstraints = DiagramConstraints.Default |
+                                         DiagramConstraints.RestrictNegativeAxisDragDrop
+}
+```
+
+![negativeAxisRestrict](./images/negativeAxisRestrict.gif)
+
+N> A symbol dragged from the palette will only be added to the diagram if it’s fully positioned within the positive coordinate space.
+
 ## User handles
 
 User handles are used to add frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selecteditems) property. The [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#name) property of userHandles is used to define the name of the user handle, which can then be used at runtime for identification and customization.

@@ -48,6 +48,30 @@ The Block Editor can be localized to any culture by defining the text of the Blo
 
 The below example shows adding the German culture locale(`de-DE`)
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/globalization/localization/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/globalization/localization/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/globalization/localization" %}
+
 ## RTL
 
 RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the [enableRtl](../api/blockeditor/#enablertl) property to `true`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/globalization/rtl/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/globalization/rtl/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/block-editor/globalization/rtl" %}

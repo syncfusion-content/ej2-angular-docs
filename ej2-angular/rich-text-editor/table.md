@@ -133,6 +133,28 @@ The text formatting feature in tables allows users to apply various styles to se
   
 {% previewsample "page.domainurl/samples/rich-text-editor/table-row-and-column-selection" %}
 
+## Copy, cut, and paste table rows and columns
+
+The Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, allowing users to easily modify and manage table data within the editor.
+
+Users can select multiple table cells by dragging the mouse or by holding the <kbd>Shift</kbd> key and using the <kbd>Arrow keys</kbd>. After selecting the desired cells, the following standard keyboard shortcuts can be used:
+
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Copy   | <kbd>Ctrl</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>C</kbd> |
+| Cut    | <kbd>Ctrl</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>X</kbd> |
+| Paste  | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> |
+
+**Paste behavior and supported scenarios:**
+
+* Table structure, formatting, and cell properties are automatically preserved during the paste operation.
+* The editor intelligently handles cell merging and splitting based on the destination context.
+* Supports cross-table operations. Users can copy content from one table and paste it into another.
+* Allows pasting partial table content as new tables or into existing table cells.
+* Compatible with content from external applications like Excel, Word, and other editors.
+* Maintains formatting consistency during both internal and external paste operations.
+* Supports pasting into a single clicked cell or a selected range of multiple cells.
+
 ## Merging and splitting cells
 
 The Rich Text Editor allows users to modify table appearance by merging or splitting cells.

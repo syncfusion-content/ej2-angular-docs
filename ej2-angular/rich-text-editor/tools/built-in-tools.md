@@ -141,6 +141,14 @@ The table quicktoolbar provides options for table editing within the Rich Text E
 | TableCellVerticalAlign | ![TableCellVerticalAlign icon](../images/vertical-align.png) | Allows the table cell content to be aligned vertically. | quickToolbarSettings: { table: ['TableCellVerticalAlign']} |
 | TableEditProperties | ![TableEditProperties icon](../images/table-edit.png) | Allows you to change the table width, padding, and cell spacing styles. | quickToolbarSettings: { table: ['TableEditProperties']} |
 
+### Horizontal Line
+
+Horizontal lines visually separate sections of content in the editor, enhancing readability and layout clarity.
+
+| Name | Icons | Summary | Initialization |
+|----------------|---------|---------|------------------------------------------|
+| Horizontal Line | ![HorizontalLine icon](../images/horizontal-icon.png) | Allows you to insert horizontal line.|toolbarSettings: { items: ['HorizontalLine']} |
+
 ### Undo & redo
 
 These tools allow users to easily undo or redo any changes made within the editor to restore or repeat previous actions.

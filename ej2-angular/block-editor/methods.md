@@ -20,10 +20,15 @@ You can add a new block to the editor at a specified position using the [addBloc
 
 ```typescript
 // Add a new paragraph block after a specific block
-const newBlock: BlockModel = {
-    id: 'new-block-1',
+public newBlock: BlockModel = {
+    id: 'new-block',
     type: 'Paragraph',
-    content: 'This is a new paragraph block'
+    content: [
+        {
+            type: ContentType.Text,
+            content: 'This is a newly added block'
+        }
+    ]
 };
 
 editor.addBlock(newBlock, 'target-block-id', true); // true = after, false = before
@@ -36,19 +41,6 @@ You can remove a block from the editor using the [removeBlock](../api/blockedito
 ```typescript
 // Remove a block by its ID
 editor.removeBlock('block-to-remove-id');
-```
-
-### Getting a block
-
-You can retrieve a block model by its unique identifier using the [getBlock](../api/blockeditor/#getblock) method. Returns `null` if the block is not found.
-
-```typescript
-// Get a specific block
-const block: BlockModel = editor.getBlock('block-id');
-if (block) {
-    console.log('Block type:', block.type);
-    console.log('Block content:', block.content);
-}
 ```
 
 ### Moving a block
@@ -66,15 +58,45 @@ You can update the properties of an existing block using the [updateBlock](../ap
 
 ```typescript
 // Update block properties
-const success: boolean = editor.updateBlock('block-id', {
-    content: 'Updated content',
-    type: 'Heading1'
+editor.updateBlock('block-id', {
+    isChecked: true
 });
-
-if (success) {
-    console.log('Block updated successfully');
-}
 ```
+
+### Getting a block
+
+You can retrieve a block model by its unique identifier using the [getBlock](../api/blockeditor/#getblock) method. Returns `null` if the block is not found.
+
+```typescript
+// Get a specific block
+editor.getBlock('block-id');
+```
+
+### Getting block count
+
+You can utilize the [getBlockCount](../api/blockeditor/#getblockcount) method to retrieve the total number of blocks in the editor.
+
+```typescript
+// Get total block count
+editor.getBlockCount();
+```
+
+Below example demonstrates the usage of the above methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/methods/block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/methods/block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/methods/block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/methods/block" %}
 
 ## Selection and Cursor Methods
 
@@ -102,10 +124,7 @@ You can retrieve the currently selected blocks in the editor using the [getSelec
 
 ```typescript
 // Get all selected blocks
-const selectedBlocks: BlockModel[] = editor.getSelectedBlocks();
-if (selectedBlocks) {
-    console.log('Number of selected blocks:', selectedBlocks.length);
-}
+editor.getSelectedBlocks();
 ```
 
 ### Getting selection range
@@ -114,11 +133,7 @@ You can get the current selection range  in the editor using the [getRange](../a
 
 ```typescript
 // Get current selection range
-const range: Range = editor.getRange();
-if (range) {
-    console.log('Selection start:', range.startOffset);
-    console.log('Selection end:', range.endOffset);
-}
+editor.getRange();
 ```
 
 ### Setting selection range
@@ -127,10 +142,7 @@ You can set the selection range in the editor using the [selectRange](../api/blo
 
 ```typescript
 // Create and select a custom range
-const range: Range = document.createRange();
-range.setStart(startNode, startOffset);
-range.setEnd(endNode, endOffset);
-editor.selectRange(range);
+editor.selectRange(customRange);
 ```
 
 ### Selecting a block
@@ -150,6 +162,23 @@ You can select all blocks in the editor using the [selectAllBlocks](../api/block
 // Select all content in the editor
 editor.selectAllBlocks();
 ```
+
+Below example demonstrates the usage of the above methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/methods/selection/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/methods/selection/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/methods/selection/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/methods/selection" %}
 
 ## Focus Management Methods
 
@@ -209,6 +238,23 @@ editor.disableToolbarItems('bold');
 editor.disableToolbarItems(['bold', 'italic', 'underline']);
 ```
 
+Below example demonstrates the usage of the above methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/methods/formatting/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/methods/formatting/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/methods/formatting/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/methods/formatting" %}
+
 ## Data Export Methods
 
 ### Getting data as JSON
@@ -235,18 +281,6 @@ const allBlocksHtml: string = editor.getDataAsHtml();
 const specificBlockHtml: string = editor.getDataAsHtml('block-id');
 ```
 
-## Utility Methods
-
-### Getting block count
-
-You can utilize the [getBlockCount](../api/blockeditor/#getblockcount) method to retrieve the total number of blocks in the editor.
-
-```typescript
-// Get total block count
-const totalBlocks: number = editor.getBlockCount();
-console.log('Total blocks:', totalBlocks);
-```
-
 ### Printing editor content
 
 You can print the editor content using the [print](../api/blockeditor/#print) method. This method opens a print dialog with the current editor content formatted for printing.
@@ -255,3 +289,20 @@ You can print the editor content using the [print](../api/blockeditor/#print) me
 // Print the editor content
 editor.print();
 ```
+
+Below example demonstrates the usage of the above methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/methods/data/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/methods/data/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/methods/data/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/methods/data" %}

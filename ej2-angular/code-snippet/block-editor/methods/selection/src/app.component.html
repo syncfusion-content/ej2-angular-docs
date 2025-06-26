@@ -1,0 +1,16 @@
+<div id="container">
+    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" ></div>
+    <div id="controls">
+        <h3>Selection and Cursor Methods</h3>
+        <div class="button-group">
+            <button (click)="setTextSelection()">Set Text Selection</button>
+            <button (click)="setCursor()">Set Cursor Position</button>
+            <button (click)="getSelectedBlocks()">Get Selected Blocks</button>
+            <button (click)="getSelectionRange()">Get Selection Range</button>
+            <button (click)="setCustomRange()">Set Selection Range</button>
+            <button (click)="selectBlock()">Select Block</button>
+            <button (click)="selectAll()">Select All Blocks</button>
+        </div>
+        <div id="output">{{output}}</div>
+    </div>
+</div>

@@ -31,7 +31,7 @@ The following steps explain how to install the Syncfusion<sup style="font-size:7
 
 2. Go to **View > Extensions**, and open Manage Extensions.
 
-3. Type **“Syncfusion<sup style="font-size:70%">&reg;</sup> Web** in the search box.
+3. Type **“Syncfusion Web** in the search box.
 
      ![Extension](images/Extension.png)
 
@@ -51,7 +51,7 @@ The following steps explain how to download Syncfusion<sup style="font-size:70%"
 
 2. Click Install from Visual Studio Code Marketplace. The browser opens the popup with the information like **“Open Visual Studio Code”**. Click Open Visual Studio Code, then [Syncfusion<sup style="font-size:70%">&reg;</sup> Web Extension](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Angular-VSCode-Extensions) will open in Visual Studio Code.
 
-3. Click the Install button in the **"Web VSCode Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>"** extension.
+3. Click the Install button in the **"Web VSCode Extensions - Syncfusion"** extension.
 
 4. After the installation, reload the Visual Studio Code using the Reload Required in Visual Studio Code palette.
 

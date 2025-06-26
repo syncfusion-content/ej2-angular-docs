@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Set the disabled state in Angular Radio button component
 
-RadioButton component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/radio-button/#disabled) property. To disable RadioButton component, the `disabled` property can be set as `true`.
+RadioButton component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#disabled) property. To disable RadioButton component, the `disabled` property can be set as `true`.
 
-The following example illustrates how to disable a radio button and the selected one is displayed using [`change`](https://ej2.syncfusion.com/angular/documentation/api/radio-button/#change) event.
+The following example illustrates how to disable a radio button and the selected one is displayed using [`change`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

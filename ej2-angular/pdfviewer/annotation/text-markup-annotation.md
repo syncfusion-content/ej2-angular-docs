@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Text Markup Annotation in the Angular PDF Viewer component
 
-The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
+The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline,  strikethrough and squiggly annotations in the PDF document.
 
 ![Alt text](../../pdfviewer/images/text_markup_annotation.png)
 
@@ -848,6 +848,284 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
+## Squiggly a text
+
+There are two ways to add squiggly to a text in the PDF document:
+
+1. Using the context menu
+    * Select a text in the PDF document and right-click it.
+    * Select the **Squiggly** option in the context menu that appears.
+
+![Alt text](../../pdfviewer/images/squiggly_context.png)
+
+<!-- markdownlint-disable MD029 -->
+2. Using the annotation toolbar
+    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+    * Select the **Squiggly** button in the annotation toolbar. It enables the squiggly mode.
+    * Select the text and the squiggly annotation will be added.
+    * You can also select the text and apply the squiggly annotation using the **Squiggly** button.
+
+![Alt text](../../pdfviewer/images/squiggly_button.png)
+
+N> While you're in the pan mode, for navigating through the document, and you click on the squiggly button, the PDF Viewer control will smoothly transition to text select mode. This seamless transition ensures a fluid experience when switching between different interaction modes within the PDF Viewer interface.
+
+Refer to the following code sample to switch to squiggly mode.
+
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Squiggly text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/30.1.37/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Squiggly');
+  }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Squiggly text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Squiggly');
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+Refer to the following code sample to switch back to normal mode from the squiggly mode.
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Squiggly Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/30.1.37/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Squiggly');
+    }
+    setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+    }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Squiggly Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Squiggly');
+  }
+  setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+  }  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Squiggly a text programmatically
+
+The PDF Viewer library enables you to programmatically Squiggly text within the PDF Viewer control using the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotationn) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Squiggly programmatically:
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, SquigglySettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Squiggly text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/30.1.37/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Squiggly", {
+        bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+        pageNumber: 2
+    } as SquigglySettings);
+  }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, SquigglySettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">squiggly text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Squiggly", {
+        bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+        pageNumber: 2
+    } as SquigglySettings);
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Deleting a text markup annotation
 
 The selected annotation can be deleted in the following ways:
@@ -880,7 +1158,7 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 ## Setting default properties during the control initialization
 
-The properties of the text markup annotation can be set before creating the control using the  highlightSettings, underlineSettings, and strikethroughSettings.
+The properties of the text markup annotation can be set before creating the control using the  highlightSettings, underlineSettings,  strikethroughSettings and squigglySettings.
 
 >After editing the default color and opacity using the Edit Color tool and Edit Opacity tool, they will be changed to the selected values.
 
@@ -907,6 +1185,7 @@ import { LinkAnnotationService, BookmarkViewService,
     [highlightSettings]='highlightSettings'
     [underlineSettings]='underlineSettings'
     [strikethroughSettings]='strikethroughSettings'
+    [squigglySettings]='squigglySettings'
     style="height:640px;display:block">
   </ejs-pdfviewer>
 </div>`,
@@ -921,6 +1200,7 @@ export class AppComponent implements OnInit {
     public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
     public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
     public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    public squigglySettings = { author: 'Guest User', subject: 'Confidential', color: '#0000ff', opacity: 0.9, modifiedDate: '' };
     ngOnInit(): void {
     }
 }
@@ -946,6 +1226,7 @@ import { LinkAnnotationService, BookmarkViewService,
     [highlightSettings]='highlightSettings'
     [underlineSettings]='underlineSettings'
     [strikethroughSettings]='strikethroughSettings'
+    [squigglySettings]='squigglySettings'
     style="height:640px;display:block">
   </ejs-pdfviewer>
 </div>`,
@@ -960,6 +1241,7 @@ export class AppComponent implements OnInit {
     public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
     public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
     public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    public squigglySettings = { author: 'Guest User', subject: 'Confidential', color: '#0000ff', opacity: 0.9, modifiedDate: '' };
     ngOnInit(): void {
     }
 }

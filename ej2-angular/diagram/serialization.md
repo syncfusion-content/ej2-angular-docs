@@ -135,9 +135,9 @@ When a JSON file is uploaded, it undergoes parsing to extract its JSON data. Thi
 {% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs1" %}
 
 
-## Importing and Exporting Mind Map and Flowchart Diagrams using Mermaid Syntax
+## Importing and Exporting Diagrams using Mermaid Syntax
 
-The [`Diagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps and flowcharts from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps and flowcharts to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
+The [`Diagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps, flowcharts, and UML sequence diagrams from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps, flowcharts, and UML sequence diagrams to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
 
 ### Save diagram as Mermaid syntax
 
@@ -185,5 +185,20 @@ The following example shows how to load mind map diagram from mermaid syntax.
           
 {% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs3" %}
 
+#### Load UML Sequence diagram
 
-N> Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.
+The following example shows how to load UML Sequence diagram from mermaid syntax.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/serialisation/serialisation-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/serialisation/serialisation-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs4" %}
+
+N> Mermaid syntax-based serialization and deserialization is supported only for Flowchart layout, Mind map layout, and UML Sequence Diagram. Ensure that your Mermaid data aligns with one of these supported layouts to enable successful diagram loading.

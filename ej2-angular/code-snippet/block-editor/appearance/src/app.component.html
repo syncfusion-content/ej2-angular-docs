@@ -1,0 +1,17 @@
+<div id="container">
+    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" [cssClass]="currentTheme" [readOnly]="isReadonly" (focus)="onEditorFocus()" (blur)="onEditorBlur()"></div>
+    <div id="controls">
+        <h3>Appearance Configuration Demo</h3>
+        <div class="button-group">
+            <button (click)="toggleReadonly()">Toggle Readonly Mode</button>
+            <button (click)="applyCustomTheme()">Apply Custom Theme</button>
+        </div>
+        <!-- <div class="status-info">
+            <p><strong>Current Status:</strong> <span id="statusText">Editable, Default Theme</span></p>
+        </div> -->
+        <div id="statusText" style="margin-top: 10px; font-weight: bold;">
+        {{ statusMessage }}
+      </div>
+    </div>
+    <div id="output">{{ output }}</div>
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in Angular Rich Text Editor component | Syncfusion
+title: Text formatting and Structure in Angular Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Text formatting and Structure
@@ -293,6 +293,26 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
+## Horizontal line
+
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+
+To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
+
+Use the `HorizontalLine` tool in the editor below to see the feature in action.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/horizontal-line/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/horizontal-line/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/horizontal-line" %}
+
 ## Insert code
 
 The Angular Rich Text Editor component offers a powerful feature to format text as preformatted code blocks, making it ideal for displaying programming snippets or structured contents.
@@ -411,7 +431,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 > The format painter retains the formatting after application making it possible to apply the same formatting multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
-Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command/) public method.
+Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command) public method.
 
 ## Clear formatting
 
