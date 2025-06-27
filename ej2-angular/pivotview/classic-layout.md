@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Classic Layout in Angular Pivot Table component
 
-N> The classic layout supports only relational data sources and operates exclusively with client-side engine.
+N> This feature is applicable only to relational data sources.
 
 The classic layout in the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table offers a structured, tabular presentation of data, improving both readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier. By default, grand totals appear at the end of all rows, while subtotals are placed in a separate row beneath each group. All other features of the pivot table, such as filtering, sorting, drag-and-drop, expand/collapse functionality, and more, remain the same as in the compact layout, which serves as the default hierarchical format of the pivot table.
 

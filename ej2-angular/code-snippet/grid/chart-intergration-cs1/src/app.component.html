@@ -1,0 +1,9 @@
+<ejs-grid [dataSource]='data' #grid id="GridChart" height="500" allowSelection="true" [selectionSettings]='selectionSettings' [contextMenuItems]='contextMenuItems' (contextMenuClick)='contextMenuClick($event)' (created)='created()'>
+  <e-columns>
+    <e-column type='checkbox' width='50'></e-column>
+    <e-column field='Product' headerText='Product' width='200'></e-column>
+    <e-column field='Month' headerText='Month' width='140'></e-column>
+    <e-column field='Online' headerText='Online' format='C2' textAlign='Right' width='160'></e-column>
+    <e-column field='Total' headerText='Total' format='C2' textAlign='Right' width='160'></e-column>
+  </e-columns>
+</ejs-grid>
