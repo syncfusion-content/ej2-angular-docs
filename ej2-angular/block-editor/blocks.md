@@ -238,6 +238,9 @@ You can render Template blocks by setting the [type](../api/blockeditor/blockMod
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/template-block" %}
@@ -451,6 +454,9 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/block-editor/blocks/cssClass/src/app.component.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/cssClass/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/block-editor/blocks/cssClass" %}
@@ -592,6 +598,9 @@ The Block Editor allows you to use custom templates for specialized content usin
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/block-editor/blocks/block-types/template-block/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/blocks/block-types/template-block/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

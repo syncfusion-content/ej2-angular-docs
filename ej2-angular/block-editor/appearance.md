@@ -51,6 +51,9 @@ Below example demonstrates the usage of readonly and cssClass properties.
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/block-editor/appearance/src/app.component.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/block-editor/appearance/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/block-editor/appearance" %}
