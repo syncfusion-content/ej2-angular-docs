@@ -16,7 +16,7 @@ To save an edited image in the Image Editor component, use the toBlob method to 
 
 ## Supported image formats
 
-The Image Editor control supports four common image formats: PNG, JPEG, SVG, and WEBP. These formats allow you to work with a wide range of image files within the Image Editor.
+The Image Editor control supports five common image formats: PNG, JPEG, SVG, WEBP and BMP. These formats allow you to work with a wide range of image files within the Image Editor.
 
 When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, or WEBP, based on your specific requirements or preferences.
 
@@ -140,6 +140,29 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs53 %}
 
+### Opening Images with Custom Width and Height
+
+Users can now open images with specific width and height values using the [`imageSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imageSettings/) parameter in the `open` method. This enhancement introduces three additional properties: `width`, `height`, and `isAspectRatio`. These options allow precise control over the image dimensions, with the flexibility to preserve the original aspect ratio if needed. This feature is especially useful when rendering high-resolution images or when fitting images into fixed-size layouts or canvas areas.
+ 
+The following behaviors are supported through these properties:
+- Contains behavior: By specifying only one dimension (either `width` or `height`) and enabling `isAspectRatio`, the other dimension is automatically calculated to maintain the image’s original proportions.
+- Cover behavior: When both `width` and `height` are specified with `isAspectRatio` set to `true`, the image scales proportionally to fit within the given dimensions while preserving its aspect ratio.
+- Stretch or Shrink behavior: Setting `isAspectRatio` to `false` forces the image to strictly follow the specified `width` and `height`, allowing it to stretch or shrink regardless of its original aspect ratio.
+
+The following example showcases how all three behaviors can be achieved using the `open` method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs63/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs63/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs63" %}
+
 ### Save as image
 
 The [`export`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#export) method in the Image Editor component enables you to save the modified image as a file on the local device. This method accepts two parameters: the file name and the file type. 
@@ -244,7 +267,7 @@ The [`fileOpened`](https://ej2.syncfusion.com/angular/documentation/api/image-ed
 
 * FileName: This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor. 
 
-* FileType: This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, or WEBP. 
+* FileType: This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, WEBP or BMP. 
 
 By accessing these arguments within the `fileOpened` event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor component.
 
