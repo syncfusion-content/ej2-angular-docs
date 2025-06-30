@@ -41,3 +41,23 @@ Here's an example of how to customize both the Undo/Redo timer and steps:
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs21" %}
+
+## Clear Undo/Redo stack
+
+The Rich Text Editor automatically maintains an undo/redo stack, allowing users to revert or redo changes made during editing.
+
+To clear the entire undo and redo stack, use the public [clearUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#clearundoredo) method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
+
+Here's an example of how to clear the Undo/Redo stack:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/undo-redo-stack/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/undo-redo-stack/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/undo-redo-stack" %}

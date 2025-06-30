@@ -23,6 +23,7 @@ The Rich Text Editor allows you to configure different types of toolbar using [`
 1. Expand 
 2. MultiRow
 3. Scrollable
+4. Popup
 
 ## Expanding the toolbar
 
@@ -71,6 +72,20 @@ Setting the `type` to `Scrollable` in [toolbarSettings](https://ej2.syncfusion.c
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/toolbar/scrollable-cs1" %}
+
+## Configuring a popup toolbar
+
+Setting the `type` to `Popup` in [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/toolbar/popup-toolbar/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/toolbar/popup-toolbar/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Creating a sticky toolbar
 
