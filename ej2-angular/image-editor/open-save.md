@@ -163,7 +163,7 @@ The following example showcases how all three behaviors can be achieved using th
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs63" %}
 
-### Save as image
+## Save as image
 
 The [`export`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#export) method in the Image Editor component enables you to save the modified image as a file on the local device. This method accepts two parameters: the file name and the file type. 
 
