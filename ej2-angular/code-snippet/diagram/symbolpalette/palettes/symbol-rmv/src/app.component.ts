@@ -5,16 +5,14 @@ import { SymbolPaletteComponent, DiagramModule, SymbolPaletteModule, NodeModel, 
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [
-        DiagramModule, SymbolPaletteModule
-    ],
-
+    imports: [DiagramModule, SymbolPaletteModule],
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<button id='rmvBasicShape' (click)="removeBasicShape()">removeBasicShape</button>
-    <button id='rmvFlowShape' (click)="removeFlowShape()">removeFlowShape</button>
-    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode" [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=50>
+    template: `<button id='rmvBasicShape' (click)="removeBasicShape()">Remove BasicShape</button>
+    <button id='rmvFlowShape' (click)="removeFlowShape()">Remove FlowShape</button>
+    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode"
+        [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=50>
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -29,12 +27,12 @@ export class AppComponent {
                 id: 'Rectangle',
                 shape: { type: 'Basic', shape: 'Rectangle' },
                 style: { strokeWidth: 2 },
-              },
-              {
+            },
+            {
                 id: 'Ellipse',
                 shape: { type: 'Basic', shape: 'Ellipse' },
                 style: { strokeWidth: 2 },
-              },
+            },
         ];
         return basicShapes;
     };
@@ -44,12 +42,12 @@ export class AppComponent {
                 id: 'Decision',
                 shape: { type: 'Flow', shape: 'Decision' },
                 style: { strokeWidth: 2 },
-              },
-              {
+            },
+            {
                 id: 'Document',
                 shape: { type: 'Flow', shape: 'Document' },
                 style: { strokeWidth: 2 },
-              },
+            },
         ];
         return flowShapes;
     };
@@ -72,10 +70,10 @@ export class AppComponent {
         ];
     }
     removeBasicShape() {
-            /**
-     * parameter 1 - The ID of the palette where the shape to be removed.
-     * parameter 2 - ID of the shape to be removed
-     */
+        /**
+         * parameter 1 - The ID of the palette where the shape to be removed.
+         * parameter 2 - ID of the shape to be removed
+         */
         let id = ((this.symbolPalette as SymbolPaletteComponent).palettes[0] as any).symbols[0]?.id;
         (this.symbolPalette as SymbolPaletteComponent).removePaletteItem('basic', id);
     }
@@ -89,5 +87,3 @@ export class AppComponent {
         (this.symbolPalette as SymbolPaletteComponent).removePaletteItem('flow', id);
     }
 }
-
-

@@ -5,14 +5,12 @@ import { DiagramModule, SymbolPaletteModule, NodeModel, ConnectorModel, PaletteM
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [
-        DiagramModule, SymbolPaletteModule
-    ],
-
+    imports: [DiagramModule, SymbolPaletteModule],
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="700px" [expandMode]="expandMode" [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80>
+    template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="700px" [expandMode]="expandMode"
+        [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80>
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -121,5 +119,4 @@ export class AppComponent {
         ]
     }
 }
-
 

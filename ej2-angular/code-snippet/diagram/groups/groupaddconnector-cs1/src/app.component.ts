@@ -1,21 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Component, ViewEncapsulation, ViewChild, } from '@angular/core';
-import {
-  DiagramComponent, NodeModel, ConnectorModel,
-} from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, NodeModel, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-  imports: [
-    DiagramModule
-  ],
-
+  imports: [DiagramModule],
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="1000px" height="700px" [nodes]='nodes' [connectors]="connectors">
+  template: `<ejs-diagram #diagram id="diagram" width="1000px" height="600px" [nodes]='nodes' [connectors]="connectors">
     </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
@@ -23,18 +16,21 @@ import {
 export class AppComponent {
   @ViewChild('diagram')
   public diagram?: DiagramComponent;
-  public connectors: ConnectorModel[] = [{
-    id: 'connector1', type: 'Orthogonal', sourceID: 'node1', targetID: 'node2'
-  },
+  public connectors: ConnectorModel[] = [
+    {
+      id: 'connector1', type: 'Orthogonal', sourceID: 'node1', targetID: 'node2'
+    },
   ];
-  public nodes: NodeModel[] = [{
-    id: 'node1', height: 100, width: 100, offsetX: 100, offsetY: 100, annotations: [{ content: 'Node1' }]
-  },
-  {
-    id: 'node2', height: 100, width: 100, offsetX: 300, offsetY: 100, annotations: [{ content: 'Node2' }]
-  },
-  {
-    id: 'group', children: ['node1', 'node2', 'connector1',], style: { strokeWidth: 0 }
-  }];
+  public nodes: NodeModel[] = [
+    {
+      id: 'node1', height: 100, width: 100, offsetX: 100, offsetY: 100, annotations: [{ content: 'Node1' }]
+    },
+    {
+      id: 'node2', height: 100, width: 100, offsetX: 300, offsetY: 100, annotations: [{ content: 'Node2' }]
+    },
+    {
+      id: 'group', children: ['node1', 'node2', 'connector1',], style: { strokeWidth: 0 }
+    }
+  ];
 }
 

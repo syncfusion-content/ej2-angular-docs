@@ -167,8 +167,6 @@ N> If the size of the symbol is not defined, the default size will be determined
 
 You can customize whether to expand all the palettes of symbol palette at a time or to expand only one palette at a time. This customization can be done using the [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#expandmode) property of symbol palette.
 
-You can customize whether to expand all the palettes of the symbol palette at a time or to expand only one palette at a time. This customization can be done using the [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#expandmode) property of the symbol palette. 
-
 The following example demonstrates how to set the `expandMode` property to control the expansion behavior of the palettes:
 
 {% tabs %}

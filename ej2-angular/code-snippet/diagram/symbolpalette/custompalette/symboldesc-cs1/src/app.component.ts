@@ -3,12 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, Connector, NodeConstraints, SymbolInfo, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
-
 @Component({
-  imports: [
-    DiagramModule, SymbolPaletteModule
-  ],
-
+  imports: [DiagramModule, SymbolPaletteModule],
   providers: [],
   standalone: true,
   selector: "app-container",
@@ -31,30 +27,21 @@ export class AppComponent {
     let nodes: NodeModel[] = [
       {
         id: 'rectangle',
-        shape: {
-          type: 'Basic',
-          shape: 'Rectangle',
-        },
+        shape: { type: 'Basic', shape: 'Rectangle', },
         // Defines the tooltip for the shape
         tooltip: { content: 'Rectangle Basic shape', relativeMode: 'Object' },
         constraints: NodeConstraints.Default | NodeConstraints.Tooltip,
       },
       {
         id: 'plus',
-        shape: {
-          type: 'Basic',
-          shape: 'Plus',
-        },
+        shape: { type: 'Basic', shape: 'Plus', },
         // Defines the tooltip for the shape
         tooltip: { content: 'Plus Basic shape', relativeMode: 'Object' },
         constraints: NodeConstraints.Default | NodeConstraints.Tooltip,
       },
       {
         id: 'triangle',
-        shape: {
-          type: 'Basic',
-          shape: 'RightTriangle',
-        },
+        shape: { type: 'Basic', shape: 'RightTriangle', },
         // Defines the tooltip for the shape
         tooltip: { content: 'RightTriangle Basic shape', relativeMode: 'Object' },
         constraints: NodeConstraints.Default | NodeConstraints.Tooltip,

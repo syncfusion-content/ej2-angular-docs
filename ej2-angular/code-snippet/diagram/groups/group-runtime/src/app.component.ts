@@ -4,14 +4,11 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, DiagramComponent, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-    imports: [
-        DiagramModule
-    ],
-
+    imports: [DiagramModule],
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<button (click)="group()">group selected nodes</button>
+    template: `<button (click)="group()">Group selected nodes</button>
      <ejs-diagram #diagram id="diagram" width="100%" height="900px" [nodes]='nodes' (created)='created($event)'>
     </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None

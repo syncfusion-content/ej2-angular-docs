@@ -19,8 +19,8 @@ Render the TextBox with `rounded corner` by adding the `e-corner` class to the [
 {% include code-snippet/textbox/rounded-corner-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/rounded-corner-cs1/src/main.ts %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/textbox/rounded-corner-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
   

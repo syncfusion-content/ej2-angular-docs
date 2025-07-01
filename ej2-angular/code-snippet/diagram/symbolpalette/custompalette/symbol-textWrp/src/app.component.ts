@@ -3,12 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, Connector, SymbolInfo, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
-
 @Component({
-    imports: [
-        DiagramModule, SymbolPaletteModule
-    ],
-
+    imports: [DiagramModule, SymbolPaletteModule],
     providers: [],
     standalone: true,
     selector: "app-container",
@@ -25,24 +21,15 @@ export class AppComponent {
         let basicShapes: NodeModel[] = [
             {
                 id: 'Rectangle-symbol',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Rectangle',
-                },
+                shape: { type: 'Basic', shape: 'Rectangle', },
             },
             {
                 id: 'Ellipse-symbol',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Ellipse',
-                },
+                shape: { type: 'Basic', shape: 'Ellipse', },
             },
             {
                 id: 'Hexagon-symbol',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Hexagon',
-                },
+                shape: { type: 'Basic', shape: 'Hexagon', },
             },
         ];
         return basicShapes;
@@ -68,12 +55,7 @@ export class AppComponent {
                         ? 'NoWrap'
                         : 'WrapWithOverflow',
                 //Defines the text overflow based on symbol id
-                overflow:
-                    (symbol as any).id === 'Rectangle-symbol'
-                        ? 'Ellipsis'
-                        : (symbol as any).id === 'Ellipse-symbol'
-                            ? 'Clip'
-                            : 'Clip',
+                overflow: symbol.id === 'Rectangle-symbol' ? 'Ellipsis' : 'Clip',
             },
         };
     }

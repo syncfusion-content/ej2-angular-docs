@@ -3,16 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, NodeModel, ConnectorModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
-
 @Component({
-    imports: [
-        DiagramModule, SymbolPaletteModule
-    ],
-
+    imports: [DiagramModule, SymbolPaletteModule],
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette" [palettes]="palettes" [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults">
+    template: `<ejs-symbolpalette id="symbolpalette" [palettes]="palettes"
+        [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults">
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -22,24 +19,15 @@ export class AppComponent {
         let flowShapes: NodeModel[] = [
             {
                 id: 'process',
-                shape: {
-                    type: 'Flow',
-                    shape: 'Process',
-                },
+                shape: { type: 'Flow', shape: 'Process', },
             },
             {
                 id: 'document',
-                shape: {
-                    type: 'Flow',
-                    shape: 'Document',
-                },
+                shape: { type: 'Flow', shape: 'Document', },
             },
             {
                 id: 'predefinedprocess',
-                shape: {
-                    type: 'Flow',
-                    shape: 'PreDefinedProcess',
-                },
+                shape: { type: 'Flow', shape: 'PreDefinedProcess', },
             },
         ];
         return flowShapes;
@@ -119,7 +107,5 @@ export class AppComponent {
             iconCss: 'e-ddb-icons e-connector'
         }];
     }
-
 }
-
 

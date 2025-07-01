@@ -4,14 +4,11 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramModule, DiagramComponent, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-  imports: [
-    DiagramModule
-  ],
-
+  imports: [DiagramModule],
   providers: [],
   standalone: true,
   selector: "app-container",
-  template: `<button (click)="updatePadding()">updateGroupPadding</button>
+  template: `<button (click)="updatePadding()">UpdateGroupPadding</button>
       <button (click)="updateStyle()">updateGroupStyle</button>
       <ejs-diagram #diagram id="diagram" width="100%" height="600px" [nodes]='nodes'>
       </ejs-diagram>`,
@@ -31,11 +28,9 @@ export class AppComponent {
         strokeColor: '#6BA5D7',
         fill: '#6BA5D7',
       },
-      annotations: [
-        {
-          content: 'rectangle1',
-        },
-      ],
+      annotations: [{
+        content: 'rectangle1',
+      }],
     },
     {
       id: 'rectangle2',
@@ -47,11 +42,9 @@ export class AppComponent {
         strokeColor: '#6BA5D7',
         fill: '#6BA5D7',
       },
-      annotations: [
-        {
-          content: 'rectangle2',
-        },
-      ],
+      annotations: [{
+        content: 'rectangle2',
+      }],
     },
     {
       id: 'group',
@@ -61,7 +54,7 @@ export class AppComponent {
   ];
   updatePadding() {
     let group: NodeModel = (this.diagram as DiagramComponent).getObject('group');
-    (group.padding = { left: 10, right: 10, top: 10, bottom: 10 }), group.style;
+    group.padding = { left: 10, right: 10, top: 10, bottom: 10 };
     (this.diagram as DiagramComponent).dataBind();
   }
   updateStyle() {
