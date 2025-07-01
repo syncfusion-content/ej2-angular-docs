@@ -4,10 +4,7 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, DiagramComponent, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-    imports: [
-        DiagramModule
-    ],
-
+    imports: [DiagramModule],
     providers: [],
     standalone: true,
     selector: "app-container",
@@ -29,11 +26,9 @@ export class AppComponent {
                 strokeColor: '#6BA5D7',
                 fill: '#6BA5D7',
             },
-            annotations: [
-                {
-                    content: 'rectangle1',
-                },
-            ],
+            annotations: [{
+                content: 'rectangle1',
+            }],
         },
         {
             id: 'rectangle2',
@@ -45,11 +40,9 @@ export class AppComponent {
                 strokeColor: '#6BA5D7',
                 fill: '#6BA5D7',
             },
-            annotations: [
-                {
-                    content: 'rectangle2',
-                },
-            ],
+            annotations: [{
+                content: 'rectangle2',
+            }],
         }
     ];
     public group: NodeModel = {

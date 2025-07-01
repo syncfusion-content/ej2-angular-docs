@@ -7,7 +7,6 @@ import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angu
     imports: [
         DiagramModule
     ],
-
     providers: [],
     standalone: true,
     selector: "app-container",

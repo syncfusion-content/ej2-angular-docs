@@ -4,12 +4,8 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, DiagramComponent, NodeModel, PaletteModel, SymbolPaletteComponent } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
-
 @Component({
-  imports: [
-    DiagramModule, SymbolPaletteModule
-  ],
-
+  imports: [DiagramModule, SymbolPaletteModule],
   providers: [],
   standalone: true,
   selector: "app-container",

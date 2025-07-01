@@ -10,7 +10,7 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
-                 <ejs-textbox placeholder="Enter Date" floatLabelType="Auto" cssClass="e-corner"></ejs-textbox>
+                 <ejs-textbox placeholder="Enter Date" floatLabelType="Auto" cssClass="e-outline e-corner"></ejs-textbox>
               </div>`
 })
 

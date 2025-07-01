@@ -5,10 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 @Component({
-    imports: [
-        DiagramModule
-    ],
-
+    imports: [DiagramModule],
     providers: [],
     standalone: true,
     selector: "app-container",
@@ -31,11 +28,9 @@ export class AppComponent {
                 strokeColor: '#6BA5D7',
                 fill: '#6BA5D7',
             },
-            annotations: [
-                {
-                    content: 'rectangle1',
-                },
-            ],
+            annotations: [{
+                content: 'rectangle1',
+            }],
         },
         {
             id: 'rectangle2',
@@ -47,11 +42,9 @@ export class AppComponent {
                 strokeColor: '#6BA5D7',
                 fill: '#6BA5D7',
             },
-            annotations: [
-                {
-                    content: 'rectangle2',
-                },
-            ],
+            annotations: [{
+                content: 'rectangle2',
+            }],
         },
         {
             id: 'group',

@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
- import { DiagramModule, SymbolPaletteModule, SymbolPreviewModel, NodeModel, PaletteModel, MarginModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, SymbolPaletteModule, SymbolPreviewModel, NodeModel, PaletteModel, MarginModel } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-         DiagramModule, SymbolPaletteModule
-    ],
-
-providers: [ ],
-standalone: true,
+    imports: [DiagramModule, SymbolPaletteModule],
+    providers: [],
+    standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette" [symbolHeight]=80 [symbolWidth]=80 [expandMode]="expandMode" [palettes]="palettes" [getSymbolInfo]="getSymbolInfo" [symbolMargin]="symbolMargin" [symbolPreview]="symbolPreview">
+    template: `<ejs-symbolpalette id="symbolpalette" [symbolHeight]=80 [symbolWidth]=80 [expandMode]="expandMode"
+        [palettes]="palettes" [getSymbolInfo]="getSymbolInfo" [symbolMargin]="symbolMargin" [symbolPreview]="symbolPreview">
     </ejs-symbolpalette>
     <ejs-diagram id="diagram" width="1000px" height="500px">
         </ejs-diagram>`,
@@ -25,26 +23,17 @@ export class AppComponent {
     public symbolPreview?: SymbolPreviewModel;
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
-                id: 'Rectangle',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Rectangle'
-                }
-            },
-            {
-                id: 'Ellipse',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Ellipse'
-                }
-            },
-            {
-                id: 'Hexagon',
-                shape: {
-                    type: 'Basic',
-                    shape: 'Hexagon'
-                }
-            }
+            id: 'Rectangle',
+            shape: { type: 'Basic', shape: 'Rectangle' }
+        },
+        {
+            id: 'Ellipse',
+            shape: { type: 'Basic', shape: 'Ellipse' }
+        },
+        {
+            id: 'Hexagon',
+            shape: { type: 'Basic', shape: 'Hexagon' }
+        }
         ];
         return basicShapes;
     };
@@ -74,10 +63,7 @@ export class AppComponent {
         this.symbolPreview = {
             height: 100,
             width: 100,
-            offset: {
-                x: 1,
-                y: 0.5
-            }
+            offset: { x: 1, y: 0.5 }
         }
     }
 }
