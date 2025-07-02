@@ -50,7 +50,7 @@ To enable and manage task constraints in the Gantt component, you need to config
 
 In your Gantt component configuration, map the following fields:
 
-```typescript
+```ts
 taskFields: {
   id: 'taskId',
   name: 'taskName',
@@ -69,7 +69,7 @@ In your project data source, ensure that each task includes values for the [`con
 
 #### Example data format:
 
-```json
+```ts
 {
   "taskId": 1,
   "taskName": "Design Approval",
@@ -120,7 +120,7 @@ You can intercept constraint violations using the `actionBegin` event. When the 
 
 #### Example setup
 
-```typescript
+```ts
 actionBegin(args: any): void {
   if (args.requestType === 'validateTaskViolation') {
     args.validateMode = {
