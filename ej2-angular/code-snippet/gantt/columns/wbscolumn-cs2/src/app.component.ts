@@ -104,14 +104,18 @@ export class AppComponent {
     }
     public dataBound(): void {
         if (this.isRowDropped) {
-            this.ganttObj.enableAutoWbsUpdate = false;
-            this.isRowDropped = false;
+            if (this.ganttObj) {
+                this.ganttObj.enableAutoWbsUpdate = false;
+                this.isRowDropped = false;
+            }
         }
     }
     public actionBegin(args: any): void {
         if (args.requestType === "beforeDrop") {
-            this.isRowDropped = true;
-            this.ganttObj.enableAutoWbsUpdate = true;
+            if (this.ganttObj) {
+                this.isRowDropped = true;
+                this.ganttObj.enableAutoWbsUpdate = true;
+            }
         }
     }
 }
