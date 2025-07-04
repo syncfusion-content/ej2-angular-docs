@@ -5,9 +5,6 @@ import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { UploadingEventArgs } from '@syncfusion/ej2-interactive-chat';
-import { enableRipple } from '@syncfusion/ej2-base';
-
-enableRipple(true);
 
 @Component({
     imports: [ FormsModule, ReactiveFormsModule, AIAssistViewModule ],

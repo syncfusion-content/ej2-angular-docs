@@ -161,7 +161,7 @@ The following example showcases how all three behaviors can be achieved using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/image-editor/default-cs63" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/default-cs63" %}
 
 ## Save as image
 
