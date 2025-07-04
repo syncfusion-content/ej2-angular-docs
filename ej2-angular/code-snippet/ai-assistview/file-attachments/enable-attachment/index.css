@@ -1,9 +1,3 @@
-#container {
-    visibility: hidden;
-    margin: 20px auto;
-    width: 350px;
-}
-
 #loader {
   color: #008cff;
   height: 40px;
