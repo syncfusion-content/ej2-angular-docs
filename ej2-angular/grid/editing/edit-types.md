@@ -883,40 +883,44 @@ To utilize the custom cell editor template feature, you need to implement the fo
           
 * **destroy** - It is used to destroy the component.
 
-### Render AutoComplete component in edit form 
+### Render AutoComplete in edit form 
 
-The Syncfusion Grid allows you to render the AutoComplete component within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
+The Syncfusion Angular Grid allows you to render the AutoComplete within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to utilize the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
+To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
 
-The following example demonstrates how to render a Autocomplete component in the **CustomerID** column:
+The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
+
 {% include code-snippet/grid/edit-cs14/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
+
 {% include code-snippet/grid/edit-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/edit-cs14" %}
 
-### Render cascading DropDownList component in edit form 
+### Render cascading DropDownList in edit form 
 
-The Syncfusion Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
+The Syncfusion Angular Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to utilize the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
+To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
+
 {% include code-snippet/grid/edit-cs40/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
+
 {% include code-snippet/grid/edit-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
