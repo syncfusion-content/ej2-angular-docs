@@ -1,32 +1,30 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import { data } from './datasource';
-import { ToolbarItems, EditSettingsModel, GridModule, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ToolbarService, EditService } from '@syncfusion/ej2-angular-grids';
+import { ToolbarItems, EditSettingsModel, GridModule, GridComponent,ToolbarService, EditService } from '@syncfusion/ej2-angular-grids';
 import { AutoCompleteAllModule, ChangeEventArgs} from '@syncfusion/ej2-angular-dropdowns';
+import { data } from './datasource';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GridModule, AutoCompleteAllModule],
   providers: [ToolbarService, EditService],
-  template: `<ejs-grid #grid id="grid" [dataSource]="data" height="270px" [toolbar]="toolbar" [editSettings]="editSettings" allowFiltering=true>
-  <e-columns>
-    <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90" isPrimaryKey="true"></e-column>
-    <e-column field="CustomerID" headerText="Customer ID" width="100"></e-column>
-    <e-column field="ShipCity" headerText="Ship City" width="100"></e-column>
-    <e-column field="ShipName" headerText="Ship Name" width="120"></e-column>
-  </e-columns>
+  template: `
+    <ejs-grid #grid id="grid" [dataSource]="data" height="270px" [toolbar]="toolbar" [editSettings]="editSettings">
+      <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90" isPrimaryKey="true"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="100"></e-column>
+        <e-column field="ShipCity" headerText="Ship City" width="100"></e-column>
+        <e-column field="ShipName" headerText="Ship Name" width="120"></e-column>
+      </e-columns>
 
-  <ng-template #customToolbarTemplate>
-    <ejs-autocomplete id="shipCityValue" [dataSource]="dropDownData" placeholder="Search ShipCity" (change)="onChange($event)" >
-    </ejs-autocomplete>
-  </ng-template>
-</ejs-grid>
-`,
+      <ng-template #customToolbarTemplate>
+        <ejs-autocomplete id="shipCityValue" [dataSource]="dropDownData" placeholder="Search ShipCity" (change)="onChange($event)" >
+        </ejs-autocomplete>
+      </ng-template>
+  </ejs-grid>`
 })
 
 export class AppComponent implements OnInit {
-
   @ViewChild('customToolbarTemplate', { static: true }) public customToolbarTemplate!: TemplateRef<any>;
   @ViewChild('grid') public grid?: GridComponent;
   public data?: object[];
@@ -64,7 +62,6 @@ export class AppComponent implements OnInit {
 
   onChange(event: ChangeEventArgs): void {
     const selectedCity = (event.value as string );
-    
     // perform search action for ShipCity column.
     (this.grid as GridComponent).search(selectedCity, 'ShipCity');
   }
