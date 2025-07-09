@@ -1,0 +1,61 @@
+#Grid Sort direction
+
+input Sort {
+    name: String
+    direction: String
+} 
+
+#Grid aggregates type
+
+input Aggregate {
+    field: String! 
+    type: String!
+}
+
+#Syncfusion DataManager query params
+
+input DataManager {
+    skip: Int
+    take: Int
+    sorted: [Sort]
+    group: [String]
+    table: String
+    select: [String]
+    where: String
+    search: String
+    requiresCounts: Boolean,
+    aggregates: [Aggregate],
+    params: String
+}
+
+# Grid field names
+input OrderInput {
+  OrderID: Int!
+  CustomerID: String
+  ShipCity: String
+  ShipCountry: String
+}
+
+type Order {
+  OrderID: Int!
+  CustomerID: String
+  ShipCity: String
+  ShipCountry: String
+}
+
+# need to return type as 'result (i.e, current pager data)' and count (i.e., total number of records in your database)
+type ReturnType {
+  result: [Order]
+  count: Int
+  aggregates: String
+}
+
+type Query {
+  getOrders(datamanager: DataManager): ReturnType 
+}
+type Mutation {
+
+  createOrder(value: OrderInput): Order!
+  updateOrder(key: Int!, keyColumn: String, value: OrderInput): Order
+  deleteOrder(key: Int!, keyColumn: String, value: OrderInput): Order!
+}
