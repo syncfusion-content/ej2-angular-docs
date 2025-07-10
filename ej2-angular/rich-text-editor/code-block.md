@@ -39,6 +39,8 @@ Below is an example of how to configure the `codeBlockSettings` using the Rich T
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/samples/rich-text-editor/code-block-cs1" %}
+
 In this example:
 
 * The **languages** array defines four supported languages: JavaScript, Python, HTML, and CSS.
