@@ -105,6 +105,14 @@ export class AppComponent implements OnInit {
                 (this.grid as GridComponent).refresh();
             }
         }
+        (
+        document.getElementById((this.grid as GridComponent).element.id + '_searchbar') as Element).addEventListener('keyup', (args) => {
+            if ((args.target as HTMLInputElement).value === '' && ((args as KeyboardEvent).key === 'Enter' || (args as KeyboardEvent).key === 'Backspace')) {
+                (this.grid as GridComponent).query = new Query();
+                this.removeQuery = false;
+                (this.grid as GridComponent).refresh();
+            }
+        });
     }
 }
 
