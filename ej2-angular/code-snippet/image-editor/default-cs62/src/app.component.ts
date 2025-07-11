@@ -20,19 +20,19 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
                   <div class="button-toolbar" style="display: flex; align-items: center; gap: 12px; margin-top: 10px; flex-wrap: wrap;">
                       <button ejs-button [disabled]="isTextInserted" class="e-btn e-primary" (click)="text()">Add Text</button>
                       <div class="e-btn-group  button-group">
-                              <input type="checkbox" id="bold" value="bold"  (click)="bold()"/>
+                              <input type="checkbox" id="bold" value="bold"  (change)="bold()"/>
                               <label class="e-btn" for="bold">
                                   <span class="e-icons e-bold" style="margin-right: 5px;"></span>Bold
                               </label>
-                              <input type="checkbox" id="italic" value="italic" (click)="italic()"/>
+                              <input type="checkbox" id="italic" value="italic" (change)="italic()"/>
                               <label class="e-btn" for="italic">
                                   <span class="e-icons e-italic" style="margin-right: 5px;"></span>Italic
                               </label>
-                              <input type="checkbox" id="underline" value="underline" (click)="underline()"/>
+                              <input type="checkbox" id="underline" value="underline" (change)="underline()"/>
                               <label class="e-btn" for="underline" >
                                   <span class="e-icons e-underline" style="margin-right: 5px;"></span>Underline
                               </label>
-                              <input type="checkbox" id="strikethrough" value="strikethrough" (click)="strikethrough()"/>
+                              <input type="checkbox" id="strikethrough" value="strikethrough" (change)="strikethrough()"/>
                               <label class="e-btn" for="strikethrough" >
                                   <span class="e-icons e-strikethrough" style="margin-right: 5px;"></span>Strikethrough
                               </label>
