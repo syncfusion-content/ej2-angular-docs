@@ -114,6 +114,7 @@
   content: '\e806';
 }
 
-.e-input-group.e-corner{
-  border-radius: 10px;
+.e-input-group.e-outline.e-corner,
+.e-input-group.e-outline.e-corner.e-input-focus {
+  border-radius: 20px 
 }
