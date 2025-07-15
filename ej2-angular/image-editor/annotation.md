@@ -162,7 +162,7 @@ The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs62" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs62" %}
 
 
 ## Freehand drawing
