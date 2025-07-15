@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Right to left in Angular Menu component
 
-Menu component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/menu#enablertl) as `true`.
+Menu component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enablertl) as `true`.
 
 The following example illustrates how to enable right-to-left support in Menu component.
 
