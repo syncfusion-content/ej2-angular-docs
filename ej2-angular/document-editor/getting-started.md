@@ -111,6 +111,7 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-ribbon/styles/material.css';
 ```
 
 ## Adding Component
