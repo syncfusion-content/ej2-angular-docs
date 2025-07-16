@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Animation support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-**Animations** enhance the user interface by executing a series of frames, resulting in smooth transitions and effects. Syncfusion's [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library enables these animations effectively.
+**Animations** enhance the user interface by executing a series of frames, resulting in smooth transitions and effects. Syncfusion<sup style="font-size:70%">&reg;</sup>'s [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library enables these animations effectively.
 
 The [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#animate) method aids in animating HTML elements by temporarily applying `e-animate` and `e-animation-id` attributes, alongside CSS styles, for the effect duration.
 

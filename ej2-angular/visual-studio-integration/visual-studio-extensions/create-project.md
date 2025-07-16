@@ -32,7 +32,7 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
      **Option 2:**
 
-      Choose **File > New > Project in Visual Studio**. The Create a new project dialog opens. You can get the **Syncfusion** provided templates by filtering the Project type with Syncfusion<sup style="font-size:70%">&reg;</sup> or use the **Search option** with the key word of Syncfusion.
+      Choose **File > New > Project in Visual Studio**. The Create a new project dialog opens. You can get the **Syncfusion** provided templates by filtering the Project type with Syncfusion<sup style="font-size:70%">&reg;</sup> or use the **Search option** with the key word of Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
       ![syncfusion template](images/create-new-project.png)
 
@@ -50,6 +50,6 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
 5. Click the Create button, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application has been created.
 
-6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion.
+6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
 7. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages, scripts, and selected styles have been configured with the created Angular application.

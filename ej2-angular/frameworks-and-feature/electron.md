@@ -199,7 +199,7 @@ Modify the `package.json` to include the following entries:
 
 ## Running the application
 
-To launch the application, execute the following command lines. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Grid component will be rendered within the Electron framework:
+To launch the application, execute the following command lines. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component will be rendered within the Electron framework:
 
 ```bash
 npm  run electron-build 

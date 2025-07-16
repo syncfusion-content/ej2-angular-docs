@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-#  Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components - Security
+# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components - Security
 
 Security is paramount in web application development to guard against various threats and vulnerabilities. Essential practices include using HTTPS for data encryption, validating and sanitizing user inputs, and implementing robust authentication measures such as multi-factor authentication.
 
@@ -37,14 +37,29 @@ Security should be a foundational aspect of software development. Syncfusion<sup
 
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (CSP) is a one of the security feature, that helps the detect the cross-site-scripting(XSS) attacks and malicious code injection. It will throw the errors and warnings while using the inline-styles and inline scripts, eval, new Function, etc in your applications.
 
-To implement Content Security Policy (CSP) in your application, include a `<meta>` tag with specified CSP directives. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components have been designed and implemented with adherence to these CSP directives, ensuring enhanced security. These directives are below.
+Syncfusion<sup style="font-size:70%">&reg;</sup> has taken significant steps to ensure that all EJ2 components are fully CSP-compliant. This means that our components no longer rely on practices that violate CSP directives, such as embedding inline styles or scripts. Instead, we have adopted secure coding practices that align with CSP standards, ensuring that our components can be seamlessly integrated into applications with strict CSP policies.
+
+Our Document Editor product offers robust support for a strict Content Security Policy (CSP) to enhance security by preventing unauthorized content from being executed. While most features comply with strict CSP settings, there is one notable exception related to custom fonts. The `setCustomFonts` method is incompatible with strict CSP settings. Therefore, when enforcing a strict CSP, `setCustomFonts` may not function as expected.
+
+#### Benefits of CSP Compliance in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Components
+
+1. **Enhanced Security**: By eliminating the use of unsafe practices, Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 components reduce the risk of XSS attacks and other client-side vulnerabilities.
+
+2. **Seamless Integration**: Developers can use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in applications with strict CSP configurations without requiring additional adjustments or exceptions.
+
+3. **Future-Proof Design**: Adhering to CSP standards ensures compatibility with modern web security requirements, making Syncfusion<sup style="font-size:70%">&reg;</sup> components a reliable choice for secure application development.
+
+4. **No Additional Configuration**: Since Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 components are CSP-compliant by design, developers do not need to include specific CSP directives or modify their existing policies to accommodate our components.
+
+By adhering to CSP standards, Syncfusion<sup style="font-size:70%">&reg;</sup> components provide a robust foundation for building secure and scalable web applications. This ensures that your applications are not only protected against common vulnerabilities but also meet the highest security standards.
+
+To know more information about the CSP, refer this [documentation](https://ej2.syncfusion.com/documentation/common/troubleshoot/content-security-policy).
 
 #### CSP Directives
 
 For using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components effectively, the following directives are advised:
 |    Directives    |    Description    |    Examples    |
 |------------------|-------------------|----------------|
-|  `style-src`  | Defines the allowed sources for loading stylesheets. This helps mitigate style-based attacks by restricting the locations from which styles can be applied. | `style-src 'self' https://cdn.syncfusion.com/ https://fonts.googleapis.com/ 'unsafe-inline';`|
 |  `font-src`  | Defines the allowed sources for loading fonts. It helps prevent font-related security issues by restricting the locations from which fonts can be loaded. | `font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data: cdn.syncfusion.com 'unsafe-inline';` |
 |  `img-src`  | Specifies the allowed sources for loading images. It helps control from where images can be displayed on the web page. | `img-src 'self' data:"` |
 
@@ -59,19 +74,18 @@ The following sources refer to the origins from which resources such as styles, 
 |----------|---------------|-----------|
 |  `self`  |  Refers to the origin from which the protected document is being served, including the same URL scheme and port number  |  `style-src 'self'`  |
 |  `data`  | Enables a website to fetch resources using the data scheme, such as loading Base64-encoded images.  |  `img-src 'self' data:`  |
-|  `unsafe-inline`  | Allows the use of inline resources, such as inline `style` elements.  |  `style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'`  |
 
-To know more information about the CSP, refer this [documentation](https://ej2.syncfusion.com/documentation/common/troubleshoot/content-security-policy).
+ **Note**: While using the PDF Viewer component for standalone components, you need to use `unsafe-eval` to avoid CSP issues. The PDF Viewer component is not yet converted to be fully CSP-compliant.
 
 ### HTML Sanitizer
 
 An HTML sanitizer removes potentially harmful code from HTML documents, preventing XSS attacks by eliminating malicious code like script tags or inline styles.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ensures security by offering the [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/button/#enablehtmlsanitizer) API. It sanitizes HTML strings, reducing potential threats.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ensures security by offering the `enableHtmlSanitizer` API. It sanitizes HTML strings, reducing potential threats.
 
 The `enableHtmlSanitizer` property, when enabled, ensures content undergoes rigorous sanitization to mitigate XSS risks, strengthening component security.
 
-Here is a sample code to sanitize input values using Syncfusion:
+Here is a sample code to sanitize input values using Syncfusion<sup style="font-size:70%">&reg;</sup>:
 
 ```ts
 import { SanitizeHtmlHelper } from '@syncfusion/ej2-base';

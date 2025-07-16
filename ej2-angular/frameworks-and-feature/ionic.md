@@ -129,7 +129,7 @@ export class HomePage {
 
 ## Adding CSS Reference
 
-Update `src/global.scss` with the required Syncfusion styles for the Grid component:
+Update `src/global.scss` with the required <sup style="font-size:70%">&reg;</sup> styles for the Grid component:
 
 {% tabs %}
 {% highlight css tabtitle="~/src/styles.css" %}

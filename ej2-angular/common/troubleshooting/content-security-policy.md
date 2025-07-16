@@ -12,19 +12,9 @@ domainurl: ##DomainURL##
 
 Content Security Policy (CSP) is a pivotal security feature deployed by web browsers to mitigate risks such as cross-site scripting (XSS) and data injection attacks. CSP controls the allowed sources from which content can be loaded on a web page, thereby enhancing security.
 
-To activate a strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs/strict-csp.html), some browser functionalities are disabled by default. When utilizing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in a strict CSP environment, it is crucial to integrate the following directives in the CSP meta tag:
+Syncfusion<sup style="font-size:70%">&reg;</sup> has ensured that all EJ2 components are fully CSP-compliant. This means that our components no longer rely on inline styles, inline scripts, or other practices that violate CSP directives. As a result, you can seamlessly integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your applications without the need for additional CSP configurations or exceptions.
 
-* Syncfusion<sup style="font-size:70%">&reg;</sup> components use computed **inline styles** and **base64** encoded font icons, which are typically blocked by strict CSP. To permit their usage, include the directives [`style-src 'self' 'unsafe-inline';`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) in your meta tag as demonstrated:
-
-{% tabs %}
-{% highlight razor tabtitle="HTML" %}
-
-<meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' 'unsafe-inline';
-    font-src 'self'  data:;" />
-
-{% endhighlight %}
-{% endtabs %}
+By adhering to CSP standards, Syncfusion<sup style="font-size:70%">&reg;</sup> components provide a robust foundation for building secure and scalable web applications. This ensures that your applications are protected against common vulnerabilities while meeting the highest security requirements.
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> **material** and **tailwind** built-in themes contain a reference to the [`Roboto’s external font`](https://fonts.googleapis.com/css?family=Roboto:400,500), which is also blocked. To allow them, add the [`external font`](https://fonts.googleapis.com/css?family=Roboto:400,500) reference to the [`style-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) directives in the above meta tag.
 

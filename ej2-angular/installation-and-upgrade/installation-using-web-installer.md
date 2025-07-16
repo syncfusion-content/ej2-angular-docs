@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation using web installer in Angular Installation and upgrade component | Syncfusion
+title: Installation using web installer in Angular component | Syncfusion
 description: Learn here all about Installation using web installer in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation using web installer 
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Installation using Web Installer
 
-You can refer to the [Download](../installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
+You can refer to the [Download](../installation-and-upgrade/download) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
 ## Overview
 
-For the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio<sup style="font-size:70%">&reg;</sup> products you have chosen. You can get the most recent version of Essential Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads).
+For the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> products you have chosen. You can get the most recent version of Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads).
 
 The frameworks listed below are supported in this installer.
 
@@ -26,54 +26,54 @@ The frameworks listed below are supported in this installer.
 
 ## Installation
 
-The steps below show how to install Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer.
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+The steps below show how to install Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer.
+1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    ![license download](images/1.png)
+    ![license download](images/license1.png)
 
     >Note: The installer wizard extracts the syncfusionejs2webinstaller_{version}.exe dialog, which displays the package’s unzip operation.
 
 2. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 Web Installer’s welcome wizard will be displayed. Click the Next button.
 
-    ![license download](images/2.png)
+    ![license download](images/license2.png)
 
 3. The Platform Selection Wizard will appear. From the **Available** tab, select the products to be installed. Select the Install All checkbox to **install all** products.
 
     **Available**
 
-    ![license download](images/3.png)
+    ![license download](images/license3.png)
 
     If you have multiple products installed in the same version, they will be listed under the **Installed** tab. You can also select which products to uninstall from the same version. Click the Next button.
 
     **Installed**
 
-    ![license download](images/4.png)
+    ![license download](images/license4.png)
 
     >Important: If the required software for the selected product isn’t already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 
     **Required Software**
 
-    ![license download](images/5.png)
+    ![license download](images/license5.png)
 
 4. If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you’ve chosen here. To remove all versions, check the       **Uninstall All** checkbox. Click the Next button.
 
-    ![license download](images/6.png)
+    ![license download](images/license6.png)
 
     >Note: From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
 
 5. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
-    ![license download](images/7.png)
+    ![license download](images/license7.png)
 
 6. The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
 
-    ![license download](images/8.png)
+    ![license download](images/license8.png)
 
     >Note: By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 7. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![license download](images/9.png)
+    ![license download](images/license9.png)
 
     **Additional settings**
     * Select the **Install Demos** check box to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples, or leave the check box unchecked, if you do not want to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples
@@ -85,23 +85,23 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
 9. The login wizard will appear. You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![license download](images/8_.png)
+    ![license download](images/license8_.png)
 
     >Important: The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
-    ![license download](images/9_.png)
+    ![license download](images/license9_.png)
 
 11. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been installed successfully and those that have failed. To close the Summary wizard, click Finish.
 
-    ![license download](images/12.png)
+    ![license download](images/license12.png)
 
     * To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control** Panel.
 
-12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> control panel entries, as shown below. The Essential Studio<sup style="font-size:70%">&reg;</sup> entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
+12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> control panel entries, as shown below. The Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
 
-    ![license download](images/13.png)
+    ![license download](images/license13.png)
 
 ## Uninstallation
 
@@ -110,13 +110,13 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer ca
 * Uninstall the JavaScript – EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 web installer
 * Uninstall the JavaScript – EJ2 from Windows Control Panel
 
-Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer
+Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer
 
 ### Option 1: Uninstall the JavaScript–EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript–EJ2 web installer
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
 ![license download](images/u1.png)
 

@@ -20,7 +20,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## Unlocking the License Installer using the Trial Key
 
-**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for JavaScript installer.
+**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript installer.
 
 ![license download](images/error1.png)
 
@@ -30,7 +30,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## License has Expired
 
-**Error Message:** Your license for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio for JavaScript – EJ2 has been expired since {date}. Please renew your subscription and try again.
+**Error Message:** Your license for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript – EJ2 has been expired since {date}. Please renew your subscription and try again.
 
 ***Online Installer***
 
@@ -50,7 +50,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## Unable to find a valid license or trial
 
-**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for JavaScript – EJ2 under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript – EJ2 under your account.
 
 ***Offline installer***
 

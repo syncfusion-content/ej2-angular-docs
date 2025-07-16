@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Reactive Form Validator
 
-Syncfusion's Angular UI Component offers built-in Reactive Form validators that facilitate client-side validation of form input components before submission.
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Component offers built-in Reactive Form validators that facilitate client-side validation of form input components before submission.
 
 ## Prerequisites
 
@@ -35,9 +35,9 @@ ng new syncfusion-angular-validators --style=css --routing=false --standalone
 cd syncfusion-angular-validators
 ```
 
-## Install Syncfusion Package
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Package
 
-Install the Syncfusion inputs package (version 25.2.7, compatible with Angular 19):
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> inputs package (version 25.2.7, compatible with Angular 19):
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs@25.2.7 --save
@@ -82,7 +82,7 @@ Below is the list of available validators:
 
 ### Step 1: Set Up the Component
 
-Update `src/app/app.component.ts` to create a standalone component with a reactive form using Syncfusion validators:
+Update `src/app/app.component.ts` to create a standalone component with a reactive form using Syncfusion<sup style="font-size:70%">&reg;</sup> validators:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -122,7 +122,7 @@ export class AppComponent {
 
 ### Step 2: Create the Template
 
-Update `src/app/app.component.html` to bind the form controls to Syncfusion `ejs-textbox` components and display validation errors:
+Update `src/app/app.component.html` to bind the form controls to Syncfusion<sup style="font-size:70%">&reg;</sup> `ejs-textbox` components and display validation errors:
 
 ```html
 <div class="container">
@@ -204,9 +204,9 @@ button {
 }
 ```
 
-### Step 4: Add Syncfusion CSS
+### Step 4: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS
 
-Update `src/styles.css` with required Syncfusion styles:
+Update `src/styles.css` with required Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -220,6 +220,6 @@ Start the application:
 ```bash
 npm start
 ```
-The form with Syncfusion validators will render in the browser.
+The form with Syncfusion<sup style="font-size:70%">&reg;</sup> validators will render in the browser.
 
 To see a simple example of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation in action, visit this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).

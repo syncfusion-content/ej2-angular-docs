@@ -1313,7 +1313,6 @@ this.data.executeQuery(new Query()).then((e: ReturnOption) => {
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/custom-dataadaptor-cs2/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight cs tabtitle="HomeController.cs" %}
 {% include code-snippet/data/getting-started/custom-dataadaptor-cs2/OrdersController.cs %}

@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential JS 2)
+# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI (Essential JS 2) offers a comprehensive suite of modern, TypeScript-based true Angular components. These components support Ahead Of Time (AOT) compilation and Tree-Shaking, ensuring optimal performance. Each component is designed to be lightweight, responsive, modular, and touch-friendly to cater to diverse user needs.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) offers a comprehensive suite of modern, TypeScript-based Angular components that are built from the ground up to align with Angular’s core architecture. These components are engineered for high performance and support Tree-Shaking, which helps minimize application bundle size by removing unused code. Designed with flexibility in mind, each component is lightweight, modular, and responsive, ensuring seamless integration into any Angular application. Additionally, the components are touch-friendly and optimized for both desktop and mobile experiences, making them ideal for building rich, interactive, and accessible user interfaces across a wide range of devices.
 
 
 ## Components list
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are listed below.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI library includes a wide range of components tailored to meet the needs of modern web application development. Below is a categorized list of the available Angular UI components, each thoughtfully crafted to deliver consistent design, seamless user experience, and easy integration into Angular projects.
 
 <style>
 #table
@@ -187,19 +187,23 @@ letter-spacing: 0.7px;
 </tr>
 </table>
 
-## How to Best Read This User Guide
+## How to Use This User Guide Effectively
 
-- Begin by reading the "Getting Started" section for the specific component you wish to use. This section provides the essential information required to understand and implement the component efficiently. We recommend reading this section fully before writing any code. For all other information, refer to it as needed.
+- Start with the **“Getting Started”** section for the specific component you plan to use. This section provides essential setup instructions and foundational concepts. We recommend reading it thoroughly before writing any code
 
-- After acquiring a basic understanding, start integrating the component into your application. A helpful resource is the [online sample browser](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/over-view), which contains numerous code samples. You'll likely find examples similar to your intended usage scenario.
+- Explore the [online sample browser](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/over-view) to see practical examples. It includes a wide range of code samples that can help you understand real-world usage scenarios and accelerate your development process.
 
-- The API reference is another valuable resource, offering detailed information on the object hierarchy and configurable options for each object.
+- Refer to the **API reference** for in-depth technical details. It offers comprehensive information about the object hierarchy, available methods, properties, and configuration options for each component.
 
 ## Getting Help
 
-- If the self-help resources do not satisfy your information needs, please create a support ticket on [our support site](https://www.syncfusion.com/support/directtrac/incidents) or post your question on Stack Overflow using the `syncfusion-ej2` tag.
+If you need assistance beyond what's covered in the documentation, we offer several support channels:
 
-- If there's something you require that isn't covered, request it through our [feedback portal](https://www.syncfusion.com/feedback/angular).
+- Submit a support ticket on our official [support site](https://www.syncfusion.com/support/directtrac/incidents) for personalized technical help
+
+- Ask the community by posting your question on Stack Overflow using the syncfusion-ej2 tag.
+
+- Share your ideas or feature requests through our [feedback portal](https://www.syncfusion.com/feedback/angular). We value your input and use it to improve our products. 
 
 > Note: Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any data from customer applications utilizing our components.
 

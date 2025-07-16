@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-This guide outlines the essential system requirements for optimal performance and compatibility when working with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
+This guide outlines the system requirements necessary for developing, testing, and deploying applications using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components. Adhering to these specifications ensures optimal performance, stability, and compatibility with the Syncfusion<sup style="font-size:70%">&reg;</sup> ecosystem.
 
 ## Angular Version
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Angular 12 and above. To verify the Angular CLI version, run the following command in the terminal:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Angular 12 and later versions, leveraging modern Angular features for enhanced performance and developer experience. To check your installed Angular CLI version, execute the following command in your terminal:
 
 ```bash
 ng version
@@ -22,9 +22,9 @@ ng version
 
 ## Node.js
 
-Angular requires an [active LTS or maintenance LTS version](https://nodejs.org/en/about/previous-releases) of Node.js. The latest LTS version is recommended for best performance and security.
+Node.js is a core dependency for Angular development, powering the Angular CLI and package management via npm. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components require an [active Long-Term Support (LTS) or Maintenance LTS version](https://nodejs.org/en/about/previous-releases) of Node.js.
 
-To install Node.js, visit [nodejs.org](https://nodejs.org/en). After installation, check the Node.js version by running:
+The latest LTS version is recommended for best performance and security.To install Node.js, download the appropriate installer from [nodejs.org](https://nodejs.org/en). After installation, verify the Node.js and npm versions using:
 
 ```bash
 node --version
@@ -32,7 +32,7 @@ node --version
 
 ## Development Environment
 
-While not strictly necessary, an Integrated Development Environment (IDE) or a robust text editor can significantly enhance the Angular development experience. Some popular options include:
+While a basic text editor and terminal are sufficient for Angular development, using an Integrated Development Environment (IDE) or a feature-rich code editor can significantly streamline your workflow. Recommended tools include:
 
 - Visual Studio Code (with Angular extensions)
 - WebStorm

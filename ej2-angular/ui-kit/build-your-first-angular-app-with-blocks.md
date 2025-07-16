@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Build your first Angular app with our blocks
 
-This tutorial guides you through building an Angular application using Syncfusion's UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
+This tutorial guides you through building an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup>'s UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
 
 ## Before You Start: Real-Life Use Case  
 

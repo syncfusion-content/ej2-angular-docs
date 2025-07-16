@@ -52,6 +52,6 @@ The following steps help you to create the Syncfusion<sup style="font-size:70%">
 
 5. Click the Create button, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application has been created.
 
-6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion.
+6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
 7. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages, scripts, and selected styles have been configured with the created Angular application.

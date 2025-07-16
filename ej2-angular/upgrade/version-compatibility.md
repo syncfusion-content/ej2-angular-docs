@@ -57,7 +57,7 @@ For detailed installation instructions, refer to the [Angular package installati
 
 ## Understanding Syncfusion<sup style="font-size:70%">&reg;</sup> Version Numbers
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
+Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
 
 For example, a release version `22.1.34` can be interpreted as follows:
 
@@ -82,6 +82,6 @@ To ensure optimal performance and access to the latest features, it's recommende
 
 ## Additional Resources
 
-* [Syncfusion Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
 * [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade-guide/)
 * [Angular Update Guide](https://update.angular.io/)

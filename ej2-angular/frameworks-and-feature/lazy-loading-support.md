@@ -300,7 +300,7 @@ src/
 ```
 ## Project Setup
 
-1. Create App & Install Syncfusion
+1. Create App & Install Syncfusion<sup style="font-size:70%">&reg;</sup>
 Run the following commands to create a new Angular standalone project and install Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
 ```bash
@@ -526,9 +526,9 @@ The `RouterModule` provides essential functionality for routing, allowing seamle
 
 - **Grid or Dropdown Not Rendering**: Ensure all required CSS files are imported in `styles.css`. Verify that the `dataSource` property in `ejs-grid` or `ejs-dropdownlist` is correctly set (e.g., not null or undefined).
 - **Routing Errors**: Confirm that `RouterModule` is imported in `app.module.ts` (for module-based) or `app.component.ts` (for standalone). Check that route paths in `app-routing.module.ts` or `app.routes.ts` match the `routerLink` values.
-- **Syncfusion Component Errors**: Ensure you have a valid Syncfusion license and that the correct Syncfusion packages are installed.
+- **Syncfusion<sup style="font-size:70%">&reg;</sup> Component Errors**: Ensure you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license and that the correct Syncfusion<sup style="font-size:70%">&reg;</sup> packages are installed.
 
-For additional help, refer to the [Angular Documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) or [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
+For additional help, refer to the [Angular Documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) or [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
 
 ## Benefits of Lazy Loading
 

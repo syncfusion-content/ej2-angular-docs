@@ -95,7 +95,7 @@ This streamlined process ensures that your unique design vision, crafted in Figm
 
 To upgrade your UI kits, download the latest version from the provided links. Follow these tips for a seamless transition:
 
-- Stay informed about Syncfusion's UI kit updates or new releases.
+- Stay informed about Syncfusion<sup style="font-size:70%">&reg;</sup>'s UI kit updates or new releases.
 - Backup ongoing projects before upgrading to avoid data loss or compatibility issues.
 - Share feedback with Syncfusion<sup style="font-size:70%">&reg;</sup> about the updated UI kits, including encountered issues or improvement suggestions.
 

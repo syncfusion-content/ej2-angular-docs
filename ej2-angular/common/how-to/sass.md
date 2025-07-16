@@ -14,7 +14,7 @@ Sass (SCSS) is a powerful CSS pre-processor that significantly enhances your sty
 
 ## SASS variables location
 
-SASS variables corresponding to Essential JS 2 components are located at:
+SASS variables corresponding to Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are located at:
 
 `node_modules/@syncfusion/package-name/styles/themename.scss`
 
@@ -48,7 +48,7 @@ This setup allows global path resolution for SCSS files in your Angular applicat
   },
 ```
 
-A sample Angular project demonstrating SCSS compilation with Essential JS 2 Grid component is available on [GitHub](https://github.com/SyncfusionExamples/ej2-angular-scss).
+A sample Angular project demonstrating SCSS compilation with Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component is available on [GitHub](https://github.com/SyncfusionExamples/ej2-angular-scss).
 
 ## Overriding styles
 
@@ -73,4 +73,4 @@ In version 8, the Angular Team moved away from `node-sass` in favor of `sass`. H
 npm install node-sass --save-dev
 ```
 
-By following the guidelines in this document, you can effectively use SCSS within Angular CLI to tailor the styles of your Essential JS 2 components.
+By following the guidelines in this document, you can effectively use SCSS within Angular CLI to tailor the styles of your Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
