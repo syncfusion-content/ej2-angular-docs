@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  public onLoad(event:Object): void {
+  public onLoad(): void {
     DataUtil.serverTimezoneOffset = this.timezoneCheckbox.checked ? 0 : this.selectedTimezone; 
   }
 
