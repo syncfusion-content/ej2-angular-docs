@@ -301,11 +301,9 @@ This adaptor is especially useful when your data resides on a server and you nee
 
 The `UrlAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be processed or displayed.
+  * **result:** An array that contains the actual data records to be processed or displayed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -407,11 +405,9 @@ The `ODataAdaptor` automatically translates DataManager query operations into OD
 
 The `ODataAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be processed or displayed.
+  * **result:** An array that contains the actual data records to be processed or displayed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -610,11 +606,9 @@ To enable OData query options for your Web API, you need to ensure that the Web 
 
 The `WebApiAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **Items:**
-  An array that contains the actual data records to be displayed or processed.
+  * **Items:** An array that contains the actual data records to be displayed or processed.
 
-- **Count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **Count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -714,11 +708,9 @@ This adaptor is ideal for applications where server-side methods are responsible
 
 The `WebMethodAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be displayed or processed.
+  * **result:** An array that contains the actual data records to be displayed or processed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -914,15 +906,15 @@ To achieve this, follow these steps:
 
 **Step 1: Create service for GraphQL:**
 
-**1:** Create a new folder named **GraphQLServer** specifically for your GraphQL server.
+**1.** Create a new folder named **GraphQLServer** specifically for your GraphQL server.
 
-**2:** Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
+**2.** Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
 
   ```bash
   npm i graphpack
   ```
 
-**3:** To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
+**3.** To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
   
   ```json
     {
@@ -942,13 +934,13 @@ To achieve this, follow these steps:
     }
   ```
 
-**4:** Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
+**4.** Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
 
   * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in  Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
 
-    **result:** An array containing the data entities.
-    **count:** The total number of records.
-    **aggregates:** Contains total aggregate data(optional).
+    * **result:** An array containing the data entities.
+    * **count:** The total number of records.
+    * **aggregates:** Contains total aggregate data(optional).
 
   * **Define Queries:** Define queries to retrieve data from the server. Whether using a normal table or Syncfusion components, you can define a query to fetch orders, accepting parameters such as a DataManager for advanced data operations.
 
@@ -971,7 +963,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**5:** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, `Query`, and **DataManager**.
+**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, `Query`, and **DataManager**.
 
   {% tabs %}
   {% highlight cs tabtitle="Resolvers.js" %}
@@ -979,7 +971,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**6:** Create a simple data file **src/db.js** that exports your data array.
+**6.** Create a simple data file **src/db.js** that exports your data array.
 
   {% tabs %}
   {% highlight cs tabtitle="data.js" %}
@@ -987,7 +979,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**7:** Install required packages and start the GraphQL server by running the following commands in your terminal:
+**7.** Install required packages and start the GraphQL server by running the following commands in your terminal:
 
   ```bash
     npm install
@@ -997,7 +989,7 @@ The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents 
 
 **Step 2: Connect Syncfusion Angular DataManager to GraphQL:**
 
-**1:** Create a new Angular application using the following Angular CLI command:
+**1.** Create a new Angular application using the following Angular CLI command:
 
 ```bash
 ng new ClientApp
@@ -1009,7 +1001,7 @@ This command will prompt you for a few settings for the new project, such as whe
 cd ClientApp
 ```
 
-**2: Add Syncfusion packages:**
+**2. Add Syncfusion packages:**
 
 To use  Syncfusion Angular DataManager, install the packages using the below command.
 
@@ -1017,7 +1009,7 @@ To use  Syncfusion Angular DataManager, install the packages using the below com
 npm i @syncfusion/ej2-data 
 ```
 
-**3: Configure DataManager with GraphQLAdaptor:**
+**3. Configure DataManager with GraphQLAdaptor:**
 
 In the `app.component.ts` file, configure the DataManager with `GraphQLAdaptor`.
 
@@ -1044,7 +1036,7 @@ this.dataManager = new DataManager({
 
 ```
 
-**C.Define the GraphQL query and map the response:**
+**C. Define the GraphQL query and map the response:**
 
 * The `GraphQLAdaptor` includes a `query` property where you define your GraphQL query string. The response from the server should follow this JSON structure:
 
@@ -1111,7 +1103,7 @@ this.dataManager.executeQuery(query).then((e: ReturnOption) => {
 {% endhighlight %}
 {% endtabs %}
 
-**5: Add HTML Table:**
+**4. Add HTML Table:**
 
 Create a basic HTML structure with a <table> element where data using the GraphQL adaptor will be rendered  in the `app.component.html` file.
 
@@ -1121,7 +1113,7 @@ Create a basic HTML structure with a <table> element where data using the GraphQ
 {% endhighlight %}
 {% endtabs %}
 
-**6: Run the Application:**
+**5. Run the Application:**
 
 Once the GraphQL server is running, assign its URL (e.g., http://localhost:xxxx/) to the `dataManager.url` property of the `DataManager` in your application.
 
@@ -1321,7 +1313,6 @@ this.data.executeQuery(new Query()).then((e: ReturnOption) => {
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/custom-dataadaptor-cs2/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight cs tabtitle="HomeController.cs" %}
 {% include code-snippet/data/getting-started/custom-dataadaptor-cs2/OrdersController.cs %}

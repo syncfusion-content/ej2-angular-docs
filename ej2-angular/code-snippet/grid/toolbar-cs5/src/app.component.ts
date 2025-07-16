@@ -63,6 +63,6 @@ export class AppComponent implements OnInit {
   onChange(event: ChangeEventArgs): void {
     const selectedCity = (event.value as string );
     // perform search action for ShipCity column.
-    (this.grid as GridComponent).search(selectedCity, 'ShipCity');
+    (this.grid as GridComponent).search(selectedCity);
   }
 }
