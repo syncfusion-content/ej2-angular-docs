@@ -50,6 +50,10 @@ The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
+* underline — Specifies whether the text should be underlined.
+
+* strikethrough — Specifies whether the text should have a strikethrough.
+
 By utilizing the `drawText` method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 Here is an example of adding a text in a button click using `drawText` method.
@@ -143,6 +147,23 @@ By leveraging the `fontFamily` property, you can elevate the scope of customizat
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs38" %}
+
+### Formatting Text with Bold, Italic, Underline, and Strikethrough
+
+The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs62/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs62/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs62" %}
+
 
 ## Freehand drawing
 
