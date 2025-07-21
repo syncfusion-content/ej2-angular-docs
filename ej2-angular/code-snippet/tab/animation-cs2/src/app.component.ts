@@ -1,14 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { DropDownListComponent, DropDownList } from '@syncfusion/ej2-angular-dropdowns';
-import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusion/ej2-angular-navigations';
+import { DropDownListComponent, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { TabModule, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusion/ej2-angular-navigations';
 
 /**
  * Add nested Tabs
@@ -16,7 +10,8 @@ import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusi
 
 @Component({
 imports: [
-        
+      TabModule,
+      DropDownListModule,
     ],
 
 
@@ -33,6 +28,7 @@ export class AppComponent implements OnInit {
   @ViewChild('tabObj')
   public tabObj?: TabComponent;
   public eventLog: string = '';
+  public height: string = '200px';
   public tabItems?: Object[];
   public dropdownData: Object[] = [
     { text: 'India', Id: 0 },
