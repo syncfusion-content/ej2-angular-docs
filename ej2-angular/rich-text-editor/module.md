@@ -57,5 +57,10 @@ The following example demonstrates how to import and inject modules.
 | `PasteCleanupService` | Inject this module to keep or clean up the formatting of pasted content in Rich Text Editor. |
 | `FormatPainterService` | Injecting this module allows users to copy formatting (like bold, italic, font size, color, etc.) from one section of text and apply it to another in the Rich Text Editor. |
 | `EmojiPickerService` | Injecting this module allows users to search, and insert emojis into the Rich Text Editor. |
+| `SlashMenuService` | Injecting this module allows users to apply formats, open dialogs by typing "/" in the Rich Text Editor. |
+| `ImportExportService` | Injecting this module allows users to import content from Word documents into the Rich Text Editor and export the Rich Text Editor's content into Word and PDF files |
+| `CodeBlockService ` | Injecting this module allows users to format the selected text as inline code, highlighting code snippets within the text in the Rich Text Editor. |
+| `AudioService` | Injecting this module allows users to insert and manage audios in the Rich Text Editor. |
+| `VideoService` | Injecting this module allows users to insert and manage videos in the Rich Text Editor. |
 
 These modules should be injected into the **providers** section of root **NgModule** or component class.
