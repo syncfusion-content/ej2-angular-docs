@@ -29,7 +29,7 @@ src/
 
 ## Creating a Syncfusion<sup style="font-size:70%">&reg;</sup> component in Angular
 
-Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
+Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading) for a comprehensive understanding of implementing lazy loading.
 
 ## Project Setup
 
@@ -528,7 +528,7 @@ The `RouterModule` provides essential functionality for routing, allowing seamle
 - **Routing Errors**: Confirm that `RouterModule` is imported in `app.module.ts` (for module-based) or `app.component.ts` (for standalone). Check that route paths in `app-routing.module.ts` or `app.routes.ts` match the `routerLink` values.
 - **Syncfusion<sup style="font-size:70%">&reg;</sup> Component Errors**: Ensure you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license and that the correct Syncfusion<sup style="font-size:70%">&reg;</sup> packages are installed.
 
-For additional help, refer to the [Angular Documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) or [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
+For additional help, refer to the [Angular Documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading) or [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
 
 ## Benefits of Lazy Loading
 

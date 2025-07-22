@@ -51,6 +51,7 @@ The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Ang
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 |-----------------|-----------------------------------------------|
+|[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 30.1.37|
 |[ Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
@@ -67,6 +68,6 @@ The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Ang
 
 - [Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> Components](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion): Instructions for upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> components to the latest version.
 
-- [Setting Up the Development Environment](https://v17.angular.io/guide/setup-local): Official Angular guide on setting up a local development environment.
+- [Setting Up the Development Environment](https://angular.dev/installation#instructions): Official Angular guide on setting up a local development environment.
 
 - [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli): Step-by-step instructions to start using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in a project.

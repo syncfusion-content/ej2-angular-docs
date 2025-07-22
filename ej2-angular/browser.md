@@ -26,7 +26,7 @@ The following table lists the minimum supported versions for various browsers:
 
 > Note: "Latest" refers to the most recent stable version of the browser.
 
-For the most up-to-date information on supported browsers, please refer to the official Angular documentation on [Supported Browsers](https://v17.angular.io/guide/browser-support#supported-browsers).
+For the most up-to-date information on supported browsers, please refer to the official Angular documentation on [Supported Browsers](https://angular.dev/reference/versions#browser-support).
 
 ## Modern Web Development and Browser Support
 
@@ -49,7 +49,7 @@ While IE11 is supported, developers should be aware of the following:
 - As IE11 usage continues to decline, consider the necessity of extensive IE11 support in new projects.
 
 For detailed information on polyfills and browser support in Angular, refer to the official Angular documentation:
-- [Angular Versions and Polyfills](https://angular.dev/reference/versions#polyfills)
+- [Angular Versions and Polyfills](https://angular.dev/reference/versions#actively-supported-versions)
   
 
 ## Additional Resources

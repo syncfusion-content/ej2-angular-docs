@@ -21,7 +21,7 @@ Before diving into the setup, let's explore a **real-life use case** — buildin
 Once you’ve seen this use case in action, the next step is to set up an Angular app and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
 
 ## Create a new Angular app
-To create a new Angular app, refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
+To create a new Angular app, refer to the official Angular setup guide [here](https://angular.dev/installation#instructions) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
 

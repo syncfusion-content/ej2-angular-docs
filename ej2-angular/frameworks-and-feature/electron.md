@@ -24,7 +24,7 @@ If the `Electron CLI` is not installed, refer to the [`Electron package`](https:
 
 ## Set Up Angular Environment
 
-You can follow the [Setting up the local environment and workspace](https://v17.angular.io/guide/setup-local) guide.
+You can follow the [Setting up the local environment and workspace](https://angular.dev/installation#prerequisites) guide.
 
 Install the Electron framework by using the following command:
 
