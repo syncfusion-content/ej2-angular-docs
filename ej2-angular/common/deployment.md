@@ -38,8 +38,8 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are avail
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are shipped as npm packages. Following table explains the purpose of each file available in the package.
 
-|    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
-|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `dist/<packagename>.umd.min.js`   `dist/<packagename>.umd.js`              |        For applications using AMD or Common JS based   module loader can be utilize these files.                                                                                                                                                                                             |
-|    `src/`                                                                   |    This folder contains the script files in ES6 format. It can be utilize Bundling.                                                                                                                                                         |
-|    `styles/<theme_name>.css`      `styles/<theme_name>.scss`                     |    This folder contains the CSS and SCSS files of the package.                                                                                                                                                                                                                             ||
+|    Files         | Purpose             |
+|----------------------------------|-------------------------------------|
+|    `dist/<packagename>.umd.min.js`   `dist/<packagename>.umd.js` |  For applications using AMD or Common JS based   module loader can be utilize these files. |
+|    `src/`    |    This folder contains the script files in ES6 format. It can be utilize Bundling.    |
+|    `styles/<theme_name>.css`      `styles/<theme_name>.scss`  |    This folder contains the CSS and SCSS files of the package. |
