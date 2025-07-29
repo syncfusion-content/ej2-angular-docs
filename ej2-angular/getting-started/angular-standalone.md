@@ -46,7 +46,7 @@ cd syncfusion-angular-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
 
-Syncfusion's Angular packages are available under the `@syncfusion` scope on npm. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular packages are available under the `@syncfusion` scope on npm. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
 
@@ -58,9 +58,9 @@ This command performs the following configurations in your Angular application:
 
 - Adds the `@syncfusion/ej2-angular-grids` package and its peer dependencies to `package.json`.
 - Imports `GridModule` into your application's default standalone component `app.component.ts`.
-- Registers Syncfusion's default material theme in `angular.json`.
+- Registers Syncfusion<sup style="font-size:70%">&reg;</sup>'s default material theme in `angular.json`.
 
-These steps simplify adding Syncfusion's Angular Grid module to your project for immediate use.
+These steps simplify adding Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular Grid module to your project for immediate use.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 

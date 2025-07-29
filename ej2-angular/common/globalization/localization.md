@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Localization
 
-The Localization library in Syncfusion's Angular UI Components enables you to display text content in languages other than English. This feature is essential for applications serving a global audience by providing a native language experience.
+The Localization library in Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Components enables you to display text content in languages other than English. This feature is essential for applications serving a global audience by providing a native language experience.
 
 ## Loading translations
 

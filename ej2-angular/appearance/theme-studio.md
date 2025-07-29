@@ -26,7 +26,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are creat
 
 ![color-picker](images/colorpicker.png)
 
-**Step 4:** Once colors are selected, the Essential JS 2 components in the preview section will reflect the changes.
+**Step 4:** Once colors are selected, the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components in the preview section will reflect the changes.
 
 ![customized](images/customized.png)
 
@@ -54,7 +54,7 @@ After customizing, you can download your theme styles.
 
 ![download-icon](images/download-icon.png)
 
-**Step 2:** Enter a theme name in File Name and click Download. If using both Essential JS 1 and Essential JS 2 components, check "Include compatibility CSS" to ensure compatibility with Essential JS 1 styles. More details are available [here](https://ej2.syncfusion.com/documentation/getting-started/compatible-with-essential-js1).
+**Step 2:** Enter a theme name in File Name and click Download. If using both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, check "Include compatibility CSS" to ensure compatibility with Essential<sup style="font-size:70%">&reg;</sup> JS 1 styles. More details are available [here](https://ej2.syncfusion.com/documentation/getting-started/compatible-with-essential-js1).
 
 ![download-dialog](images/download-dialog.png)
 
@@ -76,7 +76,7 @@ Incorporate the customized CSS file directly into your web application.
 </head>
 ```
 
-> For applications using both Essential JS 1 and Essential JS 2, copy the customized CSS file from the `compatibility` folder from the downloaded location.
+> For applications using both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2, copy the customized CSS file from the `compatibility` folder from the downloaded location.
 
 ## Import Previously Changed Settings into Theme Studio
 

@@ -38,11 +38,11 @@ Our 30-day trial can be downloaded in two ways.
 
     ![trail installer dashboard](images/dashboard.png)
 
-6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 web installer.
+6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 web installer.
 
     ![start trial download installer](images/start-trial-download-installer.png)
 
-7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio JavaScript installer for various platforms.
+7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript installer for various platforms.
 
 - **Windows**
 
@@ -100,4 +100,4 @@ You should initiate an evaluation if you have already obtained our components th
 
     ![license download](images/license-download.png)
 
-You can also refer to the [Online installer](../installation-and-upgrade/installation-using-web-installer/) and [Offline installer](../installation-and-upgrade/installation-using-offline-installer/) links for step-by-step installation guidelines.
+You can also refer to the [Online installer](../installation-and-upgrade/installation-using-web-installer) and [Offline installer](../installation-and-upgrade/installation-using-offline-installer) links for step-by-step installation guidelines.

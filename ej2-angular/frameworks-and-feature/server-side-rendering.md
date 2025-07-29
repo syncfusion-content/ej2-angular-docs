@@ -16,7 +16,7 @@ This guide explains how to use Angular Universal in conjunction with Syncfusion<
 
 ## What is Angular Universal
 
-[Angular Universal](https://v17.angular.io/guide/ssr) is a server-side rendering technology for Angular components that pre-renders HTML on the server and sends it to the client. This ensures quicker time-to-interactive, better SEO, and improved accessibility—especially beneficial for slower networks or devices.
+[Angular Universal](https://angular.dev/guide/ssr) is a server-side rendering technology for Angular components that pre-renders HTML on the server and sends it to the client. This ensures quicker time-to-interactive, better SEO, and improved accessibility—especially beneficial for slower networks or devices.
 
 ## Why use Server-side Rendering
 
@@ -132,7 +132,7 @@ export class AppComponent {
 
 ### Enable hydration
 
-After installing the above command, enable Client [Hydration](https://v17.angular.io/guide/hydration). Hydration is the process that restores the server-side rendered application on the client. To enable hydration, import the [provideClientHydration](https://v17.angular.io/api/platform-browser/provideClientHydration)  function and add it to the `providers` section of the `app.module.ts` file as shown below.
+After installing the above command, enable Client [Hydration](https://angular.dev/guide/hydration). Hydration is the process that restores the server-side rendered application on the client. To enable hydration, import the [provideClientHydration](https://angular.dev/guide/hydration)  function and add it to the `providers` section of the `app.module.ts` file as shown below.
 
 
 ```ts

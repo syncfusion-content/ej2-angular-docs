@@ -70,7 +70,7 @@ Use any licenses shown on the [accounts & downloads](https://www.syncfusion.com/
 
  ![Project License](images/project-license.png)
 
-Refer to the [KB](https://www.syncfusion.com/kb/11532/definition-of-terms-for-syncfusion-licenses) article which explains the Licenses offered by Syncfusion.
+Refer to the [KB](https://www.syncfusion.com/kb/11532/definition-of-terms-for-syncfusion-licenses) article which explains the Licenses offered by Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
 ## If I registered the license key in both the application and the license text file
 

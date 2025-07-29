@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Build your first Angular app with our blocks
 
-This tutorial guides you through building an Angular application using Syncfusion's UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
+This tutorial guides you through building an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup>'s UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
 
 ## Before You Start: Real-Life Use Case  
 
@@ -21,7 +21,7 @@ Before diving into the setup, let's explore a **real-life use case** — buildin
 Once you’ve seen this use case in action, the next step is to set up an Angular app and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
 
 ## Create a new Angular app
-To create a new Angular app, refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
+To create a new Angular app, refer to the official Angular setup guide [here](https://angular.dev/installation#instructions) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
 

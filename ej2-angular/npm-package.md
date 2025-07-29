@@ -29,7 +29,7 @@ For a complete list of available Syncfusion<sup style="font-size:70%">&reg;</sup
 ## Additional Resources
 
 - [Installation Guide for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/installation/)
-- [Download Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 Installer](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/download/#download-javascript--ej2-installer)
+- [Download Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Installer](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/download/#download-javascript--ej2-installer)
 - [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Lifecycle Overview](https://www.syncfusion.com/support/product-lifecycle/)
 - [Updating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM Packages](https://ej2.syncfusion.com/angular/documentation/common/how-to/update-npm-package/)
 
