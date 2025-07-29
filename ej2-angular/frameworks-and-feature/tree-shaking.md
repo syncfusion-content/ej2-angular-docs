@@ -12,21 +12,17 @@ domainurl: ##DomainURL##
 
 Tree shaking is a powerful optimization technique in modern JavaScript and TypeScript development that eliminates unused or "dead" code from your application's final bundle. This results in smaller, more efficient, and faster-loading web applications. The term "tree shaking" comes from the idea of shaking a tree to remove dead leaves, leaving only what’s essential.
 
-Tree shaking relies on the static structure of ES2015 (ES6) module syntax—specifically `import` and `export` statements. Tools like **Webpack** and **Rollup** analyze these modules during the build process, identifying and removing code that isn’t imported or used in your application. For example, if you export a function in a module but never import it elsewhere, tree shaking ensures it won’t bloat your bundle. This optimization is especially valuable for large applications or when using feature-rich libraries like Syncfusion’s Angular components.
+Tree shaking relies on the static structure of ES2015 (ES6) module syntax—specifically `import` and `export` statements. Tools like **Webpack** and **Rollup** analyze these modules during the build process, identifying and removing code that isn’t imported or used in your application. For example, if you export a function in a module but never import it elsewhere, tree shaking ensures it won’t bloat your bundle. This optimization is especially valuable for large applications or when using feature-rich libraries like Syncfusion<sup style="font-size:70%">&reg;</sup>’s Angular components.
 
 In this guide, we’ll explore how tree shaking works in Angular, how it integrates with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, and how you can implement it to boost your application’s performance.
 
 ## Tree Shaking in Angular  
 
-Angular has supported tree shaking since **Angular CLI version 2**, thanks to its use of Webpack as the underlying bundler (and later, options for other tools like esbuild). Tree shaking in Angular leverages ES2015 module syntax to ensure that only the code you actually use makes it into your production bundle.
-
-The process is tightly integrated with Angular’s **Ahead-of-Time (AOT)** compilation, which became the default starting with **Angular version 9**. AOT compilation pre-compiles your Angular templates and components into efficient JavaScript during the build process, rather than at runtime. This pre-compilation allows the Angular compiler to analyze your code more effectively, marking unused portions for removal during tree shaking. The result? Faster load times, reduced bundle sizes, and an improved user experience.
-
-For example, if you import a component but don’t use it in your templates or logic, AOT and tree shaking work together to exclude it from the final output. To learn more about AOT compilation, check out the [AOT documentation](./angular-aot).
+Angular has supported tree shaking since **Angular CLI version 2**, thanks to its use of Webpack as the underlying bundler (and later, options for other tools like esbuild). Tree shaking in Angular leverages ES2015 module syntax to ensure that only the code you actually use makes it into your production bundle. This optimization reduces bundle sizes, leading to faster load times, lower bandwidth usage, and improved runtime performance, which are critical for modern web applications.
 
 ## Using Syncfusion<sup style="font-size:70%">&reg;</sup> components with Tree Shaking 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, part of the **Essential JS 2 (EJ2)** library, are designed with tree shaking in mind. They are structured as modular, tree-shakable packages by default, meaning you don’t need to make special adjustments at the application level to benefit from this optimization.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, part of the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2)** library, are designed with tree shaking in mind. They are structured as modular, tree-shakable packages by default, meaning you don’t need to make special adjustments at the application level to benefit from this optimization.
 
 Each Syncfusion<sup style="font-size:70%">&reg;</sup> component is split into individual modules, allowing you to import only what you need. For instance, when using the Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid, you can import the `GridModule` for basic functionality or add specific feature modules like `PageService` or `FilterService` as required. This modularity ensures that unused features are excluded from your bundle during tree shaking, keeping your application lean.
 

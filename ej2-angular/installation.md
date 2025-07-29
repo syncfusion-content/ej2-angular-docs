@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Installation in Angular 
 
-This guide provides detailed instructions on installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential JS 2) packages, which extend Angular applications with a wide range of UI controls. These components are available via npm, making installation straightforward and consistent with standard Angular practices.
+This guide provides detailed instructions on installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages, which extend Angular applications with a wide range of UI controls. These components are available via npm, making installation straightforward and consistent with standard Angular practices.
 
 ## Prerequisites
 

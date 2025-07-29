@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to resolve Content Security Policy (CSP) errors
 
-WThe integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your application can sometimes encounter issues when implementing a strict Content Security Policy (CSP). Resolving these issues is essential to ensuring both the security of your application and the full functionality of the components.
+The integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your application can sometimes encounter issues when implementing a strict Content Security Policy (CSP). Resolving these issues is essential to ensuring both the security of your application and the full functionality of the components.
 
 ## Why CSP Matters
 
@@ -18,7 +18,7 @@ Content Security Policy is a security feature that helps prevent a variety of at
 
 ## Image loading
 
- One of the common challenges with enabling a strict CSP in your application is the loading of images, particularly with Syncfusion's licensing banner. This banner leverages images in **base64** format for its display, which is often disallowed under a stringent CSP due to security policies.
+ One of the common challenges with enabling a strict CSP in your application is the loading of images, particularly with Syncfusion<sup style="font-size:70%">&reg;</sup>'s licensing banner. This banner leverages images in **base64** format for its display, which is often disallowed under a stringent CSP due to security policies.
 
 ### Resolution
 

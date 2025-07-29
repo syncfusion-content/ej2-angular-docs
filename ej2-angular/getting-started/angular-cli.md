@@ -14,7 +14,7 @@ This guide provides a step-by-step walkthrough for setting up an Angular project
 
 The Angular CLI is a powerful command-line tool that simplifies the creation, management, and building of Angular applications, enabling a quick start to development.
 
-> Note: This guide supports **Angular 12 to Angular 17**. If you’re using Angular 9 or later, Ivy is the default rendering engine. Please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility) for detailed compatibility.
+> Note: This guide supports **Angular 12 to Latest version**. If you’re using Angular 9 or later, Ivy is the default rendering engine. Please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility) for detailed compatibility.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ cd syncfusion-angular-app
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
 
-Syncfusion's Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
 This guide uses the [Angular Grid Component](https://www.syncfusion.com/angular-components/angular-grid) for demonstration. Add the Angular Grid component with:
 
@@ -82,10 +82,10 @@ ng add @syncfusion/ej2-angular-grids
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:
 
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler (ngcc), which is Angular’s legacy compilation pipeline.
 
-Syncfusion's latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
 
 ```bash
 ng add @syncfusion/ej2-angular-grids

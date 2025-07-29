@@ -65,7 +65,7 @@ import { registerLicense } from '@syncfusion/ej2-base';
 
 registerLicense('Your-License-Key');
 ```
-Replace **'Your-License-Key'** with the actual license key you received from Syncfusion.
+Replace **'Your-License-Key'** with the actual license key you received from Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
 By adding the license key, you ensure that the blocks are fully functional and free from licensing issues.
 

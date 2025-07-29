@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Loading Themes Without Internet Access
 
-Syncfusion's default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an `offline-theme` file to reference Material styles with local fonts, ensuring the components function seamlessly without internet connectivity.
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an `offline-theme` file to reference Material styles with local fonts, ensuring the components function seamlessly without internet connectivity.
 
 ## Material Theme Package
 

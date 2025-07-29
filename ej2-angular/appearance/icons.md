@@ -155,7 +155,7 @@ Customize Syncfusion<sup style="font-size:70%">&reg;</sup> Angular icons for col
 
 ## Available Icons
 
-Browse the full Essential JS 2 icon package below. Icon content references are available in respective content sections.
+Browse the full Essential<sup style="font-size:70%">&reg;</sup> JS 2 icon package below. Icon content references are available in respective content sections.
 
 <!-- markdownlint-disable MD033 -->
 

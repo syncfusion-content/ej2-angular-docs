@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Playwright Testing
 
-This guide demonstrates how to set up and perform end-to-end (E2E) testing for Angular applications using Playwright, with an example testing a Syncfusion Angular Button component in a standalone component structure.
+This guide demonstrates how to set up and perform end-to-end (E2E) testing for Angular applications using Playwright, with an example testing a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Button component in a standalone component structure.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Ensure the following are installed:
 - Node.js version 18 or later (22 recommended)
 - Angular CLI version 17 or later
 - TypeScript version 5.5 or later
-- [Syncfusion Angular system requirements](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular system requirements](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 > **Note**: Protractor reached its end-of-life in August 2023 and is no longer maintained or recommended for new Angular projects. Starting with Angular CLI version 12, Protractor support was deprecated and later removed. As a modern alternative, tools like `Playwright` offer fast, reliable, and cross-browser end-to-end testing, making them well-suited for Angular applications.
 
@@ -50,9 +50,9 @@ Create a new Angular project with standalone components:
 ng new angular-playwright-test
 cd angular-playwright-test
 ```
-### Step 2: Add Syncfusion Button
+### Step 2: Add Syncfusion<sup style="font-size:70%">&reg;</sup> Button
 
-Update `src/app/app.component.ts` to include a Syncfusion button:
+Update `src/app/app.component.ts` to include a Syncfusion<sup style="font-size:70%">&reg;</sup> button:
 
 ```typescript
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
@@ -71,9 +71,9 @@ template: `<div class="e-section-control">
 export class AppComponent { }
 ```
 
-### Step 3: Add Syncfusion CSS
+### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS
 
-Update `src/styles.css` with Syncfusion button styles:
+Update `src/styles.css` with Syncfusion<sup style="font-size:70%">&reg;</sup> button styles:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';

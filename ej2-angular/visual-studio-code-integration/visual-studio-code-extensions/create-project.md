@@ -18,7 +18,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides **project templates** 
 
 The steps below help you to create **Syncfusion Web Applications** through the **Visual Studio Code:**
 
-1. In Visual Studio Code, open the command palette by pressing Ctrl+Shift+P. The Visual Studio Code palette opens, search the word Syncfusion, so you can get the templates provided.
+1. In Visual Studio Code, open the command palette by pressing Ctrl+Shift+P. The Visual Studio Code palette opens, search the word Syncfusion<sup style="font-size:70%">&reg;</sup>, so you can get the templates provided.
 
     ![CreateProjectPalette](images/CreateProjectPalette.png)
 
