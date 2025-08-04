@@ -58,7 +58,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/globalization/localization" %}
+{% previewsample "page.domainurl/samples/block-editor/globalization/localization" %}
 
 ## RTL
 
@@ -74,4 +74,4 @@ RTL provides an option to switch the text direction and layout of the Block Edit
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/globalization/rtl" %}
+{% previewsample "page.domainurl/samples/block-editor/globalization/rtl" %}
