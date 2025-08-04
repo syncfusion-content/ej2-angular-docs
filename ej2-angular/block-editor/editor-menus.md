@@ -62,7 +62,7 @@ Below example demonstrates the customization of the Slash Command menu.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/slash-command" %}
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/slash-command" %}
 
 ## Context menu
 
@@ -108,7 +108,7 @@ Below example demonstrates the customization of the Context menu.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/context-menu" %}
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/context-menu" %}
 
 ## Block action menu
 
@@ -156,7 +156,7 @@ Below example demonstrates the customization of the Block action menu.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/block-action" %}
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/block-action" %}
 
 ## Inline Toolbar
 
@@ -205,4 +205,4 @@ Below example demonstrates the customization of the Inline Toolbar.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar" %}
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/inline-toolbar" %}

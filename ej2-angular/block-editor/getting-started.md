@@ -140,4 +140,4 @@ The following example shows a default Block Editor component.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/getting-started" %}
+{% previewsample "page.domainurl/samples/block-editor/getting-started" %}

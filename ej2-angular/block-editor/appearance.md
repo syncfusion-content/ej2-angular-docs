@@ -56,5 +56,5 @@ Below example demonstrates the usage of readonly and cssClass properties.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/appearance" %}
+{% previewsample "page.domainurl/samples/block-editor/appearance" %}
         

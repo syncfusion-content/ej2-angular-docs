@@ -38,4 +38,4 @@ Below example demonstrates the Block Editor with undo/redo stack set to `20` act
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/undo-redo" %}
+{% previewsample "page.domainurl/samples/block-editor/undo-redo" %}
