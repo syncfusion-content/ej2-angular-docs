@@ -87,7 +87,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/paste-cleanup/allowedstyle" %}
+{% previewsample "page.domainurl/samples/block-editor/paste-cleanup/allowedstyle" %}
 
 ## Disable Keep format
 
@@ -154,7 +154,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/paste-cleanup/plaintext" %}
+{% previewsample "page.domainurl/samples/block-editor/paste-cleanup/plaintext" %}
 
 ### Events
 

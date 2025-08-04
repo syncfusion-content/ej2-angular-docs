@@ -96,7 +96,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/methods/block" %}
+{% previewsample "page.domainurl/samples/block-editor/methods/block" %}
 
 ## Selection and Cursor Methods
 
@@ -178,7 +178,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/methods/selection" %}
+{% previewsample "page.domainurl/samples/block-editor/methods/selection" %}
 
 ## Focus Management Methods
 
@@ -253,7 +253,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/methods/formatting" %}
+{% previewsample "page.domainurl/samples/block-editor/methods/formatting" %}
 
 ## Data Export Methods
 
@@ -305,4 +305,4 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/methods/data" %}
+{% previewsample "page.domainurl/samples/block-editor/methods/data" %}

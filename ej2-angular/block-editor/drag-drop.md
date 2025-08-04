@@ -41,4 +41,4 @@ During the drag operation, the editor provides visual cues to indicate where the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/drag-drop" %}
+{% previewsample "page.domainurl/samples/block-editor/drag-drop" %}

@@ -59,7 +59,7 @@ You can render Paragraph blocks by setting the [type](../api/blockeditor/blockMo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/paragraph-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/paragraph-block" %}
 
 ### Configure heading block
 
@@ -78,7 +78,7 @@ You can render Heading blocks by setting the [type](../api/blockeditor/blockMode
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/heading-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/heading-block" %}
 
 ### Configure toggle blocks
 
@@ -97,7 +97,7 @@ You can render Toggle blocks by setting the [type](../api/blockeditor/blockModel
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/toggle-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/toggle-block" %}
 
 ### Configure list blocks
 
@@ -120,7 +120,7 @@ Below example illustrates how to render the different types of blocks in the Blo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/list-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/list-block" %}
 
 ### Configure code block
 
@@ -141,7 +141,7 @@ You can render Code blocks by setting the [type](../api/blockeditor/blockModel/#
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/code-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/code-block" %}
 
 ### Configure quote block
 
@@ -160,7 +160,7 @@ You can render Quote blocks by setting the [type](../api/blockeditor/blockModel/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/quote-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/quote-block" %}
 
 ### Configure callout block
 
@@ -179,7 +179,7 @@ You can render Callout blocks by setting the [type](../api/blockeditor/blockMode
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/callout-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/callout-block" %}
 
 ### Configure divider block
 
@@ -198,7 +198,7 @@ Divider blocks insert horizontal lines that separate different sections of conte
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/divider-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/divider-block" %}
 
 ### Configure image block
 
@@ -219,7 +219,7 @@ You can render Image blocks by setting the [type](../api/blockeditor/blockModel/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/image-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/image-block" %}
 
 ### Adding template
 
@@ -243,7 +243,7 @@ You can render Template blocks by setting the [type](../api/blockeditor/blockMod
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/template-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/template-block" %}
 
 ## Configure content
 
@@ -310,7 +310,7 @@ Below is an example of how to configure different types of content in the Block 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/content-types" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/content-types" %}
 
 ### Setting content styles
 
@@ -347,7 +347,7 @@ You can apply one or more of these styles to any content element for rich text f
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/content-styles" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/content-styles" %}
 
 ### Configure link settings
 
@@ -395,7 +395,7 @@ By default, the [indent](../api/blockeditor/blockModel/#indent) property is set 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/indent" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/indent" %}
 
 ## Configure checked state
 
@@ -416,7 +416,7 @@ By default, the [isChecked](../api/blockeditor/blockModel/#ischecked) property i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/isChecked" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/isChecked" %}
 
 ## Configure expanded state
 
@@ -435,7 +435,7 @@ You can control whether a block is expanded or collapsed using the [isExpanded](
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/toggle-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/toggle-block" %}
 
 ## Configure CSS class
 
@@ -459,7 +459,7 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/cssClass" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/cssClass" %}
 
 ## Configure image settings
 
@@ -497,7 +497,7 @@ These settings give you fine-grained control over how images appear and behave w
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/image-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/image-block" %}
 
 
 ## Configure code settings
@@ -528,7 +528,7 @@ Each language object in the `languages` array should have:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/code-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/code-block" %}
 
 
 ## Configuring label settings
@@ -582,7 +582,7 @@ Labels with the same [groupHeader](../api/blockeditor/labelItemModel/#groupheade
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/label-settings" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/label-settings" %}
 
 ## Configure template
 
@@ -604,7 +604,7 @@ The Block Editor allows you to use custom templates for specialized content usin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/block-types/template-block" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/template-block" %}
 
 ## Configure placeholder
 
@@ -625,7 +625,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/placeholder" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/placeholder" %}
 
 ## Configure children
 
@@ -652,4 +652,4 @@ The below sample demonstrates the configuration of children in the Block Editor 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/blocks/children" %}
+{% previewsample "page.domainurl/samples/block-editor/blocks/children" %}
