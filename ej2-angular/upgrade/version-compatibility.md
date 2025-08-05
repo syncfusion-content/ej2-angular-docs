@@ -16,6 +16,7 @@ The following table outlines the compatibility between Syncfusion<sup style="fon
 
 | Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | --------------- | ------------------------------------------------ |
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 26.1.35 and above |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
@@ -27,7 +28,7 @@ The following table outlines the compatibility between Syncfusion<sup style="fon
 
 ## Ivy and Non-Ivy Package Compatibility
 
-Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy compiler](https://angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two different package distributions:
+Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy compiler](https://v12.angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two different package distributions:
 
 1. **Ivy-compatible packages**: These are the default packages and do not require any special suffix.
 
@@ -53,7 +54,7 @@ The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compa
 
 > **Note:** The `-ngcc` suffix is only required for versions 20.2.36 and later when using non-Ivy applications. For Ivy-based applications, which is the default for Angular 12 and above, use the packages without the suffix.
 
-For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-syncfusion-grid-package).
+For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#installing-syncfusion-grid-package).
 
 ## Understanding Syncfusion<sup style="font-size:70%">&reg;</sup> Version Numbers
 
@@ -83,5 +84,5 @@ To ensure optimal performance and access to the latest features, it's recommende
 ## Additional Resources
 
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
-* [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade-guide/)
+* [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion)
 * [Angular Update Guide](https://update.angular.io/)

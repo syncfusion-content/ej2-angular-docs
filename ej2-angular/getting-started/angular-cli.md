@@ -305,6 +305,6 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> offers a variety of sample appl
 * [Getting Started with Angular Standalone](./angular-standalone)
 * [Getting Started ASP.NET Core with Angular using Project Template](./aspnet-core)
 * [Getting Started with Angular CLI as Front end in ASP.NET MVC](./aspnet-mvc)
-* [Getting Started with Ionic and Angular](./ionic)
-* [Getting Started with Angular and Electron](./electron)
+* [Getting Started with Ionic and Angular](../frameworks-and-feature/ionic)
+* [Getting Started with Angular and Electron](../frameworks-and-feature/electron)
 * [Upgrade Guide](../upgrade/upgrading-syncfusion)
