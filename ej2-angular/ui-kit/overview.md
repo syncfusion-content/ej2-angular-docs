@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Overview: Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular
 
-The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises over 230 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind CSS and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
+The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises over 260 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind CSS and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
 
 <table>
   <tr>
@@ -60,8 +60,11 @@ The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises
     <td>
       <ul>
         <li>Line Chart</li>
+        <li>Area Chart</li>
         <li>Bar Chart</li>
-        <li>Accumulation Chart</li>
+        <li>Scatter Chart</li>
+        <li>Bubble Chart</li>
+        <li>Distribution Chart</li>
       </ul>
     </td>
   </tr>
@@ -69,19 +72,19 @@ The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises
     <td>AI</td>
     <td>
       <ul>
-        <li>Al Login</li>
-        <li>Al Sidebar</li>
-        <li>Al Setting</li>
-        <li>Al Search</li>
-        <li>Al Input</li>
-        <li>Al Card</li>
-        <li>Al Prompt Card</li>
-        <li>Al Chat</li>
-        <li>Al Dialog</li>
-        <li>Al Floating Menu</li>
-        <li>Al Notification</li>
-        <li>Al FAQ</li>
-        <li>Al Pricing Table</li>
+        <li>AI Login</li>
+        <li>AI Sidebar</li>
+        <li>AI Setting</li>
+        <li>AI Search</li>
+        <li>AI Input</li>
+        <li>AI Card</li>
+        <li>AI Prompt Card</li>
+        <li>AI Chat</li>
+        <li>AI Dialog</li>
+        <li>AI Floating Widget</li>
+        <li>AI Notification</li>
+        <li>AI FAQ</li>
+        <li>AI Pricing Table</li>
       </ul>
     </td>
   </tr>

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Performance tips for ##Platform_Name## Gantt control
 
-This article is a comprehensive guide on improving the loading performance of the Angular Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Angular Gantt component during data binding, ensuring a smooth and efficient user experience.
+This guide offers tips to boost the Angular Gantt chart's loading performance, especially for large datasets. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Angular Gantt component during data binding, ensuring a smooth and efficient user experience.
 
 ## How to improve loading performance by binding large dataset
 
@@ -23,27 +23,74 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 1.  **Row Virtualization**: The Virtual scrolling feature in the Angular Gantt component enables the efficient handling and display of large volumes of data without compromising performance. This approach optimizes the rendering process by loading only the visible rows within the Gantt viewport, rather than rendering the entire dataset simultaneously. For more information on implementing row virtualization , you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll#row-virtualization) section dedicated to this feature. This can be visualized while performing the vertical scroll action.
 
-2. **Timeline Virtualization**: The timeline virtualization feature in the Angular Gantt Component enables efficient handling and display of large timespans without compromising performance. This approach optimizes the rendering process by loading only the visible timeline cells, which are typically three times the width of the Gantt element. Other timeline cells render on-demand during horizontal scrolling. For more information on implementing timeline virtualization, you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll#timeline-virtualization) section dedicated to this feature. This can be visualized while performing the horizontal scroll action.
+2. **Timeline Virtualization**: The timeline virtualization feature in the Angular Gantt Component enables efficient handling and display of large timespan without compromising performance. This approach optimizes the rendering process by loading only the visible timeline cells, which are typically three times the width of the Gantt element. Other timeline cells render on-demand during horizontal scrolling. For more information on implementing timeline virtualization, you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll#timeline-virtualization) section dedicated to this feature. This can be visualized while performing the horizontal scroll action.
 
 3. **Load On Demand**: The Load on demand feature in the Angular Gantt component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
 
-## Optimizing performance with AutoCalculateDateScheduling
+### Optimizing performance with AutoCalculateDateScheduling
 
-In the Angular Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the  [autocalculatedatescheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autocalculatedatescheduling) property to **false**. 
+In the Angular Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the  [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autoCalculateDateScheduling) property to **false**. 
 
->When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
+The [`autoCalculateDateScheduling`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
 
-## How to improve loading performance by binding large data by showing custom text or element
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs2" %}
+>When setting `autoCalculateDateScheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
+
+### Optimizing loading performance by binding large data by showing custom text or element
 
 When integrating image or template elements into a gantt column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template) feature instead of customizing data through the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
-## How to improve loading performance by referring individual script and CSS
+### Optimizing loading performance by referring individual script and CSS
 
 To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
 
 [CRG website link](https://crg.syncfusion.com/) 
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
+
+### Performance Benchmarks
+
+The tables below illustrate typical load times for Gantt charts with various configurations, comparing non-virtualized and virtualized scenarios. Each row reflects the impact of adding only the specified feature to a default parent-child hierarchy on loading and interactivity performance.
+
+**Test Environment**
+
+| Setting | Value | 
+|------------------------|------------------------------------| 
+| Component version | Syncfusion Angular Gantt 30.1.37 | 
+| Angular version | 20.1.0 | 
+| Browser | Edge 138 | 
+| Operating System | Windows 11 | 
+| CPU | 12th Gen Intel® Core™ i5-1235U | 
+| RAM | 16GB |
+
+### Non-Virtualized Scenario (2,500 Tasks)
+
+| Scenario                        | Load Time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy(Parent-Child) | 4.2                 |
+| + Predecessor                   | 6.4                 |
+| + Resources                     | 7.1                 |
+| + Split Taskbars                | 7.4                 |
+
+### Virtualized Scenario (10,000 Tasks)
+
+| Scenario                        | Load Time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy(Parent-Child) | 2.4                 |
+| + Predecessor                   | 4.6                 |
+| + Resources                     | 4.9                 |
+| + Split Taskbars                | 7.1                 |
+
 
 ## How to optimize server-side data operations with adaptors
 
@@ -108,3 +155,38 @@ Using the OnPush strategy may lead to child components not being updated when th
 ## Microsoft excel limitation while exporting millions of records to excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.
+
+## Tree shaking and bundle size optimization
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component is designed with tree shaking as a primary feature. It's organized into modular, tree-shakable packages, allowing you to import specific modules based on your requirements. For example, import the `GanttModule` for basic functionality or include feature modules such as `FilterService`, `SortService`, or `SelectionService` when needed:
+
+```typescript
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { FilterService, SortService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+```
+
+The table below shows example production build sizes. Each row demonstrates the effect of importing just the base Gantt or adding a specific service on top. Actual bundle sizes may vary based on your exact app, Angular version, and build optimizations.
+
+Each row adds only the named feature/service to the base `GanttModule`, demonstrating the incremental effect on your bundle.
+
+| **Module**          | **Raw Size** | **Transfer Size** |
+|---------------------|--------------|-----------------------------|
+| Empty App           | 220.26 kB    | 60.71 kB                    |
+| GanttModule         | 2.55 MB      | 473.29 kB                   |
+| + SortService       | 2.56 MB      | 475.69 kB                   |
+| + SelectionService  | 2.58 MB      | 477.38 kB                   |
+| + FilterService     | 2.99 MB      | 538.76 kB                   |
+| + ReorderService    | 3.00 MB      | 541.35 kB                   |
+| + ExcelService      | 3.14 MB      | 569.72 kB                   |
+
+- **Raw Size**: The uncompressed size of the bundle.  
+- **Transfer Size**: The compressed size, which is what gets downloaded. Compressed sizes are crucial as they reduce the time and bandwidth required to transfer resources over the network, leading to faster application load times.  
+
+These numbers demonstrate how tree shaking keeps bundle sizes manageable by including only the features you import. For comparison, importing `GanttAllModule` instead of selectively adding only needed modules will significantly increase your bundle size, as it includes all Gantt chart features whether or not you use them.
+
+For detailed implementation steps and configuration, refer to the [Syncfusion Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking).
+
+## See also
+
+- [Data binding](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
+- [Virtual scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [Column template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template)

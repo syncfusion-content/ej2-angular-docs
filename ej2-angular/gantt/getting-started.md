@@ -10,7 +10,21 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Gantt component
 
-This section explains you the steps required to create a simple Gantt component and demonstrate the basic usage of the Gantt component in an Angular environment.
+This guide provides a comprehensive walkthrough for initiating and using the Syncfusion Angular Gantt component. It includes steps for setting up the environment, installing necessary packages, adding components, and utilizing various Gantt features.
+
+## Dependencies
+
+To use the Angular Gantt component effectively, ensure the following packages are included:
+``` bash
+|-- @syncfusion/ej2-angular-gantt
+    |-- @syncfusion/ej2-angular-base
+    |-- @syncfusion/ej2-gantt
+        |-- @syncfusion/ej2-base
+        |-- @syncfusion/ej2-data
+        |-- @syncfusion/ej2-popups
+        |-- @syncfusion/ej2-grids
+        |-- @syncfusion/ej2-treegrid
+```
 
 ## Setup Angular Environment
 
@@ -29,22 +43,35 @@ Start a new Angular application using below Angular CLI command.
 ng new my-app
 cd my-app
 ```
+## Installing Syncfusion® Angular Gantt Package
+Syncfusion® packages are available on npm under the @syncfusion scope. These packages include both Ivy-compatible and ngcc-compiled versions for various Angular versions. Here's how to add the Angular Gantt package to your project:
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt package
+## Ivy Library Distribution Package Format
+Syncfusion® Angular packages (version 20.2.36 and above) are compatible with the Angular Ivy rendering engine, supporting Angular version 12 and above. Ivy packages offer improved build performance and a smaller bundle size.
 
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
-
-To install Gantt component, use the following command.
-
+To add the Ivy-compatible Gantt package to your application, use the following command:
 ```bash
-ng add @syncfusion/ej2-angular-gantt --save
+npm install @syncfusion/ej2-angular-gantt --save
 ```
 
+## Angular Compatibility Compiler (ngcc) Package
+For applications using Angular versions below 12, Syncfusion® provides packages compiled with the Angular compatibility compiler (ngcc). These packages ensure compatibility with the legacy Angular compilation and rendering pipeline.
+
+To add the Gantt ngcc package, use this command:
+```bash
+npm install @syncfusion/ej2-angular-gantt@ngcc --save
+```
 > The **--save** will instruct NPM to include the gantt package inside of the `dependencies` section of the `package.json`.
+
+To specify the ngcc package in your package.json, append -ngcc to the package version as shown:
+```bash
+"@syncfusion/ej2-angular-gantt": "20.2.38-ngcc"
+```
+`Note:`  If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning. Verify that your Angular application's version is compatible with the Gantt package version to ensure optimal performance, reducing chances for runtime errors due to incompatibility.
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
+By incorporating the following CSS files from Syncfusion's package, you ensure that your Gantt Chart adheres to the designed themes, ensuring visual consistency and feature visibility. The following CSS files are available in `../node_modules/@syncfusion` package folder.
 This can be referenced in [src/styles.css] using following code.
 
 ```css
@@ -66,8 +93,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Add Gantt component
 
-Modify the template in [src/app/app.component.ts] file to render the gantt component.
-Add the Angular Gantt by using `<ejs-gantt>` selector in `template` section of the app.component.ts file.
+Integrate the Gantt component into your application by modifying the `app.component.ts` file. Use `<ejs-gantt>` to initiate the Gantt chart display. It takes configuration through properties and bindings to display project management data effectively.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -92,8 +118,7 @@ export class AppComponent implements OnInit {
 
 ## Binding Gantt with data
 
-Bind data for the Gantt component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property.
-It accepts either array of JavaScript object or `DataManager` instance.
+Bind data for the Gantt component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. It accepts either array of JavaScript object or `DataManager` instance. The [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mapping ensures that each project task is correctly represented with essential fields like `TaskName`, `StartDate`, and `Duration`.
 
 ```typescript
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
@@ -107,13 +132,13 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" ></ejs-gantt>`,
+       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskFields" ></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
     // Data for Gantt
     public data?: object[];
-    public taskSettings?: object;
+    public taskFields?: object;
 
     public ngOnInit(): void {
         this.data = [
@@ -140,7 +165,7 @@ export class AppComponent{
                 ]
             },
         ];
-        this.taskSettings = {
+        this.taskFields = {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
@@ -157,17 +182,19 @@ export class AppComponent{
 
 ## Module injection
 
-The Gantt component was segregated into individual feature-wise modules. To use its feature, you need to inject its feature service in the `app.component.ts`.
+The module injection enhances the Gantt component. This setup ensures that each module, like editing or sorting, is available to be used within the Gantt component, allowing for enhanced interactive capabilities.
+
 Find the relevant feature modules and descriptions as follows:
 
-* [`Edit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule) : Inject this module to use the editing feature.
-* [`Filter`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtermodule): Inject this module to use the filtering feature.
-* [`Sort`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) : Inject this module to use the sorting feature.
-* [`Selection`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule) : Inject this module to use the selection feature.
-* [`Toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) : Inject this module to use the toolbar items.
-* [`DayMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#daymarkersmodule) : Inject this module to highlight the days.
+* [`EditService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule) : Inject this module to use the editing feature.
+* [`FilterService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtermodule): Inject this module to use the filtering feature.
+* [`SortService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) : Inject this module to use the sorting feature.
+* [`SelectionService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule) : Inject this module to use the selection feature.
+* [`ToolbarService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) : Inject this module to use the toolbar items.
+* [`DayMarkersService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#daymarkersmodule) : Inject this module to highlight the days.
 
-Now, import the above-mentioned modules from the Gantt package and inject them into `provider` section of `app.component.ts` like following code:
+
+To use its feature, these modules should be injected into the providers section of root `NgModule` or component class. In the following code, the Gantt component's editing feature is enabled by injecting the `EditService` in the `providers` section.
 
  ```javascript
     import { GanttModule } from '@syncfusion/ej2-angular-gantt';
@@ -183,10 +210,11 @@ Now, import the above-mentioned modules from the Gantt package and inject them i
     })
 
  ```
+> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/gantt/module).
 
 ## Mapping task fields
 
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) property.
+The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) property. Mapping fields reflect your project's task details, ensuring accurate representation and functionality.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -462,3 +490,11 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
 ![Error Handling](images/error-handling.PNG)
+
+## Troubleshooting
+
+- **Angular version matches package requirements:** Use compatible versions as mismatched versions can lead to errors or unexpected behaviors.
+- **Correct module imports and providers:** Missing imports can disable functionality, leading to issues during runtime.
+- **Task and resource mapping:** Incorrect mappings lead to data display failures, ensure mappings are precise and consistent with the data structure.
+
+> You can refer to our [Angular Gantt chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Gantt chart example](https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/overview) that demonstrates various capabilities like task scheduling, resource allocation, critical path analysis, and handling dependencies. This will enhance your understanding of how to effectively present and manage project data using the Gantt chart component.
