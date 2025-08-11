@@ -158,7 +158,7 @@ export class AppComponent {
               // Append Authorization header with value 'User1' to fetchRequest headers
               args.fetchRequest.headers.append('Authorization', 'User1');
             };
-        } 
+        }
     }
 }
 

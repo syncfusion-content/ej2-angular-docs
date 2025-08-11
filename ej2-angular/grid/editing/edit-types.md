@@ -905,7 +905,7 @@ The following example demonstrates how to render a Autocomplete in the **Custome
   
 {% previewsample "page.domainurl/samples/grid/edit-cs14" %}
 
-### Render cascading DropDownList in edit form 
+### Render cascading DropDownList in edit form
 
 The Syncfusion Angular Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 

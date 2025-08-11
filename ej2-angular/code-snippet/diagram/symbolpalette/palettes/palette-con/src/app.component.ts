@@ -5,7 +5,10 @@ import { SymbolPaletteModule, ConnectorModel, PaletteModel } from '@syncfusion/e
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [SymbolPaletteModule],
+    imports: [
+        SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
@@ -16,6 +19,7 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
 export class AppComponent {
     public expandMode?: ExpandMode;
     public palettes?: PaletteModel[];
+
     public getConnectors(): ConnectorModel[] {
         let connectors: ConnectorModel[] = [
             {

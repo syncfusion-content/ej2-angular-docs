@@ -49,7 +49,7 @@ You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlig
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/pinned" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/pinned" %}
 
 ### Setting reply to
 
@@ -67,7 +67,7 @@ You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond t
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/replyTo" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/replyTo" %}
 
 ### Setting forward
 
@@ -85,7 +85,7 @@ You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to s
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/forwarded" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/forwarded" %}
 
 ### Setting compact mode
 
@@ -103,7 +103,7 @@ You can use the `enableCompactMode` property to align all messages to the left i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/compactmode" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/compactmode" %}
 
 ### Defining current user
 
@@ -220,7 +220,7 @@ The following are the predefined status styles that can be defined using the `st
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/statusicon" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/statusicon" %}
 
 ## Define timestamp
 
@@ -389,7 +389,7 @@ You can use the `width` property to set width of the message toolbar in the chat
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/width" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/width" %}
 
 ### Setting items
 
@@ -407,7 +407,7 @@ You can use the `items` property to specify the toolbar item in the message tool
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/items" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/items" %}
 
 ### Setting itemClick
 
@@ -425,4 +425,4 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/itemClicked" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/itemClicked" %}

@@ -4,12 +4,14 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, PaletteModel, NodeModel } from '@syncfusion/ej2-angular-diagrams'
 
 @Component({
-  imports: [DiagramModule, SymbolPaletteModule],
+  imports: [
+    DiagramModule, SymbolPaletteModule
+  ],
+
   providers: [],
   standalone: true,
   selector: "app-container",
-  template: `<ejs-symbolpalette id="symbolpalette" width="100%" height="100%" [palettes]="palettes" [symbolWidth] = 60 [symbolHeight] = 60
-          [enableSearch]="enableSearch" [filterSymbols]="filterSymbols">
+  template: `<ejs-symbolpalette id="symbolpalette" width="100%" height="100%" [palettes]="palettes" [symbolWidth] = 60 [symbolHeight] = 60 [enableSearch]="enableSearch" [filterSymbols]="filterSymbols">
         </ejs-symbolpalette>
         <ejs-diagram id="diagram" width="1000px" height="500px" >
         </ejs-diagram>`,
@@ -21,15 +23,24 @@ export class AppComponent {
     let nodes: NodeModel[] = [
       {
         id: 'rectangle',
-        shape: { type: 'Basic', shape: 'Rectangle', },
+        shape: {
+          type: 'Basic',
+          shape: 'Rectangle',
+        },
       },
       {
         id: 'plus',
-        shape: { type: 'Basic', shape: 'Plus', },
+        shape: {
+          type: 'Basic',
+          shape: 'Plus',
+        },
       },
       {
         id: 'triangle',
-        shape: { type: 'Basic', shape: 'RightTriangle', },
+        shape: {
+          type: 'Basic',
+          shape: 'RightTriangle',
+        },
       },
     ];
     return nodes;
@@ -39,23 +50,38 @@ export class AppComponent {
     let nodes: NodeModel[] = [
       {
         id: 'process',
-        shape: { type: 'Flow', shape: 'Process', },
+        shape: {
+          type: 'Flow',
+          shape: 'Process',
+        },
       },
       {
         id: 'terminator',
-        shape: { type: 'Flow', shape: 'Terminator', },
+        shape: {
+          type: 'Flow',
+          shape: 'Terminator',
+        },
       },
       {
         id: 'decision',
-        shape: { type: 'Flow', shape: 'Decision', },
+        shape: {
+          type: 'Flow',
+          shape: 'Decision',
+        },
       },
       {
         id: 'document',
-        shape: { type: 'Flow', shape: 'Document', },
+        shape: {
+          type: 'Flow',
+          shape: 'Document',
+        },
       },
       {
         id: 'data',
-        shape: { type: 'Flow', shape: 'Data', },
+        shape: {
+          type: 'Flow',
+          shape: 'Data',
+        },
       },
     ];
     return nodes;

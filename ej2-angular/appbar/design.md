@@ -48,15 +48,11 @@ The following example depicts the code to provide a vertical line between a grou
 
 ## Media Query
 
-CSS media queries are used to adjust the AppBar layout based on different screen sizes. Resize the screen to observe how the AppBar responds and adapts to various device widths.
+Media Query is used to adjusting the AppBar for different screen sizes. Resize the screen to observe the responsive layout of the AppBar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/media-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/appbar/media-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

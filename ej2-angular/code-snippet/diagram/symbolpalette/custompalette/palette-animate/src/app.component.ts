@@ -3,8 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, ConnectorModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
+
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
@@ -29,15 +33,24 @@ export class AppComponent {
         let nodes: NodeModel[] = [
             {
                 id: 'rectangle',
-                shape: { type: 'Basic', shape: 'Rectangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle',
+                },
             },
             {
                 id: 'plus',
-                shape: { type: 'Basic', shape: 'Plus', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Plus',
+                },
             },
             {
                 id: 'triangle',
-                shape: { type: 'Basic', shape: 'RightTriangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'RightTriangle',
+                },
             },
         ];
         return nodes;

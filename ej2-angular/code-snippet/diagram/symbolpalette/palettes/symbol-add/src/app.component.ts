@@ -1,18 +1,22 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, randomId, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams'
+
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SymbolPaletteModule, SymbolPaletteComponent, DiagramModule, randomId, NodeModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
+import { SymbolPaletteComponent, SymbolPalette, NodeModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<button id='addBasicShape' (click)="addBasicShape()">Add BasicShape</button>
-    <button id='addFlowShape' (click)="addFlowShape()">Add FlowShape</button>
-    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode"
-        [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=50>
+    template: `<button id='addBasicShape' (click)="addBasicShape()">addBasicShape</button>
+    <button id='addFlowShape' (click)="addFlowShape()">addFlowShape</button>
+    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode" [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=50>
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })

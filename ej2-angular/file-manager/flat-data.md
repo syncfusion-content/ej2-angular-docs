@@ -32,7 +32,6 @@ The File Manager can be populated with local data consisting of an array of [fil
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 
-The [type](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/#type) field in the flat data source must not be `null`. This field identifies whether the item is a file or a folder, and it also specifies the file type.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

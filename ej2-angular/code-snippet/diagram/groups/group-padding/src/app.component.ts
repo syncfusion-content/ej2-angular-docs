@@ -4,7 +4,10 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-  imports: [DiagramModule],
+  imports: [
+    DiagramModule
+  ],
+
   providers: [],
   standalone: true,
   selector: "app-container",

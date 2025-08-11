@@ -6,12 +6,14 @@ import { NodeModel, SymbolPalette } from '@syncfusion/ej2-diagrams';
 import { SymbolPaletteModule, SymbolPaletteComponent, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-    imports: [SymbolPaletteModule],
+    imports: [
+        SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" [symbolWidth]= 80 [symbolHeight] = 80
-        [enableSearch]= true [enableAnimation]= false [locale]="locale">
+    template: `<ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" [symbolWidth]= 80 [symbolHeight] = 80 [enableSearch]= true [enableAnimation]= false [locale]="locale">
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -25,15 +27,24 @@ export class AppComponent {
         let basicShapes: NodeModel[] = [
             {
                 id: 'Rectangle',
-                shape: { type: 'Basic', shape: 'Rectangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle',
+                },
             },
             {
                 id: 'Ellipse',
-                shape: { type: 'Basic', shape: 'Ellipse', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Ellipse',
+                },
             },
             {
                 id: 'Hexagon',
-                shape: { type: 'Basic', shape: 'Hexagon', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Hexagon',
+                },
             },
         ];
         return basicShapes;

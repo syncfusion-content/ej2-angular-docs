@@ -8,6 +8,7 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
     imports: [
         DiagramModule, SymbolPaletteModule
     ],
+
     providers: [],
     standalone: true,
     selector: "app-container",

@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, ConnectorModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
+
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<button id='removePalette' (click)="removePalette()">Remove Palette</button>
+    template: `<button id='removePalette' (click)="removePalette()">removePalette</button>
     <button id='removePalettes' (click)="removePalettes()">removePalettes</button>
-    <ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" />`,
+    <ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes">`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -37,15 +41,24 @@ export class AppComponent {
         let flowShapes: NodeModel[] = [
             {
                 id: 'process',
-                shape: { type: 'Flow', shape: 'Process', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'Process',
+                },
             },
             {
                 id: 'document',
-                shape: { type: 'Flow', shape: 'Document', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'Document',
+                },
             },
             {
                 id: 'predefinedprocess',
-                shape: { type: 'Flow', shape: 'PreDefinedProcess', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'PreDefinedProcess',
+                },
             },
         ];
         return flowShapes;
@@ -55,15 +68,24 @@ export class AppComponent {
         let nodes: NodeModel[] = [
             {
                 id: 'rectangle',
-                shape: { type: 'Basic', shape: 'Rectangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle',
+                },
             },
             {
                 id: 'plus',
-                shape: { type: 'Basic', shape: 'Plus', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Plus',
+                },
             },
             {
                 id: 'triangle',
-                shape: { type: 'Basic', shape: 'RightTriangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'RightTriangle',
+                },
             },
         ];
         return nodes;
@@ -120,7 +142,7 @@ export class AppComponent {
         ];
         return connectors;
     }
-
+  
     removePalette() {
         /**
          * parameter - The ID of palette to be removed in symbol palette.

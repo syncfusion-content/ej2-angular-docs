@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, Connector, SymbolInfo, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 
+
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes"
-        [getSymbolInfo]="getSymbolInfo" enableSearch=true>
+    template: `<ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" [getSymbolInfo]="getSymbolInfo" enableSearch=true>
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -22,15 +25,24 @@ export class AppComponent {
         let basicShapes: NodeModel[] = [
             {
                 id: 'Rectangle-symbol',
-                shape: { type: 'Basic', shape: 'Rectangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle',
+                },
             },
             {
                 id: 'Ellipse-symbol',
-                shape: { type: 'Basic', shape: 'Ellipse', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Ellipse',
+                },
             },
             {
                 id: 'Hexagon-symbol',
-                shape: { type: 'Basic', shape: 'Hexagon', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Hexagon',
+                },
             },
         ];
         return basicShapes;
