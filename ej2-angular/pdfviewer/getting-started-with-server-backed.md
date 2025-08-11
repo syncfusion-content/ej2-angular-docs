@@ -161,20 +161,27 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 ## How to run the PDF Viewer web service
 
 1. Download the sample from the [Web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) link.
+
 2. Navigate to the `ASP.NET Core` folder and open it in the command prompt.
-3. Use the below command to restore the required packages.
+
+3. Navigate to the appropriate subfolder based on your .NET version:
+
+   - .NET 6.0 → `PdfViewerWebService_6.0`
+   - .NET 8.0 → `PdfViewerWebService_8.0`
+
+4. Use the below command to restore the required packages.
 
    ```sh
    dotnet restore
    ```
 
-4. Use the below command to run the web service.
+5. Use the below command to run the web service.
 
    ```sh
    dotnet run
    ```
 
-5. You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001`and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer`which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
+6. You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001`and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer`which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
 
    ```javascript
    export class AppComponent implements OnInit {
