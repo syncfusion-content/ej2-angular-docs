@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramModule, SymbolPaletteModule, SymbolPaletteComponent, NodeModel, ConnectorModel, PaletteModel, randomId } from '@syncfusion/ej2-angular-diagrams';
 
+
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
     template: `<button id='addPalette' (click)="addPalette()">Add Palette</button>
-    <ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" [enablePersistence]="enablePersistence" />`,
+    <ejs-symbolpalette #symbolpalette id="symbolpalette" [palettes]="palettes" [enablePersistence]="enablePersistence" >`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -30,15 +34,24 @@ export class AppComponent {
         let flowShapes: NodeModel[] = [
             {
                 id: 'process',
-                shape: { type: 'Flow', shape: 'Process', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'Process',
+                },
             },
             {
                 id: 'document',
-                shape: { type: 'Flow', shape: 'Document', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'Document',
+                },
             },
             {
                 id: 'predefinedprocess',
-                shape: { type: 'Flow', shape: 'PreDefinedProcess', },
+                shape: {
+                    type: 'Flow',
+                    shape: 'PreDefinedProcess',
+                },
             },
         ];
         return flowShapes;

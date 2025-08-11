@@ -5,6 +5,7 @@
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 
 #wrapper {
   height: 380px;

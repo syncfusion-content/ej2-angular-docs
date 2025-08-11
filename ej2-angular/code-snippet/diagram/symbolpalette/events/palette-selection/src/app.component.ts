@@ -4,12 +4,14 @@ import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SymbolPaletteModule, NodeModel, PaletteModel, IPaletteSelectionChangeArgs } from '@syncfusion/ej2-angular-diagrams'
 
 @Component({
-    imports: [SymbolPaletteModule],
+    imports: [
+        SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette" [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=70
-        (paletteSelectionChange)="paletteSelectionChange($event)">
+    template: `<ejs-symbolpalette id="symbolpalette" [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=70 (paletteSelectionChange)="paletteSelectionChange($event)">
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -25,15 +27,24 @@ export class AppComponent {
         let nodes: NodeModel[] = [
             {
                 id: 'rectangle',
-                shape: { type: 'Basic', shape: 'Rectangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle',
+                },
             },
             {
                 id: 'plus',
-                shape: { type: 'Basic', shape: 'Plus', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'Plus',
+                },
             },
             {
                 id: 'triangle',
-                shape: { type: 'Basic', shape: 'RightTriangle', },
+                shape: {
+                    type: 'Basic',
+                    shape: 'RightTriangle',
+                },
             },
         ];
         return nodes;

@@ -274,12 +274,12 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
   
 {% previewsample "page.domainurl/samples/sidebar/gestures-cs1" %}
 
-> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/sidebar/default) that shows how to render the Sidebar in Angular.
+> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/default) that shows how to render the Sidebar in Angular.
 
 ## See Also
 
-* [Sidebar with navigation menu](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/sidebar/sidebar-menu)
-* [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/sidebar/responsive-panel)
+* [Sidebar with navigation menu](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/sidebar-menu)
+* [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/responsive-panel)
 * [Sidebar with listView](./how-to/initialize-the-sidebar-listview)
 * [Initialize Sidebar using systemjs](./how-to/initialize-sidebar-using-systemjs)
 * [Usecase sample](https://ej2.syncfusion.com/showcase/angular/webmail/)

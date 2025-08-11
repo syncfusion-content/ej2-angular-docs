@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramModule, SymbolPaletteModule, NodeModel, MarginModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, SymbolPaletteModule,  NodeModel, MarginModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
-    providers: [],
-    standalone: true,
+imports: [
+         DiagramModule, SymbolPaletteModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette" width="100%" height="700px" [symbolHeight]=80 [symbolWidth]=80
-        [expandMode]="expandMode" [palettes]="palettes" [symbolMargin]="symbolMargin">
+    template: `<ejs-symbolpalette id="symbolpalette" width="100%" height="700px" [symbolHeight]=80 [symbolWidth]=80 [expandMode]="expandMode" [palettes]="palettes" [symbolMargin]="symbolMargin">
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -20,17 +22,26 @@ export class AppComponent {
     public symbolMargin?: MarginModel;
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
-            id: 'Rectangle',
-            shape: { type: 'Basic', shape: 'Rectangle' }
-        },
-        {
-            id: 'Ellipse',
-            shape: { type: 'Basic', shape: 'Ellipse' }
-        },
-        {
-            id: 'Hexagon',
-            shape: { type: 'Basic', shape: 'Hexagon' }
-        }
+                id: 'Rectangle',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle'
+                }
+            },
+            {
+                id: 'Ellipse',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Ellipse'
+                }
+            },
+            {
+                id: 'Hexagon',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Hexagon'
+                }
+            }
         ];
         return basicShapes;
     };

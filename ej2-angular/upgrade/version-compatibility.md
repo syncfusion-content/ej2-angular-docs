@@ -16,7 +16,7 @@ The following table outlines the compatibility between Syncfusion<sup style="fon
 
 | Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | --------------- | ------------------------------------------------ |
-| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 26.1.35 and above |
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 30.1.37 and above |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |

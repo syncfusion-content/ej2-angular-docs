@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DiagramModule, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { NodeModel, PaletteModel, SymbolPreviewModel } from '@syncfusion/ej2-angular-diagrams';
+import {  NodeModel,  PaletteModel, SymbolPreviewModel } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
-    providers: [],
-    standalone: true,
+imports: [
+         DiagramModule, SymbolPaletteModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode" [enableSearch]=true [palettes]='palettes'
      [symbolHeight]=80 [symbolWidth]=80 [symbolPreview]='symbolPreview' (paletteExpanding)='paletteExpanding($event)'>
@@ -20,39 +23,54 @@ export class AppComponent {
     public palettes?: PaletteModel[];
     public symbolPreview?: SymbolPreviewModel[];
     public paletteExpanding(args: any) {
-        if (args.palette.id === 'basic') {
+        if(args.palette.id === 'basic') {
             // Basic shapes panel does not collapse
             args.cancel = true;
-        } else {
+            } else {
             // Flow shapes panel collapse and expand
             args.cancel = false;
-        }
+        }   
     };
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
-            id: 'Rectangle',
-            shape: { type: 'Basic', shape: 'Rectangle' }
-        },
-        {
-            id: 'Ellipse',
-            shape: { type: 'Basic', shape: 'Ellipse' }
-        },
-        {
-            id: 'Hexagon',
-            shape: { type: 'Basic', shape: 'Hexagon' }
-        }
+                id: 'Rectangle',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Rectangle'
+                }
+            },
+            {
+                id: 'Ellipse',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Ellipse'
+                }
+            },
+            {
+                id: 'Hexagon',
+                shape: {
+                    type: 'Basic',
+                    shape: 'Hexagon'
+                }
+            }
         ];
         return basicShapes;
     };
     public getFlowShapes(): NodeModel[] {
         let flowShapes: NodeModel[] = [{
-            id: 'process',
-            shape: { type: 'Flow', shape: 'Process' }
-        },
-        {
-            id: 'document',
-            shape: { type: 'Flow', shape: 'Document' }
-        }
+                id: 'process',
+                shape: {
+                    type: 'Flow',
+                    shape: 'Process'
+                }
+            },
+            {
+                id: 'document',
+                shape: {
+                    type: 'Flow',
+                    shape: 'Document'
+                }
+            }
         ];
         return flowShapes;
     };
@@ -60,23 +78,23 @@ export class AppComponent {
     ngOnInit(): void {
         this.expandMode = 'Multiple'
         this.palettes = [{
-            id: 'flow',
-            expanded: true,
-            symbols: this.getFlowShapes(),
-            title: 'Flow Shapes',
-            iconCss: 'e-ddb-icons e-flow'
-        },
-        {
-            id: 'basic',
-            expanded: true,
-            symbols: this.getBasicShapes(),
-            title: 'Basic Shapes',
-            iconCss: 'e-ddb-icons e-basic'
-        }
+                id: 'flow',
+                expanded: true,
+                symbols: this.getFlowShapes(),
+                title: 'Flow Shapes',
+                iconCss: 'e-ddb-icons e-flow'
+            },
+            {
+                id: 'basic',
+                expanded: true,
+                symbols: this.getBasicShapes(),
+                title: 'Basic Shapes',
+                iconCss: 'e-ddb-icons e-basic'
+            }
         ],
         this.symbolPreview = [{
-            height: 100,
-            width: 100
+          height: 100,
+          width: 100
         }]
     }
 }

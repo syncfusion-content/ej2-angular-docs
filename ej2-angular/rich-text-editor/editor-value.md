@@ -114,7 +114,7 @@ With this setup, any changes made in the Rich Text Editor will update the `edito
 
 ## Autosave
 
-The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [`saveInterval`](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#autosaveonidle) property's value, which is specified in milliseconds.
+The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [`saveInterval`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#saveinterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
 

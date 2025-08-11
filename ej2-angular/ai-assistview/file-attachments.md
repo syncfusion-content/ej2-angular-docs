@@ -26,7 +26,7 @@ You can enable the attachment by using the `enableAttachments` property. By defa
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enable-attachment" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/enable-attachment" %}
 
 ## Configuring attachments
 
@@ -45,7 +45,7 @@ You can use the `saveUrl` and `removeUrl` property to add the save and remove th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/save-remove-url" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/save-remove-url" %}
 
 ### Setting file type
 
@@ -60,7 +60,7 @@ You can use the `allowedFileType` property to upload the specific file types in 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/file-type" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/file-type" %}
 
 ### Setting file size
 
@@ -75,4 +75,4 @@ You can use the `maxFileSize` property to allow the maximum file size of the upl
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/file-size" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/file-size" %}

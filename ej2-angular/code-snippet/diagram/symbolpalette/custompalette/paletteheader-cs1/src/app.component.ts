@@ -5,12 +5,14 @@ import { DiagramModule, SymbolPaletteModule, NodeModel, ConnectorModel, PaletteM
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [DiagramModule, SymbolPaletteModule],
+    imports: [
+        DiagramModule, SymbolPaletteModule
+    ],
+
     providers: [],
     standalone: true,
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="700px" [expandMode]="expandMode"
-        [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80>
+    template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="700px" [expandMode]="expandMode" [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80>
     </ejs-symbolpalette>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -20,15 +22,24 @@ export class AppComponent {
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
             id: 'Rectangle',
-            shape: { type: 'Basic', shape: 'Rectangle' }
+            shape: {
+                type: 'Basic',
+                shape: 'Rectangle'
+            }
         },
         {
             id: 'Ellipse',
-            shape: { type: 'Basic', shape: 'Ellipse' }
+            shape: {
+                type: 'Basic',
+                shape: 'Ellipse'
+            }
         },
         {
             id: 'Hexagon',
-            shape: { type: 'Basic', shape: 'Hexagon' }
+            shape: {
+                type: 'Basic',
+                shape: 'Hexagon'
+            }
         }
         ];
         return basicShapes;
@@ -36,15 +47,24 @@ export class AppComponent {
     public getFlowShapes(): NodeModel[] {
         let flowShapes: NodeModel[] = [{
             id: 'process',
-            shape: { type: 'Flow', shape: 'Process' }
+            shape: {
+                type: 'Flow',
+                shape: 'Process'
+            }
         },
         {
             id: 'document',
-            shape: { type: 'Flow', shape: 'Document' }
+            shape: {
+                type: 'Flow',
+                shape: 'Document'
+            }
         },
         {
             id: 'predefinedprocess',
-            shape: { type: 'Flow', shape: 'PreDefinedProcess' }
+            shape: {
+                type: 'Flow',
+                shape: 'PreDefinedProcess'
+            }
         }
         ];
         return flowShapes;
@@ -53,24 +73,50 @@ export class AppComponent {
         let connectorSymbols: ConnectorModel[] = [{
             id: 'Link1',
             type: 'Orthogonal',
-            sourcePoint: { x: 0, y: 0 },
-            targetPoint: { x: 40, y: 40 },
-            targetDecorator: { shape: 'Arrow' }
+            sourcePoint: {
+                x: 0,
+                y: 0
+            },
+            targetPoint: {
+                x: 40,
+                y: 40
+            },
+            targetDecorator: {
+                shape: 'Arrow'
+            }
         },
         {
             id: 'Link21',
             type: 'Straight',
-            sourcePoint: { x: 0, y: 0 },
-            targetPoint: { x: 40, y: 40 },
-            targetDecorator: { shape: 'Arrow' }
+            sourcePoint: {
+                x: 0,
+                y: 0
+            },
+            targetPoint: {
+                x: 40,
+                y: 40
+            },
+            targetDecorator: {
+                shape: 'Arrow'
+            }
         },
         {
             id: 'link33',
             type: 'Bezier',
-            sourcePoint: { x: 0, y: 0 },
-            targetPoint: { x: 40, y: 40 },
-            style: { strokeWidth: 2 },
-            targetDecorator: { shape: 'None' }
+            sourcePoint: {
+                x: 0,
+                y: 0
+            },
+            targetPoint: {
+                x: 40,
+                y: 40
+            },
+            style: {
+                strokeWidth: 2
+            },
+            targetDecorator: {
+                shape: 'None'
+            }
         }
         ];
         return connectorSymbols;
