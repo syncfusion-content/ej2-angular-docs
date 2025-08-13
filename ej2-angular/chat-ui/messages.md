@@ -426,3 +426,57 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 {% endtabs %}
         
 {% previewsample "page.domainurl/samples/chat-ui/messages/itemClicked" %}
+
+## Displaying the markdown content
+
+The Syncfusion ChatUI supports `Markdown` formatting for messages, enabling rich text capabilities such as bold, italic, links, and more.
+
+### Prerequisites
+
+- Include the `marked` library:
+
+  ```bash
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  ```
+
+- Include `DOMPurify` for sanitizing the Markdown output:
+
+  ```bash
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+
+  ```
+
+### Supported markdown formats
+
+The ChatUI supports the following Markdown formats via the `marked` library:
+
+- **Bold**: ** text ** or __ text __ 
+- *Italic*: * text * or _ text _ 
+- [Links](url): [Link text] (url)
+- Lists: - Item or 1. item
+- Code: 'code' or code 
+
+For full list refer to the  [marked documentation](https://marked.js.org/).
+
+### Configuring Markdown
+
+By integrating the [marked](https://github.com/markedjs/marked) library, you can parse Markdown text to enhance the chat experience. The [text](../api/chat-ui/messageModel/#text) property of each message can accept HTML generated from Markdown, allowing for formatted text display.
+
+> To prevent XSS attacks, sanitize Markdown output using `DOMPurify`
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/markdown/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/markdown/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/markdown/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/markdown" %}
