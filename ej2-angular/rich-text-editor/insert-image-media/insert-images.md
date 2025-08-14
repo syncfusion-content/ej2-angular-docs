@@ -280,12 +280,7 @@ Once you select the image from the local machine, the URL for the image will be 
 
 ![Rich Text Editor Image delete](../images/image-del.png)
 
-The following sample explains, how to configure `removeUrl` to remove a saved image from the remote service location, when the following image remove actions are performed:
-
-* `delete` key action.
-* `backspace` key action.
-* Removing uploaded image file from the insert image dialog.
-* Deleting image using the quick toolbar `remove` option.
+The following sample explains, how to configure the `removeUrl` to remove a saved image from the remote service location, when the image is removed using the Insert Image dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -298,6 +293,61 @@ The following sample explains, how to configure `removeUrl` to remove a saved im
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs9" %}
+
+## Deleting Images from Server Using Keyboard and Quick Toolbar Actions
+
+In the Rich Text Editor, deleting images using the `Delete` or `Backspace` keys, or the Quick Toolbar's `Remove` button, removes the image from the editor content not from the server.
+
+This behavior is intentional, allowing undo/redo operations to function properly without breaking references to previously uploaded images.
+
+To explicitly remove images from the server, use the `afterImageDelete` event. This event is triggered after an image is removed from the content and provides the src URL of the image, which can be used to initiate a request to your server for deleting the corresponding file.
+
+The following sample demonstrates how to use the afterImageDelete event in Rich Text Editor to delete images from the server after they are removed from the editor content:
+
+```typescript
+
+import { Component } from '@angular/core';
+import { ToolbarService, LinkService, ImageService, QuickToolbarService, RichTextEditorModule, PasteCleanupService, ImageSettingsModel,} from '@syncfusion/ej2-angular-richtexteditor';
+import { HtmlEditorService, RichTextEditorComponent,} from '@syncfusion/ej2-angular-richtexteditor';
+
+@Component({
+  imports: [RichTextEditorModule],
+  standalone: true,
+  selector: 'app-root',
+  template: ` <ejs-richtexteditor #imageRTE id="imageRTE" (toolbarClick)="onToolbarClick($event)" [insertImageSettings]="insertImageSettings" (afterImageDelete)="afterImageDelete($event)" ></ejs-richtexteditor>`,
+  providers: [ ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService,],
+})
+export class AppComponent {
+  private rteObj: RichTextEditorComponent;
+
+  public insertImageSettings: ImageSettingsModel = {
+    saveUrl: '[SERVICE_HOSTED_PATH]/api/RichTextEditor/SaveFile',
+    removeUrl: '[SERVICE_HOSTED_PATH]/api/RichTextEditor/DeleteFile',
+    path: '[SERVICE_HOSTED_PATH]/RichTextEditor/',
+  };
+  public afterImageDelete(args: any): void {
+    if (args && args.src) {
+      const src = args.src;
+      const fileName = src.split('/').pop();
+      const dummyFile = new File([''], fileName);
+      const formData = new FormData();
+      formData.append('UploadFiles', dummyFile);
+      fetch(this.insertImageSettings.removeUrl, {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => {
+          if (!response.ok) throw new Error('Server responded with an error');
+          console.log('Image deleted successfully:', fileName);
+        })
+        .catch((error) => {
+          console.error('Image deletion failed:', error);
+        });
+    }
+  }
+}
+
+```
 
 ## Adjusting image dimensions
 

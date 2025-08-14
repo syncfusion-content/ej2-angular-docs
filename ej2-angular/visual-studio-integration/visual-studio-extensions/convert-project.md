@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Convert project in Angular Visual studio integration 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular conversion is a Visual Studio add-in that converts an existing Angular application into a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Web application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides a Visual Studio add-in for converting an existing Angular application into a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular web application.
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project conversion are available from v17.3.0.9.
 

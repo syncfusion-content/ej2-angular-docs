@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) offers a comprehensive suite of modern, TypeScript-based Angular components that are built from the ground up to align with Angular’s core architecture. These components are engineered for high performance and support Tree-Shaking, which helps minimize application bundle size by removing unused code. Designed with flexibility in mind, each component is lightweight, modular, and responsive, ensuring seamless integration into any Angular application. Additionally, the components are touch-friendly and optimized for both desktop and mobile experiences, making them ideal for building rich, interactive, and accessible user interfaces across a wide range of devices.
 
 
-## Components list
+## Components List
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI library includes a wide range of components tailored to meet the needs of modern web application development. Below is a categorized list of the available Angular UI components, each thoughtfully crafted to deliver consistent design, seamless user experience, and easy integration into Angular projects.
 
@@ -189,7 +189,7 @@ letter-spacing: 0.7px;
 
 ## How to Use This User Guide Effectively
 
-- Start with the **“Getting Started”** section for the specific component you plan to use. This section provides essential setup instructions and foundational concepts. We recommend reading it thoroughly before writing any code
+- Begin with the **“Getting Started”** section for any component you plan to use. This section provides essential setup instructions and foundational concepts, and it is recommended to review it before implementation.
 
 - Explore the [online sample browser](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/over-view) to see practical examples. It includes a wide range of code samples that can help you understand real-world usage scenarios and accelerate your development process.
 
@@ -203,7 +203,7 @@ If you need assistance beyond what's covered in the documentation, we offer seve
 
 - Ask the community by posting your question on Stack Overflow using the syncfusion-ej2 tag.
 
-- Share your ideas or feature requests through our [feedback portal](https://www.syncfusion.com/feedback/angular). We value your input and use it to improve our products. 
+- Share your feature requests or ideas on the [Syncfusion feedback portal](https://www.syncfusion.com/feedback/angular). We value your input and use it to improve our products. 
 
 > Note: Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any data from customer applications utilizing our components.
 

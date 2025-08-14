@@ -10,13 +10,18 @@ domainurl: ##DomainURL##
 
 # Overview of CSS Variables in Themes
 
-[CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) also known as custom properties, are powerful tools in modern web development that allow developers to define reusable values in CSS. These variables begin with a double hyphen (`--`) followed by a custom identifier and can store various CSS values such as colors, sizes, or font families. By using the `var()` function, developers can reference these variables throughout their stylesheets, enabling consistent and maintainable styling.
+[CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (also known as custom properties) are reusable values that you can define once and use throughout your stylesheets. These variables begin with a double hyphen (`--`) and can store values like colors, font sizes, or spacing units. You can access these variables using the `var()` function anywhere in your CSS.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> leverages CSS variables in its Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2) Angular components to provide highly customizable themes that ensure a cohesive and visually appealing user experience across applications. This approach simplifies theme management, supports dynamic styling, and enhances flexibility for developers working on Angular projects.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2) Angular components use CSS variables extensively to create consistent, customizable themes. This approach offers several advantages:
 
-## CSS Themes - Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Controls
+- Simplified theme customization without modifying core files
+- Easy light/dark mode switching
+- Consistent styling across all components
+- Dynamic styling changes without page reloads
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers the following themes with light and dark variants:
+## CSS Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Controls
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers the following modern themes, each with light and dark variants:
 
 * Material 3 Theme
 * Fluent 2 Theme
@@ -25,7 +30,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> offers the following themes wit
 
 These themes use CSS variables for easy color customization and support seamless light/dark mode switching.
 
-> Note: In the Material 3 theme, color CSS variables are defined with `rgb()` values. Using hex values might cause improper functionality. For instance, earlier versions of Material used $primary: #6200ee;. Now in Material 3, it's --color-sf-primary: 98, 0, 238;.
+> Note: Material 3 theme defines color CSS variables using `rgb()` values rather than hex values. For example, while earlier Material versions used `$primary: #6200ee;`, Material 3 uses `--color-sf-primary: 98, 0, 238;`. Using incorrect value formats may cause styling issues.
 
 ### Obtaining Themes
 
@@ -42,13 +47,34 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> themes are available via npm pa
 |  |  [Bootstrap5.3 light](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css)  |  [Bootstrap 5.3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css)  |
 |  | [Tailwind 3.4 Light](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) | [Tailwind 3.4 Dark](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
 
-To include a theme via npm, install the package (e.g., `npm install @syncfusion/ej2-material3-theme`) and import it in your Angular project’s styles. For CDN, simply add the `<link>` tag to your HTML file’s `<head>` section.
+#### Using npm packages:
+
+1. Install the desired theme package:
+   ```bash
+   npm install @syncfusion/ej2-material3-theme
+   ```
+
+2. Import the theme in your Angular project's styles file:
+   ```css
+   @import '@syncfusion/ej2-material3-theme/styles/material3.css';
+   ```
+
+#### Using CDN:
+
+Add the theme link to your HTML file's `<head>` section:
+```html
+<link href="https://cdn.syncfusion.com/ej2/30.1.37/material3.css" rel="stylesheet">
+```
 
 ## Using CSS Variables in Modern Themes
 
-Each Syncfusion<sup style="font-size:70%">&reg;</sup> theme defines a unique set of CSS variables tailored to its design system, enabling developers to customize component appearances efficiently. These variables control properties like primary colors, backgrounds, and text styles, ensuring consistency across all EJ2 components. By overriding these variables, developers can adapt the theme to match their user preferences.
+Each Syncfusion<sup style="font-size:70%">&reg;</sup> theme defines a set of CSS variables that control various aspects of component appearance. These variables follow a consistent naming pattern:
 
-Below are examples of CSS variable definitions for each theme, which can be placed in a `:root`.
+- Color variables: `--color-sf-primary`, `--color-sf-secondary`, etc.
+- Surface variables: `--color-sf-surface`, `--color-sf-surface-variant`, etc.
+- Typography variables: `--color-sf-white`, `--color-sf-content-bg-color`, etc.
+
+Below are examples of CSS variable definitions for each theme:
 
 {% tabs %}
 {% highlight css tabtitle="material3.css" %}
@@ -70,9 +96,9 @@ Below are examples of CSS variable definitions for each theme, which can be plac
 
 ### Customizing Themes with CSS Variables
 
-CSS variables enable dynamic and real-time color customization, allowing developers to create interactive designs that adapt to user interactions or application states. By overriding variables like `--color-sf-primary`, you can change the appearance of buttons, inputs, and other components instantly. This can be done via CSS for static changes or JavaScript for dynamic updates. Below is an example of customizing the primary color in the Material 3 theme using an Angular component:
+You can customize Syncfusion<sup style="font-size:70%">&reg;</sup> themes by overriding CSS variables in your application's styles. This approach is more maintainable than custom CSS rules and ensures consistent styling across components.
 
-Below is an example of `Material 3` customization using CSS classes.
+Here's an example of customizing the primary color in the `Material 3` theme:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +120,7 @@ Below is an example of `Material 3` customization using CSS classes.
 
 ![customized primary value](images/material3-customize.png)
 
-Example of `Bootstrap 5.3` customization using CSS classes.
+Example of `Bootstrap 5.3` theme customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,11 +142,15 @@ Example of `Bootstrap 5.3` customization using CSS classes.
 
 ![customized primary value](images/bootstrap5.3-customize.png)
 
-> Note: Some themes, like Fluent 2, Bootstrap 5.3, etc., require updating multiple related variables (e.g., hover and pressed states) for consistency. So we have provided the option in `theme studio` application to override the all variables in single selection and you can utilize this customization using [theme studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3) application.
+> Note: Some themes like Fluent 2, Bootstrap 5.3, etc., require updating multiple related variables (e.g., hover and pressed states) for consistency. For comprehensive customization, use the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3) application, which automatically handles these relationships.
 
 ### Light and Dark Mode Switching
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> themes support seamless light and dark mode switching within a `single theme file`, using separate CSS variable sets for each mode. This allows applications to adapt to user preferences or environmental conditions, such as enabling dark mode for better visibility in low-light settings. To activate dark mode, simply add the `e-dark-mode` class to the `<body>` element. Below is an example of implementing a toggle for light and dark modes in the Material 3 theme:
+Syncfusion<sup style="font-size:70%">&reg;</sup> themes support seamless switching between light and dark modes using a single theme file. Each theme defines two sets of CSS variables—one for light mode and one for dark mode.
+
+To activate dark mode, simply add the `e-dark-mode` class to the `<body>` element. This class triggers the alternate set of CSS variables designed for dark backgrounds and improved contrast.
+
+Here's an example of implementing a light/dark mode toggle with the Material 3 theme:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,10 +168,16 @@ This code toggles the `e-dark-mode` class, switching between light and dark vari
 
 ![dark mode](images/material3-dark.png)
 
-The same approach applies to Fluent 2, Bootstrap 5.3, and Tailwind 3.4 themes, each using the `e-dark-mode` class to activate their dark variants, which adjust colors, backgrounds, and text for optimal contrast and readability.
+This same approach works with Fluent 2, Bootstrap 5.3, and Tailwind 3.4 themes, each using the `e-dark-mode` class to activate their dark variants, which adjust colors, backgrounds, and text for optimal contrast and readability.
 
 ### Theme Studio Application
 
-The ThemeStudio application now offers integration with the our latest themes, creating a comprehensive solution for theme customization. It supports both light and dark variants, allowing developers to experiment with color schemes and other styles effortlessly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers a web-based Theme Studio application that makes theme customization even easier. With Theme Studio, you can:
 
-Access the Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio application with our themes via this link: [Link to Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)
+- Interactively customize colors, typography, and spacing
+- Preview changes in real-time across different components
+- Generate custom theme files for your application
+- Switch between light and dark variants
+- Export your customized theme as CSS
+
+Access the Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio at: [Link to Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)

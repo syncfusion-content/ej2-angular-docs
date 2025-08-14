@@ -16,9 +16,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet utilit
 
 ## Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component
 
-The following steps help you to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet in your Angular Application.
+Follow these steps to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular code snippet utility in your Angular application:
 
-1. In Visual Studio Code, open an existing Angular Application or create a new Angular Application.
+1. Open Visual Studio Code and load an existing Angular application or create a new one.
 
 2. Open the html file that you need and place the cursor in required place where you want to add Syncfusion<sup style="font-size:70%">&reg;</sup> component.
 
@@ -27,25 +27,26 @@ The following steps help you to use the Syncfusion<sup style="font-size:70%">&re
     ```bash
     ejs-<Syncfusion component name>-<Syncfusion component feature>
 
-    For Example, ejs-grid-grouping
+    For example: ejs-grid-grouping
     ```
-4. Choose the Syncfusion<sup style="font-size:70%">&reg;</sup> component and click the **Enter** or **Tab** key, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component will be added in the html file.
+
+4. Select the Syncfusion<sup style="font-size:70%">&reg;</sup> component from the suggestion list and press **Enter** or **Tab**. The component code will be inserted into the HTML file.
 
     ![Code Snippet](images/codesnippet.gif)
 
-5. After adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component to the html file, use the tab key to fill in the required values to render the component with data. You can also find the Syncfusion<sup style="font-size:70%">&reg;</sup> help link at the top of the added snippet to learn more about the new Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component feature.
+5. After the code snippet is added, use the **Tab** key to navigate through editable fields and provide the required values to render the component with data. A Syncfusion<sup style="font-size:70%">&reg;</sup> help link is included at the top of the snippet for more details about the component features.
 
     ![Help](images/Help.png)
 
-## Configure Angular application with Syncfusion
+## Configure the Angular application with Syncfusion
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular snippet only add the code snippet alone in the html file. You need to configure the Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM, component modules, and themes by manually. To configure, refer the steps below:
 
-1. Open the Angular package.json file and add the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular individual NPM package(s) for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components manually. Then navigate to the packages.json file location in the command prompt and run the ***npm install*** command to restore all the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages.
+1. Open the Angular **package.json** file and manually add the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> Angular npm package(s). Then, navigate to the project directory in the command prompt and run `npm install` to restore the Syncfusion<sup style="font-size:70%">&reg;</sup> packages.
 
     ![NPM Package](images/NPM.png)
 
-2. Open your module file and add the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component(s) module entries to render the Syncfusion<sup style="font-size:70%">&reg;</sup> components in your application.
+2. Update your Angular module file by importing and adding the relevant Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component modules to your application module.
 
     ![Module](images/Module.png)
 
