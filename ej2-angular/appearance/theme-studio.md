@@ -10,7 +10,17 @@ domainurl: ##DomainURL##
 
 # Theme Studio in Angular Appearance Component
 
-The Theme Studio for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components offers the ability to customize existing themes. However, it does not support Data Visualization components like Chart, Diagram, Gauge, Range Navigator, or Maps.
+The Theme Studio for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components offers the ability to customize existing themes.
+
+## Key Benefits of Theme Studio
+
+- **Visual Customization**: Modify themes with real-time preview of changes
+- **Component-Specific Styling**: Customize all or select specific components
+- **Simplified Workflow**: Export ready-to-use CSS/SCSS files
+- **Design Consistency**: Maintain uniform styling across your application
+- **Reusable Settings**: Save and import theme configurations for future updates
+
+> **Note:** Theme Studio currently does not support customization for Data Visualization components like Charts, Diagrams, Gauges, Range Navigators, or Maps.
 
 ## Customizing Theme Color in Theme Studio
 
@@ -100,6 +110,6 @@ If you need to adjust your application theme and UI design later, you don't have
 
 **Step 5:** The exported file will encompass your new changes. Replace the older style with this new version to update your application.
 
-### Tailwind Theme
+## Tailwind Theme
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components provide Tailwind theme support for EJ2 components, adhering to UI design principles and theme colors. The Tailwind theme is crafted according to Tailwind UI design guidelines.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components provide Tailwind CSS theme support, delivering a modern, clean UI appearance that follows Tailwind design principles. This theme offers seamless integration with Tailwind CSS-based applications.

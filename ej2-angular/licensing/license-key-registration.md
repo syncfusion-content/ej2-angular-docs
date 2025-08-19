@@ -8,18 +8,18 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in EJ2-Angular application
+# Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in EJ2-Angular application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2-Angular packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
+A Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered when your project references Syncfusion EJ2-Angular packages. The generated license key is a string that should be registered after adding any [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
 
->Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
+>Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require internet access. Applications registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on systems without internet connectivity.
 
 Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation) and register it in one of the following ways,
 
 * [Register the license key in the project](#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](#register-syncfusion-license-key-using-the-npx-command)
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in the project
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in the Project
 
 Register the license key in the `main.ts` file of the Angular project.
 
@@ -44,7 +44,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 >Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key using the npx command
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key using the npx command
 
 Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through npx command in one of the following ways,
 
@@ -53,7 +53,7 @@ Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key throug
 
 >If both the license text file and the environment variable are used for license registration, priority is set to `syncfusion-license.txt` file. If you want to use the environment variable for license registration, then remove the license text file from the application.
 
-### Register the license key with the license file
+### Register the License Key with the License File
 
 The following steps show how to register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key with the license text file.
 
@@ -137,7 +137,7 @@ The following steps show how to set environment variable in different operating 
 
 * Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
 
-### Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in CI services
+### Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services
 
 The following sections show how to use an environment variable in CI services.
 

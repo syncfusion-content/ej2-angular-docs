@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Angular Cypress Testing
 
-This document explains how to perform the E2E and Component testing with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in Angular web applications using Cypress.
+This guide describes how to perform end-to-end (E2E) and component testing with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in Angular web applications using Cypress.
 
-## Cypress
+## What is Cypress?
 
-Cypress is a JavaScript-based End-to-End (E2E) testing framework and a next-generation front-end testing tool designed for modern web applications. Cypress is designed to make testing web applications easier, more efficient, and reliable.
+Cypress is a JavaScript-based E2E testing framework designed for modern web applications. It enables efficient, reliable front-end testing of user interfaces and behavior.
 
-For more information about Cypress, refer to this [documentation](https://docs.cypress.io/guides/overview/why-cypress.html).
+For more information, see the official [Cypress documentation](https://docs.cypress.io/guides/overview/why-cypress.html).
 
-## Integrate Cypress with Angular
+## Integrating Cypress with Angular
 
 To integrate Cypress with Angular, follow the below steps.
 
-1.Create the angular application and add the Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
+1.Create a new Angular application and add the Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
 
 2.Once create the application, run the below command to install the Cypress.
 
@@ -36,20 +36,20 @@ ng add @cypress/schematic
 
 ![Cypress installation](../../common/how-to/images/install-cypress.png)
 
-## Cypress Testing types
+## Cypress Testing Types
 
-Cypress supports two [types of testing](https://docs.cypress.io/guides/core-concepts/testing-types). Users can choose the testing type based on their requirements.
+Cypress supports two [types of testing](https://docs.cypress.io/guides/core-concepts/testing-types).
 
 * [E2E Testing](#cypress-e2e-testing-of-syncfusion-angular-components)
 * [Component Testing](#cypress-component-testing-of-syncfusion-angular-components)
 
-For Cypress testing type comparison, refer to this [documentation](https://docs.cypress.io/guides/core-concepts/testing-types#Testing-Type-Comparison).
+For a comparison of Cypress testing types, see the [documentation](https://docs.cypress.io/guides/core-concepts/testing-types#Testing-Type-Comparison).
 
 ## Cypress E2E Testing of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components 
 
-The following steps explain how to test the Angular DataGrid component using Cypress E2E testing.
+The steps below demonstrate E2E testing of the Angular DataGrid component.
 
-1.Add the following code snippet to test the DataGrid component in the `./cypress/e2e/spec.cy.ts` file.
+1. In `./cypress/e2e/spec.cy.ts`, add the following test code:
 
 {% tabs %}
 {% highlight ts tabtitle="spec.cy.ts" %}
@@ -71,7 +71,7 @@ describe('My First Test', () => {
 {% endhighlight %}
 {% endtabs %}
 
-2.To start the test cases, run the following command.
+2. Start Cypress E2E testing with this command:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -81,11 +81,11 @@ ng e2e
 {% endhighlight %}
 {% endtabs %}
 
-3.This will opens the dashboard. Start the E2E testing and click the `spec.cy.ts` file to run the test cases.
+3. The Cypress dashboard will open. Start E2E testing and select the `spec.cy.ts` file to run the tests.
 
 ![Cypress dashboard](../../common/how-to/images/cypress-e2e.png)
 
-4.Once the test cases are completed, the result will be displayed as follows.
+4. On completion, Cypress displays the result:
 
 ![Cypress test result](../../common/how-to/images/cypress-e2e-result.png)
 
@@ -95,9 +95,8 @@ For more information about Cypress E2E testing, refer to this [documentation](ht
 
 The following steps explain how to test the Angular DataGrid component in [Cypress component testing](https://docs.cypress.io/guides/component-testing/overview).
 
-1.Create a new file `app.component.cy.ts` in the `./src/app` folder. 
-
-2.Then add the below code snippet in the `app.component.cy.ts` file to test the DataGrid component.
+1. Create a new `app.component.cy.ts` file in the `./src/app` folder.
+2. Add the following code:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.cy.ts" %}
@@ -129,15 +128,15 @@ ng e2e
 {% endhighlight %}
 {% endtabs %}
 
-4.This will opens the dashboard. Switch to component testing type and click the `app.component.cy.ts` file to run the test cases.
+4.This will opens the dashboard. Switch to component testing type and select the `app.component.cy.ts` file to run the test cases.
 
 ![Cypress dashboard](../../common/how-to/images/cypress-component.png)
 
-5.Once the test cases are completed, the result will be displayed as follows.
+5. When tests complete, results will be shown:
 
 ![Cypress test result](../../common/how-to/images/cypress-testing.png)
 
-6.To resolve the license banner in the automation browsers, [register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) in the `./cypress/support/component.ts` file as follows.
+6. If a licensing banner appears in automation browsers, [register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) in `./cypress/support/component.ts`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.cy.ts" %}

@@ -12,16 +12,16 @@ domainurl: ##DomainURL##
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application creates the application with the required Syncfusion<sup style="font-size:70%">&reg;</sup> references, namespaces and CDN links for making the development earlier with the Syncfusion<sup style="font-size:70%">&reg;</sup> components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides **Visual Studio Project Templates** for creating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular applications. These templates generate an application with the necessary Syncfusion references, namespaces, and CDN links to accelerate development with Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project templates are available from v17.1.0.47.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project templates are available starting from v17.1.0.47.
 
-The following steps help you to create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application through the Visual Studio:
+Follow these steps to create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application using Visual Studio:
 
-1. Open the Visual Studio 2017 or later.
+1. Open Visual Studio 2017 or later.
 
-2. To create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project, follow either one of the options below:
-  
+2. To create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project, use one of the following options:
+
     **Option 1:**
 
       Choose the **Extension->Syncfusion-> Essential Studio for ASP.NET Core -> Create New Syncfusion Project…** in Visual Studio menu.

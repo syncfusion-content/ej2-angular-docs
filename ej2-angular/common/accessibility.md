@@ -12,23 +12,21 @@ domainurl: ##DomainURL##
 
 ## Accessibility overview
 
-Accessibility in software components involves designing user interfaces that are usable by everyone, including individuals with disabilities. This encompasses elements like ensuring high-contrast text, providing alternative text for images, and ensuring controls are operable via keyboard or assistive technologies.
+Accessibility in software components refers to designing user interfaces that everyone can use effectively, including individuals with disabilities. This encompasses providing high-contrast text, alternative text for images, and ensuring that all controls are operable via keyboard or assistive technologies. Implementing proper accessibility features allows your applications to reach a wider audience and often satisfies legal requirements in many jurisdictions.
 
-## Accessibility standards
-
-A component is considered accessible when it complies with specific standards designed to enhance accessibility.
+## Accessibility Standards
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components meet the following accessibility standards:
 
 - **[ADA](https://www.ada.gov/)**: A law ensuring equal access and opportunities for people with disabilities compared to those without disabilities.
 
-- **[WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/)**: These Web Content Accessibility Guidelines provide standards by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. WCAG 2.2 establishes a framework of accessibility principles and success criteria classified into three levels: A, AA, and AAA.
+- **[WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/)**: The Web Content Accessibility Guidelines provide standards by the World Wide Web Consortium (W3C) that define how to make web content more accessible. WCAG 2.2 establishes a framework of accessibility principles and success criteria classified into three levels: A, AA, and AAA.
 
 - **[Section 508](https://www.section508.gov/)**: Guidelines that ensure electronic and information technology are accessible to people with disabilities, primarily for federal agencies in the United States, based on WCAG.
 
 * [WAI-ARIA](https://www.w3.org/WAI/ARIA/) - WAI-ARIA stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." It is a set of technical specifications and guidelines developed by the World Wide Web Consortium (W3C) as part of the Web Accessibility Initiative (WAI). WAI-ARIA is designed to enhance the accessibility of dynamic web content, particularly web applications and rich internet applications (RIAs), for people with disabilities. WAI-ARIA provides a set of roles, states, and properties that can be added to HTML elements to provide additional context and information about the purpose and behavior of those elements. This can help assistive technologies better understand and interpret web content and interact with web applications.
 
-* [Keyboard navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - It refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
+* [Keyboard Navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - It refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components adhere to these established standards.
 
@@ -60,7 +58,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components come with [p
 
 ### Mobile device support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components are designed to be responsive and touch-friendly, with appropriate touch target sizes and gesture support. This ensures a good user experience on mobile devices while maintaining accessibility for users with disabilities.
 
 ### Keyboard navigation support
 

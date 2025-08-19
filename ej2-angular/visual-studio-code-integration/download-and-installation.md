@@ -18,15 +18,15 @@ The following prerequisites software needs to be installed for the Syncfusion<su
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
- > The minimum version of the Visual Studio Code is 1.38.0 to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Web Extension.
+  > Visual Studio Code version 1.38.0 or later is required to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Web Extension.
 
 * [C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 * [Node.js](https://nodejs.org/en/download/)
 
-## Install through the Visual Studio Code Extensions
+## Installation via Visual Studio Code Extensions
 
-The following steps explain how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extensions from Visual Studio Code Extensions.
+Follow these steps to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extension directly from Visual Studio Code:
 
 1. Open Visual Studio Code.
 
@@ -40,13 +40,13 @@ The following steps explain how to install the Syncfusion<sup style="font-size:7
 
 5. After the installation, reload the Visual Studio Code using the **Reload Required** in Visual Studio Code palette.
 
-6. Now, use the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extensions from the Visual Studio Code palette.
+6. The Syncfusion<sup style="font-size:70%">&reg;</sup> Web extensions are now available via the Visual Studio Code command palette.
 
      ![CreateProjectPalette](images/CreateProjectPalette.png)
 
-## Install from the Visual Studio Code Marketplace
+## Installation via Visual Studio Code Marketplace
 
-The following steps explain how to download Syncfusion<sup style="font-size:70%">&reg;</sup> Web applications from the Visual Studio Code Marketplace and install them.
+To install the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extension from the Visual Studio Code Marketplace:
 
 1. Open the [Syncfusion<sup style="font-size:70%">&reg;</sup> Web Extension](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Web-VSCode-Extensions)
 

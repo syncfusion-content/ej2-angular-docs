@@ -10,18 +10,20 @@ domainurl: ##DomainURL##
 
 # Getting Started with Ionic and Angular
 
-This guide demonstrates how to create a simple Angular 19 application using the `Ionic Framework` and integrate the `Syncfusion Angular UI components` for enhanced functionality and a polished appearance.
+This guide provides a step-by-step walkthrough for creating an Angular application with the `Ionic Framework`, featuring integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components for modern, responsive interfaces.
 
 ## Prerequisites
 
-Before integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an Ionic project with Angular, ensure the following prerequisites are installed on your development machine:
+Before beginning, ensure the following are installed:
 
 * [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * Ionic CLI version `^8.0.0` or later
+* Node.js (latest LTS version is recommended)
+* Angular CLI compatible with your Ionic version
 
 ## Create an Application
 
-To initialize a new project using the command line, execute the following command:
+To set up a new Ionic Angular project, install the Ionic CLI and initialize your application:
 
 ```bash
 npm i -g @ionic/cli
@@ -29,19 +31,19 @@ npm i -g @ionic/cli
 
 > We are utilizing Node.js version 22 and Ionic version 8.0.0 to support Angular 19.
 
-Once your development setup is complete, create a new project using the Ionic CLI by executing this command:
+Once the development setup is complete, create a new project by running:
 
 ```bash
 ionic start syncfusion-angular-ionic blank --type=angular 
 ```
 
-This command generates a new Ionic application in a directory named "syncfusion-angular-ionic" and install the default npm packages necessary for the application.
+This creates an Ionic application in the "syncfusion-angular-ionic" directory with default npm packages.
 
 > Refer to this [getting started guide](https://ionicframework.com/#cli) for Ionic framework installation details.
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
-To integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, run the appropriate command. Below is the command for adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid package:
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid package to your project using the following command:
 
 ```bash
 npm i @syncfusion/ej2-angular-grids --save
@@ -49,7 +51,7 @@ npm i @syncfusion/ej2-angular-grids --save
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Component
 
-After package installation, add the following grid component code snippet in the `~/src/app/home/home.page.ts` file.
+After installation, include the following code in your `~/src/app/home/home.page.ts` file to render the Syncfusion Grid:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -127,9 +129,9 @@ export class HomePage {
 }
 ```
 
-## Adding CSS Reference
+## Adding CSS References
 
-Update `src/global.scss` with the required <sup style="font-size:70%">&reg;</sup> styles for the Grid component:
+To apply the required styles for the Grid component, update `src/global.scss` with the following imports:
 
 {% tabs %}
 {% highlight css tabtitle="~/src/styles.css" %}
@@ -165,10 +167,10 @@ export const routes: Routes = [
 
 ## Running the Application
 
-Finally, use the following command to start the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component will be rendered within the Ionic framework.
+To run the application and view the integrated Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, use the following command:
 
 ```bash
-ionic serve 
+ionic serve
 ```
 
-> For your convenience, we have prepared an [Angular sample with Ionic framework](https://github.com/SyncfusionExamples/ej2-angular-ionic).
+> For additional help, see the [Angular sample with Ionic framework](https://github.com/SyncfusionExamples/ej2-angular-ionic).

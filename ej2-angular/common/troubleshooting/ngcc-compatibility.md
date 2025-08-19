@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Compatibility Issues with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages and Latest Angular CLI
 
-This article addresses potential issues you may encounter when using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components with the latest Angular CLI, offering solutions and insights to improve your development experience.
+This guide addresses potential issues you may encounter when using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components with the latest Angular CLI, offering solutions and insights to improve your development experience.
 
 ## Are Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages compatible with the latest Angular CLI?
 

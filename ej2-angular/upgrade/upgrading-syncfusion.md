@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> regularly releases new volumes every three months, introducing exciting new features and enhancements. Each volume release is followed by a Service Pack release that addresses significant bug fixes found in the initial volume releases.
 
-You can upgrade to the latest version from any currently installed Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+It is possible to upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> version directly from any previously installed version.
 
-Refer to our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)"** for JavaScript – EJ2 to gain insights into “Breaking Changes, Bug Fixes, New Features, and Known Issues” between your current version and the version to which you're upgrading.
+For detailed upgrade procedures and information about breaking changes, bug fixes, new features, and known issues between specific versions, refer to the [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components) for JavaScript – EJ2.
 
 ## Upgrading to the Latest Version
 
-To install the most recent version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2, click on the “Latest Version: {Version}” link located at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
+To install the most recent version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2, select the “Latest Version: {Version}” link available at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
 
 ![license download](images/upgrade3.png)
 
@@ -26,7 +26,7 @@ Alternatively, upgrade to the latest version by downloading and installing the d
 
 It's not necessary to install the Volume release before the Service Pack release. Since Volume and Service Pack releases operate independently, you can directly install the latest version, which includes major bug fixes.
 
-## Upgrade from Trial Version to Licensed Version
+## Upgrading from Trial Version to Licensed Version
 
 To upgrade from a trial version to a fully licensed version, uninstall the trial version and then install the licensed version using the installer available in the [License and Downloads](https://www.syncfusion.com/account/downloads) section of our website.
 

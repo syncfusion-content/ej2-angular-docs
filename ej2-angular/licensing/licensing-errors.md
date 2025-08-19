@@ -170,9 +170,9 @@ If the application is registered with another version’s license key, the follo
 
 * In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration/) for information on registering the license key.
 
-## License key validation errors using the npx command
+## License Key validation errors using the npx command
 
-### Invalid key
+### Invalid Key
 
 If you are using `npx syncfusion-license activate` command with an invalid license key structure, the following console error message will appear in the CI or terminal.
 

@@ -30,11 +30,11 @@ Our 30-day trial can be downloaded in two ways.
 
     ![ej2 trial confirmation](images/trial-confirmation.png)
 
-3. With a trial license, only the latest version’s trial installer can be downloaded.
+3. With a trial license, only the latest version's trial installer can be downloaded.
 
-4. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products?) article.
+4. After downloading, unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 trial installer using either the trial unlock key or your Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credentials. For more information on generating an unlock key, refer to [this article](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products?).
 
-5. Before the trial expires, you can download the trial installer at any time from your registered account’s Trials & Downloads page (See the screenshot below.)
+5. Before the trial expires, you can download the trial installer at any time from your registered account's Trials & Downloads page (See the screenshot below.)
 
     ![trail installer dashboard](images/dashboard.png)
 
@@ -76,7 +76,7 @@ You should initiate an evaluation if you have already obtained our components th
 
     >Note: If you’ve already used the trial products and they haven’t expired, you won’t be able to start the trial for the same product again.
 
-4. After you’ve started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/start-trials) page to get the latest version trial installer. You can generate the [unlock](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) key here at any time before the trial period expires. (See the screenshot below.)
+4. After starting the trial, visit the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/start-trials) page to get the latest version trial installer. You can generate the [unlock](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) key here at any time before the trial period expires. (See the screenshot below.)
 
     ![start trial download installer](images/start-trial-download-installer.png)
 
@@ -84,11 +84,11 @@ You should initiate an evaluation if you have already obtained our components th
 
 ### Download the License Version
 
-1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
+1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products are available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 
 2. You can view all the licenses (both active and expired) associated with your account.
 
-3. Click the Download (element 1 in the screenshot below) button to download the respective product’s installer.
+3. Click the Download (element 1 in the screenshot below) button to download the respective product's installer.
 
 4. The most recent version of the installer will be downloaded from this page.
 

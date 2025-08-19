@@ -14,7 +14,7 @@ This guide provides a step-by-step walkthrough for setting up an Angular project
 
 The Angular CLI is a powerful command-line tool that simplifies the creation, management, and building of Angular applications, enabling a quick start to development.
 
-> Note: This guide supports **Angular 12 to Latest version**. If you’re using Angular 9 or later, Ivy is the default rendering engine. Please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility) for detailed compatibility.
+> Note: This guide supports **Angular 12 to Latest version**. If you're using Angular 9 or later, Ivy is the default rendering engine. Please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility) for detailed compatibility.
 
 ## Prerequisites
 
@@ -83,7 +83,7 @@ ng add @syncfusion/ej2-angular-grids
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:
 
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc), which is Angular’s legacy compilation pipeline.
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
 
@@ -243,7 +243,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-The `ejs-grid` element within the component template has options such as `allowPaging`, `allowSorting`, and `allowFiltering`, which enable respective features in the Grid. Here’s how to configure it in `app.component.ts`:
+The `ejs-grid` element within the component template has options such as `allowPaging`, `allowSorting`, and `allowFiltering`, which enable respective features in the Grid. Here's how to configure it in `app.component.ts`:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

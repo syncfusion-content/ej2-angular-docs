@@ -68,7 +68,7 @@ For using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components ef
 
 #### CSP Sources
 
-The following sources refer to the origins from which resources such as styles, images, fonts are allowed to be loaded and executed on a web page.
+The following sources refer to the origins from which resources such as styles, images and fonts are allowed to be loaded and executed on a web page.
 
 |  Source  |  Description  | Examples  |
 |----------|---------------|-----------|

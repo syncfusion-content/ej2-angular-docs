@@ -41,6 +41,8 @@ Follow these steps to create a new ASP.NET MVC Web application using the Microso
 
 ## Create Angular CLI Application 
 
+Now, create the Angular application that will serve as the frontend:
+
 1. Open the `Developer Command Prompt` from Visual Studio as shown below.
 
    ![Developer Console](images/dev-cmd.png)
@@ -81,9 +83,11 @@ Follow these steps to create a new ASP.NET MVC Web application using the Microso
 {% endhighlight %}
 {% endtabs %}
 
-## Configuring ASP.NET MVC Application 
+## Configuring ASP.NET MVC Application
 
-### For Building Angular Application Using MS Build
+Now, configure the ASP.NET MVC application to integrate with the Angular frontend:
+
+### Automating Angular Build with MS Build
 
 To automate the installation and build process of the Angular application when the MVC application is built, append the MS Build configuration to the end of the `SyncfusionAngularASPNETMVC.csproj` file as illustrated below.
 
@@ -129,7 +133,7 @@ To automate the installation and build process of the Angular application when t
 
 ### Configure MVC Bundle with Angular Production Scripts
 
-To configure the MVC bundle with Angular production script and style files, edit the `App_Start\BundleConfig.cs` file as illustrated in the following code snippet.
+Next, set up the ASP.NET MVC bundling system to include the compiled Angular assets. Edit the `App_Start\BundleConfig.cs` file:
 
 {% tabs %}
 {% highlight c# tabtitle="BundleConfig.cs" %}

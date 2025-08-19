@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-This guide outlines the system requirements necessary for developing, testing, and deploying applications using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components. Adhering to these specifications ensures optimal performance, stability, and compatibility with the Syncfusion<sup style="font-size:70%">&reg;</sup> ecosystem.
+This guide outlines the system requirements necessary for developing, testing, and deploying applications with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components. Meeting these requirements ensures optimal performance, stability, and compatibility within the Syncfusion<sup style="font-size:70%">&reg;</sup> ecosystem.
 
 ## Angular Version
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Angular 12 and later versions, leveraging modern Angular features for enhanced performance and developer experience. To check your installed Angular CLI version, execute the following command in your terminal:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are compatible with Angular 12 and above, leveraging modern features for enhanced performance and developer experience. To check your Angular CLI version, run:
 
 ```bash
 ng version
@@ -22,9 +22,9 @@ ng version
 
 ## Node.js
 
-Node.js is a core dependency for Angular development, powering the Angular CLI and package management via npm. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components require an [active Long-Term Support (LTS) or Maintenance LTS version](https://nodejs.org/en/about/previous-releases) of Node.js.
+Node.js is required for Angular development, powering both the Angular CLI and npm package management. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components require an [active Long-Term Support (LTS) or Maintenance LTS version](https://nodejs.org/en/about/previous-releases) of Node.js.
 
-The latest LTS version is recommended for best performance and security.To install Node.js, download the appropriate installer from [nodejs.org](https://nodejs.org/en). After installation, verify the Node.js and npm versions using:
+For best results, use the latest LTS version. Download Node.js from [nodejs.org](https://nodejs.org/en). After installation, verify Node.js and npm versions with:
 
 ```bash
 node --version
@@ -43,16 +43,16 @@ Alternatively, Angular development can be carried out using any text editor and 
 
 ## Browser Compatibility
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work with modern browsers. For detailed compatibility information, refer to the [browser compatibility guide](./browser).
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed for modern browsers. For details, see the [browser compatibility guide](./browser).
 
 ## Angular Version Compatibility
 
-The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component versions are compatible with different Angular releases:
+The table below shows the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component versions compatible with each Angular release:
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 |-----------------|-----------------------------------------------|
 |[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
-|[ Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
+|[Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
 | [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/)| 21.1.39 |
@@ -68,6 +68,6 @@ The table below shows which Syncfusion<sup style="font-size:70%">&reg;</sup> Ang
 
 - [Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> Components](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion): Instructions for upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> components to the latest version.
 
-- [Setting Up the Development Environment](https://angular.dev/installation#instructions): Official Angular guide on setting up a local development environment.
+- [Setting Up the Development Environment](https://angular.dev/installation#instructions): Official Angular guide for environment setup.
 
 - [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli): Step-by-step instructions to start using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in a project.
