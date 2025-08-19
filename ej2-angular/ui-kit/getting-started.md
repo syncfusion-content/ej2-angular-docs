@@ -10,55 +10,55 @@ domainurl: ##DomainURL##
 
 # Getting Started with Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular
 
-Follow the steps below to get started with Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular. You can begin in one of two ways:
+Follow these steps to get started with the Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular. You can explore the UI blocks in two main ways:
 
 - **Download the App from GitHub**: Get the full free source code and run the app locally to explore the blocks.
-- **View the Online Demo**: Alternatively, you can try out the blocks directly through the online demo to see them in action without needing to download anything.
+- **View the Online Demo**: Explore the UI blocks interactively without downloading anything.
+
+> **Note:** Syncfusion "blocks" are ready-made UI modules such as authentication forms, profile cards, and dashboards, designed for rapid development with Angular.
 
 ## Get Started by Downloading the App from GitHub
 
 ### Step 1: Download and Open the App in Visual Studio Code
 
-Download the app from the GitHub [link](https://github.com/syncfusion/essential-ui-kit-for-angular), and then open the same in Visual Studio Code to start working with it.
+Download the repository from [GitHub](https://github.com/syncfusion/essential-ui-kit-for-angular) and open it in Visual Studio Code.
 
 ![Launching the downloaded app](images/launching-the-downloaded-app.png)
 
 ### Step 2: Open a New Terminal
 
-In Visual Studio Code, go to the **Terminal** menu and select **New Terminal** to open the integrated terminal.
+Open the integrated terminal via **Terminal > New Terminal** in Visual Studio Code.
 
 ![Opening a new terminal](images/opening-a-new-terminal.png)
 
 ### Step 3: Install Dependencies and Run the App
 Run the following commands one after the other in the terminal:
 
-1. **Install dependencies**  
-   Run the command below to install all necessary packages related to the blocks, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, and the sample browser.
+```bash
+npm install
+ng serve
+```
+
+- `npm install` downloads all dependencies listed in **package.json**.
+- `ng serve` builds and hosts the app locally.
 
     ![Installing the required dependencies](images/installing-the-required-dependencies.png)
 
-    This will download and install all the dependencies listed in the **package.json** file.
-
-2. **Serve the App Locally**  
-    Once the dependencies are installed, you can run the app locally by starting the Angular local development server. To do so, run the following command.
-    
     ![Running the Angular development server](images/running-the-angular-development-server.png)
 
-    This command will start the local development server, and you'll see an output in the terminal indicating the app is running. Typically, it will display a local host URL like this:
-
-    ![Local development server running](images/local-development-server-running.png)
-
-    To view the app in your browser, simply **Ctrl + Click** (or **Cmd + Click** on macOS) on the local host URL displayed in the terminal. This will open the app in your default browser, allowing you to interact with the blocks.
+When the terminal displays a localhost URL, **Ctrl + Click** (or **Cmd + Click** on macOS) the link to open the app in your browser and interact with the blocks.
 
 ### Step 4: License Key Requirement
 
 The blocks include several Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components that require an active license key for proper display and usage. To activate the license, refer to the topics below:
 
-#### How to Obtain the License Key
-To obtain the license key, visit the following page: [Syncfusion<sup style="font-size:70%">&reg;</sup> License](https://ej2.syncfusion.com/angular/documentation/licensing/overview).
+#### How to Obtain a License Key
 
-#### How to Register the License Key in the App
-Once you have your license key, add it to the **src/main.ts** file for seamless browsing and usage of the blocks.
+Visit the [Syncfusion<sup style="font-size:70%">&reg;</sup> License Documentation](https://ej2.syncfusion.com/angular/documentation/licensing/overview) to obtain your key.
+
+#### How to Register the License Key
+
+Add your license key in **src/main.ts**:
 
 ```typescript
 import { registerLicense } from '@syncfusion/ej2-base';
@@ -67,8 +67,8 @@ registerLicense('Your-License-Key');
 ```
 Replace **'Your-License-Key'** with the actual license key you received from Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
-By adding the license key, you ensure that the blocks are fully functional and free from licensing issues.
+Registering the license key ensures all features are fully functional and free of licensing issues.
 
 ## Get Started by Viewing the Online Demo
 
-If you prefer a quick demo instead of downloading the app, you can explore the blocks directly through the online demo. Simply visit the official [Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) website to interact with the blocks.
+For a quick preview, explore the blocks directly in the [Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) without installation. This is recommended if you want an overview or inspiration before working locally.

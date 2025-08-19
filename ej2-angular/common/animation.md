@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Animation Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
 **Animations** enhance the user interface by executing a series of frames, resulting in smooth transitions and effects. Syncfusion<sup style="font-size:70%">&reg;</sup>'s [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library enables these animations effectively.
 
@@ -16,7 +16,7 @@ The [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#anima
 
 ## Animation effects
 
-Animation effects are visual changes over time for HTML elements. Various [effects](https://ej2.syncfusion.com/documentation/api/base/effect/#effect) are supported, specified using the [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property.
+Animation effects define how elements visually transform during the animation. Syncfusion provides a variety of built-in [effects](https://ej2.syncfusion.com/documentation/api/base/effect/#effect) that can be specified using the [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property.
 
 Example code utilizing the `FadeOut` and `ZoomOut` animation effects:
 
@@ -32,7 +32,9 @@ Example code utilizing the `FadeOut` and `ZoomOut` animation effects:
   
 {% previewsample "page.domainurl/samples/common/animation-multiple-cs1" %}
 
-## Animation duration
+## Animation Timing Properties
+
+### Duration
 
 The animation [duration](https://ej2.syncfusion.com/documentation/api/base/animation/#duration) defines the total time an animation takes to run, measured in milliseconds.
 
@@ -52,9 +54,9 @@ Example utilizing `5000ms` for animation effects:
   
 {% previewsample "page.domainurl/samples/common/animation-multiple-cs2" %}
 
-## Animation delay
+### Delay
 
-An animation [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) indicates the wait time before an animation initiates, also in milliseconds.
+The animation [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) property specifies the waiting time before an animation begins, also measured in milliseconds.
 
 For example, a `2000ms` delay pauses the animation for 2 seconds before it starts. This is valuable for sequential animations or event-triggered actions.
 

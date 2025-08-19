@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Upgrade Project in Angular Visual studio integration 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular migration add-in for Visual Studio enables you to upgrade an existing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application from one Essential Studio<sup style="font-size:70%">&reg;</sup> version to another. This add-in reduces manual effort during the upgrade process.
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project migration are available from v17.3.0.9.
 
-The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Application** through the **Visual Studio**:
+Follow these steps to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in a Syncfusion Angular application using Visual Studio:
 
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application which uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
+1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application in Visual Studio.
 
-2. To open Migration Wizard, follow either one of the options below:
+2. To launch the Migration Wizard, choose one of the following options:
 
     **Option 1:**
 
@@ -26,7 +26,7 @@ The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&re
 
     ![menu](images/migrate-menu.png)
 
-     > In Visual Studio 2017, you can see the **Syncfusion** menu directly in the Visual Studio menu
+     > In Visual Studio 2017, the **Syncfusion** menu appears directly in the Visual Studio menu.
 
     **Option 2:**
 
@@ -34,9 +34,9 @@ The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&re
 
     ![Context menu](images/migrate-context-menu.png)
 
-3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ANGULAR to migrate.
+3. The **Syncfusion Project Migration** window appears. Select the desired Syncfusion<sup style="font-size:70%">&reg;</sup> Angular version for the upgrade.
 
-    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular versions are loaded from published Syncfusion<sup style="font-size:70%">&reg;</sup> angular NPM packages and it requires the internet connectivity.
+    > Syncfusion<sup style="font-size:70%">&reg;</sup> Angular versions are loaded from published Syncfusion<sup style="font-size:70%">&reg;</sup> angular NPM packages and it requires the internet connectivity.
 
     ![Migration Window](images/migration-window.PNG)
 
@@ -46,11 +46,11 @@ The steps below help you to upgrade the Syncfusion<sup style="font-size:70%">&re
 
 4. Check the **“Enable a backup before migrating** checkbox if you want to take the project backup and choose the location.
 
-5. Once the migration process completed, will get the success message window.
+5. After the migration process completes, a success message window will be displayed.
 
     ![project Success](images/Confirmation-window.PNG)
 
-    if you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process completed
+    If you enabled project backup, the previous version of your project will be saved to the specified backup path after the upgrade.
 
     ![BackupLocation](images/BackupLocation.png)
 

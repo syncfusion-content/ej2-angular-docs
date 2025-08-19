@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Common Installation Errors
 
-This article describes the most common installation errors, as well as the causes and solutions to those errors.
+This guide addresses the most common installation errors, as well as the causes and solutions to those errors.
 
 * Unlocking the license installer using the trial key
 * License has expired
@@ -40,11 +40,11 @@ This article describes the most common installation errors, as well as the cause
 
 **Suggested solution** <br /> You can choose from the options below.
 
-1. You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals).
+1. Renew your subscription through the [renewals page](https://www.syncfusion.com/account/my-renewals).
 
 2. You can get a new license [here](https://www.syncfusion.com/sales/products).
 
-3. You can reach out to our sales team by emailing sales@syncfusion.com.
+3. Contact the sales team at sales@syncfusion.com.
 
 4. You can also extend the 30-day trial period after your trial license has expired.
 
@@ -77,7 +77,7 @@ The following are possible causes of this error:
 
 3. Send an email to clientrelations@syncfusion.com to request a license.
 
-4. You can reach out to our sales team by emailing sales@syncfusion.com.
+4. Contact the sales team at sales@syncfusion.com for assistance.
 
 ## Unable to Install because of Another Installation
 
@@ -89,7 +89,7 @@ The following are possible causes of this error:
 
 **Suggested solution** <br /> Open and kill the msiexec process in the task manager and then continue to install Syncfusion<sup style="font-size:70%">&reg;</sup>. If the problem is still present, restart the computer and try Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
 
-1. Open the Windows Task Manager.
+1. Open Windows Task Manager.
 
 2. Browse the Details tab.
 

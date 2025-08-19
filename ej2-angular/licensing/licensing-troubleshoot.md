@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Is an internet connection required for license validation
 
-No, Internet connection is not required for the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> license validation. The Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
+No, an internet connection is not required for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio license validation. Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is performed offline during application execution. Applications registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on systems without internet access.
 
 ## Upgrade from the trial version after purchasing a license
 
@@ -26,7 +26,7 @@ To upgrade from the trial version, there are two possible solutions:
 
 ## Where can I get a License key
 
-License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or the [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
+License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 
 ![Get Community License](images/get-community-license-key.png)
 
@@ -38,11 +38,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are the **vers
 
 No, the Syncfusion<sup style="font-size:70%">&reg;</sup> license keys won't expire for a particular version and you can continue to use it. So, you won't face any problems on the live site. If you have used the trial key, it will expire in 30 days and we don't recommend using it in production.
 
-> If you upgrade to newer versions of the Syncfusion<sup style="font-size:70%">&reg;</sup> packages, you have to generate new license keys and use them.
+> After upgrading to a newer version of Syncfusion<sup style="font-size:70%">&reg;</sup> packages, generate and apply a new license key for that version.
 
 ## When to generate new license key while upgrading
 
-You don't need to generate and change license keys for minor version upgrades. However, when upgrading from one major version to another major version, you must generate a new license key and update it in your application.
+You don't need to generate or use a new license key for minor version upgrades. However, when upgrading from one major version to another, generate and apply a new license key.
 
 For example,
 * If you are using a version like `25.1.X`, it is important to use the same version for all Syncfusion<sup style="font-size:70%">&reg;</sup> components in your application. The license key generated for version `25.X.XX` can be used. This key can be used across all minor versions within that major version, `v25`. This means you can upgrade all packages to `25.2.X` while still using the same license key.
@@ -94,7 +94,7 @@ It is Essential<sup style="font-size:70%">&reg;</sup> to reactivate the license 
 
 ### License issue due to duplicate Syncfusion<sup style="font-size:70%">&reg;</sup> packages in the application
 
-One of the possible cases on experiencing license issues in your application is due to duplicate packages exists after upgrading packages to next or latest version. To remove the duplicate packages follow the below steps.
+License issues may occur if duplicate packages remain after a version upgrade. To resolve this:
 
 * Delete the `@Syncfusion` folder from `node_modules` and `package-lock.json` file from app `root folder`.
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular and Electron
 
-This guide demonstrates how to build a basic Angular 19 application using a standalone component structure with the Electron framework and integrate `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
+This guide explains how to build a basic Angular 19 application using a standalone component structure with the Electron framework and integrate `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
 
 ## Prerequisites
 
-Before initiating your Angular project, ensure you have the following installed on your machine:
+Before starting the project, ensure the following software is installed:
 
 * Angular version 17 or later
 * TypeScript version 5.4 or later
@@ -24,19 +24,19 @@ If the `Electron CLI` is not installed, refer to the [`Electron package`](https:
 
 ## Set Up Angular Environment
 
-You can follow the [Setting up the local environment and workspace](https://angular.dev/installation#prerequisites) guide.
+Refer to the [Setting up the local environment and workspace](https://angular.dev/installation#prerequisites) guide for Angular setup instructions.
 
-Install the Electron framework by using the following command:
+Install the Electron framework with the following command:
 
 ```bash
 npm install -g electron
 ```
 
->Note: Refer to this [getting started guide](https://electronjs.org/docs/tutorial/installation) to install the Electron framework.
+>Note: See the [getting started guide](https://electronjs.org/docs/tutorial/installation) to learn more about Electron installation.
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. You can explore all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. Explore all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 To install the Grid package, execute the following command:
 
@@ -46,9 +46,9 @@ npm install @syncfusion/ej2-angular-grids@ngcc --save
 npm i @syncfusion/ej2-angular-grids@ngcc --save
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Menu Component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Component
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Menu component into your application, update the template in the `app.component.ts` file by adding the `ejs-menu` element and binding it to the `menuItems` variable.
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, update the template in the `app.component.ts` file by adding the `ejs-grid` element and binding it to the `data` variable.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -120,7 +120,7 @@ export class AppComponent {
 }
 ```
 
-## Adding CSS Reference
+## Adding CSS References
 
 To incorporate the styles for the Grid component, update the `style.css` with the following imports:
 
@@ -136,9 +136,10 @@ To incorporate the styles for the Grid component, update the `style.css` with th
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
+
 ## Create main.js File
 
-Create a `main.js` file in the root directory of your project and add the following code:
+Create a `main.js` file in your project's root directory and add the following code:
 
 ```typescript
 const { app, BrowserWindow } = require('electron');
@@ -153,7 +154,7 @@ win.loadFile(path.join(__dirname, 'dist', 'my-app', 'browser', 'index.html'));
 win.webContents.openDevTools();
 // Emitted when the window is closed.
 win.on('closed', () => {       
-   win = null     
+   win = null;   
   })
 };      
 // This method will be called when Electron finish initialization and is ready to create browser windows.   
@@ -178,14 +179,14 @@ createWindow()
 
 ## Update index.html
 
-In the `/src/index.html` file, modify `<base href="/">` to `<base href="./">`, enabling Electron to locate the Angular files.
+In `/src/index.html`, change `<base href="/">` to `<base href="./">` to ensure Electron locates Angular files correctly.
 
 ## Update package.json
 
-Modify the `package.json` to include the following entries:
+Modify `package.json` to include the following entries:
 
 ```typescript
-"main":"main.js",
+"main": "main.js",
 "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -202,12 +203,12 @@ Modify the `package.json` to include the following entries:
 To launch the application, execute the following command lines. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component will be rendered within the Electron framework:
 
 ```bash
-npm  run electron-build 
- 
-npm  run electron 
+npm run electron-build
+
+npm run electron
 ```
 
->Note: For further reference, we have prepared an [Angular sample with the Electron framework](https://github.com/SyncfusionExamples/ej2-angular-electron).
+>Note: For additional reference, see the [Angular sample with the Electron framework](https://github.com/SyncfusionExamples/ej2-angular-electron).
 
 ## See Also
 

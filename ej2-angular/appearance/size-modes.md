@@ -10,17 +10,26 @@ domainurl: ##DomainURL##
 
 # Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Modern web applications are designed to accommodate various devices, including desktops and mobile, often necessitating distinct layouts or interfaces for optimal viewing on smaller screens. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support two size modes: touch (bigger) and normal. The touch mode enhances mobile device responsiveness by incorporating the `e-bigger` class for improved interaction and visibility.
+Modern web applications need to provide optimal user experiences across a wide range of devices – from large desktop monitors to small mobile screens. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components address this challenge by offering two distinct size modes: **normal** (default) and **touch** (bigger). This flexibility allows developers to create interfaces that are appropriately sized for different interaction methods and screen sizes.
+
+## Understanding Size Modes
+
+Size modes control the physical dimensions and touch targets of UI components:
+
+- **Normal Mode**: Optimized for mouse/keyboard interactions with standard-sized UI elements
+- **Touch Mode**: Provides larger UI elements with increased touch targets for better touch interaction
 
 ## Size Mode for Application
 
-To enable touch mode (bigger) for an entire application, add the `e-bigger` class to the `body` element in the `index.html` file, as shown:
+To apply touch mode (bigger) for an entire application, add the `e-bigger` class to the `body` element in the `index.html` file:
 
 ```html
 <body class="e-bigger">
-    ...
+    <!-- Application content -->
 </body>
 ```
+
+This global approach ensures all Syncfusion components throughout your application render with the touch-optimized larger size.
 
 ## Size Mode for a Component
 

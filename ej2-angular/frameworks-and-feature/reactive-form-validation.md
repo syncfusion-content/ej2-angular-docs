@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Angular Reactive Form Validator
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Component offers built-in Reactive Form validators that facilitate client-side validation of form input components before submission.
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Components provide built-in Reactive Form validators for client-side validation of form input components before submission.
 
 ## Prerequisites
 
 Ensure the following are installed:
 
-- Node.js version 18 or later 
+- Node.js version 18 or later
 - Angular CLI version 17 or later
 - TypeScript version 5.5 or later
 
@@ -42,9 +42,10 @@ Install the Syncfusion<sup style="font-size:70%">&reg;</sup> inputs package (ver
 ```bash
 npm install @syncfusion/ej2-angular-inputs@25.2.7 --save
 ```
+
 ## Supported Validators
 
-Below is the list of available validators:
+The following validators are available:
 
 * Min
 * Max
@@ -213,6 +214,7 @@ Update `src/styles.css` with required Syncfusion<sup style="font-size:70%">&reg;
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
+
 ## Run the Application
 
 Start the application:
@@ -220,6 +222,7 @@ Start the application:
 ```bash
 npm start
 ```
-The form with Syncfusion<sup style="font-size:70%">&reg;</sup> validators will render in the browser.
 
-To see a simple example of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation in action, visit this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).
+The browser will display the form utilizing Syncfusion<sup style="font-size:70%">&reg;</sup> validators for live validation feedback.
+
+To view an interactive example using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation, see this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).
