@@ -10,11 +10,22 @@ domainurl: ##DomainURL##
 
 # Style appearance in Angular TextBox component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
+The Angular TextBox component provides extensive customization options through CSS classes and custom properties. This guide covers how to modify the visual appearance of TextBox elements including wrapper styling, placeholder customization, focus states, and specialized features like password visibility toggles.
 
-## Customizing the appearance of TextBox wrapper element
+## Understanding TextBox CSS Structure
 
-Use the following CSS to customize the appearance of wrapper element.
+The TextBox component uses a hierarchical CSS class structure that allows targeted styling of different component states and elements. The main classes include:
+
+- `.e-input` - Base input element
+- `.e-float-input` - Floating label wrapper
+- `.e-input-group` - Input group container
+- `.e-control-wrapper` - Primary wrapper element
+
+## Customizing the TextBox wrapper element
+
+The wrapper element controls the overall appearance and layout of the TextBox. Use the following approaches to customize its appearance:
+
+### Basic Height and Font Sizing
 
 ```css
 /* To specify height and font size */
@@ -26,7 +37,9 @@ Use the following CSS to customize the appearance of wrapper element.
 
 ## Customizing the TextBox placeholder
 
-Use the following CSS to customize the TextBox placeholder
+Placeholder text can be styled for both floating and static label scenarios:
+
+### Floating Label Customization
 
 ```css
 /* To specify font size and color */
@@ -38,10 +51,11 @@ Use the following CSS to customize the TextBox placeholder
 
 ## Toggle password visibility using eye icon
 
-You can show text or hide text by showing `•` character instead of actual text in angular TextBox by following below steps.
+The TextBox component supports password visibility toggling through icon integration. This feature allows users to show or hide password text by clicking an eye icon.
 
-* Add eye icon using [`addIcon`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method.
-* In the click event of icon added above, toggle the text visibility by changing the `type` of element.
+### Implementation Steps
+
+Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method and handle click events to toggle text visibility by changing the input element's [type](https://ej2.syncfusion.com/react/documentation/api/textbox/#type) attribute.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,3 +68,14 @@ You can show text or hide text by showing `•` character instead of actual text
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/textbox/toggle-password-cs1" %}
+
+## Troubleshooting Common Styling Issues
+
+**Issue**: Custom styles not applying
+**Solution**: Increase CSS specificity or use `!important` sparingly
+
+**Issue**: Floating labels overlapping with custom borders
+**Solution**: Adjust padding and margin values in the `.e-float-input` wrapper
+
+**Issue**: Icons misaligned after height changes
+**Solution**: Update line-height and vertical alignment properties for icon containers

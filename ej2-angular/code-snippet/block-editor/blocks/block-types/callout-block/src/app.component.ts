@@ -17,6 +17,7 @@ export class AppComponent {
     public blocksData: BlockModel[] = [
         {
             type: 'Callout',
+            props:{
             children: [{ 
                 id: 'callout-content',
                 type: 'Paragraph',
@@ -26,6 +27,7 @@ export class AppComponent {
                     content: 'Important information: This is a callout block used to highlight important content.'
                 }]
             }]
+        }
         }
     ];
 

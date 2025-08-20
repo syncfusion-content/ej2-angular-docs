@@ -21,14 +21,14 @@ The Block Editor can be localized to any culture by defining the text of the Blo
 |`heading2`|Heading 2|
 |`heading3`|Heading 3|
 |`heading4`|Heading 4|
-|`toggleParagraph`|Toggle Paragraph|
-|`toggleHeading1`|Toggle Heading 1|
-|`toggleHeading2`|Toggle Heading 2|
-|`toggleHeading3`|Toggle Heading 3|
-|`toggleHeading4`|Toggle Heading 4|
+|`collapsibleParagraph`|Collapsible Paragraph|
+|`collapsibleHeading1`|Collapsible Heading 1|
+|`collapsibleHeading2`|Collapsible Heading 2|
+|`collapsibleHeading3`|Collapsible Heading 3|
+|`collapsibleHeading4`|Collapsible Heading 4|
 |`bulletList`|Add item|
 |`numberedList`|Add item|
-|`checkList`|Todo|
+|`checklist`|Todo|
 |`callout`|Write a callout|
 |`addIconTooltip`|Click to insert below|
 |`dragIconTooltipActionMenu`|Click to open|
