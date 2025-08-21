@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about templates with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about Appearance with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # Appearance in Angular AI AssistView component
 
-## Setting width
+The Syncfusion AI AssistView for Angular allows for customization of its dimensions and overall look and feel. This can be achieved by setting the component's width and height or by applying custom CSS styles.
 
-You can use the [width](../api/ai-assistview#width) property to set the width of the AI AssistView. The default value is `100%`.
+## Setting Component Width
+
+The [width](../api/ai-assistview/#width) property allows you to define the width of the AI AssistView container. You can set this value as a string, using either pixels (e.g., `"500px"`) or a percentage (e.g., `"50%"`). By default, the width is set to `100%`, allowing it to fill its parent container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,9 +28,9 @@ You can use the [width](../api/ai-assistview#width) property to set the width of
 
 {% previewsample "page.domainurl/samples/ai-assistview/appearance/width" %}
 
-## Setting height
+## Setting Component Height
 
-You can use the [height](../api/ai-assistview#height) property to set the height of the AI AssistView. The default value is `100%`.
+The [height](../api/ai-assistview/#height) property allows you to define the height of the AI AssistView container. This value can be a string, specified in pixels (e.g., `"600px"`) or as a percentage (e.g., `"100%"`). The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,9 +44,9 @@ You can use the [height](../api/ai-assistview#height) property to set the height
 
 {% previewsample "page.domainurl/samples/ai-assistview/appearance/height" %}
 
-## Cssclass
+## Applying Custom CSS Styles
 
-You can customize the appearance of the AI AssistView component by using the [cssClass](../api/ai-assistview#cssclass) property.
+For more advanced style customizations, you can use the [cssClass](../api/ai-assistview/#cssclass)  property to apply one or more custom CSS classes to the AI AssistView component's root element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

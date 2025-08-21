@@ -3813,7 +3813,7 @@ export class AppComponent {
 
 The [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerycellinfo) event is triggered for each cell while exporting the Gantt component to a PDF file. This event allows customization of the PDF content at the cell level during export.
 
-The `pdfQueryCellInfo` event provides an argument of type [PdfExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) with the following properties:
+The `pdfQueryCellInfo` event provides an argument of type [PdfQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) with the following properties:
 
 | **Property** | **Type** | **Description** |
 |--------------|----------|-----------------|

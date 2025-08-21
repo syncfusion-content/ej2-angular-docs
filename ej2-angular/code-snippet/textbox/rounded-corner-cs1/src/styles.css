@@ -5,3 +5,19 @@
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.e-outline.e-input-group.e-control-wrapper, 
+.e-outline.e-input-group, 
+.e-outline.e-input-group:not(.e-float-icon-left), 
+.e-outline.e-float-input, 
+.e-outline.e-float-input.e-control-wrapper, 
+.e-outline.e-input-group:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-success:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-warning:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-error:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-control-wrapper:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), 
+.e-outline.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+  border-radius: 20px
+}

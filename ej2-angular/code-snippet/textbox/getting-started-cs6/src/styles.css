@@ -5,3 +5,12 @@
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.e-input-group.e-error input.e-input, 
+.e-input-group.e-control-wrapper.e-error input.e-input { /* csslint allow: adjoining-classes */
+  color: #f44336;
+}
+
+.e-float-input.e-error input { /* csslint allow: adjoining-classes */
+  color: #f44336;
+}

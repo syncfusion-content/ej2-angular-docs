@@ -5,3 +5,43 @@
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.e-input-group-icon.e-input-popup-date:before { /* csslint allow: adjoining-classes */
+  content: "";
+}
+
+.e-input-group-icon.e-input-up:before { /* csslint allow: adjoining-classes */
+  content: '\e85e';
+}
+
+.e-input-group-icon.e-input-down:before { /* csslint allow: adjoining-classes */
+  content: "";
+}
+
+.e-input-group-icon.e-input-plus:before { /* csslint allow: adjoining-classes */
+  content: '\e7ba';
+}
+
+.e-input-group-icon.e-input-minus:before { /* csslint allow: adjoining-classes */
+  content: '\e814';
+}
+
+.e-input-group-icon.e-input-date:before { /* csslint allow: adjoining-classes */
+  content: "";
+}
+
+.e-input-group-icon.e-input-left:before { /* csslint allow: adjoining-classes */
+  content: '\e904';
+}
+
+.e-input-group-icon.e-input-right:before { /* csslint allow: adjoining-classes */
+  content: '\e913';
+}
+
+.e-input-group-icon.e-input-reload:before { /* csslint allow: adjoining-classes */
+  content: '\e837';
+}
+
+.e-input-group-icon.e-input-search:before { /* csslint allow: adjoining-classes */
+  content: '\e806';
+}

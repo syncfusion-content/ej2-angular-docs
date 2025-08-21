@@ -1,27 +1,27 @@
 ---
 layout: post
 title: Form Validation in Angular Rich Text editor component | Syncfusion
-description: Learn here all about Form Validation in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to Integrate and Validate the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Form Validation 
+control: Form Validation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Form Validation in Angular Rich Text Editor Component
 
-The Rich Text Editor supports both the reactive and template-driven form-building technologies.
+The Syncfusion Angular Rich Text Editor supports both template-driven and reactive forms, enabling seamless integration with Angular’s form-building technologies. It allows for two-way data binding, validation, and dynamic control over enabling or disabling the editor, making it ideal for capturing and managing rich text content within forms.
 
 ## Template-Driven forms
 
-The template-drive forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
+Template-driven forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 
 For more details about template-driven
 forms, refer to:<https://angular.io/guide/forms#template-driven-forms>.
 
 Mention the `name` attribute to Rich Text Editor element that can be used to identify the form element. To register a Rich Text Editor element to ngForm, give the ngModel to it. So, the FormsModule will automatically detect the Rich Text Editor as a form element. After that, the Rich Text Editor value will be selected based on the ngModel value.
 
-The following example demonstrates how to achieve a two-way data binding.
+The following example demonstrates two-way data binding with a template-driven form:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +37,7 @@ The following example demonstrates how to achieve a two-way data binding.
 
 ## Reactive forms
 
-The reactive forms use the reactive model-driven technique to handle form data between the component and view. So, it is called as `model-driven` forms. It listens the form data changes between App component and view also returns the valid states and values of form elements.
+Reactive forms use the reactive model-driven technique to handle form data between the component and view. So, it is called as `model-driven` forms. It listens the form data changes between App component and view also returns the valid states and values of form elements.
 
 For more details about Reactive Forms, refer to: <https://angular.io/guide/reactive-forms>.
 
@@ -59,7 +59,7 @@ The following example demonstrates how to bind the Syncfusion Rich Text Editor t
 
 ## Disabling the Rich Text Editor Component in reactive forms (Angular 15+)
 
-In Angular 15 and later versions, you can dynamically enable or disable the Syncfusion Rich Text Editor when using Reactive Forms. This is particularly useful when the editor’s availability depends on user actions, form validation states, or other conditions.
+In Angular 15 and later versions, you can dynamically enable or disable the Syncfusion Rich Text Editor when using Reactive Forms. This is particularly useful when the editor's availability depends on user actions, form validation states, or other conditions.
 
 ### Managing the disabled state
 

@@ -33,7 +33,7 @@ export class AppComponent {
         let element1: HTMLInputElement = document.getElementById('textbox-icon') as HTMLInputElement;
         Input.createInput ({
             element: element1,
-            buttons: ['e-input-group-icon e-input-down'],
+            buttons: ['e-icons e-input-down'],
             properties: {
                 placeholder:'Enter Value'
             }

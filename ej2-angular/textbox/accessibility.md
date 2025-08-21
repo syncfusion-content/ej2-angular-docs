@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular TextBox component
 
-The TextBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The TextBox component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the TextBox component is outlined below.
 
@@ -38,16 +38,31 @@ The accessibility compliance for the TextBox component is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
+## Keyboard navigation
+
+The TextBox component supports keyboard navigation to enhance accessibility for users who rely on keyboard input. The following keyboard shortcuts are available:
+
+| **Keys** | **Description** |
+| --- | --- |
+| <kbd>Tab</kbd> | Moves focus to the TextBox component. |
+| <kbd>Shift + Tab</kbd> | Moves focus to the previous focusable element. |
+| <kbd>Home</kbd> | Moves the cursor to the beginning of the text. |
+| <kbd>End</kbd> | Moves the cursor to the end of the text. |
+| <kbd>Ctrl + A</kbd> | Selects all text in the TextBox. |
+| <kbd>Arrow keys</kbd> | Moves the cursor left or right within the text. |
+
 ## WAI-ARIA attributes
 
-The TextBox is characterized with complete ARIA Accessibility support that helps to access through the on-screen readers and other assistive technology devices. This component is designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox).
+The TextBox component provides comprehensive ARIA accessibility support that enables access through screen readers and other assistive technology devices. This component is designed with reference to the guidelines document provided in [WAI-ARIA Accessibility Practices](https://www.w3.org/TR/wai-aria/#textbox).
 
-The TextBox uses the `TextBox` role and following ARIA properties for its element based on its state.
+The TextBox uses the `textbox` role and the following ARIA properties for its element based on its state:
 
 | **Property** | **Functionality** |
 | --- | --- |
-| aria-placeholder | The `aria-placeholder` is a short hint to help the users with data entry when the TextBox has no value. |
-| aria-labelledby | The `aria-labelledby` property indicates the floating label element of the TextBox. |
+| aria-labelledby | Indicates the floating label element that describes the TextBox. |
+| aria-describedby | References additional descriptive text associated with the TextBox, such as help text or error messages. |
+| aria-invalid | Indicates the current validation state of the TextBox input. |
+| aria-disabled | Indicates whether the TextBox is disabled and cannot receive user input. |
 
 ## Ensuring accessibility
 

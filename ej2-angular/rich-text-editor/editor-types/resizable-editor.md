@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizable Editor in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Resizable Editor in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to enable and customize the Resizable Editor in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Resizable Editor
 documentation: ug
@@ -14,7 +14,7 @@ The resizable editor feature allows dynamic resizing of the editor. Enable or di
 
 >To use the Resizable feature, inject `ResizeService` in the configure section.
 
-The following sample demonstrates the resizable feature.
+The following sample demonstrates enabling the resizable feature:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,7 +59,7 @@ For example, add the following to the `app.component.css` file:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/rename-image-cs1" %}
 
-## See also
+## See Also
 
 * [Working with IFrame Editing Mode](./iframe)
 * [Using the Markdown Editor](../../markdown-editor/getting-started)

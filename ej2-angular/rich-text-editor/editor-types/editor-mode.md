@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Editor mode in Angular Rich text editor component | Syncfusion
-description: Learn here all about Editor mode in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Editor mode in Angular Rich Text Editor component | Syncfusion
+description: Learn here all about Editor mode in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Editor mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editor Mode in Angular Rich text editor component
+# Editor Modes in Angular Rich Text Editor Component
 
-The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
+The Rich Text Editor component allows you to create and edit content, returning it as either valid HTML or Markdown (MD). It supports the following two editing formats:
 
 * HTML editor
 * Markdown editor
 
-## HTML editor
+## HTML Editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property as `HTML`.
+HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor will return valid HTML markup. To explicitly set this mode, set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property as `HTML`.
 
 >To use HTML editing feature, inject `HtmlEditorService` in the provider section.
 
@@ -61,23 +61,23 @@ export class AppComponent  {
 
 ```
 
-## IFrame editor
+## IFrame Editor
 
 The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
 
 For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe) documentation.
 
-## Markdown editor
+## Markdown Editor
 
-Set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
+To create or edit content in Markdown format, set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property value as `Markdown`.
 
 The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
 
-* The Supported Tags are  `h6`,`h5`,`h4`,`h3`,`h2`,`h1`,`blockquote`,`pre`,`p`,`ol`,`ul`.
+* The Supported Tags are `h6`, `h5`, `h4`, `h3`, `h2`, `h1`, `blockquote`, `pre`, `p`, `ol`, `ul`.
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-For further details on Markdown editing, refer to the [`Markdown`](../../markdown-editor/getting-started)
+For further details on Markdown editing, refer to the [Markdown](../../markdown-editor/getting-started)
 
 ```typescript
 
@@ -114,6 +114,6 @@ export class AppComponent  {
 
 ```
 
-## See also
+## See Also
 
 * [Markdown Editor](https://ej2.syncfusion.com/angular/documentation/markdown-editor/getting-started)

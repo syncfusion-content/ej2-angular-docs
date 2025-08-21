@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Chat UI component
+# Accessibility in Angular Chat UI Component
 
 The Chat UI component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -38,43 +38,47 @@ The accessibility compliance for the Chat UI component is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-## WAI-ARIA attributes
+## WAI-ARIA Attributes
 
-The following ARIA attributes are used in the Chat UI component:
+The following ARIA attributes are used in the Chat UI component to provide semantic meaning and improve accessibility for screen reader users.
 
-| Attributes | Purpose |
+| Attribute | Purpose |
 | ------------ | ----------------------- |
-| `role=button` | Indicates that the element is clickable and triggers an action when activated by the user. |
-| `role=toolbar` | Specifies that the element is a toolbar. |
-| `aria-label` | Defines a string value that labels an interactive element for accessibility. |
-| `aria-orientation` | Specifies the orientation of the toolbar. |
-| `aria-disabled` | Indicates whether the toolbar or element is currently disabled and not interactive. |
-| `aria-multiline` | Indicates that a textbox accepts multiple lines of input or only a single line. |
+| `role=button` | Indicates that an element, such as a toolbar icon, is clickable and triggers an action. |
+| `role=toolbar` | Specifies that a container element holds a set of interactive controls, defining it as a toolbar. |
+| `aria-label` | Provides an accessible name for interactive elements, such as toolbar buttons, when a visible label is not present. |
+| `aria-orientation` | Specifies the orientation of the toolbar (horizontal or vertical) to assistive technologies. |
+| `aria-disabled` | Indicates that a toolbar or element is currently non-interactive, preventing user interaction. |
+| `aria-multiline` | Communicates to assistive technologies whether the chat input textbox accepts single or multiple lines of text. |
 
-## Keyboard interaction
+## Keyboard Interaction
 
-The following keyboard shortcuts are supported by the Chat UI component.
+The following keyboard shortcuts are supported by the Chat UI component for efficient navigation and interaction.
 
-| **Press** | **To do this** |
+| Press | To do this |
 | --- | --- |
-| <kbd>Enter</kbd> | Select the focused item or send a message when the input is focused. |
+| <kbd>Enter</kbd> | Selects the focused item or sends a message when the input is focused. |
 | <kbd>Tab</kbd> | Moves focus forward through the interactive elements. |
-| <kbd>Shift + Tab</kbd> | Moves focus backward through the interactive elements. |
-| <kbd>Page Up</kbd> | Scroll up through chat history. |
-| <kbd>Page Down</kbd> | Scroll down through chat history. |
-| <kbd>Ctrl + Home</kbd> | Scroll to the first message. |
-| <kbd>Ctrl + End</kbd> | Scroll to the most recent message. |
-<b>Chat UI Toolbars</b>||
-| <kbd>Left Arrow</kbd> | Focuses the previous toolbar element.  |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Moves focus backward through the interactive elements. |
+| <kbd>Page Up</kbd> | Scrolls up through the chat history. |
+| <kbd>Page Down</kbd> | Scrolls down through the chat history. |
+| <kbd>Ctrl</kbd> + <kbd>Home</kbd> | Scrolls to the first message in the chat view. |
+| <kbd>Ctrl</kbd> + <kbd>End</kbd> | Scrolls to the most recent message in the chat view. |
+
+**Chat UI Toolbars**
+
+| Press | To do this |
+| --- | --- |
+| <kbd>Left Arrow</kbd> | Focuses the previous toolbar element. |
 | <kbd>Right Arrow</kbd> | Focuses the next toolbar element. |
-| <kbd>Enter / Space</kbd> | Select the focused item or activate the selected option. |
-| <kbd>Home</kbd> | Moves focus to the first toolbar element. |
-| <kbd>End</kbd> | Moves focus to the last toolbar element. |
+| <kbd>Enter</kbd> or <kbd>Space</kbd> | Activates the focused toolbar button. |
+| <kbd>Home</kbd> | Moves focus to the first element in the toolbar. |
+| <kbd>End</kbd> | Moves focus to the last element in the toolbar. |
 
-## Ensuring accessibility
+## Ensuring Accessibility
 
-The Chat UI component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Chat UI component's accessibility levels are ensured by running it through automated testing using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools. This process helps us identify and address potential accessibility issues, ensuring that the component provides an inclusive experience for all users.
 
-## See also
+## See Also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)
+*   [Accessibility in Syncfusion Components](../common/accessibility)
