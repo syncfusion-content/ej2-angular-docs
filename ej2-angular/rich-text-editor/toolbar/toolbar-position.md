@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Toolbar position in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar Position in Angular Rich Text Editor component | Syncfusion
+description: Learn how to configure the Toolbar Position in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Toolbar 
+control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar position in Angular Rich Text Editor component
+# Toolbar Position in Angular Rich Text Editor component
 
-The Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#position) field in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/) property. The available positions are:
+The Angular Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#position) field in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/) property. The available positions are:
 
 1. Top 
 2. Bottom
@@ -21,7 +21,7 @@ The Rich Text Editor allows you to position the toolbar at the top or bottom of 
 
 By default, the toolbar is displayed at the top of the editor, making all formatting and editing tools immediately accessible above the content.
 
-To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#position) property in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
+To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#position) property in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

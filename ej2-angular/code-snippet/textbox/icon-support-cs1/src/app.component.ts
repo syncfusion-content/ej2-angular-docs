@@ -10,7 +10,7 @@ import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs'
 
 export class AppComponent {
     @ViewChild('textbox')
-    public textboxObj: TextBoxComponent;
+    public textboxObj!: TextBoxComponent;
 
     public onCreate(args: any) {
         (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');

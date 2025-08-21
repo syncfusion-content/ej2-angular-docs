@@ -10,15 +10,19 @@ domainurl: ##DomainURL##
 
 # Sizing in Angular TextBox component
 
-You can render the TextBox in three different sizes.
+The TextBox component supports three distinct sizing options to accommodate different design requirements and user interface contexts. Each size variant maintains consistent functionality while providing visual flexibility for various application layouts.
 
 Property     | Description
 ------------ | -------------
   Normal     | By default, the TextBox is rendered with normal size.
-  Small      | You need to add `e-small` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to render the TextBox in smaller size
-  Bigger     | You need to add `e-bigger` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to render the TextBox in bigger size
+  Small      | Add the `e-small` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to render the TextBox in smaller size.
+  Large      | Add the `e-bigger` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to render the TextBox in larger size.
 
->Note: You can customize the styles of the TextBox by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property. This property allows you to add a custom class to the TextBox, which can then be used to apply your own styling to the component
+## Implementation
+
+Use the appropriate CSS class through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to achieve the desired TextBox size. The small variant works well in compact interfaces or dense data entry forms, while the large variant provides better accessibility and prominence in primary input scenarios.
+
+>Note: Customize the TextBox appearance further by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property. This property allows adding custom classes to the TextBox for applying additional styling to meet specific design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

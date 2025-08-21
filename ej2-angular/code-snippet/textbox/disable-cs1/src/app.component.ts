@@ -17,6 +17,7 @@ imports: [
 standalone: true,
     selector: 'app-container',
     styleUrls: ['./index.css'],
+    encapsulation:ViewEncapsulation.None,
     template: `<div class="multiline">
                 <ejs-textbox id='default' [multiline]='true' floatLabelType='Auto' placeholder='Enter your address' ></ejs-textbox>
                </div>
