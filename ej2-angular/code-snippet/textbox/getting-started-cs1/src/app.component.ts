@@ -28,17 +28,17 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('textbox')
-    public textboxObj: TextBoxComponent;
+    public textboxObj!: TextBoxComponent;
     @ViewChild('textbox1')
-    public textboxObj1: TextBoxComponent;
+    public textboxObj1!: TextBoxComponent;
     @ViewChild('textbox2')
-    public textboxObj2: TextBoxComponent;
+    public textboxObj2!: TextBoxComponent;
     @ViewChild('textbox3')
-    public textboxObj3: TextBoxComponent;
+    public textboxObj3!: TextBoxComponent;
     @ViewChild('textbox4')
-    public textboxObj4: TextBoxComponent;
+    public textboxObj4!: TextBoxComponent;
     @ViewChild('textbox5')
-    public textboxObj5: TextBoxComponent;
+    public textboxObj5!: TextBoxComponent;
 
     public onCreate(args: any) {
         (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');

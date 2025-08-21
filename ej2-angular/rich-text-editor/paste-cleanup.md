@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Paste cleanup in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Paste cleanup in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in Angular Rich Text Editor component | Syncfusion
+description: Learn how to configure  Paste Cleanup in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Paste cleanup 
+control: Paste Cleanup
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Paste Cleanup in Angular Rich Text Editor Component
 
-The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
+The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/pasteCleanupSettingsModel/)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 
 | API | Description | Default Value | Type |
 |:----------------:|:---------:|:-----------------------------:|:---------:|
@@ -32,13 +32,13 @@ When `prompt` is set to true, pasting the content in the editor will open a dial
 
 > When `prompt` value is set true, the API properties [plainText](#plain-text) and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
 
-## How to paste as plain text
+## Plain text pasting
 
 Setting `plainText` to true converts the copied content to plain text by removing all HTML tags and styles. Only the plain text is pasted into the editor.
 
 >When `plainText` is set to true, set `prompt` to false. The `keepFormat` property will not be considered.
 
-## Keep format option
+## Keep format
 
 When `keepFormat` is set to true, the copied content maintains all style formatting allowed in the `allowedStyleProps` when pasted into the editor.
 
@@ -46,13 +46,13 @@ If `keepFormat` is set to false, all styles in the copied content are removed, r
 
 >When `keepFormat` is set to true, set both `prompt` and `plainText` to false.
 
-## Cleaning formatting during paste
+## Clean format
 
 Setting `cleanFormat` to true removes all applied styles from the pasted content while retaining all other HTML tags in the editor.
 
 >When `cleanFormat` is set to true, set `prompt`, `plainText`, and `keepFormat` to false.
 
-## Denied tags during paste
+## Denied tags
 
 When `deniedTags` values are set, the specified tags will be removed from the pasted content. For example,
 
@@ -60,7 +60,7 @@ When `deniedTags` values are set, the specified tags will be removed from the pa
 * `'a[!href]'`: Removes anchor tags without the 'href' attribute.
 * `'a[href, target]'`: Removes anchor tags with both 'href' and 'target' attributes.
 
-## Denied attributes during paste
+## Denied attributes
 
 When `deniedAttrs` values are set, the specified attributes will be removed from all tags in the pasted content. For example,
 
@@ -122,9 +122,9 @@ export class AppComponent implements AfterViewInit {
 
 ```
 
-## Customization of pasted content
+## Customizing pasted content
 
-The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the `afterPasteCleanUp` event, users can exercise precise control over formatting and content modifications after the paste action is executed.
+The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [afterPasteCleanUp](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#afterpastecleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
 
 In the following example, the `afterPasteCleanUp` event is configured to remove images from the copied content. To understand this feature better, try pasting content that includes an image into the editor.
 

@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Feature modules with Angular Rich text editor component | Syncfusion
-description:  Checkout and learn about Feature modules with Angular Rich text editor component of Syncfusion Essential JS 2 and more details.
+title: Feature Modules with Angular Rich Text Editor component | Syncfusion
+description: Learn about feature modules in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Modules 
+control: Modules
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in Angular Rich Text Editor component
+# Modules in Angular Rich Text Editor
 
-The Angular Rich Text Editor component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
+The Angular Rich Text Editor employs a modular architecture, allowing selective inclusion of features to optimize performance and customize functionality. This approach reduces bundle size and enhances flexibility for developers adapting the editor to specific use cases.
 
-## What is a module in Angular Rich Text Editor?
+## What are modules in Angular Rich Text Editor?
 
-In the Angular Rich Text Editor, a module refers to a self-contained feature or functionality that can be selectively enabled or disabled. These modules are provided as part of the @syncfusion/ej2-angular-richtexteditor package and can be injected to extend the editor's capabilities.
+Modules in the Angular Rich Text Editor are self-contained features that can be enabled or disabled based on application requirements. These modules, available in the `@syncfusion/ej2-angular-richtexteditor` package, can be injected to extend and enhance the editor's functionality.
 
 For example, modules such as `Toolbar`, `Link`, `Image`, `HtmlEditor`, and `QuickToolbar` enable specific tools and behavior in the Rich Text Editor interface.
 
 ## How to import and inject modules
 
-To use a module in the Angular Rich Text Editor, you must:
+To utilize a module, in the Angular Rich Text Editor, you must:
 
-* Import the required module from the Syncfusion package.
+* Import the required module from the `@syncfusion/ej2-angular-richtexteditor` package
 
-* Inject it using the providers array in the @Component decorator.
+* Inject it using the `providers` array in the `@Component` decorator.
 
-The following example demonstrates how to import and inject modules.
+The following example demonstrates importing and injecting key modules:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,6 +41,8 @@ The following example demonstrates how to import and inject modules.
 {% previewsample "page.domainurl/samples/rich-text-editor/module-inject" %}
 
 ## Available modules in Rich Text Editor
+
+The following table lists available modules, grouped by functionality, with their descriptions:
 
 | Module | Description |
 |------|-------------|

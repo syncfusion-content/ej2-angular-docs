@@ -1,22 +1,40 @@
 ---
 layout: post
-title: Multiline in Angular TextBox component | Syncfusion
-description: Learn here all about Multiline in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
+title: Multiline TextBox in Angular TextBox component | Syncfusion
+description: Learn how to create and configure multiline TextBox in Syncfusion Angular TextBox component with floating labels, auto-resizing, character counting, and more.
 platform: ej2-angular
 control: Multiline 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiline in Angular TextBox component
+# Multiline TextBox in Angular TextBox component
 
-This feature allows the TextBox to accept one or more lines of text like address, description, comments, and more.
+The multiline TextBox feature transforms the standard single-line input into a versatile text area that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, feedback, and detailed user input where space and formatting flexibility are required.
+
+## Key Features Overview
+
+The multiline TextBox provides several enhanced capabilities:
+- **Multi-line text input**: Accept paragraphs and formatted text content
+- **Auto-resizing**: Automatic height adjustment based on content
+- **Manual resizing**: User-controlled textarea dimensions
+- **Character limits**: Built-in text length validation
+- **Character counting**: Real-time character count display
+
+## Prerequisites
+
+Before implementing multiline TextBox, ensure the TextBox module is imported and configured in the Angular application.
 
 ## Create multiline TextBox
 
-You can convert the default TextBox into the multiline TextBox by setting the [multiline](https://ej2.syncfusion.com/angular/documentation/api/textbox/#multiline) API value as true or pass HTML5 textarea as element to the TextBox.
+Transform the default TextBox into a multiline TextBox using one of two approaches:
 
-> The multiline TextBox allows you to resize it in vertical direction alone.
+1. **API Configuration**: Set the [multiline](https://ej2.syncfusion.com/angular/documentation/api/textbox/#multiline) property to `true`
+2. **HTML Element**: Pass an HTML5 textarea element directly to the TextBox component
+
+Both methods create a textarea that supports multiple lines of text input with consistent styling and behavior.
+
+> The multiline TextBox allows vertical resizing by default, enabling users to adjust the input area height as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,25 +48,15 @@ You can convert the default TextBox into the multiline TextBox by setting the [m
   
 {% previewsample "page.domainurl/samples/textbox/textarea-cs1" %}
 
-## Implementing floating label
-
-You can achieve the floating label behavior in the multiline TextBox by setting [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/#floatlabeltype) as 'Auto'. The placeholder text act as floating label to the multiline TextBox. You can provide the placeholder text to the multiline TextBox either by using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/textbox/#placeholder) property or placeholder attribute.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/float-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/float-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/textbox/float-cs1" %}
-
 ## Auto resizing
 
-By default, you can manually resize the multiline TextBox. But you can also create an `auto resizing` multiline TextBox with both the initial and dynamic value change. It can be done by calculating the height of the textarea in the created event for initial value update and in the input event for dynamic value update of the auto resize multiline TextBox, as explained in the following code sample.
+Create a dynamic multiline TextBox that automatically adjusts its height based on content length. This feature eliminates the need for manual resizing and provides a seamless user experience for varying text lengths.
+
+Implementation requires calculating the textarea height during two key events:
+- **Created event**: Sets initial height based on existing content
+- **Input event**: Dynamically updates height as users type or delete text
+
+This approach ensures the textarea expands and contracts smoothly, accommodating both initial values and real-time content changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,16 +72,24 @@ By default, you can manually resize the multiline TextBox. But you can also crea
 
 ## Disable resizing
 
-By default, the multiline TextBox is rendered with resizable. You can disable the resize of the multiline TextBox by applying the following CSS styles.
+Prevent users from manually resizing the multiline TextBox by applying CSS styles that disable the resize functionality. This approach maintains consistent layout design and prevents potential UI disruption.
+
+Apply the following CSS styles to remove resize handles and lock the textarea dimensions:
 
 ```CSS
-    textarea.e-input,
-    .e-float-input textarea,
-    .e-float-input.e-control-wrapper textarea,
-    .e-input-group textarea,
-    .e-input-group.e-control-wrapper textarea {
-        resize: none;
-    }
+textarea.e-input, 
+.e-input-group textarea, 
+.e-input-group textarea.e-input, 
+.e-input-group.e-input-focus textarea, 
+.e-input-group.e-input-focus textarea.e-input, 
+.e-input-group.e-control-wrapper textarea, 
+.e-input-group.e-control-wrapper.e-input-focus textarea, 
+.e-input-group.e-control-wrapper textarea.e-input, 
+.e-input-group.e-control-wrapper.e-input-focus textarea.e-input, 
+.e-float-input textarea, 
+.e-float-input.e-control-wrapper textarea {
+    resize: none;
+}
 ```
 
 {% tabs %}
@@ -82,7 +98,7 @@ By default, the multiline TextBox is rendered with resizable. You can disable th
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/disable-cs1/src/main.ts %}
+{% include code-snippet/textbox/disable-cs1/src/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,7 +106,26 @@ By default, the multiline TextBox is rendered with resizable. You can disable th
 
 ## Limit the text length
 
-By default, the text length of the multiline TextBox is unlimited. You can limit the text length by setting the `maxLength` attribute using the [addAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addattributes) method.
+Control text input length by implementing character limits on the multiline TextBox. This feature helps maintain data consistency and prevents excessive input that might impact performance or storage requirements.
+
+### Setting character limits
+
+Set the maximum character limit using the `maxLength` attribute through the [addAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addattributes) method. The TextBox automatically prevents additional input once the limit is reached.
+
+```typescript
+// Add maxLength attribute to limit input to 100 characters
+this.textboxObject.addAttributes({ maxLength: '100' });
+```
+
+### Removing character limits
+
+Use the [`removeAttribute`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#removeattributes) method to dynamically remove character restrictions when unlimited text input is required. This provides flexibility for conditional input scenarios.
+
+```typescript
+// Remove maxLength restriction to allow unlimited input
+this.textboxObject.removeAttribute('maxLength');
+```
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +141,14 @@ By default, the text length of the multiline TextBox is unlimited. You can limit
 
 ## Count characters
 
-You can show the number of characters entered inside the textarea by calculating the character count in the input event of multiline TextBox. The character count is updated while entering or deleting any character inside the textarea. The character count shows how many characters can be entered or left to be entered.
+Provide real-time feedback to users with a character counter that displays current text length and remaining available characters. This feature enhances user experience by showing input progress and helping users stay within defined limits.
+
+The character count updates dynamically during text input, deletion, and paste operations. Implementation involves monitoring the [`input`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#input) event of the multiline TextBox and calculating the current character count against any defined maximum limits.
+
+Benefits of character counting include:
+- **User guidance**: Clear indication of input limits and remaining space
+- **Data validation**: Prevention of form submission errors due to length constraints
+- **User experience**: Immediate feedback without requiring form validation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,3 +161,10 @@ You can show the number of characters entered inside the textarea by calculating
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/textbox/count-cs1" %}
+
+## Best Practices
+
+- **Performance**: For auto-resizing TextBoxes, consider applying throttling to resize calculations to maintain responsiveness during rapid input.
+- **Validation**: Combine character limits with proper error messaging for comprehensive input validation
+- **Responsive Design**: Test multiline TextBox behavior across different screen sizes and orientations
+- **User Experience**: Provide clear visual feedback for character limits and validation states
