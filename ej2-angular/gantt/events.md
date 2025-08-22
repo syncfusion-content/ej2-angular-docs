@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Angular Gantt component | Syncfusion
-description: Checkout and learn here all about Events in in Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn about all events available in the Angular Gantt component of Syncfusion Essential JS 2, including their behavior and usage.
 platform: ej2-angular
 control: Gantt Events
 publishingplatform: ##Platform_Name##
@@ -15,12 +15,27 @@ The Syncfusion Angular Gantt Chart component offers comprehensive support for vi
 
 ## actionBegin
 
-The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event triggers before the Gantt component processes actions like editing, adding, deleting, sorting, filtering, dependency changes, and zoom. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
+The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event triggers before the Gantt component processes actions such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information through the [ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs/) argument. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
 
 Below are detailed descriptions of each argument type's properties, and their purposes.
 
-**ITimeSpanEventArgs (Taskbar editing)**
+**[ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs/)**
+| **Property**             | **Type**       | **Description** |
+|--------------------------|----------------|-----------------|
+| `action`                | `string`       | Defines the type of action being performed. |
+| `fromItem`              | `IGanttData`   | Specifies the predecessor task in a dependency relationship. |
+| `isValidLink`           | `boolean`      | Indicates whether the dependency link is valid. |
+| `mergeSegmentIndexes`   | `Object[]`     | Contains indexes of segments to be merged during a context click action. |
+| `newPredecessorString`  | `string`       | Represents the updated predecessor string. |
+| `newTaskData`           | `object`       | Holds the newly added task data, excluding custom Gantt properties. |
+| `predecessor`           | `IPredecessor` | Defines the predecessor object involved in the action. |
+| `recordIndex`           | `number`       | Specifies the index of the record being acted upon. |
+| `splitDate`             | `Date`         | Indicates the date at which a task is split during a context click action. |
+| `target`                | `Element`      | Refers to the target HTML element involved in the action. |
+| `toItem`                | `IGanttData`   | Specifies the successor task in a dependency relationship. |
+| `type`                  | `string`       | Defines the type of event triggered. |
 
+**[ITimeSpanEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTimeSpanEventArgs/) (Taskbar editing)**
 | **Property**           | **Type**   | **Description** |
 |------------------------|------------|-----------------|
 | `cancel`              | `boolean`  | Set to **true** to cancel the current action before it is processed. |
@@ -29,8 +44,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `projectEndDate`      | `Date`     | End date of the overall project. Useful for validating task boundaries. |
 | `requestType`         | `string`   | Describes the type of request. For taskbar editing, values include **taskbarEditing**. |
 
-**ITaskAddedEventArgs (Adding/Editing/Deleting tasks)**
-
+**[ITaskAddedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
 | **Property**        | **Type**     | **Description** |
 |---------------------|--------------|-----------------|
 | `action`            | `string`     | Specifies the type of action, such as **beforeAdd** or **beforeDelete**. |
@@ -43,8 +57,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`       | `string`     | Describes the type of request, such as **beforeSave**, **beforeDelete**. |
 | `rowPosition`       | `string`     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**FilterEventArgs (Filtering)**
-
+**[FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) (Filtering)**
 | **Property**             | **Type**     | **Description** |
 |--------------------------|--------------|-----------------|
 | `cancel`                 | `boolean`    | Set to **true** to cancel the filtering action. |
@@ -54,8 +67,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`            | `string`     | Describes the type of request, typically **filtering**. |
 | `type`                   | `string`     | Event type identifier. |
 
-**SortEventArgs (Sorting)**
-
+**[SortEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/) (Sorting)**
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
 | `cancel`         | `boolean`  | Set to **true** to cancel the sorting action. |
@@ -64,8 +76,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`    | `string`   | Describes the type of request, typically **sorting**. |
 | `type`           | `string`   | Event type identifier. |
 
-**IDependencyEventArgs (Dependency editing)**
-
+**[IDependencyEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iDependencyEventArgs/) (Dependency editing)**
 | **Property**              | **Type**   | **Description** |
 |---------------------------|------------|-----------------|
 | `fromItem`                | `object`   | Source task object in the dependency link. |
@@ -75,12 +86,11 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`             | `string`   | Describes the type of request, typically **validateDependency** or **updateDependency**. |
 | `toItem`                  | `object`   | Target task object in the dependency link. |
 
-**ZoomEventArgs (Zooming)**
-
+**[ZoomEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/zoomEventArgs/) (Zooming)**
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
 | `cancel`         | `boolean`  | Set to **true** to cancel the zoom action. |
-| `name`           | `string`   |  Describes the name for the event. |
+| `name`           | `string`   |  Name of the event |
 | `requestType`    | `string`   | Describes the type of request, typically **zooming**. |
 | `timeline`       | `object`   | Timeline settings after zoom is applied. |
 
@@ -169,31 +179,44 @@ export class AppComponent {
         this.projectStartDate = new Date('03/31/2024');
         this.projectEndDate = new Date('05/30/2024');
     }
-
-    public actionBegin(args: ITimeSpanEventArgs | ITaskAddedEventArgs | IDependencyEventArgs | ZoomEventArgs | FilterEventArgs | SortEventArgs): void {
-      if (args.requestType === 'beforeSave') 
-      {
+    public actionBegin(
+      args: ITimeSpanEventArgs | ITaskAddedEventArgs | IDependencyEventArgs | ZoomEventArgs | FilterEventArgs | SortEventArgs
+    ): void {
+      // Executes logic before saving a task or dependency.
+      if (args.requestType === 'beforeSave') {
         console.log('Action: Before save');
       } 
+      // Executes logic before applying a filter to the Gantt data.
       else if (args.requestType === 'filtering') {
         console.log('Action: Filtering');
       } 
+      // Executes logic before sorting the Gantt data.
       else if (args.requestType === 'sorting') {
         console.log('Action: Sorting');
       } 
-      else if ( args.requestType === 'beforeZoomIn' || args.requestType === 'beforeZoomOut') {
+      // Executes logic before zooming in or out of the Gantt chart.
+      else if (args.requestType === 'beforeZoomIn' || args.requestType === 'beforeZoomOut') {
         console.log('Action: Zooming');
       }
     }
 }
-
 ```
 
 ## actionComplete
 
-The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actioncomplete) event is triggered after the Gantt component successfully completes an operation such as editing, adding, deleting, sorting, filtering, or zooming. It provides detailed contextual information about the completed action through the [actionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. Below are detailed descriptions of each argument type's properties, and their purposes.
+The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actioncomplete) event is triggered after the Gantt component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. Below are detailed descriptions of each argument type's properties, and their purposes.
 
-**FilterEventArgs (Filtering)**
+**[ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/)**
+| **Property**       | **Type**                | **Description**                                                                 |
+|--------------------|-------------------------|---------------------------------------------------------------------------------|
+| `action`           | `string`                | Defines the action performed during the event.                                 |
+| `keyEvent`         | `Event`                 | Defines the key event triggered.                                               |
+| `newTaskData`      | `object`                | Specifies the newly added task data without custom Gantt properties.           |
+| `recordIndex`      | `number`                | Defines the index of the record involved in the event.                         |
+| `timeline`         | `ZoomTimelineSettings`  | Defines the settings applied to the Zoom timeline.                             |
+| `type`             | `string`                | Defines the type of the event.                                                 |
+
+**[FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) (Filtering)**
 
 | **Property**             | **Type**     | **Description** |
 |--------------------------|--------------|-----------------|
@@ -204,7 +227,7 @@ The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 | `requestType`            | `string`     | Describes the type of request like **filtering**, **filterAfterOpen**. |
 | `type`                   | `string`     | Event type identifier. |
 
-**SortEventArgs (Sorting)**
+**[SortEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/) (Sorting)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -214,7 +237,7 @@ The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 | `requestType`    | `string`   | Describes the type of request, typically **sorting**. |
 | `type`           | `string`   | Event type identifier. |
 
-**ITaskAddedEventArgs (Adding/Editing/Deleting tasks)**
+**[ITaskAddedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
 
 | **Property**        | **Type**     | **Description** |
 |---------------------|--------------|-----------------|
@@ -228,18 +251,17 @@ The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 | `requestType`       | `string`     | Describes the type of request, such as **beforeSave**, **beforeDelete**. |
 | `rowPosition`       | `string`     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**ZoomEventArgs (Zooming)**
+**[ZoomEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/zoomEventArgs/) (Zooming)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
 | `cancel`         | `boolean`  | Set to **true** to cancel the zoom action. |
-| `name`           | `string`   |  Describes the name for the event. |
+| `name`           | `string`   |  Name of the event |
 | `requestType`    | `string`   | Describes the type of request, typically **zooming**. |
 | `timeline`       | `object`   | Timeline settings after zoom is applied. |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { ActionCompleteArgs, EditService, FilterService, GanttComponent, GanttModule, IKeyPressedEventArgs, ITaskAddedEventArgs, SelectionService, SortService, ToolbarService, ZoomEventArgs} from '@syncfusion/ej2-angular-gantt';
 import { FilterEventArgs, SortEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -322,43 +344,50 @@ export class AppComponent {
         this.projectEndDate = new Date('05/30/2024');
     }
     public actionComplete(args: ActionCompleteArgs | FilterEventArgs | SortEventArgs | ZoomEventArgs | ITaskAddedEventArgs) {
-        switch (args.requestType) {
-            case 'filtering':
+    // Handle different types of actions based on requestType.
+    switch (args.requestType) {
+        case 'filtering':
+            // Cast args to FilterEventArgs to access filtering-specific properties.
             const filterArgs = args as FilterEventArgs;
             console.log('Filtering applied on column:', filterArgs.currentFilteringColumn);
             console.log('Filter condition:', filterArgs.currentFilterObject);
             break;
 
-            case 'sorting':
+        case 'sorting':
+            // Cast args to SortEventArgs to access sorting-specific properties.
             const sortArgs = args as SortEventArgs;
             console.log(`Sorted column: ${sortArgs.columnName}`);
             console.log(`Sort direction: ${sortArgs.direction}`);
             break;
 
-            case 'save':
+        case 'save':
+            // Cast args to ITaskAddedEventArgs to access task save-specific properties.
             const taskArgs = args as ITaskAddedEventArgs;
-            console.log('Task saved:', taskArgs.modifiedTaskData);
-            console.log('Original data:', taskArgs.data);
+            console.log('Task saved:', taskArgs.modifiedTaskData); // Modified task data after save
+            console.log('Original data:', taskArgs.data); // Original task data before modification
             break;
 
-            case 'delete':
+        case 'delete':
+            // Cast args to ITaskAddedEventArgs to access task delete-specific properties.
             const deleteArgs = args as ITaskAddedEventArgs;
-            console.log('Deleted records:', deleteArgs.modifiedRecords);
+            console.log('Deleted records:', deleteArgs.modifiedRecords); // Records deleted from Gantt.
             break;
 
-            case 'AfterZoomIn':
-            case 'AfterZoomOut':
-            case 'AfterZoomToProject':
+        case 'AfterZoomIn':
+        case 'AfterZoomOut':
+        case 'AfterZoomToProject':
+            // Cast args to ZoomEventArgs to access zoom-specific properties.
             const zoomArgs = args as ZoomEventArgs;
-            console.log('Zoom action:', zoomArgs.requestType);
-            console.log('Updated timeline settings:', zoomArgs.timeline);
+            console.log('Zoom action:', zoomArgs.requestType); // Type of zoom action performed.
+            console.log('Updated timeline settings:', zoomArgs.timeline); // Timeline settings after zoom.
             break;
 
-            default:
-            console.log('other action:', args.requestType);
+        default:
+            // Handle any other unspecified actions.
+            console.log('Other action:', args.requestType);
             break;
-        }
     }
+  }
 }
 ```
 
@@ -366,14 +395,7 @@ export class AppComponent {
 
 The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event is triggered when an operation in the Gantt encounters an error due to configuration issues, invalid data, or missing modules. It returns a [FailureEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/failureEventArgs/#failureeventargs/) object containing detailed information about the failure.
 
-This event is useful for:
-
-- Logging error details for diagnostics.
-- Identifying issues such as incorrect task field mappings or broken data sources.
-- Displaying feedback through alerts, toast notifications, or dialogs.
-
-**FailureEventArgs**
-
+**[FailureEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/failureEventArgs/)**
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
 | `error`         | `Error`   |Defines the error information. |
@@ -401,8 +423,7 @@ import { FailureEventArgs } from '@syncfusion/ej2-angular-grids';
       [allowReordering]="true"
       [taskFields]="taskSettings"
       [treeColumnIndex]="1"
-      [splitterSettings]="splitterSettings">
-      
+      [splitterSettings]="splitterSettings">      
       <e-columns>
         <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
         <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
@@ -476,19 +497,18 @@ export class AppComponent implements OnInit {
     span.innerHTML = args.error ? (args.error as Error).message : 'Unknown error';
   }
 }
-
 ```
 
 ## beforeExcelExport
 
 The [beforeExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#beforeexcelexport) event is triggered before initiating data export from the Gantt component to Excel or CSV format. This event enables conditional control over the export process, such as canceling the operation or applying format-specific logic.
 
-The `beforeExcelExport` event provides an argument of type `Object` with these properties:
+The event argument is an `object` containing the following properties:
 
-| **Property** | **Type**   | **Description** |
+| **Property** | **Type**   | **Description**                                                   |
 |--------------|------------|-------------------------------------------------------------------|
-| `cancel`     | `boolean`  | Set to **true** to cancel the export.                               | 
-| `isCsv`      | `boolean`  | Indicates if the export is CSV (**true**) or Excel (**false**).       | 
+| `cancel`     | `boolean`  | Set to **true** to cancel the export.                             | 
+| `isCsv`      | `boolean`  | Indicates if the export is CSV (**true**) or Excel (**false**).   | 
 | `name`       | `string`   | Event name, typically **beforeExcelExport**.                      | 
 
 ```typescript
@@ -593,12 +613,12 @@ export class AppComponent {
 
 The [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#beforepdfexport) event is triggered before exporting Gantt data to a PDF file. This event provides an opportunity to conditionally cancel the export or modify behavior based on the current Gantt configuration.
 
-The `beforePdfExport` event provides an argument of type `Object` with these properties:
+The event provides an argument of type `object` with the following properties:
 
 | **Property**   | **Type**   | **Description**                                                  |
 |----------------|------------|------------------------------------------------------------------|
-| `cancel`       | `boolean`  | Set to **true** to cancel the PDF export.                          |
-| `ganttObject`  | `Object`   | Reference to the Gantt component instance.                       |
+| `cancel`       | `boolean`  | Set **true** to cancel PDF export.                               |
+| `ganttObject`  | `Object`   | Reference to the Gantt Chart instance.                           |
 | `name`         | `string`   | Event name, typically **beforePdfExport**.                       |
 | `requestType`  | `string`   | Type of request, typically **beforePdfExport**.                  |
 
@@ -702,14 +722,14 @@ export class AppComponent {
 
 The [beforeTooltipRender](https://ej2.syncfusion.com/angular/documentation/api/gantt/#beforetooltiprender) event is triggered before rendering a tooltip for interactive elements within the Gantt component. This includes taskbars, timeline headers, and connector lines. The event allows dynamic customization or suppression of tooltip content based on contextual data.
 
-The `beforeTooltipRender` event provides an argument of type `BeforeTooltipRenderEventArgs` with these properties:
+The event provides an argument of type [BeforeTooltipRenderEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/beforeTooltipRenderEventArgs/) with the following properties:
 
 | **Property** | **Type**   | **Description**                                                   |
 |--------------|------------|-------------------------------------------------------------------|
-| `args`       | `Object`   | Contains additional context about the tooltip (e.g., target element). |
-| `content`    | `string`   | The HTML or text content of the tooltip before rendering.         |
-| `cancel`     | `boolean`  | Set to **true** to prevent the tooltip from appearing.              |
-| `data`       | `Object`   | Data of the Gantt element (e.g., task data for taskbar tooltips). |
+| `args`       | `Object`   | Context info like target element and interaction type.            |
+| `content`    | `string`   | Tooltip content before rendering.                                 |
+| `cancel`     | `boolean`  | Set **true** to prevent tooltip display.                          |
+| `data`       | `Object`   | Related Gantt data, such as task or header info.                  |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -813,23 +833,16 @@ export class AppComponent {
 
 ## cellDeselected
 
-The [cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#celldeselected) event fires when a selected cell in the Gantt is deselected in these cases:
-- Clicking outside a selected cell.
-- Selecting a different cell or row.
-- Programmatically clearing the selection using Gantt methods.
+The [cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#celldeselected) event is triggered when a selected cell in the Gantt component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-Use this event to:
-- Validate cell data after deselection (e.g., ensure valid task values).
-- Update application state based on deselected cells.
+The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellDeselectEventArgs/) with the following properties:
 
-The `cellDeselected` event provides an argument of type `CellDeselectEventArgs` with these properties:
-
-| **Property**   | **Type**         | **Description**                                                   |
-|----------------|------------------|-------------------------------------------------------------------|
-| `cancel`       | `boolean`        | Set to **true** to cancel the deselection action.                  |
-| `cellIndexes`  | `object[]` | Array of objects containing row and column indices of deselected cells. | 
-| `cells`        | `NodeList`       | DOM elements of the deselected cells.                            |
-| `data`         | `Object`         | Data of the row associated with the deselected cell.             | 
+| **Property**      | **Type**         | **Description**                         |
+|-----------------|----------------|---------------------------------------------|
+| `cancel`        | `boolean`      | Set to **true** to cancel the deselection.  |
+| `cellIndexes`   | `object[]`     | Row and column indices of deselected cells. |                       
+| `cells`         | `NodeList`     | DOM elements of the deselected cells.        |
+| `data`          | `Object`       | Row data associated with the deselected cell.| 
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -935,14 +948,14 @@ export class AppComponent {
 
 The [cellDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#celldeselecting) event is triggered when a previously selected cell in the Gantt component is deselected. This occurs when the selection is cleared either through user interaction or programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-The `cellDeselecting` event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellDeselectEventArgs/) with the following properties:
+The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellDeselectEventArgs/) with the following properties:
 
-| **Property**   | **Type**         | **Description**                                                   |
-|----------------|------------------|-------------------------------------------------------------------|
-| `cancel`       | `boolean`        | Set to **true** to cancel the deselection action.                  |
-| `cellIndexes`  | `object[]` | Array of objects containing row and column indices of deselected cells. | 
-| `cells`        | `NodeList`       | DOM elements of the Deselecting cells.                            |
-| `data`         | `Object`         | Data of the row associated with the Deselecting cell.             | 
+| **Property**   | **Type**     | **Description**                                                   |
+|----------------|--------------|-------------------------------------------------------------------|
+| `cancel`       | `boolean`    | Set to **true** to cancel the deselection action.                 |
+| `cellIndexes`  | `object[]`   | Row and column indices of the cells being deselected.             |
+| `cells`        | `NodeList`   | DOM elements representing the deselecting cells.                  |
+| `data`         | `Object`     | Row data associated with the deselecting cell.                    |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -1048,24 +1061,25 @@ export class AppComponent {
 
 ## cellEdit
 
-The [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#celledit) event is triggered when a cell in the Gantt component enters edit mode. This event enables customization of the editing experience, enforcement of validation rules, or cancellation of the edit operation based on contextual data. This event is commonly used to restrict editing for specific columns, apply dynamic validation rules, or log edit activity
+The [cellEdit](https://ej2.syncfusion.com/react/documentation/api/gantt/#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
 
-The `cellEdit` event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/cellEditArgs/) with these properties:
+The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/cellEditArgs/) with the following properties:
 
-| **Property**       | **Type**         | **Description**                                                   |
-|--------------------|------------------|-------------------------------------------------------------------|
-| `cancel`           | `boolean`        | Set to **true** to cancel the cell edit action.                    |
-| `cell`             | `Element`        | The element of the cell being edited.                        |
-| `columnName`       | `string`         | The field name of the column being edited (e.g., **TaskName**).  |
-| `columnObject`     | `Object`         | The column object containing metadata (e.g., **field**, **headerText**). |
-| `foreignKeyData`   | `Object`         | Data for foreign key columns, if applicable.                     |
-| `isForeignKey`     | `boolean`        | Indicates if the column is a foreign key column.                 |
-| `primaryKey`       | `string`         | The primary key field of the data source, if defined.            |
-| `row`              | `HTMLElement`    | The DOM element of the row containing the edited cell.           |
-| `rowData`          | `Object`         | Data of the row associated with the edited cell.                 |
-| `type`             | `string`         | Type of edit action (e.g., **edit**).                           |
-| `validationRules`  | `Object`         | Validation rules applied to the cell, if any.                    |
-| `value`            | `any`            | The current value of the cell before editing starts.             |
+| **Property**       | **Type**         | **Description**                          |
+|--------------------|------------------|------------------------------------------|
+| `cancel`           | `boolean`        | Set to **true** to cancel the cell edit action.|
+| `cell`             | `Element`        | Cell element currently being edited.     |
+| `columnName`       | `string`         | Field name of the edited column.         |
+| `columnObject`     | `Object`         | Metadata of the edited column.           |
+| `foreignKeyData`   | `Object`         | Foreign key data, if applicable.         |
+| `isForeignKey`     | `boolean`        | Indicates if column is a foreign key.    |
+| `primaryKey`       | `string`         | Primary key field in the data source.    |
+| `row`              | `HTMLElement`    | Row element containing the edited cell.  |
+| `rowData`          | `Object`         | Data of the row associated with the edited cell.|
+| `type`             | `string`         | Type of edit action (e.g., **edit**).          |
+| `validationRules`  | `Object`         | Validation rules applied to the cell, if any.  |
+| `value`            | `any`            | The current value of the cell before editing starts.|
+
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1166,18 +1180,20 @@ export class AppComponent {
 
 ## cellSelected
 
-The [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field. 
+The [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
 
-| **Property**           | **Type**                                         | **Description**                                                                 |
-|------------------------|--------------------------------------------------|---------------------------------------------------------------------------------|
-| `cancel`               | `boolean`                                        | Set to **true** to cancel the selection action.                                |
-| `cellIndex`            | `object`        | Index of the currently selected cell.                                          |
-| `cells`                | `Element[]`                                      | DOM elements of the currently selected/deselected cells.                       |
-| `currentCell`          | `Element`                                        | The currently selected cell element.                                           |
-| `data`                 | `Object`                                         | Data of the row associated with the selected/deselected cell.                  |
-| `previousRowCell`      | `Element`                                        | The previously selected cell element.                                          |
-| `previousRowCellIndex` | `number`                                         | Index of the previously selected cell.                                         |
-| `selectedRowCellIndex`          | `object[]`      | Array of objects containing row and column indices of selected cells.        |
+The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellSelectEventArgs/) with the following properties:
+
+| **Property**             | **Type**           | **Description**                              |
+|----------------------------|------------------|----------------------------------------------|
+| `cancel`                   | `boolean`        | Cancel selection if set to **true**.         |
+| `cellIndex`                | `object`         | Index of the selected cell.                  |
+| `cells`                    | `Element[]`      | DOM elements of selected/deselected cells.   |
+| `currentCell`              | `Element`        | Currently selected cell element.             |
+| `data`                     | `Object`         | Row data for the selected cell.              |
+| `previousRowCell`          | `Element`        | Previously selected cell element.            |
+| `previousRowCellIndex`     | `number`         | Index of previously selected cell.           |
+| `selectedRowCellIndex`     | `object[]`       | Indices of selected row and column.          |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -1278,20 +1294,20 @@ export class AppComponent {
 
 ## cellSelecting
 
-The [cellSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#cellselecting) event is triggered before a cell in the Gantt component is selected. This event allows conditional control over the selection process and can be used to cancel selection based on contextual logic.
+The [cellSelecting](https://ej2.syncfusion.com/react/documentation/api/gantt/#cellselecting) event is triggered before a cell is selected in the Gantt Chart component. It enables logic to control selection behavior based on cell context, such as preventing selection under specific conditions or customizing appearance dynamically.
 
-The `cellSelecting` event provides an argument of type [CellSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellSelectingEventArgs/) with these properties:
+The event provides an argument of type [CellSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/cellSelectingEventArgs/)  with the following properties:
 
-| **Property**           | **Type**                                         | **Description**                                                                 |
-|------------------------|--------------------------------------------------|---------------------------------------------------------------------------------|
-| `cancel`               | `boolean`                                        | Set to **true** to cancel the selection action.                                   |
-| `cellIndex`            | `object`        | Index of the cell being selected.                                               |
-| `cells`                | `Element[]`                                      | DOM elements of the currently selected/deselected cells.                        |
-| `currentCell`          | `Element`                                        | The cell element being selected.                                                |
-| `data`                 | `Object`                                         | Data of the row associated with the cell being selected.                        |
-| `previousRowCell`      | `Element`                                        | The previously selected cell element.                                           |
-| `previousRowCellIndex` | `number`                                         | Index of the previously selected cell.                                          |
-| `selectedRowCellIndex` | `object[]`      | Array of objects containing row and column indices of selected cells.           |
+| **Property**             | **Type**       | **Description**                              |
+|--------------------------|------------------|----------------------------------------------|
+| `cancel`                 | `boolean`        | Cancel selection if set to **true**.             |
+| `cellIndex`              | `object`         | Index of the cell being selected.            |
+| `cells`                  | `Element[]`      | DOM elements of selected/deselected cells.   |
+| `currentCell`            | `Element`        | Cell element currently being selected.       |
+| `data`                   | `Object`         | Row data for the selected cell.              |
+| `previousRowCell`        | `Element`        | Previously selected cell element.            |
+| `previousRowCellIndex`   | `number`         | Index of previously selected cell.           |
+| `selectedRowCellIndex`   | `object[]`       | Indices of selected row and column.          |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1395,15 +1411,15 @@ export class AppComponent {
 
 ## columnDrag
 
-The [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columndrag) event is triggered when a column header in the Gantt component is actively being dragged during a reordering operation. This event provides access to the drag context and allows conditional control over the column movement.
+The [columnDrag](https://ej2.syncfusion.com/react/documentation/api/gantt/#columndrag) event is triggered while a column header is being dragged during reordering. It provides contextual details about the drag operation and enables customization of the column's behavior during the process, such as restricting movement, applying visual styles, or preparing layout adjustments based on the interaction.
 
-The `columnDrag` event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with these properties:
+The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with the following properties:
 
-| **Property**   | **Type**   | **Description**                                                  |
-|----------------|------------|------------------------------------------------------------------|
-| `column`       | `Object`   | The column object being dragged.                                 |
-| `target`       | `Element`  | The target element where the column is being dragged over.       |
-| `draggableType`| `string`   | Specifies the category of the dragged element, such as **column**, **headercell**, or other draggable types within the Gantt.             |
+| **Property**       | **Type**         | **Description**                            |
+|--------------------|----------------|----------------------------------------------|
+| `column`           | `Object`       | Column object currently being dragged.       |
+| `target`           | `Element`      | Element where column is dragged over.        |
+| `draggableType`    | `string`       | Type of draggable element (e.g., column).    |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1502,13 +1518,13 @@ export class AppComponent {
 
 The [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columndragstart) event is triggered when a column header drag operation begins in the Gantt component. This event provides access to the initial drag context and enables customization or restriction of the drag behavior.
 
-The `columnDragStart` event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with these properties:
+The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with the following properties:
 
-| **Property**   | **Type**   | **Description**                                                  |
-|----------------|------------|------------------------------------------------------------------|
-| `column`       | `Object`   | The column object being dragged.                                 |
-| `target`       | `Element`  | The target element where the drag started.                       |
-| `draggableType`| `string`   | Specifies the category of the dragged element, such as **column**, **headercell**, or other draggable types within the Gantt.             |
+| **Property**       | **Type**       | **Description**                              |
+|--------------------|----------------|----------------------------------------------|
+| `column`           | `Object`       | Column object where drag started.            |
+| `target`           | `Element`      | Element where drag operation began.          |
+| `draggableType`    | `string`       | Type of draggable element (e.g., headercell).|
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -1606,15 +1622,15 @@ export class AppComponent {
 
 ## columnDrop
 
-The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columndrop) is triggered when a column header is dropped after a drag operation in the Gantt component. This event provides access to the drop context and enables post-reorder logic such as validation, UI updates, or state synchronization.
+The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columndrop) is triggered when a column header is dropped after a drag operation in the Gantt component.  It provides drop context and supports post-reorder logic such as validation or UI updates.
 
-The `columnDrop` event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with these properties:
+The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs/) with the following properties:
 
-| **Property**   | **Type**   | **Description**                                                  |
-|----------------|------------|------------------------------------------------------------------|
-| `column`       | `Object`   | The column object being dropped.                                 |
-| `target`       | `Element`  | The target element where the column is dropped.                  |
-| `draggableType`| `string`   | Specifies the category of the dragged element, such as **column**, **headercell**, **row**, etc.             |
+| **Property**       | **Type**         | **Description**                             |
+|--------------------|----------------|-----------------------------------------------|
+| `column`           | `Object`       | Column object being dropped.                  |
+| `target`           | `Element`      | Element where column is dropped.              |
+| `draggableType`    | `string`       | Type of draggable element (e.g., row, column).|
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1700,7 +1716,10 @@ export class AppComponent {
     this.projectEndDate = new Date('05/30/2024');
   }
   public columnDrop(args: ColumnDragEventArgs): void {
+    // Log the field name of the column that was dropped
     console.log(`Column "${args.column?.field}" was dropped.`);
+
+    // Log the target element where the column was dropped
     console.log('Dropped on target element:', args.target);
   }
 }
@@ -1708,16 +1727,16 @@ export class AppComponent {
 
 ## columnMenuClick
 
-The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuclick) event is triggered when a column menu item is clicked in the Gantt component. This event provides access to the clicked menu item and the associated column, enabling customization of menu behavior or execution of additional logic.
+The [columnMenuClick](https://ej2.syncfusion.com/react/documentation/api/gantt/#columnmenuclick) event is triggered when a column menu item is selected in the Gantt Chart. It provides access to the clicked item and its associated column, allowing you to customize menu behavior or execute additional logic.
 
-The `columnMenuClick` event provides an argument of type [ColumnMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuClickEventArgs/) with these properties:
+The event provides an argument of type [ColumnMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuClickEventArgs/) with the following properties:
 
-| **Property** | **Type**   | **Description**                                                                                   |
-|--------------|------------|---------------------------------------------------------------------------------------------------|
-| `name`       | `string`   | The name of the column menu item that was clicked.                                                |
-| `column`     | `Object`   | The column object associated with the clicked menu item.                                          |
-| `element`    | `Element`  | The DOM element of the clicked column menu item.                                                  |
-| `item`       | `Object`   | The menu item object that was clicked.|
+| **Property** | **Type**   | **Description**                          |
+|--------------|------------|------------------------------------------|
+| `name`       | `string`   | Name of the clicked menu item.           |
+| `column`     | `Object`   | Column object linked to the menu item.   |
+| `element`    | `Element`  | DOM element of the clicked menu item.    |
+| `item`       | `Object`   | The menu item object that was clicked.   |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1815,19 +1834,19 @@ export class AppComponent {
 
 The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuopen) event is triggered when the column menu is opened in the Gantt component. This event provides access to the menu context and allows customization of its appearance, behavior, or available options.
 
-The `columnMenuOpen` event provides an argument of type [ColumnMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuOpenEventArgs/) with these properties:
+The event provides an argument of type [ColumnMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuOpenEventArgs/) with the following properties:
 
-| **Property** | **Type**   | **Description**                                                                                   |
-|--------------|------------|---------------------------------------------------------------------------------------------------|
-| `cancel`     | `boolean`  | Indicates whether to cancel the column menu opening. If set to **true**, the menu will not open.    |
-| `name`       | `string`   | The name of the event, which is **columnMenuOpen**.                                                | 
-| `column`     | `Object`   | The column object associated with the opened column menu.                                         |
-| `element`    | `Element`  | The DOM element of the column header where the menu was opened.                                      |  
-| `items`      | `Object[]` | An array of menu items available in the column menu, which can be customized or modified.         |
-| `left`       | `number`  | The left position of the column menu relative to the viewport.                                    |
-| `top`        | `number`  | The top position of the column menu relative to the viewport.                                    |
-| `parentItem` | `Object` | The parent menu item if the column menu is part of a nested menu structure.                        |
-| `showSubMenuOn` | `MenuOpenType` | Specifies how the submenu should be opened, such as on click or hover. This can be used to control the interaction behavior of the column menu. |
+| **Property**       | **Type**           | **Description**                                 |
+|--------------------|--------------------|-------------------------------------------------|
+| `cancel`           | `boolean`          | Set **true** to cancel menu opening.            |
+| `name`             | `string`           | Event name: **columnMenuOpen**.                 |
+| `column`           | `Object`           | Column object linked to the opened menu.        |
+| `element`          | `Element`          | Header element where menu was opened.           |
+| `items`            | `Object[]`         | List of available column menu items.            |
+| `left`             | `number`           | Left position of menu in viewport.              |
+| `top`              | `number`           | Top position of menu in viewport.               |
+| `parentItem`       | `Object`           | Parent item in nested menu structure.           |
+| `showSubMenuOn`    | `MenuOpenType`     | Submenu trigger type: click or hover.           |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -1927,16 +1946,16 @@ export class AppComponent {
 
 The [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuclick) event is triggered when a context menu item is clicked within the Gantt component. This event provides access to the clicked item and the associated context, enabling customization of menu behavior or execution of additional logic.
 
-The `contextMenuClick` event provides an argument of type [ContextMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuClickEventArgs/) with these properties:
+The event provides an argument of type [ContextMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuClickEventArgs/) with the following properties:
 
-| **Property**             | **Type**        | **Description**                                                                                   |
-|--------------------------|------------------|---------------------------------------------------------------------------------------------------|
-| `name`                   | `string`         | The name of the context menu event, typically **contextMenuClick**.                              |
-| `element`                | `Element`        | The DOM element that triggered the context menu event. |
-| `event`                  | `PointerEvent`   | The pointer event object containing details like pointer ID, pressure, and coordinates.           |
-| `item`       | `Object`   | The menu item object that was clicked, containing properties like **text**, **id**, etc.              |
-| `type`                   | `string`         | Type of the context menu item (e.g., **Content**).                                                |
-| `rowData`               | `Object`         | The data object associated with the row where the context menu was opened.                        |
+| **Property**   | **Type**         | **Description**                              |
+|----------------|------------------|----------------------------------------------|
+| `name`         | `string`         | Event name: **contextMenuClick**.            |
+| `element`      | `Element`        | DOM element that triggered the menu.         |
+| `event`        | `PointerEvent`   | Pointer event with interaction details.      |
+| `item`         | `Object`         | Clicked menu item with properties.           |
+| `type`         | `string`         | Type of menu item (e.g., **Content**).       |
+| `rowData`      | `Object`         | Data object of the related row.              |
 
 ```ts
 import { NgModule } from '@angular/core'
@@ -2014,23 +2033,23 @@ export class AppComponent{
 
 ## contextMenuOpen
 
-The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuopen) event fires when a context menu item is clicked in the Gantt. This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
+The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuopen) event is triggered when a context menu item is clicked in the Gantt. This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
 
-The `contextMenuOpen` event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuOpenEventArgs/) with these properties:
+The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/contextMenuOpenEventArgs/) with the following properties:
 
-| **Property**      | **Type**        | **Description**                                                                                   |
-|-------------------|-----------------|---------------------------------------------------------------------------------------------------|
-| `name`            | `string`        | The name of the event, typically **contextMenuOpen**.                                             |
-| `element`         | `Element`       | The DOM element that triggered the context menu.                                                  |
-| `event`           | `PointerEvent`  | The pointer event object with details like pointer ID, pressure, and coordinates.                 |
-| `item`            | `Object`        | The menu item object that was clicked, with properties like **text**, **id**, etc.                    |
-| `type`            | `string`        | Type of the context menu item (e.g., **Content**).                                                |
-| `rowData`         | `Object`        | The data object for the row where the context menu was opened.                                    |
-| `items`           | `Object[]`      | Array of menu items available in the context menu, which can be customized or modified.           |
-| `left`            | `number`        | The left position of the context menu relative to the viewport.                                   |
-| `top`             | `number`        | The top position of the context menu relative to the viewport.                                    |
-| `parentItem`      | `Object`        | The parent menu item if the context menu is part of a nested menu structure.                      |
-| `showSubMenuOn`   | `MenuOpenType`  | Specifies how the submenu should be opened (e.g., on click or hover).                             |
+| **Property**       | **Type**         | **Description**                              |
+|--------------------|------------------|----------------------------------------------|
+| `name`             | `string`         | Event name: **contextMenuOpen**.             |
+| `element`          | `Element`        | DOM element that triggered the menu.         |
+| `event`            | `PointerEvent`   | Pointer event with interaction details.      |
+| `item`             | `Object`         | Menu item object with properties.            |
+| `type`             | `string`         | Type of menu item (e.g., **Content**).       |
+| `rowData`          | `Object`         | Data object of the related row.              |
+| `items`            | `Object[]`       | List of available context menu items.        |
+| `left`             | `number`         | Left position of menu in viewport.           |
+| `top`              | `number`         | Top position of menu in viewport.            |
+| `parentItem`       | `Object`         | Parent item in nested menu structure.        |
+| `showSubMenuOn`    | `MenuOpenType`   | Submenu trigger type: click or hover.        |
 
 ```ts
 import { NgModule } from '@angular/core'
@@ -2105,7 +2124,7 @@ export class AppComponent{
 
 ## created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/gantt/#created) event fires when the Gantt component is fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/gantt/#created) event is triggered when the Gantt component is fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
 
 ```ts
 import { NgModule, ViewChild, viewChild } from '@angular/core'
@@ -2182,7 +2201,7 @@ export class AppComponent{
 
 ## dataBound
 
-The [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event fires after the Gantt component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
+The [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event is triggered after the Gantt component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
 
 ```ts
 import { NgModule, ViewChild, viewChild } from '@angular/core'
@@ -2258,14 +2277,14 @@ export class AppComponent{
 
 ## destroyed
 
-The [destroyed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#destroyed) event fires when the Gantt component is removed from the DOM using the destroy() method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
+The [destroyed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#destroyed) event is triggered when the Gantt component is removed from the DOM using the destroy() method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
 
-The `destroyed` event provides an argument of type `object` with these properties:
+The event provides an argument of type `object` with the following properties:
 
-| **Property**      | **Type**        | **Description**                                                                                   |
-|-------------------|-----------------|---------------------------------------------------------------------------------------------------|
-| `name`            | `string`        | The name of the event, typically **destroyed**.                                                  |
-| `cancel`          | `boolean`       | Indicates whether to cancel the destruction of the Gantt component. If set to **true**, the component will not be destroyed. |
+| **Property**      | **Type**        | **Description**                            |
+|-------------------|-----------------|--------------------------------------------|
+| `name`            | `string`        | Identifies event as **destroyed**.         |
+| `cancel`          | `boolean`       | Prevents destruction when set to **true**. |
 
 ```ts
 import { NgModule, ViewChild, viewChild } from '@angular/core'
@@ -2346,15 +2365,13 @@ export class AppComponent{
 
 The [endEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#endedit) event is triggered after a task is edited using cell or taskbar editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
-The `endEdit` event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarEditedEventArgs/) with these properties:
-
-**ITaskEditedEventArgs (Editing tasks)**
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarEditedEventArgs/) with the following properties:
 
 | **Property**         | **Type**       | **Description**                                      |
 |----------------------|----------------|------------------------------------------------------|
-| `action`             | `string`       | Defines the action.                                 |
-| `data`               | `IGanttData`   | Provides the data of the edited task.               |
-| `name`               | `string`       | Describes the name for the event.                   |
+| `action`             | `string`       | Specifies type of task edit action.                  |
+| `data`               | `IGanttData`   | Contains updated data for the task.                  |
+| `name`               | `string`       | Identifies event as **endEdit**                      |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -2458,11 +2475,11 @@ export class AppComponent {
 
 The [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexportcomplete) event is triggered after the Gantt component has completed exporting data to an Excel file. This event enables post-export actions such as displaying notifications, logging activity, or applying additional formatting to the exported content.
 
-The `excelExportComplete` event provides an argument of type [ExcelExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportCompleteArgs/) with these properties:
+The event provides an argument of type [ExcelExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportCompleteArgs/) with the following property:
 
-| **Property**         | **Type**       | **Description**                                      |
-|----------------------|----------------|------------------------------------------------------|  
-| `promise`               | `Promise`       | Defines the promise object for blob data. |
+| **Property**            | **Type**        | **Description**                                  |
+|-------------------------|-----------------|--------------------------------------------------|  
+| `promise`               | `Promise`       | Represents blob data for exported file.          |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -2558,14 +2575,21 @@ export class AppComponent {
   }
 
   public toolbarClick(args: ClickEventArgs): void {
+    // Check if the clicked toolbar item is the Excel export button
     if (args.item.id === 'ganttDefault_excelexport') {
+      // Trigger Excel export from the Gantt component
       this.ganttObj?.excelExport();
     }
   }
 
   public excelExportComplete(args: ExcelExportCompleteArgs): void {
+    // Log a message indicating that the Excel export has completed
     console.log('Excel export completed');
+
+    // Change the header text of the second column in the exported Excel file
     (args as any).gridInstance.columns[1].headerText = "New HeaderText";
+
+    // Hide the third column in the exported Excel file
     (args as any).gridInstance.columns[2].visible = false;
   }
 }
@@ -2573,18 +2597,18 @@ export class AppComponent {
 
 ## excelExportHeaderQueryCellInfo
 
-The [excelExportHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexportheaderquerycellinfo) event is triggered during the Excel export process when customizing header cells in the exported file. It allows modification of header text, styles, and other properties before they are written to the Excel sheet.
+The [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#excelheaderquerycellinfo) event is triggered during the Excel export process when customizing header cells in the exported file. It allows modification of header text, styles, and other properties before they are written to the Excel sheet.
 
-The `excelExportHeaderQueryCellInfo` event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelHeaderQueryCellInfoEventArgs/) with these properties:
+The event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelHeaderQueryCellInfoEventArgs/) with the following properties:
 
-| **Property**   | **Type**         | **Description**                                                                 |
-|----------------|------------------|---------------------------------------------------------------------------------|
-| `name`         | `string`         | The name of the event, typically **excelExportHeaderQueryCellInfo**.           |
-| `cell`         | `ExcelCell`      | Represents the Excel header cell being processed.                              |
-| `gridCell`     | `Cell` \| `ExcelCell` | Defines the grid cell instance related to the header.                      |
-| `hyperLink`    | `Hyperlink`      | Contains hyperlink details if the header cell includes a link.                 |
-| `image`        | `Image`          | Contains image details if the header cell includes an image.                   |
-| `style`        | `ExcelStyle`     | Defines the style of the current cell (e.g., font, background, alignment).     |
+| **Property**   | **Type**         | **Description**                                        |
+|----------------|------------------|--------------------------------------------------------|
+| `name`         | `string`         | Identifies event as **excelExportHeaderQueryCellInfo**.|
+| `cell`         | `ExcelCell`      | Represents current Excel header cell.                  |
+| `gridCell`     | `Cell` \| `ExcelCell` | Refers to related Grid header cell.               |
+| `hyperLink`    | `Hyperlink`      | Contains hyperlink details for header cell.            |
+| `image`        | `Image`          | Contains image details for header cell.                |
+| `style`        | `ExcelStyle`     | Defines style settings for header cell.                |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -2702,20 +2726,20 @@ export class AppComponent {
 
 ## excelQueryCellInfo
 
-The [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelquerycellinfo) event triggers during the Excel export process when customizing individual data cells in the exported file. It allows modification of cell values, styles, and formatting before they are written to the Excel sheet.
+The [excelQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#excelquerycellinfo) event is triggered during the Excel export process when customizing individual data cells in the exported file. It allows modification of cell values, styles, and formatting before they are written to the Excel sheet.
 
-The `excelQueryCellInfo` event provides an argument of type [ExcelQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/) with these properties:
+The event provides an argument of type [ExcelQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `cell`       | `object` | Represents the Excel cell being customized. |
-| `column`     | `object` | Metadata of the column associated with the cell. |
-| `data`       | `object` | Row data for the current cell. |
-| `value`      | `string` | Original value of the cell before export. |
-| `style`      | `object` | Style object to customize font, background color, alignment, etc. |
-| `colspan`    | `number` | Defines the colspan. |
-| `hyperLink`  | `Hyperlink` | Contains hyperlink details if the cell includes a link. |
-| `image`        | `Image` | Contains image details if the header cell includes an image. |
+| **Property** | **Type**         | **Description**                                        |
+|----------------|------------------|------------------------------------------------------|
+| `cell`         | `object`         | Represents current Excel cell being customized.      |
+| `column`       | `object`         | Metadata of column linked to cell.                   |
+| `data`         | `object`         | Row data for the current cell.                       |
+| `value`        | `string`         | Original value before export.                        |
+| `style`        | `object`         | Style settings like font and alignment.              |
+| `colspan`      | `number`         | Specifies number of columns to span.                 |
+| `hyperLink`    | `Hyperlink`      | Hyperlink details if cell includes a link.           |
+| `image`        | `Image`          | Image details if cell includes an image.             |
 
 This event is useful for applying conditional formatting, masking sensitive data, or transforming values during export.
 
@@ -2838,14 +2862,14 @@ export class AppComponent {
 
 The [expanded](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expanded) event is triggered after a row has been expanded in the Gantt chart. It enables actions that respond to row expansion, such as loading additional data, updating UI elements, or tracking user interaction.
 
-The `expanded` event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs/) with the following properties:
+The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `data`       | `object` | The data object of the row that was expanded. |
-| `row`        | `HTMLElement` | The actual DOM element of the expanded row. |
-| `name`       | `string`   |  Describes the name for the event. |
-| `cancel`     | `boolean`  | Set to **true** to cancel the row expanding action. |
+| **Property** | **Type**         | **Description**                                      |
+|----------------|------------------|------------------------------------------------------|
+| `data`         | `object`         | Data object of the expanded row                     |
+| `row`          | `HTMLElement`    | DOM element of the expanded row                     |
+| `name`         | `string`         | Identifies event as **expanded**                    |
+| `cancel`       | `boolean`        | Prevents expansion when set to **true**             |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -2947,17 +2971,17 @@ export class AppComponent {
 
 ## expanding
 
-The [expanding](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expanding) event is triggered before a row is expanded in the Gantt chart. It allows interception of the expansion process and provides an opportunity to cancel it based on custom logic or conditions.
+The [expanding](https://ej2.syncfusion.com/react/documentation/api/gantt/#expanding) event is triggered before a row is expanded in the Gantt Chart. It enables interception of the expansion process and allows cancellation based on custom logic or conditions.
 
-The `expanding` event provides an argument of type  [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs/) with the following properties:
+The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `data`       | `object` | The data object of the row that is about to be expanded. |
-| `gridRow`        | `HTMLElement` | The actual DOM element of the row being expanded. |
-| `chartRow`        | `HTMLElement` | The actual DOM element of the chart row being expanded. |
-| `name`       | `string` | Describes the name of the event. |
-| `cancel`     | `boolean` | Set to **true** to cancel the row expansion. |
+| **Property** | **Type**         | **Description**                                      |
+|----------------|------------------|----------------------------------------------------|
+| `data`         | `object`         | Data object of the row being expanded              |
+| `gridRow`      | `HTMLElement`    | DOM element of the Grid row                        |
+| `chartRow`     | `HTMLElement`    | DOM element of the Chart row                       |
+| `name`         | `string`         | Identifies event as **expanding**                  |
+| `cancel`       | `boolean`        | Prevents expansion when set to **true**            |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3062,15 +3086,15 @@ public onRowExpanding(args: ICollapsingEventArgs): void {
 
 ## headerCellInfo
 
-The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#headercellinfo) event is triggered while rendering the column header cells in the Gantt chart. It allows customization of header cell appearance and content before they are displayed in the UI.
+The [headerCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#headercellinfo) event is triggered during the rendering of column header cells in the Gantt Chart. It allows customization of header cell appearance and content before they are displayed in the UI.
 
-The `headerCellInfo` event provides an argument of type [HeaderCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/headerCellInfoEventArgs/) with the following properties:
+The event provides an object of type [HeaderCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/headerCellInfoEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `cell`       | `HTMLElement` | The actual DOM element of the header cell being rendered. |
-| `node`       | `Element`     | The inner content element of the header cell, useful for modifying text or adding icons. 
-| `name`       | `string`      | Name of the event. |
+| **Property**   | **Type**         | **Description**                                      |
+|----------------|------------------|------------------------------------------------------|
+| `cell`         | `HTMLElement`  | Represents the header cell element being rendered.     |
+| `node`         | `Element`      | Refers to the inner content element of the header cell, used to update text or insert icons. |
+| `name`         | `string`       | Identifies the event as **headerCellInfo**.             |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3301,19 +3325,19 @@ export class AppComponent {
 
 ## onMouseMove
 
-The [onMouseMove](https://ej2.syncfusion.com/angular/documentation/api/gantt/#onmousemove) event is triggered when the mouse moves over the Gantt area. It enables tracking of cursor movement and interaction with elements under the pointer.
+The [onMouseMove](https://ej2.syncfusion.com/react/documentation/api/gantt/#onmousemove) event is triggered when the mouse moves within the Gantt Chart area. It enables tracking of cursor movement and interaction with elements under the pointer.
 
-The `onMouseMove` event provides an argument of type [IMouseMoveEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iMouseMoveEventArgs/) with the following properties:
+The event provides an argument of type [IMouseMoveEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iMouseMoveEventArgs/) with the following properties:
 
-| **Property**     | **Type**                | **Description** |
-|------------------|-------------------------|-----------------|
-| `column`         | `Object`                | Defines the column metadata where the mouse interaction occurred. |
-| `data`           | `IGanttData`            | Defines the row/task data under the mouse pointer. |
-| `date`           | `Date`                  | Defines the timeline date corresponding to the mouse position. |
-| `eventMarkers`   | `EventMarkerModel`      | Defines the event markers present in the chart. |
-| `indicator`      | `IIndicator`            | Defines the indicator element (e.g., milestone or status icon) under the mouse. |
-| `originalEvent`  | `Object`                | The original DOM mouse event object (e.g., **MouseEvent**). |
-| `predecessor`    | `PredecessorTooltip`    | Defines the predecessor relationship tooltip data, if applicable. |
+| **Property**  | **Type**                 |**Description**                                       |
+|-----------------|-----------------------|---------------------------------------------------------|
+| `column`        | `Object`              | Column metadata at the cursor location.                 |
+| `data`          | `IGanttData`          | Task or row data under the cursor.                      |
+| `date`          | `Date`                | Timeline date corresponding to the cursor position.     |
+| `eventMarkers`  | `EventMarkerModel`    | Event markers present at the current position.          |
+| `indicator`     | `IIndicator`          | Indicator element such as milestone or status icon under the cursor. |
+| `originalEvent` | `Object`              | Native mouse event object (**MouseEvent**).              |
+| `predecessor`   | `PredecessorTooltip`  | Tooltip data for predecessor relationships, if available.|
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3425,17 +3449,17 @@ export class AppComponent {
 
 ## onTaskbarClick
 
-The [onTaskbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#ontaskbarclick) event is triggered when a taskbar element is clicked in the Gantt chart. It enables custom actions based on the selected task, such as displaying details, navigating to related views, or logging interactions.
+The [onTaskbarClick](https://ej2.syncfusion.com/react/documentation/api/gantt/#ontaskbarclick) event is triggered when a taskbar element is clicked in the Gantt Chart. It supports custom actions based on the selected task, such as displaying task details, navigating to related views, or tracking interactions.
 
-The `onTaskbarClick` event provides an argument of type [ITaskbarClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarClickEventArgs/) with the following properties:
+The event provides an argument of type [ITaskbarClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarClickEventArgs/) with the following properties:
 
-| **Property**     | **Type**      | **Description**                                                        |
-|------------------|---------------|------------------------------------------------------------------------|
-| `data`           | `IGanttData`  | The task data associated with the clicked taskbar.                     |
-| `rowIndex`       | `number`      | The index of the row where the taskbar was clicked.                    |
-| `target`         | `Element`     | The target element where the click occurred.                           |
-| `taskbarElement` | `HTMLElement` | The actual taskbar element that was clicked.                           |
-| `name`           | `string`      | The name of the event.                                                 |
+| **Property**     | **Type**      | **Description**                                 |
+|------------------|---------------|-------------------------------------------------|
+| `data`           | `IGanttData`  | Task data associated with the clicked taskbar.  |
+| `rowIndex`       | `number`      | Index of the row where the taskbar was clicked. |
+| `target`         | `Element`     | DOM element where the click occurred.           |
+| `taskbarElement` | `HTMLElement` | Taskbar element that was clicked.               |
+| `name`           | `string`      | Name of the event (**onTaskbarClick**).         |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3551,19 +3575,19 @@ public onTaskbarClick(args: ITaskbarClickEventArgs): void {
 
 ## pdfColumnHeaderQueryCellInfo
 
-The [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfcolumnheaderquerycellinfo) event is triggered before exporting each column header cell to a PDF document in the Gantt chart. It allows customization of header cell content, style, and formatting during the PDF export process.
+The [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfcolumnheaderquerycellinfo) event is triggered before each column header cell is exported to a PDF document in the Gantt Chart. It enables customization of header cell content, style, and formatting during the export process.
 
-The `pdfColumnHeaderQueryCellInfo` event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) 
-with the following properties:
+The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/)  with the following properties:
 
-| **Type**                   | **Description**             |
-|------------------|----------------------------|---------------------------------------------------------------------------------|
-| `cell`           | `PdfTreeGridCell`          | Represents the current PDF cell being exported. You can modify its content or style. |
-| `column`         | `ColumnModel`              | Refers to the column definition for the current cell. Useful for accessing field names, header text, etc. |
-| `headerTemplate` | `ITemplateDetails`         | Contains custom string or image content for the header cell. |
-| `image`          | `PdfImage`                 | Allows you to set an image in the header cell. |
-| `style`          | `PdfGanttCellStyle`        | Lets you define styles like font, background color, borders, etc. |
-| `value`          | `string \| Object`         | The actual value to be displayed in the header cell. You can override this to customize the header text. |
+| **Property**   | **Type**               | **Description**                                 |
+|------------------|------------------------|------------------------------------------------ |
+| `cell`           | `PdfTreeGridCell`      | Represents the PDF cell being exported. Supports content and style updates. |
+| `column`         | `ColumnModel`          | Provides column configuration details such as field name and header text.  |
+| `headerTemplate` | `ITemplateDetails`     | Contains template content including text or image for the header cell. |
+| `image`          | `PdfImage`             | Specifies an image to be rendered in the header cell.     |
+| `style`          | `PdfGanttCellStyle`    | Defines visual styles such as font, background color, and borders. |
+| `value`          | `string \| Object`      | Value to be displayed in the header cell. Can be customized. |
+| `name`           | `string`               | Identifies the event as **pdfColumnHeaderQueryCellInfo**. |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3685,13 +3709,13 @@ export class AppComponent {
 
 ## pdfExportComplete
 
-The [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfexportcomplete) event is triggered after the Gantt component completes the process of exporting data to a PDF file. It enables post-export actions such as handling the generated file, displaying messages, or logging activity.
+The [pdfExportComplete](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfexportcomplete) event is triggered after the Gantt Chart completes the process of exporting data to a PDF document. It enables post-export operations such as handling the generated file, displaying notifications, or logging export activity.
 
-The `pdfExportComplete` event provides an argument of type `object` with the following properties:
+The event provides an `object` with the following property:
 
-| **Property** | **Type**   | **Description**                                      |
-|--------------|------------|------------------------------------------------------|
-| `name`    | `string`  | Describes the name for the event. |
+| **Property** | **Type**    | **Description**                                  |
+|--------------|-------------|--------------------------------------------------|
+| `name`       | `string`    | Identifies the event as **pdfExportComplete**    |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3811,19 +3835,19 @@ export class AppComponent {
 
 ## pdfQueryCellInfo
 
-The [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerycellinfo) event is triggered for each cell while exporting the Gantt component to a PDF file. This event allows customization of the PDF content at the cell level during export.
+The [pdfQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerycellinfo) event is triggered for each cell during the PDF export process in the Gantt Chart. It allows customization of individual cell content, style, and formatting in the exported PDF document.
 
-The `pdfQueryCellInfo` event provides an argument of type [PdfQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [PdfExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `data`       | `object` | Contains the task data and Gantt properties for the current row. |
-| `value`      | `Date \| string \| number \| boolean \| PdfTextWebLink \| PdfImage` | The value of the current cell being exported. |
-| `column`     | `Column` | Column configuration of the current cell. |
-| `style`      | `PdfGanttCellStyle` | Style settings applied to the cell (e.g., font, color, padding). |
-| `cell`       | `PdfTreeGridCell` | Represents the actual PDF cell object being rendered. |
-| `hyperLink`    | `Hyperlink`      | Contains hyperlink details if the cell includes a link.                 |
-| `image`        | `Image`          | Contains image details if the cell includes an image.                   |
+|  **Property** | **Type**           | **Description**                                     |
+|---------------|--------------------|-----------------------------------------------------|
+| `data`        | `object`           | Task and Gantt data for the current row.            |
+| `value`       | `Date \| string \| number \| boolean \| PdfTextWebLink \| PdfImage`  | Value displayed in the cell during PDF export. |
+| `column`      | `Column`           | Column configuration for the current cell.          |
+| `style`       | `PdfGanttCellStyle`| Style settings like font, color, and padding.       |
+| `cell`        | `PdfTreeGridCell`  | PDF cell object being rendered and customized.      |
+| `hyperLink`   |`Hyperlink`         | Hyperlink details if the cell includes a link.      |
+| `image`       | `Image`            | Image details if the cell includes an image.        |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3947,18 +3971,17 @@ public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
 
 ## pdfTaskbarInfo
 
-The [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo/) event is triggered for each taskbar while exporting the Gantt component to a PDF file. This event allows customization of the taskbar appearance and content in the exported PDF.
+The [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo/) event is triggered for each taskbar during the PDF export process in the Gantt Chart. This event allows customization of the taskbar appearance and content in the exported PDF document.
 
-The `pdfQueryTaskbarInfo` event provides an argument of type [PdfQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/) with the following properties:
+The event provides an argument of type [PdfQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/) with the following properties:
 
-| **Property**       | **Type**             | **Description**                                                                 |
-|--------------------|----------------------|---------------------------------------------------------------------------------|
-| `data`             | `IGanttData`         | Specifies the value of the task data.                                          |
-| `indicators`       | `IIndicator[]`       | Defines the indicators to be displayed on the taskbar.                         |
-| `labelSettings`    | `ILabel`             | Defines the customized string content or image for left, right, and task label.|
-| `taskbar`          | `ITaskbarStyle`      | Defines the taskbar style including color, border, and progress bar.           |
-| `taskbarTemplate`  | `ITemplateDetails`   | Defines the taskbar element appearance customizations and allows adding images or strings. |
-
+| **Property**     | **Type**             | **Description**                                            |
+|------------------  | ---------------------|----------------------------------------------------------|
+| `data `            | `IGanttData`         | Task data for the current taskbar being exported.        |
+| `indicators`       | `IIndicator[]`       | Indicators displayed on the taskbar during PDF export.   |
+| `labelSettings`    | `ILabel`             | Custom content or image for taskbar labels.              |
+| `taskbar`          | `ITaskbarStyle`      | Style settings like color, border, and progress bar.     |
+| `taskbarTemplate`  | `ITemplateDetails`   | Template for taskbar appearance including text or image. |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -4084,12 +4107,12 @@ public PdfQueryTaskbarInfo(args: PdfQueryTaskbarInfoEventArgs): void {
 
 The [pdfQueryTimelineCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytimelinecellinfo) event is triggered for each timeline cell during the PDF export process in the Gantt chart. It allows customization of the appearance, content, and style of timeline cells in the exported PDF document.
 
-The `pdfQueryTimelineCellInfo` event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTimelineCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTimelineCellInfoEventArgs/) with the following properties:
 
-| **Property** | **Type** | **Description** |
-|--------------|----------|-----------------|
-| `timelineCell`       | `PdfGanttCellStyle` | The PDF cell object for the timeline cell being rendered. |
-| `value`      | `string` | The text value to be displayed in the timeline cell. |
+| **Property**   | **Type**            | **Description**                                      |
+|----------------|---------------------|------------------------------------------------------|
+| `timelineCell` | `PdfGanttCellStyle` | Style settings for the timeline cell being rendered. |
+| `value`        | `string`            | Text content displayed in the timeline cell.         |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -4210,18 +4233,17 @@ export class AppComponent {
 
 The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) event is triggered for each cell while rendering the Gantt chart in the UI. It allows customization of cell content, appearance, and style before they are displayed.
 
-The `queryCellInfo` event provides an argument of type [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/querycellinfoeventargs/) with the following properties:
+The event provides an argument of type  [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/querycellinfoeventargs/) with the following properties:
 
-| **Property**       | **Type**         | **Description**                                                                 |
-|--------------------|------------------|---------------------------------------------------------------------------------|
-| `cell`             | `HTMLElement`    | The DOM element representing the cell being rendered.                          |
-| `column`           | `Column`         | The column configuration object for the current cell.                          |
-| `data`             | `object`         | The data object for the row associated with the cell.                          |
-| `foreignKeyData`   | `object`         | The foreign key data for the cell, if applicable.                              |
-| `rowIndex`         | `number`         | The index of the row in which the cell is located.                             |
-| `colIndex`         | `number`         | The index of the column in which the cell is located.                          |
-| `colspan`          | `number`         | The number of columns the cell spans across.                                   |
-
+| **Property**       | **Type**         | **Description**                                   |
+|--------------------|------------------|---------------------------------------------------|
+| `cell`             | `HTMLElement`    | Represents the cell element being rendered.       |
+| `column`           | `Column`         | Configuration object for the current column.      |
+| `data`             | `object`         | Data object for the row associated with the cell. |
+| `foreignKeyData`   | `object`         | Foreign key data for the cell, if applicable.     |
+| `rowIndex`         | `number`         | Index of the row containing the cell.             |
+| `colIndex`         | `number`         | Index of the column containing the cell.          |
+| `colspan`          | `number`         | Number of columns the cell spans across.          |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -4348,20 +4370,20 @@ public queryCellInfo(args: QueryCellInfoEventArgs): void {
 
 The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) event is triggered while rendering each taskbar in the Gantt chart. It allows customization of taskbar appearance, content, and behavior before they are displayed in the UI.
 
-The `queryTaskbarInfo` event provides an argument of type [IQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iquerytaskbarinfoeventargs/) with the following properties:
+The event provides an argument of type [IQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iquerytaskbarinfoeventargs/) with the following properties:
 
 | **Property**            | **Type**        | **Description**                                      |
 |-------------------------|-----------------|------------------------------------------------------|
-| `baselineColor`         | `string`        | Defines the baseline color.                          |
-| `data`                  | `IGanttData`    | Defines the data.                                    |
-| `leftLabelColor`        | `string`        | Defines the left label color.                        |
-| `milestoneColor`        | `string`        | Defines the milestone color.                         |
-| `progressBarBgColor`    | `string`        | Defines the progressbar background color.            |
-| `rightLabelColor`       | `string`        | Defines the right label color.                       |
-| `rowElement`            | `Element`       | Defines the row element.                             |
-| `taskLabelColor`        | `string`        | Defines the task label color.                        |
-| `taskbarBgColor`        | `string`        | Defines the taskbar background color.                |
-| `taskbarBorderColor`    | `string`        | Defines the taskbar border color.                    |
+| `baselineColor`         | `string`        | Color applied to the baseline indicator.             |
+| `data`                  | `IGanttData`    | Task data associated with the taskbar.               |
+| `leftLabelColor`        | `string`        | Color of the left-side label.                        |
+| `milestoneColor`        | `string`        | Color used for milestone taskbars.                   |
+| `progressBarBgColor`    | `string`        | Background color of the progress bar.                |
+| `rightLabelColor`       | `string`        | Color of the right-side label.                       |
+| `rowElement`            | `Element`       | Row element containing the taskbar.                  |
+| `taskLabelColor`        | `string`        | Color of the task label text.                        |
+| `taskbarBgColor`        | `string`        | Background color of the taskbar.                     |
+| `taskbarBorderColor`    | `string`        | Border color of the taskbar.                         |
 | `taskbarElement`        | `Element`       | Defines the taskbar element.                         |
 | `taskbarType`           | `string`        | Defines the taskbar type.                            |
 
@@ -4491,21 +4513,21 @@ export class AppComponent {
 
 ## recordDoubleClick
 
-The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#recorddoubleclick) event is triggered when a row in the Gantt is double-clicked. It enables interaction with task data through custom actions or UI enhancements.
+The [recordDoubleClick](https://ej2.syncfusion.com/react/documentation/api/gantt/#recorddoubleclick) event is triggered when a row in the Gantt Chart is double-clicked. It enables custom actions based on the selected task, such as opening detailed views, initiating inline editing, or displaying contextual information.
 
-The `recordDoubleClick` event provides an argument of type [RecordDoubleClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/recorddoubleclickeventargs/) with the following properties:
+The event provides an argument of type [RecordDoubleClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/recorddoubleclickeventargs/) with the following properties:
 
-| **Property**       | **Type**       | **Description**                                                  |
-|--------------------|----------------|------------------------------------------------------------------|
-| `cell`             | `Element`      | Defines the cell element.                                        |
-| `cellIndex`        | `number`       | Defines the cell index.                                          |
-| `column`           | `Column`       | Defines the column object.                                       |
-| `foreignKeyData`   | `Object`       | Defines the foreign key row data associated with this column.    |
-| `name`             | `string`       | Defines the name of the event.                                   |
-| `row`              | `Element`      | Defines the row element.                                         |
-| `rowData`          | `IGanttData`   | Defines the data of the record.                                  |
-| `rowIndex`         | `number`       | Defines the row index of the record.                             |
-| `target`           | `Element`      | Defines the target element.                                      |
+| **Property**         | **Type**         | **Description**                                       |
+|----------------------|------------------|-------------------------------------------------------|
+| `cell`               | `Element`        | The cell element that was double-clicked.             |
+| `cellIndex`          | `number`         | Index of the clicked cell within the row.             |
+| `column`             | `Column`         | Column configuration for the clicked cell.            |
+| `foreignKeyData`     | `Object`         | Foreign key data linked to the column, if applicable. |
+| `name`               | `string`         | Name of the event (**recordDoubleClick**).            |
+| `row`                | `Element`        | The row element that was double-clicked.              |
+| `rowData`            | `IGanttData`     | Data object representing the selected task.           |
+| `rowIndex`           | `number`         | Index of the row in the data source.                  |
+| `target`             | `Element`        | DOM element that initiated the double-click.          |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -4630,14 +4652,14 @@ export class AppComponent {
 
 ## resizeStart
 
-The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizestart) event is triggered when a column resize action begins in the Gantt chart. It provides an opportunity to intercept the resizing process, apply validations, or restrict resizing for specific columns. This event is useful for customizing layout behavior and tracking user interactions during column adjustments
+The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizestart) event is triggered when a column resize action begins in the Gantt chart. It allows interception of the resize process to apply validations or restrict resizing for specific columns.
 
-The `resizeStart` event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
 
-| **Property**   | **Type**    | **Description**                          |
-|----------|---------|--------------------------------------|
-| `cancel`   | `boolean` | Defines the cancel option value.     |
-| `column`   | `Column`  | Defines the resizing column details. |
+| **Property** | **Type**    | **Description**                                  |
+|--------------|-------------|--------------------------------------------------|
+| `cancel`     | `boolean`   | Prevents column resizing when set to **true**.   |
+| `column`     | `Column`    | Details of the column being resized initially.   |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -4761,15 +4783,14 @@ export class AppComponent {
 
 ## resizeStop
 
-The [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizestop) event is triggered when a column resize operation is completed in the Gantt chart. It provides access to the final column dimensions, enabling developers to apply layout updates, persist user preferences, or trigger related UI adjustments. This event supports scenarios such as saving column widths, recalculating dependent components, and enhancing responsiveness based on user-driven changes.
+The [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizestop) event is triggered when a column resize operation is completed in the Gantt chart. It enables layout updates, persistence of dimensions, or UI adjustments.
 
-The `resizeStop` event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
 
-| **Property**   | **Type**    | **Description**                          |
-|----------|---------|--------------------------------------|
-| `cancel`   | `boolean` | Defines the cancel option value.     |
-| `column`   | `Column`  | Defines the resizing column details. |
-
+| **Property** | **Type**    | **Description**                                  |
+|--------------|-------------|--------------------------------------------------|
+| `cancel`     | `boolean`   | Cancels the resize operation when set to **true**.  |
+| `column`     | `Column`    | Provides information about the resized column.   |
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { Column, GanttModule, ResizeService } from '@syncfusion/ej2-angular-gantt';
@@ -4887,12 +4908,12 @@ export class AppComponent {
 
 The [resizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizing) event is triggered continuously during column resizing in the Gantt chart. It provides access to the current column width and supports dynamic updates to layout, styling, or constraints while the resize operation is in progress. This event is commonly used to enforce minimum or maximum widths, preview layout changes, or display contextual indicators during interaction.
 
-The `resizing` event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
 
-| **Property**   | **Type**    | **Description**                          |
-|----------|---------|--------------------------------------|
-| `cancel`   | `boolean` | Defines the cancel option value.     |
-| `column`   | `Column`  | Defines the resizing column details. |
+| **Property** | **Type**    | **Description**                                  |
+|--------------|-------------|--------------------------------------------------|
+| `cancel`     | `boolean`   | Stops resizing dynamically during interaction.   |
+| `column`     | `Column`    | Current column details during resizing process.  |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5011,14 +5032,14 @@ export class AppComponent {
 
 The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdatabound) event is triggered each time a row is bound to data in the Gantt chart. It enables customization of row appearance and content based on the associated task data. This event supports scenarios such as applying conditional formatting, injecting tooltips or icons, and modifying row structure to reflect task-specific context or status.
 
-The `rowDataBound` event provides an argument of type [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDataBoundEventArgs/) with the following properties:
+The event provides an argument of type [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDataBoundEventArgs/) with the following properties:
 
-| **Property**       | **Type**         | **Description**                                 |
-|----------------|--------------|---------------------------------------------|
-| `data`         | `IGanttData` | Defines the data collections.               |
-| `isSelectable` | `boolean`    | Defines whether the row should be selectable or not. |
-| `row`          | `Element`    | Defines the row element.                    |
-| `rowHeight`    | `number`     | Defines the row height.                     |
+| **Property**     | **Type**         | **Description**                                               |
+|------------------|------------------|---------------------------------------------------------------|
+| `data`           | `IGanttData`     | Task data bound to the current row.                           |
+| `isSelectable`   | `boolean`        | Indicates if the row is selectable or not.                    |
+| `row`            | `Element`        | Row element rendered in the Gantt Chart.                      |
+| `rowHeight`      | `number`         | Height of the row being rendered.                             |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5138,18 +5159,18 @@ export class AppComponent {
 
 The [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselected) event is triggered when a previously selected row is deselected in the Gantt chart. It enables logic execution tied to selection changes, such as removing visual highlights, updating contextual UI elements, or tracking interaction patterns. This event supports scenarios involving both user-driven and programmatic deselection, ensuring consistent behavior across selection workflows.
 
-The `rowDeselected` event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowdeselecteventargs/) with the following properties:
+The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDeselectEventArgs/) with the following properties:
 
-| **Property**               | **Type**               | **Description**                                                  |
-|----------------------------|------------------------|------------------------------------------------------------------|
-| `data`                     | `IGanttData[]`         | Defines the data collections.                                    |
-| `foreignKeyData`           | `Object` \| `Object[]` | Defines the foreign key row data associated with this column.    |
-| `isHeaderCheckboxClicked` | `boolean`              | Indicates whether the header checkbox was clicked.               |
-| `isInteracted`            | `boolean`              | Indicates whether the event was triggered by interaction.        |
-| `row`                      | `Element`              | Defines the deselected row.                             |
-| `rowIndex`                 | `number`               | Defines the deselected row index.                       |
-| `rowIndexes`               | `number[]`             | Defines the deselected row indexes.                     |
-| `target`                   | `Element`              | Defines the target element for row deselect.                     |
+| **Property**              | **Type**                  | **Description**                              |
+|---------------------------|---------------------------|----------------------------------------------|
+| `data`                    | `IGanttData[]`            | Data for the row(s) that were deselected.    |
+| `foreignKeyData`          | `Object` \| `Object[]`    | Foreign key data linked to deselected row(s).|
+| `isHeaderCheckboxClicked`| `boolean`                 | **True** if header checkbox triggered deselection. |
+| `isInteracted`            | `boolean`                 | **True** if deselection was triggered by interaction. |
+| `row`                     | `Element`                 | Row element that was deselected.             |
+| `rowIndex`                | `number`                  | Index of the deselected row.                 |
+| `rowIndexes`              | `number[]`                | Indexes of all deselected rows.              |
+| `target`                  | `Element`                 | Target element that triggered the deselection.|
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5274,18 +5295,18 @@ export class AppComponent {
 
 The [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselecting) event is triggered before a selected row is deselected in the Gantt chart. It enables conditional control over the deselection process, allowing validations, confirmation prompts, or logic to prevent deselection based on task state or application rules. This event supports consistent behavior across both interactive and programmatic selection workflows.
 
-The `rowDeselecting` event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDeselectEventArgs/) with the following properties:
+The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDeselectEventArgs/) with the following properties:
 
-| **Property**               | **Type**               | **Description**                                                  |
-|----------------------------|------------------------|------------------------------------------------------------------|
-| `data`                     | `IGanttData[]`         | Defines the data collections.                                    |
-| `foreignKeyData`           | `Object` \| `Object[]` | Defines the foreign key row data associated with this column.    |
-| `isHeaderCheckboxClicked` | `boolean`              | Indicates whether the header checkbox was clicked.               |
-| `isInteracted`            | `boolean`              | Indicates whether the event was triggered by interaction.        |
-| `row`                     | `Element`              | Defines the row being deselected.                                |
-| `rowIndex`                | `number`               | Defines the index of the row being deselected.                   |
-| `rowIndexes`              | `number[]`             | Defines the indexes of the rows being deselected.                |
-| `target`                  | `Element`              | Defines the target element for the deselection.                  |
+| **Property**               | **Type**                | **Description** |
+|----------------------------|-------------------------|------------------------------------------|
+| `data`                     | `IGanttData[]`          | Data for the row(s) being deselected. |
+| `foreignKeyData`           | `Object` \| `Object[]`  | Foreign key data linked to deselected row(s). |
+| `isHeaderCheckboxClicked`  | `boolean`               | **True** if header checkbox triggered deselection. |
+| `isInteracted`            | `boolean`                | **True** if deselection was triggered by interaction.|
+| `row`                     | `Element`                | Row element being deselected.         |
+| `rowIndex`                | `number`                 | Index of the row being deselected.    |
+| `rowIndexes`              | `number[]`               | Indexes of all rows being deselected. |
+| `target`                  | `Element`                | Target element that triggered the deselection.|
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5409,19 +5430,18 @@ export class AppComponent {
 
 ## rowDrag
 
-The [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrag) is triggered while a row is being dragged in the Gantt chart. It enables actions that respond to row dragging, such as displaying visual indicators, enforcing drag restrictions, or tracking user interaction.
+The [rowDrag](https://ej2.syncfusion.com/react/documentation/api/gantt/#rowdrag) event is triggered while a row is being dragged in the Gantt Chart. It allows customization during drag operations, such as showing visual indicators, applying drag constraints, or tracking drag operations.
 
-The `rowDrag` event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDragEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs/) with the following properties:
 
 | **Property**     | **Type**        | **Description**                                      |
 |------------------|-----------------|------------------------------------------------------|
-| `data`           | `Object[]`      | Defines the selected row data.                       |
-| `dropIndex`      | `number`        | Defines the target element's index.                  |
-| `fromIndex`      | `number`        | Defines the drag element's original index.           |
-| `originalEvent`  | `object`        | Defines the mouse event.                             |
-| `rows`           | `Element[]`     | Defines the selected row’s elements.                 |
-| `target`         | `Element`       | Defines the target element from which drag starts.   |
-
+| `data`           | `Object[]`      | Data for the selected rows being dragged.            |
+| `dropIndex`      | `number`        | Index of the target row where the drop is intended.  |
+| `fromIndex`      | `number`        | Original index of the dragged row.                   |
+| `originalEvent`  | `object`        | Mouse event associated with the drag action.         |
+| `rows`           | `Element[]`     | DOM elements of the selected rows.                   |
+| `target`         | `Element`       | Target element where the drag started.               |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5560,18 +5580,18 @@ export class AppComponent {
 
 ## rowDragStart
 
-The [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdragstart) event is triggered when a row drag operation begins in the Gantt chart. It enables actions that respond to drag initiation, such as applying restrictions, customizing visuals, or tracking user interaction.
+The [rowDragStart](https://ej2.syncfusion.com/react/documentation/api/gantt/#rowdragstart) event is triggered when a row drag operation begins in the Gantt Chart. It allows handling of drag initiation, such as applying movement restrictions, customizing visuals, or initiating tracking mechanisms.
 
-The `rowDragStart` event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDragEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs/) with the following properties:
 
-| **Property**     | **Type**        | **Description**                                      |
-|------------------|-----------------|------------------------------------------------------|
-| `data`           | `Object[]`      | Defines the selected row data.                       |
-| `dropIndex`      | `number`        | Defines the target element's index.                  |
-| `fromIndex`      | `number`        | Defines the drag element's original index.           |
-| `originalEvent`  | `object`        | Defines the mouse event.                             |
-| `rows`           | `Element[]`     | Defines the selected row’s elements.                 |
-| `target`         | `Element`       | Defines the target element from which drag starts.   |
+| **Property**     | **Type**        | **Description**                            |
+|------------------|-----------------|--------------------------------------------|
+| `data`           | `Object[]`      | Selected rows data .                       |
+| `dropIndex`      | `number`        | Target index for dropping the dragged row. |
+| `fromIndex`      | `number`        | Original index of the dragged row.         |
+| `originalEvent`  | `object`        | Native mouse event that started the drag.  |
+| `rows`           | `Element[]`     | DOM elements of the dragged rows.          |
+| `target`         | `Element`       |  Element where the drag was initiated.     |
 
 ```ts
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -5687,18 +5707,18 @@ export class AppComponent implements OnInit {
 
 ## rowDragStartHelper
 
-The [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdragstarthelper) event is triggered before a row drag operation begins in the Gantt chart. It enables actions that respond to drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
+The [rowDragStartHelper](https://ej2.syncfusion.com/react/documentation/api/gantt/#rowdragstarthelper) event is triggered before a row drag operation begins in the Gantt Chart. It allows handling of drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
 
-The `rowDragStartHelper` event uses [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDragEventArgs/) and provides the following properties:
+The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs/) with the following properties:
 
-| **Property**     | **Type**        | **Description**                                      |
-|------------------|-----------------|------------------------------------------------------|
-| `data`           | `Object[]`      | Defines the selected row data.                       |
-| `dropIndex`      | `number`        | Defines the target element's index.                  |
-| `fromIndex`      | `number`        | Defines the drag element's original index.           |
-| `originalEvent`  | `object`        | Defines the mouse event.                             |
-| `rows`           | `Element[]`     | Defines the selected row’s elements.                 |
-| `target`         | `Element`       | Defines the target element from which drag starts.   |
+| **Property**       | **Type**    | **Description**                                  |
+|------------------|---------------|--------------------------------------------------|
+| `data`           | `Object[]`    | Selected rows data objects.                      |
+| `dropIndex`      | `number`      | Target index for potential drop.                 |
+| `fromIndex`      | `number`      | Original index of the row being dragged.         |
+| `originalEvent`  | `object`      | Native mouse event that initiated the drag.      |
+| `rows`           | `Element[]`   | DOM elements of the selected rows.               |
+| `target`         | `Element`     | Element where the drag was initiated.            |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5823,22 +5843,22 @@ export class AppComponent {
 
 ## rowDrop
 
-The [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event is triggered after a row has been dropped in a new position in the Gantt chart. It enables actions that respond to row reordering, such as updating data, validating hierarchy changes, or tracking user interaction.
+The [rowDrop](https://ej2.syncfusion.com/react/documentation/api/gantt/#rowdrop) event is triggered after a row is dropped into a new position in the Gantt Chart. It allows handling of row reordering, such as updating data, validating hierarchy changes, or tracking user actions.
 
-The `rowDrop` event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs/) with the following properties:
 
-| **Property**       | **Type**         | **Description**                                           |
-|--------------------|------------------|-----------------------------------------------------------|
-| `data`             | `Object[]`       | Defines the selected row data.                            |
-| `dropIndex`        | `number`         | Defines the target element's index.                       |
-| `dropPosition`     | `string`         | Defines the drop position of the dragged record.          |
-| `dropRecord`       | `IGanttData`     | Defines the dropped record after modification.            |
-| `fromIndex`        | `number`         | Defines the drag element's original index.                |
-| `modifiedRecords`  | `IGanttData[]`   | Defines the modified records after drop.                  |
-| `originalEvent`    | `object`         | Defines the mouse event.                                  |
-| `requestType`      | `string`         | Defines the request type.                                 |
-| `rows`             | `Element[]`      | Defines the selected row’s elements.                      |
-| `target`           | `Element`        | Defines the target element from which drag starts.        |
+| **Property**      | **Type**       | **Description**                                     |
+|-------------------|------------------|---------------------------------------------------|
+| `data`            | `Object[]`       | Selected rows data objects.                       |
+| `dropIndex`       | `number`         | Target index for the dropped row.                 |
+| `dropPosition`    | `string`         | Position relative to the target row.              |
+| `dropRecord`      | `IGanttData`     | Dropped record after reordering.                  |
+| `fromIndex`       | `number`         | Original index of the dragged row.                |
+| `modifiedRecords` | `IGanttData[]`   | Records updated after the drop.                   |
+| `originalEvent`   | `object`         | Native mouse event that completed the drag.       |
+| `requestType`     | `string`         | Type of request triggered by the drop.            |
+| `rows`            | `Element[]`      | DOM elements of the dragged rows.                 |
+| `target`          | `Element`        | Element where the drag was initiated.             |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -5966,20 +5986,20 @@ export class AppComponent {
 
 The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselected) event is triggered after a row has been selected in the Gantt chart. It enables actions that respond to selection changes, such as styling the row, displaying related details, or tracking user interaction.
 
-The `rowSelected` event provides an argument of type [RowSelectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs/) with the following properties:
+The event provides an argument of type [RowSelectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs/) with the following properties:
 
-| **Property**               | **Type**               | **Description**                                                  |
-|----------------------------|------------------------|------------------------------------------------------------------|
-| `data`                     | `IGanttData`           | Defines the data collections.                                    |
-| `foreignKeyData`           | `Object` \| `Object[]` | Defines the foreign key row data associated with this column.    |
-| `isHeaderCheckboxClicked` | `boolean`              | Indicates whether the header checkbox was clicked.               |
-| `isInteracted`            | `boolean`              | Indicates whether the event was triggered by interaction.        |
-| `previousRow`             | `Element`              | Defines the previously selected row.                             |
-| `previousRowIndex`        | `number`               | Defines the previously selected row index.                       |
-| `row`                     | `Element` \| `Element[]`| Defines the selected row.                             |
-| `rowIndex`                | `number`               | Defines the selected row index.                       |
-| `rowIndexes`              | `number[]`             | Defines the selected row indexes.                     |
-| `target`                  | `Element`              | Defines the target element for selection.                        |
+| **Property**              | **Type**                  |  **Description**                            |
+|---------------------------|---------------------------|---------------------------------------------|
+| `data`                    | `IGanttData`              | Data for the selected row.                  |
+| `foreignKeyData`          | `Object` \| `Object[]`    | Foreign key data linked to selected row.    | 
+| `isHeaderCheckboxClicked`| `boolean`                  | **True** if header checkbox triggered selection.|
+| `isInteracted`            | `boolean`                 | **True** if selection was triggered by  interaction.|
+| `previousRow`             | `Element`                 | Previously selected row element.             |
+| `previousRowIndex`        | `number`                  | Index of the previously selected row.        |
+| `row`                     | `Element` \| `Element[]`  | Currently selected row element(s).           | 
+| `rowIndex`                | `number`                  | Index of the selected row.                   |
+| `rowIndexes`              | `number[]`                | Indexes of all selected rows.                |
+| `target`                  | `Element`                 | Target element that triggered the selection. |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6108,25 +6128,25 @@ export class AppComponent implements OnInit {
 
 ## rowSelecting
 
-The [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselecting) event is triggered before a row is selected in the Gantt chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
+The [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselecting) event is triggered before a row is selected in the Gantt Chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
 
-The `rowSelecting` event provides an argument of type [RowSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs/) with the following properties:
+The event provides an argument of type [RowSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs/) with the following properties:
 
-| **Property**               | **Type**               | **Description**                                                  |
-|----------------------------|------------------------|------------------------------------------------------------------|
-| `cancel`                   | `boolean`              | Defines the cancel option value.                                 |
-| `data`                     | `IGanttData`           | Defines the data collections.                                    |
-| `foreignKeyData`           | `Object` \| `Object[]` | Defines the foreign key row data associated with this column.    |
-| `isCtrlPressed`            | `boolean`              | Indicates whether the CTRL key is pressed.                       |
-| `isHeaderCheckboxClicked` | `boolean`              | Indicates whether the header checkbox was clicked.               |
-| `isInteracted`            | `boolean`              | Indicates whether the event was triggered by interaction.        |
-| `isShiftPressed`          | `boolean`              | Indicates whether the SHIFT key is pressed.                      |
-| `previousRow`             | `Element`              | Defines the previously selected row.                             |
-| `previousRowIndex`        | `number`               | Defines the previously selected row index.                       |
-| `row`                     | `Element` \| `Element[]`| Defines the selected/deselected row.                             |
-| `rowIndex`                | `number`               | Defines the selected/deselected row index.                       |
-| `rowIndexes`              | `number[]`             | Defines the selected/deselected row indexes.                     |
-| `target`                  | `Element`              | Defines the target element for selection.                        |
+| **Property**              | **Type**                  | **Description**                              |
+|---------------------------|---------------------------|----------------------------------------------|
+| `cancel`                  | `boolean`                 | Prevents row selection when set to **true**. |
+| `data`                    | `IGanttData`              | Data for the row being selected.             |
+| `foreignKeyData`          | `Object` \| `Object[]`    | Foreign key data linked to selected row.     |
+| `isCtrlPressed`           | `boolean`                 | **True** if CTRL key was pressed during selection. |
+| `isHeaderCheckboxClicked` | `boolean`                 | **True** if header checkbox triggered selection. |
+| `isInteracted`            | `boolean`                 | **True** if selection was triggered by interaction.|
+| `isShiftPressed`          | `boolean`                 | **True** if SHIFT key was pressed during selection.|
+| `previousRow`             | `Element`                 | Previously selected row element.             |
+| `previousRowIndex`        | `number`                  | Index of the previously selected row.        |
+| `row`                     | `Element` \| `Element[]`  | Row element(s) being selected or deselected. |
+| `rowIndex`                | `number`                  | Index of the row being selected.             |
+| `rowIndexes`              | `number[]`                | Indexes of all rows being selected.          |
+| `target`                  | `Element`                 | Target element that triggered the selection. |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6252,14 +6272,19 @@ export class AppComponent {
 
 ## splitterResizeStart
 
-The [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#splitterresizestart) event is triggered when the splitter bar starts resizing in the Gantt chart layout. It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
+The [splitterResizeStart](https://ej2.syncfusion.com/react/documentation/api/gantt/#splitterresizestart) event is triggered when the splitter bar begins resizing in the Gantt Chart layout.It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
 
-The `splitterResizeStart` event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
+
+| **Property**     | **Type**               | **Description**                          |
+|------------------|------------------------|------------------------------------------|
+| `cancel`         | `boolean`              | Defines whether the event is cancelable. |
+| `column`         | `Column`               | Defines the resizing column details.     |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule, ISplitterResizedEventArgs } from '@syncfusion/ej2-angular-gantt';
-import { ResizeEventArgs } from '@syncfusion/ej2-layouts';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ResizeArgs } from '@syncfusion/ej2-angular-grids';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { GanttComponent, EditService, ToolbarService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 
@@ -6367,34 +6392,33 @@ export class AppComponent {
   }
 
   // Triggered when splitter resizing starts.
-  public splitterResizeStart(args: ResizeEventArgs): void {
+  public splitterResizeStart(args: ResizeArgs): void {
     console.log('Splitter resize started:', args);
 
-    // Prevent resizing if screen width is less than 768 pixels
+    // Prevent resizing if screen width is less than 768 pixels.
     if (window.innerWidth < 768) {
       args.cancel = true;
       console.log('Resize cancelled due to small screen width');
     }
   }
 }
-
 ```
 
 ## splitterResized
 
-The [splitterResized](https://ej2.syncfusion.com/angular/documentation/api/gantt/#splitterresized) event is triggered after the splitter bar has been resized in the Gantt chart layout. It enables actions that respond to final layout changes, such as saving pane widths, updating dependent components, or tracking user interaction.
+The [splitterResized](https://ej2.syncfusion.com/react/documentation/api/gantt/#splitterresized) event is triggered after the splitter bar has been resized in the Gantt Chart layout. It enables actions that respond to final layout changes, such as saving pane dimensions, updating related components, or tracking user interaction.
 
-The `splitterResized` event provides an argument of type [ISplitterResizedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/isplitterresizedeventargs/) with the following properties:
+The event provides an argument of type [ISplitterResizedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/isplitterresizedeventargs/) with the following properties:
 
-| **Property**     | **Type**               | **Description**                                                  |
-|------------------|------------------------|------------------------------------------------------------------|
-| `cancel`         | `boolean`              | Defines whether the event is cancelable.                         |
-| `element`        | `HTMLElement`          | Defines the splitter container element.                          |
-| `event`          | `Event`                | Defines the event that triggered the resize.                     |
-| `index`          | `number[]`             | Defines the indexes of the panes being resized.                  |
-| `pane`           | `HTMLElement[]`        | Defines the pane elements involved in the resize.                |
-| `paneSize`       | `number[]`             | Defines the size of each resized pane.                           |
-| `separator`      | `HTMLElement`          | Defines the splitter bar element that was resized.               |
+| **Property**   | **Type**               | **Description**                              |
+|----------------|------------------------|----------------------------------------------|
+| `cancel`       | `boolean`              | Indicates if the event is cancelable.        |
+| `element`      | `HTMLElement`          | Splitter container element.                  |
+| `event`        | `Event`                | Event that triggered the resize.             |
+| `index`        | `number[]`             | Indexes of resized panes.                    |
+| `pane`         | `HTMLElement[]`        | Pane elements involved in resizing.          |
+| `paneSize`     | `number[]`             | Final sizes of the resized panes.            |
+| `separator`    | `HTMLElement`          | Splitter bar element that was resized.       |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6523,19 +6547,19 @@ export class AppComponent {
 
 ## splitterResizing
 
-The [splitterResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Gantt chart layout. It enables actions that respond to real-time layout changes, such as enforcing constraints, updating visuals, or tracking user interaction.
+The [splitterResizing](https://ej2.syncfusion.com/react/documentation/api/gantt/#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Gantt Chart layout. It enables responsive actions during resizing, such as enforcing layout constraints, updating visual elements, or tracking user interaction.
 
-The `splitterResizing` event provides an argument of type `ResizingEventArgs` with the following properties:
+The event provides an argument of type `ResizingEventArgs` with the following properties:
 
-| **Property**   | **Type**         | **Description**                                                                 |
-|----------------|------------------|---------------------------------------------------------------------------------|
-| `name`         | `string`         | Name of the event (`splitterResizing`).                                         |
-| `element`      | `HTMLElement`    | The splitter container element.                                                 |
-| `event`        | `MouseEvent`     | The mouse event that triggered the resize.                                      |
-| `index`        | `number[]`       | Indexes of the panes being resized.                                             |
-| `pane`         | `HTMLElement[]`  | Array of pane elements involved in the splitter layout.                         |
-| `paneSize`     | `number[]`       | Current sizes of the panes during the resize.                                   |
-| `separator`    | `HTMLElement`    | The splitter bar element being dragged.                                         |
+| **Property**   | **Type**         | **Description**                              |
+|----------------|------------------|----------------------------------------------|
+| `name`         | `string`         | Event name: **splitterResizing**.            |
+| `element`      | `HTMLElement`    | Splitter container element.                  |
+| `event`        | `MouseEvent`     | Mouse event triggering the resize.           |
+| `index`        | `number[]`       | Indexes of panes being resized.              |
+| `pane`         | `HTMLElement[]`  | Pane elements involved in resizing.          |
+| `paneSize`     | `number[]`       | Current sizes of the panes.                  |
+| `separator`    | `HTMLElement`    | Splitter bar element being dragged.          |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6652,22 +6676,22 @@ export class AppComponent {
 
 ## taskbarEdited
 
-The [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbaredited) event is triggered after a taskbar has been modified in the Gantt chart. It enables actions that respond to taskbar changes, such as saving updates, validating edits, or updating related components.
+The [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbaredited) event is triggered after a taskbar is modified in the Gantt Chart. It enables actions that respond to task updates, such as saving changes, validating edits, or updating related components.
 
-The `taskbarEdited` event provides an argument of type [TaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/itaskbareditedeventargs/) with the following properties:
+The event provides an argument of type [TaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/itaskbareditedeventargs/) with the following properties:
 
-| **Property**          | **Type**         | **Description**                                           |
-|-----------------------|------------------|-----------------------------------------------------------|
-| `action`              | `string`         | Defines the action.                                       |
-| `cancel`              | `boolean`        | Defines whether the event is cancelable.                  |
-| `data`                | `IGanttData`     | Defines the data.                                         |
-| `editingFields`       | `ITaskData`      | Defines the editing fields.                               |
-| `previousData`        | `ITaskData`      | Defines the previous value of the editing task.           |
-| `recordIndex`         | `number`         | Defines the index of the edited task.                     |
-| `roundOffDuration`    | `boolean`        | Defines whether the duration should be rounded off.       |
-| `segmentIndex`        | `number`         | Defines the segment index.                                |
-| `target`              | `Element`        | Defines the target element.                               |
-| `taskBarEditAction`   | `string`         | Defines the type of taskbar edit action.                  |
+| **Property**          | **Type**         | **Description**                              |
+|-----------------------|------------------|----------------------------------------------|
+| `action`              | `string`         | Type of taskbar edit action.                 |
+| `cancel`              | `boolean`        | Indicates if the event is cancelable.        |
+| `data`                | `IGanttData`     | Data of the edited task.                     |
+| `editingFields`       | `ITaskData`      | Fields being edited in the task.             |
+| `previousData`        | `ITaskData`      | Task data before the edit.                   |
+| `recordIndex`         | `number`         | Index of the edited task.                    |
+| `roundOffDuration`    | `boolean`        | Indicates if duration is rounded off.        |
+| `segmentIndex`        | `number`         | Index of the edited segment.                 |
+| `target`              | `Element`        | Target element of the edit.                  |
+| `taskBarEditAction`   | `string`         | Type of taskbar edit performed.              |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6797,20 +6821,20 @@ export class AppComponent {
 
 The [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt chart. It enables actions that respond to live taskbar edits, such as enforcing constraints, updating tooltips, or canceling the edit based on conditions.
 
-The `taskbarEditing` event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/itaskbareditedeventargs/) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarEditedEventArgs/) with the following properties:
 
-| **Property**          | **Type**         | **Description**                                           |
-|-----------------------|------------------|-----------------------------------------------------------|
-| `action`              | `string`         | Defines the action.                                       |
-| `cancel`              | `boolean`        | Defines whether the event is cancelable.                  |
-| `data`                | `IGanttData`     | Defines the data.                                         |
-| `editingFields`       | `ITaskData`      | Defines the editing fields.                               |
-| `previousData`        | `ITaskData`      | Defines the previous value of the editing task.           |
-| `recordIndex`         | `number`         | Defines the index of the edited task.                     |
-| `roundOffDuration`    | `boolean`        | Defines whether the duration should be rounded off.       |
-| `segmentIndex`        | `number`         | Defines the segment index.                                |
-| `target`              | `Element`        | Defines the target element.                               |
-| `taskBarEditAction`   | `string`         | Defines the type of taskbar edit action.                  |
+| **Property**          | **Type**         | **Description**                              |
+|-----------------------|------------------|----------------------------------------------|
+| `action`              | `string`         | Type of taskbar edit in progress.            |
+| `cancel`              | `boolean`        | Set **true** to cancel the edit.             |
+| `data`                | `IGanttData`     | Data of the task being edited.               |
+| `editingFields`       | `ITaskData`      | Fields currently being modified.             |
+| `previousData`        | `ITaskData`      | Task data before the edit.                   |
+| `recordIndex`         | `number`         | Index of the task being edited.              |
+| `roundOffDuration`    | `boolean`        | Indicates if duration should be rounded.     |
+| `segmentIndex`        | `number`         | Index of the segment being edited.           |
+| `target`              | `Element`        | Target element involved in the edit.         |
+| `taskBarEditAction`   | `string`         | Specific type of taskbar edit action.        |
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -6936,8 +6960,14 @@ taskbarEditing(args: ITaskbarEditedEventArgs): void {
 
 The [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbarclick) event is triggered when any toolbar item is clicked in the Gantt chart. It enables actions that respond to toolbar interactions, such as overriding default behavior, confirming actions, or triggering external workflows.
 
-The `toolbarClick` event provides an argument of type `ClickEventArgs` with the following properties:
-The `toolbarClick` event provides an argument of type `ClickEventArgs` with the following properties:
+The event provides an argument of type [ClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/toolbar/clickEventArgs/) with the following properties:
+
+| **Property**     | **Type**           | **Description**               |
+|--------------------|------------------|-------------------------------|
+| `name`             | `string`         | Specifies name of the event   |
+| `item`             | `object`         | Clicked toolbar item info     |
+| `originalEvent`    | `PointerEvent`   | Native DOM event              |
+| `cancel`           | `boolean`        | Cancel default action         |
 
 ```ts
 import { NgModule } from '@angular/core'

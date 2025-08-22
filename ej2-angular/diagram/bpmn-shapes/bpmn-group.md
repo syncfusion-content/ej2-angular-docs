@@ -1,16 +1,22 @@
 ---
 layout: post
-title: Bpmn Events in Angular Diagram component | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: BPMN Group in Angular Diagram component | Syncfusion®
+description: Learn how to create and customize BPMN group shapes for organizing related elements in Syncfusion® Angular Diagram component.
 platform: ej2-angular
 control: Bpmn Events 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Group
+# BPMN Group in Angular Diagram component
 
-A group is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. To create a group, the shape property of the node should be set as **group**. The following code example illustrates how to create a BPMN group.
+## Overview
+
+A BPMN group is a visual mechanism used to organize and frame related elements within a business process diagram. Groups indicate that the enclosed elements logically belong together while providing no additional semantic meaning beyond visual organization. Unlike other BPMN constructs, groups serve purely as organizational containers to improve diagram readability and structure.
+
+## Creating a BPMN Group
+
+To create a BPMN group, set the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnShapes/) property of the node to **group**. The group appears as a rounded rectangle with dashed borders that encompasses the grouped elements.
 
 ![BPMN Group Shape](../images/Group.png)
 
