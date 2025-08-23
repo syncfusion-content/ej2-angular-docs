@@ -1,30 +1,36 @@
 ---
 layout: post
-title: Undo redo in Angular Diagram component | Syncfusion®
-description: Learn here all about Undo redo in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Undo and Redo Functionality in Angular Diagram component | Syncfusion®
+description: Learn how to implement undo and redo functionality with history management in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Undo redo 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo redo in Angular Diagram control
+# Undo and Redo in Angular Diagram Component
 
-Diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.
+The Angular Diagram component automatically tracks all user interactions and programmatic changes, providing robust undo and redo functionality. This feature enables users to reverse or restore actions, making diagram editing more intuitive and error-tolerant.
 
-## Undo and redo
+## Prerequisites and setup
 
-Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
+To enable undo/redo functionality in the diagram, inject the UndoRedo module into the diagram component.
 
-N> If you want to use Undo-Redo in diagram, you need to inject UndoRedo in the diagram.
+N> The UndoRedo module must be injected to access undo/redo features in the diagram component.
 
-## Undo/redo through shortcut keys
+## Basic undo and redo operations
 
-Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is **`Ctrl+z`** and shortcut key for redo is **`Ctrl+y`**.
+The diagram provides built-in support to track changes made through both user interactions and public API calls. These changes can be reversed or restored using keyboard shortcuts or programmatic commands.
 
-## Undo/redo through public APIs
+### Keyboard shortcuts
 
-The client-side methods [`undo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#undo) and [`redo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#redo) help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
+Use these standard keyboard shortcuts for quick undo/redo operations:
+- **Undo**: `Ctrl+Z`
+- **Redo**: `Ctrl+Y`
+
+### Programmatic undo and redo
+
+The [`undo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#undo) and [`redo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#redo) methods allow you to control undo/redo operations programmatically. The following example demonstrates how to implement these methods:
 
 ```typescript
 @Component({
@@ -45,15 +51,22 @@ export class AppComponent {
     }
 }
 ```
-Undo/Redo for diagram can be enabled/disabled with the [`constraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/) property of diagram.
 
-When a change in the diagram is reverted or restored (undo/redo), the [`historyChange`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#historychange) event gets triggered.
+### Enabling and disabling undo/redo
 
-## Group multiple changes
+Control undo/redo availability using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/) property of the diagram component.
 
-History list allows to revert or restore multiple changes through a single undo/redo command. For example, revert/restore the fill color change of multiple elements at a time.
+### History change events
 
-The diagram method [`startGroupAction`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#startgroupaction) allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.The diagram method [`endGroupAction`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#endgroupaction) allows you to end the group actions that are stored in the stack history. The following code illustrates how to undo/redo multiple fillColor change of a node at a time.
+The [`historyChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#historychange) event triggers whenever an action is undone or redone, allowing you to respond to history state changes.
+
+## Advanced history management
+
+### Grouping multiple actions
+
+Group related changes into a single undo/redo operation using the history grouping feature. This approach allows users to undo or redo multiple related changes simultaneously rather than reversing each action individually.
+
+Use [`startGroupAction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#startgroupaction) to begin grouping actions and [`endGroupAction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#endgroupaction) to complete the group. The following example shows how to group multiple fill color changes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,9 +80,9 @@ The diagram method [`startGroupAction`](https://helpej2.syncfusion.com/angular/d
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/groupAction-cs1" %}
 
-## Stack limit
+### Managing history stack size
 
-The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#stacklimit) property of history manager is used to limits the number of actions to be stored on the history manager.
+The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#stacklimit) property controls the maximum number of actions stored in the history manager. Setting an appropriate limit helps manage memory usage in applications with extensive editing operations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,9 +96,9 @@ The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/canLog-cs2" %}
 
-## Restrict Undo/Redo
+### Restricting history logging
 
-Undo, Redo process can be avoided for particular element by using [`canLog`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#canlog) property in the history manager. The following example illustrates how to prevent history entry using `canLog` function.
+Prevent specific actions from being recorded in the history using the [`canLog`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#canlog) property. This feature is useful when certain operations should not be undoable.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,9 +112,11 @@ Undo, Redo process can be avoided for particular element by using [`canLog`](htt
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/canLog-cs1" %}
 
-## undo/redo stack
+## History stack inspection
 
-The [`undoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#undostack) property is used to get the collection of undo actions which should be performed in the diagram. The [`redoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#redostack) property is used to get the collection of redo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
+### Accessing undo and redo stacks
+
+The history manager provides read-only access to both undo and redo stacks through the [`undoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#undostack) and [`redoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#redostack) properties:
 
 ```typescript
 @Component({
@@ -121,9 +136,9 @@ export class AppComponent {
 }
 ```
 
-## canUndo and canRedo 
+### Checking availability of undo and redo operations
 
-The [`canUndo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#canundo) property returns true if there are actions in the undo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the undo stack.The [`canRedo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#canredo) property returns true if there are actions in the redo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the redo stack.
+The [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#canundo) and [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#canredo) properties indicate whether undo or redo operations are available. These properties return true when actions exist in their respective history stacks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,11 +152,9 @@ The [`canUndo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/canUndo-cs1" %}
 
-## Current entry
+### Current entry tracking
 
-While performing interactions with a node or connector, the current history entry is added to the [`currentEntry`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#currententry) property of the [`historyManager`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#historymanager).
-
-The following code shows how to get the current entry from the diagram history:
+During user interactions with nodes or connectors, the current history entry is stored in the [`currentEntry`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#currententry) property of the [`historyManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#historymanager).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,9 +168,11 @@ The following code shows how to get the current entry from the diagram history:
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/currentEntry-cs1" %}
 
-## Clear history
+## History management utilities
 
-The [`clearHistory`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#clearhistory) method of diagram is used to remove all the recorded actions from the undo and redo history.
+### Clearing history
+
+Use the [`clearHistory`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clearhistory) method to remove all recorded actions from both undo and redo history stacks:
 
 ```typescript
 //Clears all the histories
@@ -165,9 +180,9 @@ this.diagram.clearHistory();
 
 ```
 
-## Get history stack
+### Retrieving history stacks
 
-The [`getHistoryStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#gethistorystack) method of the diagram retrieves the [`undoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#undostack) or [`redoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#redostack) from the historyManager. This method takes a single parameter, isUndoStack. Pass true to get the undoStack or false to get the redoStack.
+The [`getHistoryStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#gethistorystack) method retrieves either the [`undoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#undostack) or [`redoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#redostack) from the history manager. Pass true to get the undo stack or false to get the redo stack:
 
 ```typescript
 // Fetch undoStack from history manager
@@ -178,9 +193,11 @@ this.diagram.getHistoryStack(false)
 
 ```
 
-## History change event
+## Event handling
 
-The [`historyChange`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/iHistoryChangeArgs/) event triggers, whenever the interaction of the node and connector is take place. When interacting, the entries get added to the history manager to trigger this event. The following example shows how to get this event in diagram.
+### History change event
+
+The [`historyChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iHistoryChangeArgs/) event triggers whenever interactions with nodes and connectors occur. This event provides an opportunity to implement custom logic or UI updates based on history state changes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -194,4 +211,4 @@ The [`historyChange`](https://helpej2.syncfusion.com/angular/documentation/api/d
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/histroyChange-cs1" %}
 
-While interacting with diagram, this event can be used to do the customization.
+This event enables customization of the application behavior based on diagram interactions and history state changes.

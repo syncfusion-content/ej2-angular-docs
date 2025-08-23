@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # BarcodeGenerator in Angular Barcode component
 
+The BarcodeGenerator component enables you to generate and display various types of barcodes in Angular applications. This component supports multiple barcode symbologies including Code39, Code128, Codabar, and more, with extensive customization options for appearance and formatting.
+
 ## Code39
 
-The Code 39 character set includes the digits 0-9, the letters A-Z (upper case only), and the symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). A special start / stop character is placed at the beginning and ending of each barcode. The barcode can be of any length; even more than 25 characters begin to push the bounds. Code 39 is the only type of barcode that does not require a checksum for common use.
+Code 39 is a widely-used barcode symbology that supports a specific character set including digits 0-9, uppercase letters A-Z, and special symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). Each barcode includes special start and stop characters at the beginning and end. Code 39 can encode variable-length data, though barcodes with more than 25 characters may become difficult to scan reliably. This symbology is unique as it does not require a checksum for standard applications.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +30,7 @@ The Code 39 character set includes the digits 0-9, the letters A-Z (upper case o
 
 ## Code39 Extended
 
-Code 39 Extended is an extended version of Code 39 that supports ASCII character set. In Code 39 Extended, you can also code 26 lower letters (a-z) and the special characters in the keyboard.
+Code 39 Extended is an enhanced version of Code 39 that supports the full ASCII character set. This extended version enables encoding of lowercase letters (a-z) and additional special characters available on standard keyboards, providing greater flexibility for diverse data encoding requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +46,7 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 
 ## Code 11
 
-Code 11 is used primarily for labeling the telecommunication equipment’s. The character set includes the digits 0 to 9, a dash (-), and a start / stop code.
+Code 11 is primarily designed for labeling telecommunications equipment. The character set is limited to digits 0-9, a dash (-), and special start/stop characters. This symbology is commonly used in telecommunications and inventory management applications.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,11 +62,7 @@ Code 11 is used primarily for labeling the telecommunication equipment’s. The 
 
 ## Codabar
 
-Codabar is a variable length symbol that encodes the following 20 characters:
-
-0123456789-$:/.+ABCD
-
-The characters, A, B, C and D are used as start and stop characters. Codabar is used in libraries, blood banks, the package delivery industry and a variety of other information processing applications.
+Codabar is a variable-length symbology that encodes 20 specific characters: 0123456789-$:/.+ABCD. The characters A, B, C, and D serve as start and stop characters. This barcode type is extensively used in libraries, blood banks, package delivery services, and various information processing applications due to its reliability and ease of implementation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,12 +78,13 @@ The characters, A, B, C and D are used as start and stop characters. Codabar is 
 
 ## Code 32
 
-Code 32 is mainly used for coding pharmaceuticals, cosmetics and dietetics. It is often used to encode Italian Pharmacode that has the following structure:
-* ‘A’ character (ASCII 65), that is not really encoded.
-* 8 digits for Pharmacode (It generally begins with / and prefixed with 0).
-* 1 digit for checksum module 10, that is automatically calculated by barcode.
+Code 32 is specifically designed for pharmaceutical, cosmetics, and dietetics industries. This symbology is commonly used to encode Italian Pharmacode with the following structure:
 
-The value to be encoded must be 8 digits Pharmacode (prefix it with ‘0’ if necessary) and the 9th digit (the checksum) is automatically calculated by barcode.
+* 'A' character (ASCII 65) prefix, which is not encoded in the barcode itself
+* 8 digits representing the Pharmacode (typically begins with forward slash and is zero-prefixed if necessary)
+* 1 checksum digit (modulo 10) that is automatically calculated
+
+The input value must be an 8-digit Pharmacode. If the code has fewer than 8 digits, prefix it with zeros. The 9th digit (checksum) is automatically calculated and added by the barcode generator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,7 +100,7 @@ The value to be encoded must be 8 digits Pharmacode (prefix it with ‘0’ if n
 
 ## Code 93
 
-Code 93 is designed to complement and improve upon Code 39. It can represent the entire ASCII character set by using combinations of 2 characters. Code 93 is a continuous, variable-length symbology and produces denser code. The Standard Mode (default implementation) can encode uppercase letters (A-Z), digits (0-9), and special characters like *, -, $, %, (Space), ., /, and +.
+Code 93 was developed as an improvement over Code 39, offering higher data density and enhanced security features. This continuous, variable-length symbology can represent the entire ASCII character set through character combinations. The standard implementation supports uppercase letters (A-Z), digits (0-9), and special characters including *, -, $, %, (Space), ., /, and +.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,21 +116,23 @@ Code 93 is designed to complement and improve upon Code 39. It can represent the
 
 ## Code 93 Extended
 
-The Code 93 Extended Barcode symbology is continuous, variable length, and self-checking. It is based on Code 93 Barcode. The Extended Version can encode all 128 ASCII characters.
+Code 93 Extended is a continuous, variable-length, self-checking barcode symbology based on the standard Code 93. The extended version provides full support for all 128 ASCII characters, making it suitable for applications requiring comprehensive character encoding capabilities.
 
 ## Code 128
 
-Code 128 is a variable length, high density, alphanumeric, linear bar code symbology, capable of encoding the full 128-character ASCII character set and extended character sets. This symbology includes a checksum digit for verification and the barcode can also be verified character-by-character by verifying the parity of each data byte.
+Code 128 is a high-density, variable-length, alphanumeric linear barcode symbology capable of encoding the complete 128-character ASCII set and extended character sets. This symbology includes an integrated checksum digit for verification and supports character-by-character validation through parity checking of each data byte.
 
-### Code 128 Code Sets
+### Code 128 Character Sets
 
-     * Code Set A (or Chars Set A) includes all of the standard upper case U.S. alphanumeric keyboard characters and punctuation characters along with the control   characters, (namely, characters with ASCII values from 0 to 95 inclusive), and seven special characters.
-     * Code Set B (or Chars Set B) includes all of the standard upper case alphanumeric keyboard characters and punctuation characters along with the lower case     alphabetic characters (namely, characters with ASCII values from 32 to 127 inclusive), and seven special characters.
-     * Code Set C (or Chars Set C) includes the set of 100 digit pairs from 00 to 99 inclusive along with three special characters. This allows numeric data to be   encoded as two data digits per symbol character, at effectively twice the density of standard data.
+Code 128 utilizes three distinct character sets to optimize encoding efficiency:
 
-### Code 128 Special characters
+* **Code Set A (Character Set A)**: Includes standard uppercase alphanumeric keyboard characters, punctuation marks, control characters (ASCII values 0-95), and seven special characters
+* **Code Set B (Character Set B)**: Encompasses standard uppercase alphanumeric characters, punctuation marks, lowercase alphabetic characters (ASCII values 32-127), and seven special characters  
+* **Code Set C (Character Set C)**: Contains 100 digit pairs from 00-99 plus three special characters, enabling numeric data encoding at twice the density of standard character sets
 
-The last seven characters of Code Sets A and B (character values 96 - 102) and the last three characters of Code Set C (character values 100 - 102) are special non-data characters with no ASCII character equivalents that have a particular significance to the Barcode reading device.
+### Code 128 Special Characters
+
+The final seven characters of Code Sets A and B (values 96-102) and the last three characters of Code Set C (values 100-102) are non-data special characters without ASCII equivalents. These characters provide specific instructions to barcode reading devices for enhanced functionality and control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,9 +146,9 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
   
 {% previewsample "page.domainurl/samples/barcode/barcodegenerator/code128-cs1" %}
 
-## Customizing the Barcode color
+## Customizing Barcode Color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by using for forecolor property .
+When barcodes appear on colorful backgrounds or alongside other design elements, color customization becomes essential for maintaining readability and visual harmony. The BarcodeGenerator component provides comprehensive color customization through the [`foreColor`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#forecolor) property, allowing you to match your application's design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,9 +162,9 @@ A page or printed media with barcode often appears colorful in the background an
   
 {% previewsample "page.domainurl/samples/barcode/barcodegenerator/color-cs1" %}
 
-## Customizing the Barcode dimension
+## Customizing Barcode Dimensions
 
-The dimension of the barcode can be changed using the height and width property of the barcodegenerator.
+The physical size of generated barcodes can be precisely controlled using the [`height`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#width) properties of the BarcodeGenerator component. Proper dimension settings ensure optimal scanning performance while meeting specific layout requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,9 +178,9 @@ The dimension of the barcode can be changed using the height and width property 
   
 {% previewsample "page.domainurl/samples/barcode/barcodegenerator/dimension-cs1" %}
 
-## Customizing the text
+## Customizing Display Text
 
-In barcode generators you can customize the barcode text by using display text property .
+The BarcodeGenerator component allows customization of the human-readable text displayed below the barcode using the [`displayText`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#displaytext) property. This feature enables you to show custom labels or formatted text while maintaining the encoded data integrity within the barcode itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

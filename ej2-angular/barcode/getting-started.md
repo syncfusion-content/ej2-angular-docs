@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Barcode component
 
-This section explains you the steps required to create a simple barcode and demonstrate the basic usage of the barcode control.
+This section explains the steps required to create a simple barcode and demonstrates the basic usage of the Syncfusion® Angular Barcode component. The component supports various barcode types including linear barcodes, QR codes, and Data Matrix codes.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Use [`Angular CLI`](https://github.com/angular/angular-cli) to set up Angular applications.
+To install Angular CLI, use the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -23,7 +23,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below:
 
 ```bash
 ng new my-app
@@ -32,39 +32,39 @@ cd my-app
 
 ## Installing Syncfusion® Barcode Generator package
 
-Syncfusion® packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion® package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion® packages are distributed in npm as `@syncfusion` scoped packages. All Angular Syncfusion® packages are available from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion® provides two types of package structures for Angular components,
+Currently, Syncfusion® provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion® Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion® Angular packages (>=20.2.36) have moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the command below:
 
-Add [`@syncfusion/ej2-angular-barcode-generator`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38) package to the application.
+Add the [`@syncfusion/ej2-angular-barcode-generator`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-barcode-generator --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion® Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion® Angular components. To download the `ngcc` package, use the command below:
 
-Add [`@syncfusion/ej2-angular-barcode-generator@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38-ngcc) package to the application.
+Add the [`@syncfusion/ej2-angular-barcode-generator@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38-ngcc) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-barcode-generator@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below:
 
 ```bash
 @syncfusion/ej2-angular-barcode-generator:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will display a warning.
 
 ## Adding Syncfusion® Barcode Generator package
 
@@ -80,7 +80,7 @@ npm install @syncfusion/ej2-angular-barcode-generator --save
 
 ## Adding Barcode Generator control
 
-You can start adding Essential® JS 2 barcode-generator component to the application. To get started, add the Angular Barcode component in `app.ts` and `index.html` files using the following code.
+Start adding the Syncfusion® Angular Barcode Generator component to the application. The following code demonstrates how to create a basic linear barcode in the `app.component.ts` and corresponding template files:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,9 +94,11 @@ You can start adding Essential® JS 2 barcode-generator component to the applica
   
 {% previewsample "page.domainurl/samples/barcode/getting-started/initialize-cs1" %}
 
+The above example creates a basic Code 128 barcode. Linear barcodes are ideal for product identification, inventory management, and retail applications.
+
 ## Adding QR Generator control
 
-You can add the QR code in our Angular Barcode Generator component.
+QR codes provide two-dimensional data encoding capabilities and are perfect for storing URLs, contact information, or other text data. Add a QR code to the Angular Barcode Generator component as shown below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,9 +112,11 @@ You can add the QR code in our Angular Barcode Generator component.
   
 {% previewsample "page.domainurl/samples/barcode/getting-started/qrcode-cs1" %}
 
-## Adding Datamatrix Generator control
+QR codes are commonly used for mobile applications, marketing campaigns, and quick data sharing scenarios.
 
-You can add the datamatrix code in our Angular Barcode Generator component.
+## Adding Data Matrix Generator control
+
+Data Matrix codes offer high data density in a compact square format, making them suitable for small items and applications requiring space efficiency. Add a Data Matrix code to the Angular Barcode Generator component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,5 +129,7 @@ You can add the datamatrix code in our Angular Barcode Generator component.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/barcode/getting-started/datamatrix-cs1" %}
+## See also
 
-> You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) that shows how to render the Barcode in Angular.
+* [Angular Barcode Generator](https://www.syncfusion.com/angular-components/angular-barcode) - Feature tour and component overview
+* [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) - Live demonstration of barcode rendering capabilities
