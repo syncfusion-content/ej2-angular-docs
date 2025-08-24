@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid lines in EJ2 Angular Diagram component
+# Grid Lines in EJ2 Angular Diagram Component
 
-Gridlines are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.e.
+Gridlines are crisscross lines drawn in diagram pages similar to lines on traditional graph paper. They help position diagram elements precisely on the diagram page.
 
-The model’s [`snapSettings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#snapsettings) property is used to customize the gridlines and control the snapping behavior in the diagram.
+The model's [`snapSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#snapsettings) property is used to customize the gridlines and control the snapping behavior in the diagram.
 
 ## Customize the gridlines visibility
 
-The [`snapConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints) enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
+The [`snapConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints) enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,17 +32,17 @@ The [`snapConstraints`](https://helpej2.syncfusion.com/angular/documentation/api
 
 N>If you want to enable snapping, then inject snapping module into the diagram.
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [`Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings#constraints-SnapConstraints).
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [`Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints-SnapConstraints).
 
 ## Appearance
 
 The appearance of the gridlines can be customized by using a set of predefined properties.
 
-* The [`horizontalGridLines`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#horizontalgridlines) and the [`verticalGridLines`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings#verticalgridlines) properties allow to customize the appearance of the horizontal and vertical gridlines respectively.
+* The [`horizontalGridLines`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#horizontalgridlines) and the [`verticalGridLines`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#verticalgridlines) properties allow to customize the appearance of the horizontal and vertical gridlines respectively.
 
-* The horizontal gridlines [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines#linecolor) and [`lineDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines#linedasharray) properties are used to customizes the line color and line style of the horizontal gridlines.
+* The horizontal gridlines [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#linecolor) and [`lineDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#linedasharray) properties are used to customizes the line color and line style of the horizontal gridlines.
 
-* The vertical gridlines [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines#linecolor) and [`lineDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines#linedasharray) properties are used to customizes the line color and line style of the vertical gridlines.
+* The vertical gridlines [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#linecolor) and [`lineDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#linedasharray) properties are used to customizes the line color and line style of the vertical gridlines.
 
 The following code example illustrates how to customize the appearance of gridlines.
 
@@ -62,7 +62,7 @@ The following code example illustrates how to customize the appearance of gridli
 
 ## Line intervals
 
-Thickness and the space between gridlines can be customized by using horizontal gridlines’s [`linesInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#lineintervals) and vertical gridlines’s [`linesInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#lineintervals) properties. In the lines interval collections, values at the odd places are referred as the thickness of lines and values at the even places are referred as the space between gridlines.
+Thickness and the space between gridlines can be customized by using horizontal gridlines's [`linesInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#lineintervals) and vertical gridlines's [`linesInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#lineintervals) properties. In the lines interval collections, values at odd positions specify the thickness of lines and values at even positions specify the space between gridlines.
 
 The following code example illustrates how to customize the thickness of lines and the line intervals.
 
@@ -82,7 +82,7 @@ The following code example illustrates how to customize the thickness of lines a
 
 ## Dot grid patterns
 
-The appearance of the grid lines can be changed into dots by settings [`gridType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridType/) of `snapSettings` as Dots.  By default, the grid type is **Lines**.
+The appearance of the grid lines can be changed into dots by settings [`gridType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridType/) of `snapSettings` as Dots. By default, the grid type is **Lines**.
 
 The following code illustrates how to render grid patterns as Dots.
 
@@ -110,7 +110,7 @@ When you draw, resize, or move a diagram element on the page, you can set it to 
 
 This feature allows the diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled or disabled using the [`snapConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints)  property of the SnapSettings class. The default value is All.
+Snapping to gridlines can be enabled or disabled using the [`snapConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints) property of the SnapSettings class. The default value is All.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ Snapping to gridlines can be enabled or disabled using the [`snapConstraints`](h
 
 The snap-to-object feature provides visual cues to assist with aligning and spacing diagram elements. A node can snap to its neighboring objects based on specific alignments, such as the same size and position. These alignments are visually represented by smart guide lines in a cyan shade, with the color code '#07EDE1'.
 
-The [`snapObjectDistance`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#snapobjectdistance) property allows you to define minimum distance between the selected object and the nearest object. By default, the snap object distance is set to 5.
+The [`snapObjectDistance`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#snapobjectdistance) property allows you to define minimum distance between the selected object and the nearest object. By default, the snap object distance is set to 5 pixels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,7 +150,7 @@ The [`snapObjectDistance`](https://ej2.syncfusion.com/angular/documentation/api/
 
 The [`snapAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#snapangle) property defines the increments by which an object can be rotated within a diagram. 
 
-For example, if the snapAngle is set to 15 degrees, an object can only be rotated to angles that are multiples of 15 degrees, such as 15°, 30°, 45°, and so on. This ensures precise angule alignment and consistent object positioning, enhancing the overall design accuracy. By default, the snap angle is set to 5°
+For example, if the snapAngle is set to 15 degrees, an object can only be rotated to angles that are multiples of 15 degrees, such as 15°, 30°, 45°, and so on. This ensures precise angular alignment and consistent object positioning, enhancing the overall design accuracy. By default, the snap angle is set to 5°
 
 The following code example demonstrates how to set the `snapAngle` property and update it dynamically.
 
@@ -170,9 +170,9 @@ The following code example demonstrates how to set the `snapAngle` property and 
 
 ## Snap line color
 
-The [`snapLineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#snaplinecolor) property allows you to define the color of the snapline used in the diagram. By customizing the snapline color, you can enhance the visual contrast and visibility of these guides, making it easier to achieve accurate alignment. 
+The [`snapLineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#snaplinecolor) property allows you to define the color of the snap line used in the diagram. By customizing the snap line color, you can enhance the visual contrast and visibility of these guides, making it easier to achieve accurate alignment. 
 
-This property accepts color values in various formats, such as hexadecimal, RGB, or predefined color names, providing flexibility in how you choose to represent the snaplines in your diagramming application. By default the snap line color is set to `'#07EDE1'`.
+This property accepts color values in various formats, such as hexadecimal, RGB, or predefined color names, providing flexibility in how you choose to represent the snap lines in your diagramming application. By default the snap line color is set to `'#07EDE1'`.
 
 The following code example demonstrates how to set the `snapLineColor` property and update it dynamically.
 
@@ -190,7 +190,7 @@ The following code example demonstrates how to set the `snapLineColor` property 
 
 ## Customization of snap intervals
 
-By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the horizontal gridlines’s [`snapInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#snapintervals) and the vertical gridlines’s [`snapInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#snapintervals) properties.
+By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the horizontal gridlines's [`snapInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#snapintervals) and the vertical gridlines's [`snapInterval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/gridlines/#snapintervals) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

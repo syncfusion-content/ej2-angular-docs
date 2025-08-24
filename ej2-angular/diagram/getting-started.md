@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Diagram component
+# Getting Started with Angular Diagram Component
 
-This section explains you the steps required to create a simple diagram and demonstrate the basic usage of the diagram control.
+This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram component.
 
 ## Prerequisites
 
-[`System requirements for Syncfusion® Angular UI components`](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+[System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 ## Dependencies
 
-The following list of dependencies are required to use the `Diagram` component in your application.
+The following dependencies are required to use the `Diagram` component in your application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-diagrams
@@ -34,8 +34,7 @@ The following list of dependencies are required to use the `Diagram` component i
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. Install Angular CLI using the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -50,21 +49,21 @@ ng new my-diagram-app
 cd my-diagram-app
 ```
 
-## Installing Syncfusion® Diagram package
+## Installing Syncfusion Diagram package
 
-All the available Essential® JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
-To install Diagram component, use the following command.
+To install the Diagram component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-diagrams --save
 ```
 
-N> The --save will instruct NPM to include the diagram package inside of the dependencies section of the package.json.
+N> The --save flag instructs NPM to include the diagram package in the dependencies section of the package.json file.
 
 ## Registering Diagram Module
 
-Import Diagram module into Angular application(app.component.ts) from the package `@syncfusion/ej2-angular-diagrams` [src/app/app.component.ts].
+Import the Diagram module into your Angular application (app.component.ts) from the package `@syncfusion/ej2-angular-diagrams` [src/app/app.component.ts].
 
 ```typescript
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
@@ -87,7 +86,7 @@ export class AppComponent {}
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential® JS 2 package root folder. This can be referenced in [src/styles.css] using following code.
+Combined CSS files are available in the Essential JS 2 package root folder. Reference these in your [src/styles.css] file using the following code:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material.css';
@@ -99,7 +98,7 @@ Combined CSS files are available in the Essential® JS 2 package root folder. Th
 
 ## Add Diagram component
 
-Modify the template in [src/app/app.component.ts] file to render the diagram component. Add the Angular Diagram by using `<ejs-diagram>` selector in `template` section of the app.component.ts file.
+Modify the template in the [src/app/app.component.ts] file to render the diagram component. Add the Angular Diagram using the `<ejs-diagram>` selector in the `template` section of the app.component.ts file:
 
 ```typescript
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
@@ -123,25 +122,25 @@ export class AppComponent {}
 
 ## Module Injection
 
-The diagram component is divided into individual feature-wise modules. In order to use a particular feature, inject the required module. The following list describes the module names and their description.
+The diagram component is divided into individual feature-wise modules. To use a particular feature, inject the required module. The following list describes the module names and their descriptions:
 
-* `BpmnDiagramsService` - Inject this provider to add built-in BPMN Shapes to diagrams.
+* `BpmnDiagramsService` - Inject this provider to add built-in BPMN shapes to diagrams.
 * `ConnectorBridgingService` - Inject this provider to add bridges to connectors.
-* `ConnectorEditingService` - Inject this provider to edit the segments for connector.
-* `ComplexHierarchicalTreeService` - Inject this provider to complex hierarchical tree like structure.
-* `DataBindingService` - Inject this provider to populate nodes from given data source.
-* `DiagramContextMenuService` - Inject this provider to manipulate context menu.
-* `HierarchicalTreeService` - Inject this provider to use hierarchical tree like structure.
-* `LayoutAnimationService` - Inject this provider animation to layouts.
-* `MindMapService` - Inject this provider to use mind map.
-* `PrintAndExportService` - Inject this provider to print or export the objects.
-* `RadialTreeService` - Inject this provider to use Radial tree like structure.
-* `SnappingService` - Inject this provider to Snap the objects.
-* `SymmetricLayoutService` - Inject this provider to render layout in symmetrical method.
-* `UndoRedoService` - Inject this provider to revert and restore the changes.
-* `Ej1SerializationService` - Inject this provider to load ej1 diagram json in ej2 diagram.
+* `ConnectorEditingService` - Inject this provider to edit connector segments.
+* `ComplexHierarchicalTreeService` - Inject this provider for complex hierarchical tree structures.
+* `DataBindingService` - Inject this provider to populate nodes from a given data source.
+* `DiagramContextMenuService` - Inject this provider to manipulate the context menu.
+* `HierarchicalTreeService` - Inject this provider to use hierarchical tree structures.
+* `LayoutAnimationService` - Inject this provider to add animation to layouts.
+* `MindMapService` - Inject this provider to use mind map layouts.
+* `PrintAndExportService` - Inject this provider to print or export diagram objects.
+* `RadialTreeService` - Inject this provider to use radial tree structures.
+* `SnappingService` - Inject this provider to enable object snapping.
+* `SymmetricLayoutService` - Inject this provider to render layouts in a symmetrical method.
+* `UndoRedoService` - Inject this provider to revert and restore changes.
+* `Ej1SerializationService` - Inject this provider to load EJ1 diagram JSON in EJ2 diagrams.
 
-These modules should be injected into the providers section of root NgModule or component class.
+These modules should be injected into the providers section of the root NgModule or component class:
 
 ```javascript
 import { BpmnDiagramsService, ComplexHierarchicalTreeService, ConnectorBridgingService, ConnectorEditingService, DataBindingService, DiagramContextMenuService, DiagramModule, Ej1SerializationService, HierarchicalTreeService, LayoutAnimationService, MindMapService, PrintAndExportService, RadialTreeService, SnappingService, SymmetricLayoutService, UndoRedoService } from '@syncfusion/ej2-angular-diagrams';
@@ -163,7 +162,7 @@ export class AppComponent {}
 
 ## Defining Basic Diagram
 
-The below example shows a basic diagram which renders an empty diagram.
+The example below shows a basic diagram that renders an empty diagram canvas:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,7 +176,7 @@ The below example shows a basic diagram which renders an empty diagram.
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/initialize-cs1" %}
 
-Now, run the application by using npm start command. Open the browser with the generated link and you can see an empty diagram.
+Now, run the application using the npm start command. Open the browser with the generated link and you can see an empty diagram:
 
 ```bash
 npm start
@@ -187,24 +186,21 @@ N> The selector specified in the **@Component** decorator of the **app.component
 
 ## Basic Diagram elements
 
-* `Node`: Visualizes any graphical object using nodes, which can also be arranged and manipulated on a diagram page.
-* `Connector`: Represents the relationship between two nodes. Three types of connectors provided as follows:
+Diagrams are built using the following core elements:
 
-```
-
-1) Orthogonal
-2) Bezier
-3) Straight
-
-```
-* `Port`: Acts as the connection points of node or connector and allows you to create connections with only specific points.
-* `Annotation`: Shows additional information by adding text or labels on nodes and connectors.
+* `Node`: Visualizes graphical objects that can be arranged and manipulated on a diagram page.
+* `Connector`: Represents relationships between two nodes. Three types of connectors are provided:
+  * Orthogonal
+  * Bezier
+  * Straight
+* `Port`: Acts as connection points on nodes or connectors, allowing connections only at specific points.
+* `Annotation`: Displays additional information by adding text or labels on nodes and connectors.
 
 ## Flow Diagram
 
 ### Create and Add Node to the diagram
 
-Create and add a `node` (JSON data) with specific position, size, label, and shape.
+Create and add a `node` (JSON data) with specific position, size, label, and shape:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -221,10 +217,9 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 ### Apply shape and style to node
 
-Syncfusion® diagram control provides support to render many built-in shapes in diagram.
-Please refer to [`Shapes`](shapes) to know about built-in Shapes.
+The Syncfusion diagram component provides support to render many built-in shapes. Refer to [Shapes](shapes) to learn about built-in shapes.
 
-The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number).
+Customize the appearance of a node by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number), [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number) properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -241,7 +236,7 @@ The appearance of a node can be customized by changing its [`fill`](../api/diagr
 
 ### Add other flowchart nodes to the diagram
 
-You can add multiple nodes with different shapes into diagram.
+Add multiple nodes with different shapes to create a comprehensive diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,8 +252,7 @@ You can add multiple nodes with different shapes into diagram.
 
 ### Connect flow chart nodes
 
-Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel/) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties.
-The required nodes and connectors can be added to form a complete flow diagram.
+Connect nodes by adding connectors using the [`connectors`](../api/diagram/connectorModel/) property of the diagram. Reference the source and target endpoints using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties. Combine the required nodes and connectors to form a complete flow diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,15 +266,15 @@ The required nodes and connectors can be added to form a complete flow diagram.
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/flowdiagram-cs1" %}
 
-Default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) can be set using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
+Set default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, move such properties into `getNodeDefaults`.
 
 ## Automatic Organization Chart
 
-In the 'Flow Diagram' section, how to create a diagram manually was discussed. This section explains how to create and position the diagram automatically.
+The previous 'Flow Diagram' section explained how to create a diagram manually. This section demonstrates how to create and position diagrams automatically using data binding.
 
 ### Business object (Employee information)
 
-Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
+Define Employee Information as JSON data. The following code example shows an employee array where `Name` serves as a unique identifier and `ReportingPerson` identifies the person to whom an employee reports in the organization:
 
 ```typescript
     public data: Object[] = [
@@ -323,7 +317,7 @@ Define Employee Information as JSON data. The following code example shows an em
 
 ### Map data source
 
-You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel/) to map [`id`](../api/diagram/dataSourceModel/#id) and [`parentId`](../api/diagram/dataSourceModel/#parentid) with the corresponding property names of employee information.
+Configure the above "Employee Information" with the diagram so that nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel/) to map [`id`](../api/diagram/dataSourceModel/#id) and [`parentId`](../api/diagram/dataSourceModel/#parentid) with the corresponding property names of employee information:
 
 ```typescript
 @Component({
@@ -381,7 +375,7 @@ export class AppComponent {
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, the [`type`](../api/diagram/layoutType/) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, set the [`type`](../api/diagram/layoutType/) of layout as `OrganizationalChart`. The following code example shows how DataManager generates layouts based on the DataSourceSettings of the Diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -397,7 +391,7 @@ To create an organizational chart, the [`type`](../api/diagram/layoutType/) of l
 
 ### Customize employee appearance
 
-The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) is used to update each node based on employee data.
+The following code examples show how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) method updates each node based on employee data:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -411,4 +405,4 @@ The following code examples indicate how to define the default appearance of nod
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/orgchart-cs2" %}
 
-N> Please note that project generated through angular CLI project will always the changes made into application and compiled it automatically. We don’t need to run “npm start” command for each changes made into the application.
+N> Projects generated through Angular CLI automatically detect changes made to the application and compile them. You don't need to run "npm start" for each change made to the application.
