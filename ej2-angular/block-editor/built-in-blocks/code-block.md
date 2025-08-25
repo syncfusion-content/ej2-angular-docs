@@ -7,28 +7,25 @@ control: Block Editor
 documentation: ug
 domainurl: ##DomainURL##
 ---
----
 
 # Code Blocks in Angular Block Editor component
 
-You can render Code blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Code`. By setting the `props` property, you can configure the languages available for syntax highlighting and the default language. The default language is `javascript`.
+The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [type](../api/blockeditor/blockModel/#type) property to `Code`. You can customize the available programming languages and set a default language using the `props` property.
 
 ## Configure code properties
 
-For Code blocks, you can configure syntax highlighting and language options using the [props](../api/blockeditor/blockModel/) property.
-
-The code [props](../api/blockeditor/blockModel/) property supports the following options:
+For Code blocks, you can configure syntax highlighting and language options using the [props](../api/blockeditor/blockModel/) property. This property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| [languages](../api/blockeditor/codeSettingsModel/#languages) | Array of language options for syntax highlighting | [] |
-| [defaultLanguage](../api/blockeditor/codeSettingsModel/#defaultlanguage) | The default language to use for syntax highlighting | 'javascript' |
+| [languages](../api/blockeditor/codeSettingsModel/#languages) | Specifies the array of language options for syntax highlighting. | [] |
+| [defaultLanguage](../api/blockeditor/codeSettingsModel/#defaultlanguage) | Defines the default language to use for syntax highlighting. | 'javascript' |
 
-Each language object in the `languages` array should have:
-- [language](../api/blockeditor/codeLanguageModel/#language): The language value used for syntax highlighting
-- [label](../api/blockeditor/codeLanguageModel/#label): The display name shown in the language selector
+Each language object within the `languages` array requires the following properties:
+- [language](../api/blockeditor/codeLanguageModel/#language): The language value used for syntax highlighting.
+- [label](../api/blockeditor/codeLanguageModel/#label): The display name shown in the language selector dropdown.
 
-#### Type & Props
+### Type & Props
 ```typescript
 // Adding Code block
 {
@@ -50,7 +47,7 @@ Each language object in the `languages` array should have:
     }
 ```
 
-Below example illustrates how to render the different code block in the Block Editor.
+The following example demonstrates how to configure and render a Code block within the Block Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

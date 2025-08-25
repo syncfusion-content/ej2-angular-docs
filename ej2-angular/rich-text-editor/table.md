@@ -94,7 +94,7 @@ By Default, provides Dashed border and Alternate rows.
 
 Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/).
 
-Users can modify the width, cell padding, and cell spacing of selected tables using the properties option in the quick toolbar.
+Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
 ![Rich Text Editor table settings](images/table_properties.png)
 

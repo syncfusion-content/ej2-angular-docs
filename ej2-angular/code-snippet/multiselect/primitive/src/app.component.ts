@@ -27,7 +27,7 @@ public records: string[] = [];
     }
     // maps the appropriate column to fields property
     public fields: object = { text: 'text', value: 'id' };
-    public value =  ["Item 11", "Item 22", "Item 33"];
+    public value =  ["Item 8", "Item 9", "Item 10"];
     // set the placeholder to AutoComplete input
     public waterMark: string = 'e.g. Item 1';   
 }

@@ -8,22 +8,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Multi select component
+# Form support in Angular MultiSelect component
 
-The MultiSelect supports both the reactive and template-driven form-building technologies.
+The MultiSelect component supports both reactive and template-driven form-building technologies, enabling seamless integration with Angular's form handling mechanisms.
 
 ## Template-Driven Forms
 
-The template-drive forms uses the `ng` directives in view to handle the forms controls.
-To enable the template-driven,  import the FormsModule into corresponding app component.
+Template-driven forms use `ng` directives in the view to handle form controls.
+To enable template-driven forms, import the FormsModule into the corresponding app component.
 
-For more details about template-driven Forms refer to:<https://angular.io/guide/forms#template-driven-forms>.
+For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
-Mention the `name` attribute to MultiSelect element which will be used to identify the
-form element. To register an MultiSelect element to ngForm,  give the ngModel  to it
-so the FormsModule will  automatically detect the MultiSelect as a form element. After that, the MultiSelect value will be selected based on the ngModel value.
+Add the `name` attribute to the MultiSelect element to identify the form element. To register a MultiSelect element with ngForm, provide the ngModel directive so the FormsModule automatically detects the MultiSelect as a form element. The MultiSelect value will be selected based on the ngModel value, enabling two-way data binding.
 
-The following example  demonstrates how to achieve a two-way data binding.
+The following example demonstrates how to achieve two-way data binding:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,14 +37,14 @@ The following example  demonstrates how to achieve a two-way data binding.
 
 ## Reactive Forms
 
-The reactive forms uses the reactive model-driven technique to handle form data between component and view, due to that we also call it as the `model-driven` forms. It's listen the form data changes between App component and view also returns the valid states and values of form elements.
+Reactive forms use the reactive model-driven technique to handle form data between component and view, also called model-driven forms. This approach listens to form data changes between the app component and view, returning the valid states and values of form elements.
 
-For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
+For more details about reactive forms, refer to: <https://angular.io/guide/reactive-forms>.
 
-For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to app component. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls.
-You can declare the formControlName to MultiSelect as usual.then,you must create a value object to the FormGroup and each value will be the default value of the form control.
+For reactive forms, import ReactiveFormsModule and Additionally, import FormGroup and FormControl into the app component. FormGroup declares the `formGroupName` for the form, and FormControl declares the `formControlName` for form controls.
+Declare the formControlName for the MultiSelect as usual, then create a value object for the FormGroup where each value represents the default value of the form control.
 
-The following example demonstrates  how to use the reactive forms.
+The following example demonstrates how to use reactive forms:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

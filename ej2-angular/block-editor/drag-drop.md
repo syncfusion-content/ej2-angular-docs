@@ -8,25 +8,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular Block Editor component
+# Drag and drop in the Angular Block Editor component
 
-The drag and drop feature in Block Editor allows users to easily rearrange blocks within the editor by dragging them to different positions.
+The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 
 ## Enable Drag and Drop
 
-You can control drag and drop operations within Block Editor using the [enableDragAndDrop](../api/blockeditor/#enabledraganddrop) property. By default, it is set to `true`.
-
-## Dragging blocks
+You can control the drag and drop functionality within the Block Editor using the [enableDragAndDrop](../api/blockeditor/#enabledraganddrop) property. This feature is enabled by default (`true`).
 
 When drag and drop is enabled, users can rearrange blocks in the following ways:
 
 The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
 
-- **Single Block Dragging**: For single block, users can hover over a block to reveal the drag handle, then click and drag to move it to a new position.
+- **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
 
-- **Multiple Block Dragging**: For multiple blocks, users first select the blocks they want to move. Once selected, users can drag the entire group to a new position.
+- **Multiple Block Dragging**: To move multiple blocks, first select the desired blocks. Once selected, click and drag the entire group to a new location.
 
-During the drag operation, the editor provides visual cues to indicate where the blocks will be positioned when dropped. This helps users precisely place blocks where they want it.
+During the drag operation, a visual indicator will show precisely where the blocks will be placed when dropped, ensuring accurate placement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

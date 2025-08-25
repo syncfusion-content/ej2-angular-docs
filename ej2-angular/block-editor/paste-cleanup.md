@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Paste Clean-up in Angular Block Editor component
 
-The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains consistency with the editor's styling and structure. This helps in removing unwanted formatting, scripts, or elements often copied from external sources like web pages or word processors.
+The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
-You can configure the paste settings using the [pasteSettings](../api/blockeditor/#pastesettings) property in the Block Editor component. This property allows you to define various options to control how content is pasted into the editor.
+You can configure the paste behavior using the [pasteSettings](../api/blockeditor/#pastesettings) property, which allows you to define how content is handled when pasted into the editor.
 
 ## Configuring allowed styles
 
-The [allowedStyles](../api/blockeditor/pasteSettingsModel/#allowedstyles) property in the [pasteSettings](../api/blockeditor/#pastesettings) model allows you to define which CSS styles are permitted when content is pasted into the editor. Any style not included in this list will be stripped from the pasted content. This ensures that only desired visual attributes are preserved, maintaining a clean and consistent look.
+The [allowedStyles](../api/blockeditor/pasteSettingsModel/#allowedstyles) property lets you define which CSS styles are permitted in pasted content. Any style not in this list is stripped out, ensuring that only desired visual attributes are preserved.
 
-By default, following styles are allowed:
+By default, the following styles are allowed:
 
 ['font-weight', 'font-style', 'text-decoration', 'text-transform'].
 
@@ -47,7 +47,7 @@ export class AppComponent {
 
 ## Setting denied tags
 
-The [deniedTags](../api/blockeditor/pasteSettingsModel/#deniedtags) property in [pasteSettings](../api/blockeditor/#pastesettings) enables you to specify HTML tags that should be completely removed from the pasted content. This is particularly useful for stripping out potentially problematic or irrelevant tags, such as `script` tags, `iframe`s, or any other elements you don't want to allow in the editor. By default, the `deniedTags` property is an empty array, meaning no tags are removed by default.
+The [deniedTags](../api/blockeditor/pasteSettingsModel/#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
 
 In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
 
@@ -91,7 +91,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 ## Disable Keep format
 
-By default, the editor attempts to keep the formatting of the pasted content (e.g., bold, italics, links). You can disable this behavior by setting the [keepFormat](../api/blockeditor/pasteSettingsModel/#keepformat) property to `false` in [pasteSettings](../api/blockeditor/#pastesettings). When disabled, the editor will primarily paste the content as plain text regardless of `allowedStyles`.
+By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](../api/blockeditor/pasteSettingsModel/#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
@@ -116,7 +116,7 @@ export class AppComponent {
 
 ## Allowing plain text
 
-To paste content purely as plain text, stripping all HTML tags and inline styles, you can set the [plainText](../api/blockeditor/pasteSettingsModel/#plaintext) property to `true` in [pasteSettings](../api/blockeditor/#pastesettings). This ensures that only the raw textual content is inserted into the editor, making it ideal for maintaining strict content consistency. By default, the `plainText` property is set to `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](../api/blockeditor/pasteSettingsModel/#plaintext) property to `true` in [pasteSettings](../api/blockeditor/#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
@@ -158,7 +158,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 
 ### Events
 
-The following events are available when pasting content into the editor.
+The Block Editor provides events to monitor and interact with the paste action.
 
 |Name|Args|Description|
 |---|---|---|

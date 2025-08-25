@@ -1,26 +1,26 @@
 ---
 layout: post
 title: Virtual scroll in Angular TreeGrid component | Syncfusion
-description: Learn here all about Virtual scroll in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use virtual scroll in the Syncfusion Angular TreeGrid component, including efficient handling of large datasets, configuration of row and column virtualization, browser limits, and performance tips.
 platform: ej2-angular
-control: Virtual scroll 
+control: Virtual scroll
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Virtual scrolling in Angular TreeGrid component
 
-The virtual scrolling feature in the TreeGrid component allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the tree grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
+Virtual scrolling in the TreeGrid component enables efficient rendering and interaction with large datasets by loading only the visible rows or columns in the viewport. This optimization drastically improves performance, reducing initial load time and memory usage, which is essential when working with thousands of records or columns.
 
-To enable virtualization in the tree grid, you need to inject the **VirtualScrollService**. This service is responsible for managing the virtual scrolling behavior and optimizing the rendering of data to enhance performance.
+To use virtualization in TreeGrid, inject the **VirtualScrollService**, which handles optimized data rendering and management for virtual scrolling scenarios.
 
 ## Row virtualization
 
-Row virtualization is a feature in the tree grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
+Row virtualization ensures only the rows currently visible in the viewport are loaded and rendered, resulting in fast scrolling and minimal resource use. It replaces traditional paging by dynamically loading data as you scroll vertically.
 
-To set up row virtualization, you need to define the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) property as **true** and specify the content height using the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) property in the tree grid configuration.
+Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) property on the TreeGrid.
 
-The number of records displayed in the tree grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#pagesize) property. The loaded data will be cached and reused when needed in the future.
+The visible record count is determined by the TreeGrid’s height but can be explicitly set using the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#pagesize) property. Loaded data is cached and reused as necessary.
 
 The following example demonstrates row virtualization using `enableVirtualization` property.
 
@@ -32,36 +32,35 @@ The following example demonstrates row virtualization using `enableVirtualizatio
 {% include code-snippet/treegrid/virtual-scroll-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/virtual-scroll-cs1" %}
 
 ### Limitations 
 
-* Row virtual scrolling is not compatible with the following feature
+* Row virtualization is not compatible with:
    1. Batch editing
    2. Checkbox selection
    3. Detail template
    4. Row template
    5. Rowspan
    6. Autofill
-	
-* It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
-* When row virtual scrolling is activated, compatibility for copy-paste and drag-and-drop operations is limited to the data items visible in the current viewport of the tree grid.
-* The cell-based selection is not supported for row virtual scrolling. 
-* Using different row heights with a template column, when the template height differs for each row, is not supported.
-* Due to the element height limitation in browsers, the maximum number of records loaded by the tree grid is limited by the browser capability.
-* The height of the tree grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported.
-* If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
-
+* The TreeGrid or its parent container must have a static height when using row virtualization. Setting height to 100% only works if the parent container has a defined height.
+* Copy-paste and drag-and-drop are limited to items visible in the current viewport.
+* Cell-based selection is not supported for row virtualization.
+* Using variable row heights (e.g., with a template column) is not supported; all rows should have a uniform height.
+* Maximum records are constrained by the browser’s element height limitation.
+* Features that modify row height (such as text wrapping) are not supported with row virtualization.
+* To increase row height for all rows, use custom CSS:
     ```css
     .e-treegrid .e-row {
         height: 2em;
     }
     ```
+
 ## Column virtualization
 
-Column virtualization feature in the tree grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with tree grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
+Column virtualization renders only columns currently visible in the viewport, supporting horizontal scroll for wide datasets. This is crucial for applications with many columns, improving initial load and scroll performance.
 
 To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecolumnvirtualization) property of the tree grid to **true**. This configuration instructs the tree grid to only render the columns that are currently visible in the viewport. 
 
@@ -75,7 +74,7 @@ The following example demonstrates column virtualization using `enableColumnVirt
 {% include code-snippet/treegrid/virtual-scroll-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/virtual-scroll-cs2" %}
 
 > Column's [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) is required for column virtualization. If column's width is not defined then tree grid will consider its value as **200px**.
@@ -216,10 +215,9 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 > If you perform tree grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the tree grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
-### Solution 2: Using RowHeight property
+### Solution 2: Using rowHeight
 
-You can reduce the [row height](https://ej2.syncfusion.com/angular/documentation/treegrid/row/row#row-height) using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the tree grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
-
+Lower the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property to fit more rows within the browser limit. If height is still exceeded, use Solution 1 or enable paging.
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
 ![Row Height](../images/row-height.png)
@@ -230,5 +228,5 @@ Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/angular/do
 
 ## See also
 
-* [Load on demand with virtualization in tree grid.](https://www.syncfusion.com/blogs/post/load-on-demand-and-virtualization-in-essential-js-2-treegrid)
-* [Boosting Tree Grid Performance with Virtualization](https://www.syncfusion.com/blogs/post/boosting-javascript-tree-grid-performance-virtualization)
+* [Load on demand with virtualization in TreeGrid.](https://www.syncfusion.com/blogs/post/load-on-demand-and-virtualization-in-essential-js-2-treegrid)
+* [Boosting TreeGrid Performance with Virtualization](https://www.syncfusion.com/blogs/post/boosting-javascript-tree-grid-performance-virtualization)

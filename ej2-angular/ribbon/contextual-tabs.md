@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Ribbon Contextual Tabs
 
-The Ribbon Contextual tabs are similar to the Ribbon tabs that are displayed on demand based on their needs, such as an image or a table tabs. It supports adding all built-in and custom ribbon items to perform specific actions.
+Ribbon Contextual Tabs are special tabs that appear only when a specific object or context is selected, such as a table, image, or chart. They provide users with a set of tools relevant only to the selected item. These tabs can host all built-in and custom Ribbon items to perform specific actions.
 
 ## Visible tabs
 
-You can utilize the [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonContextualTabSettingsModel/#visible) property within each `e-ribbon-contextual-tag` directive to control the visibility of each contextual tab.
+You can control the initial visibility of a contextual tab by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonContextualTabSettingsModel/#visible) property to `true` or `false` within the `e-ribbon-contextual-tab` directive.
 
-## Adding contextual tabs
+## Adding Contextual Tabs
 
-You can utilize the `e-ribbon-contextual-tabs` tag directive to add contextual tabs in the Ribbon where you can add multiple tabs based on your needs.
+Add contextual tabs to the Ribbon by using the `e-ribbon-contextual-tabs` tag directive. You can define multiple contextual tabs, each containing one or more standard Ribbon tabs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +37,7 @@ You can utilize the `e-ribbon-contextual-tabs` tag directive to add contextual t
 
 ## Selected tabs
 
-By using the [isSelected](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonContextualTabSettingsModel/#isselected) property, you can control the selected state of each contextual tab and indicates which tab is currently active.
+The [isSelected](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonContextualTabSettingsModel/#isselected) property determines which contextual tab is active upon initialization. Setting this property to `true` makes the corresponding tab the currently selected one.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,13 +56,15 @@ By using the [isSelected](https://ej2.syncfusion.com/angular/documentation/api/r
 
 ## Methods
 
-### Show tab
+The Ribbon provides methods to dynamically manage the visibility of contextual tabs after the component has been initialized.
 
-You can use the [showTab](https://ej2.syncfusion.com/angular/documentation/api/ribbon#showtab) method to make the specific Contextual tab visible in the Ribbon.
+### Show Tab
 
-### Hide tab
+The [showTab](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#showtab) method makes a specific contextual tab visible in the Ribbon.
 
-You can use the [hideTab](https://ej2.syncfusion.com/angular/documentation/api/ribbon#hidetab) method to hide specific Contextual tab in the Ribbon.
+### Hide Tab
+
+The [hideTab](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#hidetab) method hides a specific contextual tab in the Ribbon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

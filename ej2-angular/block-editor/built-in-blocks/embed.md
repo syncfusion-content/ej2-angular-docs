@@ -10,38 +10,38 @@ domainurl: ##DomainURL##
 
 # Embed Blocks in Angular Block Editor component
 
- Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
+The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 
-## Image Block
+## Adding an Image Block
 
 You can use the `image` block to showcase an image content within your editor.
 
-### Configure image block
+### Configure Image Block
 
-You can render Image blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Image`. By setting the `props` property, you can configure the image source, allowed file types, and display dimensions etc.
+You can render an `Image` block by setting the [type](../api/blockeditor/blockModel/#type) property to `Image` in the block model. The `props` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
-The image [props](../api/blockeditor/blockModel/) property supports the following options:
+The `Image` block [props](../api/blockeditor/blockModel/) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| saveFormat | Specifies the format to save the image | Base64 |
-| src | Specifies the image path | ' '|
-| allowedTypes | Specifies the allowed image file types that can be uploaded | ['.jpg', '.jpeg', '.png'] |
-| width | Specifies the display width of the image | ' ' |
-| height | Specifies the display height of the image | ' '|
-| minWidth | Specifies the minimum width of the image in pixels or as a string unit | 40|
-| maxWidth | Specifies the maximum width of the image in pixels or as a string unit | ' '|
-| minHeight | Specifies the minimum height of the image in pixels or as a string unit | 40|
-| maxHeight | Specifies the maximum height of the image in pixels or as a string unit | ' '|
-| altText | Specifies the alternative text to be displayed when the image cannot be loaded | ' '|
-| cssClass | Specifies one or more CSS classes to be applied to the image element | ' ' |
-| readOnly | Specifies whether the image is in read-only mode | false
+| saveFormat | Specifies the format for saving the image. When set to `Base64`, the image data is embedded directly into the saved content. | `Base64` |
+| allowedTypes | Specifies the allowed image file types that can be uploaded. | `['.jpg', '.jpeg', '.png']` |
+| width | Specifies the display width of the image. | `''` |
+| height | Specifies the display height of the image. | `''` |
+| minWidth | Specifies the minimum width of the image in pixels. | `40` |
+| maxWidth | Specifies the maximum width of the image as a pixel or percentage string. | `''` |
+| minHeight | Specifies the minimum height of the image in pixels. | `40`|
+| maxHeight | Specifies the maximum height of the image as a pixel or percentage string. | `''` |
+| altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
+| cssClass | Specifies one or more CSS classes to apply to the image element for custom styling. | `''` |
+| readOnly | Specifies whether the image is in a read-only (non-editable) state. | `false` |
 
+### Type & Props
 
-#### Type & Props
+The following example demonstrates how to pre-configure an `Image` block in the editor.
 
 ```typescript
-// Adding image block
+// Adding an Image block
  {
     type: 'Image',
     props: {
@@ -61,7 +61,7 @@ The image [props](../api/blockeditor/blockModel/) property supports the followin
 }
 ```
 
-The below sample demonstrates the configuration of image block in the Block Editor.
+This sample demonstrates the configuration of the `Image` block in the Block Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -18,7 +18,7 @@ imports: [
 standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
-    template: `<ejs-multiselect id='multiselectelement' [dataSource]='sportsData' [fields]='fields' [mode]='mode' [enableSelectionOrder]='false' [placeholder]='placeholder'></ejs-multiselect>`,
+    template: `<ejs-multiselect id='multiselectelement' [dataSource]='sportsData' [fields]='fields' [mode]='mode' [enableSelectionOrder]='true' [placeholder]='placeholder'></ejs-multiselect>`,
     providers: [CheckBoxSelectionService]
 })
 export class AppComponent {

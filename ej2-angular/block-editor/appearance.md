@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Appearance in Angular Block Editor component
 
-The Block Editor component provides various appearance customization options to match your application's design requirements. These properties allow you to control the visual styling, layout, and overall look and feel of the editor.
+The Block Editor component provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 
 ## Setting width and height
 
@@ -38,7 +38,7 @@ You can use the [cssClass](../api/blockeditor/#cssclass) property to customize t
 ```typescript
 <div ejs-blockeditor [width]="'600px'" [height]="'400px'" [cssClass]="'custom-editor-theme'"></div>
 ```
-Below example demonstrates the usage of readonly and cssClass properties.
+The following example demonstrates the usage of `readonly` and `cssClass` properties of the Block Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

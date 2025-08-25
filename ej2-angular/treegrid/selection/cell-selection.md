@@ -1,22 +1,21 @@
 ---
 layout: post
-title: Cell selection in Angular Treegrid component | Syncfusion
-description: Learn here all about Cell selection in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Cell selection in Angular TreeGrid component | Syncfusion
+description: Learn how to perform cell selection in the Syncfusion Angular TreeGrid component, including selection modes, programmatic APIs, and retrieving selected cell indexes.
 platform: ej2-angular
-control: Cell selection 
+control: Cell selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell selection in Angular Treegrid component
+# Cell selection in Angular TreeGrid component
 
-Cell Selection can be done through simple Mouse down or Arrow keys(up, down, left and right).
+Cell selection in the TreeGrid can be performed using either mouse (click and drag) or keyboard arrow keys (up, down, left, right).
 
-TreeGrid supports two types of cell selection mode which can be set by using [`selectionSettings.cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#cellselectionmode). They are:
+TreeGrid supports two types of cell selection modes, which can be set using the [`selectionSettings.cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#cellselectionmode) property:
 
-* **`Flow`** - The `Flow` value is set by default.
-Select range of cells between the start index and end index which includes in between cells of rows.
-* **`Box`** - Select range of cells within the start and end column indexes which includes in between cells of rows within the range.
+* **Flow** (default): Selects a range of cells from the starting to ending index, including all intermediate cells within rows.
+* **Box**: Selects a rectangular range of cells, based on the starting and ending column indexes, including all intermediate cells within those columns across the selected rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,16 +26,14 @@ Select range of cells between the start index and end index which includes in be
 {% include code-snippet/treegrid/selection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs1" %}
 
-> Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be `Cell` or  `Both`.
+> For cell selection, set [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to `Cell` or `Both`.
 
 ## Perform cell selection programmatically
 
-To perform cell selection programmatically, you can use [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcell) method. To use this method you need to pass the cellIndex as parameter like in the below sample.
-
-To clear the selected rows or cells, by calling the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearselection) method in tree grid.
+To programmatically select a cell, use the [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcell) method, passing the cell index as a parameter. To clear cell or row selections, call the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearselection) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,12 +44,12 @@ To clear the selected rows or cells, by calling the [`clearSelection`](https://e
 {% include code-snippet/treegrid/selection-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs11" %}
 
-## How to get selected row cell in tree grid
+## Get selected row cell indexes
 
-To get the selected row cell index, Use [`getSelectedRowCellIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowcellindexes) method in the treegrid.
+To retrieve the indexes of selected row cells, use the [`getSelectedRowCellIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowcellindexes) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,5 +60,5 @@ To get the selected row cell index, Use [`getSelectedRowCellIndexes`](https://ej
 {% include code-snippet/treegrid/selection-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs12" %}

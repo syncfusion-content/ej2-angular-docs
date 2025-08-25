@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Block Editor component
+# Events in Angular Block Editor Component
 
 The Block Editor component provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 
@@ -22,7 +22,7 @@ The [created](../api/blockeditor/#created) event is triggered when the Block Edi
 
 ## ContentChanged
 
-The [contentChanged](../api/blockeditor/#contentchanged) event is triggered whenever the content within the editor is modified. This includes content additions, deletions, or any structural modifications to the document.
+The [contentChanged](../api/blockeditor/#contentchanged) event is triggered whenever the content within the editor is modified. This includes content additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
 
 ```typescript
 <div ejs-blockeditor (contentChanged)="onContentChanged()" ></div>
@@ -30,7 +30,7 @@ The [contentChanged](../api/blockeditor/#contentchanged) event is triggered when
 
 ## SelectionChanged
 
-The [selectionChanged](../api/blockeditor/#selectionchanged) event is triggered when the user's text selection changes within the editor. This can be useful for updating UI elements based on the current selection.
+The [selectionChanged](../api/blockeditor/#selectionchanged) event is triggered when the user's text selection changes within the editor. The event arguments contain details about the new selection, which can be useful for updating UI elements.
 
 ```typescript
 <div ejs-blockeditor (selectionChanged)="onSelectionChanged()" ></div>
@@ -47,7 +47,7 @@ The [undoRedoPerformed](../api/blockeditor/#undoredoperformed) event is triggere
 
 ## BlockAdded
 
-The [blockAdded](../api/blockeditor/#blockadded) event is triggered when a new block is added to the editor. This includes blocks added through user interaction, paste operations, or programmatic insertion.
+The [blockAdded](../api/blockeditor/#blockadded) event is triggered when a new block is added to the editor. The event arguments include data about the added block, such as its ID and type. This includes blocks added through user interaction, paste operations, or programmatic insertion.
 
 ```typescript
 <div ejs-blockeditor (blockAdded)="onBlockAdded()" ></div>
@@ -55,7 +55,7 @@ The [blockAdded](../api/blockeditor/#blockadded) event is triggered when a new b
 
 ## BlockRemoved
 
-The [blockRemoved](../api/blockeditor/#blockremoved) event is triggered when a block is removed from the editor. This can occur through user deletion, cut operations, or programmatic removal.
+The [blockRemoved](../api/blockeditor/#blockremoved) event is triggered when a block is removed from the editor. This can occur through user deletion, cut operations, or programmatic removal. The event handler receives the details of the removed block.
 
 ```typescript
 const editor = new BlockEditor({
@@ -68,7 +68,7 @@ const editor = new BlockEditor({
 
 ## BlockMoved
 
-The [blockMoved](../api/blockeditor/#blockmoved) event is triggered when blocks are moved from one position to another within the editor. This includes drag-and-drop operations, through keyboard shortcuts or programmatic block reordering.
+The [blockMoved](../api/blockeditor/#blockmoved) event is triggered when blocks are moved from one position to another within the editor. This includes drag-and-drop operations, keyboard shortcuts, or programmatic block reordering.
 
 ```typescript
 <div ejs-blockeditor (blockMoved)="onBlockMoved()" ></div>
@@ -84,7 +84,7 @@ The [blockDragStart](../api/blockeditor/#blockdragstart) event is triggered at t
 
 ## BlockDrag
 
-The [blockDrag](../api/blockeditor/#blockdrag) event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
+The [blockDrag](../api/blockeditor/#blockdrag) event is triggered continuously during a drag operation, providing information about the blocks being dragged and their current position.
 
 ```typescript
 <div ejs-blockeditor (blockDrag)="onBlockDrag()" ></div>
@@ -92,7 +92,7 @@ The [blockDrag](../api/blockeditor/#blockdrag) event is triggered during a drag 
 
 ## BlockDrop
 
-The [blockDrop](../api/blockeditor/#blockdrop) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
+The [blockDrop](../api/blockeditor/#blockdrop) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation. This event includes data about the drop target and position.
 
 ```typescript
 <div ejs-blockeditor (blockDrop)="onBlockDrag()" ></div>
@@ -108,7 +108,7 @@ The [focus](../api/blockeditor/#focus) event is triggered when the editor gains 
 
 ## Blur
 
-The [blur](../api/blockeditor/#blur) event is triggered when the editor loses focus. This is commonly used for auto-saving content or hiding UI elements.
+The [blur](../api/blockeditor/#blur) event is triggered when the editor loses focus. This is commonly used for auto-saving content or hiding UI elements that should only be visible when the editor is active.
 
 ```typescript
 <div ejs-blockeditor (blur)="onBlur()" ></div>
@@ -124,7 +124,7 @@ The [keyActionExecuted](../api/blockeditor/#keyactionexecuted) event is triggere
 
 ## BeforePaste
 
-The [beforePaste](../api/blockeditor/#beforepaste) event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
+The [beforePaste](../api/blockeditor/#beforepaste) event is triggered before content is pasted into the editor. This event allows you to inspect, modify, or cancel the paste operation via its event arguments.
 
 ```typescript
 <div ejs-blockeditor (beforePaste)="onBeforePaste()" ></div>

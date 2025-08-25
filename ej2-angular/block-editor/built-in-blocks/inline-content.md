@@ -10,29 +10,29 @@ domainurl: ##DomainURL##
 
 # Inline Content in Angular Block Editor component
 
-Content in the Block Editor is managed through the [content](../api/blockeditor/blockModel/#content) property of blocks.
+In the Syncfusion Block Editor, all content is organized within blocks. Each block contains a [content](../api/blockeditor/blockModel/#content) property, which is an array of inline elements that define the text and functionality within that block.
 
-Each content can have properties like [id](../api/blockeditor/contentModel/#id), [type](../api/blockeditor/contentModel/#type), [content](../api/blockeditor/contentModel/#content), [styles](../api/blockeditor/contentModel/#styles), and more to customize the appearance and behavior of your text.
+Each inline element in the [content](../api/blockeditor/blockModel/#content) array is an object with properties such as [id](../api/blockeditor/contentModel/#id), [type](../api/blockeditor/contentModel/#type), [content](../api/blockeditor/contentModel/#content), and [styles](../api/blockeditor/contentModel/#styles), allowing for granular control over its appearance and behavior.
 
-### Setting content type
+## Setting content type
 
-You can specify the type of content using the [type](../api/blockeditor/contentModel/#type) property. The Block Editor supports several content types through the `ContentType` enum:
+The Block Editor supports several inline content types through the `ContentType` enum, which can be set using the [type](../api/blockeditor/contentModel/#type) property.
 
-| Built-in Content Type  | Description                         |
-|------------------------|-------------------------------------|
-| Text                   | Represents plain text content.      |
-| Link                   | Represents a hyperlink.             |
-| Code                   | Represents a code snippet.          |
-| Mention                | Represents a user mention.          |
-| Label                  | Represents a label or tag.          |
+| Built-in Content Type | Description                    |
+| ----------------------- | ------------------------------ |
+| Text                    | Represents plain text content. |
+| Link                    | Represents a hyperlink.        |
+| Code                    | Represents an inline code snippet. |
+| Mention                 | Represents a user mention.     |
+| Label                   | Represents a label or tag.     |
 
-> By default, the content type is set to `Text`.
+By default, the content type is `Text`.
 
 ## Configure text content
 
-You can configure Text content by setting the type property to `Text`. The default content type is `Text`.
+To configure text content, set the `type` property to `Text`. This is the default content type if none is specified.
 
-#### Type 
+### Type 
 
 ```typescript
 // Adding inline text
@@ -51,7 +51,7 @@ You can configure Text content by setting the type property to `Text`. The defau
 
 You can configure inline code content by setting the type property to `Code`. Code content is used for inline code snippets within regular text.
 
-#### Type
+### Type
 
 ```typescript
 // Adding inline code
@@ -68,21 +68,20 @@ You can configure inline code content by setting the type property to `Code`. Co
 
 ## Configure hyperlink
 
-You can configure hyperlink content by setting the type property to `Link`. By setting the `props` property, you can configure the url of the link and specifies the link should open in a new tab/window.
+To create a hyperlink, set the `type` property to `Link`. You can configure the link's URL and target using the `props` property.
 
 ### Configure link properties
 
 Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the link [props](../api/blockeditor/blockModel/) property.
 
-The link [props](../api/blockeditor/blockModel/) property supports the following options:
+Link settings are configured through the [props](../api/blockeditor/blockModel/) property, which accepts the following options:
 
-| Option       | Description                                                                 | Default Value |
-|--------------|-----------------------------------------------------------------------------|---------------|
-| [url](../api/blockeditor/linkSettingsModel/#url)          | Specifies the URL of the link.                                          |       ''        |
-| [openInNewWindow](../api/blockeditor/linkSettingsModel/#openinnewwindow)    | Specifies whether the link should open in a new window/tab.           | false         |
+| Option                                                                      | Description                                                       | Default Value |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------- |
+| [url](../api/blockeditor/linkSettingsModel/#url)                            | Specifies the destination URL of the link.                        | `''`          |
+| [openInNewWindow](../api/blockeditor/linkSettingsModel/#openinnewwindow)    | Specifies whether the link should open in a new browser tab.        | `false`       |
 
-
-#### Type & Props
+### Type & Props
 
 ```typescript
 {
@@ -102,7 +101,7 @@ The link [props](../api/blockeditor/blockModel/) property supports the following
 
 ## Configure Label
 
-You can render labels by setting the [type](../api/blockeditor/blockModel/#type) property as `Label`. Additionally, by configuring the `props` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
+To render labels, set the [type](../api/blockeditor/blockModel/#type) property to `Label`. The `props` property allows you to specify which label to display.
 
 ### Built-in items
 
@@ -115,7 +114,7 @@ The Block Editor comes with offers different built-in options. These include:
 
 You can customize the labels by using the `props` property with type `Label`.
 
-#### Type & Props
+### Type & Props
 
 ```typescript
 // Adding inline label
@@ -130,26 +129,28 @@ You can customize the labels by using the `props` property with type `Label`.
 }
 ```
 
-#### Trigger Character configuration
+### Trigger Character configuration
 
-You can use the [triggerChar](../api/blockeditor/labelSettingsModel/#triggerchar) property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
+Use the [triggerChar](../api/blockeditor/labelSettingsModel/#triggerchar) property to define the character that opens the label suggestions popup. The default trigger character is `$`.
 
-#### Label items configuration
+### Label items configuration
 
-The [labelItems](../api/blockeditor/labelSettingsModel/#labelitems) array allows you to define the available labels in your editor. Each label item can have the following properties:
+Define the available labels using the [labelItems](../api/blockeditor/labelSettingsModel/#labelitems) array. When a user types the trigger character, a popup will show matching items.
 
-| Property    | Description                                 |
-|-------------|---------------------------------------------|
-| [id](../api/blockeditor/labelItemModel/#id)          | Unique identifier for the label             |
-| [text](../api/blockeditor/labelItemModel/#text)        | Display text for the label                  |
-| [groupHeader](../api/blockeditor/labelItemModel/#groupheader) | Category/group name for organizing labels   |
-| [labelColor](../api/blockeditor/labelItemModel/#labelcolor)  | Background color of the label               |
-| [iconCss](../api/blockeditor/labelItemModel/#iconcss)  | CSS class for an icon to display with label |
+Each item in the [labelItems](../api/blockeditor/labelSettingsModel/#labelitems) array supports the following properties:
+
+| Property                                                              | Description                                         |
+| --------------------------------------------------------------------- | --------------------------------------------------- |
+| [id](../api/blockeditor/labelItemModel/#id)                           | A unique identifier for the label.                  |
+| [text](../api/blockeditor/labelItemModel/#text)                       | The display text for the label.                     |
+| [groupHeader](../api/blockeditor/labelItemModel/#groupheader)         | The category name for grouping similar labels.      |
+| [labelColor](../api/blockeditor/labelItemModel/#labelcolor)           | The background color of the label.                  |
+| [iconCss](../api/blockeditor/labelItemModel/#iconcss)                 | A CSS class for an icon to display with the label.  |
 
 
 When users type the trigger character followed by text, a popup will appear showing matching label items from which they can select. The selected label will be inserted into the content as a Label content item.
 
-#### Using labels with group headers
+### Using labels with group headers
 
 Labels with the same [groupHeader](../api/blockeditor/labelItemModel/#groupheader) value will be grouped together in the label selection popup:
 
@@ -176,7 +177,7 @@ Mentions are references to users or entities that can be inserted into your cont
 
 Mentions are typically triggered by the `@` character and are linked to the [users](../api/blockeditor/#users) collection defined in the Block Editor.
 
-#### Type
+### Type
 
 ```typescript
 // Adding inline code
@@ -191,7 +192,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 }
 ```
 
-Below is an example of how to configure different types of content in the Block Editor.
+The sample below demonstrates how to configure mentions and other content types.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,27 +209,27 @@ Below is an example of how to configure different types of content in the Block 
 
 {% previewsample "page.domainurl/samples/block-editor/blocks/content-types" %}
 
-## Setting content styles
+## Applying Inline Styles
 
-The Block Editor enables you to customize the appearance of Text, Link, and Code elements using the [styles](../api/blockeditor/contentModel/#styles) property. This property offers rich formatting options to enhance the visual presentation of these content types.
+The Block Editor allows you to apply rich formatting to `Text`, `Link`, and `Code` elements using the [styles](../api/blockeditor/contentModel/#styles) property.
 
-The [styles](../api/blockeditor/contentModel/#styles) property supports the following formatting options:
+The `styles` property supports the following options:
 
-| Style Property | Description | Default Value |
-|---------------|-------------|---------------|
-| [bold](../api/blockeditor/styleModel/#bold) | Makes the text bold | false |
-| [italic](../api/blockeditor/styleModel/#italic) | Makes the text italicized | false |
-| [underline](../api/blockeditor/styleModel/#underline) | Adds an underline to the text | false |
-| [strikethrough](../api/blockeditor/styleModel/#strikethrough) | Adds a line through the text | false |
-| [color](../api/blockeditor/styleModel/#color) | Sets the text color (HEX or RGBA format) | '' |
-| [backgroundColor](../api/blockeditor/styleModel/#bgcolor) | Sets the background color for the text | '' |
-| [superscript](../api/blockeditor/styleModel/#superscript) | Displays the text as superscript | false |
-| [subscript](../api/blockeditor/styleModel/#subscript) | Displays the text as subscript | false |
-| [uppercase](../api/blockeditor/styleModel/#uppercase) | Converts the text to uppercase | false |
-| [lowercase](../api/blockeditor/styleModel/#lowercase) | Converts the text to lowercase | false |
-| [custom](../api/blockeditor/styleModel/#custom) | Adds custom CSS styles to the text | '' |
+| Style Property                                                      | Description                                | Default Value |
+| ------------------------------------------------------------------- | ------------------------------------------ | ------------- |
+| [bold](../api/blockeditor/styleModel/#bold)                         | Makes the text bold.                       | `false`       |
+| [italic](../api/blockeditor/styleModel/#italic)                     | Makes the text italicized.                 | `false`       |
+| [underline](../api/blockeditor/styleModel/#underline)               | Adds an underline to the text.             | `false`       |
+| [strikethrough](../api/blockeditor/styleModel/#strikethrough)       | Adds a line through the text.              | `false`       |
+| [color](../api/blockeditor/styleModel/#color)                       | Sets the text color (HEX or RGBA format).  | `''`          |
+| [backgroundColor](../api/blockeditor/styleModel/#bgcolor)           | Sets the background color for the text.    | `''`          |
+| [superscript](../api/blockeditor/styleModel/#superscript)           | Renders the text as superscript.           | `false`       |
+| [subscript](../api/blockeditor/styleModel/#subscript)               | Renders the text as subscript.             | `false`       |
+| [uppercase](../api/blockeditor/styleModel/#uppercase)               | Converts the text to uppercase.            | `false`       |
+| [lowercase](../api/blockeditor/styleModel/#lowercase)               | Converts the text to lowercase.            | `false`       |
+| [custom](../api/blockeditor/styleModel/#custom)                     | Adds a custom CSS class to the element.     | `''`          |
 
-You can apply one or more of these styles to any content element for rich text formatting:
+You can apply one or more of these styles to any supported content element for rich text formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

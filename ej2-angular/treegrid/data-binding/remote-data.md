@@ -1,33 +1,30 @@
 ---
 layout: post
-title: Remote data in Angular Treegrid component | Syncfusion
-description: Learn here all about Remote data in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Remote data in Angular TreeGrid component | Syncfusion
+description: Learn how to bind remote data in the Syncfusion Angular TreeGrid component, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: ej2-angular
-control: Remote data 
+control: Remote data
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote data in Angular Treegrid component
+# Remote data in Angular TreeGrid component
 
-To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property of treegrid.
+To bind remote data to the TreeGrid component, assign a `DataManager` instance as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. To interact with a remote data source, provide the service endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property of the TreeGrid.
 
-The [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+The [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property maps to the field in your data source that denotes whether a record contains child records. This property is essential for displaying the expand icon and supporting child data loading on demand.
 
-The TreeGrid provides `Load on Demand` support for rendering remote data. The Load on demand is considered in TreeGrid for the following actions.
+## Load on demand with remote data
 
-* Expanding root nodes.
-* Navigating pages, with paging enabled in TreeGrid.
+TreeGrid provides "Load on Demand" support for remote data. With load on demand, root nodes are initially rendered in a collapsed state, and child nodes are fetched and expanded only when requested.
 
-When load on demand is enabled, all the root nodes are rendered in collapsed state at initial load.
+Key actions using load on demand:
 
-When load on demand support is enabled in TreeGrid with paging, the current or active page’s root node alone will be rendered in collapsed state. On expanding the root node, the child nodes will be loaded from the remote server.
+* Expanding root nodes: Child records are loaded from the remote server and cached locally for future expand/collapse operations.
+* Paging with load on demand: Only root nodes on the current page are shown, rendered in a collapsed state. Expanding a root node loads its child nodes from the remote server.
+* Navigating between pages: The TreeGrid fetches and renders the root nodes for the active page from the server, displaying them in a collapsed state by default.
 
-When a root node is expanded, its child nodes are rendered and are cached locally, such that on consecutive expand/collapse actions on root node, the child nodes are loaded from the cache instead from the remote server.
-
-Similarly, if the user navigates to a new page, the root nodes of that specific page, will be rendered with request to the remote server.
-
->Remote Data Binding supports only Self-Referential Data and by default the `pageSizeMode` for Remote Data is `Root` mode. i.e only root node’s count will be shown in pager while using Remote Data
+> Remote data binding supports only self-referential data and, by default, sets the `pageSizeMode` to `Root`, only root node counts are shown in the pager. Filtering and searching server-side data operations are not supported with load on demand.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +34,7 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 {% include code-snippet/treegrid/data-binding-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs4" %}
 
 **Service code snippet:**
@@ -157,11 +154,9 @@ namespace Controllers
 
 ## LoadChildOnDemand
 
-While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. Tree Grid provides option to load the child records also during the initial rendering itself for remote data binding by setting [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#loadchildondemand) as false.
+When binding remote data, parent rows are rendered in a collapsed state by default. Set [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#loadchildondemand) to `false` to load and expand all levels initially. When set to `true`, parent records remain collapsed and load their children only on demand.
 
-When [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#loadchildondemand) is enabled parent records are rendered in collapsed state.
-
-The following code example describes the behavior of the loadChildOnDemand feature of Tree Grid.
+Child records must be handled on the server side to support load on demand and related CRUD operations.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -180,7 +175,6 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
     </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-
     public data: DataManager;
 
     public dataManager: DataManager = new DataManager({
@@ -196,7 +190,6 @@ export class AppComponent implements OnInit {
         this.data = this.dataManager;
     }
 }
-
 ```
 
 > Also while using **loadChildOnDemand** we need to handle the child records on server end and it is applicable to CRUD operations also.
@@ -271,71 +264,65 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ## Offline mode
 
-On remote data binding, all treegrid actions such as paging, loading child on-demand, will be processed on server-side. To avoid postback, set the treegrid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of `DataManager`.
+To avoid round trips to the server and process TreeGrid actions client-side, set the `offline` property of the `DataManager`. This directs the control to load all data at initialization and handle interactions locally.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs5/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs5" %}
 
 ## Custom adaptor
 
-You can create your own adaptor by extending the built-in adaptors. The following demonstrates custom adaptor approach and how to add a serial number for the records by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
+You can extend DataManager’s adaptors to implement custom data processing—such as serial number calculation or advanced response handling—by overriding the `processResponse` method in a derived adaptor class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs6/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs6" %}
 
 ## Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the `addParams` method of `Query` class. Assign the `Query` object with additional parameters to the treegrid [`query`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property.
+To send custom parameters with your remote data requests, use the `addParams` method of the `Query` class. Attach your configured `Query` object to the TreeGrid’s [`query`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs7/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs7" %}
 
-## Handling HTTP error
+## Handling HTTP errors
 
-During server interaction from the treegrid, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event.
-
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event contains the error details returned from the server.
+Handle exceptions and errors from the server using the TreeGrid’s [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event. The argument to `actionFailure` contains error details from the server or sync errors from client actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs8/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs8" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event is triggered on both server-side and in-client exceptions during TreeGrid actions.
 
 ## Load on demand with virtualization
 
@@ -346,7 +333,6 @@ When using virtualization with remote data binding, it helps you to improve the 
 [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
 ```typescript
-
 import { Component, OnInit } from '@angular/core';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { EditSettingsModel, ToolbarItems, VirtualScrollService, ToolbarService, PageService, FilterService, EditService, SortService } from '@syncfusion/ej2-angular-treegrid';
@@ -360,14 +346,13 @@ import { EditSettingsModel, ToolbarItems, VirtualScrollService, ToolbarService, 
             <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
         </e-columns>
     </ejs-treegrid>`,
-providers: [VirtualScrollService, ToolbarService, PageService, FilterService, EditService, SortService]
+    providers: [VirtualScrollService, ToolbarService, PageService, FilterService, EditService, SortService]
 })
 export class AppComponent implements OnInit {
-
     public data: DataManager;
     public editSettings: EditSettingsModel;
     public toolbarOptions: ToolbarItems[];
-    public pageSettings: Object ;
+    public pageSettings: Object;
 
     public dataManager: DataManager = new DataManager({
         adaptor: new UrlAdaptor,
@@ -381,7 +366,7 @@ export class AppComponent implements OnInit {
         this.data = this.dataManager;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' };
         this.toolbarOptions = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.pageSettings = {pageSize: 30};
+        this.pageSettings = { pageSize: 30 };
     }
 }
 

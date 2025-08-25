@@ -2,19 +2,12 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { baselineData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
+imports: [GanttModule],
 providers: [SelectionService],
 standalone: true,
     selector: 'app-root',
