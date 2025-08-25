@@ -9,60 +9,66 @@ documentation: ug
 
 # Performance tips for Angular DataGrid Component
 
-This article is a comprehensive guide on improving the loading performance of the Angular DataGrid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Angular DataGrid during data binding, ensuring a smooth and efficient user experience.
+This comprehensive guide provides actionable strategies for optimizing Angular DataGrid performance when handling large datasets and numerous columns. The techniques outlined here ensure smooth data binding without performance degradation, delivering an efficient user experience even with substantial data volumes.
 
-## How to improve loading performance by binding large dataset
-As you all know, a grid is made up of rows and columns. For instance, when you bind 10 rows and 10 columns, it means 100 elements will be rendered in the DOM (Document Object Model). So, it is recommended to render only a limited number of rows and columns to guarantee the best loading performance for the component.
+## Improve loading performance with large datasets
+
+The DataGrid renders DOM elements based on the number of rows and columns displayed. For example, binding 10 rows and 10 columns creates 100 DOM elements. To maintain optimal performance, limit the number of simultaneously rendered rows and columns using the strategies below.
 
 ### Optimizing performance with paging 
-To boost the performance efficiency of your application, especially when dealing with large datasets, it is advised to implement paging. [Paging](https://ej2.syncfusion.com/angular/documentation/grid/paging) allows you to display grid data in segmented pages, facilitating easier navigation through substantial datasets. This feature proves particularly beneficial in enhancing the overall performance of your application. For more information on implementing paging, you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/paging) section dedicated to this feature.
+
+Implement [paging](https://ej2.syncfusion.com/angular/documentation/grid/paging) to display data in manageable segments, significantly improving application performance when handling large datasets. Paging reduces DOM load by rendering only the current page's data.
 
 ### Optimizing performance with row virtualization or infinite scrolling 
-To enhance your application's efficiency, especially when dealing with substantial datasets, it is recommended to either using [virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) or [infinite scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling). Implementing these techniques can significantly reduce the load on your application and elevate its overall performance.
 
-1.  **Virtualization**: The Virtual scrolling feature in the Angular Data Grid enables the efficient handling and display of large volumes of data without compromising performance. This approach optimizes the rendering process by loading only the visible rows within the Grid viewport, rather than rendering the entire dataset simultaneously. For more information on implementing row virtualization , you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) section dedicated to this feature.
+For substantial datasets, implement either [virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) or [infinite scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) to enhance application efficiency and reduce rendering overhead.
 
-2.  **Infinite scrolling**: The Infinite Scrolling feature in the Angular Data Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a "load-on-demand" concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. For more information on implementing infinite scrolling , you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) section dedicated to this feature.
+1.  **Virtualization**: Virtual scrolling renders only visible rows within the viewport, dramatically improving performance for large datasets. The DataGrid loads additional rows dynamically as users scroll, maintaining smooth interaction regardless of total data volume. You can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) section dedicated to this feature.
 
-### Optimizing performance with column virtualization in large no of columns
-[Column virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#column-virtualization) feature in the Angular Data Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
+2.  **Infinite scrolling**: This "load-on-demand" approach fetches new data blocks when the scrollbar reaches the vertical scroller's end. Infinite scrolling prevents initial load delays by progressively loading content as needed. You can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) section dedicated to this feature.
 
-It is possible to enable both row and column virtualization. This feature allows for efficient handling of large datasets by dynamically loading only the visible rows and columns, optimizing performance and enhancing the overall responsiveness of the grid. For more information on implementing column virtualization , you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#column-virtualization) section dedicated to this feature.
+### Optimizing performance with column virtualization
 
-### How to overcome browser height limitation in virtual scrolling
-[Documentation link](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#browser-height-limitation-in-virtual-scrolling-and-solution)
+[Column virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#column-virtualization) displays only columns currently within the viewport, enabling horizontal scrolling for additional columns. This feature proves essential when working with grids containing numerous columns, reducing initial loading time and improving responsiveness.
 
-## How to improve loading performance by binding large data by showing custom text or element
-When integrating image or template elements into a column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the component's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+Combine row and column virtualization for maximum efficiency when handling both large datasets and multiple columns. This dual approach optimizes performance by loading only visible rows and columns dynamically.
 
-## How to improve loading performance by referring individual script and CSS
+### Browser height limitation in virtual scrolling
 
-To improve the performance of Syncfusion Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
+Virtual scrolling encounters browser-imposed height limitations when dealing with extremely large datasets. The maximum scrollable height varies by browser but typically ranges from 10 million to 33 million pixels. For datasets exceeding these limits, implement server-side paging or data segmentation strategies. Refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#browser-height-limitation-in-virtual-scrolling-and-solution) for detailed solutions.
 
-[CRG website link](https://crg.syncfusion.com/) 
+## Improve performance with custom content rendering
 
-So to improve the performance of grid during the initial rendering, suggested you to refer individual script and CSS.
+When displaying images or complex elements within columns, use [Column Template](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template) instead of customizing data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) events. These events trigger for every row and cell, creating rendering delays and potentially causing memory leaks from persistent elements. Column templates provide efficient custom rendering without performance penalties.
 
-## How to update cell values without frequent server calls 
+## Improve loading performance with optimized resources
 
-Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid/#setcellvalue) method to update the DataGrid without affecting the database and only refresh the UI.
+Enhance DataGrid initial rendering performance by using the Custom Resource Generator (CRG) to download component-specific scripts instead of the complete ej2.min.js file. The full script contains all Syncfusion components, increasing load times unnecessarily.
 
-## How to optimize server-side data operations with adaptors
+Use [CRG](https://crg.syncfusion.com/) to select only required components and modules, generating optimized scripts and CSS files tailored to your application needs. This approach significantly reduces bundle size and improves initial loading performance.
 
-The Angular DataGrid provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By leveraging these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the grid and execute actions. During data operations like filtering, sorting, and paging, the corresponding action queries are generated as per the adaptor's requirements. It is crucial to handle these actions on the application end and return the processed data back to the grid. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the grid is as follows
-* Filtering
-* Sorting
-* Aggregates
-* Paging
-* Grouping
+## Update cell values efficiently without server calls
 
-## How to avoid MaxJsonLength error while passing large amount of records
+For live data scenarios, update cell values locally without frequent server requests using the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid/#setcellvalue) method. This approach updates the DataGrid UI immediately while maintaining data consistency without database round trips.
 
-The Angular Grid component is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
+## Optimize server-side operations with data adaptors
 
-**Solution: 1**
+The Angular DataGrid supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side operations and CRUD functionality. When implementing server-side processing, handle data operations in this recommended sequence for optimal performance:
 
-```csharp
+1. Filtering
+2. Sorting  
+3. Aggregates
+4. Paging
+5. Grouping
+
+Process operations in this order ensures efficient data handling and maintains consistent performance across different operation combinations.
+
+## Resolve large dataset serialization issues
+
+When transferring large datasets between client and server, increase the maximum JSON serialization length to prevent MaxJsonLength errors. Configure your server application to handle larger JSON payloads:
+
+**Web.config configuration:**
+```xml
 <configuration> 
    <system.web.extensions>
        <scripting>
@@ -74,41 +80,42 @@ The Angular Grid component is client-server based. So, we send the data as JSON 
 </configuration> 
 ```
 
-**Solution : 2**
+**Server-side serializer configuration:**
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Optimizing Angular app performance with multiple grids and templates
+## Optimize Angular applications with multiple DataGrids
 
-The reported performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion Grid.
+Performance issues in applications with multiple DataGrids and templates typically stem from Angular's default change detection strategy rather than the DataGrid itself. When the DOM contains numerous elements, continuous change detection (triggered by user interactions) can cause performance degradation.
 
-When your application's DOM is populated with a large number of items, this problem arises as continuous change detection is applied (e.g., typing into an input continuously). For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) links:
-  
-In [Angular](https://angular.io/api/core/ChangeDetectionStrategy), there are two default change detection strategies available:
-  
-* **Default**:               
-Utilizes the default `CheckAlways` strategy, where change detection is automatic until explicitly deactivated. For example, entering a value into a text box triggers continuous change detection for all template references, leading to the reported issue. 
-  
-* **OnPush**: 
-Adopts the `CheckOnce` strategy, disabling automatic change detection until reactivated by setting the strategy to Default (CheckAlways). Enabling this strategy ensures that change detection triggers only for the input text box, rather than for all template references, overcoming the reported issue. 
-  
-To address this, it's recommended to implement the OnPush change detection strategy in your application. This can be achieved by using the following code snippet:
+Angular provides two change detection strategies:
 
-```ts
- @Component({ 
-  selector: "app-root", 
-  templateUrl: "app.component.html", 
-  providers: [OrdersService], 
-  changeDetection: ChangeDetectionStrategy.OnPush 
-}) 
+* **Default**: Uses `CheckAlways` strategy, triggering change detection for all components continuously
+* **OnPush**: Uses `CheckOnce` strategy, limiting change detection to specific component updates
+
+Implement the OnPush strategy to improve performance:
+
+```typescript
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+@Component({
+  selector: 'app-grid',
+  templateUrl: './grid.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class GridComponent {
+  // Component implementation
+}
 ```
-Using the OnPush strategy may lead to child components not being updated when the input changes. You can address this by referring to the following links,
-* [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
-* [ApplicationRef - Tick](https://angular.io/api/core/ApplicationRef#tick)
-* [Tick - Description](https://angular.io/api/core/testing/tick#description)
-* [DetectChange - Anchor](https://angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+For comprehensive guidance on OnPush implementation and handling child component updates, refer to:
+* [OnPush Change Detection Strategy](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
+* [Angular ApplicationRef Documentation](https://angular.io/api/core/ApplicationRef#tick)
+* [Change Detection Reference](https://angular.io/api/core/ChangeDetectorRef#detectChanges)
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+## Handle Excel export limitations for large datasets
+
+Microsoft Excel supports a maximum of 1,048,576 records per worksheet, making it unsuitable for exporting millions of records. For large datasets, export data in CSV (Comma-Separated Values) format or other formats designed for handling substantial data volumes more efficiently than Excel.
+
+Consider implementing chunked exports or server-side export processing for datasets exceeding Excel limitations. Refer to [Microsoft Excel specifications and limits](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) for detailed information on Excel constraints.

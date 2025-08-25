@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Local data in Angular Treegrid component | Syncfusion
-description: Learn here all about Local data in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Local data in Angular TreeGrid component | Syncfusion
+description: Learn how to bind local data in the Syncfusion Angular TreeGrid component, including hierarchical and self-referential (flat) data structures, reserved keywords, and refresh techniques.
 platform: ej2-angular
-control: Local data 
+control: Local data
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Local data in Angular Treegrid component
+# Local data in Angular TreeGrid component
 
-In Local Data binding, data source for rendering the TreeGrid control is retrieved from the same application locally.
+In local data binding, the data source for rendering the TreeGrid control is retrieved from within the same application.
 
-Two types of Data binding are possible with the TreeGrid control.
+There are two types of data binding supported in the TreeGrid component:
 
-* Hierarchical Datasource binding
-* Self-Referential Data binding (Flat Data)
+* Hierarchical data source binding
+* Self-referential data binding (flat data)
 
-To bind local data to the treegrid, you can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the TreeGrid, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. You may also provide a `DataManager` instance as the data source.
 
-> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
+> By default, `DataManager` uses `JsonAdaptor` for local data binding.
 
-## Hierarchy data source binding
+## Hierarchical data source binding
 
-The [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childMapping) property is used to map the child records in hierarchy data source.
+Use the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childMapping) property to map child records in hierarchical data sources.
 
-The following code example shows you how to bind the hierarchical local data into the TreeGrid control.
+The following code example shows how to bind hierarchical local data to the TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,17 +38,17 @@ The following code example shows you how to bind the hierarchical local data int
 {% include code-snippet/treegrid/data-binding-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs2" %}
 
-> * Remote data binding is not supported for Hierarchy Data.
+> * Remote data binding is not supported for hierarchical data sources.
 
-## Self-Referential data binding (Flat data)
+## Self-referential data binding (flat data)
 
-TreeGrid is rendered from Self-Referential data structures by providing two fields, ID field and parent ID field.
+The TreeGrid can render data from self-referential (flat) data structures by specifying two fields: an ID field and a parent ID field.
 
-* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) property.
-* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) property.
+* **ID Field**: Contains unique values that identify each node. Assign this field to the [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) property.
+* **Parent ID Field**: Contains values representing parent nodes. Assign this field to the [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,53 +61,49 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 {% include code-snippet/treegrid/data-binding-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs3" %}
 
-> Herewith we have provided list of reserved properties and the purpose used in TreeGrid. We recommend to avoid these reserved properties for Internal purpose(To get rid of conflicts).
+> Below is a list of reserved properties used internally by TreeGrid. To avoid conflicts, do not use these property names in your data models.
 
 Reserved keywords | Purpose
 -----|-----
-childRecords | Specifies the childRecords of a parentData
-hasChildRecords | Specifies whether the record contains child records
-hasFilteredChildRecords | Specifies whether the record contains filtered child records
-expanded | Specifies whether the child records are expanded
-parentItem | Specifies the parentItem of childRecords
-index | Specifies the index of current record
-level | Specifies the hierarchy level of record
-filterLevel | Specifies the hierarchy level of filtered record
-parentIdMapping | Specifies the parentID
+childRecords | Specifies the child records of a parent data row
+hasChildRecords | Indicates whether the record contains child records
+hasFilteredChildRecords | Indicates whether the record contains filtered child records
+expanded | Indicates whether the child records are expanded
+parentItem | Specifies the parent item for child records
+index | Represents the index of the current record
+level | Indicates the hierarchy level of the record
+filterLevel | Indicates the hierarchy level of a filtered record
+parentIdMapping | Specifies the parent ID
 uniqueID | Specifies the unique ID of a record
-parentUniqueID | Specifies the parent Unique ID of a record
-checkboxState | Specifies the checkbox state of a record
-isSummaryRow | Specifies the summary of a record
-taskData | Specifies the main data
-primaryParent | Specifies the Primary data
+parentUniqueID | Specifies the parent unique ID of a record
+checkboxState | Indicates the checkbox state of a record
+isSummaryRow | Specifies if the record is a summary row
+taskData | Specifies the main data of a task record
+primaryParent | Specifies the primary parent data
 
 ## Refresh the data source
 
-Add or delete the data source through an external button. To reflect the data source changes in the tree grid, you need to invoke the [refresh](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refresh) method.
-
-Please follow the below steps to refresh the tree grid after changing the data source:
+To add or delete data source records externally and reflect these changes in the TreeGrid, invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refresh) method after updating the data source.
 
 **Step 1**:
 
-Add or delete the datasource record by using the following code:
+Add or delete records in the data source as follows:
 
 ```typescript
-    this.treegrid.dataSource.unshift(data); // Add a new record.
+this.treegrid.dataSource.unshift(data); // Add a new record.
 
-    this.treegrid.dataSource.splice(selectedRow, 1); // Delete a record.
-
+this.treegrid.dataSource.splice(selectedRow, 1); // Delete a record.
 ```
 
 **Step 2**:
 
-Refresh the tree grid after changing the datasource by using the `refresh` method.
+After modifying the data source, refresh the TreeGrid:
 
 ```typescript
-    this.treegrid.refresh(); // Refresh the tree grid.
-
+this.treegrid.refresh(); // Refresh the TreeGrid.
 ```
 
 {% tabs %}
@@ -121,9 +117,9 @@ Refresh the tree grid after changing the datasource by using the `refresh` metho
 {% include code-snippet/treegrid/refresh-datasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs1" %}
 
-> Get the content of the tree grid by using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
-> Get the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method in the tree grid.
-> Destroy the component by using the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#destroy) method in the tree grid.
+> Access the content of the TreeGrid using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
+> Access the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method.
+> Destroy the component programmatically using the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#destroy) method.

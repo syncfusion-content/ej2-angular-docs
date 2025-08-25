@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Column template in Angular TreeGrid component
 
-TreeGrid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
+The TreeGrid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) option that allows displaying custom elements in a column instead of the field value. This can be useful when displaying images, buttons, or other custom content within a column.
 
-> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for tree grid actions like sorting, filtering, editing unless `field` property of the column is specified.
+> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for TreeGrid actions like sorting, filtering, editing unless the `field` property of the column is specified.
 
 ## Render image in a column
 
-To render an image in a tree grid column, you need to define a template for the column using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. The `template` property expects the HTML element or a function that returns the HTML element.
+To render an image in a TreeGrid column, define a template for the column using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. The `template` property expects the HTML element or a function that returns the HTML element.
 
 The following example demonstrates how to define a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) for the **Employee Name** field that displays an image element. The `template` property is set to the HTML element that contains an image tag.
 
@@ -61,13 +61,13 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/treegrid/template-cs1" %}
 
-> The [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) option allows to define any HTML content within a column.
+> The [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) option allows defining any HTML content within a column.
 
 ## Render hyperlink in a column
 
 The TreeGrid component provides support for rendering hyperlink columns and performing routing on click using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. This feature is useful when displaying data that requires a link to another page or website.
 
-The following example demonstrates, how to render hyperlink column in the tree grid using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property of the `e-column` tag. To define a `template` for the column,  you can use the `ng-template` with the `a` tag to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
+The following example demonstrates how to render hyperlink column in the TreeGrid using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property of the `e-column` tag. To define a `template` for the column, the `ng-template` with the `a` tag can be used to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,13 +121,13 @@ export class AppComponent implements OnInit {
 
 ## Render other components in a column
 
-The column template has options to render a custom component in a tree grid column instead of a field value.
+The column template provides options to render a custom component in a TreeGrid column instead of a field value.
 
 ### Render ColorPicker component in a column
 
-The [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.
+The [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in various scenarios such as picking a theme color or changing the color of an element on a page.
 
-In the following code, we rendered the ColorPicker component in the tree grid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
+In the following code, the ColorPicker component is rendered in the TreeGrid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
 
 ```
 <div>
@@ -148,7 +148,7 @@ In the following code, we rendered the ColorPicker component in the tree grid co
 
 ### Render DropDownList component in a column
 
-To render a custom component in a tree grid column, you need to define a template for the column using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. In the following code, we rendered the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component in the **Country** column by defining the `template` property.
+To render a custom component in a TreeGrid column, define a template for the column using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. In the following code, the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is rendered in the **Country** column by defining the `template` property.
 
 ```
 <div>
@@ -171,7 +171,7 @@ To render a custom component in a tree grid column, you need to define a templat
 
 The TreeGrid component provides support for rendering [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property. This feature is useful when displaying data that requires a chip component to be rendered in a column.
 
-In the following code, we rendered the Chips component in the Tree Grid **First Name** column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
+In the following code, the Chips component is rendered in the TreeGrid **First Name** column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
 
 ```
 <div>
@@ -194,7 +194,7 @@ In the following code, we rendered the Chips component in the Tree Grid **First 
 
 The [LineChart](https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
 
-In the following example, we rendered the Sparkline Chart component in the tree grid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
+In the following example, the Sparkline Chart component is rendered in the TreeGrid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,7 +209,7 @@ In the following example, we rendered the Sparkline Chart component in the tree 
 
 ## Using condition template
 
-The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) allows you to display template elements based on specific conditions.
+The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) allows displaying template elements based on specific conditions.
 
 The following example demonstrates how to use the `template` property with the `ng-template` element and add `*ngIf` directive to render the checkbox based on the value of the **approved** field. The **approved** field will render a checkbox in each row for which the value of the **approved** field is **true**. 
 
@@ -235,13 +235,13 @@ The following example demonstrates how to use the `template` property with the `
   
 {% previewsample "page.domainurl/samples/treegrid/template-cs7" %}
 
->You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
+>Any template element or custom component can be used instead of the checkbox in the conditional template based on requirements.
 
 ## How to get the row object by clicking on the template element
 
-The TreeGrid component allows you to retrieve the row object of the selected record when clicking on a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) element. This feature can be useful when you need to perform custom actions based on the selected record.
+The TreeGrid component allows retrieving the row object of the selected record when clicking on a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) element. This feature can be useful when performing custom actions based on the selected record.
 
-In the following code, the button element is rendered in the **Employee Data** column and `click` event binding is used to call the showDetails method when the template element is clicked. The showDetails method is passed with the data object as an argument from the template variable, which allows you to access the selected row object and display it in the dialog popup.
+In the following code, the button element is rendered in the **Employee Data** column and `click` event binding is used to call the showDetails method when the template element is clicked. The showDetails method is passed with the data object as an argument from the template variable, which allows access to the selected row object and display it in the dialog popup.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -256,9 +256,9 @@ In the following code, the button element is rendered in the **Employee Data** c
 
 ## Use custom helper inside the template
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to use custom helpers inside the `ng-template` directive of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) syntax.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows using custom helpers inside the `ng-template` directive of a column. This feature allows creating complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) syntax.
 
-To use the custom helper function inside a column template, you must first add the function to the template's context. This can be done by using the let keyword to create a new variable that references the function.
+To use the custom helper function inside a column template, first add the function to the template's context. This can be done by using the let keyword to create a new variable that references the function.
 
 The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property, using the `ng-template` element for the Freight column.
 

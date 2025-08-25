@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Custom tool tip for columns in Angular Treegrid component | Syncfusion
-description: Learn here all about Custom tool tip for columns in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Custom tool tip for columns in Angular TreeGrid component | Syncfusion
+description: Learn how to add custom tooltips for columns in the Syncfusion Angular TreeGrid component of Essential JS 2 by using the Tooltip and queryCellInfo event.
 platform: ej2-angular
 control: Custom tool tip for columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom tool tip for columns in Angular Treegrid component
+# Custom tool tip for columns in Angular TreeGrid component
 
-You can achieve the custom tooltip([`EJ2 Tooltip`](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started)) for Tree Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
+Custom tooltips can be added to columns in the TreeGrid component by using the [`EJ2 Tooltip`](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component in combination with the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
 
-Render the ToolTip component for the Tree Grid cells by using the following code in the
+Render the Tooltip component for TreeGrid cells by using the following code in the
 [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
 
 ```typescript
@@ -35,7 +35,7 @@ Render the ToolTip component for the Tree Grid cells by using the following code
 {% include code-snippet/treegrid/refresh-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs4" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also view the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

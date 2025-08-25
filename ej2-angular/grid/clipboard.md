@@ -10,16 +10,17 @@ domainurl: ##DomainURL##
 
 # Clipboard in Angular Grid component
 
-The clipboard feature in the Syncfusion Angular Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
+The clipboard feature in the Syncfusion Angular Grid provides an efficient way to copy selected rows or cells data to the clipboard. The grid supports keyboard shortcuts to perform clipboard operations seamlessly. The following keyboard shortcuts are supported for copying selected rows or cells data:
 
 Interaction keys |Description
 -----|-----
-<kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
-<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
+<kbd>Ctrl + C</kbd> |Copy selected rows or cells data to clipboard.
+<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with headers to clipboard.
+<kbd>Ctrl + V</kbd> |Paste copied data to selected cells (requires batch editing mode).
 
-By using these keyboard shortcuts, you can quickly copy data from the grid to the clipboard, making it easy to paste the data into other applications or documents.
+These keyboard shortcuts enable quick data transfer from the grid to the clipboard, making it easy to paste data into other applications or documents.
 
-To enable the clipboard feature, you can use the grid component with your data source and selection property. 
+To enable the clipboard feature, configure the grid component with your data source and selection property. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,9 +36,9 @@ To enable the clipboard feature, you can use the grid component with your data s
 
 ## Copy to clipboard by external buttons
 
-Copying data to the clipboard by using external buttons in the Syncfusion Angular Grid allows you to programmatically trigger the copy operation, making it more friendly, especially for those who may not be familiar with keyboard shortcuts or manual copying.
+Copying data to the clipboard using external buttons in the Syncfusion Angular Grid allows programmatic triggering of copy operations, making it more user-friendly, especially for users who may not be familiar with keyboard shortcuts.
 
-To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard/#copy) method available in the grid component. This is demonstrated in the following example,
+To copy selected rows or cells data to the clipboard using external buttons, utilize the [copy](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard/#copy) method available in the grid component. The `copy` method accepts an optional parameter `withHeader` (boolean) to include column headers in the copied data. This is demonstrated in the following example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,21 +54,21 @@ To copy selected rows or cells data into the clipboard with the help of external
 
 ## AutoFill
 
-The AutoFill feature in the Syncfusion Angular Grid allows you to copy the data of selected cells and paste it into other cells by simply dragging the autofill icon of the selected cells to the desired cells. This feature provides a convenient way to quickly populate data in a grid.
+The AutoFill feature in the Syncfusion Angular Grid allows copying data from selected cells and pasting it into adjacent cells by dragging the autofill icon. This feature provides a convenient way to quickly populate data across multiple cells in the grid.
 
-**how to use the autofill feature**
+**How to use the AutoFill feature:**
 
-1. Select the cells from which you want to copy data.
+1. Select the cells containing the data to copy.
 
-2. Hover over the bottom-right corner of the selection to reveal the autofill icon.
+2. Hover over the bottom-right corner of the selection to display the autofill icon.
 
-3. Click and hold the autofill icon, then drag it to the target cells where you want to paste the copied data.
+3. Click and drag the autofill icon to the target cells where the data should be pasted.
 
-4. Release the mouse to complete the autofill action, and the data from the source cells will be copied and pasted into the target cells.
+4. Release the mouse button to complete the autofill operation. The data from the source cells will be copied to the target cells.
 
-This feature is enabled by defining [enableAutoFill](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill) property as **true**. 
+Enable this feature by setting the [enableAutoFill](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill) property to **true**. 
 
-The following example demonstrates, how to enable autofill feature in the grid.
+The following example demonstrates how to enable the autofill feature in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,30 +80,30 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% endhighlight %}
 {% endtabs %}
 
-> * If [enableAutoFill](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
-> * It requires the selection `mode` to be **Cell**,  `cellSelectionMode` to be **Box** and also `editMode` to be **Batch** .
+> * When [enableAutoFill](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill) is set to **true**, the autofill icon displays on cell selection for copying cells.
+> * AutoFill requires the selection `mode` to be **Cell**, `cellSelectionMode` to be **Box**, and `editMode` to be **Batch**.
 
 ### Limitations
 
-* AutoFill does not automatically convert string values to number or date types. If the selected cells contain string data and are dragged to number-type cells, the target cells will display **NaN**. Similarly, when dragging string-type cells to date-type cells, the target cells will display as an **empty cell**. It is important to ensure data types are compatible before using autofill to avoid unexpected results.
+* AutoFill does not automatically convert string values to number or date types. When selected cells contain string data and are dragged to number-type cells, the target cells will display **NaN**. Similarly, dragging string-type cells to date-type cells results in **empty cells**. Ensure data types are compatible before using autofill to avoid unexpected results.
 
-* The AutoFill feature does not support generating non-linear series or sequential data automatically. Cannot create complex series or patterns by simply dragging cells with non-sequential data. The autofill feature is designed for copying and pasting data from a selected range of cells.
+* The AutoFill feature does not support generating non-linear series or sequential data automatically. It cannot create complex series or patterns by dragging cells with non-sequential data. The autofill feature is designed for copying and pasting data from a selected range of cells.
 
-* The Auto Fill feature can only be applied to the viewport cell when enabling the features of virtual scrolling, infinite scrolling, or column virtualization in the grid.
+* AutoFill can only be applied to viewport cells when virtual scrolling, infinite scrolling, or column virtualization features are enabled in the grid.
 
 ## Paste
 
-The Syncfusion Angular Grid provides a paste feature that allows you to copy the content of a cell or a group of cells and paste it into another set of cells. This feature allows you to quickly copy and paste content within the grid, making it convenient for data entry and manipulation.
+The Syncfusion Angular Grid provides a paste feature that allows copying content from cells or groups of cells and pasting it into another set of cells. This feature enables quick data transfer within the grid, making it convenient for data entry and manipulation.
 
-Follow the steps below to use the Paste feature in the grid:
+Follow these steps to use the paste feature in the grid:
 
-1. Select the cells from which you want to copy the content.
+1. Select the cells containing the content to copy.
 
-2. Press the <kbd>Ctrl + C</kbd> shortcut key to copy the selected cells' content to the clipboard.
+2. Press <kbd>Ctrl + C</kbd> to copy the selected cells' content to the clipboard.
 
-3. Select the target cells where you want to paste the copied content.
+3. Select the target cells where the copied content should be pasted.
 
-4. Press the <kbd>Ctrl + V</kbd> shortcut key to paste the copied content into the target cells.
+4. Press <kbd>Ctrl + V</kbd> to paste the copied content into the target cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,8 +115,8 @@ Follow the steps below to use the Paste feature in the grid:
 {% endhighlight %}
 {% endtabs %}
 
-> To perform paste functionality, it requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
+> To perform paste functionality, the selection **mode** must be **Cell**, **cellSelectionMode** must be **Box**, and Batch Editing must be enabled.
 
 ### Limitations
 
-* The Paste feature does not automatically convert string values to number or date types. If the selected cells contain string data and are dragged to number-type cells, the target cells will display **NaN**. Similarly, when dragging string-type cells to date-type cells, the target cells will display as an **empty cell**. It is important to ensure data types are compatible before using AutoFill to avoid unexpected results.
+* The paste feature does not automatically convert string values to number or date types. When pasted cells contain string data and are applied to number-type cells, the target cells will display **NaN**. Similarly, pasting string-type data to date-type cells results in **empty cells**. Ensure data types are compatible before using the paste feature to avoid unexpected results.

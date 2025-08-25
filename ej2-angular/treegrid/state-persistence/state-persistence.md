@@ -1,16 +1,17 @@
 ---
 layout: post
-title: State persistence in Angular Treegrid component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: State persistence in Angular TreeGrid component | Syncfusion
+description: Learn how to use state persistence in the Syncfusion Angular TreeGrid component, including configuration with enablePersistence and localStorage usage.
 platform: ej2-angular
-control: State persistence 
+control: State persistence
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in Angular Treegrid component
+# State persistence in Angular TreeGrid component
 
-State persistence refers to the TreeGrid's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
-State persistence stores treegrid’s model object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablepersistence) is defined as true.
+State persistence allows the TreeGrid component to maintain its state in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) across browser refreshes or page navigation. When [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablepersistence) is set to `true`, the TreeGrid saves its model object to local storage automatically.
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+State persistence in TreeGrid ensures that key properties such as column settings, sorting, filtering, expanded or collapsed states, and paging—are remembered and restored even after the page is reloaded or revisited.
+
+> For more details on TreeGrid's advanced features, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid). To explore practical demonstrations, see the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to understand how to present and manipulate data.
