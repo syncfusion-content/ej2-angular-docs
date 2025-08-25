@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reactive aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Reactive aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to implement reactive aggregate values in the Syncfusion Angular Grid, with auto and manual aggregate refresh based on different editing modes.
 platform: ej2-angular
 control: Reactive aggregate 
 documentation: ug
@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Reactive aggregate in Angular Grid component
 
-The Syncfusion Angular Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
+The Syncfusion Angular Grid component supports reactive aggregates, enabling dynamic updates of aggregate values as data changes. Aggregate summaries in the footer, group footer, and group caption cells are automatically or manually refreshed, depending on the Grid’s editing configuration and event handling.
 
-## Auto update aggregate value in batch editing
+## Automatic update of aggregates in batch editing
 
-When the grid is in batch editing mode, the aggregate values in the footer, group footer, and group caption are automatically refreshed every time a cell is saved. This ensures that the aggregate values accurately reflect the edited data.
+When the grid operates in **batch editing** mode, aggregate values in the footer, group footer, and group caption cells are refreshed automatically every time a cell is saved. This ensures that aggregate values remain accurate as edits occur, supporting real-time data analysis within the grid.
 
-Here's an example code snippet demonstrating how to auto update aggregate value in batch editing:
+Example: Automatic aggregate updates in batch editing mode:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,7 +53,7 @@ standalone: true,
                         <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
                     </e-column>
                     <e-column field="Freight" type="average" format="C2">
-                        <ng-template #groupCaptionTemplate let-data>Max: {{data.average}}</ng-template>
+                        <ng-template #groupCaptionTemplate let-data>Average: {{data.average}}</ng-template>
                     </e-column>
                 </e-columns>
         </e-aggregate>
@@ -84,13 +84,13 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-batchedit-cs1" %}
 
-> Adding a new record to the grouped grid will not refresh the aggregate values.
+> When using batch editing with grouping, adding a new record to a grouped grid does not refresh the aggregate values automatically.
 
-## Refresh aggregate values in inline editing
+## Manual aggregate refresh in inline and dialog editing
 
-By default, reactive aggregate update is not supported by inline and dialog edit modes as it is not feasible to anticipate the value change event for every editor. But, you can refresh the aggregates manually in the inline edit mode using the refresh method of aggregate module.
+By default, aggregate values are **not** automatically updated in **inline** and **dialog** editing modes, since value changes cannot be detected in real time during editing. In these scenarios, you can manually refresh the aggregates by calling the aggregate module’s refresh method in response to editor change events.
 
-In the following code, the input event for the Freight column editor has been registered and the aggregate value has been refreshed manually.
+Example: Manually refreshing aggregates in inline editing mode:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,3 +171,5 @@ interface ItemType{
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-inlineedit-cs1" %}
+
+> In inline and dialog editing, manually invoke the aggregate module’s `refresh` method to update aggregates after data changes. Access aggregate values in template cells by their type key (e.g., `data.sum`, `data.max`).

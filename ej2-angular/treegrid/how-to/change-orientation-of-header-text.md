@@ -1,45 +1,43 @@
 ---
 layout: post
-title: Change orientation of header text in Angular Treegrid component | Syncfusion
-description: Learn here all about Change orientation of header text in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Change orientation of header text in Angular TreeGrid component | Syncfusion
+description: Learn how to change the orientation of header text in the Syncfusion Angular TreeGrid component of Essential JS 2 using custom attributes and CSS.
 platform: ej2-angular
 control: Change orientation of header text 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change orientation of header text in Angular Treegrid component
+# Change orientation of header text in Angular TreeGrid component
 
-You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
+The orientation of header text in the TreeGrid component can be changed using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
 
-Ensure the following steps:
+Follow these steps:
 
 **Step 1**:
 
-Create a CSS class with orientation style for Tree Grid header cell.
+Define a CSS class with the desired orientation style for the TreeGrid header cell.
 
 ```css
 .orientationcss .e-headercelldiv {
     transform: rotate(90deg);
 }
-
 ```
 
 **Step 2**:
 
-Add the custom CSS class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
+Apply the custom CSS class to a specific column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
 
 ```typescript
-    <e-column field='EndDate' headerText='End Date' width='90' format="yMd" textAlign='Right' [customAttributes]='customAttributes' ></e-column>
-
+<e-column field='EndDate' headerText='End Date' width='90' format="yMd" textAlign='Right' [customAttributes]='customAttributes'></e-column>
 ```
 
 **Step 3**:
 
-Resize the header cell height in [`create`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#create) event by using the following code.
+Adjust the header cell height in the [`create`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#create) event using the following code.
 
 ```typescript
-  public setHeaderHeight() {
+public setHeaderHeight() {
     /** Obtain the width of the headerText content */
     const textWidth: number = (document.querySelector(".orientationcss > div") as HTMLElement).scrollWidth;
     const headerCell: NodeList = document.querySelectorAll(".e-headercell");
@@ -60,7 +58,7 @@ Resize the header cell height in [`create`](https://ej2.syncfusion.com/angular/d
 {% include code-snippet/treegrid/header-orientation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/header-orientation-cs1" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For additional details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. Explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn more about presenting and manipulating data.

@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # How to in Angular Grid component
 
-## Refresh the Datasource
+## Refresh the Data Source
 
-You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
+You can add or delete data source records through an external button. To reflect the data source changes in the grid, invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
-Please follow the below steps to refresh the grid after datasource change.
+Follow these steps to refresh the grid after data source changes:
 
 **Step 1**:
 
-Add/delete the datasource record by using the following code.
+Add or delete data source records using the following code.
 
 ```typescript
     this.grid.dataSource.unshift(data); // Add a new record.
@@ -29,7 +29,7 @@ Add/delete the datasource record by using the following code.
 
 **Step 2**:
 
-Refresh the grid after the datasource change by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
+Refresh the grid after the data source change by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
 ```typescript
     this.grid.refresh(); // Refresh the Grid.
@@ -50,9 +50,9 @@ Refresh the grid after the datasource change by using the [`refresh`](https://ej
 
 ## Enable/Disable Grid and its actions
 
-You can enable/disable the Grid and its actions by applying/removing corresponding CSS styles.
+You can enable or disable the Grid and its actions by applying or removing corresponding CSS styles.
 
-To enable/disable the grid and its actions, follow the given steps:
+To enable or disable the grid and its actions, follow these steps:
 
 **Step 1**:
 
@@ -71,10 +71,10 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add/Remove the CSS class to the Grid in the click event handler of Button.
+Add or Remove the CSS class to the Grid in the click event handler of Button.
 
 ```typescript
-    public btnClick():void {
+    public btnClick(): void {
       if (this.Grid.element.classList.contains('disablegrid')) {
           this.Grid.element.classList.remove('disablegrid');
           document.getElementById("GridParent").classList.remove('wrapper');
@@ -87,7 +87,7 @@ Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 ```
 
-In the below demo, the button click will enable/disable the Grid and its actions.
+In the below demo, the button click will enable or disable the Grid and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,7 +105,7 @@ In the below demo, the button click will enable/disable the Grid and its actions
 
 By default, the expanded child grids will be printed from the current page alone. You can print the expanded child grids from other pages by using the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
-In the following example, we have printed expanded child grids form other pages.
+In the following example, we have printed expanded child grids from other pages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,7 +125,7 @@ In the following example, we have printed expanded child grids form other pages.
 
 You can change the column [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) dynamically through an external button.
 
-Follow the given steps to change the header text dynamically:
+Follow these steps to change the header text dynamically:
 
 **Step 1**:
 
@@ -140,10 +140,10 @@ column.headerText = 'Changed Text';
 
 **Step 2**:
 
-To reflect the changes in the grid header, invoke the [`refreshHeader`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshheader) method.
+To reflect the changes in the grid header, invoke the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method.
 
 ```typescript
-this.grid.refreshHeader();
+this.grid.refreshColumns();
 
 ```
 
@@ -161,13 +161,13 @@ this.grid.refreshHeader();
 
 ### Customize Column Styles
 
-You can customise the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
+You can customize the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
-To customize the grid column, follow the given steps:
+To customize the grid column, follow these steps:
 
 **Step 1**:
 
-Create a css class with custom style to override the default style for rowcell and headercell.
+Create a CSS class with custom style to override the default style for rowcell and headercell.
 
 ```css
 .e-grid .e-rowcell.customcss{
@@ -188,7 +188,7 @@ Create a css class with custom style to override the default style for rowcell a
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
+Add the custom CSS class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,8 +204,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 
 ### Custom Tooltip for Columns
 
-You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
-[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+You can achieve the custom tooltip (EJ2 Tooltip) for Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
 Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
@@ -259,11 +258,11 @@ Initialize the column template for your custom component. The [`template`](https
 
 You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
-To change the Orientation of Header Text, Ensure the following steps:
+To change the orientation of header text, follow these steps:
 
 **Step 1**:
 
-Create a css class with orientation style for grid header cell.
+Create a CSS class with orientation style for grid header cell.
 
 ```css
 .orientationcss .e-headercelldiv {
@@ -274,7 +273,7 @@ Create a css class with orientation style for grid header cell.
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
+Add the custom CSS class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 ```typescript
     <e-column field='Freight' headerText='Freight' textAlign='Center' format='C2' [customAttributes]='customAttributes' width=80></e-column>
@@ -433,7 +432,7 @@ While setting new data source using edit params, you must specify a new [`query`
 
 You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) as **true** to the edit params.
 
-In the below demo, DropDownList is rendered with custom Datasource for the **ShipCountry** column and enabled filtering to search DropDownList items.
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column and enabled filtering to search DropDownList items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -449,9 +448,9 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 
 ### Use Wizard like Dialog Editing
 
-Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It support your own editing template by defining [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog** and [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
+Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It supports your own editing template by defining [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog** and [`editSettings.template`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
 
-The following example demonstrate the wizard like editing in the grid with the unobtrusive Validation.
+The following example demonstrates the wizard like editing in the grid with the unobtrusive Validation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -467,9 +466,9 @@ The following example demonstrate the wizard like editing in the grid with the u
 
 ### Using Tab Inside the Dialog Editing
 
-You can use [`Tab`](../../../tab/getting-started/) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog** and [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
+You can use Tab component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog** and [`editSettings.template`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
 
-To include tab components in the Dialog, please ensure the following steps:
+To include tab components in the Dialog, follow these steps:
 
 **Step 1**:
 
@@ -522,7 +521,7 @@ Initialize the template for your tab component.
 
 **Step 2**:
 
-To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid.
+To render the Tab component, use the [`editSettings.template`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid.
 
 ```
 
@@ -625,19 +624,19 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 
 You can perform single-column or multi-column sorting dynamically through an external button.
 
-To perform single-column sorting, use the [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcolumn) method of Grid.
+To perform single-column sorting, use the [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) method of Grid.
 
 ```typescript
-    public SingleSort():void {
-      this.grid.sortColumn("OrderID","Descending")
+    public SingleSort(): void {
+      this.grid.sortColumn("OrderID","Descending", false)
     }
 
 ```
 
-To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings).
+To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
 
 ```typescript
-    public MultiSort():void {
+    public MultiSort(): void {
         this.grid.sortSettings.columns.push({ field: 'CustomerID',  direction: 'Ascending' },{ field: 'ShipName', direction: 'Descending' });
         this.grid.refresh();
     }
@@ -662,10 +661,10 @@ In the below demo, click on the corresponding button to perform single-column or
 
 You can clear the sorting for a particular column or the entire sorted columns in Grid dynamically through an external button.
 
-To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings).
+To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
 
 ```typescript
-    public SingleClearSort():void {
+    public SingleClearSort(): void {
         let column: any = this.grid.sortSettings.columns;
         for(let i=0;i < column.length;i++) {
             if(column[i].field == "OrderID") {
@@ -679,7 +678,7 @@ To clear sort for a particular column, you need to splice the particular column 
 To clear sorting for all the sorted columns, use the [`clearSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearsorting) method of Grid.
 
 ```typescript
-    public MultiClearSort():void {
+    public MultiClearSort(): void {
         this.grid.clearSorting();
     }
 
@@ -724,9 +723,8 @@ In the following example, The **Employee Name** is a foreign key column and whil
 ### Customizing filter menu operators list
 
 You can customize the default filter operator list by defining the [`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
-[`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
 
-* **stringOperator**- defines customized string operator list.
+* **stringOperator** - defines customized string operator list.
 * **numberOperator** - defines customized number operator list.
 * **dateOperator** - defines customized date operator list.
 * **booleanOperator** - defines customized boolean operator list.
@@ -803,9 +801,9 @@ In the following example, The **Employee Name** is a foreign key column and the 
   
 {% previewsample "page.domainurl/samples/grid/foreignkey-cs9" %}
 
-### Bind foreign key dataSource on dropdown edit
+### Bind foreign key data source on dropdown edit
 
-When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource) property.
+When editing, you can bind foreign key data source to a dropdown list by using [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -844,7 +842,7 @@ You can use corresponding exporting methods and exportComplete events to get the
 
 You can export the filtered data by defining the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) before export.
 
-In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) and pass it to [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
+In the below PDF exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) and pass it to [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -860,7 +858,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 
 ## Pager
 
-## Customize Pager DropDown
+### Customize Pager DropDown
 
 To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesizes) as array of strings.
 
@@ -882,7 +880,7 @@ By default, the expand/collapse icon will be visible even if the child grid is e
 
 You can use [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event to hide the icon when there are no records in child grid.
 
-To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
+To hide the expand/collapse icon in parent row when no records in child grid, follow these steps:
 
 **Step 1**:
 
@@ -901,11 +899,11 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add the CSS class to the Grid in the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound-) event handler of Grid.
+Add the CSS class to the Grid in the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event handler of Grid.
 
 ```typescript
-    public rowDataBound(args:any){
-        let filter:string = args.data.EmployeeID;
+    public rowDataBound(args: any): void {
+        let filter: string = args.data.EmployeeID;
         let childrecord: any = new DataManager(this.Grid.childGrid.dataSource).executeLocal(new Query().where('EmployeeID', 'equal', parseInt(filter), true));
         if(childrecord.length == 0) {
             //here hide which parent row has no child records

@@ -53,7 +53,7 @@ The Syncfusion Angular Grid component allows you to calculate and display aggreg
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name **#footerTemplate** to specify the footer template.
-> * Inside the template, access the aggregate values using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name. For example, to access the sum aggregate value, use **data.sum**.
+> * Inside the template, access the aggregate values using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name. For example, to access the sum and max aggregate values, use **data.sum** and **data.max**.
 
 ## Format the aggregate value
 

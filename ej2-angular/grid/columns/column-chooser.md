@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Column chooser in Angular Grid component | Syncfusion
-description: Learn here all about Column chooser in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn about the Column Chooser feature in the Syncfusion Angular Grid component for Essential JS 2, including dynamic column visibility, dialog customization, searching, and templating features.
 platform: ej2-angular
-control: Column chooser 
+control: Column chooser
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Column chooser in Angular Grid component
 
-The column chooser feature in the Syncfusion Angular Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property as **true**.
+The Column Chooser feature in the Syncfusion Angular Grid component enables users to dynamically show or hide columns within the grid. This capability is activated by setting the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property to **true**.
 
-To use the column chooser, you need to inject the **ColumnChooserService** in the provider section of **AppModule**.
+To use the Column Chooser, inject the **ColumnChooserService** in the providers array of **AppModule**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,13 +26,13 @@ To use the column chooser, you need to inject the **ColumnChooserService** in th
 
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs1" %}
 
-> The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
+> By default, the Column Chooser dialog displays the header text of each column. If a column does not have a header text, its field name is shown instead.
 
 ## Hide column in column chooser dialog
 
-You can hide the column names in column chooser by defining the [columns.showInColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
+To exclude specific columns from appearing in the Column Chooser dialog, set the [columns.showInColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) property to **false** for those columns. This is useful for grids with many columns or when only selected columns should be user-toggleable.
 
-In this example, the `columns.showInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
+In the example below, the **Order ID** column is excluded from the Column Chooser dialog by setting `columns.showInColumnChooser` to false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,14 +46,14 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
   
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs2" %}
 
-> * The `columns.showInColumnChooser` property is applied to each <e-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
-> * To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
+> * The `columns.showInColumnChooser` property must be set individually for each `<e-column>` element you wish to hide.  
+> * At least one column in the grid must remain in a visible state to allow showing and hiding columns.
 
-## Open column chooser by externally
+## Open column chooser externally
 
 The Syncfusion Angular Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser/#opencolumnchooser) method.
 
-Here's an example of how to open the column chooser in the Grid using an external button:
+The following example illustrates invoking the Column Chooser dialog using an external button:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,8 +69,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion Angular Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
-To customize the column chooser dialog size, you can use the following CSS styles:
+The size of the Column Chooser dialog in the Syncfusion Angular Grid can be customized by overriding its default styles via CSS. Adjust the height and width properties to fit your layout requirements.
 
 ```css
 .e-grid .e-dialog.e-ccdlg {
@@ -116,9 +115,9 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#ignoreaccent) property to **true**.
+The Syncfusion Angular Grid supports searching for columns that contain diacritic characters. By default, diacritics are ignored during search. To enable diacritic-sensitive searching in the Column Chooser, set the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooserSettings/#ignoreaccent) property to **true**.
 
-Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
+The following example demonstrates enabling diacritic-sensitive searching:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,17 +131,15 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs6" %}
 
-## Column Chooser Template in Syncfusion Angular Grid
+## Column chooser template in Syncfusion Angular Grid
 
-The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property.
+The Column Chooser supports full customization of its header, content, and footer via templates. Activate the Column Chooser by setting [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) to **true** and including **ColumnChooser** in the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property.
 
-To implement a custom column chooser template in the Grid, use the following properties:
+The following template-related properties are available under `columnChooserSettings`:
 
-* **columnChooserSettings.headerTemplate** - Defines the header template of the column chooser.
-
-* **columnChooserSettings.template**- Defines the content template.
-
-* **columnChooserSettings.footerTemplate** - Defines the footer template.
+* **headerTemplate**: Customizes the dialog header.
+* **template**: Defines content rendered in the dialog body (such as custom selection UI or controls).
+* **footerTemplate**: Customizes the dialog footer.
 
 In this example, the Syncfusion TreeView component is rendered inside the column chooser using the **ng-template** directive. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettingsTemplate` reference variable is assigned an **ng-template**, where the TreeView component is rendered with checkboxes for selecting columns. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
 
@@ -162,11 +159,9 @@ The column chooser footer is customized using the `columnChooserSettingsFooterTe
 
 ## Enable and disable search option
 
-By default, the search option in the column chooser allows filtering specific columns from the Grid's column list.
+The Column Chooser dialog's search feature is enabled by default. It can be dynamically enabled or disabled by setting the `columnChooserSettings.enableSearching` property to **true** or **false**.
 
-The search option is enabled by default in the column chooser. However, you can disable it by setting the `columnChooserSettings.enableSearching` property to **false**.
-
-The following example demonstrates how to enable or disable the search option dynamically using a [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) and its [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event in the Grid.
+The following example demonstrates how to dynamically enable or disable the search feature using the [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component and its [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

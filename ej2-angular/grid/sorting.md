@@ -28,15 +28,15 @@ To use the sorting feature, you need to inject the **SortService** in the provid
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs1" %}
 
-> * Grid column sorted in **Ascending** order. If you click on an already sorted column, then toggles the sort direction.
-> * You can apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearsorting) methods.
-> * To disable sorting for a specific column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowsorting) property to **false**.
+> * Grid columns are sorted in **Ascending** order by default. Clicking on an already sorted column toggles the sort direction.
+> * You can apply and clear sorting programmatically using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearsorting) methods.
+> * To disable sorting for a specific column, set the [column.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowsorting) property to **false**.
 
 ## Initial sorting
 
-By default, the grid component does not apply any sorting to its records at initial rendering. However, you can apply initial sorting by setting the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns) property to the desired [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and sort [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction). This feature is helpful when you want to display your data in a specific order when the grid is first loaded.
+By default, the grid component does not apply any sorting to its records at initial rendering. However, you can apply initial sorting by setting the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns) property to specify the desired [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and sort [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction). This feature is helpful when you want to display your data in a specific order when the grid is first loaded.
 
-The following example demonstrates how to set [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns) for **OrderID** and **ShipCity** columns with a specified [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction).
+The following example demonstrates how to configure [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns) for **OrderID** and **ShipCity** columns with a specified [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,9 +54,9 @@ The following example demonstrates how to set [sortSettings.columns](https://ej2
 
 ## Multi-column sorting
 
-The Grid component allows to sort more than one column at a time using multi-column sorting. To enable multi-column sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property to **true**, and set the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) property to **true** which enable the user to sort multiple columns by hold the **CTRL** key and click on the column headers. This feature is useful when you want to sort your data based on multiple criteria to analyze it in various ways.
+The Grid component allows sorting more than one column at a time using multi-column sorting. To enable multi-column sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property to **true**, and set the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) property to **true** which enables users to sort multiple columns by holding the **CTRL** key and clicking on the column headers. This feature is useful when you want to sort your data based on multiple criteria to analyze it in various ways.
 
-To clear multi-column sorting for a particular column, press the "Shift + mouse left click".
+To clear multi-column sorting for a particular column, press **Shift + mouse left click**.
 
 > * The [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) must be true while enabling multi-column sort.
 > * Set [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) property as **false** to disable multi-column sorting.
@@ -75,11 +75,11 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
 
 ## Prevent sorting for particular column
 
-The Grid component provides the ability to prevent sorting for a particular column. This can be useful when you have certain columns that you do not want to be included in the sorting process. 
+The Grid component provides the ability to prevent sorting for a particular column. This can be useful when you have certain columns that should not be included in the sorting process. 
 
-It can be achieved by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property of the particular column to **false**. 
+This can be achieved by setting the [column.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowsorting) property of the particular column to **false**. 
 
-The following example demonstrates, how to disable sorting for **CustomerID** column.
+The following example demonstrates how to disable sorting for the **CustomerID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,15 +95,15 @@ The following example demonstrates, how to disable sorting for **CustomerID** co
 
 ## Sort order
 
-By default, the sorting order will be as **ascending -> descending -> none**.
+By default, the sorting order follows a three-state cycle: **ascending → descending → none**.
 
-When you click on a column header for the first time, it sorts the column in ascending order. Clicking the same column header again will sort the column in descending order. A repetitive third click on the same column header will clear the sorting.
+When you click on a column header for the first time, it sorts the column in ascending order. Clicking the same column header again will sort the column in descending order. A repetitive third click on the same column header will clear the sorting and return the column to its unsorted state.
 
 ## Custom sorting 
 
-The Grid component provides a way to customize the default sort action for a column by defining the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property. The sort comparer function works similar to the [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) comparer function, and allows to define custom sorting logic for a specific column.
+The Grid component provides a way to customize the default sort action for a column by defining the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property. The sort comparer function works similar to the [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) comparer function, and allows defining custom sorting logic for a specific column.
 
-The following example demonstrates how to define custom sort comparer function for the **Customer ID** column.
+The following example demonstrates how to define a custom sort comparer function for the **Customer ID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,13 +117,13 @@ The following example demonstrates how to define custom sort comparer function f
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs5" %}
 
-> The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
+> The customSortComparer function takes two parameters: **a** and **b**. These parameters represent the values to be compared. The function must return **-1** (a comes before b), **0** (a equals b), or **1** (a comes after b), depending on the comparison result.
 
 ### Display null values always at bottom 
 
-By default, null values in a Syncfusion Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, there may be scenarios where you want to always display null values at the bottom of the grid regardless of the sort direction. This can be achieved by utilizing the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer)  method. This feature is particularly useful when working with data sets where null values might need to be clearly separated from actual data entries.
+By default, null values in a Syncfusion Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, there may be scenarios where you want to always display null values at the bottom of the grid regardless of the sort direction. This can be achieved by utilizing the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) method. This feature is particularly useful when working with data sets where null values might need to be clearly separated from actual data entries.
 
-The example below demonstrates how to display null values at the bottom of the grid while sorting the **OrderDate** column in both ascending and descending order.
+The following example demonstrates how to display null values at the bottom of the grid while sorting the **OrderDate** column in both ascending and descending order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,11 +139,11 @@ The example below demonstrates how to display null values at the bottom of the g
 
 ## Touch interaction
 
-When you tap grid header on touch screen devices, then the selected column header is sorted and display a popup ![Sorting](images/sorting.jpg) for multi-column sorting, tap on the popup to sort multiple columns ![Multi Sorting](images/msorting.jpg) and then tap the desired grid headers.
+When you tap a grid header on touch screen devices, the selected column header is sorted and displays a popup ![Sorting](images/sorting.jpg) for multi-column sorting. Tap on the popup to enable multi-column sorting mode ![Multi Sorting](images/msorting.jpg) and then tap the desired grid headers to sort multiple columns.
 
-> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) should be **true** then only the popup will be shown.
+> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) should be **true** for the popup to be displayed.
 
-The following screenshot represents a grid touch sorting in the device.
+The following screenshot represents grid touch sorting on mobile device.
 
 ![Touch Interaction](images/touch-sorting.jpg)
 
@@ -258,9 +258,9 @@ public class ItemsController : ODataController
 }
 ```
 
-## Perform sorting based on its culture
+## Perform sorting based on culture
 
-Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
+Performing sorting based on culture in the Grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
 
 In the following example, sorting is performed based on the **"ar"** locale using the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property.
 
@@ -289,7 +289,7 @@ To customize the sort icon in the Grid, you can override the default grid classe
   content: '\e304';
 }
 ```
-In the below sample, grid is rendered with a customized sort icon.
+In the following sample, the grid is rendered with a customized sort icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -323,7 +323,7 @@ The following example demonstrates how to add sort columns to a grid. It utilize
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/samples/grid/sorting1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs9" %>
 
 ### Remove sort columns
 
@@ -341,7 +341,7 @@ The following example demonstrates how to remove sort columns. It utilizes the *
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/samples/grid/sorting1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs8" %>
 
 ### Clear sorting 
 
@@ -369,7 +369,7 @@ The Grid component provides two events that are triggered during the sorting act
 
 2. **actionComplete**: [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event is triggered after the sorting action is completed. It provides a way to perform any necessary operations after the sorting action has taken place. This event provides a parameter that contains the current grid state, including the sorted data and column information.
 
-The following example demonstrates how the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events work when sorting is performed. The `actionBegin` event event is used to cancel the sorting of the OrderID column. The `actionComplete` event is used to display a message.
+The following example demonstrates how the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events work when sorting is performed. The `actionBegin` event is used to cancel the sorting of the OrderID column. The `actionComplete` event is used to display a message.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

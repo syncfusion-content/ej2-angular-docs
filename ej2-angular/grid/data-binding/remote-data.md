@@ -10,37 +10,37 @@ domainurl: ##DomainURL##
 
 # Remote Data in Angular Grid Component
 
-In Angular Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `dataSource` property of the Angular Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
+The Angular Grid component excels at binding remote data sources, enabling seamless integration with RESTful services and real-time data scenarios. Remote data binding involves connecting the grid to server-hosted data by assigning a `DataManager` instance to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, specifying the endpoint URL where data resides.
 
-Additionally, leverage the power of Observables for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in Angular applications.
+This approach leverages Angular's powerful Observable pattern for data retrieval and operations, providing robust event handling, asynchronous programming capabilities, and efficient concurrent value management in modern Angular applications.
 
 ## Binding observable data using async pipe
 
-[Observables](https://v17.angular.io/guide/observables) are a core concept in reactive programming and are widely used in the Angular framework. An Observable represents a stream of data or events that can be observed over time. It provides a way to handle asynchronous operations, such as handling developer's input, dealing with HTTP requests, and managing events.
+[Observables](https://angular.io/guide/observables) represent a fundamental reactive programming concept widely adopted throughout the Angular framework. An Observable creates a stream of data or events that can be observed over time, providing an elegant solution for handling asynchronous operations including user input processing, HTTP requests, and event management.
 
-In the Syncfusion Angular Grid, seamlessly utilize the power of [Observables](https://v17.angular.io/guide/observables) through the async pipe for effortless binding of grid data. The [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe) efficiently subscribes to the observable, extracting the latest emitted value structured with `result` and `count` properties, aligning perfectly with the grid's data expectations.
+The Syncfusion Angular Grid seamlessly integrates with [Observables](https://angular.io/guide/observables) through the async pipe, enabling effortless binding of grid data. The [AsyncPipe](https://angular.io/api/common/AsyncPipe) automatically subscribes to observables, extracting the latest emitted value with the required `result` and `count` properties structure that aligns perfectly with the grid's data expectations.
 
-The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **searching**, **filtering**, **sorting**, **grouping**,  and **paging**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event, which provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
+The Syncfusion Grid component delivers comprehensive functionality for handling grid actions including **searching**, **filtering**, **sorting**, **grouping**, and **paging**. These interactions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event, providing opportunities to manage and manipulate data according to user interactions.
 
 **Using the dataStateChange event**
 
-The `dataStateChange` event is triggered whenever you perform actions that modify the state of the grid's data, such as changing pages, applying sorting, or grouping. This event provides detailed information about the action performed and the current state of the grid, including parameters like page number, sorting details, and filtering criteria.
+The `dataStateChange` event triggers whenever you perform actions that modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
 
-To implement the `dataStateChange` event, follow these steps:
+To implement the `dataStateChange` event effectively:
 
-1. **Subscribe to the event:** In your component code, subscribe to the `dataStateChange` event using the appropriate event handler function. This function will be executed whenever you interact with the grid.
+1. **Subscribe to the event:** In your component, subscribe to the `dataStateChange` event using the appropriate event handler function. This function executes whenever you interact with the grid.
 
-2. **Handle data state:** Inside the event handler function, you can access the event arguments to determine the individual actions and intentions. The action property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
+2. **Handle data state:** Inside the event handler function, access the event arguments to determine user actions and intentions. The action property indicates the type of operation performed (paging, sorting, grouping).
 
-> The `dataStateChange` event will not be triggered during the initial rendering. If you want the grid to display records, you can perform the operation in the `ngOnInit`.
+> The `dataStateChange` event will not trigger during initial rendering. To display records on grid initialization, perform the operation in the `ngOnInit` lifecycle hook.
 
 ### Handling searching operation
 
-When performing a search operation in the grid, the `dataStateChange` event is triggered, allowing access to the following referenced arguments within the event
+When performing search operations in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![Searching](../images/observables-searching.png)
 
-You can change the Observable based on the new grid data state of search action as follows:
+You can modify the Observable based on the new grid data state for search actions:
 
 ```typescript
 private applySearching(query: Query, search: Array<any>): void {
@@ -52,15 +52,16 @@ private applySearching(query: Query, search: Array<any>): void {
     query.search(key, fields);
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
   // search
   if (state.search) {
     this.applySearching(query, state.search);
-  };
+  }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -75,13 +76,14 @@ getAllData(state: any, action: any): Observable<any> {
   );
 }
 ```
+
 ### Handling filtering operation
 
-When filtering operation is performed in the grid, the `dataStateChange` event is triggered, providing access to the following referenced arguments within the event.
+When filtering operations are performed in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![FilterBar](../images/observables-filterbar.png)
 
-You can change the Observable based on the new grid data state of filter action as follows:
+You can modify the Observable based on the new grid data state for filter actions:
 
 ```typescript
 private applyFiltering(query: Query, filter: any): void {
@@ -94,8 +96,7 @@ private applyFiltering(query: Query, filter: any): void {
       const value = filter.columns[i].value;
       query.where(field, operator, value);
     }
-  }
-  else {
+  } else {
     // Apply filtering based on direct filter conditions
     for (let i = 0; i < filter.length; i++) {
       const { fn, e } = filter[i];
@@ -105,19 +106,20 @@ private applyFiltering(query: Query, filter: any): void {
     }
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
   // filtering
   if (state.where) {
-  this.applyFiltering(query, action.queries);
+    this.applyFiltering(query, action.queries);
   }
   // initial filtering
   if (state.filter && state.filter.columns && state.filter.columns.length) {
     this.applyFiltering(query, state.filter);
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
   
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -135,19 +137,19 @@ getAllData(state: any, action: any): Observable<any> {
 
 ![Filtering Multiple Values](../images/observables-multiple-filtering.png)
 
-When filtering multiple values, you can get the predicates as arguments in the `dataStateChange` event. You can create your predicate execution based on the predicates values.
+When filtering multiple values, you can retrieve predicates as arguments in the `dataStateChange` event. Create your predicate execution based on the predicates values.
 
 ### Handling sorting operation
 
-When sorting operation is performed in the grid, the dataStateChange event is triggered, and within this event, you can access the following referenced arguments.
+When sorting operations are performed in the grid, the `dataStateChange` event triggers, and within this event, you can access the following referenced arguments:
 
 ![Sorting](../images/observables-sorting.png)
 
-When performing multi-column sorting, you can get the below referred arguments in the `dataStateChange` event.
+When performing multi-column sorting, you can access the following referenced arguments in the `dataStateChange` event:
 
 ![Multi Sorting](../images/observables-multi-sorting.png)
 
-You can change the Observable based on the new grid data state of sort action as follows:
+You can modify the Observable based on the new grid data state for sort actions:
 
 ```typescript
 private applySorting(query: Query, sorted: sortInfo[]): void {
@@ -162,6 +164,7 @@ private applySorting(query: Query, sorted: sortInfo[]): void {
     });
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -169,10 +172,10 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.sorted) {
     state.sorted.length ? this.applySorting(query, state.sorted) :
       // initial sorting
-      state.sorted.columns.length ? this.applySorting(query, state.sorted.columns) : null
+      state.sorted.columns.length ? this.applySorting(query, state.sorted.columns) : null;
   } 
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -190,14 +193,14 @@ getAllData(state: any, action: any): Observable<any> {
 
 ### Handling paging operation
 
-When paging operation is performed in the grid, the `dataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
+When paging operations are performed in the grid, the `dataStateChange` event triggers, and within this event, you can access the following referenced arguments:
 
 ![Paging](../images/observables-paging.png)
 
-You can change the Observable based on the new grid data state of page action as follows:
+You can modify the Observable based on the new grid data state for page actions:
 
 ```typescript
-private applyPaging(query: Query, state: any) {
+private applyPaging(query: Query, state: any): void {
   // Check if both 'take' and 'skip' values are available
   if (state.take && state.skip) {
     // Calculate pageSkip and pageTake values to get pageIndex and pageSize
@@ -205,18 +208,19 @@ private applyPaging(query: Query, state: any) {
     const pageTake = state.take;
     query.page(pageSkip, pageTake);
   }
-  // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+  // If only 'take' is available and 'skip' is 0, apply paging for the first page
   else if (state.skip === 0 && state.take) {
     query.page(1, state.take);
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
   // paging
-  this.applyPaging(query, state)
+  this.applyPaging(query, state);
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -234,23 +238,24 @@ getAllData(state: any, action: any): Observable<any> {
 
 ### Handling grouping operation
 
-When grouping operation is performed in the grid, the `dataStateChange` event is triggered, providing access to the following referenced arguments within the event.
+When grouping operations are performed in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![Grouping](../images/observables-grouping.png)
 
-You can change the Observable based on the new grid data state of group action as follows:
+You can modify the Observable based on the new grid data state for group actions:
 
 ```typescript
 private applyGrouping(query: Query, group: any): void {
-    // Check if sorting data is available
-    if (group.length > 0) {
-      // Iterate through each group info
-      group.forEach((column: string) => {
-        // perform group operation using the column on the query
-        query.group(column);
-      });
-    }
+  // Check if grouping data is available
+  if (group.length > 0) {
+    // Iterate through each group info
+    group.forEach((column: string) => {
+      // perform group operation using the column on the query
+      query.group(column);
+    });
   }
+}
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -258,10 +263,10 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.group) {
     state.group.length ? this.applyGrouping(query, state.group) :
       // initial grouping
-      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null
+      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null;
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
   
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -277,31 +282,31 @@ getAllData(state: any, action: any): Observable<any> {
 }
 ```
 
-> * In order to utilize group action, it is necessary to manage the sorting query.
+> To utilize group actions effectively, you must manage the sorting query appropriately.
 
 **Lazy load grouping**
 
-In Angular, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand. 
+In Angular applications, lazy loading refers to the technique of loading data dynamically when needed, rather than loading everything upfront. Lazy load grouping allows efficient loading and display of grouped data by fetching only the required data on demand.
 
-To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
+To enable this feature, set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**. You must also manage the state based on the initial grid action:
 
 ```typescript
 public ngOnInit(): void {
-  this.groupOptions = { columns: ['ProductName'], enableLazyLoading: true, };
-  const state = { skip: 0, take: 12, group:this.groupOptions };
+  this.groupOptions = { columns: ['ProductName'], enableLazyLoading: true };
+  const state = { skip: 0, take: 12, group: this.groupOptions };
   this.crudService.execute(state, query);
 }
 ```
 
-Based on the initial state, you can get the arguments as shown below
+Based on the initial state, you can access the arguments as shown below:
 
 ![Lazy load group](../images/observables-lazy-load-grouping.png)
 
-You can change the Observable based on the grid state as follows:
+You can modify the Observable based on the grid state:
 
 ```typescript
 private applyGrouping(query: Query, group: any): void {
-  // Check if sorting data is available
+  // Check if grouping data is available
   if (group.length > 0) {
     // Iterate through each group info
     group.forEach((column: string) => {
@@ -310,7 +315,8 @@ private applyGrouping(query: Query, group: any): void {
     });
   }
 }
-private applyLazyLoad = (query: Query, state: any) => {
+
+private applyLazyLoad = (query: Query, state: any): void => {
   if (state.isLazyLoad) {
     // Configure lazy loading for the main data
     query.lazyLoad.push({ key: 'isLazyLoad', value: true });
@@ -323,6 +329,7 @@ private applyLazyLoad = (query: Query, state: any) => {
     }
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -330,16 +337,16 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.group) {
     state.group.length ? this.applyGrouping(query, state.group) :
       // initial grouping
-      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null
+      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null;
   }
   // lazy load grouping
-  this.applyLazyLoad(query, state)
+  this.applyLazyLoad(query, state);
   // initial grouping with lazy load
   if (state.group && state.group.enableLazyLoading) {
-    query.lazyLoad.push({ key: 'isLazyLoad', value: true })
+    query.lazyLoad.push({ key: 'isLazyLoad', value: true });
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -361,62 +368,62 @@ The complete example is available in the [handling CRUD operations topic](#handl
 
 ### Handling CRUD operations
 
-The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to perform CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling direct data modification within the grid interface. This functionality proves essential when performing CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
 
 **Integrating CRUD Operations**
 
 To implement CRUD operations using Syncfusion Grid, follow these steps:
 
-1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
+1. **Configure grid settings:** Set up the necessary grid settings for editing, adding, and deleting records. Define the toolbar options to facilitate user interactions.
 
-2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event to respond to changes in the grid's data state. This event is triggered whenever you interact with the grid, such as paging or sorting.
+2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event to respond to changes in the grid's data state. This event triggers whenever you interact with the grid through paging or sorting.
 
 3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasourcechanged), implement logic to handle various CRUD actions based on the action or `requestType` property of the event arguments.
 
-4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to signal the completion of the operation and update the grid accordingly.
+4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to signal operation completion and update the grid accordingly.
 
 **Insert operation**
 
-When an insert operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+When an insert operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Insert record](../images/observables-adding.png)
 
 ```typescript
-  /** POST: add a new record to the server */
-  addRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
-    return this.http.post<Customer>(this.customersUrl, state.data, httpOptions);
-  }
+/** POST: add a new record to the server */
+addRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
+  return this.http.post<Customer>(this.customersUrl, state.data, httpOptions);
+}
 ```
 
 **Edit operation**
 
-When an edit operation is performed in the grid, the `dataSourceChanged` event will be triggered, providing access to the following referenced arguments within the event.
+When an edit operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Edit record](../images/observables-editing.png)
 
 ```typescript
-  /** PUT: update the record on the server */
-  updateRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
-    return this.http.put(this.customersUrl, state.data, httpOptions);
-  }
+/** PUT: update the record on the server */
+updateRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
+  return this.http.put<Customer>(this.customersUrl, state.data, httpOptions);
+}
 ```
 
 **Delete operation**
 
-When a delete operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+When a delete operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Delete record](../images/observables-deleting.png)
 
 ```typescript
-  /** DELETE: delete the record from the server */
-  deleteRecord(state: any): Observable<Customer> {
-    const id = state.data[0].id;
-    const url = `${this.customersUrl}/${id}`;
-    return this.http.delete<Customer>(url, httpOptions);
-  }
+/** DELETE: delete the record from the server */
+deleteRecord(state: any): Observable<Customer> {
+  const id = state.data[0].id;
+  const url = `${this.customersUrl}/${id}`;
+  return this.http.delete<Customer>(url, httpOptions);
+}
 ```
 
-The following example demonstrates how to bind observable data with using async pipe to handle grid actions and CRUD operations. 
+The following example demonstrates how to bind observable data using async pipe to handle grid actions and CRUD operations:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -431,22 +438,22 @@ The following example demonstrates how to bind observable data with using async 
 {% highlight ts tabtitle="customers.ts" %}
 {% include code-snippet/grid/observables-async/src/customers.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="congif.ts" %}
+{% highlight ts tabtitle="config.ts" %}
 {% include code-snippet/grid/observables-async/src/app.config.ts %}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/observables-async" %}
 
-> * While working with grid edit operation, defining the `isPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
-> * Need to maintain the same observable instance for all grid actions.
-> * You can refer the guidelines for CRUD using observables [here](https://www.youtube.com/watch?v=yGLdi_Es0ac)
+> * When working with grid edit operations, defining the `isPrimaryKey` property of a column is mandatory. If the primary key column is not defined, the edit or delete action will operate on the first row of the grid.
+> * Maintain the same observable instance for all grid actions.
+> * You can refer to the guidelines for CRUD using observables [here](https://www.youtube.com/watch?v=yGLdi_Es0ac)
 
 ### Export all records in client side
 
-Export all records with async pipe is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
+Exporting all records with async pipe proves especially beneficial when dealing with large datasets that require export for offline analysis or sharing purposes.
 
-By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties` in conjunction with the Async Pipe for data binding.
+By default, when utilizing observables for Grid data binding, the export operation exports only records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties` in conjunction with the Async Pipe for data binding.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -455,20 +462,20 @@ To export all records, including those from multiple pages, configure the [pdfEx
 To export the complete grid data to Excel, utilize the `excelExportProperties.dataSource` when initiating the Excel export. Use the following code snippet to export all records within the grid:
 
 ```typescript
- this.service.getData(state).subscribe((e: any) => {
+this.service.getData(state).subscribe((e: any) => {
   let excelExportProperties: ExcelExportProperties = {
     dataSource: e.result ? e.result : result
   };
-  (this.grid as GridComponent).excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+  (this.grid as GridComponent).excelExport(excelExportProperties); // need to call excelExport method of grid when get the entire data
 });
 ```
 
-**Pdf Exporting**
+**PDF Exporting**
 
 To export the complete grid data to PDF document, utilize the `pdfExportProperties.dataSource` when initiating the PDF export. Use the following code snippet to export all records within the grid:
 
 ```typescript
- this.service.getData(state).subscribe((e: any) => {
+this.service.getData(state).subscribe((e: any) => {
   let pdfExportProperties: PdfExportProperties = {
     dataSource: e.result ? e.result : result
   };
@@ -478,7 +485,7 @@ To export the complete grid data to PDF document, utilize the `pdfExportProperti
 
 > Further customization on grid export can be accessed in the respective documentation for [PDF exporting](https://ej2.syncfusion.com/angular/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-export-options)
 
-The following code example shows how to export all records in client side for observable using the async pipe.
+The following code example shows how to export all records in client side for observable using the async pipe:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -540,13 +547,13 @@ export class AppComponent implements OnInit {
         break;
       case "Excel Export":
         // fetch the entire data while Excel exporting
-        (this.grid as GridComponent).showSpinner();// show the spinner when send the post to service
+        (this.grid as GridComponent).showSpinner(); // show the spinner when send the post to service
         state.action.isExcelExport = true;
         this.service.getData(state).subscribe((e: any) => {
           let excelExportProperties: ExcelExportProperties = {
             dataSource: e.result ? e.result : result
           };
-          (this.grid as GridComponent).excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+          (this.grid as GridComponent).excelExport(excelExportProperties); // need to call excelExport method of grid when get the entire data
         });
         break;
     }
@@ -554,7 +561,7 @@ export class AppComponent implements OnInit {
   public ngOnInit(): void {
     this.pageOptions = { pageSize: 10, pageCount: 4 };
     const state = { skip: 0, take: 10 };
-    this.toolbar = ["ExcelExport", "PdfExport",];
+    this.toolbar = ["ExcelExport", "PdfExport"];
     this.service.execute(state);
   }
 }
@@ -601,7 +608,7 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Binding observable data without using async pipe
 
-In Angular, [Observables](https://v17.angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes. 
+In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription lifecycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
 
 To bind observable data without using the async pipe in the Grid, follow these steps:
 
@@ -611,11 +618,11 @@ To bind observable data without using the async pipe in the Grid, follow these s
 
 ### Handling searching operation
 
-When searching operation is performed in the grid, the dataStateChange event is triggered, providing access to the following referenced arguments within the event.
+When searching operations are performed in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![Searching](../images/observables-searching.png)
 
-You can change the Observable based on the new grid data state of search action as follows:
+You can modify the Observable based on the new grid data state for search actions:
 
 ```typescript
 private applySearching(query: Query, search: Array<any>): void {
@@ -627,16 +634,17 @@ private applySearching(query: Query, search: Array<any>): void {
     query.search(key, fields);
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
-    // search
-    if (state.search) {
-      this.applySearching(query, state.search);
-    };
-    // To get the count of the data
-    query.isCountRequired = true
-}
+  // search
+  if (state.search) {
+    this.applySearching(query, state.search);
+  }
+  // To get the count of the data
+  query.isCountRequired = true;
+
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
       // Execute local data operations using the provided query
@@ -648,15 +656,16 @@ getAllData(state: any, action: any): Observable<any> {
       };
     })
   );
+}
 ```
 
 ### Handling filtering operation
 
-When filtering operation is performed in the grid, the `dataStateChange` event is triggered, providing access to the following referenced arguments within the event
+When filtering operations are performed in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![FilterBar](../images/observables-filterbar.png)
 
-You can change the Observable based on the new grid data state of filter action as follows:
+You can modify the Observable based on the new grid data state for filter actions:
 
 ```typescript
 private applyFiltering(query: Query, filter: any): void {
@@ -669,8 +678,7 @@ private applyFiltering(query: Query, filter: any): void {
       const value = filter.columns[i].value;
       query.where(field, operator, value);
     }
-  }
-  else {
+  } else {
     // Apply filtering based on direct filter conditions
     for (let i = 0; i < filter.length; i++) {
       const { fn, e } = filter[i];
@@ -680,19 +688,20 @@ private applyFiltering(query: Query, filter: any): void {
     }
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
   // filtering
   if (state.where) {
-  this.applyFiltering(query, action.queries);
+    this.applyFiltering(query, action.queries);
   }
   // initial filtering
   if (state.filter && state.filter.columns && state.filter.columns.length) {
     this.applyFiltering(query, state.filter);
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -710,19 +719,19 @@ getAllData(state: any, action: any): Observable<any> {
 
 ![Filtering Multiple Values](../images/observables-multiple-filtering.png)
 
-When filtering multiple values, you can get the predicates as arguments in the `dataStateChange` event. You can create your predicate execution based on the predicates values.
+When filtering multiple values, you can retrieve predicates as arguments in the `dataStateChange` event. Create your predicate execution based on the predicates values.
 
 ### Handling sorting operation
 
-When sorting operation is performed in the grid, the `dataStateChange` event is triggered, and within this event, you can access the following referenced arguments
+When sorting operations are performed in the grid, the `dataStateChange` event triggers, and within this event, you can access the following referenced arguments:
 
 ![Sorting](../images/observables-sorting.png)
 
-When performing multi-column sorting, you can get the below referred arguments in the `dataStateChange` event.
+When performing multi-column sorting, you can access the following referenced arguments in the `dataStateChange` event:
 
 ![Multi Sorting](../images/observables-multi-sorting.png)
 
-You can change the Observable based on the new grid data state of sort action as follows:
+You can modify the Observable based on the new grid data state for sort actions:
 
 ```typescript
 private applySorting(query: Query, sorted: sortInfo[]): void {
@@ -737,6 +746,7 @@ private applySorting(query: Query, sorted: sortInfo[]): void {
     });
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -744,10 +754,10 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.sorted) {
     state.sorted.length ? this.applySorting(query, state.sorted) :
       // initial sorting
-      state.sorted.columns.length ? this.applySorting(query, state.sorted.columns) : null
+      state.sorted.columns.length ? this.applySorting(query, state.sorted.columns) : null;
   } 
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -765,14 +775,14 @@ getAllData(state: any, action: any): Observable<any> {
 
 ### Handling paging operation
 
-When paging operation is performed in the grid, the dataStateChange event is triggered, and within this event, you can access the following referenced arguments.
+When paging operations are performed in the grid, the `dataStateChange` event triggers, and within this event, you can access the following referenced arguments:
 
 ![Paging](../images/observables-paging.png)
 
-You can change the Observable based on the new grid data state of page action as follows:
+You can modify the Observable based on the new grid data state for page actions:
 
 ```typescript
-private applyPaging(query: Query, state: any) {
+private applyPaging(query: Query, state: any): void {
   // Check if both 'take' and 'skip' values are available
   if (state.take && state.skip) {
     // Calculate pageSkip and pageTake values to get pageIndex and pageSize
@@ -780,18 +790,19 @@ private applyPaging(query: Query, state: any) {
     const pageTake = state.take;
     query.page(pageSkip, pageTake);
   }
-  // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+  // If only 'take' is available and 'skip' is 0, apply paging for the first page
   else if (state.skip === 0 && state.take) {
     query.page(1, state.take);
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
   // paging
-  this.applyPaging(query, state)
+  this.applyPaging(query, state);
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -809,15 +820,15 @@ getAllData(state: any, action: any): Observable<any> {
 
 ### Handling grouping operation
 
-When grouping operation is performed in the grid, the dataStateChange event is triggered, providing access to the following referenced arguments within the event.
+When grouping operations are performed in the grid, the `dataStateChange` event triggers, providing access to the following referenced arguments:
 
 ![Grouping](../images/observables-grouping.png)
 
-You can change the Observable based on the new grid data state of group action as follows:
+You can modify the Observable based on the new grid data state for group actions:
 
 ```typescript
 private applyGrouping(query: Query, group: any): void {
-  // Check if sorting data is available
+  // Check if grouping data is available
   if (group.length > 0) {
     // Iterate through each group info
     group.forEach((column: string) => {
@@ -826,6 +837,7 @@ private applyGrouping(query: Query, group: any): void {
     });
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -833,10 +845,10 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.group) {
     state.group.length ? this.applyGrouping(query, state.group) :
       // initial grouping
-      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null
+      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null;
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
   
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -852,31 +864,31 @@ getAllData(state: any, action: any): Observable<any> {
 }
 ```
 
-> * In order to utilize group actions, it is necessary to manage the sorting query.
+> To utilize group actions effectively, you must manage the sorting query appropriately.
 
 **Lazy load grouping**
 
-In Angular, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand. 
+In Angular applications, lazy loading refers to the technique of loading data dynamically when needed, rather than loading everything upfront. Lazy load grouping enables efficient loading and display of grouped data by fetching only the required data on demand.
 
-To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
+To enable this feature, set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**. You must also manage the state based on the initial grid action:
 
 ```typescript
 public ngOnInit(): void {
-  this.groupOptions = { columns: ['ProductName'], enableLazyLoading: true, };
-  const state = { skip: 0, take: 12, group:this.groupOptions };
+  this.groupOptions = { columns: ['ProductName'], enableLazyLoading: true };
+  const state = { skip: 0, take: 12, group: this.groupOptions };
   this.crudService.execute(state, query);
 }
 ```
 
-Based on the initial state, you can get the arguments as shown below
+Based on the initial state, you can access the arguments as shown below:
 
 ![Lazy load group](../images/observables-lazy-load-grouping.png)
 
-You can change the Observable based on the grid state as follows:
+You can modify the Observable based on the grid state:
 
 ```typescript
 private applyGrouping(query: Query, group: any): void {
-  // Check if sorting data is available
+  // Check if grouping data is available
   if (group.length > 0) {
     // Iterate through each group info
     group.forEach((column: string) => {
@@ -885,7 +897,8 @@ private applyGrouping(query: Query, group: any): void {
     });
   }
 }
-private applyLazyLoad = (query: Query, state: any) => {
+
+private applyLazyLoad = (query: Query, state: any): void => {
   if (state.isLazyLoad) {
     // Configure lazy loading for the main data
     query.lazyLoad.push({ key: 'isLazyLoad', value: true });
@@ -898,6 +911,7 @@ private applyLazyLoad = (query: Query, state: any) => {
     }
   }
 }
+
 /** GET all data from the server */
 getAllData(state: any, action: any): Observable<any> {
   const query = new Query();
@@ -905,16 +919,16 @@ getAllData(state: any, action: any): Observable<any> {
   if (state.group) {
     state.group.length ? this.applyGrouping(query, state.group) :
       // initial grouping
-      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null
+      state.group.columns.length ? this.applyGrouping(query, state.group.columns) : null;
   }
   // lazy load grouping
-  this.applyLazyLoad(query, state)
+  this.applyLazyLoad(query, state);
   // initial grouping with lazy load
   if (state.group && state.group.enableLazyLoading) {
-    query.lazyLoad.push({ key: 'isLazyLoad', value: true })
+    query.lazyLoad.push({ key: 'isLazyLoad', value: true });
   }
   // To get the count of the data
-  query.isCountRequired = true
+  query.isCountRequired = true;
 
   return this.http.get<Customer[]>(this.customersUrl).pipe(
     map((response: any[]) => {
@@ -932,66 +946,66 @@ getAllData(state: any, action: any): Observable<any> {
 
 > Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/angular/documentation/grid/grouping/lazy-load-grouping).
 
-The complete example is available in the [Handling CRUD operations topic](#handling-crud-operations).
+The complete example is available in the [Handling CRUD operations topic](#handling-crud-operations-1).
 
 ### Handling CRUD operations
 
-The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to perform CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling direct data modification within the grid interface. This functionality proves essential when performing CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
 
 **Integrating CRUD Operations**
 
 To implement CRUD operations using Syncfusion Grid, follow these steps:
 
-1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
+1. **Configure grid settings:** Set up the necessary grid settings for editing, adding, and deleting records. Define the toolbar options to facilitate user interactions.
 
-2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event to respond to changes in the grid's data state. This event is triggered whenever you interact with the grid, such as paging or sorting.
+2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event to respond to changes in the grid's data state. This event triggers whenever you interact with the grid through paging or sorting.
 
-3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
+3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasourcechanged), implement logic to handle various CRUD actions based on the action or `requestType` property of the event arguments.
 
-4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to signal the completion of the operation and update the grid accordingly.
+4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to signal operation completion and update the grid accordingly.
 
 **Insert operation**
 
-When an insert operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+When an insert operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Adding](../images/observables-adding.png)
 
 ```typescript
-  /** POST: add a new record  to the server */
-  addRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
-    return this.http.post<Customer>(this.customersUrl, state.data, httpOptions);
-  }
+/** POST: add a new record to the server */
+addRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
+  return this.http.post<Customer>(this.customersUrl, state.data, httpOptions);
+}
 ```
 
 **Edit operation**
 
-When an edit operation is performed in the grid, the `dataSourceChanged` event will be triggered, providing access to the following referenced arguments within the event.
+When an edit operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Editing](../images/observables-editing.png)
 
 ```typescript
-  /** PUT: update the record on the server */
-  updateRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
-    return this.http.put(this.customersUrl, state.data, httpOptions);
-  }
+/** PUT: update the record on the server */
+updateRecord(state: DataSourceChangedEventArgs): Observable<Customer> {
+  return this.http.put<Customer>(this.customersUrl, state.data, httpOptions);
+}
 ```
 
 **Delete operation**
 
-When a delete operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+When a delete operation is performed in the grid, the `dataSourceChanged` event triggers, providing access to the following referenced arguments:
 
 ![Deleting](../images/observables-deleting.png)
 
 ```typescript
-  /** DELETE: delete the record from the server */
-  deleteRecord(state: any): Observable<Customer> {
-    const id = state.data[0].id;
-    const url = `${this.customersUrl}/${id}`;
-    return this.http.delete<Customer>(url, httpOptions);
-  }
+/** DELETE: delete the record from the server */
+deleteRecord(state: any): Observable<Customer> {
+  const id = state.data[0].id;
+  const url = `${this.customersUrl}/${id}`;
+  return this.http.delete<Customer>(url, httpOptions);
+}
 ```
 
-The following example demonstrates how to bind observable data without using async pipe to handle grid actions and CRUD operations. 
+The following example demonstrates how to bind observable data without using async pipe to handle grid actions and CRUD operations:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1006,20 +1020,20 @@ The following example demonstrates how to bind observable data without using asy
 {% highlight ts tabtitle="customers.ts" %}
 {% include code-snippet/grid/observables-non-async/src/customers.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="congif.ts" %}
+{% highlight ts tabtitle="config.ts" %}
 {% include code-snippet/grid/observables-non-async/src/app.config.ts %}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/observables-non-async" %}
 
-> Improper handling of observables and subscriptions may lead to memory leaks and unexpected behavior. Ensure to handle subscriptions properly, especially when dealing with long-lived observables.
+> Improper handling of observables and subscriptions may lead to memory leaks and unexpected behavior. Ensure proper subscription management, especially when dealing with long-lived observables.
 
 ### Export all records in client side
 
-Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
+Exporting all records proves especially beneficial when dealing with large datasets that require export for offline analysis or sharing purposes.
 
-By default, when utilizing observables for Grid data binding, the export operation exports only the records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the pdfExportProperties and excelExportProperties.
+By default, when utilizing observables for Grid data binding, the export operation exports only records on the current page. However, the Syncfusion Angular Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties`.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -1028,20 +1042,20 @@ To export all records, including those from multiple pages, configure the [pdfEx
 To export the complete grid data to Excel, utilize the `excelExportProperties.dataSource` when initiating the Excel export. Use the following code snippet to export all records within the grid:
 
 ```typescript
- this.service.getData(state).subscribe((e: any) => {
+this.service.getData(state).subscribe((e: any) => {
   let excelExportProperties: ExcelExportProperties = {
     dataSource: e.result ? e.result : result
   };
-  (this.grid as GridComponent).excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+  (this.grid as GridComponent).excelExport(excelExportProperties); // need to call excelExport method of grid when get the entire data
 });
 ```
 
-**Pdf Exporting**
+**PDF Exporting**
 
 To export the complete grid data to PDF document, utilize the `pdfExportProperties.dataSource` when initiating the PDF export. Use the following code snippet to export all records within the grid:
 
 ```typescript
- this.service.getData(state).subscribe((e: any) => {
+this.service.getData(state).subscribe((e: any) => {
   let pdfExportProperties: PdfExportProperties = {
     dataSource: e.result ? e.result : result
   };
@@ -1051,7 +1065,7 @@ To export the complete grid data to PDF document, utilize the `pdfExportProperti
 
 > Further customization on grid export can be accessed in the respective documentation for [PDF exporting](https://ej2.syncfusion.com/angular/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-export-options)
 
-The following code example shows how to export all records in client side for observable without using the async pipe.
+The following code example shows how to export all records in client side for observable without using the async pipe:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1113,13 +1127,13 @@ export class AppComponent implements OnInit {
         break;
       case "Excel Export":
         // fetch the entire data while Excel exporting
-        (this.grid as GridComponent).showSpinner();// show the spinner when send the post to service
+        (this.grid as GridComponent).showSpinner(); // show the spinner when send the post to service
         state.action.isExcelExport = true;
         this.service.getData(state).subscribe((e: any) => {
           let excelExportProperties: ExcelExportProperties = {
             dataSource: e.result ? e.result : result
           };
-          (this.grid as GridComponent).excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+          (this.grid as GridComponent).excelExport(excelExportProperties); // need to call excelExport method of grid when get the entire data
         });
         break;
     }
@@ -1127,7 +1141,7 @@ export class AppComponent implements OnInit {
   public ngOnInit(): void {
     this.pageOptions = { pageSize: 10, pageCount: 4 };
     const state = { skip: 0, take: 10 };
-    this.toolbar = ["ExcelExport", "PdfExport",];
+    this.toolbar = ["ExcelExport", "PdfExport"];
     this.service.getData(state).subscribe(response => (this.data = response));
   }
 }
@@ -1177,21 +1191,21 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Sending additional parameters to the server
 
-The Syncfusion Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+The Syncfusion Grid component enables you to include custom parameters in data requests. This feature proves particularly useful when providing additional information to the server for enhanced processing capabilities.
 
 By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property of the grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every grid action.
 
-To enable custom parameters in data requests for the grid component, follow these steps:
+To enable custom parameters in data requests for the grid component:
 
 **1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Syncfusion Grid component.
 
 **2. Initialize the Query Object:** Create a new instance of the `Query` class and use the `addParams` method to add the custom parameters.
 
-**3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the `dataStateChange` event handler to execute the query with the updated state.
+**3. Handle Data State Changes:** If you need to dynamically update data based on interactions, implement the `dataStateChange` event handler to execute the query with the updated state.
 
 **4. Execute Data Request:** In the service, execute the data request by combining the custom parameters with other query parameters such as paging and sorting.
 
-The following example demonstrates how to send additional parameters to the server using observables.
+The following example demonstrates how to send additional parameters to the server using observables:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1209,7 +1223,7 @@ The following example demonstrates how to send additional parameters to the serv
 
 ## Offline mode
 
-On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of `DataManager`.
+On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc., process on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of `DataManager`.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -1239,14 +1253,13 @@ export class AppComponent implements OnInit {
         });
     }
 }
-
 ```
 
-## Fetch result from the DataManager query using external button 
+## Fetch result from the DataManager query using external button 
 
-By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data loads into the Grid.
 
-To achieve this, you can use the `executeQuery` method of `DataManager` with a **Query** object. This method allows you to run a custom query and retrieve results dynamically.
+To achieve this, you can use the `executeQuery` method of `DataManager` with a **Query** object. This method enables you to run a custom query and retrieve results dynamically.
 
 The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
 

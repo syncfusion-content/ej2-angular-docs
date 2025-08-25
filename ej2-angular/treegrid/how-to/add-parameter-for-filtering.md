@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Add parameter for filtering in Angular Treegrid component | Syncfusion
-description: Learn here all about Add parameter for filtering in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Add parameter for filtering in Angular TreeGrid component | Syncfusion
+description: Learn how to add parameters for filtering in the Syncfusion Angular TreeGrid component of Essential JS 2, including menu filter customization and parameter handling.
 platform: ej2-angular
 control: Add parameter for filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add parameter for filtering in Angular Treegrid component
+# Add parameter for filtering in Angular TreeGrid component
 
-You can customize the default settings of the components which are used in Menu filter by using params of filter property in column definition.
-In the below sample, TaskID and Duration Columns are numeric columns, while opening the filter dialog you can see that NumericTextBox with spin button is displayed to change/set the filter value. Now using the params option we hide the spin button in NumericTextBox for TaskID Column.
+You can customize the default settings of components used in the Menu filter by configuring the `params` property within the column definition's filter settings. 
+
+In the following example, the `TaskID` and `Duration` columns are numeric columns. When opening the filter dialog, a NumericTextBox with spin buttons is displayed to adjust the filter value. By utilizing the `params` option, the spin button in the NumericTextBox for the `TaskID` column is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -22,7 +23,7 @@ In the below sample, TaskID and Duration Columns are numeric columns, while open
 {% include code-snippet/treegrid/refresh-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs1" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> Refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for more information about available features. You can also view the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
