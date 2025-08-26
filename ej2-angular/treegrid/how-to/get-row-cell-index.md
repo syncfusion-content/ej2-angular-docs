@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Get row cell index in Angular Treegrid component | Syncfusion
-description: Learn here all about Get row cell index in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Get row cell index in Angular TreeGrid component | Syncfusion
+description: Learn how to get the specific row and cell index in the Syncfusion Angular TreeGrid component using the rowSelected event and element attributes.
 platform: ej2-angular
 control: Get row cell index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get row cell index in Angular Treegrid component
+# Get row cell index in Angular TreeGrid component
 
-You can get the specific row and cell index of the Tree Grid by using [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event of the treegrid. Here, we can get the row and cell index by using *aria-rowindex* (get row Index from *tr* element) and *aria-colindex* (column index from *td* element) attribute.
+The specific row and cell indices of the TreeGrid can be retrieved using the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event. The row index is determined by the *aria-rowindex* attribute of the *tr* element, and the cell (column) index is obtained from the *aria-colindex* attribute of the *td* element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -21,7 +21,7 @@ You can get the specific row and cell index of the Tree Grid by using [`rowSelec
 {% include code-snippet/treegrid/refresh-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs10" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For additional information on TreeGrid features, see the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Examples of data presentation and manipulation can be found in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

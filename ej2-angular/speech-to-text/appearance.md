@@ -30,15 +30,15 @@ You can use the [iconCss](../api/speech-to-text/buttonSettingsModel/#iconCss) pr
 
 You can use the [stopIconCss](../api/speech-to-text/buttonSettingsModel/#stopIconCss) property to apply a CSS class to customize the icon appearance for the listening stop state.
 
-### Setting icon position
+### Positioning the button icon
 
-You can display the icon on the top, bottom, left, or right side of the button text content using the [iconPosition](../api/speech-to-text/buttonSettingsModel/#iconPosition) property.
+The [iconPosition](../api/speech-to-text/buttonSettingsModel/#iconPosition) property controls the icon's placement, allowing it to be displayed on the top, bottom, left, or right side of the button's text.
 
-### Setting primary
+### Configuring the primary button
 
-You can use the [isPrimary](../api/speech-to-text/buttonSettingsModel/#isPrimary) property to configure the button as a primary action button.
+The [isPrimary](../api/speech-to-text/buttonSettingsModel/#isPrimary) property configures the button's appearance to indicate a primary action. Setting this to `true` makes the button more prominent. This is a convenient alternative to manually adding the `e-primary` style via the `cssClass` property.
 
-Below code sample demonstrates how to configure the button with above mentioned properties.
+The following code sample demonstrates how to configure these button properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,9 +54,9 @@ Below code sample demonstrates how to configure the button with above mentioned 
 
 {% previewsample "page.domainurl/samples/speech-to-text/appearance/button-settings/index" %}
 
-## Customizing the tooltips
+## Customizing the Tooltip Display
 
-You can use the [tooltipSettings](../api/speech-to-text/#tooltipSettings) property to customize the content and positions of the tooltip.
+The [tooltipSettings](../api/speech-to-text/#tooltipSettings) property allows customization of the tooltip's content and position.
 
 ### Setting start content
 
@@ -66,11 +66,11 @@ You can use the [content](../api/speech-to-text/tooltipSettingsModel/#content) p
 
 You can use the [stopContent](../api/speech-to-text/tooltipSettingsModel/#stopContent) property to customize the stop button tooltip text which is displayed on-hover.
 
-### Setting tooltip position
+### Positioning the tooltip
 
-You can use the [position](../api/speech-to-text/tooltipSettingsModel/#position) property to determine the placement of tooltips relative to the button.
+The [position](../api/speech-to-text/tooltipSettingsModel/#position) property determines the placement of the tooltip relative to the button.
 
-Below code sample demonstrates how to configure the tooltip with above mentioned properties.
+The following example shows how to configure the tooltip settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,18 +86,18 @@ Below code sample demonstrates how to configure the tooltip with above mentioned
 
 {% previewsample "page.domainurl/samples/speech-to-text/appearance/tooltip-settings/index" %}
 
-## Setting button styles
+## Applying Custom Styles with cssClass
 
-The SpeechToText component supports the following predefined styles that can be defined using the [cssClass](../api/speech-to-text/#cssClass) property. You can customize by adding the cssClass property with the below defined class. 
+The [cssClass](../api/speech-to-text/#cssClass) property provides a way to apply custom styling to the Speech-to-Text component. This property can be used to add custom user-defined classes or apply predefined styles. You can customize by adding the cssClass property with the below defined class. 
 
 | cssClass | Description | 
-| -------- | -------- | 
-| `e-primary` | Used to represent a primary action. | 
-| `e-outline` | Used to represent an appearance of button with outline. | 
-| `e-info` | Used to represent an informative action. | 
-| `e-success` | Used to represent a positive action. | 
-| `e-warning` | Used to represent an action with caution. | 
-| `e-danger` | Used to represent a negative action. |
+|---|---|
+| `e-primary` | Represents a primary action. |
+| `e-outline` | Renders the button with an outline style. |
+| `e-info` | Indicates an informative action. |
+| `e-success` | Indicates a positive action. |
+| `e-warning` | Warns the user of a potential issue. |
+| `e-danger` | Indicates a destructive or negative action. |
 
 ## Setting cssclass
 

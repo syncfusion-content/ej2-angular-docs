@@ -10,24 +10,26 @@ domainurl: ##DomainURL##
 
 # Modules in Ribbon component
 
-The following modules are available in Ribbon. If the module injection type is **selective**, manual injection is required to extend the Ribbon's functionality.
+The Angular Ribbon component contains several feature-based modules that must be injected to enable their respective functionalities.
+
+The following modules are available. If the module injection type is **selective**, it must be manually injected to extend the Ribbon's functionality.
 
 | Module | Description | Module Injection Type |
 |------|-------------|------|
-| `RibbonButtonService` | To use the built-in button as a ribbon item. | default |
-| `RibbonCheckBoxService` | To use the built-in checkbox as a ribbon item.| default |
-| `RibbonDropDownService` | To use the built-in dropdown button as a ribbon item.| default |
-| `RibbonSplitButtonService` | To use the built-in split button as a ribbon item.| default |
-| `RibbonComboBoxService` | To use the built-in combobox as a ribbon item. | default |
-| `RibbonGroupButtonService` | To use the built-in groupbutton as a ribbon item. | default |
-| `RibbonColorPickerService` | Inject this module to use the built-in colorpicker as a ribbon item.| selective |
-| `RibbonGalleryService` | Inject this module to use the gallery as a ribbon item.| selective |
-| `RibbonFileMenuService` | Inject this module to use the file menu feature.| selective |
-| `RibbonBackstageService` | Inject this module to use the backstage view feature.| selective |
-| `RibbonContextualTabService` | Inject this module to use the contextual tab feature.| selective |
-| `RibbonKeyTipService` | Inject this module to use the keytip feature.| selective |
+| `RibbonButtonService` | Enables Button functionality in the Ribbon. | default |
+| `RibbonCheckBoxService` | Enables CheckBox functionality in the Ribbon.| default |
+| `RibbonDropDownService` | Enables DropDown Button functionality in the Ribbon.| default |
+| `RibbonSplitButtonService` | Enables Split Button functionality in the Ribbon.| default |
+| `RibbonComboBoxService` | Enables ComboBox functionality in the Ribbon. | default |
+| `RibbonGroupButtonService` | Enables Group Button functionality in the Ribbon. | default |
+| `RibbonColorPickerService` | Provides support for the ColorPicker item.| selective |
+| `RibbonGalleryService` | Provides support for the Gallery item.| selective |
+| `RibbonFileMenuService` | Enables the File Menu feature.| selective |
+| `RibbonBackstageService` | Enables the Backstage view feature.| selective |
+| `RibbonContextualTabService` | Enables the Contextual Tab feature.| selective |
+| `RibbonKeyTipService` | Enables the KeyTip navigation feature.| selective |
 
-These modules should be injected into the `providers` section of root `NgModule` or component class.
+These modules should be injected into the `providers` array of your application's root `NgModule` or the specific component.
 
 {% tabs %}
 

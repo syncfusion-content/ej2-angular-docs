@@ -1,22 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, BoxAndWhiskerSeriesService, DataLabelService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, BoxAndWhiskerSeriesService, TooltipService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-@Component({
-imports: [
-         ChartModule
-    ],
 
-providers: [CategoryService, BoxAndWhiskerSeriesService, DataLabelService],
-standalone: true,
+@Component({
+    imports: [ChartModule],
+    providers: [CategoryService, BoxAndWhiskerSeriesService, TooltipService],
+    standalone: true,
     selector: 'app-container',
-    template: ` <ejs-chart id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-            [title]='title' >
+    template: `<ejs-chart id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
             <e-series-collection>
                 <e-series [dataSource]='data' type='BoxAndWhisker' xName='x' yName='y' [border]='border' [marker]='marker'> </e-series>
             </e-series-collection>
@@ -24,21 +16,20 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
     public title?: string;
     public data?: Object[];
     public marker?: Object;
-    public tooltip?: Object;
     public border?: Object;
-    primaryYAxis: any;
+    public tooltip?: Object;
     ngOnInit(): void {
         this.data = data;
-        this.primaryXAxis = {
-            valueType: 'Category',
-            };
-        this.border = { width: 2, color: 'green', dashArray: '2,5' }
-        this.title = 'Company Revenue and Profit';
-        this.marker = { visible: true }
-
+        this.primaryXAxis = { valueType: 'Category' };
+        this.primaryYAxis = { title: 'Age', maximum: 60 };
+        this.title = 'Employee Age Group in Various Departments';
+        this.border = { width: 2, color: 'green', dashArray: '2,5' };
+        this.marker = { visible: true };
+        this.tooltip = { enable: true };
     }
 }
 

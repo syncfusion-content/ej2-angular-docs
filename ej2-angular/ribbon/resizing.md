@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 --- 
 
-# Ribbon Resizing
+# Resizing in Angular Ribbon Component
 
-The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes. Also, we have an option to resize the ribbon elements in the custom order.
+The Syncfusion Angular Ribbon component automatically adjusts the layout of its elements when the available space changes. It expands when the container size increases and collapses when it decreases. This resizing behavior is available in both Classic and Simplified modes.Also, we have an option to resize the ribbon elements in the custom order.
 
-In classic mode on resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+*   **Classic Mode**: As the available width decreases, items transition from `Large` to `Medium` to `Small`. The reverse occurs as the width increases.
+*   **Simplified Mode**: Items transition between `Medium` and `Small` sizes based on the available space.
 
-In simplified mode on resizing, the items size will be changed based on the available width of the tab content from the order of Medium-> Small and viceversa.
 
-## Defining items allowed size
+## Define Constant Item Size
 
-You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to maintain a constant size for an item. If `allowedSizes` is set, it keeps the size constant even when being resized.
+You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to maintain a constant size for a specific item. If `allowedSizes` is set, the item will retain its specified size and will not be affected by the Ribbon resizing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,6 +38,6 @@ You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/
   
 {% previewsample "page.domainurl/samples/ribbon/AllowedSize" %}
 
-## Defining items active size
+## Define Initial Item Size
 
-You can use the [activeSize](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#activesize) property to define the item size intially, before it is being resized. When resized the `activeSize` property is updated based on the ribbon's overflow state, which is determined by the `allowedSizes` property being configured. By default, the value is `Medium`.
+The [activeSize](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#activesize) property specifies the initial size of a Ribbon item before any resizing occurs. Its default value is `Medium`. During resizing, the component updates this property based on the `allowedSizes` configuration and the available container space.

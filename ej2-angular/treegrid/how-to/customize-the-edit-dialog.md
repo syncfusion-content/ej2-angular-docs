@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Customize the edit dialog in Angular Treegrid component | Syncfusion
-description: Learn here all about Customize the edit dialog in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Customize the edit dialog in Angular TreeGrid component | Syncfusion
+description: Learn how to customize the edit dialog in the Syncfusion Angular TreeGrid component, including appearance changes and advanced configuration.
 platform: ej2-angular
 control: Customize the edit dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the edit dialog in Angular Treegrid component
+# Customize the edit dialog in Angular TreeGrid component
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+The appearance of the edit dialog in the TreeGrid component can be customized using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event. The customization is typically performed based on the **requestType** property, which is set to **beginEdit** or **add** depending on whether an existing record is being edited or a new record is being added.
 
-In the below example, we have changed the dialog's header text for editing and adding records.
+In the example below, the dialog's header text is customized for both editing and adding records.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,7 +23,7 @@ In the below example, we have changed the dialog's header text for editing and a
 {% include code-snippet/treegrid/refresh-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs6" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For an overview of the Angular TreeGrid component and its features, see the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). More examples of data presentation and manipulation are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).
