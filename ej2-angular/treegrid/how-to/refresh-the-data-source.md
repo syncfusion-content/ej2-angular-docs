@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Refresh the data source in Angular Treegrid component | Syncfusion
-description: Learn here all about Refresh the data source in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Refresh the data source in Angular TreeGrid component | Syncfusion
+description: Learn how to refresh the data source in the Syncfusion Angular TreeGrid component after adding or deleting records and efficiently update the view.
 platform: ej2-angular
 control: Refresh the data source 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Refresh the data source in Angular Treegrid component
+# Refresh the data source in Angular TreeGrid component
 
-## How to refresh the datasource
+## How to refresh the data source
 
-You can add/delete the datasource records through an external button. To reflect the datasource changes in Tree Grid, you need to assign the modified data to dataSource property.
+Records can be added or deleted from the data source using an external button. To reflect these changes in the TreeGrid, assign the updated data to the dataSource property.
 
-Please follow the below steps to refresh the Tree Grid after datasource change.
+Follow these steps to refresh the TreeGrid after a data source change:
 
-**Step 1**:
+**Step 1:**
 
-Add/delete the datasource record by using the following code.
+Add or delete a data source record using the following code:
 
 ```typescript
 
@@ -32,9 +32,9 @@ Add/delete the datasource record by using the following code.
 
 ```
 
-**Step 2**:
+**Step 2:**
 
-Refresh the Tree Grid after the datasource change by assign the modified data to dataSource property.
+Refresh the TreeGrid after modifying the data source by reassigning the updated data to the dataSource property.
 
 ```typescript
     (this.treegridObj as TreeGridComponent).dataSource = dataSource; // Refresh the TreeGrid.
@@ -50,7 +50,7 @@ Refresh the Tree Grid after the datasource change by assign the modified data to
 {% include code-snippet/treegrid/refresh-datasource-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs2" %}
 
 > Refresh the header by using the [`refreshHeader`](https://ej2.syncfusion.com/angular/documentation/api/treerid/#refreshheader) method in the tree grid.

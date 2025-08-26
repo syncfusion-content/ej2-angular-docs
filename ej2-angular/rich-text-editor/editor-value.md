@@ -114,7 +114,7 @@ export class AppComponent {
 ```
 With this setup, any changes made in the Rich Text Editor will update the `editorContent` property, and any programmatic changes to `editorContent` will update the editor's content. This two-way binding ensures that your component always has the most up-to-date content from the editor, and vice versa.
 
-## Autosave
+## Auto save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#saveinterval) property's value, which is specified in milliseconds.
 
@@ -448,7 +448,10 @@ You can programmatically get the current character count in the editor using the
 
 ## Source code editing
 
-Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you made any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. So, the users will have more flexibility over the content they have created.
+The Rich Text Editor enables you to directly edit HTML code through the `Source View` in the text area. Any changes you make in Source view are immediately reflected in the editor's content, giving you greater flexibility and control over your work.
+The source code is presented with enhanced formatting and consistent indentation for both block-level and inline HTML elements, resulting in a cleaner, more readable, and user-friendly editing experience.
+
+>While the visual alignment of the source code is improved, the editor's underlying value remains unchanged.
 
 ### Configuring source code tool in the toolbar
 
@@ -472,6 +475,6 @@ The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/
 
 ## See also
 
-* [Customizing the placeholder in Styles](./style/#customizing-placeholder-text)
+* [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
 * [Implementing Prevention of cross-site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration#codemirror-integration)

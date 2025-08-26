@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Customize the tree nodes based on levels in Angular TreeView component
 
-You can customize the tree nodes level-wise by adding custom cssClass to the component and enabling styles.
+The TreeView component allows you to apply different visual styles to nodes based on their hierarchical level within the tree structure. This level-based customization enables you to create visually distinct representations for parent nodes, child nodes, and deeply nested items, enhancing the user interface and improving content organization.
+
+Level-based customization works by adding a custom CSS class to the TreeView component through the `cssClass` property, then targeting specific tree levels using CSS selectors. The TreeView automatically assigns level-specific classes to nodes, which you can leverage to apply targeted styling based on the node's position in the hierarchy.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Conditional formatting in Angular Pivotview component
 
-Allows end user to change the appearance of the pivot table value cells with its background color, font color, font family, and font size based on specific conditions.
+The conditional formatting feature enables users to customize the appearance of pivot table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the pivot table.
 
-The conditional formatting can be applied at runtime through the built-in dialog, invoked from the toolbar. To do so, set [allowConditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowconditionalformatting) and [showToolbar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtoolbar) properties in pivot table to **true**. Also, include the item **ConditionalFormatting** within the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property in pivot table. End user can now see the "Conditional Formatting" icon in toolbar UI automatically, which on clicking will invoke the formatting dialog to perform necessary operations.
+The conditional formatting can be applied at runtime through the built-in dialog, invoked from the toolbar. To enable this functionality, set the [allowConditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowconditionalformatting) and [showToolbar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtoolbar) properties to **true**. Additionally, include the **ConditionalFormatting** item within the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property. Users will see the "Conditional Formatting" icon in the toolbar UI automatically, which opens the formatting dialog when clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,7 +26,9 @@ The conditional formatting can be applied at runtime through the built-in dialog
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs16" %}
 
-Conditional formatting can also be included in the pivot table through code-behind using the [conditionalFormatSetting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/). The required properties to apply a new conditional formatting are,
+## Configure conditional formatting through code-behind
+
+Conditional formatting can also be applied programmatically during component initialization using the [conditionalFormatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the pivot table loads. The required properties to apply a new conditional formatting are,
 
 * [applyGrandTotals](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#applygrandtotals): This boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to true.
 * [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure): Specifies the value field name for which style will be applied.
@@ -35,16 +37,18 @@ Conditional formatting can also be included in the pivot table through code-behi
 * [value2](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#value2): Specifies the ending value for the conditional formatting range. This property is applicable only for conditions like **Between** and **NotBetween**.
 * [style](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#style): Specifies the custom styling applied to the cell.
 
-The available style properties in [style](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/), to set in value cells are:
+The [style](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/) object includes the following properties, which you can use to customize the appearance of value cells:
 
 * [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/#backgroundcolor): It allows to set the background color to the value cell in the pivot table.
 * [color](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/#color): It allows to set the font color to the value cell in the pivot table.
 * [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/#fontfamily): It allows to set the font family to the value cell in the pivot table.
 * [fontSize](https://ej2.syncfusion.com/angular/documentation/api/pivotview/style/#fontsize): It allows to set the font size to the value cell in the pivot table.
 
-Meanwhile, user can also view conditional formatting dialog in UI by invoking `showConditionalFormattingDialog` method on an external button click which is shown in the below code sample.
+## Opening conditional formatting dialog programmatically
 
-To use the conditional formatting feature, User need to inject the `ConditionalFormatting` module in pivot table.
+Users can also access the conditional formatting dialog through external UI elements by calling the `showConditionalFormattingDialog` method. In the following example, an external button is used to open the conditional formatting dialog programmatically.
+
+To enable conditional formatting, the `ConditionalFormattingService` must be added to the `@NgModule.providers` section.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +64,9 @@ To use the conditional formatting feature, User need to inject the `ConditionalF
 
 ## Conditional formatting for all fields
 
-Allows end user to apply conditional formatting commonly for all value fields just by ignoring the [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure) property and setting rest of the properties in [conditionalFormatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/).
+The Pivot Table component allows you to apply conditional formatting to all value fields simultaneously. This approach ensures consistent highlighting and styling of value cells across the entire pivot table, removing the need to configure formatting for each value field individually.
+
+To format all value fields together, use the [conditionalFormatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/) property without specifying the [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure) property. When the [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure) property is omitted, the formatting rules are automatically applied to every value field in your pivot table, resulting in a uniform appearance for all value cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +82,7 @@ Allows end user to apply conditional formatting commonly for all value fields ju
 
 ## Conditional formatting for specific value field
 
-Allows end user to apply conditional formatting to a specific value field by setting the [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure) property with specific value field name in [conditionalFormatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure).
+To apply conditional formatting exclusively to a particular value field, set the [measure](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure) property with the specific value field name in [conditionalFormatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/#measure).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,7 +106,7 @@ Editing and removing existing conditional format can be done through the UI at r
 
 ### ConditionalFormatting
 
-The event [conditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#conditionalformatting) is triggered initially while clicking the “ADD CONDITION” button inside the conditional formatting dialog in-order to fill user specific condition instead of default condition at runtime. To use this event, [allowConditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowconditionalformatting) property in PivotView must be set to **true**. It has following parameters -
+The [conditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#conditionalformatting) event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of default conditions at runtime. To utilize this event, the [allowConditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowconditionalformatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
 
 * `applyGrandTotals` - Allows to apply conditional formatting to the grand totals of row and column axis in the pivot table.
 * `conditions` - Allows you to choose the operator type such as equals, greater than, less than, etc. for conditional formatting.

@@ -10,15 +10,18 @@ domainurl: ##DomainURL##
 
 # Multiple selection in Angular TreeView component
 
-Selection provides interactive support and highlights the selected node. Selection can be done through simple mouse down or keyboard interaction.
+The TreeView component supports selecting multiple nodes simultaneously, enabling users to perform batch operations on several items. Selection highlights the chosen nodes and provides interactive feedback through visual indicators.
 
-The TreeView also supports selection of multiple nodes by setting [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowmultiselection) to **true**.
+The TreeView supports multiple node selection by setting [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowmultiselection) to **true**.
 
-To multi-select, press and hold the **CTRL** key and click the desired nodes. To select a range of nodes, press and hold the **SHIFT** key and click the nodes.
+## Enabling multiple selection
 
-In the following example, the `allowMultiSelection` property is enabled.
+To select multiple nodes, use these keyboard combinations:
 
-> Multi selection is not applicable through touch interactions.
+* Hold **CTRL** key and click individual nodes to add or remove them from the selection
+* Hold **SHIFT** key and click nodes to select a continuous range from the last selected node
+
+In the following example, the `allowMultiSelection` property is enabled to demonstrate multiple node selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,16 +37,20 @@ In the following example, the `allowMultiSelection` property is enabled.
   
 {% previewsample "page.domainurl/samples/tree-view/getting-started-cs10" %}
 
-## Selected nodes
+> Multiple selection is not supported through touch interactions on mobile devices.
 
-You can get or set the selected nodes in TreeView at initial rendering and dynamically using the [selectedNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#selectednodes) property. This property returns an array of selected node IDs.
+## Managing selected nodes
 
-* The [`nodeselecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) event is triggered before a node is selected/unselected which can be used to prevent the selection.
+Control and retrieve selected nodes using the [selectedNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#selectednodes) property. This property accepts and returns an array of selected node IDs, allowing both initial configuration and dynamic updates.
 
-* The [`nodeSelected`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselected) event is triggered once a node is successfully selected/unselected.
+### Selection events
 
-In the following example, **New South Wales** and **Western Australia** nodes are selected at initial rendering.
-When a node is selected, the selected node's ID is displayed in an alert.
+The TreeView provides events to handle selection changes:
+
+* The [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) event triggers before a node selection changes and can prevent the selection by setting `cancel` to true
+* The [`nodeSelected`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselected) event triggers after a node selection is completed successfully
+
+In the following example, **New South Wales** and **Western Australia** nodes are pre-selected at initialization. The selection events display alerts showing the selected node information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

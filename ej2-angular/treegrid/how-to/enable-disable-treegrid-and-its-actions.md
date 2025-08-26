@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Enable disable treegrid and its actions in Angular Treegrid component | Syncfusion
-description: Learn here all about Enable disable treegrid and its actions in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Enable or disable TreeGrid and its actions in Angular TreeGrid component | Syncfusion
+description: Learn how to enable or disable the TreeGrid and its actions in the Syncfusion Angular TreeGrid component, including applying custom CSS to control user interaction.
 platform: ej2-angular
 control: Enable disable treegrid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable treegrid and its actions in Angular Treegrid component
+# Enable or disable TreeGrid and its actions in Angular TreeGrid component
 
-You can enable/disable the Tree Grid and its actions by applying/removing corresponding CSS styles.
+The TreeGrid and its actions can be enabled or disabled by applying or removing the appropriate CSS styles.
 
-To enable/disable the Tree Grid and its actions, follow the given steps:
+To enable or disable the TreeGrid and its actions, follow these steps:
 
-**Step 1**:
+**Step 1:**
 
-Create CSS class with custom style to override the default style of Tree Grid.
+Create a CSS class with custom styles to override the default appearance and functionality of the TreeGrid.
 
 ```css
     .disabletreegrid {
@@ -28,12 +28,11 @@ Create CSS class with custom style to override the default style of Tree Grid.
     }
 ```
 
-**Step 2**:
+**Step 2:**
 
-Add/Remove the CSS class to the Tree Grid in the click event handler of Button.
+Add or remove the CSS class from the TreeGrid in the click event handler of a button.
 
 ```typescript
-
 public click(): void {
     if (this.treegridObj && this.treegridObj.element.classList.contains('disabletreegrid')) {
       this.treegridObj.element.classList.remove('disabletreegrid');
@@ -43,11 +42,11 @@ public click(): void {
       this.treegridObj.element.classList.add('disabletreegrid');
       (document.getElementById("TreeGridParent") as HTMLElement).classList.add('wrapper');
     }
-  }
+}
 
 ```
 
-In the below demo, the button click will enable/disable the Tree Grid and its actions.
+In the demo below, clicking the button enables or disables the TreeGrid and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +57,7 @@ In the below demo, the button click will enable/disable the Tree Grid and its ac
 {% include code-snippet/treegrid/enable-disable-actions-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/enable-disable-actions-cs1" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For detailed feature information, refer to the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). More examples on presenting and manipulating data are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

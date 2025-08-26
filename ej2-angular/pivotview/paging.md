@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Paging in Angular Pivotview component
 
-Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table. It can be enabled by setting the [`enablePaging`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablepaging) property to **true**. It can be configured at code-behind by using the [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagesettings) property, during initial rendering of the component. The properties required are:
+The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
+
+To enable paging, set the [`enablePaging`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablepaging) property to **true**. Paging can be configured in the code-behind during the initial rendering of the component using the [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagesettings) property. This allows you to define the initial page setup for rows and columns. The key properties within [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagesettings) include:
 
 * [`currentRowPage`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pageSettings/#currentrowpage): Allows user to set the current row page number to be displayed in the pivot table.
 * [`currentColumnPage`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pageSettings/#currentcolumnpage): Allows user to set the current column page number to be displayed in the pivot table.
@@ -19,7 +21,7 @@ Paging allows you to load large amounts of data that can be divided and displaye
 
 ## Pager UI
 
-When paging is enabled, a built-in pager UI appears at the bottom of the pivot table, allowing you to change the current page in the row and column axes by navigating to a desired page using the navigation buttons or an input text box, as well as change the page size via dropdown at runtime.
+When paging is enabled, a built-in pager UI appears at the bottom of the Pivot Table by default. This user-friendly interface enables seamless navigation across row and column axis pages using navigation buttons or an input box, and allows dynamic page size adjustments via dropdown menus.
 
 You can also change the position, visibility, compact view, and template of the row and column pagers by using the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings).
 
@@ -39,9 +41,9 @@ You can also change the position, visibility, compact view, and template of the 
 
 ### Show pager UI at top or bottom
 
-You can display the pager UI at top or bottom of the pivot table by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#position) property. To show the pager UI at top of the pivot table, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#position) property in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) to **Top**.
+The Pivot Table component allows you to configure the placement of the pager UI to match your layout preferences. You can display the pager UI either at the top or bottom of the pivot table by setting the [`position`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#position) property within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. By default, the pager UI appears at the bottom, but setting the position property to **Top** places it above the pivot table. This can be ideal for layouts where navigation controls are preferred at the top for better visibility or alignment with other UI elements.
 
-> By default, the pager UI appears at the bottom of the pivot table.
+The following code demonstrates how to configure the pager UI to appear at the top of the pivot table:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,9 +59,7 @@ You can display the pager UI at top or bottom of the pivot table by using the [`
 
 ### Inverse pager
 
-Toggles and displays row and column pager. To show the column pager on the left side of the pager UI, set the [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#isinversed) property in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) to **true**.
-
-> By default, the row pager is displayed on the left side of the pager UI, while the column pager is displayed on the right side.
+The Pivot Table allows you to toggle the positions of the row and column pagers in the pager UI. By default, the row pager appears on the left side of the pager UI, and the column pager appears on the right. To swap these positions—displaying the column pager on the left and the row pager on the right—set the [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#isinversed) property to **true** within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,7 +75,7 @@ Toggles and displays row and column pager. To show the column pager on the left 
 
 ### Compact view
 
-By hiding all except the previous and next navigation buttons, the pager UI can be displayed with the absolute minimum of paging options. The compact view can be enabled by setting the [`enableCompactView`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#enablecompactview) property in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#pagersettings) to **true**.
+The Pivot Table provides a compact view for the pager UI, displaying only the previous and next navigation buttons to minimize the interface. To enable the compact view, set the [`enableCompactView`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#enablecompactview) property to **true** within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. This streamlined layout focuses on essential navigation controls, ideal for layouts requiring a simplified paging experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,9 +91,9 @@ By hiding all except the previous and next navigation buttons, the pager UI can 
 
 ### Show or hide paging option
 
-By using the [`showRowPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpager) and [`showColumnPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showcolumnpager) properties in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings), you can show or hide row and column pager separately in the pager UI.
+The Pivot Table allows you to control the visibility of the row and column pagers in the pager UI using the [`showRowPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpager) and [`showColumnPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showcolumnpager) properties within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. By default, both row and column pagers are visible in the pager UI. To hide either the row pager or the column pager, set the corresponding property to **false**. This allows you to display only the necessary navigation controls based on your layout requirements.
 
-In the following example, row pager has been disabled by setting the [`showRowPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpager) property in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) to **false**.
+The following code demonstrates how to hide the row pager by setting the [`showRowPager`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpager) property to **false**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +109,7 @@ In the following example, row pager has been disabled by setting the [`showRowPa
 
 ### Show or hide page size
 
-By using the [`showRowPageSize`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpagesize) and [`showColumnPageSize`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showcolumnpagesize) properties in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings), you can show or hide "Rows per page" and "Columns per page" dropdown menu. The dropdown menu contains a list of pre-defined or user-defined page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
+The Pivot Table allows you to control the visibility of the "Rows per page" and "Columns per page" dropdowns in the pager UI using the [`showRowPageSize`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showrowpagesize) and [`showColumnPageSize`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#showcolumnpagesize) properties within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. These dropdowns display a list of predefined or user-defined page sizes, enabling you to adjust the number of rows or columns displayed per page at runtime. By default, both dropdowns are visible in the pager UI. To hide either the "Rows per page" or "Columns per page" dropdown, set the corresponding property to **false**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,11 +125,9 @@ By using the [`showRowPageSize`](https://ej2.syncfusion.com/angular/documentatio
 
 ### Customize page size
 
-By using the [`rowPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#rowpagesizes) and [`columnPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#columnpagesizes) properties in [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings), you can specify a set of desired page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
+The Pivot Table allows you to specify a list of page sizes for the "Rows per page" and "Columns per page" dropdowns in the pager UI using the [`rowPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#rowpagesizes) and [`columnPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#columnpagesizes) properties within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. By default, the "Rows per page" dropdown includes page sizes of 10, 50, 100, and 200, while the "Columns per page" dropdown includes page sizes of 5, 10, 20, 50, and 100. To define a different set of page sizes, assign an array of numbers to the [`rowPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#rowpagesizes) or [`columnPageSizes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#columnpagesizes) properties.
 
-> By default, the "Rows per page" dropdown have pre-defined page sizes of **10, 50, 100, and 200**, while the "Columns per page" dropdown have pre-defined page sizes of **5, 10, 20, 50, and 100**.
-
-In the following example, the "Rows per page" dropdown is set with user-defined page sizes of **10, 20, 30, 40, and 50** and the "Columns per page" dropdown is set with user-defined page sizes of **5, 10, 15, 20, and 30**.
+The following example sets the "Rows per page" dropdown with page sizes of 10, 20, 30, 40, and 50, and the "Columns per page" dropdown with page sizes of 5, 10, 15, 20, and 30:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,11 +143,17 @@ In the following example, the "Rows per page" dropdown is set with user-defined 
 
 ### Template
 
-The [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#template) property allows to change the appearance of the pager UI by displaying user-defined HTML elements instead of built-in HTML elements.
+The Pivot Table allows you to define a custom layout for the pager UI using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#template) property within the [`pagerSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagersettings) configuration. By default, the pager UI displays built-in navigation controls. To replace these with custom HTML elements, assign the ID of the custom elements to the [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#template) property. This enables you to create a unique pager interface that aligns with your application’s design requirements.
+
+This following example shows how to create a custom template for both row and column pagers. First, include the necessary HTML code in your `index.html` file and assign its ID to the [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pagerSettings/#template) property. Then, during the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#databound) event, the Syncfusion [`Pager`](https://ej2.syncfusion.com/angular/documentation/pager/getting-started) control is appended to the designated HTML elements. You can configure the pager by setting properties like [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/pager/#pagesize), [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/pager/#totalrecordscount), and [`currentPage`](https://ej2.syncfusion.com/angular/documentation/api/pager/#currentpage). When you click on a custom row or column pager, the [`currentRowPage`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pageSettings/#currentrowpage) and [`currentColumnPage`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pageSettings/#currentcolumnpage) properties in [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagesettings) are updated, enabling navigation with the custom pager.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/pagingTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pivot-grid/pagingTemplate-cs1/index.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

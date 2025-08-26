@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Template in Angular TreeView component
 
-The TreeView component allows you to customize the look of the TreeView nodes by using the [nodeTemplate](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodetemplate) property. This property accepts either template string or HTML element ID.
+The TreeView component allows you to customize the appearance and content of TreeView nodes using the [nodeTemplate](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodetemplate) property. This property accepts either a template string or HTML element ID, enabling you to display rich content beyond simple text labels.
+
+Node templates are particularly useful when you need to display structured data, images, icons, or multiple data fields within each tree node. The template system provides access to the complete node data object, allowing dynamic content rendering based on your data source.
 
 In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property.
 
-The template expression should be provided inside the `${...}` interpolation syntax.
+The template content uses Angular template interpolation syntax with `${...}` expressions to bind data properties from your TreeView data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

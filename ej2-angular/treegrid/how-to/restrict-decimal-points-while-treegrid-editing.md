@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Restrict decimal points while treegrid editing in Angular Treegrid component | Syncfusion
-description: Learn here all about Restrict decimal points while treegrid editing in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Restrict decimal points while editing in Angular TreeGrid component | Syncfusion
+description: Learn how to restrict decimal points while editing in the Syncfusion Angular TreeGrid component using NumericTextBox configuration.
 platform: ej2-angular
 control: Restrict decimal points while treegrid editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict decimal points while treegrid editing in Angular Treegrid component
+# Restrict decimal points while editing in Angular TreeGrid component
 
-By default, the number of decimal places will be restricted to two in the NumericTextBox while editing the numeric column. We can restrict to type the decimal points in a NumericTextBox by using the **validateDecimalOnType** and **decimals** properties of NumericTextBox.
+By default, the NumericTextBox restricts input to two decimal places when editing a numeric column in the TreeGrid. To control the number of decimal points allowed, use the **validateDecimalOnType** and **decimals** properties of the NumericTextBox.
 
-In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of **Price** column.
+In the demo below, editing a row restricts typing decimal point values in the NumericTextBox of the **Price** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,7 +23,7 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% include code-snippet/treegrid/refresh-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs14" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more feature details, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

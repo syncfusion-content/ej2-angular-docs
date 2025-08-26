@@ -3,16 +3,17 @@ layout: post
 title: Integrate avatar into badge in Angular Avatar component | Syncfusion
 description: Learn here all about Integrate avatar into badge in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Integrate avatar into badge 
+control: Avatar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Integrate avatar into badge in Angular Avatar component
 
-The badge is dependent and supportive component, and it can be used with avatar to create a notification avatar.
-The default avatar (.`e-avatar`) and circle avatar (.`e-avatar-circle`) have been used with notification
-badges (.`e-badge-notification`) in the following sample.
+The badge component serves as a dependent and supportive element that can be integrated with avatars to create notification avatars. This combination displays user profiles alongside status indicators, message counts, or alert notifications.
+
+## Implementation
+The default avatar (`e-avatar`) and circle avatar (`e-avatar-circle`) classes work seamlessly with notification badges (`e-badge-notification`) to create these enhanced user interface elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

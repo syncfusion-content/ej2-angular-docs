@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular TreeView component
 
-The TreeView component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The TreeView component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility. The TreeView implements comprehensive accessibility features to support hierarchical data navigation, state management, and interactive operations for users with assistive technologies.
 
 The accessibility compliance for the TreeView component is outlined below.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the TreeView component is outlined below.
 
 ## WAI-ARIA attributes
 
-The TreeView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/) patterns to meet the accessibility. The following ARIA attributes are used in the TreeView component:
+The TreeView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/) patterns to meet accessibility requirements. The following ARIA attributes are used in the TreeView component to provide comprehensive context about the tree structure, node states, and interactive capabilities:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -60,25 +60,33 @@ The TreeView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 
 ## Keyboard interaction
 
-The TreeView component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the TreeView component.
+The TreeView component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/#keyboardinteraction) guideline, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts support comprehensive TreeView operations across navigation, selection, editing, and state management:
 
+### Navigation Keys
 | Interaction Keys | Description |
 |------|---------|
-| <kbd>Arrow Up</kbd> | Goes to the previous node. |
-| <kbd>Arrow Down</kbd> | Goes to the next node. |
-| <kbd>Arrow Right</kbd> | Expands the current node. |
-| <kbd>Arrow Left</kbd> | Collapses the current node. |
-| <kbd>Home</kbd> | Goes to the first node. |
-| <kbd>End</kbd> | Goes to the last node. |
-| <kbd>F2</kbd> | Edits the focused node. |
-| <kbd>Esc</kbd> | Focuses out the edit state without saving the edited text. |
-| <kbd>Enter</kbd> | Selects the focused node/saves the edited text. |
-| <kbd>Space</kbd> | Checks the current node. |
-| <kbd>Ctrl + A</kbd> | Selects all nodes. |
+| <kbd>Arrow Up</kbd> | Moves focus to the previous visible tree node in the hierarchical order. |
+| <kbd>Arrow Down</kbd> | Moves focus to the next visible tree node in the hierarchical order. |
+| <kbd>Arrow Right</kbd> | Expands the focused parent node to reveal child nodes. |
+| <kbd>Arrow Left</kbd> | Collapses the focused parent node to hide child nodes. |
+| <kbd>Home</kbd> | Moves focus to the first tree node in the component. |
+| <kbd>End</kbd> | Moves focus to the last visible tree node in the component. |
 
+### Selection and Action Keys
+| Interaction Keys | Description |
+|------|---------|
+| <kbd>Enter</kbd> | Selects the focused tree node or confirms editing operations when in edit mode. |
+| <kbd>Space</kbd> | Toggles the checkbox state of the focused node when checkbox functionality is enabled. |
+| <kbd>Ctrl + A</kbd> | Selects all tree nodes when multi-selection is enabled. |
+
+### Editing Keys
+| Interaction Keys | Description |
+|------|---------|
+| <kbd>F2</kbd> | Initiates inline editing mode for the focused tree node when editing is enabled. |
+| <kbd>Esc</kbd> | Cancels the current editing operation and returns focus to the tree node without saving changes. |
 ## Ensuring accessibility
 
-The TreeView component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The TreeView component's accessibility levels are ensured through comprehensive testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the TreeView component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/treeview.html) in a new window to evaluate the accessibility of the TreeView component with accessibility tools.
 

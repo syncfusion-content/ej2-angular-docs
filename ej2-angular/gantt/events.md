@@ -20,79 +20,88 @@ The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#ac
 Below are detailed descriptions of each argument type's properties, and their purposes.
 
 **[ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs/)**
-| **Property**             | **Type**       | **Description** |
-|--------------------------|----------------|-----------------|
-| `action`                | `string`       | Defines the type of action being performed. |
-| `fromItem`              | `IGanttData`   | Specifies the predecessor task in a dependency relationship. |
-| `isValidLink`           | `boolean`      | Indicates whether the dependency link is valid. |
-| `mergeSegmentIndexes`   | `Object[]`     | Contains indexes of segments to be merged during a context click action. |
-| `newPredecessorString`  | `string`       | Represents the updated predecessor string. |
-| `newTaskData`           | `object`       | Holds the newly added task data, excluding custom Gantt properties. |
-| `predecessor`           | `IPredecessor` | Defines the predecessor object involved in the action. |
-| `recordIndex`           | `number`       | Specifies the index of the record being acted upon. |
-| `splitDate`             | `Date`         | Indicates the date at which a task is split during a context click action. |
-| `target`                | `Element`      | Refers to the target HTML element involved in the action. |
-| `toItem`                | `IGanttData`   | Specifies the successor task in a dependency relationship. |
-| `type`                  | `string`       | Defines the type of event triggered. |
+
+| **Property**             | **Type**       | **Description**                                                                 |
+|--------------------------|----------------|---------------------------------------------------------------------------------|
+| `action`                | `string`       | Defines the type of action being performed.                                     |
+| `fromItem`              | `IGanttData`   | Specifies the predecessor task in a dependency relationship.                    |
+| `isValidLink`           | `boolean`      | Indicates whether the dependency link is valid.                                 |
+| `mergeSegmentIndexes`   | `Object[]`     | Contains indexes of segments to be merged during a context click action.        |
+| `newPredecessorString`  | `string`       | Represents the updated predecessor string.                                      |
+| `newTaskData`           | `object`       | Holds the newly added task data, excluding custom Gantt properties.             |
+| `predecessor`           | `IPredecessor` | Defines the predecessor object involved in the action.                          |
+| `recordIndex`           | `number`       | Specifies the index of the record being acted upon.                             |
+| `splitDate`             | `Date`         | Indicates the date at which a task is split during a context click action.      |
+| `target`                | `Element`      | Refers to the target HTML element involved in the action.                       |
+| `toItem`                | `IGanttData`   | Specifies the successor task in a dependency relationship.                      |
+| `type`                  | `string`       | Defines the type of event triggered.                                            |
+
 
 **[ITimeSpanEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTimeSpanEventArgs/) (Taskbar editing)**
-| **Property**           | **Type**   | **Description** |
-|------------------------|------------|-----------------|
-| `cancel`              | `boolean`  | Set to **true** to cancel the current action before it is processed. |
-| `isTimelineRoundOff`  | `boolean`  | Indicates whether timeline rounding is applied during taskbar editing. |
-| `projectStartDate`    | `Date`     | Start date of the overall project. Useful for validating task boundaries. |
-| `projectEndDate`      | `Date`     | End date of the overall project. Useful for validating task boundaries. |
+
+| **Property**           | **Type**   | **Description**                                                                 |
+|------------------------|------------|---------------------------------------------------------------------------------|
+| `cancel`              | `boolean`  | Set to `true` to cancel the current action before it is processed.             |
+| `isTimelineRoundOff`  | `boolean`  | Indicates whether timeline rounding is applied during taskbar editing.         |
+| `projectStartDate`    | `Date`     | Start date of the overall project. Useful for validating task boundaries.      |
+| `projectEndDate`      | `Date`     | End date of the overall project. Useful for validating task boundaries.        |
 | `requestType`         | `string`   | Describes the type of request. For taskbar editing, values include **taskbarEditing**. |
 
 **[ITaskAddedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
-| **Property**        | **Type**     | **Description** |
-|---------------------|--------------|-----------------|
-| `action`            | `string`     | Specifies the type of action, such as **beforeAdd** or **beforeDelete**. |
-| `cancel`            | `boolean`    | Set to **true** to cancel the current action. |
-| `data`              | `object`     | Contains the original task data before modification. |
-| `modifiedRecords`   | `object[]`   | Array of records that were modified during the action. |
-| `modifiedTaskData`  | `object[]`   | Array of task data after modification. |
-| `newTaskData`       | `object`     | Data of the newly added task (if applicable). |
-| `recordIndex`       | `number`     | Index of the record being modified or added. |
-| `requestType`       | `string`     | Describes the type of request, such as **beforeSave**, **beforeDelete**. |
+
+| **Property**        | **Type**     | **Description**                                                                 |
+|---------------------|--------------|---------------------------------------------------------------------------------|
+| `action`            | `string`     | Specifies the type of action, such as **beforeAdd** or **beforeDelete**.           |
+| `cancel`            | `boolean`    | Set to `true` to cancel the current action.                                    |
+| `data`              | `object`     | Contains the original task data before modification.                           |
+| `modifiedRecords`   | `object[]`   | Array of records that were modified during the action.                         |
+| `modifiedTaskData`  | `object[]`   | Array of task data after modification.                                         |
+| `newTaskData`       | `object`     | Data of the newly added task, if applicable.                                   |
+| `recordIndex`       | `number`     | Index of the record being modified or added.                                   |
+| `requestType`       | `string`     | Describes the type of request, such as **beforeAdd** or **beforeDelete**.         |
 | `rowPosition`       | `string`     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
+
 **[FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) (Filtering)**
-| **Property**             | **Type**     | **Description** |
-|--------------------------|--------------|-----------------|
-| `cancel`                 | `boolean`    | Set to **true** to cancel the filtering action. |
-| `columns`                | `object[]`   | Array of columns involved in filtering. |
-| `currentFilterObject`    | `object`     | Filter object representing the current filter condition. |
-| `currentFilteringColumn` | `string`     | Name of the column currently being filtered. |
-| `requestType`            | `string`     | Describes the type of request, typically **filtering**. |
-| `type`                   | `string`     | Event type identifier. |
+
+| **Property**             | **Type**     | **Description**                                                                 |
+|--------------------------|--------------|---------------------------------------------------------------------------------|
+| `cancel`                 | `boolean`    | Set to **true** to cancel the filtering action.                                |
+| `columns`                | `object[]`   | Array of columns involved in filtering.                                        |
+| `currentFilterObject`    | `object`     | Filter object representing the current filter condition.                       |
+| `currentFilteringColumn` | `string`     | Name of the column currently being filtered.                                   |
+| `requestType`            | `string`     | Describes the type of request, typically **filtering**.                        |
+| `type`                   | `string`     | Event type identifier.                                                         |
 
 **[SortEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/) (Sorting)**
-| **Property**     | **Type**   | **Description** |
-|------------------|------------|-----------------|
-| `cancel`         | `boolean`  | Set to **true** to cancel the sorting action. |
-| `columnName`     | `string`   | Name of the column being sorted. |
-| `direction`      | `string`   | Sort direction: **Ascending** or **Descending**. |
-| `requestType`    | `string`   | Describes the type of request, typically **sorting**. |
-| `type`           | `string`   | Event type identifier. |
+
+| **Property**     | **Type**   | **Description**                                                                 |
+|------------------|------------|---------------------------------------------------------------------------------|
+| `cancel`         | `boolean`  | Set to **true** to cancel the sorting action.                                  |
+| `columnName`     | `string`   | Name of the column being sorted.                                               |
+| `direction`      | `string`   | Sort direction: **Ascending** or **Descending**.                               |
+| `requestType`    | `string`   | Describes the type of request, typically **sorting**.                          |
+| `type`           | `string`   | Event type identifier.                                                         |
 
 **[IDependencyEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iDependencyEventArgs/) (Dependency editing)**
-| **Property**              | **Type**   | **Description** |
-|---------------------------|------------|-----------------|
-| `fromItem`                | `object`   | Source task object in the dependency link. |
-| `isValidLink`             | `boolean`  | Indicates whether the new dependency link is valid. |
-| `newPredecessorString`    | `string`   | New predecessor string after editing. |
-| `predecessor`             | `string`   | Original predecessor string before editing. |
+
+| **Property**              | **Type**   | **Description**                                                                 |
+|---------------------------|------------|---------------------------------------------------------------------------------|
+| `fromItem`                | `object`   | Source task object in the dependency link.                                     |
+| `isValidLink`             | `boolean`  | Indicates whether the new dependency link is valid.                            |
+| `newPredecessorString`    | `string`   | New predecessor string after editing.                                          |
+| `predecessor`             | `string`   | Original predecessor string before editing.                                    |
 | `requestType`             | `string`   | Describes the type of request, typically **validateDependency** or **updateDependency**. |
-| `toItem`                  | `object`   | Target task object in the dependency link. |
+| `toItem`                  | `object`   | Target task object in the dependency link.                                     |
 
 **[ZoomEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/zoomEventArgs/) (Zooming)**
-| **Property**     | **Type**   | **Description** |
-|------------------|------------|-----------------|
-| `cancel`         | `boolean`  | Set to **true** to cancel the zoom action. |
-| `name`           | `string`   |  Name of the event |
-| `requestType`    | `string`   | Describes the type of request, typically **zooming**. |
-| `timeline`       | `object`   | Timeline settings after zoom is applied. |
+
+| **Property**     | **Type**   | **Description**                                                                 |
+|------------------|------------|---------------------------------------------------------------------------------|
+| `cancel`         | `boolean`  | Set to **true** to cancel the zoom action.                                     |
+| `name`           | `string`   | Name of the event.                                                             |
+| `requestType`    | `string`   | Describes the type of request, typically **zooming**.                          |
+| `timeline`       | `object`   | Timeline settings after zoom is applied.                                       |
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -207,6 +216,7 @@ export class AppComponent {
 The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actioncomplete) event is triggered after the Gantt component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. Below are detailed descriptions of each argument type's properties, and their purposes.
 
 **[ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/)**
+
 | **Property**       | **Type**                | **Description**                                                                 |
 |--------------------|-------------------------|---------------------------------------------------------------------------------|
 | `action`           | `string`                | Defines the action performed during the event.                                 |
@@ -396,6 +406,7 @@ export class AppComponent {
 The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event is triggered when an operation in the Gantt encounters an error due to configuration issues, invalid data, or missing modules. It returns a [FailureEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/failureEventArgs/#failureeventargs/) object containing detailed information about the failure.
 
 **[FailureEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/failureEventArgs/)**
+
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
 | `error`         | `Error`   |Defines the error information. |
@@ -3586,7 +3597,7 @@ The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](h
 | `headerTemplate` | `ITemplateDetails`     | Contains template content including text or image for the header cell. |
 | `image`          | `PdfImage`             | Specifies an image to be rendered in the header cell.     |
 | `style`          | `PdfGanttCellStyle`    | Defines visual styles such as font, background color, and borders. |
-| `value`          | `string \| Object`      | Value to be displayed in the header cell. Can be customized. |
+| `value`          | `string` \| `Object`      | Value to be displayed in the header cell. Can be customized. |
 | `name`           | `string`               | Identifies the event as **pdfColumnHeaderQueryCellInfo**. |
 
 ```ts
@@ -3842,7 +3853,7 @@ The event provides an argument of type [PdfExportCompleteArgs](https://ej2.syncf
 |  **Property** | **Type**           | **Description**                                     |
 |---------------|--------------------|-----------------------------------------------------|
 | `data`        | `object`           | Task and Gantt data for the current row.            |
-| `value`       | `Date \| string \| number \| boolean \| PdfTextWebLink \| PdfImage`  | Value displayed in the cell during PDF export. |
+| `value`       | `Date` \| `string` \| `number` \| `boolean` \| `PdfTextWebLink` \| `PdfImage`  | Value displayed in the cell during PDF export. |
 | `column`      | `Column`           | Column configuration for the current cell.          |
 | `style`       | `PdfGanttCellStyle`| Style settings like font, color, and padding.       |
 | `cell`        | `PdfTreeGridCell`  | PDF cell object being rendered and customized.      |
@@ -4787,10 +4798,11 @@ The [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#res
 
 The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs/) with the following properties:
 
-| **Property** | **Type**    | **Description**                                  |
-|--------------|-------------|--------------------------------------------------|
-| `cancel`     | `boolean`   | Cancels the resize operation when set to **true**.  |
-| `column`     | `Column`    | Provides information about the resized column.   |
+| **Property** | **Type**  | **Description**                                                  |
+|--------------|-----------|------------------------------------------------------------------|
+| `cancel`     | `boolean` | Cancels the resize operation when set to **true**.               |
+| `column`     | `Column`  | Provides information about the resized column.                   |
+
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { Column, GanttModule, ResizeService } from '@syncfusion/ej2-angular-gantt';

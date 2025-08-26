@@ -10,12 +10,17 @@ domainurl: ##DomainURL##
 
 # Summary customization in Angular Pivotview component
 
+The Pivot Table component allows users to easily customize the display of grand totals and sub-totals. This documentation explains how to control their visibility and positioning to suit your data analysis needs.
+
 ## Show or hide grand totals
 
-Allows to show or hide grand totals in rows and columns using the [`showGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals) property. To hide the grand totals in rows and columns, set the property [`showGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals) in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **false**.
-End user can also hide grand totals for row or columns separately by setting the property [`showRowGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowgrandtotals) or [`showColumnGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumngrandtotals) in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **false** respectively.
+The Pivot Table component provides options to display or hide grand totals for rows, columns, or both. These options are configured using the following properties within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) object:
 
-> By default, [`showGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals), [`showRowGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals) and [`showColumnGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals) properties in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) are set as **true**.
+- [`showGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals): Controls the visibility of grand totals for both rows and columns. Set this property to **false** to hide grand totals in both directions.
+- [`showRowGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowgrandtotals): When set to **false**, this property hides only the row grand totals.
+- [`showColumnGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumngrandtotals): When set to **false**, this property hides only the column grand totals.
+
+> By default, all of these properties—[`showGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showgrandtotals), [`showRowGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowgrandtotals), and [`showColumnGrandTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumngrandtotals)—are set to **true** in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,9 +34,11 @@ End user can also hide grand totals for row or columns separately by setting the
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs283" %}
 
-## Show Grand Totals at Top
+## Set grand totals position
 
-Allows to show grand totals either at top or bottom in rows and columns using the [`grandTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#grandtotalsposition) property. To show the grand totals at top in rows and columns, set the [`grandTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#grandtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
+You can specify the position of grand totals for rows and columns in a Pivot Table by configuring the [`grandTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#grandtotalsposition) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) object. You can choose to place the grand totals either at the top or at the bottom of the pivot table, depending on your preference.
+
+To display grand totals at the top of both rows and columns, set the [`grandTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#grandtotalsposition) property to **Top**. To show grand totals at the bottom (which is the default setting), set it to **Bottom**. This property applies to both row and column grand totals simultaneously.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,9 +54,13 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 ## Show or hide sub-totals
 
-Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property. To hide all the sub-totals in rows and columns, set the property [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **false**. End user can also hide sub-totals for rows or columns separately by setting the property [`showRowSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowsubtotals) or [`showColumnSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumnsubtotals) in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/)  to **false** respectively.
+The PivotTable component enables showing or hiding sub-totals for rows, columns, or both. Use the following properties in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) object to configure these options:
 
-> By default, [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals), [`showRowSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowsubtotals) and [`showColumnSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumnsubtotals) properties in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) are set as **true**.
+* [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals): Set to `false` to hide all sub-totals for rows and columns.
+* [`showRowSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowsubtotals): Set to `false` to hide row sub-totals only.
+* [`showColumnSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumnsubtotals): Set to `false` to hide column sub-totals only.
+
+> By default, the [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals), [`showRowSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showrowsubtotals), and [`showColumnSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showcolumnsubtotals) properties in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) object are set to **true**, ensuring sub-totals are visible across the PivotTable.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,9 +76,9 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 ## Show or hide sub-totals for specific fields
 
-Allows to show or hide sub-totals for specific fields in rows and columns using the [`ShowSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property. To hide sub-totals for a specific field in row or column axis, set the property [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) to **false** respectively.
+The Pivot Table component allows users to show or hide sub-totals for specific fields in the row and column axes using the [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property. To hide sub-totals for a specific field in either axis, set the [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property to **false** in the corresponding field configuration within the rows or columns axis.
 
-> By default, [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) is set as **true**.
+> By default, the [`showSubTotals`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#showsubtotals) property for fields in both the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) and [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axes is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,9 +94,9 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 ## Show sub-totals at top or bottom
 
-Allows to show sub-totals either at top or bottom of the header group in rows and columns by using the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property. By default, [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property is set to **Auto**, which means that column sub-totals are displayed at the bottom and row sub-totals are displayed at the top of the header group in the pivot table.
+You can configure the position of sub-totals within header groups for both rows and columns in the Pivot Table using the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) object. By default, the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property is set to **Auto**, which displays column sub-totals at the bottom and row sub-totals at the top of their respective header groups in the pivot table.
 
-To show sub-totals at top of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
+To display sub-totals at the top of header groups for both rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +110,7 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs303" %}
 
-To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subTotalsPosition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
+To display sub-totals at the bottom of header groups for both rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,9 +126,9 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 
 ## Show or hide totals using toolbar
 
-It can also be achieved using built-in toolbar options by setting the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showtoolbar) property in pivot table to **true**. Also, include the items **GrandTotal** and **SubTotal** within the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property in pivot table. End user can now see "Show/Hide Grand totals" and "Show/Hide Sub totals" icons in toolbar UI automatically.
+You can show or hide grand totals and sub-totals in the Pivot Table using the built-in toolbar. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtoolbar) property to **true** in the Pivot Table component. Then, include **GrandTotal** and **SubTotal** in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property. This displays "Show/Hide Grand Totals" and "Show/Hide Subtotals" icons in the toolbar, allowing users to quickly manage grand totals and sub-totals in the table.
 
-The grand totals and sub-totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes by using the built-in options "Grand totals position" and "Subtotals position" available in the grand totals and sub-totals drop down menus, respectively.
+The toolbar also includes options for "Grand Totals Position" and "Subtotals Position." These options allow users to specify whether grand totals and sub-totals appear at the top or bottom of rows and columns. This flexibility helps users position grand totals and sub-totals to best suit their reporting or data analysis needs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
