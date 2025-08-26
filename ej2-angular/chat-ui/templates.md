@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Chat UI component
 
-The Chat UI component provides several templates for customizing the appearance of the empty conversation area, messages, typing indicator, and more. These templates provide flexibility for users to create a unique, personalized chat experience.
+Elevate the user experience by fully customizing the Syncfusion Angular Chat UI component. With templating support for key areas like the conversation window, messages, and typing indicators, you can create a unique and personalized chat interface that aligns perfectly with your application's design.
 
 ## Empty chat template
 
-You can use the [emptyChatTemplate](../api/chat-ui#emptychattemplate) property to customize the chat interface when no messages are displayed. Personalized content, such as welcome messages or images, can be added to create an engaging and inviting experience for users starting a conversation.
+The [emptyChatTemplate](../api/chat-ui/#emptychattemplate) property allows you to define custom content for the chat interface when it is empty. Use this template to display welcome messages, branding, or helpful instructions, creating an engaging starting point for users.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ You can use the [emptyChatTemplate](../api/chat-ui#emptychattemplate) property t
 
 ## Message template
 
-You can use the [messageTemplate](../api/chat-ui#messagetemplate) property to customize the appearance and styling of each chat message. Modify text styling, layout, and other design elements to ensure a personalized chat experience. The template context includes `message` and `index` items.
+Customize the appearance of every chat message with the [messageTemplate](../api/chat-ui/#messagetemplate) property. This template gives you full control over the layout, styling, and design of messages. The template context provides the `message` object and its `index`, allowing you to apply conditional styling or logic based on message content or position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ You can use the [messageTemplate](../api/chat-ui#messagetemplate) property to cu
 
 ## Time Break template
 
-You can use the [timeBreakTemplate](../api/chat-ui#timebreaktemplate) property to customize the template, such as showing "Today," "Yesterday," or specific dates. This enhances conversation organization by clearly separating messages based on time, improving readability for the user. The template context includes `messageDate`.
+Improve conversation organization with the [timeBreakTemplate](../api/chat-ui/#timebreaktemplate) property. This template lets you customize the time-based separators that appear between messages, such as "Today," "Yesterday," or specific dates, enhancing readability. The context includes the `messageDate` for precise formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ You can use the [timeBreakTemplate](../api/chat-ui#timebreaktemplate) property t
 
 ## Typing users template
 
-You can use the [typingUsersTemplate](../api/chat-ui#typinguserstemplate) property to customize the display of users currently typing in the chat. It allows for styling and positioning of the typing indicator, enhancing the user experience. The template context includes `users`.
+Enhance user experience by customizing the typing indicator with the [typingUsersTemplate](../api/chat-ui/#typinguserstemplate) property. You can modify its appearance and positioning to provide clear, real-time feedback. The template's context includes a list of `users`, so you can display who is currently typing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ You can use the [typingUsersTemplate](../api/chat-ui#typinguserstemplate) proper
 
 ## Suggestion template
 
-You can use the [suggestionTemplate](../api/chat-ui#suggestiontemplate) property to customize the quick reply suggestions that appear above the input field. Templates here can help create visually appealing and functional suggestion layouts. The template context includes `suggestion` and `index` items.
+Create visually engaging and functional quick replies using the [suggestionTemplate](../api/chat-ui/#suggestiontemplate) property. This template allows you to customize the layout and styling of suggestion items. The context includes the `suggestion` data and its `index`, enabling you to create dynamic and interactive suggestion buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ You can use the [suggestionTemplate](../api/chat-ui#suggestiontemplate) property
 
 ## Footer template
 
-You can use the [footerTemplate](../api/chat-ui#footertemplate) property to customize the default footer area and manage message send actions with a personalized design. This flexibility allows users to create unique footers that meet their specific needs.
+Take control of the chat input area by defining a custom [footerTemplate](../api/chat-ui/#footertemplate). This allows you to replace the default footer, giving you the flexibility to add custom buttons, integrate additional functionality, and manage message sending actions with a personalized design.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

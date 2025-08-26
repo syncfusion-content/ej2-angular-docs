@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Ribbon component
+# Getting Started with Angular Ribbon Component
 
 This section explains how to create a simple Ribbon, and demonstrate the basic usage of the Ribbon module in an Angular environment.
 
@@ -33,7 +33,7 @@ The list of dependencies required to use the Ribbon module in your application i
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI globally, use the following command.
 
 ```
 npm install -g @angular/cli
@@ -41,7 +41,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below.
 
 ```
 ng new my-app
@@ -56,17 +56,17 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
-### Ivy library distribution package
+### Ivy Library Distribution Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Starting with version `20.2.36`, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are distributed in the Ivy library format to support Angular's modern [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. These packages are compatible with Angular version 12 and higher.
 
-Add [@syncfusion/ej2-angular-ribbon](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package to the application.
+Install the [@syncfusion/ej2-angular-ribbon](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package using the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-ribbon --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular Compatibility Compiled (ngcc) Package
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
@@ -76,17 +76,17 @@ Add [@syncfusion/ej2-angular-ribbon@ngcc](https://www.npmjs.com/package/@syncfus
 npm install @syncfusion/ej2-angular-ribbon@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix to the package version.
 
 ```bash
 @syncfusion/ej2-angular-ribbon:"21.1.35-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> **Note**: If you are using an Angular version below 12 and do not specify the `-ngcc` tag during installation, the Ivy package will be installed by default, which will result in a warning.
 
-## Adding CSS reference
+## Adding CSS Reference
 
-Add Ribbon component's styles as given below in `style.css`.
+Import the required CSS theme files for the Ribbon component and its dependencies into your `styles.css` file.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";

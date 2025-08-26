@@ -12,7 +12,9 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The SpeechToText can be localized to any culture by defining the text in the corresponding culture. The default locale of the SpeechToText is `en-US` (English). The following table represents the default text of the SpeechToText in `en-US` culture.
+The SpeechToText component can be localized for any culture. By default, its locale is `en-US`. To adapt the component to other languages, use the `L10n.load` method to load translation data for a specific locale.
+
+The following table outlines the default text identifiers and their `en-US` values.
 
 |KEY|Text|
 |----|----|
@@ -45,7 +47,7 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the SpeechToText component from right to left by setting the [enableRtl](../api/speech-to-text/#enableRtl) property to true.
+The Right-to-Left (RTL) feature provides support for languages that are read from right to left, such as Arabic, Hebrew, or Persian. Set the [enableRtl](../api/speech-to-text/#enableRtl) property to `true` to reverse the component's layout and text direction, ensuring proper alignment and readability for RTL cultures.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

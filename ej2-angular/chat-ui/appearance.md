@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Setting placeholder
 
-You can use the [placeholder](../api/chat-ui#placeholder) property to display the placeholder text that appears in the message input field to guide users on what to type. The default is `Type your message…`.
+The [placeholder](../api/chat-ui/#placeholder) property sets the hint text displayed in the message input field to guide users. The default value is `Type your message…`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can use the [placeholder](../api/chat-ui#placeholder) property to display th
 
 ## Setting width
 
-You can use the [width](../api/chat-ui#width) property to specify the dimensions of the Chat UI within the application layout. By default, the value is `100%`.
+The [width](../api/chat-ui/#width) property allows you to define the width of the Chat component. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ You can use the [width](../api/chat-ui#width) property to specify the dimensions
 
 ## Setting height
 
-You can use the [height](../api/chat-ui#height) property to specify the dimensions of the Chat UI within the application layout. By default, the value is `100%`.
+The [height](../api/chat-ui/#height) property allows you to define the height of the Chat component. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ You can use the [height](../api/chat-ui#height) property to specify the dimensio
 
 ## Setting CSS Class
 
-You can use the [cssClass](../api/chat-ui#cssclass) property to customize the appearance of the chat UI component.
+The [cssClass](../api/chat-ui/#cssclass) property allows you to apply custom CSS styles to the Chat component for a unique appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

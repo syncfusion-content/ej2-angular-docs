@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Provide custom data source and enabling filtering to drop down list in Angular Treegrid component | Syncfusion
-description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component | Syncfusion
+description: Learn how to provide a custom data source and enable filtering for DropDownList in the Syncfusion Angular TreeGrid component with column edit parameters.
 platform: ej2-angular
 control: Provide custom data source and enabling filtering to drop down list 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Provide custom data source and enabling filtering to drop down list in Angular Treegrid component
+# Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component
 
-You can provide data source to the DropDownList by using the **params** of [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) property.
+A custom data source can be provided to the DropDownList by using the **params** property within [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) settings.
 
-While setting new data source using edit params, you must specify a new **query** property for the DropDownList as follows,
+When specifying a new data source in the edit params, a new **query** property must be defined for the DropDownList as shown below:
 
 ```typescript
   public priorityParams : IEditCell = {
@@ -26,9 +26,9 @@ While setting new data source using edit params, you must specify a new **query*
   };
 ```
 
-You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) as **true** to the edit params.
+Filtering can be enabled for the DropDownList by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) property to **true** in the edit params.
 
-In the below demo, DropDownList is rendered with custom [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
+The following demo demonstrates rendering the DropDownList with a custom [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#datasource) for the *Priority* column, with filtering enabled to allow searching DropDownList items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +39,7 @@ In the below demo, DropDownList is rendered with custom [`dataSource`](https://e
 {% include code-snippet/treegrid/refresh-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs12" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more guidance on feature capabilities, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional examples for organizing and editing data can be found in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).
