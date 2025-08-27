@@ -12,10 +12,10 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div id="chatui" ejs-chatui [user]="currentUserModel ">
+    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" headerText="TeamSync Professionals">
         <e-messages>
             <e-message text="Hi {0}, are we on track for the deadline?" [author]="currentUserModel" [mentionUsers]="[michaleUserModel]"></e-message>
-            <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
+            <e-message text="Yes {0}, the design phase is complete." [author]="michaleUserModel" [mentionUsers]="[currentUserModel]"></e-message>
             <e-message text="I’ll review it and send feedback by today." [author]="currentUserModel"></e-message>
         </e-messages>
     </div>`

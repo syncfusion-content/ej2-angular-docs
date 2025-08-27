@@ -14,9 +14,9 @@ import { Component } from '@angular/core';
     // specifies the template string for the Chat UI component
     template: `<div id="chatui" ejs-chatui [user]="currentUserModel" [mentionUsers] =  "mentionUsers">
         <e-messages>
-            <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel"></e-message>
-            <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
-            <e-message text="I’ll review it and send feedback by today." [author]="currentUserModel"></e-message>
+            <e-message text="Want to get coffee tomorrow?" [author]="currentUserModel"></e-message>
+            <e-message text="Sure! What time?" [author]="michaleUserModel"></e-message>
+            <e-message text="{0} How about 10 AM?" [author]="currentUserModel" [mentionUsers] = "[michaleUserModel]"></e-message>
         </e-messages>
     </div>`
 })
@@ -24,5 +24,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
     public currentUserModel: UserModel = { user: 'Albert', id: 'user1' };
     public michaleUserModel: UserModel = { user: 'Michale Suyama', id: 'user2' };
-    public mentionUsers: UserModel[] = [this.currentUserModel, { user: 'Reena', id: 'custom-user' }];
+    public customUserModel: UserModel = { user: 'Reena', id: 'custom-user' };
+    public mentionUsers: UserModel[] = [this.currentUserModel, this.customUserModel];
 }
