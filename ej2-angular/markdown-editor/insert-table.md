@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Insert Table in Angular Markdown editor component | Syncfusion
-description: Learn here all about Insert Table in Syncfusion Angular Markdown component of Syncfusion Essential JS 2 and more.
+title: Insert Table in Angular Markdown Editor component | Syncfusion
+description: Learn how to insert and customize tables in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Insert Table
+control: Table Insertion in Markdown Editor
 documentation: ug
 domainurl: ##DomainURL##
 ---

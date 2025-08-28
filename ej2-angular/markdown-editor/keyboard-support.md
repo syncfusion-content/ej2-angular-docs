@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Keyboard support in Angular Markdown Editor component | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion Angular Markdown editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Keyboard Support in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Keyboard support
+control: Keyboard Support
 documentation: ug
 domainurl: ##DomainURL##
 ---
