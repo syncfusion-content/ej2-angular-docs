@@ -30,7 +30,7 @@ The following example demonstrates enabling iframe mode:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs5" %}
 
-## Customizing IFrame Attributes
+## Customizing IFrame attributes
 
 Custom attributes can be applied to the iframe's body element using the `attributes` field of the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
@@ -86,7 +86,7 @@ Here's an example of how to integrate Mention with Iframe editor,
   
 {% previewsample "page.domainurl/samples/rich-text-editor/mention-iframe" %}
 
-## See Also
+## See also
 
 * [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-editing)
 * [Using the Markdown Editor](https://ej2.syncfusion.com/angular/documentation/markdown-editor/getting-started)

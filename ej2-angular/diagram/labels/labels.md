@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in Angular Diagram component
+# Labels in Angular Diagram Component
 
-[`Annotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/) is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node/connector.
+[`Annotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/) is a block of text that can be displayed over a node or connector. Annotations are used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node or connector.
 
 <!-- markdownlint-disable MD033 -->
 
-## Create annotation
+## Create annotations
 
-An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#content) property of annotation defines the text to be displayed. The following code illustrates how to create a annotation.
+An annotation can be added to a node or connector by defining the annotation object and adding it to the annotations collection of the node or connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#content) property of the annotation defines the text to be displayed. The following code illustrates how to create an annotation.
 
-To create and add annotation to Nodes and Connectors using the Angular Diagram, refer to the below video link.
+To create and add annotations to Nodes and Connectors using the Angular Diagram, refer to the below video link.
 
 {% youtube "youtube:https://www.youtube.com/watch?v=1J8dtTxXnVo" %}
 
@@ -34,13 +34,13 @@ To create and add annotation to Nodes and Connectors using the Angular Diagram, 
   
 {% previewsample "page.domainurl/samples/diagram/labels/annotation-cs1" %}
 
-N> When setting a Annotation's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+N> When setting an annotation's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
 
 ## Add annotations at runtime
 
-Annotations can be added at runtime by using the client-side method [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlabels). The following code illustrates how to add a annotation to a node.
+Annotations can be added at runtime by using the client-side method [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlabels). The following code illustrates how to add an annotation to a node.
 
-The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#id) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
+The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#id) property is used to define the name of the annotation and is further used to find the annotation at runtime and perform any customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,25 +54,9 @@ The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/dia
   
 {% previewsample "page.domainurl/samples/diagram/labels/run-cs1" %}
 
-## Remove annotation
+## Update annotations at runtime
 
-A collection of annotations can be removed from the node by using diagram method [`removeLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removelabels). The following code illustrates how to remove a annotation to a node.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/labels/remove-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/labels/remove-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/labels/remove-cs1" %}
-
-## Update annotation at runtime
-
-You can get the annotation directly from the node’s annotations collection property and you can change any annotation properties at runtime. To reflect the changes immediately, we need to call `dataBind`.
+Annotations can be updated directly by accessing the annotation from the node's annotations collection property and modifying any annotation properties at runtime. To reflect the changes immediately, call the `dataBind` method.
 
 The following code example illustrates how to change the annotation properties.
 
@@ -87,3 +71,19 @@ The following code example illustrates how to change the annotation properties.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/labels/update-cs1" %}
+
+## Remove annotations
+
+A collection of annotations can be removed from the node by using the diagram method [`removeLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removelabels). The following code illustrates how to remove an annotation from a node.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/labels/remove-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/labels/remove-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/labels/remove-cs1" %}

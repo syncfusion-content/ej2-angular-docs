@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Swim lane in Angular Diagram component
+# Swim lane in Angular Diagram Component
 
-A swimlane is a type of diagram node commonly used to visualize the relationship between a business process and the department responsible for it. It focuses on illustrating the logical connections between activities, making it simpler to grasp the dynamics of the process and the corresponding departmental responsibilities.
+Swimlanes are specialized diagram nodes that visualize business processes by organizing activities into distinct lanes or sections. Each lane typically represents a department, role, or responsibility area, making it easy to understand who is responsible for each step in a process. Swimlanes are particularly useful for workflow documentation, process mapping, and cross-functional process analysis.
 
 ![Swimlane](../images/swimlane-image.png)
 
 ## Create a swimlane
 
-To create a swimlane, the type of shape should be set as [`swimlane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel).By default swimlanes are arranged horizontally.
+To create a swimlane, set the node's shape type to [`swimlane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel/). Swimlanes are arranged horizontally by default and require proper configuration of headers and lanes to function correctly.
 
-The following code example illustrates how to define a swimlane object.
+The following code example demonstrates how to define a basic swimlane object:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,15 +32,36 @@ The following code example illustrates how to define a swimlane object.
   
 {% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs1" %}
 
-N> When setting a Swimlane's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+N> When setting a swimlane's ID, ensure it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+
+
+## Orientation
+
+Swimlanes support two orientation modes to accommodate different layout requirements and design preferences.
+
+### Horizontal orientation (default)
+Lanes are arranged from top to bottom, with the header positioned on the left side. This orientation works well for processes that flow from left to right.
+
+### Vertical orientation
+Lanes are arranged from left to right, with the header positioned at the top. This orientation suits processes that flow from top to bottom.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/swimlane/orientation-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/swimlane/orientation-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/swimlane/orientation-cs1" %}
 
 ## Headers
 
-Header was the primary element for swimlanes. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel) property of swimlane allows you to define its textual description and to customize its appearance.
+The header serves as the primary identifying element of a swimlane, providing a title or description for the entire swimlane container. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/) property allows customization of both content and appearance. Headers also serve as the primary interaction point for swimlane operations such as selection and dragging.
 
->Note: By using this header, the swimlane interaction will be performed, like selection, dragging,etc.
-
-The following code example illustrates how to define a swimlane header.
+The following code example shows how to define and configure a swimlane header:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,13 +75,11 @@ The following code example illustrates how to define a swimlane header.
   
 {% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs2" %}
 
-### Customization of headers
+### Header customization
 
-The height and width of the swimlane header can be customized with [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#height) properties of swimlane header. set fill color of header by using the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#style) property. The orientation of swimlane can be customized with the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel/#orientation) property of the header.
+Swimlane headers can be extensively customized to match design requirements and improve visual clarity. The dimensions can be controlled using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#width/) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#height/) properties. Visual styling, including background color and text formatting, can be applied through the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#style/) property. The swimlane's orientation can be controlled using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel/#orientation/) property.
 
->Note: By default, the swimlane orientation is Horizontal.
-
-The following code example illustrates how to customize the swimlane header.
+The following code example demonstrates comprehensive header customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,11 +93,11 @@ The following code example illustrates how to customize the swimlane header.
   
 {% previewsample "page.domainurl/samples/diagram/swimlane/headercustomise-cs1" %}
 
-#### Dynamic customization of swimlane header
+### Dynamic header customization
 
-You can customize the swimlane header style and text properties dynamically. The following code illustrates how to dynamically customize the swimlane header.
+Headers can be modified programmatically during runtime to respond to user interactions or changing business requirements. This capability enables dynamic updating of swimlane titles, styling, and other properties based on application state or user input.
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/dynamicheader-cs1/src/app.component.ts %}
 {% endhighlight %}
@@ -92,23 +111,10 @@ You can customize the swimlane header style and text properties dynamically. The
 
 ### Header editing
 
-Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the swimlane header. ![Header Editing](../images/swimlane-header-edit.gif)
+The diagram supports in-place editing of swimlane headers through user interaction. Double-clicking a header label activates edit mode, allowing users to modify the header text directly within the diagram. This feature enhances user experience by providing immediate editing capabilities without requiring separate dialog boxes or forms.
 
-## Orientation
+![Header Editing](../images/swimlane-header-edit.gif)
 
-Swimlanes can be oriented in two ways: horizontally or vertically. This flexibility allows for versatile visualization of business processes and departmental relationships.
-
- {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/swimlane/orientation-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/swimlane/orientation-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/swimlane/orientation-cs1" %}
 
 ## Limitations
 

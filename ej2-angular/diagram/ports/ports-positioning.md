@@ -1,38 +1,42 @@
 ---
 layout: post
-title: Ports positioning in Angular Diagram component | Syncfusion®
-description: Learn here all about Ports in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Port positioning in Angular Diagram component | Syncfusion®
+description: Learn how to position ports on nodes in Syncfusion® Angular Diagram component using offset, alignment, and margin properties with practical examples.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positioning node's port
+# Port positioning in Angular Diagram Component
 
-Diagram allows you to customize the position of the port efficiently. Port can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings.
+The Angular Diagram component provides flexible options for positioning ports on nodes. Ports can be precisely positioned using offset coordinates, alignment properties, and margin values to create professional diagram layouts that meet specific design requirements.
 
-## Port offset
+## Understanding port offset positioning
 
-The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointPortModel/#offset)  property is used to align the ports based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointPortModel/#offset) property positions ports using fractional coordinates relative to the node boundaries. The coordinate system uses values from 0 to 1, where:
 
-The following table shows the position of port within the shape.
+- **0** represents the top edge (for Y-axis) or left edge (for X-axis)
+- **1** represents the bottom edge (for Y-axis) or right edge (for X-axis)  
+- **0.5** represents the center point of the width or height
 
-| Offset values | Output |
-| -------- | -------- |
-| (0,0) | ![Port offset (0,0)](../images/port0-0.png) |
-| (0,0.5) | ![Port offset (0,0.5)](../images/port0-0.5.png) |
-| (0,1) | ![Port offset (0,1)](../images/port0-1.png) |
-| (0.5,0) | ![Port offset (0.5,0)](../images/port0.5-0.png) |
-| (0.5,0.5) |![Port offset (0.5,0.5)](../images/port0.5-0.5.png) |
-| (0.5,1) | ![Port offset (0.5,1)](../images/port0.5-1.png) |
-| (1,0) | ![Port offset (1,0)](../images/port1-0.png) |
-| (1,0.5) | ![Port offset (1,0.5)](../images/port1-0.5.png) |
-| (1,1) | ![Port offset (1,1)](../images/port1-1.png) |
+The following table demonstrates port positioning with different offset values:
 
-## Horizontal and vertical alignment
+| Offset values | Port position | Visual result |
+| -------- | -------- | -------- |
+| (0,0) | Top-left corner | ![Port positioned at top-left corner](../images/port0-0.png) |
+| (0,0.5) | Left edge, center vertically | ![Port positioned at left center](../images/port0-0.5.png) |
+| (0,1) | Bottom-left corner | ![Port positioned at bottom-left corner](../images/port0-1.png) |
+| (0.5,0) | Top edge, center horizontally | ![Port positioned at top center](../images/port0.5-0.png) |
+| (0.5,0.5) | Center of the node | ![Port positioned at center](../images/port0.5-0.5.png) |
+| (0.5,1) | Bottom edge, center horizontally | ![Port positioned at bottom center](../images/port0.5-1.png) |
+| (1,0) | Top-right corner | ![Port positioned at top-right corner](../images/port1-0.png) |
+| (1,0.5) | Right edge, center vertically | ![Port positioned at right center](../images/port1-0.5.png) |
+| (1,1) | Bottom-right corner | ![Port positioned at bottom-right corner](../images/port1-1.png) |
 
-The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/horizontalAlignment/) property of the port is used to set how the port is horizontally aligned at the port position. The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/verticalAlignment/) property is used to set how the port is vertically aligned at the port position.
+## Horizontal and vertical alignment options
+
+The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/horizontalAlignment/) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/verticalAlignment/) properties provide fine-grained control over port positioning at the specified offset coordinates. These properties determine how the port aligns relative to its calculated position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,23 +50,23 @@ The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api
   
 {% previewsample "page.domainurl/samples/diagram/ports/portspos-cs1" %}
 
-The following table shows all the possible alignments visually with offset (0, 0).
+The following table shows all possible alignment combinations when using offset (0, 0):
 
-| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
-| -------- | -------- | -------- |
-| Left | Top | ![Left Top Position](../images/port-in-lefttop-position.png) |
-| Center | Top | ![Center Top Position](../images/port-in-centertop-position.png) |
-| Right | Top |  ![Right Top Position](../images/port-in-righttop-position.png) |
-| Left | Center | ![Left Center Position](../images/port-in-leftcenter-position.png) |
-| Center | Center| ![Center Center Position](../images/port-in-centercenter-position.png) |
-| Right | Center | ![Right Center Position](../images/port-in-rightcenter-position.png) |
-| Left | Bottom | ![Left Bottom Position](../images/port-in-leftbottom-position.png) |
-| Center | Bottom | ![Center Bottom Position](../images/port-in-centerbottom-position.png) |
-| Right |Bottom |![Right Bottom Position](../images/port-in-rightbottom-position.png) |
+| Horizontal alignment | Vertical alignment | Resulting position | Visual example |
+| -------- | -------- | -------- | -------- |
+| Left | Top | Port extends right and down from corner | ![Left Top aligned port](../images/port-in-lefttop-position.png) |
+| Center | Top | Port centers horizontally, extends down | ![Center Top aligned port](../images/port-in-centertop-position.png) |
+| Right | Top | Port extends left and down from corner | ![Right Top aligned port](../images/port-in-righttop-position.png) |
+| Left | Center | Port extends right, centers vertically | ![Left Center aligned port](../images/port-in-leftcenter-position.png) |
+| Center | Center | Port centers both horizontally and vertically | ![Center Center aligned port](../images/port-in-centercenter-position.png) |
+| Right | Center | Port extends left, centers vertically | ![Right Center aligned port](../images/port-in-rightcenter-position.png) |
+| Left | Bottom | Port extends right and up from corner | ![Left Bottom aligned port](../images/port-in-leftbottom-position.png) |
+| Center | Bottom | Port centers horizontally, extends up | ![Center Bottom aligned port](../images/port-in-centerbottom-position.png) |
+| Right | Bottom | Port extends left and up from corner | ![Right Bottom aligned port](../images/port-in-rightbottom-position.png) |
 
-## Margin for port
+## Adding margin spacing to ports
 
-[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) is an absolute value used to add some blank space to any one of its four sides. The ports can be displaced with the margin property. The following code example explains how to align a port based on its offset and margin values.
+The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property applies additional spacing around ports using absolute pixel values. Margin creates blank space on any or all four sides of the port, allowing for precise positioning adjustments beyond the basic offset and alignment settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,9 +82,6 @@ The following table shows all the possible alignments visually with offset (0, 0
 
 ## See also
 
-* [How to interact with the ports](./ports-interaction)
-
-* [How to customize the ports](./ports-appearance)
-
-* [How to create connector port](./ports-connector-port)
-
+* [Port interaction capabilities](./ports-interaction)
+* [Customizing port appearance](./ports-appearance)
+* [Creating connector ports](./ports-connector-port)

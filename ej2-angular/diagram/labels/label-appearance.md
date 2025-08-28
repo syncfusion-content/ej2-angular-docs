@@ -8,16 +8,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Appearance
+# Customizing Label Appearance in Angular Diagram Component
 
-You can change the font style of the annotations with the font specific properties [`fontSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontsize), [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontfamily), [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#color).
-The label’s [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#bold), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#italic), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textdecoration) properties are used to style the label’s text.
+## Overview
 
-The label’s [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fill), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokecolor), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokewidth) properties are used to define the background color and border color of the annotation and the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#opacity) property is used to define the transparency of the annotations.
+The Angular Diagram component provides comprehensive styling options to customize label appearance. Labels can be enhanced with various font properties, colors, decorations, and visual effects to match application requirements.
 
-The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#visibility) property of the annotation enables or disables the visibility of annotation.
+Font styling properties such as [`fontSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontsize), [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontfamily), and [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#color) control the basic text appearance. Additional text formatting is available through [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#bold), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#italic), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textdecoration) properties.
 
-The following code illustrates how to customize the appearance of the annotation.
+Background and border styling can be applied using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fill), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokecolor), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokewidth) properties. The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#opacity) property controls label transparency.
+
+Control label visibility using the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#visibility) property, which enables or disables label display.
+
+The following code demonstrates comprehensive label appearance customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,7 +36,7 @@ The following code illustrates how to customize the appearance of the annotation
 
 ## Horizontal and vertical alignment
 
-The following tables illustrates all the possible alignments visually with 'offset (0, 0)'.
+Label positioning within nodes and connectors can be precisely controlled through horizontal and vertical alignment properties. The following table illustrates all possible alignment combinations with offset (0, 0):
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 | -------- | -------- | -------- |
@@ -47,7 +50,7 @@ The following tables illustrates all the possible alignments visually with 'offs
 | Center | Bottom | ![Center Bottom Label Alignment](../images/Label8.png) |
 | Right |Bottom |![Right Bottom Label Alignment](../images/Label9.png) |
 
-The following codes illustrates how to align annotations.
+The following code example shows how to configure label alignment:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,9 +64,11 @@ The following codes illustrates how to align annotations.
   
 {% previewsample "page.domainurl/samples/diagram/labels/offset-cs2" %}
 
-## Annotation Margin
+## Label Margin
 
-[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin) values.
+The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property adds spacing around labels by specifying absolute values for any or all four sides. This property works in conjunction with offset, horizontal alignment, and vertical alignment to achieve precise label positioning.
+
+The following example demonstrates label positioning using [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin) combined with alignment properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,12 +84,13 @@ The following codes illustrates how to align annotations.
 
 ## Hyperlink
 
-Diagram provides a support to add a [`hyperlink`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#hyperlink) for the nodes/connectors annotation. It can also be customized  with the below properties.
+Labels can include interactive [`hyperlinks`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#hyperlink) for both nodes and connectors. Hyperlink behavior and appearance can be customized with several properties.
 
-A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#hyperlinkopenstate)  property
+The [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#hyperlinkopenstate) property controls how the hyperlink opens - in a new window, the same tab, or a new tab.
 
-The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#content) property of `hyperlink` is used to display the content of the hyper link display text. The [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#color) property of the `hyperlink` is used to display the color of the hyper link.
-The [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#textdecoration) property is used to decorate the hyper link text with **Underline**, **LineThrough**, **Overline**. The following example illustrates how to define and customize hyper link in both node and connector.
+Hyperlink appearance is controlled through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#content) property for display text, [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#color) for text color, and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#textdecoration) for styling effects like Underline, LineThrough, or Overline.
+
+The following example shows hyperlink implementation and customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,9 +104,11 @@ The [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diag
   
 {% previewsample "page.domainurl/samples/diagram/labels/hyperlink-cs1" %}
 
-## Rotate Annotation
+## Rotate Label
 
-Annotation can be rotated by setting the [`rotateAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeAnnotationModel/#rotateangle) property of the annotation. The following example shows how to rotate annotation text.
+Labels can be rotated to any angle using the [`rotateAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeAnnotationModel/#rotateangle) property. This feature is useful for creating dynamic label orientations that match specific design requirements.
+
+The following example demonstrates label rotation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,15 +122,15 @@ Annotation can be rotated by setting the [`rotateAngle`](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/diagram/labels/rotateAngle-cs1" %}
 
-## Template support for annotation
+## Template support for labels
 
-Diagram provides template support for annotation. You can either define a string template and assign it to [`template`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#template) property of annotation or define a annotation template in html file and assign it to the [`annotationTemplate`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#annotationtemplate) property of the diagram.
+The Diagram component provides flexible template support for creating custom label layouts. Templates can be defined as either string templates or HTML-based templates, enabling rich content presentation beyond simple text.
 
 ### String template
 
-For string template you should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#template) property.
+String templates allow defining SVG or HTML content directly within the label's [`template`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#template) property. This approach is suitable for inline content definition.
 
-The following code illustrates how to define a template in annotation.
+The following code shows string template implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,13 +144,13 @@ The following code illustrates how to define a template in annotation.
   
 {% previewsample "page.domainurl/samples/diagram/labels/labeltemplate-cs1" %}
 
-N> For the proper alignment of template, we need to mention width and height for the annotation while using template.
+N> Specify width and height for labels when using templates to ensure proper alignment and rendering.
 
-### Annotation template
+### Label template
 
-For annotation template you should define a template in html file which you want to render in annotation and assign it to the [`annotationTemplate`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#annotationtemplate) property of diagram. This template can be applied to both nodes and connectors within the diagram.
+HTML-based templates provide more complex content structures by defining templates in separate HTML files. Assign the template to the [`annotationTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#annotationtemplate) property of the diagram. This template system works with both nodes and connectors.
 
-The following code illustrates how to define a annotationTemplate in annotation for nodes and connectors.
+The following code demonstrates HTML template usage for labels:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,7 +166,9 @@ The following code illustrates how to define a annotationTemplate in annotation 
 
 ## Text align
 
-The [`textAlign`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textalign) property of annotation allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for an annotation.
+The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textalign) property controls text alignment within the label boundaries. Available alignment options include left, right, center, and justify, providing flexibility for various content layouts.
+
+The following code demonstrates text alignment configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -172,18 +182,20 @@ The [`textAlign`](https://helpej2.syncfusion.com/angular/documentation/api/diagr
   
 {% previewsample "page.domainurl/samples/diagram/labels/textalign-cs1" %}
 
-The following table shows the different text alignment.
+The following table shows different text alignment options:
 
-|Text Align|Output image|
+| Text Align | Output image |
 |-----|-----|
-|Right|![Text align right](../images/textAlign-right.png)|
-|Left|![Text align left](../images/textAlign-left.png)|
-|Center|![Text align center](../images/textAlign-center.png)|
-|Justify|![Text align justify](../images/textAlign-Justify.png)|
+| Right | ![Text align right](../images/textAlign-right.png) |
+| Left | ![Text align left](../images/textAlign-left.png) |
+| Center | ![Text align center](../images/textAlign-center.png) |
+| Justify | ![Text align justify](../images/textAlign-Justify.png) |
 
 ## Text Wrapping
 
-When text overflows node boundaries, you can control it by using [`text wrapping`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textwrapping). So, it is wrapped into multiple lines. The wrapping property of annotation defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
+When label text exceeds node or connector boundaries, the [`text wrapping`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textwrapping) property controls how content is handled. Text can be wrapped into multiple lines based on the specified wrapping behavior.
+
+The following code shows text wrapping implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,25 +211,25 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 
 | Value | Description | Image |
 | -------- | -------- | -------- |
-| No Wrap | Text will not be wrapped. | ![Label No Wrap](../images/Wrap1.png) |
-| Wrap | Text-wrapping occurs, when the text overflows beyond the available node width. | ![Label Wrap](../images/Wrap2.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs, when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Label WrapWith Overflow](../images/Wrap3.png) |
+| No Wrap | Text will not be wrapped and may extend beyond boundaries. | ![Label No Wrap](../images/Wrap1.png) |
+| Wrap | Text wrapping occurs when content overflows beyond available width. | ![Label Wrap](../images/Wrap2.png) |
+| WrapWithOverflow (Default) | Text wrapping occurs with overflow allowed for very long words that cannot be broken. | ![Label WrapWith Overflow](../images/Wrap3.png) |
 
 ## Text overflow
 
-The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textoverflow) property is used control whether to display the overflowed content in node or not.
+The [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textoverflow) property manages content display when text exceeds the available label space. This property works in conjunction with text wrapping to provide comprehensive text handling.
 
-- `Clip` - The text which overflowing node's bounds will be removed.
-- `Ellipsis` - The text which overflowing nodes's bounds will be replaced by three dots.
-- `Wrap` - Entire text will be rendered overflowing in y-axis and wrapped in x-axis.
+Available overflow options include:
 
-Types of text overflow are shown in below table.
+- `Clip` - Overflowing content beyond node boundaries is removed
+- `Ellipsis` - Overflowing content is replaced with three dots (...)
+- `Wrap` - Content renders with vertical overflow and horizontal wrapping
 
-|TextOverflow|output image|
+| TextOverflow | Output image |
 |-----|-----|
-|Clip|![Text Overflow Clip](../images/text-overflow-clip.png)|
-|Ellipsis|![Text Overflow Ellipsis](../images/text-overflow-ellipsis.png)|
-|Wrap(Default)|![Text Overflow Wrap](../images/text-overflow-wrap.png)|
+| Clip | ![Text Overflow Clip](../images/text-overflow-clip.png) |
+| Ellipsis | ![Text Overflow Ellipsis](../images/text-overflow-ellipsis.png) |
+| Wrap (Default) | ![Text Overflow Wrap](../images/text-overflow-wrap.png) |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

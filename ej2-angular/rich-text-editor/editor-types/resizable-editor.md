@@ -59,7 +59,7 @@ For example, add the following to the `app.component.css` file:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/rename-image-cs1" %}
 
-## See Also
+## See also
 
 * [Working with IFrame Editing Mode](./iframe)
 * [Using the Markdown Editor](../../markdown-editor/getting-started)
