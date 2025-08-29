@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 **Layers** provide a powerful organizational system for managing diagram elements by grouping related shapes into named categories. This functionality enables developers to build complex diagrams with selective viewing, interaction control, and bulk property management across multiple elements simultaneously.
 
-## Core layer properties
+## Core Layer Properties
 
 In a diagram, [Layers](https://ej2.syncfusion.com/angular/documentation/api/diagram/layerModel/) enable modification of properties for all shapes assigned to a specific layer. The primary configurable properties include:
 
@@ -135,7 +135,7 @@ export class AppComponent {
 }
 ```
 
-## Add layer at runtime
+## Add Layer at Runtime
 
 Layers can be added at runtime by using the [`addLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlayer) public method.
 
@@ -155,7 +155,7 @@ The following code illustrates how to add a layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs4" %}
 
-## Remove layer at runtime
+## Remove Layer at Runtime
 
 Layers can be removed at runtime by using the [`removeLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removelayer) public method.
 
@@ -175,7 +175,7 @@ The following code illustrates how to remove a layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs5" %}
 
-## moveObjects
+## MoveObjects
 
 You can move objects from one layer to another dynamically using the [`moveObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#moveobjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions.
 
@@ -193,7 +193,7 @@ The following code illustrates how to move objects from one layer to another lay
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs6" %}
 
-## Z-Index and layer ordering
+## Z-Index and Layer Ordering
 
 The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#zindex) property of a layer defines its position in the stacking order within the diagram. Higher z-index values render above lower values, allowing control over which layers appear in front of others.
 
@@ -206,14 +206,13 @@ Move a layer forward in the stacking order using the [`bringLayerForward`](https
 this.diagram.bringLayerForward('layer1');
 ```
 
-### Send layer backward
+### Send Layer Backward
 
 Move a layer backward in the stacking order using the [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sendlayerbackward) public method:
 
 ```typescript
 // Move the specified layer backward in the stacking order
 this.diagram.sendLayerBackward('layer1');
-```
 ```
 The following code illustrates how to send the layer forward/backward to another layer.
 
@@ -235,7 +234,7 @@ The rendering of diagram elements with layer properties involves grouping them w
 
 The order of rendering is as follows: HTML shapes -> SVG shapes -> Path data shapes & Basic shapes.
 
-## Clone layer
+## Clone Layer
 
 Layers can be cloned along with their objects using the [`cloneLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clonelayer) public method. This creates an identical copy of the layer and all its assigned elements.
 
@@ -255,7 +254,7 @@ The following code illustrates how to clone a layer:
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs8" %}
 
-## Active layer
+## Active Layer
 
 The active layer represents the layer with the highest z-index in a diagram. When objects are added at runtime, they are automatically assigned to the active layer. If no layers are explicitly defined, a default layer is created and set as the active layer. When multiple layers exist, the layer with the highest z-index becomes the active layer.
 
