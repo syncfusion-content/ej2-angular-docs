@@ -1,24 +1,47 @@
 ---
 layout: post
-title: UmlSequenceDiagram in Angular Diagram component | Syncfusion®
-description: Learn here all about UmlSequenceDiagram in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: UML Sequence Diagram in Angular Diagram component | Syncfusion®
+description: Learn how to create and customize UML sequence diagrams in Syncfusion® Angular Diagram component with participants, messages, activation boxes, and fragments.
 platform: ej2-angular
 control: UmlSequenceDiagram 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UML Sequence Diagram in Angular Diagram component
+# UML Sequence Diagram in Angular Diagram Component
 
-A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel). To enable this functionality, assign the `UmlSequenceDiagramModel` to the [model](https://ej2.syncfusion.com/angular/documentation/api/diagram/#model) property of the diagram control.
+A UML sequence diagram is a type of interaction diagram that visualizes how objects communicate with each other over time. These diagrams show the sequence of messages exchanged between participants, making them essential for understanding system interactions, API workflows, and process flows.
+
+The Syncfusion® Angular Diagram component provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/). This specialized model enables the creation of sequence diagrams with proper UML notation and automated layout capabilities.
+
+## Prerequisites
+
+Before creating UML sequence diagrams, ensure that:
+- Angular development environment is set up
+- Syncfusion Angular Diagram package is installed and imported
+- Basic familiarity with UML sequence diagram concepts
+
+## Key Concepts
+
+### Lifelines
+Lifelines are vertical dashed lines that represent the existence of a participant over time. Each participant has a corresponding lifeline that extends downward from the participant box.
+
+### Sequence Flow
+Messages flow horizontally between lifelines in chronological order from top to bottom, representing the temporal sequence of interactions.
 
 ## UML Sequence Diagram Elements
 
-A sequence diagram includes several key elements such as participants, messages, activation boxes, and fragments. The sections below demonstrate how to define and configure these components using the diagram control.
+A sequence diagram comprises several essential elements that work together to represent system interactions. The following sections demonstrate how to define and configure these components.
 
 ### Participants
 
-[UmlSequenceParticipantModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceParticipantModel/) in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+[UmlSequenceParticipantModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceParticipantModel/) represents the entities that participate in the interaction sequence. Participants appear as rectangular boxes at the top of the diagram, with lifelines extending vertically downward to show their existence throughout the interaction timeline.
+
+#### Participant Types
+
+Participants can be displayed in two forms:
+- **Actors**: Human users or external systems (displayed with stick figure notation)
+- **Objects**: System components, classes, or services (displayed as rectangular boxes)
 
 #### UmlSequenceParticipantModel Properties
 
@@ -30,7 +53,9 @@ A sequence diagram includes several key elements such as participants, messages,
 | showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
 | activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
 
-The following code example illustrates how to create participants.
+#### Creating Participants
+
+The following code example demonstrates how to create different types of participants:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,26 +63,28 @@ The following code example illustrates how to create participants.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-1/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-1" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-1" %}
 
 ### Messages
 
-[UmlSequenceMessageModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceMessageModel/) represents communication between participants and are displayed as arrows connecting lifelines.
+[UmlSequenceMessageModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceMessageModel/) represents communication between participants. Messages are displayed as arrows connecting lifelines and indicate the flow of information or requests between system components.
 
-#### Types of Messages
+#### Message Types and Usage
 
-| Message Type | Description | Example |
-|---|---|---|
-| Synchronous | The sender waits for a response | ![Synchronous Message](./images/umlSequenceDiagram-images/Synchronous.png) |
-| Asynchronous | The sender continues without waiting | ![Asynchronous Message](./images/umlSequenceDiagram-images/Asynchronous.png) |
-| Reply | A response to a previous message | ![Reply Message](./images/umlSequenceDiagram-images/Reply.png) |
-| Create | Creates a new participant | ![Create Message](./images/umlSequenceDiagram-images/Create.png) |
-| Delete | Terminates a participant | ![Delete Message](./images/umlSequenceDiagram-images/Delete.png) |
-| Self | A message from a participant to itself | ![Self Message](./images/umlSequenceDiagram-images/Self.png) |
+Different message types serve specific purposes in sequence diagrams:
+
+| Message Type | Description | When to Use | Example |
+|---|---|---|---|
+| Synchronous | The sender waits for a response before continuing | Method calls, API requests requiring immediate response | ![Synchronous Message](./images/umlSequenceDiagram-images/Synchronous.png) |
+| Asynchronous | The sender continues without waiting for a response | Event notifications, fire-and-forget operations | ![Asynchronous Message](./images/umlSequenceDiagram-images/Asynchronous.png) |
+| Reply | A response message to a previous synchronous call | Return values, acknowledgments | ![Reply Message](./images/umlSequenceDiagram-images/Reply.png) |
+| Create | Creates a new participant instance during execution | Object instantiation, service initialization | ![Create Message](./images/umlSequenceDiagram-images/Create.png) |
+| Delete | Terminates a participant and ends its lifeline | Object destruction, service shutdown | ![Delete Message](./images/umlSequenceDiagram-images/Delete.png) |
+| Self | A message from a participant to itself | Internal processing, recursive calls | ![Self Message](./images/umlSequenceDiagram-images/Self.png) |
 
 #### UmlSequenceMessageModel Properties
 
@@ -69,7 +96,9 @@ The following code example illustrates how to create participants.
 | toParticipantID | string \| number | ID of the participant receiving the message |
 | type | UmlSequenceMessageType | Type of the message (Synchronous, Asynchronous, Reply, Create, Delete, Self) |
 
-The following code example illustrates how to create messages:
+#### Creating Messages
+
+The following example shows how to create different types of messages between participants:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,15 +106,15 @@ The following code example illustrates how to create messages:
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-2/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-2" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-2" %}
 
 ### Activation Boxes
 
-[UmlSequenceActivationBoxModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceActivationBoxModel) represents periods when a participant is active and processing a message. They appear as thin rectangles on participant lifelines.
+[UmlSequenceActivationBoxModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceActivationBoxModel/) represents periods when a participant is actively processing or executing operations. Activation boxes appear as thin rectangles overlaid on participant lifelines, indicating the duration of active processing between specific messages.
 
 #### UmlSequenceActivationBoxModel Properties
 
@@ -95,7 +124,9 @@ The following code example illustrates how to create messages:
 | startMessageID | string \| number | ID of the message that initiates the activation |
 | endMessageID | string \| number | ID of the message that terminates the activation |
 
-The following code example illustrates how to create activation boxes.
+#### Creating Activation Boxes
+
+The following example demonstrates how to create activation boxes that span specific message sequences:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,25 +134,34 @@ The following code example illustrates how to create activation boxes.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-3/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-3" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-3" %}
 
 ### Fragments
 
-[UmlSequenceFragmentModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentModel) groups a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
+[UmlSequenceFragmentModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentModel/) represents logical groupings of messages based on specific conditions or control structures. Fragments appear as rectangular enclosures that visually organize conditional logic, loops, and alternative execution paths within sequence diagrams.
 
-#### Types of Fragments
+#### Fragment Applications
 
-The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentType) enum defines the following fragment types:
+Fragments are essential for modeling:
+- Conditional logic (if-then-else statements)
+- Iterative processes (loops and repetitions)
+- Optional operations that may or may not execute
+- Error handling and exception flows
+- Parallel processing scenarios
 
-| Fragment Type  | Description  | Example  |  
-|---------------|-------------|--------|  
-| Optional  | Represents a sequence that is executed only if a specified condition is met; otherwise, it is skipped. | ![Optional Fragment](./images/umlSequenceDiagram-images/OptFragment.png) |  
-| Alternative | Represents multiple conditional paths (if-else structure), where only one path executes based on the condition. | ![Alternative Fragment](./images/umlSequenceDiagram-images/AltFragment.png) |  
-| Loop | Represents a repeating sequence of interactions that continues based on a loop condition. | ![Loop Fragment](./images/umlSequenceDiagram-images/LoopFragment.png) |  
+#### Fragment Types
+
+The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentType/) enum defines the following fragment types:
+
+| Fragment Type  | Description  | Use Cases | Example  |  
+|---------------|-------------|-----------|--------|  
+| Optional  | Executes enclosed messages only if a specified condition is met | Feature toggles, optional validations, conditional processing | ![Optional Fragment](./images/umlSequenceDiagram-images/OptFragment.png) |  
+| Alternative | Provides multiple conditional paths where only one executes based on the condition | Decision trees, error handling, branching logic | ![Alternative Fragment](./images/umlSequenceDiagram-images/AltFragment.png) |  
+| Loop | Repeats the enclosed message sequence based on a loop condition | Data processing iterations, retry mechanisms, batch operations | ![Loop Fragment](./images/umlSequenceDiagram-images/LoopFragment.png) |  
 
 #### UmlSequenceFragmentModel Properties
 
@@ -139,7 +179,9 @@ The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/a
 | messageIds | (string \| number)[] | Collection of message IDs included in this condition section |
 | fragmentIds | string[] | Collection of nested fragments ids (for complex structures) |
 
-The following code example illustrates how to create fragments.
+#### Creating Fragments
+
+The following example illustrates how to create fragments with different condition types:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,20 +189,22 @@ The following code example illustrates how to create fragments.
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlsequencediagram-4/src/main.ts %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlsequencediagram-4" %}
+{% previewsample "page.domainurl/samples/diagram/umlsequencediagram/umlsequencediagram-4" %}
 
-### Customizing Participant Spacing in Sequence Diagram 
+## Customization Options
 
-The [spaceBetweenParticipants](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/#spaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.
+### Adjusting Participant Spacing
+
+The [spaceBetweenParticipants](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/#spaceBetweenParticipants) property controls the horizontal spacing between participants in the sequence diagram. Adjust this value to accommodate longer message labels or improve diagram readability.
 
 ```ts
-// Define the UML Sequence Diagram model
+// Define the UML Sequence Diagram model with custom spacing
 const model: UmlSequenceDiagramModel = {
-  // Define the space between participants
+  // Increase space between participants for better readability
   spaceBetweenParticipants: 300,
   participants: participants,    // collection of participants in the sequence diagram  
   messages: messages,            // collection of messages exchanged between participants  

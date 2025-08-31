@@ -27,15 +27,13 @@ You can adjust the orientation of PDF pages to ensure proper alignment. The rota
 * `Rotate clockwise`: Rotate the selected pages 90 degrees clockwise.
 * `Rotate counter-clockwise`: Rotate the selected pages 90 degrees counter-clockwise.
 
-![Alt text](images/rotate.gif)
-
 ### Rearranging PDF pages
 
 You can easily change the sequence of pages within your document using the drag and drop method:
 
 * `Drag and drop`: Click and drag a page thumbnail to the desired position within the document, then release it to rearrange the page order.
 
-![Alt text](images/rearrange.gif)
+![Alt text](images/rotate-rearrange.gif)
 
 ### Inserting new pages
 
@@ -44,8 +42,6 @@ Effortlessly add new pages to your document with the following options:
 * `Insert blank page left`: Insert a blank page to the left of the selected page using the respective icon.
 * `Insert blank page right`: Insert a blank page to the right of the selected page using the corresponding icon.
 
-![Alt text](images/insert.gif)
-
 ### Deleting PDF pages
 
 Removing unwanted pages from your document is straight forward:
@@ -53,15 +49,13 @@ Removing unwanted pages from your document is straight forward:
 * `Select pages to delete`: Click on the page thumbnails you wish to remove. You can select multiple pages at once.
 * `Delete selected pages`: Use the delete option in the organize pages pane to remove the selected pages from the document.
 
-![Alt text](images/delete.gif)
-
 ### Copying PDF pages
 
 Duplicate the pages within your PDF document effortlessly:
 
 * `Select pages to copy`: Click on the page thumbnails you wish to duplicate. Use the copy option to create duplicates. When a page is copied, the duplicate is automatically added to the right of the selected page. Multiple copies can be made using the toolbar action.
 
-![Alt text](images/copy.gif)
+![Alt text](images/insert-delete-copy.gif)
 
 ### Importing a PDF Document
 
@@ -75,7 +69,19 @@ Seamlessly import a PDF document into your existing document:
 
 Make comprehensive adjustments by selecting all pages simultaneously. This facilitates efficient editing and formatting across the entire document.
 
-![Alt text](images/selectall.gif)
+![Alt text](images/selectall.png)
+
+### Zooming Page Thumbnails
+
+Adjust the size of page thumbnails within the organizer panel for better visibility and precision when editing. The zoom functionality allows you to:
+
+* Increase or decrease the size of page thumbnails using the zoom slider
+* See more details on pages when zoomed in
+* View more pages simultaneously when zoomed out
+
+This feature is especially useful when working with documents containing complex layouts or small details that need careful examination during organization.
+
+![Alt text](./images/zoomOrganize.png)
 
 ### Real-time updates 
 
@@ -237,7 +243,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-**pageOrganizerSettings:** This API allows control over various page management functionalities within the PDF Viewer. It includes options to enable or disable actions such as deleting, inserting, rotating, copying, importing and rearranging pages. By default, all these actions are enabled.
+**pageOrganizerSettings:** This API allows control over various page management functionalities within the PDF Viewer. It includes options to enable or disable actions such as deleting, inserting, rotating, copying, importing and rearranging pages, as well as configuring thumbnail zoom settings. By default, all these actions are enabled and standard zoom settings are applied.
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
@@ -270,7 +276,7 @@ import { LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
-    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true };
+    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true, imageZoom: 1, showImageZoomingSlider: true, imageZoomMin: 1, imageZoomMax: 5};
     ngOnInit(): void {
     }
 }
@@ -306,7 +312,7 @@ import { LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport:true };
+    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport:true, imageZoom: 1, showImageZoomingSlider: true, imageZoomMin: 1, imageZoomMax: 5};
     ngOnInit(): void {
     }
 }
@@ -347,8 +353,9 @@ The following keyboard shortcuts are available at the organize pages dialog.
 
 * **Ctrl+Z** : Undo the last action performed.
 * **Ctrl+Y** : Redo the action that was undone
+* **Ctrl+Scroll** : Zoom in and zoom out page thumbnails for better visibility.
 
-![Alt text](images/undo-redo.gif)
+![Alt text](images/undo-redo.png)
 
 #### Conclusion
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation using offline installer in Angular Installation and upgrade component | Syncfusion
+title: Installation using offline installer in Angular component | Syncfusion
 description: Learn here all about Installation using offline installer in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation using offline installer 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Installation using offline installer 
 
-You can refer to the [Download](../installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
+You can refer to the [Download](../installation-and-upgrade/download) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
 The frameworks listed below are supported in this installer.
 
@@ -22,7 +22,7 @@ The frameworks listed below are supported in this installer.
 
 ## Installing with UI
 
-The steps below show how to install the Essential Studio JavaScript – EJ2 installer.
+The steps below show how to install the Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 installer.
 
 1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
@@ -36,7 +36,7 @@ The steps below show how to install the Essential Studio JavaScript – EJ2 inst
     * Use Unlock Key
 
     **Login To Install**
-    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don’t already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **“Create an account”**. If you have forgotten your password, click on **“Forgot Password”** to create a new one. Once you’ve entered your Syncfusion email and password, click Next.
+    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don’t already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **“Create an account”**. If you have forgotten your password, click on **“Forgot Password”** to create a new one. Once you’ve entered your Syncfusion<sup style="font-size:70%">&reg;</sup> email and password, click Next.
 
     ![license download](images/offline2.png)
 
@@ -88,11 +88,11 @@ The steps below show how to install the Essential Studio JavaScript – EJ2 inst
 
 6. After installing, click the Launch Control Panel link to open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
-7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 product.
+7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 product.
 
 ## Installing in Silent Mode
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio JavaScript – EJ2 Installer supports installation and uninstallation via the command line.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 
@@ -111,13 +111,13 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     **Example:** “D:/Temp/syncfusionejs2x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:/Temp/EssentialStudioPlatform.log” /InstallPath:C:/Syncfusion/x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
-7. Essential Studio for JavaScript (Essential JS2) is installed.
+7. Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS2) is installed.
 
-    >Note: x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    >Note: x.x.x.x should be replaced with the Essential<sup style="font-size:70%">&reg;</sup> Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
 ### Command Line Uninstallation
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript – EJ2 can be uninstalled silently using the Command Line.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be uninstalled silently using the Command Line.
 
 1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
@@ -134,4 +134,4 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript – EJ2 ca
     Arguments: “Copied installer file path\ syncfusionejs2_(version).exe” /uninstall silent
     Example: “D:\Temp\syncfusionejs2_x.x.x.x.exe” /uninstall silent
 
-7. Essential Studio for JavaScript (Essential JS2) is uninstalled.
+7. Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS2) is uninstalled.

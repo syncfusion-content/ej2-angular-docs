@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Get dynamic icon in Angular TreeView component
 
-In the TreeView component, you can get the original bound data using the [`getTreeData`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#gettreedata) method. If you pass the id of a tree node to this method, it returns the corresponding node information; otherwise, it returns information for all tree nodes. You can use this method to get the bound iconCss class in the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event. Please refer to the following sample for an implementation example.
+The TreeView component allows you to retrieve the original bound data using the [`getTreeData`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#gettreedata) method. When you pass a node ID to this method, it returns the corresponding node information; when called without parameters, it returns information for all tree nodes. You can use this method to get the bound iconCss class within events like [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking), enabling dynamic icon retrieval based on node states or user interactions.
+
+ Please refer to the following sample for an implementation example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

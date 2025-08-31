@@ -3,16 +3,16 @@ layout: post
 title: Style in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Dashboard layout component
+# Styling and CSS Customization in Angular Dashboard Layout component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The Angular Dashboard Layout component provides extensive styling capabilities through CSS customization. This guide demonstrates how to modify the component's appearance using CSS selectors to match specific design requirements.
 
-## Customizing the dashboard layout panel header
+## Panel Header Customization
 
 Use the following CSS to customize the dashboard layout panel header.
 
@@ -24,7 +24,7 @@ Use the following CSS to customize the dashboard layout panel header.
 }
 ```
 
-## Customizing the dashboard layout panel content
+## Panel Content Customization
 
 Use the following CSS to customize the dashboard layout panel content.
 
@@ -35,7 +35,7 @@ Use the following CSS to customize the dashboard layout panel content.
 }
 ```
 
-## Customizing the dashboard layout panel resize icon
+## Resize Handle Customization
 
 Use the following CSS to customize the dashboard layout resize icon.
 
@@ -48,7 +48,7 @@ Use the following CSS to customize the dashboard layout resize icon.
 }
 ```
 
-## Customizing the dashboard layout panel background
+## Dashboard Layout Background Customization
 
 Use the following CSS to customize the dashboard layout panel background.
 

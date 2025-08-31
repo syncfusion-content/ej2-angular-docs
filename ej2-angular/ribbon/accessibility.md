@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Ribbon component
 
-The Ribbon component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Ribbon component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) roles that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Ribbon component is outlined below.
 
@@ -40,82 +40,99 @@ The accessibility compliance for the Ribbon component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Ribbon component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) patterns to meet the accessibility. The following ARIA attributes are used in the Ribbon component:
+The Ribbon component uses [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) patterns to provide accessible functionality. The following ARIA attributes are used in the Ribbon component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=tablist` | Used to identify the element that serves as the container for a set of tabs. |
-| `role=tab` | Indicates an interactive element within a tablist that, when activated, displays its associated tab panel.|
-| `role=tabpanel` | Specifies the role for the content associated with an active tab, describing its role in presenting the active content.|
-| `role=button` | Represents a clickable element that trigger a response when activated by the user.|
-| `role=menu` | Represents an item that have sub menu.|
-| `role=menuitem` | Indicates an option in a set of choices within a menu. |
-| `role=combobox` | Identifies an element as an input that controls another element, commonly used for dropdowns. |
-| `role=option` | Used for selectable items in a combobox. |
-| `role=gridcell` | Specified as gridcell for the tiles in the color palette. |
-| `aria-orientation` | Indicates the element's orientation as horizontal, vertical, or unknown/ambiguous. |
-| `aria-selected` | Indicates the current `selected` state of various widgets. |
-| `aria-labelledby` | Sets to the Tab content element to indicates the associated Tab header for the content. |
-| `aria-controls` | Indicates the associated tabpanel for the header by setting the attribute on Tab items. |
-| `aria-haspopup` | Indicates availability and type of interactive popup triggered by the element it's set on. |
-| `aria-disabled` | Indicates that the element is perceivable but disabled, making it not editable or operable. |
-| `aria-expanded` | Indicates whether a component is expanded or collapsed, set on the respective element. |
-| `aria-label` | Defines a string value that labels an interactive element for accessibility. |
-| `aria-checked` |  Indicates the current `checked` state of checkboxes, radio buttons, and other widgets. |
-| `aria-owns` | Identifies an element or elements, establishing a relationship when DOM hierarchy can't represent it. |
-| `aria-readonly` |  Indicates that the element is not editable but is otherwise operable. |
-| `aria-activedescendent` | Identifies the currently active element when focus is on a combobox, textbox, group, or application. |
-| `aria-autocomplete` |  Indicates whether inputting text could trigger display of predictions and specifies how predictions will be presented for a combobox, searchbox, or textbox. |
+| `role=tablist` | Identifies the element that serves as the container for a set of tabs. |
+| `role=tab` | Defines an interactive element within a `tablist` that displays its associated `tabpanel` when activated. |
+| `role=tabpanel` | Defines the content panel associated with a `tab`, which is displayed when the tab is active. |
+| `role=button` | Defines a clickable element that triggers a response when activated by the user. |
+| `role=menu` | Defines a widget that offers a list of choices to the user, such as a set of actions or functions. |
+| `role=menuitem` | Defines an option within a `menu`. |
+| `role=combobox` | Defines an input that controls another element, such as a listbox or grid, that can dynamically pop up to help the user set the value of the input. |
+| `role=option` | Defines a selectable item in a listbox or combobox. |
+| `role=gridcell` | Defines a cell within a grid, such as for the tiles in a color palette. |
+| `aria-orientation` | Indicates the orientation of the element, which can be `horizontal`, `vertical`, or `unknown`. |
+| `aria-selected` | Indicates the current selection state of widgets like tabs or options. |
+| `aria-labelledby` | Establishes a relationship between a tab's content and its corresponding tab header. |
+| `aria-controls` | Associates a tab header with its corresponding tab panel. |
+| `aria-haspopup` | Indicates that the element can trigger a popup and specifies the type of popup (e.g., `menu` or `dialog`). |
+| `aria-disabled` | Indicates that the element is visible but not operable. |
+| `aria-expanded` | Indicates whether a collapsible element is currently expanded or collapsed. |
+| `aria-label` | Provides an accessible name for an interactive element. |
+| `aria-checked` | Indicates the state of a checkbox, radio button, or other toggle controls. |
+| `aria-owns` | Establishes a relationship between elements when the DOM hierarchy cannot represent it. |
+| `aria-readonly` | Indicates that the element is not editable but is otherwise operable. |
+| `aria-activedescendant` | Identifies the currently active descendant of a composite widget, such as a combobox or textbox. |
+| `aria-autocomplete` | Indicates how predictions will be presented for a combobox, searchbox, or textbox. |
 
 ## Keyboard interaction
 
-The Ribbon component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Ribbon component.
+The Ribbon component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/#keyboardinteraction) guidelines to support navigation using assistive technologies (AT) and keyboard-only access. The following keyboard shortcuts are supported by the Ribbon component.
 
-| **Press** | **To do this** |
+### Ribbon tab
+
+| Key | Action |
 | --- | --- |
-<b>Ribbon Tab</b>||
-| <kbd>Tab</kbd> | To focus the ribbon tabs. |
-| <kbd>Right Arrow</kbd> | Moves focus to the next Tab.  |
-| <kbd>Left Arrow</kbd> | Moves focus to the previous Tab. |
-| <kbd>Enter / Space</kbd> | To select the currently focused ribbon tab. |
-<b>Ribbon Items</b>||
-| <kbd>Tab</kbd> | To focus the ribbon Items. |
-| <kbd>Right Arrow</kbd> | Focuses the next item. |
-| <kbd>Left Arrow</kbd> | Focuses the previous item. |
-| <kbd>Enter / Space</kbd> | To select the currently focused ribbon item. |
-<b>Ribbon Dropdown Items/ Ribbon Split button</b>||
+| <kbd>Tab</kbd> | Focuses on the Ribbon tabs. |
+| <kbd>Right Arrow</kbd> | Moves focus to the next tab.  |
+| <kbd>Left Arrow</kbd> | Moves focus to the previous tab. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the currently focused Ribbon tab. |
+
+### Ribbon items
+
+| Key | Action |
+| --- | --- |
+| <kbd>Tab</kbd> | Focuses on the Ribbon items. |
+| <kbd>Right Arrow</kbd> | Moves focus to the next item. |
+| <kbd>Left Arrow</kbd> | Moves focus to the previous item. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the currently focused Ribbon item. |
+
+### Ribbon dropdown items/split button
+
+| Key | Action |
+| --- | --- |
 | <kbd>Esc</kbd> | Closes the popup. |
-| <kbd>Enter / Space</kbd> | Opens the popup, or activates the highlighted item and closes the popup. |
-| <kbd>Arrow Up</kbd> | Focuses the next item. |
-| <kbd>Arrow Down</kbd> | Focuses the previous item. |
-| <kbd>Alt + Arrow Up</kbd> | Closes the popup.|
-| <kbd>Alt + Arrow Down</kbd> | Opens the popup |
-<b>Ribbon File menu</b>||
-| <kbd>Tab</kbd> | To focus the ribbon file menu. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Opens the popup or activates the highlighted item and closes the popup. |
+| <kbd>Arrow Up</kbd> | Moves focus to the next item. |
+| <kbd>Arrow Down</kbd> | Moves focus to the previous item. |
+| <kbd>Alt</kbd> + <kbd>Arrow Up</kbd> | Closes the popup.|
+| <kbd>Alt</kbd> + <kbd>Arrow Down</kbd> | Opens the popup. |
+
+### Ribbon file menu
+
+| Key | Action |
+| --- | --- |
+| <kbd>Tab</kbd> | Focuses on the Ribbon file menu. |
 | <kbd>Esc</kbd> | Closes the popup. |
-| <kbd>Enter</kbd> | Opens the popup, or activates the highlighted item and closes the popup. |
-| <kbd>Arrow Up</kbd> | Focuses the previous action item. |
-| <kbd>Arrow Down</kbd> | Focuses the next action item. |
-| <kbd>Alt + Arrow Down</kbd> | Opens the popup |
-<b>Ribbon Combobox</b>||
-| <kbd>Arrow Down</kbd> | Selects the first item in the ComboBox when no item selected. Otherwise, selects the item next to the currently selected item. |
-| <kbd>Arrow Up</kbd> | Selects the item previous to the currently selected one. |
-| <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
-| <kbd>Page Up</kbd> | Scrolls up to the previous page and selects the first item when popup list opens. |
-| <kbd>Enter</kbd> | Selects the focused item and popup list closes when it is in open state. |
-| <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component. |
-| <kbd>Shift + tab</kbd> | Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component. |
-| <kbd>Alt + Down</kbd> | Open the popup list |
-| <kbd>Alt + Up</kbd> | Close the popup list |
-| <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state and the currently selected item remains the same. |
-| <kbd>Home</kbd> | Cursor moves to before of first character in input |
-| <kbd>End</kbd> | Cursor moves to next of last character in input |
+| <kbd>Enter</kbd> | Opens the popup or activates the highlighted item and closes the popup. |
+| <kbd>Arrow Up</kbd> | Moves focus to the previous action item. |
+| <kbd>Arrow Down</kbd> | Moves focus to the next action item. |
+| <kbd>Alt</kbd> + <kbd>Arrow Down</kbd> | Opens the popup. |
+
+### Ribbon combobox
+
+| Key | Action |
+| --- | --- |
+| <kbd>Arrow Down</kbd> | Selects the first item in the combobox if no item is selected. Otherwise, moves focus to the next item. |
+| <kbd>Arrow Up</kbd> | Moves focus to the previous item. |
+| <kbd>Page Down</kbd> | Scrolls down one page and selects the first item when the popup list is open. |
+| <kbd>Page Up</kbd> | Scrolls up one page and selects the first item when the popup list is open. |
+| <kbd>Enter</kbd> | Selects the focused item and closes the popup list. |
+| <kbd>Tab</kbd> | Moves focus to the next focusable element on the page. If the popup is open, it closes the popup first. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Moves focus to the previous focusable element on the page. If the popup is open, it closes the popup first. |
+| <kbd>Alt</kbd> + <kbd>Arrow Down</kbd> | Opens the popup list. |
+| <kbd>Alt</kbd> + <kbd>Arrow Up</kbd> | Closes the popup list. |
+| <kbd>Esc</kbd> | Closes the popup list, retaining the currently selected item. |
+| <kbd>Home</kbd> | Moves the cursor to the beginning of the input text. |
+| <kbd>End</kbd> | Moves the cursor to the end of the input text. |
 
 ## Ensuring accessibility
 
-The Ribbon component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility of the Ribbon component is ensured by testing it with the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Ribbon component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/ribbon.html) in a new window to evaluate the accessibility of the Ribbon component with accessibility tools.
+The accessibility compliance of the Ribbon component can be evaluated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/ribbon.html) in a new window to test it with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/ribbon.html" %}
 

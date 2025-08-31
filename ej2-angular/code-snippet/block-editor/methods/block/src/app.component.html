@@ -1,0 +1,15 @@
+<div id="container">
+    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" ></div>
+    <div id="controls">
+        <h3>Block Management Methods</h3>
+        <div class="button-group">
+            <button (click)="addBlock()">Add Block</button>
+            <button (click)="removeBlock()">Remove Block</button>
+            <button (click)="getBlock()">Get Block</button>
+            <button (click)="moveBlock()">Move Block</button>
+            <button (click)="updateBlock()">Update Block</button>
+            <button (click)="getBlockCount()">Get Block Count</button>
+        </div>
+        <div id="output">{{ output }}</div>
+    </div>
+</div>

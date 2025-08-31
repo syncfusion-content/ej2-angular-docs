@@ -1,22 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { FormsModule } from '@angular/forms'
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-         FormsModule, TextBoxModule, ButtonModule
+    imports: [
+        FormsModule, TextBoxModule, ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     styleUrls: ['./index.css'],
     template: `<label class="label">Add maxlength attribute through inline</label>
@@ -28,16 +20,17 @@ standalone: true,
                 <ejs-textbox #default [multiline]='true' floatLabelType='Auto' placeholder='Enter your address' ></ejs-textbox>
                </div>
                <button ejs-button id=length (click)='clickHandler($event)'>Add max length</button>
+               <button ejs-button id=length (click)='removeAttribute($event)'>Remove max length</button>
                `
 })
 export class AppComponent {
     @ViewChild('default')
-    public textareaObj?: TextBoxComponent;
+    public textboxObj?: TextBoxComponent;
 
     public clickHandler(args: any) {
-        (this.textareaObj as TextBoxComponent).addAttributes({maxlength: 15} as any);
- }
+        (this.textboxObj as TextBoxComponent).addAttributes({ maxlength: 15 } as any);
+    }
+    public removeAttribute(args: any) {
+        (this.textboxObj as TextBoxComponent).removeAttributes(['maxlength']);
+    }
 }
-
-
-

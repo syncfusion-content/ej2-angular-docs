@@ -47,8 +47,8 @@ export class AppComponent {
                 dependency: 'Predecessor',
                 child: 'SubTasks'
             },
-            this.projectStartDate = new Date('02/24/2019'),
-            this.projectEndDate = new Date('07/20/2019')
+            this.projectStartDate = new Date('02/24/2021'),
+            this.projectEndDate = new Date('07/20/2021')
     }
     bind(): void {
         const temp = this.ganttObj;

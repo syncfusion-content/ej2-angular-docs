@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Display foreign key values in treegrid in Angular Treegrid component | Syncfusion
-description: Learn here all about Display foreign key values in treegrid in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Display foreign key values in TreeGrid in Angular TreeGrid component | Syncfusion
+description: Learn how to display foreign key values in the Syncfusion Angular TreeGrid component and render dropdown lists using external data sources for hierarchical data.
 platform: ej2-angular
 control: Display foreign key values in treegrid 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display foreign key values in treegrid in Angular Treegrid component
+# Display foreign key values in TreeGrid in Angular TreeGrid component
 
-Since Tree Grid Databinding concept is of hierarchy relationship, we do not provide in-built support for foreignKey datasource.
+The TreeGrid component uses a hierarchical data binding approach and does not provide built-in support for foreign key data sources.
 
-To display the foreignKey value at initial rendering, we can use the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event of the Tree Grid and also by using the [`editType`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edittype) and [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) properties of Tree Grid Column, we can render Dropdownlist with external or foreign dataSource.
+To display foreign key values during initial rendering, utilize the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event of the TreeGrid component. Additionally, by using the [`editType`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edittype) and [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) properties of the TreeGrid Column, it is possible to render a DropDownList with an external or foreign data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,7 +23,7 @@ To display the foreignKey value at initial rendering, we can use the [`queryCell
 {% include code-snippet/treegrid/refresh-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs7" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For feature highlights and additional guidance, see the [Angular TreeGrid feature tour page](https://www.syncfusion.com/angular-components/angular-tree-grid). More comprehensive demonstrations for data presentation and manipulation are available in the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

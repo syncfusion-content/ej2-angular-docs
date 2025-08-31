@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # Sorting TreeView level wise in Angular TreeView component
 
-You can sort the TreeView nodes based on their hierarchical level. The [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#sortorder) property sorts the entire TreeView. To sort a specific level, you can use the following code sample. The following code sample demonstrates how to sort only the parent nodes in TreeView.
+The TreeView component provides sorting functionality through the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#sortorder) property, which applies sorting to the entire TreeView structure. However, for scenarios requiring level-specific sorting, you can implement custom sorting logic that targets specific hierarchical levels while leaving others unsorted.
+
+The `sortOrder` property accepts three values: `None` (default), `Ascending`, and `Descending`.
+
+The following example demonstrates how to sort only the parent nodes (first level) in the TreeView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

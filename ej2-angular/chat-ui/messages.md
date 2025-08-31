@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Messages in Angular Chat UI component
+# Messages in the Angular Chat UI Component
 
 The Chat UI allows to add messages using the `<e-message>` selector. The message collection stores all the messages being sent and received.
 
-## Configure messages
+## Basic Message Configuration
 
 You can use the [text](../api/chat-ui/messageModel/#text) property to add message content for the user.  Each message can be configured with options such as [id](../api/chat-ui/messageModel/#id), [text](../api/chat-ui/messageModel/#text), [author](../api/chat-ui/messageModel/#author), [timestamp](../api/chat-ui/messageModel/#timestamp) and more.
 {% tabs %}
@@ -33,11 +33,83 @@ You can use the [text](../api/chat-ui/messageModel/#text) property to add messag
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/text" %}
 
+### Setting pinned
+
+You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/pinned/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/pinned/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/pinned/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/pinned" %}
+
+### Setting reply to
+
+You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond to the original message preserving context and creating a threaded conversation.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/replyTo/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/replyTo" %}
+
+### Setting forward
+
+You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to specify the user when the message is forwarded.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/forwarded/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/forwarded" %}
+
+### Setting compact mode
+
+You can use the `enableCompactMode` property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/compactmode/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/compactmode" %}
+
 ### Defining current user
 
 You can use the [author](../api/chat-ui/messageModel/#author) property to identify the current user of the chat. Each user can be configured with options such as [id](../api/chat-ui/userModel/#id), [user](../api/chat-ui/userModel/#user), [avatarUrl](../api/chat-ui/userModel/#avatarurl) and more.
 
-> You can use the [user](../api/chat-ui/userModel/#user) property to display the user name and [id](../api/chat-ui/userModel/#id) property is necessary to differentiate between the multiple users.
+> The [user](../api/chat-ui/userModel/#user) property displays the user's name, while the [id](../api/chat-ui/userModel/#id) property is necessary to differentiate between multiple users.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,7 +128,7 @@ You can use the [author](../api/chat-ui/messageModel/#author) property to identi
 
 #### Setting avatar URL
 
-You can use the [avatarUrl](../api/chat-ui/userModel/#avatarurl) property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.
+The [avatarUrl](../api/chat-ui/userModel/#avatarurl) property defines the image URL for the user's avatar. If no URL is provided, the fallback initials from the user’s name will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +150,7 @@ You can use the [avatarUrl](../api/chat-ui/userModel/#avatarurl) property to def
 
 #### Setting avatar background color
 
-You can use the [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
+The [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) property sets a specific background color for user avatars using hexadecimal values. If no color is set, a default background color is applied based on the current theme.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,9 +170,9 @@ You can use the [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) propert
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/avatarBgColor" %}
 
-#### Setting CSS class
+### Custom CSS Class
 
-You can use the [cssClass](../api/chat-ui/userModel/#cssclass) property to customize the appearance of the chat user.
+The [cssClass](../api/chat-ui/userModel/#cssclass) property allows for custom styling of a chat user's messages and avatar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,18 +192,18 @@ You can use the [cssClass](../api/chat-ui/userModel/#cssclass) property to custo
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/cssClass" %}
 
-#### Setting status icon css
+### User Presence Status
 
-You can use the [statusIconCss](../api/chat-ui/message/#statusiconcss) property to identify the user's presence, including `online`, `offline`, `busy`, and `away` status in the Chat UI.
+Use the [statusIconCss](../api/chat-ui/message/#statusiconcss) property to indicate a user's presence status, such as `online`, `offline`, `busy`, or `away`.
 
-The following are the predefined status styles that can be defined using the `statusIconCss` property.
+The following predefined classes can be assigned to the `statusIconCss` property:
 
-| Status | Icon class |
-| ------------ | -------------- |
-| `Available` | `e-user-online` |
-| `Away` | `e-user-away` |
-| `Busy` | `e-user-busy` |
-| `Offline` | `e-user-offline` |
+| Status    | Icon Class     |
+|-----------|----------------|
+| `Available`| `e-user-online`|
+| `Away`    | `e-user-away`  |
+| `Busy`    | `e-user-busy`  |
+| `Offline` | `e-user-offline`|
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +220,7 @@ The following are the predefined status styles that can be defined using the `st
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/statusicon" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/statusicon" %}
 
 ## Define timestamp
 
@@ -169,9 +241,9 @@ You can use the [timeStamp](../api/chat-ui/messageModel/#timestamp) property to 
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/timeStamp" %}
 
-### Setting timestamp format
+### Timestamp Format
 
-You can use the [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs.
+The [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) property provides control over the timestamp's display format. The default format is `dd/MM/yyyy hh:mm a`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -188,13 +260,13 @@ You can use the [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) 
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/timeStampFormat" %}
 
-## Define message status
+## Message Status
 
-You can use the [status](../api/chat-ui/messageModel/#status) property to update the status for the message(e.g., sent, received, read). It helps in managing message delivery and read receipts within the chat interface.
+The [status](../api/chat-ui/messageModel/#status) property tracks the delivery state of a message (e.g., sent, delivered, read) to manage delivery and read receipts.
 
 ### Setting icon CSS
 
-You can use the [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property to update the styling of status icons associated with messages, aiding visual differentiation between statuses.
+The [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property customizes the styling of status icons, which helps in visually differentiating between various message statuses.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -213,7 +285,7 @@ You can use the [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property t
 
 ### Setting text
 
-You can use the [text](../api/chat-ui/messageStatusModel/#text) property to provide information about the messages through descriptive text, providing users with the context of the message.
+The [text](../api/chat-ui/messageStatusModel/#text) property provides a descriptive text label for the message status, giving users clear context about the message's state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,9 +302,9 @@ You can use the [text](../api/chat-ui/messageStatusModel/#text) property to prov
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/statusText" %}
 
-### Setting tooltip
+### Setting Tooltip
 
-You can use the [tooltip](../api/chat-ui/messageStatusModel/#tooltip) property to provide information about the messages by tooltips while hovering the status icon, providing users with additional data upon hovering.
+The [tooltip](../api/chat-ui/messageStatusModel/#tooltip) property provides additional details about a message's status when a user hovers over the status icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,78 +361,6 @@ You can use the [suggestions](../api/chat-ui/#suggestions) property, to add the 
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/suggestions" %}
 
-### Setting pinned
-
-You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/pinned/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/pinned/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/pinned/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/pinned" %}
-
-### Setting reply to
-
-You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond to the original message preserving context and creating a threaded conversation.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/replyTo/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/replyTo" %}
-
-### Setting forward
-
-You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to specify the user when the message is forwarded.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/forwarded/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/forwarded" %}
-
-## Setting compact mode
-
-You can use the `enableCompactMode` property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/chat-ui/messages/compactmode/src/app.component.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/compactmode" %}
-
 ## Configure message options
 
 The `messageToolbarSettings` property allows customization of the message toolbar for richer chat experience in the Chat UI. It provides options to define the toolbar `width`, configure a set of toolbar `items`, and handle `itemClick` events for enhanced interactivity. By default, the message options available are `Copy`, `Reply`, `Pin`, and `Delete`.
@@ -389,11 +389,11 @@ You can use the `width` property to set width of the message toolbar in the chat
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/width" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/width" %}
 
-### Setting items
+### Toolbar Items
 
-You can use the `items` property to specify the toolbar item in the message toolbar of the chat.
+The `items` property allows for specifying a custom set of toolbar items in the message toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -407,11 +407,11 @@ You can use the `items` property to specify the toolbar item in the message tool
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/items" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/items" %}
 
-### Setting itemClick
+### Toolbar Item Click Event
 
-You can use the `itemClicked` event when the toolbar item is clicked in the message toolbar of the chat.
+The `itemClicked` event is triggered when a user clicks an item in the message toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -425,4 +425,59 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chat-ui/messages/itemClicked" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/itemClicked" %}
+
+## Markdown Message Content
+
+The Chat UI component supports `Markdown` formatting for messages, enabling rich text capabilities such as bolding, italics, links, lists, and code blocks.
+
+### Prerequisites
+
+To enable Markdown rendering, a third-party library that converts Markdown syntax to HTML is required.
+
+-   Include the `marked` library:
+  ```bash
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  ```
+
+- Include `DOMPurify` for sanitizing the Markdown output:
+
+  ```bash
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+
+  ```
+
+### Supported Markdown Formats
+
+The Chat UI supports standard Markdown formats available in the `marked` library:
+
+-   **Bold**: `**text**` or `__text__`
+-   *Italic*: `*text*` or `_text_`
+-   [Links](url): `[Link text](url)`
+-   Lists: `- Item` or `1. Item`
+-   Code: `` `code` ``
+
+For a full list of supported syntax, refer to the [marked documentation](https://marked.js.org/).
+
+### Configuring Markdown Rendering
+
+By integrating a library like [marked](https://github.com/markedjs/marked), you can parse Markdown content before passing it to the [text](../api/chat-ui/messageModel/#text) property of a message object. This allows for richly formatted text to be displayed in the chat.
+
+> To prevent cross-site scripting (XSS) attacks, always sanitize Markdown output using a library like `DOMPurify` before rendering it as HTML.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/messages/markdown/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/messages/markdown/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/markdown/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chat-ui/messages/markdown" %}

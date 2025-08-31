@@ -25,7 +25,7 @@ export class AppComponent {
   ngAfterViewInit() {
     (this.textbox as TextBoxComponent).addIcon('append', 'e-icons e-eye');
     document
-      .getElementsByClassName('e-input-eye')[0]
+      .getElementsByClassName('e-eye')[0]
       .addEventListener('click', function (e) {
         let textObj: any = (document.getElementById('password') as any)
           .ej2_instances[0];

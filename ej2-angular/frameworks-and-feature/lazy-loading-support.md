@@ -10,11 +10,14 @@ domainurl: ##DomainURL##
 
 # Angular Lazy Loading
 
-Lazy loading is an optimization technique used in Angular applications to improve performance by loading only the necessary modules on demand. This section provides a detailed guide on implementing lazy loading with Essential<sup style="font-size:70%">&reg;</sup> JS2 Angular components, including Syncfusion<sup style="font-size:70%">&reg;</sup> controls. Lazy loading is instrumental in minimizing the initial loading time, thereby enhancing user experience significantly.
+Lazy loading is an essential optimization technique in Angular applications. It allows modules and components to load only when they are needed, reducing the initial bundle size and improving application performance. This guide provides a comprehensive overview of implementing lazy loading with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular components, leveraging both module-based and modern standalone approaches.
 
-## Lazy Loading
+## Why Lazy Loading?
 
-Lazy loading is a technique that loads additional payload only when needed, which can improve the overall performance and user experience of your Angular application. By using code splitting, you can lazy load the Syncfusion<sup style="font-size:70%">&reg;</sup> components and routes in Angular. This can reduce the initial loading time of the application.
+- **Faster Initial Load**: Only loads required features at startup, making applications more responsive.
+- **Efficient Resource Usage**: Minimizes memory and bandwidth consumption by downloading code only on demand.
+- **Scalability**: Helps maintain performance as your app grows.
+- **Syncfusion Integration**: Ensures that Essential JS 2 Angular components are loaded only when needed, optimizing user experience.
 
 ## Folder Structure Overview
 
@@ -29,7 +32,7 @@ src/
 
 ## Creating a Syncfusion<sup style="font-size:70%">&reg;</sup> component in Angular
 
-Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
+Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading) for a comprehensive understanding of implementing lazy loading.
 
 ## Project Setup
 
@@ -300,7 +303,7 @@ src/
 ```
 ## Project Setup
 
-1. Create App & Install Syncfusion
+1. Create App & Install Syncfusion<sup style="font-size:70%">&reg;</sup>
 Run the following commands to create a new Angular standalone project and install Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
 ```bash
@@ -526,9 +529,9 @@ The `RouterModule` provides essential functionality for routing, allowing seamle
 
 - **Grid or Dropdown Not Rendering**: Ensure all required CSS files are imported in `styles.css`. Verify that the `dataSource` property in `ejs-grid` or `ejs-dropdownlist` is correctly set (e.g., not null or undefined).
 - **Routing Errors**: Confirm that `RouterModule` is imported in `app.module.ts` (for module-based) or `app.component.ts` (for standalone). Check that route paths in `app-routing.module.ts` or `app.routes.ts` match the `routerLink` values.
-- **Syncfusion Component Errors**: Ensure you have a valid Syncfusion license and that the correct Syncfusion packages are installed.
+- **Syncfusion<sup style="font-size:70%">&reg;</sup> Component Errors**: Ensure you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license and that the correct Syncfusion<sup style="font-size:70%">&reg;</sup> packages are installed.
 
-For additional help, refer to the [Angular Documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) or [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
+For additional help, refer to the [Angular Documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading) or [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
 
 ## Benefits of Lazy Loading
 

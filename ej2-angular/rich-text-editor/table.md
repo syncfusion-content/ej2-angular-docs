@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Table in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Table in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to insert, format, and manage Table in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Table
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Table in Angular Rich Text Editor Component
 
-Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [`tableSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel/)
+The Syncfusion Angular Rich Text Editor allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel/)
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add an `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -54,17 +54,37 @@ You can insert `Rows` above or below the selected table cell using the quick too
 
 ![Rich Text Editor table column](images/table_column.png)
 
+## Quick insert for table rows and columns
+
+The Rich Text Editor offers a simple and intuitive way to add rows and columns to your tables without interrupting your workflow. You can expand tables directly from the interface, no need to use toolbar buttons.
+
+### Insert columns instantly
+
+- **Where to hover**: Place your cursor over any cell in the **first row** of your table.
+- **What you'll see**: A small dot icon (●) will appear at the **top edge** of the cell.
+- **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new column to the left.
+
+![Rich Text Editor table column quick insert](images/table_column_quick_insert.gif)
+
+### Insert rows instantly
+
+- **Where to hover**: Place your cursor over any cell in the **first column** of your table.
+- **What you'll see**: A small dot icon (●) will appear at the **left edge** of the cell.
+- **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new row above.
+
+![Rich Text Editor table row quick insert](images/table_row_quick_insert.gif)
+
 ## Setting cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
 
 ![Rich Text Editor table background color](images/table_bg_color.png)
 
-## Deleting tables
+## Deleting table
 
 Delete the entire table using the delete item in the quick toolbar.
 
-## Table cell alignments
+## Table cell alignment
 
 ### Vertical alignment
 
@@ -92,9 +112,9 @@ By Default, provides Dashed border and Alternate rows.
 
 ## Setting table and cell dimensions
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [`tableSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/).
+Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/).
 
-Users can modify the width, cell padding, and cell spacing of selected tables using the properties option in the quick toolbar.
+Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
 ![Rich Text Editor table settings](images/table_properties.png)
 
@@ -133,7 +153,7 @@ The text formatting feature in tables allows users to apply various styles to se
   
 {% previewsample "page.domainurl/samples/rich-text-editor/table-row-and-column-selection" %}
 
-## Copy, cut, and paste table rows and columns
+## Copy, cut, and paste table content
 
 The Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, allowing users to easily modify and manage table data within the editor.
 

@@ -8,16 +8,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Generate Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2-Angular License key
+# Generate Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2-Angular License Key
 
-License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
+License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) sections of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 
 ![Get Community License Key](images/get-community-license-key.png)
 
 > * Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
-> * Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
+> * Refer to the [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
-## Claim License key
+## Claim a License Key
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> License keys can also be generated from the **"Claim License Key"** page based on the trial or valid license associated with your Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 
@@ -25,13 +25,13 @@ You can get the license key, based on license availability in your Syncfusion<su
 
 ### Active License
 
-If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account associated with valid license, license key will be generated from claim license key page.
+If your Syncfusion<sup style="font-size:70%">&reg;</sup> account is associated with a valid license, the license key will be generated via the Claim License Key page.
 
 ![Active License](images/active-license.png)
 
 ### Active Trial
 
-If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account associated with valid trial license, license key will be generated from claim license key page with expiry date.
+If your account is associated with a valid trial license, the license key will be generated on the Claim License Key page, including the trial expiry date.
 
 ![Active Trial](images/active-trial.png)
 
@@ -41,9 +41,9 @@ If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account with an e
 
 ![Expired License](images/expired-license.png)
 
-### No Trial or No License or Expired trial
+### No Trial, No License, or Expired Trial
 
-If the Syncfusion<sup style="font-size:70%">&reg;</sup> account is not associated with a trial, license, or expired trial, you can try to claim either a trial or a valid license from claim license page.
+If your account is not associated with any trial or license, or if your trial has expired, you can attempt to claim a new trial or valid license from the Claim License Key page.
 
 ![No Trial or No License](images/no-active-trial-or-license.png)
 

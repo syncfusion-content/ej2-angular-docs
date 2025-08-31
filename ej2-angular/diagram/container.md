@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Container in Angular Diagram component | Syncfusion®
-description: Learn here all about Container in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Container in Angular Diagram Component | Syncfusion®
+description: Learn here all about Container in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Container 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Container in Angular Diagram component
+# Container in Angular Diagram Component
 
-A Container is a group of logically related shapes surrounded by a visible boundary. Shapes can be added or removed from the container at runtime. Changes made to the container do not affect its child elements, which can be individually selected, moved, or edited.
+A Container is a specialized node that groups logically related shapes within a visible boundary. Unlike regular groups, containers automatically manage child elements while maintaining individual element properties. Common use cases include organizing related components in flowcharts, creating swimlanes in process diagrams, and building composite UI layouts.
 
 ## Create Container
 
 ### Add a Container
 
-The following code illustrates how to create a container node.
+Container nodes require specific configuration to enable child element management and boundary recognition. The following example demonstrates creating a basic container with essential properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,9 +32,9 @@ The following code illustrates how to create a container node.
 
 ### Setting a Header
 
-You can provide a textual description for a container using its [header](https://ej2.syncfusion.com/angular/documentation/api/diagram/containerModel/#header) property. Also, users can customize the header's appearance using the header's [style](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#style) property.
+Headers provide textual identification for containers and can be fully customized for appearance and behavior. The [header](https://ej2.syncfusion.com/angular/documentation/api/diagram/containerModel/#header) property accepts text content, while the header's [style](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#style) property controls visual formatting including fonts, colors, and alignment.
 
-The following code example explains how to define a container header and its customization:
+The following example shows header configuration with custom styling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,17 +48,18 @@ The following code example explains how to define a container header and its cus
   
 {% previewsample "page.domainurl/samples/diagram/container/container-2" %}
 
-N> You can edit the header by double-clicking the region of the container's header.
+N> Double-click the header region to enable inline text editing functionality.
 
 ### Container from symbol palette
 
-Container nodes can be preconfigured and added to the symbol palette. Users can drag and drop these container nodes into the diagram as needed.
+Preconfigured container templates can be added to the symbol palette for reusable across diagrams. This approach standardizes container designs and accelerates diagram creation workflows.
 
-To learn more, refer to the [Symbol Palette](./symbol-palette/symbol-palette) documentation.
+For detailed symbol palette integration steps, refer to the [Symbol Palette](./symbol-palette/symbol-palette) documentation.
 
-## Interactively add or remove diagram elements into Container
 
-You can interactively add or remove diagram elements from the Container in the runtime. When a diagram element is dropped near the container's edge, the container automatically resizes to accommodate it.
+### Interactively Add or Remove Elements
+
+The diagram supports drag-and-drop operations for adding elements to containers at runtime. When elements approach a container's boundary, visual feedback indicates drop zones, and the container automatically expands to accommodate new children while maintaining proper spacing.
 
 ![Container](images/container.gif)
 

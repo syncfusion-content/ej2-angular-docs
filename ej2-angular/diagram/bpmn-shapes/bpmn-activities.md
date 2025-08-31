@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Bpmn activity in Angular Diagram component | Syncfusion®
-description: Learn here all about Bpmn shapes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: BPMN Activities in Angular Diagram Component | Syncfusion®
+description: Learn about BPMN activity shapes including tasks, subprocesses, loops, compensation, and boundaries in Syncfusion® Angular Diagram component.
 platform: ej2-angular
-control: Bpmn activity 
+control: Bpmn Activity 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN activity in Angular Diagram control
+# BPMN Activities in Angular Diagram Component
 
-### Activity
+## Overview
 
-The [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities) is the task that is performed in a business process. It is represented by a rounded rectangle.
+BPMN (Business Process Model and Notation) activities represent work performed within a business process. An [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities/) appears as a rounded rectangle and serves as the fundamental unit of work in process modeling.
 
-There are two types of activities. They are listed as follows:
+Activities fall into two main categories:
 
-* Task: Occurs within a process and it is not broken down to a finer level of detail.
-* Subprocess: Occurs within a process and it is broken down to a finer level of detail.
+* **Task**: A single unit of work that cannot be broken down into smaller components within the process model
+* **Subprocess**: A compound activity that contains other activities and can be expanded to show additional detail
 
-To create a BPMN activity, set the shape as **activity**. You also need to set the type of the BPMN activity by using the activity property of the node. By default, the type of the activity is set as **task**. The following code example illustrates how to create an activity.
+To create a BPMN activity, set the shape property to **Activity**. Specify the activity type using the `shape.activity` property of the node. The default activity type is **Task**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,13 +33,9 @@ To create a BPMN activity, set the shape as **activity**. You also need to set t
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/activity-cs1" %}
 
-The different activities of BPMN process are listed as follows.
+## Tasks
 
-
-### Tasks
-
-The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask) property of the [`bpmn activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities) allows you to define the type of task such as sending, receiving, user based task, etc. By default, the type property of task is set as **none**. The following code illustrates how to create different types of
-BPMN tasks
+The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/) property of [`bpmn activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities/) defines specific task types such as user tasks, service tasks, or message tasks. The default task type is **None**. Different task types indicate the nature of work being performed and who or what performs it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,22 +49,26 @@ BPMN tasks
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/task-cs1" %}
 
-The various types of BPMN tasks are tabulated as follows.
+The following table shows the available BPMN task types:
 
 | Shape | Image |
 | -------- | -------- |
-| Service | ![ServiceBPMNImage](../images/Service.png) |
-| Send | ![SendBPMNImage](../images/Send.png) |
-| Receive | ![ReceiveBPMNImage](../images/Receive.png) |
-| Instantiating Receive | ![Instantiating ReceiveBPMNImage](../images/InsService.png) |
-| Manual |![ManualBPMNImage](../images/Manual.png) |
-| Business Rule | ![Business RuleBPMNImage](../images/Bussiness.png) |
-| User | ![UserBPMNImage](../images/User.png) |
-| Script | ![ScriptBPMNImage](../images/Script.png) |
+| Service | ![Service task icon showing a gear symbol](../images/Service.png) |
+| Send | ![Send task icon showing an arrow pointing right](../images/Send.png) |
+| Receive | ![Receive task icon showing an arrow pointing left](../images/Receive.png) |
+| Instantiating Receive | ![Instantiating receive task icon with thick border](../images/InsService.png) |
+| Manual | ![Manual task icon showing a hand symbol](../images/Manual.png) |
+| Business Rule | ![Business rule task icon showing a table symbol](../images/Bussiness.png) |
+| User | ![User task icon showing a person symbol](../images/User.png) |
+| Script | ![Script task icon showing a document with script](../images/Script.png) |
+
+## Subprocesses
+
+Subprocesses represent activities that contain other processes or activities within them. They provide a way to organize complex processes hierarchically and can be expanded or collapsed to show or hide internal details.
 
 ### Collapsed Subprocess
 
-A [`Collapsed sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#collapsed) is a group of tasks, which is used to hide or reveal details of additional levels. The following code explains how to create a Collapsed Sub-Process.
+A [`collapsed subprocess`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#collapsed) appears as a single activity but contains additional process details that remain hidden. This approach helps maintain process diagram clarity while preserving detailed information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,9 +82,9 @@ A [`Collapsed sub-process`](https://ej2.syncfusion.com/angular/documentation/api
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/subprocess-cs1" %}
 
-#### Loop
+## Loop Characteristics
 
-[`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops) is a task that is internally being looped. The loop property of `bpmn activity` allows you to define the type of loop. The default value for `loop` is **none**. You can define the loop property in subprocess BPMN shape as shown in the following code.
+[`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops/) characteristics indicate that an activity repeats until a specified condition is met. The loop property of bpmn activity defines the repetition behavior. The default value is **none**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,18 +98,17 @@ A [`Collapsed sub-process`](https://ej2.syncfusion.com/angular/documentation/api
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/loop-cs1" %}
 
-The following table contains various types of BPMN loops.
+The following table shows the available loop types for both tasks and subprocesses:
 
 | Loops | Task | Subprocess |
 | -------- | -------- | --------|
-| Standard | ![StandardTaskImage](../images/Standard1.png)  | ![StandardSubprocessImage](../images/Standard2.png) |
-| SequenceMultiInstance | ![SequenceMultiInstanceTaskImage](../images/Sequence1.png) |  ![SequenceMultiInstanceSubprocessImage](../images/Sequence2.png)|
-| ParallelMultiInstance | ![ParallelMultiInstanceTaskImage](../images/PMultiInstance1.png) | ![ParallelMultiInstanceSubprocessImage](../images/PMultiInstance2.png)
+| Standard | ![Standard loop marker on task](../images/Standard1.png)  | ![Standard loop marker on subprocess](../images/Standard2.png) |
+| SequenceMultiInstance | ![Sequential multi-instance marker on task](../images/Sequence1.png) |  ![Sequential multi-instance marker on subprocess](../images/Sequence2.png)|
+| ParallelMultiInstance | ![Parallel multi-instance marker on task](../images/PMultiInstance1.png) | ![Parallel multi-instance marker on subprocess](../images/PMultiInstance2.png) |
 
-#### Compensation
+## Compensation
 
-[`Compensation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#compensation) is triggered, when operation is partially failed and enabled it with the compensation property of the `bpmn activity`.
-By default, the `compensation` is set to false.
+[`Compensation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#compensation) indicates that an activity can undo or compensate for work performed by another activity. This becomes relevant when a process fails after partial completion and requires cleanup activities. Enable compensation using the compensation property of the bpmn activity. The default value is false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,10 +122,10 @@ By default, the `compensation` is set to false.
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/compensation-cs1" %}
 
-#### Call
+## Call Activity
 
-A [`call`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#call)  activity is a global subprocess that is reused at various points of the business flow and set it with the call property of the task.
-By default, the call property is false.
+A [`call`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#call) activity references a global process or subprocess that exists outside the current process definition. This promotes reusable across multiple processes. Enable call activity behavior using the call property of the task. The default value is false.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/call-cs1/src/app.component.ts %}
@@ -139,11 +138,11 @@ By default, the call property is false.
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/call-cs1" %}
 
-N> This Property is only applicable for task Type activity.
+N> The call property applies only to task-type activities.
 
-#### Adhoc
+## Ad hoc
 
-An adhoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and set it with the [`adhoc`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#adhoc) property of subprocess.By default, the adhoc property is false.
+An [`adhoc`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#adhoc) subprocess contains activities that performers can execute in any order or skip entirely, provided the overall objective is achieved. Enable ad hoc behavior using the adhoc property of the subprocess. The default value is false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -157,9 +156,9 @@ An adhoc subprocess is a group of tasks that are executed in any order or skippe
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/adhoc-cs1" %}
 
-#### Boundary
+## Boundary Types
 
-Boundary represents the type of task that is being processed. The [`boundary`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#boundary) property of subprocess allows you to define the type of boundary. By default, it is set as **default**.
+The [`boundary`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#boundary) property defines the visual boundary style of a subprocess, indicating different subprocess characteristics. The default value is **default**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,25 +172,23 @@ Boundary represents the type of task that is being processed. The [`boundary`](h
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/boundary-cs1" %}
 
-The following table contains various types of BPMN boundaries.
+The following table shows the available boundary types:
 
 | Boundary | Image |
 | -------- | -------- |
-| Call | ![CallImage](../images/Call.png) |
-| Event | ![EventImage](../images/Eventtask.png) |
-| Default | ![DefaultImage](../images/DefaultBoundary.png) |
+| Call | ![Call activity with thick border](../images/Call.png) |
+| Event | ![Event subprocess with dashed border](../images/Eventtask.png) |
+| Default | ![Default subprocess with standard border](../images/DefaultBoundary.png) |
 
+## Specialized Subprocess Types
 
-#### SubProcess types
+BPMN defines two specialized subprocess types for specific business scenarios:
 
-The different types of subprocess are as follows:
+### Event Subprocess
 
-    * Event subprocess
-    * Transaction
+An event subprocess executes when triggered by a specific event rather than following the normal process flow. Event subprocesses reside within other subprocesses but remain outside the main sequence flow until activated.
 
-##### Event subprocess
-
-A subprocess is defined as an event subprocess, when it is triggered by an event. An event subprocess is placed within another subprocess which is not part of the normal flow of its parent process. You can set event to a subprocess with the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#event) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the subprocess. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property of subprocess allows you to define the type of subprocess whether it should be event subprocess or transaction subprocess.
+Configure an event subprocess using the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#event) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) properties. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property determines whether the subprocess is an event subprocess or transaction subprocess.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,17 +202,17 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/eventSubprocess-cs1" %}
 
-##### Transaction subprocess
+#### Transaction Subprocess
 
-* [`transaction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTransactionSubProcessModel) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) property of subprocess allows to represent these results as an event attached to the subprocess.
+A [`transaction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTransactionSubProcessModel/) subprocess represents a group of activities that must all complete successfully or the entire transaction is undone. Transaction results include Successful Completion, Unsuccessful Completion (Cancel), or Hazard (Exception).
 
-* The event object allows you to define the type of event by which the subprocess will be triggered. The name of the event can be defined to identify the event at runtime.
+The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/) property allows representation of these results as events attached to the subprocess. Configure event properties as follows:
 
-* The event’s offset property is used to set the fraction/ratio (relative to parent) that defines the position of the event shape.
-
-* The trigger property defines the type of the event trigger.
-
-* You can also use define ports and labels to subprocess events by using event’s ports and labels properties.
+* **Event type**: Defines the triggering event type for the subprocess
+* **Event name**: Identifies the event during runtime
+* **Offset**: Sets the event shape position relative to the parent (as a fraction/ratio)
+* **Trigger**: Specifies the event trigger type
+* **Ports and labels**: Define additional interaction points and descriptive text
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

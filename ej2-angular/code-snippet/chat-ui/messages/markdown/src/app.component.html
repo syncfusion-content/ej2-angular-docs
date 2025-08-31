@@ -1,0 +1,11 @@
+<div id="chatui" #chatui ejs-chatui style="height: 380px; width: 450px;"
+  headerText="Chat UI with Markdown"
+  [user]="currentUserModel"
+  [suggestions]="suggestionsDisplay"
+  (messageSend)="onMessageSend($event)"
+>
+  <e-messages>
+    <e-message [text]="message1" [author]="currentUserModel"></e-message>
+    <e-message [text]="message2" [author]="michaleUserModel"></e-message>
+  </e-messages>
+</div>

@@ -10,23 +10,23 @@ domainurl: ##DomainURL##
 
 # Paging in Angular Grid component
 
-Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
+Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets that would otherwise overwhelm the user interface and degrade performance.
 
-To enable paging, you need to set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component rendered at the bottom of the grid, allowing you to navigate through different pages of data.
+To enable paging, set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component is rendered at the bottom of the grid, allowing navigation through different pages of data.
 
-To use paging, you need to inject the **PageService** into the provider section of your **AppModule**. This service provides the necessary methods and events to handle paging functionality.
+To use paging functionality, inject the **PageService** into the providers section of your **AppModule** or component. This service provides the necessary methods and events to handle paging operations.
 
-Paging options can be configured through the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/) property. The `pageSettings` object allows you to control various aspects of paging, such as the page size, current page, and total number of records.
+Paging options can be configured through the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/) property. The `pageSettings` object allows control of various paging aspects, including page size, current page, total number of records, and advanced options like query string integration.
 
-> You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
+> Grid paging significantly improves performance by fetching only a pre-defined number of records from the data source, reducing initial load time and memory consumption.
 
 ## Customize the pager options 
 
-Customizing the pager options in the Syncfusion Grid allows you to tailor the pagination control according to your specific requirements. You can customize the pager to display the number of pages using the `pageCount` property, change the current page using `currentPage` property, display the number of records in the grid using the `pageSize` property, and even adjust the page sizes in a dropdown using the `pageSizes` property. Additionally, you can include the current page as a query string in the URL for convenient navigation. 
+Customizing pager options in the Syncfusion Grid allows tailoring the pagination control to specific requirements. The pager can be customized to display the number of pages using the `pageCount` property, change the current page using the `currentPage` property, control the number of records per page using the `pageSize` property, and adjust available page sizes through a dropdown using the `pageSizes` property. Additionally, the current page can be included as a query string in the URL for convenient navigation and bookmarking.
 
 ### Change the page size 
 
-The Syncfusion Grid allows you to control the number of records displayed per page, providing you with flexibility in managing your data. This feature is particularly useful when you want to adjust the amount of data visible to you at any given time. To achieve this, you can utilize the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize) property. This property is used to specify the initial number of records to display on each page. The default value of `pageSize` property is **12**.
+The Syncfusion Grid allows control over the number of records displayed per page, providing flexibility in data management. This feature is particularly useful when adjusting the amount of data visible at any given time. Use the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize) property to specify the initial number of records displayed on each page. The default value of the `pageSize` property is **12**.
 
 The following example demonstrates how to change the page size of a Grid using an external button click based on **TextBox** input.
 
@@ -44,9 +44,9 @@ The following example demonstrates how to change the page size of a Grid using a
 
 ### Change the page count 
 
-The Syncfusion Grid allows you to adjust the number of pages displayed in the pager container. This is useful when you want to manage the number of pages you see while navigating through extensive datasets. The default value of `pageCount` property is **8**.
+The Syncfusion Grid allows adjustment of the number of pages displayed in the pager container. This is useful when managing the number of pages visible while navigating through extensive datasets. The default value of the `pageCount` property is **8**.
 
-To change the page count in the Syncfusion Grid, you can utilize the [pageSettings.pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagecount) property, which defines the number of pages displayed in the pager container.
+To change the page count in the Syncfusion Grid, utilize the [pageSettings.pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagecount) property, which defines the number of pages displayed in the pager container.
 
 The following example demonstrates how to change the page count of a Grid using an external button click based on **TextBox** input.
 
@@ -64,9 +64,9 @@ The following example demonstrates how to change the page count of a Grid using 
 
 ### Change the current page
 
-The Syncfusion Grid allows you to change the currently displayed page, which can be particularly useful when you need to navigate through different pages of data either upon the initial rendering of the grid or update the displayed page based on interactions or specific conditions. The default value of `currentPage` property is **1**.
+The Syncfusion Grid allows changing the currently displayed page, which can be particularly useful when navigating to different pages of data during initial rendering or updating the displayed page based on user interactions or specific conditions. The default value of the `currentPage` property is **1**.
 
-To change the current page in the Syncfusion Grid, you can utilize the [pageSettings.currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#currentpage) property, which defines the current page number of the pager.
+To change the current page in the Syncfusion Grid, utilize the [pageSettings.currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#currentpage) property, which defines the current page number of the pager.
 
 The following example demonstrates how to dynamically change the current page using an external button click based on **TextBox** input:
 
@@ -82,15 +82,15 @@ The following example demonstrates how to dynamically change the current page us
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs12" %}
 
-### Add current page in URL as a query string 
+### Add current page in URL as query string 
 
-The Syncfusion Grid allows you to include the current page information as a query string in the URL. This feature is particularly useful for scenarios where you need to maintain and share the state of the grid's pagination.
+The Syncfusion Grid allows including current page information as a query string in the URL. This feature is particularly useful for scenarios requiring maintenance and sharing of the grid's pagination state.
 
-To add the current page detail to the URL as a query string in the Syncfusion Grid, you can enable the [enableQueryString](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#enablequerystring) property. When this property is set to **true**, it will automatically pass the current page information as a query string parameter along with the URL when navigating to other pages within the grid. 
+To add current page details to the URL as a query string in the Syncfusion Grid, enable the [enableQueryString](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#enablequerystring) property. When this property is set to **true**, it automatically passes the current page information as a query string parameter with the URL when navigating to other pages within the grid.
 
-> By enabling the `enableQueryString` property, you can easily copy the URL of the current page and share it with others. When the shared URL is opened, it will load the grid with the exact page that was originally shared.
+> Enabling the `enableQueryString` property allows easy copying and sharing of the URL for the current page. When the shared URL is opened, it loads the grid with the exact page that was originally shared.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable or disable adding the current page to the URL as a query string. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,9 +106,9 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Pager template
 
-The pager template in Syncfusion Grid allows you to customize the appearance and behavior of the pager element, which is used for navigation through different pages of grid data. This feature is particularly useful when you want to use custom elements inside the pager instead of the default elements.
+The pager template in Syncfusion Grid allows customization of the appearance and behavior of the pager element used for navigation through different pages of grid data. This feature is particularly useful when custom elements are needed inside the pager instead of the default elements.
 
-To use the pager template, you need to specify the [pagerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#template) property in your Syncfusion Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#currentpage), [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize), [pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagecount), **totalPage** and **totalRecordCount** values.
+To use the pager template, specify the [pagerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#template) property in the Syncfusion Grid configuration. The `pagerTemplate` property allows definition of a custom template for the pager. Within the template, access the [currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#currentpage), [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize), [pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagecount), **totalPages**, and **totalRecordsCount** values through the template context.
 
 The following example demonstrates how to render a **NumericTextBox** component in the pager using the `pagerTemplate` property:
 
@@ -181,11 +181,11 @@ export class AppComponent {
 
 ## Pager with page size dropdown
 
-The pager with a page size dropdown in Syncfusion Grid allows you to dynamically change the number of records displayed in the grid. This feature is useful when you want to easily customize the number of records to be shown per page.
+The pager with a page size dropdown in Syncfusion Grid allows dynamic modification of the number of records displayed in the grid. This feature is useful when easy customization of records shown per page is needed.
 
-To enable the page size Dropdown feature in the Syncfusion Grid, you need to set the [pageSettings.pageSizes](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
+To enable the page size dropdown feature in the Syncfusion Grid, set the [pageSettings.pageSizes](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesizes) property to **true** in the grid configuration. This property configuration triggers rendering of a dropdown list within the pager, allowing selection of the desired page size. The selected page size determines the number of records displayed on each page of the grid.
 
-The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `pageSizes` property:
+The following example demonstrates how to integrate the page size dropdown feature by configuring the `pageSizes` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,13 +199,13 @@ The following example that demonstrates how to integrate the page size Dropdown 
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs6" %}
 
-> If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
+> If the pageSizes property is set to a boolean value such as 'true' or 'false,' the page size dropdown defaults to an array of strings containing options like ['All', '5', '10', '15', '20'].
 
 ### Customize page size dropdown 
 
-The Syncfusion Grid allows you to customize the default values of the page size dropdown in the pager, allowing you to change the number of records displayed per page. To achieve this, you can define the [pageSizes](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesizes) property as an array of string instead of boolean value.
+The Syncfusion Grid allows customization of the default values in the page size dropdown of the pager, enabling modification of the number of records displayed per page. To achieve this, define the [pageSizes](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesizes) property as an array of strings instead of a boolean value.
 
-The following example demonstrate how to customize the default values of the pager dropdown using the `pageSizes` property:
+The following example demonstrates how to customize the default values of the pager dropdown using the `pageSizes` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -221,11 +221,11 @@ The following example demonstrate how to customize the default values of the pag
 
 > The pageSizes property can be configured with either an array of strings or a boolean value.
 
-## How to navigate to particular page 
+## Navigate to specific page
 
-Navigating to a particular page in the Syncfusion Grid is particularly useful when dealing with large datasets. It provides a quick and efficient way to jump to a specific page within the grid.
+Navigating to a specific page in the Syncfusion Grid is particularly useful when dealing with large datasets. It provides a quick and efficient way to jump to a specific page within the grid programmatically.
 
-To achieve page navigation, you can use the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method provided by Syncfusion Grid. This method allows you to programmatically navigate to a specific page within the grid.
+To achieve page navigation, use the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method provided by Syncfusion Grid. This method allows programmatic navigation to a specific page within the grid.
 
 The following example demonstrates how to dynamically navigate to a particular page using the `goToPage` method triggered by an external button click based on **TextBox** input:
 
@@ -241,11 +241,11 @@ The following example demonstrates how to dynamically navigate to a particular p
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs16" %}
 
-## How to get the pager element
+## Get the pager element
 
-You can get pager element in the Syncfusion Grid. This allows you to customize the pager's appearance or behavior to meet the requirements of your application.
+The pager element can be obtained in the Syncfusion Grid. This allows customization of the pager's appearance or behavior to meet application requirements.
 
-[getPager](https://ej2.syncfusion.com/angular/documentation/api/grid/#getpager)- This method allows you to obtain a reference to the pager element within the Syncfusion Grid. It returns an HTML element representing the pager.
+[getPager](https://ej2.syncfusion.com/angular/documentation/api/grid/#getpager) - This method allows obtaining a reference to the pager element within the Syncfusion Grid. It returns an HTML element representing the pager.
 
 ```ts
   this.grid.getPager()
@@ -253,11 +253,11 @@ You can get pager element in the Syncfusion Grid. This allows you to customize t
 
 ## Dynamically calculate page size based on element height
 
-You have an option to dynamically calculate the page size of a grid by considering the height of its parent element. This functionality proves invaluable in ensuring that the grid's content remains within the available space, preventing the need for excessive scrolling. It primarily serves the purpose of automatically adjusting the `pageSize` when the height of the grid's parent element changes dynamically. Upon each alteration in the parent element's height, invoking this method will compute the grid's `pageSize` and present the current page records accordingly. This feature effectively addresses situations where a static `pageSize` value does not cater to the varying heights of different parent elements, preventing any unwanted empty spaces within the grid.
+There is an option to dynamically calculate the page size of a grid by considering the height of its parent element. This functionality proves invaluable in ensuring that the grid's content remains within the available space, preventing the need for excessive scrolling. It primarily serves the purpose of automatically adjusting the `pageSize` when the height of the grid's parent element changes dynamically. Upon each alteration in the parent element's height, invoking this method will compute the grid's `pageSize` and present the current page records accordingly. This feature effectively addresses situations where a static `pageSize` value does not cater to the varying heights of different parent elements, preventing unwanted empty spaces within the grid.
 
-To achieve page size calculation based on an element's height in the Grid, you can utilize the [calculatePageSizeByParentHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/#calculatepagesizebyparentheight) method. This method calculates the page size based on the height of the parent element.
+To achieve page size calculation based on an element's height in the Grid, utilize the [calculatePageSizeByParentHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/#calculatepagesizebyparentheight) method. This method calculates the page size based on the height of the parent element.
 
-The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on the **NumericTextBox** input:
+The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on **NumericTextBox** input:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -273,7 +273,7 @@ The following example demonstrates how to calculate the page size based on eleme
 
 ## Render pager at the top of the grid 
 
-The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, you might want to display the pager at the top of the grid. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event. This event is triggered when the Grid completes rendering its data. By handling this event, you can customize the rendering of the pager and move it to the top of the Grid.
+The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, displaying the pager at the top of the grid may be desired. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event. This event is triggered when the Grid completes rendering its data. By handling this event, the rendering of the pager can be customized and moved to the top of the Grid.
 
 Here's an example that demonstrates how to render the pager at the top of the grid using the `dataBound` event:
 
@@ -289,20 +289,20 @@ Here's an example that demonstrates how to render the pager at the top of the gr
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs7" %}
 
-> During the paging action, the pager component triggers the below three events.
+> During paging actions, the pager component triggers the following three events:
 > * The [created](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel/#created) event triggers when Pager is created.
-> * The [click](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel/#click) event triggers when the numeric items in the pager is clicked.
+> * The [click](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel/#click) event triggers when the numeric items in the pager are clicked.
 > * The [dropDownChanged](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel/#dropdownchanged) event triggers when pageSize DropDownList value is selected.
 
 ## Pager events 
 
-The Syncfusion Grid component triggers two pager events during paging actions:
+The Syncfusion Grid component triggers two primary pager events during paging actions:
 
-[actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin)-  This event triggered before any paging action (such as changing the page, changing the page size and etc) is initiated. You can use this event to customize or control the behavior of paging actions.
+[actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) - This event is triggered before any paging action (such as changing the page or page size) is initiated. This event can be used to customize or control the behavior of paging actions.
 
-[actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
+[actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) - This event is triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and total number of records. This event can be used to perform actions or update the UI after the operation has been executed.
 
-The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the Syncfusion Angular Grid:
+The following example demonstrates how to use these events to display notification messages indicating the current and next page during paging actions in the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

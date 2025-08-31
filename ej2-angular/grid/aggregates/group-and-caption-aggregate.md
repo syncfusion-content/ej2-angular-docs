@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group and caption aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Group and caption aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to display group footer and group caption aggregates in the Syncfusion Angular Grid with templates and pagination options.
 platform: ej2-angular
 control: Group and caption aggregate 
 documentation: ug
@@ -10,16 +10,15 @@ domainurl: ##DomainURL##
 
 # Group and caption aggregate in Angular Grid component
 
-Group footer and caption aggregates in the Syncfusion Angular Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the [groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupfootertemplate) and [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupcaptiontemplate) properties of the [AggregateColumnDirective](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective).
+Group footer and caption aggregates in the Syncfusion Angular Grid component provide calculated summary values based on group data. Aggregate values can be displayed either in the group footer cells (at the end of each group) or in group caption cells (at the beginning of each group). The [groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupfootertemplate) property renders values in group footers, while [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupcaptiontemplate) renders values in group captions.
 
-> When working with group aggregates in Syncfusion Grid, it is important to set the property [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowgrouping) of the [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column) to **true**. 
-> To maintain grouped columns in the grid after grouping, set [showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showgroupedcolumn) to **true**.
+> For group aggregates, set [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowgrouping) of the [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column) to **true**. To keep grouped columns visible after grouping, set [showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showgroupedcolumn) to **true**.
 
 ## Group footer aggregates
 
-Group footer aggregates are displayed in the footer cells of each group. These cells appear at the bottom of each group and provide aggregate values based on the grouped data. To display group footer aggregates, you need to provide a template using the `groupFooterTemplate` property. The template will be used to render the aggregate values in the group footer cells.
+Group footer aggregates appear in footer cells below each group and display summary values for the group's items. Configure these aggregates by defining a template using the `groupFooterTemplate` property, which provides access to the calculated aggregate value for each group.
 
-Here's an example that demonstrates how to use group footer aggregates in the Syncfusion Angular Grid component:
+Example: Using group footer aggregates in Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,14 +54,14 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
   
 {% previewsample "page.domainurl/samples/grid/aggregates-group-cs1" %}
 
-> * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template and as **#groupCaptionTemplate** to specify the group caption template.
-> * The aggregate values must be accessed inside the template using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.
+> * Use **#groupFooterTemplate** as the template variable for group footer cells and **#groupCaptionTemplate** for group caption cells.
+> * Access the aggregate value within a template using its corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) key, such as `data.sum` or `data.max`.
 
 ## Group caption aggregates
 
-Group caption aggregates are displayed in the caption cells of each group. These cells appear at the top of each group and provide a summary of the grouped data. To display group caption aggregates, you can use the [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupcaptiontemplate) property. This property allows you to define a template that will be used to display the aggregate values in the group caption cells.
+Group caption aggregates are shown in the caption row at the top of each group, summarizing group data before the group rows are listed. Use the [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#groupcaptiontemplate) property to define these summary displays.
 
-Here's an example that demonstrates how to use group and caption aggregates in the Syncfusion Angular Grid component:
+Example: Configuring group and caption aggregates in Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,12 +97,13 @@ Here's an example that demonstrates how to use group and caption aggregates in t
   
 {% previewsample "page.domainurl/samples/grid/aggregates-group-cs2" %}
 
-> The group total summary in Syncfusion Grid is calculated based on the current page records for each group by default.
-> If you require aggregates for all the data in the grid, you can enable the [disablePageWiseAggregates](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#disablepagewiseaggregates) property.
+> By default, group total summaries are calculated using only the current page data for each group. To display aggregates for all grouped data (not just the current page), enable the [disablePageWiseAggregates](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#disablepagewiseaggregates) property in group settings.
 
-## Disable page wise aggregates for grouping
+## Disable pagewise aggregates
 
-In some cases, you may want to disable the page-wise aggregates for grouping in the Syncfusion Angular Grid component. By default, when grouping is enabled with paging, the grid calculates the aggregates for each page separately. However, you can choose to disable this behavior and calculate aggregates for the entire grouped data instead. This can be achieved by setting the [disablePageWiseAggregates](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#disablepagewiseaggregates) property to **true**.
+When grouping is combined with paging, by default the Angular Grid calculates group aggregates separately for each page. To calculate aggregates for the entire grouped dataset instead, set [disablePageWiseAggregates](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#disablepagewiseaggregates) to **true** within groupSettings. This allows both caption and footer aggregates to reflect the entire dataset regardless of paging.
+
+Example: Disabling pagewise aggregates in grouped Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

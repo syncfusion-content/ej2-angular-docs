@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in Angular Pivotview component | Syncfusion
+title: Apply custom style to pivot cells in Angular Pivotview | Syncfusion
 description: Learn here all about Apply custom style to pivot cells in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Apply custom style to pivot cells 
@@ -10,9 +10,23 @@ domainurl: ##DomainURL##
 
 # Apply custom style to pivot cells in Angular Pivotview component
 
-The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event in [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) can be used to apply custom style to row and value cells, and the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event in [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) can be used to apply custom styles to column cells.
+The Angular Pivotview component allows you to customize the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
-In the following example, a custom style has been applied to the column header **"Sold Amount"** under **"FY 2016"** via the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event and to the row header **"Germany"** and its aggregated value via the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event by adding the **"e-custom"** class to the cell element.
+## Overview
+
+You can apply custom styles to different types of cells in the pivot table:
+- Use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event to style row headers and value cells
+- Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event to style column headers
+
+Both events are available through the [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/) property of the Pivotview component.
+
+## Implementation example
+
+In the following example, we apply custom styling to:
+- The column header **"Sold Amount"** under **"FY 2016"** using the **headerCellInfo** event
+- The row header **"Germany"** and its corresponding aggregated values using the **queryCellInfo** event
+
+The styling is applied by adding a custom CSS class **"e-custom"** to the cell elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

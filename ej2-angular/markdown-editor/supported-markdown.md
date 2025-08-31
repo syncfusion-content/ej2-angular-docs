@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Markdown Syntax in Markdown editor component | Syncfusion
-description: Learn here all about Supported Markdown Syntax in Syncfusion Angular Markdown editor component of Syncfusion Essential JS 2 and more.
+title: Supported Markdown Syntax in Markdown Editor component | Syncfusion
+description: Learn here all about Supported Markdown Syntax in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Supported Markdown Syntax
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion Angular Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
 
-## Markdown Syntax Guide for Angular Markdown Editor
+## Markdown syntax guide for angular markdown editor
 
 The following table lists the Markdown commands supported by the Syncfusion Angular Markdown Editor:
 

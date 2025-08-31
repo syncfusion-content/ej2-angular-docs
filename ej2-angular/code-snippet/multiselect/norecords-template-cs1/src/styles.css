@@ -9,3 +9,21 @@
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.norecord:before{
+    content: '\e7c3';
+    font-family: 'e-icons';
+    font-size: 18px;
+    margin-left: -25px;
+    margin-top: -3px;
+    position: absolute;
+}
+
+.action-failure:before{
+    content: '\e7c4';
+    font-family: 'e-icons';
+    font-size: 18px;
+    margin-top: -4px;
+    position: absolute;
+    margin-left: -25px;
+}

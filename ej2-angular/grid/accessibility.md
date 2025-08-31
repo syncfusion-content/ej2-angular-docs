@@ -146,10 +146,10 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 | **Windows**                  | **MAC**                         | **To do this**                                                                                               |
 | ---------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| <kbd>Ctrl + Up Arrow</kbd>   | <kbd>Command + Up Arrow</kbd>   | Collapses all the visible groups.                                                                            |
-| <kbd>Ctrl + Down Arrow</kbd> | <kbd>Command + Down Arrow</kbd> | Expands all the visible groups.                                                                              |
-| <kbd>Ctrl + Space</kbd>      | <kbd>Ctrl + Space</kbd>         | Performs grouping when focused on a header element.                                                          |
-| <kbd>Enter</kbd>             | <kbd>Enter</kbd>                | If the current cell is an expand/collapse cell then expands/collapses the current group/detailrow/childgrid. |
+| <kbd>Ctrl + Up Arrow</kbd>   | <kbd>Command + Up Arrow</kbd>   | Collapses all visible grouped rows in the grid.                                                                            |
+| <kbd>Ctrl + Down Arrow</kbd> | <kbd>Command + Down Arrow</kbd> | Expands all visible grouped rows in the grid.                                                                              |
+| <kbd>Ctrl + Space</kbd>      | <kbd>Ctrl + Space</kbd>         | Groups data by the currently focused column header.                                                          |
+| <kbd>Enter</kbd>             | <kbd>Enter</kbd>                | Expands or collapses the focused group row, detail row, or child grid. |
 
 <b>Print</b>
 
@@ -168,39 +168,39 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 | **Windows**              | **MAC**                          | **To do this**                                                                                                                                          |
 | ------------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <kbd>F2</kbd>            | <kbd>F2</kbd>                    | Starts editing of selected row if Mode is Normal/Dialog or Starts editing of selected cell if Mode is Batch.                                            |
-| <kbd>Enter</kbd>         | <kbd>Enter</kbd>                 | Saves the current form it the Mode is Normal or Dialog / Saves the current cell and starts editing the next row cell if Mode is Batch.                  |
-| <kbd>Insert</kbd>        | <kbd>Ctrl + Command + Enter<kbd> | Creates a new add form depending on the NewRowPosition.                                                                                                 |
-| <kbd>Delete</kbd>        | <kbd>Delete</kbd>                | Deletes the current selected record.                                                                                                                    |
-| <kbd>Tab</kbd>           | <kbd>Tab</kbd>                   | Navigates to the next editable cell if the Mode is Normal or Dialog / Saves the current cell and starts editing the next cell is Mode is Batch.         |
-| <kbd>Shift + Tab</kbd>   | <kbd>Shift + Tab</kbd>           | Navigates to the previous editable cell if the Mode is Normal or Dialog / Saves the current cell and starts editing the previous cell is Mode is Batch. |
-| <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd>         | Saves the current cell and starts editing the previous row cell if Mode is Batch.                                                                       |
+| <kbd>F2</kbd>            | <kbd>F2</kbd>                    | Begins editing the selected row (Normal/Dialog mode) or selected cell (Batch mode).                                            |
+| <kbd>Enter</kbd>         | <kbd>Enter</kbd>                 | Saves current form (Normal/Dialog mode) or saves current cell and moves to next row cell (Batch mode).                  |
+| <kbd>Insert</kbd>        | <kbd>Ctrl + Command + Enter</kbd> | Creates a new record based on the configured NewRowPosition setting.                                                                                                 |
+| <kbd>Delete</kbd>        | <kbd>Delete</kbd>                | Removes the currently selected record from the grid.                                                                                                                    |
+| <kbd>Tab</kbd>           | <kbd>Tab</kbd>                   | Moves to next editable cell (Normal/Dialog mode) or saves current cell and edits next cell (Batch mode).         |
+| <kbd>Shift + Tab</kbd>   | <kbd>Shift + Tab</kbd>           | Moves to previous editable cell (Normal/Dialog mode) or saves current cell and edits previous cell (Batch mode). |
+| <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd>         | Saves current cell and begins editing the previous row cell (Batch mode).                                                                       |
 
 <b>Filtering</b>
 
 | **Windows**                 | **MAC**                     | **To do this**                                                                                      |
 | --------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------- |
-| <kbd>Alt + Down arrow</kbd> | <kbd>Alt + Down arrow</kbd> | Opens the filter menu(excel, menu and checkbox filter) when its header element is in focused state. |
+| <kbd>Alt + Down arrow</kbd> | <kbd>Alt + Down arrow</kbd> | Opens the filter menu (Excel, Menu, or CheckBox filter types) when the corresponding header element has focus. |
 
 <b>Column Menu</b>
 
 | **Windows**                 | **MAC**                     | **To do this**                                                 |
 | --------------------------- | --------------------------- | -------------------------------------------------------------- |
-| <kbd>Alt + Down arrow</kbd> | <kbd>Alt + Down arrow</kbd> | Opens column menu when its header element is in focused state. |
+| <kbd>Alt + Down arrow</kbd> | <kbd>Alt + Down arrow</kbd> | Opens the column menu when the corresponding header element has focus. |
 
 <b>Reordering</b>
 
 | **Windows**                                 | **MAC**                                         | **To do this**                                                |
 | ------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
-| <kbd>Ctrl + left arrow or right arrow</kbd> | <kbd>Command  + left arrow or right arrow</kbd> | Reorders the focused header column to the left or right side. |
+| <kbd>Ctrl + left arrow or right arrow</kbd> | <kbd>Command + left arrow or right arrow</kbd> | Reorders the focused header column to the left or right position. |
 
 <b>Sorting</b>
 
 | **Windows**              | **MAC**                    | **To do this**                                                                                  |
 | ------------------------ | -------------------------- | ----------------------------------------------------------------------------------------------- |
-| <kbd>Enter</kbd>         | <kbd>Enter</kbd>           | Performs sorting(ascending/descending) on a column when its header element is in focused state. |
-| <kbd>Ctrl + Enter</kbd>  | <kbd>Command + Enter</kbd> | Performs multi-sorting on a column when its header element is in focused state.                 |
-| <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd>   | Clears sorting for the focused header column.                                                   |
+| <kbd>Enter</kbd>         | <kbd>Enter</kbd>           | Applies sorting (ascending/descending) to the focused column header. |
+| <kbd>Ctrl + Enter</kbd>  | <kbd>Command + Enter</kbd> | Adds the focused column to multi-column sorting while preserving existing sort criteria.                 |
+| <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd>   | Removes sorting from the focused header column.                                                   |
 
 <br>
 
@@ -208,9 +208,9 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 ### How to prevent default key action behavior
 
-The Syncfusion Angular Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
+The Syncfusion Angular Grid provides flexibility to prevent default key action behaviors based on application requirements. This capability allows you to intercept and customize responses when specific keys are pressed within the grid.
 
-To prevent the default key action behavior in the grid, you can utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To prevent default key action behavior in the grid, utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event. This event triggers for every key press, enabling customization based on the pressed key.
 
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event. 
 
@@ -228,25 +228,25 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion Angular Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The Syncfusion Angular Grid component enables enhanced keyboard shortcut usability for various grid actions and navigation. Beyond built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
-To achieve this, you can utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To achieve this, utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event. This event triggers for every key press, enabling behavior customization based on the pressed key.
 
 The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
 
-* Pressing N adds a new record.
-* Pressing Ctrl + S save a record by invoking endEdit.
-* Pressing Ctrl + D deletes a record.
-* Pressing Ctrl + A selects all rows.
-* Pressing Ctrl + G groups the grid by a specified column.
+* Pressing **N** adds a new record.
+* Pressing **Ctrl + S** saves a record by invoking endEdit.
+* Pressing **Ctrl + D** deletes a record.
+* Pressing **Ctrl + A** selects all rows.
+* Pressing **Ctrl + G** groups the grid by a specified column.
 
-And prevented the default actions associated with the following keyboard shortcuts used for default grouping and editing action:
+The example also prevents default actions for the following keyboard shortcuts typically used for built-in grouping and editing:
 
-* Ctrl + Space
-* Insert
-* F2 
-* Delete 
-* Enter
+* **Ctrl + Space**
+* **Insert**
+* **F2** 
+* **Delete** 
+* **Enter**
 
 You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion Angular Grid component.
 

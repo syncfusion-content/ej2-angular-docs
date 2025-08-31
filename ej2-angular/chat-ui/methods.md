@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Methods in Angular Chat UI component
 
-## Adding message
+## Add message
 
-You can use the [addMessage](../api/chat-ui#addmessage) public method to add the messages in the Chat UI. You can add it either as a `string` or `MessageModel` collection. It programmatically adds a new message to the chat.
+The [addMessage](../api/chat-ui/#addmessage) method programmatically adds a new message to the chat. You can provide the new message as either a `string` or a `MessageModel` object.
 
-The below sample demonstrates adding a new message as `string` and as a `MessageModel` object.
+The following sample demonstrates how to add a new message using both a `string` and a `MessageModel` object.
 
-Here is an example of how to use the [addMessage](../api/chat-ui#addmessage) method:
+Here is an example of how to use the [addMessage](../api/chat-ui/#addmessage) method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,9 +42,9 @@ Here is an example of how to use the [addMessage](../api/chat-ui#addmessage) met
 
 {% previewsample "page.domainurl/samples/chat-ui/methods/addmessagemodel" %}
 
-## Edit message
+## Update message
 
-You can use the [updateMessage](../api/chat-ui#updatemessage) public method to update the messages in the ChatUI to modify an existing message within the chat, useful for editing or correcting sent messages.
+The [updateMessage](../api/chat-ui/#updatemessage) method modifies an existing message in the Chat UI, which is useful for editing or correcting previously sent messages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,9 +58,9 @@ You can use the [updateMessage](../api/chat-ui#updatemessage) public method to u
 
 {% previewsample "page.domainurl/samples/chat-ui/methods/editmessage" %}
 
-## Scroll to bottom
+## Scroll to the bottom
 
-You can use the [scrollToBottom](../api/chat-ui#scrolltobottom) public method to scroll the chat view to the latest message, ensuring users see the new content updated.
+The [scrollToBottom](../api/chat-ui/#scrolltobottom) method scrolls the chat view to the most recent message, ensuring that the latest content is visible to the user.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

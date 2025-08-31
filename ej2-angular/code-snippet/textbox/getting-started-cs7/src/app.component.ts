@@ -13,7 +13,7 @@ standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
                 <ejs-textbox placeholder="Success" floatLabelType="Auto" cssClass="e-success"></ejs-textbox>
-                <ejs-textbox placeholder="Warning" floatLabelType="Auto" cssClass="e-warning"></ejs-textbox>>
+                <ejs-textbox placeholder="Warning" floatLabelType="Auto" cssClass="e-warning"></ejs-textbox>
               </div>`
 })
 

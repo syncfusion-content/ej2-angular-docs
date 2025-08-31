@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attachments in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about attachments with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about attachments with ##Platform_Name## AI AssistView component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Attachments in ##Platform_Name## AI AssistView control
+# File Attachments in ##Platform_Name## AI AssistView component
 
-The `Attachment` support in AI AssistView specifies user to include file attachments along with their prompts in the AI AssistView. This enhances the interaction by allowing users to provide additional context through files. You can enable this feature using the `enableAttachments` property, and customize its behavior using the `attachmentSettings` configuration.
+The AI AssistView component supports file attachments, allowing users to include files along with their prompts to provide additional context and enhance interactions. Users can upload documents, images, and other file types to supplement their queries. Enable this functionality using the `enableAttachments` property and customize the behavior through the `attachmentSettings` configuration.
 
-## Enable attachment
+## Enable file attachments
 
-You can enable the attachment by using the `enableAttachments` property. By default, the value is `false`.
+Enable file attachment support by setting the `enableAttachments` property to `true`. By default, it is disabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,15 +26,15 @@ You can enable the attachment by using the `enableAttachments` property. By defa
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enable-attachment" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/enable-attachment" %}
 
-## Configuring attachments
+## Configure attachment settings
 
-You can use the `attachmentSettings` property to configure the attachments in the AI AssistView.
+Use the [attachmentSettings](../api/ai-assistview/attachmentSettings/) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
 
 ### Setting saveUrl and removeUrl
 
-You can use the `saveUrl` and `removeUrl` property to add the save and remove the URL for the file uploaded in the AI AssistView.
+Set the [saveUrl](../api/ai-assistview/attachmentSettings/#saveurl) and [removeUrl](../api/ai-assistview/attachmentSettings/#removeurl) properties to specify server endpoints for handling file uploads and removals. The `saveUrl` processes file uploads, while the `removeUrl` handles file deletion requests.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,11 +45,11 @@ You can use the `saveUrl` and `removeUrl` property to add the save and remove th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/save-remove-url" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/save-remove-url" %}
 
 ### Setting file type
 
-You can use the `allowedFileType` property to upload the specific file types in the attachment.
+Use the [allowedFileType](../api/ai-assistview/attachmentSettings/#allowedfiletypes) property to specify which file types users can upload. This property accepts file extensions (e.g., '.pdf', '.docx') or MIME types to control the types of files that can be attached.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,11 +60,11 @@ You can use the `allowedFileType` property to upload the specific file types in 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/file-type" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/file-type" %}
 
 ### Setting file size
 
-You can use the `maxFileSize` property to allow the maximum file size of the upload file in the AI AssistView. By default, the value is `2000000` bytes.
+Configure the [maxFileSize](../api/ai-assistview/attachmentSettings/#maxfilesize) property to define the maximum file size allowed for uploads. Specify the size in bytes. The default value is `2000000` bytes (2 MB). Files exceeding this limit will not be uploaded.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,4 +75,4 @@ You can use the `maxFileSize` property to allow the maximum file size of the upl
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/file-size" %}
+{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/file-size" %}

@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import {
     PivotView, ToolbarService, ToolbarItems, DisplayOption, IDataSet, PivotChartService
@@ -11,20 +8,16 @@ import {
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
-
 @Component({
 imports: [
-        
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
 standalone: true,
   selector: 'app-container',
   providers: [ToolbarService, PivotChartService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showToolbar='true' width='100%' [displayOption]='displayOption' height='350' tooltipTemplate='#Template' [toolbar]='toolbarOptions' [chartSettings]='chartSettings'></ejs-pivotview></div>`
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showToolbar='true' width='100%' [displayOption]='displayOption' height='350' tooltipTemplate="#Template" [toolbar]='toolbarOptions' [chartSettings]='chartSettings'></ejs-pivotview></div>`
 })
 
 export class AppComponent {

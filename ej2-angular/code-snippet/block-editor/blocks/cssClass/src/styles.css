@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import "node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-lists/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-angular-blockeditor/styles/fluent2.css';
+
+#container {
+    margin: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Custom CSS for blocks  */
+.e-block.info-block, .e-block.warning-block, .e-block.success-block, .e-block.error-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border-left: 4px solid;
+}
+
+.e-block.info-block {
+    background-color: #e6f3ff;
+    border-left-color: #007bff;
+    color: #004085;
+}
+
+.e-block.warning-block {
+    background-color: #fff8e1;
+    border-left-color: #ffc107;
+    color: #856404;
+}
+
+.e-block.success-block {
+    background-color: #e8f5e9;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.e-block.error-block {
+    background-color: #fdecea;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.e-block.custom-font {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #4a4a4a;
+    border-bottom: 2px dotted #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

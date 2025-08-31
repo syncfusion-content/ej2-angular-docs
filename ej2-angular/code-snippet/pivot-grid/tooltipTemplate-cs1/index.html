@@ -45,6 +45,34 @@
     </style>
 </head>
 <body style="margin-top: 125px">
+    <script id="Template" type="text/x-template">
+        <div class='wrap'>
+            <div>
+                <span class='pivotTooltipHeader'>Row Headers :</span >
+                <span class='pivotTooltipValue'>${rowHeaders}</span >
+            </div>
+            <div>
+                <span class='pivotTooltipHeader'>Row Fields : </span>
+                <span class='pivotTooltipValue'>${rowFields}</span>
+            </div>
+            <div>
+                <span class='pivotTooltipHeader'>Column Headers :</span >
+                <span class='pivotTooltipValue'>${columnHeaders}</span>
+            </div>
+            <div>
+                <span class='pivotTooltipHeader'>Column Fields :</span>
+                <span class='pivotTooltipValue'>${columnFields}</span>
+            </div>
+            <div>
+                <span class='pivotTooltipHeader'>Value Field :</span>
+                <span class='pivotTooltipValue'>${valueField}</span>
+            </div>
+            <div>
+                <span class='pivotTooltipHeader'>Value : </span>
+                <span class='pivotTooltipValue'>${value}</span>
+            </div>
+        </div>
+    </script>
     <app-container>
         <div id='loader'>Loading....</div>
     </app-container>

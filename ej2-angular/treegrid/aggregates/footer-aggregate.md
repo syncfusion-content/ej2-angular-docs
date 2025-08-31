@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Footer aggregate in Angular Treegrid component | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Footer aggregate in Angular TreeGrid component | Syncfusion
+description: Learn about configuring and displaying footer aggregates in the Syncfusion Angular TreeGrid component, including API usage, templates, and formatting options.
 platform: ej2-angular
-control: Footer aggregate 
+control: Footer aggregate
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Footer aggregate in Angular Treegrid component
+# Footer aggregate in Angular TreeGrid component
 
-Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property to render the aggregate value in footer cells.
+Footer aggregate values are calculated for all rows and displayed in the footer cells of the TreeGrid. Use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property to render aggregate values in footer cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -21,16 +21,16 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% include code-snippet/treegrid/aggregate-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/aggregate-cs3" %}
 
-> The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) name.
-> Get the footer content element by using [`getFooterContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfoootercontent) method in the tree grid.
-> Get the footer content table element by using [`getFooterContenTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfootercontenttable) method in the tree grid.
+> Access aggregate values inside the template by referring to the corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) property name, such as Sum, Average, etc.
+> Obtain the footer content element programmatically using the [`getFooterContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfootercontent) method of the TreeGrid instance.
+> Retrieve the footer content table element using the [`getFooterContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfootercontenttable) method.
 
 ## How to format aggregate value
 
-You can format the aggregate value result by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) property.
+Format the aggregate value result by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#format) property. The `format` property can be set to standard numeric or date formats according to your requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,5 +41,5 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 {% include code-snippet/treegrid/aggregate-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/aggregate-cs4" %}

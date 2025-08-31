@@ -1,24 +1,28 @@
 ---
 layout: post
 title: Connector customization in Angular Diagram component | Syncfusion®
-description: Learn here all about Connectors in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+description: Learn how to customize connector properties such as decorator shapes, styles, and gradient effects in the Syncfusion Angular Diagram component.
 platform: ej2-angular
 control: Connector customization
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector customization
+# Connector Customization
 
-Diagram allows you to customize the connector appearances. The following topics shows how to customize several properties of the connectors.
+The Diagram component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
 
-## Decorator
+## Decorator shapes and customization
 
-* Starting and ending points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or path. The connection end points can be decorated with the [`sourceDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcedecorator) and [`targetDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetdecorator) properties of the connector.
+Decorators are visual elements that appear at the starting and ending points of connectors, typically used to indicate direction or relationship types such as arrows, circles, diamonds, or custom shapes.
 
-* The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `targetDecorator` allows to define the shape of the decorators.
+### Basic decorator configuration
 
-* To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property.
+The connection end points can be decorated using the [`sourceDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcedecorator) and [`targetDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetdecorator) properties of the connector.
+
+The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `sourceDecorator` allows defining the shape of the source decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `targetDecorator` allows defining the shape of the target decorators.
+
+To create custom shapes for decorators, use the [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property to define SVG path strings for both source and target decorators.
 
 The following code example illustrates how to create decorators of various shapes.
 
@@ -36,11 +40,9 @@ The following code example illustrates how to create decorators of various shape
 
 ### Customize the decorator appearance
 
-* The source decorator’s [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle\#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle\#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties are used to customize the color, width, and appearance of the decorator.
+The visual appearance of decorators can be customized using stroke and fill properties to match design requirements or highlight specific connector types.
 
-* To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray).
-
-* To set the size for source and target decorator, use width and height property.
+o customize the border of a decorator, use the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokecolor/), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokewidth/), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokedasharray/) properties on the `sourceDecorator` and `targetDecorator` objects. Similarly, use the `width` and `height` properties to control the size of each decorator.
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -56,13 +58,15 @@ The following code example illustrates how to customize the appearance of the de
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectordecoratorappearnce-cs1" %}
 
-### Gradient style for decorator.
+### Gradient styling for decorators
 
-The gradient property is used to set the gradient color for the decorator. There are two types of gradient.
- * Linear
- * Radial
+The gradient property applies smooth color transitions to decorators, providing enhanced visual appeal for complex diagrams or when highlighting important connections.
 
-The following code example illustrates how to apply gradient for the decorator.
+The gradient property supports two types of gradients:
+ * Linear - Creates a straight-line color transition
+ * Radial - Creates a circular color transition from center outward
+
+The following code example illustrates how to apply gradient effects to decorators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,15 +80,17 @@ The following code example illustrates how to apply gradient for the decorator.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsdecoratorstyle-cs1" %}
 
-## Padding
+## Spacing and padding controls
 
-Padding is used to leave the space between the Connector's end point and the object to where it is connected.
+### Padding between connectors and nodes
 
-* The [`sourcePadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepadding) property of connector defines space between the source point and the source node of the connector.
+Padding creates visual separation between connector endpoints and the nodes they connect, preventing connectors from appearing to touch or overlap with node boundaries.
 
-* The [`targetPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpadding) property of connector defines space between the end point and the target node of the connector.
+The [`sourcePadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepadding) property of the connector defines space between the source point and the source node of the connector.
 
-* The following code example illustrates how to leave space between the connection end points and source and target nodes.
+The [`targetPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpadding) property of the connector defines space between the end point and the target node of the connector.
+
+The following code example illustrates how to leave space between the connection endpoints and source and target nodes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,10 +104,13 @@ Padding is used to leave the space between the Connector's end point and the obj
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs2" %}
 
-## Bridging
+## Advanced connector features
 
-Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bridgeDirection) is set to top. Depending upon the direction given bridging direction appears.
-Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
+### Line bridging for intersection handling
+
+Line bridging creates visual bridges where connectors intersect, helping users distinguish between different connection paths in complex diagrams. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bridgeDirection/) is set to top, with the bridge appearing based on the specified direction.
+
+Bridging can be enabled or disabled using either `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,17 +124,17 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsbridging-cs1" %}
 
-N> You need to inject connector bridging module into the diagram.
+> Note: The `ConnectorBridging` module must be injected into the diagram to use this feature.
 
-The [`bridgeSpace`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#bridgespace) property of connectors can be used to define the width for line bridging.
+The [`bridgeSpace`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#bridgespace) property of connectors defines the width for line bridging.
 
-Limitation: Bezier segments do not support bridging.
+**Limitation**: Bezier segments do not support bridging functionality.
 
-## Hit padding
+### Hit padding for interaction
 
-* The [`hitPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#hitpadding) property enables you to define the clickable area around the connector path.The default value for hitPadding is 10.
+The [`hitPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#hitpadding) property defines the clickable area around the connector path, making it easier for users to select connectors, especially thin ones. This improves user experience by expanding the interactive zone without changing the visual appearance. The default value for hitPadding is 10.
 
-* The following code example illustrates how to specify hit padding for connector.
+The following code example illustrates how to specify hit padding for connectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,9 +148,9 @@ Limitation: Bezier segments do not support bridging.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorHitPadding-cs1" %}
 
-## Corner radius
+### Corner radius for rounded connectors
 
-Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#cornerradius) property.
+Corner radius creates connectors with rounded corners instead of sharp angles, providing a more polished appearance for diagrams. The radius of the rounded corner is set with the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#cornerradius) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -179,13 +188,14 @@ The following code example illustrates how to customize the segment appearance.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorssegappear-cs1" %}
 
-## Connector constraints
 
-* The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints) property of connector allows to enable/disable certain features of connectors.
+## Connector constraints and behavior
 
-* To enable or disable the constraints, refer [`constraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/#connectorconstraints).
+The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints) property of connectors enables or disables specific features such as selection, editing, deletion, or interaction behaviors.
 
-The following code illustrates how to disable selection.
+To enable or disable constraints, refer to [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/#connectorconstraints).
+
+The following code illustrates how to disable selection for a connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,24 +209,21 @@ The following code illustrates how to disable selection.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsconstraints-cs1" %}
 
-## Add info for connector
+## Additional connector properties
 
-The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#addinfo) property of connectors allow you to maintain additional information to the connectors.
+### Adding custom information
 
+The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#addinfo) property of connectors allows maintaining additional information or metadata associated with connectors for application-specific requirements.
 
 ```html
-
 <e-connectors>
     <e-connector id='connector1' type='Straight' addInfo='centralconnector' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1' [constraints]='constraints'></e-connector>
 </e-connectors>
-
 ```
 
-## ZIndex for connector
+### Z-index for layering control
 
-The connectors [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#zindex) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
-
-The following code illustrates how to render connector based on the stack order.
+The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#zindex) property specifies the stack order of connectors. A connector with a greater stack order appears in front of connectors with lower stack orders, enabling precise control over visual layering.
 
 The following code illustrates how to render connector based on the stack order.
 
@@ -232,11 +239,11 @@ The following code illustrates how to render connector based on the stack order.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/zindex-cs1" %}
 
-## Connector spacing
+### Connector spacing for routing
 
-* The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#connectorspacing) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
+The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#connectorspacing) property defines the minimum distance between the source node and the connector when automatic routing occurs. This determines how far the connector will reroute around obstacles or the minimum length for new segments.
 
-The following code example illustrates how to connect two nodes.
+The following code example illustrates how to configure connector spacing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,9 +257,9 @@ The following code example illustrates how to connect two nodes.
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorSpacing-cs1" %}
 
-## MaxSegment thumb
+#### Maximum segment thumbs
 
-The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#maxsegmentthumb) is used to limit the  number of segment thumb in the connector.
+The [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#maxsegmentthumb) property limits the number of segment manipulation handles displayed on a connector, helping maintain clean interfaces in complex diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,9 +275,9 @@ The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentatio
 
 ![maxSegmentThumb](../images/maxSegmentThumb.png)
 
-## Reset segments
+#### Reset segments to default state
 
-The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#resetsegments) method resets the segments of connectors to their default state based on their connection points. This operation removes any custom segments and restores the connectors to their original configuration. The following example demonstrates how to reset connector segments at runtime.
+The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#resetsegments) method resets connector segments to their default state based on connection points. This operation removes custom segments and restores connectors to their original configuration, useful for cleaning up user modifications.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -283,12 +290,13 @@ The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorresetseg-cs1" %}
+## Dynamic connector manipulation
 
-## Enable Connector Splitting
+### Enable connector splitting
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit) is false
+Connector splitting allows creating new connections when a node is dropped onto an existing connector. The connector splits at the drop point, creating connections between the new node and the existing connected nodes. Enable this feature by setting [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit) to true. The default value is false.
 
-The following code illustrates how to split the connector and create a connection with new node.
+The following code illustrates how to enable connector splitting functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -304,11 +312,11 @@ The following code illustrates how to split the connector and create a connectio
 
 ![Enable Connector Split](../images/EnableSplit.gif)
 
-### Preserve connector style while connector splitting
+### Preserve Connector Styling when Splitting
 
-When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
+When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit), the newly created connector appears as a default connector without inheriting the original connector's styling. To maintain consistent styling, use the collectionChange event to apply the original connector's properties to the new connector.
 
-The following example demonstrates how to apply the same style of the original connector to the newly added connector:
+The following example demonstrates how to preserve the original connector's styling for newly created connectors during splitting:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

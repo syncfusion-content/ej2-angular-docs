@@ -10,23 +10,23 @@ domainurl: ##DomainURL##
 
 # Server-side Rendering in Angular Frameworks
 
-Angular is a widely-used client-side web development framework, primarily running on the client-side by default. However, many web applications require server-side capabilities for enhanced SEO and performance. Angular Universal bridges this gap by enabling server-side rendering (SSR) for Angular applications, which can significantly improve SEO, load times, and accessibility when integrated with tools like ASP.NET WebForms and ASP.NET MVC.
+Angular is a widely-used client-side web development framework, primarily running on the client-side by default. However, many web applications require server-side capabilities for enhanced SEO and performance. Angular Universal bridges this gap by enabling server-side rendering (SSR) for Angular applications, which can significantly improve SEO, load times, and accessibility when integrated with tools like ASP.NET Web Forms and ASP.NET MVC.
 
 This guide explains how to use Angular Universal in conjunction with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to create efficient and performant applications.
 
 ## What is Angular Universal
 
-[Angular Universal](https://v17.angular.io/guide/ssr) is a server-side rendering technology for Angular components that pre-renders HTML on the server and sends it to the client. This ensures quicker time-to-interactive, better SEO, and improved accessibility—especially beneficial for slower networks or devices.
+[Angular Universal](https://angular.dev/guide/ssr) is a technology for server-side rendering of Angular applications. It pre-renders HTML on the server and sends it to the client, allowing faster time-to-interactive, enhanced SEO, and improved accessibility—especially helpful for users on slower networks or devices.
 
 ## Why use Server-side Rendering
 
 Server-side rendering (SSR) in Angular Universal enhances application performance and user experience. Key benefits include:
 
-- **SEO Improvement**: SSR applications have fully rendered HTML on the server, making content easily indexable by search engines and thus improving SEO.
-- **Faster Load Times**: Users see content sooner with pre-rendered HTML, reducing load times for interactive pages.
-- **Better Accessibility**: SSR offloads processing to the server, which benefits users with slower devices or limited processing capabilities.
+- **SEO Improvement**: SSR provides fully rendered HTML to the browser, increasing content discoverability by search engines.
+- **Faster Load Times**: Pre-rendered HTML enables users to view content sooner, reducing initial page load times.
+- **Better Accessibility**: SSR offloads processing to the server, supporting users with slower devices or lower processing power.
 
-## Create an Angular Universal application
+## Creating an Angular Universal Application
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support SSR in Angular Universal applications. Follow these steps to integrate SSR with Syncfusion<sup style="font-size:70%">&reg;</sup> components:
 
@@ -34,7 +34,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support S
 
 ## 1️.Create a New Angular SSR-Enabled App
 
-Use Angular CLI to create a new project and enable SSR (Server-Side Rendering) support during setup:
+Use Angular CLI to create a new project and enable SSR support during setup:
 
 ```bash
 ng new syncfusion-ssr-app
@@ -50,8 +50,8 @@ Make sure to type  `y`  to confirm.
 This will automatically:
 
 - Set up Angular Universal with Express
-- Add `server.ts`, `main.server.ts`, `app.server.module.ts`
-- Configure SSR targets in `angular.json`
+- Add `server.ts`, `main.server.ts`, and `app.server.module.ts`
+- Configure SSR build targets in `angular.json`
 
 ## 2. Add Syncfusion<sup style="font-size:70%">&reg;</sup> (after SSR setup)
 
@@ -60,7 +60,7 @@ Once SSR is integrated, install Syncfusion<sup style="font-size:70%">&reg;</sup>
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-buttons
 ```
-Add styles in the `/src/styles.css`
+Add the necessary Syncfusion styles in `/src/styles.css`:
 
 ```bash
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
@@ -132,7 +132,9 @@ export class AppComponent {
 
 ### Enable hydration
 
-After installing the above command, enable Client [Hydration](https://v17.angular.io/guide/hydration). Hydration is the process that restores the server-side rendered application on the client. To enable hydration, import the [provideClientHydration](https://v17.angular.io/api/platform-browser/provideClientHydration)  function and add it to the `providers` section of the `app.module.ts` file as shown below.
+Client hydration ensures that the SSR application becomes interactive on the client side. To enable hydration, import the [`provideClientHydration`](https://angular.dev/guide/hydration) function and add it to the `providers` array in `app.module.ts`:
+
+After installing the above command, enable Client [Hydration](https://angular.dev/guide/hydration). Hydration is the process that restores the server-side rendered application on the client. To enable hydration, import the [provideClientHydration](https://angular.dev/guide/hydration)  function and add it to the `providers` section of the `app.module.ts` file as shown below.
 
 
 ```ts
@@ -208,10 +210,9 @@ npm run dev:ssr
 Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 3.18 MB with a total of 3.66 MB.
 Error: bundle initial exceeded maximum budget. Budget 1.00 MB was not met by 2.66 MB with a total of 3.66 MB.
 
-Solution:
-Open 'angular.json'
-Find this inside "projects" > "your-app-name" > "architect" > "build" > "configurations" > "production"
-Adjust the size:
+**Solution:**  
+Adjust the `budgets` property under `"projects" > "your-app-name" > "architect" > "build" > "configurations" > "production"` in `angular.json`:
+
 ```
 "budgets": [
   {

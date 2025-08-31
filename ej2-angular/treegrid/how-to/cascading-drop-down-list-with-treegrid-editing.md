@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Cascading drop down list with treegrid editing in Angular Treegrid component | Syncfusion
-description: Learn here all about Cascading drop down list with treegrid editing in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Cascading drop down list with TreeGrid editing in Angular TreeGrid component | Syncfusion
+description: Learn how to implement cascading drop down lists with editing in the Syncfusion Angular TreeGrid component of Essential JS 2 using cell edit templates.
 platform: ej2-angular
 control: Cascading drop down list with treegrid editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cascading drop down list with treegrid editing in Angular Treegrid component
+# Cascading drop down list with TreeGrid editing in Angular TreeGrid component
 
-You can achieve the Cascading DropDownList with Tree Grid Editing by using the Cell Edit Template feature.
+A cascading DropDownList can be achieved with editing in the TreeGrid component by using the Cell Edit Template feature.
 
-In the below demo, Cascading DropDownList rendered for **Priority** and **Duration** column.
+In the following example, cascading DropDownLists are rendered for the **Priority** and **Duration** columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,7 +23,7 @@ In the below demo, Cascading DropDownList rendered for **Priority** and **Durati
 {% include code-snippet/treegrid/refresh-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs2" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

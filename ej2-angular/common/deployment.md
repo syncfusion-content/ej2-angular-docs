@@ -10,6 +10,8 @@ domainurl: ##DomainURL##
 
 # Deployment
 
+This guide explains how to deploy Syncfusion Angular UI Components in your applications using different methods such as CDN and npm packages.
+
 ## CDN
 
 The CDN links are provided individually for all the scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
@@ -32,14 +34,14 @@ For example:
 
 ## Packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are available as npm packages, which are published in the public [npm registry](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal).
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are available as npm packages, which are published in the public [npm registry](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal). Using npm packages is recommended for most Angular applications as it integrates well with the Angular CLI and build systems.
 
 ### Anatomy of NPM packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are shipped as npm packages. Following table explains the purpose of each file available in the package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components are shipped as npm packages with the following structure:
 
-|    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
-|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `dist/<packagename>.umd.min.js`   `dist/<packagename>.umd.js`              |        For applications using AMD or Common JS based   module loader can be utilize these files.                                                                                                                                                                                             |
-|    `src/`                                                                   |    This folder contains the script files in ES6 format. It can be utilize Bundling.                                                                                                                                                         |
-|    `styles/<theme_name>.css`      `styles/<theme_name>.scss`                     |    This folder contains the CSS and SCSS files of the package.                                                                                                                                                                                                                             ||
+|    Files         | Purpose             |
+|----------------------------------|-------------------------------------|
+|    `dist/<packagename>.umd.min.js`   `dist/<packagename>.umd.js` |  For applications using AMD or Common JS based   module loader can be utilize these files. |
+|    `src/`    |    This folder contains the script files in ES6 format. It can be utilize Bundling.    |
+|    `styles/<theme_name>.css`      `styles/<theme_name>.scss`  |    This folder contains the CSS and SCSS files of the package. |

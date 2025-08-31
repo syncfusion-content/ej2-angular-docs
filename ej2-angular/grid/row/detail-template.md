@@ -389,7 +389,6 @@ Detail template is not supported with the following features:
 
 * Frozen rows and columns
 * Immutable mode
-* Infinite scrolling
 * Virtual scrolling
 * Print
 * Row template

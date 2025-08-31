@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value binding in ##Platform_Name## Multi select control
+# Value binding in ##Platform_Name## MultiSelect component
 
-Value binding in the MultiSelect control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The MultiSelect component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the MultiSelect component allows you to associate data values with each list item, enabling efficient management and retrieval of selected values programmatically. The MultiSelect component provides flexibility in binding both primitive data types and complex objects to meet various application requirements.
 
-## Primitive Data Types
+## Binding Primitive Data Types
 
 The MultiSelect Dropdown control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/multi-select/#value) property of the MultiSelect.
 
@@ -23,7 +23,7 @@ Primitive data types include:
 * Boolean
 * Null
 
-The following sample shows the example for preselect values for primitive data type
+The following sample demonstrates preselected values for primitive data types:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,11 +40,11 @@ The following sample shows the example for preselect values for primitive data t
   
 {% previewsample "page.domainurl/samples/multiselect/primitive" %}
 
-## Object Data Types
+## Binding Object Data Types
 
-In the MultiSelect Dropdown control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/multi-select/#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](../api/multi-select/#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+The MultiSelect component supports object binding for datasets containing complex objects. When [`allowObjectBinding`](../api/multi-select/#allowobjectbinding) is set to true, the component's [value](../api/multi-select/#value) property contains objects of the same type as the selected items from the data source. This feature enables binding arrays of objects from local sources, remote endpoints, or custom data providers tailored to specific application needs.
 
-The following sample shows the example for preselect values for object data type
+The following sample demonstrates preselected values for object data types:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

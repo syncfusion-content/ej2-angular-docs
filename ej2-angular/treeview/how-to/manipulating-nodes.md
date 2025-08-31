@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nodes Manipulation in ##Platform_Name## TreeView component
+# Node Manipulation in ##Platform_Name## TreeView component
 
-The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
+The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
 
 * [addNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes)
@@ -18,9 +18,9 @@ The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> 
 * [refreshNode](https://ej2.syncfusion.com/angular/documentation/api/treeview/#refreshnode)
 * [moveNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#movenodes)
 
-These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating a fully interactive and customizable TreeView structure.
+These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating fully interactive and customizable TreeView structures.
 
-## Dynamically adding nodes
+## Dynamically Adding Nodes
 
 The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes) method of the TreeView allows you to insert new nodes at designated positions within the TreeView by passing the necessary node information.
 
@@ -38,7 +38,7 @@ The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#
   
 {% previewsample "page.domainurl/samples/tree-view/manipulating-nodes-cs1" %}
 
-## Dynamically removing nodes
+## Dynamically Removing Nodes
 
 The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text.
 
@@ -56,9 +56,9 @@ The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angula
   
 {% previewsample "page.domainurl/samples/tree-view/manipulating-nodes-cs2" %}
 
-## Dynamically update nodes
+## Dynamically Updating Nodes
 
-The TreeView component has the [`updateNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#updatenode) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text. To enable text editing, set the [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview#allowediting) property to true, ensuring correct functionality of the `updateNode` method.
+The TreeView component has the [`updateNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#updatenode) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text. To enable text editing, set the [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property to true, ensuring correct functionality of the `updateNode` method.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs3/src/app.component.ts %}
@@ -73,9 +73,9 @@ The TreeView component has the [`updateNode`](https://ej2.syncfusion.com/angular
   
 {% previewsample "page.domainurl/samples/tree-view/manipulating-nodes-cs3" %}
 
-## Dynamically refresh nodes
+## Dynamically Refreshing Nodes
 
-The [`refreshNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#refreshnode) method in TreeView allows you to update the content of a specific node by providing its target and the new details. To retrieve the current details of the node, use the [`getTreeData`](https://ej2.syncfusion.com/angular/documentation/api/treeview#gettreedata) method in conjunction with the node's ID. This method refreshes a designated node within the TreeView.
+The [`refreshNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#refreshnode) method updates the content of a specific node by providing the target node and new node data. To retrieve current node details, use the [`getTreeData`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#gettreedata) method in conjunction with the node's ID. This method refreshes the designated node within the TreeView with updated information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,7 +91,7 @@ The [`refreshNode`](https://ej2.syncfusion.com/angular/documentation/api/treevie
   
 {% previewsample "page.domainurl/samples/tree-view/manipulating-nodes-cs4" %}
 
-## Dynamically move nodes
+## Dynamically Moving Nodes
 
 The [`moveNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#movenodes) method in TreeView allows you to relocate a node by defining the node to be moved, the target location, and the index within that target. It facilitates the repositioning of nodes within the same TreeView based on the specified target.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about templates with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about methods with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 ## Adding prompt response
 
-You can use the [addPromptResponse](../api/ai-assistview#addpromptresponse) public method to add the prompts and responses to the AI AssistView. You can add the it either as a `string` or `object` collection.
+You can use the [addPromptResponse](../api/ai-assistview/#addpromptresponse) public method to add the prompts and responses to the AI AssistView. You can add the it either as a `string` or `object` collection.
 
-### Adding responses as string.
+### Adding Responses as a String
 
-You can add string response, by passing it as argument for the `addPromptResponse('Response')` method which adds as the response of last added prompt.
+You can add a response as a string by passing it as an argument to the `addPromptResponse('Response')` method. This will append the response to the last prompt added to the conversation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +30,9 @@ You can add string response, by passing it as argument for the `addPromptRespons
 
 {% previewsample "page.domainurl/samples/ai-assistview/methods/responseString" %}
 
-### Adding responses as object.
+### Adding Responses as object
 
-You can add object response, by passing the prompt and response as a collection as argument for the `addPromptResponse({prompt: 'Prompt text', response: 'Response text'})` method which adds as a new prompt and response in the AI AssistView.
+You can add an object response by passing the prompt and response as a collection to the `addPromptResponse({prompt: 'Prompt text', response: 'Response text'})` method. This will add a new prompt and its corresponding response to the AI AssistView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ You can add object response, by passing the prompt and response as a collection 
 
 ## Executing prompt
 
-You can use the [executePrompt](../api/ai-assistview#executeprompt) method to execute the prompts dynamically in the AI AssistView. It accepts prompts as string values, which triggers the [promptRequest](../api/ai-assistview#promptrequest) event and performs the callback actions.
+You can use the [executePrompt](../api/ai-assistview/#executeprompt) method to execute the prompts dynamically in the AI AssistView. It accepts prompts as string values, which triggers the [promptRequest](../api/ai-assistview/#promptrequest) event and performs the callback actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

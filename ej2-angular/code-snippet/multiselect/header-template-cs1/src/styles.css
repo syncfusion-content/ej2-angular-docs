@@ -9,3 +9,29 @@
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+
+.head, .item{               
+    display: table;
+    width:100%;
+    margin:auto;				
+}
+.head{
+    height: 40px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.name, .city{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;      
+}
+
+.head .name {
+   text-indent: 16px;
+}
+
+.head .city {
+   text-indent: 10px;
+}

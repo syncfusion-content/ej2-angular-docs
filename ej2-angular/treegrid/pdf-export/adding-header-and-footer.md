@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Adding header and footer in Angular Treegrid component | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Adding header and footer in Angular TreeGrid component | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports for the Syncfusion Angular TreeGrid component, including text, page numbers, lines, and images.
 platform: ej2-angular
 control: Adding header and footer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in Angular Treegrid component
+# Adding header and footer in Angular TreeGrid component
 
-You can customize text, page number, line, page size and changing orientation in header and footer.
+You can customize the header and footer of exported PDF documents in the TreeGrid by adding text, page numbers, lines, images, custom page sizes, and by changing orientation.
 
-## How to write a text in header or footer
+## How to write text in the header or footer
 
-You can add text either in Header or Footer of exported PDF document.
+You can add text content to either the header or footer of the exported PDF document by specifying it in the `exportProperties`.
 
 ```typescript
 
@@ -35,9 +35,9 @@ let exportProperties: PdfExportProperties = {
 
 ```
 
-## How to draw a line in header or footer
+## How to draw a line in the header or footer
 
-you can add line either in Header or Footer of the exported PDF document.
+You can add a line to either the header or footer of the exported PDF document.
 
 Supported line styles:
 
@@ -65,9 +65,9 @@ let exportProperties: PdfExportProperties = {
 
 ```
 
-## Add page number in header or footer
+## Add page number in the header or footer
 
-you can add page number either in Header or Footer of exported PDF document.
+You can add page numbers to either the header or footer of the exported PDF document.
 
 Supported page number types:
 
@@ -97,9 +97,9 @@ Supported page number types:
 
 ```
 
-## Insert an image in header or footer
+## Insert an image in the header or footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the `exportProperties`.
+Images (Base64 string) can be added to the exported PDF document's header or footer by using the `exportProperties`.
 
 ```typescript
 
@@ -120,7 +120,7 @@ let exportProperties: PdfExportProperties = {
 
 ```
 
-The below code illustrates the pdf export customization.
+The following code illustrates PDF export customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

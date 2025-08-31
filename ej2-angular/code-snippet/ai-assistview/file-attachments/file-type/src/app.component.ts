@@ -1,10 +1,7 @@
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
 import { Component, ViewChild } from '@angular/core';
-import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
-import { enableRipple } from '@syncfusion/ej2-base';
-
-enableRipple(true);
+import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';\
 
 @Component({
     imports: [ FormsModule, ReactiveFormsModule, AIAssistViewModule ],

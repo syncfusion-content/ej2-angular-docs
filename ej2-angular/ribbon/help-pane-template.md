@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Help Pane
+# Help Pane in Angular Ribbon Component
 
-The help pane is dedicated area where the users can define help contents like controlling document permissions, sharing features, and more which appears on the right side of the Ribbon. You can use the [helpPaneTemplate](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#helppanetemplate) property to set the help pane contents.
+The Ribbon component includes a help pane, a dedicated area on the right side for displaying custom content. The [helpPaneTemplate](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#helppanetemplate) property allows for the definition of this content, or other useful information like document permissions or sharing features.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

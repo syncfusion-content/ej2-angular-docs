@@ -1,0 +1,10 @@
+<table class='e-table'>
+  <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th><th>Ship City</th><th>Ship Country</th></tr>
+  <tr *ngFor="let item of result">
+    <td>{{ item.OrderID }}</td>
+    <td>{{ item.CustomerID }}</td>
+    <td>{{ item.EmployeeID }}</td>
+    <td>{{ item.ShipCity }}</td>
+    <td>{{ item.ShipCountry }}</td>
+  </tr>
+</table>

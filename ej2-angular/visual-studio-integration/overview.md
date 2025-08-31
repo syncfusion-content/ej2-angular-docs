@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular extensions for Visual Studio that allow you to use the Syncfusion<sup style="font-size:70%">&reg;</sup> component easier by creating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application in Visual Studio and option upgrading the Syncfusion<sup style="font-size:70%">&reg;</sup> version from the application.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular extensions for Visual Studio simplify working with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components by enabling streamlined project creation and seamless upgrade options directly within the Visual Studio environment.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular provides the following supports in Visual Studio:
 

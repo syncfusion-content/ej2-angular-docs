@@ -31,7 +31,7 @@ This command sets up a new project by downloading all necessary files and initia
 
 ## Syncfusion<sup style="font-size:70%">&reg;</sup> package initialization
 
-    All the Syncfusion Angular packages can be installed using the following command in the CLI application.
+All the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages can be installed using the following command in the CLI application.
 
 ```
 ng add 'package-name'

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Multi select component
 
-The MultiSelect supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
+The MultiSelect component supports organizing list items into groups based on different categories. Each list item's category can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#groupby) field within the fields property configuration. The component displays group headers in two ways: inline headers that appear within the list flow, and fixed headers that remain visible at the top of the popup while scrolling through grouped content. The fixed group header dynamically updates to show the currently visible group's category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#groupby) field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,14 +28,13 @@ In the following sample, vegetables are grouped according on its category using 
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom
-designing using the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#grouptemplate) property for both inline and fixed headers.
+The grouping header provides customization options that allow custom styling and content design. Use the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#grouptemplate) property to create custom templates for both inline and fixed group headers. This enables complete control over the appearance and layout of group header content to match application-specific design requirements.
 
 ## Grouping with CheckBox
 
-Previously, there is no checkbox for group headers. Now, this feature allow to render checkbox in group header to select the group items in single selection. You can enable this feature by setting [`enableGroupCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enablegroupcheckbox) property value as **true** and **mode** property as **CheckBox**.
+The MultiSelect component supports rendering checkboxes in group headers to enable selection of all items within a group through a single click. Enable this feature by setting the [`enableGroupCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enablegroupcheckbox) property to **true** and the [**mode**](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#mode) property to **CheckBox**.
 
-Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
+>Note: The `CheckBoxSelection` module must be injected into the MultiSelect component to use checkbox functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +49,6 @@ Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
 {% previewsample "page.domainurl/samples/multiselect/getting-started-cs15" %}
 
 >Note: When using the MultiSelect component with CheckBox mode and grouping enabled, the enableSelectionOrder property (default to true) causes selected items to move out of their original group headers in the popup. To keep selected items under their respective group headers, set enableSelectionOrder to false.
-
 
 ## See Also
 

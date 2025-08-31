@@ -8,25 +8,25 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upgrading syncfusion<sup style="font-size:70%">&reg;</sup> in Angular 
+# Upgrading syncfusion<sup style="font-size:70%">&reg;</sup> in Angular
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
+Syncfusion<sup style="font-size:70%">&reg;</sup> releases new versions, known as Volume releases, approximately every three months. These releases introduce new features and updates. For each Volume release, a subsequent Service Pack release is provided to address major bug fixes.
 
-You can upgrade to our latest version from any installed Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+It is possible to upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> version directly from any previously installed version.
 
 See our [release history](release-history.md) for more information
 
 ## Upgrading to the latest version
 
-The most recent version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be downloaded and installed by clicking on the “Latest Version: {Version}” link at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
+The latest version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be accessed and installed by selecting the “Latest Version: {Version}” link at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
 
 ![license download](images/upgrade3.png)
 
-You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/account/downloads ) link. The existing installed versions are not required to be uninstalled.
+Alternatively, upgrade to the latest version by downloading and installing the required products from the [Syncfusion account downloads page](https://www.syncfusion.com/account/downloads). There is no need to uninstall any previously installed versions before upgrading.
 
-It is not required to install the Volume release before installing the Service Pack release. As releases for Volume and Service Packs work independently, you can install the latest version with major bug fixes directly.
+Volume and Service Pack releases function independently. You can install a Service Pack release with major bug fixes without installing the corresponding Volume release.
 
-## Upgrade from trial version to license version
+## Upgrade from trial version to licensed version
 
 Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads ) section of our website to upgrade from the trial version.
 

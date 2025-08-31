@@ -7,7 +7,7 @@ import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor"
     standalone: true,
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
+    <div id="container" >
         <div ejs-blockeditor ></div>
     </div>`
 })

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Accessibility in Angular Markdown editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Markdown editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Markdown Editor component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility
+control: Markdown Editor Accessibility
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in the Angular Markdown Editor Component
+# Accessibility in Angular Markdown Editor Component
 
-The Angular Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
+The Angular Markdown Editor is designed to be fully accessible, adhering to WAI-ARIA specifications with ARIA roles, states, and properties. These features ensure compatibility with assistive technologies (AT) and keyboard navigation, enhancing usability for all users.
 
+## Accessibility standards
 The following table summarizes the accessibility support of the Markdown Editor component:
 
 | Accessibility Criteria | Compatibility |
@@ -39,9 +40,13 @@ The following table summarizes the accessibility support of the Markdown Editor 
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-## ARIA Attributes
+## ARIA attributes
 
-The toolbar in the Markdown Editor is assigned the role of 'Toolbar' and includes the following attributes.
+The Markdown Editor and its toolbar include ARIA attributes to enhance accessibility.
+
+### Toolbar ARIA attributes
+
+The toolbar is assigned the `toolbar` role with the following attributes:
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -53,7 +58,9 @@ The toolbar in the Markdown Editor is assigned the role of 'Toolbar' and include
 
 For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](../../toolbar/accessibility.html) documentation.
 
-* The Markdown Editor element is assigned the role of `application`.
+### Editor ARIA attributes
+
+The Markdown Editor is assigned the `application` role:
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -72,13 +79,13 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
   
 {% previewsample "page.domainurl/samples/markdown-editor/markdown-cs1" %}
 
-## Keyboard Navigation
+## Keyboard navigation
 
 The Markdown Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor component.
 
 For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/angular/documentation/markdown-editor/keyboard-support) documentation.
 
-### Customizing Shortcut Keys
+### Customizing shortcut keys
 
 You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
@@ -94,7 +101,7 @@ You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com
 
 {% previewsample "page.domainurl/samples/markdown-editor/markdown-custom-key" %}
 
-## Implementing Accessibility Best Practices
+## Implementing accessibility best practices
 
 The Markdown Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
@@ -102,6 +109,6 @@ The accessibility compliance of the Markdown Editor component is shown in the fo
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
-## See Also
+## See also
 
 * [General Accessibility Guidelines](../common/accessibility)

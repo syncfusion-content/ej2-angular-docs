@@ -8,23 +8,25 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector annotations in Angular Diagram component
+# Connector Annotations in Angular Diagram Component
 
-Annotations of a connector can be positioned using the following properties of Annotation class.
+Connector annotations are text labels that can be positioned along connector paths to provide descriptive information or context. These annotations offer flexible positioning and styling options to enhance diagram readability and communication.
 
-* Offset
-* Alignment
-* Displacement
-* SegmentAngle
-* HorizontalAlignment
-* VerticalAlignment
-* Margin
+Annotations on connectors can be precisely positioned and customized using the following properties of the Annotation class:
+
+* **Offset** - Controls position along the connector path (0 to 1)
+* **Alignment** - Aligns annotation relative to connector segments
+* **Displacement** - Moves annotation away from its calculated position
+* **SegmentAngle** - Rotates annotation based on connector direction
+* **HorizontalAlignment** - Controls horizontal positioning
+* **VerticalAlignment** - Controls vertical positioning
+* **Margin** - Adds spacing around the annotation
 
 ## Annotation offset
 
-The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointModel/) for [`pathAnnotation`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pathAnnotation/) is of type number and ranges from 0 to 1, from the source to the target point of the connector. By default, the offset value for a connector annotation is 0.5.
+The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointModel/) property for [`pathAnnotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathAnnotation/) accepts a number value ranging from 0 to 1, representing the position along the connector path from source to target point. An offset value of 0 positions the annotation at the source point, while 1 positions it at the target point. The default offset value is 0.5, which centers the annotation on the connector.
 
-The following code illustrates, how to set offset for the connector.
+The following code example demonstrates how to configure the offset for connector annotations:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,15 +40,19 @@ The following code illustrates, how to set offset for the connector.
   
 {% previewsample "page.domainurl/samples/diagram/labels/annotation-connector-cs1" %}
 
-The following image shows the position of the annotation with respect to different offsets.
+The following image illustrates annotation positioning at different offset values along the connector path:
 
-![PathAnnotation offset](../images/diagram-pathAnnotation-offset.png)
+![PathAnnotation offset positioning examples](../images/diagram-pathAnnotation-offset.png)
 
 ## Annotation alignment
 
-The connector’s annotation can be aligned over its segment path using the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationAlignment/) property of annotation.
+Connector annotations can be aligned relative to their segment path using the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationAlignment/) property. This property offers three alignment options:
 
-The following code example illustrates how to align connector annotations.
+* **Before** - Positions the annotation before the calculated offset point
+* **Center** - Centers the annotation at the offset point (default)
+* **After** - Positions the annotation after the calculated offset point
+
+The following code example demonstrates how to configure alignment for connector annotations:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +68,9 @@ The following code example illustrates how to align connector annotations.
 
 ## Displacement of annotation
 
-[`Displacement`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pointModel/) refers displacement of an annotation from its actual position. A connector annotation can be displaced to a particular distance by using a displacement property of the pathAnnotation. The following example shows how to set displacement for the connector annotation.
+The [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointModel/) property allows annotations to be moved away from their calculated position by a specified distance. This feature is particularly useful for avoiding overlaps with connector paths or improving visual clarity.
+
+The following example shows how to apply displacement to connector annotations:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,11 +84,13 @@ The following code example illustrates how to align connector annotations.
   
 {% previewsample "page.domainurl/samples/diagram/labels/displacement-cs1" %}
 
-N> Displacement is only applicable when we use alignment as `After` or `Before`.
+N> Displacement functionality is only applicable when the alignment property is set to `Before` or `After`. Center-aligned annotations do not support displacement.
 
 ## Segment angle for annotation
 
-The [`segmentAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathAnnotationModel/#segmentangle) property is used to rotate the annotation based on the connectors segment direction. By default, annotation will be rotated in the connector path. When you set `segmentAngle` as true, annotation will be rotated from its position based on the connector segment direction. The following code illustrates, how to set segment angle.
+The [`segmentAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathAnnotationModel/#segmentangle) property controls whether annotations rotate to match the connector segment direction. When set to `true`, annotations automatically rotate based on the angle of the connector segment they are positioned on, creating a more integrated visual appearance. When set to `false` (default), annotations maintain their original orientation regardless of connector direction.
+
+The following code example demonstrates how to configure segment angle rotation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,8 +103,9 @@ The [`segmentAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/labels/segmentAngle-cs1" %}
+The following table illustrates the visual difference between segment angle settings:
 
 |Segment angle|Output|
 |-----|-----|
-|True|![Segment angle true](../images/diagram-annotation-segmentAngle-true.png)|
-|False|![Segment angle false](../images/diagram-annotation-segmentAngle-false.png)|
+|True|![Annotation rotated with connector segment](../images/diagram-annotation-segmentAngle-true.png)|
+|False|![Annotation maintains original orientation](../images/diagram-annotation-segmentAngle-false.png)|

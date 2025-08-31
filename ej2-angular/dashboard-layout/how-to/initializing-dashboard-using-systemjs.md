@@ -3,18 +3,20 @@ layout: post
 title: Angular Dashboard layout component with SystemJS | Syncfusion
 description: Learn here all about Initializing dashboard using systemjs in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Initializing dashboard using systemjs 
+control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# SystemJS Initialization in Angular Dashboard layout component
+# SystemJS Setup for Angular Dashboard Layout Component
 
-DashboardLayout can also be initialized using `SystemJS` as follows.
+The Dashboard Layout component can be initialized using `SystemJS` as follows.
 
-## Installation and configuration
+## Installation and Configuration
 
-* To setup basic `Angular` sample use the following commands.
+### Setting up Basic Angular Application
+
+To set up a basic Angular sample with `SystemJS` support, use the following commands:
 
     ```
       git clone https://github.com/angular/quickstart.git quickstart
@@ -22,9 +24,12 @@ DashboardLayout can also be initialized using `SystemJS` as follows.
       npm install
     ```
 
-   For more information, refer to [Angular sample setup](https://v17.angular.io/guide/setup-local).
+   For more information about Angular application setup, refer to the [Angular sample setup](https://v17.angular.io/guide/setup-local).
 
-* Install Syncfusion<sup style="font-size:70%">&reg;</sup> DashboardLayout package using below command.
+
+### Installing Dashboard Layout Package
+
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Dashboard Layout package using the following command:
 
     ```
       npm install @syncfusion/ej2-angular-layouts --save
@@ -32,7 +37,9 @@ DashboardLayout can also be initialized using `SystemJS` as follows.
 
    The above package installs [Dashboard Layout component dependencies](#dependencies) which are required to render the component in an Angular environment.
 
-* Syncfusion<sup style="font-size:70%">&reg;</sup> [ej2-angular-layouts](#dependencies) packages need to be mapped in `systemjs.config.js` configuration file.
+### SystemJS Configuration
+
+Configure the Syncfusion<sup style="font-size:70%">&reg;</sup> [ej2-angular-layouts](#dependencies) packages need to be mapped in `systemjs.config.js` configuration file.
 
 ```javascript
 /**
@@ -45,7 +52,6 @@ DashboardLayout can also be initialized using `SystemJS` as follows.
       // paths serve as alias
       'npm:': 'node_modules/',
       "syncfusion:": "node_modules/@syncfusion/", // syncfusion alias
-
     },
     // map tells the System loader where to look for things
     map: {
@@ -69,7 +75,7 @@ DashboardLayout can also be initialized using `SystemJS` as follows.
       "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -178,20 +184,20 @@ export class AppComponent {
 }
 ```
 
-* Import DashboardLayout module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-layouts`.
+* Import the  Dashboard Layout module in the main Angular application module(`app.module.ts`) from the package `@syncfusion/ej2-angular-layouts`.
 
 ```javascript
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // import the DashboardLayoutModule for the Dashboard Layout component
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
-import { AppComponent }  from './app.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   //declaration of ej2-angular-layouts module into NgModule
-  imports:      [ BrowserModule, DashboardLayoutModule ],
+  imports: [ BrowserModule, DashboardLayoutModule ],
   declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
 ```
@@ -204,7 +210,7 @@ Now, use the `npm start` command to run the application in the browser.
 npm start
 ```
 
-The following example shows a basic DashboardLayout by adding the panels property directly into the HTML element.
+The following example demonstrates a basic DashboardLayout by adding the panels property directly into the HTML element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

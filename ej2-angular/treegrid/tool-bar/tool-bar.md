@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Tool bar in Angular Treegrid component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Tool bar in Angular TreeGrid component | Syncfusion
+description: Learn about using and customizing the toolbar in the Syncfusion Angular TreeGrid component, including enabling/disabling items, adding toolbars at different positions, and toolbar templates.
 platform: ej2-angular
-control: Tool bar 
+control: Tool bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar in Angular Treegrid component
+# Tool bar in Angular TreeGrid component
 
-The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/) objects for custom toolbar items or HTML element ID for toolbar template.
+The TreeGrid provides toolbar support to handle various actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property accepts a collection of built-in toolbar items, [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/) objects for custom items, or the HTML element ID for a toolbar template.
 
-To use ToolBar, inject `Toolbar` module in the treegrid.
+To use the toolbar, inject the `Toolbar` module in the TreeGrid.
 
 ## Enable or disable toolbar items
 
-Enable or disable toolbar items by using the `enableItems` method.
+Use the `enableItems` method to enable or disable toolbar items.
 
-You can also use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enabletoolbaritems) method to enable or disable the tool bar items. In this method, you need to pass the toolbar items and isEnable as parameters.
+Alternatively, you can use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enabletoolbaritems) method to enable or disable toolbar items. Pass the toolbar item names and the `isEnable` (boolean) parameter to control item state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,12 +29,12 @@ You can also use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/d
 {% include code-snippet/treegrid/edit-toolbar-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs39" %}
 
-## Add toolbar at the bottom of tree grid
+## Add toolbar at the bottom of the TreeGrid
 
-Add the toolbar component at the bottom of the tree grid using the [created](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#created) event.
+You can add a toolbar to the bottom of the TreeGrid by configuring it within the [created](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,11 +45,11 @@ Add the toolbar component at the bottom of the tree grid using the [created](htt
 {% include code-snippet/treegrid/edit-toolbar-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs40" %}
 
 ## See also
 
-* [To know more about Toolbar Component](../../toolbar/getting-started)
+* [Toolbar Component Getting Started](../../toolbar/getting-started)
 
 > Refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

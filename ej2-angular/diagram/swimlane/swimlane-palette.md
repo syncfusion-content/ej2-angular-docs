@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Swim lane in symbol palette Angular Diagram component | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Swimlane in Symbol Palette - Angular Diagram component | Syncfusion®
+description: Learn how to add, configure, and customize swimlane shapes in the symbol palette of Syncfusion® Angular Diagram component.
 platform: ej2-angular
-control: Swim lane in symbol palette
+control: Swimlane in symbol palette
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Swimlane in Symbol Palette
 
-## Add swimlane to palette
+The Angular Diagram component provides comprehensive support for adding swimlane shapes and phases to the symbol palette. Swimlanes help organize process flows by grouping related activities into lanes, making complex diagrams more readable and structured.
 
-Diagram provides the support to add swimlane and phases to symbol palette. The following code sample illustrate how to add swimlane and phases to palette.
+## Add Swimlane to Palette
+
+The diagram component supports adding both swimlane containers and individual phases to the symbol palette. This enables users to drag and drop pre-configured swimlane elements into their diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -22,7 +25,7 @@ Diagram provides the support to add swimlane and phases to symbol palette. The f
 {% include code-snippet/diagram/swimlane/palette-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+ 
 {% previewsample "page.domainurl/samples/diagram/swimlane/palette-cs1" %}
 
 

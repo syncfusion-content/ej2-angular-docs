@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Excel export options in Angular Treegrid component | Syncfusion
-description: Learn here all about Excel export options in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Excel export options in Angular TreeGrid component | Syncfusion
+description: Learn about customizing Excel export options in the Syncfusion Angular TreeGrid component of Essential JS 2, including hidden columns, column visibility control, and file naming.
 platform: ej2-angular
 control: Excel export options 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export options in Angular Treegrid component
+# Excel export options in Angular TreeGrid component
 
-## To customize excel export
+## Customizing Excel export
 
-The excel export provides an option to customize mapping of the treegrid to excel document.
+Excel export in the TreeGrid component provides options for customizing the mapping between the TreeGrid content and the exported Excel document.
 
 ### Export hidden columns
 
-Excel Export provides an option to export hidden columns of TreeGrid by defining the `includeHiddenColumn` as `true`.
+Excel export enables the inclusion of hidden columns from the TreeGrid in the exported Excel document by setting `includeHiddenColumn` to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,18 +27,18 @@ Excel Export provides an option to export hidden columns of TreeGrid by defining
 {% include code-snippet/treegrid/excel-export-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs4" %}
 
-### Show or hide columns on exported excel
+### Show or hide columns in exported Excel
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportComplete) events.
+You can control the visibility of columns during the Excel export process using the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportComplete) events.
 
-In the `toolbarClick` event, based on `args.item.text` as `Excel Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
+In the `toolbarClick` event, you can toggle the visibility of columns for export based on `args.item.text` being `Excel Export` by setting the `column.visible` property to `true` or `false` as needed.
 
-In the excelExportComplete event, We have reversed the state back to the previous state.
+In the excelExportComplete event, the column visibility state can be reverted to its previous configuration.
 
-In the below example, we have `Duration` as a hidden column in the treegrid. While exporting, we have changed `Duration` to visible column and `StartDate` as hidden column.
+In the following example, the `Duration` column is hidden in the TreeGrid. While exporting, the `Duration` column is made visible and the `StartDate` column is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,12 +49,12 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% include code-snippet/treegrid/excel-export-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs5" %}
 
-### File name for exported document
+### File name for the exported document
 
-You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportProperties).
+Assign a specific file name to the exported document by defining the `fileName` property in the [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportProperties) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,5 +65,5 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% include code-snippet/treegrid/excel-export-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs6" %}

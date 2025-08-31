@@ -19,7 +19,7 @@ To open an image in the image editor, do the following steps.
 
 * Click the Open icon from the left side of the toolbar.
 
-* The file explorer lists only JPEG, PNG, JPG, and WEBP format files.
+* The file explorer lists only JPEG, PNG, JPG, SVG, WEBP and BMP format files.
 
 * Select the image from the list of the images from the file explorer window.
 

@@ -1,0 +1,42 @@
+<div class="e-form">
+  <h3>Insert Record</h3>
+  <input type="number" id="insertOrderID" placeholder="Order ID"  />
+  <input type="text" id="insertCustomerID" placeholder="Customer ID" />
+  <input type="text" id="insertShipCity" placeholder="Ship City" />
+  <input type="text" id="insertShipCountry" placeholder="Ship Country" />
+  <button (click)="insert()">Insert</button>
+</div>
+
+<div class="e-form">
+  <h3>Update Record</h3>
+  <input type="number" id="updateOrderID" placeholder="Order ID" />
+  <input type="text" id="updateCustomerID" placeholder="Customer ID" />
+  <input type="text" id="updateShipCity" placeholder="Ship City" />
+  <input type="text" id="updateShipCountry" placeholder="Ship Country" />
+  <button (click)="update()">Update</button>
+</div>
+<div id="message"></div>
+<div class="e-form">
+  <h3>Delete Record</h3>
+  <input type="number" id="deleteOrderID" placeholder="Order ID" />
+  <button (click)="delete()">Delete</button>
+</div>
+
+<table class="e-table">
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Customer ID</th>
+      <th>Ship City</th>
+      <th>Ship Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.OrderID }}</td>
+      <td>{{ item.CustomerID }}</td>
+      <td>{{ item.ShipCity }}</td>
+      <td>{{ item.ShipCountry }}</td>
+    </tr>
+  </tbody>
+</table>

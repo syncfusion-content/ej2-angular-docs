@@ -3,16 +3,18 @@ layout: post
 title: Avatar customization in Angular Avatar component | Syncfusion
 description: Learn here all about Avatar customization in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Avatar customization 
+control: Avatar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Avatar customization in Angular Avatar component
 
+The Angular Avatar component offers extensive customization options including colors, sizes, and media formats. This section demonstrates how to modify the avatar's appearance to match specific design requirements and integrate various content types.
+
 ## Color customization
 
-The avatar comes with default background color (grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
+The avatar displays with a default grey background color. Customize this to any desired color by adding a custom CSS class or directly targeting the avatar class in the stylesheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +41,6 @@ Although the avatar comes with five predefined sizes, sometimes these are not su
 {% include code-snippet/avatar/custom-size-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-
 {% highlight ts tabtitle="styles.css" %}
 {% include code-snippet/avatar/custom-size-cs2/src/styles.css %}
 {% endhighlight %}
@@ -51,7 +52,7 @@ Although the avatar comes with five predefined sizes, sometimes these are not su
   
 {% previewsample "page.domainurl/samples/avatar/custom-size-cs2" %}
 
-## Use various media in avatar
+## Using various media formats
 
 Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words, etc. Some of them are given below.
 
@@ -71,7 +72,7 @@ Avatars can be used with a wide variety of media formats like SVG, font-icons, i
   
 {% previewsample "page.domainurl/samples/avatar/media-formats-cs2" %}
 
-## Dynamic avatar rendering from datasource
+## Dynamic avatar rendering from data source
 
 We can render avatar component dynamically from a data-source. In this sample we have rendered the avatar component using a data-source which contains the image source in different sizes dynamically. This is applicable also for data-source from the server or remote data or AJAX. We have also rendered the avatar using `CSS` property
 `background-image` and using image tag.

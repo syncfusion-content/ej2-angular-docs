@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure data grid options on editing mode in Angular Pivotview component | Syncfusion
+title: Configure grid editing options in Angular Pivotview | Syncfusion
 description: Learn here all about Configure data grid options on editing mode in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Configure data grid options on editing mode 
@@ -8,11 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Configure data grid options on editing mode in Angular Pivotview component
+# Configure data grid options on editing in Angular Pivotview
 
-You can access the data grid options such as sort, group, filter on editing mode using the `beginDrillThrough` event in the pivot table. The event occurs in every value cell on double click and provides the data grid information before display the drill through grid pop-up.
+The Angular Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The `beginDrillThrough` event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
 
-> Grid features are segregated into individual feature-wise modules. For example, to use sorting feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
+## Implementation
+
+The `beginDrillThrough` event occurs when users double-click on any value cell in the pivot table. This event provides access to the grid instance and its configuration options before displaying the drill-through popup, enabling users to customize the grid behavior according to their requirements.
+
+> Grid features are segregated into individual feature-wise modules. For example, to use the sorting feature, the `Sort` module must be injected using the `Grid.Inject(Sort)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

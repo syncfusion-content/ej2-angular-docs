@@ -1,0 +1,65 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { DataManager, Query, ODataV4Adaptor, ReturnOption } from '@syncfusion/ej2-data';
+
+class CustomAdaptor extends ODataV4Adaptor {
+  // You can override adaptor methods here if needed.
+}
+
+interface Order {
+  OrderID: number;
+  CustomerID: string;
+  EmployeeID: number;
+  ShipCity: string;
+  ShipCountry: string;
+}
+
+@Component({
+  imports: [CommonModule],
+  standalone: true,
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styles: [`
+    .e-table {
+      border: solid 1px #e0e0e0;
+      border-collapse: collapse;
+      font-family: Roboto;
+    }
+
+    .e-table td, .e-table th {
+      border-style: solid;
+      border-width: 1px 0 0;
+      border-color: #e0e0e0;
+      display: table-cell;
+      font-size: 14px;
+      line-height: 20px;
+      overflow: hidden;
+      padding: 8px 21px;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: auto;
+    }
+    `],
+})
+export class AppComponent {
+  public data?: DataManager;
+  public items: Order[] = [];
+
+
+  public ngOnInit(): void {
+    this.data = new DataManager({
+      // Use remote server host and port instead of 'xxxx'.
+      url: 'https://localhost:xxxx/odata/Order',
+      adaptor: new CustomAdaptor()
+    });
+
+    this.data.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
+      this.items = e.result as Order[];
+    }).catch((error: Error) => {
+      const errorMessage: HTMLElement | null = document.getElementById('error-message');
+      if (errorMessage) {
+        errorMessage.textContent = "Failed to load data. Please check your connection or service and try again.";
+      }
+    });
+  }
+}

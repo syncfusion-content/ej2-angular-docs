@@ -10,35 +10,38 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Standalone Component
 
-Standalone components in Angular provide a streamlined approach to building applications without relying heavily on NgModules. This simplifies the development process while maintaining compatibility with existing module-based architectures. You can gradually adopt standalone components in legacy projects without introducing breaking changes.
+Standalone components are a modern approach in Angular that allow you to build applications without extensive NgModule configurations. They enable direct component imports, simplify dependency management, and provide easier integration of libraries like Syncfusion<sup style="font-size:70%">&reg;</sup> components into your Angular applications.
+
+This guide demonstrates how to create an Angular application using standalone components and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI components.
 
 ## Create a New Application
 
-Ensure that the latest Angular CLI is installed, then create Angular project by executing the below command:
+First, ensure you have the Angular CLI installed. Create a new Angular project by executing the following command:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-This command initiates the project setup and prompts you to select your preferred configuration options, such as stylesheet format.
+During the setup process, the CLI will prompt you to select configuration options:
 
 ![Initial Setup](./images/Initial_setup.PNG)
 
-The default setup creates a CSS-based application. To specify SCSS as your styling format, use:
+By default, the command creates a CSS-based application. To use SCSS instead, specify the style option:
 
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
+Angular offers server-side rendering (SSR) and static-site generation (SSG) capabilities to enhance performance and SEO. Enable these features during project creation:
 
 ![Initial Setup](images/SSR_IntialSetup.PNG)
 
-Angular enhances developer productivity with server-side rendering (SSR) and static-site generation (SSG or prerendering) options in the `ng new` command. Enable SSR by running:
+For SSR support, use:
 
 ```bash
 ng new syncfusion-angular-app --ssr
 ```
 
-Once the setup is complete, navigate into your project directory:
+After setup completes, navigate to your project directory:
 
 ```bash
 cd syncfusion-angular-app
@@ -46,7 +49,7 @@ cd syncfusion-angular-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
 
-Syncfusion's Angular packages are available under the `@syncfusion` scope on npm. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular packages are available on npm under the `@syncfusion` scope. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
 
@@ -56,17 +59,15 @@ ng add @syncfusion/ej2-angular-grids@latest
 
 This command performs the following configurations in your Angular application:
 
-- Adds the `@syncfusion/ej2-angular-grids` package and its peer dependencies to `package.json`.
+- Adds the `@syncfusion/ej2-angular-grids` package and its dependencies to `package.json`.
 - Imports `GridModule` into your application's default standalone component `app.component.ts`.
-- Registers Syncfusion's default material theme in `angular.json`.
-
-These steps simplify adding Syncfusion's Angular Grid module to your project for immediate use.
+- Registers Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material theme in `angular.json`.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-To incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, define them in your template and configure their properties in the component class.
+In standalone components, you directly import the required modules in the component file rather than configuring them in an NgModule.
 
-In `src/app/app.component.ts`, you can utilize column directives with `<ejs-grid>` selector and define `<e-column>` elements inside `<ejs-grid>`. Each `e-column` specifies attributes like field name, header text, and data type for the Grid columns.
+Modify your `src/app/app.component.ts` file to incorporate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -111,7 +112,12 @@ export class AppComponent {
   ];
 }
 ```
-This configuration adds a data grid to your application, complete with specified columns and sample data.
+
+Key points about the standalone component configuration:
+
+- The `imports` array in the `@Component` decorator specifies the required Syncfusion<sup style="font-size:70%">&reg;</sup> modules.
+- Each component you want to use must be explicitly imported and included in this array.
+- For Grid features like paging, you need to import both the main `GridModule` and feature-specific modules like `PagerModule`.
 
 ## Adding CSS References
 
@@ -132,7 +138,13 @@ The following CSS styles are available in the `../node_modules/@syncfusion` fold
 
 ## Run the Application
 
-Execute the `ng serve` command in your terminal to launch the application. Once the server starts, open your browser to interact with the application.
+Start your Angular application with:
+
+```bash
+ng serve
+```
+
+Once the compilation completes, open your browser and navigate to `http://localhost:4200/` to see your application with the integrated Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
 ![Output](./images/ang-cli.PNG)
 

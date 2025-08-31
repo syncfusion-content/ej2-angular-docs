@@ -12,21 +12,21 @@ domainurl: ##DomainURL##
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides **project templates** for **Visual Studio Code** to create Syncfusion<sup style="font-size:70%">&reg;</sup> Web applications. The Syncfusion<sup style="font-size:70%">&reg;</sup> Web Project template creates applications with the selected Framework (React, Angular, and Vue), required Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages, component render code for the Grid, Chart, and Scheduler components, and a style to make development with Syncfusion<sup style="font-size:70%">&reg;</sup> components easier.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides project templates for **Visual Studio Code** to streamline the creation of Syncfusion<sup style="font-size:70%">&reg;</sup> Web applications. The Syncfusion<sup style="font-size:70%">&reg;</sup> Web Project template generates applications using a selected framework—React, Angular, or Vue. It automatically installs the required Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages and includes code samples for components such as Grid, Chart, and Scheduler, along with preset styling to enhance development efficiency.
 
    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Visual Studio Code project template provides support for Web project templates from v18.3.0.47.
 
-The steps below help you to create **Syncfusion Web Applications** through the **Visual Studio Code:**
+Follow the steps below to create a **Syncfusion Web Application** using **Visual Studio Code:**
 
-1. In Visual Studio Code, open the command palette by pressing Ctrl+Shift+P. The Visual Studio Code palette opens, search the word Syncfusion, so you can get the templates provided.
+1. In Visual Studio Code, open the Command Palette by pressing **Ctrl+Shift+P**. In the palette, search for "Syncfusion" to view available templates.
 
     ![CreateProjectPalette](images/CreateProjectPalette.png)
 
-2. Select **Syncfusion Web Template Studio: Launch** and then press enter, Template Studio wizard for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Web app will appear. Provide the require Project Name and Path to create the new Syncfusion<sup style="font-size:70%">&reg;</sup> Web application along with any one of the Framework (React, Angular, and Vue).
+2. Select **Syncfusion Web Template Studio: Launch** and press Enter. The Template Studio wizard appears for configuring your Syncfusion<sup style="font-size:70%">&reg;</sup> Web application. Specify the Project Name and Path, then select one of the supported frameworks (React, Angular, or Vue) for your new application.
 
     ![ProjectLocation](images/ProjectLocationName.png)
 
-3. Click either **Next** or **Framework** tab, the Framework types will be appearing and choose any one of the Framework:
+3. Click **Next** or navigate to the **Framework** tab. Choose your preferred framework:
    * React
    * Angular
    * Vue
@@ -41,7 +41,7 @@ The steps below help you to create **Syncfusion Web Applications** through the *
 
     ![Themes](images/Themes.png)
 
-5. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Web App is configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages, styles, and the component render code for the Syncfusion<sup style="font-size:70%">&reg;</sup>  component added.
+5. The Syncfusion<sup style="font-size:70%">&reg;</sup> Web Application is initialized with all required Syncfusion NPM packages, styles, and render code for the chosen Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
     ![NPM Packages](images/npm-install.png)
 

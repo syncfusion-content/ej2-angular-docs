@@ -1,29 +1,29 @@
 ---
 layout: post
-title: Export tree grid in server in Angular Tree Grid component | Syncfusion
-description: Learn here all about Exporting tree grid in server in Syncfusion Angular Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Exporting TreeGrid on the server in Angular TreeGrid component | Syncfusion
+description: Learn how to export the Angular TreeGrid component to PDF on the server side using server export libraries and configuration with Syncfusion Essential JS 2.
 platform: ej2-angular
-control: Exporting tree grid in server 
+control: Exporting TreeGrid in server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting tree grid in server in Angular Tree Grid component
+# Exporting TreeGrid on the server in Angular TreeGrid component
 
-The Tree Grid have an option to export the data to PDF in server side using tree grid server export library.
+The TreeGrid provides an option to export data to PDF on the server side using the TreeGrid server export library.
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio<sup style="font-size:70%">&reg;</sup> and [nuget.org](https://www.nuget.org/). The following list of dependencies is required for tree grid server side PDF exporting action.
+The server-side export functionality is available in the `Syncfusion.EJ2.TreeGridExport` package, which is distributed in Essential Studio<sup style="font-size:70%">&reg;</sup> and on [nuget.org](https://www.nuget.org/). The following dependencies are required for TreeGrid server-side PDF exporting:
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.TreeGridExport
 
 ## Server configuration
 
-The following code snippet shows server configuration using ASP.NET Core Controller Action.
+The following code snippet demonstrates server configuration using an ASP.NET Core Controller Action.
 
-To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#serverpdfexport) method for passing the tree grid properties to server exporting action.
+To export the TreeGrid on the server side, call the [`serverPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#serverpdfexport) method, which sends the TreeGrid properties to the server-side exporting action.
 
 ```typescript
 
@@ -54,7 +54,6 @@ public class TreeGridColumnModel
 {
     public List<TreeGridColumn> columns { get; set; }
 }
-
 
 ```
 
@@ -101,15 +100,15 @@ export class AppComponent implements OnInit {
 }
 
 ```
-## Rotate a header text to a certain degree in the exported tree grid on the server side
+## Rotate a header text to a certain degree in the exported TreeGrid on the server side
 
-The Tree Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
+The TreeGrid supports customization of column header styles—such as text orientation and font color—in the exported PDF file. To achieve this, define the `BeginCellLayout` event of the `PdfExportProperties` and create an event handler to perform the required actions.
 
-The `PdfHeaderCellRendering` will be triggered when creating a column header for the pdf document to be exported. Collect the column header details in this event and handle the custom in the BeginCellLayout event handler.
+The `PdfHeaderCellRendering` event is triggered when creating a column header in the PDF document. Collect column header details in this event and handle the customization inside the BeginCellLayout event handler.
 
-In the following demo, the `DrawString` method from the `Graphics` is used to rotate the header text of the column header inside the `BeginCellLayout` event handler.
+In the following demo, the `DrawString` method from the `Graphics` object is used to rotate the column header text inside the `BeginCellLayout` event handler.
 
-> A PDF exporting is not supported to rotate the column header on the client side.
+> PDF exporting does not support rotating the column header text on the client side.
 
 ```typescript
 
@@ -136,9 +135,9 @@ public void BeginCellEvent(object sender, PdfGridBeginCellLayoutEventArgs args)
     PdfGrid grid = (PdfGrid)sender;
     var brush = new PdfSolidBrush(new PdfColor(Color.DimGray));
     args.Graphics.Save();
-    args.Graphics.TranslateTransform(args.Bounds.X + 50, args.Bounds.Height + 40); // give the value for bounds x and Y by the user
-    args.Graphics.RotateTransform(-60);   // give the rotate degree value by the user
-                                          // Draw the text at particular bounds.
+    args.Graphics.TranslateTransform(args.Bounds.X + 50, args.Bounds.Height + 40); // Set transform X and Y as needed
+    args.Graphics.RotateTransform(-60);   // Set rotation degree as needed
+    // Draw the text at the specified bounds.
     args.Graphics.DrawString(headerValues[args.CellIndex], new PdfStandardFont(PdfFontFamily.Helvetica, 10), brush, new PointF(0, 0));
     if (args.IsHeaderRow)
     {

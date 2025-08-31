@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Filter bar in Angular TreeGrid component
 
-The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
+The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid. It displays an input field for each column, allowing users to enter filter criteria and instantly see the filtered results.
 
-By defining the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) to true, then filter bar row will be rendered next to header which allows you to filter data. You can filter the records with different expressions depending upon the column type.
+To enable filter bar functionality, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property to true, then the filter bar row will be rendered next to the header which allows filtering data. Records can be filtered with different expressions depending upon the column type.
 
 **Filter bar expressions:**
 
-You can enter the following filter expressions(operators) manually in the filter bar.
+The following filter expressions (operators) can be entered manually in the filter bar.
 
 Expression |Example |Description |Column Type
 -----|-----|-----|-----
@@ -31,7 +31,7 @@ Expression |Example |Description |Column Type
 N/A |N/A |Always **equal** operator will be used for Date filter |Date
 N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 
-The following example demonstrates how to activate default filtering in the tree grid.
+The following example demonstrates how to activate default filtering in the TreeGrid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,19 +47,19 @@ The following example demonstrates how to activate default filtering in the tree
   
 {% previewsample "page.domainurl/samples/treegrid/filtering-cs4" %}
 
-> To enable or dynamically switch the filter type, you must set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filtersettings/#type) as **FilterBar**.
+> To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filtersettings/#type) as **FilterBar**.
 
 ## Filter bar modes
 
 In the TreeGrid component, the filter bar can operate in two different ways when filtering criteria are applied. These modes, "OnEnter Mode" and "Immediate Mode," provide different experiences and behaviors when interacting with the filter bar. The **OnEnter** mode is the default mode of the filter bar in the TreeGrid component.
 
 **OnEnter Mode:**
-By settings [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
+By setting [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
 
 **Immediate Mode:**
-By settings [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
+By setting [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
 
-The following example illustrates how to enable different filter bar modes in the tree grid.
+The following example illustrates how to enable different filter bar modes in the TreeGrid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,11 +77,11 @@ The following example illustrates how to enable different filter bar modes in th
 
 ## Display filter text in pager
 
-The TreeGrid component provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides you with a clear understanding of the applied filters and the criteria used for filtering.
+The TreeGrid component provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides a clear understanding of the applied filters and the criteria used for filtering.
 
-To enable the display of filter text within the pager, you should set the [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) configuration.
+To enable the display of filter text within the pager, set the [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) configuration.
 
-The following example demonstrates how to display the filter text in the pager of the tree grid by using the `showFilterBarStatus` property:
+The following example demonstrates how to display the filter text in the pager of the TreeGrid by using the `showFilterBarStatus` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,11 +99,11 @@ The following example demonstrates how to display the filter text in the pager o
 
 ## Show or hide filter bar operator in filter bar cell
 
-In the TreeGrid component, you have the ability to modify the filter operator for a column directly within the interface while filtering through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
+In the TreeGrid component, the filter operator for a column can be modified directly within the interface while filtering through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". The default operator for a specific column can be customized using the filter operator feature.
 
-To achieve this functionality, you can enable the  [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#showfilterbaroperator) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) of the grid object using the tree grid instance in the [load](https://helpej2.syncfusion.com/angular/documentation/api/treegrid/#load) event of the tree grid.
+To achieve this functionality, enable the [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#showfilterbaroperator) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) of the grid object using the TreeGrid instance in the [load](https://helpej2.syncfusion.com/angular/documentation/api/treegrid/#load) event of the TreeGrid.
 
-The following example demonstrates how to show or hide the filter bar operator in the filter bar cell of the tree grid by using the `showFilterBarOperator` property.
+The following example demonstrates how to show or hide the filter bar operator in the filter bar cell of the TreeGrid by using the `showFilterBarOperator` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,11 +121,11 @@ The following example demonstrates how to show or hide the filter bar operator i
 
 ## Hide filter bar for template column
 
-By default, the filter bar is set to a disabled mode for template columns in the grid. However, in certain cases, you may want to hide the filter bar for a template column to provide a customized filtering experience.
+By default, the filter bar is set to a disabled mode for template columns in the TreeGrid. However, in certain cases, the filter bar may need to be hidden for a template column to provide a customized filtering experience.
 
-To hide the filter bar for a template column, you can use the [filterTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filtertemplate) property of the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/) and remove the html content of the filter bar. This property allows you to define a custom template for the filter bar of a column.
+To hide the filter bar for a template column, use the [filterTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filtertemplate) property of the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/) and remove the HTML content of the filter bar. This property allows defining a custom template for the filter bar of a column.
 
-Here's an example that demonstrates how to hide the filter bar for a template column in the tree grid:
+Here's an example that demonstrates how to hide the filter bar for a template column in the TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,16 +143,15 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 ## Filter bar template with custom component
 
-Normally, text box is the default element rendered in the filter bar cell. You can customize the components displayed in the filter bar cell using the [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filterbartemplate) feature. This flexibility allows you to use various components, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
+Normally, a text box is the default element rendered in the filter bar cell. The components displayed in the filter bar cell can be customized using the [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filterbartemplate) feature. This flexibility allows using various components, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on specific requirements.
 
-You can check this video to learn about how to use custom component in filter bar in Angular Tree Grid.
+This video demonstrates how to use custom components in the filter bar in Angular TreeGrid:
 
 {% youtube "https://www.youtube.com/watch?v=LZQjc7DFni4" %}
 
+To utilize this feature, define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in the Angular application.
 
-To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your Angular application.
-
-The following example demonstrates how to show a custom component in the filter bar cell of the tree grid by using the `filterBarTemplate` property.
+The following example demonstrates how to show a custom component in the filter bar cell of the TreeGrid by using the `filterBarTemplate` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

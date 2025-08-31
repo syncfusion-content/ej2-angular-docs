@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Check box selection in Angular Treegrid component | Syncfusion
-description: Learn here all about Check box selection in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Check box selection in Angular TreeGrid component | Syncfusion
+description: Learn how to enable and configure checkbox selection in the Syncfusion Angular TreeGrid component, including selection modes, persistence, and row-only selection.
 platform: ej2-angular
-control: Check box selection 
+control: Check box selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check box selection in Angular Treegrid component
+# Check box selection in Angular TreeGrid component
 
-Checkbox Selection provides an option to select multiple TreeGrid records with help of checkbox in each row.
+Checkbox selection enables users to select multiple TreeGrid rows using checkboxes that appear in each row.
 
-To render checkbox in each treegrid row, you need to use checkbox column with type as `CheckBox` using
-column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property.
+To render a checkbox in each TreeGrid row, add a column with type set to `CheckBox` using the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,19 +23,18 @@ column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/co
 {% include code-snippet/treegrid/selection-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs2" %}
 
-> By default selection is allowed by clicking a treegrid row or checkbox in that row. To allow Selection only through checkbox, you can set [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxonly) property to true.
-> Selection can be persisted on all the operations using [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#persistselection) property.
-For persisting selection on the TreeGrid, any one of the column should be defined as a primary key using [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
+> By default, selection is allowed via clicking either a row or its checkbox. To restrict selection to only the checkbox, set the [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxonly) property to `true`.
+> To persist selection across operations, set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#persistselection) to `true`. For persisted selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
 
 ## Checkbox selection mode
 
-In checkbox selection, selection can also be done by clicking on rows. This selection provides two types of Checkbox Selection mode which can be set by using the following API, [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxmode). The modes are;
+Checkbox selection supports two modes, which can be set using [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxmode):
 
-* **`Default`**: This is the default value of the checkboxMode. In this mode, user can select multiple rows by clicking rows one by one.
-* **`ResetOnRowClick`**: In ResetOnRowClick mode, when user clicks on a row it will reset previously selected row. Also you can perform multiple-selection in this mode by press and hold CTRL key and click the desired rows. To select range of rows, press and hold the SHIFT key and click the rows.
+* **Default** (default): Users can select multiple rows by clicking their checkboxes or rows sequentially.
+* **ResetOnRowClick**: Clicking a row resets previous selections. To select multiple rows, press and hold the CTRL key while clicking desired rows. To select a range, press and hold the SHIFT key and click the rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,7 +45,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 {% include code-snippet/treegrid/selection-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs3" %}
 
- > Checkbox Selection feature is intended for row selection only; it is not compatible with cell selection mode.
+> Checkbox Selection is intended for row selection only and is not compatible with cell selection mode.

@@ -1,23 +1,21 @@
 ---
 layout: post
-title: Selection in Angular Treegrid component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular TreeGrid component | Syncfusion
+description: Learn all about selection in the Syncfusion Angular TreeGrid component, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: ej2-angular
-control: Selection 
+control: Selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Treegrid component
+# Selection in Angular TreeGrid component
 
-Selection provides an option to highlight a row or cell. Selection can be done through simple Mouse down or Arrow keys. To disable selection in the TreeGrid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to false.
+Selection enables users to highlight or select rows or cells within the TreeGrid. Selection can be performed with mouse clicks or keyboard arrow keys. To disable selection in the TreeGrid, set [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to `false`.
 
-The treegrid supports two types of selection that can be set by using the [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type).They are:
+TreeGrid supports two types of selection, configurable using [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type):
 
-* **`Single`** - The `Single` value is set by default. Allows you to select only a single row or cell.
-* **`Multiple`** - Allows you to select multiple rows or cells.
-To perform the multi-selection, press and hold CTRL key and click the desired rows or cells.
-To select range of rows or cells, press and hold the SHIFT key and click the rows or cells.
+* **Single** (default): Allows selection of only a single row or cell at a time.
+* **Multiple**: Allows multiple rows or cells to be selected. Hold the CTRL key and click desired rows or cells to select multiple items. Hold SHIFT and click to select a range of rows or cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,16 +26,16 @@ To select range of rows or cells, press and hold the SHIFT key and click the row
 {% include code-snippet/treegrid/selection-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs8" %}
 
 ## Selection mode
 
-TreeGrid supports three types of selection mode which can be set by using [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#mode). They are:
+Selection mode can be configured with [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#mode):
 
-* **`Row`** - The `row` value is set by default. Allows you to select rows only.
-* **`Cell`** - Allows you to select cells only.
-* **`Both`** - Allows you to select rows and cells at the same time.
+* **Row** (default): Selects entire rows.
+* **Cell**: Selects individual cells only.
+* **Both**: Allows simultaneous row and cell selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,12 +46,12 @@ TreeGrid supports three types of selection mode which can be set by using [`sele
 {% include code-snippet/treegrid/selection-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs9" %}
 
 ## Toggle selection
 
-The Toggle selection allows to perform selection and unselection of the particular row or cell. To [`enable toggle`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#enabletoggle) selection, set enableToggle property of the selectionSettings as true. If you click on the selected row or cell then it will be unselected and vice versa.
+Toggle selection allows users to select and unselect specific rows or cells by clicking them. Enable toggle selection by setting the [`enableToggle`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#enabletoggle) property in `selectionSettings` to `true`. Clicking on a selected row or cell will deselect it, and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,21 +62,25 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% include code-snippet/treegrid/selection-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/selection-cs10" %}
 
->If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
+> If multi-selection is enabled, the first click on any selected row (without pressing Ctrl) will clear previous selections. The second click on the same row will deselect it.
 
 ## Touch interaction
 
-When you tap the tree grid row on touch screen devices, the tapped row is selected.
-Also, it will show a popup ![Multi row selection](../images/selection.jpg) for multi-row-selection.
-To select multiple rows or cells, tap the popup![Multi row or cell selection](../images/mselection.jpg) then tap the desired rows or cells.
+On touch devices, tapping anywhere on a TreeGrid row will select it. A popup appears for multi-row selection. To select multiple rows or cells, tap the popup and then tap the desired items.
 
-> For multi-selection, It requires the selection [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) to be **Multiple**.
+![Multi row selection](../images/selection.jpg)
 
-The following screenshot represents a tree grid touch selection in the device.
+To select multiple rows or cells using touch, use the multi-selection popup:
+
+![Multi row or cell selection](../images/mselection.jpg)
+
+> For multi-selection on touch devices, [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) must be set to **Multiple**.
+
+The screenshot below shows TreeGrid touch selection in a device context:
 
 ![Touch Interaction](../images/touch-selection.jpg)
 
-> Refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.
+> For more about TreeGrid features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). For live examples, see the [Angular TreeGrid demo](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

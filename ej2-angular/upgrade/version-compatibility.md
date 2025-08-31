@@ -12,10 +12,11 @@ domainurl: ##DomainURL##
 
 ## Supported Angular Versions
 
-The following table outlines the compatibility between Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components and supported Angular versions:
+The following table provides compatibility information for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components and supported Angular versions:
 
 | Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | --------------- | ------------------------------------------------ |
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 30.1.37 and above |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
@@ -27,7 +28,7 @@ The following table outlines the compatibility between Syncfusion<sup style="fon
 
 ## Ivy and Non-Ivy Package Compatibility
 
-Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are compatible with the [Angular Ivy compiler](https://angular.io/guide/ivy). However, to support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two different package distributions:
+**Ivy** is Angular's default rendering engine, introduced in Angular 9, which provides improved build times and bundle sizes. **View Engine** is the legacy rendering engine used in earlier Angular versions. To support both Ivy and non-Ivy (View Engine) applications, Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package distributions:
 
 1. **Ivy-compatible packages**: These are the default packages and do not require any special suffix.
 
@@ -35,29 +36,29 @@ Starting from version 20.2.36, Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 ### Usage of ngcc Packages
 
-The Angular Compatibility Compiler (ngcc) is used to make non-Ivy packages compatible with Ivy-based applications. For Syncfusion<sup style="font-size:70%">&reg;</sup> components, use the following guidelines:
+The Angular Compatibility Compiler (**ngcc**) transforms packages to work with Ivy-based applications. For Syncfusion<sup style="font-size:70%">&reg;</sup> components, follow these guidelines:
 
-- **For Ivy-based applications (Angular 12 and above)**: Use the default packages without any suffix.
+- **Ivy-based applications (Angular 12 and above):** Use the default packages without any suffix.
 
   Example:
   ```json
   "@syncfusion/ej2-angular-grids": "20.2.38"
   ```
 
-- **For non-Ivy applications (using View Engine)**: Add the `-ngcc` suffix to the package version.
+- **Non-Ivy applications (View Engine):** Add the `-ngcc` suffix to the package version.
 
   Example:
   ```json
   "@syncfusion/ej2-angular-grids": "20.2.38-ngcc"
   ```
 
-> **Note:** The `-ngcc` suffix is only required for versions 20.2.36 and later when using non-Ivy applications. For Ivy-based applications, which is the default for Angular 12 and above, use the packages without the suffix.
+> **Note:** The `-ngcc` suffix is required only for versions 20.2.36 and later when using non-Ivy applications. For Ivy-based applications, which is the default for Angular 12 and above, use the packages without the suffix.
 
-For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-syncfusion-grid-package).
+For detailed installation instructions, refer to the [Angular package installation guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#installing-syncfusion-grid-package).
 
 ## Understanding Syncfusion<sup style="font-size:70%">&reg;</sup> Version Numbers
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
+Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release cycle for major updates. The version numbering system for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses semantic versioning in the format **Major.Minor.Patch**. This system allows developers to quickly understand the nature of each release.
 
 For example, a release version `22.1.34` can be interpreted as follows:
 
@@ -74,14 +75,14 @@ By understanding this versioning system, developers can easily assess the impact
 
 ## Staying Up-to-Date
 
-To ensure optimal performance and access to the latest features, it's recommended to keep Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components updated to the most recent version compatible with the Angular version in use. Regular updates provide:
+To maintain stability, performance, and access to recent features, keep Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components updated to the latest version compatible with the Angular version in use. Benefits of regular updates include:
 
-1. Access to new features and improvements
-2. Enhanced performance and stability
-3. Timely bug fixes and security patches
+- Access to new features and enhancements
+- Improved performance and reliability
+- Timely bug fixes and security updates
 
 ## Additional Resources
 
-* [Syncfusion Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
-* [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade-guide/)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle)
+* [Upgrade Guide for Angular UI Components](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion)
 * [Angular Update Guide](https://update.angular.io/)

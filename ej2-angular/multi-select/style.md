@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style in Angular Multi select component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+title: CSS Styling and Customization in Angular Multi-select component | Syncfusion
+description: Learn here all about CSS styling and customization in Syncfusion Angular Multi-select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Multi select component
+# CSS Styling and Customization in Angular Multi-select component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the CSS selectors and properties that can be used to customize the Angular Multi-select component's appearance based on specific requirements.
 
 ## Customizing the background color of wrapper element
 
-Use the following CSS to customize the background color of wrapper element.
+Use the following CSS to customize the background color of the main wrapper element
 
 ```css
 .e-multiselect.e-input-group .e-multi-select-wrapper {
@@ -24,7 +24,7 @@ Use the following CSS to customize the background color of wrapper element.
 
 ## Customizing the appearance of the delimiter wrapper element
 
-Use the following CSS to customize the appearance of delimiter wrapper element.
+Use the following CSS to customize the appearance of the delimiter wrapper element that displays selected values in delimiter mode.
 
 ```css
 .e-multiselect .e-delim-values {
@@ -36,7 +36,7 @@ Use the following CSS to customize the appearance of delimiter wrapper element.
 
 ## Customizing the appearance of chips
 
-Use the following CSS to customize the appearance of selected chips.
+Use the following CSS to customize the appearance of selected value chips displayed in box mode.
 
 ```css
 .e-multiselect .e-multi-select-wrapper .e-chips .e-chipcontent {
@@ -51,9 +51,9 @@ Use the following CSS to customize the appearance of selected chips.
 }
 ```
 
-## Customizing the dropdown icon’s color
+## Customizing the dropdown icon's color
 
-Use the following CSS to customize the dropdown icon’s color.
+Use the following CSS to customize the dropdown icon's color and size.
 
 ```css
 .e-multiselect.e-input-group .e-input-group-icon, .e-multiselect.e-input-group.e-control-wrapper .e-input-group-icon:hover {
@@ -64,7 +64,7 @@ Use the following CSS to customize the dropdown icon’s color.
 
 ## Customizing the focus color
 
-Use the following CSS to customize the focusing color of input element.
+Use the following CSS to customize the focus indicator color of the input element.
 
 ```css
 .e-multiselect.e-input-group.e-control-wrapper.e-input-focus::before, .e-multiselect.e-input-group.e-control-wrapper.e-input-focus::after {
@@ -72,9 +72,9 @@ Use the following CSS to customize the focusing color of input element.
 }
 ```
 
-## Customizing the disabled component’s text color
+## Customizing the disabled component's text color
 
-Use the following CSS to customize the text color when the component is disabled.
+Use the following CSS to customize the text color when the component is in disabled state.
 
 ```css
 .e-multiselect.e-disabled .e-multi-select-wrapper .e-delim-values {
@@ -84,7 +84,7 @@ Use the following CSS to customize the text color when the component is disabled
 
 ## Customizing the color of the placeholder text
 
-Use the following CSS to customize the text color of placeholder.
+Use the following CSS to customize the text color of the placeholder.
 
 ```css
 .e-multiselect input.e-dropdownbase::placeholder {
@@ -92,9 +92,9 @@ Use the following CSS to customize the text color of placeholder.
 }
 ```
 
-## Customizing the placeholder to add mandatory indicator(*)
+## Customizing the placeholder to add mandatory indicator (*)
 
-Use the following CSS to add the mandatory indicator * to the float label element.
+Use the following CSS to add the mandatory indicator (*) to the float label element.
 
 ```css
 .e-input-group.e-control-wrapper.e-float-input .e-float-text::after {
@@ -103,9 +103,9 @@ Use the following CSS to add the mandatory indicator * to the float label elemen
 }
 ```
 
-## Customizing the float label element's focusing color
+## Customizing the float label element's focus color
 
-Use the following CSS to customize the focusing color of float label element.
+Use the following CSS to customize the focus color of the float label element.
 
 ```css
 .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after {
@@ -120,7 +120,7 @@ Use the following CSS to customize the focusing color of float label element.
 
 ## Customizing the outline theme's focus color
 
-Use the following CSS to customize the focusing color of outline theme.
+Use the following CSS to customize the focus color when using the outline theme.
 
 ```css
 .e-outline.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),.e-outline.e-input-group.e-input-focus.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),.e-outline.e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled),.e-outline.e-input-group.e-control-wrapper.e-input-focus:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) {
@@ -129,9 +129,9 @@ Use the following CSS to customize the focusing color of outline theme.
 }
 ```
 
-## Customizing the background color of focus, hover, and active item's
+## Customizing the background color of focus, hover, and active items
 
-Use the following CSS to customize the background color of focus, hover and active item's.
+Use the following CSS to customize the background color of focused, hovered, and active items in the dropdown list.
 
 ```css
 .e-dropdownbase .e-list-item.e-item-focus, .e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover, .e-dropdownbase .e-list-item.e-hover {
@@ -140,9 +140,9 @@ Use the following CSS to customize the background color of focus, hover and acti
 }
 ```
 
-## Customizing the appearance of pop-up element
+## Customizing the appearance of popup element
 
-Use the following CSS to customize the appearance of popup element.
+Use the following CSS to customize the appearance of dropdown popup list items.
 
 ```css
 .e-dropdownbase .e-list-item, .e-dropdownbase .e-list-item.e-item-focus {
@@ -155,7 +155,7 @@ Use the following CSS to customize the appearance of popup element.
 
 ## Customizing the color of the checkbox
 
-Use the following CSS to customize the color of checkbox.
+Use the following CSS to customize the color of the checkbox selection indicators.
 
 ```css
 .e-popup .e-checkbox-wrapper .e-frame.e-check, .e-popup .e-checkbox-wrapper:hover .e-frame.e-check {

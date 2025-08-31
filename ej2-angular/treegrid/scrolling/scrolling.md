@@ -1,28 +1,28 @@
 ---
 layout: post
 title: Scrolling in Angular TreeGrid component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+description: Learn how to enable and configure scrolling in the Syncfusion Angular TreeGrid component, including responsive sizing, sticky headers, scroll-to-row, and hiding scrollbars.
 platform: ej2-angular
-control: Scrolling 
+control: Scrolling
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Scrolling in Angular TreeGrid component
 
-The scrolling feature in the TreeGrid component allows navigation through content that extends beyond the visible area of the tree grid. Scrollbars are automatically displayed when the content exceeds the specified [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) or [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) of the tree grid element. This feature is useful for large amounts of data or when content needs to be displayed within a limited space. The vertical and horizontal scrollbars will be displayed based on the following criteria:
+The scrolling feature in the TreeGrid component enables navigation through large amounts of data that extend beyond the visible area. Scrollbars are automatically displayed when the content exceeds the specified [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) or [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) of the TreeGrid. This feature is essential for presenting extensive content or working within limited screen space.
 
-* The vertical scrollbar appears when the total height of the rows exceeds the height of the tree grid element.
-* The horizontal scrollbar appears when the total width of the columns exceeds the width of the tree grid element.
-* The `height` and `width` are used to set the tree grid height and width, respectively.
+- A vertical scrollbar appears when the total row height exceeds the TreeGrid's height.
+- A horizontal scrollbar appears when the total column width exceeds the TreeGrid's width.
+- The `height` and `width` properties control the TreeGrid's dimensions.
 
-> The default value for `height`and `width` of the tree grid is `auto`.
+> By default, the TreeGrid's `height` and `width` are set to `auto`.
 
 ## Set width and height
 
-The TreeGrid component offers a straightforward method to tailor the width and height of the tree grid component to meet your specific requirements. This is particularly useful when you want precise control over the dimensions of the tree grid. To achieve this, you can use pixel values as numbers or percentage values for the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) properties of the tree grid.
+You can set exact width and height for the TreeGrid component according to your UI requirements by assigning a numeric pixel value or percentage to the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) properties. 
 
-In the following example, the scrollbar is enabled, and the tree grid's `height` is set to 315 pixels, while the `width` is set to 400 pixels:
+For example, set the TreeGrid's `height` to 315 pixels and `width` to 400 pixels to enable scrollbars:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,12 +32,12 @@ In the following example, the scrollbar is enabled, and the tree grid's `height`
 {% include code-snippet/treegrid/scrolling-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/scrolling-cs1" %}
 
 ## Responsive with parent container
 
-The TreeGrid component allows you to create a responsive layout by making it fill its parent container and automatically adjust its size based on the available space and changes in the container's dimensions. This capability is particularly useful for building applications that need to adapt to various screen sizes and devices.
+Create a responsive layout by setting the TreeGrid's [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) to `100%`. The TreeGrid will fill its parent container and adjust its size dynamically. The parent element must have an explicit height for the TreeGrid's 100% height to take effect.
 
 To achieve this, you need to specify the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) properties of the tree grid as 100%. However, setting the height property to 100% requires the tree grid's parent element to have an explicitly defined height.
 
@@ -51,12 +51,12 @@ In the following example, the parent container has explicit height and width set
 {% include code-snippet/treegrid/scrolling-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/scrolling-cs2" %}
 
 ## Sticky header
 
-The Syncfusion Angular TreeGrid provides a useful feature to keep the column headers fixed (sticky) while scrolling through large datasets. This ensures that the headers remain visible at all times, enhancing user experience by making it easier to understand the context of the data displayed, especially when dealing with wide or long hierarchical data.
+The TreeGrid offers sticky headers, which keep column headers visible at the top while scrolling vertically. This enhances user experience by maintaining data context during navigation of wide or long hierarchical data sets.
 
 For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, allowing users to easily keep track of the data context.
 
@@ -72,12 +72,12 @@ The following sample demonstrates how to enable or disable the sticky header in 
 {% include code-snippet/treegrid/scrolling-sticky-header/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/scrolling-sticky-header" %}
 
 ## Scroll to selected row
 
-The TreeGrid component allows you to scroll the tree grid content to the position of the selected row, ensuring that the selected row is automatically brought into view. This feature is particularly useful when dealing with a large dataset and wanting to maintain focus on the selected row. To achieve this, you can utilize the [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event of the Tree Grid.
+Scroll the TreeGrid content to bring the selected row into view using the [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event. This is especially useful when working with large datasets.
 
 The following example demonstrates how to use the `rowSelected`` event to scroll to the selected row:
 
@@ -89,14 +89,14 @@ The following example demonstrates how to use the `rowSelected`` event to scroll
 {% include code-snippet/treegrid/scrolling-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/scrolling-cs4" %}
 
-## Hide the empty placehoder of scrollbar
+## Hide the empty placeholder of the scrollbar
 
-The TreeGrid component provides support to hide the empty placeholder of the scrollbar, offering a cleaner interface without unnecessary scrollbars. To achieve this, you can utilize the [hideScroll](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidescroll) method of the grid object using the tree grid instance. This method allows you to determine whether the scrollbar should be hidden based on the content's overflow.
+You can hide the empty placeholder of the TreeGrid's scrollbar for a cleaner interface. Use the [hideScroll](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidescroll) method on the TreeGrid instance, typically within the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event.
 
-The following example demonstrates how to use the `hideScroll` method inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event:
+Here is an example of using `hideScroll`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,5 +106,5 @@ The following example demonstrates how to use the `hideScroll` method inside the
 {% include code-snippet/treegrid/scrolling-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/scrolling-cs5" %}

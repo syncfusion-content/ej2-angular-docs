@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import "node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-lists/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import 'node_modules/@syncfusion/ej2-angular-blockeditor/styles/fluent2.css';
+
+#container {
+    margin: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.instructions {
+    padding: 15px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+}
+
+.instructions p {
+    margin-top: 0;
+    color: #856404;
+    font-weight: bold;
+}
+
+.instructions ol {
+    margin-bottom: 0;
+    color: #856404;
+}
+
+#output {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    min-height: 100px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+}

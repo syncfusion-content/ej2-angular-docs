@@ -1,0 +1,72 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ContextMenuClickEventArgs, ContextMenuService, GridModule, ContextMenuItem, GridComponent} from '@syncfusion/ej2-angular-grids';
+import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart } from '@syncfusion/ej2-grid-chart';
+import { ChartModel } from '@syncfusion/ej2-charts';
+import { salesDatas } from './datasource';
+
+@Component({
+  imports: [ GridModule],
+  providers: [ContextMenuService],
+  standalone: true,
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+})
+
+export class AppComponent implements OnInit {
+  @ViewChild('grid') public grid?: GridComponent;
+  public data?: Object[];
+  public gridChart?: GridChart;
+  public contextMenuItems?: ContextMenuItem[];
+  public selectionSettings?: Object;
+
+  ngOnInit(): void {
+    this.data = salesDatas;
+    this.selectionSettings = { type: 'Multiple' };
+    this.contextMenuItems= [ 'Bar', 'StackingBar', 'StackingBar100', 'Pie', 'Column', 'StackingColumn', 'StackingColumn100', 'Line', 'StackingLine', 'StackingLine100', 'Area', 'StackingArea', 'StackingArea100', 'Scatter'];
+  }
+
+  created(): void {
+    this.gridChart = new GridChart({
+      enableRtl: (this.grid as GridComponent).enableRtl,
+      locale: (this.grid as GridComponent).locale,
+    });
+  }
+
+  contextMenuClick(args: ContextMenuClickEventArgs) {
+    if (args.chartType) {
+      const chartArgs: ChartPopupArgs = {
+        gridInstance: (args.gridInstance as GridComponent),
+        chartType: args.chartType,
+        records: args.records as SalesRecord[],
+      };
+      const chartModel: ChartModel = {
+        primaryXAxis: {
+          valueType: 'Category',
+          labelRotation: 315
+        }
+      };
+
+      const model: ChartChanges = { chart: chartModel, accumulationChart: {} };
+      const categorySeries: CategorySeries = {
+        category: ['Product', 'Month'],
+        series: ['Online', 'Retail']
+      };
+      (this.gridChart as GridChart).render(chartArgs, model, categorySeries);
+    }
+  }
+}
+
+interface SalesRecord {
+  Product: string;
+  Category: string;
+  Year: number;
+  Online: number;
+  Retail: number;
+  ProfitLoss: number;
+  UnitsSold: number;
+  Revenue: number;
+  Image: string;
+  CategoryIcon: string;
+}

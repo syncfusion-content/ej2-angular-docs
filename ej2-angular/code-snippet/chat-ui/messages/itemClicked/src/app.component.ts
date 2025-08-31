@@ -4,9 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule, ChatUIComponent, MessageToolbarSettingsModel, MessageToolbarItemClickedEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
 import { UserModel } from '@syncfusion/ej2-interactive-chat';
 import { Component, ViewChild} from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
-
-enableRipple(true);
 
 @Component({
     imports: [ FormsModule, ReactiveFormsModule, ChatUIModule ],
@@ -31,8 +28,17 @@ export class AppComponent {
         ],
         itemClicked: (args: MessageToolbarItemClickedEventArgs) => {
             if (args.item.prefixIcon === 'e-icons e-chat-forward') {
-                const newMessageObj = args.message;
-                newMessageObj.isForwarded = true;
+                const newMessageObj = {
+                    id: 'chat-message-' + (this.chatUI.messages.length + 1).toString(),
+                    isForwarded: true,
+                    isPinned: args.message.isPinned,
+                    author: args.message.author,
+                    text: args.message.text,
+                    timeStamp: args.message.timeStamp,
+                    timeStampFormat: args.message.timeStampFormat,
+                    status: args.message.status,
+                    replyTo: args.message.replyTo
+                };
                 this.chatUI.addMessage(newMessageObj);
             }
         }

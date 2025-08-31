@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular TreeView Component
 
-This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component, and configure its available functionalities.
+This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component and configure its available functionalities in your Angular application.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI, use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -22,7 +22,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below.
 
 ```bash
 ng new my-app
@@ -31,15 +31,15 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> TreeView Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. The packages are compatible with Angular version 12 and above. To download the package, use the command below.
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -47,9 +47,9 @@ Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncf
 npm install @syncfusion/ej2-angular-navigations --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
 
 Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
 
@@ -57,17 +57,17 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as shown below.
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will display a warning.
 
 ## Adding CSS Reference
 
-Add TreeView component's styles as given below in **styles.css**.
+Add the TreeView component's styles as given below in **styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -85,15 +85,13 @@ Alternatively, based on the location of your CSS file, you can import the styles
 @import "node_modules/@syncfusion/ej2-buttons/styles/material.css";
 ```
 
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer to the combined component styles, make use of the [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add TreeView component
 
-Modify the template in **src/app/app.component.ts** file to render the TreeView component.
-Add the Angular TreeView by using `<ejs-treeview>` selector in `template` section of the **app.component.ts** file.
+Modify the template in the **src/app/app.component.ts** file to render the TreeView component. Add the Angular TreeView by using the `<ejs-treeview>` selector in the `template` section of the **app.component.ts** file.
 
 ```typescript
-
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 
@@ -103,18 +101,18 @@ imports: [
 ],
 standalone: true,
 selector: 'app-root',
-template: `<ejs-treeview id='treeelement' ></ejs-treeview>`
+template: `<ejs-treeview id='treeelement'></ejs-treeview>`
 })
 export class AppComponent { }
-
 ```
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and `DataManager`. Here, an array of JavaScript objects is passed to the TreeView component.
+The TreeView can load data from either local data sources or remote data services. This is accomplished using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and `DataManager`. In this example, an array of JavaScript objects is passed to the TreeView component.
+
+The `fields` property defines the mapping between your data source and the TreeView display. The key properties include `id` for unique identification, `text` for the display text, and `child` for nested hierarchical data structure.
 
 ```typescript
-
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewEncapsulation } from '@angular/core';
 
@@ -131,18 +129,18 @@ export class AppComponent {
     constructor() {
     }
     // defined the array of data
-     public hierarchicalData: Object[] = [
+    public hierarchicalData: Object[] = [
         { id: '01', name: 'Music', expanded: true,
             subChild: [
-                {id: '01-01', name: 'Gouttes.mp3'},
-                      ]
+                {id: '01-01', name: 'Gouttes.mp3'}
+            ]
         },
         {
             id: '02', name: 'Videos',
             subChild: [
                 {id: '02-01', name: 'Naturals.mp4'},
                 {id: '02-02', name: 'Wild.mpeg'}
-        ]
+            ]
         },
         {
             id: '03', name: 'Documents',
@@ -150,19 +148,18 @@ export class AppComponent {
                 {id: '03-01', name: 'Environment Pollution.docx'},
                 {id: '03-02', name: 'Global Water, Sanitation, & Hygiene.docx'},
                 {id: '03-03', name: 'Global Warming.ppt'},
-                {id: '03-02', name: 'Social Network.pdf'},
-                {id: '03-03', name: 'Youth Empowerment.pdf'},
+                {id: '03-04', name: 'Social Network.pdf'},
+                {id: '03-05', name: 'Youth Empowerment.pdf'}
             ]
         }
     ];
-    public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
+    public field: Object = { dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
 }
-
 ```
 
 ## Run the application
 
-Use the following command to run the application in browser.
+Use the following command to run the application in the browser.
 
 ```javascript
 ng serve --open
@@ -186,7 +183,7 @@ The output will appear as follows.
   
 {% previewsample "page.domainurl/samples/tree-view/getting-started-cs8" %}
 
-> You can also explore our [Angular TreeView](https://ej2.syncfusion.com/angular/demos/#/material/treeview/default) example to knows how to present and manipulate data.
+> You can also explore the [Angular TreeView](https://ej2.syncfusion.com/angular/demos/#/material/treeview/default) example to learn how to present and manipulate data.
 
 ## See Also
 

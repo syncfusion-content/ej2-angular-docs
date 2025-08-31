@@ -3,15 +3,16 @@ layout: post
 title: Horizontal in Angular Card component | Syncfusion
 description: Learn here all about Horizontal in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Horizontal 
+control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Horizontal in Angular Card component
 
-By default, all the card elements are aligned vertically one after the other as in the DOM.
-You can achieve the element to align horizontally as well by adding the class `e-card-horizontal` in the root card element.
+By default, all card elements are aligned vertically in a stacked layout following the natural DOM flow. The horizontal layout provides an alternative arrangement where card elements are positioned side-by-side, creating a more compact and visually engaging presentation for content that benefits from lateral organization.
+
+To achieve horizontal alignment, add the `e-card-horizontal` class to the root card element. This transforms the default vertical layout into a horizontal arrangement where child elements flow from left to right.
 
 ## Stacked cards
 
@@ -20,14 +21,14 @@ This will align the stacked section vertically aligned differentiating from hori
 
 Class   | Description
 ------------ | -------------
-`e-card-horizontal` | To align card elements horizontally.
-`e-card-stacked` | To align elements vertically within the horizontal layout.
+`e-card-horizontal` | Aligns card elements horizontally in a side-by-side layout.
+`e-card-stacked` | Forces vertical alignment for specific sections within a horizontal layout.
 
 ```html
         <div tabindex="0" class="e-card e-card-horizontal">
-            <img src="code1.png" alt="Sample">   --> Aligned in horizontal
-            <div class="e-card-stacked">         --> Aligned in horizontal
-               // Inside the element all are aligned vertical directions
+            <img src="code1.png" alt="Sample">   <!-- Aligned horizontally -->
+            <div class="e-card-stacked">         <!-- Horizontal container -->
+               <!-- Inside this element, all content flows vertically -->
             </div>
         </div>
 ```

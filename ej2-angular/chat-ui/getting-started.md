@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Chat UI component
+# Getting Started with the Angular Chat Component
 
-This section explains how to create a simple **Chat UI** component and configure its available functionalities in Angular.
+This section explains how to create a simple Syncfusion **Chat** component and configure its features in an Angular application.
 
 ## Dependencies
 
@@ -28,15 +28,15 @@ The following list of dependencies are required to use the Angular Chat UI compo
 
 ## Setup angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
 
 ```
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI.
 
 ```
 ng new my-app
@@ -133,9 +133,9 @@ The following example illustrates the output in your browser.
 
 {% previewsample "page.domainurl/samples/chat-ui/getting-started" %}
 
-## Configure messages and user
+## Configure Messages and User
 
-You can use the `<e-messages>` tag directive to group all the messages and `<e-message>` tag to define each message and the [user](../api/chat-ui#user) property to configure the current user for the chat.
+To define the chat content, use the `<e-messages>` tag to group all messages, and the `<e-message>` tag for each individual message. The `user` property assigns an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,3 +148,4 @@ You can use the `<e-messages>` tag directive to group all the messages and `<e-m
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/defaultmessages" %}
+```

@@ -10,20 +10,29 @@ domainurl: ##DomainURL##
 
 # Getting Started with ASP.NET Core and Angular using Project Template
 
-This guide provides detailed instructions on creating a simple ASP.NET Core application with the Angular Framework using the dotnet CLI, integrating it with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
+This guide demonstrates how to create an ASP.NET Core application with Angular integration and incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components. This combination provides a powerful foundation for building modern web applications with a robust backend framework and responsive frontend components.
 
 ## Prerequisites
 
-Ensure the following prerequisites are installed on your development machine before you start using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an ASP.NET Core with Angular project:
+Before starting, ensure your development environment meets these requirements:
 
 * [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
+## Understanding ASP.NET Core with Angular
+
+ASP.NET Core with Angular combines Microsoft's server-side framework with Google's client-side framework to create full-stack web applications. The template provides:
+
+- ASP.NET Core backend for API endpoints, authentication, and business logic
+- Angular frontend for interactive user interfaces
+- Seamless integration between both frameworks with proxy configuration
+- Webpack for building and bundling client assets
+
 ## Create an Application
 
-Use the dotnet CLI to create an ASP.NET Core application with Angular:
+Follow these steps to create an ASP.NET Core application with Angular integration:
 
-1. Open the command prompt in your desired directory and run the following command to create an ASP.NET Core application with Angular.
+1. Open the command prompt in your desired directory and run the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -33,7 +42,7 @@ dotnet new angular -o Syncfusion-ASP.NET-Core-Angular
 {% endhighlight %}
 {% endtabs %}
 
-2. Navigate to the application folder using the following command.
+2. Navigate to the application folder:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -43,8 +52,9 @@ cd Syncfusion-ASP.NET-Core-Angular
 {% endhighlight %}
 {% endtabs %}
 
-3. On Windows, set the `ASPNETCORE_ENVIRONMENT` environment variable to `Development` by running:
+3. Set the development environment variable:
 
+**For Windows:**
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
@@ -53,9 +63,16 @@ SET ASPNETCORE_ENVIRONMENT=Development
 {% endhighlight %}
 {% endtabs %}
 
-> For Linux or macOS, run the `export ASPNETCORE_ENVIRONMENT=Development` in the terminal.
+**For Linux/macOS:**
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-4. Now, execute the build command to ensure the application builds correctly. During the initial run, the build process restores npm dependencies, which may take several minutes. Subsequent builds will be significantly faster.
+export ASPNETCORE_ENVIRONMENT=Development
+
+{% endhighlight %}
+{% endtabs %}
+
+4. Build the application to verify everything works correctly:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -65,27 +82,46 @@ dotnet build
 {% endhighlight %}
 {% endtabs %}
 
-5. The ASP.NET Core with Angular project template has been successfully created.
+> Note: The initial build process restores npm dependencies, which may take several minutes. Subsequent builds will be faster.
+
+5. After successful build, you'll have a project with the following structure:
+   - `ClientApp/`: Contains the Angular application
+   - `Controllers/`: Houses ASP.NET Core API controllers
+   - `Pages/`: Contains Razor pages (if any)
+   - `Program.cs`: Configures ASP.NET Core services and middleware
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. Access all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages via this [npm link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to your application:
 
-To install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid package, navigate to the ClientApp folder and execute the following commands:
+1. Navigate to the ClientApp folder:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
 cd ClientApp
 
+{% endhighlight %}
+{% endtabs %}
+
+2. Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid package:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
 npm install @syncfusion/ej2-angular-grids --save
 
 {% endhighlight %}
 {% endtabs %}
 
+> All Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are available under the `@syncfusion` scope. You can find the complete list of packages at [npmjs.com](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+
 ## Adding Grid Module
 
-After installing the package, configure the component modules in your application using the installed Syncfusion<sup style="font-size:70%">&reg;</sup> package. Open the `~/src/app.module.ts` file located in the `ClientApp` folder using Visual Studio Code or your preferred code editor, and use the following code snippet to import the Grid module.
+Now, configure your Angular application to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
+
+1. Open the `~/ClientApp/src/app/app.module.ts` file in your preferred code editor.
+2. Import and register the Grid module:
 
 {% tabs %}
 {% highlight ts tabtitle="app.module.ts" hl_lines="14 29" %}
@@ -136,7 +172,7 @@ export class AppModule { }
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component
 
-Insert the following grid component code snippet in the `~/src/home/home.component.ts` file as follows.
+Insert the following grid component code snippet in the `~/src/app/home/home.component.ts` file as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="home.component.ts" %}
@@ -184,9 +220,17 @@ export class HomeComponent {
 {% endhighlight %}
 {% endtabs %}
 
+This code:
+- Creates a component with a Grid element (`<ejs-grid>`)
+- Defines four columns with various configurations
+- Provides sample data for the grid to display
+
 ## Adding CSS Reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components come with a range of pre-built [themes](../appearance/theme-studio/) that are easily incorporated into your project. You can achieve this by importing the necessary CSS files directly from the `~/node_modules/@syncfusion` package. Below, you will find the styles specific to the Grid component, which need to be added to your `~/src/styles.css` file.
+Add the required CSS files to style your Syncfusion<sup style="font-size:70%">&reg;</sup> components:
+
+1. Open the `~/ClientApp/src/styles.css` file.
+2. Add the following CSS imports:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -204,9 +248,11 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components come with a 
 {% endhighlight %}
 {% endtabs %}
 
+These imports provide the Material theme styling for various UI components that the Grid depends on. The imports should be in this specific order to ensure proper styling.
+
 ## Run the Application
 
-To run the application, navigate to the root directory and execute the following commands:
+Return to the root directory and start your application:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}

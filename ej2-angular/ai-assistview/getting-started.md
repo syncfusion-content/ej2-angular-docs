@@ -14,7 +14,7 @@ This section explains how to create a simple **AI AssistView** component and con
 
 ## Dependencies
 
-The following list of dependencies are required to use the Angular AI AssistView component in your application.
+The following list of dependencies is required to use the Angular AI AssistView component in your application. The component is distributed as part of the `@syncfusion/ej2-angular-interactive-chat` package.
 
 ```javascript
 |-- @syncfusion/ej2-angular-interactive-chat
@@ -24,9 +24,9 @@ The following list of dependencies are required to use the Angular AI AssistView
     |-- @syncfusion/ej2-inputs
 ```
 
-## Setup angular environment
+## Set up Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
 
 ```
 npm install -g @angular/cli
@@ -34,7 +34,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI command.
 
 ```
 ng new my-app
@@ -59,28 +59,27 @@ Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-interactive-chat --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For projects using Angular versions below 12, you can use the legacy (`ngcc`) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
 
-Add [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
+Add the [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix to the package version, as shown below.
 
 ```bash
 @syncfusion/ej2-angular-interactive-chat:"27.1.48-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the `ngcc` tag is not specified while installing the package, the Ivy Library Package will be installed, which may cause warnings in pre-Ivy applications.
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+The required CSS files are available in the `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using the following import statements.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -92,7 +91,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding AI AssistView component
 
-Modify the template in [src/app/app.component.ts] file to render the Angular AI AssistView component. Add the Angular AI AssistView by using `<ejs-aiassistview>` selector in `template` section of the app.component.ts file.
+Modify the template in the [src/app/app.component.ts] file to render the Angular AI AssistView component. Add the component by applying the [`ejs-aiassistview`] attribute directive to a `div` element within the `template` section of the `app.component.ts` file.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -132,7 +131,7 @@ The following example illustrates the output in your browser.
 
 ## Configure suggestions and responses
 
-You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+Use the [promptSuggestions](../api/ai-assistview/#promptsuggestions) property to display a list of predefined suggestion chips. To provide custom responses, handle the [promptRequest](../api/ai-assistview/#promptrequest) event, which is triggered when a user query is sent.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,3 +144,4 @@ You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) prop
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/ai-assistview/defaultprompts" %}
+```

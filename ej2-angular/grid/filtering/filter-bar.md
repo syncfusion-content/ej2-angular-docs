@@ -150,18 +150,18 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs7/src/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/filter-bar-cs7/src/app.template.html %}
+{% include code-snippet/grid/filter-bar-cs8/src/app.template.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs7/src/main.ts %}
+{% include code-snippet/grid/filter-bar-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/grid/filter-bar-cs7" %}
+{% previewsample "page.domainurl/samples/grid/filter-bar-cs8" %}
 
 ## See also
 
