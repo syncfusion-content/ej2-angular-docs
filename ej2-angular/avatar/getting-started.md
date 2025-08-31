@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular Avatar component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Avatar component of Syncfusion Essential JS 2 and more details.
+description: Learn how to create and configure the Angular Avatar component with initials, icons, and images using Syncfusion Essential JS 2.
 platform: ej2-angular
-control: Getting started 
+control: Avatar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,45 +12,49 @@ domainurl: ##DomainURL##
 
 The following section explains the steps required to create a simple **Avatar** component using styles and its basic usage.
 
-## Setting up angular project
+## Setting up Angular project
 
-Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
+Angular provides an efficient way to create new projects using the Angular CLI tool.
 
-Install the CLI application globally to your machine by using following command.
+Install the CLI application globally using the following command:
 
 ```sh
 npm install -g @angular/cli
 ```
 
-Create a new angular application
+Create a new Angular application:
 
 ```sh
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder by using following command.
+Navigate to the created project folder:
 
 ```sh
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+>Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section for detailed information about setting up Angular CLI projects.
 
-## Dependencies
+## Avatar component dependencies
 
 The `Avatar` component is pure CSS component which doesn't need specific dependencies to render.
+
+The component requires the following Syncfusion<sup style="font-size:70%">&reg;</sup> package:
 
 ```javascript
 |-- @syncfusion/ej2-layouts
 ```
 
+This package provides the essential styles and utilities needed for the Avatar component.
+
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Layouts package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package:
 
 ### Ivy library distribution package
 
@@ -62,27 +66,27 @@ Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusio
 npm install @syncfusion/ej2-angular-layouts --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
 
-Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package to the application.
+Add the [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package:
 
 ```bash
 npm install @syncfusion/ej2-angular-layouts@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-layouts:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc tag is not specified during installation, the Ivy Library Package will be installed and may display warnings for incompatible Angular versions.
 
 ## Adding style sheet to the application
 
-To render the Avatar component, import the Avatar and its dependent component styles using relative paths as shown below in `[src/styles.css]`.
+To render the Avatar component, import the required stylesheets in the `[src/styles.css]` file:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -90,7 +94,7 @@ To render the Avatar component, import the Avatar and its dependent component st
 @import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
-Alternatively, you can import the styles directly relative to the **node_modules** folder based on your CSS file's location, as shown below:
+Alternatively, import the styles directly relative to the **node_modules** folder based on your CSS file's location, as shown below:
 
 ```css
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -98,16 +102,15 @@ Alternatively, you can import the styles directly relative to the **node_modules
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
->Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: To use combined component styles, refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) for your application.
 
-## Add Avatar into application
+## Adding Avatar to the application
 
-Modify the `template` in `app.component.ts` file to render Avatar component.
+The Avatar component uses CSS classes to display user representations. Modify the `template` in the `app.component.ts` file to render the Avatar component.
 
 `[src/app/app.component.ts]`
 
 ```typescript
-
 import { Component } from '@angular/core';
 
 @Component({
@@ -119,18 +122,17 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {}
-
 ```
 
 ## Run the application
 
-Run the application in the browser using the following command.
+Run the application in the browser using the following command:
 
 ```html
 npm start
 ```
 
-The following example shows a basic Avatar component.
+The following example demonstrates a basic Avatar component with initials:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,4 +150,4 @@ The following example shows a basic Avatar component.
   
 {% previewsample "page.domainurl/samples/avatar/getting-started-cs1" %}
 
-> You can refer to our [Angular Avatar](https://www.syncfusion.com/angular-components/angular-avatar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Avatar example](https://ej2.syncfusion.com/angular/demos/#/material/avatar/default) to knows how to present and manipulate data.
+> Refer to the [Angular Avatar](https://www.syncfusion.com/angular-components/angular-avatar) feature tour page for comprehensive feature demonstrations. Explore the [Angular Avatar example](https://ej2.syncfusion.com/angular/demos/#/material/avatar/default) to learn data presentation and manipulation techniques.

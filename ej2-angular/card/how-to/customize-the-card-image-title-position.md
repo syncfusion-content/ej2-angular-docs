@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Customize the card image title position in Angular Card component
-description: Learn here all about Customize the card image title position in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Customize Image Title Position in Angular Card | Syncfusion
+description: Learn here all about customizing the card image title position in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize the card image title position 
+control: Card
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Customize the card image title position in Angular Card component
 
-Card Image titles are placed as always Bottom-Left Corner only, You can manually customize to placing titles anywhere over the image by adding styles.
+By default, card image titles are positioned in the bottom-left corner with an overlay effect. You can customize the title placement to any position over the image by applying custom CSS styles to override the default positioning.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

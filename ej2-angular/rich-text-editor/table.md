@@ -54,6 +54,26 @@ You can insert `Rows` above or below the selected table cell using the quick too
 
 ![Rich Text Editor table column](images/table_column.png)
 
+## Quick insert for table rows and columns
+
+The Rich Text Editor offers a simple and intuitive way to add rows and columns to your tables without interrupting your workflow. You can expand tables directly from the interface, no need to use toolbar buttons.
+
+### Insert columns instantly
+
+- **Where to hover**: Place your cursor over any cell in the **first row** of your table.
+- **What you'll see**: A small dot icon (●) will appear at the **top edge** of the cell.
+- **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new column to the left.
+
+![Rich Text Editor table column quick insert](images/table_column_quick_insert.gif)
+
+### Insert rows instantly
+
+- **Where to hover**: Place your cursor over any cell in the **first column** of your table.
+- **What you'll see**: A small dot icon (●) will appear at the **left edge** of the cell.
+- **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new row above.
+
+![Rich Text Editor table row quick insert](images/table_row_quick_insert.gif)
+
 ## Setting cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
@@ -94,7 +114,7 @@ By Default, provides Dashed border and Alternate rows.
 
 Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/).
 
-Users can modify the width, cell padding, and cell spacing of selected tables using the properties option in the quick toolbar.
+Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
 ![Rich Text Editor table settings](images/table_properties.png)
 

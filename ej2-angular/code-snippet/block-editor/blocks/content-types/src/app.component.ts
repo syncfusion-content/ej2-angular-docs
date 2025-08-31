@@ -16,7 +16,8 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            type: 'Heading2',
+            type: 'Heading',
+            props: {level : 2},
             content: [
                 {
                     type: ContentType.Text,
@@ -34,7 +35,7 @@ export class AppComponent {
                 {
                     type: ContentType.Link,
                     content: 'hyperlinks',
-                    linkSettings: {
+                    props: {
                         url: 'https://ej2.syncfusion.com/documentation/',
                         openInNewWindow: true
                     }
@@ -49,7 +50,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Text,
-                    content: '\nUser mentions like '
+                    content: '\nUser mentions like'
                 },
                 {
                     type: ContentType.Mention,
@@ -57,11 +58,11 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Text,
-                    content: ', and labels such as '
+                    content: ', and labels such as'
                 },
                 {
                     type: ContentType.Label,
-                    id: 'label1'
+                    props: { labelId: 'label1'}
                 },
                 {
                     type: ContentType.Text,

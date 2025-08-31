@@ -18,11 +18,13 @@ export class AppComponent {
         {
             id: 'security-callout',
             type: 'Callout',
+            props: {
             children: [
                 { 
                     id: 'security-title',
                     parentId: 'security-callout',
-                    type: 'Heading3',
+                    type: 'Heading',
+                    props: { level: 3},
                     content: [{
                         type: ContentType.Text,
                         content: 'Security Notice'
@@ -68,6 +70,7 @@ export class AppComponent {
                     indent: 1
                 }
             ]
+        }
         }
     ];
 

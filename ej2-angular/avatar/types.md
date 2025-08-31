@@ -3,26 +3,26 @@ layout: post
 title: Types in Angular Avatar component | Syncfusion
 description: Learn here all about Types in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Types 
+control: Avatar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Types in Angular Avatar component
 
-This section explains different types of avatar.
+The Angular Avatar component provides different sizes and visual styles to suit various design requirements. This section covers the available avatar sizes and shape types that can be customized using CSS classes.
 
 ## Avatar size
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar has the following predefined sizes that can be used with the `.e-avatar` class to change the appearance of the avatar.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar provides predefined sizes that can be applied using CSS classes with the base `.e-avatar` class to control the avatar's dimensions.
 
 | Class Name         | Description
 | :-------------     |:-------------
-| e-avatar-xlarge    | Displays xlarge size avatar.
-| e-avatar-large     | Displays apply large size avatar.
-| e-avatar           | Displays apply default size avatar.
-| e-avatar-small     | Displays apply small size avatar.
-| e-avatar-xsmall    | Displays apply xsmall size avatar.
+| e-avatar-xlarge    | Displays extra large size avatar.
+| e-avatar-large     | Displays large size avatar.
+| e-avatar           | Displays default size avatar.
+| e-avatar-small     | Displays small size avatar.
+| e-avatar-xsmall    | Displays extra small size avatar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,14 +42,14 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar has the followin
 
 ## Avatar types
 
-The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 avatar are:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar supports two distinct shape styles to accommodate different design preferences:
 
-* Default
+* Default (Rectangular with rounded corners)
 * Circle
 
 ### Default
 
-The default style of the avatar is rectangular shape with rounded corners, which can be applied from adding the modifier class `.e-avatar` to the target element.
+The default avatar style features a rectangular shape with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +69,7 @@ The default style of the avatar is rectangular shape with rounded corners, which
 
 ### Circle
 
-The circle avatar style can be applied by adding the modifier class `.e-avatar-circle` to the target element.
+The circular avatar style creates a perfectly round appearance, ideal for profile pictures and user representations. Apply this style by adding the modifier class `.e-avatar-circle` along with the base `.e-avatar` class to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

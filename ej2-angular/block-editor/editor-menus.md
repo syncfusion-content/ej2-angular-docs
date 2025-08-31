@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Editor Menus in Angular Block Editor component
 
-The Block Editor component provides several interactive menus to enhance content creation and editing. These menus offer quick access to various commands and formatting options.
+The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 
 ## Slash command menu
 
@@ -20,25 +20,25 @@ The Slash Command menu allows users to quickly insert or transform blocks by typ
 
 The Slash Command menu comes with a set of pre-defined commands for all block types:
 
--   **Headings(Level 1 to 4)**: to insert respective heading blocks.
--   **Lists(Bullet, Numbered, Checklist)**: for different list types.
--   **Paragraph**: for standard text blocks.
--   **Image**: for media insertion.
--   **Toggle**: for collapsible content.
--   **Callout**: for highlighting important information.
--   **Utility(Divider, Quote, Code)**: for other utility blocks.
+-   **Headings (Level 1 to 4)**: Inserts a heading block of the corresponding level.
+-   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type.
+-   **Paragraph**: Inserts a standard text block.
+-   **Image**: Inserts a media block for images.
+-   **Toggle**: Creates a collapsible content block.
+-   **Callout**: Inserts a block for highlighting important information.
+-   **Utility (Divider, Quote, Code)**: Inserts a utility block like a divider, quote, or code block.
 
 ### Customize Slash command menu
 
-You can utilize the [commandMenu](../api/blockeditor/#commandmenu) property on the Block Editor component to customize the Slash Command menu to include your own custom commands and other modifications.
+You can use the [commandMenu](../api/blockeditor/#commandmenu) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/commandMenuSettingsModel/#enabletooltip) property on the command menu settings.
+By default, a tooltip is displayed when the user hovers over a command item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/commandMenuSettingsModel/#enabletooltip) property on the command menu settings.
 
 ### Events
 
-The following events are available in the Slash Command menu.
+The following events are available for the Slash Command menu:
 
 |Name|Args|Description|
 |---|---|---|
@@ -47,7 +47,7 @@ The following events are available in the Slash Command menu.
 |[queryFiltering](../api/blockeditor/commandMenuSettingsModel/#queryfiltering)|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
 |[itemClicked](../api/blockeditor/commandMenuSettingsModel/#itemclicked)|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
 
-Below example demonstrates the customization of the Slash Command menu.
+The following example demonstrates how to customize the Slash Command menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,20 +70,20 @@ The Context menu appears when a user right-clicks within a specific block. It pr
 
 ### Built-in items
 
-The Context menu offers different built-in options:
+The Context menu offers the following built-in options:
 
--  **Undo/Redo**: Undo and redo actions.
--  **Cut/Copy/Paste**: Standard clipboard actions.
--  **Indent**: Increase or decrease the indent level of the selected block.
--  **Link**: Add or edit a hyperlink.
+-  **Undo/Redo**: Reverses or re-applies the last action.
+-  **Cut/Copy/Paste**: Standard clipboard actions for selected content.
+-  **Indent**: Increases or decreases the indent level of the selected block.
+-  **Link**: Adds or edits a hyperlink for the selected text.
 
 ### Customize Context menu
 
-You can utilize the [contextMenu](../api/blockeditor/#contextmenu) property on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
+You can use the [contextMenu](../api/blockeditor/#contextmenu) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
 
 ### Events
 
-The following events are available in the Context menu.
+The following events are available for the Context menu:
 
 |Name|Args|Description|
 |---|---|---|
@@ -93,7 +93,7 @@ The following events are available in the Context menu.
 |[close](../api/blockeditor/contextMenuSettingsModel/#close)|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
 |[itemClick](../api/blockeditor/contextMenuSettingsModel/#itemclick)|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
 
-Below example demonstrates the customization of the Context menu.
+The following example demonstrates how to customize the Context menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,28 +112,28 @@ Below example demonstrates the customization of the Context menu.
 
 ## Block action menu
 
-The Block Action menu typically appears next to a block when you hover over it and click on the drag handle icon, offering quick actions specific to that block.
+The Block Action menu appears next to a block when you hover over it and click the drag handle icon, offering quick actions specific to that block.
 
 ### Built-in items
 
 The Block Action menu provides convenient actions for managing individual blocks:
 
--   **Duplicate**: Create a copy of the current block.
--   **Delete**: Remove the block from the editor.
--   **Move Up**: Move the block one level up in the hierarchy.
--   **Move Down**: Move the block one level down in the hierarchy.
+-   **Duplicate**: Creates an exact copy of the current block.
+-   **Delete**: Removes the block from the editor.
+-   **Move Up**: Moves the block one position higher.
+-   **Move Down**: Moves the block one position lower.
 
 ### Customize Block action menu
 
-You can utilize the [blockActionsMenu](../api/blockeditor/#blockactionsmenu) property on the Block Editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
+You can use the [blockActionsMenu](../api/blockeditor/#blockactionsmenu) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the action item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/blockActionMenuSettingsModel/#enabletooltip) property on the block action menu settings.
+By default, a tooltip is displayed when the user hovers over an action item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/blockActionMenuSettingsModel/#enabletooltip) property in the block action menu settings.
 
 ### Events
 
-The following events are available in the Block action menu.
+The following events are available for the Block action menu:
 
 |Name|Args|Description|
 |---|---|---|
@@ -141,7 +141,7 @@ The following events are available in the Block action menu.
 |[close](../api/blockeditor/blockActionMenuSettingsModel/#close)|BlockActionMenuCloseEventArgs|Triggers when the block action menu is closed.|
 |[itemClick](../api/blockeditor/blockActionMenuSettingsModel/#itemClick)|BlockActionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
 
-Below example demonstrates the customization of the Block action menu.
+The following example demonstrates how to customize the Block action menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,29 +160,29 @@ Below example demonstrates the customization of the Block action menu.
 
 ## Inline Toolbar
 
-The Inline Toolbar appears when a text is selected in the editor, providing quick access to common text formatting actions that apply to the inline content.
+The Inline Toolbar appears when text is selected in the editor, providing quick access to common text formatting actions that apply to inline content.
 
 ### Built-in items
 
-The Inline Toolbar includes below built-in formatting options:
+The Inline Toolbar includes the following built-in formatting options:
 
--   **Text Styles**: Bold, Italic, Underline, Strikethrough.
+-   **Text Styles**: Bold, Italic, Underline, and Strikethrough.
 -   **Superscript/Subscript**: For mathematical or scientific notations.
--   **Case Conversion**: Uppercase, Lowercase.
--   **Text Color**: Change text color.
--   **Background Color**: Change background color.
+-   **Case Conversion**: Change text to uppercase or lowercase.
+-   **Text Color**: Change the color of the selected text.
+-   **Background Color**: Change the background color of the selected text.
 
 ### Customize Inline Toolbar
 
-You can utilize the [inlineToolbar](../api/blockeditor/#inlinetoolbar) property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
+You can use the [inlineToolbar](../api/blockeditor/#inlinetoolbar) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the toolbar item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/inlineToolbarSettingsModel/#enabletooltip) property on the inline toolbar settings.
+By default, a tooltip is displayed when the user hovers over a toolbar item. You can show or hide this tooltip using the [enableTooltip](../api/blockeditor/inlineToolbarSettingsModel/#enabletooltip) property in the inline toolbar settings.
 
 ### Events
 
-The following events are available in the Inline Toolbar.
+The following events are available for the Inline Toolbar:
 
 |Name|Args|Description|
 |---|---|---|
@@ -190,7 +190,7 @@ The following events are available in the Inline Toolbar.
 |[close](../api/blockeditor/inlineToolbarSettingsModel/#close)|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
 |[itemClicked](../api/blockeditor/inlineToolbarSettingsModel/#itemclicked)|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
-Below example demonstrates the customization of the Inline Toolbar.
+The following example demonstrates how to customize the Inline Toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

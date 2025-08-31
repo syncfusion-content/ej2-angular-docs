@@ -16,13 +16,15 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            type: 'ToggleHeading1',
+            type: 'CollapsibleHeading',
             content: [
                 {
                     type: ContentType.Text,
                     content: 'Collapsible Section'
                 }
             ],
+            props:{
+            level: 1,
             isExpanded: true,
             children: [
                 {
@@ -35,15 +37,17 @@ export class AppComponent {
                     ]
                 }
             ]
+        }
         },
         {
-            type: 'ToggleParagraph',
+            type: 'CollapsibleParagraph',
             content: [
                 {
                     type: ContentType.Text,
                     content: 'Toggle paragraph section'
                 }
             ],
+            props:{
             isExpanded: false,
             children: [
                 {
@@ -56,6 +60,7 @@ export class AppComponent {
                     ]
                 }
             ]
+        }
         }
     ];
 

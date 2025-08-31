@@ -16,7 +16,8 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            type: 'Heading1',
+            type: 'Heading',
+            props: { level: 2},
             content: [
                 {
                     type: ContentType.Text,

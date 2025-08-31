@@ -138,7 +138,7 @@ export class AppComponent {
 
 ### Component life cycle methods
 
-### Destroy the component
+#### Destroy the component
 
 The [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#destroy) method removes the component from the DOM and detaches all event handlers while maintaining the original input element. This method is useful when dynamically removing TextBox components.
 
@@ -169,7 +169,7 @@ export class AppComponent {
 }
 ```
 
-### Get persist data
+#### Get persist data
 
 The [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#getpersistdata) method returns the properties that should be maintained in the persisted state. This is useful when implementing custom persistence logic.
 

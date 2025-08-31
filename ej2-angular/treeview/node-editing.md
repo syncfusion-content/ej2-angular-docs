@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Node editing in Angular TreeView component
 
-The TreeView allows you to edit nodes by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview#allowediting) property to **true**. To directly edit the nodes in place, **double click** the TreeView node or **select** the node and press the **F2** key.
+The TreeView component provides in-place node editing functionality by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property to **true**. To directly edit nodes in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
 
-When editing is completed by losing focus or by pressing the **Enter** key, the modified node's text saves automatically. If you do not want to save the modified node’s text in TreeView node, press **Escape** key. It does not save the edited text to the TreeView node.
+When editing is completed by losing focus or pressing the **Enter** key, the modified node's text is saved automatically. To cancel editing without saving changes, press the **Escape** key. This discards the edited text and retains the original TreeView node text.
 
-* Node editing can also be performed programmatically by using the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview#beginedit) method. When passing the node ID or element through this method, an edit textbox will be created for the particular node, allowing it to be edited.
+* Node editing can also be performed programmatically using the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#beginedit) method. When passing the node ID or element through this method, an inline edit textbox is created for the specified node, enabling immediate editing.
 
-* If you need to validate or prevent editing, you can use the [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeediting) event. This event is triggered before the TreeView node is renamed. On successfully renaming a node the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeedited) event will be triggered.
+* For validation or prevention of editing operations, use the [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeediting) event. This event triggers before the TreeView node is renamed and provides access to cancel the operation, original text, new text, and node data. Upon successful node renaming, the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event triggers with the updated node information.
 
-In the following example, the first level node’s text cannot be changed, but all other level nodes' text can be changed.
+In the following example, the first level node's text cannot be changed, but all other level nodes' text can be modified.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

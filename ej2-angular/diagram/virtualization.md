@@ -8,15 +8,33 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in Angular Diagram component
+# Virtualization in Angular Diagram Component
 
-Virtualization is a technique to optimize the performance of diagrams, especially when working with larger diagrams
+Virtualization is a performance optimization technique that significantly improves diagram rendering and interaction speed, particularly when working with large-scale diagrams containing hundreds or thousands of nodes and connectors.
 
-## Virtualization in Diagram
+## Understanding Virtualization in Diagram
 
-Virtualization optimizes the diagram performance by loading only the diagramming objects within the visible area, or ViewPort, of the Scroll Viewer. This means that only the nodes and connectors that are currently in view are loaded, while the remaining objects are loaded dynamically as they come into view.
+Virtualization enhances diagram performance by implementing on-demand loading of diagramming objects. Only the nodes and connectors currently visible within the diagram's viewport are rendered and processed, while objects outside the visible area remain unloaded until they enter the view during scrolling or panning operations.
 
-This feature significantly enhances performance, especially when working with diagrams containing a large number of nodes and connectors. By reducing the number of objects that need to be processed at any given time, virtualization ensures smoother interactions, such as loading and dragging items within the diagram.
+This selective rendering approach provides substantial performance benefits:
+
+* **Reduced Memory Usage**: Only visible objects consume memory resources
+* **Faster Initial Load**: Diagrams render quickly regardless of total object count  
+* **Smooth Interactions**: Dragging, zooming, and panning remain responsive
+* **Scalable Performance**: Performance remains consistent as diagram size increases
+
+## When to Enable Virtualization
+
+Virtualization is recommended for diagrams that meet any of these criteria:
+
+* Contain 100 or more nodes and connectors
+* Experience performance issues during scrolling or zooming
+* Require frequent updates to large datasets
+* Display complex organizational charts, network diagrams, or flowcharts
+
+## Enabling Virtualization
+
+To activate virtualization, include the `Virtualization` constraint in the diagram's constraints property. The virtualization feature works in conjunction with the diagram's scrolling capabilities to manage object loading dynamically.
 
 To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/#diagramconstraints).
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize pager drop down in Angular Treegrid component | Syncfusion
-description: Learn here all about Customize pager drop down in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Customize pager drop down in Angular TreeGrid component | Syncfusion
+description: Learn how to customize the pager dropdown in the Syncfusion Angular TreeGrid component of Essential JS 2, including setting page size values using pageSettings.
 platform: ej2-angular
 control: Customize pager drop down 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize pager drop down in Angular Treegrid component
+# Customize pager drop down in Angular TreeGrid component
 
-To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings/#pagesizes) as array of strings.
+To customize the default values in the pager dropdown, define the [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings/#pagesizes) property as an array of strings within the TreeGrid's page settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -21,7 +21,7 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% include code-snippet/treegrid/refresh-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs5" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For additional details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn more about presenting and manipulating data.

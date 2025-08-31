@@ -3,18 +3,18 @@ layout: post
 title: Getting started with Angular Breadcrumb component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Breadcrumb component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Breadcrumb 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Breadcrumb component
 
-This section explains how to create a simple Breadcrumb, and demonstrate the basic usage of the Breadcrumb module in an Angular environment.
+This section explains how to create a simple Breadcrumb component and demonstrates the basic usage of the Breadcrumb module in an Angular environment. The Breadcrumb component provides a navigation aid that helps users understand their current location within a hierarchy of pages or sections, displaying clickable links to parent levels.
 
 ## Dependencies
 
-The list of dependencies required to use the Breadcrumb module in your application is given below:
+The following dependencies are required to use the Breadcrumb module in your Angular application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -48,15 +48,15 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup>  Breadcrumb Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -66,7 +66,7 @@ npm install @syncfusion/ej2-angular-navigations --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the command below.
 
 Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
 
@@ -74,7 +74,7 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below.
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
@@ -84,8 +84,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Breadcrumb component
 
-Modify the template in `app.component.ts` file with `ejs-breadcrumb` to render the Breadcrumb
-component.
+Modify the template in `app.component.ts` file with `ejs-breadcrumb` to render the Breadcrumb component.
 
 ```javascript
 import { BreadcrumbModule } from '@syncfusion/ej2-angular-navigations'
@@ -138,7 +137,7 @@ The following example shows a basic `Breadcrumb` component.
 
 ## Add Items to the Breadcrumb Component
 
-Use `items` property to bind items for Breadcrumb component. The below example demonstrates the basic rendering of Breadcrumb with items support.
+Use the `items` property to bind items for the Breadcrumb component. Each item in the items array follows the BreadcrumbItemModel interface, which includes properties like `text` (display text), `url` (navigation link), `iconCss` (icon class), and `disabled` (enable/disable state). The example below demonstrates the basic rendering of Breadcrumb with items support.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,7 +153,7 @@ Use `items` property to bind items for Breadcrumb component. The below example d
 
 ## Enable or Disable Navigation
 
-This feature enables or disables the item navigation. By default, the navigation will be enabled when setting `Url` property. To prevent breadcrumb item navigation, set `enableNavigation` property as false in Breadcrumb. The below example shows enabling and disabling the navigation of Breadcrumb items.
+This feature enables or disables item navigation functionality. By default, navigation will be enabled when the `url` property is set for breadcrumb items. To prevent breadcrumb item navigation, set the `enableNavigation` property to false. When navigation is disabled, clicking on breadcrumb items will not navigate to their specified URLs. The example below shows how to enable and disable navigation for Breadcrumb items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

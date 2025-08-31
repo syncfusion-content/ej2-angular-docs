@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Events of node interaction in Angular Diagram component | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Node Events in Angular Diagram component | Syncfusion®
+description: Learn about node interaction events in Syncfusion Angular Diagram including click, selection, position, size, rotate, property and collection events.
 platform: ej2-angular
 control: Events of node
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events
+# Node Interaction Events in Angular Diagram Component
 
-Diagram provides some events support for node that triggers when interacting with the node.
+The Angular Diagram component provides comprehensive event support for node interactions, allowing developers to respond to user actions and customize behavior during various interaction scenarios. These events are triggered when users interact with nodes through clicking, dragging, resizing, rotating, and other operations.
 
-## Click event
+## Click Event
 
-Triggers when the node is clicked. The following code example explains how to get the [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) event in the diagram.
+Triggered when a user clicks on a node. This event provides access to the clicked node and mouse event details, enabling custom click handling and node-specific actions.
+
+The following code example demonstrates how to handle the [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,10 +30,11 @@ Triggers when the node is clicked. The following code example explains how to ge
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs0" %}
 
-## Selection change event
+## Selection Change Event
 
-Triggers when the node is selected in diagram.
-The following code example explains how to get the [`selectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectionchange) event in the diagram.
+Triggered when a node's selection state changes, either when selected or deselected. This event fires during both the selection process and completion, providing control over selection behavior.
+
+The following code example shows how to handle the [`selectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectionchange) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,22 +48,22 @@ The following code example explains how to get the [`selectionChange`](https://e
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs1" %}
 
- You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iselectionchangeeventargs/) to true, as shown in the code snippet below.
+Selection can be prevented by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iselectionchangeeventargs/) to true, as shown in the following code:
 
 ```ts
-  public selectionChange(args:ISelectionChangeEventArgs): void {
-    if(args.state === 'Changing'){
-        //Prevents selection
-      args.cancel = true;
+public selectionChange(args: ISelectionChangeEventArgs): void {
+    if (args.state === 'Changing') {
+        // Prevents node selection
+        args.cancel = true;
     }
-  },
-
+}
 ```
 
-## Position change event
+## Position Change Event
 
-While dragging the node through interaction, the position change event can be used to do the customization.
-The following code example explains how to get the [`positionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/idraggingeventargs/) event in the diagram.
+Triggered during node dragging operations, providing real-time position updates as users move nodes. This event enables position validation, snap-to-grid functionality, and custom drag behavior.
+
+The following code example demonstrates how to handle the [`positionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/idraggingeventargs/) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,22 +77,22 @@ The following code example explains how to get the [`positionChange`](https://ej
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs2" %}
 
-You can prevent dragging by setting the `cancel` property of [`DraggingEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/idraggingeventargs/) to true, as shown in the code snippet below.
+Dragging can be prevented by setting the `cancel` property of [`DraggingEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/idraggingeventargs/) to true:
 
- ```ts
-    public positionChange(args: IDraggingEventArgs): void {
-       if (args.state == 'Progress') {
-        //Prevents dragging
+```ts
+public positionChange(args: IDraggingEventArgs): void {
+    if (args.state === 'Progress') {
+        // Prevents node dragging
         args.cancel = true;
-       }
-    },
-
+    }
+}
 ```
 
-## Size change event
+## Size Change Event
 
-While resizing the node during the interaction, the size change event can be used to do the customization.
-The following code example explains how to get the [`sizeChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isizechangeeventargs/) event in the diagram.
+Triggered during node resizing operations when users interact with resize handles. This event provides access to the new dimensions and allows for size constraints and validation.
+
+The following code example shows how to handle the [`sizeChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isizechangeeventargs/) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,20 +106,22 @@ The following code example explains how to get the [`sizeChange`](https://ej2.sy
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs3" %}
 
- ```ts
-    public sizeChange(args: ISizeChangeEventArgs): void {
-     if (args.state == 'Progress') {
-      //Prevents resizing
-      args.cancel = true;
-     }
-    },
+Resizing can be prevented by setting the `cancel` property of [`SizeChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isizechangeeventargs/) to true:
 
+```ts
+public sizeChange(args: ISizeChangeEventArgs): void {
+    if (args.state === 'Progress') {
+        // Prevents node resizing
+        args.cancel = true;
+    }
+}
 ```
 
-## Rotate change event
+## Rotate Change Event
 
-While rotating the node during the interaction, the rotate change event can be used to do the customization.
-The following code example explains how to get the [`rotateChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/irotationeventargs/) event in the diagram.
+Triggered during node rotation operations when users interact with the rotation handle. This event enables rotation constraints and custom rotation behavior.
+
+The following code example demonstrates how to handle the [`rotateChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/irotationeventargs/) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,21 +135,22 @@ The following code example explains how to get the [`rotateChange`](https://ej2.
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs4" %}
 
-You can prevent rotation by setting the `cancel` property of [`RotationEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/irotationeventargs/) to true, as shown in the code snippet below.
+Rotation can be prevented by setting the `cancel` property of [`RotationEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/irotationeventargs/) to true:
 
- ```ts
-  public rotateChange(args: IRotationEventArgs): void {
-    if (args.state == 'Progress') {
-      //Prevents rotation
-      args.cancel = true;
+```ts
+public rotateChange(args: IRotationEventArgs): void {
+    if (args.state === 'Progress') {
+        // Prevents node rotation
+        args.cancel = true;
     }
-  },
-
+}
 ```
 
-## Property change event
+## Property Change Event
 
-Triggers when there is any property change occurred for the node. The following code example explains how to get the [`propertyChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ipropertychangeeventargs/) event in the diagram.
+Triggered when any property of a node is modified programmatically or through user interaction. This event is useful for tracking changes and implementing custom validation logic.
+
+The following code example shows how to handle the [`propertyChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ipropertychangeeventargs/) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,11 +164,11 @@ Triggers when there is any property change occurred for the node. The following 
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs5" %}
 
+## Collection Change Event
 
-## Collection change event
+Triggered when nodes are added to or removed from the diagram dynamically. This event provides control over diagram modifications and enables validation before collection changes occur.
 
-Triggers when the node is added or removed in diagram dynamically.
-The following code example explains how to get the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event in the diagram.
+The following code example demonstrates how to handle the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -176,33 +182,34 @@ The following code example explains how to get the [`collectionChange`](https://
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-events-cs6" %}
 
-You can prevent changes to the diagram collection, such as adding or deleting nodes, by setting the `cancel` property of [`CollectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/icollectionchangeeventargs/) to true, as shown in the code snippet below.
+Collection changes can be prevented by setting the `cancel` property of [`CollectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/icollectionchangeeventargs/) to true:
 
- ```ts
-    public collectionChange(args: ICollectionChangeEventArgs): void {
-      if (args.state == 'Changing') {
-      //Prevents collection change - Prevents Adding or deleting nodes
-      args.cancel = true;
-      }
-    },
-
+```ts
+public collectionChange(args: ICollectionChangeEventArgs): void {
+    if (args.state === 'Changing') {
+        // Prevents adding or removing nodes from the diagram
+        args.cancel = true;
+    }
+}
 ```
 
 ## Mouse Events
 
-### Mouse enter event
+The diagram component provides mouse interaction events that trigger when users hover over or move the mouse cursor in relation to node surfaces.
 
-The [`mouseEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) is triggered when the mouse enters the node surface.
+### Mouse Enter Event
 
-### Mouse over event
+The [`mouseEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) event is triggered when the mouse cursor enters a node's boundary area.
 
-The [`mouseOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) is triggered when the mouse hover over the node surface.
+### Mouse Over Event
 
-### Mouse leave event
+The [`mouseOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) event is triggered when the mouse cursor hovers over a node's surface area.
 
-The [`mouseLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) is triggered when the mouse leaves the node surface.
+### Mouse Leave Event
 
-The following code example shows how to handle these events in the diagram and change the color of a node based on these events:
+The [`mouseLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imouseeventargs/) event is triggered when the mouse cursor leaves a node's boundary area.
+
+The following code example demonstrates how to handle these mouse events and implement visual feedback by changing node colors based on mouse interactions:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

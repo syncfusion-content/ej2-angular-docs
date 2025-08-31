@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Preview in Angular Markdown editor component | Syncfusion
+title: Markdown Preview in Angular Markdown Editor component | Syncfusion
 description: Learn how to enable real-time Markdown-to-HTML preview in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Markdown Preview

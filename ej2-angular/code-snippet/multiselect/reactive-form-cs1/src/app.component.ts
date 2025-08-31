@@ -1,23 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
+import { FormsModule, ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms'
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common'
+import { Component, Inject } from '@angular/core';
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule,MultiSelectModule, ButtonModule
+    imports: [CommonModule,
+        FormsModule, ReactiveFormsModule, MultiSelectModule, ButtonModule,
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
     templateUrl: 'form-support.html'
 })
@@ -25,12 +16,12 @@ export class AppComponent {
     // defined the array of data
     public skillset: string[] = [
         'ASP.NET', 'ActionScript', 'Basic',
-        'C++' , 'C#' , 'dBase' , 'Delphi' ,
-        'ESPOL' , 'F#' , 'FoxPro' , 'Java',
-        'J#' , 'Lisp' , 'Logo' , 'PHP'
+        'C++', 'C#', 'dBase', 'Delphi',
+        'ESPOL', 'F#', 'FoxPro', 'Java',
+        'J#', 'Lisp', 'Logo', 'PHP'
     ];
     public placeholder: String = 'e.g: ActionScript';
-    skillForm: FormGroup| any;
+    skillForm: FormGroup | any;
     fb: FormBuilder;
 
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
@@ -45,7 +36,3 @@ export class AppComponent {
         });
     }
 }
-
-
-
-

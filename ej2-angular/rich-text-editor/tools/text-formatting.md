@@ -8,7 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Text Formatting and Structure in the Angular Rich Text Editor Component
+# Text Formatting in the Angular Rich Text Editor
+
+The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 
 The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 
@@ -157,6 +159,36 @@ The following example demonstrates how to configure both ordered and unordered l
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/format-lists-cs1" %}
+
+### Checklist
+
+The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
+
+#### Inserting a checklist
+
+You can embed interactive task lists directly within the Rich Text Editor. Here’s how you can insert a Checklist:
+- **Using the Toolbar**: Click the Checklist button in the editor toolbar, usually represented by a checkbox icon.
+- **Using the Shortcut**: Press `Ctrl+Shift+9` (or `Cmd+Shift+9` on macOS) to insert a Checklist at your cursor’s position.
+- **Converting Existing Lists**: Select an existing bullet or numbered list and click the Checklist button to convert it into an interactive checklist.
+- **Toggling Checklist Items**: You can toggle the state of checklist items between checked and unchecked by clicking the checkbox. If you prefer using the keyboard, press `Ctrl+Enter` (or `Cmd+Enter` on macOS) to toggle the check marks based on your selection or cursor position in the editor.
+
+#### Configuring Checklist
+
+To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `toolbarSettings.items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
+
+Below is an example of how to configure the Checklist in the Rich Text Editor:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/checklist-cs1" %}
 
 ## Increase and decrease indent
 

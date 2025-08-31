@@ -8,22 +8,26 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in Angular Diagram component
+# Layers in Angular Diagram Component
 
-**Layer** organizes related shapes within a diagram control as named categories. Assigning shapes to different layers enables selective viewing, removal, and locking of distinct shape categories.
+**Layers** provide a powerful organizational system for managing diagram elements by grouping related shapes into named categories. This functionality enables developers to build complex diagrams with selective viewing, interaction control, and bulk property management across multiple elements simultaneously.
 
-In a diagram, [Layers](https://ej2.syncfusion.com/angular/documentation/api/diagram/layerModel/) facilitate the modification of properties for all shapes assigned to a specific layer. Key properties that can be configured include:
+## Core Layer Properties
 
-* Objects
-* Visible
-* Lock
-* AddInfo
+In a diagram, [Layers](https://ej2.syncfusion.com/angular/documentation/api/diagram/layerModel/) enable modification of properties for all shapes assigned to a specific layer. The primary configurable properties include:
+
+* **Objects** - Define which elements belong to the layer
+* **Visible** - Control layer visibility
+* **Lock** - Prevent interactions with layer elements
+* **AddInfo** - Store additional custom information
 
 ## Objects
 
-The layer's [objects](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#objects) property specifies which diagram elements belong to that layer. This property contains a collection where you can define the categories of nodes and connectors that the layer encompasses.
+The layer's [objects](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#objects) property specifies which diagram elements belong to that layer. This property contains a collection of element IDs that defines the categories of nodes and connectors the layer encompasses.
 
-In the following example, the basic shapes are categorized in layer 1, and the flow shapes are categorized in layer 2.
+**Use case**: Separate different types of diagram elements for independent management - for example, keeping background elements in one layer and interactive elements in another.
+
+In the following example, basic shapes are categorized in layer 1, and flow shapes are categorized in layer 2:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,9 +43,11 @@ In the following example, the basic shapes are categorized in layer 1, and the f
 
 ## Visible
 
-The layer's [visible](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer#visible) property is used to control the visibility of the elements assigned to the layer.  You can hide objects in one layer while showing objects in another layer.
+The layer's [visible](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#visible) property controls the visibility of all elements assigned to the layer. This allows selective display of different diagram sections without removing elements permanently.
 
-In the following example, the visibility of layer one is set to false. By default, the `visible` property of a layer is set to **true**.
+**Use case**: Create diagrams with multiple views where users can toggle between different information layers, such as showing only critical path items in a project diagram.
+
+In the following example, the visibility of layer one is set to false. By default, the `visible` property of a layer is set to **true**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,12 +61,13 @@ In the following example, the visibility of layer one is set to false. By defaul
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs2" %}
 
-
 ## Lock
 
-The layer's [lock](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#lock) property is used to prevent or allow changes to the element's dimensions and positions. Locking a layer prevents any interactions with the objects in that layer, such as selecting, dragging, rotating, and connecting. 
+The layer's [lock](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#lock) property prevents or allows changes to element dimensions and positions. When a layer is locked, all interactions with objects in that layer are disabled, including selecting, dragging, rotating, and connecting operations.
 
-In the following example the objects in layer one is locked. By default, the `lock` property of a layer is set to **false**.
+**Use case**: Protect template elements or background graphics from accidental modification while allowing users to work with other diagram elements.
+
+In the following example, the objects in layer one are locked. By default, the `lock` property of a layer is set to **false**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,9 +83,11 @@ In the following example the objects in layer one is locked. By default, the `lo
 
 ## AddInfo
 
-The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#addinfo) property of layers allow you to maintain additional information to the layers.
+The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#addinfo) property allows storage of additional custom information with layers. This can be useful for storing metadata, configuration settings, or application-specific data associated with the layer.
 
-The following code illustrates how to add additional information to the layers.
+**Use case**: Store layer descriptions, creation timestamps, owner information, or custom application data for enhanced layer management.
+
+The following code illustrates how to add additional information to layers:
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -126,7 +135,7 @@ export class AppComponent {
 }
 ```
 
-## Add layer at runtime
+## Add Layer at Runtime
 
 Layers can be added at runtime by using the [`addLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlayer) public method.
 
@@ -146,7 +155,7 @@ The following code illustrates how to add a layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs4" %}
 
-## Remove layer at runtime
+## Remove Layer at Runtime
 
 Layers can be removed at runtime by using the [`removeLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removelayer) public method.
 
@@ -166,7 +175,7 @@ The following code illustrates how to remove a layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs5" %}
 
-## moveObjects
+## MoveObjects
 
 You can move objects from one layer to another dynamically using the [`moveObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#moveobjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions.
 
@@ -184,30 +193,26 @@ The following code illustrates how to move objects from one layer to another lay
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs6" %}
 
-## Z-Index
+## Z-Index and Layer Ordering
 
-[`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#zindex) property of a layer defines its Z order within the diagram. This property allows you to control the layer's position in the stacking order. You can adjust the layer's z-index by moving it forward or backward relative to other layers in the diagram.
+The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer/#zindex) property of a layer defines its position in the stacking order within the diagram. Higher z-index values render above lower values, allowing control over which layers appear in front of others.
 
-### Bring Layer Forward
+### Bring layer forward
 
-Layers can be moved forward at runtime by using the [`bringLayerForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringlayerforward) public method.
-
+Move a layer forward in the stacking order using the [`bringLayerForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringlayerforward) public method:
 
 ```typescript
-// move the layer forward
+// Move the specified layer forward in the stacking order
 this.diagram.bringLayerForward('layer1');
-
 ```
 
 ### Send Layer Backward
 
-Layers can be moved backward at runtime by using the [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sendlayerbackward) public method.
-
+Move a layer backward in the stacking order using the [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sendlayerbackward) public method:
 
 ```typescript
-// move the layer backward
+// Move the specified layer backward in the stacking order
 this.diagram.sendLayerBackward('layer1');
-
 ```
 The following code illustrates how to send the layer forward/backward to another layer.
 
@@ -231,9 +236,11 @@ The order of rendering is as follows: HTML shapes -> SVG shapes -> Path data sha
 
 ## Clone Layer
 
-Layers can be cloned with its object by using the [`cloneLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clonelayer) public method.
+Layers can be cloned along with their objects using the [`cloneLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clonelayer) public method. This creates an identical copy of the layer and all its assigned elements.
 
-The following code illustrates how to clone the layer.
+**Use case**: Create template layers or duplicate complex layer configurations for reuse in different diagram sections.
+
+The following code illustrates how to clone a layer:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -247,34 +254,27 @@ The following code illustrates how to clone the layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs8" %}
 
-## Active layer
+## Active Layer
 
-Active Layer refers to the layer with the highest z-index in a diagram compared to other layers. When adding objects at runtime, they are stored in this active layer. If no layers are explicitly defined in the diagram, a default layer is created and automatically set as the active layer. However, when multiple layers are defined, the layer with the highest z-index takes precedence as the active layer.
+The active layer represents the layer with the highest z-index in a diagram. When objects are added at runtime, they are automatically assigned to the active layer. If no layers are explicitly defined, a default layer is created and set as the active layer. When multiple layers exist, the layer with the highest z-index becomes the active layer.
 
-Public methods are available to get and set the active layer, which are explained below.
+**Use case**: Ensure new elements are added to the appropriate layer in multi-layer diagrams, particularly in interactive editing scenarios.
 
-### Get ActiveLayer
+### Get active layer
 
-Active layer of the diagram can be retrieved by using the [`getActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getactivelayer) public method.
-
-The following code illustrates how to fetch active layer from the diagram.
+Retrieve the current active layer of the diagram using the [`getActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getactivelayer) public method:
 
 ```typescript
-// gets the active layer back
+// Gets the currently active layer
 this.diagram.getActiveLayer();
-
 ```
 
-### Set ActiveLayer
+### Set active layer
 
-You can set any layer to be the active layer of the diagram by using the [`setActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#setactivelayer) public method.
-
-The following code illustrates how to set active layer for diagram.
+Set any layer as the active layer using the [`setActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#setactivelayer) public method:
 
 ```typescript
-
-// set the active layer
-//@param layerName defines the name of the layer which is to be active layer
+// Set the specified layer as active
+// @param layerName defines the name of the layer to be set as active
 this.diagram.setActiveLayer('layer2');
-
 ```

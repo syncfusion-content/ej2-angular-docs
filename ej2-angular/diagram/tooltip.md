@@ -8,15 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in EJ2 Angular Diagram component
+# Tooltip in EJ2 Angular Diagram Component
 
 <!-- markdownlint-disable MD010 -->
 
-In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. The diagram provides tooltip support while dragging, resizing, rotating a node, and when the mouse hovers any diagram element.
+In Graphical User Interface (GUI), a tooltip is a message that appears when the mouse hovers over an element. Tooltips enhance user experience by providing contextual information, guidance, and feedback without cluttering the interface. The diagram component provides comprehensive tooltip support while dragging, resizing, rotating nodes, and when the mouse hovers over any diagram element.
 
 ## Default tooltip
 
-By default, the diagram displays a tooltip showing size, position, and angle information while dragging, resizing, or rotating a node. The following images illustrate how the diagram displays node information during these interactions.
+By default, the diagram displays a tooltip showing size, position, and angle information while dragging, resizing, or rotating a node. This provides real-time feedback during interactive operations:
+
+- **Drag**: Shows current X and Y coordinates of the node
+- **Resize**: Displays current width and height dimensions
+- **Rotate**: Indicates the current rotation angle in degrees
+
+The following images illustrate how the diagram displays node information during these interactions.
 
 | Drag | Resize | Rotate |
 |---|---|---|
@@ -38,9 +44,9 @@ The default tooltip that appears while interacting with nodes can be disabled by
   
 {% previewsample "page.domainurl/samples/diagram/tooltip/disabletooltip-cs1" %}
 
-## Tooltip for a specific nodes and connectors
+## Tooltip for specific nodes and connectors
 
-The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the  [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property of the node or connector with the tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position).The following code example illustrates how to customize the tooltip for individual elements.
+The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property of the node or connector with the tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position). The following code example illustrates how to customize the tooltip for individual elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,7 +62,7 @@ The tooltip can be customized for each node and connector. To show different too
 
 ## Inherit diagram tooltip
 
-The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property with the tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
+The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property with the tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,21 +102,20 @@ export class AppComponent {
 
 The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
 
-To display tooltips on mouseover, set the desired tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property.
+To display tooltips on mouseover, set the desired tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property.
 
 Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/port/#constraints) Tooltip property.
-
 
 ```ts
 let ports: [{
         offset: {x: 1,y: 0.5},
-        tooltip: {content: 'Port Tootip'},
+        tooltip: {content: 'Port Tooltip'},
         
         //enable Port Tooltip Constraints
         constraints: PortConstraints.Default | PortConstraints.ToolTip,
         
         //disable Port Tooltip Constraints
-        constraints: PortConstraints.Default ~& PortConstraints.ToolTip
+        constraints: PortConstraints.Default &~ PortConstraints.ToolTip
     }]
 ```
 
@@ -120,11 +125,11 @@ Dynamic modification of tooltip content is supported, allowing you to change the
 {
     //change tooltip content at run time
     diagram.nodes[0].ports[0].tooltip.content = 'New Tooltip Content';
-    diagram.databind;
+    diagram.databind();
 }
 ```
 
-Here, the code provided below demonstrates the port tooltip Interaction.
+Here, the code provided below demonstrates the port tooltip interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,7 +169,7 @@ The following code example illustrates how to add formatted HTML content to the 
 
 ### Tooltip relative to object
 
-The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position) property of the tooltip.The [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
+The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position) property of the tooltip. The [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
 
 The following code example illustrates how to position the tooltip around object.
 
@@ -252,7 +257,7 @@ The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ## Tooltip size
 
-By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the  [`width`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width) and [`height`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height) properties of the tooltip.
+By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the [`width`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width) and [`height`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height) properties of the tooltip.
 
 The following code example shows how to set the size for the tooltip:
 
@@ -289,7 +294,7 @@ The following example demonstrates how to show or hide the tooltip at runtime:
 ## Tooltip for Annotation
 
 Tooltips can be added to annotations to display additional information on mouseover. 
-To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property of the annotation.
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property of the annotation.
 Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints/#AnnotationConstraints) property as [`Tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip). 
 
 {% tabs %}

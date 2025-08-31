@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Card component | Syncfusion
+title: Getting Started with Angular Card Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Card component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Card component
 
-This section explains how to create a simple **Card** using Styles, and how to configure the structure for the header section, Horizontal, action buttons, content section, and configure its available functionalities in Angular using Angular quickstart.
+This section explains how to create a simple Card component using CSS classes, and configure the card structure including header sections, content areas, and action buttons with their available functionalities in Angular.
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below.
 
 ```bash
 ng new my-app
@@ -40,11 +40,11 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Card package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -56,9 +56,9 @@ Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusio
 npm install @syncfusion/ej2-angular-layouts --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the command below.
 
 Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package to the application.
 
@@ -66,7 +66,7 @@ Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@sync
 npm install @syncfusion/ej2-angular-layouts@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below.
 
 ```bash
 @syncfusion/ej2-angular-layouts:"20.2.38-ngcc"
@@ -76,8 +76,8 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in the `../node_modules/@syncfusion` package folder.
+These can be referenced in [src/styles.css] using the following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
@@ -87,7 +87,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding a simple Card
 
-* Add the HTML `div` element with `e-card` class into your `index.html`.
+Add the HTML `div` element with the `e-card` class into your `index.html`.
 
 `[src/index.html]`
 
@@ -99,9 +99,9 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding a header to the card
 
-You can create cards with a header in a specific structure. For adding header you need to create `div` element and add `e-card-header` class.
+Cards can be created with a header using a specific structure. To add a header, create a `div` element and add the `e-card-header` class.
 
-* You can include heading inside the card header by adding an `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
+You can include a heading inside the card header by adding a `div` element with the `e-card-header-caption` class, and content can be added using an element with the `e-card-content` class. For detailed information, refer to the [Header and Content](./header-content).
 
   ```html
        <div class="e-card"> --> Root Element
@@ -114,7 +114,7 @@ You can create cards with a header in a specific structure. For adding header yo
        </div>
   ```
 
-* Now, run the application in the browser using the following command.
+Now, run the application in the browser using the following command.
 
      ```
        npm start
@@ -136,4 +136,4 @@ Output will be as follows:
 
 ## See Also
 
-* [How to add a header and content](./header-content/)
+* [How to add a header and content](./header-content)
