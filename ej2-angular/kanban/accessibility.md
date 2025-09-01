@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accessibility in Angular Kanban component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Kanban Component | Syncfusion
+description: Learn about accessibility features in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Accessibility
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Kanban component
+# Accessibility in Angular Kanban Component
 
-The Kanban component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The Kanban component is designed to meet WAI-ARIA specifications, applying roles, states, and properties to elements like cards (`.e-card`), columns (`.e-header-cells`), and dialogs to ensure accessibility for users relying on assistive technologies (AT) or keyboard navigation. This enables seamless interaction for users with disabilities, such as navigating cards with screen readers or selecting columns via keyboard.
 
 The accessibility compliance for the Kanban component is outlined below.
 
@@ -53,12 +53,12 @@ The Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pat
 
 ## Keyboard interaction
 
-The Kanban component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban component.
+The Kanban component supports [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Home</kbd> | To select the first card in the kanban |
-| <kbd>End</kbd> | To select the last card in the kanban |
+| <kbd>Home</kbd> | Select the first card in the kanban |
+| <kbd>End</kbd> | Select the last card in the kanban |
 | <kbd>Arrow Up</kbd> | Select the card through the up arrow |
 | <kbd>Arrow Down</kbd> | Select the card through the down arrow |
 | <kbd>Arrow Right</kbd> | Move the column selection to the right |
@@ -76,7 +76,7 @@ The Kanban component followed the [keyboard interaction](https://www.w3.org/WAI/
 
 ## Ensuring accessibility
 
-The Kanban component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Kanban component's accessibility is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Kanban component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/kanban.html) in a new window to evaluate the accessibility of the Kanban component with accessibility tools.
 

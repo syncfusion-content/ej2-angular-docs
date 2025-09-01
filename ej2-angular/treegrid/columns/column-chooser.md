@@ -126,3 +126,31 @@ The following example demonstrates using the `ignoreAccent` property to include 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/treegrid/columns-chooser-cs6" %}
+
+## Column Chooser Template in Syncfusion Angular TreeGrid component
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/treegrid/#showcolumnmenu) to **true** and add **ColumnChooser** to the [toolbar](../../api/treegrid/#toolbar) property.
+
+To implement a custom column chooser template in the TreeGrid, use the following properties:
+
+* **columnChooserSettings.headerTemplate** - Defines the header template of the column chooser.
+
+* **columnChooserSettings.template**- Defines the content template.
+
+* **columnChooserSettings.footerTemplate** - Defines the footer template.
+
+* **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
+
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+
+The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/columns-chooser-cs7/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/columns-chooser-cs7/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treegrid/columns-chooser-cs7" %}

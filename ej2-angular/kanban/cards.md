@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Cards in Angular Kanban component | Syncfusion
-description: Learn here all about Cards in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Cards in Angular Kanban Component | Syncfusion
+description: Learn how to configure and customize cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Cards 
+control: Cards
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cards in Angular Kanban component
+# Cards in Angular Kanban Component
 
 The cards are main elements in Kanban board, which represent the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
 ## Drag-and-drop
 
-Transit or change the card position using the drag-and-drop functionality. By default, the `allowDragAndDrop` property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
+Transit or change the card position using the drag-and-drop functionality. By default, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowdraganddrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
 
 Added dotted border on Kanban cells except the dragged clone cells when dragging, which indicates the possible ways for dropping the cards into the cells.
 
@@ -40,11 +40,11 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 
 ## Content
 
-The card's content is fetched from data source using the `contentField` property, which is placed inside the `cardSettings` property. If the `contentField` property is not used, card is rendered with empty content.
+The card's content is fetched from `dataSource` using the `contentField` property in `cardSettings`. If `contentField` is not specified, cards render with empty content.
 
 ## Template
 
-You can customize the default card layout using template as per your application needs. This can be achieved by template of the `cardSettings` property.
+The default card layout can be customized using the `template` property in [cardSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#cardsettings) to meet application-specific needs, such as adding custom fields or styling. The following sample demonstrates a Kanban board with a custom card template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ Kanban board allows to select single and multiple selection of cards when mouse 
 * **Single**: Only one card allowed to select at a time in the Kanban board.
 * **Multiple**: Multiple cards are allowed to select in a board.
 
-### Multiple Selection
+### Multiple selection
 
 Select the multiple cards randomly using Ctrl + mouse click and select the multiple cards continuously using Shift + mouse click action on Kanban board. Set `Multiple` in `selectionType` to enable the multiple selection in a board.
 

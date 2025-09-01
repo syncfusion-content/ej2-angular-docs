@@ -3,12 +3,12 @@ layout: post
 title: Index in Angular Kanban component | Syncfusion
 description: Learn here all about Index in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Index 
+control: Index
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Kanban component
+# Index in Angular Kanban Component
 
 The **Kanban** board visually depicts work at various stages of a process using columns, cards, and swimlane.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Search cards in Angular Kanban component | Syncfusion
-description: Learn here all about Search cards in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Search Cards in Angular Kanban Component | Syncfusion
+description: Learn how to search cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Search cards 
+control: Search cards
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Search cards in Angular Kanban component
+# Search Cards in Angular Kanban Component
 
-You can search the cards in Kanban by using the `query` property.
+The Kanban component enables searching cards in the `dataSource`. You can search the cards in Kanban by using the [query](https://ej2.syncfusion.com/angular/documentation/api/kanban/#query) property.
 
 In the following sample, the searching operation starts as soon as you start typing characters in the external text box. It will search the cards based on the `Id` and `Summary` using the `search` query with `contains` operator.
 

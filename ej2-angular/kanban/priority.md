@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Priority in Angular Kanban component | Syncfusion
+title: Priority in Angular Kanban Component | Syncfusion
 description: Learn here all about Priority in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Priority 
+control: Priority
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Priority in Angular Kanban component
+# Priority in Angular Kanban Component
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

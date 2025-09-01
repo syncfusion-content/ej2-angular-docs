@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Observables in Angular Treegrid component
+## Observables in Angular Treegrid component
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
@@ -16,11 +16,11 @@ You can also check on this video for Observable binding in Tree Grid:
 
 {% youtube "https://www.youtube.com/watch?v=iq_A00-068k" %}
 
-## Observable binding using Async pipe
+### Observable binding using Async pipe
 
 TreeGrid data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
-## Data binding
+### Data binding
 
 The TreeGrid expects an object from the `Observable`. The emitted value should be an object with properties `result` and `count`.
 
@@ -161,7 +161,7 @@ export class DataService extends Subject<Object> {
 > You should maintain the same `Observable` instance for every treegrid actions.
 > We have a limitation for Custom Binding feature of TreeGrid. This feature works only for Self Referential data binding with `pageSizeMode` as `Root`.
 
-## Handling child data
+### Handling child data
 
 Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments.
 After assigning the child data, `childDataBind` method should be called from the
@@ -264,7 +264,7 @@ export class DataService extends Subject<Object> {
 }
 ```
 
-## Handling TreeGrid actions
+### Handling TreeGrid actions
 
 For TreeGrid actions such as `paging`, `sorting`, etc., the `dataStateChange` event is invoked. You have to query and resolve data using `Observable` in this event based on the state arguments.
 
@@ -309,7 +309,7 @@ export class AppComponent implements OnInit {
 
 > When initial rendering, the `dataStateChange` event will not be triggered. You can perform the operation in the `ngOnInit` if you want the treegrid to show the record.
 
-## Perform CRUD operations
+### Perform CRUD operations
 
 The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to indicate the completion of save operation.
 
@@ -453,7 +453,7 @@ export class CrudService extends Subject<DataStateChangeEventArgs>  {
 
 ```
 
-## Calculate aggregates
+### Calculate aggregates
 
 The footer aggregate values should be calculated and sent along with the `dataSource` property as follows. The aggregate property of the data source should contain the aggregate value assigned to the `field – type` property. For example, the `Sum` aggregate value for the `Duration` field should be assigned to the `Duration - sum` property.
 
@@ -467,7 +467,7 @@ The footer aggregate values should be calculated and sent along with the `dataSo
 
 > The group footer and caption aggregate values can be calculated by the treegrid itself.
 
-## Provide Excel Filter data source
+### Provide Excel Filter data source
 
 The `dataStateChange` event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the `dataSource` resolver function from the state argument as follows.
 
@@ -553,5 +553,792 @@ export class DataService extends Subject<Object> {
   }
 }
 ```
+
+## Observable binding using without Async pipe
+
+In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription lifecycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
+
+To bind observable data without using the async pipe in the TreeGrid, follow these steps:
+
+1. Subscribe to the observable data in the component.
+
+2. Manually update the data source of the grid when the observable emits new values.
+
+### Data binding
+
+The custom binding feature of the Syncfusion Angular TreeGrid enables binding child data to a parent record based on application-specific logic, such as fetching from a server or filtering local data. When a parent record is expanded, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Within this event, assign an array of records matching the TreeGrid’s data model (e.g., with fields like `TicketID` and `ParentTicketID`) to the `childData` property of the event arguments. Then, call the `childDataBind` method to indicate that the data is bound. For robust applications, handle potential errors during data retrieval, such as failed server requests.
+
+After assigning the child data, `childDataBind` method should be called from the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+
+```
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { TreeGridAllModule, DataStateChangeEventArgs, TreeGridComponent, EditService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
+import { TaskService } from './task-service';
+import { AsyncPipe } from '@angular/common';
+import { NgClass, NgIf, NgFor } from '@angular/common';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-root',
+  template: `<ejs-treegrid #treegrid [dataSource]='data | async' height='350' idMapping='TicketID'
+            parentIdMapping='ParentTicketID' hasChildMapping='isParent' [treeColumnIndex]='1' allowPaging='true'
+            allowSorting='true' [pageSettings]='pageSetting' allowFiltering="true"
+            (dataStateChange)='dataStateChange($event)' gridLines="Both" [editSettings]='editSettings' >
+            <e-columns>
+                <e-column field='TicketID' headerText='Ticket ID' width='110' textAlign='Left' isPrimaryKey='true'></e-column>
+                <e-column field='Title' textAlign='Left' headerText='Title' width='250'></e-column>
+                <e-column field='Category' headerText='Category' width='120' textAlign='Left'></e-column>
+                <e-column field='Priority' headerText='Priority' width='100' textAlign='Left'></e-column>
+                <e-column field='Status' headerText='Status' width='120'textAlign='Left'></e-column>
+                <e-column field='AssignedAgent' headerText='Assigned To' width='150' textAlign='Left'></e-column>
+                <e-column field='CustomerName' headerText='Customer' width='140' textAlign='Left'></e-column>
+                <e-column field='CreatedDate' headerText='Created Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+                <e-column field='DueDate' headerText='Due Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+            </e-columns>
+          </ejs-treegrid>`,
+  standalone: true,
+  providers: [EditService, PageService, FilterService],
+  imports: [TreeGridAllModule, AsyncPipe, NgClass],
+})
+
+export class AppComponent {
+  public data: Observable<DataStateChangeEventArgs>;
+  public pageSetting: Object;
+  @ViewChild('treegrid')
+  public treegrid: TreeGridComponent;
+  constructor(private taskService: TaskService) {
+    this.data = taskService;
+  }
+
+  public ngOnInit(): void {
+    this.pageSetting = { pageSize: 10, pageCount: 4 };
+    let state = { skip: 0, take: 10 };
+    this.taskService.execute(state);
+  }
+
+  // Handles data state changes from the Tree Grid.
+  public dataStateChange(state: DataStateChangeEventArgs): void {
+    this.taskService.execute(state);
+  }
+}
+
+```
+
+```
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root',
+})
+
+export class TaskService extends Subject<DataStateChangeEventArgs> {
+
+  private BASE_URL = 'https://ej2services.syncfusion.com/angular/development/api/SupportTicketData';
+
+  constructor() {
+    super();
+  }
+
+  // Executes the data operation based on the provided grid state.
+  public execute(state: any): void {
+      this.getData(state).subscribe((x) => super.next(x));
+  }
+
+  // Fetches the main data based on the provided treegrid state.
+  protected getData(state: any): Observable<DataStateChangeEventArgs> {
+    const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
+
+    return this.fetchData(
+      `${this.BASE_URL}?$inlinecount=allpages&${pageQuery}`
+    ).pipe(
+      map((response: any) => {
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches data from the specified URL using the Fetch API and wraps it in an Observable.
+  private fetchData(url: string): Observable<any> {
+    return new Observable((observer) => {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+}
+
+```
+
+### Handling child data
+
+Using the custom binding feature, child data can be bound to a parent record based on custom logic. When a parent record is expanded, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Assign the child data to the `childData` property of the event arguments and call the `childDataBind` method to indicate that the data is bound. For real-world applications, child data is typically fetched from a server.
+
+```
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { TreeGridAllModule, DataStateChangeEventArgs, TreeGridComponent, EditService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
+import { TaskService } from './task-service';
+import { AsyncPipe } from '@angular/common';
+import { NgClass, NgIf, NgFor } from '@angular/common';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-root',
+  template: `<ejs-treegrid #treegrid [dataSource]='data | async' height='350' idMapping='TicketID'
+  parentIdMapping='ParentTicketID' hasChildMapping='isParent' [treeColumnIndex]='1' allowPaging='true'
+  allowSorting='true' [pageSettings]='pageSetting' allowFiltering="true"
+  (dataStateChange)='dataStateChange($event)' gridLines="Both" [editSettings]='editSettings' >
+  <e-columns>
+      <e-column field='TicketID' headerText='Ticket ID' width='110' textAlign='Left' isPrimaryKey='true'></e-column>
+      <e-column field='Title' textAlign='Left' headerText='Title' width='250'></e-column>
+      <e-column field='Category' headerText='Category' width='120' textAlign='Left'></e-column>
+      <e-column field='Priority' headerText='Priority' width='100' textAlign='Left'></e-column>
+      <e-column field='Status' headerText='Status' width='120'textAlign='Left'></e-column>
+      <e-column field='AssignedAgent' headerText='Assigned To' width='150' textAlign='Left'></e-column>
+      <e-column field='CustomerName' headerText='Customer' width='140' textAlign='Left'></e-column>
+      <e-column field='CreatedDate' headerText='Created Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+      <e-column field='DueDate' headerText='Due Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+  </e-columns>
+</ejs-treegrid>`,
+  standalone: true,
+  providers: [EditService, PageService, FilterService],
+  imports: [TreeGridAllModule, AsyncPipe, NgClass],
+})
+
+export class AppComponent {
+  public data: Observable<DataStateChangeEventArgs>;
+  public pageSetting: Object;
+  @ViewChild('treegrid')
+  public treegrid: TreeGridComponent;
+  constructor(private taskService: TaskService) {
+    this.data = taskService;
+  }
+
+  public ngOnInit(): void {
+    this.pageSetting = { pageSize: 10, pageCount: 4 };
+    let state = { skip: 0, take: 10 };
+    this.taskService.execute(state);
+  }
+
+  // Handles data state changes from the Tree Grid.
+  public dataStateChange(state: DataStateChangeEventArgs): void {
+    this.taskService.execute(state);
+  }
+}
+```
+
+```
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class TaskService extends Subject<DataStateChangeEventArgs> {
+  private BASE_URL =
+    'https://ej2services.syncfusion.com/angular/development/api/SupportTicketData';
+  constructor() {
+    super();
+  }
+
+  // Executes the data operation based on the provided grid state.
+  public execute(state: any): void {
+    if (state.requestType === 'expand') {
+      this.getChildData(state).subscribe((childRecords: any) => {
+        state.childData = childRecords.result;
+        state.childDataBind();
+      });
+    } else {
+      this.getData(state).subscribe((x) => super.next(x));
+    }
+  }
+
+  // Fetches child records for a given parent record when a row is expanded.
+  public getChildData(state: any): Observable<DataStateChangeEventArgs> {
+    return this.fetchData(
+      `${this.BASE_URL}?$filter=ParentTicketID%20eq%20${state.data.TicketID}`
+    ).pipe(
+      map((response: any) => {
+        const parentId = state.data.id;
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches data from the specified URL using the Fetch API and wraps it in an Observable.
+  private fetchData(url: string): Observable<any> {
+    return new Observable((observer) => {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+}
+
+```
+
+### Handling TreeGrid actions
+
+For TreeGrid actions such as `paging`, `sorting`, and `filtering`, the `dataStateChange` event is triggered. Query and resolve data using an `Observable` based on the state arguments, and update the TreeGrid's dataSource property manually in the subscription
+
+```
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+
+@Injectable({
+  providedIn: 'root',
+})
+
+export class TaskService extends Subject<DataStateChangeEventArgs> {
+  private BASE_URL = 'https://ej2services.syncfusion.com/angular/development/api/SupportTicketData';
+
+  constructor() {
+    super();
+  }
+
+  // Executes the data operation based on the provided grid state.
+  public execute(state: any): void {
+    if (state.requestType === 'expand') {
+      this.getChildData(state).subscribe((childRecords: any) => {
+        state.childData = childRecords.result;
+        state.childDataBind();
+      });
+    } else {
+      this.getData(state).subscribe((x) => super.next(x));
+    }
+  }
+
+  // Fetches child records for a given parent record when a row is expanded.
+  public getChildData(state: any): Observable<DataStateChangeEventArgs> {
+    return this.fetchData(
+      `${this.BASE_URL}?$filter=ParentTicketID%20eq%20${state.data.TicketID}`
+    ).pipe(
+      map((response: any) => {
+        const parentId = state.data.id;
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches the main data based on the provided treegrid state (paging, sorting, filtering).
+  protected getData(state: any): Observable<DataStateChangeEventArgs> {
+    const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
+    let sortQuery: string = '';
+    let filterQuery: string = '';
+    if (state.where) {
+      filterQuery = this.buildFilterQuery(state.where);
+    } else {
+      filterQuery = '$filter=ParentTicketID eq null';
+    }
+    if (state.search) {
+      filterQuery += this.buildSearchQuery(state.search);
+    }
+    if ((state.sorted || []).length) {
+      sortQuery =
+        `&$orderby=` +
+        state.sorted
+          .map((obj: any) => {
+            return obj.direction === 'descending'
+              ? `${obj.name} desc`
+              : obj.name;
+          })
+          .reverse()
+          .join(',');
+    }
+
+    return this.fetchData(
+      `${this.BASE_URL}?$inlinecount=allpages&${pageQuery}&${filterQuery}&${sortQuery}`
+    ).pipe(
+      map((response: any) => {
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Builds the filter query string from the treegrid's filter settings.
+  private buildFilterQuery(where: any[]): string {
+    if (!where || where.length === 0) return '$filter=ParentTicketID eq null';
+    const andConds: string[] = [];
+    for (const cond of where) {
+      if (cond.predicates?.length) {
+        const groupFilters = cond.predicates.map((pred: any) =>
+          this.predicateToString(pred)
+        );
+        andConds.push(`(${groupFilters.join(` ${cond.condition ?? 'and'} `)})`);
+      } else {
+        andConds.push(this.predicateToString(cond));
+      }
+    }
+    if (andConds.length > 0) {
+      return `$filter=ParentTicketID eq null and ${andConds.join(' and ')}`;
+    }
+    return '$filter=ParentTicketID eq null';
+  }
+
+  // Builds the OData search query string from the grid's search settings.
+  private buildSearchQuery(search: any[]): string {
+    if (!search || !search.length) return '';
+    const s = search[0];
+    const searchStr = (s.key as string).toLowerCase();
+    const fields = s.fields || [];
+    const orConds: string[] = [];
+
+    fields.forEach((field: string) => {
+      orConds.push(
+        `substringof('${searchStr}',tolower(cast(${field}, 'Edm.String')))`
+      );
+    });
+    if (!orConds.length) return '';
+    return ` and (${orConds.join(' or ')})`;
+  }
+
+  // Converts a single filter predicate object to the filter string.
+  private predicateToString(pred: any): string {
+    let field = pred.field;
+    let value = pred.value;
+    let ignoreCase = pred.ignoreCase;
+    let valStr = typeof value === 'string' ? `'${value}'` : value;
+
+    switch (pred.operator) {
+      case 'equal':
+        if (ignoreCase && typeof value === 'string') {
+          return `(tolower(${field}) eq '${value.toLowerCase()}')`;
+        }
+        return `${field} eq ${valStr}`;
+      case 'contains':
+        if (ignoreCase && typeof value === 'string') {
+          return `contains(tolower(${field}), '${value.toLowerCase()}')`;
+        }
+        return `contains(${field}, ${valStr})`;
+      case 'startswith':
+        if (ignoreCase && typeof value === 'string') {
+          return `startswith(tolower(${field}), '${value.toLowerCase()}')`;
+        }
+        return `startswith(${field}, ${valStr})`;
+      default:
+        return '';
+    }
+  }
+}
+
+```
+
+> When initial rendering, the `dataStateChange` event will not be triggered. You can perform the operation in the `ngOnInit` if you want the treegrid to show the record.
+
+### Perform CRUD operations
+
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to complete the operation.
+
+```
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { TreeGridAllModule, DataStateChangeEventArgs, TreeGridComponent,EditService, PageService, FilterService,
+} from '@syncfusion/ej2-angular-treegrid';
+import { TaskService } from './task-service';
+import { AsyncPipe } from '@angular/common';
+import { NgClass, NgIf, NgFor } from '@angular/common';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-root',
+  template: `<ejs-treegrid #treegrid [dataSource]='data | async' height='350' idMapping='TicketID'
+              parentIdMapping='ParentTicketID' hasChildMapping='isParent' [treeColumnIndex]='1' allowPaging='true'
+              allowSorting='true' [pageSettings]='pageSetting' allowFiltering="true"
+              (dataStateChange)='dataStateChange($event)' (dataSourceChanged)='dataSourceChange($event)' gridLines="Both" [editSettings]='editSettings' >
+              <e-columns>
+                  <e-column field='TicketID' headerText='Ticket ID' width='110' textAlign='Left' isPrimaryKey='true'></e-column>
+                  <e-column field='Title' textAlign='Left' headerText='Title' width='250' clipMode="EllipsisWithTooltip"></e-column>
+                  <e-column field='Category' headerText='Category' width='120' textAlign='Left'></e-column>
+                  <e-column field='Priority' headerText='Priority' width='100' textAlign='Left'></e-column>
+                  <e-column field='Status' headerText='Status' width='120'textAlign='Left'></e-column>
+                  <e-column field='AssignedAgent' headerText='Assigned To' width='150' textAlign='Left'></e-column>
+                  <e-column field='CustomerName' headerText='Customer' width='140' textAlign='Left'></e-column>
+                  <e-column field='CreatedDate' headerText='Created Date' [allowFiltering]="false" textAlign='Right' width='130' format='yMd' type='date' editType='datepickeredit' [validationRules]='daterules' [edit]="dateeditparam"></e-column>
+                  <e-column field='DueDate' headerText='Due Date' [allowFiltering]="false" textAlign='Right' width='130' format='yMd' type='date' editType='datepickeredit' [validationRules]='daterules' [edit]="dateeditparam"></e-column>
+              </e-columns>
+            </ejs-treegrid>`,
+  standalone: true,
+  providers: [EditService, PageService, FilterService],
+  imports: [TreeGridAllModule, AsyncPipe, NgClass],
+})
+
+export class AppComponent {
+  public data: Observable<DataStateChangeEventArgs>;
+  public pageSetting: Object;
+  public editSettings: Object;
+  public daterules: Object;
+  public dateeditparam: Object;
+  @ViewChild('treegrid')
+  public treegrid: TreeGridComponent;
+
+  constructor(private taskService: TaskService) {
+    this.data = taskService;
+  }
+
+  public ngOnInit(): void {
+    this.editSettings = {
+      allowEditing: true,
+      allowAdding: true,
+      allowDeleting: true,
+      mode: 'Row',
+    };
+    this.pageSetting = { pageSize: 10, pageCount: 4 };
+    this.daterules = { date: true, required: true };
+    this.dateeditparam = { params: { format: 'M/d/yyyy' } };
+    let state = { skip: 0, take: 10 };
+    this.taskService.execute(state);
+  }
+
+  // Handles data state changes from the Tree Grid (e.g., paging, sorting, filtering).
+  public dataStateChange(state: DataStateChangeEventArgs): void {
+    this.taskService.execute(state);
+  }
+
+  // Handles data source changes from the Tree Grid (e.g., CRUD operations).
+  public dataSourceChange(state: any): void {
+    if (state.action == 'add') {
+      this.taskService.addRecord(state).subscribe({
+        next: () => {
+          (state as any).endEdit();
+        },
+      });
+    } else if (state.action == 'edit') {
+      this.taskService.updateRecord(state).subscribe({
+        next: () => {
+          (state as any).endEdit();
+        },
+      });
+    } else if (state.requestType == 'delete') {
+      this.taskService.deleteRecord(state).subscribe({
+        next: () => {
+          (state as any).endEdit();
+        },
+      });
+    }
+  }
+}
+
+```
+
+```
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class TaskService extends Subject<DataStateChangeEventArgs> {
+  private BASE_URL = 'https://ej2services.syncfusion.com/angular/development/api/SupportTicketData';
+
+  constructor() {
+    super();
+  }
+
+  // Executes the data operation based on the provided grid state.
+  public execute(state: any): void {
+    if (state.requestType === 'expand') {
+      this.getChildData(state).subscribe((childRecords: any) => {
+        state.childData = childRecords.result;
+        state.childDataBind();
+      });
+    } else {
+      this.getData(state).subscribe((x) => super.next(x));
+    }
+  }
+
+  // Fetches child records for a given parent record when a row is expanded.
+  public getChildData(state: any): Observable<DataStateChangeEventArgs> {
+    return this.fetchData(
+      `${this.BASE_URL}?$filter=ParentTicketID%20eq%20${state.data.TicketID}`
+    ).pipe(
+      map((response: any) => {
+        const parentId = state.data.id;
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches the main data based on the provided treegrid state (paging, sorting, filtering).
+  protected getData(state: any): Observable<DataStateChangeEventArgs> {
+    const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
+    return this.fetchData(
+      `${this.BASE_URL}?$inlinecount=allpages&${pageQuery}`
+    ).pipe(
+      map((response: any) => {
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches data from the specified URL using the Fetch API and wraps it in an Observable.
+  private fetchData(url: string): Observable<any> {
+    return new Observable((observer) => {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+
+  // Deletes a record from the database.
+  deleteRecord(state: any): Observable<any> {
+    const id = state.data[0]?.TicketID || state.data[0]?.id;
+    const url = `${this.BASE_URL}/${id}`;
+    return new Observable((observer) => {
+      fetch(url, { method: 'DELETE' })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+
+  // Updates an existing record in the database.
+  updateRecord(state: any): Observable<any> {
+    const url = `${this.BASE_URL}`;
+    const data1 = state.data;
+    return new Observable((observer) => {
+      fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data1),
+      })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+
+  // Adds a new record to the database.
+  addRecord(state: any): Observable<any> {
+    const url = `${this.BASE_URL}`;
+    const data1 = state.data;
+    return new Observable((observer) => {
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data1),
+      })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+}
+```
+
+### Calculate aggregates
+
+The footer aggregate values should be calculated and sent along with the `dataSource` property as follows. The aggregate property of the data source should contain the aggregate value assigned to the `field – type` property. For example, the `Sum` aggregate value for the `Duration` field should be assigned to the `Duration - sum` property.
+
+```json
+{
+    result: [{..}, {..}, {..}, ...],
+    count: 830,
+    aggregates: { 'Duration - sum' : 450 }
+}
+```
+
+> The group footer and caption aggregate values can be calculated by the treegrid itself.
+
+### Provide Excel Filter data source
+
+The `dataStateChange` event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the `dataSource` resolver function from the state argument as follows.
+
+```
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+import { TreeGridAllModule, DataStateChangeEventArgs, TreeGridComponent, EditService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
+import { TaskService } from './task-service';
+import { AsyncPipe } from '@angular/common';
+import { NgClass, NgIf, NgFor } from '@angular/common';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-root',
+  template: `<ejs-treegrid #treegrid [dataSource]='data | async' height='350' idMapping='TicketID'
+              parentIdMapping='ParentTicketID' hasChildMapping='isParent' [treeColumnIndex]='1' allowPaging='true' [pageSettings]='pageSetting'  [filterSettings]='filterSettings' allowFiltering="true" (dataStateChange)='dataStateChange($event)'>
+              <e-columns>
+                  <e-column field='TicketID' headerText='Ticket ID' width='110' textAlign='Left' isPrimaryKey='true'></e-column>
+                  <e-column field='Title' textAlign='Left' headerText='Title' width='250'></e-column>
+                  <e-column field='Category' headerText='Category' width='120' textAlign='Left'></e-column>
+                  <e-column field='Priority' headerText='Priority' width='100' textAlign='Left'></e-column>
+                  <e-column field='Status' headerText='Status' width='120'textAlign='Left'></e-column>
+                  <e-column field='AssignedAgent' headerText='Assigned To' width='150' textAlign='Left'></e-column>
+                  <e-column field='CustomerName' headerText='Customer' width='140' textAlign='Left'></e-column>
+                  <e-column field='CreatedDate' headerText='Created Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+                  <e-column field='DueDate' headerText='Due Date' textAlign='Right' width='130' format='yMd' type='date'></e-column>
+              </e-columns>
+            </ejs-treegrid>`,
+  standalone: true,
+  providers: [PageService, FilterService],
+  imports: [TreeGridAllModule, AsyncPipe, NgClass],filterSettings
+})
+
+export class AppComponent {
+  public data: Observable<DataStateChangeEventArgs>;
+  public pageSetting: Object;
+  public filterSettings: Object;
+  @ViewChild('treegrid')
+  public treegrid: TreeGridComponent;
+
+  constructor(private taskService: TaskService) {
+    this.data = taskService;
+  }
+
+  public ngOnInit(): void {
+    this.filterSettings = { type: 'Excel'}
+    let state = { skip: 0, take: 10 };
+    this.taskService.execute(state);
+  }
+
+  // Handles data state changes from the Tree Grid (e.g., paging, sorting, filtering).
+  public dataStateChange(state: DataStateChangeEventArgs): void {
+    if (state.action.requestType === 'filterchoicerequest' || state.action.requestType === 'filtersearchbegin') {
+      this.taskservice.getData(state).subscribe((e) => state.dataSource(e));
+    } else {
+      this.taskservice.execute(state);
+    }
+  }
+}
+
+```
+
+```
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class TaskService extends Subject<DataStateChangeEventArgs> {
+  private BASE_URL = 'https://ej2services.syncfusion.com/angular/development/api/SupportTicketData';
+
+  constructor() {
+    super();
+  }
+
+  // Executes the data operation based on the provided grid state.
+  public execute(state: any): void {
+      this.getData(state).subscribe((x) => super.next(x));
+  }
+
+  // Fetches the main data based on the provided treegrid state (paging, sorting, filtering).
+  protected getData(state: any): Observable<DataStateChangeEventArgs> {
+    const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
+    let filterQuery: string = '';
+    if (state.where) {
+      filterQuery = state.where;
+    } else {
+      filterQuery = '$filter=ParentTicketID eq null';
+    }
+    return this.fetchData(
+      `${this.BASE_URL}?$inlinecount=allpages&${pageQuery}&${filterQuery}`
+    ).pipe(
+      map((response: any) => {
+        const result = response['result'];
+        const count = response['count'];
+        return { result, count } as DataStateChangeEventArgs;
+      })
+    );
+  }
+
+  // Fetches data from the specified URL using the Fetch API and wraps it in an Observable.
+  private fetchData(url: string): Observable<any> {
+    return new Observable((observer) => {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          observer.next(data);
+          observer.complete();
+        })
+        .catch((error) => {
+          observer.error(error);
+        });
+    });
+  }
+}
+
+```
+
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
