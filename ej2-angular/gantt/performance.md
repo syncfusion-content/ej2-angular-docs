@@ -62,34 +62,32 @@ So to improve the performance of gantt during the initial rendering, suggested y
 
 The tables below illustrate typical load times for Gantt charts with various configurations, comparing non-virtualized and virtualized scenarios. Each row reflects the impact of adding only the specified feature to a default parent-child hierarchy on loading and interactivity performance.
 
-**Test Environment**
+**Test environment**
 
-| Setting | Value | 
-|------------------------|------------------------------------| 
-| Component version | Syncfusion Angular Gantt 30.1.37 | 
-| Angular version | 20.1.0 | 
-| Browser | Edge 138 | 
-| Operating System | Windows 11 | 
-| CPU | 12th Gen Intel® Core™ i5-1235U | 
-| RAM | 16GB |
+- Component Version: Syncfusion Angular Gantt 31.1.17
+- Angular Version: 20.1.0
+- Browser: Edge 138
+- Operating System: Windows 11
+- CPU: 12th Gen Intel® Core™ i5-1235U
+- RAM: 16GB
 
-### Non-Virtualized Scenario (2,500 Tasks)
+**Non-virtualized scenario (2,500 tasks)**
 
-| Scenario                        | Load Time (seconds) |
+| Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy(Parent-Child) | 4.2                 |
-| + Predecessor                   | 6.4                 |
-| + Resources                     | 7.1                 |
-| + Split Taskbars                | 7.4                 |
+| Default hierarchy(Parent-Child) | 3.8                 |
+| + Predecessor                   | 5.4                 |
+| + Resources                     | 6.5                 |
+| + Split taskbars                | 7.8                 |
 
-### Virtualized Scenario (10,000 Tasks)
+**Virtualized scenario (25,000 tasks)**
 
-| Scenario                        | Load Time (seconds) |
+| Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy(Parent-Child) | 2.4                 |
-| + Predecessor                   | 4.6                 |
-| + Resources                     | 4.9                 |
-| + Split Taskbars                | 7.1                 |
+| Default hierarchy(Parent-Child) | 2.1                 |
+| + Predecessor                   | 5.6                 |
+| + Resources                     | 6.2                 |
+| + Split taskbars                | 6.8                 |
 
 
 ## How to optimize server-side data operations with adaptors
@@ -122,7 +120,7 @@ The Angular Gantt component operates on a client-server basis, meaning data is s
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Optimizing Angular app performance with multiple gantts and templates
+## Optimizing Angular app performance with multiple gantt and templates
 
 The performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt.
 
@@ -152,7 +150,7 @@ Using the OnPush strategy may lead to child components not being updated when th
 * [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
 * [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.
 

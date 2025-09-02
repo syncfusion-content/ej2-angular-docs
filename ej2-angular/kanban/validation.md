@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular Kanban component | Syncfusion
+title: Validation in Angular Kanban Component | Syncfusion
 description: Learn here all about Validation in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Validation 
+control: Validation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Kanban component
+# Validation in Angular Kanban Component
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 

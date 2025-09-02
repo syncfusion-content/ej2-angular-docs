@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Dynamically change columns in Angular Kanban component | Syncfusion
-description: Learn here all about Dynamically change columns in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Dynamically Update Columns in Angular Kanban Component | Syncfusion
+description: Learn here all about Dynamically change columns in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Dynamically change columns 
+control: Dynamically change columns
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamically change columns in Angular Kanban component
+# Dynamically Update Columns in Angular Kanban Component
 
-You can dynamically change the Kanban columns by using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#columns) property.
+You can dynamically change the Kanban columns by using the [columns](https://ej2.syncfusion.com/angular/documentation/api/kanban/#columns) property.
 
-In the below sample, you can dynamically change the [`allowToggle`](https://ej2.syncfusion.com/angular/documentation/api/kanban/columnsModel/#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#columns) property when you click on the button.
+In the below sample, you can dynamically change the [allowToggle](https://ej2.syncfusion.com/angular/documentation/api/kanban/columnsModel/#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [columns](https://ej2.syncfusion.com/angular/documentation/api/kanban/#columns) property when you click on the button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

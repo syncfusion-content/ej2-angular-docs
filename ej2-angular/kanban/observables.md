@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Observables in Angular Kanban component | Syncfusion
+title: Observables in Angular Kanban Component | Syncfusion
 description: Learn here all about Observables in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Observables 
+control: Observables
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Observables in Angular Kanban component
+# Observables in Angular Kanban Component
 
 An [`Observable`](https://angular.io/guide/observables) is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
@@ -104,11 +104,11 @@ export class TasksService extends Subject<DataStateChangeEventArgs> {
 ```
 
 > You should maintain the same [`Observable`](https://angular.io/guide/observables) instance for every kanban action.
-> When initial rendering, the `dataStateChange` event will not be triggered. You can perform the operation in the **ngOnInit** if you want the kanban to show the cards.
+> When initial rendering, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datastatechange) event will not be triggered. You can perform the operation in the **ngOnInit** if you want the kanban to show the cards.
 
 ## Perform CRUD operations
 
-The `dataSourceChanged` event is triggered to update the kanban data. You can perform the save operation based on the event arguments and you need to call the `endEdit` method to indicate the completion of the save operation.
+The [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasourcechanged) event is triggered to update the kanban data. You can perform the save operation based on the event arguments and you need to call the `endEdit` method to indicate the completion of the save operation.
 
 ```ts
 import { Component, OnInit } from '@angular/core';

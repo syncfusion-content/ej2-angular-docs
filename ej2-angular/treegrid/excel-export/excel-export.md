@@ -64,4 +64,21 @@ Excel export provides the capability to define a data source dynamically before 
 
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs9" %}
 
+## Exporting Custom Aggregates in Tree Grid  
+The Tree Grid enables exporting custom aggregates, which summarize column data, to an Excel document using the `ExcelAggregateQueryCellInfo` event.  
+ 
+In the provided example, the customAggregateFn function computes the item count for a selected category, while the `ExcelAggregateQueryCellInfo` event customizes the exported cell values in the Excel document.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/excel-export-cs10/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/excel-export-cs10/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "http://127.0.0.1:4000/ej2-angular/samples/treegrid/excel-export-cs10" %}
+
 > For more information, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to discover how to present and manipulate data.

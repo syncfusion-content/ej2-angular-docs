@@ -80,4 +80,22 @@ PDF export provides an option to define a data source dynamically before exporti
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs15" %}
 
+## Exporting Custom Aggregates in Tree Grid
+ 
+The Tree Grid enables exporting custom aggregates, which summarize column data, to an Pdf document using the `PdfAggregateQueryCellInfo` event.
+ 
+In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `PdfAggregateQueryCellInfo` event customizes the exported cell values in the Pdf document.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/pdf-export-cs16/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/pdf-export-cs16/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "http://127.0.0.1:4000/ej2-angular/samples/treegrid/pdf-export-cs16" %}
+
 > You can refer to our [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

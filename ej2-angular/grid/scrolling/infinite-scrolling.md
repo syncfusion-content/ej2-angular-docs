@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Infinite scroll in Angular Grid component | Syncfusion
-description: Learn here all about Infinite scroll in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use infinite scroll in the Syncfusion Angular Grid component of Essential JS 2 for seamless handling of large data collections, efficient on-demand data loading, caching, and advanced performance management.
 platform: ej2-angular
 control: Infinite scroll 
 documentation: ug
@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Infinite scroll in Angular Grid component
 
-The infinite scrolling feature in the Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a “load-on-demand” concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. This approach significantly enhances the user experience when working with large data collections in the Angular Grid.
+The infinite scrolling feature in the Grid enables seamless handling of large data sets without compromising performance. Infinite scrolling operates using a “load-on-demand” concept, where data is loaded as needed when users scroll. In this mode, a new block of data is fetched each time the scrollbar reaches the end of the vertical scroller, significantly improving user experience and scalability for large data collections in the Angular Grid.
 
-In this mode, a block of data accumulates every time the scrollbar reaches the end of the scroller. To clarify, in this context, a **block** represents the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize) of the Grid. If the `pageSize` is not explicitly specified, the Grid will automatically calculate it based on the grid viewport height and row height.
+A **block** refers to a set of rows equal to the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize) of the Grid. If the `pageSize` is not explicitly defined, the Grid automatically calculates it based on the grid's viewport height and row height.
 
-To enable infinite scrolling, you need to define [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid#enableinfinitescrolling) as **true** and content height by [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
+To enable infinite scrolling, set the [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableinfinitescrolling) property to **true** and specify a content height using the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
 
-> In this feature, the Grid will not initiate a new data request when revisiting the same page.
-> The `height` property must be specified when enabling `enableInfiniteScrolling`.
+> The Grid does not send a new data request when revisiting the same page in infinite scroll mode.
+> The `height` property must be defined when enabling `enableInfiniteScrolling`.
 
-The following an example that demonstrates how to enable infinite scroll in the Grid:
+The following example demonstrates how to enable infinite scroll in the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,16 +30,16 @@ The following an example that demonstrates how to enable infinite scroll in the 
 {% include code-snippet/grid/paging1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/paging1-cs2" %}
 
 ## Number of blocks rendered during initial loading
 
-The number of blocks to be initially rendered when the Grid is loaded. Each block corresponds to a page size of the Grid, resulting in the rendering of a certain number of row elements determined by multiplying the initial block size with the page size.
+You can control how many blocks (pages) are initially rendered when the Grid loads. Each block contains a number of rows equal to the page size. The total number of initially rendered rows is determined by multiplying the initial block count with the page size.
 
-You can define the initial loading pages count by using [infiniteScrollSettings.initialBlocks](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#initialblocks) property . By default, this property loads three pages during the initial rendering. Subsequently, additional data is buffered and loaded based on either the page size or the number of rows rendered within the provided height.
+Specify the initial loading page count using the [infiniteScrollSettings.initialBlocks](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#initialblocks) property. By default, three pages are loaded during initial rendering. Additional data is buffered based on the page size or the number of visible rows corresponding to the grid height.
 
-The following an example of how you can use the `initialBlocks` property to set the initial loading pages based on **DropDownList** input:
+The following example demonstrates how to use the `initialBlocks` property to set the number of initial pages loaded, controlled via a **DropDownList** input:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,18 +50,18 @@ The following an example of how you can use the `initialBlocks` property to set 
 {% include code-snippet/grid/paging1-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/paging1-cs3" %}
 
 ## Efficient data caching and DOM management in grid cache mode
 
-In Grid cache mode, cached data blocks are reused when revisiting them, reducing the need for frequent data requests while navigating the same block. This mode also manages DOM row elements based on the [infiniteScrollSettings.maxBlocks](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#maxblocks) count value. If this limit is exceeded, it removes a block of row elements to create new rows.
+With grid cache mode enabled, the Grid reuses cached data blocks when revisiting them, reducing unnecessary data fetches. The DOM row elements are managed based on the value defined in the [infiniteScrollSettings.maxBlocks](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#maxblocks) property. When the maximum block count is exceeded, the oldest block of row elements is removed to accommodate new rows.
 
-To enable cache mode, you need to define [enableCache](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#enablecache) property of [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/infinitescrollsettings/) as **true**.
+Enable cache mode by setting the [enableCache](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings/#enablecache) property to true within [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/infinitescrollsettings/).
 
-To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings), By default this property value is 3.
+Use the `maxBlocks` property in [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings) to set the maximum block count. The default value is 3.
 
-The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component[change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event :
+The following example demonstrates enabling or disabling cache mode for infinite scrolling, triggered by the [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component's [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,22 +72,22 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% include code-snippet/grid/paging1-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/paging1-cs4" %}
 
-> If [Hierarchy Grid](https://ej2.syncfusion.com/angular/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/angular/documentation/grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
+> When enabling [Hierarchy Grid](https://ej2.syncfusion.com/angular/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/angular/documentation/grid/row/detail-template) features together with infinite scrolling and the `height` property is not specified, a default height of **300px** will be applied. Since the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property is required for hierarchy grid and detail template, always define it as needed.
 
 ## Limitations
 
-* Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
-* It is necessary to set a static height for the component or its parent container when using infinite scrolling. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
-* When infinite scrolling is activated, compatibility for copy-paste and drag-and-drop operations is limited to the data items visible in the current viewport of the grid.
-* Cell selection will not be persisted in cache mode.
-* The group records cannot be collapsed in cache mode.
-* Lazy load grouping with infinite scrolling does not support cache mode, and the infinite scrolling mode is exclusively applicable to parent-level caption rows in this scenario.
-* The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping#group-with-paging) topic.
-* Programmatic selection using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) and [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) method is not supported in infinite scrolling.
-* Infinite scrolling is not compatible with the following features:
+* Browsers have element height limitations—extremely large record sets may be restricted based on browser capabilities.
+* The component or its parent container must have a static height set when using infinite scrolling. Setting height to 100% requires the parent container to also have a static height.
+* When infinite scrolling is enabled, copy-paste and drag-and-drop features are restricted to the rows currently visible in the viewport.
+* Cell selection does not persist when using cache mode.
+* Group records cannot be collapsed in cache mode.
+* Lazy load grouping with infinite scrolling does not support cache mode. Infinite scrolling is applied exclusively to parent-level caption rows in this context.
+* Aggregated information and total group items are shown based only on currently rendered view items. For total aggregation across all items, refer to the [Group with paging](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping#group-with-paging) guide.
+* Programmatic selection using [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) and [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) methods is not supported with infinite scrolling.
+* Infinite scrolling is not compatible with these features:
     1. Batch editing
     2. Normal editing
     3. Row spanning
@@ -95,10 +95,10 @@ The following example that demonstrates how to enable/disable cache mode in infi
     5. Row template
     6. Row virtual scrolling
     7. Autofill
-* Limitations of row drag and drop with infinite scrolling
-    1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
+* Row drag and drop limitations with infinite scrolling:
+    1. In cache mode, the grid will automatically refresh if the number of row **tr** elements exceeds the cache limit after a drop action.
     2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.
-    3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
+    3. With remote data, changes from row drag and drop apply only to the UI and are lost upon grid refresh unless updated in the database. Use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrop) event to update the back-end accordingly and refresh the grid to display changes.
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Kanban component | Syncfusion
+title: Styles in Angular Kanban Component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Style
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Kanban component
+# Styles in Angular Kanban Component
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Kanban.
 
@@ -66,7 +66,7 @@ To modify the Kanban appearance, you need to override the default CSS of Kanban.
 | .e-kanban .e-kanban-table.e-content-table .e-card .e-card-content | Cards content in kanban. |
 | .e-kanban .e-kanban-table.e-content-table .e-card .e-card-tag.e-card-label | Cards label in kanban. |
 
-## To set fixed position to the Kanban header
+## Setting a fixed position for the kanban header
 
 The Fixed header in Kanban control can be customized in following ways,
 
