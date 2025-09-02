@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The baseline feature in the Gantt component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 
-Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
+Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
 
 **Baseline fields**:
 - [baselineStartDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#baselinestartdate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
@@ -21,7 +21,7 @@ Before implementing baseline functionality, ensure the data source includes base
 
 ## Implement baseline
 
-To enable baseline, configure the Gantt component by setting [`renderBaseline`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#renderbaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [`baselineColor`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#baselinecolor) property or the .`e-baseline-bar` CSS class for advanced styling.
+To enable baseline, configure the Gantt component by setting [renderBaseline](https://ej2.syncfusion.com/angular/documentation/api/gantt/#renderbaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://ej2.syncfusion.com/angular/documentation/api/gantt/#baselinecolor) property or the .`e-baseline-bar` CSS class for advanced styling.
 
 ```typescript
 export let projectData = [
