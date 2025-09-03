@@ -1,36 +1,37 @@
 ---
 layout: post
-title: Index in Angular Treegrid component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Overview in Angular TreeGrid component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Index 
+control: Overview 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Treegrid component
+# Overview of TreeGrid in Angular
 
-The Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular TreeGrid is a feature-rich control used to visualize  self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager` and binding data fields to columns. It also expands or collapses child data using the tree column.
+The Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular TreeGrid is a feature-rich component used to visualize self-referential hierarchical data efficiently in a tabular format. The TreeGrid can bind data from various sources such as an array of JSON objects, RESTful services, OData services, WCF services, or DataManager, allowing flexible data integration by mapping data fields to columns. It enables expanding or collapsing hierarchical data through the tree column for an interactive experience.
 
-The most important features available in the TreeGrid component are paging, sorting, filtering and searching.
+Key features of the TreeGrid component include paging, sorting, filtering, and searching, among others.
 
 ## Key Features
 
-* **Data sources**: Binds the TreeGrid component with an array of JavaScript objects or DataManager.
-* **Adaptive Layout**: The Tree Grid user interface (UI) has been designed to provide an optimal viewing experience and improve usability on small screens.
-* **Sorting**: Supports **n** levels of sorting.
-* **Filtering**: Supports filtering records with filter bar and menu filtering modes.
-* **Paging**: Allows easy switching between pages using the pager bar.
-* **Editing**: Offers cell and row editing modes for updating the records.
-* **Virtual scrolling**: To efficiently handle and display a large amount of data without experiencing any performance degradation.
-* **Columns**: The column definitions are used as the datasource schema in the TreeGrid. This plays a vital role in rendering column values in the required tree structure.
-* **Reordering**: Allows dragging and dropping of any column anywhere in the TreeGrid’s column header row, thus allowing repositioning of columns.
-* **Resizing**: Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
-* **Cell Styling**: TreeGrid cell styles can be customized either by using CSS or programmatically.
-* **Selection**: Rows or cells can be selected in the TreeGrid. One or more rows or cells can also be selected by holding Ctrl or Command, or programmatically.
-* **Templates**: Templates can be used to create custom user experiences in the TreeGrid.
-* **Aggregation**: Provides the option to easily visualized the aggregates for column values. Displays aggregate for child data.
-* **Context menu**: The context menu provides a list of actions to be performed in the TreeGrid. It appears when a cell, header, or the pager is right-clicked.
-* **Export**: Provides the options to Export the TreeGrid data to Excel, PDF, and CSV formats.
-* **RTL support**: Provides right-to-left mode that aligns the TreeGrid content from right to left.
-* **Localization**: Provides an inherent support to localize the UI.
+
+* **Data Sources**: Binds TreeGrid to an array of JavaScript objects or to a DataManager instance for versatile data handling.
+* **Adaptive Layout**: The TreeGrid user interface offers an optimal viewing experience and improved usability on small screens.
+* **Sorting**: Supports sorting at multiple levels, enabling hierarchical data organization.
+* **Filtering**: Provides both filter bar and menu modes to filter records.
+* **Paging**: Facilitates easy navigation between pages using the pager bar.
+* **Editing**: Supports cell and row editing modes for updating records directly within the TreeGrid.
+* **Virtual Scrolling**: Efficiently manages and displays large volumes of data without performance degradation.
+* **Columns**: Column definitions act as a schema for the TreeGrid's data source, controlling the presentation of data in a tree structure.
+* **Reordering**: Allows users to drag and drop columns within the header row for dynamic column arrangement.
+* **Resizing**: Enables changing column width interactively by dragging the edge of a column header.
+* **Cell Styling**: Customize TreeGrid cell styles using CSS or programmatically for a tailored appearance.
+* **Selection**: Allows row or cell selection with support for multi-selection using keyboard modifiers or programmatic control.
+* **Templates**: Enable custom user experiences by allowing templates for different parts of the TreeGrid.
+* **Aggregation**: Provides aggregation options for column values, including display of aggregates for hierarchical (child) data.
+* **Context Menu**: Offers a context menu with actionable options, accessible via right-click on a cell, header, or pager area.
+* **Export**: Supports exporting TreeGrid data to Excel, PDF, and CSV formats.
+* **RTL Support**: Includes right-to-left layout mode, aligning TreeGrid content appropriately for RTL languages.
+* **Localization**: Provides built-in support for localizing the user interface.

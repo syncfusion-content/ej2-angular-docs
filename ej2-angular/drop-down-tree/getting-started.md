@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Dropdown Tree component
 
-This section explains you about how to create a simple **Dropdown Tree** component and configure its available functionalities in Angular.
+This section explains how to create a simple **Dropdown Tree** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -55,7 +55,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -136,7 +136,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 ## Add Dropdown Tree component
 
-Modify the template in **src/app/app.component.ts** file to render the Dropdown Tree component. Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the **app.component.ts** file.
+Modify the template in **src/app/app.component.ts** file to render the Dropdown Tree component. Add the Angular Dropdown Tree selector in `template` section of the **app.component.ts** file.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -189,7 +189,8 @@ export class AppComponent {
         ]
      },
     ];
-     //binding data source through fields property
+    // Map the appropriate fields to the data properties using the fields property
+    // value: field that contains the actual value, text: field for display text, child: field containing child nodes
     public fields: Object = { dataSource: this.data, value: 'nodeId', text: 'nodeText', child: 'nodeChild' };
 }
 

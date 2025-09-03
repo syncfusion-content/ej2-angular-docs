@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Items in Angular Timeline component
 
-The Timeline items can be added by using the `<e-item>` tag directive. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
+The Timeline items can be configured by using the `<e-item>` tag directive. Each item supports multiple configuration options including `content`, `oppositeContent`, `dotCss`, `disabled`, and `cssClass` properties to create rich, interactive timeline experiences.
 
 ## Adding content
 
-You can define the item content using the [content](../api/timeline/timelineItem/#content) property.
+Define the primary content for Timeline items using the [content](../api/timeline/timelineItem/#content) property. This property supports both string values and templated content for flexible content presentation.
 
 ### String content
 
-You can define string content for the Timeline items.
+Define simple text content for Timeline items using string values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ You can define string content for the Timeline items.
 
 ### Templated content
 
-You can specify the template content for the items, by using the selector for an element in HTML.
+Create rich, dynamic content for Timeline items by specifying template selectors that reference HTML elements with custom markup and styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,7 +63,7 @@ You can specify the template content for the items, by using the selector for an
 
 ## Adding opposite content
 
-You can add additional information to each Timeline item, by using the [oppositeContent](../api/timeline/timelineItem/#oppositecontent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
+Enhance Timeline items with supplementary information using the [oppositeContent](../api/timeline/timelineItem/#oppositecontent) property. This content appears on the opposite side of the timeline from the main content, providing additional context such as dates, metadata, or secondary details. Like the content property, oppositeContent accepts both string and template values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,21 +83,21 @@ You can add additional information to each Timeline item, by using the [opposite
   
 {% previewsample "page.domainurl/samples/timeline/items/opposite-content" %}
 
-## Dot item
+## Customizing dot appearance
 
-You can define a CSS class to personalize the appearance of dots associated with each Timeline item by using the [dotCss](../api/timeline/timelineItem/#dotcss) property. This allows you to set icons, background colors, or images for the dots.
+Personalize the visual appearance of Timeline item dots using the [dotCss](../api/timeline/timelineItem/#dotcss) property. This property accepts CSS class names that enable custom styling including icons, background images, colors, and text content.
 
 ### Adding icons
 
-You can define the CSS class to show the icon for each item using the `dotCss` property.
+Apply CSS classes containing icon fonts or icon libraries to display meaningful icons that represent each timeline event or milestone.
 
 ### Adding images
 
-You can include images for the Timeline items using the `dotCss` property, by setting the CSS `background-image` property.
+Incorporate custom images as dot backgrounds by defining CSS classes with `background-image` properties, perfect for displaying avatars, logos, or event-specific imagery.
 
 ### Adding text
 
-You can display text for the Timeline items using the `dotCss` property, by adding text to the CSS `content` property.
+Display short text labels within dots using CSS classes that define [`content`](https://ej2.syncfusion.com/angular/documentation/api/timeline/timelineItem/#content) properties, useful for showing abbreviations, numbers, or status indicators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,7 +119,7 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 
 ## Disabling items
 
-You can use the [disabled](api/timeline/timelineItem/#disabled) property to disable an item when set to `true`. By default, the value is `false`.
+Control item interactivity using the [disabled](../api/timeline/timelineItem/#disabled) property. When set to `true`, the item appears in a disabled state with reduced opacity and becomes non-interactive. The default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,9 +139,9 @@ You can use the [disabled](api/timeline/timelineItem/#disabled) property to disa
   
 {% previewsample "page.domainurl/samples/timeline/items/disabled" %}
 
-## cssClass
+## CSS class customization
 
-You can customize the appearance of the Timeline item by specifying a custom CSS class using the [cssClass](../api/timeline/timelineItem/#cssclass) property.
+Apply custom styling to individual Timeline items using the [cssClass](../api/timeline/timelineItem/#cssclass) property. This property accepts CSS class names that enable comprehensive visual customization including colors, fonts, spacing, and layout modifications.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

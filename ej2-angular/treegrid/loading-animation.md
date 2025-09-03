@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Loading animation in Angular Treegrid component | Syncfusion
-description: Learn here all about Loading animation in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Loading animation in Angular TreeGrid component | Syncfusion
+description: Learn about loading animations in the Syncfusion Angular TreeGrid component of Essential JS 2, including spinner and shimmer indicator types.
 platform: ej2-angular
 control: Loading animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading animation in Angular Treegrid component
+# Loading animation in Angular TreeGrid component
 
-The tree grid has an option to show a loading indicator in-between the time of fetching the data and binding it to the tree grid during initial rendering or refreshing or after performing any tree grid action like sorting, paging and more. The tree grid supports two indicator types, which is achieved by setting the `loadingIndicator.indicatorType` property to Spinner or Shimmer. The default value of the indicator type is "Spinner."
+The TreeGrid provides loading indicators during data fetching, initial rendering, refreshing, or after performing actions such as sorting or paging. The loading indicator can be configured using the `loadingIndicator.indicatorType` property, which accepts either `Spinner` or `Shimmer` as its type. By default, the indicator type is set to "Spinner."
 
-In the following sample, the Shimmer indicator is displayed while the tree grid is loading and refreshing when using the remote data.
+In the following example, the Shimmer indicator is shown while the TreeGrid loads and refreshes data when using remote data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,4 +26,4 @@ In the following sample, the Shimmer indicator is displayed while the tree grid 
   
 {% previewsample "page.domainurl/samples/treegrid/loading-animation-cs1" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see available data presentation options.

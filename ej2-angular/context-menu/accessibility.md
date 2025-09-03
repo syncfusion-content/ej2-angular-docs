@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Angular Context menu component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+control: Context Menu
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Context menu component
 
-The Context menu component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular ContextMenu component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Context menu component is outlined below.
+The accessibility compliance for the Angular ContextMenu component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,18 +40,18 @@ The accessibility compliance for the Context menu component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Context menu component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) patterns to meet the accessibility. The following ARIA attributes are used in the Context menu component:
+The Angular ContextMenu component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) patterns to meet accessibility requirements. The following ARIA attributes are used in the ContextMenu component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role` | Indicates Context menu component popup as `menu`, and the popup items as `menuitem`. |
+| `role` | Indicates the ContextMenu component popup as `menu`, and the popup items as `menuitem`. |
 | `aria-haspopup` | Indicates the availability and type of interactive popup element. |
 | `aria-expanded` | Indicates whether the subtree can be expanded or collapsed, as well as indicates whether its current state is expanded or collapsed. |
 | `aria-label` | Indicates the menu item text. |
 
 ## Keyboard interaction
 
-The Context menu component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Context menu component.
+The Angular ContextMenu component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guidelines, making it accessible for people who use assistive technologies and those who rely completely on keyboard navigation. The following keyboard shortcuts are supported by the ContextMenu component:
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -64,9 +64,9 @@ The Context menu component followed the [keyboard interaction](https://www.w3.or
 
 ## Ensuring accessibility
 
-The Context menu component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular ContextMenu component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Context menu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/context-menu.html) in a new window to evaluate the accessibility of the Context menu component with accessibility tools.
+The accessibility compliance of the ContextMenu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/context-menu.html) in a new window to evaluate the accessibility of the ContextMenu component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/context-menu/aria-and-keyboard-cs1" %}
 

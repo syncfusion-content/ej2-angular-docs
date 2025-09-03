@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Clipboard in Angular Treegrid component | Syncfusion
-description: Learn here all about Clipboard in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Clipboard in Angular TreeGrid component | Syncfusion
+description: Learn about clipboard operations in the Syncfusion Angular TreeGrid, including copying, pasting, hierarchy modes, and autofill for rows and cells.
 platform: ej2-angular
 control: Clipboard 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in Angular Treegrid component
+# Clipboard in Angular TreeGrid component
 
-The clipboard provides an option to copy selected rows or cells data into the clipboard.
+The clipboard feature in the Syncfusion Angular TreeGrid provides options to copy and paste selected rows or cell data.
 
-The following list of keyboard shortcuts is supported in the Tree Grid to copy selected rows or cells data into clipboard.
+The following keyboard shortcuts are supported in the TreeGrid for clipboard operations:
 
-Interaction keys |Description
------|-----
-<kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
-<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
+| Interaction Keys | Description |
+|------------------|-------------|
+| <kbd>Ctrl + C</kbd>           | Copies selected rows or cell data to the clipboard. |
+| <kbd>Ctrl + Shift + H</kbd>   | Copies selected rows or cell data with headers to the clipboard. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,9 +31,9 @@ Interaction keys |Description
   
 {% previewsample "page.domainurl/samples/treegrid/clipboard-cs1" %}
 
-## Copy to clipboard by external buttons
+## Copy to clipboard using external buttons
 
-To copy selected rows or cells data into clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/clipboard/#copy) method.
+To copy selected rows or cell data to the clipboard with an external button, use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/clipboard/#copy) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,17 +47,14 @@ To copy selected rows or cells data into clipboard with help of external buttons
   
 {% previewsample "page.domainurl/samples/treegrid/copy-method-cs1" %}
 
-## Copy Hierarchy Modes
+## Copy hierarchy modes
 
-Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#copyHierarchymode) property. The below are the type of filter mode available in TreeGrid.
+The TreeGrid supports several copy hierarchy modes, configurable via the [`copyHierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#copyHierarchymode) property:
 
-* **Parent** : This is the default copy hierarchy mode in Tree Grid. Clipboard value have the selected records with its parent records. If the selected records not have any parent record then the selected record will be in clipboard.
-
-* **Child** : Clipboard value have the selected records with its child record. If the selected records do not have any child record then the selected records will be in clipboard.
-
-* **Both** : Clipboard value have the selected records with its both parent and child record. If the selected records do not have any parent and child record then the selected records alone in clipboard.
-
-* **None** : Only the Selected records will be in clipboard.
+- **Parent** (default): Copies selected records along with their parent records. If no parent exists, only the selected record is copied.
+- **Child**: Copies selected records with their child records. If no child exists, only the selected record is copied.
+- **Both**: Copies selected records with both parent and child records. If neither exists, only the selected record is copied.
+- **None**: Copies only the selected records.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,13 +68,11 @@ Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](ht
   
 {% previewsample "page.domainurl/samples/treegrid/clipboard-cs2" %}
 
-### Limitations of Copy Functionality
-
-* Only current view records will be available in copy clipboard.
+**Limitation:** Only the current view records are available in the clipboard during copy operations.
 
 ## AutoFill
 
-AutoFill Feature allows you to copy the data of selected cells and paste it to another cells by just dragging the autofill icon of the selected cells up to required cells. This feature is enabled by defining `enableAutoFill` property as true.
+The AutoFill feature allows copying and pasting data to adjacent cells by dragging the autofill icon from the edge of a selected cell group. Enable this feature by setting the [`enableAutoFill`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableautofill) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,19 +86,17 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
   
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs1" %}
 
-> * If `enableAutoFill` is set to true, then the autofill icon will be displayed on cell selection to copy cells.
-> * It requires the selection `mode` to be `Cell`, `cellSelectionMode` to be `Box` and also Batch Editing should be enabled.
+> - When `enableAutoFill` is set to true, an autofill icon appears on cell selection.
+> - Requires the selection `mode` to be `Cell`, `cellSelectionMode` set to `Box`, and batch editing enabled.
 
-### Limitations of AutoFill
+**AutoFill limitations:**
 
-* Since the string values are not parsed to number and date type, so when the selected string type cells are dragged to number type cells then it will display as **NaN**. For date type cells, when the selected string type cells are dragged to date type cells then it will display as an **empty cell**.
-* Linear series and the sequential data generations are not supported in this autofill feature.
+- String values are not parsed to number or date types. Dragging string cells to number fields results in **NaN**; to date fields, an **empty cell** is shown.
+- Linear series and sequential data generation are not supported with autofill.
 
 ## Paste
 
-You can able to copy the content of a cell or a group of cells by selecting the cells and pressing <kbd>Ctrl + C</kbd> shortcut key and paste it to another set of cells by selecting the cells and pressing <kbd>Ctrl + V</kbd> shortcut key.
-
-Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#paste) method in the tree grid. To use, you need to pass the data to paste the row index and column index as parameters to the method.
+Content copied from TreeGrid cells can be pasted into other cells using <kbd>Ctrl + V</kbd>. Programmatic paste operations can be performed using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#paste) method, passing data, row index, and column index parameters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,10 +110,12 @@ Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.co
   
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs2" %}
 
-> To perform paste functionality, it requires the selection `mode` to be `Cell`,  `cellSelectionMode` to be `Box` and also Batch Editing should be enabled.
+> - For paste functionality, the selection `mode` must be `Cell`, `cellSelectionMode` must be `Box`, and batch editing should be enabled.
 
-### Limitations of Paste Functionality
+**Paste limitations:**
 
-* Since the string values are not parsed to number and date type, so when the copied string type cells are pasted to number type cells then it will display as **NaN**. For date type cells, when the copied string format cells are pasted to date type cells then it will display as an **empty cell**.
+- String values are not parsed to number or date types. Pasting string data into number cells displays **NaN**; into date cells results in an **empty cell**.
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+---
+
+For more details, visit the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour or explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) for usage scenarios and data manipulation demonstrations.
