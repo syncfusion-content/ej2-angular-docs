@@ -228,6 +228,26 @@ The code provided below demonstrates how to define tooltip content for symbols w
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/custompalette/symboldesc-cs1" %}
 
+### How to enable or disable the default tooltip for shapes in the symbol palette
+
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolInfo/#showTooltip) property within the [`getSymbolInfo`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#getsymbolinfo) method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+
+The following example demonstrates how to configure selective tooltip display:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/custompalette/tooltip-custom/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/custompalette/tooltip-custom/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/custompalette/tooltip-custom" %}
+
+N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
+
 ### How to provide different tooltip for Symbol palette and diagram elements.
 
 When a custom tooltip is defined for a symbol, it will be displayed for both the symbol and the dropped node in the diagram canvas. 

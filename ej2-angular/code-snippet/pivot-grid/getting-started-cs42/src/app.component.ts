@@ -30,7 +30,6 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data as IDataSet[],
-            expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year', expandAll: true }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' , expandAll: true }, { name: 'Products' }],

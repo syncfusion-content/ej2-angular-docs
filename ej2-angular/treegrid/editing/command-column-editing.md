@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Command column editing in Angular TreeGrid component | Syncfusion
-description: Learn here all about Command column editing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use command column editing in the Syncfusion Angular TreeGrid component to add CRUD and custom action buttons for row-level operations.
 platform: ej2-angular
 control: Command column editing 
 documentation: ug
@@ -10,23 +10,22 @@ domainurl: ##DomainURL##
 
 # Command column editing in Angular TreeGrid component
 
-The command column editing feature allows you to add CRUD (Create, Read, Update, Delete) action buttons in a column for performing operations on individual rows. This feature is commonly used when you need to enable inline editing, deletion, or saving of row changes directly within the tree grid. 
+Command column editing allows you to include CRUD (Create, Read, Update, Delete) action buttons in a dedicated column, enabling row-level operations such as inline editing, deleting, saving, and canceling directly in the TreeGrid.
 
-To enable command column editing, you can utilize the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#commands) property. By defining this property, you can specify the command buttons to be displayed in the command column, such as Edit, Delete, Save, and Cancel.
+To enable command column editing, define the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#commands) property for your columns. This property lets you specify which command buttons (Edit, Delete, Save, Cancel) should be shown in the command column.
 
-To utilize CRUD operations, you need to inject the **CommandColumnService** module into the **@NgModule.providers** section. This service provides the necessary functionalities for handling the command column actions.
+To use CRUD operations with command columns, inject the **CommandColumnService** into the **@NgModule.providers**. This service activates the required functionalities for command column actions.
 
-The available built-in command buttons are: 
+The built-in command buttons and their actions are:
 
-| Command Button | Actions |
-|----------------|---------|
-| Edit | Edit the current row.|
-| Delete | Delete the current row.|
-| Save | Update the edited row.|
-| Cancel | Cancel the edited state. |
+| Command Button | Actions                  |
+|---------------|--------------------------|
+| Edit          | Edit the current row.    |
+| Delete        | Delete the current row.  |
+| Save          | Update the edited row.   |
+| Cancel        | Cancel the edited state. |
 
-Here's an example that demonstrates how to add CRUD action buttons in a column using the `command` column property : 
-
+Example: Adding CRUD action buttons using the `commands` column property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,16 +35,16 @@ Here's an example that demonstrates how to add CRUD action buttons in a column u
 {% include code-snippet/treegrid/edit-command-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/edit-command-cs1" %}
 
 ## Custom command
 
-The custom command column feature in the TreeGrid component allows you to add custom command buttons in a column to perform specific actions on individual rows. This feature is particularly useful when you need to provide customized functionality for editing, deleting, or performing any other operation on a row.
+Custom command columns allow you to add your own command buttons for specialized actions on each row. This is useful for providing unique operations such as showing details or triggering custom dialogs.
 
-To add custom command buttons in a column, you can utilize the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#commands) property. 
+To add custom command buttons, use the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#commands) property and define custom buttons with specific logic.
 
-Here's an example that demonstrates how to add custom command buttons using the `commands` property and customize the button click behavior to display tree grid details in a dialog using the `click` event:
+Example: Adding custom command buttons with behavior to display row details in a dialog using the `click` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,5 +54,5 @@ Here's an example that demonstrates how to add custom command buttons using the 
 {% include code-snippet/treegrid/edit-command-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/edit-command-cs2" %}

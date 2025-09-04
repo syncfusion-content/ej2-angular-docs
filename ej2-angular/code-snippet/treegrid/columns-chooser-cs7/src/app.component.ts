@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { sampleData } from './data-source';
+import { sampleData } from './datasource';
 import { TreeGridAllModule, TreeGridComponent, PageService, ToolbarService, ColumnChooserService } from '@syncfusion/ej2-angular-treegrid';
 import { TreeViewModule, TreeView } from '@syncfusion/ej2-angular-navigations';
 import { ButtonComponent, ButtonModule } from '@syncfusion/ej2-angular-buttons';

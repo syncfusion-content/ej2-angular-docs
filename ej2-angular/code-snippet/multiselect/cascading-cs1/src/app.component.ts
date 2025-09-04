@@ -64,7 +64,7 @@ export class AppComponent {
     public countryChange(): void {
       //Query the data source based on country MultiSelect selected value
         let pred:Predicate | any;
-        if(this.countryObj.value)
+        if(this.countryObj.value.length != 0)
             for(var d=0;d<this.countryObj.value.length;d++){
                 if(pred)
                     pred = pred.or("countryId",'equal',this.countryObj.value[d]);
@@ -73,19 +73,19 @@ export class AppComponent {
                 }
         }
         else{
-            this.stateObj.setProperties({enabled:false,values:[]});
-            this.cityObj.setProperties({enabled:false,values:[]});
+            this.stateObj.setProperties({enabled:false,value:[]});
+            this.cityObj.setProperties({enabled:false,value:[]});
             return;
         }
         // enable the state MultiSelect
-        this.stateObj.setProperties({query:new Query().where(pred),enabled:true,values:[]});
+        this.stateObj.setProperties({query:new Query().where(pred),enabled:true,value:[]});
         //clear the existing selection in city MultiSelect
-        this.cityObj.setProperties({enabled:false,values:[]});
+        this.cityObj.setProperties({enabled:false,value:[]});
     }
     public stateChange(): void {
          //Query the data source based on country MultiSelect selected value
         let pred:Predicate| any,temp:any;
-        if(this.stateObj.value)
+        if(this.stateObj.value.length != 0)
             for(var d=0;d<this.stateObj.value.length;d++){
                 if(pred)
                     pred = pred.or("stateId",'equal',this.stateObj.value[d]);
@@ -94,10 +94,10 @@ export class AppComponent {
                 }
         }
         else{
-            this.cityObj.setProperties({enabled:false,values:[]});
+            this.cityObj.setProperties({enabled:false,value:[]});
             return;
         }
-        this.cityObj.setProperties({query:new Query().where(pred),enabled:true,values:[]});
+        this.cityObj.setProperties({query:new Query().where(pred),enabled:true,value:[]});
     }
 }
 
