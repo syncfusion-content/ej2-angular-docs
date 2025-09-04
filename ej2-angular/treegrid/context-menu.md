@@ -1,41 +1,39 @@
 ---
 layout: post
-title: Context menu in Angular Treegrid component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Context menu in Angular TreeGrid component | Syncfusion
+description: Learn about the context menu in the Syncfusion Angular TreeGrid component, including default and custom menu items, dynamic enable/disable, and API integration for advanced actions.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Treegrid component
+# Context menu in Angular TreeGrid component
 
-The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems).
+The Syncfusion Angular TreeGrid supports a context menu that appears on right-click, enabling users to quickly access built-in or custom actions. To enable this feature, define default or custom items using the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems) property. Inject the `ContextMenu` module into the TreeGrid to use context menus.
 
-To use the context menu, inject the `ContextMenu` module in the treegrid.
+The following table lists the default context menu items:
 
-The default items are in the following table.
-
-Items| Description
-----|----
-`AutoFit`|  Auto fit the current column.
-`AutoFitAll` | Auto fit all columns.
-`Edit`|  Edit the current record.
-`Delete` | Delete the current record.
-`Save` | Save the edited record.
-`Cancel` | Cancel the edited state.
-`PdfExport` | Export the treegrid data as Pdf document.
-`ExcelExport` | Export the treegrid data as Excel document.
-`CsvExport` | Export the treegrid data as CSV document.
-`SortAscending` | Sort the current column in ascending order.
-`SortDescending` | Sort the current column in descending order.
-`FirstPage` | Go to the first page.
-`PrevPage` | Go to the previous page.
-`LastPage` | Go to the last page.
-`NextPage` | Go to the next page.
-`AddRow` | Add new row to the treegrid.
-`Indent` | Indents the record to one level of hierarchy.|
-`Outdent` | Outdents the record to one level of hierarchy.|
+| Item            | Description                                                  |
+|-----------------|--------------------------------------------------------------|
+| `AutoFit`       | Auto-fits the current column.                                |
+| `AutoFitAll`    | Auto-fits all columns.                                       |
+| `Edit`          | Edits the current record.                                    |
+| `Delete`        | Deletes the current record.                                  |
+| `Save`          | Saves the edited record.                                     |
+| `Cancel`        | Cancels edit mode.                                           |
+| `PdfExport`     | Exports TreeGrid data as a PDF document.                     |
+| `ExcelExport`   | Exports TreeGrid data as an Excel document.                  |
+| `CsvExport`     | Exports TreeGrid data as a CSV document.                     |
+| `SortAscending` | Sorts the current column in ascending order.                 |
+| `SortDescending`| Sorts the current column in descending order.                |
+| `FirstPage`     | Navigates to the first page.                                 |
+| `PrevPage`      | Navigates to the previous page.                              |
+| `LastPage`      | Navigates to the last page.                                  |
+| `NextPage`      | Navigates to the next page.                                  |
+| `AddRow`        | Adds a new row to the TreeGrid.                              |
+| `Indent`        | Indents the record by one hierarchical level.                |
+| `Outdent`       | Outdents the record by one hierarchical level.               |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,10 +49,9 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems) as a collection of [`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/).
-Actions for this customized items can be defined in the [`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuclick) event.
+You can add custom context menu items by defining the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems) property as a collection of [`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/). Assign actions to these custom items in the [`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuclick) event.
 
-In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.
+In the sample below, a context menu item is added for parent rows to expand or collapse child rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +67,7 @@ In the below sample, we have shown context menu item for parent rows to expand o
 
 ## Enable and disable context menu items dynamically
 
-You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu/#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#contextmenuopen) event.
+Context menu items can be enabled or disabled dynamically using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu/#enableitems) method within the [`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuopen) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,5 +81,5 @@ You can enable and disable the context menu items using the [`enableItems`](http
   
 {% previewsample "page.domainurl/samples/treegrid/context-menu-cs3" %}
 
-> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> To show or hide a context menu item for specific areas within the TreeGrid, use the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
+> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see how data can be presented and manipulated.

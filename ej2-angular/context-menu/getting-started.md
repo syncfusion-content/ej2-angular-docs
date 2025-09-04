@@ -3,43 +3,43 @@ layout: post
 title: Getting started with Angular Context menu component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Context menu component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Context menu component
 
-This section explains how to create a simple ContextMenu, and demonstrate the basic usage of the ContextMenu component in an Angular environment.
+This section explains how to create a simple ContextMenu and demonstrates basic usage of the ContextMenu component in an Angular environment. The ContextMenu component displays a contextual menu that appears when users right-click or perform touch-and-hold actions, providing relevant actions for the selected content.
 
 ## Dependencies
 
-The list of dependencies required to use the Angular ContextMenu component in your application is given below:
+The following dependencies are required to use the Angular ContextMenu component in your application:
 
 ```javascript
-|-- @syncfusion/ej2-angular-navigations
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-navigations
-        |-- @syncfusion/ej2-base
-        |-- @syncfusion/ej2-data
-        |-- @syncfusion/ej2-lists
-        |-- @syncfusion/ej2-inputs
-        |-- @syncfusion/ej2-splitbuttons
-        |-- @syncfusion/ej2-popups
-            |-- @syncfusion/ej2-buttons
+@syncfusion/ej2-angular-navigations
+    ├── @syncfusion/ej2-angular-base
+    └── @syncfusion/ej2-navigations
+        ├── @syncfusion/ej2-base
+        ├── @syncfusion/ej2-data
+        ├── @syncfusion/ej2-lists
+        ├── @syncfusion/ej2-inputs
+        ├── @syncfusion/ej2-splitbuttons
+        └── @syncfusion/ej2-popups
+            └── @syncfusion/ej2-buttons
 ```
 
-## Setup Angular environment
+## Setup Angular Environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command:
 
 ```
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below:
 
 ```
 ng new my-app
@@ -48,15 +48,15 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ContextMenu Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package.
 
-### Ivy library distribution package
+### Ivy Library Distribution Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -64,9 +64,9 @@ Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncf
 npm install @syncfusion/ej2-angular-navigations --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular Compatibility Compiled Package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
 
@@ -74,7 +74,7 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows:
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
@@ -82,9 +82,9 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ContextMenu component
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ContextMenu Component
 
-Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component and the option contains `menuItems` and `target` in which ContextMenu will be opened.
+Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component. The options contain [`menuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItem/) and [`target`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#target) properties that define the menu content and the element where the ContextMenu will appear.
 
 ```javascript
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
@@ -117,9 +117,9 @@ export class AppComponent {
 }
 ```
 
-## Adding CSS reference
+## Adding CSS Reference
 
-Add ContextMenu component's styles as given below in `style.css`.
+Add ContextMenu component's styles as given below in `style.css`. The Material theme is used in this example, but other themes are available.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
@@ -136,7 +136,7 @@ Add ContextMenu component's styles as given below in `style.css`.
 }
 ```
 
-## Running the application
+## Running the Application
 
 Run the application in the browser using the following command:
 
@@ -158,9 +158,9 @@ The following example shows a basic `ContextMenu` component.
   
 {% previewsample "page.domainurl/samples/context-menu/getting-started-cs1" %}
 
-## Rendering items with Separator
+## Rendering Items with Separator
 
-The Separators are the horizontal lines used to separate the menu items. You `cannot` select the separators. You can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property. Cut, Copy, and Paste menu items are grouped using `separator` property in the following sample.
+The Separators are horizontal lines used to separate menu items. You `cannot` select separators. You can enable separators to group menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -174,5 +174,4 @@ The Separators are the horizontal lines used to separate the menu items. You `ca
   
 {% previewsample "page.domainurl/samples/context-menu/separators-cs1" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property should not be given along with
-the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property should not be given along with the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/).

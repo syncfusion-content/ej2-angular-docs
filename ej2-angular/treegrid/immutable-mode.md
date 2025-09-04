@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Immutable mode in Angular Treegrid component | Syncfusion
-description: Learn here all about Immutable mode in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Immutable mode in Angular TreeGrid component | Syncfusion
+description: Learn about immutable mode in the Syncfusion Angular TreeGrid component of Essential JS 2, including performance benefits and feature limitations.
 platform: ej2-angular
 control: Immutable mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Immutable mode in Angular Treegrid component
+# Immutable mode in Angular TreeGrid component
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+Immutable mode enhances TreeGrid re-rendering performance by using object reference comparison and [deep comparison](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) techniques. When TreeGrid actions are performed, only modified or newly added rows are re-rendered; unchanged rows remain unaffected.
 
-To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableimmutablemode) property as **true**.
+Enable immutable mode by setting the [`enableImmutableMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableimmutablemode) property to **true**.
 
->* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) column.
+> * This feature uses the primary key value for data comparison. Set the [`isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) column to ensure correct row identification.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 
 ## Limitations
 
-The following features are not supported in the immutable mode:
+The following features are not supported when immutable mode is enabled:
 
 * Frozen rows and columns
 * Row Template
@@ -38,4 +38,4 @@ The following features are not supported in the immutable mode:
 * Column reorder
 * Virtualization
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> To discover more features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see data presentation and management in action.

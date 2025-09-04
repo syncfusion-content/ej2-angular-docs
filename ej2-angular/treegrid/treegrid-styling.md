@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Treegrid styling in Angular Treegrid component | Syncfusion
-description: Learn here all about Treegrid styling in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: TreeGrid styling in Angular TreeGrid component | Syncfusion
+description: Learn how to customize the appearance and styling of the Syncfusion Angular TreeGrid component using available CSS classes, theme studio, and advanced Angular techniques.
 platform: ej2-angular
-control: Treegrid styling 
+control: TreeGrid styling
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Treegrid styling in Angular Treegrid component
+# TreeGrid styling in Angular TreeGrid component
 
-To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Please find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the Angular controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To customize the appearance of the TreeGrid, override its default CSS classes. The following table lists common CSS classes and the corresponding TreeGrid sections they affect. For comprehensive theming needs, you can also create a custom theme for all Angular controls using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 Section|CSS class|Purpose of CSS class
 -----|-----|-----
@@ -34,8 +34,8 @@ Section|CSS class|Purpose of CSS class
 ||e-summaryrow|This class is added to rows of treegrid summary.
 ||e-summarycell|This class is added to cells of summary row. This to override background color of summary.
 
-> The style customization works only when we elevate the CSS to global scope using the encapsulation: ViewEncapsulation.None
-> If you need to apply style for ViewEncapsulation other than None, use ng-deep like shown in the below example code snippet,
+> Style customizations apply globally when using encapsulation: `ViewEncapsulation.None`.
+> To style components where encapsulation mode is not `None`, use `::ng-deep` as in the example below:
 
 ```css
 ::ng-deep .e-treegrid .e-altrow  {
@@ -43,4 +43,4 @@ Section|CSS class|Purpose of CSS class
 }
 ```
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more on TreeGrid features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to explore data presentation and styling options.

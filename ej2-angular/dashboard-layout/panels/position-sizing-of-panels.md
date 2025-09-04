@@ -3,31 +3,31 @@ layout: post
 title: Position and size in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Position sizing of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Position sizing of panels 
+control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position sizing of panels in Angular Dashboard layout component
+# Panel positioning and sizing in Angular Dashboard layout component
 
-Panels are the basic building blocks of the dashboard layout component. They act as a container for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
+Panels serve as the fundamental building blocks of the Dashboard Layout component, functioning as containers for data visualization and content presentation. The component provides comprehensive control over panel positioning and sizing through a flexible grid-based system that enables precise layout management and responsive design implementation.
 
-The following table represents all the available panel properties and the corresponding functionalities.
+The following table details all available panel properties and their specific functions in layout management:
 
-| **PanelObject** | **Description** |
-| --- | --- |
-| <kbd>id</kbd> | Specifies the ID of the panel. |
-| <kbd>row</kbd> | Specifies the row in which the panel is to be placed. |
-| <kbd>col</kbd> | Specifies the column in which the panel is to be placed. |
-| <kbd>sizeX</kbd> | Specifies the width of the panel in cells count. |
-| <kbd>sizeY</kbd> | Specifies the height of the panel in cells count. |
-| <kbd>minSizeX</kbd> |Specifies the minimum width of the panel in cells count. |
-| <kbd>minSizeY</kbd> | Specifies the minimum height of the panel in cells count. |
-| <kbd>maxSizeX</kbd> | Specifies the maximum width of the panel in cells count. |
-| <kbd>maxSizeY</kbd> | Specifies the maximum height of the panel in cells count. |
-| <kbd>header</kbd> | Specifies the header template of the panel. |
-| <kbd>content</kbd> | Specifies the content template of the panel. |
-| <kbd>cssClass</kbd> | Specifies the CSS class name that can be appended with each panel element.|
+| **Property** | **Type** | **Description** |
+| --- | --- | --- |
+| `id` | string | Unique identifier for the panel, essential for state management and event handling |
+| `row` | number | Grid row position where the panel begins (0-based indexing) |
+| `col` | number | Grid column position where the panel begins (0-based indexing) |
+| `sizeX` | number | Panel width measured in grid cells |
+| `sizeY` | number | Panel height measured in grid cells |
+| `minSizeX` | number | Minimum allowed width in cells, prevents excessive resizing |
+| `minSizeY` | number | Minimum allowed height in cells, maintains content visibility |
+| `maxSizeX` | number | Maximum allowed width in cells, controls layout boundaries |
+| `maxSizeY` | number | Maximum allowed height in cells, prevents layout overflow |
+| `header` | string | Header template content for panel identification |
+| `content` | string | Main content template containing panel data |
+| `cssClass` | string | Custom CSS classes for styling and theming |
 
 ## Positioning of panels
 

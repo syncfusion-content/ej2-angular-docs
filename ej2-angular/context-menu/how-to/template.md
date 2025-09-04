@@ -3,12 +3,14 @@ layout: post
 title: Template in Angular Context menu component | Syncfusion
 description: Learn here all about Template in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Template 
+control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Context menu component
+# Template customization in Angular Context menu component
+
+The ContextMenu component supports extensive template customization, allowing you to embed complex UI elements and interactive components within menu items. This flexibility enables creating rich, context-aware menus that go beyond simple text-based navigation.
 
 ## Show table in sub ContextMenu
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Orientations in Angular Timeline component
 
-The Timeline component supports the display of items in both the horizontal and vertical direction by using the [orientation](../api/timeline#orientation) property.
+The Timeline component supports displaying items in both horizontal and vertical directions using the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property. This flexibility allows you to choose the most suitable layout based on your application's design requirements and available space.
 
 ## Vertical
 
-You can display the items vertically, one below the other, by setting the [orientation](../api/timeline#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
+Display timeline items vertically in a top-to-bottom sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ You can display the items vertically, one below the other, by setting the [orien
 
 ## Horizontal
 
-You can display the items horizontally, in a side-by-side manner, by setting the [orientation](../api/timeline#orientation) property to `Horizontal`.
+Display timeline items horizontally in a left-to-right sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property to `Horizontal`. The horizontal layout works particularly well on desktop screens and wide containers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
