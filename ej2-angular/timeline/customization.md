@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Timeline component
 
-You can customize the Timeline items dot size, connectors, dot borders, dot outer space and more to personalize its appearance. This section explains the different ways for styling the items.
+The Timeline component offers extensive customization options for visual styling including dot appearance, connector lines, borders, spacing, and color schemes. This section demonstrates various approaches to customize Timeline items and create visually distinctive event displays.
 
 ## Connector styling
 ### Common styling
 
-You can define the styles applicable to the all the Timeline item connectors.
+Define styles that apply to all Timeline item connectors for consistent visual presentation across the entire Timeline.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +37,7 @@ You can define the styles applicable to the all the Timeline item connectors.
 
 ### Individual styling
 
-You can also apply unique styles to individual connectors, to differentiate specific items within the Timeline.
+Apply unique styles to specific connectors to differentiate particular items within the Timeline sequence.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ You can modify the color of the dots to highlight the specific Timeline items.
 
 ### Dot size
 
-You can adjust the size of the dot to make it larger or smaller by using the `--dot-size` variable.
+Adjust dot dimensions using the `--dot-size` CSS custom property to create visual emphasis or maintain design consistency with different Timeline layouts.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ You can adjust the size of the dot to make it larger or smaller by using the `--
 
 ### Dot shadow
 
-You can add shadow effects to the Timeline dots to make it feel visually engaging by using the `--dot-outer-space` & `--dot-border` variables.
+Create visually engaging Timeline dots by adding shadow effects using the `--dot-outer-space` and `--dot-border` CSS custom properties. These properties control the outer spacing and border appearance of Timeline dots.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +126,7 @@ You can add shadow effects to the Timeline dots to make it feel visually engagin
 
 ### Dot variant
 
-You can achieve the desired dot variant by customizing the border, outline and background colors of the Timeline dots.
+Create different dot appearances by customizing border, outline, and background color properties of Timeline dots. This enables distinct visual styles for different types of events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +148,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-By adding the `e-outline` class to the Timeline [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timeline/#cssclass) property it enables the dots to have an outline state.
+Apply the `e-outline` class to the Timeline [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timeline/#cssclass) property to enable outline-style dots to have an outline state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

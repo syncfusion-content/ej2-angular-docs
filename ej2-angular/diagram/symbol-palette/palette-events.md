@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Symbol Palette Events in EJ2 Angular Diagram component | Syncfusion®
-description: Learn here all about Symbol palette in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Symbol palette events in Syncfusion® Angular Diagram component including drag-drop events, palette expansion, and selection change events.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol Palette Events in EJ2 Angular Diagram component
+# Symbol Palette Events in EJ2 Angular Diagram Component
 
-There are some events which will get triggered while interacting with the symbol palette. They are explained below.
+The Symbol Palette component provides several events that trigger during user interactions such as dragging symbols, expanding palettes, and changing selections. These events enable developers to customize behavior, provide visual feedback, and implement custom logic during symbol palette operations.
 
 ## DragEnter event
 
-[`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) event triggers when the shape enters the diagram surface while dragging it from symbol palette. You can customize the style of the dragged shape using this event. This allows for dynamic styling changes based on the diagram's context.
+The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs/) event triggers when a symbol enters the diagram surface while being dragged from the symbol palette. This event allows developers to customize the appearance of the dragged symbol or validate drop targets dynamically based on the diagram's current state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ There are some events which will get triggered while interacting with the symbol
 
 ## DragLeave event
 
-[`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs) event occurs when a shape leaves the diagram surface after being dragged inside but not dropped. This can be useful for resetting styles or handling any clean-up tasks when a shape is not intended to be placed on the diagram.
+The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs/) event occurs when a dragged symbol leaves the diagram surface without being dropped. This event is particularly useful for cleaning up temporary visual changes applied during the drag operation or resetting any modified states.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ There are some events which will get triggered while interacting with the symbol
 
 ## DragOver event
 
-[`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs) event triggered when a shape is dragged over diagram while being moved from the symbol palette. This event can be used to provide visual feedback or to determine if the current drop target is valid.
+The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs/) event triggers continuously while a symbol is being dragged over the diagram surface. This event provides real-time feedback during drag operations and enables developers to implement dynamic drop validation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ There are some events which will get triggered while interacting with the symbol
 
 ## Drop event
 
-[`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropEventArgs/) event triggered when a shape is dropped onto the diagram surface. This event is useful for customizing the shape's appearance and properties after it is dropped.
+The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropEventArgs/) event triggers when a symbol is successfully dropped onto the diagram surface. This event serves as the final step in the drag-and-drop process and provides access to both the dropped symbol and the target location.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ There are some events which will get triggered while interacting with the symbol
 
 ## PaletteExpanding event
 
-[`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteExpandArgs/) event triggered when the palette expanded / collapsed.
+The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteExpandArgs/) event triggers when a palette group is expanded or collapsed within the symbol palette. This event enables developers to control palette expansion behavior and implement custom logic based on palette state changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +94,7 @@ There are some events which will get triggered while interacting with the symbol
 
 ## PaletteSelectionChange event
 
-[`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteSelectionChangeArgs/) event triggered after the selection changes in the symbol palette. This event can be used to enable/disable functionality based on the selected symbol.
+The [`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteSelectionChangeArgs/) event triggers when the selection changes within the symbol palette. This event provides information about both the previously selected and newly selected symbols, enabling developers to respond to selection changes appropriately.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -107,4 +107,3 @@ There are some events which will get triggered while interacting with the symbol
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/events/palette-selection" %}
-

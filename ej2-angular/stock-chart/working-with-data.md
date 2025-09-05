@@ -45,6 +45,22 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
   
 {% previewsample "page.domainurl/samples/stock-chart/datasource-cs2" %}
 
+## Handling No Data
+
+When no data is available to render in the stock chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/stock-chart/datasource-cs3/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stock-chart/datasource-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/stock-chart/datasource-cs3" %}
+
 ## See Also
 
 * [Series Types](./series-types/)

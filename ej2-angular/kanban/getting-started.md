@@ -1,20 +1,27 @@
 ---
 layout: post
-title: Getting started with Angular Kanban component | Syncfusion
+title: Getting started with Angular Kanban Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Kanban component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Kanban component
+# Getting Started with Angular Kanban Component
 
 This section explains the steps required to create a simple Angular Kanban component and configure its available functionalities.
 
+## Overview
+
+The Kanban component consists of:
+- **Cards**: Represent tasks, mapped to a `dataSource` via `cardSettings`.
+- **Columns**: Define workflow stages, mapped using `keyField`.
+- **Swimlanes**: Group cards by categories, configured with `swimlaneSettings`.
+
 ## Setup Angular Environment
 
-Use [`Angular CLI`](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up an Angular application. Install Angular CLI with the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -22,7 +29,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using the following Angular CLI command.
+Create a new Angular application using the Angular CLI:
 
 ```bash
 ng new my-app
@@ -113,13 +120,13 @@ export class AppComponent { }
 
 ## Run the application
 
-Use the following command to run the application in the browser.
+Run the application in the browser using:
 
 ```bash
 ng serve --open
 ```
 
-The output will appear as follows.
+The application will display an empty Kanban board with the defined columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,7 +142,7 @@ The output will appear as follows.
 
 ## Populating cards
 
-To populate the empty Kanban with cards, define the local JSON data or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in JSON object should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+Populate the Kanban with cards by binding a local JSON array or remote data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. To define `dataSource`, the mandatory fields in JSON object should be relevant to [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -151,7 +158,7 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 
 ## Enable swimlane
 
-`Swimlane` can be enabled by mapping the fields `swimlaneSettings.keyField` to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
+`Swimlane` can be enabled by mapping the fields [swimlaneSettings.keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#swimlanesettings) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

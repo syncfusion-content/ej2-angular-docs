@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Timeline component
 
-This section explains how to create a simple Timeline, and demonstrate the basic usage of the Timeline module in an Angular environment.
+This section explains how to create a simple Timeline and demonstrates the basic usage of the Timeline module in an Angular environment.
 
-To get start quickly with Angular Timeline using CLI and Schematics, you can check on this video:
+To get started quickly with Angular Timeline using CLI and Schematics, you can check this video:
 {% youtube "https://www.youtube.com/watch?v=7CHPsUJESMc&t=26s" %}
 
 ## Dependencies
@@ -20,11 +20,10 @@ To get start quickly with Angular Timeline using CLI and Schematics, you can che
 The list of dependencies required to use the Timeline module in your application is given below:
 
 ```javascript
-|-- @syncfusion/ej2-angular-layouts
+@syncfusion/ej2-angular-layouts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-layouts
     |-- @syncfusion/ej2-angular-base
-
 ```
 
 ## Setup Angular environment
@@ -48,9 +47,9 @@ cd my-app
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -136,7 +135,6 @@ import { Component } from '@angular/core';
   })
 export class AppComponent {
 }
-
 ```
 
 ## Adding Items
@@ -165,7 +163,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 }
-
 ```
 
 ## Running the application

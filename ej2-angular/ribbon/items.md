@@ -8,29 +8,29 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in Angular Ribbon component
+# Items in the Angular Ribbon Component
 
-Ribbon renders various built-in items based on the item [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItemType/) property. By default, the type property is set as `Button` which renders the Button.
+The Ribbon component renders various built-in items based on the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItemType/) property of a ribbon-item. By default, this property is set to `Button`, which renders a standard Button item.
 
-## Built-in items
+## Built-in Items
 
-You can render the built-in Ribbon items by using the `<e-ribbon-item>` tag directive, to specify the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property.
+Render the built-in Ribbon items using the `<e-ribbon-item>` tag. Specify the desired item by setting its [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property.
 
-The following table explains the built-in items and their actions.
+The following table describes the available built-in items and their functions:
 
-| Built-in Ribbon Items | Actions |
-|------------------------|---------|
-| Button | Renders button as ribbon item.|
-| CheckBox | Renders checkbox as ribbon item.|
-| DropDown | Renders dropdownbutton as ribbon item.|
-| SplitButton | Renders splitbutton as ribbon item.|
-| ComboBox | Renders combobox as ribbon item.|
-| ColorPicker | Renders color picker as ribbon item.|
-| GroupButton | Renders groupbutton as ribbon item.|
+| Built-in Ribbon Item | Action |
+|----------------------|---------|
+| Button | Renders a clickable button. |
+| CheckBox | Renders a checkbox for binary selection. |
+| DropDown | Renders a dropdown button with a popup list. |
+| SplitButton | Renders a button with a primary action and a secondary dropdown list. |
+| ComboBox | Renders a combo box for selection from a list of options. |
+| ColorPicker | Renders a color picker for color selection. |
+| GroupButton | Renders a group of related buttons. |
 
 ### Button items
 
-You can render the built-in button Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property as `Button`. You can also customize the button item using the [RibbonButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettingsModel/), which provides options such as `iconCss`, `content`, `isToggle` and more.
+To render a `Button` item, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `Button`. You can customize its appearance and behavior using the [RibbonButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettingsModel/), which includes options like `iconCss`, `content`, and `isToggle`.
 
 #### Toggle button
 
@@ -69,9 +69,9 @@ export class AppComponent  {
 
 ```
 
-### Checkbox items
+### CheckBox Items
 
-You can render the built-in checkBox Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `CheckBox`. You can also customize the checkBox item using the [RibbonCheckBoxSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonCheckBoxSettingsModel/), which provides options such as `labelPosition`, `label`, `checked` and more.
+To render a `CheckBox`, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `CheckBox`. Customize it using the [RibbonCheckBoxSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonCheckBoxSettingsModel/), which provides options for `label`, `labelPosition`, and `checked` state.
 
 #### Checkbox state
 
@@ -147,13 +147,13 @@ export class AppComponent {
 
 ```
 
-### DropDown button items
+### DropDown Button Items
 
-You can render the built-in dropDown Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `DropDown`. You can also customize the dropDown item through [RibbonDropDownSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettingsModel/), which provides options such as `iconCss`, `content`, `target` and more.
+To render a `DropDownButton`, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `DropDown`. Customize it using the [RibbonDropDownSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettingsModel/), which includes `items`, `iconCss`, `content`, and a `target` for the popup content.
 
 #### Target
 
-The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettingsModel/#target) property specifies the element selector to be displayed in the DropDownButton popup.
+The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettingsModel/#target) property specifies the element selector for the content to be displayed in the DropDownButton popup.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,9 +170,9 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonD
   
 {% previewsample "page.domainurl/samples/ribbon/DropdownTarget" %}
 
-#### Customize Dropdown button item
+#### Customize Dropdown Button Item
 
-You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeitemrender) event.
+Apply a custom CSS class to style dropdown items using the [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeitemrender) event.
 
 The following sample showcases how to customize a specific dropdown item.
 
@@ -194,9 +194,9 @@ The following sample showcases how to customize a specific dropdown item.
   
 {% previewsample "page.domainurl/samples/ribbon/DropDownCustomItem" %}
 
-#### Create dropdown popup on demand
+#### Create Dropdown Popup On-Demand
 
-You can handle the creation of popups, by using the [createPopupOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#createpopuponclick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
+Set the [createPopupOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#createpopuponclick) property to `true` to create the popup only when the dropdown is opened, optimizing performance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -213,9 +213,9 @@ You can handle the creation of popups, by using the [createPopupOnClick](https:/
   
 {% previewsample "page.domainurl/samples/ribbon/DropDownPopup" %}
 
-### Split button items
+### Split Button Items
 
-You can render the built-in splitButton Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `SplitButton`. You can also customize the splitButton item through [RibbonSplitButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettingsModel/), which provides options such as `iconCss`, `items`, `target` and more.
+To render a `SplitButton`, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `SplitButton`. Customize it with the [RibbonSplitButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettingsModel/), which provides options like `iconCss`, `items`, and `target`.
 
 #### Target
 
@@ -236,9 +236,9 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonS
   
 {% previewsample "page.domainurl/samples/ribbon/SplitButtonTarget" %}
 
-### Combobox items
+### ComboBox Items
 
-You can render the built-in comboBox Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `ComboBox`. You can also customize the comboBox item through [RibbonComboBoxSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettingsModel/), which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+To render a `ComboBox` item, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `ComboBox`. You can configure it using the [RibbonComboBoxSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettingsModel/), which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Filtering
 
@@ -352,7 +352,7 @@ You can use the [sortOrder](https://ej2.syncfusion.com/angular/documentation/api
 
 ### Colorpicker items
 
-You can render the built-in colorPicker Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `ColorPicker`. You can also customize the colorPicker item through [RibbonColorPickerSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettingsModel/), which provides options such as `value`, `columns`, `showButtons` and more.
+To render a `ColorPicker`, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `ColorPicker`. Customize it using the [RibbonColorPickerSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettingsModel/), which includes properties like `value`, `columns`, and `showButtons`.
 
 #### Value
 
@@ -373,9 +373,9 @@ You can use the [value](https://ej2.syncfusion.com/angular/documentation/api/rib
   
 {% previewsample "page.domainurl/samples/ribbon/ColorPickerItem" %}
 
-### Groupbutton items
+### GroupButton Items
 
-You can render the built-in groupbutton Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `GroupButton`. You can also customize the groupbutton item using the [RibbonGroupButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonSettingsModel/), which provides options such as `selection` and `items`.
+To render a `GroupButton`, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `GroupButton`. Configure its items and selection behavior using the [RibbonGroupButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonSettingsModel/).
 
 #### Items
 
@@ -523,10 +523,9 @@ In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dr
   
 {% previewsample "page.domainurl/samples/ribbon/SimplifiedModeGroupButton" %}
 
+## Custom Items
 
-## Custom items
-
-You can customize the ribbon items with non-built-in items or HTML content by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `Template`. This provides an option to customize the ribbon items with greater flexibility.
+To create custom Ribbon items, set the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `Template`. This allows you to render any HTML content or non-built-in components, offering maximum flexibility.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -546,32 +545,20 @@ You can customize the ribbon items with non-built-in items or HTML content by se
   
 {% previewsample "page.domainurl/samples/ribbon/Custom-Item" %}
 
-## Items display Mode
+## Item Display Options
 
-You can use the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property to display the items in the Ribbon layout. 
+Use the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property to control in which Ribbon layouts an item appears.
 
-<table>
-  <tr>
-    <td>`Auto`</td>
-    <td>The items are displayed in all layouts based on the ribbon's overflow state.</td>
-  </tr>
-  <tr>
-    <td>`Classic`</td>
-    <td>The items are displayed only in the classic layout group.</td>
-  </tr>
-  <tr>
-    <td>`Simplified`</td>
-    <td>The items are displayed only in the simplified layout group.</td>
-  </tr>
-  <tr>
-    <td>`Overflow`</td>
-    <td>The items are displayed only in the overflow popup.</td>
-  </tr>
-</table>
+| Option | Description |
+|------------|----------------------------------------------------------------------|
+| `Auto` | (Default) The item is displayed in all layouts. |
+| `Classic` | The item is displayed only in the classic layout. |
+| `Simplified` | The item is displayed only in the simplified layout. |
+| `Overflow` | The item is displayed only in the overflow popup. |
 
 ### Display items in Classic only
 
-To diplay the items only in the classic layout group, set the mode as `DisplayMode.Classic` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
+To display the items only in the classic layout group, set the mode as `DisplayMode.Classic` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
 
 ```javascript
 
@@ -609,7 +596,7 @@ export class AppComponent  {
 
 ### Display items in Simplified only
 
-To diplay the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
+To display the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
 
 ```javascript
 
@@ -647,7 +634,7 @@ export class AppComponent  {
 
 ### Display items in Overflow popup only
 
-To diplay the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
+To display the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#displayoptions) property.
 
 ```javascript
 
@@ -683,9 +670,9 @@ export class AppComponent  {
 
 ```
 
-## Enable or disable items
+## Enable or Disable Items
 
-You can use the [disabled](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#disabled) property to disable a Ribbon item. It prevents the user interaction when set to `true`. By default, the value is `false`.
+Use the [disabled](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#disabled) property to enable or disable a Ribbon item. When set to `true`, the item becomes non-interactive.
 
 ```javascript
 

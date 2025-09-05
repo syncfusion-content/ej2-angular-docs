@@ -5,3 +5,17 @@
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+/* For Success state */
+.e-float-input.e-input-group.e-success label.e-float-text,
+.e-float-input.e-input-group.e-success input:focus ~ label.e-float-text,
+.e-float-input.e-input-group.e-success input:valid ~ label.e-float-text {
+    color: #22b24b;
+}
+
+/* For Warning state */
+.e-float-input.e-input-group.e-warning label.e-float-text,
+.e-float-input.e-input-group.e-warning input:focus ~ label.e-float-text,
+.e-float-input.e-input-group.e-warning input:valid ~ label.e-float-text {
+    color: #ffca1c;
+}

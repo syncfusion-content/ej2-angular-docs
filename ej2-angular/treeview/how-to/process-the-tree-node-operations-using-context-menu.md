@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Process the tree node operations using context menu in Angular TreeView component | Syncfusion
+title: Manage tree node actions using context menu | Syncfusion
 description: Learn here all about Process the tree node operations using context menu in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: TreeView 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Process the tree node operations using context menu in Angular TreeView component
+# Perform tree node actions using context menu
 
-You can integrate the context menu with 'TreeView' component in order to perform the TreeView related operations like adding, removing, and renaming node.
+You can integrate the context menu with the TreeView component to perform essential TreeView operations such as adding, removing, and renaming nodes. This integration provides users with an intuitive right-click interface for managing tree structure and node content.
 
-The following example demonstrates how to use the 'select' event of the context menu to manipulate tree-view operations for the above-mentioned cases.
+The following example demonstrates how to use the context menu's `select` event to handle TreeView operations including node addition, deletion, and text editing. The implementation shows proper event handling and TreeView method usage for comprehensive node management.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

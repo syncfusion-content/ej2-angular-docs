@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Row template in Angular TreeGrid component
 
-The row template feature in Tree Grid allows you to customize the appearance and layout of rows in the tree grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
+The row template feature in TreeGrid allows customizing the appearance and layout of rows in the TreeGrid. This feature is useful when custom content, such as images, buttons, or other controls, needs to be displayed within the rows.
 
-To enable the row template feature, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
+To enable the row template feature, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
 
 In the following example, the first column displays Employee Information with Employee ID, the second column presents the Employee Photo, and the third column showcases employee details such as Name, Designation, etc.
 
@@ -89,11 +89,11 @@ export class AppComponent implements OnInit {
 
 ## Row template with formatting
 
-The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to customize the layout of rows in the tree grid. This is useful when you want to display images, buttons, or other custom content within the rows of a tree grid.
+The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows customizing the layout of rows in the TreeGrid. This is useful when images, buttons, or other custom content need to be displayed within the rows of a TreeGrid.
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to format the values displayed in each column. However, when using the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to format the values displayed in each column. However, when using the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
 
-To format the values within the row template, you can define a global function that handles the formatting logic. This function can be invoked inside the template to format the corresponding values.
+To format the values within the row template, a global function can be defined that handles the formatting logic. This function can be invoked inside the template to format the corresponding values.
 
 Here is an example of how to define a global formatting function for a date column and use it inside a `rowTemplate`:
 
@@ -181,15 +181,15 @@ export interface DateFormat extends Window {
   
 {% previewsample "page.domainurl/samples/treegrid/row-cs9" %}
 
->When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid, any formatting applied to columns using the `columns.format` property will not work inside the template.
+>When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, any formatting applied to columns using the `columns.format` property will not work inside the template.
 
-## Render syncfusion<sup style="font-size:70%">&reg;</sup> control in row template
+## Render Syncfusion<sup style="font-size:70%">&reg;</sup> control in row template
 
-The Tree Grid allows you to render custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the tree grid. This feature is helpful as it enables you to display interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the tree grid.
+The TreeGrid allows rendering custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the TreeGrid. This feature is helpful as it enables displaying interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the TreeGrid.
 
-To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
+To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
 
-Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> controls within a row template :
+Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> controls within a row template:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,7 +253,7 @@ export class AppComponent implements OnInit {
 
 ## Limitations
 
-Row template feature is not compatible with all the features which are available in the tree grid, and it has limited features support. The features that are incompatible with the row template feature are listed below.
+Row template feature is not compatible with all the features which are available in the TreeGrid, and it has limited features support. The features that are incompatible with the row template feature are listed below.
 
 * Filtering
 * Paging

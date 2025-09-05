@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize the icon for column menu in Angular Treegrid component | Syncfusion
-description: Learn here all about Customize the icon for column menu in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Customize the icon for column menu in Angular TreeGrid component | Syncfusion
+description: Learn how to customize the column menu icon in the Syncfusion Angular TreeGrid component of Essential JS 2 by overriding default styles with custom CSS.
 platform: ej2-angular
 control: Customize the icon for column menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the icon for column menu in Angular Treegrid component
+# Customize the icon for column menu in Angular TreeGrid component
 
-You can customize the column menu icon by overriding the default Tree Grid class **.e-icons.e-columnmenu** with a custom property **content** as mentioned below,
+The column menu icon in the TreeGrid component can be customized by overriding the default TreeGrid class **.e-icons.e-columnmenu** and setting a custom **content** property as shown below:
 
 ```css
     .e-treegrid .e-columnheader .e-icons.e-columnmenu::before {
@@ -18,7 +18,7 @@ You can customize the column menu icon by overriding the default Tree Grid class
     }
 ```
 
-In the below sample, Tree Grid is rendered with a customized column menu icon.
+In the following example, TreeGrid is rendered with a customized column menu icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,7 +29,7 @@ In the below sample, Tree Grid is rendered with a customized column menu icon.
 {% include code-snippet/treegrid/custom-column-menu-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/custom-column-menu-icon-cs1" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For additional details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn more about presenting and manipulating data.

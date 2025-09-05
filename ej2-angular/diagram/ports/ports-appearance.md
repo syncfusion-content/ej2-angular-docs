@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Ports appearance in Angular Diagram component | Syncfusion®
-description: Learn here all about Ports in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+description: Learn how to customize port appearance, visibility, shapes, and constraints in Syncfusion® Angular Diagram component for enhanced visual design.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Customize Port Appearance in Angular Diagram Component
 
-## Appearance
+## Overview
 
-The appearance of ports can be customized by using[`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokecolor),
-[`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokewidth), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#fill) and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#opacity) properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#height) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility) property allows you to define, when the port should be visible.
+Ports serve as connection points on diagram nodes where connectors can be attached. The appearance of ports can be customized using the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokecolor/), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokewidth/), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#fill/) and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#opacity/) properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#width/) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#height/) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility/) property allows you to define when the port should be visible.
 
-For more information about port visibility refer [`Port Visibility`](#port-visibility)
+For more information about port visibility, refer to the [Port Visibility](#port-visibility) section below.
 
 The following code illustrates how to change the appearance of port.
 
@@ -32,7 +32,7 @@ The following code illustrates how to change the appearance of port.
 
 ### Change appearance of port at runtime
 
-The appearance of port can be changed at runtime by customizing the style of port.The following code illustrates how to change the appearance of port at runtime.
+The appearance of port can be changed at runtime by customizing the style properties of the port. This is useful when you need to provide visual feedback based on user interactions or application state changes. The following code illustrates how to change the appearance of port at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,31 +48,32 @@ The appearance of port can be changed at runtime by customizing the style of por
 
 ## Port visibility
 
-The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portVisibility/)enum, This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
+The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portVisibility/) enum. This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
 
-| Property | Definition |
-|----|----|
-| Hover | Port is visible when mousehover the DiagramElement. |
-| Hidden | Port is not visible for the DiagramElement. |
-| Connect | The port becomes visible when you hover the connector thumb over the DiagramElement where the port resides. |
-| Visible | Port is always visible for the DiagramElement. |
+| Property | Definition | Use Case |
+|----|----|----|
+| Hover | Port is visible when mouse hovers over the DiagramElement. | Ideal for clean interfaces where ports appear only during interaction. |
+| Hidden | Port is not visible for the DiagramElement. | Used when ports should remain completely invisible to users. |
+| Connect | The port becomes visible when you hover a connector thumb over the DiagramElement where the port resides. | Best for guided connection scenarios where valid connection points are highlighted. |
+| Visible | Port is always visible for the DiagramElement. | Suitable when ports need to be constantly visible for easy identification. |
 
 ## Port shape 
 
-The shape of port can be changed by using its shape property. To explore the different types of port shapes, refer to [`Port Shapes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portShapes/). By default the port shape is `Square`.
+The shape of port can be changed by using its shape property. To explore the different types of port shapes, refer to [`Port Shapes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portShapes/). By default the port shape is `Square`. Different shapes help distinguish between different types of connections or data flow directions.
 
 ### Types of port shapes
 
-We have provided some basic built-in `PortShapes` for the port. Find the shapes as follows.
+The following basic built-in `PortShapes` are available for ports:
 
 * Circle
 * Custom
 * Square
 * X
 
-### Customize the port’s shape
+### Customize the port's shape
 
-Custom shape support has been provided for port. You can able to add the custom path data instead of build-in shapes. 
+Custom shape support has been provided for port. You can add custom path data instead of built-in shapes when you need specific visual indicators that match your application's design requirements or represent particular data types. 
+
 If you need to render a custom shape, then you can set shape as `Custom` and define path using [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointPortModel/#pathdata) property of port.
 
 The following code illustrates how to set custom shape to the port.
@@ -91,19 +92,19 @@ The following code illustrates how to set custom shape to the port.
 
 ## Constraints
 
-The constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/).
+The constraints property allows you to enable or disable certain behaviors of ports, providing fine-grained control over port functionality. For more information about port constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/).
 
-The PortConstraints may have multiple behaviors like listed below:
+The PortConstraints may have multiple behaviors as listed below:
 
-| Constraints | Usage |
-|----|----|
-| None |Disables all behaviors of Port. |
-| Draw |Enables or disables to draw a connector. |
-| InConnect |Enables or disables connecting to the incoming Connector.  |
-| OutConnect | Enables or disables connecting the outgoing Connector. |
-| ToolTip |Enables or disables the Tooltip  for the ports. |
-| Drag |Enables or disables dragging of port.  |
-| InheritTooltip | Enables or disables the Tooltip  for the ports. |
+| Constraints | Usage | Purpose |
+|----|----|----| 
+| None | Disables all behaviors of Port. | Complete restriction of port functionality. |
+| Draw | Enables or disables drawing a connector from the port. | Controls whether new connections can be initiated from this port. |
+| InConnect | Enables or disables connecting to the incoming Connector. | Restricts whether connectors can terminate at this port. |
+| OutConnect | Enables or disables connecting the outgoing Connector. | Controls whether connectors can originate from this port. |
+| ToolTip | Enables or disables the Tooltip for the ports. | Shows or hides informational tooltips when hovering over ports. |
+| Drag | Enables or disables dragging of port. | Allows or prevents repositioning of ports within the node. |
+| InheritTooltip | Enables or disables inheriting Tooltip from the parent node. | Uses the parent node's tooltip configuration for the port. |
 
 ## See also
 
@@ -112,4 +113,3 @@ The PortConstraints may have multiple behaviors like listed below:
 * [How to set the position of the port](./ports-positioning)
 
 * [How to create connector port](./ports-connector-port)
-

@@ -1,30 +1,34 @@
 ---
 layout: post
-title: Overview in Angular Diagram component | Syncfusion®
-description: Learn here all about Overview in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Overview Component in Angular Diagram | Syncfusion®
+description: Learn how to implement and use the Overview component in Syncfusion® Angular Diagram for navigation, zooming, and panning in large diagrams.
 platform: ej2-angular
 control: Overview 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview in Angular Diagram component
+# Overview Component in Angular Diagram Component
 
-The Overview control allows you to see a preview or an overall view of the entire content of a diagram. This helps you to grasp the overall picture of a large diagram and navigate, pan, or zoom to a specific position on the page.
+The Overview component provides a miniature preview of the entire diagram content, enabling efficient navigation and viewport management for large diagrams. This component displays a scaled-down version of the diagram with a highlighted rectangle representing the current viewport, allowing users to quickly navigate to specific areas without manual zooming and panning.
 
-## Usage scenario
+## When to Use Overview
 
-When working on a very large diagram, it can be challenging to know which part you are actually focusing on or to navigate from one section to another. One solution for navigation is to zoom out to view the entire diagram and locate your position. Then, you can zoom in on the specific area you need. However, this method is not ideal for frequent navigation.
+The Overview component is essential when working with:
 
-The Overview control addresses these issues by providing a preview, or overall view, of the entire diagram. A rectangle indicates the viewport of the diagram, making navigation easy by dragging this rectangle to the desired section.
+* Large diagrams that exceed the visible viewport
+* Complex flowcharts or organizational charts requiring frequent navigation
+* Multi-section diagrams where users need to jump between different areas
+* Applications where users need spatial awareness of their current position within the diagram
 
-## Create overview
 
-To create an overview, the [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#sourceid) property of the overview should be set with the corresponding diagram Id for the overall view.
+## Create Overview Component
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#height) properties of the overview allow you to define its size.
+To implement an overview, configure the [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#sourceid) property to reference the target diagram's identifier. This establishes the connection between the overview and the main diagram.
 
-The following code illustrates how to create an overview:
+Define the overview dimensions using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#height) properties to ensure optimal visibility and performance.
+
+The following code demonstrates basic overview implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,16 +42,18 @@ The following code illustrates how to create an overview:
   
 {% previewsample "page.domainurl/samples/diagram/overview/overview-cs2" %}
 
-### Overview interactions
+## Overview Interactions
 
-In the overview, the viewport of the diagram is highlighted with a red color rectangle. You can zoom and pan the diagram by interacting with this rectangle.
+The overview displays the current viewport as a red rectangle overlay. This rectangle serves as an interactive control for diagram navigation and zoom operations.
 
-You can interact with the overview as follows:
+### Available Interactions
 
-* Resize the rectangle: Zooms in/out of the diagram.
-* Drag the rectangle: Pans the diagram.
-* Click on a position: Navigates to the clicked region.
-* Select a specific region by clicking and dragging: Navigates to the specified region.
+* **Resize the rectangle**: Adjusts diagram zoom level proportionally
+* **Drag the rectangle**: Pans the diagram to follow rectangle movement  
+* **Click on a position**: Instantly navigates to the clicked location
+* **Click and drag selection**: Defines a specific region for navigation and zoom
+
+### Interactive Navigation Example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,6 +67,6 @@ You can interact with the overview as follows:
   
 {% previewsample "page.domainurl/samples/diagram/overview/overview-cs1" %}
 
-The following Gif image displays the interactions with overview.
+The following demonstration shows overview interaction capabilities:
 
 ![Overview-interaction](images/overview-interaction.gif)

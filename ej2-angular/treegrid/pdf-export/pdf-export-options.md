@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Pdf export options in Angular Treegrid component | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: PDF export options in Angular TreeGrid component | Syncfusion
+description: Learn about PDF export options in the Syncfusion Angular TreeGrid component, including exporting current page, selected records, hidden columns, custom fonts, and advanced settings.
 platform: ej2-angular
-control: Pdf export options 
+control: PDF export options 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export options in Angular Treegrid component
+# PDF export options in Angular TreeGrid component
 
 ## Export current page
 
-PDF export provides an option to export the current page into PDF. To export current page, define the `exportType` to `CurrentPage`.
+PDF export provides an option to export only the current page to a PDF document. To export the current page, set the `exportType` property to `CurrentPage` in the export properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,11 +26,11 @@ PDF export provides an option to export the current page into PDF. To export cur
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs4" %}
 
-## Export the selected records only
+## Export selected records only
 
-Export the selected records data by passing it to the [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pdfExportProperties/#datasource) Property in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event.
+You can export only the selected records in the TreeGrid by passing the selected data to the [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pdfExportProperties/#datasource) property in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event.
 
-In the following demo, get the selected records using the [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrecords) method and pass the selected data to the [`PdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfexport) property.
+In the following demo, the selected records are retrieved using the [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrecords) method and passed to the [`PdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfexport) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ In the following demo, get the selected records using the [`getSelectedRecords`]
 
 ## Export hidden columns
 
-PDF export provides an option to export hidden columns of the TreeGrid by defining the `includeHiddenColumn` as `true`.
+PDF export provides an option to include hidden columns in the exported PDF by setting the `includeHiddenColumn` property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,15 +60,15 @@ PDF export provides an option to export hidden columns of the TreeGrid by defini
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs6" %}
 
-## Show or hide columns on exported PDF
+## Show or hide columns in exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfExportComplete) events.
+You can show a hidden column or hide a visible column while exporting the TreeGrid using the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfExportComplete) events.
 
-In the `toolbarClick` event, based on `args.item.text` as `PDF Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
+In the `toolbarClick` event, based on `args.item.text` as `PDF Export`, set the `column.visible` property to `true` or `false` to show or hide columns for export.
 
-In the pdfExportComplete event, We have reversed the state back to the previous state.
+In the `pdfExportComplete` event, revert columns to their previous visibility states.
 
-In the below example, we have `Duration` as a hidden column in the treegrid. While exporting, we have changed `Duration` to visible column and `StartDate` as hidden column.
+In the example below, the `Duration` column is hidden in the TreeGrid. While exporting, the `Duration` column is made visible and the `StartDate` column is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,9 +82,9 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs7" %}
 
-## How to change page orientation
+## Change page orientation
 
-Page orientation can be changed Landscape(Default Portrait) for the exported document using the `exportProperties`.
+You can change the page orientation of the exported PDF to Landscape (the default is Portrait) using the `exportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,10 +98,9 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs8" %}
 
-## How to change page size
+## Change page size
 
-Page size can be customized for the exported document using the `exportProperties`.
-Supported page sizes are:
+The page size of the exported PDF document can be customized using the `exportProperties`. Supported page sizes include:
 
 * Letter
 * Note
@@ -143,13 +142,13 @@ Supported page sizes are:
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs9" %}
 
-## To customize PDF export
+## PDF export customization
 
-PDF export provides an option to customize mapping of treegrid to exported PDF document.
+PDF export provides options to customize how the TreeGrid is mapped to the exported PDF document.
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining `fileName` property in `PdfExportProperties`.
+You can specify the file name for the exported document by setting the `fileName` property in `PdfExportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -165,7 +164,7 @@ You can assign the file name for the exported document by defining `fileName` pr
 
 ### Default fonts for PDF exporting
 
-By default, treegrid uses `Helvetica` font in the exported document. You can change the default font by using `pdfExportProperties.theme` property. The available default fonts are,
+By default, the TreeGrid uses the `Helvetica` font in the exported PDF document. You can change the default font by using the `pdfExportProperties.theme` property. The available default fonts are:
 
 * Helvetica
 * TimesRoman
@@ -173,7 +172,7 @@ By default, treegrid uses `Helvetica` font in the exported document. You can cha
 * Symbol
 * ZapfDingbats
 
-The code example for changing default font,
+The code example below demonstrates how to change the default font:
 
 ```typescript
 
@@ -183,7 +182,7 @@ The code example for changing default font,
 
     let pdfExportProperties: PdfExportProperties = {
         theme: {
-            header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold),
+            header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold)},
             record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) }
         }
     };
@@ -192,9 +191,9 @@ The code example for changing default font,
 
 ### Add custom font for PDF exporting
 
-You can change the default font of TreeGrid header, content and caption cells in the exported document by using `pdfExportProperties.theme` property.
+You can set a custom font for TreeGrid header, content, and caption cells in the exported document using the `pdfExportProperties.theme` property.
 
-In the following example, we have used Advent Pro font to export the treegrid with Hungarian fonts.
+In the following example, the Advent Pro font is used to export the TreeGrid with Hungarian fonts.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,4 +207,4 @@ In the following example, we have used Advent Pro font to export the treegrid wi
   
 {% previewsample "page.domainurl/samples/treegrid/pdf-export-cs11" %}
 
-> `PdfTrueTypeFont` accepts base 64 format of the Custom Font.
+> `PdfTrueTypeFont` accepts the base64 format of the custom font.

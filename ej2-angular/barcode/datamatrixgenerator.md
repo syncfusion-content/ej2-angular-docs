@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Datamatrixgenerator in Angular Barcode component | Syncfusion®
-description: Learn here all about Datamatrixgenerator in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
+title: DataMatrix Generator in Angular Barcode component | Syncfusion®
+description: Learn here all about DataMatrix Generator in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Datamatrixgenerator 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Datamatrixgenerator in Angular Barcode component
+# DataMatrix Generator in Angular Barcode component
 
 ## Data Matrix
 
-DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read it easily with the help of a barcode reader and mobile phones.
+DataMatrix is a two-dimensional barcode that consists of a grid of dark and light squares forming a square or rectangular symbol. The data encoded in the barcode can be either numeric or alphanumeric characters. DataMatrix barcodes are widely used in printed media such as labels, letters, and packaging due to their high data density and error correction capabilities. These barcodes can be easily read using barcode scanners and mobile devices.
+
+DataMatrix barcodes are particularly suitable for applications requiring compact encoding of large amounts of data in small spaces, making them ideal for industries such as healthcare, manufacturing, and logistics.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +30,7 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 
 ## Customizing the Barcode color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by using the forecolor property.
+When barcodes are placed on colorful backgrounds or printed media with various design elements, customizing the barcode color becomes essential for maintaining readability and visual harmony. The [`foreColor`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#forecolor) property allows you to modify the barcode's appearance to match your design requirements while ensuring optimal contrast for scanning.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +46,7 @@ A page or printed media with barcode often appears colorful in the background an
 
 ## Customizing the Barcode dimension
 
-The dimension of the barcode can be changed using the height and width property of the barcodegenerator.
+The physical size of the barcode is crucial for ensuring proper scanning and fitting the barcode within available space constraints. The [`height`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#width) properties of the barcode generator allow you to adjust the barcode dimensions according to your specific layout requirements and scanning distance considerations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +62,7 @@ The dimension of the barcode can be changed using the height and width property 
 
 ## Customizing the text
 
-In barcode generators you can customize the barcode text by using the display text property .
+The display text feature allows you to show human-readable text alongside the barcode, making it easier for users to verify the encoded data without requiring a scanner. The [`displayText`](https://ej2.syncfusion.com/angular/documentation/api/barcode/barcodeGeneratorModel/#displaytext) property enables you to customize the visible text that appears below the DataMatrix barcode, which can be different from the actual encoded data if needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

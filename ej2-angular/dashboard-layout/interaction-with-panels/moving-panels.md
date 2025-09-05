@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Moving panels in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Moving panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Moving panels in Syncfusion Angular Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Moving panels 
+control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -18,9 +18,11 @@ movePanel(id, row, col)
 ```
 
 Where,
-* id - ID of the panel to be moved.
-* row - New row position for the panel.
-* col - New column position for the panel.
+| Parameter | Type | Description |
+|-----------|------|-------------|-------------|
+| `id`  | string | ID of the panel to be moved |
+| `row` | number | New row position for the panel |
+| `col` | number | New column position for the panel |
 
 Each time a panel's position is changed (either programmatically or through UI interaction), the Dashboard Layout's [change](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#change) event is triggered.
 

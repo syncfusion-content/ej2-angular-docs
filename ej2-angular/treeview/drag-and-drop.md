@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Drag and drop in Angular TreeView component
 
-The TreeView component enables drag and drop for any node when [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) to **true**. Nodes can be dragged and dropped at all levels of the same TreeView.
+The TreeView component enables drag and drop functionality for nodes when the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is set to **true**. This feature allows users to reorganize the hierarchical structure by dragging nodes and dropping them at different positions within the TreeView. Nodes can be dragged and dropped at all levels of the same TreeView, providing flexible data manipulation capabilities.
 
-The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. It represents the exact position where the node is to be dropped as sibling or child.
+The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. These visual indicators represent the exact position where the node will be dropped as either a sibling or child of the target node.
 
 The following table explains the usage of indicator icons.
 
 | Icons | Description |
 |------|-------------|
-| Plus icon | Indicates that the dragged node is to be added as child of target node. |
-| Minus or restrict icon | Indicates that the dragged node is not to be dropped at the hovered region. |
-| In between icon | Indicates that the dragged node is to be added as siblings of hovered region. |
+| Plus icon | Indicates that the dragged node will be added as a child of the target node. |
+| Minus or restrict icon | Indicates that the dragged node cannot be dropped at the hovered region. |
+| In between icon | Indicates that the dragged node will be added as a sibling of the hovered region. |
 
 * If you need to prevent dragging action for a particular node, the [`nodeDragStart`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstart) event can be used which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event can be used which is triggered when the drag is stopped.
 
@@ -49,7 +49,7 @@ To drag and drop more than one node, you should enable the [allowMultiSelection]
 
 To perform multi-selection, press and hold the **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes.
 
-In the following sample,  the `allowMultiSelection` property is  enabled along with the `allowDragAndDrop` property.
+In the following sample, the `allowMultiSelection` property is enabled along with the `allowDragAndDrop` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

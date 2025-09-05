@@ -1,37 +1,43 @@
 ---
 layout: post
 title: Getting started with Angular TextBox component | Syncfusion
-description:  Checkout and learn about Getting started with Angular TextBox component of Syncfusion Essential JS 2 and more details.
+description: Learn how to create and configure Angular TextBox component with floating labels, icons, and styling in your application.
 platform: ej2-angular
-control: Getting started 
+control: TextBox
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular TextBox component
 
-This section briefly explains about how to create a simple TextBox using Angular seed repository.
+The Angular TextBox component is an enhanced HTML input element that provides features like floating labels, input validation, icons, and customizable styling. This guide walks through creating a simple TextBox in an Angular application.
 
 To get started quickly with Angular TextBox component, you can check out this video:
 {% youtube "https://www.youtube.com/watch?v=v90dQ41gDcQ" %}
 
+## Prerequisites
+
+Before getting started, ensure you have:
+- Node.js installed (version 14 or later)
+- Basic knowledge of Angular and TypeScript
+- Angular CLI installed globally
+
 ## Dependencies
 
-The following list of dependencies are required to use the TextBox component in your application.
+The TextBox component requires the following dependencies in your application:
 
 ```js
 |-- @syncfusion/ej2-angular-inputs
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-inputs
         |-- @syncfusion/ej2-base
-
 ```
 
-## Setup angular environment
+## Set up Angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+Angular provides an efficient way to create projects using the [`Angular CLI`](https://github.com/angular/angular-cli) tool.
 
-Install the CLI application globally to your machine.
+Install the CLI application globally:
 
 ```bash
 npm install -g @angular/cli
@@ -39,86 +45,74 @@ npm install -g @angular/cli
 
 ## Create a new application
 
+Create a new Angular project:
+
 ```bash
 ng new syncfusion-angular-textbox
 ```
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
+To set up the project with SCSS styling, use the style flag:
 
 ```bash
 ng new syncfusion-angular-textbox --style=scss
 ```
 
-Navigate to the created project folder.
+Navigate to the project directory:
 
 ```bash
 cd syncfusion-angular-textbox
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> TextBox  Package
+## Install Syncfusion TextBox package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed as `@syncfusion` scoped packages on npm. The library provides two package formats to support different Angular versions.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+### For Angular 12 and above (Ivy distribution)
 
-### Ivy library distribution package
+Syncfusion Angular packages (version 20.2.36 and later) use Ivy distribution format, compatible with Angular's modern rendering engine.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38) package to the application.
+Install the TextBox package:
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### For Angular versions below 12 (ngcc compatibility)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38-ngcc) package to the application.
+For older Angular versions, use the legacy compilation package:
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+In your `package.json`, specify the ngcc version:
 
 ```bash
-@syncfusion/ej2-angular-inputs:"20.2.38-ngcc"
+@syncfusion/ej2-angular-inputs: "20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> **Note**: Installing without the ngcc tag on older Angular versions will install the Ivy package and display compatibility warnings.
 
-## Adding TextBox to the application
+## Add TextBox to the application
 
-* Modify the template as `ejs-textbox` tag in `app.component.ts` file to render the `TextBox` component.
+Integrate the TextBox component into your application by importing the module and using the component selector.
 
 ```javascript
-
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [        
-        TextBoxModule
-    ],
+    imports: [TextBoxModule],
     standalone: true,
     selector: 'app-root',
     template: `<ejs-textbox placeholder="Enter Name"></ejs-textbox>`
 })
-
 export class AppComponent { }
-
 ```
 
-## Adding CSS reference
+## Add CSS references
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+Import the required CSS files in your `src/styles.css` file:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -126,15 +120,18 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 ```
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
+> **Tip**: Use the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) to create optimized, combined CSS and JavaScript files for your specific component requirements.
 
-## Adding icons to the TextBox
+## Add icons to TextBox
 
-You can create a TextBox with an icon by using the [addIcon](https://ej2.syncfusion.com/react/documentation/api/textbox/#addicon) method within the [created](https://ej2.syncfusion.com/react/documentation/api/textbox/#created) event. For detailed information, refer to the [Groups](./groups/) section.
+Enhance the TextBox with icons using the [`addIcon`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method within the [`created`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#created) event:
+
+| **Parameter** | **Type**           | **Description**                                                                 |
+|--------------|--------------------|---------------------------------------------------------------------------------|
+| position     | string             | Specifies the icon placement. Possible values: append, prepend.                |
+| icons        | string or string[] | CSS classes for the icon(s) to be added. These are applied to a span element that acts as an icon or button. |
 
 ```javascript
-
 import { Component, ViewChild } from '@angular/core';
 import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
@@ -142,46 +139,55 @@ import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs'
     imports: [TextBoxModule],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-textbox #textbox placeholder = "Enter Date" (created)="onCreate($event)"></ejs-textbox>`
+    template: `<ejs-textbox #textbox placeholder="Enter Date" (created)="onCreate($event)"></ejs-textbox>`
 })
-
 export class AppComponent {
     @ViewChild('textbox')
-    public textboxObj: TextBoxComponent;
+    public textboxObj!: TextBoxComponent;
 
     public onCreate(args: any) {
-        (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');
+        (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');
     }
 }
-
 ```
 
-## Running the application
-
-After completing the configuration required to render a basic TextBox, run the following command to display the output in your default browser.
-
+```css
+.e-input-group-icon.e-input-popup-date::before {
+    content: "";
+}
 ```
+
+## Run the application
+
+Start the development server to view your TextBox component:
+
+```bash
 ng serve
 ```
 
-The following example illustrates the output in your browser.
+The application will open in your default browser, displaying the TextBox component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/icon-support-cs1/src/app.component.ts %}
+{% include code-snippet/textbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/icon-support-cs1/src/main.ts %}
+{% include code-snippet/textbox/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/textbox/icon-support-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs1" %}
 
 ## Floating label
 
-The floating label TextBox floats the label above the TextBox after focusing, or filled with value in the TextBox.
-You can create the floating label TextBox by using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/#floatlabeltype) API.
+The floating label feature displays the label above the TextBox when focused or when the input contains a value. Configure floating labels using the [FloatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/#floatlabeltype) property:
+
+**Available FloatLabelType values:**
+
+* **Never** - The placeholder text remains static and does not float above the TextBox
+* **Always** - The placeholder text permanently floats above the TextBox regardless of focus or input state
+* **Auto** - The placeholder text dynamically floats above the TextBox when the field receives focus or contains a value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,7 +201,10 @@ You can create the floating label TextBox by using the [floatLabelType](https://
   
 {% previewsample "page.domainurl/samples/textbox/textbox-component-cs1" %}
 
-## See Also
+## Troubleshooting
 
-* [How to render TextBox programmatically](./how-to/add-textbox-programmatically)
-* [How to add floating label to TextBox programmatically](./how-to/add-floating-label-to-textbox-programmatically)
+**Package installation issues**: Ensure you're using the correct package version for your Angular version (Ivy for Angular 12+ or ngcc for earlier versions).
+
+**Styling not applied**: Verify that CSS imports are correctly added to `src/styles.css` and the paths match your node_modules structure.
+
+**Component not rendering**: Check that the TextBoxModule is properly imported in your component or module.

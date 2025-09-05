@@ -3,7 +3,7 @@ layout: post
 title: Header content in Angular Card component | Syncfusion
 description: Learn here all about Header content in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Header content 
+control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,14 +12,14 @@ domainurl: ##DomainURL##
 
 ## Header
 
-The Card can be created with header title, sub title and images. For adding header you need to create `div` element with the class `e-card-header` added.
+The Card component can be created with header title, subtitle, and images. To add a header, create a `div` element with the class `e-card-header`.
 
-Card provides below elements and corresponding class definitions to include header.
+The Card provides the following elements and corresponding class definitions to include header content:
 
 Elements   | Description
 ------------ | -------------
-Caption | It is the wrapper element to include title and sub-title.
-Image | It supports to include header images with the specified dimensions.
+Caption | The wrapper element that includes title and subtitle content.
+Image | Supports header images with specified dimensions and positioning.
 
 Class   | Description
 ------------ | -------------
@@ -29,19 +29,19 @@ Class   | Description
 `e-card-header-image` | To include heading image within the header.
 `e-card-corner` | To add rounded corner for the image.
 
-### Title and Subtitle
+### Adding Title and Subtitle
 
-For adding header to the Card , you need to create wrapper `div` element with `e-card-header-caption` class.
+To add a header to the Card component, create a wrapper `div` element with the `e-card-header-caption` class.
 
-* Place the `div` element with `e-card-header-title` class inside the header caption for adding main title.
+* Place a `div` element with the `e-card-header-title` class inside the header caption for the main title.
 
-* Place the div element with `e-card-sub-title` class inside the header caption element for adding sub-title.
+* Place a `div` element with the `e-card-sub-title` class inside the header caption element for the subtitle.
 
-### Image
+### Header Image
 
-Card header has an option for adding images in the header. It is aligned with either before or after the header based on the HTML element positioned in the header structure.
+The Card header provides an option for adding images within the header section. Images are positioned either before or after the header caption based on the HTML element's position in the header structure.
 
-* The header image can be added by creating a `div` element with `e-card-header-image` class which can be placed before or after the header caption wrapper element.
+* Add a header image by creating a `div` element with the `e-card-header-image` class, which can be placed before or after the header caption wrapper element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,10 +57,10 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 ## Content
 
-Content in Card holds texts, images, links and all possible HTML elements. Its adaptable within the Card root element.
+The content section in Card components holds text, images, links, and all possible HTML elements. Content is adaptable within the Card root element and provides flexibility for various content types.
 
 * Create a `div` element with the class `e-card-content`.
-* Place content `div` element in the Card root element or within any Card inner elements.
+* Place the content `div` element within the Card root element or inside any Card inner elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

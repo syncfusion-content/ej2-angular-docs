@@ -10,7 +10,15 @@ domainurl: ##DomainURL##
 
 # Validation in Angular TextBox component
 
-The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property.
+The Angular TextBox component provides visual feedback for form validation through three distinct validation states: `error`, `warning`, and `success`. These visual states help users understand the validation status of their input and improve the overall form experience.
+
+## Validation States
+
+The TextBox component supports visual validation states that can be applied by adding corresponding CSS classes to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property:
+
+- **Error state** (`.e-error`): Indicates invalid input that requires correction
+- **Warning state** (`.e-warning`): Suggests potential issues or recommendations
+- **Success state** (`.e-success`): Confirms valid input
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,9 +32,9 @@ The TextBox supports three types of validation styles namely `error`, `warning`,
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs11" %}
 
-## Adding mandatory asterisk to placeholder and float label
+## Adding Mandatory Asterisk to Labels
 
-You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-float-input.e-control-wrapper .e-float-text::after</b> class.
+For required fields, add a visual asterisk indicator to placeholder text and float labels using CSS. This provides clear visual cues about mandatory form fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,3 +47,5 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/textbox/asterisk-cs1" %}
+
+The asterisk styling uses the CSS selector `.e-float-input.e-control-wrapper .e-float-text::after` to append the mandatory indicator to float labels automatically.

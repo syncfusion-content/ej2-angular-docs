@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech recognition in ##Platform_Name## SpeechToText component
+# Speech recognition in ##Platform_Name## SpeechToText Component
 
-## Retrieving transcripts
+## Retrieving Transcripts
 
-You can use the [transcript](../api/speech-to-text/#transcript) property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
+The [transcript](../api/speech-to-text/#transcript) property allows you to retrieve the transcribed text generated from the spoken input.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,9 +28,9 @@ You can use the [transcript](../api/speech-to-text/#transcript) property to retr
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/transcript/index" %}
 
-## Setting language
+## Setting Language
 
-You can use the [lang](../api/speech-to-text/#lang) property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
+The [lang](../api/speech-to-text/#lang) property specifies the language for speech recognition, ensuring the engine correctly interprets spoken words for a given locale (e.g., `en-US` for American English or `fr-FR` for French).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,9 +46,9 @@ You can use the [lang](../api/speech-to-text/#lang) property to specify the lang
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/language/index" %}
 
-## Allowing interim results
+## Allowing Interim Results
 
-You can use the [allowInterimResults](../api/speech-to-text/#allowInterimResults) property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
+The [allowInterimResults](../api/speech-to-text/#allowInterimResults) property controls whether interim (real-time) or final speech recognition results are provided. When `true`, results are displayed as the user speaks; otherwise, only the final transcript is shown. This property is `true` by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,23 +64,23 @@ You can use the [allowInterimResults](../api/speech-to-text/#allowInterimResults
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/interimResults/index" %}
 
-## Managing listening state
+## Managing Listening State
 
-You can use the [listeningState](../api/speech-to-text/#listeningState) property to manage the listening state of the component. The possible values are [Inactive](../api/speech-to-text/speechToTextState/) , [Listening](../api/speech-to-text/speechToTextState/) and [Stopped](../api/speech-to-text/speechToTextState/). By default, the value is `Inactive`.
+The [listeningState](../api/speech-to-text/#listeningState) property manages and indicates the component's current status. It can be `Inactive` (idle), `Listening` (actively capturing audio), or `Stopped` (recognition complete). The default state is `Inactive`.
 
 ### Inactive
 
-The component is in idle state with no active speech recognition.
+The component is in an idle state with no active speech recognition.
 
 ### Listening
 
-It is actively listening which captures and transcribes speech with a stop icon and blinking animation.
+The component is actively listening, capturing, and transcribing speech, indicated by a stop icon and blinking animation.
 
 ### Stopped
 
-Denotes the speech recognition has ended, and no further speech is being processed.
+Denotes that speech recognition has ended, and no further speech is being processed.
 
-Below sample demonstrates the usage of [listeningState](../api/speech-to-text/#listeningState) property.
+The following sample demonstrates the usage of the [listeningState](../api/speech-to-text/#listeningState) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,9 +96,9 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text/#l
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/listeningState/index" %}
 
-## Show or hide tooltip
+## Show or Hide Tooltip
 
-You can use the [showTooltip](../api/speech-to-text/#showTooltip) property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
+The [showTooltip](../api/speech-to-text/#showTooltip) property determines whether to display a tooltip when hovering over the SpeechToText button. It is enabled by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,9 +114,9 @@ You can use the [showTooltip](../api/speech-to-text/#showTooltip) property to sp
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/showTooltip/index" %}
 
-## Setting disabled
+## Setting Disabled
 
-You can use the [disabled](../api/speech-to-/#disabled) property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
+The [disabled](../api/speech-to-text/#disabled) property, when set to `true`, disables the SpeechToText component and prevents user interaction. By default, it is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,11 +132,11 @@ You can use the [disabled](../api/speech-to-/#disabled) property to disable the 
 
 {% previewsample "page.domainurl/samples/speech-to-text/speechRecognition/disabled/index" %}
 
-## Setting html attributes
+## Setting HTML Attributes
 
 You can use the [htmlAttributes](../api/speech-to-text/#htmlAttributes) property to assign custom attributes to the SpeechToText component for the button element.
 
-## Error handling
+## Error Handling
 
 The SpeechToText component handles various errors that may occur during speech recognition. The following table lists the possible errors and their causes:
 
@@ -151,9 +151,9 @@ The SpeechToText component handles various errors that may occur during speech r
 | `unsupported-browser`  | The browser being used does not support the SpeechRecognition API.                           |
 | `default`              | An unidentified error occurred during the speech recognition process.                        |
 
-## Browser support
+## Browser Support
 
-The SpeechToText component relies on the [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) for processing the speech input. Ensure that the browser supports this API before implementation.
+The SpeechToText component relies on the [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) for processing speech input. Ensure that the browser supports this API before implementation.
 
 |    Browser    |    Supported versions    |
 |--------------|---------------|

@@ -10,19 +10,21 @@ domainurl: ##DomainURL##
 
 # Check box in Angular TreeView component
 
-The TreeView component allows you to check more than one node without affecting the UI's appearance. This can be achieved by enabling the [showCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property. When this property is enabled, checkbox appears before each TreeView node text.
+The TreeView component allows you to check multiple nodes without affecting the UI's appearance by enabling the [showCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text, providing users with an intuitive selection mechanism.
 
-* If one of the child nodes is not in checked state, then the parent node will be in an intermediate state
+The checkbox functionality follows a hierarchical relationship pattern:
 
-* If all the child nodes are in checked state, then the parent node's state will also be checked.
+* When one or more child nodes remain unchecked, the parent node displays an intermediate state (typically shown as a partially filled or indeterminate checkbox)
 
-* If a parent node is checked, then all the child node's state will also be checked.
+* When all child nodes are checked, the parent node automatically transitions to a fully checked state
 
-By default, the checkbox state of parent and child nodes are dependent on each other. If you need the checked state of parent and child nodes to be independent, you can achieve it using the [`autoCheck`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#autocheck) property.
+* When a parent node is checked, all its child nodes automatically become checked as well
 
-Using the [`checkedNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#checkednodes) property, you can set the nodes that need to be checked or get the ID of nodes that are currently checked in the TreeView component.
+By default, the checkbox state of parent and child nodes maintain dependency on each other. To make the checked state of parent and child nodes independent, disable the [`autoCheck`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#autocheck) property. When `autoCheck` is set to false, checking or unchecking parent nodes will not affect their children, and vice versa.
 
-If you need to prevent the node check action for a particular node, the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event can be used which is triggered before the TreeView node is checked/unchecked. The [`nodeChecked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecked) event will be triggered when the TreeView node is checked/unchecked successfully.
+The [`checkedNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#checkednodes) property allows you to programmatically set nodes that should be checked during initialization or retrieve the IDs of currently checked nodes in the TreeView component.
+
+For event-driven checkbox control, use the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event to prevent node check actions for specific nodes. This event triggers before a TreeView node is checked or unchecked, allowing for custom validation. The [`nodeChecked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecked) event fires after a TreeView node has been successfully checked or unchecked.
 
 In the following example, the `showCheckBox` property is enabled.
 
@@ -42,12 +44,11 @@ In the following example, the `showCheckBox` property is enabled.
   
 {% previewsample "page.domainurl/samples/tree-view/getting-started-cs1" %}
 
-## Checked nodes
+## Initial and dynamic checkbox selection
 
-You can get or set the checked nodes in TreeView at initial rendering and dynamically by using the [checkedNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#checkednodes) property. It returns the checked nodes' IDs as an array.
+The [checkedNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#checkednodes) property enables you to specify which nodes should be checked during initial rendering or to dynamically manage checked nodes programmatically. This property returns an array containing the IDs of all currently checked nodes.
 
-In the following example, the **New South Wales** and **Western Australia** nodes are checked at initial rendering.
-If any more nodes are checked, the checked nodes' IDs will be displayed in alert.
+In the following example, the **New South Wales** and **Western Australia** nodes are pre-checked during initial rendering. When additional nodes are checked through user interaction, the system displays an alert showing all currently checked node IDs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

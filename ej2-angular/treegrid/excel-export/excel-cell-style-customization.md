@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Excel cell style customization in Angular Treegrid component | Syncfusion
-description: Learn here all about Excel cell style customization in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Excel cell style customization in Angular TreeGrid component | Syncfusion
+description: Learn how to customize Excel cell styles in the Syncfusion Angular TreeGrid component of Essential JS 2, including conditional formatting and theming options.
 platform: ej2-angular
 control: Excel cell style customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel cell style customization in Angular Treegrid component
+# Excel cell style customization in Angular TreeGrid component
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported Excel document based on the column cell value.
+Cells in the exported Excel file from the TreeGrid component can be customized or formatted using the [`excelQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelQueryCellInfo) event. This event allows formatting of TreeGrid cells in the exported Excel document based on the corresponding column cell value.
 
-In the below sample, we have set the background color for `Duration` column in the exported excel by `args.cell` and `backgroundColor` property.
+In the example below, the background color is set for the `Duration` column in the exported Excel file by using `args.cell` and the `backgroundColor` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,14 +25,14 @@ In the below sample, we have set the background color for `Duration` column in t
 {% include code-snippet/treegrid/excel-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs2" %}
 
 ## Theme
 
-The excel export provides an option to include theme for exported excel document.
+Excel export in TreeGrid provides an option to apply a theme to the exported Excel document.
 
-To apply theme in exported Excel, define the `theme` in `exportProperties` .
+To apply a theme in the exported Excel file, define the `theme` property in the `exportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,7 +43,7 @@ To apply theme in exported Excel, define the `theme` in `exportProperties` .
 {% include code-snippet/treegrid/excel-export-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs3" %}
 
->By default, material theme is applied to exported excel document.
+> By default, the material theme is applied to the exported Excel document.

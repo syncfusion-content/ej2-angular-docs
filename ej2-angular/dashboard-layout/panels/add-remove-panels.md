@@ -3,17 +3,24 @@ layout: post
 title: Add remove panels in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Add remove panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Add remove panels 
+control: Dashboard Layout
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Add remove panels in Angular Dashboard layout component
+# Adding and Removing Panels in Angular Dashboard Layout Component
 
 In real-time scenarios, the data presented within the dashboard often needs to be updated frequently, which includes dynamically adding or removing data within the dashboard. This can be easily achieved by using the [`addPanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#addpanel) and [`removePanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#removepanel) public methods of the component.
 
-## Add or remove panels dynamically
+## Adding and Removing Panels Dynamically
 
-Panels can be added dynamically by using the [`addPanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#addpanel) public method by passing the [`panels`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#panels) property as parameter. Similarly, panels can be removed dynamically using the[`removePanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#removepanel) public method by passing the `panel id` value as a parameter.
+### Adding Panels
+Panels can be added dynamically by using the [`addPanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#addpanel) public method by passing the [`panels`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#panels) property as parameter. 
+
+### Removing Panels
+
+Panels can be removed dynamically using the[`removePanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#removepanel) public method by passing the `panel id` value as a parameter.
+
+### Removing All Panels
 
 It is also possible to remove all the panels in a Dashboard Layout by calling the [removeAll](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#removeall) method.
 

@@ -30,7 +30,8 @@ export class AppComponent {
     };
     public blocksData: BlockModel[] = [
         {
-            type: 'Heading1',
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
                     type: ContentType.Text,
@@ -56,7 +57,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'bug'
+                    props: { labelId: 'bug'}
                 },
                 {
                     type: ContentType.Text,
@@ -64,7 +65,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'high'
+                    props: { labelId: 'high'}
                 }
             ]
         },
@@ -77,7 +78,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'task'
+                    props: { labelId: 'task'}
                 },
                 {
                     type: ContentType.Text,
@@ -85,7 +86,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'medium'
+                    props: { lableId: 'medium'}
                 }
             ]
         },
@@ -98,7 +99,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'feature'
+                    props: { labelId: 'feature'}
                 },
                 {
                     type: ContentType.Text,
@@ -106,7 +107,7 @@ export class AppComponent {
                 },
                 {
                     type: ContentType.Label,
-                    id: 'critical'
+                    props: { labelId: 'critical'}
                 }
             ]
         }

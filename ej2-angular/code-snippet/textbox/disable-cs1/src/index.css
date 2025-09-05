@@ -15,10 +15,16 @@
   margin: 30px auto;
   width: 30%;
 }
-textarea.e-input,
-.e-float-input textarea,
-.e-float-input.e-control-wrapper textarea,
-.e-input-group textarea,
-.e-input-group.e-control-wrapper textarea{
-  resize: none;
+
+textarea.e-input, 
+.e-input-group textarea, 
+.e-input-group textarea.e-input, 
+.e-input-group.e-input-focus textarea, 
+.e-input-group.e-input-focus textarea.e-input, 
+.e-input-group.e-control-wrapper textarea, 
+.e-input-group.e-control-wrapper.e-input-focus textarea, 
+.e-input-group.e-control-wrapper textarea.e-input, 
+.e-input-group.e-control-wrapper.e-input-focus textarea.e-input, 
+.e-float-input textarea, .e-float-input.e-control-wrapper textarea {
+    resize: none;
 }

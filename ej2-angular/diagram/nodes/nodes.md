@@ -8,23 +8,28 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nodes in Angular Diagram component
+# Nodes in Angular Diagram Component
 
-Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
+Nodes are graphical objects that visually represent entities, processes, data flow, or any business logic within diagrams. They serve as the fundamental building blocks for creating flowcharts, organizational charts, network diagrams, and other visual representations. Each node can be customized with different shapes, sizes, colors, and interactive behaviors to suit specific diagram requirements.
 
 ![Node](../images/node.png)
 
 <!-- markdownlint-disable MD033 -->
 
-## Create node
+## Node fundamentals
 
-A node can be created and added to the diagram either programmatically or interactively. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#id) property of a node is used to define its unique identifier and can later be used to find the node at runtime for customization. Nodes are stacked on the diagram area from bottom to top in the order they are added.
+Before creating nodes, understanding their core properties helps in effective diagram development:
 
-N> When setting a Node's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+- **Position**: Defined by `offsetX` and `offsetY` properties for precise placement
+- **Size**: Controlled through `width` and `height` properties
+- **Identification**: Each node requires a unique `id` for runtime operations
+- **Stacking**: Nodes are layered from bottom to top based on addition order
 
-## Add node through nodes collection
+## Creating nodes
 
-To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#node) object and add that to [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/) collection of the [`diagram model`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramModel/). The following code example illustrates how to add a node to the diagram.
+### Add nodes through nodes collection
+
+To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#node) object and add it to the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/) collection of the diagram model. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#id) property serves as the unique identifier for runtime operations and customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,65 +43,11 @@ To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documen
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs1" %}
 
->Note: Node id should not begin with numbers(should begin with a letter).Node Id should be unique for all the shapes and connectors.
+N> Node ID must begin with a letter, remain unique across all shapes and connectors, and avoid whitespace or special characters.
 
-## Add/Remove node at runtime
+### Create nodes from data source
 
-Nodes can be added at runtime by using public method, [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#add) and can be removed at runtime by using public method, [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#remove). On adding/removing node at runtime, the nodes collection is changed and the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event will trigger.
-
-* The node’s ID property is used to define the name of the node and its further used to find the node at runtime and do any customization.
-
-The following code illustrates how to add a node.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/run-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/run-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/diagram/nodes/run-cs1" %}
-
-## Add collection of nodes at runtime
-
-* The collection of nodes can be dynamically added using [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event will be triggered.
-
-The following code illustrates how to add nodes at runtime.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/nodecollection-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/nodecollection-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/nodes/nodecollection-cs1" %}
-
-## Add node from palette
-
-Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/diagram/symbol-palette).
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/node-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/node-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/nodes/node-cs2" %}
-
-## Create node through data source
-
-Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getnodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding).
+Nodes can be generated automatically using the dataSource property. Default properties for these nodes are retrieved from [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getnodedefaults) settings. For detailed information about data binding, refer to [DataBinding](./data-binding).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,9 +61,25 @@ Nodes can be generated automatically with the information provided through dataS
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs3" %}
 
-## Draw nodes
+### Add nodes from symbol palette
 
-To draw a shape, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property and you need to set the `node` object by using the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property. The following code example illustrates how to draw a rectangle at runtime.
+Nodes can be predefined in a symbol palette and dragged into the diagram as needed. This approach provides users with a library of reusable components. For comprehensive guidance on symbol palette integration, refer to [Symbol Palette](https://ej2.syncfusion.com/angular/documentation/diagram/symbol-palette).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/nodes/node-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/nodes/node-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/nodes/node-cs2" %}
+
+### Draw nodes interactively
+
+To enable interactive node drawing, activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property and configure the node template using the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,9 +93,43 @@ To draw a shape, you have to activate the drawing tool by setting `DrawOnce` or 
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs4" %}
 
-## Update node at runtime
+## Runtime node operations
 
-You can modify any node properties at runtime, and the changes will be instantly reflected. For example, here you can change the size and color of the node.
+### Add and remove individual nodes
+
+Nodes can be dynamically added using the [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#add) method and removed using the [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#remove) method. Both operations trigger the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event, allowing for custom handling of diagram modifications.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/nodes/run-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/nodes/run-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/diagram/nodes/run-cs1" %}
+
+### Add multiple nodes simultaneously
+
+Collections of nodes can be efficiently added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method. This approach is optimal for bulk operations and triggers the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event for each added element.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/nodes/nodecollection-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/nodes/nodecollection-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/nodes/nodecollection-cs1" %}
+
+### Update node properties
+
+Node properties can be modified at runtime with immediate visual updates. Changes take effect instantly, allowing for dynamic diagram manipulation based on user interactions or data updates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,11 +143,11 @@ You can modify any node properties at runtime, and the changes will be instantly
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs5" %}
 
-N> Once the property is updated, you should call the `dataBind` to reflect the changes instantly.
+N> Call the `dataBind` method after property updates to ensure immediate reflection of changes.
 
-## Clone node at runtime
+### Clone nodes
 
-Cloning a node creates a new node instance with identical properties and attributes. You can clone a node using the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#copy) and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) public methods of the diagram model.
+Node cloning creates new instances with identical properties and attributes. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#copy) and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) methods to duplicate existing nodes programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,9 +161,11 @@ Cloning a node creates a new node instance with identical properties and attribu
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs6" %}
 
-## Add nodes from tree view
+## Advanced node integration
 
-By customizing the [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragenter) functionality, we can allow elements from other components, such as the tree view, to be converted into nodes based on the data of the dragged element.
+### Import nodes from external components
+
+Custom [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragenter) functionality enables conversion of elements from other components, such as tree views, into diagram nodes based on the dragged element's data properties.
 
 ## See Also
 

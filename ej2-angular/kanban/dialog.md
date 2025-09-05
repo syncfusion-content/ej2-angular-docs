@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Dialog in Angular Kanban component | Syncfusion
-description: Learn here all about Dialog in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Dialog Editing in Angular Kanban Component | Syncfusion
+description: Learn how to use the dialog module in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dialog in Angular Kanban component
+# Dialog in Angular Kanban Component
 
-The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
+The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
 
 * Built-in dialog module
 * Custom Fields
@@ -18,21 +18,23 @@ The Kanban provides built-in support to add, edit and delete a card using dialog
 
 ## Default Dialog
 
-When double-click on the cards, the dialog is opened with below fields to edit a card. This dialog contains `Delete`, `Save` and `Cancel` buttons.
+Double-clicking a card opens the dialog with fields mapped from `cardSettings` and `swimlaneSettings` for editing. The dialog includes `Save`, `Delete`, and `Cancel` buttons:
 
-* To edit a card, modify the card details and click the `Save` button.
-* To delete a card, click `Delete` button.
-* Click on the `Cancel` button to cancel the editing action.
+- **Save**: Updates the card with modified details.
+- **Delete**: Removes the selected card.
+- **Cancel**: Discards changes.
 
 The dialog displays with the following fields which mapped to dialog fields by default.
 
 Key | Type | Text
 -----|-----|----
-cardSettings.headerField | Input | ID
+`cardSettings.headerField` | Input | ID
 keyField | DropDown | -
-cardSettings.contentField | TextArea | -
-cardSettings.priority(If applicable) | Numeric | -
-swimlaneSettings.keyField(If applicable) | DropDown | -
+`cardSettings.contentField` | TextArea | -
+`cardSettings.priority` (If applicable) | Numeric | -
+`swimlaneSettings.keyField` (If applicable) | DropDown | -
+
+The following sample demonstrates the default dialog for card editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +50,7 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 
 ## Custom Fields
 
-You can change the default fields of dialog using `fields` property inside the `dialogSettings` property. The `key` property used to map the dataSource value and rendered the corresponding component based on specified `type` property.
-
-The following types are available in dialog fields.
+Customize dialog fields using the `fields` property in `dialogSettings`. The `key` property maps to the `dataSource` value, and the `type` property specifies the component type. Available types include:
 
 * String
 * Numeric
@@ -60,6 +60,8 @@ The following types are available in dialog fields.
 * Input
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
+
+The following sample demonstrates custom dialog fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,7 +77,7 @@ The following types are available in dialog fields.
 
 ### Custom Fields label
 
-By default, the fields `key` mapping value is considered as a `label` and you can change this label by using `text` property.
+By default, the fields `key` mapping value is considered as a `label` and you can change this label by using `text` property. The following sample shows custom labels for dialog fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,7 +93,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 
 ### Fields Validation
 
-The dialog fields can be validated while click on the `Save` button. This can be achieved by using `validationRules` property.
+The dialog fields can be validated while click on the `Save` button. This can be achieved by using `validationRules` property. The following sample demonstrates field validation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +125,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 
 ## Prevent Dialog
 
-The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in `dialogOpen` event.
+Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the `dialogOpen` event. The following sample demonstrates preventing dialog opening.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -191,7 +193,7 @@ export class AppComponent {
 
 ```
 
-The server-side controller code to handle the CRUD operations are as follows.
+The server-side controller code to handle CRUD operations is as follows.
 
 ```typescript
 

@@ -1,96 +1,90 @@
 ---
 layout: post
-title: Getting started with Angular Dashboard layout component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Dashboard layout component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Dashboard Layout component | Syncfusion
+description: Learn how to create and configure the Angular Dashboard Layout component with step-by-step setup, installation, and implementation examples.
 platform: ej2-angular
-control: Getting started 
+control: Dashboard Layout
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Getting started with Angular Dashboard Layout component
 
-The following section explains the steps required to create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dashboard Layout component.
-The Dashboard Layout is a grid-structured Layout component that helps create static and dynamic Dashboard Layouts with panels. It is also referred as Angular Dashboard Layout Template.
+This section explains the steps required to create the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dashboard Layout component and configure its basic functionality. The Dashboard Layout is a grid-structured layout component that helps create static and dynamic dashboard layouts with panels.
 
-To get start quickly with Angular Dashboard Layout using CLI and Schematics, you can check on this video:
+To get started quickly with Angular Dashboard Layout using CLI and Schematics, you can check this video:
 {% youtube "https://www.youtube.com/watch?v=n4pActgI7uk" %} 
-
-## Getting Started with Angular CLI
-
-The following section explains the steps required to create and configure a basic Angular CLI application.
 
 ## Prerequisites
 
-To get started with the **Dashboard Layout** component, ensure compatible versions of Angular and TypeScript.
+Before getting started with the **Dashboard Layout** component, ensure you have compatible versions of Angular and TypeScript:
 
 * Angular : `6+`
 * Typescript : `2.6+`
 
-## Setting up angular project
+## Setting up Angular project
 
 Angular provides the easiest way to set up Angular CLI projects using the Angular CLI tool.
 
-Install the CLI application globally to your machine by using following command.
+Install the CLI application globally to your machine using the following command:
 
 ```sh
 npm install -g @angular/cli
 ```
 
-Create a new angular application
+Create a new Angular application:
 
 ```sh
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder by using following command.
+Navigate to the created project folder using the following command:
 
 ```sh
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+>Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to learn more about setting up `angular-cli` project.
 
-## Adding Dependencies
+## Adding dependencies
 
-The following list of dependencies are required to use the Dashboard Layout component in your application.
+The following list of dependencies are required to use the Dashboard Layout component in your application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-layouts
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-layouts
-
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> DashboardLayout package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Dashboard Layout package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. The packages are compatible with Angular version 12 and above. To download the package, use the command below.
 
-Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-layouts --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
 
-Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-layouts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38-ngcc) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-layouts@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below:
 
 ```bash
 @syncfusion/ej2-angular-layouts:"20.2.38-ngcc"
@@ -100,7 +94,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding style sheet to the application
 
-To render the DashboardLayout component, import the DashboardLayout and its dependent component's styles as given below in `[src/styles.css]`.
+To render the Dashboard Layout component, import the Dashboard Layout and its dependent component styles as shown below in `[src/styles.css]`:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -114,14 +108,14 @@ Alternatively, based on the location of your CSS file, you can import the styles
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
->Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: To refer to the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Add Dashboard Layout to the application
+## Adding Dashboard Layout to the application
 
-You can render the Dashboard Layout component in the following two ways.
+You can render the Dashboard Layout component in two ways:
 
-* Defined the panels property as the attribute in the HTML element directly.
-* Using the `panels` property through tag helper.
+1. **HTML attributes approach**: Define panels as HTML elements with data attributes
+2. **Property binding approach**: Define panels through the `panels` property
 
 ## Setting the `panels` property using HTML attributes
 
@@ -132,14 +126,13 @@ Now, modify the `template` in `app.component.ts` file to render DashboardLayout 
 `[src/app/app.component.ts]`
 
 ```typescript
-
 import { Component } from '@angular/core';
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
-  imports: [ DashboardLayoutModule],
+  imports: [DashboardLayoutModule],
     standalone: true,
     selector: 'app-root',
     template: `
@@ -220,8 +213,7 @@ export class AppModule { }
 ```
 
 ## Run the application
-
-Now, use the `npm start` command to run the application in the browser.
+Use the `npm start` command to run the application in the browser:
 
 ```html
 npm start
@@ -258,7 +250,7 @@ import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    imports: [ DashboardLayoutModule],
+    imports: [DashboardLayoutModule],
     standalone: true,
     selector: 'app-root',
     template: `
@@ -279,10 +271,9 @@ export class AppComponent {
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
   ]
 }
-
 ```
 
-The following example shows a basic DashboardLayout by using the `panels` property.
+The following example demonstrates a basic Dashboard Layout using the `panels` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -300,4 +291,4 @@ The following example shows a basic DashboardLayout by using the `panels` proper
   
 {% previewsample "page.domainurl/samples/dashboard-layout/getting-started-panel-cs1" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.
+> You can refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore the [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to learn how to present and manipulate data.

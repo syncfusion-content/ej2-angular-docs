@@ -3,22 +3,22 @@ layout: post
 title: Navigations in Angular Breadcrumb component | Syncfusion
 description: Learn here all about Navigations in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Navigations 
+control: Breadcrumb 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Navigations in Angular Breadcrumb component
 
-The breadcrumb item navigates to the path while clicking the item. To enable navigation, `url` property was bound to the items.
+The Breadcrumb component enables navigation to specific paths when users click breadcrumb items. To enable navigation functionality, bind the `url` property to the breadcrumb items.
 
 ## URL
 
-In the Breadcrumb component, the item represents the url. The breadcrumb items can be provided with either relative or absolute URL.
+In the Breadcrumb component, each item represents a URL destination. Breadcrumb items can be configured with either relative or absolute URLs to define navigation paths.
 
 ### Relative URL
 
-The breadcrumb items with relative URL contain only the path but do not locate the path or server. The following example represents the breadcrumb items with relative url.
+Breadcrumb items with relative URLs contain only the path segment without specifying the complete location or server details. The following example demonstrates breadcrumb items configured with relative URLs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The breadcrumb items with relative URL contain only the path but do not locate t
 
 ### Absolute URL
 
-The breadcrumb items with Absolute URL contain the path and locate to the resource if the absolute url is bound to the breadcrumb item. The following example represents the breadcrumb items with absolute url.
+Breadcrumb items with absolute URLs contain the complete path and navigate directly to the specified resource when the absolute URL is bound to the breadcrumb item. The following example demonstrates breadcrumb items configured with absolute URLs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +48,9 @@ The breadcrumb items with Absolute URL contain the path and locate to the resour
   
 {% previewsample "page.domainurl/samples/breadcrumb/navigations-cs2" %}
 
-## Enable navigation for last Breadcrumb item
+## Enable navigation for last breadcrumb item
 
-The feature enables the last item of the Breadcrumb component by setting the `enableActiveItemNavigation` property to true. In the following example, the last item of the `Breadcrumb` was enabled.
+By default, the last breadcrumb item (active item) is not clickable. To enable navigation for the last item, set the `enableActiveItemNavigation` property to `true`. The following example demonstrates enabling navigation for the last breadcrumb item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 
 ## Open URL in new page or tab
 
-To open the breadcrumb item in a new page or tab, set the target property of the required item url to blank in the Breadcrumb component. In the following example, the target property of `All Components` item url was set to blank by using the `beforeItemRender` event which locates to the path in the new tab.
+To open a breadcrumb item in a new page or tab, configure the target attribute of the anchor element to `_blank` using the `beforeItemRender` event. The following example demonstrates opening the `All Components` item in a new tab by setting the target attribute through the `beforeItemRender` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

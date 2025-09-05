@@ -3,18 +3,18 @@ layout: post
 title: Style in Angular Card component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style in Angular Card component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
 ## Customizing the card
 
-Use the following CSS to customize the card properties.
+Use the following CSS to customize the card appearance.
 
 ```css
 .e-card {
@@ -24,9 +24,9 @@ Use the following CSS to customize the card properties.
 }
 ```
 
-## Customizing the Header element
+## Customizing the header element
 
-Use the following CSS to customize the Header element properties.
+Use the following CSS to customize the header element appearance.
 
 ```css
 .e-card .e-card-header {
@@ -37,7 +37,7 @@ Use the following CSS to customize the Header element properties.
 
 ## Customizing the card content
 
-Use the following CSS to customize the card content properties.
+Use the following CSS to customize the card content appearance.
 
 ```css
 .e-card .e-card-content {
@@ -48,10 +48,9 @@ Use the following CSS to customize the card content properties.
 }
 ```
 
-## Divider used to separate the elements inside the card
+## Customizing the divider used to separate elements inside the card
 
-Use the following CSS to customize the Divider used to separate the elements inside the card properties.
-
+Use the following CSS to customize the divider used to separate elements inside the card.
 ```css
 .e-card .e-card-separator {
    padding-bottom: 30px;
@@ -60,7 +59,7 @@ Use the following CSS to customize the Divider used to separate the elements ins
 
 ## Including image within card element
 
-Use the following CSS to Include image within card element.
+Use the following CSS to include image within card element.
 
 ```css
 .e-card .e-card-image {
@@ -70,9 +69,9 @@ Use the following CSS to Include image within card element.
 }
 ```
 
-## Including a title or caption for the image
+## Including title or caption for the image
 
-Use the following CSS to Include a title or caption for the image.
+Use the following CSS to include title or caption for the image.
 
 ```css
 .e-card .e-card-image .e-card-title {
@@ -81,9 +80,9 @@ Use the following CSS to Include a title or caption for the image.
 }
 ```
 
-## To include heading image within the header
+## Including heading image within the header
 
-Use the following CSS to Include heading image within the header.
+Use the following CSS to include heading image within the header.
 
 ```css
 .e-card .e-card-header .e-card-header-image  {
@@ -92,9 +91,9 @@ Use the following CSS to Include heading image within the header.
 }
 ```
 
-## Customizing the Header main title
+## Customizing the header main title
 
-Use the following CSS to Customize the Header main title.
+Use the following CSS to customize the header main title.
 
 ```css
 .e-card .e-card-header .e-card-header-caption .e-card-header-title  {
@@ -103,9 +102,9 @@ Use the following CSS to Customize the Header main title.
 }
 ```
 
-## Customizing the Header subtitle
+## Customizing the header subtitle
 
-Use the following CSS to Customize the Header subtitle.
+Use the following CSS to customize the header subtitle.
 
 ```css
 .e-card .e-card-header .e-card-header-caption .e-card-sub-title  {
@@ -116,7 +115,7 @@ Use the following CSS to Customize the Header subtitle.
 
 ## Including action buttons or anchor tags
 
-Use the following CSS to Include action buttons or anchor tags.
+Use the following CSS to include action buttons or anchor tags.
 
 ```css
 .e-card .e-card-actions .e-card-btn  {
@@ -125,7 +124,7 @@ Use the following CSS to Include action buttons or anchor tags.
 }
 ```
 
-## To align card elements horizontally
+## Aligning card elements horizontally
 
 Use the following CSS to align card elements horizontally.
 
@@ -136,7 +135,7 @@ Use the following CSS to align card elements horizontally.
 }
 ```
 
-## To align elements vertically within the horizontal layout
+## Aligning elements vertically within the horizontal layout
 
 Use the following CSS to align elements vertically within the horizontal layout.
 

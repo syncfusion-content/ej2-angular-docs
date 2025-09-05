@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in Angular TreeGrid component | Syncfusion
-description: Learn here all about Searching in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+description: Learn how to enable and customize searching in the Syncfusion Angular TreeGrid component, including search settings, operators, column-specific search, and advanced scenarios.
 platform: ej2-angular
 control: Searching 
 documentation: ug
@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Searching in Angular TreeGrid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component includes a powerful built-in searching feature that facilitates searching for specific data within the tree grid. This feature enables efficient filtering of tree grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a built-in searching feature that enables users to locate records efficiently within large datasets. This search capability allows filtering TreeGrid records based on user-defined criteria, streamlining the process of displaying relevant information.
 
-To enable the searching feature in the tree grid, set the [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowsearching) property to **true**.
+To enable searching, set the [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowsearching) property to **true**.
 
-To further enhance the search functionality, you can integrate a search text box directly into the tree grid's toolbar. This allows you to enter search criteria conveniently within the tree grid interface. To add the search item to the tree grid's toolbar, use the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property and add **Search** item.
+To further enhance usability, a search text box can be added to the TreeGrid toolbar. Add the **Search** item to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property to provide a convenient interface for entering search criteria.
 
-Here is an example that demonstrates the default searching feature of the tree grid:
+Here is an example demonstrating the default searching feature of the TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,24 +29,22 @@ Here is an example that demonstrates the default searching feature of the tree g
 {% include code-snippet/treegrid/searching-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs1" %}
 
-> The clear icon is shown in the Tree Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Tree Grid.
+> The clear icon appears in the TreeGrid search text box when it contains text. Clicking the clear icon removes the search text and resets search results.
 
 ## Initial search
 
-By default, the search operation is performed on the tree grid data after the tree grid renders. However, there might be scenarios where need to perform a search operation on the tree grid data during the initial rendering of the tree grid. In such cases, you can make use of the initial search feature provided by the tree grid.
+By default, searching operates after the TreeGrid renders. To perform a search when the TreeGrid initially loads, configure the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#searchsettings) object:
 
-To apply search at initial rendering, need to set the following properties in the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#searchsettings) object.
-
-Property |Description
---------|-----
-**fields** |Specifies the [fields](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettingsModel/#fields) in which the search operation needs to be performed.
-**operator** |Specifies the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#operator) to be used for the search operation.
-**key** |Specifies the [key](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#key) value to be searched.
-**ignoreCase** |[ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#ignorecase) specifies whether the search operation needs to be case-sensitive or case-insensitive. 
-**ignoreAccent** |[ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettingsModel/#ignoreaccent) property will ignore the diacritic characters or accents in the text during a search operation.
+Property | Description
+-------- | -----------
+**fields** | Specifies the [fields](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettingsModel/#fields) to be searched.
+**operator** | Sets the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#operator) for comparison.
+**key** | Sets the [key](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#key) value to search for.
+**ignoreCase** | Sets case-insensitive search using [ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#ignorecase).
+**ignoreAccent** | Ignores diacritic characters during search by enabling the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettingsModel/#ignoreaccent) property.
 
 The following example demonstrates how to set an initial search in the tree grid using the `searchSettings` property. The `searchSettings` property is set with the following values:
 
@@ -67,10 +65,10 @@ The following example demonstrates how to set an initial search in the tree grid
 {% include code-snippet/treegrid/searching-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs2" %}
 
-> By default, tree grid searches all the bound column values. However, you can customize this behavior by definining the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#fields) property.
+> By default, searching targets all bound columns. Use [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#fields) to restrict search to specific columns.
 
 ## Search operators
 
@@ -78,20 +76,17 @@ Search operators are symbols or keywords used to define the type of comparison o
 
 By default, the `searchSettings.operator` is set to **contains**, which returns the values contains the search key. The following operators are supported in searching:
 
-Operator |Description
------|-----
-startswith |Checks whether a value begins with the specified value.
-endswith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains with the specified value.
-wildcard |Processes one or more search patterns using the **"*"** symbol, returning values that match the given patterns.
-like |Processes a single search pattern using the **"%"** symbol, retrieving values that match the specified pattern.
-equal |Checks whether a value equal to the specified value.
-notequal |Checks whether a value not equal to the specified value.
+Operator   | Description
+-----------| -----------
+startswith | Checks if a value starts with the specified string.
+endswith   | Checks if a value ends with the specified string.
+contains   | Checks if a value contains the specified string (default).
+wildcard   | Searches using patterns with the **"*"** symbol.
+like       | Searches using patterns with the **"%"** symbol.
+equal      | Checks for exact string match.
+notequal   | Checks for values not equal to the specified string.
 
-These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
-
-The following example demonstrates how to set the `searchSettings.operator` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component.
-
+The following example demonstrates dynamic operator selection through a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) and the DropDownList [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,19 +99,19 @@ The following example demonstrates how to set the `searchSettings.operator` prop
 {% include code-snippet/treegrid/searching-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs3" %}
 
 ## Search by external button
 
-The TreeGrid component allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the [search](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#search) method provided by the TreeGrid component.
+The [search](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#search) method enables programmatic record searching, allowing implementation of custom search triggers such as an external button.
 
-The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
+Follow these steps:
 
-1. Add a button element outside of the TreeGrid component.
-2. Attach a click event handler to the button.
-3. Inside the event handler, get the reference of the TreeGrid component.
-4. Invoke the `search` method of the tree grid by passing the search key as a parameter.
+1. Add a button outside the TreeGrid.
+2. Attach a click event handler.
+3. Reference the TreeGrid component in the handler.
+4. Call the `search` method with the search key.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +124,7 @@ The `search` method allows you to perform a search operation based on a search k
 {% include code-snippet/treegrid/searching-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs4" %}
 
 ## Search specific columns
@@ -149,16 +144,12 @@ The following example demonstrates how to search specific columns such as **task
 {% include code-snippet/treegrid/searching-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs5" %}
 
-## Search on each key stroke
+## Search on each keystroke
 
-The search on each keystroke feature in the Tree Grid enables you to perform real-time searching of tree grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
-
-To achieve this, you need to bind the `keyup` event to the search input element inside the [created](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#created) event of the TreeGrid component. 
-
-In the following example, the `created` event is bound to the TreeGrid component, and inside the event handler, the `keyup` event is bound to the search input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the [search]((https://ej2.syncfusion.com/angular/documentation/api/treegrid/#search)) method is invoked on the tree grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
+Enable real-time searching by binding the `keyup` event to the search input inside the [created](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#created) event of the TreeGrid. With each keystroke, update search results dynamically by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#search) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,12 +162,12 @@ In the following example, the `created` event is bound to the TreeGrid component
 {% include code-snippet/treegrid/searching-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs6" %}
 
-> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
+> Searching on every keystroke may affect performance for large datasets.
 
-## Perform search based on column formatting
+## Search based on column formatting
 
 By default, the search operation considers the underlying raw data of each cell for searching. However, in some cases, you may want to search based on the formatted data visible to the users. To search data based on column formatting, you can utilize the `grid.valueFormatterService.fromView` method within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event. This method allows you to retrieve the formatted value of a cell and perform searching on each column using the **OR** predicate.
 
@@ -193,12 +184,12 @@ The following example demonstrates how to implement searching based on column fo
 {% include code-snippet/treegrid/searching-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs7" %}
 
-## Perform search operation in Grid using multiple keywords
+## Multiple keyword searching
 
-In addition to searching with a single keyword, the TreeGrid component offers the capability to perform a search operation using multiple keywords. This feature enables you to narrow down your search results by simultaneously matching multiple keywords. It can be particularly useful when you need to find records that meet multiple search conditions simultaneously. This can be achieved by the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event of the Tree Grid.
+TreeGrid supports searching with multiple keywords, allowing broader results when filtering data using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event and custom predicates.
 
 The following example demonstrates, how to perform a search with multiple keywords in the tree grid by using the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid#query) property when the `requestType` is searching in the `actionBegin` event. The searchString is divided into multiple keywords using a comma (,) as the delimiter. Each keyword is then utilized to create a `predicate` that checks for a match in the desired columns. If multiple keywords are present, the predicates are combined using an **OR** condition. Finally, the Tree Grid's `query` property is updated with the constructed `predicate`, and the Tree Grid is refreshed to update the changes in the UI.
 
@@ -215,14 +206,14 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/docum
 {% include code-snippet/treegrid/searching-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs8" %}
 
-## How to ignore accent while searching
+## Ignore accent while searching
 
-By default, the searching operation in the TreeGrid component does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#ignoreaccent) property of the TreeGrid component as **true**.
+To perform accent-insensitive search, enable the [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#ignoreaccent) property as **true**. This provides more inclusive search results, ignoring diacritic marks in text.
 
-The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings) property of the tree grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is included to modify the value of the `searchSettings.ignoreAccent` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered, and the `searchSettings.ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings.ignoreAccent` setting when performing search operations.
+The following example demonstrates toggling the `ignoreAccent` property with an [EJ2 Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started):
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -235,18 +226,16 @@ The following example demonstrates how to define the `ignoreAccent` property wit
 {% include code-snippet/treegrid/searching-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs9" %}
 
 > * You can set `searchSettings.ignoreAccent` property along with other search settings such as [fields](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#fields), [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#operator), and [ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#ignoreaccent) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
 > * This feature may have a slight impact on search performance.
 
-## Highlight the search text
+## Highlight search text
 
-The TreeGrid component allows you to visually highlight search results within the displayed data. This feature helps you to quickly identify where the search items are found within the displayed data. By adding a style to the matched text, you can quickly identify where the search items are present in the tree grid.
-
-To achieve search text highlighting in the Tree Grid, you can utilize the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event. This event is triggered for each cell during the Tree Grid rendering process, allowing you to customize the cell content based on your requirements.
+Highlight search matches in TreeGrid cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event. Customize cell content by replacing matched text with a styled element.
 
 The following example demonstrates how to highlight search text in tree grid using the `queryCellInfo` event. The `queryCellInfo` event checks if the current cell is in the desired search column, retrieves the cell value, search keyword and uses the `includes` method to check if the cell value contains the search keyword. If it does, the matched text is replaced with the same text wrapped in a `span` tag with a `customcss` class. You can then use CSS to define the `customcss` class and style to easily identify where the search keywords are present in the tree grid.
 
@@ -261,14 +250,12 @@ The following example demonstrates how to highlight search text in tree grid usi
 {% include code-snippet/treegrid/searching-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs10" %}
 
-## Clear search by external button
+## Clear search with external button
 
-The TreeGrid component provides a capability to clear searched data in the tree grid. This functionality offers the ability to reset or clear any active search filters that have been applied to the tree grid's data.
-
-To clear the searched tree grid records from an external button, you can set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#key) property to an `empty` string to clear the search text. This property represents the current search text in the search box.
+TTo clear active search results, set [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettings/#key) to an empty string using an external button, or use the built-in clear icon in the search field.
 
 The following example demonstrates how to clear the searched records using an external button.
 
@@ -283,10 +270,10 @@ The following example demonstrates how to clear the searched records using an ex
 {% include code-snippet/treegrid/searching-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/searching-cs11" %}
 
-> You can also clear the searched records by using the clear icon within the search input field.
+> Searched records can also be cleared using the search field's clear icon.
 
 ## See also
 

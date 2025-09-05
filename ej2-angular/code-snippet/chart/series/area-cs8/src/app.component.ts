@@ -1,26 +1,16 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService, 
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
+import { MultiColoredAreaSeriesService, TooltipService, CategoryService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
-import { stepData } from './datasource';
-@Component({
-imports: [
-         ChartModule, ChartAllModule
-    ],
+import { energyConsumptionData } from './datasource';
 
-providers: [ AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-               DateTimeService, CategoryService, MultiColoredAreaSeriesService,StackingStepAreaSeriesService,SplineRangeAreaSeriesService],
-standalone: true,
+@Component({
+    imports: [ChartModule, ChartAllModule],
+    providers: [MultiColoredAreaSeriesService, CategoryService, LegendService, TooltipService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [tooltip]='tooltip'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='MultiColoredArea' xName='x' yName='y' name='England'
-            segmentAxis='X' [segments]='segments'></e-series>
+            <e-series [dataSource]='chartData' type='MultiColoredArea' xName='year' yName='oil' name='Oil' segmentAxis='X' [segments]='segments'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -29,22 +19,34 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public tooltip?: Object;
     public segments?: Object[];
     ngOnInit(): void {
-        this.chartData = [{ x: 2005, y: 28 }, { x: 2006, y: 25}, { x: 2007, y: 26 }, { x: 2008, y: 27 },
-        { x: 2009, y: 32}, { x: 2010, y: 35 }, { x: 2011, y: 25 }];
-        this.title = 'England - Run Rate';
-        this.segments =[{
-                    value: 2007,
-                    color: 'blue'
-                }, {
-                    value: 2009,
-                    color: 'lightgreen'
-                }, {
-                    color: 'orange'
-        }];
+        this.chartData = energyConsumptionData;
+        this.primaryXAxis = {
+            minimum: 2000, maximum: 2024,
+            interval: 4, edgeLabelPlacement: 'Shift'
+        };
+        this.primaryYAxis = {
+            title: 'Energy (TWh)',
+            labelFormat: '{value} TWh'
+        };
+        this.title = 'Global primary energy consumption by source';
+        this.legendSettings = { visible: false, enableHighlight: true };
+        this.tooltip = { enable: true };
+        this.segments = [
+            {
+                value: 2008,
+                color: '#f7a35c'
+            }, 
+            {
+                value: 2016,
+                color: '#7cb5ec'
+            }, 
+            {
+                color: '#90ed7d'
+            }
+        ];
     }
-
 }
-
-

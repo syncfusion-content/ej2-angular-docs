@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Block Editor component
+# Getting Started with the Angular Block Editor Component
 
-This section explains how to create a default Block Editor component and demonstrate the basic usage of the Block Editor.
+This guide explains how to create and configure the Block Editor component in a new Angular application.
 
 ## Dependencies
 
@@ -28,60 +28,61 @@ The list of dependencies required to use the Block Editor component in your appl
     |-- @syncfusion/ej2-inputs
 ```
 
-## Setup Angular environment
+## Set up Angular Environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI globally, run the following command.
 
 ```
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the Angular CLI.
 
 ```
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor package
+## Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Syncfusion Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+Syncfusion<sup style="font-size:70%">&reg;</sup>  provides two package structures for Angular components:
 
-### Ivy library distribution package
+1.  **Ivy library distribution package**: For modern Angular applications.
+2.  **Angular compatibility compiler (ngcc) package**: For legacy Angular applications.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+### Ivy Library Distribution Package
 
-Add [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37) package to the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and newer.
+
+Install the [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37) package with the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-blockeditor --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular Compatibility Compiled (ngcc) Package
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For applications using Angular versions below 12, use the legacy (ngcc) package. of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37-ngcc) package to the application.
+Install the [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37-ngcc) package with the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-blockeditor@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the `-ngcc` suffix to the package version.
 
 ```bash
 @syncfusion/ej2-angular-blockeditor:"20.4.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> **Note**: If the `--tag ngcc` is not specified during installation, the Ivy library package will be installed by default, which may cause compatibility issues in older Angular versions.
 
-## Adding CSS reference
+## Add CSS Reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
 This can be referenced in [src/styles.css] using following code.
@@ -97,9 +98,9 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
 ```
 
-## Adding Syncfusion Block Editor component
+## Add Syncfusion Block Editor Component
 
-Modify the template in [src/app/app.component.ts] file to render the Block Editor component. Add the Angular Block Editor by using `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
+Modify the template in the [src/app/app.component.ts] file to render the Block Editor component. Add the Angular Block Editor by using the `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
 
 ```typescript
 
@@ -120,7 +121,7 @@ export class AppComponent { }
 
 ```
 
-## Running the application
+## Run the Application
 
 Run the application in the browser using the following command:
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular Chat UI component
 
-This section describes the Chat UI events that will be triggered when appropriate actions are performed. The following events are available in the Chat UI component.
+This section describes the events that the Chat UI component triggers when specific actions are performed. The following events are available:
 
-## Created
+## created
 
-The Chat UI component triggers the [created](../api/chat-ui#created) event when the component rendering is completed.
+The Chat UI component triggers the [created](../api/chat-ui/#created) event after the component has been rendered. This event is useful for performing actions once the Chat UI is fully initialized and ready for interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,9 +26,9 @@ The Chat UI component triggers the [created](../api/chat-ui#created) event when 
 {% endhighlight %}
 {% endtabs %}
 
-## Sending message
+## messageSend
 
-The [messageSend](../api/chat-ui#messagesend) event is triggered before sending a message in the Chat UI component.
+The [messageSend](../api/chat-ui/#messagesend) event is triggered before a message is sent from the Chat UI component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +40,9 @@ The [messageSend](../api/chat-ui#messagesend) event is triggered before sending 
 {% endhighlight %}
 {% endtabs %}
 
-## User typing
+## userTyping
 
-The [userTyping](../api/chat-ui#usertyping) event is triggered when the user is typing a message in the Chat UI component.
+The [userTyping](../api/chat-ui/#usertyping) event is triggered as a user types a message in the Chat UI input field. This is useful for implementing features like typing indicators ("User is typing...").
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

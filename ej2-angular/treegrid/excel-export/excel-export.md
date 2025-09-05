@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Excel export in Angular Treegrid component | Syncfusion
-description: Learn here all about Excel export in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Excel export in Angular TreeGrid component | Syncfusion
+description: Learn about exporting data from the Syncfusion Angular TreeGrid component of Essential JS 2 to Excel documents, including features, module setup, customization, and state persistence.
 platform: ej2-angular
 control: Excel export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export in Angular Treegrid component
+# Excel export in Angular TreeGrid component
 
-The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) as true.
+Excel export in the TreeGrid component enables exporting TreeGrid data to an Excel document. The [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method is used for exporting data. To enable Excel export in TreeGrid, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) property to true.
 
-To use excel export, You need to inject the `ExcelExport` module in treegrid.
+Inject the `ExcelExport` module into the TreeGrid to use the Excel export feature.
 
-You can check this video to learn about how to perform Exporting and its customization in Angular TreeGrid.
+Watch this video to learn how to perform exporting operations and customize them in Angular TreeGrid.
 
 {% youtube "https://www.youtube.com/watch?v=cgVdlF7zzfE" %}
 
@@ -27,12 +27,12 @@ You can check this video to learn about how to perform Exporting and its customi
 {% include code-snippet/treegrid/excel-export-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs7" %}
 
-## Persist collapsed state
+## Persisting collapsed state
 
-You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method.
+The collapsed state of nodes in the exported Excel document can be persisted by setting the `isCollapsedStatePersist` property to true within the `TreeGridExcelExportProperties` parameter of the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,14 +43,14 @@ You can persist the collapsed state in the exported document by defining `isColl
 {% include code-snippet/treegrid/excel-export-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs8" %}
 
-> The CSV export allows exporting tree grid data to text document. Use the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method for exporting. To enable CSV export in the treegrid, set the [`allowCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) as true.
+> The CSV export feature allows exporting TreeGrid data to a text document. Use the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method for exporting. To enable CSV export in TreeGrid, set the [`allowCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) property to true.
 
 ## Custom data source
 
-The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
+Excel export provides the capability to define a data source dynamically before exporting. To export data dynamically, assign a value to the `dataSource` property in `exportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,24 @@ The excel export provides an option to define datasource dynamically before expo
 {% include code-snippet/treegrid/excel-export-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs9" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+## Exporting Custom Aggregates in Tree Grid  
+The Tree Grid enables exporting custom aggregates, which summarize column data, to an Excel document using the `ExcelAggregateQueryCellInfo` event.  
+ 
+In the provided example, the customAggregateFn function computes the item count for a selected category, while the `ExcelAggregateQueryCellInfo` event customizes the exported cell values in the Excel document.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/excel-export-cs10/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/excel-export-cs10/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "http://127.0.0.1:4000/ej2-angular/samples/treegrid/excel-export-cs10" %}
+
+> For more information, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to discover how to present and manipulate data.

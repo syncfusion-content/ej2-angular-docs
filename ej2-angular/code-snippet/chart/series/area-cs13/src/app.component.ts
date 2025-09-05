@@ -1,39 +1,39 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService, 
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
+import { AreaSeriesService, TooltipService, CategoryService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
-import { areaData } from './datasource';
+import { energyConsumptionData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule, ChartAllModule
-    ],
-
-providers: [ AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-               DateTimeService, CategoryService, MultiColoredAreaSeriesService,StackingStepAreaSeriesService,SplineRangeAreaSeriesService],
-standalone: true,
+    imports: [ChartModule, ChartAllModule],
+    providers: [AreaSeriesService, CategoryService, LegendService, TooltipService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [tooltip]='tooltip'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' opacity= 0.5></e-series>
+            <e-series [dataSource]='chartData' type='Area' xName='year' yName='oil' name='Oil' opacity=0.5></e-series>
+            <e-series [dataSource]='chartData' type='Area' xName='year' yName='coal' name='Coal' opacity=0.7></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
+    public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    primaryXAxis: any;
-    primaryYAxis: any;
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public tooltip?: Object;
     ngOnInit(): void {
-        this.chartData = areaData;
-        this.title = 'Average Sales Comparison';
+        this.chartData = energyConsumptionData;
+        this.primaryXAxis = {
+            minimum: 2000, maximum: 2024,
+            interval: 4, edgeLabelPlacement: 'Shift'
+        };
+        this.primaryYAxis = {
+            title: 'Energy (TWh)',
+            labelFormat: '{value} TWh'
+        };
+        this.title = 'Global primary energy consumption by source';
+        this.legendSettings = { visible: true, enableHighlight: true };
+        this.tooltip = { enable: true };
     }
-
 }
-
-

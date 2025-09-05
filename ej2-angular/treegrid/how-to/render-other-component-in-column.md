@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Render other component in column in Angular Treegrid component | Syncfusion
-description: Learn here all about Render other component in column in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Render other component in a column in Angular TreeGrid component | Syncfusion
+description: Learn how to render custom components in columns using the template property of the Syncfusion Angular TreeGrid component.
 platform: ej2-angular
 control: Render other component in column 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render other component in column in Angular Treegrid component
+# Render other component in a column in Angular TreeGrid component
 
-You can render any components in a Tree Grid column using the template property.
+Custom components can be rendered in a TreeGrid column using the template property.
 
-Initialize the column template for your custom component. The template property renders the custom component.
+Initialize the column template for the desired custom component. The template property will render the specified component inside the column.
 
-In the following sample, the DropDownList is rendered in the **Priority** column.
+In the sample below, a DropDownList is rendered in the **Priority** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,7 +25,7 @@ In the following sample, the DropDownList is rendered in the **Priority** column
 {% include code-snippet/treegrid/refresh-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs13" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For more feature information, see the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Practical examples for rendering and manipulating data can be found in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

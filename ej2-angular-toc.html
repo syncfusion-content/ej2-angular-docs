@@ -327,7 +327,15 @@ AppBar
     Block Editor
     <ul>
         <li><a href="/ej2-angular/block-editor/getting-started">Getting Started</a></li>
-        <li><a href="/ej2-angular/block-editor/blocks">Blocks</a></li>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/built-in-blocks">Built-in Blocks</a>
+        <ul>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/typography">Typography</a></li>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/list-types">List-Types</a></li>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/inline-content">Inline Content</a></li>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/embed">Embeds</a></li>
+        <li><a href="/ej2-angular/block-editor/built-in-blocks/code-block">Code Blocks</a></li>
+        </ul>
+        </li>
         <li><a href="/ej2-angular/block-editor/editor-menus">Editor Menus</a></li>
         <li><a href="/ej2-angular/block-editor/drag-drop">Drag and drop</a></li>
         <li><a href="/ej2-angular/block-editor/paste-cleanup">Paste Cleanup</a></li>
@@ -579,10 +587,21 @@ AppBar
     <ul>
         <li><a href="/ej2-angular/chat-ui/getting-started">Getting Started</a></li>
         <li><a href="/ej2-angular/chat-ui/messages">Messages</a></li>
+        <li>Chat Bot Integrations
+            <ul>
+                <li>
+                    <a href="/ej2-angular/chat-ui/bot-integrations/integration-with-bot-dialogflow">Integration with Google Dialogflow</a>
+                </li>
+                <li>
+                    <a href="/ej2-angular/chat-ui/bot-integrations/integration-with-bot-framework">Integration with Microsoft Bot Framework</a>
+                </li>
+            </ul>
+        </li>
         <li><a href="/ej2-angular/chat-ui/timebreak">Time break</a></li>
         <li><a href="/ej2-angular/chat-ui/timestamp">Timestamp</a></li>
         <li><a href="/ej2-angular/chat-ui/typing-indicator">Typing indicator</a></li>
         <li><a href="/ej2-angular/chat-ui/load-on-demand">Load on-demand</a></li>
+        <li><a href="/ej2-angular/chat-ui/mention">Mention Integration</a></li>
         <li><a href="/ej2-angular/chat-ui/header">Header</a></li>
         <li><a href="/ej2-angular/chat-ui/footer">Footer</a></li>
         <li><a href="/ej2-angular/chat-ui/templates">Templates</a></li>
@@ -782,6 +801,7 @@ AppBar
        <li><a href="/ej2-angular/datepicker/date-views">Start View and Depth Restriction</a></li>
        <li><a href="/ej2-angular/datepicker/accessibility">Accessibility</a></li>
        <li><a href="/ej2-angular/datepicker/style-appearance">Style and Appearance</a></li>
+        <li><a href="/ej2-angular/datepicker/timezone-behavior">Timezone Behavior</a></li>
        <li>How To
         <ul>
           <li><a href="/ej2-angular/datepicker/how-to/json-data-binding">JSON Data binding with DatePicker</a></li>
@@ -837,6 +857,7 @@ AppBar
         <li><a href="/ej2-angular/datetimepicker/customization">Customization</a></li>
         <li><a href="/ej2-angular/datetimepicker/accessibility">Accessibility</a></li>
         <li><a href="/ej2-angular/datetimepicker/style-appearance">Style and Appearance</a></li>
+        <li><a href="/ej2-angular/datetimepicker/timezone-behavior">Timezone Behavior</a></li>
         <li>How To
            <ul>
              <li><a href="/ej2-angular/datetimepicker/how-to/json-data-binding-with-datetimepicker">JSON Data binding with DateTimePicker</a></li>
@@ -993,6 +1014,7 @@ AppBar
               <li><a href="/ej2-angular/dialog/how-to/display-a-dialog-with-custom-position">Display a Dialog with custom position</a></li>
               <li><a href="/ej2-angular/dialog/how-to/prevent-closing-of-modal-dialog">Prevent closing of modal Dialog</a></li>
               <li><a href="/ej2-angular/dialog/how-to/prevent-the-focus-on-the-first-element">Prevent the focus on the first element</a></li>
+              <li><a href="/ej2-angular/dialog/how-to/prevent-the-focus-to-the-previous-element">Prevent the focus to the previous element</a></li>
               <li><a href="/ej2-angular/dialog/how-to/prevent-opening-of-the-dialog">Open a Dialog on condition</a></li>
               <li><a href="/ej2-angular/dialog/how-to/read-all-the-values-from-dialog-on-button-click">Read all values of Dialog on button click</a></li>
               <li><a href="/ej2-angular/dialog/how-to/customize-the-dialog-appearance">Customize the Dialog appearance</a></li>
@@ -1010,140 +1032,6 @@ AppBar
         </li>
           <li><a href="/ej2-angular/dialog/ej1-api-migration">Migration from Essential JS 1</a></li>
           <li><a href="https://ej2.syncfusion.com/angular/documentation/api/dialog/">API Reference</a></li>
-     </ul>
- </li><li>
-    DocumentEditor
-     <ul>
-        <li><a href="/ej2-angular/document-editor/overview">Overview</a></li>
-        <li><a href="/ej2-angular/document-editor/getting-started">Getting Started</a></li>
-        <li><a href="/ej2-angular/document-editor/feature-module">Feature modules</a></li>
-        <li><a href="/ej2-angular/document-editor/ribbon">Ribbon</a></li>
-        <li>
-          <a href="/ej2-angular/document-editor/import">Opening Document</a>
-          <ul>
-            <li><a href="/ej2-angular/document-editor/opening-documents/azure-blob-storage">From Microsoft Azure Blob Storage</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/aws-s3-bucket">From AWS S3</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/box-cloud-file-storage">From Box cloud file storage</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/dropbox-cloud-file-storage">From Dropbox cloud file storage</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/google-cloud-storage">From Google Cloud Storage</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/google-drive">From Google Drive</a></li>
-            <li><a href="/ej2-angular/document-editor/opening-documents/one-drive">From One Drive</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/ej2-angular/document-editor/export">Saving Document</a>
-          <ul>
-            <li><a href="/ej2-angular/document-editor/saving-documents/server-side-export">Server side export</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/azure-blob-storage">To Microsoft Azure Blob Storage</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/aws-s3-bucket">To AWS S3</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/box-cloud-file-storage">To Box cloud file storage</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/dropbox-cloud-file-storage">To Dropbox cloud file storage</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/google-cloud-storage">To Google Cloud Storage</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/google-drive">To Google Drive</a></li>
-            <li><a href="/ej2-angular/document-editor/saving-documents/one-drive">To One Drive</a></li>
-          </ul>
-        </li>
-        <li><a href="/ej2-angular/document-editor/web-services-overview">Web Services</a>
-          <ul>
-            <li><a href="/ej2-angular/document-editor/web-services/core">Using ASP.NET Core</a></li>
-            <li><a href="/ej2-angular/document-editor/web-services/mvc">Using ASP.NET MVC</a></li>
-            <li><a href="/ej2-angular/document-editor/web-services/java">Using Java</a></li>
-          </ul>
-        </li>
-        <li>Server Deployment
-          <ul>
-             <li><a href="/ej2-angular/document-editor/server-deployment/word-processor-server-docker-image-overview">Word Processor Server Docker Image Overview</a></li>
-             <li><a href="/ej2-angular/document-editor/server-deployment/how-to-deploy-word-processor-server-docker-container-in-azure-app-service">How to Deploy Word Processor Server Docker Container in Azure App Service</a></li>  
-             <li><a href="/ej2-angular/document-editor/server-deployment/how-to-deploy-word-processor-server-docker-container-in-azure-kubernetes-service">How to Deploy Word Processor Server Docker Container in Azure Kubernetes Service</a></li>
-             <li><a href="/ej2-angular/document-editor/server-deployment/how-to-deploy-word-processor-server-docker-container-in-amazon-kubernetes-service">How to Deploy Word Processor Server Docker Container in Amazon Kubernetes Service</a></li>
-			 <li><a href="/ej2-angular/document-editor/server-deployment/how-to-publish-documenteditor-web-api-application-in-azure-app-service-from-visual-studio">How to Publish DocumentEditor Web API Application in Azure App Service from Visual Studio</a></li>
-          </ul>
-        </li>
-		<li><a href="/ej2-angular/document-editor/collaborative-editing/overview">Collaborative Editing</a>
-          <ul>
-             <li><a href="/ej2-angular/document-editor/collaborative-editing/using-redis-cache-asp-net-core">Using Redis in ASP.NET Core</a></li>
-             <li><a href="/ej2-angular/document-editor/collaborative-editing/using-redis-cache-java">Using Redis in Java</a></li>  
-        </ul>
-        </li>
-        <li><a href="/ej2-angular/document-editor/accessibility">Accessibility</a></li>
-        <li><a href="/ej2-angular/document-editor/image">Images</a></li>
-        <li><a href="/ej2-angular/document-editor/shapes">Shapes</a></li>
-        <li><a href="/ej2-angular/document-editor/text-wrapping-style">Text Wrapping Style</a></li>
-        <li><a href="/ej2-angular/document-editor/bookmark">Bookmarks</a></li>
-        <li><a href="/ej2-angular/document-editor/link">Hyperlink</a></li>
-        <li><a href="/ej2-angular/document-editor/table">Tables</a></li>
-        <li><a href="/ej2-angular/document-editor/table-of-contents">Table of contents</a></li>
-        <li><a href="/ej2-angular/document-editor/header-footer">Headers and Footers</a></li>
-        <li><a href="/ej2-angular/document-editor/text-format">Working with Text Formatting</a></li>
-        <li><a href="/ej2-angular/document-editor/paragraph-format">Working with Paragraph Formatting</a></li>
-        <li><a href="/ej2-angular/document-editor/styles">Working with Styles</a></li>
-        <li><a href="/ej2-angular/document-editor/list-format">Working with Lists</a></li>
-        <li><a href="/ej2-angular/document-editor/table-format">Working with Table Formatting</a></li>
-        <li><a href="/ej2-angular/document-editor/section-format">Working with Section Formatting</a></li>
-        <li><a href="/ej2-angular/document-editor/comments">Comments</a></li>
-        <li><a href="/ej2-angular/document-editor/track-changes">Track Changes</a></li>
-        <li><a href="/ej2-angular/document-editor/fields">Fields</a></li>
-        <li><a href="/ej2-angular/document-editor/form-fields">Form fields</a></li>
-        <li><a href="/ej2-angular/document-editor/clipboard">Clipboard</a></li>
-        <li><a href="/ej2-angular/document-editor/history">Undo and redo</a></li>
-        <li><a href="/ej2-angular/document-editor/find-and-replace">Find and Replace</a></li>
-        <li><a href="/ej2-angular/document-editor/keyboard-shortcut">Keyboard shortcuts</a></li>
-        <li><a href="/ej2-angular/document-editor/scrolling-zooming">Scrolling and Zooming</a></li>
-        <li><a href="/ej2-angular/document-editor/print">Print</a></li>
-        <li><a href="/ej2-angular/document-editor/dialog">Dialog</a></li>
-        <li><a href="/ej2-angular/document-editor/right-to-left">RTL</a></li>
-        <li><a href="/ej2-angular/document-editor/chart">Chart</a></li>
-        <li><a href="/ej2-angular/document-editor/content-control">Content Control</a></li>
-        <li><a href="/ej2-angular/document-editor/document-management">Document Management</a></li>
-        <li><a href="/ej2-angular/document-editor/spell-check">SpellCheck</a></li>
-        <li><a href="/ej2-angular/document-editor/global-local">Globalization</a></li>
-        <li><a href="/ej2-angular/document-editor/notes">Footnotes and Endnotes</a></li> 
-        <li><a href="/ej2-angular/document-editor/view">View</a></li>
-        <li><a href="/ej2-angular/document-editor/security-advisories">Security Advisories</a></li>
-        <li>How To
-           <ul>
-              <li><a href="/ej2-angular/document-editor/how-to/add-save-button-in-toolbar">Add save button in toolbar</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/override-the-keyboard-shortcuts">Override keyboard shortcuts</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/customize-context-menu">Customize context menu</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/customize-tool-bar">Customize toolbar</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/change-document-view">Change document view</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/open-default-document">Open default document</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/default-read-only">Open document in read only by default</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/open-document-by-address">Open document from URL</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/deploy-document-editor-component-for-mobile">Deploy Document Editor component for Mobile</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/disable-optimized-text-measuring">Disable Optimized Text Measuring</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/get-the-selected-content">Get the selected content</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/set-default-format-in-document-editor">Set the default format in Document Editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/show-hide-spinner">Show and hide spinner</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/resize-document-editor">Resize document editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/export-document-as-pdf">Export the document as Pdf</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/customize-font-family-drop-down">Customize the font family drop down</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/auto-save-document">Auto save the document in Server</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/auto-save-document-in-document-editor">Auto save the document in AWS S3</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/retrieve-the-bookmark-content-as-text">Retrieve the Bookmark and Whole document content</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/get-current-word">Select and Get the Current Word and Paragraph</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/insert-page-number-and-navigate-to-page">Insert page number and navigate to specific page</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/move-selection-to-specific-position">Move the selection to specific position in Document</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/disable-header-and-footer-edit-in-document-editor">Disable Header and Footer edit in Document</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/insert-text-in-current-position">Insert the text and rich-text content in Document editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/change-the-cursor-color-in-document-editor">Change the cursor color in document editor using CSS</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/hide-tool-bar-and-properties-pane">Hide the toolbar and properties pane in Document editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/insert-text-or-image-in-table-programmatically">Insert text or image in table programmatically</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/change-the-default-search-highlight-color">Change the default search highlight color</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/optimize-sfdt">Optimize the SFDT file</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/disable-auto-focus">Disable auto focus in Document editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/disable-drag-and-drop">Disable drag and drop in document editor</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/enable-ruler-in-document-editor-component">Enable ruler in Document Editor component</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/customize-color-picker">Customize color picker</a></li>
-              <li><a href="/ej2-angular/document-editor/how-to/customize-ribbon">Customize Ribbon</a></li>
-            </ul>
-         </li>
-         <li>FAQ
-          <ul>
-             <li><a href="/ej2-angular/document-editor/faq/unsupported-file-format">Unsupported Warning Message When Opening a Document</a></li>
-          </ul>
-         </li>
-         <li><a href="https://ej2.syncfusion.com/angular/documentation/api/document-editor/">API Reference</a></li>
      </ul>
  </li>
 <li>
@@ -1381,6 +1269,7 @@ AppBar
       <li><a href="/ej2-angular/gantt/context-menu">Context Menu</a></li>
       <li><a href="/ej2-angular/gantt/state-persistence">State Persistence</a></li>
       <li><a href="/ej2-angular/gantt/timezone">Timezone</a></li>
+      <li><a href="/ej2-angular/gantt/events">Events</a></li>
       <li><a href="/ej2-angular/gantt/global-local">Globalization</a></li>
       <li><a href="/ej2-angular/gantt/accessibility">Accessibility</a></li>
       <li><a href="/ej2-angular/gantt/ej1-api-migration">Migration from Essential JS 1</a></li>
@@ -1921,18 +1810,15 @@ Mention
        <li><a href="/ej2-angular/multi-select/custom-value">Custom Value</a></li>
        <li><a href="/ej2-angular/multi-select/virtual-scroll">Virtualization</a></li>
        <li><a href="/ej2-angular/multi-select/checkbox">CheckBox</a></li>
+       <li><a href="/ej2-angular/multi-select/MultiSelectOptions">MultiSelect Options</a></li>
+       <li><a href="/ej2-angular/multi-select/configure-the-cascading-multi-select">Cascading MultiSelect</a></li>
        <li><a href="/ej2-angular/multi-select/chip-customization">Chip Customization</a></li>
        <li><a href="/ej2-angular/multi-select/localization">Localization</a></li>
        <li><a href="/ej2-angular/multi-select/style">Style and appearance</a></li>
        <li><a href="/ej2-angular/multi-select/accessibility">Accessibility</a></li>
        <li><a href="/ej2-angular/multi-select/form-support">Form Support</a></li>
        <li><a href="/ej2-angular/multi-select/resize">Popup Resize</a></li>
-       <li>How To
-         <ul>
-           <li><a href="/ej2-angular/multi-select/how-to/icons-support">Show the list items with icons</a></li>
-           <li><a href="/ej2-angular/multi-select/how-to/configure-the-cascading-multi-select">Configure the Cascading MultiSelect</a></li>
-         </ul>
-       </li>
+       <li><a href="/ej2-angular/multi-select/icons-support">Icons Support</a></li>
        <li><a href="https://ej2.syncfusion.com/angular/documentation/api/multi-select/">API Reference</a></li>
      </ul>
  </li><li>
@@ -2805,26 +2691,12 @@ Stepper
     TextBox
      <ul>
        <li><a href="/ej2-angular/textbox/getting-started">Getting Started</a></li>
-       <li><a href="/ej2-angular/textbox/index">Index</a></li>
-       <li><a href="/ej2-angular/textbox/groups">Groups</a></li>
+       <li><a href="/ej2-angular/textbox/groups">TextBox Options</a></li>
        <li><a href="/ej2-angular/textbox/sizing">Sizing</a></li>
        <li><a href="/ej2-angular/textbox/validation">Validation</a></li>
        <li><a href="/ej2-angular/textbox/multiline">Multiline</a></li>
        <li><a href="/ej2-angular/textbox/accessibility">Accessibility</a></li>
        <li><a href="/ej2-angular/textbox/style-appearance">Styles and Appearances</a></li>
-       <li>How To
-          <ul>
-            <li><a href="/ej2-angular/textbox/how-to/set-the-rounded-corner">Set the Rounded Corner</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/set-the-disabled-state">Set the Disabled State</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/set-the-read-only-textbox">Set the Read-only TextBox</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/add-textbox-programmatically">Add TextBox Programmatically</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/add-floating-label-to-textbox-programmatically">Add Floating Label to TextBox Programmatically</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/change-the-floating-label-color-of-the-textbox">Change the Floating Label Color of the TextBox</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/change-the-color-of-the-textbox-based-on-its-value">Change the Color of the TextBox Based on its Value</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/add-floating-label-to-read-only-textbox">Add Floating Label to Read-only TextBox</a></li>
-            <li><a href="/ej2-angular/textbox/how-to/customize-the-textbox-background-color-and-text-color">Customize the TextBox Background-color and Text-color</a></li>
-          </ul>
-        </li>
         <li><a href="/ej2-angular/textbox/migration-from-css-textbox-to-angular-textbox">Migration from CSS textbox</a></li>
         <li><a href="https://ej2.syncfusion.com/angular/documentation/api/textbox/">API Reference</a></li>
     </ul>
@@ -3096,6 +2968,7 @@ Stepper
             <li><a href="/ej2-angular/treegrid/how-to/get-row-cell-index">Get specific row and cell index</a></li>
             <li><a href="/ej2-angular/treegrid/how-to/display-foreign-key-values-in-treegrid">ForeignKey column</a></li>
             <li><a href="/ej2-angular/treegrid/how-to/row-cell-customization">Row and cell customization</a></li>
+            <li><a href="/ej2-angular/treegrid/how-to/customize-the-empty-record-template.md">Customize the empty record template</a></li>
          </ul>
       </li>
       <li><a href="https://ej2.syncfusion.com/angular/documentation/api/treegrid/">API Reference</a></li>
@@ -3205,7 +3078,7 @@ Stepper
     </ul>
  </li> <li>Release Notes
                 <ul>
-				<li>2025 Volume 2 - 30.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/30.2.6">30.2.6</a></li><li><a href="/ej2-angular/release-notes/30.2.5">30.2.5</a></li><li><a href="/ej2-angular/release-notes/30.1.42">30.1.42</a></li><li><a href="/ej2-angular/release-notes/30.1.41">30.1.41</a></li><li><a href="/ej2-angular/release-notes/30.1.40">30.1.40</a></li><li><a href="/ej2-angular/release-notes/30.1.39">30.1.39</a></li><li><a href="/ej2-angular/release-notes/30.1.38">30.1.38</a></li></ul></li><li><a href="/ej2-angular/release-notes/30.2.4">30.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/30.1.37">30.1.37 Main Release</a></li></ul></li><li>2025 Volume 1 - 29.*<ul><li> Weekly Release <ul><li><a href="/ej2-angular/release-notes/29.2.11">29.2.11</a></li><li><a href="/ej2-angular/release-notes/29.2.10">29.2.10</a></li><li><a href="/ej2-angular/release-notes/29.2.8">29.2.8</a></li><li><a href="/ej2-angular/release-notes/29.2.7">29.2.7</a></li><li><a href="/ej2-angular/release-notes/29.2.5">29.2.5</a></li><li><a href="/ej2-angular/release-notes/29.1.41">29.1.41</a></li><li><a href="/ej2-angular/release-notes/29.1.40">29.1.40</a></li><li><a href="/ej2-angular/release-notes/29.1.39">29.1.39</a></li><li><a href="/ej2-angular/release-notes/29.1.38">29.1.38</a></li><li><a href="/ej2-angular/release-notes/29.1.37">29.1.37</a></li><li><a href="/ej2-angular/release-notes/29.1.35">29.1.35</a></li></ul></li><li><a href="/ej2-angular/release-notes/29.2.4">29.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/29.1.33">29.1.33 Main Release</a></li></ul></li><li>2024 Volume 4 - 28.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/28.2.12">28.2.12</a></li><li><a href="/ej2-angular/release-notes/28.2.11">28.2.11</a></li><li><a href="/ej2-angular/release-notes/28.2.9">28.2.9</a></li><li><a href="/ej2-angular/release-notes/28.2.7">28.2.7</a></li><li><a href="/ej2-angular/release-notes/28.2.6">28.2.6</a></li><li><a href="/ej2-angular/release-notes/28.2.5">28.2.5</a></li><li><a href="/ej2-angular/release-notes/28.2.4">28.2.4</a></li><li><a href="/ej2-angular/release-notes/28.1.39">28.1.39</a></li><li><a href="/ej2-angular/release-notes/28.1.38">28.1.38</a></li><li><a href="/ej2-angular/release-notes/28.1.37">28.1.37</a></li><li><a href="/ej2-angular/release-notes/28.1.36">28.1.36</a></li><li><a href="/ej2-angular/release-notes/28.1.35">28.1.35</a></li></ul></li><li><a href="/ej2-angular/release-notes/28.2.3">28.2.3 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/28.1.33">28.1.33 Main Release</a></li></ul></li><li>2024 Volume 3 - 27.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/27.2.5">27.2.5</a></li><li><a href="/ej2-angular/release-notes/27.2.4">27.2.4</a></li><li><a href="/ej2-angular/release-notes/27.2.3">27.2.3</a></li><li><a href="/ej2-angular/release-notes/27.1.58">27.1.58</a></li><li><a href="/ej2-angular/release-notes/27.1.57">27.1.57</a></li><li><a href="/ej2-angular/release-notes/27.1.56">27.1.56</a></li><li><a href="/ej2-angular/release-notes/27.1.55">27.1.55</a></li><li><a href="/ej2-angular/release-notes/27.1.53">27.1.53</a></li><li><a href="/ej2-angular/release-notes/27.1.52">27.1.52</a></li><li><a href="/ej2-angular/release-notes/27.1.51">27.1.51</a></li><li><a href="/ej2-angular/release-notes/27.1.50">27.1.50</a></li></ul></li><li><a href="/ej2-angular/release-notes/27.2.2">27.2.2 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/27.1.48">27.1.48 Main Release</a></li></ul></li><li>2024 Volume 2 - 26.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/26.2.14">26.2.14</a></li><li><a href="/ej2-angular/release-notes/26.2.13">26.2.13</a></li><li><a href="/ej2-angular/release-notes/26.2.12">26.2.12</a></li><li><a href="/ej2-angular/release-notes/26.2.11">26.2.11</a></li><li><a href="/ej2-angular/release-notes/26.2.10">26.2.10</a></li><li><a href="/ej2-angular/release-notes/26.2.9">26.2.9</a></li><li><a href="/ej2-angular/release-notes/26.2.8">26.2.8</a></li><li><a href="/ej2-angular/release-notes/26.2.7">26.2.7</a></li><li><a href="/ej2-angular/release-notes/26.2.5">26.2.5</a></li><li><a href="/ej2-angular/release-notes/26.1.42">26.1.42</a></li><li><a href="/ej2-angular/release-notes/26.1.41">26.1.41</a></li><li><a href="/ej2-angular/release-notes/26.1.40">26.1.40</a></li><li><a href="/ej2-angular/release-notes/26.1.39">26.1.39</a></li><li><a href="/ej2-angular/release-notes/26.1.38">26.1.38</a></li></ul></li><li><a href="/ej2-angular/release-notes/26.2.4">26.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/26.1.35">26.1.35 Main Release</a></li></ul></li><li>2024 Volume 1 - 25.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/25.2.7">25.2.7</a></li><li><a href="/ej2-angular/release-notes/25.2.6">25.2.6</a></li><li><a href="/ej2-angular/release-notes/25.2.5">25.2.5</a></li><li><a href="/ej2-angular/release-notes/25.2.4">25.2.4</a></li><li><a href="/ej2-angular/release-notes/25.1.42">25.1.42</a></li><li><a href="/ej2-angular/release-notes/25.1.41">25.1.41</a></li><li><a href="/ej2-angular/release-notes/25.1.40">25.1.40</a></li><li><a href="/ej2-angular/release-notes/25.1.39">25.1.39</a></li><li><a href="/ej2-angular/release-notes/25.1.38">25.1.38</a></li><li><a href="/ej2-angular/release-notes/25.1.37">25.1.37</a></li></ul></li><li><a href="/ej2-angular/release-notes/25.2.3">25.2.3 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/25.1.35">25.1.35 Main Release</a></li></ul></li>
+				<li>2025 Volume 3 - 31.*<ul><li><a href="/ej2-angular/release-notes/31.1.17">31.1.17 Main Release</a></li></ul></li><li>2025 Volume 2 - 30.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/30.2.7">30.2.7</a></li><li><a href="/ej2-angular/release-notes/30.2.6">30.2.6</a></li><li><a href="/ej2-angular/release-notes/30.2.5">30.2.5</a></li><li><a href="/ej2-angular/release-notes/30.1.42">30.1.42</a></li><li><a href="/ej2-angular/release-notes/30.1.41">30.1.41</a></li><li><a href="/ej2-angular/release-notes/30.1.40">30.1.40</a></li><li><a href="/ej2-angular/release-notes/30.1.39">30.1.39</a></li><li><a href="/ej2-angular/release-notes/30.1.38">30.1.38</a></li></ul></li><li><a href="/ej2-angular/release-notes/30.2.4">30.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/30.1.37">30.1.37 Main Release</a></li></ul></li><li>2025 Volume 1 - 29.*<ul><li> Weekly Release <ul><li><a href="/ej2-angular/release-notes/29.2.11">29.2.11</a></li><li><a href="/ej2-angular/release-notes/29.2.10">29.2.10</a></li><li><a href="/ej2-angular/release-notes/29.2.8">29.2.8</a></li><li><a href="/ej2-angular/release-notes/29.2.7">29.2.7</a></li><li><a href="/ej2-angular/release-notes/29.2.5">29.2.5</a></li><li><a href="/ej2-angular/release-notes/29.1.41">29.1.41</a></li><li><a href="/ej2-angular/release-notes/29.1.40">29.1.40</a></li><li><a href="/ej2-angular/release-notes/29.1.39">29.1.39</a></li><li><a href="/ej2-angular/release-notes/29.1.38">29.1.38</a></li><li><a href="/ej2-angular/release-notes/29.1.37">29.1.37</a></li><li><a href="/ej2-angular/release-notes/29.1.35">29.1.35</a></li></ul></li><li><a href="/ej2-angular/release-notes/29.2.4">29.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/29.1.33">29.1.33 Main Release</a></li></ul></li><li>2024 Volume 4 - 28.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/28.2.12">28.2.12</a></li><li><a href="/ej2-angular/release-notes/28.2.11">28.2.11</a></li><li><a href="/ej2-angular/release-notes/28.2.9">28.2.9</a></li><li><a href="/ej2-angular/release-notes/28.2.7">28.2.7</a></li><li><a href="/ej2-angular/release-notes/28.2.6">28.2.6</a></li><li><a href="/ej2-angular/release-notes/28.2.5">28.2.5</a></li><li><a href="/ej2-angular/release-notes/28.2.4">28.2.4</a></li><li><a href="/ej2-angular/release-notes/28.1.39">28.1.39</a></li><li><a href="/ej2-angular/release-notes/28.1.38">28.1.38</a></li><li><a href="/ej2-angular/release-notes/28.1.37">28.1.37</a></li><li><a href="/ej2-angular/release-notes/28.1.36">28.1.36</a></li><li><a href="/ej2-angular/release-notes/28.1.35">28.1.35</a></li></ul></li><li><a href="/ej2-angular/release-notes/28.2.3">28.2.3 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/28.1.33">28.1.33 Main Release</a></li></ul></li><li>2024 Volume 3 - 27.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/27.2.5">27.2.5</a></li><li><a href="/ej2-angular/release-notes/27.2.4">27.2.4</a></li><li><a href="/ej2-angular/release-notes/27.2.3">27.2.3</a></li><li><a href="/ej2-angular/release-notes/27.1.58">27.1.58</a></li><li><a href="/ej2-angular/release-notes/27.1.57">27.1.57</a></li><li><a href="/ej2-angular/release-notes/27.1.56">27.1.56</a></li><li><a href="/ej2-angular/release-notes/27.1.55">27.1.55</a></li><li><a href="/ej2-angular/release-notes/27.1.53">27.1.53</a></li><li><a href="/ej2-angular/release-notes/27.1.52">27.1.52</a></li><li><a href="/ej2-angular/release-notes/27.1.51">27.1.51</a></li><li><a href="/ej2-angular/release-notes/27.1.50">27.1.50</a></li></ul></li><li><a href="/ej2-angular/release-notes/27.2.2">27.2.2 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/27.1.48">27.1.48 Main Release</a></li></ul></li><li>2024 Volume 2 - 26.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/26.2.14">26.2.14</a></li><li><a href="/ej2-angular/release-notes/26.2.13">26.2.13</a></li><li><a href="/ej2-angular/release-notes/26.2.12">26.2.12</a></li><li><a href="/ej2-angular/release-notes/26.2.11">26.2.11</a></li><li><a href="/ej2-angular/release-notes/26.2.10">26.2.10</a></li><li><a href="/ej2-angular/release-notes/26.2.9">26.2.9</a></li><li><a href="/ej2-angular/release-notes/26.2.8">26.2.8</a></li><li><a href="/ej2-angular/release-notes/26.2.7">26.2.7</a></li><li><a href="/ej2-angular/release-notes/26.2.5">26.2.5</a></li><li><a href="/ej2-angular/release-notes/26.1.42">26.1.42</a></li><li><a href="/ej2-angular/release-notes/26.1.41">26.1.41</a></li><li><a href="/ej2-angular/release-notes/26.1.40">26.1.40</a></li><li><a href="/ej2-angular/release-notes/26.1.39">26.1.39</a></li><li><a href="/ej2-angular/release-notes/26.1.38">26.1.38</a></li></ul></li><li><a href="/ej2-angular/release-notes/26.2.4">26.2.4 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/26.1.35">26.1.35 Main Release</a></li></ul></li><li>2024 Volume 1 - 25.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/25.2.7">25.2.7</a></li><li><a href="/ej2-angular/release-notes/25.2.6">25.2.6</a></li><li><a href="/ej2-angular/release-notes/25.2.5">25.2.5</a></li><li><a href="/ej2-angular/release-notes/25.2.4">25.2.4</a></li><li><a href="/ej2-angular/release-notes/25.1.42">25.1.42</a></li><li><a href="/ej2-angular/release-notes/25.1.41">25.1.41</a></li><li><a href="/ej2-angular/release-notes/25.1.40">25.1.40</a></li><li><a href="/ej2-angular/release-notes/25.1.39">25.1.39</a></li><li><a href="/ej2-angular/release-notes/25.1.38">25.1.38</a></li><li><a href="/ej2-angular/release-notes/25.1.37">25.1.37</a></li></ul></li><li><a href="/ej2-angular/release-notes/25.2.3">25.2.3 Service Pack Release</a></li><li><a href="/ej2-angular/release-notes/25.1.35">25.1.35 Main Release</a></li></ul></li>
 				<li>2023 Volume 4 - 24.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/24.2.9">24.2.9</a></li><li><a href="/ej2-angular/release-notes/24.2.8">24.2.8</a></li><li><a href="/ej2-angular/release-notes/24.2.7">24.2.7</a></li><li><a href="/ej2-angular/release-notes/24.2.6">24.2.6</a></li><li><a href="/ej2-angular/release-notes/24.2.5">24.2.5</a></li><li><a href="/ej2-angular/release-notes/24.2.4">24.2.4</a></li><li><a href="/ej2-angular/release-notes/24.1.47">24.1.47</a></li><li><a href="/ej2-angular/release-notes/24.1.46">24.1.46</a></li><li><a href="/ej2-angular/release-notes/24.1.45">24.1.45</a></li><li><a href="/ej2-angular/release-notes/24.1.44">24.1.44</a></li><li><a href="/ej2-angular/release-notes/24.1.43">24.1.43</a></li></ul></li>				<li><a href="/ej2-angular/release-notes/24.2.3">24.2.3 Service Pack Release</a></li>
 				<li><a href="/ej2-angular/release-notes/24.1.41">24.1.41 Main Release</a></li></ul></li>
 				<li>2023 Volume 3 - 23.*<ul><li> Weekly Release<ul><li><a href="/ej2-angular/release-notes/23.2.7">23.2.7</a></li><li><a href="/ej2-angular/release-notes/23.2.6">23.2.6</a></li><li><a href="/ej2-angular/release-notes/23.2.5">23.2.5</a></li><li><a href="/ej2-angular/release-notes/23.1.44">23.1.44</a></li><li><a href="/ej2-angular/release-notes/23.1.43">23.1.43</a></li><li><a href="/ej2-angular/release-notes/23.1.42">23.1.42</a></li><li><a href="/ej2-angular/release-notes/23.1.41">23.1.41</a></li><li><a href="/ej2-angular/release-notes/23.1.40">23.1.40</a></li><li><a href="/ej2-angular/release-notes/23.1.39">23.1.39</a></li><li><a href="/ej2-angular/release-notes/23.1.38">23.1.38</a></li></ul></li>

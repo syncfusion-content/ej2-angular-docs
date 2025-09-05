@@ -1,20 +1,24 @@
 ---
 layout: post
 title: Mentions in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Mentions in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to integrate and customize the Mentions in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Mentions 
+control: Mentions
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mentions in the Angular Rich Text Editor Component
+# Mentions in Angular Rich Text Editor Component
 
-By integrating the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/) component with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
+The Mention feature, integrated with the Syncfusion Angular Rich Text Editor via the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
+
+## Setup and configuration
 
 Use the [target](https://ej2.syncfusion.com/angular/documentation/api/mention/#target) property of the Mention component to specify the `ID` of the content editable div element within the Rich Text Editor. When setting the target, make sure to append the suffix `_rte-edit-view` to the ID. This allows you to enable the Mention functionality within the Rich Text Editor, so that users can mention or tag other users or objects from the suggested list while editing the text.
 
-When the user types the `@` symbol followed by a character, the Rich Text Editor displays a list of suggestions. Users can then select an item from the list by:
+## Using mentions
+
+When users type the `@` symbol followed by a character the Rich Text Editor, a suggestion list appears, Users can then select an item from the list by:
 
 * Clicking on it
 * Typing the name of the item they want to tag

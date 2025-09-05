@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Detail template in Angular TreeGrid component
 
-The detail template in the TreeGrid component allows you to display additional information about a specific row in the tree grid. This feature is useful when you need to show additional data or custom content that is specific to each row in the tree grid. You can use the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property to define an HTML template for the detail row. This template can include any HTML element or Angular component that you want to display as detail content.
+The detail template in the TreeGrid component allows displaying additional information about a specific row in the TreeGrid. This feature is useful when additional data or custom content needs to be shown that is specific to each row in the TreeGrid. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property can be used to define an HTML template for the detail row. This template can include any HTML element or Angular component that needs to be displayed as detail content.
 
-Here's an example of using the `detailTemplate` property in the tree grid:
+Here's an example of using the `detailTemplate` property in the TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,9 +80,9 @@ export interface DateFormat extends Window {
 
 ## Rendering custom component
 
-The TreeGrid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the tree grid.
+The TreeGrid component provides a powerful feature that allows rendering custom components inside the detail row. This feature is helpful when additional information or functionality needs to be added for a specific row in the TreeGrid.
 
-To render a custom component inside the detail row, you need to define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/tregrid/#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detaildatabound) event. This template can include any HTML element or Angular component that you want to display as the detail content.
+To render a custom component inside the detail row, define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detaildatabound) event. This template can include any HTML element or Angular component that needs to be displayed as the detail content.
 
 The `detailDataBound` event is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
 
@@ -101,13 +101,13 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 ## Custom button in custom column to hide or show detail template 
 
-You can display or conceal the detail row by utilizing a custom button through the column template feature of the Tree Grid.
+The detail row can be displayed or concealed by utilizing a custom button through the column template feature of the TreeGrid.
 
-The column template feature provides options to render a custom component in a TreeGrid column instead of a field value. You can achieve this by utilizing the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property of the Tree Grid. This property allows you to display custom elements in a column instead of the field value. It is advantageous when you wish to display images, buttons, or other customized content within a column.
+The column template feature provides options to render a custom component in a TreeGrid column instead of a field value. This can be achieved by utilizing the [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) property of the TreeGrid. This property allows displaying custom elements in a column instead of the field value. It is advantageous when images, buttons, or other customized content needs to be displayed within a column.
 
-For more information about column template, refer this [section](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-template).
+For more information about column template, refer to this [section](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-template).
 
-Here's an illustrative example showcasing how to implement showing/hiding a detail row using the column template. Utilize the column template to render a button. In the button click event, retrieve the detail row and add a CSS class to the detail row element. Based on the CSS class, you can toggle the visibility of the detail row.
+Here's an illustrative example showcasing how to implement showing/hiding a detail row using the column template. Utilize the column template to render a button. In the button click event, retrieve the detail row and add a CSS class to the detail row element. Based on the CSS class, the visibility of the detail row can be toggled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,7 +206,9 @@ export interface DateFormat extends Window {
 
 ## Render detail template for only parent records 
 
-In the Tree Grid, you have the capability to render the detail row exclusively for parent records based on a condition. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/tregrid/#detailtemplate) property allows you to include any HTML element or Angular component that you wish to display as the detail content, contingent on a condition.
+In the TreeGrid, the detail row can be rendered exclusively for parent records based on a condition. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property allows including any HTML element or Angular component that needs to be displayed as the detail content, contingent on a condition.
+
+The `hasChildRecords` property can be used to determine whether a record has child records, making it useful for conditionally rendering detail templates only for parent records.
 
 In the following demonstration, the detail row is presented only for parent records using a condition in the ng-template.
 

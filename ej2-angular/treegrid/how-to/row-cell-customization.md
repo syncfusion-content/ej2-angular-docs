@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Row cell customization in Angular Treegrid component | Syncfusion
-description: Learn here all about Row cell customization in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Row cell customization in Angular TreeGrid component | Syncfusion
+description: Learn how to customize rows and cells in the Syncfusion Angular TreeGrid component using queryCellInfo and rowDataBound events.
 platform: ej2-angular
 control: Row cell customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row cell customization in Angular Treegrid component
+# Row cell customization in Angular TreeGrid component
 
-In Tree Grid we can customize the row and cell using [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events of Tree Grid.
+Rows and cells in the TreeGrid can be customized using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events.
 
-In the below demo, we customize and show the command buttons only for the parent rows using [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events of Tree Grid.
+In the demonstration below, command buttons are customized and shown only for parent rows, as configured in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,7 +23,7 @@ In the below demo, we customize and show the command buttons only for the parent
 {% include code-snippet/treegrid/refresh-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs15" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> For comprehensive feature overviews, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

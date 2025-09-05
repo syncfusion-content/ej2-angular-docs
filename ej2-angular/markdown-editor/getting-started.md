@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Markdown Editor component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Markdown editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Markdown Editor component | Syncfusion
+description:  Checkout and learn about Getting started with Angular Markdown Editor component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Markdown Editor Component
+# Getting Started with Angular Markdown Editor Component
 
 This section explains the steps required to create a simple Angular Markdown Editor component and configure its available functionalities.
 
@@ -41,7 +41,7 @@ By default, it will create a CSS-based application.
 
 Next, navigate to the created project folder:
 
-```
+```bash
 cd my-app
 ```
 ## Adding Syncfusion Rich Text Edior package
@@ -169,7 +169,7 @@ To get the maximum number of characters in the Markdown Editor's content, use [g
 
 > You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Markdown Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/markdown-editor/overview) to knows how to render and configure the markdown editor tools.
 
-## See Also
+## See also
 
 * [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-modes)
 * [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe)

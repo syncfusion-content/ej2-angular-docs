@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Checkbox in Angular Multi select component
 
-The MultiSelect has built-in support to select multiple values through checkbox, when [`mode`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#mode) property set as `CheckBox`.
+The MultiSelect component provides built-in support for selecting multiple values through checkboxes when the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#mode) property is set to `CheckBox`.
 
-To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
+To enable checkbox functionality, inject the `CheckBoxSelection` module into the MultiSelect component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,11 +28,11 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 ## Select All
 
-The MultiSelect component has in-built support to select the all list items using `Select All` options in the header.
+The MultiSelect component has built-in support for selecting all list items using the `Select All` option in the header.
 
-When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#showselectall) property is set to true, by default Select All text will show. You can customize the name attribute of the Select All option by using [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#selectalltext).
+When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#showselectall) property is set to true, the Select All text displays by default. The name attribute of the Select All option can be customized using the [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#selectalltext) property.
 
-For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext). You can customize the name attribute of the unSelect All option by using [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext).
+For the unSelect All option, the unSelect All text displays by default. The name attribute of the unSelect All option can be customized using the [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ For the unSelect All option, by default unSelect All text will show. You can cus
 
 ## Selection Limit
 
-Defines the limit of the selected items using [`maximumSelectionLength`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#maximumselectionlength).
+The limit for selected items can be defined using the [`maximumSelectionLength`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#maximumselectionlength) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ Defines the limit of the selected items using [`maximumSelectionLength`](https:/
 
 ## Selection Reordering
 
-Using [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enableselectionorder) to Reorder the selected items in popup visibility state.
+The [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enableselectionorder) property enables reordering of selected items when the popup is visible.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular SpeechToText component
+# Getting Started with the Angular SpeechToText Component
 
-This section explains how to create a default SpeechToText component and demonstrate the basic usage of the SpeechToText.
+This section provides a step-by-step guide to creating your first Angular application and integrating the Syncfusion SpeechToText component.
 
 ## Dependencies
 
@@ -24,9 +24,9 @@ The list of dependencies required to use the SpeechToText component in your appl
     |-- @syncfusion/ej2-popups
 ```
 
-## Setup Angular environment
+## Set up Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
 
 ```
 npm install -g @angular/cli
@@ -34,26 +34,26 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI command.
 
 ```
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion OTP Input package
+## Installing the Syncfusion SpeechToText package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion packages from this npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the below command.
 
-Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package to the application.
+The Syncfusion Angular SpeechToText component is included in the [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package. Install it using the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs --save
@@ -61,21 +61,21 @@ npm install @syncfusion/ej2-angular-inputs --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For applications using an Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the below command.
 
-Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38-ngcc) package to the application.
+Add the [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below.
 
 ```bash
 @syncfusion/ej2-angular-inputs:"20.4.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the `ngcc` tag is not specified while installing the package, the Ivy library package will be installed by default, which may cause a warning in projects using older versions of Angular.
 
 ## Adding CSS reference
 
@@ -88,9 +88,9 @@ Add SpeechToText component's styles as given below in `style.css`.
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 ```
 
-## Adding Syncfusion SpeechToText component
+## Adding the Syncfusion SpeechToText component
 
-Modify the template in `app.component.ts` file to render the SpeechToText component.
+Modify the `app.component.ts` file to apply the [`ejs-speechtotext`] directive to a standard HTML button element. This directive initializes the SpeechToText component with its default functionality.
 
 ```typescript
 
@@ -121,7 +121,7 @@ Run the application in the browser using the following command:
 ng serve
 ```
 
-The following example shows a default SpeechToText component.
+The following example demonstrates a default SpeechToText component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,13 +137,13 @@ The following example shows a default SpeechToText component.
 
 {% previewsample "page.domainurl/samples/speech-to-text/getting-started/index" %}
 
-> The [SpeechToText](../api/speech-to-text/) component requires an internet connection and using a browser that supports [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) from the Web Speech API.
+> The [SpeechToText](../api/speech-to-text/) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
 
-## Adding button content
+## Customizing button content
 
-You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text/#buttonSettings) property.
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [`content`](../api/speech-to-text/buttonSettingsModel/#content) property to define the text for the start listening state and the [`stopContent`](../api/speech-to-text/buttonSettingsModel/#stopContent) property for the stop listening state. These properties are configured within the [`buttonSettings`](../api/speech-to-text/#buttonSettings) property.
 
-The following example shows how to configure `buttonSettings` in SpeechToText component.
+The following example shows how to configure `buttonSettings` in the SpeechToText component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

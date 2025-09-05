@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular Ribbon component
 
-This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon component.
+The Angular Ribbon component triggers a variety of events in response to user interactions, such as selecting a tab, clicking a button, or expanding the ribbon. This section provides detailed explanations and code examples for each available event.
 
 ## tabSelected
 
-The [tabSelected](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#tabselected) event is triggered after selecting the tab item.
+The [tabSelected](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#tabselected) event is triggered after a tab is successfully selected, allowing you to execute logic based on the newly active tab.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -52,7 +52,7 @@ export class AppComponent {
 
 ## tabSelecting
 
-The [tabSelecting](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#tabselecting) event is triggered before selecting the tab item.
+The [tabSelecting](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#tabselecting) event is triggered before a tab is selected. This event can be canceled to prevent the tab selection.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -90,7 +90,7 @@ export class AppComponent {
 
 ## ribbonCollapsing
 
-The [ribbonCollapsing](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#ribboncollapsing) event is triggered before collapsing the ribbon.
+The [ribbonCollapsing](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#ribboncollapsing) event is triggered before the ribbon is collapsed. This action can be canceled.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -128,7 +128,7 @@ export class AppComponent {
 
 ## ribbonExpanding
 
-The [ribbonExpanding](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#ribbonexpanding) event is triggered before expanding the ribbon.
+The [ribbonExpanding](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#ribbonexpanding) event is triggered before the ribbon is expanded. This action can be canceled.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -166,7 +166,7 @@ export class AppComponent {
 
 ## launcherIconClick
 
-The [launcherIconClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#launchericonclick) event is triggered when the launcher icon of the group is clicked.
+The [launcherIconClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#launchericonclick) event is triggered when the launcher icon of a group is clicked. This is useful for opening dialogs or performing group-specific actions.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -204,13 +204,13 @@ export class AppComponent {
 
 ## overflowPopupOpen
 
-The [overflowPopupOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupopen) event is triggered while opening the overflow popup.
+The [overflowPopupOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupopen) event is triggered while the overflow popup is opening.
 
 ## overflowPopupClose
 
-The [overflowPopupClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupclose) event is triggered while closing the overflow popup.
+The [overflowPopupClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupclose) event is triggered while the overflow popup is closing.
 
-The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+The following code example demonstrates the ribbon with the `overflowPopupOpen` and `overflowPopupClose` events.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -254,7 +254,7 @@ export class AppComponent {
 
 ### clicked
 
-The [clicked](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettings/#clicked) event is triggered when the Button is clicked.
+The [clicked](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettings/#clicked) event is triggered when a ribbon button is clicked.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -292,7 +292,7 @@ export class AppComponent {
 
 ### created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettings/#created) event is triggered when the Button is created.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonButtonSettings/#created) event is triggered when a ribbon button is created.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -332,7 +332,7 @@ export class AppComponent {
 
 ### change
 
-The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the checkbox state is changed.
+The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the state of the checkbox is changed.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -410,7 +410,7 @@ export class AppComponent {
 
 ### change
 
-The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#change) event is triggered while changing the colors.
+The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#change) event is triggered when changing the color value.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -485,7 +485,7 @@ export class AppComponent {
 
 ### open
 
-The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#open) event is triggered while opening the ColorPicker popup.
+The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#open) event is triggered while the ColorPicker popup is opening.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -522,7 +522,7 @@ export class AppComponent {
 
 ### select
 
-The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#select) event is triggered while selecting the color in picker/palette, when showButtons property is enabled.
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#select) event is triggered when selecting a color from the picker or palette, particularly when the `showButtons` property is enabled.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -559,7 +559,7 @@ export class AppComponent {
 
 ### beforeClose
 
-The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before closing the ColorPicker popup.
+The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before the ColorPicker popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -596,7 +596,7 @@ export class AppComponent {
 
 ### beforeOpen
 
-The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before opening the ColorPicker popup.
+The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before the ColorPicker popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -633,7 +633,7 @@ export class AppComponent {
 
 ### beforeTileRender
 
-The [beforeTileRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforetilerender) event is triggered while rendering each palette tile.
+The [beforeTileRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettings/#beforetilerender) event is triggered while rendering each palette tile, allowing for customization.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -671,7 +671,7 @@ export class AppComponent {
 
 ### change
 
-The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or when the model value is changed by the user.
+The [change](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or the model value is changed by the user.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -749,7 +749,7 @@ export class AppComponent {
 
 ### open
 
-The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#close) event is triggered when the popup is opened.
+The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#open) event is triggered when the popup is opened.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -788,7 +788,7 @@ export class AppComponent {
 
 ### created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#created) event is triggered when the popup is Created.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#created) event is triggered when the ComboBox is created.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -827,7 +827,7 @@ export class AppComponent {
 
 ### filtering
 
-The [filtering](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#filtering) event triggers on typing a character in the combobox.
+The [filtering](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#filtering) event triggers when typing a character in the ComboBox.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -905,7 +905,7 @@ export class AppComponent {
 
 ### beforeOpen
 
-The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#beforeopen) event triggers before opening the popup.
+The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonComboBoxSettings/#beforeopen) event triggers before the popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -946,7 +946,7 @@ export class AppComponent {
 
 ### beforeClose
 
-The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before closing the DropDownButton popup.
+The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before the DropDownButton popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -984,7 +984,7 @@ export class AppComponent {
 
 ### beforeOpen
 
-The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before opening the DropDownButton popup.
+The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before the DropDownButton popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1060,7 +1060,7 @@ export class AppComponent {
 
 ### open
 
-The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#open) event is triggered while opening the DropDownButton popup.
+The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#open) event is triggered when the DropDownButton popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1098,7 +1098,7 @@ export class AppComponent {
 
 ### close
 
-The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#close) event is triggered while closing the DropDownButton popup.
+The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#close) event is triggered when the DropDownButton popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1136,7 +1136,7 @@ export class AppComponent {
 
 ### created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDown is created.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDownButton is created.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1174,7 +1174,7 @@ export class AppComponent {
 
 ### select
 
-The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#select) event is triggered while selecting an action item in the DropDownButton popup.
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#select) event is triggered when an action item is selected in the DropDownButton popup.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1214,7 +1214,7 @@ export class AppComponent {
 
 ### beforeClose
 
-The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before closing the SplitButton popup.
+The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before the SplitButton popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1250,7 +1250,7 @@ export class AppComponent {
 
 ### beforeOpen
 
-The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before opening the SplitButton popup.
+The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before the SplitButton popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1286,7 +1286,7 @@ export class AppComponent {
 
 ### beforeItemRender
 
-The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of SplitButton.
+The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of the SplitButton.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1322,7 +1322,7 @@ export class AppComponent {
 
 ### open
 
-The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#open) event is triggered while opening the SplitButton popup.
+The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#open) event is triggered when the SplitButton popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1358,7 +1358,7 @@ export class AppComponent {
 
 ### close
 
-The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#close) event is triggered while opening the SplitButton popup.
+The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#close) event is triggered when the SplitButton popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1430,7 +1430,7 @@ export class AppComponent {
 
 ### select
 
-The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#select) event is triggered while selecting an action item in the SplitButton popup.
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#select) event is triggered when an action item is selected in the SplitButton popup.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1466,7 +1466,7 @@ export class AppComponent {
 
 ### click
 
-The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#click) event is triggered while clicking the primary button in the SplitButton.
+The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettings/#click) event is triggered when clicking the primary button in the SplitButton.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1504,7 +1504,7 @@ export class AppComponent {
 
 ### beforeClick
 
-The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the GroupButton items.
+The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before a button is selected from the GroupButton items.
 
 ```javascript
 
@@ -1565,7 +1565,7 @@ export class AppComponent {
 
 ### click
 
-The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the GroupButton items.
+The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when a button is selected from the GroupButton items.
 
 ```javascript
 
@@ -1627,7 +1627,7 @@ export class AppComponent {
 
 ### beforeClose
 
-The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeclose) event is triggered before closing the fileMenu popup.
+The [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeclose) event is triggered before the File Menu popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1673,7 +1673,7 @@ export class AppComponent {
 
 ### beforeOpen
 
-The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeopen) event is triggered before Opening the fileMenu popup.
+The [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeopen) event is triggered before the File Menu popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1719,7 +1719,7 @@ export class AppComponent {
 
 ### beforeItemRender
 
-The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon fileMenu item.
+The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon File Menu item.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1765,7 +1765,7 @@ export class AppComponent {
 
 ### open
 
-The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#open) event is triggered when the fileMenu popup is opened.
+The [open](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#open) event is triggered when the File Menu popup opens.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1811,7 +1811,7 @@ export class AppComponent {
 
 ### close
 
-The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#close) event is triggered when the fileMenu popup is closed.
+The [close](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#close) event is triggered when the File Menu popup closes.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1857,7 +1857,7 @@ export class AppComponent {
 
 ### select
 
-The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#select) event is triggered while selecting an item in the ribbon fileMenu.
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettings/#select) event is triggered when an item is selected in the ribbon File Menu.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -1905,7 +1905,7 @@ export class AppComponent {
 
 ### backStageItemClick
 
-The [backStageItemClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#backstageitemclick) event is triggered when backstage item is selected.
+The [backStageItemClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#backstageitemclick) event is triggered when a backstage item is selected.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -2072,7 +2072,7 @@ export class AppComponent {
 
 ### itemHover
 
-The [itemHover](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hover over the gallery item.
+The [itemHover](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hovering over a gallery item.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -2124,7 +2124,7 @@ export class AppComponent {
 
 ### beforeItemRender
 
-The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered while rendering each gallery item.
+The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered before each gallery item is rendered.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -2176,7 +2176,7 @@ export class AppComponent {
 
 ### beforeSelect
 
-The [beforeSelect](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before selecting an item in the Ribbon gallery.
+The [beforeSelect](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before an item is selected in the Ribbon gallery.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -2228,7 +2228,7 @@ export class AppComponent {
 
 ### select
 
-The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#select) event is triggered while selecting an item in the Ribbon Gallery.
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#select) event is triggered when an item is selected in the Ribbon Gallery.
 
 ```javascript
 import { Component } from "@angular/core";

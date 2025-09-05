@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Cell editing in Angular TreeGrid component | Syncfusion
-description: Learn here all about Inline editing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Inline editing in Angular TreeGrid component | Syncfusion
+description: Learn how to use inline editing in the Syncfusion Angular TreeGrid component, including cell, row, and programmatic editing along with advanced editing features.
 platform: ej2-angular
-control: Cell editing 
+control: Inline editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Inline editing in Angular TreeGrid component
 
-The Angular TreeGrid component provides a powerful in-line editing feature that allows you to edit cell values of row directly within the tree grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal editing, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
+The Angular TreeGrid component offers an inline editing feature to directly edit cell values within rows. This mode enables quick modifications without a separate editing form. In normal editing, the selected record enters edit state, allowing for in-place value changes that can be saved back to the data source.
 
-> When enabling editing, it is necessary to set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#isprimarykey) property value to **true** for the unique column.
+> When enabling editing, set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#isprimarykey) property to **true** for the primary key column.
 
 ## Cell editing
 
-Cell editing mode allows to edit individual cells within the Tree Grid. When a cell is double-clicked, it enters the edit state, allowing you to modify the cell value directly. Changes made to the cell can be saved to the data source. To enable cell edit, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Cell`.
+Cell editing mode allows editing of individual cells within the TreeGrid. Double-click a cell to enter edit state and change its value. Changes are saved to the data source. To enable cell editing, set [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) to `Cell`.
 
-Here’s an example of how to enable **Cell** editing in the tree grid: 
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,21 +28,20 @@ Here’s an example of how to enable **Cell** editing in the tree grid:
 {% include code-snippet/treegrid/inline-edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs1" %}
 
-> Cell edit mode is the default mode of editing.
-
-> The following events are triggered for the cell edit mode.
-> 1. [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit) event when editing of a cell begins.
-> 2. [cellSave](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsave) event triggers on saving the cell.
-> 3. [cellSaved](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsaved) event triggers after the cell was saved.
+> Cell edit mode is the default editing mode.
+> The following events are triggered during cell editing:
+> 1. [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit): When cell editing begins.
+> 2. [cellSave](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsave): When the cell is being saved.
+> 3. [cellSaved](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsaved): After the cell was saved.
 
 ## Row editing
 
-Row editing mode allows users to edit the entire row of the currently selected record within the TreeGrid component. When editing is initiated, the entire row enters the edit state, enabling users to modify cell values simultaneously. Any changes made to the row can be saved to the data source. To enable row editing mode, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) property to `Row`.
+Row editing mode enables editing of an entire row for the selected record. Entering edit state allows modification of all cell values in that row, which can then be saved to the data source. To enable row editing mode, set [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) to `Row`.
 
-Here’s an example of how to enable **Row** editing in the tree grid: 
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,14 +51,14 @@ Here’s an example of how to enable **Row** editing in the tree grid:
 {% include code-snippet/treegrid/inline-edit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs2" %}
 
-## Automatically update a specific column based on another column edited value
+## Automatically update a specific column based on another column's edited value
 
-You can automatically update the value of a column based on the edited value of another column using [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) property. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. To enable this functionality, define the [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#edittype) of the column to specify the type of editor used for editing the column, and provide an object for the `edit` property to customize the editing behavior. 
+Columns can be updated dynamically in response to editing another column by configuring [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) and specifying [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#edittype). This is useful for real-time calculations and value propagation.
 
-In the following demo, the price column value is updated based on the units and unitPrice column value while batch editing.
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +68,7 @@ In the following demo, the price column value is updated based on the units and 
 {% include code-snippet/treegrid/inline-edit-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs3" %}
 
 ## Cancel edit based on condition
@@ -88,38 +87,20 @@ In the following demo, the CRUD operation is prevented based on the **priority**
 {% include code-snippet/treegrid/inline-edit-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs4" %}
 
 ## Perform CRUD action programmatically
 
-Performing CRUD actions programmatically refers to the ability to create, read, update, and delete data in a system or application using code instead of manual user interaction.
+CRUD actions can be performed programmatically:
+- [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord): Add a new row at a specified index or position.
+- [startEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit): Change the selected row to edit state.
+- [updateRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updaterow): Update row data at the specified index.
+- [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue): Update only the cell value visually (useful for unbound columns).
+- [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid#updatecell): Update the value of a cell and persist it to the data source.
+- [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord): Delete the selected row.
 
-* To add a new record to the Tree Grid, use the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method. In this method, you can pass the **data** parameter to add a new record to the tree grid, the **index** parameter to add a record at a specific row index and the **position** parameter to refer the position such as Below, Above or as a Child to the selected row, where the new record is to be added. If you call this method without any parameters, it will create an empty row in the tree grid. If an index is not specified, the newly added record will be displayed at the zeroth index.
-
-* To change the selected row to the edit state, use the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit) method. Before invoking this method, it is necessary to select a row in the tree grid.
-
-* If you need to update the row data in the Tree Grid’s data source, you can use the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updaterow) method. In this method, you need to pass the **index** value of the row to be updated along with the updated **data**.
-
-* If you need to update the particular cell in the row, you can use the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue) and [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid#updatecell) method. 
-
-    * `setCellValue` method:
-
-        In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell. When using this method, any changes made to a cell will only be reflected visually in the UI of the tree grid alone, not persisted or saved in the underlying data source. This method is commonly employed for unbound columns, such as auto-calculated columns or formula columns, where the values are derived or computed based on other data within the tree grid or external calculations. By using this method, you can update the visual representation of these unbound columns without modifying the actual data source.
-
-    * `updateCell` method:
-
-        This method is used to update the value of a specific cell within the Tree Grid component. This method requires the following parameters:
-
-            * Row Index: The index of the row containing the cell to be updated.
-            * Field Name: The name of the field corresponding to the cell to be updated.
-            * New Value: The new value to be assigned to the cell.
-
-        By invoking this method with the appropriate parameters, you can efficiently update the value of the specified cell in the underlying data source associated with the Tree Grid.
-
-* To remove a selected row from the Tree Grid, use the [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord) method. For both edit and delete operations, you must select a row first.
-
-Here's an example demonstrating how to perform CRUD actions using the above method in the tree grid:
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,16 +110,14 @@ Here's an example demonstrating how to perform CRUD actions using the above meth
 {% include code-snippet/treegrid/inline-edit-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs5" %}
 
 ## Show confirmation dialog while deleting
 
-Displaying a confirmation dialog adds an extra layer of confirmation when deleting a record from the tree grid. This dialog prompts for confirmation before proceeding with the deletion, ensuring that accidental or undesired deletions are avoided. The deletion can proceed only if the decision is certain. The TreeGrid component provides a built-in confirmation dialog that can be used to confirm a deleting action.
+Enable the [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#showdeleteconfirmdialog) in [editSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings) to prompt for confirmation prior to deletion. By default, this is set to **false**.
 
-To enable the confirmation dialog for the delete operation in the Tree Grid, you can set the [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#showdeleteconfirmdialog) property of the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings) configuration to **true**. By default, this property is set to **false**.
-
-Here's an example demonstrating how to show a confirmation dialog when deleting a record in the tree grid:
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +127,7 @@ Here's an example demonstrating how to show a confirmation dialog when deleting 
 {% include code-snippet/treegrid/inline-edit-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs6" %}
 
 ## Display default value for columns while adding
@@ -167,20 +146,16 @@ Here's an example of how to set a default value for a column:
 {% include code-snippet/treegrid/inline-edit-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs7" %}
 
 ## Delete multiple rows
 
-The delete multiple rows feature in the TreeGrid component allows you to easily remove multiple rows from the tree grid at once. This feature is useful when you want to delete multiple records simultaneously. There are two approaches to implement this feature: using the inbuilt toolbar delete option or using a method.
+Multiple row deletion can be performed using the TreeGrid toolbar or method calls. To enable multiple selection, set [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) to **Multiple**. Use the toolbar or these methods:
+- [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord): Deletes selected records.
+- [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterow): Deletes a row by passing the `<tr>` element.
 
-**Using the inbuilt toolbar delete option**
-
-The TreeGrid component provides a user-friendly interface for performing various actions, including deleting rows using the inbuilt toolbar. To enable the delete multiple rows using the toolbar, you need to configure the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property of the tree grid and set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) property as **multiple** to enable multiple row selection.
-
-To delete multiple selected records in the tree grid, first you need to select multiple rows in the tree grid by highlighting or checking the corresponding checkboxes. Once the desired rows are selected, you can click on the delete icon located in the toolbar. This action will initiate the deletion process and remove the selected records from the tree grid.
-
-Here's an example demonstrating how to delete multiple selected records using a toolbar:
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,7 +165,7 @@ Here's an example demonstrating how to delete multiple selected records using a 
 {% include code-snippet/treegrid/inline-edit-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs8" %}
 
 > Also delete the selected records using keyboard shortcut key **delete**.
@@ -230,11 +205,9 @@ You can delete multiple rows programmatically by using following method.
 
 ## Move the focus to a particular cell instead of first cell while editing a row
 
-The TreeGrid component allows you to move the focus to a specific cell when editing a row, rather than the default behavior of focusing on the first cell in the row. This feature can be useful when you want to improve the editing experience by automatically focusing on a particular cell that requires immediate attention.
+To move focus to a specific cell (rather than the first cell) on editing, handle the [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#recordDoubleClick) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) events.
 
-To achieve this functionality, you can leverage the [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#recordDoubleClick) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) events of the TreeGrid component. The `recordDoubleClick` event is triggered when a row in the tree grid is double-clicked, indicating the intention to edit that row. By handling these events and programmatically moving the focus to the desired cell within the row.
-
-Here's an example of how to use the `recordDoubleClick` event to move the focus to a particular cell:
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -244,18 +217,14 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 {% include code-snippet/treegrid/inline-edit-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs10" %}
 
-## Enable editing in single click
+## Enable editing with single click
 
-Enabling single-click editing in the Tree Grid's **Row** editing mode is a valuable feature that allows you to make a row editable with just one click. This can be achieved by using the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit) and [endEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) methods.
+Editing can be enabled with a single click in row editing mode by binding to the `mouseup` event and invoking [startEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit) and [endEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit). For cell editing mode, use [editCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#editcell).
 
-To implement this feature, you need to bind the `mouseup` event for the tree grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures that the editing mode is triggered when clicking on a specific element within the tree grid.
-
->In cell edit mode, you can achieve the same functionality using the [editCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#editcell) method instead of using the `startEdit` method.
-
-The following sample demonstrates how to enable editing in a single click using the `mouseup` event along with the [load](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#load) event:
+Example for single-click editing:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -265,5 +234,5 @@ The following sample demonstrates how to enable editing in a single click using 
 {% include code-snippet/treegrid/inline-edit-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/inline-edit-cs11" %}

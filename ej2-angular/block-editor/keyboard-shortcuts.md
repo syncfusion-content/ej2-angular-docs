@@ -31,7 +31,7 @@ These shortcuts enable quick creation of different block types and management of
 | Actions | Windows | Mac |
 |---------|---------|-----|
 | Create Paragraph | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>P</kbd> |
-| Create CheckList | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>7</kbd> |
+| Create Checklist | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>7</kbd> |
 | Create Bullet List | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>8</kbd> |
 | Create Numbered List | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>9</kbd> |
 | Create Heading 1 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>1</kbd> |
@@ -46,7 +46,7 @@ These shortcuts enable quick creation of different block types and management of
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation and movement.
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
 [For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
 
 | Actions | Windows | Mac |
@@ -73,11 +73,11 @@ These shortcuts cover general editor functionality including undo/redo operation
 
 ## Customizing keyboard shortcuts
 
-You can customize menu level shortcuts such as `Slash Command Menu`, `Block Action Menu` and `Context Menu` on the respective menu settings config by modifying it's `shortcut` property.
+You can customize shortcuts for menu-based actions, such as the `Slash Command Menu`, `Block Action Menu`, and `Context Menu`, by modifying the `shortcut` property in their respective menu settings.
 
 For other operations, you can customize the keyboard shortcuts by configuring the [keyConfig](../api/blockeditor/#keyconfig) property when initializing the Block Editor component. This allows you to override default shortcuts or add new ones according to your application's requirements.
 
-In the below example, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
+In the example below, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';

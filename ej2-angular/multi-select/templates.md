@@ -1,33 +1,34 @@
 ---
 layout: post
-title: Templates in Angular Multi select component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular MultiSelect component | Syncfusion
+description: Learn here all about Templates in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Multi select component
+# Templates in Angular MultiSelect component
 
-The MultiSelect has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
+The MultiSelect component provides comprehensive template customization options for list items, group headers, selected values, headers and footers. These templates use the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render elements with full data binding support, enabling rich UI customization for various use cases such as displaying complex data structures, creating multi-column layouts, and providing contextual information.
 
 ## Item template
 
-The content of each list item within the MultiSelect can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#itemtemplate) property.
+The content of each list item within the MultiSelect can be customized using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#itemtemplate) property. This template receives the data item as context, allowing access to all properties for custom rendering.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item displays data in a two-column layout to show relevant information effectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/item-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/item-template-cs1/src/main.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
 {% include code-snippet/multiselect/item-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/item-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,20 +36,21 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Value template
 
-The currently selected value that is displayed by default on the MultiSelect input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#valuetemplate) property.
+The display of currently selected values in the MultiSelect input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#valuetemplate) property. This template affects only the visual representation of selected items in the input field, not the underlying component values.
 
-In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the MultiSelect input, which is separated by a hyphen.
+In the following sample, selected values appear as combined text displaying both `FirstName` and `City` separated by a hyphen in the MultiSelect input field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/value-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/value-template-cs1/src/main.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
 {% include code-snippet/multiselect/value-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/value-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,20 +58,21 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#grouptemplate) property. This template is common for both inline and floating group header template.
+The group header titles that categorize sub-items can be customized using the [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#grouptemplate) property. This template applies to both inline and floating group header styles and receives the group data as context.
 
-In the following sample, employees are grouped according to their city.
+In the following sample, employees are grouped by city with custom group header styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/group-template-cs1/src/main.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
 {% include code-snippet/multiselect/group-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/group-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,20 +80,21 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the MultiSelect, and any custom element can be placed as a header element using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#headertemplate) property.
+The header element appears at the top of the popup list and can display custom content using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#headertemplate) property. This template is useful for adding titles, instructions, or column headers for structured data display.
 
-In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
+In the following sample, the header and list items are designed as a two-column grid layout with appropriate column headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/header-template-cs1/src/main.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
 {% include code-snippet/multiselect/header-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/header-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,20 +102,21 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The MultiSelect has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#footertemplate) property.
+The footer element appears at the bottom of the popup list and can contain summary information or additional actions using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#footertemplate) property. Common uses include displaying item counts, action buttons, or additional navigation options.
 
-In the following sample, footer element displays the total number of list items present in the MultiSelect.
+In the following sample, the footer displays the total count of available list items in the MultiSelect.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/footer-template-cs1/src/main.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
 {% include code-snippet/multiselect/footer-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/footer-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,17 +124,21 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The MultiSelect is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#norecordstemplate) property.
+The MultiSelect supports custom design for the popup list content when no data is available or no search matches are found using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#norecordstemplate) property. This template enhances user experience by providing clear feedback about data availability.
 
-In the following sample, popup list content displays the notification of no data available.
+In the following sample, the popup displays a custom notification when no data is available.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/norecords-template-cs1/src/main.ts %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/multiselect/norecords-template-cs1/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/norecords-template-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,17 +146,21 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#actionfailuretemplate) property.
+The popup list content can be customized when data fetch requests fail at the remote server using the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#actionfailuretemplate) property. This template provides users with appropriate error messaging and potential recovery actions.
 
-In the following sample, when the data fetch request fails, the MultiSelect displays the notification.
+In the following sample, the MultiSelect displays a custom error notification when data fetch requests fail.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/norecords-template-cs2/src/main.ts %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/multiselect/norecords-template-cs2/src/template.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/multiselect/norecords-template-cs2/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   

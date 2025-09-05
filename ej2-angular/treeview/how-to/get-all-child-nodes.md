@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Get all child nodes in Angular TreeView component
 
-This section demonstrates how to get the child nodes from a corresponding parent ID. You can get the node details of the TreeView using the [`getNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#getnode) method, you can get the node details of TreeView. Please refer to the following sample for an example implementation.
+This section demonstrates how to retrieve child nodes from a corresponding parent node ID in hierarchical data structures. The TreeView component provides the [`getNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#getnode) method to access node details and traverse the tree structure programmatically. This functionality is essential for scenarios such as expanding specific branches, performing operations on node hierarchies, or implementing custom navigation patterns.
+
+The `getNode` method returns detailed information about a specific node, including its child elements, which enables you to access and manipulate the entire subtree. This approach is particularly useful when working with dynamic data sources or when you need to implement custom tree traversal logic based on parent-child relationships.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

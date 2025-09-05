@@ -1,37 +1,44 @@
 ---
 layout: post
-title: Expand and collapse of a nodes in Angular Diagram component | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Expand and collapse nodes in Angular Diagram component | Syncfusion®
+description: Learn how to implement expand and collapse functionality for nodes in Syncfusion® Angular Diagram component with customizable icons and states.
 platform: ej2-angular
 control: Expand and collapse of nodes
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand icon and collapse icon in Angular Diagram control
+# Expand and Collapse Nodes in Angular Diagram Component
 
-Diagram provides support to describe the state of the node. i.e., the node is expanded or collapsed state. The IsExpanded property of node is used to expand or collapse the children nodes.The Expand and Collapse support is used to compress the hierarchy view so that only the roots of each elements are visible.
+The Angular Diagram component provides built-in support for expanding and collapsing nodes, enabling users to create hierarchical views where child nodes can be hidden or shown dynamically. This functionality is particularly useful for organizational charts, mind maps, and tree structures where managing visual complexity is essential.
 
-The following properties of the Node are used to represent the state of the node and allows user to Expand and Collapse the desired Node:
+The expand and collapse feature allows users to:
+- Compress hierarchical views to show only root elements
+- Toggle visibility of child nodes interactively
+- Customize the appearance of expand and collapse icons
+- Control the initial state of nodes programmatically
 
-* ExpandIcon
+## Key properties
 
-* CollapseIcon
+The following properties control the expand and collapse behavior of nodes:
 
-N> Icon can be created only when the node has outEdges.
+* **expandIcon** - Defines the icon displayed when a node can be expanded
+* **collapseIcon** - Defines the icon displayed when a node can be collapsed  
+* **isExpanded** - Determines whether the node is currently expanded or collapsed
 
-To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#expandicon) and [`collapseIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#collapseicon).
+N> Icons are only created when the node has outgoing edges (outEdges).
 
+For detailed API information, refer to [`expandIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#expandicon) and [`collapseIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#collapseicon).
 
-## Customizing expand and collapse icon
+## Customizing expand and collapse icons
 
-### Size and shape
+### Size and shape configuration
 
-Set a size for an icon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#height) properties.
+Define the size of icons using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#height) properties.
 
-The expandIcon’s and collapseIcon’s [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#shape) property allows to define the shape of the icon.
+The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#shape) property of expandIcon and collapseIcon allows customization of the icon appearance.
 
-The following code example illustrates how to create an icon of various shapes.
+The following code example demonstrates how to create icons with various shapes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,15 +52,18 @@ The following code example illustrates how to create an icon of various shapes.
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-expandAndCollapse-cs1" %}
 
-Set the borderColor, borderWidth, and background color for an icon using [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#bordercolor), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#borderwidth), and [`fill`](../api/diagram/iconShapeModel#fill-string) properties.
+### Styling and appearance
 
-The corner radius can be set using the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#cornerradius) property of the icon.
+Customize the visual appearance of icons using the following properties:
+- [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#bordercolor) - Sets the border color
+- [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#borderwidth) - Defines the border thickness  
+- [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#fill) - Sets the background color
+- [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#cornerradius) - Rounds the corners of the icon
+- [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#iconcolor) - Sets the stroke color of the icon
 
-The icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
+Icons can be precisely positioned relative to node boundaries using margin, offset, horizontalAlignment, and verticalAlignment settings. While combining all four alignment properties provides maximum control, it requires careful consideration of their interactions.
 
-The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#iconcolor) property can be used to set the strokeColor of the Icon.
-
-The following code example illustrates the customization of icons.
+The following code example illustrates comprehensive icon customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,26 +77,39 @@ The following code example illustrates the customization of icons.
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-expandAndCollapse-cs2" %}
 
-## IsExpanded
+## Managing node expansion state
 
-[`isExpanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#isexpanded) property is used to defines whether the node is expanded or not. The following example demonstrate node’s `isExpanded` property. The default value of isExpanded property is true.
+The [`isExpanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#isexpanded) property controls whether a node displays its child nodes. When set to `true`, child nodes are visible; when `false`, they are hidden.
 
-```typeScript
+**Default value:** `true`
 
+The following example demonstrates how to configure the expansion state of nodes:
+
+```typescript
 export class AppComponent {
     @ViewChild("diagram")
     public diagram: DiagramComponent;
+    
     public nodes: NodeModel[] = [
-    {
-      id: 'Start', width: 140, height: 50, offsetX: 300, offsetY: 50,
-      //Expand state of node
-      isExpanded:false
-      expandIcon: {shape: 'ArrowDown',   width: 20,
-      height: 15},
-      collapseIcon: {shape: 'ArrowUp',  width: 20,
-      height: 15}
-    },
-  ];
+        {
+            id: 'parentNode', 
+            width: 140, 
+            height: 50, 
+            offsetX: 300, 
+            offsetY: 50,
+            // Set initial state to collapsed
+            isExpanded: false,
+            expandIcon: {
+                shape: 'ArrowDown',
+                width: 20,
+                height: 15
+            },
+            collapseIcon: {
+                shape: 'ArrowUp',
+                width: 20,
+                height: 15
+            }
+        }
+    ];
 }
-
 ```

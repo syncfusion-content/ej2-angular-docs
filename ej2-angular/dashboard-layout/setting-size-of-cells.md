@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set cell size  in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Setting size of cells in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Setting cell size in Angular Dashboard Layout component | Syncfusion
+description: Learn how to configure cell dimensions, spacing, and aspect ratios in Syncfusion Angular Dashboard Layout component to create responsive grid layouts.
 platform: ej2-angular
-control: Setting size of cells 
+control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting size of cells in Angular Dashboard layout component
+# Setting cell size in Angular Dashboard Layout component
 
 The entire layout's dimensions are assigned based on the height and width of the parent element. Hence, a responsive or static layout can be created by assigning a percentage or static dimension values to the parent element. The layout adapts to mobile resolutions by transforming the entire layout into a stacked orientation, so that, the panels will be displayed in a vertical column.
 
@@ -16,7 +16,7 @@ The **Dashboard Layout** is a grid structured component which can be split into 
 
 The number of rows within the layout has no limits and can have any number of rows based on the panels count and position. Panels which act as data containers will be placed or positioned over these cells.
 
-## Modifying cell size
+## Modifying cell dimensions
 
 In a dashboard, the data to be held by the panel in a cell may be of different size, hence different cell dimensions may be required in different scenarios. In this case, the size of these grid cells can be modified to the required size using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#columns) and [`cellAspectRatio`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#cellaspectratio) properties.
 
@@ -38,7 +38,7 @@ The following sample demonstrates how to modify cell size using the `columns` an
   
 {% previewsample "page.domainurl/samples/dashboard-layout/modifying-cell-size-cs1" %}
 
-## Setting cell spacing
+## Configuring cell spacing
 
 The spacing between each panel in a row and column can be defined using the [`cellSpacing`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#cellspacing) property. Adding spacing between the panels will make the layout effective and provide a clear data representation.
 

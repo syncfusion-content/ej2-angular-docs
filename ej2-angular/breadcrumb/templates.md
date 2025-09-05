@@ -3,18 +3,18 @@ layout: post
 title: Templates in Angular Breadcrumb component | Syncfusion
 description: Learn here all about Templates in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Templates 
+control: Breadcrumb 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Templates in Angular Breadcrumb component
 
-The Breadcrumb component provides a way to customize the items using `itemTemplate` and the separators using `separatorTemplate` properties.
+The Breadcrumb component provides flexible template customization options to create rich, interactive navigation experiences. Use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/#itemtemplate) property to customize individual breadcrumb items and the [`separatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/#separatortemplate) property to customize the separators between items, enabling full control over the visual presentation and functionality.
 
 ## Item Template
 
-In the following example, Shopping Cart details are used as breadcrumb Items and the items are customized by the chips component using `itemTemplate`.
+The following example demonstrates customizing breadcrumb items using the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/#itemtemplate) property. This shopping cart navigation scenario shows how breadcrumb items can be enhanced with chip components to create a more engaging user interface.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 
 ## Separator Template
 
-In the  following example, the separators are customized with icons using `separatorTemplate`.
+The following example shows how to customize separators between breadcrumb items using the [`separatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/#separatortemplate) property. Custom icons replace the default separator to create a more visually distinctive navigation path.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ In the  following example, the separators are customized with icons using `separ
 
 ## Customize Specific Item Template
 
-The specific breadcrumb item can be customizable using itemTemplate with conditional rendering. In the following example, added the span element only for the breadcrumb text in `breadcrumb` item.
+Individual breadcrumb items can be customized selectively using [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/#itemtemplate) with conditional rendering logic. The following example demonstrates how to apply custom styling with a span element specifically to items containing "Breadcrumb" in their text, while leaving other items with default styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

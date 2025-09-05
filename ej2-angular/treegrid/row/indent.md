@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Indent and outdent in Angular TreeGrid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides built-in support for indenting and outdenting rows, allowing you to easily adjust the hierarchy level of rows within the tree grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides built-in support for indenting and outdenting rows, allowing easy adjustment of the hierarchy level of rows within the TreeGrid.
 
-**Indent** - The indent feature moves the selected row to a deeper hierarchical level within the tree grid, indenting it by one level of hierarchy. The indent action moves the selected row as the last child of its previous row.
+**Indent** - The indent feature moves the selected row to a deeper hierarchical level within the TreeGrid, indenting it by one level of hierarchy. The indent action moves the selected row as the last child of its previous row.
 
-**Outdent** - The outdent feature moves the selected record up by one level of hierarchy within the tree grid. The outdent action moves the selected row as a sibling to its parent row.
+**Outdent** - The outdent feature moves the selected record up by one level of hierarchy within the TreeGrid. The outdent action moves the selected row as a sibling to its parent row.
 
 To utilize the indent and outdent functionality, inject the **RowDDService** in the provider section of the **AppModule**. This service is responsible for handling the indent and outdent operations in the TreeGrid component.
 
-The tree grid toolbar includes built-in items for executing indent and outdent actions. These items can be defined using the toolbar property.
+The TreeGrid toolbar includes built-in items for executing indent and outdent actions. These items can be defined using the toolbar property.
 
-The following demo illustrates how to enable indent and outdent functionalities in the tree grid:
+The following demo illustrates how to enable indent and outdent functionalities in the TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,9 +35,9 @@ The following demo illustrates how to enable indent and outdent functionalities 
 
 ## Indent/Outdent a row programmatically
 
-You can programmatically change the hierarchy level of a record using the [indent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#indent) and [outdent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#outdent) methods provided by the TreeGrid component.
+The hierarchy level of a record can be changed programmatically using the [indent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#indent) and [outdent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#outdent) methods provided by the TreeGrid component.
 
-Before performing the indent or outdent action, you need to select the row. This can be done using the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectrow) method with the desired index of the row.
+Before performing the indent or outdent action, the row needs to be selected. This can be done using the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectrow) method with the desired index of the row.
 
 The following demo illustrates how to programmatically indent or outdent a row using a button click. Upon clicking the button, the row is selected using the `selectRow` method with the desired index, followed by either the `indent` or `outdent` method to perform the action.
 
@@ -54,7 +54,7 @@ The following demo illustrates how to programmatically indent or outdent a row u
 
 ## Indent and outdent events 
 
-In the Tree Grid, you can retrieve the details of indenting and outdenting actions using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event of the tree grid. Within the `actionComplete` event, you can access the indent/outdent details according to the action using the **args.requestType** property with values **indented** or **outdented**.
+In the TreeGrid, the details of indenting and outdenting actions can be retrieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event of the TreeGrid. Within the `actionComplete` event, the indent/outdent details can be accessed according to the action using the **args.requestType** property with values **indented** or **outdented**.
 
 The following demo demonstrates how to retrieve the details of indenting and outdenting actions using the `actionComplete` event with the **args.requestType** property:
 
