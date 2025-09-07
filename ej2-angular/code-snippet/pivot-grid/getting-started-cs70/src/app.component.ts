@@ -5,7 +5,7 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataSet, PivotView, ExcelExportService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, ExcelExportService, VirtualScrollService} from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
@@ -20,9 +20,9 @@ imports: [
 
 standalone: true,
   selector: 'app-container',
-  providers: [ExcelExportService],
+  providers: [ExcelExportService, VirtualScrollService],
   template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowExcelExport='true' [width]=width></ejs-pivotview></div>
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowExcelExport='true' enableVirtualization='true' [width]=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj?.excelExportModule.exportToExcel('Excel');
+            this.pivotGridObj?.excelExport();
         };
     }
 }

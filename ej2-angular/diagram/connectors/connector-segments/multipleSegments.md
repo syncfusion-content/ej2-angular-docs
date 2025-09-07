@@ -43,6 +43,33 @@ Multiple segments are particularly useful for:
 * Building network diagrams with custom connection paths
 * Implementing organizational charts with complex hierarchical connections
 
+## Undo/Redo support for connector segments
+
+The Diagram control provides comprehensive undo and redo functionality for all connector segment operations. This includes reversible actions such as dragging, resizing, and rotating source or target nodes, as well as modifying segment points and endpoints.
+
+Key undo/redo capabilities include:
+
+* Modifying and adjusting segment points.
+* Changing connector endpoints between nodes or ports.
+* Performing node operations that affect connected segments.
+* Adding, removing, or reordering segments.
+
+This functionality ensures consistent editing behavior across all connector types and interactions, enabling users to experiment with complex routing configurations while retaining the ability to revert changes.
+
+The following example demonstrates undo and redo functionality for connector segments:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/connectors-segundo/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/connectors-segundo/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/connectors-segundo" %}
+
 ## Related topics
 
 * [Connector segments overview](./segments)

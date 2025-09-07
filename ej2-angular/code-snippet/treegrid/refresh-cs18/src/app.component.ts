@@ -65,7 +65,7 @@ export class AppComponent {
         }
         const filterMenudivs: any = this.treegrid.element.querySelectorAll('.e-filtermenudiv');
         filterMenudivs.forEach((div: HTMLElement) => {
-            if (isGridEmpty && this.treegrid.grid.filterSettings.columns.length == 0) {
+            if (isGridEmpty && (this.treegrid as any).grid.filterSettings.columns.length == 0) {
                 div.classList.add('e-disabled');
                 div.style.cursor = 'default';
             } else {

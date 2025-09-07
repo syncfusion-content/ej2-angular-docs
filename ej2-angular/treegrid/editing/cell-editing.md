@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Cell editing in Angular Treegrid component | Syncfusion
-description: Learn here all about Cell editing in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Cell editing in Angular TreeGrid component | Syncfusion
+description: Learn how to use cell editing in the Syncfusion Angular TreeGrid component, including enabling, editing, and handling cell edit events.
 platform: ej2-angular
 control: Cell editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell editing in Angular Treegrid component
+# Cell editing in Angular TreeGrid component
 
-In Cell edit mode, when you double click on a cell, it is changed to edit state.
-You can change the cell value and save to the data source.
-To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Cell`.
+In Cell edit mode, double-clicking a cell switches it to an editable state. You can change the cell value and save it back to the data source. To enable Cell edit mode, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) property to `Cell`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,11 +21,11 @@ To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/an
 {% include code-snippet/treegrid/edit-toolbar-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs7" %}
 
-> Cell edit mode is the default mode of editing.
-> The following events are triggered for the cell edit mode.
-> 1. [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit) event when user begin to edit the cell.
-> 2. [`cellSave`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsave) event triggers on saving the cell.
-> 3. [`cellSaved`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsaved) event triggers after the cell was saved.
+> Cell edit mode is the default editing mode in TreeGrid.
+> The following events occur during cell editing:
+> 1. [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit) is triggered when editing begins.
+> 2. [`cellSave`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsave) fires when saving the cell.
+> 3. [`cellSaved`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsaved) occurs after the cell is saved.

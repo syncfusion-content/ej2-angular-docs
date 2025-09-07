@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { summaryData } from './jsontreegriddata';
+import { summaryData } from './datasource';
 import { getObject, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { TreeGridComponent, TreeGridAllModule, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
@@ -8,7 +8,7 @@ import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='dataSource' gridLines="Both" height='350' childMapping='subtasks' [allowPdfExport]='true' [toolbar]='toolbarOptions' (toolbarClick)='toolbarClick($event)'
-   [allowExcelExport]='true' [treeColumnIndex]='1' (dataBound)='onDataBound($event)' (excelAggregateQueryCellInfo)="excelAggregateQueryCellInfo($event)" (pdfAggregateQueryCellInfo)="pdfAggregateQueryCellInfo($event)">
+   [allowExcelExport]='true' [treeColumnIndex]='1' (dataBound)='onDataBound($event)' (excelAggregateQueryCellInfo)="excelAggregateQueryCellInfo($event)">
       <e-columns>
           <e-column field='ID' headerText='Order ID' width='120' textAlign='Left'></e-column>
           <e-column field='Name' headerText='Shipment Name' textAlign="Left" clipMode='EllipsisWithTooltip' width='230' ></e-column>
@@ -98,7 +98,7 @@ export class AppComponent {
             value: this.selectedCategory,
             change: () => {
                 setTimeout(() => {
-                    this.selectedCategory = this.listObj.value.toString();
+                    this.selectedCategory = this.listObj?.value.toString();
                     proxy.selectedCategory = this.selectedCategory;
                     proxy.customAggregateFn = proxy.createCustomAggregateFn(
                         proxy.selectedCategory
