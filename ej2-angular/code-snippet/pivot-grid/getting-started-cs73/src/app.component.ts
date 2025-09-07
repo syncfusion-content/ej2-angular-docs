@@ -1,29 +1,24 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
+import { Button } from '@syncfusion/ej2-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Grid } from '@syncfusion/ej2-angular-grids';
 import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
+import { Observable } from 'rxjs';
 
 @Component({
-imports: [
-        
+    imports: [
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
-standalone: true,
-  selector: 'app-container',
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]='dataSourceSettings'
-  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' [width]=width></ejs-pivotview>`
+    standalone: true,
+    selector: 'app-container',
+    // specifies the template string for the pivot table component
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]='dataSourceSettings'
+  [gridSettings]='gridSettings' [width]=width allowExcelExport='true'></ejs-pivotview><div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
@@ -31,18 +26,11 @@ export class AppComponent implements OnInit {
     public gridSettings?: GridSettings;
     public columnGrandTotalIndex?: number;
     public rowGrandTotalIndex?: number;
+    public button?: Button;
+    public observable = new Observable();
 
     @ViewChild('pivotview', { static: false })
     public pivotGridObj?: PivotView;
-
-    excelQueryCellInfo(args: any): void {
-        ((this.pivotGridObj as PivotView).renderModule as any).columnCellBoundEvent(args);
-        //triggers for every cell while exporting
-    }
-
-    enginePopulated(args: any): void {
-       ((this.pivotGridObj as PivotView).grid as Grid).excelQueryCellInfo = this.excelQueryCellInfo.bind(this);
-    }
 
     ngOnInit(): void {
 
@@ -61,9 +49,16 @@ export class AppComponent implements OnInit {
 
         this.gridSettings = {
             columnWidth: 140,
+            excelQueryCellInfo: this.observable.subscribe((args: any) => {
+                // triggers every time for header cell while rendering
+            }) as any,
         } as GridSettings;
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#export');
+
+        this.button.element.onclick = (): void => {
+            this.pivotGridObj?.excelExport();
+        };
     }
 }
-
-
-

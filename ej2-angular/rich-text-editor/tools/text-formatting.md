@@ -12,8 +12,6 @@ domainurl: ##DomainURL##
 
 The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 
-The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
-
 ## Basic text styling
 
 The Rich Text Editor offers essential text formatting options, including bold, italic, underline, strikethrough, subscript, superscript, inline code, and case conversion. These tools allow users to enhance text appearance and structure effortlessly, ensuring visually appealing and readable content.

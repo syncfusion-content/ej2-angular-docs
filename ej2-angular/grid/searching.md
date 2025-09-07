@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Searching in Angular Grid component
 
-The Syncfusion Angular Grid includes a powerful built-in searching feature that enables users to search for specific data within the grid. This feature provides efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether working with large datasets or needing to find specific records quickly, the search feature offers a convenient and responsive solution.
+The Syncfusion Angular Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
-To enable the searching feature, inject the **SearchService** in the providers section of your **AppModule** and set the [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsearching) property to **true**. This activates the search functionality within the grid component.
+To use the searching feature, need to inject **SearchService** in the provider section of your **AppModule**. And set the [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowsearching) property to **true** to enable the searching feature in the grid.
 
-To enhance the search functionality, integrate a search text box directly into the grid's toolbar. This provides users with convenient access to search criteria within the grid interface. Add the search item to the grid's toolbar using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property with the **Search** item included.
+To further enhance the search functionality, you can integrate a search text box directly into the grid's toolbar. This allows users to enter search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property and add **Search** item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,30 +28,30 @@ To enhance the search functionality, integrate a search text box directly into t
   
 {% previewsample "page.domainurl/samples/grid/searching-cs1" %}
 
-> * The clear icon appears in the Grid search text box when focused or after typing a single character. Clicking the clear icon clears both the search text and the search results in the Grid.
-> * In the Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, while searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
+> * The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Grid.
+> * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Initial search
 
-By default, search operations are performed after the grid renders. However, scenarios exist where search operations need to occur during initial grid rendering. The initial search feature addresses this requirement by allowing predefined search criteria to be applied when the grid loads.
+By default, the search operation can be performed on the grid data after the grid renders. However, there might be scenarios where need to perform a search operation on the grid data during the initial rendering of the grid. In such cases, you can make use of the initial search feature provided by the grid.
 
-To apply search during initial rendering, configure the following properties within the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings) object:
+To apply search at initial rendering, need to set the following properties in the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings) object.
 
 Property |Description
 --------|-----
-**fields** |Specifies the [fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#fields) in which the search operation will be performed.
-**operator** |Defines the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) used for the search operation.
-**key** |Sets the [key](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) value to be searched.
-**ignoreCase** |Determines whether the [search operation](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignorecase) is case-sensitive or case-insensitive.
-**ignoreAccent** |Controls whether the [search operation](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#ignoreaccent) ignores diacritic characters or accents in the text.
+**fields** |Specifies the [fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#fields) in which the search operation needs to be performed.
+**operator** |Specifies the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) to be used for the search operation.
+**key** |Specifies the [key](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) value to be searched.
+**ignoreCase** |[ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignorecase) specifies whether the search operation needs to be case-sensitive or case-insensitive. 
+**ignoreAccent** |[ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#ignoreaccent) property will ignore the diacritic characters or accents in the text during a search operation.
 
-The following example demonstrates how to configure initial search in the grid using the `searchSettings` property with these specific values:
+The following example demonstrates how to set an initial search in the grid using the `searchSettings` property. The `searchSettings` property is set with the following values:
 
-1. `fields`: **CustomerID** restricts the search to the 'CustomerID' field only.
-2. `operator`: **contains** finds records containing the specified search key.
-3. `key`: **Ha** serves as the initial search term applied when the grid renders.
-4. `ignoreCase`: **true** enables case-insensitive searching.
-5. `ignoreAccent`: **true** ignores diacritic characters or accents during search operations.
+1. `fields`: **CustomerID** specifies that the search should be performed only in the 'CustomerID' field.
+2. `operator`: **contains** indicates that the search should find records that contain the specified search key.
+3. `key`: **Ha** is the initial search key that will be applied when the grid is rendered.
+4. `ignoreCase`: **true** makes the search case-insensitive.
+5. `ignoreAccent`: **true** will ignores diacritic characters or accents during the search operation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,27 +65,27 @@ The following example demonstrates how to configure initial search in the grid u
   
 {% previewsample "page.domainurl/samples/grid/searching-cs2" %}
 
-> By default, the grid searches all bound column values. Customize this behavior by defining the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property with specific column fields.
+> By default, grid searches all the bound column values. However, you can customize this behavior by definining the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
 ## Search operators
 
-Search operators are symbols or keywords that define the type of comparison or condition applied during search operations. They specify how the search key should match the data being searched. Use the [searchSettings.operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) property to define the search operator in the grid.
+Search operators are symbols or keywords used to define the type of comparison or condition applied during a search operation. They help specify how the search key should match the data being searched. The [searchSettings.operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) property can be used to define the search operator in the grid. 
 
-The default `searchSettings.operator` is **contains**, which returns values containing the search key. The following operators are supported for searching:
+By default, the `searchSettings.operator` is set to **contains**, which returns the values contains the search key. The following operators are supported in searching:
 
-Operator |Description
+Operator |Description
 -----|-----
-startswith |Checks whether a value begins with the specified value.
-endswith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains the specified value.
+startswith |Checks whether a value begins with the specified value.
+endswith |Checks whether a value ends with the specified value.
+contains |Checks whether a value contains with the specified value.
 wildcard |Processes one or more search patterns using the **"*"** symbol, returning values that match the given patterns.
 like |Processes a single search pattern using the **"%"** symbol, retrieving values that match the specified pattern.
-equal |Checks whether a value equals the specified value.
-notequal |Checks whether a value does not equal the specified value.
+equal |Checks whether a value equal to the specified value.
+notequal |Checks whether a value not equal to the specified value.
 
-These operators provide flexibility in defining search behavior and enable different types of comparisons based on specific requirements.
+These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 
-The following example demonstrates how to configure the `searchSettings.operator` property by responding to dropdown value changes using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component.
+The following example demonstrates how to set the `searchSettings.operator` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,13 +101,13 @@ The following example demonstrates how to configure the `searchSettings.operator
 
 ## Search by external button
 
-The Syncfusion Grid component supports programmatic searches, enabling record searches using external buttons instead of relying solely on the built-in search bar. This feature provides flexibility and allows custom search implementations within applications. Use the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method provided by the Grid component to search for records using external buttons.
+The Syncfusion Grid component allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method provided by the Grid component.
 
-The `search` method performs search operations based on a search key or criteria. The following example demonstrates how to implement external button searching using these steps:
+The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
 
-1. Add a button element outside the grid component.
+1. Add a button element outside of the grid component.
 2. Attach a click event handler to the button.
-3. Get the grid component reference inside the event handler.
+3. Inside the event handler, get the reference of the grid component.
 4. Invoke the `search` method of the grid by passing the search key as a parameter.
 
 {% tabs %}
@@ -124,9 +124,9 @@ The `search` method performs search operations based on a search key or criteria
 
 ## Search specific columns
 
-By default, the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) functionality searches all visible columns. To search only specific columns, define the targeted column field names in the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property. This approach narrows down the search to a targeted set of columns, which proves particularly useful when working with large datasets or grids containing numerous columns.
+By default, the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) functionality searches all visible columns. However, if you want to `search` only specific columns, you can define the specific column's field names in the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property. This allows you to narrow down the search to a targeted set of columns, which is particularly useful when dealing with large datasets or grids with numerous columns.
 
-The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** using the `searchSettings.fields` property.
+The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `searchSettings.fields` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,11 +142,11 @@ The following example demonstrates how to search specific columns such as **Cust
 
 ## Search on each key stroke
 
-The search on each keystroke feature in the Syncfusion Grid enables real-time searching of grid data as users type in the search text box. This functionality provides a seamless and interactive searching experience, allowing users to see search results updating dynamically in real-time as they enter each keystroke in the search box.
+The search on each keystroke feature in Syncfusion Grid enables you to perform real-time searching of grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
 
-To implement this feature, bind the `keyup` event to the search input element inside the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event of the grid component.
+To achieve this, you need to bind the `keyup` event to the search input element inside the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event of the grid component. 
 
-In the following example, the `created` event is bound to the grid component. Inside the event handler, the `keyup` event is bound to the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) input element. When the `keyup` event triggers, the current search string is obtained from the search input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This enables search results to display in real-time as users type in the search box.
+In the following example, the `created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the [search](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,13 +160,13 @@ In the following example, the `created` event is bound to the grid component. In
   
 {% previewsample "page.domainurl/samples/grid/searching-cs6" %}
 
-> The search on each keystroke approach may impact application performance when working with large numbers of records.
+> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
 ## Perform search based on column formatting
 
-By default, search operations consider the underlying raw data of each cell. However, in some cases, searching based on the formatted data visible to users becomes necessary. To search data based on column formatting, utilize the `grid.valueFormatterService.fromView` method within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event. This method retrieves the formatted value of a cell and performs searching on each column using the **OR** predicate.
+By default, the search operation considers the underlying raw data of each cell for searching. However, in some cases, you may want to search based on the formatted data visible to the users. To search data based on column formatting, you can utilize the `grid.valueFormatterService.fromView` method within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event. This method allows you to retrieve the formatted value of a cell and perform searching on each column using the **OR** predicate.
 
-The following example demonstrates how to implement searching based on column formatting in the Grid. In the `actionBegin` event, the search value is retrieved using the [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumns) method. The process iterates through columns and checks whether each column has a specified format. If a column has a format specified, the `grid.valueFormatterService.fromView` method retrieves the formatted value of the cell. When the formatted value matches the search value, an **OR** predicate is set that includes the current column filter and the new filter based on the formatted value.
+The following example demonstrates how to implement searching based on column formatting in the Grid. In the `actionBegin` event, retrieve the search value from the [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumns) method. Iterate through the columns and check whether the column has a format specified. If the column has a format specified, use the `grid.valueFormatterService.fromView` method to get the formatted value of the cell. If the formatted value matches the search value, set the **OR** predicate that includes the current column filter and the new filter based on the formatted value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -182,11 +182,11 @@ The following example demonstrates how to implement searching based on column fo
 
 ## Perform search operation in Grid using multiple keywords
 
-In addition to single keyword searches, the Grid component supports search operations using multiple keywords. This feature enables users to narrow down search results by simultaneously matching multiple keywords, which proves particularly useful when finding records that meet multiple search conditions simultaneously. This functionality can be achieved through the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the Grid.
+In addition to searching with a single keyword, the Grid component offers the capability to perform a search operation using multiple keywords. This feature enables you to narrow down your search results by simultaneously matching multiple keywords. It can be particularly useful when you need to find records that meet multiple search conditions simultaneously. This can be achieved by the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the Grid.
 
-The following example demonstrates how to perform searches with multiple keywords in the grid using the `query` property when the `requestType` is searching in the `actionBegin` event. The searchString is divided into multiple keywords using a comma (,) as the delimiter. Each keyword creates a `predicate` that checks for matches in the desired columns. When multiple keywords are present, the predicates are combined using an **OR** condition. Finally, the Grid's `query` property is updated with the constructed `predicate`, and the Grid is refreshed to reflect the changes in the UI.
+The following example demonstrates, how to perform a search with multiple keywords in the grid by using the `query` property when the `requestType` is searching in the `actionBegin` event. The searchString is divided into multiple keywords using a comma (,) as the delimiter. Each keyword is then utilized to create a `predicate` that checks for a match in the desired columns. If multiple keywords are present, the predicates are combined using an **OR** condition. Finally, the Grid's `query` property is updated with the constructed `predicate`, and the Grid is refreshed to update the changes in the UI.
 
-The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event manages the completion of the search operation. It ensures the search input value is updated when necessary and clears the `query` when the search input is empty.
+On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event is used to manage the completion of the `search` operation. It ensures that the search input value is updated if necessary and clears the `query` when the search input is empty.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,13 +200,13 @@ The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#
   
 {% previewsample "page.domainurl/samples/grid/searching-cs7" %}
 
-> This approach enables search operations in the grid using multiple keywords for more refined search results.
+> By using this approach, you can perform a search operation in the grid using multiple keywords.
 
 ## How to ignore accent while searching
 
-By default, searching operations in the Grid component do not ignore diacritic characters or accents. However, scenarios exist where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring more comprehensive and accurate search results. This can be achieved by setting the [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) property of the Grid component to **true**.
+By default, the searching operation in the Grid component does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) property of the Grid component as **true**.
 
-The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings) property of the grid. Additionally, an [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is included to modify the value of the `searchSettings.ignoreAccent` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event triggers, and the `searchSettings.ignoreAccent` property updates accordingly. This functionality helps visualize the impact of the `searchSettings.ignoreAccent` setting during search operations.
+The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is included to modify the value of the `searchSettings.ignoreAccent` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered, and the `searchSettings.ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings.ignoreAccent` setting when performing search operations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -218,19 +218,19 @@ The following example demonstrates how to define the `ignoreAccent` property wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/searching-cs9" %>
+{% previewsample "page.domainurl/samples/grid/searching-cs9" %}
 
-> * The [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) property can be combined with other search settings such as [fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields), [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator), and [ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignorecase) to achieve desired search behavior.
-> * This feature works only for characters that are not in the ASCII range.
+> * You can set [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) property along with other search settings such as [fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields), [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator), and [ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) to achieve the desired search behavior.
+> * This feature works only for the characters that are not in the ASCII range.
 > * This feature may have a slight impact on search performance.
 
 ## Highlight the search text
 
-The Syncfusion Grid component enables visual highlighting of search results within displayed data. This feature helps users quickly identify where search items are found within the displayed data. By applying styles to matched text, users can easily identify where search items are present in the grid.
+The Syncfusion Grid component allows you to visually highlight search results within the displayed data. This feature helps you to quickly identify where the search items are found within the displayed data. By adding a style to the matched text, you can quickly identify where the search items are present in the grid.
 
-To achieve search text highlighting in the Grid, utilize the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event triggers for each cell during the Grid rendering process, enabling customization of cell content based on specific requirements.
+To achieve search text highlighting in the Grid, you can utilize the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event is triggered for each cell during the Grid rendering process, allowing you to customize the cell content based on your requirements.
 
-The following example demonstrates how to highlight search text in the grid using the `queryCellInfo` event. The `queryCellInfo` event checks if the current cell is in the desired search column, retrieves the cell value and search keyword, and uses the `includes` method to check if the cell value contains the search keyword. When a match is found, the matched text is replaced with the same text wrapped in a `span` tag with a `customcss` class. CSS can then be used to define the `customcss` class and apply styling to easily identify where search keywords are present in the grid.
+The following example demonstrates how to highlight search text in grid using the `queryCellInfo` event. The `queryCellInfo` event checks if the current cell is in the desired search column, retrieves the cell value, search keyword and uses the `includes` method to check if the cell value contains the search keyword. If it does, the matched text is replaced with the same text wrapped in a `span` tag with a `customcss` class. You can then use CSS to define the `customcss` class and style to easily identify where the search keywords are present in the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,11 +246,11 @@ The following example demonstrates how to highlight search text in the grid usin
 
 ## Clear search by external button
 
-The Syncfusion Grid component provides the capability to clear searched data in the grid. This functionality offers the ability to reset or clear any active search filters that have been applied to the grid's data.
+The Syncfusion Grid component provides a capability to clear searched data in the grid. This functionality offers the ability to reset or clear any active search filters that have been applied to the grid's data.
 
-To clear searched grid records from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) property to an empty string to clear the search text. This property represents the current search text in the search box.
+To clear the searched grid records from an external button, you can set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) property to an `empty` string to clear the search text. This property represents the current search text in the search box.
 
-The following example demonstrates how to clear searched records using an external button.
+The following example demonstrates how to clear the searched records using an external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -264,13 +264,13 @@ The following example demonstrates how to clear searched records using an extern
   
 {% previewsample "page.domainurl/samples/grid/searching-cs5" %}
 
-> Searched records can also be cleared using the clear icon within the search input field.
+> You can also clear the searched records by using the clear icon within the search input field.
 
 ## Retrieving searched records using a button click
 
-The Syncfusion Angular Grid enables users to retrieve searched records using an external button. This functionality allows capturing the search text entered in the toolbar and filtering the data accordingly.
+The Syncfusion Angular Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
 
-To achieve this, use the [actionComplete](../api/grid/#actionComplete) event. This event triggers when a search action is performed, providing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve matching records.
+To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
 
 The following example demonstrates how to retrieve searched records using an external button.
 

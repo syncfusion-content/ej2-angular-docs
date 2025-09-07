@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Row in Angular TreeGrid component
 
-Each row typically represents a single record or item from a data source. Rows in a tree grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow to interact with the data in the tree grid. You can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
+Each row represents a single record or item from a data source. Rows in a TreeGrid present data in tabular format, where each row displays a set of values representing the fields of an individual data record. Rows allow interaction with the TreeGrid data through selection, cell editing, sorting, filtering operations, and event-driven actions.
 
 ## Customize row styles 
 
-Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the tree grid. To customize the row styles in the tree grid, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component.
+Customizing row styles in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows you to modify row appearance to meet design requirements. This feature is useful for highlighting specific rows or changing font styles, background colors, and other properties to enhance visual appeal. You can customize row styles using CSS, properties, methods, or events provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component.
 
 ### Using event
 
-You can customize the appearance of the rows by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
+You can customize row appearance using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event. This event triggers for every row when bound to the data source. In the event handler, you receive the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) object containing row details. Use this object to modify row appearance, add custom elements, or perform other customizations.
 
-Here's an example illustrating how you can utilize the `rowDataBound` event to customize the styles of rows based on the value of the **duration** column. This example involves inspecting the value of the Duration column for each row and adjusting a row's style accordingly.
+The following example demonstrates how to utilize the `rowDataBound` event to customize row styles based on the **duration** column value. This example inspects the Duration column value for each row and adjusts the row style accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,17 +33,17 @@ Here's an example illustrating how you can utilize the `rowDataBound` event to c
   
 {% previewsample "page.domainurl/samples/treegrid/row-cs1" %}
 
->The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event can also be used to customize cells and is triggered for every cell in the tree grid. It can be useful when you need to customize cells based on certain conditions or criteria.
+>The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event can also be used to customize cells and is triggered for every cell in the TreeGrid. This is useful when you need to customize cells based on specific conditions or criteria.
 
 ### Using CSS
 
-You can apply styles to the rows using CSS selectors. The Tree Grid provides a class name for each row element, which you can use to apply styles to that specific row. 
+You can apply styles to rows using CSS selectors. The TreeGrid provides class names for each row element, which you can use to apply styles to specific rows. 
 
 **Customize selected row**
 
-You can customize the appearance of the selected row using CSS. This is useful when you want to highlight the currently selected row for improve the visual appeal of the Tree Grid. By default, the Tree Grid provides the CSS class **.e-selectionbackground** to style the selected row. You can customize this default style by overriding the **.e-selectionbackground** class with your own custom CSS styles.
+You can customize selected row appearance using CSS. This is useful for highlighting the currently selected row to improve TreeGrid visual appeal. By default, the TreeGrid provides the CSS class **.e-selectionbackground** to style the selected row. You can customize this default style by overriding the **.e-selectionbackground** class with custom CSS styles.
 
-To change the background color of the selected row, you can add the following CSS code to your application:
+To change the selected row background color, add the following CSS code to your application:
 
 ```css
 .e-treegrid .e-selectionbackground {
@@ -51,7 +51,7 @@ To change the background color of the selected row, you can add the following CS
 }
 ```
 
-Here's an example of how to use the **.e-selectionbackground** class to style the selected row:
+The following example demonstrates how to use the **.e-selectionbackground** class to style the selected row:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,15 +66,15 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 
 ### Using method 
 
-The Tree Grid provides below methods to customize the appearance of the tree grid rows :
+The TreeGrid provides the following methods to customize the appearance of rows:
 
-1. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowbyindex): This method returns the HTML element of a row at the specified index. You can use this method to apply custom styles to a specific row.
-2. [getRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrows): This method returns an array of all the row elements in the Tree Grid. You can use this method to apply custom styles to all rows or to a specific set of rows based on some condition.
-3. [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowinfo): This method returns the data object and index of the row corresponding to the specified row element. You can use this method to apply custom styles based on the data in a row.
-4. [getSelectedRowIndexes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowindexes): This method returns an array of the indexes of the selected rows in the  Tree Grid. You can use this method to apply custom styles to the selected rows.
-5. [getSelectedRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows):This method returns an array of the HTML elements representing the selected rows in the tree grid. You can use this method to directly loop through the selected rows and customize their styles.
+1. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowbyindex): Returns the HTML element of a row at the specified index. Use this method to apply custom styles to a specific row.
+2. [getRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrows): Returns an array of all row elements in the TreeGrid. Use this method to apply custom styles to all rows or to a specific set of rows based on conditions.
+3. [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowinfo): Returns the data object and index of the row corresponding to the specified row element. Use this method to apply custom styles based on row data.
+4. [getSelectedRowIndexes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowindexes): Returns an array of indexes for selected rows in the TreeGrid. Use this method to apply custom styles to selected rows.
+5. [getSelectedRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows): Returns an array of HTML elements representing selected rows in the TreeGrid. Use this method to directly loop through selected rows and customize their styles.
 
-The following example demonstrates how to use `getRowByIndex` method to customize the appearance of the row inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event of the tree grid.
+The following example demonstrates how to use the `getRowByIndex` method to customize row appearance inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,9 +89,9 @@ The following example demonstrates how to use `getRowByIndex` method to customiz
 
 ## Styling alternate rows
 
-You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
+You can customize alternate row appearance using CSS to improve data readability and make it easier to distinguish between rows. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid provides the CSS class **.e-altrow** to style alternate rows. You can customize this default style by overriding the **.e-altrow** class with custom CSS styles. 
 
-To change the background color of the alternate rows, you can add the following CSS code to your application's stylesheet:
+To change the alternate row background color, add the following CSS code to your application stylesheet:
 
 ```css
 .e-treegrid .e-altrow {
@@ -99,7 +99,7 @@ To change the background color of the alternate rows, you can add the following 
 }
 ```
 
-Please refer to the following example.
+Please refer to the following example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,11 +114,11 @@ Please refer to the following example.
 
 ## Styling parent and child rows
 
-You can customize the appearance of the parent and child rows by utilizing the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event. This event is triggered for every row when it is bound to the data source. Within the event handler, you can access the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) object, which contains details of the row. Use this object to modify the parent and child row's appearance, add custom elements, or perform any other customization by using condition.
+You can customize parent and child row appearance by utilizing the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event. This event is triggered for every row when bound to the data source. Within the event handler, you can access the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) object containing row details. Use this object to modify parent and child row appearance, add custom elements, or perform other customizations using conditions.
 
-Here's an example illustrating how to utilize the `rowDataBound` event to customize the styles of parent and child rows based on the hasChildRecords property value in the dataSource object of the tree grid. In this example, the style of each row is adjusted based on the **hasChildRecords** property.
+The following example illustrates how to utilize the `rowDataBound` event to customize parent and child row styles based on the hasChildRecords property value in the dataSource object. In this example, each row's style is adjusted based on the **hasChildRecords** property.
 
-Please refer to the following example.
+Please refer to the following example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,9 +133,9 @@ Please refer to the following example.
 
 ## Row height
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component. This property allows you to change the height of the entire tree grid row to your desired value.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows you to customize row height based on your needs. This feature is useful when you need to display more content in a row or reduce row height to fit content. You can achieve this using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component. This property allows you to change the height of entire TreeGrid rows to your desired value.
 
-In the following example, the demonstration illustrates how to dynamically alter the row height using the `rowHeight` property.
+The following example demonstrates how to dynamically alter row height using the `rowHeight` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,17 +148,17 @@ In the following example, the demonstration illustrates how to dynamically alter
   
 {% previewsample "page.domainurl/samples/treegrid/row-height-cs1" %}
 
->* The `rowHeight` property can only be used to set the height of the entire tree grid row. It cannot be used to set the height of individual cells within a row.
->* The `rowHeight` property applies the height to all rows in the tree grid, including the header and footer rows.
->* You can also set the height for a specific row using the `rowHeight` property of the corresponding row object in the `rowDataBound` event.
+>* The `rowHeight` property can only be used to set the height of entire TreeGrid rows. It cannot be used to set the height of individual cells within a row.
+>* The `rowHeight` property applies height to all rows in the TreeGrid, including header and footer rows.
+>* You can also set height for a specific row using the `rowHeight` property of the corresponding row object in the `rowDataBound` event.
 
 ### Customize row height for particular row 
 
-Customizing the row height for a particular row can be useful when you want to display more content in a particular row, reduce the height of a row to fit its content, or make a specific row stand out from the other rows in the tree grid. This can be achieved by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component along with the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event.
+Customizing row height for a particular row is useful when you want to display more content in a specific row, reduce row height to fit content, or make a specific row stand out from other rows in the TreeGrid. This can be achieved using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property of the TreeGrid component along with the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event.
 
-The `rowHeight` property of the TreeGrid component allows you to set the height of all rows in the tree grid to a specific value. However, if you want to customize the row height for a specific row based on the row data, you can use the `rowDataBound` event. This event is triggered every time a request is made to access row information, element, or data, and before the row element is appended to the Tree Grid element.
+The `rowHeight` property of the TreeGrid component allows you to set the height of all rows to a specific value. However, if you want to customize row height for a specific row based on row data, you can use the `rowDataBound` event. This event is triggered every time a request is made to access row information, element, or data, and before the row element is appended to the TreeGrid element.
 
-In the below example, the row height for the row with **taskID** as '5' is set as '90px' using the `rowDataBound` event.
+In the following example, the row height for the row with **taskID** as '5' is set as '90px' using the `rowDataBound` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -172,16 +172,16 @@ In the below example, the row height for the row with **taskID** as '5' is set a
 {% previewsample "page.domainurl/samples/treegrid/row-height-cs2" %}
 
 >* In virtual scrolling mode, it is not applicable to set different row heights.
->* You can customize the row height of multiple rows by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
+>* You can customize the row height of multiple rows by checking relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
 >* In the `rowDataBound` event handler, you can access the current row using the [args.row](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/#row) property and set the `rowHeight` property for that row using the setAttribute method.
 
 ## Row hover
 
-The Row Hover feature in Tree Grid provides a visual effect when the mouse pointer hovers over the rows, making it easy to highlight and identify the selected row. This feature can also improve the readability of data in the tree grid. The row hover effect can be enabled or disabled using the [enableHover](https://ej2.syncfusion.com/documentation/api/treegrid/#enablehover) property of the TreeGrid component.
+The Row Hover feature in TreeGrid provides a visual effect when the mouse pointer hovers over rows, making it easy to highlight and identify the selected row. This feature improves data readability in the TreeGrid. The row hover effect can be enabled or disabled using the [enableHover](https://ej2.syncfusion.com/documentation/api/treegrid/#enablehover) property of the TreeGrid component.
 
-By default, the `enableHover` property is set to **true**, which means that the row hovering effect is enabled. To disable the row hover effect, set the `enableHover` property to **false**.
+By default, the `enableHover` property is set to **true**, which means the row hovering effect is enabled. To disable the row hover effect, set the `enableHover` property to **false**.
 
-Here is an example that demonstrates how to enable/disable the Row Hover feature:
+The following example demonstrates how to enable/disable the Row Hover feature:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -194,15 +194,15 @@ Here is an example that demonstrates how to enable/disable the Row Hover feature
   
 {% previewsample "page.domainurl/samples/treegrid/row-hover-cs1" %}
 
-> The `enableHover` property applies to the entire tree grid, not individual rows or columns.
+> The `enableHover` property applies to the entire TreeGrid, not individual rows or columns.
 
 ### Custom actions or items on row hover 
 
-You can execute custom actions or display custom items when hovering over rows by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event of the tree grid.
+You can execute custom actions or display custom items when hovering over rows using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event of the TreeGrid.
 
-The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Tree Grid element.
+The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the TreeGrid element.
 
-Here's an illustrative example demonstrating how to implement a custom action using the `rowDataBound` event. In this event, when hovering over a row, a tooltip with a button is displayed. Clicking the button reveals a custom message.
+The following example demonstrates how to implement a custom action using the `rowDataBound` event. In this event, when hovering over a row, a tooltip with a button is displayed. Clicking the button reveals a custom message:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -292,12 +292,12 @@ export class AppComponent implements OnInit {
 
 ### How to get the row information when hovering over the cell
 
-You can retrieve row information when hovering over a specific cell. This can be useful if you want to display additional details or perform some action based on the data in the row. This can be achieved by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowinfo) method of the Tree Grid.
+You can retrieve row information when hovering over a specific cell. This is useful for displaying additional details or performing actions based on row data. This can be achieved using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowinfo) method of the TreeGrid.
 
-* The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Tree Grid element.
-* The `getRowInfo` method is used to retrieve the row information when hovering over a specific cell. This method takes a single parameter, which is the target element that is being hovered over.
+* The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the TreeGrid element.
+* The `getRowInfo` method is used to retrieve row information when hovering over a specific cell. This method takes a single parameter, which is the target element being hovered over.
 
-Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid.
+The following example demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve row information when hovering over a cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -314,23 +314,23 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 ## Adding a new row programmatically
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid provides a way to add a new row to the tree grid programmatically. This feature is useful when you want to add a new record to the tree grid without having the manually enter data in the tree grid. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method of the Tree Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid provides a way to add new rows programmatically. This feature is useful when you want to add new records to the TreeGrid without manually entering data. This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method of the TreeGrid.
 
 The `addRecord` method takes three parameters:
 
 * The **data** object representing the new row to be added
-* The **index** at which the new row should be inserted. If no index is specified, the new row will be added at the end of the Tree Grid.
+* The **index** at which the new row should be inserted. If no index is specified, the new row will be added at the end of the TreeGrid.
 * The **new row position**, which determines where the new row should be inserted based on the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#newrowposition) property.
 
-In the tree grid, the `newRowPosition` property offers the following positions to add the row:
+In the TreeGrid, the `newRowPosition` property offers the following positions to add the row:
 
-* **Top** : When you set `newRowPosition` to **Top**, the new row will be positioned at the top of the Tree Grid.
-* **Bottom** : When you set `newRowPosition` to **Bottom**, the new row will be positioned at the bottom of the Tree Grid.
-* **Above** : Setting `newRowPosition` to **Above** allows you to position the new row above a specified target row. This is particularly useful when you want to insert a row above an existing one.
-* **Below** : Setting `newRowPosition` to **Below** allows you to position the new row below a specified target row. This is beneficial for inserting a row immediately after another.
-* **Child** : Selecting **Child** for `newRowPosition` designates the new row as a child of a specified parent row. This is useful for creating hierarchical structures within the Tree Grid, where the new row becomes a subordinate of the specified parent row.
+* **Top**: When you set `newRowPosition` to **Top**, the new row will be positioned at the top of the TreeGrid.
+* **Bottom**: When you set `newRowPosition` to **Bottom**, the new row will be positioned at the bottom of the TreeGrid.
+* **Above**: Setting `newRowPosition` to **Above** allows you to position the new row above a specified target row. This is particularly useful when you want to insert a row above an existing one.
+* **Below**: Setting `newRowPosition` to **Below** allows you to position the new row below a specified target row. This is beneficial for inserting a row immediately after another.
+* **Child**: Selecting **Child** for `newRowPosition` designates the new row as a child of a specified parent row. This is useful for creating hierarchical structures within the TreeGrid, where the new row becomes a subordinate of the specified parent row.
 
-Here's an example of how to add a new row using the `addRecord` method:
+The following example demonstrates how to add a new row using the `addRecord` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -343,18 +343,18 @@ Here's an example of how to add a new row using the `addRecord` method:
   
 {% previewsample "page.domainurl/samples/treegrid/add-new-row-cs1" %}
 
->* If you want to add a new record to the beginning of the data source, you can pass **0** as the second parameter to the `addRecord `method.
->* If you do not specify an index, the new row will be added at the end of the tree grid.
+>* If you want to add a new record to the beginning of the data source, you can pass **0** as the second parameter to the `addRecord` method.
+>* If you do not specify an index, the new row will be added at the end of the TreeGrid.
 
 ## Show or hide a row using an external actions
 
-In a Syncfusion<sup style="font-size:70%">&reg;</sup> tree grid, you can show or hide a particular row based on some external action, such as a checkbox click. This can be useful in scenarios where you want to hide certain rows from the tree grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of the treegrid and `getRowsObject` method of the grid object within the tree grid instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox.
+In a Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, you can show or hide particular rows based on external actions, such as a checkbox click. This is useful in scenarios where you want to temporarily hide certain rows from the TreeGrid without removing them from the underlying data source. This can be achieved using the [getRowByIndex](https://ej2.syncfusion.com/documentation/api/treegrid/#getrowbyindex) method of the TreeGrid and `getRowsObject` method of the grid object within the TreeGrid instance along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event of the checkbox.
 
-The `getRowsObject` method returns an array of row objects that represents all the rows in the tree grid. You can use this method to iterate through all the rows and access their data and index.
+The `getRowsObject` method returns an array of row objects that represents all rows in the TreeGrid. You can use this method to iterate through all rows and access their data and index.
 
 The `getRowByIndex` method returns the HTML element of a row at the specified index. You can use this method to get a specific row and apply changes to it.
 
-In the following example, the **onCheckBoxChange** method is used to check whether the checkbox is checked or not. If it is checked, the method iterates through all the rows in the tree grid using the `getRowsObject` method. For each row, it checks whether the value in the **Duration** column is equal to '0'. If it is, the index of that row is obtained using the `getRowByIndex` method and hidden by setting its display style to "none". The index of the hidden row is also added to an array called hiddenRows.
+In the following example, the **onCheckBoxChange** method checks whether the checkbox is checked or not. If checked, the method iterates through all rows in the TreeGrid using the `getRowsObject` method. For each row, it checks whether the value in the **Duration** column equals '0'. If it does, the index of that row is obtained using the `getRowByIndex` method and hidden by setting its display style to "none". The index of the hidden row is also added to an array called hiddenRows.
 
 If the checkbox is unchecked, the method iterates through the hiddenRows array and shows each row by setting its display style to an empty string. The hiddenRows array is also cleared.
 
@@ -436,9 +436,9 @@ export class AppComponent implements OnInit {
 
 ## How to get the row data and element
 
-The Tree Grid provides several methods to retrieve row data and elements. This feature is useful when you need to access specific rows, perform custom operations, or manipulate the data displayed in the grid.
+The TreeGrid provides several methods to retrieve row data and elements. This feature is useful when you need to access specific rows, perform custom operations, or manipulate the data displayed in the grid.
 
-1. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowbyindex): This method returns the HTML element of a row at the specified index. It can be used to retrieve the element of a specific row in the tree grid.
+1. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowbyindex): This method returns the HTML element of a row at the specified index. It can be used to retrieve the element of a specific row in the TreeGrid.
 
     ```ts
     const rowElement = this.treegrid.getRowByIndex(rowIndex);
@@ -450,7 +450,7 @@ The Tree Grid provides several methods to retrieve row data and elements. This f
     const rowInformation = this.treegrid.getRowInfo(targetElement);
     ```
 
-3. [getRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrows): This method returns an array of all the row elements in the Tree Grid. If you need to retrieve row data and elements, you can combine the `getRows` method with the `getRowInfo` method.
+3. [getRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrows): This method returns an array of all row elements in the TreeGrid. If you need to retrieve row data and elements, you can combine the `getRows` method with the `getRowInfo` method.
 
     ```ts
      const rowElements = this.treegrid.getRows();
@@ -461,7 +461,7 @@ The Tree Grid provides several methods to retrieve row data and elements. This f
     ```ts
     const selectedIndexes = this.treegrid.getSelectedRowIndexes();
     ```
-5. [getSelectedRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows): This method returns an array of HTML elements representing the selected rows in the tree grid.By iterating over this array, you can access each row element and data using the `getRowInfo` method. This way, you can access both the row elements and their associated data for the selected rows.
+5. [getSelectedRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows): This method returns an array of HTML elements representing the selected rows in the TreeGrid. By iterating over this array, you can access each row element and data using the `getRowInfo` method. This way, you can access both the row elements and their associated data for the selected rows.
 
     ```ts
     const selectedRowElements = this.treegrid.getSelectedRows();
