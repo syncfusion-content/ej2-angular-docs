@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CardSettingsModel, ColumnsModel } from '@syncfusion/ej2-angular-kanban';
 import { kanbanData } from './datasource';
 
 @Component({
 imports: [
-        
+        CommonModule
         KanbanModule
     ],
-
 
 standalone: true,
   selector: 'app-root',

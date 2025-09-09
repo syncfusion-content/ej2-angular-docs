@@ -52,7 +52,7 @@ The following cases will dynamically change their [field](https://ej2.syncfusion
 
 * If the cell has one card and dropped a card on the previous position, then it will compare both the values, and the dropped card [field](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#field) value will be changed if the cards have continuous order otherwise values will not be changed.
 
-* When the previous and next cards do not have continuous order, the dropped card `field](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#field) value will be changed based on the previous card value.
+* When the previous and next cards do not have continuous order, the dropped card [field](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#field) value will be changed based on the previous card value.
 
 * When the previous and next cards have continuous order or odd/even value, then the [field](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#field) value of the dropped card and the cards followed by the dropped card will be changed based on the **previous** card value with continuous order.
 

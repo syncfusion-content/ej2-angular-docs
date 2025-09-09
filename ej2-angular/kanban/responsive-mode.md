@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive mode in Angular Kanban component | Syncfusion
+title: Responsive Mode in Angular Kanban component | Syncfusion
 description: Learn here all about Responsive mode in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Responsive mode

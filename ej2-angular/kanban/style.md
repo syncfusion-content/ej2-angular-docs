@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Styles in Angular Kanban Component
 
-To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Kanban.
+To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Please find the list of CSS classes in Kanban.
 
 | Css class | Purpose |
 |-------|---------|

@@ -125,7 +125,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 
 ## Prevent Dialog
 
-Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the `dialogOpen` event. The following sample demonstrates preventing dialog opening.
+Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogopen) event. The following sample demonstrates preventing dialog opening.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,15 +141,15 @@ Prevent the dialog from opening on card double-click by setting `args.cancel` to
 
 ## Persisting data in server
 
-The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [`DataManager`](../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
+The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [DataManager](https://ej2.syncfusion.com/angular/documentation/data/). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the below section covers how to get the edited data details on the server-side using the [`UrlAdaptor`](../../data/adaptors.html#url-adaptor).
+In the below section covers how to get the edited data details on the server-side using the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor).
 
 ### URL adaptor
 
-You can use the [`UrlAdaptor`](../../data/adaptors.html#url-adaptor) of `DataManager` when binding datasource for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
+You can use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) of `DataManager` when binding datasource for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 

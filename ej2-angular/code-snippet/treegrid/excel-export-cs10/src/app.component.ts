@@ -37,14 +37,14 @@ export class AppComponent {
     public dataSource: Object[] = [];
     public foods: any;
     public selectedCategory: string = 'Seafood';
-    public listObj: DropDownList;
+    public listObj!: DropDownList;
     public toolbarOptions?: ToolbarItems[];
-    public customAggregateFn: (data: Object) => number;
+    public customAggregateFn!: (data: Object) => number;
     public countLength: number = 0;
     public stringAlign: string = 'Left';
     public numberAlign: string = 'Right';
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid!: TreeGridComponent;
     ngOnInit(): void {
         this.dataSource = summaryData;
         this.foods = [
@@ -98,7 +98,7 @@ export class AppComponent {
             value: this.selectedCategory,
             change: () => {
                 setTimeout(() => {
-                    this.selectedCategory = this.listObj?.value.toString();
+                    this.selectedCategory = (this.listObj as any).value.toString();
                     proxy.selectedCategory = this.selectedCategory;
                     proxy.customAggregateFn = proxy.createCustomAggregateFn(
                         proxy.selectedCategory

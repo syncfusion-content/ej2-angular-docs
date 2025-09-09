@@ -17,6 +17,7 @@
     "@syncfusion/ej2-angular-schedule": "*",
     "@syncfusion/ej2-kanban": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-schedule": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-dropdowns": "*",
     "@syncfusion/ej2-inputs": "*",

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular Kanban Component
 
-Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the enableVirtualization](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
+Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [enableVirtualization](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
 
 ## Virtual scrolling
 

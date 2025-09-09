@@ -44,8 +44,8 @@ export class AppComponent implements OnInit {
            conditionalSettings: [{
                 measure: 'Sold',
                 conditions: 'Between',
-                value1: 150,
-                value2: 200
+                value1: 500,
+                value2: 1000
             }],
             cssClass: 'e-custom-class'
         } as HyperlinkSettings;

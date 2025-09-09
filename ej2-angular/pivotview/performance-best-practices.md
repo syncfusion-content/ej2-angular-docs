@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance tips for ##Platform_Name## Pivot Table component | Syncfusion
+title: Performance tips for Angular Pivot Table component | Syncfusion
 description: Checkout and learn here all about best practices to improve the performance of the Syncfusion ##Platform_Name## Pivot Table component and much more.
 platform: ej2-angular
 control: Performance best practices
@@ -15,13 +15,17 @@ Performance optimization is crucial when working with large datasets in the [Syn
 
 ## How do I improve the loading performance of the Pivot Table?
 
+When working with large datasets, you can use the following options to improve the loading performance of the Pivot Table and provide a smoother user experience.
+
 ### Virtual scrolling
 
-The virtual scrolling in the pivot table significantly improves performance, especially when handling large datasets, because it only renders the rows and columns related to the current viewport. The remaining data is loaded dynamically as you scroll, either vertically or horizontally. For more information on implementing virtual scrolling in the pivot table, you can refer to the documentation [here](https://ej2.syncfusion.com/angular/documentation/pivotview/virtual-scrolling).
+Virtual scrolling improves the performance of the Pivot Table when working with large datasets by only displaying the rows and columns that are currently visible in the viewport. This approach reduces initial load time and memory usage, as the control processes only the data currently in view. As you scroll vertically or horizontally, additional data loads automatically in the background. For detailed guidance on implementing virtual scrolling in the Pivot Table, see the [virtual scrolling documentation](https://ej2.syncfusion.com/angular/documentation/pivotview/virtual-scrolling).
 
 ### Paging
 
-If your browser's maximum pixel height limits you from using the pivot table with virtual scrolling, we recommend utilizing the paging option instead. Similar to virtual scrolling, the paging option allows you to load a large amount of data, which can be displayed in the pivot table page-by-page. For more information on implementing paging in the pivot table, please refer to the documentation [here](https://ej2.syncfusion.com/angular/documentation/pivotview/paging).
+Paging helps you display large datasets efficiently by breaking them into smaller, manageable pages instead of loading all data at once. When your browser's maximum pixel height prevents you from using the pivot table with virtual scrolling, the paging option provides an excellent alternative. This approach significantly improves loading performance and ensures smooth navigation through your data.
+
+To enable paging in your Pivot Table, set the [`allowPaging`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpaging) property to **true** and configure the [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pagesettings) to control the number of records displayed per page. For implementation details, refer to the [paging documentation](https://ej2.syncfusion.com/angular/documentation/pivotview/paging).
 
 ### Server-side engine
 
@@ -117,7 +121,7 @@ By default, the pivot table with virtual scrolling renders not only the current 
 
 ### Limiting the component size
 
-Each row and cell in the pivot table is treated as an individual Razor component. However, loading an extensive number of rows and columns into the current view can strain memory consumption and CPU processing. To avoid such performance impacts, load a smaller set of rows and columns in the pivot table by defining and limiting the pivot table using the [height](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#width) properties. For example, 600px * 1000px, respectively, with just the pivot table alone (that is, without the grouping bar, toolbar, and other additional UI elements).
+Displaying too many rows and columns in a Pivot Table at once can slow performance and increase memory usage. To keep the Pivot Table responsive, set a specific [height](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#width) for the Pivot Table, such as 600px by 1000px. This limits the number of rows and columns loaded in the current view. When setting these values, render only the Pivot Table, excluding the grouping bar, toolbar, and other additional UI elements.
        
 N> Normally, pixel units are preferred, ensuring more accurate page calculations compared to using percentage units, which involve additional computations for determining page as well as row and column sizes.
 

@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
     hyperlinkCellClicked(args: any) {
         args.cancel = false;
-        args.currentCell.setAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
+        args.currentCell.setAttribute("data-url", "https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
     }
     ngOnInit(): void {
 

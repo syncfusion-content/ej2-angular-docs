@@ -25,6 +25,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-data
 SEE LICENSE IN license
 
+@syncfusion/ej2-dropdowns
+SEE LICENSE IN license
+
 @syncfusion/ej2-inputs
 SEE LICENSE IN license
 
@@ -35,6 +38,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
+SEE LICENSE IN license
+
+@syncfusion/ej2-notifications
 SEE LICENSE IN license
 
 @syncfusion/ej2-popups
