@@ -18,7 +18,7 @@ The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular
 
 ## Auto height and width
 
-When height and width of the Kanban are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Kanban, its width or height will be the sum of its children. By default, Kanban is assigned with `auto` values for both the height and width properties.
+When `height` and `width` of the Kanban are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Kanban, its width or height will be the sum of its children. By default, Kanban is assigned with `auto` values for both the height and width properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 
 ## Height and width in pixel
 
-The Kanban height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
+The Kanban `height` and `width` will be rendered exactly as per the given pixel values. It accepts both string and number values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Kanban Component
 
-The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
+The Kanban uses [DataManager](https://ej2.syncfusion.com/angular/documentation/data/), which supports both RESTful data service binding and JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 
 * Local data
 * Remote data
@@ -35,7 +35,7 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [DataManager](../data) to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. To interact with remote data source, provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [DataManager](https://ej2.syncfusion.com/angular/documentation/data/) to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ To bind remote data to kanban component, assign service data as an instance of [
   
 {% previewsample "page.domainurl/samples/kanban/remote-data-cs1" %}
 
-> By default, [DataManager](../data) uses **ODataAdaptor** for remote data-binding.
+> By default, [DataManager](https://ej2.syncfusion.com/angular/documentation/data/) uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
@@ -69,7 +69,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the [DataManager](../data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odatadocumentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
+The ODataV4 is an improved version of OData protocols, and the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odatadocumentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ Below is the server-side controller code to fetch Kanban data.
 
 ### URL adaptor
 
-The CRUD (Create, Read, Update and Delete) actions can be performed easily on Kanban cards using the various adaptors available within the `DataManager`. Most preferably, we will be using `UrlAdaptor` for performing CRUD actions on Kanban.
+The CRUD (Create, Read, Update and Delete) actions can be performed easily on Kanban cards using the various adaptors available within the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/). Most preferably, we will be using [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) for performing CRUD actions on Kanban.
 
 The CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
