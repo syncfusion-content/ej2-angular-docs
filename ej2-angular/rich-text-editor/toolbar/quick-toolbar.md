@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
 
-> To enable quick toolbar feature, configure`QuickToolbarService` in the `providers` section of `NgModule`.
+> To enable quick toolbar feature, configure `QuickToolbarService` in the `providers` section of `NgModule`.
 
 ## Image quick toolbar
 

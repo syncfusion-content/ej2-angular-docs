@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Check image size in Angular Rich text editor component
 
-By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
+By using the Rich text editor's [imageUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#imageuploading) event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
 
 In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 

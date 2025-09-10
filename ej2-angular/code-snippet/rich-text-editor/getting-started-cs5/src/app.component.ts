@@ -1,5 +1,6 @@
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 import { ToolbarService, LinkService, ImageService, HtmlEditorService,IFrameSettingsModel} from '@syncfusion/ej2-angular-richtexteditor';
+import { Component } from '@angular/core';
 
 @Component({
     imports: [RichTextEditorAllModule],

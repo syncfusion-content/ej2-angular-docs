@@ -16,8 +16,7 @@ The Syncfusion Angular Rich Text Editor supports both template-driven and reacti
 
 Template-driven forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 
-For more details about template-driven
-forms, refer to:<https://angular.io/guide/forms#template-driven-forms>.
+For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
 Mention the `name` attribute to Rich Text Editor element that can be used to identify the form element. To register a Rich Text Editor element to ngForm, give the ngModel to it. So, the FormsModule will automatically detect the Rich Text Editor as a form element. After that, the Rich Text Editor value will be selected based on the ngModel value.
 
