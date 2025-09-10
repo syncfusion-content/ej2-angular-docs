@@ -1,13 +1,15 @@
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Component, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RichTextEditorAllModule, ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
     imports: [
         RichTextEditorAllModule,
         FormsModule,
         ButtonModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        CommonModule
     ],
     standalone: true,
     selector: 'app-root',

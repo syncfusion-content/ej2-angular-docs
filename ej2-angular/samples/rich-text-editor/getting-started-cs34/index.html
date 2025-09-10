@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-critters-container>
+<head>
+    <title>Syncfusion Angular Rich Text Editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript UI Controls">
+
+<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet">
+<meta name="author" content="Syncfusion">
+    <link href="https://jsplayground.syncfusion.com/16.1.0.24/scripts/web/codemirror/codemirror.min.css" rel="stylesheet">
+    <style>
+    #loader {
+        color: #008cff;
+        font-family:  'Helvetica Neue','calibiri';
+        font-size: 16px;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+     .e-code-mirror::before {
+        content: '\e345';
+    }
+    .CodeMirror-linenumber,
+    .CodeMirror-gutters {
+        display: none;
+    }
+    #special_char,
+    .char_block {
+        display: inline-block;
+    }
+    .char_block.e-active {
+        /* box-shadow: inset 3px 3px 7px 0px; */
+        outline: 1.5px solid;
+    }
+    .char_block {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #DDDDDD;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
+    #custom_tbar,
+    #custom_tbar div{
+        cursor: pointer;
+    }
+    #rteSection {
+        height: 500px;
+    }
+  .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-left::before {
+        content: "\e76e";
+    }
+    .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-right::before {
+        content: "\e726";
+    }
+    .e-richtexteditor textarea.e-content {
+      float: left;
+    }
+    .e-richtexteditor .e-rte-content {
+      overflow: hidden;
+    }
+    .e-rte-content .e-content.e-pre-source{
+      width: 100%;
+    }
+    .property-panel-content td{
+        width: 50%;
+    }
+    .property-panel-content td div {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+    }
+	.e-icon-btn .e-md-preview.e-icons::before {
+		content: '\e345';
+	}
+    .e-icon-btn.e-active .e-md-preview::before,
+    #mdCustom .e-icon-btn.e-active .e-md-preview.e-icons::before {
+		content: '\e350';
+	}
+	#mdCustom .e-icon-btn .e-md-preview.e-icons::before {
+		content: '\e345';
+    }
+    #rteDialog.e-dialog .e-dlg-content {
+        padding: 0px 0px 5px 16px;
+    }
+    #custom_tbar .e-tbar-btn-text {
+        font-size: 16px;
+    }
+    .e-bigger #custom_tbar .e-tbar-btn-text {
+        font-size: 18px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .fabric.e-bigger #rteDialog {
+            min-width: 281px;
+        }
+        .fabric #rteDialog {
+            min-width: 241px;
+        }
+        .bootstrap.e-bigger #rteDialog,
+        .bootstrap #rteDialog {
+            min-width: 223px;
+        }
+        .highcontrast.e-bigger #rteDialog {
+            min-width: 283px;
+        }
+        .highcontrast #rteDialog {
+            min-width: 243px;
+        }
+        .material #rteDialog {
+            min-width: 224px;
+        }
+        .material.e-bigger #rteDialog {
+            min-width: 236px;
+        }
+    }
+</style>
+<style>@import"https://fonts.googleapis.com/css?family=Roboto:400,500,700"</style><link rel="stylesheet" href="styles.2c91dc5de0b7d155.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.2c91dc5de0b7d155.css"></noscript></head>
+<body>
+    <app-root>
+        <div id="loader">Loading....</div>
+    </app-root>
+<script src="runtime.cf3bdadb8fd8abdc.js" type="module"></script><script src="main.b4f783f22ece9c05.js" type="module"></script></body>
+</html>
