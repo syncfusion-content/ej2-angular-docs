@@ -61,7 +61,7 @@ The TreeGrid supports conditional cancelation of CRUD operations (Edit, Add, Del
 
 ## Confirmation dialog
 
-A confirmation dialog prompts users before actions like saving or canceling changes. Enable this dialog by setting [showConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#showconfirmdialog) in [editSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#editsettings) to **true** (default). 
+A confirmation dialog appears before actions such as saving or canceling changes. This dialog can be enabled by setting [showConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#showconfirmdialog) in [editSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#editsettings) to **true** (default). 
 
 > * The confirmation dialog requires [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) to be **Batch**.
 > * Setting `editSettings.showConfirmDialog` to **false** disables the dialog in batch editing.

@@ -3,178 +3,174 @@ layout: post
 title: Style in Angular Sidebar component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Sidebar 
+control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style in Angular Sidebar component
 
-The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user's preference.
+The Sidebar component can be customized using CSS to modify its appearance based on its state, position, or configuration. The following sections provide CSS rules targeting component-specific classes (e.g., `.e-sidebar`, `.e-dock`, `.e-rtl`) that are automatically applied based on properties like `position`, `enableDock`, or `enableRtl`. Apply these styles in `styles.css` or a component-specific stylesheet, ensuring specificity to avoid conflicts.
 
-## Customizing the Sidebar
+## Styling the Sidebar root element
 
-Use the below CSS to customize the Sidebar root element.
+The `.e-sidebar` class targets the `<ejs-sidebar>` element to customize its overall appearance, such as the background color.
 
 ```css
-
 .e-sidebar {
-    background: #898b2b
+    background: #898b2b;
 }
-
 ```
 
-## Customizing the Sidebar based on the positions
+## Styling Sidebar positions
 
-Use the below CSS to customize the left positioned Sidebar.
+Customize the Sidebar’s appearance based on its position, set via the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property (default: `Left`).
+
+### Left-Positioned Sidebar
+
+Add a border to a left-positioned Sidebar:
 
 ```css
-
 .e-sidebar.e-left {
     border-right: 2px solid red;
 }
-
 ```
 
-Use the below CSS to customize the right positioned Sidebar.
+### Right-Positioned Sidebar
+
+Add a border to a right-positioned Sidebar:
 
 ```css
-
 .e-sidebar.e-right {
     border-left: 2px solid red;
 }
-
 ```
 
-## Customizing the Sidebar based on the active state
+## Styling Sidebar active states
 
-Use the below CSS to customize the open state of the left positioned Sidebar.
+Customize transitions for the Sidebar’s open or closed states, which use the `.e-open` or `.e-close` classes, applied based on the [`isOpen`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#isopen) property.
+
+### Open state for left Sidebar
+
+Adjust the transition for a left-positioned Sidebar when open:
 
 ```css
-
 .e-sidebar.e-left.e-open {
     transition: transform 2.5s ease;
 }
-
 ```
 
-Use the below CSS to customize the open state of the right positioned Sidebar.
+### Open state for right Sidebar
+
+Adjust the transition for a right-positioned Sidebar when open:
 
 ```css
-
 .e-sidebar.e-right.e-open {
-     transition: transform 2.5s ease;
+    transition: transform 2.5s ease;
 }
-
 ```
 
-Use the below CSS to customize the closed state of the left positioned Sidebar.
+### Closed state for left Sidebar
+
+Customize the transition and visibility for a left-positioned Sidebar when closed:
 
 ```css
-
 .e-sidebar.e-left.e-transition.e-close {
     transition: transform 2.5s ease, visibility 1200ms;
 }
-
 ```
 
-Use the below CSS to customize the closed state of the right positioned Sidebar.
+### Closed state for right Sidebar
+
+Customize the transition and visibility for a right-positioned Sidebar when closed:
 
 ```css
-
 .e-sidebar.e-right.e-transition.e-close {
     transition: transform 2.5s ease, visibility 1200ms;
 }
-
 ```
 
-## Customizing the Sidebar with dock state
+## Styling Sidebar with Dock state
 
-When you enable the Dock support, the "e-dock" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element with a dock state.
+When you enable the Dock support, the `e-dock` class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element with a dock state.
 
 ```css
-
 .e-sidebar.e-dock {
     background: #2d323e;
 }
-
 ```
 
-## Customizing the different types of Sidebar
+## Styling Sidebar types
 
-Use the below CSS to customize the auto type Sidebar.
+Customize the Sidebar based on its [`type`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) property (default: `Auto`), which applies classes like `.e-auto`, `.e-push`, `.e-over`, or `.e-slide`.
+
+### Auto Type Sidebar
+
+Style a left-positioned Sidebar with `type="Auto"`:
 
 ```css
-
 .e-sidebar.e-left.e-auto {
     background-color: pink;
 }
-
 ```
 
-Use the below CSS to customize the push type Sidebar.
+### Push type Sidebar
+
+Style a left-positioned Sidebar with `type="Push"`:
 
 ```css
-
 .e-sidebar.e-left.e-push {
     background-color: beige;
 }
-
 ```
 
-Use the below CSS to customize the over type Sidebar.
+### Over type Sidebar
+
+Style a left-positioned Sidebar with `type="Over"`:
 
 ```css
-
 .e-sidebar.e-left.e-over {
     background-color: aqua;
 }
-
 ```
 
-Use the below CSS to customize the slide type Sidebar.
+### Slide type Sidebar
+
+Style a left-positioned Sidebar with `type="Slide"`:
 
 ```css
-
 .e-sidebar.e-left.e-slide {
     background-color: green;
 }
-
 ```
 
-## Customizing the backdrop of the Sidebar
+## Styling the Sidebar Backdrop
 
-Use the below CSS to customize the backdrop of the Sidebar.
+When the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#showbackdrop) property is set to `true`, the `.e-sidebar-overlay` class is applied to the backdrop, allowing customization of its appearance.
 
 ```css
-
 .e-sidebar-overlay {
     background-color: aqua;
 }
-
 ```
 
-## Customizing the Sidebar in the RTL direction
+## Styling Sidebar in right-to-left mode
 
-When you enable the RTL (right to left direction) support, the "e-rtl" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element in the RTL (right to left direction) mode.
+When you enable the RTL (right to left direction) support, the `e-rtl` class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element in the RTL (right to left direction) mode.
 
 ```css
-
 .e-sidebar.e-left.e-rtl {
     background-color: antiquewhite;
 }
-
 ```
 
-## Prevent the animation transition for the Sidebar component
+## Disabling animation transitions
 
-Use the below CSS to prevent the animation transition for the Sidebar component.
+To disable animation transitions for the Sidebar, typically controlled by the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property (default: `true`), override the `.e-content-animation` class to remove transitions for the main content area.
 
 ```css
-
 .e-sidebar-context .e-content-animation {
     transition: none;
     transform: none;
 }
-
 ```

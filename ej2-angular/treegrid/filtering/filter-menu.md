@@ -162,7 +162,7 @@ In the example provided below, the **Task ID** and **Duration** columns are nume
 
 ### Prevent autofill option in autocomplete of menu filter
 
-By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions as users type. However, there might be scenarios where this autofill behavior needs to be prevented to provide a more customized and controlled user experience.
+By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions during text input. However, there might be scenarios where this autofill behavior needs to be prevented to provide more precise control over the filtering experience.
 
 The autofill feature can be prevented by setting the [autofill](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filter). 
 

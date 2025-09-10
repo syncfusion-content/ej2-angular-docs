@@ -8,39 +8,40 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
 # Drag and drop list items in Angular ListView component
 
-In ListView component, we don't have  drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started) component with ListView appearance.
+The ListView component can be enhanced with drag and drop functionality by utilizing the [`TreeView`](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started) component while maintaining a ListView appearance.
 
-Drag and Drop in TreeView component was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) to `true`.
+First, import the required TreeView module:
 
 ```typescript
-
-<ejs-treeview id='element' [fields]='fields' allowDragAndDrop='true'></ejs-treeview>
-
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations';
 ```
 
-The TreeView component is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) events.
+Enable drag and drop functionality in TreeView by setting the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property to `true`:
 
 ```typescript
+<ejs-treeview id='element' [fields]='fields' allowDragAndDrop='true'></ejs-treeview>
+```
 
+The TreeView component displays data in a hierarchical structure. To maintain a flat list appearance, prevent nested dropping by handling the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) events:
+
+```typescript
 <ejs-treeview id='element' [fields]='fields' allowDragAndDrop='true' (nodeDragging)='onDragStop($event)' (nodeDragStop)='onDragStop($event)'></ejs-treeview>
 
 fields= { dataSource: this.data, id: 'id', text: 'text' },
 
-onDragStop(args) {
-    //Block the Child Drop operation in TreeView
-   let  draggingItem = document.getElementsByClassName("e-drop-in");
+onDragStop(args: any) {
+    // Prevent nested drop operations
+   const draggingItem = document.getElementsByClassName("e-drop-in");
     if (draggingItem.length == 1) {
         draggingItem[0].classList.add('e-no-drop');
         args.cancel = true;
     }
 }
-
 ```
 
-In the below sample, we have rendered draggable list items.
+The following example demonstrates draggable list items implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

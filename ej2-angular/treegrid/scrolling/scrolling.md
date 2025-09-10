@@ -56,9 +56,9 @@ In the following example, the parent container has explicit height and width set
 
 ## Sticky header
 
-The TreeGrid offers sticky headers, which keep column headers visible at the top while scrolling vertically. This enhances user experience by maintaining data context during navigation of wide or long hierarchical data sets.
+The TreeGrid offers sticky headers, which keep column headers visible at the top while scrolling vertically. This improves data context visibility and accessibility during navigation of wide or long hierarchical data sets.
 
-For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, allowing users to easily keep track of the data context.
+For example, in a project management application, scrolling through a detailed list of tasks and subtasks is a common operation. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, maintaining clear visibility of the data context.
 
 To enable sticky headers in the TreeGrid, you can simply set the `enableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
 

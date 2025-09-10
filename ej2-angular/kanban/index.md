@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Index in Angular Kanban component | Syncfusion
+title: Index in Angular Kanban Component | Syncfusion
 description: Learn here all about Index in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Index
@@ -15,7 +15,7 @@ The **Kanban** board visually depicts work at various stages of a process using 
 ## Key Features
 
 * **Drag-and-drop** - Provided smooth drag-and-drop support to cards to flow various stages of Kanban.
-* **Data Binding** - Bind the Kanban component with an array of JSON objects or `DataManager`, which supports OData and remote web service binding.
+* **Data Binding** - Bind the Kanban component with an array of JSON objects or [DataManager](https://ej2.syncfusion.com/angular/documentation/data/), which supports OData and remote web service binding.
 * **Swimlane** – Supports Swimlane to group the cards based on specified key.
 * **Template** - Provided templating option to render card, column header, swimlane header, and tooltip.
 * **Stacked Headers** - Grouped the related headers with the common header.

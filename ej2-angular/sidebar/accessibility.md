@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Angular Sidebar component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
-control: Sidebar 
+control: Sidebar
 platform: ej2-react
 documentation: ug
 domainurl: ##DomainURL##
@@ -12,7 +12,8 @@ domainurl: ##DomainURL##
 
 The Sidebar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Sidebar component is outlined below.
+## Accessibility Compliance
+The Sidebar component’s accessibility compliance is summarized in the following table.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |

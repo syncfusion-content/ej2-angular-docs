@@ -1,25 +1,28 @@
 ---
 layout: post
 title: Views in Angular File Manager component | Syncfusion
-description: Learn here all about Views in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn how to use and customize different view modes (LargeIcons and Details) in the Syncfusion Angular File Manager component.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in Angular File Manager component
+# Views in Angular File Manager Component
 
-View is the section where the files and folders are displayed for the user to browse. The [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) API can also be used to change the initial view of the File Manager.
+The view section in the File Manager displays files and folders for users to browse and manage. The File Manager component offers two distinct view modes to present your content, each optimized for different use cases:
 
- The File Manager has two types of [views](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) to display the files and folders.
+* [LargeIcons View](#largeicons-view) - Displays files and folders as a icons (default view)
+* [Details View](#details-view) - Presents files and folders in a grid format with additional information
 
-* [LargeIcons View](#largeicons-view)
-* [Details View](#details-view)
+You can set the initial view of the File Manager using the [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) property.
+
 
 ## LargeIcons View
 
-By Default, File Manager is rendered with largeicons view. The following example demonstrates this.
+LargeIcons view is the default presentation mode that displays files and folders as a icons. This view is ideal for visual browsing and when you need to quickly identify files by their thumbnails.
+
+The following example demonstrates the File Manager with details view.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +40,12 @@ By Default, File Manager is rendered with largeicons view. The following example
 
 ## Details View
 
-Details view is an injectable module in the File Manager; therefore, it should be injected before rendering the File Manager to avail its functionality. The default appearance of the File Manager can be changed from largeicons to details view by using the [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) property. The following example demonstrates the File Manager with details view.
+
+Details view displays files and folders in a grid format with additional information such as size, type, and modified date. This view is particularly useful when managing large numbers of files or when you need to sort and filter based on file properties.
+
+Details view is an injectable module in the File Manager; therefore, it must be injected before rendering the File Manager to enable its functionality. You can set the File Manager to display in details view by setting the [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) property to 'Details'.
+ 
+The following example demonstrates the File Manager with details view.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

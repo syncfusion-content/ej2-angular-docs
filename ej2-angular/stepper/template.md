@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Template in Angular Stepper component
 
-The Stepper component allows you to customize the default appearance and content of each step, creating a personalized experience for the user. You can use the [template](https://ej2.syncfusion.com/angular/documentation/api/stepper#template) propety to set the template content for the steps.
+The Stepper component allows customization of step appearance and content using the [template](https://ej2.syncfusion.com/angular/documentation/api/stepper/#template) property, which accepts a string or object. This is useful for rendering dynamic content, Angular components, or complex layouts within steps. Set the `template` property on the `ejs-stepper` component to define custom step rendering.
 
-The step model and current step index are passed as `step` and `currentStep` properties in the template context for customization.
+The template context provides access to the `StepModel` object via the `step` property and the current step index via the `currentStep` property, enabling dynamic customization based on step data such as `label` or `iconCss`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

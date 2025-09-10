@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Stepper component
 
-This section explains how to create a simple Stepper, and demonstrate the basic usage of the Stepper module in an Angular environment.
+This section explains how to create and configure a simple Stepper component in an Angular environment. The Syncfusion Angular Stepper component displays a step-by-step process or workflow, ideal for wizards, Onboarding, or multi-step forms.
 
 ## Dependencies
 
-The list of dependencies required to use the Stepper module in your application is given below:
+The following dependencies are required to use the Stepper component in your application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -22,13 +22,11 @@ The list of dependencies required to use the Stepper module in your application 
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-angular-base
-        
-
 ```
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular application. Install Angular CLI with the following command:
 
 ```
 npm install -g @angular/cli
@@ -36,7 +34,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the following Angular CLI command:
 
 ```
 ng new my-app
@@ -45,9 +43,9 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Stepper Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup>  packages are distributed in npm as `@syncfusion` scoped packages. Find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
@@ -77,16 +75,16 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 @syncfusion/ej2-angular-navigations:"21.1.35-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: Without the `-ngcc` suffix, the Ivy Library Package will be installed, which may cause compatibility warnings for older Angular versions.
 
 ## Adding CSS reference
 
-Add Stepper component's styles as given below in `style.css`.
+Add the Stepper component's styles to `style.css`:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";  
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Stepper component
@@ -124,15 +122,14 @@ export class AppComponent { }
 You can define steps by using `<e-step>` tag directive.
 
 ```javascript
-
 import { Component } from "@angular/core";
-import {StepperAllModule, StepperModule} from '@syncfusion/ej2-angular-navigations'
+import { StepperAllModule, StepperModule } from '@syncfusion/ej2-angular-navigations'
 
 @Component({
 imports: [ StepperAllModule, StepperModule ],
 standalone: true,
 selector: "app-root",
-template: `<!-- To Render Stepper. -->
+template: `<!-- Renders a Stepper with defined steps -->
   <div>
       <ejs-stepper id="default">
           <e-steps>
@@ -146,7 +143,6 @@ template: `<!-- To Render Stepper. -->
   </div>`,
 })
 export class AppComponent { }
-
 ```
 
 ## Running the application

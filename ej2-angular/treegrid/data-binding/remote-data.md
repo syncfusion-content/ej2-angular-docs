@@ -192,7 +192,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-> Also while using **loadChildOnDemand** we need to handle the child records on server end and it is applicable to CRUD operations also.
+> When using **loadChildOnDemand**, child records must be managed on the server side, and this applies to CRUD operations as well.
 
 The following code example describes handling of child records at server end.
 

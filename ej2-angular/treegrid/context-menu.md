@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Context menu in Angular TreeGrid component
 
-The Syncfusion Angular TreeGrid supports a context menu that appears on right-click, enabling users to quickly access built-in or custom actions. To enable this feature, define default or custom items using the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems) property. Inject the `ContextMenu` module into the TreeGrid to use context menus.
+The Syncfusion Angular TreeGrid supports a context menu that appears on right-click, providing quick access to built-in or custom actions. To enable this feature, define default or custom items using the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#contextmenuitems) property. Inject the `ContextMenu` module into the TreeGrid to use context menus.
 
 The following table lists the default context menu items:
 

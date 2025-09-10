@@ -10,15 +10,17 @@ domainurl: ##DomainURL##
 
 # Integrate pager component with ListView in Angular ListView component
 
-The first and foremost step is to obtain the `Pager` component from `Grid`. Install the ej2-angular-grids package using the following command.
+To enable paging functionality in the Syncfusion Angular ListView component, integrate the `Pager` component from the Syncfusion Grid package. This allows users to navigate through large sets of list items efficiently.
+
+Begin by installing the `ej2-angular-grids` package, which provides the Pager component:
 
 ```shell
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
-Import the Pager to the ListView sample which has been created.
+Next, import the Pager into your ListView sample:
 
-```shell
+```typescript
 import { Pager } from "@syncfusion/ej2-angular-grids";
 ```
 
@@ -26,9 +28,9 @@ The [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 With the help of the [`query`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#query) property of ListView, the user can specify the number of records to be displayed in the current page.
 
-The `query` property helps in splitting the entire datasource based on the user’s convenience. In the sample provided below, when clicking the next button in pager, it fetches the datasource based on the page size and the current page of the Pager component.
+To display the correct set of records for the current page, use the [`query`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#query) property of the ListView. This property enables you to fetch and display only the records relevant to the selected page.
 
-The [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) and the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property of ListView is defined within ng-template. The required styles can be changed here accordingly.
+When the Pager's page is changed, update the ListView's `query` property to fetch the appropriate data slice. The following code demonstrates how to handle the Pager's click event and update the ListView accordingly:
 
 ```typescript
 public clickevent(args) {
@@ -36,9 +38,11 @@ public clickevent(args) {
 }
 ```
 
-In the above code snippet, the event stores the [`currentPage`](https://ej2.syncfusion.com/angular/documentation/api/pager/#currentpage) value, and the datasource which is to be displayed in the next page is obtained.
+In this code, the  [`currentPage`](https://ej2.syncfusion.com/angular/documentation/api/pager/#currentpage) value from the Pager event is used to calculate the range of records to display in the ListView for the selected page.
 
-Note: When `pageSize` isn't mentioned, it defaults to 12 records per page.
+> **Note:** If the `pageSize` property is not specified, the Pager defaults to displaying 12 records per page.
+
+The [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) and [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) properties of the ListView can be defined using Angular's `ng-template` to customize the appearance of list items and headers. Adjust the styles as needed to match your application's requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

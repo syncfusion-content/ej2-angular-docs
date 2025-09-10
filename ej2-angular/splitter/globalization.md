@@ -3,16 +3,18 @@ layout: post
 title: Globalization in Angular Splitter component | Syncfusion
 description: Learn here all about Globalization in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Globalization 
+control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Globalization in Angular Splitter component
 
-## RTL
+The Angular Splitter component supports globalization features, including right-to-left (RTL) rendering for languages such as Arabic and Hebrew.
 
-Specifies the direction of the Splitter component using the enableRtl property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
+## Right-to-Left (RTL) support
+
+To enable RTL layout, set the `enableRtl` property to `true`. This adjusts the direction of the Splitter panes and split bars to accommodate RTL writing systems.
 
 The following code shows how to enable RTL behavior.
 

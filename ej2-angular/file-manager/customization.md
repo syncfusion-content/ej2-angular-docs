@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular File Manager component
 
-The File Manager component allows customizing its functionalities, such as context menu, searching, uploading, and toolbar, using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager component provides extensive customization options to tailor its appearance and functionality to your specific requirements. This guide demonstrates how to customize various aspects of the File Manager to enhance user experience and meet your application needs.
+
+## Available customization options
+
+The following customization options are available in the File Manager component:
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -42,8 +46,8 @@ The context menu settings, such as items to be displayed on files, folders, and 
 
 ## Details view customization
 
-The details view settings like, column width, header text, template for each field can be customized using [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) property.
-
+The details view settings like column width, header text, and template for each field can be customized using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) property.
+This allows you to control how file and folder information is displayed in the details view.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/detailsview-cs1/src/app.component.ts %}
@@ -60,7 +64,7 @@ The details view settings like, column width, header text, template for each fie
 
 ## Navigation pane customization
 
-The navigation pane settings like, minimum and maximum width, visibility and sort order can be customized using [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) property.
+The navigation pane settings like minimum and maximum width, visibility, and sort order can be customized using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) property. This helps you optimize the file navigation experience for your users.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +84,7 @@ The navigation pane settings like, minimum and maximum width, visibility and sor
 
 The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showfileextension) property.
 
-In File Manager [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +138,7 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 ## Toolbar customization
 
-The toolbar settings like, items to be displayed in toolbar and visibility can be customized using [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#toolbarsettings) property.
+The toolbar settings like items to be displayed in the toolbar and their visibility can be customized using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#toolbarsettings) property. This allows you to include only the tools relevant to your application's requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,7 +160,7 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 
 ## Upload customization
 
-The upload settings like, minimum and maximum file size and enabling auto upload can be customized using [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#uploadsettings) property.
+The upload settings like minimum and maximum file size and enabling auto upload can be customized using the [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#uploadsettings) property. These settings help control what files users can upload and how the upload process behaves.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -174,7 +178,7 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 
 ## Tooltip customization
 
-The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the File Manager element.
+The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view, and large icons of the File Manager element. Custom tooltips can provide additional information or guidance to users when hovering over File Manager elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

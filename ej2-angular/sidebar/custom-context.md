@@ -3,18 +3,16 @@ layout: post
 title: Custom context in Angular Sidebar component | Syncfusion
 description: Learn here all about Custom context in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Sidebar 
+control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Custom context in Angular Sidebar component
 
-The Sidebar has a flexible option to make it initialize, target to any HTML element alongside of the main content of a web page.
+The Sidebar component allows flexible initialization to target any HTML container element alongside the main content of a web page, enabling customized layouts.
 
-By default, it initializes the target to the body element. [`target`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#target) property allows users to set target element to initialize the Sidebar inside any HTML container element apart from the body element.
-
-> If required, `zIndex` can be set when the Sidebar acts as an overlay type.
+By default, the Sidebar targets the `body` element. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#target) property enables users to specify a custom HTML container, such as a `div` with a CSS selector (e.g., `.main-content`) or an `HTMLElement`, to initialize the Sidebar within a specific section of the page. For overlay-type Sidebars, the [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#zindex) property (default: `1000`) can be adjusted to control the stacking order relative to other elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

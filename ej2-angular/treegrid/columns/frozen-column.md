@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column pinning (Frozen) in Angular TreeGrid component
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component, columns can be **frozen**, ensuring they remain visible while scrolling through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. Important columns remain fixed in their positions, making it easier to access and reference key data points while working with the TreeGrid.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component, columns can be **frozen**, ensuring they remain visible while scrolling through extensive datasets. This functionality significantly improves experience by keeping critical information constantly within view, even when navigating through large volumes of data. Important columns remain fixed in their positions, making it easier to access and reference key data points while working with the TreeGrid.
 
 In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozencolumns) property is set to **2**. This configuration freezes the left two columns of the TreeGrid, and they will remain fixed in their positions while the rest of the TreeGrid columns can be scrolled horizontally.
 
@@ -32,7 +32,7 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
 
 ## Freeze particular columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving user experience. This functionality allows selecting particular columns and freezing them by positioning them at the leftmost side of the TreeGrid, ensuring they remain fixed in place while the remaining TreeGrid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the TreeGrid, the `isFrozen` property can also be used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the experience. This functionality allows selecting particular columns and freezing them by positioning them at the leftmost side of the TreeGrid, ensuring they remain fixed in place while the remaining TreeGrid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the TreeGrid, the `isFrozen` property can also be used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
 To freeze a particular column in the TreeGrid, the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isfrozen) property of the TreeGrid component can be set to **true**.
 
@@ -51,7 +51,7 @@ The following example demonstrates how to freeze particular column in TreeGrid u
 
 ## Freeze direction
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when the `frozenColumns` property of the TreeGrid or the `isFrozen` property of individual columns is set, it results in freezing those columns on the left side of the TreeGrid. This helps in keeping important data readily accessible while navigating through the dataset.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize the experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when the `frozenColumns` property of the TreeGrid or the `isFrozen` property of individual columns is set, it results in freezing those columns on the left side of the TreeGrid. This helps in keeping important data readily accessible while navigating through the dataset.
 
 To achieve this, the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The TreeGrid will adjust the column positions based on the `column.freeze` value.
 

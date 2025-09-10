@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Scrolling in Angular ListView component
 
-Scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
+The ListView component provides built-in scrolling capabilities that enable dynamic content loading and enhanced user interaction. You can implement infinite scrolling patterns to load additional data as users navigate through large datasets, creating smooth and responsive list experiences.
 
-Render the ListView with `dataSource`, and bind the [scroll](https://ej2.syncfusion.com/angular/documentation/api/list-view/#scroll) event. Within the scroll event, you can access information such as the scroll direction, event name and the distance from the scrollbar to the top and bottom ends through the distanceY parameter.
+Render the ListView with `dataSource`, and bind the [scroll](https://ej2.syncfusion.com/angular/documentation/api/list-view/#scroll) event. Within the scroll event, you can access detailed scroll information including the scroll direction, event name, and the distance from the scrollbar to the top and bottom ends through the `distanceY` parameter.
 
-In the given example, new data is seamlessly added while scrolling. When you scrolls to the bottom and the distance scrolled is less than 100 pixels, it dynamically loads a batch of items into the list as long as there are more items to render.
+In the following example, new data is seamlessly added during scrolling operations. When you scroll to the bottom and the remaining scroll distance is less than 100 pixels, the component dynamically loads a batch of items into the list as long as additional items are available to render.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

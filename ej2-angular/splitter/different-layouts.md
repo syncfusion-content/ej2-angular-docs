@@ -3,18 +3,18 @@ layout: post
 title: Different layouts in Angular Splitter component | Syncfusion
 description: Learn here all about Different layouts in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Different layouts 
+control: Splitter
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Different layouts in Angular Splitter component
 
-By using splitter control, you can create the different layouts with multiple and nested panes.
+Using the Angular Splitter component, you can create complex layouts with multiple and nested panes.
 
 ## Code editor style layout
 
-**Step 1**: Create the element with two child to render the outer splitter and create the inner splitter from first pane of vertical splitter.
+**Step 1**: Create an element with two child panes to render the outer Splitter. Then, create an inner Splitter inside the first pane of the vertical Splitter.
 
 ```html
     <ejs-splitter #splitterInstance  id="outerSplitter" (created)='onCreated()' orientation='Vertical' height='400px' width='100%'>
@@ -86,7 +86,7 @@ Once the above configurations has been completed, you will get the output like [
 
 ## Outlook style layout
 
-**Step 1**: Create the element with three panes and place the elements within the pane to render `treeview`, `listview` and `RTE`.
+**Step 1**: Create an element with three panes and place the required components inside each pane to render `TreeView`, `ListView`, and `Rich Text Editor`.
 
 ```html
     <ejs-splitter  id="splitter1" #splitter1 height='493px' width='100%'>

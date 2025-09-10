@@ -12,32 +12,36 @@ domainurl: ##DomainURL##
 
 The File Manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager component.  Additionally, previewing of image files is also provided in the File Manager component.
 
-The following table represents the basic operations available in the File Manager and their corresponding functions.
+This guide explains the core file operations available in the File Manager component and demonstrates how to implement and customize them in your Angular application.
+
+The following table outlines the fundamental operations supported by the File Manager:
 
 |Operation Name|Function|
 |----|----|
-|read|Read the details of files or folders available in the given path from the file system, to display the files for the user to browse the content.|
+|read|Retrieves file and folder details from a specified path in the file system, enabling users to browse content.|
 |create|Creates a new folder in the current path of the file system.|
-|delete|Removes the file or folder from the file server.|
-|rename|Rename the selected file or folder in the file system.|
-|search|Searches for items matching the search string in the current and child directories.|
-|details|Gets the detail of the selected item(s) from the file server.|
-|copy|Copy the selected file or folder in the file system.|
-|move|Cut the selected file or folder in the file server.|
-|upload|Upload files to the current path or directory in the file system.|
-|download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
+|delete|Removes selected files or folders from the file server.|
+|rename|Renames a selected file or folder in the file system.|
+|search|Searches for items matching the specified criteria in current and child directories.|
+|details|Retrieves detailed information about selected item(s) from the file server.|
+|copy|Copies selected files or folders in the file system.|
+|move|Cuts selected files or folders for relocation in the file server.|
+|upload|Uploads files to the current directory in the file system.|
+|download|Downloads selected files from the server (multiple files are downloaded as ZIP files).|
 
->The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the File Manager only after the successful response from the server.
+>Note: The *CreateFolder*, *Remove*, and *Rename* operations will only be reflected in the File Manager interface after a successful response from the server.
 
 ## Folder Upload support
 
-To perform the directory(folder) upload in File Manager, set [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings/#directoryupload) as true within the `uploadSettings` property. The ability to upload either folders or files is determined by the value of the directoryUpload property, which can be enabled or disabled as needed. The directory upload feature is supported for the following file service providers:
-* Physical file service provider.
-* Azure file service provider.
-* NodeJS file service provider.
-* Amazon file service provider.
+To enable directory (folder) upload functionality in the File Manager, set the [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings/#directoryupload) property to true within the `uploadSettings` property. This setting determines whether users can upload entire folders or just individual files.
 
-In the following example, directory upload is enabled/disabled on DropDownButton selection.
+The directory upload feature is supported for the following file service providers:
+* Physical file service provider
+* Azure file service provider
+* NodeJS file service provider
+* Amazon file service provider
+
+The following example demonstrates how to enable or disable directory upload using a DropDownButton selection:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,7 +59,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 
 ### Physical file service provider
 
-To achieve the directory upload in the physical file service provider, use the below code snippet in `IActionResult Upload` method in the `Controllers/FileManagerController.cs` file.
+To implement directory upload in the physical file service provider, add the following code to the `IActionResult Upload` method in your `Controllers/FileManagerController.cs` file:
 
 ```typescript
 [Route("Upload")]
@@ -111,9 +115,9 @@ public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string ac
 }
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L76) for more details
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L76) for more details.
 
-And also add the below code snippet in `FileManagerResponse Upload` method in `Models/PhysicalFileProvider.cs` file.
+Additionally, add this code snippet to the `FileManagerResponse Upload` method in your `Models/PhysicalFileProvider.cs` file:
 
 ```typescript
 string[] folders = name.Split('/');
@@ -121,17 +125,17 @@ string fileName = folders[folders.Length - 1];
 var fullName = Path.Combine((this.contentRootPath + path), fileName);
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Models/PhysicalFileProvider.cs#L1317) for more details.
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Models/PhysicalFileProvider.cs#L1317) for more details.
 
 ### Azure file service provider
 
-For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
+For Azure file service provider, no additional customization is required for directory upload. The default upload method implementation supports this functionality out of the box.
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) for more details.
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) for more details.
 
 ### NodeJS file service provider
 
-To perform the directory upload in the NodeJS file service provider, use the below code snippet in `app.post` method in the `filesystem-server.js` file.
+To implement directory upload in the NodeJS file service provider, add the following code to the `app.post` method in your `filesystem-server.js` file:
 
 ```typescript
 var folders = (path.normalize(req.body.filename).replace(/^(\.\.[\/\\])+/, '').replace(/\\/g, "/")).split('/');
@@ -177,11 +181,11 @@ if (folders.length > 1)
 }
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem/blob/master/filesystem-server.js#L969) for more details.
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem/blob/master/filesystem-server.js#L969) for more details.
 
 ### Amazon file service provider
 
-To perform the directory upload in the Amazon file service provider, use the below code snippet in `IActionResult AmazonS3Upload` method in the `Controllers/AmazonS3ProviderController.cs` file.
+To implement directory upload in the Amazon file service provider, add the following code to the `IActionResult AmazonS3Upload` method in your `Controllers/AmazonS3ProviderController.cs` file:
 
 ```typescript
 foreach (var file in uploadFiles)
@@ -202,24 +206,24 @@ foreach (var file in uploadFiles)
 }
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L88) for more details.
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L88) for more details.
 
-And also add the below code snippet in `AsyncUpload` method in `Models/AmazonS3FileProvider.cs` file.
+Additionally, add this code to the `AsyncUpload` method in your `Models/AmazonS3FileProvider.cs` file:
 
 ```typescript
 string[] folders = file.FileName.Split('/');
 string name = folders[folders.Length - 1];
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L681) for more details.
+Refer to the [GitHub repository](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L681) for more details.
 
 ## File operation request and response Parameters
 
-The default parameters available in file operation request from the File Manager and the corresponding response parameters required by the File Manager are listed as follows.
+This section details the request parameters sent by the File Manager and the response parameters expected by the component for various file operations.
 
 ### Read
 
-The following table represents the request parameters of *read* operations.
+The following table outlines the request parameters for *read* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -241,7 +245,7 @@ The following table represents the request parameters of *read* operations.
 }
 ```
 
-The following table represents the response parameters of *read* operations.
+The following table outlines the response parameters for *read* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -285,7 +289,7 @@ The following table represents the response parameters of *read* operations.
 
 ### Create
 
-The following table represents the request parameters of *create* operations.
+The following table outlines the request parameters for *create* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -319,7 +323,7 @@ The following table represents the request parameters of *create* operations.
 }
 ```
 
-The following table represents the response parameters of *create* operations.
+The following table outlines the response parameters for *create* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -352,7 +356,7 @@ The following table represents the response parameters of *create* operations.
 
 ### Rename
 
-The following table represents the request parameters of *rename* operations.
+The following table outlines the request parameters for *rename* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -388,7 +392,7 @@ The following table represents the request parameters of *rename* operations.
 }
 ```
 
-The following table represents the response parameters of *rename* operations.
+The following table outlines the response parameters for *rename* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -421,7 +425,7 @@ The following table represents the response parameters of *rename* operations.
 
 ### Delete
 
-The following table represents the request parameters of *delete* operations.
+The following table outlines the request parameters for *delete* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -443,7 +447,7 @@ The following table represents the request parameters of *delete* operations.
 }
 ```
 
-The following table represents the response parameters of *delete* operations.
+The following table outlines the response parameters for *delete* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -476,7 +480,7 @@ The following table represents the response parameters of *delete* operations.
 
 ### Details
 
-The following table represents the request parameters of *details* operations.
+The following table outlines the request parameters for *details* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -498,7 +502,7 @@ The following table represents the request parameters of *details* operations.
 }
 ```
 
-The following table represents the response parameters of *details* operations.
+The following table outlines the response parameters for *details* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -529,7 +533,7 @@ The following table represents the response parameters of *details* operations.
 
 ### Search
 
-The following table represents the request parameters of *search* operations.
+The following table outlines the request parameters for *search* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -553,7 +557,7 @@ The following table represents the request parameters of *search* operations.
 }
 ```
 
-The following table represents the response parameters of *search* operations.
+The following table outlines the response parameters for *search* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -597,7 +601,7 @@ The following table represents the response parameters of *search* operations.
 
 ### Copy
 
-The following table represents the request parameters of *copy* operations.
+The following table outlines the request parameters for *copy* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -620,7 +624,7 @@ The following table represents the request parameters of *copy* operations.
 }
 ```
 
-The following table represents the response parameters of *copy* operations.
+The following table outlines the response parameters for *copy* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -660,7 +664,7 @@ The following table represents the response parameters of *copy* operations.
 
 ### Move
 
-The following table represents the request parameters of *move* operations.
+The following table outlines the request parameters for *move* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -683,7 +687,7 @@ The following table represents the request parameters of *move* operations.
 }
 ```
 
-The following table represents the response parameters of *copy* operations.
+The following table outlines the response parameters for *move* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -723,7 +727,7 @@ The following table represents the response parameters of *copy* operations.
 
 ### Upload
 
-The following table represents the request parameters of *Upload* operations.
+The following table outlines the request parameters for *Upload* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -773,7 +777,7 @@ The upload response is an empty string.
 
 ### Download
 
-The following table represents the request parameters of *download* operations.
+The following table outlines the request parameters for *download* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -835,36 +839,36 @@ The following table represents the request parameters of *download* operations.
 }
 ```
 
-Downloads the requested items from the file server in response.
+The response downloads the requested items from the file server.
 
 ### GetImage
 
-The following table represents the request parameters of *GetImage* operations.
+The following table outlines the request parameters for *GetImage* operations:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |path|String|-|Relative path to the image file|
 
-Return the image as a file stream in response.
+The response returns the image as a file stream.
 
-The request from the File Manager can be customized using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend) event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
+>Note: You can customize File Manager requests using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend) event. This allows you to pass additional information to the File Manager in file operation responses for customization purposes.
 
 ## File request and response contents
 
-The following table represents the contents of *data, cwd, and files* in the File Manager request and response.
+The following table outlines the common properties in *data, cwd, and files* objects in File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
+|dateCreated|String|-|Date in which file was created (UTC Date string)|
+|dateModified|String|-|Date in which file was last modified (UTC Date string)|
+|filterPath|String|-|Relative path to the file or folder|
+|hasChild|Boolean|-|Indicates if this folder has any child folder or not|
+|isFile|Boolean|-|Indicates whether the item is a file or folder|
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table represents the contents of *error* in the File Manager request and response.
+The following table outlines the properties in the *error* object in File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -872,45 +876,45 @@ The following table represents the contents of *error* in the File Manager reque
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table represents the contents of *details* in the File Manager request and response.
+The following table outlines the properties in the *details* object in File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
+|dateCreated|String|-|Date in which file was created (UTC Date string)|
+|dateModified|String|-|Date in which file was last modified (UTC Date string)|
+|filterPath|String|-|Relative path to the file or folder|
+|hasChild|Boolean|-|Indicates if this folder has any child folder or not|
+|isFile|Boolean|-|ndicates whether the item is a file or folder|
 |size|Number|-|File size|
 |type|String|-|File extension|
-|multipleFiles|Boolean|-|Say whether the details are about single file or multiple files.|
+|multipleFiles|Boolean|-|Indicates whether the details are for a single file or multiple files|
 
 ## Action Buttons
 
-The File Manager has several menu buttons to access file operations, and the list of available menu buttons is given in the following table.
+The File Manager includes various menu buttons for accessing file operations. The following table describes the available menu buttons and their behaviors:
 
-|Menu Button|Behaviour|
+|Menu Button|Behavior|
 |----|----|
-|SortBy| Opens the sub menu to choose the sorting order and sorting parameter.|
-|View| Opens the sub menu to choose the View.|
-|Open| Navigates to the selected folder. Opens the preview for image files.|
-|Refresh| Initiates the read operation for the current directory and displays the updated directory content.|
-|NewFolder| Opens the new folder dialog box to receive the name for the new folder.|
-|Rename| Opens the rename dialog box to receive the new name for the selected item.|
-|Delete| Opens the delete dialog box to confirm the removal of the selected items from the file system.|
-|Upload| Opens the upload box to select the items to upload to the file system.|
-|Download| Downloads the selected item(s).|
-|Details| Get details about the selected items and display them in details dialog box.|
-|SelectAll| Selects all the files and folders displayed in the view section.|
+|SortBy| Opens the sub menu to choose the sorting order and sorting parameter|
+|View| Opens the sub menu to choose the View|
+|Open| Navigates to the selected folder. Opens the preview for image files|
+|Refresh| Initiates the read operation for the current directory and displays the updated directory content|
+|NewFolder| Opens the new folder dialog box to receive the name for the new folder|
+|Rename| Opens the rename dialog box to receive the new name for the selected item|
+|Delete| Opens the delete dialog box to confirm the removal of the selected items from the file system|
+|Upload| Opens the upload box to select the items to upload to the file system|
+|Download| Downloads the selected item(s)|
+|Details| Get details about the selected items and display them in details dialog box|
+|SelectAll| Selects all the files and folders displayed in the view section|
 
-The action menu buttons are present in the toolbar and context menu. The toolbar contains the buttons based on the selected items count, while the context menu will appear with a list based on the target.
+These action buttons appear in both the toolbar and context menu. The toolbar displays buttons based on the number of selected items, while the context menu provides options relevant to the clicked item.
 
 ### Toolbar
 
-The toolbar can be divided into two sections as right and left. Whenever the toolbar buttons exceed the size, the buttons present in the left section of the toolbar will be moved to the toolbar popup.
+The toolbar is divided into left and right sections. When toolbar buttons exceed the available space, buttons from the left section automatically move to a toolbar popup menu.
 
-The following table provides the toolbar buttons that appear based on the selection.
+The following table shows which toolbar buttons appear based on selection state:
 
 <!-- markdownlint-disable MD033 -->
 <table border="1">
@@ -973,7 +977,7 @@ The following table provides the toolbar buttons that appear based on the select
 
 ### Context menu
 
-The following table provides the default context menu item and the corresponding target areas.
+The following table shows the default context menu items and their corresponding target areas:
 
 <!-- markdownlint-disable MD033 -->
 <table border="1">
@@ -997,8 +1001,8 @@ The following table provides the default context menu item and the corresponding
         </td>
         <td>
             <ul>
-                <li>Empty space in the view section (details view and large icon view area).</li>
-                <li>Empty folder content.</li>
+                <li>Empty space in the view section (details view and large icon view area)</li>
+                <li>Empty folder content</li>
             </ul>
         </td>
     </tr>
@@ -1015,7 +1019,7 @@ The following table provides the default context menu item and the corresponding
         </td>
         <td>
             <ul>
-                <li>Folders in treeview, details view, and large icon view.</li>
+                <li>Folders in treeview, details view, and large icon view</li>
             </ul>
         </td>
     </tr>
@@ -1032,7 +1036,7 @@ The following table provides the default context menu item and the corresponding
         </td>
         <td>
             <ul>
-                <li>Files in details view and large icon view.</li>
+                <li>Files in details view and large icon view</li>
             </ul>
         </td>
     </tr>

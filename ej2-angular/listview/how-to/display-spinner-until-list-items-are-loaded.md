@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display spinner until list items are loaded in Angular ListView component | Syncfusion
+title: Show spinner until items load in Angular ListView | Syncfusion
 description: Learn here all about Display spinner until list items are loaded in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display spinner until list items are loaded in Angular ListView component
+# Display loading spinner in Angular ListView component
 
-The features of the ListView component such as remote data-binding take more time to fetch data from corresponding dataSource/remote URL. In this case, you can use EJ2 [Spinner](https://ej2.syncfusion.com/angular/documentation/spinner/) to enhance the appearance of the UI. This section explains how to load a spinner component to groom the appearance.
+When fetching data from remote sources using the ListView component, there might be a delay in loading the data. During this time, you can enhance the user experience by displaying the EJ2 [Spinner](https://ej2.syncfusion.com/angular/documentation/spinner) component. This guide demonstrates how to implement a loading spinner with the ListView component.
 
 Refer to the following code sample to render the spinner component.
 

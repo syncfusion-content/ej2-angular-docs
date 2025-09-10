@@ -3,16 +3,18 @@ layout: post
 title: Pane sizing in Angular Splitter component | Syncfusion
 description: Learn here all about Pane sizing in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Pane sizing 
+control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Pane sizing in Angular Splitter component
 
-Splitter allows you to provide pane sizes either in pixel or percentage formats.
+The Angular Splitter component allows you to define pane sizes using pixel values, percentage values, or automatic sizing based on layout behavior.
 
-`Pane size in pixel`
+## Set pane size in pixels
+
+To assign fixed pixel values to panes, use the `size` property in `paneSettings`. This ensures consistent pane dimensions regardless of container size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,10 +25,12 @@ Splitter allows you to provide pane sizes either in pixel or percentage formats.
 {% include code-snippet/splitter/pane-sizes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/splitter/pane-sizes-cs1" %}
 
-`Pane size in percentage`
+## Set pane size in percentage
+
+You can also define pane sizes as percentages. This approach ensures responsive behavior across different screen sizes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,12 +41,12 @@ Splitter allows you to provide pane sizes either in pixel or percentage formats.
 {% include code-snippet/splitter/pane-sizes-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/splitter/pane-sizes-cs2" %}
 
 ## Auto-size panes
 
-The splitter panes are automatically adjusted within its layout on resizing, while the size of panes are not specified. Because the panes are designed based on flex layout by default. When add/remove or show/hide the panes, the panes are auto aligned within its container.
+When no explicit size is provided, panes automatically adjust based on available space. This behavior is powered by the default flex layout, allowing dynamic resizing when panes are added, removed, shown, or hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,12 +57,12 @@ The splitter panes are automatically adjusted within its layout on resizing, whi
 {% include code-snippet/splitter/template-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/splitter/template-cs2" %}
 
 ## Fixed pane
 
-You can render the split panes with fixed size for both horizontal and vertical mode. Even you provide fixed sizes to all panes, the splitter will consider last pane as flexible pane. Because, the splitter needs at least one pane as flexible pane always to adjust its remaining layout space.
+You can configure panes with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Splitter treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,5 +73,5 @@ You can render the split panes with fixed size for both horizontal and vertical 
 {% include code-snippet/splitter/fixed-pane-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/splitter/fixed-pane-cs1" %}

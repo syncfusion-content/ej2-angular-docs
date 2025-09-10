@@ -3,18 +3,18 @@ layout: post
 title: Style in Angular Splitter component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style in Angular Splitter component
 
-The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
+This guide outlines the CSS structure used to customize the appearance of the Angular Splitter component based on user preferences.
 
 ## Customizing the split bar
 
-Use the following CSS to customize the split bar properties.
+Use the following CSS rules to modify the default, hover, and active states of the split bar.
 
 ### Horizontal split bar
 
@@ -48,7 +48,7 @@ Use the following CSS to customize the split bar properties.
 
 ## Customizing the split bar resize handle
 
-Use the following CSS to customize the split bar resize handle.
+Adjust the appearance of the resize handle within the split bar.
 
 ### Horizontal split bar resize handle
 
@@ -82,7 +82,7 @@ Use the following CSS to customize the split bar resize handle.
 
 ## Customizing the split bar arrows
 
-Use the following CSS to customize the split bar arrows.
+Modify the appearance of the navigation arrows displayed on the split bar.
 
 ### Horizontal split bar resize arrows
 
@@ -114,7 +114,7 @@ Use the following CSS to customize the split bar arrows.
 
 ## To hide the resize handle in Splitter
 
-Use the following CSS to hide the resize handler in the split bar
+To remove the resize handle from the split bar, apply the following CSS:
 
 ### Hide the horizontal split bar resize arrow
 
