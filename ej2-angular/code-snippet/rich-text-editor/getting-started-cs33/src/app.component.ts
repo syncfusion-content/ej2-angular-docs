@@ -18,7 +18,7 @@ export class AppComponent  {
         items: ['FontSize']
     };
     public size = {
-        default: '10',
+        default: '12pt',
         width: '40px',
         items: [{ text: '8', value: '8pt' },
         { text: '10', value: '10pt' },
