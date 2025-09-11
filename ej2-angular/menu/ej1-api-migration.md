@@ -3,14 +3,14 @@ layout: post
 title: Ej1 api migration in Angular Menu component | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Ej1 api migration in Angular Menu component
 
-This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This guide helps you migrate from Essential<sup style="font-size:70%">&reg;</sup> JS 1 (EJ1) to Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2) for the Angular Menu component. It outlines deprecated features, renamed APIs, and new equivalents to ensure a smooth transition.
 
 ## Properties
 

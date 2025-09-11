@@ -3,12 +3,14 @@ layout: post
 title: Use case scenarios in Angular Menu component | Syncfusion
 description: Learn here all about Use case scenarios in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Use case scenarios 
+control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Use case scenarios in Angular Menu component
+
+This section demonstrates practical use cases for the Angular Menu component, including scrollable menus, toolbar integration, hamburger menus, and mobile views.
 
 ## Scrollable menu
 
@@ -28,7 +30,7 @@ The menu component supports horizontal and vertical scrolling to render large me
 
 ## Menu in toolbar
 
-The following example demonstrates how to integrate Menu with Toolbar component.
+Building on the Menu component’s integration capabilities, the following example demonstrates how to integrate the Menu with the Toolbar component. Note that the `ToolbarModule` must be imported from `@syncfusion/ej2-angular-navigations` to use the Toolbar alongside the Menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +46,7 @@ The following example demonstrates how to integrate Menu with Toolbar component.
 
 ## Hamburger menu
 
-The following example demonstrates the use case of menu with Accordion component integrated in SideBar.
+The following example demonstrates a hamburger menu integrating the Menu component with the Accordion component within a SideBar, where the Accordion organizes menu items vertically and the SideBar provides a collapsible navigation panel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +62,7 @@ The following example demonstrates the use case of menu with Accordion component
 
 ## Mobile view
 
-The following example demonstrates the use case of Menu in Mobile mode by using ListView component with hamburger.
+The following example demonstrates the use case of the Menu in mobile mode using the ListView component with a hamburger icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

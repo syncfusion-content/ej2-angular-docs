@@ -17,7 +17,7 @@ Before implementing baseline functionality, ensure the data source includes base
 **Baseline fields**:
 - [baselineStartDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#baselinestartdate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
 - [baselineEndDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#baselineenddate): Represents the originally planned end date of a task. It is used to compare against the actual end date.
-- [baselineDuration](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#baselineduration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to 0. Setting `baselineStartDate` and `baselineEndDate` to the same value without setting baselineDuration to 0 will result in a one-day baseline task, not a milestone.
+- [baselineDuration](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#baselineduration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to `0`. Setting `baselineStartDate` and `baselineEndDate` to the same value without setting `baselineDuration` to `0` will result in a one-day baseline task, not a milestone.
 
 ## Implement baseline
 

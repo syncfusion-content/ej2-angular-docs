@@ -3,18 +3,18 @@ layout: post
 title: Getting started with Angular Menu component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Menu component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Menu component
 
-This section explains how to create a simple Menu, and demonstrate the basic usage of the Menu module in an Angular environment.
+This section explains how to create a simple Menu component, a navigational UI element for organizing commands hierarchically in Angular applications, and demonstrates its basic usage with the Menu module.
 
 ## Dependencies
 
-The list of dependencies required to use the Menu module in your application is given below:
+The following dependencies are required for the Menu component’s functionality, including rendering, data handling, and popup behavior:
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -31,7 +31,7 @@ The list of dependencies required to use the Menu module in your application is 
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI, use the following command:
 
 ```
 npm install -g @angular/cli
@@ -39,7 +39,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the following Angular CLI command:
 
 ```
 ng new my-app
@@ -48,11 +48,11 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Menu Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. All Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm at [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -74,18 +74,17 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows:
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified during installation, the Ivy Library Package will be installed and may throw a warning.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Menu component
 
-Modify the template in `app.component.ts` file with `ejs-menu` to render the Menu
-component.
+Modify the template in `app.component.ts` to render the Menu component using the `ejs-menu` directive. The `items` property accepts an array of `MenuItemModel` objects, supporting nested `items` for hierarchical submenus, imported from `@syncfusion/ej2-angular-navigations`.
 
 ```javascript
 import { MenuModule } from '@syncfusion/ej2-angular-navigations'
@@ -144,7 +143,7 @@ export class AppComponent {
 
 ## Adding CSS reference
 
-Add Menu component's styles as given below in `style.css`.
+Add the Menu component’s styles to `style.css` as follows:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -179,7 +178,7 @@ For more information about data source support, refer to the [`Data Source Bindi
 ## Group Menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property.
+You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property.
 The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
@@ -194,5 +193,5 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
   
 {% previewsample "page.domainurl/samples/menu/getting-started-cs4" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/).
 You can also enable the separator to group **horizontal** menu items.

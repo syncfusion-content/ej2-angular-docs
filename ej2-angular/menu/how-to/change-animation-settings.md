@@ -3,14 +3,17 @@ layout: post
 title: Change animation settings in Angular Menu component | Syncfusion
 description: Learn here all about Change animation settings in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Change animation settings 
+control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change animation settings in Angular Menu component
+# Customize animation settings in Angular Menu component
 
-To change the animation of the Menu, [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/) property is used. The supported effects for Menu are,
+You can customize the animation behavior of the Angular Menu component using the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/) property. This allows you to control how the menu appears and disappears, enhancing the user experience with smooth transitions.
+
+## Available animation effects
+The following animation effects are supported:
 
 | Effect | Functionality |
 | ------------ | ----------------------- |
