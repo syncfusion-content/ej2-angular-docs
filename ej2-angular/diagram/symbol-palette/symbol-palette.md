@@ -81,6 +81,47 @@ The symbol palette supports adding group nodes. To add group nodes to the palett
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palette-grp" %}
 
+## Template-based symbols
+
+### HTML and SVG nodes with content template
+
+The Symbol Palette supports the creation of complex nodes using HTML or SVG templates. This allows developers to incorporate rich, interactive, and visually engaging content within diagram elements.
+
+* For HTML content, set the node's `shape.type` property to **HTML**.
+* For SVG content, set the `shape.type` property to **Native**.
+
+Templates can be defined either as strings or functions and assigned to the node's `content` property. Function-based templates offer the flexibility to generate dynamic content based on node-specific properties or external data sources.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/content-template/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/content-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/content-template" %}
+
+### HTML node with nodeTemplate
+
+The Symbol Palette [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#nodetemplate) property allows you to define reusable HTML structure that can be applied to multiple symbols. This approach is efficient when several palette symbols share a similar visual structure but contain different data.
+
+Templates should be created within `<script>` tags using unique IDs, which are then assigned to the symbol palette `nodeTemplate` property. When symbols are dragged from the palette, the diagram automatically applies the corresponding template and binds the symbol's data to the template elements.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/node-template/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/node-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/node-template" %}
+
 ## Drag and drop symbols from palette to diagram
 
 To drag and drop symbols from the palette to the diagram canvas, perform a mousedown action on the desired symbol in the palette, drag it to the desired location on the diagram canvas, and release the mouse button to drop it.

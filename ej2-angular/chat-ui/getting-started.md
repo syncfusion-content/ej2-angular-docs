@@ -24,6 +24,7 @@ The following list of dependencies are required to use the Angular Chat UI compo
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
 ```
 
 ## Setup angular environment
@@ -90,6 +91,7 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
 ```
 

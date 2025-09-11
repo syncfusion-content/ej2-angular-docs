@@ -228,4 +228,4 @@ The following example demonstrates how to work with the two-way binding function
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](./data-binding)
