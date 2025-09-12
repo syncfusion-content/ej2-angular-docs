@@ -208,7 +208,7 @@ private void ExcelHeaderQueryCellInfo(object excel)
     TreeGridExcelExport exp = new TreeGridExcelExport();
     var size = exp.ExcelTextSize(name.Style.Font.FontName, (float)name.Style.Font.Size, longestString);
     name.Cell.RowHeight = size.Width;
-    exp.HeaderCellRotate(name, 45); // Give the rotate degree value by the user.  
+    exp.HeaderCellRotate(name, 45); // Specify the rotation angle in degrees.  
     name.Style.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.None;
 }
 ```
