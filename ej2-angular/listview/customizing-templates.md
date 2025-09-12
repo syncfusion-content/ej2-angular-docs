@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Customizing templates in Angular ListView component
 
-The ListView component is designed to customize list items, group title and header title.
+The ListView component provides comprehensive template customization options that allow you to control the appearance and layout of list items, group headers, and the main header. Templates enable you to create rich, interactive interfaces by defining custom HTML structures with data binding for different sections of the ListView.
 
 ## Header template
 
-ListView header can be customized with the help of the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) property.
+The ListView header can be customized using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) property, which allows you to add interactive elements like search bars, action buttons, or branding elements above your list content.
 
-To customize header template in your application, set your customized template element inside ng tag directive along with [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property as `true` to display the ListView header.
+To implement a custom header template, define your template content within an ng-template directive and set the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property to `true` to display the ListView header.
 
-In the following example, we have rendered ListView with customized header which contains search, add and sort buttons.
+In the following example, the ListView renders with a customized header containing search, add, and sort buttons for enhanced user interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,11 +34,11 @@ In the following example, we have rendered ListView with customized header which
 
 ## Template
 
-ListView items can be customized with the help of the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property.
+Individual ListView items can be fully customized using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property, allowing you to define complex layouts with data binding, conditional rendering, and custom styling for each list item.
 
-To customize list items in your application, set your customized template element inside ng tag directive.
+To customize list items, define your template content within an ng-template directive. The template has access to the data context of each list item, enabling dynamic content generation based on your data source.
 
-We provided the following built-in CSS classes to customize the list-items. Refer to the following table.
+The following built-in CSS classes are provided to streamline common template layouts and ensure consistent styling across different template scenarios:
 
 | CSS class        | Description           |
 | ------------- |-------------|
@@ -50,7 +50,7 @@ We provided the following built-in CSS classes to customize the list-items. Refe
 | e-list-multi-line | This class is used for multi-line customization. It should be added to the template element wrapper. After adding it, we can customize List item's header and description <br/><br/>`<div class="e-list-wrapper`<b>`e-list-multi-line`</b>`">` <br/> `<span class="e-list-content">ListItem</span>`<br/>`</div>`|
 | e-list-item-header |This class is used to align a list header and it should be added to the header element along with the multi-line class <br/><br/> `<div class="e-list-wrapper`<b>`e-list-multi-line`</b>`">`<br/> <b>`<span class="e-list-item-header">ListItem Header</span>`</b><br/> `<span class="e-list-content">ListItem</span>`<br/>`</div>`|
 
-In the following example, we have customized list items with built-in CSS classes.
+In the following example, list items are customized using built-in CSS classes to create rich, structured layouts with avatars and multi-line content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,11 +66,11 @@ In the following example, we have customized list items with built-in CSS classe
 
 ## Group template
 
-ListView group header can be customized with the help of the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#grouptemplate) property.
+ListView group headers can be customized using the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#grouptemplate) property, enabling you to create informative section headers that can display aggregate information, custom styling, or interactive elements for grouped data.
 
-To customize the group template in your application, set your customized template element inside ng tag directive.
+To implement group templates, define your template content within an ng-template directive. The template receives the group data context, including the group key and associated items, allowing you to display dynamic information about each group.
 
-In the following example, we have grouped ListView based on the category. The category of each list item should be mapped with [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) field of the data. We have also displayed grouped list items count in the group list header.
+In the following example, ListView items are grouped by category using the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) field mapping. The group header template displays both the category name and the count of items within each group, providing users with helpful context about the data organization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

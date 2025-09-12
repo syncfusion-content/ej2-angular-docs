@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular ListView component
 
-The ListView component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The ListView component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the ListView component is outlined below.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the ListView component is outlined below.
 
 ## WAI-ARIA attributes
 
-The ListView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the ListView component:
+The ListView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet accessibility requirements. The following ARIA attributes are used in the ListView component based on different configurations:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -54,22 +54,22 @@ The ListView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 
 ## Keyboard interaction
 
-The ListView component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the ListView component.
+The ListView component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies (AT) and keyboard navigation. The following keyboard shortcuts are supported by the ListView component:
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
-| <kbd>Arrow Up</kbd> | Move to the previous list item |
-| <kbd>Arrow Down</kbd> | Move to the next list item |
-| <kbd>Space</kbd> | Check and uncheck the targeted list from the whole list |
-| <kbd>BackSpace</kbd> | Get back to the previous lists if it is nested list |
-| <kbd>Home</kbd> | Moves focus to first list item |
-| <kbd>End</kbd> | Moves focus to last list item |
+| <kbd>Arrow Up</kbd> | Moves focus to the previous list item |
+| <kbd>Arrow Down</kbd> | Moves focus to the next list item |
+| <kbd>Space</kbd> | Checks and unchecks the targeted list item when `showCheckBox` is enabled |
+| <kbd>BackSpace</kbd> | Navigates back to the previous list level in nested list scenarios |
+| <kbd>Home</kbd> | Moves focus to the first list item |
+| <kbd>End</kbd> | Moves focus to the last list item |
 
 ## Ensuring accessibility
 
-The ListView component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The ListView component's accessibility levels are validated through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the ListView component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the ListView component with accessibility tools.
+The accessibility compliance of the ListView component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the ListView component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/list-view.html" %}
 

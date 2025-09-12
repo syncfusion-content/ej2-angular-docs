@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular File Manager component
 
-File Manager's UI virtualization allows for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
+File Manager's UI virtualization optimizes performance by dynamically loading only the visible files and directories in the viewport instead of rendering the entire collection at once. This significantly improves loading times and reduces memory consumption when handling large numbers of files and directories in both detailsView and largeIconsView.
 
 ## Module Injection
 
-In order to use UI Virtualization, you need to import `VirtualizationService` module in the AppModule and it should be injected into the provider section as follows
+To implement UI virtualization, import the `VirtualizationService` module in your AppModule and inject it into the provider section as follows:
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -36,11 +36,13 @@ export class AppModule { }
 
 ## Enable Virtualization
 
-The virtualization of the File Manager component is based on the height and width of the viewport. The items will be loaded in both [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) and [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings/) based on the viewport size.
+The File Manager's virtualization feature dynamically renders items based on the current viewport dimensions. As users scroll through content in either [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) or [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings/), only the visible items are loaded, while others are rendered on demand.
 
-In order to enable `virtualization`, you must set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablevirtualization) property to true.
+To enable virtualization, set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablevirtualization) property to true. This is especially recommended when working with directories containing hundreds or thousands of files.
 
-The example below demonstrates a large collection of files in the 'Documents' and 'Text Documents' folders.
+### Implementation Example
+
+The following example demonstrates virtualization with a large collection of files in the 'Documents' and 'Text Documents' folders:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,10 +58,20 @@ The example below demonstrates a large collection of files in the 'Documents' an
 
 {% previewsample "page.domainurl/samples/file-manager/virtualization-cs1" %}
 
+## When to Use Virtualization
+
+Virtualization is particularly beneficial in the following scenarios:
+
+* File systems with hundreds or thousands of files in a single directory
+* Applications where File Manager needs to load quickly without performance degradation
+* Environments with limited memory resources where rendering large collections could impact performance
+
 ## Limitations for Virtualization
+
+When implementing virtualization in the File Manager, be aware of these limitations:
 
 * Programmatic selection using the **selectAll** method is not supported with virtual scrolling.
 
 * The keyboard shortcut **CTRL+A** will only select the files and directories that are currently visible within the viewport, rather than selecting all files and directories in the entire directory tree.
 
-* Selected file items are not maintained while scrolling, considering the performance of the component.
+* Selected file items are not maintained while scrolling to optimize component performance.

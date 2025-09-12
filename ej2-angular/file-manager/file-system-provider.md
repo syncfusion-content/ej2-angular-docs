@@ -12,7 +12,8 @@ domainurl: ##DomainURL##
 
 The file system provider allows the File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
-The following file providers are added in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager component.
+## Overview of File System Providers
+The following file providers are available in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager component:
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)
@@ -56,14 +57,13 @@ export class AppComponent {
         // Initializing File Manager with Physical file system provider.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FileManager/FileOperations",
-            downloadUrl = this.hostUrl + "api/FileManager/Download",
-            uploadUrl = this.hostUrl + "api/FileManager/Upload",
-            getImageUrl = this.hostUrl + "api/FileManager/GetImage"
+            url: this.hostUrl + "api/FileManager/FileOperations",
+            downloadUrl: this.hostUrl + "api/FileManager/Download",
+            uploadUrl: this.hostUrl + "api/FileManager/Upload",
+            getImageUrl: this.hostUrl + "api/FileManager/GetImage"
         };
     }
 }
-
 ```
 
 >Note: To learn more about the file actions that can be performed with Physical file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
@@ -114,10 +114,10 @@ export class AppComponent {
         // File Manager sample with Azure service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/AzureProvider/AzureFileOperations",
-            downloadUrl = this.hostUrl + "api/AzureProvider/AzureDownload",
-            uploadUrl = this.hostUrl + "api/AzureProvider/AzureUpload",
-            getImageUrl = this.hostUrl + "api/AzureProvider/AzureGetImage"
+            url: this.hostUrl + "api/AzureProvider/AzureFileOperations",
+            downloadUrl: this.hostUrl + "api/AzureProvider/AzureDownload",
+            uploadUrl: this.hostUrl + "api/AzureProvider/AzureUpload",
+            getImageUrl: this.hostUrl + "api/AzureProvider/AzureGetImage"
         };
     }
 }
@@ -130,7 +130,7 @@ Please, use the following command to install the NuGet package in an application
 
 ```typescript
 
- dotnet add package Syncfusion.EJ2.FileManager.AzureFileProvider.AspNet.Core
+dotnet add package Syncfusion.EJ2.FileManager.AzureFileProvider.AspNet.Core
 
 ```
 
@@ -174,10 +174,10 @@ export class AppComponent {
         // File Manager sample with amazon service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/AmazonS3Provider/AmazonS3FileOperations",
-            downloadUrl = this.hostUrl + "api/AmazonS3Provider/AmazonS3Download",
-            uploadUrl = this.hostUrl + "api/AmazonS3Provider/AmazonS3Upload",
-            getImageUrl = this.hostUrl + "api/AmazonS3Provider/AmazonS3GetImage"
+            url: this.hostUrl + "api/AmazonS3Provider/AmazonS3FileOperations",
+            downloadUrl: this.hostUrl + "api/AmazonS3Provider/AmazonS3Download",
+            uploadUrl: this.hostUrl + "api/AmazonS3Provider/AmazonS3Upload",
+            getImageUrl: this.hostUrl + "api/AmazonS3Provider/AmazonS3GetImage"
         };
     }
 }
@@ -253,10 +253,10 @@ export class AppComponent {
     public ngOnInit(): void {
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url: hostUrl + 'api/SharePointProvider/SharePointFileOperations',
-            downloadUrl: hostUrl + 'api/SharePointProvider/SharePointDownload',
-            uploadUrl: hostUrl + 'api/SharePointProvider/SharePointUpload',
-            getImageUrl: hostUrl + 'api/SharePointProvider/SharePointGetImage'
+            url: this.hostUrl + 'api/SharePointProvider/SharePointFileOperations',
+            downloadUrl: this.hostUrl + 'api/SharePointProvider/SharePointDownload',
+            uploadUrl: this.hostUrl + 'api/SharePointProvider/SharePointUpload',
+            getImageUrl: this.hostUrl + 'api/SharePointProvider/SharePointGetImage'
         };
     }
 }
@@ -283,7 +283,7 @@ void SetFTPConnection(string hostName, string userName, string password)
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows you to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows you to manage the FTP's objects storage.
 
 ```typescript
 
@@ -301,10 +301,10 @@ export class AppComponent {
         // File Manager sample with file transfer protocol service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FTPProvider/FTPFileOperations",
-            downloadUrl = this.hostUrl + "api/FTPProvider/FTPDownload",
-            uploadUrl = this.hostUrl + "api/FTPProvider/FTPUpload",
-            getImageUrl = this.hostUrl + "api/FTPProvider/FTPGetImage"
+            url: this.hostUrl + "api/FTPProvider/FTPFileOperations",
+            downloadUrl: this.hostUrl + "api/FTPProvider/FTPDownload",
+            uploadUrl: this.hostUrl + "api/FTPProvider/FTPUpload",
+            getImageUrl: this.hostUrl + "api/FTPProvider/FTPGetImage"
         };
     }
 }
@@ -369,10 +369,10 @@ export class AppComponent {
         // Initializing the File Manager with SQL database service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/SQLProvider/SQLFileOperations",
-            downloadUrl = this.hostUrl + "api/SQLProvider/SQLDownload",
-            uploadUrl = this.hostUrl + "api/SQLProvider/SQLUpload",
-            getImageUrl = this.hostUrl + "api/SQLProvider/SQLGetImage"
+            url: this.hostUrl + "api/SQLProvider/SQLFileOperations",
+            downloadUrl: this.hostUrl + "api/SQLProvider/SQLDownload",
+            uploadUrl: this.hostUrl + "api/SQLProvider/SQLUpload",
+            getImageUrl: this.hostUrl + "api/SQLProvider/SQLGetImage"
         };
     }
 }
@@ -381,9 +381,9 @@ export class AppComponent {
 
 > **Note:** To learn more about the file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features)
 
-## NodeJS file system provider
+## Node JS file system provider
 
-The NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the NodeJS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
+The Node JS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the Node JS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
 
 ### Using ej2-filemanager-node-filesystem package
 
@@ -429,7 +429,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 > **Note:** By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager component to the appropriate file operation methods in the filesystem-server.js file will allow to manage the physical file system with NodeJS file system provider.
+Now, just mapping the **ajaxSettings** property of the File Manager component to the appropriate file operation methods in the filesystem-server.js file will allow to manage the physical file system with Node JS file system provider.
 
 ```typescript
 
@@ -447,16 +447,16 @@ export class AppComponent {
         // Initializing the File Manager with NodeJS service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl,
-            downloadUrl = this.hostUrl+ "Download",
-            uploadUrl = this.hostUrl+ "Upload",
-            getImageUrl = this.hostUrl+ "GetImage"
+            url: this.hostUrl,
+            downloadUrl: this.hostUrl+ "Download",
+            uploadUrl: this.hostUrl+ "Upload",
+            getImageUrl: this.hostUrl+ "GetImage"
         };
     }
 }
 ```
 
-> **Note:** To learn more about the file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features)
+> **Note:** To learn more about the file actions that can be performed with Node JS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features)
 
 ## Google Drive file system provider
 
@@ -470,7 +470,7 @@ cd google-drive-aspcore-file-provider
 
 ```
 
-Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain the  OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the from Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain the OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the from Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 After generating the client secret data, copy the JSON data to the following specified JSON files in the cloned location.
 
@@ -496,10 +496,10 @@ export class AppComponent {
         // Initializing the File Manager with Google Drive service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/GoogleDriveProvider/GoogleDriveFileOperations",
-            downloadUrl = this.hostUrl + "api/GoogleDriveProvider/GoogleDriveDownload",
-            uploadUrl = this.hostUrl + "api/GoogleDriveProvider/GoogleDriveUpload",
-            getImageUrl = this.hostUrl + "api/GoogleDriveProvider/GoogleDriveGetImage"
+            url: this.hostUrl + "api/GoogleDriveProvider/GoogleDriveFileOperations",
+            downloadUrl: this.hostUrl + "api/GoogleDriveProvider/GoogleDriveDownload",
+            uploadUrl: this.hostUrl + "api/GoogleDriveProvider/GoogleDriveUpload",
+            getImageUrl: this.hostUrl + "api/GoogleDriveProvider/GoogleDriveGetImage"
         };
     }
 }
@@ -587,7 +587,7 @@ Here, the `Files` denotes the `rootNode` and the subsequent object refers to the
 
 ```
 
-> **Note:** By default, rules of a Firebase project will be **false**. To read and write the data, configure the  **Rules** as given in the following code snippet in the *Rules* tab in the Firebase Realtime Database project.
+> **Note:** By default, rules of a Firebase project will be **false**. To read and write the data, configure the **Rules** as given in the following code snippet in the *Rules* tab in the Firebase Realtime Database project.
 
 * Navigate to the project settings as instructed and then click on the **Service Account** tab.
 
@@ -597,7 +597,7 @@ Here, the `Files` denotes the `rootNode` and the subsequent object refers to the
 
 ![generate_key](images/generate_key.png)
 
-* Next, you will need to clone the [`firebase-realtime-database-apscore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
+* Next, you will need to clone the [`firebase-realtime-database-aspcore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
 
 * Once you have generated the secret key, you will need to replace the JSON in the `access_key.json` file in the Firebase Realtime Database provider project with the newly generated key. This will enable authentication and allow you to perform read and write operations.
 
@@ -621,11 +621,11 @@ this.operation.RegisterFirebaseRealtimeDB("{copy your API URL here}", "Files", h
 
 ```
 
-In the above code,
+In the above code:
 
 * `{copy your API URL here}` denotes Firebase Realtime Database REST API link.
 
-* `Files` denotes newly created root node in Firebase Realtime  Database.
+* `Files` denotes newly created root node in Firebase Realtime Database.
 
 * `hostingEnvironment.ContentRootPath + \\FirebaseRealtimeDBHelper\\access_key.json` denotes service account key path which has authentication key for the Firebase Realtime Database data.
 
@@ -647,10 +647,10 @@ export class AppComponent {
         // Initializing File Manager with Firebase Realtime Database service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeFileOperations",
-            downloadUrl = this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeDownload",
-            uploadUrl = this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeUpload",
-            getImageUrl = this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeGetImage"
+            url: this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeFileOperations",
+            downloadUrl: this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeDownload",
+            uploadUrl: this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeUpload",
+            getImageUrl: this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeGetImage"
         };
     }
 }

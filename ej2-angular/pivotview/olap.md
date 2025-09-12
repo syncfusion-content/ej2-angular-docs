@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Olap in Angular Pivot Table component | Syncfusion
+title: OLAP in Angular Pivot Table component | Syncfusion
 description: Learn here all about Olap in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Olap 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Olap in Angular Pivot Table component
+# OLAP in Angular Pivot Table component
 
 ## Getting started
 
@@ -16,7 +16,9 @@ This section explain steps to create a simple **Pivot Table** with OLAP data sou
 
 ### Dependencies
 
-The following list of dependencies are required to use the pivot table component in your application.
+Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component effectively in your Angular application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
+
+The following dependency tree shows the required packages for the Angular Pivot Table component:
 
 ```javascript
 |-- @syncfusion/ej2-angular-pivotview
@@ -42,9 +44,13 @@ The following list of dependencies are required to use the pivot table component
 |-- @syncfusion/ej2-angular-base
 ```
 
+The main package `@syncfusion/ej2-angular-pivotview` serves as the primary Angular wrapper for the Pivot Table component. This package automatically includes all the necessary sub-dependencies shown in the tree structure above. When you install the main package, npm will automatically resolve and install these dependencies, ensuring your Pivot Table component functions properly with all its supported operations, including data binding, user interactions, and export options.
+
 ### Setup Angular Environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular application. To install Angular CLI use the following command.
+Setting up the Angular environment properly ensures smooth development and deployment of your Pivot Table application. To streamline this process, you can use the [`Angular CLI`](https://github.com/angular/angular-cli), which provides a comprehensive toolkit for Angular application development.
+
+Install Angular CLI globally on your system using the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -52,13 +58,17 @@ npm install -g @angular/cli
 
 ### Create an Angular Application
 
-Create a new Angular application using below Angular CLI command.
+Creating a new Angular application provides the foundation for integrating the Syncfusion Angular Pivot Table component. With Angular CLI installed, you can now generate a new project using the command below:
 
 ```bash
 ng new my-app
 ```
 
-Now, the application is created in the **my-app** demo folder. Run the following command to navigate to the **my-app** demo folder.
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial setup](images/Initial-setup.png)
+
+By default, it creates a CSS-based application. Once the project is created, navigate to the project folder to begin working with your new Angular application:
 
 ```bash
 cd my-app
@@ -66,7 +76,18 @@ cd my-app
 
 ### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> PivotView package
 
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the pivot table component, use the following command.
+To build interactive PivotTable in Angular, you need to install the Syncfusion<sup style="font-size:70%">&reg;</sup> PivotTable package. Syncfusion packages are available on npm as `@syncfusion` scoped packages. You can find all Syncfusion Angular packages in the npm [`registry`](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two distinct package structures to accommodate different Angular development environments and ensure compatibility across various Angular versions:
+
+1. **Ivy Library Distribution Package** - Modern format for Angular 12 and above
+2. **Angular Compatibility Compiler (ngcc) Package** - Legacy support for Angular versions below 12
+
+#### Ivy library distribution package
+
+The Ivy library distribution package represents the modern approach to Angular development, designed specifically for the Angular [`Ivy`](https://docs.angular.lat/guide/ivy) rendering engine. This package format offers improved performance, smaller bundle sizes, and an enhanced development experience for applications built with Angular 12 and later versions.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (version 20.2.36 and above) utilize the Ivy distribution format to ensure full compatibility with Angular's latest rendering capabilities. To install the Ivy-compatible package, add the [`@syncfusion/ej2-angular-pivotview`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38) package to your application using the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-pivotview --save
@@ -74,14 +95,32 @@ npm install @syncfusion/ej2-angular-pivotview --save
 
 > The **--save** will instruct NPM to include the pivot table package inside the `dependencies` section of the `package.json`.
 
+#### Angular compatibility compiled package(ngcc)
+
+For projects using Angular versions below 12, the Angular Compatibility Compiler (ngcc) package ensures seamless integration with the legacy Angular compilation and rendering pipeline. This package maintains full functionality while supporting older Angular environments that have not yet migrated to the Ivy rendering engine.
+
+To install the ngcc-compatible package, add the [`@syncfusion/ej2-angular-pivotview@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38-ngcc) package to your application:
+
+```bash
+npm install @syncfusion/ej2-angular-pivotview@ngcc --save
+```
+
+When specifying the ngcc package in your `package.json` file, include the `-ngcc` suffix with the package version as shown below:
+
+```json
+"@syncfusion/ej2-angular-pivotview": "20.2.38-ngcc"
+```
+
+> **Note**: Installing the package without the `-ngcc` suffix will automatically install the Ivy library package, which may generate compatibility warnings in Angular versions below 12.
+
 ### Registering PivotView Module
 
-Import **PivotViewModule** (aka, PivotTable) into an Angular application in **src/app/app.module.ts** file from the package **@syncfusion/ej2-angular-pivotview**. Then declare **PivotViewModule** in imports section of the NgModule as follows.
+To use the Pivot Table in your Angular application, you need to add the `PivotViewModule` from the `@syncfusion/ej2-angular-pivotview` package to your project. Open the **src/app/app.module.ts** file and import the `PivotViewModule`. Then, include `PivotViewModule` in the imports array of your `@NgModule` decorator, as shown below:
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import the PivotViewModule for the pivot table component
+// Import the PivotViewModule for the Pivot Table component
 import { PivotViewModule } from '@syncfusion/ej2-angular-pivotview';
 import { AppComponent }  from './app.component';
 
@@ -96,7 +135,9 @@ export class AppModule { }
 
 ### Adding CSS reference
 
-Next we need to refer the pivot table and its [dependency](#dependencies) styles into the **[src/styles.css]** file. Those CSS files are available in "../node_modules/@syncfusion" package folders. This can be referenced in **[src/styles.css]** using following code. In this illustration, we have referred **material** theme.
+Adding the required CSS files ensures that your Angular Pivot Table component displays with the proper styling and visual elements. These CSS files contain the necessary styles for all dependent components to render correctly.
+
+The following CSS files are available in the `../node_modules/@syncfusion` package folder. Add these CSS imports to your `src/styles.css` file to apply the material theme styling:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -116,7 +157,9 @@ Next we need to refer the pivot table and its [dependency](#dependencies) styles
 
 ### Add pivot table component
 
-Next we need to add the template in **[src/app/app.component.ts]** file to initialize the pivot table component. Add the Angular pivot table by using `<ejs-pivotview>` selector in **template** section of the **app.component.ts** file.
+Setting up the Pivot Table component in your Angular application is straightforward and allows you to create powerful data analysis interfaces with minimal configuration. The component integrates seamlessly with Angular's component architecture and provides a robust foundation for data visualization.
+
+To initialize the Pivot Table component, add the following code to your `src/app/app.component.ts` file. This example demonstrates how to set up the basic component structure using the `<ejs-pivotview>` selector:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -131,7 +174,7 @@ export class AppComponent {
 
 ```
 
-After initialization, add the the following code in **[src/app/app.component.ts]** file to populate pivot table with a sample OLAP data source. Refer [here](#data-binding) to know the more details about OLAP data binding.
+Once the Pivot Table is added, you need to bind it to an OLAP data source. Update the `src/app/app.component.ts` file by defining the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel/) property and setting it as an input to the Pivot Table component. For more details about OLAP data binding, refer to [this section](#data-binding).
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -162,24 +205,21 @@ export class AppComponent implements OnInit {
 
 ### Adding OLAP cube elements to row, column, value and filter axes
 
-Now that pivot table is initialized and assigned with sample OLAP data source, will further move to showcase the component by organizing appropriate [OLAP cube elements](#olap-cube-elements) in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) axes.
+After initializing the Pivot Table and assigning a sample OLAP data source, you can organize the [OLAP cube elements](#olap-cube-elements) to define how your data is displayed using the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) properties in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option.
 
-In [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) property, four major axes [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) plays a vital role in defining and organizing [OLAP cube elements](#olap-cube-elements) from the bound data source, to render the entire pivot table component in a desired format.
+You can use these four main axes to arrange OLAP cube elements from your data source and control how the Pivot Table displays the information.
 
-[`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) – Collection of [OLAP cube elements](#olap-cube-elements) (such as Hierarchies, NamedSet, Calculated Members etc.,) that needs to be displayed in row axis of the pivot table.
+- [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows): Add OLAP cube elements such as hierarchies, named sets, or calculated members to show them as rows in the Pivot Table.
+- [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns): Add OLAP cube elements like hierarchies, named sets, or calculated members to show them as columns in the Pivot Table.
+- [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values): Add OLAP cube elements such as measures or calculated measures to display summarized numeric data in the Pivot Table.
+- [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters): Add OLAP cube elements like hierarchies or calculated members here to filter the data shown in the row, column, and value axes.
 
-[`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) – Collection of [OLAP cube elements](#olap-cube-elements) (such as Hierarchies, NamedSet, Calculated Members etc.,) that needs to be displayed in column axis of the pivot table.
+To specify each [OLAP cube element](#olap-cube-elements) in the required axis, set the following options:
 
-[`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) – Collection of [OLAP cube elements](#olap-cube-elements) (such as Measures, Calculated Measures) that needs to be displayed as aggregated numeric values in the pivot table.
+- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name): Specifies the unique name of the hierarchy, named set, measure, or calculated member from the OLAP data source. The name must be entered exactly as it appears in the data source. If the name is not matched, the Pivot Table will be empty.
+- [`caption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#caption): Specifies a caption or display name for the item in the Pivot Table. If a caption is not set, the unique name appears by default.
 
-[`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) - Collection of [OLAP cube elements](#olap-cube-elements) (such as Hierarchies and Calculated Members) that would act as master filter over the data bound in row, column and value axes of the pivot table.
-
-In-order to define each [OLAP cube element](#olap-cube-elements) in the respective axis, the following basic properties should be set.
-
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name): It allows to set the unique name of the hierarchies, named set, measures, calculated members etc., from the bound OLAP data source. It’s casing should match exactly like in the data source and if not set properly, the pivot table will be rendered as empty.
-* [`caption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#caption): It allows to set the caption, which is the alias name of the unique name that needs to be displayed in the pivot table. If not provided, unique name will be displayed.
-
-In this sample, "Product Categories" is added in column, "Customer Geography" in row, and "Customer Count" and "Internet Sales Amount" in value axes respectively.
+For example, in the sample below, the element "Product Categories" is assigned to the columns axis, "Customer Geography" is assigned to the rows axis, and both "Customer Count" and "Internet Sales Amount" are set in the values axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,9 +235,11 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 ### Applying formatting to a value field
 
-Formatting defines a way in which values should be displayed. For example, format **"C"** denotes the values should be displayed in currency pattern. To do so, define the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) property with its [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) and [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#format) properties and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings). In this sample, the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) property is set as **[Measures].[Internet Sales Amount]**, a field from value section and its format is set as currency. Likewise, we can set format for other value fields as well and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings).
+You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) property within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/), and define both the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) (the value field to format) and the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#format) (the format to apply).
 
-> Only fields from value section, which is in the form of numeric data values are applicable for formatting.
+In the following example, the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) array.
+
+> Only fields from the value section containing numeric data can be formatted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,14 +250,16 @@ Formatting defines a way in which values should be displayed. For example, forma
 {% include code-snippet/pivot-grid/getting-started-cs190/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs190" %}
 
 ### Enable grouping bar
 
-The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube-elements) from the bound data source and allows end users to drag [OLAP cube elements](#olap-cube-elements) between different axes such as [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters), and change pivot view at runtime. Sorting, filtering and removing of elements is also possible. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showgroupingbar) property to **true** and by injecting the **GroupingBarService** module as follows.
+The grouping bar lets users easily organize [OLAP cube elements](#olap-cube-elements) from the connected data source. Users can drag these cube elements between different axes, such as [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters), to quickly change how data is shown in the Pivot Table. It also allows sorting, filtering, and removing of elements directly from the grouping bar, making it simple to customize the Pivot Table layout at runtime.
 
-> If the **GroupingBarService** module is not injected, the grouping bar will not be rendered with the pivot table component.
+To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showgroupingbar) property to **true** in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/) component, and make sure to inject the **GroupingBarService** module as shown below.
+
+> Note: If the **GroupingBarService** module is not injected, the grouping bar will not appear in the Pivot Table component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,14 +270,16 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 {% include code-snippet/pivot-grid/getting-started-cs191/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs191" %}
 
 ### Enable pivot field list
 
-The component provides a built-in Field List similar to Microsoft Excel. It allows you to add or remove [OLAP cube elements](#olap-cube-elements) and also rearrange the [OLAP cube elements](#olap-cube-elements) between different axes, including [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showfieldlist) property to **true** and by injecting the **FieldListService** module as follows.
+The Pivot Table control includes a built-in Field List, similar to the one in Microsoft Excel. This Field List allows users to add or remove [OLAP cube elements](#olap-cube-elements), and to move them between different axes: [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters). Users can also filter and sort these elements as needed, all during runtime.
 
-> If the **FieldListService** module is not injected, the Field List will not be rendered with the pivot table component.
+To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showfieldlist) property to **true** on the Pivot Table. It is also necessary to inject the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService/) module.
+
+> Note: If the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService/) module is not injected, the Field List will not appear in the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -244,12 +290,14 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
 {% include code-snippet/pivot-grid/getting-started-cs192/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs192" %}
 
 ### Exploring filter axis
 
-The filter axis contains collection of [OLAP cube elements](#olap-cube-elements) such as hierarchies and calculated members that would act as master filter over the data bound in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) and [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) axes of the pivot table. The [OLAP cube elements](#olap-cube-elements) along with filter members could be set to filter axis either through report via code behind or by dragging and dropping [OLAP cube elements](#olap-cube-elements) from other axes to filter axis via grouping bar or field list at runtime.
+The filter axis in the Pivot Table allows users to control which data is displayed in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), and [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) axes. It includes various [OLAP cube elements](#olap-cube-elements), such as hierarchies and calculated members. When elements are placed in the filter axis, they act as master filters that refine the data shown in the Pivot Table.
+
+Users can add [OLAP cube elements](#olap-cube-elements) and filter members to the filter axis either by updating the report in code behind or by dragging items from other axes to the filter axis using the grouping bar or field list at runtime. This makes it easy to filter data according to specific requirements directly within the Pivot Table interface.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -265,24 +313,25 @@ The filter axis contains collection of [OLAP cube elements](#olap-cube-elements)
 
 ### Calculated field
 
-The calculated field allows user to insert or add a new calculated field based on the available [OLAP cube elements](#olap-cube-elements) from the bound data source. Calculated fields are nothing but customized dimensions or measures that are newly created based on the user-defined expression.
+The calculated field option lets users create a new field in the Pivot Table by using expressions based on existing [OLAP cube elements](#olap-cube-elements) from the connected data source. These calculated fields are new custom dimensions or measures built from an expression defined by the user.
 
-The two types of calculated fields are as follows:
+There are two types of calculated fields:
 
-* **Calculated Measure** – Creates a new measure through user-defined expression.
-* **Calculated Dimension** – Creates a new dimension through user-defined expression.
+- **Calculated Measure** – Creates a new measure by using a custom expression.
+- **Calculated Dimension** – Creates a new dimension by using a custom expression.
 
-It can be customized using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#calculatedfieldsettings) property through code behind. The setting required for calculate field feature at code behind are:
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#name): It allows to set the unique name for new calculated field.
-* [`formula`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formula): It allows to set the user-defined expression.
-* [`hierarchyUniqueName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#hierarchyuniquename): It allows to specify dimension unique name whose hierarchies alone should be used in the expression. This will be applicable only for calculated dimension.
-* [`formatString`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formatstring): It allows to set the format string for the resultant calculated field.
+You can define calculated fields in your code by using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#calculatedfieldsettings) property in the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) configuration. The available options for calculated fields are:
 
-You need to set [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#iscalculatedfield) property to true, while adding calculated fields to respective axis through code behind.
+- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#name): Sets a unique name for the new calculated field.
+- [`formula`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formula): Allows you to set the expression for the calculated field.
+- [`hierarchyUniqueName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#hierarchyuniquename): Specifies the dimension’s unique name, so that only hierarchies within that dimension are used in the expression. This option applies only to calculated dimensions.
+- [`formatString`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formatstring): Sets the format for the calculated field result.
 
-Also calculated fields can be added at run time through the built-in dialog. The dialog can be enabled by setting the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#allowcalculatedfield) property to **true** and by injecting the **CalculatedFieldService** module as follows. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation.
+When adding calculated fields to an axis in your code, set the [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#iscalculatedfield) property to **true**.
 
-> If the **CalculatedFieldService** module is not injected, the calculated field dialog will not be rendered with the pivot table component. Moreover calculated measure can be added only in value axis.
+You can also add calculated fields at runtime through the built-in dialog. To enable this dialog, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#allowcalculatedfield) property to **true** and add the **CalculatedFieldService** module. This will display a button in the Field List UI, letting users open the calculated field dialog and create or edit calculated fields as needed.
+
+> If the **CalculatedFieldService** module is not added, the calculated field dialog will not be shown with the Pivot Table component. Also, calculated measures can be added only to the value axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -296,109 +345,141 @@ Also calculated fields can be added at run time through the built-in dialog. The
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs194" %}
 
-Users can add a calculated field at runtime through the built-in dialog by using the following steps.
+Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
-**Step 1:** Click the "CALCULATED FIELD" button in the field list dialog positioned at the top right corner. The calculated field dialog will be opened now. Enter the name of the calculated field to be created.
+**Step 1:** Click the **CALCULATED FIELD** button in the field list dialog, located at the top right corner. The calculated field dialog appears. Enter the name for the new calculated field in the dialog.
 <br/>
+
+![Calculated field button](images/olap_calc_button.png)  
 <br/>
-![output](images/olap_calc_button.png)
+
+![Enter calculated field name](images/calculatedfield-name.png)
+
+**Step 2:** Create the expression for your calculated field. To do this, drag and drop fields from the tree view on the left side of the dialog and use simple arithmetic operators.
+
+**For example**: `IIF([Measures].[Internet Sales Amount]^0.5 > 100, [Measures].[Internet Sales Amount]*100, [Measures].[Internet Sales Amount]/100)`  
+For more information about supported [`operators`](https://docs.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://docs.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15), see the Microsoft documentation.
 <br/>
+
+![Create calculated field expression](images/calculatedfield-drag.png)
+
+**Step 3:** Select the type for the new field, either calculated measure or calculated dimension.
 <br/>
-![output](images/calculatedfield-name.png)
+
+![Select calculated field type](images/calculatedfield-type.png)
+
+**Step 4:** If you are creating a calculated dimension, select its parent hierarchy from the drop-down list. This step is only required when adding a calculated dimension.
 <br/>
+
+![Choose parent hierarchy](images/calculatedfield-hierarchy.png)
+
+**Step 5:** Select a format string from the drop-down list and then click **OK** to finalize the calculated field.
 <br/>
-**Step 2:** Frame the expression by dragging and dropping the fields from the tree view on the left side of the dialog using simple arithmetic operators. **Example:** "IIF([Measures].[Internet Sales Amount]^0.5 > 100, [Measures].[Internet Sales Amount]*100, [Measures].[Internet Sales Amount]/100)". Please refer here to learn more about the supported [`operators`](https://docs.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://docs.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15) to frame the expression.
+
+![Choose format string](images/calculatedfield-format-string.png)
 <br/>
-<br/>
-![output](images/calculatedfield-drag.png)
-<br/>
-<br/>
-**Step 3:** Confirm the type of the field to be created - calculated measure or calculated dimension.
-<br/>
-<br/>
-![output](images/calculatedfield-type.png)
-<br/>
-<br/>
-**Step 4:** Choose the parent hierarchy of the calculated field. NOTE: It is only applicable to the calculated dimension.
-<br/>
-<br/>
-![output](images/calculatedfield-hierarchy.png)
-<br/>
-<br/>
-**Step 5:** Then select the format string from the drop-down list and finally click "OK".
-<br/>
-<br/>
-![output](images/calculatedfield-format-string.png)
-<br/>
-<br/>
-![output](images/olap_calc_grid.png)
-<br/>
-<br/>
+
+![Calculated field added in Pivot Table](images/olap_calc_grid.png)
 
 #### Format String
 
-Allows you to specify the required format string while creating new calculated field. Supported format strings are:
+When creating a calculated field in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/), you can choose the format for displaying values by selecting a format string. The available options are:
 
-* **Standard** - Denotes the numeric type.
-* **Currency** - Denotes the currency type.
-* **Percent** - Denotes the percentage type.
-* **Custom** - Denotes the custom format. For example: "###0.##0#". This shows the value "9584.3" as "9584.300."
+* **Standard** – Displays values as standard numbers.
+* **Currency** – Displays values in currency format.
+* **Percent** – Displays values as a percentage.
+* **Custom** – Allows you to define your own format string. For example, entering "###0.##0#" will show the value "9584.3" as "9584.300".
 
-By default, **Standard** will be selected from the drop down list.
+By default, the **Standard** option is selected in the drop-down list.
 
-![output](images/calculatedfield-fomat.png)
+This option helps users present calculated field results in the most suitable format for their needs.
+
+![Format string in calculated field](images/calculatedfield-fomat.png)
 
 #### Renaming the existing calculated field
 
-Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, click the target field. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
+You can rename any existing calculated field directly through the user interface at runtime. This option allows you to update calculated field names to keep them clear and meaningful as your analysis needs change.
+
+To rename a calculated field:
+
+1. Open the calculated field dialog in the Pivot Table.
+2. Click the name of the field you want to rename. The current name will be shown in the text box at the top of the dialog.
+3. Enter the new name in the text box.
+4. Click **OK** to save the new name.
 
 <!-- markdownlint-disable MD012 -->
-![output](images/before-edit-olap.png)
+![Renaming the calculated field before editing](images/before-edit-olap.png)
 <br/>
-<br/>
-![output](images/after-edit-olap.png)
 
-#### Editing the existing calculated field formula
+![Renaming the calculated field after editing](images/after-edit-olap.png)
 
-Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, click the target field. User can now see the existing expression getting displayed in a "Expression" section. Now, change the expression based on user requirement and click "OK".
+#### Editing an existing calculated field formula
 
-![output](images/before-edit-olap.png)
-<br/>
-<br/>
-![output](images/after-change-olap.png)
+You can edit an existing calculated field formula directly through the user interface at runtime. To do this:
 
-#### Reusing the existing formula in a new calculate field
+1. Open the calculated field dialog in the Pivot Table.
+2. From the list, select the calculated field you want to edit.
+3. The current formula for the selected field will appear in the **Expression** section.
+4. Modify the formula as needed based on your requirements.
+5. Click **OK** to apply and save your changes.
 
-While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Expression" section.
+The Pivot Table will automatically update to show the changes in the calculated values.
 
-![output](images/before-edit-olap.png)
+![Editing the calculated field](images/before-edit-olap.png)
+<br/>
+
+![Editing the calculated field after change](images/after-change-olap.png)
+
+#### Reusing an existing formula in a new calculated field
+
+This option allows you to easily create a new calculated field in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/) by reusing a formula from an existing calculated field. This saves time and helps keep your calculations consistent.
+
+To reuse an existing formula when working with the OLAP data source:
+
+1. Open the calculated field dialog in the Pivot Table.
+2. Find the existing calculated field that contains the formula you want to use again.
+3. Drag the existing calculated field from the field list treeview.
+4. Drop it into the **Expression** section. The formula from the selected field is then added automatically.
+5. If needed, you can adjust the formula further or use it without changes.
+6. Click **OK** to add your new calculated field.
+
+![Reusing the calculated field in Pivot Table](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/while-drag-olap.png)
+
+![Dragging the existing calculated field](images/while-drag-olap.png)
 <br/>
 <br/>
-![output](images/after-drag-olap.png)
+
+![Calculated field formula reused](images/after-drag-olap.png)
 
 #### Modifying the existing format string
 
-Existing calculated field's format string can be modified only through the UI at runtime. To do so, open the calculated field dialog and click the target calculated field. User can now see the format string for the existing calculated field getting displayed in a drop-down list. Change the format string based on the requirement and finally click "OK".
+You can modify the format string of an existing calculated field at runtime through the user interface. To do this:
 
-![output](images/before-edit-olap.png)
+1. Open the calculated field dialog in the Pivot Table.
+2. Click the name of the calculated field you want to edit.
+3. The dialog will display the current format string in a drop-down list.
+4. Select or enter a new format string based on your requirements.
+5. Click **OK** to apply and save your changes.
+
+![Modifying the calculated fields format string](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/after-modify-olap.png)
+
+![Modified calculated field output](images/after-modify-olap.png)
 
 #### Clearing the changes while editing the calculated field
 
-Previous changes can be cleared by using the "Clear" option while performing operations such as creating and editing the calculated field. To do so, click the "Clear" button in the bottom left corner of the dialog.
+If you make edits while creating or modifying a calculated field, you can easily remove all the current changes by clicking the **Clear** button. This option is available in the bottom left corner of the calculated field dialog. Using the Clear button helps you start over without manually undoing each change, ensuring a smooth editing experience.
 
-![output](images/clear-edit-olap.png)
+![Clearing the changes while editing the calculated field](images/clear-edit-olap.png)
 
 ### Virtual Scrolling
 
-Allows large amounts of data to be loaded without any performance degradation by rendering rows and columns in relation to the current viewport. Rest of the data will be brought into the viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) property to **true**.
+Virtual scrolling helps you view large amounts of data smoothly in the Pivot Table. It loads and displays only the rows and columns currently visible in the viewport. As you scroll vertically or horizontally, new data is brought into view automatically, ensuring good performance even with a large data source.
 
-To use the virtual scrolling feature, inject the `VirtualScroll` module into the pivot table.
+To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) option to **true**. Also, be sure to inject the [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#virtualscrollservice) into the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -414,14 +495,16 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 #### Limitations for virtual scrolling
 
-* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
-* Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
-* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
-* When the pivot table's width and height are large, the loading data count in the current, previous, and next viewports (pages) will also increase, affecting performance.
+- When using virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property under [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/) must be set in pixels; percentage values are not supported.
+- Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
+- With OLAP data, subtotals and grand totals are shown only when measures are placed at the end of the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axes within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). If measures appear elsewhere, data will display without summary totals.
+- If the width and height of the Pivot Table are set to large values, the amount of data loaded in the current, previous, and next pages increases. This may impact loading performance during scrolling.
 
 ### Run the application
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+Running the Pivot Table application allows you to see your changes and data in real time directly in the browser, making it easy to check your results.
+
+To start the application, open a command prompt in your project folder and run the following command. This will compile the project and automatically open it in your browser.
 
 ```sh
 ng serve --open
@@ -441,14 +524,16 @@ ng serve --open
 
 ## Data Binding
 
-To bind OLAP datasource to the pivot table, you need to specify following properties under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option.
+To connect an OLAP data source to the Pivot Table, use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) property. Several options within `dataSourceSettings` must be specified to bind data correctly:
 
-| Properties|Description |
-|-----|-----|
-| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#cube "cube")| Points the respective cube name from OLAP database.|
-| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#providertype "providerType")| Points the provider type for pivot table to identify the type of data source.|
-| [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url "url")| Contains the cube URL for establishing the connection (online).|
-| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#catalog "catalog")| Contains the database name (catalog name) to fetch the data.|
+| Property | Description |
+|----------|-------------|
+| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#cube "cube") | Specifies the name of the OLAP cube to use from the database. |
+| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#providertype "providerType") | Indicates the type of provider, helping the Pivot Table determine how to connect to the data source. |
+| [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url "url") | The URL of the OLAP service. Use this to establish an online connection to the cube. |
+| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#catalog "catalog") | The database or catalog name containing the cube data. |
+
+Below are sample code files showing how to bind an OLAP data source in Angular:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -459,14 +544,16 @@ To bind OLAP datasource to the pivot table, you need to specify following proper
 {% include code-snippet/pivot-grid/getting-started-cs197/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs197" %}
 
 ### Fields
 
-#### Measures in row axis
+#### Measures in the row axis
 
-By default, the measures are plotted in column axis. To plot those measures in row axis, place the **Measures** button in the row axis as follows.
+By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showgroupingbar) or the [field list](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/) UI. Simply drag the "Measures" button and drop it onto the rows axis.
+
+Alternatively, you can set up the measure directly in your code by configuring the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) option, as shown in the code below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -480,9 +567,9 @@ By default, the measures are plotted in column axis. To plot those measures in r
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs198" %}
 
-#### Measures in different position
+#### Measures in different positions
 
-You can place measures in different position in row or column axis either thorough code behind or UI. In this sample, **measures** placed before the dimension in the column axis.
+You can choose where to place measures on either the row or column axis thorough code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -493,14 +580,14 @@ You can place measures in different position in row or column axis either thorou
 {% include code-snippet/pivot-grid/getting-started-cs199/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs199" %}
 
 ### Named set
 
-Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions.
+A named set is a multidimensional expression (MDX) that provides a predefined group of members from a dimension. It is created by combining cube data with arithmetic operators, numbers, or functions.
 
-You can bind the named sets in the pivot table by setting it's unique name in the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name) property either in row or column axis and [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#isnamedset) boolean property to **true**. In this sample, we have added "Core Product Group" named set in the column axis.
+To display a named set in the Pivot Table, set its unique name using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name) property within either the row or column axis in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings). Additionally, set the [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#isnamedset) property to **true**. In the example below, the "Core Product Group" named set is added to the column axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -511,17 +598,19 @@ You can bind the named sets in the pivot table by setting it's unique name in th
 {% include code-snippet/pivot-grid/getting-started-cs200/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs200" %}
 
 ### Configuring authentication
 
-Users can configure basic authentication information to access the OLAP cube using the [`authentication`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#authentication) property. The settings required to configure are as follows:
+To connect to an OLAP data source that requires authentication, users can provide basic authentication details through the [`authentication`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#authentication) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option of the Pivot Table. The authentication options include:
 
-* [`userName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#username): It allows the user to set a username that recognizes the basic authentication of the IIS.
-* [`password`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#password): It allows to set the appropriate password.
+- [`userName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#username): Enter the username required for access to the OLAP server.
+- [`password`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#password): Enter the password associated with the username.
 
-> If the user does not configure the authentication, a default popup will appear in the browser to get the authentication information.
+> If authentication details are not provided, the browser will display a default pop-up window prompting users to enter the required information.
+
+Below is an example of how to configure authentication settings in the Pivot Table:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -578,9 +667,9 @@ export class AppComponent {
 
 ### Roles
 
-SQL Server Analysis Services uses [`roles`](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to limit data access within a cube. Each role defines a set of permissions that can be granted to a single user or groups of users. It is used to manage security by limiting access to sensitive data and determining who has access to and can change the cube. It can be configured using the [`roles`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#roles) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings).
+SQL Server Analysis Services (SSAS) uses [roles](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to control user access to the data inside an OLAP cube. Each role is defined with a set of permissions that can be assigned to individual users or groups. By assigning roles, you can restrict access to sensitive data and also determine who can view or modify information in the cube.
 
-> The [`roles`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#roles) property can be used to specify one or more roles to the OLAP cube, separated by commas.
+In the Syncfusion Angular Pivot Table, you can specify roles using the [`roles`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#roles) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) object. This allows you to provide one or more role names for connecting to an OLAP cube. If you want to use multiple roles, list them as a comma-separated string.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -623,78 +712,82 @@ export class AppComponent {
 
 ## OLAP Cube: Elements
 
-### Field list
+### Field List
 
-The field list, aka cube dimension browser, is a tree view like structure that organizes the cube elements such as dimensions, hierarchies, measures, etc., from the selected cube into independent logical groups.
+The field list, also called the cube dimension browser, displays the cube elements from the selected OLAP cube in a tree view structure. It organizes elements such as dimensions, hierarchies, and measures into logical groups, making it easier for the user to explore and arrange data for analysis using the Pivot Table.
 
-#### Types of node in field list
+#### Types of Nodes in the Field List
 
-* **Display folder**: A folder that contains a set of similar elements.
-* **Measure**: Quantity available for analysis.
-* **Dimension**: A name given to the parts of the cube that categorizes data.
-* **Attribute Hierarchy**: Level of attributes down the hierarchy.
-* **User-defined Hierarchy**: Members of a dimension in a hierarchical structure.
-* **Level**: Denotes a specific level in the category.
-* **Named Set**: A collection of tuples and members, that can be defined and saved as a part of cube definition for later use.
+- **Display folder**: Contains a set of similar cube elements grouped together.
+- **Measure**: Represents the numeric values or quantities that users can analyze and summarize in the Pivot Table.
+- **Dimension**: Groups related data and helps users to categorize and filter information in the cube.
+- **Attribute hierarchy**: Shows data at different attribute levels within a dimension, allowing users to drill down for more specific analysis.
+- **User-defined hierarchy**: Presents a custom arrangement of members within a dimension, structured in multiple levels for easier navigation and deeper data analysis.
+- **Level**: Indicates a specific position or stage within a hierarchy for more focused data review.
+- **Named set**: A saved collection of tuples or members that can be reused in analysis as part of the cube definition.
 
 #### Measure
 
-In a cube, a measure is a set of values that are based on a column in the cube’s fact table and are usually numeric. The measures are the central values of a cube that are analyzed. That is, measures are the numeric data of primary interest to users browsing a cube. You can select measures depend on the types of users request. Some common measures are sales, costs, expenditures, and production count.
+A measure in a cube refers to a numeric value that comes from a column in the cube’s fact table. Measures are the main values analyzed in the Pivot Table. They help users investigate metrics such as sales, costs, expenditures, or production counts. Users can select measures based on their analysis needs. In the field list, all available measures are grouped separately, making it easy to select or remove measures as required. When a user chooses a measure, it is displayed in the desired area of the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/) and participates in calculations and summary values.
 
 #### Dimension
 
-A simple dimension object is composed of basic information such as name, hierarchy, level, and members. You can create a dimension element by specifying its name and providing the hierarchy and level name. The dimension element contains the hierarchical details and information about each included level elements in that hierarchy. A hierarchy can have any number of level elements and the level elements can have any number of members and the member elements can have any number of child members.
+A dimension is an essential part of the OLAP cube in the Pivot Table. It holds key information, such as its name, hierarchies, levels, and members. To use a dimension, you specify its name, along with the desired hierarchy and the corresponding level. Each dimension contains detailed information about its hierarchies, and each hierarchy is made up of one or more levels. Within each level, there are members, and each member can also have child members. This structure helps users organize and explore data easily in the Pivot Table.
 
 #### Hierarchy
 
-Each element of a dimension can be summarized using a hierarchy. The hierarchy is a series of parent-child relationship, where a parent member represents the consolidation of members which are its children. Parent members can be further aggregated as the children of another parent. For example, May 2005 can be summarized into Second Quarter 2005 which in turn would be summarized in the year 2005.
+A hierarchy organizes elements within a dimension into a series of parent-child relationships. Each parent member groups its child members, summarizing their data. These parent members can also be grouped under another parent for further summarization. For example, in a time dimension, the month of May 2005 can be grouped under Second Quarter 2005, which is then summarized under the year 2005.
 
 #### Level
 
-Level element is the child of hierarchy element which contains a set of members, each of which has the same rank within a hierarchy.
+A level is a child element of a hierarchy in the field list. It contains a group of members that share the same rank within that hierarchy. For example, in a hierarchy representing geographical data, a level might include members like cities or states, all at the same depth.
 
 #### Attribute hierarchy
 
-Attribute hierarchy contains the following levels:
+An attribute hierarchy in the Pivot Table organizes data into levels for easier analysis. It includes:
 
-* A leaf level contains distinct attribute member, and each member of the leaf level is known as a leaf member.
-* Intermediate levels if the attribute hierarchy is a parent-child hierarchy.
-* An optional (all) level contains the aggregated value of the attribute hierarchy's leaf members, with the member of the (all) level also known as the (all) member.
+- **Leaf level**: This level contains unique attribute members, known as leaf members. Each leaf member represents a distinct data point.
+- **Intermediate levels**: These exist in a parent-child hierarchy, connecting the leaf level to higher levels for structured data exploration.
+- **Optional (all) level**: This level shows the combined total of all leaf members' values. The member at this level is called the (all) member.
 
 #### User-defined hierarchy
 
-User-defined hierarchy organizes the members of a dimension into hierarchical structure and provides navigation paths in a cube. For example, take a dimension table that supports three attributes such as year, quarter, and month. The year, quarter, and month attributes are used to construct a user-defined hierarchy, named Calendar, in the time dimension that relates to all levels.
+A user-defined hierarchy arranges the members of a dimension into a structured, hierarchical format, making it easier to navigate and analyze data in the cube. For example, consider a dimension table with attributes like year, quarter, and month. These attributes can be combined to create a user-defined hierarchy named Calendar within the time dimension. This hierarchy connects all levels—year, quarter, and month—allowing users to explore data across different time periods seamlessly.
 
 #### Differentiating user-defined hierarchy and attribute hierarchy
 
-* User-defined hierarchy contains more than one level whereas attribute hierarchy contains only one level.
-* User-defined hierarchy provides the navigation path between the levels taken from attribute hierarchies of the same dimension.
-* The attribute hierarchy and the user-defined hierarchy are represented in different ways as shown in the following table.
+In the field list of the Pivot Table, hierarchies help users organize and analyze data in different ways. There are two main types of hierarchies:
+
+- **User-defined hierarchy**: This type of hierarchy consists of two or more levels. Each level is created by combining related fields, which allows users to drill down through the data step by step—for example, from "Year" to "Quarter" to "Month" within a "Date" dimension. User-defined hierarchies use fields from the same dimension to create a logical path for navigation.
+
+- **Attribute hierarchy**: In this type, there is only a single level. Each field in the dimension automatically forms an attribute hierarchy. For example, if "Country" is a field, it will appear as an attribute hierarchy with just one level, letting the user view data for each country individually.
 
 #### Named set
 
-A named set is a collection of tuples and members, which can be defined and saved as a part of the cube definition. Named set records reside inside the sets folder, which is under a dimension element. These elements can be dragged to [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis via grouping bar or field list at runtime. To work with a lengthy, complex, or commonly used expression easier, Multidimensional Expressions (MDX) allows you to define a named set.
+A named set is a group of specific tuples or members that can be defined and stored within the OLAP cube. Named sets are saved inside the sets folder under a dimension element in the field list, making them easy to locate. Users can add these named sets to the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axes through the grouping bar or the field list when working with the Pivot Table at runtime. Named sets are useful for handling long, complex, or frequently used expressions. The cube supports defining named sets using Multidimensional Expressions (MDX), which helps users manage these expressions more efficiently.
 
 #### Calculated field
 
-The calculated field allows user to insert or add a new calculated field based on the available OLAP cube elements from the bound data source. Calculated fields are nothing but customized dimensions or measures that are newly created based on the user-defined expression.
+The calculated field option lets users create a new field in the Pivot Table using their own formula or expression, based on the existing OLAP cube elements in the connected data source. These fields act as custom dimensions or measures, allowing users to add calculations that are not originally available in the cube.
 
-The two types of calculated fields are as follows:
+There are two types of calculated fields:
 
-* **Calculated Measure** – Creates a new measure through user-defined expression.
-* **Calculated Dimension** – Creates a new dimension through user-defined expression.
+* **Calculated measure** – This allows users to create a new measure by defining a custom expression. The new measure is then available in the field list along with the other measures.
+* **Calculated dimension** – This allows users to create a new dimension using a user-defined expression. The dimension is grouped together with other dimensions in the field list.
 
 #### Symbolic representation of the nodes inside field list
 
-| Icon|Name | Node type | Is Draggable |
-|-----|-----|-----------|--------------|
-| ![Folder icon in JavaScript pivot table control](images/Folder.png)| Display Folder| Display Folder| False|
-| ![Measure icon in JavaScript pivot table control](images/Measure.png)|Measure| Measure| False|
-| ![Dimension icon in JavaScript pivot table control](images/Dimension.png)| Dimension| Dimension| False|
-| ![User-defined hierarchy in JavaScript pivot table control](images/UserDefinedHierarchy.png)| User Defined Hierarchy| Hierarchy| True|
-| ![Attribute hierarchy in JavaScript pivot table control](images/AttributeHierarchy.png)| Attribute Hierarchy| Hierarchy| True|
-| ![First level icon in JavaScript pivot table control](images/FirstLevel.png)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.png)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.png)| Levels (in order)| Level Element| True|
-| ![NamedSet icon in JavaScript pivot client control](images/NamedSet.png)| Named Set| Named Set| True|
+In the field list, each node uses a specific icon to help users quickly identify its type and purpose. The following table describes each type of node, its symbol, and whether it can be dragged into the Axis Fields:
+
+| Icon | Name | Node type | Is draggable? |
+|------|------|-----------|--------------|
+| ![Folder icon in JavaScript pivot table control](images/Folder.png) | Display folder | Display folder | No |
+| ![Measure icon in JavaScript pivot table control](images/Measure.png) | Measure | Measure | No |
+| ![Dimension icon in JavaScript pivot table control](images/Dimension.png) | Dimension | Dimension | No |
+| ![User-defined hierarchy icon in JavaScript pivot table control](images/UserDefinedHierarchy.png) | User-defined hierarchy | Hierarchy | Yes |
+| ![Attribute hierarchy icon in JavaScript pivot table control](images/AttributeHierarchy.png) | Attribute hierarchy | Hierarchy | Yes |
+| ![First level icon in JavaScript pivot table control](images/FirstLevel.png)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.png)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.png) | Levels (in order) | Level element | Yes |
+| ![NamedSet icon in JavaScript pivot client control](images/NamedSet.png) | Named set | Named set | Yes |
 
 ## Events
 

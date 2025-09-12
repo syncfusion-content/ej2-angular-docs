@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create mobile contact layout from ListView in Angular ListView component | Syncfusion
+title: Create Mmobile contact layout with Angular ListView | Syncfusion
 description: Learn here all about Create mobile contact layout from ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView 
@@ -8,48 +8,57 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create mobile contact layout from ListView in Angular ListView component
+# Create mobile contact layout in Angular ListView 
 
-You can customize the ListView using the [template](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
+You can create a professional mobile contact directory interface using the ListView component's [template](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property combined with the Syncfusion Avatar component. This approach provides a native mobile experience with contact photos, names, and phone numbers displayed in an organized, scrollable list format.
 
-* Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
+Follow these sequential steps to implement a mobile contact layout:
 
-  ```typescript
+## Step 1: Prepare the contact data structure
 
-  let data: any = [
-      {
-      text: "Jenifer",
-      contact: "(206) 555-985774",
-      id: "1",
-      avatar: "",
-      pic: "pic01"
-    },
-    { text: "Amenda", contact: "(206) 555-3412", id: "2", avatar: "A", pic: "" },
-  ];
+Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) containing contact information including avatar data. Configure avatar data using either text initials for generated avatars or CSS class names for custom contact images:
 
-  ```
+```typescript
 
-* Set `avatar` classes in ListView template to customize contact icon. In the following codes, medium size avatar has been set using the class name `e-avatar e-avatar-circle` from data source.
+let data: any = [
+    {
+    text: "Jenifer",
+    contact: "(206) 555-985774",
+    id: "1",
+    avatar: "",
+    pic: "pic01"
+  },
+  { text: "Amenda", contact: "(206) 555-3412", id: "2", avatar: "A", pic: "" },
+];
 
-  {% raw %}
+```
 
-  ```typescript
-    <ng-template #template let-data="">
-      <div class="e-list-wrapper e-list-multi-line e-list-avatar">
-          <span class="e-avatar e-avatar-circle" *ngIf="data.avatar !== ''">{{data.avatar}}</span>
-          <span class="{{data.pic}} e-avatar e-avatar-circle" *ngIf="data.pic !== '' "> </span>
-          <span class="e-list-item-header">{{data.text}}</span>
-          <span class="e-list-content">{{data.contact}}</span>
-      </div>
-      </ng-template>
-  ```
+## Step 2: Configure the ListView template with Avatar integration
 
-  {% endraw %}
+Set avatar classes in the ListView template to create contact icons with proper spacing and alignment. The template uses conditional rendering to display either custom images or initial-based avatars using the `e-avatar e-avatar-circle` classes:
 
-> Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default).
+{% raw %}
 
-* Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property of ListView.
-* Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property, and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertitle) as `Contacts`.
+```typescript
+  <ng-template #template let-data="">
+    <div class="e-list-wrapper e-list-multi-line e-list-avatar">
+        <span class="e-avatar e-avatar-circle" *ngIf="data.avatar !== ''">{{data.avatar}}</span>
+        <span class="{{data.pic}} e-avatar e-avatar-circle" *ngIf="data.pic !== '' "> </span>
+        <span class="e-list-item-header">{{data.text}}</span>
+        <span class="e-list-content">{{data.contact}}</span>
+    </div>
+    </ng-template>
+```
+
+{% endraw %}
+
+This template structure creates a multi-line list item with avatar positioning on the left, contact name as the primary header, and phone number as secondary content.
+
+> Avatars can be configured in different sizes using avatar classes. To explore comprehensive avatar styling options and size variations, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default).
+
+## Step 3: Enable sorting and header display
+
+Configure the ListView for optimal contact browsing by sorting contact names alphabetically using the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property. Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertitle) to "Contacts" for clear navigation context.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

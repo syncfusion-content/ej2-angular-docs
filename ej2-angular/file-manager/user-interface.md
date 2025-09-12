@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User interface in Angular File Manager component | Syncfusion
+title: User interface components in Angular File Manager | Syncfusion
 description: Learn here all about User interface in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
@@ -10,18 +10,28 @@ domainurl: ##DomainURL##
 
 # User interface in Angular File Manager component
 
-The File Manager UI comprises several sections like view, toolbar, breadcrumb, context menu, and so on. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
+The File Manager provides a comprehensive user interface for browsing, organizing, and performing operations on files and folders. This guide explains each UI component and how they work together to provide an intuitive file management experience.
 
-* [View](#view) (Large Icons view for browsing files and folders),
-* [Toolbar](#toolbar) (For direct access to file operations),
-* [Navigation Pane](#navigation-pane) (For easy navigation between folders),
-* [Breadcrumb](#breadcrumb) (For parent folder navigations),
-* [Context Menu](#context-menu) (For accessing file operations).
+## File Manager UI overview
+
+The File Manager UI consists of several integrated sections that enhance the user experience:
+* [View](#view) - Displays files and folders in either Large Icons or Details view
+* [Toolbar](#toolbar) - Provides quick access to common file operations
+* [Navigation Pane](#navigation-pane)- Enables easy folder navigation through a tree structure
+* [Breadcrumb](#breadcrumb) - Shows the current path and parent folder navigation
+* [Context Menu](#context-menu) - Provides contextual operations for files and folders
 
 ![File Manager Overview](./images/user-interface.png)
 
-The basic File Manager is a light weight component with all the basic functions. The basic File Manager have the following sections in its UI to browse files and folders and manage them with file operations.
+## Basic vs. full-featured File Manager
 
+The File Manager comes in two configurations:
+
+### Full-featured File Manager
+Includes all injectable modules (Toolbar, Navigation Pane, and Details View) for comprehensive file management capabilities.
+
+### Basic File Manager
+A lightweight version with essential functionality for simple use cases, including:
 * [View](#view) (Large Icons view for browsing files and folders),
 * [Breadcrumb](#breadcrumb) (For parent folder navigations),
 * [Context Menu](#context-menu) (For accessing file operations).
@@ -30,11 +40,11 @@ The basic File Manager is a light weight component with all the basic functions.
 
 ## Toolbar
 
-The toolbar is an injectable module in File Manager. It should be injected before rendering the File Manager to avail its functionality. It is present at the top of the File Manager. Toolbar provides easy access to the file operations using different buttons.
+The toolbar provides quick access to common file operations through a set of action buttons. It's an injectable module that must be included before rendering the File Manager.
 
-If the toolbar items exceed the size of the toolbar, then the exceeding toolbar size will be moved to toolbar popup with a dropdown button at the end of toolbar.
+The toolbar intelligently handles space constraints—if there are too many items to display, excess items are moved to a dropdown menu accessed via a button at the end of the toolbar.
 
-*Refer [Toolbar](./file-operations/#toolbar) section in file operations to know more about the buttons present in toolbar*.
+*Refer [Toolbar](./file-operations#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
 ![Toolbar](./images/toolbar.png)
 
@@ -47,18 +57,21 @@ The File Manager provides navigation between files and folders using the followi
 
 ### Navigation pane
 
-The navigation pane is an injectable module; therefore, it should be injected before rendering the File Manager to use its functionality. It displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) minimum and maximum width of the navigation pane can be changed.
-The navigation pane can be shown or hidden using the `visible` option in the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings).
+The navigation pane is an injectable module that displays the folder hierarchy as a tree structure, allowing users to easily navigate between folders. It appears on the left side of the File Manager interface.
 
-### BreadCrumb
+You can customize the navigation pane using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) property:
+* Control minimum and maximum width
+* Show or hide the pane using the `visible` option
 
-The breadcrumb in the File Manager is designed to be responsive and resize automatically. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
+### Breadcrumb
+
+The breadcrumb displays the current folder path and enables navigation to any parent folder. It's designed to be responsive—when the path becomes too long for the available space, a dropdown button appears at the beginning of the breadcrumb, containing parent folders closer to the root.
 
 ![BreadCrumb](./images/breadcrumb.png)
 
 ## View
 
-View is the section where the files and folders are displayed for the user to browse. The File Manager has two types of views to display the files and folders.
+The view section displays files and folders for browsing. The File Manager offers two view modes:
 
 * [Large Icons View](#large-icons-view)
 * [Details View](#details-view)
@@ -73,7 +86,13 @@ In the large icons view, the thumbnail icons will be shown in a larger size, whi
 
 ### Details view
 
-Details view is an injectable module in the File Manager; therefore, it should be injected before rendering the File Manager to avail its functionality. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) API. The details view allows you to perform sorting using column header.
+The details view is an injectable module that displays files and folders in a sortable list with multiple columns of information:
+* **Name**: File/folder name with type icon
+* **Date Modified**: Last modification timestamp
+* **Type**: File type information
+* **Size**: File size
+
+You can add additional columns using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) API. This view allows sorting by clicking on column headers.
 
 ![DetailsView](./images/detailsview.png)
 
@@ -83,6 +102,6 @@ The context menu appears on user interaction such as right-click. The File Manag
 
 Context menu can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#contextmenusettings), [menuOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#menuopen), and [menuClick](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#menuclick) events.
 
-*Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
+*Refer [Context Menu](./file-operations#context-menu) section in file operations to know more about the menu items present in context menu*.
 
 ![Context Menu](./images/contextmenu.png)

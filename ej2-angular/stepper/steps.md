@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Steps in Angular Stepper component | Syncfusion
+title: Configure steps in Angular Stepper | Syncfusion
 description:  Learn here all about Steps in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Stepper
@@ -14,11 +14,11 @@ The Angular Stepper allows you to add steps using the `<e-step>` tag directive. 
 
 ## Adding steps
 
-You can define the icon and text content for each step using the `iconCss`, `text` and `label` properties.
+Define the icon and label content for each step using the `iconCss` and `label` properties of the `StepModel`.
 
 ### Defining icon CSS
 
-You can define the CSS class to show the icon for each step using the `iconCss` property.
+Define a CSS class to display an icon for each step using the `iconCss` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ You can define text instead of an icon by setting the `text` property and displa
 
 ## Optional steps
 
-You can show whether the step is optional or not by using `optional` property. By default, the `optional` property is `false`.
+Indicate whether a step is optional using the `optional` property of the `StepModel`. By default, the `optional` property is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ You can show whether the step is optional or not by using `optional` property. B
 
 ## Disabling steps
 
-You can use the `disabled` property to disable a step, preventing user interaction when set to `true`. By default, the value is `false`.
+Disable a step to prevent user interaction using the `disabled` property of the `StepModel`, set to `true`. By default, the value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,7 +105,7 @@ You can use the `disabled` property to disable a step, preventing user interacti
 
 ## Setting readonly
 
-You can use [readOnly](https://ej2.syncfusion.com/angular/documentation/api/stepper#readonly) property to disable the user interactions in the stepper.
+Disable user interactions across all steps in the Stepper component using the [readOnly](https://ej2.syncfusion.com/angular/documentation/api/stepper/#readonly) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -127,7 +127,7 @@ You can use [readOnly](https://ej2.syncfusion.com/angular/documentation/api/step
 
 ## Setting active step
 
-You can set the active step by specifying its index using the [activeStep](https://ej2.syncfusion.com/angular/documentation/api/stepper#activestep) property. The default value is `0`.
+Specify the active step by its index using the [activeStep](https://ej2.syncfusion.com/angular/documentation/api/stepper/#activestep) property of the Stepper component. The default value is `0`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -149,7 +149,7 @@ You can set the active step by specifying its index using the [activeStep](https
 
 ## Step status
 
-Each step's progress state can be specified using the `status` property. The possible values are `NotStarted`, `InProgress` and `Completed`. By default, the value is `NotStarted.`
+Specify the progress state of each step using the `status` property of the `StepModel`. Possible values are `NotStarted`, `InProgress`, and `Completed`. By default, the value is `NotStarted`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +171,7 @@ Each step's progress state can be specified using the `status` property. The pos
 
 ## Step styling
 
-You can use the `cssClass` property to customize the appearance of each step.
+Customize the appearance of each step using the `cssClass` property of the `StepModel`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,6 +193,6 @@ You can use the `cssClass` property to customize the appearance of each step.
 
 ## Step validation
 
-You can set the validation state for each step to displaying a success or error icon by using `isValid` property.
+Set the validation state for each step to display a success or error icon using the `isValid` property of the `StepModel`. When set to `true`, a success icon appears; when `false`, an error icon is shown.
 
 > To know more about Stepper validation, please refer to the [Validation](./steps-validation#validating-steps) section.

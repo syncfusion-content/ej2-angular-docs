@@ -10,16 +10,18 @@ domainurl: ##DomainURL##
 
 # Access control in Angular File Manager component
 
-The File Manager allows you to define access permissions for folders and files using a set of access rules for user(s).
+Access control in the File Manager allows you to restrict user actions by defining permissions for files and folders. This security feature lets you control who can read, write, download, upload, or copy specific content based on user roles.
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
 
 ## Access Rules
 
-The FileAccessController allows you to define security permissions for folders and files using a set of folder or file access rules.
+Access rules define the security permissions for folders and files in the File Manager. The `FileAccessController` class provides the foundation for implementing these rules in your application.
 
-To set up access rules for folders (including their files and sub-folders) and individual files, use the SetRules() method in the controller. The following table represents the AccessRule properties available for file and folder:
+To set up access rules for folders (including their files and sub-folders) and individual files, use the `SetRules()` method in the controller. The rules determine which operations are allowed for specific paths and user roles.
+
+The following table represents the AccessRule properties available for files and folders:
 
 | **Properties** | **Applicable for file** | **Applicable for folder** | **Description** |
 | --- | --- | --- | --- |
@@ -33,11 +35,11 @@ To set up access rules for folders (including their files and sub-folders) and i
 | Role | Yes | Yes | Specifies the role to which the rule is applied. |
 | IsFile | Yes | Yes | Specifies whether the rule is specified for folder or file. |
 
-The following syntax represents the access Rules for Administrator using file or folder.
+The following example represents the access rules for an Administrator role:
 
 ```typescript
-//Adminstrator
-//Access Rules for File
+// Administrator
+// Access Rules for File
 new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, 
 Copy = Permission.Allow, Download = Permission.Allow, IsFile = true },
 
@@ -45,37 +47,35 @@ Copy = Permission.Allow, Download = Permission.Allow, IsFile = true },
 new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, 
 Copy = Permission.Allow, WriteContents = Permission.Allow, Upload = Permission.Allow, Download = Permission.Deny, 
 IsFile = false },
-
 ```
 
-The following syntax represent the access Rules for Default user using file or folder.
+The following example represents the access rules for a Default user role:
 
 ```typescript
-//Default User
-//Access Rules for File
+// Default User
+// Access Rules for File
 new AccessRule { Path = "/*.*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, 
 Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
 
 // Access Rules for folder
 new AccessRule { Path = "*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, 
 Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
-
 ```
 
 ## Permissions
 
-This section explains how to apply security permissions to File Manager files or folders using access rules. The following table represents the values that determine the permissions.
+This section explains how to apply security permissions to File Manager files or folders using access rules. The File Manager uses two permission values:
 
 | **Value** | **Description** |
 | --- | ---|
 | Allow | Allows you to do read, write, copy, and download operations. |
 | Deny | Denies you to do read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the File Manager. After that, the File Manager displays folders or files and allows permissions based on assigned roles.
+Use the `Role` property to apply created roles to the File Manager. After assigning roles, the File Manager displays folders or files and allows operations based on the permissions defined for each role.
 
-The following syntax represent how to apply permission based on assigned roles
+### Examples of Permission Rules
 
-Permission denied for administrator to write a file or folder.
+#### Denying write permission for administrator
 
 ```typescript
 // For file
@@ -83,12 +83,9 @@ new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow,
 
 // For folder
 new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Deny, IsFile = false},
-
 ```
 
-The following syntax represent how to allow or deny permission based on file or folder access rule.
-
-Permission denied for writing except for particular file or folder.
+#### Denying write permission for specific folders or files
 
 ```typescript
 // Deny writing for particular folder
@@ -99,20 +96,18 @@ IsFile = false },
 // Deny writing for particular file
 new AccessRule { Path = "/Pictures/Employees/Adam.png", Role = "Document Manager", Read = Permission.Allow, 
 Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
-
 ```
 
-Permission denied for writing and uploading in root folder.
+#### Denying write and upload permissions for root folder
 
-``` typescript
+```typescript
 // Folder Rule
 new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, 
 Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, 
 IsFile = false },
-
 ```
 
-The following example demonstrates the File Manager rendered with access control support.
+The following example demonstrates the File Manager rendered with access control support:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -3,34 +3,34 @@ layout: post
 title: Initialize Sidebar in Angular Sidebar component | Syncfusion
 description: Learn here all about Initialize Sidebar using systemjs in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Sidebar 
+control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize Sidebar using systemjs in Angular Sidebar component
+# Initialize Sidebar with SystemJS in Angular Sidebar component
 
 Sidebar can also be initialized using `SystemJS` as follows:
 
 ## Installation and configuration
 
-* To setup basic `Angular` sample, use the following commands.
+To set up a basic Angular application with SystemJS:
 
-   ```sh
-   git clone https://github.com/angular/quickstart.git quickstart
-   cd quickstart
-   npm install
-   ```
+```sh
+git clone https://github.com/angular/quickstart.git quickstart
+cd quickstart
+npm install
+```
 
-For more information, refer to [Angular sample setup](https://angular.io/docs/ts/latest/guide/setup.html).
+For more details, refer to the [Angular setup guide](https://angular.io/docs/ts/latest/guide/setup.html).
 
-* Install Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar packages using the below command.
+* Install Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar package:
 
-   ```sh
-   npm install @syncfusion/ej2-angular-navigations --save
-   ```
+```sh
+npm install @syncfusion/ej2-angular-navigations --save
+```
 
- The above package installs Sidebar dependencies that are required to render the component in an Angular environment.
+This installs the Sidebar and its dependencies required for rendering in an Angular environment.
 
 * Syncfusion `ej2-angular-navigations` packages need to be mapped in `systemjs.config.js` configuration file.
 
@@ -96,14 +96,14 @@ For more information, refer to [Angular sample setup](https://angular.io/docs/ts
 })(this);
 ```
 
-To render the Sidebar component, need to import Sidebar and its dependent component's styles as given below in `style.css`.
+Import the Sidebar and dependent component's styles in `style.css`:
 
 ```css
 @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
 ```
 
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> **Note**: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Create a simple Sidebar
 

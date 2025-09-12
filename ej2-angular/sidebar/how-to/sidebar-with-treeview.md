@@ -8,12 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sidebar with TreeView in Angular Sidebar component
+# TreeView integration in Angular Sidebar component
 
-The following example demonstrates how to render the TreeView component inside the Sidebar with dock state and how to achieve expand and collapse functionalities simultaneously in the Sidebar and TreeView.
-
-On collapse, the LI elements of TreeView show only icons to represent a short sign of the hidden text content. On expand, the hidden text content will become visible.
-
+The Sidebar component can host other Syncfusion components like TreeView to create hierarchical navigation menus or collapsible content structures. Integrating TreeView with the Sidebar’s dock state, enabled via the [`enableDock`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enabledock) property (default: `false`), allows a compact view (e.g., showing only icons) when collapsed and full content (e.g., text and icons) when expanded.
+The following sample demonstrates a Sidebar in dock state with an integrated TreeView, showing only icons when collapsed and full text content when expanded.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/treeview-cs1/src/app.component.ts %}

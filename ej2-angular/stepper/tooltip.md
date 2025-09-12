@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in Angular Stepper component
 
-The Stepper component supports tooltip to show additional information in the steps by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/stepper#showtooltip) property to `true`. 
-
-The tooltip appears when the user hovers over the step, providing the information such as the label or text. By default, the `showTooltip` property is `false`.
+The Angular Stepper component supports tooltips to display additional information about steps, useful for providing contextual help or details in workflows like forms or wizards. Enable tooltips by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/stepper/#showtooltip) property to `true` on the `ejs-stepper` component. When enabled, tooltips appear on hover over the step, providing the information such as the label or text. The default value of `showTooltip` is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +32,7 @@ The tooltip appears when the user hovers over the step, providing the informatio
 
 ## Tooltip template
 
-You can use the [tooltipTemplate](https://ej2.syncfusion.com/angular/documentation/api/stepper#tooltiptemplate) property to specify a custom template for the tooltips, providing detailed information about the steps.
+You can use the [tooltipTemplate](https://ej2.syncfusion.com/angular/documentation/api/stepper/#tooltiptemplate) property to specify a custom template for the tooltips, providing detailed information about the steps.
 
 When hovering over the step, the current step model is passed in the template context, allowing you to include dynamic information about the step.
 
