@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column resizing in Angular TreeGrid component
 
-The TreeGrid component provides an intuitive user interface for resizing columns to fit their content. This feature allows users to easily adjust the width of columns to improve readability and aesthetics of the data presented. To enable column resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowresizing) property of the TreeGrid to **true**.
+The TreeGrid component provides an intuitive user interface for resizing columns to fit their content. This feature enables easy adjustment of column width to improve readability and aesthetics of the presented data. To enable column resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowresizing) property of the TreeGrid to **true**.
 
 Once column resizing is enabled, column width can be resized by clicking and dragging at the right edge of the column header. While dragging the column, the width of the respective column will be resized immediately.
 
@@ -52,7 +52,7 @@ In the following code, **TaskName** and **duration** columns are defined with mi
 
 ## Prevent resizing for particular column
 
-The TreeGrid component provides the ability to prevent resizing for a particular column. This can be useful for maintaining a consistent column width or preventing users from changing the width of a column.
+The TreeGrid component allows preventing resizing for a specific column. This is useful for maintaining consistent column width or restricting changes to a column's width.
 
 Resizing can be disabled for a particular column by setting the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#allowresizing) property of the column to **false**. The following example demonstrates how to disable resize for the **Task Name** column.
 
@@ -113,7 +113,7 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
 
 ## Touch interaction
 
-The TreeGrid component provides support for touch interactions to enable users to interact with the TreeGrid using their mobile devices. Users can resize columns in the TreeGrid by tapping and dragging the floating handler, and can also use the column menu to autofit columns.
+The TreeGrid component supports touch interactions, enabling interaction with the TreeGrid on mobile devices. Columns can be resized by tapping and dragging the floating handler, and the column menu can be used to autofit columns.
 
 **Resizing Columns on Touch Devices**
 
@@ -135,7 +135,7 @@ The following screenshot represents the column resizing on the touch device:
 
 The TreeGrid component provides the ability to resize columns using an external button click. This can be achieved by changing the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#width) property of the column and refreshing the TreeGrid using the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method in the external button click function.
 
-The following example demonstrates how to resize the columns in a TreeGrid. This is done by using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component by changing the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#width) property of the selected column. This is accomplished using the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method is called on the TreeGrid component to update the displayed columns based on user interaction.
+The following example demonstrates how to resize the columns in a TreeGrid. This is done by using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component by changing the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#width) property of the selected column. This is accomplished using the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method is called on the TreeGrid component to update the displayed columns based on interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,13 +148,13 @@ The following example demonstrates how to resize the columns in a TreeGrid. This
   
 {% previewsample "page.domainurl/samples/treegrid/resize-cs6" %}
 
-> The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method is used to refresh the TreeGrid after the column widths are updated. Column resizing externally is useful when providing a custom interface to the user for resizing columns.
+> The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method is used to refresh the TreeGrid after the column widths are updated. Column resizing externally is useful for providing a custom interface for resizing columns.
 
 ## Resizing events
 
 During the resizing action, the TreeGrid component triggers the following three events:
 
-1. The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#resizestart) event triggers when column resize starts. This event can be used to perform actions when the user begins to resize a column.
+1. The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#resizestart) event triggers when column resize starts. This event can be used to perform actions when column resizing starts.
 
 2. The [resizing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#resizing) event triggers when column header element is dragged (moved) continuously. This event is useful when performing certain actions during the column resize process.
 

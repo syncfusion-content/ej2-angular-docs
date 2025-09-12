@@ -22,7 +22,7 @@ To learn how to bind both local and remote data to the TreeGrid, watch this vide
 
 ## Binding with Ajax
 
-You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property to bind the data source to TreeGrid from external fetch request. In the below code we have fetched the data source from the server with the help of fetch request and provided that to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property by using `onSuccess` event of the fetch.
+You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property to bind the data source to TreeGrid from external fetch request. The following code demonstrates fetching the data source from the server using a fetch request and binding it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property through the `onSuccess` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -16,7 +16,7 @@ To use virtualization in TreeGrid, inject the **VirtualScrollService**, which ha
 
 ## Row virtualization
 
-Row virtualization ensures only the rows currently visible in the viewport are loaded and rendered, resulting in fast scrolling and minimal resource use. It replaces traditional paging by dynamically loading data as you scroll vertically.
+Row virtualization ensures only the rows currently visible in the viewport are loaded and rendered, resulting in fast scrolling and minimal resource use. It replaces traditional paging by dynamically loading data during vertical scrolling.
 
 Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) property on the TreeGrid.
 
@@ -62,7 +62,7 @@ The following example demonstrates row virtualization using `enableVirtualizatio
 
 Column virtualization renders only columns currently visible in the viewport, supporting horizontal scroll for wide datasets. This is crucial for applications with many columns, improving initial load and scroll performance.
 
-To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecolumnvirtualization) property of the tree grid to **true**. This configuration instructs the tree grid to only render the columns that are currently visible in the viewport. 
+To enable column virtualization, set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecolumnvirtualization) property of the tree grid to **true**. This configuration instructs the tree grid to only render the columns that are currently visible in the viewport. 
 
 The following example demonstrates column virtualization using `enableColumnVirtualization`  property.
 
@@ -106,9 +106,9 @@ The following example demonstrates column virtualization using `enableColumnVirt
 
 ## Browser height limitation in virtual scrolling and solution
 
-You can load millions of records in the tree grid by using virtual scrolling, where the tree grid loads and renders rows on-demand while scrolling vertically. As a result, tree grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the tree grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property.
+The TreeGrid supports loading millions of records through virtual scrolling, loading and rendering rows on-demand during vertical scrolling. As a result, tree grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the tree grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property.
 
-The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can't be scrolled if the element height is greater than the browser's maximum height limit. The browser height limit affects the virtual scrolling of the tree grid. When a large number of records are bound to the tree grid, it can only display the records until the maximum height limit of the browser. Once the browser's height limit is reached while scrolling, the user won't able to scroll further to view the remaining records.
+The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can't be scrolled if the element height is greater than the browser's maximum height limit. The browser height limit affects the virtual scrolling of the tree grid. When a large number of records are bound to the tree grid, it can only display the records until the maximum height limit of the browser. Once the browser's height limit is reached while scrolling, further navigation becomes impossible and the remaining records cannot be viewed.
 
 For example, if the row height is set as 30px and the total record count is 1000000(1 million), then the height of the tree grid element will be 30,000,000 pixels. In this case, the browser's maximum height limit for a div is about 22,369,600 (The maximum pixel height limitation differs for different browsers). The records above the maximum height limit of the browser can't be scrolled.
 
@@ -126,13 +126,13 @@ The Tree Grid has an option to overcome this limitation of the browser in the fo
 
 ### Solution 1: Using external buttons
 
-You can prevent the height limitation problem in the browser when scrolling through millions of records by loading the segment of data through different strategy.
+The height limitation problem in the browser can be prevented when scrolling through millions of records by loading the data in segments through a different strategy.
 
-In the following sample, tree grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in tree grid. Once you reach the last page of 0.5 million records, the **Load Next Set** button will be shown at the bottom of the tree grid. By clicking that button, you can view the next set of 0.5 million records in tree grid. Also, the **Load Previous Set** button will be shown at the top of the tree grid to load the previous set of 0.5 million records.
+In the following sample, tree grid is rendered with a large number of records(nearly 2 million). The tree grid displays 0.5 million records at a time. Upon reaching the last page of 0.5 million records, the **Load Next Set** button appears at the bottom of the tree grid. Clicking this button loads the next set of 0.5 million records in the tree grid. Also, the **Load Previous Set** button will be shown at the top of the tree grid to load the previous set of 0.5 million records.
 
-Let's see the step by step procedure for how we can overcome the limitation in the TreeGrid component.
+The following steps demonstrate how to overcome the limitation in the TreeGrid component.
 
-1. Create a custom adaptor by extending UrlAdaptor and binding it to the tree grid DataSource property. In the processQuery method of the custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
+1. Create a custom adaptor by extending UrlAdaptor and binding it to the tree grid DataSource property. The processQuery method of the custom adaptor handles the Skip query based on the current page set to perform the data operation with whole records on the server.
 
     ```typescript
         class CustomUrlAdaptor extends UrlAdaptor {
@@ -172,7 +172,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
         </ejs-treegrid>
     ```
 
-3. In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
+3. The beforeDataBound event sets the args.count as 0.5 million to perform scrolling with 0.5 million records, and all data operations are performed with whole records through the custom adaptor. If a particular segment's records count is less than 0.5 million, the original segmented count is directly assigned instead of 0.5 million.
 
     ```typescript
         beforeDataBound(args) {

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adding header and footer in Angular TreeGrid component
 
-Excel export in the TreeGrid component allows including custom header and footer content in the exported Excel document. This feature enables users to add contextual information, company branding, or additional notes to the beginning and end of their exported data, enhancing the usefulness and presentation of exported reports.
+Excel export in the TreeGrid component allows including custom header and footer content in the exported Excel document. This feature supports adding contextual information, company branding, or additional notes to the beginning and end of the exported data, enhancing the document's usefulness and presentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

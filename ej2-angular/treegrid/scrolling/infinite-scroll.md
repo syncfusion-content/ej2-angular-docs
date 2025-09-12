@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Infinite scroll in Angular TreeGrid component
 
-The infinite scrolling feature in the TreeGrid offers seamless handling of large datasets while maintaining high performance. Infinite scroll operates on a "load-on-demand" concept, where data is fetched only as needed. In default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the TreeGrid's vertical scroller. This approach significantly improves the user experience and performance when working with extensive data collections.
+The infinite scrolling feature in the TreeGrid offers seamless handling of large datasets while maintaining high performance. Infinite scroll operates on a "load-on-demand" concept, where data is fetched only as needed. In default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the TreeGrid's vertical scroller. This approach delivers enhanced performance and responsiveness when working with extensive data collections.
 
 In infinite scrolling, a **block** refers to the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings/#pagesize) of the TreeGrid. If `pageSize` is not explicitly set, it is calculated automatically based on the TreeGrid’s viewport height and row height.
 

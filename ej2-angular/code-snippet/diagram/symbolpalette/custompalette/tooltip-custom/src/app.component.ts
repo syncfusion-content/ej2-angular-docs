@@ -42,9 +42,9 @@ export class AppComponent {
         let basicShapes: NodeModel[] = [
             { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' } },
             { id: 'Ellipse', shape: { type: 'Basic', shape: 'Ellipse' } },
-            { id: 'Hexagon', shape: { type: 'Basic', shape: 'Triangle' } },
-            { id: 'Star', shape: { type: 'Basic', shape: 'Hexagon' } },
-            { id: 'Pentagon', shape: { type: 'Basic', shape: 'Parallelogram' } },
+            { id: 'Triangle', shape: { type: 'Basic', shape: 'Triangle' } },
+            { id: 'Hexagon', shape: { type: 'Basic', shape: 'Hexagon' } },
+            { id: 'Parallelogram', shape: { type: 'Basic', shape: 'Parallelogram' } },
             { id: 'Diamond', shape: { type: 'Basic', shape: 'Diamond' } },
             { id: 'Pentagon', shape: { type: 'Basic', shape: 'Pentagon' } },
             { id: 'Heptagon', shape: { type: 'Basic', shape: 'Heptagon' } },
@@ -59,8 +59,8 @@ export class AppComponent {
             { id: 'Document', shape: { type: 'Flow', shape: 'Document' } },
             { id: 'PreDefinedProcess', shape: { type: 'Flow', shape: 'PreDefinedProcess' } },
             { id: 'DirectData', shape: { type: 'Flow', shape: 'DirectData' } },
-            { id: 'SequentialData', shape: { type: 'Flow', shape: 'Card' } },
-            { id: 'Sort', shape: { type: 'Flow', shape: 'Collate' } },
+            { id: 'Card', shape: { type: 'Flow', shape: 'Card' } },
+            { id: 'Collate', shape: { type: 'Flow', shape: 'Collate' } },
         ];
         return flowShapes;
     }
@@ -103,5 +103,3 @@ export class AppComponent {
         };
     }
 }
-
-

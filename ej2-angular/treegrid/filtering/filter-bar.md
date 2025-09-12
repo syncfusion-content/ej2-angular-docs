@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter bar in Angular TreeGrid component
 
-The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid. It displays an input field for each column, allowing users to enter filter criteria and instantly see the filtered results.
+The filter bar feature provides an efficient way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid. It displays an input field for each column, enabling quick entry of filter criteria with instant display of filtered results.
 
 To enable filter bar functionality, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property to true, then the filter bar row will be rendered next to the header which allows filtering data. Records can be filtered with different expressions depending upon the column type.
 

@@ -71,7 +71,7 @@ In the following example, the TreeGrid columns **priority** is rendered as a hid
 
 ## Use wizard like dialog editing
 
-Wizard-like dialog editing enables the creation of intuitive step-by-step forms. This feature provides a structured approach to form completion or data entry by breaking down the process into manageable steps. This feature is particularly useful when you have complex forms that need to be broken down into smaller sections to guide users through the data entry process.
+Wizard-like dialog editing enables the creation of intuitive step-by-step forms. This feature provides a structured approach to form completion or data entry by breaking down the process into manageable steps. This feature is particularly useful for complex forms that need to be divided into smaller sections to streamline the data entry process.
 
 To achieve wizard-like dialog editing in the TreeGrid component, use the dialog template feature. This feature allows you to define your own custom editing template using the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) property set to **Dialog** and **editSettingsTemplate** as template variable in NgTemplate to define the TreeGrid editors for each step of the wizard.
 

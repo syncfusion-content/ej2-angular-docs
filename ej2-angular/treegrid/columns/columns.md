@@ -183,7 +183,7 @@ Format | Formatted value
 
 ### Format the date column based on localization 
 
-The date column can also be formatted based on the localization settings of the user's browser. The [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property of the TreeGrid columns along with the [locale](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) property can be used to specify the desired date format based on the locale.
+The date column can also be formatted based on the localization settings of the browser. The [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property of the TreeGrid columns along with the [locale](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) property can be used to specify the desired date format based on the locale.
 
 In this example, the format property specifies the date format as "**yyyy-MMM-dd**", and the locale property specifies the locale as **"es-AR"** for Spanish (Argentina).
 
@@ -594,7 +594,7 @@ The following example demonstrates how to add and remove a column from the TreeG
 
 ### How to refresh columns
 
-The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method of the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid can be used to refresh the columns in the TreeGrid. This method can be used when the TreeGrid columns need to be updated dynamically based on user actions or data changes.
+The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method of the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid can be used to refresh the columns in the TreeGrid. This method can be used when the TreeGrid columns need to be updated dynamically based on actions or data changes.
 
 ```ts
 this.treegrid.refreshColumns();

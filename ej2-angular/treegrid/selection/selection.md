@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection in Angular TreeGrid component
 
-Selection enables users to highlight or select rows or cells within the TreeGrid. Selection can be performed with mouse clicks or keyboard arrow keys. To disable selection in the TreeGrid, set [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to `false`.
+Selection allows highlighting or selecting rows or cells within the TreeGrid. Selection can be performed with mouse clicks or keyboard arrow keys. To disable selection in the TreeGrid, set [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to `false`.
 
 TreeGrid supports two types of selection, configurable using [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type):
 
@@ -51,7 +51,7 @@ Selection mode can be configured with [`selectionSettings.mode`](https://ej2.syn
 
 ## Toggle selection
 
-Toggle selection allows users to select and unselect specific rows or cells by clicking them. Enable toggle selection by setting the [`enableToggle`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#enabletoggle) property in `selectionSettings` to `true`. Clicking on a selected row or cell will deselect it, and vice versa.
+Toggle selection enables selecting and unselecting specific rows or cells by clicking them. Enable toggle selection by setting the [`enableToggle`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#enabletoggle) property in `selectionSettings` to `true`. Clicking on a selected row or cell will deselect it, and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -104,7 +104,7 @@ In the following example, `width` is set for **taskID** column, **date** `type` 
 
 ## Dynamic column generation 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows dynamic generation of columns at runtime, based on the provided data. This feature is useful when displaying data with varying columns based on user requirements or dynamic data sources.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows dynamic generation of columns at runtime, based on the provided data. This feature is useful for displaying data with varying columns based on requirements or dynamic data sources.
 
 ### Using ngFor directive
 

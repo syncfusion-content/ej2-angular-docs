@@ -25,7 +25,7 @@ Key features of the TreeGrid component include paging, sorting, filtering, and s
 * **Editing**: Supports cell and row editing modes for updating records directly within the TreeGrid.
 * **Virtual Scrolling**: Efficiently manages and displays large volumes of data without performance degradation.
 * **Columns**: Column definitions act as a schema for the TreeGrid's data source, controlling the presentation of data in a tree structure.
-* **Reordering**: Allows users to drag and drop columns within the header row for dynamic column arrangement.
+* **Reordering**: Permits dragging and dropping columns within the header row for dynamic column arrangement.
 * **Resizing**: Enables changing column width interactively by dragging the edge of a column header.
 * **Cell Styling**: Customize TreeGrid cell styles using CSS or programmatically for a tailored appearance.
 * **Selection**: Allows row or cell selection with support for multi-selection using keyboard modifiers or programmatic control.

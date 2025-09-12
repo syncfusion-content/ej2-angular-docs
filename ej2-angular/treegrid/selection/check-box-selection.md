@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Check box selection in Angular TreeGrid component
 
-Checkbox selection enables users to select multiple TreeGrid rows using checkboxes that appear in each row.
+Checkbox Selection provides an option to select multiple TreeGrid records with help of checkbox in each row.
 
 To render a checkbox in each TreeGrid row, add a column with type set to `CheckBox` using the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property.
 
@@ -33,7 +33,8 @@ To render a checkbox in each TreeGrid row, add a column with type set to `CheckB
 
 Checkbox selection supports two modes, which can be set using [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxmode):
 
-* **Default** (default): Users can select multiple rows by clicking their checkboxes or rows sequentially.
+* **Default** (default): Multiple rows can be selected by clicking their checkboxes or rows sequentially.
+
 * **ResetOnRowClick**: Clicking a row resets previous selections. To select multiple rows, press and hold the CTRL key while clicking desired rows. To select a range, press and hold the SHIFT key and click the rows.
 
 {% tabs %}
