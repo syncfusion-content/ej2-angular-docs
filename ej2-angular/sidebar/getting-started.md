@@ -3,24 +3,24 @@ layout: post
 title: Getting Started with Angular Sidebar Component | Syncfusion
 description: Checkout and learn about getting started with Angular Sidebar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Sidebar 
+control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting Started with Angular Sidebar component
 
-This section briefly explains the steps required to create a simple **Sidebar** component, and demonstrates the basic usage of the [`Angular Sidebar component`](https://www.syncfusion.com/angular-components/angular-sidebar) in a Angular CLI application.
+This section explains the steps to create a simple **Sidebar** component and demonstrates the basic usage of the [`Angular Sidebar component`](https://www.syncfusion.com/angular-components/angular-sidebar) in an Angular CLI application.
 
-To get start quickly with Angular Sidebar using CLI and Schematics, you can check on this video:
+To get started quickly with the Angular Sidebar using CLI and Schematics, you can watch this video:
 
 {% youtube "https://www.youtube.com/watch?v=CL7Cc2efZ9Q" %}
 
 ## Setting up Angular project
 
-Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
+Angular provides an efficient way to set up projects using the Angular CLI tool.
 
-Install the CLI application globally to your machine by using following command.
+Install the CLI application globally on your machine with the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -28,23 +28,23 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the following Angular CLI command:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder by using following command.
+Navigate to the created project folder using the following command:
 
 ```bash
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+> Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section for more details on setting up an Angular CLI project.
 
 ## Adding Dependencies
 
-Below dependency packages are required in order to use the `Sidebar` component in your application.
+The following dependency packages are required to use the Sidebar component in your application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -61,11 +61,11 @@ Below dependency packages are required in order to use the `Sidebar` component i
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Sidebar Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -87,17 +87,17 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the **package.json** file, add the suffix `-ngcc` to the package version as follows:
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> **Note**: If the ngcc tag is not specified during installation, the Ivy Library Package will be installed and may throw a warning.
 
 ## Adding Styles
 
-To render the Sidebar component, you need to import the Sidebar and its dependent components' styles as given below in **src/styles.css**.
+To render the Sidebar component, import the Sidebar and its dependent components' styles in **src/styles.css** as follows:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -115,7 +115,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 ## Adding Sidebar component
 
-Add the Sidebar component by using `<ejs-sidebar>` selector in `template` section of the **src/app/app.component.ts** file.
+Add the Sidebar component using the `<ejs-sidebar>` selector in the `template` section of the **src/app/app.component.ts** file. The `SidebarModule` must be imported to enable the component's functionality.
 
 Refer to the Sidebar component snippet in **app.component.ts** as follows:
 
@@ -124,21 +124,20 @@ import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [SidebarModule],
-standalone: true,
-selector: 'app-root',
-template: ` <ejs-sidebar id="default-sidebar" >
-              <div class="title"> Sidebar content</div>
-            </ejs-sidebar>
-            <div>
-              <div class="title">Main content</div>
-              <div class="sub-title">
-                  Content goes here.
-              </div>
-            </div>`,
+  imports: [SidebarModule],
+  standalone: true,
+  selector: 'app-root',
+  template: ` <ejs-sidebar id="default-sidebar" >
+                <div class="title"> Sidebar content</div>
+              </ejs-sidebar>
+              <div>
+                <div class="title">Main content</div>
+                <div class="sub-title">
+                    Content goes here.
+                </div>
+              </div>`,
 })
 export class AppComponent { }
-
 ```
 
 ## Run the application
@@ -149,7 +148,7 @@ Use the npm run start command to run the application in the browser.
 ng serve --open
 ```
 
-The following samples shows the Sidebar component in browser.
+The following sample demonstrates the Sidebar component in the browser:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,11 +191,11 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
   
 {% previewsample "page.domainurl/samples/sidebar/showBackDrop-cs1" %}
 
-## Position
+## Configure sidebar position
 
 Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. The [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablepersistence) will persist the component's state between page reloads. [`change`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#change) event will be triggered when the state(expand/collapse) of the component is changed.
 
->Note: Add the required Button and Radio Button component style dependency to **styles.css**.
+> **Note**: Include the required Button and Radio Button component style dependencies in **styles.css**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,9 +213,9 @@ Positioning the Sidebar to the right or left of the main content can be achieved
   
 {% previewsample "page.domainurl/samples/sidebar/position-cs1" %}
 
-## Animate
+## Enable Sidebar animation
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablertl) will display the Sidebar in the right-to-left direction.
+Animation transitions for expanding or collapsing the Sidebar can be enabled using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablertl) will display the Sidebar in a right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,7 +235,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting [`closeOnDocumentClick`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#closeondocumentclick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#isopen) property.
+The Sidebar can be configured to close when clicking outside it by setting the [`closeOnDocumentClick`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#closeondocumentclick) property to `true` (default: `false`). To keep the Sidebar open on initial render, use the [`isOpen`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#isopen) property (default: `false`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -256,7 +255,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) property. By default, [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) is set to true.
+The Sidebar can be Expanded or collapsed by swiping on touch devices using [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) property. By default, [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -282,4 +281,4 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 * [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/responsive-panel)
 * [Sidebar with listView](./how-to/initialize-the-sidebar-listview)
 * [Initialize Sidebar using systemjs](./how-to/initialize-sidebar-using-systemjs)
-* [Usecase sample](https://ej2.syncfusion.com/showcase/angular/webmail/)
+* [Use case sample](https://ej2.syncfusion.com/showcase/angular/webmail/)

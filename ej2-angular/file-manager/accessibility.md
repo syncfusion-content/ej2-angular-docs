@@ -40,7 +40,7 @@ The accessibility compliance for the File Manager component is outlined below.
 
 ## WAI-ARIA attributes
 
-The File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the File Manager component:
+The File Manager component implements [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to enhance accessibility. The following ARIA attributes are used in the File Manager component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -70,22 +70,22 @@ The File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The File Manager component followed the `keyboard interaction` guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the File Manager component.
+The File Manager component fully supports keyboard navigation, making it accessible for users who rely on keyboard interaction or assistive technologies. The following keyboard shortcuts enable efficient operation of the File Manager:
 
-| **Press** | **To do this** |
+| **Keyboard Shortcut** | **Function Description** |
 | --- | --- |
 | <kbd>Page Down</kbd> | Scrolls down to the next folder or file and selects the first item when files are loaded. |
-| <kbd>Page Up</kbd> | Scrolls up to previous folder and select the first item when files are loaded. |
-| <kbd>Enter</kbd> | Selects the focused item and navigate through the child elements. |
+| <kbd>Page Up</kbd> | Scrolls up to previous folder and selects the first item when files are loaded. |
+| <kbd>Enter</kbd> | Selects the focused item and navigates through the child elements. |
 | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | Closes the image when it is in open state. |
-| <kbd>Alt+N</kbd> | Creates a new folder dialog.|
-| <kbd>F5</kbd> | Refresh the File Manager element. |
-| <kbd>Home</kbd> | Navigate through the first element of details view or large icons view. |
-| <kbd>End</kbd> | Navigate through the last element of details view or large icons view. |
-| <kbd>Move Left</kbd> | Scrolls left to the previous folder and select the first item when files are loaded |
-| <kbd>Move Right</kbd> | Scrolls right to the previous folder and select the first item when files are loaded |
-| <kbd>Alt+Enter</kbd> | Shows the get details info for selected folder. |
+| <kbd>Alt+N</kbd> | Creates a new folder dialog. |
+| <kbd>F5</kbd> | Refreshes the File Manager content. |
+| <kbd>Home</kbd> | Navigates to the first element in details view or large icons view. |
+| <kbd>End</kbd> | Navigates to the last element in details view or large icons view. |
+| <kbd>Move Left</kbd> | Scrolls left to the previous folder and select the first item when files are loaded. |
+| <kbd>Move Right</kbd> | Scrolls right to the next folder and select the first item when files are loaded |
+| <kbd>Alt+Enter</kbd> | Shows detailed information for the selected folder. |
 | <kbd>Shift+Right</kbd> | Allows multiselection. Select the file or folder at the right of the previously selected folder. |
 | <kbd>Shift+Left</kbd> | Allows multiselection. Select the file or folder at the left of the previously selected folder. |
 | <kbd>Shift+Down</kbd> | Allows multiselection. Select the file or folder till the focused index. |
@@ -104,9 +104,9 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 
 ## Ensuring accessibility
 
-The File Manager component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The File Manager component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing. These tools help identify and resolve potential accessibility issues, ensuring the component meets established accessibility standards.
 
-The accessibility compliance of the File Manager component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the accessibility of the File Manager component with accessibility tools.
+The accessibility compliance of the File Manager component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the accessibility of the File Manager component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/file-manager.html" %}
 

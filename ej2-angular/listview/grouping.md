@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular ListView component
 
-ListView supports to wrap the nested element into a group based on category. The category of each list item can be mapped with [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) field in the data table, which also supports single-level navigation.
+The ListView component supports organizing items into groups based on categories. Each list item's category can be mapped using the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) field in the data source, enabling single-level navigation within grouped content.
 
-In below sample, Cars are grouped based on its category using groupBy field.
+In the sample below, cars are grouped based on their category using the groupBy field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,4 +28,4 @@ In below sample, Cars are grouped based on its category using groupBy field.
 
 ## Customization
 
-The grouping header can be customized by using [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#grouptemplate) property for both inline and fixed group header.
+The grouping header can be customized using the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#grouptemplate) property. This property allows you to define custom templates for group headers in both inline and fixed header scenarios. The groupTemplate accepts string or function templates to render custom content, enabling you to add icons, styling, or additional information to group headers based on your application requirements.

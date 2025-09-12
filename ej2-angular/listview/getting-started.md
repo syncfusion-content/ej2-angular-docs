@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular ListView component
 
-The ListView component is available in `@syncfusion/ej2-angular-lists` package. Utilize this package to render the ListView Component.
+The ListView component displays data in a list format with built-in support for headers, templates, grouping, and virtualization. It is available in the `@syncfusion/ej2-angular-lists` package, which provides comprehensive list management capabilities for Angular applications.
 
 ## Setup Angular Environment
 
@@ -32,15 +32,15 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ListView package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-lists`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lists/v/20.2.38) package to the application.
 
@@ -50,7 +50,7 @@ npm install @syncfusion/ej2-angular-lists --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below command.
 
 Add [`@syncfusion/ej2-angular-lists@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lists/v/20.2.38-ngcc) package to the application.
 
@@ -68,56 +68,57 @@ To mention the ngcc package in the **package.json** file, add the suffix `-ngcc`
 
 ## Adding CSS Reference
 
-* Add ListView component's styles as given below in **styles.css**.
+Add ListView component styles as given below in **styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
 ```
 
-Alternatively, you can import the styles directly relative to the node_modules folder based on your CSS file’s location, as shown below:
+Alternatively, you can import the styles directly relative to the node_modules folder based on your CSS file's location, as shown below:
 
 ```css
 @import "node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
 ```
 
-* If you are using `CheckList` behaviour in ListView, we need to add `Button` component's styles as given below in `styles.css` file
+If you are using `CheckList` behavior in ListView, add the `Button` component styles as given below in the `styles.css` file:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
 ```
 
-> We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+> You can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
 
 ## Add ListView component
 
 Modify the template in **src/app/app.component.ts** file to render the ListView component.
-Add the Angular ListView by using `<ejs-listview>` selector in `template` section of the **app.component.ts** file.
+Add the Angular ListView by using the `<ejs-listview>` selector in the `template` section of the **app.component.ts** file.
 
 ```typescript
 
-import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [        
+    imports: [        
         ListViewModule
     ],
     standalone: true,
     selector: 'app-root',
-  // specifies the template string for the ListView component
+    // specifies the template string for the ListView component
     template: `<ejs-listview id='sample-list' [dataSource]='data'></ejs-listview>`
 })
 
 export class AppComponent {
-    public data: Object = [
-    { text: 'Artwork', id: '01' },
-    { text: 'Abstract', id: '02' },
-    { text: 'Modern Painting', id: '03' },
-    { text: 'Ceramics', id: '04' },
-    { text: 'Animation Art', id: '05' },
-    { text: 'Oil Painting', id: '06' }];
+    public data: Object[] = [
+        { text: 'Artwork', id: '01' },
+        { text: 'Abstract', id: '02' },
+        { text: 'Modern Painting', id: '03' },
+        { text: 'Ceramics', id: '04' },
+        { text: 'Animation Art', id: '05' },
+        { text: 'Oil Painting', id: '06' }
+    ];
 }
 
 ```

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manipulate ListView as grid layout in Angular ListView component | Syncfusion
+title: Customize Angular ListView as grid layout | Syncfusion
 description: Learn here all about Manipulate ListView as grid layout in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView
@@ -10,23 +10,14 @@ domainurl: ##DomainURL##
 
 # Manipulate ListView as grid layout in Angular ListView component
 
-In ListView, list items can be rendered in grid layout with following data manipulations.
-
-* Add Item
-
-* Remove Item
-
-* Sort Items
-
-* Filter Items
+The ListView component can display items in a grid layout with support for data manipulations such as adding, removing, sorting, and filtering items.
 
 ## Grid Layout
 
-In this section, we will discuss about rendering of list items in grid layout.
+To render list items in a grid layout:
 
-* Initialize and render ListView with dataSource which will render list items in list layout.
-
-* Now, add the below CSS to list item. This will make list items to render in grid layout
+1. Initialize the ListView with a dataSource
+2. Apply the following CSS to transform the list items into a grid layout:
 
 ```css
 #element .e-list-item {
@@ -36,7 +27,7 @@ In this section, we will discuss about rendering of list items in grid layout.
 }
 ```
 
-In the below sample, we have rendered List items in grid layout.
+Here's a basic example of ListView with grid layout:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,24 +43,23 @@ In the below sample, we have rendered List items in grid layout.
   
 {% previewsample "page.domainurl/samples/listview/grid-layout-cs2" %}
 
-## Data manipulation
+## Data Manipulation
 
-In this section, we will discuss about ListView data manipulations.
+The ListView component supports various data manipulation operations to manage list items effectively.
 
 ### Add Item
 
-We can add list item using [`addItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#additem) API. This will accept array of data as argument.
+Use the [`addItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#additem) method to add new items to the ListView. The method accepts an array of items as its argument.
 
 ```typescript
 
 this.$refs.listViewInstance.addItem([{text: 'Apricot', id: '32'}]);
 
 ```
-In the below sample, you can add new fruit item by clicking add button which will open dialog box with fruit name and image URL text box. After entering the item details, click the add button. This will add your new fruit item.
 
-### Remove item
+### Remove Item
 
-We can remove list item using [`removeItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
+To remove items, use the [`removeItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#removeitem) method. Pass either the item object with an id or the list item element as the argument.
 
 ```typescript
 
@@ -77,27 +67,18 @@ We can remove list item using [`removeItem`](https://ej2.syncfusion.com/angular/
 
 ```
 
-In the below sample, you can remove fruit by hovering the fruit item which will show delete button and click that delete button to delete that fruit from your list.
-
 ### Sort Items
 
-ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
+Enable sorting by setting the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property to either 'Ascending' or 'Descending'.
 
 ```typescript
+// In template
+<ejs-listview [sortOrder]="'Ascending'" [dataSource]="data"></ejs-listview>
 
-<ejs-listview sortOrder='Ascending'></ejs-listview>
-
-```
-
-We can also set sorting after component initialization.
-
-```typescript
-
+// In component
 this.listViewInstance.sortOrder = 'Ascending'
 
 ```
-
-In the below sample, we have sorted fruits in `Ascending` order. To sort it in descending, click on sort order icon and vice versa.
 
 ### Filter Items
 
@@ -114,8 +95,7 @@ listViewInstance.dataSource = filteredData;
 
 ```
 
-In the below sample, we can filter fruit items with the help of search text box. This will filter fruit items based on your input. Here we used `startswith` of input text to filter data in DataManager.
-
+The following example demonstrates all these data manipulation features:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grid-manipulation-cs2/src/app.component.ts %}

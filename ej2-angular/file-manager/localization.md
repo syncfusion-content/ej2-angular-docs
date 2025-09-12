@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Angular File Manager component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn how to implement localization and language support in Syncfusion Angular File Manager component with examples and complete key reference.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
@@ -10,7 +10,21 @@ domainurl: ##DomainURL##
 
 # Localization in Angular File Manager component
 
-The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
+Localization enables the File Manager component to adapt to different languages and cultural settings by translating its user interface elements. This feature ensures your application is accessible to users worldwide, regardless of their language preference.
+
+The File Manager uses the `L10n` service to handle text and message translations. The default locale is `en` (English), but you can localize the component to any supported culture by providing translations for the UI strings.
+
+## Setting up localization
+
+To implement localization in your File Manager component:
+
+1. Import the `L10n` module from the `@syncfusion/ej2-base` package
+2. Load the desired locale object with translations
+3. Set the current locale using the `setCulture()` method
+
+## Default localization keys
+
+The following table lists all available localization keys and their default English values in the File Manager component:
 
 |KEY|Text/Message|
 |----|----|
@@ -107,7 +121,9 @@ The File Manager can be localized to any culture by defining its texts and messa
 |Network-Error|NetworkError: Failed to send on XMLHTTPRequest: Failed to load|
 |Server-Error|ServerError: Invalid response from|
 
-The below example shows adding the German culture locale(`de-DE`)
+## Example: Localizing to German (de-DE)
+
+The following example demonstrates how to localize the File Manager to German language:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

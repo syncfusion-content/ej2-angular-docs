@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular ListView component
 
-UI virtualization loads only viewable list items in a view port which will increase ListView performance on loading large number of data.
+UI virtualization renders only the visible list items within the viewport, significantly improving ListView performance when loading large datasets by reducing DOM elements and memory consumption.
 
 ## Module injection
 
-In order to use UI Virtualization, we need to import `VirtualizationService` module in the AppModule and it should be injected to the provider section as follow
+To use UI Virtualization, import the `VirtualizationService` module in the AppModule and inject it into the providers section as follows:
 
 ```typescript
 
@@ -41,13 +41,13 @@ export class AppModule { }
 
 ## Getting started
 
-UI virtualization can be enabled in ListView by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#enablevirtualization) property to true.
+Enable UI virtualization in ListView by setting the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#enablevirtualization) property to true.
 
-It has two type of scroller
+The ListView supports two types of scrolling behavior:
 
-**Window scroll** - This scroller is used in ListView by default.
+**Window scroll** - The default scroller used by ListView, where the entire browser window acts as the scrolling container.
 
-**Container scroll** - This will be used, if the height property of ListView was set.
+**Container scroll** - Used when the height property of ListView is explicitly set, creating a dedicated scrollable container within the specified dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ It has two type of scroller
   
 {% previewsample "page.domainurl/samples/listview/virtualization/flat-list-cs1" %}
 
-We can use `ng-template` property to customize list items in UI virtualization.
+You can use the `ng-template` property to customize list items in UI virtualization scenarios.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

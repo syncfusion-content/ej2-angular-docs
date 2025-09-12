@@ -3,16 +3,16 @@ layout: post
 title: Types in Angular Sidebar component | Syncfusion
 description: Learn here all about Types in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Sidebar 
+control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Types in Angular Sidebar component
 
-The Sidebar component's expand behaviour can be modified based on the purpose of use.
+The Sidebar component allows configuration of its expand behavior using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) property to suit various layout requirements, such as overlaying content or resizing the main content area.
 
-## Expanding types of Sidebar
+## Sidebar expand types
 
 The Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below. When `dataBind` is invoked, it immediately applies any pending property changes to the component.
 
@@ -23,9 +23,9 @@ The Sidebar can be set to initialize based on four different types that are cons
 | [`Slide`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) |Sidebar shifts the main content area's x and y positions based on the Sidebar width. The main content area is not adjusted to fit within the screen width.|
 | [`Auto`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) | Sidebar with `Over` type in mobile resolution, and `Push` type in other higher resolutions. |
 
-> Note: `Auto` is the default expand mode.
+> **Note**: The `Auto` type is the default, enabling responsive behavior based on screen size.
 
-In the following sample, the types of Sidebar are demonstrated.
+The following sample demonstrates the different Sidebar types in action, showcasing their visual and functional distinctions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

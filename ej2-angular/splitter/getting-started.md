@@ -3,32 +3,31 @@ layout: post
 title: Getting started with Angular Splitter component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Splitter component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Getting started with Angular Splitter component
 
-The following section explains the steps required to create the Syncfusion's Angular Splitter component.
-The Splitter component will make splittable layouts by placing separator in-between two panes. Based on the position of the separator you can adjust size of the splitter panes in the dynamic manner.
+This section explains the steps required to create Syncfusion's Angular Splitter component. The Splitter enables splittable layouts by placing a separator between two panes. You can dynamically adjust the size of the panes based on the separator's position.
 
-To get start quickly with Angular Splitter using CLI and Schematics, you can check on this video:
+To get started quickly with Angular Splitter using CLI and Schematics, check out this video:
 {% youtube "https://www.youtube.com/watch?v=fAWnD2lbsvQ" %}
 
 ## Getting Started with Angular CLI
 
-The following section explains the steps required to create and configure basic angular-cli application.
+Follow these steps to create and configure a basic Angular CLI application.
 
 ### Prerequisites
 
 To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
 
-* Angular : 6+
-* TypeScript : 2.6+
+* Angular: 6+
+* TypeScript: 2.6+
 
 ### Setting up an Angular project
 
-Angular provides an easiest way to setup project using Angular CLI [Angular CLI](https://github.com/angular/angular-cli) tool.
+Angular provides a simple way to set up a project using the [Angular CLI](https://github.com/angular/angular-cli) tool.
 
 Install the CLI application globally in your machine.
 
@@ -70,15 +69,16 @@ Navigate to the created project folder.
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Splitter package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed via npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages [here]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package formats for Angular components:
+
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.  
 
 Add [`@syncfusion/ej2-angular-layouts`](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts/v/20.2.38) package to the application.
 
@@ -106,9 +106,9 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Splitter module
 
-Once you have successfully installed the layouts package, corresponding component modules are ready to configure in your application from the installed location. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package provides two different types of ngModules.
+After installing the layouts package, import the required module in your application. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages offer multiple NgModule options.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) for more details.
 
 Refer to the following snippet to import the `SplitterModule` in `app.module.ts` from the `@syncfusion/ej2-angular-layouts`.
 
@@ -165,7 +165,7 @@ export class AppComponent {
 
 ```
 
-Add following styles in corresponding css file. The below example contains styles in styles.css file,
+## Add the following styles in `styles.css`:
 
 ```css
 
@@ -193,7 +193,7 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 
 ## Load content to the pane
 
-You can load the pane contents either as HTML element or string type using [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
+You can load the pane content using either HTML element or string values via the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
 
 For detailed information, refer to the [Pane Content](./pane-content) section.
 

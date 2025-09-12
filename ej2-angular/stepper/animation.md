@@ -10,16 +10,18 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Stepper component
 
-The Stepper progress state can be animated, smoothly transitioning from one step to another. You can customize the animation's `duration` and `delay` by using the [animation](https://ej2.syncfusion.com/angular/documentation/api/stepper#animation) property.
+The Angular Stepper component supports animations for smooth transitions during step navigation, enhancing user experience in workflows like forms or wizards. Configure animations using the [animation](https://ej2.syncfusion.com/angular/documentation/api/stepper/#animation) property of the `ejs-stepper` component, which accepts a `StepperAnimationSettingsModel` object. Animations can be customized with `duration`, `delay`, and `enable` settings.
 
 You can disable the animation by setting the [enable](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#enable) property to `false`. By default, the value is `true`.
 
+The following table describes the fields of the `animation` property:
+
 | Fields | Type | Description |
 |------|------|-------------|
-| [duration](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#duration) | `number` | Specifies the duration of the animated transition for each step. The default value is `2000` milliseconds. |
-| [delay](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#delay) | `number` | Specifies the delay to initiate the animated transition for each step in milliseconds. The default value is `0`. |
+| [duration](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#duration) | `number` | Specifies the duration of the animated transition for each step in milliseconds. The default value is `2000`. |
+| [delay](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#delay) | `number` | Specifies the delay before initiating the animated transition for each step in milliseconds. The default value is `0`. |
 
-The example demonstrates the animation `duration` and `delay` settings for the Stepper.
+The example demonstrates animation settings with customized `duration` and `delay` for the Stepper component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

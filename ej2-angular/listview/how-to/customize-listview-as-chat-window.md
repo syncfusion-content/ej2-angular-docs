@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize ListView as chat window in Angular ListView component | Syncfusion
+title: Customize ListView as chat window in Angular ListView | Syncfusion
 description: Learn here all about Customize ListView as chat window in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView
@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Customize ListView as chat window in Angular ListView component
 
-ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/api/listview/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started) component.
+ListView can be customized as a chat window interface. To achieve this functionality, use the ListView [template](https://ej2.syncfusion.com/angular/documentation/api/listview/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started) component.
 
-    * ListView template property is used to showcase the ListView as chat window.
-    * Avatar component is used to design the image of contact person.
+    * The ListView template property showcases the ListView as a chat window interface.
+    * The Avatar component designs the profile image of each contact person.
 
-Refer the below template code snippet for Template of chat window.
+Refer to the template code snippet below for the chat window template implementation.
 
 ```typescript
     <ng-template #template let-data="">
@@ -42,12 +42,12 @@ Refer the below template code snippet for Template of chat window.
 
 ## Chat order in template
 
-In ListView template, we have rendered the list items based on receiver and sender information from dataSource of ListView.
+The ListView template renders list items with different layouts based on the `chat` property value from the data source. When `chat` equals "receiver", the receiverTemplate displays the avatar on the left with message content on the right. For sender messages, the senderTemplate positions the avatar on the right with message content on the left, creating a typical chat conversation flow.
 
 ## Adding messages to chat window
 
-    * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using addItem method.
+    * Use a textbox to capture message input from the user.
+    * Add the textbox message to the ListView dataSource using the addItem method.
 
 ```typescript
 

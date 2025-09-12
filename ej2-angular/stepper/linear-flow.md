@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Linear Flow in Angular Stepper component
 
-The Stepper component enables users to progress sequentially through each step, ensuring navigation from one step to the next in a linear way by setting the [linear](https://ej2.syncfusion.com/angular/documentation/api/stepper#linear) property to `true`. The default value is `false` allowing navigation between any steps and vice versa.
+The Stepper component allows configuration of linear flow to enforce sequential progression through steps, useful for structured workflows like forms or wizards. Enable linear flow by setting the [linear](https://ej2.syncfusion.com/angular/documentation/api/stepper/#linear) property to `true` on the `ejs-stepper` component. In linear mode, users cannot skip steps or navigate non-sequentially; navigation is restricted to the next or previous step. The default value is `false`, allowing navigation to any step in any order.
 
-The example demonstrates the functionality of both linear and non-linear flow in the Stepper.
+The following example demonstrates both linear and non-linear flow in the Stepper component, highlighting differences in navigation behavior.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

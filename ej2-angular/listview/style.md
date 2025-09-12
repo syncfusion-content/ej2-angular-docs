@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style in Angular ListView component
 
-The following content provides the exact CSS structure that can be used to modify the component’s appearance based on  user preference.
+The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user's preference.
 
 ## Customizing ListView
 
-Use the following CSS to customize the ListView.
+Use the following CSS to customize the ListView container.
 
 ```CSS
 
@@ -38,7 +38,7 @@ Use the following CSS to customize the items of ListView.
 
 ```
 
-## Customizing ListView's header
+## Customizing ListView header
 
 Use the following CSS to customize the header of ListView component.
 
@@ -95,7 +95,7 @@ Use the following CSS to customize the list item when hovering.
 
 Use the following CSS to customize the selected list item.
 
-### Customizing ListView's selected item with the checkbox checked
+### Customizing ListView selected item with the checkbox checked
 
 ```CSS
 
@@ -106,7 +106,7 @@ Use the following CSS to customize the selected list item.
 
 ```
 
-### Customizing ListView's selected item
+### Customizing ListView selected item
 
 ```CSS
 

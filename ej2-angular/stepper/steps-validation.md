@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Steps validation in Angular Stepper component
 
-The Stepper component allows you to set the validation state for each step, displaying either a success or error icon. You can define the success state of a step by setting the `isValid` property to `true`. If set to `false`, the step will display an error state. By default, the `isValid` property is `null`.
+The Angular Stepper component allows configuration of validation states for individual steps to indicate completion or errors, useful for multi-step forms or task workflows. Set the validation state using the `isValid` property of the `StepModel`. When `isValid` is `true`, a success icon (e.g., checkmark) is displayed; when `false`, an error icon (e.g., cross) is shown. The default value is `null`, indicating no validation icon.
 
 > Based on the `stepType`, the validation state icon will be displayed either as an indicator or as part of the step label/text.
 

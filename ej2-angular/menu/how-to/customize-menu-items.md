@@ -3,18 +3,22 @@ layout: post
 title: Customize menu items in Angular Menu component | Syncfusion
 description: Learn here all about Customize menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize menu items 
+control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Customize menu items in Angular Menu component
 
+This section demonstrates how to dynamically add, remove, enable, disable, show, or hide menu items in the Angular Menu component using methods like `insertAfter`, `insertBefore`, `removeItems`, `enableItems`, `showItems`, and `hideItems`, along with the `beforeOpen` event for advanced customization.
+
 ## Add or remove menu items
 
-Menu items can be added or removed using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertbefore) and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#removeitems) methods.
+Menu items can be added or removed using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/menu/#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/menu/#insertbefore), and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#removeitems) methods, which accept a `string[]` of item identifiers (text or ID) and an optional `isUniqueId` parameter to specify whether the `id` property is used.
 
-In the following example, the **Europe** menu items are added before the **Oceania** item, the **Africa** menu items are added after the **Asia**, and the **South America** and **Mexico** items are removed from menu.
+In the following example, **Europe** menu items are added before the **Oceania** item, **Africa** menu items are added after **Asia**, and **South America** and **Mexico** items are removed from the menu.
+
+> Set `isUniqueId` to `true` to process items using their `id` property instead of `text`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,13 +32,13 @@ In the following example, the **Europe** menu items are added before the **Ocean
   
 {% previewsample "page.domainurl/samples/menu/getting-started-cs8" %}
 
-> To process items with `ID` values, set `isUnique` to `true`.
-
 ## Enable or disable menu items
 
-You can enable and disable the menu items using the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#enableitems) method in Menu. To enable menuItems, set the `enable` property in argument to `true` and vice-versa.
+Menu items can be enabled or disabled using the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enableitems) method, which accepts a `string[]` of item identifiers and a boolean `enable` parameter. Disabled items appear grayed out and are non-interact able. Set `enable` to `true` to enable items and `false` to disable them.
 
-In the following example, the **Directory** header item, **Conferences**, and **Music** sub menu items are disabled.
+In the following example, the **Directory** header item, **Conferences**, and **Music** submenu items are disabled.
+
+> Use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event to dynamically enable or disable submenu items by modifying the `args.items` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,13 +52,13 @@ In the following example, the **Directory** header item, **Conferences**, and **
   
 {% previewsample "page.domainurl/samples/menu/enable-disable-cs1" %}
 
-> To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event.
-
 ## Hide or show menu items
 
-You can show or hide the menu items using the [`showItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#showitems) and [`hideItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#hideitems) methods.
+Menu items can be shown or hidden using the [`showItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#showitems) and [`hideItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#hideitems) methods.
 
-In the following example, the **Movies** header item, **Workshops**, and **Music** sub menu items are hidden in menu.
+In the following example, the **Movies** header item, **Workshops**, and **Music** submenu items are hidden.
+
+> Since the Menu initially supports hiding only header items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event to dynamically hide submenu items by updating `args.items`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,5 +71,3 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/menu/enable-disable-cs2" %}
-
-> Using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.

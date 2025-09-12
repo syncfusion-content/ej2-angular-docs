@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trace all events in ListView in Angular ListView component | Syncfusion
+title: Track events in Angular ListView component | Syncfusion
 description: Learn here all about Trace all events in ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView 
@@ -8,9 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trace all events in ListView in Angular ListView component
+# Event Tracing in Angular ListView Component
 
-The ListView component triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
+The ListView component provides built-in events that can be used as extension points to implement custom operations and debugging. This guide demonstrates how to trace and handle various ListView events effectively.
+
+## Refer to the following steps to trace the ListView events:
 
 1. Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#actioncomplete), and [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) events.
 
@@ -18,7 +20,7 @@ The ListView component triggers events based on its actions. The events can be u
 
 3. Provide event log details for `actionBegin` and `actionComplete` events, and they will be displayed in the event trace panel when the ListView action starts and the dataSource bound successfully.
 
-4. Get the selected item details from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectEventArgs) in the select event, and display the selected list item text in the event trace panel while selecting list items.
+4. Get the selected item details from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectEventArgs/) in the select event, and display the selected list item text in the event trace panel while selecting list items.
 
 5. Use clear button to remove event trace information.
 

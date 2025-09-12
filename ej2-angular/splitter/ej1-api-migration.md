@@ -3,7 +3,7 @@ layout: post
 title: Ej1 api migration in Angular Splitter component | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---

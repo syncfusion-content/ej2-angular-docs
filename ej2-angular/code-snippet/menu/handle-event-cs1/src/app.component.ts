@@ -20,7 +20,7 @@ selector: 'app-root',
 template: `<div class="e-section-control">
         <div class="control-section">
     <div class="menu-section">
-        <ejs-menu id='menu' [items]='menuItems' (beforeOpen)='beforeOpen($event)' (beforeClose)='beforeClose($event)' (onClose)='onClose($event)' (onOpen)='onOpen($event)' (select)='select($event)'></ejs-menu>
+        <ejs-menu id='menu' [items]='menuItems' (beforeOpen)='beforeOpen($event)' (beforeClose)='beforeClose($event)' (onClose)='onClose($event)' (onOpen)='onOpen($event)' (select)='select($event)' (created)='onCreated()'></ejs-menu>
     </div>
     <div class="property-section">
         <table id="propertyTable" title="Event trace">
@@ -90,6 +90,10 @@ export class AppComponent {
 
     public select(args: MenuEventArgs): void {
         this.updateEventLog(args);
+    }
+
+    public onCreated(): void {
+        this.updateEventLog({ name: 'Created' });
     }
 
     public updateEventLog(args: any): void {

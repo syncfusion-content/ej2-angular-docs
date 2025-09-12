@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use dynamic templates in ListView based on device in Angular ListView component
+# Dynamic ListView templates based on device in Angular
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 components are desktop and mobile-friendly. So, you can use Syncfusion<sup style="font-size:70%">&reg;</sup> components in both modes. The component templates are not always fixed. Applications may need to load various templates depending upon the device.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 components are designed to be fully responsive across desktop and mobile devices. The ListView component supports dynamic template switching based on the device type, allowing you to provide optimized layouts for different screen sizes.
 
 ## Integration
 

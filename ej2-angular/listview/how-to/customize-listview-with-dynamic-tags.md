@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize ListView with dynamic tags in Angular ListView component | Syncfusion
+title: Dynamic tags in Angular ListView | Syncfusion
 description: Learn here all about Customize ListView with dynamic tags in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView
@@ -10,13 +10,17 @@ domainurl: ##DomainURL##
 
 # Customize ListView with dynamic tags in Angular ListView component
 
-You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
+The ListView component can be customized to display items with dynamic tags using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. This implementation allows users to add and remove tags dynamically from list items through interaction with a secondary ListView rendered within a Dialog component.
 
-* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
+## Implementation approach
+
+The dynamic tag functionality requires coordination between a parent ListView, a Dialog component, and a secondary ListView that serves as a tag selector. The following steps outline the complete implementation:
+
+* Initialize a dynamic ListView with the required properties to hold available tags for the parent ListView items. Bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event handler to capture user selections and add the chosen values as tags to the corresponding parent ListView item.
 
     ```typescript
 
-    //Select the event that is is rendered inside dialog for ListView
+    //Select event handler for the tag selector ListView rendered within the dialog
     addTag(e) {
         let listTag = document.createElement('span');
         listTag.className = 'advanced-option';
@@ -36,9 +40,9 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 
     ```
 
-* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#created) event.
+* Configure the Dialog component with appropriate content and append the dynamically created ListView to the dialog during the [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#created) event. This ensures the tag selector ListView is properly initialized when the dialog becomes available.
 
-* Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
+* Implement click event handling for the add button icon (+) to update the ListView data source with available tags and display the dialog containing the dynamic ListView selector. This method manages both the data binding and dialog visibility states.
 
     ```typescript
 
@@ -56,11 +60,11 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 
     ```
 
-* Bind the click event with added dynamic tags to remove it. Refer to the following code sample.
+* Bind click event handlers to dynamically added tags to enable removal functionality. This allows users to delete tags after they have been added to ListView items.
 
     ```typescript
 
-    //Method to remove the list item
+    //Method to remove individual tag elements from list items
     removeTag() {
         this.parentNode.parentNode.remove();
     }

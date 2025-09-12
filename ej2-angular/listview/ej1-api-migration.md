@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Ej1 api migration in Angular ListView component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
+title: EJ1 API migration in Angular ListView component | Syncfusion
+description: Learn here all about EJ1 API migration in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular ListView component
+# EJ1 API migration in Angular ListView component
 
-This article describes the API migration process of ListView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
+This article describes the API migration process of ListView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-| Behaviour | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Virtualization | **Property:**  *allowVirtualScrolling*  <br  />`<ej-listview [dataSource]="data" [allowVirtualScrolling]='true' [virtualScrollMode]='normal' ></ej-listview>` | **Property:**  *enableVirtualization*  <br  />`<ejs-listview [dataSource]='data' [enableVirtualization]='true'></ejs-listview>` |
 | Checkbox | **Property:**  *enableCheckMark*  <br/>`<ej-listview [dataSource]='data' [enableCheckMark]='true' ></ej-listview>`| **Property:**  *showCheckBox*  <br  />`<ejs-listview [dataSource]='data' [showCheckBox]='true'></ejs-listview>`|
