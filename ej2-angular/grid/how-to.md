@@ -105,7 +105,7 @@ In the below demo, the button click will enable or disable the Grid and its acti
 
 By default, the expanded child grids will be printed from the current page alone. You can print the expanded child grids from other pages by using the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
-In the following example, we have printed expanded child grids from other pages.
+In the following example, expanded child grids from other pages are printed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -842,7 +842,7 @@ You can use corresponding exporting methods and exportComplete events to get the
 
 You can export the filtered data by defining the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) before export.
 
-In the below PDF exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) and pass it to [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
+In the provided PDF exporting demo, filtered data is obtained by applying a filter query to the grid data, and the resulting data is defined in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

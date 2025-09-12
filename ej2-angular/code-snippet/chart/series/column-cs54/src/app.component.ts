@@ -1,13 +1,14 @@
 import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule, ChartComponent } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, ILoadedEventArgs, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
     ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
  } from '@syncfusion/ej2-angular-charts'
 
 
 
 import { Component, OnInit } from '@angular/core';
+import { ChartComponent } from '@syncfusion/ej2-angular-charts'
 
 @Component({
 imports: [
@@ -18,14 +19,12 @@ providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesServi
         ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart style='display:block;' #chart [width]='width' align='center' id='chartcontainer'
-            [noDataTemplate]='noDataTemplate' [chartArea]='chartArea' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-            [tooltip]='tooltip' [title]='title' [subTitle]='subTitle' (load)='load($event)'>
-            <e-series-collection>
-                <e-series [dataSource]='data' type='Line' xName='x' yName='y' [marker]='marker' [width]='2'> </e-series>
-            </e-series-collection>
-            <ng-template #noDataTemplate>
-                <div id="noDataTemplateContainer" [ngClass]="theme">
+    template: `<ejs-chart id="chart-container" [noDataTemplate]='noDataTemplate' #chart [primaryXAxis]='primaryXAxis'>
+        <e-series-collection>
+            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Sales'></e-series>
+        </e-series-collection>
+        <ng-template #noDataTemplate>
+                <div id="noDataTemplateContainer">
                     <div class="template-align">    
                         <img src="./no-data.png" alt="No Data"/>
                     </div>
@@ -37,57 +36,24 @@ standalone: true,
                     </div>
                 </div>
             </ng-template>
-        </ejs-chart>`
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     @ViewChild('chart')
-    public chart: ChartComponent;
-    public hasData: boolean = false;
-
+    public chart?: ChartComponent;
+    public primaryXAxis?: Object;
     public data: Object[] = [];
-    //Initializing Primary X Axis
-    public primaryXAxis: Object = {
-        valueType: 'Category',
-        majorGridLines: { width: 0 },
-        majorTickLines: { width: 0}
-    };
-    //Initializing Primary X Axis
-    public primaryYAxis: Object = {
-        title: 'Production (in million pounds)',
-        titleStyle: {
-            fontWeight: '600'
-        },
-        majorTickLines: { width: 0 },
-        lineStyle: { width: 0 }
-    };
-    public chartArea: Object= {
-            border:{width:0}
-    };
-    public marker: Object = {
-        visible: true,
-        width: 7,
-        height: 7
-    };
-    public tooltip: Object = {
-        enable: true, format: '${point.x} : <b>${point.y}M</b>', header: 'Milk Production',
-    };
-    public width: string = '100%';
-
-    // custom code start
-    public load(args: ILoadedEventArgs): void {
-        this.data = this.hasData ? [
-            { x: 'January', y: 19173 },
-            { x: 'February', y: 17726 },
-            { x: 'March', y: 19874 },
-            { x: 'April', y: 19391 },
-            { x: 'May', y: 20072 },
-            { x: 'June', y: 19233 }
-        ] : [];
-    };
-
+    public chartData?: Object[];
+    
+    ngOnInit(): void {
+        this.chartData = [];
+        this.primaryXAxis = {
+            valueType: 'Category'
+        };
+    }
 
     public loadData(): void {
-        this.data = [
+        this.chartData = [
             { x: 'January', y: 19173 },
             { x: 'February', y: 17726 },
             { x: 'March', y: 19874 },
@@ -95,18 +61,6 @@ export class AppComponent implements OnInit {
             { x: 'May', y: 20072 },
             { x: 'June', y: 19233 }
         ];
-        this.hasData = true;
-        this.chart.series[0].animation.enable = true;
-        this.chart!.refresh();
+        this.chart?.refresh();
     }
-
-    // custom code end
-    public title: string = 'Milk Production in US - 2025';
-    public subTitle: string = 'Source: nass.usda.gov';
-
-    constructor() {
-    };
-
 }
-
-

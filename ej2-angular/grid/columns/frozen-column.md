@@ -1,18 +1,24 @@
 ---
 layout: post
-title: Column pinning (Frozen) in Angular Grid component | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Column pinning (Frozen) in Angular Grid Component | Syncfusion
+description: Learn here all about Column pinning (Frozen) in Syncfusion Angular Grid Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column pinning (Frozen) 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Pinning (Frozen) in Angular Grid component
+# Column Pinning (Frozen) in Angular Grid Component
 
-In the Syncfusion Angular Grid component, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
+The Syncfusion Angular Grid component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
 
-In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property is set to **2**. This configuration freezes the left two columns of the grid, and they will remain fixed in their positions while the rest of the columns grid can be scrolled horizontally.
+> Frozen columns require careful configuration to avoid rendering issues. Ensure they are within the grid’s viewport and test rendering across different screen sizes for responsiveness.
+
+## Freeze multiple columns
+
+The Syncfusion Angular Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
+
+The following example sets the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property to **2**, freezing the first two columns on the left side of the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,19 +32,19 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs1" %}
 
-> * Frozen columns should not be set outside the grid view port.
-> * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
-> * The frozen feature is supported only for the columns that are visible in the current view.
-> * You can use both `frozenColumns` property and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property in the same application.
-> * When both frozen columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
+> * Frozen columns must not be set outside the grid’s viewport.
+> * The Grid supports column virtualization with frozen columns, improving performance for large datasets.
+> * Frozen columns are supported only for columns visible in the current view.
+> * Both [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) properties can be used together.
+> * When column virtualization and frozen columns are enabled, horizontal scrolling via touchpad gestures (e.g., two-finger swipe) is not supported. Use the horizontal scrollbar instead.
 
 ## Freeze particular columns
 
-The Syncfusion Angular Grid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The Syncfusion Angular Grid allows freezing specific columns using the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property, enabling selected columns to remain fixed on the left side while others scroll horizontally. Unlike the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property, which freezes columns in their initial order, `isFrozen` provides flexibility to freeze columns at any index.
 
 To freeze a particular column in the grid, you can utilize the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property of the grid component as **true**.
 
-The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. Within the change event, you can modify the `isFrozen` property of the selected column using the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) method. Afterward, you can use the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to update the displayed columns based on your interaction.
+The following example demonstrates freezing a specific column using the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property, controlled via the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component. The [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) method retrieves the column, and the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method updates the grid. For large datasets, minimize frequent calls to `refreshColumns` to optimize performance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -127,13 +133,13 @@ The following example demonstrates how to change the default frozen line color u
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs4" %}
 
-## Render DatePicker in frozen columns in Angular Grid
+## Render DatePicker in frozen columns
 
-The Syncfusion Angular Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property, where a custom editor (DatePicker) is assigned to the specific column.
+The Syncfusion Angular Grid supports rendering a [DatePicker](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) component within frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property, which defines custom `create`, `write`, `read`, and `destroy` methods to manage the DatePicker’s lifecycle. These methods handle initialization, value setting, value retrieval, and cleanup, respectively.
 
-To integrate a `DatePicker` in a frozen column, configure the column’s `edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
+To enable editing, configure the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) for details.
 
-The following example demonstrates how to render the `DatePicker` in the **OrderDate** column while keeping it frozen. Here the datepicker object is appended to the corresponding input element in the editing row.
+The following example renders a DatePicker in the **OrderDate** column, which is frozen, by appending the DatePicker to the input element in the editing row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,7 +153,7 @@ The following example demonstrates how to render the `DatePicker` in the **Order
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs5" %}
 
-## Deprecated methods 
+## Deprecated methods
 
 Previous | Current | Explanation 
  ---  | --- | --- 

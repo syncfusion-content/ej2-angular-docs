@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column selection in Angular Grid component
 
-Column selection in the Grid component allows users to select one or more columns using mouse interactions or arrow keys. This feature is useful for highlighting, manipulating, or performing actions on specific columns within the Grid.
+Column selection in the Grid component allows the selection of one or more columns using mouse interactions or arrow keys. This feature is useful for highlighting, manipulating, or performing actions on specific columns within the Grid.
 
 To enable column selection, set the [`selectionSettings.allowColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#allowcolumnselection) property to **true**.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row selection in Angular Grid component
 
-Row selection in the Grid component enables users to select specific rows or ranges of rows through mouse clicks or keyboard navigation (up, down, left, right arrows). This is useful for highlighting, manipulating, or performing actions on specific rows.
+Row selection in the Grid component enables the selection of specific rows or ranges of rows through mouse clicks or keyboard navigation (up, down, left, right arrows). This is useful for highlighting, manipulating, or performing actions on specific rows.
 
 > To enable row selection, set the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) property to either **Row** or **Both**.
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Sorting in Angular Grid component
 
-You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion Angular Grid component using CSS.You can use the available Syncfusion [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme. Here's how to do it:
+Customize the appearance of sorting and multi-sorting icons in the Syncfusion Angular Grid component using CSS. Theme-based Syncfusion [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) can be used as needed.
 
-## Customizing the grid sorting icon
+## Customize the Grid Sorting Icon
 
-To customize the sorting icon that appears in the Grid header when sorting is applied, you can use the following CSS code:
+Modify the sorting icon displayed in the Grid header by applying this CSS:
 
 ```css
 .e-grid .e-icon-ascending::before {
@@ -24,13 +24,13 @@ To customize the sorting icon that appears in the Grid header when sorting is ap
     content: '\e7b6'; /* Icon code for descending order */
 }
 ```
-In this example, the **.e-icon-ascending::before** class targets the sorting icon for ascending order, and the **.e-icon-descending::before** class targets the sorting icon for descending order.
+Here, **.e-icon-ascending::before** sets the icon for ascending order, and **.e-icon-descending::before** specifies the icon for descending order. Icon codes may vary by theme; refer to Syncfusion icon documentation for details.
 
-![Grid sorting icon](../images/grid-sorting-icons.png)
+![Screenshot showing grid sorting icons](../images/grid-sorting-icons.png)
 
-## Customizing the grid multi sorting icon
+## Customize the Grid Multi Sorting Icon
 
-To customize the multi sorting icon that appears in the grid header when multiple columns are sorted, you can use the following CSS code:
+Change the appearance of the multi sorting icon shown in grid headers when multiple columns are sorted:
 
 ```css
 .e-grid .e-sortnumber {
@@ -38,7 +38,6 @@ To customize the multi sorting icon that appears in the grid header when multipl
     font-family: cursive;
 }
 ```
+The **.e-sortnumber** class sets the background color and font for the multi sorting icon, enabling you to customize its appearance.
 
-In this example, the **.e-sortnumber** class targets the background color and font family of the multi sorting icon. You can modify the `background-color` and `font-family` properties to customize the appearance of the multi sorting icon.
-
-![Grid multi sorting icon](../images/grid-multi-sorting-icon.png)
+![Screenshot of the grid multi sorting icon with custom style](../images/grid-multi-sorting-icon.png)

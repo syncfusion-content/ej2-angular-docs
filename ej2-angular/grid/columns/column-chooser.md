@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column chooser in Angular Grid component
 
-The Column Chooser feature in the Syncfusion Angular Grid component enables users to dynamically show or hide columns within the grid. This capability is activated by setting the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property to **true**.
+The Column Chooser feature in the Syncfusion Angular Grid component provides the capability to dynamically show or hide columns within the grid. This functionality is activated by setting the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) property to **true**.
 
 To use the Column Chooser, inject the **ColumnChooserService** in the providers array of **AppModule**.
 
@@ -30,7 +30,7 @@ To use the Column Chooser, inject the **ColumnChooserService** in the providers 
 
 ## Hide column in column chooser dialog
 
-To exclude specific columns from appearing in the Column Chooser dialog, set the [columns.showInColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) property to **false** for those columns. This is useful for grids with many columns or when only selected columns should be user-toggleable.
+To exclude specific columns from appearing in the Column Chooser dialog, set the [columns.showInColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) property to **false** for those columns. This is useful in grids with many columns or when only certain columns should be available for selection.
 
 In the example below, the **Order ID** column is excluded from the Column Chooser dialog by setting `columns.showInColumnChooser` to false.
 

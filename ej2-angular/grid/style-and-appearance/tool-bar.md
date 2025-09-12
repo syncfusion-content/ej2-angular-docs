@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Grid component
 
-You can customize the appearance of the toolbar in the Syncfusion Angular Grid component using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
+Customize the appearance of the toolbar in the Syncfusion Angular Grid component using CSS. The following examples show how to style the toolbar root element and the toolbar button elements.
 
-## Customizing the toolbar root element
+## Customize the Toolbar Root Element
 
-To customize the appearance of toolbar root element, you can use the following CSS code:
+Change the toolbar's background color with this CSS:
 
 ```css
 .e-grid .e-toolbar-items {
@@ -22,13 +22,13 @@ To customize the appearance of toolbar root element, you can use the following C
 }
 ```
 
-In this example, the **.e-toolbar-items** class targets the background color of the toolbar root element. You can modify the `background-color` property to change the background color of the toolbar.
+The **.e-toolbar-items** class sets the background color for the toolbar's root element.
 
-![Grid toolbar root element](../images/grid-toolbar-root-element.png)
+![Screenshot of the customized grid toolbar root element](../images/grid-toolbar-root-element.png)
 
-## Customizing the toolbar button element
+## Customize the Toolbar Button Element
 
-To customize the appearance of toolbar buttons, you can use the following CSS code:
+Modify the appearance of toolbar buttons using the following CSS:
 
 ```css
 .e-grid .e-toolbar .e-btn {
@@ -36,6 +36,6 @@ To customize the appearance of toolbar buttons, you can use the following CSS co
 }
 ```
 
-In this example, the **.e-toolbar .e-btn** selector targets the background color of the toolbar button elements. You can modify the `background-color` property to change the background color of the toolbar buttons.
+Here, **.e-toolbar .e-btn** targets the background color of all button elements inside the toolbar.
 
-![Grid toolbar button element](../images/grid-toolbar-button-element.png)
+![Screenshot showing the styled grid toolbar button element](../images/grid-toolbar-button-element.png)

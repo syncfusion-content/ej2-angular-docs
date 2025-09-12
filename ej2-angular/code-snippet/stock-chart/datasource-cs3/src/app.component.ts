@@ -1,9 +1,7 @@
-import { NgModule, ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule, ChartAllModule, StockChartAllModule, StockChartChartComponent, IStockChartEventArgs } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, ChartAllModule, StockChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService} from '@syncfusion/ej2-angular-charts'
-
-
 
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
@@ -16,12 +14,12 @@ imports: [
 providers: [ DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-stockchart id="chart-container" #chart [noDataTemplate]='noDataTemplate' (load)='load($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair'>
+    template: `<ejs-stockchart id="chart-container" [noDataTemplate]='noDataTemplate' #chart [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair'>
         <e-stockchart-series-collection>
             <e-stockchart-series [dataSource]='stockchartData' type='Candle' xName='date' yName='open' name='India' width=2 ></e-stockchart-series>
         </e-stockchart-series-collection>
         <ng-template #noDataTemplate>
-                <div id="noDataTemplateContainer" [ngClass]="theme">
+                <div id="noDataTemplateContainer">
                     <div class="template-align">    
                         <img src="./no-data.png" alt="No Data"/>
                     </div>
@@ -36,27 +34,13 @@ standalone: true,
     </ejs-stockchart>`
 })
 export class AppComponent implements OnInit {
-  @ViewChild('chart')
-    public chart: StockChartChartComponent;
-    public hasData: boolean = false;
     public primaryXAxis?: Object;
     public primaryYAxis?: Object;
     public stockchartData?: Object[];
     public title?: string;
     public crosshair?: Object;
-    public load(args: IStockChartEventArgs): void {
-        this.stockchartData = this.hasData ? chartData : [];
-    };
-
-
-    public loadData(): void {
-        this.stockchartData = chartData;
-        this.hasData = true;
-        this.chart!.refresh();
-    }
-
     ngOnInit(): void {
-        
+        this.stockchartData = [];
         this.title = 'Efficiency of oil-fired power production';
         this.primaryXAxis = {
            valueType: 'DateTime',
@@ -70,7 +54,7 @@ export class AppComponent implements OnInit {
             enable: true
         };
     }
-
+    public loadData(): void {
+        this.stockchartData = chartData;
+    }
 }
-
-

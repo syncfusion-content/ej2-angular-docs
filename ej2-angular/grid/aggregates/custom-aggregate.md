@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom aggregate in Angular Grid component
 
-The custom aggregate feature in the Syncfusion Angular Grid component enables calculation of summary values using user-defined functions. This is particularly useful when built-in aggregate types do not satisfy specific calculation requirements. To configure a custom aggregate, follow the steps below:
+The custom aggregate feature in the Syncfusion Angular Grid component enables calculation of summary values using defined functions. This is especially useful when built-in aggregate types do not meet specific calculation requirements. To configure a custom aggregate, follow the steps below:
 
 * Set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to **Custom** in the [e-aggregate -> e-column](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/).
 * Provide a custom aggregate function using the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#CustomAggregate) property.

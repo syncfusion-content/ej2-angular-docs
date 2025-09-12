@@ -64,7 +64,7 @@ In the following example, the `load` event is utilized to customize the mapping 
 
 ## Expand child grid initially
 
-Expanding the child grid initially in the Syncfusion Angular Grid component is helpful when providing immediate visibility into hierarchical data without requiring manual expansion of each child row. This can be beneficial in scenarios where immediate display of child rows enhances data visibility and user experience upon grid load.
+Expanding the child grid initially in the Syncfusion Angular Grid component provides immediate visibility into hierarchical data without requiring manual expansion of each child row. This approach enhances data visibility and improves the overall experience upon grid load.
 
 To achieve this, use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method with the desired target index (number) in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid. 
 
@@ -86,7 +86,7 @@ In the provided example, the third record of the grid is expanded by utilizing t
 
 ## Dynamically load child grid data
 
-Dynamically loading child grid data in Syncfusion Angular Grid helps improve performance, optimize data transmission, and enhance the user experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which improves the overall efficiency of the application.
+Dynamically loading child grid data in the Syncfusion Angular Grid improves performance, optimizes data transmission, and enables on-demand access to relevant information. This approach also adds flexibility in data presentation, enhancing the overall efficiency of the application.
 
 To dynamically load the `dataSource` of a child grid in the Grid, utilize the [load](https://ej2.syncfusion.com/angular/documentation/api/grid/#load) event of the parent grid. This event allows customization of the loading behavior of the child grid based on the data of the parent grid.
 

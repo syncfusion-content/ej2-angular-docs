@@ -10,26 +10,25 @@ domainurl: ##DomainURL##
 
 # Adding header and footer in Angular Grid component
 
-The Syncfusion Angular Grid allows you to add customized header and footer sections in the exported PDF document. This feature enables you to include custom text, page numbers, lines, page size, and even change the orientation of the header and footer.
+The Syncfusion Grid enables the addition of customized header and footer sections to exported PDF documents. This feature allows for the inclusion of custom text, page numbers, lines, page size adjustments, and control over the orientation of the header and footer.
 
 ## Adding text in header and footer
 
-The Syncfusion Angular Grid allows you to add custom text in the header or footer section in the exported PDF document.  
+With the Syncfusion Grid, custom text can be added to the header or footer section of an exported PDF document.  
 
-The header section of a PDF document is typically located at the top of each page. It's a space where you can include additional information or branding elements. This is particularly useful for adding details like a company logo, a title for the document, a date, or any other information that you want to appear consistently on every page of the PDF.
+The header section of a PDF document is positioned at the top of each page. This area is ideal for displaying information such as company logos, document titles, dates, or other elements that should be present on every page.
 
-The footer section, on the other hand, is usually positioned at the bottom of each page in the PDF. It's another area where you can insert custom text. Common content in the footer includes page numbers, copyright information, or disclaimers. Similar to the header, the footer content is repeated on every page.
+The footer section appears at the bottom of each page and is commonly used for content like page numbers, copyright notices, or disclaimers. Footer content is repeated consistently across all pages.
 
-To add text in the header or footer of the exported PDF document, follow these steps:
+To add text to the header or footer of an exported PDF document:
 
 1. Access the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) of the Grid component.
-2. Set the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) or [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) property to a string value representing the desired text.
+2. Configure the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) or [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) property with the desired content.
 3. Trigger the PDF export operation.
 
-The following code example demostrates how to add the header in the exported PDF document. 
+The code example below demonstrates how to add a header to the exported PDF document:
 
 ```typescript
-
 const exportProperties: PdfExportProperties = {
     header: {
         fromTop: 0,
@@ -38,19 +37,19 @@ const exportProperties: PdfExportProperties = {
             {
               type: 'Text',
               value: 'Exported Document Of Customers',
-              position: { x:200, y: 50 },
+              position: { x: 200, y: 50 },
               style: { textBrushColor: '#000000', fontSize: 20 },
             },
         ]
     }
-
+}
 ```
 
-## Draw a line in header and footer
+## Drawing a line in header and footer
 
-When exporting data from the Syncfusion Angular Grid to a PDF document, you have an option to add a line in the header and footer section. This feature allows you to enhance the visual appearance of the exported PDF document and create a clear separation between the header and the content.
+When exporting data from the Syncfusion Grid to a PDF document, it is possible to add a line in the header and footer section. This enhancement provides a visual separation between the header or footer and the main content.
 
-This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid. You can customize the line style using different supported line styles listed below:
+The [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid supports customization of line styles. Supported line styles include:
 
 * Dash
 * Dot
@@ -60,10 +59,9 @@ This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/
 
 To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) or [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to draw a line in the header of the exported PDF document. 
+The following code example demonstrates drawing a line in the header and footer:
 
 ```typescript
-
 const exportProperties: PdfExportProperties = {
     header: {
         fromTop: 0,
@@ -75,7 +73,7 @@ const exportProperties: PdfExportProperties = {
                 points: { x1: 0, y1: 4, x2: 685, y2: 4 },
             }
         ]
-    }
+    },
     footer: {
         fromBottom: 10,
         height: 60,
@@ -88,29 +86,27 @@ const exportProperties: PdfExportProperties = {
         ],
     },
 }
-
 ```
 
-## Add page number in header and footer
+## Adding page numbers in header and footer
 
-When exporting data from the Syncfusion Angular Grid to a PDF document, you have an option to include page numbers in the header and footer section. This feature allows you to provide a reference to the page number for better document navigation.
+When exporting the Syncfusion Grid to a PDF document, page numbers can be included in the header or footer, providing navigation references in the output file.
 
-This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid. You can choose from different types of supported page number listed below:
+Configure this functionality through the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid. Supported page number types include:
 
-* LowerLatin - a, b, c,
-* UpperLatin - A, B, C,
-* LowerRoman - i, ii, iii,
-* UpperRoman - I, II, III,
-* Number - 1,2,3,
-* Arabic - 1,2,3.
+* LowerLatin – a, b, c, …
+* UpperLatin – A, B, C, …
+* LowerRoman – i, ii, iii, …
+* UpperRoman – I, II, III, …
+* Number – 1, 2, 3, …
+* Arabic – 1, 2, 3, …
 
-To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) or [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) in the `pdfExportProperties` property of the grid. 
+To insert a page number in the header or footer, specify the appropriate content in the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) or [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) section of `pdfExportProperties`:
 
-The following code example demostrates how to add a page number in the footer of the exported PDF document.
+The following code example demonstrates adding a page number in the footer:
 
 ```typescript
-
- const exportProperties: PdfExportProperties = {
+const exportProperties: PdfExportProperties = {
     footer: {
         fromBottom: 10,
         height: 60,
@@ -118,31 +114,27 @@ The following code example demostrates how to add a page number in the footer of
             {
                 type: 'PageNumber',
                 pageNumberType: 'Arabic',
-                format: 'Page {$current} of {$total}', //optional
+                format: 'Page {$current} of {$total}', // Optional
                 position: { x: 0, y: 25 },
                 style: { textBrushColor: '#4169e1', fontSize: 15, hAlign: 'Center' }
             }
         ]
     }
 }
-
 ```
 
-## Insert an image in header and footer
+## Inserting an image in header and footer
 
-The Syncfusion Angular Grid have an option to include an image in the header and footer section when exporting data from the Grid to PDF document. This feature allows you to add a custom logo, branding, or any other relevant image to the exported document.
+The Syncfusion Grid enables insertion of images within the header or footer when exporting to PDF, making it possible to include organization logos, branding elements, or other relevant graphics.
 
-You can use a base64 string with the .jpeg format to represent the image. This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid component.
+Images should be provided as base64 strings in the .jpeg format. This is set using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property.
 
-To insert an image in the header or footer of the exported PDF document, follow these steps:
+To insert an image into the header or footer of the exported PDF document:
 
-1. Convert your desired image to a base64 string in the .jpeg format.
-
-2. Access the `pdfExportProperties` of the Grid component.
-
-3. Set the `header.contents.src` property to the respective file of the image or the base64 string of the image.
-
-4. Trigger the PDF export operation.
+1. Convert the target image to a base64 string in .jpeg format.
+2. Access the `pdfExportProperties` property of the Grid component.
+3. Assign the encoded string or path to the `src` property within `header.contents` or `footer.contents`.
+4. Perform the PDF export operation.
 
 ```typescript
 const exportProperties: PdfExportProperties = {
@@ -159,10 +151,9 @@ const exportProperties: PdfExportProperties = {
         ]
     }
 }
-
 ```
 
-The following example demonstrates how to add a header and footer to the exported grid. In the given example, we added lines in the header and footer, inserted an image in the header, and also added page number in the footer.
+The following example demonstrates how to add a header and footer to the exported grid. In this example, lines are added to the header and footer, an image is inserted in the header, and a page number is added in the footer.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,16 +164,16 @@ The following example demonstrates how to add a header and footer to the exporte
 {% include code-snippet/grid/exporting-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/exporting-cs5" %}
 
-## Repeat column header on every page
+## Repeating column headers on every page
 
-When exporting data from the Syncfusion Angular Grid to a PDF document, you have an option to repeat the column header on every page. This feature ensures that the column header remains visible and easily identifiable, even when the data spans multiple pages in the exported PDF document.
+When exporting data from the Syncfusion Grid to PDF, column headers can be repeated on each page. This ensures column headings remain visible and identifiable throughout multi-page documents.
 
-By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `repeatHeader` property of the **pdfGrid** object to **true** which display the column header on every page. This can be achieved using the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfheaderquerycellinfo) event of the Grid.
+By default, the column header appears only on the first page. To have headers repeated on every page, set the `repeatHeader` property of the **pdfGrid** object to **true**. This can be accomplished using the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfheaderquerycellinfo) event of the Grid.
 
-The following example demonstrates how to repeat the column header on every page of the exported PDF document using the `pdfHeaderQueryCellInfo` event.
+The following example illustrates repeating column headers on every page of the exported PDF document using the `pdfHeaderQueryCellInfo` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

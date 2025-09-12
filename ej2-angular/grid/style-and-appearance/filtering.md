@@ -10,154 +10,134 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Grid component
 
-You can customize the appearance of filtering elements in the Syncfusion Angular Grid component using CSS. Below are examples of how to customize various filtering elements, including filter bar cell elements, filter bar input elements, focus styles, clear icons, filter icons, filter dialog content, filter dialog footer, filter dialog input elements, filter dialog button elements, and Excel filter dialog number filters.
+Customize the appearance of filtering elements in the Syncfusion Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
 
-## Customizing the filter bar cell element
+## Customize the Filter Bar Cell Element
 
-To customize the appearance of the filter bar cell element in the grid header, you can use the following CSS code:
+Change the background color of the filter bar cell in the grid header using:
 
 ```css
-
 .e-grid .e-filterbarcell {
-      background-color: #045fb4;
+    background-color: #045fb4;
 }
-
 ```
-In this example, the **.e-filterbarcell** class targets the filter bar cell element in the grid header. You can modify the `background-color` property to change the color of the filter bar cell element.
+The **.e-filterbarcell** class sets the background color for each filter bar cell in the header.
 
-![Filter bar cell element](../images/filter-bar-cell-element.png)
+![Screenshot showing the filter bar cell element](../images/filter-bar-cell-element.png)
 
-## Customizing the filter bar input element
+## Customize the Filter Bar Input Element
 
-To customize the appearance of the filter bar input element in the grid header, you can use the following CSS code:
+Set a custom font for filter bar input fields with this CSS:
 
 ```css
-
 .e-grid .e-filterbarcell .e-input-group input.e-input{
-      font-family: cursive;
+    font-family: cursive;
 }
-
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input** class targets the input element within the cell. You can modify the `font-family` property to change the font of the filter bar input element.
 
-![Filter bar input element](../images/filter-bar-input-element.png)
+![Screenshot showing the filter bar input element](../images/filter-bar-input-element.png)
 
-## Customizing the filter bar input focus
+## Customize the Filter Bar Input Focus
 
-To customize the appearance of the filter bar input element's focus highlight, you can use the following CSS code:
+To customize the highlight color when the filter bar input is focused:
 
 ```css
-
 .e-grid .e-filterbarcell .e-input-group.e-input-focus{
-      background-color: #deecf9;
+    background-color: #deecf9;
 }
-
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input-group.e-input-focus** class targets the focused input element. You can modify the `background-color` property to change the color of the focus highlight.
 
-![Filter bar input focus](../images/filter-bar-input-element-focus.png)
+![Screenshot displaying filter bar input focus](../images/filter-bar-input-element-focus.png)
 
-## Customizing the filter bar input clear icon
+## Customize the Filter Bar Input Clear Icon
 
-To customize the appearance of the filter bar input element's clear icon, you can use the following CSS code:
+Update the icon for the filter bar input clear function using:
 
 ```css
-
 .e-grid .e-filterbarcell .e-input-group .e-clear-icon::before {
-      content: '\e72c';
+    content: '\e72c';
 }
-
 ```
-In this example, the **.e-clear-icon** class targets the clear icon element within the input group. You can modify the `content` property to change the icon displayed.
+The **.e-clear-icon** selector lets you set a custom icon for the clear icon within the filter bar input.
 
-![Filter bar input clear icon](../images/filter-bar-input-clear-icon.png)
+![Screenshot of the filter bar input clear icon](../images/filter-bar-input-clear-icon.png)
 
-## Customizing the grid filtering icon
+## Customize the Grid Filtering Icon
 
-To customize the appearance of the grid's filtering icon in the grid header, you can use the following CSS code:
+Use the following CSS to change the filter icon in the grid header:
 
 ```css
-
 .e-grid .e-icon-filter::before{
       content: '\e81e';
 }
-
 ```
-In this example, the **.e-icon-filter** class targets the filtering icon element. You can modify the `content` property to change the icon displayed.
+The **.e-icon-filter** selector sets the icon for the filtering button in headers.
 
-![Grid filtering icon](../images/grid-filtering-icon.png)
+![Screenshot showing the grid filtering icon](../images/grid-filtering-icon.png)
 
-## Customizing the filter dialog content
+## Customize the Filter Dialog Content
 
-To customize the appearance of the filter dialog's content element, you can use the following CSS code:
+Change the appearance of filter dialog content using:
 
 ```css
-
 .e-grid .e-filter-popup .e-dlg-content {
     background-color: #deecf9;
 }
-
 ```
 In this example, the **.e-filter-popup .e-dlg-content** classes target the content element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's content.
 
-![Filter dialog content](../images/filter-dialog-content.png)
+![Screenshot of filter dialog content](../images/filter-dialog-content.png)
 
-## Customizing the filter dialog footer
+## Customize the Filter Dialog Footer
 
-To customize the appearance of the filter dialog's footer element, you can use the following CSS code:
+Modify the filter dialog's footer background color with:
 
 ```css
-
 .e-grid .e-filter-popup .e-footer-content {
     background-color: #deecf9;
 }
-
 ```
 In this example, the **.e-filter-popup .e-footer-content** classes target the footer element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's footer.
 
-![Filter dialog footer](../images/filter-dialog-footer.png)
+![Screenshot showing filter dialog footer](../images/filter-dialog-footer.png)
 
-## Customizing the filter dialog input element
+## Customize the Filter Dialog Input Element
 
-To customize the appearance of the filter dialog's input elements, you can use the following CSS code:
+Change the font for input elements within the filter dialog using:
 
 ```css
-
 .e-grid .e-filter-popup .e-input-group input.e-input{
-      font-family: cursive;
+    font-family: cursive;
 }
-
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-input** class targets the input elements within the dialog. You can modify the `font-family` property to change the font of the input elements.
 
-![Filter dialog input element](../images/filter-dialog-input-element.png)
+![Screenshot of the filter dialog input element](../images/filter-dialog-input-element.png)
 
-## Customizing the filter dialog button element
+## Customize the Filter Dialog Button Element
 
-To customize the appearance of the filter dialog's button elements, you can use the following CSS code:
+Style the buttons within the filter dialog with:
 
 ```css
-
 .e-grid .e-filter-popup .e-btn{
-      font-family: cursive;
+    font-family: cursive;
 }
-
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-btn** class targets the button elements within the dialog. You can modify the `font-family` property to change the font of the button elements.
 
-![Filter dialog button element](../images/filter-dialog-button-element.png)
+![Screenshot displaying the filter dialog button element](../images/filter-dialog-button-element.png)
 
-## Customizing the excel filter dialog number filters element
+## Customize the Excel Filter Dialog Number Filters Element
 
 To customize the appearance of the excel filter dialog's number filters, you can use the following CSS code:
 
 ```css
-
 .e-grid .e-filter-popup .e-contextmenu-wrapper ul{
-      background-color: #deecf9;
+    background-color: #deecf9;
 }
-
 ```
 In this example, the **.e-filter-popup .e-contextmenu-wrapper** ul classes target the number filter elements within the excel filter dialog. You can modify the `background-color` property to change the color of these elements.
 
-![Excel filter dialog number filters element](../images/excel-filter-dialog-number-filters-element.png)
+![Screenshot of Excel filter dialog number filters element](../images/excel-filter-dialog-number-filters-element.png)
