@@ -42,7 +42,7 @@ export class AppComponent {
     // Template function for HTML and SVG nodes.
     public template(obj: any): string {
         if (obj === 'node1') {
-            return '<div style=" height:100%; background:#e3daf1;font-family:Arial;padding-top:5px;"><div style="font-size:12px;font-weight:bold;margin-left:3px;padding-top:5px;">📅Meeting</div<div style="font-size:10px;margin-left:5px;">Team Sync @4PM</div><div style="font-size:8px; color:#666;margin-left:5px;">Room 30</div></div>';
+            return '<div style="height:100%; background:#e3daf1;font-family:Arial;padding-left:13px;"><div style="font-size:12px;font-weight:bold;margin-left:3px;padding-top: 16px;">📅Meeting</div><div style="font-size:10px;margin-left:5px;">Team Sync @4PM</div><div style="font-size:8px; color:#666;margin-left:5px;">Room 30</div></div>';
         }
         else {
             return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="#007BFF"/><path d="M6.5 7.5L17.5 16.5L12 21V3L17.5 7.5L6.5 16.5" fill="none" stroke="white" stroke-width="2"/></svg>';
