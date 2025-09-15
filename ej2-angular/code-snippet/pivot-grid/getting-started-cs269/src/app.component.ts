@@ -1,29 +1,23 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Grid } from '@syncfusion/ej2-angular-grids';
 import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
+import { Observable } from 'rxjs';
 
 @Component({
-imports: [
-        
+    imports: [
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
-standalone: true,
-  selector: 'app-container',
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' [width]=width></ejs-pivotview>`
+    standalone: true,
+    selector: 'app-container',
+    // specifies the template string for the pivot table component
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [gridSettings]='gridSettings' [width]=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width?: string;
@@ -31,18 +25,10 @@ export class AppComponent implements OnInit {
     public gridSettings?: GridSettings;
     public columnGrandTotalIndex?: number;
     public rowGrandTotalIndex?: number;
+    public observable = new Observable();
 
     @ViewChild('pivotview', { static: false })
     public pivotGridObj?: PivotView;
-
-    queryCell(args: any): void {
-        ((this.pivotGridObj as PivotView).renderModule as any).rowCellBoundEvent(args);
-        //triggers for every cell
-    }
-
-    enginePopulated(args: any): void {
-       ((this.pivotGridObj as PivotView).grid as Grid).queryCellInfo = this.queryCell.bind(this);
-    }
 
     ngOnInit(): void {
 
@@ -61,9 +47,10 @@ export class AppComponent implements OnInit {
 
         this.gridSettings = {
             columnWidth: 140,
+            queryCellInfo: this.observable.subscribe((args: any) => {
+                // triggers every time for header cell while rendering
+            }) as any,
         } as GridSettings;
     }
 }
-
-
 

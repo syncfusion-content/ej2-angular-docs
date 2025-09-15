@@ -38,6 +38,7 @@ export class AppComponent {
             showTooltip: true
         };
     }
+    // Initialize basic shapes for symbol palette.
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [
             { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' } },
@@ -51,6 +52,7 @@ export class AppComponent {
         ];
         return basicShapes;
     }
+    // Initialize flow shapes symbol palette.
     public getFlowShapes(): NodeModel[] {
         let flowShapes: NodeModel[] = [
             { id: 'Terminator', shape: { type: 'Flow', shape: 'Terminator' } },
