@@ -11,19 +11,19 @@ domainurl: ##DomainURL##
 
 # CustomAdaptor in Syncfusion Angular Grid
 
-The `CustomAdaptor` in the Syncfusion Angular Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
+The `CustomAdaptor` in the Syncfusion Angular Grid enables developers to create custom adaptors by extending built-in adaptors. Custom adaptors provide control over query processing, request handling, and response manipulation of the built-in adaptor functionality. The `CustomAdaptor` extends OData V4 services, enabling efficient data fetching and manipulation. By default, three built-in methods are available for `CustomAdaptor` implementation.
 
 ## Types of CustomAdaptor methods
 
-There are three types of methods in custom adaptors.
+Custom adaptors support three core methods for data operations.
 
 ### ProcessQuery
 
-The `ProcessQuery` method handles the execution of a query sent to a `dataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+The `ProcessQuery` method handles query execution sent to a `dataSource`, such as a database or custom data service. This method performs operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two parameters: 
 
-* `DataManager`: Used to modify the URL dynamically.
+* `DataManager`: Modifies the URL dynamically and manages data source configuration.
 
-* `Query`: Allows setting additional parameter values or modifying queries such as sorting, filtering, and grouping, etc.
+* `Query`: Sets additional parameter values or modifies queries including sorting, filtering, and grouping operations.
 
 **DataManager**
 
@@ -43,13 +43,13 @@ public override processQuery(dm: DataManager, query: Query): Object {
 
 ### beforeSend
 
-The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
+The `beforeSend` method executes before sending a request to the server. This method allows modification of parameters, request headers, and data, or performs validation before request processing. It accepts three parameters:
 
-* `DataManager`: Provides the `dataSource` and `adaptor` value.
+* `DataManager`: Provides the `dataSource` and `adaptor` configuration values.
 
-* `Request`: Used to send custom headers, such as setting the `Authorization` header.
+* `Request`: Enables custom headers, such as setting the `Authorization` header for authentication.
 
-* `Settings`: An optional argument that allows additional configurations.
+* `Settings`: Optional parameter that allows additional request configurations.
 
 **DataManager**
 
@@ -72,7 +72,7 @@ public override beforeSend(dm: DataManager, request: Request, settings?: any) {
 
 ### processResponse
 
-The `processResponse` method handles the response received from the server after an asynchronous request. It is responsible for parsing the response data, managing errors, and preparing the data for further processing. This method can accept multiple optional arguments, allowing customization based on specific requirements.
+The `processResponse` method handles server responses after asynchronous requests. This method parses response data, manages errors, and prepares data for further processing. The method accepts multiple optional parameters, allowing customization based on specific requirements.
 
 ```ts
 public override processResponse() {
@@ -86,11 +86,11 @@ public override processResponse() {
 }
 ```
 
-This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion Angular Grid.
+This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in the Syncfusion Angular Grid.
 
-## Creating an Custom service
+## Creating a Custom service
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -157,7 +157,7 @@ namespace ODataV4Adaptor.Server.Models
 
 **4. Build the Entity Data Model**
 
-To construct the Entity Data Model for your OData service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
+To construct the Entity Data Model for the OData service, utilize the `ODataConventionModelBuilder` to define the model structure. Create an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
 
 ```cs
 // Create an ODataConventionModelBuilder to build the OData model.
@@ -169,7 +169,7 @@ modelBuilder.EntitySet<OrdersDetails>("Orders");
 
 **5. Register the OData Services**
 
-Once the Entity Data Model is built, you need to register the OData services in your ASP.NET Core application. Here's how:
+Once the Entity Data Model is built, register the OData services in the ASP.NET Core application. Here's the configuration:
 
 ```cs
 // Add controllers with OData support to the service collection.
@@ -181,7 +181,7 @@ builder.Services.AddControllers().AddOData(
 
 **6. Add controllers**
 
-Finally, add controllers to expose the OData endpoints. Here's an example:
+Add controllers to expose the OData endpoints. Here's an example:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -211,17 +211,17 @@ namespace ODataV4Adaptor.Server.Controllers
 
 **7. Run the Application:**
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**. 
 
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
+After running the application, verify that the server-side API controller successfully returns the order data at the URL (https://localhost:xxxx/odata/Orders). Here **xxxx** represents the port number.
 
-## Connecting Syncfusion Angular Grid to an Custom service extending the ODataV4 service
+## Connecting Syncfusion Angular Grid to a Custom service extending the ODataV4 service
 
-To integrate the Syncfusion Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid into the Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1: Install Syncfusion Package**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Open the terminal in the project's client folder and install the required Syncfusion packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -252,7 +252,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular Grid:
+Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -272,9 +272,9 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 
 **Step 4: Adding Custom Adaptor**
 
-Create a component file (e.g., CustomAdaptor.ts). Then, import `DataManager` and `ODataV4Adaptor` from `@syncfusion/ej2-data`. Extend the `ODataV4Adaptor` class to define custom adaptor. This adaptor implements three key methods: `processQuery`, `beforeSend`, and `processResponse`.
+Create a component file (e.g., CustomAdaptor.ts). Import `DataManager` and `ODataV4Adaptor` from `@syncfusion/ej2-data`. Extend the `ODataV4Adaptor` class to define the custom adaptor. This adaptor implements three key methods: `processQuery`, `beforeSend`, and `processResponse`.
 
-* The `processQuery` method modifies the API endpoint URL and sets additional parameters required for executing the query.
+* The `processQuery` method modifies the API endpoint URL and sets additional parameters required for query execution.
 
 * The `beforeSend` method adds custom headers, such as the `Authorization` header, before sending the request.
 
@@ -309,7 +309,7 @@ export class SerialNoAdaptor extends ODataV4Adaptor {
 
 **Step 5: Adding Syncfusion Component**
 
-In your component file (e.g., app.component.ts), import `DataManager` from `@syncfusion/ej2-data` and `CustomAdaptor` from `./customadaptor` file. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
+In the component file (e.g., app.component.ts), import `DataManager` from `@syncfusion/ej2-data` and `CustomAdaptor` from `./customadaptor` file. Create a `DataManager` instance specifying the URL of the API endpoint(https:localhost:xxxx/odata/Orders) using the `url` property. Set `CustomAdaptor` as the adaptor to handle data requests.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -332,11 +332,11 @@ export class AppComponent {
 }
 {% endhighlight %}
 {% endtabs %}
-> Replace https://localhost:xxxx/odata/Orders with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/odata/Orders with the actual **URL** of the API endpoint that provides the data in a consumable format (e.g., JSON).
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**.
 
-> Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
+> Ensure the API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
 
 ```cs
   [program.cs]
@@ -353,7 +353,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 ## Handling filtering operation
 
-To enable filtering in your web application using the custom adaptor, extend the OData support in your service configuration. This involves adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once configured, clients can use the **$filter** query option in requests to retrieve specific data entries.
+To enable filtering in the web application using the custom adaptor, extend the OData support in the service configuration. This involves adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once configured, clients can use the **$filter** query option in requests to retrieve specific data entries.
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
@@ -442,7 +442,7 @@ export class AppModule { }
 
 ## Handling searching operation
 
-To enable search functionality in your web application using the custom adaptor, extend the OData support in your service configuration. This requires adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once configured, clients can use the **$filter** query option in their requests to search for specific data entries.
+To enable search functionality in the web application using the custom adaptor, extend the OData support in the service configuration. This requires adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once configured, clients can use the **$filter** query option in requests to search for specific data entries.
 
 {% tabs %}
 {% highlight cs tabtitle="program.cs" %}
@@ -528,7 +528,7 @@ export class AppModule { }
 
 ## Handling sorting operation
 
-To enable sorting operations in your web application using the custom adaptor, first configure the custom adaptor to extend OData support in your service collection. This involves adding the `OrderBy` method within the OData setup, allowing data to be sorted based on specified criteria. Once enabled, clients can use the **$orderby** query option in their requests to sort data entries by desired attributes.
+To enable sorting operations in the web application using the custom adaptor, configure the custom adaptor to extend OData support in the service collection. This involves adding the `OrderBy` method within the OData setup, allowing data to be sorted based on specified criteria. Once enabled, clients can use the **$orderby** query option in requests to sort data entries by desired attributes.
 
 {% tabs %}
 {% highlight cs tabtitle="program.cs" %}
@@ -619,7 +619,7 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To implement paging in your web application using the CustomAdaptor with OData, use the `SetMaxTop` method in your OData setup to define the maximum number of records returned per request. Once configured, clients can utilize the **$skip** and **$top** query options to specify the number of records to skip and retrieve, respectively. 
+To implement paging in the web application using the CustomAdaptor with OData, use the `SetMaxTop` method in the OData setup to define the maximum number of records returned per request. Once configured, clients can utilize the **$skip** and **$top** query options to specify the number of records to skip and retrieve, respectively. 
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
@@ -706,9 +706,9 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion Grid within an Angular application, follow these steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.html" %}
@@ -780,7 +780,7 @@ export class AppModule { }
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into the Syncfusion Grid, utilize the `HttpPost` method in the server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
 /// <summary>
@@ -806,7 +806,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in the controller. Here's a sample implementation of updating a record:
 
 ```cs
 /// <summary>
@@ -837,7 +837,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updatedOrder)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from the Syncfusion Grid, utilize the `HttpDelete` method in the controller. Below is a sample implementation:
 
 ```cs
 /// <summary>

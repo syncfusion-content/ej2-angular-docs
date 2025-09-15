@@ -11,19 +11,21 @@ domainurl: ##DomainURL##
 
 # WebApiAdaptor in Syncfusion Angular Grid Component
 
-The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
+The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Syncfusion Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
 
-To enable the OData query option for a Web API, please refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options), which provides detailed instructions on configuring the endpoint to understand OData-formatted queries.
+The WebApiAdaptor is specifically designed for Web API services that support OData query options, providing automatic query translation and response handling. For successful integration, the target endpoint must be capable of processing OData-formatted queries.
 
-This section describes a step-by-step process for retrieving data service using `WebApiAdaptor`, then binding it to the Angular Grid component to facilitate data and CRUD operations.
+To enable OData query options for a Web API service, refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options) for detailed configuration instructions.
+
+This section provides step-by-step guidance for retrieving data using the `WebApiAdaptor` and binding it to the Angular Grid component to facilitate data operations and CRUD functionality.
 
 ## Creating a Web API service
 
-To configure a server for use with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server for use with the Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
-Open Visual Studio and create an Angular and ASP.NET Core project named **WebApiAdaptor**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+Open Visual Studio and create an Angular and ASP.NET Core project named **WebApiAdaptor**. To create an Angular and ASP.NET Core application, follow the [documentation link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **2. Model Class Creation:**
 
@@ -96,7 +98,7 @@ Create a model class named `OrdersDetails.cs` in the server-side **Models** fold
 
 **3. API Controller Creation:**
 
-Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the Angular Grid component. Implement the **Get** method in the controller to return the data in JSON format, including the **Items** and **Count** properties as required by `WebApiAdaptor`.
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller handles data communication with the Angular Grid component. Implement the **Get** method in the controller to return data in JSON format, including the **Items** and **Count** properties required by the `WebApiAdaptor`.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -125,34 +127,55 @@ namespace WebApiAdaptor.Server.Controllers
 
 **4. Run the Application:**
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**. 
 
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Orders). Here **xxxx** denotes the port number.
+After running the application, verify that the server-side API controller successfully returns the order data by navigating to the URL (https://localhost:xxxx/api/Orders). Here **xxxx** denotes the port number.
 
-![WebApiAdaptor-data](../images/webapi-adaptor-data.png)
+![WebApiAdaptor-data response showing JSON format with Items and Count properties](../images/webapi-adaptor-data.png)
 
 ## Connecting Syncfusion Angular Grid to an API service
 
-To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
-**1: Install Syncfusion Package**
+**1. Install Syncfusion Packages**
 
-Open your terminal in the project's root directory of client folder and install the required Syncfusion packages using npm:
+Open your terminal in the project's root directory of the client folder and install the required Syncfusion packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-**2: Import Grid Module**
+**2. Import Grid Module**
 
-In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package and configure it in the module:
 
 {% tabs %}
+{% highlight ts tabtitle="app.module.ts" %}
 
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    GridModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+{% endhighlight %}
 {% endtabs %}
 
-**Step 3: Adding CSS reference**
+**3. Adding CSS Reference**
 
 Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
 
@@ -172,9 +195,9 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Syncfusion Component**
+**4. Adding Syncfusion Component**
 
-In your component file (e.g., app.component.ts), import `DataManager` and `WebApiAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Orders) using the `url` property and set the adaptor `WebApiAdaptor`.
+In your component file (e.g., app.component.ts), import `DataManager` and `WebApiAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint (https:localhost:xxxx/api/Orders) using the `url` property and set the adaptor to `WebApiAdaptor`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -218,7 +241,7 @@ export class AppComponent {
 
 > Replace https://localhost:xxxx/api/Orders with the actual URL of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**.
 
 > Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
   ```cs
@@ -234,15 +257,15 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
   app.UseCors();
   ```
  
-> You can find the complete sample for the WebApiAdaptor in [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-WebApi-Adaptor) link.
+> You can find the complete sample for the WebApiAdaptor in the [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-WebApi-Adaptor) repository.
 
-![WebApiAdaptor](../images/adaptor.gif)
+![WebApiAdaptor demonstration showing data binding and grid operations](../images/adaptor.gif)
 
 ## Handling searching operation
 
-To handle search operation, implement search logic on the server side according to the received OData-formatted query.
+To handle search operations, implement search logic on the server side according to the received OData-formatted query.
 
-![Searching query](../images/webapiadaptor-searching.png)
+![Search query format in WebApiAdaptor showing OData structure](../images/webapiadaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -285,7 +308,7 @@ public object Get()
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 import { Component, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
@@ -303,12 +326,12 @@ export class AppComponent {
       url: 'api/Orders',
       adaptor: new WebApiAdaptor()
     });
+    this.toolbar = ['Search'];
   }
-  this.toolbar = ['Search'];
 }
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-<ejs-grid #grid [dataSource]='data' [toolbar]='toolbar' height='320>
+<ejs-grid #grid [dataSource]='data' [toolbar]='toolbar' height='320'>
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' isPrimaryKey=true width='150'></e-column>
     <e-column field='CustomerID' headerText='Customer Name' width='150'></e-column>
@@ -324,7 +347,7 @@ export class AppComponent {
 
 To handle filter operations, ensure that your Web API endpoint supports filtering based on OData-formatted queries. Implement the filtering logic on the server-side as shown in the provided code snippet.
 
-![Filtering query](../images/webapiadaptor-filtering.png)
+![Filter query format in WebApiAdaptor showing OData filtering structure](../images/webapiadaptor-filtering.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -397,7 +420,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Orders', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Orders', // Replace with your hosted link
       adaptor: new WebApiAdaptor()
     });
   }
@@ -419,15 +442,15 @@ export class AppComponent {
 
 ## Handling sorting operation
 
-To handle sorting action, implement sorting logic on the server-side according to the received OData-formatted query.
+To handle sorting actions, implement sorting logic on the server-side according to the received OData-formatted query.
 
 ***Ascending Sorting***
 
-![Sorting Ascending query](../images/webapiadaptor-sorting-asc.png)
+![Ascending sort query format in WebApiAdaptor](../images/webapiadaptor-sorting-asc.png)
 
 ***Descending Sorting***
 
-![Sorting Descending query](../images/webapiadaptor-sorting-desc.png)
+![Descending sort query format in WebApiAdaptor](../images/webapiadaptor-sorting-desc.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -483,7 +506,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Orders', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Orders', // Replace with your hosted link
       adaptor: new WebApiAdaptor()
     });
   }
@@ -507,7 +530,7 @@ export class AppComponent {
 
 Implement paging logic on the server-side according to the received OData-formatted query. Ensure that the endpoint supports paging based on the specified criteria.
 
-![paging query](../images/webapiadaptor-paging.png)
+![Paging query format in WebApiAdaptor showing skip and top parameters](../images/webapiadaptor-paging.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -542,7 +565,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Orders', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Orders', // Replace with your hosted link
       adaptor: new WebApiAdaptor()
     });
   }
@@ -566,7 +589,7 @@ export class AppComponent {
 
 To manage CRUD (Create, Read, Update, Delete) operations using the WebApiAdaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PUT, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow these steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -597,7 +620,7 @@ export class AppComponent {
 }
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-<ejs-grid #grid [dataSource]='data' [editSettings]="editSettings" [toolbar]="toolbar"height="320">
+<ejs-grid #grid [dataSource]='data' [editSettings]="editSettings" [toolbar]="toolbar" height="320">
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' isPrimaryKey=true width='150'></e-column>
     <e-column field='CustomerID' headerText='Customer Name' width='150'></e-column>
@@ -613,9 +636,9 @@ export class AppComponent {
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into your Syncfusion Grid, utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
-![WebApiAdaptor-Insert-record](../images/webapiadaptor-insert-record.png)
+![WebApiAdaptor insert operation showing HTTP POST request](../images/webapiadaptor-insert-record.png)
 
 ```cs
 
@@ -637,7 +660,7 @@ public void Post([FromBody] OrdersDetails newRecord)
 
 Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPut` method in your controller. Here's a sample implementation of updating a record:
 
-![WebApiAdaptor-Update-record](../images/webapiadaptor-update-record.png)
+![WebApiAdaptor update operation showing HTTP PUT request](../images/webapiadaptor-update-record.png)
 
 ```cs
 
@@ -665,9 +688,9 @@ public void Put(int id, [FromBody] OrdersDetails updatedOrder)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from your Syncfusion Grid, utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
-![WebApiAdaptor-Delete-record](../images/webapiadaptor-delete-record.png)
+![WebApiAdaptor delete operation showing HTTP DELETE request](../images/webapiadaptor-delete-record.png)
 
 ```cs
 
@@ -691,6 +714,6 @@ public void Delete(int key)
 }
 ```
 
-![WebApiAdaptor CRUD operations](../images/adaptor-crud-operation.gif)
+![WebApiAdaptor CRUD operations demonstration showing complete data manipulation workflow](../images/adaptor-crud-operation.gif)
 
-> You can find the complete sample for the WebApiAdaptor in [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-WebAPI-Adaptor) link.
+> You can find the complete sample for the WebApiAdaptor in the [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-WebAPI-Adaptor) repository.

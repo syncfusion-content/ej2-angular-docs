@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # ODataV4Adaptor in Syncfusion Angular Grid Component
 
-The `ODataV4Adaptor` in the Syncfusion Angular Grid Component allows seamless integration of the Angular Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion Angular Grid Component.
+The `ODataV4Adaptor` in the Syncfusion Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Syncfusion Angular Grid Component.
 
 ## Creating an OData service
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -82,7 +82,7 @@ namespace ODataV4Adaptor.Server.Models
 
 **4. Build the Entity Data Model**
 
-To construct the Entity Data Model for your OData service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
+To construct the Entity Data Model for the OData service, utilize the `ODataConventionModelBuilder` to define the model structure. Create an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
 
 ```cs
 // Create an ODataConventionModelBuilder to build the OData model
@@ -94,7 +94,7 @@ modelBuilder.EntitySet<OrdersDetails>("Orders");
 
 **5. Register the OData Services**
 
-Once the Entity Data Model is built, you need to register the OData services in your ASP.NET Core application. Here's how:
+Once the Entity Data Model is built, register the OData services in the ASP.NET Core application. Here's the configuration:
 
 ```cs
 // Add controllers with OData support to the service collection
@@ -105,7 +105,7 @@ builder.Services.AddControllers().AddOData(
 ```
 **6. Add controllers**
 
-Finally, add controllers to expose the OData endpoints. Here's an example:
+Add controllers to expose the OData endpoints. Here's an example:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -132,26 +132,26 @@ namespace ODataV4Adaptor.Server.Controllers
     }
 }
 ```
-**4. Run the Application:**
+**7. Run the Application:**
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**. 
 
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
+After running the application, verify that the server-side API controller successfully returns the order data at the URL (https://localhost:xxxx/odata/Orders). Here **xxxx** represents the port number.
 
 ## Connecting Syncfusion Angular Grid to an OData service
 
-To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid component into the Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
-**1: Install Syncfusion Package**
+**Step 1: Install Syncfusion Package**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Open the terminal in the project's client folder and install the required Syncfusion packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-**2: Import Grid Module**
+**Step 2: Import Grid Module**
 
 In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
 
@@ -175,7 +175,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular component:
+Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular component:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -195,7 +195,7 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 
 **Step 4: Adding Syncfusion Component**
 
-In your component file (e.g., app.component.ts), import `DataManager` and `ODataV4Adaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/odata/Orders) using the `url` property and set the adaptor `ODataV4Adaptor`.
+In the component file (e.g., app.component.ts), import `DataManager` and `ODataV4Adaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of the API endpoint (https:localhost:xxxx/odata/Orders) using the `url` property and set the adaptor to `ODataV4Adaptor`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -233,11 +233,11 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:xxxx/odata/Orders with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/odata/Orders with the actual **URL** of the API endpoint that provides the data in a consumable format (e.g., JSON).
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**.
 
-> Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
+> Ensure the API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
   ```cs
   [program.cs]
   builder.Services.AddCors(options =>
@@ -253,7 +253,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 ## Handling searching operation
 
-To enable search operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in their requests to search for specific data entries.
+To enable search operations in the web application using OData, configure the OData support in the service collection. This involves adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once enabled, clients can utilize the **$filter** query option in requests to search for specific data entries.
 
 {% tabs %}
 {% highlight cs tabtitle="program.cs" %}
@@ -339,7 +339,7 @@ export class AppModule { }
 
 ## Handling filtering operation
 
-To enable filter operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in your requests to filter for specific data entries.
+To enable filter operations in the web application using OData, configure the OData support in the service collection. This involves adding the `Filter` method within the OData setup, allowing data to be filtered based on specified criteria. Once enabled, clients can utilize the **$filter** query option in requests to filter for specific data entries.
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
@@ -421,14 +421,14 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-Single column filtering
+**Single column filtering**
 ![Filtering query](../images/odatav4-adaptor-filtering.png)
-Multi column filtering
+**Multi column filtering**
 ![Filtering query](../images/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling sorting operation
 
-To enable sorting operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `OrderBy` method within the OData setup, allowing you to sort data based on specified criteria. Once enabled, clients can utilize the **$orderby** query option in their requests to sort data entries according to desired attributes.
+To enable sorting operations in the web application using OData, configure the OData support in the service collection. This involves adding the `OrderBy` method within the OData setup, allowing data to be sorted based on specified criteria. Once enabled, clients can utilize the **$orderby** query option in requests to sort data entries according to desired attributes.
 
 {% tabs %}
 {% highlight cs tabtitle="program.cs" %}
@@ -510,17 +510,17 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-*Single column sorting*
+**Single column sorting**
 
 ![Single column sorting query](../images/odatav4-adaptor-sorting.png)
 
-*Multi column sorting*
+**Multi column sorting**
 
 ![Multi column sorting query](../images/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling paging operation
 
-To implement paging operations in your web application using OData, you can utilize the `SetMaxTop` method within your OData setup to limit the maximum number of records that can be returned per request. While you configure the maximum limit, clients can utilize the **$skip** and **$top** query options in their requests to specify the number of records to skip and the number of records to take, respectively. 
+To implement paging operations in the web application using OData, utilize the `SetMaxTop` method within the OData setup to limit the maximum number of records that can be returned per request. While configuring the maximum limit, clients can utilize the **$skip** and **$top** query options in requests to specify the number of records to skip and the number of records to take, respectively. 
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
@@ -613,9 +613,9 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow the below steps:
+To enable CRUD operations in the Syncfusion Grid component within an Angular application, follow these steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -685,7 +685,7 @@ export class AppModule { }
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into the Syncfusion Grid, utilize the `HttpPost` method in the server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
 /// <summary>
@@ -710,7 +710,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in the controller. Here's a sample implementation of updating a record:
 
 ```cs
 /// <summary>
@@ -741,7 +741,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updateRecord)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from the Syncfusion Grid, utilize the `HttpDelete` method in the controller. Below is a sample implementation:
 
 ```cs
 /// <summary>
@@ -764,13 +764,13 @@ public IActionResult Delete(int key)
 
 > You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-angular-data-grid) link.
 
-## Odata with custom url
+## OData with custom URL
 
-The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per application requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in the application's route configuration file to align with the custom URL. Custom URLs can be invoked using the following methods in the DataManager.
 
 **Configuring Custom URLs**
 
-To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+To work with custom URLs for CRUD operations in the Syncfusion Grid, use the following properties:
 
 * insertUrl: Specifies the custom URL for inserting new records.
 * removeUrl: Specifies the custom URL for deleting records.
@@ -814,7 +814,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-For batch editing, you can specify a custom batch URL as follows:
+For batch editing, specify a custom batch URL as follows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -836,7 +836,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.data = new DataManager({
       url: 'https://localhost:xxxx/odata/Orders', // xxxx denotes port number
-      BatchUrl: 'https://localhost:xxxx/odata/Orders/BatchUpdate', // custom URL for batch update
+      batchUrl: 'https://localhost:xxxx/odata/Orders/BatchUpdate', // custom URL for batch update
       adaptor: new ODataV4Adaptor()
     });
 
@@ -846,7 +846,3 @@ export class AppComponent {
 }
 {% endhighlight %}
 {% endtabs %}
-
-
-
-

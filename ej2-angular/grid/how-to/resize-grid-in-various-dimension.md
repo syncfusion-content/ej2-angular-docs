@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize the grid in various dimension in Angular Grid component | Syncfusion
-description: Learn here all about Resize the grid in various dimension in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to resize the Syncfusion Angular Grid in different dimensions by adjusting height and width dynamically for optimal data display in Angular applications.
 platform: ej2-angular
 control: Resize the grid in various dimension 
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Resize the grid in various dimension in Angular Grid component
 
-The Syncfusion Angular Grid component offers a friendly way to resize the grid, allowing you to adjust its width and height for improved data visualization.
+The Syncfusion Angular Grid component supports flexible resizing, allowing dynamic adjustment of both the grid’s width and height to enhance data presentation and usability.
 
-To resize the grid externally, you can use an external button to modify the width of the parent element that contains the grid. This will effectively resize the grid along with its parent container.
+To perform external resizing, modify the width or height of the parent element that contains the grid. Adjusting the dimensions of the parent container dynamically resizes the grid to fit the new space.
 
-The following example demonstrates how to resize the grid on external button click based on input. 
+The following example demonstrates how to resize the grid’s dimensions via an external button, using user input to adjust the parent container and grid accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

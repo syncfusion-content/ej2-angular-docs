@@ -10,17 +10,15 @@ domainurl: ##DomainURL##
 
 # Pdf Export Options in Angular Grid Component
 
-The Syncfusion Angular Grid component allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
+The Syncfusion Angular Grid component provides multiple options for customizing PDF export functionality. These capabilities enable precise control over the exported content and layout to match your application requirements.
 
-The PDF export action can be customized based on your requirements using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property. By using the `pdfExportProperties` property, you can export the current page records, selected records, or filtered records. Additionally, you can customize the page alignments using the `pdfExportProperties` property.
+PDF export behavior can be customized using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property. With `pdfExportProperties`, you can export current page records, selected or filtered records, show or hide specific columns, and adjust PDF formatting such as page size and orientation.
 
 ## Export current page records
 
-Exporting the current page in Syncfusion Angular Grid to a PDF document provides the ability to export the currently displayed page records. This feature allows for generating PDF documents that specifically include the content from the current page of the grid.
+Exporting the current page enables you to generate a PDF containing only the visible page of grid records. To do this, set the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#exporttype) property in `pdfExportProperties` to **CurrentPage**.
 
-To export the current page of the grid to a PDF document, you need to specify the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#exporttype) property as **CurrentPage**.
-
-The following example demonstrates how to export current page to a PDF document when a toolbar item is clicked.
+The following example demonstrates exporting the current page to a PDF document when a toolbar item is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,21 +34,18 @@ The following example demonstrates how to export current page to a PDF document 
 
 ## Export selected records
 
-Exporting only the selected records from the Syncfusion Angular Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
+Exporting selected records lets you generate a PDF that includes only specific Grid data items. This feature provides targeted, user-driven PDF exports.
 
-To export only the selected records by utilizing the [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. 
+To export selected records, set the [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. 
 
-To export the selected records from the grid to a PDF file, you can follow these steps:
+**Steps:**
 
 1. Handle the `toolbarClick` event of the Grid.
+2. Retrieve selected records via [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords).
+3. Assign the selected data to `exportProperties.dataSource`.
+4. Call [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport).
 
-2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method.
-
-3. Assign the selected data to the `exportProperties.dataSource `property.
-
-4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
-
-The following example demonstrates how to export the selected records to a PDF document.
+Example for exporting selected records:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +75,7 @@ To export only the filtered data from the grid to a PDF file, you can follow the
 
 4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method.
 
-The following example demonstrates how to export the filtered records to a PDF document.
+Example for exporting filtered records:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,11 +91,9 @@ The following example demonstrates how to export the filtered records to a PDF d
 
 ## Export with hidden columns
 
-Exporting hidden columns in the Syncfusion Angular Grid allows you to include hidden columns in the exported PDF document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
+To include hidden columns in your exported PDF, set the [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#includehiddencolumn) property as **true** in [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties). This feature is useful if you need to output fields that are not currently displayed in the Grid UI.
 
-To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#includehiddencolumn) property as **true** in the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property.
-
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/angular/documentation/api/switch/#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component.
+Example for exporting hidden columns (e.g., **ShipCity**) that are not visible in the UI:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,19 +109,16 @@ The following example demonstrates how to export hidden columns to a PDF file. I
 
 ## Show or hide columns while exporting
 
-The Syncfusion Angular Grid component provides the functionality to show or hide columns dynamically during the export process. This feature allows you to selectively display or hide specific columns based on your requirements.
+The Grid enables columns to be shown or hidden dynamically during the export process.
 
-To show or hide columns based on user interaction during the export process, you can follow these steps:
+**How to:**
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the Grid component.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
+2. Update column visibility using the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property (**true** to show, **false** to hide).
+3. Run the export.
+4. Use [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) to restore the column visibility post-export.
 
-2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property of the column to **true** or **false**.
-
-3. Export the grid to PDF.
-
-4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
-
-In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
+In this example, the **CustomerID** column is hidden in the Grid, but shown during export, while **ShipCity** is hidden for the export:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,7 +146,7 @@ To implement the show or hide columns feature during PDF export in the Syncfusio
 
 4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
 
-In the following example, the **ShipName** is initially a hidden column in the Syncfusion Angular Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+Example: The **ShipName** column is hidden in the UI but shown for PDF export, while **OrderDate** is hidden in the export:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -172,17 +162,14 @@ In the following example, the **ShipName** is initially a hidden column in the S
 
 ## Change page orientation
 
-The Syncfusion Angular Grid component allows you to change the page orientation of the exported PDF document from the default portrait mode to landscape mode. This feature provides the flexibility to adjust the layout and presentation of the exported PDF according to your needs.
+You can change the PDF page orientation by setting the [pageOrientation](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pageorientation) property in [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties).
 
-To change the page orientation to landscape for the exported document, you can set the [pageOrientation](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pageorientation) property of the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property. 
+Supported values:
 
-The supported `pageOrientation` options are:
+- **Landscape**: Exports Grid with landscape page orientation.
+- **Portrait**: Exports Grid with portrait page orientation (default).
 
-1. **Landscape**: Exports the grid with a landscape PDF page orientation.
-
-2. **Portrait**: Exports the grid with a portrait PDF page orientation.
-
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
+Example for changing page orientation based on [DropDownList](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) value:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -198,39 +185,15 @@ The following example demonstrates how to export the grid into PDF document by s
 
 ## Change page size
 
-The Syncfusion Angular Grid component allows you to customize the page size of the exported PDF document according to your requirements. This feature provides the flexibility to adjust the layout and dimensions of the exported PDF to fit different paper sizes or printing needs. 
+Page size for exported PDF documents can be changed by setting the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pagesize) property of [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) to the required size.
 
-To customize the page size for the exported document, you can set the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pagesize) property of the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property to the desired page size. 
+Supported `pdfPageSize` values include:
 
-Supported `pdfPageSize` are:
-* Letter
-* Note
-* Legal
-* A0
-* A1
-* A2
-* A3
-* A4
-* A5
-* A6
-* A7
-* A8
-* A9
-* B0
-* B1
-* B2
-* B3
-* B4
-* B5
-* Archa
-* Archb
-* Archc
-* Archd
-* Arche
-* Flsa
-* HalfLetter
-* Letter11x17
-* Ledger
+* Letter, Note, Legal
+* A0 to A9
+* B0 to B5
+* Archa, Archb, Archc, Archd, Arche
+* Flsa, HalfLetter, Letter11x17, Ledger
 
 The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
@@ -248,7 +211,7 @@ The following example demonstrates how to export the grid into PDF document by s
 
 ## Define file name
 
-The Syncfusion Angular Grid component allows you to specify a custom file name for the exported PDF document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
+To assign a specific file name to the exported PDF, set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#filename) property of [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties). This makes exported data easier to manage and identify.
 
 To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#filename) property of the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property to the desired file name.
 
@@ -298,7 +261,7 @@ To customize the grid columns, you can follow these steps:
 
 3. Trigger the PDF export operation to apply the customized column settings.
 
-The following example demonstrates how to customize the grid columns when exporting a document. In this scenario, the attributes for different columns have been customized: **OrderID** with `textAlign` set to **Right**, **CustomerID** with `headerText` as **"Customer Name"**, and **Freight** with a center-aligned `textAlign` property, which is not rendered in the grid columns.
+Example: Customize the **OrderID** column's text alignment, the **CustomerID** header text, and center-align the **Freight** column in the export output:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -314,7 +277,7 @@ The following example demonstrates how to customize the grid columns when export
 
 ## Font and color customization
 
-The Syncfusion Angular Grid component provides the ability to customize the font in the exported PDF document. This feature allows you to control the appearance and styling of the text in the exported file, ensuring consistency with your application's design.
+Text font and color used in the exported PDF document can be customized for Grid header, content, and caption cells.
 
 ### Default fonts
 
@@ -350,11 +313,14 @@ The following example demonstrates, how to change the default font when exportin
 
 ### Add custom font
 
-In addition to changing the default font, the Syncfusion Angular Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#theme) property.
+The Syncfusion Angular Grid can use a custom font in exported PDF documents by specifying a base64-encoded font string through [pdfExportProperties.theme](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#theme). 
 
-When using a custom font, it's important to provide the font in a format that can be easily embedded in the exported document. This is typically done by encoding the font file into a base64 string. This base64 encoded font data can then be used within the export settings to ensure the custom font is applied to the exported PDF.
+To use a custom font:
 
-The following example demonstrates how to use the custom **Algeria** font for exporting the grid. The **base64AlgeriaFont** variable contains the base64 encoded string representing the **Algeria** font file. This encoded font data is used in the PDF export properties to specify the custom font.
+1. Encode the font file as a base64 string.
+2. Assign this string to the export settings.
+
+Example: Apply the base64 **Algeria** font to the exported grid (via the **base64AlgeriaFont** variable):
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -368,7 +334,7 @@ The following example demonstrates how to use the custom **Algeria** font for ex
   
 {% previewsample "page.domainurl/samples/grid/exporting-cs17" %}
 
-> **PdfTrueTypeFont** accepts base64 format of the custom font.
+> **PdfTrueTypeFont** must receive font data in base64 format.
 
 ## Conditional cell customization
 
@@ -392,9 +358,9 @@ The following example demonstrate how to customize the background color of the *
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) event.
+Grid supports exporting data as a Blob instead of auto-downloading a file. Set the `isBlob` parameter to **true** in [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport). Use the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) event to consume the returned blob promise.
 
-The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
+Example: Obtain exported grid blob data via the `pdfExportComplete` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

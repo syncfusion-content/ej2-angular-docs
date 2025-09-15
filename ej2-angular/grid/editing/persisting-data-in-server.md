@@ -10,46 +10,45 @@ domainurl: ##DomainURL##
 
 # Persisting data in server in Angular Grid component
 
-The Syncfusion Angular Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is essential for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
+The Syncfusion Angular Grid component supports persisting edited data to a backend database using RESTful web services. All CRUD (Create, Read, Update, Delete) actions performed within the grid are managed by the [DataManager](../../data), allowing server-side data binding and real-time updates to the server. This ensures that edits made in the UI are immediately reflected and stored on the backend, maintaining data integrity.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+> The ODataAdaptor persists data in the server using the OData protocol.
 
-Syncfusion provides multiple adaptors to handle different server protocols and APIs, enabling smooth integration with RESTful services. Below are the various adaptors you can use to persist data in the Syncfusion Angular Grid component.
+Syncfusion offers a variety of adaptors for integrating with different server protocols and APIs, enabling seamless interaction with RESTful services. The following adaptor types are supported for persisting data in the Syncfusion Angular Grid component:
 
-**Using URL adaptor**
+**URL Adaptor**
 
-The UrlAdaptor is the base adaptor that facilitates communication between remote data services and the UI component. It allows seamless data binding and interaction with custom API services or any remote service through URLs. The UrlAdaptor is particularly useful when a custom API service has unique logic for handling data and CRUD operations. 
+The UrlAdaptor provides the foundational mechanism for communication with remote data services via simple URLs. It enables data binding and CRUD operations by connecting to custom API services or any remote endpoint. This adaptor is optimal when using a custom API with unique logic for data handling and server-side persistence.
 
-For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor)
+See full configuration guidance in the [URL Adaptor Documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor).
 
-**Using OData v4 adaptor**
+**OData v4 Adaptor**
 
-The ODataV4Adaptor in the Syncfusion Angular Grid Component facilitates seamless integration with OData V4 services, allowing for efficient data fetching and manipulation. You can perform CRUD operations using the ODataV4Adaptor in your Syncfusion Angular Grid component.
+The ODataV4Adaptor enables rich integration with OData V4-compliant services, supporting advanced querying, sorting, filtering, and full CRUD operations. It streamlines communication between the Syncfusion Grid and OData V4 endpoints.
 
-For further details on configuration, refer to the [OData v4 adaptor Documentation]( https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor).
+See setup instructions and feature reference in the [OData v4 Adaptor Documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor).
 
-**Using Web API adaptor**
+**Web API Adaptor**
 
-The WebApiAdaptor extends the capabilities of the ODataAdaptor and is designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between the Syncfusion Grid and OData-based Web APIs, enabling efficient data retrieval and manipulation. 
+The WebApiAdaptor extends ODataAdaptor functionality to interact with OData-based Web APIs. It ensures efficient communication with modern web services that expose data via OData endpoints, supporting robust data retrieval and manipulation directly from the Syncfusion Grid.
 
-For further details on configuration, refer to the [Web API Adaptor documentation]( https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor).
+Learn more in the [Web API Adaptor documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor).
 
-**Using Remote Save adaptor**
+**Remote Save Adaptor**
 
-The RemoteSaveAdaptor in the Syncfusion Angular Grid component allows you to perform grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor lets you process grid actions—such as sorting, filtering, searching, and paging—mostly on the client, while delegating CRUD operations (create, update, delete) to the server for reliable data persistence. This reduces unnecessary server requests during data navigation and only transmits essential changes.
 
-For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/remote-save-adaptor)
+Detailed instructions are available in the [Remote Save Adaptor Documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/remote-save-adaptor).
 
 **WebMethodAdaptor**
 
-The WebMethodAdaptor facilitates data binding from remote services using web methods. This adaptor sends query parameters encapsulated within an object named value, allowing efficient communication between the client-side application and the server.
+The WebMethodAdaptor facilitates remote data binding using web methods. It transmits query parameters within an encapsulated object named `value`—allowing structured, secure communication between client-side components and server web methods.
 
-For further details on configuration, refer to the [Web API Adaptor documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-method-adaptor).
+For configuration, refer to [Web Method Adaptor documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-method-adaptor).
 
-**Using GraphQL adaptor**
+**GraphQL Adaptor**
 
-GraphQL is a powerful query language for APIs designed to provide a more efficient alternative to traditional REST APIs. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL offers a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
+GraphQL provides a modern, flexible approach for APIs, enabling clients to fetch only the data they need in a single call. The GraphQLAdaptor seamlessly connects the Syncfusion Grid to GraphQL servers, supporting efficient data querying and full CRUD operation flow by leveraging GraphQL's powerful query language.
 
-The GraphQLAdaptor simplifies the interaction between the Syncfusion Grid and GraphQL servers, allowing for efficient data retrieval with support for various operations such as CRUD (Create, Read, Update, Delete).
+Refer to the [GraphQL Adaptor documentation](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor) for setup details, advanced features, and examples.
 
-For further details on configuration, refer to the [GraphQL adaptor documentation]( https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL Server Data Binding in Syncfusion Angular Grid
-description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+description: Learn how to consume data from SQL Server using MySQL Client, bind it to the Syncfusion Angular Grid, and perform CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata
@@ -9,33 +9,33 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL Server data to Syncfusion Angular Grid
+# Connect MySQL Server Data to Syncfusion Angular Grid
 
-This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the Syncfusion Angular Grid.
+This section explains how to connect and retrieve data from a MySQL Server database using [MySQL.Data](https://www.nuget.org/packages/MySql.Data), and bind it to the Syncfusion Angular Grid component.
 
-MySQL Server database can be bound to the Grid in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a MySQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+A MySQL Server database can be bound to the Grid in several ways, including the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor, and remote data binding via various adaptors. Two approaches are demonstrated in this documentation, both supporting full data and CRUD handling using built-in or custom logic.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the MySQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) is the base adaptor for remote data service communication, enabling the remote binding of data to the Syncfusion Angular Grid by connecting to a pre-configured API service linked to MySQL Server. Other adaptors—such as [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor)—are also supported. The `UrlAdaptor` is particularly useful for scenarios involving a custom API service that controls data and CRUD logic, returning Grid-compatible responses with `result` and `count` properties.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion Angular Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) acts as a bridge between the Grid UI and the database. While you can bind the database directly to the Grid via the `dataSource` property, the CustomAdaptor is optimal for fully customizing data and CRUD logic. Each Grid action triggers a request to the CustomAdaptor, where operations like **searching**, **filtering**, **sorting**, **aggregation**, **paging**, and **grouping** can be performed using built-in or custom logic. All responses must use the `result` and `count` format for Grid integration. CRUD logic can be overridden as required.
 
-## Binding data from MySQL Server using an API service
+## Bind Data from MySQL Server Using an API Service
 
-This section describes step by step process how to retrieve data from a MySQL Server using an API service and bind it to the Syncfusion Angular Grid.
+This section presents a step-by-step process for retrieving data from a MySQL Server through an API service and binding it to the Syncfusion Angular Grid.
 
-### Creating an API service
+### Creating an API Service
 
-**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_MySQL**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**1.** Use Visual Studio to create a new Angular & ASP.NET Core project called **Grid_MySQL**. Refer to [this Visual Studio guide](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for details.
 
-**2.** To connect a MySQL Server database using the MySQL driver in your application, you need to install the [MySQL.Data](https://www.nuget.org/packages/MySql.Data) NuGet package. To add **MySQL.Data** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** Install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package in your backend using the NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution).
 
-**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Syncfusion Angular Grid.
+**3.** Add an API controller (e.g., GridController.cs) in the **Controllers** folder to facilitate data exchange with the Grid.
 
-**4.** In an API controller (aka, GridController), connect to MySQL Server. In the **GetOrderData()** method **MySqlConnection** helps to connect the MySQL Server database. Next, using **MySqlCommand** and **MySqlDataAdapter** you can process the desired MySQL query string and retrieve data from the database. The **Fill** method of the **DataAdapter** is used to populate the MySQL data into a **DataTable** as shown in the following code snippet.
+**4.** In the controller, connect to MySQL Server within a **GetOrderData()** method using **MySqlConnection**. Use **MySqlCommand** and **MySqlDataAdapter** to execute a SQL query and populate results into a **DataTable**; map the rows to a list of `Orders` objects for the Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -132,19 +132,19 @@ namespace Grid_MySQL.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
+**5.** Run the application; it will be hosted at a URL like `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from MySQL Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** The API endpoint providing data is at `https://localhost:xxxx/api/Grid`.
 
-![Hosted API URL](../images/Ms-Sql-data.png)
+![Screenshot showing the hosted API endpoint for MySQL Server data returned by the controller](../images/Ms-Sql-data.png)
 
-### Connecting Syncfusion Angular Grid to an API service
+### Connecting Syncfusion Angular Grid to the API Service
 
-To integrate the Syncfusion Angular Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To bind the Syncfusion Angular Grid to the API service in your Angular app:
 
-**Step 1: Install Syncfusion Package**
+**Step 1: Install Syncfusion Packages**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Open the terminal in the client folder and run:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -153,15 +153,14 @@ npm install @syncfusion/ej2-data --save
 
 **Step 2: Import Grid Module**
 
-In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+Import and register **GridModule** in your Angular application's main module.
 
-**Step 3: Adding CSS reference**
+**Step 3: Add CSS References**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular Grid:
+Include Syncfusion stylesheets in your `styles.css`:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
-
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
@@ -171,7 +170,6 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,7 +205,6 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-
 {% highlight ts tabtitle="app.component.html" %}
 
 <ejs-grid #grid [dataSource]='data' height="348px">
@@ -221,7 +218,6 @@ export class AppComponent {
 </ejs-grid>
 
 {% endhighlight %}
-
 {% highlight cs tabtitle="GridController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
@@ -316,9 +312,9 @@ namespace Grid_MySQL.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> **Note:** Replace `https://localhost:xxxx/api/Grid` with your actual API endpoint.
 
-**5.** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
+**5.** Run the app. It should be available at `https://localhost:xxxx`.
 
 > Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
   ```cs
@@ -1021,7 +1017,7 @@ When you run the application, the resultant Syncfusion Angular Grid will look li
 
 > Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MySQL%20database%20using%20UrlAdaptor/Grid_MySQL).
 
-## Binding data from MySQL Server using CustomAdaptor
+## Bind Data from MySQL Server Using CustomAdaptor
 
 This section describes step by step process how to retrieve data from a MySQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Grid.
 
@@ -2041,4 +2037,4 @@ public class CRUDModel<T> where T : class
 
 ![Syncfusion Angular Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MySQL%20database%20using%20CustomAdaptor/Grid_MySQL).
+> Reference a working sample project example at [this GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MySQL%20database%20using%20CustomAdaptor/Grid_MySQL).

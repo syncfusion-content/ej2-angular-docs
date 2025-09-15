@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use custom helper inside the loop with templates in Angular Grid component | Syncfusion
-description: Learn here all about Place cancel icon in search bar in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use custom helper functions with ng-template and ngFor to display dynamic templates, such as star ratings, in the Syncfusion Angular Grid component.
 platform: ej2-angular
 control: Use custom helper inside the loop with templates 
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Use custom helper inside the loop with templates in Angular Grid component
 
-The Syncfusion Angular Grid allows you to use custom helpers inside the loop with `ng-template` directive of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
+The Syncfusion Angular Grid permits the use of custom helper functions within `ng-template` directives inside column templates. This enables you to create complex, data-driven templates and integrate utility logic for formatting or display customization.
 
-To achieve this, you can use the `*ngFor` directive inside the template column to iterate through the array and the `ngClass` directive to define dynamic function.
+In the example below, the **Customer Rating** column uses a custom template with the `*ngFor` directive to iterate through an array and generate a collection of `<span>` elements representing stars. The `ngClass` directive is used in conjunction with a helper method (such as **isRatingGreater**) to dynamically set CSS classes for each star, supporting custom logic for interactive or conditionally styled UI.
 
-The **Customer Rating** column includes a custom template defined using `<ng-template>`. Inside this template, `*ngFor` directive is used to iterates through the **item** array and generates `<span>` tag, displayed as stars using the CSS below:
+CSS rules to render stars and apply highlighting:
 
 ```css
 .e-grid .rating .star:before {
@@ -35,7 +35,7 @@ The `ngClass` directive dynamically assigns classes based on the result of the *
 }
 ```
 
-This is demonstrated in the following example.
+The following example demonstrates using a helper inside a loop with a template column in the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

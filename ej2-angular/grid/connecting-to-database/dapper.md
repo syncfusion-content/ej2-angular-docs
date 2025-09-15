@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind SQL Server Data in Syncfusion Angular Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client,bind it to Syncfusion Grid, and perform CRUD operations.
+description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
@@ -9,41 +9,41 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL data to Syncfusion Angular Grid using Dapper
+# Connect SQL Server Data to Syncfusion Angular Grid Using Dapper
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion Angular Grid.
+This section explains how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient), and bind that data to the Syncfusion Angular Grid.
 
-Microsoft SQL Server database can be bound to Grid using **Dapper** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Dapper**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+A Microsoft SQL Server database can be bound to the Grid using **Dapper** in several ways, such as via the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptors, or remote data binding with supported adaptors. This documentation explores two approaches for connecting a Microsoft SQL Server database to the Grid using **Dapper**. Both methods enable handling and customization of data and CRUD operations.
 
-**Dapper**
+**Dapper Overview**
 
-Dapper is an open-source and micro **ORM** (object-relational mapping) product developed by the StackOverflow team. It is very lightweight and straightforward to use with a project. It supports **PostgreSQL**, **MySQL**, **SQL** Server, and other databases.
+Dapper is a lightweight, open-source micro ORM (object-relational mapper) developed by the StackOverflow team. It is simple to use and supports several databases, including **PostgreSQL**, **MySQL**, **SQL Server**, and others.
 
-Dapper expands upon the functionality of the [IDbConnection interface](https://learn.microsoft.com/en-us/dotnet/api/system.data.idbconnection?view=net-8.0), which offers a connection to a data source compatible with the .NET Framework. Additionally, Dapper facilitates writing queries. It simplifies the execution of SQL queries on a database and the mapping of results to C# domain classes.
+Dapper extends the functionality of the [IDbConnection interface](https://learn.microsoft.com/en-us/dotnet/api/system.data.idbconnection?view=net-8.0), offering seamless connection management to data sources compatible with .NET. It simplifies the execution of SQL queries and the mapping of results directly to C# classes.
 
-Dapper can be used to interact with a Microsoft SQL Server database in conjunction with **Microsoft.Data.SqlClient**.
+Dapper works efficiently with Microsoft SQL Server databases alongside **Microsoft.Data.SqlClient**.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor facilitating communication between remote data services and UI components. It enables remote data binding in the Syncfusion Angular Grid by linking to a pre-configured API service connected to the Microsoft SQL Server database. While the Grid supports various adaptors, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is optimal where a custom API service with specific logic is present. This approach allows customized handling of data and CRUD operations by returning data in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion Angular Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) acts as a bridge between the UI component and the backend database. While it is possible to bind the data source directly using the `dataSource` property, the `CustomAdaptor` approach is advantageous as it supports the customization of both data and CRUD operations to suit unique application requirements. For every Grid action, a corresponding request is sent to the `CustomAdaptor`. The Grid provides methods for **searching**, **filtering**, **sorting**, **aggregation**, **paging**, and **grouping**. Custom logic can also be applied, ensuring that the API response uses the `result` and `count` format. For CRUD operations, the predefined methods can be overridden for custom implementations. Further details are covered later in this document.
 
-## Binding data using Dapper from Microsoft SQL Server via an API service
+## Bind Data Using Dapper from Microsoft SQL Server via an API Service
 
-This section describes step by step process how to use Dapper to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
+This section provides step-by-step guidance on using Dapper to retrieve data from a Microsoft SQL Server database through an API service, then binding it to the Grid.
 
-### Creating an API service
+### Creating an API Service
 
-**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_Dapper**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**1.** Open Visual Studio and create a new Angular and ASP.NET Core project named **Grid_Dapper**. Refer to [the Visual Studio tutorial](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
-**2.** To use Dapper and access the Microsoft SQL Server database in our Angular application, need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and [Dapper](https://www.nuget.org/packages/Dapper) NuGet packages. To add **Microsoft.Data.SqlClient** and Dapper in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and [Dapper](https://www.nuget.org/packages/Dapper) NuGet packages to enable database operations in your ASP.NET Core backend. Use the NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) for installation.
 
-**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
+**3.** Create an API controller (e.g., GridController.cs) within the **Controllers** folder to facilitate data communication with the frontend Grid.
 
-**4.** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of `Orders` objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable** as shown in the following code snippet.
+**4.** In the controller, establish a SQL connection within the **GetOrderData()** method using **SqlConnection** (implementing **IDbConnection**). Compose your SQL query, and with Dapper, execute and map query results directly to `Orders` objects. This automation eliminates the need for manual mapping with **SqlDataAdapter** and **DataTable**, as demonstrated below:
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -72,20 +72,20 @@ namespace Grid_Dapper.Server.Controllers
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
     {
-      // Retrieve data from the data source (e.g., database).
+      // Retrieve data from the data source.
       IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-      // Get the total count of records.
+      // Get total record count.
       int totalRecordsCount = DataSource.Count();
 
-      // Return data based on the request.
+      // Return the response.
       return new { result = DataSource, count = totalRecordsCount };
     }
 
     /// <summary>
-    /// Retrieves the order data from the database.
+    /// Retrieves order data from the database.
     /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
+    /// <returns>A list of orders fetched from the database.</returns>
     [HttpGet]
     [Route("api/[controller]")]
     public List<Orders> GetOrderData()
@@ -117,19 +117,19 @@ namespace Grid_Dapper.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
+**5.** Launch the application; it will be hosted at a URL such as `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database using Dapper which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** The API endpoint providing data will be accessible at `https://localhost:xxxx/api/Grid`.
 
 ![Hosted API URL](../images/Ms-Sql-data.png)
 
-### Connecting Syncfusion Angular Grid to an API service
+### Connecting Syncfusion Angular Grid to an API Service
 
-To integrate Syncfusion Angular Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To bind the Syncfusion Angular Grid in your Angular application using Visual Studio, follow these steps:
 
-**Step 1: Install Syncfusion Package**
+**Step 1: Install Syncfusion Packages**
 
-Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
+Use your terminal in the client folder to install Syncfusion packages:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -138,15 +138,14 @@ npm install @syncfusion/ej2-data --save
 
 **Step 2: Import Grid Module**
 
-In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+Import **GridModule** in your `app.module.ts` from `@syncfusion/ej2-angular-grids`.
 
-**Step 3: Adding CSS reference**
+**Step 3: Include CSS References**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular component:
+Include required CSS files in `styles.css` to style the Syncfusion Components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
-
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
@@ -156,7 +155,6 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -168,7 +166,6 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-
 import { Component, ViewChild } from '@angular/core';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
@@ -185,16 +182,14 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
+      url: 'https://localhost:xxxx/api/grid', // Replace with your hosted API URL.
       adaptor: new UrlAdaptor()
     });
   }
 }
-
 {% endhighlight %}
 
 {% highlight html tabtitle="app.component.html" %}
-
 <ejs-grid #grid [dataSource]='data' height="348px">
   <e-columns>
     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
@@ -1908,4 +1903,4 @@ public class CRUDModel<T> where T : class
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20CustomAdaptor/Grid_Dapper_CustomAdaptor).
+> Find a sample project at [this GitHub repository](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20Dapper%20using%20CustomAdaptor/Grid_Dapper_CustomAdaptor).

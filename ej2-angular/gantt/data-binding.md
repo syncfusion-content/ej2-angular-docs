@@ -10,30 +10,35 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Gantt component
 
-Data binding in the Syncfusion Angular Gantt component facilitates the connection between the component and dynamic data sources. This allows you to efficiently manage and visualize projects using both local and remote data sources. Understanding and implementing data binding effectively ensures your Gantt chart accurately represents and interacts with project data.
+Data binding connects the Angular Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
-The Gantt uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. 
+Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 
-The following video explains the data binding in Gantt chart :
+The following video explains data binding in Gantt chart:
 
 {% youtube "https://www.youtube.com/watch?v=FTdp0r1pPK8" %}
 
-## Local data
+## Understanding data binding approaches
 
-To bind local data to Gantt, you can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
+The Gantt component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows to choose the most appropriate data source method based on project requirements and data architecture.
 
-In local data binding, the data source for rendering the Gantt component is retrieved from the same application locally.
+**Local Data Binding**: Local data binding retrieves project information from the same application environment. This approach provides faster rendering and reduced network dependency, making it ideal for applications with static or cached project data.
 
-The following are the two types of data binding possible with the Gantt component:
+**Remote Data Binding**: Remote data binding connects to external servers or databases to fetch project information dynamically. This method supports real-time data synchronization and scalable data management for enterprise-level applications.
 
-* Hierarchical data binding.
-* Self-referential data binding.
+The component supports two primary data structure types for organizing project hierarchies:
+• **Hierarchical data binding**: Uses nested object structures where parent tasks contain child arrays
+• **Self-referential data binding**: Uses flat data structures with ID fields to establish parent-child relationships
 
-### Hierarchical data binding
+## Local data binding implementation
 
-Hierarchical data binding is ideal for complex parent-child relationships. Each parent task can have multiple child tasks. These child tasks can be nested within their parent tasks, creating a hierarchical structure. Use the [`child`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#child) field to map these relationships in your data structure.
+Local data binding assigns JavaScript object arrays directly to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
 
-The following code example shows how to bind the hierarchical local data into the Gantt component.
+### Hierarchical data structure
+
+Hierarchical data binding organizes complex parent-child relationships through nested object structures. Each parent task contains multiple child tasks through the [`child`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#child) field mapping, creating natural tree structures that represent project hierarchies.
+
+This approach works well for data sources that maintain inherent parent-child relationships in their structure, such as JSON responses from APIs that provide nested task collections.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,9 +52,11 @@ The following code example shows how to bind the hierarchical local data into th
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/hierarchydata-cs1" %}
 
-### Self-referential data binding
+### Self-referential data structure
 
-Self-referential data binding (also known as flat data) uses ID fields to reference relationships between tasks. Map unique task identifiers to the [`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) and parent identifiers to the [`parentID`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#parentid)  field, to create a task hierarchy without nested objects.
+Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) field and parent identifiers to the [`parentID`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#parentid) field to establish task hierarchies without nested objects.
+
+This approach enables the component to reconstruct hierarchical tree structures from relational data, making it ideal for database-driven applications where parent-child relationships are maintained through foreign key references.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,11 +70,11 @@ Self-referential data binding (also known as flat data) uses ID fields to refere
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/flatdata-cs1" %}
 
-`Note:` When using hierarchical data, link child records to their parent using the `child` property. For self-referential data, make sure each task’s parent-child relationship is defined by mapping `id` and `parentID` fields correctly.
+**Data structure requirements**: When using hierarchical data, link child records to their parent using the `child` property mapping. For self-referential data, ensure each task's parent-child relationship is properly defined by mapping `id` and `parentID` fields correctly to enable proper hierarchy reconstruction.
 
-## Remote data
+## Remote data binding implementation
 
-To bind remote data to the Gantt component, assign service data as an instance of `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property.
+Remote data binding assigns service endpoints as `DataManager` instances to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. This enables real-time data synchronization with external servers, databases, or web services.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,18 +88,15 @@ To bind remote data to the Gantt component, assign service data as an instance o
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/remotedata-cs1" %}
 
-`Note:` DataManager can connect to various backend including RESTful services, OData, and others. Ensure the proper URL and adaptor are configured.
+**Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
 
-### URL Adaptor
+### URL Adaptor implementation
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+URL Adaptor enables communication with SQL databases through ADO.NET Entity Data Model, supporting CRUD operations through server method calls that return JSON formatted data. This adaptor facilitates seamless data exchange between the Gantt component and server-side data management systems.
 
-> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
-
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
+The URL Adaptor handles data requests by calling configured server endpoints and processing responses in standardized JSON formats. This approach supports comprehensive data operations including create, read, update, and delete functionalities.
 
 ```typescript
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
@@ -104,7 +108,6 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
     public data: DataManager;
     public taskSettings: object;
     public columns: object[];
@@ -129,8 +132,9 @@ export class AppComponent{
         ];
     }
 }
-
 ```
+
+**Server-side endpoint implementation**:
 
 ```typescript
 GanttDataSourceEntities db = new GanttDataSourceEntities();
@@ -140,29 +144,21 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
     var count = DataList.Count();
     return Json(new { result = DataList, count = count });
 }
-
 ```
 
-`Note:` UrlAdaptor facilitates communication with remote servers through RESTful endpoints, supporting CRUD operations.
+**Server integration**: URL Adaptor requires proper ADO.NET Entity Data Model configuration to establish database connections and entity mappings for seamless data operations.
 
-### Load-on-demand
+### Load-on-demand implementation
 
-To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields of Gantt Chart.
+Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields to enable this functionality.
 
-The <code>hasChildMapping</code> property maps the field name in the data source, which denotes whether the current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+**Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the component to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 
-When [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadChildOnDemand) is enabled, all the root nodes are rendered in a collapsed state at initial load. On expanding the root node, the child nodes will be loaded from the remote server.
+**Loading behavior**: When [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadChildOnDemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
 
-When <code>enableVirtualization</code> and <code>loadChildOnDemand</code> are enabled, only the current viewport root nodes are rendered in a collapsed state.
-
-When a root node is expanded, its child nodes are rendered and maintained in a collection locally, such that on consecutive expand/collapse actions on the root node, the child nodes are loaded locally instead of from the remote server.
-
-When the <code>loadChildOnDemand</code> is disabled, parent records are rendered in an expanded state.
-
-The following code example describes the behavior of the loadChildOnDemand feature of Gantt chart.
+**Virtualization integration**: Combined `enableVirtualization` and `loadChildOnDemand` settings render only current viewport root nodes in collapsed state, further optimizing memory usage and rendering performance for large datasets.
 
 ```typescript
-
 import { Component, OnInit } from '@angular/core';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { VirtualScrollService, SelectionService } from '@syncfusion/ej2-angular-gantt';
@@ -176,7 +172,6 @@ import { VirtualScrollService, SelectionService } from '@syncfusion/ej2-angular-
 providers: [VirtualScrollService, SelectionService]
 })
 export class AppComponent implements OnInit {
-
     public data?: object;
     public taskSettings?: object;
     public columns?: object[];
@@ -219,34 +214,28 @@ export class AppComponent implements OnInit {
         this.projectEndDate = new Date('01/06/2002');
     }
 }
-
 ```
 
-The following code example describes handling of Load on demand at server end.
-
-**1. Data model**
-
-Define your tree structure for Gantt, including required fields.
+**Server-side data model implementation**:
 
 ```typescript
 // TreeData.cs
 public class TreeData
 {
     [System.ComponentModel.DataAnnotations.Key]
-    public int taskId { get; set; }                 // Unique Task ID
+    public int taskId { get; set; }
     public string taskName { get; set; }
     public DateTime startDate { get; set; }
     public DateTime endDate { get; set; }
     public string duration { get; set; }
     public int progress { get; set; }
-    public int? parentID { get; set; }              // Null for root
+    public int? parentID { get; set; }
     public string predecessor { get; set; }
-    public bool? isParent { get; set; }             // Used for hasChildMapping
-    public bool? IsExpanded { get; set; }           // For tracking state
+    public bool? isParent { get; set; }
+    public bool? IsExpanded { get; set; }
 
     public static List<TreeData> tree = new List<TreeData>();
 
-    // Generates a sample tree on first use
     public static List<TreeData> GetTree()
     {
         if (tree.Count == 0)
@@ -297,12 +286,11 @@ public class TreeData
     }
 }
 ```
-**2. Core API logic (get endpoint for load-on-demand)**
 
-This endpoint serves initial root tasks and children on expand.
+**Server API endpoint for load-on-demand**:
 
 ```typescript
-// GanttController.cs (snippet)
+// GanttController.cs
 public object Get()
 {
     DataOperations operation = new DataOperations();
@@ -310,7 +298,6 @@ public object Get()
     if (TreeData.tree.Count == 0)
         TreeData.tree = TreeData.GetTree();
 
-    // Return children for a specific parent (on expand)
     if (queryString.Keys.Contains("$filter") && !queryString.Keys.Contains("$top"))
     {
         StringValues filter;
@@ -321,7 +308,6 @@ public object Get()
         return new { result = data1.ToList(), count = data1.Count() };
     }
 
-    // Update expansion/collapse state from Gantt
     StringValues expandVal;
     queryString.TryGetValue("$expand", out expandVal);
     if (queryString.Keys.Contains("$expand") && expandVal.Count > 0)
@@ -334,18 +320,13 @@ public object Get()
     }
 
     List<TreeData> data = TreeData.tree.ToList();
-
-    // (Optional: handle $select and $inlinecount for virtualization scenarios if needed)
-
-    // Return all root tasks by default
     data = data.Where(p => p.parentID == null).ToList();
     return new { result = data, count = data.Count };
 }
 ```
-**3. Recursive children handling (for virtualization/expand-collapse tree state)**
+**Recursive children handling**
 
 ```typescript
-// GanttController.cs (additional snippet)
 private void AppendChildren(List<TreeData> ChildRecords, TreeData ParentItem,
         Dictionary<string, List<TreeData>> GroupData, List<TreeData> data)
 {
@@ -368,15 +349,13 @@ private void AppendChildren(List<TreeData> ChildRecords, TreeData ParentItem,
     }
 }
 ```
-**4. CRUD endpoints (add, update, delete)**
 
-These are kept modular, but together they provide all expected Gantt CRUD support.
+**CRUD operations implementation**:
 
 ```typescript
 [HttpPost]
 public object Post([FromBody] TreeData[] value)
 {
-    // Insert new tasks
     for (var i = 0; i < value.Length; i++)
     {
         TreeData.tree.Insert(0, value[i]);
@@ -412,15 +391,14 @@ public object Put([FromBody] TreeData[] value)
 [Route("Orders/{id:int}")]
 public object Delete(int id)
 {
-    // Remove task by id
     TreeData.tree.Remove(TreeData.tree.FirstOrDefault(or => or.taskId == id));
     return Json(id);
 }
 ```
-**5. Utility methods for gantt hierarchical operations**
+
+**Hierarchical update utility methods**:
 
 ```typescript
-// Recursively update children when parent is updated
 private void UpdateDependentRecords(TreeData ParentItem)
 {
     var data = TreeData.tree.Where(p => p.parentID == ParentItem.taskId).ToList();
@@ -450,7 +428,6 @@ private void GetRootChildRecords(TreeData ParentItem)
     }
 }
 
-// Helper to calculate date difference in seconds
 public object GetTimeDifference(DateTime sdate, DateTime edate)
 {
     return new DateTime(edate.Year, edate.Month, edate.Day, edate.Hour, edate.Minute, edate.Second, DateTimeKind.Utc)
@@ -458,19 +435,16 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 }
 ```
 
-### Limitations
+**Load-on-demand limitations**:
+- Filtering, sorting, and searching operations are not supported in load-on-demand mode.
+- Only self-referential data types are supported with remote data binding.
+- Load-on-demand requires validated data source structures.
 
-* Filtering, sorting  and searching are not supported in load-on-demand.
-* Only Self-Referential type data is supported with remote data binding in Gantt Chart.
-* Load-on-demand supports only the validated data source
+### Advanced server communication
 
-
-### Sending additional parameters to the server
-
-We can pass additional parameters using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method of [`Query`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
+**Additional parameter transmission**: Pass extra parameters to server endpoints using the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method of the [`Query`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
 
 ```typescript
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-gantt';
 import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
@@ -482,7 +456,6 @@ import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
     public data?: DataManager;
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
@@ -490,6 +463,7 @@ export class AppComponent{
     public columns?: object[];
     @ViewChild('gantt', {static: true})
     public ganttObj?: GanttComponent;
+    
     public ngOnInit(): void {
         this.data = new DataManager({
             url: 'http://localhost:50039/Home/UrlDatasource',
@@ -505,33 +479,27 @@ export class AppComponent{
             dependency: 'Predecessor',
             child: 'SubTasks'
         };
-        this.columns = [
-            { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
-            { field: 'StartDate' },
-            { field: 'Duration' }
-        ];
         this.editSettings = {
             allowAdding: true,
             allowEditing: true,
             allowDeleting: true
         };
         this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
-        load: function(args) {
-            this.ganttObj.query = new Query().addParams('ej2Gantt', "test");
-            }
+    }
+    
+    load(args) {
+        this.ganttObj.query = new Query().addParams('ej2Gantt', "test");
     }
 }
-
 ```
 
-```typescript
+**Server-side parameter handling**:
 
+```typescript
 namespace URLAdaptor.Controllers
 {
     public class HomeController : Controller
     {
-        ...///
-        //inherit the class to show age as property of DataManager
         public class Test : DataManagerRequest
         {
             public string ej2Gantt { get; set; }
@@ -548,43 +516,25 @@ namespace URLAdaptor.Controllers
             return Json(new { result = DataList, count = count }, JsonRequestBehavior.AllowGet);
         }
 
-        ...///
-
         public class ICRUDModel<T> where T : class
         {
-
             public object key { get; set; }
-
             public T value { get; set; }
-
             public List<T> added { get; set; }
-
             public List<T> changed { get; set; }
-
             public List<T> deleted { get; set; }
-
             public IDictionary<string, object> @params { get; set; }
-
         }
-        ...///
     }
 }
-
 ```
 
-You can find the full sample from here.
+**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
-#### Handling HTTP error
-
-During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event.
-
-When binding data to the Gantt component, certain edge cases can cause errors or unexpected behavior. It is important to validate your data and handle these situations gracefully:
-
-- **Missing parentID:** Tasks without a valid `parentID` may not display in the correct hierarchy or could appear as root tasks. Validate all child tasks to ensure they correctly reference existing parent IDs.
-- **Duplicate task IDs:** Each task should have a unique `taskID`. If duplicate IDs are present, data operations such as editing or deleting may fail, or the Gantt may not render correctly. Ensure all IDs are unique before binding.
-- **Invalid date formats:** Task dates (such as `startDate` and `endDate`) must follow supported date formats (ISO or the one specified in your configuration). Invalid dates will lead to parsing errors or tasks not displaying as expected.
-
-The argument passed to the `actionFailure` event contains the error details returned from the server.
+**Data validation considerations**:
+- **Missing parentID validation**: Tasks without valid parentID references may display incorrectly or appear as root tasks unexpectedly
+- **Duplicate task ID prevention**: Ensure unique taskID values to prevent data operation failures or rendering issues
+- **Date format validation**: Task dates must follow supported formats (ISO or configured formats) to prevent parsing errors
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -598,9 +548,7 @@ The argument passed to the `actionFailure` event contains the error details retu
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/actionFailure-cs1" %}
 
-#### Binding with Fetch
-
-You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property to bind the data source to Gantt from external Fetch request. Fetching external data can be beneficial in scenarios where asynchronous data retrieval from servers is required. Utilize the `onSuccess` event of Fetch to handle asynchronous data loading effectively. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using `onSuccess` event of the Fetch.
+**Fetch API integration**: Use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -614,19 +562,17 @@ You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentatio
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/bindajax-cs1" %}
 
->Note: If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+**Fetch binding limitation**: Data sources bound through Fetch requests act as local data sources, preventing server-side CRUD operations. This approach suits read-only scenarios or applications with separate data modification workflows.
 
-## Split task
+## Split task implementation
 
-The `Split-task` feature allows you to split a task or interrupt the work during planned or unforeseen circumstances.
-We can split the task either in load time or dynamically, by defining the segments either in hierarchical or self-referential way.
+Split task functionality allows task interruption during planned or unforeseen circumstances, enabling work discontinuation and resumption scenarios. Tasks can be split during load time or dynamically through segment definitions in hierarchical or self-referential approaches.
 
-### Hierarchical
+### Hierarchical split task configuration
 
-To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.segments`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segments) property.
+Split tasks at load time using hierarchical structures by defining segment details in the data source and mapping through the [`taskFields.segments`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segments) property. Each task contains segment arrays specifying split periods and durations.
 
 ```typescript
-
 [
     {
         TaskID: 1, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50,
@@ -636,7 +582,6 @@ To split a task at load time in hierarchical way, we need to define the segment 
         ]
     }
 ]
-
 ```
 
 {% tabs %}
@@ -651,22 +596,20 @@ To split a task at load time in hierarchical way, we need to define the segment 
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/split-task-cs1" %}
 
-### Self-referential
+### Self-referential split task configuration
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.segmentId`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segmentId) property.
+Define segment details as flat data collections mapped through the [`segmentData`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#segmentData) property. The segment ID field connects segments to their parent tasks through the [`taskFields.segmentId`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segmentId) property mapping.
 
 ```typescript
-
-  taskFields: {
+taskFields: {
     segmentId: "segmentId"
-  },
-  segmentData: [
+},
+segmentData: [
     { segmentId: 1, StartDate: new Date("02/04/2019"), Duration: 2 },
     { segmentId: 1, StartDate: new Date("02/05/2019"), Duration: 5 },
     { segmentId: 4, StartDate: new Date("04/02/2019"), Duration: 2 },
     { segmentId: 4, StartDate: new Date("04/04/2019"), Duration: 2 }
-  ],
-
+],
 ```
 
 {% tabs %}
@@ -681,11 +624,11 @@ We can also define segment details as a flat data and this collection can be map
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/split-selfreferential-cs1" %}
 
->Note: Segment id field contains id of a task which should be split at load time.
+**Segment ID mapping**: The segment ID field contains references to tasks that should be split at load time, enabling the component to associate segment collections with their corresponding parent tasks.
 
-## Handling expandStateMapping
+## Expand state management
 
-To denote the expand status of a parent task in the Gantt chart, you can define the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property. This property maps to a field name in your data source indicating whether a parent task is expanded or collapsed. Utilizing the expandStateMapping ensures that parent tasks are rendered in their correct expanded or collapsed state based on the mapped values from the data source.
+Control parent task expand status in the Gantt chart by defining the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -697,15 +640,16 @@ To denote the expand status of a parent task in the Gantt chart, you can define 
 {% endhighlight %}
 {% endtabs %}
 
+**State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
-## Limitations
+## Data binding limitations
 
-* Hierarchical and self-referential data binding support: Gantt supports both hierarchical and self-referential data binding. However, it is not feasible to implement both simultaneously in a SQL database context.
+**Simultaneous binding restrictions**: Gantt supports either hierarchical or self-referential data binding approaches, but implementing both simultaneously in SQL database contexts creates architectural conflicts and rendering inconsistencies.
 
-* Complex JSON structures: Managing complex JSON structures in SQL tables is challenging. It requires intricate queries and algorithms to accurately update or delete tasks within nested levels.
+**Complex JSON management**: Complex JSON structures in SQL tables require intricate query algorithms for accurate task updates or deletions within nested hierarchical levels, potentially impacting performance and data integrity.
 
-* Rendering issues with dual mapping: If both child and parentID fields are mapped, rendering issues can occur. Specifically, a task ID from a hierarchy structure linked as a parent ID to another record may not render correctly.
+**Dual mapping rendering issues**: Mapping both child and parentID fields simultaneously can cause rendering conflicts, particularly when hierarchy structure task IDs link as parent IDs to other records, resulting in display inconsistencies.
 
-* Self-referential searching: The self-referential function searches only within self-referential data for particular IDs. It does not search within nested levels.
+**Self-referential search limitations**: Self-referential search functions operate only within self-referential data collections for specific IDs, without searching nested hierarchical levels, limiting search scope and effectiveness.
 
-* Prioritization of parentID field: When the parentID field is mapped, it takes precedence in rendering decisions. This can impact how the Gantt chart is displayed based on parent-child data.
+**Parent ID field precedence**: When parentID fields are mapped, they take rendering precedence over other relationship definitions, potentially affecting Gantt chart display based on parent-child data prioritization.

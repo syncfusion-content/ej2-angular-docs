@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row spanning in Angular Grid component | Syncfusion
+title: Row Spanning in Angular Grid Component | Syncfusion
 description: Learn here all about Row spanning in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row spanning 
@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row spanning in Angular Grid component
+# Row Spanning in Angular Grid Component
 
 The grid provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 
 To achieve this, You need to define the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event. The rowSpan attribute is used to specify the number of rows that the current cell should span.
 
-The `queryCellInfo` event is triggered for each cell in the grid, and allows you to customize the cells in the grid. By handling this event, you can set the `rowSpan` attribute for a cell to achieve row spanning.
+The `queryCellInfo` event triggers for each cell during grid rendering, providing opportunity to customize individual cells. Within this event handler, evaluate cell data and conditions to determine appropriate spanning behavior.
 
-In the following demo, **Davolio** cell is spanned to two rows in the **EmployeeName** column.Also Grid supports the spanning of rows and columns for same cells. **Lunch Break** cell is spanned to two rows and three columns in the **1:00** column.
+In the following example, the **Davolio** cell spans two rows in the **EmployeeName** column. Additionally, the Grid demonstrates simultaneous row and column spanning where the **Lunch Break** cell spans two rows and three columns in the **1:00** time slot:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,8 +30,8 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
   
 {% previewsample "page.domainurl/samples/grid/spanning-cs2" %}
 
-> To disable the spanning for particular grid page, you need to use **requestType** from `queryCellInfo` event argument.
-> The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
+> To disable spanning for a particular grid page, use the **requestType** property from the `queryCellInfo` event argument to identify the current operation.
+> The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally for complex layout requirements.
 
 ## Limitations
 

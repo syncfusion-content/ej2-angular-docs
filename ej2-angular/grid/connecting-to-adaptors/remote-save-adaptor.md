@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Binding and perform CRUD operation using RemoteSaveAdaptor
 
-The RemoteSaveAdaptor in Syncfusion Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor in the Syncfusion Angular Grid Component enables grid actions such as sorting, filtering, searching, and paging to be performed primarily on the client-side while handling CRUD (Create, Read, Update, Delete) operations—inserting, updating, and deleting—on the server-side for data persistence. This approach optimizes performance by minimizing unnecessary server interactions while ensuring data integrity.
 
-Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
+Ensure the server-side implementation in ASP.NET Core handles CRUD operations as shown in the following sections.
 
 **Server-Side Implementation**
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -236,11 +236,11 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
-**Connecting a Syncfusion Angular Grid Component to a service**
+**Connecting a Syncfusion Angular Grid Component to service**
 
-To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
-**1: Install Syncfusion Package**
+**1. Install Syncfusion Package:**
 
 Open your terminal in the project's root directory of client folder and install the required Syncfusion packages using npm:
 
@@ -249,11 +249,11 @@ npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-**2: Import Grid Module**
+**2. Import Grid Module:**
 
-Import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+Import the **GridModule** from the `@syncfusion/ej2-angular-grids` package and configure it in your application module:
 
-**Step 3: Adding CSS reference**
+**3: Adding CSS Reference:**
 
 Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
 
@@ -273,22 +273,22 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Syncfusion Component**
+**4. Adding Syncfusion Component:**
 
 In your component file (e.g., app.component.ts), import `DataManager` and `RemoteSaveAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance by following these steps:
 
-  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the  [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for your grid.
+  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for the grid.
 
-  * **Set DataSource Property:** Configure the `dataSource` property of your Syncfusion Angular Grid with a JSON object.
+  * **Set DataSource Property:** Configure the `dataSource` property of the Syncfusion Angular Grid with a JSON object.
 
-  * **CRUD Operations Mapping:** CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
+  * **CRUD Operations Mapping:** CRUD operations within the grid can be mapped to server-side controller actions using these properties:
       * **insertUrl**: Specifies the URL for inserting new data.
       * **removeUrl**: Specifies the URL for removing existing data.
       * **updateUrl**: Specifies the URL for updating existing data.
       * **crudUrl**: Specifies a single URL for all CRUD operations.
       * **batchUrl**: Specifies the URL for batch editing.
 
-In this example, data is fetched by the server using `httpClient` get method and assign it to the `dataSource` property.
+In this example, data is fetched from the server using the `HttpClient` get method and assigned to the `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -344,22 +344,23 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:xxxx/api/Orders with the actual URL of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace **https://localhost:xxxx/api/Orders** with the actual URL of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
 Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
 
 > Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
-  ```cs
-  [program.cs]
-  builder.Services.AddCors(options =>
+
+```cs
+[program.cs]
+builder.Services.AddCors(options =>
+{
+  options.AddDefaultPolicy(builder =>
   {
-    options.AddDefaultPolicy(builder =>
-    {
-      builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-    });
+    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
   });
-  var app = builder.Build();
-  app.UseCors();
-  ```
+});
+var app = builder.Build();
+app.UseCors();
+```
  
 > You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-angular-data-grid) repository.

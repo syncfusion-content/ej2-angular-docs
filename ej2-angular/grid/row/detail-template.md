@@ -8,11 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Detail template in Angular Grid component
+# Detail Template in Angular Grid Component
 
-The detail template in the Grid component allows you to display additional information about a specific row in the grid by expanding or collapsing detail content. This feature is useful when you need to show additional data or custom content that is specific to each row in the grid. You can use the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property to define an HTML template for the detail row. This template can include any HTML element or Angular component that you want to display as detail content.
+The detail template feature in the Syncfusion Angular Grid enables display of additional information for each row through expandable and collapsible detail content. This feature is essential for presenting hierarchical or related data, supplementary information, or custom content that extends beyond the main grid columns. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property allows definition of an HTML template or Angular component for the detail row content.
 
-Here's an example of using the `detailTemplate` property in the grid component:
+Common use cases for detail templates include:
+- Displaying nested data or related records
+- Showing detailed information that doesn't fit in regular columns
+- Embedding charts, forms, or other components within grid rows
+- Creating master-detail relationships between datasets
+
+The following example demonstrates basic detail template implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,13 +119,17 @@ export class AppComponent implements OnInit {
 
 ## Rendering custom component
 
-The Grid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the grid.
+The Grid component provides a powerful capability to render custom Angular components inside detail rows. This feature enables embedding of complex UI elements, such as nested grids, charts, forms, or any other Angular component within the expandable detail section.
 
-To render a custom component inside the detail row, you need to define a template using the[detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate)  property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound) event.This template can include any HTML element or Angular component that you want to display as the detail content.
+To render a custom component inside the detail row, define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound) event. The `detailDataBound` event is triggered after a detail row is bound to data and provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
 
-The `detailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
+**Implementation Steps:**
+1. Create a placeholder HTML element in the detail template
+2. Handle the `detailDataBound` event to initialize your custom component
+3. Pass the row data to the custom component for context-aware rendering
+4. Manage component lifecycle and cleanup when detail rows are collapsed
 
-For example, to render grid inside the detail row, place an HTML div element as the `detailTemplate` and render the DIV element as grid component in the `detailDataBound` event.
+For example, to render a grid inside the detail row, place an HTML div element as the `detailTemplate` and render the DIV element as a grid component in the `detailDataBound` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,11 +145,17 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 ## Expand by external button
 
-The Grid provides a feature that allows users to expand the detail row of a grid using an external button. By default, detail rows render in a collapsed state, but this feature enables users to view additional details associated with a particular row. 
+The Grid supports programmatic expansion of detail rows through external controls, providing enhanced user interaction flexibility. By default, detail rows are rendered in a collapsed state, but external buttons or other UI elements can trigger their expansion to reveal additional row-specific information.
 
-To achieve expanding the detail row of a grid using an external button, you need to invoke the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method provided by the **detailRowModule** object of the Syncfusion Grid library. This method will expand the detail row of a specific grid row.
+To expand a detail row using an external button, use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method provided by the **detailRowModule** object. This method accepts a row index parameter to specify which detail row to expand.
 
-Here is an example of how to use the `expand` method to expand a detail row:
+**Key Methods for Detail Row Control:**
+- `expand(index: number)`: Expands the detail row at the specified index
+- `collapse(index: number)`: Collapses the detail row at the specified index
+- `expandAll()`: Expands all detail rows in the grid
+- `collapseAll()`: Collapses all detail rows in the grid
+
+Here is an example implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -247,8 +263,11 @@ export class AppComponent implements OnInit {
     this.data = employeeData;
   }
   public btnClick(): void {
-    (this.grid as GridComponent).detailRowModule.expand((this.textbox as TextBoxComponent).value); 
-    // Expand the detail row of the specified row index
+    const rowIndex = parseInt((this.textbox as TextBoxComponent).value as string, 10);
+    if (!isNaN(rowIndex) && rowIndex >= 0) {
+      (this.grid as GridComponent).detailRowModule.expand(rowIndex); 
+      // Expand the detail row of the specified row index
+    }
   }
 }
 {% endraw %}
@@ -263,20 +282,24 @@ export class AppComponent implements OnInit {
 
 ## Customize detail template icon
 
-The detail template icon in the Syncfusion Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
+The detail template icon in the Syncfusion Grid controls the visual representation of expandable rows. By default, the grid displays a right arrow (▶) for collapsed rows and a down arrow (▼) for expanded rows. These icons can be customized by overriding the corresponding CSS classes to match your application's design requirements.
+
+**Default Icon CSS Classes:**
+- `.e-icon-grightarrow`: Controls the collapsed state icon
+- `.e-icon-gdownarrow`: Controls the expanded state icon
+
+To customize these icons, override the following CSS styles:
 
 ```css
-
 .e-grid .e-icon-grightarrow::before {
-    content: "\e655";
+    content: "\e655"; /* Custom icon code for collapsed state */
 }
 .e-grid .e-icon-gdownarrow::before {
-    content: "\e304";
+    content: "\e304"; /* Custom icon code for expanded state */
 }
-
 ```
 
-Here is an example of how to customize the detail template icon:
+The following example demonstrates icon customization implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -385,7 +408,7 @@ export interface DateFormat extends Window {
 
 ## Limitations
 
-Detail template is not supported with the following features:
+Detail template functionality has the following feature limitations:
 
 * Frozen rows and columns
 * Immutable mode
@@ -396,3 +419,5 @@ Detail template is not supported with the following features:
 * Column spanning
 * Lazy load grouping
 * State persistence
+
+These limitations are due to architectural constraints and rendering conflicts between the detail template system and the specified features.
