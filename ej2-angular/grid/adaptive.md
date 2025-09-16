@@ -14,7 +14,7 @@ The Grid component features a redesigned user interface optimized for smaller sc
 
 ## Render adaptive dialogs
 
-The Syncfusion Angular Grid provides adaptive dialog rendering to enhance user experience on devices with limited screen space. Enable this functionality using the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property, which renders filter, sort, and edit dialogs in full-screen mode on smaller screens.
+The Syncfusion Angular Grid provides adaptive dialog rendering to enhance the experience on devices with limited screen space. Enable this functionality using the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property, which renders filter, sort, and edit dialogs in full-screen mode on smaller screens.
 
 To activate the adaptive view, apply the `e-bigger` CSS class to the grid's parent element.
 

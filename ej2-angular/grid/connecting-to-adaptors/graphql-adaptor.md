@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting GraphQL Service with Angular Grid Component
 
-GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
+GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. GraphQL allows precise data fetching, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
 
 Syncfusion's Grid component seamlessly integrates with GraphQL servers using the [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) in the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). This specialized adaptor simplifies the interaction between the Syncfusion Grid and GraphQL servers, allowing efficient data retrieval with support for various operations like CRUD (Create, Read, Update, Delete), paging, sorting, and filtering.
 
@@ -19,18 +19,18 @@ This section describes a step-by-step process for retrieving data from GraphQL s
 
 ## Configure GraphQL Server
 
-To configure a GraphQL server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a GraphQL server with Syncfusion Angular Grid, follow these steps:
 
 **Step 1: Create Service for GraphQL**
 
-* Create a new folder named **GraphQLServer** specifically for your GraphQL server.
+* Create a new folder named **GraphQLServer** specifically for the GraphQL server.
 
-* Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
+* Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open the terminal and navigate to the server folder, then run:
 
   ```bash
   npm i graphpack
   ```
-* To utilize Syncfusion's **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
+* To utilize Syncfusion's **ej2-data** package, include it as a dependency in the project's **package.json** file. Here's the configuration:
   
   ```json
   {
@@ -50,7 +50,7 @@ To configure a GraphQL server with Syncfusion Angular Grid, you need to follow t
   }
   ```
 
-* Create a database file (src/db.js) to store your data.
+* Create a database file (src/db.js) to store the data.
 
   ```js
   export let OrderData = [
@@ -76,18 +76,18 @@ Ensure that the GraphQL server is properly configured and dependencies are insta
 
 **Step 2: Schema Definition for GraphQL Server**
 
-In the context of GraphQL, a schema defines the structure of the data that clients can query from the server. It serves as a contract between the client and the server, outlining the types of data available, the operations that can be performed, and how the data is related.
+In GraphQL, a schema defines the structure of data that clients can query from the server. The schema serves as a contract between the client and the server, outlining the types of data available, the operations that can be performed, and how the data is related.
 
 When integrating GraphQL with the Syncfusion Grid, defining a schema involves specifying the types of data the Grid expects to receive from the GraphQL server, along with any additional parameters for operations like sorting, filtering, and paging.
 
-Here's how you can define a schema for the Syncfusion Grid:
+Here's how to define a schema for the Syncfusion Grid:
 
 * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
    *  **result**: An array containing the data entities.
    *  **count**: The total number of records.
    *  **aggregates**: Contains total aggregate data(optional).
 
-  For example, if your Grid displays orders, you might define types for ReturnType and Order:
+  For example, if the Grid displays orders, define types for ReturnType and Order:
 
   ```
   type ReturnType {
@@ -106,7 +106,7 @@ Here's how you can define a schema for the Syncfusion Grid:
   }
   ```
 
-* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, you may define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `Datamanager`, you need to install packages from `@syncfusion/ej2-data`
+* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `Datamanager`, install packages from `@syncfusion/ej2-data`
 
   ```
   type Query {
@@ -114,7 +114,7 @@ Here's how you can define a schema for the Syncfusion Grid:
   }
   ```
 
-* **Define DataManager Input:** Define input types for `DataManager`, specifying parameters for sorting, filtering, paging, aggregates, etc., to be used in queries. The query parameters will be send in a string format which contains the below details.
+* **Define DataManager Input:** Define input types for `DataManager`, specifying parameters for sorting, filtering, paging, aggregates, etc., to be used in queries. The query parameters will be sent in a string format which contains the below details.
 
   | Parameters       | Description                                                                     |
   | ---------------- | ------------------------------------------------------------------------------- |
@@ -143,7 +143,7 @@ Here's how you can define a schema for the Syncfusion Grid:
   }
   ```
 
-Create a schema file (e.g., src/schema.graphql) in your GraphQL server project and write the schema definition there.
+Create a schema file (e.g., src/schema.graphql) in the GraphQL server project and write the schema definition there.
 
 ```
 #Grid Sort direction
@@ -201,7 +201,7 @@ type Query {
 
 **Step 3: Implement Resolvers**
 
-To handle GraphQL queries and fetch data from your database, you need to create resolver functions. These resolver functions will be responsible for processing GraphQL queries and returning the appropriate data. In order to return data based on the grid expected result and count, utilize `DataUtil` from `@syncfusion/ej2-data` package.
+To handle GraphQL queries and fetch data from the database, create resolver functions. These resolver functions process GraphQL queries and return the appropriate data. In order to return data based on the grid expected result and count, utilize `DataUtil` from `@syncfusion/ej2-data` package.
 
 Create a resolver file(**src/resolvers.js**) and implement the following code.
 
@@ -224,27 +224,27 @@ export default resolvers;
 
 **Step 4: Run GraphQL Server**
 
-Install required packages and start the GraphQL server by running the following commands in your terminal:
+Install required packages and start the GraphQL server by running the following commands in the terminal:
 
 ```bash
 npm install
 npm run dev
 ```
-The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents the port number).
+The server will be hosted at **http://localhost:xxxx/** (where xxxx represents the port number).
 
-## Connecting grid to an GraphQL service
+## Connecting grid to a GraphQL service
 
-To integrate GraphQL with the Syncfusion Grid in your Angular application, follow the below steps:
+To integrate GraphQL with the Syncfusion Grid in the Angular application, follow these steps:
 
-**Step 1: Create an Syncfusion Angular Grid:**
+**Step 1: Create a Syncfusion Angular Grid:**
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command.
 
 ```bash
 ng new GridClient
 ```
 
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+This command will prompt for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
 
 ```bash
 cd GridClient
@@ -252,7 +252,7 @@ cd GridClient
 
 **Step 2: Adding Syncfusion Grid Package**
 
-To use Syncfusion Grid component and Datamanager, install the packages using the below command.
+To use Syncfusion Grid component and Datamanager, install the packages using the command below.
 
 ```bash
 npm i @syncfusion/ej2-data 
@@ -301,9 +301,9 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
 
-**Step 4:Configure DataManager with GraphQLAdaptor:**
+**Step 5:Configure DataManager with GraphQLAdaptor:**
 
-Set up the `DataManager` with the `GraphQLAdaptor` to communicate with the GraphQL server. Then define the GraphQL query to specify the expected data structure and retrieval parameters:
+Set up the `DataManager` with the `GraphQLAdaptor` to communicate with the GraphQL server. Define the GraphQL query to specify the expected data structure and retrieval parameters:
 
 ```ts
 [app.component.ts]
@@ -314,10 +314,12 @@ import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data'>
+    <e-columns>
     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90 isPrimaryKey='true'></e-column>
     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
     <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=90></e-column>
     <e-column field='ShipCountry' headerText='Ship Country' width=120></e-column>
+    </e-columns>
     </ejs-grid>`
 })
 export class AppComponent implements OnInit {
@@ -347,22 +349,22 @@ export class AppComponent implements OnInit {
 }
 ```
 
-**Step 5: Run the Application:**
+**Step 6: Run the Application:**
 
-Once the GraphQL server is running, assign its URL (e.g., http://localhost:xxxx/) to the `dataManager.url` property of the `DataManager` in your Angular application.
+Once the GraphQL server is running, assign its URL (e.g., http://localhost:xxxx/) to the `dataManager.url` property of the `DataManager` in the Angular application.
 
 ```bash
 npm i
 ng serve
 ```
 
-By following these steps, you will successfully integrate GraphQL with the Syncfusion Grid in your Angular application. Ensure that the GraphQL server is running smoothly and is accessible at the specified URL.
+By following these steps, you will successfully integrate GraphQL with the Syncfusion Grid in the Angular application. Ensure that the GraphQL server is running smoothly and is accessible at the specified URL.
 
 You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-GraphQLAdaptor) link.
 
 ## Handling searching operation
 
-To handle search operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.search` parameters and executing the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
+To handle search operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.search` parameters and execute the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.search` parameters:
 
@@ -459,7 +461,7 @@ export class AppModule { }
 
 ## Handling filtering operation
 
-To handle filter operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.where` parameters and executing the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows you to efficiently filter through the grid's data and retrieve relevant information based on specified criteria.
+To handle filter operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.where` parameters and execute the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows efficient filtering through the grid's data and retrieval of relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.where` parameters:
 
@@ -541,7 +543,7 @@ export class AppComponent implements OnInit {
   }
 }
 {% endhighlight %}
-{% highlight js tabtitle="app.module.ts" %}
+{% highlight ts tabtitle="app.module.ts" %}
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // import the GridModule for the Grid component
@@ -561,7 +563,7 @@ export class AppModule { }
 
 ## Handling sorting operation
 
-To handle sort operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.sorted `parameters and executing the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
+To handle sort operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.sorted` parameters and execute the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
 
 In the image below, you can see the values of `datamanager.sorted` parameters:
 
@@ -661,7 +663,7 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To handle page operation in the Syncfusion Grid using the GraphQLAdaptor, by utilizing the `datamanager.skip` and `datamanager.take` parameters and executing the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
+To handle page operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.skip` and `datamanager.take` parameters and execute the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
 
 In the image below, you can see the value of `datamanager.skip` and `datamanager.take` parameters:
 
@@ -759,13 +761,13 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-Syncfusion Grid seamlessly integrates with GraphQL servers using the `GraphQLAdaptor`, enabling efficient CRUD (Create, Read, Update, Delete) operations on your data. The below steps explains how to perform CRUD actions using `GraphQLAdaptor` in Syncfusion Grid.
+Syncfusion Grid seamlessly integrates with GraphQL servers using the `GraphQLAdaptor`, enabling efficient CRUD (Create, Read, Update, Delete) operations on data. The steps below explain how to perform CRUD actions using `GraphQLAdaptor` in Syncfusion Grid.
 
 **Insert operation**
 
 Adding a new record to the database involves the following steps:
 
-* Define the **createOrder** mutation in your GraphQL schema to handle creating a new order. This mutation should accept an OrderInput object containing the new order details.
+* Define the **createOrder** mutation in the GraphQL schema to handle creating a new order. This mutation should accept an OrderInput object containing the new order details.
   
   ```
   [schema.graphql]
@@ -782,7 +784,7 @@ Adding a new record to the database involves the following steps:
   }
   ```
 
-* Implement the **createOrder** resolver function in your resolver file. This function should add the new order data to your data source and return the newly created order object.
+* Implement the **createOrder** resolver function in the resolver file. This function should add the new order data to the data source and return the newly created order object.
   
   ```js
   [resolver.js]
@@ -795,7 +797,7 @@ Adding a new record to the database involves the following steps:
     },
   }
   ```
-* Configure the **getMutation** function in your `GraphQLAdaptor` to return the appropriate GraphQL mutation query string based on the insert action. This query string should reference the **createOrder** mutation defined in your schema.
+* Configure the **getMutation** function in the `GraphQLAdaptor` to return the appropriate GraphQL mutation query string based on the insert action. This query string should reference the **createOrder** mutation defined in the schema.
   
   ```ts
   [app.component.ts]
@@ -815,7 +817,7 @@ Adding a new record to the database involves the following steps:
 
 Updating an existing record in the database involves the following steps:
 
-* Define the **updateOrder** mutation in your GraphQL schema to handle updating an order. This mutation should accept three arguments:
+* Define the **updateOrder** mutation in the GraphQL schema to handle updating an order. This mutation should accept three arguments:
   
   * **key**: The unique identifier of the order to be updated.
   * **keyColumn**: The name of the column containing the unique identifier.
@@ -843,7 +845,7 @@ Updating an existing record in the database involves the following steps:
   }
   ```
 
-* Implement the **updateOrder** resolver function in your resolver file. This function should find the order based on the provided key and keyColumn, update its properties with the values from the value argument, and return the updated order object.
+* Implement the **updateOrder** resolver function in the resolver file. This function should find the order based on the provided key and keyColumn, update its properties with the values from the value argument, and return the updated order object.
   
   ```js
   [resolver.js]
@@ -860,7 +862,7 @@ Updating an existing record in the database involves the following steps:
     },
   }
   ```
-* Configure the **getMutation** function in your GraphQLAdaptor to return the appropriate GraphQL mutation query string based on the update action. This query string should reference the **updateOrder** mutation defined in your schema.
+* Configure the **getMutation** function in the GraphQLAdaptor to return the appropriate GraphQL mutation query string based on the update action. This query string should reference the **updateOrder** mutation defined in the schema.
   
   ```ts
   [app.component.ts]
@@ -880,7 +882,7 @@ Updating an existing record in the database involves the following steps:
 
 Deleting a record from the database involves the following steps:
 
-* Define the **deleteOrder** mutation in your GraphQL schema to handle deleting an order. This mutation should accept three arguments similar to the updateOrder mutation.
+* Define the **deleteOrder** mutation in the GraphQL schema to handle deleting an order. This mutation should accept three arguments similar to the updateOrder mutation.
   
   ```
   [schema.graphql]
@@ -904,7 +906,7 @@ Deleting a record from the database involves the following steps:
   }
   ```
 
-* Implement the **deleteOrder** resolver function in your resolver file. This function should find the order based on the provided key and keyColumn, remove it from your data source, and return the deleted order object.
+* Implement the **deleteOrder** resolver function in the resolver file. This function should find the order based on the provided key and keyColumn, remove it from the data source, and return the deleted order object.
 
   ```js
   [resolver.js]
@@ -917,8 +919,8 @@ Deleting a record from the database involves the following steps:
     }
   }
   ```
-* Configure the **getMutation** function in your GraphQL adaptor to return the appropriate GraphQL mutation query string based on the delete action. This query string should reference the **deleteOrder** mutation defined in your schema.
-.
+* Configure the **getMutation** function in the GraphQL adaptor to return the appropriate GraphQL mutation query string based on the delete action. This query string should reference the **deleteOrder** mutation defined in the schema.
+
   ```ts
   [app.component.ts]
   // mutation for performing delete operation
@@ -933,7 +935,7 @@ Deleting a record from the database involves the following steps:
   
   ```
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true **for a specific grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
 
 {% tabs %}
 {% highlight js tabtitle="resolver.js" %}

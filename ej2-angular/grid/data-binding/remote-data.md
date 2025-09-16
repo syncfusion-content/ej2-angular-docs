@@ -16,7 +16,7 @@ This approach leverages Angular's powerful Observable pattern for data retrieval
 
 ## Binding observable data using async pipe
 
-[Observables](https://angular.io/guide/observables) represent a fundamental reactive programming concept widely adopted throughout the Angular framework. An Observable creates a stream of data or events that can be observed over time, providing an elegant solution for handling asynchronous operations including user input processing, HTTP requests, and event management.
+[Observables](https://angular.io/guide/observables) represent a fundamental reactive programming concept widely adopted throughout the Angular framework. An Observable creates a stream of data or events that can be observed over time, providing an elegant solution for handling asynchronous operations including input event processing, HTTP requests, and event management.
 
 The Syncfusion Angular Grid seamlessly integrates with [Observables](https://angular.io/guide/observables) through the async pipe, enabling effortless binding of grid data. The [AsyncPipe](https://angular.io/api/common/AsyncPipe) automatically subscribes to observables, extracting the latest emitted value with the required `result` and `count` properties structure that aligns perfectly with the grid's data expectations.
 
@@ -30,7 +30,7 @@ To implement the `dataStateChange` event effectively:
 
 1. **Subscribe to the event:** In your component, subscribe to the `dataStateChange` event using the appropriate event handler function. This function executes whenever you interact with the grid.
 
-2. **Handle data state:** Inside the event handler function, access the event arguments to determine user actions and intentions. The action property indicates the type of operation performed (paging, sorting, grouping).
+2. **Handle data state:** Inside the event handler function, access the event arguments to determine performed operations and their parameters. The action property indicates the type of operation performed (paging, sorting, grouping).
 
 > The `dataStateChange` event will not trigger during initial rendering. To display records on grid initialization, perform the operation in the `ngOnInit` lifecycle hook.
 

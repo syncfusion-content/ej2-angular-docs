@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ngx translate pipe for header text in Angular Grid component | Syncfusion
-description: Learn here all about Ngx translate pipe for header text in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use ngx-translate pipe to localize the header text of columns in the Syncfusion Angular Grid component, including setup and implementation guidance.
 platform: ej2-angular
 control: Ngx translate pipe for header text 
 documentation: ug
@@ -10,12 +10,11 @@ domainurl: ##DomainURL##
 
 # Ngx translate pipe for header text in Angular Grid component
 
-You can use the ngx-translate to translate the headerText of grid’s column. This can be achieved by using the translate pipe for **headerText** property.
+The Syncfusion Angular Grid supports column header text localization using the ngx-translate library. You can dynamically translate the `headerText` of grid columns by applying the `translate` pipe to the `headerText` property in your column definitions.
 
-This is demonstrated in the below sample code where translate is applied to headerText property of the grid columns,
+The example below demonstrates how to apply ngx-translate to the grid column headers. Use the translate pipe within the template to bind the localized values:
 
 ```typescript
-
 import { Component } from '@angular/core';  
 import {TranslateService} from '@ngx-translate/core';  
   
@@ -28,7 +27,6 @@ import {TranslateService} from '@ngx-translate/core';
                     </e-columns>  
                 </ejs-grid>`
 })
-
 export class AppComponent implements OnInit {
 
     constructor(translate: TranslateService) {
@@ -46,21 +44,19 @@ export class AppComponent implements OnInit {
       OrderID: 10249, CustomerID: 'TOMSP', OrderDate: new Date(836505e6),
     }];
 }
-
 ```
 
-Import the required modules in app.module.ts file along with translate loader function,
+Add the required module imports to your `app.module.ts` and configure the translate loader:
 
 ```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { GridAllModule } from '@syncfusion/ej2-angular-grids';
 
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {GridAllModule} from '@syncfusion/ej2-angular-grids';
-
-import {AppComponent} from './app.component';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { AppComponent } from './app.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -85,29 +81,24 @@ export function createTranslateLoader(http: HttpClient) {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 ```
 
-Then add the json file with the translation text in the required languages,
+Create JSON translation files for the required languages (for example, `en.json` and `fr.json`) and store them in the specified assets path:
 
 ```json
 en.json
-
 {  
     "Value": "Order ID!",
     "Id": "Customer ID"
 }
-
 ```
 
 ```json
 fr.json
-
 {  
     "Value": "numéro de commande!",
     "Id": "N ° de client"
 }
-
 ```
 
 > [Angular 5 sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/translate_header_text-841014797)

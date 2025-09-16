@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Enable disable grid and its actions in Angular Grid component | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Enable or disable grid and its actions in Angular Grid component | Syncfusion
+description: Learn how to enable or disable the Syncfusion Angular Grid and its actions through CSS and event handling for improved user interaction control.
 platform: ej2-angular
 control: Enable disable grid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable grid and its actions in Angular Grid component
+# Enable or disable grid and its actions in Angular Grid component
 
-You can enable/disable the Grid and its actions by applying/removing corresponding CSS styles.
+You can enable or disable the Syncfusion Angular Grid and its actions by applying or removing appropriate CSS styles on user interaction.
 
-To enable/disable the grid and its actions, follow the given steps:
+To control the enabled or disabled state of the grid and its actions, follow these steps:
 
-**Step 1**: Create CSS class with custom style to override the default style of Grid.
+**Step 1:** Define a CSS class to visually and functionally disable the Grid.
 
 ```css
     .disablegrid {
@@ -27,7 +27,7 @@ To enable/disable the grid and its actions, follow the given steps:
 
 ```
 
-**Step 2**: Add/Remove the CSS class to the Grid in the click event handler of Button.
+**Step 2:** Add or remove the CSS class on the Grid's parent element within the button click event handler.
 
 ```typescript
     public btnClick():void {
@@ -43,7 +43,7 @@ To enable/disable the grid and its actions, follow the given steps:
 
 ```
 
-In the below demo, the button click will enable/disable the Grid and its actions.
+In the following example, clicking the button toggles enabling or disabling the Grid and all its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

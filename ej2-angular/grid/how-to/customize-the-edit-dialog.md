@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the edit dialog in Angular Grid component | Syncfusion
-description: Learn here all about Customize the edit dialog in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to customize the edit dialog appearance and localization in the Syncfusion Angular Grid component using actionComplete and dialog properties.
 platform: ej2-angular
 control: Customize the edit dialog 
 documentation: ug
@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Customize the edit dialog in Angular Grid component
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+The edit dialog in the Syncfusion Angular Grid can be customized for appearance and behavior using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. Use the **requestType** property within this event to determine if the dialog is opening for **beginEdit** or **add** operations.
 
-In the following example, the dialog's properties like header text, showCloseIcon, height have been changed while editing and adding the records.
+In the example below, dialog properties such as header text, `showCloseIcon`, and height are customized for both editing and adding records.
 
-Also the locale text for the **Save** and **Cancel** buttons has been changed by overriding the default locale strings.
-
-You can refer the Grid [`Default text`](../global-local/) list for more localization.
+Additionally, localization for the **Save** and **Cancel** buttons is achieved by overriding default locale strings. For a full list of adjustable Grid text, see the Grid [`Default text`](../global-local/) documentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

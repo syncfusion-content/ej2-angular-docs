@@ -10,20 +10,15 @@ domainurl: ##DomainURL##
 
 # Excel export options in Angular Grid component
 
-The Syncfusion Angular Grid component allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
+The Syncfusion Angular Grid component provides comprehensive options for customizing Excel and CSV export functionality. This flexibility allows precise control over the exported content and layout to fit your reporting needs.
 
-The Excel or CSV export action can be customized based on your requirements using the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property. By using the `excelExportProperties` property, you can export specific columns, exclude or include hidden column, export with custom data source, enable filter in the exported excel or CSV file, change the file name, add header and footer, multiple grid exporting, customize the data based on query, define delimiter for CSV exporting and set the theme.
+The [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property lets you control which columns to export, include or exclude hidden columns, use a custom data source, enable filters, define file names, add headers and footers, export multiple grids, customize exported data, configure CSV delimiters, and apply specific themes.
 
 ## Export current page records
 
-Exporting the current page in Syncfusion Angular Grid to a Excel or CSV document provides the ability to export the currently displayed page records. This feature allows for generating Excel or CSV documents that specifically include the content from the current page of the grid. 
+Exporting the current page exports just the visible records to an Excel or CSV file. Choose between exporting the **CurrentPage** (only current grid page) or **AllPages** (all records) using the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#exporttype) property.
 
-To export the current page of the grid to an Excel or CSV document, you need to specify the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#exporttype) property. This property allows you to define which records you want to export. You can choose between two options:
-
-1. **CurrentPage**: Exports only the records on the current grid page.
-2. **AllPages**: Exports all the records from the grid.
-
-The following example demonstrates how to export current page to a Excel document when a toolbar item is clicked.
+Example of exporting the current page when a toolbar item is clicked:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,23 +32,18 @@ The following example demonstrates how to export current page to a Excel documen
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-cs4" %}
 
-## Export the selected records 
+## Export selected records
 
-Exporting only the selected records from the Grid allows generating Excel or CSV document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted Excel or CSV exports.
+Export selected records to Excel or CSV for a focused set of data. Assign the selected records to [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/ExcelExportProperties/#datasource) in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
 
-To export only the selected records by utilizing the `exportProperties.dataSource` property in the `toolbarClick` event.
+**Steps:**
 
-To export the selected records from the grid to a Excel or CSV file, you can follow these steps:
+1. Handle the `toolbarClick` event.
+2. Retrieve selected records using [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords).
+3. Assign selected data to `exportProperties.dataSource`.
+4. Trigger export with [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#csvexport).
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the Grid.
-
-2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method.
-
-3. Assign the selected data to the [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/ExcelExportProperties/#datasource) property.
-
-4. Trigger the export operation using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#csvexport)  method.
-
-The following example demonstrates how to export the selected records to a Excel document when a toolbar item is clicked.
+Example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,11 +59,9 @@ The following example demonstrates how to export the selected records to a Excel
 
 ## Exporting grouped records
 
-The Grid component provides an outline option for grouped records, allowing you to hide detailed data for better viewing in the exported document. This feature is particularly useful when you need to share data that is grouped based on specific columns and maintain the grouping structure in the exported file.
+The Grid can export grouped records with outline support, hiding detail data by default in the export. Enable grouping with [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) and configure group columns with [groupSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns).
 
-To achieve this functionality, you need to enable grouping in the Grid by setting the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to **true** . Additionally, you need define the [groupSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns) property to specify the columns by which you want to group the data.
-
-The following example demonstrates how to export grouped records to an Excel document when a toolbar item is clicked.:
+Example for exporting grouped records:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,11 +77,9 @@ The following example demonstrates how to export grouped records to an Excel doc
 
 ## Export with hidden columns
 
-Exporting hidden columns in the Syncfusion Angular Grid allows you to include hidden columns in the exported Excel document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
+To include hidden columns in your export, set [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#includehiddencolumn) to **true** in [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
-To export hidden columns of the grid to a Excel or CSV file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#includehiddencolumn) property as **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property.
-
-The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/angular/documentation/api/switch/#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component.
+Example: Export the **ShipCity** column (hidden in UI) to Excel. This can be toggled using the [checked](https://ej2.syncfusion.com/angular/documentation/api/switch/#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,19 +95,9 @@ The following example demonstrates how to export hidden columns to a Excel file.
 
 ## Show or hide columns while exporting
 
-The Grid component provides the functionality to show or hide columns dynamically during the export process. This feature allows you to selectively display or hide specific columns based on your requirements.
+Show or hide columns dynamically during export by adjusting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event, then restoring them in [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete).
 
-To show or hide columns based on user interaction during the export process, you can follow these steps:
-
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the Grid component.
-
-2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property of the column to **true** or **false**.
-
-3. Export the grid to Excel.
-
-4. Handle the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event to restore the column visibility to its original state.
-
-In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
+Example: The **CustomerID** column is hidden in the grid but shown in the export; **ShipCity** is hidden in export.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,13 +139,11 @@ In the following example, the **ShipName** is initially a hidden column in the S
   
 {% previewsample "page.domainurl/samples/grid/exportexcel-show-hide" %}
 
-## Enable filtering in the exported excel file
+## Enable filtering in the exported Excel file
 
-The Grid allows you to export data to Excel or CSV with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel or CSV.
+Enable filters in exported Excel or CSV files by setting [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) to **true** in [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). Grid filtering must also be enabled with [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering).
 
-To enable this feature, you should set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. Additionally, you need to set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to **true** in the grid configuration. This property enables filtering in the grid.
-
-The following example demonstrates how to export data with filter options to an Excel document when a toolbar item is clicked:
+Example for exporting data with filter options:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,12 +179,9 @@ The following example demonstrates how to define a file name using `ExcelExportP
 
 ## Export the master detail grid
 
-The export functionality within the master-detail grid feature of the Grid enables you to export not only the master grid but also the associated detail grid onto a single Excel sheet. This feature proves to be particularly valuable when dealing with hierarchical data represented by two grids in the exported Excel file, allowing for comprehensive analysis and management.
-
-To export the master-detail grid on the same sheet, you need to set the [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExportType/) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object to **AppendToSheet**. It also has an option to provide blank space between the grids. This blank space can be defined by using [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport/#blankrows) property.
+Export both master and detail grids to a single worksheet with [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExportType/) set to **AppendToSheet**. Set [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport/#blankrows) for spacing between grids.
 
 The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected) event dynamically updates the detail grid based on the selected master record:
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/export-masterdetail-grid/src/app.component.ts %}
@@ -249,7 +220,7 @@ The following example demonstrates how to customize the grid columns when export
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-column" %}
 
-## Font and color customization 
+## Font and color customization
 
 The Excel export feature in Grid provides an option to include themes for the exported Excel document. This feature is particularly useful when you want to maintain a consistent and visually appealing style for the exported data in Excel.
 
@@ -275,15 +246,11 @@ In the following example, apply font styling to the caption, header, and record 
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-cs3" %}
 
->By default, material theme is applied to exported excel document.
-
 ## Rotate a header text in the exported grid
 
-The Grid provides support to customize the column header styles, such as changing the text orientation, font color, and more, in the exported Excel file. This feature is useful when you want to enhance the visual appearance of the exported data and provide a unique representation of the Grid in the Excel document.
+Rotate header text in the exported Excel file by using the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelheaderquerycellinfo) event and setting the `rotation` property on the style argument.
 
-To achieve this requirement, use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, you can easily rotate the header text to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to your specific requirements.
-
-In the following demo, using the `rotation` property of the style argument in the `excelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
+Example: Rotate column headers as needed in the exported document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -299,11 +266,9 @@ In the following demo, using the `rotation` property of the style argument in th
 
 ## Conditional cell formatting
 
-When exporting data from the Grid, you have an option to conditionally format the cells in the exported Excel document. This allows you to customize the appearance of specific cells based on their values or other criteria.
+Use the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/) event to apply custom formatting (such as background color) to cells in the exported Excel file based on value or logic.
 
-To achieve this feature, you need to use the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/) event of the Grid component. This event is triggered for each cell during the export process to Excel. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
-
-The following example demonstrate how to customize the background color of the Freight column in the exported Excel document using the **args.cell** and **backgroundColor** properties of the `excelQueryCellInfo` event.
+Example: Apply background color to the Freight column conditionally during Excel export:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -339,9 +304,9 @@ The following example demonstrates how to add a header and footer to the exporte
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) method. The grid returns the promise of a blob in the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event.
+Export data as a Blob by setting the `isBlob` parameter to **true** in the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) method. Use the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event to retrieve the blob data for further processing.
 
-The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `excelExportComplete` event.
+Example for exporting and handling exported blob data:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

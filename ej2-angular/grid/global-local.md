@@ -1,54 +1,54 @@
 ---
 layout: post
-title: Global local in Angular Grid component | Syncfusion
-description: Learn here all about Global local in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Globalization and Localization in Angular Grid component | Syncfusion
+description: Learn here all about globalization and localization in the Syncfusion Angular Grid component of Syncfusion Essential JS 2, including full support for multilingual and region-specific formats.
 platform: ej2-angular
 control: Global local 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in Angular Grid component
+# Globalization and Localization in Angular Grid Component
 
-The Syncfusion Angular Grid component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
+The Syncfusion Angular Grid component offers comprehensive globalization and localization support to enhance accessibility and usability for users from various regions and language backgrounds. These features allow data to be displayed in preferred languages and formats, creating an inclusive user experience.
 
 ## Localization
 
 The Syncfusion Angular Grid provides a built-in [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
-This can be achieved by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property and translation object.
+Localization can be achieved by setting the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property and providing a translation object.
 
-The following list of properties and its values are used in the grid.
+Below is a list of locale keywords and their corresponding example texts as used in the Grid.
 
 **Data Rendering**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
 EmptyRecord | No records to display | ![Locale empty record](images/locale-empty-record.png)
-EmptyDataSourceError | DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid
+EmptyDataSourceError | DataSource must not be empty at initial load since columns are generated from dataSource in auto-generated columns
 
 **Columns**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-True | true | ![Locale true](images/locale-true.png)
-False | false | ![Locale false](images/locale-false.png)
-ColumnHeader | column header  | ![Locale column header](images/locale-column-header.png)
-TemplateCell | is template cell | ![Locale template cell](images/locale-templatecell.png)
-ClipBoard | clipboard | ![Locale clipboard](images/locale-clipboard.png)
-CheckBoxLabel | checkbox | ![Locale checkbox label](images/locale-checkbox-label.png)
+True | true | ![Grid with True value](images/locale-true.png)
+False | false | ![Grid with False value](images/locale-false.png)
+ColumnHeader | column header  | ![Grid column header](images/locale-column-header.png)
+TemplateCell | is template cell | ![Grid template cell](images/locale-templatecell.png)
+ClipBoard | clipboard | ![Grid clipboard](images/locale-clipboard.png)
+CheckBoxLabel | checkbox | ![Grid checkbox label](images/locale-checkbox-label.png)
 
 **ColumnChooser**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-Columnchooser | Columns | ![Locale columnchooser](images/locale-column-chooser.png)
+Columnchooser | Columns | ![Locale column chooser](images/locale-column-chooser.png)
 ChooseColumns | Choose Column | ![Locale choose columns](images/locale-choose-columns.png)
-ColumnChooserDialogARIA | Column chooser | ![Locale columnchooser dialog ARIA](images/locale-columnchooser-dialog-ARIA.png)
+ColumnChooserDialogARIA | Column chooser | ![Locale column chooser dialog ARIA](images/locale-columnchooser-dialog-ARIA.png)
 
 **Editing**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
 Add | Add | ![Locale add](images/locale-add.png)
 Edit| Edit | ![Locale edit](images/locale-edit.png)
@@ -68,33 +68,33 @@ BatchSaveLostChanges | Unsaved changes will be lost. Are you sure you want to co
 ConfirmDelete | Are you sure you want to Delete Record? | ![Locale confirm delete](images/locale-confirm-delete.png)
 CancelEdit | Are you sure you want to Cancel the changes? | ![Locale cancel edit](images/locale-cancel-edit.png)
 DialogEditARIA | Edit dialog | 
-CommandColumnAria | is Command column column header  | ![Locale command column aria](images/locale-command-column-aria.png)
+CommandColumnAria | Command column header  | ![Grid command column header](images/locale-command-column-aria.png)
 DialogEdit | Dialog edit | ![Locale dialog edit](images/locale-dialog-edit.png)
 
 **Grouping**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-GroupDropArea | Drag a column header here to group its column | ![Locale group drop area](images/locale-group-drop-area.png)
-UnGroup | Click here to ungroup | ![Locale un group](images/locale-un-group.png)
+GroupDropArea | Drag a column header here to group by that column | ![Group drop area](images/locale-group-drop-area.png)
+UnGroup | Click here to ungroup | ![Locale ungroup](images/locale-un-group.png)
 GroupDisable | Grouping is disabled for this column | ![Locale group disable](images/locale-group-disable.png)
 Item | item | ![Locale Item](images/locale-item.png)
 Items | items | ![Locale Items](images/locale-items.png)
 UnGroupButton | Click here to ungroup |
-GroupDescription | Press Ctrl space to group | ![Locale group description](images/locale-group-description.png)
-GroupButton | Group button | ![Locale group button](images/locale-group-button.png)
-UnGroupAria | ungroup button | ![Locale ungroup aria](images/locale-ungroup-aria.png)
-GroupSeperator | Separator for the grouped columns | ![Locale group seperator](images/locale-group-seperator.png)
-UnGroupIcon | ungroup the grouped column  | ![Locale ungroup icon](images/locale-ungroup-icon.png)
-GroupedSortIcon | sort the grouped column  | ![Locale grouped sort icon](images/locale-grouped-sort-icon.png)
-GroupedDrag | Drag the grouped column | ![Locale grouped drag](images/locale-grouped-drag.png)
-GroupCaption | is groupcaption cell | ![Locale group caption](images/locale-group-caption.png)
-Expanded | Expanded | ![Locale expanded](images/locale-expanded.png)
-Collapsed | Collapsed | ![Locale collapsed](images/locale-collapsed.png)
+GroupDescription | Press Ctrl+Space to group | ![Locale Group description](images/locale-group-description.png)
+GroupButton | Group button | ![Locale Group button](images/locale-group-button.png)
+UnGroupAria | Ungroup button | ![Locale Ungroup ARIA label](images/locale-ungroup-aria.png)
+GroupSeperator | Separator for the grouped columns | ![Locale Group separator](images/locale-group-seperator.png)
+UnGroupIcon | Ungroup the grouped column  | ![Locale Ungroup icon](images/locale-ungroup-icon.png)
+GroupedSortIcon | Sort the grouped column  | ![Locale Grouped sort icon](images/locale-grouped-sort-icon.png)
+GroupedDrag | Drag the grouped column | ![Locale Grouped drag icon](images/locale-grouped-drag.png)
+GroupCaption | Group caption cell | ![Locale Group caption cell](images/locale-group-caption.png)
+Expanded | Expanded | ![Locale Group expanded](images/locale-expanded.png)
+Collapsed | Collapsed | ![Locale Group collapsed](images/locale-collapsed.png)
 
 **Filtering**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
 InvalidFilterMessage | Invalid Filter Data
 FilterbarTitle | \s filter bar cell | ![Locale filterbar title](images/locale-filterbar-title.png)
@@ -152,41 +152,41 @@ FilterDescription | Press Alt Down to open filter Menu | ![Locale filter descrip
 
 **Searching**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-Search | Search | ![Locale search](images/locale-search.png)
-SearchColumns | search columns
-Clear | Clear | ![Locale clear](images/locale-clear.png)
+Search | Search | ![Locale Grid search function](images/locale-search.png)
+SearchColumns | Search columns
+Clear | Clear | ![Locale Clear](images/locale-clear.png)
 
 **Sorting**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-Sort | Sort | ![Locale sort](images/locale-sort.png)
-SortDescription | Press Enter to sort | ![Locale sort description](images/locale-sort-description.png)
+Sort | Sort | ![Locale Grid sort function](images/locale-sort.png)
+SortDescription | Press Enter to sort | ![Locale Sort description](images/locale-sort-description.png)
 
 **Toolbar**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-Print | Print | ![Locale print](images/locale-print.png)
-Pdfexport | PDF Export | ![Locale pdfexport](images/locale-pdfexport.png)
-Excelexport | Excel Export | ![Locale excelexport](images/locale-excelexport.png)
-Csvexport | CSV Export | ![Locale csvexport](images/locale-csvexport.png)
+Print | Print | ![Locale Toolbar print](images/locale-print.png)
+Pdfexport | PDF Export | ![Locale Toolbar PDF export](images/locale-pdfexport.png)
+Excelexport | Excel Export | ![Locale Toolbar Excel export]images/locale-excelexport.png)
+Csvexport | CSV Export | ![Locale Toolbar CSV export](images/locale-csvexport.png)
 
 **ColumnMenu**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
-FilterMenu | Filter | ![Locale filter menu](images/locale-filter-menu.png)
-AutoFitAll | Autofit all columns |
-AutoFit | Autofit this column |
-ColumnMenuDialogARIA | Column menu dialog | ![Locale columnmenu dialog ARIA](images/locale-columnmenu-dialog-ARIA.png)
-ColumnMenuDescription | Press Alt Down to open Column Menu | ![Locale columnmenu description](images/locale-columnmenu-description.png)
+FilterMenu | Filter | ![Locale Column menu filter](images/locale-filter-menu.png)
+AutoFitAll | Autofit all columns
+AutoFit | Autofit this column
+ColumnMenuDialogARIA | Column menu dialog | ![Locale Column menu dialog ARIA](images/locale-columnmenu-dialog-ARIA.png)
+ColumnMenuDescription | Press Alt + Down to open Column Menu | ![Locale Column menu description](images/locale-columnmenu-description.png)
 
 **ContextMenu**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
 Copy | Copy | ![Locale copy](images/locale-copy.png)
 Group | Group by this column | ![Locale group](images/locale-group.png)
@@ -205,7 +205,7 @@ DeleteRecord | Delete Record | ![Locale delete record](images/locale-delete-reco
 
 **Pager**
 
-Locale key words |Text | Example 
+Locale keywords | Text | Example 
 -----|-----|-----
 currentPageInfo | {0} of {1} pages | ![Locale current page info](images/locale-current-page-info.png)
 totalItemsInfo | ({0} items) | ![Locale total items info](images/locale-total-items-info.png)
@@ -226,13 +226,11 @@ Page | Page  |
 Of |  of  | ![Locale pager of](images/locale-pager-of.png)
 Pages |  Pages |
 
-### Loading translations for de culture
+### Loading translations for a specific culture
 
-The Syncfusion Angular Grid component provides a built-in Localization library that allows you to load translation objects for different cultures. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages. 
+The built-in localization library enables loading translation objects for different cultures. Use the **load** function from the **L10n** class to customize grid text. You can specify translation objects for specific cultures, such as **German (de-DE)**, to display content in the required language.
 
-This feature allows you to specify translation objects for specific cultures, such as **Deutsch** (German), and display the Grid's content in the desired language.
-
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
+Enable JSON module resolution in TypeScript by setting **resolveJsonModule** to `true` and **esModuleInterop** to `true` in your `tsconfig.json` file:
 
 ```ts
 {
@@ -243,7 +241,7 @@ To work with **JSON** files in your application, you can enable JSON module reso
 }
 ```
 
-The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) to **de-DE**.
+The following example demonstrates loading a translation object for **German (de-DE)** using the **L10n.load** function and assigning the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) as **de-DE**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -260,7 +258,7 @@ The following example demonstrates how to load a translation object for **Deutsc
   
 {% previewsample page.domainurl/samples/grid/localization-cs1 %}
 
-### Loading translations for fr culture 
+### Loading translations for additional cultures
 
 The Loading translations feature allows you to specify translation objects for different cultures, such as **Deutsch**, **Arabic**, **French** and display the Grid's content in the desired language.
 
@@ -292,21 +290,19 @@ The following example demonstrates how to load a translation object for **French
   
 {% previewsample page.domainurl/samples/grid/localization-cs5 %}
 
-### Switch the different localization
+### Switching between localizations
 
-The Synfusion Angular Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
+The Angular Grid enables dynamic switching of localization at runtime. This is useful for applications requiring language changes based on user preferences.
 
-To switch to a different localization, follow these steps:
-
-**Step 1:** Import and load the required CLDR (Common Locale Data Repository) data for the desired culture using the loadCldr function.
+**Step 1:** Import and load the necessary CLDR (Common Locale Data Repository) data for the target culture:
 
 ```ts
 loadCldr(
-    cagregorian,
-    currencies,
-    numbers,
-    timeZoneNames,
-    numberingSystems
+  caGregorian,
+  currencies,
+  numbers,
+  timeZoneNames,
+  numberingSystems
 );
 ```
 **Step 2:** To import **json** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
@@ -320,9 +316,9 @@ loadCldr(
 }
 ```
 
-**Step 3:** To change the default culture and the currency code, you can use the methods `setCulture` for setting the locale and `setCurrencyCode` for setting the currency code.
+**Step 3:** Use the `setCulture` method to change the locale and `setCurrencyCode` to update currency formatting.
 
-To switch to the **French** culture and set the currency code as **EUR**, you can use the `setCulture` method and the `setCurrencyCode` method of the Grid on external button click. This is demonstrated below: 
+To switch to **French (fr-FR)** culture and set the currency to **EUR**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -341,9 +337,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 
 ## Internationalization
 
-The Internationalization library in the Syncfusion Angular Grid provides a localized display of number, date, and time values in the Grid component based on the preferred language and region.
-
-[Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property.
+The Internationalization library provides localized display for numbers, dates, and times in the Grid based on the chosen language and region. This is achieved using the [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library and format strings defined in the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property.
 
 To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting esModuleInterop to true as shown below:
 
@@ -373,14 +367,14 @@ You need to load the culture format files corresponding to the desired locale in
   
 {% previewsample page.domainurl/samples/grid/localization-cs2 %}
 
-> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-numbers).
-> * By default, [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
+> * In the above sample, the **Freight** column is formatted using [NumberFormatOptions](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-numbers).
+> * The default [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. To use a different culture, set the `locale` property accordingly.
 
-## Right to Left - RTL
+## Right-to-Left (RTL) Support
 
-The Right to Left (RTL) feature in the Syncfusion Angular Grid allows you to switch the text direction and layout from left-to-right to right-to-left. This feature is especially beneficial for interacting with the grid in languages that are written and read from right to left, such as **Arabic**, **Farsi,** **Urdu**, and others. Enabling RTL significantly improves the experience and accessibility for such languages.
+The Syncfusion Angular Grid supports right-to-left (RTL) layout, adjusting text direction and grid layout for languages such as Arabic, Farsi, and Urdu. Enabling the RTL property provides a more accessible experience for users of right-to-left scripts.
 
-To enable RTL in the Grid, you need to set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablertl) property to **true**. By setting `enableRtl`, the grid component's text direction and layout will be adjusted to support right-to-left languages.
+Enable RTL in the Grid by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablertl) property to **true**. This adjusts both the text and layout for RTL languages.
 
 To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
 
@@ -414,4 +408,5 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 * [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)
 * [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization/)
-* [Animate the Grid selected row in Angular Grid](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)
+* [Apply Grid localization using external JSON file in Angular](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)
+```

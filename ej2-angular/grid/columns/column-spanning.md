@@ -28,7 +28,7 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 
 ## Change the border color while column spanning
 
-You can change the border color for the spanned cells by the using [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event triggers before the cell element is appended to the Grid element.
+To customize the border color of spanned cells, utilize the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event is triggered before each cell element is appended to the Grid, allowing you to modify cell styles, such as border color, for merged cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,7 +45,7 @@ You can change the border color for the spanned cells by the using [QueryCellInf
 ## Limitations
 
 * The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support column spanning.
-* Column spanning is not compatible with the following features:
+* Column spanning is not supported with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
     3. Grouping
@@ -73,7 +73,7 @@ Here is an example of how to use the `enableColumnSpan` property to merge cells 
 
 > You can also control spanning at the column level. To prevent merging for specific columns, set `enableColumnSpan` to **false** in the column definition.
 
-### Limitation
+### Limitations
 
 * Virtualization
 * Infinite Scrolling

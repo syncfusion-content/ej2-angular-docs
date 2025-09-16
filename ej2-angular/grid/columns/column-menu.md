@@ -158,7 +158,7 @@ The column menu in Syncfusion Angular Grid provides a set of events that allow c
 
 1. The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuopen) event triggers before the column menu opens.
 
-2. The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuclick) event triggers when the user clicks the column menu of the grid.
+2. The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuclick)  event triggers when the column menu of the grid is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

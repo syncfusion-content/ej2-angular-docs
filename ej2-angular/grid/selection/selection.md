@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection in Angular Grid component
 
-Selection in the Grid component enables users to select specific cells, rows, or columns interactively using mouse clicks, arrow keys, or touch gestures. This feature is useful for highlighting, manipulating, or performing actions on selected items in the Grid.
+Selection in the Grid component enables the selection of specific cells, rows, or columns interactively using mouse clicks, arrow keys, or touch gestures. This feature is useful for highlighting, manipulating, or performing actions on selected items in the Grid.
 
 To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowselection) property to **false**.
 

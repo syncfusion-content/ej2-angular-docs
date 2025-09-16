@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Grid component
 
-Filtering is a powerful feature in the Syncfusion Grid component that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
+Filtering is a powerful feature in the Syncfusion Grid component that enables users to selectively view data based on specific criteria. This functionality allows you to narrow down large datasets and focus on relevant information, thereby enhancing data analysis and decision-making capabilities.
 
-To use filter, inject **FilterService** in the provider section of **AppModule**.
+To use filtering functionality, inject **FilterService** in the provider section of **AppModule**.
 
-To enable filtering in the Grid, you need to set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
+To enable filtering in the Grid, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property to true. Once filtering is enabled, configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) property to define the behavior and appearance of filters.
 
-Here is an example that demonstrates the default filtering feature of the grid:
+The following example demonstrates basic filtering functionality:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,14 +30,14 @@ Here is an example that demonstrates the default filtering feature of the grid:
   
 {% previewsample "page.domainurl/samples/grid/filter-cs1" %}
 
-> * You can apply and clear filtering, by using [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
-> * To disable Filtering for a particular column, by specifying [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
+> * Apply and clear filtering programmatically using [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
+> * Disable filtering for specific columns by setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
 
 ## Initial filter
 
 To apply an initial filter, you need to specify the filter criteria using the [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
-Here is an example of how to configure the initial filter using the `predicate` object:
+The following example demonstrates initial filter configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,11 +53,11 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 ### Initial filter with multiple values for same column
 
-In the Syncfusion Angular Grid, you can establish an initial filter containing multiple values for a particular column, which helps you to preset filter conditions for a specific column using multiple values. This functionality allows you to display a filtered records in the grid right after the grid is initially loaded.
+You can establish an initial filter containing multiple values for a particular column, which helps preset filter conditions using multiple values. This functionality displays filtered records immediately when the grid loads.
 
-To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
+To apply multiple values for the same column at initial rendering, set multiple filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) objects in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
 
-The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `filterSettings.columns` and `predicate`.
+The following example demonstrates initial filtering with multiple values for the same **CustomerID** column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,9 +73,9 @@ The following example demonstrates, how to perform an initial filter with multip
 
 ### Initial filter with multiple values for different columns 
 
-By applying an initial filter with multiple values for different columns in the Syncfusion Angular Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
+You can apply initial filters with multiple values across different columns by setting predefined filter settings for each column. This results in filtered records displayed immediately upon grid initialization.
 
-To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
+To apply filters with multiple values for different columns at initial rendering, configure multiple filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) objects in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
 
 The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `filterSettings.columns` and `predicate`.
 
@@ -125,47 +125,43 @@ notin |Filters multiple records in the same column that do not match any of the 
 
 ### Wildcard filtering
 
-The **Wildcard** filter can process one or more search patterns using the "*" symbol, retrieving values matching the specified patterns.
+The **Wildcard** filter processes one or more search patterns using the "*" symbol, retrieving values matching the specified patterns. This filter option supports all search scenarios in the DataGrid.
 
-* The **Wildcard** filter option is supported for the DataGrid that has all search options.
+**Wildcard pattern examples:**
 
-**For example:**
-
-Operator |Description
------|-----
-a*b |Everything that starts with "a" and ends with "b".
-a* |Everything that starts with "a".
-*b |Everything that ends with "b".
-*a* |Everything that has an "a" in it.
-*a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
+| Operator | Description |
+|----------|-------------|
+| a*b | Everything that starts with "a" and ends with "b" |
+| a* | Everything that starts with "a" |
+| *b | Everything that ends with "b" |
+| *a* | Everything that contains "a" |
+| *a*b* | Everything containing "a", followed by anything, then "b", followed by anything |
 
 ![Wildcard filter in Angular Grid.](../images/angular-grid-wildcard-search.gif)
 
 ### LIKE filtering
 
-The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
+The **LIKE** filter processes single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/).
-* Custom Filter of Excel filter type.
+* Filter Bar with [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#showFilterBarOperator) property enabled
+* Custom Filter of Excel filter type
 
-**For example:**
+**LIKE pattern examples:**
 
-Operator |Description
------|-----
-%ab% |Returns all the value that are contains "ab" character.
-ab% |Returns all the value that are ends with "ab" character.
-%ab |Returns all the value that are starts with "ab" character.
+| Operator | Description |
+|----------|-------------|
+| %ab% | Returns all values that contain "ab" characters |
+| ab% | Returns all values that end with "ab" characters |
+| %ab | Returns all values that start with "ab" characters |
 
 ![LIKE filter in Angular Grid.](../images/angular-grid-like-filter.gif)
 
->By default, the Syncfusion Angular Grid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
-
 ## Diacritics filter
 
-The diacritics filter feature in the Syncfusion Angular Grid is useful when working with text data that includes accented characters (diacritic characters). By default, the grid ignores these characters during filtering. However, if you need to consider diacritic characters in your filtering process, you can enable this feature by setting the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) property to true using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/).
+The diacritics filter feature handles text data that includes accented characters (diacritic characters). By default, the grid ignores these characters during filtering. To consider diacritic characters in filtering operations, enable this feature by setting the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) property to true within [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/).
 
-Consider the following sample where the `ignoreAccent` property is set to true in order to include diacritic characters in the filtering process:
+The following example demonstrates diacritics filtering with the `ignoreAccent` property set to true:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,15 +181,12 @@ The Syncfusion Angular Grid allows you to filter enum-type data using the [Filte
 
 To achieve this functionality:
 
-1. Render [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) in the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate) for the enum-type column.
+1. Render [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) in the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate) for the enum-type column
+2. Bind the enumerated list data to the column
+3. Use the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property to display enum values in a readable format
+4. In the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the DropDownList, dynamically filter the column using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#filterbycolumn) method
 
-2. Bind the enumerated list data to the column.
-
-3. Use the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property in the **Type** column to display enum values in a readable format.
-
-4. In the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the **DropDownList**, dynamically filter the column using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#filterbycolumn) method of the Syncfusion Angular Grid.
-
-Below is an example demonstrating how to filter enum-type data in a Syncfusion Angular Grid:
+The following example demonstrates enum-type data filtering:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -333,7 +326,7 @@ Programmatic filtering in the Syncfusion Angular Grid with single and multiple v
 
 This can be achieved by utilizing the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#filterbycolumn) method of the Grid.
 
-The following example demostrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
+The following example demonstrates programmatic filtering using single and multiple values for **OrderID** and **CustomerID** columns through external button click functions:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -349,15 +342,13 @@ The following example demostrates, how to programmatically filter the Grid using
 
 ## How to get filtered records
 
-Retrieving filtered records in the Syncfusion Angular Grid is essential when you want to work with data that matches the currently applied filters. You can achieve this using available methods and properties in the grid component.
+Retrieve filtered records using available methods and properties in the Grid component when working with data that matches currently applied filters.
 
 **1.Using the getFilteredRecords() method**
 
-The [getFilteredRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getfilteredrecords) method is used to obtain an array of records that match the currently applied filters on the grid.
+The [getFilteredRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getfilteredrecords) method obtains an array of records that match currently applied filters on the grid.
 
-This method retrieves an array of records that match the currently applied filters on the grid.
-
-Here's an example of how to get the filtering data in a Syncfusion grid using the `getFilteredRecords` method:
+The following example demonstrates getting filtered data using the `getFilteredRecords` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -376,15 +367,13 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 
 **2.Using the properties in the FilterEventArgs object**
 
-Alternatively, you can use the properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) object to obtain the filter record details.
+Alternatively, use properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) object to obtain filter record details:
 
-* [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#columns): This property returns the collection of filtered columns.
+* [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#columns): Returns the collection of filtered columns
+* [currentFilterObject](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilterobject): Returns the currently filtered object
+* [currentFilteringColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilteringcolumn): Returns the currently filtered column name
 
-* [currentFilterObject](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilterobject): This property returns the object that is currently filtered.
-
-* [currentFilteringColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilteringcolumn): This property returns the column name that is currently filtered.
-
-To access these properties, you can use the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event handler as shown below:
+Access these properties using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event handler:
 
 ```typescript
 actionComplete(args: FilterEventArgs) {
@@ -396,9 +385,9 @@ actionComplete(args: FilterEventArgs) {
 
 ## Clear filtering using methods
 
-The Syncfusion Grid provides a method called [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearfiltering) to clear the filtering applied to the grid. This method is used to remove the filter conditions and reset the grid to its original state. 
+The Grid provides the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearfiltering) method to remove filter conditions and reset the grid to its original state.
 
-Here's an example of how to clear the filtering in a Syncfusion grid using the `clearFiltering` method:
+The following example demonstrates clearing filters using the `clearFiltering` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -414,11 +403,11 @@ Here's an example of how to clear the filtering in a Syncfusion grid using the `
 
 ## Filtering events
 
-Filtering events allow you to customize the behavior of the grid when filtering is applied. You can prevent filtering for specific columns, show messages to users, or perform other actions to suit your application's needs.
+Filtering events allow you to customize grid behavior when filtering is applied. You can prevent filtering for specific columns, display messages to users, or perform other actions to suit your application requirements.
 
-To implement filtering events in the Syncfusion Angular Grid, you can utilize the available events such as [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete). These events allow you to intervene in the filtering process and customize it as needed.
+Implement filtering events using available events such as [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete). These events allow you to intervene in the filtering process and customize it as needed.
 
-In the given example, the filtering is prevented for **ShipCity** column during `actionBegin` event.
+The following example demonstrates filtering prevention for the **ShipCity** column during the `actionBegin` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

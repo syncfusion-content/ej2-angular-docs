@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Grid component
 
-Validation is a crucial aspect of data integrity in any application. The Angular Grid component in Syncfusion provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
+Validation is essential for ensuring data integrity in applications. The Syncfusion Angular Grid component provides robust, built-in support for data validation, helping guarantee that data entered or edited in the grid meets predefined criteria and maintaining accuracy across all records.
 
 ## Column validation
 
-Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** component to perform the validation. You can define validation rules using the [columns.validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#validationrules) property to specify the criteria for validating column values.
+Column validation verifies edited or newly added data against field-specific rules before saving. By applying rules to individual columns, erroneous data is prevented, error messages are shown, and only valid records are committed. Syncfusion Grid leverages the **Form Validator** component for this purpose. Use the [columns.validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#validationrules) property to define validation logic for columns.
 
-The following code example demonstrates how to define a validation rule for grid column:
+Example of applying validation rules to a grid column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,9 +32,9 @@ The following code example demonstrates how to define a validation rule for grid
 
 ## Custom validation
 
-The Custom validation feature is used to define and enforce your own validation rules for specific columns in the Grid. This is achieved by leveraging the utilizing the **Form Validator custom rules**, you can enforce your desired validation logic and display error messages for invalid fields.
+Custom validation allows you to implement specific logic for validating column data, beyond built-in rules. Using the **Form Validator custom rules**, custom validation logic and tailored error messages can be presented to users for any field.
 
-In the below demo, custom validation applied for **CustomerID** column.
+Example: Custom validation for the **CustomerID** column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,9 +50,9 @@ In the below demo, custom validation applied for **CustomerID** column.
 
 ### Custom validation based on dropdown change
 
-The Custom validation feature in the Grid allows you to apply validation rules and messages to a column based on the value of another column in edit mode. This feature is particularly useful when you need to enforce specific validation criteria that depend on the selection made in a dropdown column.
+Validation rules can be dynamically applied to one column based on the value of another—for example, altering **Salary** validation based on the selection in a **Role** dropdown.
 
-In the following sample, dropdownlist edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
+Example applying dependent validation between **Role** and **Salary** columns:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
   
 {% previewsample "page.domainurl/samples/grid/edit-cs35" %}
 
-### Custom validation for numeric column
+### Custom validation for numeric columns
 
 Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
 
@@ -86,11 +86,9 @@ In the following example, custom validation functions, namely **customFn** and *
 
 ## Dynamically add or remove validation rules from the form
 
-You can dynamically add or remove validation rules from input elements within a form. This feature is particularly useful when you need to adjust the validation rules based on different scenarios or dynamically changing data.
+Validation rules can be adjusted at runtime based on application logic or user interaction. Use [addRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#addrules) to attach rules or [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#removerules) to detach them, by targeting the input name attribute.
 
-To add validation rules dynamically to an input element, you can use the [addRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#addrules) method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
-
-The following example to demonstrates how to dynamically add or remove a required validation rule for an input field based on a **CheckBox** selection:
+Example: Dynamically toggle required validation with a **checkbox** selection:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,15 +102,13 @@ The following example to demonstrates how to dynamically add or remove a require
   
 {% previewsample "page.domainurl/samples/grid/edit-validation-cs3" %}
 
->To remove an existing validation rule from an input element, you can use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#removerules) method. 
+> To remove an existing validation rule from an input element, use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#removerules) method.
 
-## Change the position of validation error message
+## Change the position of validation error messages
 
-By default, the validation error message in Grid is displayed below the input field. However, you have an option to customize its position and display it in a different location. This feature is particularly useful when you want to align the error message according to your application's design and layout.
+The default placement for validation error messages is below the input field. To customize error message position (for example, above or beside the input), implement the [customPlacement](https://ej2.syncfusion.com/documentation/api/form-validator/#customplacement) event.
 
-To change the position of the validation error message in Grid, you can utilize the [customPlacement](https://ej2.syncfusion.com/documentation/api/form-validator/#customplacement) event. This event allows you to define a custom logic to position the error message at the desired location.
-
-Here's an example that demonstrates how to change the position of the validation error message to the top of the input field:
+Example displaying error messages at the top of the input field:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,14 +122,12 @@ Here's an example that demonstrates how to change the position of the validation
   
 {% previewsample "page.domainurl/samples/grid/edit-validation-cs4" %}
 
-## Show custom error message while performing CRUD actions
+## Show custom error message for failed CRUD actions
 
-While performing CRUD actions in the Syncfusion Angular Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
+During CRUD operations, errors (such as validation failures or server exceptions) can be handled and presented to users via custom messages. Use the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event to intercept failures, extract server messages, and display them appropriately in the UI.
 
-To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
+Example showing server error feedback in Angular Grid:
 
-The following sample demonstrates how to retrieve and display error messages in the Syncfusion Angular Grid:  
- 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
@@ -155,7 +149,7 @@ export class AppComponent {
 
   public ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:****/api/grid', // Replace your hosted link.
+      url: 'https://localhost:****/api/grid', // Replace with your endpoint.
       insertUrl: 'https://localhost:****/api/grid/Insert',
       updateUrl:'https://localhost:****/api/grid/Update',
       removeUrl: 'https://localhost:****/api/grid/Remove',
@@ -167,7 +161,7 @@ export class AppComponent {
 
   public onActionFailure(args: FailureEventArgs): void {
    (args as any).error?.[0]?.error?.json().then((data: any) => {
-      this.errorMessage = data.message; // Set error message.
+      this.errorMessage = data.message; // Assign error message.
     }).catch(() => {
       this.errorMessage = "Error occurred, but message could not be retrieved.";
     });
@@ -385,6 +379,6 @@ namespace UrlAdaptor.Server.Models
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates how to retrieve and display error messages when CRUD operations fail:
+The following screenshot demonstrates displaying error messages when CRUD operations fail:
 
 ![custom error message](../../grid/images/custom-error-message.png)

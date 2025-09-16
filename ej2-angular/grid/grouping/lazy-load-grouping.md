@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lazy load grouping in Angular Grid component | Syncfusion
-description: Learn here all about Lazy load grouping in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure and optimize lazy load grouping in the Syncfusion Angular Grid component. Explore configuration, server-side handling, infinite and virtual scrolling, and best practices for large datasets.
 platform: ej2-angular
 control: Lazy load grouping 
 documentation: ug
@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Lazy load grouping in Angular Grid component
 
-In Angular, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy loading can significantly improve the performance of your application by reducing the initial load time.
+Lazy loading in Angular refers to loading data dynamically as needed rather than loading all at once, resulting in improved application performance and reduced initial load time.
 
-Lazy load grouping in Syncfusion Grid allows you to load and display grouped data efficiently by fetching only the required data on demand. This feature is useful when dealing with large datasets where loading all the data at once might affect performance. The Grid will render only the initial level caption rows in the collapsed state at grouping. The child rows of each caption will be fetched in on demand and render in the Grid when you expand the caption row.
+Lazy load grouping in the Syncfusion Angular Grid efficiently displays grouped data by fetching only necessary records on demand. This feature is especially valuable when working with large datasets. The Grid initially renders top-level caption rows in a collapsed state. When a group caption row is expanded, only the relevant child records are retrieved and rendered.
 
-To enable this feature, need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**.
+Enable lazy load grouping by setting the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**.
 
-The following example demonstrates how to enable the lazy load grouping feature by setting `groupSettings.enableLazyLoading` property.
+The following example demonstrates enabling this feature via `groupSettings.enableLazyLoading`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ The following example demonstrates how to enable the lazy load grouping feature 
   
 {% previewsample "page.domainurl/samples/grid/lazy-load-grouping-cs1" %}
 
-## Handling the lazy load grouping at server-side
+## Server-side lazy load grouping
 
 When using the lazy load grouping feature of the Grid, you can use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
 
@@ -45,7 +45,7 @@ In the server-side, you can bind these details with the `isLazyLoad` and `onDema
 
 ![OnDemandGroupInfo](../images/groupinfo.jpg)
 
-The following code example describes lazy load grouping being handled on the server-side along with other grid actions.
+Example server controller for lazy load grouping:
 
 ```typescript
 public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
@@ -92,26 +92,23 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
     }
 return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource : groupedData, count = count }) : Json(DataSource);
 }
-
 ```
 
-> For optimal performance, especially when dealing with lazy loading grouping, it is recommended to perform sorting after the grouping action.
+> For best performance, always perform sorting after grouping when using lazy load grouping.
 
 ## Lazy load grouping with infinite scrolling
 
-Lazy loading grouping with infinite scrolling is a valuable feature in scenarios where there is a need to present grouped data, efficiently handle large datasets, and ensure a seamless experience. This feature enables loading data on demand as the interface is interacted with, ensuring optimal performance and responsiveness while effectively managing and presenting large grouped datasets
+For optimal performance in large datasets and seamless navigation, combine lazy load grouping with infinite scrolling. This ensures only visible grouped records are fetched as users scroll.
 
-**How lazy load grouping with infinite scrolling works**
+**How it works:**
 
-1. When you enable lazy load grouping with infinite scrolling, the Grid initially renders only the top-level caption rows in a collapsed state.
+1. Only top-level group captions are initially rendered, fully collapsed.
+2. Child rows are loaded and shown only when you expand a group caption.
+3. As users scroll down, more groups or records are dynamically loaded.
 
-2. The child rows associated with each group caption are loaded and rendered in the Grid only when you expand the corresponding caption row.
+Enable infinite scrolling by setting both [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableinfinitescrolling) to **true**.
 
-3. Infinite scrolling enables the Grid to load additional data as the user scrolls to the end of the scrollbar.
-
-To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableinfinitescrolling) properties to **true**.
-
-The following example demonstrates how to enable the lazy load grouping with infinite scrolling feature using the `groupSettings.enableLazyLoading` and `enableInfiniteScrolling` properties.
+Example enabling both features:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,24 +122,22 @@ The following example demonstrates how to enable the lazy load grouping with inf
   
 {% previewsample "page.domainurl/samples/grid/lazy-load-grouping-cs2" %}
 
-> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
-> * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
+> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableinfinitescrolling) property can be toggled as needed.
+> * Always specify the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property when using infinite scrolling.
 
 ## Lazy load grouping with virtual scrolling
 
-The lazy load grouping with virtual scrolling feature in the Syncfusion Angular Grid allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
+For highly performant navigation and rendering of very large grouped datasets, use lazy load grouping in combination with virtual scrolling. This ensures only the needed rows and groups are loaded and rendered at once.
 
-**How lazy load grouping with virtual scrolling works**
+**How it works:**
 
-1. When you enable lazy load grouping with virtual scrolling, the Grid renders only the initial level caption rows in a collapsed state.
+1. Initial render displays only collapsed top-level group captions.
+2. Expanding a caption row triggers retrieval and rendering of only its children.
+3. Virtualization loads a dynamic buffer of records as users scroll, reducing memory and DOM footprint.
 
-2. The child rows associated with each group caption are loaded and rendered in the Grid only when you expand the respective caption row.
+Enable both features by setting [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) to **true**.
 
-3. Virtual scrolling allows the Grid to load and display a buffered set of records while scrolling vertically.
-
-To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) properties to **true**.
-
-The following example demonstrates how to enable the lazy load grouping with virtual scrolling feature using the `groupSettings.enableLazyLoading` and `enableVirtualization` properties.
+Example usage:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,22 +151,21 @@ The following example demonstrates how to enable the lazy load grouping with vir
   
 {% previewsample "page.domainurl/samples/grid/lazy-load-grouping-cs3" %}
 
-> When using the `enableVirtualization` feature, it is necessary to define the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
+> Always define the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property when using virtualization.
 
 ## Limitations for lazy load grouping
 
-* Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
-* Lazy load grouping is only supported by the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) and [JsonAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#json-adaptor) adaptors.
-* Lazy load grouping is not compatible with the following features
+* Browser-imposed element height limitations restrict the maximum total loaded records.
+* Lazy load grouping is only supported with the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) and [JsonAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#json-adaptor).
+* Not compatible with:
     * Batch editing
     * Row template
-    * Print
-    * Row drag and drop in collapsed group
+    * Printing
+    * Row drag and drop in collapsed groups
     * ExpandAll method   
     * Column virtualization
-    * Hierarchical Grid
-    * Detail Template
-    * Row and Cell Spanning  
-* Programmatic selection is not supported  in lazy load grouping.
-* Drag selection, Cell selection (box and flow), Row Selection is not working in collapsed state.
-* Clipboard is not support when the groups are in collapsed state.
+    * Hierarchical grid
+    * Detail template
+    * Row and cell spanning  
+* Programmatic selection (row/cell/drag) is not supported while groups are collapsed.
+* Clipboard support is unavailable when groups are collapsed.

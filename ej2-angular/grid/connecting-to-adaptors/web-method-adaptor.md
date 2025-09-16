@@ -11,19 +11,19 @@ domainurl: ##DomainURL##
 
 # WebMethodAdaptor in Syncfusion Angular Grid Component
 
-The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in Syncfusion Angular Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in the Syncfusion Angular Grid facilitates seamless data binding from remote services using web methods. This adaptor provides efficient communication between client-side applications and server endpoints by encapsulating query parameters within a structured **value** object. Similar to the URL adaptor, the WebMethodAdaptor transmits various DataManager properties including **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries within this **value** container.
 
-![Webmethod Adaptor](../images/web-method-adaptor-value.png)
+![WebMethodAdaptor value object structure showing encapsulated query parameters](../images/web-method-adaptor-value.png)
 
-This section describes a step-by-step process for retrieving data using WebMethodAdaptor, then binding it to the Angular Grid component to facilitate data and CRUD operations.
+This section provides comprehensive step-by-step guidance for retrieving data using the WebMethodAdaptor and binding it to the Angular Grid component to facilitate data operations and CRUD functionality.
 
 ## Creating an API service
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server for use with the Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
-Open Visual Studio and create an Angular and ASP.NET Core project named **WebMethodAdaptor**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+Open Visual Studio and create an Angular and ASP.NET Core project named **WebMethodAdaptor**. To create an Angular and ASP.NET Core application, follow the [documentation link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **2. Model Class Creation:**
 
@@ -96,7 +96,7 @@ Create a model class named **OrdersDetails.cs** in the server-side **Models** fo
 
 **3. API Controller Creation:**
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the Angular Grid component.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller handles data communication with the Angular Grid component.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -104,6 +104,7 @@ Create a file named `GridController.cs` under the **Controllers** folder. This c
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebMethodAdaptor.Server.Models;
+using Syncfusion.EJ2.Base;
 
 namespace WebMethodAdaptor.Server.Controllers
 {
@@ -149,17 +150,17 @@ namespace WebMethodAdaptor.Server.Controllers
 
 **4. Run the Application:**
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**. 
 
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
+After running the application, verify that the server-side API controller successfully returns the order data by navigating to the URL (https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
-![WebMethodAdaptor-data](../images/url-adaptor-data.jpeg)
+![WebMethodAdaptor data response showing JSON array format](../images/url-adaptor-data.jpeg)
 
 ## Connecting Syncfusion Angular Grid to an API service
 
-To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
-**1: Install Syncfusion Package**
+**1. Install Syncfusion Packages**
 
 Open your terminal in the project's client folder and install the required Syncfusion packages using npm:
 
@@ -168,9 +169,9 @@ npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-**2: Import Grid Module**
+**2. Import Grid Module**
 
-In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package and configure it:
 
 {% tabs %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -190,9 +191,9 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3: Adding CSS reference**
+**3. Adding CSS Reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular component:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -210,9 +211,9 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Syncfusion Component**
+**4. Adding Syncfusion Component**
 
-In your component file (e.g., app.component.ts), import `DataManager` and `WebMethodAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `WebMethodAdaptor`.
+In your component file (e.g., app.component.ts), import `DataManager` and `WebMethodAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance specifying the URL of your API endpoint (https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor to `WebMethodAdaptor`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,7 +253,7 @@ export class AppComponent {
 
 > Replace https://localhost:xxxx/api/grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
+Run the application in Visual Studio. The application will be accessible on a URL like **https://localhost:xxxx**.
 
 > Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing) if necessary.
   ```cs
@@ -268,9 +269,9 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
   app.UseCors();
   ```
 
-![WebMethodAdaptor](../images/adaptor.gif)
+![WebMethodAdaptor demonstration showing data binding and grid operations](../images/adaptor.gif)
 
-> * The Syncfusion Grid component provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__), [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) available in the `Syncfusion.EJ2.AspNet.Core` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
+> * The Syncfusion Grid component provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__), [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) available in the `Syncfusion.EJ2.AspNet.Core` package. Let's explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) and [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html), import `Syncfusion.EJ2.Base` in `GridController.cs` file.
 > * In the WebMethodAdaptor configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
@@ -282,12 +283,11 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
     }
     ```
 
-
 ## Handling searching operation
 
-To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo searching based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object
+To handle search operations, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo searching based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
 
-![WebMethodAdaptor searching](../images/web-method-adaptor-searching.png)
+![WebMethodAdaptor search operation showing value object with search parameters](../images/web-method-adaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -338,7 +338,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Grid', // Replace with your hosted link
       adaptor: new WebMethodAdaptor()
     });
     this.toolbar = ['Search'];
@@ -379,13 +379,13 @@ export class AppModule { }
 
 ## Handling filtering operation
 
-To handle filtering operation, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
+To handle filter operations, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
 
-**Single column filtering**
-![Single column filtering](../images/web-method-adaptor-filtering.png)
+**Single Column Filtering**
+![Single column filtering operation in WebMethodAdaptor](../images/web-method-adaptor-filtering.png)
 
-**Multi column filtering**
-![Multi column filtering](../images/web-method-adaptor-multi-filtering.png)
+**Multi Column Filtering**
+![Multi column filtering operation in WebMethodAdaptor](../images/web-method-adaptor-multi-filtering.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -441,7 +441,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Grid', // Replace with your hosted link
       adaptor: new WebMethodAdaptor()
     });
   }
@@ -481,13 +481,13 @@ export class AppModule { }
 
 ## Handling sorting operation
 
-To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
+To handle sort operations, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
 
-**Single column sorting**
-![Single column sorting](../images/web-method-adaptor-sorting.png)
+**Single Column Sorting**
+![Single column sorting operation in WebMethodAdaptor](../images/web-method-adaptor-sorting.png)
 
-**Multi column sorting**
-![Multi column sorting](../images/web-method-adaptor-multi-sorting.png)
+**Multi Column Sorting**
+![Multi column sorting operation in WebMethodAdaptor](../images/web-method-adaptor-multi-sorting.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -538,7 +538,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Grid', // Replace with your hosted link
       adaptor: new WebMethodAdaptor()
     });
   }
@@ -578,9 +578,9 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) method from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo paging based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
+To handle paging operations, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) methods from the [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html) class. This allows the custom data source to undergo paging based on the criteria specified in the incoming [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) object.
 
-![WebMethodAdaptor paging](../images/web-method-adaptor-paging.png)
+![WebMethodAdaptor paging operation showing skip and take parameters](../images/web-method-adaptor-paging.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -636,7 +636,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/Grid', // Replace with your hosted link
       adaptor: new WebMethodAdaptor()
     });
   }
@@ -688,7 +688,7 @@ CRUD operations within the grid can be mapped to server-side controller actions 
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Angular Grid component, refer to the editing [documentation](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) is enabled and [toolbar](https://helpej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in the Angular Grid component, refer to the editing [documentation](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit). In the below example, the batch edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) is enabled and the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -710,7 +710,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/grid', // Replace with your hosted link
       insertUrl: 'https://localhost:xxxx/api/grid/Insert',
       updateUrl: 'https://localhost:xxxx/api/grid/Update',
       removeUrl: 'https://localhost:xxxx/api/grid/Remove',
@@ -758,7 +758,7 @@ export class AppModule { }
 
 > Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
-The below class is used to structure data sent during CRUD operations.
+The following class is used to structure data sent during CRUD operations:
 
 ```cs
 public class CRUDModel<T> where T : class
@@ -774,11 +774,11 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert operation:**
+**Insert Operation:**
 
 To insert a new record, utilize the [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl) property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
 
-![Insert record](../images/web-method-adaptor-insert-record.png)
+![WebMethodAdaptor insert operation showing CRUD data structure](../images/web-method-adaptor-insert-record.png)
 
 ```cs
 
@@ -800,7 +800,7 @@ public void Insert([FromBody] CRUDModel<OrdersDetails> newRecord)
 }
 ```
 
-**Update operation:**
+**Update Operation:**
 
 For updating existing records, utilize the [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl) property to specify the controller action mapping URL for the update operation. The updated record details are bound to the **updatedRecord** parameter.
 
@@ -836,7 +836,7 @@ public void Update([FromBody] CRUDModel<OrdersDetails> updatedRecord)
 }
 ```
 
-**Delete operation**
+**Delete Operation**
 
 To delete existing records, use the [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl) property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
@@ -862,13 +862,13 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 }
 ```
 
-![WebMethodAdaptor CRUD operations](../images/adaptor-crud-operation.gif)
+![WebMethodAdaptor CRUD operations demonstration showing complete data manipulation workflow](../images/adaptor-crud-operation.gif)
 
-**Single method for performing all CRUD operations**
+**Single Method for Performing All CRUD Operations**
 
-Using the `crudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
+Using the `crudUrl` property, the controller action mapping URL can be specified to perform all CRUD operations at the server-side using a single method instead of specifying separate controller action methods for CRUD (insert, update and delete) operations.
 
-The following code example describes the above behavior.
+The following code example describes the above behavior:
 
 ```ts
 import { Component, ViewChild } from '@angular/core';
@@ -889,7 +889,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/grid', // Replace with your hosted link
       crudUrl:'https://localhost:xxxx/api/grid/CrudUpdate',
       adaptor: new WebMethodAdaptor()
     });
@@ -928,9 +928,9 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 }
 ```
 
-**Batch operation**
+**Batch Operation**
 
-To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operations, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new rows in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. All CRUD operations will be executed in a single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 ```ts
 [app.component.ts]
@@ -959,7 +959,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link
+      url: 'https://localhost:xxxx/api/grid', // Replace with your hosted link
       batchUrl:'https://localhost:xxxx/api/grid/BatchUpdate',
       adaptor: new WebMethodAdaptor()
     });
@@ -1011,6 +1011,6 @@ if (batchOperation.deleted != null)
   return Json(batchOperation);
 }
 ```
-![WebMethodAdaptor Batch Editing](../images/url-adaptor-batch-editing.gif)
+![WebMethodAdaptor batch editing demonstration showing multiple operations in single request](../images/url-adaptor-batch-editing.gif)
 
-> You can find the complete sample for the WebMethodAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-angular-data-grid) link.
+> You can find the complete sample for the WebMethodAdaptor in the [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-angular-data-grid) repository.

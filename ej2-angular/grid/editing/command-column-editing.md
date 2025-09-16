@@ -10,22 +10,22 @@ domainurl: ##DomainURL##
 
 # Command column editing in Angular Grid component
 
-The command column editing feature allows you to add CRUD (Create, Read, Update, Delete) action buttons in a column for performing operations on individual rows.This feature is commonly used when you need to enable inline editing, deletion, or saving of row changes directly within the grid. 
+The command column editing feature enables the addition of CRUD (Create, Read, Update, Delete) action buttons within a dedicated column, allowing users to perform operations on individual rows. This approach streamlines inline editing, deletion, and saving of changes directly within the grid interface.
 
-To enable command column editing, you can utilize the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property. By defining this property, you can specify the command buttons to be displayed in the command column, such as Edit, Delete, Save, and Cancel.
+To activate command column editing, configure the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property. This property defines which command buttons will appear in the column, such as Edit, Delete, Save, and Cancel.
 
-To utilize CRUD operations, you need to inject the **CommandColumnService** module into the **@NgModule.providers** section. This service provides the necessary functionalities for handling the command column actions.
+For full CRUD functionality, inject the **CommandColumnService** module into the **@NgModule.providers** section. This service supports the required logic for handling command column actions.
 
-The available built-in command buttons are: 
+The following built-in command buttons are available:
 
 | Command Button | Actions |
 |----------------|---------|
-| Edit | Edit the current row.|
-| Delete | Delete the current row.|
-| Save | Update the edited row.|
-| Cancel | Cancel the edited state. |
+| Edit           | Edit the current row. |
+| Delete         | Delete the current row. |
+| Save           | Update the edited row. |
+| Cancel         | Cancel the edited state. |
 
-Here's an example that demonstrates how to add CRUD action buttons in a column using the `command` column property : 
+The example below illustrates how to display CRUD action buttons in a column using the `command` column property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,11 +41,11 @@ Here's an example that demonstrates how to add CRUD action buttons in a column u
 
 ## Custom command column
 
-The custom command column feature in the Grid component allows you to add custom command buttons in a column to perform specific actions on individual rows. This feature is particularly useful when you need to provide customized functionality for editing, deleting, or performing any other operation on a row.
+The custom command column feature allows the addition of user-defined command buttons within a column to perform tailored actions on individual grid rows. This capability is particularly valuable when custom functionality—such as displaying detailed information, triggering custom dialogs, or handling advanced actions—is required per row.
 
-To add custom command buttons in a column, you can utilize the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property. Furthermore, you can define the actions associated with these custom buttons using the [commandClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#commandClick) event.
+To define custom command buttons, use the [column.commands](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property. Associate the desired actions with these buttons through the [commandClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#commandClick) event, allowing custom logic to be executed on button click.
 
-Here's an example that demonstrates how to add custom command buttons using the `commands` property and customize the button click behavior to display grid details in a dialog using the `commandClick` event:
+The following example demonstrates how to display custom command buttons using the `commands` property and how to customize the button click behavior via the `commandClick` event, which here is used to show row details in a dialog:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

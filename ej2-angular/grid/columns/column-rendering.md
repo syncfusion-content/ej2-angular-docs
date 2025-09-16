@@ -108,7 +108,7 @@ In the following example, `width` is set for the **OrderID** column, **date** `t
 
 ## Dynamic column generation 
 
-The Syncfusion Grid component allows dynamic generation of columns at runtime, based on the data provided. This feature is useful when displaying data with varying columns based on user requirements or dynamic data sources.
+The Syncfusion Grid component allows dynamic generation of columns at runtime based on the provided data. This feature is useful when displaying data with varying columns depending on specific requirements or dynamic data sources.
 
 ### Using ngFor directive
 

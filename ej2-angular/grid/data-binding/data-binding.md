@@ -25,7 +25,7 @@ To learn about binding local, remote, or observable data to the Angular Grid, yo
 
 ## Loading indicator
 
-The Syncfusion Angular Grid provides a loading animation feature that clearly identifies when data is being loaded or refreshed. This feature offers users clear visual feedback during grid operations such as sorting, filtering, grouping, and data refresh actions.
+The Syncfusion Angular Grid provides a loading animation feature that clearly identifies when data is being loaded or refreshed. This feature displays visual indicators during grid operations such as sorting, filtering, grouping, and data refresh actions.
 
 You can utilize the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/grid/loadingIndicatorModel/) property to configure the loading indicator, which supports two indicator types:
 

@@ -82,7 +82,7 @@ You can programmatically select single cells, multiple cells, or a range of cell
 
 Select a cell by index using the [selectCell](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcell) method.
 
-The example below shows selecting a cell from user input (row and cell index):
+The example below shows selecting a cell from the input (row and cell index):
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +123,7 @@ Select a continuous cell range using [selectCellsByRange](https://ej2.syncfusion
 > In **Box** mode, range selection highlights a boxed area. In **Flow** mode, the range selection includes every cell within the row range between start and end.
 > Set `selectionSettings.mode` to **Cell** or **Both** and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
 
-Below is an example that demonstrates selecting a cell range using values from user input:
+Below is an example that demonstrates selecting a cell range using values from the input:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

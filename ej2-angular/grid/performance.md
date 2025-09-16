@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance tips for Angular DataGrid Component
 
-This comprehensive guide provides actionable strategies for optimizing Angular DataGrid performance when handling large datasets and numerous columns. The techniques outlined here ensure smooth data binding without performance degradation, delivering an efficient user experience even with substantial data volumes.
+This comprehensive guide provides actionable strategies for optimizing Angular DataGrid performance when handling large datasets and numerous columns. The techniques outlined here ensure smooth data binding without performance degradation, maintaining optimal efficiency even with substantial data volumes.
 
 ## Improve loading performance with large datasets
 
@@ -21,9 +21,9 @@ Implement [paging](https://ej2.syncfusion.com/angular/documentation/grid/paging)
 
 ### Optimizing performance with row virtualization or infinite scrolling 
 
-For substantial datasets, implement either [virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) or [infinite scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) to enhance application efficiency and reduce rendering overhead.
+For substantial datasets, implementing either [virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) or [infinite scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) enhances application efficiency and reduces rendering overhead.
 
-1.  **Virtualization**: Virtual scrolling renders only visible rows within the viewport, dramatically improving performance for large datasets. The DataGrid loads additional rows dynamically as users scroll, maintaining smooth interaction regardless of total data volume. You can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) section dedicated to this feature.
+1.  **Virtualization**: Virtual scrolling renders only visible rows within the viewport, dramatically improving performance for large datasets. The DataGrid loads additional rows dynamically during scroll actions, maintaining smooth interaction regardless of total data volume. Reference the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) section for detailed implementation.
 
 2.  **Infinite scrolling**: This "load-on-demand" approach fetches new data blocks when the scrollbar reaches the vertical scroller's end. Infinite scrolling prevents initial load delays by progressively loading content as needed. You can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling) section dedicated to this feature.
 
@@ -87,7 +87,7 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Optimize Angular applications with multiple DataGrids
 
-Performance issues in applications with multiple DataGrids and templates typically stem from Angular's default change detection strategy rather than the DataGrid itself. When the DOM contains numerous elements, continuous change detection (triggered by user interactions) can cause performance degradation.
+Performance issues in applications with multiple DataGrids and templates typically stem from Angular's default change detection strategy rather than the DataGrid itself. When the DOM contains numerous elements, continuous change detection (triggered by DOM events and interactions) can cause performance degradation.
 
 Angular provides two change detection strategies:
 
