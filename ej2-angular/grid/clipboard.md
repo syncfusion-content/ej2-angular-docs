@@ -36,7 +36,7 @@ To enable the clipboard feature, configure the grid component with your data sou
 
 ## Copy to clipboard by external buttons
 
-Copying data to the clipboard using external buttons in the Syncfusion Angular Grid allows programmatic triggering of copy operations, making it more user-friendly, especially for users who may not be familiar with keyboard shortcuts.
+Copying data to the clipboard using external buttons in the Syncfusion Angular Grid enables programmatic triggering of copy operations, enhancing usability, particularly for those unfamiliar with keyboard shortcuts.
 
 To copy selected rows or cells data to the clipboard using external buttons, utilize the [copy](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard/#copy) method available in the grid component. The `copy` method accepts an optional parameter `withHeader` (boolean) to include column headers in the copied data. This is demonstrated in the following example:
 

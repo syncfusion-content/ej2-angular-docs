@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Context menu in Angular Grid component
 
-The Syncfusion Angular Grid component provides a context menu feature that appears when users right-click anywhere within the grid. This feature enhances user experience by providing quick access to relevant actions and operations for the displayed data.
+The Syncfusion Angular Grid component provides a context menu feature that appears on right-click within the grid. This feature enhances the experience by offering quick access to relevant actions and operations for the displayed data.
 
-To enable the context menu, configure the grid's [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) property. This property accepts either an array of predefined context menu item names or an array of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel) objects for custom items.
+Manage interactions with custom items using the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event. This property accepts either an array of predefined context menu item names or an array of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel) objects for custom items.
 
 To use the context menu, inject the **ContextMenuService** in the provider section of **AppModule**.
 
@@ -132,7 +132,7 @@ The following example demonstrates how to show the context menu on left click us
 
 ## Enable or disable context menu items
 
-The Syncfusion Angular Grid allows you to dynamically enable or disable both default and custom context menu items. This feature provides flexibility to control the behavior of context menu items based on specific conditions or user interactions within your application.
+The Syncfusion Angular Grid enables dynamic enabling or disabling of both default and custom context menu items. This feature offers flexibility to control the behavior of context menu items based on specific conditions or interactions within the application.
 
 This functionality is achieved using the [enableItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#enableitems) method of the context menu. Set the enable parameter to **true** to enable context menu items, or **false** to disable them. You can conditionally enable or disable context menu items using the `enableItems` method based on your specific requirements.
 
@@ -151,7 +151,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Show or hide context menu items
 
-The Syncfusion Angular Grid provides the flexibility to dynamically show or hide both default and custom context menu items. This feature allows you to customize the context menu items based on various conditions or user interactions.
+The Syncfusion Angular Grid enables dynamic showing or hiding of both default and custom context menu items. This feature allows customization of context menu items based on various conditions or interactions.
 
 This functionality is achieved using the [showItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#showitems) and [hideItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#hideitems) methods of the context menu. Specify the item you want to show or hide as an argument to these methods.
 

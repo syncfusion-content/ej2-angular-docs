@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row template in Angular Grid component | Syncfusion
+title: Row Template in Angular Grid Component | Syncfusion
 description: Learn here all about Row template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row template 
@@ -8,13 +8,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row template in Angular Grid component
+# Row Template in Angular Grid Component
 
-The row template feature in Grid allows you to customize the appearance and layout of rows in the grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
+The row template feature in the Syncfusion Angular Grid enables complete customization of row appearance and layout beyond standard grid presentation. This powerful feature allows replacement of default row rendering with custom HTML templates, supporting complex layouts, interactive controls, and rich content presentation. Row templates are essential for creating card-like interfaces, dashboard views, and custom data visualization within grid structures.
 
-To enable the row template feature, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property of the Grid component. This property accepts a custom HTML template that defines the layout for each row. 
+**Key Capabilities:**
+- Custom HTML layouts for individual rows
+- Integration with Syncfusion controls and third-party components
+- Advanced formatting and data presentation options
+- Chart and visualization embedding within rows
+- Complete control over row styling and behavior
 
-In the following example, Employee Information with Employee Photo is presented in the first column and employee details like Name, Address, etc., are presented in the second column.
+To implement row templates, configure the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property of the Grid component. This property accepts an Angular template that defines the custom layout for each row, providing access to row data through template context.
+
+## Basic Row Template Implementation
+
+The following example demonstrates a comprehensive row template displaying employee information with custom layout. Employee photos are presented in the first column, while detailed information is organized in a structured format in the second column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,15 +79,13 @@ In the following example, Employee Information with Employee Photo is presented 
   
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs9" %}
 
-## Row template with formatting
+## Row Template with formatting
 
-The row template feature in Syncfusion Grid allows you to customize the layout of rows in the grid. This is useful when you want to display images, buttons, or other custom content within the rows of a grid.
+Row templates provide complete control over data presentation, including custom formatting that extends beyond the standard [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. When using [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate), the `columns.format` property does not apply, requiring custom formatting implementation.
 
-By default, Syncfusion Grid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property to format the values displayed in each column. However, when using the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
+Implement custom formatting by defining component methods that handle formatting logic. These methods can be invoked directly within the template to format values according to specific requirements.
 
-To format the values within the row template, you can define a global function that handles the formatting logic. This function can be invoked inside the template to format the corresponding values.
-
-Here is an example of how to define a global formatting function for a date column and use it inside a `rowTemplate`:
+The following example demonstrates custom date formatting within a row template using the Internationalization library:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,16 +180,15 @@ export interface DateFormat extends Window {
   
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs10" %}
 
+>When implementing row templates, the `columns.format` property does not apply to template content. All formatting must be handled through custom methods or template expressions.
 
->When using the `rowTemplate` feature in Syncfusion Grid, keep in mind that any formatting applied to columns using the `columns.format` property will not work inside the template.
+## Rendering Syncfusion Controls in Row Template
 
-## Render syncfusion control in row template
+Row templates support embedding interactive Syncfusion controls, transforming static grid content into dynamic, interactive interfaces. This capability enables creation of inline editors, dashboard-like interfaces, and complex data input scenarios within grid rows.
 
-The Grid allows you to render custom Syncfusion controls within the rows of the grid. This feature is helpful as it enables you to display interactive Syncfusion controls instead of field values in the grid.
+To integrate Syncfusion controls, configure the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property with Angular templates containing the desired controls. Ensure proper module imports and component initialization for each integrated control.
 
-To enable a Syncfusion control in a row template, you need to set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property of the Grid component. This property accepts a custom HTML template that defines the layout for each row. 
-
-Here is an example that demonstrates rendering Syncfusion controls within a row template :
+The following example demonstrates various Syncfusion controls integrated within a row template:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,13 +275,13 @@ export class AppComponent {
   
 {% previewsample "page.domainurl/samples/grid/row-template-cs3" %}
 
-## Render Syncfusion Chart in row template
+## Rendering Syncfusion Charts in Row Template
 
-The Syncfusion Grid component provides the flexibility to include custom controls, such as Chart, within the rows of the Grid. This feature enhances Grid interactivity by allowing you to display graphical representations of data instead of plain text.
+The Grid component supports advanced data visualization through embedded Syncfusion Chart controls within row templates. This capability enables creation of dashboard-like interfaces with inline charts, sparklines, and other graphical representations directly within grid rows.
 
-To render a Syncfusion Chart within a row template of the Grid, you can utilize the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property. This property accepts a custom HTML template that specifies the layout for each row, allowing for rich data visualization.
+Chart integration requires proper module imports and data preparation for each chart instance. The [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property accepts chart components with appropriate data binding and configuration.
 
-Here is an example that demonstrates rendering Syncfusion Chart within a row template:
+The following example demonstrates performance charts embedded within employee data rows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

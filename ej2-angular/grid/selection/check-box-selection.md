@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Checkbox selection in Angular Grid component
 
-Checkbox selection in the Grid component enables users to select multiple records by displaying a checkbox in each row. This feature is particularly helpful for performing bulk actions or operations on selected records.
+Checkbox selection in the Grid component enables the selection of multiple records by displaying a checkbox in each row. This feature is particularly helpful for performing bulk actions or operations on selected records.
 
 To add a checkbox in each row, use a column with [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property set to **checkbox**.
 

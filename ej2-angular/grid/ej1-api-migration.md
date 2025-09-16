@@ -8,99 +8,107 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Grid component
+# EJ1 API Migration in Angular Grid Component
 
-This article describes the API migration process of Grid component from Essential JS 1 to Essential JS 2.
+This article provides comprehensive guidance for migrating Grid component APIs from Essential JS 1 to Essential JS 2. The migration involves changes in component architecture, property names, method signatures, and event handling patterns to align with modern Angular development practices.
+
+## Key Migration Benefits
+
+- **Improved Performance**: Enhanced rendering engine with optimized data binding
+- **Modern Architecture**: Built with TypeScript and modern JavaScript features
+- **Better Angular Integration**: Native Angular component with proper lifecycle management
+- **Enhanced Accessibility**: WCAG 2.1 compliance and improved screen reader support
+- **Simplified API**: Streamlined property names and consistent method signatures
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowSorting* <br><br>`<ej-grid [allowSorting]="true">`<br>`</ej-grid>`| **Property:** *allowSorting* <br><br>`<ejs-grid [allowSorting]="true">`<br>`</ejs-grid>`|
-|Clear the Sorted columns | **Method:** *clearSorting()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSorting();`<br> &nbsp;`}`<br>`}` | **Method:** *clearSorting()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.clearSorting()`
-|Get the Sorted Columns by using the Fieldname | **Method:** *getsortColumnByField(field)* <br><br>`export class AppComponent {`<br> &nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getsortColumnByField("OrderID");`<br> &nbsp;`}`<br>`}` | **Property:** *sortSettings.columns*<br><br>You can get a sorted column by iterating `sortSettings.columns` with fieldname
-|Remove the Sorted Columns | **Method:** *removeSortedColumns(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.removeSortedColumns("OrderID");`<br> &nbsp;`}`<br>`}` | **Method:** *removeSortColumn(fieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.removeSortColumn("OrderID")`
-|Sort a Column by using the method | **Method:** *sortColumn(columnName, [sortingDirection])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.sortColumn("OrderID", "ascending");`<br> &nbsp;`}`<br>`}` | **Method:** *sortColumn(columnName, Direction)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.sortColumn("OrderID", "ascending")`
+| Default | **Property:** *allowSorting* <br><br>`<ej-grid [allowSorting]="true">`<br>`</ej-grid>` | **Property:** *allowSorting* <br><br>`<ejs-grid [allowSorting]="true">`<br>`</ejs-grid>` |
+| Clear the Sorted columns | **Method:** *clearSorting()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSorting();`<br>&nbsp;`}`<br>`}` | **Method:** *clearSorting()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.clearSorting()` |
+| Get the Sorted Columns by using the Fieldname | **Method:** *getSortColumnByField(field)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSortColumnByField("OrderID");`<br>&nbsp;`}`<br>`}` | **Property:** *sortSettings.columns*<br><br>You can get a sorted column by iterating `sortSettings.columns` with fieldname |
+| Remove the Sorted Columns | **Method:** *removeSortedColumns(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.removeSortedColumns("OrderID");`<br>&nbsp;`}`<br>`}` | **Method:** *removeSortColumn(fieldName)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.removeSortColumn("OrderID")` |
+| Sort a Column by using the method | **Method:** *sortColumn(columnName, [sortingDirection])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.sortColumn("OrderID", "ascending");`<br>&nbsp;`}`<br>`}` | **Method:** *sortColumn(columnName, Direction)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.sortColumn("OrderID", "ascending")` |
 
 ## Grouping
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowGrouping* <br><br>`<ej-grid [allowGrouping]="true">`<br>`</ej-grid>`| **Property:** *allowGrouping* <br><br>`<ejs-grid [allowGrouping]="true">`<br>`</ejs-grid>`|
-|Group Columns initially | **Property:** *groupSettings.groupedColumns* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.groupOptions = {groupedColumns:["OrderID"]};`| **Property:** *groupSettings.columns* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {columns:["OrderID"]};`|
-|Caption Template | **Property:** *groupSettings.captionFormat* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.groupOptions = {captionFormat: "#template"};`| **Property:** *groupSettings.captionTemplate* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {captionTemplate: "#template"};`|
-|Show Drop Area | **Property:** *groupSettings.showDropArea* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.groupOptions = {showDropArea:false};`| **Property:** *groupSettings.showDropArea* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {showDropArea:false};`|
-|Collapse all group caption rows | **Method:** *collapseAll()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.collapseAll();`<br> &nbsp;`}`<br>`}` | **Method:** *collapseAll()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.collapseAll()`
-|Expand all group caption rows | **Method:** *expandAll()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandAll();`<br> &nbsp;`}`<br>`}` | **Method:** *expandAll()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.expandAll()`
-|Expand or collapse the row based <br>on the row state in grid | **Method:** *expandCollapse($target)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandCollapse($("tr td.e-recordplusexpand > div").first());`<br> &nbsp;`}`<br>`}` | **Method:** *expandCollapseRows()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.groupModule.expandCollapseRows(`<br>`gridObj.getContent().querySelectorAll('.e-recordplusexpand')[0]))`
-|Collapse the group drop area in grid | **Method:** *collapseGroupDropArea()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.collapseGroupDropArea();`<br> &nbsp;`}`<br>`}` | Not Applicable
-|Expand the group drop area in grid | **Method:** *expandGroupDropArea()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandGroupDropArea();`<br> &nbsp;`}`<br>`}` | Not Applicable
-|Group a column by using the method | **Method:** *groupColumn(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.groupColumn("OrderID");`<br> &nbsp;`}`<br>`}` | **Method:** *groupColumn(fieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.groupColumn("OrderID")`
-|Ungroup a grouped column by using the method | **Method:** *ungroupColumn(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.ungroupColumn("OrderID");`<br> &nbsp;`}`<br>`}` | **Method:** *ungroupColumn(fieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.ungroupColumn("OrderID")`
+| Default | **Property:** *allowGrouping* <br><br>`<ej-grid [allowGrouping]="true">`<br>`</ej-grid>` | **Property:** *allowGrouping* <br><br>`<ejs-grid [allowGrouping]="true">`<br>`</ejs-grid>` |
+| Group Columns initially | **Property:** *groupSettings.groupedColumns* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.groupOptions = {groupedColumns:["OrderID"]};` | **Property:** *groupSettings.columns* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {columns:["OrderID"]};` |
+| Caption Template | **Property:** *groupSettings.captionFormat* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.groupOptions = {captionFormat: "#template"};` | **Property:** *groupSettings.captionTemplate* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {captionTemplate: "#template"};` |
+| Show Drop Area | **Property:** *groupSettings.showDropArea* <br><br>`<ej-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.groupOptions = {showDropArea:false};` | **Property:** *groupSettings.showDropArea* <br><br>`<ejs-grid [allowGrouping]="true" [groupSettings]="groupOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.groupOptions = {showDropArea:false};` |
+| Collapse all group caption rows | **Method:** *collapseAll()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.collapseAll();`<br>&nbsp;`}`<br>`}` | **Method:** *collapseAll()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.collapseAll()` |
+| Expand all group caption rows | **Method:** *expandAll()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandAll();`<br>&nbsp;`}`<br>`}` | **Method:** *expandAll()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.expandAll()` |
+| Expand or collapse the row based on the row state in grid | **Method:** *expandCollapse($target)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandCollapse($("tr td.e-recordplusexpand > div").first());`<br>&nbsp;`}`<br>`}` | **Method:** *expandCollapseRows()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.groupModule.expandCollapseRows(`<br>`gridObj.getContent().querySelectorAll('.e-recordplusexpand')[0]))` |
+| Collapse the group drop area in grid | **Method:** *collapseGroupDropArea()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.collapseGroupDropArea();`<br>&nbsp;`}`<br>`}` | Not Applicable |
+| Expand the group drop area in grid | **Method:** *expandGroupDropArea()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.expandGroupDropArea();`<br>&nbsp;`}`<br>`}` | Not Applicable |
+| Group a column by using the method | **Method:** *groupColumn(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.groupColumn("OrderID");`<br>&nbsp;`}`<br>`}` | **Method:** *groupColumn(fieldName)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.groupColumn("OrderID")` |
+| Ungroup a grouped column by using the method | **Method:** *ungroupColumn(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.ungroupColumn("OrderID");`<br>&nbsp;`}`<br>`}` | **Method:** *ungroupColumn(fieldName)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.ungroupColumn("OrderID")` |
 
 ## Filtering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowFiltering* <br><br>`<ej-grid [allowFiltering]="true">`<br>`</ej-grid>`| **Property:** *allowFiltering* <br><br>`<ejs-grid [allowFiltering]="true">`<br>`</ejs-grid>`|
-|Menu Filtering | **Property:** *filterSettings.filterType* <br><br>`<ej-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.filterOptions = { filterType : "menu" };`| **Property:** *filterSettings.type* <br><br>`<ejs-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { type:'Menu' };`|
-|Excel Filtering | **Property:** *filterSettings.filterType* <br><br>`<ej-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.filterOptions = { filterType : "excel" };`| **Property:** *filterSettings.type* <br><br>`<ejs-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { type:'Excel' };`|
-|Clear the Filtered values | **Method:** *clearFiltering(field) - field is optional* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearFiltering();`<br> &nbsp;`}`<br>`}` | **Method:** *clearFiltering()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.clearFiltering()`
-|Filter a column by using the method | **Method:** *filterColumn(fieldName, filterOperator, filterValue, <br>predicate, [matchcase],[actualFilterValue])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.filterColumn("OrderID",`<br>`"equal","10248","and", true);`<br> &nbsp;`}`<br>`}` | **Method:** *filterByColumn(fieldName, filterOperator, filterValue, predicate, matchCase, ignoreAccent, actualFilterValue, actualOperator)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.filterByColumn("OrderID","equal",10248)`
-|Filter columns by Collection | **Method:** *filterColumn(filterCollection)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.filterColumn([{field:"OrderID",`<br>&nbsp;`operator:"lessthan",value:"10266",`<br>`predicate:"and",matchcase:true},`<br>&nbsp;`{field:"EmployeeID",operator:`<br>&nbsp;`"equal",value:2,predicate:"and", matchcase:true}]);`<br> &nbsp;`}`<br>`}` |  **Property:** *filterSettings.columns* <br><br>`<ejs-grid allowFiltering="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { columns: [{ field: 'ShipCity', matchCase: false, operator: 'startswith', predicate: 'and', value: 'reims' },`<br>`{ field: 'ShipCountry', matchCase: false, operator: 'startswith', predicate: 'and', value: 'France' }] };`|
-|Get the Filtered Records | **Method:** *getFilteredRecords()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getFilteredRecords();`<br> &nbsp;`}`<br>`}` | Not Applicable
+| Default | **Property:** *allowFiltering* <br><br>`<ej-grid [allowFiltering]="true">`<br>`</ej-grid>` | **Property:** *allowFiltering* <br><br>`<ejs-grid [allowFiltering]="true">`<br>`</ejs-grid>` |
+| Menu Filtering | **Property:** *filterSettings.filterType* <br><br>`<ej-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.filterOptions = { filterType : "menu" };` | **Property:** *filterSettings.type* <br><br>`<ejs-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { type:'Menu' };` |
+| Excel Filtering | **Property:** *filterSettings.filterType* <br><br>`<ej-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.filterOptions = { filterType : "excel" };` | **Property:** *filterSettings.type* <br><br>`<ejs-grid [allowFiltering]="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { type:'Excel' };` |
+| Clear the Filtered values | **Method:** *clearFiltering(field) - field is optional* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearFiltering();`<br>&nbsp;`}`<br>`}` | **Method:** *clearFiltering()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.clearFiltering()` |
+| Filter a column by using the method | **Method:** *filterColumn(fieldName, filterOperator, filterValue, predicate, [matchcase],[actualFilterValue])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.filterColumn("OrderID",`<br>`"equal","10248","and", true);`<br>&nbsp;`}`<br>`}` | **Method:** *filterByColumn(fieldName, filterOperator, filterValue, predicate, matchCase, ignoreAccent, actualFilterValue, actualOperator)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.filterByColumn("OrderID","equal",10248)` |
+| Filter columns by Collection | **Method:** *filterColumn(filterCollection)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.filterColumn([{field:"OrderID",`<br>&nbsp;`operator:"lessthan",value:"10266",`<br>`predicate:"and",matchcase:true},`<br>&nbsp;`{field:"EmployeeID",operator:`<br>&nbsp;`"equal",value:2,predicate:"and", matchcase:true}]);`<br>&nbsp;`}`<br>`}` | **Property:** *filterSettings.columns* <br><br>`<ejs-grid allowFiltering="true" [filterSettings]="filterOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.filterOptions = { columns: [{ field: 'ShipCity', matchCase: false, operator: 'startswith', predicate: 'and', value: 'reims' },`<br>`{ field: 'ShipCountry', matchCase: false, operator: 'startswith', predicate: 'and', value: 'France' }] };` |
+| Get the Filtered Records | **Method:** *getFilteredRecords()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getFilteredRecords();`<br>&nbsp;`}`<br>`}` | Not Applicable |
 
 ## Searching
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [allowSearching]="true" [toolbarSettings]="toolbarOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarOptions = {showToolbar:true,toolbarItems:["search"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Search'];`|
-|Clear the Searched values | **Method:** *clearSearching()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSearching();`<br> &nbsp;`}`<br>`}` | **Method:** *searchModule.search()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.searchModule.search("");`
-|Search a value | **Method:** *search(searchString)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.search("France");`<br> &nbsp;`}`<br>`}` | **Method:** *searchModule.search()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.searchModule.search("France");`
+| Default | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [allowSearching]="true" [toolbarSettings]="toolbarOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.toolbarOptions = {showToolbar:true,toolbarItems:["search"]};` | **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Search'];` |
+| Clear the Searched values | **Method:** *clearSearching()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearSearching();`<br>&nbsp;`}`<br>`}` | **Method:** *searchModule.search()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.searchModule.search("");` |
+| Search a value | **Method:** *search(searchString)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.search("France");`<br>&nbsp;`}`<br>`}` | **Method:** *searchModule.search()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.searchModule.search("France");` |
 
 ## Paging
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowPaging* <br><br>`<ej-grid [allowPaging]="true">`<br>`</ej-grid>`| **Property:** *allowPaging* <br><br>`<ejs-grid [allowPaging]="true">`<br>`</ejs-grid>`|
-|Customize Paging | **Property:** *pageSettings.pageSize* <br><br>`<ej-grid [allowPaging]="true" [pageSettings]="pageOptions">`<br>`</ej-grid>`<br> **TS** <br>`this.pageOptions = {pageSize: 5};`| **Property:** *pageSettings.pageSize* <br><br>`<ejs-grid [allowPaging]="true"[pageSettings]="pageOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 5,pageSizes:["10, 15"]}`|
-|Change Page Size | **Method:** *changePageSize(pageSize)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.changePageSize(7);`<br> &nbsp;`}`<br>`}` | **Property:** *pageSettings.pageSize* <br><br>Pagesize can be modified by using the below code<br>`<ejs-grid [allowPaging]="true"[pageSettings]="pageOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 7;}`|
-|Get Current Page Index | **Method:** *getCurrentIndex()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getCurrentIndex();`<br> &nbsp;`}`<br>`}` | **Property:** *pageSettings.currentPage* <br><br>`<ejs-grid [allowPaging]="true">`<br>`</ejs-grid>`<br>**TS**<br>`var currentPage: any = this.pageSettings.currentPage;`|
-|Get Pager Element | **Method:** *getPager()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getPager();`<br> &nbsp;`}`<br>`}` | **Method:** *getPager()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getPager();`
-|Send a paging request to the specified Page | **Method:** *gotoPage(pageIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.gotoPage(3);`<br> &nbsp;`}`<br>`}` | **Method:** *gotoPage(pageIndex)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.gotoPage(3);`
-|Calculate Pagesize of grid by using its Parent height(containerHeight) | **Method:** *calculatePageSizeBy*<br>*ParentHeight(containerHeight)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget`<br>`.calculatePageSizeByParentHeight(400);`<br> &nbsp;`}`<br>`}` | Not Applicable
+| Default | **Property:** *allowPaging* <br><br>`<ej-grid [allowPaging]="true">`<br>`</ej-grid>` | **Property:** *allowPaging* <br><br>`<ejs-grid [allowPaging]="true">`<br>`</ejs-grid>` |
+| Customize Paging | **Property:** *pageSettings.pageSize* <br><br>`<ej-grid [allowPaging]="true" [pageSettings]="pageOptions">`<br>`</ej-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 5};` | **Property:** *pageSettings.pageSize* <br><br>`<ejs-grid [allowPaging]="true" [pageSettings]="pageOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 5,pageSizes:["10, 15"]}` |
+| Change Page Size | **Method:** *changePageSize(pageSize)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.changePageSize(7);`<br>&nbsp;`}`<br>`}` | **Property:** *pageSettings.pageSize* <br><br>Pagesize can be modified by using the below code<br>`<ejs-grid [allowPaging]="true" [pageSettings]="pageOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.pageOptions = {pageSize: 7;}` |
+| Get Current Page Index | **Method:** *getCurrentIndex()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getCurrentIndex();`<br>&nbsp;`}`<br>`}` | **Property:** *pageSettings.currentPage* <br><br>`<ejs-grid [allowPaging]="true">`<br>`</ejs-grid>`<br>**TS**<br>`var currentPage: any = this.pageSettings.currentPage;` |
+| Get Pager Element | **Method:** *getPager()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getPager();`<br>&nbsp;`}`<br>`}` | **Method:** *getPager()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getPager();` |
+| Send a paging request to the specified Page | **Method:** *gotoPage(pageIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.gotoPage(3);`<br>&nbsp;`}`<br>`}` | **Method:** *gotoPage(pageIndex)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.gotoPage(3);` |
+| Calculate Pagesize of grid by using its Parent height(containerHeight) | **Method:** *calculatePageSizeByParentHeight(containerHeight)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget`<br>`.calculatePageSizeByParentHeight(400);`<br>&nbsp;`}`<br>`}` | Not Applicable |
 
 ## Selection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowSelection* <br><br>`<ej-grid [allowSelection]="true">`<br>`</ej-grid>`| **Property:** *allowSelection* <br><br>`<ejs-grid [allowSelection]="true">`<br>`</ejs-grid>`|
-|Single Selection | **Property:** *selectionType* <br><br>`<ej-grid [allowSelection]="true" selectionType="single"`<br>`</ej-grid>`| **Property:** *selectionSettings.type* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { type: 'Single' };`|
-|Multiple Selection | **Property:** *selectionType* <br><br>`<ej-grid [allowSelection]="true" selectionType="multiple"`<br>`</ej-grid>`| **Property:** *selectionSettings.type* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { type: 'Multiple' };`|
-|Row Selection | **Property:** *selectionSettings.selectionMode* <br><br>`<ej-grid [allowSelection]="true" [selectionSettings]="selectionMode"`<br>`</ej-grid>`<br> **TS** <br>`this.selectionMode = {selectionMode :["row"]};`| **Property:** *selectionSettings.mode* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions =  { mode: 'Row' };`|
-|Cell Selection | **Property:** *selectionSettings.selectionMode* <br><br>`<ej-grid [allowSelection]="true" [selectionSettings]="selectionMode"`<br>`</ej-grid>`<br> **TS** <br>`this.selectionMode = {selectionMode :["cell"]};`| **Property:** *selectionSettings.mode* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions =  { mode: 'Cell' };`|
-|Clear the selected Cells | **Method:** *clearCellSelection()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearCellSelection();`<br> &nbsp;`}`<br>`}` | **Method:** *clearCellSelection()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.clearCellSelection()`
-|Clear the selected Columns | **Method:** *clearColumnSelection([index]) - index is optional* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearColumnSelection();`<br> &nbsp;`}`<br>`}` | Not Applicable
-|Get the selected Records | **Method:** *getSelectedRecords()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSelectedRecords();`<br> &nbsp;`}`<br>`}` | **Method:** *getSelectedRecords()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getSelectedRecords()`
-|Get the selected Rows | **Method:** *getSelectedRows()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSelectedRows();`<br> &nbsp;`}`<br>`}` | **Method:** *getSelectedRows()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getSelectedRows()`
-|Select Cells | **Method:** *selectCells(rowCellIndexes)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.selectCells([[1, [4, 3, 2]]]);`<br> &nbsp;`}`<br>`}` | **Method:** *selectionModule.selectCells()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.selectCells([{ rowIndex: 0, cellIndexes: [0] }, { rowIndex: 1, cellIndexes: [1] }]);`
-|Select Rows | **Method:** *selectRows(fromIndex, toIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.selectRows(1, 4);`<br> &nbsp;`}`<br>`}` | **Method:** *selectionModule.selectRows(rowIndexes)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.selectRows([0, 2])`
-|Triggers when a <br>cell is selected| **Event:** *cellSelected* <br><br>`<ej-grid #grid (cellSelected) = "cellSelected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`cellSelected(e: any){}` | **Event:** *cellSelected* <br><br>`<ejs-grid (cellSelected)='cellSelected($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`cellSelected(args: any): void{}`
-|Triggers before the cell is being selected| **Event:** *cellSelecting* <br><br>`<ej-grid #grid (cellSelecting) = "cellSelecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`cellSelecting(e: any){}`| **Event:** *cellSelecting* <br><br>`<ejs-grid (cellSelecting)='cellSelecting($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`cellSelecting(args: any): void{}`
-|Triggers when a <br>cell is deselected| **Event:** *cellDeselected* <br><br>`<ej-grid #grid (cellDeselected) = "cellDeselected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`cellDeselected(e: any){}`| **Event:** *cellDeselected* <br><br>`<ejs-grid (cellDeselected)='cellDeselected($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`cellDeselected(args: any): void{}`
-|Triggers before the cell is being deselected| **Event:** *cellDeselecting* <br><br>`<ej-grid #grid (cellDeselecting) = "cellDeselecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`cellDeselecting(e: any){}`| **Event:** *cellDeselecting* <br><br>`<ejs-grid (cellDeselecting)='cellDeselecting($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`cellDeselecting(args: any): void{}`
-|Triggers when the <br>row is selected| **Event:** *rowSelected* <br><br>`<ej-grid #grid (rowSelected) = "rowSelected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowSelected(e: any){}`| **Event:** *rowSelected* <br><br>`<ejs-grid (rowSelected)='rowSelected($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowSelected(args: any): void{}`
-|Triggers before the row is being selected| **Event:** *rowSelecting* <br><br>`<ej-grid #grid (rowSelecting) = "rowSelecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowSelecting(e: any){}`| **Event:** *rowSelecting* <br><br>`<ejs-grid (rowSelecting)='rowSelecting($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowSelecting(args: any): void{}`
-|Triggers when the <br>row is deselected| **Event:** *rowDeselected* <br><br>`<ej-grid #grid (rowDeselected) = "rowDeselected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDeselected(e: any){}`| **Event:** *rowDeselected* <br><br>`<ejs-grid (rowDeselected)='rowDeselected($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDeselected(args: any): void{}`
-|Triggers before the row is being deselected| **Event:** *rowDeselecting* <br><br>`<ej-grid #grid (rowDeselecting) = "rowDeselecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDeselecting(e: any){}`| **Event:** *rowDeselecting* <br><br>`<ejs-grid (rowDeselecting)='rowDeselecting($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDeselecting(args: any): void{}`
-|Triggers when the column is selected| **Event:** *columnSelected* <br><br>`<ej-grid #grid (columnSelected) = "columnSelected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`columnSelected(e: any){}`| Not Applicable
-|Triggers before the column is being selected | **Event:** *columnSelecting* <br><br>`<ej-grid #grid (columnSelecting) = "columnSelecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`columnSelecting(e: any){}`| Not Applicable
-|Triggers when the column is deselected| **Event:** *columnDeselected* <br><br>`<ej-grid #grid (columnDeselected) = "columnDeselected($event)”>`<br>`</ej-grid>`<br> **TS** <br>`columnDeselected(e: any){}`| Not Applicable
-|Triggers before the column is being deselected| **Event:** *columnDeselecting* <br><br>`<ej-grid #grid (columnDeselecting) = "columnDeselecting($event)”>`<br>`</ej-grid>`<br> **TS** <br>`columnDeselecting(e: any){}`| Not Applicable
+| Default | **Property:** *allowSelection* <br><br>`<ej-grid [allowSelection]="true">`<br>`</ej-grid>` | **Property:** *allowSelection* <br><br>`<ejs-grid [allowSelection]="true">`<br>`</ejs-grid>` |
+| Single Selection | **Property:** *selectionType* <br><br>`<ej-grid [allowSelection]="true" selectionType="single"`<br>`</ej-grid>` | **Property:** *selectionSettings.type* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { type: 'Single' };` |
+| Multiple Selection | **Property:** *selectionType* <br><br>`<ej-grid [allowSelection]="true" selectionType="multiple"`<br>`</ej-grid>` | **Property:** *selectionSettings.type* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { type: 'Multiple' };` |
+| Row Selection | **Property:** *selectionSettings.selectionMode* <br><br>`<ej-grid [allowSelection]="true" [selectionSettings]="selectionMode"`<br>`</ej-grid>`<br>**TS**<br>`this.selectionMode = {selectionMode :["row"]};` | **Property:** *selectionSettings.mode* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { mode: 'Row' };` |
+| Cell Selection | **Property:** *selectionSettings.selectionMode* <br><br>`<ej-grid [allowSelection]="true" [selectionSettings]="selectionMode"`<br>`</ej-grid>`<br>**TS**<br>`this.selectionMode = {selectionMode :["cell"]};` | **Property:** *selectionSettings.mode* <br><br>`<ejs-grid [allowSelection]="true" [selectionSettings]="selectOptions">`<br>`</ejs-grid>`<br>**TS**<br>`this.selectOptions = { mode: 'Cell' };` |
+| Clear the selected Cells | **Method:** *clearCellSelection()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearCellSelection();`<br>&nbsp;`}`<br>`}` | **Method:** *clearCellSelection()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.clearCellSelection()` |
+| Clear the selected Columns | **Method:** *clearColumnSelection([index]) - index is optional* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.clearColumnSelection();`<br>&nbsp;`}`<br>`}` | Not Applicable |
+| Get the selected Records | **Method:** *getSelectedRecords()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSelectedRecords();`<br>&nbsp;`}`<br>`}` | **Method:** *getSelectedRecords()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getSelectedRecords()` |
+| Get the selected Rows | **Method:** *getSelectedRows()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSelectedRows();`<br>&nbsp;`}`<br>`}` | **Method:** *getSelectedRows()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getSelectedRows()` |
+| Select Cells | **Method:** *selectCells(rowCellIndexes)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.selectCells([[1, [4, 3, 2]]]);`<br>&nbsp;`}`<br>`}` | **Method:** *selectionModule.selectCells()*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.selectCells([{ rowIndex: 0, cellIndexes: [0] }, { rowIndex: 1, cellIndexes: [1] }]);` |
+| Select Rows | **Method:** *selectRows(fromIndex, toIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br>&nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.selectRows(1, 4);`<br>&nbsp;`}`<br>`}` | **Method:** *selectionModule.selectRows(rowIndexes)*<br/><br/>`@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.selectionModule.selectRows([0, 2])` |
+| Triggers when a cell is selected | **Event:** *cellSelected* <br><br>`<ej-grid #grid (cellSelected) = "cellSelected($event)">`<br>`</ej-grid>`<br>**TS**<br>`cellSelected(e: any){}` | **Event:** *cellSelected* <br><br>`<ejs-grid (cellSelected)='cellSelected($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`cellSelected(args: any): void{}` |
+| Triggers before the cell is being selected | **Event:** *cellSelecting* <br><br>`<ej-grid #grid (cellSelecting) = "cellSelecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`cellSelecting(e: any){}` | **Event:** *cellSelecting* <br><br>`<ejs-grid (cellSelecting)='cellSelecting($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`cellSelecting(args: any): void{}` |
+| Triggers when a cell is deselected | **Event:** *cellDeselected* <br><br>`<ej-grid #grid (cellDeselected) = "cellDeselected($event)">`<br>`</ej-grid>`<br>**TS**<br>`cellDeselected(e: any){}` | **Event:** *cellDeselected* <br><br>`<ejs-grid (cellDeselected)='cellDeselected($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`cellDeselected(args: any): void{}` |
+| Triggers before the cell is being deselected | **Event:** *cellDeselecting* <br><br>`<ej-grid #grid (cellDeselecting) = "cellDeselecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`cellDeselecting(e: any){}` | **Event:** *cellDeselecting* <br><br>`<ejs-grid (cellDeselecting)='cellDeselecting($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`cellDeselecting(args: any): void{}` |
+| Triggers when the row is selected | **Event:** *rowSelected* <br><br>`<ej-grid #grid (rowSelected) = "rowSelected($event)">`<br>`</ej-grid>`<br>**TS**<br>`rowSelected(e: any){}` | **Event:** *rowSelected* <br><br>`<ejs-grid (rowSelected)='rowSelected($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`rowSelected(args: any): void{}` |
+| Triggers before the row is being selected | **Event:** *rowSelecting* <br><br>`<ej-grid #grid (rowSelecting) = "rowSelecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`rowSelecting(e: any){}` | **Event:** *rowSelecting* <br><br>`<ejs-grid (rowSelecting)='rowSelecting($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`rowSelecting(args: any): void{}` |
+| Triggers when the row is deselected | **Event:** *rowDeselected* <br><br>`<ej-grid #grid (rowDeselected) = "rowDeselected($event)">`<br>`</ej-grid>`<br>**TS**<br>`rowDeselected(e: any){}` | **Event:** *rowDeselected* <br><br>`<ejs-grid (rowDeselected)='rowDeselected($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`rowDeselected(args: any): void{}` |
+| Triggers before the row is being deselected | **Event:** *rowDeselecting* <br><br>`<ej-grid #grid (rowDeselecting) = "rowDeselecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`rowDeselecting(e: any){}` | **Event:** *rowDeselecting* <br><br>`<ejs-grid (rowDeselecting)='rowDeselecting($event)'>`<br>`</ejs-grid>`<br>**TS**<br>`rowDeselecting(args: any): void{}` |
+| Triggers when the column is selected | **Event:** *columnSelected* <br><br>`<ej-grid #grid (columnSelected) = "columnSelected($event)">`<br>`</ej-grid>`<br>**TS**<br>`columnSelected(e: any){}` | Not Applicable |
+| Triggers before the column is being selected | **Event:** *columnSelecting* <br><br>`<ej-grid #grid (columnSelecting) = "columnSelecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`columnSelecting(e: any){}` | Not Applicable |
+| Triggers when the column is deselected | **Event:** *columnDeselected* <br><br>`<ej-grid #grid (columnDeselected) = "columnDeselected($event)">`<br>`</ej-grid>`<br>**TS**<br>`columnDeselected(e: any){}` | Not Applicable |
+| Triggers before the column is being deselected | **Event:** *columnDeselecting* <br><br>`<ej-grid #grid (columnDeselecting) = "columnDeselecting($event)">`<br>`</ej-grid>`<br>**TS**<br>`columnDeselecting(e: any){}` | Not Applicable |
 
 ## Editing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *editSettings* <br><br>`<ej-grid [editSettings]="editSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.editSettings = {allowEditing: true, allowAdding: true, allowDeleting: true};`| **Property:** *editSettings* <br><br>`<ejs-grid [editSettings]="editSettings">`<br>`</ejs-grid>`<br>**TS**<br>`this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };`|
 |Inline Editing  | **Property:** *editSettings.editMode* <br><br>`<ej-grid [editSettings]="editSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.editSettings = {allowEditing: true, allowAdding: true, allowDeleting: true, editMode : "normal"};`| **Property:** *editSettings.mode* <br><br>`<ejs-grid [editSettings]="editSettings">`<br>`</ejs-grid>`<br>**TS**<br>`this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };`|
@@ -153,17 +161,17 @@ This article describes the API migration process of Grid component from Essentia
 |Reorder Columns| **Method:** *reorderColumns(fromFieldName, toFieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.reorderColumns("OrderID", "CustomerID");`<br> &nbsp;`}`<br>`}` | **Method:** *reorderColumns(fromFieldName, toFieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.reorderColumns("OrderID", "CustomerID");`
 |Reorder Rows| **Method:** *reorderRows(indexes, toIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.reorderRows([0,1],3);`<br> &nbsp;`}`<br>`}` | Not Applicable
 
-## Context Menu
+### Context Menu
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default  | **Property:** *contextMenuSettings.enableContextMenu* <br><br>`<ej-grid [contextMenuSettings]="contextMenuSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.contextMenuSettings = {enableContextMenu: true};`| **Property:** *contextMenuItems* <br><br>`<ejs-grid [contextMenuItems]="contextMenuItems">`<br>`</ejs-grid>`<br>**TS**<br>`this.contextMenuItems = ['AutoFit', 'AutoFitAll'];`|
+|Default | **Property:** *contextMenuSettings.enableContextMenu* <br><br>`<ej-grid [contextMenuSettings]="contextMenuSettings"`<br>`</ej-grid>`<br> **TS** <br>`this.contextMenuSettings = {enableContextMenu: true};`| **Property:** *contextMenuItems* <br><br>`<ejs-grid [contextMenuItems]="contextMenuItems">`<br>`</ejs-grid>`<br>**TS**<br>`this.contextMenuItems = ['AutoFit', 'AutoFitAll'];`|
 |Triggers when context menu item is clicked| **Event:** *contextClick* <br><br>`<ej-grid #grid (contextClick) = "contextClick($event)”>`<br>`</ej-grid>`<br> **TS** <br>`contextClick(e: any){}`| **Event:** *contextMenuClick* <br><br>`<ejs-grid (contextMenuClick)='contextMenuClick($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`contextMenuClick(args: any): void{}`
 |Triggers when context menu opens| **Event:** *contextOpen* <br><br>`<ej-grid #grid (contextOpen) = "contextOpen($event)”>`<br>`</ej-grid>`<br> **TS** <br>`contextOpen(e: any){}`| **Event:** *contextMenuOpen* <br><br>`<ejs-grid (contextMenuOpen)='contextMenuOpen($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`contextMenuOpen(args: any): void{}`
 
-## Toolbar
+### Toolbar
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Print  | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [toolbarSettings]="toolbarSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarSettings = {showToolbar: true,toolbarItems: ["print"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Print'];`|
 | Add  | **Property:** *toolbarSettings.toolbarItems* <br><br>`<ej-grid [toolbarSettings]="toolbarSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.toolbarSettings = {showToolbar: true,toolbarItems: ["add"]};`| **Property:** *toolbar* <br><br>`<ejs-grid [toolbar]="toolbar">`<br>`</ejs-grid>`<br>**TS**<br>`this.toolbar = ['Add'];`|
@@ -179,13 +187,13 @@ This article describes the API migration process of Grid component from Essentia
 
 ## GridLines
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Default  | **Property:** *gridLines* <br><br>`<ej-grid [gridLines]="gridLines"`<br>`</ej-grid>`<br> **TS** <br>`this.gridLines = ['Both'];`| **Property:** *gridLines* <br><br>`<ejs-grid [gridLines]="gridLines">`<br>`</ejs-grid>`<br>**TS**<br>`this.gridLines = ['Both'];`|
 
 ## Templates
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 | Detail Template  | **Property:** *detailsTemplate* <br><br>`<ej-grid>`<br>`<ng-template #detailsTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ej-grid>`| **Property:** *detailTemplate* <br><br>`<ejs-grid >`<br>`<ng-template #detailTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ejs-grid>`|
 | Row Template  | **Property:** *rowTemplate* <br><br>`<ej-grid>`<br>`<ng-template #rowTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ej-grid>`| **Property:** *rowTemplate* <br><br>`<ejs-grid >`<br>`<ng-template #rowTemplate>`<br>You can add template elements here<br>`</ng-template>`<br>`</ejs-grid>`|
@@ -197,9 +205,9 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row/Column Drag and Drop
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowRowDragAndDrop* <br><br>`<ej-grid [allowRowDragAndDrop]="true"`<br>`</ej-grid>`| **Property:** *allowRowDragAndDrop* <br><br>`<ejs-grid [allowRowDragAndDrop]="true">`<br>`</ejs-grid>`|
+| Default | **Property:** *allowRowDragAndDrop* <br><br>`<ej-grid [allowRowDragAndDrop]="true"`<br>`</ej-grid>`| **Property:** *allowRowDragAndDrop* <br><br>`<ejs-grid [allowRowDragAndDrop]="true">`<br>`</ejs-grid>`|
 |Triggers when the row is<br>being dragged| **Event:** *rowDrag* <br><br>`<ej-grid #grid (rowDrag) = "rowDrag($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDrag(e: any){}`| **Event:** *rowDrag* <br><br>`<ejs-grid (rowDrag)='rowDrag($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDrag(args: any): void{}`
 |Triggers when the row drag begins| **Event:** *rowDragStart* <br><br>`<ej-grid #grid (rowDragStart) = "rowDragStart($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDragStart(e: any){}`| **Event:** *rowDragStart* <br><br>`<ejs-grid (rowDragStart)='rowDragStart($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDragStart(args: any): void{}`
 |Triggers when the row is dropped| **Event:** *rowDrop* <br><br>`<ej-grid #grid (rowDrop) = "rowDrop($event)”>`<br>`</ej-grid>`<br> **TS** <br>`rowDrop(e: any){}`| **Event:** *rowDrop* <br><br>`<ejs-grid (rowDrop)='rowDrop($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`rowDrop(args: any): void{}`
@@ -210,67 +218,67 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Frozen Rows and Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *scrollSettings.frozenRows* <br><br>`<ej-grid [allowScrolling]="true" [scrollSettings]="scrollSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.scrollSettings = {frozenRows: 2, frozenColumn: 1};`| **Property:** *frozenRows* <br><br>`<ejs-grid [frozenRows]='2' [frozenColumns]='1'>`<br>`</ejs-grid>`|
 |isFrozen | **Property:** *columns.isFrozen* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="Freight" [isFrozen]="true">`<br>`</e-column>`<br>`</ej-grid>`| **Property:** *columns.isFrozen* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' [isFrozen]="true">`<br>`</e-column>`<br>`</ejs-grid>`|
 
 ## ForeignKey
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *columns.foreignKeyValue* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *columns.foreignKeyValue* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' foreignKeyValue='FirstName' [dataSource]='employeeData'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
+| Default | **Property:** *columns.foreignKeyValue* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *columns.foreignKeyValue* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' foreignKeyValue='FirstName' [dataSource]='employeeData'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Auto Wrap
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *allowTextWrap* <br><br>`<ej-grid [allowTextWrap]="true">`<br>`</ej-grid>`| **Property:** *allowTextWrap* <br><br>`<ejs-grid [allowTextWrap]='true'>`<br>`</ejs-grid>`|
+| Default | **Property:** *allowTextWrap* <br><br>`<ej-grid [allowTextWrap]="true">`<br>`</ej-grid>`| **Property:** *allowTextWrap* <br><br>`<ejs-grid [allowTextWrap]='true'>`<br>`</ejs-grid>`|
 |Both | **Property:** *textWrapSettings.wrapMode* <br><br>`<ej-grid [allowTextWrap]="true" [textWrapSettings]="textWrapSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.textWrapSettings = { wrapMode: "both"};`| **Property:** *textWrapSettings.wrapMode* <br><br>`<ejs-grid [allowTextWrap]='true' [textWrapSettings]='textWrapSettings'>`<br>`</ejs-grid>`<br>**TS**<br>`this.textWrapSettings = { wrapMode: 'Both' };`|
 |Header | **Property:** *textWrapSettings.wrapMode* <br><br>`<ej-grid allowTextWrap"true" [textWrapSettings]="textWrapSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.textWrapSettings = { wrapMode: "header"};`| **Property:** *textWrapSettings.wrapMode* <br><br>`<ejs-grid [allowTextWrap]='true' [textWrapSettings]='textWrapSettings'>`<br>`</ejs-grid>`<br>**TS**<br>`this.textWrapSettings = { wrapMode: 'Header' };`|
 |Content | **Property:** *textWrapSettings.wrapMode* <br><br>`<ej-grid [allowTextWrap]="true" [textWrapSettings]="textWrapSettings">`<br>`</ej-grid>`<br> **TS** <br>`this.textWrapSettings = { wrapMode: "content"};`| **Property:** *textWrapSettings.wrapMode* <br><br>`<ejs-grid [allowTextWrap]='true' [textWrapSettings]='textWrapSettings'>`<br>`</ejs-grid>`<br>**TS**<br>`this.textWrapSettings = { wrapMode: 'Content' };`|
 
 ## Responsive
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *isResponsive* <br><br>`<ej-grid [isResPonsive]="true" [enableResponsiveRow]="true>`<br>`</ej-grid>`| Not Applicable
+| Default | **Property:** *isResponsive* <br><br>`<ej-grid [isResPonsive]="true" [enableResponsiveRow]="true>`<br>`</ej-grid>`| Not Applicable
 
 ## State Persistence
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *enablepersistence* <br><br>`<ej-grid [enablepersistence]="true">`<br>`</ej-grid>`| **Property:** *enablepersistence* <br><br>`<ejs-grid [enablepersistence]='true' >`<br>`</ejs-grid>`|
+| Default | **Property:** *enablepersistence* <br><br>`<ej-grid [enablepersistence]="true">`<br>`</ej-grid>`| **Property:** *enablepersistence* <br><br>`<ejs-grid [enablepersistence]='true' >`<br>`</ejs-grid>`|
 
 ## Right to Left - RTL
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *enableRTl* <br><br>`<ej-grid [enableRTl]="true" >`<br>`</ej-grid>`| **Property:** *enableRTl* <br><br>`<ejs-grid [enableRTl]='true' >`<br>`</ejs-grid>`|
+| Default | **Property:** *enableRTl* <br><br>`<ej-grid [enableRTl]="true" >`<br>`</ej-grid>`| **Property:** *enableRTl* <br><br>`<ejs-grid [enableRTl]='true' >`<br>`</ejs-grid>`|
 
 ## ToolTip
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Default | **Property:** *clipMode* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="ShipName" [clipMode]="clip">`<br>`</e-column>`<br>`<e-column field="ShipCity"  [clipMode]="ellipsis">`<br>`</e-column>`<br>`<e-column field="Freight" [clipMode]="ellipsiswithtooltip">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *clipMode* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='ShipName' [clipMode]='Clip'>`<br>`</e-column>`<br>`<e-column field='ShipCity' [clipMode]='Ellipsis'>`<br>`</e-column>`<br>`<e-column field='Freight' [clipMode]='EllipsisWithTooltip'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
+| Default | **Property:** *clipMode* <br><br>`<ej-grid>`<br>`<e-columns>`<br>`<e-column field="ShipName" [clipMode]="clip">`<br>`</e-column>`<br>`<e-column field="ShipCity"  [clipMode]="ellipsis">`<br>`</e-column>`<br>`<e-column field="Freight" [clipMode]="ellipsiswithtooltip">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *clipMode* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='ShipName' [clipMode]='Clip'>`<br>`</e-column>`<br>`<e-column field='ShipCity' [clipMode]='Ellipsis'>`<br>`</e-column>`<br>`<e-column field='Freight' [clipMode]='EllipsisWithTooltip'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Aggregate/Summary
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Footer Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`title: "Sum",`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Sum,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`}]`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #footerTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
-|Caption Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`showCaptionSummary: true,`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Average,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`prefix: "Average = "`<br>`}],`<br>`showTotalSummary: false`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #groupCaptionTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
-|Get Summary values | **Method:** *getSummaryValues(summaryCol, summaryData)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSummaryValues(summaryCol, window.gridData);`<br> &nbsp;`}`<br>`}` | Not Applicable
+| Footer Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`title: "Sum",`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Sum,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`}]`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #footerTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
+| Caption Aggregate | **Property:** *showSummary* <br><br>`<ej-grid [showSummary]="true" [summaryRows]="summaryrows">`<br>`</ej-grid>`<br> **TS** <br>`export class AppComponent {`<br>`public summaryrows;`<br>`constructor(){`<br>`this.summaryrows = [{`<br>`showCaptionSummary: true,`<br>`summaryColumns: [{`<br>`summaryType: ej.Grid.SummaryType.Average,`<br>`displayColumn: "Freight",`<br>`dataMember: "Freight",`<br>`format: "{0:C2}"`<br>`prefix: "Average = "`<br>`}],`<br>`showTotalSummary: false`<br>`}]}}`| **Property:** *aggregates* <br><br>`<ejs-grid>`<br>`<e-aggregates>`<br>`<e-aggregate>`<br>`<e-columns>`<br>`<e-column type="Sum" field="Freight" format="C2">`<br>`<ng-template #groupCaptionTemplate let-data>Sum: {{data.Sum}}`<br>`</ng-template>`<br>`</e-column>`<br>`</e-columns>`<br>`</e-aggregate>`<br>`</e-aggregates>`<br>`</ejs-grid>`|
+| Get Summary values | **Method:** *getSummaryValues(summaryCol, summaryData)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getSummaryValues(summaryCol, window.gridData);`<br> &nbsp;`}`<br>`}` | Not Applicable
 
 ## Grid Export
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Adds a grid model property which is to be ignored on exporting<br>grid | **Method:** *addIgnoreOnExport(propertyNames)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.addIgnoreOnExport(filterSettings);`<br> &nbsp;`}`<br>`}` | Not Applicable
+| Adds a grid model property which is to be ignored on exporting<br>grid | **Method:** *addIgnoreOnExport(propertyNames)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.addIgnoreOnExport(filterSettings);`<br> &nbsp;`}`<br>`}` | Not Applicable
 
 ## Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Add or Remove Columns| **Method:** *columns(columnDetails, [action])-columnDetails(array of columns or string of field name)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.columns("OrderID", "remove");`<br>&nbsp;&nbsp;`this.Grid.widget.columns("CustomerID", "add");`<br> &nbsp;`}`<br>`}` | **Property:** *columns* <br><br> Grid is initially rendered with `OrderID` and `CustomerId` columns.Then if you want to add `ShipAddress` column, you have to reset the value for `column` property as `this.Grid.columns = [{field:"OrderID"}, {field:"CustomerId"}, {field:"ShipAddress"}];` Then to remove the `CustomerId` column, reset the `column` property as, `this.Grid.columns = [{field:"OrderID"}, {field:"ShipAddress"}];`
 |Get Column By Field| **Method:** *getColumnByField(fieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getColumnByField("OrderID");`<br> &nbsp;`}`<br>`}` | **Method:** *getColumnByField(fieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getColumnByField("OrderID")`
@@ -288,9 +296,9 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
-|Enable Hover | **Property:** *enableRowHover* <br><br>`<ej-grid [enableRowHover]="true" >`<br>`</ej-grid>`| **Property:** *enableHover* <br><br>`<ejs-grid [enableHover]='true'>`<br>`</ejs-grid>`|
+| Enable Hover | **Property:** *enableRowHover* <br><br>`<ej-grid [enableRowHover]="true" >`<br>`</ej-grid>`| **Property:** *enableHover* <br><br>`<ejs-grid [enableHover]='true'>`<br>`</ejs-grid>`|
 |Get Row Height| **Method:** *getRowHeight()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getRowHeight();`<br> &nbsp;`}`<br>`}` | **Method:** *getRowHeight()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getRowHeight();`
 |Refresh Row Height| **Method:** *rowHeightRefresh()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.rowHeightRefresh();`<br> &nbsp;`}`<br>`}` | Not Applicable
 |Get index by Row Element| **Method:** *getIndexByRow($tr)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getIndexByRow($(".gridcontent tr").first());`<br> &nbsp;`}`<br>`}` | Not Applicable
@@ -300,20 +308,20 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Show/Hide Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Hide Columns by using method| **Method:** *hideColumns(headerText)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.hideColumns("Order ID");`<br> &nbsp;`}`<br>`}` | **Method:** *hideColumns(headerText)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.hideColumns("Order ID");`
 |Show Columns by using method| **Method:** *showColumns(headerText)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.showColumns("Order ID");`<br> &nbsp;`}`<br>`}` | **Method:** *showColumns(headerText)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.showColumns("Order ID");`
 
 ## Column Chooser
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *showColumnChooser* <br><br>`<ej-grid [showColumnChooser]="true">`<br>`<e-columns>`<br>`<e-column field="ShipName" [showInColumnChooser]="false">`<br>`</e-column>`<br>`<e-column field="ShipCity">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *showColumnChooser* <br><br>`<ejs-grid [showColumnChooser]= 'true'>`<br>`<e-columns>`<br>`<e-column field='CustomerName' [showInColumnChooser]='false'>`<br>`</e-column>`<br>`<e-column field='Country'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 
 ## Header
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Refresh Header| **Method:** *refreshHeader()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.refreshHeader();`<br> &nbsp;`}`<br>`}` | **Method:** *refreshHeader()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.refreshHeader();`
 |Triggers every time a request is made to access particular header cell information, element and data.| **Event:** *mergeHeaderCellInfo* <br><br>`<ej-grid #grid (mergeHeaderCellInfo) = "mergeHeaderCellInfo($event)”>`<br>`</ej-grid>`<br> **TS** <br>`mergeHeaderCellInfo(e: any){}`| Not Applicable
@@ -321,33 +329,33 @@ This article describes the API migration process of Grid component from Essentia
 
 ## DataSource
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |DataSource-When templateRefresh(optional) is set true, both header and contents get refreshed| **Method:** *dataSource(newDatasource,[templateRefresh])* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.dataSource(newdataSource);`<br> &nbsp;`}`<br>`}` | **Property:** *dataSource*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.datasource = newdataSource;`
 
 ## Print
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Print the grid| **Method:** *print()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.print();`<br> &nbsp;`}`<br>`}` | **Method:** *print()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.print();`
 |Triggers before printing the grid| **Event:** *beforePrint* <br><br>`<ej-grid #grid (beforePrint) = "beforePrint($event)”>`<br>`</ej-grid>`<br> **TS** <br>`beforePrint(e: any){}`| **Event:** *beforePrint* <br><br>`<ejs-grid (beforePrint)='beforePrint($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`beforePrint(args: any): void{}`
 
 ## Scrolling
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Get ScrollObject| **Method:** *getScrollObject()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getScrollObject();`<br> &nbsp;`}`<br>`}` | **Property:** *grid.scrollModule*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`var scrollObj = this.Grid.scrollModule;`
 
 ## PrimaryKey
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Set PrimaryKey Column | **Property:** *columns.isPrimaryKey* <br><br>`<ej-grid >`<br>`<e-columns>`<br>`<e-column field="OrderID" [isPrimaryKey]="true">`<br>`</e-column>`<br>`</e-columns>`<br>`</ej-grid>`| **Property:** *columns.isPrimaryKey* <br><br>`<ejs-grid>`<br>`<e-columns>`<br>`<e-column field='OrderID' [isPrimaryKey]='true'>`<br>`</e-column>`<br>`</e-columns>`<br>`</ejs-grid>`|
 |Get the PrimaryKey fieldnames| **Method:** *getPrimaryKeyFieldNames()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getPrimaryKeyFieldNames();`<br> &nbsp;`}`<br>`}` | **Method:** *getPrimaryKeyFieldNames()*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.getPrimaryKeyFieldNames();`
 
 ## Grid
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
 |Get the Browser Details| **Method:** *getBrowserDetails()* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.getBrowserDetails();`<br> &nbsp;`}`<br>`}` | In Essential JS 2, it can be <br>achieved by using `Browser` class of `ej2-base`
 |Set dimension for the grid| **Method:** *setDimension(height, width)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.setDimension(300, 400);`<br> &nbsp;`}`<br>`}` | Not Applicable

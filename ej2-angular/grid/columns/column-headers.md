@@ -320,7 +320,7 @@ To change the height of the header dynamically, use the [getHeaderContent](https
 
 ## Change header text dynamically
 
-The Syncfusion Grid component provides methods to modify the header text of a corresponding column in real-time based on events or other interactions. This feature is useful in various scenarios, such as displaying custom header text for a specific column or updating the header text dynamically based on user input. Dynamic changes to the header text provide a more flexible and customizable experience.
+The Syncfusion Grid component provides methods to modify the header text of a corresponding column in real-time based on events or other interactions. This feature is useful in scenarios such as displaying custom header text for a specific column or updating it dynamically based on input. Dynamic changes to the header text offer a more flexible and customizable experience.
 
 **Using Event**
 

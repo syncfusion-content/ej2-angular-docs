@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind SQL Server Data in Syncfusion Angular Grid using Entity Framework
-description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion Angular Grid, and performing CRUD operations.
+description: Learn how to consume data from Microsoft SQL Server using Entity Framework, bind it to Syncfusion Angular Grid, and perform CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, entityframework, remotedata 
@@ -9,37 +9,37 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL Server data to Syncfusion Angular Grid using Entity Framework
+# Connect SQL Server Data to Syncfusion Angular Grid Using Entity Framework
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion Angular Grid.
+This section details connecting and retrieving data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/), and binding that data to the Syncfusion Angular Grid.
 
-Microsoft SQL Server database can be bound to the Grid using **Entity Framework** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Entity Framework**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+The Microsoft SQL Server database can be bound to the Grid using **Entity Framework** by several means—including the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor, and remote binding with various adaptors. Two approaches are demonstrated here, both supporting full data handling and CRUD operation customization.
 
-**Entity Framework**
+**Entity Framework Overview**
 
-Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki/Object-relational_mapping) for .NET applications supported by Microsoft. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. With the Entity Framework, developers can work at a higher level of abstraction when they deal with data, and can create and maintain data-oriented applications with less code compared with traditional applications.
+Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki/Object-relational_mapping) for .NET, supported by Microsoft. It lets developers manipulate data using domain-specific objects rather than focusing on raw database tables and columns, streamlining code and maintenance for data-driven applications.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion Angular Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for connecting remote data services to UI components. It enables remote binding by linking to a pre-configured API service connected to SQL Server. While the Grid supports other adaptors—like [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor)—the `UrlAdaptor` is especially useful for custom APIs that control data and CRUD logic, returning data in the `result` and `count` format.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion Angular Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) acts as a mediator between UI and backend for data binding. While the database can be bound directly to the Syncfusion Angular Grid's `dataSource`, a `CustomAdaptor` allows comprehensive customization for data and CRUD logic. Each Grid action results in a specific request sent to the `CustomAdaptor`. All supported data operations (**searching**, **filtering**, **sorting**, **aggregation**, **paging**, **grouping**) can use either the built-in or custom methods, as long as the API response has a `result` and `count` structure. CRUD methods can be overridden for custom functionality as needed.
 
-## Binding data using Entity Framework from Microsoft SQL Server via an API service.
+## Bind Data Using Entity Framework from SQL Server via an API Service
 
-This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using an API service and bind it to the Syncfusion Angular Grid.
+This section provides a step-by-step guide for using Entity Framework to retrieve SQL Server data through an API, then binding it to the Syncfusion Angular Grid.
 
-### Creating an API service
+### Creating an API Service
 
-**1.** Open Visual Studio and create an Angular and ASP.NET Core project named **Grid_EntityFramework**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**1.** Open Visual Studio and create a new Angular and ASP.NET Core project called **Grid_EntityFramework**. Follow the [detailed Microsoft tutorial](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for step-by-step instructions.
 
-**2.** To use Entity Framework and access the Microsoft SQL Server database in our Angular application, need to install the [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) and [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) NuGet packages. To add **Microsoft.EntityFrameworkCore** and **Microsoft.EntityFrameworkCore.SqlServer** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** Install the [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) and [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) NuGet packages to enable Entity Framework Core with SQL Server.
 
-**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Syncfusion Angular Grid.
+**3.** Create an API controller (e.g., **GridController.cs**) under the **Controllers** folder to facilitate Grid/backend data exchange.
 
-**4** In the API controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a Microsoft SQL Server database using the provided connection string. It includes a *DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects as shown in the following code snippet.
+**4.** In the controller, establish a SQL Server connection within a method such as **GetOrderData()** via **OrderDbContext**, which inherits from **DbContext** and manages the database connection using your provided connection string. It includes a **DbSet&lt;Orders&gt;** for the `Orders` table, querying and returning a list of typed objects for Grid binding. Example:
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -133,19 +133,19 @@ namespace Grid_EntityFramework.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
+**5.** Run the application. It will be hosted at a URL such as `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database using Entity Framework which is in the form of list  can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** The API endpoint serving the data will be at `https://localhost:xxxx/api/Grid`.
 
-![Hosted API URL](../images/Ms-Sql-data.png)
+![Screenshot showing the hosted API URL for SQL Server data returned by the controller](../images/Ms-Sql-data.png)
 
-### Connecting Syncfusion Angular Grid to an API service
+### Connecting the Syncfusion Angular Grid to an API Service
 
-To integrate the Syncfusion Angular Grid into your Angular and ASP.NET Core project using Visual Studio, follow the below steps:
+To bind the Syncfusion Angular Grid in your Angular application through the API service:
 
-**Step 1: Install Syncfusion Package**
+**Step 1: Install Syncfusion Packages**
 
-Open your terminal in the project client folder and install the required Syncfusion packages using npm:
+Open a terminal in your project's client folder and install the necessary Syncfusion packages:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -154,11 +154,11 @@ npm install @syncfusion/ej2-data --save
 
 **Step 2: Import Grid Module**
 
-In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
+Import and register **GridModule** in your Angular app module from `@syncfusion/ej2-angular-grids`.
 
-**Step 3: Adding CSS reference**
+**Step 3: Add CSS References**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular Grid:
+Reference the required Syncfusion stylesheets in your `styles.css`:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -208,7 +208,6 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-
 {% highlight html tabtitle="app.component.html" %}
 
 <ejs-grid #grid [dataSource]='data' height="348px">
@@ -314,9 +313,9 @@ namespace Grid_EntityFramework.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> **Note:** Replace `https://localhost:xxxx/api/Grid` with the real API endpoint.
 
-**5.** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
+**5.** Launch the app. It should be visible at a URL like **https://localhost:xxxx**.
 
 > Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing), if necessary.
 
@@ -1060,20 +1059,11 @@ When you run the application, the resultant Syncfusion Angular Grid will look li
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20UrlAdaptor/Grid_EntityFramework).
+> Find the complete example in [this GitHub repository](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20UrlAdaptor/Grid_EntityFramework).
 
-## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
+## Bind Data from SQL Server Using Entity Framework and CustomAdaptor
 
-This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
-
-**1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion Angular Grid to an API service](#connecting-syncfusion-angular-grid-to-an-api-service)
-
-**2.** To use `Entity Framework` and access the Microsoft SQL Server database in our Angular application, we need to install the [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) and [Microsoft.EntityFrameworkCore.SqlServer ](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) NuGet packages. To add **Microsoft.EntityFrameworkCore** and **Microsoft.EntityFrameworkCore.SqlServer** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-
-**3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
-
-  * Create a `CustomAdaptor` that extends the `UrlAdaptor` class.
-  * Override the `processResponse` method to process server responses.
+This section details how to retrieve data from SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and Entity Framework, binding it to the Syncfusion Angular Grid.
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
@@ -2124,4 +2114,4 @@ public class CRUDModel<T> where T : class
 
 ![Syncfusion Angular Grid bound with Microsoft SQL Server data using Entity Framework](../images/connecting-micro-curd.gif)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20CustomAdaptor/Grid_EntityFramework).
+> Find the complete example in [this GitHub repository](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Bindind%20SQL%20database%20using%20EF%20and%20CustomAdaptor/Grid_EntityFramework).

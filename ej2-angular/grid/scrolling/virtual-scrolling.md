@@ -16,7 +16,7 @@ To enable virtualization, inject the **VirtualScrollService**, which manages vir
 
 ## Row virtualization
 
-Row virtualization loads and renders only the rows visible within the viewport of the Syncfusion Grid. Instead of displaying all rows initially, data is loaded dynamically as the user scrolls vertically. This paging-like approach enhances performance and lowers initial load times for large data sources.
+Row virtualization loads and renders only the rows visible within the viewport of the Syncfusion Grid. Instead of displaying all rows initially, data is loaded dynamically during vertical scrolling. This paging-like approach enhances performance and reduces initial load times for large data sources.
 
 To configure row virtualization, set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) property to **true** and define the grid's content height using the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
 
@@ -109,7 +109,7 @@ The following example enables column virtualization using the `enableColumnVirtu
 
 ## Browser height limitation in virtual scrolling and solutions
 
-Virtual scrolling lets you load millions of records by rendering visible rows as users scroll. The total grid height is calculated as: **Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight)**.
+Virtual scrolling enables loading of millions of records by rendering only the visible rows during scrolling. The total grid height is calculated as: **Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight)**.
 
 Browsers have a maximum allowable scrollable element height. When the grid's content height exceeds this limit, vertical scrolling cannot access records beyond the browser's max height. For example, with a row height of 30px and 1,000,000 records, the height could exceed 22,369,600 pixels—a hard limit in Chrome or Firefox. This restricts virtual scrolling beyond a certain record count in both grids and standard HTML tables.
 

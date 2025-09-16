@@ -672,7 +672,7 @@ The following screenshot demonstrates data loading when the button is clicked an
 
 ### Display loading indicator with local data
 
-The Syncfusion Angular Grid component enables displaying a loading indicator while loading local data. This feature proves useful when delays occur in loading data from local sources, providing users visual feedback that data is being fetched.
+The Syncfusion Angular Grid component enables displaying a loading indicator while loading local data. This feature proves useful when delays occur in loading data from local sources, providing clear visual indication of the data fetching process.
 
 To display the loading indicator with local data, set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) property to **true**. This property controls loading indicator visibility.
 
@@ -984,7 +984,7 @@ The following screenshot demonstrates data loading when the button is clicked an
 
 ### Display loading indicator using AJAX
 
-The Syncfusion Angular Grid component enables displaying a loading indicator while loading data using AJAX requests. This feature proves useful when delays occur in data loading, providing users visual feedback that data is being fetched. This capability particularly benefits applications working with large datasets or slower internet connections.
+The Syncfusion Angular Grid component enables displaying a loading indicator while loading data using AJAX requests. This feature provides clear visual indication during data loading operations when delays occur. This capability particularly benefits applications working with large datasets or slower internet connections.
 
 To display the loading indicator with AJAX data, set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) property to **true**. This property controls loading indicator visibility.
 
@@ -1040,7 +1040,7 @@ export class AppComponent implements OnInit {
 
 ## Managing spinner visibility during data loading
 
-Displaying a spinner during data loading in the Syncfusion Angular Grid component enhances user experience by providing visual indication of loading progress. This feature helps users understand that data is being fetched or processed.
+Displaying a spinner during data loading in the Syncfusion Angular Grid component provides clear visual indication of ongoing data operations. This feature communicates the active state of data fetching and processing operations.
 
 To show or hide a spinner during data loading in the grid, utilize the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidespinner) methods provided by the Grid component.
 

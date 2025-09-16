@@ -1,33 +1,31 @@
 ---
 layout: post
 title: Create a routing sample in Angular Grid component | Syncfusion
-description: Learn here all about Create a routing sample in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to implement Angular routing in your application with the Syncfusion Angular Grid, including navigation setup, route configuration, and viewing multiple grid components.
 platform: ej2-angular
 control: Create a routing sample
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## How to use angular routing
+## How to use Angular routing
 
-Angular routing is a feature of the Angular framework which facilitates the control of navigation within a single-page application (SPA). It provides a mechanism for managing navigation between different components or views within an application.
+Angular routing is a core feature that manages navigation within a single-page application (SPA), providing seamless transitions between different views or components without refreshing the page.
 
-In Angular routing, you can able to configure the different routes for different URL's or paths, allowing you to navigate between different sections or pages of the application. This approach is particularly advantageous for SPA's since it permits the loading of content dynamically without requiring a complete page refresh.
+With routing, you configure different routes mapped to URL paths and specify which component should render for each path—enabling dynamic loading and a responsive user interface.
 
-**1. Creating an angular application and integrating the Syncfusion Grid component:**
+**1. Creating an Angular application and integrating Syncfusion Grid:**
 
-A simple angular project can be created by following the steps under the [getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) section of this documentation by enabling the routing option.
-
-To use Angular routing in your application, you need to create at least two components that can be navigated from one to another. You can create these components using the following command line:
+Begin by creating a new Angular project and enabling routing during setup. Follow the [getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) guide for details. To support routing, create at least two components for navigation using:
 
 ```
 ng generate component component-name
 ```
-Replace **component-name** with the desired name for your component. Running this command will generate the necessary files and code for your component, including the TypeScript file, HTML template, CSS styles, and the component's test file. Repeat the above command for each component you want to create.
+Replace **component-name** with your desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for your component. Repeat for each component you wish to create.
 
-**2. Defining Routes:**
+**2. Defining routes:**
 
-To define the routes create a new file `app-routing.module.ts` under the app directory. You can define the routes that correspond to different components in this file. Import the components and define an array of route objects that specifies the path and the component to be rendered for each route.
+Create an `app-routing.module.ts` file in the app directory. Import your components and define a `Routes` array mapping URL paths to components. For example:
 
 ```
 import { NgModule } from '@angular/core';
@@ -47,7 +45,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
 ```
 
 **3. Configuring the router module:**
@@ -60,9 +57,7 @@ import { AboutComponent } from './about.component';
 
 **4. Setting up navigation:**
 
-Add links to the components and assign the anchor tag that you want to add the route to the `routerLink` attribute. Set the value of the attribute to the components to render.
-
-Add `<router-outlet>` in the root component's template file which will be replaced with the component corresponding to the current route.
+Add router links to your component template using the `routerLink` attribute on anchor tags. Use `<router-outlet>` in the root template where the active component should be rendered.
 
 ```
 <nav>
@@ -74,7 +69,7 @@ Add `<router-outlet>` in the root component's template file which will be replac
 </nav>
 <router-outlet></router-outlet>
 ```
-In this demonstration, Angular routing was utilized to create and define routes for multiple components. By clicking on the links labeled Grid1 and Grid2, you can easily navigate to view the respective grid components. Additionally, the Home link allows you to return to the home page.
+With this approach, clicking "Grid 1" or "Grid 2" loads the respective grid component; the "Home" link returns to the home page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

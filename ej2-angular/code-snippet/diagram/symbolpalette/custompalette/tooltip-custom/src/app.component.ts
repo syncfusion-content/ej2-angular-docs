@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
 import {
     SymbolPaletteModule,
     NodeModel,
@@ -23,24 +23,23 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
         [palettes]="palettes" [symbolHeight]=70 [symbolWidth]=70 [symbolPreview]="symbolPreview" [symbolMargin]="symbolMargin" 
         [getSymbolInfo]="getSymbolInfo" [getNodeDefaults] ='getNodeDefaults'>
         </ejs-symbolpalette>
-        <input id="showTooltip" checked type="checkbox" (click)='changeTooltip()'>Show Tooltip`,
+        <input id="showTooltip" #checkboxRef checked type="checkbox" (click)="changeTooltip()">Show Tooltip`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("symbolpalette")
     public symbolPalette?: SymbolPaletteComponent;
+    @ViewChild('checkboxRef') checkbox?: ElementRef<HTMLInputElement>;
     public expandMode?: ExpandMode;
     public palettes?: PaletteModel[];
     public symbolPreview?: SymbolPreviewModel;
     public symbolMargin?: MarginModel;
-    public getSymbolInfo(symbol: any) {
-        return {
-            showTooltip: true
-        };
+    public getSymbolInfo = (symbol: any) => {
+        return { showTooltip: this?.checkbox?.nativeElement?.checked };
     }
     // Initialize basic shapes for symbol palette.
     public getBasicShapes(): NodeModel[] {
-        let basicShapes: NodeModel[] = [
+        const basicShapes: NodeModel[] = [
             { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' } },
             { id: 'Ellipse', shape: { type: 'Basic', shape: 'Ellipse' } },
             { id: 'Triangle', shape: { type: 'Basic', shape: 'Triangle' } },
@@ -54,7 +53,7 @@ export class AppComponent {
     }
     // Initialize flow shapes symbol palette.
     public getFlowShapes(): NodeModel[] {
-        let flowShapes: NodeModel[] = [
+        const flowShapes: NodeModel[] = [
             { id: 'Terminator', shape: { type: 'Flow', shape: 'Terminator' } },
             { id: 'Process', shape: { type: 'Flow', shape: 'Process' } },
             { id: 'Decision', shape: { type: 'Flow', shape: 'Decision' } },
@@ -71,10 +70,9 @@ export class AppComponent {
         (node.style as any).strokeColor = '#6495ED';
         return node;
     }
-    changeTooltip() {
-        var checkBox = document.getElementById('showTooltip');
-        (this.symbolPalette as SymbolPaletteComponent).getSymbolInfo = function () {
-            return { showTooltip: (checkBox as any).checked };
+    changeTooltip(): void {
+        if (this.symbolPalette) {
+            this.symbolPalette.refresh();
         }
     }
     ngOnInit(): void {

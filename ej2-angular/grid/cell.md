@@ -211,11 +211,11 @@ The following example demonstrates clip mode functionality with dynamic switchin
 
 > * Default [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
 > * Clip mode automatically applies when column [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is specified and content exceeds that width.
-> * **Clip** mode may hide important information; **Ellipsis** or **EllipsisWithTooltip** provide better user experience.
+> * **Clip** mode may hide important information; **Ellipsis** or **EllipsisWithTooltip** provide a better experience.
 
 ## Tooltip
 
-Grid supports tooltip functionality for enhanced user experience when interacting with cell content. Two implementation approaches are available: Bootstrap integration for custom styling and native Syncfusion tooltip for consistent theming.
+Grid supports tooltip functionality for an enhanced experience when interacting with cell content. Two implementation approaches are available: Bootstrap integration for custom styling and native Syncfusion tooltip for consistent theming.
 
 ### Render bootstrap tooltip in grid cells
 
