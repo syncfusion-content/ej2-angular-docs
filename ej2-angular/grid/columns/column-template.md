@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
 
 ## Render other components in a column
 
-The Syncfusion Angular Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column. When rendering components, ensure proper initialization (e.g., using `ViewChild` or `setTimeout`) to account for DOM availability and consider error handling for component initialization failures.
+The Syncfusion Angular Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column.
 
 > To support grid actions like editing with custom components, configure the `editSettings` property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) for details.
 
@@ -571,4 +571,4 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/template-cs11" %}
 
-> When using template columns, test the rendering across different screen sizes and devices to ensure responsiveness, especially for complex components like DropDownList or LineChart. Consider adding screenshots or GIFs with descriptive alt text to illustrate the visual output of templates in the documentation.
+> When using template columns, test the rendering across different screen sizes and devices to ensure responsiveness, especially for complex components like DropDownList or LineChart.

@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Open AI With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of Open AI With Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Open AI With Angular Chat UI component | Syncfusion
+description:  Checkout and learn about Integration of Open AI With Angular Chat UI component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: AI AssistView
+control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of Open AI With Angular AI AssistView component 
+# Integration of Open AI With Angular Chat UI component 
 
-The Syncfusion AI AssistView supports integration with [OpenAI](https://platform.openai.com/docs/overview), enabling advanced conversational AI features in your Angular applications.
-
-## Getting Started with the Angular AI AssistView component
-
-Before integrating Open AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Angular app:
-
-[Angular Getting Started Guide](../getting-started)
+The Syncfusion Chat UI supports integration with [OpenAI](https://platform.openai.com/docs/overview), enabling advanced conversational AI features in your Angular applications.
 
 ## Prerequisites
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 * OpenAI account to generate an API key for accessing the `OpenAI` API
-* Syncfusion AI AssistView for Angular `@syncfusion/ej2-angular-interactive-chat` installed in your project.
+* Syncfusion Chat UI for Angular `@syncfusion/ej2-angular-interactive-chat` installed in your project.
+
+## Getting Started with the Angular Chat UI component
+
+Before integrating Open AI, ensure that the Syncfusion Chat UI control is correctly rendered in your Angular app:
+
+[Angular Getting Started Guide](../getting-started)
 
 ## Install Dependencies
 
-Install the Syncfusion AI AssistView in your project
+Install the Syncfusion Chat UI in your project
 
 ```bash 
 
@@ -54,9 +54,9 @@ npm install openai
 
 > `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
 
-##  Integration Open AI with AI AssistView
+##  Integration Open AI with Chat UI
 
-Create a standalone `app.component.ts` to integrate the Open AI with Syncfusion AI AssistView component
+Create a standalone `app.component.ts` to integrate the Open AI with Syncfusion Chat UI component
 
 * Add your generated `API Key` at the line 
 
@@ -68,15 +68,15 @@ const openaiApiKey = 'Place your API key here';
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/open-ai/src/app.component.ts %}
+{% include code-snippet/chat-ui/ai-integrations/open-ai/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/open-ai/src/main.ts %}
+{% include code-snippet/chat-ui/ai-integrations/open-ai/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/ai-assistview/ai-integrations/open-ai" %}
+{% previewsample "page.domainurl/samples/chat-ui/ai-integrations/open-ai" %}
 
 ## Run and Test 
 

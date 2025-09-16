@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Customize expand collapse actions in Angular Accordion component|Syncfusion
+title: Custom expand/collapse in Angular Accordion | Syncfusion
 description: Learn here all about Customize expand collapse actions in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize expand collapse actions 
+control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---

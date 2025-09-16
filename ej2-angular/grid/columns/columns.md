@@ -185,7 +185,7 @@ Example: Set `format: "yyyy-MMM-dd"` and `locale: "es-AR"` for Spanish (Argentin
 
 ### Format template column values
 
-Use templates to format complex column content. Combine Angular pipes with [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) as needed:
+Template columns in Grid provide a way to customize the appearance of column values using HTML templates. In addition to HTML markup, you can also use number formatting to format the value displayed in a template column. To format values in a column template, you can use Angular pipes and the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. In this example, we are using the date pipe to format the **OrderDate** value as a date in the format **'dd/MMM/yyyy'**.
 
 ```ts
  <e-column field='OrderDate' headerText='Order Date' textAlign='Right' width=120>

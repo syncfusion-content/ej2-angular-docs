@@ -3,14 +3,14 @@ layout: post
 title: Accessibility in Angular Carousel component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Carousel component
 
-The Carousel component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) specifications, and applying the WAI-ARIA roles, states and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-roledescription`, `aria-label`, `aria-current`, `aria-live`, `aria-role` and `aria-hidden`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and has been tested in major screen readers.
+The Carousel component has been designed with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) specifications in mind, implementing WAI-ARIA roles, states, and properties along with comprehensive keyboard support for users of assistive technologies. WAI-ARIA accessibility support is achieved through attributes such as `aria-roledescription`, `aria-label`, `aria-current`, `aria-live`, `role`, and `aria-hidden`. These attributes provide essential information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and has been thoroughly tested in major screen readers.
 
 The accessibility compliance for the Carousel component is outlined below.
 
@@ -41,7 +41,7 @@ The accessibility compliance for the Carousel component is outlined below.
 
 ## ARIA attributes
 
-The Carousel component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) standard. Carousel is supported with ARIA Accessibility which is accessible by on-screen readers and other assistive technology devices. The following list of attributes is added to the Carousel.
+The Carousel component is designed following [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) standards. The Carousel is supported with ARIA accessibility, making it accessible to screen readers and other assistive technology devices. The following list of attributes is applied to the Carousel component.
 
 | **Roles and Attributes** | **Functionalities**                                                                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -54,9 +54,9 @@ The Carousel component is designed by considering [WAI-ARIA](https://www.w3.org/
 
 ## Keyboard interaction
 
-All Carousel actions can be controlled using keyboard keys through the [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#allowkeyboardinteraction) property, which is enabled by default. If you wish to disable the default keyboard interactions, you can set this property to `false`. This is particularly useful if the carousel contains input elements, as pressing the arrow keys might cause the carousel to move unexpectedly. By disabling keyboard interaction, the carousel remains static, allowing the user to focus on the input fields without any interruptions.
+All Carousel actions can be controlled via keyboard through the [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#allowkeyboardinteraction) property, which is enabled by default. To disable the default keyboard interactions, set this property to `false`. This is particularly useful when the carousel contains input elements, as pressing arrow keys might cause unexpected carousel movement. By disabling keyboard interaction, the carousel remains static, allowing users to focus on input fields without interruptions.
 
-This control implements keyboard navigation support by following WAI-ARIA practices. Once focused on the active Carousel element, you can use the following key combinations to interact with the Carousel.
+This component implements keyboard navigation support by following WAI-ARIA practices. Once focused on the active Carousel element, the following key combinations can be used to interact with the Carousel.
 
 | Key                | Description                                                     |
 | ------------------ | --------------------------------------------------------------- |
@@ -71,9 +71,9 @@ This control implements keyboard navigation support by following WAI-ARIA practi
 
 ## Ensuring accessibility
 
-The Carousel component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Carousel component's accessibility levels are ensured through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Carousel component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/carousel.html) in a new window to evaluate the accessibility of the Carousel component with accessibility tools.
+The accessibility compliance of the Carousel component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/carousel.html) in a new window to evaluate the accessibility of the Carousel component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/carousel.html" %}
 

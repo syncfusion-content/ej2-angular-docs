@@ -3,37 +3,37 @@ layout: post
 title: Responsive mode in Angular Toolbar component | Syncfusion
 description: Learn here all about Responsive mode in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Responsive mode 
+control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Responsive mode in Angular Toolbar component
 
-This section explains the supported display modes of the Toolbar when the content exceeds the viewing area. Possible modes are:
+The Angular Toolbar component automatically handles content overflow with responsive display modes when toolbar items exceed the available viewing area. The component supports two primary responsive modes:
 
 * Scrollable
 * Popup
 
 ## Scrollable
 
-The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mode supports display of commands in a single line with horizontal scrolling enabled when commands overflow to available space.
+The default overflow mode of the Toolbar is `Scrollable`. This responsive mode displays all commands in a single horizontal line with scrolling navigation when content overflows the available container width.
 
-* The right and left navigation arrows are added to the start and end of the Toolbar to navigate to hidden commands.
+* Navigation arrows appear at the start and end of the Toolbar to access hidden commands.
 * You can also see the hidden commands using touch swipe action.
-* By default, if navigation icon in the `left` side is disabled, you can see the hidden commands by moving to the `right`.
-* By clicking the arrow or by holding the arrow continuously,  hidden commands will become visible.
-* If device navigation icons are not available, you can touch swipe to see the hidden commands of the Toolbar.
+* When the left navigation icon is disabled, hidden commands are accessible by moving right.
+* Clicking or holding navigation arrows continuously reveals hidden commands.
+* On devices without navigation icons, touch swipe gestures provide access to hidden toolbar commands.
 
 ![Scrollable](./images/scrolling.gif)
 
-* Once the Toolbar reaches the last or first command, the  corresponding navigation icon will be disabled and you can move to the opposite direction.
+* When the Toolbar reaches the first or last command, the corresponding navigation icon becomes disabled, allowing movement in the opposite direction only.
 
 ![Touch scroll](./images/scrolling_touch.gif)
 
 ![Swipe scroll](./images/scrolling_swipe.gif)
 
-* You can continuously scroll the Toolbar content by holding the navigation icon.
+* Continuous scrolling is possible by holding the navigation icon.
 
 ![Long press scroll](./images/scrolling_long_press.gif)
 
@@ -51,27 +51,27 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 
 ## Popup
 
-`Popup` is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) in which the Toolbar container holds the commands that can be placed in the available space. The rest of the overflowing commands that do not fit within the viewing area moves to the overflow popup container.
+`Popup` is an alternative [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) where the Toolbar container displays commands that fit within the available space. Overflowing commands that exceed the viewing area automatically move to an overflow popup container.
 
-The commands placed in the popup can be viewed by opening the popup using the drop down icon given at the end of the Toolbar.
+Commands in the popup become accessible by opening the dropdown using the overflow icon at the end of the Toolbar.
 
 ![Toolbar popup](images/popup.gif)
 
-> If the popup content overflows the height of the page, then the rest of the commands will be hidden.
+> If the popup content overflows the page height, the remaining commands will be hidden.
 
 ### Priority of commands
 
 Default popup priority is set as `none`, and when the commands of the Toolbar overflow, the ones listed last will be moved to the popup.
 
-You can customize the priority of commands to be displayed on the Toolbar and popup by using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#overflow) property.
+Command display priority can be customized using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#overflow) property to control which items appear in the Toolbar versus the popup.
 
 Property     | Description
 ------------ | -------------
-  show       | Always shows items on the `Toolbar with primary` priority.
-  hide       | Always shows items in the `popup with secondary` priority.
-  none       | No priority display, and as per the `normal order` commands are moved to popup when content exceeds viewing area.
+  show       | Always displays items on the Toolbar with primary priority
+  hide       | Always displays items in the popup with secondary priority
+  none       | No priority assigned - commands move to popup in normal order when content exceeds viewing area
 
-If primary priority commands also exceed available space, they are moved to the popup container at top order position and placed before the secondary priority commands.
+When primary priority commands exceed available space, they move to the popup container at the top position, placed before secondary priority commands.
 
 > You can maintain toolbar item on popup always by using the ['showAlwaysInPopup'](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#showalwaysinpopup) property, and this behavior is not applicable for toolbar items with [overflow](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property as 'show'.
 
@@ -89,19 +89,19 @@ If primary priority commands also exceed available space, they are moved to the 
 
 ### Text mode for buttons
 
-The [`showTextOn`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#showtexton) property is used to decide button text display area on the Toolbar, popup, or both. This is useful for customization of both text and image representation of commands.
+The [`showTextOn`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#showtexton) property determines where button text displays within the Toolbar, popup, or both locations. This enables customization of text and image representations for different display contexts.
 
-For example, you can show icon only button on the Toolbar, and in the popup container display more information about the commands with icon and text.
+For example, icon-only buttons can display on the Toolbar while the popup container shows detailed information with both icons and text.
 
-Possible values are,
+Available values:
 
   Property   | Description
 ------------ | -------------
-  Both     | Button Text is visible in both `Toolbar` and `Popup`.
-  Overflow | Button Text is only visible in `Popup`.
-  Toolbar  | Button Text is only visible on the `Toolbar`.
+  Both     | Button text appears in both `Toolbar` and `popup`
+  Overflow | Button text appears only in the `popup`
+  Toolbar  | Button text appears only on the `Toolbar`
 
-In the following code sample, text is only visible in the popup container and not in the Toolbar container.
+The following example demonstrates text visibility limited to the popup container only.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,7 +117,7 @@ In the following code sample, text is only visible in the popup container and no
 
 ## Render toolbar with a less than minimum height
 
-By default, the toolbar renders with a minimum height to render items properly. You can also render a customized toolbar with a height that is less than the minimum height of the toolbar by overriding default styles from the application end.
+By default, the Toolbar renders with a minimum height to accommodate items properly. A customized toolbar with height less than the minimum can be achieved by overriding default styles from the application level.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

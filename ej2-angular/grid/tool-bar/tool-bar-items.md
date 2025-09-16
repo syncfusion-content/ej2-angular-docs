@@ -228,7 +228,7 @@ export class AppComponent implements OnInit {
 
 ## Add Custom Components to the Grid Toolbar Using Template
 
-Add components such as [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) to the Grid toolbar using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/). With `ng-template` and Angular's **@ViewChild**, you can embed interactive controls such as dropdowns or search fields. In the sample below, an AutoComplete is shown in the toolbar for filtering Grid records by ShipCity:
+Add components such as [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) to the Grid toolbar using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/). With `ng-template` and Angular's **@ViewChild**, you can embed interactive controls such as dropdowns or search fields. In the sample below, an AutoComplete is shown in the toolbar for filtering Grid records by ***ShipCity**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

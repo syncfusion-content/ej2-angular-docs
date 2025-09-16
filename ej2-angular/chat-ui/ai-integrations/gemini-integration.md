@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Gemini AI With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of Gemini AI With Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Gemini Integration with Angular Chat UI | Syncfusion
+description:  Checkout and learn about Gemini Integration with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: AI AssistView
+control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Integration of Gemini AI With Angular Chat UI component 
 
-# Integration of Gemini AI With Angular AI AssistView component 
-
-The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your Angular applications.
-
-## Getting Started with the Angular AI AssistView component
-
-Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Angular app:
-
-[Angular Getting Started Guide](../getting-started)
+The Syncfusion Chat UI supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your Angular applications.
 
 ## Prerequisites
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 * Google account to generate API key on accessing `Gemini AI`
-* Syncfusion AI AssistView for Angular `@syncfusion/ej2-angular-interactive-chat` installed in your project.
+* Syncfusion Chat UI for Angular `@syncfusion/ej2-angular-interactive-chat` installed in your project.
+
+## Getting Started with the Angular Chat UI component
+
+Before integrating Gemini AI, ensure that the Syncfusion Chat UI control is correctly rendered in your Angular app:
+
+[Angular Getting Started Guide](../getting-started)
 
 ## Install Dependencies
 
-Install the Syncfusion AI AssistView in your project
+Install the Syncfusion Chat UI in your project
 
 ```bash 
 
@@ -45,7 +44,7 @@ npm install @google/generative-ai
 
 ## Generate API Key
 
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account. If you don’t have one, create a new account. 
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account. If you don’t have one, create a new account.
 
 2. Once logged in, click on `Get API Key` from the left-hand menu or the top-right corner of the dashboard. 
 
@@ -55,9 +54,9 @@ npm install @google/generative-ai
 
 > `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
 
-##  Integration Gemini AI with AI AssistView
+##  Integration Gemini AI with Chat UI
 
-Create a standalone `app.component.ts` to integrate the Gemini AI with AI AssistView component
+Create a standalone `app.component.ts` to integrate the Gemini AI with Chat UI component
 
 * Add your generated `API Key` at the line 
 
@@ -69,15 +68,15 @@ const geminiApiKey = 'Place your API key here';
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/gemini-ai/src/app.component.ts %}
+{% include code-snippet/chat-ui/ai-integrations/gemini/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/gemini-ai/src/main.ts %}
+{% include code-snippet/chat-ui/ai-integrations/gemini/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/ai-assistview/ai-integrations/gemini-ai" %}
+{% previewsample "page.domainurl/samples/chat-ui/ai-integrations/gemini" %}
 
 ## Run and Test 
 

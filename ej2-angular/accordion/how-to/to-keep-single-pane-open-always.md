@@ -1,18 +1,18 @@
 ---
 layout: post
-title: To keep single pane open always in Angular Accordion component|Syncfusion
+title: Keep one pane open in Angular Accordion | Syncfusion
 description: Learn here all about To keep single pane open always in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: To keep single pane open always 
+control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# To keep single pane open always in Angular Accordion component
+# Keep one pane open in Angular Accordion component
 
-By default, all Accordion panels are collapsible. You can customize the Accordion to keep one panel as expanded state always. This is applicable for `Single` expand mode.
-
- {% tabs %}
+By default, all Accordion panels in the Syncfusion Angular Accordion component are collapsible in `Single` expand mode. The Accordion can be configured to always keep one panel in an expanded state, ensuring at least one content section remains visible. This is useful for scenarios requiring a default content display, such as highlighting key information or maintaining a consistent UI. This is applicable for `Single` expand mode.
+The example below demonstrates an Accordion with one pane always expanded in `Single` mode.
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-cs7/src/app.component.ts %}
 {% endhighlight %}

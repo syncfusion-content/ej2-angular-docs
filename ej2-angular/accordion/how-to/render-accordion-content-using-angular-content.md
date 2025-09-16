@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Render accordion content using angular content in Angular Accordion component|Syncfusion
+title: Render accordion content using Angular content |Syncfusion
 description: Learn here all about Render accordion content using angular content in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Render accordion content using angular content 
+control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Render accordion content using angular content in Accordion component
 
-To render the Accordion contents using ng-content, we need to use ng-template inside the each `e-accordionitem` tag with `#content` attribute, which is mandatory to render content. Now include `ng-content` inside the `ng-template` tag with select attribute of id or class name for mapping required content.
+The Syncfusion Angular Accordion component supports content projection using Angular’s `ng-content` directive, enabling reusable and flexible content integration into Accordion items. This is ideal for scenarios requiring consistent UI elements, such as forms or reusable panels, across multiple Accordion instances or components.
 
+
+To implement content projection, use `ng-template` with the `#content` attribute inside each `e-accordionitem` to define the content area. Include `ng-content` within `ng-template`, using a `select` attribute with a matching ID or class from the parent component’s template to project specific content. The `ng-content` directive is a core Angular feature requiring no additional Syncfusion dependencies.
+
+The example below demonstrates projecting content into Accordion items using `ng-content`.
 ```javascript
   <e-accordionitem expanded='true' header='Athletics'>
     <ng-template #content>
