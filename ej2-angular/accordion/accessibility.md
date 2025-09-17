@@ -3,14 +3,14 @@ layout: post
 title: Accessibility in Angular Accordion component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Accordion component
 
-The Accordion component has been designed keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, by applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
+The Accordion component is designed to meet [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
 
 The accessibility compliance for the Accordion component is outlined below.
 
@@ -40,6 +40,7 @@ The accessibility compliance for the Accordion component is outlined below.
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 ## ARIA attributes
+The Accordion component uses WAI-ARIA attributes to ensure accessibility for assistive technologies.
 
 | **Roles and Attributes** | **Functionalities**                                                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,7 +53,7 @@ The accessibility compliance for the Accordion component is outlined below.
 
 ## Keyboard interaction
 
-Keyboard navigation is enabled by default. Possible keys are:
+The Accordion supports keyboard navigation by default, adhering to WAI-ARIA practices. The following keys are supported:
 
 | Key           | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|

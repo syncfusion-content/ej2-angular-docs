@@ -3,14 +3,14 @@ layout: post
 title: Accessibility in Angular AppBar component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular AppBar component
 
-The AppBar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The AppBar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the AppBar component is outlined below.
 
@@ -41,7 +41,7 @@ The accessibility compliance for the AppBar component is outlined below.
 
 ## Keyboard interaction
 
-The AppBar component provides the focus element navigation based on its's tab key order.
+The AppBar component provides focus element navigation based on its standard tab key order.
 
 ## Ensuring accessibility
 

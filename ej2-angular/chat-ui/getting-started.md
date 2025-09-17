@@ -12,6 +12,9 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple Syncfusion **Chat** component and configure its features in an Angular application.
 
+To get started quickly with the Angular Chat UI component, you can check out this video tutorial:
+{% youtube "https://www.youtube.com/watch?v=01mflB3c8WQ" %}
+
 ## Dependencies
 
 The following list of dependencies are required to use the Angular Chat UI component in your application.
