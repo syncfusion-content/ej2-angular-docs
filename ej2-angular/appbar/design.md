@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Design in Angular Appbar component | Syncfusion
-description: Learn here all about Design in Syncfusion Angular Appbar component of Syncfusion Essential JS 2 and more.
+title: Design in Angular AppBar component | Syncfusion
+description: Learn here all about Design in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Design 
+control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Spacer
 
-`Spacer` is used to provide spacing between the AppBar contents which gives additional space to the content layout.
+`Spacer` provides spacing between AppBar content elements, creating additional space in the content layout for better visual organization.
 
-The following example depicts the code to provide spacing between the home and pan buttons in the AppBar:
+The following example demonstrates how to add spacing between the home and pan buttons in the AppBar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +30,9 @@ The following example depicts the code to provide spacing between the home and p
 
 ## Separator
 
-`Separator` shows a vertical line to visually group or separate the AppBar contents.
+`Separator` displays a vertical line that visually groups or separates AppBar content elements for improved organization.
 
-The following example depicts the code to provide a vertical line between a group of buttons in the AppBar.
+The following example demonstrates how to add a vertical line between a group of buttons in the AppBar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,25 +46,9 @@ The following example depicts the code to provide a vertical line between a grou
   
 {% previewsample "page.domainurl/samples/appbar/separator-cs1" %}
 
-## Media Query
-
-Media Query is used to adjusting the AppBar for different screen sizes. Resize the screen to observe the responsive layout of the AppBar.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/media-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/media-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/appbar/media-cs1" %}
-
 ## Designing AppBar with Menu
 
-AppBar is rendered with a Menu component in its AppBar header area. Menu component's styles are inherited from the AppBar component using the `e-inherit` CSS class.
+The AppBar renders with a Menu component in its header area. The Menu component inherits styles from the AppBar component using the `e-inherit` CSS class, ensuring consistent theming and appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +64,7 @@ AppBar is rendered with a Menu component in its AppBar header area. Menu compone
 
 ## Designing AppBar with Buttons
 
-The AppBar is rendered with a Button and DropDownButton component in its AppBar header area. Button and DropDownButton components’ styles are inherited from the AppBar component using the `e-inherit` CSS class.
+The AppBar renders with Button and DropDownButton components in its header area. These components inherit styles from the AppBar using the `e-inherit` CSS class, maintaining visual consistency across the interface.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +80,7 @@ The AppBar is rendered with a Button and DropDownButton component in its AppBar 
 
 ## Designing AppBar with SideBar
 
-The AppBar is rendered with the SideBar component below the AppBar. Click on the menu icon to expand/collapse the Sidebar. In the following sample, the `toggle` method has been used to show or hide the Sidebar on the AppBar button click.
+The AppBar integrates with the SideBar component positioned below the AppBar. Click the menu icon to expand or collapse the Sidebar. This example uses the `toggle` method to show or hide the Sidebar when the AppBar button is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,3 +93,19 @@ The AppBar is rendered with the SideBar component below the AppBar. Click on the
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/appbar/sidebar-cs1" %}
+
+## Media Query
+
+Media Query enables the AppBar to adapt to different screen sizes with responsive behavior. Resize the screen to observe how the AppBar layout adjusts dynamically.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/appbar/media-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/appbar/media-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/appbar/media-cs1" %}

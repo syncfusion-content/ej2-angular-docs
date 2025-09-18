@@ -2,27 +2,21 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
+    imports: [GanttModule],
 
-providers: [DayMarkersService],
-standalone: true,
+    providers: [DayMarkersService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [holidays] = "holidays"></ejs-gantt>`,
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [holidays] = "holidays"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
+export class AppComponent {
     // Data for Gantt
     public data?: object[];
     public taskSettings?: object;
@@ -39,15 +33,15 @@ export class AppComponent{
         };
         this.holidays = [{
             from: "04/04/2019",
-            to:"04/05/2019",
+            to: "04/05/2019",
             label: " Public holidays",
-            cssClass:"e-custom-holiday"
+            cssClass: "e-custom-holiday"
         },
         {
             from: "04/12/2019",
-            to:"04/12/2019",
+            to: "04/12/2019",
             label: " LOcal holidays",
-            cssClass:"e-custom-holiday"
+            cssClass: "e-custom-holiday"
         }];
     }
 }

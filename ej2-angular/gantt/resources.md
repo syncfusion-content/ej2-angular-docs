@@ -1,32 +1,29 @@
 ---
 layout: post
 title: Resources in Angular Gantt component | Syncfusion
-description: Learn here all about Resources in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure resources in the Syncfusion Angular Gantt component for task allocation and utilization visualization.
 platform: ej2-angular
-control: Resources 
+control: Resources
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Resources in Angular Gantt component
 
-In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
+Resources in the Angular Gantt component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property, resources map to tasks using [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
-## Resource collection
+## Configure resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields) property.
+The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields):
+- `id`: Maps to a unique identifier for task assignment.
+- `name`: Maps to the resource name displayed in labels or columns.
+- `unit`: Maps to the work capacity percentage (0-100%) per day.
+- `group`: Maps to categories for grouping resources.
 
-Resource fields | Description
------|-----
-[`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/#id) | This field is used to assign resources to the tasks.
-[`name`](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/#name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings) property.
-[`unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/#unit) | It indicates the amount of work that can be done by a resource for the task in a day.
-[`group`](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
-
-The following code snippets shows resource collection and how it assigned to Gantt control.
+The following code demonstrates resource collection setup:
 
 ```typescript
-var projectResources= [
+var projectResources = [
     { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50},
     { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
     { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
@@ -34,54 +31,52 @@ var projectResources= [
     { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
     { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 },
 ];
-export default {
-  data: function() {
-      return{
-            resourceFields: {
-               id: 'resourceId', //resource Id Mapping
-               name: 'resourceName', //resource Name mapping
-               unit: 'resourceUnit', //resource Unit mapping
-               group: 'resourceGroup' //resource Group mapping
-            }
-            resources: projectResources //resource collection dataSource
-        };
-    },
-};  
 
+public resourceFields = {
+    id: 'resourceId',
+    name: 'resourceName',
+    unit: 'resourceUnit',
+    group: 'resourceGroup'
+};
 ```
 
-## Assign resource
+This configuration maps resources for assignment and display.
 
-We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [`resourceInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo) property.
+## Assign resources to tasks
 
-Resources are assigned to tasks in following ways.
+Resources are assigned to tasks using resource IDs in the data source, mapped via [`taskFields.resourceInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
 
-### Assign resource alone
-
-If the unit is not specified for specific resource, the amount of work done will be consider as 100% by default. In such cases, the resource unit will not be displayed in Gantt UI.
+**Single resource assignment**
+Assign a single resource without unit for default 100% allocation:
 
 ```typescript
-
-      { TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('04/02/2019'), Duration: 0, Progress: 50, resources: [1] }
-
+{ 
+    TaskID: 2, 
+    TaskName: 'Identify site location', 
+    StartDate: new Date('04/02/2019'), 
+    Duration: 0, 
+    Progress: 50, 
+    resources: [1] 
+}
 ```
 
-### Assign resource with unit
-
-We can assign the quantity of work done by the resources for the specific task as like below code snippet.
+**Multiple resources with custom units**
+Assign multiple resources with specific units:
 
 ```typescript
-
-    {
-        TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('03/29/2019'), Duration: 2,
-        Progress: 30,  resources: [{ resourceId: 1, Unit: 70 }, 6]
-    }
-
+{
+    TaskID: 2, 
+    TaskName: 'Identify site location', 
+    StartDate: new Date('03/29/2019'), 
+    Duration: 2,
+    Progress: 30,  
+    resources: [{ resourceId: 1, unit: 70 }, 6]
+}
 ```
 
-When resource unit is defined in resource collection, the amount of work done by that particular resource will be same for all the tasks.
+Units from the resource collection apply unless overridden at the task level.
 
-The following code snippet shows how to assign the resource for each task and map to Gantt control.
+The following example shows resource assignment:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,24 +87,24 @@ The following code snippet shows how to assign the resource for each task and ma
 {% include code-snippet/gantt/resources/assign-resources-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/resources/assign-resources-cs1" %}
 
-## Add/Edit resource collection
+## Manage resource assignments
 
-By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in edit dialog by double click on the unit cell.
+Add or remove resources via cell or dialog editing. Cell editing modifies assignments by double-clicking the resource cell, while dialog editing uses the resource tab in the edit dialog.
 
-![Cell Edit](images/cellEdit-resource.png)
+![Resource cell editing](./images/cellEdit-resource.png)
+*Alt text: Resource cell editing in the Gantt grid for assignment modifications.*
 
-![Dialog Edit](images/dialogedit-resource.png)
+![Resource dialog editing](./images/dialogedit-resource.png)
+*Alt text: Resource dialog editing tab for multiple allocations and units.*
 
-## Custom background colors for resource column and taskbar
+## Customize resource styling
 
-In the Angular Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
+Customize resource display using column templates for the resource column and the [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
-
-The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
+The following example demonstrates custom resource styling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,5 +115,12 @@ The following code snippet demonstrates how to customize the background colors o
 {% include code-snippet/gantt/resources/resource-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/resources/resource-customization-cs1" %}
+
+This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
+
+## See also
+- [How to configure resource view?](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

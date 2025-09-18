@@ -3,18 +3,18 @@ layout: post
 title: Set custom animation in Angular Tab component | Syncfusion
 description: Learn here all about Set custom animation in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Set custom animation 
+control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Set custom animation in Angular Tab component
 
-Tab supports custom animations for both previous and next actions from the provided animation option of `Animation` library.
-The [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab#animation) property also allows you to set [`easing`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings#easing), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings#duration), and various other [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings#effect).
+The Tab component supports custom animations for both previous and next tab transitions using the built-in animation options from Syncfusion's Animation library. The [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab/#animation) property allows you to configure [`easing`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#easing), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#duration), and various animation [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#effect) options to create smooth, visually appealing tab transitions.
 
-Default animation is given as `SlideLeftIn` for [`previous`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel#previous) tab animation and `SlideRightIn` for [`next`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel#next) tab animation.
-You can also disable the animation by setting the animation effect as `None`. Also, please use the following CSS to disable indicator animation for animation effect as `None`.
+The default animation configuration uses `SlideLeftIn` for [`previous`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#previous) tab animation and `SlideRightIn` for [`next`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#next) tab animation. Animation can be completely disabled by setting the animation effect as `None`.
+
+When disabling animations by setting the effect to `None`, use the following CSS to also disable the indicator animation for a consistent experience:
 
 ```CSS
 
@@ -24,7 +24,7 @@ You can also disable the animation by setting the animation effect as `None`. Al
 
 ```
 
-The sample demonstrates some types of animation that suits Tab. You can check all the animation effects here.
+The following sample demonstrates various animation types that work effectively with the Tab component. Explore different animation effects to find the best fit for your application's user experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

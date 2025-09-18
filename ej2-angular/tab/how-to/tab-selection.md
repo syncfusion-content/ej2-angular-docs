@@ -3,14 +3,14 @@ layout: post
 title: Tab selection in Angular Tab component | Syncfusion
 description: Learn here all about Tab selection in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Tab selection 
+control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Tab selection in Angular Tab component
 
-We can able to find the tab selection whether it is selected by user interaction or programmatically way in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event argument with the field of `isInteracted`. When the user changes the tab through click actions it will return true otherwise, it will return false. The following code example depicts to find the tab selecting the state in selecting and selected events.
+You can determine whether tab selection occurs through user interaction or programmatic methods using the `isInteracted` field in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event arguments. When users change tabs through click actions, this property return `true` otherwise, it will return `false`. The following code example demonstrates how to identify the tab selection state in both selecting and selected events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Set state persistence of the tab component in Angular Tab component | Syncfusion
+title: Set state persistence of Angular Tab component | Syncfusion
 description: Learn here all about Set state persistence of the tab component in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Set state persistence of the tab component 
+control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Set state persistence of the tab component in Angular Tab component
 
-State persistence allows the Tab to retain the current modal value in the browser cookies for state maintenance.
-This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/tab#enablepersistence) property which is set to false by default.
-When it is set to true, some of the Tab component model values will be retained even after refreshing the page.
+State persistence allows the Tab component to retain the current model values in the browser's local storage for state maintenance.
+This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/tab/#enablepersistence) property which is set to false by default.
+When set to true, the Tab component will preserve specific model values will be retained even after page refreshes or browser sessions.
 
 The following sample demonstrates how to set state persistence of the Tab component.
 

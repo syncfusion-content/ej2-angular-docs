@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Adding dynamic items with content reuse in Angular Tab component | Syncfusion
+title: Add dynamic Tab with content reuse in Angular | Syncfusion
 description: Learn here all about Adding dynamic items with content reuse in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Adding dynamic items with content reuse 
+control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Adding dynamic items with content reuse in Angular Tab component
 
-You can add dynamic tabs by reusing the content using Angular **TemplateRef**. Tabs can be added dynamically by passing array of items and index value to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab#addtab) method.
+You can add dynamic tabs by reusing content through Angular **TemplateRef**, which provides an efficient way to manage complex tab content without recreating components. Dynamic tabs can be added programmatically by passing an array of items and index value to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#addtab) method.
 
-Content reuse can be achieved by using the following steps:
-1. Create a TemplateRef variable in your component(app.component.ts) file.
-2. Access the TemplateRef using ViewChild on the `<ng-template>` element.
-3. Provide separate TemplateRef declaration for each angular component and pass content by dynamically adding tab. It will reuse the content of angular component.
+Content reuse can be achieved using the following steps:
+
+1. **Create a TemplateRef variable**: Define TemplateRef variables in your component (app.component.ts) file to hold references to your template content.
+2. **Access the TemplateRef using ViewChild**: Use the `@ViewChild` decorator on `<ng-template>` elements to programmatically access template references.
+3. **Implement separate TemplateRef declarations**: Provide distinct TemplateRef declarations for each Angular component type and pass the content when dynamically adding tabs. This enables efficient content reuse across multiple tab instances while preserving component state and functionality.
 
 Refer to the following sample.
 
