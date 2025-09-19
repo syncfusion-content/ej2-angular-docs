@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Scheduler interactions in Angular Schedule component | Syncfusion
+title: Scheduler interactions in Angular Schedule | Syncfusion
 description: Learn about various interactions in the Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Scheduler interactions 
+control: Schedule
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Scheduler interactions in Angular Schedule component
 
-The following table describes the Scheduler actions and also illustrates how those actions are carried out through mouse and touch interactions on Scheduler.
+The following table outlines common Scheduler actions, detailing how each action is performed using mouse and touch interactions.
 
 |   Actions   | Mouse interaction | Touch interaction |
 |-------------|-------------------|-------------------|
