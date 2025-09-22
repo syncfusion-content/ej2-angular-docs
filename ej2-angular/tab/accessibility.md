@@ -3,14 +3,14 @@ layout: post
 title: Accessibility in Angular Tab component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Tab component
 
-The Tab component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Tab component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Tab component is outlined below.
 
@@ -41,37 +41,37 @@ The accessibility compliance for the Tab component is outlined below.
 
 ## ARIA attributes
 
-Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices. The following list of attributes are added in the Tab.
+The Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. The Tab is supported with ARIA Accessibility which is accessible by screen readers and other assistive technology devices. The following list of attributes are added in the Tab component.
 
 | **Roles and Attributes** | **Functionalities** |
 | --- | --- |
-| tablist | Attribute is set to the Tab header element that describes actual role of the element.|
-| tab | Attribute is set to the Tab items element to  indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
-| tabpanel | Attribute is set to the Tab content that describes the role for viewing the active content.|
-| aria-orientation    | Attribute is set to the Tab header element indicates the Tab header orientation. Default value of this attribute is horizontal. |
-| aria-selected       | Attribute set to the Tab items to indicates the selection state for Tab items. Active Tab is set to true for this attribute. |
-| aria-labelledby       | Attribute is set to the Tab content element to indicates the associated Tab header for the content. |
-| aria-controls       | Attribute is set to the Tab items element to indicates the associated `tabpanel` for the header. |
-| aria-haspopup       | Attribute is set to the Popup element  to indicates the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
-| aria-disabled       | Attribute set to the Tab items to It indicates the disabled state of the Tab. |
+| tablist | This attribute is set to the Tab header element that describes the actual role of the element.|
+| tab | This attribute is set to the Tab items element to indicate an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
+| tabpanel | This attribute is set to the Tab content that describes the role for viewing the active content.|
+| aria-orientation    | This attribute is set to the Tab header element to indicate the Tab header orientation. The default value of this attribute is horizontal. |
+| aria-selected       | This attribute is set to the Tab items to indicate the selection state for Tab items. The active Tab is set to true for this attribute. |
+| aria-labelledby       | This attribute is set to the Tab content element to indicate the associated Tab header for the content. |
+| aria-controls       | This attribute is set to the Tab items element to indicate the associated `tabpanel` for the header. |
+| aria-haspopup       | This attribute is set to the Popup element to indicate the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
+| aria-disabled       | This attribute is set to the Tab items to indicate the disabled state of the Tab. |
 
 ## Keyboard interaction
 
-By default, keyboard navigation is enabled. This component implements keyboard navigation support by following the WAI-ARIA practices. Once focused on the active Tab element, you can use the following key combination for interacting with the Tab.
+By default, keyboard navigation is enabled. This component implements keyboard navigation support by following the WAI-ARIA practices. Once focused on the active Tab element, you can use the following key combinations for interacting with the Tab component.
 
 | Key           | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
 | <kbd>Left</kbd>    | Moves focus to the previous Tab. If focus is on the first Tab, the focus will not move to any Tab. |
 | <kbd>Right</kbd>   | Moves focus to the next Tab. If focus is on the last Tab element, the focus will not move to any Tab. |
-| <kbd>Enter</kbd> or <kbd> Space</kbd>  | Selects the Tab if it is not selected. Opens the popup dropdown icon if it is focussed. Select the Tab item as active when popup item is focussed. |
+| <kbd>Enter</kbd> or <kbd>Space</kbd>  | Selects the Tab if it is not selected. Opens the popup dropdown icon if it is focused. Selects the Tab item as active when popup item is focused. |
 | <kbd>Esc(Escape)</kbd>           | Closes the popup if popup is in opened state.       |
 | <kbd>Down</kbd> or <kbd>Up</kbd>   | When the popup is open and focused, it will move to previous/next Tab items of the popup in the vertical direction.|
 |  <kbd>Home</kbd>    | Moves focus to the first Tab. |
-|  <kbd>End </kbd>   | Moves focus to the last Tab. |
-|  <kbd>Shift + F10 </kbd>   | If popup mode is enabled, it opens the popup when the Tab is focused. |
+|  <kbd>End</kbd>   | Moves focus to the last Tab. |
+|  <kbd>Shift + F10</kbd>   | If popup mode is enabled, it opens the popup when the Tab is focused. |
 |  <kbd>Delete</kbd>    | Deletes the Tab, if close button is enabled in Tab header.|
-| <kbd>Tab</kbd>     | To Move focus through the interactive elements.                 |
-| <kbd>Shift + Tab</kbd> | To Move focus through the interactive elements.             |
+| <kbd>Tab</kbd>     | Moves focus through the interactive elements.                 |
+| <kbd>Shift + Tab</kbd> | Moves focus through the interactive elements.             |
 
 ## Ensuring accessibility
 

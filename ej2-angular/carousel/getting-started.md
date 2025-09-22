@@ -3,18 +3,18 @@ layout: post
 title: Getting started with Angular Carousel component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Carousel component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Carousel component
 
-This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
+This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-components/angular-carousel), and demonstrates the basic usage of the Carousel module in an Angular environment.
 
 ## Dependencies
 
-The list of dependencies required to use the Carousel module in your application is given below:
+The following dependencies are required to use the Carousel module in your application:
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -26,7 +26,7 @@ The list of dependencies required to use the Carousel module in your application
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI, use the following command:
 
 ```
 npm install -g @angular/cli
@@ -34,24 +34,24 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below:
 
 ```
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Carousel  Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Carousel Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. The packages are compatible with Angular version 12 and above. To download the package, use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -59,9 +59,9 @@ Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncf
 npm install @syncfusion/ej2-angular-navigations --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
 
@@ -69,24 +69,24 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below:
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will display a warning.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Carousel component
 
-Modify the template in `app.component.ts` file with `ejs-carousel` to render the Carousel component.
+Modify the template in the `app.component.ts` file with `ejs-carousel` to render the Carousel component.
 
 ```javascript
 import { CarouselModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from "@angular/core";
 
 @Component({
-imports: [ CarouselModule],
+imports: [CarouselModule],
 standalone: true,
 selector: "app-root",
 template: `<!-- To Render Carousel. -->
@@ -142,7 +142,7 @@ export class AppComponent {}
 
 ## Adding CSS reference
 
-Add Carousel component's styles as given below in `style.css`.
+Add Carousel component's styles as given below in `style.css`:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";

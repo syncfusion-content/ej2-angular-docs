@@ -3,25 +3,23 @@ layout: post
 title: Style in Angular Accordion component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Accordion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style in Angular Accordion component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The Angular Accordion component can be customized using CSS to modify its appearance, such as borders, colors, icons, and hover effects. These styles allow alignment with your application’s theme or branding.
 
 ## Customizing Accordion
 
-Use the following CSS to customize the Accordion.
+Modify the Accordion’s overall appearance, such as adding a border to match your application’s design, using the following CSS:
 
 ```CSS
-
 .e-accordion {
     border: 5px solid rgb(173, 255, 47);
 }
-
 ```
 
 ## Customizing the list items
@@ -29,13 +27,11 @@ Use the following CSS to customize the Accordion.
 Use the following CSS to customize the items of Accordion.
 
 ```CSS
-
 .e-accordion .e-acrdn-item {
     text-align: center;
     color: pink;
     background-color: #2fa1ff;
 }
-
 ```
 
 ## Customizing Accordion's header
@@ -91,10 +87,8 @@ Use the following CSS to customize the selected accordion item.
 Use the following CSS to customize the selected accordion item text.
 
 ```CSS
-
 .e-accordion .e-acrdn-item.e-select.e-active>.e-acrdn-header .e-acrdn-header-content,
 .e-accordion .e-acrdn-item.e-select.e-item-focus>.e-acrdn-header .e-acrdn-header-content {
     color: #2fa1ff !important;
 }
-
 ```

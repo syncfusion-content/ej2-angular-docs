@@ -3,34 +3,32 @@ layout: post
 title: Getting started with Angular Tab component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Tab component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Tab component
 
-This section briefly explains about how to create a simple Tab using Angular by configuring the Tab header content.
+This section explains how to create a simple Tab component using Angular by configuring the Tab header and content.
 
 ## Dependencies
 
-The following is the list of dependencies required to use the Angular Tab component in your application.
+The following dependencies are required to use the Angular Tab component in your application:
 
 ```javascript
-
 |-- @syncfusion/ej2-angular-navigations
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-navigations
         |-- @syncfusion/ej2-buttons
         |-- @syncfusion/ej2-popups
-
 ```
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Use [`Angular CLI`](https://github.com/angular/angular-cli) to set up your Angular applications.
+To install Angular CLI, use the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -38,7 +36,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI command below:
 
 ```bash
 ng new my-app
@@ -47,33 +45,33 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Tab Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and above. To download the package, use the command below:
 
-Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-navigations --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below:
 
-Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below:
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
@@ -83,21 +81,20 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion`package folder.
-This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in the `../node_modules/@syncfusion` package folder.
+These can be referenced in [src/styles.css] using the following code:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-
 ```
 
 ## Add Tab component
 
 Modify the template in [src/app/app.component.ts] file to render the Angular Tab component.
-Add the Angular Tab by using `<ejs-tab>` selector in **template** section of the app.component.ts file.
+Add the Angular Tab by using `<ejs-tab>` selector in the **template** section of the app.component.ts file:
 
 ```typescript
 import { TabModule } from '@syncfusion/ej2-angular-navigations'
@@ -121,15 +118,13 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-
 ```
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. The item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel/#content) for each Tab.
+The Tab can be rendered by defining a JSON array. Each item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel/#content) for each Tab:
 
 ```typescript
-
 import { TabModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 
@@ -165,7 +160,7 @@ export class AppComponent {
 
 public content1: string = 'Facebook is an online social networking service headquartered in Menlo Park, California. Its website was ' +
         'launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo ' +
-        'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s ' +
+        'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'s ' +
         'membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford ' +
         'University. It gradually added support for students at various other universities and later to high-school students.';
 
@@ -175,18 +170,17 @@ public content2: string = 'WhatsApp Messenger is a proprietary cross-platform in
         'base of up to one billion,[10] making it the most globally popular messaging application. WhatsApp Inc., based in ' +
         'Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.';
 }
-
 ```
 
 ## Run the application
 
-After completing the configuration required to render a basic Tab, run the following command to display the output in your default browser.
+After completing the configuration required to render a basic Tab, run the following command to display the output in your default browser:
 
 ```shell
 npm start
 ```
 
-The following example illustrates the output in your browser.
+The following example illustrates the output in your browser:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,11 +198,10 @@ The following example illustrates the output in your browser.
 
 ## Initialize the Tab using template
 
-The Tab component can also be rendered using the Angular template `ng-template`. The Tab consists this template support for both its header and content of the item property.
-You need to follow the below structure of `ng-template` to render the Tab,
+The Tab component can also be rendered using the Angular template `ng-template`. The Tab supports this template approach for both its header and content properties of each item.
+You need to follow the structure below for `ng-template` to render the Tab:
 
 ```html
-
   <ejs-tab id="element">
     <e-tabitems>
         <e-tabitem>
@@ -222,7 +215,6 @@ You need to follow the below structure of `ng-template` to render the Tab,
         </e-tabitem>
     </e-tabitems>
   </ejs-tab>
-
 ```
 
 {% tabs %}
@@ -239,12 +231,11 @@ You need to follow the below structure of `ng-template` to render the Tab,
 
 ## Initialize the Tab using HTML elements
 
-The Angular Tab component can be rendered based on the given HTML element using `<ejs-tab>` tag.
-Header section must be enclosed with in a wrapper element using `e-tab-header` class and corresponding content must be mapped with `e-content` class.
-You need to follow the below structure of HTML elements to render the Tab,
+The Angular Tab component can be rendered based on given HTML elements using the `<ejs-tab>` tag.
+The header section must be enclosed within a wrapper element using the `e-tab-header` class and corresponding content must be mapped with the `e-content` class.
+You need to follow the HTML structure below to render the Tab:
 
 ```html
-
   <ejs-tab id="element">   --> Root Tab element
     <div class="e-tab-header">      --> Tab header
        <div>   --> Header Item
@@ -255,7 +246,6 @@ You need to follow the below structure of HTML elements to render the Tab,
        </div>
     </div>
   </ejs-tab>
-
 ```
 
 {% tabs %}

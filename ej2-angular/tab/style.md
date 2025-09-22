@@ -3,18 +3,18 @@ layout: post
 title: Style in Angular Tab component | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style in Angular Tab component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the Tab component's appearance based on user preference. These styles can be applied through Angular component styles, external stylesheets, or global CSS files.
 
 ## Customizing Tab
 
-Use the following CSS to customize the Tab.
+Use the following CSS to customize the overall Tab component container, including its border and background appearance.
 
 ```CSS
 
@@ -26,7 +26,7 @@ Use the following CSS to customize the Tab.
 
 ## Customizing the Tab items
 
-Use the following CSS to customize the header items of Tab.
+Use the following CSS to customize the header items of the Tab component. This affects the visual appearance of the tab header area where tab titles are displayed.
 
 ```CSS
 
@@ -37,7 +37,7 @@ Use the following CSS to customize the header items of Tab.
 
 ```
 
-Use the following CSS to customize the content items of Tab.
+Use the following CSS to customize the content items of the Tab component. This modifies the appearance of the content area that displays when each tab is selected.
 
 ```CSS
 
@@ -50,7 +50,7 @@ Use the following CSS to customize the content items of Tab.
 
 ## Customizing Tab's header
 
-Use the following CSS to customize the header of Tab control.
+Use the following CSS to customize the header section of the Tab component where tab titles are rendered.
 
 ```CSS
 
@@ -62,7 +62,7 @@ Use the following CSS to customize the header of Tab control.
 
 ## Customizing Tab's header icon
 
-Use the following CSS to customize the header item icon of Tab control.
+Use the following CSS to customize the header item icon of the Tab component.
 
 ```CSS
 
@@ -74,7 +74,7 @@ Use the following CSS to customize the header item icon of Tab control.
 
 ## Customizing Tab's content
 
-Use the following CSS to customize the content of Tab control.
+Use the following CSS to customize the content area of the Tab component.
 
 ```CSS
 
@@ -84,9 +84,9 @@ Use the following CSS to customize the content of Tab control.
 
 ```
 
-## Customizing the hover state of Tab control
+## Customizing the hover state of Tab component
 
-Use the following CSS to customize the tab item when hovering.
+Use the following CSS to customize the appearance of tab items when users hover over them.
 
 ```CSS
 
@@ -107,9 +107,9 @@ Use the following CSS to customize the tab item popup icon when hovering.
 
 ```
 
-## Customizing selected item of Tab control
+## Customizing selected item of Tab component
 
-Use the following CSS to customize the selected tab item.
+Use the following CSS to customize the visual appearance of the currently selected tab item.
 
 ```CSS
 
