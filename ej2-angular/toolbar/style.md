@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style in Angular Toolbar component | Syncfusion
+title: Angular Toolbar Styling and Customization | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Toolbar component
+# Angular Toolbar styling and customization
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the Toolbar component's appearance based on user preference.
 
-## Customizing Toolbar
+## Customizing the Toolbar container
 
-Use the following CSS to customize the Toolbar.
+Use the following CSS to customize the Toolbar container.
 
 ```CSS
 
@@ -24,9 +24,9 @@ Use the following CSS to customize the Toolbar.
 
 ```
 
-## Customizing the Toolbar items
+## Customizing Toolbar items
 
-Use the following CSS to customize the items of Toolbar.
+Use the following CSS to customize the items within the Toolbar.
 
 ```CSS
 
@@ -37,7 +37,7 @@ Use the following CSS to customize the items of Toolbar.
 
 ```
 
-Use the following CSS to customize the button in the items of Toolbar.
+Use the following CSS to customize the button elements within the Toolbar items.
 
 ```CSS
 
@@ -48,9 +48,9 @@ Use the following CSS to customize the button in the items of Toolbar.
 
 ```
 
-## Customizing Toolbar's item icon
+## Customizing Toolbar item icons
 
-Use the following CSS to customize the item icon of Toolbar control.
+Use the following CSS to customize the icon appearance within Toolbar items.
 
 ```CSS
 
@@ -61,9 +61,9 @@ Use the following CSS to customize the item icon of Toolbar control.
 
 ```
 
-## Customizing the hover state of Toolbar control
+## Customizing hover state
 
-Use the following CSS to customize the toolbar item when hovering.
+Use the following CSS to customize the appearance of Toolbar items during hover interactions.
 
 ```CSS
 
@@ -74,9 +74,9 @@ Use the following CSS to customize the toolbar item when hovering.
 
 ```
 
-## Customizing selected item of Toolbar control
+## Customizing selected item state
 
-Use the following CSS to customize the selected toolbar item.
+Use the following CSS to customize the appearance of focused or selected Toolbar items.
 
 ```CSS
 

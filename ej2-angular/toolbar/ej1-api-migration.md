@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Toolbar component | Syncfusion
+title: EJ1 API migration in Angular Toolbar component | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Toolbar component
+# EJ1 API migration in Angular Toolbar component
 
 This article describes the API migration process of Toolbar component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -18,8 +18,8 @@ This article describes the API migration process of Toolbar component from Essen
 
 |   **Behavior**  | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |-----------------|--------------------------------|--------------------------------|
-|   Localization   | <b>Not Applicable</b>  | **Property** : locale<br/> `<ejs-toolbar id='toolbar' locale='fr-BE'></ejs-toolbar>`  |
-|   Right to left  | **Property:** enableRTL<br/> `<ej-toolbar id="toolbar" [enableRTL]="true"></ej-toolbar>` | **Property:** enableRTL<br/> `<ejs-toolbar id='toolbar' [enableRTL]='true'> </ejs-toolbar>`  |
+|   Localization   | <b>Not Applicable</b>  | **Property** : locale<br/> `<ejs-toolbar id="toolbar" locale="fr-BE"></ejs-toolbar>`  |
+|   Right to left  | **Property:** enableRTL<br/> `<ej-toolbar id="toolbar" [enableRTL]="true"></ej-toolbar>` | **Property:** enableRTL<br/> `<ejs-toolbar id="toolbar" [enableRTL]="true"> </ejs-toolbar>`  |
 
 ## DataSource
 
@@ -46,11 +46,11 @@ This article describes the API migration process of Toolbar component from Essen
 
 |  **Behavior**  | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |----------------|--------------------------------|--------------------------------|
-| Default | <**Property** : items<br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>` | **Property** : items<br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>` |
+| Default | **Property** : items<br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>` | **Property** : items<br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>` |
 | Align | <b>Not Applicable</b> | **Property** : items[0].Align <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>`<br/> **TS:**<br/>  public items: Object[] = [{ align: 'center'}];|
 |   Custom class   | <b>Not Applicable</b> | **Property** : items[0].cssClass <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ cssClass: 'e-class'}];|
 |    Group Name   | **Property** : items[0].group <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ group: ''}]; | <b>Not Applicable</b>|
-|   HtmlAttributes   | **Property** : items[0].htmlAttributes <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ htmlAttributes: {  } }];| **Property** : items[0].htmlAttributes <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ej-toolbar> </ejs-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ htmlAttributes: {  } }];|
+|   HtmlAttributes   | **Property** : items[0].htmlAttributes <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ htmlAttributes: {  } }];| **Property** : items[0].htmlAttributes <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ htmlAttributes: {  } }];|
 | Id |**Property** : items[0].id <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{  id: ''  }]; | **Property** : items[0].id <br/> `<ejs-toolbar id="toolbar" [items]="items"> </ejs-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{  id: ''  }];|
 |    ImageAttributes    | **Property** : items[0].imageAttributes <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ imageAttributes: {  } }]; | <b>Not Applicable</b>|
 | ImageUrl | **Property** : items[0].imageUrl <br/> `<ej-toolbar id="toolbar" [items]="items"> </ej-toolbar>`<br/> **TS:**<br/> public items: Object[] = [{ imageUrl: '' }]; | <b>Not Applicable</b>|

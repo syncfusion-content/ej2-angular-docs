@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Position in Angular Appbar component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular Appbar component of Syncfusion Essential JS 2 and more.
+title: Position in Angular AppBar component | Syncfusion
+description: Learn here all about Position in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Position 
+control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular Appbar component
+# Position in Angular AppBar component
 
-The position of the AppBar can be set using the [position](https://ej2.syncfusion.com/angular/documentation/api/appbar#position) and [isSticky](https://ej2.syncfusion.com/angular/documentation/api/appbar#issticky) property. The AppBar provides the following options for setting its position:
+The AppBar position can be configured using the [position](https://ej2.syncfusion.com/angular/documentation/api/appbar/#position) and [isSticky](https://ej2.syncfusion.com/angular/documentation/api/appbar/#issticky) properties. The AppBar provides the following positioning options:
 
 * Top AppBar
 * Bottom AppBar
@@ -18,7 +18,7 @@ The position of the AppBar can be set using the [position](https://ej2.syncfusio
 
 ## Top AppBar
 
-The top AppBar is the default one in which it positions the AppBar at the top of the content.
+The top AppBar is the default positioning option that places the AppBar at the top of the page content. The [position](https://ej2.syncfusion.com/angular/documentation/api/appbar/#position) property defaults to `Top`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The top AppBar is the default one in which it positions the AppBar at the top of
 
 ## Bottom AppBar
 
-This position can be set to the AppBar by setting `Bottom` to the property [position](https://ej2.syncfusion.com/angular/documentation/api/appbar#position). The bottom AppBar positions the AppBar at the bottom of the content.
+The bottom AppBar positioning places the AppBar at the bottom of the page content. Set the [position](https://ej2.syncfusion.com/angular/documentation/api/appbar/#position) property to `Bottom` to achieve this layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ This position can be set to the AppBar by setting `Bottom` to the property [posi
 
 ## Sticky AppBar
 
-This position can be set to the AppBar by setting `true` to the property [isSticky](https://ej2.syncfusion.com/angular/documentation/api/appbar#issticky). AppBar will be sticky while scrolling the AppBar content.
+This position can be set to the AppBar by setting `true` to the property [isSticky](https://ej2.syncfusion.com/angular/documentation/api/appbar/#issticky). AppBar will be sticky while scrolling the AppBar content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

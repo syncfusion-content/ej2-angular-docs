@@ -3,18 +3,18 @@ layout: post
 title: Getting started with Angular Toolbar component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Toolbar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Toolbar component
 
-This section explains briefly about how to create a simple **Toolbar** using Angular and configuring the Toolbar items like button, separator and input components.
+This section explains how to create a simple **Toolbar** using Angular and configure Toolbar items like button, separator and input components.
 
 ## Dependencies
 
-Install the below required dependency package in order to use the `Toolbar` component in your application.
+Install the required dependency package to use the `Toolbar` component in your application.
 
 ```javascript
 |-- @syncfusion/ej2-angular-navigations
@@ -49,7 +49,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -78,19 +78,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-
-```
 
 ## Add Toolbar component
 
@@ -124,13 +111,26 @@ export class AppComponent { }
 
 ```
 
+## Adding CSS reference
+
+The following CSS files are available in `../node_modules/@syncfusion` package folder.
+This can be referenced in [src/styles.css] using following code.
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+
+```
+
 * Now, run the application in the browser using the following command.
 
   ```shell
   npm start
   ```
 
-The following code example depicts the way to initialize The Toolbar on a single element.
+The following code example shows how to initialize the Toolbar on a single element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,6 +147,7 @@ The following code example depicts the way to initialize The Toolbar on a single
 ## Initialize the Toolbar using HTML elements
 
 The Toolbar component can be rendered based on the given HTML element using `<ejs-toolbar>`.
+This approach provides more flexibility for custom styling and complex layouts when the standard item configuration is not sufficient.
 You need to follow the below structure of HTML elements to render the Toolbar inside the `<ejs-toolbar>` tag.
 
 ```html

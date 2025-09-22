@@ -3,23 +3,22 @@ layout: post
 title: Add reactive forms within a tab in Angular Tab component | Syncfusion
 description: Learn here all about Add reactive forms within a tab in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Add reactive forms within a tab 
+control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Add reactive forms within a tab in Angular Tab component
 
-As we know already, we can render other components inside the Tab using Angular **ng-template**. Likewise, we can also render the reactive forms module inside the Tab items using this **ng-template**.
+The Tab component supports rendering other components inside tab panels using Angular **ng-template**. This includes integrating reactive forms within individual tab items to create organized, multi-section form interfaces.
 
 For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
 
-For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to `app component`. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls. You can declare the `formControlName` to AutoComplete as usual. Then,you must create a value object to the FormGroup and each
-value will be the default value of the form control.
+To implement reactive forms within tabs, import the ReactiveFormsModule into the app module. Additionally, import FormGroup and FormControl into the `app component`. The FormGroup declares the `formGroupName` for the entire form, while FormControl declares individual `formControlName` properties for specific form controls. Each FormControl can be applied to form elements like AutoComplete as standard practice. Create a value object for the FormGroup where each property represents the default value for its corresponding form control.
 
-Create the reactive form like above and then directly refer that in your **ng-template**
+After creating the reactive form structure, reference it directly within the **ng-template** to render the form content inside the tab panel.
 
-The following example demonstrates how to add the reactive forms within a Tab item using ng-template.
+The following example demonstrates how to add reactive forms within a Tab item using ng-template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
