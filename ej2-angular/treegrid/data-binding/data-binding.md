@@ -134,4 +134,48 @@ public class TreeData
 }
 ```
 
+## Refresh the datasource
+
+Refreshing the datasource in a Syncfusion TreeGrid involves updating the data that the TreeGrid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
+
+You can add/delete the datasource records through an external button. To reflect these changes in the TreeGrid, you must assign the modified data to the dataSource property.
+
+**Steps to refresh the TreeGrid after datasource change:**
+
+**Step 1: Modify the datasource**
+
+You can add or delete records from the datasource using the following code:
+
+```ts
+    const dataSource: object = extendArray((this.treegridObj as TreeGridComponent).dataSource as object[]);
+
+    // Added a new record.
+    (dataSource as object[]).unshift({ TaskID: 99, TaskName: "New Data", StartDate: new Date('02/03/2017'), Duration: 10 });
+
+    // Delete a record.
+    (dataSource as object[]).splice(selectedRowIndex, 1);
+```
+
+**Step 2: Refresh the TreeGrid**
+
+Refresh the TreeGrid after the datasource change by assign the modified data to dataSource property.
+
+```ts
+ (this.treegridObj as TreeGridComponent).dataSource = dataSource; // Refresh the TreeGrid.
+```
+
+The following example demonstrates how to add and delete records from datasource using an external button:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/refresh-datasource-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/refresh-datasource-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs2" %}
+
 > For further details, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid) to explore its advanced capabilities. Additionally, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see data presentation and manipulation in action.

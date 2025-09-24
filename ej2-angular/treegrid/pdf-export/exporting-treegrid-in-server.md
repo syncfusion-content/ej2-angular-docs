@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting TreeGrid on the server in Angular TreeGrid component | Syncfusion
+title: Exporting TreeGrid on the server in Angular TreeGrid | Syncfusion
 description: Learn how to export the Angular TreeGrid component to PDF on the server side using server export libraries and configuration with Syncfusion Essential JS 2.
 platform: ej2-angular
 control: Exporting TreeGrid in server 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting TreeGrid on the server in Angular TreeGrid component
+# PDF Exporting TreeGrid on the server in Angular TreeGrid component
 
 The TreeGrid provides an option to export data to PDF on the server side using the TreeGrid server export library.
 
@@ -158,3 +158,22 @@ private void PdfHeaderQueryCellInfo(object pdf)
 }
 
 ```
+## Passing additional parameters to the server while exporting
+
+Passing additional parameters to the server when exporting data in the Syncfusion Angular TreeGrid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event. Within the `query` property, you can invoke the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method to add parameters to the request.
+
+The following example demonstrates how to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **12**, are passed using the `addParams` method and displayed as a message.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/refresh-cs19/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/refresh-cs19/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treegrid/refresh-cs19" %}
