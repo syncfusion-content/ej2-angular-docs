@@ -84,7 +84,7 @@ Run the application in the browser using the following command.
 
 ```bash
 
-npm serve
+ng serve
 
 ```
 

@@ -10,7 +10,7 @@ import { marked } from 'marked';
   selector: 'app-root',
   template: `
       <div ejs-aiassistview #aiassist (promptRequest)="promptRequest($event)" [promptSuggestions]="suggestions"
-        [toolbarSettings]="toolbarSettings">
+        [toolbarSettings]="toolbarSettings" (stopRespondingClick)="stopRespondingClick()">
         <ng-template #bannerTemplate>
             <div class="banner-content">
                 <div class="e-icons e-assistview-icon"></div>
@@ -27,6 +27,7 @@ export class AppComponent {
   private geminiApiKey: string = ''; // Replace with your Gemini API key
   private genAI = new GoogleGenerativeAI(this.geminiApiKey);
   private model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  private stopStreaming: boolean = false;
 
   public suggestions: string[] = [
     'What are the best tools for organizing my tasks?',
@@ -38,20 +39,44 @@ export class AppComponent {
     itemClicked: () => {
       this.aiAssistView.prompts = [];
       this.aiAssistView.promptSuggestions = this.suggestions;
+      this.stopStreaming = true;
     }
   };
 
-  public promptRequest = (args: PromptRequestEventArgs) => {
-    setTimeout(async () => {
-      try {
-        const result = await this.model.generateContent(args.prompt||'Hi');
-        const response = await result.response.text();
-        this.aiAssistView.addPromptResponse(marked.parse(response));
-      } catch (error) {
-        this.aiAssistView.addPromptResponse(
-          '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
-        );
+  public streamResponse = async (response: string) => {
+    let lastResponse = "";
+    const responseUpdateRate = 10;
+    let i = 0;
+    const responseLength = response.length;
+    while (i < responseLength && !this.stopStreaming) {
+      lastResponse += response[i];
+      i++;
+      if (i % responseUpdateRate === 0 || i === responseLength) {
+        const htmlResponse = marked.parse(lastResponse);
+        this.aiAssistView.addPromptResponse(htmlResponse, i === responseLength);
+        this.aiAssistView.scrollToBottom();
       }
-    }, 1000);
-  }
+      await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+    }
+    this.aiAssistView.promptSuggestions = this.suggestions;
+  };
+
+  public promptRequest = async (args: PromptRequestEventArgs) => {
+    try {
+      const result = await this.model.generateContent(args.prompt || 'Hi');
+      const response = await result.response.text();
+      this.stopStreaming = false;
+      await this.streamResponse(response);
+    } catch (error) {
+      console.error('Error fetching Gemini response:', error);
+      this.aiAssistView.addPromptResponse(
+        '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
+      );
+      this.stopStreaming = true;
+    }
+  };
+
+  public stopRespondingClick = () => {
+    this.stopStreaming = true;
+  };
 }
