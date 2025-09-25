@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local data in Angular TreeGrid component | Syncfusion
-description: Learn how to bind local data in the Syncfusion Angular TreeGrid component, including hierarchical and self-referential (flat) data structures, reserved keywords, and refresh techniques.
+description: Learn to bind local data to Syncfusion Angular TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: ej2-angular
 control: Local data
 documentation: ug
@@ -119,6 +119,38 @@ this.treegrid.refresh(); // Refresh the TreeGrid.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs1" %}
+
+## Immutable mode
+
+Immutable mode in the Syncfusion TreeGrid is designed to optimize re-rendering performance by utilizing the object reference and [deep comparison](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the TreeGrid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+
+To enable this feature, you need to set the [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableimmutablemode) property as **true**.
+
+The following example demonstrates how to enable immutable mode:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/immutable-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/immutable-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treegrid/immutable-cs1" %}
+
+> * This feature uses the primary key value for data comparison. Set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) column to ensure correct row identification.
+
+### Limitations
+
+The following features are not supported when immutable mode is enabled:
+
+* Frozen rows and columns
+* Row Template
+* Detail Template
+* Column reorder
+* Virtualization
 
 > Access the content of the TreeGrid using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
 > Access the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method.
