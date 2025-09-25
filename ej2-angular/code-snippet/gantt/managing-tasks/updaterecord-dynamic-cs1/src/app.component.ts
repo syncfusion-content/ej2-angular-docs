@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { EditService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
@@ -14,27 +10,23 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='updateRecord' (click)='update()'>Update Record</button>
+        `<button ejs-button id='updateRecord' (click)='update()'>Update Record</button>
        <br><br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public editSettings?: EditSettingsModel;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+    @ViewChild('gantt', { static: true })
+    public ganttObj?: GanttComponent | any;
     public ngOnInit(): void {
         this.data = [
             {
@@ -43,8 +35,8 @@ export class AppComponent{
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -71,7 +63,7 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.editSettings = {
-           allowEditing: true
+            allowEditing: true
         };
     }
     update(): void {
@@ -81,10 +73,7 @@ export class AppComponent{
             StartDate: new Date('04/03/2019'),
             Duration: 4,
             Progress: 50,
-            };
-            this.ganttObj.updateRecordByID(data);
         };
+        this.ganttObj.updateRecordByID(data);
+    };
 }
-
-
-

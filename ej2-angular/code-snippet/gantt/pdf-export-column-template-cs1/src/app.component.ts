@@ -19,10 +19,9 @@ import { editingResources } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
-imports: [ GanttModule,CommonModule],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+  imports: [GanttModule, CommonModule],
+  providers: [ToolbarService, PdfExportService, SelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" (pdfQueryCellInfo)="pdfQueryCellInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true' rowHeight='50' [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">
@@ -139,7 +138,7 @@ export class AppComponent {
       startDate: 'StartDate',
       duration: 'Duration',
       progress: 'Progress',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
     this.toolbar = ['PdfExport'];
     this.splitterSettings = {

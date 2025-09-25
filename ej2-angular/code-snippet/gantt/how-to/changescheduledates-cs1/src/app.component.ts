@@ -8,23 +8,19 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='changedate' (click)='change()'>Change Date</button>
+        `<button ejs-button id='changedate' (click)='change()'>Change Date</button>
        <br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
-    @ViewChild('gantt', {static: true})
+    @ViewChild('gantt', { static: true })
     public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = editingData;
@@ -34,13 +30,10 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
     }
     change(): void {
-        this.ganttObj!.updateProjectDates(new Date('04/10/2019'),new Date('06/20/2019'),true);
-        };
+        this.ganttObj!.updateProjectDates(new Date('04/10/2019'), new Date('06/20/2019'), true);
+    };
 }
-
-
-

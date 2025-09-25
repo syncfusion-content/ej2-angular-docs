@@ -2,31 +2,23 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [DayMarkersService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [DayMarkersService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [workWeek]="workWeek"></ejs-gantt>`,
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [workWeek]="workWeek"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
-     public workWeek?: object;
+    public workWeek?: object;
 
     public ngOnInit(): void {
         this.data = editingData;
@@ -39,9 +31,6 @@ export class AppComponent{
             progress: 'Progress',
             child: 'subtasks'
         };
-        this.workWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday"];
+        this.workWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
     }
 }
-
-
-

@@ -10,24 +10,20 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [ToolbarService, PdfExportService, SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" (pdfQueryTimelineCellInfo)="pdfQueryTimelineCellInfo($event)"
+        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" (pdfQueryTimelineCellInfo)="pdfQueryTimelineCellInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', {static: true})
+    @ViewChild('gantt', { static: true })
     public ganttChart?: GanttComponent;
     columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; })[] | undefined;
     public ngOnInit(): void {
@@ -38,27 +34,25 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
-        this.columns =  [
-            { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText:  'Task Name', width: '150', visible: false },
-            { field: 'StartDate', headerText:  'StartDate', width: '150' },
-            { field: 'Duration', headerText:  'Duration', width: '150' },
-            { field: 'Progress', headerText:  'Progress', width: '150' }
+        this.columns = [
+            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+            { field: 'TaskName', headerText: 'Task Name', width: '150', visible: false },
+            { field: 'StartDate', headerText: 'StartDate', width: '150' },
+            { field: 'Duration', headerText: 'Duration', width: '150' },
+            { field: 'Progress', headerText: 'Progress', width: '150' }
         ];
-        this.toolbar =  ['PdfExport'];
+        this.toolbar = ['PdfExport'];
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_pdfexport') {
             this.ganttChart!.pdfExport();
         }
-};
+    };
 
     public pdfQueryTimelineCellInfo(args: any): void {
-    args.timelineCell.backgroundColor = new PdfColor(240, 248, 255);
-};
+        args.timelineCell.backgroundColor = new PdfColor(240, 248, 255);
+    };
 }
-
-
-

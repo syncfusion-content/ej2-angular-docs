@@ -1,19 +1,20 @@
 ---
 layout: post
 title: Validation in Angular Gantt component | Syncfusion
-description: Learn here all about Validation Rule in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to validate task data in the Syncfusion Angular Gantt component using column, custom, dependency, and resource grid rules for accurate project management.
 platform: ej2-angular
 control: Validating Tasks
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Gantt control
+# Validation in Angular Gantt component
 
-## Column validation
+Validation in the Angular Gantt component ensures accurate task data by enforcing rules during adding or editing, preventing invalid entries before saving. Using the [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator) component, apply validation to columns in inline or dialog editing, custom rules for specific fields, or dependency and resource grids in the add/edit dialog. Requires `EditService` and valid [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., `id`, `name`) to ensure data integrity for tasks updated on September 23, 2025, or later, maintaining valid date ranges or dependency formats.
 
-Column validation validates the editing and adding data and it display errors for invalid fields before saving data. This is effective in both inline and dialog editing.
-Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator) component for column validation. You can set [`validation rules`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [`columns.validationRules`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#validationrules). The value cannot be saved unless the validation rule get satisfied.
+## Validate columns
+
+Define validation rules for columns using [`columns.validationRules`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#validationrules), such as `required` or `minLength`, to display error messages for invalid fields like missing task names in inline or dialog editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,11 +28,9 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs3" %}
 
-## Custom validation
+## Apply custom validation
 
-You can define your own custom validation rules for the specific columns by using callback function to it's [`validation rule`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
-
-In the below demo, custom validation applied for `TaskName` column.
+Implement custom validation for specific columns, like `TaskName`, using callback functions in [`columns.validationRules`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#validationrules) to enforce unique requirements, such as ensuring task names meet specific patterns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,13 +41,12 @@ In the below demo, custom validation applied for `TaskName` column.
 {% include code-snippet/gantt/managing-tasks/celledit-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs4" %}
 
-## Dependency and resource grid validation
+## Validate dependency and resource grids
 
-Validation rules can also be implemented for the dependency and resource grid in the add or edit dialog by employing the event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin).
-Within the actionBegin event, validationRules can be configured for columns in the grid of the dependency and resource tabs using the requestType `beforeOpenEditDialog` or `beforeOpenAddDialog`.
+Set validation rules for dependency and resource grids in the add/edit dialog using the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType` set to `beforeOpenEditDialog` or `beforeOpenAddDialog`, configuring `validationRules` for fields like predecessor types or resource assignments to ensure valid entries.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,3 +59,8 @@ Within the actionBegin event, validationRules can be configured for columns in t
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs5" %}
+
+## See also
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)

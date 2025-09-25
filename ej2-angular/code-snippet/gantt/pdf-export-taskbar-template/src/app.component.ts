@@ -18,10 +18,9 @@ import { editingResources, base64Data } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
-imports: [ GanttModule],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+  imports: [GanttModule],
+  providers: [ToolbarService, PdfExportService, SelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true'  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources"  
@@ -68,13 +67,13 @@ export class AppComponent {
         resourceInfo: 'Resources',
         startDate: 'StartDate',
         duration: 'Duration',
-        parentID:'ParentID',
+        parentID: 'ParentID',
       };
     this.toolbar = ['PdfExport'];
-    this.columns =  [
-      { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-      { field: 'TaskName', headerText:  'Task Name', width: '150'},
-  ];
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+      { field: 'TaskName', headerText: 'Task Name', width: '150' },
+    ];
     this.splitterSettings = {
       columnIndex: 1,
     };

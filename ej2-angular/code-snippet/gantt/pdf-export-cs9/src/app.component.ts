@@ -31,7 +31,7 @@ export class AppComponent {
   public taskFields?: object;
   public toolbar?: ToolbarItem[];
   public columns?: object[];
-  @ViewChild('gantt', {static: true})
+  @ViewChild('gantt', { static: true })
   public ganttRef?: GanttComponent;
   ngOnInit(): void {
     this.taskData = editingData;
@@ -42,15 +42,15 @@ export class AppComponent {
       duration: 'Duration',
       progress: 'Progress',
       dependency: 'Predecessor',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
     this.columns = [
       { field: 'TaskID' },
       { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
       { field: 'StartDate' },
       { field: 'Duration' }
-  ];
-  this.toolbar =  ['PdfExport'];
+    ];
+    this.toolbar = ['PdfExport'];
   }
   public toolbarClick(args: any): void {
     if (args.item.id === 'ganttChart_pdfexport') {
@@ -58,8 +58,8 @@ export class AppComponent {
     }
   }
   public pdfQueryCellInfo(args: any): void {
-    if(args.column.field == 'Progress'){
-      if(args.value < 50) {
+    if (args.column.field == 'Progress') {
+      if (args.value < 50) {
         args.style.backgroundColor = new PdfColor(240, 128, 128);
       } else {
         args.style.backgroundColor = new PdfColor(165, 105, 189);

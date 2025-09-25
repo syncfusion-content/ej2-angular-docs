@@ -1,30 +1,23 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [timelineSettings]="timelineSettings"></ejs-gantt>`,
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [timelineSettings]="timelineSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
-     public timelineSettings?: object;
+    public timelineSettings?: object;
 
     public ngOnInit(): void {
         this.data = editingData;
@@ -49,6 +42,3 @@ export class AppComponent{
         };
     }
 }
-
-
-

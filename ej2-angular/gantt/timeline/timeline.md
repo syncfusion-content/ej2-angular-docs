@@ -1,32 +1,24 @@
 ---
 layout: post
 title: Timeline in Angular Gantt component | Syncfusion
-description: Learn here all about Timeline in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure timelines in the Syncfusion Angular Gantt component with view modes, zooming, weekend highlighting, and templates.
 platform: ej2-angular
-control: Timeline 
+control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Timeline in Angular Gantt component
 
-In the Gantt component, timeline is used to represent the project duration as individual cells with defined unit and formats.
+The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, and Year-Month for flexible visualization. Configure modes using the [`timelineViewMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [`topTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [`bottomTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
-## Timeline view modes
+## Configure timeline view modes
 
-Gantt contains the following in-built timeline view modes:
-
-* Hour – Minute
-* Day – Hour
-* Week – Day
-* Month – Week
-* Year – Month
-
-Timescale mode in the Gantt component can be defined using the [`timelineViewMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, and you can define a timescale mode for the top tier and bottom tier using the [`topTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [`bottomTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) properties.
+Set the timeline view mode using the [`timelineViewMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
 
 ### Week timeline mode
 
-In the `Week` timeline mode, the upper part of the schedule header displays the weeks, whereas the bottom half of the header displays the days. Refer to the following code example.
+In Week mode, the top tier shows weeks and the bottom tier days, suitable for short-term project tracking.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,12 +29,12 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 {% include code-snippet/gantt/timeline/week-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/week-cs1" %}
 
 ### Month timeline mode
 
-In the `Month` timeline mode, the upper part of the schedule header displays the months, whereas the bottom header of the schedule displays its corresponding weeks. Refer to the following code example.
+In Month mode, the top tier shows months and the bottom tier weeks, ideal for medium-term planning.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,12 +45,12 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 {% include code-snippet/gantt/timeline/month-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/month-cs1" %}
 
 ### Year timeline mode
 
-In the `Year` timeline mode, the upper schedule header displays the years whereas, the bottom header displays its corresponding months. Refer to the following code example.
+In Year mode, the top tier shows years and the bottom tier months, suitable for long-term projects.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,12 +61,12 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 {% include code-snippet/gantt/timeline/year-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/year-cs1" %}
 
 ### Day timeline mode
 
-In the `Day` timeline mode, the upper part of the header displays the days whereas, the bottom schedule header displays its corresponding hours. Refer to the following code example.
+In Day mode, the top tier shows days and the bottom tier hours, ideal for detailed daily scheduling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -85,12 +77,12 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 {% include code-snippet/gantt/timeline/day-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/day-cs1" %}
 
 ### Hour timeline mode
 
-An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upper schedule header displays hour scale and the lower schedule header displays its corresponding minutes.
+In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for minute-level task tracking.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,10 +93,9 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 {% include code-snippet/gantt/timeline/hour-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/timeline/hour-cs1" %}
 
-## Week start day customization
+{% previewsample "page.domainurl/samples/gantt/timeline/hour-cs1" %}
+## Customize week start day
 
 In the Gantt component, you can customize the week start day using the [`weekStartDay`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) property. By default, the [`weekStartDay`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) is set to `0`, which specifies the Sunday as a start day of the week. But, you can customize the week start day by using the following code example.
 
@@ -152,11 +143,9 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
   
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs1" %}
 
-## Show/hide weekends
+## Highlight weekends
 
-The [timelineSettings.showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
-
->Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](https://ej2.syncfusion.com/angular/documentation/gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+Highlight weekends by setting [`showWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) to `true` and [`workWeek`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,15 +159,14 @@ The [timelineSettings.showWeekend](https://ej2.syncfusion.com/angular/documentat
   
 {% previewsample "page.domainurl/samples/gantt/timeline/show-weekend-cs1" %}
 
-> Limitations
->* The `showWeekend` feature does not support baselines.
->* The `showWeekend` is not compatible with the manual task mode.
->* Non-working hours cannot be excluded when `showWeekend` is set to false.
->* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+**Limitations:**
+* The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
+* Non-working hours cannot be excluded when `showWeekend` is set to `false`.
+* Holidays are not excluded from the timeline if `showWeekend` is set to `false`.
 
 ## Timeline template
 
-In the Gantt component, you can customize timeline cells using the [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
+In the Gantt component, you can customize timeline cells using the [`timelineTemplate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
@@ -190,158 +178,7 @@ The following code example how to customize the top tier to display the week's w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-
-import { GanttModule, GanttComponent} from '@syncfusion/ej2-angular-gantt';
-import { Component, ViewEncapsulation,ViewChild,ChangeDetectionStrategy } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { GanttData } from './data';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule,CommonModule],
-  encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <ejs-gantt
-        #gantt
-        id="ganttChart"
-        height="430px"
-        [dataSource]="taskData"
-        [taskFields]="taskFields"
-        [treeColumnIndex]="1"
-        [columns]="columns"
-        [timelineSettings]="timelineSettings"
-        [splitterSettings]="splitterSettings"
-        [projectStartDate]="projectStartDate"
-        [projectEndDate]="projectEndDate"
-        [holidays]="holidays"
-    >
-      <ng-template #timelineTemplate let-data>
-        <ng-container *ngIf="data.tier === 'topTier'">
-          <div class="e-header-cell-label e-gantt-top-cell-text"
-            style="width:100%;background-color:#FBF9F1;font-weight:bold;height:100%;display:flex;justify-content:center;align-items:center;"
-            title="{{data.date}}">
-            <div>{{ data.value }}</div>
-            <div style="width:20px;height:20px;line-height:normal;padding-left:10px;">
-              <img style="width:100%;height:100%;" [src]="imagedate()" >
-            </div>
-          </div>
-        </ng-container>
-        <ng-container *ngIf="data.tier === 'bottomTier'">
-          <div class="e-header-cell-label e-gantt-top-cell-text"
-            [ngStyle]="{ 'background-color': bgColor(data.value, data.date) }"
-            style="width:100%;text-align:center;height:100%;display:flex;align-items:center;font-weight:bold;justify-content:center;"
-            title="{{data.date}}">
-            {{ holidayValue(data.value, data.date) }}
-          </div>
-        </ng-container>
-      </ng-template>
-    </ejs-gantt>
-  `,
-})
-export class AppComponent {
-    public taskData?: object;
-    public taskFields?: object;
-    public timelineSettings?: object;
-    public columns?: object[];
-    public splitterSettings?: object;
-    public projectStartDate?: Date;
-    public projectEndDate?: Date;
-    @ViewChild('gantt')
-    public ganttRef?: GanttComponent;
-    public holidays?: object[];
-    public bgColor(value: string, date: string): string {
-        if (value === "S") {
-          return "#7BD3EA";
-        }
-        const parsedDate = new Date(date);
-        const holidays = this.ganttRef?.holidays ?? [];
-        for (let i = 0; i < holidays.length; i++) {
-          const holiday: any = this.ganttRef?.holidays[i];
-          const fromDate: Date = new Date(holiday.from);
-          const toDate: Date = new Date(holiday.to);
-          if (parsedDate >= fromDate && parsedDate <= toDate) {
-            return "#97E7E1";
-          }
-        }
-        return "#E0FBE2";
-    }
-
-    private currentIndex: number = 1;
-    
-    public imagedate(): string {
-        const getImage = this.currentIndex;
-        this.currentIndex = this.currentIndex < 4 ? this.currentIndex + 1 : 1; // Loop 1-4
-
-        return `assets/images/${getImage}.svg`;
-    }
-    
-    public holidayValue(value: string, date: string): string {
-        const parsedDate = new Date(date);
-        const holidays = this.ganttRef?.holidays ?? [];
-        for (let i = 0; i < holidays.length; i++) {
-          const holiday: any = this.ganttRef?.holidays[i];
-          const fromDate: Date = new Date(holiday.from);
-          const toDate: Date = new Date(holiday.to);
-          if (parsedDate >= fromDate && parsedDate <= toDate) {
-            const options: any = { weekday: 'short' };
-            return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
-          }
-        }
-        return value;
-    }
-    public ngOnInit(): void {
-        this.taskData = GanttData;
-        this.taskFields = {
-            id: 'TaskId',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            endDate: 'EndDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            parentID: 'ParentId',
-        };
-        this.timelineSettings = {
-            topTier: {
-                unit: 'Week',
-                format: 'dd/MM/yyyy'
-            },
-            bottomTier: {
-                unit: 'Day',
-                count: 1
-            },
-            timelineUnitSize: 100
-        };
-        this.columns = [
-            { field: 'TaskId', width: 80 },
-            { field: 'TaskName', headerText: 'Job Name', width: '250', clipMode: 'EllipsisWithTooltip' },
-            { field: 'StartDate' },
-            { field: 'EndDate' },
-            { field: 'Duration' },
-            { field: 'Progress' },
-            { field: 'Predecessor' }
-        ];
-        this.projectStartDate = new Date('03/31/2024');
-        this.projectEndDate = new Date('04/23/2024');
-        this.holidays = [ 
-            {
-              from: new Date('04/04/2024'),
-              to: new Date('04/04/2024'),
-              label: 'Local Holiday'
-            },
-            {
-              from: new Date('04/19/2024'),
-              to: new Date('04/19/2024'),
-              label: 'Good Friday'
-            }
-        ];
-    }
-}
-
-{% endraw %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -350,3 +187,8 @@ export class AppComponent {
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs2" %}
+
+## See also
+- [How to configure taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
+- [How to zoom the timeline?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming)
+- [How to configure non-working days?](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks#weekend--non-working-days)

@@ -5,24 +5,20 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [ToolbarService, PdfExportService, SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" (beforePdfExport)="beforePdfExport()"
+        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" (beforePdfExport)="beforePdfExport()"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: string[];
-    @ViewChild('gantt', {static: true})
+    @ViewChild('gantt', { static: true })
     public ganttObj?: GanttComponent;
     columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; })[] | undefined;
     public ngOnInit(): void {
@@ -33,16 +29,16 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentId',
+            parentID: 'ParentId',
         };
-        this.columns =  [
-            { field: 'TaskId', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText:  'Task Name', width: '150' },
-            { field: 'StartDate', headerText:  'StartDate', width: '150' },
-            { field: 'Duration', headerText:  'Duration', width: '150', visible: false },
-            { field: 'Progress', headerText:  'Progress', width: '150' }
+        this.columns = [
+            { field: 'TaskId', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+            { field: 'TaskName', headerText: 'Task Name', width: '150' },
+            { field: 'StartDate', headerText: 'StartDate', width: '150' },
+            { field: 'Duration', headerText: 'Duration', width: '150', visible: false },
+            { field: 'Progress', headerText: 'Progress', width: '150' }
         ];
-        this.toolbar =  ['PdfExport'];
+        this.toolbar = ['PdfExport'];
     }
     public toolbarClick(args: any): void {
         if (args.item.id === 'ganttDefault_pdfexport') {

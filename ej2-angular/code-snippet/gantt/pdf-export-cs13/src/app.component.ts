@@ -5,16 +5,14 @@ import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-
-import {  PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfStandardFont, PdfPen, PdfStringFormat, PdfTextAlignment, PdfVerticalAlignment} from '@syncfusion/ej2-pdf-export';
+import { PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfStandardFont, PdfPen, PdfStringFormat, PdfTextAlignment, PdfVerticalAlignment } from '@syncfusion/ej2-pdf-export';
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
 
 
 import { editingData } from './data';
 @Component({
   imports: [GanttModule],
-
-  providers: [ToolbarService, PdfExportService, SelectionService,DayMarkersService],
+  providers: [ToolbarService, PdfExportService, SelectionService, DayMarkersService],
   standalone: true,
   selector: "app-root",
   template: `<ejs-gantt
@@ -33,11 +31,10 @@ import { editingData } from './data';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  // Data for Gantt
   public data?: object[];
   public taskSettings?: object;
   public toolbar?: ToolbarItem[];
-  public eventMarkers ?: object[];
+  public eventMarkers?: object[];
   public holidays?: object[];
   @ViewChild("gantt", { static: true })
   public ganttObj?: GanttComponent;
@@ -48,33 +45,33 @@ export class AppComponent {
       id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
-      endDate:'EndDate',
+      endDate: 'EndDate',
       duration: 'Duration',
-      dependency:'Predecessor',
+      dependency: 'Predecessor',
       progress: 'Progress',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
-    this.eventMarkers =[
+    this.eventMarkers = [
       {
-          day: '04/10/2019',
-          cssClass: 'e-custom-event-marker',
-          label: 'Project approval and kick-off'
+        day: '04/10/2019',
+        cssClass: 'e-custom-event-marker',
+        label: 'Project approval and kick-off'
       }
-  ];
-  this.holidays = [{
+    ];
+    this.holidays = [{
       from: "04/04/2019",
       to: "04/04/2019",
       label: " Public holidays",
       cssClass: "e-custom-holiday"
-  
-  },
-  {
+
+    },
+    {
       from: "04/12/2019",
       to: "04/12/2019",
       label: " Public holiday",
       cssClass: "e-custom-holiday"
-  
-  }];
+
+    }];
     this.toolbar = ["PdfExport"];
   }
   public toolbarClick(args: ClickEventArgs): void {
@@ -88,10 +85,10 @@ export class AppComponent {
       const penColor = new PdfColor(105, 105, 105);
       const penWidth = 1;
       const pen = new PdfPen(penColor, penWidth);
-      pen.dashStyle = PdfDashStyle.Dash; 
+      pen.dashStyle = PdfDashStyle.Dash;
 
       const borderWidth = 1;
-      const borderColor = new PdfColor(192, 192, 192); 
+      const borderColor = new PdfColor(192, 192, 192);
       let pdfpen: PdfPen = new PdfPen(borderColor, borderWidth);
       let pdfborders: PdfBorders = new PdfBorders();
       pdfborders.all = pdfpen;
@@ -124,13 +121,13 @@ export class AppComponent {
           fontFamily: 1,
           eventMarker: {
             label: {
-              backgroundColor: new PdfColor(255, 239, 213), 
+              backgroundColor: new PdfColor(255, 239, 213),
               fontFamily: PdfFontFamily.TimesRoman,
-              fontColor: new PdfColor(139, 69, 19), 
+              fontColor: new PdfColor(139, 69, 19),
               fontSize: 9,
               format: stringFormat,
               fontStyle: PdfFontStyle.Bold,
-              borderColor: new PdfColor(160, 82, 45), 
+              borderColor: new PdfColor(160, 82, 45),
               borders: pdfborders,
             },
             lineStyle: pen,
@@ -139,8 +136,8 @@ export class AppComponent {
             fontFamily: PdfFontFamily.TimesRoman,
             fontSize: 10,
             fontStyle: PdfFontStyle.Bold,
-            borderColor: new PdfColor(211, 211, 211), 
-            backgroundColor: new PdfColor(255, 248, 220), 
+            borderColor: new PdfColor(211, 211, 211),
+            backgroundColor: new PdfColor(255, 248, 220),
             fontColor: new PdfColor(105, 105, 105),
             format: vertical,
             borders: pdfborders,

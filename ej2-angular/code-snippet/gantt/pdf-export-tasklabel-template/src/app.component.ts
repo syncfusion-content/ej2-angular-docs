@@ -17,10 +17,9 @@ import { base64Data, editingResources } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
-imports: [ GanttModule],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+  imports: [GanttModule],
+  providers: [ToolbarService, PdfExportService, SelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px"  [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" [labelSettings]="labelSettings" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true' [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">
@@ -39,7 +38,7 @@ standalone: true,
             innerHtml="{{ customFunction(data) }}"></div>
        </ng-template>
      </ejs-gantt>`,
-     styleUrls: ['app.component.css'],
+  styleUrls: ['app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
@@ -62,7 +61,7 @@ export class AppComponent {
         span.className = 'labelClass';
         span.innerHTML = resources[i];
         img.src = 'https://ej2.syncfusion.com/angular/demos/assets/gantt/images/' +
-        resources[i] +'.png';
+          resources[i] + '.png';
         img.height = 30;
         img.width = 30;
         subContainer.append(img);
@@ -74,7 +73,7 @@ export class AppComponent {
   }
   @ViewChild('ganttDefault', { static: true })
   public ganttChart?: GanttComponent;
-  
+
   public resourceFields?: object;
   public ngOnInit(): void {
     this.data = base64Data;
@@ -82,10 +81,10 @@ export class AppComponent {
       id: 'TaskID',
       name: 'TaskName',
       resourceInfo: 'Resources',
-      progress : 'Progress',
+      progress: 'Progress',
       startDate: 'StartDate',
       duration: 'Duration',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
     this.toolbar = ['PdfExport'];
     this.splitterSettings = {
@@ -99,8 +98,8 @@ export class AppComponent {
       taskLabel: '${Progress}%',
     };
     this.resources = editingResources;
-    this.projectStartDate= new Date('03/24/2019');
-    this.projectEndDate= new Date('04/30/2019');
+    this.projectStartDate = new Date('03/24/2019');
+    this.projectEndDate = new Date('04/30/2019');
   }
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
@@ -113,10 +112,10 @@ export class AppComponent {
   public pdfQueryTaskbarInfo(args: any): void {
     args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
     if (args.data.ganttProperties.resourceNames) {
-        args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
-        args.labelSettings.rightLabel.image = [{
-            base64: (args as any).data.taskData.resourcesImage, width: 20, height: 20
-        }]
+      args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
+      args.labelSettings.rightLabel.image = [{
+        base64: (args as any).data.taskData.resourcesImage, width: 20, height: 20
+      }]
     }
   }
 }
