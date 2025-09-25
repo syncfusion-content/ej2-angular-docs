@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Excel export options in Angular TreeGrid component | Syncfusion
-description: Learn about customizing Excel export options in the Syncfusion Angular TreeGrid component of Essential JS 2, including hidden columns, column visibility control, and file naming.
+description: Learn about customizing Excel export options in the Syncfusion Angular TreeGrid component of Essential JS 2.
 platform: ej2-angular
 control: Excel export options 
 documentation: ug
@@ -67,3 +67,33 @@ Assign a specific file name to the exported document by defining the `fileName` 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/treegrid/excel-export-cs6" %}
+
+### Exporting selected data only
+
+Exporting only the selected records from the TreeGrid allows generating Excel document that include only the desired data from the TreeGrid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted Excel exports.
+
+To export only the selected records by utilizing the `exportProperties.dataSource` property in the toolbarClick event.
+
+To export the selected records from the grid to a Excel file, you can follow these steps:
+
+1. Handle the toolbarClick event of the TreeGrid.
+
+2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrecords) method.
+
+3. Assign the selected data to the `getSelectedRecords` property.
+
+4. Trigger the export operation using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExport) method.
+
+The following example demonstrates how to export the selected records to a Excel document when a toolbar item is clicked.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/refresh-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/refresh-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treegrid/refresh-cs9" %}

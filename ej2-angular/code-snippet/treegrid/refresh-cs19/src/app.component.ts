@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { projectData } from './datasource';
-import { TreeGridComponent,  ToolbarItems, ToolbarService, PageService, ExcelExportService  } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,  ToolbarItems, ToolbarService, PageService, PdfExportService } from '@syncfusion/ej2-angular-treegrid';
 import { Query } from '@syncfusion/ej2-data';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
@@ -21,11 +21,10 @@ imports: [
 providers: [PageService, SortService, FilterService],
 standalone: true,
     selector: 'app-container',
-    providers: [ToolbarService, PageService, ExcelExportService],
+    providers: [ToolbarService, PageService, PdfExportService],
     template: `<ejs-treegrid #treegridObj [dataSource]='data' idMapping='TaskID'
     parentIdMapping='parentID' [treeColumnIndex]='1' [allowPaging]='true' [pageSettings]='initialPage'
-    [toolbar]='toolbarOptions' [allowExcelExport]='true'
-    (excelExportComplete)='excelExportComplete()'
+    [toolbar]='toolbarOptions' [allowPdfExport]='true' (pdfExportComplete)='pdfExportComplete()'
     (toolbarClick)='toolbarClick($event)'>
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='70' textAlign='Right'></e-column>
@@ -51,21 +50,22 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = projectData;
         this.formatOptions = { format: 'y/M/d', type: 'date' };
-        this.toolbarOptions = ['ExcelExport'];
+        this.toolbarOptions = ['PdfExport'];
         this.initialPage = { pageCount: 5, pageSize: 5 };
     }
     toolbarClick(args: ClickEventArgs) {
-    if (this.treegridObj && args.item.text === 'Excel Export') {
+      if (this.treegridObj && args.item.text === 'PDF Export') {
         this.queryClone = this.treegridObj.query;
         this.treegridObj.query = new Query().addParams("recordcount", "12");
-        this.treegridObj.excelExport();
+        this.treegridObj.pdfExport();
       }
     }
-    excelExportComplete() {
+    pdfExportComplete() {
         if (this.treegridObj) {
           this.treegridObj.query = this.queryClone;
         }
     }
+
   }
 
 

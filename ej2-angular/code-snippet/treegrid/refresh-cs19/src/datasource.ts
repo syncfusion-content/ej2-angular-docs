@@ -1,6 +1,3 @@
-/**
- * TreeGrid DataSource
- */
 export let projectData: Object[] = [
     { TaskID: 1, TaskName: 'Parent Task 1', StartDate: new Date('02/23/2017'), Duration: 3, Priority : 'Normal',
     EndDate: new Date('02/27/2017'), Progress: '40' },
