@@ -319,7 +319,7 @@ The below example demonstrates the different Dialog positions.
   
 {% previewsample "page.domainurl/samples/dialog/position-cs1" %}
 
-> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dialog/default) that shows how to render the dialog.
+> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dialog/default) that shows how to render the dialog.
 
 ## See Also
 
