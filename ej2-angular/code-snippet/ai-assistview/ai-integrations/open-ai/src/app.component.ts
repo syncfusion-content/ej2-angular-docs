@@ -1,14 +1,33 @@
 import { Component, ViewChild } from '@angular/core';
-import { AIAssistViewComponent, AIAssistViewModule, PromptRequestEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
+import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
 import { marked } from 'marked';
+import { AzureOpenAI } from 'openai';
+
+const azureOpenAIApiKey = ''; // replace
+const azureOpenAIEndpoint = ''; // replace
+const azureOpenAIApiVersion = ''; // replace to match your resource
+const azureDeploymentName = ''; // replace with your deployment name
+ 
+const client = new AzureOpenAI({
+  apiKey: azureOpenAIApiKey,
+  endpoint: azureOpenAIEndpoint,
+  apiVersion: azureOpenAIApiVersion,
+  dangerouslyAllowBrowser: true 
+});
 
 @Component({
   standalone: true,
   imports: [AIAssistViewModule],
   selector: 'app-root',
   template: `
-      <div ejs-aiassistview #aiassist (promptRequest)="promptRequest($event)" [promptSuggestions]="suggestions"
-        [toolbarSettings]="toolbarSettings" (stopRespondingClick)="stopRespondingClick()">
+      <div ejs-aiassistview 
+        #assist
+        [promptSuggestions]="suggestions"
+        [toolbarSettings]="toolbarSettings"
+        [bannerTemplate]="bannerTemplate"
+        [showHeader]="true"
+        (promptRequest)="onPromptRequest($event)"
+        (stopRespondingClick)="handleStopResponse()">
         <ng-template #bannerTemplate>
             <div class="banner-content">
                 <div class="e-icons e-assistview-icon"></div>
@@ -20,15 +39,14 @@ import { marked } from 'marked';
   `
 })
 export class AppComponent {
-  @ViewChild('aiassist') aiAssistView!: AIAssistViewComponent;
-
-  private openaiApiKey: string = ''; // Replace with your OpenAI API key (WARNING: Do not expose in client-side code for production)
-  private stopStreaming: boolean = false;
+  @ViewChild('assist') aiAssistView!: AIAssistViewComponent;
 
   public suggestions: string[] = [
     'What are the best tools for organizing my tasks?',
     'How can I maintain work-life balance effectively?'
   ];
+
+  private stopStreaming: boolean = false;
 
   public toolbarSettings = {
     items: [{ iconCss: 'e-icons e-refresh', align: 'Right', tooltip: 'Clear Prompts' }],
@@ -57,36 +75,33 @@ export class AppComponent {
     this.aiAssistView.promptSuggestions = this.suggestions;
   };
 
-  public promptRequest = (args: PromptRequestEventArgs) => {
-    fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.openaiApiKey}`,
-      },
-      body: JSON.stringify({
-        model: 'gpt-4o-mini',
-        messages: [{ role: 'user', content: args.prompt || 'Hi' }],
-        max_tokens: 150,
-        stream: false
-      }),
-    })
-    .then(response => response.json())
-    .then(reply => {
-      const responseText = reply.choices[0].message.content.trim() || 'No response received.';
-      this.stopStreaming = false;
-      this.streamResponse(responseText);
-    })
-    .catch(error => {
-      console.error('Error fetching OpenAI response:', error);
-      this.aiAssistView.addPromptResponse(
-        '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
-      );
-      this.stopStreaming = true;
-    });
-  };
+  public onPromptRequest(args: PromptRequestEventArgs): void {
+    if (!args?.prompt?.trim() || !this.aiAssistView) return;
+ 
+    this.stopStreaming = false;
+ 
+    client.chat.completions
+      .create({
+        model: azureDeploymentName,
+        messages: [{ role: 'user', content: args.prompt }],
+        temperature: 0.7
+      })
+      .then(completion => {
+        const responseText =
+          completion?.choices?.[0]?.message?.content?.trim() || 'No response received.';
+        return this.streamResponse(responseText);
+      })
+      .catch(error => {
+        this.aiAssistView.addPromptResponse(
+          '⚠️ Something went wrong while connecting to Azure OpenAI. ' +
+            'Verify endpoint, API key, deployment name, API version, and CORS settings.',
+          true
+        );
+      });
+  }
 
-  public stopRespondingClick = () => {
+  public handleStopResponse(): void {
     this.stopStreaming = true;
-  };
+    this.aiAssistView.promptSuggestions = this.suggestions;
+  }
 }

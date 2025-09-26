@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Form support in Angular Drop down list component | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Form support in Angular DropDownList component | Syncfusion
+description: Learn how to integrate the Syncfusion Angular DropDownList component with template-driven and reactive forms, including data binding and validation.
 platform: ej2-angular
-control: Form support 
+control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Drop down list component
+# Form support in Angular DropDownList component
 
-The DropDownList supports both the reactive and template-driven form-building technologies.
+The DropDownList component supports both template-driven and reactive forms, which are the two primary form-building technologies in Angular.
 
 ## Template-Driven Forms
 
-The template-drive forms uses the `ng` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
+Template-driven forms use directives in the component template to build and manage form controls. To use this approach, import the `FormsModule` into the application's root `NgModule`.
 
-For more details about template-driven Forms refer to:<https://angular.io/guide/forms#template-driven-forms>.
+For more details, refer to the official Angular guide on [Template-Driven Forms](https://angular.dev/guide/forms/template-driven-forms).
 
-Mention the `name` attribute to DropDownList element which will be used to identify the form element. To register an DropDownList element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the DropDownList as a form element. After that, the DropDownList value will be selected based on the ngModel value.
+To integrate the DropDownList into a template-driven form, set the `name` attribute to uniquely identify the control. Then, use the `[(ngModel)]` directive for two-way data binding. This registers the DropDownList with `ngForm`, and its selected value will be synchronized with the model property bound to `ngModel`.
 
-The following example demonstrates how to achieve a two-way data binding.
+The following example demonstrates how to achieve two-way data binding in a template-driven form.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,15 +36,15 @@ The following example demonstrates how to achieve a two-way data binding.
 
 ## Reactive Forms
 
-The reactive forms uses the reactive model-driven technique to handle form data between component and view, due to that we also call it as the `model-driven` forms. It's listen the form data changes between App component and view also returns the valid states and values of form elements.
+Reactive forms use a model-driven technique to handle form data between the component and its template. This approach is also known as `model-driven` forms because it involves creating a form control model in the component class. This model listens for data changes and returns the values and validation status of the form controls.
 
-For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
+For more details, refer to the official Angular guide on [Reactive Forms](https://angular.dev/guide/forms/reactive-forms).
 
-For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to app component. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls.
+To use reactive forms, import the `ReactiveFormsModule` into the application's root `NgModule`. In the component file, import `FormGroup` and `FormControl` from `@angular/forms`. The `FormGroup` provides a wrapper for a collection of form controls, while `FormControl` tracks the value and validation status of an individual control.
 
-You can declare the formControlName to DropDownList as usual. then,you must create a value object to the FormGroup and each value will be the default value of the form control.
+Assign a `formControlName` to the DropDownList element in the template. In the component class, define a `FormGroup` and a `FormControl` for the DropDownList. The `FormControl`'s initial value will serve as the default value for the DropDownList.
 
-The following example demonstrates  how to use the reactive forms.
+The following example demonstrates how to use the DropDownList component within a reactive form.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

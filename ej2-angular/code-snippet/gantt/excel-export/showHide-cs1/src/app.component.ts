@@ -1,37 +1,27 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
+import {GanttModule, GanttComponent, ToolbarItem,ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService, ExcelExportService, SelectionService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [ToolbarService, ExcelExportService, SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar"
-       (toolbarClick)="toolbarClick($event)" (excelExportComplete)='excelExportComplete()' allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
+       (toolbarClick)="toolbarClick($event)" (excelExportComplete)='excelExportComplete()' allowExcelExport='true' [treeColumnIndex]="1">
+       </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit{
+    @ViewChild('gantt', {static: true}) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
     public columns?: object[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
@@ -52,20 +42,18 @@ export class AppComponent{
         this.toolbar =  ['ExcelExport','CsvExport'];
     }
     public toolbarClick(args: ClickEventArgs): void {
-            if (args.item.id === 'ganttDefault_excelexport') {
-                this.ganttObj.treeGrid.grid.columns[0].visible = true;
-                this.ganttObj.treeGrid.grid.columns[3].visible = false;
-                this.ganttObj.excelExport();
-            } else if(args.item.id === 'ganttDefault_csvexport') {
-                this.ganttObj.treeGrid.grid.columns[0].visible = true;
-                this.ganttObj.treeGrid.grid.columns[3].visible = false;
-                this.ganttObj.csvExport();
-            }
+        if (args.item.id === 'ganttDefault_excelexport') {
+            this.ganttInstance.treeGrid.grid.columns[0].visible = true;
+            this.ganttInstance.treeGrid.grid.columns[3].visible = false;
+            this.ganttInstance.excelExport();
+        } else if(args.item.id === 'ganttDefault_csvexport') {
+            this.ganttInstance.treeGrid.grid.columns[0].visible = true;
+            this.ganttInstance.treeGrid.grid.columns[3].visible = false;
+            this.ganttInstance.csvExport();
+        }
     };
     public excelExportComplete(): void {
-        this.ganttObj.treeGrid.grid.columns[0].visible = false;
-        this.ganttObj.treeGrid.grid.columns[3].visible = true;
+        this.ganttInstance.treeGrid.grid.columns[0].visible = false;
+        this.ganttInstance.treeGrid.grid.columns[3].visible = true;
     };
 }
-
-

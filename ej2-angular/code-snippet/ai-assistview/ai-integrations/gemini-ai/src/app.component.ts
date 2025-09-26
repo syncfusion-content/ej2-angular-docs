@@ -68,7 +68,6 @@ export class AppComponent {
       this.stopStreaming = false;
       await this.streamResponse(response);
     } catch (error) {
-      console.error('Error fetching Gemini response:', error);
       this.aiAssistView.addPromptResponse(
         '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
       );
