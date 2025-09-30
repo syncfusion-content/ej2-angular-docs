@@ -10,11 +10,7 @@ domainurl: ##DomainURL##
 
 # Floating of panels in Angular Dashboard layout component
 
-The floating functionality enables panels to move upward automatically to 
-fill empty spaces left by panels in previous rows, maximizing space utilization 
-within the dashboard layout. When floating is enabled, panels dynamically 
-reposition themselves to eliminate gaps and create a more compact layout 
-arrangement.
+The floating functionality enables panels to move upward automatically to fill empty spaces left by panels in previous rows, maximizing space utilization within the dashboard layout. When floating is enabled, panels dynamically reposition themselves to eliminate gaps and create a more compact layout arrangement.
 
 This behavior can be controlled using the [`allowFloating`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#allowfloating) property, which accepts a boolean value (default: `true`).
 

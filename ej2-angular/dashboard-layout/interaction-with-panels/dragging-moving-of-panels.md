@@ -15,11 +15,10 @@ The Dashboard Layout component provides dragging functionality to reorder panels
 If one or more panels collide while dragging, the colliding panels will be pushed in the direction where space is available. This can be towards the left, right, top, or bottom. The position changes of these collided panels will be updated dynamically during dragging of a panel, so the user can conclude whether to place the panel in the current position or not.
 
 While dragging a panel in Dashboard layout, the following dragging events will be triggered:
-| Event | Description | Use Case |
-|-------|-------------|----------|
-| [dragStart](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#dragstart) | Triggered when panel dragging begins | Initialize drag state, show drag indicators |
-| [drag](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#drag) | Triggered continuously while panel is being dragged | validate drop zones |
-| [dragStop](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#dragstop) | Triggered when panel dragging ends | Save new positions, cleanup drag state |
+
+* [dragStart](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#dragstart) - Triggers when panel drag starts
+* [drag](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#drag) - Triggers when panel is being dragged
+* [dragStop](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#dragstop) - Triggers when panel drag stops
 
 The following sample demonstrates dragging and pushing of panels. For example, while dragging the panel 0 over panel 1, these panels get collided and push the panel 1 towards the feasible direction, so that, the panel 0 gets placed in the panel 1 position.
 

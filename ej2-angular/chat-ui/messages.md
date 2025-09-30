@@ -435,7 +435,7 @@ The Chat UI component supports `Markdown` formatting for messages, enabling rich
 
 To enable Markdown rendering, a third-party library that converts Markdown syntax to HTML is required.
 
--   Include the `marked` library:
+- Include the `marked` library:
   ```bash
   
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
