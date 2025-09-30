@@ -3,22 +3,22 @@ layout: post
 title: Localization in Angular Schedule component | Syncfusion
 description: Learn here all about Localization in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Localization 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Schedule component
+# Localization in the Angular Schedule component
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
-You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)).
+You can adapt the Scheduler to various languages by parsing and formatting numbers and dates with the [`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)  culture-specific customizations and translations to static text with the [`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library.
 
 ## Globalization
 
-The Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
+The Internationalization library supports formatting and parsing numbers, dates, and times using the official [`Unicode CLDR`](https://cldr.unicode.org/) JSON data and provides the `loadCldr` method to load culture-specific CLDR JSON data.
 
-By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
+By default, the Scheduler follows the English culture (`en-US`). To use a different culture, follow these steps:
 
 * Install the `ej2-cldr-data` package using the Syncfusion<sup style="font-size:70%">&reg;</sup> npm package by running the command below..
 
@@ -26,7 +26,7 @@ By default, Scheduler is set to follow the English culture ('en-US'). If you wan
   npm install @syncfusion/ej2-cldr-data --save
   ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\@syncfusion\ej2-cldr-data`.
+Once the package is installed, locate the culture-specific JSON data under the location `\node_modules\@syncfusion\ej2-cldr-data`.
 
 * Now import the required cultures from the installed location to `app.component.ts` file as given in the following code example.
 
@@ -36,7 +36,7 @@ Once the package is installed, you can find the culture specific JSON data under
     4. timeZoneNames.json
 
 ```typescript
-//import the loadCldr from ej2-base
+// Import loadCldr from ej2-base
 import { loadCldr} from '@syncfusion/ej2-base';
 import frNumberData from '@syncfusion/ej2-cldr-data/main/fr-CH/numbers.json';
 import frtimeZoneData from '@syncfusion/ej2-cldr-data/main/fr-CH/timeZoneNames.json';
@@ -46,7 +46,7 @@ import frNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingS
 loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 ```
 
-* Set the culture to Scheduler by using the `locale` property.
+* Set the culture for the Scheduler by using the `locale` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,9 +64,9 @@ loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 
 ## Localizing the static Scheduler text
 
-[`Localization`](http://ej2.syncfusion.com/documentation/base/localization.html) library allows to display all the static text, date content, and time mode of the Scheduler following the localized language. To achieve this, set the `locale` property of Scheduler, as well as define the translation text of static words of Scheduler through the `load` method.
+The Localization library allows you to display all static text, date content, and time modes of the Scheduler in the localized language. To achieve this, set the `locale` property of the Scheduler and define translation text for static words through the `L10n.load` method.
 
-For example, the following code example lets you to define the French translation words for all the static words used in Scheduler.
+For example, the following code defines French translations for all static words used in the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,10 +77,10 @@ For example, the following code example lets you to define the French translatio
 {% include code-snippet/schedule/localization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/localization-cs2" %}
 
-The localized words for static text used in Scheduler and Recurrence Editor can be referred from the following code. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
+The localized words for static text in the Scheduler and Recurrence Editor are shown in the following code. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
 
 ```typescript
 L10n.load({
@@ -213,9 +213,9 @@ L10n.load({
 });
 ```
 
-## Setting date format
+## Setting the date format
 
-Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dateformat) property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
+Scheduler supports all valid date formats. By default, it uses the universal date format `"MM/dd/yyyy"`. If the [`dateFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dateformat) property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is `en-US`, this makes it to follow the `"MM/dd/yyyy"` pattern.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -233,9 +233,9 @@ Scheduler can be used with all valid date formats and by default it follows the 
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the [`timeFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timeformat) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/angular/documentation/common/internationalization/#custom-formats) section.
+Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the [`timeFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#timeformat) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) section.
 
->Note: [`timeFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timeformat) property only accepts the valid time format's.
+>Note: [`timeFormat`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#timeformat) property only accepts the valid time format's.
 
 The following example demonstrates the Scheduler component in 24 hours format.
 
@@ -255,7 +255,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enablertl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
+The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#enablertl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -275,4 +275,4 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 ## See Also
 
-* [How to change first day of the week in the Scheduler](./working-days/#setting-start-day-of-the-week)
+* [How to change first day of the week in the Scheduler](./working-days#setting-start-day-of-the-week)

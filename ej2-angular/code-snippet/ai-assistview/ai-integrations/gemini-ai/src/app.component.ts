@@ -20,13 +20,13 @@ import { marked } from 'marked';
         </ng-template>
     </div>
   `
-})
+});
 export class AppComponent {
   @ViewChild('aiassist') aiAssistView!: AIAssistViewComponent;
 
   private geminiApiKey: string = ''; // Replace with your Gemini API key
   private genAI = new GoogleGenerativeAI(this.geminiApiKey);
-  private model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  private model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Replace with updated gemini model
   private stopStreaming: boolean = false;
 
   public suggestions: string[] = [

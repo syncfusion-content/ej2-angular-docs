@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in Angular Gantt component
+# Sorting in Angular Gantt Component
 
-Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
-To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
+To enable sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) property to **true**. You can configure sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property.
 
-To enable sorting in the Gantt component, set the [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) property to `true`. Sorting options can be configured through the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property.
+Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. For details on keyboard interactions, refer to the [selection keyboard interaction](https://ej2.syncfusion.com/angular/documentation/grid/accessibility#keyboard-interaction) documentation.
 
-To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) in the provider section of `AppModule`.
+To enable sorting functionality, add the [SortService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) to the `providers` array of the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,12 +30,14 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
   
 {% previewsample "page.domainurl/samples/gantt/sorting/default-cs1" %}
 
-> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [`columns.allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowsorting) property to `false`.
+> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> * To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowsorting) property to **false**.
 
-## Sorting column on Gantt initialization
+## Initial sorting
 
-The Gantt component can be rendered with sorted columns initially, and this can be achieved by using the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property. You can add columns that are sorted initially in the [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/#columns) collection defined with [`field`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#direction) properties. The following code example shows how to add the sorted column to Gantt initialization.
+Initial sorting in the Angular Gantt component is configured using the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/#columns) property, where each column is defined with a specific [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#field) and [direction](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#direction). This setup ensures that the Gantt chart loads with the desired sort order applied to the specified columns.
+
+The following code example shows how to add sorted columns during Gantt initialization, with `field` set to **TaskID** and `direction` to **Descending**, and another with `field` as **TaskName** and `direction` as **Ascending**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,9 +51,13 @@ The Gantt component can be rendered with sorted columns initially, and this can 
   
 {% previewsample "page.domainurl/samples/gantt/sorting/sort-initial-cs1" %}
 
-## Sorting column dynamically
+## Sort columns externally
 
-Columns in the Gantt component can be sorted dynamically using the [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortcolumn) method. The following code example demonstrates how to invoke the [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortcolumn) method by clicking the custom button.
+You can externally sort columns, remove a specific sort, or clear all sorting in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using button clicks.
+
+### Add sort columns
+
+You can externally sort a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortcolumn) method with parameters for column name, sort direction, and multi-sort configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,9 +71,25 @@ Columns in the Gantt component can be sorted dynamically using the [`sortColumn`
   
 {% previewsample "page.domainurl/samples/gantt/sorting/sort-dynamic-cs1" %}
 
-## Clear all the sorting dynamically
+### Remove sort columns
 
-In the Gantt component, you can clear all the sorted columns and return to previous position using the [`clearSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#clearsorting) public method. The following code snippet shows how to clear all the sorted columns by clicking the custom button.
+You can externally remove sorting from a specific column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [removeSortColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/sort/#removesortcolumn) method by passing the column name.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/sorting/removesort-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/sorting/removesort-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/sorting/removesort-cs1" %}
+
+### Clear sorting
+
+You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#clearsorting) method to reset the Gantt chart to its unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,29 +103,72 @@ In the Gantt component, you can clear all the sorted columns and return to previ
   
 {% previewsample "page.domainurl/samples/gantt/sorting/clearsort-cs1" %}
 
-## Sorting events
+## Customize sort icon
 
-During the sort action, the Gantt component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actioncomplete) event triggers after the sort action is completed.
+You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by overriding the **.e-icon-ascending** and **.e-icon-descending** CSS classes using the `content` property , as shown below:
+
+```css
+
+ .e-gantt .e-icon-ascending::before {
+      content: '\\e306';
+    }
+
+    .e-gantt .e-icon-descending::before {
+      content: '\\e304';
+    }
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/sorting/customize-sort-icon/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/src/main.ts %}
+{% include code-snippet/gantt/sorting/customize-sort-icon/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/sorting/events-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/customize-sort-icon" %}
 
-> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
+## Custom sorting
 
-## Sorting Custom Columns
+You can customize the default sort behavior for a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by assigning a [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#sortcomparer) function to define custom sorting logic.
 
-In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection, you can perform initial sort using the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) or you can also sort the column dynamically by a button click.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/sorting/custom-sorting/src/app.component.ts %}
+{% endhighlight %}
 
-The following code snippets explains how to achieve this.
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/sorting/custom-sorting/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/sorting/custom-sorting" %}
+
+### Display null values always at bottom
+
+You can customize the sorting behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
+ 
+The example below demonstrates how to display `null` values at the bottom of the Gantt while sorting the `TaskName` column in both ascending and descending order.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/sorting/display-null-sorting/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/sorting/display-null-sorting/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/sorting/display-null-sorting" %}
+
+## Sorting custom columns
+
+You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property, or sorting can be triggered dynamically through external actions such as a button click. 
+
+The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,10 +182,26 @@ The following code snippets explains how to achieve this.
   
 {% previewsample "page.domainurl/samples/gantt/sorting/sort-custom-cs1" %}
 
+## Prevent sorting on specific columns
+
+You can prevent sorting on specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by handling the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) or [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. Alternatively, you can disable sorting for a column by setting its [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowsorting) property to **false** in the column configuration.
+
+The following sample demonstrates how to prevent sorting for the **TaskID** and **StartDate** columns.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/sorting/events-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/sorting/events-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/sorting/events-cs1" %}
+
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [`sorting`](sorting/#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
-
-The following screenshot shows Gantt touch sorting,
+To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, the [sorting](sorting/#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
 ![Multiple Sorting](images/multiple-sorting.png)

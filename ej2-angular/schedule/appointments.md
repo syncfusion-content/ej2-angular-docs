@@ -3,21 +3,21 @@ layout: post
 title: Appointments in Angular Schedule component | Syncfusion
 description: Learn here all about Appointments in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Appointments 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appointments in Angular Schedule component
+# Appointments and Event management in Angular Scheduler
 
-Appointments can be anything that are scheduled for a specific time period. Appointments can be created on varied time range and each appointment is categorized based on this range. The Scheduler events can be categorized as,
+Appointments represent scheduled items for a specific time period within the Scheduler. Appointments can be created for various time ranges, with each appointment categorized according to its duration and recurrence. The Scheduler categorizes events as follows:
 
 * [Normal events](#normal-events)
 * [Spanned events](#spanned-events)
 * [All-day events](#all-day-events)
 * [Recurring events](#recurring-events)
 
-To have a quick glance on how to add appointments to the Angular Scheduler and some of its advanced event-handling options, watch this video:
+To see how to add appointments to the Angular Scheduler and utilize its advanced event-handling features, watch this overview video:
 
 {% youtube "https://www.youtube.com/watch?v=z4n09yn1Jq0" %}
 
@@ -27,7 +27,7 @@ Represents an appointment that is created for any specific time interval within 
 
 ### Creating a normal event
 
-The following example depicts how to define a normal event on the Scheduler, with event data being loaded from simple JSON data.
+The following example demonstrates defining a normal event in the Scheduler using event data loaded from JSON.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,38 +38,38 @@ The following example depicts how to define a normal event on the Scheduler, wit
 {% include code-snippet/schedule/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs1" %}
 
 ## Spanned events
 
-Represents an appointment that is created for more than 24 hours, and usually displayed on the all-day row. Also, represents another type of appointment that is created for more than one day but less than 24 hours, and usually displayed appropriately on both the days.
+Spanned events are appointments created for durations longer than 24 hours and are typically displayed in the all-day row. Another category includes events that span more than one day but less than 24 hours, which are displayed across the relevant days.
 
-> For example, if an appointment is created for two days say from November 25, 2018 – 11.00 PM to November 26, 2018 2.00 AM but less than 24 hours time interval, then the appointment is split into two partitions and will be displayed on both the days.
+> For example, an appointment scheduled from November 25, 2018, 11:00 PM to November 26, 2018, 2:00 AM—spanning less than 24 hours—will be split and displayed on both days.
 
 ## All-day events
 
 Represents an appointment that is created for an entire day such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, the all-day appointments displays in the working space area, and no separate all-day row is present in that view.
 
-> To change normal appointment into all-day event, set [`isAllDay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#isallday) field to `true`.
+> To set a normal appointment as an all-day event, set the[`isAllDay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#isallday) field to `true`.
 
-### Hide all-day row events
+### Hiding all-day row events
 
-You can make use of the CSS customization to prevent the display of all-day row appointments on the Scheduler UI.
+Use CSS customization to hide all-day row appointments in the Scheduler UI.
 
 ```typescript
-    <style>
-        .e-schedule .e-date-header-wrap .e-schedule-table thead {
-           display: none;
-        }
-    </style>
+<style>
+    .e-schedule .e-date-header-wrap .e-schedule-table thead {
+        display: none;
+    }
+</style>
 ```
 
-> You can also enable scroller for all-day row, please [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
+> Scrolling for the all-day row can be enabled. For details, [refer here](./how-to/enable-scroll-option-on-all-day-section).
 
-### Expand all day appointments view on initial load
+### Expanding all-day appointments view on load
 
-When you have larger number of appointments in all-day view, you can show all all-day events using [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databound) event on at initial load. So, user don't have to click the toggle to expand all-day events.
+To display all all-day appointments in expanded view when the Scheduler loads, use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#databound) event. This eliminates the need to manually expand all-day events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,10 +80,10 @@ When you have larger number of appointments in all-day view, you can show all al
 {% include code-snippet/schedule/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs2" %}
 
-## Customize the rendering of the spanned events
+## Customize the rendering of spanned events
 
 By default, Scheduler will renders the spanned events (appointment with more than 24 hours duration) in the all-day row by setting `AllDayRow` will the default type renders to the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#spannedeventplacement) option within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) property. Now we can customize rendering of the that events inside the work cells itself by modifying the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#spannedeventplacement) option as `TimeSlot`. In this following example, shows how to render the spanned appointments inside the work cells as follows.
 
@@ -96,16 +96,16 @@ By default, Scheduler will renders the spanned events (appointment with more tha
 {% include code-snippet/schedule/default-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs3" %}
 
 ## Recurring events
 
-Represents an appointment that is created for a certain time interval and occurring repeatedly on a daily, weekly, monthly or yearly basis at the same time interval based on the provided recurrence rule. Usually, the recurring events are indicated by a repeat marker added at the bottom-right position.
+Recurring events are appointments scheduled to repeat at regular intervals (daily, weekly, monthly, or yearly) based on a recurrence rule. These events are marked with a repeat indicator at the lower-right corner.
 
 ### Creating a recurring event
 
-The following example depicts how to create a recurring event on Scheduler with the specific recurrence rule. In the following example, an event is made to repeat on daily mode and ends after 5 occurrences.
+The following example illustrates creating a recurring event using a specific recurrence rule. In this case, the event repeats daily and ends after five occurrences.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,14 +116,15 @@ The following example depicts how to create a recurring event on Scheduler with 
 {% include code-snippet/schedule/default-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs4" %}
 
 ### Adding exceptions
 
-A few instance of the recurrence series can be excluded on specific dates, by adding those exceptional dates to the [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception) field. These date values should be given in the ISO date time format with no hyphens(-) separating the date elements.
+To exclude specific instances from a recurrence series, add the exception dates to the [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception) field in ISO date time format without hyphens.
 
-For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
+For example, February 22, 2018 is written as 20180222. The time portion in UTC should add "Z" at the end, such as "073000Z" for "07:30:00 UTC".
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs5/src/app.component.ts %}
@@ -133,7 +134,7 @@ For example, 22nd February 2018 can be represented as 20180222. Also, the time p
 {% include code-snippet/schedule/default-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs5" %}
 
 ### Editing an occurrence from a series
@@ -183,21 +184,21 @@ Events can be repeated on a daily, weekly, monthly or yearly basis based on the 
 * The interval duration.
 * The time period to render the appointment, etc.
 
-There are four repeat types available namely,
+There are four repeat types:
 
-* **Daily** - Creates the recurring instances on daily basis.
-* **Weekly** - Creates the recurring instances on weekly basis for the selected days.
-* **Monthly** - Creates the recurring instances on monthly basis for the selected months and other provided recurrence criteria.
-* **Yearly** - Creates the recurring instances on yearly basis.
+* **Daily**: Repeat on a daily basis.
+* **Weekly**: Repeat on specified days of the week.
+* **Monthly**: Repeat on specified days each month, with additional recurrence criteria.
+* **Yearly**: Repeat annually on specified months and days.
 
 ### Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications.
+The following table summarizes the properties for creating recurring appointments. Valid rule strings follow [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) standards.
 
  > Refer [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
 
-|   Property   | Purpose | Example |
-|--------------|---------| --------- |
+ Property | Purpose | Example |
+|----------|---------|---------|
 | FREQ | Maintains the repeat type (Daily, Weekly, Monthly, Yearly) value of the appointment. | FREQ=DAILY;INTERVAL=1|
 | INTERVAL | Maintains the interval value of the appointments. When you create the daily appointment at an interval of 2, the appointments are rendered on the days Monday, Wednesday and Friday (Creates an appointment on all days by leaving the interval of one day gap). | FREQ=DAILY;INTERVAL=2|
 | COUNT | It holds the appointment’s count value. When the COUNT value is 10, then 10 instances of appointments are created in the recurrence series. | FREQ=DAILY;INTERVAL=1;COUNT=10|
@@ -263,9 +264,9 @@ The built-in validation support has been added by default for recurring appointm
 
 ## Event fields
 
-The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/angular/documentation/api/schedule/field). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
+The Scheduler's dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
 
-> To create an event on Scheduler, it is enough to define the [`startTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#starttime) and [`endTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#endtime). Also [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#id) field becomes mandatory to process CRUD actions on appropriate events.
+> To create an event, both [`startTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#starttime) and [`endTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#endtime) are required. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#id) field is mandatory for all CRUD actions.
 
 ### Built-in fields
 
@@ -301,14 +302,14 @@ When the fields of event instances has the default mapping name, it is not manda
 {% include code-snippet/schedule/default-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs8" %}
 
-> The mapper field [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#id) is of string type and has no additional validation options, whereas all other fields are of `Object` type and has additional options.
+> The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#id) mapping is a string type with no extra validation, while other fields have object type and additional options.
 
 ### Event field settings
 
-Each field of the Scheduler events are provided with additional settings such as options to set default value, to map with appropriate data source fields, to validate every event fields and to provide label values for those fields in the event window.
+Scheduler event fields offer additional customization such as default values, field mappings, validation, and label assignment.
 
 |   Options  | Description |
 |------------|-------------|
@@ -328,12 +329,12 @@ In following example, the Subject field in event editor will display its appropr
 {% include code-snippet/schedule/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs9" %}
 
-## Adding Custom fields
+## Adding custom fields
 
-Apart from the default Scheduler fields, the user can include 'n' number of custom fields for appointments. The following code example shows how to include two custom fields namely **Status** and **Priority** within event collection. It is not necessary to bind the custom fields within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/). However, those additional fields can be accessed easily, for internal processing as well as from application end.
+In addition to default fields, you can add any number of custom fields to Scheduler appointments. For example, the code below adds **Status** and **Priority**. Custom fields don't need to be mapped in [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/), but can be accessed for internal processing or application logic.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -344,12 +345,14 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
 {% include code-snippet/schedule/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs10" %}
 
-## Customize the order of the overlapping events
+## Customize the order of overlapping events
 
-By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the order of the overlapping events based on the custom fields by using the [`sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#sortcomparer) property grouped under the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) property. The following code example shows how to sort the appointments based on the custom field as follows.
+By default, overlapping appointments are rendered sequentially based on their start and end times. Use the [`sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#sortcomparer) property within [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) to customize their sorting order, for example by a custom field.
+
+The following code example shows how to sort the appointments based on the custom field as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -360,18 +363,18 @@ By default, the scheduler will render the overlapping events based on the start 
 {% include code-snippet/schedule/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs11" %}
 
 ![Overlapping Events](images/schedule-overlapping-events.png)
 
 ## Preventing Overlapping Events
 
-By default, the scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property to `false`.
+By default, the scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowoverlap) property to `false`.
 
 When this property is set to `false`, any new or updated events that overlap with existing ones will trigger an overlap alert. The overlapping events will be collected in the [`overlapEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/popupOpenEventArgs/#overlapevents) within the [`PopupOpenEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/schedule/popupOpenEventArgs/).
 
-When the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property is set to `false`, the scheduler behaves as follows:
+When the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowoverlap) property is set to `false`, the scheduler behaves as follows:
 
 **Initial Load Behavior:**  Upon initial loading, the scheduler prioritizes non-overlapping events based on their duration and all-day status. Events with longer durations and those marked as all-day receive higher priority to ensure there are no overlaps.
 
@@ -381,7 +384,7 @@ When the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/s
 
 **Dynamic Recurrence Series Creation or Editing:**  When a user creates or edits a recurrence series dynamically, the scheduler will prevent any occurrences of the series from being added if a conflict is found within the series.
 
-The following code example demonstrates how to enable the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property.
+The following code example demonstrates how to enable the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowoverlap) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -392,7 +395,7 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 {% include code-snippet/schedule/overlap-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/overlap-cs1" %}
 
 **Limitations**
@@ -419,13 +422,13 @@ The following code example demonstrates how to check for overlaps when an event 
 
 ## Drag and drop appointments
 
-Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality, it is necessary to inject the module `DragAndDrop` and make sure that [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowdraganddrop) is set to `true` on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
+Reschedule appointments by dragging and dropping them. Inject the `DragAndDrop` module and set [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowdraganddrop) to `true`. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
 
-Learn how to drag an external item into the Angular Scheduler and the other advanced options of Drag and Resize actions from this video:
+Learn more about dragging external items and advanced drag/resize options in this video:
 
 {% youtube "https://www.youtube.com/watch?v=z4n09yn1Jq0" %}
 
-> By default, drag and drop action is applicable on all Scheduler views, except Agenda, Month-Agenda and Year view.
+> Drag and drop is supported in all Scheduler views except Agenda, Month-Agenda, and Year View.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -436,16 +439,14 @@ Learn how to drag an external item into the Angular Scheduler and the other adva
 {% include code-snippet/schedule/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs12" %}
 
 ### Drag and drop multiple appointments
 
-We can drag and drop multiple appointments by enabling the [`allowMultiDrag`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowmultidrag) property. We can select multiple appointments by holding the CTRL key. Once the events are selected, we can leave the CTRL key and start dragging the event.
+We can drag and drop multiple appointments by enabling the [`allowMultiDrag`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowmultidrag) property. We can select multiple appointments by holding the CTRL key. Once the events are selected, we can leave the CTRL key and start dragging the event.
 
-We can also drag multiple events from one resource to another resource. In this case, if all the selected events are in the different resources, then all the events should be moved to the single resource that is related to the target event.
-
->Note: Multiple events drag and drop is not supported on mobile devices.
+> Multiple event drag is not supported on mobile devices.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -456,12 +457,12 @@ We can also drag multiple events from one resource to another resource. In this 
 {% include code-snippet/schedule/default-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs13" %}
 
-### Disable the drag action
+### Disabling drag action
 
-By default, you can drag and drop the events within any of the applicable scheduler views, and to disable it, set `false` to the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowdraganddrop) property.
+To disable drag and drop, set [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowdraganddrop) to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -472,12 +473,14 @@ By default, you can drag and drop the events within any of the applicable schedu
 {% include code-snippet/schedule/default-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
-It is possible to prevent the drag action on particular target, by passing the target to be excluded in the [`excludeSelectors`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#excludeselectors) option within [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart) event. In this example, we have prevented the drag action on all-day row.
+Use the [`excludeSelectors`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#excludeselectors) property within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart) event to prevent dragging on specific targets, such as the all-day row.
+
+In this example, we have prevented the drag action on all-day row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -488,12 +491,12 @@ It is possible to prevent the drag action on particular target, by passing the t
 {% include code-snippet/schedule/default-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs15" %}
 
 ### Disable scrolling on drag action
 
-By default, while dragging an appointment to the edges, either top or bottom of the Scheduler, scrolling action takes place automatically. To prevent this scrolling, set `false` to the [`scroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#scroll) value within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart) event arguments.
+By default, while dragging an appointment to the edges, either top or bottom of the Scheduler, scrolling action takes place automatically. To prevent this scrolling, set `false` to the [`scroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#scroll) value within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart) event arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -504,12 +507,12 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 {% include code-snippet/schedule/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs16" %}
 
-### Controlling scroll speed while dragging an event
+### Controlling scroll speed while dragging
 
-The speed of the scrolling action while dragging an appointment to the Scheduler edges, can be controlled within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart) event by setting the desired value to the [`scrollBy`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#scrollby) and [`timeDelay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#timedelay) option whereas its default value is 30 minutes and 100ms.
+The speed of the scrolling action while dragging an appointment to the Scheduler edges, can be controlled within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart) event by setting the desired value to the [`scrollBy`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#scrollby) and [`timeDelay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#timedelay) option whereas its default value is 30 minutes and 100ms.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -525,9 +528,9 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 
 ### Auto navigation of date ranges on dragging an event
 
-When an event is dragged either to the left or right extreme edges of the Scheduler and kept hold for few seconds without dropping, the auto navigation of date ranges will be enabled allowing the Scheduler to navigate from current date range to back and forth respectively. This action is set to `false` by default and to enable it, you need to set [`navigation`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#navigation) to true within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart) event.
+When an event is dragged either to the left or right extreme edges of the Scheduler and kept hold for few seconds without dropping, the auto navigation of date ranges will be enabled allowing the Scheduler to navigate from current date range to back and forth respectively. This action is set to `false` by default and to enable it, you need to set [`navigation`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#navigation) to true within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart) event.
 
-By default, the navigation delay is set to 2000ms. The navigation delay decides how long the user needs to drag and hold the appointments at the extremities. You can also set your own delay value for letting the users to navigate based on it, using the [`timeDelay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#timedelay) within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart)  event.
+By default, the navigation delay is set to 2000ms. The navigation delay decides how long the user needs to drag and hold the appointments at the extremities. You can also set your own delay value for letting the users to navigate based on it, using the [`timeDelay`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#timedelay) within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart)  event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -538,12 +541,12 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 {% include code-snippet/schedule/default-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs18" %}
 
 ### Setting drag time interval
 
-By default, while dragging an appointment, it moves at an interval of 30 minutes. To change the dragging time interval, pass the appropriate values to the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#interval) option within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dragstart) event.
+By default, while dragging an appointment, it moves at an interval of 30 minutes. To change the dragging time interval, pass the appropriate values to the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/dragEventArgs/#interval) option within the [`dragStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dragstart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -554,14 +557,14 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% include code-snippet/schedule/default-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/default-cs19" %}
 
 ### Drag and drop items from external source
 
-It is possible to drag and drop the unplanned items from any of the external source into the scheduler, by manually saving those dropped item as a new appointment data through [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent) method of Scheduler.
+It is possible to drag and drop the unplanned items from any of the external source into the scheduler, by manually saving those dropped item as a new appointment data through [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#addevent) method of Scheduler.
 
-In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event of the TreeView component, where we can form an event object and save it using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent)  method.
+In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event of the TreeView component, where we can form an event object and save it using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#addevent)  method.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -643,9 +646,9 @@ Another way of rescheduling an appointment can be done by resizing it through ei
   
 {% previewsample "page.domainurl/samples/schedule/event-cs2" %}
 
-### Disable the resize action
+### Disabling resize action
 
-By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowresizing) property.
+Resize is enabled by default except in Agenda and Month-Agenda views. To disable, set [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowresizing) to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -659,9 +662,9 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
   
 {% previewsample "page.domainurl/samples/schedule/event-cs3" %}
 
-### Disable scrolling on resize action
+### Disabling scrolling on resize action
 
-By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling action will takes place along with event resizing. To prevent this scrolling action, set false to [`scroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resizeEventArgs/#scroll) value within the [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#resizestart) event.
+To prevent automatic scrolling during resizing, set [`scroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resizeEventArgs/#scroll) to `false` in the [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -677,7 +680,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 ### Controlling scroll speed while resizing an event
 
-The speed of the scrolling action while resizing an appointment to the Scheduler edges, can be controlled within the [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#resizestart) event by setting the desired value to the [`scrollBy`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#scrollby) option.
+Control the scroll speed using [`scrollBy`](https://ej2.syncfusion.com/angular/documentation/api/schedule/scrollOptions/#scrollby) in the [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -709,15 +712,15 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 
 ## Appointment customization
 
-The look and feel of the Scheduler events can be customized using any one of the following ways.
+Scheduler events can be customized using one of the following:
 
-* [Using event template](#using-template)
-* [Using eventRendered event](#using-eventrendered-event)
-* [Using customCSS class](#using-cssclass)
+* [Using event templates](#using-template)
+* [Using the eventRendered event](#using-eventrendered-event)
+* [Using custom CSS class](#using-cssclass)
 
 ### Using template
 
-Any kind of text, images and links can be added to customize the look of the events. The user can format and change the default appearance of the events by making use of the `template` option available within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) property. The following code example customizes the appointment's default color and time format.
+Incorporate text, images, and links using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#template) property under [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/). The following example demonstrates changing an event's color and time format.
 
 Learn how easily you can customize the basic look and feel of Angular Scheduler appointments using its built-in ng-template option from this video:
 
@@ -742,7 +745,7 @@ Learn how easily you can customize the basic look and feel of Angular Scheduler 
 
 ### Using eventRendered event
 
-The [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventrendered) event triggers before the appointment renders on the Scheduler. Therefore, this client-side event can be utilized to customize the look of events based on any specific criteria, before rendering them on the scheduler.
+The [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventrendered) event triggers before the appointment renders on the Scheduler. Therefore, this client-side event can be utilized to customize the look of events based on any specific criteria, before rendering them on the scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -758,7 +761,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/sched
 
 ### Using cssClass
 
-The customization of events can also be achieved using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property of the Scheduler. In the following example, the background of appointments has been changed using the cssClass.
+The customization of events can also be achieved using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#cssclass) property of the Scheduler. In the following example, the background of appointments has been changed using the cssClass.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -774,7 +777,7 @@ The customization of events can also be achieved using [`cssClass`](https://ej2.
 
 ## Setting minimum height
 
-It is possible to set minimal height for appointments on Scheduler using [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventrendered) event, when its start and end time duration is less than the default duration of a single slot.
+It is possible to set minimal height for appointments on Scheduler using [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventrendered) event, when its start and end time duration is less than the default duration of a single slot.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -824,7 +827,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 
 ## Readonly
 
-An interaction with the appointments of Scheduler can be enabled/disabled using the [`readonly`](https://ej2.syncfusion.com/angular/documentation/api/schedule#readonly) property. With this property enabled, you can simply navigate between the Scheduler dates, views and can be able to view the appointment details in the quick info window. Most importantly, the users are not allowed to perform any CRUD actions on Scheduler, when this property is set to true. By default, it is set as `false`.
+An interaction with the appointments of Scheduler can be enabled/disabled using the [`readonly`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#readonly) property. With this property enabled, you can simply navigate between the Scheduler dates, views and can be able to view the appointment details in the quick info window. Most importantly, the users are not allowed to perform any CRUD actions on Scheduler, when this property is set to true. By default, it is set as `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -858,7 +861,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 
 ## Restricting event creation on specific time slots
 
-You can restrict the users to create and update more than one appointment on specific time slots. Also, you can disable the CRUD action on those time slots if it is already occupied, which can be achieved using Scheduler's public method [`isSlotAvailable`](https://ej2.syncfusion.com/angular/documentation/api/schedule#isslotavailable).
+You can restrict the users to create and update more than one appointment on specific time slots. Also, you can disable the CRUD action on those time slots if it is already occupied, which can be achieved using Scheduler's public method [`isSlotAvailable`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#isslotavailable).
 
 >Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
 
@@ -876,7 +879,7 @@ You can restrict the users to create and update more than one appointment on spe
 
 ## Differentiate the past time events
 
-To differentiate the appearance of the appointments based on specific criteria such as displaying the past hour appointments with different colors on Scheduler [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventrendered) event can be used which triggers before the appointment renders on the Scheduler.
+To differentiate the appearance of the appointments based on specific criteria such as displaying the past hour appointments with different colors on Scheduler [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventrendered) event can be used which triggers before the appointment renders on the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -905,12 +908,12 @@ We can show more indicator if more than one appointment is available in a same c
 {% include code-snippet/schedule/event-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/event-cs17" %}
 
 ![Differentiate Past Time Events](images/schedule-appointments-entirecell.png)
 
-## How to limit maximum number of events to display
+## Limiting maximum number of events displayed
 
 In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as 
 `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/#maxeventsperrow) property, which is defaulted to the [views](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/) property.
@@ -929,7 +932,7 @@ The [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/sched
 
 {% previewsample "page.domainurl/samples/schedule/max-events-per-row-cs1" %}
 
-> The property [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
+> The property [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/angular/documentation/api/schedule/#rowautoheight) feature is disabled in the Scheduler.
 
 ## Display tooltip for appointments
 
@@ -978,9 +981,9 @@ After enabling the default tooltip, it is possible to customize the display of n
 
 ### How to prevent the tooltip for specific events
 
-By using the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#tooltipOpen) event, you can selectively control when tooltips appear, based on appointment data or other custom conditions.
+By using the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#tooltipOpen) event, you can selectively control when tooltips appear, based on appointment data or other custom conditions.
 
-To prevent a tooltip from appearing for certain events, you can set the `cancel` property to `true` within the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#tooltipOpen) event. This ensures that tooltips are only displayed for the relevant appointments, improving user experience by minimizing unnecessary distractions.
+To prevent a tooltip from appearing for certain events, you can set the `cancel` property to `true` within the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#tooltipOpen) event. This ensures that tooltips are only displayed for the relevant appointments, improving user experience by minimizing unnecessary distractions.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -1018,7 +1021,7 @@ The appointments can be filtered by passing the predicate value to [`query`](htt
 
 ## Appointment selection
 
-Appointment selection can be done either through mouse or keyboard actions. The selected events in UI will have a box shadow effect around to differentiate it from other appointments.
+Select appointments with mouse or keyboard. Selected events are visually highlighted with a box shadow.
 
 | Action | Description |
 |-------|---------|
@@ -1031,7 +1034,7 @@ With the options available to select multiple appointments, it is also possible 
 
 ## Retrieve event details from the UI of an event
 
-It is possible to access the information about the event fields of an appointment element displayed on the Scheduler UI. This can be achieved by passing an appointment element as argument to the public method [`getEventDetails`](https://ej2.syncfusion.com/angular/documentation/api/schedule#geteventdetails).
+It is possible to access the information about the event fields of an appointment element displayed on the Scheduler UI. This can be achieved by passing an appointment element as argument to the public method [`getEventDetails`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#geteventdetails).
 
 In the following example, the subject of the appointment clicked has been displayed.
 
@@ -1052,7 +1055,7 @@ In the following example, the subject of the appointment clicked has been displa
 
 ## Get the current view appointments
 
-To retrieve the appointments present in the current view of the Scheduler, you can make use of the [`getCurrentViewEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule#getcurrentviewevents) public method. In the following example, the count of current view appointment collection rendered has been traced in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databound) event.
+To retrieve the appointments present in the current view of the Scheduler, you can make use of the [`getCurrentViewEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#getcurrentviewevents) public method. In the following example, the count of current view appointment collection rendered has been traced in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#databound) event.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -1071,7 +1074,7 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 
 ## Get the entire appointment collections
 
-The entire collection of appointments rendered on the Scheduler can be accessed using the [`getEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule#getevents) public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databound) event.
+The entire collection of appointments rendered on the Scheduler can be accessed using the [`getEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#getevents) public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#databound) event.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -1090,7 +1093,7 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 
 ## Refresh appointments
 
-If your requirement is to simply refresh the appointments instead of refreshing the entire Scheduler elements from your application end, make use of the [`refreshEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshevents) public method.
+To refresh events only (without re-rendering the Scheduler UI), call the [`refreshEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#refreshevents) public method.
 
 ```typescript
 this.scheduleObj.refreshEvents();

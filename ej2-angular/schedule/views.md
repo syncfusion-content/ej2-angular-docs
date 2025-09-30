@@ -3,26 +3,26 @@ layout: post
 title: Views in Angular Schedule component | Syncfusion
 description: Learn here all about Views in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Views 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Views in Angular Schedule component
 
-The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, Timeline Year, out of which the `Week` view is set as active.
+The Scheduler includes a wide variety of view modes, each with unique configuration options. Available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week, Timeline Month, and Timeline Year. By default, the `Week` view is active.
 
-To navigate between different views and dates, the navigation options are available at the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for the ease of desired date selection.
+To navigate between different views and dates, navigation options are available in the Scheduler header bar. The active view is highlighted by default. The date range of the current view is displayed at the left corner of the header bar; clicking this opens a calendar popup for easy date selection.
 
-Learn how to customize each individual view of Angular Scheduler with different settings by watching this video:
+For guidance on customizing individual views in the Angular Scheduler, watch the following video:
 
 {% youtube "https://www.youtube.com/watch?v=FRwDcpJLWOo" %}
 
-> By default, Scheduler displays the calendar views such as day, week, work week, month and agenda.
+> By default, the Scheduler displays calendar views such as day, week, work week, month, and agenda.
 
-## Setting specific view on scheduler
+## Setting a specific view on the Scheduler
 
-As the Scheduler displays `week` view by default, therefore to change the active view, set [`currentView`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#currentview) property with the desired view name. The applicable view names that the Scheduler accepts are as follows,
+The Scheduler displays the `week` view by default. To change the active view, set the [`currentView`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#currentview) property to the desired view name. The supported view names are:
 
 * Day
 * Week
@@ -37,9 +37,9 @@ As the Scheduler displays `week` view by default, therefore to change the active
 * TimelineMonth
 * TimelineYear
 
-It is necessary to import and inject the appropriate view modules into the application to make use of these view modes on the Scheduler. Also, it is possible to display only the desired views on the Scheduler. To define and configure specific views, use the [`views`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/) property.
+To use these view modes, import and inject the relevant view modules in your application. You can also display only the desired views on the Scheduler. To define and configure specific views, use the [`views`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/) property.
 
-In the following example, the Scheduler displays 4 views namely, Week, Month, TimelineWeek and Timeline Month. The appropriate view modules are imported and injected properly to display those views on the Scheduler.
+In the following example, the Scheduler displays four views: Week, Month, TimelineWeek, and TimelineMonth. The necessary view modules are imported and injected correctly to render these views.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,7 +53,7 @@ In the following example, the Scheduler displays 4 views namely, Week, Month, Ti
   
 {% previewsample "page.domainurl/samples/schedule/default-cs71" %}
 
-To configure Scheduler with simply 2 views, but with different configurations on each view, refer the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format whereas the Month view hides the weekend days and also displays it in readonly mode.
+To configure the Scheduler with two views that each have different configurations, refer to the following example. Here, the Week view displays dates in `dd-MM-yyyy` format, while the Month view hides weekend days and is set to read-only mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ There are scenarios where each view may need to have different configurations. F
 
 ### Day view
 
-Usually a day view displays a single day with all its related appointments. It is possible to customize the day view to display more number of days by extending the [`views`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/) property with [`interval`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#interval) option. You can also define any of the above defined properties within the `views` object definition as depicted in the following code example.
+The Day view displays a single day with its appointments. You can extend the Day view to show multiple days by setting the [`interval`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#interval) property within the [`views`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/) configuration. Any of the above properties can be applied to the day view as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +111,7 @@ Usually a day view displays a single day with all its related appointments. It i
 
 ![Displaying Day View](images/schedule-views-day.png)
 
-> All the above defined properties can be accessed within Day view except [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) and [`headerRows`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#headerrows).
+> All properties listed above can be used in the Day view except [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) and [`headerRows`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#headerrows).
 
 ### Week view
 
@@ -157,7 +157,7 @@ The following code example depicts how to change the working days only on the `W
 
 ### Month view
 
-A Month view displays the entire days of a particular month and all its related appointments. You can navigate to a particular date in the day view by clicking on the appropriate date text on the month cells.
+The Month view displays all days of the selected month and their appointments. By clicking a date in the month cells, you can navigate to the corresponding Day view.
 
 By default, when you try to create an appointment through Month view, it is considered as created for an entire day. You can explicitly change this behavior by unchecking the `All-day` option from editor window, so that it defaults to the start time duration as 9.00 AM and end time as 9.30 AM.
 
@@ -199,7 +199,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 
 ### Agenda view
 
-The Agenda view lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the days can be changed using the API [`agendaDaysCount`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#agendadayscount). It allows virtual scrolling of dates by enabling the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) property. Also, you can enable or disable the display of days on Scheduler that has no appointments by setting true or false to the [`hideEmptyAgendaDays`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#hideemptyagendadays) property.
+The Agenda view lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the days can be changed using the API [`agendaDaysCount`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#agendadayscount). It allows virtual scrolling of dates by enabling the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) property. Also, you can enable or disable the display of days on Scheduler that has no appointments by setting true or false to the [`hideEmptyAgendaDays`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#hideemptyagendadays) property.
 
 The following code example depicts how to customize the display of events within Agenda view alone.
 
@@ -217,11 +217,11 @@ The following code example depicts how to customize the display of events within
 
 ![Displaying Agenda View](images/schedule-views-agenda.png)
 
-> Schedule Height is mandatory to set in pixels for Agenda view.
+> Schedule height must be set in pixels for the Agenda view.
 
 ### Month Agenda view
 
-A Month-Agenda view shows a month calendar, where clicking on a particular day will display the appointments present on that date below the calendar. The day with appointments are differentiated with a circular dot below the date of the calendar.
+The Month Agenda view displays a calendar for the month; clicking on a day shows the appointments for that date below the calendar. Days with appointments are indicated by a circular dot under the date.
 
 The following code example shows how to hide the weekend days on `MonthAgenda` view as well as the working days list is modified on Month Agenda view alone.
 
@@ -239,13 +239,13 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 ![Displaying Month agenda View](images/schedule-views-monthagenda.png)
 
-> Schedule Height is mandatory to set in pixels for Month Agenda view.
+> Schedule height must be set in pixels for Month Agenda view.
 
 ### Timeline views – Day, Week, Work Week
 
 Similar to the day view, it shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set to Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of few more appointments in that time range.
 
-To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work Week) on Scheduler, import and inject the module `TimelineViews` from the `ej2-angular-schedule` package.
+To use timeline views (Timeline Day, Timeline Week, Timeline Work Week), import and inject the `TimelineViews` module from the `@syncfusion/ej2-angular-schedule` package.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -275,7 +275,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 
 ![Displaying Timeline Week View](images/schedule-views-timelineweek.png)
 
-The following code example depicts how to display the timeline work week view on Scheduler,
+The following code example depicts how to display the timeline work week view on Scheduler:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,11 +289,11 @@ The following code example depicts how to display the timeline work week view on
   
 {% previewsample "page.domainurl/samples/schedule/default-cs82" %}
 
-> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
+> Clicking on dates in the date header bar of Timeline Day, Timeline Week, and Timeline Work Week navigates to the Agenda view.
 
 ### Timeline Month view
 
-A Timeline Month view displays the current month days along with its appointments. To make use of the timeline Month view on Scheduler, import and inject `TimelineMonth` module from the `ej2-angular-schedule` package.
+Timeline Month view displays days of the current month and their appointments horizontally. To use Timeline Month view, import and inject the `TimelineMonth` module from the `@syncfusion/ej2-angular-schedule` package.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -349,7 +349,7 @@ The following code example depicts how to group the multiple resources on Timeli
 
 #### Auto row height
 
-Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If you disable the Auto row height, you have the `+ more` text indicator on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
+Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#rowautoheight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If you disable the Auto row height, you have the `+ more` text indicator on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -383,7 +383,7 @@ You can provide the alternative display name for such customized views on the Sc
 
 ![Displaying Extending Intervals](images/schedule-views-interval.png)
 
-> The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
+> View intervals can be extended in all Scheduler views except Agenda and Month Agenda views.
 
 ## See Also
 

@@ -1,80 +1,55 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { FilterService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { GanttModule, FilterService, SortService} from '@syncfusion/ej2-angular-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [FilterService],
-standalone: true,
-    selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="430px" [allowFiltering]='true' [dataSource]="data" [taskFields]="taskSettings"[columns]="columns" [splitterSettings] = "splitterSettings" [filterSettings]="filterSettings"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  providers: [FilterService, SortService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <ejs-gantt height="370px" [allowSorting]="true" [allowFiltering]="true" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [filterSettings]="filterSettings">
+    </ejs-gantt>`
 })
-export class AppComponent{
-    // Data for Gantt
-    public data?: object[];
-    public taskSettings?: object;
-    public columns?: object[];
-    public splitterSettings?: object;
-    public filterSettings?: object;
-    public ngOnInit(): void {
-        this.data = [
-    {
-        TaskID: 1,
-        TaskName: 'Project initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('04/02/2019'), Duration: 0,Progress: 50, resources: [1]},
-            {TaskID: 3, TaskName: 'Perform soil test', StartDate: new Date('04/02/2019'), Duration: 4, Predecessor: '2',Progress: 50, resources: [2, 3, 5]},
-            {TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3', Progress: 50 },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'),Duration: 3, Predecessor: '4', Progress: 50, resources: [4]},
-            {TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'),Duration: 3, Predecessor: '6', resources: [4, 8],Progress: 50},
-            {TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'),Duration: 0, Predecessor: '7', resources: [12, 5]}
-        ]
-    }];
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-        this.columns =  [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText: 'Task Name', width: '250' },
-            { field: 'StartDate', headerText: 'Start Date', width: '150' },
-            { field: 'Duration', headerText: 'Duration', width: '150' },
-            { field: 'Progress', headerText: 'Progress', width: '150' },
-        ];
-        this.splitterSettings = {
-            columnIndex:3
-            };
-        this.filterSettings = {
-            type:'Excel'
-        };
-    }
+
+export class AppComponent implements OnInit {
+  public data?: object[];
+  public taskSettings?: object;
+  public columns?: object[];
+  public splitterSettings?: object;
+  public filterSettings?: object;
+
+  ngOnInit(): void {
+    this.data = [
+      { TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 }
+    ];
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      parentID: 'ParentID'
+    };
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '120' },
+      { field: 'TaskName', headerText: 'Task Name', width: '250' },
+      { field: 'StartDate', headerText: 'Start Date', width: '150' },
+      { field: 'Duration', headerText: 'Duration', width: '150' },
+      { field: 'Progress', headerText: 'Progress', width: '150' }
+    ];
+    this.splitterSettings = {
+      columnIndex: 3
+    };
+    this.filterSettings = {
+      type: 'Excel'
+    };
+  }
 }
-
-
-

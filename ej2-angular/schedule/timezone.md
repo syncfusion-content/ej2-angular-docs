@@ -3,26 +3,26 @@ layout: post
 title: Timezone in Angular Schedule component | Syncfusion
 description: Learn here all about Timezone in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Timezone 
+control: Scheduler 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone in Angular Schedule component
+# Timezone support in Angular Schedule component
 
-The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) which can be defined as separate fields within the event fields collection.
+The Scheduler component uses the current system timezone by default. To schedule events according to a different timezone, use the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) property. In addition to applying a specific timezone at the Scheduler level, individual appointments can have their own timezones using the [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) properties within the event fields collection.
 
->Note: **timezone** property only applicable for the appointment processing and current time indication.
+> Note: The **timezone** property applies only to appointment processing and the current time indicator.
 
 ## Understanding date manipulation in JavaScript
 
-The `new Date()` in JavaScript returns the exact current date object with complete time and timezone information. For example, it may return value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` which indicates that the current date is December 12, 2018 and the current time is 5.23 AM on browsers following the IST timezone.
+The `new Date()` constructor in JavaScript returns the exact current date with the complete time and timezone information. For example, it may return a value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)`, indicating the current date as December 12, 2018, and the current time as 5:23 AM in the IST timezone.
 
-## Scheduler with no timezone
+## Scheduler without a specific timezone
 
-When no specific time zone is set to Scheduler, appointments will be displayed based on the client system's timezone which is the default behavior. Here, the same appointment when viewed from different timezone will have different start and end times.
+When the Scheduler's `timezone` property is not set, appointments are displayed based on the client system's timezone. As a result, the same appointment may appear with different start and end times to users in different timezones.
 
-The following code example displays an appointment from 9.00 AM to 10.00 AM when you open the Scheduler from any of the timezone. This is because, we are providing the start and end time enclosing with `new Date()` which works based on the client browser's timezone.
+The following code example displays an appointment from 9:00 AM to 10:00 AM when you open the Scheduler from any of the timezone. This is because, we are providing the start and end time enclosing with `new Date()` which works based on the client browser's timezone.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,9 +36,9 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
   
 {% previewsample "page.domainurl/samples/schedule/default-cs66" %}
 
-## Scheduler set to specific timezone
+## Set a specific timezone for the Scheduler
 
-When a time zone is set to Scheduler through [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In the following code example, appointments will be displayed based on Eastern Time (UTC -05:00).
+When a timezone is set through the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) property, appointments are displayed according to the Scheduler's timezone, regardless of the user's system timezone. In the following example, appointments are shown in Eastern Time (UTC -05:00).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ When a time zone is set to Scheduler through [`timezone`](https://helpej2.syncfu
 
 ## Display events on same time everywhere with no time difference
 
-Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
+Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,7 +68,7 @@ Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/sc
   
 {% previewsample "page.domainurl/samples/schedule/default-cs68" %}
 
-## Set specific timezone for events
+## Assign specific timezones to events
 
 It is possible to set different timezone for Scheduler events by setting [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) properties within the [`eventSettings`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) option. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
 
@@ -102,13 +102,15 @@ Instead of displaying all the timezone names within the timezone collection (mor
 
 ## Timezone methods
 
+Scheduler developers can use the following timezone utility methods to manage date and time conversions between different timezones. These methods facilitate accurate time comparisons and conversions for appointment handling.
+
 ### offset
 
-This method is used to calculate the difference between passed UTC date and timezone.
+Calculates the difference, in minutes, between the specified UTC date and a target timezone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC time as date object.|
+| Date | Date | UTC time as a date object.|
 | Timezone | String | Timezone.|
 
 Returns `number`
@@ -145,11 +147,11 @@ Returns `Date`
 
 ### add
 
-This method is used to add the time difference between passed UTC date and timezone.
+Adds the time difference between the specified UTC date and a target timezone to the date.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC time as date object.|
+| Date | Date | UTC time as a date object.|
 | Timezone | String | Timezone.|
 
 Returns `Date`
@@ -168,7 +170,7 @@ This method is used to remove the time difference between passed UTC date and ti
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC as date object.|
+| Date | Date | UTC time as a date object.|
 | Timezone | String | Timezone.|
 
 Returns `Date`
@@ -183,11 +185,11 @@ Returns `Date`
 
 ### removeLocalOffset
 
-This method is used to remove the local offset time from the date passed.
+Removes the local timezone offset from the given date.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC as date object.|
+| Date | Date | UTC time as a date object.|
 
 Returns `Date`
 

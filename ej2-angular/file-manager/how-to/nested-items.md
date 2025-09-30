@@ -10,14 +10,16 @@ domainurl: ##DomainURL##
 
 # Nested items in Angular File Manager component
 
-File Manager can be rendered inside other components like Tab, Dialog, and more.
+The File Manager component can be seamlessly rendered inside other Syncfusion components such as Dialog, Tab, and more. This integration capability allows you to create complex interfaces where file management functionality is needed within different UI contexts.
 
-* [Adding File Manager inside the Dialog](#adding-file-manager-inside-the-dialog)
-* [Adding  File Manager inside the Tab](#adding-file-manager-inside-the-tab)
+* [Adding File Manager inside a Dialog](#adding-file-manager-inside-the-dialog)
+* [Adding File Manager inside a Tab](#adding-file-manager-inside-the-tab)
+
+When nesting the File Manager, consider the parent container's dimensions as they will affect the File Manager's display area. You may need to adjust the width and height properties accordingly to ensure proper visibility and usability.
 
 ## Adding File Manager inside a Dialog
 
-The following example shows the File Manager component rendered inside the Dialog. Click the browse button in the Uploader element to open the File Manager inside a Dialog component.
+The following example demonstrates how to render the File Manager component inside a Dialog. When users click the browse button in the Uploader element, the File Manager opens within a Dialog component, allowing them to select files from the managed file system. Once files are selected, they can be processed according to your application's needs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,12 +32,11 @@ The following example shows the File Manager component rendered inside the Dialo
 {% include code-snippet/file-manager/file-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
 {% previewsample "page.domainurl/samples/file-manager/file-dialog-cs1" %}
 
-## Adding File Manager inside the Tab
+## Adding File Manager inside a Tab
 
-The following example demonstrates that the File Manager component is placed inside the content area of a Tab element.
+The following example demonstrates how to place the File Manager component inside the content area of a Tab element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Column spanning in Angular Gantt component
 
-The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) attribute in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the gantt.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt allows merging adjacent cells horizontally for a more structured layout. By setting the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) property in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event, you can span cells and customize their appearance.
 
-In the following demo, **Work**  cells have been spanned.
+In this example, **Work** cells are spanned to improve visual clarity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -21,13 +21,16 @@ In the following demo, **Work**  cells have been spanned.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnspan-cs1/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnspan-cs1" %}
 
 ## Change the border color while column spanning
 
-You can change the border color for the spanned cells by the using [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) event. This event triggers before the cell element is appended to the gantt element.
+You can customize the border color of spanned cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event, which triggers before the cell is rendered in the Gantt. This allows styling adjustments to be applied during cell creation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,6 +38,9 @@ You can change the border color for the spanned cells by the using [queryCellInf
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnspan-cs2/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -11,3 +11,20 @@
   width: 450px;
   margin: 0 auto;
 }
+
+.emptychat-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.e-ai-chat{
+  margin-top:10px;
+  font-size:18px;
+}
+.e-chat-ui .e-message-content p {
+  margin: 0;
+  display: inline-block;
+}
+.e-assistview-icon{
+  font-size: 24px;
+}

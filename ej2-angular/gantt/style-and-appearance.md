@@ -1,69 +1,120 @@
 ---
 layout: post
 title: Style and appearance in Angular Gantt component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to customize the style and appearance of the Syncfusion Angular Gantt component with CSS overrides and grid line configurations.
 platform: ej2-angular
-control: Style and appearance 
+control: Style and appearance
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Style and appearance in Angular Gantt component
 
-To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+The Angular Gantt component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 
-Section | CSS Class | Purpose of Class
------|-----|-----
-**Root**|e-gantt|This class is in the root element (div) of the gantt chart control.
-**Header**|e-gridheader|This class is added in the root element of header element. In this class, You can override thin line between header and content of the gantt chart.
-||e-table|This class is added at 'table' of the gantt chart header. This CSS class makes table width as 100 %.
-||e-columnheader|This class is added at 'tr' of the gantt chart header.
-**Grid Content**|e-gridcontent|This class is added at root of body content. This is to override background color of the body.
-||e-table|This class is added to table of content. This CSS class makes table width as 100 %.
-||e=row|This class is added to rows of gantt chart.
-||e-altrow|This class is added to alternate rows of gantt chart. This is to override alternate row color of the gantt chart.
-||e-rowcell|This class is added to all cells in the gantt chart. This is to override cells appearance and styling.
-**Chart Content**|e-gantt-chart|This class is added to the chart side of the gantt chart.
-||e-chart-row|This class is added to rows of gantt chart.
-**Timeline**|e-timeline-header-container|This class is added to timeline of the gantt chart.
-||e-header-cell-label|This class is added to the header cell of the timeline.
-||e-weekend-header-cell|This class is added to the weekend cells.
-**Taskbar**|e-taskbar-main-container|This class is added to taskbar of the gantt chart.
-||e-gantt-parent-taskbar|This class is added to the parent task bar of the gantt chart.
-||e-gantt-milestone|This class is added to the milestone tasks of the gantt chart.
-||e-gantt-unscheduled-taskbar|This class is added to the unscheduled tasks.
-||e-gantt-manualparenttaskbar|This class is added to the manual scheduled parent taskbar.
-||e-gantt-child-manualtaskbar|This class is added to the manual scheduled child taskbar.
-||e-gantt-unscheduled-manualtask|This class is added to the manual unscheduled tasks.
-**Splitter**|e-split-bar|This class is added to the gantt chart splitter.
-||e-resize-handler|This class is added to the resize handler of the gantt chart splitter.
-||e-arrow-left|This class is added to the left arrow of the resize handler.
-||e-arrow=right|This class is added to the right arrow of the resize handler.
-**Connector Lines**|e-line|This class is added to the connector lines.
-||e-connector-line-right-arrow|This class is added to the right arrow of the connector line.
-||e-connector-line-left-arrow|This class is added to the left arrow of the connector line.
-**Labels**|e-task-label|This class is added to the task labels.
-||e-right-label-container|This class is added to the right label.
-||e-left-label-container|This class is added to the left label.
-**Event Markers**|e-event-markers|This class is added to the event markers.
-**Baseline**|e-baseline-bar|This class is added to the baseline.
-||e-baseline-gantt-milestone-container|This class is added to the baseline of milestone tasks.
-**Tooltip**|e-gantt-tooltip|This class is added to the tooltip.
+## CSS class reference
 
-## Grid lines
+The Gantt component uses CSS classes for styling, organized by functional areas:
+- **Core structure**:
+  - `e-gantt`: Root container for the entire component.
+  - `e-gridheader`: Header container separating headers from content.
+  - `e-table`: Header table for full-width rendering.
+  - `e-columnheader`: Header row for column titles and sorting indicators.
+- **Content area**:
+  - `e-gridcontent`: Main content container for background and layout.
+  - `e-table`: Content table for task data.
+  - `e-row`: Individual task row styling and spacing.
+  - `e-altrow`: Alternate row styling for readability.
+  - `e-rowcell`: Individual cell styling and alignment.
+- **Chart and timeline**:
+  - `e-gantt-chart`: Chart container for timeline visualization.
+  - `e-chart-row`: Chart row alignment with grid rows.
+  - `e-timeline-header-container`: Timeline header for date labels.
+  - `e-header-cell-label`: Timeline header cell text formatting.
+  - `e-weekend-header-cell`: Weekend header cells.
+- **Taskbar elements**:
+  - `e-taskbar-main-container`: Main taskbar container for positioning.
+  - `e-gantt-parent-taskbar`: Parent taskbar styling.
+  - `e-gantt-child-taskbar`: Child taskbar appearance.
+  - `e-gantt-milestone`: Milestone diamond shape.
+  - `e-gantt-unscheduled-taskbar`: Unscheduled taskbars.
+  - `e-gantt-manualparenttaskbar`: Manual parent taskbar.
+  - `e-gantt-child-manualtaskbar`: Manual child taskbar.
+  - `e-gantt-unscheduled-manualtask`: Unscheduled manual task.
+  - `e-parent-taskbar-inner-div`: Parent taskbar inner.
+  - `e-child-taskbar-inner-div`: Child taskbar inner.
+  - `e-child-progress-resizer`: Child progress resizer.
+- **Dependency lines**:
+  - `e-line`: Dependency line base style.
+  - `e-connector-line-right-arrow`: Right-side arrowhead.
+  - `e-connector-line-left-arrow`: Left-side arrowhead.
+- **Additional elements**:
+  - `e-gantt-tooltip`: Tooltip container for task details.
+  - `e-left-label-container`: Left label container.
+  - `e-right-label-container`: Right label container.
+  - `e-header-cell-label`: Header cell labels.
+  - `e-task-label`: Task labels.
+  - `e-taskbar-left-resizer`: Left taskbar resizer.
+  - `e-taskbar-right-resizer`: Right taskbar resizer.
+  - `e-weekend-container`: Weekend container.
+  - `e-left-label-inner-div`: Left label inner.
+  - `e-right-label-inner-div`: Right label inner.
+  - `e-left-resize-gripper`: Left resizer gripper.
+  - `e-right-resize-gripper`: Right resizer gripper.
+  - `e-connectorpoint-left`: Left connector point.
+  - `e-connectorpoint-right`: Right connector point.
+  - `e-child-progressbar-inner-div`: Child progress bar inner.
+  - `e-parent-progressbar-inner-div`: Parent progress bar inner.
+  - `e-row-expand`: Row expand.
+  - `e-row-collapse`: Row collapse.
+  - `e-progressbar-handler`: Progress bar handler.
+  - `e-connectorpoint-left-hover`: Connector point left hover.
+  - `e-connectorpoint-right-hover`: Connector point right hover.
+  - `e-baseline-bar`: Baseline bar.
 
-In Gantt component, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) property.
+## Override default styles
 
-The following options are available in Gantt component for rendering grid lines,
+Override default CSS styles for custom appearance, using classes like `.e-gantt .e-gantt-parent-taskbar` for parent taskbars or `.e-gantt .e-gantt-milestone` for milestones. Theme Studio customizes themes across components.
 
-* Horizontal: The horizontal grid lines alone will be visible.
-* Vertical: The vertical grid lines alone will be visible.
-* Both: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
-* None: Gridlines will not be visible on TreeGird and chart sides.
+The following example overrides taskbar and milestone styles:
 
-> By default, the [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridLines) property is set with `Horizontal` type.
+```css
+/* Customize child taskbar appearance */
+.e-gantt .e-gantt-parent-taskbar {
+    background-color: #28a745;
+    border-color: #1e7e34;
+}
 
-The following code example shows how to change the gridlines rendering mode in the Gantt component.
+/* Customize milestone appearance */
+.e-gantt .e-gantt-milestone {
+    background-color: #ff6600;
+    border-color: #cc5200;
+}
+```
+
+### Grid appearance customization
+
+```css
+/* Customize alternate row colors */
+.e-gantt .e-altrow {
+    background-color: #f8f9fa;
+}
+
+/* Customize cell borders */
+.e-gantt .e-rowcell {
+    border-right: 1px solid #dee2e6;
+}
+```
+
+## Configure grid lines
+
+Control grid line visibility with [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):
+- `Horizontal`: Shows only horizontal lines for row separation.
+- `Vertical`: Shows only vertical lines for column separation.
+- `Both`: Shows both for full grid structure.
+- `None`: Hides all lines for minimal appearance.
+
+The following example configures both grid lines:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,5 +125,12 @@ The following code example shows how to change the gridlines rendering mode in t
 {% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/appearance-customization/gridlines-cs1" %}
+
+By default, `gridLines` is `Horizontal`.
+
+## See also
+- [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
+- [How to configure timeline?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
+- [How to manage columns?](https://ej2.syncfusion.com/angular/documentation/gantt/columns)

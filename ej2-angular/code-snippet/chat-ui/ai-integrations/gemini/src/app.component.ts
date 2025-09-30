@@ -1,26 +1,36 @@
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component, ViewChild } from '@angular/core';
-import {
-  ChatUIModule,
-  UserModel,
-  ChatUI,
-  ToolbarSettingsModel,
-} from '@syncfusion/ej2-angular-interactive-chat';
+import {ChatUIModule, UserModel, ChatUI, ToolbarSettingsModel} from '@syncfusion/ej2-angular-interactive-chat';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import * as marked from 'marked';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  template: `
+        <div
+        id="loadOnDemand"
+        ejs-chatui
+        #chatUI
+        headerText="Chat UI"
+        headerIconCss="e-icons e-ai-chat"
+        [headerToolbar]="headerToolbar"
+        (messageSend)="messageSend($event)"
+        [user]="currentUser">
+        <ng-template #emptyChatTemplate>
+          <div class="emptychat-content">
+            <h3><span class="e-icons e-assistview-icon"></span></h3>
+            <div class="emptyChatText">
+              Just a second, we're preparing your chat...
+            </div>
+          </div>
+        </ng-template>
+      </div>
+  `,
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, ChatUIModule],
-})
+  imports: [ChatUIModule],
+});
 
 export class AppComponent {
-  @ViewChild('chatUI')
-  public chatUI: ChatUI;
-
+  @ViewChild('chatUI') public chatUI!: ChatUI;
   private geminiApiKey = ''; // Replace with your Gemini API key
   private genAI = new GoogleGenerativeAI(this.geminiApiKey);
   public currentUser: UserModel = {
@@ -40,35 +50,30 @@ export class AppComponent {
     itemClicked: this.toolbarItemClicked,
   };
 
-  messageSend = (args: any) => {
-    setTimeout(async () => {
+  messageSend = async  (args: any) => {
       this.chatUI.typingUsers = [this.aiUser];
 
       try {
         const userPrompt = args.message.text || 'hi';
-        const model = this.genAI.getGenerativeModel({
-          model: 'gemini-1.5-flash',
-        });
+        const model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Replace with the updated gemini model
         const result = await model.generateContent(userPrompt);
         const response = result.response.text();
 
         this.chatUI.addMessage({
-          text: marked.parse(response),
+          text: (marked.parse(response) as string),
           author: this.aiUser,
         });
+        this.chatUI.typingUsers = [];
       } catch (error) {
-        console.error('Error fetching Gemini response:', error);
         this.chatUI.addMessage({
           text: 'Error generating response. Please try again.',
           author: this.aiUser,
-        });
-      } finally {
-        this.chatUI.typingUsers = [];
-      }
-    }, 500);
+      });
+      this.chatUI.typingUsers = [];
+    }
   };
 
-  toolbarItemClicked() {
-    this.chatUI.messages = [];
+  toolbarItemClicked(args: any): void {
+    (this.chatUI as any).messages = [];
   }
 }

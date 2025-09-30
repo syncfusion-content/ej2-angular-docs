@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Excel like filter in Angular Gantt component
 
-You can enable Excel like filter by defining [`filterSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
+
+To enable it, configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Excel** and set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -23,3 +25,73 @@ You can enable Excel like filter by defining [`filterSettings.type`](https://ej2
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs1" %}
+
+## Hide Excel filter dialog elements using CSS
+
+You can hide elements such as the context menu, search box, sorting options, and checkbox list in the Gantt Excel filter dialog using the following CSS:
+
+```css
+
+.e-gantt .e-excelfilter .e-contextmenu-wrapper {
+    display: none;
+}
+
+```
+
+If you want to hide only the built-in sorting options (ascending, descending, and separator), apply the following CSS:
+
+```css
+ .e-excel-ascending,
+    .e-excel-descending,
+    .e-separator.e-excel-separator {
+      display: none;
+    }
+
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/filtering/customize-filtermenu-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/filtering/customize-filtermenu-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/filtering/customize-filtermenu-cs1" %}
+
+## Customize the filter choice count
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the component and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
+
+To customize this behavior, the `filterChoiceCount` property can be adjusted to increase or decrease the number of distinct values displayed, depending on the dataset size and filtering requirements.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/filtering/choice-count-filtermenu/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/filtering/choice-count-filtermenu/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/filtering/choice-count-filtermenu" %}
+
+## Bind custom remote datasource for excel/checkbox filtering
+
+You can dynamically bind a custom remote data source to the Excel or checkbox filter in the Gantt component by using a `DataManager` with `WebApiAdaptor`. This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/filtering/remote-datasource-filtermenu/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/filtering/remote-datasource-filtermenu/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/filtering/remote-datasource-filtermenu" %}
+

@@ -3,10 +3,10 @@ import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs } fro
 import { marked } from 'marked';
 import { AzureOpenAI } from 'openai';
 
-const azureOpenAIApiKey = ''; // replace
-const azureOpenAIEndpoint = ''; // replace
-const azureOpenAIApiVersion = ''; // replace to match your resource
-const azureDeploymentName = ''; // replace with your deployment name
+const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
+const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
+const azureOpenAIApiVersion = 'Your_Azure_OpenAI_API_Version';
+const azureDeploymentName = 'Your_Deployment_Name';
  
 const client = new AzureOpenAI({
   apiKey: azureOpenAIApiKey,
@@ -37,7 +37,7 @@ const client = new AzureOpenAI({
         </ng-template>
     </div>
   `
-})
+});
 export class AppComponent {
   @ViewChild('assist') aiAssistView!: AIAssistViewComponent;
 
@@ -97,6 +97,7 @@ export class AppComponent {
             'Verify endpoint, API key, deployment name, API version, and CORS settings.',
           true
         );
+        this.stopStreaming = true;
       });
   }
 

@@ -3,7 +3,7 @@ layout: post
 title: Manual refresh in Angular Schedule component | Syncfusion
 description: Learn here all about Manual refresh in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Manual refresh 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 ## Refresh Template
 
-In Scheduler, we can able to refresh the elements of the template alone instead of the entire scheduler by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#refreshtemplates) public method. We can provide an additional option to refresh specific templates alone or all templates together by using this method. The following template names are accepted as an argument to refresh it specifically.
+In the Scheduler component, you can refresh specific template element without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#refreshtemplates) public method. We can provide an additional option to refresh specific templates alone or all templates together by using this method. The following template names are accepted as an argument to refresh it specifically.
 
-* eventTemplate
-* dateHeaderTemplate
-* resourceHeaderTemplate
-* quickInfoTemplates
-* editorTemplate
-* tooltipTemplate
-* headerTooltipTemplate
+* `eventTemplate`
+* `dateHeaderTemplate`
+* `resourceHeaderTemplate`
+* `quickInfoTemplates`
+* `editorTemplate`
+* `tooltipTemplate`
+* `headerTooltipTemplate`
 
 In the following code example, you can see how to use the refreshTemplates method to refresh multiple templates. Here, we have added the following scheduler templates such as [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#celltemplate), [`dateHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#dateheadertemplate), [`eventTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventtemplate) and [`resourceHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#resourceheadertemplate)
 

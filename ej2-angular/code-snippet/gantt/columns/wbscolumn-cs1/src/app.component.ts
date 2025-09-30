@@ -1,19 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { WBSData } from './data';
 
 
 @Component({
-    imports: [
-         GanttAllModule
-    ],
-standalone: true,
+    imports: [ GanttAllModule],
+    standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttWbs" #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"
+    `<ejs-gantt id="ganttWbs" #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"
       [timelineSettings]="timelineSettings" [labelSettings]="labelSettings" [editSettings]="editSettings"
       [allowFiltering]="true" [allowSorting]="true" [toolbar]="toolbar" [treeColumnIndex]="2"
       [filterSettings]="filterSettings" [allowSelection]="true" [projectStartDate]="projectStartDate"
@@ -23,9 +18,7 @@ standalone: true,
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    @ViewChild('gantt')
-    public ganttObj?: GanttComponent;
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
@@ -46,6 +39,7 @@ export class AppComponent {
     public projectStartDate?: Date;
     public projectEndDate?: Date;
     public eventMarkers?: object[];
+
     public ngOnInit(): void {
         this.data = WBSData;
         this.taskSettings = {
