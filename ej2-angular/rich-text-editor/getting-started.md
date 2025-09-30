@@ -207,11 +207,11 @@ Use the [getCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich
 
 ```
 
-> You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/rich-text-editor) to knows how to render and configure the rich text editor tools.
+> You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/rich-text-editor) to knows how to render and configure the rich text editor tools.
 
 ## See also
 
-* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-modes)
+* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-mode)
 * [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe)
 * [How to render the toolbar in inline mode](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-mode)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/insert-emoticons)
