@@ -18,11 +18,9 @@ movePanel(id, row, col)
 ```
 
 Where,
-| Parameter | Type | Description |
-|-----------|------|-------------|-------------|
-| `id`  | string | ID of the panel to be moved |
-| `row` | number | New row position for the panel |
-| `col` | number | New column position for the panel |
+* `id` - ID of the panel to be moved.
+* `row` - New row position for the panel.
+* `col` - New column position for the panel.
 
 Each time a panel's position is changed (either programmatically or through UI interaction), the Dashboard Layout's [change](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#change) event is triggered.
 

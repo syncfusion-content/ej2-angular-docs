@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize thumbnail in Angular File Manager component
+# Customize thumbnails in Angular File Manager component
 
-The default appearance of the File Manager can be customized with your own icons by using [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showthumbnail) property.
+The File Manager component allows you to replace the default file and folder icons with custom thumbnails to enhance visual recognition or match your application's design theme. This is controlled through the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showthumbnail) property.
 
-The following example demonstrates how to add a custom icon in the largeicons view.
+The following example demonstrates how to implement custom icon thumbnails in the File Manager's large icons view:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

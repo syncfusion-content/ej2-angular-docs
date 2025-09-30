@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Implement own service provider in Angular File Manager component | Syncfusion
+title: Custom service provider in Angular File Manager | Syncfusion
 description: Learn here all about implementation own service provider in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
@@ -8,16 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create the custom file provider using NodeJS
+# Create a custom file provider using Node JS
 
-Here, we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing NodeJS to fetch the required data from the Azure blob storage.
+Here, we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 
-NodeJS acts as the bridge between the File Manager component and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
-
+Node JS acts as the bridge between the File Manager component and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
 
 ## Prerequisites
 
-* Valid Azure blob storage account. ( accountName, accountKey, endpointSuffix)
+* Active Azure Blob Storage account with valid credentials (accountName, accountKey, endpointSuffix)
 * Node version 14 or above.
 
 ## Introduction to Azure Blob Storage
@@ -30,14 +29,15 @@ Azure Blob Storage is Microsoft Azure's cloud-based object storage service. It i
 
 **Blobs:** Blobs are the actual data objects stored in Azure Blob Storage.
 
-By understanding the fundamental concepts and use cases of Azure Blob Storage, you will be well-prepared to proceed with setting up and interacting with it using NodeJS in the custom File Provider.
+By understanding the fundamental concepts and use cases of Azure Blob Storage, you will be well-prepared to proceed with setting up and interacting with it using
+Node JS in the custom File Provider.
 
 
-## Create NodeJS project
+## Create Node JS project
 
-Follow these steps to create the NodeJS project:
+Follow these steps to create the Node JS project:
 
-Create a new directory for your project and run the following command to initialize a new NodeJS project. This will create a package.json file.
+Create a new directory for your project and run the following command to initialize a new Node JS project. This will create a package.json file.
 
 ```ts
 
@@ -54,7 +54,7 @@ Install the following packages.
   - esm
   - multer
 
-Open your text editor or integrated development environment (IDE) and create the index.js file start writing your NodeJS code. This file will serve as the entry point of your application.
+Open your text editor or integrated development environment (IDE) and create the index.js file start writing your Node JS code. This file will serve as the entry point of your application.
 
 ```ts
 
@@ -72,7 +72,7 @@ app.listen(port, () => {
 
 ```
 
-To start your NodeJS application, simply run the following command in your terminal, pointing to the entry point file:
+To start your Node JS application, simply run the following command in your terminal, pointing to the entry point file:
 
 ```ts
 
@@ -80,7 +80,7 @@ node index.js
 
 ```
 
-## Initialize container client
+## Initializing the Azure Blob Storage connection
 
 First, we need to get the BlobServiceClient. By using the connection string, we can obtain the BlobServiceClient. So, format the connection string as shown below.
 
@@ -101,7 +101,7 @@ const containerClient = blobServiceClient.getContainerClient(containerName);
 
 ```
 
-## File actions
+## Implementing File Manager operations
 
 We need to provide the following actions to creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system
 
@@ -161,7 +161,7 @@ The following table represents the response parameters of **read** operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Details of files and folders present in given path or directory.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 <a id="file-manager-directory-content"></a>
 The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
@@ -387,7 +387,7 @@ The following table represents the response parameters of *create* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details of the created folder|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -452,7 +452,7 @@ The following table represents the response parameters of *rename* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details of the renamed item.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -518,7 +518,7 @@ The following table represents the response parameters of *delete* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details about the deleted item(s).|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -584,7 +584,7 @@ The following table represents the response parameters of *details* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |details|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Details of the requested item(s).|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 
 *Example:*
@@ -649,7 +649,7 @@ The following table represents the response parameters of *search* operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Files and folders in the searched directory that matches the search input.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -742,7 +742,7 @@ The following table represents the response parameters of *copy* operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Details of copied files or folders|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
