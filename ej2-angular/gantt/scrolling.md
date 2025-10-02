@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in Angular Gantt component | Syncfusion
- description: Learn how to configure scrolling in the Syncfusion Angular Gantt component for navigating large datasets and extended timelines.
+description: Learn how to configure scrolling in the Syncfusion Angular Gantt component for navigating large datasets and extended timelines.
 platform: ej2-angular
 control: Scrolling
 documentation: ug

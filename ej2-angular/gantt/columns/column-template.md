@@ -402,7 +402,7 @@ The following example demonstrates rendering `RadioButton` components in the **O
 {% include code-snippet/gantt/columns/column-template-cs10/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs10/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs10/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -17,13 +17,13 @@ The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 
-* `Ollama` application should be installed to run and manage LLM models locally.
+* [Ollama](https://ollama.com) application should be installed to run and manage LLM models locally.
 
 * Syncfusion AI AssistView for angular `@syncfusion/ej2-angular-interactive-chat` installed in your Angular project.
 
 ## Step 1: Getting Started with the AI AssistView component
 
-Before integrating LLM model, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
+Before integrating LLM model, ensure that the Syncfusion AI AssistView component is correctly rendered in your application:
 [ Angular Getting Started Guide](../getting-started)
 
 ## Step 2: Install Dependencies
@@ -112,4 +112,4 @@ ng serve
 
 ```
 
-Open `http://localhost:4200` to interact with your AI model where you can enter prompts and receive responses from the `Ollama` model.
+Open the hosted link to interact with your AI model where you can enter prompts and receive responses from the Ollama model.

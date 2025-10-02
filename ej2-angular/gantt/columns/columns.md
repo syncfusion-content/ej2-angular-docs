@@ -109,10 +109,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% include code-snippet/gantt/columns/columnwidth-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnwidth-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,7 +160,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 {% include code-snippet/gantt/columns/columnformat-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnformat-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -191,7 +188,7 @@ Format | Formatted value
 {% include code-snippet/gantt/columns/columnformat-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnformat-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -213,7 +210,7 @@ The following example demonstrates the `format` property specifies the date form
 {% include code-snippet/gantt/columns/columnformat-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnformat-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -292,7 +289,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/columntemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columntemplate-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -314,7 +311,7 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 {% include code-snippet/gantt/columns/customformat-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/customformat-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -339,7 +336,7 @@ You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api
 {% include code-snippet/gantt/columns/columnalign-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnalign-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -361,7 +358,7 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 {% include code-snippet/gantt/columns/columnformat-cs4/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnformat-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -384,7 +381,7 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 {% include code-snippet/gantt/columns/columnformat-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnformat-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -412,7 +409,7 @@ You can resize a column in Gantt to fit its content using the `autoFitColumns` m
 {% include code-snippet/gantt/columns/columnautofit-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnautofit-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -432,7 +429,7 @@ You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt t
 {% include code-snippet/gantt/columns/columnlock-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.component.css %}
+{% include code-snippet/gantt/columns/columnlock-cs1/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
@@ -459,7 +456,7 @@ The following example demonstrates how the **Duration** column is configured wit
 {% include code-snippet/gantt/columns/columnhide-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnhide-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -487,7 +484,7 @@ The following sample demonstrates how to hide and show columns using button clic
 {% include code-snippet/gantt/columns/columnhide-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnhide-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -507,7 +504,7 @@ The following sample demonstrates how to hide and show columns using button clic
 {% include code-snippet/gantt/columns/columnhide-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnhide-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -531,7 +528,7 @@ You can manage actions like filtering, sorting, resizing, reordering, editing, a
 {% include code-snippet/gantt/columns/columnactions-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnactions-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -595,10 +592,10 @@ To update column definitions in Angular Gantt, modify the [columns](https://help
 {% include code-snippet/gantt/columns/columnupdate-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.component.css %}
+{% include code-snippet/gantt/columns/columnupdate-cs1/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnupdate-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -616,7 +613,7 @@ You can add or remove columns in the Angular Gantt by updating the [columns](htt
 {% include code-snippet/gantt/columns/columnupdate-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnupdate-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

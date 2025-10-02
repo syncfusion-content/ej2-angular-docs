@@ -18,11 +18,11 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-selected-records/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-selected-records/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-selected-records/src/main.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-selected-records/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,11 +36,11 @@ The following example demonstrates how the **StartDate** column is made visible 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/showHide-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/showHide-cs1/src/main.ts %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,11 +54,11 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/exportHidden-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/exportHidden-cs1/src/main.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,11 +70,11 @@ To enable filtering in exported Excel or CSV files in Gantt, set the [enableFilt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-filtering/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-filtering/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-filtering/src/main.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-filtering/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,11 +86,11 @@ To specify a custom name for the exported Excel or CSV file in Gantt, set the [f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-file-name/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-file-name/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-file-name/src/main.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-file-name/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,11 +102,11 @@ The Gantt component supports customizing column settings during Excel or CSV exp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-columns/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-columns/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/excelOption-columns/src/main.ts %}
+{% include code-snippet/gantt/excel-export/excelOption-columns/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,11 +118,11 @@ To add header and footer content to exported Excel or CSV files in Gantt, config
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/headerFooter-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/headerFooter-cs1/src/main.ts %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -141,11 +141,11 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/theme-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/theme-cs1/src/main.ts %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -161,11 +161,11 @@ In the example below, the background color is customized for the **Progress** co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-export/cellFormat-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-export/cellFormat-cs1/src/main.ts %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integration of Microsoft Bot Framework With Angular Chat UI component
 
-The Syncfusion Angular Chat UI supports integration with a Microsoft Bot Framework bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
+The Syncfusion Angular Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
 
 ## Getting Started With the Chat UI component
 
@@ -20,9 +20,9 @@ Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI c
 
 ## Prerequisites
 
-* `Microsoft Azure Account`: Required to create and host the bot.
+* [Microsoft Azure Account](https://portal.azure.com/#home) : Required to create and host the bot.
 * `Node.js Environment`: The backend portion requires `Node.js` and `npm`.
-* `Syncfusion Chat UI for Angular`: Install @syncfusion/ej2-angular-interactive-chat in your Angular project.
+* `Syncfusion Chat UI for Angular`: Install `@syncfusion/ej2-angular-interactive-chat` in your Angular project.
 * `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
 
 ## Install Dependencies
@@ -48,11 +48,11 @@ npm install express axios cors dotenv
 
 1. In the [Azure Portal](https://portal.azure.com/#home), navigate to your bot resource.
 
-2. Enable the Direct Line channel:
+2. Enable the direct line channel:
     * Go to `Channels` > `Direct Line` > `Default-Site`.
     * Copy one of the displayed secret keys.
 
-3. Verify the Messaging endpoint in the Configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
+3. Verify the messaging endpoint in the configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
 
 > `Security Note`: Never expose the Direct Line secret key in frontend code. Use a backend token server to handle it securely.
 
@@ -106,7 +106,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 
 ## Integrate ChatUI in Angular
 
-Create `app.component.ts` to connect the Syncfusion Chat UI to the bot via the Direct Line API. The HTML template is included inline using the `template` property:
+Create `app.component.ts` to connect the Syncfusion Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -215,14 +215,14 @@ In a separate terminal window, navigate to your Angular project folder and start
 ```bash
 ng serve
 ```
-Open `http://localhost:4200` to interact with your Microsoft Bot Framework chatbot.
+Open the Host link to interact with your Microsoft Bot Framework chatbot.
 
 ## Troubleshooting
 
 * `Token Server Error (500)`: Ensure the `DIRECT_LINE_SECRET` in the `.env` file is correct and that you have restarted the token server after changes.
-* `CORS Error`: Ensure the CORS configuration in `index.js` allows requests from your frontend URL (e.g., `http://localhost:3000`).
+* `CORS Error`: Ensure the CORS configuration in `index.js` allows requests from your frontend Host URL.
 * `Bot is Not Responding`:
   - Test the bot in the Azure Portal using the `Test in Web Chat` feature to ensure it's running correctly.
   - Check the bot's `Messaging endpoint` in the Configuration section and ensure it is correct and accessible.
 * `Connection Fails on Load`: Verify the token server is running and accessible from the browser. Check the console for network errors.
-* `Token Expiration`: Direct Line tokens are short-lived. The `directline-js` library typically handles token refresh automatically, but if issues persist, restart the Direct Line connection.
+* `Token Expiration`: direct line tokens are short-lived. The `directline-js` library typically handles token refresh automatically, but if issues persist, restart the direct line connection.

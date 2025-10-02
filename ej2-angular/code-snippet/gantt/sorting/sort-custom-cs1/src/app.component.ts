@@ -1,77 +1,59 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SortService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { GanttComponent, GanttModule, SortService } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SortService],
-standalone: true,
-    selector: 'app-root',
-    template:
-       ` <button ejs-button id='sortColumn' (click)='sort()'>Sort Custom Column</button>
-        <br><br><br>
-       <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [allowSorting]= 'true'></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule, ButtonModule],
+  providers: [SortService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <button ejs-button id="sortColumn" (click)="sort()">Sort Custom Column</button>
+    <br /><br />
+    <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [allowSorting]="true">
+    </ejs-gantt>`
 })
-export class AppComponent{
-    // Data for Gantt
-    public data?: object[];
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public columns?: object[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
-    public ngOnInit(): void {
-        this.data = [
-            {
-                TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
-            },
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-            {
-                TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
-            },
-            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 }
-        ];
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'ParentID'
-        };
-        this.splitterSettings = {
-            columnIndex: 3
-        };
-        this.columns =  [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText: 'Task Name', width: '250' },
-            { field: 'StartDate', headerText: 'Start Date', width: '150' },
-            { field: 'Duration', headerText: 'Duration', width: '150' },
-            { field: 'Progress', headerText: 'Progress', width: '150' },
-            { field: 'CustomColumn', headerText: 'CustomColumn', width: '150' },
-        ];
-    }
-    sort(): void {
-        this.ganttObj.sortModule.sortColumn('CustomColumn', "Ascending", false);
-        };
+export class AppComponent implements OnInit {
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: object = {};
+  public splitterSettings: object = {};
+  public columns: object[] = [];
+
+  ngOnInit(): void {
+    this.data = [
+      { TaskID: 1, TaskName: 'Initiation', StartDate: new Date('04/02/2019'), Duration: 5, Progress: 30, ParentID: null, CustomColumn: 'Alpha' },
+      { TaskID: 2, TaskName: 'Planning', StartDate: new Date('04/03/2019'), Duration: 4, Progress: 50, ParentID: 1, CustomColumn: 'Beta' },
+      { TaskID: 3, TaskName: 'Execution', StartDate: new Date('04/04/2019'), Duration: 6, Progress: 70, ParentID: 1, CustomColumn: 'Gamma' },
+      { TaskID: 4, TaskName: 'Closure', StartDate: new Date('04/05/2019'), Duration: 3, Progress: 90, ParentID: 1, CustomColumn: 'Delta' },
+      { TaskID: 5, TaskName: 'Review', StartDate: new Date('04/06/2019'), Duration: 2, Progress: 40, ParentID: null, CustomColumn: 'Epsilon' },
+      { TaskID: 6, TaskName: 'Documentation', StartDate: new Date('04/07/2019'), Duration: 3, Progress: 60, ParentID: 5, CustomColumn: 'Zeta' },
+      { TaskID: 7, TaskName: 'Training', StartDate: new Date('04/08/2019'), Duration: 4, Progress: 80, ParentID: 5, CustomColumn: 'Eta' },
+      { TaskID: 8, TaskName: 'Deployment', StartDate: new Date('04/09/2019'), Duration: 5, Progress: 100, ParentID: 5, CustomColumn: 'Theta' }
+    ];
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      parentID: 'ParentID'
+    };
+    this.splitterSettings = { columnIndex: 2 };
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', width: '100' },
+      { field: 'TaskName', headerText: 'Task Name', width: '200' },
+      { field: 'StartDate', headerText: 'Start Date', width: '150' },
+      { field: 'Duration', headerText: 'Duration', width: '100' },
+      { field: 'Progress', headerText: 'Progress', width: '100' },
+      { field: 'Status', headerText: 'Status', width: '120' },
+      { field: 'Priority', headerText: 'Priority', width: '120' },
+      { field: 'CustomColumn', headerText: 'Custom Column', width: '150' }
+    ];
+  }
+
+  sort(): void {
+    this.ganttInstance.sortModule.sortColumn('CustomColumn', 'Ascending', false);
+  }
 }
-
-
-
