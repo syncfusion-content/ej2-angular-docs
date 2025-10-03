@@ -8,7 +8,7 @@ import OpenAI from 'openai';
   imports: [AIAssistViewModule],
   selector: 'app-root',
   template: `
-      <div class="integration-speechToText-section">
+      <div class="integration-textToSpeech-section">
         <div
           ejs-aiassistview
           #assistView

@@ -4,23 +4,23 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
 
-.integration-speechToText-section {
+.integration-textToSpeech-section {
   height: 350px;
   width: 650px;
   margin: 0 auto;
 }
 
-.integration-speechToText-section .e-view-container {
+.integration-textToSpeech-section .e-view-container {
   margin: auto;
 }
-.integration-speechToText-section .e-banner-view {
+.integration-textToSpeech-section .e-banner-view {
   margin-left: 0;
 }
-.integration-speechToText-section .banner-content .e-audio:before {
+.integration-textToSpeech-section .banner-content .e-audio:before {
   font-size: 25px;
 }
 
-.integration-speechToText-section .banner-content {
+.integration-textToSpeech-section .banner-content {
   display: flex;
   flex-direction: column;
   gap: 10px;

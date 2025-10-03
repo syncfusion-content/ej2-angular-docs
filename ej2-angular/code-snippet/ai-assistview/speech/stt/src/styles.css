@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-.integration-speechToText-section .e-footer-wrapper #assistview-sendButton {
+.integration-speechToText-section #assistview-sendButton {
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -36,15 +36,13 @@
   cursor: pointer;
 }
 
-.integration-speechToText-section .e-footer-wrapper #speechToText.visible,
-.integration-speechToText-section
-  .e-footer-wrapper
-  #assistview-sendButton.visible {
+.integration-speechToText-section #speechToText.visible,
+.integration-speechToText-section #assistview-sendButton.visible {
   display: inline-block;
 }
 
-.integration-speechToText-section .e-footer-wrapper #speechToText,
-.integration-speechToText-section .e-footer-wrapper #assistview-sendButton {
+.integration-speechToText-section #speechToText,
+.integration-speechToText-section #assistview-sendButton {
   display: none;
 }
 
@@ -62,21 +60,18 @@
   border-radius: 30px;
 }
 
-.integration-speechToText-section .e-footer-wrapper .content-editor {
+.integration-speechToText-section .content-editor {
   width: 100%;
   overflow-y: auto;
   font-size: 14px;
   min-height: 25px;
   max-height: 200px;
   padding: 10px;
-  scrollbar-color: #c1c1c1 transparent;
 }
 
-.integration-speechToText-section
-  .e-footer-wrapper
-  .content-editor[contentEditable='true']:empty:before {
+.integration-speechToText-section .content-editor[contentEditable='true']:empty:before {
   content: attr(placeholder);
-  color: #757575;
+  color: #6b7280;
   font-style: italic;
 }
 
