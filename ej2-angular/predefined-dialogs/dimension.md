@@ -69,6 +69,10 @@ Use the following code to customize the max-width and max-height for alert dialo
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/max-width-height-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/predefined-dialogs/max-width-height-cs1/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/predefined-dialogs/max-width-height-cs1" %}
@@ -86,6 +90,10 @@ Use the following code to customize the min-width and min-height for alert dialo
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/min-width-height-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/predefined-dialogs/min-width-height-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
