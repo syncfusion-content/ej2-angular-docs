@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Integration of LLM via Ollama With AI AssistView component
+# LLM via Ollama With AI AssistView component
 
 The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. The component acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
 
@@ -86,7 +86,7 @@ ollama serve
 
 ```
 
-## Step 4: Integrate AI AssistView in Angular
+## Step 4: Configure AI AssistView in Angular
 
 Create `src/app/app.component.ts` to connect the Syncfusion AI AssistView to the LLM model:
 

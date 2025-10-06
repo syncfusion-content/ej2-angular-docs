@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  changeHeaderText(): void {
+  public changeHeaderText(): void {
     this.ganttInstance?.treeGrid.grid.columns.forEach((column: ColumnModel) => {
       column.headerText = this.headerTextMap[column.field as string];
     });

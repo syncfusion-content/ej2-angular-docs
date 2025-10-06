@@ -24,7 +24,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt', { static: true }) public ganttObj!: GanttComponent;
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   @ViewChild('dropdownColumn', { static: true }) public dropDownColumn!: DropDownListComponent;
   @ViewChild('dropdownDirection', { static: true }) public dropDownDirection!: DropDownListComponent;
 
@@ -82,6 +82,6 @@ export class AppComponent implements OnInit {
   public addSortColumn(): void {
     const column = this.dropDownColumn.value as string;
     const direction = this.dropDownDirection.value as 'Ascending' | 'Descending';
-    this.ganttObj.sortColumn(column, direction, true);
+    (this.ganttInstance as GanttComponent).sortColumn(column, direction, true);
   }
 }

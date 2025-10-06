@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
-To enable it, configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Excel** and set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true**.
+To enable this feature, configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Excel** and set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,10 +42,10 @@ If you want to hide only the built-in sorting options (ascending, descending, an
 
 ```css
  .e-excel-ascending,
-    .e-excel-descending,
-    .e-separator.e-excel-separator {
-      display: none;
-    }
+ .e-excel-descending,
+ .e-separator.e-excel-separator {
+    display: none;
+  }
 
 ```
 
@@ -81,7 +81,7 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 
 ## Bind custom remote datasource for excel/checkbox filtering
 
-You can dynamically bind a custom remote data source to the Excel or checkbox filter in the Gantt component by using a `DataManager` with `WebApiAdaptor`. This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
+You can dynamically bind a custom remote data source to the Excel filter in the Gantt component by using a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) with [WebApiAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

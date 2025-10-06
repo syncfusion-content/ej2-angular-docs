@@ -1,8 +1,7 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import {GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ColumnModel, TextAlign } from '@syncfusion/ej2-angular-grids';
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
-import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { DropDownListModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { GanttData } from './data';
 
 @Component({

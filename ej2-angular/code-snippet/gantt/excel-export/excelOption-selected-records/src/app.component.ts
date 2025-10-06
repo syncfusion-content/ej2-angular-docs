@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     this.selectionSettings = { type: 'Multiple' };
   }
 
-  toolbarClick(args: ClickEventArgs): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_excelexport') {
       const selectedRecords = (this.ganttInstance as GanttComponent).treeGrid.getSelectedRecords();
         const exportProperties = {

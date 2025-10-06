@@ -8,10 +8,10 @@ import { GanttData } from './data';
   imports: [GanttModule],
   providers: [ReorderService],
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['./app.component.css'],
   template: `
     <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings" [columns]="columns" [allowReordering]="true">
-    </ejs-gantt>`
+    </ejs-gantt>`,
+  styleUrls: ['./app.component.css'],
 })
 
 export class AppComponent implements OnInit {

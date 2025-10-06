@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   public columns: Column[] = [];
   public filterSettings: object = {};
   public fieldData: string[] = [];
-  public typeData: string[] = ['Menu', 'Excel','CheckBox'];
+  public typeData: string[] = ['Menu', 'Excel'];
   public typeEnabled: boolean = false;
 
   ngOnInit(): void {

@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
@@ -57,7 +56,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  selectRowRange(): void {
+  public selectRowRange(): void {
     const start = parseInt(this.startTextbox.element.value, 10);
     const end = parseInt(this.endTextbox.element.value, 10);
     if (!isNaN(start) && !isNaN(end) && start >= 0 && end >= start) {

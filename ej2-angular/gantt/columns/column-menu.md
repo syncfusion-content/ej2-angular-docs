@@ -10,20 +10,20 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular Gantt component
 
-The column menu in the Angular Gantt chart provides built-in options such as sorting, filtering, column chooser, and autofit. When the menu icon in a column header is clicked, a menu appears with these features.
+The column menu in the Angular Gantt component provides built-in options such as sorting, filtering, column chooser, and autofit. When the menu icon in a column header is clicked, a menu appears with these features.
 
-To enable the column menu, set `showColumnMenu` to **true** in the Gantt configuration and inject `ColumnMenuService` in the provider section.
+To enable the column menu, set `showColumnMenu` to **true** in the Gantt configuration and inject `ColumnMenuService` in the `providers` of the component.
 
 The default column menu items are listed below:
 
 | Item            | Description                                 |
 |-----------------|---------------------------------------------|
-| SortAscending   | Sorts the column in ascending order         |
-| SortDescending  | Sorts the column in descending order        |
-| AutoFit         | Adjusts the width of the current column     |
-| AutoFitAll      | Adjusts the width of all columns            |
-| ColumnChooser   | Allows toggling column visibility           |
-| Filter          | Displays filter options based on [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#type)  |
+| SortAscending   | Sorts the column in ascending order.         |
+| SortDescending  | Sorts the column in descending order.        |
+| AutoFit         | Adjusts the width of the current column.     |
+| AutoFitAll      | Adjusts the width of all columns.            |
+| ColumnChooser   | Allows toggling column visibility .          |
+| Filter          | Displays filter options based on [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#type).  |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,6 @@ The default column menu items are listed below:
 > * You can disable the column menu for specific columns by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#showcolumnmenu) to **false**.
 
 > * You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) with only the required items.
-
 
 ## Add custom column menu item
 
@@ -90,7 +89,7 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 ## Render nested column menu
 
-You can extend the column menu in Angular Gantt by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
+You can extend the column menu in Gantt component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
 
 The following example demonstrates how to configure `columnMenuItems` to include a nested menu.
 
@@ -110,7 +109,7 @@ The following example demonstrates how to configure `columnMenuItems` to include
 
 ## Customize the icon of column menu
 
-You can change the default column menu icon in Angular Gantt by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
+You can change the default column menu icon in Gantt component by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
 
 To customize the column menu icon, follow these steps:
 
@@ -129,11 +128,12 @@ To customize the column menu icon, follow these steps:
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
 ```
 
-The following example demonstrates how to apply a custom icon to the column menu in the Gantt chart.
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/gantt/columns/columntype-cs1/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/main.ts %}

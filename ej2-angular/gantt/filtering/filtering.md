@@ -10,17 +10,20 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Gantt component
 
-Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt Component by using the filter menu support and toolbar search support. 
+Filtering allows you to view specific or related records based on defined criteria. The Gantt component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
-To enable filtering in the Angular Gantt component, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true**. Menu-based filtering is configured using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/) property, and toolbar-based search is configured using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.
+To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.
 
-To activate filtering functionality, inject the `FilterService` in the provider section.
+To activate filtering functionality, inject the `FilterService` in the `providers` of the component.
+
+> The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Initial filter
 
-To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#columns) property.
+To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#columns) property.
 
-The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `predicate` condition set to `and`.
+The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,29 +37,29 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
   
 {% previewsample "page.domainurl/samples/gantt/filtering/initialfilter-cs1" %}
 
-### Filter operators
+## Filter operators
 
 Filter operators can be set using the `filterSettings.columns.operator` property to define the comparison logic for each column.
 
-Supported operators and their applicable data types:
+The available operators and their supported data types are:
 
 | Operator             | Description                                         | Supported Types                  |
 |----------------------|-----------------------------------------------------|----------------------------------|
-| `startswith`         | Matches values beginning with the specified text.   | String                           |
-| `endswith`           | Matches values ending with the specified text.      | String                           |
-| `contains`           | Matches values that include the specified text.     | String                           |
-| `equal`              | Matches values exactly equal to the specified text. | String, Number, Boolean, Date    |
-| `notequal`           | Matches values not equal to the specified text.     | String, Number, Boolean, Date    |
-| `greaterthan`        | Matches values greater than the specified value.    | Number, Date                     |
-| `greaterthanorequal` | Matches values greater than or equal to the value.  | Number, Date                     |
-| `lessthan`           | Matches values less than the specified value.       | Number, Date                     |
-| `lessthanorequal`    | Matches values less than or equal to the value.     | Number, Date                     |
+| startswith           | Matches values beginning with the specified value.   | String                           |
+| endswith             | Matches values ending with the specified value.      | String                           |
+| contains             | Matches values that include the specified value.     | String                           |
+| equal                | Matches values exactly equal to the specified value. | String, Number, Boolean, Date    |
+| notequal             | Matches values not equal to the specified value.     | String, Number, Boolean, Date    |
+| greaterthan          | Matches values greater than the specified value.    | Number, Date                     |
+| greaterthanorequal   | Matches values greater than or equal to the value.  | Number, Date                     |
+| lessthan             | Matches values less than the specified value.       | Number, Date                     |
+| lessthanorequal      | Matches values less than or equal to the value.     | Number, Date                     |
 
-> The default value for `filterSettings.columns.operator` is `equal`.
+N> By default, the `filterSettings.columns.operator` value is `equal`
 
 ## Filter hierarchy modes
 
-The Angular Gantt component supports multiple filtering modes, configurable using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#hierarchymode) property. The available modes are:
+The Angular Gantt component supports multiple filtering modes, which can be configured using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#hierarchymode) property. The available modes are:
 
 - **Parent**: This is the default mode. Filtered records are displayed along with their parent records. If no parent exists, only the filtered records are shown.
 
@@ -80,9 +83,10 @@ The Angular Gantt component supports multiple filtering modes, configurable usin
 
 ## Diacritics
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#ignoreaccent) property to **true**.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> BAngular Gantt component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#ignoreaccent) property to **true**.
 
-The following sample demonstrates this behavior: when filtering the `TaskName` column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
+The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,7 +136,7 @@ You can clear all the filtering conditions applied in the Gantt component by usi
 
 ## Enable different filter for a column
 
-You can enable different filter types for each column in the Gantt component by setting the `column.filter.type` property. This allows you to apply specific filtering behaviors such as Menu, Excel, or Checkbox filters based on your requirements.
+You can enable different filter types for individual columns in the Gantt component by setting the `column.filter.type` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +152,7 @@ You can enable different filter types for each column in the Gantt component by 
 
 ## Customize filtering action
 
-You can customize the filtering behavior in the Syncfusion Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the  Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
   

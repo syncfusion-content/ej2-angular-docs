@@ -22,7 +22,7 @@ import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
   `]
 })
 export class AppComponent implements OnInit {
-  @ViewChild('gantt', { static: true }) public gantt!: GanttComponent;
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
   public taskSettings = {};
   public splitterSettings = {};
@@ -59,12 +59,12 @@ export class AppComponent implements OnInit {
     };
   }
 
-  filterAction(args: MouseEvent): void {
+  public filterAction(args: MouseEvent): void {
     const targetId = (args.currentTarget as HTMLElement).id;
     if (targetId === 'performFilter') {
-      this.gantt.filterByColumn('TaskName', 'startswith', 'Project');
+      (this.ganttInstance as GanttComponent).filterByColumn('TaskName', 'startswith', 'Project');
     } else {
-      this.gantt.clearFiltering();
+      (this.ganttInstance as GanttComponent).clearFiltering();
     }
   }
 }

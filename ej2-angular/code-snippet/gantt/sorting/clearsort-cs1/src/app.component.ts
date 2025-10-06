@@ -16,7 +16,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt', { static: true }) public ganttObj!: GanttComponent;
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
   public taskSettings: object = {};
   public columns: object[] = [];
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  clearSort(): void {
-    this.ganttObj.clearSorting();
+  public clearSort(): void {
+    (this.ganttInstance as GanttComponent).clearSorting();
   }
 }

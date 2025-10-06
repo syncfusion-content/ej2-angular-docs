@@ -10,20 +10,13 @@ import { GanttData } from './data';
   imports: [GanttAllModule],
   providers: [ExcelExportService, ToolbarService],
   template: `
-    <ejs-gantt #gantt id="ganttDefault" height="430px"
-      [dataSource]="data"
-      [taskFields]="taskSettings"
-      [toolbar]="toolbar"
-      (toolbarClick)="toolbarClick($event)"
-      allowExcelExport="true"
-      [treeColumnIndex]="1">
+    <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" allowExcelExport="true" [treeColumnIndex]="1">
     </ejs-gantt>
   `,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
-
   public data?: object[];
   public taskSettings?: object;
   public toolbar?: ToolbarItem[];
@@ -54,7 +47,7 @@ export class AppComponent implements OnInit {
       const excelExportProperties: ExcelExportProperties = {
         columns: exportColumns as Column[]
       };
-      this.ganttInstance?.excelExport(excelExportProperties);
+      (this.ganttInstance as GanttComponent).excelExport(excelExportProperties);
     }
   }
 

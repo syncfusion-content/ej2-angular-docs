@@ -51,11 +51,11 @@ export class AppComponent implements OnInit {
     };
   }
 
-  reorderSingleColumnByTargetIndex(): void {
+  public reorderSingleColumnByTargetIndex(): void {
     this.ganttInstance?.treeGrid.grid.reorderColumnByTargetIndex('TaskID', 3);
   }
 
-  reorderMultipleColumnByTargetIndex(): void {
+  public reorderMultipleColumnByTargetIndex(): void {
     this.ganttInstance?.treeGrid.grid.reorderColumnByTargetIndex(['TaskID', 'TaskName'], 3);
   }
 }

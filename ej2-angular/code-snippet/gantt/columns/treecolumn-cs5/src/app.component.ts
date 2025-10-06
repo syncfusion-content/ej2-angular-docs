@@ -1,7 +1,7 @@
 import { GanttModule, ICollapsingEventArgs } from '@syncfusion/ej2-angular-gantt';
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { GanttData } from './data';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttData } from './data';
 
 @Component({
     imports: [GanttModule],
@@ -22,7 +22,7 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('gantt') public ganttInstance: GanttComponent | undefined;
+    @ViewChild('gantt') public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public splitterSettings?: object;
@@ -42,7 +42,8 @@ export class AppComponent implements OnInit {
             position: '75%'
         };
     }
-    dataBound(): void {
+
+    public dataBound(): void {
         //checking whether it is initial rendering.
         if ((this.ganttInstance as GanttComponent).treeGrid.initialRender &&
             window.localStorage !== null
@@ -62,14 +63,15 @@ export class AppComponent implements OnInit {
         }
     }
 
-    collapsed(args: ICollapsingEventArgs): void {
+    public collapsed(args: ICollapsingEventArgs): void {
         //Here collected the collapsed record's primarykey value.
         this.collapsingData.push((args.data as any).TaskID);
 
         //Here set/ update the localstorage value.
         this.setstorage_data(this.collapsingData);
     }
-    expanded(args: ICollapsingEventArgs): void {
+
+    public expanded(args: ICollapsingEventArgs): void {
         //Check whether the collapsing data array has the same primary key value as the expanding data.
         var index = this.collapsingData.findIndex((x: any) => {
             if (x == (args.data as any).TaskID) {

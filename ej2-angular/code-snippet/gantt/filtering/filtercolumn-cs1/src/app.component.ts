@@ -60,14 +60,14 @@ export class AppComponent implements OnInit {
   }
 
   // Filter by a single value.
-  onSingleValueFilter(): void {
-    this.ganttInstance.clearFiltering();
-    this.ganttInstance.filterByColumn('TaskName', 'startswith', 'Iden', 'and');
+  public onSingleValueFilter(): void {
+    (this.ganttInstance as GanttComponent).clearFiltering();
+    (this.ganttInstance as GanttComponent).filterByColumn('TaskName', 'startswith', 'Iden', 'and');
   }
 
   // Filter by multiple values.
-  onMultipleValueFilter(): void {
-    this.ganttInstance.clearFiltering();
-    this.ganttInstance.filterByColumn('TaskID', 'equal', [2, 3, 4], 'or');
+  public onMultipleValueFilter(): void {
+    (this.ganttInstance as GanttComponent).clearFiltering();
+    (this.ganttInstance as GanttComponent).filterByColumn('TaskID', 'equal', [2, 3, 4], 'or');
   }
 }

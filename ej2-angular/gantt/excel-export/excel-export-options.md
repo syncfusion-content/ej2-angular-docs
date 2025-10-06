@@ -24,13 +24,17 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](ht
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/excelOption-selected-records/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/excelOption-selected-records/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/excelOption-selected-records" %}
 
 ## Show or hide columns on exported Excel
 
-To show or hide specific columns during Excel export in Gantt, use the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event to check `args.item.id` and update the [columns.visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** . After the export is completed, restore the original visibility settings using the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelexportcomplete) event.
+To show or hide specific columns during Excel export in Gantt, use the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event to check `args.item.id` and update the [columns.visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** . After the export is complete, restore the original column visibility using the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelexportcomplete) event.
 
 The following example demonstrates how the **StartDate** column is made visible and the **Duration** column is excluded from the exported Excel file.
 
@@ -42,13 +46,17 @@ The following example demonstrates how the **StartDate** column is made visible 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/showHide-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/showHide-cs1" %}
 
 ## Export hidden columns
 
-To include hidden columns during Excel export in Gantt, set [ExportProperties.includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#includehiddencolumn)to **true** in the export configuration. This ensures hidden columns are included in the exported dataset.
+To include hidden columns during Excel export in the Gantt component, set [ExportProperties.includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#includehiddencolumn) to **true** in the export configuration. This ensures that hidden columns are included in the exported data.
 
 The following example demonstrates that the hidden **StartDate** column is included in the exported file.
 
@@ -60,13 +68,17 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/exportHidden-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/exportHidden-cs1" %}
 
 ## Enable filtering in the exported Excel file
 
-To enable filtering in exported Excel or CSV files in Gantt, set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). Additionally, ensure that filtering is enabled in the Gantt configuration by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true**.
+To enable filtering in exported Excel or CSV files in Gantt component, set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). Additionally, ensure that filtering is enabled in the Gantt configuration by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,13 +88,17 @@ To enable filtering in exported Excel or CSV files in Gantt, set the [enableFilt
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/excelOption-filtering/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/excelOption-filtering/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/excelOption-filtering" %}
 
 ## Define file name
 
-To specify a custom name for the exported Excel or CSV file in Gantt, set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) during export configuration. This defines the name assigned to the file when the export operation is triggered.
+To specify a custom name for the exported Excel or CSV file in the Gantt component, set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) configuration. This defines the name assigned to the file when the export is triggered
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,6 +107,10 @@ To specify a custom name for the exported Excel or CSV file in Gantt, set the [f
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/excelOption-file-name/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/excelOption-file-name/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -108,13 +128,17 @@ The Gantt component supports customizing column settings during Excel or CSV exp
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/excelOption-columns/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/excelOption-columns/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/excelOption-columns" %}
 
 ## Add header and footer
 
-To add header and footer content to exported Excel or CSV files in Gantt, configure the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#footer) properties within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) during the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
+To add header and footer content to exported Excel or CSV files in the Gantt component, configure the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#footer) properties within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) during the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,6 +148,10 @@ To add header and footer content to exported Excel or CSV files in Gantt, config
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/headerFooter-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-export/headerFooter-cs1" %}
@@ -132,12 +160,11 @@ To add header and footer content to exported Excel or CSV files in Gantt, config
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#theme) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). This allows customization of styles for the following sections in the exported Excel or CSV file:
+To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). This allows customization of styles for the following sections in the exported file
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
 - **record**: Applies formatting to the data rows exported from the Gantt chart.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,6 +173,10 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documen
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/theme-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -166,6 +197,10 @@ In the example below, the background color is customized for the **Progress** co
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/excel-export/cellFormat-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -7,7 +7,6 @@ import { projectNewData } from './data';
   standalone: true,
   imports: [GanttModule],
   providers: [SortService, FilterService, ColumnMenuService],
-  styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None,
   template: `
     <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [allowFiltering]="true" [showColumnMenu]="true" [allowSorting]="true" [splitterSettings]="splitterSettings">
@@ -18,7 +17,8 @@ import { projectNewData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="150"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="150"></e-column>
       </e-columns>
-    </ejs-gantt>`
+    </ejs-gantt>`,
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;

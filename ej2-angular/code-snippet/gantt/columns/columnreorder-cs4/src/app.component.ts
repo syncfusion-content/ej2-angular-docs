@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { GanttModule, GanttComponent, Column, ReorderService } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ReorderService } from '@syncfusion/ej2-angular-gantt';
 import { ColumnDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
   }
 
 
-  columnDragStart(args: ColumnDragEventArgs): void {
+  public columnDragStart(args: ColumnDragEventArgs): void {
     this.message = `columnDragStart event triggered`;
     if (args.column?.field === 'TaskName') {
       args.column.headerText = 'Project Task';
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  columnDrag(args: ColumnDragEventArgs): void {
+  public columnDrag(args: ColumnDragEventArgs): void {
     this.message = `columnDrag event triggered`;
     if (args.column?.field === 'Duration') {
       args.column.allowReordering = false;
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  columnDrop(args: ColumnDragEventArgs): void {
+  public columnDrop(args: ColumnDragEventArgs): void {
     this.message = `columnDrop event triggered`;
     if (args.column?.field === 'TaskID') {
       args.column.allowReordering = false;

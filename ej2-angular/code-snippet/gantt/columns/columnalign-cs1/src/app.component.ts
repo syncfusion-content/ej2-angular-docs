@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  changeAlignment(args: ChangeEventArgs): void {
+  public changeAlignment(args: ChangeEventArgs): void {
     const alignment = args.value as 'Left' | 'Right' | 'Center' | 'Justify';
     const columns: ColumnModel[] = this.ganttInstance?.treeGrid.grid.columns as ColumnModel[];
     columns.forEach((col: ColumnModel) => {

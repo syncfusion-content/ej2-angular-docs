@@ -1,7 +1,6 @@
-import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { ExcelExportProperties, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GanttAllModule, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
@@ -32,6 +31,7 @@ export class AppComponent implements OnInit {
         };
         this.toolbar = ['ExcelExport'];
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_excelexport') {
             let excelExportProperties: ExcelExportProperties = {

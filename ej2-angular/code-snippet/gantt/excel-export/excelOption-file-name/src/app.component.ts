@@ -1,6 +1,5 @@
-import { ExcelExportService, GanttAllModule, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { ExcelExportService, GanttAllModule, ToolbarService, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt'
 import { TextBoxModule, TextBoxComponent } from '@syncfusion/ej2-angular-inputs'
 import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
@@ -24,7 +23,6 @@ import { GanttData } from './data';
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   @ViewChild('textbox') public textbox?: TextBoxComponent;
-
   public data?: object[];
   public taskSettings?: object;
   public toolbar?: ToolbarItem[];
@@ -54,7 +52,7 @@ export class AppComponent implements OnInit {
       const excelExportProperties: ExcelExportProperties = {
         fileName: (this.textbox as TextBoxComponent).value !== "" ? (this.textbox as TextBoxComponent).value + '.xlsx' : 'new.xlsx'
       };
-      this.ganttInstance!.excelExport(excelExportProperties);
+      (this.ganttInstance as GanttComponent).excelExport(excelExportProperties);
     }
   };
 }

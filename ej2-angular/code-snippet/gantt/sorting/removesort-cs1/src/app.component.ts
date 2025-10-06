@@ -23,7 +23,7 @@ import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-an
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('gantt', { static: true }) public ganttObj!: GanttComponent;
+    @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
     @ViewChild('dropdown', { static: true }) public dropDown!: DropDownListComponent;
     public data: object[] = [];
     public taskSettings: object = {};
@@ -75,8 +75,8 @@ export class AppComponent implements OnInit {
         ];
     }
 
-    removeSortColumn(): void {
+    public removeSortColumn(): void {
         const columnField = this.dropDown.value as string;
-        this.ganttObj.removeSortColumn(columnField);
+        (this.ganttInstance as GanttComponent).removeSortColumn(columnField);
     }
 }

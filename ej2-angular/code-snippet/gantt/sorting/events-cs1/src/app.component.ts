@@ -49,14 +49,14 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  actionBegin(args: SortEventArgs): void {
+  public actionBegin(args: SortEventArgs): void {
     if (args.requestType === 'sorting' && args.columnName === 'TaskID') {
       this.message = `${args.requestType} action cancelled for ${args.columnName} column`;
       args.cancel = true;
     }
   }
 
-  actionComplete(args: SortEventArgs): void {
+  public actionComplete(args: SortEventArgs): void {
     if (args.requestType === 'sorting' && args.columnName === 'StartDate') {
     this.message = `${args.requestType} action cancelled for ${args.columnName} column`;
     }

@@ -2,7 +2,6 @@ import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { WBSData } from './data';
 
-
 @Component({
     imports: [ GanttAllModule],
     standalone: true,

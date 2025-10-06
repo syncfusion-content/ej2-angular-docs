@@ -4,30 +4,30 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
 
-.integration-speechToText-section {
+.integration-speechtotext-section {
   height: 350px;
   width: 650px;
   margin: 0 auto;
 }
 
-.integration-speechToText-section .e-view-container {
+.integration-speechtotext-section .e-view-container {
   margin: auto;
 }
-.integration-speechToText-section .e-banner-view {
+.integration-speechtotext-section .e-banner-view {
   margin-left: 0;
 }
-.integration-speechToText-section .banner-content .e-listen-icon:before {
+.integration-speechtotext-section .banner-content .e-listen-icon:before {
   font-size: 25px;
 }
 
-.integration-speechToText-section .banner-content {
+.integration-speechtotext-section .banner-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
 }
 
-.integration-speechToText-section #assistview-sendButton {
+.integration-speechtotext-section #assistview-sendButton {
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -36,23 +36,23 @@
   cursor: pointer;
 }
 
-.integration-speechToText-section #speechToText.visible,
-.integration-speechToText-section #assistview-sendButton.visible {
+.integration-speechtotext-section #speechToText.visible,
+.integration-speechtotext-section #assistview-sendButton.visible {
   display: inline-block;
 }
 
-.integration-speechToText-section #speechToText,
-.integration-speechToText-section #assistview-sendButton {
+.integration-speechtotext-section #speechToText,
+.integration-speechtotext-section #assistview-sendButton {
   display: none;
 }
 
 @media only screen and (max-width: 750px) {
-  .integration-speechToText-section {
+  .integration-speechtotext-section {
     width: 100%;
   }
 }
 
-.integration-speechToText-section .e-footer-wrapper {
+.integration-speechtotext-section .e-footer-wrapper {
   display: flex;
   border: 1px solid #c1c1c1;
   padding: 5px 5px 5px 10px;
@@ -60,7 +60,7 @@
   border-radius: 30px;
 }
 
-.integration-speechToText-section .content-editor {
+.integration-speechtotext-section .content-editor {
   width: 100%;
   overflow-y: auto;
   font-size: 14px;
@@ -69,12 +69,12 @@
   padding: 10px;
 }
 
-.integration-speechToText-section .content-editor[contentEditable='true']:empty:before {
+.integration-speechtotext-section .content-editor[contentEditable='true']:empty:before {
   content: attr(placeholder);
   color: #6b7280;
   font-style: italic;
 }
 
-.integration-speechToText-section .option-container {
+.integration-speechtotext-section .option-container {
   align-self: flex-end;
 }

@@ -41,8 +41,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  
-public percentageFormatter = (
+  public percentageFormatter = (
     field: string,
     data: object,
     column: object

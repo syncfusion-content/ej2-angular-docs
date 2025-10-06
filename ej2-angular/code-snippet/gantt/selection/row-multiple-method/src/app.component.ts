@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
@@ -57,7 +56,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  selectRows(rowIndexes: number[]): void {
+  public selectRows(rowIndexes: number[]): void {
     this.ganttInstance.clearSelection();
     this.ganttInstance.selectRows(rowIndexes);
   }

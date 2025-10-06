@@ -41,6 +41,7 @@ export class AppComponent implements OnInit{
         ];
         this.toolbar =  ['ExcelExport','CsvExport'];
     }
+
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_excelexport') {
             this.ganttInstance.treeGrid.grid.columns[0].visible = true;
@@ -52,6 +53,7 @@ export class AppComponent implements OnInit{
             this.ganttInstance.csvExport();
         }
     };
+    
     public excelExportComplete(): void {
         this.ganttInstance.treeGrid.grid.columns[0].visible = false;
         this.ganttInstance.treeGrid.grid.columns[3].visible = true;

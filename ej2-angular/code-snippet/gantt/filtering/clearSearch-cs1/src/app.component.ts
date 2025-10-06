@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     this.searchSettings = { fields: ['TaskName'], operator: 'contains', key: 'Perform', ignoreCase: true  };
   }
 
-  clearSearch():void {
+  public clearSearch():void {
     (this.ganttInstance as GanttComponent).searchSettings.key = '';
   }
 }

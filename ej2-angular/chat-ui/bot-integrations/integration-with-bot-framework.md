@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of Microsoft Bot Framework With Angular Chat UI component
+# Microsoft Bot Framework With Angular Chat UI component
 
 The Syncfusion Angular Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
 
@@ -104,7 +104,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 {% endhighlight %}
 {% endtabs %}
 
-## Integrate ChatUI in Angular
+## Configure ChatUI
 
 Create `app.component.ts` to connect the Syncfusion Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
 

@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  dataBound(): void {
+  public dataBound(): void {
     // Style by index.
     const headerByIndex = (this.ganttInstance as GanttComponent).treeGrid.getColumnHeaderByIndex(0);
     if (headerByIndex) (headerByIndex as HTMLElement).style.color = '#0d0b0b';

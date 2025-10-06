@@ -1,9 +1,8 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import {GanttModule, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import {GanttModule, GanttComponent, ToolbarItem, ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { Column, ExcelQueryCellInfoEventArgs, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
-import { GanttData } from './data'; // Replace with your actual data
+import { GanttData } from './data';
 
 @Component({
     imports: [ GanttModule],
@@ -34,7 +33,7 @@ export class AppComponent implements OnInit {
     this.toolbar = ['ExcelExport'];
   }
 
-  toolbarClick(args: ClickEventArgs): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_excelexport') {
       this.ganttInstance?.excelExport();
     } else if (args.item.id === 'ganttDefault_csvexport') {
@@ -42,7 +41,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  queryCellInfoEvent(args:  ExcelQueryCellInfoEventArgs): void {
+  public queryCellInfoEvent(args:  ExcelQueryCellInfoEventArgs): void {
     const data = args.data as GanttTask;
     if (data.TaskID === 4 && args.column.field === 'TaskName') {
       (args as any).rowSpan = 2;
@@ -52,7 +51,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  excelQueryCellInfo(args: QueryCellInfoEventArgs): void {
+  public excelQueryCellInfo(args: QueryCellInfoEventArgs): void {
     const data = args.data as GanttTask;
     if (data.TaskID === 4 && (args.column as Column).field === 'TaskName') {
       args.rowSpan = 2;

@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  resizeStart(args: ResizeArgs): void {
+  public resizeStart(args: ResizeArgs): void {
     const field = (args.column as Column).field;
     this.message = `resizeStart event triggered and cancelled for ${field}`;
     if (field === 'TaskID') {
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  resizing(args: ResizeArgs): void {
+  public resizing(args: ResizeArgs): void {
     const field = (args.column as Column).field;
     this.message = `resizing event triggered and cancelled for ${field}`;
     if (field === 'Duration') {
@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  resizeStop(args: ResizeArgs): void {
+  public resizeStop(args: ResizeArgs): void {
     this.message = `resizeStop event triggered`;
     const field = (args.column as Column).field;
     const index = (args.column as Column).index;
@@ -78,7 +78,6 @@ export class AppComponent implements OnInit {
     const columnCells = this.gantt?.treeGrid
       .getContentTable()
       .querySelectorAll(`[data-colindex="${index}"]`);
-
     columnCells?.forEach((cell: Element) => {
       (cell as HTMLElement).style.backgroundColor = 'rgb(43, 195, 226)';
     });

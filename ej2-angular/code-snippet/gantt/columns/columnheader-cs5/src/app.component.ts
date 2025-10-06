@@ -68,7 +68,6 @@ export class AppComponent implements OnInit {
   public ChangeHeaderText(): void {
     const newText = this.textBoxInstance?.element.value.trim();
     const selectedField = this.dropDownInstance?.value as string;
-
     if (newText && selectedField && this.ganttInstance) {
       const column = (this.ganttInstance as GanttComponent).treeGrid.grid.getColumnByField(selectedField);
       column.headerText = newText;

@@ -16,7 +16,7 @@ To enable sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/doc
 
 Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. For details on keyboard interactions, refer to the [selection keyboard interaction](https://ej2.syncfusion.com/angular/documentation/grid/accessibility#keyboard-interaction) documentation.
 
-To enable sorting functionality, add the [SortService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) to the `providers` array of the component.
+To enable sorting functionality, add the [SortService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule) in the `providers` of the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +35,7 @@ To enable sorting functionality, add the [SortService](https://ej2.syncfusion.co
 
 ## Initial sorting
 
-Initial sorting in the Angular Gantt component is configured using the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/#columns) property, where each column is defined with a specific [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#field) and [direction](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#direction). This setup ensures that the Gantt chart loads with the desired sort order applied to the specified columns.
+You can apply sorting during the initial render of the Syncfusion Angular Gantt component by configuring the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/#columns) property. Each column should be defined with a specific [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#field) and [direction](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortDescriptorModel/#direction), ensuring that the Gantt loads with the desired sort order applied to the specified columns.
 
 The following code example shows how to add sorted columns during Gantt initialization, with `field` set to **TaskID** and `direction` to **Descending**, and another with `field` as **TaskName** and `direction` as **Ascending**.
 

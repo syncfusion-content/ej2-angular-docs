@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule, SortService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 

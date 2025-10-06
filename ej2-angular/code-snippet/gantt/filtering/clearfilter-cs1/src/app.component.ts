@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  clearFilter(): void {
-    this.ganttInstance.clearFiltering();
+  public clearFilter(): void {
+    (this.ganttInstance as GanttComponent).clearFiltering();
   }
 }

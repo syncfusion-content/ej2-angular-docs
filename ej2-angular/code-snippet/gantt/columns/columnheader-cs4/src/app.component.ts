@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  changeHeaderHeight(event: MouseEvent): void {
+  public changeHeaderHeight(event: MouseEvent): void {
     const heightMap: { [key: string]: string } = {
       small: '20px',
       medium: '42px',

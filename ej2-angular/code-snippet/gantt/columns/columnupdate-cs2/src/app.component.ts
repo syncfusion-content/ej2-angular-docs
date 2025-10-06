@@ -1,7 +1,7 @@
 import { Component, ViewChild, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { ColumnModel } from '@syncfusion/ej2-grids';
+import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({

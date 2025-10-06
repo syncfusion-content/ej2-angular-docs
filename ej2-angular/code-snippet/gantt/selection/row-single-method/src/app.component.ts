@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
@@ -53,7 +52,7 @@ export class AppComponent implements OnInit {
         };
     }
 
-    click(): void {
+    public click(): void {
         const value = (this.textbox as TextBoxComponent).element.value as string;
         const rowIndex = parseInt(value, 10);
         if (!isNaN(rowIndex)) {

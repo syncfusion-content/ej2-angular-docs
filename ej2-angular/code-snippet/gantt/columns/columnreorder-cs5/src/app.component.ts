@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  reorderByIndex(): void {
+  public reorderByIndex(): void {
     this.ganttInstance?.treeGrid.grid.reorderColumnByIndex(1, 3);
   }
 }

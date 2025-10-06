@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { GanttComponent, FilterService, ToolbarService, GanttModule, ToolbarItem, SearchSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { TextBoxModule, TextBoxComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
-import { DropDownListModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { TextBoxModule, ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -69,9 +69,7 @@ export class AppComponent implements OnInit {
     this.searchSettings = { operator: 'contains' };
   }
 
-  valueChange(args: ChangeEventArgs): void {
-    if (this.ganttInstance) {
-      this.ganttInstance.searchSettings.operator = String(args.value);
-    }
+  public valueChange(args: ChangeEventArgs): void {
+    (this.ganttInstance as GanttComponent).searchSettings.operator = String(args.value);
   }
 }

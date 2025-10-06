@@ -55,16 +55,14 @@ export class AppComponent implements OnInit {
     };
   }
 
-  load(): void {
+  public load(): void {
     if (this.ganttInstance) {
       this.ganttInstance.treeGrid.textWrapSettings.wrapMode = 'Header';
       this.ganttInstance.treeGrid.allowTextWrap = true;
     }
   }
 
-  valueChange(args: ChangeEventArgs): void {
-    if (this.ganttInstance) {
-      this.ganttInstance.treeGrid.textWrapSettings.wrapMode = args.value as WrapMode;
-    }
+  public valueChange(args: ChangeEventArgs): void {
+    (this.ganttInstance as GanttComponent).treeGrid.textWrapSettings.wrapMode = args.value as WrapMode;
   }
 }

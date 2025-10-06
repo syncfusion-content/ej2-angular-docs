@@ -4,7 +4,7 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { WBSData } from './data';
 
 @Component({
-    imports: [ GanttAllModule],
+    imports: [GanttAllModule],
     standalone: true,
     selector: 'app-root',
     template:
@@ -18,6 +18,7 @@ import { WBSData } from './data';
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt') public ganttInstance?: GanttComponent;
     public isRowDropped: boolean = false;

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column template in Angular Gantt component
 
-The Gantt chart component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
 > When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property of the column is specified.
 
@@ -31,10 +31,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    CommonModule,
-    GanttModule
-  ],
+  imports: [ CommonModule, GanttModule],
   standalone: true,
   template:`
     <ejs-gantt height="430px" [dataSource]="data" [treeColumnIndex]="1" [taskFields]="taskSettings" [allowResizing]="true" rowHeight="50" [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">
@@ -141,7 +138,7 @@ export class AppComponent {
 
 ## Render hyperlink in a column
 
-The Gantt chart compoenent supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
+The Gantt compoenent supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
 
 To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) within the **e-column** tag using `ng-template` and an `a` tag. The `onClick` function is triggered when the hyperlink is clicked.
 
@@ -217,7 +214,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/gantt/columns/column-template-cs2" %}
 
->The window.open() method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
+>The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
 ## Render other components in a column
 
@@ -350,7 +347,7 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 ### Render DropDownList component in a column
 
-To render a DropDownList component in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property in the column configuration.
+To render a `DropDownList` component in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property in the column configuration.
 
 The following example demonstrates how to render the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component in the **Task Priority** column.
 
@@ -390,7 +387,7 @@ The following example demonstrates how to render the Chips component in the **Ta
 
 ## Render RadioButton in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> `RadioButton` component can be rendered in a grid column to display selection options like order statuses or approval choices.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) component can be rendered in a grid column to display selection options like order statuses or approval choices.
 
 The following example demonstrates rendering `RadioButton` components in the **Order Status** column.
 
@@ -407,7 +404,6 @@ The following example demonstrates rendering `RadioButton` components in the **O
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/column-template-cs10" %}
-
 
 ## Using condition template
 

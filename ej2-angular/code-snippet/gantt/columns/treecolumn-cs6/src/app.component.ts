@@ -46,7 +46,7 @@ export class AppComponent {
     };
   }
 
-  expanding(args: ICollapsingEventArgs): void {
+  public expanding(args: ICollapsingEventArgs): void {
     const data = args.data as IGanttTask | undefined;
     if (data) {
       this.message = `Expanding Task: ${data.TaskName} (ID: ${data.TaskID})`;
@@ -59,7 +59,7 @@ export class AppComponent {
     }
   }
 
-  collapsing(args: ICollapsingEventArgs): void {
+  public collapsing(args: ICollapsingEventArgs): void {
     const data = args.data as IGanttTask | undefined;
     if (data) {
       this.message = `Collapsing Task: ${data.TaskName} (ID: ${data.TaskID})`;
@@ -72,7 +72,7 @@ export class AppComponent {
     }
   }
 
-  expanded(args: ICollapsingEventArgs): void {
+  public expanded(args: ICollapsingEventArgs): void {
     const data = args.data as IGanttTask | undefined;
     if (data && (args as any).row) {
       this.message = `Task Expanded: ${data.TaskName} (ID: ${data.TaskID})`;
@@ -84,7 +84,7 @@ export class AppComponent {
     }
   }
 
-  collapsed(args: ICollapsingEventArgs): void {
+  public collapsed(args: ICollapsingEventArgs): void {
     const data = args.data as IGanttTask | undefined;
     if (data && (args as any).row) {
       this.message = `Task Collapsed: ${data.TaskName} (ID: ${data.TaskID})`;

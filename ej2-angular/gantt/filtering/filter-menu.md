@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter menu in Angular Gantt component
 
-The Gantt component provides a filter menu for each column, allowing filtering based on data type and supported operators. 
-
-To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
+The Syncfusion Blazor Gantt component provides a filter menu for each column, allowing filtering based on data type and supported operators. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,12 +24,14 @@ To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs2" %}
 
->[allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) must be set as **true** to enable filter menu.
->Setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowfiltering) as **false** will prevent filter menu rendering for a particular column.
+> To prevent the filter menu from rendering for a specific column, set [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowfiltering) to **false**.
 
 ## Custom component in filter menu
 
-The filter menu can be enhanced by integrating custom UI elements such as dropdowns, textboxes, or other input controls. This customization is achieved using the column.filter.ui property, which supports three essential functions:
+You can customize the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses Autocomplete for string columns, NumericTextBox for number columns, DatePicker for date columns, and DropDownList for boolean column.
+
+The `column.filter.ui` property supports three essential functions:
+
 1. `create`- Initializes and renders the custom filter component inside the filter menu.
 2. `write`- Populates the component with the current filter value and attaches any necessary event handlers. 
 3. `read` - Retrieves the selected value from the component and applies the filter to the column.
@@ -88,6 +88,9 @@ You can refer to the table below for supported column types, their default compo
 | Date        | [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/angular/documentation/api/datepicker)                         |
 | DateTime    | [DateTimePicker](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker)                 |
 
+
+The following sample demonstrates how to disable the autofill feature by setting the `autofill` property to **false** for the **TaskName** column, and how to disable the spin button by setting `showSpinButton` to **false** for the **TaskID** column.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/customize-default-filter/src/app.component.ts %}
@@ -106,10 +109,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component all
 
 You can configure operators for different types using the following options: 
 
-- `stringOperator` – custom string operators  
-- `numberOperator` – custom number operators  
-- `dateOperator` – custom date operators  
-- `booleanOperator` – custom boolean operators
+- **stringOperator** – Custom operators for string columns  
+- **numberOperator** – Custom operators for number columns  
+- **dateOperator** – Custom operators for date columns  
+- **booleanOperator** – Custom operators for boolean columns
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

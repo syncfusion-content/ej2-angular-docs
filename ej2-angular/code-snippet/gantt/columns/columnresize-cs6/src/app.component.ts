@@ -54,8 +54,6 @@ export class AppComponent implements OnInit {
   }
 
   valueChange(args: ChangeEventArgs): void {
-    if (this.ganttInstance) {
-      this.ganttInstance.treeGrid.grid.resizeSettings.mode = args.value as ResizeMode;
-    }
+    (this.ganttInstance as GanttComponent).treeGrid.grid.resizeSettings.mode = args.value as ResizeMode;
   }
 }

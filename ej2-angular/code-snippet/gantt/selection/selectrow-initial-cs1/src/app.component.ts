@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({

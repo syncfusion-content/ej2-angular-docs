@@ -51,13 +51,13 @@ export class AppComponent implements OnInit {
     };
   }
 
-  actionBegin(args: SearchEventArgs): void {
+  public actionBegin(args: SearchEventArgs): void {
     if (args.requestType === 'searching') {
       this.key = args.searchString?.toLowerCase() ?? '';
     }
   }
 
-  queryCellInfo(args: QueryCellInfoEventArgs): void {
+  public queryCellInfo(args: QueryCellInfoEventArgs): void {
     if (this.key) {
       const field = (args.column as Column).field;
       const cellContent = (args.data as ColumnData)[field];

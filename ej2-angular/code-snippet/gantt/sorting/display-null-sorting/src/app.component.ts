@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
 
   public customSortComparer = (reference: string, comparer: string): number => {
     const sortAsc = this.action === 'Ascending';
-
+    
     // Always push nulls to the bottom.
     if (reference === null && comparer === null) return 0;
     if (reference === null) return 1;

@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { ColumnMenuOpenEventArgs, ColumnMenuClickEventArgs } from '@syncfusion/ej2-angular-grids';
 import { GanttModule, GanttComponent, SortService, FilterService, ColumnMenuService} from '@syncfusion/ej2-angular-gantt';
-import { projectNewData } from './data';
 import { MenuItemModel } from '@syncfusion/ej2-navigations';
+import { projectNewData } from './data';
 
 @Component({
   selector: 'app-root',

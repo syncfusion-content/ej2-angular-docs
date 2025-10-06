@@ -1,9 +1,9 @@
 
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { GanttAllModule, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { GanttData } from './data';
 import { ExcelExportCompleteArgs } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import { GanttData } from './data';
 
 @Component({
   selector: 'app-root',

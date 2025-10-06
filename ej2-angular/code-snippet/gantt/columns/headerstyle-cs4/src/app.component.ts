@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 import { GanttData } from './data';
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  onHeaderCellInfo(args: HeaderCellInfoEventArgs): void {
+  public onHeaderCellInfo(args: HeaderCellInfoEventArgs): void {
     if ((args.cell as any)?.column?.field === 'TaskID') {
       (args.node as HTMLElement).classList.add('customcss');
     }

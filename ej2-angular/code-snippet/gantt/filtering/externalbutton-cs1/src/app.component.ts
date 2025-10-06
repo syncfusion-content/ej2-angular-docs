@@ -64,12 +64,12 @@ export class AppComponent implements OnInit {
     this.toolbar = ['Search'];
   }
   
-  search(): void {
+  public search(): void {
     const searchValue: string = (this.searchInput as TextBoxComponent).value;
     (this.ganttInstance as GanttComponent).search(searchValue);
   };
 
-  change(args: ChangeEventArgs): void {
+  public change(args: ChangeEventArgs): void {
     if (args.value === undefined || args.value === null || args.value.toString() === '') {
       (this.ganttInstance as GanttComponent).search('');
     }

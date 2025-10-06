@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column spanning in Angular Gantt component
 
-The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt allows merging adjacent cells horizontally for a more structured layout. By setting the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) property in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event, you can span cells and customize their appearance.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows merging adjacent cells horizontally to create a structured layout. To enable spanning, set the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) property within the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to define the span and customize the cell appearance.
 
 In this example, **Work** cells are spanned to improve visual clarity.
 

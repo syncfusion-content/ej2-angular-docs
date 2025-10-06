@@ -20,10 +20,10 @@ import { GanttData } from './data';
           </e-columns>
         </ejs-gantt>
       </ejs-tooltip>
-    </div>`,
-  styleUrls: ['./app.component.css'],
+    </div>`
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('tooltip') public toolTip?: TooltipComponent;
   public data?: object[];
@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  beforeRender(args: TooltipEventArgs): void {
+  public beforeRender(args: TooltipEventArgs): void {
     const description = this.columnDescriptions[args.target.innerText];
     if (description && this.toolTip) {
       this.toolTip.content = `${args.target.innerText}: ${description}`;

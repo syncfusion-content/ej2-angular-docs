@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Column resizing in Angular Gantt component
 
-The Gantt chart component supports dynamic column resizing to improve data clarity and layout.  To enable this feature, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowresizing) property to **true** in the Gantt configuration. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports dynamic column resizing to improve data clarity and layout.  To enable this feature, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowresizing) property to **true** in the Gantt configuration. 
 
 Column width can be adjusted by dragging the right edge of the header, with changes applied immediately.  
 
-To use the column resize feature, inject **ResizeService** in the provider section.  
+To use the column resize feature, inject **ResizeService** in the `providers` of the component.  
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,7 +89,7 @@ There are two available resizing modes:
 
 You can apply this setting through the `grid` property of the Gantt instance in the `load` event.  
 
-The following example demonstrates how to set the `resizeSettings.mode` to **Normal** or **Auto** based on the DropDownList [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event.
+The following example demonstrates how to set the `resizeSettings.mode` to **Normal** or **Auto** based on the `DropDownList` [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -107,27 +107,11 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 
 > When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofit) property of grid object in gantt instance is set to **true**, the gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the gantt will ignore any empty space.
 
-## Touch interaction
-
-The Gantt chart supports touch interactions for mobile devices. Users can resize columns by tapping and dragging the floating handler, or use the column menu to autofit columns.
-
-**Resizing columns on touch devices:**
-
-To resize a column:
-
-1. Tap the right edge of the column header.
-2. A floating handler appears over the column border.
-3. Drag the handler to adjust the column width.
-
-The screenshot below illustrates column resizing on a touch device.
-
-![Column resize](../images/column-resize.png)
-
 ## Resizing column externally
 
-You can resize columns in the Gantt chart externally by accessing the target column using the `getColumnByField` method and updating its [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective/#width) property.  To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
+You can resize columns in the Gantt component externally by accessing the target column using the `getColumnByField` method and updating its [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective/#width) property.  To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
 
-The following example demonstrates how to resize a column externally using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component. 
+The following example demonstrates how to resize a column externally using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,3 +150,19 @@ The following example demonstrates how resizing events work: `resizeStart` cance
 {% previewsample "page.domainurl/samples/gantt/columns/columnresize-cs5" %}
 
 >The ResizeArgs object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
+
+## Touch interaction
+
+The Gantt chart supports touch interactions for mobile devices. Users can resize columns by tapping and dragging the floating handler, or use the column menu to autofit columns.
+
+**Resizing columns on touch devices:**
+
+To resize a column:
+
+1. Tap the right edge of the column header.
+2. A floating handler appears over the column border.
+3. Drag the handler to adjust the column width.
+
+The screenshot below illustrates column resizing on a touch device.
+
+![Column resize](../images/column-resize.png)

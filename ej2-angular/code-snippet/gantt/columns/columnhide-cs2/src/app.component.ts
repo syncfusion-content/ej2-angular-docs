@@ -46,11 +46,11 @@ export class AppComponent implements OnInit {
     };
   }
 
-  show(): void {
+  public show(): void {
     (this.ganttInstance as GanttComponent).showColumn('Duration', 'headerText');
   }
 
-  hide(): void {
+  public hide(): void {
     (this.ganttInstance as GanttComponent).hideColumn('Duration', 'headerText');
   }
 }

@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  sort(): void {
-    this.ganttInstance.sortModule.sortColumn('CustomColumn', 'Ascending', false);
+  public sort(): void {
+    (this.ganttInstance as GanttComponent).sortModule.sortColumn('CustomColumn', 'Ascending', false);
   }
 }

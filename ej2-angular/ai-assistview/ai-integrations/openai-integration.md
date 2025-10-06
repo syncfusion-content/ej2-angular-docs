@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of Azure Open AI With Angular AI AssistView component 
+# Azure Open AI With Angular AI AssistView component 
 
 The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Angular applications.
 
@@ -54,7 +54,7 @@ npm install openai
 
 > `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-##  Integrate Azure Open AI with AI AssistView
+## Configure Azure Open AI with AI AssistView
 
 Create a standalone `app.component.ts` to integrate Azure Open AI with the Syncfusion AI AssistView component. 
 

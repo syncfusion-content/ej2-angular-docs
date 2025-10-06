@@ -21,12 +21,11 @@ Before integrating `Text-to-Speech`, ensure the following:
     - [Angular Getting Started Guide](../getting-started)
 
 2. The AI AssistView component is integrated with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai).
-
     - [Integration of Azure OpenAI With Angular AI AssistView component](../ai-integrations/openai-integration.md)
 
 ## Configure Text-to-Speech
 
-To enable Text-to-Speech functionality, modify the `app.component.ts` file to incorporate the Web Speech API. A custom `Read Aloud` button is added to the response toolbar using the [responseToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/#responsetoolbarsettings) property. When clicked, the `onResponseToolbarItemClicked` event extracts plain text from the generated AI response and use the browser SpeechSynthesis API to read it aloud.
+To enable Text-to-Speech functionality, modify the `app.component.ts` file to incorporate the Web Speech API. A custom `Read Aloud` button is added to the response toolbar using the [responseToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/#responsetoolbarsettings) property. When clicked, the [itemClicked](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/responseToolbarSettingsModel/#itemclicked) event extracts plain text from the generated AI response and use the browser SpeechSynthesis API to read it aloud.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,14 +39,6 @@ To enable Text-to-Speech functionality, modify the `app.component.ts` file to in
 
 {% previewsample "page.domainurl/samples/ai-assistview/speech/tts" %}
 
-## Run and Test 
+## See Also
 
-Run the application in the browser using the following command.
-
-```bash
-
-ng serve
-
-```
-
-Open the hosted link to interact with your AI AssistView. After a response is received, click the `Read Aloud` icon on the response toolbar to hear it spoken.
+* [Speech-to-Text](./speech-to-text.md)

@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { GanttModule, GanttComponent, FilterService } from '@syncfusion/ej2-angular-gantt';
-import { FilterSettingsModel } from '@syncfusion/ej2-gantt';
-import { FilterEventArgs } from '@syncfusion/ej2-angular-grids';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
@@ -63,7 +62,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  actionBegin(args: any): void {
+  public actionBegin(args: any): void {
     this.actionBeginMessage = '';
     if (args.requestType === "filterBeforeOpen") {
       if (args.columnType === 'number') {
@@ -90,7 +89,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  actionComplete(args: any): void {
+  public actionComplete(args: any): void {
     if (args.requestType === "filterAfterOpen") {
       this.actionCompleteMessage = 'Applied CSS for filter dialog during filterafteropen action';
       const content = args.filterModel.dlgDiv.querySelector('.e-dlg-content') as HTMLElement;

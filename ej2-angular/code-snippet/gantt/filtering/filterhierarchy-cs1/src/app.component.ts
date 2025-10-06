@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
     this.fields = { text: 'mode', value: 'id' };
   }
 
-  onChange(e: ChangeEventArgs): void {
+  public onChange(e: ChangeEventArgs): void {
     let mode: any = <string>e.value;
     (this.ganttInstance as GanttComponent).filterSettings.hierarchyMode = mode;
     (this.ganttInstance as GanttComponent).clearFiltering();

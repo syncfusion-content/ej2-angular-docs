@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  setHeaderHeight(): void {
+  public setHeaderHeight(): void {
     const textElement = document.querySelector('.orientationcss > div');
     if (textElement) {
       const textWidth = textElement.scrollWidth;

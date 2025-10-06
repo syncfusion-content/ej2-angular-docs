@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
-To enable this feature, add the **Search** option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) configuration and inject `FilterService` in the providers section.
+To enable this feature, add the **Search** option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) configuration and inject `FilterService` and `ToolbarService` in the provider of the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,7 +41,7 @@ To configure this feature, define the following properties:
 | `ignoreAccent`| Ignores diacritic characters or accents during the search.
 
 
-The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Product**, and `ignoreCase` is **true**.
+The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pröduct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pröduct").
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,8 +55,6 @@ The following sample demonstrates an initial search where `fields` is set to **T
   
 {% previewsample "page.domainurl/samples/gantt/filtering/initialsearch-cs1" %}
 
-> By default, Gantt searches all the bound column values. To customize this behavior, define the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#fields) property.
-
 ## Search operators
 
 Search operators specify the type of comparison used during a search. These are configured through the [searchSettings.operator](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#operator) property.
@@ -65,14 +63,13 @@ The following operators are supported in searching:
 
 | Operator     | Description                                      |
 |--------------|--------------------------------------------------|
-| `startsWith` | Matches values that begin with the specified text. |
-| `endsWith`   | Matches values that end with the specified text.   |
-| `contains`   | Matches values that include the specified text.    |
-| `equal`      | Matches values that exactly match the specified text. |
-| `notEqual`   | Matches values that do not match the specified text. |
+| startsWith   | Matches values that begin with the specified text. |
+| endsWith     | Matches values that end with the specified text.   |
+| contains     | Matches values that include the specified text.    |
+| equal        | Matches values that exactly match the specified text. |
+| notEqual     | Matches values that do not match the specified text. |
 
 > The default value for `searchSettings.operator` is `contains`.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +103,7 @@ To perform a search from an external button in the Syncfusion<sup style="font-si
 
 ## Search specific columns
 
-By default, the Gantt component searches across all columns. To restrict the search to specific columns, define the required field names in the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#fields) property.
+To search specific columns in the Gantt component, use the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
 
 This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 
@@ -122,7 +119,7 @@ This following sample demonstrates searching only within the **TaskName** and **
   
 {% previewsample "page.domainurl/samples/gantt/filtering/specific-column-cs1" %}
 
-## Search by external button
+## Clear search by external button
 
 To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#key) property to an empty string. 
  
@@ -142,9 +139,7 @@ Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/do
 
 ## Search on each key stroke
 
-The keystroke-based search feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt compoenent enables dynamic filtering of grid data as text is entered in the search box.
-
-To implement this, bind the `keyup` event to the search input element within the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt/#search) method, which is triggered from the [created](https://ej2.syncfusion.com/angular/documentation/api/gantt/#created) event of the Gantt component.
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt/#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,18 +1,8 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GanttComponent, GanttModule, RowDeselectEventArgs, RowSelectEventArgs, RowSelectingEventArgs,
-  SelectionService, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, RowDeselectEventArgs, RowSelectEventArgs, RowSelectingEventArgs, SelectionService, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
-interface Task {
-  TaskID: number;
-  TaskName: string;
-  StartDate: Date;
-  EndDate?: Date;
-  Duration?: number;
-  Progress?: number;
-  ParentID?: number;
-}
 
 @Component({
   selector: 'app-root',
@@ -60,7 +50,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  rowSelecting(args: RowSelectingEventArgs): void {
+  public rowSelecting(args: RowSelectingEventArgs): void {
     const task = args.data as Task;
     this.showMessage = true;
     if (task.TaskID === 2) {
@@ -69,14 +59,14 @@ export class AppComponent implements OnInit {
     }
   }
 
-  rowSelected(args: RowSelectEventArgs): void {
+  public rowSelected(args: RowSelectEventArgs): void {
     const task = args.data as Task;
     if (task.Progress && task.Progress > 40) {
       (args.row as HTMLElement).style.backgroundColor = 'rgba(203, 246, 205, 1)';
     }
   }
 
-  rowDeselected(args: RowDeselectEventArgs): void {
+  public rowDeselected(args: RowDeselectEventArgs): void {
     if (args.data && !Array.isArray(args.data)) {
       const task = args.data as Task;
       if (task.Progress && task.Progress <= 40) {
@@ -85,7 +75,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  rowDeselecting(args: RowDeselectEventArgs): void {
+  public rowDeselecting(args: RowDeselectEventArgs): void {
     if (args.data && !Array.isArray(args.data)) {
       const task = args.data as Task;
       if (task.Progress && task.Progress > 80) {
@@ -93,4 +83,14 @@ export class AppComponent implements OnInit {
       }
     }
   }
+}
+
+interface Task {
+  TaskID: number;
+  TaskName: string;
+  StartDate: Date;
+  EndDate?: Date;
+  Duration?: number;
+  Progress?: number;
+  ParentID?: number;
 }

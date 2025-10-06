@@ -1,9 +1,8 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttModule, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ToolbarItem, ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { ExcelExportCompleteArgs } from '@syncfusion/ej2-angular-grids';
-import { GanttData } from './data'; // Replace with your actual data
+import { GanttData } from './data';
 
 @Component({
   imports: [GanttModule],

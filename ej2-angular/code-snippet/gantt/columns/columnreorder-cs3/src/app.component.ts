@@ -53,11 +53,11 @@ export class AppComponent implements OnInit {
     };
   }
 
-  reorderSingleColumnUsingFieldName(): void {
+  public reorderSingleColumnUsingFieldName(): void {
     this.gantt?.reorderColumns('TaskName', 'TaskID');
   }
 
-  reorderMultipleColumnsUsingFieldName(): void {
+  public reorderMultipleColumnsUsingFieldName(): void {
     this.gantt?.reorderColumns(['TaskName', 'StartDate', 'Duration'], 'TaskID');
   }
 }

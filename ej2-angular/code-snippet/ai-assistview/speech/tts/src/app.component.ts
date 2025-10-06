@@ -1,14 +1,26 @@
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AIAssistViewModule, AIAssistViewComponent, ToolbarSettingsModel, ToolbarItemClickedEventArgs, PromptRequestEventArgs, ResponseToolbarSettingsModel } from '@syncfusion/ej2-angular-interactive-chat';
 import * as Marked from 'marked';
-import OpenAI from 'openai';
+import { AzureOpenAI } from 'openai';
+
+const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
+const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
+const azureOpenAIApiVersion = 'Your_Azure_OpenAI_API_Version';
+const azureDeploymentName = 'Your_Deployment_Name';
+ 
+const client = new AzureOpenAI({
+  apiKey: azureOpenAIApiKey,
+  endpoint: azureOpenAIEndpoint,
+  apiVersion: azureOpenAIApiVersion,
+  dangerouslyAllowBrowser: true 
+});
 
 @Component({
   standalone: true,
   imports: [AIAssistViewModule],
   selector: 'app-root',
   template: `
-      <div class="integration-textToSpeech-section">
+      <div class="integration-texttospeech-section">
         <div
           ejs-aiassistview
           #assistView
@@ -33,17 +45,8 @@ export class AppComponent {
     itemClicked: this.onToolbarItemClicked.bind(this),
   };
 
-  private openaiApiKey: string = ''; // Replace with your OpenAI API key
-  private openai: OpenAI;
   private stopStreaming: boolean = false;
   private currentUtterance: SpeechSynthesisUtterance | null = null;
-
-  constructor() {
-    this.openai = new OpenAI({
-      apiKey: this.openaiApiKey,
-      dangerouslyAllowBrowser: true // Required for browser usage, use with caution
-    });
-  }
 
   public responseToolbarSettings: ResponseToolbarSettingsModel = {
     items: [
@@ -111,22 +114,25 @@ export class AppComponent {
   }
 
   public onPromptRequest(args: PromptRequestEventArgs): void {
-    this.stopStreaming = false;
-    this.openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{ role: 'user', content: args.prompt || 'Hi' }],
-      max_tokens: 500,
-    })
-    .then(reply => {
-      const responseText = reply.choices[0].message.content.trim() || 'No response received.';
-      this.streamResponse(responseText);
-    })
-    .catch(error => {
-      console.error('Error fetching OpenAI response:', error);
-      this.assistViewInstance.addPromptResponse(
-        '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
-      );
-      this.stopStreaming = true;
-    });
+    if (!args?.prompt?.trim() || !this.assistViewInstance) return; 
+    this.stopStreaming = false; 
+    client.chat.completions
+      .create({
+        model: azureDeploymentName,
+        messages: [{ role: 'user', content: args.prompt }],
+        temperature: 0.7
+      })
+      .then(completion => {
+        const responseText = completion?.choices?.[0]?.message?.content?.trim() || 'No response received.';
+        return this.streamResponse(responseText);
+      })
+      .catch(error => {
+        this.assistViewInstance.addPromptResponse(
+          '⚠️ Something went wrong while connecting to Azure OpenAI. ' +
+            'Verify endpoint, API key, deployment name, API version, and CORS settings.',
+          true
+        );
+        this.stopStreaming = true;
+      });
   }
 }
