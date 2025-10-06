@@ -1,0 +1,28 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+.integration-texttospeech-section {
+  height: 350px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.integration-texttospeech-section .e-view-container {
+  margin: auto;
+}
+.integration-texttospeech-section .e-banner-view {
+  margin-left: 0;
+}
+.integration-texttospeech-section .banner-content .e-audio:before {
+  font-size: 25px;
+}
+
+.integration-texttospeech-section .banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}

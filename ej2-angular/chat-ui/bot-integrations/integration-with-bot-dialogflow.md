@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of Google Dialogflow With Angular Chat UI component
+# Google Dialogflow With Angular Chat UI component
 
 The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your angular applications.
 
@@ -113,7 +113,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 > Use a unique `sessionId` (e.g., UUID) for each user to maintain conversation context.
 
-## Integrate ChatUI in Angular 
+## Configure message send 
 
 Use the Chat UI `messageSend` event to exchanges  message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
