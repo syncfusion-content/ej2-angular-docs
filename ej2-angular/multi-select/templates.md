@@ -133,10 +133,6 @@ In the following sample, the popup displays a custom notification when no data i
 {% include code-snippet/multiselect/norecords-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="template.html" %}
-{% include code-snippet/multiselect/norecords-template-cs1/src/template.html %}
-{% endhighlight %}
-
 {% highlight ts tabtitle="styles.css" %}
 {% include code-snippet/multiselect/norecords-template-cs1/src/styles.css %}
 {% endhighlight %}
@@ -153,10 +149,6 @@ In the following sample, the MultiSelect displays a custom error notification wh
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="template.html" %}
-{% include code-snippet/multiselect/norecords-template-cs2/src/template.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="styles.css" %}
