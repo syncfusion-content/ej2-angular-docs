@@ -121,7 +121,7 @@ The following sample demonstrates filtering with virtualization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-filter" %>
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-filter" %}
 
 ## Checkbox with virtualization
 

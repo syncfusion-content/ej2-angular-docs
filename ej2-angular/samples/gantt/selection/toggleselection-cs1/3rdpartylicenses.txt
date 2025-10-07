@@ -4,6 +4,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -17,6 +20,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-gantt
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-grids
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-inputs

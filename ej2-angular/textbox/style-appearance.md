@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Style & Appearance in Angular TextBox | Syncfusion
-description: Style Syncfusion Angular TextBox with CSS: customize sizing, validation states, floating labels, dynamic colors, and rounded corners
+description: Style Syncfusion Angular TextBox with CSS customize sizing, validation states, floating labels, dynamic colors, and rounded corners
 platform: ej2-angular
 control: Style and Appearance
 documentation: ug
