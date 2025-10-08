@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel like filter in Angular Gantt component
+# Excel-like filtering in Angular Gantt component
 
 The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
@@ -26,7 +26,7 @@ To enable this feature, configure [filterSettings.type](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs1" %}
 
-## Hide Excel filter dialog elements using CSS
+## Hide Excel filter dialog elements
 
 You can hide elements such as the context menu, search box, sorting options, and checkbox list in the Gantt Excel filter dialog using the following CSS:
 
@@ -61,7 +61,7 @@ If you want to hide only the built-in sorting options (ascending, descending, an
   
 {% previewsample "page.domainurl/samples/gantt/filtering/customize-filtermenu-cs1" %}
 
-## Customize the filter choice count
+## Customize filter choice count
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the component and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
 
@@ -79,7 +79,7 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
   
 {% previewsample "page.domainurl/samples/gantt/filtering/choice-count-filtermenu" %}
 
-## Bind custom remote datasource for excel/checkbox filtering
+## Bind custom remote data source for Excel-like filtering
 
 You can dynamically bind a custom remote data source to the Excel filter in the Gantt component by using a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) with [WebApiAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Scheduling tasks in Angular Gantt component
 
-Task scheduling in the Angular Gantt component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) for mapping task data, [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode) for auto or manual validation, [`taskType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#tasktype) for fixed unit, work, or duration, and [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit) for day, hour, or minute units. Working time, set via [`dayWorkingTime`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [`dataBound`](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
+Task scheduling in the Angular Gantt component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt/#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Configure scheduling modes
 
@@ -20,8 +20,8 @@ Scheduling modes control task date validation:
 - `Custom`: Renders both auto and manual tasks from the data source.
 
 Configure using:
-- [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode): Sets global mode.
-- [`taskFields.manual`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#manual): Sets per-task mode.
+- [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode): Sets global mode.
+- [taskFields.manual](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#manual): Sets per-task mode.
 
 ### Automatically scheduled Tasks
 
@@ -79,8 +79,8 @@ Task types define how changes to duration, work, or resource units affect other 
 - `FixedDuration`: Adjusts units when work changes, maintaining duration.
 
 Configure using:
-- [`taskType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#tasktype): Sets global type.
-- [`taskFields.type`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#type): Sets per-task type.
+- [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt/#tasktype): Sets global type.
+- [taskFields.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#type): Sets per-task type.
 
 The following example configures task types:
 
@@ -106,8 +106,8 @@ The Gantt component supports the following duration units:
 - `Minute`: For short-duration tasks.
 
 Configure using:
-- [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit): Sets global unit (default: `day`).
-- [`taskFields.durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#durationunit): Maps per-task units.
+- [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit): Sets global unit (default: `day`).
+- [taskFields.durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#durationunit): Maps per-task units.
 - Duration field values: Includes units directly (e.g., "5 minutes").
 
 The following example maps duration units:
@@ -142,7 +142,7 @@ The following example defines units in duration values:
 
 ## Enable unscheduled tasks
 
-Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [`allowUnscheduledTasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) set to `true` (default: `false`), defaulting to a 1-day duration from the project start.
+Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) set to `true` (default: `false`), defaulting to a 1-day duration from the project start.
 
 Available unscheduled task types:
 - **Start date only**
@@ -186,7 +186,7 @@ The following example enables unscheduled tasks:
 
 ## Configure working time range
 
-Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [`dayWorkingTime`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) sets project-wide working hours.
+Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) sets project-wide working hours.
 
 The following example sets working hours from 9 AM to 6 PM:
 
@@ -208,7 +208,7 @@ The following example sets working hours from 9 AM to 6 PM:
 Non-working days represent periods when project work cannot be performed, such as weekends, holidays, or planned maintenance periods. These settings ensure realistic project scheduling by excluding non-productive time from calculations.
 
 ### Configure work week
-Define which days of the week are considered working days using the [`workWeek`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) property.
+Define which days of the week are considered working days using the [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) property.
 
 The following example excludes Monday and Tuesday:
 
@@ -227,13 +227,13 @@ The following example excludes Monday and Tuesday:
 ### Weekend configuration
 Configure weekends with:
 - Default behavior: Saturday and Sunday are non-working.
-- Timeline display: [`timelineSettings.showWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) controls visibility.
-- Working weekends: [`includeWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) set to `true` includes weekends.
+- Timeline display: [timelineSettings.showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) controls visibility.
+- Working weekends: [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) set to `true` includes weekends.
 
 ## Customize scheduling with events
 
 Customize scheduling with:
-- [`dataBound`](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound): Adjusts task scheduling after data binding, e.g., switching auto-scheduled tasks to manual mode if their start date precedes the project start date.
+- [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound): Adjusts task scheduling after data binding, e.g., switching auto-scheduled tasks to manual mode if their start date precedes the project start date.
 
 The following example uses `dataBound` to switch auto-scheduled tasks to manual mode if their start date is before the project start date (04/01/2025):
 

@@ -1,20 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import {
-  ToolbarService,
-  PdfExportService,
-  SelectionService,
-} from '@syncfusion/ej2-angular-gantt'
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import {
-  GanttComponent,
-  ToolbarItem,
-  PdfExportProperties
-} from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, ToolbarService, PdfExportService, SelectionService, GanttComponent, ToolbarItem, PdfExportProperties } from '@syncfusion/ej2-angular-gantt'
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingResources, base64Data } from './data';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
   imports: [GanttModule],
@@ -43,7 +30,9 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar'
   styleUrls: ['app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
@@ -53,10 +42,8 @@ export class AppComponent {
   public projectStartDate?: Date;
   public projectEndDate?: Date;
   public toolbar?: ToolbarItem[];
-  @ViewChild('ganttDefault', { static: true })
-  public ganttChart?: GanttComponent;
-
   public resourceFields?: object;
+
   public ngOnInit(): void {
     this.data = base64Data;
     this.taskSettings = {
@@ -83,6 +70,7 @@ export class AppComponent {
     this.projectStartDate = new Date('03/24/2019');
     this.projectEndDate = new Date('04/30/2019');
   }
+
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
       let exportProperties: PdfExportProperties = {
@@ -91,6 +79,7 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
+
   public pdfColumnHeaderQueryCellInfo(args: any): void {
     let base64Array: Object[] = [
       { 'TaskName': '/9j/4AAQSkZJRgABAQIAHAAcAAD/4QBiRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAMAAAITAAMAAAABAAEAAAAAAAAAAAAcAAAAAQAAABwAAAAB/9sAQwADAgICAgIDAgICAwMDAwQGBAQEBAQIBgYFBgkICgoJCAkJCgwPDAoLDgsJCQ0RDQ4PEBAREAoMEhMSEBMPEBAQ/9sAQwEDAwMEAwQIBAQIEAsJCxAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/8AAEQgAIAAgAwERAAIRAQMRAf/EABgAAQEBAQEAAAAAAAAAAAAAAAYIAAcF/8QALBAAAQQCAgEDAwIHAAAAAAAAAQIDBAUGBxESAAgTIRQVQRYxFzhXdpa01f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwB7gessOlaiw2zpdS4Ld2cqngOyl2rLbHcqjpLiy6IzylL7/gp/J+RxwQQt68w6mewu7XrfEKC+azXGuiqiO2r2ybqKnhD3stLVy2TyOg/cj5A5IXr4G8Cf9+aD0XT6K2Nb1GlsEgz4OJW8mLKjY5DaeYdRDdUhxC0thSVJUAQoEEEAjwNW2XoFprGLb1E/QEGdBeRJiyoztK08w6hQUhxC0kFKkqAIUCCCAR4CDD9sbV2RWSso19r3BrDGza2NfWWEnOH21T2Yst2MJKUs1ryAhwslSeHFfBHyRwSHnW26tv12qpO5Ier8GtMdYoVZI2qJm01L0iCGPfC0IeqEcKLfyErKT+DwfjwFvqO/l62h/Zl3/oveB0TwJTe2FRYxX5RqrLrj065HUuZRdzXIOQ7GRHc6yLV+YlmVDcgPJS6044AQVHhTY/I58Ao3lmJUeibfRWBZH6bKCFbUL1K7PTtRpTrzjsQRlzJCWqxoPyFISkqWepUQOfj48Ctdj4j/ABA15lGB/cPoP1JSzaj6v2vd+n+oYW17nTsnv1789ew5445H7+Ad+x+oX+qGu/8AA53/AGPA5drHb+D4rru/xSy3nrPG86i5hkwnOXDjbTIkG9lrU4qCqY271W0R0BfJSFI5UvqQQKWW5cOT6NMhxTZO+9d5Fl72ByIYjQrmM9LMo1oQll0iXIMuSH+3Z9BSlaiFBCeOSH//2Q==' },

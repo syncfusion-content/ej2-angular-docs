@@ -1,12 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-
-import { L10n, loadCldr, setCulture } from '@syncfusion/ej2-base';
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt, ToolbarItem } from '@syncfusion/ej2-gantt';
+import { GanttModule, ToolbarItem } from '@syncfusion/ej2-angular-gantt'
+import { L10n, setCulture } from '@syncfusion/ej2-base';
 import { Ganttdata } from './data';
+
 setCulture('ar-AE');
 L10n.load({
     'ar-AE': {
@@ -112,31 +108,28 @@ L10n.load({
     }
 });
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" locale="ar-AE" [enableRtl]='true' [toolbar]="toolbar"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" locale="ar-AE" [enableRtl]='true' [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
+
     public ngOnInit(): void {
         this.data = Ganttdata;
-        this.toolbar =  ['ExpandAll', 'CollapseAll'];
+        this.toolbar = ['ExpandAll', 'CollapseAll'];
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
     }
 }

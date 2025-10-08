@@ -1,19 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, ViewChild, OnInit} from '@angular/core';
+import { GanttAllModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { constraintData } from './data';
 
-
 @Component({
-    imports: [
-         GanttAllModule
-    ],
-standalone: true,
+    imports: [GanttAllModule],
+    standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt #gantt id="Constraint" height="450px" [dataSource]="data" [taskFields]="taskSettings"
+        `<ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"
       [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns" [treeColumnIndex]="1" [labelSettings]="labelSettings"
       [splitterSettings]="splitterSettings" [timelineSettings]="timelineSettings" [projectStartDate]="projectStartDate"
       [projectEndDate]="projectEndDate" [eventMarkers]="eventMarkers">
@@ -27,10 +21,9 @@ standalone: true,
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     @ViewChild('gantt') ganttObj?: GanttComponent;
     @ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
-
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
@@ -48,6 +41,7 @@ export class AppComponent {
     public highlightWeekends?: boolean;
     public allowSelection?: boolean;
     public height?: string;
+    
     public ngOnInit(): void {
         this.data = constraintData;
         this.taskSettings = {

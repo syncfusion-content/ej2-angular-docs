@@ -1,12 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { GanttModule, ToolbarService, PdfExportService, GanttComponent, ToolbarItem, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
 
 @Component({
@@ -19,13 +14,14 @@ import { editingData } from './data';
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttChart?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', { static: true })
-    public ganttChart?: GanttComponent;
-    columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; })[] | undefined;
+    public columns?: object[];
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -45,11 +41,13 @@ export class AppComponent {
         ];
         this.toolbar = ['PdfExport'];
     }
+
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_pdfexport') {
             this.ganttChart!.pdfExport();
         }
     };
+
     public pdfQueryTaskbarInfo(args: any): void {
         if (args.data.Progress < 50 && !args.data.hasChildRecords) {
             args.taskbar.progressColor = new PdfColor(205, 92, 92);

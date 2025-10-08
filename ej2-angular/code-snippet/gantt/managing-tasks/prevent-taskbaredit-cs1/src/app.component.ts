@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditSettingsModel, EditService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -12,15 +7,16 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" (taskbarEditing)="taskbarEditing($event)" [columns]="columns" (queryTaskbarInfo) = "queryTaskbarInfo($event)"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" (taskbarEditing)="taskbarEditing($event)" [columns]="columns" (queryTaskbarInfo) = "queryTaskbarInfo($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public editSettings?: EditSettingsModel;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -66,10 +62,12 @@ export class AppComponent {
             { field: 'Progress', headerText: 'Progress', width: '150' },
         ];
     }
+
     public taskbarEditing(args: any) {
         if (args.data.TaskID == 4) // We can't edit Task Id 4
             args.cancel = true;
     };
+
     public queryTaskbarInfo(args: any) {
         if (args.data.TaskID == 6) {
             args.taskbarElement.className += ' e-preventEdit' // Taskbar editing indicators are disabled

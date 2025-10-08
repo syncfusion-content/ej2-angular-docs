@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Excel export in Angular Gantt component
 
-The Angular Gantt component allows exporting data to Excel and CSV formats, making it easier to share or analyze in spreadsheets.  
+The Syncfusion Angular Gantt component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
  
-To enable Excel or CSV export, set [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowexcelexport) to **true** and inject `ExcelExportService` into the providers array of the component. 
+To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's providers array. 
 
-Export operations are initiated using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexport) and [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#csvexport) methods.
+You can trigger export operations using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#csvexport) methods, typically within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +112,7 @@ To apply a custom date format to columns during Excel or CSV export in the Angul
   
 {% previewsample "page.domainurl/samples/gantt/excel-export/excelExport-custom-date" %}
 
-## Exporting Multiple Gantts
+## Exporting multiple Gantt charts
 
 The Angular Gantt component supports exporting multiple Gantt charts either into a single worksheet or across separate sheets when generating Excel or CSV files.
 
@@ -158,9 +158,9 @@ To export each Gantt to a separate worksheet, set [multipleExport.type](https://
   
 {% previewsample "page.domainurl/samples/gantt/excel-export/newSheet-cs1" %}
 
-## Export Gantt as Blob
+## Export Gantt data as a Blob
 
-To export Gantt data as a Blob, set `isBlob` to **true** in the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#csvexport) method and use the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelexportcomplete) event to retrieve the Blob for custom processing or download handling.
+To export Gantt data as a Blob object for advanced processing or custom download workflows, set the `isBlob` parameter to **true** in the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#csvexport) method. Use the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelexportcomplete) event to access the Blob and implement custom logic.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tree Column in Angular Gantt component
+# Tree column in Angular Gantt component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a structured way to display **parent-child relationships** using expand/collapse icons.  
 
-To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property to the index of the column where these icons should appear.  This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
+To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property to the index of the column where these icons should appear.  This enables clear visualization and navigation of hierarchical tasks within the Gantt chart..
 
 ```ts
 
@@ -22,7 +22,7 @@ To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/
 
 ```
 
-## Change expand and collapse icon
+## Customize expand and collapse icons
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides support for customizing default expand/collapse icons through CSS. 
 
@@ -57,11 +57,11 @@ To apply custom icons, override the default styles with the following CSS:
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs1" %}
 
-## Change indent space of tree column cell text 
+## Customize indentation of tree column text 
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the **indent space** in tree column cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event.  
 
-In the following demonstration, indent space is applied by adding a CSS class to the tree column cell of **TaskName**.
+In the following demonstration, indentation is applied by dynamically adding a CSS class to the tree column cell of **TaskName** using the `queryCellInfo` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ You can collapse all parent rows during initial rendering by setting the [collap
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs3" %}
 
-## Retain expanded and collapsed state
+## Retain expand/collapse state on initial load
 
 You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property in the data source.  This property indicates whether a parent row should be expanded or collapsed when the Gantt component loads.
 
@@ -116,15 +116,15 @@ You can retain the expanded or collapsed state of parent rows during initial ren
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs4" %}
 
-## Persist expanded and collapsed state on page refresh using localStorage
+##  Persist expand/collapse state across page refresh using localStorage
  
-To retain the expanded and collapsed state of rows after a page refresh in the Syncfusion Angular Gantt component:
+To retain the expanded and collapsed state of rows after a page refresh in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component:
 
 1. Use the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed) event to store the collapsed row's primary key in `localStorage` via [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem).
 2. On page reload, retrieve the stored keys in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event using [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem).
 3. Collapse the corresponding rows using `CollapseByKey` or `collapseRow` methods by passing the saved key or row details.
 
-This approach ensures that row states are preserved across browser sessions
+This approach ensures that row states are preserved across browser sessions, enhancing user experience and continuity.
 
 In the following demo, the steps mentioned above are used to persist the expanded and collapsed state of rows during a browser page refresh.
 
@@ -142,9 +142,9 @@ In the following demo, the steps mentioned above are used to persist the expande
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs5" %}
 
-## Programmatically expand and collapse a row  
+## Programmatically expand or collapse rows   
 
-You can control row expansion and collapse programmatically in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using built-in methods:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides built-in methods to programmatically control row expansion and collapse:
 
 * **[expandAll()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expandall)**: Expands all rows. 
 
@@ -194,11 +194,29 @@ this.gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
 this.gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter.
 ```
 
-## Expand and collapse action 
+## Retrieve expanded records
+
+To retrieve the currently expanded rows in the Gantt component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getexpandedrecords) method. 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %} 
+{% include code-snippet/gantt/columns/treecolumn-expanded --cs5/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/treecolumn-expanded-cs5" %}
+
+## Customize expand/collapse behavior using events
 
 You can customize expand and collapse behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed) events.  These events allow you to control and respond to row state changes programmatically based on your application logic.
 
-The following sample demonstrates how to customize expand and collapse actions in the Syncfusion Angular Gantt component:
+The following sample demonstrates how to customize expand and collapse actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component:
 
 - Expanding is cancelled for the row where **TaskID** is 1.  
 - Collapsing is cancelled for the row where **TaskID** is 5.  

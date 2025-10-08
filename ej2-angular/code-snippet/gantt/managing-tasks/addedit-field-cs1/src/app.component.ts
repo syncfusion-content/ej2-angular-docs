@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditService, ToolbarItem, ToolbarService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { editingResources } from './data';
 
 @Component({
@@ -14,10 +8,11 @@ import { editingResources } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editDialogFields]="editDialogFields" [editSettings]="editSettings" [resourceNameMapping]= "resourceNameMapping" [toolbar]="toolbar" [resourceFields]="resourceFields" [resources]= "resources" [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editDialogFields]="editDialogFields" [editSettings]="editSettings" [resourceNameMapping]= "resourceNameMapping" [toolbar]="toolbar" [resourceFields]="resourceFields" [resources]= "resources" [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editDialogFields?: object[];
@@ -30,6 +25,7 @@ export class AppComponent {
     public projectStartDate?: Date;
     public projectEndDate?: Date;
     public resourceFields?: object;
+
     public ngOnInit(): void {
         this.data = [
             {

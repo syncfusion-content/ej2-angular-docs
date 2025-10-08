@@ -24,7 +24,7 @@ Task constraints enhance project planning with the following advantages:
 
 ## Understand task constraint types
 
-The [`constraintType`]((https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype)) property accepts one of eight numeric values from the [`ConstraintType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., `0`). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
+The [constraintType]((https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype)) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., `0`). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
 | Constraint Type | Numeric Enum Value | Description | Example Use Case |
 |-----------------|--------------------|-------------|------------------|
@@ -39,7 +39,7 @@ The [`constraintType`]((https://ej2.syncfusion.com/angular/documentation/api/gan
 
 ## Configure task constraints
 
-Configure task constraints using the [`taskFields.constraintType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype) and [`taskFields.constraintDate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constraintdate) properties to map constraint types and dates. Use [`ConstraintType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum values for clarity.
+Configure task constraints using the [taskFields.constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype) and [taskFields.constraintDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constraintdate) properties to map constraint types and dates. Use [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum values for clarity.
 
 **Define taskFields mappings**
 
@@ -76,6 +76,10 @@ The following example applies a `MustStartOn` constraint:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/task-constraints-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/task-scheduling/task-constraints-cs1" %}
@@ -84,7 +88,7 @@ This code sets a task to start on July 1, 2025, with the taskbar reflecting the 
 
 ## Handle constraint violations
 
-Constraint violations occur when scheduling changes (e.g., dragging taskbars) conflict with strict constraints (`MustStartOn`, `MustFinishOn`, `StartNoLaterThan`, `FinishNoLaterThan`). By default, a validation popup alerts users. Use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateTaskViolation'` to manage violations programmatically, setting `args.validateMode` flags to control behavior:
+Constraint violations occur when scheduling changes (e.g., dragging taskbars) conflict with strict constraints (`MustStartOn`, `MustFinishOn`, `StartNoLaterThan`, `FinishNoLaterThan`). By default, a validation popup alerts users. Use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateTaskViolation'` to manage violations programmatically, setting `args.validateMode` flags to control behavior:
 
 - `respectMustStartOn`: Silently rejects `MustStartOn` violations.
 - `respectMustFinishOn`: Silently rejects `MustFinishOn` violations.
@@ -114,6 +118,10 @@ The following example disables the `MustStartOn` violation popup:
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs2/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/task-constraints-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 

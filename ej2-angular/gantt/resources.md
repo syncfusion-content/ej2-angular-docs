@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Resources in Angular Gantt component
 
-Resources in the Angular Gantt component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property, resources map to tasks using [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
+Resources in the Angular Gantt component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
 ## Configure resource collection
 
-The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields):
+The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields):
 - `id`: Maps to a unique identifier for task assignment.
 - `name`: Maps to the resource name displayed in labels or columns.
 - `unit`: Maps to the work capacity percentage (0-100%) per day.
@@ -44,7 +44,7 @@ This configuration maps resources for assignment and display.
 
 ## Assign resources to tasks
 
-Resources are assigned to tasks using resource IDs in the data source, mapped via [`taskFields.resourceInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
+Resources are assigned to tasks using resource IDs in the data source, mapped via [taskFields.resourceInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
 
 **Single resource assignment**
 Assign a single resource without unit for default 100% allocation:
@@ -86,6 +86,10 @@ The following example shows resource assignment:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resources/assign-resources-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resources/assign-resources-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/resources/assign-resources-cs1" %}
@@ -102,7 +106,7 @@ Add or remove resources via cell or dialog editing. Cell editing modifies assign
 
 ## Customize resource styling
 
-Customize resource display using column templates for the resource column and the [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
+Customize resource display using column templates for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
 
 The following example demonstrates custom resource styling:
 
@@ -113,6 +117,10 @@ The following example demonstrates custom resource styling:
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resources/resource-customization-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resources/resource-customization-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 

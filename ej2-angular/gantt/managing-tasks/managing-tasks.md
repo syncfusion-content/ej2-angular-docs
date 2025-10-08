@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Managing tasks in Angular Gantt component
 
-Managing tasks in the Angular Gantt component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [`allowAdding`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding), [`allowDeleting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowdeleting), [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting), and [`allowTaskbarEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) set to `true` (e.g., on `id`), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [`addDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [`editDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields). Methods like [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord), [`deleteRow`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#deleterow), and [`updateRecordById`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Managing tasks in the Angular Gantt component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding), [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowdeleting), [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) set to `true` (e.g., on `id`), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord), [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/#deleterow), and [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 The following code example demonstrates editing in the Gantt component.
 
@@ -27,7 +27,7 @@ The following code example demonstrates editing in the Gantt component.
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs2" %}
 
 
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) column will be the primary key column.  If [`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) column is not defined, we need to enable [`isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) for any one of the columns defined in the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) column will be the primary key column.  If [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property.
 
 ## Open new task dialog with default values
 
@@ -47,21 +47,21 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 ## Cell edit type and its params
 
-The [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) is used to define the edit type for any particular column.
-You can set the [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) based on data type of the column.
+The [columns.editType](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) is used to define the edit type for any particular column.
+You can set the [columns.editType](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) based on data type of the column.
 
 Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
 
 - **Cell edit types and components**:
-  - `numericedit`: Uses the [`NumericTextBox`](https://helpej2.syncfusion.com/angular/documentation/numerictextbox/) component for editing integers, doubles, and decimals.
-  - `defaultedit`: Uses the [`TextBox`](https://helpej2.syncfusion.com/angular/documentation/textbox/) component for editing string data.
-  - `dropdownedit`: Uses the [`DropDownList`](https://helpej2.syncfusion.com/angular/documentation/drop-down-list/) component to display all unique values for a field.
-  - `booleanedit`: Uses the [`CheckBox`](https://helpej2.syncfusion.com/angular/documentation/check-box/) component for editing boolean data.
-  - `datepickeredit`: Uses the [`DatePicker`](https://helpej2.syncfusion.com/angular/documentation/datepicker/) component for editing date data.
-  - `datetimepickeredit`: Uses the [`DateTimePicker`](https://helpej2.syncfusion.com/angular/documentation/datetimepicker/) component for editing date-time data.
+  - `numericedit`: Uses the [NumericTextBox](https://helpej2.syncfusion.com/angular/documentation/numerictextbox/) component for editing integers, doubles, and decimals.
+  - `defaultedit`: Uses the [TextBox](https://helpej2.syncfusion.com/angular/documentation/textbox/) component for editing string data.
+  - `dropdownedit`: Uses the [DropDownList](https://helpej2.syncfusion.com/angular/documentation/drop-down-list/) component to display all unique values for a field.
+  - `booleanedit`: Uses the [CheckBox](https://helpej2.syncfusion.com/angular/documentation/check-box/) component for editing boolean data.
+  - `datepickeredit`: Uses the [DatePicker](https://helpej2.syncfusion.com/angular/documentation/datepicker/) component for editing date data.
+  - `datetimepickeredit`: Uses the [DateTimePicker](https://helpej2.syncfusion.com/angular/documentation/datetimepicker/) component for editing date-time data.
 
 - **Customization**:
-  - Customize editor component behavior using the [`columns.edit.params`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edit) property.
+  - Customize editor component behavior using the [columns.edit.params](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edit) property.
 
 - **Edit type parameters**:
   - `numericedit`: Supports parameters like `decimals: 2`, `value: 5`.
@@ -108,7 +108,7 @@ The cell edit template is used to create a custom component for a particular col
 
 ## Disable editing for particular column
 
-You can disable editing for particular columns, by using the [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowediting) property.
+You can disable editing for particular columns, by using the [columns.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowediting) property.
 
 In the following demo, editing is disabled for the `TaskName` column.
 
@@ -196,13 +196,13 @@ The following table describes different types of editing modes available in Gant
 
 Action |Description
 -----|-----
-[`Cell editing`](managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
-[`Dialog editing`](managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+[Cell editing](managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
+[Dialog editing](managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
+[Taskbar editing](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [`task dependencies`](managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [task dependencies](managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 
@@ -231,7 +231,7 @@ Taskbar state |Description
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be customized using the [`tooltipSettings.editing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
+The taskbar editing tooltip can be customized using the [tooltipSettings.editing](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

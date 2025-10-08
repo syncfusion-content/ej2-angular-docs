@@ -43,17 +43,27 @@ export class AppComponent implements OnInit {
 
   public percentageFormatter = (
     field: string,
-    data: object,
+    data: GanttTask,
     column: object
-  ): string => {
-    return `${(data as any)['Progress']}%`;
+  ): string => { 
+    return `${data.Progress}%`;
   };
 
   public concatenateFields = (
     field: string,
-    data: object,
+    data: GanttTask,
     column: object
   ): string => {
-    return `${(data as any)[field]} - ${(data as any)['TaskID']}`;
+  return `${data[field as keyof GanttTask]} - ${data.TaskID}`;
   };
+}
+
+
+export interface GanttTask {
+  TaskID: number;
+  TaskName: string;
+  StartDate?: Date;
+  Duration?: number;
+  Progress?: number;
+  subtasks?: GanttTask[];
 }

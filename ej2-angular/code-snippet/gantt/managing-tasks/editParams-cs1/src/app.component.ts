@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttModule, EditService, EditSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -12,14 +7,16 @@ import { Gantt } from '@syncfusion/ej2-gantt';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public columns?: object[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -64,6 +61,7 @@ export class AppComponent {
             { field: 'Progress', headerText: 'Progress', edit: { params: { showSpinButton: false } } },
         ];
     }
+
     public durationFormat = (field: string, data: Object, column: Object) => {
         return (data as any)[field];
     }

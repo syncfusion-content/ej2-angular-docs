@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Overview of the Angular Gantt component
 
-The Angular Gantt component provides a Microsoft Project-like interface for scheduling and managing projects, with taskbars, dependencies, and timelines for visualizing task durations, relationships, and resource allocations. It displays project timelines with start and end dates, resource workloads, and task progress, highlighting milestones and delays. The component integrates with data sources via the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, supporting arrays of JSON objects or DataManager for remote APIs. Taskbars include ARIA labels for accessibility, and the UI adapts to responsive designs, though narrow screens may require scrolling for long timelines.
+The Angular Gantt component provides a Microsoft Project-like interface for scheduling and managing projects, with taskbars, dependencies, and timelines for visualizing task durations, relationships, and resource allocations. It displays project timelines with start and end dates, resource workloads, and task progress, highlighting milestones and delays. The component integrates with data sources via the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, supporting arrays of JSON objects or DataManager for remote APIs. Taskbars include ARIA labels for accessibility, and the UI adapts to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Key features
 

@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule, ContextMenuService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-angular-gantt';
-import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
+import { GanttModule, ContextMenuService, EditService, SelectionService,  GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs} from '@syncfusion/ej2-angular-gantt'
+import { ContextMenuItemModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
 
 @Component({
@@ -13,18 +9,18 @@ import { editingData } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt #customcontextmenu id="ganttCustomContextmenu" height="430px" [dataSource]="editingData" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
+        `<ejs-gantt id="ganttCustomContextmenu" height="430px" [dataSource]="editingData" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+    @ViewChild('customcontextmenu', { static: true }) public ganttInstance?: GanttComponent;
     public copiedRecord?: any;
     public editingData?: object[];
     public taskSettings?: object;
     public editSettings?: object;
     public contextMenuItems?: (string | ContextMenuItemModel)[];
-    @ViewChild('customcontextmenu', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.editingData = editingData;
         this.taskSettings = {
@@ -45,19 +41,21 @@ export class AppComponent {
         { text: 'Paste', target: '.e-content', id: 'paste' } as ContextMenuItemModel,
         ];
     }
+
     public contextMenuClick(args: ContextMenuClickEventArgs) {
         if (args.item.id === 'copy') {
             this.copiedRecord = args.rowData;
-            this.copiedRecord.taskData.TaskID = this.ganttObj.currentViewData.length + 1;
+            this.copiedRecord.taskData.TaskID = this.ganttInstance.currentViewData.length + 1;
         }
         if (args.item.id === 'paste') {
-            this.ganttObj.addRecord(this.copiedRecord.taskData, 'Below', args.rowData!.index);
+            this.ganttInstance.addRecord(this.copiedRecord.taskData, 'Below', args.rowData!.index);
             if (this.copiedRecord.hasChildRecords) {
                 addChildRecords(this.copiedRecord, args.rowData!.index! + 1);
             }
             this.copiedRecord = undefined;
         }
     }
+    
     public contextMenuOpen(args: ContextMenuOpenEventArgs) {
         if (args.type !== 'Header') {
             if (this.copiedRecord) {
@@ -72,8 +70,8 @@ export class AppComponent {
 function addChildRecords(this: any, record: any, index: any): void {
     for (var i = 0; i < record.childRecords.length; i++) {
         var childRecord = record.childRecords[i];
-        childRecord.taskData.TaskID = this.ganttObj.currentViewData.length + 1;
-        this.ganttObj.addRecord(childRecord.taskData, 'Child', index);
+        childRecord.taskData.TaskID = this.ganttInstance.currentViewData.length + 1;
+        this.ganttInstance.addRecord(childRecord.taskData, 'Child', index);
         if (childRecord.hasChildRecords) {
             addChildRecords(childRecord, index + (i + 1));
         }

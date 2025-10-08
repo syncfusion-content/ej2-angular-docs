@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
 import { editingResources } from './data';
 
 @Component({
@@ -13,11 +8,12 @@ import { editingResources } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" [editSettings]="editSettings" [resourceFields] = "resourceFields" 
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" [editSettings]="editSettings" [resourceFields] = "resourceFields" 
        [resources]="resources" (actionBegin)="actionBegin($event)" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
@@ -25,6 +21,7 @@ export class AppComponent {
     public toolbar?: string[];
     public resourceFields?: object;
     public resources?: object[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -85,7 +82,8 @@ export class AppComponent {
             { field: 'Progress', headerText: 'Progress', width: '150', validationRules: { required: true } },
         ];
     }
-    actionBegin(args: any): void {
+
+    public actionBegin(args: any): void {
         if (args.requestType == "beforeOpenEditDialog" || args.requestType == "beforeOpenAddDialog") {
             args.Dependency.columns[3].validationRules = { required: true }
             args.Resources.columns[2].allowEditing = true

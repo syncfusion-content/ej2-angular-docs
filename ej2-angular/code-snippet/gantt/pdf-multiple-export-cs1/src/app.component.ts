@@ -1,9 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, ToolbarService, PdfExportService, SelectionService, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt'
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData1, editingData2 } from './data';
 
@@ -14,25 +10,27 @@ import { editingData1, editingData2 } from './data';
     selector: 'app-root',
     template:
         `<p><b>First Gantt:</b></p>
-       <ejs-gantt #gantt1 id="ganttDefault1" height="280px" [dataSource]="fData" [taskFields]="fTaskSettings" [toolbar]="toolbar"
+       <ejs-gantt #gantt1 id="ganttDefault1" height="280px" [dataSource]="firstGanttData" [taskFields]="fTaskSettings" [toolbar]="toolbar"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [treeColumnIndex]="1" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"></ejs-gantt>
        <p><b>Second Gantt:</b></p>
-       <ejs-gantt #gantt2 id="ganttDefault2" height="250px" [dataSource]="sData" [taskFields]="sTaskSettings" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
+       <ejs-gantt #gantt2 id="ganttDefault2" height="250px" [dataSource]="secondGanttData" [taskFields]="sTaskSettings" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    public fData?: object[];
-    public sData?: object[];
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt1', { static: true }) public firstGanttInstance?: GanttComponent;
+    @ViewChild('gantt2', { static: true }) public secondGanttInstance?: GanttComponent;
+    public firstGanttData?: object[];
+    public secondGanttData?: object[];
     public fTaskSettings?: object;
     public sTaskSettings?: object;
     public toolbar?: ToolbarItem[];
     public projectStartDate?: Date;
     public projectEndDate?: Date;
-    @ViewChild('gantt1', { static: true }) public fGantt?: GanttComponent;
-    @ViewChild('gantt2', { static: true }) public sGantt?: GanttComponent;
+   
     public ngOnInit(): void {
-        this.fData = editingData1;
-        this.sData = editingData2;
+        this.firstGanttData = editingData1;
+        this.secondGanttData = editingData2;
         this.fTaskSettings = {
             id: 'TaskID',
             name: 'TaskName',
@@ -53,11 +51,12 @@ export class AppComponent {
         this.projectStartDate = new Date('03/31/2019');
         this.projectEndDate = new Date('04/14/2019');
     }
+
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault1_pdfexport') {
-            const firstGanttExport: Promise<any> = this.fGantt!.pdfExport({}, true);
-            firstGanttExport.then((fData: any) => {
-                this.sGantt?.pdfExport({}, false, fData);
+            const firstGanttExport: Promise<any> = this.firstGanttInstance!.pdfExport({}, true);
+            firstGanttExport.then((firstGanttData: any) => {
+                this.secondGanttInstance?.pdfExport({}, false, firstGanttData);
             });
         }
     };

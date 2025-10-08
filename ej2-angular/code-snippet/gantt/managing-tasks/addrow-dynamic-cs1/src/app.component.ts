@@ -1,15 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { GanttComponent, EditService, GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, ButtonModule],
     providers: [EditService],
     standalone: true,
     selector: 'app-root',
@@ -20,13 +14,13 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: GanttComponent;
-    toolbar: any;
+    public toolbar?: string[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -64,7 +58,8 @@ export class AppComponent {
             allowAdding: true
         };
     }
-    add(): void {
+
+    public add(): void {
         let record: object = {
             TaskID: 9,
             TaskName: 'Identify Site location',
@@ -72,6 +67,6 @@ export class AppComponent {
             Duration: 3,
             Progress: 50
         };
-        this.ganttObj!.editModule.addRecord(record, 'Below', 2);
+        this.ganttInstance!.editModule.addRecord(record, 'Below', 2);
     };
 }

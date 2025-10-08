@@ -29,7 +29,7 @@ import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt', { static: true }) public ganttObj!: GanttComponent;
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
   public taskSettings: object = {};
   public selectionSettings: SelectionSettingsModel = {};
@@ -63,11 +63,11 @@ export class AppComponent implements OnInit {
   }
 
   valueChange(args: ChangeEventArgs): void {
-   (this.ganttObj as GanttComponent).selectionSettings.mode = args.value as 'Row' | 'Cell' | 'Both';
+   (this.ganttInstance as GanttComponent).selectionSettings.mode = args.value as 'Row' | 'Cell' | 'Both';
   }
 
   toggleColumnSelection(args: CustomChangeEventArgs): void {
-    (this.ganttObj as GanttComponent).selectionSettings.enableToggle = args.checked;
+    (this.ganttInstance as GanttComponent).selectionSettings.enableToggle = args.checked;
   }
 }
 

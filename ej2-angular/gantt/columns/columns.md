@@ -46,13 +46,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component sup
 
 ### Difference between boolean type and checkbox type column 
 
-1. Use the **boolean** column type when you want to bind boolean values from your datasource and/or edit boolean property values from your type.
-2. Use the **checkbox** column type when you want to enable selection/deselection of the whole row.
-3. When the gantt column `type` is a **checkbox**, the selection type of the gantt [selectionSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/) will be multiple. This is the default behavior.
-4. If you have more than one column with the column type as a **checkbox**, the gantt will automatically enable the other column's checkbox when selecting one column checkbox.
-
-### Difference between Boolean Type and Checkbox Type Column
-
 - Use **boolean** type to bind and edit true/false values from the data source.
 - Use **checkbox** type to enable row selection or deselection in the UI.
 - When column `type` is **checkbox**, Gantt `selectionSettings` defaults to multiple selection.
@@ -73,7 +66,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular, column wi
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width:
+#### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 
@@ -632,7 +625,7 @@ this.gantt.treeGrid.refreshColumns();
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
- The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
+The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

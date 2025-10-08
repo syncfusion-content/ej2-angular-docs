@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row selection in Angular Gantt component | Syncfusion
-description: Learn here all about Row selection in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Angular Gantt Row Selection API Guide
+description: Explore how to configure and customize row selection in the Syncfusion Angular Gantt component using API methods and events.
 platform: ej2-angular
 control: Row selection 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row selection in Angular Gantt component
 
-Row selection in the Angular Gantt component allows selecting specific rows or ranges of rows using mouse clicks or keyboard navigation (up, down, left, right arrows). This feature is useful for highlighting, manipulating, or performing actions on selected tasks within the Gantt.
+The Angular Gantt component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 
 ## Single row selection
 
@@ -46,13 +46,13 @@ You can enable multiple row selection in the Gantt component by setting  [select
 
 ## Row selection event sequence
 
-- On initial row selection, the `rowSelecting` event triggers first, followed by `rowSelected` event.
+- On initial row selection: `rowSelecting` triggers first, followed by `rowSelected`.
 
-- When another row is selected:
+- When selecting a different row:
 
   - [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselecting) is followed by [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselecting) and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselected) to deselect the previously selected row.
 
-  - Finally, [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselected) triggers for the newly selected row.
+  - Then, [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowselected) triggers for the newly selected row.
 
 This sequence ensures proper handling of row transitions during selection and deselection.
 
@@ -151,6 +151,9 @@ To access selected row details in the Angular Gantt component:
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/selection/row-selected-indexes" %}
+
+
+> **Note:** The Gantt component supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
 
 ## Customize row selection action
 

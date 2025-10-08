@@ -1,30 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 
-
-
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent implements OnInit {
     public data?: DataManager;
     public taskSettings?: object;
     public columns?: object[];
+
     public ngOnInit(): void {
         this.data = new DataManager({
             url: 'https://services.syncfusion.com/angular/production/api/GanttData',
@@ -47,6 +37,3 @@ export class AppComponent{
         ];
     }
 }
-
-
-

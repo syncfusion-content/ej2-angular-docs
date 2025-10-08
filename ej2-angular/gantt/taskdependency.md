@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Task dependency in Angular Gantt component
 
-Task dependency in the Angular Gantt component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [`taskFields.dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property in the data source. Parent dependencies are enabled by default with [`allowParentDependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) set to `true`, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event. Connector lines are customized using [`connectorLineWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [`connectorLineBackground`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [`addPredecessor`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addpredecessor) and [`removePredecessor`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
+Task dependency in the Angular Gantt component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) set to `true`, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
 ## Configure task dependencies
 
-Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [`taskFields.dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency). Parent dependencies can be enabled by [`allowParentDependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) property. By default, the `allowParentDependency` property will be `true`.
+Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency). Parent dependencies can be enabled by [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) property. By default, the `allowParentDependency` property will be `true`.
 
 The following example establishes dependencies:
 
@@ -75,7 +75,7 @@ This code sets offsets like '2FS+3h', adjusting taskbars accordingly.
 
 ## Disable automatic dependency offset updates
 
-Automatic offset updates during taskbar editing are disabled with [`updateOffsetOnTaskbarEdit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateoffsetontaskbaredit) set to `false`, allowing manual updates via the dependency tab or predecessor column.
+Automatic offset updates during taskbar editing are disabled with [updateOffsetOnTaskbarEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateoffsetontaskbaredit) set to `false`, allowing manual updates via the dependency tab or predecessor column.
 
 The following example disables automatic updates:
 
@@ -95,7 +95,7 @@ This code preserves offsets during edits, requiring manual adjustments.
 
 ## Handle dependency validation modes
 
-Dependency validation during editing uses the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
+Dependency validation during editing uses the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
 - `respectLink`: Prioritizes links, reverting invalid edits.
 - `removeLink`: Prioritizes editing, removing conflicting links.
 - `preserveLinkWithEditing`: Updates offsets to maintain links (default).
@@ -118,7 +118,7 @@ This code reverts edits violating links, ensuring dependency integrity.
 
 ## Use validation dialog
 
-When all validation modes are disabled in [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
+When all validation modes are disabled in [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
 
 The following example enables the validation dialog:
 
@@ -158,7 +158,7 @@ This code hides lines on button click, with ARIA updates for accessibility.
 
 ## Customize connector lines
 
-Connector lines are styled globally with [`connectorLineWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [`connectorLineBackground`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground).
+Connector lines are styled globally with [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground).
 
 The following example sets the connector line background color as red:
 
@@ -171,17 +171,8 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-gantt 
-            id="ganttDefault" 
-            height="430px" 
-            [dataSource]="taskData" 
-            [taskFields]="taskSettings" 
-            [projectStartDate]="projectStartDate" 
-            [projectEndDate]="projectEndDate"
-            [connectorLineWidth]="2"
-            [connectorLineBackground]="'red'">
-        </ejs-gantt>
-    `
+        <ejs-gantt height="430px" [dataSource]="taskData" [taskFields]="taskSettings" [projectStartDate]="projectStartDate"  [projectEndDate]="projectEndDate" [connectorLineWidth]="2" [connectorLineBackground]="'red'">
+        </ejs-gantt>`
 })
 export class AppComponent {
     public taskData: object[] = [

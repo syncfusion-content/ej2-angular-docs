@@ -200,6 +200,22 @@ The following sample demonstrates how to prevent sorting for the **TaskID** and 
   
 {% previewsample "page.domainurl/samples/gantt/sorting/events-cs1" %}
 
+## Disable clear sort
+
+By default, clicking a column header switches the sort order between ascending, descending, and unsorted. To restrict this to only ascending and descending, set [sortSettings.allowUnsort] to **false**. This ensures sorting remains active without reverting to an unsorted state.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/sorting/unclear-sort/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/sorting/unclear-sort/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/sorting/unclear-sort" %}
+
 ## Touch interaction
 
 To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, the [sorting](sorting/#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.

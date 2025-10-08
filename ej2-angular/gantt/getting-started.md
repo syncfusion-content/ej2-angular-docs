@@ -149,8 +149,7 @@ The following example injects modules to enable editing, sorting, and toolbar fe
 
 ```typescript
 import { Component } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { EditService, FilterService, SortService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule , EditService, FilterService, SortService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     imports: [GanttModule],
@@ -369,7 +368,10 @@ The [`eventMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/getting-started/event-markers-cs1/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/getting-started/event-markers-cs1/src/data.ts %}
+{% endhighlight %}
 
 {% previewsample "page.domainurl/samples/gantt/getting-started/event-markers-cs1" %}
 
@@ -397,7 +399,10 @@ The following example demonstrates handling a missing `isPrimaryKey` configurati
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/exception-handling/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/exception-handling/src/data.ts %}
+{% endhighlight %}
 
 {% previewsample "page.domainurl/samples/gantt/exception-handling" %}
 

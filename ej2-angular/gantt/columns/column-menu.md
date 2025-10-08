@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular Gantt component
 
-The column menu in the Angular Gantt component provides built-in options such as sorting, filtering, column chooser, and autofit. When the menu icon in a column header is clicked, a menu appears with these features.
+The column menu in the Angular Gantt component offers built-in actions including sorting, filtering, column chooser, and autofit. When users click the column menu icon, a menu appears with these features.
 
-To enable the column menu, set `showColumnMenu` to **true** in the Gantt configuration and inject `ColumnMenuService` in the `providers` of the component.
+To activate the column menu feature, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumnmenu) property to **true** in the Gantt configuration and inject the `ColumnMenuService` into the component's `providers` array.
 
-The default column menu items are listed below:
+The following built-in column menu items are available:
 
 | Item            | Description                                 |
 |-----------------|---------------------------------------------|
@@ -43,11 +43,11 @@ The default column menu items are listed below:
 
 > * You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) with only the required items.
 
-## Add custom column menu item
+## Add a custom column menu item
 
 The Angular Gantt component allows adding custom items to the column menu using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property, which accepts a set of `columnMenuItemModel` objects.
 
-You can define the behavior of these items through the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#columnmenuclick) event.
+Define the behavior of custom items through the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#columnmenuclick) event.
 
 The following example demonstrates how to add a custom column menu item to clear the sorting in the Gantt chart.
 
@@ -65,9 +65,9 @@ The following example demonstrates how to add a custom column menu item to clear
   
 {% previewsample "page.domainurl/samples/gantt/column/columnmenu-cs2" %}
 
-## Customize menu items for particular columns
+## Customize column menu items per column
 
-You can control the visibility of column menu items for specific columns by using the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/gantt/events#columnmenuopen) event. To hide an item, set `columnMenuOpenEventArgs.hide` to **true**.
+Control the visibility of column menu items for specific columns by using the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/gantt/events#columnmenuopen) event. To hide an item, set `args.hide` to **true** for the target item.
 
 The following example demonstrates hiding the **Filter** item when the column menu opens for the **TaskName** column.
 
@@ -87,9 +87,9 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 > * You can disable the column menu for a specific column by setting [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#showcolumnmenu) to **false**.
 
-## Render nested column menu
+## Render nested column menu items
 
-You can extend the column menu in Gantt component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
+Extend the column menu in Gantt component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
 
 The following example demonstrates how to configure `columnMenuItems` to include a nested menu.
 
@@ -107,9 +107,9 @@ The following example demonstrates how to configure `columnMenuItems` to include
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs6" %}
 
-## Customize the icon of column menu
+## Customize the column menu icon
 
-You can change the default column menu icon in Gantt component by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
+Customize the default column menu icon in Gantt component by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
 
 To customize the column menu icon, follow these steps:
 

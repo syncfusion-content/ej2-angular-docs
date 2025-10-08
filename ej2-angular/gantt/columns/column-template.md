@@ -138,7 +138,7 @@ export class AppComponent {
 
 ## Render hyperlink in a column
 
-The Gantt compoenent supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
+The Gantt component supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
 
 To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) within the **e-column** tag using `ng-template` and an `a` tag. The `onClick` function is triggered when the hyperlink is clicked.
 
@@ -367,7 +367,7 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 
 ### Render Chip component in a column
 
-The Gantt chart compoenent supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
+The Gantt chart component supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
 
 The following example demonstrates how to render the Chips component in the **TaskName** column.
 

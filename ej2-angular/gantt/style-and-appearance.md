@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Gantt component
 
-The Angular Gantt component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [`queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
+The Angular Gantt component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 
 ## CSS class reference
 
@@ -108,7 +108,7 @@ The following example overrides taskbar and milestone styles:
 
 ## Configure grid lines
 
-Control grid line visibility with [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):
+Control grid line visibility with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):
 - `Horizontal`: Shows only horizontal lines for row separation.
 - `Vertical`: Shows only vertical lines for column separation.
 - `Both`: Shows both for full grid structure.

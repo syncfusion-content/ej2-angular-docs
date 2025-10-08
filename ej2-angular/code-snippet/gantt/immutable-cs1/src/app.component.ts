@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule,DayMarkersService, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
@@ -17,12 +12,12 @@ import { projectNewData } from './data';
        [toolbar]="toolbar" enableImmutableMode="true"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -45,6 +40,3 @@ export class AppComponent {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Indent', 'Outdent'];
     }
 }
-
-
-

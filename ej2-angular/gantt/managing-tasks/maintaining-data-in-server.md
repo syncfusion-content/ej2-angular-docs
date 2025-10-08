@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Maintaining data in server in Angular Gantt component
 
-Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., `id`, `name`, `startDate`). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
+Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., `id`, `name`, `startDate`). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
 
 ## Configure URL adaptor with batch updates
 
@@ -28,7 +28,6 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
     public data: DataManager;
     public taskSettings: object;
     public columns: object[];

@@ -1,8 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -13,11 +10,12 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="onActionBegin($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
     public toolbar?: string[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -51,12 +49,12 @@ export class AppComponent {
             progress: 'Progress',
             child: 'subtasks'
         };
-
         this.editSettings = {
             allowAdding: true
         };
         this.toolbar = ['Add'];
     }
+
     public onActionBegin(args: any) {
         if (args.requestType == 'beforeOpenAddDialog') {
             args.rowData.TaskName = 'Gantt';

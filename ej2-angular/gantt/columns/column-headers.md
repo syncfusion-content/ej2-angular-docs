@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headers in Angular Gantt component
+# Column headers in Angular Gantt component
 
 The Angular Gantt component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 
-## Header text
+## Set custom header text
 
 By default, column headers in the Gantt chart display the value defined in the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property. To customize the header title, use the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property within the **e-column** configuration. This allows you to define meaningful labels for each column as needed.
 
@@ -35,7 +35,7 @@ By default, column headers in the Gantt chart display the value defined in the [
 > * The `headerText` property is optional. If not defined, the column's field value will be used as the header text by default.
 > * To apply custom HTML content to the header cell, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertemplate) property.
 
-## Header template
+## Customize header using template
 
 You can customize the column header in the Gantt chart using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertemplate) property. This allows rendering custom HTML or Angular components within the header.
 
@@ -59,9 +59,9 @@ In this example, custom elements are applied to both the **TaskName** and **Dura
 
 >* The `headerTemplate` property is only applicable to Gantt columns that have a header element.
 
-## Align the text of header text
+## Align header text
 
-You can align the column header text in the Syncfusion Angular Gantt component using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertextalign) property. By default, the text is aligned to the **left**. The available alignment options are:
+You can align the column header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertextalign) property. By default, the text is aligned to the **left**. The available alignment options are:
 
 - **Left:** Aligns text to the left (default).  
 - **Center:** Aligns text to the center.  
@@ -86,9 +86,9 @@ You can align the column header text in the Syncfusion Angular Gantt component u
 
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column/#textalign) property.
 
-## Autowrap the header text
+## Enable header text wrapping
 
-You can enable autowrap in the Syncfusion Angular Gantt component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width).
+You can enable autowrap in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width).
 
 The wrapping behavior is defined using the `textWrapSettings.wrapMode` property of the `treeGrid` object. Available options include:
 
@@ -116,7 +116,7 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs6" %}
 
-## Change the height of header
+## Adjust header height
 
 To customize the Gantt header height for displaying full content such as long text or images, apply changes using CSS or dynamic method.
 
@@ -152,7 +152,7 @@ To change the height dynamically, use the `getHeaderContent` method to access th
 
 >* You can also use the `getHeaderTable` method of `treeGrid` object in gantt instance to get the table element of the header, and then adjust the height.
 
-## Change header text dynamically
+## Update header text dynamically
 
 The Angular Gantt component allows dynamic updates to column header text, either through events or method calls. This is useful for customizing headers based on user input or application logic.
 
@@ -195,7 +195,7 @@ Here is an example of how to change the header text of a column using the `getCo
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs5" %}
 
-**Changing the header text of all columns**
+**Changing the header text of all columns:**
 
 To modify the header text of all columns in the Gantt compoenent, iterate through the columns collection and set the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property for each column. This approach ensures consistent customization across all headers.
 
@@ -213,7 +213,7 @@ To modify the header text of all columns in the Gantt compoenent, iterate throug
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs7" %}
 
-## Change the orientation of header text
+## Rotate header text
 
 By default, header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component is displayed horizontally. To rotate it vertically, diagonally, or at a custom angle, follow the steps below using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#customattributes) property of the column.
 
@@ -259,7 +259,7 @@ public setHeaderHeight(args) {
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs8" %}
 
-## Translate header text using ngx-translate 
+## Localize header text using ngx-translate 
 
 The ngx-translate library provides **internationalization (i18n)** and **localization (l10n)** support for Angular applications. With ngx-translate, you can easily translate your Angular application into multiple languages.
 
@@ -683,11 +683,9 @@ pt-BR.json {
 
 ```
 
+## Add custom tooltip to header
 
-
-## Custom tooltip for header
-
-You can display additional information in the Syncfusion Angular Gantt component by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/gantt/#beforeRender) event of the `Tooltip` component. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
+You can display additional information in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/gantt/#beforeRender) event of the `Tooltip` component. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
 
 The following example demonstrates how to use the `beforeRender` event to add a tooltip to a header cell:
 
@@ -707,7 +705,7 @@ The following example demonstrates how to use the `beforeRender` event to add a 
 
 > * The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
-## Customize header text styles 
+## Style header text 
 
 To modify the appearance of column headers in the Gantt, follow the steps below. You can use CSS, properties, methods, or events provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component.
 
@@ -842,7 +840,7 @@ The following example demonstrates how to check if the current header column is 
 
 {% previewsample "page.domainurl/samples/gantt/columns/headerstyle-cs4" %}
 
-## How to refresh header 
+## Refresh header programmatically 
 
 To refresh the header in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component after updating column properties (such as text, width, or alignment), use the `refreshHeader` method from the `treeGrid` object. This method re-renders the header to reflect the latest column changes.
 
@@ -866,7 +864,7 @@ The following example demonstrates how to update the header text of the column a
 
 >* The `refreshHeader` method updates only the gantt header and not the entire gantt chart.
 
-## How to get header element 
+## Access header element 
 
 To retrieve the header element in a Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart component, you can use one of the following methods available in the `treeGrid` object of the Gantt instance:
 

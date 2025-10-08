@@ -31,15 +31,13 @@ import { TaskStoreService } from './task-store.service';
     selector: 'app-root',
     template: `
         <ejs-gantt #gantt id='ganttContainer' [dataSource]='tasks | async' height='450px' rowHeight='25'
-                   [allowSorting]='true' [taskFields]='taskSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
+        [allowSorting]='true' [taskFields]='taskSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
         </ejs-gantt>
     `,
     providers: [TaskStoreService]
 })
 export class AppComponent implements OnInit {
-    @ViewChild('gantt', { static: true })
-    public ganttChart: GanttComponent;
-
+    @ViewChild('gantt', { static: true }) public ganttChart: GanttComponent;
     public tasks: Observable<DataStateChangeEventArgs>;
     public taskSettings: object;
     public editSettings: object;

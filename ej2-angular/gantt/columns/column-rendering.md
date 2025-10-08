@@ -162,5 +162,3 @@ You can display serial numbers for each row in the Gantt component using the [ro
 {% previewsample "page.domainurl/samples/gantt/columns/columnrender-cs5" %}
 
 > Since custom values are displayed in the **S.No** column, data operations such as sorting and filtering are not supported for this column.
-
-

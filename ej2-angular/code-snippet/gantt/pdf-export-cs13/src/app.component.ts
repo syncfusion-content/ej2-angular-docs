@@ -1,43 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-import { PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfStandardFont, PdfPen, PdfStringFormat, PdfTextAlignment, PdfVerticalAlignment } from '@syncfusion/ej2-pdf-export';
-import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
-
-
+import { GanttModule, ToolbarService, DayMarkersService, PdfExportService, SelectionService PdfExportProperties, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfPen, PdfStringFormat, PdfTextAlignment } from '@syncfusion/ej2-pdf-export';
 import { editingData } from './data';
+
 @Component({
   imports: [GanttModule],
   providers: [ToolbarService, PdfExportService, SelectionService, DayMarkersService],
   standalone: true,
   selector: "app-root",
-  template: `<ejs-gantt
-    #gantt
-    id="ganttDefault"
-    height="430px"
-    [dataSource]="data"
-    [taskFields]="taskSettings"
-    [toolbar]="toolbar"
-    (toolbarClick)="toolbarClick($event)"
-    allowPdfExport="true"
-    [treeColumnIndex]="1"
-    [eventMarkers]="eventMarkers"
-    [holidays] = "holidays"
-  ></ejs-gantt>`,
+  template: `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"
+    allowPdfExport="true" [treeColumnIndex]="1" [eventMarkers]="eventMarkers" [holidays]="holidays"></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild("gantt", { static: true }) public ganttInstance?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public toolbar?: ToolbarItem[];
   public eventMarkers?: object[];
   public holidays?: object[];
-  @ViewChild("gantt", { static: true })
-  public ganttObj?: GanttComponent;
 
   public ngOnInit(): void {
     this.data = editingData;
@@ -74,19 +57,17 @@ export class AppComponent {
     }];
     this.toolbar = ["PdfExport"];
   }
+
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === "ganttDefault_pdfexport") {
       const stringFormat = new PdfStringFormat();
       stringFormat.alignment = PdfTextAlignment.Center;
-
       const vertical = new PdfStringFormat();
       vertical.alignment = PdfTextAlignment.Center;
-
       const penColor = new PdfColor(105, 105, 105);
       const penWidth = 1;
       const pen = new PdfPen(penColor, penWidth);
       pen.dashStyle = PdfDashStyle.Dash;
-
       const borderWidth = 1;
       const borderColor = new PdfColor(192, 192, 192);
       let pdfpen: PdfPen = new PdfPen(borderColor, borderWidth);
@@ -144,7 +125,7 @@ export class AppComponent {
           },
         },
       };
-      this.ganttObj!.pdfExport(exportProperties);
+      this.ganttInstance!.pdfExport(exportProperties);
     }
   }
 }

@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent, ToolbarItem, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import { GanttModule, ToolbarService, PdfExportService, SelectionService, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt'
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingData } from './data';
 
 @Component({
@@ -17,12 +13,12 @@ import { editingData } from './data';
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true'></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttChart?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', { static: true })
-    public ganttChart?: GanttComponent;
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -35,6 +31,7 @@ export class AppComponent {
         };
         this.toolbar = ['PdfExport'];
     }
+
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_pdfexport') {
             this.ganttChart!.pdfExport();

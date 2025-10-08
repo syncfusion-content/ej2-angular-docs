@@ -1,22 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { CommonModule } from '@angular/common';
-
-import {
-  ToolbarService,
-  PdfExportService,
-  SelectionService,
-} from '@syncfusion/ej2-angular-gantt'
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import {
-  GanttComponent,
-  ToolbarItem,
-  PdfExportProperties,
-} from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ToolbarItem, PdfExportProperties, ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingResources } from './data';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
   imports: [GanttModule, CommonModule],
@@ -39,15 +25,16 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar'
             </e-columns></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
   public resources?: object[];
   public toolbar?: ToolbarItem[];
-  @ViewChild('ganttDefault', { static: true })
-  public ganttChart?: GanttComponent;
   public resourceFields?: object;
+
   public ngOnInit(): void {
     this.data = [
       {
@@ -150,6 +137,7 @@ export class AppComponent {
     };
     this.resources = editingResources;
   }
+
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
       let exportProperties: PdfExportProperties = {
@@ -158,6 +146,7 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
+
   public pdfQueryCellInfo(args: any): void {
     if (args.column.headerText === 'Resources') {
       {

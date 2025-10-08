@@ -43,6 +43,10 @@ Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documen
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/virtual-scroll-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs2" %}

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Header and footer of PDF exporting in Angular Gantt component
 
-Customizing headers and footers in PDF exports of the Angular Gantt component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [`PdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/) with [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) and [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [`enableFooter`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#enablefooter) set to `false`, ensuring tailored outputs with the `PdfExport` module injected and [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) enabled.
+Customizing headers and footers in PDF exports of the Angular Gantt component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/) with [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) and [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#enablefooter) set to `false`, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) enabled.
 
 ## Write a text in header and footer
 
-Customize text in headers or footers using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [`PdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Text**, define `value` for the text, `position` for x/y coordinates, and `style` for color or font size.
+Customize text in headers or footers using the [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Text**, define `value` for the text, `position` for x/y coordinates, and `style` for color or font size.
 
 ```ts
 let exportProperties: PdfExportProperties = {
@@ -36,7 +36,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a line in header and footer
 
-Customize lines in headers or footers using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [`PdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Line**, define `points` for start/end coordinates, `pageNumberType` for position, and `style` for color, width, or dash style.
+Customize lines in headers or footers using the [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Line**, define `points` for start/end coordinates, `pageNumberType` for position, and `style` for color, width, or dash style.
 
 ```ts
 let exportProperties: PdfExportProperties = {
@@ -56,7 +56,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a page number in header and footer
 
-Add page numbers to headers or footers using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [`PdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **PageNumber**, define `format` for display (e.g., 'Page {$current} of {$total}'), `position` for x/y coordinates, and `style` for color or font size.
+Add page numbers to headers or footers using the [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **PageNumber**, define `format` for display (e.g., 'Page {$current} of {$total}'), `position` for x/y coordinates, and `style` for color or font size.
 
 ```ts
 let exportProperties: PdfExportProperties = {
@@ -78,7 +78,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Insert an image in header and footer
 
-Add images to headers or footers using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [`footer`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [`PdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Image**, define `src` as a `base64` string, `position` for x/y coordinates, and `size` for height/width.
+Add images to headers or footers using the [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) or [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) properties in [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/). Set `type` to **Image**, define `src` as a `base64` string, `position` for x/y coordinates, and `size` for height/width.
 
 Note: PDF Export supports base64 string to export the images.
 

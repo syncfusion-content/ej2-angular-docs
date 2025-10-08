@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
-To enable this feature, add the **Search** option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) configuration and inject `FilterService` and `ToolbarService` in the provider of the component.
+To enable search functionality, include the **Search** item in the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) configuration and inject both `FilterService` and `ToolbarService` into the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +39,6 @@ To configure this feature, define the following properties:
 | `key`         | Specifies the value to search for.                                                            |
 | `ignoreCase`  | Determines if the search should be case-insensitive.                                         |
 | `ignoreAccent`| Ignores diacritic characters or accents during the search.
-
 
 The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pröduct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pröduct").
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Timeline in Angular Gantt component
 
-The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, and Year-Month for flexible visualization. Configure modes using the [`timelineViewMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [`topTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [`bottomTier.unit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, and Year-Month for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
-Set the timeline view mode using the [`timelineViewMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
+Set the timeline view mode using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
 
 ### Week timeline mode
 
@@ -95,9 +95,10 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/timeline/hour-cs1" %}
+
 ## Customize week start day
 
-In the Gantt component, you can customize the week start day using the [`weekStartDay`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) property. By default, the [`weekStartDay`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) is set to `0`, which specifies the Sunday as a start day of the week. But, you can customize the week start day by using the following code example.
+In the Gantt component, you can customize the week start day using the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) property. By default, the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) is set to **0**, which specifies the **Sunday** as a start day of the week. But, you can customize the week start day by using the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,7 +114,7 @@ In the Gantt component, you can customize the week start day using the [`weekSta
 
 ## Customize automatic timescale update action
 
-In the Gantt component, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [`updateTimescaleView`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#updatetimescaleview) property.
+In the Gantt component, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [updateTimescaleView](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#updatetimescaleview) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +130,7 @@ In the Gantt component, the schedule timeline will be automatically updated when
 
 ## Timeline cells tooltip
 
-In the Gantt component, you can enable or disable the mouse hover tooltip of timeline cells using the [`timelineSettings.showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showtooltip) property. The default value of this property is `true`. The following code example shows how to enable the timeline cells tooltip in Gantt.
+In the Gantt component, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showtooltip) property. The default value of this property is **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,13 +140,17 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/timelinecell-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs1" %}
 
 ## Highlight weekends
 
-Highlight weekends by setting [`showWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) to `true` and [`workWeek`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
+Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) to **true** and [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,18 +160,22 @@ Highlight weekends by setting [`showWeekend`](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/timeline/show-weekend-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/tooltip/show-weekend-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/timeline/show-weekend-cs1" %}
 
 **Limitations:**
 * The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
-* Non-working hours cannot be excluded when `showWeekend` is set to `false`.
-* Holidays are not excluded from the timeline if `showWeekend` is set to `false`.
+* Non-working hours cannot be excluded when `showWeekend` is set to **false**.
+* Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
 ## Timeline template
 
-In the Gantt component, you can customize timeline cells using the [`timelineTemplate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
+In the Gantt component, you can customize timeline cells using the [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
@@ -183,6 +192,10 @@ The following code example how to customize the top tier to display the week's w
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/timelinecell-cs2/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

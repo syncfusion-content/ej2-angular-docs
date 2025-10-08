@@ -53,6 +53,10 @@ In the following code example, `Edit` and `Delete` actions are specified in `und
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
@@ -75,6 +79,10 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs2" %}
@@ -92,6 +100,10 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs3/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,6 +123,10 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs4/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs4/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs4" %}
@@ -128,6 +144,10 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs5/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

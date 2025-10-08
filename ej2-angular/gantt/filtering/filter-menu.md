@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter menu in Angular Gantt component
 
-The Syncfusion Blazor Gantt component provides a filter menu for each column, allowing filtering based on data type and supported operators. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as 'equal', 'contains', 'greaterthan', etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ The Syncfusion Blazor Gantt component provides a filter menu for each column, al
 
 ## Custom component in filter menu
 
-You can customize the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses Autocomplete for string columns, NumericTextBox for number columns, DatePicker for date columns, and DropDownList for boolean column.
+You can customize the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses AutoComplete for string columns, NumericTextBox for number columns, DatePicker for date columns, DropDownList for boolean columns, and DateTimePicker for datetime columns.
 
 The `column.filter.ui` property supports three essential functions:
 
@@ -48,10 +48,9 @@ The `column.filter.ui` property supports three essential functions:
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-custom-component" %}
 
-
 ## Hide default filter icon while perform filtering through method
 
-To remove the default filter icon from the UI, apply the following CSS: 
+To hide the default filter icon from the UI when filtering is performed programmatically, apply the following CSS: 
  
 ```css
 .e-filtermenudiv.e-icons.e-icon-filter {
@@ -76,7 +75,7 @@ You can perform filtering programmatically by checking if `args.currentTarget.id
 
 ## Customize the default input component of filter menu dialog
 
-To customize the default input components in the filter menu, use the `params` property within the column's [filter](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#filter) configuration. This allows you to override default settings based on the column type.
+To customize the default input components in the filter menu dialog, use the `params` property inside the column's [filter](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#filter) configuration. This allows you to override default settings such as autofill, spin buttons, and sort order. This allows you to override default settings based on the column type.
 
 You can refer to the table below for supported column types, their default components, customization examples, and API references:
 
@@ -105,15 +104,14 @@ The following sample demonstrates how to disable the autofill feature by setting
 
 ## Customizing filter menu operators list
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#operators) property. This enables you to define a tailored set of operators displayed in the filter menu based on data type.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
 
 You can configure operators for different types using the following options: 
 
-- **stringOperator** – Custom operators for string columns  
-- **numberOperator** – Custom operators for number columns  
-- **dateOperator** – Custom operators for date columns  
-- **booleanOperator** – Custom operators for boolean columns
-
+- **stringOperator** – Custom operators for string columns.  
+- **numberOperator** – Custom operators for number columns.  
+- **dateOperator** – Custom operators for date columns.  
+- **booleanOperator** – Custom operators for boolean columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

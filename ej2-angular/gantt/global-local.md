@@ -24,7 +24,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
+The [`Localization](../common/localization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [`locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript
@@ -291,13 +291,17 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/locale-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/global/locale-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/global/locale-cs1" %}
 
 ## Internationalization (I18N)
 
-The [`Internationalization`](../common/internationalization) library globalizes number, date, and time values in the Gantt component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [`Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
 Internationalization affects multiple aspects of the Gantt component:
 
@@ -316,11 +320,15 @@ Internationalization affects multiple aspects of the Gantt component:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/global/internationalization-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/global/internationalization-cs1" %}
 
-> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) property defaults to `en-US`. Change this property to your desired locale for proper cultural formatting.
+> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [`locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) property defaults to `en-US`. Change this property to your desired locale for proper cultural formatting.
 
 ## Right-to-Left (RTL) support
 
@@ -333,7 +341,7 @@ RTL layout affects multiple aspects of the user interface:
 - **Icon orientation**: Directional icons need appropriate orientation
 - **Data presentation**: Maintains logical data relationships while adapting visual presentation
 
-To enable RTL support, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) property to `true`:
+To enable RTL support, set the [`enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) property to `true`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -342,6 +350,10 @@ To enable RTL support, set the [`enableRtl`](https://ej2.syncfusion.com/angular/
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/rtl-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/global/rtl-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

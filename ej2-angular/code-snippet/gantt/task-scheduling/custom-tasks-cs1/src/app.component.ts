@@ -1,37 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, SelectionService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService, SelectionService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" taskMode= "Custom" [treeColumnIndex]="1" validateManualTasksOnLinking= "true" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt height="450px" [dataSource]="data" taskMode= "Custom" [treeColumnIndex]="1" validateManualTasksOnLinking= "true" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns">
+        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    // Data for Gantt
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public editSettings?: object;
     public toolbar?: string[];
+
     public ngOnInit(): void {
         this.data = [
-                {
+            {
                 'TaskID': 1,
                 'TaskName': 'Parent Task 1',
                 'StartDate': new Date('02/27/2017'),
@@ -121,7 +110,6 @@ export class AppComponent {
             manual: 'isManual'
         };
         this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Search'];
-
         this.editSettings = {
             allowEditing: true,
             allowDeleting: true,

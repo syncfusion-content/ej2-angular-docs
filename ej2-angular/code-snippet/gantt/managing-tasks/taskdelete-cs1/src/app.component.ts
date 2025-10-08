@@ -1,15 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GanttModule, GanttComponent, EditService, EditSettingsModel, SelectionService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, ButtonModule],
     providers: [EditService, SelectionService],
     standalone: true,
     selector: 'app-root',
@@ -19,13 +13,14 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public editSettings?: EditSettingsModel;
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: any;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -75,8 +70,9 @@ export class AppComponent {
             { field: 'Progress', headerText: 'Progress', width: '150' },
         ];
     }
-    delete(): void {
-        this.ganttObj.editSettings.showDeleteConfirmDialog = true;
-        this.ganttObj.editModule.deleteRecord(this.ganttObj.selectionModule.getSelectedRecords()[0].TaskID);
+
+    public delete(): void {
+        this.ganttInstance.editSettings.showDeleteConfirmDialog = true;
+        this.ganttInstance.editModule.deleteRecord(this.ganttInstance.selectionModule.getSelectedRecords()[0].TaskID);
     };
 }

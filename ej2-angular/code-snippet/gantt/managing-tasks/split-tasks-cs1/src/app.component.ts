@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule, ContextMenuService, EditService } from '@syncfusion/ej2-angular-gantt'
-import { SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttModule, ContextMenuService, ToolbarItem, EditSettingsModel, EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -12,14 +7,16 @@ import { Gantt } from '@syncfusion/ej2-gantt';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" [enableContextMenu]="true"></ejs-gantt>`,
+        `<ejs-gantt height="450px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" [enableContextMenu]="true"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
+
     public ngOnInit(): void {
         this.data = [
             {

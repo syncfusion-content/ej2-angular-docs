@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Gantt component
 
-Data binding connects the Angular Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
+Data binding connects the Angular Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
 Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 
@@ -32,11 +32,11 @@ The component supports two primary data structure types for organizing project h
 
 ## Local data binding implementation
 
-Local data binding assigns JavaScript object arrays directly to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
+Local data binding assigns JavaScript object arrays directly to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
 
 ### Hierarchical data structure
 
-Hierarchical data binding organizes complex parent-child relationships through nested object structures. Each parent task contains multiple child tasks through the [`child`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#child) field mapping, creating natural tree structures that represent project hierarchies.
+Hierarchical data binding organizes complex parent-child relationships through nested object structures. Each parent task contains multiple child tasks through the [child](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#child) field mapping, creating natural tree structures that represent project hierarchies.
 
 This approach works well for data sources that maintain inherent parent-child relationships in their structure, such as JSON responses from APIs that provide nested task collections.
 
@@ -54,7 +54,7 @@ This approach works well for data sources that maintain inherent parent-child re
 
 ### Self-referential data structure
 
-Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [`id`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) field and parent identifiers to the [`parentID`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#parentid) field to establish task hierarchies without nested objects.
+Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#id) field and parent identifiers to the [parentID](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#parentid) field to establish task hierarchies without nested objects.
 
 This approach enables the component to reconstruct hierarchical tree structures from relational data, making it ideal for database-driven applications where parent-child relationships are maintained through foreign key references.
 
@@ -74,7 +74,7 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 ## Remote data binding implementation
 
-Remote data binding assigns service endpoints as `DataManager` instances to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. This enables real-time data synchronization with external servers, databases, or web services.
+Remote data binding assigns service endpoints as `DataManager` instances to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property. This enables real-time data synchronization with external servers, databases, or web services.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,11 +150,11 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ### Load-on-demand implementation
 
-Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields to enable this functionality.
+Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields to enable this functionality.
 
 **Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the component to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 
-**Loading behavior**: When [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadChildOnDemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
+**Loading behavior**: When [loadChildOnDemand](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadChildOnDemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
 
 **Virtualization integration**: Combined `enableVirtualization` and `loadChildOnDemand` settings render only current viewport root nodes in collapsed state, further optimizing memory usage and rendering performance for large datasets.
 
@@ -442,7 +442,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 
 ### Advanced server communication
 
-**Additional parameter transmission**: Pass extra parameters to server endpoints using the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method of the [`Query`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
+**Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method of the [Query](https://ej2.syncfusion.com/angular/documentation/api/gantt/#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -529,7 +529,7 @@ namespace URLAdaptor.Controllers
 }
 ```
 
-**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
+**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
 **Data validation considerations**:
 - **Missing parentID validation**: Tasks without valid parentID references may display incorrectly or appear as root tasks unexpectedly
@@ -548,7 +548,7 @@ namespace URLAdaptor.Controllers
   
 {% previewsample "page.domainurl/samples/gantt/data-binding/actionFailure-cs1" %}
 
-**Fetch API integration**: Use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
+**Fetch API integration**: Use Gantt [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -570,7 +570,7 @@ Split task functionality allows task interruption during planned or unforeseen c
 
 ### Hierarchical split task configuration
 
-Split tasks at load time using hierarchical structures by defining segment details in the data source and mapping through the [`taskFields.segments`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segments) property. Each task contains segment arrays specifying split periods and durations.
+Split tasks at load time using hierarchical structures by defining segment details in the data source and mapping through the [taskFields.segments](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segments) property. Each task contains segment arrays specifying split periods and durations.
 
 ```typescript
 [
@@ -598,7 +598,7 @@ Split tasks at load time using hierarchical structures by defining segment detai
 
 ### Self-referential split task configuration
 
-Define segment details as flat data collections mapped through the [`segmentData`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#segmentData) property. The segment ID field connects segments to their parent tasks through the [`taskFields.segmentId`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segmentId) property mapping.
+Define segment details as flat data collections mapped through the [segmentData](https://ej2.syncfusion.com/angular/documentation/api/gantt/#segmentData) property. The segment ID field connects segments to their parent tasks through the [taskFields.segmentId](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#segmentId) property mapping.
 
 ```typescript
 taskFields: {

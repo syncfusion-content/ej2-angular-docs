@@ -1,34 +1,24 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import {  EditService  } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [columns]="columns" [toolbar]="toolbar"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [columns]="columns" [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public toolbar?: string[];
     public editSettings?: EditSettingsModel;
+
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -37,8 +27,8 @@ export class AppComponent{
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -64,9 +54,9 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.editSettings = {
-            allowTaskbarEditing:true
+            allowTaskbarEditing: true
         };
-        this.columns =  [
+        this.columns = [
             { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
             { field: 'TaskName', headerText: 'Task Name', width: '250' },
             { field: 'StartDate', headerText: 'Start Date', width: '150' },
@@ -76,6 +66,3 @@ export class AppComponent{
         this.toolbar = ['Edit'];
     }
 }
-
-
-

@@ -1,14 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule,DayMarkersService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
 import { projectNewData } from './data';
 
 @Component({
     imports: [GanttModule],
-
     providers: [DayMarkersService],
     standalone: true,
     selector: 'app-root',
@@ -16,11 +11,11 @@ import { projectNewData } from './data';
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [holidays] = "holidays"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public holidays?: object[];
+    
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

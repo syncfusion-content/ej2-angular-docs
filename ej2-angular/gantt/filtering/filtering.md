@@ -19,7 +19,7 @@ To activate filtering functionality, inject the `FilterService` in the `provider
 > The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
 > The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
-## Initial filter
+## Apply initial filter on load
 
 To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#columns) property.
 
@@ -37,7 +37,7 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
   
 {% previewsample "page.domainurl/samples/gantt/filtering/initialfilter-cs1" %}
 
-## Filter operators
+## Supported filter operators
 
 Filter operators can be set using the `filterSettings.columns.operator` property to define the comparison logic for each column.
 
@@ -57,7 +57,7 @@ The available operators and their supported data types are:
 
 N> By default, the `filterSettings.columns.operator` value is `equal`
 
-## Filter hierarchy modes
+## Hierarchy-based filtering modes
 
 The Angular Gantt component supports multiple filtering modes, which can be configured using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#hierarchymode) property. The available modes are:
 
@@ -81,12 +81,11 @@ The Angular Gantt component supports multiple filtering modes, which can be conf
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filterhierarchy-cs1" %}
 
-## Diacritics
+## Enable diacritic-sensitive filtering
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> BAngular Gantt component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#ignoreaccent) property to **true**.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#ignoreaccent) property to **true**.
 
 The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,7 +99,7 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
   
 {% previewsample "page.domainurl/samples/gantt/filtering/diacritics-cs1" %}
 
-## Filtering specific and multiple values using method
+## Programmatic filtering using method
 
 You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt by using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
 
@@ -118,7 +117,7 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtercolumn-cs1" %}
 
-## Clear filtered columns
+## Clear all applied filters
 
 You can clear all the filtering conditions applied in the Gantt component by using the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#clearfiltering) method.
 
@@ -134,7 +133,7 @@ You can clear all the filtering conditions applied in the Gantt component by usi
   
 {% previewsample "page.domainurl/samples/gantt/filtering/clearfilter-cs1" %}
 
-## Enable different filter for a column
+## Set different filter types per column
 
 You can enable different filter types for individual columns in the Gantt component by setting the `column.filter.type` property.
 
@@ -150,7 +149,7 @@ You can enable different filter types for individual columns in the Gantt compon
   
 {% previewsample "page.domainurl/samples/gantt/filtering/different-filter" %}
 
-## Customize filtering action
+## Customize filtering behavior using events
 
 You can customize the filtering behavior in the  Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 

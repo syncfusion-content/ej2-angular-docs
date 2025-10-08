@@ -1,36 +1,28 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="resources" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [treeColumnIndex]="1" [editSettings]="editSettings" height="450px" [allowSelection]="true" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [highlightWeekends]="true" [toolbar]="toolbar" [resourceFields] = "resourceFields" [resources]="resources" resourceNameMapping='resourceName' resourceIDMapping='resourceId' resourceUnitMapping='Unit' workUnit="Hour"></ejs-gantt> `,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [treeColumnIndex]="1" [editSettings]="editSettings" height="450px" [allowSelection]="true" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [highlightWeekends]="true" [toolbar]="toolbar" [resourceFields] = "resourceFields" [resources]="resources" resourceNameMapping='resourceName' resourceIDMapping='resourceId' resourceUnitMapping='Unit' workUnit="Hour">
+        </ejs-gantt> `,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public resources?: object[];
     public taskSettings?: object;
     public labelSettings?: object;
     public projectStartDate?: Date;
     public projectEndDate?: Date;
-    editSettings: { allowAdding: boolean; allowEditing: boolean; allowDeleting: boolean; allowTaskbarEditing: boolean; showDeleteConfirmDialog: boolean; } | undefined;
-    resourceFields: { id: string; name: string; unit: string; } | undefined;
-    toolbar: string[] | undefined;
-    columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: string; visible?: undefined; } | { field: string; width: string; visible?: undefined; headerText?: undefined; })[] | undefined;
+    public editSettings?: object;
+    public resourceFields?: object;
+    public toolbar: string[] | undefined;
+    public columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: string; visible?: undefined; } | { field: string; width: string; visible?: undefined; headerText?: undefined; })[] | undefined;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -123,6 +115,3 @@ export class AppComponent {
         ];
     }
 }
-
-
-

@@ -18,7 +18,7 @@ At the top of the Gantt chart is a customizable [toolbar](https://ej2.syncfusion
 
 ![Gantt chart](./images/gantt.png)
 
-The splitter position can be programmatically controlled using the [`splitterSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/) property, allowing developers to define the initial layout and user interaction capabilities.
+The splitter position can be programmatically controlled using the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/) property, allowing developers to define the initial layout and user interaction capabilities.
 
 ## Grid section
 
@@ -28,9 +28,9 @@ The grid section displays task information in a structured, tabular format optim
 
 * **Tabular presentation**: Task details are presented in a clear, spreadsheet-like format with customizable columns
 * **Hierarchical structure**: Parent-child task relationships are visually represented through indentation and expand/collapse icons
-* **Expandable/collapsible rows**: Click the expand/collapse icon near parent tasks to show or hide subtasks, controlled by the [`collapseAllParentTasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseallparenttasks) property
-* **Column configuration**: Display titles and data for different fields configured through the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property
-* **Inline editing**: Double-click cells to edit task information directly when [`editSettings.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) is enabled
+* **Expandable/collapsible rows**: Click the expand/collapse icon near parent tasks to show or hide subtasks, controlled by the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseallparenttasks) property
+* **Column configuration**: Display titles and data for different fields configured through the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) property
+* **Inline editing**: Double-click cells to edit task information directly when [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) is enabled
 
 ![Grid](./images/tabular.png)
 
@@ -38,10 +38,10 @@ The grid section displays task information in a structured, tabular format optim
 
 The grid supports comprehensive interaction capabilities when corresponding features are enabled:
 
-* **Column sorting**: Click column headers to sort data when [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) is true.
-* **Column resizing**: Drag column borders to adjust width when [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowresizing) is enabled.
-* **Column reordering**: Drag column headers to change order when [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowreordering) is configured.
-* **Data filtering**: Use column menu filters to display specific tasks when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) is enabled.
+* **Column sorting**: Click column headers to sort data when [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) is true.
+* **Column resizing**: Drag column borders to adjust width when [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowresizing) is enabled.
+* **Column reordering**: Drag column headers to change order when [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowreordering) is configured.
+* **Data filtering**: Use column menu filters to display specific tasks when [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) is enabled.
 
 ## Chart section
 
@@ -51,11 +51,11 @@ The chart section provides a visual timeline representation of project tasks, th
 
 The chart section consists of several key visual elements:
 
-* **Timeline header**: Configurable time scale showing dates, controlled by [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/)
+* **Timeline header**: Configurable time scale showing dates, controlled by [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/)
 * **Taskbars**: Visual representations of tasks showing duration, progress, and scheduling status
 * **Dependency connectors**: Lines connecting related tasks to show project flow and dependencies
 * **Milestones**: Diamond-shaped markers for zero-duration tasks representing key project events
-* **Grid lines**: Horizontal and vertical reference lines controlled by [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines)
+* **Grid lines**: Horizontal and vertical reference lines controlled by [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines)
 
 ![Chart](./images/chart.png)
 
@@ -65,8 +65,8 @@ The chart section supports various interaction methods:
 
 * **Timeline zoom**: Adjust timeline granularity using zoom controls or mouse wheel when enabled
 * **Scroll navigation**: Pan horizontally and vertically through the timeline using scrollbars or mouse drag
-* **Task selection**: Click taskbars to select tasks when [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowselection) is enabled
-* **Taskbar manipulation**: Drag and resize taskbars when [`allowTaskbarDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) is configured
+* **Task selection**: Click taskbars to select tasks when [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowselection) is enabled
+* **Taskbar manipulation**: Drag and resize taskbars when [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) is configured
 
 ## Interactive taskbar elements
 
@@ -89,7 +89,7 @@ Direct taskbar interactions provide intuitive project management capabilities:
 * **Drag to reschedule**: Move entire taskbars horizontally to change start and end dates simultaneously
 * **Resize for duration**: Extend or shorten taskbars by dragging grippers to adjust task duration
 * **Progress updates**: Drag the progress gripper to visually update task completion percentage
-* **Validation**: All interactions respect project constraints and validation rules defined in [`editSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/)
+* **Validation**: All interactions respect project constraints and validation rules defined in [editSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/)
 
 ## Task dependency management
 
@@ -116,7 +116,7 @@ The component supports all standard project management dependency types:
 
 ### Dependency configuration
 
-Dependencies can be configured through the [`taskFields.dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) mapping and managed through the editing interface.
+Dependencies can be configured through the [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) mapping and managed through the editing interface.
 
 ## Specialized taskbar types
 
@@ -138,7 +138,7 @@ Milestones are automatically identified when task duration equals zero or can be
 
 Manual tasks provide flexibility for custom scheduling scenarios that require override of automatic scheduling logic:
 
-* **Manual scheduling mode**: Controlled by [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode) property set to 'Manual'
+* **Manual scheduling mode**: Controlled by [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode) property set to 'Manual'
 * **Custom date control**: Project managers can set specific dates regardless of dependency constraints
 * **Override automation**: Useful for fixed-date deliverables, external dependencies, or regulatory requirements
 * **Visual distinction**: Different styling to indicate manual vs. automatic scheduling mode
@@ -156,7 +156,7 @@ Baselines provide essential project performance monitoring through visual compar
 * **Planned vs. actual**: Visual overlay comparing planned schedule against actual progress
 * **Variance analysis**: Identify schedule deviations, delays, and acceleration opportunities
 * **Performance metrics**: Track project execution effectiveness against initial plans
-* **Configuration**: Enabled through [`renderBaseline`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#renderbaseline) property
+* **Configuration**: Enabled through [renderBaseline](https://ej2.syncfusion.com/angular/documentation/api/gantt/#renderbaseline) property
 
 ![Baseline](./images/baseline.png)
 
@@ -173,7 +173,7 @@ Critical path functionality identifies tasks that directly impact overall projec
 
 ![Critical path](./images/critical-path.png)
 
-Critical path analysis requires the [`enableCriticalPath`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) property to be enabled and the CriticalPath module to be injected.
+Critical path analysis requires the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) property to be enabled and the CriticalPath module to be injected.
 
 ## Additional visual elements
 
@@ -196,7 +196,7 @@ Event markers highlight significant dates that affect the entire project timelin
 
 * **Project-wide events**: Company holidays, external deadlines, or regulatory milestones
 * **Timeline overlay**: Vertical lines spanning the entire chart height for maximum visibility
-* **Custom styling**: Configurable appearance, colors, and labeling through [`eventMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#eventmarkers)
+* **Custom styling**: Configurable appearance, colors, and labeling through [eventMarkers](https://ej2.syncfusion.com/angular/documentation/api/gantt/#eventmarkers)
 * **Interactive tooltips**: Additional information available on hover or click
 
 ![Event markers](./images/event-markers.png)
@@ -216,7 +216,7 @@ The row drag and drop feature enables intuitive task hierarchy management throug
 
 Row drag and drop behavior is controlled through several properties:
 
-* **Enable feature**: Set [`allowRowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) to true
+* **Enable feature**: Set [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) to true
 * **Module injection**: Requires RowDD service to be injected
 * **Event handling**: Provides events for drag start, dragging, and drop operations
 
@@ -242,7 +242,7 @@ The task editing dialog provides comprehensive task management through a well-or
 
 ![Dialog box](./images/dialogBox.png)
 
-The editing dialog is opened through double-click actions, toolbar buttons, or programmatically through the [`openEditDialog`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#openeditdialog) method.
+The editing dialog is opened through double-click actions, toolbar buttons, or programmatically through the [openEditDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/#openeditdialog) method.
 
 ### General tab
 
