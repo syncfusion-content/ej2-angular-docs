@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Pivot Table: Conditional Hyperlinks | Syncfusion
+title: Conditional Hyperlink in Angular Pivot Table | Syncfusion
 description: Apply conditional hyperlinks to rows or columns in the Syncfusion EJ2 Angular Pivot Table. Dynamically create unique cell links based on values.
 platform: ej2-angular
 control: Apply condition based hyper link for specific row or column 
