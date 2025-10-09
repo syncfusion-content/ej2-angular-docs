@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Pivot Table: Select Cells & Get Data | Syncfusion
+title: Select Cells & Get Info in Angular Pivot Table | Syncfusion
 description: Select and retrieve data from cells in the Syncfusion EJ2 Angular Pivot Table. Learn to manage user interaction and data extraction.
 platform: ej2-angular
 control: Perform cell selection and get selected cells information 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Pivot Table: Conditional Formatting | Syncfusion
+title: Apply Conditional Formatting in Angular Pivot Table | Syncfusion
 description: Apply conditional formatting to rows or columns in the Syncfusion EJ2 Angular Pivot Table. Customize cell styles based on values to highlight key data.
 platform: ej2-angular
 control: Apply conditional formatting for specific row or column 
