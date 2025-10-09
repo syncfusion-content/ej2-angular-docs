@@ -3,22 +3,22 @@ layout: post
 title: Dimensions in Angular Schedule component | Syncfusion
 description: Learn here all about Dimensions in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Dimensions 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Dimensions in Angular Schedule component
 
-The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
+Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
 
-* auto
-* pixel
-* percentage
+* `auto`
+* `pixel`
+* `percentage`
 
-## Auto Height and Width
+## Auto height and width
 
-When height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,9 +32,9 @@ When height and width of the Scheduler are set to `auto`, it will try as hard as
   
 {% previewsample "page.domainurl/samples/schedule/dimension-cs1" %}
 
-## Height and Width in pixel
+## Height and width in pixels
 
-The Scheduler height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
+The Scheduler height and width will render exactly as per the given pixel values. You can provide pixel values as numbers (for example, `500`) or as strings with a `px` suffix (for example, `'500px'`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +48,9 @@ The Scheduler height and width will be rendered exactly as per the given pixel v
   
 {% previewsample "page.domainurl/samples/schedule/dimension-cs2" %}
 
-## Height and Width in percentage
+## Height and width in percentages
 
-When height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
+When the height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,4 +68,4 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](./cell-customization#setting-cell-dimensions-in-all-views)

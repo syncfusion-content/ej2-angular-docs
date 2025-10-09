@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Show tool tip with delay in Angular Schedule component | Syncfusion
+title: Show tooltip delay in Angular Schedule | Syncfusion
 description: Learn here all about Show tool tip with delay in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Show tool tip with delay 
+control: scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show tool tip with delay in Angular Schedule component
+# Show tooltip delay in Angular Schedule component
 
-In default, the Schedule tooltip is showed without any delay. We can set up the delay to the Schedule tooltip with the help of the Tooltip [`openDelay`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipModel/#opendelay) property.
+By default, the Schedule tooltip is displayed immediately. You can introduce a delay before the tooltip appears by setting the Tooltip [`openDelay`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipModel/#opendelay) property.
 
-The preview demonstrates setting up the delay to the Schedule tooltip. You can check the Schedule tooltip with delay here.
+The following example demonstrates how to configure the tooltip delay in the Schedule component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

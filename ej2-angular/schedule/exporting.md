@@ -3,20 +3,20 @@ layout: post
 title: Exporting in Angular Schedule component | Syncfusion
 description: Learn here all about Exporting in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Exporting 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Exporting in Angular Schedule component
 
-The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
+The Scheduler supports exporting appointments to Excel and ICS files on the client side. It offers client-side methods to export appointments in either Excel or iCal format. Explore how to implement exporting in the Scheduler.
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) property.
+The Scheduler allows you to export events to an Excel file by using the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoexcel) client-side method. By default, it exports all fields mapped through [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) property.
 
-> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the '@syncfusion/ej2-schedule' package using the `Inject` method of Scheduler.
+> Before enabling Excel export, import and inject the `ExcelExport` module from `@syncfusion/ej2-schedule` using the `Inject` method of the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,7 +27,7 @@ The Scheduler allows you to export all its events into an Excel format file by u
 {% include code-snippet/schedule/excel-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/excel-export-cs1" %}
 
 ![Excel Exporting](images/schedule-excel-export.png)
@@ -45,14 +45,14 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% include code-snippet/schedule/excel-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/excel-export-cs2" %}
 
 ![Excel Exporting with custom Fields](images/schedule-excel-export-custom-fields.png)
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`includeOccurrences`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/#includeoccurrences) option as `true` through the [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoexcel) method. By default, the [`includeOccurrences`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/#includeoccurrences) option is set to `false`.
+By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`includeOccurrences`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/#includeoccurrences) option as `true` through the [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoexcel) method. By default, the [`includeOccurrences`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/#includeoccurrences) option is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,14 +63,14 @@ By default, the Scheduler exports recurring events as a single data by exporting
 {% include code-snippet/schedule/excel-export-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
-By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoexcel) method as shown in this following example, through the `customData` option of [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface.
+By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoexcel) method as shown in this following example, through the `customData` option of [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface.
 
-> By default, the event data are taken from Scheduler dataSource.
+> By default, event data are taken from the Scheduler `dataSource`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,7 +86,7 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 
 ### Customizing column header with custom fields exporting
 
-Using fields property, we can only export the defined fields into excel without customizing the header. Now we can provide the alternate support to customize the header of custom fields exporting using the `fieldsInfo` option through the `ExportFieldInfo` interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoexcel) method as shown in the following example.
+Using fields property, we can only export the defined fields into excel without customizing the header. Now we can provide the alternate support to customize the header of custom fields exporting using the `fieldsInfo` option through the `ExportFieldInfo` interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoexcel) method as shown in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ Using fields property, we can only export the defined fields into excel without 
 
 ### Export with custom file name
 
-By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, by defining the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface and passing it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoexcel) method.
+By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, by defining the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/angular/documentation/api/schedule/exportOptions/) interface and passing it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoexcel) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,7 +115,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 {% include code-snippet/schedule/excel-export-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/excel-export-cs6" %}
 
 ### Excel file formats
@@ -152,9 +152,9 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 
 ### How to customize the excel sheet on before exporting
 
-Customizing an Excel sheet before export is made easy with the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule#excelExport) event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+Customizing an Excel sheet before export is made easy with the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#excelExport) event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
 
-With the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule#excelExport) event, you can:
+With the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#excelExport) event, you can:
 
 - **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
 
@@ -162,7 +162,7 @@ With the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/sc
 
 - **Cancel the export:** The event supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
 
-Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule#excelExport) event.
+Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#excelExport) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,7 +180,7 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 You can export the Scheduler events to a calendar (.ics) file format, and open it on any of the other default calendars such as Google or Outlook. To export the events of Scheduler to an ICS file, you need to first import the `ICalendarExport` module from `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarExport)` method.
 
-The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`exportToICalendar`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoicalendar) public method.
+The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`exportToICalendar`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#exporttoicalendar) public method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -243,7 +243,7 @@ The Scheduler allows you to print the Scheduler element by using the `print` cli
 
 ### Using print method without options
 
-You can print the Schedule element with the current view by using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule#print) method without passing the options. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule#print) method without passing options.
+You can print the Schedule element with the current view by using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#print) method without passing the options. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#print) method without passing options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,9 +257,9 @@ You can print the Schedule element with the current view by using the [`print`](
   
 {% previewsample "page.domainurl/samples/schedule/print-cs1" %}
 
-### Using a print method with options
+### Using print method with options
 
-You can print the Schedule element based on your needs using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule#print) method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule#print) method by passing the options.
+You can print the Schedule element based on your needs using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#print) method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#print) method by passing the options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -273,16 +273,16 @@ You can print the Schedule element based on your needs using the [`print`](https
   
 {% previewsample "page.domainurl/samples/schedule/print-cs2" %}
 
-### How to customize the print layout
+### Customizing the print layout
 
-The [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/schedule#beforePrint) event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, giving them full control over when and how the print operation takes place.
+The [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#beforePrint) event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, giving them full control over when and how the print operation takes place.
 
-Key customization options include:
+Key customization options:
 
 - **Customizing the header and footer:** Add custom header and footer content of the print layout to include additional information.
 - **Controlling print output:** Fine-tune the layout to ensure that only the necessary details are printed, ensuring a clean and structured printout.
 
-Here’s an example of how you can add a custom header and footer to the print layout using the [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/schedule#beforePrint) event.
+Here’s an example of how you can add a custom header and footer to the print layout using the [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#beforePrint) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

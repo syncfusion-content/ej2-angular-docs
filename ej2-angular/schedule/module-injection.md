@@ -3,14 +3,14 @@ layout: post
 title: Module injection in Angular Schedule component | Syncfusion
 description: Learn here all about Module injection in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Module injection 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module injection in Angular Schedule component
+# Module Injection in Angular Schedule
 
-The crucial step on creating a Scheduler with required views, is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
+To customize the Scheduler with specific views and features, you must import and inject the required modules. The Scheduler provides the following modules to enable its functionalities.
 
 * `DayService` - Inject this module to work with day view.
 * `WeekService` - Inject this module to work with week view.
@@ -35,11 +35,11 @@ The required modules should be injected into the Scheduler using the `@NgModule.
 `[src/app/app.component.ts]`
 
 ```typescript
-@NgModule(({
+@NgModule({
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService]
 })
 ```
 
-**Note:** If a Scheduler [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) is set to any one of the available views without injecting that respective view module, then a script error will occur and the Scheduler will not render.
+**Note:** If the Scheduler's [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#currentview) property is set to a view for which the corresponding module has not been injected, a script error will occur, and the Scheduler will fail to render.
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to know how to present and manipulate data.

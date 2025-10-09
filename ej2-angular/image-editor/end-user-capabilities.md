@@ -182,3 +182,7 @@ applied modifications.
     * Press Ctrl + S to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
 
 ![Export an image showcase](../code-snippet/image-editor/images/save.jpg)
+
+## See Also
+
+* [Prevent Drag-and-Drop Support](https://support.syncfusion.com/kb/article/21286/how-to-prevent-drag-and-drop-support-in-angular-image-editor)
