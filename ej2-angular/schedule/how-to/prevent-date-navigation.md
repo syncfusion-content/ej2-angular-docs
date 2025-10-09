@@ -3,7 +3,7 @@ layout: post
 title: Prevent date navigation in Angular Schedule component | Syncfusion
 description: Learn here all about Prevent date navigation in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Prevent date navigation 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---

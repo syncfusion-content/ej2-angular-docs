@@ -3,20 +3,20 @@ layout: post
 title: Recurrence editor in Angular Schedule component | Syncfusion
 description: Learn here all about Recurrence editor in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Recurrence editor 
+control: Scheduler 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Recurrence editor in Angular Schedule component
 
-The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The Recurrence editor is integrated into Scheduler's editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
-> All the valid recurrence rule string mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+> All valid recurrence rule strings defined in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification apply to the recurrence editor.
 
 ## Customizing the repeat type option in editor
 
-By default, there are 5 types of repeat options available in recurrence editor such as,
+By default, the recurrence editor provides five repeat options:
 
 * Never
 * Daily
@@ -24,7 +24,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor#frequencies) option.
+You can customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor/#frequencies) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +38,7 @@ It is possible to customize the recurrence editor to display only the specific r
   
 {% previewsample "page.domainurl/samples/schedule/default-cs57" %}
 
-The other properties available in recurrence editor are tabulated below,
+The other properties available in recurrence editor are tabulated below:
 
 | Properties | Type | Description |
 |------------|------|-------------|
@@ -55,13 +55,13 @@ The other properties available in recurrence editor are tabulated below,
 
 ## Customizing the End Type Option in Editor
 
-By default, there are 3 types of end options available in the recurrence editor such as:
+By default, the recurrence editor provides three end options:
 
 * Never
 * Until
 * Count
 
-It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor/#endtypes) option.
+You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor/#endtypes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,7 +133,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
   
 {% previewsample "page.domainurl/samples/schedule/recur-editor-cs3" %}
 
-> Above example will generate two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilised to create appointments.
+> The above example generates two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
 
 ## Recurrence date generation in server-side
 
@@ -157,4 +157,4 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
   
 {% previewsample "page.domainurl/samples/schedule/recur-editor-cs4" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

@@ -189,3 +189,10 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs16" %}
+
+## See Also
+
+* [Show Annotations in Main Toolbar](https://support.syncfusion.com/kb/article/21304/how-to-show-annotations-in-main-toolbar-of-angular-image-editor)
+* [Show Preview Icon](https://support.syncfusion.com/kb/article/21305/how-to-show-preview-icon-using-angular-image-editor-component)
+* [Change the Default Open Icon](https://support.syncfusion.com/kb/article/21276/how-to-change-the-default-open-icon-in-angular-image-editor)
+* [Enable Full Screen Mode](https://support.syncfusion.com/kb/article/20965/how-to-enable-full-screen-mode-in-angular-image-editor)

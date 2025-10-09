@@ -3,7 +3,7 @@ layout: post
 title: Working days in Angular Schedule component | Syncfusion
 description: Learn here all about Working days in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Working days 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -15,19 +15,19 @@ The Scheduler can be customized on various aspects as well as it inherits almost
 * To set custom time range display on Scheduler
 * To set different working hours
 * To set different working days
-* To set different first day of week
-* To show/hide weekend days
+* To set different first day of the week
+* To show or hide weekend days
 * To show the week number
 
 ## Set working days
 
-By default, Scheduler considers the week days from Monday to Friday as `Working days` and therefore defaults to [1,2,3,4,5] - where 1 represents Monday, 2 represents Tuesday and so on. The days which are not defined in this working days collection are considered as non-working days. Therefore, when the weekend days are set to hide from Scheduler, all those non-working days too gets hidden from the layout.
+By default, the Scheduler considers Monday through Friday as working days (`[1, 2, 3, 4, 5]`), where 1 represents Monday, 2 represents Tuesday, and so on. Days not included in this collection are treated as non-working days. When weekend days are hidden, these non-working days are also hidden from the layout.
 
-The Work week and Timeline Work week views displays exactly the defined working days on Scheduler layout, whereas other views displays all the days and simply differentiates the non-working days on UI with inactive cell color.
+The Work week and Timeline Work week views display only the defined working days, whereas other views display all days and visually differentiate non-working days with an inactive cell color.
 
-> The working or business hours depiction on Scheduler are usually valid only on these specified working days.
+> The working or business hours depiction is valid only on the specified working days.
 
-The following example code depicts how to set the Scheduler to display Monday, Wednesday and Friday as working days of a week.
+The following example shows how to configure the Scheduler to use Monday, Wednesday, and Friday as working days.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,7 +67,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `showWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
 
-> The [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customizations.
+> The [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ It is possible to show the week number count of a week in the header bar of the 
 
 ![Week Numbers](images/schedule-weeknumber.png)
 
-### Different options in showing week numbers
+### Different options for week numbers
 
 By default, week numbers are shown in the Scheduler based on the first day of the year. However, the week numbers can be determined based on the following criteria.
 
@@ -93,7 +93,7 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
 
-For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
+For more details refer to [CalendarWeekRule remarks](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -107,11 +107,11 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
   
 {% previewsample "page.domainurl/samples/schedule/default-cs92" %}
 
- **Note**: Enable the [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property to configure the `weekRule` property. Also, the weekRule property depends on the value of the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#firstdayofweek) property.
+ **Note**: Enable the [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property to configure the [`weekRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#weekrule) property. Also, the `weekRule` property depends on the value of the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#firstdayofweek) property.
 
 ## Set working hours
 
-Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the [`workHours`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#workhours) property which is of object type and includes the following sub-options,
+Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the [`workHours`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#workhours) property which is of object type and includes the following sub-options,
 
 * [`highlight`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/workHoursModel/#highlight) – enables/disables the highlighting of work hours.
 * [`start`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/workHoursModel/#start) - sets the start time of the working/business hour of a day.
@@ -133,9 +133,9 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 ## Scheduler displaying custom hours
 
-It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`startHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#starthour) and [`endHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#endhour) properties respectively.
+It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`startHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#starthour) and [`endHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#endhour) properties respectively.
 
-The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM and the remaining hours are hidden on the UI.
+The following code example displays the Scheduler starting from the time range 7:00 AM to 6:00 PM and the remaining hours are hidden on the UI.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -153,9 +153,9 @@ The following code example displays the Scheduler starting from the time range 7
 
 ## Setting start day of the week
 
-By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#firstdayofweek) property with the values ranging from 0 to 6.
+By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#firstdayofweek) property with the values ranging from 0 to 6.
 
-> Here, Sunday is always denoted as 0, Monday as 1 and so on.
+> Here, Sunday is always denoted as `0`, Monday as `1` and so on.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,7 +173,7 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 ## Scroll to specific time and date
 
-You can manually scroll to a specific time on Scheduler by making use of the [`scrollTo`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#scrollto) method as depicted in the following code example.
+You can manually scroll to a specific time on Scheduler by making use of the [`scrollTo`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#scrollto) method as depicted in the following code example.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -182,7 +182,6 @@ You can manually scroll to a specific time on Scheduler by making use of the [`s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/scroll-to-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/scroll-to-cs1/src/main.ts %}
 {% endhighlight %}
@@ -210,7 +209,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 ## See Also
 
-* [To display the current time indicator](./timescale/#highlighting-current-date-and-time)
+* [To display the current time indicator](./timescale#highlighting-current-date-and-time)
 * [To set different working hours dynamically](./how-to/set-different-work-hours)
-* [To set different working hours for each resources](./resources/#set-different-work-hours)
-* [To set different working days for each resources](./resources/#set-different-work-days)
+* [To set different working hours for each resources](./resources#set-different-work-hours)
+* [To set different working days for each resources](./resources#set-different-work-days)

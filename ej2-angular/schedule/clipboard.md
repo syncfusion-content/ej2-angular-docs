@@ -3,7 +3,7 @@ layout: post
 title: Clipboard in Angular Schedule component | Syncfusion
 description: Learn here all about Context menu in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Clipboard 
+control: Scheduler 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 # Clipboard in Angular Schedule component
 
 The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
-To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowclipboard) property to **true**.
+To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowclipboard) property to **true**.
 
->Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowkeyboardinteraction) property must be true for proper functionality of the clipboard feature.
+>Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowkeyboardinteraction) property must be true for proper functionality of the clipboard feature.
 
 ## Cut, copy and paste using keyboard
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control supports keyboard shortcuts to streamline the process of managing appointments.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control supports keyboard shortcuts to streamline appointment management:
 
 These keyboard shortcuts enable users to efficiently manage their schedules:
 
@@ -27,7 +27,7 @@ These keyboard shortcuts enable users to efficiently manage their schedules:
 | Cut       | Ctrl+X   | Move appointments to a new time slot without duplicates.         |
 | Paste     | Ctrl+V   | Place copied or cut appointments into the desired time slot.     |
 
-To use these shortcuts, simply click on the appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste the copied or cut appointment, click on the desired time slot and press **Ctrl+V**
+To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste, click a time slot and press **Ctrl+V**.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -36,21 +36,20 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/clipboard-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/clipboard-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/schedule/clipboard-cs1" %}
 
->Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
+> Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste shortcuts.
 
 ## Cut, copy, and paste using context menu
 
-You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
+You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods perform the same actions as keyboard shortcuts or context menu options.
 
-Utilize these public methods to manage appointments programmatically in Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control:
+Utilize these methods to manage appointments in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control:
 
 | Method | Parameters                     | Description                                                                                     |
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|

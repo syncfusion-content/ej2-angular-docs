@@ -3,14 +3,14 @@ layout: post
 title: Frequently asked questions in Angular Schedule component | Syncfusion
 description: Learn here all about Frequently asked questions in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Frequently asked questions 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Frequently asked questions in Angular Schedule component
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with scheduler control.
+In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the Schedule component.
 
 ## Maximum call stack size exceeded
 
@@ -20,7 +20,7 @@ In this article, you can find some frequently asked questions and corresponding 
 
 **Solution:**
 
-The above error occurs when using scheduler views that were not imported into the project. You can resolve this issue by importing the required view modules.
+This error occurs when a scheduler views that were not imported into the project. You can resolve this issue by importing the required view modules.
 
 In the below code, `Day` option is used without injecting, So, it throws the above error. You can resolve this problem by simply injecting the day module in below code.
 
@@ -65,16 +65,16 @@ export class AppComponent {
 
 Grouping without providing any resource data will throw the following problems.
 
-* Normal(vertical) views are rendered, but you are not able to perform CRUD operations
-* Timeline views not at all render and shows empty scheduler table
+* Normal (vertical) views are rendered, but you are not able to perform CRUD operations
+* Timeline views do not render and display an empty scheduler table.
 
-So, we suggest to avoid grouping with empty resources in the scheduler.
+To avoid this, do not enable grouping when no resources are defined.
 
 ## Not providing e-field in editor template
 
-**Error:** While using editor template, value of  `e-field` is missing in editor window.
+**Error:** When using a custom editor template, the `e-field` attribute value is missing in the input elements.
 
-**Solution:** `e-field` value is mandatory, we need to add it. Please refer [here](https://ej2.syncfusion.com/angular/documentation/schedule/editor-template/#customizing-event-editor-using-template) for more info.
+**Solution:** The `e-field` attribute is mandatory for each form element in the editor template. Please refer [here](https://ej2.syncfusion.com/angular/documentation/schedule/editor-template#customizing-event-editor-using-template) for more info.
 
 ## Missing CSS reference
 
@@ -106,7 +106,7 @@ The above problem occurs when missing CSS references for the scheduler in a proj
 
 ## QuickInfoTemplate at bottom
 
-When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventclick) events and below code snippet.
+When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#quickinfotemplates) in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventclick) events and below code snippet.
 
 ```typescript
 
@@ -133,7 +133,7 @@ When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/document
 
 ![Locale import issue](./images/locale-import-issue.png)
 
- While using [`locale`](https://ej2.syncfusion.com/angular/documentation/schedule/localization/) in scheduler, not importing the required culture files properly throws the problem.
+ While using [`locale`](https://ej2.syncfusion.com/angular/documentation/schedule/localization) in scheduler, not importing the required culture files properly throws the problem.
 
 **Solution:** Properly add and import the culture files(numberingSystems, timeZoneNames, loadCldr, L10n etc.,) in your project will resolve the problem.
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Half yearly view in Angular Schedule component | Syncfusion
+title: Half-yearly view in Angular Schedule component | Syncfusion
 description: Learn here all about Half yearly view in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Half yearly view 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Half yearly view in Angular Schedule component
+# Half-yearly view in Angular Schedule component
 
-The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
+The year view of the Schedule component displays all 365 days and their appointments for a given year. You can customize this view by using the following properties:
 
 * [`firstMonthOfYear`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#firstmonthofyear)
 * [`monthsCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#monthscount)
 * [`monthHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#monthheadertemplate)
 
-In the following code example, you can see how to render only the last six months of a year in the scheduler. To start with the month of  June, `firstMonthYear` is set to 6 and `monthsCount` is set to 6 to render only 6 months.
+In the following code example, you can see how to render only the last six months of a year in the Schedule component. To start with June, set `firstMonthOfYear` to 6 and `monthsCount` to 6 to render six consecutive months.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

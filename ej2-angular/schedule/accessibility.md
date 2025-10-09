@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Schedule component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
