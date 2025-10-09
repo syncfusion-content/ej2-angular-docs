@@ -314,7 +314,7 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 
 ## Align the text of content
 
-You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#textalign) property in Gantt compoenent to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
+You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#textalign) property in Gantt component to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
 
 *	**Left**: Aligns the text to the left (default).
 *	**Center**: Aligns the text to the center.
@@ -425,7 +425,7 @@ You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt c
 {% include code-snippet/gantt/columns/columnlock-cs1/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnlock-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

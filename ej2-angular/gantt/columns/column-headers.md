@@ -26,7 +26,7 @@ By default, column headers in the Gantt chart display the value defined in the [
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,7 +51,7 @@ In this example, custom elements are applied to both the **TaskName** and **Dura
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,7 +78,7 @@ You can align the column header text in the Syncfusion<sup style="font-size:70%"
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,7 +110,7 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,7 +144,7 @@ To change the height dynamically, use the `getHeaderContent` method to access th
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -175,7 +175,7 @@ You can also change header text programmatically using the following methods:
 These methods allow access to the column or header element, where you can update the `headerText` or `textContent` as needed.
 
 > * After modifying header text, call `refreshHeader` to reflect the changes.  
-> * Column UIDs are auto-generated and may change when the chart is refreshed
+> * Column UID's are auto-generated and may change when the chart is refreshed
 
 Here is an example of how to change the header text of a column using the `getColumnByField` method:
 
@@ -189,7 +189,7 @@ Here is an example of how to change the header text of a column using the `getCo
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,7 +197,7 @@ Here is an example of how to change the header text of a column using the `getCo
 
 **Changing the header text of all columns:**
 
-To modify the header text of all columns in the Gantt compoenent, iterate through the columns collection and set the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property for each column. This approach ensures consistent customization across all headers.
+To modify the header text of all columns in the Gantt component, iterate through the columns collection and set the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) property for each column. This approach ensures consistent customization across all headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -207,7 +207,7 @@ To modify the header text of all columns in the Gantt compoenent, iterate throug
 {% include code-snippet/gantt/columns/columnheader-cs7/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -253,7 +253,7 @@ public setHeaderHeight(args) {
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnheader-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -697,7 +697,7 @@ The following example demonstrates how to use the `beforeRender` event to add a 
 {% include code-snippet/gantt/columns/customtooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/customtooltip-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -711,7 +711,7 @@ To modify the appearance of column headers in the Gantt, follow the steps below.
 
 ### Using CSS
 
-You can apply styles to Gantt compoenent header cells using the **.e-headercell** class. This allows you to customize font, background color, and other visual properties.
+You can apply styles to Gantt component header cells using the **.e-headercell** class. This allows you to customize font, background color, and other visual properties.
 
 ```CSS
   .e-gantt .e-headercell {
@@ -726,16 +726,15 @@ You can apply styles to Gantt compoenent header cells using the **.e-headercell*
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/app.component.css %}
+{% include code-snippet/gantt/columns/headerstyle-cs1/src/app.component.css %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/headerstyle-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -769,16 +768,15 @@ The following example demonstrates how to style the **TaskName** and **Duration*
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/app.component.css %}
+{% include code-snippet/gantt/columns/headerstyle-cs2/src/app.component.css %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/headerstyle-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -810,7 +808,7 @@ The following example demonstrates how to apply custom styles to specific column
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/headerstyle-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -834,7 +832,7 @@ The following example demonstrates how to check if the current header column is 
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/headerstyle-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -856,7 +854,7 @@ The following example demonstrates how to update the header text of the column a
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/headerstyle-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

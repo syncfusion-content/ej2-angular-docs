@@ -28,7 +28,7 @@ The following example sets a percentage-based splitter position. This configurat
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/src/data.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 

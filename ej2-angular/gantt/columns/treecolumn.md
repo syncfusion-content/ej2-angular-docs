@@ -51,7 +51,7 @@ To apply custom icons, override the default styles with the following CSS:
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,7 +71,7 @@ In the following demonstration, indentation is applied by dynamically adding a C
 {% include code-snippet/gantt/columns/treecolumn-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,7 +89,7 @@ You can collapse all parent rows during initial rendering by setting the [collap
 {% include code-snippet/gantt/columns/treecolumn-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,7 +110,7 @@ You can retain the expanded or collapsed state of parent rows during initial ren
 {% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,7 +136,7 @@ In the following demo, the steps mentioned above are used to persist the expande
 {% include code-snippet/gantt/columns/treecolumn-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,7 +203,7 @@ To retrieve the currently expanded rows in the Gantt component, use the [getExpa
 {% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %} 
-{% include code-snippet/gantt/columns/treecolumn-expanded --cs5/src/main.ts %}
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/data.ts %}
@@ -231,7 +231,7 @@ The following sample demonstrates how to customize expand and collapse actions i
 {% include code-snippet/gantt/columns/treecolumn-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

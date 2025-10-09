@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar in Angular Image editor component | Syncfusion
+title: Undo and Redo in Angular Image editor component | Syncfusion
 description: Learn here all about Undo-Redo in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Toolbar 

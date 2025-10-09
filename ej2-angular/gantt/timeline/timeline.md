@@ -162,7 +162,7 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/tooltip/show-weekend-cs1/src/data.ts %}
+{% include code-snippet/gantt/timeline/show-weekend-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

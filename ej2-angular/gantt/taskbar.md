@@ -314,7 +314,7 @@ The following example enables multi-taskbar:
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/tooltip/projectview-multitaskbar-cs1/src/data.ts %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -33,7 +33,7 @@ The following built-in column menu items are available:
 {% include code-snippet/gantt/columns/columnmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,7 +59,7 @@ The following example demonstrates how to add a custom column menu item to clear
 {% include code-snippet/gantt/columns/columnmenu-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,7 +79,7 @@ The following example demonstrates hiding the **Filter** item when the column me
 {% include code-snippet/gantt/columns/columnmenu-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,7 +101,7 @@ The following example demonstrates how to configure `columnMenuItems` to include
 {% include code-snippet/gantt/columns/columnmenu-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,13 +133,13 @@ To customize the column menu icon, follow these steps:
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/app.component.css %}
+{% include code-snippet/gantt/columns/columnmenu-cs5/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

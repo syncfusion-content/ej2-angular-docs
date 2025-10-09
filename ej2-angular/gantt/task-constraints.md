@@ -78,7 +78,7 @@ The following example applies a `MustStartOn` constraint:
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/task-constraints-cs1/src/data.ts %}
+{% include code-snippet/gantt/task-scheduling/task-constraints-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,7 +121,7 @@ The following example disables the `MustStartOn` violation popup:
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/task-constraints-cs2/src/data.ts %}
+{% include code-snippet/gantt/task-scheduling/task-constraints-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 

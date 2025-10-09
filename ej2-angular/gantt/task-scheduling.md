@@ -123,7 +123,7 @@ The following code snippet explains how to define the working time range for the
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/working-timerange-cs1/src/data.ts %}
+{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,7 +151,7 @@ The following code snippet explains how to define the week working time range fo
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/week-workingtime-cs1/src/data.ts %}
+{% include code-snippet/gantt/task-scheduling/week-workingtime-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -177,7 +177,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/non-workingdays-cs1/src/data.ts %}
+{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

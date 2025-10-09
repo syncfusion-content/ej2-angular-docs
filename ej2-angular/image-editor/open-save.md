@@ -290,3 +290,8 @@ The [`created`](https://ej2.syncfusion.com/angular/documentation/api/image-edito
 ### Destroyed event 
 
 The [`destroyed`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#destroyed) event is triggered once the Image Editor component is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active. 
+
+## See Also
+
+* [Show Notification After Image Loads](https://support.syncfusion.com/kb/article/21313/how-to-show-notification-after-image-loads-in-angular-image-editor)
+* [Load Blob Data into Angular Image Editor for Preview](https://support.syncfusion.com/kb/article/21307/how-to-load-blob-data-into-angular-image-editor-for-preview)
