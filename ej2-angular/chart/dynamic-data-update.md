@@ -84,3 +84,7 @@ To remove a data point from the existing data source, simply click on the desire
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/dynamic-update/click-add-point" %}
+
+## See Also
+
+* [Change a Specific Series Data When Clicking Another Chart Legend](https://support.syncfusion.com/kb/article/21512/how-to-change-a-particular-series-data-when-clicking-another-chart-legend)

@@ -102,5 +102,7 @@ By setting text div in the `content` option of annotation object you can add sub
 
 ## See Also
 
-* [Show total stacking values in data label](./how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)
-* [Create footer and watermark for chart](./how-to/footer/#create-footer-and-watermark-for-chart)
+* [Show total stacking values in data label](./how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
+* [Create footer and watermark for chart](./how-to/footer#create-footer-and-watermark-for-chart)
+* [Dynamically Update X-Axis Annotation Content](https://support.syncfusion.com/kb/article/21478/how-to-dynamically-update-x-axis-annotation-content-on-point-click-in-angular-chart)
+* [Add Clickable Annotation Text](https://support.syncfusion.com/kb/article/21318/how-to-add-clickable-annotation-text-in-angular-accumulation-chart)
