@@ -286,5 +286,6 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)
+* [Avoid Duplicate Labels for Equal Values](https://support.syncfusion.com/kb/article/21242/how-to-avoid-duplicate-labels-for-equal-values-in-angular-chart)

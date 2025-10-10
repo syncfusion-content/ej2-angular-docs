@@ -174,7 +174,9 @@ The [`showNearestTooltip`](https://ej2.syncfusion.com/angular/documentation/api/
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs13" %}
 
-## See also
+## See Also
 
-* [Format the tooltip value](./how-to/tool-tip-format/#format-the-tooltip-value)
-* [Create a table in tooltip](./how-to/tool-tip-table/#create-a-table-in-tooltip)
+* [Format the tooltip value](./how-to/tool-tip-format#format-the-tooltip-value)
+* [Create a table in tooltip](./how-to/tool-tip-table#create-a-table-in-tooltip)
+* [Hide Tooltip for Truncated Data Labels](https://support.syncfusion.com/kb/article/21374/how-to-hide-tooltip-for-truncated-data-labels-in-angular-pie-chart)
+* [Hide Tooltips for Truncated Axis Labels](https://support.syncfusion.com/kb/article/21369/how-to-hide-tooltips-for-truncated-axis-labels-in-angular-charts)

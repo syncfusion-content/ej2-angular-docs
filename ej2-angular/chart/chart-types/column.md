@@ -384,7 +384,8 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/column-cs51" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)
+* [Apply Corner Radius to Specific Points in Column Series](https://support.syncfusion.com/kb/article/21476/how-to-apply-rounded-corners-to-column-series-points-in-angular-chart)
