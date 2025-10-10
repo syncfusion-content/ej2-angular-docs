@@ -133,3 +133,7 @@ You can export the rendered chart data to Excel in either `XLSX` or `CSV` format
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/export-cs1" %}
+
+## See Also
+
+* [Export Angular Chart with Data Label Template](https://support.syncfusion.com/kb/article/21531/how-to-export-chart-with-datalabel-template-using-angular-chart)

@@ -235,5 +235,6 @@ You can calculate the percentage value based on the sum for each series using th
 
 ## See Also
 
-* [Show total stacking values in data label](./how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)
-* [Prevent the data label when the data value is 0](./how-to/prevent-data-label/#prevent-the-data-label-when-the-data-value-is-0)
+* [Show total stacking values in data label](./how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
+* [Prevent the data label when the data value is 0](./how-to/prevent-data-label#prevent-the-data-label-when-the-data-value-is-0)
+* [Add Images to Each Data Point](https://support.syncfusion.com/kb/article/21529/how-to-add-images-to-each-data-point-in-angular-chart-component)

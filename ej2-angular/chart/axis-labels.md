@@ -281,3 +281,7 @@ Line break feature used to customize the long axis label text into multiple line
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs20" %}
+
+## See Also
+
+* [Allow Only Integer Values in the Y-Axis Labels](https://support.syncfusion.com/kb/article/21487/how-to-allow-only-integer-values-in-the-y-axis-labels-in-angular-chart)

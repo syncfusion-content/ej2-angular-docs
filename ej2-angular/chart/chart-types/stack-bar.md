@@ -372,7 +372,9 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)
+* [Add a Header to the Tooltip in Angular Stacked Bar Chart](https://support.syncfusion.com/kb/article/21516/how-to-add-a-header-to-the-tooltip-in-angular-stacked-bar-chart)
+* [Dynamically Add Series to Angular Chart](https://support.syncfusion.com/kb/article/21485/how-to-dynamically-add-series-to-angular-chart-component)
