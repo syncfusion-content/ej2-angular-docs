@@ -3,7 +3,7 @@ layout: post
 title: Virtual scrolling in Angular Schedule component | Syncfusion
 description: Learn here all about Virtual scrolling in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: scheduler
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
