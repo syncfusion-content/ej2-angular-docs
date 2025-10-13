@@ -9,6 +9,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;

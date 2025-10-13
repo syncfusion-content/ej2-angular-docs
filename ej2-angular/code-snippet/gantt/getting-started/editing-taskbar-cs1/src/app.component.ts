@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
     public toolbar?: string[];
     public editSettings?: EditSettingsModel;
 
-
     public ngOnInit(): void {
         this.data = [
             {

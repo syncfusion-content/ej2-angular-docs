@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -9,6 +9,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskFields" (queryTaskbarInfo) = "queryTaskbarInfo($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public taskFields?: object;
@@ -50,13 +51,19 @@ export class AppComponent implements OnInit{
             child: 'subtasks'
         };
     }
-    public queryTaskbarInfo(args: any) {
-        if (args.data.Progress == 50) {
+    
+    public queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) {
+        const data = args.data as CustomGanttData;
+        if (data.Progress === 50) {
             args.progressBarBgColor = "red";
-        } else if (args.data.Progress == 70) {
+        } else if (data.Progress === 70) {
             args.progressBarBgColor = "yellow";
-        } else if (args.data.Progress == 80) {
+        } else if (data.Progress === 80) {
             args.progressBarBgColor = "lightgreen";
         }
-    };
+    }
+}
+
+interface CustomGanttData {
+    Progress?: number;
 }

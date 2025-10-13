@@ -18,7 +18,6 @@ import { GanttData } from './data';
         Reorder Multiple Columns
       </button>
     </div>
-
     <div style="margin-top: 10px;">
       <ejs-gantt #gantt height="430px" [dataSource]="data" [allowReordering]="true" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
         <e-columns>
@@ -33,7 +32,7 @@ import { GanttData } from './data';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public gantt?: GanttComponent;
+  @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
@@ -54,10 +53,10 @@ export class AppComponent implements OnInit {
   }
 
   public reorderSingleColumnUsingFieldName(): void {
-    this.gantt?.reorderColumns('TaskName', 'TaskID');
+    this.ganttInstance?.reorderColumns('TaskName', 'TaskID');
   }
 
   public reorderMultipleColumnsUsingFieldName(): void {
-    this.gantt?.reorderColumns(['TaskName', 'StartDate', 'Duration'], 'TaskID');
+    this.ganttInstance?.reorderColumns(['TaskName', 'StartDate', 'Duration'], 'TaskID');
   }
 }

@@ -10,6 +10,7 @@ import { editingData } from './data';
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [timelineSettings]="timelineSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;

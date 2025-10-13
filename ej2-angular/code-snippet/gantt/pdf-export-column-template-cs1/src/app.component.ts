@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, GanttComponent, ToolbarItem, PdfExportProperties, ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, GanttComponent, ToolbarItem, PdfExportProperties, ToolbarService, PdfExportService, SelectionService, PdfQueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-gantt'
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingResources } from './data';
 
@@ -147,8 +147,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  public pdfQueryCellInfo(args: any): void {
-    if (args.column.headerText === 'Resources') {
+  public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
+    if ((args.column as Column).headerText === 'Resources') {
       {
         args.image = {
           height: 40,
@@ -157,7 +157,7 @@ export class AppComponent implements OnInit {
         };
       }
     }
-    if (args.column.headerText === 'Email ID') {
+    if ((args.column as Column).headerText === 'Email ID') {
       args.hyperLink = {
         target: 'mailto:' + (args as any).data.taskData.EmailId,
         displayText: (args as any).data.taskData.EmailId,

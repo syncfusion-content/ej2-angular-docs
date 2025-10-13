@@ -42,7 +42,7 @@ The accessibility compliance for the Gantt component provides detailed insight i
 
 ### WCAG 2.2 compliance details
 
-The Gantt component achieves **Level AA compliance** for most WCAG 2.2 criteria. The "Intermediate" rating reflects specific limitations including complex data relationships where advanced dependency visualizations may not provide complete programmatic relationships for assistive technologies, dynamic content updates where certain real-time data changes in large datasets may require additional ARIA live region implementation, and custom templates where user-defined templates may require additional accessibility considerations depending on content complexity.
+The Gantt component achieves **Level AA compliance** for most WCAG 2.2 criteria. The **Intermediate** rating reflects specific limitations including complex data relationships where advanced dependency visualizations may not provide complete programmatic relationships for assistive technologies, dynamic content updates where certain real-time data changes in large datasets may require additional ARIA live region implementation, and custom templates where user-defined templates may require additional accessibility considerations depending on content complexity.
 
 
 ## WAI-ARIA attributes
@@ -65,8 +65,8 @@ The Gantt component implements comprehensive [WAI-ARIA](https://www.w3.org/WAI/A
 | Attributes | Purpose | Dynamic Behavior |
 | --- | --- | --- |
 | `aria-label` | Provides descriptive information for UI elements including timeline cells, taskbars, labels, dependency lines, and event markers | Dynamically updates based on task names, dates, progress, and relationships |
-| `aria-selected` | Applied to Gantt chart rows with a default value of `false`. Changes to `true` when users select a grid cell or task | Updates during selection changes to maintain current selection state |
-| `aria-expanded` | Applied to parent task rows. Value changes to `true` when expanding and `false` when collapsing parent tasks | Reflects hierarchical task structure state changes |
+| `aria-selected` | Applied to Gantt chart rows with a default value of **false**. Changes to **true** when users select a grid cell or task | Updates during selection changes to maintain current selection state |
+| `aria-expanded` | Applied to parent task rows. Value changes to **true** when expanding and **false** when collapsing parent tasks | Reflects hierarchical task structure state changes |
 | `aria-grabbed` | Applied to taskbars during taskbar editing operations to indicate drag state | Activated during drag-and-drop operations for accessibility feedback |
 | `aria-describedby` | Links tasks to detailed descriptions, tooltips, or error messages | Dynamically associates contextual information with interactive elements |
 | `aria-rowindex` | Applied to grid rows to indicate position within the complete dataset | Updates based on current view and virtualization state |
@@ -113,14 +113,11 @@ The Gantt component provides accessible error handling and validation feedback p
 ```typescript
 @Component({
   template: `
-    <ejs-gantt 
-      [dataSource]="data"
-      [editSettings]="editSettings"
-      (actionFailure)="onActionFailure($event)">
+    <ejs-gantt [dataSource]="data" [editSettings]="editSettings" (actionFailure)="onActionFailure($event)">
     </ejs-gantt>
-    <div role="alert" aria-live="assertive" class="sr-only" #errorRegion></div>
-  `
+    <div role="alert" aria-live="assertive" class="sr-only" #errorRegion></div>`
 })
+
 export class AccessibleGanttComponent {
   @ViewChild('errorRegion') errorRegion: ElementRef;
 

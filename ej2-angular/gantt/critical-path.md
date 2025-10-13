@@ -36,7 +36,7 @@ The component uses Critical Path Method (CPM) principles to identify critical ta
 
 Critical path functionality requires the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule) to be injected in the providers array. The data source must contain tasks with valid start dates, end dates, and task dependencies properly mapped through the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields).
 
-Enable critical path display by setting [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) to `true`, or add the `CriticalPath` option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) array to allow interactive toggling. The [getCriticalTasks()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getcriticaltasks) method retrieves all tasks identified as critical at runtime.
+Enable critical path display by setting [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) to **true**, or add the `CriticalPath` option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) array to allow interactive toggling. The [getCriticalTasks()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getcriticaltasks) method retrieves all tasks identified as critical at runtime.
 
 The critical path recalculates automatically when task properties change, including start and end dates, duration modifications, dependency updates, or progress adjustments. This ensures the visualization remains accurate throughout project management workflows.
 
@@ -58,7 +58,7 @@ The following example demonstrates enabling critical path analysis:
   
 {% previewsample "page.domainurl/samples/gantt/criticalpath/default-cs1" %}
 
-The code enables critical path analysis by setting `enableCriticalPath` to `true` and injecting the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
+The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
 
 ## Customizing critical path appearance
 

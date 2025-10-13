@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Taskbar in Angular Gantt component
 
-The taskbar in the Angular Gantt component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarheight) for sizing and [queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing`](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) and [taskbarEdited`](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbaredited) for validation. 
+The taskbar in the Angular Gantt component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbaredited) for validation. 
 
 ## Customize taskbar height
 
-Taskbar height for child and parent tasks is set using the [taskbarHeight`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarheight) property, which accepts pixel values and must be less than [rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) to avoid overflow.
+Taskbar height for child and parent tasks is set using the [taskbarHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarheight) property, which accepts pixel values and must be less than [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) to avoid overflow.
 
 The following example sets a custom taskbar height:
 
@@ -34,7 +34,7 @@ This code applies a 40px height to taskbars, ensuring visual consistency while m
 
 ## Apply conditional formatting
 
-Conditional formatting replaces default taskbar appearance using the [queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) event, accessing task data to modify colors, progress bars, or styles based on criteria like progress.
+Conditional formatting replaces default taskbar appearance using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) event, accessing task data to modify colors, progress bars, or styles based on criteria like progress.
 
 The following example formats taskbars by progress:
 
@@ -54,7 +54,7 @@ In the event handler, `args.data.progress` determines `args.taskbarBgColor` and 
 
 ## Customize gripper icons
 
-Gripper icons for taskbar editing (start, end, progress) are customized by targeting CSS classes like `.e-gantt-left-resize-gripper` or `.e-gantt-right-resize-gripper` with custom styles, overriding default icons for branded appearances.
+Gripper icons for taskbar editing (start, end, progress) are customized by targeting CSS classes like **.e-gantt-left-resize-gripper** or **.e-gantt-right-resize-gripper** with custom styles, overriding default icons for branded appearances.
 
 The following example changes gripper icons:
 
@@ -70,11 +70,11 @@ The following example changes gripper icons:
 
 {% previewsample "page.domainurl/samples/gantt/appearance-customization/change-gripper-icon-cs1" %}
 
-Apply CSS to `.e-gantt-progress-resize-gripper` for progress handles, ensuring touch-friendly sizing for responsive interactions.
+Apply CSS to **.e-gantt-progress-resize-gripper** for progress handles, ensuring touch-friendly sizing for responsive interactions.
 
 ## Control taskbar and notes icon visibility
 
-Taskbars and notes icons can be hidden dynamically using the [queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) and [queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) events, enabling conditional visibility based on task data (e.g., hiding milestones or empty notes for cleaner timelines). Hiding taskbars affects only the timeline element, not the row or labels, and requires `taskFields.notes` for notes icon rendering.
+Taskbars and notes icons can be hidden dynamically using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) and [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) events, enabling conditional visibility based on task data (e.g., hiding milestones or empty notes for cleaner timelines). Hiding taskbars affects only the timeline element, not the row or labels, and requires `taskFields.notes` for notes icon rendering.
 
 The following example hides taskbars for specific tasks and notes icons for empty notes:
 
@@ -88,9 +88,9 @@ import { GanttModule, IQueryTaskbarInfoEventArgs, QueryCellInfoEventArgs } from 
     selector: 'app-root',
     template: `
         <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskFields"  (queryTaskbarInfo)="queryTaskbarInfo($event)"(queryCellInfo)="queryCellInfo($event)">
-        </ejs-gantt>
-    `,
+        </ejs-gantt>`,
 })
+
 export class AppComponent {
     public data: object[] = [
         { TaskId: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
@@ -131,11 +131,11 @@ export class AppComponent {
 }
 ```
 
-This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and notes icons for empty `Info` fields, using `queryTaskbarInfo` and `queryCellInfo`. The `.e-notes-info` class ensures robust icon targeting, and `taskFields.notes` enables notes rendering.
+This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and notes icons for empty `Info` fields, using `queryTaskbarInfo` and `queryCellInfo`. The **.e-notes-info** class ensures robust icon targeting, and `taskFields.notes` enables notes rendering.
 
 ## Prevent taskbar editing for specific tasks
 
-Taskbar editing, including dragging, resizing, or adding dependencies, can be prevented for specific tasks (e.g., locked milestones or completed tasks) using the [actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event for validation and [queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) to hide editing UI elements like grippers and connector points. This ensures visual and functional restrictions, with ARIA attributes updated for accessibility.
+Taskbar editing, including dragging, resizing, or adding dependencies, can be prevented for specific tasks (e.g., locked milestones or completed tasks) using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event for validation and [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querytaskbarinfo) to hide editing UI elements like grippers and connector points. This ensures visual and functional restrictions, with ARIA attributes updated for accessibility.
 
 The following example prevents editing for Task ID 4:
 
@@ -149,19 +149,9 @@ import { GanttModule, IActionBeginEventArgs, IQueryTaskbarInfoEventArgs, EditSer
     standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-gantt 
-            id="ganttDefault" 
-            height="430px" 
-            [dataSource]="taskData" 
-            [taskFields]="taskSettings" 
-            [labelSettings]="labelSettings" 
-            [projectStartDate]="projectStartDate" 
-            [projectEndDate]="projectEndDate" 
-            [editSettings]="editSettings"
-            (actionBegin)="actionBegin($event)" 
-            (queryTaskbarInfo)="queryTaskbarInfo($event)">
-        </ejs-gantt>
-    `,
+        <ejs-gantt id="ganttDefault" height="430px" [dataSource]="taskData" [taskFields]="taskSettings"  [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" 
+        [editSettings]="editSettings" (actionBegin)="actionBegin($event)" (queryTaskbarInfo)="queryTaskbarInfo($event">
+        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None,
     styles: [
         .e-gantt-chart .e-prevent-reschedule .e-right-resize-gripper,
@@ -175,7 +165,7 @@ import { GanttModule, IActionBeginEventArgs, IQueryTaskbarInfoEventArgs, EditSer
         .e-gantt-chart .e-prevent-add-relation-right .e-right-connectorpoint-outer-div {
             display: none !important;
         }
-    `]
+    ]
 })
 
 export class AppComponent {
@@ -220,7 +210,7 @@ export class AppComponent {
             'ChildDrag', 'ProgressResizing', 'LeftResizing', 'RightResizing',
             'ConnectorPointLeftDrag', 'ConnectorPointRightDrag'
         ].includes(args.taskBarEditAction)) {
-            args.cancel = true; // Prevent editing for Task ID 4
+            args.cancel = true; // Prevent editing for Task ID 4.
         }
     }
 }
@@ -230,7 +220,7 @@ This code prevents dragging, resizing, and dependency changes for Task ID 4 by c
 
 ## Customize taskbar templates
 
-Taskbar templates allow full replacement of the default taskbar UI, enabling custom designs with elements like progress bars, badges, or icons. Use the [taskbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbartemplate) property for child tasks, [parentTaskbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#parenttaskbartemplate) for parents, [milestoneTemplate`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#milestonetemplate) for milestones. The template receives `data` (task object) and `ganttProperties` (e.g., width, progress), with `calculateProgressWidth` for dynamic sizing. Integrate with [queryTaskbarInfo`](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) for conditional logic or styling.
+Taskbar templates allow full replacement of the default taskbar UI, enabling custom designs with elements like progress bars, badges, or icons. Use the [taskbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbartemplate) property for child tasks, [parentTaskbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#parenttaskbartemplate) for parents, [milestoneTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#milestonetemplate) for milestones. The template receives `data` (task object) and `ganttProperties` (e.g., width, progress), with `calculateProgressWidth` for dynamic sizing. Integrate with [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) for conditional logic or styling.
 
 The following example customizes the taskbar template with a progress bar and notification badge showing progress percentage:
 
@@ -260,9 +250,9 @@ import { GanttModule, IGanttData } from '@syncfusion/ej2-angular-gantt';
                     <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap">{{ data.ganttProperties.progress }}%</span>
                 </div>
             </div>
-        </ng-template>
-    `
+        </ng-template>`
 })
+
 export class AppComponent {
     public calculateProgressWidth(data: IGanttData): number {
         return (data.ganttProperties.progress * data.ganttProperties.width) / 100;
@@ -300,7 +290,7 @@ This code creates a custom taskbar with a progress bar sized by *calculateProgre
 
 ## Enable multi-taskbar support
 
-In project view, multi-taskbar support, enabled by [enableMultiTaskbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablemultitaskbar), renders parent taskbars summarizing child progress when collapsed, providing aggregated visualization.
+In project view, multi-taskbar support, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablemultitaskbar), renders parent taskbars summarizing child progress when collapsed, providing aggregated visualization.
 
 The following example enables multi-taskbar:
 
@@ -324,7 +314,7 @@ This feature aggregates child progress in parent taskbars, updating dynamically 
 
 ## Customize connector lines
 
-Connector lines for dependencies are styled using [connectorLineWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) for thickness and [connectorLineBackground`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground) for color, enhancing dependency visibility.
+Connector lines for dependencies are styled using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) for thickness and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground) for color, enhancing dependency visibility.
 
 The following example customizes connectors:
 
@@ -344,7 +334,7 @@ These properties apply to all connectors, with the `queryTaskbarInfo` event allo
 
 ## Configure tooltips
 
-Tooltips for taskbars, connectors, baselines, and event markers are enabled by default via [tooltipSettings.showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#showtooltip), set to `true`. Disable for specific elements or customize content with templates.
+Tooltips for taskbars, connectors, baselines, and event markers are enabled by default via [tooltipSettings.showTooltip](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#showtooltip), set to **true**. Disable for specific elements or customize content with templates.
 
 The following example enables tooltips:
 
@@ -364,8 +354,10 @@ Tooltips display on hover, with touch-and-hold support for mobile via the toolti
 
 ## Customize tooltip templates
 
+You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/) configuration:
+
 ### Taskbar tooltip
-Taskbar tooltips are customized using [tooltipSettings.taskbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#taskbar) template, accessing task data for formatted content.
+Taskbar tooltips are customized using [tooltipSettings.taskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#taskbar) template, accessing task data for formatted content.
 
 The following example customizes taskbar tooltips:
 
@@ -385,10 +377,10 @@ The following example customizes taskbar tooltips:
 
 {% previewsample "page.domainurl/samples/gantt/tooltip/taskbar-cs1" %}
 
-The template uses `data` to display fields like `TaskName` and `Progress`, ensuring responsive display.
+The template uses `data` to display fields like **TaskName** and **Progress**, ensuring responsive display.
 
 ### Connector line tooltip
-Connector tooltips, customized via [tooltipSettings.connectorLine`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#connectorline), show dependency details like type and offset.
+Connector tooltips, customized via [tooltipSettings.connectorLine](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#connectorline), show dependency details like type and offset.
 
 The following example customizes connector tooltips:
 
@@ -409,7 +401,7 @@ The following example customizes connector tooltips:
 {% previewsample "page.domainurl/samples/gantt/tooltip/dependency-cs1" %}
 
 ### Baseline tooltip
-A baseline tooltip can be customized using the [tooltipSettings.baseline`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#baseline) property.
+A baseline tooltip can be customized using the [tooltipSettings.baseline](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#baseline) property.
 
 The following example customizes baseline tooltips:
 
@@ -430,7 +422,7 @@ The following example customizes baseline tooltips:
 {% previewsample "page.domainurl/samples/gantt/tooltip/baseline-cs1" %}
 
 ### Timeline tooltip
-Timeline tooltips, customized with [tooltipSettings.timeline`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#timeline), display date details.
+Timeline tooltips, customized with [tooltipSettings.timeline](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#timeline), display date details.
 
 The following example customizes timeline tooltips:
 
@@ -452,7 +444,7 @@ The following example customizes timeline tooltips:
 
 ## Tooltip Touch interaction
 
-To perform `touch and hold` action on a element, refer to [tooltip popup`](tooltip/#tooltip).
+To perform touch and hold action on a element, refer to [tooltip popup](tooltip/#tooltip).
 
 ## See also
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)

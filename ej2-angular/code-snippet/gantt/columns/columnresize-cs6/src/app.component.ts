@@ -16,7 +16,6 @@ import { GanttData } from './data';
       <ejs-dropdownlist style="margin-top: 5px;" index="0" width="150" [dataSource]="ddlData" (change)="valueChange($event)">
       </ejs-dropdownlist>
     </div>
-
     <ejs-gantt #gantt height="430px" [allowResizing]="true" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
       <e-columns>
         <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
@@ -53,7 +52,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  valueChange(args: ChangeEventArgs): void {
+  public valueChange(args: ChangeEventArgs): void {
     (this.ganttInstance as GanttComponent).treeGrid.grid.resizeSettings.mode = args.value as ResizeMode;
   }
 }

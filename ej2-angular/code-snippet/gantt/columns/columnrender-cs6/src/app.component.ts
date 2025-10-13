@@ -19,9 +19,9 @@ import { GanttData } from './data';
       </e-columns>
     </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
-
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
@@ -57,7 +57,6 @@ export class AppComponent implements OnInit {
   return `${data[field as keyof GanttTask]} - ${data.TaskID}`;
   };
 }
-
 
 export interface GanttTask {
   TaskID: number;

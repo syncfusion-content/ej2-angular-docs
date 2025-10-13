@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule, ContextMenuService, ContextMenuItem } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ToolbarItem, EditSettingsModel, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { MenuItemModel, ContextMenu } from '@syncfusion/ej2-navigations';
-import { Gantt } from '@syncfusion/ej2-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
@@ -18,13 +15,14 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
        <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -79,36 +77,38 @@ export class AppComponent {
         {
             text: 'Top'
         }];
+
     public select(args: any) {
         if (args.item.text === "Bottom") {
-            this.ganttObj.editSettings.newRowPosition = "Bottom";
-            this.ganttObj.openAddDialog();
+            this.ganttInstance.editSettings.newRowPosition = "Bottom";
+            this.ganttInstance.openAddDialog();
         } else if (args.item.text === "Above") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Above";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Above";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Below") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Below";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Below";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Child") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Child";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Child";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Top") {
-            this.ganttObj.editSettings.newRowPosition = "Top";
-            this.ganttObj.openAddDialog();
+            this.ganttInstance.editSettings.newRowPosition = "Top";
+            this.ganttInstance.openAddDialog();
         }
     }
+
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_add') {
             let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0"), ContextMenu) as ContextMenu;

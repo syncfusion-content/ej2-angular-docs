@@ -11,6 +11,7 @@ import { GanttData } from './data';
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;

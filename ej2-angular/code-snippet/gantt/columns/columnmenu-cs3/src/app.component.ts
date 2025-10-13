@@ -46,17 +46,16 @@ export class AppComponent implements OnInit {
     };
   }
 
-  columnMenuOpen(args: ColumnMenuOpenEventArgs): void {
+  public columnMenuOpen(args: ColumnMenuOpenEventArgs): void {
     args.items.forEach(item => {
       (item as CustomMenuItemModel).hide = item.text === 'Filter' && args.column?.field === 'TaskName';
     });
   }
 
-  columnMenuClick(args: ColumnMenuClickEventArgs):void  {
+  public columnMenuClick(args: ColumnMenuClickEventArgs): void {
     this.message = `columnMenuClick event is triggered`;
   }
 }
-
 
 interface CustomMenuItemModel extends MenuItemModel {
   hide?: boolean;

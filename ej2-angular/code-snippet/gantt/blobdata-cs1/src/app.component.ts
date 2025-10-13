@@ -13,6 +13,7 @@ import { editingData } from './data';
        (toolbarClick)="toolbarClick($event)"  (excelExportComplete)='excelExpComplete($event)' (pdfExportComplete)='pdfExpComplete($event)' allowPdfExport='true' allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None,
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttChart?: GanttComponent;
     public data?: object[];

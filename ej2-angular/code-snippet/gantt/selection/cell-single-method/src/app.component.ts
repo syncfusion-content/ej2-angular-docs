@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
         };
     }
 
-    click(): void {
+    public click(): void {
         const value = (this.textbox as TextBoxComponent).element.value as string;
         const cellIndex = parseInt(value, 10);
         if (!isNaN(cellIndex)) {

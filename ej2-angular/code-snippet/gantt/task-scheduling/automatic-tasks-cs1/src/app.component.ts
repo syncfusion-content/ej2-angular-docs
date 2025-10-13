@@ -11,6 +11,7 @@ import { GanttModule, ToolbarService, EditService, SelectionService } from '@syn
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;

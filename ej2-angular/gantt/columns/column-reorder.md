@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reorder columns in Angular Gantt Chart component | Syncfusion
-description: Learn how to reorder columns in the Syncfusion Angular Gantt Chart component using drag-and-drop or programmatic methods. Customize reorder behavior and restrict reordering for specific columns.
+description: Learn how to reorder columns in the Syncfusion Angular Gantt Chart using drag-and-drop or code, and how to restrict reordering for specific columns.
 platform: ej2-angular
 control: Column reorder
 documentation: ug
@@ -28,12 +28,13 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnreorder-cs1" %}
 
-> You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.
-> After columns are reordered, their data positions also change. Ensure any dependent logic is updated to reflect the new column order.
+> * You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.
+> * After columns are reordered, their data positions also change. Ensure any dependent logic is updated to reflect the new column order.
+> * You can disable the reordering of a particular column by setting the `GanttColumn.AllowReordering` property to **false**.
 
 ## Disable column reordering for specific columns
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, columns are reorderable by default. To restrict reordering for a specific column, set its [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowreordering) property to **false**.  
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, columns are reordered by default. To restrict reordering for a specific column, set its [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowreordering) property to **false**.  
 
 The following example demonstrates how reordering is restricted for the **TaskName** column.
 
@@ -110,7 +111,7 @@ You can reorder single or multiple columns in the Gantt component using the [reo
 - **fieldName**: The field name of the column to move. 
 - **toIndex**: The index where the column should be placed.
 
-The following demonstrates how to reorder a single column `'TaskID'` to index **3**, or move multiple columns `'TaskID', 'TaskName'` to index **3**.
+The following demonstrates how to reorder a single column **TaskID** to index **3**, or move multiple columns **TaskID**, **TaskName** to index **3**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

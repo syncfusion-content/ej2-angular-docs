@@ -29,7 +29,6 @@ export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
-
   public columnDescriptions: { [key: string]: string } = {
     'Task ID': 'A unique ID for the task.',
     'Task Name': 'The name of the task.',

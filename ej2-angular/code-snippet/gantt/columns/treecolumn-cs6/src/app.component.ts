@@ -23,6 +23,7 @@ import { GanttData } from './data';
         </div>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
   public data?: object[];
   public taskSettings?: object;

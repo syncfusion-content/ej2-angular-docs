@@ -33,7 +33,7 @@ Install these dependencies using the appropriate npm command based on your Angul
 
 ## Setup angular environment
 
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and configure an Angular application. Install the CLI globally with:
+Use the [Angular CLI](https://github.com/angular/angular-cli) to create and configure an Angular application. Install the CLI globally with:
 
 ```bash
 npm install -g @angular/cli
@@ -107,6 +107,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     selector: 'app-root',
     template: `<ejs-gantt></ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
     ngOnInit(): void {}
 }
@@ -116,7 +117,7 @@ This basic setup renders an empty Gantt chart. Configure additional properties l
 
 ## Bind data to Gantt
 
-The Gantt component binds to project data through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, which accepts an array of JavaScript objects or a `DataManager` instance. The [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) property maps data source fields to task attributes (e.g., `id`, `name`, `startDate`, `duration`).
+The Gantt component binds to project data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, which accepts an array of JavaScript objects or a `DataManager` instance. The [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) property maps data source fields to task attributes (e.g., id, name, startDate, duration).
 
 The following example demonstrates binding hierarchical task data:
 
@@ -137,13 +138,13 @@ The code defines a data source with parent and child tasks, mapping fields like 
 ## Inject feature modules
 
 Enhance the Gantt component by injecting feature modules to enable capabilities like editing, sorting, and filtering. Inject modules into the `providers` array of the root `NgModule` or component. Common modules include:
-- [`EditService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule): Enables task editing via cells, dialogs, or taskbars.
-- [`FilterService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtermodule): Supports column-based menu filtering.
-- [`SortService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule): Allows task sorting by column values.
-- [`SelectionService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule): Enables row and cell selection.
-- [`ToolbarService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar): Adds toolbar actions like Add, Edit, and Delete.
-- [`DayMarkersService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#daymarkersmodule): Highlights specific days in the timeline.
-- [`CriticalPathService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule): Identifies and highlights critical tasks.
+- [EditService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule): Enables task editing via cells, dialogs, or taskbars.
+- [FilterService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtermodule): Supports column-based menu filtering.
+- [SortService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#sortmodule): Allows task sorting by column values.
+- [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule): Enables row and cell selection.
+- [ToolbarService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar): Adds toolbar actions like Add, Edit, and Delete.
+- [DayMarkersService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#daymarkersmodule): Highlights specific days in the timeline.
+- [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule): Identifies and highlights critical tasks.
 
 The following example injects modules to enable editing, sorting, and toolbar features:
 
@@ -156,9 +157,11 @@ import { GanttModule , EditService, FilterService, SortService, ToolbarService }
     standalone: true,
     providers: [EditService, FilterService, SortService, ToolbarService],
     selector: 'app-root',
-    template: `<ejs-gantt [dataSource]="data" [taskFields]="taskFields" [toolbar]="toolbar"
-                [allowFiltering]='true' [allowSorting]= 'true'></ejs-gantt>`
+    template: `
+       <ejs-gantt [dataSource]="data" [taskFields]="taskFields" [toolbar]="toolbar" [allowFiltering]='true' [allowSorting]= 'true'>
+       </ejs-gantt>`
 })
+
 export class AppComponent {
     public data: object[] = [];
     public taskFields: object = {};
@@ -170,7 +173,7 @@ Injecting `EditService` enables task modifications, while `ToolbarService` adds 
 
 ## Configure timeline
 
-The [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) property customizes the Gantt chart’s timeline, defining time units (e.g., days, weeks) and formatting for the top and bottom tiers. Set `projectStartDate` and `projectEndDate` to establish the timeline’s range, or let the component calculate them from task data.
+The [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) property customizes the Gantt chart’s timeline, defining time units (e.g., days, weeks) and formatting for the top and bottom tiers. Set `projectStartDate` and `projectEndDate` to establish the timeline’s range, or let the component calculate them from task data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -188,7 +191,7 @@ The code configures a two-tier timeline with weekly and daily views, ensuring cl
 
 ## Enable toolbar
 
-The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property adds interactive buttons (e.g., Add, Edit, Delete, ExpandAll, CollapseAll) to the Gantt chart. Inject `ToolbarService` to enable this feature. The following example adds common toolbar actions:
+The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property adds interactive buttons (e.g., Add, Edit, Delete, ExpandAll, CollapseAll) to the Gantt chart. Inject `ToolbarService` to enable this feature. The following example adds common toolbar actions:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,11 +209,11 @@ The `toolbar` array specifies actions, and `ToolbarService` ensures their functi
 
 ## Enable editing
 
-Editing allows modification of tasks through cells, dialogs, taskbars, or dependency lines. Enable editing by setting [`editSettings.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) and [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to `true` and injecting `EditService`.
+Editing allows modification of tasks through cells, dialogs, taskbars, or dependency lines. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to **true** and injecting `EditService`.
 
 ### Cell editing
 
-Set [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to `Auto` for cell editing. Double-click a cell in the TreeGrid to edit task details. Inject `EditService` to enable this feature.
+Set [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to **Auto** for cell editing. Double-click a cell in the TreeGrid to edit task details. Inject `EditService` to enable this feature.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -228,7 +231,7 @@ The code enables cell editing, allowing inline updates to task fields like `Task
 
 ### Dialog editing
 
-Set [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to `Dialog` to edit tasks via a dialog. Double-click anywhere on the treegrid pane or chart pane to open the dialog.
+Set [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to **Dialog** to edit tasks via a dialog. Double-click anywhere on the treegrid pane or chart pane to open the dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,7 +249,7 @@ The dialog provides a comprehensive interface for editing task properties, ensur
 
 ### Taskbar editing
 
-Enable taskbar editing by setting [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to `true`. Drag or resize taskbars to adjust task start dates or durations.
+Enable taskbar editing by setting [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to **true**. Drag or resize taskbars to adjust task start dates or durations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -264,7 +267,7 @@ Taskbar editing allows intuitive adjustments to task schedules directly on the c
 
 ### Dependency editing
 
-Enable dependency editing by setting [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to `true` and mapping the [`dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields). Drag connector lines between taskbars to create or modify dependencies.
+Enable dependency editing by setting [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to **true** and mapping the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields). Drag connector lines between taskbars to create or modify dependencies.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -288,7 +291,7 @@ Task relationships (dependencies) define how tasks depend on each other, impacti
 - **Finish-to-Finish (FF)**: The successor task finishes when the predecessor finishes.
 - **Start-to-Finish (SF)**: The successor task finishes when the predecessor starts.
 
-Map the [`dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [`taskFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) to enable relationships. The component validates dependencies during rendering and editing.
+Map the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) to enable relationships. The component validates dependencies during rendering and editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -306,7 +309,7 @@ The code defines dependencies like `2FS` to link tasks, ensuring accurate schedu
 
 ## Assign resources
 
-Assign resources to tasks using the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property, which accepts a collection of resource objects with fields like `id`, `name`, and `unit`. Map these fields using [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/).
+Assign resources to tasks using the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property, which accepts a collection of resource objects with fields like id, name, and unit. Map these fields using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -322,7 +325,7 @@ Assign resources to tasks using the [`resources`](https://ej2.syncfusion.com/ang
 
 ## Enable filtering
 
-Filtering reduces visible tasks based on criteria, using menu filters for each column. Enable it by setting [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to `true` and injecting `FilterService`. Customize filtering with [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/).
+Filtering reduces visible tasks based on criteria, using menu filters for each column. Enable it by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and injecting `FilterService`. Customize filtering with [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -340,7 +343,7 @@ The code enables menu filtering, allowing tasks to be filtered by columns like `
 
 ## Enable sorting
 
-Sorting orders tasks by column values. Enable it by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) to `true` and injecting `SortService`. Customize sorting with [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/).
+Sorting orders tasks by column values. Enable it by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting) to **true** and injecting `SortService`. Customize sorting with [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -358,7 +361,7 @@ The code enables sorting by columns like `StartDate`, enhancing task organizatio
 
 ## Define event markers
 
-The [`eventMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#eventmarkers) property highlights important dates in the timeline with vertical lines and labels. Inject `DayMarkersService` and configure `day` and `label` for each marker. Invalid `day` values trigger the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event.
+The [eventMarkers](https://ej2.syncfusion.com/angular/documentation/api/gantt/#eventmarkers) property highlights important dates in the timeline with vertical lines and labels. Inject `DayMarkersService` and configure `day` and `label` for each marker. Invalid `day` values trigger the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -372,6 +375,7 @@ The [`eventMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/getting-started/event-markers-cs1/src/data.ts %}
 {% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/getting-started/event-markers-cs1" %}
 
@@ -379,7 +383,7 @@ The code adds markers for key project dates, enhancing timeline visibility. Miss
 
 ## Handle Errors
 
-The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event captures configuration errors, such as:
+The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionfailure) event captures configuration errors, such as:
 - Invalid `duration` values (non-numeric).
 - Incorrect `dependency` formats (e.g., invalid predecessor types).
 - Invalid `offset` values in dependencies.
@@ -403,6 +407,7 @@ The following example demonstrates handling a missing `isPrimaryKey` configurati
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/exception-handling/src/data.ts %}
 {% endhighlight %}
+{% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/exception-handling" %}
 

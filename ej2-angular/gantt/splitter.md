@@ -58,6 +58,7 @@ import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-a
         [highlightWeekends]="true" [selectionSettings]="selectionSettings">
         </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt') public gantt: GanttComponent;
     public data: object[];
@@ -129,8 +130,8 @@ The following example customizes the splitter’s background and hides the resiz
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, GanttComponent, EditService, SelectionService, ToolbarService, DayMarkersService } from '@syncfusion/ej2-angular-gantt';
-import { editingData, editingResources } from './data';
+import { ResizingEventArgs } from '@syncfusion/ej2-layouts';
+import { GanttModule, GanttComponent, EditService, ISplitterResizedEventArgs,SelectionService, ToolbarService, DayMarkersService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
@@ -139,17 +140,18 @@ import { editingData, editingResources } from './data';
     imports: [GanttModule]
     template: `
         <div class="control-section">
-            <ejs-gantt #gantt id="ganttContainer" height="410px" [dataSource]="data" [taskFields]="taskFields" [splitterSettings]="splitterSettings" [treeColumnIndex]="1" (dataBound)="onDataBound()" (splitterResizing)="onSplitterResizing($event)"(splitterResized)="onSplitterResized($event)">
+            <ejs-gantt #gantt height="410px" [dataSource]="data" [taskFields]="taskFields" [splitterSettings]="splitterSettings" [treeColumnIndex]="1" (dataBound)="onDataBound()" (splitterResizing)="onSplitterResizing($event)"(splitterResized)="onSplitterResized($event)">
             </ejs-gantt>
         </div>`
 })
+
 export class AppComponent implements OnInit {
-    @ViewChild('gantt') public gantt: GanttComponent;
-    public data: object[];
-    public taskFields: object;
-    public splitterSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
+    @ViewChild('gantt') public ganttInstance?: GanttComponent;
+    public data?: object[];
+    public taskFields?: object;
+    public splitterSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
 
     public ngOnInit(): void {
         this.data = [
@@ -211,7 +213,7 @@ export class AppComponent implements OnInit {
     }
 
     public onDataBound(): void {
-        const splitterBar = this.gantt.element.querySelector('.e-split-bar') as HTMLElement;
+        const splitterBar = this.ganttInstance?.element.querySelector('.e-split-bar') as HTMLElement;
         if (splitterBar) {
             splitterBar.addEventListener('mouseover', () => {
                 splitterBar.style.background = 'grey';
@@ -230,8 +232,8 @@ export class AppComponent implements OnInit {
         }
     }
 
-    public onSplitterResizing(args: any): void {
-        const splitterBar = this.gantt.element.querySelector('.e-split-bar') as HTMLElement;
+    public onSplitterResizing(args: ResizingEventArgs): void {
+        const splitterBar = this.ganttInstance?.element.querySelector('.e-split-bar') as HTMLElement;
         if (splitterBar) {
             splitterBar.style.background = 'grey';
             const resizeHandler = splitterBar.querySelector('.e-resize-handler') as HTMLElement;
@@ -241,8 +243,8 @@ export class AppComponent implements OnInit {
         }
     }
 
-    public onSplitterResized(args: any): void {
-        const splitterBar = this.gantt.element.querySelector('.e-split-bar') as HTMLElement;
+    public onSplitterResized(args: ISplitterResizedEventArgs): void {
+        const splitterBar = this.ganttInstance?.element.querySelector('.e-split-bar') as HTMLElement;
         if (splitterBar) {
             splitterBar.style.background = '#dee2e6';
             const resizeHandler = splitterBar.querySelector('.e-resize-handler') as HTMLElement;

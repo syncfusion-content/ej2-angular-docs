@@ -22,6 +22,7 @@ import { GanttData } from './data';
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
     @ViewChild('gantt') public ganttInstance?: GanttComponent;
     public data: object[] = GanttData;
@@ -43,11 +44,11 @@ export class AppComponent {
         };
     }
 
-    show(): void {
+    public show(): void {
         (this.ganttInstance as GanttComponent).showColumn(['TaskName', 'Duration'], 'field');
     }
 
-    hide(): void {
+    public hide(): void {
         (this.ganttInstance as GanttComponent).hideColumn(['TaskName', 'Duration'], 'field');
     }
 }

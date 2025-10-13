@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, SortService, ResizeService, SelectionService, ContextMenuService, EditService, GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, SortService, ResizeService,GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs ,SelectionService, ContextMenuService, EditService } from '@syncfusion/ej2-angular-gantt'
 import { ContextMenuItemModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     public taskSettings?: object;
     public editSettings?: object;
     public contextMenuItems?: (string | ContextMenuItemModel)[];
-
+ 
     public ngOnInit(): void {
         this.data = [
             {
@@ -72,7 +72,6 @@ export class AppComponent implements OnInit {
             this.ganttInstance.hideColumn(args.column!.headerText);
         }
     }
-
     public contextMenuOpen(args: ContextMenuOpenEventArgs) {
         let record = args.rowData;
         if (args.type !== 'Header') {
@@ -89,3 +88,6 @@ export class AppComponent implements OnInit {
         }
     }
 }
+
+
+

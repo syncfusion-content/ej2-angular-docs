@@ -12,6 +12,7 @@ import { projectNewData } from './data';
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;

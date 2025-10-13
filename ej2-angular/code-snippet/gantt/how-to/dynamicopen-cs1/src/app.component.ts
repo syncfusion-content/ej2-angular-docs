@@ -1,16 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, EditSettingsModel , EditService, SelectionService} from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { editingData, editingResources } from './data';
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, ButtonModule],
     providers: [EditService, SelectionService],
     standalone: true,
     selector: 'app-root',
@@ -22,7 +16,9 @@ import { editingData, editingResources } from './data';
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editDialogFields]="editDialogFields" [editSettings]="editSettings" [resourceNameMapping]= "resourceNameMapping" [resourceIDMapping]="resourceIdMapping" [resources]= "resources"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editDialogFields?: object[];
@@ -31,8 +27,7 @@ export class AppComponent {
     public resources?: object[];
     public labelSettings?: object;
     public editSettings?: EditSettingsModel;
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -62,10 +57,12 @@ export class AppComponent {
             allowTaskbarEditing: true
         };
     }
-    edit(): void {
-        this.ganttObj.editModule.dialogModule.openEditDialog(this.ganttObj.selectedRowIndex);
+
+    public edit(): void {
+        this.ganttInstance.editModule.dialogModule.openEditDialog(this.ganttInstance.selectedRowIndex);
     };
-    add(): void {
-        this.ganttObj.editModule.dialogModule.openAddDialog();
+
+    public add(): void {
+        this.ganttInstance.editModule.dialogModule.openAddDialog();
     };
 }

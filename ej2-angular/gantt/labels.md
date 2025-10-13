@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Task labels in Angular Gantt component
 
-Task labels in the Angular Gantt component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like `TaskName`, right labels after the taskbar for metrics like `Progress`, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
+Task labels in the Angular Gantt component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
 ## Configure task labels
 
-Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) (e.g., `id` to `TaskID`, `name` to `TaskName`). The component supports three label positions with specific use cases:
+Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) (e.g., id to TaskID, name to TaskName). The component supports three label positions with specific use cases:
 - [leftLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel/#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
 - [rightLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel/#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.
 - [taskLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel/#tasklabel): Overlays content like task titles or progress on taskbars, prominent but limited by taskbar width.
 
-Use template literals for formatted labels, such as `${Progress}%` for progress percentages. Ensure valid `taskFields` mappings to reference fields accurately.
+Use template literals for formatted labels, such as **${Progress}%** for progress percentages. Ensure valid `taskFields` mappings to reference fields accurately.
 
 The following example configures labels for task names, IDs, and progress:
 
@@ -42,7 +42,7 @@ export class AppComponent {
     };
 
     public data: object[] = [
-        // Task data array
+        // Task data array.
     ];
 }
 ```
@@ -71,12 +71,12 @@ For advanced scenarios, you can create custom label templates that provide compl
 
 This code creates a left label with priority-based icons (e.g., red for high priority) and a right label with a progress bar, improving visual feedback. For responsive designs, ensure templates adapt to narrow screens, as task labels may be clipped on short taskbars.
 
-**Conditional label display with icons**
+**Conditional label display with icons:**
 
 Create templates that show different content based on task properties:
 
 ```typescript
-// Left label template with conditional logic
+// Left label template with conditional logic.
 public leftLabelTemplate: string = `
     <div class="custom-left-label">
         <span *ngIf="data.Priority === 'High'" class="priority-high">🔴</span>
@@ -86,7 +86,7 @@ public leftLabelTemplate: string = `
     </div>
 `;
 
-// Right label template with progress indicators
+// Right label template with progress indicators.
 public rightLabelTemplate: string = `
     <div class="custom-right-label">
         <div class="progress-container">
@@ -104,12 +104,12 @@ public ngOnInit(): void {
 }
 ```
 
-**Rich content labels with multiple data points**
+**Rich content labels with multiple data points:**
 
 Display complex information with formatted content and calculations:
 
 ```typescript
-// Task label template with multiple data points
+// Task label template with multiple data points.
 public taskLabelTemplate: string = `
     <div class="rich-task-label">
         <div class="task-info">
@@ -134,7 +134,7 @@ public ngOnInit(): void {
 }
 
 
-// Component method for progress classification
+// Component method for progress classification.
 getProgressClass(progress: number): string {
     if (progress >= 80) return 'high';
     if (progress >= 40) return 'medium';

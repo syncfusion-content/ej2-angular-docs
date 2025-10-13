@@ -104,7 +104,7 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
+       `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
@@ -165,12 +165,13 @@ import { VirtualScrollService, SelectionService } from '@syncfusion/ej2-angular-
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-gantt id="ganttDefault" [dataSource]="data" [taskFields]="taskSettings" [loadChildOnDemand]="true" [enableVirtualization]="true" [allowSelection]="true"
-      [labelSettings]="labelSettings" [columns]="columns" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"
+    template: `
+      <ejs-gantt id="ganttDefault" [dataSource]="data" [taskFields]="taskSettings" [loadChildOnDemand]="true" [enableVirtualization]="true" [allowSelection]="true" [labelSettings]="labelSettings" [columns]="columns" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"
       [highlightWeekends]="true"  [taskbarHeight]="20" [rowHeight]="40" [tooltipSettings]="tooltipSettings"  [splitterSettings]="splitterSettings">
-  </ejs-gantt>`,
-providers: [VirtualScrollService, SelectionService]
+     </ejs-gantt>`,
+    providers: [VirtualScrollService, SelectionService]
 })
+
 export class AppComponent implements OnInit {
     public data?: object;
     public taskSettings?: object;
@@ -183,10 +184,10 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = new DataManager({
-        url: 'https://services.syncfusion.com/angular/production/api/GanttLoadOnDemand',
-        adaptor: new WebApiAdaptor,
-        crossDomain: true
-    });
+            url: 'https://services.syncfusion.com/angular/production/api/GanttLoadOnDemand',
+            adaptor: new WebApiAdaptor,
+            crossDomain: true
+        });
         this.taskSettings = {
             id: 'taskId',
             name: 'taskName',
@@ -198,10 +199,10 @@ export class AppComponent implements OnInit {
             parentID: "parentID"
         };
         this.tooltipSettings= {
-          showTooltip: true
+            showTooltip: true
         };
         this.splitterSettings = {
-          columnIndex: 3
+            columnIndex: 3
         };
         this.columns =  [
             { field: 'taskId', width:80 },
@@ -452,17 +453,17 @@ import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (load)="load($event)"></ejs-gantt>`,
+       `<ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (load)="load($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
+    @ViewChild('gantt', {static: true}) public ganttInstance?: GanttComponent;
     public data?: DataManager;
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
     public columns?: object[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent;
+
     
     public ngOnInit(): void {
         this.data = new DataManager({
@@ -487,8 +488,8 @@ export class AppComponent{
         this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
     }
     
-    load(args) {
-        this.ganttObj.query = new Query().addParams('ej2Gantt', "test");
+    public load(args) {
+        this.ganttInstance.query = new Query().addParams('ej2Gantt', "test");
     }
 }
 ```

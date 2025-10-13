@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Gantt component
 
-The Gantt component provides the toolbar support to handle Gantt actions. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
+The Angular Gantt component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
-To use the toolbar feature, inject the `ToolbarService` in the **providers** section.
+To enable toolbar functionality, inject the `ToolbarService` in the `providers` of the component.
 
 ## Built-in toolbar items
 
-Built-in toolbar items perform standard actions within the Gantt component. These items can be added to the toolbar by specifying the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property as a collection of predefined items. Each item is rendered as a button with an icon and label.
+Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -27,7 +27,7 @@ The following table shows built-in toolbar items and its actions.
 | Add | Adds a new record.|
 | Edit | Edits the selected record.|
 | Indent | Indent the selected record to one level.|
-| Outdent | Outdent the elected record to one level.|
+| Outdent | Outdents the selected record to one level.|
 | Update | Updates the edited record.|
 | Delete | Deletes the selected record.|
 | Cancel | Cancels the edit state.|
@@ -67,7 +67,7 @@ You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syn
 
 ### Show only icons in built-in toolbar items
 
-To display only icons in the built-in toolbar items of the Gantt component, apply CSS to hide the text labels. Use the following style:
+To show only icons in the built-in toolbar items, apply custom CSS to hide the text labels. Use the following style:
 
 ```css
  .e-gantt .e-toolbar .e-tbar-btn-text, 
@@ -114,7 +114,7 @@ You can customize the appearance of toolbar buttons in the Gantt component using
 
 ## Add toolbar at the bottom of gantt
 
-To position the toolbar at the bottom of the Gantt chart, use the `created` event. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
+To reposition the toolbar to the bottom of the Gantt chart, use the `created` event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -182,9 +182,9 @@ You can control toolbar items dynamically using the `enableItems` method. This a
 
 ## Add input elements in toolbar
 
-You can enhance the Gantt toolbar compoenent by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls enable more effective interaction with the Gantt chart, such as filtering and searching data.
+You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
-The following code snippets demonstrate how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) compoenent into the toolbar.
+The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) compoenent into the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

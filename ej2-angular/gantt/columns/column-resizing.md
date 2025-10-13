@@ -111,7 +111,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 
 You can programmatically resize columns in the Angular Gantt component by accessing the target column using the `getColumnByField` method and updating its [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective/#width) property. This is useful for implementing custom UI controls or dynamic layout adjustments.  To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
 
-The following example demonstrates how to resize a column externally using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. 
+The following example demonstrates how to resize a column externally using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

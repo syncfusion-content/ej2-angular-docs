@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, EditService, EditSettingsModel, IDependencyEventArgs } from '@syncfusion/ej2-angular-gantt'
 import { editingResources } from './data';
 
 @Component({
@@ -83,11 +83,29 @@ export class AppComponent implements OnInit {
         ];
     }
 
-    public actionBegin(args: any): void {
+    public actionBegin(args: CustomDependencyEventArgs ): void {
         if (args.requestType == "beforeOpenEditDialog" || args.requestType == "beforeOpenAddDialog") {
-            args.Dependency.columns[3].validationRules = { required: true }
-            args.Resources.columns[2].allowEditing = true
-            args.Resources.columns[2].validationRules = { required: true }
+            args.Dependency.columns[3].validationRules = { required: true };
+            args.Resources.columns[2].allowEditing = true;
+            args.Resources.columns[2].validationRules = { required: true };
         }
     }
+}
+
+interface Column {
+    field?: string;
+    headerText?: string;
+    allowEditing?: boolean;
+    validationRules?: { [key: string]: any };
+    [key: string]: any;
+}
+
+interface CustomDependencyEventArgs extends IDependencyEventArgs {
+    requestType: string;
+    Dependency: {
+        columns: Column[];
+    };
+    Resources: {
+        columns: Column[];
+    };
 }

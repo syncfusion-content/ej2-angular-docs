@@ -194,7 +194,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  onClick(event: MouseEvent, taskName: string): void {
+  public onClick(event: MouseEvent, taskName: string): void {
     event.preventDefault(); // Prevent default anchor behavior
     const baseUrl = 'https://www.meaningofthename.com/';
     const searchUrl = `${baseUrl}${encodeURIComponent(taskName)}`;
@@ -244,18 +244,18 @@ import { GanttData } from './data';
   template: `
     <ejs-gantt #gantt height="430px"  [dataSource]="data" (created)="renderGridSparkline()"
         [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">    
-            <e-columns>
-                <e-column field='TaskID' headerText='TaskID'  width=100></e-column>
-                <e-column field='TaskName' headerText='TaskName' width=290 ></e-column>
-                <e-column field='customData' headerText='Custom Data' width='280'>
-                    <ng-template #template let-ganttdata>
-                        <div id="spkline{{ganttdata.TaskID}}"></div>
-                    </ng-template>
-                 </e-column>
-            </e-columns>
-       </ejs-gantt>
-  `
+      <e-columns>
+        <e-column field='TaskID' headerText='TaskID'  width=100></e-column>
+        <e-column field='TaskName' headerText='TaskName' width=290 ></e-column>
+        <e-column field='customData' headerText='Custom Data' width='280'>
+          <ng-template #template let-ganttdata>
+            <div id="spkline{{ganttdata.TaskID}}"></div>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data = GanttData;
@@ -448,7 +448,7 @@ import { GanttData, SelectedRecordDataType } from './data';
   standalone: true,
   imports: [GanttModule, ButtonModule, DialogModule],
   template:
-    `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">  
+    `<ejs-gantt height="430px"  [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">  
       <e-columns>
         <e-column field='TaskID' headerText='Task ID'  width=80></e-column>
         <e-column field='TaskName' headerText='Task Name' width=290 ></e-column>
@@ -472,7 +472,6 @@ import { GanttData, SelectedRecordDataType } from './data';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('gantt') public gantt?: GanttComponent;
     @ViewChild('Dialog') public dialog?: DialogComponent;
     public data?: object[];
     public header?: string;
@@ -497,7 +496,7 @@ export class AppComponent implements OnInit {
         this.header = 'Selected Row Details';
     }
 
-    showDetails(data: SelectedRecordDataType) {
+    public showDetails(data: SelectedRecordDataType) {
         (this.dialog as DialogComponent).visible = true;
         this.selectedRecord = data;
     }

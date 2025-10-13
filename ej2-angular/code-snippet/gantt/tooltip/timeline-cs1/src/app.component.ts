@@ -77,6 +77,7 @@ import { editingData } from './data';
   `,
   encapsulation: ViewEncapsulation.None,
 })
+
 export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;
@@ -101,12 +102,10 @@ export class AppComponent implements OnInit {
     };
   }
 
-
   private getTooltipData(startDate: Date, endDate: Date, tier: string) {
     let ganttElement = document.getElementsByClassName('e-gantt')[0] as any;
     let gantt = ganttElement ? ganttElement.ej2_instances[0] : null;
     if (!gantt) return { activeTasks: 0, milestones: 0, overallProgress: 0 };
-
     let activeTasks = gantt.currentViewData.filter((task: any) => {
       let taskStart = new Date(task.StartDate);
       let taskEnd = new Date(task.EndDate);
@@ -116,11 +115,9 @@ export class AppComponent implements OnInit {
         ? taskStart >= startDate && taskEnd <= endDate
         : taskStart.getTime() === startDate.getTime() && taskEnd.getTime() === endDate.getTime();
     });
-
     let milestones = activeTasks.filter((task: any) => task.Duration === 0);
     let totalProgress = activeTasks.reduce((acc: number, task: any) => acc + (task.Progress || 0), 0);
     let overallProgress = activeTasks.length > 0 ? (totalProgress / activeTasks.length).toFixed(2) : "0";
-
     return {
       activeTasks: activeTasks.length,
       milestones: milestones.length,
@@ -132,7 +129,6 @@ export class AppComponent implements OnInit {
     let ganttElement = document.getElementsByClassName("e-gantt")[0] as any;
     let gantt = ganttElement ? ganttElement.ej2_instances[0] : null;
     if (!gantt) return;
-
     let endDate = new Date(date);
     if (gantt.timelineSettings.topTier.unit) {
       endDate.setDate(endDate.getDate() + 6);
@@ -144,7 +140,6 @@ export class AppComponent implements OnInit {
     let ganttElement = document.getElementsByClassName("e-gantt")[0] as any;
     let gantt = ganttElement ? ganttElement.ej2_instances[0] : null;
     if (!gantt) return;
-
     let endDate = new Date(date);
     if (gantt.timelineSettings.bottomTier.unit) {
       endDate = new Date(date);

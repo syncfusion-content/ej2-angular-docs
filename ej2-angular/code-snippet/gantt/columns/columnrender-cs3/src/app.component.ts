@@ -17,9 +17,9 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" width="90"></e-column>
         <e-column field="Progress" headerText="Progress" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt> `
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];

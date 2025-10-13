@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Timeline in Angular Gantt component
 
-The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, and Year-Month for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
@@ -87,6 +87,22 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/timeline/hour-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/hour-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/timeline/hour-cs1" %}
+
+### Minutes timeline mode
+
+In Minutes timeline mode, the tier displays minute-level intervals, ideal for tracking short-duration tasks with high precision.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/minutes-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

@@ -1,88 +1,77 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { CriticalPathService, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
-
-
-
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt';
+import { TaskFieldsModel, ColumnModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService, EditService],
-standalone: true,
-    selector: 'app-root',
-    template: `<button ej-button id='add' (click)='addColumn()'>Add Columns</button>
-               <button ej-button id='remove' (click)='removeColumn()'>Remove Columns</button>
-               <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" enablePersistence='true' [columns]="columns"(dataBound)='dataBound()'></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  providers: [ToolbarService, EditService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <div style="margin-bottom: 16px;">
+      <button ejs-button id="add" style="margin-right: 8px;" (click)="addColumn()">Add Column</button>
+      <button ejs-button id="remove" (click)="removeColumn()">Remove Column</button>
+    </div>
+    <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" enablePersistence="true" (dataBound)="onDataBound()">
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
+  @ViewChild('gantt') ganttInstance!: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: TaskFieldsModel = {};
+  public columns: ColumnModel[] = [];
 
-    public data?: object[];
-    public taskSettings?: object;
-    public ganttChart?: GanttComponent;
-    public splitterSettings?: object;
-    public columns?: object[];
-    public ngOnInit(): void {
-        this.data = [
-            {
-                TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
-            },
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+  ngOnInit(): void {
+    this.data = [
+      { TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 }
+    ];
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      parentID: 'ParentID'
+    };
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
+      { field: 'TaskName', headerText: 'Task Name', width: 150 },
+      { field: 'StartDate', headerText: 'Start Date', width: 150 },
+      { field: 'Duration', headerText: 'Duration', width: 150 },
+      { field: 'Progress', headerText: 'Progress', width: 150 }
+    ];
+  }
 
-            {
-                TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
-            },
-            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 }
-        ];
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'ParentID'
-        };
-        this.columns =  [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
-        { field: 'TaskName', headerText: 'Task Name', width: 150},
-        { field: 'StartDate', headerText: 'StartDate', width: 150 },
-        { field: 'Duration', headerText: 'Duration', width: 150},
-        { field: 'Progress', headerText: 'Progress', width: 150 },
-        ];
-    }
+  public onDataBound(): void {
+    const originalPersist = (this.ganttInstance as any).addOnPersist;
+    (this.ganttInstance as any).addOnPersist = (keys: string[]): string[] => {
+      const filteredKeys = keys.filter(key => key !== 'columns');
+      return originalPersist.call(this.ganttInstance, filteredKeys);
+    };
+  }
 
-    dataBound() {
-        let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
-        let cloned = gantt.addOnPersist;
-        gantt.addOnPersist = function (key: any) {
-            key = key.filter((item: string)  => item !== "columns");
-            return cloned.call(this, key);
-        };
-    }
+  public addColumn(): void {
+    const newColumn : ColumnModel = {
+      field: 'Progress',
+      headerText: 'Progress',
+      width: 100
+    };
+    (this.ganttInstance.columns as ColumnModel[]).push(newColumn);
+    this.ganttInstance.refresh();
+  }
 
-    addColumn() {
-        let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
-        let obj = { field: "Progress", headerText: 'Progress', width: 100 };
-        gantt.columns.push(obj as any); //you can add the columns by using the Gantt columns method
-        gantt.refresh();
-   }
-
-    removeColumn() {
-         let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
-        gantt.columns.pop();
-        gantt.refresh();
-   }
+  public removeColumn(): void {
+    this.ganttInstance.columns.pop();
+    this.ganttInstance.refresh();
+  }
 }
-
-
 

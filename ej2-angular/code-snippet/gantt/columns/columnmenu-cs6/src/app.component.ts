@@ -17,9 +17,9 @@ import { projectNewData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="150"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="150"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  columnMenuClick(args: any): void {
+  public columnMenuClick(args: any): void {
     if (args.item.id === 'option1') {
       // Custom logic for Option 1.
     }

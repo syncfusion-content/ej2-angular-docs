@@ -14,12 +14,12 @@ Immutable mode optimizes the Angular Gantt component’s rendering performance b
 
 ## Configure immutable mode
 
-Immutable mode requires a unique primary key in the data source, configured via the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) property, and valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., `id` to a unique field like `TaskID`). The component compares object references to detect changes, requiring immutable data patterns where updates create new objects rather than mutating existing ones. Hierarchical task updates (e.g., parent-child tasks) are efficiently handled by checking only changed references, preserving nested structures.
+Immutable mode requires a unique primary key in the data source, configured via the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#isprimarykey) property, and valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., id to a unique field like TaskID). The component compares object references to detect changes, requiring immutable data patterns where updates create new objects rather than mutating existing ones. Hierarchical task updates (e.g., parent-child tasks) are efficiently handled by checking only changed references, preserving nested structures.
 
 **Configuration requirements**
-- **Primary key**: Set `isPrimaryKey` to `true` on a unique column (e.g., `TaskID`) to ensure accurate change detection.
+- **Primary key**: Set `isPrimaryKey` to **true** on a unique column (e.g., TaskID) to ensure accurate change detection.
 - **Unique identifiers**: Assign stable, unique IDs to all tasks via `taskFields.id`.
-- **Immutable data**: Create new objects for updates (e.g., `{ ...task, progress: 50 }`) to trigger reference changes.
+- **Immutable data**: Create new objects for updates (e.g., { ...task, progress: 50 }) to trigger reference changes.
 
 The following example enables immutable mode:
 

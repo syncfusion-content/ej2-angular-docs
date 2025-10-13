@@ -1,16 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem, ZoomTimelineSettings } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { GanttModule,ToolbarItem, GanttComponent, ToolbarService} from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData, data } from './data';
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, ButtonModule],
     providers: [ToolbarService],
     standalone: true,
     selector: 'app-root',
@@ -21,12 +15,12 @@ import { projectNewData, data } from './data';
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent | any;
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -41,10 +35,12 @@ export class AppComponent {
         };
         this.toolbar = ['ZoomToFit'];
     }
-    public dataBound(args: any) {
-        this.ganttObj.fitToProject();
+
+    public dataBound(args: object) {
+        this.ganttInstance.fitToProject();
     };
-    changeData(): void {
-        this.ganttObj.dataSource = data;
+
+    public changeData(): void {
+        this.ganttInstance.dataSource = data;
     };
 }

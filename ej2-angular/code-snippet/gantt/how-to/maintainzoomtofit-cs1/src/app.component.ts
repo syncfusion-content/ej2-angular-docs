@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem, ZoomTimelineSettings, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ActionCompleteArgs, ITaskbarEditedEventArgs, ToolbarItem, EditSettingsModel, EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
@@ -17,13 +11,14 @@ import { projectNewData } from './data';
     `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar" [editSettings]="editSettings" (actionComplete)="actionComplete($event)" (taskbarEdited)="taskbarEdited($event)"></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public toolbar?: ToolbarItem[];
   public editSettings?: EditSettingsModel;
-  @ViewChild('gantt', { static: true })
-  public ganttObj?: GanttComponent | any;
+
   public ngOnInit(): void {
     this.data = projectNewData;
     this.taskSettings = {
@@ -42,16 +37,17 @@ export class AppComponent {
     };
     this.toolbar = ['Edit', 'ZoomToFit'];
   }
-  public actionComplete(args: any) {
+
+  public actionComplete(args: ActionCompleteArgs) {
     if ((args.action === "CellEditing" || args.action === "DialogEditing") && args.requestType === "save") {
-      this.ganttObj.dataSource = projectNewData;
-      this.ganttObj.fitToProject();
+      (this.ganttInstance as GanttComponent).dataSource = projectNewData;
+      (this.ganttInstance as GanttComponent).fitToProject();
     }
   };
-  public taskbarEdited(args: any) {
+  public taskbarEdited(args: ITaskbarEditedEventArgs) {
     if (args) {
-      this.ganttObj.dataSource = projectNewData;
-      this.ganttObj.fitToProject();
+      (this.ganttInstance as GanttComponent).dataSource = projectNewData;
+      (this.ganttInstance as GanttComponent).fitToProject();
     }
   };
 }

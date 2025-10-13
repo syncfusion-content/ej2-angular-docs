@@ -17,6 +17,7 @@ import { editingData } from './data';
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];

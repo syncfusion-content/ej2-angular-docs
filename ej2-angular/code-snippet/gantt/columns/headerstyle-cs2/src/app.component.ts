@@ -20,6 +20,7 @@ import { GanttData } from './data';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;

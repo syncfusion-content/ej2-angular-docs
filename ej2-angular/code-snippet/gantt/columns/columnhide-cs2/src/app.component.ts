@@ -20,8 +20,7 @@ import { GanttData } from './data';
         <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
 
 export class AppComponent implements OnInit {

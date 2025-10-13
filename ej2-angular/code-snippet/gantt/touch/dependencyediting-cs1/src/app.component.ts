@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
- ;
+ 
     public ngOnInit(): void {
         this.data = [
             {

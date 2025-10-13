@@ -10,6 +10,7 @@ import { projectNewData } from './data';
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [labelSettings]="labelSettings" [resourceFields]="resourceFields" [columns]="columns" [resources]="resources"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public resources?: object[];

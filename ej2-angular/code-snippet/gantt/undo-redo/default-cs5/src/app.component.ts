@@ -38,17 +38,17 @@ export class AppComponent implements OnInit {
             progress: 'Progress',
             child: 'subtasks'
         },
-            this.editSettings = {
-                allowAdding: true,
-                allowEditing: true,
-                allowDeleting: true,
-                allowTaskbarEditing: true,
-                showDeleteConfirmDialog: true
-            },
-            this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
-                'PrevTimeSpan', 'NextTimeSpan', 'Undo', 'Redo'],
-            this.undoRedoActions = ['Add', 'Edit', 'Delete', 'Search', 'Sorting', 'Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
-                'PreviousTimeSpan', 'NextTimeSpan', 'ColumnState']
+        this.editSettings = {
+            allowAdding: true,
+            allowEditing: true,
+            allowDeleting: true,
+            allowTaskbarEditing: true,
+            showDeleteConfirmDialog: true
+        },
+        this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+            'PrevTimeSpan', 'NextTimeSpan', 'Undo', 'Redo'],
+        this.undoRedoActions = ['Add', 'Edit', 'Delete', 'Search', 'Sorting', 'Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+            'PreviousTimeSpan', 'NextTimeSpan', 'ColumnState']
     }
 
     public clearundocollection(): void {

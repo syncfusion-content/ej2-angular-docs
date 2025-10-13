@@ -53,19 +53,21 @@ Data markers support interactive functionality through click event binding, enab
 
 **Event binding implementation**: Click events are bound to data markers using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event of the Gantt component. This event fires after data binding completes, ensuring all marker elements are rendered and available for event attachment.
 
-**DOM element selection**: Data markers render with the CSS class `.e-indicator-span`, which serves as the selector for identifying marker elements within the DOM. This class provides a reliable reference for event binding regardless of marker styling or content variations.
+**DOM element selection**: Data markers render with the CSS class **.e-indicator-span**, which serves as the selector for identifying marker elements within the DOM. This class provides a reliable reference for event binding regardless of marker styling or content variations.
 
 The following implementation demonstrates how to open the edit dialog for a specific task when its data marker is clicked:
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttAllModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
-  selector: 'app-root',
-  template: `
-        <ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings"
-            [toolbar]="toolbar" (dataBound)="dataBound()">
+    imports: [GanttAllModule],
+    providers: [ToolbarService, EditService],
+    standalone: true,
+    selector: 'app-root',
+    template: `
+        <ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [toolbar]="toolbar" (dataBound)="dataBound()">
         </ejs-gantt>`
 })
 
@@ -109,7 +111,7 @@ export class AppComponent implements OnInit {
                 ]
             }
         ];
-        
+
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',
@@ -129,23 +131,36 @@ export class AppComponent implements OnInit {
         const elements = document.querySelectorAll('.e-indicator-span');
         for (let i = 0; i < elements.length; i++) {
             elements[i].addEventListener('click', (event: Event) => {
-                // Find the task row that contains the clicked indicator
+                // Find the task row that contains the clicked indicator.
                 const indicatorElement = event.target as HTMLElement;
                 const taskRow = indicatorElement.closest('tr.e-chart-row') as HTMLElement;
-                
                 if (taskRow && this.ganttInstance) {
                     // Get the task ID from the row data
-                    const rowIndex = parseInt(taskRow.getAttribute('data-rowindex') || '1');
-                    const taskData = this.ganttInstance?.currentViewData[rowIndex];
-                    
-                    if (taskData && taskData.ganttProperties.taskId) {
-                        // Open edit dialog for the specific task
-                        this.ganttInstance.openEditDialog(taskData.ganttProperties.taskId);
+                    const rowIndex = parseInt(taskRow.getAttribute('data-rowindex') || '0', 10);
+                    const record = this.ganttInstance.flatData[rowIndex] as GanttRecord;
+                    if (record && record.ganttProperties.taskId) {
+                        // Open edit dialog for the specific task.
+                        this.ganttInstance.openEditDialog(record.ganttProperties.taskId);
                     }
                 }
             });
         }
     }
+}
+
+interface GanttProperties {
+    taskId: number | string;
+    taskName?: string;
+    startDate?: Date;
+    endDate?: Date;
+    duration?: number;
+    progress?: number;
+    [key: string]: any;
+}
+
+interface GanttRecord {
+    ganttProperties: GanttProperties;
+    [key: string]: any;
 }
 ```
 ![Custom event bind to data markers](images/custom-event-datamarkers.gif)

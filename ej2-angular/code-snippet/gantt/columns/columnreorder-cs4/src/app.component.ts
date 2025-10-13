@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
     };
   }
 
-
   public columnDragStart(args: ColumnDragEventArgs): void {
     this.message = `columnDragStart event triggered`;
     if (args.column?.field === 'TaskName') {

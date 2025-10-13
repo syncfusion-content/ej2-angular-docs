@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter menu in Angular Gantt component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as 'equal', 'contains', 'greaterthan', etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filtersettings) as **Menu**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

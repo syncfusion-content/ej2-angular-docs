@@ -12,6 +12,7 @@ import { projectNewData } from './data';
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [enableCriticalPath]='true' [taskFields]="taskSettings" [editSettings] = "editSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
@@ -28,13 +29,13 @@ export class AppComponent implements OnInit {
             progress: 'Progress',
             child: 'subtasks'
         },
-            this.editSettings = {
-                allowAdding: true,
-                allowEditing: true,
-                allowDeleting: true,
-                allowTaskbarEditing: true,
-                showDeleteConfirmDialog: true
-            },
-            this.toolbar = ['CriticalPath']
+        this.editSettings = {
+            allowAdding: true,
+            allowEditing: true,
+            allowDeleting: true,
+            allowTaskbarEditing: true,
+            showDeleteConfirmDialog: true
+        },
+        this.toolbar = ['CriticalPath']
     }
 }

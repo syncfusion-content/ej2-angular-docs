@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
@@ -32,10 +32,10 @@ import { GanttData } from './data';
           </div>
         </ng-container>
       </ng-template>
-    </ejs-gantt>
-  `,
+    </ejs-gantt>`
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public taskData?: object;
   public taskFields?: object;

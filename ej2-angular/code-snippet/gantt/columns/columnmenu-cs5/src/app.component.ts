@@ -20,6 +20,7 @@ import { projectNewData } from './data';
     </ejs-gantt>`,
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];

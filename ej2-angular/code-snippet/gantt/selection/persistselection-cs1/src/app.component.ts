@@ -60,7 +60,6 @@ export class AppComponent implements OnInit {
   }
 }
 
-
 interface CustomChangeEventArgs extends ChangeEventArgs {
   checked: boolean;
 }

@@ -9,13 +9,14 @@ import { baselineData } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [timelineSettings]="timelineSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [dayWorkingTime]="dayWorkingTime" baselineColor='red'>
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [timelineSettings]="timelineSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [dayWorkingTime]="dayWorkingTime" baselineColor='red'>
             <ng-template #tooltipSettingsBaseline let-data>
                <div> <ng-container>Baseline StartDate : {{data.BaselineStartDate}}</ng-container> </div>
             </ng-template>
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: Object[];
     public taskSettings?: object;
@@ -63,6 +64,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

@@ -14,6 +14,7 @@ import { virtualData } from './data';
         [allowSelection]="true" [enableVirtualization]="true"  [autoCalculateDateScheduling]="false" [editSettings] = "editSettings" [highlightWeekends]="true"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;

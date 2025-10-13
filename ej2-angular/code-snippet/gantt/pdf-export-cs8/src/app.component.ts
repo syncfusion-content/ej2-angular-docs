@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { GanttModule, GanttComponent, ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { editingData } from './data';
 
@@ -13,7 +13,7 @@ import { editingData } from './data';
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;

@@ -1,4 +1,4 @@
-import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
+import { GanttAllModule, ActionBeginArgs} from '@syncfusion/ej2-angular-gantt';
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { constraintData } from './data';
 
@@ -21,6 +21,7 @@ import { constraintData } from './data';
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
     public data?: object[];
@@ -40,6 +41,7 @@ export class AppComponent implements OnInit {
     public highlightWeekends?: boolean;
     public allowSelection?: boolean;
     public height?: string;
+
     public ngOnInit(): void {
         this.data = constraintData;
         this.taskSettings = {
@@ -96,9 +98,9 @@ export class AppComponent implements OnInit {
         this.height = '450px';
     }
 
-    public actionBegin(args: any): void {
+    public actionBegin(args: ActionBeginArgs): void {
         if (args.requestType === 'validateTaskViolation') {
-            args.validateMode.respectMustStartOn = true
+            (args as any).validateMode.respectMustStartOn = true
         }
     }
     

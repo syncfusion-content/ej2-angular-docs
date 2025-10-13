@@ -22,9 +22,9 @@ import { GanttData } from './data';
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="150"></e-column>
       </e-columns>
     </ejs-gantt> `,
-  styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public taskSettings: object = {};
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  addColumns(): void {
+  public addColumns(): void {
     const newColumns: ColumnModel[] = [
       { field: 'TaskID', headerText: 'TaskID', width: 120 },
       { field: 'StartDate', headerText: 'StartDate', width: 120, format: 'yMd' }
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     this.ganttInstance?.treeGrid.grid.refreshColumns();
   }
 
-  deleteColumns(): void {
+  public deleteColumns(): void {
     this.ganttInstance?.treeGrid.grid.columns.pop();
     this.ganttInstance?.treeGrid.grid.refreshColumns();
   }

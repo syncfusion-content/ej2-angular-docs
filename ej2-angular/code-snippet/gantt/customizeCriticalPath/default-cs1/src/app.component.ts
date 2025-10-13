@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, CriticalPathService, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, CriticalPathService, IQueryTaskbarInfoEventArgs, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
@@ -12,6 +12,7 @@ import { projectNewData } from './data';
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [enableCriticalPath]='true' [taskFields]="taskSettings" (queryTaskbarInfo)="queryTaskbarInfo($event)" [editSettings] = "editSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
@@ -38,7 +39,7 @@ export class AppComponent {
             this.toolbar = ['CriticalPath']
     }
 
-    public queryTaskbarInfo(args: any) {
+    public queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) {
         if ((args.data.isCritical || args.data.slack === '0 day') && !args.data.hasChildRecords) {
             args.taskbarBgColor = 'rgb(242, 210, 189)';
             args.progressBarBgColor = 'rgb(201, 169, 166)';

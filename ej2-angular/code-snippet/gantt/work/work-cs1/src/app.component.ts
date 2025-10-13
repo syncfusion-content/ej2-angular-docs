@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     public editSettings?: object;
     public resourceFields?: object;
     public toolbar: string[] | undefined;
-    public columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: string; visible?: undefined; } | { field: string; width: string; visible?: undefined; headerText?: undefined; })[] | undefined;
+    public columns?: object[];
 
     public ngOnInit(): void {
         this.data = [

@@ -8,11 +8,12 @@ import { baselineData } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [renderBaseline]="true" baselineColor='red'></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [renderBaseline]="true" baselineColor='red'>
+        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
     public data?: Object[];
     public taskSettings?: object;
 

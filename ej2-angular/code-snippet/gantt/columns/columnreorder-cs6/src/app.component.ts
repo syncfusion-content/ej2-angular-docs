@@ -30,6 +30,7 @@ import { GanttData } from './data';
       </ejs-gantt>
     </div>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data?: object[];

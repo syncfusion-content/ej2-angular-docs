@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, ToolbarService, PdfExportService, GanttComponent, ToolbarItem, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, ToolbarService, PdfExportService, GanttComponent, ToolbarItem, SelectionService, PdfQueryTaskbarInfoEventArgs, IGanttData, ITaskbarStyle } from '@syncfusion/ej2-angular-gantt'
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { editingData } from './data';
@@ -48,10 +48,20 @@ export class AppComponent implements OnInit {
         }
     };
 
-    public pdfQueryTaskbarInfo(args: any): void {
-        if (args.data.Progress < 50 && !args.data.hasChildRecords) {
-            args.taskbar.progressColor = new PdfColor(205, 92, 92);
-            args.taskbar.taskColor = args.taskbar.taskBorderColor = new PdfColor(240, 128, 128);
+    public pdfQueryTaskbarInfo(args: PdfQueryTaskbarInfoEventArgs): void {
+        if ((args.data as GanttData).Progress < 50 && !(args.data as GanttData).hasChildRecords) {
+            (args.taskbar as ITaskbarStyle).progressColor = new PdfColor(205, 92, 92);
+            (args.taskbar as ITaskbarStyle).taskColor = (args.taskbar as ITaskbarStyle).taskBorderColor = new PdfColor(240, 128, 128);
         }
     };
+}
+
+interface GanttData {
+    hasChildRecords: any;
+    TaskID: number;
+    TaskName: string;
+    StartDate: Date;
+    Duration: number;
+    Progress: number;
+    ParentID: number;
 }

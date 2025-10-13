@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, ContextMenuService, EditService, SortService, ResizeService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, ContextMenuService, EditService,SelectionService, SortService, ResizeService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
-
     public ngOnInit(): void {
         this.data = [
             { TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'), },
@@ -46,3 +45,6 @@ export class AppComponent implements OnInit {
         };
     }
 }
+
+
+

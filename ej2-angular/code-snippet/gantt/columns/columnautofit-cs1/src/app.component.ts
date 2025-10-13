@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  dataBound(): void {
+  public dataBound(): void {
     this.ganttInstance?.treeGrid.autoFitColumns(['TaskName']);
   }
 }

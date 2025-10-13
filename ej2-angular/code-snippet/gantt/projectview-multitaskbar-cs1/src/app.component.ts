@@ -12,6 +12,7 @@ import { projectViewMultiTaskData } from './data';
         `<ejs-gantt [dataSource]="data" [enableMultiTaskbar]="true" [taskFields]="taskSettings" [treeColumnIndex]="1" [allowSelection]="true" height="430px"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: Object[];
     public taskSettings?: object;

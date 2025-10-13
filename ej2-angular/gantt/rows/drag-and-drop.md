@@ -10,15 +10,13 @@ domainurl: ##DomainURL##
 
 # Row drag and drop in Angular Gantt component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the gantt by dragging and dropping them to new positions. Additionally, you can also drag and drop rows to custom components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
 
-To use the row drag and drop feature in Gantt chart component, you need to inject the **RowDDService** in the provider section of the **AppComponent**. The **RowDDService** is responsible for handling the row drag and drop functionality in the Gantt component. Once you have injected the **RowDDService**, you can  use the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
+To enable this feature, inject the **RowDDService** in the `providers` array of the **AppComponent**. Once injected, enable the functionality by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
 
-## Drag and drop within gantt chart
+## Drag and drop within the Gantt chart
 
-The drag and drop feature allows you to rearrange rows within the gantt by dragging them using a drag icon. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true**.
-
-Here's an example of how to enable drag and drop within the Gantt chart:
+The Gantt component allows you to rearrange rows using a drag icon. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,7 +31,7 @@ Here's an example of how to enable drag and drop within the Gantt chart:
 
 ## Different drop positions
 
-In a Gantt chart, drag and drop functionality allows to rearrange rows to adjust their position. When dragging and dropping rows in a Gantt chart, you can drop rows into following positions:
+In a Gantt chart, drag and drop functionality allows rearranging rows to adjust their position. You can drop rows in the following positions:
 
 1. Above
 2. Below
@@ -41,27 +39,25 @@ In a Gantt chart, drag and drop functionality allows to rearrange rows to adjust
 
 **Above**
 
-If the border line appears at the top of the target row, which is **Task ID: 6** while dropping, then the row will be added `above` the target row as sibling.
+If the border line appears at the top of the target row (e.g., Task ID: 6) while dropping, the row will be placed `above` the target row as a sibling.
 
 ![Above Position](../images/above.png)
 
 **Below**
 
-If the border line appears at the bottom of the target row, which is **Task ID: 6** while dropping, then the row will be added `below` the target row as sibling.
+If the border line appears at the bottom of the target row (e.g., Task ID: 6) while dropping, the row will be placed `below` the target row as a sibling.
 
 ![Below Position](../images/below.png)
 
 **Child**
 
-If the border line appears at both top and bottom of the target row, which is **Task ID: 6** while dropping, then the row will be added as `child` to the target row.
+If the border line appears at both the top and bottom of the target row (e.g., Task ID: 6) while dropping, the row will be added as a `child` to the target row.
 
 ![Child Position](../images/child.png)
 
 ## Drag and drop to custom component 
 
-The Gantt chart provides the feature to drag and drop gantt rows to any custom component. This feature allows you to easily move rows from one component to another without having to manually copy and paste data. To enable row drag and drop, you need to set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true** and defining the custom component ID in the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings/#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings/) object of treegrid object in gantt instance. The ID provided in `targetID` should correspond to the ID of the target component where the rows are to be dropped.
-
-In the below example, the selected gantt row is dragged and dropped in to the TreeGrid component by using [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event.
+You can drag rows from the Gantt component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the `load` event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event to handle the drop and perform necessary actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,11 +70,9 @@ In the below example, the selected gantt row is dragged and dropped in to the Tr
   
 {% previewsample "page.domainurl/samples/gantt/rows/drag-drop-cs1" %}
 
-> * The [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event is fired when a row is dropped onto a custom component, regardless of whether the drop is successful or not. You can use the `args.cancel` property to prevent the default action.
-
 ## Drag and drop multiple rows together
 
-Gantt also supports dragging multiple rows at a time and drop them on any other rows. In Gantt, you can enable the multiple row drag and drop by setting the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property to `Multiple` and you should enable the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
+You can drag and drop multiple rows simultaneously in the Gantt component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property to **Multiple** , and set the `allowRowDragAndDrop` property is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,9 +87,7 @@ Gantt also supports dragging multiple rows at a time and drop them on any other 
 
 ## Taskbar drag and drop between rows
 
-The taskbar drag and drop feature allows you to rearrange rows within the gantt by dragging the taskbar element. This feature can be enabled by setting the [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) property to **true**.
-
-Here's an example of how to enable taskbar drag and drop within the Gantt:
+You can rearrange rows in the Gantt component by dragging the taskbar element. This functionality is enabled by setting the [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) property to **true**, allowing taskbars to be repositioned across rows for improved scheduling control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,18 +102,13 @@ Here's an example of how to enable taskbar drag and drop within the Gantt:
 
 ## Drag and drop interactions with server side
 
-In the Gantt chart component, you can perform row drag and drop operations on interaction with the server side. This guide provides step-by-step instructions on how to carry out row drag and drop operations with with server-side integration.
+You can perform row drag and drop operations in the Gantt component with server-side interaction.
 
-When implementing row drag and drop interactions with server side, it's Essential<sup style="font-size:70%">&reg;</sup> to manage the server-side logic for handling the dragged record and its placement upon dropping. The dragged record details are sent to the server side for processing through the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event. This involves adding and removing records at the server end based on the dragged record and drop position.
+To handle drag and drop on the server side, use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event on the client side. This event must be captured and processed to retrieve the necessary information about the dragged record and its intended new position. On the server, the record should be removed from its original index and inserted at the appropriate location based on the event data.
 
-From the arguments of the `rowDrop` event, you can access the following details to handle row drag and drop operations on the server end:
+Follow these steps to implement server-side drag and drop:
 
-•	Index of the dragged record from `args.fromIndex`
-•	Data of the dragged record from `args.data`
-•	Drop index from `args.dropIndex`
-•	Drop position(**above**, **below**, **child**) from `args.dropPosition`
-
-Using the above details and position, the dragged record can be efficiently removed from its original position and inserted into the new drop position on the server end. This process ensures seamless management of records when using Row Drag and Drop with server-side operations.
+**Step 1:** Add the following code to the **app.component.ts** file to handle the `rowDrop` event:
 
 ```typescript
 
@@ -129,6 +116,7 @@ import { Component, ViewChild } from '@angular/core';
 import { GanttComponent, ToolbarItem, EditSettingsModel, } from '@syncfusion/ej2-angular-gantt';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { Ajax } from '@syncfusion/ej2-base';
+import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 
 @Component({
@@ -144,11 +132,10 @@ import { Ajax } from '@syncfusion/ej2-base';
     </ejs-gantt>`
 })
 export class AppComponent {
+  @ViewChild('gantt') public ganttInstance?: GanttComponent
   public data?: DataManager;
   public editSettings?: EditSettingsModel;
   public toolbar?: ToolbarItem[];
-  @ViewChild('gantt')
-  public gantt?: GanttComponent
   public taskSettings?: object;
   public splitterSettings?: object;
 
@@ -171,13 +158,13 @@ export class AppComponent {
     this.splitterSettings = {
       position: '75%'
     };
-
   }
-  public rowDrop(args: any) {
-    var drag_idmapping = (this.gantt as any).currentViewData[args.fromIndex][(this.gantt as any).taskFields.id]
-    var drop_idmapping = (this.gantt as any).currentViewData[args.dropIndex][(this.gantt as any).taskFields.id]
+
+  public rowDrop(args: RowDragEventArgs) {
+    const dragId = args.data[0][(this.ganttInstance as GanttComponent).taskFields.id];
+    const dropId = args.dropRecord[(this.ganttInstance as GanttComponent).taskFields.id];
     var data = args.data[0];
-    var positions = { dragidMapping: drag_idmapping, dropidMapping: drop_idmapping, position: args.dropPosition };
+    var positions = { dragidMapping: dragId, dropidMapping: dropId, position: args.dropPosition };
     const ajax = new Ajax({
       url: '/Home/DragandDrop',
       type: 'POST',
@@ -185,17 +172,17 @@ export class AppComponent {
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({ value: data, pos: positions })
     });
-    (this.gantt as any).showSpinner();
+    (this.ganttInstance as GanttComponent).showSpinner();
     ajax.send();
     ajax.onSuccess = (data: string) => {
-      (this.gantt as any).hideSpinner();
+      (this.ganttInstance as GanttComponent).hideSpinner();
     };
   }
 }
 
 ```
 
-Here's a code snippet demonstrating server-side handling of row drag and drop operations:
+**Step 2:** Implement server-side logic to process the drag and drop operation.
 
 ```typescript
 
@@ -204,11 +191,11 @@ Here's a code snippet demonstrating server-side handling of row drag and drop op
             IEnumerable DataSource = GanttItems.GetSelfData();
             DataOperations operation = new DataOperations();
 
-            if (dm.Sorted != null && dm.Sorted.Count > 0) //Sorting 
+            if (dm.Sorted != null && dm.Sorted.Count > 0)
             {
                 DataSource = operation.PerformSorting(DataSource, dm.Sorted);
             }
-            if (dm.Where != null && dm.Where.Count > 0) //Filtering 
+            if (dm.Where != null && dm.Where.Count > 0)
             {
                 DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
             }
@@ -221,32 +208,32 @@ Here's a code snippet demonstrating server-side handling of row drag and drop op
 
         }
           
-        //Here handle the code of row drag and drop operations
+        //Here handle the code of row drag and drop operations.
         public bool DragandDrop([FromBody] ICRUDModel value)
         {
             if (value.pos.position == "bottomSegment" || value.pos.position == "topSegment")
             {
-                //for bottom and top segment drop position. If the dragged record is the only child for a particular record,
-                //we need to set parentItem of dragged record to null and isParent of dragged record's parent to false 
-                if (value.value.ParentId != null) // if dragged record has parent
+                //for bottom and top segment drop position. If the dragged record is the only child for a particular record.
+                //we need to set parentItem of dragged record to null and isParent of dragged record's parent to false.
+                if (value.value.ParentId != null) // if dragged record has parent.
                 {
                     var childCount = 0;
                     int parent = (int)value.value.ParentId;
-                    childCount += FindChildRecords(parent); // finding the number of child for dragged record's parent
-                    if (childCount == 1) // if the dragged record is the only child for a particular record
+                    childCount += FindChildRecords(parent); // finding the number of child for dragged record's parent.
+                    if (childCount == 1) // if the dragged record is the only child for a particular record,
                     {
                         var i = 0;
                         for (; i < GanttItems.GetSelfData().Count; i++)
                         {
                             if (GanttItems.GetSelfData()[i].TaskID == parent)
                             {
-                                //set isParent of dragged record's parent to false 
+                                //set isParent of dragged record's parent to false. 
                                 GanttItems.GetSelfData()[i].isParent = false;
                                 break;
                             }
                             if (GanttItems.GetSelfData()[i].TaskID == value.value.TaskID)
                             {
-                                //set parentItem of dragged record to null
+                                //set parentItem of dragged record to null.
                                 GanttItems.GetSelfData()[i].ParentId = null;
                                 break;
                             }
@@ -261,8 +248,8 @@ Here's a code snippet demonstrating server-side handling of row drag and drop op
                 {
                     if (GanttItems.GetSelfData()[j].TaskID == value.pos.dropidMapping)
                     {
-                        //set dragged records parentItem with parentItem of
-                        //record in dropindex
+                        //set dragged records parentItem with parentItem of.
+                        //record in dropindex.
                         value.value.ParentId = GanttItems.GetSelfData()[j].ParentId;
                         break;
                     }
@@ -369,111 +356,15 @@ Here's a code snippet demonstrating server-side handling of row drag and drop op
 
 > [View the row drag and drop interactions with server side sample on GitHub](https://github.com/SyncfusionExamples/row-drag-and-drop-with-server-side-interaction-in-angular-gantt-chart)
 
-## Drag and drop events
-
-The Gantt component provides a set of events that are triggered during drag and drop operations on gantt rows. These events allow you to customize the drag element, track the progress of the dragging operation, and perform actions when a row is dropped on a target element. The following events are available:
-
-1. [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdragstarthelper): This event is triggered when drag and drop functionality initializes on gantt rows in current view. It allows you to customize drag functionality initialization.
-
-2. [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdragstart): This event is triggered when the dragging of a gantt row starts.
-
-3. [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrag): This event is triggered continuously while the gantt row is being dragged.
-
-4. [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop): This event is triggered when a drag element is dropped onto a target element.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { RowDDService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { GanttData, columnDataType } from './data';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    imports: [
-        GanttModule, 
-   ],
-providers: [RowDDService, EditService, SelectionService],
-standalone: true,
-    selector: 'app-root',
-    template:
-        `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
-        <ejs-gantt id="gantt" #gantt height="450px" [dataSource]="data" [treeColumnIndex]='1' [splitterSettings]="splitterSettings"
-        [allowRowDragAndDrop]='true' (rowDragStartHelper)="rowDragStartHelper($event)" (rowDrop)="rowDrop($event)"  (rowDragStart)="rowDragStart($event)" 
-        (rowDrag)="rowDrag($event)"
-       [taskFields]="taskSettings">
-            <e-columns>
-                <e-column field='TaskID' headerText='Task ID' textAlign='Right' [isPrimaryKey]='true' width=90 ></e-column>
-                <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=290></e-column>
-                <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=120 ></e-column>
-                <e-column field='Duration' headerText='Duration' textAlign='Right' width=90 ></e-column>
-                <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
-            </e-columns>
-       </ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    public data?: object[];
-    @ViewChild('gantt')
-    public gantt?: GanttComponent;
-    public message?: string;
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public ngOnInit(): void {
-        this.data = GanttData;
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-        this.splitterSettings = {
-            position: '75%'
-        };
-    }
-    rowDragStartHelper(args: RowDragEventArgs): void {
-        this.message = `rowDragStartHelper event triggered`;
-        if (((args.data as Object[])[0] as columnDataType).TaskID === 2) {
-            args.cancel = true;
-        }
-    }
-    rowDragStart(args: RowDragEventArgs) {
-        this.message = `rowDragStart event triggered`;
-        if (((args.data as Object[])[0] as columnDataType).TaskID === 2) {
-            args.cancel = true;
-        }
-    }
-    rowDrag(args: RowDragEventArgs): void {
-        this.message = `rowDrag event triggered`;
-    }
-    rowDrop(args: RowDragEventArgs): void {
-        this.message = `rowDrop event triggered`;
-    }    
-}
-
-{% endraw %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/dragevents-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/dragevents-cs1" %}
-
 ## Perform row drag and drop action programmatically
 
-In the Gantt, you can programmatically rearrange rows by using [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/#reorderrows) method of Gantt chart component. This method takes three arguments:
+To rearrange rows programmatically in the Gantt component, use the `reorderRows` method. This method accepts the following parameters: 
 
-* **fromIndexes** : Current indexes of the rows to be reordered
-* **toIndex** : New index of the row 
-* **position** : New position of the row 
+- **fromIndexes**: Indexes of the rows to be moved.  
+- **toIndex**: Target index for placement.  
+- **position**: Placement relative to the target (e.g., above or below).
 
-In the following example, using `click` event of an external button, row at index 1 is dropped **below** the row at index 2 by using the `reorderRows` method .
+In the example, a `click` event on an external button moves the row at index 1 **below** the row at index 2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -486,28 +377,126 @@ In the following example, using `click` event of an external button, row at inde
   
 {% previewsample "page.domainurl/samples/gantt/row/drag-drop-cs2" %}
 
-## Prevent reordering a row 
+## Customize the drag and drop action
 
-To prevent the default behavior of rows dropping onto the target, set the `args.cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event argument.
+Customize the drag and drop behavior in the Gantt component using the [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstart), [rowDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrag), and [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
-In the following example, the drop action is cancelled using the `rowDrop` event of the gantt.
+In this example, drag and drop actions are customized using event hooks. The `rowDragStartHelper` event prevents dragging for the row where **TaskID** is 2, while the `rowDrop` event cancels the drop action for the row where **TaskID** is 4. Additionally, `rowDragStart` and `rowDrag` apply background styling based on the values in the **Progress** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/prevent-drag-cs2/src/app.component.ts %}
+{% raw %}
+
+import { Component, ViewChild, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttComponent, GanttModule, RowDDService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GanttData } from './data';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  providers: [RowDDService, EditService, SelectionService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <div style="margin-left: 180px;">
+      <p style="color: red;" id="message">{{ message }}</p>
+    </div>
+    <ejs-gantt #gantt height="450px" [dataSource]="data" [treeColumnIndex]="1" [splitterSettings]="splitterSettings" [allowRowDragAndDrop]="true" (rowDragStartHelper)="rowDragStartHelper($event)" (rowDrop)="rowDrop($event)" (rowDragStart)="rowDragStart($event)" (rowDrag)="rowDrag($event)" [taskFields]="taskSettings">
+      <e-columns>
+        <e-column field="TaskID" headerText="Task ID" textAlign="Right" [isPrimaryKey]="true" width="90"></e-column>
+        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
+        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
+        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
+        <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
+      </e-columns>
+    </ejs-gantt>
+  `
+})
+export class AppComponent implements OnInit {
+  @ViewChild('gantt') public gantt?: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: object = {};
+  public splitterSettings: object = {};
+  public message: string = '';
+
+  ngOnInit(): void {
+    this.data = GanttData;
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      child: 'subtasks'
+    };
+    this.splitterSettings = {
+      position: '75%'
+    };
+  }
+
+  rowDragStartHelper(args: RowDragEventArgs): void {
+    this.message = 'rowDragStartHelper event triggered';
+    const draggedTask = (args.data as columnDataType[])[0];
+    if (draggedTask.TaskID === 2) {
+      args.cancel = true;
+      this.message = 'Drag cancelled for TaskID 2';
+    }
+  }
+
+  rowDragStart(args: RowDragEventArgs): void {
+    this.message = 'rowDragStart event triggered';
+    const draggedTask = (args.data as columnDataType[])[0];
+    if (draggedTask.Progress < 50 && args.rows?.length) {
+      args.rows.forEach(row => {
+        (row as HTMLElement).style.background = '#ec9ec8ff';
+      });
+    }
+  }
+
+  rowDrag(args: RowDragEventArgs): void {
+    this.message = 'rowDrag event triggered';
+    if (args.rows?.length && (args.data as columnDataType[])[0].Progress > 50) {
+      args.rows.forEach(row => {
+        (row as HTMLElement).style.background = '#c5f4fdde';
+      });
+    }
+  }
+
+  rowDrop(args: RowDragEventArgs): void {
+    this.message = 'rowDrop event triggered';
+    const draggedTask = (args.data as columnDataType[])[0];
+    if (draggedTask.TaskID === 4) {
+      this.message = 'Drop cancelled for TaskID 4';
+      args.cancel = true;
+    }
+  }
+
+}
+
+export interface columnDataType {
+  TaskID: number;
+  TaskName: string;
+  StartDate: Date;
+  Duration: number;
+  Progress: number;
+  subtasks?: columnDataType[];
+}
+
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/prevent-drag-cs2/src/main.ts %}
+{% include code-snippet/gantt/rows/dragevents-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/rows/prevent-drag-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/rows/dragevents-cs1" %}
 
 ### Prevent reordering a row as child to another row
 
-To prevent the default behavior of dropping rows as children onto the target, set the `args.cancel` property to `true` in the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event argument. Additionally, you can change the drop position using the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/#reorderrows) method, after cancelling the drop action of row as child to another row.
-
-In the following example, the drop action of the dragged row in **Child** position is prevented, and the row is reordered **above** the target row's position by using the `reorderRows` method.
+To prevent rows from being reordered as children, set `args.cancel` to **true** in the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event. After canceling the default drop action, use the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/#reorderrows) method to reposition the row at a specific index. 
+ 
+In the example, the drop action in **Child** position is blocked, and the dragged row is reordered **above** the target row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -524,3 +513,4 @@ In the following example, the drop action of the dragged row in **Child** positi
 
 * [Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)
 * [Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart](https://ej2.syncfusion.com/angular/documentation/gantt/filtering/filtering)
+* [How to configure row drag and drop?](https://ej2.syncfusion.com/angular/documentation/gantt/rows/drag-and-drop)

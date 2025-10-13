@@ -1,28 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, ButtonModule],
     standalone: true,
     selector: 'app-root',
     template:
         `<button ejs-button id='scrolltop' (click)='scroll()'>Set Scroll Top</button>
        <br><br>
-       <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings"></ejs-gantt>`,
+       <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public splitterSettings?: object;
-    @ViewChild('gantt', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -37,8 +35,9 @@ export class AppComponent {
             position: "50%"
         };
     }
-    scroll(): void {
-        this.ganttObj.ganttChartModule.scrollObject.setScrollTop(200);
+
+    public scroll(): void {
+        this.ganttInstance.ganttChartModule.scrollObject.setScrollTop(200);
     };
 }
 

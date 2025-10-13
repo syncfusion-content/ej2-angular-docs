@@ -24,6 +24,7 @@ import { DropDownListComponent, DropDownListAllModule, ChangeEventArgs } from '@
     <ejs-gantt #gantt height="430px" [allowFiltering]="true" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings" [columns]="columns" [filterSettings]="filterSettings">
     </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   @ViewChild('fieldDropDown') public fieldDropDown!: DropDownListComponent;
@@ -66,14 +67,13 @@ export class AppComponent implements OnInit {
     this.fieldData = this.columns.map(col => col.field as string);
   }
 
-  onFieldChange(args: ChangeEventArgs): void {
+  public onFieldChange(args: ChangeEventArgs): void {
     this.typeEnabled = true;
   }
 
-  onTypeChange(args: ChangeEventArgs): void {
+  public onTypeChange(args: ChangeEventArgs): void {
     const selectedField = this.fieldDropDown.value as string;
     const selectedType = args.value as string;
-
     const column = this.columns.find(col => col.field === selectedField);
     if (column) {
       (column as Column).filter = { type: selectedType };

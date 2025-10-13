@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { GanttModule, GanttComponent, FilterService } from '@syncfusion/ej2-angular-gantt';
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { FilterEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,7 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-gantt';
       <p style="color: red; text-align: center;">{{ actionCompleteMessage }}</p>
     </div>
     <ejs-gantt #gantt height="370px" [allowFiltering]="true" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings" [columns]="columns" [filterSettings]="filterSettings" (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
 
 export class AppComponent implements OnInit {
@@ -62,17 +62,17 @@ export class AppComponent implements OnInit {
     };
   }
 
-  public actionBegin(args: any): void {
+  public actionBegin(args: FilterEventArgs): void {
     this.actionBeginMessage = '';
     if (args.requestType === "filterBeforeOpen") {
-      if (args.columnType === 'number') {
-        args.filterModel.customFilterOperators.numberOperator = [
+      if ((args as any).columnType === 'number') {
+        (args as any).filterModel.customFilterOperators.numberOperator = [
           { value: 'equal', text: 'Equal' },
           { value: 'notequal', text: 'Not Equal' }
         ];
         this.actionBeginMessage = 'Custom number filter operators applied.';
-      } else if (args.columnType === 'string') {
-        args.filterModel.customFilterOperators.stringOperator = [
+      } else if ((args as any).columnType === 'string') {
+        (args as any).filterModel.customFilterOperators.stringOperator = [
           { value: 'contains', text: 'Contains' },
           { value: 'startswith', text: 'Starts With' }
         ];
@@ -89,17 +89,18 @@ export class AppComponent implements OnInit {
     }
   }
 
-  public actionComplete(args: any): void {
+  public actionComplete(args: FilterEventArgs): void {
     if (args.requestType === "filterAfterOpen") {
       this.actionCompleteMessage = 'Applied CSS for filter dialog during filterafteropen action';
-      const content = args.filterModel.dlgDiv.querySelector('.e-dlg-content') as HTMLElement;
-      const footer = args.filterModel.dlgDiv.querySelector('.e-footer-content') as HTMLElement;
+      const content = (args as any).filterModel.dlgDiv.querySelector('.e-dlg-content') as HTMLElement;
+      const footer = (args as any).filterModel.dlgDiv.querySelector('.e-footer-content') as HTMLElement;
       if (content) content.style.background = '#eeeaea';
       if (footer) footer.style.background = '#30b0ce';
     }
-
     if (args.requestType === 'filtering') {
       this.actionCompleteMessage = args.requestType + ' action is triggered in actionComplete event';
     }
   }
 }
+
+

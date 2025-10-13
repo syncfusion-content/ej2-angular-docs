@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, EditSettingsModel, EditService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, EditSettingsModel, EditService, ITaskbarEditedEventArgs, IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -63,14 +63,24 @@ export class AppComponent implements OnInit {
         ];
     }
 
-    public taskbarEditing(args: any) {
-        if (args.data.TaskID == 4) // We can't edit Task Id 4
+    public taskbarEditing(args: ITaskbarEditedEventArgs) {
+        if ((args.data as GanttData).TaskID == 4) // We can't edit Task Id 4.
             args.cancel = true;
     };
 
-    public queryTaskbarInfo(args: any) {
-        if (args.data.TaskID == 6) {
-            args.taskbarElement.className += ' e-preventEdit' // Taskbar editing indicators are disabled
+    public queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) {
+        if ((args.data as GanttData).TaskID == 6) {
+            args.taskbarElement.className += ' e-preventEdit' // Taskbar editing indicators are disabled.
         }
     };
+}
+
+interface GanttData {
+    TaskID: number;
+    TaskName: string;
+    StartDate: Date;
+    EndDate: Date;
+    Duration: number;
+    Progress: number;
+    subtasks: GanttData[];
 }

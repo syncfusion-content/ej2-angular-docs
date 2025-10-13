@@ -21,6 +21,7 @@ import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
     }
   `]
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];

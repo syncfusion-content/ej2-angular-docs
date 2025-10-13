@@ -52,10 +52,8 @@ export class AppComponent implements OnInit {
     const data = args.data as { hasChildRecords?: boolean };
     const columnIndex = (args.column as Column).index;
     const treeColumnIndex = this.ganttInstance?.treeColumnIndex;
-
     if (!data.hasChildRecords && columnIndex === treeColumnIndex) {
       args.cell?.classList.add('indents');
     }
   }
-
 }

@@ -21,6 +21,7 @@ import { Column, SearchEventArgs } from '@syncfusion/ej2-grids';
     }
   `]
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   public data: object[] = [];

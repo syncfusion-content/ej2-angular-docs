@@ -14,6 +14,7 @@ import { GanttModule, ToolbarService, EditService, SelectionService } from '@syn
         [enableMultiTaskbar]= 'true' [collapseAllParentTasks]= 'true' ></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public resources?: object[];

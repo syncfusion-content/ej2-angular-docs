@@ -82,7 +82,7 @@ The supported page sizes are:
 
 ## Export current view data
 
-PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#exporttype) to `CurrentViewData`.
+PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#exporttype) to **CurrentViewData**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 
 ## Export hidden columns
 
-PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#includehiddencolumn) to `true`.
+PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#includehiddencolumn) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,9 +164,9 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) and [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforepdfexport) events.
 
-Columns can be shown or hidden by setting the `column.visible` property to true or false, respectively.
+Columns can be shown or hidden by setting the `column.visible` property to **true** or **false**, respectively.
 
-In the following example, the `Duration` column is initially hidden in the Gantt chart. During export, the `Duration` column is made visible and the StartDate column is hidden.
+In the following example, the **Duration** column is initially hidden in the Gantt chart. During export, the **Duration** column is made visible and the StartDate column is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -188,7 +188,7 @@ In the following example, the `Duration` column is initially hidden in the Gantt
 
 TreeGrid cells in the exported PDF can be customized or formatted using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfquerycellinfo) event. This event allows formatting TreeGrid cells in the exported PDF document based on the column cell value.
 
-In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
+In the following sample, the background color is set for **Progress** column in the exported document by using the `args.style.backgroundColor` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -334,7 +334,6 @@ In the following sample, taskbar templates with images and text are exported to 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-taskbar-template/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="app.component.css" %}
 {% include code-snippet/gantt/pdf-export-taskbar-template/src/app.component.css %}

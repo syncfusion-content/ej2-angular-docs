@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, ToolbarItem,  SelectionSettingsModel,ActionBeginArgs, ActionCompleteArgs, GanttModule, EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
 import { CheckBox } from "@syncfusion/ej2-buttons";
 import { TextBox, NumericTextBox, MaskedTextBox } from "@syncfusion/ej2-inputs";
 import { DatePicker, DateTimePicker } from "@syncfusion/ej2-calendars";
@@ -21,7 +16,8 @@ import { editingData } from './data';
   encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+  @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent | any;
   public divElement?: any;
   public inputs = {
     booleanedit: CheckBox,
@@ -40,8 +36,7 @@ export class AppComponent {
   public columns?: object[];
   public toolbar?: ToolbarItem[];
   public selectionSettings?: SelectionSettingsModel;
-  @ViewChild('gantt', { static: true })
-  public ganttObj?: GanttComponent | any;
+
   public ngOnInit(): void {
     this.editingData = editingData;
     this.taskSettings = {
@@ -82,15 +77,16 @@ export class AppComponent {
     ];
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
   }
-  public actionBegin(args: any) {
+  
+  public actionBegin(args: ActionBeginArgs): void {
     if (args.requestType === "beforeOpenEditDialog" || args.requestType === "beforeOpenAddDialog") {
-      var column = this.ganttObj.columnByField["CustomField"];
-      this.divElement = this.ganttObj.createElement("div", { className: "e-edit-form-column" });
+      var column = this.ganttInstance.columnByField["CustomField"];
+      this.divElement = this.ganttInstance.createElement("div", { className: "e-edit-form-column" });
       var inputElement: any;
-      inputElement = this.ganttObj.createElement("input", {
+      inputElement = this.ganttInstance.createElement("input", {
         attrs: {
           type: "text",
-          id: this.ganttObj.controlId + "" + column.field,
+          id: this.ganttInstance.controlId + "" + column.field,
           name: column.field,
           title: column.field
         }
@@ -100,15 +96,16 @@ export class AppComponent {
         enabled: true,
         floatLabelType: "Auto",
         placeholder: "CustomField",
-        value: args.rowData.CustomField
+        value: (args.rowData as any).CustomField
       };
       var inputObj = new (this as any).inputs[column.editType](input);
       inputObj.appendTo(inputElement);
     }
   };
-  public actionComplete(args: any) {
+
+  public actionComplete(args: ActionCompleteArgs): void {
     if (args.requestType === "openEditDialog" || args.requestType === "openAddDialog") {
-      var generalTab = document.getElementById(this.ganttObj.controlId + "GeneralTabContainer");
+      var generalTab = document.getElementById(this.ganttInstance.controlId + "GeneralTabContainer");
       generalTab!.appendChild(this.divElement);
     }
   };

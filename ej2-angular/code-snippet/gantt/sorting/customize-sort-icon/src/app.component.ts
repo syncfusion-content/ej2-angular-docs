@@ -20,6 +20,7 @@ import { GanttModule, SortService } from '@syncfusion/ej2-angular-gantt';
     }
   `]
 })
+
 export class AppComponent implements OnInit {
   public data: object[] = [];
   public taskSettings: object = {};

@@ -14,6 +14,7 @@ import { GanttData } from './data';
        (toolbarClick)="toolbarClick($event)" allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];

@@ -252,6 +252,10 @@ public setHeaderHeight(args) {
 {% include code-snippet/gantt/columns/columnheader-cs8/src/main.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/gantt/columns/columnheader-cs8/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs8/src/data.ts %}
 {% endhighlight %}
@@ -818,7 +822,7 @@ The following example demonstrates how to apply custom styles to specific column
 
 ### Using event
 
-To customize the Gantt component header appearance, use the `headerCellInfo` event. This event triggers when each header cell is rendered and provides access to its details, allowing you to apply custom styles.
+To customize the Gantt component header appearance, use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#headercellinfo) event. This event triggers when each header cell is rendered and provides access to its details, allowing you to apply custom styles.
 
 The following example demonstrates how to check if the current header column is the **TaskID** field and apply a CSS class conditionally:
 

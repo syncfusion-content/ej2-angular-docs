@@ -13,6 +13,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];

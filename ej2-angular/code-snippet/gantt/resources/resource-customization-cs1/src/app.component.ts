@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, IGanttData, IQueryTaskbarInfoEventArgs, } from '@syncfusion/ej2-angular-gantt';
 import { editingResources, GanttData } from './data';
 
 @Component({
@@ -60,8 +60,9 @@ export class AppComponent implements OnInit {
         };
     }
 
-    public getResourceStyle(resource: any) {
-        switch (resource) {
+
+    public getResourceStyle(resource: { resourceId: number; resourceName: string }): string {
+        switch (resource.resourceName) {
             case 'Martin Tamer':
                 this.style = "display: flex; padding: 1.5px 12px; gap: 10px; width: 81px; height: 24px; border-radius: 24px; background: #DFECFF ";
                 break;
@@ -79,8 +80,8 @@ export class AppComponent implements OnInit {
 
     }
 
-    public ResourcesStyles(resource: any) {
-        switch (resource) {
+    public ResourcesStyles(resource: { resourceId: number; resourceName: string }): string {
+        switch (resource.resourceName) {
             case 'Martin Tamer':
                 this.style = "width: 72px; height: 22px; font-style: normal; font-weight: 500; font-size: 14px; line-height: 22px; text-align: center; color: #006AA6";
                 break;
@@ -97,21 +98,25 @@ export class AppComponent implements OnInit {
         return this.style;
     }
 
-    public queryTaskbarInfo(args: any) {
-        if (args.data.resources == 'Martin Tamer') {
+    public queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs): void {
+        const data = args.data as CustomGanttData;
+        if (data.resources?.includes('Martin Tamer')) {
             args.taskbarBgColor = '#DFECFF';
-            args.progressBarBgColor = '#006AA6'
-        } else if (args.data.resources == 'Rose Fuller') {
+            args.progressBarBgColor = '#006AA6';
+        } else if (data.resources?.includes('Rose Fuller')) {
             args.taskbarBgColor = '#E4E4E7';
-            args.progressBarBgColor = '#766B7C'
-        }
-        else if (args.data.resources == 'Margaret Buchanan') {
+            args.progressBarBgColor = '#766B7C';
+        } else if (data.resources?.includes('Margaret Buchanan')) {
             args.taskbarBgColor = '#DFFFE2';
-            args.progressBarBgColor = '#00A653'
-        }
-        else if (args.data.resources == 'Tamer Vinet') {
+            args.progressBarBgColor = '#00A653';
+        } else if (data.resources?.includes('Tamer Vinet')) {
             args.taskbarBgColor = '#FFEBE9';
-            args.progressBarBgColor = '#FF3740'
+            args.progressBarBgColor = '#FF3740';
         }
     }
+
+}
+
+export interface CustomGanttData extends IGanttData {
+    resources?: string[];
 }

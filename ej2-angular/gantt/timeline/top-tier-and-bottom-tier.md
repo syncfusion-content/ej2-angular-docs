@@ -20,7 +20,6 @@ The Angular Gantt component supports a two-tier timeline layout, enabling custom
 
 These properties allow precise control over how time intervals are displayed, enhancing the readability and usability of the Gantt chart across various project scales.
 
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/timeline/top-bottom-tier-cs1/src/app.component.ts %}

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Loading animation in Angular Gantt component
 
-The Angular Gantt component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/#indicatortype) property, indicators support two types: `Spinner`, a rotating circular animation for quick operations, and `Shimmer`, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
+The Angular Gantt component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/#indicatortype) property, indicators support two types: **Spinner**, a rotating circular animation for quick operations, and **Shimmer**, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
 
 ## Configure loading indicators
 
-Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/) property, with `indicatorType` set to `Spinner` (default) or `Shimmer`. Changes to `indicatorType` require component re-initialization for reflection.
+Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/) property, with `indicatorType` set to **Spinner** (default) or **Shimmer**. Changes to `indicatorType` require component re-initialization for reflection.
 
 The following example configures a Shimmer indicator:
 
@@ -25,7 +25,7 @@ export class AppComponent {
     };
 
     public data: object[] = [
-        // Large dataset for demonstration
+        // Large dataset for demonstration.
     ];
 }
 ```
@@ -63,21 +63,21 @@ export class AppComponent {
     public ganttInstance: GanttComponent;
 
     showCustomLoading() {
-        // Display loading indicator manually
+        // Display loading indicator manually.
         this.ganttInstance.showSpinner();
         
         // Perform custom operation
         this.performCustomDataOperation().then(() => {
-          // Hiding loading indicator manually
+          // Hiding loading indicator manually.
             this.ganttInstance.hideSpinner();
         });
     }
 
     async performCustomDataOperation(): Promise<void> {
-        // Simulate data processing
+        // Simulate data processing.
         return new Promise(resolve => {
             setTimeout(() => {
-                // Custom data manipulation
+                // Custom data manipulation.
                 this.updateProjectData();
                 resolve();
             }, 2000);

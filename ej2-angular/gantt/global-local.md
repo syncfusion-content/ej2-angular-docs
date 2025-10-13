@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular Gantt component supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
-### Key globalization features
+## Key globalization features
 
 Globalization encompasses several critical components:
 
@@ -24,7 +24,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [`Localization](../common/localization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [`locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
+The [Localization](../common/localization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript
@@ -43,7 +43,7 @@ The [`Localization](../common/localization) library allows you to localize defau
 
 The following tables organize all available locale keys by functional category:
 
-**Core Task Properties**
+**Core Task Properties:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -69,7 +69,7 @@ The following tables organize all available locale keys by functional category:
 | `ClipBoard` | clipboard |
 | `CheckBoxLabel` | checkbox |
 
-**Filtering**
+**Filtering:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -113,7 +113,7 @@ The following tables organize all available locale keys by functional category:
 | `IsNotEmpty` | Not Empty |
 | `FilterDescription` | Press Alt Down to open filter Menu |
 
-**ColumnMenu**
+**ColumnMenu:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -123,7 +123,7 @@ The following tables organize all available locale keys by functional category:
 | `ColumnMenuDialogARIA` | Column menu dialog |
 | `ColumnMenuDescription` | Press Alt Down to open Column Menu |
 
-**Baseline and Planning**
+**Baseline and Planning:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -135,7 +135,7 @@ The following tables organize all available locale keys by functional category:
 | `auto` | Auto |
 | `manual` | Manual |
 
-**Time Units and Measurements**
+**Time Units and Measurements:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -148,7 +148,7 @@ The following tables organize all available locale keys by functional category:
 | `unit` | Unit |
 | `work` | Work |
 
-**Dialog and Form Elements**
+**Dialog and Form Elements:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -159,7 +159,7 @@ The following tables organize all available locale keys by functional category:
 | `customTab` | Custom Columns |
 | `writeNotes` | Write Notes |
 
-**Action Buttons and Operations**
+**Action Buttons and Operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -173,7 +173,7 @@ The following tables organize all available locale keys by functional category:
 | `okText` | OK |
 | `search` | Search |
 
-**Toolbar and Navigation**
+**Toolbar and Navigation:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -185,7 +185,7 @@ The following tables organize all available locale keys by functional category:
 | `nextTimeSpan` | Next timespan |
 | `prevTimeSpan` | Previous timespan |
 
-**Context Menu Operations**
+**Context Menu Operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -203,7 +203,7 @@ The following tables organize all available locale keys by functional category:
 | `SortAscending` | Sort Ascending |
 | `SortDescending` | Sort Descending |
 
-**Export and Data Operations**
+**Export and Data Operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -211,7 +211,7 @@ The following tables organize all available locale keys by functional category:
 | `csvExport` | CSV export |
 | `pdfExport` | PDF export |
 
-**System Messages and Feedback**
+**System Messages and Feedback:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -220,7 +220,7 @@ The following tables organize all available locale keys by functional category:
 | `confirmPredecessorDelete` | Are you sure you want to remove dependency link? |
 | `enterValue` | Enter the value |
 
-**Task Relationships and Dependencies**
+**Task Relationships and Dependencies:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -235,7 +235,7 @@ The following tables organize all available locale keys by functional category:
 | `SF` | SF |
 | `SS` | SS |
 
-**Specialized Features**
+**Specialized Features:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -247,14 +247,14 @@ The following tables organize all available locale keys by functional category:
 | `unassignedTask` | Unassigned Task |
 | `group` | Group |
 
-**Task Count and Status**
+**Task Count and Status:**
 
 | Locale Key | Default Text |
 |------------|--------------|
 | `task` | task |
 | `tasks` | tasks |
 
-**Schedule Mode and Planning**
+**Schedule Mode and Planning:**
 
 | Locale Key | Default Text |
 |------------|--------------|
@@ -264,7 +264,7 @@ The following tables organize all available locale keys by functional category:
 | `scheduleStartDate` | Schedule Start Date |
 | `scheduleEndDate` | Schedule End Date |
 
-**Advanced dependency relationship messages**
+**Advanced dependency relationship messages:**
 
 The Gantt component includes specialized messages for dependency conflicts:
 
@@ -301,7 +301,7 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [`Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
 Internationalization affects multiple aspects of the Gantt component:
 
@@ -328,7 +328,7 @@ Internationalization affects multiple aspects of the Gantt component:
   
 {% previewsample "page.domainurl/samples/gantt/global/internationalization-cs1" %}
 
-> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [`locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) property defaults to `en-US`. Change this property to your desired locale for proper cultural formatting.
+> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
 ## Right-to-Left (RTL) support
 
@@ -341,7 +341,7 @@ RTL layout affects multiple aspects of the user interface:
 - **Icon orientation**: Directional icons need appropriate orientation
 - **Data presentation**: Maintains logical data relationships while adapting visual presentation
 
-To enable RTL support, set the [`enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) property to `true`:
+To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) property to **true**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -359,11 +359,11 @@ To enable RTL support, set the [`enableRtl](https://ej2.syncfusion.com/angular/d
   
 {% previewsample "page.domainurl/samples/gantt/global/rtl-cs1" %}
 
-The code sets `enableRtl` to `true` and `locale` to `ar`, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
+The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
 
 ## Troubleshooting globalization issues
 
-1. **Missing or incomplete translations**
+1. **Missing or incomplete translations:**
 **Issue**: Some UI elements display in default language despite locale configuration
 **Solutions**:
 - Verify all locale keys are included in translation objects
@@ -371,7 +371,7 @@ The code sets `enableRtl` to `true` and `locale` to `ar`, mirroring the Gantt in
 - Ensure locale property matches loaded translation keys
 - Validate translation object structure and syntax
 
-2. **Encoding and character display issues**
+2. **Encoding and character display issues:**
 **Issue**: Special characters or non-Latin scripts don't display correctly
 **Solutions**:
 - Verify proper UTF-8 encoding in translation files
@@ -379,7 +379,7 @@ The code sets `enableRtl` to `true` and `locale` to `ar`, mirroring the Gantt in
 - Ensure HTML document declares correct charset
 - Test with appropriate fonts for target scripts
 
-3. **Date and number formatting problems**
+3. **Date and number formatting problems:**
 **Issue**: Dates or numbers don't format according to locale
 **Solutions**:
 - Load appropriate CLDR data for target cultures

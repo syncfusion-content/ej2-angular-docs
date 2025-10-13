@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, ToolbarService, PdfExportService, ToolbarItem, GanttComponent, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, ToolbarService, PdfExportService, ToolbarItem, GanttComponent, SelectionService, PdfQueryTimelineCellInfoEventArgs, PdfGanttCellStyle } from '@syncfusion/ej2-angular-gantt'
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingData } from './data';
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
         }
     };
 
-    public pdfQueryTimelineCellInfo(args: any): void {
-        args.timelineCell.backgroundColor = new PdfColor(240, 248, 255);
+    public pdfQueryTimelineCellInfo(args: PdfQueryTimelineCellInfoEventArgs): void {
+        (args.timelineCell as PdfGanttCellStyle).backgroundColor = new PdfColor(240, 248, 255);
     };
 }

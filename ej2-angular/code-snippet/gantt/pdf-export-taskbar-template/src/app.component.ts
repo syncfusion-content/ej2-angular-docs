@@ -1,15 +1,15 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, GanttComponent, ToolbarItem,PdfExportProperties,ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, GanttComponent, ToolbarItem, PdfExportProperties, ToolbarService, PdfExportService, SelectionService, PdfQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-angular-gantt'
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import './app.component.css';
 import { editingResources, base64Data } from './data';
 
 @Component({
-  imports: [GanttModule],
-  providers: [ToolbarService, PdfExportService, SelectionService],
-  standalone: true,
-  selector: 'app-root',
-  template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
+    imports: [GanttModule],
+    providers: [ToolbarService, PdfExportService, SelectionService],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true'  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources"  
        >
        <ng-template #taskbarTemplate let-data>
@@ -33,78 +33,82 @@ import { editingResources, base64Data } from './data';
        </div>
       </ng-template>
      </ejs-gantt>`,
-  encapsulation: ViewEncapsulation.None,
+    encapsulation: ViewEncapsulation.None,
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
-  public data?: object[];
-  public taskSettings?: object;
-  public splitterSettings?: object;
-  public resources?: object[];
-  public rowHeight?: number;
-  public toolbar?: ToolbarItem[];
-  public columns?: object[];
-  public resourceFields?: object;
+    @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public resources?: object[];
+    public rowHeight?: number;
+    public toolbar?: ToolbarItem[];
+    public columns?: object[];
+    public resourceFields?: object;
 
-  public ngOnInit(): void {
-    this.data = base64Data,
-      this.taskSettings = {
-        id: 'TaskID',
-        name: 'TaskName',
-        resourceInfo: 'Resources',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        parentID: 'ParentID',
-      };
-    this.toolbar = ['PdfExport'];
-    this.columns = [
-      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-      { field: 'TaskName', headerText: 'Task Name', width: '150' },
-    ];
-    this.splitterSettings = {
-      columnIndex: 1,
-    };
-    this.resourceFields = {
-      id: 'ResourceId',
-      name: 'ResourceName',
-    };
-    this.resources = editingResources;
-  }
-  
-  public toolbarClick(args: ClickEventArgs): void {
-    if (args.item.id === 'ganttDefault_pdfexport') {
-      let exportProperties: PdfExportProperties = {
-        fileName: 'new.pdf',
-      };
-      this.ganttChart!.pdfExport(exportProperties);
+    public ngOnInit(): void {
+        this.data = base64Data,
+            this.taskSettings = {
+                id: 'TaskID',
+                name: 'TaskName',
+                resourceInfo: 'Resources',
+                startDate: 'StartDate',
+                duration: 'Duration',
+                parentID: 'ParentID',
+            };
+        this.toolbar = ['PdfExport'];
+        this.columns = [
+            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+            { field: 'TaskName', headerText: 'Task Name', width: '150' },
+        ];
+        this.splitterSettings = {
+            columnIndex: 1,
+        };
+        this.resourceFields = {
+            id: 'ResourceId',
+            name: 'ResourceName',
+        };
+        this.resources = editingResources;
     }
-  }
 
-  public pdfQueryTaskbarInfo(args: any): void {
-    if (!args.data.hasChildRecords) {
-      if (args.data.ganttProperties.resourceNames) {
-        args.taskbarTemplate.image = [{
-          width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20
-        }]
-      }
-      args.taskbarTemplate.value = args.data.TaskName;
+    public toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'ganttDefault_pdfexport') {
+            let exportProperties: PdfExportProperties = {
+                fileName: 'new.pdf',
+            };
+            this.ganttChart!.pdfExport(exportProperties);
+        }
     }
-    if (args.data.hasChildRecords) {
-      if (args.data.ganttProperties.resourceNames) {
-        args.taskbarTemplate.image = [{
-          width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20
-        }]
-      }
-      args.taskbarTemplate.value = args.data.TaskName;
+
+    public pdfQueryTaskbarInfo(args: PdfQueryTaskbarInfoEventArgs): void {
+        const data = args.data;
+        const taskbarTemplate = args.taskbarTemplate;
+        if (!data?.hasChildRecords || data?.ganttProperties?.duration === 0) {
+            const resourceNames = data?.ganttProperties?.resourceNames;
+            const resourcesImage = (data as any)?.taskData?.resourcesImage;
+
+            if (resourceNames && taskbarTemplate) {
+                taskbarTemplate.image = [{
+                    width: 20,
+                    height: 20,
+                    base64: resourcesImage
+                }];
+                taskbarTemplate.value = (data as any).TaskName;
+            }
+        }
+        if (data?.hasChildRecords) {
+            const resourceNames = data?.ganttProperties?.resourceNames;
+            const resourcesImage = (data as any)?.taskData?.resourcesImage;
+
+            if (resourceNames && taskbarTemplate) {
+                taskbarTemplate.image = [{
+                    width: 20,
+                    height: 20,
+                    base64: resourcesImage
+                }];
+                taskbarTemplate.value = (data as any).TaskName;
+            }
+        }
     }
-    if (args.data.ganttProperties.duration === 0) {
-      if (args.data.ganttProperties.resourceNames) {
-        args.taskbarTemplate.image = [{
-          width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20,
-        }]
-      }
-      args.taskbarTemplate.value = args.data.TaskName
-    }
-  }
 }

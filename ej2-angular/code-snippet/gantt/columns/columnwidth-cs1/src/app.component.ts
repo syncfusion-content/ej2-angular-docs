@@ -16,9 +16,9 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="auto"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="30%"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   public data: object[] = [];
   public taskSettings: object = {};

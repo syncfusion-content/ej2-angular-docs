@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit} from '@angular/core';
-import { GanttAllModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
 import { constraintData } from './data';
 
 @Component({
@@ -11,7 +11,6 @@ import { constraintData } from './data';
       [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns" [treeColumnIndex]="1" [labelSettings]="labelSettings"
       [splitterSettings]="splitterSettings" [timelineSettings]="timelineSettings" [projectStartDate]="projectStartDate"
       [projectEndDate]="projectEndDate" [eventMarkers]="eventMarkers">
-
       <!-- Right Label Template to Show Constraint Text -->
       <ng-template #rightLabel let-data>
         <div style="margin-top: -7px;">
@@ -21,8 +20,8 @@ import { constraintData } from './data';
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
-    @ViewChild('gantt') ganttObj?: GanttComponent;
     @ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
     public data?: object[];
     public taskSettings?: object;
@@ -97,6 +96,7 @@ export class AppComponent implements OnInit {
         this.allowSelection = true;
         this.height = '450px';
     }
+
     public getConstraintText(value: number): string {
         const map: { [key: number]: string } = {
             0: 'As Soon As Possible',

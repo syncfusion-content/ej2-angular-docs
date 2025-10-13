@@ -38,7 +38,7 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 
 ## Merge tasks dynamically
 
-Merge split tasks using the context menu’s `Merge Task` option, requiring [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) and `ContextMenuService`, or by dragging segments together in the UI. This recombines segments into a single task, ensuring continuity in the project timeline, with `EditService` and valid `taskFields` mappings required.
+Merge split tasks using the context menu’s **Merge Task** option, requiring [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) and `ContextMenuService`, or by dragging segments together in the UI. This recombines segments into a single task, ensuring continuity in the project timeline, with `EditService` and valid `taskFields` mappings required.
 
 ## Limitations of Split tasks
 

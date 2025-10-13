@@ -251,9 +251,9 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Left" width="150"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Left" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   public data: object[] = [];
   public taskSettings: object = {};
@@ -461,7 +461,7 @@ The following example demonstrates how the **Duration** column is configured wit
 
 ### Using methods
 
-You can also show or hide columns in the Angular Gantt component using the [showColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumn) and [hideColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#hidecolumn) methods available in the Gantt. These methods allow you to control column visibility based on either the `headerText` or the `field` property.
+You can also show or hide columns in the Angular Gantt component using the [showColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumn) and [hideColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#hidecolumn) methods available in the Gantt. These methods allow you to control column visibility based on either the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) or the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property.
 
 **Based on header text:**
 
@@ -575,7 +575,7 @@ let fieldNames = this.gantt.treeGrid.getColumnFieldNames()
 
 ### Updating column definitions
 
-To update column definitions in Angular Gantt component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) property to adjust column appearance and behavior by changing attributes like `headerText`, `width`, or `visible`. After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+To update column definitions in Angular Gantt component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

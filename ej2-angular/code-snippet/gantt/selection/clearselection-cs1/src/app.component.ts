@@ -22,8 +22,9 @@ import { DropDownListModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dro
       </ejs-gantt>
     </div>`
 })
+
 export class AppComponent implements OnInit {
-  @ViewChild('gantt', { static: true }) public ganttObj!: GanttComponent;
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
   public taskSettings: object = {};
   public selectionSettings: SelectionSettingsModel = {};
@@ -57,10 +58,12 @@ export class AppComponent implements OnInit {
       type: 'Multiple'
     };
   }
-  valueChange(args: ChangeEventArgs): void {
-    ((this.ganttObj as GanttComponent).selectionSettings.mode as SelectionMode) = (args.value as SelectionMode);
+
+  public valueChange(args: ChangeEventArgs): void {
+    ((this.ganttInstance as GanttComponent).selectionSettings.mode as SelectionMode) = (args.value as SelectionMode);
   }
-  clear(): void {
-    this.ganttObj.clearSelection();
+
+  public clear(): void {
+    this.ganttInstance.clearSelection();
   }
 }

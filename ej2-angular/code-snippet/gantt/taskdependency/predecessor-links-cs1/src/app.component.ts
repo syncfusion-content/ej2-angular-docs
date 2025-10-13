@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, EditSettingsModel, EditService } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditSettingsModel, EditService, ActionBeginArgs } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     imports: [GanttModule],
@@ -10,11 +10,13 @@ import { GanttModule, EditSettingsModel, EditService } from '@syncfusion/ej2-ang
         `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [editSettings]="editSettings" (actionBegin)="actionBegin($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public columns?: object[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -63,9 +65,9 @@ export class AppComponent {
         ];
     }
 
-    public actionBegin(args: any) {
+    public actionBegin(args: ActionBeginArgs) {
         if (args.requestType == "validateLinkedTask") {
-            args.validateMode.respectLink = true;
+            (args as any).validateMode.respectLink = true;
         }
     };
 }

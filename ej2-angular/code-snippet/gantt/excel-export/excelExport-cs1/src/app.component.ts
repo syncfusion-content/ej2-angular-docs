@@ -32,6 +32,7 @@ export class AppComponent implements OnInit{
         };
         this.toolbar =  ['ExcelExport','CsvExport'];
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_excelexport') {
           (this.ganttInstance as GanttComponent).excelExport();

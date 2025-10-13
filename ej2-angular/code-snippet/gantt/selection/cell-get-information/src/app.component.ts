@@ -1,11 +1,6 @@
 import { Component, ViewChild, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  GanttComponent,
-  GanttModule,
-  SelectionService,
-  SelectionSettingsModel
-} from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, SelectionService, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
@@ -65,9 +60,9 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
           </table>
         </div>
       </ng-template>
-    </ejs-dialog>
-  `
+    </ejs-dialog>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
@@ -107,7 +102,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  showSelectedDetails(): void {
+  public showSelectedDetails(): void {
     const records = this.ganttInstance.selectionModule.getCellSelectedRecords() as GanttTask[];
     const indexes = this.ganttInstance.selectionModule.getSelectedRowCellIndexes();
 
@@ -120,7 +115,7 @@ export class AppComponent implements OnInit {
     this.dialogVisible = true;
   }
 
-  dialogClose(): void {
+  public dialogClose(): void {
     this.dialogVisible = false;
   }
 }

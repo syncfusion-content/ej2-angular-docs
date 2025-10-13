@@ -14,6 +14,7 @@ import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
     </div>
     <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [allowSorting]="true" (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)"></ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   public data: object[] = [];
   public taskSettings: object = {};

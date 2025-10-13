@@ -10,6 +10,7 @@ import { GanttModule, EditSettingsModel, ToolbarItem } from '@syncfusion/ej2-ang
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;

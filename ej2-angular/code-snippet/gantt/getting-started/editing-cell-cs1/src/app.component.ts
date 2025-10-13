@@ -10,6 +10,7 @@ import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-ang
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [columns]="columns" [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;

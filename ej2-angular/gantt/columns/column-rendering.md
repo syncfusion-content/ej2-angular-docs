@@ -36,7 +36,7 @@ To manually define columns in the Gantt component, use `e-columns` and set prope
 
 ## Auto generated columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the `dataSource` as individual Gantt columns.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) as individual Gantt columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

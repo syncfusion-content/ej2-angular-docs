@@ -19,12 +19,11 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
-
   public data?: object[];
   public taskSettings?: object;
   public editSettings?: EditSettingsModel;
@@ -50,7 +49,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  rowDataBound(args: RowDataBoundEventArgs): void {
+  public rowDataBound(args: RowDataBoundEventArgs): void {
     const row = args.row;
     if (row) {
       const rowIndex = parseInt(row.getAttribute('aria-rowindex') || '0', 10);

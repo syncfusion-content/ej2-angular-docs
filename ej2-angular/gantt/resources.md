@@ -15,10 +15,10 @@ Resources in the Angular Gantt component represent people, equipment, or materia
 ## Configure resource collection
 
 The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields):
-- `id`: Maps to a unique identifier for task assignment.
-- `name`: Maps to the resource name displayed in labels or columns.
-- `unit`: Maps to the work capacity percentage (0-100%) per day.
-- `group`: Maps to categories for grouping resources.
+- **id**: Maps to a unique identifier for task assignment.
+- **name**: Maps to the resource name displayed in labels or columns.
+- **unit**: Maps to the work capacity percentage (0-100%) per day.
+- **group**: Maps to categories for grouping resources.
 
 The following code demonstrates resource collection setup:
 
@@ -46,8 +46,8 @@ This configuration maps resources for assignment and display.
 
 Resources are assigned to tasks using resource IDs in the data source, mapped via [taskFields.resourceInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
 
-**Single resource assignment**
-Assign a single resource without unit for default 100% allocation:
+**Single resource assignment:**
+Assign a single resource without unit for default 100% allocation.
 
 ```typescript
 { 
@@ -60,8 +60,8 @@ Assign a single resource without unit for default 100% allocation:
 }
 ```
 
-**Multiple resources with custom units**
-Assign multiple resources with specific units:
+**Multiple resources with custom units:**
+Assign multiple resources with specific units.
 
 ```typescript
 {

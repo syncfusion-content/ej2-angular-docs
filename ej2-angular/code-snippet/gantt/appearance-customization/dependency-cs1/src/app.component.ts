@@ -9,6 +9,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskFields" connectorLineBackground="red" [connectorLineWidth]='3'></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public taskFields?: object;

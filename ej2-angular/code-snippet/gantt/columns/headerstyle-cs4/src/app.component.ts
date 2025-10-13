@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Column, GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 import { GanttData } from './data';
 
@@ -25,6 +25,7 @@ import { GanttData } from './data';
   `],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;
@@ -45,9 +46,11 @@ export class AppComponent implements OnInit {
     };
   }
 
+  
   public onHeaderCellInfo(args: HeaderCellInfoEventArgs): void {
-    if ((args.cell as any)?.column?.field === 'TaskID') {
-      (args.node as HTMLElement).classList.add('customcss');
+    const column = args.cell?.column as Column;
+    if (column?.field === 'TaskID') {
+        (args.node as HTMLElement).classList.add('customcss');
     }
   }
 }

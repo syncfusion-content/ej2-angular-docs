@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  selectCells(cellIndexes: number[]): void {
+  public selectCells(cellIndexes: number[]): void {
     this.ganttInstance.clearSelection();
     this.ganttInstance.selectCells(cellIndexes);
   }

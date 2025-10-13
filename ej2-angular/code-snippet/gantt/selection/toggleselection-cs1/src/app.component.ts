@@ -62,11 +62,11 @@ export class AppComponent implements OnInit {
     };
   }
 
-  valueChange(args: ChangeEventArgs): void {
+  public valueChange(args: ChangeEventArgs): void {
    (this.ganttInstance as GanttComponent).selectionSettings.mode = args.value as 'Row' | 'Cell' | 'Both';
   }
 
-  toggleColumnSelection(args: CustomChangeEventArgs): void {
+  public toggleColumnSelection(args: CustomChangeEventArgs): void {
     (this.ganttInstance as GanttComponent).selectionSettings.enableToggle = args.checked;
   }
 }

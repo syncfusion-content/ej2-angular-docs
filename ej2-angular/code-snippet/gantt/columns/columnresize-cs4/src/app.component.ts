@@ -8,12 +8,7 @@ import { GanttData } from './data';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    GanttModule,
-    DropDownListAllModule,
-    TextBoxModule,
-    ButtonModule
-  ],
+  imports: [ GanttModule, DropDownListAllModule, TextBoxModule, ButtonModule ],
   providers: [ResizeService],
   encapsulation: ViewEncapsulation.None,
   template: `
@@ -70,10 +65,9 @@ export class AppComponent implements OnInit {
     };
   }
 
-  onExternalResize(): void {
+  public onExternalResize(): void {
     const field = this.dropDown?.value as string;
     const newWidth = this.textbox?.element.value;
-
     if (field && newWidth && this.ganttInstance) {
       const column = this.ganttInstance.treeGrid.getColumnByField(field);
       if (column) {

@@ -15,9 +15,9 @@ Task scheduling in the Angular Gantt component defines and visualizes task start
 ## Configure scheduling modes
 
 Scheduling modes control task date validation:
-- `Auto` (default): Validates dates based on dependencies, working time, holidays, and weekends. Parent tasks adjust to child tasks' minimum start and maximum end dates.
-- `Manual`: Allows custom dates without automatic validation, editable for parent tasks.
-- `Custom`: Renders both auto and manual tasks from the data source.
+- **Auto** (default): Validates dates based on dependencies, working time, holidays, and weekends. Parent tasks adjust to child tasks' minimum start and maximum end dates.
+- **Manual**: Allows custom dates without automatic validation, editable for parent tasks.
+- **Custom**: Renders both auto and manual tasks from the data source.
 
 Configure using:
 - [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskmode): Sets global mode.
@@ -74,9 +74,9 @@ The following example mixes auto and manual tasks:
 ## Configure task types
 
 Task types define how changes to duration, work, or resource units affect other properties:
-- `FixedUnit` (default): Adjusts duration when work changes, maintaining unit allocation.
-- `FixedWork`: Adjusts duration when units change, maintaining work amount.
-- `FixedDuration`: Adjusts units when work changes, maintaining duration.
+- **FixedUnit** (default): Adjusts duration when work changes, maintaining unit allocation.
+- **FixedWork**: Adjusts duration when units change, maintaining work amount.
+- **FixedDuration**: Adjusts units when work changes, maintaining duration.
 
 Configure using:
 - [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt/#tasktype): Sets global type.
@@ -101,9 +101,9 @@ The following example configures task types:
 Duration units determine how task length is measured and calculated within the project. The Gantt component supports three duration units that can be applied at both project and individual task levels.
 
 The Gantt component supports the following duration units:
-- `Day`: Standard for general planning.
-- `Hour`: For detailed task management.
-- `Minute`: For short-duration tasks.
+- **Day**: Standard for general planning.
+- **Hour**: For detailed task management.
+- **Minute**: For short-duration tasks.
 
 Configure using:
 - [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit): Sets global unit (default: `day`).
@@ -120,11 +120,15 @@ The following example maps duration units:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/mapping-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/mapping-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/mapping-cs2" %}
 
-**Defining duration unit with duration value**
+**Defining duration unit with duration value:**
 The following example defines units in duration values:
 
 {% tabs %}
@@ -139,10 +143,9 @@ The following example defines units in duration values:
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/durationfield-cs2" %}
 
-
 ## Enable unscheduled tasks
 
-Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) set to `true` (default: `false`), defaulting to a 1-day duration from the project start.
+Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) set to **true** (default: **false**), defaulting to a 1-day duration from the project start.
 
 Available unscheduled task types:
 - **Start date only**
@@ -183,7 +186,6 @@ The following example enables unscheduled tasks:
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/unscheduledtasks-cs1" %}
 
-
 ## Configure working time range
 
 Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) sets project-wide working hours.
@@ -198,10 +200,13 @@ The following example sets working hours from 9 AM to 6 PM:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/workingtimerange-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/workingtimerange-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/workingtimerange-cs1" %}
-
 
 ## Configure weekends and non-working days
 
@@ -220,6 +225,10 @@ The following example excludes Monday and Tuesday:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/changenonworkingday-cs1" %}
@@ -228,7 +237,7 @@ The following example excludes Monday and Tuesday:
 Configure weekends with:
 - Default behavior: Saturday and Sunday are non-working.
 - Timeline display: [timelineSettings.showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) controls visibility.
-- Working weekends: [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) set to `true` includes weekends.
+- Working weekends: [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) set to **true** includes weekends.
 
 ## Customize scheduling with events
 
@@ -251,6 +260,7 @@ import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
     standalone: true,
     imports: [GanttModule]
 })
+
 export class AppComponent {
     @ViewChild('gantt', { static: true })
     public ganttChart: GanttComponent;
@@ -269,12 +279,12 @@ export class AppComponent {
         manual: 'isManual'
     };
 
-    public dataBound(args: any): void {
+    public dataBound(args: object): void {
         const tasks = Array.isArray(this.ganttChart.dataSource) ? this.ganttChart.dataSource : [];
         tasks.forEach((task: any) => {
             if (!task.isManual && task.StartDate && new Date(task.StartDate) < this.projectStartDate) {
-                task.isManual = true; // Switch to manual mode
-                this.ganttChart.refresh(); // Refresh Gantt to reflect changes
+                task.isManual = true; // Switch to manual mode.
+                this.ganttChart.refresh(); // Refresh Gantt to reflect changes.
             }
         });
     }

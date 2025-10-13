@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, EditService, EditSettingsModel, IDependencyEventArgs, ActionBeginArgs } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [GanttModule],
@@ -11,7 +11,7 @@ import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-ang
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
@@ -55,19 +55,20 @@ export class AppComponent implements OnInit{
         this.editSettings = {
             allowTaskbarEditing: true
         },
-        this.columns = [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'Predecessor', headerText: 'Depedency', width: '150' },
-            { field: 'TaskName', headerText: 'Task Name', width: '150' },
-            { field: 'StartDate', headerText: 'Start Date', width: '150' },
-            { field: 'Duration', headerText: 'Duration', width: '150' },
-            { field: 'Progress', headerText: 'Progress', width: '150' }
-        ];
+            this.columns = [
+                { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+                { field: 'Predecessor', headerText: 'Depedency', width: '150' },
+                { field: 'TaskName', headerText: 'Task Name', width: '150' },
+                { field: 'StartDate', headerText: 'Start Date', width: '150' },
+                { field: 'Duration', headerText: 'Duration', width: '150' },
+                { field: 'Progress', headerText: 'Progress', width: '150' }
+            ];
     }
 
-    public actionBegin(args: any) {
+    public actionBegin(args: ActionBeginArgs) {
         if (args.requestType == "validateLinkedTask") {
-            args.validateMode.preserveLinkWithEditing = false;
+            (args as any).validateMode.preserveLinkWithEditing = false;
         }
     };
+
 }

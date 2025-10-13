@@ -25,6 +25,7 @@ interface Task {
     <ejs-gantt #gantt height="370px" [dataSource]="data" [taskFields]="taskSettings" (cellSelected)="cellSelected($event)" (cellSelecting)="cellSelecting($event)" (cellDeselected)="cellDeselected($event)" (cellDeselecting)="cellDeselecting($event)" [selectionSettings]="selectionSettings" enableHover="false">
     </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: Task[] = [];
@@ -59,13 +60,13 @@ export class AppComponent implements OnInit {
     };
   }
 
-  cellSelected(args: CellSelectEventArgs): void {
+  public cellSelected(args: CellSelectEventArgs): void {
     this.message = `Trigger cellSelected`;
     this.showMessage = true;
     (args.currentCell as HTMLElement).style.backgroundColor = 'rgb(96, 158, 101)';
   }
 
-  cellSelecting(args: CellSelectingEventArgs): void {
+  public cellSelecting(args: CellSelectingEventArgs): void {
     this.message = `Trigger cellSelecting`;
     this.showMessage = true;
     const task = args.data as Task;
@@ -75,7 +76,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  cellDeselected(args: CellDeselectEventArgs): void {
+  public cellDeselected(args: CellDeselectEventArgs): void {
     this.message = `Trigger cellDeselected`;
     this.showMessage = true;
     if (args.cells && args.cells.length > 0) {
@@ -84,7 +85,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  cellDeselecting(args: CellDeselectEventArgs): void {
+  public cellDeselecting(args: CellDeselectEventArgs): void {
     this.message = `Trigger cellDeselecting`;
     this.showMessage = true;
     if (args.cells && args.cells.length > 0) {

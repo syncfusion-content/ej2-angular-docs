@@ -9,6 +9,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [timelineSettings]="timelineSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;

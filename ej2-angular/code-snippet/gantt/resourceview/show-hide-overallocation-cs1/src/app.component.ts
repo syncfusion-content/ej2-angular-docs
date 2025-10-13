@@ -16,6 +16,7 @@ import { projectNewData } from './data';
         [showOverAllocation] = 'true' (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent
     public data?: object[];
@@ -80,6 +81,7 @@ export class AppComponent implements OnInit {
         this.projectStartDate = new Date('03/25/2019');
         this.projectEndDate = new Date('07/28/2019');
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'showhidebar') {
             this.ganttInstance!.showOverAllocation = this.ganttInstance!.showOverAllocation ? false : true;

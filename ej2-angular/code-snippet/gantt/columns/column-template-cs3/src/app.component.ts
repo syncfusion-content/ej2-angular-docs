@@ -51,6 +51,7 @@ export class AppComponent implements OnInit{
             position: '75%'
         };
     }
+    
     public change(args: ColorPickerEventArgs):void {
         const selectedRows = (this.ganttInstance as GanttComponent).treeGrid.getSelectedRows() as HTMLElement[];
         for (const row of selectedRows) {

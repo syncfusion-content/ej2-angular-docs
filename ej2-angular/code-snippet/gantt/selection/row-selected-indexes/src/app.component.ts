@@ -40,6 +40,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
   `,
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
   public data: object[] = [];
@@ -76,7 +77,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  getSelectedRowInfo(): void {
+  public getSelectedRowInfo(): void {
     // Get selected rows and apply custom style.
     this.selectedRecords = this.ganttInstance.selectionModule.getSelectedRecords() as Task[];
     this.selectedRowIndexes = this.ganttInstance.selectionModule.getSelectedRowIndexes();

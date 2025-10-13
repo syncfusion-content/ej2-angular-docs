@@ -16,8 +16,8 @@ import { GanttData } from './data';
       </e-columns>
     </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public columns?: ColumnModel[];
@@ -40,7 +40,6 @@ export class AppComponent implements OnInit {
       { field: 'Duration', headerText: 'Duration' },
       { field: 'Progress', headerText: 'Progress' }
     ];
-
     this.splitterSettings = {
       position: '75%'
     };

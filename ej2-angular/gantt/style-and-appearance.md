@@ -74,7 +74,7 @@ The Gantt component uses CSS classes for styling, organized by functional areas:
 
 ## Override default styles
 
-Override default CSS styles for custom appearance, using classes like `.e-gantt .e-gantt-parent-taskbar` for parent taskbars or `.e-gantt .e-gantt-milestone` for milestones. Theme Studio customizes themes across components.
+Override default CSS styles for custom appearance, using classes like **.e-gantt .e-gantt-parent-taskbar** for parent taskbars or **.e-gantt .e-gantt-milestone** for milestones. Theme Studio customizes themes across components.
 
 The following example overrides taskbar and milestone styles:
 
@@ -109,10 +109,10 @@ The following example overrides taskbar and milestone styles:
 ## Configure grid lines
 
 Control grid line visibility with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):
-- `Horizontal`: Shows only horizontal lines for row separation.
-- `Vertical`: Shows only vertical lines for column separation.
-- `Both`: Shows both for full grid structure.
-- `None`: Hides all lines for minimal appearance.
+- **Horizontal**: Shows only horizontal lines for row separation.
+- **Vertical**: Shows only vertical lines for column separation.
+- **Both**: Shows both for full grid structure.
+- **None**: Hides all lines for minimal appearance.
 
 The following example configures both grid lines:
 
@@ -124,11 +124,15 @@ The following example configures both grid lines:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/appearance-customization/gridlines-cs1" %}
 
-By default, `gridLines` is `Horizontal`.
+By default, `gridLines` is **Horizontal**.
 
 ## See also
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

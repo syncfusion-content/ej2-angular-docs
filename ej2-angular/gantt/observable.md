@@ -15,7 +15,7 @@ The Angular Gantt component supports [Observable](https://v17.angular.io/guide/o
 ## Bind Observables with async pipe
 
 Bind data to the Gantt component using an Observable with the async pipe, which subscribe on initialization, unsubscribe on destruction, and triggers change detection only on new emissions. The Observable must emit an object with:
-- `result`: Array of tasks with properties like `id`, `TaskName`, and `StartDate`.
+- `result`: Array of tasks with properties like **id**, **TaskName**, and **StartDate**.
 - `count`: Total number of tasks.
 
 The following example demonstrates Observable binding:
@@ -32,10 +32,10 @@ import { TaskStoreService } from './task-store.service';
     template: `
         <ejs-gantt #gantt id='ganttContainer' [dataSource]='tasks | async' height='450px' rowHeight='25'
         [allowSorting]='true' [taskFields]='taskSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
-        </ejs-gantt>
-    `,
+        </ejs-gantt>`,
     providers: [TaskStoreService]
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttChart: GanttComponent;
     public tasks: Observable<DataStateChangeEventArgs>;
@@ -88,6 +88,7 @@ import { map } from 'rxjs/operators';
 @Injectable({
     providedIn: 'root'
 })
+
 export class TaskStoreService extends Subject<any> {
     private apiUrl = 'api/tasks';
 

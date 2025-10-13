@@ -20,6 +20,7 @@ import { GanttData } from './data';
        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
     @ViewChild('gantt', {static: true}) public ganttInstance?: GanttComponent;
     public data?: object[];
@@ -40,6 +41,7 @@ export class AppComponent implements OnInit{
         this.formatOptions = { type: 'date', format: "dd/MM/yyyy" };
         this.toolbar =  ['ExcelExport','CsvExport'];
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_excelexport') {
           (this.ganttInstance as GanttComponent).excelExport();

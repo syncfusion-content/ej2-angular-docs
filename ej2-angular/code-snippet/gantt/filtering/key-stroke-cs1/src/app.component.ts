@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     this.toolbar = ['Search'];
   }
 
-  created(): void {
+  public created(): void {
     (document.getElementById((this.ganttInstance as GanttComponent).element.id + "_searchbar") as Element).addEventListener('keyup', (event) => {
       (this.ganttInstance as GanttComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
     });

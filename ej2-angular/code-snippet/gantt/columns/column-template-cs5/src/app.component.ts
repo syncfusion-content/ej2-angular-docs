@@ -8,7 +8,7 @@ import { GanttData } from './data';
   standalone: true,
   imports: [GanttModule, ChipListModule],
   template: `
-    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
+    <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
       <e-columns>
         <e-column field="TaskID" headerText="Task ID" width="90"></e-column>
         <e-column field="TaskName" headerText="Task Name" width="290">
@@ -21,12 +21,11 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" width="90"></e-column>
         <e-column field="Progress" headerText="Progress" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `,
+    </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;

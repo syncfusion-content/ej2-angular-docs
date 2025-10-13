@@ -59,7 +59,7 @@ When the `prompt`, `plainText`, and `keepFormat` options are all set to false, t
 
 Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `deniedTags`, and `deniedAttrs` settings:
 
-- **`deniedTags`**: Tags listed here will still be removed from the pasted content, even when `cleanFormat` is enabled.
+- **`deniedTags`**: Tags listed here will still be removed from the pasted content.
 - **`deniedAttrs`**: Attributes listed here will also be stripped from the pasted content.
 
 > The `allowedStyleProps` setting only applies if `keepFormat` is enabled.

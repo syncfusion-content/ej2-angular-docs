@@ -16,8 +16,8 @@ To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/doc
 
 To activate filtering functionality, inject the `FilterService` in the `providers` of the component.
 
-> The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
-> The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
+> * The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load
 

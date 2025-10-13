@@ -1,20 +1,16 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
 
-const customFn: (args: { [key: string]: string }) => boolean = (args: { [key: string]: string }) => {
-    return args['value'].length <= 8;
-};
-
 @Component({
     imports: [GanttModule],
     providers: [EditService],
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
@@ -64,7 +60,7 @@ export class AppComponent {
         this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel'];
         this.columns = [
             { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText: 'Task Name', width: '250', validationRules: { required: true, minLength: [customFn, 'Value should be within 8 letters'] } },
+            { field: 'TaskName', headerText: 'Task Name', width: '250', validationRules: { required: true, minLength: [this.customFn, 'Value should be within 8 letters'] } },
             {
                 field: 'StartDate', editType: 'datetimepickeredit', edit: { params: { format: 'M/d/y hh:mm a' } },
                 format: { format: 'M/d/y hh:mm a', type: 'dateTime' }, validationRules: { required: true, date: true }
@@ -73,4 +69,8 @@ export class AppComponent {
             { field: 'Progress', headerText: 'Progress', width: '150', validationRules: { required: true } },
         ];
     }
+
+    public customFn: (args: { [key: string]: string }) => boolean = (args: { [key: string]: string }) => {
+      return args['value'].length <= 8;
+    };
 }

@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  valueChange(args: ChangeEventArgs): void {
+  public valueChange(args: ChangeEventArgs): void {
     ((this.gantt as GanttComponent).selectionSettings.mode as SelectionMode) = (args.value as SelectionMode);
   }
 }

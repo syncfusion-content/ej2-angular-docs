@@ -12,13 +12,15 @@ import { projectNewData } from './data';
         <e-column field="TaskName" width="290">
           <ng-template #headerTemplate>
             <div>
-              <img src="../assets/images/TaskName.png" width="20" height="20" class</ng-template>
+              <img src="../assets/images/TaskName.png" width="20" height="20" class="e-template"></ng-template>
+            </div>
         </e-column>
         <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right"></e-column>
         <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
           <ng-template #headerTemplate>
             <div>
-              <img src="../assets/images/Duration.png" width="20" height="20" class="e-template>
+              <img src="../assets/images/Duration.png" width="20" height="20" class="e-template"></ng-template>
+            </div>
         </e-column>
         <e-column field="Progress" headerText="Progress" width="120" textAlign="Right"></e-column>
       </e-columns>

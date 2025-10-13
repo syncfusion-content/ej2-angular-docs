@@ -1,6 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { GanttModule, GanttComponent, ToolbarService, ToolbarItem, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, GanttComponent, ToolbarService, ToolbarItem, PdfExportService, SelectionService, PdfQueryCellInfoEventArgs, Column, PdfGanttCellStyle } from '@syncfusion/ej2-angular-gantt'
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
 
 @Component({
@@ -41,18 +42,18 @@ export class AppComponent implements OnInit {
     this.toolbar = ['PdfExport'];
   }
 
-  public toolbarClick(args: any): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttChart_pdfexport') {
       this.ganttInstance?.pdfExport();
     }
   }
 
-  public pdfQueryCellInfo(args: any): void {
-    if (args.column.field == 'Progress') {
-      if (args.value < 50) {
-        args.style.backgroundColor = new PdfColor(240, 128, 128);
+  public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
+    if ((args.column as Column).field == 'Progress') {
+      if ((args.value as number) < 50) {
+        (args.style as PdfGanttCellStyle).backgroundColor = new PdfColor(240, 128, 128);
       } else {
-        args.style.backgroundColor = new PdfColor(165, 105, 189);
+        (args.style as PdfGanttCellStyle).backgroundColor = new PdfColor(165, 105, 189);
       }
     }
   }

@@ -16,6 +16,7 @@ import { GanttData } from './data';
     <ejs-gantt #gantt2 id="ganttDefault2" height="250px" [dataSource]="seconDatasource" [taskFields]="secondTaskSettings" allowExcelExport="true" [treeColumnIndex]="1"></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt1', { static: true }) public firtGanttInstance?: GanttComponent;
   @ViewChild('gantt2', { static: true }) public secondGanttInstance?: GanttComponent;

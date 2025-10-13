@@ -28,8 +28,8 @@ import { CommonModule } from '@angular/common';
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;

@@ -20,18 +20,16 @@ import { projectNewData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="150"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="150"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
-  public columnMenuItems = [{ text: 'Clear Sorting', id: 'ganttclearsorting' }];
-  public sortSettings = {
-    columns: [{ field: 'TaskID', direction: 'Descending' }]
-  };
+  public columnMenuItems?: object[];
+  public sortSettings?: object;
 
   ngOnInit(): void {
     this.data = projectNewData;
@@ -46,9 +44,13 @@ export class AppComponent implements OnInit {
     this.splitterSettings = {
       position: '75%'
     };
+    this.columnMenuItems = [{ text: 'Clear Sorting', id: 'ganttclearsorting' }];
+    this.sortSettings = {
+      columns: [{ field: 'TaskID', direction: 'Descending' }]
+    };
   }
 
-  columnMenuClick(args: MenuEventArgs): void {
+  public columnMenuClick(args: MenuEventArgs): void {
     if (args.item.id === 'ganttclearsorting') {
       this.ganttInstance?.clearSorting();
     }

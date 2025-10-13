@@ -14,6 +14,7 @@ import { editingData, image } from './data';
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttChart?: GanttComponent;
     public data?: object[];

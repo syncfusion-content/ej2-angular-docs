@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Header and footer of PDF exporting in Angular Gantt component
 
-Customizing headers and footers in PDF exports of the Angular Gantt component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/) with [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) and [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#enablefooter) set to `false`, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) enabled.
+Customizing headers and footers in PDF exports of the Angular Gantt component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/) with [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader/) and [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter/) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#enablefooter) set to **false**, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) enabled.
 
 ## Write a text in header and footer
 
@@ -118,7 +118,7 @@ The below code illustrates the pdf export customization.
 
 ## Disable footer 
 
-By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter]() property to `false`. 
+By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter]() property to **false**. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

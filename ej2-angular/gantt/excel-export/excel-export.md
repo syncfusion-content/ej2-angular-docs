@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion Angular Gantt component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
  
-To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's providers array. 
+To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array. 
 
 You can trigger export operations using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt/#csvexport) methods, typically within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event.
 

@@ -16,6 +16,7 @@ import { editingData } from './data';
        (toolbarClick)="toolbarClick($event)" (queryCellInfo)='queryCellInfo($event)' (excelQueryCellInfo)='excelQueryCellInfo($event)' (queryTaskbarInfo)='queryTaskbarInfo($event)' allowExcelExport='true' [treeColumnIndex]="1" [columns]="columns" [labelSettings]="labelSettings" [splitterSettings] = "splitterSettings"></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   public data?: object[];
@@ -50,11 +51,13 @@ export class AppComponent implements OnInit {
       columnIndex: 3
     };
   }
+
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_excelexport') {
       this.ganttInstance!.excelExport();
     }
   };
+  
   public excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
     if (args.column.field === 'Progress') {
       const progressValue = args.value as number;

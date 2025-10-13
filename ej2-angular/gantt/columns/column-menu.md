@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular Gantt component
 
-The column menu in the Angular Gantt component offers built-in actions including sorting, filtering, column chooser, and autofit. When users click the column menu icon, a menu appears with these features.
+The column menu in the Angular Gantt component offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 
 To activate the column menu feature, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumnmenu) property to **true** in the Gantt configuration and inject the `ColumnMenuService` into the component's `providers` array.
 
@@ -113,7 +113,7 @@ Customize the default column menu icon in Gantt component by overriding the **.e
 
 To customize the column menu icon, follow these steps:
 
-1. Add custom CSS to override the default icon:
+**1.** Add custom CSS to override the default icon:
 
 ```css
 .e-gantt .e-columnheader .e-icons.e-columnmenu::before {
@@ -121,7 +121,7 @@ To customize the column menu icon, follow these steps:
 }
 ```
 
-2. Import the required icon stylesheets (e.g., Material or Bootstrap5):
+**2.** Import the required icon stylesheets (e.g., Material or Bootstrap5):
 
 ```html
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material.css" rel="stylesheet" />

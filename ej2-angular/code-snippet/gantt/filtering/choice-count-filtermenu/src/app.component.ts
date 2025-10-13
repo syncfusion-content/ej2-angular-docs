@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { GanttModule, FilterService } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, FilterService, FilterChoiceRequestEventArgs, ActionBeginArgs } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ import { GanttModule, FilterService } from '@syncfusion/ej2-angular-gantt';
     <ejs-gantt height="370px" [allowFiltering]="true" [dataSource]="localData" [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [filterSettings]="filterSettings" (actionBegin)="actionBegin($event)">
     </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   public localData: object[] = [];
   public taskSettings: object = {};
@@ -54,9 +55,9 @@ export class AppComponent implements OnInit {
     };
   }
 
-  public actionBegin(args: any): void {
+  public actionBegin(args: ActionBeginArgs): void {
     if (args.requestType === "filterchoicerequest" || args.requestType === "filtersearchbegin") {
-      args.filterChoiceCount = 1000;
+      (args as FilterChoiceRequestEventArgs).filterChoiceCount = 1000;
     }
   }
 }

@@ -19,11 +19,13 @@ import { GanttData } from './data';
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit{
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
+
   public ngOnInit(): void {
     this.data = GanttData;
     this.taskSettings = {
@@ -39,7 +41,8 @@ export class AppComponent implements OnInit{
       position: '75%'
     };
   }
-  rowDataBound(args: RowDataBoundEventArgs) {
+
+  public rowDataBound(args: RowDataBoundEventArgs) {
     if (args.row?.ariaRowIndex === '3') {
       args.row.children[3].innerHTML = '';
     }

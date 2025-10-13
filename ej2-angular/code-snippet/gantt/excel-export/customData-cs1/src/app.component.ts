@@ -33,6 +33,7 @@ export class AppComponent implements OnInit {
         };
         this.toolbar = ['ExcelExport'];
     }
+    
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_excelexport') {
             let excelExportProperties: ExcelExportProperties = {

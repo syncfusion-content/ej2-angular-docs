@@ -11,10 +11,10 @@ import { GanttData } from './data';
   providers: [ExcelExportService, ToolbarService],
   template: `
     <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" allowExcelExport="true" [treeColumnIndex]="1">
-    </ejs-gantt>
-  `,
+    </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   public data?: object[];
@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
     };
     this.toolbar = ['ExcelExport', 'CsvExport'];
   }
-
 
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_excelexport') {

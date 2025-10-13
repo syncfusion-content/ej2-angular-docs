@@ -19,6 +19,7 @@ import { GanttData } from './data';
   `,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data?: object[];

@@ -10,6 +10,7 @@ import { GanttModule, SelectionService, DayMarkersService } from '@syncfusion/ej
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" baselineColor='red' [tooltipSettings]="tooltipSettings" [eventMarkers]="eventMarkers"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: Object[];
     public taskSettings?: object;

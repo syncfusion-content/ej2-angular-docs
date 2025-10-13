@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, Column } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { GanttData } from './data';
 
@@ -21,6 +21,7 @@ import { GanttData } from './data';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?:  GanttComponent;
   public data: object[] = [];
@@ -43,8 +44,8 @@ export class AppComponent implements OnInit {
     };
   }
 
-  updateColumns(): void {
-    const columns: any = (this.ganttInstance as GanttComponent).treeGrid.columns;
+  public updateColumns(): void {
+    const columns = ((this.ganttInstance as GanttComponent).treeGrid.columns as Column[]);
     if (columns) {
       columns[0].textAlign = 'Center';
       columns[0].width = '100';

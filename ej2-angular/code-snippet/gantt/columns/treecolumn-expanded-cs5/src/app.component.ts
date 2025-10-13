@@ -38,10 +38,10 @@ import { GanttData } from './data';
       </ng-template>
     </ejs-dialog>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   @ViewChild('dialog') public dialogObj?: DialogComponent;
-
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;

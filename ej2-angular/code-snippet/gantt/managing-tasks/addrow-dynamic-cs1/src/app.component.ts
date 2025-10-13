@@ -7,13 +7,13 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
     providers: [EditService],
     standalone: true,
     selector: 'app-root',
-    template:
-        `
+    template:`
        <button ejs-button id='addRow' (click)='add()'>Add Row</button>
        <br><br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];

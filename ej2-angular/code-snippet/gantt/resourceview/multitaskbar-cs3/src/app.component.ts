@@ -14,6 +14,7 @@ import { GanttModule, ToolbarService, EditService, SelectionService } from '@syn
         [enableMultiTaskbar]= 'true' ></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     public resources?: object[];
@@ -23,8 +24,8 @@ export class AppComponent implements OnInit {
     public projectEndDate?: Date;
     public resourceFields?: object;
     public editSettings?: object;
-    public columns: ({ field: string; ss: any; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: number; ss?: undefined; } | { field: string; headerText: string; ss?: undefined; width?: undefined; } | { field: string; ss?: undefined; headerText?: undefined; width?: undefined; })[] | undefined;
     public toolbar?: object;
+    public columns?: object[];
 
     public ngOnInit(): void {
         this.data = [
