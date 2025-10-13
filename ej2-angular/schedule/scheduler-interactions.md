@@ -3,7 +3,7 @@ layout: post
 title: Scheduler interactions in Angular Schedule | Syncfusion
 description: Learn about various interactions in the Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Schedule
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
