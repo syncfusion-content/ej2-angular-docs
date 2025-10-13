@@ -3,7 +3,7 @@ layout: post
 title: Getting started with Angular Schedule component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Schedule component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Schedule
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
