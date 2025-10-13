@@ -3,7 +3,7 @@ layout: post
 title: Timezone in Angular Schedule component | Syncfusion
 description: Learn here all about Timezone in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Scheduler 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
