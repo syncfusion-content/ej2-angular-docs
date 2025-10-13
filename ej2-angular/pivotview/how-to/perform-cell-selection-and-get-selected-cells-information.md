@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Perform cell selection and get selected cells information in Angular Pivotview component | Syncfusion
-description: Learn here all about Perform cell selection and get selected cells information in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Select Cells & Get Info in Angular Pivot Table | Syncfusion
+description: Select and retrieve data from cells in the Syncfusion EJ2 Angular Pivot Table. Learn to manage user interaction and data extraction.
 platform: ej2-angular
 control: Perform cell selection and get selected cells information 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform cell selection and get selected cells information in Angular Pivotview component
+# Cell Selection and Getting Cell Information
 
 You can select any cell/row by setting the property `gridSettings.allowSelection` as `true` where the selected cells can be highlighted. It can be done through mouse down or arrow keys.
 

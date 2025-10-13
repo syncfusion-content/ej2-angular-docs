@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Apply condition based hyper link for specific row or column in Angular Pivotview component | Syncfusion
-description: Learn here all about Apply condition based hyper link for specific row or column in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Conditional Hyperlink in Angular Pivot Table | Syncfusion
+description: Apply conditional hyperlinks to rows or columns in the Syncfusion EJ2 Angular Pivot Table. Dynamically create unique cell links based on values.
 platform: ej2-angular
 control: Apply condition based hyper link for specific row or column 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Apply condition based hyper link for specific row or column in Angular Pivotview component
+# Conditional Hyperlinks for Specific Rows or Columns
 
 You can apply conditions for specific row or column using `label` option to show hyperlink option in the pivot table. It can be configured using the `conditionalSettings` option through code behind, during initial rendering. The required settings are:
 

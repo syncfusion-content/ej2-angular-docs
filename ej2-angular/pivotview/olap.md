@@ -788,3 +788,47 @@ In the field list, each node uses a specific icon to help users quickly identify
 | ![Attribute hierarchy icon in JavaScript pivot table control](images/AttributeHierarchy.png) | Attribute hierarchy | Hierarchy | Yes |
 | ![First level icon in JavaScript pivot table control](images/FirstLevel.png)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.png)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.png) | Levels (in order) | Level element | Yes |
 | ![NamedSet icon in JavaScript pivot client control](images/NamedSet.png) | Named set | Named set | Yes |
+
+## Events
+
+### BeforeServiceInvoke
+
+The [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#beforeserviceinvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
+
+* This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
+* It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
+
+When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#beforeserviceinvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeServiceInvokeEventArgs/#customproperties) field.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/olap-beforeServiceInvoke" %}
+
+### AfterServiceInvoke
+
+The [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#afterserviceinvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
+
+* This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
+* You may use it to audit data, trigger notifications, or handle custom response-handling logic.
+
+When the [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#afterserviceinvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/olap-afterServiceInvoke/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/olap-afterServiceInvoke/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/olap-afterServiceInvoke" %}
