@@ -3,7 +3,7 @@ layout: post
 title: Recurrence editor in Angular Schedule component | Syncfusion
 description: Learn here all about Recurrence editor in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Scheduler 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
