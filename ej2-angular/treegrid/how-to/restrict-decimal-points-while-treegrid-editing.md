@@ -26,4 +26,4 @@ In the demo below, editing a row restricts typing decimal point values in the Nu
 
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs14" %}
 
-> For more feature details, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).
+> For more feature details, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/treegrid-overview).
