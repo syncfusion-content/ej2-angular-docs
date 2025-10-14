@@ -14,6 +14,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data: object[] = [];
@@ -44,11 +45,10 @@ export class AppComponent implements OnInit {
     { text: 'Collapse All', tooltipText: 'Collapse All', prefixIcon: 'e-collapse-2', id: 'collapseall', align: 'Right' }];
   }
 
-  toolbarClick(args: ClickEventArgs): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'expandall') {
       (this.ganttInstance as GanttComponent).expandAll();
     }
-
     if (args.item.id === 'collapseall') {
       (this.ganttInstance as GanttComponent).collapseAll();
     }

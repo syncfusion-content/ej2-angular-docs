@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row Spanning in Angular Gantt Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports **row cell spanning**, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 
 To enable row spanning, use the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#rowspan) attribute inside the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event. This event is triggered for each grid cell, where you can define the number of rows a cell should span based on its data.
 

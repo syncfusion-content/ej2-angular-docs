@@ -20,9 +20,9 @@ Virtual scrolling enhances performance by rendering only the visible portion of 
 
 Scrollbars appear based on content size:
 
-- Vertical scrollbar: Triggers when task row height exceeds the component’s height.
-- Horizontal scrollbar: Triggers when column width exceeds the tree grid pane.
-- Timeline scrollbar: Triggers when the timeline exceeds the chart area.
+- **Vertical scrollbar:** Triggers when task row height exceeds the component’s height.
+- **Horizontal scrollbar:** Triggers when column width exceeds the tree grid pane.
+- **Timeline scrollbar:** Triggers when the timeline exceeds the chart area.
 
 For precise layout control, set fixed dimensions using pixel values for both [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/gantt/#height).
 
@@ -58,7 +58,7 @@ You can make the Gantt component responsive by setting its [width](https://ej2.s
 
 The Angular Gantt component provides built-in support for automatically scrolling to specific tasks and timeline positions, which is especially useful when working with large datasets.
 
-To scroll vertically to a specific task row, use the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectrow) method to select the desired task and apply [setScrollTop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#setscrolltop) to bring it into view within the grid.
+To scroll vertically to a specific task row, use the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectrow) method to select the desired task and apply [setScrollTop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#setscrolltop) to bring the selected row into view.
 
 To scroll horizontally to a specific timeline date, use the [scrollToDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#scrolltodate) method. This helps focus the timeline on a particular point in time.
 
@@ -78,7 +78,7 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 
 ## Synchronize horizontal scroll between Gantt charts
 
-To synchronize horizontal scrolling across multiple Gantt components, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event with the `HorizontalScroll` action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
+To synchronize horizontal scrolling across multiple Gantt components, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

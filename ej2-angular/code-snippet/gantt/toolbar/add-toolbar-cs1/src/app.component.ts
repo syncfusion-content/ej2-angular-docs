@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import {GanttModule, EditService, ToolbarService, SelectionService, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import {GanttModule, EditService, GanttComponent, ToolbarService, SelectionService, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public ganttInstance?: GanttModule;
+  @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data: object[] = [];
   public taskSettings: object = {};
   public editSettings: EditSettingsModel = {};
@@ -31,7 +31,6 @@ export class AppComponent implements OnInit {
       { TaskID: 7, TaskName: 'Material Listing', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 35 },
       { TaskID: 8, TaskName: 'Approval of Estimate', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 85 }
     ];
-
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
@@ -52,8 +51,8 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  created() {
-    let toolbar = ((this.ganttInstance as any).element as HTMLElement).querySelector('.e-toolbar');
-    (this.ganttInstance as any).element.appendChild(toolbar as HTMLElement);
+  public created() {
+    let toolbar = ((this.ganttInstance as GanttComponent).element as HTMLElement).querySelector('.e-toolbar');
+    (this.ganttInstance as GanttComponent).element.appendChild(toolbar as HTMLElement);
   }
 }

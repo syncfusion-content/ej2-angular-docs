@@ -8,69 +8,69 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Integrate LLM via Ollama with Angular AI AssistView Component
 
-# LLM via Ollama With AI AssistView component
-
-The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. The component acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
+The AI AssistView component integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your Angular application. The component acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
-* Requires `Node.js` (v16 or higher) and `npm`.
+Before starting, ensure you have the following:
 
-* [Ollama](https://ollama.com) application should be installed to run and manage LLM models locally.
+* **Node.js**: Version 16 or higher with npm.
 
-* Syncfusion AI AssistView for angular `@syncfusion/ej2-angular-interactive-chat` installed in your Angular project.
+* [Ollama](https://ollama.com) installed to run and manage LLM models locally.
 
-## Step 1: Getting Started with the AI AssistView component
+* **Syncfusion AI AssistView**: Package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat) installed.
 
-Before integrating LLM model, ensure that the Syncfusion AI AssistView component is correctly rendered in your application:
-[ Angular Getting Started Guide](../getting-started)
+* **Angular CLI**: For project setup and execution.
 
-## Step 2: Install Dependencies
+* **Marked Library**: For parsing Markdown responses (`npm install marked --save`).
 
-Install the Syncfusion AI AssistView in your project
+## Set Up the Angular Environment
 
-```bash 
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView component in your Angular application using Angular CLI.
 
-npm install @syncfusion/ej2-angular-interactive-chat --save
+## Install Dependency
 
-```
+To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
 
-* Download and install `Ollama` based on your operating system:
+## Configuring Ollama
 
-{% tabs %}
-{% highlight ts tabtitle="Windows" %}
+Install Ollama for your operating system:
 
-1. Visit [Windows](https://ollama.com/download)
-2. Click `Download for Windows` to get the `.exe installer`. 
-3. Run `OllamaSetup.exe` and follow the wizard to install.
+    {% tabs %}
+    {% highlight ts tabtitle="Windows" %}
 
-{% endhighlight %}
+    1. Visit [Windows](https://ollama.com/download)
+    2. Click `Download for Windows` to get the `.exe installer`. 
+    3. Run `OllamaSetup.exe` and follow the wizard to install.
 
-{% highlight ts tabtitle="MAC" %}
+    {% endhighlight %}
 
-1. Visit [macOS](https://ollama.com/download/mac)
-2. Click `Download for macOS` to get `.dmg file`
-3. Install it by following the wizard.
+    {% highlight ts tabtitle="macOS" %}
 
-{% endhighlight %}
+    1. Visit [macOS](https://ollama.com/download/mac)
+    2. Click `Download for macOS` to get `.dmg file`
+    3. Install it by following the wizard.
 
-{% highlight ts tabtitle="Linux" %}
+    {% endhighlight %}
 
-1. Visit [Linux](https://ollama.com/download/linux)
-2. Run the below command to install Ollama in your system
+    {% highlight ts tabtitle="Linux" %}
 
-```bash
-          
-curl -fsSL https://ollama.com/install.sh | sh
+    1. Visit [Linux](https://ollama.com/download/linux)
+    2. Run the below command to install Ollama in your system
 
-```
-{% endhighlight %}
-{% endtabs %}
+    ```bash
+            
+    curl -fsSL https://ollama.com/install.sh | sh
 
-## Step 3: Install and Run an Ollama Model
+    ```
+    {% endhighlight %}
+    {% endtabs %}
 
-1. Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models
+## Download and run an Ollama model
+
+1. Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models.
  
 ```bash
 
@@ -78,7 +78,7 @@ ollama run deepseek-r1
 
 ```
 
-2. Once the model download is complete, start the Ollama server to make the model accessible:
+2. After the model download completes, start the Ollama server to make the model accessible:
 
 ```bash
 
@@ -86,9 +86,13 @@ ollama serve
 
 ```
 
-## Step 4: Configure AI AssistView in Angular
+## Configure AI AssistView with Ollama
 
-Create `src/app/app.component.ts` to connect the Syncfusion AI AssistView to the LLM model:
+To integrate Ollama with the Syncfusion AI AssistView component in your Angular application:
+
+* Modify the a standalone `app.component.ts` file to host the integration logic.
+
+* Configure the connection to the Ollama server (typically running on `http://localhost:11434`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,15 +105,3 @@ Create `src/app/app.component.ts` to connect the Syncfusion AI AssistView to the
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/ai-assistview/ai-integrations/llm-model" %}
-
-## Step 5: Run and Test 
-
-Run the application in the browser using the following command.
-
-```bash
-
-ng serve
-
-```
-
-Open the hosted link to interact with your AI model where you can enter prompts and receive responses from the Ollama model.

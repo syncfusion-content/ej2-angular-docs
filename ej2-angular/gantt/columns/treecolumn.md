@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Tree column in Angular Gantt component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a structured way to display **parent-child relationships** using expand/collapse icons.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a structured way to display parent-child relationships using expand/collapse icons.  
 
-To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property to the index of the column where these icons should appear.  This enables clear visualization and navigation of hierarchical tasks within the Gantt chart..
+To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
 
 ```ts
 
@@ -59,7 +59,7 @@ To apply custom icons, override the default styles with the following CSS:
 
 ## Customize indentation of tree column text 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the **indent space** in tree column cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the indent space in tree column cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event.  
 
 In the following demonstration, indentation is applied by dynamically adding a CSS class to the tree column cell of **TaskName** using the `queryCellInfo` event.
 
@@ -218,8 +218,8 @@ You can customize expand and collapse behavior in the Syncfusion<sup style="font
 
 The following sample demonstrates how to customize expand and collapse actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component:
 
-- Expanding is cancelled for the row where **TaskID** is 1.  
-- Collapsing is cancelled for the row where **TaskID** is 5.  
+- Expanding is canceled for the row where **TaskID** is 1.  
+- Collapsing is canceled for the row where **TaskID** is 5.  
 - When a row is expanded and its **Progress** is greater than 50, a green background is applied.  
 - When a row is collapsed and its **Progress** is less than 50, a red background is applied.
 

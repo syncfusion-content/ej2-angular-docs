@@ -4,6 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { PromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
 import { marked } from 'marked';
 
+// Initializes the AI Assist component
 @Component({
   standalone: true,
   imports: [AIAssistViewModule],
@@ -23,9 +24,10 @@ import { marked } from 'marked';
 export class AppComponent {
   @ViewChild('aiassist') aiAssistView!: AIAssistViewComponent;
 
+  // Initialize Gemini API
   private geminiApiKey: string = ''; // Replace with your Gemini API key
   private genAI = new GoogleGenerativeAI(this.geminiApiKey);
-  private model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Replace with updated gemini model
+  private model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Select the Gemini model (update model name as needed)
   private stopStreaming: boolean = false;
 
   public suggestions: string[] = [
@@ -42,6 +44,7 @@ export class AppComponent {
     }
   };
 
+  // Stream AI response in chunks
   public streamResponse = async (response: string) => {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -60,9 +63,10 @@ export class AppComponent {
     this.aiAssistView.promptSuggestions = this.suggestions;
   };
 
+  // Handle user prompt: call Gemini model
   public promptRequest = async (args: PromptRequestEventArgs) => {
     try {
-      const result = await this.model.generateContent(args.prompt || 'Hi');
+      const result = await this.model.generateContent(args.prompt);
       const response = await result.response.text();
       this.stopStreaming = false;
       await this.streamResponse(response);

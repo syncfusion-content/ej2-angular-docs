@@ -23,7 +23,6 @@ import { GanttData } from './data';
           </e-columns>
         </ejs-gantt>
       </div>
-
       <div class="treegrid-panel">
         <ejs-treegrid #treegrid id="TreeGrid" [editSettings]="treeGridEditSettings" childMapping="subtasks">
           <e-columns>
@@ -34,8 +33,7 @@ import { GanttData } from './data';
           </e-columns>
         </ejs-treegrid>
       </div>
-    </div>
-  `,
+    </div>`,
   styles: [`
     .container {
       display: flex;
@@ -85,7 +83,6 @@ export class AppComponent implements OnInit {
       const rowIndex = !isNullOrUndefined((args.target as Element).closest('.e-row'))
         ? ((args.target as HTMLElement).closest('.e-row') as any).rowIndex
         : 0;
-
       const draggedData = args.data as object[];
       draggedData.forEach(item => {
         this.treeGridObject?.addRecord(item, rowIndex);

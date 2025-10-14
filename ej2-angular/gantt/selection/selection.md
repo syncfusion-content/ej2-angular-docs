@@ -14,7 +14,7 @@ The Selection feature provides the ability to highlight a row or cell in the Gan
 
 To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowselection) property to **false**.
 
-To enable selection functionality, inject the [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule) module in the **providers** section of your Angular application.
+To enable selection functionality, inject the [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule) module in the `providers` section of your Angular application.
 
 The Gantt component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property. They are:
 
@@ -85,7 +85,7 @@ Persist Selection retains selected tasks even after performing actions such as s
 
 The hover highlighting feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart enhances usability by visually highlighting **tree grid rows**, **chart task bars**, **header cells**, and **timeline cells** on hover. This makes it easier to follow tasks in complex project timelines.
 
-To enable this feature, set the [enableHover](https://ej2.syncfusion.com/angular/api/gantt/#enablehover) property to **true** in the component. By default, this property is set to **false**.
+To enable this feature, set the `enableHover` property to **true** in the component. By default, this property is set to **false**.
 
 The following code example shows how to enable the hover highlighting in Gantt.
 
@@ -119,7 +119,7 @@ To clear selected rows and cells in the Gantt component, use the [clearSelection
 
 ## Touch interaction
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smartphones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
 
 [Single Row selection](selection/row-selection/#selection-mode): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
 

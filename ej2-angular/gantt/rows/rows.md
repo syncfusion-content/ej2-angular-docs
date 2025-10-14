@@ -77,7 +77,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component pro
 
 To customize rows in the grid section, you can use the following methods:
 
-- [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#getrowbyindex): Returns the HTML element of a row at a specific index.
+- `getRowByIndex`: Returns the HTML element of a row at a specific index.
 - `getRows`: Returns all row elements in the grid.
 - `getRowInfo`: Provides the data and index for a row element.
 - `getSelectedRowIndexes`: Returns indexes of selected rows.
@@ -85,7 +85,7 @@ To customize rows in the grid section, you can use the following methods:
 
 To customize rows in the chart section, the following methods are available:
 
-- [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#getrowbyindex): Returns the HTML element of a chart row at a specific index.
+- `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
 The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event of the Gantt chart.
@@ -151,9 +151,9 @@ You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</
 
 ### Customize row height for particular row 
 
-You can customize the height of a specific row in the Syncfusion Gantt chart using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property for rows based on their data.
+You can customize the height of a specific row in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property for rows based on their data.
 
-In the example below, the row height is set to **90px** for the row where **TaskID** is '2'.
+In the example below, the row height is set to **90px** for the row where **TaskID** is 2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,7 +167,7 @@ In the example below, the row height is set to **90px** for the row where **Task
 {% previewsample "page.domainurl/samples/gantt/rows/rowstyle-cs6" %}
 
 >* In virtual scrolling mode, it is not applicable to set different row heights.
->* You can customize the row height of multiple rows by checking the relevant criteria in the `dataBound` event and setting the `rowHeight` property accordingly.
+>* You can customize the row height of multiple rows by checking the relevant criteria in the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event and setting the `rowHeight` property accordingly.
 
 ## Row hover with custom action or items
 
@@ -201,10 +201,10 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
         <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `,
+    </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
@@ -229,10 +229,8 @@ export class AppComponent implements OnInit {
 
   dataBound(): void {
     const ganttElement = (this.gantt as GanttComponent).getRootElement() as HTMLElement;
-
     ganttElement.addEventListener('mouseover', (mouseargs: MouseEvent) => {
       let target: any;
-
       if (
         mouseargs.target &&
         ((mouseargs.target as HTMLElement).classList.contains('e-rowcell') ||
@@ -240,18 +238,15 @@ export class AppComponent implements OnInit {
       ) {
         target = mouseargs.target as HTMLElement;
       }
-
       if (target) {
         const buttonElement = document.createElement('button');
         buttonElement.textContent = 'Row details';
-
         const tooltip = new Tooltip({
           content: buttonElement,
           width: '100px',
           height: '40px',
           opensOn: 'Hover'
         }, target);
-
         buttonElement.addEventListener('click', () => {
           const rowElement = target.closest('.e-row') || target.closest('.e-chart-row');
           if (rowElement) {
@@ -259,7 +254,6 @@ export class AppComponent implements OnInit {
             if (rowIndex !== null && this.gantt) {
               const rowInfo = this.gantt.treeGrid.getRowInfo(target);
               const rowData = rowInfo?.rowData as any;
-
               if (rowData) {
                 this.message = `Button clicked for Task ID: ${rowData['TaskID']}`;
               }
@@ -282,7 +276,7 @@ export class AppComponent implements OnInit {
 
 ## Adding a new row programmatically
 
-The Syncfusion Gantt chart allows adding a new row programmatically using the `addRecord` method. This is useful when you want to insert a record without manually entering data. The method accepts three parameters:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows adding a new row programmatically using the `addRecord` method. This is useful when you want to insert a record without manually entering data. The method accepts three parameters:
 
 - A **data object** representing the new row  
 - A **newRowPosition**, which controls where the row is inserted based on the `newRowPosition` property.  
@@ -307,14 +301,14 @@ Supported `newRowPosition` values:
   
 {% previewsample "page.domainurl/samples/gantt/rows/addrow-cs1" %}
 
->* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the `addRecord `method.
+>* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method.
 >* If you do not specify an index, the new row will be added at the top of the gantt.
 
 ## Show or hide a row using an external actions
 
-You can show or hide specific rows in the Syncfusion Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using [getRowByIndex](https://ej2.syncfusion.com/documentation/api/gantt/#getrowbyindex) from the `treeGrid` object and Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event to manage row visibility dynamically.
+You can show or hide specific rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using `getRowByIndex` from the `treeGrid` object and Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event to manage row visibility dynamically.
 
-In this example, the `onCheckBoxChange` method checks the checkbox state and uses `getRowsObject` to iterate through all grid rows. If the **TaskName** value is **Perform Soil test**, the row is hidden using `getRowByIndex` by setting its display style to "none", and its index is stored in a `hiddenRows` array. When the checkbox is unchecked, the method loops through `hiddenRows` to show each row by resetting its display style and then clears the array.
+In this example, the `onCheckBoxChange` method checks the checkbox state and uses `getRowsObject` to iterate through all grid rows. If the **TaskName** value is **Perform Soil test**, the row is hidden using `getRowByIndex` by setting its display style to **none**, and its index is stored in a `hiddenRows` array. When the checkbox is unchecked, the method loops through `hiddenRows` to show each row by resetting its display style and then clears the array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -329,9 +323,9 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
 
 ## How to get the row data and element
 
-The Syncfusion Gantt chart provides several methods to retrieve row data and elements. These are useful for accessing specific rows, performing custom operations, or manipulating displayed data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides several methods to retrieve row data and elements. These are useful for accessing specific rows, performing custom operations, or manipulating displayed data.
 
-1. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#getrowbyindex): Returns the grid row element at a specific index.
+1. `getRowByIndex`: Returns the grid row element at a specific index.
 
     ```ts
     const rowElement = this.gantt.treeGrid.getRowByIndex(rowIndex);
@@ -359,7 +353,7 @@ The Syncfusion Gantt chart provides several methods to retrieve row data and ele
     ```ts
     const selectedRowElements = this.gantt.treeGrid.getSelectedRows();
     ```
-6. [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#getrowbyindex): Retrieves the chart row element at a specific index.
+6. `getRowByIndex`: Retrieves the chart row element at a specific index.
 
     ```ts
      const rowElement = this.gantt.getRowByIndex(rowIndex);

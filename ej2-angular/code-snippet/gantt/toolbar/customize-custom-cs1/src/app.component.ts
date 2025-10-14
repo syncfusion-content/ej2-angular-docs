@@ -14,13 +14,12 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
     </div>
     <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings"
     [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)">
-    </ejs-gantt>
-  `,
+    </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
-
   public data: object[] = [];
   public taskSettings: object = {};
   public editSettings: EditSettingsModel = {};
@@ -38,7 +37,6 @@ export class AppComponent implements OnInit {
       { TaskID: 7, TaskName: 'Material Listing', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 35 },
       { TaskID: 8, TaskName: 'Approval of Estimate', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 85 }
     ];
-
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
@@ -48,20 +46,17 @@ export class AppComponent implements OnInit {
       progress: 'Progress',
       parentID: 'ParentID'
     };
-
     this.editSettings = {
       allowAdding: true,
       allowEditing: true,
       allowDeleting: true
     };
-
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
   }
 
-  toolbarClick(args: ClickEventArgs): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'Gantt_add') {
       args.cancel = true;
-
       const newRecord = {
         TaskID: Math.floor(Math.random() * 100000),
         TaskName: 'New Task',
@@ -70,7 +65,6 @@ export class AppComponent implements OnInit {
         Duration: 1,
         Progress: 0
       };
-
       this.ganttInstance?.addRecord(newRecord);
       this.message = 'The default add action was cancelled. A new task was added using `addRecord()`.';
     }

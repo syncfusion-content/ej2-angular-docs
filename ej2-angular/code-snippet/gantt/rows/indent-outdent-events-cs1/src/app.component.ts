@@ -44,7 +44,6 @@ export class AppComponent implements OnInit {
 
   public onActionComplete(args: ActionCompleteArgs): void {
     const taskData = args.data as IGanttData[];
-
     if (args.requestType === 'outdented') {
       this.message = `Task ID ${(taskData[0] as GanttTask).TaskID} has been outdented`;
     } else if (args.requestType === 'indented') {

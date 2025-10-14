@@ -30,7 +30,7 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
 
 > * You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.
 > * After columns are reordered, their data positions also change. Ensure any dependent logic is updated to reflect the new column order.
-> * You can disable the reordering of a particular column by setting the `GanttColumn.AllowReordering` property to **false**.
+> * You can disable the reordering of a particular column by setting the `allowReordering` property to **false**.
 
 ## Disable column reordering for specific columns
 

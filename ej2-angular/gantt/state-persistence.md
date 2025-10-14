@@ -16,7 +16,7 @@ To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/d
 
 ## Restore initial Gantt state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when `enablePersistence` is enabled.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablepersistence) is enabled.
 
 ### Changing component id
 
@@ -97,9 +97,9 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
-> When the `enablePersistence` property is set to **true**, the Gantt features such as column template, column formatter, header text, and value accessor will not persist.
+> When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablepersistence) property is set to **true**, the Gantt features such as column template, column formatter, header text, and value accessor will not persist.
 
-The example below shows how to prevent Gantt columns from being persisted. In the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event, override the `addOnPersist` method and remove `Columns` from the persistence key list.
+The example below shows how to prevent Gantt columns from being persisted. In the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event, override the `addOnPersist` method and remove [Columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/#columns) from the persistence key list.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

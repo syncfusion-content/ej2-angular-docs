@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
 
-To enable this feature, inject the **RowDDService** in the `providers` array of the **AppComponent**. Once injected, enable the functionality by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
+To enable this feature, inject the `RowDDService` in the `providers` array of the **AppComponent**. Once injected, enable the functionality by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property.
 
 ## Drag and drop within the Gantt chart
 
@@ -57,7 +57,7 @@ If the border line appears at both the top and bottom of the target row (e.g., T
 
 ## Drag and drop to custom component 
 
-You can drag rows from the Gantt component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the `load` event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event to handle the drop and perform necessary actions.
+You can drag rows from the Gantt component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](https://ej2.syncfusion.com/angular/documentation/gantt/events#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event to handle the drop and perform necessary actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,7 +72,7 @@ You can drag rows from the Gantt component into custom components for seamless d
 
 ## Drag and drop multiple rows together
 
-You can drag and drop multiple rows simultaneously in the Gantt component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property to **Multiple** , and set the `allowRowDragAndDrop` property is set to **true**.
+You can drag and drop multiple rows simultaneously in the Gantt component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property to **Multiple** , and set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowrowdraganddrop) property is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -358,13 +358,13 @@ export class AppComponent {
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt component, use the `reorderRows` method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Gantt component, use the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/#reorderrows) method. This method accepts the following parameters: 
 
 - **fromIndexes**: Indexes of the rows to be moved.  
 - **toIndex**: Target index for placement.  
 - **position**: Placement relative to the target (e.g., above or below).
 
-In the example, a `click` event on an external button moves the row at index 1 **below** the row at index 2.
+In the example, a [click](https://ej2.syncfusion.com/angular/documentation/api/button/#click) event on an external button moves the row at index 1 **below** the row at index 2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -410,9 +410,9 @@ import { GanttData } from './data';
         <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
         <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
       </e-columns>
-    </ejs-gantt>
-  `
+    </ejs-gantt>`
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public gantt?: GanttComponent;
   public data: object[] = [];
@@ -471,7 +471,6 @@ export class AppComponent implements OnInit {
       args.cancel = true;
     }
   }
-
 }
 
 export interface columnDataType {

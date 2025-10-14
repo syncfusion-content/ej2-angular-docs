@@ -15,9 +15,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component pro
  * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
  * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) to **true**, inject **EditService** and **SelectionService** in **AppComponent**, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem/) to perform `Indent` and `Outdent` actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem/) to perform indent and outdent actions.
 
-The following sample demonstrates how to enable `Indent` and `Outdent` functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property.
+The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ The following sample demonstrates how to programmatically select row index **2**
 
 ## Retrieve Indent and outdent details
 
-You can retrieve indent and outdent details using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event, where the `args.requestType` value will be either `indented` or `outdented`, indicating the type of action performed.
+You can retrieve indent and outdent details using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

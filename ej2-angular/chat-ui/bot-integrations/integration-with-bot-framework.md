@@ -8,40 +8,44 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft Bot Framework With Angular Chat UI component
+# Integrate Microsoft Bot Framework with Angular Chat UI Component
 
-The Syncfusion Angular Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
-
-## Getting Started With the Chat UI component
-
-Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI component is correctly rendered in your application:
-
-[Angular Getting Started Guide](../getting-started)
+The Chat UI component integrates with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring Direct Line in Azure, and integrating the Chat UI in the application.
 
 ## Prerequisites
 
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
 * [Microsoft Azure Account](https://portal.azure.com/#home) : Required to create and host the bot.
-* `Node.js Environment`: The backend portion requires `Node.js` and `npm`.
-* `Syncfusion Chat UI for Angular`: Install `@syncfusion/ej2-angular-interactive-chat` in your Angular project.
-* `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
+
+* **Syncfusion Chat UI**: Package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat) installed.
+
+* **Deployed Azure Bot**: A bot should be created and published using the [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0), which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
+
+## Set Up the Angular Environment
+
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
 
 ## Install Dependencies
 
+Install the required packages:
+
 * Install `frontend` dependencies for bot communication and the Syncfusion Chat UI:
 
-    * Install `directline-js` package to handle communication with the Bot Framework.
-
-    * Install `axios` for the HTTP requests.
-
 ```bash
-npm install @syncfusion/ej2-angular-interactive-chat --save
+
 npm install botframework-directlinejs axios --save
+
 ```
 
 * Install `backend` dependencies for the token server:
 
 ```bash
+
 npm install express axios cors dotenv
+
 ```
 
 ## Configure the Azure Bot
@@ -106,7 +110,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 
 ## Configure ChatUI
 
-Create `app.component.ts` to connect the Syncfusion Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
+Modify the `app.component.ts` file to connect the Syncfusion Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,7 +209,9 @@ export class AppComponent implements OnInit, OnDestroy {
 Navigate to the `token-server` folder and run the following command to start the server:
 
 ```bash
+
 node index.js
+
 ```
 
 ### Start the Angular frontend
@@ -213,7 +219,9 @@ node index.js
 In a separate terminal window, navigate to your Angular project folder and start the development server:
 
 ```bash
+
 ng serve
+
 ```
 Open the Host link to interact with your Microsoft Bot Framework chatbot.
 

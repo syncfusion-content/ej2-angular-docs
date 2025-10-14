@@ -216,11 +216,11 @@ You can customize the appearance of values in Gantt template columns using HTML 
 ```ts
 
  <e-column field='StartDate'  headerText='Start Date' textAlign='Left' width=120>
-        <ng-template #template let-data>
-         {% raw %}
-          {{ data.StartDate | date:'dd/MMM/yyyy' }}
-        {% endraw %}
-        </ng-template>
+    <ng-template #template let-data>
+      {% raw %}
+        {{ data.StartDate | date:'dd/MMM/yyyy' }}
+      {% endraw %}
+    </ng-template>
  </e-column>
 
 ```

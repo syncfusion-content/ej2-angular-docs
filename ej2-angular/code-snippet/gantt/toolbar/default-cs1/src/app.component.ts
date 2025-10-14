@@ -31,7 +31,6 @@ export class AppComponent implements OnInit {
       { TaskID: 7, TaskName: 'Material Listing', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 35 },
       { TaskID: 8, TaskName: 'Approval of Estimate', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 85 }
     ];
-
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',

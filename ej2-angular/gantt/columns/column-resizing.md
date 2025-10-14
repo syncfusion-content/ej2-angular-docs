@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize columns in Angular Gantt Chart component | Syncfusion
-description: Learn how to resize columns in the Syncfusion Angular Gantt Chart component, including dynamic resizing, minimum and maximum width constraints, external resizing, and customization options.
+description: Learn to resize columns in the Angular Gantt Chart with dynamic sizing, width limits, and external customization options.
 platform: ej2-angular
 control: Column resizing
 documentation: ug
@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component all
 
 Column width can be adjusted by dragging the right edge of the header, with changes applied immediately.  
 
-To use the column resize feature, inject **ResizeService** in the `providers` of the component.  
+To use the column resize feature, inject `ResizeService` in the `providers` of the component.  
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ The following example demonstrates how the **TaskID** column can be configured w
 
 ## Prevent resizing for particular column
 
-You can prevent resizing for a specific column in the Gantt component to maintain a consistent column width. To disable resizing, set the[allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective/#allowresizing) property of the respective column to **false**.  
+You can prevent resizing for a specific column in the Gantt component to maintain a consistent column width. To disable resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective/#allowresizing) property of the respective column to **false**.  
 
 The following example demonstrates how to disable resizing for the **TaskID** column.
 

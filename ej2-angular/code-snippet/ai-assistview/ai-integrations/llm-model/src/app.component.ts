@@ -3,6 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule, AIAssistViewComponent, ToolbarSettingsModel, PromptRequestEventArgs, ToolbarItemClickedEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
 import { marked } from 'marked';
 
+// Initialize AI AssistView Component
 @Component({
     imports: [FormsModule, ReactiveFormsModule, AIAssistViewModule],
     standalone: true,
@@ -45,6 +46,7 @@ export class AppComponent {
         this.stopStreaming = true;
     }
 
+    //  Handle user prompt: call local LLM via Ollama
     public onPromptRequest(args: PromptRequestEventArgs): void {
         setTimeout(async () => {
             let lastResponse: string = '';
@@ -63,6 +65,7 @@ export class AppComponent {
                 const reply = await response.json();
                 const responseUpdateRate = 10;
 
+                // Stream AI response in chunks
                 async function streamResponse(this: AppComponent, response: string) {
                     let i = 0;
                     const responseLength = response.length;

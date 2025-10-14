@@ -62,7 +62,6 @@ export class AppComponent implements OnInit {
   public onCheckBoxChange(args: ChangeEventArgs): void {
     const gantt = this.ganttInstance;
     if (!gantt) return;
-
     const rows = gantt.treeGrid.grid.getRowsObject();
     if (args.checked) {
       rows.forEach((row, index) => {
@@ -75,7 +74,6 @@ export class AppComponent implements OnInit {
           this.hiddenRows.push(index);
         }
       });
-
       if (this.hiddenRows.length > 0) {
         this.message = `Rows with task name 'Perform Soil test' have been hidden.`;
       }

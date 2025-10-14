@@ -18,6 +18,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('gantt') public ganttInstance?: GanttComponent;
   public data: object[] = [];
@@ -36,7 +37,6 @@ export class AppComponent implements OnInit {
       { TaskID: 7, TaskName: 'Material Listing', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 35 },
       { TaskID: 8, TaskName: 'Approval of Estimate', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 85 }
     ];
-
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
@@ -46,27 +46,24 @@ export class AppComponent implements OnInit {
       progress: 'Progress',
       parentID: 'ParentID'
     };
-
     this.editSettings = {
       allowAdding: true,
       allowEditing: true,
       allowDeleting: true
     };
-
     this.toolbar = [{ text: 'Quick Filter', id: 'QuickFilter' }, { text: 'Clear Filter', id: 'ClearFilter' }];
   }
 
-  toolbarClick(args: ClickEventArgs): void {
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'QuickFilter') {
       (this.ganttInstance as GanttComponent).filterByColumn('TaskName', 'startswith', 'Approval');
     }
-
     if (args.item.id === 'ClearFilter') {
       (this.ganttInstance as GanttComponent).clearFiltering();
     }
   }
 
-  onSwitchChange(args: ChangeEventArgs): void {
+  public onSwitchChange(args: ChangeEventArgs): void {
     const enable = args.checked as boolean;
     (this.ganttInstance as GanttComponent).toolbarModule.enableItems(['QuickFilter', 'ClearFilter'], enable);
   }

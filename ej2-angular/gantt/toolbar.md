@@ -114,7 +114,7 @@ You can customize the appearance of toolbar buttons in the Gantt component using
 
 ## Add toolbar at the bottom of gantt
 
-To reposition the toolbar to the bottom of the Gantt chart, use the `created` event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
+To reposition the toolbar to the bottom of the Gantt chart, use the [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,7 +132,7 @@ To reposition the toolbar to the bottom of the Gantt chart, use the `created` ev
 
 You can add custom items to the Gantt chart toolbar by setting the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbarclick) event.
 
-By default, custom toolbar items are aligned to the left. However, you can change their position using the `align` property. In the example below, the `Collapse All` toolbar item is aligned to the right.
+By default, custom toolbar items are aligned to the left. However, you can change their position using the `align` property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,7 +150,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 ## Built-in and custom items in toolbar
 
-The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, `ExpandAll` and `CollapseAll` are built-in items, while `Test` is a custom item added to the toolbar.
+The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** is a custom item added to the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,7 +166,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
 
 ## Enable/disable toolbar items
 
-You can control toolbar items dynamically using the `enableItems` method. This allows you to enable or disable specific items based on user actions or application state.
+You can control toolbar items dynamically using the [enableItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableitems) method. This allows you to enable or disable specific items based on user actions or application state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

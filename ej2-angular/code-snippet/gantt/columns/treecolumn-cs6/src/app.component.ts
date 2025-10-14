@@ -98,7 +98,6 @@ export class AppComponent {
   }
 }
 
-
 export interface IGanttTask {
   TaskID: number;
   TaskName: string;

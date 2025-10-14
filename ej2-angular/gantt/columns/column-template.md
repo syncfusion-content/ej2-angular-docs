@@ -195,7 +195,7 @@ export class AppComponent implements OnInit {
   }
 
   public onClick(event: MouseEvent, taskName: string): void {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault(); // Prevent default anchor behavior.
     const baseUrl = 'https://www.meaningofthename.com/';
     const searchUrl = `${baseUrl}${encodeURIComponent(taskName)}`;
     window.open(searchUrl, '_blank');
