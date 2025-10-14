@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Resource view in Angular Gantt component | Syncfusion
-description: Learn here all about Resource view in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure resource view in the Syncfusion Angular Gantt component for hierarchical task visualization and resource allocation.
 platform: ej2-angular
-control: Resource view 
+control: Resource view
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Resource view in Angular Gantt component
 
-The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#viewtype) property to `ResourceView`.
+The resource view in the Angular Gantt component organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [viewType](https://ej2.syncfusion.com/angular/documentation/api/gantt/#viewtype) to `ResourceView`, this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles, and overallocation indicators highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
 
-## Resource task
+## Configure resource view
 
-A task assigned to one or more resources are termed as resource task and it is added as child task to the respective resource. Already assigned task can also be shared or moved with other resources by adding a resource name to the task or removing resource name from the task by cell or dialog editing.
+Enable resource view by setting [viewType](https://ej2.syncfusion.com/angular/documentation/api/gantt/#viewtype) to `ResourceView` and mapping resources via [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) and [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields). Tasks are assigned using [taskFields.resourceInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo).
 
->Note: Currently there is no support for unscheduled task in Resource view Gantt.
+The following example configures resource view:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,19 +26,21 @@ A task assigned to one or more resources are termed as resource task and it is a
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/resource-view-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resourceview/resource-view-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/resourceview/resource-view-cs1" %}
 
-## Resource overAllocation
+This configuration groups tasks by resources, displaying them as child nodes.
 
-When a resource is assigned too much of work to complete within a day of resource’s available time then it is called as overallocation.
+## Visualize resource overallocation
 
-The available working time of resources for completing the task in a day will be calculated based on the `dayWorkingTime` property and `resource unit`.
+Overallocation occurs when tasks exceed a resource’s daily capacity, calculated from [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) and resource unit in [resourceFields.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/#unit). Enable indicators with [showOverAllocation](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showoverallocation) set to `true` (default: `false`), highlighting affected date ranges with square brackets.
 
-The range of overallocation dates can be highlighted by a square bracket. It can be enabled by setting the `showOverallocation` property as `true`. The following code example demonstrates how to hide or show the over allocation by clicking the custom button.
-
->Note: By default, the `showOverAllocation` property value is `false`.
+The following example toggles overallocation visibility:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,17 +50,27 @@ The range of overallocation dates can be highlighted by a square bracket. It can
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/show-hide-overallocation-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resourceview/show-hide-overallocation-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/resourceview/show-hide-overallocation-cs1" %}
 
-## Unassigned task
+This configuration highlights scheduling conflicts for workload management.
 
-A task not assigned to any one of the resource are termed as unassigned tasks. The unassigned tasks are grouped with a name as `Unassigned Task` and displayed at the bottom of Gantt data collection . It is validated at load time during Gantt record creation by default based on a task `resourceInfo` mapping property in the Gantt chart data source. If the resource is assigned to the unassigned grouped tasks, the task will be moved as child to the respective resource.
+## Manage unassigned tasks
+
+Tasks not assigned to any resource are termed unassigned tasks. These tasks are automatically grouped under a node labeled **Unassigned Task** and displayed at the bottom of the Gantt data collection. The system validates task assignments during load time based on the [taskFields.resourceInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#resourceinfo) mapping property in the data source.
+
+When a resource is subsequently assigned to an unassigned task, the task automatically moves to become a child of the respective resource node.
 
 ## Enable taskbar drag and drop
 
-In Gantt, you can enable taskbar drag and drop between resources by using the [`allowTaskbarDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
+Enable taskbar drag-and-drop between resources with [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) set to `true`, requiring the `RowDDService` module. This allows vertical taskbar movement for reassignment, triggered by the [rowDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstart) and [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) events.
+
+The following example enables drag-and-drop:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,6 +80,22 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resourceview/multitaskbar-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/resourceview/multitaskbar-cs2" %}
+
+This configuration supports dynamic task reassignment.
+
+## Limitations
+
+- Resource view does not support parent tasks; all tasks must be child tasks under resources or the "Unassigned Task" node.
+- Unscheduled tasks (lacking start date or duration) are not supported in resource view.
+
+## See also
+- [How to configure resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
+- [How to enable multi taskbar?](https://ej2.syncfusion.com/angular/documentation/gantt/multi-taskbar)
+- [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

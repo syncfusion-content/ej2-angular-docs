@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Change schedule dates in Angular Gantt component | Syncfusion
-description: Learn here all about Change schedule dates in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Update project schedule dates in Angular Gantt component | Syncfusion
+description: Learn how to programmatically update project schedule dates in the Syncfusion Angular Gantt component to adjust timelines and task schedules efficiently.
 platform: ej2-angular
-control: Change schedule dates 
+control: Schedule dates
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Change schedule dates in Angular Gantt component
 
-In the Gantt component, you can change the schedule start and end dates by clicking the custom button programmatically using the [`updateProjectDates`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateprojectdates) method. You can pass the start and end dates as method arguments to the [`updateProjectDates`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateprojectdates) method. You can also pass the Boolean value as an additional parameter, which is used to round-off the schedule start and end dates displayed in Gantt timeline.
+# Update project schedule dates in Angular Gantt component
+
+The [`updateProjectDates`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateprojectdates) method in the Angular Gantt component enables programmatic adjustment of the project’s start and end dates, seamlessly updating the timeline and task positions for efficient schedule management. By passing valid `Date` objects for the start and end dates, you can shift the entire project timeline, such as moving a project forward by a month to accommodate delays. An optional Boolean `roundOff` parameter, when set to `true`, aligns dates to the timeline’s unit (e.g., days or weeks), ensuring a clean and consistent display. Ensure the Gantt has a defined `dataSource` and [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelinesettings) to render the updated schedule accurately. Use valid date formats and leverage the `roundOff` option to optimize timeline rendering for clarity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -20,5 +21,10 @@ In the Gantt component, you can change the schedule start and end dates by click
 {% include code-snippet/gantt/how-to/changescheduledates-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/how-to/changescheduledates-cs1" %}
+
+## See also
+- [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

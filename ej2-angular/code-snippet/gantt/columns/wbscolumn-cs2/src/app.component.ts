@@ -1,16 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { WBSData } from './data';
 
-
 @Component({
-    imports: [
-         GanttAllModule
-    ],
-standalone: true,
+    imports: [GanttAllModule],
+    standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttWbs" #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"
@@ -23,9 +18,9 @@ standalone: true,
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    @ViewChild('gantt')
-    public ganttObj?: GanttComponent;
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt') public ganttInstance?: GanttComponent;
     public isRowDropped: boolean = false;
     public data?: object[];
     public taskSettings?: object;
@@ -47,6 +42,7 @@ export class AppComponent {
     public projectStartDate?: Date;
     public projectEndDate?: Date;
     public eventMarkers?: object[];
+
     public ngOnInit(): void {
         this.data = WBSData;
         this.taskSettings = {
@@ -102,16 +98,18 @@ export class AppComponent {
         this.projectStartDate = new Date('03/31/2024');
         this.projectEndDate = new Date('05/30/2024');
     }
+
     public dataBound(): void {
         if (this.isRowDropped) {
-            this.ganttObj.enableAutoWbsUpdate = false;
+            this.ganttInstance.enableAutoWbsUpdate = false;
             this.isRowDropped = false;
         }
     }
+
     public actionBegin(args: any): void {
         if (args.requestType === "beforeDrop") {
             this.isRowDropped = true;
-            this.ganttObj.enableAutoWbsUpdate = true;
+            this.ganttInstance.enableAutoWbsUpdate = true;
         }
     }
 }

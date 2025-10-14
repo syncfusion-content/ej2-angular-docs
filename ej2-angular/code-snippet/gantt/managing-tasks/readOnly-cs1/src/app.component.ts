@@ -2,32 +2,24 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule, ContextMenuService, EditService, SortService, ResizeService } from '@syncfusion/ej2-angular-gantt'
 import { SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { EditSettingsModel, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SelectionService, ContextMenuService, EditService, SortService, ResizeService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [SelectionService, ContextMenuService, EditService, SortService, ResizeService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [readOnly]= "true" [enableContextMenu]="true" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings"  [toolbar]="toolbar"></ejs-gantt>`,
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [readOnly]= "true" [enableContextMenu]="true" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings"  [toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
-    public editSettings?: EditSettingsModel| any;
+    public editSettings?: EditSettingsModel | any;
     public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = [
@@ -37,8 +29,8 @@ export class AppComponent{
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -64,14 +56,11 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.editSettings = {
-             allowEditing: true,
-             allowAdding: true,
-             allowDeletinf: true,
-             allowTaskbarEdititng: true
+            allowEditing: true,
+            allowAdding: true,
+            allowDeletinf: true,
+            allowTaskbarEdititng: true
         };
-        this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll','PrevTimeSpan','NextTimeSpan','Indent','Outdent'];
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll', 'PrevTimeSpan', 'NextTimeSpan', 'Indent', 'Outdent'];
     }
 }
-
-
-

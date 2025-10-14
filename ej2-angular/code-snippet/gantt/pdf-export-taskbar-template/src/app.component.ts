@@ -1,27 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import {
-  ToolbarService,
-  PdfExportService,
-  SelectionService,
-} from '@syncfusion/ej2-angular-gantt'
-import './app.component.css';
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import {
-  GanttComponent,
-  ToolbarItem,
-  PdfExportProperties
-} from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ToolbarItem,PdfExportProperties,ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import './app.component.css';
 import { editingResources, base64Data } from './data';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
-imports: [ GanttModule],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+  imports: [GanttModule],
+  providers: [ToolbarService, PdfExportService, SelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true'  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources"  
@@ -49,17 +35,18 @@ standalone: true,
      </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
   public resources?: object[];
   public rowHeight?: number;
   public toolbar?: ToolbarItem[];
-  @ViewChild('ganttDefault', { static: true })
-  public ganttChart?: GanttComponent;
-  columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; })[] | undefined;
+  public columns?: object[];
   public resourceFields?: object;
+
   public ngOnInit(): void {
     this.data = base64Data,
       this.taskSettings = {
@@ -68,13 +55,13 @@ export class AppComponent {
         resourceInfo: 'Resources',
         startDate: 'StartDate',
         duration: 'Duration',
-        parentID:'ParentID',
+        parentID: 'ParentID',
       };
     this.toolbar = ['PdfExport'];
-    this.columns =  [
-      { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
-      { field: 'TaskName', headerText:  'Task Name', width: '150'},
-  ];
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+      { field: 'TaskName', headerText: 'Task Name', width: '150' },
+    ];
     this.splitterSettings = {
       columnIndex: 1,
     };
@@ -84,6 +71,7 @@ export class AppComponent {
     };
     this.resources = editingResources;
   }
+  
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
       let exportProperties: PdfExportProperties = {
@@ -92,6 +80,7 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
+
   public pdfQueryTaskbarInfo(args: any): void {
     if (!args.data.hasChildRecords) {
       if (args.data.ganttProperties.resourceNames) {

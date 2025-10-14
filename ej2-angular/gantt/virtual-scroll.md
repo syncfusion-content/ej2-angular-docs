@@ -1,24 +1,22 @@
 ---
 layout: post
 title: Virtual scroll in Angular Gantt component | Syncfusion
-description: Learn here all about Virtual scroll in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure virtual scrolling in the Syncfusion Angular Gantt component for high-performance rendering of large datasets and wide timelines.
 platform: ej2-angular
-control: Virtual scroll 
+control: Virtual scroll
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Virtual scroll in Angular Gantt component
 
-Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
+Virtual scrolling in the Angular Gantt component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 
-## Row virtualization
+## Configure row virtualization
 
-Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM within a compact viewport area.
+Row virtualization, enabled by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablevirtualization) to `true`, renders only tasks visible in the Gantt’s viewport, determined by the `height` property in pixels (e.g., `"600px"`). All tasks are fetched initially but rendered on-demand during vertical scrolling, reducing load times for large datasets. For example, a project with 10,000 tasks renders only the 50 visible tasks, improving performance. Inject [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#virtualscrollmodule) in the component’s providers to enable this feature. Ensure the `height` property is set explicitly to control the viewport size.
 
-The number of records displayed in the Gantt is determined by the height.
-
-This mode can be enable by setting the `enableVirtualization` property to `true`.
+The following example enables row virtualization for a large dataset:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,14 +27,14 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 {% include code-snippet/gantt/virtual-scroll-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs1" %}
 
-## Timeline virtualization
+## Configure timeline virtualization
 
-Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+Timeline virtualization, enabled by setting [`enableTimelineVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enabletimelinevirtualization) to `true`, renders three times the Gantt’s width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) for scale (e.g., monthly or daily tiers). Inject [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#virtualscrollmodule) to enable this feature.
 
-This mode can be enable by setting the [enableTimelineVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enabletimelinevirtualization) property to `true`.
+The following example enables timeline virtualization for a wide timeline:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,12 +45,19 @@ This mode can be enable by setting the [enableTimelineVirtualization](https://ej
 {% include code-snippet/gantt/virtual-scroll-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs3" %}
 
-## Limitations for virtual scroll
+## Virtual scroll limitations
 
-* Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
-* Cell selection will not be persisted.
-* The number of records rendered will be determined by the `height` property.
-* It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+Virtual scrolling has the following constraints:
+- Incompatible with [`enableImmutableMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableimmutablemode), as both use different rendering optimizations.
+- Cell selection is not persisted due to on-demand rendering.
+- Browser height limits restrict the maximum number of records in row virtualization.
+- The [`height`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#height) property must be set in pixels for row virtualization to define the viewport size.
+- Set a static height for the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
+
+## See also
+- [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
+- [How to manage large datasets?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
+- [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

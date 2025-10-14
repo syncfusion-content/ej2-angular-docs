@@ -1,39 +1,24 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
-import { style } from '@angular/animations';
+import { GanttModule, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { SwitchModule, SwitchComponent } from '@syncfusion/ej2-angular-buttons'
 
 @Component({
-imports: [ GanttModule, SwitchModule],
-
-standalone: true,
+  imports: [GanttModule, SwitchModule],
+  standalone: true,
   selector: 'app-root',
   template: `<label>Show/Hide Dependency Line</label><ejs-switch #switch onLabel="ON" [(checked)]="checked" offLabel="OFF" (change)='change()'></ejs-switch>
   <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"   [editSettings] = "editSettings" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('switch') public switch: SwitchComponent;
   public checked: boolean = false;
-  @ViewChild('switch')
-  public switch: SwitchComponent | any;
-  public change() {
-    const ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container') as HTMLElement;
-    if (this.checked) {
-        ganttDependencyViewContainer.style.visibility = 'hidden';
-    } else {
-        ganttDependencyViewContainer.style.visibility  = 'visible';
-    }
-  }
-  // Data for Gantt
   public data?: object[];
   public taskSettings?: object;
   public editSettings?: EditSettingsModel;
   public columns?: object[];
+  
   public ngOnInit(): void {
     this.data = [
       {
@@ -42,10 +27,10 @@ export class AppComponent {
         StartDate: new Date('04/02/2019'),
         EndDate: new Date('04/21/2019'),
         subtasks: [
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 0, Progress: 50, },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '2FS+2days', Progress: 50, },
-            { TaskID: 5, TaskName: 'Clear the building site', StartDate: new Date('04/04/2019'), Duration: 2, Progress: 30, Predecessor: '4FF+960m', },
+          { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 0, Progress: 50, },
+          { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50, },
+          { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '2FS+2days', Progress: 50, },
+          { TaskID: 5, TaskName: 'Clear the building site', StartDate: new Date('04/04/2019'), Duration: 2, Progress: 30, Predecessor: '4FF+960m', },
         ],
       },
       {
@@ -90,5 +75,14 @@ export class AppComponent {
       allowTaskbarEditing: true,
       showDeleteConfirmDialog: true,
     };
+  }
+
+  public change() {
+    const ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container') as HTMLElement;
+    if (this.checked) {
+      ganttDependencyViewContainer.style.visibility = 'hidden';
+    } else {
+      ganttDependencyViewContainer.style.visibility = 'visible';
+    }
   }
 }

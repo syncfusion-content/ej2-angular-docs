@@ -66,6 +66,10 @@ The following example demonstrates complete baseline configuration with proper f
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/baseline/default-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/baseline/default-cs1/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/baseline/default-cs1" %}

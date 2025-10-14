@@ -1,30 +1,20 @@
 ---
 layout: post
 title: Editing tasks in Angular Gantt component | Syncfusion
-description: Learn here all about Editing tasks in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to edit tasks dynamically in the Syncfusion Angular Gantt component using cell editing, dialog, taskbar, or programmatic methods for project updates.
 platform: ej2-angular
-control: Editing tasks 
+control: Editing tasks
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Editing tasks in Angular Gantt component
 
-The editing feature can be enabled in the Gantt component by enabling the [`editSettings.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) and [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) properties.
+Editing tasks in the Angular Gantt component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to `true` with `EditService` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., `id`, `name`, `startDate`). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) property to control editing behavior (`Auto` or `Dialog`). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
-The following editing options are available to update the tasks in Gantt,
-* Cell
-* Dialog
-* Taskbar
-* Connector line
+## Edit tasks via cell editing
 
-## Cell editing
-
-By setting the edit mode to auto using the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) property, the tasks can be edited through TreeGrid cells by double-clicking.
-
-`Note:` If the [`Edit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the tasks through the TreeGrid cells.
-
-The following code example demonstrates how to enable cell editing in the Gantt component.
+Enable cell editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) to `true`, [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to `Auto`, and injecting `EditService`. Double-click a TreeGrid cell to edit fields like task name or duration directly, ideal for quick updates. Ensure `taskFields` mappings are valid for seamless editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,14 +25,12 @@ The following code example demonstrates how to enable cell editing in the Gantt 
 {% include code-snippet/gantt/managing-tasks/celledit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs1" %}
 
-`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+## Edit tasks via dialog
 
-## Dialog editing
-
-Modify the task details through the edit dialog by setting the edit [`mode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) property as `Dialog`.
+Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) to `true`, [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#mode) to `Dialog`, and injecting `EditService`. Double-click a row on the TreeGrid or chart side to open a dialog for editing task details, such as start date or dependencies, suitable for comprehensive updates. In `Auto` mode, double-clicking the chart side opens the dialog, while the TreeGrid side enables cell editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,14 +41,12 @@ Modify the task details through the edit dialog by setting the edit [`mode`](htt
 {% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/dialogedit-cs1" %}
 
-`Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
+## Customize dialog tabs
 
-### Sections or tabs in dialog
-
-In the Gantt dialog, you can define the required tabs or editing sections using the [`addDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [`editDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields) properties. Every tab is defined using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/gantt/dialogFieldType/) property.
+Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields), using the [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/dialogFieldType/) property (e.g., `General`, `Dependency`). This organizes fields into tabs for focused editing, such as task details or dependencies, with `EditService` required.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,12 +57,12 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addedit-tab-cs1" %}
 
-### Limiting data fields in general tab
+### Limit fields in general tab
 
-In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`addDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [`editDialogFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields) properties. The data fields are defined with [`type`](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#type) and [`fields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields) properties.
+Restrict fields in the dialog’s General tab using [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields) with [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#type) set to `General` and [fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields) specifying visible fields (e.g., `TaskName`, `Duration`). This streamlines editing by showing only relevant fields, requiring `EditService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,22 +73,24 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 {% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addedit-field-cs1" %}
 
-`Note:` You can also define the custom fields in the add/edit dialog General tab using the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields)property.
+## Edit task dependencies
 
-## Task dependencies
+Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property in `taskFields`, setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowtaskbarediting) to `true`, and injecting `EditService`. Update dependencies via:
 
-In the Gantt component, you can update the dependencies between the tasks and link the tasks interactively. The task dependencies can be mapped from the data source using the [`dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property.
+- **Mouse interactions**: Drag connector points on taskbars to create or modify links.
 
-You can update the task dependencies using the following ways:
+    ![Updating task dependency with mouse drag and drop action](../images/user-interaction.png)
 
-* Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
-* Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
-* Cell editing: Create or remove the task links using cell editing.
+- **Dialog**: Edit the Dependency tab in the edit dialog.
 
-The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [`editSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/) property.
+    ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
+
+- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references.
+
+    ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,26 +101,12 @@ The following code example demonstrates how to enable task dependency editing in
 {% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/dependencyedit-cs1" %}
 
-![Alt text](../images/user-interaction.png)
+## Edit tasks programmatically
 
-Updating with mouse interaction action
-
-![Alt text](../images/cell-edit.png)
-
-Updating with cell Edit
-
-![Alt text](../images/dialog.png)
-
-Updating with Dialog
-
-`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
-
-## Update task values using method
-
-The tasks value can be dynamically updated by using the [`updateRecordById`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Update tasks programmatically using the [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method, specifying the task ID and updated data, with `EditService` injected. This method supports automation, such as updating durations via a button, but cannot modify the task ID. Ensure `taskFields` mappings are valid for successful updates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +117,10 @@ The tasks value can be dynamically updated by using the [`updateRecordById`](htt
 {% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/updaterecord-dynamic-cs1" %}
 
->NOTE: Using the [`updateRecordById`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method, you cannot update the task ID value.
+## See also
+- [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

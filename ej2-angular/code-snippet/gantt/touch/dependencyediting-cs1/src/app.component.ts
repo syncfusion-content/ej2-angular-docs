@@ -1,35 +1,22 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-
+import { GanttModule,GanttComponent,EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, SelectionService],
-standalone: true,
+    imports: [ GanttModule ],
+    providers: [EditService, SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" (load)="load()"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', {static: true}) public ganttObject?: GanttComponent
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent;
+ ;
     public ngOnInit(): void {
         this.data = [
             {
@@ -68,9 +55,10 @@ export class AppComponent{
             allowTaskbarEditing: true
         };
     }
+
     public load() {
-        let ganttObj: any = (((document as any).getElementById('ganttDefault'))).ej2_instances[0];
-        ganttObj.isAdaptive = true;  // Forcing desktop layout to change as mobile layout
+        let ganttObject: any = (((document as any).getElementById('ganttDefault'))).ej2_instances[0];
+        ganttObject.isAdaptive = true;  // Forcing desktop layout to change as mobile layout
     };
 }
 

@@ -128,7 +128,7 @@ export class AccessibleGanttComponent {
     const errorMessage = this.formatErrorMessage(args.error);
     this.errorRegion.nativeElement.textContent = errorMessage;
     
-    // Focus management for error scenarios
+    // Focus management for error scenarios.
     this.manageFocusForError(args);
   }
 
@@ -137,7 +137,7 @@ export class AccessibleGanttComponent {
   }
 
   private manageFocusForError(args: FailureEventArgs): void {
-    // Return focus to the element that caused the error
+    // Return focus to the element that caused the error.
     const targetElement = document.querySelector(`[data-task-id="${args.data?.taskId}"]`);
     if (targetElement) {
       (targetElement as HTMLElement).focus();
@@ -148,7 +148,7 @@ export class AccessibleGanttComponent {
 
 ## Mobile and touch accessibility
 
-The Gantt component provides comprehensive accessibility support for mobile and touch devices through the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the component across all device types.
+The Gantt component provides comprehensive accessibility support for mobile and touch devices through the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the component across all device types.
 
 Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide haptic feedback where supported by the device platform.
 

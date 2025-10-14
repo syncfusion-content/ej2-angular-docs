@@ -1,19 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, ViewChild, OnInit} from '@angular/core';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({
-  imports: [
-         GanttModule
-    ],
-standalone: true,
-    selector: 'app-root',
+  imports: [ GanttModule],
+  standalone: true,
+  selector: 'app-root',
   template:
-    `<ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings" (rowDataBound)='rowDataBound($event)' >       
+    `<ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings" (rowDataBound)='rowDataBound($event)' >       
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
             <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270 ></e-column>
@@ -24,11 +19,9 @@ standalone: true,
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-  // Data for Gantt
+export class AppComponent implements OnInit{
+  @ViewChild('gantt') public gantt?: GanttComponent;
   public data?: object[];
-  @ViewChild('gantt')
-  public gantt?: GanttComponent;
   public taskSettings?: object;
   public splitterSettings?: object;
   public ngOnInit(): void {

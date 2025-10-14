@@ -1,24 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import { GanttComponent, GanttModule, ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService, EditService, SelectionService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [ToolbarService, EditService, SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt #gantt id="ganttDefault" [dataSource]="data" [resources]="resources" [taskFields]="taskSettings"
@@ -28,84 +16,24 @@ standalone: true,
         [showOverAllocation] = 'true' (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent
     public data?: object[];
     public resources?: object[];
     public taskSettings?: object;
     public labelSettings?: object;
     public projectStartDate?: Date;
     public projectEndDate?: Date;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent;
-    resourceFields: { id: string; name: string; unit: string; group: string; } | undefined;
-    editSettings: { allowAdding: boolean; allowEditing: boolean; allowDeleting: boolean; allowTaskbarEditing: boolean; showDeleteConfirmDialog: boolean; } | undefined;
-    columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: number; visible?: undefined; } | { field: string; headerText: string; visible?: undefined; width?: undefined; } | { field: string; visible?: undefined; headerText?: undefined; width?: undefined; })[] | undefined;
-    toolbar: (string | { text: string; tooltipText: string; id: string; })[] | undefined;
-splitterSettings: any;
+    public resourceFields?: object;
+    public editSettings?: object;
+    public columns?: object[];
+    public toolbar?: (string | object)[];
+    public splitterSettings?: object;
+
     public ngOnInit(): void {
-        this.data = [
-            {
-        TaskID: 1,
-        TaskName: 'Project initiation',
-        StartDate: new Date('03/29/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {
-                TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('03/29/2019'), Duration: 3,
-                Progress: 30, work: 10, resources: [{ resourceId: 1, resourceUnit: 50 }]
-            },
-            {
-                TaskID: 3, TaskName: 'Perform soil test', StartDate: new Date('04/03/2019'), Duration: 4,
-                resources: [{ resourceId: 1, resourceUnit: 70 }], Predecessor: 2, Progress: 30, work: 20
-            },
-            {
-                TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/09/2019'), Duration: 4,
-                resources: [{ resourceId: 1, resourceUnit: 25 }], Predecessor: 3, Progress: 30, work: 10,
-            },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project estimation', StartDate: new Date('03/29/2019'), EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {
-                TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/01/2019'),
-                Duration: 5, Progress: 30, resources: [{ resourceId: 2, resourceUnit: 50 }], work: 30
-            },
-            {
-                TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 4,
-                resources: [{ resourceId: 2, resourceUnit: 40 }], Predecessor: '6FS-2', Progress: 30, work: 40
-            },
-            {
-                TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/09/2019'),
-                Duration: 4, resources: [{ resourceId: 2, resourceUnit: 75 }], Predecessor: '7FS-1', Progress: 30, work: 60,
-            }
-        ]
-    },
-    {
-        TaskID: 9,
-        TaskName: 'Site work',
-        StartDate: new Date('04/04/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {
-                TaskID: 10, TaskName: 'Install temporary power service', StartDate: new Date('04/01/2019'), Duration: 14,
-                Progress: 30, resources: [{ resourceId: 3, resourceUnit: 75 }]
-            },
-            {
-                TaskID: 11, TaskName: 'Clear the building site', StartDate: new Date('04/08/2019'),
-                Duration: 9, Progress: 30, Predecessor: '10FS-9', resources: [3]
-            },
-            {
-                TaskID: 12, TaskName: 'Sign contract', StartDate: new Date('04/12/2019'),
-                Duration: 5, resources: [3], Predecessor: '11FS-5'
-            },
-        ]
-    }
-        ];
+        this.data = projectNewData;
         this.resources = [
-            { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team'},
+            { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team' },
             { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team' },
             { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' }
         ];
@@ -144,7 +72,7 @@ splitterSettings: any;
             { field: 'Duration' }
         ];
         this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll',
-        {text: 'Show/Hide Overallocation', tooltipText: 'Show/Hide Overallocation', id: 'showhidebar'}];
+            { text: 'Show/Hide Overallocation', tooltipText: 'Show/Hide Overallocation', id: 'showhidebar' }];
         this.labelSettings = {
             rightLabel: 'resources',
             taskLabel: 'Progress'
@@ -154,9 +82,9 @@ splitterSettings: any;
     }
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'showhidebar') {
-            this.ganttObj!.showOverAllocation = this.ganttObj!.showOverAllocation ? false : true;
+            this.ganttInstance!.showOverAllocation = this.ganttInstance!.showOverAllocation ? false : true;
         }
-};
+    };
 }
 
 
