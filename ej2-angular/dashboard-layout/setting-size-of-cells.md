@@ -104,4 +104,4 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
   
 {% previewsample "page.domainurl/samples/dashboard-layout/rtl-cs1" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.
+> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dashboard-layout/default) to knows how to present and manipulate data.
