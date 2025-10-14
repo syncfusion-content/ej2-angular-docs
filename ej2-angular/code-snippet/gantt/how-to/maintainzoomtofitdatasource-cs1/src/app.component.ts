@@ -2,36 +2,31 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-import { Component, ViewEncapsulation, OnInit,  ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem, ZoomTimelineSettings  } from '@syncfusion/ej2-angular-gantt';
+import { ToolbarItem, ZoomTimelineSettings } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData, data } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='changeData' (click)='changeData()'>Change Data</button>
+        `<button ejs-button id='changeData' (click)='changeData()'>Change Data</button>
        <br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar" (dataBound)="dataBound($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+    @ViewChild('gantt', { static: true })
+    public ganttObj?: GanttComponent | any;
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -42,14 +37,14 @@ export class AppComponent{
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
-        this.toolbar =  ['ZoomToFit'];
+        this.toolbar = ['ZoomToFit'];
     }
     public dataBound(args: any) {
-      this.ganttObj.fitToProject();
+        this.ganttObj.fitToProject();
     };
     changeData(): void {
-      this.ganttObj.dataSource = data;
+        this.ganttObj.dataSource = data;
     };
 }

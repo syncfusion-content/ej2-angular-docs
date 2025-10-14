@@ -8,25 +8,21 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='scrolltop' (click)='scroll()'>Set Scroll Top</button>
+        `<button ejs-button id='scrolltop' (click)='scroll()'>Set Scroll Top</button>
        <br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent {
     public data?: object[];
     public taskSettings?: object;
     public splitterSettings?: object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+    @ViewChild('gantt', { static: true })
+    public ganttObj?: GanttComponent | any;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -35,15 +31,15 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
         this.splitterSettings = {
             position: "50%"
-            };
+        };
     }
     scroll(): void {
         this.ganttObj.ganttChartModule.scrollObject.setScrollTop(200);
-        };
+    };
 }
 
 

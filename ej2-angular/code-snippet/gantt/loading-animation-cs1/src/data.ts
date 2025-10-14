@@ -162,3 +162,23 @@ export let tempData: any[] = [
 ];
 
 export let virtualData: any[] = [];
+let projId: number = 1;
+for (let i: number = 0; i < 50; i++) {
+    let x: number = virtualData.length + 1;
+    let parent: any = {};
+    /* tslint:disable:no-string-literal */
+    parent['TaskID'] = x;
+    parent['TaskName'] = 'Project ' + (i + 1);
+    virtualData.push(parent);
+    for (let j: number = 0; j < tempData.length; j++) {
+        let subtasks: any = {};
+        /* tslint:disable:no-string-literal */
+        subtasks['TaskID'] = tempData[j].TaskID + x;
+        subtasks['TaskName'] = tempData[j].TaskName;
+        subtasks['StartDate'] = tempData[j].StartDate;
+        subtasks['Duration'] = tempData[j].Duration;
+        subtasks['Progress'] = tempData[j].Progress;
+        subtasks['parentID'] = tempData[j].parentID + x;
+        virtualData.push(subtasks);
+    }
+}

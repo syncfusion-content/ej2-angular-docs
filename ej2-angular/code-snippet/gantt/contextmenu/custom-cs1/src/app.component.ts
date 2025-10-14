@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule, SortService, ResizeService } from '@syncfusion/ej2-angular-gantt'
-import { SelectionService, ContextMenuService, EditService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-angular-gantt';
-import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
+import { GanttModule, SortService, ResizeService, SelectionService, ContextMenuService, EditService, GanttComponent, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-angular-gantt'
+import { ContextMenuItemModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [GanttModule],
@@ -13,18 +8,17 @@ import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt #customcontextmenu id="ganttCustomContextmenu" height="430px" [dataSource]="data" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
+        `<ejs-gantt #customcontextmenu height="430px" [dataSource]="data" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent {
-    // Data for Gantt
+export class AppComponent implements OnInit {
+    @ViewChild('customcontextmenu', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
     public contextMenuItems?: (string | ContextMenuItemModel)[];
-    @ViewChild('customcontextmenu', { static: true })
-    public ganttObj?: GanttComponent | any;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -69,15 +63,16 @@ export class AppComponent {
     public contextMenuClick(args: ContextMenuClickEventArgs) {
         let record = args.rowData;
         if (args.item.id === 'collapserow') {
-            this.ganttObj.collapseByID(Number(record!.ganttProperties!.taskId));
+            this.ganttInstance.collapseByID(Number(record!.ganttProperties!.taskId));
         }
         if (args.item.id === 'expandrow') {
-            this.ganttObj.expandByID(Number(record!.ganttProperties!.taskId));
+            this.ganttInstance.expandByID(Number(record!.ganttProperties!.taskId));
         }
         if (args.item.id === 'hidecols') {
-            this.ganttObj.hideColumn(args.column!.headerText);
+            this.ganttInstance.hideColumn(args.column!.headerText);
         }
     }
+
     public contextMenuOpen(args: ContextMenuOpenEventArgs) {
         let record = args.rowData;
         if (args.type !== 'Header') {
@@ -94,6 +89,3 @@ export class AppComponent {
         }
     }
 }
-
-
-

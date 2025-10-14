@@ -1,22 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { DropDownListComponent,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListAllModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
+import { GanttModule,GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
-imports: [
-         GanttModule,DropDownListAllModule
-    ],
-standalone: true,
+    imports: [ GanttModule, DropDownListAllModule, ButtonModule ],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='changebyposition' (click)='changep()'>Change By Position</button>
+        `<button ejs-button id='changebyposition' (click)='changep()'>Change By Position</button>
        <br><br>
        <button ejs-button id='changebyindex' (click)='changei()'>Change By Index</button>
        <br>
@@ -24,14 +17,13 @@ standalone: true,
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent implements OnInit{
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public dropData?: Object[];
     public fields?: Object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+    
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -42,23 +34,26 @@ export class AppComponent{
             progress: 'Progress',
             child: 'subtasks'
         };
-        this.dropData =  [
+        this.dropData = [
             { id: 'Default', mode: 'Default' },
             { id: 'Grid', mode: 'Grid' },
             { id: 'Chart', mode: 'Chart' },
-          ];
+        ];
         this.fields = { text: 'mode', value: 'id' };
     }
-    changep(): void {
-        this.ganttObj.setSplitterPosition('50%', 'position');
-        };
-        changei(): void {
-        this.ganttObj.setSplitterPosition(1, 'columnIndex');
-        };
-        onChange(e: ChangeEventArgs): any{
+
+    public changep(): void {
+        this.ganttInstance.setSplitterPosition('50%', 'position');
+    };
+
+    public changei(): void {
+        this.ganttInstance.setSplitterPosition(1, 'columnIndex');
+    };
+
+    public onChange(e: ChangeEventArgs): any {
         let viewType: any = <string>e.value;
-        this.ganttObj.setSplitterPosition(viewType, 'view');
-        };
+        this.ganttInstance.setSplitterPosition(viewType, 'view');
+    };
 }
 
 

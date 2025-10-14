@@ -1,24 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { CommonModule } from '@angular/common';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
 import { editingData } from './data';
-import { CommonModule } from '@angular/common'; 
 
 @Component({
   imports: [GanttModule, CommonModule],
   standalone: true,
   selector: "app-root",
   template: `
-    <ejs-gantt
-      id="ganttDefault"
-      height="430px"
-      [dataSource]="data"
-      [taskFields]="taskSettings"
-      [columns]="columns"
-      [tooltipSettings]="tooltipSettings"
-    >
+    <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [tooltipSettings]="tooltipSettings">
       <ng-template #tooltipSettingsTimeline let-data>
         <ng-container *ngIf="data.tier === 'topTier'; else bottomTierTemplate">
           <div *ngIf="executeTopTierTooltip(data.value, data.date, data.tier)">
@@ -87,13 +77,12 @@ import { CommonModule } from '@angular/common';
   `,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public data?: object[];
   public taskSettings?: object;
   public tooltipSettings?: object;
-  columns: any;
-  topTierData: any;
-  bottomTierData: any;
+  public topTierData: any;
+  public bottomTierData: any;
 
   public ngOnInit(): void {
     this.data = editingData;
@@ -128,7 +117,7 @@ export class AppComponent {
         : taskStart.getTime() === startDate.getTime() && taskEnd.getTime() === endDate.getTime();
     });
 
-    let milestones = activeTasks.filter((task : any) => task.Duration === 0);
+    let milestones = activeTasks.filter((task: any) => task.Duration === 0);
     let totalProgress = activeTasks.reduce((acc: number, task: any) => acc + (task.Progress || 0), 0);
     let overallProgress = activeTasks.length > 0 ? (totalProgress / activeTasks.length).toFixed(2) : "0";
 

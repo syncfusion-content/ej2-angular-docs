@@ -1,37 +1,27 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { FilterService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { GanttModule, GanttComponent, FilterService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [FilterService, ToolbarService],
-standalone: true,
+    imports: [GanttModule, ButtonModule],
+    providers: [FilterService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='zoomIn' (click)='zoomIn()'>ZoomIn</button>
-        <button ejs-button id='zoomOut' (click)='zoomOut()'>ZoomOut</button>
-        <button ejs-button id='fitToProject' (click)='fitToProject()'>FitToProject</button>
-        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+        `<button ejs-button id="zoomIn" (click)="zoomIn()" style="margin-right: 8px;">ZoomIn</button>
+        <button ejs-button id="zoomOut" (click)="zoomOut()" style="margin-right: 8px;">ZoomOut</button>
+        <button ejs-button id="fitToProject" (click)="fitToProject()">FitToProject</button>
+        <div style="margin-top: 16px;">
+          <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>
+        </div>`
+   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -45,15 +35,18 @@ export class AppComponent{
             child: 'subtasks'
         };
     }
-    zoomIn(): void {
-        this.ganttObj.zoomIn();
-        };
-        zoomOut(): void {
-        this.ganttObj.zoomOut();
-        };
-        fitToProject(): void{
-        this.ganttObj.fitToProject();
-        };
+
+    public zoomIn(): void {
+        this.ganttInstance.zoomIn();
+    };
+
+    public zoomOut(): void {
+        this.ganttInstance.zoomOut();
+    };
+
+    public fitToProject(): void {
+        this.ganttInstance.fitToProject();
+    };
 }
 
 

@@ -1,90 +1,66 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { FilterService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { GanttModule, GanttComponent, FilterService } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [FilterService],
-standalone: true,
-    selector: 'app-root',
-    template:
-       `<button ejs-button id='Clearfilter' (click)='filter()'>Clear Filter</button>
-       <br><br><br>
-       <ejs-gantt #gantt id="ganttDefault" height="430px" [allowFiltering]='true' [dataSource]="data" [taskFields]="taskSettings" [splitterSettings] = "splitterSettings" [columns]="columns" [filterSettings]="filterSettings"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule, ButtonModule],
+  providers: [FilterService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <button ejs-button (click)="clearFilter()">Clear Filter</button>
+    <br /><br /><br />
+    <ejs-gantt #gantt height="370px" [allowFiltering]="true" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings" [columns]="columns" [filterSettings]="filterSettings">
+    </ejs-gantt>`
 })
-export class AppComponent{
-    // Data for Gantt
-    public data?: object[];
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public columns?: object[];
-    public filterSettings?: object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent;
-    public ngOnInit(): void {
-        this.data = [
-    {
-        TaskID: 1,
-        TaskName: 'Project initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('04/02/2019'), Duration: 0,Progress: 50, resources: [1]},
-            {TaskID: 3, TaskName: 'Perform soil test', StartDate: new Date('04/02/2019'), Duration: 4, Predecessor: '2',Progress: 50, resources: [2, 3, 5]},
-            {TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3', Progress: 50 },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            {TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'),Duration: 3, Predecessor: '4', Progress: 50, resources: [4]},
-            {TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'),Duration: 3, Predecessor: '6', resources: [4, 8],Progress: 50},
-            {TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'),Duration: 0, Predecessor: '7', resources: [12, 5]}
-        ]
-    }];
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-        this.columns =  [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText: 'Task Name', width: '250' },
-            { field: 'StartDate', headerText: 'Start Date', width: '150' },
-            { field: 'Duration', headerText: 'Duration', width: '150' },
-            { field: 'Progress', headerText: 'Progress', width: '150' },
-        ];
-        this.splitterSettings = {
-            columnIndex:3
-            };
-        this.filterSettings = {
-            columns: [{ field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
-               { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 50 }]
-        };
-    }
-    filter(): void {
-        this.ganttObj!.clearFiltering();
-        };
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt', { static: true }) public ganttInstance!: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: object = {};
+  public splitterSettings: object = {};
+  public columns: object[] = [];
+  public filterSettings: object = {};
+
+  ngOnInit(): void {
+    this.data = [
+      { TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
+      { TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+      { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
+      { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 }
+    ];
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      parentID: 'ParentID'
+    };
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+      { field: 'TaskName', headerText: 'Task Name', width: '250' },
+      { field: 'StartDate', headerText: 'Start Date', width: '150' },
+      { field: 'Duration', headerText: 'Duration', width: '150' },
+      { field: 'Progress', headerText: 'Progress', width: '150' },
+    ];
+    this.splitterSettings = {
+      columnIndex: 3
+    };
+    this.filterSettings = {
+      columns: [
+        { field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
+        { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 50 }
+      ]
+    };
+  }
+
+  public clearFilter(): void {
+    (this.ganttInstance as GanttComponent).clearFiltering();
+  }
 }
-
-
-

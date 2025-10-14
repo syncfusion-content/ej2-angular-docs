@@ -1,27 +1,74 @@
-/**
- * TreeGrid DataSource
- */
-export let GanttData: Object[] = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project Estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        subtasks: [
-            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 },
-            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50 }
-        ]
-    },
+export const GanttData = [
+  {
+    TaskID: 1,
+    TaskName: 'Project Initiation',
+    StartDate: new Date('2023-01-01'),
+    EndDate: new Date('2023-01-05'),
+    Duration: 5,
+    Progress: 30,
+    ParentID: null
+  },
+  {
+    TaskID: 2,
+    TaskName: 'Site Analysis',
+    StartDate: new Date('2023-01-06'),
+    EndDate: new Date('2023-01-10'),
+    Duration: 4,
+    Progress: 50,
+    ParentID: null
+  },
+  {
+    TaskID: 3,
+    TaskName: 'Soil Testing',
+    StartDate: new Date('2023-01-11'),
+    EndDate: new Date('2023-01-14'),
+    Duration: 3,
+    Progress: 40,
+    ParentID: null
+  },
+  {
+    TaskID: 4,
+    TaskName: 'Approval Process',
+    StartDate: new Date('2023-01-15'),
+    EndDate: new Date('2023-01-18'),
+    Duration: 3,
+    Progress: 60,
+    ParentID: null
+  },
+  {
+    TaskID: 5,
+    TaskName: 'Budget Estimation',
+    StartDate: new Date('2023-01-19'),
+    EndDate: new Date('2023-01-23'),
+    Duration: 4,
+    Progress: 70,
+    ParentID: null
+  },
+  {
+    TaskID: 6,
+    TaskName: 'Floor Plan Design',
+    StartDate: new Date('2023-01-24'),
+    EndDate: new Date('2023-01-28'),
+    Duration: 4,
+    Progress: 80,
+    ParentID: null
+  },
+  {
+    TaskID: 7,
+    TaskName: 'Material Listing',
+    StartDate: new Date('2023-01-29'),
+    EndDate: new Date('2023-02-02'),
+    Duration: 4,
+    Progress: 90,
+    ParentID: null
+  },
+  {
+    TaskID: 8,
+    TaskName: 'Final Approval',
+    StartDate: new Date('2023-02-03'),
+    EndDate: new Date('2023-02-06'),
+    Duration: 3,
+    Progress: 100,
+    ParentID: null
+  }
 ];
