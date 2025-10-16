@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Text-to-Speech in Angular AI AssistView
 
-The Syncfusion Angular AI AssistView component supports `Text-to-Speech` (TTS) functionality using the browser's Web Speech API specifically using the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface to convert AI-generated response into spoken audio.
+The Syncfusion Angular AI AssistView component integrates `Text-to-Speech` (TTS) functionality using the browser's Web Speech API, specifically the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface. This allows AI-generated responses to be converted into spoken audio, enhancing accessibility and user interaction.
 
 ## Prerequisites
 
