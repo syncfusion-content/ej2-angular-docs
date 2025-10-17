@@ -1,48 +1,38 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule,ContextMenuService, ContextMenuItem} from '@syncfusion/ej2-angular-gantt'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ToolbarItem, EditSettingsModel, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { MenuItemModel, ContextMenu } from '@syncfusion/ej2-navigations';
-import { Gantt } from '@syncfusion/ej2-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-         GanttModule,ContextMenuModule 
-    ],
-
-providers: [EditService, SelectionService],
-standalone: true,
+    imports: [GanttModule, ContextMenuModule],
+    providers: [EditService, SelectionService],
+    standalone: true,
     selector: 'app-root',
-    template:`<ejs-contextmenu id='contextmenu' [items]= 'menuItems' (select)="select($event)"></ejs-contextmenu>
+    template: `<ejs-contextmenu id='contextmenu' [items]= 'menuItems' (select)="select($event)"></ejs-contextmenu>
        <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+
     public ngOnInit(): void {
-        this.data =  [
+        this.data = [
             {
                 TaskID: 1,
                 TaskName: 'Project Initiation',
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -67,9 +57,9 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.editSettings = {
-            allowAdding:true
-            };
-            this.toolbar = ['Add'];
+            allowAdding: true
+        };
+        this.toolbar = ['Add'];
     }
     public menuItems: MenuItemModel[] = [
         {
@@ -87,46 +77,45 @@ export class AppComponent{
         {
             text: 'Top'
         }];
-        public select(args: any) {
-            if (args.item.text === "Bottom") {
-            this.ganttObj.editSettings.newRowPosition = "Bottom";
-            this.ganttObj.openAddDialog();
+
+    public select(args: any) {
+        if (args.item.text === "Bottom") {
+            this.ganttInstance.editSettings.newRowPosition = "Bottom";
+            this.ganttInstance.openAddDialog();
         } else if (args.item.text === "Above") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Above";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Above";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Below") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Below";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Below";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Child") {
-            if (this.ganttObj.selectedRowIndex == -1) {
+            if (this.ganttInstance.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttObj.editSettings.newRowPosition = "Child";
-                this.ganttObj.openAddDialog();
+                this.ganttInstance.editSettings.newRowPosition = "Child";
+                this.ganttInstance.openAddDialog();
             }
         } else if (args.item.text === "Top") {
-            this.ganttObj.editSettings.newRowPosition = "Top";
-            this.ganttObj.openAddDialog();
+            this.ganttInstance.editSettings.newRowPosition = "Top";
+            this.ganttInstance.openAddDialog();
         }
-        }
+    }
+
     public toolbarClick(args: ClickEventArgs): void {
-            if (args.item.id === 'ganttDefault_add') {
-                let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0"), ContextMenu) as ContextMenu;
-                contextmenuObj.open(40, 20);
-            }
+        if (args.item.id === 'ganttDefault_add') {
+            let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0"), ContextMenu) as ContextMenu;
+            contextmenuObj.open(40, 20);
+        }
     };
 }
-
-
-
 
 function getInstance(arg0: HTMLElement | null, ContextMenu: any): ContextMenu {
     throw new Error('Function not implemented.');

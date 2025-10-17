@@ -1,43 +1,32 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { GanttModule, EditSettingsModel, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SelectionService],
-standalone: true,
-    selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="350px" width="600px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  providers: [SelectionService],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <ejs-gantt height="350px" width="600px" [dataSource]="data" [taskFields]="taskSettings">
+    </ejs-gantt>`
 })
-export class AppComponent{
-    // Data for Gantt
-    public data?: object[];
-    public taskSettings?: object;
-    public editSettings?: EditSettingsModel;
-    public ngOnInit(): void {
-        this.data = projectNewData;
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-    }
+
+export class AppComponent implements OnInit {
+  public data: object[] = [];
+  public taskSettings: object = {};
+  public editSettings?: EditSettingsModel;
+
+  ngOnInit(): void {
+    this.data = projectNewData;
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      child: 'subtasks'
+    };
+  }
 }
-
-

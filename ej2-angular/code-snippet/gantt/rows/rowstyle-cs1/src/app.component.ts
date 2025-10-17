@@ -1,58 +1,68 @@
-
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, OnInit, ViewChild, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
+import { GanttComponent, GanttModule, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
-    imports: [
-        GanttModule
-   ],
-standalone: true,
-    selector: 'app-root',
-    template:
-        `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data" 
-        [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings" (dataBound)='dataBound()'>     
-            <e-columns>
-                <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
-                <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=290></e-column>
-                <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
-                <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=120 ></e-column>
-                <e-column field='Duration' headerText='Duration' textAlign='Right' width=90 ></e-column>
-            </e-columns>
-       </ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings" (rowDataBound)="onRowDataBound($event)">
+      <e-columns>
+        <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
+        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
+        <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
+        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
+        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
+      </e-columns>
+    </ejs-gantt>
+  `,
+  styles: [`
+    .below-30 { background-color: #ffe0e0; }
+    .below-80 { background-color: #fff4cc; }
+    .above-80 { background-color: #e0ffe0; }
+  `]
 })
-export class AppComponent {
-    // Data for Gantt
-    public data?: object[];
-    @ViewChild('gantt')
-    public gantt?: GanttComponent;
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public ngOnInit(): void {
-        this.data = GanttData;
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-        this.splitterSettings = {
-            position: '75%'
-        };
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt') public gantt?: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: object = {};
+  public splitterSettings: object= {};
+
+  ngOnInit(): void {
+    this.data = GanttData;
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      child: 'subtasks'
+    };
+    this.splitterSettings = {
+      position: '75%'
+    };
+  }
+
+  onRowDataBound(args: RowDataBoundEventArgs): void {
+    const progress = (args.data as GanttTask).Progress as number;
+    if (progress < 30) {
+      (args.row as HTMLElement).classList.add('below-30');
+    } else if (progress >= 30 && progress < 80) {
+      (args.row as HTMLElement).classList.add('below-80');
+    } else {
+      (args.row as HTMLElement).classList.add('above-80');
     }
-    dataBound() {
-        let data = (this.gantt as GanttComponent).currentViewData;
-        for (let i = 0; i < data.length; i++) {
-            if ((data[i] as any).ganttProperties.progress > 75) {
-                ((this.gantt as GanttComponent).treeGrid.getRows()[i] as HTMLElement).style.background = '#EE4B2B';
-                ((this.gantt as GanttComponent).ganttChartModule.getChartRows()[i] as HTMLElement).style.background = '#EE4B2B';
-            }
-        }
-    }
+  }
+}
+
+export interface GanttTask {
+  TaskID: number;
+  TaskName: string;
+  StartDate: Date;
+  Duration: number;
+  Progress?: number;
+  subtasks?: GanttTask[];
 }

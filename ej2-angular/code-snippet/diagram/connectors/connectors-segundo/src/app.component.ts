@@ -77,9 +77,9 @@ export class AppComponent {
   }
   constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
   undo() {
-    (this.diagram as Diagram).undo();
+    (this.diagram as any).undo();
   }
   redo() {
-    (this.diagram as Diagram).redo();
+    (this.diagram as any).redo();
   }
 }

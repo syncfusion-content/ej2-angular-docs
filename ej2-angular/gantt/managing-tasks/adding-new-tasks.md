@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Adding new tasks in Angular Gantt component | Syncfusion
-description: Learn here all about Adding new tasks in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to add tasks dynamically in the Syncfusion Angular Gantt component using toolbar, context menu, or programmatic methods for project management.
 platform: ej2-angular
-control: Adding new tasks 
+control: Adding new tasks
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Adding new tasks in Angular Gantt component
 
-Tasks can be dynamically added to the Gantt project by enabling the [`editSettings.allowAdding`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding) property.
+Adding new tasks to the Angular Gantt component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding) enabled and `EditService` injected, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method offers precise control, making task creation efficient for dynamic project updates.
 
-## Toolbar
+## Add tasks via toolbar
 
-A row can be added to the Gantt component from the toolbar while the  [`editSettings.allowAdding`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding) property is set to `true`. On clicking the toolbar add icon, you should provide the task information in the add dialog.
+Enable task addition through the toolbar by setting [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding) to **true** and injecting `EditService`. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Gantt chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,14 +25,12 @@ A row can be added to the Gantt component from the toolbar while the  [`editSett
 {% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-toolbar-cs1" %}
 
-> By default, the new row will be added to the top most row in the Gantt component.
+## Add tasks via context menu
 
-## Context menu
-
-A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property[`enableContextMenu`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) and inject the `ContextMenuService` in the provider section of `AppModule`.
+Enable context menu task addition by setting [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) to **true**, injecting `ContextMenuService` and `EditService`, and enabling [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowadding). Right-clicking a row opens a menu with **Above**, **Below**, and **Child** options. This method suits precise placement within project hierarchies.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,18 +41,12 @@ A row can also be added above, below or child of the selected row by using conte
 {% include code-snippet/gantt/managing-tasks/contextmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/contextmenu-cs1" %}
 
-## Using method
+## Add tasks programmatically
 
-You can add rows to the Gantt component dynamically using the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method and you can define the add position of the default new record by using the [`rowPosition`](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowPosition/) property. You can also pass the `rowIndex` as an additional parameter.
-
-* Top of all the rows
-* Bottom to all the existing rows
-* Above the selected row
-* Below the selected row
-* As child to the selected row
+Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method, specifying task data, `rowPosition` (**Top**, **Bottom**, **Above**, **Below**, **Child**), and an optional `rowIndex`. Inject `EditService` and ensure `taskFields` mappings are valid (e.g., unique TaskID). For example, adding a task as a child creates a subtask under a parent row, updating the project hierarchy. Verify dependencies to avoid issues like circular references.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,5 +57,10 @@ You can add rows to the Gantt component dynamically using the [`addRecord`](http
 {% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-dynamic-cs1" %}
+
+## See also
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

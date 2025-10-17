@@ -1,57 +1,54 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { GanttData } from './data';
 
 @Component({
-    imports: [
-         GanttModule
-    ],
-standalone: true,
     selector: 'app-root',
-    template:
-        `<button ejs-button id='show' (click)='show()'>Show</button>
-       <button ejs-button id='hide' (click)='hide()'>Hide</button>
-       <br><br><br>
-       <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings">   
-        <e-columns>
-            <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
-            <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270 ></e-column>
-            <e-column field='Duration' headerText='Duration' textAlign='Right' width=90></e-column>
-            <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=120 ></e-column>
-            <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
-        </e-columns>
-       </ejs-gantt>`,
+    standalone: true,
+    imports: [GanttModule, ButtonModule],
+    template: `
+    <button ejs-button id="show" style="margin-right: 10px;" (click)="show()">Show Column</button>
+    <button ejs-button id="hide" (click)="hide()">Hide Column</button>
+    <br /><br /><br />
+    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
+      <e-columns>
+        <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
+        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-column>
+        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
+        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
+        <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
+      </e-columns>
+    </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
-    // Data for Gantt
-    public data?: object[];
-    @ViewChild('gantt')
-    public gantt?: GanttComponent;
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public ngOnInit(): void {
+    @ViewChild('gantt') public ganttInstance?: GanttComponent;
+    public data: object[] = GanttData;
+    public taskSettings: object = {};
+    public splitterSettings: object = {};
+    ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
+            endDate: 'EndDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         };
         this.splitterSettings = {
             position: '75%'
         };
     }
-    show(): void {
-        this.gantt!.showColumn(['TaskName', 'Duration'], 'field'); // show by field
+
+    public show(): void {
+        (this.ganttInstance as GanttComponent).showColumn(['TaskName', 'Duration'], 'field');
     }
 
-    hide(): void {
-        this.gantt!.hideColumn(['TaskName', 'Duration'], 'field'); // hide by field
+    public hide(): void {
+        (this.ganttInstance as GanttComponent).hideColumn(['TaskName', 'Duration'], 'field');
     }
 }

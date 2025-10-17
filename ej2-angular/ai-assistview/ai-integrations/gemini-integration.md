@@ -9,33 +9,33 @@ domainurl: ##DomainURL##
 ---
 
 
-# Gemini AI With Angular AI AssistView component 
+# Integrate Gemini AI with Angular AI AssistView component
 
-The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your Angular applications.
-
-## Getting Started with the Angular AI AssistView component
-
-Before integrating Gemini AI, ensure that the Syncfusion AI AssistView component is correctly rendered in your Angular app:
-
-[Angular Getting Started Guide](../getting-started)
+The AI AssistView component integrates with Google’s [Gemini](https://ai.google.dev/gemini-api/docs) API to deliver intelligent conversational interfaces. It leverages advanced natural language understanding to interpret user input, maintain context throughout interactions, and provide accurate, relevant responses. By configuring secure authentication and data handling, developers can unlock powerful AI-driven communication features that elevate user engagement and streamline support experiences.
 
 ## Prerequisites
 
-* Requires `Node.js` (v16 or higher) and `npm`.
-* Google account to generate API key on accessing [Gemini](https://ai.google.dev/gemini-api/docs).
-* Syncfusion AI AssistView for Angular `@syncfusion/ej2-angular-interactive-chat` installed in your project.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: For generating a Gemini API key.
+
+* **Syncfusion AI AssistView**: Package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat) installed.
+
+* **Angular CLI**: For project setup and execution.
+
+* **Marked Library**: For parsing Markdown responses (`npm install marked --save`).
+
+## Set Up the Angular Environment
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView component in your Angular application using Angular CLI.
 
 ## Install Dependencies
 
-Install the Syncfusion AI AssistView in your project
+Install the required packages:
 
-```bash 
-
-npm install @syncfusion/ej2-angular-interactive-chat --save
-
-```
-
-Install the Gemini AI dependencies
+1. Google Generative AI SDK:
 
 ```bash
 
@@ -43,23 +43,33 @@ npm install @google/generative-ai
 
 ```
 
+2. Marked Library:
+
+```bash
+
+npm install marked --save
+
+```
+
 ## Generate API Key
 
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your google account. If you don’t have one, create a new account. 
+1. Access Google AI Studio: Instructs users to sign into [Google AI Studio](https://aistudio.google.com/app/apikey) with a Google account or create a new account if needed. 
 
-2. Once logged in, click on `Get API Key` from the left-hand menu or the top-right corner of the dashboard. 
+2. Navigate to API Key Creation: Go to the `Get API Key` option in the left-hand menu or top-right corner of the dashboard. Click the `Create API Key` button. 
 
-3. Click the `Create API Key` button. You’ll be prompted to either select an existing Google Cloud project or create a new one. Choose the appropriate option and proceed. 
+3. Project Selection: Choose an existing Google Cloud project or create a new one.
 
-4. After selecting or creating a project, your API key will be generated and displayed. Copy the key and store it securely, as it will only be shown once.
+4. API Key Generation: After project selection, the API key is generated. Users are instructed to copy and store the key securely, as it is shown only once.
 
-> `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
+> `Security Note`: Advises against committing the API key to version control and recommends using environment variables or a secret manager in production.
 
 ## Configure Gemini AI with AI AssistView
 
-Create a standalone `app.component.ts` to integrate the Gemini AI with AI AssistView component
+To integrate Gemini AI with the Syncfusion AI AssistView component in your Angular application:
 
-* Add your generated `API Key` at the line 
+* Modify the a standalone `app.component.ts` file to host the integration logic.
+
+* Add your Gemini API key securely in the configuration:
 
 ```bash
 
@@ -78,15 +88,3 @@ const geminiApiKey = 'Place your API key here';
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/ai-assistview/ai-integrations/gemini-ai" %}
-
-## Run and Test 
-
-Run the application in the browser using the following command.
-
-```bash
-
-npm serve
-
-```
-
-Open the hosted link to interact with the Gemini AI for dynamic response.

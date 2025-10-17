@@ -8,9 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tree Column in Angular Gantt component
+# Tree column in Angular Gantt component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a structured way to display parent-child relationships using expand/collapse icons.  
+
+To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
 
 ```ts
 
@@ -20,11 +22,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component pro
 
 ```
 
-## Change expand and collapse icon
+## Customize expand and collapse icons
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows to customize the default expand and collapse icons by applying custom CSS styles.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides support for customizing default expand/collapse icons through CSS. 
 
-To customize the expand and collapse icons, use the following CSS styles:
+To apply custom icons, override the default styles with the following CSS:
 
 ```css
 .e-gantt .e-grid .e-treegridexpand::before {
@@ -35,27 +37,31 @@ To customize the expand and collapse icons, use the following CSS styles:
 }
 ```
 
-In the following demo, the expand and collapse icons are customized using the CSS styles
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.css %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs1" %}
 
-## Change indent space of tree column cell text 
+## Customize indentation of tree column text 
 
-The Gantt component allows to customize the indent space of tree column cell text by leveraging the [queryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) event. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows customization of the indent space in tree column cells using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event.  
 
-In the following demonstration, indent space is applied by adding a CSS class to the tree column cell using the `queryCellInfo` event.
+In the following demonstration, indentation is applied by dynamically adding a CSS class to the tree column cell of **TaskName** using the `queryCellInfo` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,15 +70,16 @@ In the following demonstration, indent space is applied by adding a CSS class to
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs2/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs2" %}
 
 ## Render parent rows in collapsed state
 
-You can easily render all the parent rows in a collapsed state in the Gantt component using the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseallparenttasks) property. Using this property, all parent rows are collapsed during the initial rendering. 
-
-In the following demo, all parent rows are rendered in collapsed state in initial rendering. 
+You can collapse all parent rows during initial rendering by setting the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseallparenttasks) property in the Gantt component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,15 +88,16 @@ In the following demo, all parent rows are rendered in collapsed state in initia
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs3/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs3/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs3" %}
 
-## Retain expanded and collapsed state
+## Retain expand/collapse state on initial load
 
-To maintain the expanded and collapsed state of specific parent rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, utilize the [`expandState`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property. This property corresponds to a value within the data object of the data source, signifying the expand status of the parent row.
-
-In the following demonstration, the parent rows are rendered in an expanded or collapsed state based on the value of the `expandState` property in the data source.
+You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#expandstate) property in the data source.  This property indicates whether a parent row should be expanded or collapsed when the Gantt component loads.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,19 +109,24 @@ In the following demonstration, the parent rows are rendered in an expanded or c
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs4" %}
 
-## Persist expanded and collapsed state on page refresh using localStorage
-
-To persist the expanded and collapsed state of rows using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event when the page refreshes in the browser, this guide illustrates how to utilize localStorage to save and retrieve the state of rows.
-
-   1. Save the collapsed record’s primarykey value to localStorage in the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed) event of the Gantt  by using the [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem) method of the local storage.
-   2. On page refresh, the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event will be triggered. In that event, retrieve the saved records by using the [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem) method of the local storage.
-   3. Then, collapsed the specific rows by using the [CollapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsebykey) method of treegrid object in gantt instance by passing the primary key value as a parameter. and collapse the specific rows by using the `collapseRow` method of the Tree Grid by passing the row detail.
+##  Persist expand/collapse state across page refresh using localStorage
  
-In the following demo, the above-mentioned steps have been followed to persist the expanded or collapsed state while refreshing the page in the browser.
+To retain the expanded and collapsed state of rows after a page refresh in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component:
+
+1. Use the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed) event to store the collapsed row's primary key in `localStorage` via [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem).
+2. On page reload, retrieve the stored keys in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event using [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem).
+3. Collapse the corresponding rows using `CollapseByKey` or `collapseRow` methods by passing the saved key or row details.
+
+This approach ensures that row states are preserved across browser sessions, enhancing user experience and continuity.
+
+In the following demo, the steps mentioned above are used to persist the expanded and collapsed state of rows during a browser page refresh.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,91 +135,93 @@ In the following demo, the above-mentioned steps have been followed to persist t
 {% highlight ts tabtitle="main.ts" %} 
 {% include code-snippet/gantt/columns/treecolumn-cs5/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs5/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs5" %}
 
-## Programmatically expand and collapse a row  
+## Programmatically expand or collapse rows   
 
-In the Gantt, you can programmatically expand and collapse rows using various methods provided by the gantt. This guide demonstrates how to leverage these methods to control the expansion and collapse of rows based on different criteria.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides built-in methods to programmatically control row expansion and collapse:
 
-* **[expandAll](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expandall)**:
-
-To expand all rows in the gantt, use the `expandAll` method.
+* **[expandAll()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expandall)**: Expands all rows. 
 
 ```ts
 this.gantt.expandAll();
 ```
 
-* **[collapseAll](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseall)**:
-
-To collapse all rows in gantt, use the `collapseAll` method.
+* **[collapseAll()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapseall)**: Collapses all rows.
 
 ```ts
 this.gantt.collapseAll();
 ```
 
-* **[expandAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandatlevel)**:
-
-To expand the records at a specific hierarchical level, use the `expandAtLevel` method.
+* `expandAtLevel(level)`: Expands rows at a specific level. 
 
 ```ts
 this.gantt.treegrid.expandAtLevel(0);
 ```
 
-* **[collapseAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapseatlevel)**:
-
-To collapse the records at a specific hierarchical level, use the `collapseAtLevel` method.
+* `collapseAtLevel(level)`: Collapses rows at a specific level. 
 
 ```ts
 this.gantt.treegrid.collapseAtLevel(0);
 ```
 
-* **[expandByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandbykey)**:
-
-To expand records based on a given primary key value, use the `expandByKey` method.
+* `expandByKey(key)`: Expands a row by primary key. 
 
 ```ts
-this.gantt.treegrid.expandByKey(1); //Here pass the primary key value
+this.gantt.treegrid.expandByKey(1); //Here pass the primary key value.
 ```
 
-* **[collapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsebykey)**:
-
-To collapse records based on a given primary key value, use the `collapseByKey` method
+* `collapseByKey(key)`: Collapses a row by primary key. 
 
 ```ts
-this.gantt.treegrid.collapseByKey(1);//Here pass the primary key value
+this.gantt.treegrid.collapseByKey(1);//Here pass the primary key value.
 ```
 
-* **[expandRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandrow)**:
-
-To expand child rows based on the row element, use the `expandRow` method. 
+* `expandRow(rowElement)`: Expands a row using its DOM element.  
 
 ```ts
-this.gantt.treegrid.expandRow(tr); //Here pass the row element as parameter
+this.gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
 ```
 
-* **[collapseRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapserow)**:
-
-To collapse child rows based on the row element, use the `collapseRow` method. 
+* `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
-this.gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter
+this.gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter.
 ```
 
-## Expand and collapse action events
+## Retrieve expanded records
 
-In the Gantt, you can customize the behavior and perform specific actions when the expand or collapse icon is clicked. This can be achieved using a set of events provided by the gantt.
+To retrieve the currently expanded rows in the Gantt component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getexpandedrecords) method. 
 
-The following events are available for handling expand and collapse actions:
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %} 
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-expanded-cs5/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/treecolumn-expanded-cs5" %}
 
-* [expanding](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expanding): This event is triggered before a row is expanded. You can perform custom actions or cancel the row expansion based on certain conditions.
+## Customize expand/collapse behavior using events
 
-* [expanded](https://ej2.syncfusion.com/angular/documentation/api/gantt/#expanded): This event is triggered after a row is expanded. You can perform additional actions or updates after the row expansion is completed.
+You can customize expand and collapse behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed) events.  These events allow you to control and respond to row state changes programmatically based on your application logic.
 
-* [collapsing](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsing): This event is triggered before a row is collapsed. You can perform custom actions or cancel the row collapse based on certain conditions.
+The following sample demonstrates how to customize expand and collapse actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component:
 
-* [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt/#collapsed): This event is triggered after a row is collapsed. You can perform additional actions or updates after the row collapse is completed.
+- Expanding is canceled for the row where **TaskID** is 1.  
+- Collapsing is canceled for the row where **TaskID** is 5.  
+- When a row is expanded and its **Progress** is greater than 50, a green background is applied.  
+- When a row is collapsed and its **Progress** is less than 50, a red background is applied.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,6 +229,9 @@ The following events are available for handling expand and collapse actions:
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs6/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

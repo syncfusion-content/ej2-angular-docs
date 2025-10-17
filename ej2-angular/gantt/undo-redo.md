@@ -1,22 +1,33 @@
 ---
 layout: post
-title: Undo Redo in Angular Gantt component | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Undo redo in Angular Gantt component | Syncfusion
+description: Learn how to configure undo redo actions in the Syncfusion Angular Gantt component for reverting task edits, dependencies, and project changes.
 platform: ej2-angular
-control: Undo Redo 
+control: Undo redo
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo Redo in Angular Gantt component
+# Undo redo in Angular Gantt component
 
-The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
+The undo redo feature in the Angular Gantt component allows users to revert or reapply actions like task edits, deletions, or dependency changes, enhancing project management by correcting mistakes efficiently. Enabled via the [enableUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableundoredo) property, it supports actions such as editing task details, dragging taskbars, or reordering columns, provided the `UndoRedoService` is injected. For example, undoing a task duration change restores the original timeline, while redoing it reapplies the edit. The [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undoredoactions) property specifies which actions to track (e.g., Edit, Delete), defaulting to a comprehensive set including sorting, filtering, and zooming. The [undoRedoStepsCount](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undoredostepscount) property limits the action history, defaulting to 10, with older actions removed as new ones are added. This feature ensures history management for complex projects with hierarchical tasks or frequent updates.
 
-The Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
+## Configure undo redo
 
-The undo redo feature can be enabled in Gantt by using the [enableUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableundoredo) property.
+Enable undo redo by setting [enableUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableundoredo) to **true** and injecting `UndoRedoService` in the Angular module’s providers. The [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undoredoactions) property customizes supported actions, such as:
+- **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `EditService`.
+- **Delete:** Restores deleted tasks, requiring `EditService`.
+- **Add:** Removes added tasks, requiring `EditService`.
+- **Column Reorder:** Reverts column reordering, requiring `ReorderService`.
+- **Indent/Outdent:** Reverts hierarchy changes, requiring `EditService`.
+- **Row Drag And Drop:** Restores row positions, requiring `RowDDService`.
+- **Taskbar Drag And Drop:** Reverts taskbar drags, requiring `EditService`.
+- **Sorting, Filtering, Search:** Reverts grid operations, requiring respective services.
+- **Zoom In, Zoom Out, Zoom To Fit:** Reverts timeline zoom changes.
+- **ColumnState:** Restores column visibility.
+- **Previous Time Span, Next Time Span:** Reverts timeline navigation.
 
-To use undo redo feature, inject the `UndoRedoService` in the provider section of `AppModule`.
+The [undoRedoStepsCount](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undoredostepscount) property sets the action history limit (e.g., 5); setting it to **0** disables undo/redo. Ensure dependencies like `EditService` or `RowDDService` are injected for actions like Edit or RowDragAndDrop.
 
 ## Configure the feature set for undo redo actions
 
@@ -43,7 +54,7 @@ By default, all the gantt features listed in the below table will be restored fo
 | PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
 | NextTimeSpan | Undo redo actions can be performed for next time span action.|
 
-In the following code example, `Edit` and `Delete` actions are specified in `undoRedoActions` property.
+In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,6 +63,10 @@ In the following code example, `Edit` and `Delete` actions are specified in `und
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,15 +90,21 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs2/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs2" %}
 
-## Perform undo redo actions programatically
+This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
-You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undo) and [redo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#redo) methods.
+## Programmatic Undo/Redo in Gantt Chart
 
-The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
+Programmatic control over undo redo is achieved using methods like [undo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#undo) to revert actions, [redo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#redo) to reapply them.
+
+The following example triggers `undo` and `redo` via external buttons:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,15 +114,19 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs3/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs3/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs3" %}
 
 ## Retrieve undo and redo stack collection
 
-By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [`getUndoActions`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getundoactions) and [`getRedoActions`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getredoactions) methods.
+By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getredoactions) methods.
 
-The following code example demonstrates how to retrieve the undo and redo collection using method by clicking the external button.
+The following code example demonstrates how to retrieve the **undo** and **redo** collection using method by clicking the external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,6 +135,10 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs4/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -129,6 +158,15 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs5/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/undo-redo/default-cs5/src/data.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs5" %}
+
+## See also
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

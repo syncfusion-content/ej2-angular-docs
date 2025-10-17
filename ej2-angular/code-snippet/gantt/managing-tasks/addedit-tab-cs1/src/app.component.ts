@@ -1,31 +1,18 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, EditSettingsModel, ToolbarItem, EditService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
 import { editingResources } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editDialogFields]="editDialogFields" [addDialogFields]="addDialogFields" [editSettings]="editSettings" [resourceFields]="resourceFields" [resources]= "resources" [toolbar]="toolbar" [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editDialogFields]="editDialogFields" [addDialogFields]="addDialogFields" [editSettings]="editSettings" [resourceFields]="resourceFields" [resources]= "resources" [toolbar]="toolbar" [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editDialogFields?: object[];
@@ -39,6 +26,7 @@ export class AppComponent{
     public projectStartDate?: Date;
     public projectEndDate?: Date;
     public resourceFields?: object;
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -47,8 +35,8 @@ export class AppComponent{
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -65,26 +53,26 @@ export class AppComponent{
             },
         ];
         this.taskSettings = {
-                id: 'TaskID',
-                name: 'TaskName',
-                startDate: 'StartDate',
-                endDate: 'EndDate',
-                duration: 'Duration',
-                progress: 'Progress',
-                dependency: 'Predecessor',
-                child: 'subtasks',
-                notes: 'info',
-                resourceInfo: 'resources'
+            id: 'TaskID',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            endDate: 'EndDate',
+            duration: 'Duration',
+            progress: 'Progress',
+            dependency: 'Predecessor',
+            child: 'subtasks',
+            notes: 'info',
+            resourceInfo: 'resources'
         };
         this.editDialogFields = [
-                { type: 'General', headerText: 'General' },
-                { type: 'Dependency' },
-                { type: 'Resources' },
-                { type: 'Notes' }
+            { type: 'General', headerText: 'General' },
+            { type: 'Dependency' },
+            { type: 'Resources' },
+            { type: 'Notes' }
         ];
         this.addDialogFields = [
-        { type: 'General', headerText: 'General' },
-        { type: 'Dependency' }
+            { type: 'General', headerText: 'General' },
+            { type: 'Dependency' }
         ];
         this.resourceFields = {
             id: 'resourceId',
@@ -98,14 +86,11 @@ export class AppComponent{
             allowTaskbarEditing: true
         };
         this.labelSettings = {
-                leftLabel: 'TaskName',
-                rightLabel: 'resources'
+            leftLabel: 'TaskName',
+            rightLabel: 'resources'
         };
-        this.toolbar =  ['Add'];
+        this.toolbar = ['Add'];
         this.projectStartDate = new Date('03/28/2019');
         this.projectEndDate = new Date('04/14/2019');
     }
 }
-
-
-

@@ -1,52 +1,22 @@
 ---
 layout: post
-title: Taskdependency in Angular Gantt component | Syncfusion
-description: Learn here all about Taskdependency in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Task dependency in Angular Gantt component | Syncfusion
+description: Learn how to configure task dependencies in the Syncfusion Angular Gantt component for establishing relationships, managing offsets, and handling validation.
 platform: ej2-angular
-control: Taskdependency 
+control: Task dependency
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Taskdependency in Angular Gantt component
+# Task dependency in Angular Gantt component
 
-Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
+Task dependency in the Angular Gantt component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
-In Gantt, you can enable or disable the parent predecessor using [`allowParentDependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) property.
+## Configure task dependencies
 
-By default, the `allowParentDependency` property will be `true`.
+Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency). Parent dependencies can be enabled by [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
 
-## Task relationship types
-
-Task relationships are categorized into four types based on the start and finish dates of the task.
-
-### Start to Start(SS)
-
-You cannot start a task until the dependent task also starts.
-
-![Alt text](images/ss.png)
-
-### Start to Finish(SF)
-
-You cannot finish a task until the dependent task is started.
-
-![Alt text](images/sf.png)
-
-### Finish to Start(FS)
-
-You cannot start a task until the dependent task is completed.
-
-![Alt text](images/fs.png)
-
-### Finish to Finish(FF)
-
-You cannot finish a task until the dependent task is completed.
-
-![Alt text](images/ff.png)
-
-## Define task relationship
-
-Task relationship is defined in the data source as a string value, and this value is mapped to the Gantt component by using the [`taskFields.dependency`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) property. The following code example demonstrates how to enable the predecessor in the Gantt component.
+The following example establishes dependencies:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,18 +27,37 @@ Task relationship is defined in the data source as a string value, and this valu
 {% include code-snippet/gantt/taskdependency/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/default-cs1" %}
 
-## Predecessor offset with duration units
+This code renders connector lines for dependencies like '2FS', updating taskbars on changes.
 
-In the Gantt component, the predecessor offset can be defined with the following duration units:
+## Understand task relationship types
 
-* Day
-* Hour
-* Minute
+Task relationships are categorized into four types based on start and finish dates:
+- Start to Start (SS): Successor starts with predecessor.
 
-You can define an offset with various offset duration units for predecessors by using the following code example.
+    ![Start to Start dependency](images/ss.png)
+
+- Start to Finish (SF): Successor finishes when predecessor starts.
+
+    ![Start to Finish dependency](images/sf.png)
+
+- Finish to Start (FS): Successor starts after predecessor finishes (default).
+
+    ![Finish to Start dependency](images/fs.png)
+
+- Finish to Finish (FF): Successor finishes with predecessor.
+
+    ![Finish to Finish dependency](images/ff.png)
+
+Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
+
+## Configure predecessor offsets with duration units
+
+Predecessor offsets support day, hour, or minute units (e.g., '2FS+3h'), allowing precise delays or leads between tasks.
+
+The following example uses duration units:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,12 +68,16 @@ You can define an offset with various offset duration units for predecessors by 
 {% include code-snippet/gantt/taskdependency/durationunits-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/durationunits-cs1" %}
 
-## Disabling automatic dependency offset updates
+This code sets offsets like '2FS+3h', adjusting taskbars accordingly.
 
-By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+## Disable automatic dependency offset updates
+
+Automatic offset updates during taskbar editing are disabled with [updateOffsetOnTaskbarEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateoffsetontaskbaredit) set to `false`, allowing manual updates via the dependency tab or predecessor column.
+
+The following example disables automatic updates:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,28 +88,19 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 {% include code-snippet/gantt/taskdependency/durationunits-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/durationunits-cs2" %}
 
-## Validate predecessor links on editing
+This code preserves offsets during edits, requiring manual adjustments.
 
-In the Gantt component, the task relationship link can be broken by editing the start date, end date, and duration value of task. When the task relationship is broken on any edit action, this can be handled in the Gantt component using the following two ways:
-* actionBegin event.
-* Predecessor validation dialog.
+## Handle dependency validation modes
 
-### Using actionBegin event
+Dependency validation during editing uses the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
+- `respectLink`: Prioritizes links, reverting invalid edits.
+- `removeLink`: Prioritizes editing, removing conflicting links.
+- `preserveLinkWithEditing`: Updates offsets to maintain links (default).
 
-When the task relationship link is broken on any edit action, then the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event will be triggered with `requestType` argument as `validateLinkedTask`. You can validate the editing action within the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event using the `validateMode` event argument. The `validateMode` event argument has the following properties:
-
-Argument |Default value |Description
------|-----|-----
-args.validateMode.respectLink | false | In this validation mode, the predecessor links will be considered as high priority. With this mode enabled, when the successor task is moved before predecessor task’s end date, the editing will be reverted and dates will be validated based on the dependency links.
-args.validateMode.removeLink | false | In this validation mode, the taskbar editing will be considered as high priority, where in the case of inappropriate task dates the dependency links will be removed and tasks will be moved to the edited date.
-args.validateMode.preserveLinkWithEditing | true | In this validation mode, taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating offset value of predecessors.
-
-By default, the `preserveLinkWithEditing` validation mode will be enabled, so the predecessors are updated with offset values.
-
-The following sample explains enabling the `respectLink` validation mode while editing the linked tasks in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event.
+The following example enables `respectLink` mode:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -127,27 +111,16 @@ The following sample explains enabling the `respectLink` validation mode while e
 {% include code-snippet/gantt/taskdependency/predecessor-links-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/predecessor-links-cs1" %}
 
-### Using validation dialog
+This code reverts edits violating links, ensuring dependency integrity.
 
-When disabling all the validation modes in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event, a validation pop-up will be displayed prompting users to select the validation mode to validate taskbar editing
+## Use validation dialog
 
-This validation pop-up will display different options based on the successor task’s start date after editing.
+When all validation modes are disabled in [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
 
-If you move the successor task that starts after the predecessor task’s end date, then a dialog will be rendered with the following options:
-
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-* Move the task to start on edited date and keep the link.
-
-If you move the successor task that starts before the predecessor task’s end date, then a dialog will be rendered with the following options:
-
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-
-The following code example shows how to enable the predecessor validation dialog in Gantt.
+The following example enables the validation dialog:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,12 +131,16 @@ The following code example shows how to enable the predecessor validation dialog
 {% include code-snippet/gantt/taskdependency/validation-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/validation-dialog-cs1" %}
 
-## Dynamically show/hide the dependency line
+This code displays options like "Remove the link and move the task" for conflicts.
 
-By default, mapping the dependency field in taskFields displays dependency lines in the Gantt chart. To hide the dependency line upon button click, set `visibility` style to hidden for the CSS class name `.e-gantt-dependency-view-container`.
+## Show or hide dependency lines dynamically
+
+Dependency lines are hidden or shown by toggling `visibility: hidden` on `.e-gantt-dependency-view-container`, allowing dynamic control for focused views.
+
+The following example toggles dependency lines:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -174,5 +151,59 @@ By default, mapping the dependency field in taskFields displays dependency lines
 {% include code-snippet/gantt/taskdependency/showhide-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/taskdependency/showhide-cs1" %}
+
+This code hides lines on button click, with ARIA updates for accessibility.
+
+## Customize connector lines
+
+Connector lines are styled globally with [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground).
+
+The following example sets the connector line background color as red:
+
+```typescript
+import { Component } from '@angular/core';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+@Component({
+    imports: [GanttModule],
+    standalone: true,
+    selector: 'app-root',
+    template: `
+        <ejs-gantt height="430px" [dataSource]="taskData" [taskFields]="taskSettings" [projectStartDate]="projectStartDate"  [projectEndDate]="projectEndDate" [connectorLineWidth]="2" [connectorLineBackground]="'red'">
+        </ejs-gantt>`
+})
+
+export class AppComponent {
+    public taskData: object[] = [
+        { TaskID: 1, TaskName: "Product concept", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025") },
+        { TaskID: 2, TaskName: "Define the product usage", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025"), Duration: 1, Progress: 30, ParentId: 1 },
+        { TaskID: 3, TaskName: "Define the target audience", StartDate: new Date("04/02/2025"), EndDate: new Date("04/04/2025"), Duration: 2, Progress: 40, ParentId: 1 },
+        { TaskID: 4, TaskName: "Prepare product sketch and notes", StartDate: new Date("04/05/2025"), Duration: 2, Progress: 30, ParentId: 1, Predecessor: "2" },
+        { TaskID: 5, TaskName: "Concept approval", StartDate: new Date("04/08/2025"), EndDate: new Date("04/08/2025"), Duration: 0, ParentId: 1, Predecessor: "3,4" },
+        { TaskID: 6, TaskName: "Market research", StartDate: new Date("04/09/2025"), EndDate: new Date("04/18/2025"), Progress: 30 },
+        { TaskID: 7, TaskName: "Demand analysis", Progress: 40, ParentId: 6 },
+        { TaskID: 8, TaskName: "Customer strength", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, Progress: 30, ParentId: 7, Predecessor: "5"},
+        { TaskID: 9, TaskName: "Market opportunity analysis", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, ParentId: 7, Predecessor: "5" },
+        { TaskID: 10, TaskName: "Competitor analysis", StartDate: new Date("04/15/2025"), EndDate: new Date("04/18/2025"), Duration: 4, Progress: 30, ParentId: 6, Predecessor: "7,8" },
+    ];
+    public taskSettings: object = {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        dependency: 'Predecessor',
+        parentID: 'ParentId'
+    };
+
+}
+```
+
+![Customize connector lines](images/connector-line-bgcolor.png)
+
+## See also
+- [How to configure task constraints?](https://ej2.syncfusion.com/angular/documentation/gantt/task-constraints)
+- [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
+- [How to enable critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

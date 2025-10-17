@@ -45,6 +45,7 @@ The CssClass property enables AppBar customization through custom CSS classes, a
 {% previewsample "page.domainurl/samples/appbar/cssclass-cs1" %}
 
 ## HtmlAttributes
+
 It can be used for additional inline attributes by specifying as inline attributes or by specifying [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/appbar/#htmlattributes) directive. In the code example below, the aria-label of the AppBar is customized by specifying as attributes.
 
 {% tabs %}

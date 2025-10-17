@@ -42,7 +42,6 @@ export class AppComponent implements OnInit {
     @ViewChild('chart')
     public chart?: ChartComponent;
     public primaryXAxis?: Object;
-    public hasData: boolean = false;
     public data: Object[] = [];
     public chartData?: Object[];
     
@@ -62,7 +61,6 @@ export class AppComponent implements OnInit {
             { x: 'May', y: 20072 },
             { x: 'June', y: 19233 }
         ];
-        this.hasData = true;
         this.chart?.refresh();
     }
 }

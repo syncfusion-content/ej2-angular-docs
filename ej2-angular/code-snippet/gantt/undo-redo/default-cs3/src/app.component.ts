@@ -1,41 +1,34 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SortService,RowDDService,FilterService,ResizeService,ReorderService, ToolbarService, EditService,UndoRedoService,ColumnMenuService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
-import { Component, ViewEncapsulation, OnInit,ViewChild } from '@angular/core';
-
-import { ToolbarItem, EditSettingsModel, GanttAction,GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { SortService, RowDDService, FilterService, ResizeService, ReorderService, ToolbarService, EditService, UndoRedoService, ColumnMenuService } from '@syncfusion/ej2-angular-gantt'
+import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { ToolbarItem, EditSettingsModel, GanttAction, GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData } from './data';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SortService,RowDDService,FilterService,ResizeService,ReorderService, ToolbarService, EditService,UndoRedoService,ColumnMenuService],
-standalone: true,
+    imports: [GanttModule, ButtonModule],
+    providers: [SortService, RowDDService, FilterService, ResizeService, ReorderService, ToolbarService, EditService, UndoRedoService, ColumnMenuService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<button ejs-button id='undo' (click)='undo()'>Undo</button>
+        `<button ejs-button id='undo' style="margin-right: 8px;" (click)='undo()'>Undo</button>
        <button ejs-button id='redo' (click)='redo()'>Redo</button> 
-       <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [allowSorting]='true' [allowFiltering]='true' [toolbar]="toolbar" [enableUndoRedo]='true' [showColumnMenu]='true'
-       [allowResizing]='true' [allowReordering]='true' [allowRowDragAndDrop]='true' [taskFields]="taskSettings" [undoRedoActions]="undoRedoActions" [editSettings] = "editSettings"></ejs-gantt>`,
+        <div style="margin-top: 16px;">
+            <ejs-gantt #gantt height="430px" [dataSource]="data" [allowSorting]='true' [allowFiltering]='true' [toolbar]="toolbar" [enableUndoRedo]='true' [showColumnMenu]='true'
+            [allowResizing]='true' [allowReordering]='true' [allowRowDragAndDrop]='true' [taskFields]="taskSettings" [undoRedoActions]="undoRedoActions" [editSettings] = "editSettings">
+            </ejs-gantt>
+        </div>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
     public undoRedoActions?: GanttAction[];
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -53,18 +46,17 @@ export class AppComponent{
             allowTaskbarEditing: true,
             showDeleteConfirmDialog: true
         },
-        this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-        'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
-        this.undoRedoActions = ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-        'PreviousTimeSpan', 'NextTimeSpan','ColumnState']
+        this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+            'PrevTimeSpan', 'NextTimeSpan', 'Undo', 'Redo'],
+        this.undoRedoActions = ['Add', 'Edit', 'Delete', 'Search', 'Sorting', 'Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+            'PreviousTimeSpan', 'NextTimeSpan', 'ColumnState']
     }
-    undo(): void {
-        this.ganttObj.undo();
+
+    public undo(): void {
+        this.ganttInstance.undo();
     };
-    redo(): void {
-        this.ganttObj.redo();
+
+    public redo(): void {
+        this.ganttInstance.redo();
     };
 }
-
-
-

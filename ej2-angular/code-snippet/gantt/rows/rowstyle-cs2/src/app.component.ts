@@ -1,63 +1,62 @@
-
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-
-import { Component, ViewEncapsulation, OnInit, ViewChild, NgModule } from '@angular/core';
-import { GanttComponent, IGanttData } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
+import { GanttComponent, GanttModule, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
-    imports: [
-        GanttModule
-   ],
-standalone: true,
-    selector: 'app-root',
-    template:
-        `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data" 
-        [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings" (dataBound)='dataBound()'>     
-            <e-columns>
-                <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
-                <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=290></e-column>
-                <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=120 ></e-column>
-                <e-column field='Duration' headerText='Duration' textAlign='Right' width=90 ></e-column>
-                <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
-            </e-columns>
-       </ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  template: `
+    <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings" (rowDataBound)="rowDataBound($event)">
+      <e-columns>
+        <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
+        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
+        <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
+        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
+        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
+      </e-columns>
+    </ejs-gantt>`,
+  styles: [`
+    .child-row {
+      background-color: #cef0c9ff !important;
+    }
+    .parent-row {
+      background-color: #f7928bff !important;
+    }
+  `],
+  encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
-    public data?: object[];
-    @ViewChild('gantt')
-    public gantt?: GanttComponent;
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public ngOnInit(): void {
-        this.data = GanttData;
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks'
-        };
-        this.splitterSettings = {
-            position: '75%'
-        };
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt') public gantt?: GanttComponent;
+  public data: object[] = [];
+  public taskSettings: object= {};
+  public splitterSettings: object= {};
+
+  ngOnInit(): void {
+    this.data = GanttData;
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      child: 'subtasks'
+    };
+    this.splitterSettings = {
+      position: '75%'
+    };
+  }
+
+  public rowDataBound(args: RowDataBoundEventArgs): void {
+    const rowElement = args.row as HTMLElement;
+    const rowData = args.data as any;
+    if (rowData.hasChildRecords) {
+      rowElement.classList.add('parent-row');
+    } else {
+      rowElement.classList.add('child-row');
     }
-    dataBound() {
-        let data = (this.gantt as GanttComponent).currentViewData;
-        for (let i = 0; i < data.length; i++) {
-            if (!(data[i] as any).hasChildRecords) {
-                //Here apply the background color of child rows
-                ((this.gantt as GanttComponent).treeGrid.getRows()[i] as HTMLElement).style.background = '#33ff12';
-                ((this.gantt as GanttComponent).ganttChartModule.getChartRows()[i] as HTMLElement).style.background = '#33ff12';
-            } else {
-                //Here apply the background color of parent rows
-                ((this.gantt as GanttComponent).treeGrid.getRows()[i] as HTMLElement).style.background = '#ff2f1f';
-                ((this.gantt as GanttComponent).ganttChartModule.getChartRows()[i] as HTMLElement).style.background = '#ff2f1f';
-            }
-        }
-    }
+  }
 }
+
+

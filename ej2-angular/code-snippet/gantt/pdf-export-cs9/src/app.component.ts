@@ -1,8 +1,7 @@
-import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { Component, ViewChild } from '@angular/core';
-import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { GanttModule, GanttComponent, ToolbarService, ToolbarItem, PdfExportService, SelectionService, PdfQueryCellInfoEventArgs, Column, PdfGanttCellStyle } from '@syncfusion/ej2-angular-gantt'
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { ToolbarItem } from '@syncfusion/ej2-gantt';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
 
 @Component({
@@ -11,28 +10,18 @@ import { editingData } from './data';
   imports: [GanttModule],
   providers: [ToolbarService, PdfExportService, SelectionService],
   template: `
-    <ejs-gantt
-      #gantt
-      id="ganttChart"
-      height="430px"
-      [dataSource]="taskData"
-      [taskFields]="taskFields"
-      [toolbar]="toolbar" 
-      allowPdfExport='true' 
-      [treeColumnIndex]="1"
-      (toolbarClick)="toolbarClick($event)"
-      (pdfQueryCellInfo)="pdfQueryCellInfo($event)"
-      >
-    </ejs-gantt>
-  `,
+    <ejs-gantt #gantt id="ganttChart" height="430px" [dataSource]="taskData" [taskFields]="taskFields" [toolbar]="toolbar" 
+    allowPdfExport='true'  [treeColumnIndex]="1" (toolbarClick)="toolbarClick($event)" (pdfQueryCellInfo)="pdfQueryCellInfo($event)">
+    </ejs-gantt>`,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
   public taskData?: object;
   public taskFields?: object;
   public toolbar?: ToolbarItem[];
   public columns?: object[];
-  @ViewChild('gantt', {static: true})
-  public ganttRef?: GanttComponent;
+
   ngOnInit(): void {
     this.taskData = editingData;
     this.taskFields = {
@@ -42,27 +31,29 @@ export class AppComponent {
       duration: 'Duration',
       progress: 'Progress',
       dependency: 'Predecessor',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
     this.columns = [
       { field: 'TaskID' },
       { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
       { field: 'StartDate' },
       { field: 'Duration' }
-  ];
-  this.toolbar =  ['PdfExport'];
+    ];
+    this.toolbar = ['PdfExport'];
   }
-  public toolbarClick(args: any): void {
+
+  public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttChart_pdfexport') {
-      this.ganttRef?.pdfExport();
+      this.ganttInstance?.pdfExport();
     }
   }
-  public pdfQueryCellInfo(args: any): void {
-    if(args.column.field == 'Progress'){
-      if(args.value < 50) {
-        args.style.backgroundColor = new PdfColor(240, 128, 128);
+
+  public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
+    if ((args.column as Column).field == 'Progress') {
+      if ((args.value as number) < 50) {
+        (args.style as PdfGanttCellStyle).backgroundColor = new PdfColor(240, 128, 128);
       } else {
-        args.style.backgroundColor = new PdfColor(165, 105, 189);
+        (args.style as PdfGanttCellStyle).backgroundColor = new PdfColor(165, 105, 189);
       }
     }
   }

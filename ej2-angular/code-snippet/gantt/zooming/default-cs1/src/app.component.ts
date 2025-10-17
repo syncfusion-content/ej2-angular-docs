@@ -1,33 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
+import { EditService, SelectionService, ToolbarItem, ToolbarService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, SelectionService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService, SelectionService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"[toolbar]="toolbar"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -40,7 +30,7 @@ export class AppComponent{
             dependency: 'Predecessor',
             child: 'subtasks'
         };
-        this.toolbar =  ['ZoomIn', 'ZoomOut', 'ZoomToFit'];
+        this.toolbar = ['ZoomIn', 'ZoomOut', 'ZoomToFit'];
     }
 }
 

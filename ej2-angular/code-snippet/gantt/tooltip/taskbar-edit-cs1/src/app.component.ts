@@ -1,59 +1,49 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttModule, EditService, EditSettingsModel } from '@syncfusion/ej2-angular-gantt'
 import { editingData } from './data';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-@Component({
-imports: [
-         GanttModule
-    ],
 
-providers: [EditService],
-standalone: true,
+@Component({
+    imports: [GanttModule],
+    providers: [EditService],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [editSettings]="editSettings" [tooltipSettings]="tooltipSettings">
-       <ng-template #tooltipSettingsEditing let-data>
-        <div> <ng-container>Duration : {{data.duration}}</ng-container> </div>
-       </ng-template></ejs-gantt>`,
+    template: `
+      <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [editSettings]="editSettings" [tooltipSettings]="tooltipSettings">
+        <ng-template #tooltipSettingsEditing let-data>
+            <div> <ng-container>Duration : {{data.duration}}</ng-container> </div>
+        </ng-template>
+       </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
 
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public tooltipSettings?: object;
     public editSettings?: EditSettingsModel;
-columns: any;
+    public columns?: object[];
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
-                id: 'TaskID',
-                name: 'TaskName',
-                startDate: 'StartDate',
-                duration: 'Duration',
-                baselineStartDate:"BaselineStartDate",
-                baselineEndDate:"BaselineEndDate",
-                progress: 'Progress',
-                dependency: 'Predecessor',
-                child: 'subtasks'
+            id: 'TaskID',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            duration: 'Duration',
+            baselineStartDate: "BaselineStartDate",
+            baselineEndDate: "BaselineEndDate",
+            progress: 'Progress',
+            dependency: 'Predecessor',
+            child: 'subtasks'
         };
         this.editSettings = {
-            allowEditing:true,
-            allowTaskbarEditing:true
-            },
+            allowEditing: true,
+            allowTaskbarEditing: true
+        },
         this.tooltipSettings = {
-                showTooltip: true
+            showTooltip: true
         };
 
     }
 }
-
-
 

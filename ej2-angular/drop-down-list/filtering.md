@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Filtering in Angular Drop down list component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular DropDownList Component | Syncfusion
+description: Learn here all about the filtering capabilities in the Syncfusion Angular DropDownList component of Essential JS 2 and more.
 platform: ej2-angular
-control: Filtering 
+control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Drop down list component
+# Filtering in Angular DropDownList Component
 
-The DropDownList has built-in support to filter data items when `allowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the search box.
+The DropDownList component provides built-in support for filtering data items when the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) property is enabled. The filtering operation begins as soon as you start typing characters in the search box.
 
-To display filtered items in the popup, filter the required data and return it to the DropDownList via [updateData](https://ej2.syncfusion.com/angular/documentation/api/combo-box/filteringEventArgs/#updatedata) method by using the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#filtering) event.
+To display filtered items in the popup, you can filter the required data and return it to the DropDownList using the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/#updatedata) method within the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/) event.
 
-The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `filtering` event.
+The following sample demonstrates how to query the data source and pass the filtered data to the DropDownList through the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +30,9 @@ The following sample illustrates how to query the data source and pass the data 
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the DropDownList. This can be done by manual validation within the filter event handler.
+You can set a minimum character count to begin the filtering process. This is achieved through manual validation within the filter event handler, preventing filtering until a specified number of characters are entered.
 
-In the following example, the remote request does not fetch the search data until the search key contains three characters.
+In the following example, the filtering process does not start until the search input contains at least three characters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +48,15 @@ In the following example, the remote request does not fetch the search data unti
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string type within the filter event handler.
+While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string type within the filtering event handler. You can also use the [filterType](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#filtertype) property to set the default filtering criteria.
 
-In the following examples, data filtering is done with `endsWith` type.
+| FilterType | Description | Supported Types |
+|------------|-------------|-----------------|
+| StartsWith | Checks whether a value begins with the specified value. | String |
+| EndsWith | Checks whether a value ends with specified value. | String |
+| Contains | Checks whether a value contains with specified value. | String |
+
+The following example demonstrates data filtering using the `endsWith` operator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,9 +72,9 @@ In the following examples, data filtering is done with `endsWith` type.
 
 ## Case sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by passing the fourth optional parameter of the `where` clause.
+Filtering can be configured to be case-sensitive. This is achieved by passing `false` for the optional [`ignoreCase`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#ignorecase) parameter (the fourth parameter) of the `where` clause when creating the [`Query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#query).
 
-The following example shows how to perform case-sensitive filter.
+The following example demonstrates how to perform a case-sensitive filter.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,9 +90,9 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics Filtering
 
-The DropDownList supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#ignoreaccent) is enabled.
+The DropDownList component supports diacritics filtering, which helps to ignore [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results from lists of international characters. This feature is enabled by setting the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#ignoreaccent) property to `true`.
 
-In the following sample,data with diacritics are bound as dataSource for DropDownList.
+In the following sample, data containing diacritic characters is bound as the dataSource for the DropDownList.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +108,7 @@ In the following sample,data with diacritics are bound as dataSource for DropDow
 
 ## Debounce delay
 
-You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+The [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) property allows you to set a delay time in milliseconds before the filtering action is triggered. This delay helps reduce the number of filtering requests as you type, improving performance and providing a smoother user experience. By default, [`debounceDelay`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) is set to `0`, which means the debounce functionality is disabled. To enable it, specify a time in milliseconds.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

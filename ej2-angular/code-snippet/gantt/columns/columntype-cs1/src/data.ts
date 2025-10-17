@@ -1,6 +1,3 @@
-/**
- * TreeGrid DataSource
- */
 export let GanttData: Object[]  = [
     {
         TaskID: 1,

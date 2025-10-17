@@ -2370,7 +2370,7 @@ export class AppComponent{
 
 ## endEdit
 
-The [endEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#endedit) event is triggered after a task is edited using cell or taskbar editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
+The [endEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/#endedit) event is triggered after a task is edited using cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
 The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarEditedEventArgs/) with the following properties:
 
