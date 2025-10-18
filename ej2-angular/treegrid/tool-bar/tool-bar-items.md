@@ -27,7 +27,6 @@ The following table lists available built-in toolbar items and their correspondi
 | Cancel               | Cancels the edit state. |
 | Search               | Searches records by the provided key. |
 | Print                | Prints the TreeGrid. |
-| ColumnChooser        | Opens a dialog to select column visibility.|
 | ExcelExport          | Exports the TreeGrid to Excel. |
 | PdfExport            | Exports the TreeGrid to PDF. |
 | WordExport           | Exports the TreeGrid to Word. |

@@ -132,22 +132,6 @@ Define HTML content directly within the [`content`](https://ej2.syncfusion.com/a
   
 {% previewsample "page.domainurl/samples/diagram/shapes/html-cs1" %}
 
-#### Functional content template
-
-To render an HTML node using a functional template, we define a function that returns the template string. Within this function, modifications can be made based on the node's ID.
-
-The following code illustrates how to render an HTML node using the function and manipulate its content dynamically.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/shapes/html-cs11/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/shapes/html-cs11/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
 ### HTML Node with Node Template
 
 For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodetemplate) approach. Define your template in the HTML file and reference it through the diagram's nodeTemplate property.
@@ -164,34 +148,11 @@ For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com
   
 {% previewsample "page.domainurl/samples/diagram/shapes/html-cs2" %}
 
-#### Functional node template
-
-We can define a function which returns a template string and assign it directly to the `nodeTemplate` property of diagram.
-
-Refer the code example below.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/shapes/html-cs22/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/shapes/html-cs22/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-
 ## Native Nodes
 
 Native nodes allow you to embed SVG elements directly into your diagrams, providing scalable vector graphics with precise control over visual appearance. This approach is ideal for custom icons, complex shapes, and high-quality graphics that scale well at any size.
 
 To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) node, set the shape property to **native** and provide SVG content through the content property.
-
-N> Similar to HTML nodes, native nodes cannot be exported to image formats due to canvas rendering limitations. Fill colors of native nodes can be overridden by inline SVG styles or fill attributes specified in the SVG template.
-
-### Native node with content template
-
-To render an SVG node using a content template, define the desired template string in the node's [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/htmlModel/#content) property. The following example demonstrates how to create an SVG node using a content template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,53 +166,7 @@ To render an SVG node using a content template, define the desired template stri
   
 {% previewsample "page.domainurl/samples/diagram/shapes/native-cs1" %}
 
-#### Functional content template
-
-Dynamic SVG content generation is supported through function-based templates that return SVG markup based on runtime conditions. This approach enables responsive graphics that adapt to node properties or the application's state.
-
-The following example demonstrates how to render an SVG node using a function and dynamically manipulate its content.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/shapes/native-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/shapes/native-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-### Native node with node template
-
-The [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodetemplate) property allows defining reusable SVG templates at the diagram level. This approach is efficient when multiple nodes share similar vector graphics or when centralized template management is required.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/shapes/native-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/shapes/native-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/shapes/native-cs3" %}
-
-#### Functional node template
-
-A functional `nodeTemplate` implementation provides maximum flexibility for generating SVG templates programmatically and creating dynamic content.
-
-The following example demonstrates this approach.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/shapes/native-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/shapes/native-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
+N> Similar to HTML nodes, native nodes cannot be exported to image formats due to canvas rendering limitations. Fill colors of native nodes can be overridden by inline SVG styles or fill attributes specified in the SVG template.
 
 ### SVG Content Alignment and Scaling
 

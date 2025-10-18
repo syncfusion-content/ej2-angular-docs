@@ -8,15 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row spanning in Angular Gantt component
+# Row Spanning in Angular Gantt Component
 
-The Gantt provides an option to span grid row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 
-To achieve this, you need to define the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs) event. The `rowSpan` attribute is used to specify the number of rows that the current cell should span.
+To enable row spanning, use the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#rowspan) attribute inside the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event. This event is triggered for each grid cell, where you can define the number of rows a cell should span based on its data.
 
-The `queryCellInfo` event is triggered for each grid cell in the gantt, allowing you to customize the cells in row. By handling this event, you can set the `rowSpan` attribute for a cell to achieve row spanning.
-
-In the following demo, **Soil test approval** cell is spanned to two rows in the **TaskName** column.
+In the example below, the **Soil test approval** cell spans across two rows in the **TaskName** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,4 +27,4 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
   
 {% previewsample "page.domainurl/samples/gantt/rows/rowSpanning-cs1" %}
 
-> * The [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) attributes can be used together to merge grid cells both vertically and horizontally.
+> * You can use both [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) together to merge grid cells vertically and horizontally.

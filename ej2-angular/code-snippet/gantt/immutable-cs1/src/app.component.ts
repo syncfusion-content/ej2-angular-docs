@@ -1,35 +1,24 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule,DayMarkersService, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [DayMarkersService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [DayMarkersService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings"
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings"
        [toolbar]="toolbar" enableImmutableMode="true"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
+
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -49,9 +38,6 @@ export class AppComponent{
             allowTaskbarEditing: true,
             showDeleteConfirmDialog: true
         };
-        this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel','Indent','Outdent'];
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Indent', 'Outdent'];
     }
 }
-
-
-

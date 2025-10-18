@@ -1,65 +1,65 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewChild, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-
-import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({
-  imports: [
-         GanttModule, ButtonModule
-    ],
-standalone: true,
-    selector: 'app-root',
-  template:
-    `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
-        <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>
-       <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings">       
-       <e-columns>
-          <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
-          <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270 ></e-column>
-          <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=120 ></e-column>
-          <e-column field='Duration' headerText='Duration' textAlign='Right' width=90></e-column>
-          <e-column field='Progress' headerText='Progress' textAlign='Right' width=150></e-column>
-        </e-columns>
-
-       </ejs-gantt>`,
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule, ButtonModule],
+  template: `
+    <div style="margin-bottom: 20px;">
+      <button ejs-button style="margin-right: 10px;" id="add" cssClass="e-info" (click)="addColumns()">Add Column</button>
+      <button ejs-button id="delete" cssClass="e-info" (click)="deleteColumns()">Delete Column</button>
+    </div>
+    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings">
+      <e-columns>
+        <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
+        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-column>
+        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
+        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
+        <e-column field="Progress" headerText="Progress" textAlign="Right" width="150"></e-column>
+      </e-columns>
+    </ejs-gantt> `,
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-  // Data for Gantt
-  public data?: object[];
-  @ViewChild('gantt')
-  public gantt?: GanttComponent
-  public taskSettings?: object;
-  public splitterSettings?: object;
-  public ngOnInit(): void {
+
+export class AppComponent implements OnInit {
+  @ViewChild('gantt') public ganttInstance?: GanttComponent;
+  public taskSettings: object = {};
+  public data: object[] = [];
+  public splitterSettings: object = {};
+
+  ngOnInit(): void {
     this.data = GanttData;
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
+      endDate: 'EndDate',
       duration: 'Duration',
       progress: 'Progress',
-      child: 'subtasks',
+      parentID: 'ParentID'
     };
     this.splitterSettings = {
       position: '75%'
     };
   }
-  addColumns(): void {
-    var newColumns = [
+
+  public addColumns(): void {
+    const newColumns: ColumnModel[] = [
       { field: 'TaskID', headerText: 'TaskID', width: 120 },
-      { field: 'StartDate', headerText: 'StartDate', width: 120, format: 'yMd' },
+      { field: 'StartDate', headerText: 'StartDate', width: 120, format: 'yMd' }
     ];
-    newColumns.forEach((col) => {
-      (this.gantt as GanttComponent).treeGrid.grid.columns.push(col as any);
+    newColumns.forEach((col: any) => {
+      this.ganttInstance?.treeGrid.grid.columns.push(col);
     });
-    (this.gantt as GanttComponent).treeGrid.grid.refreshColumns();
+    this.ganttInstance?.treeGrid.grid.refreshColumns();
   }
-  deleteColumns(): void {
-    (this.gantt as GanttComponent).treeGrid.grid.columns.pop();
-    (this.gantt as GanttComponent).treeGrid.grid.refreshColumns();
+
+  public deleteColumns(): void {
+    this.ganttInstance?.treeGrid.grid.columns.pop();
+    this.ganttInstance?.treeGrid.grid.refreshColumns();
   }
 }

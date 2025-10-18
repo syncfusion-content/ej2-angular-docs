@@ -1,28 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { CommonModule } from '@angular/common';
-
-import {
-  ToolbarService,
-  PdfExportService,
-  SelectionService,
-} from '@syncfusion/ej2-angular-gantt'
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import {
-  GanttComponent,
-  ToolbarItem,
-  PdfExportProperties,
-} from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, ToolbarItem, PdfExportProperties, ToolbarService, PdfExportService, SelectionService, PdfQueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-gantt'
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingResources } from './data';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
-imports: [ GanttModule,CommonModule],
-
-providers: [ToolbarService, PdfExportService, SelectionService],
-standalone: true,
+  imports: [GanttModule, CommonModule],
+  providers: [ToolbarService, PdfExportService, SelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" (pdfQueryCellInfo)="pdfQueryCellInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true' rowHeight='50' [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">
@@ -40,15 +25,16 @@ standalone: true,
             </e-columns></ejs-gantt>`,
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
+  @ViewChild('ganttDefault', { static: true }) public ganttChart?: GanttComponent;
   public data?: object[];
   public taskSettings?: object;
   public splitterSettings?: object;
   public resources?: object[];
   public toolbar?: ToolbarItem[];
-  @ViewChild('ganttDefault', { static: true })
-  public ganttChart?: GanttComponent;
   public resourceFields?: object;
+
   public ngOnInit(): void {
     this.data = [
       {
@@ -139,7 +125,7 @@ export class AppComponent {
       startDate: 'StartDate',
       duration: 'Duration',
       progress: 'Progress',
-      parentID:'ParentID',
+      parentID: 'ParentID',
     };
     this.toolbar = ['PdfExport'];
     this.splitterSettings = {
@@ -151,6 +137,7 @@ export class AppComponent {
     };
     this.resources = editingResources;
   }
+
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
       let exportProperties: PdfExportProperties = {
@@ -159,8 +146,9 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
-  public pdfQueryCellInfo(args: any): void {
-    if (args.column.headerText === 'Resources') {
+
+  public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
+    if ((args.column as Column).headerText === 'Resources') {
       {
         args.image = {
           height: 40,
@@ -169,7 +157,7 @@ export class AppComponent {
         };
       }
     }
-    if (args.column.headerText === 'Email ID') {
+    if ((args.column as Column).headerText === 'Email ID') {
       args.hyperLink = {
         target: 'mailto:' + (args as any).data.taskData.EmailId,
         displayText: (args as any).data.taskData.EmailId,

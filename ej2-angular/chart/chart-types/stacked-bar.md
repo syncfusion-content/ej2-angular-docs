@@ -304,5 +304,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

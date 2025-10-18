@@ -1,49 +1,36 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
-import { DropDownList } from "@syncfusion/ej2-dropdowns";
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttModule, GanttComponent, EditService, EditSettingsModel, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
+import { DropDownList } from "@syncfusion/ej2-angular-dropdowns";
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, SelectionService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService, SelectionService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+
+export class AppComponent implements OnInit {
+    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
+    public dropDownListObject?: DropDownList | any;
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: EditSettingsModel;
     public columns?: object[];
     public elem?: HTMLElement;
-    public dropdownlistObj?: DropDownList| any;
+
     public ngOnInit(): void {
-        this.data =  [
+        this.data = [
             {
                 TaskID: 1,
                 TaskName: 'Project Initiation',
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -69,30 +56,30 @@ export class AppComponent{
         };
         this.editSettings = {
             allowEditing: true
-            };
+        };
         this.columns = [
             { field: 'TaskID', headerText: 'Task ID' },
             {
-            field: 'TaskName', headerText: 'Task Name',
-            edit: {
+                field: 'TaskName', headerText: 'Task Name',
+                edit: {
                     create: () => {
                         this.elem = document.createElement('input');
                         return this.elem;
                     },
                     read: () => {
-                        return this.dropdownlistObj.value;
+                        return this.dropDownListObject.value;
                     },
                     destroy: () => {
-                        this.dropdownlistObj.destroy();
+                        this.dropDownListObject.destroy();
                     },
                     write: (args: Object) => {
-                        this.dropdownlistObj = new DropDownList({
-                            dataSource: this.ganttObj.treeGrid.grid.dataSource,
+                        this.dropDownListObject = new DropDownList({
+                            dataSource: this.ganttInstance.treeGrid.grid.dataSource,
                             fields: { value: 'TaskName' },
                             value: (args as any).rowData[(args as any).column.field],
                             floatLabelType: 'Auto',
                         });
-                        this.dropdownlistObj.appendTo(this.elem);
+                        this.dropDownListObject.appendTo(this.elem);
                     }
                 }
             },
@@ -102,6 +89,3 @@ export class AppComponent{
         ];
     }
 }
-
-
-

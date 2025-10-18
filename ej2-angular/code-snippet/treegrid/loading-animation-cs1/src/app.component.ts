@@ -17,7 +17,7 @@ providers: [PageService,
                 SortService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' hasChildMapping='isParent' parentIdMapping='ParentItem' idMapping='TaskID' [loadingIndicator]='loadingIndicator' [allowSorting]="true" [allowPaging]="true">
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' hasChildMapping='isParent' parentIdMapping='ParentItem' idMapping='TaskID' [allowSorting]="true" [allowPaging]="true">
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>

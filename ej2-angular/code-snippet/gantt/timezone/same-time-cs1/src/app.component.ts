@@ -1,41 +1,32 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SelectionService} from '@syncfusion/ej2-angular-gantt'
-
-
-
+import { SelectionService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SelectionService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [SelectionService],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" #gantt [dataSource]="data" [taskFields]="taskSettings" [dayWorkingTime]="dayWorkingTime" [timelineSettings]="timelineSettings" timezone="UTC" durationUnit="Hour" dateFormat="hh:mm a" height="450px" [includeWeekend]="true">`,
+        `<ejs-gantt [dataSource]="data" [taskFields]="taskSettings" [dayWorkingTime]="dayWorkingTime" [timelineSettings]="timelineSettings" timezone="UTC" durationUnit="Hour" dateFormat="hh:mm a" height="450px" [includeWeekend]="true">`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    public ganttObj?: GanttComponent| any;
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public timelineSettings?: object;
     public timezoneValue: string = 'UTC';
     public dayWorkingTime?: object[];
+
     public ngOnInit(): void {
         this.data = [
-            { TaskID: 1, TaskName: 'Project Schedule', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('03/10/2019')},
-            { TaskID: 2, TaskName: 'Planning', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('02/10/2019'), ParentID: 1},
+            { TaskID: 1, TaskName: 'Project Schedule', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('03/10/2019') },
+            { TaskID: 2, TaskName: 'Planning', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('02/10/2019'), ParentID: 1 },
             { TaskID: 3, TaskName: 'Plan timeline', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('02/10/2019'), Duration: 6, Progress: '60', ParentID: 2 },
             { TaskID: 4, TaskName: 'Plan budget', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('02/10/2019'), Duration: 6, Progress: '90', ParentID: 2 },
             { TaskID: 5, TaskName: 'Allocate resources', StartDate: new Date('02/04/2019 08:00'), EndDate: new Date('02/10/2019'), Duration: 6, Progress: '75', ParentID: 2 },
-            { TaskID: 6, TaskName: 'Planning complete', StartDate: new Date('02/06/2019 08:00'), EndDate: new Date('02/10/2019'), Duration: 0,  Predecessor: '3FS,4FS,5FS', ParentID: 2 },
+            { TaskID: 6, TaskName: 'Planning complete', StartDate: new Date('02/06/2019 08:00'), EndDate: new Date('02/10/2019'), Duration: 0, Predecessor: '3FS,4FS,5FS', ParentID: 2 },
             { TaskID: 7, TaskName: 'Design', StartDate: new Date('02/13/2019 08:00'), EndDate: new Date('02/17/2019 08:00'), ParentID: 1, },
             { TaskID: 8, TaskName: 'Software Specification', StartDate: new Date('02/13/2019 08:00'), EndDate: new Date('02/15/2019'), Duration: 3, Progress: '60', Predecessor: '6FS', ParentID: 7, },
             { TaskID: 9, TaskName: 'Develop prototype', StartDate: new Date('02/13/2019 08:00'), EndDate: new Date('02/15/2019'), Duration: 3, Progress: '100', Predecessor: '6FS', ParentID: 7, },

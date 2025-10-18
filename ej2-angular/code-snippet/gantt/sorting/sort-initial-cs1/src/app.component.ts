@@ -1,32 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { SortService } from '@syncfusion/ej2-angular-gantt'
-
-
-
+import { GanttModule, SortService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [SortService],
-standalone: true,
+    imports: [ GanttModule ],
+    providers: [SortService],
+    standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [allowSorting]= 'true' [sortSettings]="sortSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;
     public columns?: object[];
     public splitterSettings?: object;
     public sortSettings?: object;
+    
     public ngOnInit(): void {
         this.data = [
             {
@@ -54,7 +45,7 @@ export class AppComponent{
             columnIndex: 3
         };
         this.columns =  [
-            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+            { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '120' },
             { field: 'TaskName', headerText: 'Task Name', width: '250' },
             { field: 'StartDate', headerText: 'Start Date', width: '150' },
             { field: 'Duration', headerText: 'Duration', width: '150' },
@@ -63,6 +54,3 @@ export class AppComponent{
         this.sortSettings = { columns: [{ field: 'TaskID', direction: 'Descending' }, { field: 'TaskName', direction: 'Ascending' }] };
     }
 }
-
-
-

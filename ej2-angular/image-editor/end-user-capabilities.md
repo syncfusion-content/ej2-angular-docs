@@ -1,6 +1,6 @@
 ---
 layout: post
-title: End-user capabilities in ##Platform_Name## Image Editor component | Syncfusion
+title: End-user capabilities in Angular Image Editor component | Syncfusion
 description: Learn here all about End User Capabilities in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: End-user capabilities 
@@ -182,6 +182,7 @@ applied modifications.
     * Press Ctrl + S to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
 
 ![Export an image showcase](../code-snippet/image-editor/images/save.jpg)
+
 
 ## See Also
 

@@ -3,6 +3,7 @@ import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs } fro
 import { marked } from 'marked';
 import { AzureOpenAI } from 'openai';
 
+// Initialize Azure OpenAI
 const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
 const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
 const azureOpenAIApiVersion = 'Your_Azure_OpenAI_API_Version';
@@ -15,6 +16,7 @@ const client = new AzureOpenAI({
   dangerouslyAllowBrowser: true 
 });
 
+// Initialize AI AssistView component
 @Component({
   standalone: true,
   imports: [AIAssistViewModule],
@@ -56,6 +58,7 @@ export class AppComponent {
     }
   };
 
+  // Stream the model response to the UI in chunks
   public streamResponse = async (response: string) => {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -74,6 +77,7 @@ export class AppComponent {
     this.aiAssistView.promptSuggestions = this.suggestions;
   };
 
+  // Handle user prompt: call Azure OpenAI Chat Completions
   public onPromptRequest(args: PromptRequestEventArgs): void {
     if (!args?.prompt?.trim() || !this.aiAssistView) return;
  

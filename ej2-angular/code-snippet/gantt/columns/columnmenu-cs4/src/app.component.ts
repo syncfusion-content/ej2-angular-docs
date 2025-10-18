@@ -47,9 +47,14 @@ export class AppComponent {
             position: '75%'
         };
     };
-    columnMenuOpen() {
-        this.message = `columnMenuOpen event is triggered`;
-    }
+    columnMenuOpen(args: any): void {
+  const columnField = args.column?.field;
+  const headerCell = document.querySelector(`[aria-label="${columnField}"]`);
+  if (headerCell) {
+    (headerCell as HTMLElement).style.backgroundColor = '#f0f8ff';
+  }
+}
+
     columnMenuClick() {
         this.message = `columnMenuClick event is triggered`;
     }

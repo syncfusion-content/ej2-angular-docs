@@ -17,7 +17,7 @@ imports: [
 standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component with change event
-    template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [placeholder]='placeholder' [debounceDelay]='debounceDelay'></ejs-dropdownlist>`
+    template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [placeholder]='placeholder' [allowFiltering]="true" [debounceDelay]='debounceDelay'></ejs-dropdownlist>`
 })
 export class AppComponent {
     constructor() {
@@ -27,7 +27,7 @@ export class AppComponent {
     // set placeholder text to DropDownList input element
     public placeholder: string = 'Select a game';
     //set the debounceDelay
-    public debounceDelay:string ='300';
+    public debounceDelay:number = 500;
 }
 
 

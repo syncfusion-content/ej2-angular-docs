@@ -1,45 +1,35 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [timelineSettings]="timelineSettings"></ejs-gantt>`,
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [timelineSettings]="timelineSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit{
     public data?: object[];
     public taskSettings?: object;
-     public timelineSettings?: object;
+    public timelineSettings?: object;
 
     public ngOnInit(): void {
         this.data = [
-        {
-            TaskID: 1,
-            TaskName: 'Project Initiation',
-            StartDate: new Date('04/02/2019'),
-            EndDate: new Date('04/21/2019'),
-            isParent:true,
-            subtasks: [
-                { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 50,isParent:false },
-                { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 50, resources: [2, 3, 5],isParent:false   },
-                { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 2,Predecessor:"2FS", Progress: 50,isParent:false  },
-            ]
-        },
-    ];
+            {
+                TaskID: 1,
+                TaskName: 'Project Initiation',
+                StartDate: new Date('04/02/2019'),
+                EndDate: new Date('04/21/2019'),
+                isParent: true,
+                subtasks: [
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 50, isParent: false },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 50, resources: [2, 3, 5], isParent: false },
+                    { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: "2FS", Progress: 50, isParent: false },
+                ]
+            },
+        ];
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',
@@ -51,10 +41,7 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.timelineSettings = {
-            timelineViewMode:'Hour',
+            timelineViewMode: 'Hour',
         };
     }
 }
-
-
-

@@ -8,33 +8,34 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Google Dialogflow With Angular Chat UI component
+# Integrate Google Dialogflow with Angular Chat UI Component
 
-The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your angular applications.
-
-## Getting Started With the ChatUI component
-
-Before integrating Dialogflow, ensure that the Syncfusion Chat UI component is correctly rendered in your application:
-[ Angular Getting Started Guide](../getting-started)
+The Chat UI component integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your Angular applications. The component acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
-* Google account to access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
-* Backend requires `Node.js` (v16 or higher) and `npm`.
-* Syncfusion Chat UI for Angular  `@syncfusion/ej2-angular-interactive-chat` installed in your angular project.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: To access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
+
+* **Syncfusion Chat UI**: Package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat) installed.
+
 * Dialogflow Service Account with the `Dialogflow API Client` role and its JSON key file.
 
-## Install Dependencies
+## Set Up the Angular Environment
 
-* Install `backend` dependencies for Dialogflow and server setup:
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
+
+## Install Dependency
+
+`Backend` dependencies for Dialogflow and server setup:
 
 ```bash
+
 npm install express body-parser dialogflow cors
-```
-* Install the Syncfusion Chat UI in your  project:
 
-```bash
-npm install @syncfusion/ej2-angular-interactive-chat --save
 ```
 
 ## Set Up the Dialogflow Agent
@@ -43,7 +44,7 @@ npm install @syncfusion/ej2-angular-interactive-chat --save
 
 2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 
-3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the dialogflow API client role, and download the JSON key file.
+3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a service account with the dialogflow API client role, and download the JSON key file.
 
 > `Security Note`: Never commit the JSON key file to version control. Use environment variables or a secret manager (e.g., Google Cloud Secret Manager) for production.
 
@@ -115,7 +116,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 ## Configure message send 
 
-Use the Chat UI `messageSend` event to exchanges  message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
@@ -123,7 +124,7 @@ Upon message submission, a POST request is sent to your backend API endpoint (`/
 
 ### Displaying Bot response:
 
-Create a standalone `app.component.ts` to integrate the Syncfusion Chat UI with the dialogflow backend:
+Modify the a standalone `app.component.ts` file to integrate the Syncfusion Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,7 +186,9 @@ export class AppComponent {
 Navigate to your backend project folder and run the following command to start the Node.js server:
 
 ```bash
+
 node index.js
+
 ```
 
 ### Start the Angular  frontend:
@@ -193,7 +196,9 @@ node index.js
 In a separate terminal window, navigate to your project folder and start the development server:
 
 ```bash
+
 ng serve
+
 ```
 Open your app and chat with your dialogflow-powered bot.
 

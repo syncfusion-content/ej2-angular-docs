@@ -1,33 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-providers: [EditService, SelectionService, ToolbarService],
-standalone: true,
+    imports: [GanttModule],
+    providers: [EditService, SelectionService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" taskMode="Manual" treeColumnIndex= "1" validateManualTasksOnLinking= "true"[taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar"></ejs-gantt>`,
+        `<ejs-gantt height="450px" [dataSource]="data" taskMode="Manual" treeColumnIndex= "1" validateManualTasksOnLinking= "true"[taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar">
+        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public editSettings?: object;
     public toolbar?: string[];
+
     public ngOnInit(): void {
         this.data = [
             {
@@ -64,7 +54,6 @@ export class AppComponent {
             child: 'subtasks'
         };
         this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Search'];
-
         this.editSettings = {
             allowEditing: true,
             allowDeleting: true,

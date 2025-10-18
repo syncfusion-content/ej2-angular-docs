@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Set item wise custom template in Angular Toolbar component
 
-The Angular Toolbar component supports adding template commands using the `template` property, enabling integration of custom controls as toolbar items. The template property accepts HTML content as either a string literal or a query selector reference, providing flexibility for various implementation approaches.
+The Angular Toolbar component supports adding template commands using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property, enabling integration of custom controls as toolbar items. The template property accepts HTML content as either a string literal or a query selector reference, providing flexibility for various implementation approaches.
 
 Template configuration allows embedding interactive elements like checkboxes, dropdowns, input controls, or even other components within toolbar items. This capability extends the toolbar's functionality beyond standard buttons and separators, enabling rich user interface scenarios.
 

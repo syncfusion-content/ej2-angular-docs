@@ -1,18 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-
-import { L10n, setCulture } from '@syncfusion/ej2-base';
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { L10n, setCulture } from '@syncfusion/ej2-base';
 import { Ganttdata } from './data';
 
 setCulture('de-DE');
 
 L10n.load({
-  'de-DE': {
-      'gantt': {
-           "id": "Ich würde",
+    'de-DE': {
+        'gantt': {
+            "id": "Ich würde",
             "name": "Name",
             "startDate": "Anfangsdatum",
             "duration": "Dauer",
@@ -22,20 +18,18 @@ L10n.load({
 });
 
 @Component({
-imports: [
-         GanttModule
-    ],
-
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" locale="de-DE"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" locale="de-DE"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
+
     public ngOnInit(): void {
         this.data = Ganttdata;
         this.taskSettings = {
@@ -44,8 +38,7 @@ export class AppComponent{
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            parentID:'ParentID',
+            parentID: 'ParentID',
         };
     }
 }
-

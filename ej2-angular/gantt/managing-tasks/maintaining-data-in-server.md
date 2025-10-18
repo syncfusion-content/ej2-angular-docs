@@ -1,31 +1,22 @@
 ---
 layout: post
 title: Maintaining data in server in Angular Gantt component | Syncfusion
-description: Learn here all about Maintaining data in server in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt component for seamless project updates.
 platform: ej2-angular
-control: Maintaining data in server 
+control: Maintaining data in server
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Maintaining data in server in Angular Gantt component
 
-All the modified data in Gantt control can be maintained in the database using RESTful web services.
+Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., id, name, startDate). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
 
-All the CRUD operations in the gantt are done through DataManager. The DataManager has an option to bind all the CRUD related data in server-side.
+## Configure URL adaptor with batch updates
 
-In the below section, we have explained how to get the edited data details on the server-side using the `UrlAdaptor`.
-
-## URL Adaptor
-
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
-
-> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
-
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
+Configure the Gantt component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
 
 ```typescript
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
@@ -36,63 +27,8 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent{
-    // Data for Gantt
-    public data: DataManager;
-    public taskSettings: object;
-    public columns: object[];
-    public ngOnInit(): void {
-        this.data = new DataManager({
-            url: '/Home/UrlDatasource',
-            adaptor: new UrlAdaptor
-        });
-        this.taskSettings = {
-            id: 'TaskId',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'SubTasks'
-        };
-        this.columns = [
-            { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
-            { field: 'StartDate' },
-            { field: 'Duration' }
-        ];
-    }
-}
-
-```
-
-```typescript
-
-GanttDataSourceEntities db = new GanttDataSourceEntities();
-public ActionResult UrlDatasource(DataManagerRequest dm)
-{
-    List<GanttData>DataList = db.GanttDatas.ToList();
-    var count = DataList.Count();
-    return Json(new { result = DataList, count = count });
-}
-
-```
-
-We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Please check the below code snippet to assign controller method to this property.
-
-```typescript
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-
-@Component({
-    selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent{
-    // Data for Gantt
     public data: DataManager;
     public taskSettings: object;
     public columns: object[];
@@ -118,11 +54,9 @@ export class AppComponent{
         ];
     }
 }
-
 ```
 
 ```typescript
-
 public class ICRUDModel<T> where T : class
 {
     public object key { get; set; }
@@ -139,22 +73,28 @@ public ActionResult BatchSave([FromBody]ICRUDModel<GanttData> data)
     //...
     return Json(new { addedRecords = uAdded, changedRecords = uChanged, deletedRecords = uDeleted });
 }
-
 ```
 
-This server method will be triggered for all the CRUD operations like adding, editing and deleting actions. We can handle those each operations separately inside this method with corresponding data received in this method argument. Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as result with dataSource as its value and one more property count with the dataSource total records count as its value.
+```typescript
+GanttDataSourceEntities db = new GanttDataSourceEntities();
+public ActionResult UrlDatasource(DataManagerRequest dm)
+{
+    List<GanttData>DataList = db.GanttDatas.ToList();
+    var count = DataList.Count();
+    return Json(new { result = DataList, count = count });
+}
+```
 
-## Insert action
+## Perform insert action
 
-Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. please find the below code example for details.
+Handle insert actions by processing the `added` argument in the `BatchSave` endpoint. Add new records to the database using Entity Framework and return them as `addedRecords` in JSON format. This ensures new tasks, including subtasks, integrate seamlessly into the project hierarchy.
 
 ```typescript
-
 GanttDataSourceEntities db = new GanttDataSourceEntities();
 public ActionResult BatchSave([FromBody]ICRUDModel<GanttData> data)
 {
     List<GanttData> uAdded = new List<GanttData>();
-    //Performing insert operation
+    //Performing insert operation.
     if (data.added != null && data.added.Count() > 0)
     {
         foreach (var rec in data.added)
@@ -171,20 +111,18 @@ public GanttData Create(GanttData value)
     db.SaveChanges();
     return value;
 }
-
 ```
 
-## Editing action
+## Perform editing action
 
-Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. please find the below code example for details.
+Handle editing actions by processing the `changed` argument in the `BatchSave` endpoint. Update modified records in the database using Entity Framework and return them as `changedRecords` in JSON format. This supports updates to task details, ensuring dependent tasks like parents or predecessors adjust automatically.
 
 ```typescript
-
 GanttDataSourceEntities db = new GanttDataSourceEntities();
 public ActionResult BatchSave([FromBody]ICRUDModel<GanttData> data)
 {
     List<GanttData> uChanged = new List<GanttData>();
-    //Performing update operation
+    //Performing update operation.
     if (data.changed != null && data.changed.Count() > 0)
     {
         foreach (var rec in data.changed)
@@ -215,20 +153,18 @@ public GanttData Edit(GanttData value)
         return null;
     }
 }
-
 ```
 
-## Delete action
+## Perform delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Handle delete actions by processing the `deleted` argument in the `BatchSave` endpoint. Remove records and their child subtasks recursively from the database using Entity Framework, returning them as `deletedRecords` in JSON format. This ensures data integrity by cascading deletions through the task hierarchy.
 
 ```typescript
-
 GanttDataSourceEntities db = new GanttDataSourceEntities();
 public ActionResult BatchSave([FromBody]ICRUDModel<GanttData> data)
 {
     List<GanttData> uDeleted = new List<GanttData>();
-    //Performing delete operation
+    //Performing delete operation.
     if (data.deleted != null && data.deleted.Count() > 0)
     {
         foreach (var rec in data.deleted)
@@ -255,5 +191,9 @@ public void RemoveChildRecords(string key)
         RemoveChildRecords(item.TaskId);
     }
 }
-
 ```
+
+## See also
+- [How to bind remote data?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#remote-data)
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)

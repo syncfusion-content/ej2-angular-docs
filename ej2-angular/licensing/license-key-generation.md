@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Generate Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2-Angular License Key
+# Generate Syncfusion<sup>®</sup> EJ2-Angular License Key
 
 Syncfusion<sup style="font-size:70%">®</sup> license keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) sections of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 
@@ -47,7 +47,6 @@ If your account is not associated with any trial or license, or if your trial ha
 
 ![No Trial or No License](images/no-active-trial-or-license.png)
 
-
 ## Licensing Update for Essential Studio (v31.1 and later)
 
 Starting with Essential Studio version 31.1.17 (2025 Volume 3 release), Syncfusion has transitioned from a platform-based to an edition-based licensing model. This change simplifies license management by aligning keys with specific editions rather than individual platforms.
@@ -65,11 +64,11 @@ The editions are:
 
 Effective from the 2025 Volume 3 release (v31.1.17), the licensing model has been updated as follows:
 
-- **Edition-Based License Keys**: License keys are now generated per edition (e.g., UI Edition, Document SDK) instead of per platform (e.g., Angular, ASP.NET Core, Blazor). This minimizes the need for multiple platform-specific keys.
+- **Edition-Based License Keys**: License keys are now generated per edition (e.g., UI Edition, Document SDK) instead of per platform (e.g., ASP.NET Core, Blazor). This minimizes the need for multiple platform-specific keys.
 
 - **Enterprise Edition Coverage**:  A single Enterprise Edition license key unlocks all editions and SDKs. This key is available to customers with an Enterprise Edition license or those who purchased or registered before v31.1.17, by selecting all options during key generation.
 
-- **Unchanged Registration Process**: The method for registering license keys within your application remains the same. See the [License Key Registration Guide](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration) for instructions.
+- **Unchanged Registration Process**: The method for registering license keys within your application remains the same. See the [License Key Registration Guide](https://ej2.syncfusion.com/documentation/licensing/license-key-registration) for instructions.
 
 - **Recommendation for Existing Customers**: Users with licenses from before v31.1.17 are advised to select all five editions (UI Component Suite, Document SDK, DOCX Editor SDK, PDF Viewer SDK, Spreadsheet Editor SDK) when generating a key for v31.1.17 or higher to ensure compatibility with applications using controls or libraries from multiple editions.
 

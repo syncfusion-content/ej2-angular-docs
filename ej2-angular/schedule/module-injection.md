@@ -3,7 +3,7 @@ layout: post
 title: Module injection in Angular Schedule component | Syncfusion
 description: Learn here all about Module injection in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Scheduler
+control: Schedule
 documentation: ug
 domainurl: ##DomainURL##
 ---

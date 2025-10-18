@@ -19,21 +19,21 @@ The Angular Toolbar component automatically handles content overflow with respon
 
 The default overflow mode of the Toolbar is `Scrollable`. This responsive mode displays all commands in a single horizontal line with scrolling navigation when content overflows the available container width.
 
-* Navigation arrows appear at the start and end of the Toolbar to access hidden commands
-* Hidden commands become accessible through touch swipe gestures on mobile devices
-* When the left navigation icon is disabled, hidden commands are accessible by moving right
-* Clicking or holding navigation arrows continuously reveals hidden commands
-* On devices without navigation icons, touch swipe gestures provide access to hidden toolbar commands
+* Navigation arrows appear at the start and end of the Toolbar to access hidden commands.
+* You can also see the hidden commands using touch swipe action.
+* When the left navigation icon is disabled, hidden commands are accessible by moving right.
+* Clicking or holding navigation arrows continuously reveals hidden commands.
+* On devices without navigation icons, touch swipe gestures provide access to hidden toolbar commands.
 
 ![Scrollable](./images/scrolling.gif)
 
-* When the Toolbar reaches the first or last command, the corresponding navigation icon becomes disabled, allowing movement in the opposite direction only
+* When the Toolbar reaches the first or last command, the corresponding navigation icon becomes disabled, allowing movement in the opposite direction only.
 
 ![Touch scroll](./images/scrolling_touch.gif)
 
 ![Swipe scroll](./images/scrolling_swipe.gif)
 
-* Continuous scrolling is possible by holding the navigation icon
+* Continuous scrolling is possible by holding the navigation icon.
 
 ![Long press scroll](./images/scrolling_long_press.gif)
 

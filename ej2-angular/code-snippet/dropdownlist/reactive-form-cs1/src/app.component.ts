@@ -1,19 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'
 
 @Component({
 imports: [
-        FormsModule, ReactiveFormsModule, DropDownListModule, ButtonModule
+        FormsModule, ReactiveFormsModule, DropDownListModule, ButtonModule, CommonModule
     ],
 
 

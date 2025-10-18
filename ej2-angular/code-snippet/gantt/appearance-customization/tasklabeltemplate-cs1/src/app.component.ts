@@ -1,31 +1,25 @@
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { Component, ViewEncapsulation } from '@angular/core';
 import { projectNewData } from './data';
 
 @Component({
-imports: [GanttModule],
-standalone: true,
+    imports: [GanttModule],
+    standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt 
-            id="ganttDefault" 
-            height="430px" 
-            [dataSource]="taskData"  
-            [taskFields]="taskSettings" 
-            [labelSettings]="labelSettings" 
-            [projectStartDate]="projectStartDate" 
-            [projectEndDate]="projectEndDate">
+        `<ejs-gantt height="430px" [dataSource]="taskData" [taskFields]="taskSettings"  [labelSettings]="labelSettings"  [projectStartDate]="projectStartDate"  [projectEndDate]="projectEndDate">
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
-    // Data for Gantt
+
+export class AppComponent implements OnInit {
     public taskData?: object[];
     public taskSettings?: object;
     public labelSettings?: object;
     public columns?: object[];
     public projectStartDate?: Date;
     public projectEndDate?: Date;
+
     public ngOnInit(): void {
         this.taskData = projectNewData;
         this.taskSettings = {
@@ -38,7 +32,7 @@ export class AppComponent{
         };
         this.labelSettings = {
             leftLabel: 'Task Id: ${taskData.TaskId}',
-            rightLabel:'Progress Value: ${taskData.Progress}',
+            rightLabel: 'Progress Value: ${taskData.Progress}',
             taskLabel: '${Progress}%'
         }
         this.projectStartDate = new Date('03/28/2019');
