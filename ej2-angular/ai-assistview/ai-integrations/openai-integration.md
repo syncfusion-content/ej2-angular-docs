@@ -34,7 +34,7 @@ Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide 
 
 Install the required packages:
 
-1. OpenAI SDK:
+* OpenAI SDK:
 
 ```bash
 
@@ -42,7 +42,7 @@ npm install openai
 
 ```
 
-2. Marked Library:
+* Marked Library:
 
 ```bash
 
