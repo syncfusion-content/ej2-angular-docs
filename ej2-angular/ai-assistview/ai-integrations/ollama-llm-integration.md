@@ -38,39 +38,39 @@ To install the marked library, run `npm install marked --save` in your project d
 
 Install Ollama for your operating system:
 
-    {% tabs %}
-    {% highlight ts tabtitle="Windows" %}
+{% tabs %}
+{% highlight ts tabtitle="Windows" %}
 
-    1. Visit [Windows](https://ollama.com/download)
-    2. Click `Download for Windows` to get the `.exe installer`. 
-    3. Run `OllamaSetup.exe` and follow the wizard to install.
+1. Visit [Windows](https://ollama.com/download)
+2. Click `Download for Windows` to get the `.exe installer`. 
+3. Run `OllamaSetup.exe` and follow the wizard to install.
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight ts tabtitle="macOS" %}
+{% highlight ts tabtitle="macOS" %}
 
-    1. Visit [macOS](https://ollama.com/download/mac)
-    2. Click `Download for macOS` to get `.dmg file`
-    3. Install it by following the wizard.
+1. Visit [macOS](https://ollama.com/download/mac)
+2. Click `Download for macOS` to get `.dmg file`
+3. Install it by following the wizard.
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight ts tabtitle="Linux" %}
+{% highlight ts tabtitle="Linux" %}
 
-    1. Visit [Linux](https://ollama.com/download/linux)
-    2. Run the below command to install Ollama in your system
+1. Visit [Linux](https://ollama.com/download/linux)
+2. Run the below command to install Ollama in your system
 
-    ```bash
-            
-    curl -fsSL https://ollama.com/install.sh | sh
+```bash
+        
+curl -fsSL https://ollama.com/install.sh | sh
 
-    ```
-    {% endhighlight %}
-    {% endtabs %}
+```
+{% endhighlight %}
+{% endtabs %}
 
 ## Download and run an Ollama model
 
-1. Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models.
+* Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models.
  
 ```bash
 
@@ -78,7 +78,7 @@ ollama run deepseek-r1
 
 ```
 
-2. After the model download completes, start the Ollama server to make the model accessible:
+* After the model download completes, start the Ollama server to make the model accessible:
 
 ```bash
 
