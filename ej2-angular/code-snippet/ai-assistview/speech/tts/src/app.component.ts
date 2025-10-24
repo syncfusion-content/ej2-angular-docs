@@ -40,6 +40,7 @@ const client = new AzureOpenAI({
 export class AppComponent {
   @ViewChild('assistView') assistViewInstance!: AIAssistViewComponent;
 
+  // Header toolbar: provides a clear/reset action for the conversation
   public toolbarSettings: ToolbarSettingsModel = {
     items: [{ iconCss: 'e-icons e-refresh', align: 'Right' }],
     itemClicked: this.onToolbarItemClicked.bind(this),
@@ -58,6 +59,7 @@ export class AppComponent {
     itemClicked: this.onResponseToolbarItemClicked.bind(this)
   };
 
+  // Streams the AI response character by character to create a typing effect
   public streamResponse = async (response: string) => {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -75,12 +77,14 @@ export class AppComponent {
     }
   };
 
+  // Handles toolbar item clicks, such as clearing the conversation on refresh
   public onToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
     if (args.item.iconCss === 'e-icons e-refresh') {
       this.assistViewInstance.prompts = [];
     }
   }
 
+  // Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
   public onResponseToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
     const responseHtml = this.assistViewInstance.prompts[args.dataIndex].response;
     if (responseHtml) {
@@ -91,21 +95,17 @@ export class AppComponent {
         if (this.currentUtterance) {
           speechSynthesis.cancel();
           this.currentUtterance = null;
-          // Reset icon and tooltip to 'Read Aloud'
           this.assistViewInstance.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
           this.assistViewInstance.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
         } else {
-          // Create a new speech synthesis utterance with the extracted text
           const utterance = new SpeechSynthesisUtterance(text);
           utterance.onend = () => {
             this.currentUtterance = null;
             this.assistViewInstance.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
             this.assistViewInstance.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
           };
-          // Start speaking the text
           speechSynthesis.speak(utterance);
           this.currentUtterance = utterance;
-          // Update icon and tooltip to indicate 'Stop' option
           this.assistViewInstance.responseToolbarSettings.items[1].iconCss = 'e-icons e-assist-stop';
           this.assistViewInstance.responseToolbarSettings.items[1].tooltip = 'Stop';
         }
@@ -113,6 +113,7 @@ export class AppComponent {
     }
   }
 
+  // Handles prompt requests by sending them to the Azure OpenAI API and streaming the response
   public onPromptRequest(args: PromptRequestEventArgs): void {
     if (!args?.prompt?.trim() || !this.assistViewInstance) return; 
     this.stopStreaming = false; 
@@ -126,7 +127,7 @@ export class AppComponent {
         const responseText = completion?.choices?.[0]?.message?.content?.trim() || 'No response received.';
         return this.streamResponse(responseText);
       })
-      .catch(error => {
+      .catch(() => {
         this.assistViewInstance.addPromptResponse(
           '⚠️ Something went wrong while connecting to Azure OpenAI. ' +
             'Verify endpoint, API key, deployment name, API version, and CORS settings.',

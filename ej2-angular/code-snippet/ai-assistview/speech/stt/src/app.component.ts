@@ -107,9 +107,10 @@ export class AppComponent implements AfterViewInit {
   private stopStreaming = false;
 
   ngAfterViewInit(): void {
-    this.onContentChanged(); // Initialize button visibility
+    this.onContentChanged();
   }
 
+  // Streams AI response incrementally into the AssistView to provide a progressive typing effect
   public async streamResponse(response: string) {
     let lastResponse = '';
     const responseUpdateRate = 10;
@@ -127,6 +128,7 @@ export class AppComponent implements AfterViewInit {
     this.onContentChanged();
   }
 
+  // Handles prompt requests by sending them to the Azure OpenAI API and streaming the response
   public async onPromptRequest(args: PromptRequestEventArgs): Promise<void> {
     if (!args?.prompt?.trim() || !this.assistViewInstance) return;
 
@@ -150,10 +152,10 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Toggles visibility of send and speech buttons based on whether the input has text
   public onContentChanged(): void {
     const editor = this.contentEditor?.nativeElement;
     if (!editor) return;
-    // Treat only real text as content. Ignore non-breaking spaces or stray HTML
     const text = (editor.textContent || '').replace(/\u00A0/g, ' ').trim();
     this.hasTextInEditor = text.length > 0;
     if (!this.hasTextInEditor && (editor.innerHTML.trim() === '' || editor.innerHTML === ' ')) {
@@ -161,6 +163,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Handles Enter key to send prompt (Shift+Enter preserved for newline)
   public onEditorKeyDown(event: KeyboardEvent): void {
     if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault();
@@ -169,6 +172,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Updates the footer input with the latest speech transcript
   public onTranscriptChange(args: TranscriptChangedEventArgs): void {
     const editor = this.contentEditor?.nativeElement;
     if (!editor) return;
@@ -176,14 +180,15 @@ export class AppComponent implements AfterViewInit {
     this.onContentChanged();
   }
 
+  // Marks UI as listening (speech recognition) and triggers change detection
   public onListeningStart(): void {
-    // Ensure state update is inside Angular zone
     this.zone.run(() => {
       this.isListening = true;
       this.cdr.detectChanges();
     });
   }
 
+  // Clears listening state and refreshes button visibility
   public onListeningStop(): void {
     this.zone.run(() => {
       this.isListening = false;
@@ -192,6 +197,7 @@ export class AppComponent implements AfterViewInit {
     });
   }
 
+  // Handles AssistView toolbar actions like clearing conversation and resetting editor
   public onToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
     if (args.item.iconCss === 'e-icons e-refresh') {
       this.assistViewInstance.prompts = [];
@@ -204,11 +210,11 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Executes the prompt using the current editable text, then clears and updates UI state
   public sendIconClicked(): void {
     const editor = this.contentEditor.nativeElement;
     const promptText = editor.innerText;
     if (promptText.trim()) {
-      // Ensure listening is stopped before sending
       this.stopListeningIfNeeded();
       this.assistViewInstance.executePrompt(promptText);
       editor.innerText = '';
@@ -218,23 +224,24 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Stops response streaming and listening, and refreshes the UI
   public stopRespondingClick(): void {
     this.stopStreaming = true;
     this.stopListeningIfNeeded();
     this.onContentChanged();
   }
 
+  // Logs speech-to-text errors and restores a consistent UI state
   public onErrorHandler(error: any): void {
     console.error('Speech-to-text error:', error);
-    // Ensure UI is consistent even after error
     this.isListening = false;
     this.onContentChanged();
   }
 
+  // Stops speech recognition if active and updates state inside Angular zone
   private stopListeningIfNeeded(): void {
     if (this.isListening) {
       this.speechToTextInstance?.stopListening?.();
-      // Make sure UI reflects the stop immediately
       this.zone.run(() => {
         this.isListening = false;
         this.cdr.detectChanges();
@@ -242,8 +249,8 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
+  // Removes focus from the mic button to prevent unintended re-activation via keyboard/focus
   private blurMicButton(): void {
-    // Prevent accidental re-triggering of mic due to focus/keyboard
     (this.speechToTextInstance as any)?.element?.blur?.();
   }
 }
