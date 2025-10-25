@@ -1,0 +1,63 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+.integration-speechtotext {
+  height: 400px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.integration-speechtotext #chatui-sendButton {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.integration-speechtotext #speechToText.visible,
+.integration-speechtotext #chatui-sendButton.visible {
+  display: inline-block;
+}
+
+.integration-speechtotext #speechToText,
+.integration-speechtotext #chatui-sendButton {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .integration-speechtotext {
+    width: 100%;
+  }
+}
+
+.integration-speechtotext .e-footer-wrapper {
+  display: flex;
+  border: 1px solid #c1c1c1;
+  margin: 5px 5px 0 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.integration-speechtotext .content-editor {
+  width: 100%;
+  overflow-y: auto;
+  font-size: 14px;
+  min-height: 20px;
+  max-height: 150px;
+  padding: 10px;
+}
+
+.integration-speechtotext .content-editor[contentEditable='true']:empty:before {
+  content: attr(placeholder);
+  color: #6b7280;
+  font-style: italic;
+}
+
+.integration-speechtotext .option-container {
+  align-self: flex-end;
+}
