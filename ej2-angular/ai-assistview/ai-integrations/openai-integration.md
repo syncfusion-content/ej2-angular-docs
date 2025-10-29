@@ -28,7 +28,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Angular Environment
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView component in your Angular application using Angular CLI.
+Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView component in your Angular application using Angular CLI.
 
 ## Install Dependencies
 
@@ -66,7 +66,7 @@ npm install marked --save
 
 > `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-## Configure Azure OpenAI with AI AssistView
+## Configure AI AssistView with Azure OpenAI 
 
 Modify the a standalone `app.component.ts` file to integrate Azure OpenAI with the Syncfusion AI AssistView component. 
 

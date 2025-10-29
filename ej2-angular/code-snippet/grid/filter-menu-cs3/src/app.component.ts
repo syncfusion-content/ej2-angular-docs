@@ -1,23 +1,21 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
+import { GridModule, FilterService, PageService, SortService} from '@syncfusion/ej2-angular-grids'
 import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         CheckBoxModule
     ],
 
-providers: [FilterService, PageService,CheckBoxSelectionService],
+providers: [FilterService, PageService, SortService, CheckBoxSelectionService],
 standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
@@ -80,9 +78,9 @@ export class AppComponent implements OnInit {
     this.formatoptions = { type: 'dateTime', format: 'M/d/y HH:mm' };
   }
   public actionComplete(args: { requestType: string; columnName: string }): void {
-    if (args.requestType === 'filterafteropen') {
-      var columnObj = this.grid?.getColumnByField(args.columnName);
-      if (columnObj.type === 'datetime') {
+    if (args.requestType === 'filterAfterOpen') {
+       var columnObj : Column | undefined  = this.grid?.getColumnByField(args.columnName);
+      if (columnObj?.type === 'datetime') {
         var dateObj = (document.getElementById('dateui-' + columnObj.uid) as any)['ej2_instances'][0];
         dateObj.timeFormat = 'HH:mm';
       }
