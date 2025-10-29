@@ -46,7 +46,7 @@ The following example demonstrates basic filter bar activation in the grid:
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs1" %}
 
-> To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings/#type) as **FilterBar**.
+> If the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings/#type) is not explicitly specified, it defaults to **FilterBar**.
 
 ## Filter bar modes
 

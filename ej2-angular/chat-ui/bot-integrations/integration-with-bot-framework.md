@@ -26,7 +26,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Angular Environment
 
-Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
+Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
 
 ## Install Dependencies
 
@@ -110,7 +110,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 
 ## Configure ChatUI
 
-Modify the `app.component.ts` file to connect the Syncfusion Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
+Modify the `app.component.ts` file to connect the Chat UI to the bot via the direct line API. The HTML template is included inline using the `template` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -26,7 +26,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Angular Environment
 
-Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
+Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI component in your Angular application using Angular CLI.
 
 ## Install Dependency
 
@@ -116,7 +116,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 ## Configure message send 
 
-Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI [messageSend](../api/chat-ui/#messagesend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
@@ -124,7 +124,7 @@ Upon message submission, a POST request is sent to your backend API endpoint (`/
 
 ### Displaying Bot response:
 
-Modify the a standalone `app.component.ts` file to integrate the Syncfusion Chat UI with the dialogflow backend:
+Modify the a standalone `app.component.ts` file to integrate the Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
