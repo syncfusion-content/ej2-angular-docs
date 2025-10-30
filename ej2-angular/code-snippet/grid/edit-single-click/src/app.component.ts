@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core'
+import { NgModule, ViewChild  } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, EditService, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -12,7 +12,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
     standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="315px">
+        <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="315px">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120" [validationRules]='orderIDRules'></e-column>
             <e-column field="CustomerID" headerText="Customer Name" width="120" [validationRules]='customerIDRules'></e-column>
@@ -20,14 +20,16 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
             <e-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="90" [validationRules]='freightRules'></e-column>
             <e-column field="Verified" headerText="Verified" textAlign="Right" width="90" [validationRules]='verifiedRules'>
               <ng-template #template let-data>
-                <ejs-checkbox [(checked)]="data.Verified"></ejs-checkbox>
+                <ejs-checkbox [(checked)]="data.Verified" (change)="onVerifiedChange(data)"></ejs-checkbox>
               </ng-template>
             </e-column>
           </e-columns>
         </ejs-grid>`
 })
-export class AppComponent implements OnInit {
-
+export class AppComponent implements OnInit {    
+    
+  @ViewChild('grid')
+    public grid: GridComponent | undefined;
     public data?: object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
@@ -52,5 +54,11 @@ export class AppComponent implements OnInit {
         };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
+    public onVerifiedChange(rowData: object | any): void {
+      const rowIndex = (this.grid as GridComponent).getRowIndexByPrimaryKey(
+        rowData.OrderID
+      );
+      (this.grid as GridComponent).updateRow(rowIndex, rowData);
+    } 
     
 }
