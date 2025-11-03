@@ -27,7 +27,7 @@ When users type the `@` symbol followed by a character the Rich Text Editor, a s
 
 ### Minimum input length for Mention suggestions
 
-You can control when the suggestion list appears by setting the [minLength](https://ej2.syncfusion.com/angular/documentation/api/mention/#minLength) property in the Mention control. This property defines the minimum number of characters a user must type after the mention character (@) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
+You can control when the suggestion list appears by setting the [minLength](https://ej2.syncfusion.com/angular/documentation/api/mention/#minLength) property in the Mention component. This property defines the minimum number of characters a user must type after the mention character (@) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
 
 By default, minLength is set to 0, which means the suggestion list appears immediately after the mention character is entered. However, you can increase this value to delay the search until the user has typed a specific number of characters.
 
@@ -85,7 +85,7 @@ For example, by default, the mention chip renders as:
 Using the `displayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="" title="">@Selma Rose</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
 
 ```
 

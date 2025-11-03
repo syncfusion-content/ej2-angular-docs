@@ -52,7 +52,21 @@ export class AppComponent {
                 iconCss: 'e-icons e-signature',
                 type: 'Custom',
                 command: 'Signature'
-            }
+            },
+             {
+                text: 'HorizontalLine',
+                description: 'Insert a horizontal line',
+                iconCss: 'e-icons e-horizontal-line',
+                type: 'Custom',
+                command: 'HorizontalLine',
+            },
+            {
+                text: 'CheckList',
+                description: 'Insert a check list',
+                iconCss: 'e-icons e-checklist',
+                type: 'Custom',
+                command: 'CheckList',
+            },
         ]
     };
     public onSlashMenuItemSelect(args: SlashMenuItemSelectArgs) {
@@ -61,6 +75,12 @@ export class AppComponent {
         }
         if (args.itemData.command === 'Signature') {
             this.slashMenuEditor.executeCommand('insertHTML', this.signature, { undo: true });
+        }
+        if (args.itemData.command === 'HorizontalLine') {
+            this.slashMenuEditor.executeCommand('insertHTML', '<hr>');
+        }
+        if (args.itemData.command === 'CheckList') {
+            this.slashMenuEditor.executeCommand('insertHTML',`<ul class="e-rte-checklist"><li> Task 1</li><li> Task 2</li></ul>`);
         }
     }
 }

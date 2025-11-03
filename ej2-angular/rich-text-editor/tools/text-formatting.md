@@ -191,6 +191,7 @@ Below is an example of how to configure the Checklist in the Rich Text Editor:
 ## Nested list creation using Tab key
 
 In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
+
 Please refer to the below video for visual behavior and interaction examples:
 
 ![Rich Text Editor list editing behaviour](images/list-editing.gif)
@@ -332,7 +333,7 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
-### Nested Blockquotes
+### Nested blockquotes
 
 The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
 
