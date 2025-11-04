@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
 import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        
+        CommonModule,
         GridModule,
         ButtonModule
     ],

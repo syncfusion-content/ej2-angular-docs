@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row selection in Angular Grid component | Syncfusion
-description: Learn how to enable and use row selection in the Syncfusion Angular Grid component for interactive selection, manipulation, and server-side processing of grid rows.
+description: Learn row selection in Syncfusion Angular Grid for interactive, programmatic, and event-driven single, multiple, and range selections.
 platform: ej2-angular
 control: Row selection 
 documentation: ug
@@ -201,9 +201,11 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
+        CommonModule,
         GridModule,
         ButtonModule
     ],
@@ -275,10 +277,12 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
         GridModule,
+        CommonModule,
         ButtonModule,
         DialogModule
     ],
@@ -374,10 +378,11 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        GridModule,
+        GridModule,CommonModule,
         ButtonModule
     ],
 providers: [EditService, ToolbarService, PageService, FilterService],
@@ -576,7 +581,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 </div>
 ```
 
-**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using AJAX. Add the following code:
+**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button/#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using AJAX. Add the following code:
 
 ```ts
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -830,7 +835,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 </div>
 ```
 
-**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using Fetch. Add the following code:
+**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button/#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using Fetch. Add the following code:
 
 ```ts
 import { Component, OnInit, ViewChild } from '@angular/core';
