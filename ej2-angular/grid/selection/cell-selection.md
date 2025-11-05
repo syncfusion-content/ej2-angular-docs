@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell selection in Angular Grid component | Syncfusion
-description: Learn how to use cell selection in the Syncfusion Angular Grid component of Essential JS 2 for interactive, programmatic, and event-driven cell selection, including single, multiple, and range selections.
+description: Learn cell selection in Syncfusion Angular Grid for interactive, programmatic, and event-driven single, multiple, and range selections.
 platform: ej2-angular
 control: Cell selection 
 documentation: ug
@@ -139,7 +139,7 @@ Below is an example that demonstrates selecting a cell range using values from t
 
 ## How to get selected row cell indexes
 
-You can retrieve all currently selected cell indexes using the [getSelectedRowCellIndexes](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrowcellindexes) method. This is useful for processing or displaying information about selected row and cell coordinates.
+You can retrieve all currently selected cell indexes using the [getSelectedRowCellIndexes](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrowcellindexes) method. This is useful for processing or displaying information about selected row and cell coordinates.
 
 Below is an example demonstrating how to obtain selected cell indexes and display them in a dialog:
 
@@ -152,14 +152,14 @@ import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
 import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel, PageSettingsModel, ISelectedCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        
+        CommonModule,
         GridModule,
         ButtonModule,
         DialogModule 
@@ -270,7 +270,7 @@ Several events help you customize cell selection interactions:
 
 In the example below:
 - Cell selection is blocked via `cellSelecting` if **ShipCountry** equals **France**.
-- Background color updates on selection/deselection events to illustrate the event lifecycle.
+- Background color updates on selection/deselection events to illustrate the event life cycle.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
