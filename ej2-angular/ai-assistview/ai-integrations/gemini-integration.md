@@ -33,23 +33,7 @@ Follow the [Getting Started](../getting-started) guide to configure and render t
 
 ## Install Dependencies
 
-Install the required packages:
-
-* Google Generative AI SDK:
-
-```bash
-
-npm install @google/generative-ai
-
-```
-
-* Marked Library:
-
-```bash
-
-npm install marked --save
-
-```
+To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
 
 ## Generate API Key
 

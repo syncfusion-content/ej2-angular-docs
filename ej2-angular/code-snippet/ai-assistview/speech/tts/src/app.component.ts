@@ -86,7 +86,7 @@ export class AppComponent {
   };
 
   public onToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
-    if (args.item.iconCss === 'e-icons e-refresh') {
+    if (args.item!.iconCss === 'e-icons e-refresh') {
       this.assistViewInstance.prompts = [];
       this.stopStreaming = true; // Stop any ongoing streaming
       if (this.currentUtterance) {
@@ -106,12 +106,12 @@ export class AppComponent {
       const text = (tempDiv.textContent || tempDiv.innerText || '').trim();
 
       if (
-        args.item.iconCss === 'e-icons e-audio' ||
-        args.item.iconCss === 'e-icons e-assist-stop'
+        args.item!.iconCss === 'e-icons e-audio' ||
+        args.item!.iconCss === 'e-icons e-assist-stop'
       ) {
         // Ensure assistViewInstance and its properties are available
         const audioButton = this.assistViewInstance.responseToolbarSettings
-          .items[1];
+          .items?.[1];
 
         if (audioButton) {
           if (this.currentUtterance) {
@@ -126,9 +126,8 @@ export class AppComponent {
             utterance.onend = () => {
               this.currentUtterance = null;
               // Update icon and tooltip back to 'Read Aloud' when speaking ends
-              if (this.assistViewInstance.responseToolbarSettings.items[1]) {
-                this.assistViewInstance.responseToolbarSettings.items[1].iconCss =
-                  'e-icons e-audio';
+              if (this.assistViewInstance.responseToolbarSettings.items?.[1]) {
+                this.assistViewInstance.responseToolbarSettings.items[1]!.iconCss = 'e-icons e-audio';
                 this.assistViewInstance.responseToolbarSettings.items[1].tooltip =
                   'Read Aloud';
               }
@@ -146,8 +145,6 @@ export class AppComponent {
   }
 
   public onPromptRequest(args: PromptRequestEventArgs): void {
-    if (!args.prompt.trim() || !this.assistViewInstance) return;
-
     this.stopStreaming = false; // Reset stop streaming flag for new request
 
     const url =
@@ -201,7 +198,7 @@ export class AppComponent {
     if (this.currentUtterance) {
       speechSynthesis.cancel();
       this.currentUtterance = null;
-      const audioButton = this.assistViewInstance.responseToolbarSettings.items[1];
+      const audioButton = this.assistViewInstance.responseToolbarSettings.items?.[1];
       if (audioButton) {
         audioButton.iconCss = 'e-icons e-audio';
         audioButton.tooltip = 'Read Aloud';

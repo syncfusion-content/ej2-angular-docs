@@ -43,13 +43,11 @@ export class AppComponent {
   private stopStreaming: boolean = false;
 
   public toolbarSettings = {
-    items: [{ iconCss: 'e-icons e-refresh', align: 'Right', tooltip: 'Clear Prompts' }] as ToolbarItem[],
-    itemClicked: (args: ToolbarItemClickedEventArgs) => { 
-      if (args.item.iconCss === 'e-icons e-refresh') {
-        this.aiAssistView.prompts = [];
-        this.aiAssistView.promptSuggestions = this.suggestions;
-        this.stopStreaming = true; // Ensure streaming is stopped on refresh
-      }
+    items: [{ iconCss: 'e-icons e-refresh', align: 'Right', tooltip: 'Clear Prompts' }],
+    itemClicked: () => {
+      this.aiAssistView.prompts = [];
+      this.aiAssistView.promptSuggestions = this.suggestions;
+      this.stopStreaming = true; // Stop streaming on refresh
     }
   };
 
@@ -75,8 +73,6 @@ export class AppComponent {
 
   // Handle user prompt: call Azure OpenAI Chat Completions using fetch API
   public onPromptRequest(args: PromptRequestEventArgs): void {
-    if (!args.prompt.trim() || !this.aiAssistView) return;
-
     this.stopStreaming = false; // Reset stopStreaming for new request
 
     const url =

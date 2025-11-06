@@ -8,7 +8,7 @@ import { NgIf } from '@angular/common';
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [fixedUserHandleTemplate]='fixeduserhandleTemplate' >
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-nodes>
             <e-node id='node1' [offsetX]=250 [offsetY]=250 [height]=100 [width]= 100>
                 <e-node-fixeduserhandles>
@@ -25,7 +25,7 @@ import { NgIf } from '@angular/common';
                 </e-connector-fixeduserhandles>
             </e-connector>
         </e-connectors>
-        <ng-template #fixeduserhandleTemplate let-data>
+        <ng-template #fixedUserHandleTemplate let-data>
             <ng-container *ngIf="data.id == 'usercon1'" style="width: 100%; height: 100%">
                 <input id="colorPicker" type="color" (change)="onchange($event)" value="#008000"/>
             </ng-container>

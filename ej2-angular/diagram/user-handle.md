@@ -388,7 +388,7 @@ The following example demonstrates how to use these properties to customize the 
 
 #### Customizing Fixed User Handles with HTML Templates
 
-Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render fixed user handle with HTML templates, create an HTML element inside a `<ng-template>` tag then add the template reference using the [`fixedUserHandleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#fixeduserhandletemplate) property in the diagram model.
+Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render [`fixedUserHandleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#fixeduserhandletemplate) with HTML templates, create an HTML element inside a `<ng-template>` tag.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
