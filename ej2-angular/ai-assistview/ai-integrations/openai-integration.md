@@ -32,23 +32,7 @@ Follow the [Getting Started](../getting-started) guide to configure and render t
 
 ## Install Dependencies
 
-Install the required packages:
-
-* OpenAI SDK:
-
-```bash
-
-npm install openai
-
-```
-
-* Marked Library:
-
-```bash
-
-npm install marked --save
-
-```
+To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
 
 ## Configure Azure OpenAI
 

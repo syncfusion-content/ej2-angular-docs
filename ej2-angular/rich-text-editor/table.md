@@ -74,7 +74,7 @@ The Rich Text Editor allows users to insert tables within other table cells, ena
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/rich-text-editor/nesting-table}
+{% previewsample "page.domainurl/samples/rich-text-editor/nesting-table" %}
 
 ## Quick insert for table rows and columns
 
