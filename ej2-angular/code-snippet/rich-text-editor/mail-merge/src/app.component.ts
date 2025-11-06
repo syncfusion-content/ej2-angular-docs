@@ -1,3 +1,4 @@
+{% raw %}
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import {ToolbarService,LinkService,ImageService,HtmlEditorService,RichTextEditorModule,QuickToolbarService,TableService,PasteCleanupService,ActionCompleteEventArgs,ActionBeginEventArgs,RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
 import { DropDownButtonModule, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
@@ -171,3 +172,4 @@ export class AppComponent {
         });
     }
 }
+{% endraw %}

@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef, AfterViewInit, NgZone, ChangeDetectorRef } from '@angular/core';
 import { SpeechToTextModule, SpeechToTextComponent, TranscriptChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { AIAssistViewModule, AIAssistViewComponent, ToolbarSettingsModel, ToolbarItemClickedEventArgs, PromptRequestEventArgs, PromptToolbarSettingsModel } from '@syncfusion/ej2-angular-interactive-chat';
-import * as Marked from 'marked'; // Ensure 'marked' is installed: npm install marked
+import { marked } from 'marked'; // Ensure 'marked' is installed: npm install marked
 
 const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key'; // Replace with your key
 const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint'; // Replace with your endpoint
@@ -81,7 +81,7 @@ export class AppComponent implements AfterViewInit {
   };
   public promptToolbarSettings: PromptToolbarSettingsModel = {
     itemClicked: (args: ToolbarItemClickedEventArgs) => {
-      if (args.item.iconCss === 'e-icons e-assist-edit') {
+      if (args.item!.iconCss === 'e-icons e-assist-edit') {
         const editor = this.contentEditor.nativeElement;
         if (editor) {
           editor.innerHTML = this.assistViewInstance.prompts[args.dataIndex as number].prompt as string;
@@ -106,7 +106,7 @@ export class AppComponent implements AfterViewInit {
     while (i < responseLength && !this.stopStreaming) {
       lastResponse += response[i++];
       if (i % responseUpdateRate === 0 || i === responseLength) {
-        const htmlResponse = Marked.parse(lastResponse);
+        const htmlResponse = marked.parse(lastResponse);
         this.assistViewInstance.addPromptResponse(htmlResponse, i === responseLength);
         this.assistViewInstance.scrollToBottom();
       }
@@ -116,7 +116,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   public async onPromptRequest(args: PromptRequestEventArgs): Promise<void> {
-    if (!args.prompt.trim() || !this.assistViewInstance) return;
+    if (!args.prompt!.trim() || !this.assistViewInstance) return;
 
     this.stopStreaming = false; // Reset stop streaming flag
 
@@ -210,7 +210,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   public onToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
-    if (args.item.iconCss === 'e-icons e-refresh') {
+    if (args.item!.iconCss === 'e-icons e-refresh') {
       this.assistViewInstance.prompts = [];
       const editor = this.contentEditor.nativeElement;
       if (editor) {
