@@ -109,7 +109,7 @@ For more detailed control over the numbering style, use the `numberFormatList` d
 * `Lower Alpha`: Uses lowercase letters (a, b, c, ...)
 * `Upper Roman`: Employs uppercase Roman numerals (I, II, III, ...)
 
-You can customize the available number formats using the [numberFormatList](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#numberformatlist) property of the Rich Text Editor.
+You can customize the available number formats using the [numberFormatList](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#numberformatlist) property of the Rich Text Editor.
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
@@ -194,13 +194,13 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
 
 ## Increase and decrease indent
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
 
-The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
 
 | Options | Description |
 |----------------|---------|
@@ -377,11 +377,11 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 ## Format painter
 
-The Format Painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/formatPainterSettings/) property.
+The Format Painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#formatpaintersettings) property.
 
 ### Configuring format painter tool in the toolbar
 
-You can add the `FormatPainter` tool in the Rich Text Editor using the [toolbarSettings.items](../api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FormatPainter` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
 
 >To use the Format Painter feature, we need to import and configure the `FormatPainterService` in the provider section.
 
@@ -403,11 +403,11 @@ The following example demonstrates how to configure the Format Painter tool.
 
 ### Customizing copy and paste format
 
-You can customize the Format Painter tool in the Rich Text Editor using the [`formatPainterSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/formatPainterSettings/) property.
+You can customize the Format Painter tool in the Rich Text Editor using the [`formatPainterSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#formatpaintersettings) property.
 
-The [allowedFormats](../api/rich-text-editor/formatPainterSettings/#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
+The [allowedFormats](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/formatpaintersettingsmodel#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
-Similarly, with the [deniedFormats](../api/rich-text-editor/formatPainterSettings/#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
+Similarly, with the [deniedFormats](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/formatpaintersettingsmodel#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
 
 | Type | Description        | Selector                                                | Usage                                                                  |
 |------|--------------------|---------------------------------------------------------|------------------------------------------------------------------------|
@@ -454,7 +454,7 @@ This feature is particularly useful when you need to:
 To enable the `ClearFormat` feature in your Rich Text Editor, you need to add it to the toolbar items. Follow these steps:
 
 1. Open your component file where you've implemented the Rich Text Editor.
-2. Locate the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarsettings) property in your Rich Text Editor configuration.
+2. Locate the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property in your Rich Text Editor configuration.
 3. Add `'ClearFormat'` to the `items` array within `toolbarSettings`.
 
 Here's an example of how to configure the Clear Format feature:

@@ -50,7 +50,9 @@ export class AppComponent {
 
   onEditorCreated(): void {
     setTimeout(() => {
-      const panel = this.rte.contentModule.getEditPanel() as HTMLElement;
+      const panel = this.rte?.[
+        'contentModule'
+      ]?.getEditPanel?.() as HTMLElement;
       const realLength = panel.textContent?.length ?? 0;
 
       this.maxLength = realLength;
@@ -63,9 +65,16 @@ export class AppComponent {
     }, 100);
   }
 
-  getTextNodeAtOffset(root: Node, offset: number): { node: Text; offset: number } | null {
+  getTextNodeAtOffset(
+    root: Node,
+    offset: number
+  ): { node: Text; offset: number } | null {
     let currentOffset = 0;
-    const walker: TreeWalker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    const walker: TreeWalker = document.createTreeWalker(
+      root,
+      NodeFilter.SHOW_TEXT,
+      null
+    );
 
     while (walker.nextNode()) {
       const node = walker.currentNode as Text;
@@ -86,7 +95,7 @@ export class AppComponent {
 
   onChange(args: ChangeEventArgs): void {
     const [start, end] = args.value as any;
-    const panel = this.rte.contentModule.getEditPanel() as HTMLElement;
+    const panel = this.rte?.['contentModule']?.getEditPanel?.() as HTMLElement;
     const maxLength = panel.textContent?.length ?? 0;
 
     const safeStart = Math.min(start, maxLength);
