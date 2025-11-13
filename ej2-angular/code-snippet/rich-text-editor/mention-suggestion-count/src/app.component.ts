@@ -33,7 +33,7 @@ import { RichTextEditorModule, ToolbarService, HtmlEditorService, ImageService, 
     [dataSource]="data"
     target="#mention_integration_rte-edit-view"
     [fields]="fieldsData"
-    [minLength]="3"
+    [suggestionCount]="5"
   >
   </ejs-mention>
   </div>
