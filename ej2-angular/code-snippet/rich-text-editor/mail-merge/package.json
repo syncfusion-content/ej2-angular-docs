@@ -20,6 +20,7 @@
       "@syncfusion/ej2-lists": "*",
       "@syncfusion/ej2-popups": "*",
       "@syncfusion/ej2-buttons": "*",
+      "@syncfusion/ej2-angular-splitbuttons": "*",
       "@syncfusion/ej2-splitbuttons": "*",
       "@syncfusion/ej2-inputs": "*",
       "@syncfusion/ej2-navigations": "*",
