@@ -43,226 +43,239 @@ The [Localization](../common/localization) library allows you to localize defaul
 
 The following tables organize all available locale keys by functional category:
 
-**Core Task Properties:**
+**Core task properties:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `id` | ID |
-| `name` | Name |
-| `startDate` | Start Date |
-| `endDate` | End Date |
-| `duration` | Duration |
-| `progress` | Progress |
-| `dependency` | Dependency |
-| `notes` | Notes |
-| `resourceName` | Resources |
-| `resourceID` | Resource ID |
+| id| ID |
+| name| Name |
+| startDate| Start Date |
+| endDate| End Date |
+| duration| Duration |
+| progress| Progress |
+| dependency| Dependency |
+| notes| Notes |
+| resourceName| Resources |
+| resourceID| Resource ID |
+
+**Data rendering**
+
+Locale Key | Default Text  
+-----|-----|-----
+EmptyRecord | No records to display
+EmptyDataSourceError | DataSource must not be empty at initial load since columns are generated from dataSource in auto-generated columns
 
 **Columns**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `True` | true |
-| `False` | false |
-| `ColumnHeader` | column header |
-| `TemplateCell` | is template cell |
-| `ClipBoard` | clipboard |
-| `CheckBoxLabel` | checkbox |
+| True| true |
+| False| false |
+| ColumnHeader| column header |
+| TemplateCell| is template cell |
+| ClipBoard| clipboard |
+| CheckBoxLabel| checkbox |
 
 **Filtering:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `InvalidFilterMessage` | Invalid Filter Data |
-| `FilterbarTitle` | \s filter bar cell |
-| `Matchs` | No Matches Found |
-| `FilterButton` | Filter |
-| `ClearButton` | Clear |
-| `StartsWith` | Starts With |
-| `EndsWith` | Ends With |
-| `Contains` | Contains |
-| `Equal` | Equal |
-| `NotEqual` | Not Equal |
-| `LessThan` | Less Than |
-| `LessThanOrEqual` | Less Than Or Equal |
-| `GreaterThan` | Greater Than |
-| `GreaterThanOrEqual` | Greater Than Or Equal |
-| `ChooseDate` | Choose a Date |
-| `SelectAll` | Select All |
-| `FilterTrue` | True |
-| `FilterFalse` | False |
-| `NoResult` | No Matches Found |
-| `ClearFilter` | Clear Filter |
-| `NumberFilter` | Number Filters |
-| `TextFilter` | Text Filters |
-| `DateFilter` | Date Filters |
-| `DateTimeFilter` | DateTime Filters |
-| `MatchCase` | Match Case |
-| `Between` | Between |
-| `CustomFilter` | Custom Filter |
-| `CustomFilterPlaceHolder` | Enter the value |
-| `CustomFilterDatePlaceHolder` | Choose a date |
-| `AND` | AND |
-| `OR` | OR |
-| `NotStartsWith` | Does Not Start With |
-| `NotEndsWith` | Does Not End With |
-| `NotContains` | Does Not Contain |
-| `IsNull` | Null |
-| `NotNull` | Not Null |
-| `IsEmpty` | Empty |
-| `IsNotEmpty` | Not Empty |
-| `FilterDescription` | Press Alt Down to open filter Menu |
+| InvalidFilterMessage| Invalid Filter Data |
+| FilterbarTitle| \s filter bar cell |
+| Matchs| No Matches Found |
+| FilterButton| Filter |
+| ClearButton| Clear |
+| StartsWith| Starts With |
+| EndsWith| Ends With |
+| Contains| Contains |
+| Equal| Equal |
+| NotEqual| Not Equal |
+| LessThan| Less Than |
+| LessThanOrEqual| Less Than Or Equal |
+| GreaterThan| Greater Than |
+| GreaterThanOrEqual| Greater Than Or Equal |
+| ChooseDate| Choose a Date |
+| SelectAll| Select All |
+| FilterTrue| True |
+| FilterFalse| False |
+| NoResult| No Matches Found |
+| ClearFilter| Clear Filter |
+| NumberFilter| Number Filters |
+| TextFilter| Text Filters |
+| DateFilter| Date Filters |
+| DateTimeFilter| DateTime Filters |
+| MatchCase| Match Case |
+| Between| Between |
+| CustomFilter| Custom Filter |
+| CustomFilterPlaceHolder| Enter the value |
+| CustomFilterDatePlaceHolder| Choose a date |
+| AND| AND |
+| OR| OR |
+| NotStartsWith| Does Not Start With |
+| NotEndsWith| Does Not End With |
+| NotContains| Does Not Contain |
+| IsNull| Null |
+| NotNull| Not Null |
+| IsEmpty| Empty |
+| IsNotEmpty| Not Empty |
+| FilterDescription| Press Alt Down to open filter Menu |
+
+**Sorting**
+
+Locale Key | Default Text
+-----|-----|
+SortDescription | Press Enter to sort |
 
 **ColumnMenu:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `FilterMenu` | Filter |
-| `AutoFitAll` | Autofit all columns |
-| `AutoFit` | Autofit this column |
-| `ColumnMenuDialogARIA` | Column menu dialog |
-| `ColumnMenuDescription` | Press Alt Down to open Column Menu |
+| FilterMenu | Filter |
+| AutoFitAll | Autofit all columns |
+| AutoFit | Autofit this column |
+| ColumnMenuDialogARIA | Column menu dialog |
+| ColumnMenuDescription | Press Alt Down to open Column Menu |
 
-**Baseline and Planning:**
-
-| Locale Key | Default Text |
-|------------|--------------|
-| `baselineStartDate` | Baseline Start Date |
-| `baselineEndDate` | Baseline End Date |
-| `type` | Type |
-| `offset` | Offset |
-| `taskMode` | Task Mode |
-| `auto` | Auto |
-| `manual` | Manual |
-
-**Time Units and Measurements:**
+**Baseline and planning:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `day` | day |
-| `hour` | hour |
-| `minute` | minute |
-| `days` | days |
-| `hours` | hours |
-| `minutes` | minutes |
-| `unit` | Unit |
-| `work` | Work |
+| baselineStartDate | Baseline Start Date |
+| baselineEndDate | Baseline End Date |
+| type | Type |
+| offset | Offset |
+| taskMode | Task Mode |
+| auto | Auto |
+| manual | Manual |
 
-**Dialog and Form Elements:**
-
-| Locale Key | Default Text |
-|------------|--------------|
-| `addDialogTitle` | New Task |
-| `editDialogTitle` | Task Information |
-| `taskInformation` | Task Information |
-| `generalTab` | General |
-| `customTab` | Custom Columns |
-| `writeNotes` | Write Notes |
-
-**Action Buttons and Operations:**
+**Time units and measurements:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `add` | Add |
-| `edit` | Edit |
-| `update` | Update |
-| `delete` | Delete |
-| `cancel` | Cancel |
-| `save` | Save |
-| `saveButton` | Save |
-| `okText` | OK |
-| `search` | Search |
+| day | day |
+| hour | hour |
+| minute | minute |
+| days | days |
+| hours | hours |
+| minutes | minutes |
+| unit | Unit |
+| work | Work |
 
-**Toolbar and Navigation:**
-
-| Locale Key | Default Text |
-|------------|--------------|
-| `zoomIn` | Zoom in |
-| `zoomOut` | Zoom out |
-| `zoomToFit` | Zoom to fit |
-| `expandAll` | Expand all |
-| `collapseAll` | Collapse all |
-| `nextTimeSpan` | Next timespan |
-| `prevTimeSpan` | Previous timespan |
-
-**Context Menu Operations:**
+**Dialog and form elements:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `deleteTask` | Delete Task |
-| `deleteDependency` | Delete Dependency |
-| `convert` | Convert |
-| `above` | Above |
-| `below` | Below |
-| `child` | Child |
-| `milestone` | Milestone |
-| `toTask` | To Task |
-| `toMilestone` | To Milestone |
-| `autoFitAll` | Auto Fit all columns |
-| `autoFit` | Auto Fit this column |
-| `SortAscending` | Sort Ascending |
-| `SortDescending` | Sort Descending |
+| addDialogTitle | New Task |
+| editDialogTitle | Task Information |
+| taskInformation | Task Information |
+| generalTab | General |
+| customTab | Custom Columns |
+| writeNotes | Write Notes |
 
-**Export and Data Operations:**
+**Action buttons and operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `excelExport` | Excel export |
-| `csvExport` | CSV export |
-| `pdfExport` | PDF export |
+| add | Add |
+| edit | Edit |
+| update | Update |
+| delete | Delete |
+| cancel | Cancel |
+| save | Save |
+| saveButton | Save |
+| okText | OK |
+| search | Search |
 
-**System Messages and Feedback:**
-
-| Locale Key | Default Text |
-|------------|--------------|
-| `emptyRecord` | No records to display |
-| `confirmDelete` | Are you sure you want to Delete Record? |
-| `confirmPredecessorDelete` | Are you sure you want to remove dependency link? |
-| `enterValue` | Enter the value |
-
-**Task Relationships and Dependencies:**
+**Toolbar and navigation:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `taskLink` | Task Link |
-| `lag` | Lag |
-| `start` | Start |
-| `finish` | Finish |
-| `from` | From |
-| `to` | To |
-| `FF` | FF |
-| `FS` | FS |
-| `SF` | SF |
-| `SS` | SS |
+| zoomIn | Zoom in |
+| zoomOut | Zoom out |
+| zoomToFit | Zoom to fit |
+| expandAll | Expand all |
+| collapseAll | Collapse all |
+| nextTimeSpan | Next timespan |
+| prevTimeSpan | Previous timespan |
 
-**Specialized Features:**
+**Context menu operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `eventMarkers` | Event markers |
-| `leftTaskLabel` | Left task label |
-| `rightTaskLabel` | Right task label |
-| `timelineCell` | Timeline cell |
-| `taskType` | Task Type |
-| `unassignedTask` | Unassigned Task |
-| `group` | Group |
+| deleteTask | Delete Task |
+| deleteDependency | Delete Dependency |
+| convert | Convert |
+| above | Above |
+| below | Below |
+| child | Child |
+| milestone | Milestone |
+| toTask | To Task |
+| toMilestone | To Milestone |
+| autoFitAll | Auto Fit all columns |
+| autoFit | Auto Fit this column |
+| SortAscending | Sort Ascending |
+| SortDescending | Sort Descending |
 
-**Task Count and Status:**
+**Export and data operations:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `task` | task |
-| `tasks` | tasks |
+| excelExport| Excel export |
+| csvExport| CSV export |
+| pdfExport| PDF export |
 
-**Schedule Mode and Planning:**
+**System messages and feedback:**
 
 | Locale Key | Default Text |
 |------------|--------------|
-| `changeScheduleMode` | Change Schedule Mode |
-| `subTasksStartDate` | SubTasks Start Date |
-| `subTasksEndDate` | SubTasks End Date |
-| `scheduleStartDate` | Schedule Start Date |
-| `scheduleEndDate` | Schedule End Date |
+| emptyRecord| No records to display |
+| confirmDelete| Are you sure you want to Delete Record? |
+| confirmPredecessorDelete| Are you sure you want to remove dependency link? |
+| enterValue| Enter the value |
+
+**Task relationships and dependencies:**
+
+| Locale Key | Default Text |
+|------------|--------------|
+| taskLink| Task Link |
+| lag| Lag |
+| start| Start |
+| finish| Finish |
+| from| From |
+| to| To |
+| FF| FF |
+| FS| FS |
+| SF| SF |
+| SS| SS |
+
+**Specialized features:**
+
+| Locale Key | Default Text |
+|------------|--------------|
+| eventMarkers| Event markers |
+| leftTaskLabel| Left task label |
+| rightTaskLabel| Right task label |
+| timelineCell| Timeline cell |
+| taskType| Task Type |
+| unassignedTask| Unassigned Task |
+| group| Group |
+
+**Task count and status:**
+
+| Locale Key | Default Text |
+|------------|--------------|
+| task| task |
+| tasks| tasks |
+
+**Schedule mode and planning:**
+
+| Locale Key | Default Text |
+|------------|--------------|
+| changeScheduleMode| Change Schedule Mode |
+| subTasksStartDate| SubTasks Start Date |
+| subTasksEndDate| SubTasks End Date |
+| scheduleStartDate| Schedule Start Date |
+| scheduleEndDate| Schedule End Date |
 
 **Advanced dependency relationship messages:**
 
@@ -270,14 +283,14 @@ The Gantt component includes specialized messages for dependency conflicts:
 
 | Locale Key | Purpose |
 |------------|---------|
-| `taskBeforePredecessor_FS` | Finish-to-Start conflict when task moves before predecessor finishes |
-| `taskAfterPredecessor_FS` | Finish-to-Start conflict when task moves away from predecessor |
-| `taskBeforePredecessor_SS` | Start-to-Start conflict when task starts before predecessor |
-| `taskAfterPredecessor_SS` | Start-to-Start conflict when task starts after predecessor |
-| `taskBeforePredecessor_FF` | Finish-to-Finish conflict when task finishes before predecessor |
-| `taskAfterPredecessor_FF` | Finish-to-Finish conflict when task finishes after predecessor |
-| `taskBeforePredecessor_SF` | Start-to-Finish conflict messages |
-| `taskAfterPredecessor_SF` | Start-to-Finish conflict messages |
+| taskBeforePredecessor_FS| Finish-to-Start conflict when task moves before predecessor finishes |
+| taskAfterPredecessor_FS| Finish-to-Start conflict when task moves away from predecessor |
+| taskBeforePredecessor_SS| Start-to-Start conflict when task starts before predecessor |
+| taskAfterPredecessor_SS| Start-to-Start conflict when task starts after predecessor |
+| taskBeforePredecessor_FF| Finish-to-Finish conflict when task finishes before predecessor |
+| taskAfterPredecessor_FF| Finish-to-Finish conflict when task finishes after predecessor |
+| taskBeforePredecessor_SF| Start-to-Finish conflict messages |
+| taskAfterPredecessor_SF| Start-to-Finish conflict messages |
 
 ### Loading translations for de culture
 

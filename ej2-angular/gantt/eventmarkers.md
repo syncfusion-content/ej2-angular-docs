@@ -52,6 +52,24 @@ The following implementation demonstrates event marker integration within a Gant
   
 {% previewsample "page.domainurl/samples/gantt/eventmarkers/default-cs1" %}
 
+## Programmatically show and hide event markers
+
+You can programmatically show or hide event markers in the Gantt Chart by updating the [eventMarkers](https://ej2.syncfusion.com/angular/documentation/api/gantt/#eventmarkers) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/eventmarkers/show-hide-eventmaker/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/eventmarkers/show-hide-eventmaker/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/eventmarkers/show-hide-eventmaker/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/eventmarkers/show-hide-eventmaker" %}
+
 ## See Also
 
 - [How to bind data to the Gantt chart?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)

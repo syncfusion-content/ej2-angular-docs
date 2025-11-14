@@ -186,6 +186,22 @@ The following example enables unscheduled tasks:
 
 {% previewsample "page.domainurl/samples/gantt/scheduling-tasks/unscheduledtasks-cs1" %}
 
+### Convert to milestone using method
+
+You can convert a task into a milestone using the [ConvertToMilestone](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#converttomilestone) method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/unscheduledtasks-method-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/scheduling-tasks/unscheduledtasks-method-cs11/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/unscheduledtasks-method-cs1" %}
+
 ## Configure working time range
 
 Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) sets project-wide working hours.

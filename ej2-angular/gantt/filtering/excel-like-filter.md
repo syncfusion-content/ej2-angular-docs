@@ -26,6 +26,21 @@ To enable this feature, configure [filterSettings.type](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs1" %}
 
+## Show customized text in checkbox list data
+
+To customize the text displayed in a checkbox list, use `filterItemTemplate` and assign it to the desired column. This allows rendering custom content for each item in the filter list.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/filtering/show-custom-template/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/filtering/show-custom-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/filtering/show-custom-template" %}
+
 ## Hide Excel filter dialog elements
 
 You can hide elements such as the context menu, search box, sorting options, and checkbox list in the Gantt Excel filter dialog using the following CSS:

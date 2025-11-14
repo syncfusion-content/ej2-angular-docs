@@ -132,6 +132,20 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs5" %}
 
+## Export with external form elements
+
+To include external form elements (such as headers and footers) in the exported PDF along with the Gantt Chart, use the `header` and `footer` properties within the `pdfExportProperties` configuration.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-element/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-element/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-element" %}
+
 ## See also
 - [How to export to PDF?](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/pdf-export)
 - [How to customize PDF export?](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/customize-pdf-export)

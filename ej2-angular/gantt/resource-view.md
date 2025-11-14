@@ -90,6 +90,40 @@ The following example enables drag-and-drop:
 
 This configuration supports dynamic task reassignment.
 
+## Customize the taskbar based on resource view
+
+You can customize the taskbar appearance based on resource view using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/iQueryTaskbarInfoEventArgs) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/resourceview/customize-taskbar/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/resourceview/customize-taskbar/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resourceview/customize-taskbar/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/customize-taskbar" %}
+
+## Hide columns in resource tab
+
+To hide a column in the Gantt Chart's resource view, handle the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event and set the `visible` property of the target column to **false** when the `requestType` is `beforeOpenAddDialog` or `beforeOpenEditDialog`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/resourceview/resource-tab/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/resourceview/resource-tab/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resourceview/resource-tab/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/resource-tab" %}
+
 ## Limitations
 
 - Resource view does not support parent tasks; all tasks must be child tasks under resources or the **Unassigned Task** node.

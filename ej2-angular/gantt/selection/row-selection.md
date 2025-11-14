@@ -128,6 +128,22 @@ Select a range of rows in the Gantt component by using the [selectRowsByRange](h
   
 {% previewsample "page.domainurl/samples/gantt/selection/row-range-method" %}
 
+## Enable multi row selection without Ctrl key
+
+You can enable simple multi-row selection by setting the `enableSimpleMultiRowSelection` property to **true** in the Grid configuration during the [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event. This allows multiple rows to be selected individually through clicks without holding the Ctrl key.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/selection/selection-multiple/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/selection/selection-multiple/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/selection/selection-multiple" %}
+
 ## Get selected row information
 
 To access selected row details in the Angular Gantt component:
