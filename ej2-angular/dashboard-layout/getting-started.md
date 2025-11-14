@@ -291,4 +291,4 @@ The following example demonstrates a basic Dashboard Layout using the `panels` p
   
 {% previewsample "page.domainurl/samples/dashboard-layout/getting-started-panel-cs1" %}
 
-> You can refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore the [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to learn how to present and manipulate data.
+> You can refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore the [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dashboard-layout/default) to learn how to present and manipulate data.
