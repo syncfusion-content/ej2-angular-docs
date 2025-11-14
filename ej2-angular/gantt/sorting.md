@@ -134,6 +134,12 @@ You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&re
 
 You can customize the default sort behavior for a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component by assigning a [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#sortcomparer) function to define custom sorting logic.
 
+The sorting process includes the following steps:
+
+1. Ascending → Descending → Clear Sorting (resets to original data source order).
+2. Child records are sorted within their respective parent groups.
+3. Null values in child records appear at the bottom of each parent group, not across the entire Gantt dataset.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/custom-sorting/src/app.component.ts %}

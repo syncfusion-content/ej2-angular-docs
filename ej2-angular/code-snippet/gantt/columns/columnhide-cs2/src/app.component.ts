@@ -46,10 +46,18 @@ export class AppComponent implements OnInit {
   }
 
   public show(): void {
-    (this.ganttInstance as GanttComponent).showColumn('Duration', 'headerText');
+    const allColumns = (this.ganttInstance as GanttComponent).getGanttColumns();
+    if (allColumns.length > 0) {
+      const firstColumnField = allColumns[2].headerText as string;
+      (this.ganttInstance as GanttComponent).showColumn(firstColumnField, 'headerText');
+    }
   }
 
   public hide(): void {
-    (this.ganttInstance as GanttComponent).hideColumn('Duration', 'headerText');
+    const visibleColumns = (this.ganttInstance as GanttComponent).treeGrid.getVisibleColumns();
+    if (visibleColumns.length > 0) {
+      const firstVisibleField = visibleColumns[2].headerText;
+      (this.ganttInstance as GanttComponent).hideColumn(firstVisibleField, 'headerText');
+    }
   }
 }

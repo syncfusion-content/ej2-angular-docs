@@ -144,6 +144,21 @@ In the Gantt component, the schedule timeline will be automatically updated when
   
 {% previewsample "page.domainurl/samples/gantt/timeline/timescale-cs1" %}
 
+## Dynmically change timeline mode
+
+You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property using the [change](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#change) event of the [ComboBox](https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started) component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/change-timeline-mode/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/change-timeline-mode/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/timeline/change-timeline-mode" %}
+
 ## Timeline cells tooltip
 
 In the Gantt component, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showtooltip) property. The default value of this property is **true**.
@@ -188,6 +203,30 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/d
 * The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
 * Non-working hours cannot be excluded when `showWeekend` is set to **false**.
 * Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
+
+## Navigating Gantt Timeline
+
+You can adjust the Gantt chart view by shifting the timeline forward or backward by one unit using the following methods:
+
+- [previousTimeSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#previoustimespan): Moves the timeline backward by one unit from the current start point.
+
+- [nextTimeSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#nexttimespan): Moves the timeline forward by one unit from the current end point.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/span-time-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/span-time-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/timeline/span-time-cs1/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/timeline/span-time-cs1" %}
 
 ## Timeline template
 

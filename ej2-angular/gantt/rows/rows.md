@@ -44,9 +44,10 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart allows 
 To highlight the currently selected row, you can override the default styles applied by the Gantt chart. The following CSS classes are used by default:
 
 ```css
- .e-gantt .e-selectionbackground, .e-gantt .e-active  {
-    background-color: #f9920b !important;
-  }
+.e-gantt .e-selectionbackground, .e-gantt .e-gantt-chart .e-active, .e-gantt .e-active > .e-chart-row-border {
+  background-color: #f9920b !important;
+  border: 1px solid red !important;
+}
 ```
 
 **Alternate row customization:**
@@ -54,8 +55,8 @@ To highlight the currently selected row, you can override the default styles app
 To create a visual separation between consecutive rows, you can style alternate rows using the **.e-altrow** class.
 
 ```css
-.e-grid .e-altrow {
-    background-color: #fafafa;
+.e-gantt .e-altrow {
+  background-color: #fafafa;
 }
 
 ```
@@ -320,44 +321,6 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/rows/hiderow-cs1" %}
-
-## How to get the row data and element
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides several methods to retrieve row data and elements. These are useful for accessing specific rows, performing custom operations, or manipulating displayed data.
-
-1. `getRowByIndex`: Returns the grid row element at a specific index.
-
-    ```ts
-    const rowElement = this.gantt.treeGrid.getRowByIndex(rowIndex);
-    ```
-
-2. `getRowInfo`: Retrieves row data using a target cell element.
-
-    ```ts
-    const rowInformation = this.gantt.treeGrid.getRowInfo(targetElement);
-    ```
-
-3. `getRows`: Returns all grid row elements.
-
-    ```ts
-     const rowElements = this.gantt.treeGrid.getRows();
-    ```
-
-4. `getSelectedRowIndexes`: Provides selected row indexes.
-
-    ```ts
-    const selectedIndexes = this.gantt.treeGrid.getSelectedRowIndexes();
-    ```
-5. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/treegrid/#getselectedrows): Returns selected row elements.
-
-    ```ts
-    const selectedRowElements = this.gantt.treeGrid.getSelectedRows();
-    ```
-6. `getRowByIndex`: Retrieves the chart row element at a specific index.
-
-    ```ts
-     const rowElement = this.gantt.getRowByIndex(rowIndex);
-    ```
 
 ## See Also
 

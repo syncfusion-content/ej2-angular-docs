@@ -551,6 +551,8 @@ namespace URLAdaptor.Controllers
 
 **Fetch API integration**: Use Gantt [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
+To show or hide the loading indicator during fetch, call [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#showspinner) method before sending the request and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#hidespinner) method after receiving the data.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/data-binding/bindajax-cs1/src/app.component.ts %}
@@ -642,6 +644,39 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 {% endtabs %}
 
 **State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
+
+## programmatically update datasource
+
+You can programmatically update the Gantt chart data source using the [updateDataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/data-binding/update-datsource/src/app.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="dataSource.ts" %}
+{% include code-snippet/gantt/data-binding/update-datsource/src/data.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="updateData.ts" %}
+{% include code-snippet/gantt/data-binding/update-datsource/src/updateData.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/data-binding/update-datsource/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+## Display custom message for empty records
+
+You can display a custom message when no data is available by defining an empty record template using `<ng-template>` and assigning it to `treeGrid.grid.emptyRecordTemplate` during the `load` event in the component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/data-binding/empty-template/src/app.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/data-binding/empty-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Data binding limitations
 

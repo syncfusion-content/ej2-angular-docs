@@ -194,6 +194,20 @@ this.gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
 this.gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter.
 ```
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/method-treecolumn/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %} 
+{% include code-snippet/gantt/columns/method-treecolumn/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/method-treecolumn/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/method-treecolumn" %}
+
 ## Retrieve expanded records
 
 To retrieve the currently expanded rows in the Gantt component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getexpandedrecords) method. 

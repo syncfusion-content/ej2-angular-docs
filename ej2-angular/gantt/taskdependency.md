@@ -16,6 +16,12 @@ Task dependency in the Angular Gantt component establishes relationships between
 
 Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency). Parent dependencies can be enabled by [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
 
+Multiple predecessor relationships can be defined in a single task by assigning a comma-separated string to the `Predecessor` field, such as `'2FS,3FS'`. This configuration allows the Gantt chart to interpret and render multiple dependencies during the initial data load.
+
+```ts
+{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 0, Predecessor: '3FS,2FS', Progress: 30 }
+```
+
 The following example establishes dependencies:
 
 {% tabs %}
@@ -156,6 +162,26 @@ The following example toggles dependency lines:
 
 This code hides lines on button click, with ARIA updates for accessibility.
 
+## Managing predecessor dependencies
+
+You can manage task dependencies by adding, updating, or removing predecessor links. These methods control task order and execution:
+
+- [addPredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#addpredecessor): Adds a predecessor to a task to define its dependency.
+- [removePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#removepredecessor): Removes an existing dependency from the task.
+- [updatePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatepredecessor): Updates the dependency details using the task's ID.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/taskdependency/predecessor-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/taskdependency/predecessor-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/taskdependency/predecessor-cs1" %}
+
 ## Customize connector lines
 
 Connector lines are styled globally with [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt/#connectorlinebackground).
@@ -202,6 +228,24 @@ export class AppComponent {
 ```
 
 ![Customize connector lines](images/connector-line-bgcolor.png)
+
+## Disable predecessor validation
+
+By default, Gantt task dates are validated based on predecessor values. To disable this validation, set the `enablePredecessorValidation` property to **false**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/taskdependency/disable-predecessor-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/taskdependency/disable-predecessor-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/disable-predecessor-cs1" %}
+
+## Limitation
+
+> When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
 - [How to configure task constraints?](https://ej2.syncfusion.com/angular/documentation/gantt/task-constraints)

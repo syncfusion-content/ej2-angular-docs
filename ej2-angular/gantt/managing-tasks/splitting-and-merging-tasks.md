@@ -40,6 +40,20 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 
 Merge split tasks using the context menu’s **Merge Task** option, requiring [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) and `ContextMenuService`, or by dragging segments together in the UI. This recombines segments into a single task, ensuring continuity in the project timeline, with `EditService` and valid `taskFields` mappings required.
 
+## Get the clicked segment information
+
+You can get the clicked segment information using the [onTaskbarClick](https://helpej2.syncfusion.com/angular/documentation/gantt/events#ontaskbarclick) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/clicked-segment-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/clicked-segment-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/clicked-segment-cs1" %}
+
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.

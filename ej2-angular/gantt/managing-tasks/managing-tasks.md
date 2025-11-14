@@ -81,6 +81,23 @@ Below is the combined content from the provided markdown sections in bullet poin
   
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/editParams-cs1" %}
 
+## Prevent particular column and taskbar editing
+
+You can prevent editing for the particular column by setting [columns.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/column/#allowEditing) to **false**.
+
+To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event based on `taskbarEditAction`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/prevent-editing-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/prevent-editing-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/prevent-editing-cs1" %}
+
 ## Cell Edit Template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
