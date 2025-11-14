@@ -11,6 +11,7 @@ import { GanttData } from './data';
   template: `
     <ejs-gantt height="430px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings" [treeColumnIndex]="1">
       <e-columns>
+        <e-column type='checkbox' width=90></e-column>  
         <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90" type="number"></e-column>
         <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="270" type="string"></e-column>
         <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="150" format="yMd" type="date"></e-column>

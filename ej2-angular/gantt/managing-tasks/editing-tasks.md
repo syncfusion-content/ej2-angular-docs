@@ -48,6 +48,8 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editdialogfields), using the [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/dialogFieldType/) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `EditService` required.
 
+The following sample demonstrates customization using properties and the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/app.component.ts %}
@@ -106,7 +108,11 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
 ## Edit tasks programmatically
 
-Update tasks programmatically using the [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method, specifying the task ID and updated data, with `EditService` injected. This method supports automation, such as updating durations via a button, but cannot modify the task ID. Ensure `taskFields` mappings are valid for successful updates.
+You can update tasks programmatically using the [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method by specifying the task ID and updated data. This requires `EditService` to be injected and supports automation, such as updating durations through a button. The task ID cannot be changed using this method. Ensure `taskFields` mappings are valid for successful updates.
+
+To update an existing task ID with a new unique ID, use the [updateTaskId](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatetaskid) method.
+
+> You can also update custom column values using the `updateRecordById` method. The `taskID` must be specified for the update to apply.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,6 +125,25 @@ Update tasks programmatically using the [updateRecordById](https://ej2.syncfusio
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/updaterecord-dynamic-cs1" %}
+
+## Render custom edit component
+
+You can render a custom edit component for a column using the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edit) property.  This property supports the following methods to manage the component lifecycle:
+
+- `create`: Initializes the custom component.
+- `write`: Renders the component inside the cell.
+- `read`: Retrieves the edited value.
+- `destroy`: Cleans up the component instance.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/custom-dynamic-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/custom-dynamic-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/custom-dynamic-cs1" %}
 
 ## See also
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)

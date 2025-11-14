@@ -150,7 +150,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 ## Built-in and custom items in toolbar
 
-The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** is a custom item added to the toolbar.
+The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

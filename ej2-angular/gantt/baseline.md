@@ -75,3 +75,19 @@ The following example demonstrates complete baseline configuration with proper f
 {% previewsample "page.domainurl/samples/gantt/baseline/default-cs1" %}
 
 > For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/baseline).
+
+## Customize basline using event
+
+You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event.
+ 
+```ts
+import { IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-angular-gantt'
+function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) 
+{
+	var element = args.rowElement.querySelector('.e-baseline-bar ');
+    if (element) 
+    {
+		element.style.background = 'linear-gradient(red, yellow)';
+	}
+}
+```

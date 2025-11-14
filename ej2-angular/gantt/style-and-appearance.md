@@ -106,6 +106,51 @@ The following example overrides taskbar and milestone styles:
 }
 ```
 
+## Customize the taskbar
+To customize the appearance of child taskbars in the Gantt Chart, apply the following CSS.
+```css
+.e-gantt-child-taskbar{
+  border-radius: 40%!important;
+}
+```
+
+## Customize the connector line
+
+To customize the connector line in the Gantt Chart, apply the following CSS
+
+```css
+ .e-connector-line{
+    stroke-width: 6;
+  }
+  .e-connector-line:hover {
+    stroke-width: 3px !important;
+    stroke: #f10c0c !important;
+  }
+```
+
+## customize the dialog popup on editing
+
+To customize the header area of the dialog editor in the Gantt Chart, apply the following CSS.
+
+```css
+.e-gantt-dialog .e-dlg-header-content, .e-gantt-dialog .e-tab .e-tab-header {
+  background: #5b3f51 !important;
+}
+```
+
+## Customize row hover
+
+To customize the row hover effect in the Gantt Chart, apply the following CSS.
+
+```css
+.e-gantt .e-chart-row:hover {
+  background: pink;
+}
+.e-gantt .e-row:hover {
+  background: pink;
+}
+```
+
 ## Configure grid lines
 
 Control grid line visibility with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):

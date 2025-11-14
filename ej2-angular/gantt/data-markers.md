@@ -166,3 +166,16 @@ interface GanttRecord {
 ![Custom event bind to data markers](images/custom-event-datamarkers.gif)
 
 **Event handler considerations**: The click event handler locates the parent task row using DOM traversal methods, extracts the task information from the current view data, and calls the [openEditDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/#openeditdialog) method with the appropriate task ID to display the edit dialog for the selected task.
+
+## Apply custom styling for indicator span
+
+You can programmatically modify the styling of the indicator by targeting the `.e-indicator-span` class.
+
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/datamarkers/indicator-customize/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/datamarkers/indicator-customize/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/datamarkers/indicator-customize" %}

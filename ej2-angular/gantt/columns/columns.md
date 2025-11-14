@@ -439,7 +439,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component all
 
 You can control the visibility of columns in the Angular Gantt component by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#visible) property of each column to **true** or **false**. 
 
-The following example demonstrates how the **Duration** column is configured with the `visible` property set to **false**, which hides the column in the rendered Gantt chart.
+The following example illustrates how to dynamically toggle the visibility of the **Duration** column. Initially, the column is set with the `visible` property as **false**. When the switch component triggers a `change` event, the `getColumnByField` method retrieves the column, its `visible` property is updated based on the switch state, and `refreshColumns` is called to apply the changes to the UI.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -466,6 +466,8 @@ You can also show or hide columns in the Angular Gantt component using the [show
 **Based on header text:**
 
 You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter.  This enables dynamic control over column visibility based on the displayed header.
+
+You can use the `getGanttColumns` method to retrieve all defined columns, and the `getVisibleColumns` method to get only the visible columns.
 
 The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is called with **Duration** as the first parameter and `headerText` as the second. Clicking the **Show Column** button restores the column using the `showColumn` method.
 
@@ -533,47 +535,7 @@ Customizing Gantt column styles allows you to modify the appearance to match you
 
 For more information check on this [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/style-and-appearance).
 
-## Manipulating columns
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular provides advanced features for column manipulation. You can access columns, update their definitions, and add or remove them using the available properties, methods, and events from the Gantt and TreeGrid modules.
-
-### Accessing columns
-
-You can access columns in the Gantt component using methods available in the Gantt instance and `treeGrid` objects.
-
-* `getGanttColumns`: Returns all defined columns.
-
-```ts
-let columns = this.gantt.getGanttColumns();
-```
-
-* `getColumnByField`: Retrieves a column by its field name. 
-
-```ts
-let column = this.gantt.treeGrid.getColumnByField('TaskName');;
-```
-
-* `getColumnByUid`: Fetches a column using its UID.
-
-```ts
-let column = this.gantt.treeGrid.getColumnByUid();
-```
-
-* `getVisibleColumns`: Lists only the visible columns. 
-
-```ts
-let visibleColumns = this.gantt.treeGrid.getVisibleColumns();
-```
-
-* `getColumnFieldNames`: Returns field names of all columns.
-
-```ts
-let fieldNames = this.gantt.treeGrid.getColumnFieldNames()
-```
-
-> For a complete list of column properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/)
-
-### Updating column definitions
+## Updating column definitions
 
 To update column definitions in Angular Gantt component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
@@ -594,7 +556,7 @@ To update column definitions in Angular Gantt component, modify the [columns](ht
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnupdate-cs1" %}
 
-### Adding/removing columns
+## Adding/removing columns
 
 You can add or remove columns in the Angular Gantt by updating the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
 
@@ -611,15 +573,6 @@ You can add or remove columns in the Angular Gantt by updating the [columns](htt
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnupdate-cs2" %}
-
-### How to refresh columns
-
-You can use the `refreshColumns` method of `treeGrid` object in Gantt instance to refresh the columns in the Gantt. This method can be used to update Gantt columns dynamically based on user actions or data changes.
-
-
-```ts
-this.gantt.treeGrid.refreshColumns();
-```
 
 ## Responsive columns
 
@@ -640,3 +593,27 @@ The following example demonstrates a Gantt chart where the **Task Name** column 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/responsivecolumn-cs1" %}
+
+## Clip mode
+
+The clip mode provides options to display overflow cell content using the [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel/#clipmode) property.  The following are three types of `clipMode`:
+
+- **Clip**: Truncates content that exceeds the cell width.
+- **Ellipsis**: Displays ellipsis when content exceeds the cell area.
+- **EllipsisWithTooltip**: Displays ellipsis and shows full content in a tooltip on hover.
+
+> By default, all the column's [clipMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel/#clipmode) property is defined as **EllipsisWithTooltip**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/cilp-mode-column/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/columns/cilp-mode-column/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/columns/cilp-mode-column/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/cilp-mode-column" %}

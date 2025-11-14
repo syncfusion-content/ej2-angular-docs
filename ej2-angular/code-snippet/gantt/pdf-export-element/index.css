@@ -1,0 +1,46 @@
+
+
+/* --------------------------------------------------------------- */
+/* SMALL FORM – fixed narrow width, centered                      */
+/* --------------------------------------------------------------- */
+.form-container {
+  background: #d24242;
+  padding: 24px 28px;
+  border: 1px solid #d1d9e0;           /* ← your border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  width: 500px;                 
+  text-align: center;
+}
+
+
+/* --------------------------------------------------------------- */
+/* Syncfusion floating inputs                                      */
+/* --------------------------------------------------------------- */
+.e-input-group {
+  margin-bottom: 16px;
+}
+.e-input-group .e-input {
+  height: 38px;
+  padding: 0 10px;
+  font-size: 13.5px;
+  border-radius: 6px;
+}
+.e-input-group textarea.e-input {
+  height: auto;
+  padding: 8px 10px;
+  resize: none;
+  border-radius: 6px;
+}
+.e-float-text {
+  font-size: 12.5px;
+  color: #2874A6;
+  font-weight: 500;
+}
+
+/* Focus effect */
+.e-input:focus {
+  border-color: #2874A6 !important;
+  box-shadow: 0 0 0 2px rgba(40,116,166,.15);
+}
+
