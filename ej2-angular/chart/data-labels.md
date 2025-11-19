@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data labels in Angular Chart component
 
-Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings/#visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
+Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 
 ## Position
 
-Using [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings/#position) property, you can place the label either on
+Using [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#position) property, you can place the label either on
 `Top`, `Middle`,`Bottom` or `Outer` (outer is applicable for column and bar type series).
 
 {% tabs %}
@@ -48,7 +48,7 @@ Using [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 ## Data Label Template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value.
-Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettingsModel/#template) property, you can set data label template in chart.
+Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettingsModel#template) property, you can set data label template in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 
 ## Format
 
-Data label for the chart can be formatted using [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings/#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the chart can be formatted using [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -203,7 +203,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 
 ## Customizing Specific Point
 
-You can also customize the specific marker and label using [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iTextRenderEventArgs/) event. `pointRender` event allows you to change the shape, color and border for a point, whereas the `textRender` event allows you to change the text for the point.
+You can also customize the specific marker and label using [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iTextRenderEventArgs) event. `pointRender` event allows you to change the shape, color and border for a point, whereas the `textRender` event allows you to change the text for the point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -232,6 +232,44 @@ You can calculate the percentage value based on the sum for each series using th
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs10" %}
+
+## Last value label
+
+The `lastValueLabel` in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
+
+### Enable last value label
+
+To show the last value label, make sure the `enable` property inside the `lastValueLabel` settings is set to `true` within the series configuration.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/last-value-label/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/last-value-label/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/last-value-label" %}
+
+>Note: To use last value label feature, we need to inject `LastValueLabelService` into the `@NgModule.providers`.
+
+### Customization in last label
+
+The appearance of the last value label can be customized using style properties such as `font`, `background`, `border`, `dashArray`, `lineWidth`, `lineColor`, `rx`, and `ry` in the lastValueLabel property of the chart series. These settings allow you to tailor the label’s look to align with your desired visual presentation.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/last-value-label-customization/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/last-value-label-customization/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/last-value-label-customization" %}
 
 ## See Also
 
