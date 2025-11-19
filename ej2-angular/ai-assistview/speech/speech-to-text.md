@@ -27,7 +27,7 @@ Before integrating `Speech-to-Text`, ensure the following:
 
 To enable Speech-to-Text functionality in the Angular AI AssistView component, update the `app.component.ts` file to incorporate the Web Speech API.
 
-The [SpeechToText](https://ej2.syncfusion.com/angular/documentation/speech-to-text/getting-started) component listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the AI AssistView’s editable footer using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/#footertemplate) with an `ng-template` directive to display the transcribed text. The transcribed text is then sent as a prompt to the Azure OpenAI service via the AI AssistView component.
+The [SpeechToText](https://ej2.syncfusion.com/angular/documentation/speech-to-text/getting-started) component listens to audio input from the deviceâ€™s microphone, transcribes spoken words into text, and updates the AI AssistViewâ€™s editable footer using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/#footertemplate) with an `ng-template` directive to display the transcribed text. The transcribed text is then sent as a prompt to the Azure OpenAI service via the AI AssistView component.
 
 ### Configuration Options
 
