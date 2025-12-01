@@ -22,6 +22,7 @@ To enable mail merge functionality, the Rich Text Editor toolbar is extended wit
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
 
 ```typescript
+{% raw %}
 
 @Component({
   imports: [
@@ -47,6 +48,7 @@ export class AppComponent {
     };
 }
 
+{% endraw %}
 ```
 
 ## Using DropDownButton for selecting placeholders
@@ -54,6 +56,7 @@ export class AppComponent {
 The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., {{FirstName}}) is inserted at the current cursor position using the `insertHTML` command.
 
 ```typescript
+{% raw %}
 
 @Component({
   imports: [
@@ -82,6 +85,7 @@ export class AppComponent {
         }
     }
 }
+{% endraw %}
 
 ```
 ## Populating merge fields using Mention
@@ -89,6 +93,7 @@ export class AppComponent {
 The **Mention** component provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
 
 ```typescript
+{% raw %}
 
 @Component({
   imports: [
@@ -121,6 +126,7 @@ export class AppComponent {
     ];
 
 }
+{% endraw %}
 
 ```
 
@@ -129,6 +135,7 @@ export class AppComponent {
 When the **Merge Data** button is clicked, the editor content is processed to replace all placeholders with actual values from the `placeholderData` object. This is done using a regular expression in the `replacePlaceholders()` function.
 
 ```typescript
+{% raw %}
 
 @Component({
   imports: [
@@ -168,7 +175,7 @@ export class AppComponent {
     }
 
 }
-
+{% endraw %}
 ```
 
 {% tabs %}
