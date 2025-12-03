@@ -1,0 +1,16 @@
+
+.e-gantt .e-leftfreeze.e-freezeleftborder {
+    border-right-color: rgb(0, 255, 0) !important;
+}
+
+.e-gantt .e-rightfreeze.e-freezerightborder {
+    border-left-color: rgb(0, 0, 255) !important;
+}
+
+.e-gantt .e-leftfreeze.e-freezeleftborder {
+    border-right-color: rgb(0, 255, 0) !important;
+}
+
+.e-gantt .e-rightfreeze.e-freezerightborder {
+    border-left-color: rgb(0, 0, 255) !important;
+}
