@@ -498,3 +498,53 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/remove-format-cs1" %}
+
+## Markdown Auto Format
+
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [enableMarkdownAutoFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablemarkdownautoformat) property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+
+By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
+
+|Commands|Syntax Example| Description |
+|--------|------------------------------------------|------------|
+| Bold | `**`Bold Text`**` or `__`Bold Text`__` | Makes text bold by wrapping it with `**` or `__`. |
+| Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*`or `_`. |
+| Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
+| Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
+| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
+| Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
+| Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
+| Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
+| Heading 4 | `####` Heading 4 | Creates an H2 heading by starting the line with `####` |
+| Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
+| Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
+| Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
+| Code block (Multi Line) | \`\`\`<br>Multi line code text<br>Multi line code text<br>\`\`\` | Creates a code block by starting the line with \`\`\` |
+| Ordered List | `1.` First<br>`1.` Second | Creates a numbered list by starting lines with `1.` or `i.`. |
+| Unordered List | `*` First<br> `*` second | Creates a bulleted list by starting lines with `*` or `-`. |
+| Check List | `[]` Task<br>`[x]` Completed Task | Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
+| Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
+
+
+### How Markdown auto-formatting works
+
+#### Inline Formats
+Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are converted **immediately after the closing marker is typed**.  
+**Example:** Typing `**bold**` will render as **bold** the moment you enter the second `*`.
+
+#### Block Formats
+Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
+**Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
+
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/markdown-autoformat-cs1" %}
