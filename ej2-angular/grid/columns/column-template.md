@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Column template in Angular Grid component
 
-The Syncfusion Angular Grid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
+The Syncfusion Angular Grid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
 
 > Template columns are designed for rendering custom content and do not support grid actions such as sorting, filtering, or editing unless the `field` property is defined to reference a valid data source field.
 
 ## Render image in a column
 
-To display an image in a grid column, the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property is used to define custom HTML content. The `template` property expects the HTML element or a function that returns the HTML element.
+To display an image in a grid column, the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property is used to define custom HTML content. The `template` property expects the HTML element or a function that returns the HTML element.
 
-The following example demonstrates how to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) for the **Employee Image** field that displays an image element. The `template` property is set to the HTML element that contains an image tag. You have utilized the `src` and `alt` attributes to an image tag. 
+The following example demonstrates how to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) for the **Employee Image** field that displays an image element. The `template` property is set to the HTML element that contains an image tag. You have utilized the `src` and `alt` attributes to an image tag. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,11 +61,11 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/template-cs1" %}
 
-> The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property supports any valid HTML content within a column. Ensure the `alt` attribute is descriptive for screen reader accessibility.
+> The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property supports any valid HTML content within a column. Ensure the `alt` attribute is descriptive for screen reader accessibility.
 
 ## Render hyperlink in a column
 
-The Syncfusion Angular Grid supports rendering hyperlinks in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This feature enables linking to external pages or triggering custom navigation logic.
+The Syncfusion Angular Grid supports rendering hyperlinks in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property. This feature enables linking to external pages or triggering custom navigation logic.
 
 The following example demonstrates rendering a hyperlink in the **FirstName** column using the `ng-template` directive with an `<a>` tag. Clicking the hyperlink triggers the `onClick` function to open a search URL.
 
@@ -121,15 +121,15 @@ export class AppComponent implements OnInit {
 
 ## Render other components in a column
 
-The Syncfusion Angular Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column.
+The Syncfusion Angular Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column.
 
-> To support grid actions like editing with custom components, configure the `editSettings` property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) for details.
+> To support grid actions like editing with custom components, configure the `editSettings` property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) for details.
 
 ### Render LineChart component in a column
 
 The Syncfusion [LineChart](https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started) component visualizes data trends using straight line segments. It can be rendered in a grid column to display data patterns.
 
-In the following example, the Sparkline Chart component is rendered within a Grid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+In the following example, the Sparkline Chart component is rendered within a Grid column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -211,7 +211,7 @@ export class AppComponent implements OnInit {
 
 The Syncfusion [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component provides access to a predefined palette and custom color selection, making it suitable for scenarios such as theme customization.
 
-The following example demonstrates rendering the ColorPicker component in a Grid column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+The following example demonstrates rendering the ColorPicker component in a Grid column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 ```
 <div>
@@ -235,7 +235,7 @@ The following example demonstrates rendering the ColorPicker component in a Grid
 
 The Syncfusion [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component can be rendered in a grid column to provide selectable options, such as order statuses.
 
-The following example demonstrates rendering the DropDownList component in the **Order Status** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+The following example demonstrates rendering the DropDownList component in the **Order Status** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 ```
 <div>
@@ -259,7 +259,7 @@ The following example demonstrates rendering the DropDownList component in the *
 
 The Syncfusion [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component can be rendered in a grid column to display data visually, such as tags or labels.
 
-The following example demonstrates rendering the Chips component in the **First Name** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+The following example demonstrates rendering the Chips component in the **First Name** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 ```
 <div>
@@ -281,13 +281,13 @@ The following example demonstrates rendering the Chips component in the **First 
 
 ### Render ProgressBar component in a column
 
-The Syncfusion Grid component supports rendering the [Progress Bar](https://ej2.syncfusion.com/angular/documentation/progressbar/getting-started) component within a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. Displaying the `ProgressBar` component within a Grid column provides a visual representation of task or operation progress associated with individual records. This feature is beneficial for scenarios involving data loading, task completion, or other progressive activities.
+The Syncfusion Grid component supports rendering the [Progress Bar](https://ej2.syncfusion.com/angular/documentation/progressbar/getting-started) component within a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property. Displaying the `ProgressBar` component within a Grid column provides a visual representation of task or operation progress associated with individual records. This feature is beneficial for scenarios involving data loading, task completion, or other progressive activities.
 
-The following example demonstrates rendering the ProgressBar component in the **Freight** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+The following example demonstrates rendering the ProgressBar component in the **Freight** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 ```
 <div>
-    <ejs-progressbar id='data.OrderID' type='Linear' height='60' 
+    <ejs-progressbar [id]='data.OrderID' type='Linear' height='60' 
     [value]='data.Freight' trackThickness=24 progressThickness='20'>
     </ejs-progressbar>
 </div>
@@ -308,7 +308,7 @@ The following example demonstrates rendering the ProgressBar component in the **
 
 The Syncfusion [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) component can be rendered in a grid column to display selection options, such as order statuses or approval choices.
 
-The following example demonstrates rendering RadioButton components in the **Order Status** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+The following example demonstrates rendering RadioButton components in the **Order Status** column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property.
 
 ```
     <div style="display: flex; flex-direction: column; align-items: start; gap: 8px;">
@@ -331,7 +331,7 @@ The following example demonstrates rendering RadioButton components in the **Ord
 
 ## Using conditional template
 
-The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property supports conditional rendering using Angular directives like `*ngIf`. This allows displaying different template elements based on data conditions. Complex conditional logic may impact rendering performance, so minimize DOM manipulation where possible.
+The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property supports conditional rendering using Angular directives like `*ngIf`. This allows displaying different template elements based on data conditions. Complex conditional logic may impact rendering performance, so minimize DOM manipulation where possible.
 
 The following example demonstrates using `*ngIf` within the `ng-template` directive to render a checkbox in the **Discontinued** column only when the `Discontinued` field is `true`.
 
@@ -363,7 +363,7 @@ The following example demonstrates using `*ngIf` within the `ng-template` direct
 
 ## How to get the row object by clicking on the template element
 
-The Syncfusion Angular Grid allows retrieving the row object of a selected record when clicking a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) element. This is useful for performing custom actions based on the selected record.
+The Syncfusion Angular Grid allows retrieving the row object of a selected record when clicking a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) element. This is useful for performing custom actions based on the selected record.
 
 In the following code, the button element is rendered in the **Employee Data** column and `click` event binding is used to call the showDetails method when the template element is clicked. The showDetails method is passed the data object as an argument, which allows you to access the selected row object and display it in the dialog popup.
 
@@ -434,11 +434,11 @@ export class AppComponent implements OnInit {
 
 ## Use custom helper inside the template
 
-The Syncfusion Grid allows you to use custom helpers inside the `ng-template` directive of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) syntax.
+The Syncfusion Grid allows you to use custom helpers inside the `ng-template` directive of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) syntax.
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 
-The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property, using the `ng-template` element for the Freight column.
+The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property, using the `ng-template` element for the Freight column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -491,7 +491,7 @@ The Syncfusion Grid supports the dynamic addition of template columns at runtime
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates adding a **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component using an external button click. The column includes a [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) to display an icon.
+The following example demonstrates adding a **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component using an external button click. The column includes a [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) to display an icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
