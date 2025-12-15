@@ -14,4 +14,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+    public currentUserModel: UserModel = { user: 'Albert', id: 'user1' };
 }

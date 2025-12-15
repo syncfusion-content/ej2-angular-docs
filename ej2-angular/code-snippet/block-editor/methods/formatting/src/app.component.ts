@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component, ViewChild } from '@angular/core';
 import { BlockEditorModule, BlockEditorComponent  } from "@syncfusion/ej2-angular-blockeditor";
-import { BlockModel, ContentType, BuiltInToolbar} from "@syncfusion/ej2-blockeditor";
+import { BlockModel, ContentType, CommandName} from "@syncfusion/ej2-blockeditor";
 
 @Component({
     imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
@@ -19,32 +19,29 @@ export class AppComponent {
     public output = '';
     public blocksData: BlockModel[] = [
         {
-            id: 'sample-heading',
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Formatting Demo'
                 }
             ]
         },
         {
-            id: 'sample-paragraph-1',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Select this text and apply different formatting options using the buttons below. You can make text bold or change colors for the text.'
                 }
             ]
         },
         {
-            id: 'sample-list',
-            type: 'BulletList',
+            blockType: 'BulletList',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'List item for formatting demonstration'
                 }
             ]
@@ -53,12 +50,12 @@ export class AppComponent {
 
     // Apply Bold Formatting
     public applyBold = () => {
-        this.blockEditorComponent.executeToolbarAction(BuiltInToolbar.Bold);
+        this.blockEditorComponent.executeToolbarAction(CommandName.Bold);
         this.displayOutput('Bold formatting applied to selected text');
     }
     // Apply Color Formatting
     public applyColor = () => {
-        this.blockEditorComponent.executeToolbarAction(BuiltInToolbar.Color, '#ff6b35');
+        this.blockEditorComponent.executeToolbarAction(CommandName.Color, '#ff6b35');
         this.displayOutput('Orange color (#ff6b35) applied to selected text');
     }
     // Enable Toolbar Items

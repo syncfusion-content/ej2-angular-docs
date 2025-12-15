@@ -1,4 +1,4 @@
-import { NgModule, ViewChild } from '@angular/core'
+import { NgModule} from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule,VirtualScrollService } from '@syncfusion/ej2-angular-treegrid'
 
@@ -13,7 +13,7 @@ import { TreeGridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angul
     standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #Treegrid [dataSource]='data' [treeColumnIndex]='1' [enableVirtualization]=true height='600'  idMapping='TaskID' parentIdMapping='ParentID' 
-                [selectionSettings]='selectionSettings' [isRowSelectable]='isRowSelectable>
+                [selectionSettings]='selectionSettings' [isRowSelectable]='isRowSelectable'>
                     <e-columns>
                         <e-column type="checkbox" width=90></e-column>
                         <e-column field='Task'  headerText='Task'  width=300></e-column>

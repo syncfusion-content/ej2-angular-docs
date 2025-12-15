@@ -74,15 +74,15 @@ Use the following CSS to customize the TreeView nodes based on levels.
 
 ```css
 .e-treeview .e-level-2 > .e-text-content { 
-        border: 1px solid black; 
-        background: #ffe800b5 !important;
+     background: #E6F4FF;
+     border: 1px solid #99C9FF;
 } 
 ```
 ![Customizing the TreeView nodes based on levels](./images/customize-based-on-level.png)
 
 ## Customizing the TreeView using HtmlAttributes
 
-The [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#htmlattributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
+The [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldssettingsmodel#htmlattributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
 
 By using attributes, you can customize specific nodes effectively. For instance, in the given example, a 'child-node' class is added to a specific node, allowing you to customize the corresponding node via CSS.
 

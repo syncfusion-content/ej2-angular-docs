@@ -1,5 +1,5 @@
 <div id="container">
-    <div id="blockeditor" #blockEditorComponent ejs-blockeditor [blocks]="blocksData" [cssClass]="currentTheme" [readOnly]="isReadonly" (focus)="onEditorFocus()" (blur)="onEditorBlur()"></div>
+    <ejs-blockeditor id="blockeditor" #blockEditorComponent [blocks]="blocksData" [cssClass]="currentTheme" [readOnly]="isReadonly" (focus)="onEditorFocus()" (blur)="onEditorBlur()" />
     <div id="controls">
         <h3>Appearance Configuration Demo</h3>
         <div class="button-group">

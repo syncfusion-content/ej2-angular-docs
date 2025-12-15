@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
-You can configure the paste behavior using the [pasteSettings](../api/blockeditor/#pastesettings) property, which allows you to define how content is handled when pasted into the editor.
+You can configure the paste behavior using the [pasteCleanupSettings](../api/blockeditor#pastecleanupsettings) property, which allows you to define how content is handled when pasted into the editor.
 
 ## Configuring allowed styles
 
-The [allowedStyles](../api/blockeditor/pasteSettingsModel/#allowedstyles) property lets you define which CSS styles are permitted in pasted content. Any style not in this list is stripped out, ensuring that only desired visual attributes are preserved.
+The [allowedStyles](../api/blockeditor/pasteCleanupSettingsModel#allowedstyles) property lets you define which CSS styles are permitted in pasted content. Any style not in this list is stripped out, ensuring that only desired visual attributes are preserved.
 
 By default, the following styles are allowed:
 
@@ -34,12 +34,12 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
     <div class="container" style="width: 40px; margin: 50px auto;">
-        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
     </div>`
 })
 
 export class AppComponent {
-    pasteSettings: {
+    pasteCleanupSettings: {
         allowedStyles: ['font-weight', 'font-style']
     }
 }
@@ -47,7 +47,7 @@ export class AppComponent {
 
 ## Setting denied tags
 
-The [deniedTags](../api/blockeditor/pasteSettingsModel/#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
+The [deniedTags](../api/blockeditor/pasteCleanupSettingsModel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
 
 In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
 
@@ -61,12 +61,12 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
     <div class="container" style="width: 40px; margin: 50px auto;">
-        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
     </div>`
 })
 
 export class AppComponent {
-    pasteSettings: {
+    pasteCleanupSettings: {
         deniedTags: ['script', 'iframe']
     }
 }
@@ -91,7 +91,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 ## Disable Keep format
 
-By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](../api/blockeditor/pasteSettingsModel/#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
+By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](../api/blockeditor/pasteCleanupSettingsModel#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
@@ -103,12 +103,12 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
     <div class="container" style="width: 40px; margin: 50px auto;">
-        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
     </div>`
 })
 
 export class AppComponent {
-    pasteSettings: {
+    pasteCleanupSettings: {
         keepFormat: false
     }
 }
@@ -116,7 +116,7 @@ export class AppComponent {
 
 ## Allowing plain text
 
-To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](../api/blockeditor/pasteSettingsModel/#plaintext) property to `true` in [pasteSettings](../api/blockeditor/#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](../api/blockeditor/pasteCleanupSettingsModel#plaintext) property to `true` in [pasteCleanupSettings](../api/blockeditor#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
@@ -128,12 +128,12 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
     <div class="container" style="width: 40px; margin: 50px auto;">
-        <div ejs-blockeditor [pasteSettings]="pasteSettings" ></div>
+        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
     </div>`
 })
 
 export class AppComponent {
-    pasteSettings: {
+    pasteCleanupSettings: {
         plainText: true
     }
 }
@@ -162,7 +162,15 @@ The Block Editor provides events to monitor and interact with the paste action.
 
 |Name|Args|Description|
 |---|---|---|
-|[beforePaste](../api/blockeditor/#beforepaste)|BeforePasteEventArgs|Triggers before the content is pasted into the editor.|
-|[afterPaste](../api/blockeditor/#afterpaste)|AfterPasteEventArgs|Triggers after the content is pasted into the editor.|
+|[beforePasteCleanup](../api/blockeditor#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
+|[afterPasteCleanup](../api/blockeditor#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
 
-Below example demonstrates how to configure above events in the editor.
+Below snippet demonstrates how to configure above events in the editor.
+
+```typescript
+<ejs-blockeditor (beforePasteCleanup)="onBeforePasteCleanup()" />
+```
+
+```typescript
+<ejs-blockeditor (afterPasteCleanup)="onAfterPasteCleanup()" />
+```
