@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
-import { BlockActionMenuOpenEventArgs, BlockActionMenuCloseEventArgs, BlockActionItemClickEventArgs } from '@syncfusion/ej2-blockeditor';
+import { BlockActionMenuOpeningEventArgs, BlockActionMenuClosingEventArgs, BlockActionItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
 
 @Component({
     imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
@@ -17,29 +17,27 @@ import { BlockActionMenuOpenEventArgs, BlockActionMenuCloseEventArgs, BlockActio
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            id: 'title-block',
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Block Action Menu Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Quote',
+            blockType: 'Quote',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Hover over any block and click the drag handle icon to see custom actions.'
                 }
             ]
         }
     ];
     // Block Action Menu Configuration
-    public blockActionsMenu = {
+    public blockActionMenuSettings = {
         enable: true,
         popupWidth: '180px',
         popupHeight: '110px',
@@ -64,13 +62,13 @@ export class AppComponent {
                 tooltip: 'Show block information'
             }
         ],
-        open: (args: BlockActionMenuOpenEventArgs) => {
+        opening: (args: BlockActionMenuOpeningEventArgs) => {
             // Your actions here
         },
-        close: (args: BlockActionMenuCloseEventArgs) => {
+        closing: (args: BlockActionMenuClosingEventArgs) => {
             // Your actions here
         },
-        itemClick: (args: BlockActionItemClickEventArgs) => {
+        itemSelect: (args: BlockActionItemSelectEventArgs) => {
             // Handle custom block actions
         }
     }

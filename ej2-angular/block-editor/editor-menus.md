@@ -24,17 +24,14 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 -   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type.
 -   **Paragraph**: Inserts a standard text block.
 -   **Image**: Inserts a media block for images.
+-   **Table**: Inserts a table block.
 -   **Toggle**: Creates a collapsible content block.
 -   **Callout**: Inserts a block for highlighting important information.
 -   **Utility (Divider, Quote, Code)**: Inserts a utility block like a divider, quote, or code block.
 
 ### Customize Slash command menu
 
-You can use the [commandMenu](../api/blockeditor/#commandmenu) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
-
-#### Show or hide tooltip
-
-By default, a tooltip is displayed when the user hovers over a command item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/commandMenuSettingsModel/#enabletooltip) property on the command menu settings.
+You can use the [commandMenuSettings](../api/blockeditor#commandmenusettings) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
 
 ### Events
 
@@ -42,10 +39,8 @@ The following events are available for the Slash Command menu:
 
 |Name|Args|Description|
 |---|---|---|
-|[open](../api/blockeditor/commandMenuSettingsModel/#open)|CommandMenuOpenEventArgs|Triggers when the command menu is opened.|
-|[close](../api/blockeditor/commandMenuSettingsModel/#close)|CommandMenuCloseEventArgs|Triggers when the command menu is closed.|
-|[queryFiltering](../api/blockeditor/commandMenuSettingsModel/#queryfiltering)|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
-|[itemClicked](../api/blockeditor/commandMenuSettingsModel/#itemclicked)|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
+|[filtering](../api/blockeditor/commandMenuSettingsModel#filtering)|CommandFilteringEventArgs|Triggers when the user types to filter the command menu items.|
+|[itemSelect](../api/blockeditor/commandMenuSettingsModel#itemselect)|CommandItemSelectEventArgs|Triggers when the user clicks on a command menu item.|
 
 The following example demonstrates how to customize the Slash Command menu.
 
@@ -79,7 +74,7 @@ The Context menu offers the following built-in options:
 
 ### Customize Context menu
 
-You can use the [contextMenu](../api/blockeditor/#contextmenu) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
+You can use the [contextMenuSettings](../api/blockeditor#contextmenusettings) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
 
 ### Events
 
@@ -87,11 +82,9 @@ The following events are available for the Context menu:
 
 |Name|Args|Description|
 |---|---|---|
-|[beforeOpen](../api/blockeditor/contextMenuSettingsModel/#beforeopen)|ContextMenuBeforeOpenEventArgs|Triggers before the context menu opens.|
-|[open](../api/blockeditor/contextMenuSettingsModel/#open)|ContextMenuOpenEventArgs|Triggers when the context menu is opened.|
-|[beforeClose](../api/blockeditor/contextMenuSettingsModel/#beforeclose)|ContextMenuBeforeCloseEventArgs|Triggers before the context menu closes.|
-|[close](../api/blockeditor/contextMenuSettingsModel/#close)|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
-|[itemClick](../api/blockeditor/contextMenuSettingsModel/#itemclick)|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
+|[opening](../api/blockeditor/contextMenuSettingsModel#opening)|ContextMenuOpeningEventArgs|Triggers before the context menu opens.|
+|[closing](../api/blockeditor/contextMenuSettingsModel#closing)|ContextMenuClosingEventArgs|Triggers before the context menu closes.|
+|[itemSelect](../api/blockeditor/contextMenuSettingsModel#itemselect)|ContextMenuItemSelectEventArgs|Triggers when a context menu item is clicked.|
 
 The following example demonstrates how to customize the Context menu.
 
@@ -125,11 +118,11 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can use the [blockActionsMenu](../api/blockeditor/#blockactionsmenu) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
+You can use the [blockActionMenuSettings](../api/blockeditor#blockactionmenusettings) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
 
 #### Show or hide tooltip
 
-By default, a tooltip is displayed when the user hovers over an action item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/blockActionMenuSettingsModel/#enabletooltip) property in the block action menu settings.
+By default, a tooltip is displayed when the user hovers over an action item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/blockActionMenuSettingsModel#enabletooltip) property in the block action menu settings.
 
 ### Events
 
@@ -137,9 +130,9 @@ The following events are available for the Block action menu:
 
 |Name|Args|Description|
 |---|---|---|
-|[open](../api/blockeditor/blockActionMenuSettingsModel/#open)|BlockActionMenuOpenEventArgs|Triggers when the block action menu is opened.|
-|[close](../api/blockeditor/blockActionMenuSettingsModel/#close)|BlockActionMenuCloseEventArgs|Triggers when the block action menu is closed.|
-|[itemClick](../api/blockeditor/blockActionMenuSettingsModel/#itemClick)|BlockActionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
+|[opening](../api/blockeditor/blockActionMenuSettingsModel#opening)|BlockActionMenuOpeningEventArgs|Triggers when the block action menu is opened.|
+|[closing](../api/blockeditor/blockActionMenuSettingsModel#closing)|BlockActionMenuClosingEventArgs|Triggers when the block action menu is closed.|
+|[itemSelect](../api/blockeditor/blockActionMenuSettingsModel#itemselect)|BlockActionItemSelectEventArgs|Triggers when a block action menu item is clicked.|
 
 The following example demonstrates how to customize the Block action menu.
 
@@ -160,7 +153,7 @@ The following example demonstrates how to customize the Block action menu.
 
 ## Inline Toolbar
 
-The Inline Toolbar appears when text is selected in the editor, providing quick access to common text formatting actions that apply to inline content.
+The Inline Toolbar appears when a text is selected in the editor, providing quick access to common text formatting actions that apply to inline content.
 
 ### Built-in items
 
@@ -174,11 +167,7 @@ The Inline Toolbar includes the following built-in formatting options:
 
 ### Customize Inline Toolbar
 
-You can use the [inlineToolbar](../api/blockeditor/#inlinetoolbar) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs.
-
-#### Show or hide tooltip
-
-By default, a tooltip is displayed when the user hovers over a toolbar item. You can show or hide this tooltip using the [enableTooltip](../api/blockeditor/inlineToolbarSettingsModel/#enabletooltip) property in the inline toolbar settings.
+You can use the [inlineToolbarSettings](../api/blockeditor#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs.
 
 ### Events
 
@@ -186,9 +175,7 @@ The following events are available for the Inline Toolbar:
 
 |Name|Args|Description|
 |---|---|---|
-|[open](../api/blockeditor/inlineToolbarSettingsModel/#open)|ToolbarOpenEventArgs|Triggers when the inline toolbar is opened.|
-|[close](../api/blockeditor/inlineToolbarSettingsModel/#close)|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
-|[itemClicked](../api/blockeditor/inlineToolbarSettingsModel/#itemclicked)|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
+|[itemClick](../api/blockeditor/inlineToolbarSettingsModel#itemclick)|ToolbarItemClickEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
 The following example demonstrates how to customize the Inline Toolbar.
 

@@ -14,14 +14,17 @@ export class AppComponent {
         items: ['LineHeight']
     };
     public lineHeight = {
-        default: '12pt',
+        default: '2',
         items: [
-        { text: '8', value: '8pt' },
-        { text: '10', value: '10pt' },
-        { text: '12', value: '12pt' },
-        { text: '14', value: '14pt' },
-        { text: '42', value: '42pt' }
-    ],
+            { text: '1', value: '1' },
+            { text: '1.15', value: '1.15' },
+            { text: '1.5', value: '1.5' },
+            { text: '2', value: '2' },
+            { text: '2.5', value: '2.5' },
+            { text: '3', value: '3' },
+            { text: '3.5', value: '3.5' },
+            { text: '4', value: '4' },
+        ],
         supportAllValues: true
     }
 }
