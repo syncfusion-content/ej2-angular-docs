@@ -27,7 +27,7 @@ In the following example, Employee **Davolio** is scheduled for analysis from "9
 
 ## Change the border color while column spanning
 
-The border color for the spanned cells can be changed by using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event. This event triggers before the cell element is appended to the TreeGrid element, allowing customization of the cell appearance including border styles.
+The border color for the spanned cells can be changed by using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#querycellinfo) event. This event triggers before the cell element is appended to the TreeGrid element, allowing customization of the cell appearance including border styles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,20 +44,18 @@ The border color for the spanned cells can be changed by using the [queryCellInf
 
 Column spanning in the TreeGrid has the following limitations:
 
-* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updatecell) method does not support column spanning.
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#updatecell) method does not support column spanning.
 * Column spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
 
 > When using column spanning, ensure that the spanned cells do not interfere with TreeGrid operations such as sorting, filtering, or editing, as this may lead to unexpected behavior.
 
-## column spanning using enableColumnSpan property    
+## Column spanning implementation through API
 
-The Syncfusion Angular TreeGrid introduces a simplified approach to horizontally merge cells with identical values in the same row across adjacent columns.
+The Syncfusion Angular TreeGrid provides an API-based approach to horizontally merge cells with identical values in the same row across adjacent columns.
 
-The column spanning feature in the Syncfusion TreeGrid can be enabled using `enableColumnSpan` property which significantly enhances readability and delivers a clean, professional look by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
-
-To enable column spanning, set the `enableColumnSpan` property to **true** in the TreeGrid configuration.
+The column spanning feature in the Syncfusion Angular TreeGrid can be enabled using `enableColumnSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

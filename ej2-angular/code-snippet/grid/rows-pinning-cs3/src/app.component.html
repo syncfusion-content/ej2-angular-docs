@@ -1,0 +1,12 @@
+<div>
+  <ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
+      <e-columns>
+        <e-column type="checkbox" width="70"></e-column>             
+        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
+        <e-column field="Status" headerText="Status" width="100"></e-column>
+        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
+        <e-column field="Priority" headerText="Priority" width="100"></e-column>
+      </e-columns>
+  </ejs-grid>
+</div>
+  

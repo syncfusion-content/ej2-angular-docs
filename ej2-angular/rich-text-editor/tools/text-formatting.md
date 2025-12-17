@@ -551,7 +551,7 @@ By default, Markdown Auto-Format is enabled. The editor supports both inline for
 | Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*`or `_`. |
 | Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
 | Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
-| Inline Code (Single line) | <code>\`</code>Inline Code<code>\`</code> | Displays inline code by wrapping text with \`. |
+| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
 | Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
 | Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
 | Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
@@ -559,10 +559,10 @@ By default, Markdown Auto-Format is enabled. The editor supports both inline for
 | Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
 | Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
 | Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
-| Code block (Multi Line) |<code>\`\`\`</code> <br>Multi line code text<br>Multi line code text<br><code>\`\`\`</code> | Creates a code block by starting the line with <code>\`\`\`</code> |
-| Ordered List | `1.` First<br>`1.` Second | Creates a numbered list by starting lines with `1.` or `i.`. |
-| Unordered List | `*` First<br> `*` second | Creates a bulleted list by starting lines with `*` or `-`. |
-| Check List | `[]` Task<br>`[x]` Completed Task | Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
+| Code block (Multi Line) |\`\`\` Multi line code text | Creates a code block by starting the line with \`\`\` |
+| Ordered List | `1.` First| Creates a numbered list by starting lines with `1.` or `i.`. |
+| Unordered List | `*` First| Creates a bulleted list by starting lines with `*` or `-`. |
+| Check List | `[]` Task| Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
 | Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
 
 
