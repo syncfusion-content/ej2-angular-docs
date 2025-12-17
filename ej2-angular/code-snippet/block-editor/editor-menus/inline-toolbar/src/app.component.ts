@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
-import { BlockModel, ContentType, BuiltInToolbar, ToolbarCloseEventArgs, ToolbarItemClickedEventArgs, ToolbarItemModel, ToolbarOpenEventArgs } from "@syncfusion/ej2-blockeditor";
+import { BlockModel, ContentType, CommandName, ToolbarItemClickEventArgs } from "@syncfusion/ej2-blockeditor";
 
 @Component({
     imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
@@ -16,47 +16,32 @@ import { BlockModel, ContentType, BuiltInToolbar, ToolbarCloseEventArgs, Toolbar
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            id: 'title-block',
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Inline Toolbar Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Quote',
+            blockType: 'Quote',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Select any text in the editor to open the Inline Toolbar'
                 }
             ]
         }
     ];
-
-    customToolbarItems: ToolbarItemModel[] = [
-        { id: 'clear', iconCss: 'e-icons e-format-painter', item: BuiltInToolbar.Custom, tooltip: 'Format Painter' },
-        { id: 'highlight', iconCss: 'e-icons e-highlight', item: BuiltInToolbar.Custom, tooltip: 'Highlight' },
-    ];
-
-    public inlineToolbar = {
-        width: '80px',
+    customToolbarItems = [ 'Bold', 'Italic' ];
+    public inlineToolbarSettings = {
+        popupWidth: '100px',
         enable: true,
         items: this.customToolbarItems,
-        enableTooltip: true,
-        open: (args: ToolbarOpenEventArgs) => {
-            // Your actions here
-        },
-        close: (args: ToolbarCloseEventArgs) => {
-            // Your actions here
-        },
-        itemClicked: (args: ToolbarItemClickedEventArgs) => {
+        itemClick: (args: ToolbarItemClickEventArgs) => {
             // Handle custom actions here
         }
     }
-
 }

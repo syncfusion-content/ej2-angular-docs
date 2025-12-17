@@ -14,31 +14,31 @@ The Block Editor component provides several properties to customize its visual a
 
 ## Setting width and height
 
-You can specify the width and height for the Block Editor component using the [width](../api/blockeditor/#width) and [height](../api/blockeditor/#height) properties.
+You can specify the width and height for the Block Editor component using the [width](../api/blockeditor#width) and [height](../api/blockeditor#height) properties.
 
 ```typescript
-<div ejs-blockeditor [width]="'100%'" [height]="'80vh'"></div>
+<ejs-blockeditor [width]="'100%'" [height]="'80vh'" />
 
 // Or with specific pixel values
-<div ejs-blockeditor [width]="'800px'" [height]="'500px'"></div>
+<ejs-blockeditor [width]="'800px'" [height]="'500px'" />
 ```
 
 ## Setting readonly mode
 
-You can utilize the [readonly](../api/blockeditor/#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+You can utilize the [readOnly](../api/blockeditor#readOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
 ```typescript
-<div ejs-blockeditor [readonly]="true"></div>
+<ejs-blockeditor [readOnly]="true" />
 ```
 
 ## Customization using CSS Class
 
-You can use the [cssClass](../api/blockeditor/#cssclass) property to customize the appearance of the Block Editor control.
+You can use the [cssClass](../api/blockeditor#cssClass) property to customize the appearance of the Block Editor control.
 
 ```typescript
-<div ejs-blockeditor [width]="'600px'" [height]="'400px'" [cssClass]="'custom-editor-theme'"></div>
+<ejs-blockeditor [width]="'600px'" [height]="'400px'" [cssClass]="'custom-editor-theme'" />
 ```
-The following example demonstrates the usage of `readonly` and `cssClass` properties of the Block Editor.
+The following example demonstrates the usage of `readOnly` and `cssClass` properties of the Block Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Smart axis labels
 
-When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelintersectaction) property in the axis, to place them smartly.
+When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelintersectaction) property in the axis, to place them smartly.
 
 When setting `labelIntersectAction` as `Hide`
 
@@ -168,7 +168,7 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
 ## Edge label placement
 
 Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#edgelabelplacement) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
+use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#edgelabelplacement) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api
 
 ## Trim using maximum label width
 
-You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#enabletrim) property and width of the labels can also be customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#maximumlabelwidth) property in the axis, the value maximum label width is `34` by default.
+You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#enabletrim) property and width of the labels can also be customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabelwidth) property in the axis, the value maximum label width is `34` by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,7 +200,7 @@ You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/d
 
 ## Labels customization
 
-The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
+The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
 
 To known more about labels customization, you can check on this video:
 
@@ -281,6 +281,22 @@ Line break feature used to customize the long axis label text into multiple line
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs20" %}
+
+## Axis label template
+
+The axis label template allows you to customize axis labels by formatting them with HTML content, applying conditional styling, and including dynamic elements such as icons, images or additional data. This customization is enabled by setting the template content in the [labelTemplate](https://ej2.syncfusion.com/angular/documentation/api/chart/axismodel#labelTemplate) property of the `AxisModel`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/axis/category-cs54/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/axis/category-cs54/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/axis/category-cs54" %}
 
 ## See Also
 

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule } from '@syncfusion/ej2-angular-interactive-chat';
 import { UserModel, TypingEventArgs } from '@syncfusion/ej2-interactive-chat';
-
 import { Component } from '@angular/core';
 
 

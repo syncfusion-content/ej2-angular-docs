@@ -22,53 +22,48 @@ export class AppComponent {
     currentTheme = 'default';
     public blocksData: BlockModel[] = [
         {
-            id: 'title-block',
-            type: 'Heading',
-            props: { level: 1 },
+            blockType: 'Heading',
+            properties: { level: 1 },
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Appearance Configuration Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'This demo showcases different appearance configurations including readonly mode and a custom CSS theme.'
                 }
             ]
         },
         {
-            id: 'features-heading',
-            type: 'Heading',
-            props: { level: 2 },
+            blockType: 'Heading',
+            properties: { level: 2 },
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Configured Custom Theme'
                 }
             ]
         },
         {
-            id: 'theme-list-1',
-            type: 'BulletList',
+            blockType: 'BulletList',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Gradient background with modern styling'
                 }
             ]
         },
         {
-            id: 'readonly-info',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Use the readonly toggle to switch between editable and read-only modes. In readonly mode, you can view content but cannot make changes.'
                 }
             ]

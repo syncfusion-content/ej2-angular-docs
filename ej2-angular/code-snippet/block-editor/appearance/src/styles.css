@@ -82,8 +82,8 @@
     transition: all 0.3s ease;
 }
 
-.custom-theme .e-block-content {
-    color: #2d3748;
+.custom-theme .e-block-content, .custom-theme .e-floating-icon {
+    color: #fff;
     font-weight: 500;
 }
 

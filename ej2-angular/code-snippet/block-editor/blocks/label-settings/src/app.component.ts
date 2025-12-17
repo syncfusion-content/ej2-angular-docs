@@ -16,98 +16,98 @@ import { BlockModel, ContentType, LabelSettingsModel } from "@syncfusion/ej2-blo
 export class AppComponent {
     public labelSettings: LabelSettingsModel = {
         triggerChar: '#',
-        labelItems: [
-            { id: 'bug', text: 'Bug', labelColor: '#ff5252', groupHeader: 'Status' },
-            { id: 'task', text: 'Task', labelColor: '#90caf9', groupHeader: 'Status' },
-            { id: 'feature', text: 'Feature', labelColor: '#81c784', groupHeader: 'Status' },
-            { id: 'enhancement', text: 'Enhancement', labelColor: '#ba68c8', groupHeader: 'Status' },
+        items: [
+            { id: 'bug', text: 'Bug', labelColor: '#ff5252', groupBy: 'Status' },
+            { id: 'task', text: 'Task', labelColor: '#90caf9', groupBy: 'Status' },
+            { id: 'feature', text: 'Feature', labelColor: '#81c784', groupBy: 'Status' },
+            { id: 'enhancement', text: 'Enhancement', labelColor: '#ba68c8', groupBy: 'Status' },
             
-            { id: 'low', text: 'Low Priority', labelColor: '#c5e1a5', groupHeader: 'Priority' },
-            { id: 'medium', text: 'Medium Priority', labelColor: '#fff59d', groupHeader: 'Priority' },
-            { id: 'high', text: 'High Priority', labelColor: '#ffab91', groupHeader: 'Priority' },
-            { id: 'critical', text: 'Critical', labelColor: '#ef9a9a', groupHeader: 'Priority' }
+            { id: 'low', text: 'Low Priority', labelColor: '#c5e1a5', groupBy: 'Priority' },
+            { id: 'medium', text: 'Medium Priority', labelColor: '#fff59d', groupBy: 'Priority' },
+            { id: 'high', text: 'High Priority', labelColor: '#ffab91', groupBy: 'Priority' },
+            { id: 'critical', text: 'Critical', labelColor: '#ef9a9a', groupBy: 'Priority' }
         ]
     };
     public blocksData: BlockModel[] = [
         {
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Project Planning with Custom Labels'
                 }
             ]
         },
         {
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Type # to add status labels to your tasks.'
                 }
             ]
         },
         {
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Fix homepage layout issue - '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { labelId: 'bug'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'bug'}
                 },
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: ' '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { labelId: 'high'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'high'}
                 }
             ]
         },
         {
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Update user documentation - '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { labelId: 'task'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'task'}
                 },
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: ' '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { lableId: 'medium'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'medium'}
                 }
             ]
         },
         {
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Implement payment gateway - '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { labelId: 'feature'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'feature'}
                 },
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: ' '
                 },
                 {
-                    type: ContentType.Label,
-                    props: { labelId: 'critical'}
+                    contentType: ContentType.Label,
+                    properties: { labelId: 'critical'}
                 }
             ]
         }

@@ -20,42 +20,42 @@ export class AppComponent {
     public blocksData: BlockModel[] = [
         {
             id: 'heading-block',
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Welcome to Block Editor'
                 }
             ]
         },
         {
             id: 'paragraph-1',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
                     id: 'paragraph1-content',
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'This is the first paragraph with some sample text content for selection demonstration.'
                 }
             ]
         },
         {
             id: 'paragraph-2',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'This is the second paragraph that can be used for various selection operations.'
                 }
             ]
         },
         {
             id: 'list-block',
-            type: 'BulletList',
+            blockType: 'BulletList',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'First list item'
                 }
             ]
@@ -78,7 +78,7 @@ export class AppComponent {
         const selectedBlocks = this.blockEditorComponent.getSelectedBlocks();
         if (selectedBlocks && selectedBlocks.length > 0) {
             const blockInfo = selectedBlocks.map((block: BlockModel) => 
-                `ID: ${block.id}, Type: ${block.type}`
+                `ID: ${block.id}, Type: ${block.blockType}`
             ).join('\n');
             this.displayOutput(`Selected blocks (${selectedBlocks.length}):\n${blockInfo}`);
         } else {

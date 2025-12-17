@@ -12,18 +12,11 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" (created)="onCreated()">
-        <e-messages>
-            <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel" ></e-message>
-            <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
-            <e-message text="I’ll review it and send feedback by today." [author]="currentUserModel"></e-message>
-        </e-messages>
-    </div>`
+    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" (created)="onCreated()"></div>`
 })
 
 export class AppComponent {
     public currentUserModel: UserModel = { user: 'Albert', id: 'user1' };
-    public michaleUserModel: UserModel = { user: 'Michale Suyama', id: 'user2' };
 
     public onCreated = () => {
         // Your required action here

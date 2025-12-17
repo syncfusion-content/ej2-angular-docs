@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Blocks in Angular Block Editor component
 
-The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](../api/blockeditor/#blocks) property.
+The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](../api/blockeditor#blocks) property.
 
 ## Blocks
 
-Blocks are the core building elements of the editor, where each block represents a distinct content unit, such as a `paragraph`, `heading`, `list`, or specialized content like a `code snippet` or `image`. This block-based architecture makes it easy for users to rearrange, format, and manage discrete pieces of content independently.
+Blocks are the core building elements of the editor, where each block represents a distinct content unit, such as a `Paragraph`, `Heading`, `List`, or specialized content like a `Code Snippet` or `Image`. This block-based architecture makes it easy for users to rearrange, format, and manage discrete pieces of content independently.
 
-You can configure blocks with various properties such as [id](../api/blockeditor/blockModel/#id), [type](../api/blockeditor/blockModel/#type), [content](../api/blockeditor/blockModel/#content), and [children](../api/blockeditor/blockModel/#children) to create a rich, structured editor.
+You can configure blocks with various properties such as [id](../api/blockeditor/blockModel#id), [blockType](../api/blockeditor/blockModel#blockType), [content](../api/blockeditor/blockModel#content) to create a rich and structured editor.
 
 ## Block types
 
@@ -26,6 +26,7 @@ The Block Editor supports multiple block types, each offering different formatti
 |-----------------------------------------|-----------------------------------------------------------------------------|
 | Paragraph                               | Default block type for regular text content.                                |
 | Heading1 to Heading4                    | Different levels of headings for document structure.                        |
+| Table                                   | Block for displaying data in a tabular format with rows and columns.        |
 | Checklist                               | Interactive to-do lists with checkable items.                               |
 | BulletList                              | Unordered lists with bullet points.                                         |
 | NumberedList                            | Ordered lists with sequential numbering.                                    |
@@ -39,9 +40,9 @@ The Block Editor supports multiple block types, each offering different formatti
 
 ## Configure indent
 
-You can specify the indentation level of a block using the [indent](../api/blockeditor/blockModel/#indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
+You can specify the indentation level of a block using the [indent](../api/blockeditor/blockModel#indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
 
-By default, the [indent](../api/blockeditor/blockModel/#indent) property is set to `0`.
+By default, the [indent](../api/blockeditor/blockModel#indent) property is set to `0`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +61,7 @@ By default, the [indent](../api/blockeditor/blockModel/#indent) property is set 
 
 ## Configure CSS Class
 
-You can apply custom styling to individual blocks using the [cssClass](../api/blockeditor/blockModel/#cssclass) property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [cssClass](../api/blockeditor/blockModel#cssclass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
@@ -84,7 +85,7 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 
 ## Configure templates
 
-The Block Editor allows you to use custom templates for specialized content using the [template](../api/blockeditor/blockModel/#template) property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the [template](../api/blockeditor/blockModel#template) property. Templates can be defined as strings, functions, or HTML elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

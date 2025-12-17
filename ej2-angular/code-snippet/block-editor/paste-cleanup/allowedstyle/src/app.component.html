@@ -1,5 +1,5 @@
 <div id="container">
-    <div id="blockeditor" ejs-blockeditor [blocks]="blockData" [pasteSettings]="pasteSettings" (afterPaste)="handleAfterPaste($event)"></div>
+    <ejs-blockeditor id="blockeditor" [blocks]="blockData" [pasteCleanupSettings]="pasteCleanupSettings" (afterPasteCleanup)="handleAfterPaste($event)" />
     <div id="controls">
         <h4>Test Content to Copy and Paste:</h4>
         <div class="test-content">
