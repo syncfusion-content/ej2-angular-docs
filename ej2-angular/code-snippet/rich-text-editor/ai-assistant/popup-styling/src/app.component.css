@@ -1,0 +1,45 @@
+.e-rte-aiquery-popup.processing {
+    padding:2px;
+    color: white;
+    background: white;
+    z-index: 1;
+}
+
+.e-rte-aiquery-popup.processing::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff0080);
+    background-size: 600% 600%;
+    border-radius: 10px;
+    animation: gradient-animation 8s ease infinite;
+}
+
+.e-rte-aiquery-popup.processing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:white;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

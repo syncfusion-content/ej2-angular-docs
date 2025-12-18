@@ -1,0 +1,15 @@
+<ejs-richtexteditor #editor [toolbarSettings]="toolbarSettings" (aiAssistantPromptRequest)="onPromptRequest($event)">
+    <ng-template #valueTemplate>
+        <p>Dear valued costumer,</p>
+        <p>We are writting to inform you that there has been a recent change to our policy’s which may effect your account. Please take a moment to review the detials below carefuly.</p>
+        <p>Starting from next monday, all user must update there personal information before accessing the system. Failure to do so may result in temporary suspension of you’re account, and loss of acces to certain feature.</p>
+        <p>If you have any question or concern, feel free to contact our support team at <a href="mailto:support&#64;companyname.com">support&#64;companyname.com</a> they are avalible 24/7 and happy help.</p>
+        <p>Thank you for you’re time and coorperation. We appologize for any inconvenient this may cause.</p>
+        <p>Best Regard,</p>
+        <p>Customer Support Team</p>
+        <p>Company Name</p>
+    </ng-template>
+</ejs-richtexteditor>
+
+<br>
+<button class="e-btn e-primary" (click)="reviewContent()"><span class="e-icons e-btn-icon e-check-large"></span>Proof read</button>
