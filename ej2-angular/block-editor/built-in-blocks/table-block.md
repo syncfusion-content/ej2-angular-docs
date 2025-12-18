@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Table Blocks in Angular Block Editor component
 
-The Syncfusion Block Editor allows you to render structured data in rows and columns by setting the block's [blockType](../api/blockeditor/blockModel#blockType) property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property.
+The Syncfusion Block Editor allows you to render structured data in rows and columns by setting the block's [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Table](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property.
 
 ### Configure Table Block
 
-For Table blocks, you can configure layout and structure using the [properties](../api/blockeditor/blockModel#properties) property. This property supports the following options:
+For Table blocks, you can configure layout and structure using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property. This property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|

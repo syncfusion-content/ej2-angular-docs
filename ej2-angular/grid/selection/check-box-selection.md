@@ -70,29 +70,13 @@ Example: Hide the select-all checkbox using an empty `HeaderTemplate`:
 
 {% previewsample "page.domainurl/samples/grid/selection-checkbox-cs2" %}
 
-## Prevent specific rows from being selected in checkbox selection
+## Conditional row selection
 
-To prevent certain rows from being selected based on specific conditions, use the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event. Set the [`isSelectable`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs#isselectable) argument to **false** for those rows.
+The `isRowSelectable` callback determines which rows in the Data Grid can be selected. It evaluates each row's data and returns **true** for rows that should be selectable and **false** for those that should not.
 
-Example: Prevent row selection using the `isSelectable` argument in `rowDataBound`:
+**Local data:** The callback runs once when the grid initializes and evaluates all records because the full dataset is already available on the client.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/grid/selection-cs5" %}
-
-## Partial selection using isRowSelectable
-
-The `isRowSelectable` callback in Syncfusion's EJ2 Grid allows control over which rows users can select. It uses a simple callback that runs before the grid loads the data. This callback checks each row data and returns **true** if the row can be selected, or **false** for non-selectable rows.
-
-For local data, the callback checks all items just once when the grid first loads. For remote data, it only checks the rows shown on the current page when the grid first appears. It re-checks them every time an action occurs, such as changing pages, filtering, or sorting.
+**Remote data:** The callback runs only for the rows displayed on the current page when the grid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
 
 In the example below, it prevents selection of rows with canceled orders.
 
@@ -107,7 +91,7 @@ In the example below, it prevents selection of rows with canceled orders.
 
 {% previewsample "page.domainurl/samples/grid/prevent-checkbox-selection" %}
 
-## How to select a single row in checkbox selection mode
+## Select a single row in checkbox selection mode
 
 To allow only one row to be selected at a time in checkbox selection mode, use the [`rowSelecting`](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselecting) event to call the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid#clearselection) method before making a new selection.
 

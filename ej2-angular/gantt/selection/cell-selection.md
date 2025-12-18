@@ -137,3 +137,7 @@ The following sample demonstrates customizing cell selection in the Gantt chart 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/selection/customize-cellselection-cs1" %}
+
+## Limitations for cell selection
+
+* Cell-based selection is not supported when virtualization is enabled.

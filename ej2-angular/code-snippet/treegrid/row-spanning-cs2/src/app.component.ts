@@ -1,28 +1,25 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { NgModule, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { TreeGridModule, PageService, FreezeService } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs, GridLine, Column } from '@syncfusion/ej2-angular-grids';
 import { rowSpanData } from './datasource';
-import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
     imports: [TreeGridModule,],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]="data" childMapping="children" [treeColumnIndex]="0" [height]="300"
-        [enableRowSpan]="true" [rowHeight]="50" gridLines="Both" clipMode="EllipsisWithTooltip"
-        [enableHover]="false" [allowSelection]="false" allowPaging="true" [pageSettings]="pageSettings">
-        <e-columns>
-            <e-column field="activityName" headerText="Phase Name" width="250" freeze="Left"></e-column>
-            <e-column headerText="Schedule" textAlign="Center" [columns]="scheduleColumns"></e-column>
-            <e-column headerText="Work Status" textAlign="Center" [columns]="statusColumns"></e-column>
-            <e-column headerText="Compliance" textAlign="Center" [columns]="complianceColumns"></e-column>
-            <e-column headerText="Personnel" textAlign="Center" [columns]="personnelColumns"></e-column>
-            <e-column headerText="Materials" textAlign="Center" [columns]="materialsColumns"></e-column>
-            <e-column headerText="Cost Summary" textAlign="Center" [columns]="budgetColumns"></e-column>
-        </e-columns>
-    </ejs-treegrid>`,
+    providers: [PageService, FreezeService],
+    template: `<ejs-treegrid #treegrid [dataSource]="data" childMapping="children" [treeColumnIndex]="0" [height]="300" [enableRowSpan]="true" [rowHeight]="50" gridLines="Both" clipMode="EllipsisWithTooltip" [allowSelection]="false" allowPaging="true" [pageSettings]="pageSettings">
+                <e-columns>
+                    <e-column field="activityName" headerText="Phase Name" width="250" freeze="Left"></e-column>
+                    <e-column headerText="Schedule" textAlign="Center" [columns]="scheduleColumns"></e-column>
+                    <e-column headerText="Work Status" textAlign="Center" [columns]="statusColumns"></e-column>
+                    <e-column headerText="Compliance" textAlign="Center" [columns]="complianceColumns"></e-column>
+                    <e-column headerText="Personnel" textAlign="Center" [columns]="personnelColumns"></e-column>
+                    <e-column headerText="Materials" textAlign="Center" [columns]="materialsColumns"></e-column>
+                    <e-column headerText="Cost Summary" textAlign="Center" [columns]="budgetColumns"></e-column>
+                </e-columns>
+               </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
     public data?: Object[];
@@ -65,12 +62,12 @@ export class AppComponent implements OnInit {
 
         this.materialsColumns = [
             { field: 'materialUsed', headerText: 'Materials Used', width: 180, textAlign: 'Center' },
-            { field: 'materialCost', headerText: 'Material Cost', width: 140, format: 'C2', textAlign: 'Right', enableRowSpan: false}
+            { field: 'materialCost', headerText: 'Material Cost', width: 140, format: 'C2', textAlign: 'Right', enableRowSpan: false }
         ];
 
         this.budgetColumns = [
-            { field: 'totalBudget', headerText: 'Planned Budget', width: 140, format: 'C2', textAlign: 'Center', enableRowSpan: false},
-            { field: 'paidToDate', headerText: 'Actual Spend', width: 140, format: 'C2', textAlign: 'Center', enableRowSpan: false}
+            { field: 'totalBudget', headerText: 'Planned Budget', width: 140, format: 'C2', textAlign: 'Center', enableRowSpan: false },
+            { field: 'paidToDate', headerText: 'Actual Spend', width: 140, format: 'C2', textAlign: 'Center', enableRowSpan: false }
         ];
     }
 }
