@@ -1,3 +1,39 @@
-.fm_template .e-large-icons .e-list-item {
-    width: 190px;
+.e-fm-template-sample .custom-icon-card {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.e-fm-template-sample .file-header {
+  display: contents;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.e-fm-template-sample .file-name {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}
+
+.e-fm-template-sample .file-formattedDate {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.e-filemanager.e-fm-template-sample .e-large-icons .e-list-item {
+  height: 150px;
+  width: 135px;
 }
