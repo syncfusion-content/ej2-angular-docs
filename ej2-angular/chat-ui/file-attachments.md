@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # File Attachments in ##Platform_Name## Chat UI component
 
-The Chat UI component supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](../api/chat-ui/enableAttachments) property and customize the behavior through the [attachmentSettings](../api/chat-ui/attachmentSettings) configuration.
+The Chat UI component supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#enableattachments) property and customize the behavior through the [attachmentSettings](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#attachmentsettings) configuration.
 
 ## Enable file attachments
 
-Enable file attachment support by setting the [enableAttachments](../api/chat-ui/enableAttachments) property to `true`. By default, it is `false`.
+Enable file attachment support by setting the [enableAttachments](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#enableattachments) property to `true`. By default, it is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,11 +30,11 @@ Enable file attachment support by setting the [enableAttachments](../api/chat-ui
 
 ## Configure attachment settings
 
-Use the [attachmentSettings](../api/chat-ui/attachmentSettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
+Use the [attachmentSettings](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#attachmentsettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
 
 ### Setting saveUrl and removeUrl
 
-Set the [saveUrl](../api/chat-ui/attachmentSettings#saveurl) and [removeUrl](../api/chat-ui/attachmentSettings#removeurl) properties to specify server endpoints for handling file uploads and removals. The `saveUrl` processes file uploads, while the `removeUrl` handles file deletion requests.
+Set the [saveUrl](../api/chat-ui/fileattachmentsettings#saveurl) and [removeUrl](../api/chat-ui/fileattachmentsettings#removeurl) properties to specify server endpoints for handling file uploads and removals. The `saveUrl` processes file uploads, while the `removeUrl` handles file deletion requests.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ Set the [saveUrl](../api/chat-ui/attachmentSettings#saveurl) and [removeUrl](../
 
 ### Setting file type
 
-Use the [allowedFileTypes](../api/chat-ui/attachmentSettings#allowedfiletypes) property to specify which file types users can upload. This property accepts file extensions (e.g., '.pdf', '.docx') or MIME types to control the types of files that can be attached.
+Use the [allowedFileTypes](../api/chat-ui/fileattachmentsettings#allowedfiletypes) property to specify which file types users can upload. This property accepts file extensions (e.g., '.pdf', '.docx') or MIME types to control the types of files that can be attached.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ Use the [allowedFileTypes](../api/chat-ui/attachmentSettings#allowedfiletypes) p
 
 ### Setting file size
 
-Configure the [maxFileSize](../api/chat-ui/attachmentSettings#maxfilesize) property to define the maximum file size allowed for uploads. Specify the size in bytes. The default value is `30000000` bytes (approximately 30 MB). Files exceeding this limit will not be uploaded.
+Configure the [maxFileSize](../api/chat-ui/fileattachmentsettings#maxfilesize) property to define the maximum file size allowed for uploads. Specify the size in bytes. The default value is `30000000` bytes (approximately 30 MB). Files exceeding this limit will not be uploaded.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ Configure the [maxFileSize](../api/chat-ui/attachmentSettings#maxfilesize) prope
 
 ### Setting save format
 
-Control the format used to send files to the server using the [saveFormat](../api/chat-ui/attachmentSettings#saveformat) property when path is not set. It does not change how files are uploaded. The default value is `Blob`.
+Control the format used to send files to the server using the [saveFormat](../api/chat-ui/fileattachmentsettings#saveformat) property when path is not set. It does not change how files are uploaded. The default value is `Blob`.
 
  - `Blob`: Used for fast, memory‑efficient local previews.
  - `Base64`: Reads the file as a Base64 data URL, useful when you need an inline data URL.
@@ -102,7 +102,7 @@ Control the format used to send files to the server using the [saveFormat](../ap
 
 ### Setting server path
 
-The [path](../api/chat-ui/attachmentSettings#path) property specifies the public base URL where uploaded files are (or will be) hosted. When this property is set, it takes precedence over the value defined in `saveFormat`. This means that even if saveFormat includes a different location or structure for storing files, the path property will be used it for generating the file URL.
+The [path](../api/chat-ui/fileattachmentsettings#path) property specifies the public base URL where uploaded files are (or will be) hosted. When this property is set, it takes precedence over the value defined in `saveFormat`. This means that even if saveFormat includes a different location or structure for storing files, the path property will be used it for generating the file URL.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +116,7 @@ The [path](../api/chat-ui/attachmentSettings#path) property specifies the public
 
 ### Enabling drag-and-drop
 
-Toggle drag-and-drop support for attachments via [enableDragAndDrop](../api/chat-ui/attachmentSettings#enabledraganddrop) property. The default value is `true`.
+Toggle drag-and-drop support for attachments via [enableDragAndDrop](../api/chat-ui/fileattachmentsettings#enabledraganddrop) property. The default value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,7 +133,7 @@ Toggle drag-and-drop support for attachments via [enableDragAndDrop](../api/chat
 
 ### Setting maximum count
 
-Restrict how many files can be attached at once using [maximumCount](../api/chat-ui/attachmentSettings#maximumcount). The default value is `10`. If users select more than the allowed count, the maximum count reached error will be displayed.
+Restrict how many files can be attached at once using [maximumCount](../api/chat-ui/fileattachmentsettings#maximumcount). The default value is `10`. If users select more than the allowed count, the maximum count reached error will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -151,8 +151,8 @@ Restrict how many files can be attached at once using [maximumCount](../api/chat
 
 ### Customizing the file preview
 
-Provide a custom UI for previewing selected files using [previewTemplate](../api/chat-ui/attachmentSettings#previewtemplate). Use this to render thumbnails, filenames, progress, remove buttons, or any additional metadata prior to sending.
+Provide a custom UI for previewing selected files using [previewTemplate](../api/chat-ui/fileattachmentsettings#previewtemplate). Use this to render thumbnails, filenames, progress, remove buttons, or any additional metadata prior to sending.
 
 ### Customizing the attachments
 
-Control how attachments appear inside message bubbles with [attachmentTemplate](../api/chat-ui/attachmentSettings#attachmenttemplate). Use this to tailor the display of images, documents, or custom file types once the message is posted.
+Control how attachments appear inside message bubbles with [attachmentTemplate](../api/chat-ui/fileattachmentsettings#attachmenttemplate). Use this to tailor the display of images, documents, or custom file types once the message is posted.

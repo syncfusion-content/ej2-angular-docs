@@ -84,18 +84,18 @@ To specify the ngcc package in the `package.json` file, add the `-ngcc` suffix t
 
 ## Add CSS Reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
+The following CSS files are available in `https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion` package folder.
 This can be referenced in [src/styles.css] using following code.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-angular-blockeditor/styles/material.css';
 ```
 
 ## Add Syncfusion Block Editor Component
