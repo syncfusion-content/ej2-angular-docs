@@ -80,8 +80,6 @@ The [itemClick](../api/ai-assistview/footerToolbarSettingsModel#itemclick) event
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/ai-assistview/toolbar-items/footer-itemclick" %}
-
 ## Adding header toolbar items
 
 ### Items
