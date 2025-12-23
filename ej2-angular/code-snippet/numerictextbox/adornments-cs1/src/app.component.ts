@@ -1,76 +1,101 @@
-import { Component, ViewChild, ViewEncapsulation} from '@angular/core';
-import { NumericTextBoxComponent, NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { SBDescriptionComponent } from '../common/dp.component';
-import { SBActionDescriptionComponent } from '../common/adp.component';
 
-/**
- * Adornments Numeric TextBox sample
- */
+import { Component, ViewEncapsulation } from '@angular/core';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+
 @Component({
-    selector: 'app-root',
-    templateUrl:`<div class="col-lg-12 control-section adornment-numeric">
-    <div class="content-wrapper">
+  selector: 'app-root',
+  styleUrls: ['.././index.css'],
+  template: `
+    <div class="col-lg-12 control-section adornment-numeric">
+      <div class="content-wrapper">
         <div class="row custom-margin">
-            <ejs-numerictextbox #prependNumeric value="1" floatLabelType="Auto" cssClass="e-prepend-numeric" placeholder="Enter the price" [prependTemplate]="prependTemplate" (change)="onPriceChange()">
-                <ng-template #prependTemplate>
-                    <span class="e-icons e-menu"></span>
-                    <span class="e-input-separator"></span>
-                    <span class="e-icons e-search"></span>
-                    <span class="e-input-separator"></span>
-                </ng-template>
-            </ejs-numerictextbox>
+          <ejs-numerictextbox
+            [(value)]="price"
+            floatLabelType="Auto"
+            cssClass="e-prepend-numeric"
+            placeholder="Enter the price"
+            [prependTemplate]="prependTemplate"
+            (change)="onPriceChange()">
+            <ng-template #prependTemplate>
+              <span class="e-icons e-menu"></span>
+              <span class="e-input-separator"></span>
+              <span class="e-icons e-search"></span>
+              <span class="e-input-separator"></span>
+            </ng-template>
+          </ejs-numerictextbox>
         </div>
-        <div class="row custom-margin">
-            <ejs-numerictextbox #appendNumeric value="5" step="1" floatLabelType="Auto" placeholder="Enter the kg" [appendTemplate]="appendTemplate" (change)="onKgChange()">
-                <ng-template #appendTemplate>
-                    <div>
-                        <span>kg</span>
-                    </div>
-                </ng-template>
-            </ejs-numerictextbox>
-        </div>
-        <div class="row custom-margin custom-margin-row">
-            <ejs-numerictextbox #iconNumeric value="10" [showSpinButton]="showSpinButtons" floatLabelType="Auto" cssClass="e-icon-numeric" placeholder="Enter the Number" [prependTemplate]="prependIconTemplate" [appendTemplate]="appendIconTemplate">
-                <ng-template #prependIconTemplate>
-                    <span class="e-icons e-reset" title="Reset" (click)="onResetClick()"></span>
-                    <span class="e-input-separator"></span>
-                </ng-template>
-                <ng-template #appendIconTemplate>
-                    <span class="e-input-separator"></span>
-                    <span class="e-icons e-horizontal-line" (click)="onSubClick()"></span>
-                    <span class="e-input-separator"></span>
-                    <span class="e-icons e-plus" (click)="onPlusClick()"></span>
-                </ng-template>
-            </ejs-numerictextbox>
-        </div>
-    </div>
-</div>`,
-    standalone: true,
-    encapsulation: ViewEncapsulation.None,
-    imports: [NumericTextBoxModule, SBActionDescriptionComponent, SBDescriptionComponent]
-})
-export class AdornmentNumericTextbox {
-    @ViewChild('prependNumeric')
-    public prependNumericObj: NumericTextBoxComponent;
-    @ViewChild('appendNumeric')
-    public appendNumericObj: NumericTextBoxComponent;
-    @ViewChild('iconNumeric')
-    public iconNumericObj: NumericTextBoxComponent;
-    public showSpinButtons: boolean = false;
 
-    onPriceChange() {
-        this.appendNumericObj.value = this.prependNumericObj.value * 5;
-    }
-    onKgChange() {
-        this.prependNumericObj.value = this.appendNumericObj.value / 5;
-    }
-    onResetClick() {
-        this.iconNumericObj.value = null;
-    }
-    onSubClick() {
-        this.iconNumericObj.value = this.iconNumericObj.value - 1;
-    }
-    onPlusClick() {
-        this.iconNumericObj.value = this.iconNumericObj.value + 1;
-    }
+        <div class="row custom-margin">
+          <ejs-numerictextbox
+            [(value)]="kg"
+            [step]="1"
+            floatLabelType="Auto"
+            placeholder="Enter the kg"
+            [appendTemplate]="appendTemplate"
+            (change)="onKgChange()">
+            <ng-template #appendTemplate>
+              <div>
+                <span>kg</span>
+              </div>
+            </ng-template>
+          </ejs-numerictextbox>
+        </div>
+
+        <div class="row custom-margin custom-margin-row">
+          <ejs-numerictextbox
+            [(value)]="iconValue"
+            [showSpinButton]="showSpinButtons"
+            floatLabelType="Auto"
+            cssClass="e-icon-numeric"
+            placeholder="Enter the Number"
+            [prependTemplate]="prependIconTemplate"
+            [appendTemplate]="appendIconTemplate">
+            <ng-template #prependIconTemplate>
+              <span class="e-icons e-reset" title="Reset" (click)="onResetClick()"></span>
+              <span class="e-input-separator"></span>
+            </ng-template>
+            <ng-template #appendIconTemplate>
+              <span class="e-input-separator"></span>
+              <span class="e-icons e-horizontal-line" (click)="onSubClick()"></span>
+              <span class="e-input-separator"></span>
+              <span class="e-icons e-plus" (click)="onPlusClick()"></span>
+            </ng-template>
+          </ejs-numerictextbox>
+        </div>
+      </div>
+    </div>
+  `,
+  standalone: true,
+  encapsulation: ViewEncapsulation.None,
+  imports: [NumericTextBoxModule]
+})
+export class AppComponent {
+  public showSpinButtons = false;
+  public price: number = 1;
+  public kg: number = 5;
+  public iconValue: number | null = 10;
+
+  onPriceChange(): void {
+    this.kg = (this.price ?? 0) * 5;
+  }
+
+  onKgChange(): void {
+    this.price = (this.kg ?? 0) / 5;
+  }
+
+  onResetClick(): void {
+    this.iconValue = null;
+  }
+
+  onSubClick(): void {
+    const current = Number(this.iconValue ?? 0);
+    this.iconValue = current - 1;
+  }
+
+  onPlusClick(): void {
+    const current = Number(this.iconValue ?? 0);
+    this.iconValue = current + 1;
+  }
+
+  constructor() {}
 }

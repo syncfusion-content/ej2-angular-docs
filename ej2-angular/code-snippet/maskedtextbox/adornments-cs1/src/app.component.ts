@@ -1,13 +1,9 @@
 import { Component, ViewChild, ViewEncapsulation} from '@angular/core';
 import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { SBDescriptionComponent } from '../common/dp.component';
-import { SBActionDescriptionComponent } from '../common/adp.component';
 
-/**
- * Adornments Masked TextBox sample
- */
 @Component({
     selector: 'app-root',
+    styleUrls: ['.././index.css'],
     template:`<div class="control-section adornment-mask">
     <div class="content-wrapper">
         <div class="mask-row">
@@ -26,8 +22,8 @@ import { SBActionDescriptionComponent } from '../common/adp.component';
 </div>`,
     standalone: true,
     encapsulation: ViewEncapsulation.None,
-    imports: [MaskedTextBoxModule, SBActionDescriptionComponent, SBDescriptionComponent]
+    imports: [MaskedTextBoxModule]
 })
-export class AdornmentMaskedTextbox {
+export class AppComponent {
     constructor() { }
 }
