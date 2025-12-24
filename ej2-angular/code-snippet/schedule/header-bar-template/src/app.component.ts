@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component, ViewChild } from '@angular/core';
 import { extend } from '@syncfusion/ej2-base';
-import { Component, ViewChild } from '@angular/core';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { ScheduleComponent, EventSettingsModel, View, MonthService, ResizeService, DragAndDropService, ScheduleModule, WeekService } from '@syncfusion/ej2-angular-schedule';
 import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';

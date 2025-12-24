@@ -545,25 +545,26 @@ The Rich Text Editor supports automatic conversion of Markdown syntax into HTML 
 
 By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
 
-|Commands|Syntax Example| Description |
-|--------|------------------------------------------|------------|
-| Bold | `**`Bold Text`**` or `__`Bold Text`__` | Makes text bold by wrapping it with `**` or `__`. |
-| Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*`or `_`. |
-| Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
-| Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
-| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
-| Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
-| Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
-| Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
-| Heading 4 | `####` Heading 4 | Creates an H2 heading by starting the line with `####` |
-| Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
-| Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
-| Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
-| Code block (Multi Line) |\`\`\` Multi line code text | Creates a code block by starting the line with \`\`\` |
-| Ordered List | `1.` First| Creates a numbered list by starting lines with `1.` or `i.`. |
-| Unordered List | `*` First| Creates a bulleted list by starting lines with `*` or `-`. |
-| Check List | `[]` Task| Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
-| Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
+### Inline Formatting
+
+The following inline formatting options are available:
+
+- Bold – Use `**text**` or `__text__`.
+- Italic – Use `*text*` or `_text_`.
+- Inline Code – Use `text`.
+- Strikethrough – Use `~~text~~`.
+
+### Block formatting
+
+The following block formatting options are available:
+
+- **Bulleted list** – Start a line with `*` or `-` followed by a space.
+- **Numbered list** – Start a line with `1.` followed by a space.
+- **Check List** – Start a line with `[ ]` or `[x]` followed by a space to insert an unchecked or checked list item, respectively.
+- **Headings** – Start a line with `#`, `##`, or `###` followed by a space to create Heading 1, Heading 2, or Heading 3. You can use up to six levels of headings
+- **Block quote** – Start a line with `>` followed by a space.
+- **Code block** – Start a line with ` ``` ` followed by a space.
+- **Horizontal line** – Start a line with `---` followed by a space.
 
 
 ### How Markdown auto-formatting works
