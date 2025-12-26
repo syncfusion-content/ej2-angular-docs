@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+import { PivotViewAllModule, PivotFieldListAllModule, ExcelExportService } from '@syncfusion/ej2-angular-pivotview'
 import { Button } from '@syncfusion/ej2-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
@@ -18,7 +18,8 @@ import { Observable } from 'rxjs';
     selector: 'app-container',
     // specifies the template string for the pivot table component
     template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]='dataSourceSettings'
-  [gridSettings]='gridSettings' [width]=width allowExcelExport='true'></ejs-pivotview><div class="col-md-2"><button ej-button id='export'>Export</button></div>`
+  [gridSettings]='gridSettings' [width]=width allowExcelExport='true'></ejs-pivotview><div class="col-md-2"><button ej-button id='export'>Export</button></div>`,
+    providers: [ExcelExportService],
 })
 export class AppComponent implements OnInit {
     public width?: string;

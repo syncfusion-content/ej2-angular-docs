@@ -10,10 +10,10 @@ import { ordersTrackData, OrderTrackModel } from './datasource';
     providers: [PageService, SortService, EditService, ToolbarService, FilterService,],
     standalone: true,
     selector: 'app-root',
-    template:`<ejs-grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' 
+    template:`<ejs-grid [dataSource]='data' height="245" [allowPaging]='true' [editSettings]='editSettings' 
                [toolbar]='toolbar' [allowSelection]='true' [selectionSettings]='selectionOptions'
                [allowFiltering]="true" [filterSettings]="filterSettings" [allowSorting]="true" 
-               (isRowSelectable)='isRowSelectable'>
+               [isRowSelectable]='isRowSelectable'>
                 <e-columns>
                     <e-column type='checkbox' width='50' ></e-column>
                     <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' [validationRules]='orderIDRules' textAlign='Right' width='110' ></e-column>

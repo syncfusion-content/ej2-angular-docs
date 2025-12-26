@@ -5,6 +5,14 @@ import { GridModule, PageService, EditService, EditSettingsModel, PageSettingsMo
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
+export interface RowData {
+  TaskID: number; 
+  Title: string;  
+  Status: string;
+  Priority: string;
+  Assignee?: string;   
+}
+
 @Component({
 imports: [
         
@@ -15,9 +23,10 @@ providers: [PageService, EditService],
 standalone: true,
     selector: 'app-root',
     template: `<div>
-                 <ejs-grid [dataSource]='data'  [isRowPinned]="isRowPinned"  [allowPaging]="true" [pageSettings]="pageSettings" [editSettings]="editSettings" [isRowPinned]="isRowPinned" height="200">
+                 <ejs-grid [dataSource]='data' height="215"  [isRowPinned]="isRowPinned"  [allowPaging]="true" [pageSettings]="pageSettings" [editSettings]="editSettings" [isRowPinned]="isRowPinned" height="200">
                     <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
+                        <e-column field="TaskID" headerText="ID" width="80" isPrimaryKey="true" textAlign="Right"></e-column>        
+                        <e-column field="Title" headerText="Title" width="100"></e-column>
                         <e-column field="Status" headerText="Status" width="100"></e-column>
                         <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
                         <e-column field="Priority" headerText="Priority" width="100"></e-column>
@@ -34,7 +43,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
     }
-    public isRowPinned=( data: Object)=>
+    public isRowPinned=( data: RowData)=>
     {
         if (data && data.Status === 'Open' && data.Priority === 'Critical') {
             return true;
