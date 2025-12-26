@@ -213,9 +213,9 @@ Use the [getCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich
 
 ## See also
 
-* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-modes)
-* [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe)
-* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-mode)
+* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/editor-mode)
+* [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/iframe)
+* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/inline-editing)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/reactive-form)

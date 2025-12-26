@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Insert Images in the Angular Rich Text Editor Component
 
-The Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/)
+The Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel)
 
 ## Configuring the image toolbar item
 
-The image feature is enabled by adding the `Image` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+The image feature is enabled by adding the `Image` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
 
 > To use Image feature, inject `ImageService` in the provider section.
 
@@ -34,7 +34,7 @@ The following example demonstrates configuring the `Image` toolbar item:
 
 ## Supported image save formats
 
-The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
 > The default `saveFormat` property is set to `Blob` format.
 
@@ -46,7 +46,7 @@ The images can be saved as `Blob` or `Base64` URL by using the [insertImageSetti
 
 ```
 
-The code snippet below illustrates the configuration of the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#saveformat) property in the Rich Text Editor.
+The code snippet below illustrates the configuration of the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#saveformat) property in the Rich Text Editor.
 
 ```typescript
 
@@ -88,13 +88,13 @@ To insert images from a file manager, enable the `FileManager` tool on the edito
 To integrate the file manager into the Rich Text Editor, follow these steps:
 
 * Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set the [enable](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fileManagerSettings/#enable) property to `true` in the [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileManagerSettings) property to ensure the file browser appears upon clicking the `FileManager` toolbar item.
+* Set the [enable](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fileManagerSettings#enable) property to `true` in the [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#fileManagerSettings) property to ensure the file browser appears upon clicking the `FileManager` toolbar item.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, configure `FileManagerService` in providers.
 
 ## Maximum file size restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
+You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
 
 In the following example, the image size has been validated before uploading and determined whether the image has been uploaded or not.
 
@@ -124,11 +124,11 @@ export class AppComponent {
 
 ## Saving images to the server
 
-Upload the selected image to a specified destination using the controller action specified in [insertImageSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertImageSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#path) properties.
+Upload the selected image to a specified destination using the controller action specified in [insertImageSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertImageSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#path) properties.
 
-Configure [insertImageSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#removeurl) to point to the endpoint responsible for deleting image files.
+Configure [insertImageSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#removeurl) to point to the endpoint responsible for deleting image files.
 
-Set the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
+Set the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
 ```typescript
 
@@ -219,13 +219,13 @@ public class HomeController : Controller
 
 ### Rename images before inserting
 
-You can use the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertimagesettings) property, to specify the server handler to upload the selected image. Then by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#imageuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
+You can use the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertimagesettings) property, to specify the server handler to upload the selected image. Then by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#imageuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
 Refer the section [Rename images before inserting it in Rich Text Editor](../how-to/rename-images-in-server) for code snippets and examples.
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [imageUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#imageuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the image uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [imageUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#imageuploading) event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 > By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
 
@@ -251,9 +251,7 @@ export class AppComponent {
     path: "[SERVICE_HOSTED_PATH]/Files/"
   };
   public onImageUpload = (args: UploadingEventArgs) => {
-    let accessToken = "Authorization_token";
-    // adding custom form Data
-    args.customFormData = [ { 'Authorization': accessToken}];
+    args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
   };
 }
 
@@ -270,11 +268,11 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 ## Image replacement functionality
 
-The [quickToolbarSettings.imageReplace](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#quicktoolbarsettings) option allows replacing an inserted image using the quick toolbar, using a web URL or the browse option in the image dialog.
+The [quickToolbarSettings.imageReplace](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#quicktoolbarsettings) option allows replacing an inserted image using the quick toolbar, using a web URL or the browse option in the image dialog.
 
 ## Deleting images
 
-To delete an image, select it and click the `Remove` button in the quick toolbar. This removes the image from the editor and, if configured, from the server using [`insertImageSettings.removeUrl`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#removeurl).
+To delete an image, select it and click the `Remove` button in the quick toolbar. This removes the image from the editor and, if configured, from the server using [`insertImageSettings.removeUrl`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#removeurl).
 
 Once you select the image from the local machine, the URL for the image will be generated. You can remove the image from the service location by clicking the cross icon in the audio dialog.
 
@@ -300,7 +298,7 @@ In the Rich Text Editor, deleting images using the `Delete` or `Backspace` keys,
 
 This behavior is intentional, allowing undo/redo operations to function properly without breaking references to previously uploaded images.
 
-To explicitly remove images from the server, use the [afterImageDelete](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#afterimagedelete) event. This event is triggered after an image is removed from the content and provides the src URL of the image, which can be used to initiate a request to your server for deleting the corresponding file.
+To explicitly remove images from the server, use the [afterImageDelete](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#afterimagedelete) event. This event is triggered after an image is removed from the content and provides the src URL of the image, which can be used to initiate a request to your server for deleting the corresponding file.
 
 The following sample demonstrates how to use the `afterImageDelete` event in Rich Text Editor to delete images from the server after they are removed from the editor content:
 
@@ -351,7 +349,7 @@ export class AppComponent {
 
 ## Adjusting image dimensions
 
-The [insertImageSettings.width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#width) and [insertImageSettings.height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#height) of the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/) properties set default dimensions for inserted images.
+The [insertImageSettings.width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#width) and [insertImageSettings.height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#height) of the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel) properties set default dimensions for inserted images.
 
  The quick toolbar's `Change Size` option opens a dialog to adjust width and height in pixels.
 
@@ -359,7 +357,7 @@ The [insertImageSettings.width](https://ej2.syncfusion.com/angular/documentation
 
 ## Adding captions and Alt text
 
-The [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property enables adding captions and alt text:
+The [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#quickToolbarSettings) property enables adding captions and alt text:
 
 * Image Caption
 * Alternative Text
@@ -370,7 +368,7 @@ By clicking the Image Caption, the image will get wrapped in an image element wi
 
 ## Configuring image display position
 
-Sets the default display for an image when it is inserted in the Rich Text Editor using [display](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#display) field in [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/). It has two possible options: 'inline' and 'block'.
+Sets the default display for an image when it is inserted in the Rich Text Editor using [display](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#display) field in [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel). It has two possible options: 'inline' and 'block'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -398,7 +396,7 @@ Rich Text Editor has a built-in image inserting support. The resize points will 
 
 ## Configuring allowed image types
 
-The [insertImageSettings.allowedTypes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel/#allowedtypes) property restricts uploaded image formats. By default, the Rich Text Editor allows the JPG, JPEG, and PNG formats. You can configure this formats as follows.
+The [insertImageSettings.allowedTypes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#allowedtypes) property restricts uploaded image formats. By default, the Rich Text Editor allows the JPG, JPEG, and PNG formats. You can configure this formats as follows.
 
 ``` typescript
 
