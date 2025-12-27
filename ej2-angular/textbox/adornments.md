@@ -48,7 +48,5 @@ The following example demonstrates how to add adornments in the TextBox control.
 {% include code-snippet/textbox/adornments-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/textbox/adornments-cs1" %}
 
-
+You can view the demo here: [TextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textboxes/adornments).
