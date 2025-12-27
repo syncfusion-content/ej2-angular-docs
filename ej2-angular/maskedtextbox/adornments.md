@@ -38,6 +38,5 @@ The following example demonstrates how to add adornments in the MaskedTextBox co
 {% include code-snippet/maskedtextbox/adornments-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/maskedtextbox/adornments-cs1" %}
 
+You can view the demo here: [MaskedTextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/maskedtextbox/adornments).
