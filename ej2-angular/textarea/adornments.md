@@ -50,5 +50,5 @@ The following example demonstrates how to add adornments with orientation in the
 {% include code-snippet/textarea/adornments-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/textarea/adornments-cs1" %}
+
+You can view the demo here: [TextArea Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textarea/adornments).
