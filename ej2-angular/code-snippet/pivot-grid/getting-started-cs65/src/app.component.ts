@@ -4,7 +4,7 @@ import { PivotViewAllModule, PivotFieldListAllModule, ExcelExportService, ExcelE
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
-import { pivotData } from './datasource';
+import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: pivotData as IDataSet[],
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
         };
 
         this.dataSourceSettings1 = {
-            dataSource: pivotData as IDataSet[],
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             rows: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Sold', caption: 'Units Sold' }],

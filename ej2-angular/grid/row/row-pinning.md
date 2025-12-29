@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion <sup style="font-size:70%">&reg;</sup> Angular Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 
-To enable the row pinning feature, set the [isRowPinned](https://ej2.syncfusion.com/angular/documentation/api/grid/#isrowpinned) callback function, which returns  returns **true** or **false** based on your condition. This callback function receives each row's data as an argument, allowing you to define the pinning logic. This feature executes the `isRowPinned` callback function only during initial rendering, so any condition defined inside this callback function applies exclusively at that stage.  
+To enable the row pinning feature, set the [isRowPinned](https://ej2.syncfusion.com/angular/documentation/api/grid#isrowpinned) callback function, which returns  returns **true** or **false** based on your condition. This callback function receives each row's data as an argument, allowing you to define the pinning logic. This feature executes the `isRowPinned` callback function only during initial rendering, so any condition defined inside this callback function applies exclusively at that stage.  
 
 Also, this feature does not alter the grid's overall content height, ensuring that the content area remains fully visible and scrollable even when multiple rows are pinned. This behavior prevents pinned rows from overlapping or hiding the scrollable content, maintaining a consistent layout and smooth scrolling experience. Regardless of how many rows are pinned, the grid preserves its original height and displays pinned rows in a separate fixed region above the content area, allowing users to view and interact with all other rows without obstruction.
 
@@ -20,53 +20,8 @@ The following example pins rows with "Critical" priority and "Open" status at th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs1/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data' [isRowPinned]="isRowPinned">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-
-    ngOnInit(): void {
-        this.data = data.slice(0, 7);
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -84,54 +39,8 @@ The row pinning feature in the Grid control keeps important rows always visible 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs2/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public pageSettings: PageSettingsModel;
-    ngOnInit(): void {
-        this.data = data.slice(0, 7);
-        this.pageSettings={pageSize:10};
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -147,55 +56,8 @@ The row pinning feature allows selection on the pinned rows just like normal row
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs3/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
-                    <e-columns>
-                        <e-column type="checkbox" width="70"></e-column>        
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public pageSettings: PageSettingsModel;
-    ngOnInit(): void {
-        this.data = data.slice(0, 7);
-        this.pageSettings={pageSize:10};
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -213,57 +75,8 @@ The row pinning feature ensures that pinned rows remain fully integrated with fi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs4/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SortService, FilterService, PageSettingsModel, FilterSettingsModel  } from '@syncfusion/ej2-angular-grids';
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" [allowSorting]="true" [allowFiltering]="true" [filterSettings]="filterSettings" [isRowPinned]="isRowPinned" height="200">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public pageSettings: PageSettingsModel;
-    public filterSettings: FilterSettingsModel;
-    ngOnInit(): void {
-        this.data = data;
-        this.pageSettings={ pageSize: 10 };
-        this.filterSettings={ type: 'Menu' };
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -279,54 +92,8 @@ The row pinning feature fully supports CRUD operations by mirroring changes betw
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs5/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, EditService, EditSettingsModel, PageSettingsModel  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, EditService],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data'  [isRowPinned]="isRowPinned"  [allowPaging]="true" [pageSettings]="pageSettings" [editSettings]="editSettings" height="200">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public pageSettings: PageSettingsModel = { pageSize: 15};
-    public editSettings: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };    
-    ngOnInit(): void {
-        this.data = data;
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -342,55 +109,8 @@ Row pinning provides dynamic control through the built-in context menu, allowing
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
+{% include code-snippet/grid/rows-pinning-cs6/src/app.component.ts %}
 
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, PageSettingsModel, ContextMenuService  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, ContextMenuService],
-standalone: true,
-    selector: 'app-root',
-    template: `<div>
-                 <ejs-grid [dataSource]='data' [isRowPinned]="isRowPinned" height='200' [allowPaging]="true" [pageSettings]="pageSettings" [contextMenuItems]="contextMenuItems">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
-                        <e-column field="Status" headerText="Status" width="100"></e-column>
-                        <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
-                        <e-column field="Priority" headerText="Priority" width="100"></e-column>
-                    </e-columns>
-                 </ejs-grid>
-            </div>`
-})
-
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public contextMenuItems: string[] = ['PinRow', 'UnpinRow'];
-    public pageSettings: PageSettingsModel = { pageSize: 15 };
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-    public isRowPinned=( data: Object)=>
-    {
-        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
-            return true;
-        }
-        return false;
-    }
-}
-
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

@@ -10,7 +10,7 @@ providers: [DetailRowService],
 standalone: true,
   selector: 'app-root',
   template: `<div>
-    <ejs-grid #grid [dataSource]="data" height="315" [childGrid]='childGrid' (detailExpand)="detailExpand($event)" (detailCollapse)="detailCollapse($event)">
+    <ejs-grid #grid [dataSource]="data" height="335" [childGrid]='childGrid' (detailExpand)="detailExpand($event)" (detailCollapse)="detailCollapse($event)">
       <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-column>
         <e-column field="FirstName" headerText="First Name" width="150"></e-column>
@@ -41,14 +41,14 @@ export class AppComponent implements OnInit {
   
   // Prevent expanding detail row.
   public detailExpand(args: any): void {
-    if (args.data.FirstName === 'Nancy') {
+    if (args.rowData.FirstName === 'Nancy') {
       args.cancel = true;
     }
   }
 
   // Prevent collapsing detail row.
   public detailCollapse(args: any): void {
-    if (args.data.FirstName === 'Andrew') {
+    if (args.rowData.FirstName === 'Andrew') {
       args.cancel = true;
     }
   }

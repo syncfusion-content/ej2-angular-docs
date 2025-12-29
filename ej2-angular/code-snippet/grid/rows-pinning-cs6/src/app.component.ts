@@ -3,7 +3,15 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService, PageSettingsModel, ContextMenuService  } from '@syncfusion/ej2-angular-grids'
 
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { taskData } from './datasource';
+
+export interface RowData {
+  TaskID: number; 
+  Title: string;  
+  Status: string;
+  Priority: string;
+  Assignee?: string;   
+}
 
 @Component({
 imports: [
@@ -15,9 +23,10 @@ providers: [PageService, ContextMenuService],
 standalone: true,
     selector: 'app-root',
     template: `<div>
-                 <ejs-grid [dataSource]='data' [isRowPinned]="isRowPinned" height='200' [allowPaging]="true" [pageSettings]="pageSettings" [contextMenuItems]="contextMenuItems">
-                    <e-columns>                  
-                        <e-column field="Title" headerText="Title" isPrimaryKey="true" width="100"></e-column>
+                 <ejs-grid [dataSource]='data' height="210" [isRowPinned]="isRowPinned" height='200' [allowPaging]="true" [pageSettings]="pageSettings" [contextMenuItems]="contextMenuItems">
+                    <e-columns>
+                        <e-column field="TaskID" headerText="ID" width="80" isPrimaryKey="true" textAlign="Right"></e-column> 
+                        <e-column field="Title" headerText="Title" width="100"></e-column>
                         <e-column field="Status" headerText="Status" width="100"></e-column>
                         <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
                         <e-column field="Priority" headerText="Priority" width="100"></e-column>
@@ -33,9 +42,9 @@ export class AppComponent implements OnInit {
     public pageSettings: PageSettingsModel = { pageSize: 15 };
 
     ngOnInit(): void {
-        this.data = data;
+        this.data = taskData;
     }
-    public isRowPinned=( data: Object)=>
+    public isRowPinned=( data: RowData)=>
     {
         if (data && data.Status === 'Open' && data.Priority === 'Critical') {
             return true;
