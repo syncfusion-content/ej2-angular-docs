@@ -169,9 +169,9 @@ This section explains how to plot below JSON data to the 3D Chart.
 
  ```
 
-Add a series object to the 3D Chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/) property. Now map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#yname) properties of the series, then set the JSON data to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#datasource) property.
+Add a series object to the 3D Chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective) property. Now map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective#yname) properties of the series, then set the JSON data to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DDirective/#valuetype)for horizontal axis to `Category`.
+Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3daxismodel#valuetype)for horizontal axis to `Category`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,7 +187,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 ## Add 3D Chart title
 
-You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
+You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -203,7 +203,7 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 
 ## Enable legend
 
-You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/legendSettingsModel/#visible) property to true in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#legendsettings) object and by injecting the `Legend3DService` into the `@NgModule.providers`.
+You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dlegendsettingsmodel#visible) property to true in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dmodel#legendsettings) object and by injecting the `Legend3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -220,7 +220,7 @@ You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncf
 ## Add data label
 
 You can add data labels to improve the readability of the 3D Chart.
-This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyle/#visible) property to true in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#datalabel) object and by injecting `DataLabel3DService` into the `@NgModule.providers`.
+This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dseries#datalabel) object and by injecting `DataLabel3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,7 +236,7 @@ This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angul
 
 ## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalTooltipSettingsModel/#enable) property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#tooltip) object and by injecting `Tooltip3DService` into the `@NgModule.providers`.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dtooltipsettingsmodel#enable) property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel#tooltip) object and by injecting `Tooltip3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
