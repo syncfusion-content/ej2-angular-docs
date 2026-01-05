@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
-import { UploadingEventArgs } from '@syncfusion/ej2-inputs';
+import { UploadingEventArgs } from '@syncfusion/ej2-interactive-chat';
 
 @Component({
     imports: [ FormsModule, ReactiveFormsModule, AIAssistViewModule ],

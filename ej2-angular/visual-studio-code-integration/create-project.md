@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Angular project in Visual studio code | Syncfusion
+title: Create project in Angular Visual studio code integration | Syncfusion
 description: Learn here all about Create project in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create project 
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides **project templates** for **Visual Studio Code** to simplify the creation of Syncfusion<sup style="font-size:70%">&reg;</sup> web applications. These templates generate applications using the selected framework (React, Pure React, Angular, or Vue), automatically add the required Syncfusion NPM packages, and include sample code for Grid, Chart, and Scheduler components along with relevant styles for a seamless development process.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides **project templates** for **Visual Studio Code** to simplify the creation of Syncfusion<sup style="font-size:70%">&reg;</sup> web applications. These templates generate applications using the selected framework (React, Angular, or Vue), automatically add the required Syncfusion NPM packages, and include sample code for Grid, Chart, and Scheduler components along with relevant styles for a seamless development process.
 
    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Visual Studio Code project template provides support for Web project templates from v18.3.0.47.
 
@@ -22,14 +22,13 @@ Follow the instructions below to create a **Syncfusion web application** using *
 
     ![CreateProjectPalette](images/CreateProjectPalette.png)
 
-2. Select **Syncfusion Web Template Studio: Launch** and press Enter. The Template Studio wizard will appear for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> web app. Enter the Project Name and Path, then choose one of the supported frameworks (React, Pure React, Angular, or Vue) for your new application.
+2. Select **Syncfusion Web Template Studio: Launch** and press Enter. The Template Studio wizard will appear for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> web app. Enter the Project Name and Path, then choose one of the supported frameworks (React, Angular, or Vue) for your new application.
 
     ![ProjectLocation](images/ProjectLocationName.png)
 
 3. Click either **Next** or **Framework** tab, the Framework types will be appearing and choose any one of the Framework:
    * Angular
    * React
-   * Pure React
    * Vue
 
     ![Framework](images/framework.png)

@@ -12,7 +12,7 @@ import { BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
     <div class="container" style="margin: 50px;">
-        <ejs-blockeditor id="blockeditor" [locale]='locale' [blocks]="blocksData" />
+        <div id="blockeditor" ejs-blockeditor [locale]='locale' [blocks]="blocksData"></div>
     </div>`
 })
 
@@ -20,26 +20,29 @@ import { BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 1},
+            id: 'block-1',
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Sample Heading'
                 }
             ]
         },
         {
-            blockType: 'Paragraph',
+            id: 'block-2',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This is a sample paragraph block.'
                 }
             ]
         },
         {
-            blockType: 'Paragraph'
+            id: 'block-3',
+            type: 'Paragraph'
         }
     ];
     public locale?: string;

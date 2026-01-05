@@ -16,10 +16,10 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public paragraphBlock: BlockModel[] = [
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This is a paragraph block example.'
                 }
             ]

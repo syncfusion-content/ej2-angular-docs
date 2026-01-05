@@ -16,40 +16,40 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This is a paragraph with no indentation (indent: 0)'
                 }
             ],
             indent: 0
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This paragraph has one level of indentation (indent: 1)'
                 }
             ],
             indent: 1
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This paragraph has two levels of indentation (indent: 2)'
                 }
             ],
             indent: 2
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Back to no indentation'
                 }
             ],

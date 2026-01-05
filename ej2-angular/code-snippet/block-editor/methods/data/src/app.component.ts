@@ -20,72 +20,72 @@ export class AppComponent {
     public blocksData = [
         {
             id: 'title-block',
-            blockType: 'Heading',
-            properties: { level: 1},
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Document Export Demo'
                 }
             ]
         },
         {
             id: 'intro-paragraph',
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This document demonstrates the data export capabilities of the Block Editor. You can export content as JSON or HTML formats.'
                 }
             ]
         },
         {
             id: 'features-heading',
-            blockType: 'Heading',
-            properties: { level: 2},
+            type: 'Heading',
+            props: { level: 2},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Export Features'
                 }
             ]
         },
         {
             id: 'features-list',
-            blockType: 'BulletList',
+            type: 'BulletList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'JSON export for data processing'
                 }
             ]
         },
         {
             id: 'features-list-2',
-            blockType: 'BulletList',
+            type: 'BulletList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'HTML export for web display'
                 }
             ]
         },
         {
             id: 'features-list-3',
-            blockType: 'BulletList',
+            type: 'BulletList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Print functionality for hard copies'
                 }
             ]
         },
         {
             id: 'code-example',
-            blockType: 'Code',
+            type: 'Code',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'const data = editor.getDataAsJson();\nconsole.log(data);'
                 }
             ]

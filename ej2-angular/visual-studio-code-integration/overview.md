@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in Angular Visual studio code integration | Syncfusion
+title: Overview in Angular Visual studio code integration component | Syncfusion
 description: Learn here all about Overview in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Overview 
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Web extension for Visual Studio Code streamlines the process of working with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components(React, Pure React, Angular, and Vue) by automatically configuring the necessary NPM packages and themes in your project.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Web extension for Visual Studio Code streamlines the process of working with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components(React, Angular, and Vue) by automatically configuring the necessary NPM packages and themes in your project.
 
 This Visual Studio Code extension provides the following features:
 

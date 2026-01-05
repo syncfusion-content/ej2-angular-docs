@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
-import { BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
+import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 
 @Component({
     imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
@@ -14,72 +14,70 @@ import { BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
 
 
 export class AppComponent {
-    public users = [
-        { id: 'user1', user: 'John Doe' }
-    ];
-
-    public labelSettings = {
-        items: [
-            { id: 'label1', text: 'Bug', labelColor: '#ff5252', groupBy: 'Status' }
-        ]
-    };
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 2 },
+            type: 'Heading',
+            props: {level : 2},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Different Content Types'
                 }
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'The Block Editor supports various content types: '
                 },
                 {
-                    contentType: ContentType.Link,
+                    type: ContentType.Link,
                     content: 'hyperlinks',
-                    properties: {
+                    props: {
                         url: 'https://ej2.syncfusion.com/documentation/',
+                        openInNewWindow: true
                     }
                 },
                 {
-                    contentType: ContentType.Text,
-                    content: ', inline ',
+                    type: ContentType.Text,
+                    content: ', inline '
                 },
                 {
-                    contentType: ContentType.Text,
-                    content: 'code snippets.',
-                    properties: {
-                        styles: { inlineCode: true },
-                    }
+                    type: ContentType.Code,
+                    content: 'code snippets.'
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: '\nUser mentions like'
                 },
                 {
-                    contentType: ContentType.Mention,
-                    properties: { userId: "user1" }
+                    type: ContentType.Mention,
+                    id: 'user1'
                 },
                 {
-                    contentType: ContentType.Text,
-                    content: ', and labels such as '
+                    type: ContentType.Text,
+                    content: ', and labels such as'
                 },
                 {
-                    contentType: ContentType.Label,
-                    properties: { labelId: 'label1' }
+                    type: ContentType.Label,
+                    props: { labelId: 'label1'}
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: '.'
                 }
             ]
         }
     ];
+    public users = [
+        { id: 'user1', user: 'John Doe' }
+    ];
+
+    public labelSettings = {
+        labelItems: [
+            { id: 'label1', text: 'Bug', labelColor: '#ff5252', groupHeader: 'Status' }
+        ]
+    };
 }

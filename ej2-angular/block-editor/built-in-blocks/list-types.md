@@ -10,21 +10,21 @@ domainurl: ##DomainURL##
 
 # Lists in the Angular Block Editor Component
 
-The Syncfusion Angular Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](../api/blockeditor/blockModel#blockType) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Syncfusion Angular Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [type](../api/blockeditor/blockModel/#type) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
 ## Configuring the Bullet List
 
-You can render a Bullet List block by setting the [blockType](../api/blockeditor/blockModel#blockType) property to `BulletList`. This block type is used to display unordered lists.
+You can render a Bullet List block by setting the [type](../api/blockeditor/blockModel/#type) property to `BulletList`. This block type is used to display unordered lists.
 
-### BlockType
+### Type
 
 ```typescript
 // Adding a bullet list block
 {
-    blockType: 'BulletList',
+    type: 'BulletList',
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]
@@ -33,16 +33,16 @@ You can render a Bullet List block by setting the [blockType](../api/blockeditor
 
 ### Configure Placeholder
 
-The [placeholder](../api/blockeditor/blockModel#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
+The [placeholder](../api/blockeditor/blockModel/#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
 
 ```typescript
 // Adding a placeholder value 
 {
-    blockType: 'BulletList',
-    properties: { placeholder: 'bullet'},
+    type: 'BulletList',
+    props: { placeholder: 'bullet'},
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]
@@ -51,17 +51,17 @@ The [placeholder](../api/blockeditor/blockModel#placeholder) property sets the t
 
 ## Configuring the Numbered List
 
-You can render a Numbered List block by setting the [blockType](../api/blockeditor/blockModel#blockType) property to `NumberedList`. This block type is used to display ordered lists.
+You can render a Numbered List block by setting the [type](../api/blockeditor/blockModel/#type) property to `NumberedList`. This block type is used to display ordered lists.
 
 ### Type
 
 ```typescript
 // Adding a numbered list block
 {
-    blockType: 'NumberedList',
+    type: 'NumberedList',
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]
@@ -70,35 +70,35 @@ You can render a Numbered List block by setting the [blockType](../api/blockedit
 
 ### Configure Placeholder
 
-The [placeholder](../api/blockeditor/blockModel#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
+The [placeholder](../api/blockeditor/blockModel/#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
 
 ```typescript
 // Adding a placeholder value 
 {
-    blockType: 'NumberedList',
-    properties: { placeholder: 'number'},
+    type: 'NumberedList',
+    props: { placeholder: 'number'},
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]
 }
 ```
 
-## Configure the Checklist
+## Configure check list
 
-You can render a Checklist block by setting the [blockType](../api/blockeditor/blockModel#blockType) property to `Checklist`. This block type is used for creating interactive to-do lists.
+You can render a Checklist block by setting the [type](../api/blockeditor/blockModel/#type) property to `Checklist`. This block type is used for creating interactive to-do lists.
 
-### BlockType
+### Type
 
 ```typescript
 // Adding a checklist block 
 {
-    blockType: 'Checklist',
+    type: 'Checklist',
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]
@@ -107,9 +107,9 @@ You can render a Checklist block by setting the [blockType](../api/blockeditor/b
 
 ### Configure Checked State
 
-For blocks that support selection states, such as a `Checklist`, you can configure the checked state using the `properties` property with [isChecked](../api/blockeditor/blockModel#ischecked).
+For blocks that support selection states, such as a `Checklist`, you can configure the checked state using the `props` property with [isChecked](../api/blockeditor/blockModel/#ischecked).
 
-By default, the [isChecked](../api/blockeditor/blockModel#ischecked) property is set to `false`.
+By default, the [isChecked](../api/blockeditor/blockModel/#ischecked) property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,16 +128,16 @@ By default, the [isChecked](../api/blockeditor/blockModel#ischecked) property is
 
 ### Configure Placeholder
 
-The [placeholder](../api/blockeditor/blockModel#placeholder) property sets the text that appears when the block is empty. The default placeholder for a checklist is `Todo`.
+The [placeholder](../api/blockeditor/blockModel/#placeholder) property sets the text that appears when the block is empty. The default placeholder for a checklist is `To Do`.
 
 ```typescript
 // Adding a placeholder value 
 {
-    blockType: 'Checklist',
-    properties: { placeholder: 'check'},
+    type: 'Checklist',
+    props: { placeholder: 'check'},
     content: [
         {
-            contentType: ContentType.Text,
+            type: ContentType.Text,
             content: 'your content'
         }
     ]

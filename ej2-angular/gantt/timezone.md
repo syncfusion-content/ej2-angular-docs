@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Timezone in Angular Gantt
 
-The Angular Gantt component uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript’s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
-
-The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete).
+The Angular Gantt component uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript’s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete).
 
 ## Configure consistent time display
 
-Set the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property to a valid IANA timezone (e.g., "UTC") to display consistent task dates across all users, aligning taskbars with database times.
+Set the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timezone) property to a valid IANA timezone (e.g., "UTC") to display consistent task dates across all users, aligning taskbars with database times.
 
 The following example sets UTC timezone:
 
@@ -36,7 +34,7 @@ This code ensures taskbars reflect UTC dates, unaffected by local timezones.
 
 ## Set specific timezone
 
-Set a specific timezone using the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property, such as **America/New_York** (UTC -05:00), to display tasks consistently based on that timezone regardless of the local system's setting. This ensures a task from 9:00 AM to 10:00 AM in New York time, renders the same for all viewers, avoiding time differences in multi-region projects.
+Set a specific timezone using the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timezone) property, such as **America/New_York** (UTC -05:00), to display tasks consistently based on that timezone regardless of the local system's setting. This ensures a task from 9:00 AM to 10:00 AM in New York time, renders the same for all viewers, avoiding time differences in multi-region projects.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -181,7 +179,7 @@ export class AppComponent {
 
 ## Handle CRUD operations with timezone
 
-CRUD operations respect the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) set at load time, with edits processed in the user’s timezone and converted to the database timezone (e.g., UTC) in client-side events like [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete).
+CRUD operations respect the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timezone) set at load time, with edits processed in the user’s timezone and converted to the database timezone (e.g., UTC) in client-side events like [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete).
 
 The following example handles CRUD with timezone:
 

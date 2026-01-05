@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, preserving the original formatting and structure. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
 
-To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) using the items property in toolbarSettings.
+To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) using the items property in toolbarSettings.
 
 The following example shows how to configure `ImportWord`:
 
@@ -28,47 +28,7 @@ The following example shows how to configure `ImportWord`:
 {% endhighlight %}
 {% endtabs %}
 
-## Secure importing with authentication
-
-The Rich Text Editor provides functionality to import Word documents with authentication for secure importing.
-
-The [wordImporting](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#wordimporting) event provides [UploadingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/uploader/uploadingeventargs) for secure Word file import. Use `currentRequest` to add authentication headers and `customFormData` to include extra parameters in the POST body along with the uploaded file. On the server, read headers and form data from the request to validate and process the import securely.
-
-The following example demonstrates how to configure `wordImporting` for secure importing:
-
-```typescript
-
-import { Component } from '@angular/core';
-import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, ImageService,} from '@syncfusion/ej2-angular-richtexteditor';
-import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
-
-@Component({
-  selector: 'app-root',
-  template: `<ejs-richtexteditor id='editor' [toolbarSettings]='toolbarSettings' [importWord]='importWord' [wordImporting]='onWordImport'>
-    </ejs-richtexteditor>`,
-  providers: [ ToolbarService, QuickToolbarService, LinkService, ImageService, HtmlEditorService ],
-})
-
-export class AppComponent {
- private hostUrl: string = 'https://services.syncfusion.com/angular/production/';
-  public toolbarSettings: object = {
-    items: ['ImportWord'],
-  };
-  public importWord: ImportWordModel = {
-        serviceUrl: this.hostUrl + 'api/RichTextEditor/ImportFromWord',
-  };
-  public onWordImport = (args: UploadingEventArgs) => {
-    let accessToken = "Authorization_token";
-    // adding authorization header
-    args.currentRequest.setRequestHeader('Authorization', accessToken)
-    // adding custom form Data
-    args.customFormData = [{'userId': '1234'}];
-  };
-}
-
-```
-
-Here’s how to handle the server-side action for importing content from Word with authentication.
+Here’s how to handle the server-side action for importing content from Word.
 
 ```csharp
 
@@ -82,10 +42,6 @@ public class RichTextEditorController : Controller
         [Route("ImportFromWord")]
         public IActionResult ImportFromWord(IList<IFormFile> UploadFiles)
         {
-            // Read headers (e.g., Authorization)
-            var authorization = Request.Headers["Authorization"].ToString();
-            // Read custom form data (from args.customFormData)
-            var formData = Request.Form("userId").ToString();
             string HtmlString = string.Empty;
             if (UploadFiles != null)
             {
@@ -144,7 +100,7 @@ public class RichTextEditorController : Controller
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
+You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 
@@ -158,67 +114,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% endhighlight %}
 {% endtabs %}
 
-## Secure exporting with authentication
-
-The Rich Text Editor provides functionality to export Word or PDF documents with authentication for secure exporting.
-
-The [documentExporting](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#documentexporting) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
-
-The following example demonstrates how to configure `documentExporting` for secure exporting:
-
-```typescript
-
-import { Component } from '@angular/core';
-import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, ImageService,} from '@syncfusion/ej2-angular-richtexteditor';
-import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
-
-@Component({
-  selector: 'app-root',
-  template: `<ejs-richtexteditor id='editor' [toolbarSettings]='toolbarSettings' [exportWord]='exportWord' [exportPdf]='exportPdf'[documentExporting]='onDocumentExporting'>
-  </ejs-richtexteditor>`,
-  providers: [ ToolbarService, QuickToolbarService, LinkService, ImageService, HtmlEditorService ],
-})
-
-export class AppComponent {
- private hostUrl: string = 'https://services.syncfusion.com/angular/production/';
-  public toolbarSettings: object = {
-    items: ['ExportWord', 'ExportPdf'],
-  };
-  public exportWord: ExportWordModel = {
-    serviceUrl: this.hostUrl + 'api/RichTextEditor/ExportToDocx',
-    fileName: 'RichTextEditor.docx',
-    stylesheet: `
-    .e-rte-content {
-        font-size: 1em;
-        font-weight: 400;
-        margin: 0;
-    }`
-  };
-  public exportPdf: ExportPdfModel = {
-    serviceUrl: this.hostUrl + 'api/RichTextEditor/ExportToPdf',
-    fileName: 'RichTextEditor.pdf',
-    stylesheet: `
-    .e-rte-content{
-        font-size: 1em;
-        font-weight: 400;
-        margin: 0;
-    }`
-  };
-  
- public onDocumentExporting = (args: ExportingEventArgs) => {
-   const accessToken = "Authorization_token";
-  // Specify export type (e.g., 'Pdf' or 'Word')
-   args.exportType = 'Pdf';
-  // Add authentication header
-   args.currentRequest = [{ Authorization: accessToken }];
-  // Add custom form data
-   args.customFormData = [{ userId: '1234' }, { exportMode: 'secure' }];
- };
-}
-
-```
-
-Here’s how to handle the server-side action for exporting content to PDF and Microsoft Word with authentication
+Here’s how to handle the server-side action for exporting content to PDF and Microsoft Word
 
 ```csharp
 
@@ -232,10 +128,6 @@ public class RichTextEditorController : Controller
         [Route("ExportToPdf")]
         public ActionResult ExportToPdf([FromBody] ExportParam args)
         {
-            // Read headers (e.g., Authorization)
-            var authorization = Request.Headers["Authorization"].ToString();
-            // Read custom form data (from args.customFormData)
-            var formData = args.CustomFormData;
             string htmlString = args.html;
             if (htmlString == null && htmlString == "")
             {
@@ -310,8 +202,6 @@ public class RichTextEditorController : Controller
         public class ExportParam
         {
             public string html { get; set; }
-            // For receiving custom form data
-            public List<Dictionary<string,string>> CustomFormData { get; set; }
         }
     }    
 

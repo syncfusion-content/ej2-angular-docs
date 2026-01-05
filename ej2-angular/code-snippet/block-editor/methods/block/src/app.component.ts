@@ -20,31 +20,31 @@ export class AppComponent {
     public blocksData = [
         {
             id: 'block-1',
-            blockType: 'Heading',
-            properties: { level: 1},
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Sample Heading'
                 }
             ]
         },
         {
             id: 'block-2',
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This is a sample paragraph block.'
                 }
             ]
         },
         {
             id: 'block-3',
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This is another paragraph block.'
                 }
             ]
@@ -55,8 +55,8 @@ export class AppComponent {
     public addBlock = () => {
         const newBlock: BlockModel = {
         id: 'new-block',
-        blockType: 'Paragraph',
-        content: [{ contentType: ContentType.Text, content: 'This is a newly added block' }]
+        type: 'Paragraph',
+        content: [{ type: ContentType.Text, content: 'This is a newly added block' }]
         };
         this.blockEditorComponent.addBlock(newBlock, 'block-2', true);
         this.displayOutput(`Block added successfully with ID: ${newBlock.id}`);
@@ -72,7 +72,7 @@ export class AppComponent {
     public getBlock = () => {
         const block = this.blockEditorComponent.getBlock('block-1');
         if (block && block.content) {
-            this.displayOutput(`Block found:\nID: ${block.id}\nType: ${block.blockType}\nContent: ${block.content[0].content}`);
+            this.displayOutput(`Block found:\nID: ${block.id}\nType: ${block.type}\nContent: ${block.content[0].content}`);
         } else {
             this.displayOutput('Block with ID "block-1" not found');
         }

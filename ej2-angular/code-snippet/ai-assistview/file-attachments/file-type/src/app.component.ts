@@ -25,6 +25,6 @@ export class AppComponent {
     public attachmentSettings = {
         saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
         removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove',
-        allowedFileTypes: '.png'
+        allowedFileType: '.png'
   };
 }

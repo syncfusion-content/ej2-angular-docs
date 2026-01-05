@@ -16,7 +16,7 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Template',
+            type: 'Template',
             template: `<div class="notification-card">
                 <div class="notification-header">
                     <span class="notification-icon">📢</span>

@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType, ContextMenuItemModel } from "@syncfusion/ej2-blockeditor";
-import { ContextMenuClosingEventArgs, ContextMenuOpeningEventArgs, ContextMenuItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
+import { ContextMenuBeforeCloseEventArgs, ContextMenuBeforeOpenEventArgs, ContextMenuCloseEventArgs, ContextMenuItemClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-blockeditor';
 
 
 @Component({
@@ -18,20 +18,22 @@ import { ContextMenuClosingEventArgs, ContextMenuOpeningEventArgs, ContextMenuIt
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 1},
+            id: 'title-block',
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Context Menu Demo'
                 }
             ]
         },
         {
-            blockType: 'Quote',
+            id: 'intro-block',
+            type: 'Quote',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks.'
                 }
             ]
@@ -91,17 +93,23 @@ export class AppComponent {
         }
     ];
 
-    public contextMenuSettings =  {
+    public contextMenu =  {
         enable: true,
         showItemOnClick: true,
         items: this.customContextMenuItems,
-        opening: (args: ContextMenuOpeningEventArgs) => {
+        beforeOpen: (args: ContextMenuBeforeOpenEventArgs) => {
             // Your actions here
         },
-        closing: (args: ContextMenuClosingEventArgs) => {
+        open: (args: ContextMenuOpenEventArgs) => {
             // Your actions here
         },
-        itemSelect: (args: ContextMenuItemSelectEventArgs) => {
+        beforeClose: (args: ContextMenuBeforeCloseEventArgs) => {
+            // Your actions here
+        },
+        close: (args: ContextMenuCloseEventArgs) => {
+            // Your actions here
+        },
+        itemClick: (args: ContextMenuItemClickEventArgs) => {
             // Handle custom actions here
         }
     }

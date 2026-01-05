@@ -16,47 +16,52 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 1},
+            id: 'block-1',
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Drag and Drop Demo'
                 }
             ]
         },
         {
-            blockType: 'Paragraph',
+            id: 'block-2',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Try rearranging blocks by dragging the handle that appears when hovering over them. You can drag a single block or select multiple blocks to drag them together.'
                 }
             ]
         },
         {
-            blockType: 'BulletList',
+            id: 'block-3',
+            type: 'BulletList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Drag and drop is enabled by default'
                 }
             ]
         },
         {
-            blockType: 'NumberedList',
+            id: 'block-4',
+            type: 'NumberedList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'You can select multiple blocks and drag them together'
                 }
             ]
         },
         {
-            blockType: 'NumberedList',
+            id: 'block-5',
+            type: 'NumberedList',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Try dragging this block to rearrange the content'
                 }
             ]

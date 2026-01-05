@@ -16,22 +16,22 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 2},
+            type: 'Heading',
+            props: { level: 2},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Content Styling Options'
                 }
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Bold text: ',
-                    properties: {
+                    props: {
                     styles: { 
                         bold: true,
                         color: '#1976d2'
@@ -39,9 +39,9 @@ export class AppComponent {
                 }
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This text is bold.',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true 
                     }
@@ -50,12 +50,12 @@ export class AppComponent {
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Italic text: ',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true,
                         color: '#1976d2'
@@ -63,9 +63,9 @@ export class AppComponent {
                 }
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This text is italicized.',
-                    properties:{
+                    props:{
                     styles: { 
                         italic: true 
                     }
@@ -74,12 +74,12 @@ export class AppComponent {
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Text with color: ',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true,
                         color: '#1976d2'
@@ -87,9 +87,9 @@ export class AppComponent {
                 }
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This text has custom color.',
-                    properties:{
+                    props:{
                     styles: { 
                         color: '#e91e63' 
                     }
@@ -98,12 +98,12 @@ export class AppComponent {
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Text with background: ',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true,
                         color: '#1976d2'
@@ -111,23 +111,23 @@ export class AppComponent {
                 }
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This text has background color.',
-                    properties:{
+                    props:{
                     styles: { 
-                        backgroundColor: '#fff9c4' 
+                        bgColor: '#fff9c4' 
                     }
                 }
                 }
             ]
         },
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Multiple styles: ',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true,
                         color: '#1976d2'
@@ -135,9 +135,9 @@ export class AppComponent {
                 }
                 },
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'This text combines multiple styles.',
-                    properties:{
+                    props:{
                     styles: { 
                         bold: true,
                         italic: true,

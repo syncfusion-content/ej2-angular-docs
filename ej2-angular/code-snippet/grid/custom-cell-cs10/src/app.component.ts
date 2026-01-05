@@ -21,7 +21,7 @@ const instance: Internationalization = new Internationalization();
         <ng-template #rowTemplate let-data>
             <tr>
                 <td class="rowphoto">
-                    <img src="https://ej2.syncfusion.com/angular/demos/assets/grid/images/{{ data.EmployeeID }}.png" alt="{{ data.EmployeeID }}" />
+                  <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
                 </td>
                 <td class="details">
                     <table class="CardTable" cellpadding="3" cellspacing="2">

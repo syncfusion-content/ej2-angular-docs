@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Download and installation in Visual studio code | Syncfusion
+title: Download and installation in Angular Visual studio code integration component | Syncfusion
 description: Learn here all about Download and installation in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Download and installation 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Download and Installation Guide
+# Download and Installation
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio Code extension in [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Angular-VSCode-Extensions). You can either install it from Visual Studio Code or download and install it from the Visual Studio Code marketplace.
 
 ## Prerequisites
 
-The following prerequisites software needs to be installed for the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extension installation and for creating the Syncfusion<sup style="font-size:70%">&reg;</sup> Web applications along with any one of the Framework(React, Pure React, Angular, and Vue).
+The following prerequisites software needs to be installed for the Syncfusion<sup style="font-size:70%">&reg;</sup> Web extension installation and for creating the Syncfusion<sup style="font-size:70%">&reg;</sup> Web applications along with any one of the Framework(React, Angular, and Vue).
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 

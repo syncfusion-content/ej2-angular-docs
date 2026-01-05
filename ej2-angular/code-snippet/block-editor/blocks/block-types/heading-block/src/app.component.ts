@@ -16,41 +16,41 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Heading',
-            properties: { level: 1},
+            type: 'Heading',
+            props: { level: 1},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Main Document Title'
                 }
             ]
         },
         {
-            blockType: 'Heading',
-            properties: { level: 2},
+            type: 'Heading',
+            props: { level: 2},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Chapter Overview'
                 }
             ]
         },
         {
-            blockType: 'Heading',
-            properties: { level: 3},
+            type: 'Heading',
+            props: { level: 3},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Section Introduction'
                 }
             ]
         },
         {
-            blockType: 'Heading',
-            properties: { level: 4},
+            type: 'Heading',
+            props: { level: 4},
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Sub-section Details'
                 }
             ]

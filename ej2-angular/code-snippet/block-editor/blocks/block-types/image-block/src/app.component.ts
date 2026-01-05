@@ -16,17 +16,17 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
     {
-        blockType: 'Image',
-        properties: {
+        type: 'Image',
+        props: {
             src: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png',
             altText: 'Sample image'
         }
     },
     {
-        blockType: 'Paragraph',
+        type: 'Paragraph',
         content: [
             {
-                contentType: ContentType.Text,
+                type: ContentType.Text,
                 content: 'You can customize images further by configuring properties like allowedTypes for file upload restrictions, saveFormat for storage preferences, and cssClass for custom styling.'
             }
         ]

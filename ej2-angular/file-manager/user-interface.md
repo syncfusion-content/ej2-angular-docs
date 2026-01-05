@@ -59,13 +59,9 @@ The File Manager provides navigation between files and folders using the followi
 
 The navigation pane is an injectable module that displays the folder hierarchy as a tree structure, allowing users to easily navigate between folders. It appears on the left side of the File Manager interface.
 
-You can customize the navigation pane using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#navigationpanesettings) property:
+You can customize the navigation pane using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) property:
 * Control minimum and maximum width
 * Show or hide the pane using the `visible` option
-
-You can customize the appearance of the navigation pane by using the `navigationPaneTemplate` property. This enables you to modify icons, display text, and include additional elements to suit your application's requirements.
-
-![Navigation Pane Template Output](./images/navigationpane-template.png)
 
 ### Breadcrumb
 
@@ -80,17 +76,13 @@ The view section displays files and folders for browsing. The File Manager offer
 * [Large Icons View](#large-icons-view)
 * [Details View](#details-view)
 
-The `large icons view` is the default starting view in the File Manager. The view can be changed by using the [toolbar](#toolbar) view button or by using the view menu in [context menu](#context-menu). The [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#view) API can also be used to change the initial view of the File Manager.
+The `large icons view` is the default starting view in the File Manager. The view can be changed by using the [toolbar](#toolbar) view button or by using the view menu in [context menu](#context-menu). The [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) API can also be used to change the initial view of the File Manager.
 
 ### Large icons view
 
 In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content.  For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
 
 ![LargeIconView](./images/largeiconsview.png)
-
-The `largeIconsTemplate` property enables complete customization of how folders and files are rendered in the `Large Icons View`. It allows you to enhance the layout by adding background images, custom file-type icons, and actions such as dropdown menus.
-
-![Large Icon View Template Output](./images/large-icons-view-template.png)
 
 ### Details view
 
@@ -100,7 +92,7 @@ The details view is an injectable module that displays files and folders in a so
 * **Type**: File type information
 * **Size**: File size
 
-You can add additional columns using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#detailsviewsettings) API. This view allows sorting by clicking on column headers.
+You can add additional columns using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) API. This view allows sorting by clicking on column headers.
 
 ![DetailsView](./images/detailsview.png)
 
@@ -108,7 +100,7 @@ You can add additional columns using the [detailsViewSettings](https://ej2.syncf
 
 The context menu appears on user interaction such as right-click. The File Manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders),  and layout (empty area in view).
 
-Context menu can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#contextmenusettings), [menuOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#menuopen), and [menuClick](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#menuclick) events.
+Context menu can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#contextmenusettings), [menuOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#menuopen), and [menuClick](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#menuclick) events.
 
 *Refer [Context Menu](./file-operations#context-menu) section in file operations to know more about the menu items present in context menu*.
 

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
-import { BlockModel, AfterPasteCleanupEventArgs } from "@syncfusion/ej2-blockeditor";
+import { BlockModel, AfterPasteEventArgs } from "@syncfusion/ej2-blockeditor";
 
 @Component({
     imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
@@ -17,15 +17,16 @@ export class AppComponent {
     public output = '';
     public blockData: BlockModel[] = [
         {
-            blockType: 'Paragraph'
+            id: 'demo-block',
+            type: 'Paragraph'
         }
     ];
     // Configure paste cleanup settings
-    public pasteCleanupSettings = {
+    public pasteSettings = {
         keepFormat: false,
         plainText: true
     };
-    public handleAfterPaste = (args: AfterPasteCleanupEventArgs) => {
+    public handleAfterPaste = (args: AfterPasteEventArgs) => {
         this.displayOutput(`After Paste Event: Processed content length: ${args.content.length} characters`);
     }
 

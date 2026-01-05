@@ -16,53 +16,53 @@ import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
 export class AppComponent {
     public blocksData: BlockModel[] = [
         {
-            blockType: 'Paragraph',
+            type: 'Paragraph',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Task List:'
                 }
             ]
         },
         {
-            blockType: 'Checklist',
+            type: 'Checklist',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Completed task (checked)'
                 }
             ],
-            properties: {isChecked: true}
+            props: {isChecked: true}
         },
         {
-            blockType: 'Checklist',
+            type: 'Checklist',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Pending task (unchecked)'
                 }
             ],
-            properties: {isChecked: false}
+            props: {isChecked: false}
         },
         {
-            blockType: 'Checklist',
+            type: 'Checklist',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'High priority task'
                 }
             ],
-            properties: {isChecked: true}
+            props: {isChecked: true}
         },
         {
-            blockType: 'Checklist',
+            type: 'Checklist',
             content: [
                 {
-                    contentType: ContentType.Text,
+                    type: ContentType.Text,
                     content: 'Low priority task'
                 }
             ],
-            properties: {isChecked: false}
+            props: {isChecked: false}
         }
     ];
 

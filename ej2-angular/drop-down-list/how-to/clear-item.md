@@ -20,10 +20,6 @@ Through **programmatic** you can set `null` value to anyone of the index, text o
 The following example demonstrate about how to clear the selected item in DropDownList.
 
 {% tabs %}
-{% highlight ts tabtitle="clear.html" %}
-{% include code-snippet/dropdownlist/clear-item-cs1/src/clear.html %}
-{% endhighlight %}
-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/clear-item-cs1/src/app.component.ts %}
 {% endhighlight %}

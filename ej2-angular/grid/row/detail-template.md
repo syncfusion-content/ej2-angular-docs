@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Detail Template in Angular Grid Component
 
-The detail template feature in the Syncfusion Angular Grid enables display of additional information for each row through expandable and collapsible detail content. This feature is essential for presenting hierarchical or related data, supplementary information, or custom content that extends beyond the main grid columns. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#detailtemplate) property allows definition of an HTML template or Angular component for the detail row content.
+The detail template feature in the Syncfusion Angular Grid enables display of additional information for each row through expandable and collapsible detail content. This feature is essential for presenting hierarchical or related data, supplementary information, or custom content that extends beyond the main grid columns. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property allows definition of an HTML template or Angular component for the detail row content.
 
 Common use cases for detail templates include:
 - Displaying nested data or related records
@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
 
 The Grid component provides a powerful capability to render custom Angular components inside detail rows. This feature enables embedding of complex UI elements, such as nested grids, charts, forms, or any other Angular component within the expandable detail section.
 
-To render a custom component inside the detail row, define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#detaildatabound) event. The `detailDataBound` event is triggered after a detail row is bound to data and provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs) as a parameter.
+To render a custom component inside the detail row, define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound) event. The `detailDataBound` event is triggered after a detail row is bound to data and provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
 
 **Implementation Steps:**
 1. Create a placeholder HTML element in the detail template
@@ -147,7 +147,7 @@ For example, to render a grid inside the detail row, place an HTML div element a
 
 The Grid supports programmatic expansion of detail rows through external controls, providing enhanced user interaction flexibility. By default, detail rows are rendered in a collapsed state, but external buttons or other UI elements can trigger their expansion to reveal additional row-specific information.
 
-To expand a detail row using an external button, use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method provided by the **detailRowModule** object. This method accepts a row index parameter to specify which detail row to expand.
+To expand a detail row using an external button, use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method provided by the **detailRowModule** object. This method accepts a row index parameter to specify which detail row to expand.
 
 **Key Methods for Detail Row Control:**
 - `expand(index: number)`: Expands the detail row at the specified index
@@ -421,7 +421,3 @@ Detail template functionality has the following feature limitations:
 * State persistence
 
 These limitations are due to architectural constraints and rendering conflicts between the detail template system and the specified features.
-
-## See also
-
-* [Detail row events](../hierarchy-grid#detail-row-events)

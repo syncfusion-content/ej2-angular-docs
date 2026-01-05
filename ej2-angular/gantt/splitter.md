@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Splitter in Angular Gantt component
 
-The splitter in the Angular Gantt component divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
+The splitter in the Angular Gantt component divides the TreeGrid (task data table) and Chart (timeline with taskbars) panels, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt/#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
 ## Configure splitter position
 
-Set the splitter position using [splitterSettings.position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#position) with pixel (e.g., "300px") or percentage (e.g., "30%") values to define the TreeGrid pane width, or align to a column edge with [splitterSettings.columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#columnindex).
+Set the splitter position using [splitterSettings.position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/#position) with pixel (e.g., "300px") or percentage (e.g., "30%") values to define the TreeGrid pane width, or align to a column edge with [splitterSettings.columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/#columnindex).
 
 The following example sets a percentage-based splitter position. This configuration allocates 50% width to the TreeGrid panel.
 
@@ -34,11 +34,9 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% previewsample "page.domainurl/samples/gantt/appearance-customization/changesplitter/initial-cs1" %}
 
-> If both [position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#position) and [columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/), only `position` is applied because it takes precedence over `columnIndex`.
-
 ## Configure view modes
 
-Set predefined view modes with [splitterSettings.view](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#view):
+Set predefined view modes with [splitterSettings.view](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/#view):
 - **Default**: Displays both TreeGrid and Chart panels.
 - **Grid**: Shows only the TreeGrid panel for data-focused views.
 - **Chart**: Shows only the Chart panel for timeline visualization.
@@ -108,7 +106,7 @@ export class AppComponent implements OnInit {
 
 ## Adjust splitter position dynamically
 
-Change the splitter position using the [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt#setsplitterposition) method with pixel, percentage, or column index values, triggered by events like window resizing or button clicks.
+Change the splitter position using the [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt/#setsplitterposition) method with pixel, percentage, or column index values, triggered by events like window resizing or button clicks.
 
 The following example adjusts the splitter dynamically:
 

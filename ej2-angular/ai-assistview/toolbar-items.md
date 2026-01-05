@@ -10,77 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar items in Angular AI AssistView component
 
-You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings), [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) & [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) properties.
-
-## Configure footer toolbar
-
-By default, the footer toolbar renders the `send`, if attachment is enabled the `attachment` item will also be rendered which allows users to send the prompt text or attach files as needed.
-
-In the following example, AI AssistView component rendered with footer toolbar items such as `send` and `attachment` icons.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/file-attachments/enable-attachment/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/file-attachments/enable-attachment/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/ai-assistview/file-attachments/enable-attachment" %}
-
-### Toolbar positioning
-
-You can use the [toolbarPosition](../api/ai-assistview/footerToolbarSettingsModel#toolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
-
-By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area .
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-position/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-position/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/ai-assistview/toolbar-items/footer-position" %}
-
-### Adding custom items
-
-You can use the [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) property to add custom items for the footer toolbar in the AI AssistView. The custom items will be added with the existing built-in items in the footer toolbar.
-
-> To know more about the items, please refer to the [items](#items) section.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-settings/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-settings/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/ai-assistview/toolbar-items/footer-settings" %}
-
-### Item click
-
-The [itemClick](../api/ai-assistview/footerToolbarSettingsModel#itemclick) event is triggered when the footer toolbar item is clicked.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/ai-assistview/toolbar-items/footer-itemclick" %}
+You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings) & [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) properties.
 
 ## Adding header toolbar items
 
@@ -354,11 +284,11 @@ In the following example, AI AssistView component rendered with built-in toolbar
 
 #### Setting width
 
-You can use the [width](../api/ai-assistview/promptToolbarSettingsModel#width) property to set the width of the prompt toolbar in the AI AssistView.
+You can use the [width](../api/ai-assistview/promptToolbarSettingsModel/#width) property to set the width of the prompt toolbar in the AI AssistView.
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when the prompt toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel/#itemclicked) event is triggered when the prompt toolbar item is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -392,11 +322,11 @@ In the following example, AI AssistView renders with built-in toolbar items.
 
 #### Setting width
 
-You can use the [width](../api/ai-assistview/responseToolbarSettingsModel#width) property to set the width of the response toolbar in the AI AssistView.
+You can use the [width](../api/ai-assistview/responseToolbarSettingsModel/#width) property to set the width of the response toolbar in the AI AssistView.
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/responseToolbarSettingsModel#itemclicked) event is triggered when the response toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/responseToolbarSettingsModel/#itemclicked) event is triggered when the response toolbar item is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -452,4 +382,4 @@ You can use the [responseToolbarSettings](../api/ai-assistview#responsetoolbarse
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when the custom toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel/#itemclicked) event is triggered when the custom toolbar item is clicked.

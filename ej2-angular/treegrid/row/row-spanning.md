@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Row spanning in Angular TreeGrid component
 
-The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
+The TreeGrid provides an option to span row cells, allowing merging two or more cells in a row into a single cell. This feature can be useful in scenarios where information needs to be displayed that spans across multiple rows, but repeating the same information in each row should be avoided.
+
+To achieve this, define the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event. The rowSpan attribute is used to specify the number of rows that the current cell should span.
 
 The `queryCellInfo` event is triggered for each cell in the TreeGrid, and allows customizing the cells in the TreeGrid. By handling this event, the `rowSpan` attribute can be set for a cell to achieve row spanning.
 
-In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00 PM" column.
+In the following demo, **Lunch Break** cell is spanned to two rows in the **1:00** column. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +34,7 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 
 ## Limitations
 
-* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#updatecell) method does not support row spanning.
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updatecell) method does not support row spanning.
 * Row spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
@@ -41,32 +43,3 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
     5. Row or cell editing
     6. Batch editing
     7. CRUD
-
-## Row spanning implementation through API   
-
-The Syncfusion Angular TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
-
-The row spanning feature in the Syncfusion Angular TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-spanning-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-spanning-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treegrid/row-spanning-cs2" %}
-
-> In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
-
-### Limitation
-
-* Virtualization
-* Infinite Scrolling
-* Row Drag and Drop
-* Column Virtualization
-* Detail Template
-* Editing
-* Export

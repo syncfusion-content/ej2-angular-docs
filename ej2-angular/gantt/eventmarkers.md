@@ -22,8 +22,6 @@ Event markers utilize specific properties to define their positioning, appearanc
 
 **Visual customization**: The [cssClass](https://ej2.syncfusion.com/angular/documentation/api/gantt/eventMarker/#cssclass) property enables custom styling through CSS class applications. This property allows distinctive visual treatment for different marker types, supporting color coding, styling variations, and brand consistency.
 
-**Vertical adjustment**: The [top](https://ej2.syncfusion.com/angular/documentation/api/gantt/eventMarker/#top) property specifies the vertical offset (in pixels) of the marker from the top of the chart pane's content area. This property helps prevent visual overlap when multiple markers share the same date, ensuring clear and organized marker placement.
-
 ## Event marker configuration
 
 Event markers render as vertical lines positioned at specific dates across the entire Gantt timeline, distinguishing them from data markers which appear within individual task rows. This project-wide visibility ensures critical dates remain prominent regardless of the current view or task focus.

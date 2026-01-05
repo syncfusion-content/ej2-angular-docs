@@ -14,54 +14,49 @@ The Block Editor supports the addition of embeds to help you organize and showca
 
 ## Adding an Image Block
 
-You can use the `Image` block to showcase an image content within your editor.
+You can use the `image` block to showcase an image content within your editor.
 
 ### Configure Image Block
 
-You can render an `Image` block by setting the [blockType](../api/blockeditor/blockModel#blockType) property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can render an `Image` block by setting the [type](../api/blockeditor/blockModel/#type) property to `Image` in the block model. The `props` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
-#### Global Image Settings
-
-You can configure global settings for image blocks using the `imageBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
-
-The `imageBlockSettings` property supports the following options:
+The `Image` block [props](../api/blockeditor/blockModel/) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| saveFormat | Specifies the format to save the image. | `Base64` |
-| allowedTypes | Specifies allowed image file types for upload. | `['.jpg', '.jpeg', '.png']` |
-| width | Specifies the default display width of the image. | `auto` |
-| height | Specifies the default display height of the image. | `auto` |
-| enableResize | Enables or disables image resizing. | `true` |
-| minWidth | Minimum width allowed for resizing. | `''` |
-| maxWidth | Maximum width allowed for resizing. | `''` |
-| minHeight | Minimum height allowed for resizing. | `''` |
-| maxHeight | Maximum height allowed for resizing. | `''` |
-
-#### Configure Image Block Properties
-
-The `Image` block [properties](../api/blockeditor/blockModel) property supports the following options:
-
-| Property | Description | Default Value |
-|----------|-------------|---------------|
-| src | Specifies the image path. | `''` |
+| saveFormat | Specifies the format for saving the image. When set to `Base64`, the image data is embedded directly into the saved content. | `Base64` |
+| allowedTypes | Specifies the allowed image file types that can be uploaded. | `['.jpg', '.jpeg', '.png']` |
 | width | Specifies the display width of the image. | `''` |
 | height | Specifies the display height of the image. | `''` |
+| minWidth | Specifies the minimum width of the image in pixels. | `40` |
+| maxWidth | Specifies the maximum width of the image as a pixel or percentage string. | `''` |
+| minHeight | Specifies the minimum height of the image in pixels. | `40`|
+| maxHeight | Specifies the maximum height of the image as a pixel or percentage string. | `''` |
 | altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
+| cssClass | Specifies one or more CSS classes to apply to the image element for custom styling. | `''` |
+| readOnly | Specifies whether the image is in a read-only (non-editable) state. | `false` |
 
-### BlockType & Properties
+### Type & Props
 
 The following example demonstrates how to pre-configure an `Image` block in the editor.
 
 ```typescript
 // Adding an Image block
  {
-    blockType: 'Image',
-    properties: {
+    type: 'Image',
+    props: {
         src: '',
+        saveFormat: 'Base64',
+        allowedTypes: ['.png', '.gif'],
         width: '200px',
         height: '100px',
+        minWidth: 50,
+        maxWidth: 500,
+        minHeight: 50,
+        maxHeight: 300,
         altText: '',
+        cssClass: 'img-custom',
+        readOnly: true
     }
 }
 ```

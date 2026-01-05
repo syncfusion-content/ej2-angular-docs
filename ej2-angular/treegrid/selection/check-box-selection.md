@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check box selection in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and configure checkbox selection in theAngular TreeGrid component, including selection modes, persistence
+description: Learn how to enable and configure checkbox selection in the Syncfusion Angular TreeGrid component, including selection modes, persistence, and row-only selection.
 platform: ej2-angular
 control: Check box selection
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Checkbox Selection provides an option to select multiple TreeGrid records with help of checkbox in each row.
 
-To render a checkbox in each TreeGrid row, add a column with type set to `CheckBox` using the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) property.
+To render a checkbox in each TreeGrid row, add a column with type set to `CheckBox` using the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,12 +26,12 @@ To render a checkbox in each TreeGrid row, add a column with type set to `CheckB
 
 {% previewsample "page.domainurl/samples/treegrid/selection-cs2" %}
 
-> By default, selection is allowed via clicking either a row or its checkbox. To restrict selection to only the checkbox, set the [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#checkboxonly) property to `true`.
-> To persist selection across operations, set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#persistselection) to `true`. For persisted selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property.
+> By default, selection is allowed via clicking either a row or its checkbox. To restrict selection to only the checkbox, set the [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxonly) property to `true`.
+> To persist selection across operations, set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#persistselection) to `true`. For persisted selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
 
 ## Checkbox selection mode
 
-Checkbox selection supports two modes, which can be set using [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#checkboxmode):
+Checkbox selection supports two modes, which can be set using [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxmode):
 
 * **Default** (default): Multiple rows can be selected by clicking their checkboxes or rows sequentially.
 
@@ -51,9 +51,9 @@ Checkbox selection supports two modes, which can be set using [`selectionSetting
 
 > Checkbox Selection is intended for row selection only and is not compatible with cell selection mode.
 
-## Conditional row selection
+## Conditional row selection using isRowSelectable
 
-The TreeGrid supports conditional row selection through the [isRowSelectable](https://ej2.syncfusion.com/angular/documentation/api/treegrid#isRowSelectable) property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
+The TreeGrid supports conditional row selection through the [isRowSelectable](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#isRowSelectable) property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,41 +66,3 @@ The TreeGrid supports conditional row selection through the [isRowSelectable](ht
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/treegrid/selection-cs14" %}
-
-In this sample, checkbox selection is disabled for rows where the "Progress" column has the value **"Completed"**.
-
-## Checkbox Selection In Tree Column
-
-1. ### Enable checkboxes in tree column
-
-   To render checkboxes in tree column, you need to set `columns.showCheckbox` property as `true`.
-
-   It is possible to select rows hierarchically using checkboxes in TreeGrid by enabling the `autoCheckHierarchy` property. When a parent record’s checkbox is checked, the checkboxes of its child records are automatically selected and vice-versa.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/selection-cs16/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/selection-cs16/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treegrid/selection-cs16" %}
-
-2. ### Checkbox selection in tree column with virtualization
-
-The TreeGrid component is designed to handle large datasets while providing flexible checkbox selection with virtualization enabled. The [`showCheckbox`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnmodel#showcheckbox) property displays checkboxes in tree column cells, allowing users to select or deselect them directly. This functionality is enabled by setting the property to "**true**". Similarly, the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#enablevirtualization) property enhances performance by rendering only the visible rows and columns during scrolling. This feature is activated by setting the property to "**true**".
-
-    {% tabs %}
-    {% highlight ts tabtitle="app.component.ts" %}
-    {% include code-snippet/treegrid/selection-cs15/src/app.component.ts %}
-    {% endhighlight %}
-
-    {% highlight ts tabtitle="main.ts" %}
-    {% include code-snippet/treegrid/selection-cs15/src/main.ts %}
-    {% endhighlight %}
-    {% endtabs %}
-
-    {% previewsample "page.domainurl/samples/treegrid/selection-cs15" %}
