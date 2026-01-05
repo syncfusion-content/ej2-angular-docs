@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public pageSettings: PageSettingsModel;
     ngOnInit(): void {
-        this.data = data.slice(0, 7);
+        this.data = data;
         this.pageSettings={pageSize:10};
     }
     public isRowPinned=( data: RowData)=>

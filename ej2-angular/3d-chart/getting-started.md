@@ -220,7 +220,7 @@ You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncf
 ## Add data label
 
 You can add data labels to improve the readability of the 3D Chart.
-This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dseries#datalabel) object and by injecting `DataLabel3DService` into the `@NgModule.providers`.
+This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dseriesdirective#datalabel) object and by injecting `DataLabel3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -722,21 +722,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -838,21 +832,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -921,21 +909,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -1035,20 +1017,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
-                { name: 'Sold', caption: 'Units Sold' }
+                { name: 'Sold', caption: 'Units Sold' },
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 

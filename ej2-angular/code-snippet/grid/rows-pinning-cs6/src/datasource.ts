@@ -1017,7 +1017,7 @@ export const taskData:object[] = [
     "Project": "PayrollPlus",
     "Assignee": "Liam Hall",
     "Priority": "Critical",
-    "Status": "Open",
+    "Status": "InProgress",
     "CreatedDate": "2025-09-09",
     "DueDate": "2026-01-07",
     "Progress": 0,

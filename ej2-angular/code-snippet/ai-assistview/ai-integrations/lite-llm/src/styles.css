@@ -1,0 +1,22 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+.ai-litellm-assistview {
+    height: 350px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.ai-litellm-assistview .banner-content .e-assistview-icon:before {
+    font-size: 35px;
+}
+
+.ai-litellm-assistview .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

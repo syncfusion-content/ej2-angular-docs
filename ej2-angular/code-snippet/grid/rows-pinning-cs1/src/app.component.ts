@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule  } from '@syncfusion/ej2-angular-grids'
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-
 export interface RowData {
   TaskID: number; 
   Title: string;  
@@ -12,13 +10,11 @@ export interface RowData {
   Priority: string;
   Assignee?: string;   
 }
-
 @Component({
 imports: [
         
         GridModule
     ],
-
 providers: [],
 standalone: true,
     selector: 'app-root',
@@ -34,13 +30,10 @@ standalone: true,
                  </ejs-grid>
             </div>`
 })
-
 export class AppComponent implements OnInit {
-
     public data?: object[];
-
     ngOnInit(): void {
-        this.data = data.slice(0, 7);
+        this.data = data;
     }
     public isRowPinned=( data: RowData)=>
     {
