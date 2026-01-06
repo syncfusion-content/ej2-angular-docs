@@ -445,7 +445,7 @@ The code integrates data binding, timeline settings, and toolbar features for a 
 ## See Also
 
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [Angular Gantt chart feature tour](https://www.syncfusion.com/angular-components/angular-gantt-chart)
 - [Angular Gantt chart example](https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/overview)

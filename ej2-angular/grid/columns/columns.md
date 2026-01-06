@@ -14,7 +14,7 @@ In Syncfusion Grid, columns are essential for organizing and presenting data. Co
 
 ## Column types
 
-The Syncfusion Grid component lets you specify a column's data type using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. This property determines the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) applied to the column, such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime) formatting.
+The Syncfusion Grid component lets you specify a column's data type using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property. This property determines the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) applied to the column, such as [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) formatting.
 
 Supported column types:
 
@@ -24,7 +24,7 @@ Supported column types:
 * **date**: Binds date values. Supports date formatting.
 * **datetime**: Binds combined date and time values. Supports date/time formatting.
 
-> The **checkbox** visual in a column is not a separate column type but a rendering mode. You can use `type: 'boolean'` in combination with the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property to display boolean values as checkboxes.
+> The **checkbox** visual in a column is not a separate column type but a rendering mode. You can use `type: 'boolean'` in combination with the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column#displayascheckbox) property to display boolean values as checkboxes.
 
 You can explicitly set column types using the `type` property. For example:
 
@@ -40,8 +40,8 @@ You can explicitly set column types using the `type` property. For example:
 
 {% previewsample "page.domainurl/samples/grid/column-type-cs1" %}
 
-> * If [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) is not defined, the grid detects it from the first record in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
-> * In case the first record's value for a column is null or blank, define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) for accurate filtering and editing dialogs.
+> * If [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is not defined, the grid detects it from the first record in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
+> * In case the first record's value for a column is null or blank, define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) for accurate filtering and editing dialogs.
 
 ### Difference between boolean type and checkbox type column 
 
@@ -54,7 +54,7 @@ You can explicitly set column types using the `type` property. For example:
 
 ## Column Width
 
-Adjust column width in the Grid using the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) property of a column definition. Width can be set in pixels, percentage, or as `'auto'` for automatic sizing.
+Adjust column width in the Grid using the [width](https://ej2.syncfusion.com/angular/documentation/api/grid#width) property of a column definition. Width can be set in pixels, percentage, or as `'auto'` for automatic sizing.
 
 1. Grid column widths are distributed based on the sum of declared widths. For instance, four columns in an 800 pixel–wide grid default to 200 pixels each if widths are unspecified.
 2. Specifying widths for some columns makes the grid allocate remaining space among columns without explicit widths.
@@ -93,7 +93,7 @@ Adjust column width in the Grid using the [width](https://ej2.syncfusion.com/ang
 
 ## Column formatting
 
-Column formatting enables customization of data display within grid columns. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property for number or date formatting, supporting both format strings and format options objects.
+Column formatting enables customization of data display within grid columns. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property for number or date formatting, supporting both format strings and format options objects.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,7 +115,7 @@ Column formatting enables customization of data display within grid columns. Use
 
 ### Number formatting
 
-Customize numeric values using standard or custom numeric format strings in the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property.
+Customize numeric values using standard or custom numeric format strings in the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property.
 
 Format |Description |Remarks
 -------|-------|-------
@@ -141,7 +141,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 
 ### Date formatting
 
-Display date values using standard or custom date format strings through the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. Built-in format types include **"d"**, **"D"**, **"yMd"**, or customize with an options object:
+Display date values using standard or custom date format strings through the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property. Built-in format types include **"d"**, **"D"**, **"yMd"**, or customize with an options object:
 
 Format object | Sample formatted value
 --------------|----------------------
@@ -167,7 +167,7 @@ Format object | Sample formatted value
 
 ### Date column formatting with localization
 
-Date columns can be formatted based on user locale by combining the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) and [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) properties.
+Date columns can be formatted based on user locale by combining the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) and [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) properties.
 
 Example: Set `format: "yyyy-MMM-dd"` and `locale: "es-AR"` for Spanish (Argentina) localization.
 
@@ -185,7 +185,7 @@ Example: Set `format: "yyyy-MMM-dd"` and `locale: "es-AR"` for Spanish (Argentin
 
 ### Format template column values
 
-Template columns in Grid provide a way to customize the appearance of column values using HTML templates. In addition to HTML markup, you can also use number formatting to format the value displayed in a template column. To format values in a column template, you can use Angular pipes and the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. In this example, we are using the date pipe to format the **OrderDate** value as a date in the format **'dd/MMM/yyyy'**.
+Template columns in Grid provide a way to customize the appearance of column values using HTML templates. In addition to HTML markup, you can also use number formatting to format the value displayed in a template column. To format values in a column template, you can use Angular pipes and the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property. In this example, we are using the date pipe to format the **OrderDate** value as a date in the format **'dd/MMM/yyyy'**.
 
 ```ts
  <e-column field='OrderDate' headerText='Order Date' textAlign='Right' width=120>
@@ -240,7 +240,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-Apply custom format objects to numerical or date columns via the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. Define formatting options objects per Angular’s Internationalization guidelines for advanced scenarios.
+Apply custom format objects to numerical or date columns via the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property. Define formatting options objects per Angular’s Internationalization guidelines for advanced scenarios.
 
 In the below example, the **numberFormatOptions** object is used as the `format` property for the **'Freight'** column to apply a custom numeric format with four decimal places. Similarly, the **dateFormatOptions** object is used as the `format` property for the **'OrderDate'** column to apply a custom date format displaying the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g. Sun, May 8, '23).
 
@@ -256,11 +256,11 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 
 {% previewsample "page.domainurl/samples/grid/column-format-cs2" %}
 
-> Learn more about [custom date formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) and [custom number formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-number-formatting-and-parsing).
+> Learn more about [custom date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-formats) and [custom number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing).
 
 ## Align the text of content
 
-Align cell text using the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) column property. Values include:
+Align cell text using the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column#textalign) column property. Values include:
 
 * **Left** (default): Aligns text to the left.
 * **Center**: Centers content.
@@ -281,11 +281,11 @@ Example using the `textAlign` property:
 
 {% previewsample "page.domainurl/samples/grid/grid-cs17" %}
 
-> The `textAlign` property affects only cell content; to align the header, use [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertextalign).
+> The `textAlign` property affects only cell content; to align the header, use [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertextalign).
 
 ## Render boolean value as checkbox
 
-The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column#displayascheckbox) property, which is available in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
@@ -305,7 +305,7 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 
 ## Prevent rendering checkbox for blank rows
 
-Hide a checkbox when row data is blank, even if [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) is enabled. Use the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event to detect blank rows and clear the cell content.
+Hide a checkbox when row data is blank, even if [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column#displayascheckbox) is enabled. Use the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event to detect blank rows and clear the cell content.
 
 Example implementation:
 
@@ -323,11 +323,11 @@ Example implementation:
 
 ## AutoFit columns
 
-AutoFit automatically adjusts column width to match the widest cell's content. Double-click the column header’s resizer symbol to use this feature. Set [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowresizing) to `true` and inject **ResizeService**.
+AutoFit automatically adjusts column width to match the widest cell's content. Double-click the column header’s resizer symbol to use this feature. Set [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid#allowresizing) to `true` and inject **ResizeService**.
 
 ### Resizing a column to fit its content using AutoFit method
 
-Invoke [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) to auto-size specific columns. Call `autoFitColumns` in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event for initial rendering.
+Invoke [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#autofitcolumns) to auto-size specific columns. Call `autoFitColumns` in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event for initial rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -345,7 +345,7 @@ Invoke [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/gri
 
 ### AutoFit columns with empty space
 
-Set the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofit) property to `true` so columns only use the width defined in column declarations. White space remains if total column width is less than the grid’s width.
+Set the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property to `true` so columns only use the width defined in column declarations. White space remains if total column width is less than the grid’s width.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -363,7 +363,7 @@ Set the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#aut
 
 ### AutoFit columns when changing column visibility using column chooser
 
-Use [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event (with `requestType: 'columnState'`) to auto-fit columns after toggling their visibility via column chooser.
+Use [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#autofitcolumns) in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event (with `requestType: 'columnState'`) to auto-fit columns after toggling their visibility via column chooser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -379,7 +379,7 @@ Use [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#
 
 ### AutoFit columns for specific rows
 
-AutoFit can adjust columns according to the widest content within a specific row range by sending start and end index parameters to [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns).
+AutoFit can adjust columns according to the widest content within a specific row range by sending start and end index parameters to [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#autofitcolumns).
 
 This feature will calculate the appropriate width based on the maximum content width of the specified range of rows or the header text width. Subsequently, the maximum width of the content of the specified rows or header text will be applied to the entire column of the grid.
 
@@ -399,7 +399,7 @@ Here is an example of how to autofit columns with specific rows. The first param
 
 ## Locked columns
 
-Lock columns to prevent reordering and keep them positioned at the left of the grid. Set [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#lockcolumn) to `true` on the column.
+Lock columns to prevent reordering and keep them positioned at the left of the grid. Set [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column#lockcolumn) to `true` on the column.
 
 Example:
 
@@ -426,9 +426,9 @@ The Syncfusion Grid control allows you to show or hide columns dynamically by us
 
 ### Using the visible property
 
-You can show or hide columns in the Angular Grid using the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the Angular Grid using the visible property:
+You can show or hide columns in the Angular Grid using the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the Angular Grid using the visible property:
 
-Example: Toggling the `visible` property (using a [Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started)). Call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) to update the UI.
+Example: Toggling the `visible` property (using a [Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started)). Call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) to update the UI.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -447,7 +447,7 @@ Example: Toggling the `visible` property (using a [Switch Button](https://ej2.sy
 
 ### Using methods
 
-Show or hide columns at runtime using [showColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumns) and [hideColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidecolumns). Identify columns by either `headerText` or `field`.
+Show or hide columns at runtime using [showColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumns) and [hideColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#hidecolumns). Identify columns by either `headerText` or `field`.
 
 **Based on header text**
 
@@ -489,13 +489,13 @@ Here's an example of how to show or hide a column based on the field in the Angu
 
 Enable or disable column-specific actions using these column properties:
 
-* [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowediting): Controls editing.
-* [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowfiltering): Controls filtering.
-* [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowgrouping): Controls grouping.
-* [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsorting): Controls sorting.
-* [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowreordering): Controls reordering.
-* [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowresizing): Controls resizing.
-* [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsearching): Controls searching.
+* [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowediting): Controls editing.
+* [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowfiltering): Controls filtering.
+* [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowgrouping): Controls grouping.
+* [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowsorting): Controls sorting.
+* [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowreordering): Controls reordering.
+* [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowresizing): Controls resizing.
+* [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowsearching): Controls searching.
 
 Example:
 
@@ -523,36 +523,36 @@ Syncfusion Grid for Angular enables runtime access, update, addition, or removal
 
 Use these methods on the grid instance:
 
-* **[getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumns)**: Returns an array of all column definitions.
+* **[getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumns)**: Returns an array of all column definitions.
     ```ts
     let columns = this.grid.getColumns();
     ```
-* **[getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield)**: Returns the column object by field name.
+* **[getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield)**: Returns the column object by field name.
     ```ts
     let column = this.grid.getColumnByField('ProductName');
     ```
-* **[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyuid)**: Returns a column by unique ID.
+* **[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyuid)**: Returns a column by unique ID.
     ```ts
     let column = this.grid.getColumnByUid();
     ```
-* **[getVisibleColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getvisiblecolumns)**: Returns only currently visible columns.
+* **[getVisibleColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getvisiblecolumns)**: Returns only currently visible columns.
     ```ts
     let visibleColumns = this.grid.getVisibleColumns();
     ```
-* **[getForeignKeyColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getforeignkeycolumns)**: Returns foreign key columns.
+* **[getForeignKeyColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getforeignkeycolumns)**: Returns foreign key columns.
     ```ts
     let foreignKeyColumns = this.grid.getForeignKeyColumns();
     ```
-* **[getColumnFieldNames](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnfieldnames)**: Returns all field names as an array.
+* **[getColumnFieldNames](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnfieldnames)**: Returns all field names as an array.
     ```ts
     let fieldNames = this.grid.getColumnFieldNames();
     ```
 
-> For a full API reference, see the [Grid Column API section](https://ej2.syncfusion.com/angular/documentation/api/grid/column/).
+> For a full API reference, see the [Grid Column API section](https://ej2.syncfusion.com/angular/documentation/api/grid/column).
 
 ### Updating column definitions
 
-Modify any column configuration object in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) array and call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) to apply changes.
+Modify any column configuration object in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) array and call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) to apply changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -568,7 +568,7 @@ Modify any column configuration object in the [columns](https://ej2.syncfusion.c
 
 ### Adding/Removing Columns
 
-The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) property, which can be accessed through the instance of the Grid.
+The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property, which can be accessed through the instance of the Grid.
 
 To add a new column to the Grid, you can directly **push** the new column object to the columns property.To remove a column from the Grid, you can use the **pop** method, which removes the last element from the columns array of the Grid. Alternatively, you can use the splice method to remove a specific column from the columns array.
 
@@ -588,7 +588,7 @@ Here's an example of how you can add and remove a column from the grid:
 
 ### How to refresh columns
 
-Call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) after updating, adding, or removing columns to re-render grid columns:
+Call [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) after updating, adding, or removing columns to re-render grid columns:
 
 ```ts
 this.grid.refreshColumns();
@@ -596,7 +596,7 @@ this.grid.refreshColumns();
 
 ## Responsive columns
 
-Toggle column visibility responsively using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#hideatmedia) property. This property accepts standard [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
+Toggle column visibility responsively using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column#hideatmedia) property. This property accepts standard [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
 
 In this example, the data in the Grid is displayed with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

@@ -24,7 +24,7 @@ Task constraints enhance project planning with the following advantages:
 
 ## Understand task constraint types
 
-The [constraintType]((https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype)) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
+The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfieldsmodel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
 | Constraint Type | Numeric Enum Value | Description | Example Use Case |
 |-----------------|--------------------|-------------|------------------|

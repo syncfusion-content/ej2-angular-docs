@@ -310,7 +310,7 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
   
 {% previewsample "page.domainurl/samples/gantt/columns/customformat-cs1" %}
 
->To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-number-formatting-and-parsing). 
+>To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing). 
 
 ## Align the text of content
 

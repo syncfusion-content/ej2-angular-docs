@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular TreeGrid component | Syncfusion
-description: Learn how to get started with the Angular TreeGrid component in Syncfusion Essential JS 2, including installation, configuration, and basic usage in Angular CLI applications.
+description: Learn how to get started with the Angular TreeGrid component in Syncfusion Essential JS 2, including installation, configuration, and basic usage.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -71,7 +71,7 @@ To specify the ngcc package in `package.json`, add the `-ngcc` suffix as shown:
 
 ## Registering TreeGrid module
 
-Import the TreeGridModule from the `@syncfusion/ej2-angular-treegrid` package into the Angular application ([src/app/app.component.ts](src/app/app.component.ts)).
+Import the TreeGridModule from the `@syncfusion/ej2-angular-treegrid` package into the Angular application (`src/app/app.component.ts`).
 
 ```typescript
 import { Component } from '@angular/core';
@@ -155,7 +155,7 @@ TreeGrid columns are defined as an array. The following properties customize col
 * `textAlign`: Adjusts the column alignment (default is left; set to `Right` for right alignment).
 * `format`: Formats number and date values using standard or custom formats.
 
-Tree column expansion/collapse is enabled using the [`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property.
+Tree column expansion/collapse is enabled using the [`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +171,7 @@ Tree column expansion/collapse is enabled using the [`treeColumnIndex`](https://
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs1" %}
 
-In the above example, hierarchical data binding uses the [childMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childmapping) property to define hierarchy. For self-referencing data binding, use [idMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) and [parentIdMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) to establish hierarchy.
+In the above example, hierarchical data binding uses the [childMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#childmapping) property to define hierarchy. For self-referencing data binding, use [idMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#idmapping) and [parentIdMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#parentidmapping) to establish hierarchy.
 
 ## Module injection
 
@@ -189,9 +189,9 @@ Inject these modules in the `providers` section of the root `NgModule` or compon
 
 ## Enable paging
 
-Paging provides a paged view of TreeGrid records. Enable it by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowpaging) property to true and injecting the `PageService` module. If `PageService` is not injected, the pager will not appear. Customize the pager using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pagesettings) property.
+Paging provides a paged view of TreeGrid records. Enable it by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowpaging) property to true and injecting the `PageService` module. If `PageService` is not injected, the pager will not appear. Customize the pager using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property.
 
-In root-level paging mode, only root-level rows are paged; child rows do not affect paging. Enable this using the [pageSettings.pageSizeMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#pagesizemode) property.
+In root-level paging mode, only root-level rows are paged; child rows do not affect paging. Enable this using the [pageSettings.pageSizeMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesizemode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,9 +209,9 @@ In root-level paging mode, only root-level rows are paged; child rows do not aff
 
 ## Enable sorting
 
-Sorting allows records to be ordered. Set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowsorting) property to true and inject the `SortService` module. If `SortService` is not injected, sorting via headers is unavailable.
+Sorting allows records to be ordered. Set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowsorting) property to true and inject the `SortService` module. If `SortService` is not injected, sorting via headers is unavailable.
 
-Customize sorting with the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortsettings) property.
+Customize sorting with the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,11 +229,11 @@ Customize sorting with the [`sortSettings`](https://ej2.syncfusion.com/angular/d
 
 ## Enable filtering
 
-Filtering displays a reduced subset of records based on criteria. Enable it by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property to true and injecting the `FilterService` module. If `FilterService` is not injected, the filter bar will not be rendered.
+Filtering displays a reduced subset of records based on criteria. Enable it by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) property to true and injecting the `FilterService` module. If `FilterService` is not injected, the filter bar will not be rendered.
 
-Customize filtering using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filtersettings) property.
+Customize filtering using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#filtersettings) property.
 
-By default, filtered records are shown with their parent records. Modify this using [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#hierarchymode).
+By default, filtered records are shown with their parent records. Modify this using [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#hierarchymode).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,7 +249,7 @@ By default, filtered records are shown with their parent records. Modify this us
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs4" %}
 
-> To render records in a collapsed initial state, enable the [enableCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecollapseall) property.
+> To render records in a collapsed initial state, enable the [enableCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecollapseall) property.
 
 ## Run the application
 
@@ -275,28 +275,28 @@ The output appears as follows.
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs5" %}
 
-> For a complete feature overview, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> For a complete feature overview, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) to learn how to present and manipulate data.
 
 ## Handling errors
 
-TreeGrid identifies exceptions and notifies them through the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event. This event is triggered when errors occur due to incorrect configuration or invalid API usage. The `actionFailure` event handles scenarios such as:
+TreeGrid identifies exceptions and notifies them through the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event. This event is triggered when errors occur due to incorrect configuration or invalid API usage. The `actionFailure` event handles scenarios such as:
 
-* For CRUD operations, row drag-and-drop, and persistent selection, ensure the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property is mapped to a unique data column.
+* For CRUD operations, row drag-and-drop, and persistent selection, ensure the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property is mapped to a unique data column.
 * [Paging](https://ej2.syncfusion.com/angular/documentation/treegrid/paging) is not supported with [virtualization](https://ej2.syncfusion.com/angular/documentation/treegrid/virtual-scroll).
-* Either the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) or [columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columns) property must be set to render TreeGrid.
-* To freeze columns, use only [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#isfrozen) or [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#frozencolumns), not both simultaneously.
+* Either the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) or [columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columns) property must be set to render TreeGrid.
+* To freeze columns, use only [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective#isfrozen) or [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#frozencolumns), not both simultaneously.
 * The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#detailtemplate) is not supported with virtualization or [stacked header](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-headers#stacked-header).
-* [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid#frozenrows) and `frozenColumns` are not supported with [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowtemplate), detailTemplate, or [cell editing](https://ej2.syncfusion.com/angular/documentation/treegrid/editing/cell-editing).
-* With stacked header, the [freeze](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#freeze) direction cannot be used with [column reordering](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-reorder).
+* [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid#frozenrows) and `frozenColumns` are not supported with [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowtemplate), detailTemplate, or [cell editing](https://ej2.syncfusion.com/angular/documentation/treegrid/editing/inline-editing#cell-editing).
+* With stacked header, the [freeze](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective#freeze) direction cannot be used with [column reordering](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-reorder).
 * [Selection](https://ej2.syncfusion.com/angular/documentation/treegrid/selection/selection) is not supported when using rowTemplate.
 * Ensure [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) does not exceed the total number of columns.
 * For virtualization, do not specify height and width in percentages.
 * When using the default filter ([filter bar](https://ej2.syncfusion.com/angular/documentation/treegrid/filtering/filter-bar)), avoid mixing other filter types within the same TreeGrid.
 * Do not enable both [idMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#idmapping) and [childMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#childmapping) at the same time.
-* The [showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#showcheckbox) column must be defined only in the tree column.
-* [textAlign](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective/#textalign) right is not applicable for tree columns.
+* The [showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective#showcheckbox) column must be defined only in the tree column.
+* [textAlign](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnDirective#textalign) right is not applicable for tree columns.
 
-The following example demonstrates use of the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event to display an exception for a missing `isPrimaryKey` configuration:
+The following example demonstrates use of the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event to display an exception for a missing `isPrimaryKey` configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

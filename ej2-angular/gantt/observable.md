@@ -120,4 +120,4 @@ Full CRUD operations (Create, Read, Update, Delete) are not supported with Obser
 ## See also
 - [How to bind data to the Gantt component?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to handle virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to handle virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
