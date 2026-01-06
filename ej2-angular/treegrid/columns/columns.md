@@ -478,25 +478,6 @@ The following example demonstrates how to show or hide a column based on the fie
   
 {% previewsample "page.domainurl/samples/treegrid/column-visible-cs3" %}
 
-## Checkbox Column
-
-To render checkboxes in an existing column, set the [columns.showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnmodel#showcheckbox) property to true.
-
-Rows can be selected hierarchically using checkboxes by enabling the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid#autocheckhierarchy) property. Selecting a parent record checkbox selects its child records.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/selection-cs16/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/selection-cs16/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treegrid/selection-cs16" %}
-
-
 ## Controlling TreeGrid actions
 
 Various actions such as filtering, sorting, resizing, reordering, editing, and searching can be controlled for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid using the following properties:

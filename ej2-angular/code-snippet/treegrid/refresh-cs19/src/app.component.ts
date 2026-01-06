@@ -4,9 +4,9 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { projectData } from './datasource';
-import { TreeGridComponent,  ToolbarItems, ToolbarService, PageService, PdfExportService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,  ToolbarItems, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-treegrid';
 import { Query } from '@syncfusion/ej2-data';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
@@ -18,10 +18,9 @@ imports: [
         DropDownListAllModule
     ],
 
-providers: [PageService, SortService, FilterService],
+providers: [PageService, SortService, FilterService, ToolbarService, PageService, PdfExportService],
 standalone: true,
     selector: 'app-container',
-    providers: [ToolbarService, PageService, PdfExportService],
     template: `<ejs-treegrid #treegridObj [dataSource]='data' idMapping='TaskID'
     parentIdMapping='parentID' [treeColumnIndex]='1' [allowPaging]='true' [pageSettings]='initialPage'
     [toolbar]='toolbarOptions' [allowPdfExport]='true' (pdfExportComplete)='pdfExportComplete()'
