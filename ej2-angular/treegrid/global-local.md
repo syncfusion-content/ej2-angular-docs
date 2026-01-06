@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global localization in Angular TreeGrid component | Syncfusion
-description: Learn about global localization in the Syncfusion Angular TreeGrid component of Essential JS 2, including localization, internationalization, and right-to-left support.
+description: Learn about global localization in the Syncfusion Angular TreeGrid component, including localization, internationalization, and RTL support.
 platform: ej2-angular
 control: Global local
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows customization of the default text content in the TreeGrid. The TreeGrid includes static text in various features, such as the toolbar, filter menus, and pager. These can be localized for different cultures (e.g., Arabic, Deutsch, French) by providing the appropriate [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library allows customization of the default text content in the TreeGrid. The TreeGrid includes static text in various features, such as the toolbar, filter menus, and pager. These can be localized for different cultures (e.g., Arabic, Deutsch, French) by providing the appropriate [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#locale) value and translation object.
 
 The following locale keywords are used in the TreeGrid:
 
@@ -162,7 +162,7 @@ When localizing the TreeGrid, include dependent components such as DatePicker, F
     }
     ```
 
-Below is an example showing how to load localization keys for TreeGrid and its dependencies using the [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class, and updating the `locale` property of TreeGrid with the culture name:
+Below is an example showing how to load localization keys for TreeGrid and its dependencies using the [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class, and updating the `locale` property of TreeGrid with the culture name:
 
 ```typescript
 L10n.load({
@@ -189,7 +189,7 @@ L10n.load({
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization/) library is used to globalize numbers, dates, and time values in the TreeGrid using format strings in [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
+The [`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library is used to globalize numbers, dates, and time values in the TreeGrid using format strings in [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,11 +204,11 @@ The [`Internationalization`](../common/internationalization/) library is used to
 {% previewsample "page.domainurl/samples/treegrid/internationalization-cs2" %}
 
 > In the above sample, the `Price` column is formatted using `NumberFormatOptions`.
-> By default, the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) value is `en-US`. To use another culture, update the `locale` property accordingly.
+> By default, the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#locale) value is `en-US`. To use another culture, update the `locale` property accordingly.
 
 ## Right to left (RTL)
 
-RTL support allows the TreeGrid's text direction and layout to switch from left to right. This improves accessibility and the user experience for right-to-left languages (such as Arabic, Farsi, and Urdu). To enable RTL in TreeGrid, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablertl) property to true.
+RTL support allows the TreeGrid's text direction and layout to switch from left to right. This improves accessibility and the user experience for right-to-left languages (such as Arabic, Farsi, and Urdu). To enable RTL in TreeGrid, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablertl) property to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -224,7 +224,7 @@ RTL support allows the TreeGrid's text direction and layout to switch from left 
 
 ## See also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)
+* [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)
 
-> To discover more features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) for usage and data manipulation.
+> To discover more features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) for usage and data manipulation.
