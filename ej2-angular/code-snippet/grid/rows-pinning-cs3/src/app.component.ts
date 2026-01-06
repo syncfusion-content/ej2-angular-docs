@@ -13,7 +13,6 @@ export interface RowData {
   Assignee?: string;   
 }
 
-
 @Component({
 imports: [
         
@@ -26,8 +25,7 @@ standalone: true,
     template: `<div>
                  <ejs-grid [dataSource]='data' height="290" [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
                     <e-columns>
-                        <e-column type="checkbox" width="70"></e-column>        
-                        <e-column field="TaskID" headerText="ID" width="80" isPrimaryKey="true" textAlign="Right"></e-column>
+                        <e-column field="TaskID" headerText="ID" width="80" isPrimaryKey="true" textAlign="Right"></e-column>        
                         <e-column field="Title" headerText="Title" width="100"></e-column>
                         <e-column field="Status" headerText="Status" width="100"></e-column>
                         <e-column field="Assignee" headerText="Assignee" width="100"></e-column>
@@ -42,7 +40,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public pageSettings: PageSettingsModel;
     ngOnInit(): void {
-        this.data = data.slice(0, 7);
+        this.data = data;
         this.pageSettings={pageSize:10};
     }
     public isRowPinned=( data: RowData)=>

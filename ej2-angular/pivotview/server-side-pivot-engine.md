@@ -37,7 +37,7 @@ This section explains how to connect the Pivot Table to the server-side Pivot En
 Run the **PivotController** application (downloaded and installed in the previous section) in Visual Studio. This hosts the server-side Pivot Engine on a local server, typically at a URL like `https://localhost:44350/api/pivot/post`. Ensure the application is running before proceeding.
 
 2. **Configure the Pivot Table for server-side mode**  
-In your Angular application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel/#mode) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to `Server`. Then, specify the URL of the running **PivotController** application in the [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url) property.
+In your Angular application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettingsmodel#mode) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to `Server`. Then, specify the URL of the running **PivotController** application in the [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url) property.
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
 ```
 
 3. **Set up the Pivot Table report**  
-Define the report to organize and display data from the server-side Pivot Engine. Use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) properties to specify rows, columns, values, and formatting based on the data source in the **PivotController** application (e.g., `sales.csv` or `sales-analysis.json`). For example, you can configure the report to show product details, sales amounts, and production years.
+Define the report to organize and display data from the server-side Pivot Engine. Use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) properties to specify rows, columns, values, and formatting based on the data source in the **PivotController** application (e.g., `sales.csv` or `sales-analysis.json`). For example, you can configure the report to show product details, sales amounts, and production years.
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
@@ -119,7 +119,7 @@ The server-side Pivot Engine supports the following data sources:
 
 #### Collection
 
-The server-side pivot engine supports collection-based data sources, such as List or IEnumerable. You can bind these data sources using the `GetData` method in the server-side controller. In the Pivot Table, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptionsModel/#type) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to `JSON`, which is the default value.
+The server-side pivot engine supports collection-based data sources, such as List or IEnumerable. You can bind these data sources using the `GetData` method in the server-side controller. In the Pivot Table, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to `JSON`, which is the default value.
 
 In the server-side application, define the collection data source in the **DataSource.cs** file, as shown below:
 
@@ -178,7 +178,7 @@ public async Task<object> GetData(FetchData param)
 }
 ```
 
-Finally, configure the Pivot Table by setting the appropriate report in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to match the data source, as shown below:
+Finally, configure the Pivot Table by setting the appropriate report in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to match the data source, as shown below:
 
 ```javascript
 this.dataSourceSettings = {
@@ -246,7 +246,7 @@ public async Task<object> GetData(FetchData param)
         });
 }
 ```
-Then, configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) property in the Pivot Table to use the JSON data source:
+Then, configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) property in the Pivot Table to use the JSON data source:
 
 ```javascript
 this.dataSourceSettings = {
@@ -293,7 +293,7 @@ public async Task<object> GetData(FetchData param)
 
 #### CSV
 
-The server-side Pivot Engine supports CSV data from a local *.csv file or a remote server. To use a local CSV file, read the file using the **StreamReader** class, which converts the file content into a string. This string is then split into a collection that can be bound to the server-side Pivot Engine. In the Pivot Table, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptionsModel/#type) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **CSV**.
+The server-side Pivot Engine supports CSV data from a local *.csv file or a remote server. To use a local CSV file, read the file using the **StreamReader** class, which converts the file content into a string. This string is then split into a collection that can be bound to the server-side Pivot Engine. In the Pivot Table, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to **CSV**.
 
 In the server application, the **sales.csv** file is located in the **DataSource** folder, and its data model is defined in the **DataSource.cs** file as shown below:
 
@@ -460,7 +460,7 @@ public async Task<object> GetData(FetchData param)
 
 ```
 
-Finally, configure the Pivot Table by setting the appropriate report using the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings) property. Below is an example configuration that connects to the server-side data source:
+Finally, configure the Pivot Table by setting the appropriate report using the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property. Below is an example configuration that connects to the server-side data source:
 
 ```javascript
 this.dataSourceSettings = {
@@ -540,7 +540,7 @@ public async Task<object> GetData(FetchData param)
 }
 ```
 
-Finally, configure the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings) property for the Pivot Table on the client side. Set the appropriate fields for rows, columns, and values to match the ExpandoObject properties:
+Finally, configure the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property for the Pivot Table on the client side. Set the appropriate fields for rows, columns, and values to match the ExpandoObject properties:
 
 ```javascript
 this.dataSourceSettings = {
@@ -562,7 +562,7 @@ this.dataSourceSettings = {
 
 ##### Dynamic Objects
 
-A dynamic object allows users to bind data to the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/) without having to define a fixed model type. In a server-side application, a data source is created using dynamic objects which are available under the **PivotDynamicData** class in the **DataSource.cs** file.
+A dynamic object allows users to bind data to the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) without having to define a fixed model type. In a server-side application, a data source is created using dynamic objects which are available under the **PivotDynamicData** class in the **DataSource.cs** file.
 
 ```csharp
 public class PivotDynamicData
@@ -629,7 +629,7 @@ public async Task<object> GetData(FetchData param)
 }
 ```
 
-Finally, configure the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings) property for the Pivot Table on the client side.
+Finally, configure the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property for the Pivot Table on the client side.
 
 ```javascript
 this.dataSourceSettings = {
@@ -688,7 +688,7 @@ The memory cache is configured to expire after 60 minutes to help free up RAM. I
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowexcelexport) as **true**. Once the API is set, the user needs to call the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#excelexport) method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowexcelexport) as **true**. Once the API is set, the user needs to call the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#excelexport) method to export the pivot table to Excel by clicking an external button.
 
 > The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -722,21 +722,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -804,7 +798,7 @@ Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), 
 
 ### Add header and footer while exporting
 
-The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#footer) properties in [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) and pass it as a parameter to the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelexportproperties#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelexportproperties#footer) properties in [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelexportproperties) and pass it as a parameter to the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#excelexport) method.
 
 
 ```javascript
@@ -838,21 +832,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -886,7 +874,7 @@ export class AppComponent implements OnInit {
 
 ## CSV Export
 
-The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowexcelexport) as **true**. Once the API is set, the user needs to call the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#csvexport) method to export the pivot table to CSV by clicking an external button.
+The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowexcelexport) as **true**. Once the API is set, the user needs to call the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#csvexport) method to export the pivot table to CSV by clicking an external button.
 
 > The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -921,21 +909,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
                 { name: 'Sold', caption: 'Units Sold' },
-                { name: 'Price', caption: 'Sold Amount' }
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -1035,20 +1017,15 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            url: 'https://localhost:44350/api/pivot/post',
+            url: 'https://services.syncfusion.com/angular/production/api/pivot/post',
             mode: 'Server',
-            rows: [{
-                name: 'ProductID', caption: 'Product ID'
-            }],
-            formatSettings: [{
-                name: 'Price', format: 'C'
-            }],
-            columns: [{
-                name: 'Year', caption: 'Production Year'
-            }],
+            columns: [ { name: 'Year', caption: 'Production Year' }],
             values: [
-                { name: 'Sold', caption: 'Units Sold' }
+                { name: 'Sold', caption: 'Units Sold' },
+                { name: 'Amount', caption: 'Sold Amount' }
             ],
+            rows: [{ name: 'Country' }, {name: 'Products'}],
+            formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
         };
         this.width = '100%';
 
@@ -1113,3 +1090,41 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
 ```
 
 ![Export as Pivot](./images/export-as-pivot.png)
+
+## Secure server requests with beforeServiceInvoke
+
+Imagine you’ve wired the Pivot Table to a server endpoint and it looks great locally. When you point it at your real API, the requests return 401 errors—not because the queries are wrong, but because the server refuses to talk without credentials. The simplest, least‑invasive fix is to attach authentication headers right before each request leaves the browser.
+
+The Pivot Table exposes a window into every outgoing call through the beforeServiceInvoke event. It fires just before a request is sent and hands you an args object, so you can set args.internalProperties.headers and have the Pivot Table include them automatically. This requires no endpoint rewrites and no custom transport, and it gives you a single reliable hook that works across aggregation, sorting, filtering, grouping, exporting, and more.
+
+Start with a token you trust, issued by your auth flow after sign‑in. Keep it out of source control by retrieving it at runtime (for example, from a secure in‑memory store, a server endpoint that reads an httpOnly cookie, or a token manager that refreshes on expiry). Then merge it into the request headers so every call carries proof of identity.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/server-side-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/server-side-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/server-side-cs1" %}
+
+**Production tips**
+- Load tokens on demand and rotate them regularly; never hard-code secrets in source control.
+- If your backend expects a different header (for example, X‑API‑Key), use that instead of Authorization.
+- Configure CORS to allow any custom headers you add (for example, include Authorization in Access‑Control‑Allow‑Headers) so browsers don’t block requests.
+
+**Troubleshooting**
+- 401 or 403: Token is missing, expired, or invalid for the target route.
+- CORS preflight error: Server isn’t allowing your custom headers.
+- Missing headers: Ensure beforeServiceInvoke runs on the same Pivot instance and sets headers on every call.
+
+**Pre‑shipment checks**
+- Inspect request headers in the browser’s Network panel; Authorization (or your custom key) must be present on every call.
+- Confirm the server reads the same header and maps it to your auth middleware.
+- Reproduce 401 vs 403 responses during testing to validate end‑to‑end header handling and permissions.
+
+**Summary**
+- One event keeps requests authenticated without API redesign and reduces surprises when moving from local testing to production.

@@ -1,4 +1,4 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
@@ -6,16 +6,15 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { projectData } from './datasource';
-import { TreeGridComponent, ToolbarItems, ToolbarService,  PageService, ExcelExportService, SelectionSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, ToolbarItems, ToolbarService, ExcelExportService, SelectionSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [ TreeGridModule, ButtonModule,  DropDownListAllModule ],
-providers: [PageService, SortService, FilterService],
+providers: [PageService, SortService, FilterService, ToolbarService, PageService, ExcelExportService],
 standalone: true,
     selector: 'app-container',
-    providers: [ToolbarService, PageService, ExcelExportService],
     template: `<ejs-treegrid #treegridObj [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID' [treeColumnIndex]='1' [allowPaging]='true' [pageSettings]='initialPage' [allowPdfExport]='true' [allowExcelExport]='true' [toolbar]='toolbarOptions' (toolbarClick)='toolbarClick($event)' [selectionSettings]='selectionSettings'>
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='70' textAlign='Right'></e-column>
