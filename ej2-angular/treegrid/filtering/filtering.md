@@ -14,9 +14,9 @@ Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
-To enable filtering in the TreeGrid, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property of the TreeGrid to true. Once filtering is enabled, various filtering options can be configured through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) property of the TreeGrid. This property allows defining the behavior and appearance of the filter.
+To enable filtering in the TreeGrid, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) property of the TreeGrid to true. Once filtering is enabled, various filtering options can be configured through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings) property of the TreeGrid. This property allows defining the behavior and appearance of the filter.
 
-In the TreeGrid component, filtering actions are executed based on the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#hierarchymode) to preserve the hierarchical structure of the data.
+In the TreeGrid component, filtering actions are executed based on the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#hierarchymode) to preserve the hierarchical structure of the data.
 
 When filtering is implemented in a TreeGrid containing hierarchical data, the filter hierarchy mode dictates how the filtering action propagates throughout the hierarchical structure. This ensures that the filtering operation considers the parent-child relationships within the data.
 
@@ -42,12 +42,12 @@ Here is an example that demonstrates the default filtering feature of the TreeGr
   
 {% previewsample "page.domainurl/samples/treegrid/filtering-cs9" %}
 
-> * Filtering can be applied and cleared by using [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filter/#filterbycolumn) and [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filter/#clearfiltering) methods.
-> * To disable filtering for a particular column, set [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowfiltering) to false.
+> * Filtering can be applied and cleared by using [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid#filterbycolumn) and [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearfiltering) methods.
+> * To disable filtering for a particular column, set [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#allowfiltering) to false.
 
 ## Filter hierarchy modes
 
-The TreeGrid component offers support for a variety of filtering modes through the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#hierarchymode) property. By utilizing these filter hierarchy modes, the TreeGrid offers flexibility in displaying filtered records based on their parent-child relationships, allowing customization of the filtering behavior according to specific requirements.
+The TreeGrid component offers support for a variety of filtering modes through the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#hierarchymode) property. By utilizing these filter hierarchy modes, the TreeGrid offers flexibility in displaying filtered records based on their parent-child relationships, allowing customization of the filtering behavior according to specific requirements.
 
 The following are the types of filter modes available in the TreeGrid:
 
@@ -85,7 +85,7 @@ The following demo illustrates filtering records with different hierarchy modes.
 
 ## Initial filter
 
-To apply an initial filter, specify the filter criteria using the [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
+To apply an initial filter, specify the filter criteria using the [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
 Here is an example of how to configure the initial filter using the `predicate` object:
 
@@ -107,7 +107,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 In the TreeGrid component, an initial filter containing multiple values for a particular column can be established, which helps preset filter conditions for a specific column using multiple values. This functionality allows displaying filtered records in the TreeGrid right after the TreeGrid is initially loaded.
 
-To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#columns).
+To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#columns).
 
 The following example demonstrates how to perform an initial filter with multiple values for same **taskName** column using `filterSettings.columns` and `predicate`.
 
@@ -129,7 +129,7 @@ The following example demonstrates how to perform an initial filter with multipl
 
 By applying an initial filter with multiple values for different columns in the TreeGrid, predefined filter settings can be set for each column. This results in filtered records of the TreeGrid right after the TreeGrid is initially loaded.
 
-To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#columns).
+To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#columns).
 
 The following example demonstrates how to perform an initial filter with multiple values for different **Task ID** and **Task Name** columns using `filterSettings.columns` and `predicate`.
 
@@ -149,7 +149,7 @@ The following example demonstrates how to perform an initial filter with multipl
 
 ## Filter operators
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicateModel/#operator) property in the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#columns) object.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/predicateModel#operator) property in the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings#columns) object.
 
 The available operators and its supported data types are:
 
@@ -175,7 +175,7 @@ between|Filter the values based on the range between the start and end specified
 
 ### Change default filter operator for particular column
 
-The TreeGrid component provides the flexibility to change the default filter operator for a particular column. By default, the filter operator for string-type columns is **startsWith**, for numerical-type columns is **equal**, and for boolean-type columns is also **equal**. However, the filter operator can be customized to better match the nature of the data in a specific column. This can be achieved using the [operators](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#operators) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filtersettings) configuration.
+The TreeGrid component provides the flexibility to change the default filter operator for a particular column. By default, the filter operator for string-type columns is **startsWith**, for numerical-type columns is **equal**, and for boolean-type columns is also **equal**. However, the filter operator can be customized to better match the nature of the data in a specific column. This can be achieved using the [operators](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#operators) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#filtersettings) configuration.
 
 Here's an example that demonstrates how to change the default filter operator column:
 
@@ -198,7 +198,7 @@ Here's an example that demonstrates how to change the default filter operator co
 
 ## Prevent filtering for particular column
 
-In the TreeGrid, filtering can be prevented for a specific column by utilizing the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property of the column object and setting it to false. This feature is useful when filtering options need to be disabled for a particular column.
+In the TreeGrid, filtering can be prevented for a specific column by utilizing the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) property of the column object and setting it to false. This feature is useful when filtering options need to be disabled for a particular column.
 
 Here's an example that demonstrates how to remove the filter bar for the taskName column in the TreeGrid:
 
@@ -224,7 +224,7 @@ When implementing filtering with remote data in the TreeGrid, it's essential to 
 
 For further information about the filter hierarchy mode, refer to [this section](https://ej2.syncfusion.com/angular/documentation/treegrid/filtering/filtering#filter-hierarchy-modes).
 
-In the following code example, different filter hierarchy modes are handled on the server side. Within the dropdown, the hierarchy mode can be changed. Using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method, the hierarchy mode is passed to the server side. Based on the hierarchy mode, the records are filtered using the `PerformFiltering` method.
+In the following code example, different filter hierarchy modes are handled on the server side. Within the dropdown, the hierarchy mode can be changed. Using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method, the hierarchy mode is passed to the server side. Based on the hierarchy mode, the records are filtered using the `PerformFiltering` method.
 
 ```typescript
 
@@ -410,7 +410,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following TreeGrid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#showfilterbarstatus) property enabled on the TreeGrid [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/).
+* Filter Bar with the [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#showfilterbarstatus) property enabled on the TreeGrid [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings).
 * Custom Filter of Excel filter type.
 
 **For example:**
@@ -425,7 +425,7 @@ ab% |Returns all the value that are ends with "ab" character.
 
 ## Diacritics filter
 
-The diacritics filter feature in the TreeGrid is useful when working with text data that includes accented characters (diacritic characters). By default, the TreeGrid ignores these characters during filtering. However, if diacritic characters need to be considered in the filtering process, this feature can be enabled by setting the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#ignoreaccent) property to true using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/).
+The diacritics filter feature in the TreeGrid is useful when working with text data that includes accented characters (diacritic characters). By default, the TreeGrid ignores these characters during filtering. However, if diacritic characters need to be considered in the filtering process, this feature can be enabled by setting the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#ignoreaccent) property to true using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings).
 
 Consider the following sample where the `ignoreAccent` property is set to true in order to include diacritic characters in the filtering process:
 
@@ -445,7 +445,7 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 
 ## Filtering with case sensitivity
 
-The TreeGrid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when controlling whether filtering operations should consider the case of characters. It can be achieved by using the [enableCaseSensitivity](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) of the grid object through the TreeGrid instance.
+The TreeGrid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when controlling whether filtering operations should consider the case of characters. It can be achieved by using the [enableCaseSensitivity](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#enablecasesensitivity) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) of the grid object through the TreeGrid instance.
 
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
@@ -467,7 +467,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 The TreeGrid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**. This feature allows tailoring the filtering experience to suit the specific needs of each column in the TreeGrid. For example, a menu-based filter might be preferred for a task name column, an Excel-like filter for a Start date column. 
 
-It can be achieved by adjusting the [column.filter.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filter) property based on requirements.
+It can be achieved by adjusting the [column.filter.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#filter) property based on requirements.
 
 Here's an example where the menu filter is enabled by default for all columns, but the filter types can be dynamically modified through a dropdown:
 
@@ -485,13 +485,13 @@ Here's an example where the menu filter is enabled by default for all columns, b
   
 {% previewsample "page.domainurl/samples/treegrid/filtering-cs18" %}
 
-> [View the GitHub sample demonstrating different filter dialogs in a TreeGrid column.](https://github.com/SyncfusionExamples/How-to-Work-with-Filtering-Options-in-Angular-Tree-Grid/)
+> [View the GitHub sample demonstrating different filter dialogs in a TreeGrid column.](https://github.com/SyncfusionExamples/How-to-Work-with-Filtering-Options-in-Angular-Tree-Grid)
 
 ## Filter grid programmatically with single and multiple values using method 
 
 Programmatic filtering in the TreeGrid with single and multiple values allows applying filters to specific columns in the TreeGrid without relying on interactions through the interface.
 
-This can be achieved by utilizing the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filterbycolumn) method of the TreeGrid.
+This can be achieved by utilizing the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid#filterbycolumn) method of the TreeGrid.
 
 The following example demonstrates how to programmatically filter the TreeGrid using single and multiple values for the **taskID** and **taskName** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
 
@@ -537,15 +537,15 @@ Below is an example demonstrating how to retrieve filtering data in a TreeGrid u
 
 **2. Using the properties in the FilterEventArgs object**
 
-Alternatively, the properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) object can be used to obtain the filter record details.
+Alternatively, the properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs) object can be used to obtain the filter record details.
 
-* [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#columns): This property returns the collection of filtered columns.
+* [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#columns): This property returns the collection of filtered columns.
 
-* [currentFilterObject](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilterobject): This property returns the object that is currently filtered.
+* [currentFilterObject](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#currentfilterobject): This property returns the object that is currently filtered.
 
-* [currentFilteringColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#currentfilteringcolumn): This property returns the column name that is currently filtered.
+* [currentFilteringColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#currentfilteringcolumn): This property returns the column name that is currently filtered.
 
-To access these properties, use the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event handler as shown below:
+To access these properties, use the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event handler as shown below:
 
 ```typescript
 actionComplete(args: FilterEventArgs) {
@@ -557,7 +557,7 @@ actionComplete(args: FilterEventArgs) {
 
 ## Clear filtering using methods
 
-The TreeGrid provides a method called [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearfiltering) to clear the filtering applied to the TreeGrid. This method is used to remove the filter conditions and reset the TreeGrid to its original state. 
+The TreeGrid provides a method called [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearfiltering) to clear the filtering applied to the TreeGrid. This method is used to remove the filter conditions and reset the TreeGrid to its original state. 
 
 Here's an example of how to clear the filtering in a TreeGrid using the `clearFiltering` method:
 
@@ -579,7 +579,7 @@ Here's an example of how to clear the filtering in a TreeGrid using the `clearFi
 
 Filtering events allow customizing the behavior of the TreeGrid when filtering is applied. Filtering can be prevented for specific columns, messages can be shown, or other actions can be performed to suit application needs.
 
-To implement filtering events in the TreeGrid, the available events such as [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) can be utilized. These events allow intervening in the filtering process and customizing it as needed.
+To implement filtering events in the TreeGrid, the available events such as [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) can be utilized. These events allow intervening in the filtering process and customizing it as needed.
 
 In the given example, the filtering is prevented for **duration** column during `actionBegin` event.
 

@@ -89,6 +89,6 @@ export class AppComponent {
 This code displays a loading indicator during a simulated 2-second data operation, ensuring clear feedback. Use manual control only for specific business logic to avoid overriding automatic behavior.
 
 ## See also
-- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to manage data filtering?](https://ej2.syncfusion.com/angular/documentation/gantt/filtering)
 - [How to enable sorting?](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)

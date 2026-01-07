@@ -25,6 +25,6 @@ The [setScrollTop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#s
 {% previewsample "page.domainurl/samples/gantt/how-to/setscrolltop-cs1" %}
 
 ## See also
-- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to configure row selection?](https://ej2.syncfusion.com/angular/documentation/gantt/selection)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)

@@ -24,7 +24,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
+The [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript

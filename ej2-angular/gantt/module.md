@@ -78,5 +78,5 @@ Ensure modules are injected before using their features to avoid runtime errors.
 
 ## See also
 - [How to configure event markers?](https://ej2.syncfusion.com/angular/documentation/gantt/eventmarkers)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)

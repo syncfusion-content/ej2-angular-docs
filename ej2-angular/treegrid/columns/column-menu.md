@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular TreeGrid component
 
-The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides options to enable features such as sorting, filtering, column chooser, and autofit. When the column header's menu icon is clicked, a menu displays with these integrated features. To enable the column menu, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#showcolumnmenu) property to **true** in the TreeGrid configuration.
+The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides options to enable features such as sorting, filtering, column chooser, and autofit. When the column header's menu icon is clicked, a menu displays with these integrated features. To enable the column menu, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid#showcolumnmenu) property to **true** in the TreeGrid configuration.
 
 To use the column menu, inject the **ColumnMenuService** in the provider section of **AppModule**.
 
@@ -36,13 +36,13 @@ The default column menu items are displayed in the following table:
   
 {% previewsample "page.domainurl/samples/treegrid/column-menu-cs1" %}
 
-> Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#showcolumnmenu) as false.
+> Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#showcolumnmenu) as false.
 
-> The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuitems) with required items.
+> The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuitems) with required items.
 
 ## Add custom column menu item
 
-The custom column menu item feature allows adding additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid. These custom menu items can be defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel/) objects. Actions for these custom items can be defined in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuclick) event.
+The custom column menu item feature allows adding additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid. These custom menu items can be defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuitems) property, which accepts a collection of `columnMenuItemModel` objects. Actions for these custom items can be defined in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuclick) event.
 
 The following example demonstrates how to add a custom column menu item to clear the sorting of the TreeGrid:
 
@@ -59,7 +59,7 @@ The following example demonstrates how to add a custom column menu item to clear
 
 ## Customize menu items for particular columns
 
-In some scenarios, specific items need to be hidden from the column menu for particular columns. This can be achieved by defining the [columnMenuOpenEventArgs.hide](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnMenuOpenEventArgs) as true in the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuopen) event.
+In some scenarios, specific items need to be hidden from the column menu for particular columns. This can be achieved by defining the `columnMenuOpenEventArgs.hide` as true in the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuopen) event.
 
 In the following example, the **Filter** item is hidden in the column menu when opened for the **taskName** column.
 
@@ -74,7 +74,7 @@ In the following example, the **Filter** item is hidden in the column menu when 
   
 {% previewsample "page.domainurl/samples/treegrid/column-menu-cs3" %}
 
-> * Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#showcolumnmenu) as false.
+> * Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#showcolumnmenu) as false.
 
 ## Customize the icon of column menu
 
@@ -114,7 +114,7 @@ The following example demonstrates how to customize the column menu icon in the 
 
 The nested column menu feature provides an extended menu option in the TreeGrid column headers, allowing access to additional actions and options related to the columns.
 
-To enable the nested column menu feature, define the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuitems) property in the component. The `columnMenuItems` property is an array that contains the items for the column menu. Each item can be a string representing a built-in menu item or an object defining a custom menu item.
+To enable the nested column menu feature, define the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuitems) property in the component. The `columnMenuItems` property is an array that contains the items for the column menu. Each item can be a string representing a built-in menu item or an object defining a custom menu item.
 
 The following example demonstrates how to configure the `columnMenuItems` property to include a nested menu:
 
@@ -133,8 +133,8 @@ The following example demonstrates how to configure the `columnMenuItems` proper
 
 The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. These events are helpful for adding additional functionality or implementing specific actions based on interactions with the column menu.
 
-1. The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuopen) event triggers before the column menu opens.
-2. The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuclick) event triggers when the column menu of the TreeGrid is clicked.
+1. The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuopen) event triggers before the column menu opens.
+2. The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columnmenuclick) event triggers when the column menu of the TreeGrid is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
