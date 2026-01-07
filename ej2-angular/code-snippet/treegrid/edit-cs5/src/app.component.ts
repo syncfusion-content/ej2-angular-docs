@@ -4,12 +4,13 @@ import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { FormsModule } from '@angular/forms';
 import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent,EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     imports: [
-    TreeGridAllModule,DropDownListAllModule
+    TreeGridAllModule,DropDownListAllModule, FormsModule
     ],
     standalone: true,
     providers: [EditService, ToolbarService, PageService],

@@ -1,6 +1,6 @@
 import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { TreeGridModule,FreezeService,PageService } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 import { QueryCellInfoEventArgs, GridLine, Column } from '@syncfusion/ej2-angular-grids';
 import { rowSpanData } from './datasource';
@@ -10,6 +10,7 @@ import { EmitType } from '@syncfusion/ej2-base';
     imports: [TreeGridModule,],
     standalone: true,
     selector: 'app-container',
+    providers: [FreezeService,PageService],
     template: `<ejs-treegrid #treegrid [dataSource]="data" childMapping="children" [treeColumnIndex]="0" [height]="300"
         [enableRowSpan]="true" [rowHeight]="50" gridLines="Both" clipMode="EllipsisWithTooltip"
         [enableHover]="false" [allowSelection]="false" allowPaging="true" [pageSettings]="pageSettings">
