@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
     @ViewChild('pivotview', { static: false })
     public pivotGridObj?: PivotView;
 
+    // Attach an Authorization header before each server call
     beforeServiceInvoke(args:any) {
         const token = this.getAuthToken(); // obtain securely at runtime
 

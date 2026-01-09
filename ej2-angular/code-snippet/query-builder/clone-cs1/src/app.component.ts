@@ -22,7 +22,7 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `<!-- To render Query Builder. -->
-               <ejs-querybuilder #querybuilder class="row" width="70%" [dataSource]="data" [rule]="importRules" [showButtons]="showButtons">
+               <ejs-querybuilder id="querybuilder" #querybuilder class="row" width="70%" [dataSource]="data" [rule]="importRules" [showButtons]="showButtons">
                 <e-columns>
                   <e-column field="TaskID" label="Task ID" type="number"></e-column>
                   <e-column field="Name" label="Name" type="string"></e-column>

@@ -1,13 +1,12 @@
-----
+---
 layout: post
-title: AI Assistant Customization in ##Platform_Name Rich Text Editor Component
-description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
+title: Customize AI Assistant in Angular Rich Text Editor | Syncfusion
+description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 Angular Rich Text Editor component.
 platform: angular
 control: Customization of AI Assistant
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
-----
+---
 
 # Customization of AI Assistant
 
