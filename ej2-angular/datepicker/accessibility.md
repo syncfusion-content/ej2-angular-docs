@@ -50,9 +50,9 @@ It helps to provide information about the widget for assistive technology to the
 
 * **Aria-disabled** : attribute indicates the disabled state of this DatePicker component.
 
-* **Aria-activedescendent** : attribute helps in managing the current active child of the DatePicker component.
+* **Aria-activedescendant** : attribute helps in managing the current active child of the DatePicker component.
 
-For more information about accessibility of Calendar refer to the Calendar [Accessibility](http://npmci.syncfusion.com/development/angular/documentation/calendar/accessibility/) section.
+For more information about accessibility of Calendar refer to the Calendar [Accessibility](https://helpej2.syncfusion.com/angular/documentation/calendar/accessibility) section.
 
 ## Keyboard Interaction
 

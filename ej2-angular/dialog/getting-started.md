@@ -105,7 +105,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Once you have successfully installed the popups package, the component modules are ready to configure in your application from the installed location. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/dialog/how-to/render-a-dialog-using-ng-content) to learn about `ngModules`.
 
 Refer to the following snippet to import the `DialogModule` in `app.module.ts` from the `@syncfusion/ej2-angular-popups`.
 
@@ -191,7 +191,7 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 
 ```
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
 ## Running the application
@@ -223,9 +223,9 @@ html, body {
 
 ## Modal Dialog
 
-A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog/#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
 
-While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#overlayclick) event. In the below sample the Dialog close action is performed while clicking on the overlay.
+While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog#overlayclick) event. In the below sample the Dialog close action is performed while clicking on the overlay.
 
 > When the modal Dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
@@ -243,7 +243,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property.
+The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog#header) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -261,7 +261,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 The Dialog provides built-in support to render the `buttons` on the footer (for ex: ‘OK’ or ‘Cancel’ buttons). Each Dialog button allows the user to perform any action while clicking on it.
 
-The primary button will be focused automatically when open the Dialog and add the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps/#click) event to handle the actions
+The primary button will be focused automatically when open the Dialog and add the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps#click) event to handle the actions
 
 > When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
 
@@ -281,7 +281,7 @@ The below sample render with button and its click event.
 
 ## Draggable
 
-The Angular Dialog supports to [drag](https://ej2.syncfusion.com/angular/documentation/api/dialog/#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Angular Dialog supports to [drag](https://ej2.syncfusion.com/angular/documentation/api/dialog#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
 > The Dialog can be draggable only when the Dialog header is enabled.
 From `16.2.x` version, enabled draggable support for modal Dialog also.
@@ -300,7 +300,7 @@ From `16.2.x` version, enabled draggable support for modal Dialog also.
 
 ## Positioning
 
-The Angular Dialog can be positioned using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog/#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
+The Angular Dialog can be positioned using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
 
 * for X is: left, center, right (or) any offset value
 * for Y is: top, center, bottom (or) any offset value
@@ -319,7 +319,7 @@ The below example demonstrates the different Dialog positions.
   
 {% previewsample "page.domainurl/samples/dialog/position-cs1" %}
 
-> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/default) that shows how to render the dialog.
+> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/dialog/default) that shows how to render the dialog.
 
 ## See Also
 
@@ -327,4 +327,4 @@ The below example demonstrates the different Dialog positions.
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+

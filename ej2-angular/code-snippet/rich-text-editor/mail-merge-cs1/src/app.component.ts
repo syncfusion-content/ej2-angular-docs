@@ -1,11 +1,11 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import {ToolbarService,LinkService,ImageService,HtmlEditorService,RichTextEditorModule,QuickToolbarService,TableService,PasteCleanupService,ActionCompleteEventArgs,ActionBeginEventArgs,RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorModule, QuickToolbarService, TableService, PasteCleanupService, ActionCompleteEventArgs, ActionBeginEventArgs, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
 import { DropDownButtonModule, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 import { ItemModel } from '@syncfusion/ej2-splitbuttons';
 import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-    imports: [ RichTextEditorModule, DropDownButtonModule, MentionModule ],
+    imports: [RichTextEditorModule, DropDownButtonModule, MentionModule],
     standalone: true,
     selector: 'app-root',
     template: `
@@ -27,7 +27,7 @@ import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
         </ng-template>
     </ejs-mention>`,
 
-     providers: [ToolbarService,LinkService,ImageService,HtmlEditorService,QuickToolbarService,TableService,PasteCleanupService],
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService],
 })
 
 export class AppComponent {
@@ -55,9 +55,9 @@ export class AppComponent {
         { text: 'Subscription Plan' },
     ];
 
-   public dropdownContent : string = `<span style="display:inline-flex;"><span class="e-rte-dropdown-btn-text">Insert Field</span></span>`;
-   
-   public textToValueMap: { [key: string]: string } = {
+    public dropdownContent: string = `<span style="display:inline-flex;"><span class="e-rte-dropdown-btn-text">Insert Field</span></span>`;
+
+    public textToValueMap: { [key: string]: string } = {
         'First Name': 'FirstName',
         'Last Name': 'LastName',
         'Support Email': 'SupportEmail',
@@ -104,12 +104,14 @@ export class AppComponent {
     }
 
     OnActionComplete(e: ActionCompleteEventArgs): void {
+        const toolbar = this.mailMergeEditor?.getToolbar();
+        if (!toolbar) return;
         if (e.requestType === 'SourceCode') {
-            this.mailMergeEditor.getToolbar().querySelector('#merge_data').parentElement.classList.add('e-overlay');
-            this.mailMergeEditor.getToolbar().querySelector('#insertField').parentElement.classList.add('e-overlay');
+            toolbar.querySelector('#merge_data')?.parentElement?.classList.add('e-overlay');
+            toolbar.querySelector('#insertField')?.parentElement?.classList.add('e-overlay');
         } else if (e.requestType === 'Preview') {
-            this.mailMergeEditor.getToolbar().querySelector('#merge_data').parentElement.classList.remove('e-overlay');
-            this.mailMergeEditor.getToolbar().querySelector('#insertField').parentElement.classList.remove('e-overlay');
+            toolbar.querySelector('#merge_data')?.parentElement?.classList.remove('e-overlay');
+            toolbar.querySelector('#insertField')?.parentElement?.classList.remove('e-overlay');
         }
     }
 
@@ -123,7 +125,7 @@ export class AppComponent {
         if (args.item.text != null) {
             const value = this.textToValueMap[args.item.text];
             const trimmedValue = value.trim();
-            this.mailMergeEditor.formatter.editorManager.nodeSelection.restore();
+            (this.mailMergeEditor as any).formatter.editorManager.nodeSelection.restore();
             this.mailMergeEditor.executeCommand(
                 'insertHTML',
                 `<span contenteditable="false" class="e-mention-chip"><span>{{${trimmedValue}}}</span></span>&nbsp;`,
