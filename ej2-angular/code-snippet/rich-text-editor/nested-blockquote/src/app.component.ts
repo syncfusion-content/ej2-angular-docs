@@ -4,7 +4,7 @@ import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarSe
     imports: [RichTextEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [value]='value'>
+    template: `<ejs-richtexteditor id='editor' [value]='value'>
    </ejs-richtexteditor>`,
     providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })

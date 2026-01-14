@@ -18,7 +18,7 @@ By default the DatePicker's format is based on the culture. You can also set the
 
 >Once the date format property has been defined it will be common to all the cultures.
 
-To know more about the date format standards, refer to the [Internationalization Date Format](http://ej2.syncfusion.com/documentation/base/internationalization#date-formatter-and-parser) section.
+To know more about the date format standards, refer to the [Internationalization Date Format](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-parsing) section.
 
 The following example demonstrates the DatePicker with the custom format (`yyyy-MM-dd`).
 
@@ -38,7 +38,7 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 
 Parse date is a process of converting string value into a date object by using the [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization#parsedate) method. This method takes two arguments, the string value and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions). Then, returns the date Object.
 
-Format date is a process of converting date object into a formatted string value by using the [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#formatdate) method. This method takes two arguments, the date object and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions). Then, returns the formatted string.
+Format date is a process of converting date object into a formatted string value by using the [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization#formatdate) method. This method takes two arguments, the date object and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions). Then, returns the formatted string.
 
 The following example demonstrates how to parse the date value and format the date value based on the `German` culture and `dd MMMM yyyy` date format. For every value change, the changed date object value will be formatted into a string and the text value of the component will be parsed into a date object. These values are showcased in the example.
 
@@ -56,7 +56,7 @@ The following example demonstrates how to parse the date value and format the da
 
 ## Input formats 
 
-The [`inputFormats`](https://helpej2.syncfusion.com/angular/documentation/api/datepicker/#inputformats) property in the DatePicker control allows users to enter dates in various formats, providing flexibility in date entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
+The [`inputFormats`](https://helpej2.syncfusion.com/angular/documentation/api/datepicker#inputformats) property in the DatePicker control allows users to enter dates in various formats, providing flexibility in date entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
  
 When the user types the date in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
  

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Daterangepicker component
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/Globalization/internationalization/) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
+Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/Globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 
-By default, DateRangePicker date format, week, and month names are specific to the English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/Globalization/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load the culture specific CLDR JSON data. To go with the different culture other than `English`, follow the below steps.
+By default, DateRangePicker date format, week, and month names are specific to the English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/Globalization/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data. It provides the `loadCldr` method to load the culture specific CLDR JSON data. To go with the different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs all the CLDR JSON data). To
 know about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
@@ -25,7 +25,7 @@ Once the package installed, you can find the culture specific JSON data under th
 
 * Now import the installed CLDR JSON data into the `app.component.ts` file.
 
-* Now use the [`loadCldr`](http://ej2.syncfusion.com/documentation/base/internationalization#cldr-data-dependencies) method to load the culture specific CLDR JSON data
+* Now use the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data
 from the installed location to `app.component.ts` file.
 
 * DateRangePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DateRangePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
