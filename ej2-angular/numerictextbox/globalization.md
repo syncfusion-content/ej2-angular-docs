@@ -40,7 +40,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 
 ## Internationalization
 
-Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization/).
+Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization).
 
 By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2  component are specific to English culture ('en-US').
 If you want to go with the different culture other than `English`, follow the below steps.

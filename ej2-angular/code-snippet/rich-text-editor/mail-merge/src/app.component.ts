@@ -1,4 +1,3 @@
-{% raw %}
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import {
   ToolbarService,
@@ -167,7 +166,7 @@ export class AppComponent {
       const value = this.textToValueMap[args.item.text];
       const trimmedValue = value.trim();
       (this.mailMergeEditor as any).formatter.editorManager.nodeSelection.restore();
-      this.mailMergeEditor.executeCommand('insertHTML',`<span contenteditable="false" class="e-mention-chip"><span>{{${trimmedValue}}}</span></span>&nbsp;`,
+      this.mailMergeEditor.executeCommand('insertHTML', `<span contenteditable="false" class="e-mention-chip"><span>{{${trimmedValue}}}</span></span>&nbsp;`,
         { undo: true }
       );
     }
@@ -220,4 +219,3 @@ export class AppComponent {
     });
   }
 }
-{% endraw %}
