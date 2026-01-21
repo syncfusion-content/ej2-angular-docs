@@ -16,13 +16,13 @@ The AI AssistView component integrates with a [Model Context Protocol](https://m
 
 Before integrating `MCP Server`, ensure the following:
 
-* **Node.js**: Version 16 or higher with npm.
+1. `Node.js`: Version 16 or higher, along with npm installed.
 
-* **OpenAI Account**: With access to OpenAI services and a generated API key.
+2. `OpenAI Account`: Access to OpenAI services and a generated API key.
 
-* **Syncfusion AI AssistView**: Package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat) installed.
+3. `Syncfusion AI AssistView`: Install the package [@syncfusion/ej2-angular-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat).
 
-* **Marked Library**: For parsing Markdown responses (`npm install marked --save`).
+4. `Marked Library`: For parsing Markdown responses.
 
 ## Set Up the Angular Environment
 
@@ -37,17 +37,22 @@ Create a folder for the MCP server (e.g., `mcp-demo`) and install the required p
 npm install express cors @modelcontextprotocol/sdk
 
 ```
-
 ## Configure the MCP Server
 
-Create a file named `mcp-server.mjs` in your server folder. This server:
+Create a file named `mcp-server.mjs` in your server folder. This server will:
 
-* Exposes MCP SSE endpoints (/events, /messages) with tools:
-    * `text.generate` → Calls OpenAI Chat Completions
-    * `fs.read` → Reads a file under a configured base directory
-* Provides a REST endpoint `/assist/chat` for the Angular app
-* Detects `@filename` in prompts, reads file contents, and attaches them to the conversation for contextual analysis.
-* Maintains session history using a `sessionId` sent from the client. The server stores messages in memory for multi-turn conversations.
+* Expose `MCP-style SSE endpoints`:
+    * `GET /events` – Server-Sent Events stream for clients to subscribe to.
+    * `POST /messages` – Accepts client messages and broadcasts them to the corresponding SSE stream.
+* Register `tools`:
+    * `text.generate` → Calls OpenAI Chat Completions to generate responses.
+    * `fs.read` → Reads a file under a configured base directory only.
+* Provide a `REST endpoint`:
+    * `POST /assist/chat` – A simple REST interface that your Angular app can call.
+* Detect `@filename` tokens in prompts, read the file contents, and attach them to the conversation for contextual analysis.
+* Maintain session history in memory using a `sessionId` sent from the client.
+
+>Note: This implementation uses `Node.js ESM`, `express`, `cors`, and `@modelcontextprotocol/sdk`. It also expects an OpenAI API key via OPENAI_API_KEY.
 
 ### Configure OpenAI with MCP Server
 
@@ -85,9 +90,16 @@ const resp = await fetch('https://api.openai.com/v1/chat/completions', {
 
 ## Configure AI AssistView with MCP Server
 
-To integrate the MCP server with the Syncfusion AI AssistView component, update the `app.component.ts` file in your Angular application. Type `@` in the prompt box to select and mention files. The contents of these files will be included in the AI context for better code-aware responses.
+To integrate the MCP server with the AI AssistView component, update the `app.component.ts` file in your Angular application.
 
-In the following sample, the [promptRequest](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/aiassistviewmodel#promptrequest) event sends the user prompt, including `@mentions`, to the MCP server at `/assist/chat`. The server extracts unique mentions, safely reads those files from `FS_BASE_DIR`, and injects them into the conversation as a contextual message and OpenAI receives both the file contents and the prompt, enabling code-aware analysis.
+You can type `@` in the prompt box to select and mention files. The contents of these mentioned files will be included in the AI context, enabling more accurate and code-aware responses.
+
+In the following example, the [promptRequest](https://ej2.syncfusion.com/angular/documentation/api/ai-assistview/aiassistviewmodel#promptrequest) event sends the user’s prompt (including any `@mentions`) to the MCP server endpoint `/assist/chat`. The server:
+    * Extracts unique file mentions from the prompt.
+    * Safely reads those files from the configured FS_BASE_DIR.
+    * Injects their contents into the conversation as contextual messages.
+
+OpenAI then receives both the original prompt and the attached file contents, allowing it to provide `code-aware analysis and responses`.
 
 ``` bash
 
