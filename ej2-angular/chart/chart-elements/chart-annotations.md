@@ -158,7 +158,7 @@ Use the `x` and `y` option of the annotation object to create footer for chart.
 
 ### Stacking total in Angular Chart component
 
-To show the total at each stacked data point, handle the [`annotationRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#annotationrender) event to compute the series' stacked value and update the annotation content before it renders.
+To show the total at each stacked data point, handle the [`annotationRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#annotationrender) event to compute the series' stacked value and update the annotation content before it renders.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

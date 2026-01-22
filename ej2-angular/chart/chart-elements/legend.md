@@ -298,7 +298,7 @@ The [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legend
 
 ## Customize each shape in legend
 
-Use the [`legendRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#legendrender) event to customize legend item shapes. In the handler, set `args.shape` to the desired shape for each item.
+Use the [`legendRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#legendrender) event to customize legend item shapes. In the handler, set `args.shape` to the desired shape for each item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

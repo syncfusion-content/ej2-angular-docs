@@ -118,7 +118,7 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
 
 ## Customize the marker with different shape using event
 
-Use the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#pointrender) event to customize marker shapes. In the handler, set the `shape` for each data point as needed.
+Use the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) event to customize marker shapes. In the handler, set the `shape` for each data point as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
