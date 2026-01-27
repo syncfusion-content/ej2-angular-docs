@@ -93,7 +93,7 @@ export class AppComponent {
   };
 
   public fieldsData: { [key: string]: string } = { text: 'text' };
-  public mentionChar: string = '{{';
+  public mentionChar: string = `{{`;
   public mergeData: any = [
     { text: 'First Name', value: 'FirstName' },
     { text: 'Last Name', value: 'LastName' },
