@@ -7,7 +7,7 @@ import { DiagramModule, DiagramComponent, ConnectorModel, GradientModel } from '
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="900px" [connectors]="connectors" (created)='created($event)' >
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="500px" [connectors]="connectors" (created)='created($event)' >
     </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None,
 })

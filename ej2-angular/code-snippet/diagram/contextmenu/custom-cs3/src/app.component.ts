@@ -1,6 +1,7 @@
 import {Component, ViewEncapsulation, OnInit, ViewChild} from '@angular/core'
 import { DiagramModule, DiagramContextMenuService,DiagramComponent } from '@syncfusion/ej2-angular-diagrams'
 import { ContextMenuSettingsModel } from '@syncfusion/ej2-diagrams';
+import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
 imports: [
@@ -10,7 +11,7 @@ imports: [
 providers: [DiagramContextMenuService],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px"  [contextMenuSettings]="contextMenuSettings">
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px"  [contextMenuSettings]="contextMenuSettings" (contextMenuBeforeItemRender)="itemBeforeRender($event)" >
         <e-nodes>
             <e-node id='node1' [offsetX]=100 [offsetY]=100 [width]=100 [height]=100>
                 <e-node-annotations>
@@ -43,7 +44,7 @@ export class AppComponent {
               text: 'Google.com',
               id: 'google',
               target: '.e-diagramcontent',
-              url: 'https://www.google.co.in/',
+              url: 'https://www.google.com/',
             },
             {
               text: 'w3schools.com',
@@ -60,6 +61,9 @@ export class AppComponent {
           // Hides the default context menu items
           showCustomMenuOnly: true,
         }
+    }
+      public itemBeforeRender (args: MenuEventArgs) {
+        args.element.getElementsByTagName('a')[0].setAttribute('target', '_blank');
     }
 }
 
