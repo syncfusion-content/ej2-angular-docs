@@ -10,7 +10,10 @@ providers: [ UndoRedoService],
 standalone: true,
     selector: "app-container",
     template: `
-    
+    <div class="button">
+        <button id="undo" disabled (click)='onClickUndo($event)'>Undo</button>
+        <button id="redo" disabled (click)='onClickRedo($event)'>Redo</button>
+    </div>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" (historyChange)="historyChange()">
         <e-nodes>
             <e-node id='node1' [offsetX]=250 [offsetY]=250 [width]=100 [height]=100>
@@ -20,11 +23,7 @@ standalone: true,
                 </e-node-annotations>
             </e-node>
         </e-nodes>
-    </ejs-diagram>
-    <div class="button">
-        <button id="undo" disabled (click)='onClickUndo($event)'>Undo</button>
-        <button id="redo" disabled (click)='onClickRedo($event)'>Redo</button>
-    </div>`,
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

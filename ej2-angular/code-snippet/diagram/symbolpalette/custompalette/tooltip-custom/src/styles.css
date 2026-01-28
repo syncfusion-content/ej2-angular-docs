@@ -1,8 +1,8 @@
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/fabric.css';
-@import 'node_modules/@syncfusion/ej2-base/styles/fabric.css';
-@import 'node_modules/@syncfusion/ej2-angular-diagrams/styles/fabric.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/fabric.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/fabric.css';
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-angular-diagrams/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
 
 @font-face {
   font-family: 'e-ddb-icons';
