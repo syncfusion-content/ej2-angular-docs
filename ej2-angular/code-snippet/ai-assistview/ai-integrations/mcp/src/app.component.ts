@@ -72,8 +72,7 @@ export class AppComponent {
       change: () => {
           const inputEvent: Event = new Event('input', { bubbles: true });
           this.textAreaEle?.dispatchEvent(inputEvent);
-      },
-    });
+      } });
     const mentionEle = document.createElement('div');
     document.body.appendChild(mentionEle);
     this.mention.appendTo(mentionEle);

@@ -23,76 +23,71 @@ The following example demonstrates how to render an image for the **Resources** 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { projectNewData } from './data';
+import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { GanttComponent, GanttModule, SplitterSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { data, ProjectResources } from './data';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
   template: `
-    <ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
-      <e-columns>
-        <e-column field="TaskName" width="290">
-          <ng-template #headerTemplate let-data>
-            <div>
-              <img src="assets/images/taskname.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Task Name</b>
-            </div>
-          </ng-template>
+        <ejs-gantt #gantt height="450px" rowHeight="60" [dataSource]="data" [taskFields]="taskSettings"
+    [resourceFields]="resourceFields" [resources]="resources" [splitterSettings]="splitterSettings">
+    <e-columns>
+        <e-column field="TaskID"></e-column>
+        <e-column field="resources" headerText="Resources" width="250" textAlign="Center">
+            <ng-template #template let-data>
+                <div class="image">
+                    <img [src]="'assets/images/' + data.TaskID + '.png'" style="height:42px;" />
+                </div>
+            </ng-template>
         </e-column>
-        <e-column field="StartDate" width="390" textAlign="Right">
-          <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/startdate.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Start Date</b>
-            </div>
-          </ng-template>
-        </e-column>
-        <e-column field="Duration" width="120" textAlign="Right">
-          <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/duration.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Duration</b>
-            </div>
-          </ng-template>
-        </e-column>
-        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
-        <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/progress.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Progress</b>
-            </div>
-          </ng-template>
-        </e-column>
-      </e-columns>
-    </ejs-gantt>`,
+        <e-column field="TaskName"></e-column>
+        <e-column field="StartDate"></e-column>
+        <e-column field="Duration"></e-column>
+        <e-column field="Progress"></e-column>
+    </e-columns>
+
+</ejs-gantt>
+    `,
   encapsulation: ViewEncapsulation.None
 })
-
 export class AppComponent implements OnInit {
+
+  @ViewChild('gantt') public gantt?: GanttComponent;
+
   public data?: object[];
+  public resources?: object[];
   public taskSettings?: object;
-  public splitterSettings?: object;
+  public resourceFields?: object;
+  public splitterSettings?: SplitterSettingsModel;
 
   ngOnInit(): void {
-    this.data = projectNewData;
+
+    this.data = data;
+    this.resources = ProjectResources;
+
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
       duration: 'Duration',
       progress: 'Progress',
-      child: 'subtasks'
+      parentID: 'ParentID',
+      resourceInfo: 'resources'
     };
+
+    this.resourceFields = {
+      id: 'resourceID',
+      name: 'resourceName'
+    };
+
     this.splitterSettings = {
-      position: '75%'
+      columnIndex: 7
     };
   }
 }
-
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

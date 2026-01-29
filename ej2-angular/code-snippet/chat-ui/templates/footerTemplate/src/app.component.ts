@@ -1,13 +1,10 @@
-import { NgModule, ViewChild } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule, ChatUIComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { UserModel } from '@syncfusion/ej2-interactive-chat';
 import { Component } from '@angular/core';
 
 
 @Component({
-    imports: [ FormsModule, ReactiveFormsModule, ChatUIModule ],
+    imports: [ ChatUIModule ],
     standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html'

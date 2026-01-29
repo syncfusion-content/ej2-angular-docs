@@ -37,9 +37,6 @@ export class AppComponent implements OnInit {
     }
 
     public scroll(): void {
-        this.ganttInstance.ganttChartModule.scrollObject.setScrollTop(200);
+        (this.ganttInstance as GanttComponent).ganttChartModule.scrollObject.setScrollTop(200);
     };
 }
-
-
-

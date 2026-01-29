@@ -1,11 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule, AIAssistViewComponent, ToolbarSettingsModel, PromptRequestEventArgs, ToolbarItemClickedEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
 import { marked } from 'marked';
 
 // Initialize AI AssistView Component
 @Component({
-    imports: [FormsModule, ReactiveFormsModule, AIAssistViewModule],
+    imports: [AIAssistViewModule],
     standalone: true,
     selector: 'app-root',
     template: `

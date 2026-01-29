@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
     }
 
     public delete(): void {
-        this.ganttInstance.editSettings.showDeleteConfirmDialog = true;
-        this.ganttInstance.editModule.deleteRecord(this.ganttInstance.selectionModule.getSelectedRecords()[0].TaskID);
+        (this.ganttInstance as GanttComponent).editSettings.showDeleteConfirmDialog = true;
+        (this.ganttInstance as GanttComponent).editModule.deleteRecord(((this.ganttInstance as GanttComponent).selectionModule.getSelectedRecords()[0] as any).TaskID);
     };
 }

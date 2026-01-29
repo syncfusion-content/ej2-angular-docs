@@ -30,7 +30,7 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/excelOption-selected-records" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/excelOption-selected-records" %}
 
 ## Show or hide columns during export
 

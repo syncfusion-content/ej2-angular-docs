@@ -1,6 +1,6 @@
-export let  tempData: any[]  =[
+export let tempData: any[] = [
     {
-        TaskID: 1, TaskName: 'Product concept',StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
+        TaskID: 1, TaskName: 'Product concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
         parentID: 0
     },
     {
@@ -180,4 +180,5 @@ for (let i: number = 0; i < 50; i++) {
         subtasks['Progress'] = tempData[j].Progress;
         subtasks['parentID'] = tempData[j].parentID + x;
         virtualData.push(subtasks);
-  
+    }
+}

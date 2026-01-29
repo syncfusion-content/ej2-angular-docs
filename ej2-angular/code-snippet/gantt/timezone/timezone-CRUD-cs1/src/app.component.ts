@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule, EditService, ITaskAddedEventArgs , SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, EditService, ITaskAddedEventArgs, SelectionService, IGanttData } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
   imports: [GanttModule],
@@ -96,11 +96,9 @@ export class AppComponent implements OnInit {
     this.dayWorkingTime = [{ from: 0, to: 24 }];
   }
 
-  public actionComplete(args: ITaskAddedEventArgs ) {
+  public actionComplete(args: ITaskAddedEventArgs) {
     if (args.action == "TaskbarEditing") {
-      console.log(args.data.ganttProperties.endDate);
+      console.log((args.data as any).ganttProperties.startDate);
     }
   }
 }
-
-

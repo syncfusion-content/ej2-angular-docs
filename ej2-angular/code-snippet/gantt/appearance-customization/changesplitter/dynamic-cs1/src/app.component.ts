@@ -1,11 +1,11 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DropDownListAllModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
-import { GanttModule,GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
-    imports: [ GanttModule, DropDownListAllModule, ButtonModule ],
+    imports: [GanttModule, DropDownListAllModule, ButtonModule],
     standalone: true,
     selector: 'app-root',
     template:
@@ -18,13 +18,13 @@ import { editingData } from './data';
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
     @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
     public data?: object[];
     public taskSettings?: object;
     public dropData?: Object[];
     public fields?: Object;
-    
+
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -44,18 +44,15 @@ export class AppComponent implements OnInit{
     }
 
     public changep(): void {
-        this.ganttInstance.setSplitterPosition('50%', 'position');
+        (this.ganttInstance as GanttComponent).setSplitterPosition('50%', 'position');
     };
 
     public changei(): void {
-        this.ganttInstance.setSplitterPosition(1, 'columnIndex');
+        (this.ganttInstance as GanttComponent).setSplitterPosition(1, 'columnIndex');
     };
 
     public onChange(e: ChangeEventArgs): any {
         let viewType: any = <string>e.value;
-        this.ganttInstance.setSplitterPosition(viewType, 'view');
+        (this.ganttInstance as GanttComponent).setSplitterPosition(viewType, 'view');
     };
 }
-
-
-

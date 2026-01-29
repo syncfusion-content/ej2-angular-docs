@@ -1,10 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIAllModule, ChatUIComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { marked } from 'marked';
 declare var DOMPurify: any;
 @Component({
-  imports: [FormsModule, ReactiveFormsModule, ChatUIAllModule],
+  imports: [ChatUIAllModule],
   standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',

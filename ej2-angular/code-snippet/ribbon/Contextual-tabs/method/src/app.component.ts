@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { RibbonModule, RibbonContextualTabService } from '@syncfusion/ej2-angular-ribbon'
 
 import { Component, ViewChild } from "@angular/core";

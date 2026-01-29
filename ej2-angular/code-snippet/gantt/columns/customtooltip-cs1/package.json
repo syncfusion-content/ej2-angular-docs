@@ -23,6 +23,7 @@
     "@syncfusion/ej2-layouts": "*",
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-popups": "*",
+    "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-grids": "*",
     "@syncfusion/ej2-treegrid": "*",

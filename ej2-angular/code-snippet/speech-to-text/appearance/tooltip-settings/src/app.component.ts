@@ -17,11 +17,11 @@ import { SpeechToTextModule, TextAreaComponent, TextAreaModule, TranscriptChange
 
 export class AppComponent {
     @ViewChild('outputTextarea') outputTextarea!: TextAreaComponent;
-     public tooltipSettings: TooltipSettingsModel = {
+    public tooltipSettings: TooltipSettingsModel = {
         position: 'BottomRight',
         content: 'Click the button to start recognition',
         stopContent: 'Click the button to stop recognition'
-     };
+    };
     onTranscriptChange(args: TranscriptChangedEventArgs): void {
         this.outputTextarea.value = args.transcript;
      }

@@ -58,6 +58,6 @@ export class AppComponent implements OnInit {
 
   public selectCells(cellIndexes: number[]): void {
     this.ganttInstance.clearSelection();
-    this.ganttInstance.selectCells(cellIndexes);
+    this.ganttInstance.selectCells(cellIndexes as any);
   }
 }

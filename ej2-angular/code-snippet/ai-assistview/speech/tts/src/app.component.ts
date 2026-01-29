@@ -5,8 +5,7 @@ import {
   ToolbarSettingsModel,
   ToolbarItemClickedEventArgs,
   PromptRequestEventArgs,
-  ResponseToolbarSettingsModel,
-} from '@syncfusion/ej2-angular-interactive-chat';
+  ResponseToolbarSettingsModel } from '@syncfusion/ej2-angular-interactive-chat';
 import * as Marked from 'marked';
 
 
@@ -44,8 +43,7 @@ export class AppComponent {
 
   public toolbarSettings: ToolbarSettingsModel = {
     items: [{ iconCss: 'e-icons e-refresh', align: 'Right' }],
-    itemClicked: this.onToolbarItemClicked.bind(this),
-  };
+    itemClicked: this.onToolbarItemClicked.bind(this) };
 
   private stopStreaming: boolean = false;
   private currentUtterance: SpeechSynthesisUtterance | null = null;
@@ -58,11 +56,9 @@ export class AppComponent {
       {
         type: 'Button',
         iconCss: 'e-icons e-assist-dislike',
-        tooltip: 'Need Improvement',
-      },
+        tooltip: 'Need Improvement' },
     ],
-    itemClicked: this.onResponseToolbarItemClicked.bind(this),
-  };
+    itemClicked: this.onResponseToolbarItemClicked.bind(this) };
 
   public streamResponse = async (response: string) => {
     let lastResponse = '';
@@ -163,8 +159,7 @@ export class AppComponent {
         messages: [{ role: 'user', content: args.prompt }],
         max_tokens: 150,
         stream: false, // Set to false to get a single response back, then stream locally
-      }),
-    })
+      }) })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
