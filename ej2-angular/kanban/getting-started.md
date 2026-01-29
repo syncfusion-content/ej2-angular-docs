@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Kanban Component
 
-This section explains the steps required to create a simple Angular Kanban component and configure its available functionalities.
+The Syncfusion Angular Kanban component is a workflow visualization tool that helps users organize, manage, and track tasks across different stages of a process. This section outlines the steps to create a basic Kanban board in Angular and configure its core features.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -26,7 +26,7 @@ The Kanban component consists of:
 Use the [Angular CLI](https://github.com/angular/angular-cli) to set up an Angular application. Install Angular CLI with the following command:
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@21.0.1
 ```
 
 ## Create an Angular Application
@@ -35,61 +35,55 @@ Create a new Angular application using the Angular CLI:
 
 ```bash
 ng new my-app
+```
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
+
+![Server_Side_Rendering_Setup](images/SSR.png)
+
+For this setup, select **No**, as the Rich Text Editor does not require SSR or SSG for basic configuration.
+
+Then the CLI displays another prompt related to AI tooling support, as shown below:
+
+![AI_Tool_Setup](images/AI-Tool.png)
+
+Any preferred option can be selected based on the development workflow or project needs.
+
+Next, navigate to the project folder:		Next, navigate to the project folder:
+
+```bash
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Kanban package
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Kanban package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components. They are:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
-
-Add [`@syncfusion/ej2-angular-kanban`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38) package to the application.
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Kanban component with the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-kanban --save
+npm install @syncfusion/ej2-angular-kanban
 ```
-
-### Angular compatibility compiled package(ngcc)
-
-For Angular version below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following command.
-
-Add [`@syncfusion/ej2-angular-kanban@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-kanban@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows.
-
-```bash
-@syncfusion/ej2-angular-kanbanr:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
 ## Adding CSS reference
 
 Add Kanban component’s styles as given in the following `styles.css.`
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-kanban/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-kanban/styles/tailwind3.css';
 ```
 
-## Add Kanban component
+## Adding Kanban component
 
 Modify the template in the [src/app/app.component.ts] file to render the Kanban component. Add the Angular Kanban by using the `<ejs-kanban>` selector in the `template` section of the app.component.ts file.
 
@@ -106,7 +100,6 @@ imports: [
     ],
   standalone: true,
   selector: 'app-root',
-  // specifies the template string for the Kanban component
   template: `<ejs-kanban>
             <e-columns>
                 <e-column headerText='To do' keyField='Open'></e-column>
@@ -116,7 +109,7 @@ imports: [
             </e-columns>
         </ejs-kanban>`
 })
-export class AppComponent { }
+export class App { }
 
 ```
 
@@ -144,7 +137,7 @@ The application will display an empty Kanban board with the defined columns.
 
 ## Populating cards
 
-Populate the Kanban with cards by binding a local JSON array or remote data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. To define `dataSource`, the mandatory fields in JSON object should be relevant to [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+Populate the Kanban with cards by binding a local JSON array or remote data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property. To define `dataSource`, the mandatory fields in JSON object should be relevant to [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,13 +147,17 @@ Populate the Kanban with cards by binding a local JSON array or remote data to t
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/getting-started-key-field-cs2/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/kanban/getting-started-key-field-cs2/src/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/kanban/getting-started-key-field-cs2" %}
 
 ## Enable swimlane
 
-`Swimlane` can be enabled by mapping the fields [swimlaneSettings.keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#swimlanesettings) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
+`Swimlane` can be enabled by mapping the fields [swimlaneSettings.keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#swimlanesettings) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,6 +166,10 @@ Populate the Kanban with cards by binding a local JSON array or remote data to t
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/getting-started-swimlane-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/kanban/getting-started-swimlane-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   

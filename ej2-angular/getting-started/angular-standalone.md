@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular cli with Angular Standalone component | Syncfusion
-description:  Checkout and learn about Angular cli with Angular Getting started Standalone component of Syncfusion Essential JS 2 and more details.
+title: Angular CLI with Standalone Components | Syncfusion
+description:  Check out and learn how to get started with Angular CLI standalone components and integrate Syncfusion Essential JS 2 UI components.
 platform: ej2-angular
 control: Angular cli 
 documentation: ug
@@ -51,7 +51,7 @@ cd syncfusion-angular-app
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular packages are available on npm under the `@syncfusion` scope. Obtain these packages by visiting [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, which are Ivy-compatible and support Angular 12 and above, execute:
+To add the latest Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages, execute:
 
 ```bash
 ng add @syncfusion/ej2-angular-grids@latest
@@ -60,14 +60,14 @@ ng add @syncfusion/ej2-angular-grids@latest
 This command performs the following configurations in your Angular application:
 
 - Adds the `@syncfusion/ej2-angular-grids` package and its dependencies to `package.json`.
-- Imports `GridModule` into your application's default standalone component `app.component.ts`.
+- Imports `GridModule` into your application's default standalone component `app.ts`.
 - Registers Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material theme in `angular.json`.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
 In standalone components, you directly import the required modules in the component file rather than configuring them in an NgModule.
 
-Modify your `src/app/app.component.ts` file to incorporate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
+Modify your `src/app/app.ts` file to incorporate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -75,6 +75,7 @@ import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [GridModule, PagerModule],
   template: `
   <h1>
@@ -89,25 +90,25 @@ import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
       <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
     </e-columns>
   </ejs-grid>
- `
-  styleUrl: './app.component.css'
+ `,
+  styleUrls: ['./app.css']
  })
 export class AppComponent {
   public data: Object[] = [
     {
       OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
       ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
-      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: true
     },
     {
       OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
       ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
-      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: false
     },
     {
       OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
       ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
-      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: true
     }
   ];
 }

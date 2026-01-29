@@ -8,7 +8,7 @@ enableRipple(true);
     imports: [RichTextEditorAllModule],
     standalone: true,
     selector: 'app-root',
-    template:  `<ejs-richtexteditor #autoSaveEditor (change)="onChange($event)" [toolbarSettings]='tools' placeholder='Start to type a content to save' >
+    template:  `<ejs-richtexteditor #autoSaveEditor (change)="onChange($event)" [toolbarSettings]='tools' placeholder='Start to type a content to save' [saveInterval]='saveInterval' >
                 </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
@@ -18,6 +18,8 @@ export class AppComponent  {
   private editorValue!: string;
 
   private changedValue!: string;
+
+  public saveInterval: number = 500;
 
   public tools: ToolbarSettingsModel = {
     items: [
