@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular CLI as Front End in ASP.NET MVC
+# Getting Started with Angular CLI as the Front End in ASP.NET MVC
 
 This guide details the process for creating an ASP.NET MVC framework with an Angular CLI project serving as the front end, and how to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
 
 ## Prerequisites
 
-Ensure the following requirements are met before integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components in an ASP.NET MVC with Angular project:
+Ensure the following requirements are met before integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components into an ASP.NET MVC + Angular project:
 
 * [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
@@ -47,7 +47,7 @@ Now, create the Angular application that will serve as the frontend:
 
    ![Developer Console](images/dev-cmd.png)
 
-2. Create an Angular CLI application by executing the `ng new ClientApp` command, as demonstrated in the image below.
+2. Create an Angular CLI application by running `ng new ClientApp` (optionally add flags such as `--routing` or `--style=scss` to suit your project).
 
    ![Create Angular CLI App](images/cli-cmd.png)
 
@@ -57,7 +57,7 @@ Now, create the Angular application that will serve as the frontend:
 
 4. Install and add the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components by following the instructions in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
 
-5. Update the `outputPath` value in the `angular.json` file for the production build to `../Scripts/ClientApp`.
+5. Update `projects.ClientApp.architect.build.options.outputPath` in `angular.json` for the production build to `../Scripts/ClientApp`.
 
 {% tabs %}
 {% highlight json tabtitle="~/angular.json" hl_lines="12" %}
@@ -73,7 +73,7 @@ Now, create the Angular application that will serve as the frontend:
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../Scripts/ClientApp",
+            "outputPath": "../Scripts/ClientApp"
           }
         }
       }
@@ -113,7 +113,7 @@ To automate the installation and build process of the Angular application when t
 <Target Name="BeforeBuild" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build --prod -- --base-href /" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --configuration production --base-href /" />
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
 
     <!-- Include the newly-built files in the publish output -->
@@ -158,6 +158,8 @@ namespace SyncfusionAngularASPNETMVC
 
 {% endhighlight %}
 {% endtabs %}
+
+Ensure `BundleConfig.RegisterBundles(BundleTable.Bundles)` is called from `Application_Start()` in `Global.asax` so the `~/bundles/clientapp` and `~/Content/clientapp` bundles are registered.
 
 ### Include Angular Production Scripts in MVC
 

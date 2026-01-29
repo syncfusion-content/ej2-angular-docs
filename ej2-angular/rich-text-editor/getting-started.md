@@ -78,7 +78,7 @@ This can be referenced in [src/styles.css] using the following code.
 @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';;
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 ```
 
 ## Module Injection

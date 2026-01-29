@@ -7,21 +7,10 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickTool
         ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [value]="value" [toolbarSettings]='tools'></ejs-richtexteditor>`,
+    template: `<ejs-richtexteditor id='defaultRTE' [value]="value" ></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService]
 })
 export class AppComponent  {
-    public tools: object = {
-        items: ['Undo', 'Redo', '|',
-            'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
-            'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-            'SubScript', 'SuperScript', '|',
-            'LowerCase', 'UpperCase', '|',
-            'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
-            'Indent', 'Outdent', '|', 'CreateLink',
-            'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
-    };
-
     public value: string = `<p>The Syncfudion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
     <li>
         <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p>

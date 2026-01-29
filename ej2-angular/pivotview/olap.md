@@ -137,20 +137,20 @@ export class AppModule { }
 
 Adding the required CSS files ensures that your Angular Pivot Table component displays with the proper styling and visual elements. These CSS files contain the necessary styles for all dependent components to render correctly.
 
-The following CSS files are available in the `../node_modules/@syncfusion` package folder. Add these CSS imports to your `src/styles.css` file to apply the material theme styling:
+The following CSS files are available in the `../node_modules/@syncfusion` package folder. Add these CSS imports to your `src/styles.css` file to apply the tailwind3 theme styling:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
+@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/tailwind3.css';
 ```
 
 > You can also refer other themes like bootstrap, fabric, high-contrast etc. To know about individual component CSS, please refer [here](../../appearance/theme).

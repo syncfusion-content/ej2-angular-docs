@@ -89,6 +89,8 @@ Setting the `type` to `Popup` in [toolbarSettings](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/popup-toolbar" %}
+
 ## Creating a sticky toolbar
 
 By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#floatingtoolbaroffset) to adjust its offset from the top of the document.

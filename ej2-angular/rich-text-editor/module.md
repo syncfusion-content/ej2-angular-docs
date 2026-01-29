@@ -16,7 +16,7 @@ The Angular Rich Text Editor employs a modular architecture, allowing selective 
 
 Modules in the Angular Rich Text Editor are self-contained features that can be enabled or disabled based on application requirements. These modules, available in the `@syncfusion/ej2-angular-richtexteditor` package, can be injected to extend and enhance the editor's functionality.
 
-For example, modules such as `Toolbar`, `Link`, `Image`, `HtmlEditor`, and `QuickToolbar` enable specific tools and behavior in the Rich Text Editor interface.
+For example, modules such as `ToolbarService`, `LinkService`, `ImageService`, `HtmlEditorService`, and `QuickToolbarService` enable specific tools and behavior in the Rich Text Editor interface.
 
 ## How to import and inject modules
 

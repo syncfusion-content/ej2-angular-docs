@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aspnet core with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Aspnet core with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: ASP.NET Core with Angular — Getting Started | Syncfusion
+description: Check out and learn how to create an ASP.NET Core with Angular app and use Syncfusion Essential JS 2 components.
 platform: ej2-angular
 control: Aspnet core 
 documentation: ug
@@ -120,51 +120,25 @@ npm install @syncfusion/ej2-angular-grids --save
 
 Now, configure your Angular application to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
-1. Open the `~/ClientApp/src/app/app.module.ts` file in your preferred code editor.
-2. Import and register the Grid module:
+1. Open the `~/ClientApp/src/main.ts` file in your preferred code editor.
+2. Import and register the Grid module with standalone bootstrap:
 
 {% tabs %}
-{% highlight ts tabtitle="app.module.ts" hl_lines="14 29" %}
+{% highlight ts tabtitle="main.ts" hl_lines="6 7" %}
 
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-
-import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
-
-// Imported Syncfusion grid module from grids package
+import { bootstrapApplication } from '@angular/platform-browser';
+import { appConfig } from './app/app.config';
+import { AppComponent } from './app/app';
+import { importProvidersFrom } from '@angular/core';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { provideRouter } from '@angular/router';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent
-  ],
-  imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
-    FormsModule,
-    //Registering EJ2 grid module
-    GridModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ])
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+bootstrapApplication(AppComponent, {
+  providers: [
+    importProvidersFrom(GridModule),
+    ...appConfig.providers
+  ]
+}).catch((err) => console.error(err));
 
 
 {% endhighlight %}
@@ -172,15 +146,19 @@ export class AppModule { }
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Component
 
-Insert the following grid component code snippet in the `~/src/app/home/home.component.ts` file as follows.
+Insert the following grid component code snippet in the `~/ClientApp/src/app/home/home.ts` file as follows.
 
 {% tabs %}
-{% highlight ts tabtitle="home.component.ts" %}
+{% highlight ts tabtitle="home.ts" %}
 
 import { Component } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [GridModule, CommonModule],
   template: `
   <h1>
     Syncfusion Angular UI Grid!
@@ -202,17 +180,17 @@ export class HomeComponent {
     {
       OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
       ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
-      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: true
     },
     {
       OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
       ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
-      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: false
     },
     {
       OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
       ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
-      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: true
     }
   ];
 }
@@ -221,7 +199,8 @@ export class HomeComponent {
 {% endtabs %}
 
 This code:
-- Creates a component with a Grid element (`<ejs-grid>`)
+- Creates a standalone component with a Grid element (`<ejs-grid>`)
+- Imports required modules including GridModule and CommonModule
 - Defines four columns with various configurations
 - Provides sample data for the grid to display
 
@@ -266,7 +245,7 @@ dotnet run
 
 ![output](images/ang-cli.PNG)
 
-N> [Access the Angular Sample integrated with ASP.NET Core on GitHub](https://github.com/SyncfusionExamples/ASP-.NET-Core-with-Angular-using-EJ2-controls)
+N> Access the Angular sample integrated with ASP.NET Core on [GitHub](https://github.com/SyncfusionExamples/ASP-.NET-Core-with-Angular-using-EJ2-controls)
 
 ## See Also
 
