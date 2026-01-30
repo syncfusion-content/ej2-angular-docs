@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Context menu in Angular Gantt component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Context Menu in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about context menu in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Gantt component
+# Context Menu in Angular Gantt Chart Component
 
-The context menu in the Syncfusion Angular Gantt component provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
+The context menu in the Syncfusion Angular Gantt Chart component provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
 
 ## Enabling context menu
 
-To enable the context menu, set the [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecontextmenu) property to **true** and import `ContextMenuService` from `@syncfusion/ej2-angular-gantt` in the `providers` of the component.
+To enable the context menu, set the [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecontextmenu) property to **true** and import `ContextMenuService` from `@syncfusion/ej2-angular-gantt` in the `providers` of the component.
 
 The following items are available in the default context menu:
 
@@ -52,11 +52,11 @@ The following example demonstrates context menu implementation with default item
 
 ## Custom context menu items
 
-Extend the context menu functionality by adding custom items using the [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuitems) property. Custom items are defined as a collection of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/) objects with properties for `id` (unique identifier), `text` (display label), `target` (CSS selector for appearance context), and `iconCss` (icon styling class).
+Extend the context menu functionality by adding custom items using the [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuitems) property. Custom items are defined as a collection of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/) objects with properties for `id` (unique identifier), `text` (display label), `target` (CSS selector for appearance context), and `iconCss` (icon styling class).
 
 The `target` property determines where custom menu items appear: **.e-content** for task-related operations, like add, delete, save, and cancel, `.e-gridheader` for column-related operations.
 
-The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuopen) event enables dynamic modification, such as hiding items based on row selection. The [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#contextmenuclick) event handles custom item actions, providing details like the selected item’s `id`, `text`, and row data.
+The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuopen) event enables dynamic modification, such as hiding items based on row selection. The [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuclick) event handles custom item actions, providing details like the selected item’s `id`, `text`, and row data.
 
 The following sample shows context menu items for parent rows to expand or collapse child rows in the content area and a context menu item to hide columns in the header area.
 
@@ -80,4 +80,4 @@ On touch devices, context menu functionality is accessible through **long press*
 
 This touch interaction ensures consistent experience across different device types and input methods while maintaining full functionality through intuitive gesture-based navigation.
 
-> For a comprehensive demonstration of context menu functionality, including default items, custom items, and sub-menus, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/context-menu).
+> For a comprehensive demonstration of context menu functionality, including default items, custom items, and sub-menus, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos#/tailwind3/gantt/context-menu).

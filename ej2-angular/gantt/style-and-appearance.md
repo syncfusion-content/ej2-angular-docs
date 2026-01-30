@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style and appearance in Angular Gantt component | Syncfusion
-description: Learn how to customize the style and appearance of the Syncfusion Angular Gantt component with CSS overrides and grid line configurations.
+title: Style and Appearance in Angular Gantt Chart Component | Syncfusion
+description: Learn how to customize the style and appearance of the Syncfusion Angular Gantt Chart component with CSS overrides and grid line configurations.
 platform: ej2-angular
 control: Style and appearance
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Gantt component
+# Style and Appearance in Angular Gantt Chart Component
 
-The Angular Gantt component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
+The Angular Gantt Chart component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 
 ## CSS class reference
 
-The Gantt component uses CSS classes for styling, organized by functional areas:
+The Gantt Chart component uses CSS classes for styling, organized by functional areas:
 - **Core structure**:
   - `e-gantt`: Root container for the entire component.
   - `e-gridheader`: Header container separating headers from content.
@@ -153,7 +153,7 @@ To customize the row hover effect in the Gantt Chart, apply the following CSS.
 
 ## Configure grid lines
 
-Control grid line visibility with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines):
+Control grid line visibility with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt#gridlines):
 - **Horizontal**: Shows only horizontal lines for row separation.
 - **Vertical**: Shows only vertical lines for column separation.
 - **Both**: Shows both for full grid structure.

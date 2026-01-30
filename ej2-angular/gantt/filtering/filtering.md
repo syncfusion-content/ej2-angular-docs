@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Filtering in Angular Gantt component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about filtering in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Gantt component
+# Filtering in Angular Gantt Chart Component
 
-Filtering allows you to view specific or related records based on defined criteria. The Gantt component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
+Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
-To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.
+To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.
 
 To activate filtering functionality, inject the `FilterService` in the `providers` of the component.
 
@@ -21,7 +21,7 @@ To activate filtering functionality, inject the `FilterService` in the `provider
 
 ## Apply initial filter on load
 
-To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#columns) property.
+To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#columns) property.
 
 The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
 
@@ -59,7 +59,7 @@ N> By default, the `filterSettings.columns.operator` value is `equal`
 
 ## Hierarchy-based filtering modes
 
-The Angular Gantt component supports multiple filtering modes, which can be configured using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#hierarchymode) property. The available modes are:
+The Angular Gantt Chart component supports multiple filtering modes, which can be configured using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#hierarchymode) property. The available modes are:
 
 - **Parent**: This is the default mode. Filtered records are displayed along with their parent records. If no parent exists, only the filtered records are shown.
 
@@ -83,7 +83,7 @@ The Angular Gantt component supports multiple filtering modes, which can be conf
 
 ## Enable diacritic-sensitive filtering
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#ignoreaccent) property to **true**.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
 
 The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
 
@@ -101,7 +101,7 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 ## Programmatic filtering using method
 
-You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt by using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt/#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
+You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt by using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
 
 The following sample demonstrates how to filter the **TaskName** and **TaskID** columns using single and multiple values. The filtering is triggered through an external button click by calling the `filterByColumn` method.
 
@@ -119,7 +119,7 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
 
 ## Clear all applied filters
 
-You can clear all the filtering conditions applied in the Gantt component by using the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#clearfiltering) method.
+You can clear all the filtering conditions applied in the Gantt Chart component by using the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearfiltering) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,7 +135,7 @@ You can clear all the filtering conditions applied in the Gantt component by usi
 
 ## Set different filter types per column
 
-You can enable different filter types for individual columns in the Gantt component by setting the `column.filter.type` property.
+You can enable different filter types for individual columns in the Gantt Chart component by setting the `column.filter.type` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

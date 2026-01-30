@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Selection in Angular Gantt component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular Gantt Chart component | Syncfusion
+description: Learn here all about Selection in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Gantt component
+# Selection in Angular Gantt Chart component
 
-The Selection feature provides the ability to highlight a row or cell in the Gantt component. Selection can be performed using arrow keys or mouse clicks.
+The Selection feature provides the ability to highlight a row or cell in the Gantt Chart component. Selection can be performed using arrow keys or mouse clicks.
 
-To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowselection) property to **false**.
+To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowselection) property to **false**.
 
-To enable selection functionality, inject the [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectionmodule) module in the `providers` section of your Angular application.
+To enable selection functionality, inject the [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/gantt#selectionmodule) module in the `providers` section of your Angular application.
 
-The Gantt component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#type) property. They are:
+The Gantt Chart component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property. They are:
 
 * **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
 * **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
@@ -27,7 +27,7 @@ The following video demonstrates how selection works in the Angular Gantt Chart:
 
 ## Selection mode
 
-The Gantt component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#mode) property: 
+The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) property: 
 
 * **Row:** Allows selection of rows only. This is the default mode.
 * **Cell:** Allows selection of cells only.
@@ -47,7 +47,7 @@ The Gantt component supports three types of selection modes, which can be set us
 
 ## Toggle selection
 
-Toggle selection allows you to select or deselect a specific row or cell with repeated clicks. To enable this feature, set the [enableToggle](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings/#enabletoggle) property of `selectionSettings` to **true**.
+Toggle selection allows you to select or deselect a specific row or cell with repeated clicks. To enable this feature, set the [enableToggle](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#enabletoggle) property of `selectionSettings` to **true**.
 
 When enabled, clicking a selected row or cell will deselect it, and clicking it again will reselect it. By default, the `enableToggle` property is set to **false**.
 
@@ -103,7 +103,7 @@ The following code example shows how to enable the hover highlighting in Gantt.
 
 ## Clear selection
 
-To clear selected rows and cells in the Gantt component, use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt/#clearselection) method.
+To clear selected rows and cells in the Gantt Chart component, use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearselection) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,10 +119,10 @@ To clear selected rows and cells in the Gantt component, use the [clearSelection
 
 ## Touch interaction
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
 
-[Single Row selection](selection/row-selection/#selection-mode): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
+[Single Row selection](selection/row-selection#selection-mode): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
 
-[Multiple Row selection](selection/row-selection/#multiple-row-selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows users to select multiple rows simultaneously, as illustrated below:
+[Multiple Row selection](selection/row-selection#multiple-row-selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows users to select multiple rows simultaneously, as illustrated below:
 
 ![Multiple selection](../images/multiple-selection.PNG)

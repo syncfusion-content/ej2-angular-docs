@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Indent and outdent in Angular Gantt component | Syncfusion
-description: Learn how to use Indent and Outdent features in the Syncfusion Angular Gantt component to manage task hierarchy effectively.
+title: Indent and Outdent in Angular Gantt Chart Component | Syncfusion
+description: Learn how to use Indent and Outdent features in the Syncfusion Angular Gantt Chart component to manage task hierarchy effectively.
 platform: ej2-angular
 control: Indent and outdent 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Indent and outdent in Angular Gantt component
+# Indent and Outdent in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
  * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
  * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem/) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem/) to perform indent and outdent actions.
 
-The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property.
+The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 
 ## Indent and outdent a row programmatically
 
-You can programmatically adjust a row's hierarchy in the Angular Gantt component using the [indent](https://ej2.syncfusion.com/angular/documentation/api/gantt/#indent) and [outdent](https://ej2.syncfusion.com/angular/documentation/api/gantt/#outdent) methods. Before performing these actions, select the target row by calling the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/#selectrow) method with the appropriate row index.
+You can programmatically adjust a row's hierarchy in the Angular Gantt Chart component using the [indent](https://ej2.syncfusion.com/angular/documentation/api/gantt#indent) and [outdent](https://ej2.syncfusion.com/angular/documentation/api/gantt#outdent) methods. Before performing these actions, select the target row by calling the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt#selectrow) method with the appropriate row index.
 
 The following sample demonstrates how to programmatically select row index **2** and perform indent or outdent actions using an external button click.
 

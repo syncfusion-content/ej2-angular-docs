@@ -102,29 +102,29 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 To render the File Manager component, import the File Manager and its dependent components' styles as shown below in `[src/styles.css]`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/tailwind3.css';
 ```
 
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-grids/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-filemanager/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-angular-filemanager/styles/tailwind3.css';
 ```
 
 >Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.

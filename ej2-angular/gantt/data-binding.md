@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data binding in Angular Gantt component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about data binding in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Gantt component
+# Data Binding in Angular Gantt Chart Component
 
-Data binding connects the Angular Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
+Data binding connects the Angular Gantt Chart component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
 Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 
@@ -20,7 +20,7 @@ The following video explains data binding in Gantt chart:
 
 ## Understanding data binding approaches
 
-The Gantt component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows to choose the most appropriate data source method based on project requirements and data architecture.
+The Gantt Chart component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows to choose the most appropriate data source method based on project requirements and data architecture.
 
 **Local Data Binding**: Local data binding retrieves project information from the same application environment. This approach provides faster rendering and reduced network dependency, making it ideal for applications with static or cached project data.
 
@@ -92,7 +92,7 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 ### URL Adaptor implementation
 
-URL Adaptor enables communication with SQL databases through ADO.NET Entity Data Model, supporting CRUD operations through server method calls that return JSON formatted data. This adaptor facilitates seamless data exchange between the Gantt component and server-side data management systems.
+URL Adaptor enables communication with SQL databases through ADO.NET Entity Data Model, supporting CRUD operations through server method calls that return JSON formatted data. This adaptor facilitates seamless data exchange between the Gantt Chart component and server-side data management systems.
 
 The URL Adaptor handles data requests by calling configured server endpoints and processing responses in standardized JSON formats. This approach supports comprehensive data operations including create, read, update, and delete functionalities.
 

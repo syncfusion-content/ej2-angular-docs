@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Overview of the Angular Gantt component | Syncfusion
-description: Learn about the Syncfusion Angular Gantt component features for task scheduling, resource allocation, and project visualization.
+title: Overview of the Angular Gantt Chart Component | Syncfusion
+description: Learn about the Syncfusion Angular Gantt Chart component features for task scheduling, resource allocation, and project visualization.
 platform: ej2-angular
 control: Index
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview of the Angular Gantt component
+# Overview of the Angular Gantt Chart Component
 
-The Angular Gantt component provides a Microsoft Project-like interface for scheduling and managing projects, with taskbars, dependencies, and timelines for visualizing task durations, relationships, and resource allocations. It displays project timelines with start and end dates, resource workloads, and task progress, highlighting milestones and delays. The component integrates with data sources via the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) property, supporting arrays of JSON objects or DataManager for remote APIs. Taskbars include ARIA labels for accessibility, and the UI adapts to responsive designs, though narrow screens may require scrolling for long timelines.
+The Angular Gantt Chart component provides a Microsoft Project-like interface for scheduling and managing projects, with taskbars, dependencies, and timelines for visualizing task durations, relationships, and resource allocations. It displays project timelines with start and end dates, resource workloads, and task progress, highlighting milestones and delays. The component integrates with data sources via the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, supporting arrays of JSON objects or DataManager for remote APIs. Taskbars include ARIA labels for accessibility, and the UI adapts to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Key features
 
 **1. Data & Handling** 
 Supports flexible data integration and efficient processing through structured field mapping, remote data connectivity, and performance-optimized rendering for large datasets.
-   * [Data Binding](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding): The Gantt component supports both **hierarchical** and **self-referential** JSON structures. It also integrates seamlessly with remote data sources using the DataManager component, enabling RESTful API connections, OData, and other services. This flexibility allows dynamic data loading. 
+   * [Data Binding](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding): The Gantt Chart component supports both **hierarchical** and **self-referential** JSON structures. It also integrates seamlessly with remote data sources using the DataManager component, enabling RESTful API connections, OData, and other services. This flexibility allows dynamic data loading. 
    * [Task Field Mapping](https://ej2.syncfusion.com/angular/documentation/gantt/getting-started#mapping-task-fields): Maps specific data fields to Gantt chart properties using the `taskFields` configuration. Required fields include id, name, and startDate, with optional fields like duration, progress, and parentID to define task hierarchy and scheduling.
    * [Large Data](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#load-on-demand): Optimized for large datasets using **virtualization** and **load-on-demand** techniques. Improves performance by rendering only visible rows and timeline cells during scroll operations.
 
@@ -94,7 +94,7 @@ Enables structured data export to Excel, CSV, and PDF formats, and provides even
 
 ## Industry application
 
- The Gantt component applies to various industries and project types:
+ The Gantt Chart component applies to various industries and project types:
 
 - **Software development**: Tracks sprint planning and feature development with dependencies.
 - **Construction**: Manages timelines for site preparation and building phases with resource allocation.
@@ -105,5 +105,5 @@ Enables structured data export to Excel, CSV, and PDF formats, and provides even
 
 ## See also
 - API documentation: Comprehensive references [here](https://ej2.syncfusion.com/angular/documentation/api/gantt/).
-- Sample browser: Live examples [here](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/overview).
+- Sample browser: Live examples [here](https://ej2.syncfusion.com/angular/demos#/tailwind3/gantt/overview).
 - Getting started guide: Step-by-step tutorial [here](https://ej2.syncfusion.com/angular/documentation/gantt/getting-started).

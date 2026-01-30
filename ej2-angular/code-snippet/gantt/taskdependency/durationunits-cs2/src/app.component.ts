@@ -6,7 +6,7 @@ import { GanttModule, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
     standalone: true,
     selector: 'app-root',
     template:
-        `<ejs-gantt height="430px" [dataSource]="data" [editSettings]="editSettings" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
+        `<ejs-gantt height="430px" [dataSource]="data" [editSettings]="editSettings" [taskFields]="taskSettings" [columns]="columns" updateOffsetOnTaskbarEdit="false"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 

@@ -12,6 +12,8 @@ domainurl: ##DomainURL##
 
 This section outlines the steps required to create an Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates basic usage of the [Angular TreeGrid control](https://www.syncfusion.com/angular-components/angular-tree-grid) within an Angular CLI application.
 
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
 To get started quickly with the Angular TreeGrid using CLI and Schematics, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=2LJKv7rao6Y" %}
@@ -23,51 +25,87 @@ Use the [Angular CLI](https://github.com/angular/angular-cli) to set up Angular 
 ```bash
 npm install -g @angular/cli
 ```
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. For more information about the standalone architecture, refer to the [Standalone Guide](./angular-standalone).
 
-## Create an Angular application
-
-Create a new Angular application using the Angular CLI:
-
-```bash
-ng new my-app
-cd my-app
-```
-
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed as `@syncfusion` scoped packages on npm. Find all Angular Syncfusion packages on [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
-1. Ivy library distribution package ([format](https://angular.dev/tools/libraries/angular-package-format))
-2. Angular compatibility compiler (ngcc) package
-
-### Ivy library distribution package
-
-Syncfusion Angular packages (`>=20.2.36`) are distributed as Ivy packages, supporting the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and compatible with Angular version 12 and above. Install the package as follows:
-
-Add [`@syncfusion/ej2-angular-treegrid`](https://www.npmjs.com/package/@syncfusion/ej2-angular-treegrid/v/20.2.38):
+### Installing a specific version
+To install a particular version of Angular CLI, use:
 
 ```bash
-npm install @syncfusion/ej2-angular-treegrid --save
+npm install -g @angular/cli@21.0.0
 ```
 
-### Angular compatibility compiled package (ngcc)
+## Create a new application
 
-For Angular versions below 12, use the legacy (ngcc) package. To install the ngcc package:
-
-Add [`@syncfusion/ej2-angular-treegrid@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-treegrid/v/20.2.38-ngcc):
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-npm install @syncfusion/ej2-angular-treegrid@ngcc --save
+ng new syncfusion-angular-app
 ```
 
-To specify the ngcc package in `package.json`, add the `-ngcc` suffix as shown:
+* This command will prompt to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-@syncfusion/ej2-angular-treegrid:"20.2.38-ngcc"
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
 ```
 
-> Note: If the ngcc tag is not specified during installation, the Ivy library package will be installed by default.
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
+
+This guide uses the [Angular TreeGrid Component](https://www.syncfusion.com/angular-components/angular-tree-grid) for demonstration. Add the Angular TreeGrid component with:
+
+```bash
+ng add @syncfusion/ej2-angular-treegrid
+```
+
+This command will perform the following configurations:
+
+- Add the `@syncfusion/ej2-angular-treegrid` package and peer dependencies to your `package.json`.
+- Import the TreeGrid component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
+
+For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-treegrid	
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).		
+```bash		
+npm add @syncfusion/ej2-angular-treegrid@32.1.19-ngcc		
+```
 
 ## Registering TreeGrid module
 
@@ -89,7 +127,11 @@ export class AppComponent { }
 
 ## Adding CSS references
 
-The following CSS files are available in the `../node_modules/@syncfusion` package folder. Reference them in [src/styles.css]:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the TreeGrid component:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -104,9 +146,13 @@ The following CSS files are available in the `../node_modules/@syncfusion` packa
 @import '../node_modules/@syncfusion/ej2-treegrid/styles/material.css';
 ```
 
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](../common/how-to/sass).
+
 ## Add TreeGrid component
 
-Modify the template in [src/app/app.component.ts] to render the TreeGrid component. Use the `<ejs-treegrid>` selector in the template section.
+Modify the template in `src/app/app.ts` to render the TreeGrid component. Add the Angular TreeGrid by using `<ejs-treegrid>` selector in **template** section of the app.component.ts file.
 
 ```typescript
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
@@ -125,7 +171,7 @@ export class AppComponent implements OnInit {
 
 ## Defining row data
 
-Bind data to the TreeGrid using the `dataSource` property. This accepts an array of JavaScript objects or a `DataManager` instance.
+Bind data to the TreeGrid using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#datasource) property. This accepts an array of JavaScript objects or a [DataManager](https://ej2.syncfusion.com/angular/documentation/treegrid/data-binding/data-binding) instance.
 
 ```typescript
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
@@ -150,15 +196,17 @@ export class AppComponent implements OnInit {
 
 TreeGrid columns are defined as an array. The following properties customize columns:
 
-* `field`: Maps to a property in the data source.
-* `headerText`: Sets the column header title.
-* `textAlign`: Adjusts the column alignment (default is left; set to `Right` for right alignment).
-* `format`: Formats number and date values using standard or custom formats.
+* [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field): Maps to a property in the data source.
+* [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext): Sets the column header title.
+* [textAlign](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#textalign): Adjusts the column alignment (default is left; set to `Right` for right alignment).
+* [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format): Formats number and date values using standard or custom formats.
 
-Tree column expansion/collapse is enabled using the [`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) property.
+### Tree Column Index
+
+The **tree column** is the column that displays the hierarchical structure with expand/collapse icons. Specify which column acts as the tree column using the [`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) property. This property accepts a zero-based column index (0 = first column, 1 = second column, etc.). For example, if the `treeColumnIndex` is set to 0, the first column will display the expand/collapse tree icons and hierarchical data. Only one column can be a tree column.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
@@ -175,26 +223,43 @@ In the above example, hierarchical data binding uses the [childMapping](https://
 
 ## Module injection
 
-To enable additional TreeGrid features, inject the required modules:
+To create a TreeGrid with additional features, inject the required modules. The following modules extend the TreeGrid's basic functionality:
 
-* `PageService`: Enables paging.
-* `SortService`: Enables sorting.
-* `FilterService`: Enables filtering.
-* `ExcelExportService`: Enables Excel export.
-* `PdfExportService`: Enables PDF export.
+* **PageService** - Inject this service to enable paging features.
+* **SortService** - Inject this service to enable sorting features.
+* **FilterService** - Inject this service to enable filtering features.
 
-Inject these modules in the `providers` section of the root `NgModule` or component class.
+These modules should be injected into the **providers** section of the root **NgModule** or component class.
 
-> Additional feature modules are listed [here](./modules)
+> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/treegrid/modules).
 
 ## Enable paging
 
-Paging provides a paged view of TreeGrid records. Enable it by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowpaging) property to true and injecting the `PageService` module. If `PageService` is not injected, the pager will not appear. Customize the pager using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property.
+Paging divides TreeGrid records into manageable pages, improving performance with large datasets. Enable paging by:
 
-In root-level paging mode, only root-level rows are paged; child rows do not affect paging. Enable this using the [pageSettings.pageSizeMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesizemode) property.
+1. Setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowpaging) property to `true`
+2. Injecting the `PageService` module in the component's `providers` array
+
+**Important:** If `PageService` is not injected, paging controls won't appear even if `allowPaging` is set to true.
+
+**Example:**
+```typescript
+@Component({
+  // ... other component properties
+  providers: [PageService]
+})
+```
+
+**Customizing the pager:** Use the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property to customize pager behavior (page size, page size options, etc.).
+
+### Root-Level Paging Mode
+
+By default, TreeGrid counts ALL records (parent and child) when calculating pages. In **root-level paging mode**, only parent-level rows are paged; child rows don't affect pagination. This is useful for large hierarchies where you want to show only 10 parent groups per page, regardless of how many children they have.
+
+Enable root-level paging with the [pageSettings.pageSizeMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesizemode) property set to `Root`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
@@ -214,7 +279,7 @@ Sorting allows records to be ordered. Set the [allowSorting](https://ej2.syncfus
 Customize sorting with the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#sortsettings) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
@@ -236,7 +301,7 @@ Customize filtering using the [filterSettings](https://ej2.syncfusion.com/angula
 By default, filtered records are shown with their parent records. Modify this using [filterSettings.hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel#hierarchymode).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
@@ -262,7 +327,7 @@ ng serve --open
 The output appears as follows.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
@@ -299,7 +364,7 @@ TreeGrid identifies exceptions and notifies them through the [actionFailure](htt
 The following example demonstrates use of the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event to display an exception for a missing `isPrimaryKey` configuration:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/treegrid/error-handling/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}

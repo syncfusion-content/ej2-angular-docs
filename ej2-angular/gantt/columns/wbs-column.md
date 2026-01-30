@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Work Breakdown Structure (WBS) in Angular Gantt component | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion Angular Gantt component to improve task hierarchy visualization and project tracking.
+title: Work Breakdown Structure (WBS) in Angular Gantt Chart Component | Syncfusion
+description: Learn how to integrate and manage WBS codes in the Syncfusion Angular Gantt Chart component to improve task hierarchy visualization and project tracking.
 platform: ej2-angular
 control: WBS Column 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Work Breakdown Structure (WBS) in Angular Gantt component
+# Work Breakdown Structure (WBS) in Angular Gantt Chart Component
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
 ## Configuration and implementation
 
-To enable WBS in the Gantt component:
+To enable WBS in the Gantt Chart component:
 
-- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
-- **Auto-Update Codes**: Set [enableAutoWbsUpdate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
+- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Auto-Update Codes**: Set [enableAutoWbsUpdate](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 ## Limitations
 
-The WBS feature has a few limitations in the Gantt component:
+The WBS feature has a few limitations in the Gantt Chart component:
 
 * Editing of the WBS code and WBS predecessor columns is not supported.
 * Load on demand is not supported with the WBS feature.

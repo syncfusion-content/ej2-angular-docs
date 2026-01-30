@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance tips for ##Platform_Name## Gantt control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Performance tips for ##Platform_Name## Gantt Component | Syncfusion
+description: Checkout and learn here all about how to improve the loading performance of ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gantt performance
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Performance tips for ##Platform_Name## Gantt control
+# Performance Tips for ##Platform_Name## Gantt Component
 
-This guide provides practical techniques to optimize the Angular Gantt component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
+This guide provides practical techniques to optimize the Angular Gantt Chart component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
 
 ## Improving loading performance with large datasets
 
@@ -29,9 +29,9 @@ Virtualization techniques significantly improve application efficiency when hand
 
 ### Optimizing performance with AutoCalculateDateScheduling
 
-By default, the Angular Gantt component automatically calculates start and end dates in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
+By default, the Angular Gantt Chart component automatically calculates start and end dates in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
 
-Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
+Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
 
 **Important**: When disabling `autoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
 
@@ -55,7 +55,7 @@ Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documen
 
 ### Optimizing custom content rendering
 
-When integrating images or template elements into Gantt columns, use the [Column Template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template) feature instead of customizing data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
+When integrating images or template elements into Gantt columns, use the [Column Template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template) feature instead of customizing data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
 
 ### Optimizing loading performance by referring individual script and CSS
 
@@ -94,7 +94,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 ## Optimizing server-side data operations with adaptors
 
-The Angular Gantt component supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side data operations and CRUD functionalities. Using these adaptors with the `DataManager` component enables seamless remote data binding and action execution.
+The Angular Gantt Chart component supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side data operations and CRUD functionalities. Using these adaptors with the `DataManager` component enables seamless remote data binding and action execution.
 
 During data operations like filtering and sorting, corresponding action queries generate according to adaptor requirements. Handle these actions on the application side and return processed data to the Gantt. For efficient data processing, return processed data in this order:
 * Filtering
@@ -103,7 +103,7 @@ During data operations like filtering and sorting, corresponding action queries 
 
 ## Avoiding MaxJsonLength errors with large datasets
 
-The Angular Gantt component operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
+The Angular Gantt Chart component operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
 
 **Solution 1**
 
@@ -126,7 +126,7 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Optimizing Angular apps with multiple gantts and templates
 
-Performance issues in applications with multiple Gantt components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
+Performance issues in applications with multiple Gantt Chart components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
 
 > For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
 
@@ -159,7 +159,7 @@ Microsoft Excel supports only 1,048,576 records per sheet by default, making dir
 
 ## Tree shaking and bundle size optimization
 
-The Syncfusion Angular Gantt component supports tree shaking through modular, tree-shakable packages. Import specific modules based on requirements:
+The Syncfusion Angular Gantt Chart component supports tree shaking through modular, tree-shakable packages. Import specific modules based on requirements:
 
 ```typescript
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';

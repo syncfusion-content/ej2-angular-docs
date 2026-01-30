@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Rows in Angular Gantt component | Syncfusion
-description: Learn here all about Rows in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Rows in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about Rows in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Rows
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row in Angular Gantt component
+# Row in Angular Gantt Chart Component
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt, perform sorting or filtering operations, and trigger events based on actions.
 
@@ -18,7 +18,7 @@ Customizing row styles in the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 
 ### Using event
 
-You can customize the row appearance in the Angular Gantt component by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event allows you to apply styles or perform other row-level modifications based on the data or specific logic requirements.
+You can customize the row appearance in the Angular Gantt Chart component by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event allows you to apply styles or perform other row-level modifications based on the data or specific logic requirements.
 
 The following example demonstrates how to customize row styles based on the value of the **Progress** column.
 
@@ -33,7 +33,7 @@ The following example demonstrates how to customize row styles based on the valu
   
 {% previewsample "page.domainurl/samples/gantt/rows/rowstyle-cs1" %}
 
->* The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
+>* The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
 
 ### Using CSS
 
@@ -74,7 +74,7 @@ To create a visual separation between consecutive rows, you can style alternate 
 
 ### Using method 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
 
 To customize rows in the grid section, you can use the following methods:
 
@@ -89,7 +89,7 @@ To customize rows in the chart section, the following methods are available:
 - `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
-The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event of the Gantt chart.
+The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event of the Gantt chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,7 +119,7 @@ You can customize the styling of parent and child rows in the Syncfusion<sup sty
 
 ## Auto focus taskbar on row click 
 
-You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by using the [autofocustasks](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
+You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by using the [autofocustasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ You can enable automatic scrolling to the corresponding taskbar in the timeline 
 
 ## Row height
 
-You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart by setting the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property. This helps display additional content within a row or reduce its height to align with the content size.
+You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart by setting the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowheight) property. This helps display additional content within a row or reduce its height to align with the content size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,7 +152,7 @@ You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</
 
 ### Customize row height for particular row 
 
-You can customize the height of a specific row in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property for rows based on their data.
+You can customize the height of a specific row in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowheight) property for rows based on their data.
 
 In the example below, the row height is set to **90px** for the row where **TaskID** is 2.
 
@@ -172,7 +172,7 @@ In the example below, the row height is set to **90px** for the row where **Task
 
 ## Row hover with custom action or items
 
-You can execute custom actions or display items on row hover in the Gantt chart by using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt/#databound) event.
+You can execute custom actions or display items on row hover in the Gantt chart by using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#databound) event.
 
 The following demonstrates how to implement a custom action using the `dataBound` event. In this event, when hovering over a row, a tooltip containing a button is displayed. Clicking the button reveals a custom message.
 
@@ -302,12 +302,12 @@ Supported `newRowPosition` values:
   
 {% previewsample "page.domainurl/samples/gantt/rows/addrow-cs1" %}
 
->* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/#addrecord) method.
+>* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord) method.
 >* If you do not specify an index, the new row will be added at the top of the gantt.
 
 ## Show or hide a row using an external actions
 
-You can show or hide specific rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using `getRowByIndex` from the `treeGrid` object and Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box/#change) event to manage row visibility dynamically.
+You can show or hide specific rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using `getRowByIndex` from the `treeGrid` object and Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box#change) event to manage row visibility dynamically.
 
 In this example, the `onCheckBoxChange` method checks the checkbox state and uses `getRowsObject` to iterate through all grid rows. If the **TaskName** value is **Perform Soil test**, the row is hidden using `getRowByIndex` by setting its display style to **none**, and its index is stored in a `hiddenRows` array. When the checkbox is unchecked, the method loops through `hiddenRows` to show each row by resetting its display style and then clears the array.
 

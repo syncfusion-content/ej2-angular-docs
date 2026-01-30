@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Timeline in Angular Gantt component | Syncfusion
-description: Learn how to configure timelines in the Syncfusion Angular Gantt component with view modes, zooming, weekend highlighting, and templates.
+title: Timeline in Angular Gantt Chart component | Syncfusion
+description: Learn how to configure timelines in the Syncfusion Angular Gantt Chart component with view modes, zooming, weekend highlighting, and templates.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeline in Angular Gantt component
+# Timeline in Angular Gantt Chart component
 
-The timeline in the Angular Gantt component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings/#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the Angular Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
@@ -114,7 +114,7 @@ In Minutes timeline mode, the tier displays minute-level intervals, ideal for tr
 
 ## Customize week start day
 
-In the Gantt component, you can customize the week start day using the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) property. By default, the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#weekstartday) is set to **0**, which specifies the **Sunday** as a start day of the week. But, you can customize the week start day by using the following code example.
+In the Gantt Chart component, you can customize the week start day using the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#weekstartday) property. By default, the [weekStartDay](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#weekstartday) is set to **0**, which specifies the **Sunday** as a start day of the week. But, you can customize the week start day by using the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ In the Gantt component, you can customize the week start day using the [weekStar
 
 ## Customize automatic timescale update action
 
-In the Gantt component, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [updateTimescaleView](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#updatetimescaleview) property.
+In the Gantt Chart component, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [updateTimescaleView](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#updatetimescaleview) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,7 +161,7 @@ You can dynamically change the timeline mode in the Gantt Chart by updating the 
 
 ## Timeline cells tooltip
 
-In the Gantt component, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showtooltip) property. The default value of this property is **true**.
+In the Gantt Chart component, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#showtooltip) property. The default value of this property is **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -181,7 +181,7 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
 
 ## Highlight weekends
 
-Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/#showweekend) to **true** and [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
+Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#showweekend) to **true** and [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,7 +230,7 @@ You can adjust the Gantt chart view by shifting the timeline forward or backward
 
 ## Timeline template
 
-In the Gantt component, you can customize timeline cells using the [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
+In the Gantt Chart component, you can customize timeline cells using the [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 

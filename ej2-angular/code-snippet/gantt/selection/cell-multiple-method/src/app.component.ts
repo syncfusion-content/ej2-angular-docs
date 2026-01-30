@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GanttComponent, GanttModule, SelectionService} from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
@@ -9,19 +9,19 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
   imports: [GanttModule, ButtonModule],
   providers: [SelectionService],
   template: `
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px 0 20px 0;">
-      <button ejs-button (click)="selectCells([1, 3])">Select [1, 3]</button>
-      <button ejs-button (click)="selectCells([0, 2])">Select [0, 2]</button>
-      <button ejs-button (click)="selectCells([2, 4])">Select [2, 4]</button>
-      <button ejs-button (click)="selectCells([0, 5])">Select [0, 5]</button>
-      <button ejs-button (click)="selectCells([1, 6])">Select [1, 6]</button>
-      <button ejs-button (click)="selectCells([0, 7])">Select [0, 7]</button>
-      <button ejs-button (click)="selectCells([6, 7])">Select [6, 7]</button>
-      <button ejs-button (click)="selectCells([4, 6])">Select [4, 6]</button>
-      <button ejs-button (click)="selectCells([2, 5])">Select [2, 5]</button>
-    </div>
-    <ejs-gantt #gantt height="370px" [dataSource]="data" [taskFields]="taskSettings" [selectionSettings]="selectionSettings" enableHover="true">
-    </ejs-gantt>`,
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px 0 20px 0;">
+    <button ejs-button (click)="selectCells([0, 0])">Select [0, 0]</button>
+    <button ejs-button (click)="selectCells([1, 1])">Select [1, 1]</button>
+    <button ejs-button (click)="selectCells([2, 2])">Select [2, 2]</button>
+    <button ejs-button (click)="selectCells([3, 3])">Select [3, 3]</button>
+    <button ejs-button (click)="selectCells([4, 4])">Select [4, 4]</button>
+    <button ejs-button (click)="selectCells([5, 0])">Select [5, 0]</button>
+    <button ejs-button (click)="selectCells([6, 1])">Select [6, 1]</button>
+    <button ejs-button (click)="selectCells([7, 2])">Select [7, 2]</button>
+    <button ejs-button (click)="selectCells([3, 4])">Select [3, 4]</button>
+  </div>
+  <ejs-gantt #gantt height="370px" [dataSource]="data" [taskFields]="taskSettings" [selectionSettings]="selectionSettings" enableHover="true">
+  </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
 
@@ -51,13 +51,18 @@ export class AppComponent implements OnInit {
       parentID: 'ParentID'
     };
     this.selectionSettings = {
-      mode: 'Row',
+      mode: 'Cell',
       type: 'Multiple'
     };
   }
-
-  public selectCells(cellIndexes: number[]): void {
-    this.ganttInstance.clearSelection();
-    this.ganttInstance.selectCells(cellIndexes as any);
+  public selectCells(indexes: number[]): void {
+    (this.ganttInstance as GanttComponent).clearSelection();
+    const rowIndex = indexes[0];
+    const cellIndex = indexes[1];
+    const cell = {
+      rowIndex: rowIndex,
+      cellIndexes: [cellIndex]
+    };
+    (this.ganttInstance as GanttComponent).selectCells([cell]);
   }
 }

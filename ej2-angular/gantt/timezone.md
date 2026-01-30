@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Timezone in Angular Gantt | Syncfusion
-description: Learn how to configure timezones in the Syncfusion Angular Gantt component for consistent task scheduling, CRUD operations, and global team coordination.
+title: Timezone in Angular Gantt Chart Component | Syncfusion
+description: Learn how to configure timezones in the Syncfusion Angular Gantt Chart component for consistent task scheduling, CRUD operations, and global team coordination.
 platform: ej2-angular
 control: Timezone
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone in Angular Gantt
+# Timezone in Angular Gantt Chart Component
 
-The Angular Gantt component uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript’s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
+The Angular Gantt Chart component uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript’s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
 
 The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete).
 
@@ -108,7 +108,7 @@ export class AppComponent {
 
 ## Display tasks without timezone
 
-Without a specified timezone, the Gantt component renders tasks according to the local system’s timezone, the default behavior. The `new Date()` constructor interprets task dates relative to the system’s timezone settings, causing variations in displayed times across different regions. For instance, a task scheduled from 9:00 AM to 10:00 AM UTC, appears as 5:00 AM to 6:00 AM EDT on a system in New York (UTC -04:00, accounting for daylight saving time). This suits localized projects where tasks are managed within a single timezone but may cause scheduling conflicts in distributed teams, as a task’s displayed time shifts depending on the system’s location.
+Without a specified timezone, the Gantt Chart component renders tasks according to the local system’s timezone, the default behavior. The `new Date()` constructor interprets task dates relative to the system’s timezone settings, causing variations in displayed times across different regions. For instance, a task scheduled from 9:00 AM to 10:00 AM UTC, appears as 5:00 AM to 6:00 AM EDT on a system in New York (UTC -04:00, accounting for daylight saving time). This suits localized projects where tasks are managed within a single timezone but may cause scheduling conflicts in distributed teams, as a task’s displayed time shifts depending on the system’s location.
 
 ```typescript
 import { Component } from '@angular/core';
