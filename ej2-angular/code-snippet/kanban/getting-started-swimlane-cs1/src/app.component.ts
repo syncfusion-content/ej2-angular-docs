@@ -29,5 +29,3 @@ export class App {
     public swimlaneSettings: SwimlaneSettingsModel = { keyField: 'Assignee' };
 }
 
-
-

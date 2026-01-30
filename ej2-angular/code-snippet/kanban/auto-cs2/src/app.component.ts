@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
 import { Component } from '@angular/core';
 import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 import { DialogUtility } from '@syncfusion/ej2-popups';
@@ -11,15 +8,12 @@ import { closest } from '@syncfusion/ej2-base';
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'  (dataBound)='OnDataBound()'>
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'  (dataBound)='OnDataBound()'>
                 <e-columns>
                   <e-column headerText='To do' keyField='Open'></e-column>
                   <e-column headerText='In Progress' keyField='InProgress'></e-column>
