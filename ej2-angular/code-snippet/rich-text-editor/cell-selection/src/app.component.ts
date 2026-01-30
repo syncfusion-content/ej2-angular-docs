@@ -2,18 +2,18 @@ import { Component, ViewChild } from '@angular/core';
 import { RichTextEditorModule, RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
-  imports: [
-    RichTextEditorModule
-  ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<button id="btn" class="e-btn" style="margin-bottom: 20px;" (click)="selectCell()">Select Cell</button>
-    <ejs-richtexteditor #rte [height]="300" [value]="value"></ejs-richtexteditor>`,
-  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    imports: [
+      RichTextEditorModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<button id="btn" class="e-btn" style="margin-bottom: 20px;" (click)="selectCell()">Select Cell</button>
+      <ejs-richtexteditor #rte [height]="300" [value]="value"></ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
 
 export class AppComponent {
- @ViewChild('rte') rte!: RichTextEditorComponent;
+  @ViewChild('rte') rte!: RichTextEditorComponent;
 
   public value: string = `
     <table style="width:100%; border-collapse: collapse;" border="1">

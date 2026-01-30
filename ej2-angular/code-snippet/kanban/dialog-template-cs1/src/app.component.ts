@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { NumericTextBoxAllModule, TextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
 import { Component } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { NumericTextBox, TextBox } from '@syncfusion/ej2-inputs';
@@ -13,18 +10,15 @@ import { CardSettingsModel, DialogSettingsModel } from '@syncfusion/ej2-angular-
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule,
         DropDownListAllModule,
         NumericTextBoxAllModule,
         TextBoxAllModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'>
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'>
                 <e-columns>
                   <e-column headerText='To do' keyField='Open'></e-column>
                   <e-column headerText='In Progress' keyField='InProgress'></e-column>

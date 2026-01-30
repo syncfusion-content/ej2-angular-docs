@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { KanbanComponent, CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 import { Query } from '@syncfusion/ej2-data';
@@ -12,16 +9,13 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule,
         DropDownListModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: ` <ejs-dropdownlist #dropdown [dataSource]='priorityData' width='250px'
+    standalone: true,
+    selector: 'app-root',
+    template: ` <ejs-dropdownlist #dropdown [dataSource]='priorityData' width='250px'
                 (change)='change($event)' index=0 placeholder='Select a priority'></ejs-dropdownlist>
             <ejs-kanban #kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'>
                 <e-columns>

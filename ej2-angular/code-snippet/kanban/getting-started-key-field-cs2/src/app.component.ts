@@ -27,6 +27,3 @@ export class App {
         headerField: 'Id'
     };
 }
-
-
-

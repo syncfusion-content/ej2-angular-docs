@@ -95,20 +95,20 @@ import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [        
+    imports: [        
         KanbanModule
     ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban>
-            <e-columns>
-                <e-column headerText='To do' keyField='Open'></e-column>
-                <e-column headerText='In Progress' keyField='InProgress'></e-column>
-                <e-column headerText='Testing' keyField='Testing'></e-column>
-                <e-column headerText='Done' keyField='Close'></e-column>
-            </e-columns>
-        </ejs-kanban>`
-})
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban>
+                <e-columns>
+                    <e-column headerText='To do' keyField='Open'></e-column>
+                    <e-column headerText='In Progress' keyField='InProgress'></e-column>
+                    <e-column headerText='Testing' keyField='Testing'></e-column>
+                    <e-column headerText='Done' keyField='Close'></e-column>
+                </e-columns>
+            </ejs-kanban>`
+    })
 export class App { }
 
 ```
@@ -131,6 +131,10 @@ The application will display an empty Kanban board with the defined columns.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/getting-started-empty-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/kanban/getting-started-empty-cs1/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/kanban/getting-started-empty-cs1" %}
@@ -146,6 +150,10 @@ Populate the Kanban with cards by binding a local JSON array or remote data to t
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/getting-started-key-field-cs2/src/main.ts %}
+{% endhighlight %}
+
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/kanban/getting-started-key-field-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
@@ -166,6 +174,10 @@ Populate the Kanban with cards by binding a local JSON array or remote data to t
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/getting-started-swimlane-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/kanban/getting-started-swimlane-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}

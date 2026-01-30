@@ -1,23 +1,17 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { KanbanComponent, CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<button ejs-button class="e-btn" id="particularColumn" (click)='toggle()'>Enable Allow Toggle</button>
+    standalone: true,
+    selector: 'app-root',
+    template: `<button ejs-button class="e-btn" id="particularColumn" (click)='toggle()'>Enable Allow Toggle</button>
             <button ejs-button class="e-btn" id="column" (click)='change()'>Change Columns</button>
             <ejs-kanban #kanbanObj keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'>
                 <e-columns>

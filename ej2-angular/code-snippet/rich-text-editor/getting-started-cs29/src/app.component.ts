@@ -3,6 +3,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups'
 import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent,CountService} from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement, addClass, removeClass, Browser } from '@syncfusion/ej2-base';
+import * as CodeMirror from 'codemirror';
 
 @Component({
     imports: [  
@@ -73,17 +74,15 @@ export class AppComponent  {
     }
 
     public renderCodeMirror(mirrorView: HTMLElement, content: string): void {
-    // this.myCodeMirror = CodeMirror(mirrorView, {
-    //     value: content,
-    //     lineNumbers: true,
-    //     mode: 'text/html',
-    //     lineWrapping: true,
-
-    // });
+    this.myCodeMirror = CodeMirror(mirrorView, {
+        value: content,
+        lineNumbers: true,
+        mode: 'text/html',
+        lineWrapping: true,
+    });
     }
     public actionCompleteHandler(e: any): void {
         if (e.targetItem && (e.targetItem === 'SourceCode' || e.targetItem === 'Preview')) {
-            (this.rteObj!.sourceCodeModule.getPanel() as HTMLTextAreaElement).style.display = 'none';
             this.mirrorConversion(e);
         } else {
             setTimeout(() => { this.rteObj!.toolbarModule.refreshToolbarOverflow(); }, 400);

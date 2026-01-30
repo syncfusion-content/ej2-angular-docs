@@ -28,19 +28,19 @@ import { DataStateChangeEventArgs, DataSourceChangedEventArgs } from '@syncfusio
 import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 
 @Component({
-  selector: 'app-root',
-  template: `<ejs-kanban #kanbanObj keyField='Status' [dataSource]='data | async' [cardSettings]='cardSettings' (dataStateChange)= 'dataStateChange($event)'  (dataSourceChanged)='dataSourceChanged($event)'>
-    <e-columns>
-        <e-column headerText='To Do' keyField='Open'></e-column>
-        <e-column headerText='In Progress' keyField='InProgress'></e-column>
-        <e-column headerText='Testing' keyField='Testing'></e-column>
-        <e-column headerText='Done' keyField='Close'></e-column>
-    </e-columns>
-</ejs-kanban>`,
+    selector: 'app-root',
+    template: `<ejs-kanban #kanbanObj keyField='Status' [dataSource]='data | async' [cardSettings]='cardSettings' (dataStateChange)= 'dataStateChange($event)'  (dataSourceChanged)='dataSourceChanged($event)'>
+        <e-columns>
+            <e-column headerText='To Do' keyField='Open'></e-column>
+            <e-column headerText='In Progress' keyField='InProgress'></e-column>
+            <e-column headerText='Testing' keyField='Testing'></e-column>
+            <e-column headerText='Done' keyField='Close'></e-column>
+        </e-columns>
+    </ejs-kanban>`,
   providers: [TasksService]
 })
 export class AppComponent implements OnInit {
-  public data: Observable<DataStateChangeEventArgs>;
+    public data: Observable<DataStateChangeEventArgs>;
     public state: DataStateChangeEventArgs;
     public cardSettings: CardSettingsModel;
 
