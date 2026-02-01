@@ -4,6 +4,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -61,10 +64,16 @@ SEE LICENSE IN license
 @syncfusion/ej2-inputs
 SEE LICENSE IN license
 
+@syncfusion/ej2-interactive-chat
+SEE LICENSE IN license
+
 @syncfusion/ej2-layouts
 SEE LICENSE IN license
 
 @syncfusion/ej2-lists
+SEE LICENSE IN license
+
+@syncfusion/ej2-markdown-converter
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations

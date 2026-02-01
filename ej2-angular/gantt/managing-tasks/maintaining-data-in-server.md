@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Maintaining data in server in Angular Gantt component | Syncfusion
-description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt component for seamless project updates.
+title: Maintaining Data in Server in Angular Gantt Chart | Syncfusion
+description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt Chart for seamless project updates.
 platform: ej2-angular
 control: Maintaining data in server
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintaining data in server in Angular Gantt component
+# Maintaining Data in Server in Angular Gantt Chart Component
 
-Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., id, name, startDate). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
+Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
 
 ## Configure URL adaptor with batch updates
 
-Configure the Gantt component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
+Configure the Gantt Chart component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -195,5 +195,5 @@ public void RemoveChildRecords(string key)
 
 ## See also
 - [How to bind remote data?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#remote-data)
-- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)

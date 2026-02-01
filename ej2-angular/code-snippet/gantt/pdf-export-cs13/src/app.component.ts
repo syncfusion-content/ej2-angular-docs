@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, ToolbarService, DayMarkersService, PdfExportService, SelectionService PdfExportProperties, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, ToolbarService, DayMarkersService, PdfExportService, SelectionService, PdfBorders, PdfPaddings, GanttComponent, ToolbarItem, PdfExportProperties } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { PdfColor, PdfDashStyle, PdfFontFamily, PdfFontStyle, PdfPen, PdfStringFormat, PdfTextAlignment } from '@syncfusion/ej2-pdf-export';
 import { editingData } from './data';

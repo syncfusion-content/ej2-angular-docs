@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Managing tasks in Angular Gantt component | Syncfusion
-description: Learn here all about Managing tasks in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about Managing tasks in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Managing tasks 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Managing tasks in Angular Gantt component
+# Managing Tasks in Angular Gantt Chart Component
 
-Managing tasks in the Angular Gantt component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Managing tasks in the Angular Gantt Chart component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord), [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#deleterecord) and [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
-The following code example demonstrates editing in the Gantt component.
+The following code example demonstrates editing in the Gantt Chart component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 ## Prevent particular column and taskbar editing
 
-You can prevent editing for the particular column by setting [columns.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/column/#allowEditing) to **false**.
+You can prevent editing for the particular column by setting [columns.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowEditing) to **false**.
 
 To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event based on `taskbarEditAction`.
 
@@ -227,7 +227,7 @@ The following table explains the taskbar state in dependency edit mode.
 Taskbar state |Description
 -----|-----
 Parent taskbar | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)
-Taskbar without dependency |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)
+Taskbar without dependency |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)
 Taskbar with dependency | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)
 Removing dependency | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)
 
@@ -243,7 +243,7 @@ Removing dependency | Once you tap the taskbar with direct dependency, then conf
   
 {% previewsample "page.domainurl/samples/gantt/touch/dependencyediting-cs1" %}
 
->Note: In mobile device, you cannot create dependency other than **FS** by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
+>Note: On mobile device, you cannot create dependency other than **FS** by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
 ## Taskbar editing tooltip
 

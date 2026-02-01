@@ -51,13 +51,10 @@ export class AppComponent implements OnInit {
     }
 
     public getundocollection(): void {
-        console.log(this.ganttInstance.getUndoActions());
+        console.log((this.ganttInstance as GanttComponent).getUndoActions());
     };
 
     public getredocollection(): void {
-        console.log(this.ganttInstance.getRedoActions());
+        console.log((this.ganttInstance as GanttComponent).getRedoActions());
     };
 }
-
-
-

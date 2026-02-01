@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Scheduling tasks in Angular Gantt component | Syncfusion
-description: Learn how to configure task scheduling modes, types, duration units, working time, and holidays in the Syncfusion Angular Gantt component.
+title: Scheduling Tasks in Angular Gantt Chart Component | Syncfusion
+description: Learn how to configure task scheduling modes, types, duration units, working time, and holidays in the Syncfusion Angular Gantt Chart component.
 platform: ej2-angular
 control: Scheduling tasks
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scheduling tasks in Angular Gantt component
+# Scheduling Tasks in Angular Gantt Chart Component
 
-Task scheduling in the Angular Gantt component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
+Task scheduling in the Angular Gantt Chart component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Configure scheduling modes
 
@@ -98,9 +98,9 @@ The following example configures task types:
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt component supports three duration units that can be applied at both project and individual task levels.
+Duration units determine how task length is measured and calculated within the project. The Gantt Chart component supports three duration units that can be applied at both project and individual task levels.
 
-The Gantt component supports the following duration units:
+The Gantt Chart component supports the following duration units:
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.

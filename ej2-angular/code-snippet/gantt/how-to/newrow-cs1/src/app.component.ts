@@ -1,6 +1,6 @@
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
-import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+import { EditService, SelectionService,  } from '@syncfusion/ej2-angular-gantt'
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ToolbarItem, EditSettingsModel, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { MenuItemModel, ContextMenu } from '@syncfusion/ej2-navigations';
@@ -80,32 +80,32 @@ export class AppComponent implements OnInit {
 
     public select(args: any) {
         if (args.item.text === "Bottom") {
-            this.ganttInstance.editSettings.newRowPosition = "Bottom";
-            this.ganttInstance.openAddDialog();
+            (this.ganttInstance as GanttComponent).editSettings.newRowPosition = "Bottom";
+            (this.ganttInstance as GanttComponent).openAddDialog();
         } else if (args.item.text === "Above") {
-            if (this.ganttInstance.selectedRowIndex == -1) {
+            if ((this.ganttInstance as GanttComponent).selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttInstance.editSettings.newRowPosition = "Above";
-                this.ganttInstance.openAddDialog();
+                (this.ganttInstance as GanttComponent).editSettings.newRowPosition = "Above";
+                (this.ganttInstance as GanttComponent).openAddDialog();
             }
         } else if (args.item.text === "Below") {
-            if (this.ganttInstance.selectedRowIndex == -1) {
+            if ((this.ganttInstance as GanttComponent).selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttInstance.editSettings.newRowPosition = "Below";
-                this.ganttInstance.openAddDialog();
+                (this.ganttInstance as GanttComponent).editSettings.newRowPosition = "Below";
+                (this.ganttInstance as GanttComponent).openAddDialog();
             }
         } else if (args.item.text === "Child") {
-            if (this.ganttInstance.selectedRowIndex == -1) {
+            if ((this.ganttInstance as GanttComponent).selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                this.ganttInstance.editSettings.newRowPosition = "Child";
-                this.ganttInstance.openAddDialog();
+                (this.ganttInstance as GanttComponent).editSettings.newRowPosition = "Child";
+                (this.ganttInstance as GanttComponent).openAddDialog();
             }
         } else if (args.item.text === "Top") {
-            this.ganttInstance.editSettings.newRowPosition = "Top";
-            this.ganttInstance.openAddDialog();
+            (this.ganttInstance as GanttComponent).editSettings.newRowPosition = "Top";
+            (this.ganttInstance as GanttComponent).openAddDialog();
         }
     }
 
@@ -120,4 +120,3 @@ export class AppComponent implements OnInit {
 function getInstance(arg0: HTMLElement | null, ContextMenu: any): ContextMenu {
     throw new Error('Function not implemented.');
 }
-

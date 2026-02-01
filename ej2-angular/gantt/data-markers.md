@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data markers in Angular Gantt component | Syncfusion
-description: Learn here all about Data markers in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Data Markers in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about data markers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data markers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data markers in Angular Gantt component
+# Data Markers in Angular Gantt Chart Component
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 
@@ -30,7 +30,7 @@ Data markers represent schedule events for specific tasks through visual indicat
 
 **Data structure requirements**: Data markers are defined in the data source as arrays of objects containing marker specifications. Each marker object includes date information, visual styling, identification details, and optional tooltip content for enhanced user interaction.
 
-**Mapping configuration**: The marker array connects to the Gantt component through the [taskFields.indicators](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#indicators) property mapping. This configuration establishes the relationship between data source marker definitions and component rendering logic.
+**Mapping configuration**: The marker array connects to the Gantt Chart component through the [taskFields.indicators](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#indicators) property mapping. This configuration establishes the relationship between data source marker definitions and component rendering logic.
 
 **Multiple marker support**: Tasks can display multiple data markers simultaneously, allowing comprehensive event tracking within individual task contexts. Each marker maintains independent configuration while sharing the same task timeline space.
 The following implementation demonstrates comprehensive data marker integration within a Gantt chart, showcasing multiple markers per task with varied styling and tooltip configurations:
@@ -51,7 +51,7 @@ The following implementation demonstrates comprehensive data marker integration 
 
 Data markers support interactive functionality through click event binding, enabling custom actions when markers are selected. This interaction capability allows the implementation of detailed views, status updates, or navigation to related information based on marker context.
 
-**Event binding implementation**: Click events are bound to data markers using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#databound) event of the Gantt component. This event fires after data binding completes, ensuring all marker elements are rendered and available for event attachment.
+**Event binding implementation**: Click events are bound to data markers using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#databound) event of the Gantt Chart component. This event fires after data binding completes, ensuring all marker elements are rendered and available for event attachment.
 
 **DOM element selection**: Data markers render with the CSS class **.e-indicator-span**, which serves as the selector for identifying marker elements within the DOM. This class provides a reliable reference for event binding regardless of marker styling or content variations.
 

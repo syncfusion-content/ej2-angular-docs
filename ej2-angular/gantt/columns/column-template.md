@@ -1,98 +1,93 @@
 ---
 layout: post
-title: Column template in Angular Gantt component | Syncfusion
-description: Learn here all about Column template in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Template in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about column template in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column template in Angular Gantt component
+# Column Template in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
-> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property of the column is specified.
+> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for Gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column is specified.
 
 ## Render image in a column
 
-To render an image in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property. This property accepts either an HTML element or a function that returns HTML content.
+To render an image in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property. This property accepts either an HTML element or a function that returns HTML content.
 
 The following example demonstrates how to render an image for the **Resources** field to display an image element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { projectNewData } from './data';
+import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { GanttComponent, GanttModule, SplitterSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { data, ProjectResources } from './data';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
   template: `
-    <ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
-      <e-columns>
-        <e-column field="TaskName" width="290">
-          <ng-template #headerTemplate let-data>
-            <div>
-              <img src="assets/images/taskname.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Task Name</b>
-            </div>
-          </ng-template>
+        <ejs-gantt #gantt height="450px" rowHeight="60" [dataSource]="data" [taskFields]="taskSettings"
+    [resourceFields]="resourceFields" [resources]="resources" [splitterSettings]="splitterSettings">
+    <e-columns>
+        <e-column field="TaskID"></e-column>
+        <e-column field="resources" headerText="Resources" width="250" textAlign="Center">
+            <ng-template #template let-data>
+                <div class="image">
+                    <img [src]="'assets/images/' + data.TaskID + '.png'" style="height:42px;" />
+                </div>
+            </ng-template>
         </e-column>
-        <e-column field="StartDate" width="390" textAlign="Right">
-          <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/startdate.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Start Date</b>
-            </div>
-          </ng-template>
-        </e-column>
-        <e-column field="Duration" width="120" textAlign="Right">
-          <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/duration.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Duration</b>
-            </div>
-          </ng-template>
-        </e-column>
-        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
-        <ng-template #headerTemplate>
-            <div>
-              <img src="assets/images/progress.png" width="20" height="20" class="e-template">
-              <b className='e-header'>Progress</b>
-            </div>
-          </ng-template>
-        </e-column>
-      </e-columns>
-    </ejs-gantt>`,
+        <e-column field="TaskName"></e-column>
+        <e-column field="StartDate"></e-column>
+        <e-column field="Duration"></e-column>
+        <e-column field="Progress"></e-column>
+    </e-columns>
+
+</ejs-gantt>
+    `,
   encapsulation: ViewEncapsulation.None
 })
-
 export class AppComponent implements OnInit {
+
+  @ViewChild('gantt') public gantt?: GanttComponent;
+
   public data?: object[];
+  public resources?: object[];
   public taskSettings?: object;
-  public splitterSettings?: object;
+  public resourceFields?: object;
+  public splitterSettings?: SplitterSettingsModel;
 
   ngOnInit(): void {
-    this.data = projectNewData;
+
+    this.data = data;
+    this.resources = ProjectResources;
+
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
       duration: 'Duration',
       progress: 'Progress',
-      child: 'subtasks'
+      parentID: 'ParentID',
+      resourceInfo: 'resources'
     };
+
+    this.resourceFields = {
+      id: 'resourceID',
+      name: 'resourceName'
+    };
+
     this.splitterSettings = {
-      position: '75%'
+      columnIndex: 7
     };
   }
 }
-
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -105,13 +100,13 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/gantt/columns/column-template-cs1" %}
 
-> The [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) option allows to define any HTML content within a column.
+> The [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option allows to define any HTML content within a column.
 
 ## Render hyperlink in a column
 
-The Gantt component supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
+The Gantt Chart component supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
 
-To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) within the **e-column** tag using `ng-template` and an `a` tag. The `onClick` function is triggered when the hyperlink is clicked.
+To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) within the **e-column** tag using `ng-template` and an `a` tag. The `onClick` function is triggered when the hyperlink is clicked.
 
 The example below demonstrates how to render a hyperlink for the **TaskName** field.
 
@@ -193,7 +188,7 @@ The column template has options to render a custom component in a gantt column i
 
 ### Render LineChart component in a column
 
-The [LineChart](https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started) component from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property in the column configuration.
+The [LineChart](https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started) component from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property in the column configuration.
 
 The following example demonstrates how to render a `LineChart` for the **customData** field.
 
@@ -298,7 +293,7 @@ export class AppComponent implements OnInit {
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component offers a user-friendly interface for selecting colors from a predefined palette or custom options. It is useful in scenarios like theme selection or dynamic element styling.
 
-To render the ColorPicker inside a Gantt column, configure the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property in the column definition.
+To render the ColorPicker inside a Gantt column, configure the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property in the column definition.
 
 The following example demonstrates how to render a `ColorPicker` for the **Change color** column.
 
@@ -318,7 +313,7 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 ### Render DropDownList component in a column
 
-To render a `DropDownList` component in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property in the column configuration.
+To render a `DropDownList` component in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property in the column configuration.
 
 The following example demonstrates how to render the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component in the **Task Priority** column.
 
@@ -338,7 +333,7 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 
 ### Render Chip component in a column
 
-The Gantt chart component supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
+The Gantt chart component supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
 
 The following example demonstrates how to render the Chips component in the **TaskName** column.
 
@@ -356,7 +351,7 @@ The following example demonstrates how to render the Chips component in the **Ta
   
 {% previewsample "page.domainurl/samples/gantt/columns/column-template-cs5" %}
 
-## Render RadioButton in a column
+### Render RadioButton in a column
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) component can be rendered in a grid column to display selection options like order statuses or approval choices.
 
@@ -378,7 +373,7 @@ The following example demonstrates rendering `RadioButton` components in the **O
 
 ## Using condition template
 
-The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) allows rendering elements based on specific conditions.
+The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) allows rendering elements based on specific conditions.
 
 The following example demonstrates how to use the `template` property with the `ng-template` element and apply the `*ngIf` directive to render a checkbox based on the value of the **Discontinued** field. A checkbox will be displayed only in rows where **Discontinued** is set to **true**.
 
@@ -390,7 +385,7 @@ The following example demonstrates how to use the `template` property with the `
 {% include code-snippet/gantt/columns/column-template-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -400,7 +395,7 @@ The following example demonstrates how to use the `template` property with the `
 
 ## How to get the row object by clicking on the template element
 
-The Gantt chart component allows retrieving the row object of a selected record when a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#template) element is clicked. This is useful for performing custom actions based on the selected data.
+The Gantt chart component allows retrieving the row object of a selected record when a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) element is clicked. This is useful for performing custom actions based on the selected data.
 
 In the following example, a button is rendered in the **Task Data** column. The `click` event is bound to the `showDetails` method, which receives the data object from the template variable, enabling access to the selected row and displaying it in a dialog popup.
 

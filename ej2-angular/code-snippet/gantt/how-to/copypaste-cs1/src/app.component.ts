@@ -45,10 +45,10 @@ export class AppComponent implements OnInit {
     public contextMenuClick(args: ContextMenuClickEventArgs) {
         if (args.item.id === 'copy') {
             this.copiedRecord = args.rowData;
-            this.copiedRecord.taskData.TaskID = this.ganttInstance.currentViewData.length + 1;
+            this.copiedRecord.taskData.TaskID = (this.ganttInstance as GanttComponent).currentViewData.length + 1;
         }
         if (args.item.id === 'paste') {
-            this.ganttInstance.addRecord(this.copiedRecord.taskData, 'Below', args.rowData!.index);
+            (this.ganttInstance as GanttComponent).addRecord(this.copiedRecord.taskData, 'Below', args.rowData!.index);
             if (this.copiedRecord.hasChildRecords) {
                 addChildRecords(this.copiedRecord, args.rowData!.index! + 1);
             }
@@ -70,8 +70,8 @@ export class AppComponent implements OnInit {
 function addChildRecords(this: any, record: any, index: any): void {
     for (var i = 0; i < record.childRecords.length; i++) {
         var childRecord = record.childRecords[i];
-        childRecord.taskData.TaskID = this.ganttInstance.currentViewData.length + 1;
-        this.ganttInstance.addRecord(childRecord.taskData, 'Child', index);
+        childRecord.taskData.TaskID = (this.ganttInstance as GanttComponent).currentViewData.length + 1;
+        (this.ganttInstance as GanttComponent).addRecord(childRecord.taskData, 'Child', index);
         if (childRecord.hasChildRecords) {
             addChildRecords(childRecord, index + (i + 1));
         }

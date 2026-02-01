@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
                     },
                     write: (args: Object) => {
                         this.dropDownListObject = new DropDownList({
-                            dataSource: this.ganttInstance.treeGrid.grid.dataSource,
+                            dataSource: (this.ganttInstance as GanttComponent).treeGrid.grid.dataSource as any,
                             fields: { value: 'TaskName' },
                             value: (args as any).rowData[(args as any).column.field],
                             floatLabelType: 'Auto',

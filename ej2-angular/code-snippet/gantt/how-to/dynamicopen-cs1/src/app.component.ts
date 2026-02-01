@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { GanttModule, GanttComponent, EditSettingsModel , EditService, SelectionService} from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, GanttComponent, EditSettingsModel, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { editingData, editingResources } from './data';
 
@@ -59,10 +59,10 @@ export class AppComponent implements OnInit {
     }
 
     public edit(): void {
-        this.ganttInstance.editModule.dialogModule.openEditDialog(this.ganttInstance.selectedRowIndex);
+        (this.ganttInstance as GanttComponent).editModule.dialogModule.openEditDialog((this.ganttInstance as GanttComponent).selectedRowIndex);
     };
 
     public add(): void {
-        this.ganttInstance.editModule.dialogModule.openAddDialog();
+        (this.ganttInstance as GanttComponent).editModule.dialogModule.openAddDialog();
     };
 }

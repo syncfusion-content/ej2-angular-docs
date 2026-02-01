@@ -1,14 +1,14 @@
 ---
 layout: post
-title: New row position in Angular Gantt component | Syncfusion
-description: Learn here all about New row position in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: New row position in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about new row position in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: New row position 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# New row position in Angular Gantt component
+# New Row Position in Angular Gantt Chart Component
 
 In Gantt, a new row can be added in one of the following positions: Top, Bottom, Above, Below and Child. This position can be specified through the `newRowPostion` property. We can make use of the toolbarClick event to create a context menu that specifies the position in which the new row is to be added when adding a record through toolbar click.
 

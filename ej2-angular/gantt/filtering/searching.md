@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Searching in Angular Gantt component | Syncfusion
-description: Learn here all about Searching in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Searching in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about Searching in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Searching 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Searching in Angular Gantt component
+# Searching in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
-To enable search functionality, include the **Search** item in the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) configuration and inject both `FilterService` and `ToolbarService` into the component's `providers` array.
+To enable search functionality, include the **Search** item in the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) configuration and inject both `FilterService` and `ToolbarService` into the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ To enable search functionality, include the **Search** item in the [toolbar](htt
 
 ## Initial search
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt compoenent allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
 
 To configure this feature, define the following properties:
 
@@ -56,7 +56,7 @@ The following sample demonstrates an initial search where `fields` is set to **T
 
 ## Search operators
 
-Search operators specify the type of comparison used during a search. These are configured through the [searchSettings.operator](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#operator) property.
+Search operators specify the type of comparison used during a search. These are configured through the [searchSettings.operator](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#operator) property.
 
 The following operators are supported in searching:
 
@@ -84,7 +84,7 @@ The following operators are supported in searching:
 
 ## Search by external button
 
-To perform a search from an external button in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, call the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt/#search) method programmatically with the desired keyword.
+To perform a search from an external button in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, call the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method programmatically with the desired keyword.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,11 +98,11 @@ To perform a search from an external button in the Syncfusion<sup style="font-si
   
 {% previewsample "page.domainurl/samples/gantt/filtering/externalbutton-cs1" %}
 
-> You should set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) property to **true** for searching the content externally.
+> You should set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) property to **true** for searching the content externally.
 
 ## Search specific columns
 
-To search specific columns in the Gantt component, use the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
+To search specific columns in the Gantt Chart component, use the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
 
 This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 
@@ -120,9 +120,9 @@ This following sample demonstrates searching only within the **TaskName** and **
 
 ## Clear search by external button
 
-To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#key) property to an empty string. 
+To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#key) property to an empty string. 
  
-Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt/#search) method with an empty string to reset the search.
+Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method with an empty string to reset the search.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,7 +138,7 @@ Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/do
 
 ## Search on each key stroke
 
-You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt/#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,9 +154,9 @@ You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&re
 
 ## Highlight the search text
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports highlighting matched search text within grid cells to improve visibility of search results. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports highlighting matched search text within grid cells to improve visibility of search results. 
 
-This can be achieved using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
+This can be achieved using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

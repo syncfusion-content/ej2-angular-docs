@@ -13,13 +13,18 @@ export const GanttData = [
     TaskName: 'Site Analysis',
     StartDate: new Date('2023-01-06'),
     EndDate: new Date('2023-01-10'),
-    3,
+    Duration: 5,
+    Progress: 30,
+    ParentID: 1
+  },
+  {
+    TaskID: 3,
     TaskName: 'Soil Testing',
     StartDate: new Date('2023-01-11'),
     EndDate: new Date('2023-01-14'),
     Duration: 3,
     Progress: 40,
-    ParentID: null
+    ParentID: 1
   },
   {
     TaskID: 4,
@@ -28,7 +33,7 @@ export const GanttData = [
     EndDate: new Date('2023-01-18'),
     Duration: 3,
     Progress: 60,
-    ParentID: null
+    ParentID: 1
   },
   {
     TaskID: 5,
@@ -46,7 +51,7 @@ export const GanttData = [
     EndDate: new Date('2023-01-28'),
     Duration: 4,
     Progress: 80,
-    ParentID: null
+    ParentID: 5
   },
   {
     TaskID: 7,
@@ -55,7 +60,7 @@ export const GanttData = [
     EndDate: new Date('2023-02-02'),
     Duration: 4,
     Progress: 90,
-    ParentID: null
+    ParentID: 5
   },
   {
     TaskID: 8,
@@ -64,6 +69,6 @@ export const GanttData = [
     EndDate: new Date('2023-02-06'),
     Duration: 3,
     Progress: 100,
-    ParentID: null
+    ParentID: 5
   }
 ];

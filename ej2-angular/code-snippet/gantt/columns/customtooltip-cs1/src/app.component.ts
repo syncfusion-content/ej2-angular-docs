@@ -20,7 +20,7 @@ import { GanttData } from './data';
           </e-columns>
         </ejs-gantt>
       </ejs-tooltip>
-    </div>`
+    </div>`,
   encapsulation: ViewEncapsulation.None
 })
 

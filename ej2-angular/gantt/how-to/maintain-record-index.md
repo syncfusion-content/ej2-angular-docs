@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Maintain record index position in Angular Gantt component | Syncfusion
-description: Learn how to maintain record index positions in the Syncfusion Angular Gantt component using row drag-and-drop for efficient task reordering.
+title: Maintain Record Index Position in Angular Gantt Chart Component | Syncfusion
+description: Learn how to maintain record index positions in the Syncfusion Angular Gantt Chart component using row drag-and-drop for efficient task reordering.
 platform: ej2-angular
 control: Record index
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain record index position in Angular Gantt component
+# Maintain Record Index Position in Angular Gantt Chart Component
 
-The Angular Gantt component enables seamless task reordering by maintaining record index positions through the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event, which updates the task order in the data source when a row is dragged and dropped. For example, dragging a task from row 5 to row 2 updates the data source to reflect the new position, preserving project structure. Inject `RowDragAndDropService` and enable `allowRowDragAndDrop` to activate this feature. Use the `rowDrop` event to capture `fromIndex` (source row), `dropIndex` (target row), and `dropPosition` and send them to the server via an Ajax request using `DataManager` with `UrlAdaptor`. On the server side, update the data source (e.g., database) with custom methods like `Insert` or `InsertAtTop`, ensuring hierarchical records with parent-child relationships are correctly handled by updating `parentID` in the task data. Configure valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields) mappings (e.g., id, child) to support hierarchical tasks. This feature integrates with task dependencies, critical path, and virtual scrolling, ensuring reordered tasks align with the project timeline for efficient schedule management.
+The Angular Gantt Chart component enables seamless task reordering by maintaining record index positions through the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdrop) event, which updates the task order in the data source when a row is dragged and dropped. For example, dragging a task from row 5 to row 2 updates the data source to reflect the new position, preserving project structure. Inject `RowDragAndDropService` and enable `allowRowDragAndDrop` to activate this feature. Use the `rowDrop` event to capture `fromIndex` (source row), `dropIndex` (target row), and `dropPosition` and send them to the server via an Ajax request using `DataManager` with `UrlAdaptor`. On the server side, update the data source (e.g., database) with custom methods like `Insert` or `InsertAtTop`, ensuring hierarchical records with parent-child relationships are correctly handled by updating `parentID` in the task data. Configure valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, child) to support hierarchical tasks. This feature integrates with task dependencies, critical path, and virtual scrolling, ensuring reordered tasks align with the project timeline for efficient schedule management.
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';

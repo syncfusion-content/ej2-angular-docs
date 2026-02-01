@@ -1,19 +1,31 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { GanttData } from './data';
+import { projectNewData } from './data';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
   template: `
-    <ejs-gantt height="370px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings">
+    <ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
       <e-columns>
-        <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
-        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
-        <e-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-column>
-        <e-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-column>
-        <e-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-column>
+        <e-column field="TaskName" width="290">
+          <ng-template #headerTemplate let-data>
+          {{data.Name}}
+            <div>
+               <img src="assets/images/Name.png" width="20" height="20" />
+            </div> 
+            </ng-template>
+        </e-column>
+        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right"></e-column>
+        <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
+          <ng-template #headerTemplate>
+            <div>
+               <img src="assets/images/Duration.png" width="20" height="20" />
+            </div>
+            </ng-template>
+        </e-column>
+        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right"></e-column>
       </e-columns>
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
@@ -25,7 +37,7 @@ export class AppComponent implements OnInit {
   public splitterSettings?: object;
 
   ngOnInit(): void {
-    this.data = GanttData;
+    this.data = projectNewData;
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',

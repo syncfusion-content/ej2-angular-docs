@@ -10,7 +10,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
   imports: [CommonModule, GanttModule, SwitchModule],
   providers: [ToolbarService, SelectionService],
   template: `
-    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)">
+    <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)">
     </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })

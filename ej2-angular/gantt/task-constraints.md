@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Task Constraints in Angular Gantt | Syncfusion
-description: Learn how to configure task constraints in the Syncfusion Angular Gantt component to enforce scheduling rules, manage dependencies, and meet deadlines.
+title: Task Constraints in Angular Gantt Chart Component | Syncfusion
+description: Learn how to configure task constraints in the Syncfusion Angular Gantt Chart component to enforce scheduling rules, manage dependencies, and meet deadlines.
 platform: ej2-angular
 control: Task Constraints
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Task Constraints in Angular Gantt
+# Task Constraints in Angular Gantt Chart Component
 
-Task constraints in the Angular Gantt component define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like material delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
+Task constraints in the Angular Gantt Chart component define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like tailwind3 delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
 
 ## Benefits of task constraints
 
@@ -24,7 +24,7 @@ Task constraints enhance project planning with the following advantages:
 
 ## Understand task constraint types
 
-The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfieldsmodel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
+The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfieldsmodel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
 | Constraint Type | Numeric Enum Value | Description | Example Use Case |
 |-----------------|--------------------|-------------|------------------|
@@ -39,7 +39,7 @@ The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/
 
 ## Configure task constraints
 
-Configure task constraints using the [taskFields.constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constrainttype) and [taskFields.constraintDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel/#constraintdate) properties to map constraint types and dates. Use [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum values for clarity.
+Configure task constraints using the [taskFields.constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constrainttype) and [taskFields.constraintDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constraintdate) properties to map constraint types and dates. Use [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType) enum values for clarity.
 
 **Define taskFields mappings**
 
@@ -204,7 +204,7 @@ This code sets a task to start on July 1, 2025, with the taskbar reflecting the 
 
 ## Handle constraint violations
 
-Constraint violations occur when scheduling changes (e.g., dragging taskbars) conflict with strict constraints (**MustStartOn**, **MustFinishOn**, **StartNoLaterThan**, **FinishNoLaterThan**). By default, a validation popup alerts users. Use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt/#actionbegin) event with `requestType: 'validateTaskViolation'` to manage violations programmatically, setting `args.validateMode` flags to control behavior:
+Constraint violations occur when scheduling changes (e.g., dragging taskbars) conflict with strict constraints (**MustStartOn**, **MustFinishOn**, **StartNoLaterThan**, **FinishNoLaterThan**). By default, a validation popup alerts users. Use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event with `requestType: 'validateTaskViolation'` to manage violations programmatically, setting `args.validateMode` flags to control behavior:
 
 - `respectMustStartOn`: Silently rejects **MustStartOn** violations.
 - `respectMustFinishOn`: Silently rejects **MustFinishOn** violations.
