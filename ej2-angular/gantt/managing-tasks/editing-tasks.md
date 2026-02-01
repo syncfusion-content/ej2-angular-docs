@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks dynamically in the Syncfusion Angular Gantt Chart component using cell editing, dialog, taskbar, or programmatic methods for project updates.
+description: Learn how to edit tasks in the Syncfusion Angular Gantt Chart using cell, dialog, taskbar, or programmatic editing.
 platform: ej2-angular
 control: Editing tasks
 documentation: ug
@@ -46,7 +46,7 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 ## Customize dialog tabs
 
-Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/dialogFieldType/) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `EditService` required.
+Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/dialogFieldType) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `EditService` required.
 
 The following sample demonstrates customization using properties and the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event.
 

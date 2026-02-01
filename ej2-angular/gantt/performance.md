@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance tips for ##Platform_Name## Gantt Component | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Check out and learn here all about how to improve the loading performance of ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gantt performance
 publishingplatform: ##Platform_Name##
@@ -21,9 +21,9 @@ A Gantt chart renders rows, columns, and taskbars in the DOM. For example, displ
 
 Virtualization techniques significantly improve application efficiency when handling large datasets by rendering only visible content:
 
-1. **Row virtualization**: The virtual scrolling feature enables efficient handling of large data volumes by loading only visible rows within the Gantt viewport rather than rendering the entire dataset. This optimization occurs during vertical scroll actions. For detailed implementation, refer to the [row virtualization documentation](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll#row-virtualization).
+1. **Row virtualization**: The virtual scrolling feature enables efficient handling of large data volumes by loading only visible rows within the Gantt viewport rather than rendering the entire dataset. This optimization occurs during vertical scroll actions. For detailed implementation, refer to the [row virtualization documentation](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling#configure-row-virtualization).
 
-2. **Timeline virtualization**: This feature optimizes timeline rendering by loading only visible timeline cells (typically three viewport widths). Additional timeline cells render on-demand during horizontal scrolling. For implementation details, see the [timeline virtualization documentation](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll#timeline-virtualization).
+2. **Timeline virtualization**: This feature optimizes timeline rendering by loading only visible timeline cells (typically three viewport widths). Additional timeline cells render on-demand during horizontal scrolling. For implementation details, see the [timeline virtualization documentation](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling#configure-timeline-virtualization).
 
 3. **Load on demand**: This feature renders large task collections with optimal performance. With virtualization enabled, only root-level records load initially. Child tasks load dynamically when expanding parent nodes or scrolling vertically, ensuring only necessary data renders based on the current viewport position.
 
@@ -59,7 +59,7 @@ When integrating images or template elements into Gantt columns, use the [Column
 
 ### Optimizing loading performance by referring individual script and CSS
 
-Enhance initial rendering performance by using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) to download only required component scripts. The default ej2.min.js includes all Syncfusion components, which may increase load times. CRG allows selective component and module selection, reducing bundle size and improving loading performance.
+Enhance initial rendering performance by using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com) to download only required component scripts. The default ej2.min.js includes all Syncfusion components, which may increase load times. CRG allows selective component and module selection, reducing bundle size and improving loading performance.
 
 ### Performance benchmarks
 
@@ -67,7 +67,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 31.1.17
+- Component Version: Syncfusion Angular Gantt 32.1.19
 - Angular Version: 20.1.0
 - Browser: Edge 138
 - Operating System: Windows 11
@@ -78,7 +78,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy(Parent-Child) | 3.8                 |
+| Default hierarchy (Parent-Child) | 3.8                 |
 | + Predecessor                   | 5.4                 |
 | + Resources                     | 6.5                 |
 | + Split taskbars                | 7.8                 |
@@ -87,7 +87,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy(Parent-Child) | 2.1                 |
+| Default hierarchy (Parent-Child) | 2.1                 |
 | + Predecessor                   | 5.6                 |
 | + Resources                     | 6.2                 |
 | + Split taskbars                | 6.8                 |
@@ -96,7 +96,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 The Angular Gantt Chart component supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side data operations and CRUD functionalities. Using these adaptors with the `DataManager` component enables seamless remote data binding and action execution.
 
-During data operations like filtering and sorting, corresponding action queries generate according to adaptor requirements. Handle these actions on the application side and return processed data to the Gantt. For efficient data processing, return processed data in this order:
+During data operations like filtering and sorting, corresponding action queries are generated according to adaptor requirements. Handle these actions on the application side and return processed data to the Gantt. For efficient data processing, return processed data in this order:
 * Filtering
 * Sorting
 * Aggregates
@@ -124,7 +124,7 @@ The Angular Gantt Chart component operates on a client-server basis, sending dat
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Optimizing Angular apps with multiple gantts and templates
+## Optimizing Angular apps with multiple gantt and templates
 
 Performance issues in applications with multiple Gantt Chart components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
 
@@ -148,7 +148,7 @@ Implement OnPush change detection strategy using:
 ```
 
 For additional guidance on OnPush strategy implementation:
-* [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
+* [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works)
 * [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
 * [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
 * [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
@@ -188,5 +188,5 @@ For detailed implementation, refer to the [Syncfusion Angular Tree Shaking](http
 ## See also
 
 - [Data binding](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
-- [Virtual scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [Virtual scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [Column template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template)

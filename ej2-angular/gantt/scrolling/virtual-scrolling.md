@@ -32,7 +32,7 @@ The following example enables row virtualization for a large dataset:
 
 ## Configure timeline virtualization
 
-Timeline virtualization, enabled by setting [enableTimelineVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt#enabletimelinevirtualization) to **true**, renders three times the Gantt’s width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) for scale (e.g., monthly or daily tiers). Inject [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) to enable this feature.
+Timeline virtualization, enabled by setting [enableTimelineVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt#enabletimelinevirtualization) to **true**, renders three times the Gantt’s width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings) for scale (e.g., monthly or daily tiers). Inject [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) to enable this feature.
 
 The following example enables timeline virtualization for a wide timeline:
 

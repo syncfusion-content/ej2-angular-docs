@@ -28,7 +28,7 @@ To enable search functionality, include the **Search** item in the [toolbar](htt
 
 ## Initial search
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt compoenent allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
 
 To configure this feature, define the following properties:
 

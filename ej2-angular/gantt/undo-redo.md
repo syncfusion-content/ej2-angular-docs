@@ -31,7 +31,7 @@ The [undoRedoStepsCount](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 ## Configure the feature set for undo redo actions
 
-By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredoactions) property.
+By default, all the Gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredoactions) property.
 
 | Built-in Undo Redo Items | Actions |
 |------------------------|---------|
@@ -48,10 +48,10 @@ By default, all the gantt features listed in the below table will be restored fo
 | ZoomIn | Undo redo actions can be performed for zoomIn action.|
 | ZoomOut | Undo redo actions can be performed for zoomOut action.|
 | ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hided or shown columns.|
+| ColumnState | Undo redo actions can be performed for hidden or shown columns.|
 | RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
 | TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
+| PreviousTimeSpan | Undo redo actions can be performed for previous time span action.|
 | NextTimeSpan | Undo redo actions can be performed for next time span action.|
 
 In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.

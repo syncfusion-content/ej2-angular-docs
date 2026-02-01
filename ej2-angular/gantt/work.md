@@ -14,7 +14,7 @@ The work feature in the Angular Gantt Chart component defines the total effort r
 
 ## Configure work
 
-Use the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#work) property to map a numeric work value (e.g., hours) from the data source. Set the measurement unit with [workUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#workUnit) to **Hour**, **Day**, or **Minute** to define how work is calculated. For example, `workUnit: "Day"` assumes 8-hour workdays. Inject `EditService` to enable editing work via dialogs or taskbar drags. Work values determine taskbar lengths and influence dependency scheduling, aligning project timelines with resource availability.
+Use the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#work) property to map a numeric work value (e.g., hours) from the data source. Set the measurement unit with [workUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#workunit) to **Hour**, **Day**, or **Minute** to define how work is calculated. For example, `workUnit: "Day"` assumes 8-hour workdays. Inject `EditService` to enable editing work via dialogs or taskbar drags. Work values determine taskbar lengths and influence dependency scheduling, aligning project timelines with resource availability.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ Use the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/g
 
 ## Configure task types
 
-The [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskType) property controls how `work`, `duration`, and `resourceUnit` fields interact during edits, with `FixedUnit` as the default unless `taskFields.work` is mapped (sets **FixedWork**). Inject `EditService` to enable editing. The available task types are:
+The [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#tasktype) property controls how `work`, `duration`, and `resourceUnit` fields interact during edits, with `FixedUnit` as the default unless `taskFields.work` is mapped (sets **FixedWork**). Inject `EditService` to enable editing. The available task types are:
 - **FixedDuration**: Duration remains constant; editing work or resource units adjusts the other (e.g., increasing work increases resource allocation).
 - **FixedWork**: Work remains constant; editing duration or resource units adjusts the other (e.g., reducing duration increases resource allocation).
 - **FixedUnit**: Resource units remain constant; editing work or duration adjusts the other (e.g., increasing work extends duration).
@@ -49,7 +49,7 @@ For example, a **FixedWork** task with 40 hours and two resources at 50% each sp
 
 {% previewsample "page.domainurl/samples/gantt/work/tasktype-cs1" %}
 
-Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
+Following table explains how the work, duration and resource unit fields will get updated on changing any of the fields
 
 Task Type | Changes in Duration | Changes in work | Changes in Resource Units
 -----|-----|-----|-----

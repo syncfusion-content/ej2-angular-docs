@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maintaining Data in Server in Angular Gantt Chart Component | Syncfusion
-description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt Chart component for seamless project updates.
+title: Maintaining Data in Server in Angular Gantt Chart | Syncfusion
+description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt Chart for seamless project updates.
 platform: ej2-angular
 control: Maintaining data in server
 documentation: ug
@@ -195,5 +195,5 @@ public void RemoveChildRecords(string key)
 
 ## See also
 - [How to bind remote data?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#remote-data)
-- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)

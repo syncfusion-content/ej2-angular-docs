@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter Menu in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt#filtersettings) as **Menu**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filtersettings#type) as **Menu**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +81,7 @@ You can refer to the table below for supported column types, their default compo
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel/) |
+| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel) |
 | Number      | [NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox)                 |
 | Boolean     | [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list)                   |
 | Date        | [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/angular/documentation/api/datepicker)                         |

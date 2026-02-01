@@ -121,8 +121,8 @@ To clear selected rows and cells in the Gantt Chart component, use the [clearSel
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
 
-[Single Row selection](selection/row-selection#selection-mode): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
+[Single Row selection](https://ej2.syncfusion.com/angular/documentation/gantt/selection/row-selection#single-row-selection): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
 
-[Multiple Row selection](selection/row-selection#multiple-row-selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows users to select multiple rows simultaneously, as illustrated below:
+[Multiple Row selection](https://ej2.syncfusion.com/angular/documentation/gantt/selection/row-selection#multiple-row-selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows users to select multiple rows simultaneously, as illustrated below:
 
 ![Multiple selection](../images/multiple-selection.PNG)

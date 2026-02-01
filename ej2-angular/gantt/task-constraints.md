@@ -20,11 +20,11 @@ Task constraints enhance project planning with the following advantages:
 - Prevent resource conflicts by spacing tasks that share teams or equipment.
 - Support "what-if" scenario testing by adjusting constraints to explore timeline impacts.
 - Meet compliance deadlines, ensuring taskbars reflect regulatory requirements.
-- Improve accuracy by incorporating real-world constraints like tailwind3 availability.
+- Improve accuracy by incorporating real-world constraints like material availability.
 
 ## Understand task constraint types
 
-The [constraintType]((https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constrainttype)) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
+The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfieldsmodel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
 | Constraint Type | Numeric Enum Value | Description | Example Use Case |
 |-----------------|--------------------|-------------|------------------|
@@ -39,7 +39,7 @@ The [constraintType]((https://ej2.syncfusion.com/angular/documentation/api/gantt
 
 ## Configure task constraints
 
-Configure task constraints using the [taskFields.constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constrainttype) and [taskFields.constraintDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constraintdate) properties to map constraint types and dates. Use [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType/) enum values for clarity.
+Configure task constraints using the [taskFields.constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constrainttype) and [taskFields.constraintDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#constraintdate) properties to map constraint types and dates. Use [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType) enum values for clarity.
 
 **Define taskFields mappings**
 

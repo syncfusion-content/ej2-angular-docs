@@ -20,7 +20,7 @@ The following video explains data binding in Gantt chart:
 
 ## Understanding data binding approaches
 
-The Gantt Chart component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows to choose the most appropriate data source method based on project requirements and data architecture.
+The Gantt Chart component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows you to choose the most appropriate data source method based on project requirements and data architecture.
 
 **Local Data Binding**: Local data binding retrieves project information from the same application environment. This approach provides faster rendering and reduced network dependency, making it ideal for applications with static or cached project data.
 

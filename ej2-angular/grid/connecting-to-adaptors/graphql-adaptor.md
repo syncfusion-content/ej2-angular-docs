@@ -241,6 +241,7 @@ To integrate GraphQL with the Syncfusion Grid in the Angular application, follow
 Start a new Angular application using the Angular CLI command.
 
 ```bash
+npm install -g @angular/cli
 ng new GridClient
 ```
 

@@ -18,11 +18,11 @@ To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/d
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is enabled.
 
-### Changing component id
+### Changing component ID
 
 To reset the Gantt to its default state, update the component ID.  This initializes the component as a new instance, restoring its original configuration.
 
-Here is an example code to change the component id dynamically to restore initial gantt state.
+Here is an example code to change the component ID dynamically to restore initial Gantt state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,18 +78,18 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 ```typescript
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component id.
+let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component ID.
 let model: Object = JSON.parse(model);
 
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component id.
+window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component ID.
 
 ```
 
-> You can refer to our [Angular Gantt](https://www.syncfusion.com/angular-ui-components/angular-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Gantt example](https://ej2.syncfusion.com/angular/demos#/tailwind3/gantt/default) to knows how to present and manipulate data.
+> You can refer to our [Angular Gantt](https://www.syncfusion.com/angular-ui-components/angular-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Gantt example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/default) to know how to present and manipulate data.
 
 ## Prevent columns from persisting
 

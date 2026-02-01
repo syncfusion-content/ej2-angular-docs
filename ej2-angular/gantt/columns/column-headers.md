@@ -864,7 +864,7 @@ The following example demonstrates how to update the header text of the column a
   
 {% previewsample "page.domainurl/samples/gantt/columns/headerstyle-cs5" %}
 
->* The `refreshHeader` method updates only the gantt header and not the entire gantt chart.
+>* The `refreshHeader` method updates only the Gantt header and not the entire Gantt chart.
 
 ## Access header element 
 

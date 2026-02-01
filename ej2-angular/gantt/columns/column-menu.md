@@ -39,7 +39,7 @@ The following built-in column menu items are available:
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs1" %}
 
-> * You can disable the column menu for specific columns by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#showcolumnmenu) to **false**.
+> * You can disable the column menu for specific columns by setting `columns.showColumnMenu` to **false**.
 
 > * You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) with only the required items.
 
@@ -85,7 +85,7 @@ The following example demonstrates hiding the **Filter** item when the column me
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs3" %}
 
-> * You can disable the column menu for a specific column by setting [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#showcolumnmenu) to **false**.
+> * You can disable the column menu for a specific column by setting `column.showColumnMenu` to **false**.
 
 ## Render nested column menu items
 

@@ -234,7 +234,7 @@ Converts a date from one timezone to another.
     // Assume your local timezone as IST/UTC+05:30.
     let timezone: Timezone = new Timezone();
     let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokya");
+    let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokyo");
     let convertedDate1: Date = timezone.convert(date, 60, -360);
     console.log(convertedDate); //2018-12-05T08:55:11.000Z.
     console.log(convertedDate1); //2018-12-05T16:55:11.000Z.

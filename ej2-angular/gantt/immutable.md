@@ -49,5 +49,5 @@ For small datasets, standard rendering may suffice. For dynamic column operation
 
 ## See also
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

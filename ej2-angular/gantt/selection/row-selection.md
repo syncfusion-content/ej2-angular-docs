@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Gantt Row Selection API Guide
+title: Angular Gantt Row Selection API Guide | Syncfusion
 description: Explore how to configure and customize row selection in the Syncfusion Angular Gantt Chart component using API methods and events.
 platform: ej2-angular
 control: Row selection 
@@ -173,13 +173,13 @@ To access selected row details in the Angular Gantt Chart component:
 
 ## Customize row selection action
 
-You can customize row selection in the Gantt chart using [rowSelecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselecting), [rowSelected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselected), [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselecting), and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselected) events, which allow dynamic control over selection behavior based on specific conditions.
+You can customize row selection in the Gantt Chart using [rowSelecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselecting), [rowSelected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselected), [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselecting), and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselected) events, which allow dynamic control over selection behavior based on specific conditions.
 
 The following demonstrates how row selection and background color updates are handled in the Angular Gantt Chart component:
 
 - In `rowSelecting`, selection is prevented when `TaskID` is 2.
 - In `rowSelected`, rows with **Progress** > 40 are highlighted with a green background.
-- In `rowDeselected`, rows with **Progress** ≤ 40 are styled with mauvelous background color.
+- In `rowDeselected`, rows with **Progress** ≤ 40 are styled with mauve background color.
 - In `rowDeselecting`, if **Progress** > 80, the background color changes to yellow.
 
 The following sample demonstrates

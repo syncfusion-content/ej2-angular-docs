@@ -60,7 +60,7 @@ The types of the `column.freeze` directions:
 
 * **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
 
-In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
+In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen in a fixed position within the content table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

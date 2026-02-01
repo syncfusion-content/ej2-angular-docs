@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Observable in Angular Gantt Chart Component
 
-The Angular Gantt Chart component supports [Observable](https://v17.angular.io/guide/observables) data binding, enabling reactive updates to reflect task changes, such as real-time schedule adjustments, without manual intervention. By piping Observables through the [async](https://v17.angular.io/api/common/AsyncPipe) pipe, the component automatically subscribe to data changes, updates the UI, and manages subscription to prevent memory leaks. This is ideal for handling asynchronous data from APIs or WebSockets, ensuring efficient synchronization in project management scenarios. Observables require a data structure with `result` (an array of task data) and `count` (total record count) for proper binding, supporting features like virtual scrolling. Taskbars and grid rows include ARIA labels for accessibility, and the UI adapts to responsive designs, though large datasets may need caching for performance.
+The Angular Gantt Chart component supports [Observable](https://v17.angular.io/guide/observables) data binding, enabling reactive updates to reflect task changes, such as real-time schedule adjustments, without manual intervention. By piping Observables through the [async](https://v17.angular.io/api/common/AsyncPipe) pipe, the component automatically subscribes to data changes, updates the UI, and manages subscription to prevent memory leaks. This is ideal for handling asynchronous data from APIs or WebSockets, ensuring efficient synchronization in project management scenarios. Observables require a data structure with `result` (an array of task data) and `count` (total record count) for proper binding, supporting features like virtual scrolling. Taskbars and grid rows include ARIA labels for accessibility, and the UI adapts to responsive designs, though large datasets may need caching for performance.
 
 ## Bind Observables with async pipe
 
-Bind data to the Gantt Chart component using an Observable with the async pipe, which subscribe on initialization, unsubscribe on destruction, and triggers change detection only on new emissions. The Observable must emit an object with:
+Bind data to the Gantt Chart component using an Observable with the async pipe, which subscribes on initialization, unsubscribe on destruction, and triggers change detection only on new emissions. The Observable must emit an object with:
 - `result`: Array of tasks with properties like **id**, **TaskName**, and **StartDate**.
 - `count`: Total number of tasks.
 
@@ -120,4 +120,4 @@ Full CRUD operations (Create, Read, Update, Delete) are not supported with Obser
 ## See also
 - [How to bind data to the Gantt Chart component?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to handle virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to handle virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)

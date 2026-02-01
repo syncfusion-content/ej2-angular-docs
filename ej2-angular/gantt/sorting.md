@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
-To enable sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting) property to **true**. You can configure sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property.
+To enable sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting) property to **true**. You can configure sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings) property.
 
 Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. For details on keyboard interactions, refer to the [selection keyboard interaction](https://ej2.syncfusion.com/angular/documentation/grid/accessibility#keyboard-interaction) documentation.
 
@@ -89,7 +89,7 @@ You can externally remove sorting from a specific column in the Syncfusion<sup s
 
 ### Clear sorting
 
-You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Gantt chart to its unsorted state.
+You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Gantt Chart to its unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,7 +105,7 @@ You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&re
 
 ## Customize sort icon
 
-You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component by overriding the **.e-icon-ascending** and **.e-icon-descending** CSS classes using the `content` property , as shown below:
+You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component by overriding the **.e-icon-ascending** and **.e-icon-descending** CSS classes using the `content` property, as shown below:
 
 ```css
 
@@ -172,7 +172,7 @@ The example below demonstrates how to display `null` values at the bottom of the
 
 ## Sorting custom columns
 
-You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/) property, or sorting can be triggered dynamically through external actions such as a button click. 
+You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
 
 The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 

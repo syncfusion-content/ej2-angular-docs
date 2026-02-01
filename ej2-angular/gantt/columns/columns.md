@@ -59,7 +59,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular, column wi
 
 1. Column width is calculated based on the total available width. For example, in a container with 4 columns and a total width of 800 pixels, each column will default to 200 pixels.
 2. If widths are defined for some columns but not others, the remaining width is distributed equally among columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
-3. Percentage-based widths are responsive and adjust dynamically when the Gantt container is resized. For example, a column with a width of 50% will occupy 50% of the gantt width and will adjust proportionally when the gantt container is resized to a smaller size.
+3. Percentage-based widths are responsive and adjust dynamically when the Gantt container is resized. For example, a column with a width of 50% will occupy 50% of the Gantt width and will adjust proportionally when the Gantt container is resized to a smaller size.
 4. When columns are manually resized, a minimum width is enforced to maintain readability. By default, this minimum is set to 10 pixels unless specified otherwise.
 5. If the total column width exceeds the container width, a horizontal scrollbar appears to enable scrolling.
 6. The Gantt Chart component inherits the width of its parent element. If the parent has a fixed width, the Gantt will occupy that space; otherwise, it adjusts dynamically based on available space.
@@ -126,7 +126,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for A
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnformat-cs1" %}
 
->* The Gantt uses the [Internalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
+>* The Gantt uses the [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, instead of a format string.
@@ -537,7 +537,7 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Updating column definitions
 
-To update column definitions in Angular Gantt Chart component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+To update column definitions in Angular Gantt Chart component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -558,7 +558,7 @@ To update column definitions in Angular Gantt Chart component, modify the [colum
 
 ## Adding/removing columns
 
-You can add or remove columns in the Angular Gantt by updating the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column/) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
+You can add or remove columns in the Angular Gantt by updating the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

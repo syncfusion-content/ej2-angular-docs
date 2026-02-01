@@ -72,7 +72,7 @@ You can drag rows from the Gantt Chart component into custom components for seam
 
 ## Drag and drop multiple rows together
 
-You can drag and drop multiple rows simultaneously in the Gantt Chart component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property is set to **true**.
+You can drag and drop multiple rows simultaneously in the Gantt Chart component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

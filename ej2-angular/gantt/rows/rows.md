@@ -33,7 +33,7 @@ The following example demonstrates how to customize row styles based on the valu
   
 {% previewsample "page.domainurl/samples/gantt/rows/rowstyle-cs1" %}
 
->* The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
+>* The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the Gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
 
 ### Using CSS
 
@@ -119,7 +119,7 @@ You can customize the styling of parent and child rows in the Syncfusion<sup sty
 
 ## Auto focus taskbar on row click 
 
-You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by using the [autofocustasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
+You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by using the [`autofocustasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,8 +147,8 @@ You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</
   
 {% previewsample "page.domainurl/samples/gantt/rows/rowstyle-cs5" %}
 
->*	The `rowHeight` property can only be used to set the height of the entire gantt row. It cannot be used to set the height of individual cells within a row.
->*  The `rowHeight` property applies the height to all rows in the gantt chart, including the header rows.
+>*	The `rowHeight` property can only be used to set the height of the entire Gantt row. It cannot be used to set the height of individual cells within a row.
+>*  The `rowHeight` property applies the height to all rows in the Gantt chart, including the header rows.
 
 ### Customize row height for particular row 
 
@@ -303,7 +303,7 @@ Supported `newRowPosition` values:
 {% previewsample "page.domainurl/samples/gantt/rows/addrow-cs1" %}
 
 >* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord) method.
->* If you do not specify an index, the new row will be added at the top of the gantt.
+>* If you do not specify an index, the new row will be added at the top of the Gantt.
 
 ## Show or hide a row using an external actions
 

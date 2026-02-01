@@ -87,5 +87,5 @@ The event handler checks the `isCritical` flag and applies custom colors to task
 ## See also
 
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

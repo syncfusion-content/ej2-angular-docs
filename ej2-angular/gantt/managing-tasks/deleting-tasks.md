@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Deleting Tasks in Angular Gantt Chart Component
 
-Deleting tasks in the Angular Gantt Chart component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `EditService`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterow) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
+Deleting tasks in the Angular Gantt Chart component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `EditService`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
 
 ## Delete tasks via toolbar
 
@@ -30,7 +30,7 @@ Enable task deletion through the toolbar by setting [editSettings.allowDeleting]
 
 ## Delete tasks with confirmation dialog
 
-Enable a confirmation dialog for task deletion by setting [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog) to **true**, alongside [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) and `EditService`. After selecting a row, deleting via the toolbar or [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterow) method prompts a dialog to confirm the action, ensuring intentional removals. This is useful for critical tasks where accidental deletion must be avoided.
+Enable a confirmation dialog for task deletion by setting [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog) to **true**, alongside [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) and `EditService`. After selecting a row, deleting via the toolbar or [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method prompts a dialog to confirm the action, ensuring intentional removals. This is useful for critical tasks where accidental deletion must be avoided.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ Enable a confirmation dialog for task deletion by setting [editSettings.showDele
 
 ## Delete tasks programmatically
 
-Delete tasks programmatically using the [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterow) method, which requires a selected row and `EditService`. Ensure the row is selected and `taskFields` mappings (e.g., id) are valid to perform the deletion. This method supports automation, such as removing tasks via a custom button, and respects the confirmation dialog if enabled.
+Delete tasks programmatically using the [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method, which requires a selected row and `EditService`. Ensure the row is selected and `taskFields` mappings (e.g., id) are valid to perform the deletion. This method supports automation, such as removing tasks via a custom button, and respects the confirmation dialog if enabled.
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';

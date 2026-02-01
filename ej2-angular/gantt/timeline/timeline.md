@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Timeline in Angular Gantt Chart component
 
-The timeline in the Angular Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the Angular Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
-Set the timeline view mode using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
+Set the timeline view mode using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
 
 ### Week timeline mode
 
@@ -144,9 +144,9 @@ In the Gantt Chart component, the schedule timeline will be automatically update
   
 {% previewsample "page.domainurl/samples/gantt/timeline/timescale-cs1" %}
 
-## Dynmically change timeline mode
+## Dynamically change timeline mode
 
-You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode/) property using the [change](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#change) event of the [ComboBox](https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started) component.
+You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property using the [change](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#change) event of the [ComboBox](https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started) component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

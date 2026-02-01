@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The baseline feature in the Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 
-Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
+Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
 
 **Baseline fields**:
 - [baselineStartDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#baselinestartdate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
@@ -74,9 +74,9 @@ The following example demonstrates complete baseline configuration with proper f
   
 {% previewsample "page.domainurl/samples/gantt/baseline/default-cs1" %}
 
-> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos#/tailwind3/gantt/baseline).
+> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/baseline).
 
-## Customize basline using event
+## Customize baseline using event
 
 You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event.
  

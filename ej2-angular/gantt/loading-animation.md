@@ -14,7 +14,7 @@ The Angular Gantt Chart component displays loading indicators to provide visual 
 
 ## Configure loading indicators
 
-Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/) property, with `indicatorType` set to **Spinner** (default) or **Shimmer**. Changes to `indicatorType` require component re-initialization for reflection.
+Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator) property, with `indicatorType` set to **Spinner** (default) or **Shimmer**. Changes to `indicatorType` require component re-initialization for reflection.
 
 The following example configures a Shimmer indicator:
 
@@ -89,6 +89,6 @@ export class AppComponent {
 This code displays a loading indicator during a simulated 2-second data operation, ensuring clear feedback. Use manual control only for specific business logic to avoid overriding automatic behavior.
 
 ## See also
-- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to manage data filtering?](https://ej2.syncfusion.com/angular/documentation/gantt/filtering)
 - [How to enable sorting?](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)

@@ -34,7 +34,7 @@ You can trigger export operations using the [excelExport](https://ej2.syncfusion
 
 ## Binding custom data source while exporting
 
-You can bind a custom data source for Excel or CSV export in the Angular Gantt Chart component by assigning it dynamically before the export begins. To achieve this, set the required data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) configuration.
+You can bind a custom data source for Excel or CSV export in the Angular Gantt Chart component by assigning it dynamically before the export begins. To achieve this, set the required data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,11 +114,11 @@ To apply a custom date format to columns during Excel or CSV export in the Angul
 
 ## Exporting multiple Gantt charts
 
-The Angular Gantt Chart component supports exporting multiple Gantt charts either into a single worksheet or across separate sheets when generating Excel or CSV files.
+The Angular Gantt Chart component supports exporting multiple Gantt Charts either into a single worksheet or across separate sheets when generating Excel or CSV files.
 
 ### Same sheet
 
-To export multiple datasets into a single worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **AppendToSheet** within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) configuration. To add spacing between datasets, define the number of blank rows using the [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport#blankrows) property.
+To export multiple datasets into a single worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **AppendToSheet** within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. To add spacing between datasets, define the number of blank rows using the [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport#blankrows) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +140,7 @@ To export multiple datasets into a single worksheet, set [multipleExport.type](h
 
 ### New sheet
 
-To export each Gantt to a separate worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **NewSheet** in the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) configuration. This ensures each dataset is placed on its own sheet.
+To export each Gantt to a separate worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **NewSheet** in the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. This ensures each dataset is placed on its own sheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

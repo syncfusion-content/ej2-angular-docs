@@ -60,7 +60,7 @@ You can programmatically reorder columns in Syncfusion<sup style="font-size:70%"
 
 ### Reorder columns using field names
 
-You can reorder columns in the Gantt Chart component using the [reorderColumns](https://helpej2.syncfusion.com/angular/documentation/api/gantt#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.

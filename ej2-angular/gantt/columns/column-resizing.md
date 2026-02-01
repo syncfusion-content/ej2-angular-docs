@@ -105,7 +105,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnresize-cs6" %}
 
-> When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property of grid object in gantt instance is set to **true**, the gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the gantt will ignore any empty space.
+> When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property of grid object in Gantt instance is set to **true**, the Gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Gantt will ignore any empty space.
 
 ## Resize columns programmatically
 

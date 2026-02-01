@@ -175,7 +175,7 @@ Injecting `EditService` enables task modifications, while `ToolbarService` adds 
 
 ## Configure timeline
 
-The [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) property customizes the Gantt chart’s timeline, defining time units (e.g., days, weeks) and formatting for the top and bottom tiers. Set `projectStartDate` and `projectEndDate` to establish the timeline’s range, or let the component calculate them from task data.
+The [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings) property customizes the Gantt chart’s timeline, defining time units (e.g., days, weeks) and formatting for the top and bottom tiers. Set `projectStartDate` and `projectEndDate` to establish the timeline’s range, or let the component calculate them from task data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -311,7 +311,7 @@ The code defines dependencies like `2FS` to link tasks, ensuring accurate schedu
 
 ## Assign resources
 
-Assign resources to tasks using the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, which accepts a collection of resource objects with fields like id, name, and unit. Map these fields using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields/).
+Assign resources to tasks using the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, which accepts a collection of resource objects with fields like id, name, and unit. Map these fields using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/resourceFields).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -327,7 +327,7 @@ Assign resources to tasks using the [resources](https://ej2.syncfusion.com/angul
 
 ## Enable filtering
 
-Filtering reduces visible tasks based on criteria, using menu filters for each column. Enable it by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and injecting `FilterService`. Customize filtering with [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/).
+Filtering reduces visible tasks based on criteria, using menu filters for each column. Enable it by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and injecting `FilterService`. Customize filtering with [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -345,7 +345,7 @@ The code enables menu filtering, allowing tasks to be filtered by columns like `
 
 ## Enable sorting
 
-Sorting orders tasks by column values. Enable it by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting) to **true** and injecting `SortService`. Customize sorting with [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings/).
+Sorting orders tasks by column values. Enable it by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting) to **true** and injecting `SortService`. Customize sorting with [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -445,7 +445,7 @@ The code integrates data binding, timeline settings, and toolbar features for a 
 ## See Also
 
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [Angular Gantt chart feature tour](https://www.syncfusion.com/angular-components/angular-gantt-chart)
-- [Angular Gantt chart example](https://ej2.syncfusion.com/angular/demos#/fluent2/gantt/overview)
+- [Angular Gantt chart example](https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/overview)

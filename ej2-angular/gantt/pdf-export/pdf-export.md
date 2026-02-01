@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PDF Export in Angular Gantt Chart Component | Syncfusion
-description: Learn how to export Gantt to PDF in the Syncfusion Angular Gantt Chart component, including indicators, blob objects, single-page, multiple Gantt, and theme options.
+description: Learn how to export Gantt to PDF in Syncfusion Angular Gantt Chart component with indicators, blob objects, single-page, and theme options.
 platform: ej2-angular
 control: PDF export
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # PDF Export in Angular Gantt Chart Component
 
-PDF export in the Angular Gantt Chart component enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport) method with [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) set to**true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
+PDF export in the Angular Gantt Chart component enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport) method with [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) set to **true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
 
 ## Export basic Gantt data
 
-Export Gantt data to PDF by setting [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) to**true** and calling [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport), which generates a document with the chart and tree-grid data.
+Export Gantt data to PDF by setting [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) to **true** and calling [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport), which generates a document with the chart and tree-grid data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ Include dynamic indicators and images in PDF export by defining them with `base6
 
 ## Export Gantt data as blob object
 
-Export Gantt data as a blob object for previews or modifications by setting the fourth argument of [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport) to**true**, with the blob returned in the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfexpcomplete) event.
+Export Gantt data as a blob object for previews or modifications by setting the fourth argument of [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport) to **true**, with the blob returned in the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfexportcomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ Export Gantt data as a blob object for previews or modifications by setting the 
 
 ## Single page exporting in Gantt
 
-Export Gantt rows to a single PDF page by setting [fitToWidthSettings.isFitToWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings#isFitToWidth) to**true** in `PdfExportProperties`. Customize chart and grid widths using [chartWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth#chartWidth) and [gridWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth#gridWidth) as percentages.
+Export Gantt rows to a single PDF page by setting [fitToWidthSettings.isFitToWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/fittowidthsettings#isfittowidth) to **true** in `PdfExportProperties`. Customize chart and grid widths using [chartWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/fittowidthsettings#chartwidth) and [gridWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/fittowidthsettings#gridwidth) as percentages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

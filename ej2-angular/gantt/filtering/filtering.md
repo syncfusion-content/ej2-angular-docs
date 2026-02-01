@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
-To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/) property.
+To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.
 
 To activate filtering functionality, inject the `FilterService` in the `providers` of the component.
 
-> * The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
 > * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load

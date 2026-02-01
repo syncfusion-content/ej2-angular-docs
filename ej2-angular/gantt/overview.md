@@ -64,7 +64,7 @@ Defines the tabular structure of the Gantt chart, allowing customization of colu
 **7. Resources** 
 Handles resource planning and tracking through effort-based work mapping and allocation management, including detection of overallocation across personnel and assets.
   * [Work Mapping](https://ej2.syncfusion.com/angular/documentation/gantt/tooltip): Maps effort units to tasks using the `work` field, allowing precise control over resource allocation and planning based on assigned hours or workload.
-  * [Allocation](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view#resource-overallocation): Resources such as personnel, equipment, and materials can be assigned to tasks. If a resource is given more work than its available capacity for a day, it is marked as over allocation. This helps maintain balanced workloads and prevents scheduling conflicts.
+  * [Allocation](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view#resource-overallocation): Resources such as personnel, equipment, and materials can be assigned to tasks. If a resource is given more work than its available capacity for a day, it is marked as overallocation. This helps maintain balanced workloads and prevents scheduling conflicts.
 
 **8. Interaction** 
 Enables user-driven control through filtering, toolbar actions, drag-and-drop, context menus, and keyboard navigation, supporting efficient task manipulation and grid operations.
@@ -76,7 +76,7 @@ Enables user-driven control through filtering, toolbar actions, drag-and-drop, c
 
 **9. Performance**
 Optimizes rendering and responsiveness through virtual scrolling, loading animations, and read-only configurations for handling large datasets effectively.
-  * [Virtual Scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll): Enhances rendering efficiency by loading only the visible rows during scroll operations, which significantly improves responsiveness when handling large datasets.
+  * [Virtual Scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling): Enhances rendering efficiency by loading only the visible rows during scroll operations, which significantly improves responsiveness when handling large datasets.
   * [Shimmer Effect](https://ej2.syncfusion.com/angular/documentation/gantt/loading-animation): Displays a loading animation while data is being fetched or rendered. 
 
 **10. Globalization**
@@ -104,6 +104,6 @@ Enables structured data export to Excel, CSV, and PDF formats, and provides even
 - **Research and development**: Organizes phases and deliverables with critical path analysis.
 
 ## See also
-- API documentation: Comprehensive references [here](https://ej2.syncfusion.com/angular/documentation/api/gantt/).
-- Sample browser: Live examples [here](https://ej2.syncfusion.com/angular/demos#/tailwind3/gantt/overview).
+- API documentation: Comprehensive references [here](https://ej2.syncfusion.com/angular/documentation/api/gantt).
+- Sample browser: Live examples [here](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/overview).
 - Getting started guide: Step-by-step tutorial [here](https://ej2.syncfusion.com/angular/documentation/gantt/getting-started).
