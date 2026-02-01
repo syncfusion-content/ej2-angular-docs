@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Column rendering in Angular Gantt component | Syncfusion
-description: Learn here all about Column rendering in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Rendering in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about Column rendering in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column rendering
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column rendering in Angular Gantt component
+# Column rendering in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
-> * If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering/#complex-data-binding).
+> * If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource), the column will display empty values.
+> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
 > * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually 
 
-To manually define columns in the Gantt component, use `e-columns` and set properties like [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#width). This enables customization of column behavior and appearance based on specific requirements.
+To manually define columns in the Gantt Chart component, use `e-columns` and set properties like [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width). This enables customization of column behavior and appearance based on specific requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ To manually define columns in the Gantt component, use `e-columns` and set prope
 
 ## Auto generated columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) as individual Gantt columns.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) as individual Gantt columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +54,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component automatical
 
 ## Dynamic column generation 
 
-You can dynamically generate columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
+You can dynamically generate columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
 
 ### Using ngFor directive
 
-To dynamically generate columns in the Gantt component, define an array of column objects in the component file. Each object should include [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#headertext), which are bound to the respective properties of the **e-column** component using `ngFor` directive.
+To dynamically generate columns in the Gantt Chart component, define an array of column objects in the component file. Each object should include [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), which are bound to the respective properties of the **e-column** component using `ngFor` directive.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +76,7 @@ To dynamically generate columns in the Gantt component, define an array of colum
 
 ### Using valueAccessor property
 
-The [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#valueaccessor) property is used to format column data in the Gantt component. It accepts a function that returns a custom display value using the following two arguments:
+The [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart component. It accepts a function that returns a custom display value using the following two arguments:
 
 - `field`: The column's data field.  
 - `data`: The data record for the row.
@@ -101,7 +101,7 @@ In the following example, `percentageFormatter` returns the progress value with 
 
 ### Display array type columns
 
-The Gantt component supports binding an array of objects to a column using the  [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
+The Gantt Chart component supports binding an array of objects to a column using the  [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
 
 In the following example, the **Name** column shows the combined value of **FirstName** and **LastName** by using a custom function defined in `valueAccessor`.
 
@@ -123,7 +123,7 @@ In the following example, the **Name** column shows the combined value of **Firs
 
 ### Expression column
 
-You can achieve an expression column in the Gantt component using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
+You can achieve an expression column in the Gantt Chart component using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
 
 In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A  **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
 
@@ -145,7 +145,7 @@ In the following example, the chart includes columns like **TaskID**, **TaskName
 
 ### Display serial number
 
-You can display serial numbers for each row in the Gantt component using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event triggers when data is bound to each row, allowing you to assign and display a serial number directly in the column.
+You can display serial numbers for each row in the Gantt Chart component using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event triggers when data is bound to each row, allowing you to assign and display a serial number directly in the column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

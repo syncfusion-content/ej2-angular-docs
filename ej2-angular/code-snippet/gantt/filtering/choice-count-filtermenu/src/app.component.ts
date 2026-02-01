@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { GanttModule, FilterService, FilterChoiceRequestEventArgs, ActionBeginArgs } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, FilterService, ActionBeginArgs } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
 
   public actionBegin(args: ActionBeginArgs): void {
     if (args.requestType === "filterchoicerequest" || args.requestType === "filtersearchbegin") {
-      (args as FilterChoiceRequestEventArgs).filterChoiceCount = 1000;
+      (args as any).filterChoiceCount = 1000;
     }
   }
 }

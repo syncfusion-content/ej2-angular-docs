@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Critical path in Angular Gantt component | Syncfusion
-description: Learn here all about Critical path in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Critical Path in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about critical path in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Critical path 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Critical path in Angular Gantt component
+# Critical Path in Angular Gantt Chart Component
 
-The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData/#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The Angular Gantt component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
+The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The Angular Gantt Chart component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 
 ## Understanding critical path calculation
 
 The component uses Critical Path Method (CPM) principles to identify critical tasks through a comprehensive calculation process that analyzes task dependencies, timing relationships, and slack values to determine which tasks have no scheduling flexibility. A task becomes critical when it has zero or negative slack, meaning any delay (even by a minute) shifts the entire project end date. This occurs because critical tasks are linked through dependencies, creating a chain reaction where delays propagate across the dependency network, ultimately affecting the project completion date.
 
-**Project end date determination**: The calculation begins by determining the overall project end date. If the [projectEndDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#projectenddate) property is provided, it uses that value as the project completion reference. If `projectEndDate` is not specified, the component automatically calculates the project end date by examining all task end dates in the data source to find the latest completion point. This reference point determines how much delay each task can tolerate without affecting project completion.
+**Project end date determination**: The calculation begins by determining the overall project end date. If the [projectEndDate](https://ej2.syncfusion.com/angular/documentation/api/gantt#projectenddate) property is provided, it uses that value as the project completion reference. If `projectEndDate` is not specified, the component automatically calculates the project end date by examining all task end dates in the data source to find the latest completion point. This reference point determines how much delay each task can tolerate without affecting project completion.
 
 **Slack value calculation**: For each task, the component calculates slack by measuring the time difference between the task's end date and the project end date. Slack represents how much time a task can be delayed without affecting the project completion:
 - **Zero slack**: The task must finish exactly on time. Any delay will push back the project end date, making it critical
@@ -34,9 +34,9 @@ The component uses Critical Path Method (CPM) principles to identify critical ta
 
 ## Critical path setup and configuration
 
-Critical path functionality requires the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule) to be injected in the providers array. The data source must contain tasks with valid start dates, end dates, and task dependencies properly mapped through the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#dependency) field in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskfields).
+Critical path functionality requires the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt#criticalpathmodule) to be injected in the providers array. The data source must contain tasks with valid start dates, end dates, and task dependencies properly mapped through the [dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#dependency) field in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields).
 
-Enable critical path display by setting [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablecriticalpath) to **true**, or add the `CriticalPath` option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) array to allow interactive toggling. The [getCriticalTasks()](https://ej2.syncfusion.com/angular/documentation/api/gantt/#getcriticaltasks) method retrieves all tasks identified as critical at runtime.
+Enable critical path display by setting [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecriticalpath) to **true**, or add the `CriticalPath` option to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) array to allow interactive toggling. The [getCriticalTasks()](https://ej2.syncfusion.com/angular/documentation/api/gantt#getcriticaltasks) method retrieves all tasks identified as critical at runtime.
 
 The critical path recalculates automatically when task properties change, including start and end dates, duration modifications, dependency updates, or progress adjustments. This ensures the visualization remains accurate throughout project management workflows.
 
@@ -58,11 +58,11 @@ The following example demonstrates enabling critical path analysis:
   
 {% previewsample "page.domainurl/samples/gantt/criticalpath/default-cs1" %}
 
-The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
+The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
 
 ## Customizing critical path appearance
 
-The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event provides access to the [isCritical](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData/#iscritical) property for each task, enabling custom styling beyond the default red highlighting. Modify the [taskbarBgColor](https://ej2.syncfusion.com/angular/documentation/api/gantt/iQueryTaskbarInfoEventArgs/#taskbarbgcolor), [progressBarBgColor](https://ej2.syncfusion.com/angular/documentation/api/gantt/iQueryTaskbarInfoEventArgs/#progressbarbgcolor), or other visual properties to create distinct visual indicators for critical tasks.
+The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event provides access to the [isCritical](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData#iscritical) property for each task, enabling custom styling beyond the default red highlighting. Modify the [taskbarBgColor](https://ej2.syncfusion.com/angular/documentation/api/gantt/iQueryTaskbarInfoEventArgs#taskbarbgcolor), [progressBarBgColor](https://ej2.syncfusion.com/angular/documentation/api/gantt/iQueryTaskbarInfoEventArgs#progressbarbgcolor), or other visual properties to create distinct visual indicators for critical tasks.
 
 The following example demonstrates custom styling for critical tasks using the `queryTaskbarInfo` event:
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Toolbar in Angular Gantt component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about toolbar in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in Angular Gantt component
+# Toolbar in Angular Gantt Chart Component
 
-The Angular Gantt component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
+The Angular Gantt Chart component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
 To enable toolbar functionality, inject the `ToolbarService` in the `providers` of the component.
 
 ## Built-in toolbar items
 
-Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
+Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -47,11 +47,11 @@ The following table shows built-in toolbar items and its actions.
   
 {% previewsample "page.domainurl/samples/gantt/toolbar/default-cs1" %}
 
-> * The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Customize the built-in toolbar items
 
-You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbarclick) event. The following example disables the default functionality of the **Add** button, allowing you to override its behavior and display a custom message when it's clicked.
+You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event. The following example disables the default functionality of the **Add** button, allowing you to override its behavior and display a custom message when it's clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,7 +90,7 @@ To show only icons in the built-in toolbar items, apply custom CSS to hide the t
 
 ## Customize toolbar buttons using CSS
 
-You can customize the appearance of toolbar buttons in the Gantt component using CSS. Use the following class selectors to target the toolbar icons and buttons:
+You can customize the appearance of toolbar buttons in the Gantt Chart component using CSS. Use the following class selectors to target the toolbar icons and buttons:
 
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
@@ -130,7 +130,7 @@ To reposition the toolbar to the bottom of the Gantt chart, use the [created](ht
 
 ## Custom toolbar items
 
-You can add custom items to the Gantt chart toolbar by setting the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbarclick) event.
+You can add custom items to the Gantt chart toolbar by setting the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event.
 
 By default, custom toolbar items are aligned to the left. However, you can change their position using the `align` property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 
@@ -144,13 +144,13 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/toolbar/custom-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/position-toolbar-cs1" %}
 
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
-The Gantt component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
+The Gantt Chart component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,7 +166,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
 
 ## Enable/disable toolbar items
 
-You can control toolbar items dynamically using the [enableItems](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enableitems) method. This allows you to enable or disable specific items based on user actions or application state.
+You can control toolbar items dynamically using the [enableItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableitems) method. This allows you to enable or disable specific items based on user actions or application state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
 
 You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
-The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) compoenent into the toolbar.
+The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component into the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

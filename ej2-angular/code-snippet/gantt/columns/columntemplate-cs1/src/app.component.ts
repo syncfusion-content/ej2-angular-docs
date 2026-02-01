@@ -1,46 +1,115 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { GanttData } from './data';
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+import { WBSData } from './data';
 
 @Component({
-  selector: 'app-root',
+  imports: [GanttAllModule],
   standalone: true,
-  imports: [GanttModule],
-  encapsulation: ViewEncapsulation.None,
-  template: `
-    <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings]="splitterSettings" [treeColumnIndex]="1">
-      <e-columns>
-        <e-column field="TaskID" headerText="Task ID" textAlign="Left" width="90"></e-column>
-        <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-column>
-        <e-column field="StartDate" headerText="Start Date" textAlign="Left" width="120">
-          <ng-template #template let-data>
-            {{ data.StartDate | date: 'yyyy/MMM/dd' }}
-          </ng-template>
-        </e-column>
-        <e-column field="Duration" headerText="Duration" textAlign="Left" width="150"></e-column>
-        <e-column field="Progress" headerText="Progress" textAlign="Left" width="120"></e-column>
-      </e-columns>
-    </ejs-gantt>
-  `
+  selector: 'app-root',
+  template:
+    `<ejs-gantt id="ganttWbs" #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"
+      [timelineSettings]="timelineSettings" [labelSettings]="labelSettings" [editSettings]="editSettings"
+      [allowFiltering]="true" [allowSorting]="true" [toolbar]="toolbar" [treeColumnIndex]="2"
+      [filterSettings]="filterSettings" [allowSelection]="true" [projectStartDate]="projectStartDate"
+      [projectEndDate]="projectEndDate" [enableWBS]="true" [enableAutoWbsUpdate]="false"
+      [splitterSettings]="splitterSettings" [rowHeight]="rowHeight" [taskbarHeight]="taskbarHeight"
+      [allowUnscheduledTasks]="allowUnscheduledTasks" [eventMarkers]="eventMarkers" [allowRowDragAndDrop]="true" (dataBound)="dataBound()" (actionBegin)="actionBegin($event)">
+    </ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit {
-  public data: object[] = [];
-  public taskSettings: object = {};
-  public splitterSettings: object = {};
 
-  ngOnInit(): void {
-    this.data = GanttData;
+export class AppComponent implements OnInit {
+  @ViewChild('gantt') public ganttInstance?: GanttComponent;
+  public isRowDropped: boolean = false;
+  public data?: object[];
+  public taskSettings?: object;
+  public columns?: object[];
+  public toolbar?: string[];
+  public editSettings?: object;
+  public splitterSettings?: object;
+  public selectionSettings?: object;
+  public tooltipSettings?: object;
+  public filterSettings?: object;
+  public timelineSettings?: object;
+  public labelSettings?: object;
+  public height?: string;
+  public taskbarHeight?: number;
+  public rowHeight?: number;
+  public allowUnscheduledTasks?: boolean;
+  public enableWBS?: boolean;
+  public enableAutoWbsUpdate?: boolean;
+  public projectStartDate?: Date;
+  public projectEndDate?: Date;
+  public eventMarkers?: object[];
+
+  public ngOnInit(): void {
+    this.data = WBSData;
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',
       startDate: 'StartDate',
-      endDate: 'EndDate',
       duration: 'Duration',
       progress: 'Progress',
-      parentID: 'ParentID'
+      dependency: 'Predecessor',
+      parentID: 'ParentId'
     };
-    this.splitterSettings = {
-      position: '75%'
+    this.columns = [
+      { field: 'TaskID', headerText: 'Task ID', visible: false },
+      { field: 'WBSCode', headerText: 'WBS Code', width: '150px' },
+      { field: 'TaskName', headerText: 'Task Name', allowReordering: false, width: '260px' },
+      { field: 'StartDate', headerText: 'Start Date', width: '140px' },
+      { field: 'WBSPredecessor', headerText: 'WBS Predecessor', width: '190px' },
+      { field: 'Duration', headerText: 'Duration', allowEditing: false, width: '130px' },
+      { field: 'Progress', headerText: 'Progress' },
+    ];
+    this.eventMarkers = [
+      {
+        day: new Date('04/2/2024'),
+        label: 'Project Initiation'
+      }
+    ];
+    this.editSettings = {
+      allowAdding: true,
+      allowEditing: true,
+      allowDeleting: true,
+      allowTaskbarEditing: true,
+      showDeleteConfirmDialog: true
     };
+    this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'];
+    this.splitterSettings = { columnIndex: 4 };
+    this.selectionSettings = { mode: 'Row', type: 'Single', enableToggle: false };
+    this.tooltipSettings = { showTooltip: true };
+    this.filterSettings = { type: 'Menu' };
+    this.timelineSettings = {
+      showTooltip: true,
+      topTier: { unit: 'Week', format: 'dd/MM/yyyy' },
+      bottomTier: { unit: 'Day', count: 1 }
+    };
+    this.labelSettings = {
+      taskLabel: '${Progress}%'
+    };
+    this.taskbarHeight = 20;
+    this.rowHeight = 40;
+    this.height = '550px';
+    this.allowUnscheduledTasks = true;
+    this.enableWBS = true;
+    this.enableAutoWbsUpdate = true;
+    this.projectStartDate = new Date('03/31/2024');
+    this.projectEndDate = new Date('05/30/2024');
+  }
+
+  public dataBound(): void {
+    if (this.isRowDropped) {
+      this.ganttInstance.enableAutoWbsUpdate = false;
+      this.isRowDropped = false;
+    }
+  }
+
+  public actionBegin(args: any): void {
+    if (args.requestType === "beforeDrop") {
+      this.isRowDropped = true;
+      this.ganttInstance.enableAutoWbsUpdate = true;
+    }
   }
 }

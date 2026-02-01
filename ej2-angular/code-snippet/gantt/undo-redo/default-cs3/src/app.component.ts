@@ -53,10 +53,10 @@ export class AppComponent implements OnInit {
     }
 
     public undo(): void {
-        this.ganttInstance.undo();
+        (this.ganttInstance as GanttComponent).undo();
     };
 
     public redo(): void {
-        this.ganttInstance.redo();
+        (this.ganttInstance as GanttComponent).redo();
     };
 }

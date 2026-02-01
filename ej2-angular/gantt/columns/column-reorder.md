@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reorder columns in Angular Gantt Chart component | Syncfusion
+title: Reorder columns in Angular Gantt Chart Component | Syncfusion
 description: Learn how to reorder columns in the Syncfusion Angular Gantt Chart using drag-and-drop or code, and how to restrict reordering for specific columns.
 platform: ej2-angular
 control: Column reorder
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column reorder in Angular Gantt component
+# Column reorder in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports column reordering by dragging a column header to a new position. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports column reordering by dragging a column header to a new position. 
 
-To enable column reordering, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowreordering) property to **true** in the Gantt configuration and inject the `ReorderService` in the component's `providers` array.
+To enable column reordering, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) property to **true** in the Gantt configuration and inject the `ReorderService` in the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
 
 ## Disable column reordering for specific columns
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component, columns are reordered by default. To restrict reordering for a specific column, set its [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowreordering) property to **false**.  
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, columns are reordered by default. To restrict reordering for a specific column, set its [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property to **false**.  
 
 The following example demonstrates how reordering is restricted for the **TaskName** column.
 
@@ -54,13 +54,13 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 
 ## Reorder columns programmatically
 
-You can programmatically reorder columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component using available methods based on field names, index, or target index.  
+You can programmatically reorder columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using available methods based on field names, index, or target index.  
 
-> To perform external column reordering, the column's [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowreordering) property must be enabled.
+> To perform external column reordering, the column's [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property must be enabled.
 
 ### Reorder columns using field names
 
-You can reorder columns in the Gantt component using the [reorderColumns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.
@@ -83,7 +83,7 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 
 ### Reorder columns using column index
 
-You can reorder columns in the Gantt component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbyindex) method of the grid object. This method repositions a column based on its current index and takes two parameters:
+You can reorder columns in the Gantt Chart component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method of the grid object. This method repositions a column based on its current index and takes two parameters:
 
 - **fromIndex**: Index of the column to move.  
 - **toIndex**: Target index to place the column.
@@ -106,7 +106,7 @@ The following demonstrates how to reorder the column at index **1** to position 
 
 ### Reorder columns using target index
 
-You can reorder single or multiple columns in the Gantt component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbytargetindex) method of the grid object.  This method reorders columns based on their field names and the target index. It takes two parameters:  
+You can reorder single or multiple columns in the Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method of the grid object.  This method reorders columns based on their field names and the target index. It takes two parameters:  
   
 - **fieldName**: The field name of the column to move. 
 - **toIndex**: The index where the column should be placed.

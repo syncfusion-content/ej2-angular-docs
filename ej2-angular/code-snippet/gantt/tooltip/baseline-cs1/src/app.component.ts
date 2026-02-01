@@ -2,16 +2,18 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { baselineData } from './data';
+import { CommonModule } from '@angular/common';
 
 @Component({
-    imports: [GanttModule],
+    imports: [GanttModule, CommonModule],
     providers: [DayMarkersService],
     standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [timelineSettings]="timelineSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [dayWorkingTime]="dayWorkingTime" baselineColor='red'>
             <ng-template #tooltipSettingsBaseline let-data>
-               <div> <ng-container>Baseline StartDate : {{data.BaselineStartDate}}</ng-container> </div>
+            
+               <div> <ng-container>Baseline StartDate : {{ data.BaselineStartDate | date:'dd-MMM-yyyy hh:mm a' }}</ng-container> </div>
             </ng-template>
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None

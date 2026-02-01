@@ -1,8 +1,9 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { GanttModule, EditService } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
     imports: [ GanttModule ],
+    providers:[EditService],
     standalone: true,
     selector: 'app-root',
     template:
@@ -57,6 +58,3 @@ export class AppComponent implements OnInit{
         };
     }
 }
-
-
-

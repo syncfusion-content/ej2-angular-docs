@@ -12,11 +12,11 @@ import { GanttModule, SortService } from '@syncfusion/ej2-angular-gantt';
     </ejs-gantt>`,
   styles: [`
     .e-gantt .e-icon-ascending::before {
-      content: '\\e306';
+      content: '\\e7aa';
     }
 
     .e-gantt .e-icon-descending::before {
-      content: '\\e304';
+      content: '\\e71f';
     }
   `]
 })

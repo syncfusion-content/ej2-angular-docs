@@ -1,18 +1,18 @@
 ---
 layout: post
-title: How to Span Columns in Angular Gantt Component | Syncfusion
-description: Learn how to span columns in the Syncfusion Angular Gantt component using the queryCellInfo event, customize borders, and understand limitations.
+title: How to Span Columns in Angular Gantt Chart Component | Syncfusion
+description: Learn how to span columns in the Syncfusion Angular Gantt Chart component using the queryCellInfo event, customize borders, and understand limitations.
 platform: ej2-angular
 control: Column Spanning
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column spanning in Angular Gantt component
+# Column Spanning in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component supports **column spanning**, allowing adjacent cells to merge horizontally for improved layout clarity. This feature is useful for grouping related data or enhancing visual structure.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports **column spanning**, allowing adjacent cells to merge horizontally for improved layout clarity. This feature is useful for grouping related data or enhancing visual structure.
 
-To enable column spanning, use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event and set the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs/#colspan) property to define how many columns a cell should span.
+To enable column spanning, use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event and set the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs#colspan) property to define how many columns a cell should span.
 
 In the following example, **Work** cells are spanned to improve visual clarity:
 

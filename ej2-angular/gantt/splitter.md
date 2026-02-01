@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Splitter in Angular Gantt component | Syncfusion
-description: Learn how to configure the splitter in the Syncfusion Angular Gantt component for flexible TreeGrid and Chart panel sizing.
+title: Splitter in Angular Gantt Chart Component | Syncfusion
+description: Learn how to configure the splitter in the Syncfusion Angular Gantt Chart component for flexible TreeGrid and Chart panel sizing.
 control: Splitter
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitter in Angular Gantt component
+# Splitter in Angular Gantt Chart Component
 
-The splitter in the Angular Gantt component divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
+The splitter in the Angular Gantt Chart component divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
 ## Configure splitter position
 
@@ -34,7 +34,7 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% previewsample "page.domainurl/samples/gantt/appearance-customization/changesplitter/initial-cs1" %}
 
-> If both [position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#position) and [columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings/), only `position` is applied because it takes precedence over `columnIndex`.
+> If both [position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#position) and [columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings), only `position` is applied because it takes precedence over `columnIndex`.
 
 ## Configure view modes
 
@@ -126,7 +126,7 @@ The following example adjusts the splitter dynamically:
 
 ## Customize splitter appearance
 
-Customize the splitter’s appearance in the Gantt component by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing) and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
+Customize the splitter’s appearance in the Gantt Chart component by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing) and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
 
 The following example customizes the splitter’s background and hides the resize handler during resizing:
 
@@ -165,7 +165,7 @@ export class AppComponent implements OnInit {
                 subtasks: [
                     {
                         TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('04/02/2019'), Duration: 0,
-                        Progress: 30, resources: [1], info: 'Measure the total property area alloted for construction'
+                        Progress: 30, resources: [1], info: 'Measure the total property area allotted for construction'
                     },
                     {
                         TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Predecessor: '2',

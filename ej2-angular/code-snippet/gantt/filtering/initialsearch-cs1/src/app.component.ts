@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { FilterService, ToolbarService, GanttModule, ToolbarItem, SearchSettingsModel } from '@syncfusion/ej2-angular-gantt';
-
+import { FilterService, ToolbarService, GanttModule, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { SearchSettingsModel } from '@syncfusion/ej2-angular-grids';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
       operator: 'contains',
       key: 'Pröduct',
       ignoreCase: true,
-      ignoreAccent:true
+      ignoreAccent: true
     }
   }
 }

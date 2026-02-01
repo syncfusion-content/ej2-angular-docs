@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Loading animation in Angular Gantt component | Syncfusion
-description: Learn how to configure loading indicators in the Syncfusion Angular Gantt component for visual feedback during data processing and user interactions.
+title: Loading Animation in Angular Gantt Chart Component | Syncfusion
+description: Learn how to configure loading indicators in the Syncfusion Angular Gantt Chart component for visual feedback during data processing and user interactions.
 platform: ej2-angular
 control: Loading animation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading animation in Angular Gantt component
+# Loading Animation in Angular Gantt Chart Component
 
-The Angular Gantt component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/#indicatortype) property, indicators support two types: **Spinner**, a rotating circular animation for quick operations, and **Shimmer**, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
+The Angular Gantt Chart component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator#indicatortype) property, indicators support two types: **Spinner**, a rotating circular animation for quick operations, and **Shimmer**, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
 
 ## Configure loading indicators
 
-Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator/) property, with `indicatorType` set to **Spinner** (default) or **Shimmer**. Changes to `indicatorType` require component re-initialization for reflection.
+Loading indicators are configured using the [loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator) property, with `indicatorType` set to **Spinner** (default) or **Shimmer**. Changes to `indicatorType` require component re-initialization for reflection.
 
 The following example configures a Shimmer indicator:
 
@@ -52,7 +52,7 @@ The following example shows indicator usage:
 
 ## Control loading indicators manually
 
-For custom scenarios, such as asynchronous data processing, manually control indicators using the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt/#hidespinner) methods. Ensure proper `ViewChild` initialization to reference the Gantt component.
+For custom scenarios, such as asynchronous data processing, manually control indicators using the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#hidespinner) methods. Ensure proper `ViewChild` initialization to reference the Gantt Chart component.
 
 The following example demonstrates manual control:
 
