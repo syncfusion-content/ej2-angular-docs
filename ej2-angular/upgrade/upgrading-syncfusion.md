@@ -10,10 +10,9 @@ domainurl: ##DomainURL##
 
 # Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> regularly releases new volumes every three months, introducing exciting new features and enhancements. Each volume release is followed by a Service Pack release that addresses significant bug fixes found in the initial volume releases.
+Syncfusion<sup style="font-size:70%">&reg;</sup> regularly releases new volumes every three months, introducing new features and enhancements. Each volume release is typically followed by Service Pack releases that address significant bug fixes discovered after the initial volume release.
 
-It is possible to upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> version directly from any previously installed version.
-
+It is possible to upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> version directly from any previously installed version; however, follow the recommended upgrade workflow and pre-upgrade checks to minimize disruption.
 For detailed upgrade procedures and information about breaking changes, bug fixes, new features, and known issues between specific versions, refer to the [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components) for JavaScript – EJ2.
 
 ## Upgrading to the Latest Version
@@ -28,6 +27,8 @@ It's not necessary to install the Volume release before the Service Pack release
 
 ## Upgrading from Trial Version to Licensed Version
 
-To upgrade from a trial version to a fully licensed version, uninstall the trial version and then install the licensed version using the installer available in the [License and Downloads](https://www.syncfusion.com/account/downloads) section of our website.
+To upgrade from a trial installer to a fully licensed installer:
 
-> Note: For JavaScript, if you are using script (.js) and CSS files, registration of a license key is not required.
+1. Uninstall the trial installer if required by your environment.
+2. Download and install the licensed installer from the [License & Downloads](https://www.syncfusion.com/account/downloads) page.
+3. For package-based usages (npm), replace trial keys with a paid license key as described in the license documentation.

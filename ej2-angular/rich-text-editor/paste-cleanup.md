@@ -116,31 +116,17 @@ In the following example, the paste cleanup related settings are explained with 
 
 You can get the pasted text as HTML using the [afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#afterpastecleanup) event.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/paste-cleanup-cs2/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component, AfterViewInit, ViewChild } from '@angular/core';
-import { RichTextEditorModule, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
-import WProofreader from '@webspellchecker/wproofreader-sdk-js';
-
-@Component({
-    imports: [RichTextEditorModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor #editor [value]="value" (afterPasteCleanup)="onAfterPasteCleanup($event)"></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
-})
-export class AppComponent implements AfterViewInit {
-   
-    public value: string = "<p>The Rich Text Editor component is a WYSIWYG (\"what you see is what you get\") editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p> <p><b>Key features:</b></p> <ul><li>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes</li><li>Capable of handling markdown editing.</li><li>Contains a modular library to load the necessary functionality on demand.</li><li>Provides a fully customizable toolbar.</li><li>Provides HTML view to edit the source directly for developers.</li><li>Supports third-party library integration.</li><li>Allows preview of modified content before saving it.</li><li>Handles images, hyperlinks, videos, uploads, etc.</li><li>Contains undo/redo manager.</li><li>Creates bulleted and numbered lists.</li></ul>";
-
-    public onAfterPasteCleanup(args: any): void {
-        // Here you can get the pasted Html string using args.value
-        console.log(args.value);
-    }
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/paste-cleanup-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/paste-cleanup-cs2" %}
 
 ## Customizing pasted content
 

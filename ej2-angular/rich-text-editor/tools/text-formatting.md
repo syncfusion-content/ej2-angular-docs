@@ -172,7 +172,7 @@ You can embed interactive task lists directly within the Rich Text Editor. Hereâ
 
 #### Configuring Checklist
 
-To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `toolbarSettings.items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
+To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
 
 Below is an example of how to configure the Checklist in the Rich Text Editor:
 
@@ -357,7 +357,7 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 
 ## Line Height
 
-The Rich Text Editor supports line height feature which allows users to adjust the vertical spacing between lines of text. To change the line height, select the text you want to modify and click the Line Height icon in the toolbar. Choose from the available spacing options to apply the desired vertical spacing. This feature is especially useful for creating visually appealing paragraphs and ensuring consistent formatting across your document.
+The Rich Text Editor supports line height feature which allows users to adjust the vertical spacing between lines of text. To change the line height, select the text you want to modify and click the LineHeight icon in the toolbar. Choose from the available spacing options to apply the desired vertical spacing. This feature is especially useful for creating visually appealing paragraphs and ensuring consistent formatting across your document.
 
 ### Built-in line height
 

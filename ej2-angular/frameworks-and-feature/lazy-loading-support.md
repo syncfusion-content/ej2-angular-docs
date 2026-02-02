@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lazy loading support in Angular Frameworks | Syncfusion
-description: Learn here all about Lazy loading support in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn how to implement lazy loading in Angular applications using Syncfusion Essential JS 2 components with both module-based and standalone approaches.
 platform: ej2-angular
 control: Lazy loading support 
 documentation: ug
@@ -10,18 +10,18 @@ domainurl: ##DomainURL##
 
 # Angular Lazy Loading
 
-Lazy loading is an essential optimization technique in Angular applications. It allows modules and components to load only when they are needed, reducing the initial bundle size and improving application performance. This guide provides a comprehensive overview of implementing lazy loading with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular components, leveraging both module-based and modern standalone approaches.
+Lazy loading is an optimization technique that loads modules and components only when needed, reducing initial bundle size and improving performance. This guide covers implementing lazy loading with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular components using both module-based and standalone approaches.
 
 ## Why Lazy Loading?
 
-- **Faster Initial Load**: Only loads required features at startup, making applications more responsive.
-- **Efficient Resource Usage**: Minimizes memory and bandwidth consumption by downloading code only on demand.
-- **Scalability**: Helps maintain performance as your app grows.
-- **Syncfusion Integration**: Ensures that Essential JS 2 Angular components are loaded only when needed, optimizing user experience.
+- **Faster Initial Load**: Loads only essential features at startup.
+- **Efficient Resource Usage**: Minimizes memory usage by loading code on demand.
+- **Scalability**: Maintains performance as applications grow.
+- **Syncfusion Integration**: Loads Syncfusion components only when required.
 
 ## Folder Structure Overview
 
-```ruby
+```bash
 src/
 ├── app/
 │   ├── home/           # Lazy-loaded feature module with Syncfusion Grid
@@ -32,13 +32,11 @@ src/
 
 ## Creating a Syncfusion<sup style="font-size:70%">&reg;</sup> component in Angular
 
-Begin developing your Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading) for a comprehensive understanding of implementing lazy loading.
+Start by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). For more details on lazy loading, refer to the Angular [documentation](https://v18.angular.dev/guide/ngmodules/lazy-loading).
 
-## Project Setup
+## Project Setup (Module-based)
 
-### 1. Create App & Install Syncfusion<sup style="font-size:70%">&reg;</sup> components
-
-Run these commands to create a standalone Angular project and install Syncfusion<sup style="font-size:70%">&reg;</sup> components:
+### 1. Create App & Install Syncfusion Components
 
 ```bash
 ng new ngmodule-lazy-demo --routing --style=css
@@ -46,17 +44,17 @@ cd ngmodule-lazy-demo
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns
 npm install @syncfusion/ej2-angular-buttons
 ```
-### Step 2: Generate Feature Modules
 
-Run the following commands to generate feature modules for `home` and `about`. These modules will include routing configuration.
+### 2. Generate Feature Modules
 
 ```bash
 ng generate module home --route home --module app.module
 ng generate module about --route about --module app.module
 ```
-## Add the css in the styles.css
 
-```bash
+### 3. Add CSS in styles.css
+
+```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
@@ -67,16 +65,13 @@ ng generate module about --route about --module app.module
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
-## Home Module - Displays Grid with local data
 
-### home.component.ts
+## Home Module (with Grid)
 
-Displays a simple Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using local in-memory data.
+**home.component.ts**
 
-```ts
+```typescript
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -101,43 +96,32 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 }
-
 ```
 ## Home Module - Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid
 
-### home.module.ts
+**home.module.ts**
 
-Lazy-loaded module that sets up routing and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
-
-```ts
+```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent }
-];
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [
-    CommonModule,
-    GridModule,
-    RouterModule.forChild(routes)
-  ]
+  imports: [CommonModule, GridModule, RouterModule.forChild(routes)]
 })
 export class HomeModule {}
-
 ```
-## About Module - Displays Dropdown List
 
-### about.component.ts
+## About Module (with Dropdown)
 
-Displays a Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown List with a simple string array.
+**about.component.ts**
 
-```ts
+```typescript
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -153,47 +137,32 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {}
 }
-
 ```
 ## About Module - Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown
 
-### about.module.ts
+**about.module.ts**
 
-Lazy-loaded module that configures the route and imports Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown.
-
-```ts
+```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
-const routes: Routes = [
-  { path: '', component: AboutComponent }
-];
+const routes: Routes = [{ path: '', component: AboutComponent }];
 
 @NgModule({
   declarations: [AboutComponent],
-  imports: [
-    CommonModule,
-    DropDownListModule,
-    RouterModule.forChild(routes)
-  ]
+  imports: [CommonModule, DropDownListModule, RouterModule.forChild(routes)]
 })
 export class AboutModule {}
-
-
 ```
-## App Routing - Connects lazy-loaded routes
 
-Configure `app-routing.module.ts` for lazy loading by dynamically importing the required modules
+## App Routing
 
-### app-routing.module.ts
+**app-routing.module.ts**
 
-Defines route-level code-splitting using loadChildren for Home and About modules.
-
-```ts
-
+```typescript
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -235,11 +204,11 @@ The app.module.ts file in an Angular application holds the following key element
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -254,21 +223,20 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppModule { }
 ```
-### app.component.ts
 
-The app.component.ts file in an Angular application is the root component of the app, typically responsible for controlling the main view or layout of the application. 
+**app.component.ts**
 
-```ts
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
-    <h1>Angular Standalone Lazy Loading</h1>
-  <div class="e-section-control" style="text-align: center; margin: 20px 0;">
-  <button ejs-button class="e-primary" routerLink="/home">Home</button>
-  <button ejs-button class="e-success" routerLink="/about" style="margin-left: 15px;">About</button>
-</div>
+    <h1>Angular Lazy Loading</h1>
+    <div class="e-section-control" style="text-align: center; margin: 20px 0;">
+      <button ejs-button class="e-primary" routerLink="/home">Home</button>
+      <button ejs-button class="e-success" routerLink="/about" style="margin-left: 15px;">About</button>
+    </div>
     <router-outlet></router-outlet>
   `,
 })
@@ -345,11 +313,11 @@ ng generate component about --standalone --skip-tests
 ```
 ## Home Component - Displays Grid
 
-### home.component.ts  
+### Home Component (Standalone)
 
-Standalone component that displays Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with local static data.
+**home.component.ts**
 
-```ts
+```typescript
 import { Component } from '@angular/core';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
@@ -373,8 +341,7 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   public orders = [
     { OrderID: 10248, CustomerID: 'VINET', ShipCity: 'Reims', ShipName: 'Vins et alcools Chevalier' },
-    { OrderID: 10249, CustomerID: 'TOMSP', ShipCity: 'Münster', ShipName: 'Toms Spezialitäten' },
-    { OrderID: 10250, CustomerID: 'HANAR', ShipCity: 'Rio de Janeiro', ShipName: 'Hanari Carnes' }
+    { OrderID: 10249, CustomerID: 'TOMSP', ShipCity: 'Münster', ShipName: 'Toms Spezialitäten' }
   ];
 }
 ```

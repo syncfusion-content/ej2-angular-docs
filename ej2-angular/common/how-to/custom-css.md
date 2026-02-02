@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # How to use Custom CSS File in Angular Application
 
-This guide details the step-by-step process to incorporate custom styles in an Angular application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular components. The styles will be created using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
+This guide details the step-by-step process to incorporate custom styles in an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 components. Custom styles enable you to match your application's brand identity while maintaining full component functionality. Styles are created and customized using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 ## Create an Angular application
 
-Begin by setting up an Angular application with Essential<sup style="font-size:70%">&reg;</sup> JS 2 components. Follow our [Getting Started documentation](../../getting-started/angular-cli) for detailed instructions on setting up your project environment and integrating the necessary components.
+Set up an Angular application with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 components. Follow the [Getting Started documentation](../../getting-started/angular-cli) for detailed instructions on project environment setup and component integration.
 
 ## Generating custom CSS file
 
 ### Using Theme Studio
 
-The [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) provides a user-friendly interface to customize component appearances without writing CSS from scratch. With this tool, you can:
+The [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) provides an interactive interface to customize component appearances without manual CSS authoring. With this tool, you can:
 
 1. Select a base theme (Material, Bootstrap, Fabric, etc.) as your starting point
 2. Customize colors, fonts, borders, and other visual properties
@@ -31,17 +31,17 @@ For complex customizations, Theme Studio allows you to modify individual compone
 
 ## Adding custom CSS in Angular application
 
-Place the generated custom CSS file inside the `./src/` directory of your Angular application.
+Place the generated custom CSS file in the `./src/` directory of your Angular project. A common naming convention is `custom-theme.css` or `custom-material.css`.
 
-## Custom style mapping
+## Configure angular.json
 
-In the `./angular.json` file, add the path to the custom CSS file under the `architect/build/options/styles` property, as shown below,
+To enable Angular to load your custom CSS, add the file path to the `styles` array under `architect` → `build` → `options` in your `angular.json` file:
 
 ```typescript
 "styles": [
-             "src/styles.css",
-             "src/custom-material.css"
-          ],
+  "src/styles.css",
+  "src/custom-material.css"
+],
 ```
 
 ## Run Angular application
@@ -60,4 +60,4 @@ Your Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular components wil
 - **Style conflicts**: Check CSS specificity if custom styles aren't overriding defaults
 - **Performance concerns**: Minimize CSS file size by including only necessary customizations
 
-By following these guidelines, you can successfully implement custom styling while maintaining the full functionality of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
+By following these guidelines, you can successfully implement custom styling while maintaining the full functionality and compatibility of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.

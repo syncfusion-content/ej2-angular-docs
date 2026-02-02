@@ -258,8 +258,7 @@ export class AppComponent {
       items.push({
         text: name,
         id: numericKey,
-        numericId: numericKey,
-      });
+        numericId: numericKey });
     }
     items.sort((a, b) => b.numericId - a.numericId);
     return items;
@@ -369,8 +368,7 @@ export class AppComponent {
     for (let i = 0; i < orgPrompts.length; i++) {
       const tPrompt = {
         prompt: orgPrompts[i].prompt || '',
-        response: orgPrompts[i].response || '',
-      };
+        response: orgPrompts[i].response || '' };
       prompts.push(tPrompt);
     }
     const pSuggestions: string[] = [];
@@ -401,8 +399,7 @@ export class AppComponent {
       const convData = {
         name: prompt,
         prompts: prompts,
-        promptSuggestions: pSuggestions,
-      };
+        promptSuggestions: pSuggestions };
       appData[curConvDate] = convData;
       localStorage.setItem('aiassist-view', JSON.stringify(appData));
       this.refreshConversationList();

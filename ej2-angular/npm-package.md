@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # NPM Packages for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components
 
-Starting with version 18.4.0.30 (Volume 4, 2020), Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are available as individual [NPM packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular). Each package is organized by component functionality and namespace, making integration straightforward and optimizing application performance.
+Since version `18.4.0.30` (Volume 4, 2020), Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are available as individual [NPM packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular). Each package is organized by component functionality and namespace, making integration straightforward and optimizing application performance.
 
 ## Installation
 

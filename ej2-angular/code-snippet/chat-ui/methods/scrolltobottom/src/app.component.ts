@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule, ChatUIComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { UserModel } from '@syncfusion/ej2-interactive-chat';
 import { Component, ViewChild } from '@angular/core';
 
 
 @Component({
-    imports: [ FormsModule, ReactiveFormsModule, ChatUIModule ],
+    imports: [ ChatUIModule ],
     standalone: true,
     selector: 'app-root',
     template: `<button id="scrollToBottom" style="margin-bottom: 10px" class="e-btn e-primary" (click)="buttonClick()">Scroll to bottom</button>

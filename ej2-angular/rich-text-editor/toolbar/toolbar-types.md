@@ -112,5 +112,5 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 ## See also
 
 * [Customizing Rich Text Editor Toolbar Styles](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/style#customizing-the-rich-text-editors-toolbar)
-* [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-mode)
+* [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/inline-editing)
 * [Customizing Accessibility Shortcut Keys](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility#keyboard-interaction)

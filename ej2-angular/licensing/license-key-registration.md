@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 A Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered when your project references Syncfusion EJ2-Angular packages. The generated license key is a string that should be registered after adding any [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
 
->Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require internet access. Applications registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on systems without internet connectivity.
+>Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require internet access. However, the initial activation step using the npx command requires internet access. Applications registered with a Syncfusion® license key can be deployed on systems without internet connectivity.
 
 Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation) and register it in one of the following ways,
 
@@ -21,7 +21,7 @@ Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](http
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in the Project
 
-Register the license key in the `main.ts` file of the Angular project.
+Register the license key in the `main.ts` file of the Angular project. Place the registration call before bootstrapping the application so the license is available during runtime.
 
 ```typescript
 import { enableProdMode } from '@angular/core';
@@ -211,4 +211,6 @@ npx syncfusion-license activate
 
 ## See Also
 
+* [Generate Syncfusion license key for Angular](./license-key-generation)
+* [Syncfusion Licensing Overview](https://ej2.syncfusion.com/angular/documentation/licensing/overview)
 * [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)

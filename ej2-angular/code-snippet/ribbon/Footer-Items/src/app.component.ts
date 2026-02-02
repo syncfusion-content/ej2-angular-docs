@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 
 import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, BackStageMenuModel, BackstageItemModel, RibbonBackstageService, RibbonModule } from '@syncfusion/ej2-angular-ribbon';

@@ -10,12 +10,12 @@ import { RichTextEditorModule, ActionBeginEventArgs, ToolbarSettingsModel, Toolb
 </ejs-richtexteditor>
 <ejs-mention #mention [dataSource]='data' target='#mention_integration_rte-edit-view' [fields]='fieldsData' [suggestionCount]="8" [showMentionChar]="false" [allowSpaces]="true"  
 popupWidth='250px' popupHeight='200px'>
-    <ng-template #itemTemplate let-data>
+     <ng-template #itemTemplate let-data>
         <table>
             <tr>
               <td>
                 <div id="mention-TemplateList"> 
-                  <img class="mentionEmpImage" src="./assets/rich-text-editor/images/{{data.Eimg}}.png" alt="employee" />
+                  <img class="mentionEmpImage" src="https://ej2.syncfusion.com/angular/demos/assets/rich-text-editor/images/{{data.Eimg}}.png" alt="employee" />
                   <span class="e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom {{data.Status}}"></span>
                 </div>
                 </td>

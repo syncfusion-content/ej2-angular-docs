@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Syncfusion AI Coding Assistant Prompt Library | Syncfusion
-description: Explore the AI Coding Assistant Prompt Library to enhance Angular development productivity with code generation, configuration examples, contextual guidance.
-control: Syncfusion AI Coding Assistant Prompt Library
+title: Prompt Library for Syncfusion AI Coding Assistant – Angular
+description: Ready-to-use prompt templates for Syncfusion Angular components using the AI Coding Assistant.
+control: AI Coding Assistant
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
@@ -10,23 +10,25 @@ domainurl: ##DomainURL##
 
 # Prompt Library - AI Coding Assistant
 
-Speed up your Angular projects using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
+Speed up your Angular projects with these ready-made prompts tailored for popular Syncfusion<sup style="font-size:70%">&reg;</sup> components. Each prompt is concise, clear, and focused on common real-world tasks such as initial setup, feature configuration, customization, and troubleshooting.
 
 ## How to Use
 
-Before starting, make sure your MCP Server is set up and running.
+Ensure the SyncfusionAngularAssistant MCP Server is installed, configured with your API key, and running before you begin.
 
-* Choose a prompt that fits your need.
-* Copy the full prompt with the #SyncfusionAngularAssistant handle.
-* Customize the prompt for your specific use case.
-* Execute via the MCP Server.
-* Always check and test the code before adding it to your project.
+1. Select a prompt that matches your requirement.
+2. Copy the entire prompt, including the `#SyncfusionAngularAssistant` prefix.
+3. Customize the prompt with your specific component properties, data structure, or use case details as needed.
+4. Submit the prompt through your MCP-compatible client (e.g., IDE extension).
+5. Review the generated code carefully, test it in your application, and make adjustments before production use.
+
+> **Important:** AI-generated code should always be validated for correctness, security, and performance before integration.
 
 ## Component-Specific Prompts
 
 ### Grid
 
-The Syncfusion Angular Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides high-performance, feature-rich tabular data presentation with sorting, filtering, grouping, editing, virtualization, and export capabilities.
 
 {% promptcards %}
 {% promptcard Paging and Sorting %}
@@ -69,7 +71,7 @@ The Syncfusion Angular Data Grid delivers fast, flexible tables for large datase
 
 ### Chart
 
-The Syncfusion Angular Chart suite offers versatile visualization tools across various series types for insightful data representation.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart offers over 80 chart types with rich interactivity, zooming, panning, tooltips, legends, and export options.
 
 {% promptcards %}
 {% promptcard Local and Remote Data %}
@@ -112,7 +114,7 @@ The Syncfusion Angular Chart suite offers versatile visualization tools across v
 
 ### Schedule
 
-The Syncfusion Angular Schedule component helps manage events, resources, and timelines with powerful views and customization.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component supports day, week, month, timeline, and agenda views with event management, drag-and-drop, resizing, and resource grouping.
 
 {% promptcards %}
 {% promptcard Module Injection %}
@@ -155,7 +157,7 @@ The Syncfusion Angular Schedule component helps manage events, resources, and ti
 
 ### Kanban
 
-The Syncfusion Angular Kanban organizes tasks in columns with drag-and-drop, swimlanes, and templating for agile workflows.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Kanban board enables agile project management with columns, swimlanes, drag-and-drop and card templates
 
 {% promptcards %}
 {% promptcard Data Binding %}
@@ -198,7 +200,7 @@ The Syncfusion Angular Kanban organizes tasks in columns with drag-and-drop, swi
 
 ### RichTextEditor
 
-The Syncfusion Angular RichTextEditor offers a modern WYSIWYG editor with extensive formatting, media, and integration features.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular RichTextEditor delivers a full-featured WYSIWYG editor with toolbar customization, media embedding, tables, markdown support, and content validation.
 
 {% promptcards %}
 {% promptcard Toolbar Configuration %}
@@ -238,7 +240,7 @@ The Syncfusion Angular RichTextEditor offers a modern WYSIWYG editor with extens
 
 ### Calendar
 
-The Syncfusion Angular Calendar supports flexible date selection, localization, and custom rendering.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Calendar offers flexible date selection, range picking, multi-date support, globalization, and custom cell rendering.
 
 {% promptcards %}
 {% promptcard Date Range Selection %}
@@ -279,7 +281,8 @@ The Syncfusion Angular Calendar supports flexible date selection, localization, 
 {% endpromptcard %}
 {% endpromptcards %}
 
-## See also
+## See Also
 
-* [AI Coding Assistant Overview](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
-* [SyncfusionAngularAssistant MCP Server](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/mcp-server)
+- [AI Coding Assistant Overview](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+- [SyncfusionAngularAssistant MCP Server](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/mcp-server)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation Home](https://ej2.syncfusion.com/angular/documentation)

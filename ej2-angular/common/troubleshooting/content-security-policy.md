@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content security policy in Angular Troubleshoot component | Syncfusion
-description: Learn here all about Content security policy in Syncfusion Angular Troubleshoot component of Syncfusion Essential JS 2 and more.
+description: Learn how to configure Content Security Policy (CSP) for your Angular application when using Syncfusion Essential JS 2 components to mitigate XSS and data injection risks.
 control: common
 platform: ej2-angular
 documentation: ug
@@ -56,5 +56,4 @@ N> From the 2023 Vol2 - 22.1 release onwards, the Content Security Policy for Sy
 > [View the Angular sample enabled with strict CSP in GitHub](https://github.com/SyncfusionExamples/ej2-angular-csp-example)
 
 ## See also
-
-* [How to Resolve Content Security Policy (CSP) Errors](../how-to/csp-errors)
+*   [How to Resolve Content Security Policy (CSP) Errors](../how-to/csp-errors)

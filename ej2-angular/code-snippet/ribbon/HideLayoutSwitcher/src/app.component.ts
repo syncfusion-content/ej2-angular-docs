@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, ViewChild } from '@angular/core';

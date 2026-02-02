@@ -25,13 +25,13 @@ You can get the license key, based on license availability in your Syncfusion<su
 
 ### Active License
 
-If your Syncfusion<sup style="font-size:70%">&reg;</sup> account is associated with a valid license, the license key will be generated via the Claim License Key page.
+If your Syncfusion<sup style="font-size:70%">&reg;</sup> account has a valid active license, you can generate a full license key valid for the licensed version and all covered features.
 
 ![Active License](images/active-license.png)
 
 ### Active Trial
 
-If your account is associated with a valid trial license, the license key will be generated on the Claim License Key page, including the trial expiry date.
+If your account has a valid trial license, you can generate a trial license key that includes the trial expiry date. Trial keys have limited validity (typically 30 days).
 
 ![Active Trial](images/active-trial.png)
 
@@ -82,7 +82,7 @@ Follow these steps for the edition-based model:
 
 ![Get License Key](images/get-License-Key.png)
 
-**Step 3:** In the pop-up, select version 31.x.x or higher.
+**Step 3:** In the dialog that appears, select version **31.x.x or higher** from the version dropdown.
 
 **Step 4:** Select the required edition(s) or SDK(s) from the drop-down menu based on your application’s component usage.
 
@@ -118,14 +118,16 @@ For versions 30.x.x and earlier, follow the platform-based licensing model:
 
 **Step 4:**  From the drop-down menu, select the platform(s) used in your application. You can select multiple platforms.
 
+* Select **Angular** for EJ2-Angular applications
+* Select multiple platforms if your application uses components across different platforms
 - Note: When selecting an older version, the menu will display platforms (e.g., JavaScript, Angular) instead of the new editions.
 
 ![License Key Platform](images/license-Key-Platform.png)
 
-**Step 5:** Click **Get License Key** to generate the platform-specific key.
+**Step 5:** Click **Get License Key** to generate the platform-specific license key.
 
 ## See Also
 
 * [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in the Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration)
 * [Syncfusion Licensing Overview](https://ej2.syncfusion.com/angular/documentation/licensing/overview)
-* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)
+* [Licensing FAQ and Troubleshooting](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)

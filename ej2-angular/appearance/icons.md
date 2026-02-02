@@ -3,38 +3,34 @@ layout: post
 title: Icons in Angular Appearance component | Syncfusion
 description: Learn here all about Icons in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Icons 
+control: Icons
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Predefined Icons Library in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Component
+# Predefined Icons Library in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers a versatile icon library consisting of pre-designed icons to enhance application interfaces. These icons are provided as `base64` formatted font icons, enabling a cohesive and visually appealing design across your entire application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides a comprehensive icon library with pre-designed, `base64-encoded` font icons to enhance UI elements consistently across applications. These icons are lightweight, scalable, and theme-aware.
 
-## Referring Icons in Angular Applications
+## Including Icons in Angular Applications
 
-Icons can be easily incorporated into Angular applications using two primary methods:
+Icons are available through two main methods:
 
 * [npm package](#the-npm-package) - Access icons through the npm package.
 
 * [CDN reference](#cdn-reference) - Utilize static web assets for icon access.
 
-### The npm Package
+### Using the npm Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are included in the [ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package, available on [npmjs.com](https://www.npmjs.com/~syncfusionorg). This package provides both CSS and SCSS theme files for all available themes.
+The icon styles are bundled in the [@syncfusion/ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package.
 
-To use icons from the `ej2-icons` npm package:
-
-1. Install the package using npm:
+1. Install the package:
 
 ```bash
 npm install @syncfusion/ej2-icons
 ```
 
-2. Import the desired theme CSS in your application styles:
-
-`[src/styles.css]`
+2. Import the desired theme's icon CSS in your global styles file (`src/styles.scss` or `src/styles.css`):
 
 ```css
 @import "../node_modules/@syncfusion/ej2-icons/styles/<theme_name>.css";
@@ -46,22 +42,21 @@ npm install @syncfusion/ej2-icons
 @import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
 ```
 
-### CDN Reference
+**Supported themes include:** material3, bootstrap5, fluent2, tailwind3, highcontrast, etc.
+
+### Using CDN
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are also accessible via CDN. Using a cloud CDN instead of local resources helps ensure current and compatible icon versions align with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages.
 
 Add the appropriate CDN link to your application's HTML head section:
 
 ```html
-<!-- Bootstrap5 theme icons -->
-<head>
-    <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet"/>
-</head>
-<!-- OR Material theme icons -->
-<head>
-    <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material.css" rel="stylesheet"/>
-</head>
+<link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/material.css" rel="stylesheet" />
 ```
+Replace `material.css` with your chosen theme (e.g., `bootstrap5.css`, `fluent2.css`).
+
+> **Best Practice:** Load the main component/theme CSS before the icons CSS to ensure proper font-family inheritance.
+
 
 ## Steps to Use Icons Library
 
@@ -111,7 +106,7 @@ Complete implementation example:
   
     {% previewsample "page.domainurl/samples/common/icons" %}
 
-### Icon Size
+## Icon Sizing
 
 The `ej2-icons` package allows displaying icons in various size modes. Choose the appropriate size class based on your design requirements:
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Localization
 
-The Localization library in Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Components allows you to adapt your application for international audiences by displaying text content in languages other than English. This feature is essential for creating globally accessible applications that provide users with a familiar experience in their native language.
+The Localization library in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components allows you to adapt your application for international audiences by displaying text content in languages other than English. This feature is essential for creating globally accessible applications that provide users with a familiar experience in their native language.
 
 ## Loading translations
 
-Translations can be loaded into your Angular application using the `load` function from the `@syncfusion/ej2-base` module. This function accepts an object where language codes serve as keys, and the corresponding translation objects contain key-value pairs for each localizable string.
+Translations can be loaded into your Angular application using the `load` method from the `L10n` class. This method accepts an object where language codes serve as keys, and the corresponding translation objects contain key-value pairs for each localizable string.
 
 For instance, to load translations for English (`en`) and French (`fr`), implement the following:
 
@@ -32,10 +32,11 @@ For instance, to load translations for English (`en`) and French (`fr`), impleme
 
 ## Changing current locale
 
-The current locale can be changed for all the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application by invoking the `setCulture` function with your desired culture name.
+The current locale can be changed for all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components in your application by invoking the `setCulture` function with your desired culture name.
 
 ```typescript
 import { L10n, setCulture } from '@syncfusion/ej2-base';
+
 L10n.load({
     'fr-BE': {
         'Button': {
@@ -48,4 +49,4 @@ L10n.load({
 setCulture('fr-BE');
 ```
 
->Note: Before changing a culture globally, you need to ensure that locale text for the concerned culture is loaded through the `L10n.load` function.
+>Note: Before changing a culture globally, ensure that locale text for the concerned culture is loaded through the `L10n.load` function.
