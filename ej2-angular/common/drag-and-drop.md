@@ -8,15 +8,24 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and Drop for Angular components
+# Drag and Drop for Angular Components
 
-Drag and drop is a user interface feature that allows users to select one or more items, move them to a different location, and place them onto another interface element. This interaction is performed by "dragging" the selected items with a pointing device (such as a mouse) and then "dropping" them at the desired destination.
+Drag and drop is a direct manipulation interface pattern that allows users to select objects, move them to different locations, and release them to perform actions such as reordering, moving between containers, or organizing content. This intuitive interaction improves usability in applications like task managers, file explorers, and kanban boards.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide comprehensive drag and drop functionality through two primary libraries: [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/). These libraries work together to create intuitive user interactions in your applications.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide robust drag and drop support through the [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/) classes from the `@syncfusion/ej2-base` package. These classes can be applied to any DOM element, enabling flexible and customizable drag-and-drop experiences.
 
-## Draggable
+Import the required classes in your component:
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) library empowers developers to make any DOM element draggable by initializing a `Draggable` object with the element as a parameter. This functionality is essential for interactive applications, enabling users to reorder items dynamically. Below is a demonstration of how to implement draggable functionality for a specific DOM element.
+```ts
+import { Draggable, Droppable } from '@syncfusion/ej2-base';
+```
+
+## Making Elements Draggable
+
+To enable dragging on any HTML element, create a `Draggable` instance and pass the target element.
+
+The following example demonstrates basic draggable functionality:
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/draggable-default-cs1/src/app.component.ts %}
@@ -29,9 +38,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [`Draggable`](https://ej2.s
   
 {% previewsample "page.domainurl/samples/common/draggable-default-cs1" %}
 
-### Clone draggable element
+### Creating a Clone During Drag
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a clone of a draggable element while the user is dragging it. It can be achieved by setting the [clone](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone) property to `true`. Here's an example of how to create a clone of a draggable element.
+Set the [clone](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone) property to `true` to display a visual copy of the dragged element while the original remains in place. This is useful for drag-and-drop operations where the source should not move until dropped successfully.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,9 +54,10 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to create a
   
 {% previewsample "page.domainurl/samples/common/clone-draggable" %}
 
-### Drag area
+### Restricting the Drag Area
 
-A drag area is a confined section within the user interface where drag-and-drop operations are permissible. Executing a drag within this area can trigger specific actions or events, enhancing control over user interactions. Define a drag area by setting the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea) property as illustrated below.
+Limit the draggable movement to a specific container by setting the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea) property to a CSS selector or DOM element. The dragged element (or its clone) will be constrained within these boundaries.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/drag-area/src/app.component.ts %}
@@ -60,13 +70,13 @@ A drag area is a confined section within the user interface where drag-and-drop 
   
 {% previewsample "page.domainurl/samples/common/drag-area" %}
 
-## Droppable
+## Creating Drop Targets
 
-The Droppable component designates parts of the user interface that can serve as targets for draggable elements. Utilizing Syncfusion<sup style="font-size:70%">&reg;</sup>'s [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/) library, you can transform any DOM element into a droppable area, capable of accepting draggable components.
+The [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/) class designates elements as valid drop zones. When a draggable element is released over a droppable target, the [drop](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) event fires, providing details such as the target, dragged element, and helper (clone).
 
-On interaction between a draggable and a droppable component, a [drop](https://ej2.syncfusion.com/documentation/api/base/droppable/#events) event is fired. Information about the dropped element is accessible via event arguments, allowing developers to append the dragged element to the target dynamically.
+Use this event to append or move the dragged element to the drop target.
 
-Below is an example demonstrating the creation of droppable zones.
+The following example shows basic drag-and-drop between containers:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

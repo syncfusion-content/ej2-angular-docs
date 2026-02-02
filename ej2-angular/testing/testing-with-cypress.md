@@ -20,11 +20,11 @@ For more information, see the official [Cypress documentation](https://docs.cypr
 
 ## Integrating Cypress with Angular
 
-To integrate Cypress with Angular, follow the below steps.
+To integrate Cypress with Angular (Angular 21 and later), follow the steps below.
 
-1.Create a new Angular application and add the Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
+1. Create a new Angular application and add the Syncfusion® DataGrid component by following the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation.
 
-2.Once create the application, run the below command to install the Cypress.
+2. Once the application is created, run the following command to install Cypress.
 
 {% tabs %}
 {% highlight js tabtitle="CMD" %}
@@ -89,7 +89,7 @@ ng e2e
 
 ![Cypress test result](../../common/how-to/images/cypress-e2e-result.png)
 
-For more information about Cypress E2E testing, refer to this [documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test).
+For more information about Cypress E2E testing, refer to the [official documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test).
 
 ## Cypress Component Testing of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components 
 

@@ -21,7 +21,7 @@ Ensure the following are installed:
 - TypeScript version 5.5 or later
 - [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular system requirements](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
-> **Note**: Protractor reached its end-of-life in August 2023 and is no longer maintained for Angular projects. With Angular CLI version 12 and later, Protractor support is deprecated. Modern UI testing tools such as Playwright offer fast, reliable, and cross-browser support, making them well-suited for Angular applications.
+> **Note**: Protractor reached its end of life in August 2023 and is no longer maintained for Angular projects. With Angular CLI version 12 and later, Protractor support is deprecated. Modern UI testing tools such as Playwright offer fast, reliable, and cross-browser support, making them well suited for Angular applications.
 
 ## What is Playwright?
 
@@ -31,7 +31,7 @@ Playwright is an open-source framework by Microsoft for E2E testing across Chrom
 - Auto-waiting for element actions to improve test reliability
 - Parallel test execution
 - Network mocking and mobile emulation
-- Debugging tools like Playwright Inspector and Trace Viewer
+-  Debugging tools such as Playwright Inspector and Trace Viewer
 - TypeScript integration, ideal for Angular projects
 
 Playwright does not require a separate server for E2E tests and is designed to provide stable and efficient automation for Angular projects.
@@ -104,7 +104,7 @@ To execute the E2E tests, run:
 npx playwright test 
 ```
 
-Playwright will launch the configured browsers, execute tests, and compare UI snapshots with the baseline. Visual mismatches or unexpected changes will be reported.
+Playwright will launch the configured browsers, execute the tests, and compare UI snapshots with the baseline. Visual mismatches or unexpected changes will be reported.
 
 ## See also
 

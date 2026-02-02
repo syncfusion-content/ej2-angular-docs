@@ -3,61 +3,64 @@ layout: post
 title: Introduction to the Figma UI Kit | Syncfusion
 description: Check out and learn about the introduction to the Figma UI Kit of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Figma 
+control: Figma
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Figma UI Kits for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides [Figma UI kits](https://www.figma.com/@syncfusion) to enhance collaboration between designers and developers. These kits are available in four themes that match Syncfusion Angular component styling:
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides official [Figma UI kits](https://www.figma.com/@syncfusion) to help designers and developers collaborate more effectively. These kits contain reusable, production-ready Figma components that mirror Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components—including all states, variants, interactions, and specifications.
 
-* [Material 3](https://www.figma.com/community/file/1454123774600129202)
-* [Fluent](https://www.figma.com/community/file/1385969120047188707)
-* [Tailwind](https://www.figma.com/community/file/1385969065626384098)
-* [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
+The kits support four modern themes:
 
-Each UI kit contains reusable design components that accurately represent Syncfusion Angular components with their various states and variants. The kits include detailed specifications, measurements, and icons to ensure design-to-development consistency.
-
-![Material 3 Figma UI Kit](./images/material3.png)
-
-## Advantages of UI Kits
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits offer several key benefits:
-
-- The kit offers extensive information about Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, detailing available controls, their states, and variants, for quick insights.
-- Using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), design components are crafted for straightforward and efficient customization.
-- Developers can align Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with design specifications, ensuring accuracy and consistency.
-- Standardized components and themes promote design uniformity, maintaining a cohesive appearance throughout projects.
-- Accelerate the design process by using pre-built components instead of creating designs from scratch.
-
-## Downloading the UI Kits
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits are available via the [Figma community](https://www.figma.com/@syncfusion). Each theme-specific UI kit is available at these links:
 
 - [Material 3](https://www.figma.com/community/file/1454123774600129202)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707)
 - [Tailwind](https://www.figma.com/community/file/1385969065626384098)
 - [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
 
+Each kit includes detailed design tokens, measurements, icons, and documentation to achieve near-perfect fidelity between design and implementation.
+
+![Material 3 Figma UI Kit](./images/material3.png)
+
+## Advantages of Using the UI Kits
+
+- Comprehensive overview of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, including controls, states, and variants
+- Built using [atomic design principles](https://atomicdesign.bradfrost.com/chapter-2/) for scalable and maintainable customization
+- Enables developers to implement components that match designs exactly
+- Promotes visual consistency across the entire application
+- Significantly speeds up the design phase by providing ready-to-use elements
+
+## Downloading the UI Kits
+
+All kits are freely available in the [Figma Community](https://www.figma.com/@syncfusion). Access them directly via these links:
+
+- [Material 3 UI Kit](https://www.figma.com/community/file/1454123774600129202)
+- [Fluent UI Kit](https://www.figma.com/community/file/1385969120047188707)
+- [Tailwind UI Kit](https://www.figma.com/community/file/1385969065626384098)
+- [Bootstrap 5 UI Kit](https://www.figma.com/community/file/1385968977953858272)
+
+Material 3 and Fluent kits include both light and dark mode variants.
+
 ## Structure of the UI Kits
 
-Each Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kit is organized into a clear, navigable structure with these main pages:
+Each kit follows a consistent, intuitive layout with the following main pages:
 
-- **Thumbnail**: The cover page of the UI kit showing the theme identity.
-- **Index**: A comprehensive list of all controls included in the kit, providing easy navigation.
-- **Icons**: Includes all icons used in design components.
-- **UI Components**: This essential section features a broad array of UI components. Each control is well-designed with precise figures, measurements, and icons, illustrating multiple states and variants.
+- **Thumbnail** — Cover page displaying the theme branding
+- **Index** — Complete list of included controls with direct navigation links
+- **Icons** — All icons used across components
+- **UI Components** — Core section containing categorized components (inputs, navigation, data visualization, layouts, etc.), each with states, variants, specs, and measurements
 
 ![Figma UI Kit Layout](./images/layout.png)
 
-The UI components are organized by category (inputs, navigation, data visualization, etc.) to help you quickly find the elements you need for your designs.
+Components are grouped  by category(inputs, navigation, data visualization, etc.) for quick access.
 
 ## Customizing the UI Kits
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits can be tailored to suit specific needs, allowing for unique design creation and color adaptation to match brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) ensures your customizations seamlessly affect multiple components and their variants.
+The kits support full customization to match brand guidelines while preserving component integrity. Thanks to atomic design and local variables, changes to core tokens propagate automatically.
 
-Here's how to adjust the primary button color in the Material 3 theme:
+**Example: Changing the primary button color in Material 3**
 
 1. Visit our [UI kits](#downloading-the-ui-kits) section and select a preferred theme, such as Material 3.
 2. Open the chosen theme in Figma by clicking the **Open in Figma** button.
@@ -70,13 +73,10 @@ Here's how to adjust the primary button color in the Material 3 theme:
 
 ![Customization](./images/customize.png)
 
-Beyond button color changes, other UI component aspects such as font, spacing, and shadows can also be customized:
 
-Experiment with these options to create a design perfectly aligned with your vision.
+## Exporting Customized Design Tokens
 
-## Downloading the customized styles
-
-After customizing your UI kit, you can export the design tokens for direct use in your Angular application using the `Syncfusion<sup style="font-size:70%">&reg;</sup> Design Tokens` plugin. This creates a seamless bridge between your Figma designs and code implementation.
+Use the official **Syncfusion Design Tokens** plugin to export your custom variables for direct use in Angular applications.
 
 ### Exporting design tokens
 
@@ -107,7 +107,8 @@ To upgrade your UI kits, download the latest version from the provided links. Fo
 - Backup ongoing projects before upgrading to avoid data loss or compatibility issues.
 - Share feedback with Syncfusion<sup style="font-size:70%">&reg;</sup> about the updated UI kits, including encountered issues or improvement suggestions.
 
-## See also
+## See Also
 
-* [Available themes](https://ej2.syncfusion.com/documentation/appearance/theme)
-* [Customizing themes](https://ej2.syncfusion.com/documentation/appearance/theme-studio#customizing-theme-color-from-theme-studio)
+- [Syncfusion Themes Overview](https://ej2.syncfusion.com/documentation/appearance/theme)
+- [Customizing Themes with Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio#customizing-theme-color-from-theme-studio)
+- [Syncfusion Figma Community Profile](https://www.figma.com/@syncfusion)

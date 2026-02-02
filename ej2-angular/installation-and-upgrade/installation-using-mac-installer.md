@@ -18,8 +18,8 @@ domainurl: ##DomainURL##
      
    If you receive this alert, follow the below steps for the easiest solution.   
 
-   1. Right-click the downloaded dmg file.
-   2. Select the "Open With" option and choose "DiskImageMounter (Default)". The following pop-up appears.
+1. Right-click the downloaded DMG file.
+2. Select **Open With** and choose **DiskImageMounter (Default)**. The following pop-up appears.
 
       ![pop-up Image](images/Mac_Catalina_MacOS_Alert2.png)
 
@@ -57,7 +57,6 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 
 ## License key registration in samples
 
-After the installation, the license key is required to register the demo source that is included in the Mac installer. To learn about the steps for license registration for the JavaScript - EJ2 Mac installer, please refer to this.
-
+After installation, a license key is required to run the demo source included with the Mac installer. To learn how to register a license key for the JavaScript – EJ2 Mac installer, refer to the following topics:
 * [Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in the project](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-using-the-npx-command)

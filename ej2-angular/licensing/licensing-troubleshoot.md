@@ -36,7 +36,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are the **vers
 
 ## Will the registered license key expire
 
-No, the Syncfusion<sup style="font-size:70%">&reg;</sup> license keys won't expire for a particular version and you can continue to use it. So, you won't face any problems on the live site. If you have used the trial key, it will expire in 30 days and we don't recommend using it in production.
+No, the Syncfusion<sup style="font-size:70%">&reg;</sup> license keys do not expire for the specific version they were generated for. Trial keys expire after 30 days and should not be used in production.
 
 > After upgrading to a newer version of Syncfusion<sup style="font-size:70%">&reg;</sup> packages, generate and apply a new license key for that version.
 

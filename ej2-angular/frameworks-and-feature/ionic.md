@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ionic with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Ionic with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Ionic and Angular | Syncfusion
+description: Learn how to create an Ionic Angular application and integrate the Syncfusion Grid component for a modern, responsive mobile interface.
 platform: ej2-angular
 control: Ionic 
 documentation: ug
@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting Started with Ionic and Angular
 
-This guide provides a step-by-step walkthrough for creating an Angular application with the `Ionic Framework`, featuring integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components for modern, responsive interfaces.
+This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com/), featuring integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components for modern, responsive interfaces.
 
 ## Prerequisites
 
 Before beginning, ensure the following are installed:
 
-* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * Ionic CLI version `^8.0.0` or later
 * Node.js (latest LTS version is recommended)
 * Angular CLI compatible with your Ionic version
@@ -37,9 +37,9 @@ Once the development setup is complete, create a new project by running:
 ionic start syncfusion-angular-ionic blank --type=angular 
 ```
 
-This creates an Ionic application in the "syncfusion-angular-ionic" directory with default npm packages.
+This creates an Ionic application in the `syncfusion-angular-ionic` directory with default npm packages.
 
-> Refer to this [getting started guide](https://ionicframework.com/#cli) for Ionic framework installation details.
+> Refer to this [Ionic getting started guide](https://ionicframework.com/docs/intro/cli) for more framework installation details.
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
@@ -134,7 +134,7 @@ export class HomePage {
 To apply the required styles for the Grid component, update `src/global.scss` with the following imports:
 
 {% tabs %}
-{% highlight css tabtitle="~/src/styles.css" %}
+{% highlight css tabtitle="~/src/global.scss" %}
 
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
@@ -173,4 +173,4 @@ To run the application and view the integrated Syncfusion<sup style="font-size:7
 ionic serve
 ```
 
-> For additional help, see the [Angular sample with Ionic framework](https://github.com/SyncfusionExamples/ej2-angular-ionic).
+> For additional help, see the [Angular sample with Ionic framework on GitHub](https://github.com/SyncfusionExamples/ej2-angular-ionic).

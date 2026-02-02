@@ -18,12 +18,10 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
-
+2. Angular compatibility compiler (ngcc) package (Angular’s legacy compilation and rendering pipeline)
 ### Ivy Library Distribution Package
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) supports [Angular Ivy distribution](https://docs.angular.lat/guide/ivy). These packages are compatible with Angular version 12 and above. To install the package, use the below command,
-
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) support [Angular Ivy distribution](https://angular.io/guide/ivy). These packages are compatible with Angular version 12 and above. To install a package, use the following command.
 Install the [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package in the application:
 
 ```bash
@@ -50,8 +48,7 @@ To specify the ngcc package directly in the `package.json` file, add the suffix 
 
 ## Install by using package.json
 
-1. Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular (Essential JS 2) package references in the `dependencies` section of the `~/package.json` file.
-
+1. Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular (Essential JS 2) package references in the `dependencies` section of your project `package.json` file.
     ```json
     {
         "dependencies": {
@@ -60,8 +57,7 @@ To specify the ngcc package directly in the `package.json` file, add the suffix 
         }
     }
     ```
-    > The `*` indicates the latest version of the npm package. Refer to the [documentation](https://docs.npmjs.com/misc/) for more details.
-
+    > The `*` indicates the latest version of the npm package. Refer to the [npm documentation](https://docs.npmjs.com/misc/) for more details.
 2. Run the `npm install` command in the command prompt to install all npm dependencies at once.
 
     > Refer to the [documentation](https://docs.npmjs.com/files/package.json) for additional details.

@@ -10,15 +10,24 @@ domainurl: ##DomainURL##
 
 # Animation Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-**Animations** enhance the user interface by executing a series of frames, resulting in smooth transitions and effects. Syncfusion<sup style="font-size:70%">&reg;</sup>'s [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library enables these animations effectively.
+**Animations** enhance the user interface by applying smooth transitions and visual effects to HTML elements through a sequence of frames. Syncfusion<sup style="font-size:70%">&reg;</sup>'s [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library provides a robust way to implement these effects in Angular applications.
 
-The [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#animate) method aids in animating HTML elements by temporarily applying `e-animate` and `e-animation-id` attributes, alongside CSS styles, for the effect duration.
+The [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#animate) method animates specified HTML elements by temporarily adding the `e-animate` and `e-animation-id` attributes, along with the necessary CSS transition or animation styles, which are removed once the effect completes.
 
-## Animation effects
+## Animation Effects
 
-Animation effects define how elements visually transform during the animation. Syncfusion provides a variety of built-in [effects](https://ej2.syncfusion.com/documentation/api/base/effect/#effect) that can be specified using the [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property.
+Animation effects determine how elements transform visually. Specify an effect using the [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property of the Animation class.
 
-Example code utilizing the `FadeOut` and `ZoomOut` animation effects:
+The base Animation library supports the following common effects (note: some components provide additional or composite effects; refer to individual component documentation for specifics):
+
+- **Fade**: `FadeIn`, `FadeOut` — Elements gradually appear or disappear.
+- **Zoom**: `ZoomIn`, `ZoomOut` — Elements scale up or down in size.
+- **Slide**: `SlideLeftIn`, `SlideLeftOut`, `SlideRightIn`, `SlideRightOut`, `SlideUpIn`, `SlideUpOut`, `SlideDownIn`, `SlideDownOut` — Elements slide into or out of view from different directions.
+- **Rotate**: `RotateIn`, `RotateOut` – Rotate elements during transition
+- **Scale**: `ScaleIn`, `ScaleOut` – Resize elements smoothly
+For the full and up-to-date list of supported effects, see the [Effect API reference](https://ej2.syncfusion.com/documentation/api/base/effect/#effect). Effects like Rotate or pure Scale are not natively supported in the base library and may be available only in specific components.
+
+The following example demonstrates the `FadeOut` and `ZoomOut` effects:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,11 +45,11 @@ Example code utilizing the `FadeOut` and `ZoomOut` animation effects:
 
 ### Duration
 
-The animation [duration](https://ej2.syncfusion.com/documentation/api/base/animation/#duration) defines the total time an animation takes to run, measured in milliseconds.
+The [duration](https://ej2.syncfusion.com/documentation/api/base/animation/#duration) property sets the length of the animation in milliseconds.
 
-For instance, an animation with a `2000ms` duration completes in 2 seconds. The duration impacts the animation pace—shorter times yield faster movements, while longer durations slow it down.
+A value of `2000` ms results in a 2-second animation. Shorter durations create faster transitions, while longer ones produce slower, more deliberate effects.
 
-Example utilizing `5000ms` for animation effects:
+Example with a `5000 ms` duration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,11 +65,11 @@ Example utilizing `5000ms` for animation effects:
 
 ### Delay
 
-The animation [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) property specifies the waiting time before an animation begins, also measured in milliseconds.
+The [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) property defines the wait time (in milliseconds) before the animation begins.
 
-For example, a `2000ms` delay pauses the animation for 2 seconds before it starts. This is valuable for sequential animations or event-triggered actions.
+A `2000` ms delay postpones the start by 2 seconds, which is useful for creating sequenced or staggered animations.
 
-Example using a `2000ms` delay:
+Example with a `2000ms` delay:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,15 +83,15 @@ Example using a `2000ms` delay:
   
 {% previewsample "page.domainurl/samples/common/animation-multiple-cs3" %}
 
-## Enable or disable animation globally
+## Enable or Disable Animations Globally
 
-Control animations for all Angular components globally with the `setGlobalAnimation` method:
+Use the `setGlobalAnimation` function from `@syncfusion/ej2-base` to control animations across all Syncfusion Angular components:
 
-- `GlobalAnimationMode.Enable` – Activates animations for all components.
-- `GlobalAnimationMode.Disable` – Deactivates animations for all components.
-- `GlobalAnimationMode.Default` – Respects the component-specific animation settings.
+- `GlobalAnimationMode.Enable` — Enables animations everywhere, overriding component defaults.
+- `GlobalAnimationMode.Disable` — Disables all script-based animations.
+- `GlobalAnimationMode.Default` — Respects each component's individual animation settings.
 
-The example below demonstrates disabling animations:
+Example disabling animations globally:
 
 {% tabs %}
 {% highlight js tabtitle="~/src/src/app.component.ts" %}
@@ -94,4 +103,4 @@ setGlobalAnimation(GlobalAnimationMode.Disable);
 {% endhighlight %}
 {% endtabs %}
 
-> `setGlobalAnimation` method controls script-level animations only, and it is not applicable for direct CSS-level animations (animations defined from CSS classes or properties).
+> Note: The `setGlobalAnimation` method affects only animations managed by the Syncfusion Animation library (script-level). It does not impact CSS-defined animations applied via classes or inline styles.

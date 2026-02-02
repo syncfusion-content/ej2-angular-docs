@@ -8,15 +8,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Right-to-Left (RTL) Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-Right-to-Left (RTL) support allows applications to cater to languages written from right to left, such as Arabic and Hebrew. This feature enhances the accessibility and usability of web applications for a broader audience.
+Right-to-Left (RTL) support enables applications to correctly display content for languages written from right to left, such as Arabic, Hebrew, Persian, and Urdu. When RTL is enabled, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components automatically adjust text direction, alignment, icons, scrollbars, popups, and layout mirroring to provide a natural reading and interaction experience.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components provide built-in RTL support. By setting the `enableRtl` property to `true`, you can render Syncfusion<sup style="font-size:70%">&reg;</sup> components in a right-to-left direction. This automatically applies the `e-rtl` class to the component's HTML element.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components include built-in RTL support. Setting the `enableRtl` property to `true` applies the `e-rtl` class to the component's root element, triggering layout mirroring and direction changes.
 
-## Enable RTL for all components
+Ensure the following imports are present in your component or module:
 
-To enable RTL support globally across all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, set the `enableRtl` property at the application level. This ensures a consistent RTL layout throughout your application. Below is an example using the ListView component:
+```ts
+import { enableRtl } from '@syncfusion/ej2-base';
+```
+
+## Enable RTL Configuration
+
+To apply RTL consistently across all Syncfusion<sup style="font-size:70%">&reg;</sup> components, enable it at the application level before any component initialization. The most reliable method is to call `enableRtl(true)` early in the application lifecycle
+
+Example enabling RTL globally:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +40,9 @@ To enable RTL support globally across all Syncfusion<sup style="font-size:70%">&
 
 ## Enable RTL for an individual component
 
-To enable Right-To-Left (RTL) support for an individual component, users can set the `enableRtl` property in the component's options. Here is an example code snippet using the ListView component:
+For scenarios requiring mixed LTR and RTL layouts (e.g., specific sections in RTL while the rest remains LTR), set the `enableRtl` property directly on individual components.
+
+Example enabling RTL on a single component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,8 +56,33 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
   
 {% previewsample "page.domainurl/samples/common/individual-rtl-cs1" %}
 
-## Summary
+## RTL with Localization
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide robust Right-to-Left support that can be implemented either globally or on a per-component basis. This flexibility allows developers to create culturally appropriate interfaces for RTL language users while maintaining proper layout, alignment, and usability.
+RTL is most effective when combined with appropriate culture/locale settings. Load the desired locale and set it alongside RTL:
 
-By properly implementing RTL support, you ensure that your applications are accessible and intuitive for users across diverse linguistic backgrounds, significantly enhancing the global reach and usability of your software.
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+// Load locale resources (example for Arabic)
+L10n.load({
+  'ar': {
+    // locale strings...
+  }
+});
+
+setCulture('ar');
+enableRtl(true);
+```
+
+This ensures text, date/number formatting, and layout all align with RTL language conventions.
+
+## What Changes in RTL Mode
+
+When `enableRtl` is enabled, Syncfusion<sup style="font-size:70%">&reg;</sup> components automatically:
+- Reverse text direction (`direction: rtl`)
+- Mirror horizontal alignments (left → right, right → left)
+- Flip icons, arrows, and expand/collapse indicators
+- Adjust popup/menu positioning and scrollbars
+- Reverse grid column order
+
+Most Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components fully support RTL. For any exceptions or special configurations, refer to the specific component documentation.

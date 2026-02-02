@@ -9,28 +9,43 @@ domainurl: ##DomainURL##
 ---
 
 
-# Update Syncfusion<sup style="font-size:70%">&reg;</sup> npm package
 
-Keeping your Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages up-to-date is essential for accessing the latest features, bug fixes, performance improvements, and security patches. This guide explains how to efficiently update these packages using the [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) tool.
+# Update Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages
 
-## Global Installation of npm-check-updates
+Keeping your Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages up-to-date is essential for accessing the latest features, bug fixes, performance improvements, and security patches. This guide explains how to efficiently update these packages using `npm-check-updates` (ncu) and best practices for npm package management.
 
-First, install the `npm-check-updates` package globally. This tool helps you check for updates and can be used as a CLI tool.
+## Install `npm-check-updates` (ncu)
 
-### Steps to Install:
+`npm-check-updates` (ncu) is a powerful tool that helps you discover and update package dependencies in your `package.json` file. It's recommended to install it locally within your project to avoid global dependency issues.
 
-1. Open the terminal or command prompt.
-2. Run the following command to install globally:
+### Local Installation
 
-    ```bash
-    npm install -g npm-check-updates
-    ```
-
-3. To update all `@syncfusion` packages to their latest versions, execute:
+1. Open your terminal or command prompt in your Angular project's root directory.
+2. Run the following command to install `npm-check-updates` as a development dependency:
 
     ```bash
-    ncu -u -f /^@syncfusion/
+    npm install npm-check-updates --save-dev
     ```
+
+### Using `npx` (No Installation Needed)
+
+Alternatively, you can use `npx` to run `npm-check-updates` without installing it, using the latest version directly:
+
+```bash
+npx npm-check-updates
+```
+
+## Update Syncfusion Packages to Latest Versions
+
+After installing `ncu` (or choosing to use `npx`), follow these steps to update your Syncfusion packages.
+
+### 1. Identify and Update `package.json`
+
+Use `ncu` to check for specific `@syncfusion` package updates and modify your `package.json` file.
+
+```bash
+npx ncu -u -f /^@syncfusion/
+```
 
     This modifies your `package.json` file, setting the version of all `@syncfusion` packages to their latest available.
 

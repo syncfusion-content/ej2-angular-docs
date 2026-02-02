@@ -1,101 +1,101 @@
 ---
 layout: post
-title: SyncfusionAngularAssistant MCP Server | Syncfusion
+title: Syncfusion Angular AI Coding Assistant – MCP Server | Syncfusion
 description: Learn how to configure and use SyncfusionAngularAssistant MCP server for intelligent code generation, documentation, and troubleshooting in Angular apps.
-control: Getting started with SyncfusionAngularAssistant MCP Server
+control: AI Coding Assistant
 platform: ej2-angular
 documentation: ug
-domainurl: ##DomainURL##
 ---
 
-# SyncfusionAngularAssistant MCP Server
+# Syncfusion Angular AI Coding Assistant – MCP Server
 
 ## Overview
 
-The [SyncfusionAngularAssistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's Angular component libraries. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building Angular applications with Syncfusion<sup style="font-size:70%">&reg;</sup> components.
+The [SyncfusionAngularAssistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server designed to provide intelligent, context-aware assistance for developers building Angular applications with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component libraries.
 
-### Key Benefits
+This server integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) and delivers:
 
-* Intelligent code generation for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
-* Detailed component documentation and usage examples.
-* Troubleshooting assistance for common integration challenges.
+- Intelligent code generation for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
+- Detailed component documentation and practical usage examples
+- Troubleshooting support for common integration and configuration issues
+- Unlimited usage with no request limits, component restrictions, or time caps
 
 ## Prerequisites
 
-Before using [SyncfusionAngularAssistant](https://www.npmjs.com/package/@syncfusion/angular-assistant), ensure you have:
+Ensure the following requirements are met before using SyncfusionAngularAssistant:
 
-* Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/clients) (VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
-* An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
+- Node.js version >= 18 [](https://nodejs.org/en/)
+- A compatible MCP client (examples: VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://www.syncfusion.com/code-studio/), Cursor, JetBrains IDEs)
+- An active Syncfusion<sup style="font-size:70%">&reg;</sup> license:
   - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
-  - [Free Community License](https://www.syncfusion.com/products/communitylicense)
+  - [Community License](https://www.syncfusion.com/products/communitylicense) (free for individuals and small companies)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
-* An active [API KEY](https://syncfusion.com/account/api-key)
+- A valid Syncfusion<sup style="font-size:70%">&reg;</sup> [API key](https://www.syncfusion.com/account/api-key)
 
 ## Unlimited Access
-
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers unlimited access to this MCP server. There are no restrictions on:
-
-* Number of requests
-* Components usage
-* Query caps
-* Usage duration
-
+* Number of requests		
+* Components usage		
+* Query caps		
+* Usage duration		
 This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;</sup> components to enhance their development experience without limitations.
 
-## Installation and setup
+## Installation and Setup
 
-Before you can invoke the `SyncfusionAngularAssistant` MCP server, you need to configure your MCP client with these core settings. The **Generic MCP Server Settings** shown below are identical across all clients:
+Configure your MCP client to use the SyncfusionAngularAssistant server with these standard settings:
 
 ### Generic MCP Server Settings
 
 - **npm package name**: `@syncfusion/angular-assistant`
 - **Type**: stdio (standard input/output transport)
-- **Command**: npx
-- **Arguments**: -y
-- **Server name**: SyncfusionAngularAssistant
+- **Command**: `npx`
+- **Arguments**: `-y`
+- **Server name**: `SyncfusionAngularAssistant` (or client-specific alias, e.g., `angular-mcp`)
 
-#### API Key Configuration
+### API Key Configuration
 
-Login to your [Syncfusion account](http://syncfusion.com/account/) and generate an API Key from the [API Key page](https://www.syncfusion.com/account/api-key). Replace `YOUR_API_KEY_FILE_PATH` or `YOUR_API_KEY` in the configuration files with your generated key.
+Generate your API key from the [Syncfusion API Key page](https://www.syncfusion.com/account/api-key).
 
-There are two options:
+Choose one of the following secure methods:
 
-* **Using an API Key File (Recommended)**
+**API Key File**
 
-  Store your API key in a separate file and reference its path in the `Syncfusion_API_Key_Path` environment parameter. This approach is more secure as you don't expose the key directly in configuration files.
+Store the key in a plain-text file (`.txt` or `.key` extension) and reference its absolute path.
 
-  **Supported file formats:** `.txt` or `.key` file
+```json
+"env": {
+  "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH" // Example: "D:\\syncfusion-key.txt"
+}
+```
 
-  ```json
-  "env": {
-    "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH" // "D:\\syncfusion-key.txt" (or) "D:\\syncfusion-key.key"
-  }
-  ```
+**Direct API Key**
 
-* **Direct API Key**
+Paste the key directly (less secure; avoid committing to version control).
 
-  Paste your `Syncfusion_API_Key` directly in the configuration file's environment parameter.
+```json
+"env": {
+  "Syncfusion_API_Key": "YOUR_API_KEY"
+}
+```
 
-  ```json
-  "env": {
-    "Syncfusion_API_Key": "YOUR_API_KEY"
-  }
-  ```
+### Client-Specific Configuration
 
-Below are setup instructions for popular MCP clients:
+#### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
 
-### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
+1. Open **MCP Marketplace** → **Custom Servers** tab.
+2. Set:
+   - Server Name: `angular-mcp`
+   - Server Type: npm package
+   - NPM Package: `@syncfusion/angular-assistant`
+3. Add environment variable: `Syncfusion_API_Key` = your API key
+4. Click **Install Server**
+5. Verify the server appears in **User Installed Servers** and is added to `config.yaml`.
 
-* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
-* Enter the Server Name as `angular-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/angular-assistant`.
-* Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
-* Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
-* The server is now ready for use in Code Studio. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
+For details, see [Code Studio MCP Custom Servers documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
 
-### VS Code (GitHub Copilot MCP)
+#### Visual Studio Code (GitHub Copilot)
 
-* To configure an MCP server for a specific workspace, you can create a `.vscode/mcp.json` file in your workspace folder.
+Create or edit `.vscode/mcp.json` in your workspace:
 
 ```json
 {
@@ -108,24 +108,21 @@ Below are setup instructions for popular MCP clients:
         "@syncfusion/angular-assistant@latest"
       ],
       "env": {
-        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH",
-        // or
-        "Syncfusion_API_Key": "YOUR_API_KEY"
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or "Syncfusion_API_Key": "YOUR_API_KEY"
       }
     }
   }
 }
 ```
 
-* After updating the configuration in mcp.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionAngularAssistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) server directly from the settings interface without additional commands.
+After saving, select **Start** in the configuration interface. Confirm activation with the message `SyncfusionAngularAssistant is running...` in the output panel.
 
-* Confirm the server is active by checking for a message like: `SyncfusionAngularAssistant is running...` in the output.
-
-* For additional guidance, refer to the [VS Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
+See also: [VS Code MCP Servers documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
 
 ### Cursor
 
-To configure an MCP server for a specific workspace, you can create a `.cursor/mcp.json` file in your workspace folder.
+Create or edit `.cursor/mcp.json` in your workspace:
 
 ```json
 {
@@ -138,102 +135,94 @@ To configure an MCP server for a specific workspace, you can create a `.cursor/m
         "@syncfusion/angular-assistant@latest"
       ],
       "env": {
-       "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH",
-        // or
-       "Syncfusion_API_Key": "YOUR_API_KEY"
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or "Syncfusion_API_Key": "YOUR_API_KEY"
       }
     }
   }
 }
 ```
 
-For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+See: [Cursor MCP documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
 
 ### JetBrains IDEs
 
-* Go to Settings -> Tools -> AI Assistant -> Model Context Protocol (MCP).
-* Click + Add to add a new MCP server configuration.
-* In the New MCP Server dialog, switch the dropdown as `As JSON` and add the following config:
+1. Go to **Settings** → **Tools** → **AI Assistant** → **Model Context Protocol (MCP)**
+2. Click **+** → switch to **As JSON**
+3. Add the following configuration:
 
 ```json
 {
   "mcpServers": {
     "syncfusion-angular-assistant": {
-      "command": "npx.cmd",
+      "command": "npx",           // Use "npx.cmd" on Windows if npx is not recognized
       "args": [
         "-y",
         "@syncfusion/angular-assistant@latest"
       ],
       "env": {
-       "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH",
-        // or
-       "Syncfusion_API_Key": "YOUR_API_KEY"
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or "Syncfusion_API_Key": "YOUR_API_KEY"
       }
     }
   }
 }
 ```
 
-* Click OK and Apply.
- 
-For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
+4. Click **OK** → **Apply**
 
-> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
+See: [JetBrains MCP documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
 ## Usage
 
-To activate the SyncfusionAngularAssistant MCP server:
+Activate the assistant by starting your prompt with one of these invocation patterns (client-dependent):
 
-1. Start your prompt with one of the following:
-    * 'SyncfusionAngularAssistant'
-    * '/syncfusion-angular-assistant'
-    * '/syncfusion-angular'
-    * '@syncfusion-angular'
-    * '@ask_syncfusion_angular'
-    * 'ej2-angular'
+- `SyncfusionAngularAssistant`
+- `/syncfusion-angular-assistant`
+- `/syncfusion-angular`
+- `@syncfusion-angular`
+- `@ask_syncfusion_angular`
+- `ej2-angular`
 
-   In VS Code, use `#SyncfusionAngularAssistant` for direct invocation.
+In VS Code, `#SyncfusionAngularAssistant` also works for direct invocation.
 
-2. Grant permission for the server to run (for the session, workspace, or always).
-3. For best results, start a new chat for each new topic to maintain clean context.
+1. Grant permission to run the server (per session, workspace, or always).
+2. For optimal results, start a new chat when switching topics or components to preserve clean context.
 
-### Mode availability
+### Supported Modes
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Servers provide full access to all AI interaction modes — Ask/Chat, Edit, and Agent — across supported MCP clients.
+Full support for Ask/Chat, Edit, and Agent modes in compatible MCP clients.
 
-### Best Practices for Effective Usage
+### Best Practices
 
-1. `Be specific`: Mention both platform and component (e.g., "How do I create a Syncfusion Angular Grid with paging and filtering?").
-2. `Provide context`: Include details about your use case for more targeted solutions.
-3. `Use descriptive queries`: Avoid vague questions that lack necessary context.
-4. `Start fresh for new topics`: Begin a new chat session when switching components or topics.
+- Be specific: Include the component and desired features (e.g., "Create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid with paging, sorting, filtering, and Excel export").
+- Provide context: Mention your data source, styling needs, or errors encountered.
+- Use clear, descriptive queries to receive precise, production-ready suggestions.
 
 ### Example Queries
 
-Here are some effective ways to use [SyncfusionAngularAssistant](https://www.npmjs.com/package/@syncfusion/angular-assistant):
-
- * "Create a Syncfusion Angular Grid component with paging, sorting and filtering."
- * "How do I implement data binding with Syncfusion Angular scheduler?"
- * "Show me how to create a dashboard with multiple Syncfusion components."
+- "Create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component with paging, sorting, and filtering."
+- "Implement remote data binding with OData in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Scheduler."
+- "Build a responsive dashboard layout using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Card, Chart, and Grid components."
 
 ## Troubleshooting
 
-If you encounter issues:
-
- * Verify your API key is correctly configured.
- * Ensure the MCP server is enabled in your client's tools selection.
- * Check that you're using a compatible MCP client version.
- * Try restarting your development environment.
+- Confirm the API key is valid and correctly referenced.
+- Verify the MCP server is selected/enabled in the client’s AI tools or assistants panel.
+- Ensure the client supports the latest MCP protocol version.
+- Restart the IDE or workspace if the server fails to start.
+- Test with a simple query: "List all available Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components."
 
 ## Support
 
-Product support is available through the following mediums.
+- [Create a support ticket](https://support.syncfusion.com/support/tickets/create) – 24-hour guaranteed response, unlimited tickets, holiday support
+- [Community forums](https://www.syncfusion.com/forums/essential-js2)
+- [Feature requests & bug reports](https://www.syncfusion.com/feedback/javascript)
+- Live chat (available on syncfusion.com)
 
-* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours \| Unlimited tickets \| Holiday support
-* [Community forum](https://www.syncfusion.com/forums/essential-js2)
-* [Request feature or report bug](https://www.syncfusion.com/feedback/javascript)
-* Live chat
+## See Also
 
-## See also
-
-* [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant – MCP Server](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/mcp-server)
+- [Model Context Protocol Introduction](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> API Key Management](https://www.syncfusion.com/account/api-key)

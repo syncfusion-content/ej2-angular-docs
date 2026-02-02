@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Universal Features and Frameworks | Syncfusion
-description: Learn here all about Angular universal in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn how to enable Server-Side Rendering (SSR) in Angular applications using Angular Universal with Syncfusion Essential JS 2 components.
 platform: ej2-angular
 control: Angular universal 
 documentation: ug
@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 Angular is a widely-used client-side web development framework, primarily running on the client-side by default. However, many web applications require server-side capabilities for enhanced SEO and performance. Angular Universal bridges this gap by enabling server-side rendering (SSR) for Angular applications, which can significantly improve SEO, load times, and accessibility when integrated with tools like ASP.NET Web Forms and ASP.NET MVC.
 
-This guide explains how to use Angular Universal in conjunction with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to create efficient and performant applications.
+This guide explains how to use Angular Universal with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
 
-## What is Angular Universal
+## What is Angular Universal?
 
-[Angular Universal](https://angular.dev/guide/ssr) is a technology for server-side rendering of Angular applications. It pre-renders HTML on the server and sends it to the client, allowing faster time-to-interactive, enhanced SEO, and improved accessibility—especially helpful for users on slower networks or devices.
+[Angular Universal](https://angular.dev/guide/ssr) technology enables Angular applications to render on the server. By pre-rendering HTML on the server and sending it to the client, it improves time-to-interactive and performance, especially on slower networks.
 
 ## Why use Server-side Rendering
 
@@ -28,11 +28,11 @@ Server-side rendering (SSR) in Angular Universal enhances application performanc
 
 ## Creating an Angular Universal Application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support SSR in Angular Universal applications. Follow these steps to integrate SSR with Syncfusion<sup style="font-size:70%">&reg;</sup> components:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components support SSR. Follow these steps to set up an SSR-enabled Angular application with Syncfusion components.
 
 ## Step-by-Step Setup
 
-## 1️.Create a New Angular SSR-Enabled App
+### 1. Create a New Angular SSR-Enabled App
 
 Use Angular CLI to create a new project and enable SSR support during setup:
 
@@ -42,6 +42,7 @@ cd syncfusion-ssr-app
 ```
 You'll see the following prompt during setup:
 
+When prompted:
 ```bash
 ✔ Would you like to add Angular Universal (SSR) with Express? (y/N) › y
 ```
@@ -60,9 +61,10 @@ Once SSR is integrated, install Syncfusion<sup style="font-size:70%">&reg;</sup>
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-buttons
 ```
-Add the necessary Syncfusion styles in `/src/styles.css`:
 
-```bash
+Add Syncfusion styles to `src/styles.css`:
+
+```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
@@ -75,7 +77,7 @@ Add the necessary Syncfusion styles in `/src/styles.css`:
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
 
-## 3.Add Angular Universal (SSR)
+### 3. Add Angular Universal (SSR)
 
 Incorporate SSR into your application with the following command:
 
@@ -127,10 +129,9 @@ export class AppComponent {
     },
    ];
 }
-
 ```
 
-### Enable hydration
+### Enable Hydration
 
 Client hydration ensures that the SSR application becomes interactive on the client side. To enable hydration, import the [`provideClientHydration`](https://angular.dev/guide/hydration) function and add it to the `providers` array in `app.module.ts`:
 
@@ -171,7 +172,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [provideClientHydration()],//added hydration
+  providers: [provideClientHydration()], // Enable hydration
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -195,7 +196,7 @@ export class AppRoutingModule { }
 
 ```
 
-## 4. **Build and Serve the Application**: 
+### 4. Build and Serve the Application
 
 Use the following command to build and serve your application with SSR capabilities:
 
@@ -205,7 +206,7 @@ npm run dev:ssr
 ```
 > [View the Angular Universal sample on GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-universal)
 
-### Common Issue:
+### Common Issues
 
 Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 3.18 MB with a total of 3.66 MB.
 Error: bundle initial exceeded maximum budget. Budget 1.00 MB was not met by 2.66 MB with a total of 3.66 MB.
@@ -213,7 +214,7 @@ Error: bundle initial exceeded maximum budget. Budget 1.00 MB was not met by 2.6
 **Solution:**  
 Adjust the `budgets` property under `"projects" > "your-app-name" > "architect" > "build" > "configurations" > "production"` in `angular.json`:
 
-```
+```json
 "budgets": [
   {
     "type": "initial",
@@ -223,7 +224,7 @@ Adjust the `budgets` property under `"projects" > "your-app-name" > "architect" 
 ]
 ```
 
-### Folder Structure (after SSR setup)
+### Folder Structure (After SSR Setup)
 
 ```
 src/
@@ -237,8 +238,8 @@ angular.json             # SSR targets added here
 
 > [View the Angular Universal sample on GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-universal)
 
-## See also
+## See Also
 
-* [Angular Universal](https://github.com/angular/universal)
-* [Getting Started ASP.NET Core with Angular](../getting-started/aspnet-core)
-* [Getting Started ASP.NET MVC with Angular](../getting-started/aspnet-mvc)
+* [Angular Universal Documentation](https://github.com/angular/universal)
+* [Getting Started with ASP.NET Core and Angular](../getting-started/aspnet-core)
+* [Getting Started with ASP.NET MVC and Angular](../getting-started/aspnet-mvc)
