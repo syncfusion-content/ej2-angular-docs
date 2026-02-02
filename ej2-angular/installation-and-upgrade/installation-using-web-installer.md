@@ -14,8 +14,7 @@ You can refer to the [Download](../installation-and-upgrade/download) section to
 
 ## Overview
 
-For the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> products you have chosen. You can get the most recent version of Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads).
-
+For the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer reduces the need to download a large installer package. You can download and run the online installer (which is smaller in size), and it will download and install the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> products you select. You can download the latest version of the Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads).
 The frameworks listed below are supported in this installer.
 
 * JavaScript
@@ -126,8 +125,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Inst
 
 ### Option 2: Uninstall the JavaScript–EJ2 from Windows Control Panel
 
-You can uninstall all the installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall JavaScript – EJ2 alone by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript – EJ2 {version}** entry (element 2 in the below screenshot) from the Windows control panel.
-
+You can uninstall all installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the screenshot below) from the Windows Control Panel. Alternatively, you can uninstall only JavaScript – EJ2 by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript – EJ2 {version}** entry (element 2 in the screenshot below).
 ![license download](images/u3.png)
 
 >Note: If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
@@ -162,8 +160,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
 6. After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-7. The login wizard will appear. You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
-
+7. The login wizard appears. Enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by selecting **Create an Account**. If you have forgotten your password, select **Forgot Password** to reset it. Click **Install**.
     ![license download](images/u10.png)
 
     >Important: The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
@@ -172,8 +169,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
     ![license download](images/u11.png)
 
-9. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
-
+9. When the installation is complete, the **Summary** wizard appears. Here you can see the list of products that were installed/uninstalled successfully and any that failed. To close the Summary wizard, click **Finish**.
     ![license download](images/u12.png)
 
     * To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control Panel**

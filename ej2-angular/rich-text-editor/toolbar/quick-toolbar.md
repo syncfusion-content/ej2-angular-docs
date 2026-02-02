@@ -16,7 +16,7 @@ The Rich Text Editor has quick toolbars that act as context-menus, appearing whe
 
 ## Image quick toolbar
 
-Customize the image quick toolbar using the `image` property in [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#image). The Rich Text Editor provides essential tools such as 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension' allowing seamless image management and editing directly within the content.
+Customize the image quick toolbar using the `image` property in [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#image). The Rich Text Editor provides essential tools such as "Replace", "Align", "Caption", "Remove", "InsertLink", "Display", "AltText", and "Dimension", "OpenImageLink", "EditImageLink", "RemoveImageLink", allowing seamless image management and editing directly within the content.
 
 By configuring these options in the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/) property, you can enhance the editor’s functionality, ensuring a user-friendly experience for efficiently handling image elements.
 
@@ -77,6 +77,8 @@ The following example demonstrates how to customize the table quick toolbar usin
 Customize the quick toolbar items for audio elements using the `audio` property in the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#audio).The Rich Text Editor provides essential tools such as "AudioReplace", "Remove", and "AudioLayoutOption", allowing seamless management and editing of audio content.
 
 By configuring these options in the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#audio) property, you can enhance the editor's capabilities, ensuring a user-friendly experience for handling audio elements efficiently.
+
+The [showOnRightClick](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettingsmodel#showonrightclick) property in [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel) determines whether the quick toolbar appears when the user right-clicks on the selected audio element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

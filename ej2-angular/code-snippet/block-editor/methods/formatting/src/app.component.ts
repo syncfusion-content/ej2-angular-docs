@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component, ViewChild } from '@angular/core';
 import { BlockEditorModule, BlockEditorComponent  } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType, CommandName} from "@syncfusion/ej2-blockeditor";
 
 @Component({
-    imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html'

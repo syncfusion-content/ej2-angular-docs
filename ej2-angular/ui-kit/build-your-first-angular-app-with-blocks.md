@@ -109,7 +109,7 @@ You can refer to the consolidated screenshot below for more details.
 
 ### Bootstrap 5.3 Configuration
 
-For Bootstrap 5.3 theme, follow these steps:
+For the Bootstrap 5.3 theme, follow these steps:
 
 1. In **src/index.html**, set the `data-bs-theme` attribute for light or dark mode:
 
@@ -176,7 +176,7 @@ With the desired theme configured, you can now copy and add sign-in block code t
 
 ### Steps to explore and copy block code snippets from the GitHub source
 
-1. On [downloading](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening the GitHub source in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
+1. After downloading the [GitHub source](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening it in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
 
     ![Downloaded GitHub app in Visual Studio Code](images/downloaded-github-app-in-visual-studio-code.png)
 

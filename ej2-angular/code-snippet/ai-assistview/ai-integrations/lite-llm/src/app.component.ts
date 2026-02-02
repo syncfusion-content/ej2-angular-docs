@@ -71,16 +71,13 @@ export class AppComponent {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        ...(this.LITELLM_API_KEY ? { Authorization: `Bearer ${this.LITELLM_API_KEY}` } : {}),
-      },
+        ...(this.LITELLM_API_KEY ? { Authorization: `Bearer ${this.LITELLM_API_KEY}` } : {}) },
       body: JSON.stringify({
         model: 'openai/gpt-4o-mini', // must match model_name in config.yaml
         messages: [{ role: 'user', content: args.prompt }],
         temperature: 0.7,
         max_tokens: 300,
-        stream: false,
-      }),
-    })
+        stream: false }) })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();

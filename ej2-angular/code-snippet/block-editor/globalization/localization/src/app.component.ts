@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { L10n } from '@syncfusion/ej2-base';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
 
 @Component({
-    imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->

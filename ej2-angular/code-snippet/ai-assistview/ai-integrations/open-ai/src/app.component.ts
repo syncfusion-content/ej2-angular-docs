@@ -91,8 +91,7 @@ export class AppComponent {
         max_tokens: 150, // You can adjust this value
         temperature: 0.7, // As per your original code
         stream: false
-      }),
-    })
+      }) })
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

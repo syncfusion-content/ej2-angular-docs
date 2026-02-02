@@ -8,83 +8,77 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics
+# Angular Schematics
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components now supports the [schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
-The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI [`add`](https://github.com/angular/angular-cli) command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support Angular schematics, allowing seamless installation and automatic configuration using the Angular CLI `ng add` command. This approach handles package installation, module imports, theme registration, and build configuration with minimal manual effort.
 
-## Creating Angular application
+## Prerequisites
 
-To kickstart your Angular application, you first need to install the [Angular CLI](https://github.com/angular/angular-cli), ensuring it is accessible globally. Execute the following command in your terminal:
-
-```
+- Install the Angular CLI globally (if not already installed):
+```bash
 npm install -g @angular/cli
 ```
 
-Once the CLI is installed, create a new Angular application by entering:
-
-```
+- Create a new Angular application (if starting fresh):
+```bash
 ng new my-app
+cd my-app
 ```
 
-This command sets up a new project by downloading all necessary files and initializing the NPM components.
+## Installing a Syncfusion<sup style="font-size:70%">&reg;</sup> Package
 
-## Syncfusion<sup style="font-size:70%">&reg;</sup> package initialization
+Use the `ng add` command to install any Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package:
 
-All the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages can be installed using the following command in the CLI application.
-
-```
-ng add 'package-name'
-```
-
-For instance, to include the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
-
-```
+```bash
 ng add @syncfusion/ej2-angular-grids
 ```
 
-This command will execute the following configurations in your Angular application:
- 
- * Adds `@syncfusion/ej2-angular-grids` package and its peer dependencies to your `package.json` file.
- * Imports the `GridModule` in your application module `app.module.ts`.
- * Registers the Syncfusion<sup style="font-size:70%">&reg;</sup> UI default theme (material) in the `angular.json` file.
+This command performs the following automatically:
+- Installs the package and required peer dependencies in `package.json`
+- Imports the corresponding module (e.g., `GridModule`) in `app.module.ts` (or registers standalone components in `app.config.ts` for standalone projects)
+- Adds the default Material theme CSS to `angular.json` styles array
+- Applies necessary build and architect configurations
+
+After running the command, the component is ready to use in your application without further setup.
 
 ## Adding specific modules from multiple component package
 
-The EJ2 Angular Schematics provide the flexibility to include specific modules from a component package directly into your `app.module.ts` file. This can be achieved by specifying the modules as parameters:
+Some Syncfusion<sup style="font-size:70%">&reg;</sup> packages contain multiple components/modules. Specify which modules to include using the `--module` flag (comma-separated, no spaces):
 
-```
-ng add @syncfusion/<ej2-angular-package-name> --module=module_1,module_2,module_3
-```
-
-> NOTE: While passing module names, there should be no space between them. If any, it will be ignored.
-
-For example:
-
-```
-ng add @syncfusion/ej2-angular-popups -–module=tooltip
+```bash
+ng add @syncfusion/ej2-angular-popups --module=tooltip
 ```
 
-```
-ng add @syncfusion/ej2-angular-inputs -–module=slider,colorpicker,maskedtextbox
-```
-
-```
-ng add @syncfusion/ej2-angular-navigation -–module=treeview,tab,contextmenu
+```bash
+ng add @syncfusion/ej2-angular-inputs --module=slider,colorpicker,maskedtextbox
 ```
 
-## Invalid and misspelled module names
-
-When you pass valid and invalid module names, the schematics will add all the valid modules and throw an error for the invalid modules.
-
-For example:
-
-```
-ng add @syncfusion/ej2-angular-popups -–module=tooltip,treeview
+```bash
+ng add @syncfusion/ej2-angular-navigation --module=treeview,tab,contextmenu
 ```
 
-Here, the `tooltip` is a valid module, but the `treeview` is invalid since it does not belong to `@syncfusion/ej2-angular-popups` package. Schematics add only the `tooltip` but it will throw the following error message for `treeview`. It is also applicable for a misspelt module name.
+> **Note**: Module names must be exact, case-sensitive, and belong to the specified package. No spaces are allowed between module names.
 
+## Handling Invalid or Misspelled Module Names
+
+If one or more module names are invalid or misspelled, the schematic installs the valid ones and displays an error for the invalid entries.
+
+Example:
+
+```bash
+ng add @syncfusion/ej2-angular-popups --module=tooltip,treeview
 ```
-The treeview module is not a part of the package, @syncfusion/ej2-angular-popups. The available modules are Tooltip, Dialog.
-```
+
+Result:
+- `tooltip` is added successfully
+- Error message displayed:
+The treeview module is not a part of the package @syncfusion/ej2-angular-popups. The available modules are Tooltip, Dialog.
+
+## Additional Options and Best Practices
+
+- **Theme Selection**: Some schematics support `--theme` or prompt for theme choice (e.g., material, bootstrap5, tailwind). Check component-specific docs for availability.
+- **Standalone Projects**: In Angular 17+ standalone applications, schematics register components/providers in `app.config.ts`.
+- **Re-running Schematics**: Safe to run multiple times; updates existing configurations without duplication.
+- **Next Steps**: After installation, import and use the component in your template (e.g., `<ejs-grid>...</ejs-grid>`).
+
+For detailed options and troubleshooting, refer to the individual component documentation or the [official Angular schematics guide](https://angular.dev/tools/cli/schematics).

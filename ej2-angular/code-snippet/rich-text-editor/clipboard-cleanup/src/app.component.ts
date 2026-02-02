@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ClipBoardCleanupService, ClipboardWriteEventArgs } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ClipboardCleanupService, ClipboardWriteEventArgs } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [
@@ -8,7 +8,7 @@ import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarSe
     standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='editor' (beforeClipboardWrite)='onBeforeClipboardWrite($event)'></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ClipBoardCleanupService]
+    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ClipboardCleanupService]
 })
 
 export class AppComponent {

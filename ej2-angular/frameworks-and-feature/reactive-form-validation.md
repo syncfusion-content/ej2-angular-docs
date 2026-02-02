@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reactive form validation in Angular Common control | Syncfusion
-description: Learn here all about Reactive form validation in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+description: Learn about reactive form validation using Syncfusion Angular input components and built-in validators with Syncfusion Essential JS 2.
 platform: ej2-angular
 control: common
 documentation: ug
@@ -16,8 +16,8 @@ Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular UI Components provide
 
 Ensure the following are installed:
 
-- Node.js version 18 or later
-- Angular CLI version 17 or later
+- Node.js version 18 or later  
+- Angular CLI version 17 or later  
 - TypeScript version 5.5 or later
 
 ## Create an Angular Application
@@ -40,7 +40,7 @@ cd syncfusion-angular-validators
 Install the Syncfusion<sup style="font-size:70%">&reg;</sup> inputs package (version 25.2.7, compatible with Angular 19):
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs@25.2.7 --save
+npm install @syncfusion/ej2-angular-inputs --save
 ```
 
 ## Supported Validators
@@ -83,18 +83,19 @@ The following validators are available:
 
 ### Step 1: Set Up the Component
 
-Update `src/app/app.component.ts` to create a standalone component with a reactive form using Syncfusion<sup style="font-size:70%">&reg;</sup> validators:
+Update `src/app/app.component.ts` to create a standalone component with a reactive form using Syncfusion validators:
 
 ```typescript
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, FormGroup, FormControl, FormValidators } from '@syncfusion/ej2-angular-inputs';
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
+import { FormValidators, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, TextBoxModule],
+  imports: [CommonModule, ReactiveFormsModule, TextBoxModule, ButtonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -123,7 +124,7 @@ export class AppComponent {
 
 ### Step 2: Create the Template
 
-Update `src/app/app.component.html` to bind the form controls to Syncfusion<sup style="font-size:70%">&reg;</sup> `ejs-textbox` components and display validation errors:
+Update `src/app/app.component.html` to bind form controls to Syncfusion `ejs-textbox` components and show validation errors:
 
 ```html
 <div class="container">
@@ -169,7 +170,7 @@ Update `src/app/app.component.html` to bind the form controls to Syncfusion<sup 
       </div>
     </div>
 
-    <button type="submit" ejs-button [disabled]="reactForm.invalid">Submit</button>
+    <button ejs-button type="submit" [disabled]="reactForm.invalid">Submit</button>
   </form>
 </div>
 ```
@@ -192,6 +193,7 @@ Update `src/app/app.component.css` for basic form styling:
 label {
   display: block;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 .error {
@@ -223,6 +225,6 @@ Start the application:
 npm start
 ```
 
-The browser will display the form utilizing Syncfusion<sup style="font-size:70%">&reg;</sup> validators for live validation feedback.
+The app will display the reactive form with live validation powered by Syncfusion validators.
 
 To view an interactive example using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Validation, see this [documentation sample](https://stackblitz.com/edit/angular-emxs2p?file=default.component.ts).

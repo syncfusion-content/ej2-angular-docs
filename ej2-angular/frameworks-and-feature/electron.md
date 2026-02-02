@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Electron with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Electron with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular and Electron | Syncfusion
+description: Learn how to set up an Angular application with Electron and integrate the Syncfusion Grid component using a standalone component approach.
 platform: ej2-angular
 control: Electron 
 documentation: ug
@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular and Electron
 
-This guide explains how to build a basic Angular 19 application using a standalone component structure with the Electron framework and integrate `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
+This guide explains how to build a basic Angular 19 application using a standalone component structure with the Electron framework and integrate the `Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component`.
 
 ## Prerequisites
 
-Before starting the project, ensure the following software is installed:
+Before getting started, ensure the following software is installed:
 
-* Angular version 17 or later
-* TypeScript version 5.4 or later
+* Angular version 17 or later  
+* TypeScript version 5.4 or later  
 * Electron CLI version 34.0.0 or later
 
-If the `Electron CLI` is not installed, refer to the [`Electron package`](https://www.npmjs.com/package/electron-cli) for installation instructions.
+If the `Electron CLI` is not installed, refer to the [Electron package](https://www.npmjs.com/package/electron-cli) for installation instructions.
 
 ## Set Up Angular Environment
 
@@ -32,7 +32,7 @@ Install the Electron framework with the following command:
 npm install -g electron
 ```
 
->Note: See the [getting started guide](https://electronjs.org/docs/tutorial/installation) to learn more about Electron installation.
+> Note: See the [getting started guide](https://electronjs.org/docs/tutorial/installation) to learn more about Electron installation.
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid package
 
@@ -41,14 +41,14 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm u
 To install the Grid package, execute the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-grids@ngcc --save
-(or)
-npm i @syncfusion/ej2-angular-grids@ngcc --save
+npm install @syncfusion/ej2-angular-grids --save
+# or
+npm i @syncfusion/ej2-angular-grids --save
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Component
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, update the template in the `app.component.ts` file by adding the `ejs-grid` element and binding it to the `data` variable.
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, update the template in `app.component.ts` by adding the `ejs-grid` element and binding it to the `data` variable.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -122,9 +122,9 @@ export class AppComponent {
 
 ## Adding CSS References
 
-To incorporate the styles for the Grid component, update the `style.css` with the following imports:
+To incorporate styles for the Grid component, add the following imports to `styles.css`:
 
-```typescript
+```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
@@ -163,59 +163,59 @@ app.on('ready', createWindow);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => { 
-// On macOS, it is common for applications and their menu bar to stay active until the user quits explicitly with Cmd + Q.
-if (process.platform !== 'darwin') {
-app.quit()
-}   
+  // On macOS, apps stay active until the user quits explicitly with Cmd + Q.
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }   
 });
 
 app.on('activate', () => {
-// On macOS, it is common to re-create a Window in an app when the dock icon is clicked and there are no other windows open.
-if (win === null) {
-createWindow()
-}   
-});  
+  // On macOS, recreate a window when the dock icon is clicked if no other windows are open.
+  if (win === null) {
+    createWindow();
+  }   
+});
 ```
 
 ## Update index.html
 
-In `/src/index.html`, change `<base href="/">` to `<base href="./">` to ensure Electron locates Angular files correctly.
+In `/src/index.html`, change `<base href="/">` to `<base href="./">` to ensure Electron locates the built Angular files correctly.
 
 ## Update package.json
 
-Modify `package.json` to include the following entries:
+Modify `package.json` to include the `main` entry and update scripts:
 
-```typescript
-"main": "main.js",
-"scripts": {
+```json
+{
+  "main": "main.js",
+  "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "electron-build": "ng build --configuration production",
-    "electron": "electron .",
-  },
+    "electron": "electron ."
+  }
+}
 ```
 
 ## Running the application
 
-To launch the application, execute the following command lines. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component will be rendered within the Electron framework:
+To build and launch the application, execute these commands sequentially:
 
 ```bash
 npm run electron-build
-
 npm run electron
 ```
 
->Note: For additional reference, see the [Angular sample with the Electron framework](https://github.com/SyncfusionExamples/ej2-angular-electron).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component will render within the Electron window.
+
+> Note: For a complete example, see the [Angular sample with Electron in GitHub](https://github.com/SyncfusionExamples/ej2-angular-electron).
 
 ## See Also
 
-* [Electron Browser Window](https://www.electronjs.org/docs/latest/api/browser-window)
-
-* [Angular 10 Electron Tutorial](https://www.techiediaries.com/angular-electron)
-
-* [Build Angular Desktop Apps With Electron Tutorial](https://fireship.io/lessons/desktop-apps-with-electron-and-angular)
-
+* [Electron Browser Window](https://www.electronjs.org/docs/latest/api/browser-window)  
+* [Angular 10 Electron Tutorial](https://www.techiediaries.com/angular-electron)  
+* [Build Angular Desktop Apps With Electron Tutorial](https://fireship.io/lessons/desktop-apps-with-electron-and-angular)  
 * [Getting Started with Angular CLI](../getting-started/angular-cli)

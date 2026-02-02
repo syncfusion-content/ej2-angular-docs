@@ -12,35 +12,36 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides a Visual Studio add-in for converting an existing Angular application into a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular web application.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project conversion are available from v17.3.0.9.
+> The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Project conversion support is available from v17.3.0.9.
+
 
 The steps below help you to convert the Angular application to Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application through the Visual Studio:
 
 1. Open your existing Angular application or create a new Angular application
 
-2. To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Project Conversion Wizard, follow either one of the options below:
+2. To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Project Conversion Wizard, follow one of the options below:
 
     **Option 1:**
 
-    Choose **Extensions-> Syncfusion-> Essential Studio for ASP.NET Core ->Convert Project…** in **Visual Studio** menu.
+    Choose **Extensions → Syncfusion → Essential Studio for ASP.NET Core → Convert Project…** from the Visual Studio menu.
 
-    ![convert project](images/convert-angular-menu.png)
+    ![convert project](../images/convert-angular-menu.png)
 
-    > In Visual Studio 2017, you can see the **Syncfusion** menu directly in the Visual Studio menu
+    > In Visual Studio 2017, the **Syncfusion** menu may appear directly in the Visual Studio menu.
 
     **Option 2:**
 
-    Right-click on the **Angular Application** from the Solution Explorer and select the **Syncfusion Web** and choose the **Convert to Syncfusion Angular application...**
+    Right-click the Angular application in Solution Explorer, select **Syncfusion Web**, and choose **Convert to Syncfusion Angular application...**
 
-    ![convert to syncfusion](images/Convert-angular-context.png)
+    ![convert to syncfusion](../images/Convert-angular-context.png)
 
 3. The **Syncfusion Angular Project Conversion** window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular version, Assets from, and Themes to convert the application.
 
-    ![project-conversion-wizard](images/angular-conversion-window.PNG)
+    ![project-conversion-wizard](../images/angular-conversion-window.PNG)
 
     > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular versions are loaded from published Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM package versions and it requires the internet connectivity.
 
-    The following configurations are used in the Project conversion wizard.
+    The following configurations are available in the Project Conversion Wizard:
 
     **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to Angular Project, from either NPM, CDN, or Installed Location.
 
@@ -52,10 +53,10 @@ The steps below help you to convert the Angular application to Syncfusion<sup st
 
 5. Once the conversion process completed, will get the success message window.
 
-    ![project-success](images/angular-convertion-confirmation.png)
+    ![project-success](../images/angular-convertion-confirmation.png)
 
-    if you enabled project backup before converting, the old project was saved in the specified backup path location, as shown below once the conversion process completed.
+    If you enabled project backup before converting, the original project is saved at the specified backup path:
 
-    ![BackupLocation](images/BackupLocation.png)
+    ![BackupLocation](../images/BackupLocation.png)
 
-6. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages with selected version, scripts and selected style are added in the application.
+6. The required Syncfusion<sup style="font-size:70%">&reg;</sup>  Angular NPM packages (with the selected versions), scripts, and styles are added to the application during conversion.

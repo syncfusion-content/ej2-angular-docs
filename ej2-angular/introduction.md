@@ -52,7 +52,7 @@ text-align: left!important;
 font-weight: bold!important;
 letter-spacing: 0.7px;
 }
-}
+
 
 </style>
 

@@ -22,13 +22,13 @@ import { SpeechToTextModule, SpeechToTextComponent, TextAreaComponent, TextAreaM
 export class AppComponent {
     @ViewChild('speechtotext') speechToText!: SpeechToTextComponent;
     @ViewChild('outputTextarea') outputTextarea!: TextAreaComponent;
-    onTranscriptChange(args: TranscriptChangedEventArgs): void {
+    public onTranscriptChange(args: TranscriptChangedEventArgs): void {
         this.outputTextarea.value = args.transcript;
     }
-    startListening(): void {
+    public startListening(): void {
         this.speechToText.startListening();
     }
-    stopListening(): void {
+    public stopListening(): void {
         this.speechToText.stopListening();
     }
  }

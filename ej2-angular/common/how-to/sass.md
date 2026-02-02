@@ -1,82 +1,111 @@
 ---
 layout: post
-title: Sass in Angular Common control | Syncfusion
-description: Learn here all about Sass in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: How to use SCSS with Syncfusion Angular components | Syncfusion
+description: Learn how to use Sass (SCSS) in your Angular CLI project to customize Syncfusion Essential JS 2 Angular components.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to use SCSS in Angular CLI
+# Customizing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components with SCSS
 
-Sass (SCSS) is a powerful CSS pre-processor that significantly enhances your styling capabilities with features like variables, nested rules, and functions. This guide will walk you through integrating SCSS into Angular CLI for customizing the styles of your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
+Sass (SCSS) enhances styling with variables, nesting, mixins, and functions, making it ideal for customizing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes.
 
-## SASS variables location
+Syncfusion<sup style="font-size:70%">&reg;</sup> components ship with SCSS source files containing customizable variables for colors. You can override these variables to create branded or application-specific themes without modifying source CSS.
 
-SASS variables corresponding to Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are located at:
+## Prerequisites
 
-`node_modules/@syncfusion/package-name/styles/themename.scss`
+- Angular CLI project
+- Syncfusion Angular package installed (e.g., `@syncfusion/ej2-angular-grids`)
+- SCSS style format enabled (`ng new my-app --style=scss` or update `angular.json`)
 
-For example, to access SASS variables for the Grid component, use:
+## SCSS Variables Location
 
-`node_modules/@syncfusion/ej2-angular-grids/styles/material.scss`
-
-Syncfusion provides multiple built-in themes including Material, Bootstrap, Fabric, and Highcontrast. You can choose the appropriate theme file by replacing `material.scss` with your preferred theme name.
-
-## Initialization of SCSS variables
-
-To incorporate SCSS variables into your project, import the required component styles into the `src/styles.scss` file:
-
-
-```typescript
-@import "ej2-grids/styles/material.scss"
-```
-
-## Configuring Node-Sass in Angular CLI json
-
-To avoid SCSS compilation issues and to map the SCSS file path, you need to add the `stylePreprocessorOptions` to the .`angular-cli.json` file. You should add this option in two places under the apps object,
-
-1. angular-cli.json -> {}build -> {}options
-2. angular-cli.json -> {}test -> {}options
-
-This setup allows global path resolution for SCSS files in your Angular application:
-
-```typescript
-"stylePreprocessorOptions": {
-    "includePaths": [
-      "node_modules/@syncfusion"
-    ]
-},
-```
-
-A sample Angular project demonstrating SCSS compilation with Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component is available on [GitHub](https://github.com/SyncfusionExamples/ej2-angular-scss).
-
-## Overriding styles
-
-To customize Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component styles, override default SASS variable values as illustrated below:
+Component-specific SCSS files with variables are located in:
 
 ```
-
-// SASS Variable override
-$accent: black;
-$primary: rgb(0, 255, 157);
-
-// syncfusion styles
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.scss';
-
+node_modules/@syncfusion/ej2-package-name/styles/{theme}.scss
 ```
 
-## Angular-CLI Version 8 With SASS
+Examples:
+- Grid: `node_modules/@syncfusion/ej2-grids/styles/material.scss`
+- Buttons/Base: `node_modules/@syncfusion/ej2-buttons/styles/material.scss`
+- Base definitions (shared): `node_modules/@syncfusion/ej2-base/styles/definition/material.scss`
 
-In version 8, the Angular Team moved away from `node-sass` in favor of `sass`. However, you can still use `node-sass` manually by running the following command:
+Supported built-in themes include: `material`, `bootstrap5`, `tailwind`, `fluent`, `highcontrast`, `fabric`, etc. Newer themes (Material 3, Bootstrap 5.3, Tailwind3, Fluent2) also support CSS variables for easier runtime switching.
 
-```bash
-npm install node-sass --save-dev
+## Modern Setup (Angular 6+): angular.json & Dart Sass
+
+Since Angular 6, configuration uses `angular.json` (not `.angular-cli.json`). Dart Sass is the default preprocessor.
+
+1. **Enable global SCSS path resolution** (optional but recommended for cleaner imports):
+
+   In `angular.json`, under `projects > [your-project] > architect > build > options` and `test > options`:
+
+   ```json
+   "stylePreprocessorOptions": {
+     "includePaths": [
+       "node_modules/@syncfusion"
+     ]
+   }
+   ```
+
+   This allows short imports like `@import "ej2-base/styles/definition/material";`.
+
+2. **Import Syncfusion styles in global `src/styles.scss`**:
+
+   ```scss
+   // Import base definitions first (required for shared variables)
+   @import "ej2-base/styles/definition/material";
+
+   // Override variables before component imports
+   $accent: #e91e63;           // Example: custom pink accent
+   $primary: #4caf50;          // Example: custom green primary
+
+   // Then import the component theme
+   @import "ej2-grids/styles/material";
+   @import "ej2-buttons/styles/material";
+   // Add other components as needed
+   ```
+
+   > **Important**: Override variables **before** importing the component SCSS files. Many Syncfusion variables use `!default`, so redefining them beforehand takes precedence.
+
+## Alternative: Using @use (Dart Sass Module System)
+
+For better scoping and modern Sass:
+
+```scss
+@use "../node_modules/@syncfusion/ej2-base/styles/definition/material" with (
+  $accent: #ff4081,
+  $primary: #00e676
+);
+
+@use "../node_modules/@syncfusion/ej2-angular-grids/styles/material";
 ```
 
-## Additional resources
+## Applying Styles in angular.json
 
-A sample Angular project demonstrating SCSS compilation with Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid component is available on [GitHub](https://github.com/SyncfusionExamples/ej2-angular-scss).
+Ensure global styles are included:
 
-By following the guidelines in this document, you can effectively use SCSS within Angular CLI to tailor the styles of your Essential<sup style="font-size:70%">&reg;</sup> JS 2 components to match your application's design requirements.
+```json
+"styles": [
+  "src/styles.scss"
+]
+```
+
+## Additional Modern Approaches
+
+- **Theme Studio** — Use the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/) to visually customize themes and export SCSS/CSS.
+- **CSS Variables** (newer themes) — Many themes expose `--color-sf-primary`, `--color-sf-secondary`, etc., which you can override in `:root` or component scope.
+  ```css
+  :root {
+    --color-sf-primary: 58, 183, 110;
+    --color-sf-secondary: 230, 214, 220;
+  }
+  ```
+
+## Sample Project
+
+A working example of SCSS customization with Syncfusion Angular Grid is available on GitHub:  
+https://github.com/SyncfusionExamples/ej2-angular-scss

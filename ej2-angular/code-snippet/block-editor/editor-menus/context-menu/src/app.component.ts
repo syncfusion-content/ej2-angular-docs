@@ -1,6 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType, ContextMenuItemModel } from "@syncfusion/ej2-blockeditor";
@@ -8,7 +5,7 @@ import { ContextMenuClosingEventArgs, ContextMenuOpeningEventArgs, ContextMenuIt
 
 
 @Component({
-    imports: [FormsModule, ReactiveFormsModule, BlockEditorModule],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html'

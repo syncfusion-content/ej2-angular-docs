@@ -23,10 +23,9 @@ Follow these steps to create a Syncfusion<sup style="font-size:70%">&reg;</sup> 
 2. To create a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular project, use one of the following options:
 
     **Option 1:**
+    Choose **Extensions → Syncfusion → Essential Studio for ASP.NET Core → Create New Syncfusion Project…** from the Visual Studio menu.
 
-      Choose the **Extension->Syncfusion-> Essential Studio for ASP.NET Core -> Create New Syncfusion Project…** in Visual Studio menu.
-
-      ![new project](images/new-project.png)
+      ![new project](../images/new-project.png)
 
       > In Visual Studio 2017, you can see the **Syncfusion** menu directly in the Visual Studio menu.
 
@@ -34,17 +33,17 @@ Follow these steps to create a Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
       Choose **File > New > Project in Visual Studio**. The Create a new project dialog opens. You can get the **Syncfusion** provided templates by filtering the Project type with Syncfusion<sup style="font-size:70%">&reg;</sup> or use the **Search option** with the key word of Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
-      ![syncfusion template](images/create-new-project.png)
+      ![syncfusion template](../images/create-new-project.png)
 
       > In Visual Studio 2017, choose **File > New > Project** and navigate to **Syncfusion > .NET Core > Syncfusion ASP.NET Core Web Application** in **Visual Studio**.
 
 3. Select the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web Application and choose the Next button.
 
-    ![syncfusion template](images/syncfusion-template.png)
+    ![syncfusion template](../images/syncfusion-template.png)
 
 4. Name the Project, choose the destination location and then click Create button. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core project configuration wizard appears.
 
-    ![project configuration](images/angular-project-wizard.png)
+    ![project configuration](../images/angular-project-wizard.png)
 
     Choose the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular template and choose required theme and asset.
 
@@ -52,4 +51,4 @@ Follow these steps to create a Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 6. The created Syncfusion<sup style="font-size:70%">&reg;</sup> Angular application configured with Syncfusion<sup style="font-size:70%">&reg;</sup>.
 
-7. The required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular NPM packages, scripts, and selected styles have been configured with the created Angular application.
+7. The required Syncfusion<sup style="font-size:70%">&reg;</sup>Angular NPM packages, scripts, and selected styles are added and configured in the created Angular application.

@@ -10,13 +10,12 @@ domainurl: ##DomainURL##
 
 # Common Installation Errors
 
-This guide addresses the most common installation errors, as well as the causes and solutions to those errors.
-
+This guide covers the most common installation errors, along with their causes and solutions.
 * Unlocking the license installer using the trial key
 * License has expired
 * Unable to find a valid license or trial
-* Unable to install because of another installation
-* Unable to install due to controlled folder access
+* Unable to install because another installation is in progress
+* Unable to install due to Controlled folder access
 
 ## Unlocking the License Installer using the Trial Key
 
@@ -64,9 +63,9 @@ This guide addresses the most common installation errors, as well as the causes 
 
 The following are possible causes of this error:
 
-* When your trial period expired
-* When you don’t have a license or an active trial
-* You are not the license holder of your license
+* Your trial period has expired.
+* You do not have a license or an active trial.
+* You are not the license holder for the license.
 * Your account administrator has not yet assigned you a license.
 
 **Suggested solution** <br />
@@ -81,8 +80,7 @@ The following are possible causes of this error:
 
 ## Unable to Install because of Another Installation
 
-**Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click cancel to end this installer or retry to attempt after currently active installation completed to install again.
-
+**Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click Cancel to end this installer, or click Retry after the current installation is complete to try again.
 ![license download](images/error5.png)
 
 **Reason** <br /> You are trying to install when another installation is already running in your machine.
@@ -90,10 +88,8 @@ The following are possible causes of this error:
 **Suggested solution** <br /> Open and kill the msiexec process in the task manager and then continue to install Syncfusion<sup style="font-size:70%">&reg;</sup>. If the problem is still present, restart the computer and try Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
 
 1. Open Windows Task Manager.
-
-2. Browse the Details tab.
-
-3. Select the msiexec.exe and click **End task**.
+2. Go to the **Details** tab.
+3. Select **msiexec.exe**, and then click **End task**.
 
 ![license download](images/error6.png)
 
@@ -116,9 +112,9 @@ The following are possible causes of this error:
 ***Suggested solution***
 
 **Suggestion 1:** <br />
-1. We will ship our demos in the public documents folder by default.
-2. You have controlled folder access enabled on your machine, so our demos cannot be installed in the documents folder. If you need to install our demos in the Documents folder, follow the steps in this [link](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) and disable the controlled folder access.
-3. You can enable this option after the installing our Syncfusion<sup style="font-size:70%">&reg;</sup> setup.
+1. By default, we ship our demos in the Public Documents folder.
+2. If Controlled folder access is enabled on your machine, our demos cannot be installed in the Documents folder. If you need to install the demos in the Documents folder, follow the steps in this [link](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) to allow access or disable Controlled folder access.
+3. You can re-enable this option after installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup.
 
 **Suggestion 2:** <br />
 1. If you do not want to disable controlled folder access, you can install our demos in another directory.

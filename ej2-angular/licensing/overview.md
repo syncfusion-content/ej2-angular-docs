@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> introduced license key validation for Essential<sup style="font-size:70%">&reg;</sup> JS2 platforms with the 2022 Volume 1 release. This requirement ensures that a valid license key must be registered in any application using the latest JavaScript packages—whether obtained via npm, CDN, or build sources.
 
-A license key can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website. An active trial, commercial, or community license is required to obtain a license key.
+Generate a license key from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion® website. An active trial, commercial, or community license is required to obtain a license key.
 
 Before using any JavaScript controls, you must register the obtained license key in the application code. Otherwise you will get license validation error message in application as shown in below
 

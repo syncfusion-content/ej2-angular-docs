@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { UploadingEventArgs } from '@syncfusion/ej2-inputs';
 
 @Component({
-    imports: [ FormsModule, ReactiveFormsModule, AIAssistViewModule ],
+    imports: [ AIAssistViewModule ],
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the AI AssistView component

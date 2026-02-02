@@ -10,9 +10,23 @@ domainurl: ##DomainURL##
 
 # State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
+## What Is State Persistence?
 
-Below is an example demonstrating how to set the `enablePersistence` property for the Grid component:
+State persistence stores component state (such as selected rows, sorted columns, filter criteria, or scroll position) in the browser's `localStorage`. When users revisit the application or refresh the page, Syncfusion® components automatically restore their previous state, creating a seamless user experience.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key.
+
+## How State Persistence Works in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+
+When `enablePersistence` is set to `true`, the component saves its state to `localStorage` under a unique key. The key is typically formed by combining the component name and its `id` property (for example, `gridOrderGrid` or `scheduleDefault`).
+
+On component initialization, it automatically checks `localStorage` and restores the saved state if a matching key exists.
+
+## Enabling State Persistence
+
+To activate state persistence, set the `enablePersistence` property to `true` in the component declaration. This single property enables automatic save and restore behavior.
+
+The following example shows how to enable persistence in the **Grid** component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -256,11 +270,11 @@ DateTimePicker, Slider, Dropdown Tree</td>
 
 For a deeper understanding of state persistence and its application in various components, please refer to the following documentation pages for individual components:
 
-* [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence)
-* [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence)
-* [Pivot Table](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence)
-* [Gantt](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence)
-* [Kanban](https://ej2.syncfusion.com/angular/documentation/kanban/persistence)
-* [Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence)
-* [QueryBuilder](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence)
-* [Tabs](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component)
+* [Grid State Persistence](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence)
+* [TreeGrid State Persistence](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence)
+* [Pivot Table State Persistence](https://ej2.syncfusion.com/angular/documentation/pivotview/state-persistence)
+* [Gantt State Persistence](https://ej2.syncfusion.com/angular/documentation/gantt/state-persistence)
+* [Kanban Persistence](https://ej2.syncfusion.com/angular/documentation/kanban/persistence)
+* [Schedule State Persistence](https://ej2.syncfusion.com/angular/documentation/schedule/state-persistence)
+* [QueryBuilder State Persistence](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/state-persistence)
+* [Tabs State Persistence](https://ej2.syncfusion.com/angular/documentation/tab/how-to/set-state-persistence-of-the-tab-component)

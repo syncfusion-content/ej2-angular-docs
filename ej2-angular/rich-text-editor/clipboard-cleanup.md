@@ -18,23 +18,17 @@ When `enableClipboardCleanup` is set to `true`, copy and cut operations are inte
 
 > For a cleaner editing experience, `enableClipboardCleanup` is `true` by default.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/clipboard-cleanup-default/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component } from '@angular/core';
-import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
-import { ToolbarService, HtmlEditorService, QuickToolbarService, ClipboardCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
-
-@Component({
-    imports: [RichTextEditorModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ClipboardCleanupService]
-})
-
-export class AppComponent {}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/clipboard-cleanup-default/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/clipboard-cleanup-default" %}
 
 ## Customizing Copied/Cut Content
 

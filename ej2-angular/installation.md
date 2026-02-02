@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation in Angular
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components
 
-This guide provides step-by-step instructions for installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2), which extend Angular applications with a comprehensive suite of UI controls. All Syncfusion Angular components are distributed via npm, ensuring a seamless and familiar installation experience for Angular developers.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2) are modern, high-performance controls distributed as npm packages. This guide covers installing one or more components into an Angular project.
 
 ## Prerequisites
 
@@ -20,15 +20,26 @@ Before installing, ensure the following prerequisites are met:
 - **npm:** npm is included with Node.js and is required for installing Angular packages.
 - **Angular CLI:** Familiarity with Angular and the Angular CLI is recommended for efficient project setup and management.
 
-## Installing a Package
+```sh
+ng new my-syncfusion-app --style=scss --routing=false
+cd my-syncfusion-app
+```
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are available on [npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal). To add a specific component package to your Angular project, run the following command:
+> Syncfusion Angular packages are Ivy-compatible starting from version ~20.2.36 and officially support Angular 12 and above.
+
+## Installing a Specific Component Package
+
+To install a component (e.g., Grid), run:
 
 ```sh
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
-This command installs the Grid package and updates your project's `package.json` file.
+Install multiple at once:
+
+```sh
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-buttons --save
+```
 
 ## Install using `package.json`
 
@@ -56,3 +67,4 @@ This approach takes advantage of the package management capabilities of npm, ens
 > For a deeper understanding of the `package.json` file and its configuration options, see the [official npm documentation](https://docs.npmjs.com/files/package.json).
 
 By following these steps, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are integrated into your project, allowing immediate access to robust, high-performance UI elements. Syncfusion<sup style="font-size:70%">&reg;</sup> supports multiple module systems, including ES6 and UMD, ensuring broad compatibility across various Angular project setups.
+

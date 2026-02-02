@@ -77,8 +77,7 @@ export class AppComponent implements AfterViewInit {
   public isListening = false;
   public toolbarSettings: ToolbarSettingsModel = {
     items: [{ iconCss: 'e-icons e-refresh', align: 'Right' }],
-    itemClicked: this.onToolbarItemClicked.bind(this),
-  };
+    itemClicked: this.onToolbarItemClicked.bind(this) };
   public promptToolbarSettings: PromptToolbarSettingsModel = {
     itemClicked: (args: ToolbarItemClickedEventArgs) => {
       if (args.item!.iconCss === 'e-icons e-assist-edit') {
@@ -137,8 +136,7 @@ export class AppComponent implements AfterViewInit {
           messages: [{ role: 'user', content: args.prompt }],
           max_tokens: 150, // Example from JS; adjust as needed
           stream: false // Explicitly set to false as per JS example
-        }),
-      });
+        }) });
 
       if (!response.ok) {
         const errorData = await response.json();
