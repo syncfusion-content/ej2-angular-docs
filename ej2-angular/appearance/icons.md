@@ -39,7 +39,7 @@ npm install @syncfusion/ej2-icons
 **Example:**
 
 ```css
-@import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-icons/styles/material3.css";
 ```
 
 **Supported themes include:** material3, bootstrap5, fluent2, tailwind3, highcontrast, etc.
@@ -51,9 +51,9 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are also accessible
 Add the appropriate CDN link to your application's HTML head section:
 
 ```html
-<link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/material3.css" rel="stylesheet" />
 ```
-Replace `material.css` with your chosen theme (e.g., `bootstrap5.css`, `fluent2.css`).
+Replace `material3.css` with your chosen theme (e.g., `bootstrap5.css`, `fluent2.css`).
 
 > **Best Practice:** Load the main component/theme CSS before the icons CSS to ensure proper font-family inheritance.
 
@@ -89,7 +89,7 @@ Here's how to implement direct icon rendering:
 4. In `~index.html`, link the icons library CDN.
 
     ```html
-    <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material3.css" rel="stylesheet" />
     ```
 
 Complete implementation example:

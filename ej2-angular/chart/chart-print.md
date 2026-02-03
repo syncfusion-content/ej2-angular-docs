@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Print
 
-The rendered chart can be printed directly from the browser by calling the public method print.
-You can pass array of ID of elements or element to this method. By default it take element of the chart.
+The rendered chart can be printed directly from the browser by calling the public `print` method. This method accepts an array of element IDs or element references to print; by default it prints the chart element itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,13 +28,14 @@ You can pass array of ID of elements or element to this method. By default it ta
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
+Export the rendered chart to `JPEG`, `PNG`, `SVG`, or `PDF` using the chart `export` method. To export chart data into `XLSX` or `CSV`, use the Excel/CSV export options. The primary parameters for `export` are `type` (format) and `fileName` (output file name).
 
-The optional parameters for this method are,
-* `orientation` - either portrait or landscape mode during PDF export,
-* `controls` - pass collections of controls for multiple export,
-* `width` - width of chart export, and
-* `height` - height of chart export.
+Optional parameters include:
+
+- `orientation` — `portrait` or `landscape` for PDF export
+- `controls` — a collection of controls for multi-control export
+- `width` — exported width
+- `height` — exported height
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 
 ## Excel export
 
-You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The [`excelProperties`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs/#excelproperties) property in the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs/) event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
+You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The [`excelProperties`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs#excelproperties) property in the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/chart/iExportEventArgs) event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

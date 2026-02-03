@@ -88,13 +88,13 @@ Follow these steps to configure Tailwind CSS:
    - **Light mode:**
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css" rel="stylesheet" />
      ```
 
    - **Dark mode:**
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css" rel="stylesheet" />
      ```
 
 4. (Optional) To use font icons for Tailwind CSS, include:
@@ -136,13 +136,13 @@ For the Bootstrap 5.3 theme, follow these steps:
    - **Light mode:**
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css" rel="stylesheet">
+     <link href="https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css" rel="stylesheet">
      ```
 
    - **Dark mode:**
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css" rel="stylesheet" />
      ```
 
 4. (Optional) To use font icons for Bootstrap 5.3, include:

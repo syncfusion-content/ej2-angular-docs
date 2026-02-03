@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Size for Container
 
-Chart can render to its container size. You can set the size via inline or CSS as demonstrated below.
+The chart can render to its container size. Set the size via inline styles or CSS as shown below.
 
 ```
     <div style="width:650px; height:350px;">
@@ -52,7 +52,7 @@ export class AppComponent {
 
 ## Size for Chart
 
-You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/#height) properties.
+Set the chart size directly using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart#height) properties.
 
 <!-- markdownlint-disable MD036 -->
 **In Pixel**
@@ -74,8 +74,7 @@ You can set the size of chart in pixel as demonstrated below.
 
 **In Percentage**
 
-By setting value in percentage, chart gets its dimension with respect to its container. For example,
-when the height is ‘50%’, chart renders to half of the container height.
+When percentage values are used, the chart dimensions are relative to the container. For example, a height of `50%` renders the chart to half the container height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,3 +89,4 @@ when the height is ‘50%’, chart renders to half of the container height.
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs3" %}
 
 > Note:  When you do not specify the size, it takes `450px` as the height and window size as its width.
+> Note: When no size is specified, the chart defaults to a height of `450px` and uses the window width.

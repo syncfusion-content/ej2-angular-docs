@@ -37,8 +37,8 @@ export class AppComponent implements OnInit {
         };
         this.primaryXAxis = {
             stripLines:[
-            { startFromOrigin: true, start: 2, end: 5, size: 4, zIndex: 'Behind', opacity: 0.5, rotation: 90,  text: 'Good', verticalAlignment: 'Middle', horizontalAlignment: 'Middle', textStyle: { size: 15, color: 'red'}},
-            { start: 7, end: 9, verticalAlignment: 'Start', text: 'Poor',textStyle: { size: 15, color: 'red'}}
+            { startFromOrigin: true, size: 4, zIndex: 'Behind', opacity: 0.5,  text: 'Good', verticalAlignment: 'Middle', horizontalAlignment: 'Middle', rotation: 90, textStyle: { size: 15}},
+            { start: 5, end: 8, verticalAlignment: 'Start', horizontalAlignment: 'End', rotation: 45, text: 'Poor'}
         ],
             title: 'Overs'
         };

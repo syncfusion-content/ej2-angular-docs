@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Module in Angular Chart component
 
-The following value modules should be injected to extend Chart's functionality.
+The following available modules should be injected to extend the Chart's functionality.
 
 | Module | Description |
 |------|-------------|
@@ -77,4 +77,4 @@ The following value modules should be injected to extend Chart's functionality.
 | [`ExportService`](https://ej2.syncfusion.com/angular/documentation/api/chart/export)| Inject this module to use the export feature.|
 | [`MultiLevelLabelService`](https://helpej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabels)| Inject this module to use the multi level label feature.|
 
-These modules should be injected into the **modules** section of root **NgModule** or component class.
+These modules should be injected into the `modules` section of the root `NgModule` or into a standalone component that requires the feature.

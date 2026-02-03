@@ -212,9 +212,9 @@ button {
 Update `src/styles.css` with required Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
 ```
 
 ## Run the Application
