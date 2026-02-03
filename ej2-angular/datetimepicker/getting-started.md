@@ -8,9 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Datetimepicker component
+# Getting started with Angular DateTimePicker component
 
-The following section explains the steps required to create a simple DateTimePicker component and also it demonstrates the basic usage of the DateTimePicker.
+This guide demonstrates how to set up and configure the Syncfusion Angular DateTimePicker component, from initial installation through selecting dates and times with range restrictions. The DateTimePicker component allows users to select both date and time values with support for globalization, custom formats, and time zones.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+To get started quickly with Angular DateTimePicker component using CLI and Schematics, you can check this video:
+
+{% youtube "https://www.youtube.com/watch?v=I_A5xksToN0" %}
 
 ## Dependencies
 
@@ -28,9 +34,13 @@ Install the below required dependency package in order to use the `DateTimePicke
             |-- @syncfusion/ej2-buttons
 ```
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+
 ## Setup Angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+The easiest way to set up an Angular project is using the [Angular CLI](https://github.com/angular/angular-cli) tool. Follow these steps:
 
 Install the CLI application globally to your machine.
 
@@ -40,19 +50,19 @@ npm install -g @angular/cli
 
 ## Create a new application
 
+Create a new Angular application using the Angular CLI:
+
 ```bash
 ng new syncfusion-angular-datetimepicker
 ```
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
+By default, the CLI creates a CSS-based application. To use SCSS instead, pass the `--style=scss` option:
 
 ```bash
 ng new syncfusion-angular-datetimepicker --style=scss
 ```
 
-Navigate to the created project folder.
+Navigate to the created project folder:
 
 ```bash
 cd syncfusion-angular-datetimepicker
@@ -70,29 +80,21 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-calendars`](https://www.npmjs.com/package/@syncfusion/ej2-angular-calendars/v/20.2.38) package to the application.
+Use the [ng add](https://angular.dev/reference/schematics) command to automatically configure the DateTimePicker package:
+
+```bash
+ng add @syncfusion/ej2-angular-calendars
+```
+
+This command will install the package (v32.1.19), add peer dependencies, and configure the Material theme automatically.
+
+**For Manual Installation:**
 
 ```bash
 npm install @syncfusion/ej2-angular-calendars --save
 ```
 
-### Angular compatibility compiled package(ngcc)
-
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-calendars@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-calendars/v/20.2.38-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-calendars@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-calendars:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: Use @syncfusion/ej2-angular-calendars@32.1.19 for Angular 12+ (Ivy format). For legacy support, see the peer dependency requirements above.
 
 ## Adding CSS reference
 
@@ -149,7 +151,7 @@ ng serve
 The following example illustrates the output in your browser
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -165,7 +167,7 @@ The following example illustrates the output in your browser
 The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the DateTimePicker. To know more about range restriction in Angular DateTime Picker, please refer this [page](./date-time-range).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs5/src/app.component.ts %}
 {% endhighlight %}
 
