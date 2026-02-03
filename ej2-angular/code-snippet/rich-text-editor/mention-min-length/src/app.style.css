@@ -1,0 +1,11 @@
+.below-30 {
+    background-color: orangered;
+  }
+  
+  .below-80 {
+    background-color: yellow;
+  } 
+  
+  .above-80 {
+    background-color: greenyellow
+  }

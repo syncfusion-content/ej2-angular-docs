@@ -1,0 +1,72 @@
+.below-30 {
+    background-color: orangered;
+  }
+  
+  .below-80 {
+    background-color: yellow;
+  } 
+  
+  .above-80 {
+    background-color: greenyellow
+  }
+/* csslint ignore:start */
+  .box-form {
+    webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+table.box-table td {
+    padding-top: 10px;
+}
+
+table.box-table td.formtext {
+    color:#8a2be2;
+}
+.e-rte-custom-tbar-section #special_char,
+    .e-rte-custom-tbar-section .char_block {
+        display: inline-block;
+    }
+    .e-rte-custom-tbar-section .char_block.e-active {
+        /* box-shadow: inset 3px 3px 7px 0px; */
+        outline: 1.5px solid;
+    }
+
+    .e-rte-custom-tbar-section .char_block {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #DDDDDD;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+  .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-left::before {
+        content: "\e76e";
+    }
+
+    .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-right::before {
+        content: "\e726";
+    }
+
+    .e-richtexteditor textarea.e-content {
+      float: left;
+    }
+    .e-richtexteditor .e-rte-content {
+      overflow: hidden;
+    }
+    .e-rte-content .e-content.e-pre-source{
+      width: 100%;
+    }
+
+    .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+    }
+
+	.e-icon-btn .e-md-preview.e-icons::before {
+		content: '\e345';
+	}
+
+/* csslint ignore:end */
