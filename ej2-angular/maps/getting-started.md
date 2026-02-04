@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Maps component
 
-This section explains you the steps required to create a map and demonstrate the basic usage of the maps component.
+This section explains you the steps required to create a map and demonstrate the basic usage of the Maps component.
 
 You can explore some useful features in the Maps component using the following video.
 
@@ -117,7 +117,7 @@ Add the **world-map** data in the **app.component.ts** file.
 import { world_map } from './world-map';
 ```
 
-Bind the **world-map** data to the **shapeData** property of the **layer** in the Maps control.
+Bind the **world-map** data to the **shapeData** property of the **layer** in the Maps component.
 
 ```typescript
 @Component({
@@ -195,6 +195,7 @@ you need to inject its feature module using `Maps.Inject()` method.  Find the mo
 * `NavigationLineService` - Inject this provider to use navigation lines feature.
 * `SelectionService` - Inject this provider to use selection feature.
 * `ZoomService` - Inject this provider to use zooming and panning feature.
+* `PolygonService` - Inject this provider to use polygon feature.
 
 For this application we are going to use tooltip, data label and legend features of the maps.
 Now import the MapsTooltip, DataLabel and Legend modules from maps package
@@ -260,9 +261,9 @@ The following properties in layers are used for binding data source to map.
 * shapeDataPath
 * shapePropertyPath
 
-The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
+The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
 
-The [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
 
 The JSON object "electionData" is used as data source below.
 
@@ -280,9 +281,9 @@ The JSON object "electionData" is used as data source below.
 
 ## Apply Color Mapping
 
-The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel/#colorvaluepath) property in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel/).
+The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel).
 
-Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel/#colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
+Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
 
 [`app.module.ts`]
 
@@ -300,7 +301,7 @@ Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/d
 
 ## Add Title for Maps
 
-You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/titleSettingsModel/) property to the map to provide quick information to the user about the shapes rendered in the map.
+You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/titleSettingsModel) property to the map to provide quick information to the user about the shapes rendered in the map.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -316,7 +317,7 @@ You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/d
 
 ## Enable Legend
 
-You can show legend for the maps by setting true to the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) object and by injecting the `LegendService` module using `@NgModule.providers` method.
+You can show legend for the maps by setting true to the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) object and by injecting the `LegendService` module using `@NgModule.providers` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -332,7 +333,7 @@ You can show legend for the maps by setting true to the [`visible`](https://ej2.
 
 ## Add Data Label
 
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#visible) property to true in the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/) object and by injecting `DataLabelService` module using `@NgModule.providers` method.
+You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel#visible) property to true in the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel) object and by injecting `DataLabelService` module using `@NgModule.providers` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -349,7 +350,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 ## Enable Tooltip
 
 The tooltip is useful when you cannot display information by using the data labels due to space constraints.
-You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltipService` module using `@NgModule.providers` method.
+You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel#visible) property as true in [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel) object and by injecting `MapsTooltipService` module using `@NgModule.providers` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
