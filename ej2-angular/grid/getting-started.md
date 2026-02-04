@@ -22,7 +22,7 @@ To get started quickly with Angular Grid using CLI and Schematics, you can check
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](../system-requirement).
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ## SetUp the Angular application
 
@@ -32,7 +32,7 @@ A straightforward approach to beginning with Angular is to create a new applicat
 npm install -g @angular/cli
 ```
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need information more information about the standalone architecture, refer to the [Standalone Guide](./angular-standalone).
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
 ### Installing a specific version
 
@@ -100,7 +100,7 @@ This command will perform the following configurations:
 - Import the Grid component in your application.
 - Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 
-For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
@@ -110,7 +110,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are p
 ng add @syncfusion/ej2-angular-grids		
 ```		
 For applications not compiled with Ivy, use the `ngcc` tagged packages:		
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
 ```bash		
 npm add @syncfusion/ej2-angular-grids@32.1.19-ngcc		
 ```
@@ -139,12 +139,12 @@ To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> compon
 
 > Ensure that the import order aligns with the component's dependency sequence.
 
-For using SCSS styles, refer to [this guide](../common/how-to/sass).
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Add Grid component
 
-Modify the template in [src/app/app.ts] file to render the grid component.
-Add the Angular Grid by using `<ejs-grid>` selector in **template** section of the app.component.ts file.
+Modify the template in the [src/app/app.ts] file to render the grid component.
+Add the Angular Grid by using `<ejs-grid>` selector in **template** section of the app.ts file.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -169,7 +169,7 @@ export class AppComponent implements OnInit {
 
 ## Defining row data
 
-Bind data to the Grid component using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. The property accepts either an array of JavaScript objects or a [DataManager](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding) instance.
+Bind data to the Grid component using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) property. The property accepts either an array of JavaScript objects or a [DataManager](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding) instance.
 
 ```typescript
 import { GridModule } from '@syncfusion/ej2-angular-grids'
@@ -277,14 +277,14 @@ export let data: Object[] = [
 
 ## Defining columns
 
-The Grid provides an option to define columns using directives. In these column directives, various properties are available to customize column behavior.
+The Grid provides the option to define columns using directives. In these column directives, various properties are available to customize column behavior.
 
 The following properties are used in this example:
 
-* [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) - Maps the column to a property name in the data source array.
-* [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) - Changes the title displayed in the column header.
-* [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) - Changes the alignment of column content. By default, columns are left aligned. To change the alignment to right, set this property to **Right**.
-* [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) - Formats number and date values using standard or custom formats. In this example, it formats numeric values as currency.
+* [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) - Maps the column to a property name in the data source array.
+* [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) - Changes the title displayed in the column header.
+* [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column#textalign) - Changes the alignment of column content. By default, columns are left aligned. To change the alignment to right, set this property to **Right**.
+* [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) - Formats numeric and date values using standard or custom formats. In this example, it formats numeric values as currency.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -313,7 +313,7 @@ These modules should be injected into the **providers** section of the root **Ng
 
 ## Enable paging
 
-Paging divides Grid records into manageable pages, improving performance when handling large datasets. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to `true` to enable pagination. The **PageService** module must be injected in the providers for the pager to render. Use the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property to configure paging behavior such as page size and initial page number.
+Paging divides Grid records into manageable pages, improving performance when handling large datasets. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` to enable pagination. The **PageService** module must be injected in the providers for the pager to render. Use the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property to configure paging behavior such as page size and initial page number.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -329,7 +329,7 @@ Paging divides Grid records into manageable pages, improving performance when ha
 
 ## Enable sorting
 
-The sorting feature enables to arrange Grid records in ascending or descending order based on column values. Set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property to `true` to activate sorting. The **SortService** module must be injected in the providers for column header sorting to work. Configure sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
+The sorting feature allows arranging Grid records in ascending or descending order based on column values. Set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` to activate sorting. The **SortService** module must be injected in the providers for column header sorting to work. Configure sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -345,7 +345,7 @@ The sorting feature enables to arrange Grid records in ascending or descending o
 
 ## Enable filtering
 
-Filtering feature reduces the displayed dataset to records matching specified criteria. Set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property to `true` to enable filtering. The **FilterService** module must be injected in the provider section for the filter bar to render. Adjust filtering behavior using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
+The filtering feature reduces the displayed dataset to records matching specified criteria. Set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` to enable filtering. The **FilterService** module must be injected in the providers array for the filter bar to render. Adjust filtering behavior using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -361,7 +361,7 @@ Filtering feature reduces the displayed dataset to records matching specified cr
 
 ## Enable grouping
 
-The grouping feature displays Grid records in a hierarchically grouped format. Set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to `true` to enable grouping. The **GroupService** must be injected in the provider section for the group drop area to render. Control grouping behavior using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
+The grouping feature displays Grid records in a grouped format. Set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#allowgrouping) property to `true` to enable grouping. The **GroupService** must be injected in the providers array for the group drop area to render. Control grouping behavior using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#groupsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
