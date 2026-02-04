@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Calendar component
 
-The following section explains the steps required to create a simple Calendar component and also it demonstrates the basic usage of the Calendar. To get started quickly with angular DropDownList component using angular CLI, you can check the video below.
+This guide demonstrates how to set up and configure the Syncfusion Angular Calendar component, from initial installation through enabling core features like date selection and range restrictions. The Calendar component allows users to select dates with support for multiple date selection, custom formats, globalization, and week numbers.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+To get started quickly with Angular Calendar component using CLI and Schematics, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=I_A5xksToN0" %}
 
@@ -30,9 +34,13 @@ Install the below required dependency package in order to use the `Calendar` com
             |-- @syncfusion/ej2-buttons
 ```
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+
 ## Setup Angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+Angular provides the easiest way to set up Angular CLI projects using the [Angular CLI](https://github.com/angular/angular-cli) tool.
 
 Install the CLI application globally to your machine.
 
@@ -40,25 +48,31 @@ Install the CLI application globally to your machine.
 npm install -g @angular/cli
 ```
 
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21 and later. This guide uses the modern standalone architecture. If you need more information about standalone components, refer to the [Standalone Guide](./angular-standalone).
+
 ## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-calendar
 ```
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-Example code snippet.
+* By default, Angular CLI creates a CSS style-based application. Use SCSS if required:
 
 ```bash
 ng new syncfusion-angular-calendar --style=scss
 ```
 
-Navigate to the created project folder.
+* Navigate to the created project folder.
 
 ```bash
 cd syncfusion-angular-calendar
 ```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Calendar package
 
@@ -72,34 +86,27 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-calendars`](https://www.npmjs.com/package/@syncfusion/ej2-angular-calendars/v/20.2.38) package to the application.
+Use the [ng add](https://angular.dev/reference/schematics) command to automatically configure the Calendar package:
+
+```bash
+ng add @syncfusion/ej2-angular-calendars
+```
+
+This command will install the package (v32.1.19), add peer dependencies, and configure the Material theme automatically.
+
+**For Manual Installation:**
 
 ```bash
 npm install @syncfusion/ej2-angular-calendars --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+>Note: Use @syncfusion/ej2-angular-calendars@32.1.19 for Angular 12+ (Ivy format). For legacy support, see the peer dependency requirements above.
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+## Import Syncfusion CSS styles
 
-Add [`@syncfusion/ej2-angular-calendars@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-calendars/v/20.2.38-ngcc) package to the application.
+When using `ng add @syncfusion/ej2-angular-calendars`, the Material theme is automatically configured in `angular.json`. The Calendar component styles are included automatically.
 
-```bash
-npm install @syncfusion/ej2-angular-calendars@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-calendars:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding CSS reference
-
-The following CSS files are available in  `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+If you need to manually add or customize the CSS, import the theme in `src/styles.css`:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -116,7 +123,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding Calendar component
 
-Modify the template in [src/app/app.component.ts] file to render the Calendar component. by using `<ejs-calendar>` selector.
+Now, modify the `src/app/app.ts` file to render the Calendar component using the `<ejs-calendar>` selector:
 
 ```javascript
 
@@ -147,7 +154,7 @@ ng serve
 The following example illustrates the output in your browser
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -160,10 +167,10 @@ The following example illustrates the output in your browser
 
 ## Setting the value, min and max dates
 
-The following example demonstrates how to set the value,  min and max dates on initializing the Calendar. Here the Calendar allows you to select a date within a range from 9th to 15th. To know more about range restriction in Calendar, please refer this [page](./date-range).
+The following example demonstrates how to set value, min and max dates when initializing the Calendar. Here the Calendar allows selection of dates within a range from 9th to 15th. To learn more about range restriction in the Calendar, please refer to the [date range documentation](./date-range).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

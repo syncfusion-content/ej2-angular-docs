@@ -14,7 +14,12 @@ domainurl: ##DomainURL##
 
 ## Enable Data Editing
 
-We can use the data editing through inject the `DataEditingService` module. It provides drag and drop support to the rendered points. Now, we can change the location or value of the point based on its `y` value.  To enable the data editing, set the `enable` property to true in the drag settings of the series. Also, we can set color using `fill` property and set the data editing minimum and maximum range using `minY` and `maxY` properties.
+Data editing allows users to modify chart data points interactively by dragging and dropping the rendered points. This functionality is enabled by injecting the `DataEditing` module into the chart provider, which adds drag-and-drop support for data points.
+Once enabled, the position or value of a data point can be changed dynamically based on its `y` value. To activate data editing, set the `enable` property to **true** in the drag settings of the corresponding series.
+In addition, the following properties can be used to customize the data editing behavior and appearance:
+- Use the `fill` property to set the color of the editable data points.
+- Use the `minY` and `maxY` properties to define the minimum and maximum allowable range for editing the data points.
+These options help control both the visual feedback and the valid value range while editing data directly on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

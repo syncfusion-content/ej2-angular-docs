@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Getting started with Angular Auto complete component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Auto complete component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular AutoComplete component | Syncfusion
+description: Learn how to get started with the Syncfusion Angular AutoComplete component, including setup, installation, data binding, and basic configuration.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Auto complete component
+# Getting started with Angular AutoComplete component
 
-This section explains how to create a simple **AutoComplete** component and configure its available functionalities in Angular.
+This guide demonstrates how to set up and configure the Syncfusion Angular AutoComplete component, from initial installation through enabling core features like data binding and popup customization. The AutoComplete component provides suggestions as users type, offering filtering and selection capabilities for efficient text input in various scenarios.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 ## Dependencies
 
-The following list of dependencies are required to use the AutoComplete component in your application.
+The following dependencies are required to use the AutoComplete component in your application.
 
 ```javascript
 |-- @syncfusion/ej2-angular-dropdowns
@@ -23,14 +25,19 @@ The following list of dependencies are required to use the AutoComplete componen
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-angular-base
 ```
 
-## Setup angular environment
+## Prerequisites
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+
+## Setup Angular environment
+
+Angular provides the easiest way to set up Angular CLI projects using the [Angular CLI](https://github.com/angular/angular-cli) tool.
 
 Install the CLI application globally to your machine.
 
@@ -38,15 +45,19 @@ Install the CLI application globally to your machine.
 npm install -g @angular/cli
 ```
 
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about standalone components, refer to the [Standalone Guide](./angular-standalone).
+
 ## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-autocomplete
 ```
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-Example code snippet.
+* By default, Angular CLI creates a CSS style-based application. Use SCSS if required:
 
 ```bash
 ng new syncfusion-angular-autocomplete --style=scss
@@ -58,125 +69,123 @@ Navigate to the created project folder.
 cd syncfusion-angular-autocomplete
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> AutoComplete package
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-dropdowns`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38) package to the application.
+This guide uses the [Angular AutoComplete Component](https://www.syncfusion.com/angular-components/angular-autocomplete) for demonstration. Add the Angular AutoComplete component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-dropdowns --save
+ng add @syncfusion/ej2-angular-dropdowns
 ```
 
-### Angular compatibility compiled package(ngcc)
+This command will perform the following configurations:
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+- Add the `@syncfusion/ej2-angular-dropdowns` package and peer dependencies to your `package.json`.
+- Import the AutoComplete component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-dropdowns@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-dropdowns@ngcc --save
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-dropdowns		
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).		
+```bash		
+npm add @syncfusion/ej2-angular-dropdowns@32.1.19-ngcc		
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-```bash
-@syncfusion/ej2-angular-dropdowns:"20.2.38-ngcc"
-```
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
 
-## Registering AutoComplete module
-
-Import AutoComplete module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns` [src/app/app.module.ts].
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the AutoCompleteModule for the AutoComplete component
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-dropdowns module into NgModule
-  imports:      [ BrowserModule, AutoCompleteModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the AutoComplete component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 ```
 
-## Adding AutoComplete component
+> Ensure that the import order aligns with the component's dependency sequence.
 
-Modify the template in [src/app/app.component.ts] file to render the AutoComplete component.
-Add the Angular Autocomplete by using `<ejs-autocomplete>` selector in `template` section of the app.component.ts file.
+For using SCSS styles, refer to [this guide](../common/how-to/sass).
 
-```javascript
-import { Component } from '@angular/core';
+## Add AutoComplete component
+
+Modify the template in [src/app/app.ts] file to render the AutoComplete component.
+Add the Angular AutoComplete by using `<ejs-autocomplete>` selector in **template** section of the app.ts file.
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the AutoComplete component
-  template: `<ejs-autocomplete id='atcelement'></ejs-autocomplete>`
+    imports: [
+      AutoCompleteModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the AutoComplete component
+    template: `<ejs-autocomplete></ejs-autocomplete>`
 })
-export class AppComponent  { }
+export class AppComponent implements OnInit {
+
+    ngOnInit(): void {
+    }
+}
 ```
 
 ## Binding data source
 
-After initializing, populate the data in AutoComplete using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property. Here, an array of string values is passed to the AutoComplete component.
+Bind data to the AutoComplete component using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property. The property accepts either an array of JavaScript objects or a [DataManager](https://ej2.syncfusion.com/angular/documentation/auto-complete/data-binding/data-binding) instance.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
 
 @Component({
+    imports: [
+      AutoCompleteModule
+    ],
+    standalone: true,
     selector: 'app-root',
     // specifies the template string for the AutoComplete component
     template: `<ejs-autocomplete id='atcelement' [dataSource]='sportsData'></ejs-autocomplete>`
 })
-export class AppComponent {
-    constructor() {
-    }
-    // defined the array of data
-    public sportsData: string[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
+export class App implements OnInit {
+  public sportsData: string[] = [];
+  ngOnInit(): void {
+    this.sportsData = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
+  }
 }
-
 ```
 
 ## Running the application
 
-After completing the configuration required to render a basic AutoComplete, run the following command to display the output in your default browser.
+Use the following command to run the application in the browser.
 
-```
+```bash
 ng serve
 ```
 
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -189,15 +198,14 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts to match the AutoComplete input element's width, and the height defaults to 300px.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupwidth) properties respectively.
+The height and width of the popup list can be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupwidth) properties.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -210,12 +218,10 @@ In the following sample, popup list's width and height are configured.
 
 ## Two-way binding
 
-In AutoComplete, the `value` property supports two-way binding functionality.
-
-The following example demonstrates how to work with the two-way binding functionality in AutoComplete.
+In AutoComplete, the `value` property supports two-way binding functionality. The following example demonstrates how to use two-way binding in the AutoComplete component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 

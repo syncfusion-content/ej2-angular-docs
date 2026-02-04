@@ -16,7 +16,7 @@ The box and whisker chart is a statistical visualization tool that displays the 
 
 To render a `box and whisker` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
 
 2. **Inject the BoxAndWhiskerSeries module**: Use the `@NgModule.providers` method to inject the `BoxAndWhiskerSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
 
@@ -49,7 +49,7 @@ The box and whisker chart displays several key statistical components:
 
 ## Data binding for BoxAndWhisker series
 
-Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties to ensure proper data visualization.
+Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to ensure proper data visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +69,7 @@ Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Box plot mode
 
-The [`boxPlotMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#boxplotmode) property determines how the quartiles are calculated for the box and whisker series. The default value is `Exclusive`. The available options are:
+The [`boxPlotMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#boxplotmode) property determines how the quartiles are calculated for the box and whisker series. The default value is `Exclusive`. The available options are:
 
 - **Exclusive**: Excludes the median when calculating quartiles (default method).
 - **Inclusive**: Includes the median in quartile calculations.
@@ -93,7 +93,7 @@ The [`boxPlotMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/s
 
 ## Show mean
 
-The [`showMean`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#showmean) property displays the average value of the dataset as a marker within each box plot. The default value is **false**. When enabled, the mean appears as a distinct symbol, helping users compare both median and mean values.
+The [`showMean`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#showmean) property displays the average value of the dataset as a marker within each box plot. The default value is **false**. When enabled, the mean appears as a distinct symbol, helping users compare both median and mean values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,7 +117,7 @@ Customize the appearance of `box and whisker` series using various styling prope
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,7 +137,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Gradient fill**
 
-Apply gradient colors to create visually appealing box and whisker series with smooth color transitions by configuring the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property with gradient values.
+Apply gradient colors to create visually appealing box and whisker series with smooth color transitions by configuring the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property with gradient values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -157,7 +157,7 @@ Apply gradient colors to create visually appealing box and whisker series with s
 
 **Opacity**
 
-Control the transparency level of the box and whisker fill using the [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property. Values range from 0 (completely transparent) to 1 (completely opaque).
+The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,7 +177,7 @@ Control the transparency level of the box and whisker fill using the [opacity](h
 
 **Border**
 
-Customize the box and whisker series border using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) property to adjust width, color, and dash pattern.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to configure the border width, color, and dasharray of the box and whisker series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,7 +199,7 @@ Customize the box and whisker series border using the [`border`](https://ej2.syn
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows customization of series properties, such as data, fill, and name, before rendering on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -219,7 +219,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows customization of each data point before rendering on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

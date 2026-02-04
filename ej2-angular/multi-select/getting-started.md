@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Multi select component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Multi select component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular MultiSelect component | Syncfusion
+description: Learn how to get started with the Syncfusion Angular MultiSelect component, including setup, installation, data binding, and basic configuration.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular MultiSelect component
 
-This section explains how to create a simple **MultiSelect** component and configure its available functionalities in Angular. The MultiSelect component allows users to select multiple values from a dropdown list, providing an intuitive interface for multi-item selection scenarios such as selecting multiple skills, categories, or preferences.
+This guide demonstrates how to set up and configure the Syncfusion Angular MultiSelect component, from initial installation through enabling core features like data binding and popup customization. The MultiSelect component allows users to select multiple values from a dropdown list, providing an intuitive interface for multi-item selection scenarios such as selecting multiple skills, categories, or preferences.
+
+> Note: This guide supports **Angular 19** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 ## Dependencies
 
@@ -25,157 +27,163 @@ The following dependencies are required to use the Angular MultiSelect component
         |-- @syncfusion/ej2-inputs
         |-- @syncfusion/ej2-lists
         |-- @syncfusion/ej2-navigations
+        |-- @syncfusion/ej2-notifications
         |-- @syncfusion/ej2-popups
             |-- @syncfusion/ej2-buttons
 ```
 
-## Setup angular environment
+## Prerequisites
 
-Angular provides the easiest way to set up Angular CLI projects using the [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
 
-Install the CLI application globally to your machine.
+## Setup Angular environment
+
+Angular provides the easiest way to set up Angular CLI projects using the [Angular CLI](https://github.com/angular/angular-cli) tool.
+
+Install Angular CLI globally on your machine.
 
 ```bash
 npm install -g @angular/cli
 ```
 
+> **Angular 19+ Standalone Architecture:** Standalone components are the default in Angular 19 and later. This guide uses the modern standalone architecture. If you need more information about standalone components, refer to the [Standalone Guide](./angular-standalone).
+
 ## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-multiselect
 ```
 
-By default, this installs a CSS style-based application. To set up with SCSS, pass the --style=scss argument when creating the project.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-Example code snippet:
+* By default, Angular CLI creates a CSS style-based application. Use SCSS if required:
 
 ```bash
 ng new syncfusion-angular-multiselect --style=scss
 ```
 
-Navigate to the created project folder.
+* Navigate to the created project folder:
 
 ```bash
 cd syncfusion-angular-multiselect
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> MultiSelect package
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the below command.
-
-Add [`@syncfusion/ej2-angular-dropdowns`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38) package to the application.
+This guide uses the [Angular MultiSelect Component](https://www.syncfusion.com/angular-components/angular-multiselect-dropdown) for demonstration. Add the Angular MultiSelect component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-dropdowns --save
+ng add @syncfusion/ej2-angular-dropdowns
 ```
 
-### Angular compatibility compiled package(ngcc)
+This command will perform the following configurations:
 
-For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
+- Add the `@syncfusion/ej2-angular-dropdowns` package and peer dependencies to your `package.json`.
+- Import the MultiSelect component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-dropdowns@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-dropdowns@ngcc --save
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-dropdowns		
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).		
+```bash		
+npm add @syncfusion/ej2-angular-dropdowns@32.1.19-ngcc		
 ```
 
-To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below.
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-```bash
-@syncfusion/ej2-angular-dropdowns:"20.2.38-ngcc"
-```
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
 
-## Registering MultiSelect module
-
-Import the MultiSelect module into your Angular application (app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the MultiSelectModule for the MultiSelect component
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-dropdowns module into NgModule
-  imports:      [ BrowserModule, MultiSelectModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-## Adding CSS reference
-
-The following CSS files are available in the `../node_modules/@syncfusion` package folder. These can be referenced in [src/styles.css] using the following code.
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the MultiSelect component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';  
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 ```
 
-## Adding MultiSelect component
+> Ensure that the import order aligns with the component's dependency sequence.
 
-Modify the template in the [src/app/app.component.ts] file to render the Angular MultiSelect component. Add the Angular MultiSelect by using the `<ejs-multiselect>` selector in the `template` section of the app.component.ts file.
+For using SCSS styles, refer to [this guide](../common/how-to/sass).
 
-```javascript
-import { Component } from '@angular/core';
+## Add MultiSelect component
+
+Modify the template in [src/app/app.ts] file to render the MultiSelect component.
+Add the Angular MultiSelect by using `<ejs-multiselect>` selector in **template** section of the app.ts file.
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the MultiSelect component
-  template: `<ejs-multiselect id='multiselectelement'></ejs-multiselect>`
+    imports: [
+      MultiSelectModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the MultiSelect component
+    template: `<ejs-multiselect></ejs-multiselect>`
 })
-export class AppComponent  { }
+export class AppComponent implements OnInit {
+
+    ngOnInit(): void {
+    }
+}
 ```
 
 ## Binding data source
 
-After initialization, populate the MultiSelect with data using the `dataSource` property. Here, an array of string values is passed to the MultiSelect component.
+Bind data to the MultiSelect component using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. The property accepts either an array of JavaScript objects or a [DataManager](https://ej2.syncfusion.com/angular/documentation/multi-select/data-binding/data-binding) instance.
 
 ```typescript
-import { Component } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the MultiSelect component
-    template: `<ejs-multiselect id='multiselectelement' [dataSource]='data'></ejs-multiselect>`
+  selector: 'app-root',
+  imports: [MultiSelectModule],
+  template: `<ejs-multiselect id='multiselectelement' [dataSource]='data'></ejs-multiselect>`,
+  standalone: true,
 })
-export class AppComponent {
-    constructor() {
+export class AppComponent implements OnInit {
+  public data: string[] = [];
+  ngOnInit(): void {
+    this.data = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
     }
-    // defined the array of data
-    public data: string[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
 }
+
 ```
 
 ## Running the application
 
-After completing the configuration required to render a basic MultiSelect, run the following command to display the output in your default browser.
+After completing the configuration required to render a basic MultiSelect, run the following command to display the output in your default browser:
 
-```
+```bash
 ng serve
 ```
 
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -188,14 +196,14 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height automatically adjusts according to the height of the popup list items.
+By default, the width of the popup list automatically adjusts to match the MultiSelect input element's width, and the height automatically adjusts based on the popup list items.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupwidth) properties respectively.
+The height and width of the popup list can be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupwidth) properties.
 
 In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 

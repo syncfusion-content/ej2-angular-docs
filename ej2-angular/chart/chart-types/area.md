@@ -16,7 +16,7 @@ Area charts are ideal for visualizing trends over time or across categories by d
 
 To render an [area](https://www.syncfusion.com/angular-components/angular-charts/chart-types/area-chart) series in your chart:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Area` in your chart configuration.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Area` in your chart configuration.
 
 2. **Inject the AreaSeries module**: Use the `@NgModule.providers` method to inject the `AreaSeriesService` module into your chart to enable area series functionality.
 
@@ -38,7 +38,7 @@ To render an [area](https://www.syncfusion.com/angular-components/angular-charts
 
 ## Data binding for area series
 
-Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties to ensure proper data visualization.
+Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to ensure proper data visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ Customize the appearance of `area` series using various styling properties to ma
 
 **Fill**
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set the fill color for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
 
 **Gradient fill**
 
-Apply gradient colors to create visually appealing area series with smooth color transitions by configuring the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property with gradient values.
+Apply gradient colors to create visually appealing area series with smooth color transitions by configuring the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property with gradient values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ Apply gradient colors to create visually appealing area series with smooth color
 
 **Opacity**
 
-Control the transparency level of the area fill using the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property. Values range from 0 (completely transparent) to 1 (completely opaque).
+The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ Control the transparency level of the area fill using the [`opacity`](https://ej
 
 ## Area border
 
-Customize the area series border using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) property to adjust width, color, and dash pattern.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to configure the border width, color, and dasharray of the area series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,14 +146,14 @@ Create area series with different colored segments to highlight specific data ra
 
 To render a multicolored area series:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredArea`.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `MultiColoredArea`.
 
 2. **Inject the MultiColoredAreaSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredAreaSeries` module.
 
-3. **Configure segments**: Define segments using the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#segments) property with these options:
-   * [value](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
-   * [color](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#color) - Defines the segment color.
-   * [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#dasharray) - Defines dash patterns for the segment.
+3. **Customize the segments**: Define the segments of the series using the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
+   * [value](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel#value) - Specifies the endpoint of the segment.
+   * [color](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel#color) - Defines the segment color.
+   * [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel#dasharray) - Defines dash patterns for the segment.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,7 +177,7 @@ Data points with `null` or `undefined` values are considered empty points. These
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -197,7 +197,7 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 **Fill**
 
-Customize the fill color of empty points using the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#fill) property to maintain visual consistency or highlight missing data.
+Customize the fill color of empty points using the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#fill) property to maintain visual consistency or highlight missing data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,7 +217,7 @@ Customize the fill color of empty points using the [`fill`](https://ej2.syncfusi
 
 **Border**
 
-Customize the border appearance of empty points using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#border) property to adjust width and color.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#border) property to customize the border width and color for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -239,7 +239,7 @@ Customize the border appearance of empty points using the [`border`](https://ej2
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows customization of series properties, such as data, fill, and name, before rendering on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -259,7 +259,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows customization of each data point before rendering on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

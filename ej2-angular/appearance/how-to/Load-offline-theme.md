@@ -12,14 +12,14 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an `offline-theme` file that references Material styles with local system fonts, ensuring components render properly without internet connectivity.
 
-## Material Theme Package
+## Material3 Theme Package
 
-The [`@syncfusion/ej2-material-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-theme) package includes an offline-theme option that eliminates online font dependencies. Follow these steps to implement this offline theme in your application:
+The [`@syncfusion/ej2-material-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) package includes an offline-theme option that eliminates online font dependencies. Follow these steps to implement this offline theme in your application:
 
-1. Install the material theme package:
+1. Install the material 3 theme package:
 
 ```bash
-npm i @syncfusion/ej2-material-theme
+npm i @syncfusion/ej2-material3-theme
 ```
 
 For the Material dark theme, install the appropriate package:
@@ -31,7 +31,7 @@ npm i @syncfusion/ej2-material-dark-theme
 2. Import the offline theme styles in your application's global styles file:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-material-theme/styles/offline-theme/material.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/offline-theme/material3.css';
 ```
 
 ## Tailwind Theme Package

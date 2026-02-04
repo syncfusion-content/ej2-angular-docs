@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Multiple Series
 
-You can add multiple series to the chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/) property.
+You can add multiple series to the chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective) property.
 The series are rendered in the order as it is added to the series array.
 
 {% tabs %}

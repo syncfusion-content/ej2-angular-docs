@@ -125,16 +125,16 @@ Key points about the standalone component configuration:
 The following CSS styles are available in the `../node_modules/@syncfusion` folder. Reference them in `src/styles.css` as follows:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 ```
 
 ## Run the Application

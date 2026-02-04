@@ -73,8 +73,8 @@ export class AppComponent { }
 Import Syncfusion<sup style="font-size:70%">&reg;</sup> button styles in `src/styles.css`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
 ```
 
 > Adjust the import paths as necessary based on your project's folder structure.

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Chart component
 
-Localization library allows to localize the default text content of Chart. In Chart component, it has the static text on some features(like zooming toolbars) and this can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
+The localization library localizes the Chart's default text content. Static text used by chart features (for example, zoom toolbar labels) can be translated by providing a locale value and a translation object.
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
-<td><b>Locale key words</b></td>
+<td><b>Locale keys</b></td>
 <td><b>Text to display</b></td>
 </tr>
 <tr>
@@ -45,9 +45,9 @@ Localization library allows to localize the default text content of Chart. In Ch
 </tr>
 </table>
 
-To load translation object in an application use load function of L10n class.
+To load translations in an application, use the `L10n.load()` function.
 
-For more information about localization, refer this [`localization`](http://ej2.syncfusion.com/angular/documentation/base/localization.html)
+For more information about localization, see the localization guide: [`localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

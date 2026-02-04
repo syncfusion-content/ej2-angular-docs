@@ -88,28 +88,28 @@ For optimized CSS files, use:
 
 | Theme Name | CDN Reference |
 |--- | --- |
-| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) |
-| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
-| Bootstrap 5.3 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css) |
-| Bootstrap 5.3 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css) |
-| Fluent 2 | [https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css) |
-| Fluent 2 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css) |
-| Material 3 | [https://cdn.syncfusion.com/ej2/27.1.48/material3.css](https://cdn.syncfusion.com/ej2/27.1.48/material3.css) |
-| Material 3 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css) |
-| Fluent | [https://cdn.syncfusion.com/ej2/27.1.48/fluent.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent.css) |
-| Fluent Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fluent-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent-dark.css) |
-| Bootstrap 5 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.css) |
-| Bootstrap 5 Dark| [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5-dark.css) |
-| Bootstrap 4 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap4.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap4.css) |
-| Bootstrap 3 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap.css) |
-| Bootstrap 3 Dark| [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap-dark.css) |
-| Google’s Material | [https://cdn.syncfusion.com/ej2/27.1.48/material.css](https://cdn.syncfusion.com/ej2/27.1.48/material.css) |
-| Google’s Material Dark | [https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css) |
-| Tailwind CSS | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css) |
-| Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css) |
-| Microsoft Office Fabric | [https://cdn.syncfusion.com/ej2/27.1.48/fabric.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric.css) |
-| Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css) |
-| High Contrast | [https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css](https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css) |
+| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css) |
+| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3-dark.css) |
+| Bootstrap 5.3 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css) |
+| Bootstrap 5.3 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css) |
+| Fluent 2 | [https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css) |
+| Fluent 2 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fluent2-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent2-dark.css) |
+| Material 3 | [https://cdn.syncfusion.com/ej2/32.1.19/material3.css](https://cdn.syncfusion.com/ej2/32.1.19/material3.css) |
+| Material 3 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/material3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/material3-dark.css) |
+| Fluent | [https://cdn.syncfusion.com/ej2/32.1.19/fluent.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent.css) |
+| Fluent Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fluent-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent-dark.css) |
+| Bootstrap 5 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.css) |
+| Bootstrap 5 Dark| [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5-dark.css) |
+| Bootstrap 4 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap4.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap4.css) |
+| Bootstrap 3 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap.css) |
+| Bootstrap 3 Dark| [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap-dark.css) |
+| Google’s Material | [https://cdn.syncfusion.com/ej2/32.1.19/material.css](https://cdn.syncfusion.com/ej2/32.1.19/material.css) |
+| Google’s Material Dark | [https://cdn.syncfusion.com/ej2/32.1.19/material-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/material-dark.css) |
+| Tailwind CSS | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css) |
+| Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css) |
+| Microsoft Office Fabric | [https://cdn.syncfusion.com/ej2/32.1.19/fabric.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric.css) |
+| Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css) |
+| High Contrast | [https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css](https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css) |
 
 ### Using Precompiled CSS and SCSS File
 

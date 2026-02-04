@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 ## Enable zooming
 
-Chart can be zoomed in three ways.
+The chart supports zooming through the following three interaction methods:
 
-* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
-* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
-* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
+* **Selection** – By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enableselectionzooming) to **true** in `zoomSettings`, zooming can be performed using a rubber-band selection.
+* **Mouse wheel** – By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablemousewheelzooming) to **true** in `zoomSettings`, the chart can be zoomed in and out by scrolling the mouse wheel.
+* **Pinch** – By setting [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablepinchzooming) to **true** in `zoomSettings`, zooming can be performed using pinch gestures on touch-enabled devices.
 
->Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+> Pinch zooming is supported only in browsers that support multi-touch gestures.
 
 To known about Zooming and Panning, you can check on this video:
 
@@ -36,20 +36,20 @@ To known about Zooming and Panning, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs5" %}
 
->Note: To use zooming feature, we need to inject `ZoomService` into the `NgModule.providers`.
+>Note: To use zooming feature, inject `ZoomService` into the `NgModule.providers`.
 
-After zooming the chart, a zooming toolbar will appear with `zoom`,`zoomin`, `zoomout`, `pan` and `reset` buttons.
-Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
+After zooming, a toolbar is displayed that includes **zoom**, **zoomin**, **zoomout**, **pan**, and **reset** buttons.  
+Selecting **Pan** allows the chart to be panned, and selecting **Reset** restores the chart to its original zoom state.
 
 ## Modes
 
-The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#mode) property in zoomSettings specifies whether the chart is allowed to scale along the horizontal axis or vertical axis. The default value of the mode is XY (both axis).
+The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#mode) property in `zoomSettings` specifies whether zooming can be applied along the horizontal axis, vertical axis, or both. The default value is **XY**.
 
-There are three types of mode.
+The supported zooming modes are:
 
-* X - Allows us to zoom the chart horizontally.
-* Y - Allows us to zoom the chart vertically.
-* XY - Allows us to zoom the chart both vertically and horizontally.
+* **X** – Allows zooming along the horizontal axis.
+* **Y** – Allows zooming along the vertical axis.
+* **XY** – Allows zooming along both horizontal and vertical axes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,8 @@ There are three types of mode.
 
 ## Toolbar
 
-By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show the desired options in the toolbar using the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbaritems) property. Also using the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#showtoolbar) property, you can show toolkit for zooming and panning the chart during initial rendering itself.
+By default, the **zoomin**, **zoomout**, **pan**, and **reset** buttons are displayed when the chart is zoomed. The toolbar contents can be customized by using the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#toolbaritems) property.  
+Additionally, the zooming toolbar can be displayed during initial rendering by setting the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#showtoolbar) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +82,9 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 
 ### Toolbar customization
 
-The zoom toolbar in the chart can be repositioned using the [`toolbarPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbarposition) property, allowing flexible alignment and placement. It supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**), with default values set to **Far** and **Top**, respectively. For precise placement, the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#y) properties can be used to adjust the toolbar's position within the chart area. Additionally, enabling the [`draggable`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#draggable) property allows users to freely move the toolbar within the chart area, ensuring optimal usability.
+The zoom toolbar position can be customized by using the [`toolbarPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#toolbarposition) property. This property supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**). The default values are **Far** for horizontal alignment and **Top** for vertical alignment.
+For precise placement, the  [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel#y) properties can be used.  
+Enabling the [`draggable`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel#draggable) property allows the toolbar to be repositioned freely within the chart area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +100,7 @@ The zoom toolbar in the chart can be repositioned using the [`toolbarPosition`](
 
 ## Enable pan
 
-Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablePan) property you can able to pan the zoomed chart without help of toolbar items.
+Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablePan) property you can able to pan the zoomed chart without help of toolbar items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,7 +116,12 @@ Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/z
 
 ## Enable scrollbar
 
-Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablescrollbar) property, you can add a scrollbar to a zoomed chart. This scrollbar allows you to zoom or pan the chart. The appearance of the scrollbar can be customized using properties in [`scrollbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/). For example, you can use [`trackColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#trackcolor) and [`trackRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#trackradius) properties to customize the track of the scrollbar, and [`scrollbarRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#scrollbarradius) and [`scrollbarColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#scrollbarcolor) properties to customize the scroller. The ability to zoom through the scrollbar can be enabled or disabled using the [`enableZoom`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#enablezoom) property in [`scrollbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/). Additionally, you can change the color of the grip and height of the scrollbar using the [`gripColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#gripcolor) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#height) properties.
+By using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablescrollbar) property, a scrollbar can be displayed for the zoomed chart. This scrollbar supports both zooming and panning interactions.
+Scrollbar appearance can be customized using properties within [`scrollbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/). For example:
+- [`trackColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#trackcolor) and [`trackRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#trackradius) control the track appearance.
+- [`scrollbarColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettings#scrollbarcolor) and [`scrollbarRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#scrollbarradius) customize the scroller.
+- Zooming through the scrollbar can be enabled or disabled using [`enableZoom`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#enablezoom).
+- The grip color and scrollbar height can be customized using [`gripColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#gripcolor) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel#height).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,7 +136,11 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
 {% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs1" %}
 
 ### Position
-The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettings/#position) property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettings#position) property specifies where the scrollbar is rendered. By default, both vertical and horizontal scrollbars are placed near their respective axes.
+The available positions are:
+* **Default** – `placeNextToAxisLine`
+* **Horizontal scrollbar** – `Top`, `Bottom`
+* **Vertical scrollbar** – `Left`, `Right`
 
 * Default: `placeNextToAxisLine`.
 * Horizontal scrollbar: Available positions are `Top` and `Bottom`.
@@ -147,7 +159,7 @@ The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/scro
 
 ## Enable animation
 
-Enable the [enableAnimation] property to experience smooth transitions when zooming in on the chart.
+Use the [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enableAnimation) property to apply smooth animation effects during zoom operations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,7 +175,7 @@ Enable the [enableAnimation] property to experience smooth transitions when zoom
 
 ## Auto interval on zooming
 
-By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#enableAutoIntervalOnZooming) property, the axis interval will get calculated automatically with respect to the zoomed range.
+By using the [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#enableAutoIntervalOnZooming)property, the axis interval is calculated automatically based on the current zoomed range.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Chart annotations in Angular Chart component
 
-Annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
+Chart annotations allow highlighting specific areas of the chart using text, shapes, images, or custom HTML elements. Annotations can be used to emphasize trends, mark thresholds, show custom notes, or display additional information directly inside the chart area.
 
 <!-- markdownlint-disable MD033 -->
 
-You can add annotations to the chart by using the <code>annotations</code> option. By using the
-[`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective/#content) option of annotation object, you can specify
-the id of the element that needs to be displayed in the chart area.
+Annotations are added using the `annotations` option. Set the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) property to reference the element that should be rendered within the chart.
 
 To known more about annotations, you can check on this video:
 
@@ -34,11 +32,11 @@ To known more about annotations, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs7" %}
 
->Note: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.
+>Note: To use the annotation feature, inject `ChartAnnotationService` into the `@NgModule.providers`.
 
 ## Region
 
-Annotations can be placed either with respect to `Series` or `Chart`. by default, it will placed with respect to `Chart`.
+Annotations can be positioned relative to either the overall `Chart` area or a specific `Series`. When placed relative to the chart, the annotation uses the chart’s coordinate system. When placed relative to a series, the annotation aligns with that series' data points. By default, annotations are placed with respect to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +52,9 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 
 ## Co-ordinate Units
 
-Specified the coordinates units of the annotation either `Pixel` or `Point`.
+Use the `coordinateUnits` property to define how annotation coordinates are interpreted. Choose between:
+- **Pixel** – The annotation is positioned using fixed pixel values within the chart area.  
+- **Point** – The annotation is positioned based on chart data points (x and y values).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

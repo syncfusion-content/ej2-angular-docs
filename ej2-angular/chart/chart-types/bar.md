@@ -16,7 +16,7 @@ Bar charts are ideal for comparing values across different categories, displayin
 
 To render a [bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/bar-chart) series in your chart:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Bar` in your chart configuration. This indicates that the data should be represented as a bar chart, which makes it easy to compare values across categories.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Bar` in your chart configuration. This indicates that the data should be represented as a bar chart, which makes it easy to compare values across categories.
 
 2. **Inject the BarSeries module**: Use the `@NgModule.providers` method to inject the `BarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering bar series are available in your chart.
 
@@ -38,7 +38,7 @@ To render a [bar](https://www.syncfusion.com/angular-components/angular-charts/c
 
 ## Data binding for bar series
 
-Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties to ensure proper data visualization.
+Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to ensure proper data visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ Customize the appearance of `bar` series using various styling properties to mat
 
 **Fill**
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
 
 **Gradient fill**
 
-Apply gradient colors to create visually appealing bar series with smooth color transitions by configuring the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property with gradient values.
+Apply gradient colors to create visually appealing bar series with smooth color transitions by configuring the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property with gradient values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ Apply gradient colors to create visually appealing bar series with smooth color 
 
 **Opacity**
 
-Control the transparency level of the bar fill using the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property. Values range from 0 (completely transparent) to 1 (completely opaque).
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ Control the transparency level of the bar fill using the [`opacity`](https://ej2
 
 **Border**
 
-Customize the bar series border using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) property to adjust width, color, and dash pattern.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to configure the border width, color, and dasharray of the bar series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -144,7 +144,7 @@ Customize the bar series border using the [`border`](https://ej2.syncfusion.com/
 
 ### Bar spacing
 
-Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnspacing) property in the series to adjust the space between bars.
+Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnspacing) property in the series to adjust the space between bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,7 +164,7 @@ Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 ### Bar width
 
-Use the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnwidth) property in the series to adjust the width of the bars.
+Use the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnwidth) property in the series to adjust the width of the bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ Use the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/cha
 
 ### Bar width in pixels
 
-Use the [`columnWidthInPixel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnwidthinpixel) property in the series to define the exact width of the bars in pixels. This property ensures that each bar maintains the specified width, providing a uniform appearance throughout the chart.
+Use the [`columnWidthInPixel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnwidthinpixel) property in the series to define the exact width of the bars in pixels. This property ensures that each bar maintains the specified width, providing a uniform appearance throughout the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,7 +204,7 @@ Use the [`columnWidthInPixel`](https://ej2.syncfusion.com/angular/documentation/
 
 ## Grouped bar charts
 
-Use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#groupname) property to group the data points in bar type charts. Data points with the same group name will be grouped together in the chart, making it easy to compare different sets of data.
+Use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#groupname) property to group the data points in bar type charts. Data points with the same group name will be grouped together in the chart, making it easy to compare different sets of data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -224,7 +224,7 @@ Use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 ## Cylindrical bar chart
 
-To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular bars into cylindrical shapes, enhancing the visual representation of the data.
+To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular bars into cylindrical shapes, enhancing the visual representation of the data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +248,7 @@ Data points with `null` or `undefined` values are considered empty points. These
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,7 +268,7 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 **Fill**
 
-Customize the fill color of empty points using the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#fill) property to maintain visual consistency or highlight missing data.
+Customize the fill color of empty points using the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#fill) property to maintain visual consistency or highlight missing data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -288,7 +288,7 @@ Customize the fill color of empty points using the [`fill`](https://ej2.syncfusi
 
 **Border**
 
-Customize the border appearance of empty points using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings/#border) property to adjust width and color.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#border) property to customize the border width and color for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -310,7 +310,7 @@ Customize the border appearance of empty points using the [`border`](https://ej2
 
 ### Series corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -330,7 +330,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Individual point corner radius
 
-The corner radius can be customized for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -352,7 +352,7 @@ The corner radius can be customized for individual points in the chart series us
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows customization of series properties, such as data, fill, and name, before rendering on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -372,7 +372,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows customization of each data point before rendering on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

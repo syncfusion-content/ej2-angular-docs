@@ -12,15 +12,13 @@ domainurl: ##DomainURL##
 
 # Trend lines in Angular Chart component
 
-Trendlines are used to show the direction and speed of price.
+Trendlines help identify patterns, direction, and overall trends in numerical data. They project the general movement of data values and are widely used in analytics, forecasting, and financial charts. Trendlines can be added to Cartesian series types such as Line, Column, Scatter, Area, Candle, and Hilo (excluding bar series). Multiple trendlines can be added to a single series based on the analysis needs.
 
-Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
-
-Chart supports 6 types of trendlines.
+Charts support six types of trendlines: **Linear**, **Exponential**, **Logarithmic**, **Polynomial**, **Power**, and **Moving Average**.
 
 ## Linear
 
-A linear trendline is a best fit straight line that is used with simpler data sets. To render a linear trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Linear` and inject `TrendLines` .
+A linear trendline is a straight, best‑fit line used to describe data with a constant rate of increase or decrease. Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline#type) to `Linear` and inject the `Trendlines` module using `Chart.Inject(Trendlines)`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,11 +34,9 @@ A linear trendline is a best fit straight line that is used with simpler data se
 
 ## Exponential
 
-An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
+An exponential trendline displays a curved pattern useful when data rises or falls at increasing rates. Exponential trendlines cannot be generated if the dataset includes zero or negative values.
 
-To render a exponential trendline,
-use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Exponential` and inject
-`TrendLines`.
+Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Exponential` and inject the `Trendlines` module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,11 +52,11 @@ use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 ## Logarithmic
 
-A logarithmic trendline is a best-fit curved line that is most useful when the rate of change in the data increases or decreases quickly and then levels out.
+A logarithmic trendline is a best‑fit curved line suitable when the data increases or decreases quickly and then stabilizes. It supports both positive and negative values.
 
 A logarithmic trendline can use negative and/or positive values.
 
-To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Logarithmic` and inject `TrendLines` .
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline#type) to `Logarithmic` and inject the `Trendlines` module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,9 +72,9 @@ To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion
 
 ## Polynomial
 
-A polynomial trendline is a curved line that is used when data fluctuates.
+A polynomial trendline is useful when data fluctuates. It uses a curved line that can model more complex datasets.
 
-To render a polynomial trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Polynomial` and inject `TrendLines`.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Polynomial` and inject the `Trendlines` module. Use [`polynomialOrder`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#polynomialorder) to define the degree of the polynomial.
 
 `polynomialOrder` used to define the polynomial value.
 
@@ -96,10 +92,9 @@ To render a polynomial trendline, use trendline [`type`](https://ej2.syncfusion.
 
 ## Power
 
-A power trendline is a curved line that is best used with data sets that compare measurements that increase at a specific rate.
+A power trendline is ideal for datasets where measurements increase at a constant rate. It displays a curved line that best fits exponential growth or decay patterns.
 
-To render a power trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Power` and inject
-`TrendLines`.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Power` and inject the `Trendlines` module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,9 +110,9 @@ To render a power trendline, use trendline [`type`](https://ej2.syncfusion.com/a
 
 ## Moving Average
 
-A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
+A moving average trendline smooths fluctuations to reveal overall trends more clearly. The [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#period) property specifies the number of data points used to calculate each average.
 
-To render a moving average trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `MovingAverage` and inject `TrendLines` .
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `MovingAverage` and inject the `Trendlines` module.
 
 `period` property defines the period to find the moving average.
 
@@ -135,8 +130,7 @@ To render a moving average trendline, use trendline [`type`](https://ej2.syncfus
 
 **Customization of Trendlines**
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#fill) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#width)
-properties are used to customize the appearance of the trendline.
+Customize trendline appearance using the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#fill) property for color and the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#width) property for line thickness.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,16 +146,11 @@ properties are used to customize the appearance of the trendline.
 
 ## Forecasting
 
-Trendlines forecasting is the prediction of future/past situations.
-
-Forecasting can be classified into two types as follows
-
-Forward Forecasting
-Backward Forecasting
+Trendline forecasting extends the existing trendline to estimate future and past values.
 
 **Forward Forecasting**
 
-The value set for forwardForecast is used to determine the distance moving towards the future trend.
+Use the [`forwardForecast`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#forwardforecast) property to extend the trendline into the future.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,7 +166,7 @@ The value set for forwardForecast is used to determine the distance moving towar
 
 **Backward Forecasting**
 
-The value set for the backwardForecast is used to determine the past trends.
+Use the [`backwardForecast`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#backwardforecast) property to extend the trendline into past data points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,7 +182,7 @@ The value set for the backwardForecast is used to determine the past trends.
 
 ## Show or hide a trendline
 
-You can show or hide the trendline by setting trendline `visible` property.
+Control visibility using the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#visible) property of the trendline.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 To render a range step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `RangeStepArea` in your chart configuration. This indicates that the data should be represented as a range step area chart, which is ideal for displaying data points as a range with high and low values. It connects these points with vertical and horizontal lines, creating a step like appearance.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `RangeStepArea` in your chart configuration. This indicates that the data should be represented as a range step area chart, which is ideal for displaying data points as a range with high and low values. It connects these points with vertical and horizontal lines, creating a step like appearance.
 
 2. **Inject the RangeStepAreaSeries module**: Use the `@NgModule.providers` method to inject the `RangeAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range step area series are available in your chart.
 
@@ -37,7 +37,7 @@ To render a range step area series in your chart, you need to follow a few steps
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#low) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ The following properties can be used to customize the `range step area` series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +81,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Border**
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) property to customize the width, color and dasharray of the series border.
+Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to configure the border width, color, and dasharray of the range step area series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 **Step**
 
-Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#step) property to change the position of the steps in a range step area series.
+Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#step) property to change the position of the steps in a range step area series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,7 +142,7 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 **No risers**
 
-You can eliminate the vertical lines between points by using the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
+You can eliminate the vertical lines between points by using the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,7 +166,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,7 +186,7 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/accumulati
 
 **Fill**
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to set the fill color for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,7 +206,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulati
 
 **Border**
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the border width and color for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -228,7 +228,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +248,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,5 +268,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

@@ -32,7 +32,7 @@ An axis can be positioned in the chart area using `crossesAt` and `crossesInAxis
 
 ## Title
 
-You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#title) property to provide quick information to the user about the data plotted in the axis.
+You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#title) property to provide quick information to the user about the data plotted in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 
 ## Title Rotation
 
-By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#titlerotation) property, you can rotate the axis title from 0 to 360 degree.
+By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#titlerotation) property, you can rotate the axis title from 0 to 360 degree.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/
 
 ## Tick Lines Customization
 
-You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#minorticklines) properties in the axis.
+You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minorticklines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 
 ## Grid Lines Customization
 
-You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#minorgridlines) properties in the axis.
+You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minorgridlines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,7 +114,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#isinversed) to true.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#isinversed) to true.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -131,7 +131,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 ## Opposed Position
 
 <!-- markdownlint-disable MD012 -->
-To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#opposedposition) property of the axis to true.
+To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#opposedposition) property of the axis to true.
 <!-- markdownlint-disable MD012 -->
 
 {% tabs %}

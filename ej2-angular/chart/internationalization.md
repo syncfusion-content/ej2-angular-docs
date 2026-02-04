@@ -10,22 +10,22 @@ domainurl: ##DomainURL##
 
 # Internationalization in Angular Chart component
 
-Chart provide supports for internationalization for below chart elements.
+Chart provides support for internationalization for the following elements:
 
-* Datalabel.
-* Axis label.
-* Tooltip.
+- Data label
+- Axis label
+- Tooltip
 
-For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/angular/documentation/chart/internationalization/?no-cache=1).
+For more information about number and date formatting, see the internationalization guide: [`internationalization`](https://ej2.syncfusion.com/angular/documentation/chart/internationalization/?no-cache=1).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**
 
-Globalization is the process of designing and developing an component that works in different cultures/locales. Internationalization  library is used to globalize number, date, time values in Chart component using  `labelFormat` property in axis.
+Globalization is the process of designing and developing a component that works in different cultures/locales. Use the internationalization library to localize numbers, dates, and times in the Chart component, for example by using the axis `labelFormat` property.
 
 **Numeric Format**
 
-In the below example axis, point  and tooltip labels are globalized to EUR.
+The example below globalizes axis, point, and tooltip labels to the EUR currency format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

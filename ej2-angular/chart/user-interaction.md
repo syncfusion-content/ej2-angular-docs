@@ -20,7 +20,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 **Enable Tooltip for Data Point**
 
 <!-- markdownlint-disable MD012 -->
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to true and by injecting `TooltipService` into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#enable) property to true and by injecting `TooltipService` into the `NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 
 **Customize the Appearance of Tooltip**
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#border-bordermodel) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#textstyle-fontmodel) property in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#border-bordermodel) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#textstyle-fontmodel) property in the tooltip is used to customize the font of the tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,9 +90,9 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 
 Chart can be zoomed in three ways.
 
-* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
-* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
-* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
+* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enableselectionzooming) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
+* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablemousewheelzooming) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
+* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#enablepinchzooming) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
 
 >Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
 
@@ -113,7 +113,7 @@ Selecting the Pan option will allow to pan the chart and selecting the Reset opt
 
 **Modes of Zooming**
 
-The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#mode) property in zoomSettings specifies whether the chart is allowed to scale along the horizontal axis or vertical axis. The default value of the mode is XY (both axis).
+The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#mode) property in zoomSettings specifies whether the chart is allowed to scale along the horizontal axis or vertical axis. The default value of the mode is XY (both axis).
 
 There are three types of mode.
 
@@ -135,7 +135,7 @@ There are three types of mode.
 
 **Customizing Zooming Toolbar**
 
-By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show your desire tools in the toolbar using [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbaritems) property.
+By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show your desire tools in the toolbar using [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#toolbaritems) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -157,7 +157,7 @@ Crosshair has a vertical and horizontal line to view the value of the axis at mo
 
 **Enable Crosshair**
 
-Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` in the corresponding axis.
+Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltipModel#enable) property of `crosshairTooltip` in the corresponding axis.
 
 
 
@@ -175,8 +175,8 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 **Customization**
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#fill) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#textstyle) property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively.
-Color and width of the crosshair line can be customized by using the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettingsModel/#line) property in the crosshair.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip#fill) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip#textstyle) property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively.
+Color and width of the crosshair line can be customized by using the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettingsModel#line) property in the crosshair.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,7 +196,7 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 
 Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
 
-Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#enable) property of the crosshair to true and [`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings#enable) property of the crosshair to true and [`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings#shared) property in `tooltip` to true in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -299,7 +299,7 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 
 **Selection Type**
 
-You can select multiple points or series, by enabling the [`isMultiSelect`](https://ej2.syncfusion.com/angular/documentation/api/chart/#ismultiselect) property.
+You can select multiple points or series, by enabling the [`isMultiSelect`](https://ej2.syncfusion.com/angular/documentation/api/chart#ismultiselect) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,7 +315,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 
 **Customizing Selection Style**
 
-You can apply custom style to selected points or series with [`selectionStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#selectionstyle) property.
+You can apply custom style to selected points or series with [`selectionStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#selectionstyle) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -331,7 +331,7 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 
 **Selection on Load**
 
-You can able to select a point or series programmatically on a chart using [`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/#selecteddataindexes) property.
+You can able to select a point or series programmatically on a chart using [`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart#selecteddataindexes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

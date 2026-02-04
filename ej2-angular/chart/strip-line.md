@@ -14,13 +14,11 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-EJ2 chart supports horizontal and vertical strip lines and customization of stripline in both orientation.
-To use Stripline in axis, we need to inject `StriplineService` into the `@NgModule.providers`
+The Angular Chart component supports horizontal and vertical strip lines, providing visual guides to highlight specific ranges in the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements. To use strip line features, inject `StriplineService` into the `@NgModule.providers`
 
 ## Horizontal Strip lines
 
-You can create Horizontal stripline by adding the `stripline` in the vertical axis and set `visible` option to true.
-Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+Horizontal strip lines are created by adding the `stripline` configuration to the vertical axis and setting the `visible` property to `true`. They highlight horizontal ranges in the chart, and multiple strip lines can be added to the same axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,10 +32,10 @@ Striplines are rendered in the specified start to end range and you can add more
   
 {% previewsample "page.domainurl/samples/chart/axis/strip-line-cs5" %}
 
-## Vertical Striplines
+## Vertical striplines
 
-You can create vertical stripline by adding the`stripline` in the horizontal axis and set `visible` option to true.
 Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+Vertical strip lines are created by adding the `stripline` configuration to the horizontal axis and enabling the `visible` property. They highlight vertical regions in the chart and support multiple entries for an axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,8 +51,13 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Customize the strip line
 
-Starting value in specific strip line can be customized by `start` property in strip line. Similarly, ending value is customized by `end`. It can be also set for starting from the corresponding origin of the axis by `startFromOrigin`.
-Size of the strip line is customized by `size`. Border for the stripline is customized by `border`. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by `zIndex`.
+Strip lines can be customized to highlight specific regions more effectively:
+- Use `start` to set the beginning value of the strip line.
+- Use `end` to define the ending value.
+- Use `startFromOrigin` to begin the strip line from the axis origin.
+- Use `size` to specify the strip line height or width (based on orientation).
+- Use `border` to customize border appearance.
+- Use `zIndex` to control whether the strip line appears behind or above chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,8 +73,10 @@ Size of the strip line is customized by `size`. Border for the stripline is cust
 
 ## Customize the stripline text
 
-You can customize the text rendered in stripline by `textStyle` property. Rotation of the strip line text can be changed by `rotation` property.
-Horizontal and Vertical alignment of stripline text can be changed by `horizontalAlignment` and `verticalAlignment` property.
+Strip line text labels can be customized for readability and visual presentation:
+- Use `textStyle` to set text appearance.
+- Use `rotation` to rotate the strip line text.
+- Use `horizontalAlignment` and `verticalAlignment` to adjust label placement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,7 +92,7 @@ Horizontal and Vertical alignment of stripline text can be changed by `horizonta
 
 ## Dash Array
 
-You can create dash array stripline by using `dashArray` property. The Striplines are rendered with specified dash array values.
+Dashed strip lines can be rendered using the `dashArray` property. The dash pattern is defined using a series of numbers representing dash and gap lengths.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,13 +106,13 @@ You can create dash array stripline by using `dashArray` property. The Stripline
   
 {% previewsample "page.domainurl/samples/chart/axis/strip-line-cs9" %}
 
-## Recurrence Stripline
+## Recurrence stripline
 
-The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+Recurring strip lines help mark repeating events across the chart axis. The following properties configure recurrence:
 
-* `isRepeat`       - It is used for enable / disable the recurrence strip line.
-* `repeatEvery`    - It is used for mention the stripline interval.
-* `repeatUntil`    - It specifies the end value at which point strip line has to stop repeating.
+- `isRepeat` – Enables or disables repeating strip lines.
+- `repeatEvery` – Specifies the interval at which the strip line repeats.
+- `repeatUntil` – Defines the end value up to which strip lines should repeat.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,18 +126,18 @@ The strip lines to be drawn repeatedly at the regular intervals – this will be
   
 {% previewsample "page.domainurl/samples/chart/axis/strip-line-cs10" %}
 
-## Size Type
+## Size type
 
-The `sizeType` property refers the size of the stripline. They are,
+The `sizeType` property determines how strip line size is interpreted. Supported units include:
 
-* `Auto`
-* `Pixel`
-* `Years`
-* `Months`
-* `Days`
-* `Hours`
-* `Minutes`
-* `Seconds`
+- `Auto`
+- `Pixel`
+- `Years`
+- `Months`
+- `Days`
+- `Hours`
+- `Minutes`
+- `Seconds`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,14 +151,15 @@ The `sizeType` property refers the size of the stripline. They are,
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs18" %}
 
-## Segment Stripline
+## Segment stripline
 
-You can create stripline in a particular region with respect to segment. You can enable the segment stripline using `isSegmented` property. The start and end value of this type of stripline can be defined using `segmentStart` and `segmentEnd` properties.
+Segment strip lines highlight a specific region corresponding to another axis. This is useful for marking regions that depend on values across two dimensions.
 
-* `isSegmented`     - It is used for enable the segment stripline.
-* `segmentStart`    - Used to change the segment start value. Value correspond to associated axis.
-* `segmentEnd`      - Used to change the segment end value. Value correspond to associated axis.
-* `segmentAxisName` - Used to specify the name of the associated axis.
+Key properties:
+- `isSegmented` – Enables segmented strip lines.
+- `segmentStart` – Defines the starting point of the segment line.
+- `segmentEnd` – Defines the ending point of the segment line.
+- `segmentAxisName` – Specifies the associated axis for segmentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,6 +173,6 @@ You can create stripline in a particular region with respect to segment. You can
   
 {% previewsample "page.domainurl/samples/chart/axis/strip-line-cs11" %}
 
-## See Also
+## See also
 
-* [Mark the threshold in chart](./how-to/threshold#mark-a-threshold-in-chart)
+- [Mark the threshold in chart](./how-to/threshold#mark-a-threshold-in-chart)

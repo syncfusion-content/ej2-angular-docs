@@ -12,11 +12,10 @@ domainurl: ##DomainURL##
 
 ## Adding a new data point
 
-The `addPoint` method is used to dynamically add a new data point to the chart series. This method is particularly useful when you want to update the chart with a new data point without having to refresh the entire chart. This method takes two parameters:
+Use the `addPoint` method to dynamically append a new data point to a series. This is useful for real-time data streams, user interactions, or incremental data loading. The method accepts the following parameters:
  
-* The first parameter is the new data point to add to your existing data source.
-* The optional second parameter specifies the animation duration for adding the new data point.
-
+* **Data point** (required): The new data object to append to the series (must match the datasource structure)
+* **Animation duration** (optional): Duration in milliseconds for the entry animation
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/dynamic-update/add-point/src/app.component.ts %}
@@ -31,10 +30,10 @@ The `addPoint` method is used to dynamically add a new data point to the chart s
 
 ## Removing an existing data point
 
-The `removePoint` method is used to dynamically remove a data point from the chart series. This method is particularly useful when you want to update the chart by removing an existing data point without having to refresh the entire chart. This method takes two parameters:
+Use the `removePoint` method to dynamically delete a data point from a series by its index. This is useful for filtering data, removing outliers, or responding to user actions. The method accepts the following parameters:
  
-* The first parameter is the index of the data point that needs to be removed from the existing data source.
-* The optional second parameter specifies the animation duration for removing the data point.
+* **Point index** (required): The zero-based index of the data point to remove
+* **Animation duration** (optional): Duration in milliseconds for the exit animation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,10 +49,10 @@ The `removePoint` method is used to dynamically remove a data point from the cha
 
 ## Replacing entire data points
 
-To replace the existing data source in the chart with a new data source, you can simply use the `setData` method. This method allows you to replace the existing data points in the chart series with a new set of data points, enabling you to easily update the chart with new information. This method takes two parameters:
+Use the `setData` method to replace all data points in a series with a new dataset. This is useful for category switching, time range changes, or complete data refreshes. The method accepts the following parameters:
  
-* The first parameter is the new set of data points to be updated.
-* The optional second parameter specifies the animation duration for updating the new data source.
+* **New data source** (required): The complete new dataset array to display
+* **Animation duration** (optional): Duration in milliseconds for the transition animation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +68,7 @@ To replace the existing data source in the chart with a new data source, you can
 
 ## Click to add or remove a data point
 
-You can use mouse or touch events to dynamically add or remove data points from an existing data source by clicking on the appropriate position within the chart area. To add a new data point to the existing data source, click anywhere in the chart area, retrieve the x-axis and y-axis information of the clicked location from the `chartMouseClick` event arguments. Then, utilize the `addPoint` method to add a new data point to the existing data source.
+Enable users to add or remove data points by clicking on the chart. Listen to the `chartMouseClick` event to capture click coordinates and point information. When a user clicks within the chart area, extract the x and y axis values from the event arguments. If the location is empty, use `addPoint` to add a new data point at those coordinates. If a user clicks on an existing data point, identify its index and use `removePoint` to delete it. This creates an intuitive interface for data exploration and editing.
 
 To remove a data point from the existing data source, simply click on the desired data point. To achieve this, first, verify whether the clicked data point obtained from `chartMouseClick` already exists in the data source. If it does, remove it by utilizing the `removePoint` method based on its index.
 

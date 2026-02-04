@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Chart component
 
-The Chart component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
 
-The accessibility compliance for the Chart component is outlined below.
+The Chart component's accessibility compliance is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -41,7 +41,7 @@ The accessibility compliance for the Chart component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Chart component:
+The Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Chart component:
 
 * img (role)
 * button (role)
@@ -52,7 +52,7 @@ The Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patt
 
 ## Keyboard interaction
 
-The Chart component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Chart component.
+The Chart component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guidelines, making it easier for assistive technology users and keyboard-only users to navigate the chart. The following keyboard shortcuts are supported by the Chart component.
 
 | **Press** | **To do this** |
 | --- | --- |
