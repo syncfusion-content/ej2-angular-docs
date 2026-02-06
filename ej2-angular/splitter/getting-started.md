@@ -18,54 +18,66 @@ To get started quickly with Angular Splitter using CLI and Schematics, check out
 
 Follow these steps to create and configure a basic Angular CLI application.
 
-### Prerequisites
+## Setup Angular Environment
 
-To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+To install Angular CLI use the following command.
 
-* Angular: 6+
-* TypeScript: 2.6+
+```bash
+npm install -g @angular/cli
+```
 
-### Setting up an Angular project
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Angular provides a simple way to set up a project using the [Angular CLI](https://github.com/angular/angular-cli) tool.
+### Installing a specific version
 
-Install the CLI application globally in your machine.
+To install a particular version of Angular CLI, use:
 
-```javascript
+```bash
+npm install -g @angular/cli@21.0.0
+```
 
-  npm install -g @angular/cli
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 
 ```
 
-### Create a new application
+* By default, a CSS-based application is created. Use SCSS if required:
 
-```javascript
-
-  ng new syncfusion-angular-app
-
+```bash
+ng new syncfusion-angular-app --style=scss
 ```
 
-Once you have executed the above command you may ask for following options,
-* Would you like to add Angular routing?
-* Which stylesheet format would you like to use?
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=SCSS argument on create project.
+![Initial_setup](images/SSR.png)
 
-Example code snippet.
+* Select the required AI tool or 'none' if you do not need any AI tool.
 
-```javascript
+![Initial_setup](images/Ai.png)
 
-  ng new syncfusion-angular-app --style=SCSS
+* Navigate to your newly created application directory:
 
+```bash
+cd syncfusion-angular-app
 ```
 
-Navigate to the created project folder.
-
-```javascript
-
-  cd syncfusion-angular-app
-
-```
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Splitter package
 
@@ -181,10 +193,10 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 
 ```css
 
-      @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+      @import '../node_modules/@syncfusion/ej2-icons/styles/material3.css';
+      @import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+      @import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
 
 ```
 

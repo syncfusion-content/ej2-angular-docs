@@ -10,21 +10,19 @@ domainurl: ##DomainURL##
 
 # Legend in Angular Maps component
 
-A Legend is a visual representation of the symbols used on the Maps. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property to **true**.
+A Legend is a key on a Maps that contains descriptions for swatches of symbols. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property to **true**.
 
-## Modes of legend
+## Legend modes
 
-Legend had two types of mode.
-1. **Default** mode
-2. **Interactive** mode
+Legends support two display modes: **Default** mode and **Interactive** mode.
 
 ### Default mode
 
-Default mode legends having symbols with legend labels, used to identify the shape or bubble or marker color. To enable this option by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#mode) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **Default**.
+Default mode legends having symbols with legend labels, used to identify the shape or bubble or marker color. To enable this option by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#mode) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **Default**.
 
 ### Interactive mode
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. To enable this type of mode by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#mode) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **Interactive**. The [`invertedPointer`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#invertedpointer) property is used to enable or disable the visibility of the inverted pointer in interactive legend in Maps.
+Interactive mode enhances user experience by displaying an arrow pointer that indicates the exact range color in the legend when hovering over corresponding map shapes. Enable this mode by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#mode) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **Interactive**. The [`invertedPointer`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#invertedpointer) property controls the visibility of the inverted pointer in the interactive legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,20 +43,20 @@ The legend can be positioned in the following two ways:
 * Absolute position
 * Dock position
 
-<b>Absolute position</b>
+**Absolute position**
 
-The legend of the Maps can be positioned using the [`location`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#location) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property. For positioning the legend based on co-ordinates corresponding to a Maps, the [`position`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#position) property is set as **Float**.
+The legend can be positioned at specific coordinates using the [`location`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#location) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel), based on the X and Y axis values. For positioning the legend using absolute coordinates, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#position) property to **Float**.
 
-<b>Dock position</b>
+**Dock position**
 
-Legends are positioned in the following locations within the container. The [`position`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#position) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property is used to set these options in Maps.
+Legends can be docked to specific locations within the Maps container. The [`position`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#position) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) is used to set these options.
 
 * Top
 * Left
 * Bottom
 * Right
 
-The above four positions can be aligned with combination of **Near**, **Center** and **Far** using [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#alignment) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property. So, the legend can be aligned to 12 positions.
+Each of these four positions can be further aligned using **Near**, **Center**, or **Far** through the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#alignment) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel). This provides 12 possible alignment combinations for precise legend placement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,9 +72,9 @@ The above four positions can be aligned with combination of **Near**, **Center**
 
 ## Legend for shapes
 
-Legend for shapes can be generated from color mapping types such as equal color mapping, range color mapping and desaturation color mapping.
+Legends for map shapes can be generated from various color mapping types, including equal color mapping, range color mapping, and desaturation color mapping. The following data source demonstrates permanent and non-permanent member countries in the UN Security Council.
 
-The below code snippet demonstrate the equal color mapping legends for the shapes. To bind the given data source to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/) property. Set the value of [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapepropertypath) to **name** and [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapedatapath) to **Country**. To enable equal color mapping, set the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/) as an array in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel/) property. Finally, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **true**. The [`label`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/#label) property in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/) property is used to set the text name for legend in Maps.
+The following code snippet demonstrates how to configure equal color mapping legends for shapes. Bind the data source to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#datasource) property of [`layerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel) property. Set the [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapepropertypath) to **name** and [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapedatapath) to **Country**. Configure equal color mapping by setting the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel) as an array in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel) property. Finally, enable the legend by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true**. The [`label`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel#label) property in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel) is used to define the text displayed in the legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,7 +90,9 @@ The below code snippet demonstrate the equal color mapping legends for the shape
 
 ### Legend shape
 
-Maps supports the following types of legend shapes. The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#shape) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property can be used to change the type of legend shapes.
+The Maps component supports various legend shape types to match different visualization needs. Use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#shape) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to specify the desired shape.
+
+Available legend shapes:
 
 * Circle
 * Rectangle
@@ -105,24 +105,26 @@ Maps supports the following types of legend shapes. The [`shape`](https://ej2.sy
 * Pentagon
 * InvertedTriangle
 
-The shape of legends can be customized using the [`shapeWidth`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#shapewidth), [`shapeHeight`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#shapeheight), [`shapeBorder`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#shapeborder) and [`shapePadding`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#shapepadding) properties.
+Customize legend shape dimensions and appearance using the [`shapeWidth`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#shapewidth), [`shapeHeight`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#shapeheight), [`shapeBorder`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#shapeborder) and [`shapePadding`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#shapepadding) properties.
 
 ### Customization
 
-The following properties are available in legend to customize the legend shape and legend text in Maps.
+The legend appearance and behavior can be extensively customized using the following properties in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel).
 
-* [`background`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#background) - To customize the background color of the Legend.
-* [`border`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#border) - To customize the color, width and opacity of the border for the Legend.
-* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#fill) - To apply the color for the Legend.
-* [`labelDisplayMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#labeldisplaymode) - To customize the display mode for the Legend text.
-* [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#labelposition) - To customize the position of the Legend text.
-* [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#orientation) - To customize the orientation of the Legend.
-* [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#textstyle) - To customize the text style for Legend.
-* [`title`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#title) - To apply the title for the Legend.
-* [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#titlestyle) - To customize the style of the title for the Legend.
-* [`height`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#height) - To customize the height of the Legend.
-* [`width`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#width) - To customize the width of the Legend.
-* [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#opacity) - To apply the opacity to the Legend.
+**Appearance properties:**
+
+* [`background`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#background) - To customize the background color of the Legend.
+* [`border`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#border) - To customize the color, width and opacity of the border for the Legend.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#fill) - To apply the color for the Legend.
+* [`labelDisplayMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#labeldisplaymode) - To customize the display mode for the Legend text.
+* [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#labelposition) - To customize the position of the Legend text.
+* [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#orientation) - To customize the orientation of the Legend.
+* [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#textstyle) - To customize the text style for Legend.
+* [`title`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#title) - To apply the title for the Legend.
+* [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#titlestyle) - To customize the style of the title for the Legend.
+* [`height`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#height) - To customize the height of the Legend.
+* [`width`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#width) - To customize the width of the Legend.
+* [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#opacity) - To apply the opacity to the Legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,7 +140,7 @@ The following properties are available in legend to customize the legend shape a
 
 ### Legend for items excluded from color mapping
 
-The legend can be enabled for items excluded from the color mapping using the [`color`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/#color) property in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/). Refer to the **Population_density** data which demonstrates the population density of some countries.
+Legends can display items that fall outside the defined color mapping ranges. This is useful when the data contains values that do not match any specified color mapping criteria. Use the [`color`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel#color) property in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel)to assign colors to these excluded items. The following example uses **population_density** data that demonstrates the population density of various countries.
 
 ```typescript
 export let Population_density = [
@@ -168,7 +170,7 @@ export let Population_density = [
     ];
 ```
 
-In the following example, color mapping is added for the ranges from **0** to **200**. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the [`color`](../api/maps/colorMappingSettingsModel/#color) property alone in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/). To enable legend for these items, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) to **true**.
+The following example demonstrates how to display legends for items excluded from color mapping. In this example, color mapping is configured for density values ranging from 0 to 200. Any records with values outside this range will not match the defined color mappings. To assign a color to these excluded items, set only the [`color`](../api/maps/colorMappingSettingsModel#color) property in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel) without specifying range values. Enable the legend by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +186,7 @@ In the following example, color mapping is added for the ranges from **0** to **
 
 ### Hide desired legend items
 
-Use the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/#showlegend) in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/) property to show or hide the desired legend items in Maps. If the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel/#showlegend) property is set to **false**, the legend item will be hidden. otherwise, it will be visible.
+Control the visibility of individual legend items using the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel#showlegend) in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/colorMappingSettingsModel). Setting this property to **false** hides the corresponding legend item, while **true** keeps it visible. This is useful for simplifying legends by removing unnecessary or redundant entries.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,7 +202,7 @@ Use the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps
 
 ### Hide legend items based data source value
 
-Depending on the boolean values provided in the data source, the legend items will be hidden or visible. Bind the field name that contains the visibility state in the data source to the [`showLegendPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#showlegendpath) property of the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) to achieve this.
+Legend item visibility can be controlled dynamically based on values in the data source. This allows data-driven control over which legend items appear. Bind the data source field that contains the visibility state to the [`showLegendPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#showlegendpath) property of the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to enable this functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -216,7 +218,7 @@ Depending on the boolean values provided in the data source, the legend items wi
 
 ### Binding legend item text from data source
 
-To show the legend text based on values provided in the data source, use the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#valuepath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/).
+Display dynamic legend text based on data source values using the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#valuepath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel). This property binds a field from the data source to the legend text, allowing for data-driven legend labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -232,7 +234,7 @@ To show the legend text based on values provided in the data source, use the [`v
 
 ### Hide duplicate legend items
 
-To hide the duplicate legend items in Maps, set the [`removeDuplicateLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#removeduplicatelegend) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/).
+To hide the duplicate legend items in Maps, set the [`removeDuplicateLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#removeduplicatelegend) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,14 +250,14 @@ To hide the duplicate legend items in Maps, set the [`removeDuplicateLegend`](ht
 
 ### Toggle option in legend
 
-The toggle option has been provided for legend. If the legend can be toggled, the given color will be changed to the corresponding Maps shape item. To enable the toggle options in Legend, set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel/#enable) property of the [`toggleLegendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel) to **true**.
+The toggle feature allows users to interactively show or hide Maps elements by clicking legend items. When a legend item is toggled, the corresponding Maps shapes change appearance to indicate their toggled state. Enable legend toggling by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel#enable) property of the [`toggleLegendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel) to **true**.
 
-The following properties are available to customize the toggle option in legend.
+The following properties customize the appearance of toggled Maps elements:
 
-* [`applyShapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel/#applyshapesettings) – To apply a [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel/#fill) property color to the shapes when toggling the legend items.
-* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel/#fill) - To apply the color to the shape of the Maps for which legend item is toggled.
-* [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel/#opacity) – To customize the transparency for the shapes for which legend item is toggled.
-* [`border`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel/#border) – To customize the color, width and opacity of the border of the shapes in Maps.
+* [`applyShapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel#applyshapesettings) – To apply a [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#fill) property color to the shapes when toggling the legend items.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel#fill) - To apply the color to the shape of the Maps for which legend item is toggled.
+* [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel#opacity) – To customize the transparency for the shapes for which legend item is toggled.
+* [`border`](https://ej2.syncfusion.com/angular/documentation/api/maps/toggleLegendSettingsModel#border) – To customize the color, width and opacity of the border of the shapes in Maps.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -271,7 +273,7 @@ The following properties are available to customize the toggle option in legend.
 
 ## Enable legend for bubbles
 
-To enable the legend for the bubble by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **true** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **Bubbles**.
+Display a legend for bubble visualizations by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true** and the [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **Bubbles**. This creates legend entries that represent the bubble data categories or value ranges.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -287,7 +289,7 @@ To enable the legend for the bubble by setting the [`visible`](https://ej2.syncf
 
 ## Enable legend for markers
 
-To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **true** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **Markers**. The [`legendText`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#legendtext) property in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel) can be used to show the legend text based on values provided in the data source.
+Enable marker legends by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **Markers**. The [`legendText`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel#legendtext) property in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel) to define legend text based on data source values, providing clear identification for different marker categories.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -301,9 +303,9 @@ To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.co
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs60" %}
 
-### Imitate/Map marker shape to the legend shape
+### Map marker shape to legend shape
 
-To imitate or map the marker shape with its legend item shape, set the [`useMarkerShape`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#usemarkershape) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property.
+Match the legend item shape with the actual marker shape displayed on the map by setting the [`useMarkerShape`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#usemarkershape) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

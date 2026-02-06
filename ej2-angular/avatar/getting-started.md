@@ -12,29 +12,66 @@ domainurl: ##DomainURL##
 
 The following section explains the steps required to create a simple **Avatar** component using styles and its basic usage.
 
-## Setting up Angular project
+## Setup Angular Environment
 
-Angular provides an efficient way to create new projects using the Angular CLI tool.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+To install Angular CLI use the following command.
 
-Install the CLI application globally using the following command:
-
-```sh
+```bash
 npm install -g @angular/cli
 ```
 
-Create a new Angular application:
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-```sh
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder:
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-```sh
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
 cd syncfusion-angular-app
 ```
 
->Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section for detailed information about setting up Angular CLI projects.
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Avatar component dependencies
 
@@ -89,17 +126,17 @@ To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 To render the Avatar component, import the required stylesheets in the `[src/styles.css]` file:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
 ```
 
 Alternatively, import the styles directly relative to the **node_modules** folder based on your CSS file's location, as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
 ```
 
 >Note: To use combined component styles, refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) for your application.
@@ -150,4 +187,4 @@ The following example demonstrates a basic Avatar component with initials:
   
 {% previewsample "page.domainurl/samples/avatar/getting-started-cs1" %}
 
-> Refer to the [Angular Avatar](https://www.syncfusion.com/angular-components/angular-avatar) feature tour page for comprehensive feature demonstrations. Explore the [Angular Avatar example](https://ej2.syncfusion.com/angular/demos/#/material/avatar/default) to learn data presentation and manipulation techniques.
+> Refer to the [Angular Avatar](https://www.syncfusion.com/angular-components/angular-avatar) feature tour page for comprehensive feature demonstrations. Explore the [Angular Avatar example](https://ej2.syncfusion.com/angular/demos/#/material3/avatar/default) to learn data presentation and manipulation techniques.

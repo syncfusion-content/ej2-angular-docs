@@ -21,15 +21,14 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs1/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs1" %}
+
 
 > Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to **true** in particular column.
 
@@ -40,14 +39,12 @@ The row pinning feature in the Grid control keeps important rows always visible 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs2/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs2" %}
 
 ## Selecting the pinned rows
@@ -57,14 +54,12 @@ The row pinning feature allows selection on the pinned rows just like normal row
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs3/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs3" %}
 
 > The [selectionSettings->persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
@@ -76,14 +71,12 @@ The row pinning feature ensures that pinned rows remain fully integrated with fi
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs4/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs4" %}
 
 ## CRUD operations with row pinning
@@ -93,14 +86,12 @@ The row pinning feature fully supports CRUD operations by mirroring changes betw
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs5/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs5" %}
 
 ## Dynamic row pinning
@@ -110,12 +101,10 @@ Row pinning provides dynamic control through the built-in context menu, allowing
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-pinning-cs6/src/app.component.ts %}
-
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-pinning-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs6" %}

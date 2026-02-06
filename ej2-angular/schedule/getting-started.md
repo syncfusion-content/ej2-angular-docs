@@ -47,7 +47,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package s
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. Use the following command to install the latest Ivy package.
 
-Add [`@syncfusion/ej2-angular-schedule`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-schedule`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-schedule --save
@@ -57,7 +57,7 @@ npm install @syncfusion/ej2-angular-schedule --save
 
 For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-schedule@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-schedule@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-schedule@ngcc --save
@@ -66,7 +66,7 @@ npm install @syncfusion/ej2-angular-schedule@ngcc --save
 To specify the NGCC package in `package.json`, add the `-ngcc` suffix to the version number.
 
 ```bash
-@syncfusion/ej2-angular-schedule:"20.2.38-ngcc"
+@syncfusion/ej2-angular-schedule:"32.1.19-ngcc"
 ```
 
 >**Note**: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
@@ -76,15 +76,15 @@ To specify the NGCC package in `package.json`, add the `-ngcc` suffix to the ver
 The necessary CSS files for the Schedule component are located in the `ej2-angular-schedule` package. You can reference them in your `[src/styles.css]` file.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-angular-schedule/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
 ```
 
 ## Module injection
@@ -152,7 +152,7 @@ The output will display an empty Schedule component.
 
 ## Populating appointments
 
-To populate the Schedule with appointments, you can use either a local JSON array or a remote data service. Assign the data to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property, which is part of the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) configuration.
+To populate the Schedule with appointments, you can use either a local JSON array or a remote data service. Assign the data to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property, which is part of the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) configuration.
 
 The `StartTime` and `EndTime` fields are mandatory for each appointment. The following example uses default fields like `Id`, `Subject`, `StartTime`, and `EndTime`.
 
@@ -232,7 +232,7 @@ For a full list of available appointment fields, refer to the [event fields docu
 
 ## Setting the date
 
-By default, the Schedule component displays the current system date. To set a specific date, use the [`selectedDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#selecteddate) property.
+By default, the Schedule component displays the current system date. To set a specific date, use the [`selectedDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#selecteddate) property.
 
 `[src/app/app.component.ts]`
 
@@ -260,7 +260,7 @@ export class AppComponent {
 
 ## Setting the view
 
-The default view of the Schedule is `Week`. To change the current view, set the [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#currentview) property to one of the following view names:
+The default view of the Schedule is `Week`. To change the current view, set the [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) property to one of the following view names:
 
 *   Day
 *   Week
@@ -316,5 +316,5 @@ The output will display the Scheduler with the specified view configuration.
   
 {% previewsample "page.domainurl/samples/schedule/views-cs1" %}
 
-> You can also explore our [Angular Schedule Example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/schedule/overview), which shows how to use toolbar buttons to interact with Schedule features.
+> You can also explore our [Angular Schedule Example](https://ej2.syncfusion.com/angular/demos/#/material3/schedule/overview), which shows how to use toolbar buttons to interact with Schedule features.
 ```

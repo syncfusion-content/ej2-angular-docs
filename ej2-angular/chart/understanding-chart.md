@@ -17,22 +17,22 @@ The following image highlights the primary elements of a chart:
 ## Title
 
 The chart title conveys the overall purpose or subject of the visualization. It typically appears at the top of the chart and can be customized in terms of alignment, style, and formatting.  
-For more details, see the [Title and Subtitle](./title-subtitle.md) section.
+For more details, see the [Title and Subtitle](https://ej2.syncfusion.com/angular/documentation/chart/title-subtitle) section.
 
 ## Series
 
 A series represents a group of data points plotted on the chart. Charts can include one or more series depending on the scenario, and each series can use different chart types such as line, column, area, or other supported visualizations.  
-For more details, see the [Series](./chart-types/line.md) section.
+For more details, see the [Series](https://ej2.syncfusion.com/angular/documentation/chart/chart-types/line) section.
 
 ## Tooltip
 
 Tooltips display helpful information when users hover over a data point or series. They offer interactive and contextual insights, such as exact values or additional metadata, and can be customized to match the design or analytical needs of the application.  
-For more details, see the [Tooltip](./tool-tip.md) section.
+For more details, see the [Tooltip](https://ej2.syncfusion.com/angular/documentation/chart/tool-tip) section.
 
 ## Legend
 
 The legend identifies each series in the chart, making it easier for users to understand dataset distinctions. It also supports toggling the visibility of individual series to facilitate interactive data exploration.  
-For more details, see the [Legend](./legend.md) section.
+For more details, see the [Legend](https://ej2.syncfusion.com/angular/documentation/chart/legend) section.
 
 ## Axes
 

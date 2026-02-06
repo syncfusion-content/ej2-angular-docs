@@ -82,9 +82,9 @@ PDF export provides an option to define a data source dynamically before exporti
 
 ## Exporting Custom Aggregates in Tree Grid
  
-The Tree Grid enables exporting custom aggregates, which summarize column data, to an PDF document using the `PdfAggregateQueryCellInfo` event.
+The Tree Grid enables exporting custom aggregates, which summarize column data, to an PDFdocument using the `PdfAggregateQueryCellInfo` event.
  
-In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `PdfAggregateQueryCellInfo` event customizes the exported cell values in the PDF document.
+In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `PdfAggregateQueryCellInfo` event customizes the exported cell values in the PDFdocument.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

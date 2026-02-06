@@ -11,11 +11,10 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
+    </ejs-diagram>
     <button (click) = "ChangeColor()">Change Color</button>
-    <button (click) = "ChangeSize()">Change Size</button>
-    <ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
-    </ejs-diagram>`,
+    <button (click) = "ChangeSize()">Change Size</button>`,
   styles: [
     `button {
       margin-left: 10px;

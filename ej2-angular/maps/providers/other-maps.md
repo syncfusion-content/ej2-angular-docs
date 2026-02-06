@@ -10,19 +10,33 @@ domainurl: ##DomainURL##
 
 # Other maps in Angular Maps component
 
-Apart from OpenStreetMap and Bing Maps, you can also render Maps from other online map service providers by specifying the URL provided by those providers in the [urlTemplate](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#urltemplate) property. The URL template concept has been implemented in such a way that any online map service providers using the following template can benefit from previewing their Map in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Maps component.
+In addition to OpenStreetMap, Bing Maps, and Azure Maps, the Maps component supports integration with other third-party online map service providers. Custom map providers can be rendered by specifying their tile server URL in the [urlTemplate](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#urltemplate) property. The Maps component supports any tile-based map provider that uses standard URL template formats for tile requests.
+
+## URL template format
+
+The Maps component uses a standardized URL template format for requesting map tiles. Any map service provider using the following tile URL structure is compatible with the component:
 
 <!-- markdownlint-disable MD034 -->
 
 Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
 
-* "${z}" - It represents zoom factor (level).
-* "${x}" - It indicates tile image x-position (tileX).
-* "${y}" - It indicates tile image y-position (tileY).
+* **{z}** - Represents the zoom level (automatically replaced by the control)
+* **{x}** - Represents the tile X coordinate (automatically replaced by the control)
+* **{y}** - Represents the tile Y coordinate (automatically replaced by the control)
 
-In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
+The Maps component automatically substitutes these placeholders with the appropriate values based on the current map view, zoom level, and visible tile range. Authentication keys or API tokens required by the map provider can be appended to the URL as query parameters.
 
-Following is an example of how to add a TomTom map. You can generate an API key by following the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) and then adding the key to the URL.
+## Prerequisites
+
+Before integrating a third-party map provider, the following prerequisites should be met:
+
+* **Provider account** - An active account with the chosen map service provider
+* **API key or token** - Valid authentication credentials for accessing the tile service
+* **Service terms** - Understanding of the provider's usage terms, rate limits, and attribution requirements
+
+## Adding TomTom Maps
+
+The following example demonstrates how to integrate TomTom Maps. To obtain a TomTom API key, visit the [TomTom Developer Portal](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction), create an account, and generate an API key. Replace `subscription_key` in the URL template with the actual API key.
 
 ```typescript
 
@@ -51,7 +65,7 @@ export class AppComponent implements OnInit {
 
 ## Enabling zooming and panning
 
-Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
+Tile-based map layers support zooming and panning interactions for enhanced map exploration. Zooming provides a closer view of specific areas for detailed analysis, while panning allows navigation across different regions of the map. These features can be enabled using the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel) property with toolbar controls for user interaction.
 
 ```typescript
 
@@ -89,7 +103,7 @@ export class AppComponent implements OnInit {
 
 ## Adding markers and navigation line
 
-Markers can be added to the layers of tile Maps by setting the corresponding location's coordinates of latitude and longitude using [markerSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#markersettings) property. Navigation lines can be added on top of an tile Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [navigationLineSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#navigationlinesettings).
+Markers can be added to tile-based map layers to highlight specific locations by setting the latitude and longitude coordinates using [markerSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#markersettings) property. Navigation lines can be drawn on top of the tile layer to visualize routes or connections between locations by configuring the [navigationLineSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#navigationlinesettings) with corresponding latitude and longitude coordinates.
 
 ```typescript
 
@@ -153,7 +167,7 @@ export class AppComponent implements OnInit {
 
 ## Adding sublayer
 
-Any GeoJSON shape can be rendered as a sublayer on top of the tile Maps layer for highlighting a particular continent or country in tile Maps by adding another layer and specifying the [type](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#type) property of Maps layer to **SubLayer**.
+GeoJSON shapes can be rendered as a sublayer on top of the tile-based map layer to highlight specific regions such as continents, countries, or custom geographic areas. This is accomplished by adding an additional layer and setting the [type](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#type) property to **SubLayer**. The sublayer overlays the base map tiles while maintaining interactivity with the underlying map.
 
 ```typescript
 
@@ -192,7 +206,7 @@ export class AppComponent implements OnInit {
 
 ## Enabling legend
 
-The legend can be added to the tile Maps by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true**.
+A legend can be displayed with tile-based maps to provide visual context for markers, shapes, or data classifications. The legend is enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true**. The legend can be configured to display marker shapes, custom icons, and interactive toggle functionality for controlling layer visibility.
 
 ```typescript
 

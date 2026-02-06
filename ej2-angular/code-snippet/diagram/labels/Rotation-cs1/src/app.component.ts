@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramModule, DiagramComponent, AnnotationConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -13,7 +13,7 @@ standalone: true,
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150 [width]=100 [height]=100>
                 <e-node-annotations>
-                    <e-node-annotation content="Annotation" rotationReference='Page' [constraints]="constraints">
+                    <e-node-annotation content="Annotation" rotationReference='Page'>
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
@@ -24,8 +24,6 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public constraints: AnnotationConstraints = AnnotationConstraints.Select | AnnotationConstraints.Rotate
-
 }
 
 

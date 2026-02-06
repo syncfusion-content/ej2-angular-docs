@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## State Persistence
 
-State persistence allows the Maps to retain the current model value in the browser cookies for state maintenance. This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/maps/#enablepersistence) property which is set to **false** by default. When this property is set to **true**, some of the Maps component model values are preserved even after the page is refreshed.
+State persistence enables the Maps component to retain the current state in browser storage for state maintenance across page refreshes. This feature is controlled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/maps#enablepersistence) property which is set to **false** by default. When this property is set to **true**, specific Maps component model values are preserved even after the page is refreshed.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

@@ -73,7 +73,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-filemanager`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-filemanager`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-filemanager --save
@@ -83,7 +83,7 @@ npm install @syncfusion/ej2-angular-filemanager --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-filemanager@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-filemanager@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-filemanager@ngcc --save
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-filemanager@ngcc --save
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below:
 
 ```bash
-@syncfusion/ej2-angular-filemanager:"20.2.38-ngcc"
+@syncfusion/ej2-angular-filemanager:"32.1.19-ngcc"
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
@@ -127,7 +127,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 @import 'node_modules/@syncfusion/ej2-angular-filemanager/styles/tailwind3.css';
 ```
 
->Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in your application.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> component
 
@@ -154,7 +154,7 @@ export class AppComponent {
 }
 ```
 
->**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
+>**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
 
 ## Run the application
 
@@ -182,7 +182,7 @@ The following samples shows the basic File Manager component in browser:
 
 ## File Download support
 
-To enable the download operation, initialize the `downloadUrl` property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of the File Manager component.
+To enable the download operation, initialize the `downloadUrl` property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -207,7 +207,7 @@ export class AppComponent {
 
 ## File Upload support
 
-To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of File Manager Component.
+To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -232,7 +232,7 @@ export class AppComponent {
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager component, need to initialize the `getImageUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of File Manager component.
+To perform the image preview support in the File Manager component, need to initialize the `getImageUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -286,12 +286,12 @@ export class AppComponent { }
   
 {% previewsample "page.domainurl/samples/file-manager/overview-cs1" %}
 
->**Note:** The appearance of the File Manager can be customized by using [cssClass](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
+>**Note:** The appearance of the File Manager can be customized by using [cssClass](https://ej2.syncfusion.com/angular/documentation/api/file-manager#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
 ## Switching initial view of the File Manager
 
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
-When the File Manager is initially rendered, [created](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#created) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
+The initial view of the File Manager can be changed to details or largeicons view with the help of [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view) property. By default, the File Manager will be rendered in large icons view.
+When the File Manager is initially rendered, [created](https://ej2.syncfusion.com/angular/documentation/api/file-manager#created) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -309,12 +309,12 @@ When the File Manager is initially rendered, [created](https://ej2.syncfusion.co
 
 ## Maintaining component state on page reload
 
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view)
-* Previous navigation path of the File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#path)
-* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#selecteditems)
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablepersistence) property which maintains the following,
+* Previous view of the File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view)
+* Previous navigation path of the File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path)
+* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems)
 
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#failure) event will be triggered if the request gets failed.
+For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -330,11 +330,11 @@ For every operation in File Manager, ajax request will be sent to the server whi
   
 {% previewsample "page.domainurl/samples/file-manager/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#refreshfiles) method.
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager#refreshfiles) method.
 
 ## Rendering component in right-to-left direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablertl) API to true.
+It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablertl) API to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -352,7 +352,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 
 ## Specifying the current path of the File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#path) property.
+The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path) property.
 
 The following code snippet demonstrates specifying the current path in File Manager on rendering.
 

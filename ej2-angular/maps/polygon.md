@@ -10,23 +10,23 @@ domainurl: ##DomainURL##
 
 # Polygon shape in Angular Maps component
 
-The Maps component allows you to add polygon shape to a geometry map or an online map by using the properties in the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel/#polygons). This section describes how to add polygon shape to the map and customize them.
+The Maps component supports rendering custom polygon shapes as overlays on both geometry-based maps and online tile maps. Polygons are useful for highlighting specific geographic regions, marking zones of interest, drawing custom boundaries, or visualizing areas such as coverage zones, territorial boundaries, or restricted areas. This feature is configured using the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel#polygons) property, which allows multiple polygon shapes to be added and customized independently.
 
 ## Adding polygon shape
 
-To render polygon shape in Maps, **Polygon** module must be injected into the Maps using `Maps.Inject(Polygon)` method. The polygon shape can be rendered over the map layer by defining the [points](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#points) property in the `polygons` of the Maps component. The `points` property uses a collection of latitude and longitude values to define the polygon shape.
+Polygons are rendered over map layers by defining the [points](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#points) property in the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel#polygons) collection. The [points](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#points) property accepts an array of latitude and longitude coordinate pairs that define the vertices of the polygon shape. These coordinates are connected in sequence to form the closed polygon boundary.
 
-The `polygons` provides the following properties for customizing the polygon shape of the Maps component.
+The following properties are available for customizing polygon appearance:
 
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#fill) - It is used to change the color of the polygon shape.
-* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#opacity) - It is used to change the opacity of the polygon shape.
-* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#bordercolor) - It is used to change the color of the border in the polygon shape.
-* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#borderwidth) - It is used to change the width of the border in the polygon shape.
-* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#borderopacity) - It is used to change the opacity of the border in the polygon shape.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#fill) - It is used to change the color of the polygon shape.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#opacity) - It is used to change the opacity of the polygon shape.
+* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#bordercolor) - It is used to change the color of the border in the polygon shape.
+* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#borderwidth) - It is used to change the width of the border in the polygon shape.
+* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#borderopacity) - It is used to change the opacity of the border in the polygon shape.
 
-> You can also include “n” polygon shapes using the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel/#polygons) property.
+> You can also include “n” polygon shapes using the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel#polygons) property.
 
-The following example shows how to customize the polygon shape over the geometry map.
+The following example demonstrates how to add and customize a polygon shape on a geometry map.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,15 +42,15 @@ The following example shows how to customize the polygon shape over the geometry
 
 ## Tooltip
 
-Tooltip is used to display more information about a polygon shape during a mouse or touch interaction. Tooltip and tooltip template can be enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/#visible) property to **true** in the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/). Additionally, you need to set the desired content as a value to the [tooltipText](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#tooltiptext) property in the `polygons` property to show the tooltip. If you add 'n' numbers of polygon shapes, you can add the `tooltipText` property to each polygon, which will display the tooltip for the associated polygon shape.
+Tooltips provide additional information about polygon shapes during mouse hover or touch interactions. Enable tooltips by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel#visible) property to **true** in the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel). Define the tooltip content using the [tooltipText](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#tooltiptext) property within each polygon configuration. When multiple polygons are present, each can have its own unique tooltip text.
 
 ### Tooltip customization
 
-The following properties are available in the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/) to customize the appearance of the tooltip.
+Customize tooltip appearance using the following properties in [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel):
 
-* [border](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/#border) - To change the color, width, and opacity of the border of the tooltip in the polygon shape.
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/#fill) - Applies the color of the tooltip in the polygon shape.
-* [textStyle](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel/#textstyle) - To change the style of the text in the tooltip of the polygon shape.
+* [border](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel#border) - Customizes the color, width, and opacity of the tooltip border.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel#fill) - Specifies the background color of the tooltip.
+* [textStyle](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonTooltipSettingsModel#textstyle) - Defines the font style, size, color, and other text properties for tooltip content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ The following properties are available in the [tooltipSettings](https://ej2.sync
 
 ### Tooltip template
 
-Any HTML element can be rendered in the tooltip of the polygon shapes using the [tooltipTemplate](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel/#tooltiptemplate) property of the `polygons` property. If you add 'n' numbers of polygon shapes, you can add the `tooltipTemplate` property to each polygon, which will display the tooltip for the associated polygon shape.
+Custom HTML content can be displayed in polygon tooltips using the [tooltipTemplate](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingModel#tooltiptemplate) property. This allows for rich formatting, images, or complex layouts within the tooltip. Each polygon can have its own unique tooltip template, enabling different visualizations for different polygon shapes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

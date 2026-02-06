@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Menu component
 
-This section explains how to customize the visual appearance of the Angular Menu component by overriding default CSS classes or using Theme Studio at [https://ej2.syncfusion.com/themestudio/?theme=material](https://ej2.syncfusion.com/themestudio/?theme=material) to create custom themes like Material, Bootstrap, and more.
+This section explains how to customize the visual appearance of the Angular Menu component by overriding default CSS classes or using Theme Studio at [https://ej2.syncfusion.com/themestudio/?theme=material3](https://ej2.syncfusion.com/themestudio/?theme=material3) to create custom themes like material3, Bootstrap, and more.
 
-To modify the Menu’s appearance, define custom styles in the application’s stylesheet (e.g., `styles.css`) targeting the CSS classes listed below, ensuring styles are applied after importing required Syncfusion CSS files (e.g., `@syncfusion/ej2-navigations/styles/material.css`). Alternatively, use the `cssClass` property to apply custom styles directly to the Menu component.
+To modify the Menu’s appearance, define custom styles in the application’s stylesheet (e.g., `styles.css`) targeting the CSS classes listed below, ensuring styles are applied after importing required Syncfusion CSS files (e.g., `@syncfusion/ej2-navigations/styles/material3.css`). Alternatively, use the `cssClass` property to apply custom styles directly to the Menu component.
 
 The following table lists CSS classes and their corresponding sections in the Menu component.
 

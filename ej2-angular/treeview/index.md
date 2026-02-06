@@ -25,7 +25,7 @@ TreeView can be populated from a data source such as an array of JavaScript obje
 
 * **[Node Editing](node-editing/)**: Allows you to change the text of a node in TreeView.
 
-* **[Sorting](https://ej2.syncfusion.com/angular/documentation/api/treeview#sortorder)**: Allows display of the TreeView nodes in an `ascending` or a `descending` order.
+* **[Sorting](../api/treeview#sortorder)**: Allows display of the TreeView nodes in an `ascending` or a `descending` order.
 
 * **[Template](template/)**: Allows you to customize the nodes in TreeView.
 

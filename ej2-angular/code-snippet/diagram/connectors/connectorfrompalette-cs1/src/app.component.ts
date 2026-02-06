@@ -9,7 +9,7 @@ providers: [ ],
 standalone: true,
     selector: "app-container",
     template: `
-    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="150px" [palettes]="palettes" [getConnectorDefaults] ='getConnectorDefaults' [symbolHeight]=80 [symbolWidth]=80 >
+    <ejs-symbolpalette #symbolpalette id="symbolpalette"width="100%" height="120px" [palettes]="palettes" [getConnectorDefaults] ='getConnectorDefaults' [symbolHeight]=80 [symbolWidth]=80 >
     </ejs-symbolpalette>
     <ejs-diagram #diagram id="diagram" width="100%" height="480px" >
     </ejs-diagram>`,

@@ -109,8 +109,8 @@ export class AppComponent {}
 Add Breadcrumb component's styles as given below in `style.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3';
 ```
 
 ## Running the application

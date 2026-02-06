@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { sampleData } from './datasource';
+import { FormsModule } from '@angular/forms';
 import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent,EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
