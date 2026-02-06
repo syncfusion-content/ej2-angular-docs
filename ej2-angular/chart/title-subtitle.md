@@ -9,7 +9,10 @@ domainurl: ##DomainURL##
 ---
 
 # Title and Subtitle in Angular Chart Component
+
 Chart titles and subtitles help provide context for the visualized data. The title typically indicates the main subject or metric represented in the chart, while the subtitle adds supporting details such as data sources, time ranges, or explanatory notes. Both elements can be customized in terms of position, alignment, and style to align with application design requirements.
+
+<img src="../../images/titleandsubtitle.png" alt="Chart with title and subtitle formatting example">
 
 ## Chart title
 

@@ -101,8 +101,8 @@ Configure the Syncfusion<sup style="font-size:70%">&reg;</sup> [ej2-angular-layo
 To render the DashboardLayout component, import the DashboardLayout and its dependent component's styles as given below in `[src/styles.css]`.
 
 ```css
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "../../node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css";
 ```
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.

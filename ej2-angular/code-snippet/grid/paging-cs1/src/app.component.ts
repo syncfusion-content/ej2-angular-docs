@@ -6,16 +6,9 @@ import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService, SortService, FilterService, GroupService ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data'>
                 <e-columns>

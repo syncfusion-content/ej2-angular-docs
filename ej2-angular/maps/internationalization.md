@@ -15,7 +15,7 @@ Internationalization enables the Maps component to display content in different 
 * Data label
 * Tooltip
 
-For more information about number and date formatters, refer to the [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html) section.
+For more information about number and date formatters, refer to the [`internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) section.
 
 <!-- markdownlint-disable MD036 -->
 

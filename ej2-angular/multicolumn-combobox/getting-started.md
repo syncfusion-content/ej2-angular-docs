@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular MultiColumn ComboBox component
 
-This section explains how to create a simple **MultiColumn ComboBox** component and configure its available functionalities in Angular.
+This guide demonstrates how to set up and configure the Syncfusion Angular MultiColumn ComboBox component, from initial installation through displaying multi-column data with custom column configurations. The MultiColumn ComboBox allows users to select values from a dropdown list that displays multiple columns of data with header support and customizable column widths.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 ## Dependencies
 
@@ -28,11 +30,18 @@ The following list of dependencies are required to use the Angular ComboBox comp
       |-- @syncfusion/ej2-buttons
 ```
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+
+
 ## Setup angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+The easiest way to set up an Angular project is using the [Angular CLI](https://github.com/angular/angular-cli) tool. Follow these steps:
 
-```
+Install the CLI application globally to your machine.
+
+```bash
 npm install -g @angular/cli
 ```
 
@@ -40,9 +49,14 @@ npm install -g @angular/cli
 
 Start a new Angular application using below Angular CLI command.
 
+```bash
+ng new syncfusion-angular-multicolumn-combobox
 ```
-ng new my-app
-cd my-app
+
+Navigate to the created project folder:
+
+```bash
+cd syncfusion-angular-multicolumn-combobox
 ```
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> MultiColumn ComboBox package
@@ -57,34 +71,27 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-multicolumn-combobox`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/26.1.35) package to the application.
+Use the [ng add](https://angular.dev/reference/schematics) command to automatically configure the MultiColumn ComboBox package:
+
+```bash
+ng add @syncfusion/ej2-angular-multicolumn-combobox
+```
+
+This command will install the package (v32.1.19), add peer dependencies, and configure the Material theme automatically.
+
+**For Manual Installation:**
 
 ```bash
 npm install @syncfusion/ej2-angular-multicolumn-combobox --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+>Note: Use @syncfusion/ej2-angular-multicolumn-combobox@32.1.19 for Angular 12+ (Ivy format). For legacy support, see the peer dependency requirements above.
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+## Import Syncfusion CSS styles
 
-Add [`@syncfusion/ej2-angular-multicolumn-combobox@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/26.1.35-ngcc) package to the application.
+When using `ng add @syncfusion/ej2-angular-multicolumn-combobox`, the Material theme is automatically configured in `angular.json`. The MultiColumn ComboBox component styles are included automatically.
 
-```bash
-npm install @syncfusion/ej2-angular-multicolumn-combobox@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-multicolumn-combobox:"26.1.35-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+If you need to manually add or customize the CSS, import the theme in `src/styles.css`:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -94,80 +101,85 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-multicolumn-combobox/styles/material.css';
 ```
 
-## Adding MultiColumn ComboBox component
+>If you want to use combined component styles, please use our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component. Add the Angular MultiColumn ComboBox by using `<ejs-multicolumncombobox>` selector in `template` section of the app.component.ts file.
+## Add MultiColumn ComboBox component
 
-```javascript
+Now, modify the `src/app/app.ts` file to render the MultiColumn ComboBox component using the `<ejs-multicolumncombobox>` selector:
 
-import { Component } from '@angular/core';
+```typescript
+import { Component, OnInit } from '@angular/core';
 import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
 @Component({
-    imports: [ MultiColumnComboBoxModule ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the MultiColumn ComboBox component
-    template: `<ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
+  imports: [MultiColumnComboBoxModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<!-- Render MultiColumn ComboBox -->
+             <ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
 })
-export class AppComponent {}
-
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+  }
+}
 ```
 
 ## Binding data source with fields and columns
 
-After initializing, populate the MultiColumn ComboBox with data by using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#datasource) property, to map the data for each specified columns use the `<e-column>` selector and the [fields](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#fields) property to map the data fields from the dataSource.
+After initializing, populate the MultiColumn ComboBox with data using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#datasource) property. To map data for each column, use the `<e-column>` selector and the [fields](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#fields) property to map data fields from the dataSource:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
 @Component({
-    imports: [ MultiColumnComboBoxModule ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the MultiColumn ComboBox component
-    template: `<ejs-multicolumncombobox id='multicolumn' [dataSource]='employeeData' [fields]='fields'>
-                  <e-columns>
-                    <e-column field='EmpID' header='Employee ID' width='70'></e-column>
-                    <e-column field='Name' header='Name' width='80'></e-column>
-                    <e-column field='Designation' header='Designation' width='60'></e-column>
-                    <e-column field='Country' header='Country' width='80'></e-column>
-                  </e-columns>
-               </ejs-multicolumncombobox>`
+  imports: [MultiColumnComboBoxModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-multicolumncombobox id='multicolumn' [dataSource]='employeeData' [fields]='fields'>
+               <e-columns>
+                 <e-column field='EmpID' header='Employee ID' width='70'></e-column>
+                 <e-column field='Name' header='Name' width='80'></e-column>
+                 <e-column field='Designation' header='Designation' width='60'></e-column>
+                 <e-column field='Country' header='Country' width='80'></e-column>
+               </e-columns>
+             </ejs-multicolumncombobox>`
 })
-export class AppComponent {
-    constructor() {
-    }
-    // define the array of object data
-    public employeeData: Object[] = [ 
-      { "EmpID": 1001, "Name": "Andrew Fuller", "Designation": "Team Lead", "Country": "England" },
-      { "EmpID": 1002, "Name": "Robert", "Designation": "Developer", "Country": "USA" },
-      { "EmpID": 1003, "Name": "John", "Designation": "Tester", "Country": "Germany" },
-      { "EmpID": 1004, "Name": "Robert King", "Designation": "Product Manager", "Country": "India" },
-      { "EmpID": 1005, "Name": "Steven Buchanan", "Designation": "Developer", "Country": "Italy" },
-      { "EmpID": 1006, "Name": "Jane Smith", "Designation": "Developer", "Country": "Europe" },
-      { "EmpID": 1007, "Name": "James Brown", "Designation": "Developer", "Country": "Australia" },
-      { "EmpID": 1008, "Name": "Laura Callahan", "Designation": "Developer", "Country": "Africa" },
-      { "EmpID": 1009, "Name": "Mario Pontes", "Designation": "Developer", "Country": "Russia" }, 
-    ];
-    // maps the appropriate column to fields property
-    public fields: Object = { text: 'Name', value: 'EmpID' };
+export class AppComponent implements OnInit {
+  // Array of employee data
+  public employeeData: Object[] = [
+    { "EmpID": 1001, "Name": "Andrew Fuller", "Designation": "Team Lead", "Country": "England" },
+    { "EmpID": 1002, "Name": "Robert", "Designation": "Developer", "Country": "USA" },
+    { "EmpID": 1003, "Name": "John", "Designation": "Tester", "Country": "Germany" },
+    { "EmpID": 1004, "Name": "Robert King", "Designation": "Product Manager", "Country": "India" },
+    { "EmpID": 1005, "Name": "Steven Buchanan", "Designation": "Developer", "Country": "Italy" },
+    { "EmpID": 1006, "Name": "Jane Smith", "Designation": "Developer", "Country": "Europe" },
+    { "EmpID": 1007, "Name": "James Brown", "Designation": "Developer", "Country": "Australia" },
+    { "EmpID": 1008, "Name": "Laura Callahan", "Designation": "Developer", "Country": "Africa" },
+    { "EmpID": 1009, "Name": "Mario Pontes", "Designation": "Developer", "Country": "Russia" }
+  ];
+  // Maps the data fields to the field property
+  public fields: Object = { text: 'Name', value: 'EmpID' };
+
+  ngOnInit(): void {
+  }
 }
 ```
 
 ## Running the application
 
-After completing the configuration required to render a basic MultiColumn ComboBox, run the following command to display the output in your default browser.
+After completing the configuration required to render a MultiColumn ComboBox component, run the following command to display the output in your default browser:
 
-```
-ng serve
+```bash
+ng serve --open
 ```
 
-The following example illustrates the output in your browser.
+The MultiColumn ComboBox component will be rendered in your browser with the data and columns configured.
+
+The following example illustrates the output in your browser:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -180,14 +192,14 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the MultiColumn ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the MultiColumn ComboBox input element's width, and the height is set to '300px'.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupwidth) properties respectively.
+The height and width of the popup list can be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupwidth) properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are customized:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

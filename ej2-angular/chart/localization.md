@@ -16,7 +16,7 @@ The localization library localizes the Chart's default text content. Static text
 
 <table>
 <tr>
-<td><b>Locale keys</b></td>
+<td><b>Locale key</b></td>
 <td><b>Text to display</b></td>
 </tr>
 <tr>

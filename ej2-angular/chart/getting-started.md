@@ -211,57 +211,6 @@ for each axis label.
   
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs5" %}
 
-## Add Chart Title
-
-You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#title) property to the chart to provide
-quick information to the user about the data plotted in the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs1" %}
-
-## Enable Legend
-
-You can use legend for the chart by setting the `visible` property to true in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#legendsettings) object and by injecting the `LegendService` into the `@NgModule.providers`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/legend-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/legend-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/legend-cs1" %}
-
-## Add Data Label
-
-You can add data labels to improve the readability of the chart.
-This can be achieved by setting the visible property to true in the `dataLabel` object  and by injecting `DataLabelService` into the `@NgModule.providers`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datalabel-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datalabel-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/datalabel-cs1" %}
-
-## Enable Tooltip
 
 The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the enable property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltip) object and by injecting `TooltipService` into the `@NgModule.providers`.
 

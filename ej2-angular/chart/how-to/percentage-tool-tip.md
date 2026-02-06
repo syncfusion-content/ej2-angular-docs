@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Percentage tool tip in Angular Chart component
 
-By using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event, you can show the percentage value for each point of pie series in tooltip.
+By using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event, you can show the percentage value for each point of pie series in tooltip.
 
 To show the percentage value in pie tooltip, follow the given steps:
 
 **Step 1**:
 
-By using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event, you can get the `args.point.y` and `args.series.sumOfPoints` values. You can use these values to calculate the percentage value for each point of pie series. To display the percentage value in tooltip, use the `args.content` property.
+By using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event, you can get the `args.point.y` and `args.series.sumOfPoints` values. You can use these values to calculate the percentage value for each point of pie series. To display the percentage value in tooltip, use the `args.content` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

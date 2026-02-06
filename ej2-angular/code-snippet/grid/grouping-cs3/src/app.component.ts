@@ -7,19 +7,9 @@ import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService,
-                ToolbarService,
-                ExcelExportService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService, SortService, FilterService, GroupService, ToolbarService, ExcelExportService ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowSorting]="true"
                [allowFiltering]="true" [allowGrouping]="true" [pageSettings]='pageSettings'>

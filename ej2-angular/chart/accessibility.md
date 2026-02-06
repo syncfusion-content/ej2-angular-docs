@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Chart component
 
-The Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
+The Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria/#roles) roles.
 
 The Chart component's accessibility compliance is outlined below.
 

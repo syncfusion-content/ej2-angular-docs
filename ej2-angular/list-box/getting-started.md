@@ -8,9 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular List box component
+# Getting started with Angular ListBox component
 
-This section briefly explains how to create a simple **ListBox** component and configure its available functionalities in Angular.
+This guide demonstrates how to set up and configure the Syncfusion Angular ListBox component, from initial installation through displaying lists with data binding and selection. The ListBox component allows users to select one or more items from a predefined list with support for templates, drag-and-drop, and sorting.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 ## Dependencies
 
@@ -25,16 +27,24 @@ The following list of dependencies are required to use the ListBox component in 
         |-- @syncfusion/ej2-lists
         |-- @syncfusion/ej2-inputs
         |-- @syncfusion/ej2-navigations
+        |-- @syncfusion/ej2-notifications
         |-- @syncfusion/ej2-popups
             |-- @syncfusion/ej2-buttons
 
 ```
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+
+
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+The easiest way to set up an Angular project is using the [Angular CLI](https://github.com/angular/angular-cli) tool. Follow these steps:
 
-```
+Install the CLI application globally to your machine.
+
+```bash
 npm install -g @angular/cli
 ```
 
@@ -42,9 +52,14 @@ npm install -g @angular/cli
 
 Start a new Angular application using below Angular CLI command.
 
+```bash
+ng new syncfusion-angular-listbox
 ```
-ng new my-app
-cd my-app
+
+Navigate to the created project folder:
+
+```bash
+cd syncfusion-angular-listbox
 ```
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox package
@@ -59,34 +74,60 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-dropdowns`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38) package to the application.
+Use the [ng add](https://angular.dev/reference/schematics) command to automatically configure the ListBox package:
+
+```bash
+ng add @syncfusion/ej2-angular-dropdowns
+```
+
+This command will install the package (v32.1.19), add peer dependencies, and configure the Material theme automatically.
+
+**For Manual Installation:**
 
 ```bash
 npm install @syncfusion/ej2-angular-dropdowns --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+>Note: Use @syncfusion/ej2-angular-dropdowns@32.1.19 for Angular 12+ (Ivy format). For legacy support, see the peer dependency requirements above.
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+## Import Syncfusion CSS styles
 
-Add [`@syncfusion/ej2-angular-dropdowns@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38-ngcc) package to the application.
+When using `ng add @syncfusion/ej2-angular-dropdowns`, the Material theme is automatically configured in `angular.json`. The ListBox component styles are included automatically.
 
-```bash
-npm install @syncfusion/ej2-angular-dropdowns@ngcc --save
+If you need to manually add or customize the CSS, import the theme in `src/styles.css`:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+>If you want to use combined component styles, please use our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-```bash
-@syncfusion/ej2-angular-dropdowns:"20.2.38-ngcc"
+## Import ListBox in your component
+
+For Angular 19+ standalone applications, import the `ListBoxModule` directly in your component. Modify the `src/app/app.ts` file:
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ListBoxModule } from '@syncfusion/ej2-angular-dropdowns';
+
+@Component({
+  imports: [ListBoxModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<!-- Render ListBox component -->`
+})
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+  }
+}
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+**For Angular 18 and below (NgModule approach):**
 
-## Adding ListBox module
-
-Import ListBox module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-dropdowns`.
+If using NgModule pattern, import `ListBoxModule` in your app.module.ts:
 
  ```typescript
 import { NgModule }      from '@angular/core';
@@ -106,76 +147,73 @@ export class AppModule { }
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox component
 
-Modify the template in `app.component.ts` file to render the Button module.
+Now, modify the `src/app/app.ts` file to render the ListBox component:
 
- ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ListBoxModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+  imports: [ListBoxModule],
+  standalone: true,
   selector: 'app-root',
-  // specifies the template string for the ListBox component
-  template: `<ejs-listbox></ejs-listbox>`,
-  encapsulation: ViewEncapsulation.None
+  template: `<!-- Render ListBox -->
+             <ejs-listbox></ejs-listbox>`
 })
-export class AppComponent  { }
-
-```
-
-## Adding CSS reference
-
-Add List box component's styles as given below in `style.css`.
-
-```css
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+  }
+}
 ```
 
 ## Binding data source
 
-After initialization, populate the ListBox with data using the `dataSource` property.
-Here, an array of object is passed to the ListBox component.
+After initialization, populate the ListBox with data using the `dataSource` property. Here, an array of objects is passed to the ListBox component:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ListBoxModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the ListBox component
-    template: `<ejs-listbox [dataSource]='data'></ejs-listbox>`
+  imports: [ListBoxModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-listbox [dataSource]='data'></ejs-listbox>`
 })
-export class AppComponent {
-    constructor() {
-    }
-    // defined the array of object
-    public data: { [key: string]: Object }[] = [
+export class AppComponent implements OnInit {
+  // Array of data for ListBox
+  public data: { [key: string]: Object }[] = [
     { text: 'Hennessey Venom', id: 'list-01' },
     { text: 'Bugatti Chiron', id: 'list-02' },
     { text: 'Bugatti Veyron Super Sport', id: 'list-03' },
     { text: 'SSC Ultimate Aero', id: 'list-04' },
     { text: 'Koenigsegg CCR', id: 'list-05' },
     { text: 'McLaren F1', id: 'list-06' },
-    { text: 'Aston Martin One- 77', id: 'list-07' },
+    { text: 'Aston Martin One-77', id: 'list-07' },
     { text: 'Jaguar XJ220', id: 'list-08' },
     { text: 'McLaren P1', id: 'list-09' },
-    { text: 'Ferrari LaFerrari', id: 'list-10' },
-];
+    { text: 'Ferrari LaFerrari', id: 'list-10' }
+  ];
+
+  ngOnInit(): void {
+  }
 }
 ```
 
 ## Run the application
 
-After completing the configuration required to render a basic ListBox, run the following command to display the output in your default browser.
+After completing the configuration required to render a ListBox component, run the following command to display the output in your default browser:
 
-```
-ng serve
+```bash
+ng serve --open
 ```
 
-The following example illustrates the output in your browser.
+The ListBox component will be rendered in your browser with the default settings and data.
+
+The following example illustrates the output in your browser:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 

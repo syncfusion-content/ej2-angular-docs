@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Getting started with Angular TextArea component | Syncfusion
-description:  Checkout and learn about Getting started with Angular TextArea component of Syncfusion Essential JS 2 and more details.
+description: Check out how to get started with the Angular TextArea component of Syncfusion Essential JS 2., including setup, configuration, and basic usage.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TextArea Component
+# Getting started with Angular TextArea component
 
-This section briefly explains about how to create a simple TextArea component using Angular seed repository.
+This section explains how to create a simple TextArea component using the Angular CLI.
 
 ## Dependencies
 
@@ -21,14 +21,13 @@ The following list of dependencies are required to use the TextArea component in
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-inputs
         |-- @syncfusion/ej2-base
-
 ```
 
-## Setup angular environment
+## Set up the Angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+Angular provides the easiest way to create Angular projects using the [`Angular CLI`](https://github.com/angular/angular-cli) tool.
 
-Install the CLI application globally to your machine.
+Install the CLI application globally on your machine.
 
 ```bash
 npm install -g @angular/cli
@@ -40,9 +39,9 @@ npm install -g @angular/cli
 ng new syncfusion-angular-textarea
 ```
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
+By default, it installs a CSS-based application. To set up with SCSS, pass the --style=scss flag when creating the project.
 
-Example code snippet.
+Example:
 
 ```bash
 ng new syncfusion-angular-textarea --style=scss
@@ -56,7 +55,7 @@ cd syncfusion-angular-textarea
 
 ## Installing syncfusion<sup style="font-size:70%">&reg;</sup> TextArea package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm: [Syncfusion Angular packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
@@ -64,9 +63,9 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
 
-Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs --save
@@ -74,9 +73,9 @@ npm install @syncfusion/ej2-angular-inputs --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following.
 
-Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs@ngcc --save
@@ -85,42 +84,37 @@ npm install @syncfusion/ej2-angular-inputs@ngcc --save
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
-@syncfusion/ej2-angular-inputs:"20.2.38-ngcc"
+@syncfusion/ej2-angular-inputs:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the `ngcc` tag is not specified while installing the package, the Ivy library package will be installed and the legacy Angular compiler may show a warning.
 
 ## Adding TextArea to the application
 
-* Modify the template in `app.component.ts` file to render the `TextArea` component.
+Use the following snippet in the `src/app/app.ts` file to import the TextArea component.
 
-```typescript
-
-import {TextAreaModule} from '@syncfusion/ej2-angular-inputs'
+```ts
+import { TextAreaModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [        
-      TextAreaModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<textarea id="default"></textarea>`
+  imports: [TextAreaModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-textarea id="default"></ejs-textarea>`
 })
 
-export class AppComponent { }
-
+export class App { }
 ```
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in the `../node_modules/@syncfusion` package folder.
+These can be referenced in [src/styles.css] using the following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 ```
 
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
@@ -151,51 +145,57 @@ The following example illustrates the output in your browser.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea component, you can utilize the [`value`](https://ej2.syncfusion.com/angular/documentation/api/textarea/#value) property. Here's how you can achieve it:
+Set the initial value of the TextArea component using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/textarea/index-default#value) property:
 
 ```typescript
-
 import { Component } from '@angular/core';
- 
+import { TextAreaModule } from '@syncfusion/ej2-angular-inputs';
+
 @Component({
+  imports: [TextAreaModule],
+  standalone: true,
   selector: 'app-root',
   template: `<!-- To Render TextArea component. -->
-                <div class='wrap'>
-                  <ejs-textarea id="default" value="comments"></ejs-textarea>
-                </div>`
+    <div class='wrap'>
+      <ejs-textarea id="default" value="Comments"></ejs-textarea>
+    </div>`
 })
 
-export class AppComponent { }
-
+export class App { }
 ```
 
-* Alternatively, you can set the value of the TextArea using ng-model.
+* Alternatively, set the value of the TextArea using `ngModel`.
 
 ```typescript
-
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { TextAreaModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+  imports: [TextAreaModule, FormsModule],
+  standalone: true,
   selector: 'app-root',
-  template: `
+  template: `<!-- To Render TextArea component. -->
     <div class='wrap'>
       <ejs-textarea id="default" [(ngModel)]="value"></ejs-textarea>
-    </div>
-  `
+    </div>`
 })
-export class AppComponent {
-  value: string = 'Comments'; // Set the initial value here
-}
 
+export class App {
+  value: string = 'Comments';
+}
 ```
 
-* You can dynamically retrieve the value of the TextArea component using the value property bound to `ng-model` of the TextArea component.
+* Retrieve the current value from the property bound via `ngModel`.
 
 ```typescript
-
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { TextAreaModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+  imports: [TextAreaModule, FormsModule],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div class='wrap'>
@@ -204,7 +204,7 @@ import { Component } from '@angular/core';
     </div>
   `
 })
-export class AppComponent {
+export class App {
   value: string = 'Comments'; // Set the initial value here
 
   onButtonClick() {
@@ -212,29 +212,29 @@ export class AppComponent {
     let textareaValue = this.value;
   }
 }
-
 ```
 
-* You can retrieve the value of the TextArea by accessing it as an argument from the [`change`](https://ej2.syncfusion.com/angular/documentation/api/textarea/#change) event.
+* Retrieve the value from the [`change`](https://ej2.syncfusion.com/angular/documentation/api/textarea/index-default#change) event argument.
 
 ```typescript
-
 import { Component } from '@angular/core';
-import { ChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
- 
+import { FormsModule } from '@angular/forms';
+import { TextAreaModule, ChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
+
 @Component({
+  imports: [TextAreaModule, FormsModule],
+  standalone: true,
   selector: 'app-root',
   template: `<!-- To Render TextArea component. -->
-                <div class="wrap">
-                  <input id='default' (Change)="onChange($event)"/><br />
-                </div>`
+    <div class="wrap">
+      <ejs-textarea id='default' (change)="onChange($event)"></ejs-textarea>
+    </div>`
 })
 
-export class AppComponent {
+export class App {
   public onChange(args: ChangedEventArgs) {
-    // get the value of the TextArea component
+    // Get the value of the TextArea component
     let textareaValue = args.value;
   };
 }
-
 ```

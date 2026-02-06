@@ -1,12 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({
-    imports: [
-        SliderModule
-    ],
+    imports: [SliderModule],
     standalone: true,
     selector: 'my-app',
     template: `
@@ -17,7 +13,4 @@ import { Component } from '@angular/core';
     </div>`,
 })
 
-export class AppComponent {
-}
-
-
+export class AppComponent { }

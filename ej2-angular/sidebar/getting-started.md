@@ -16,31 +16,65 @@ To get started quickly with the Angular Sidebar using CLI and Schematics, you ca
 
 {% youtube "https://www.youtube.com/watch?v=CL7Cc2efZ9Q" %}
 
-## Setting up Angular project
+## Setup Angular Environment
 
-Angular provides an efficient way to set up projects using the Angular CLI tool.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command:
 
-Install the CLI application globally on your machine with the following command:
-
-```bash
+```
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Create a new Angular application using the following Angular CLI command:
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder using the following command:
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
 
 ```bash
 cd syncfusion-angular-app
 ```
 
-> Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section for more details on setting up an Angular CLI project.
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Adding Dependencies
 
@@ -100,15 +134,15 @@ To specify the ngcc package in the **package.json** file, add the suffix `-ngcc`
 To render the Sidebar component, import the Sidebar and its dependent components' styles in **src/styles.css** as follows:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
 ```
 
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
 ```
 
 >Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
@@ -273,12 +307,12 @@ The Sidebar can be Expanded or collapsed by swiping on touch devices using [`ena
   
 {% previewsample "page.domainurl/samples/sidebar/gestures-cs1" %}
 
-> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/default) that shows how to render the Sidebar in Angular.
+> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material3/sidebar/default) that shows how to render the Sidebar in Angular.
 
 ## See Also
 
-* [Sidebar with navigation menu](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/sidebar-menu)
-* [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/responsive-panel)
+* [Sidebar with navigation menu](https://ej2.syncfusion.com/angular/demos/#/material3/sidebar/sidebar-menu)
+* [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/material3/sidebar/responsive-panel)
 * [Sidebar with listView](./how-to/initialize-the-sidebar-listview)
 * [Initialize Sidebar using systemjs](./how-to/initialize-sidebar-using-systemjs)
 * [Use case sample](https://ej2.syncfusion.com/showcase/angular/webmail/)

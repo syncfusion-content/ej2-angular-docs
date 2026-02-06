@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Getting started with Angular Image editor component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Image editor component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Image Editor component | Syncfusion
+description: Checkout and learn how to get started with the Angular Image Editor component of Syncfusion Essential JS 2.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Image editor component
+# Getting started with Angular Image Editor component
 
-This section explains how to create and demonstrate the basic usage of the [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor) module.
+This article shows how to set up and use the [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor) module.
 
-To get started quickly with angular Image Editor component using angular CLI, you can check the video below.
+To get started quickly with the Angular Image Editor using the Angular CLI, watch the video below.
 
 {% youtube "https://www.youtube.com/watch?v=NmuHFPCg0UU" %}
 
 ## Dependencies
 
-The list of dependencies required to use the Image Editor module in your application is given below:
+The list of dependencies required to use the Image Editor module in an Angular application is shown below:
 
 ```javascript
 |-- @syncfusion/ej2-angular-image-editor
     |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-     -- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-buttons
-     -- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-image-editor
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-splitbuttons
+        |-- @syncfusion/ej2-base
+        |-- @syncfusion/ej2-data
+        |-- @syncfusion/ej2-buttons
+        |-- @syncfusion/ej2-lists
+        |-- @syncfusion/ej2-dropdowns
+        |-- @syncfusion/ej2-inputs
+        |-- @syncfusion/ej2-navigations
+        |-- @syncfusion/ej2-popups
+        |-- @syncfusion/ej2-splitbuttons
 ```
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use [Angular CLI](https://github.com/angular/angular-cli) to set up an Angular application. To install the Angular CLI, run:
 
 ```
 npm install -g @angular/cli
@@ -45,51 +45,46 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the Angular CLI:
 
-```
+```bash
 ng new my-app
 cd my-app
 ```
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor package
 
-To install Image Editor package, use the following command.
+To install the Image Editor package, run:
 
-```
+```bash
 npm install @syncfusion/ej2-angular-image-editor --save
 ```
 
-The above package installs [Image Editor dependencies](./getting-started#dependencies) which
-are required to render the component in the Angular environment.
+The package installs the [Image Editor dependencies](./getting-started#dependencies) required to render the component.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor component
 
-Modify the template in `app.component.ts` file to render the Angular Image Editor component.
+Use the following snippet in the `src/app/app.ts` file to import the Image Editor component.
 
 ```typescript
-
-import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
 import { Component } from '@angular/core';
+import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
-imports: [        
-        ImageEditorModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
-              <div id="wrapperDiv" style="width:550px;height:350px;">
-               <ejs-imageeditor></ejs-imageeditor>
-              </div>`
+  imports: [ImageEditorModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<!-- To render Image Editor. -->
+    <div id="wrapperDiv" style="width:550px;height:350px;">
+        <ejs-imageeditor></ejs-imageeditor>
+    </div>`
 })
-export class AppComponent  { }
-
+export class App { }
 ```
 
 ## Adding CSS reference
 
-Add Angular Image Editor component's styles as given below in `style.css`.
+The following CSS files are available in the `../node_modules/@syncfusion` package folder. Reference them in `src/styles.css` as shown below. Choose one theme consistently (for example, Material, Tailwind, Fluent, or Bootstrap).
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -105,9 +100,9 @@ Add Angular Image Editor component's styles as given below in `style.css`.
 
 ## Running the application
 
-Run the application in the browser using the following command:
+Run the application in the browser with:
 
-```
+```bash
 ng serve
 ```
 
@@ -125,4 +120,4 @@ The following example shows a basic Image Editor component.
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs6" %}
 
-> You can also explore our [Angular Image Editor example](https://ej2.syncfusion.com/angular/demos/#/material/image-editor/default.html) that shows how to render the Image Editor in Angular.
+> Explore the [Angular Image Editor example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/image-editor/default) on the Syncfusion demos site for a working demonstration of the component.

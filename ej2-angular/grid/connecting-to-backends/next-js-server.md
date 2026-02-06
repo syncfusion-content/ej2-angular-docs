@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 [Next.js](https://nextjs.org/) is a powerful Angular framework designed for building full-stack web applications. It includes built‑in features such as server‑side rendering, automatic code splitting, intuitive routing, and API routes, providing a solid foundation for developing modern, high‑performance applications.
 
-This guide walks through integrating the **Syncfusion Angular Grid** with a **Next.js backend**, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Syncfusion Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
+This guide walks through integrating the Syncfusion Angular Grid with a Next.js backend, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Syncfusion Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
 
 ## Prerequisites
 
@@ -25,16 +25,16 @@ This guide walks through integrating the **Syncfusion Angular Grid** with a **Ne
 
 ## Building the Next.js application
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the project folder:
+Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command prompt opened with <kbd>Win+R</kbd>, or macOS terminal launched with <kbd>Cmd+Space</kbd>) and run the following command to create and navigate to the project folder:
 
 ```bash
-  npm create next-app@latest next_js_server
-  cd next_js_server
+npm create next-app@latest next_js_server
+cd next_js_server
 ```
 Start the development server by running the below command:
 
 ```bash 
-  npm run dev
+npm run dev
 ```
 Now the project has been successfully launched, and the application is available at **http://localhost:3000**.
 
@@ -42,7 +42,7 @@ Now the project has been successfully launched, and the application is available
 
 Next.js Route handlers provide a modern way to create server-side endpoints within the App router, utilizing the Web-standard request and response APIs. They enable the execution of backend operations such as data processing, CRUD actions, and custom API creation without requiring an additional server layer.
 
-Route Handlers are defined in the **route.ts** file within the **app** directory, enabling custom request handlers for specific routes. The following steps outline the process for populating health care data entries:
+Route handlers are defined in the **route.ts** file within the **app** directory, enabling custom request handlers for specific routes. The following steps outline the process for populating health care data entries:
 
 **Step 1:** Create a new route file (**api/health_care/route.ts**) to implement the server-side data logic.
 
@@ -99,7 +99,7 @@ The Syncfusion Angular Grid is a robust, high‑performance component built to e
 Open a Visual Studio Code terminal or Command prompt and run the below command to create a Angular application:
 
 ```bash
-  ng new angular_client
+ng new angular_client
 ```
 
 ### Step 2: Adding Syncfusion packages
@@ -107,11 +107,11 @@ Open a Visual Studio Code terminal or Command prompt and run the below command t
 Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
-  npm install @syncfusion/ej2-angular-grids --save
-  npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-angular-grids --save
+npm install @syncfusion/ej2-data --save
 ```
 
-After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the **src/styles.css** file to ensure proper styling of the Grid component.
+After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the (**src/styles.css**) file to ensure proper styling of the Grid component.
 
 ```css
   [src/styles.css]
@@ -133,15 +133,15 @@ For this project, the "Material 3" theme is applied. Other themes can be selecte
 
 ### Step 3: Add Syncfusion Angular Grid component with Next.js
 
-The Syncfusion Angular Grid provides [custom binding](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#custom-binding), which enables seamless integration with external API services. With this feature, the grid can fetch data from a Next.js server and efficiently display health care details. It supports search, filter, sort, and pagination capabilities, making it easy to navigate and manage large datasets.
+The Syncfusion Angular Grid provides [custom data binding](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#custom-binding), which enables seamless integration with external API services. With this feature, the grid can fetch data from a Next.js server and efficiently display health care details. It supports search, filter, sort, and pagination capabilities, making it easy to navigate and manage large datasets.
 
 In the created angular application, generate a component "doctors" using the below command in Visual Studio Code terminal or Command prompt:
 
 ```bash
-  ng generate component doctors
+ng generate component doctors
 ```
 
-In **src/app/doctors/doctors.html** file, configure the Grid with custom data binding:
+In (**src/app/doctors/doctors.html**) file, configure the Grid with custom data binding:
 
 ```html
 <ejs-grid [dataSource]="data" (dataStateChange)="dataStateChange($event)">
@@ -153,7 +153,7 @@ In **src/app/doctors/doctors.html** file, configure the Grid with custom data bi
 </ejs-grid>
 ```
 
-In **src/app/doctors/doctors.ts** file, define the logic for custom binding:
+In (**src/app/doctors/doctors.ts**) file, define the logic for custom data binding:
 
 ```ts
 import { Component } from '@angular/core';
@@ -193,9 +193,10 @@ export class Doctors {
   }
 }
 ```
-**Custom binding workflow**:
 
-The Syncfusion Angular Grid custom databinding feature to seamlessly integrate with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application‑specific workflows and enabling efficient handling of large datasets. The custom databinding feature can interact with backend APIs through two key events.
+**custom data binding workflow**:
+
+The Syncfusion Angular Grid supports custom data binding, enabling seamless integration with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application‑specific workflows and enabling efficient handling of large datasets. The custom data binding feature can interact with backend APIs through two key events.
 
 - [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange): Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details, which are sent to the API so the request can be processed and data returned in the required "{ result:[], count:100 }" format.
 
@@ -204,18 +205,20 @@ The Syncfusion Angular Grid custom databinding feature to seamlessly integrate w
 Since the `dataStateChange` event does not fire on the first render, use the Angular initialization method (`ngOnInit`) to load the initial dataset when the component initializes. Implement a reusable "fetchData" function that posts the current grid state to the Next.js API and binds the returned result to the grid.
 
 **API response format:**
-  The Grid custom binding feature expects the following response from the backend:
+
+  The Grid custom data binding feature expects the following response from the backend:
+
 ```ts
   { "result": [ /* records to display */ ], "count": 100 }
 ```
 
-This format has already been implemented in the route.ts file during the Next.js server setup. 
+This format has already been implemented in the **route.ts** file during the Next.js server setup. 
 
 ### Step 4: Implement data operations on server-side
 
 In a Next.js server environment, the Syncfusion [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) efficiently handles data operations such as filtering, sorting, searching, paging. It processes the Syncfusion DataManager [Query](https://ej2.syncfusion.com/angular/documentation/data/querying), which specifies all operation details, and executes them directly against the data source. By streamlining these tasks, DataManager ensures consistent, accurate results and significantly reduces development effort and time.
 
-Inside the **api/health_care/route.ts** file, import the `DataManager` and `Query` from the `@syncfusion/ej2-data` package to implement the data operations using the Syncfusion DataManager.
+Inside the (**api/health_care/route.ts**) file, import the `DataManager` and `Query` from the `@syncfusion/ej2-data` package to implement the data operations using the Syncfusion DataManager.
 
 ```typescript
 //[route.ts]
@@ -298,7 +301,7 @@ The [Implement data operations](#step-3-implement-data-operations-on-server-side
 
 ![next_js_filter](../images/next_js_filter.png)
 
-The following code example demonstrates handling the filter action in the server file (**route.ts**) based on the Grid request.
+The following code example demonstrates handling the filter action in the server file **route.ts** based on the Grid request.
 
 ```typescript
 import { Predicate } from '@syncfusion/ej2-data';
@@ -326,7 +329,7 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-Complex filter conditions, where multiple predicates are combined with logical operators such as **and** or **or**, can be handled using the following helper functions in the server file (**route.ts**):
+Complex filter conditions, where multiple predicates are combined with logical operators such as **and** or **or**, can be handled using the following helper functions in the server file **route.ts**:
 
 ```typescript
 // Normalize condition string (default to 'and')
@@ -387,7 +390,7 @@ The [Implement data operations](#step-3-implement-data-operations-on-server-side
 
 ![next_js_search](../images/next_js_search.png)
 
-The following code example demonstrates handling the search action inside the server (**route.ts**) file based on the Grid request:
+The following code example demonstrates handling the search action inside the server **route.ts** file based on the Grid request:
  
 ```typescript
 import { NextResponse, NextRequest } from "next/server";
@@ -450,7 +453,7 @@ The [Implement data operations](#step-3-implement-data-operations-on-server-side
 
 ![next_js_sort](../images/next_js_sort.png)
 
-The following code example demonstrates handling the sort action inside the server (**route.ts**) file based on the Grid request:
+The following code example demonstrates handling the sort action inside the server **route.ts** file based on the Grid request:
 
 ```typescript
 import { NextResponse, NextRequest } from "next/server";
@@ -519,7 +522,7 @@ The [Implement data operations](#step-3-implement-data-operations-on-server-side
 
 ![next_js_page](../images/next_js_page.png)
 
-The following code example demonstrates handling the paging action inside the server (**route.ts**) file based on the Grid request:
+The following code example demonstrates handling the paging action inside the server **route.ts** file based on the Grid request:
 
 ```typescript
 import { NextResponse, NextRequest } from "next/server";
@@ -551,7 +554,7 @@ export async function GET(request: NextRequest) {
   
 ### Step 9: Implement CRUD operations
 
-Editing operations in the Grid are enabled through custom binding by configuring the editSettings properties(`allowEditing`, `allowAdding`, and `allowDeleting`) to "true" and injecting the `EditService` module in the `providers` property. The `dataSourceChanged` event must be included in the Grid component to send CRUD requests to the Next.js server. During a CRUD operation, this event is triggered and provides the necessary parameters to the server for processing create, update, or delete actions.
+Editing operations in the Grid are enabled through custom data binding by configuring the editSettings properties(`allowEditing`, `allowAdding`, and `allowDeleting`) to "true" and injecting the `EditService` module in the `providers` property. The `dataSourceChanged` event must be included in the Grid component to send CRUD requests to the Next.js server. During a CRUD operation, this event is triggered and provides the necessary parameters to the server for processing create, update, or delete actions.
 
 Grid data requires a primary key to modify row data based on the database’s unique values. To enable this, configure a primary key by setting the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property must be set to "true" on the column that contains unique values.
 
@@ -609,9 +612,9 @@ export async function POST(request: NextRequest) {
 }
 ```
 
-The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s add record details provided in the event arguments. Once the server("POST") method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
+The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s add record details provided in the event arguments. Once the server ("POST") method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
 
-The image illustrates the newly insert data passed to the server through the `dataSourceChanged` event arguments in the Grid:
+The image illustrates the newly inserted data passed to the server through the `dataSourceChanged` event arguments in the Grid:
 
 ![next_js_add](../images/next_js_add.png)
 
@@ -663,7 +666,7 @@ export async function PUT(request: NextRequest) {
 
 The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s update record details provided in the event arguments. Once the server ("PUT") method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
 
-The image illustrates the update data passed to the server through the `dataSourceChanged` event arguments in the Grid:
+The image illustrates the updated data passed to the server through the `dataSourceChanged` event arguments in the Grid:
 
 
 ![next_js_edit](../images/next_js_edit.png)
@@ -704,7 +707,7 @@ export async function DELETE(request: NextRequest) {
 
 The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s delete record details provided in the event arguments. Once the server ("DELETE") method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
 
-The image illustrates the update data passed to the server through the `dataSourceChanged` event arguments in the Grid:
+The image illustrates the deleted data passed to the server through the `dataSourceChanged` event arguments in the Grid:
 
 ![Next_JS_Delete](../images/next_js_delete.png)
 
@@ -767,7 +770,7 @@ export class Doctors {
 Generate a new Angular component named "patients":
 
 ```bash
-  ng generate component patients
+ng generate component patients
 ```
 
 **Step 3:** Add the code for the Grid containing appointment details inside the dynamic component (**src/app/patients/patients.html**).
@@ -812,23 +815,21 @@ Open a terminal in Visual Studio Code or use the Command Prompt. Start the serve
  Run the following commands to start the server:
 
 ```bash
-  cd next_js_server
-  npm run dev
+cd next_js_server
+npm run dev
 ```
 
 The server is now running at http://localhost:3000/.
 
-
- Execute the below commands to run the client application:
+Execute the below commands to run the client application:
 
 ```bash
-  cd angular_client
-  ng serve
+cd angular_client
+ng serve
 ```
 
 Open http://localhost:4200/ in the browser.
---- 
-  
+
 ## Complete sample repository
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding_Next_JS_Server)
@@ -838,7 +839,7 @@ A complete, working sample implementation is available in the [GitHub repository
 This guide demonstrates how to:
 1. Create a Next.js project and install the required packages. [🔗](#building-the-nextjs-application)
 2. Configure Next.js route handlers to create server-side API endpoints. [🔗](#configuring-nextjs-server)
-3. Integrate Syncfusion Angular Grid with the Next.js server using the custom binding feature. [🔗](#connecting-syncfusion-angular-grid-with-nextjs)
+3. Integrate Syncfusion Angular Grid with the Next.js server using the custom data binding feature. [🔗](#connecting-syncfusion-angular-grid-with-nextjs)
 4. Handle data operations like filtering, searching, sorting, and paging in the Grid. [🔗](#step-4-implement-data-operations-on-server-side)
 5. Implement CRUD operations (Create, Read, Update, Delete) using POST, GET, PUT, and DELETE methods. [🔗](#step-9-implement-crud-operations)
 6. Set up navigation to other pages using the Next.js routing feature. [🔗](#routing)
@@ -847,5 +848,7 @@ This guide demonstrates how to:
 The application now provides a complete solution for integrating the Syncfusion Angular Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
+
   - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
   - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

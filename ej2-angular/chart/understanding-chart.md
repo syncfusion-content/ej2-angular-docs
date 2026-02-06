@@ -34,6 +34,6 @@ For more details, see the [Tooltip](./tool-tip.md) section.
 The legend identifies each series in the chart, making it easier for users to understand dataset distinctions. It also supports toggling the visibility of individual series to facilitate interactive data exploration.  
 For more details, see the [Legend](./legend.md) section.
 
-## Axes
+## Axis
 
-Axes structure and organize chart data. Standard Cartesian charts include an x-axis for independent variables and a y-axis for dependent variables. Three-dimensional charts add a z-axis to represent depth. Polar and radar charts instead use radial axes to measure distance from the center and angular axes to define direction. These axes help translate complex datasets into a readable graphical format.
+Axis structure and organize chart data. Standard Cartesian charts include an x-axis for independent variables and a y-axis for dependent variables. Polar and radar charts instead use radial axis to measure distance from the center and angular axis to define direction. These axis help translate complex datasets into a readable graphical format.

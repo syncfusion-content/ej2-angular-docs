@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Maps component
 
-This section explains you the steps required to create a map and demonstrate the basic usage of the Maps component.
+This section explains the steps required to create a map and demonstrates the basic usage of the Maps component.
 
 You can explore some useful features in the Maps component using the following video.
 
@@ -32,8 +32,8 @@ The following is a list of the dependencies required to use the Maps component.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to set up an Angular application.
+To install the Angular CLI, use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -41,7 +41,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the Angular CLI:
 
 ```bash
 ng new my-app
@@ -52,35 +52,35 @@ cd my-app
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) have moved to the Ivy distribution to support the Angular Ivy rendering engine (see https://angular.io/guide/ivy); these packages are compatible with Angular version 21 and later. To install the package, run:
 
-Add [`@syncfusion/ej2-angular-maps`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-maps`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-maps --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To install the `ngcc` package, run:
 
-Add [`@syncfusion/ej2-angular-maps@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-maps@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-maps@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in `package.json`, append the suffix `-ngcc` to the package version, for example:
 
 ```bash
-@syncfusion/ej2-angular-maps:"20.2.38-ngcc"
+@syncfusion/ej2-angular-maps:"32.1.19-ngcc"
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
@@ -109,15 +109,15 @@ export class AppComponent  { }
 
 ```
 
-Add the **world-map** data in the **app.component.ts** file.
+Add the `world_map` GeoJSON data to the **app.component.ts** file.
 
->Note: Refer the data for [world-map](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620) here. These data must be imported in the **src/app/app.component.ts** file.
+Note: Refer to the world_map GeoJSON data at Syncfusion Downloads: https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620. This data must be imported into `src/app/app.component.ts`.
 
 ```javascript
 import { world_map } from './world-map';
 ```
 
-Bind the **world-map** data to the **shapeData** property of the **layer** in the Maps component.
+Bind the **world_map** data to the **shapeData** property of the **layer** in the Maps component.
 
 ```typescript
 @Component({
@@ -182,8 +182,7 @@ export class AppComponent {
 
 ## Module Injection
 
-Maps component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature module using `Maps.Inject()` method.  Find the modules available in maps and its description as follows.
+The Maps component is divided into feature-specific modules. To use a feature, inject its module with the `Maps.Inject()` method. The available modules and their purposes are:
 
 * `AnnotationsService` - Inject this provider to use annotations feature.
 * `BubbleService` - Inject this provider to use bubble feature.
@@ -197,9 +196,7 @@ you need to inject its feature module using `Maps.Inject()` method.  Find the mo
 * `ZoomService` - Inject this provider to use zooming and panning feature.
 * `PolygonService` - Inject this provider to use polygon feature.
 
-For this application we are going to use tooltip, data label and legend features of the maps.
-Now import the MapsTooltip, DataLabel and Legend modules from maps package
-`@syncfusion/ej2-angular-maps`
+This example uses the tooltip, data label, and legend features. Import the MapsTooltip, DataLabel, and Legend modules from `@syncfusion/ej2-angular-maps`.
 
  ```javascript
     import { Component } from '@angular/core';
@@ -236,7 +233,7 @@ let usMap: object =
 
 ```
 
-Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`]property. Now bind the GeoJSON data to the [`shapeData`] property.
+Map elements are rendered within layers. Add a layer collection to the Maps using the [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/layersettingsmodel) property, then bind the GeoJSON data to the [`shapeData`](https://ej2.syncfusion.com/angular/documentation/api/maps/layersettings#shapedata) property.
 
 [`app.module.ts`]
 
@@ -255,7 +252,7 @@ Elements in the maps will get rendered in the layers. So add a layer collection 
 <!-- markdownlint-disable MD022 -->
 ## Bind data source to map
 <!-- markdownlint-disable MD009 -->
-The following properties in layers are used for binding data source to map.
+The following layer properties are used to bind a data source to the map.
 
 * dataSource
 * shapeDataPath
@@ -263,7 +260,7 @@ The following properties in layers are used for binding data source to map.
 
 The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
 
-The [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapedatapath) property refers to the field in the `dataSource` that identifies a shape. The [`shapePropertyPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#shapepropertypath) property refers to the field in `shapeData` that matches `shapeDataPath`. When these values match, the corresponding object from the `dataSource` is bound to the shape.
 
 The JSON object "electionData" is used as data source below.
 

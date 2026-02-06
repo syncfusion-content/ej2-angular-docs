@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 Chart provides support for internationalization for the following elements:
 
-- Data label
-- Axis label
-- Tooltip
+* Datalabel
+* Axis label
+* Tooltip
 
 For more information about number and date formatting, see the internationalization guide: [`internationalization`](https://ej2.syncfusion.com/angular/documentation/chart/internationalization/?no-cache=1).
 

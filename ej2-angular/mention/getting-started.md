@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Mention component
 
-This section explains how to create a simple **Mention** component and demonstrates the basic usage of the Mention component in an Angular environment.
+This guide demonstrates how to set up and configure the Syncfusion Angular Mention component, from initial installation through implementing user mentions with custom characters. The Mention component allows users to mention people or tags in text input with autocomplete suggestions, keyboard navigation, and customizable mention characters.
 
-To get started quickly with angular Mention component using angular CLI, you can check the video below.
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+To get started quickly with Angular Mention component using CLI and Schematics, you can check this video:
 
 {% youtube "https://www.youtube.com/watch?v=CNsnT4i67Qw" %}
 
@@ -27,24 +29,39 @@ The list of dependencies required to use the Mention component in your applicati
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-dropdowns
         |-- @syncfusion/ej2-lists
+        |-- @syncfusion/ej2-inputs
+        |-- @syncfusion/ej2-navigations
+        |-- @syncfusion/ej2-notifications
         |-- @syncfusion/ej2-popups
+            |-- @syncfusion/ej2-buttons
 ```
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+The easiest way to set up an Angular project is using the [Angular CLI](https://github.com/angular/angular-cli) tool. Follow these steps:
 
-```
+Install the CLI application globally to your machine.
+
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create a new application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the Angular CLI:
 
+```bash
+ng new syncfusion-angular-mention
 ```
-ng new my-app
-cd my-app
+
+Navigate to the created project folder:
+
+```bash
+cd syncfusion-angular-mention
 ```
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Mention package
@@ -59,54 +76,65 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package, use the below command.
 
-Add [`@syncfusion/ej2-angular-dropdowns`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.3.47) package to the application.
+Use the [ng add](https://angular.dev/reference/schematics) command to automatically configure the Mention package:
+
+```bash
+ng add @syncfusion/ej2-angular-dropdowns
+```
+
+This command will install the package (v32.1.19), add peer dependencies, and configure the Material theme automatically.
+
+**For Manual Installation:**
 
 ```bash
 npm install @syncfusion/ej2-angular-dropdowns --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+>Note: Use @syncfusion/ej2-angular-dropdowns@32.1.19 for Angular 12+ (Ivy format). For legacy support, see the peer dependency requirements above.
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+## Import Mention in your component
 
-Add [`@syncfusion/ej2-angular-dropdowns@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns/v/20.2.38-ngcc) package to the application.
+For Angular 19+ standalone applications, import the `MentionModule` directly in your component. Modify the `src/app/app.ts` file:
 
-```bash
-npm install @syncfusion/ej2-angular-dropdowns@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-dropdowns:"20.3.47-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding Mention module
-
-Import Mention module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns` [src/app/app.module.ts].
-
-```javascript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Import the MentionModule for the Mention component from the dropdown package.
+```typescript
+import { Component, OnInit } from '@angular/core';
 import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
 
+@Component({
+  imports: [MentionModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<!-- Render Mention component -->`
+})
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+  }
+}
+```
+
+**For Angular 18 and below (NgModule approach):**
+
+If using NgModule pattern, import `MentionModule` in your app.module.ts:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  imports: [ BrowserModule, MentionModule ], // Registering EJ2 Mention Module.
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ]
+  imports: [BrowserModule, MentionModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
 
-## Adding CSS reference
+## Import Syncfusion CSS styles
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder. Add Mentions component's styles as given below in `style.css`.
+When using `ng add @syncfusion/ej2-angular-dropdowns`, the Material theme is automatically configured in `angular.json`. The Mention component styles are included automatically.
+
+If you need to manually add or customize the CSS, import the theme in `src/styles.css`:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
@@ -116,69 +144,78 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/bootstrap5.css';
 ```
 
-## Adding Mention component
+>If you want to use combined component styles, please use our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-Modify the template in the [src/app/app.component.ts] file to render the Mention component. Add the Angular Mention by using `<ejs-mention>` selector in `template` section of the app.component.ts file. To use the Mention component properly, the [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/#target) property should be configured so that it renders the Mention component in the configured element.
+## Add Mention component
 
-```javascript
-import { Component } from '@angular/core';
+Now, modify the `src/app/app.ts` file to render the Mention component using the `<ejs-mention>` selector. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#target) property should be configured to render the Mention component in the target element.
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+  imports: [MentionModule],
+  standalone: true,
   selector: 'app-root',
-  // Specifies the template string for the Mention component
   template: `
-  <label style="font-size: 15px; font-weight: 600;">Comments</label>
-  <!--Element which is the Mention component's target to list the suggestions-->
-  <div id="mentionElement" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
-  <ejs-mention [target]='mentionTarget'></ejs-mention>`
+    <label style="font-size: 15px; font-weight: 600;">Comments</label>
+    <!-- Target element where Mention component renders suggestions -->
+    <div id="mentionElement" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+    <ejs-mention [target]='mentionTarget'></ejs-mention>`
 })
-export class AppComponent {
-    constructor() {
-    }
-    // Defines the target in which the Mention component is rendered.
-    public mentionTarget: "#mentionElement";
+export class AppComponent implements OnInit {
+  // Defines the target element for Mention component
+  public mentionTarget: string = '#mentionElement';
+
+  ngOnInit(): void {
+  }
 }
 ```
 
 ## Binding data source
 
-After initializing, populate the data in Mention using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/mention/#datasource) property. Here, an array of string values is passed to the Mention component.
+After initializing, populate the data in the Mention component using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#datasource) property. You can pass an array of string values or objects to the component:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-    selector: 'app-root',
-    // Specifies the template string for the Mention component
-    template: `
-    <label id="comment" >Comments</label>
-    <!--Element which is the Mention component's target to list the suggestions-->
-    <div id="mentionElement" placeholder = "Type @ and tag user"></div>
+  imports: [MentionModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `
+    <label>Comments</label>
+    <!-- Target element where Mention component renders suggestions -->
+    <div id="mentionElement" placeholder="Type @ and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px;"></div>
     <ejs-mention [dataSource]='userData' [target]='mentionTarget'></ejs-mention>`
 })
-export class AppComponent {
-    constructor() {
-    }
-    // Defines the array of data.
-    public userData: string[] = ['Selma Rose', 'Garth', 'Robert', 'William', 'Joseph'];
-    // Defines the target in which the Mention component is rendered.
-    public mentionTarget: string = "#mentionElement";
+export class AppComponent implements OnInit {
+  // Array of user data for suggestions
+  public userData: string[] = ['Selma Rose', 'Garth', 'Robert', 'William', 'Joseph'];
+  // Target element for Mention component
+  public mentionTarget: string = '#mentionElement';
+
+  ngOnInit(): void {
+  }
 }
-
 ```
 
-## Running the application
+## Run the application
 
-Run the application in the browser using the following command:
+After completing the configuration required to render a Mention component, run the following command to display the output in your default browser:
 
+```bash
+ng serve --open
 ```
-ng serve
-```
 
-The following example shows a basic `Mention` component.
+The Mention component will be rendered in your browser with default settings.
+
+The following example shows a basic `Mention` component with user mention suggestions:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -191,14 +228,14 @@ The following example shows a basic `Mention` component.
 
 ## Display Mention character
 
-By using the [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#showMentionChar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#mentionChar) property in the Mention component.
+By using the [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#showMentionChar) property, the text content can be displayed along with the mention character. You can customize the mention character using the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#mentionChar) property.
 
-> By default, the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#mentionChar) is `@` and the [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#showMentionChar) property is disabled.
+> By default, the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#mentionChar) is `@` and the [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#showMentionChar) property is disabled.
 
-The following example displays the text content along with the mention character configured as `#`.
+The following example displays the text content along with the mention character configured as `#`:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
