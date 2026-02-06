@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # Row spanning in Angular TreeGrid component
 
-Row spanning in the TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
+The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
-In the following demo, the "Lunch Break" cell spans multiple rows in the "1:00 PM" column.
+The `queryCellInfo` event is triggered for each cell in the TreeGrid, and allows customizing the cells in the TreeGrid. By handling this event, the `rowSpan` attribute can be set for a cell to achieve row spanning.
+
+In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00 PM" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,11 +27,26 @@ In the following demo, the "Lunch Break" cell spans multiple rows in the "1:00 P
   
 {% previewsample "page.domainurl/samples/treegrid/row-spanning-cs1" %}
 
-## Row spanning via API
+> * To disable the spanning for particular TreeGrid page, use **requestType** from `queryCellInfo` event argument.
+> * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
 
-Row spanning in the TreeGrid allows automatically merging cells with identical values in the same column across consecutive rows. This significantly enhances readability and delivers a cleaner layout by eliminating repetitive data.To enable row spanning, set the `enableRowSpan` property to "true" in the TreeGrid configuration.
- 
-In the following example, row spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `enableRowSpan` property to "false" in the column level.
+## Limitations
+
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#updatecell) method does not support row spanning.
+* Row spanning is not compatible with the following features:
+    1. Virtual scrolling
+    2. Infinite scrolling
+    3. Row drag and drop
+    4. Autofill
+    5. Row or cell editing
+    6. Batch editing
+    7. CRUD
+
+## Row spanning implementation through API   
+
+The Syncfusion Angular TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
+
+The row spanning feature in the Syncfusion Angular TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,10 +59,10 @@ In the following example, row spanning is applied to the "Status", "Permit Statu
 
 {% previewsample "page.domainurl/samples/treegrid/row-spanning-cs2" %}
 
-### Limitations
- 
-The following list outlines the features that are not compatible with row spanning:
- 
+> In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
+
+### Limitation
+
 * Virtualization
 * Infinite Scrolling
 * Row Drag and Drop
@@ -53,6 +70,3 @@ The following list outlines the features that are not compatible with row spanni
 * Detail Template
 * Editing
 * Export
-
-## See Also
-* [Column Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-spanning)

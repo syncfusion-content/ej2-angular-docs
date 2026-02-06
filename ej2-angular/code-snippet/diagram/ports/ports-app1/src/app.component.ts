@@ -10,13 +10,12 @@ providers: [ ],
 standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
-  template: `
-    <button (click)="changeAppearance()">Change Appearance</button>
-    <ejs-diagram #diagram id="diagram" width="100%" height="580px" >
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-nodes>
             <e-node id='node1' [offsetX]=250 [offsetY]=250 [width]=100 [height]=100 [ports]='ports'></e-node>
         </e-nodes>
-    </ejs-diagram>`,
+    </ejs-diagram>
+    <button (click)="changeAppearance()">changeAppearance</button>`,
 })
 export class AppComponent {
     @ViewChild("diagram")

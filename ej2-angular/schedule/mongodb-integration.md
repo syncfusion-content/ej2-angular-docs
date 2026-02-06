@@ -147,9 +147,9 @@ Next, we will proceed with integrating Syncfusion® Angular Scheduler component 
     {% endhighlight %}
     {% endtabs %}
 
-    * express: web framework for API routes
-    * mongodb: official MongoDB driver
-    * cors: allows requests from your Angular dev server
+    * Express – A minimal and flexible web framework used to build API endpoints
+    * MongoDB (Node.js Driver) – The official MongoDB driver that allows your server to communicate with the database
+    * CORS – A package that enables your application (running on a different port) to access the server’s API
 
     {% tabs %}
     {% highlight bash tabtitle="CMD" %}

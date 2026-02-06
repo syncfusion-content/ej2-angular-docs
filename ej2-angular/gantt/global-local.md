@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Globalization and Localization in Angular Gantt component | Syncfusion
-description: Learn here all about Globalization and Localization in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Globalization and Localization in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about globalization and localization in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Globalization and Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization and Localization in Angular Gantt component
+# Globalization and Localization in Angular Gantt Chart Component
 
-The Angular Gantt component supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
+The Angular Gantt Chart component supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
 ## Key globalization features
 
@@ -24,7 +24,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library allows you to localize default text content of the Gantt component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and providing translation objects.
+The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript
@@ -35,7 +35,7 @@ The [Localization](https://ej2.syncfusion.com/angular/documentation/common/globa
 
 3. **Load translations** using the `L10n.load()` method before component initialization
 
-4. **Set the locale property** on the Gantt component to match your target culture
+4. **Set the locale property** on the Gantt Chart component to match your target culture
 
 5. **Configure culture settings** using `setCulture()` for number and date formatting
 
@@ -279,7 +279,7 @@ SortDescription | Press Enter to sort |
 
 **Advanced dependency relationship messages:**
 
-The Gantt component includes specialized messages for dependency conflicts:
+The Gantt Chart component includes specialized messages for dependency conflicts:
 
 | Locale Key | Purpose |
 |------------|---------|
@@ -314,9 +314,9 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
-Internationalization affects multiple aspects of the Gantt component:
+Internationalization affects multiple aspects of the Gantt Chart component:
 
 - **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
 - **Number formatting**: Duration values, progress percentages, and numeric inputs
@@ -341,11 +341,11 @@ Internationalization affects multiple aspects of the Gantt component:
   
 {% previewsample "page.domainurl/samples/gantt/global/internationalization-cs1" %}
 
-> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
+> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
 ## Right-to-Left (RTL) support
 
-RTL support enables the Gantt component to adapt its text direction and layout for languages that read from right to left, such as Arabic (العربية), Hebrew (עברית), and Urdu (اردو). This provides an authentic user experience for RTL language users.
+RTL support enables the Gantt Chart component to adapt its text direction and layout for languages that read from right to left, such as Arabic (العربية), Hebrew (עברית), and Urdu (اردو). This provides an authentic user experience for RTL language users.
 
 RTL layout affects multiple aspects of the user interface:
 
@@ -354,7 +354,7 @@ RTL layout affects multiple aspects of the user interface:
 - **Icon orientation**: Directional icons need appropriate orientation
 - **Data presentation**: Maintains logical data relationships while adapting visual presentation
 
-To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) property to **true**:
+To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablertl) property to **true**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

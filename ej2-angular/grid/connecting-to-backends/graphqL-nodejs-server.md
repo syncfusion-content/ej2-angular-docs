@@ -105,7 +105,7 @@ The `GraphQL` schema defines the structure of the "product" data model and the s
 1. Create a new schema file (**src/schema.graphql**) in the **GraphQLServer** folder.
 2. Add type definition for "Product".
 
-```graphql
+```
 # --- Product type definition ---
 type Product {
   productId: String!
@@ -115,7 +115,7 @@ type Product {
 ```
 3. Add type definition for "ReturnType".
 
-```graphql
+```
 # --- Return type for Grid paging ---
 type ReturnType {
   result: [Product!]!
@@ -124,7 +124,7 @@ type ReturnType {
 ```
 4. Add type definition for "Sort".
 
-```graphql
+```
 # --- Sorting input ---
 input Sort {
   name: String
@@ -133,7 +133,7 @@ input Sort {
 ```
 5. Add type definition for "ProductInput".
 
-```graphql
+```
 # --- Product input for mutation operations ---
 input ProductInput {
   productId: String!
@@ -144,7 +144,7 @@ input ProductInput {
 
 6. Add type definition for "DataManagerInput".
 
-```graphql
+```
 # --- Syncfusion DataManager payload ---
 input DataManagerInput {
   skip: Int
@@ -163,14 +163,14 @@ input DataManagerInput {
 
 7. Define the Query type to expose the "getProducts" operation that returns the list of "products".
 
-```graphql
+```
 type Query {
   getProducts(datamanager: DataManagerInput): ReturnType!
 }
 ```
 8. Define Mutation types for CRUD operations.
 
-```graphql
+```
 type Mutation {
   createProduct(value: ProductInput!): Product!
   updateProduct(key: String!, keyColumn: String, value: ProductInput!): Product
@@ -421,7 +421,7 @@ The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to c
                 getProducts(datamanager: $datamanager) {
                     count
                     result {
-                    productId, productImage,    # add additional fields to fetch initially, e.g.:category
+                    productId, productImage,    # add additional fields to fetch initially, e.g.,category
                     }
                 }
                 }
@@ -435,7 +435,7 @@ The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to c
 
 The `Query` property is critical for understanding the data flows. Let's break down each component:
 
-```graphql
+```
 query getProducts($datamanager: DataManagerInput) {}
 ```
 
@@ -446,7 +446,7 @@ query getProducts($datamanager: DataManagerInput) {}
   - `$dataManager` - Variable name (referenced as $dataManager throughout the query).
   - `DataManagerInput` - Type specification.
 
-```graphql
+```
 getProducts(datamanager: $datamanager) {}
 ```
 
@@ -455,7 +455,7 @@ getProducts(datamanager: $datamanager) {}
 - `dataManager: $dataManager` - Passes the "$dataManager" variable to the resolver.
 - The resolver receives this object and uses it to apply filters, sorts, searches, and pagination.
 
-```graphql
+```
 count
   result {
     productId, productImage 
@@ -474,7 +474,7 @@ count
 
 When the backend executes the query, it returns a JSON response in this exact structure:
 
-```json
+```
 {
   
 "data": {
@@ -1048,7 +1048,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
               getProducts(datamanager: $datamanager) {
                 count
                 result {
-                  productId, productImage, productName    # add additional fields to fetch initially, e.g.:category
+                  productId, productImage, productName    # add additional fields to fetch initially, e.g.,category
                 }
               }
             }
@@ -1058,7 +1058,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
           if (action === 'insert') {
               return `mutation CreateProductMutation($value: ProductInput!) {
                 createProduct(value: $value) {
-                  productId, productName         # add additional fields to fetch initially, e.g.:category
+                  productId, productName         # add additional fields to fetch initially, e.g.,category
                 }
               }`;
             }
@@ -1095,7 +1095,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
               getProducts(datamanager: $datamanager) {
                 count
                 result {
-                  productId, productImage, productName      # add additional fields to fetch initially, e.g.:category
+                  productId, productImage, productName      # add additional fields to fetch initially, e.g.,category
                 }
               }
             }
@@ -1104,7 +1104,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
           if (action === 'update') {
               return `mutation UpdateProductMutation($key: String!, $keyColumn: String, $value: ProductInput!) {
                 updateProduct(key: $key, keyColumn: $keyColumn, value: $value) {
-                  productId, productName                  # add additional fields to fetch initially, e.g.:category
+                  productId, productName                  # add additional fields to fetch initially, e.g.,category
                 }
               }`;
             }
@@ -1140,7 +1140,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
               getProducts(datamanager: $datamanager) {
                 count
                 result {
-                  productId, productImage, productName             # add additional fields to fetch initially, e.g.:category
+                  productId, productImage, productName             # add additional fields to fetch initially, e.g.,category
                 }
               }
             }
@@ -1149,7 +1149,7 @@ Open the (**app.component.ts**) file and configure the `getMutation` function in
           if (action === 'delete') {
              return `mutation RemoveProductMutation($key: String!, $keyColumn: String) {
               deleteProduct(key: $key, keyColumn: $keyColumn) {
-                productId,productName                             # add additional fields to fetch initially, e.g.:category
+                productId,productName                             # add additional fields to fetch initially, e.g.,category
               }
             }`;
             }

@@ -14,36 +14,66 @@ This section explains the steps required to create the Syncfusion<sup style="fon
 To get started quickly with Angular Dashboard Layout using CLI and Schematics, you can check this video:
 {% youtube "https://www.youtube.com/watch?v=n4pActgI7uk" %} 
 
-## Prerequisites
+## Setup Angular Environment
 
-Before getting started with the **Dashboard Layout** component, ensure you have compatible versions of Angular and TypeScript:
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+To install Angular CLI use the following command.
 
-* Angular : `6+`
-* Typescript : `2.6+`
-
-## Setting up Angular project
-
-Angular provides the easiest way to set up Angular CLI projects using the Angular CLI tool.
-
-Install the CLI application globally to your machine using the following command:
-
-```sh
+```bash
 npm install -g @angular/cli
 ```
 
-Create a new Angular application:
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-```sh
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder using the following command:
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-```sh
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
 cd syncfusion-angular-app
 ```
 
->Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to learn more about setting up `angular-cli` project.
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Adding dependencies
 
@@ -97,15 +127,15 @@ To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 To render the Dashboard Layout component, import the Dashboard Layout and its dependent component styles as shown below in `[src/styles.css]`:
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css";
 ```
 
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
 ```
 
 >Note: To refer to the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.

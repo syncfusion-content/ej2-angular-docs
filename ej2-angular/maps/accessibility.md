@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Maps component
 
-The Maps component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
+Accessibility enables users with disabilities to interact with the Maps component through assistive technologies such as screen readers and keyboard navigation. The Maps component is designed to comply with [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 
-The accessibility compliance for the Maps component is outlined below.
+The following table summarizes the accessibility compliance of the Maps component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -45,13 +45,13 @@ To meet accessibility standards, the Maps component follows to the [WAI-ARIA](ht
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
+| `role=region` | It specifies the Maps areas that do not support interactive functions such as selection and highlight. |
 | `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for Maps elements such as geometric map shapes, title, subtitle, legend title, legend item labels, data labels, and so on. To learn more, see the next topic. |
+| `aria-label` | Provides an accessible name for Maps elements such as geometric shapes, title, subtitle, legend title, legend item labels, and data labels. For more details, see the following section. |
 
 ## Screen reading in Maps
 
-Accessibility in the Maps component ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
+Accessibility in the Maps component ensures that all users, regardless of ability or disability, can use screen reading. The following Maps elements will be read aloud using screen reading software, such as Narrator for Windows.
 
 | Elements | Description |
 | --- | --- |
@@ -66,9 +66,9 @@ Accessibility in the Maps component ensures that all users, regardless of abilit
 | Tooltip template | Reads the content provided in the tooltip template. |
 | Data label template | Reads the content provided in the data label template. |
 
-## Keyboard Navigation
+## Keyboard navigation
 
-All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the component.
+The Maps component supports keyboard navigation to enable users to interact with the map without a mouse. The following table lists the supported key combinations and their corresponding actions.
 
 Interaction Keys |Description
 -----|-----

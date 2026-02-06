@@ -21,14 +21,57 @@ To install Angular CLI use the following command.
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Start a new Angular application using below Angular CLI command.
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
 
 ```bash
-ng new my-app
-cd my-app
+npm install -g @angular/cli@21.0.0
 ```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ListView package
 
@@ -71,21 +114,21 @@ To mention the ngcc package in the **package.json** file, add the suffix `-ngcc`
 Add ListView component styles as given below in **styles.css**.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-angular-lists/styles/material3.css";
 ```
 
 Alternatively, you can import the styles directly relative to the node_modules folder based on your CSS file's location, as shown below:
 
 ```css
-@import "node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
+@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "node_modules/@syncfusion/ej2-angular-lists/styles/material3.css";
 ```
 
 If you are using `CheckList` behavior in ListView, add the `Button` component styles as given below in the `styles.css` file:
 
 ```css
-@import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css";
 ```
 
 > You can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.

@@ -10,7 +10,7 @@ Diagram.Inject(DataBinding, ComplexHierarchicalTree);
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="500px" [nodes]='nodes' [connectors]='connectors'
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="1000px" [nodes]='nodes' [connectors]='connectors'
   [getConnectorDefaults]='connectorDefaults' [getNodeDefaults]='nodeDefaults' [layout]='layout'></ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })

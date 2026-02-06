@@ -22,7 +22,6 @@ To enable mail merge functionality, the Rich Text Editor toolbar is extended wit
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
 
 ```typescript
-{% raw %}
 
 @Component({
   imports: [
@@ -48,7 +47,6 @@ export class AppComponent {
     };
 }
 
-{% endraw %}
 ```
 
 ## Using DropDownButton for selecting placeholders
@@ -136,7 +134,9 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
 {% include code-snippet/rich-text-editor/mail-merge/src/app.component.ts %}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

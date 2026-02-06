@@ -1,7 +1,7 @@
-import { NgModule} from '@angular/core'
+import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -17,9 +17,12 @@ imports: [
         DropDownListAllModule
     ],
 
+providers: [PageService,
+                SortService,
+                FilterService],
 standalone: true,
     selector: 'app-container',
-    providers: [ToolbarService, PageService, ExcelExportService,SortService,FilterService],
+    providers: [ToolbarService, PageService, ExcelExportService],
     template: `<ejs-treegrid #treegridObj [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID'
     [treeColumnIndex]='1' [allowPaging]='true' [pageSettings]='initialPage' [toolbar]='toolbarOptions' [allowExcelExport]='true' (excelExportComplete)='excelExportComplete()' (toolbarClick)='toolbarClick($event)'>
         <e-columns>

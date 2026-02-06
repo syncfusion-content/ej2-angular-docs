@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, EditService, ToolbarService, EditSettingsModel, PageSettingsModel  } from '@syncfusion/ej2-angular-grids'
+import { GridModule, PageService, EditService, EditSettingsModel, PageSettingsModel  } from '@syncfusion/ej2-angular-grids'
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -19,7 +19,7 @@ imports: [
         GridModule
     ],
 
-providers: [PageService, EditService, ToolbarService],
+providers: [PageService, EditService],
 standalone: true,
     selector: 'app-root',
     template: `<div>

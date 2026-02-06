@@ -16,6 +16,15 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
+@syncfusion/ej2-angular-dropdowns
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-inputs
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-popups
+SEE LICENSE IN license
+
 @syncfusion/ej2-angular-richtexteditor
 SEE LICENSE IN license
 
