@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Diagram Component
 
-This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram component.
+This section explains how to create your first diagram and introduces the basic features of the Diagram component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -36,7 +36,7 @@ The following dependencies are required to use the `Diagram` component in your a
 
 ## Setup Angular Environment
 
-Use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. Install Angular CLI using the following command:
+Use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -44,87 +44,130 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Generate a new Angular project using the Angular CLI command below.
 
 ```bash
 ng new my-diagram-app
+```
+
+When prompted, choose your preferred stylesheet format:
+
+```bash
+? Which stylesheet system would you like to use?
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Tailwind CSS    [ https://tailwindcss.com                                        ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+```
+
+By default, CSS is used. For SCSS, see the [Sass guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+
+Then navigate to the project directory:
+
+```bash
 cd my-diagram-app
 ```
 
-## Installing Syncfusion Diagram package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram package
 
-All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
-
-To install the Diagram component, use the following command:
+All Essential JS 2 packages are available on [npmjs.com](https://www.npmjs.com/~syncfusionorg). Install the Angular Diagram package:
 
 ```bash
 npm install @syncfusion/ej2-angular-diagrams --save
 ```
 
-N> The --save flag instructs NPM to include the diagram package in the dependencies section of the package.json file.
+N> The --save flag adds the package to the dependencies section of `package.json`.
 
 ## Registering Diagram Module
 
-Import the Diagram module into your Angular application (app.component.ts) from the package `@syncfusion/ej2-angular-diagrams` [src/app/app.component.ts].
+Import the Diagram module in `src\app\app.ts` from the package `@syncfusion/ej2-angular-diagrams` and enable it for your component.
 
 ```typescript
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 import { Component } from "@angular/core";
 
 @Component({
-//Import Diagram module
-imports: [
-         DiagramModule
-    ],
-
-providers: [ ],
-standalone: true,
-  selector: "app-container",
-  // specifies the template string for the diagram component
-  template: `<ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>`,
+// Enable the DiagramModule in this standalone component
+imports: [ DiagramModule ],
+selector: 'app-root',
 })
-export class AppComponent {}
+export class App {}
 ```
 
-## Adding CSS reference
+## Add Required Styles
 
-Combined CSS files are available in the Essential JS 2 package root folder. Reference these in your [src/styles.css] file using the following code:
+Combined CSS files are available in the Essential JS 2 package root folder. Reference the CSS files in `src\styles.css`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material.css';
-@import "../node_modules/@syncfusion/ej2-angular-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-diagrams/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
 ```
 
-## Add Diagram component
+## Render the Diagram component
 
-Modify the template in the [src/app/app.component.ts] file to render the diagram component. Add the Angular Diagram using the `<ejs-diagram>` selector in the `template` section of the app.component.ts file:
+Add the `<ejs-diagram>` selector to the template in `src\app\app.ts`, and specify a height to ensure the diagram renders correctly.
 
 ```typescript
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 import { Component } from "@angular/core";
 
 @Component({
+selector: 'app-root',
 //Import Diagram module
-imports: [
-         DiagramModule
-    ],
-
-providers: [ ],
-standalone: true,
-  selector: "app-container",
-  // specifies the template string for the diagram component
-  template: `<ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>`,
+imports: [ DiagramModule ],
+// specifies the template string for the diagram component
+template: `<ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>`,
 })
-export class AppComponent {}
-
+export class App {}
 ```
 
-## Module Injection
+## Run the Application
 
-The diagram component is divided into individual feature-wise modules. To use a particular feature, inject the required module. The following list describes the module names and their descriptions:
+Start the dev server:
+
+```bash
+npm start
+```
+
+Open the browser using the printed URL to see the empty diagram.
+
+N> The selector specified in the **@Component** decorator of the **app.ts** file must match the custom element tag used in the `index.html` file. For example, if your @Component decorator includes the selector "app-root", your `index.html` file should include an element `<app-root></app-root>`.
+
+## Enabling Feature Modules (Services)
+
+Diagram features are provided as services. To use a particular feature,  Import the ones you need and add them to the component’s `providers`.
+
+Example: enable `UndoRedoService` and `SnappingService`:
+
+```typescript
+import { Component } from "@angular/core";
+// Import the services
+import {
+  DiagramModule,
+  UndoRedoService,
+  SnappingService
+} from '@syncfusion/ej2-angular-diagrams';
+
+@Component({
+  selector: 'app-root',
+  imports: [ DiagramModule ],
+  // Register the services
+  providers: [ UndoRedoService, SnappingService ],
+  template: `<ejs-diagram width="100%" height="500px">
+                <e-nodes>
+                    <e-node [offsetX]="100" [offsetY]="100" [width]="100" [height]="100">
+                    </e-node>
+                </e-nodes>
+            </ejs-diagram>`,
+})
+export class App { }
+```
+
+The following list describes the module names and their descriptions:
 
 * `BpmnDiagramsService` - Inject this provider to add built-in BPMN shapes to diagrams.
 * `ConnectorBridgingService` - Inject this provider to add bridges to connectors.
@@ -142,25 +185,7 @@ The diagram component is divided into individual feature-wise modules. To use a 
 * `UndoRedoService` - Inject this provider to revert and restore changes.
 * `Ej1SerializationService` - Inject this provider to load EJ1 diagram JSON in EJ2 diagrams.
 
-These modules should be injected into the providers section of the root NgModule or component class:
-
-```javascript
-import { BpmnDiagramsService, ComplexHierarchicalTreeService, ConnectorBridgingService, ConnectorEditingService, DataBindingService, DiagramContextMenuService, DiagramModule, Ej1SerializationService, HierarchicalTreeService, LayoutAnimationService, MindMapService, PrintAndExportService, RadialTreeService, SnappingService, SymmetricLayoutService, UndoRedoService } from '@syncfusion/ej2-angular-diagrams';
-import { Component } from "@angular/core";
-
-@Component({
-imports: [
-         DiagramModule
-    ],
-
-   providers: [ HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, ConnectorEditingService,Ej1SerializationService ],
-   standalone: true,
-  selector: "app-container",
-  // specifies the template string for the diagram component
-  template: `<ejs-diagram id="diagram" width="100%" height="400px"></ejs-diagram>`,
-})
-export class AppComponent {}
-```
+Tip: Import your services and add them to the `providers` list in `app.config.ts` to make them available throughout the app.
 
 ## Defining Basic Diagram
 
@@ -177,14 +202,6 @@ The example below shows a basic diagram that renders an empty diagram canvas:
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/initialize-cs1" %}
-
-Now, run the application using the npm start command. Open the browser with the generated link and you can see an empty diagram:
-
-```bash
-npm start
-```
-
-N> The selector specified in the **@Component** decorator of the **app.component.ts** file must match the custom element tag used in the index.html file. For example, if your @Component decorator includes the selector "app-container", your index.html file should include an element `<app-container></app-container>`.
 
 ## Basic Diagram elements
 
@@ -221,7 +238,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 The Syncfusion diagram component provides support to render many built-in shapes. Refer to [Shapes](shapes) to learn about built-in shapes.
 
-Customize the appearance of a node by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number), [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number) properties:
+Customize the appearance of a node by changing its [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#fill) color, [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#strokewidth), [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#bordercolor), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#borderwidth), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#strokedasharray), [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#opacity), and [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shadow) properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -254,7 +271,7 @@ Add multiple nodes with different shapes to create a comprehensive diagram:
 
 ### Connect flow chart nodes
 
-Connect nodes by adding connectors using the [`connectors`](../api/diagram/connectorModel/) property of the diagram. Reference the source and target endpoints using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties. Combine the required nodes and connectors to form a complete flow diagram:
+Connect nodes by adding connectors using the [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel) property of the diagram. Reference the source and target endpoints using the [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel#sourceid) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel#targetid) properties. Combine the required nodes and connectors to form a complete flow diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,7 +285,7 @@ Connect nodes by adding connectors using the [`connectors`](../api/diagram/conne
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/flowdiagram-cs1" %}
 
-Set default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, move such properties into `getNodeDefaults`.
+Set default values for all [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodemodel) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel) using the [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#getnodedefaults) and [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, move such properties into `getNodeDefaults`.
 
 ## Automatic Organization Chart
 
@@ -319,16 +336,16 @@ Define Employee Information as JSON data. The following code example shows an em
 
 ### Map data source
 
-Configure the above "Employee Information" with the diagram so that nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel/) to map [`id`](../api/diagram/dataSourceModel/#id) and [`parentId`](../api/diagram/dataSourceModel/#parentid) with the corresponding property names of employee information:
+Configure the above "Employee Information" with the diagram so that nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/datasourcemodel) to map [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/datasourcemodel#id) and [`parentId`](https://ej2.syncfusion.com/angular/documentation/api/diagram/datasourcemodel#parentid) with the corresponding property names of employee information:
 
 ```typescript
 @Component({
-  selector: "app-container",
+  selector: "app-root",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [dataSourceSettings]='dataSourceSettings'></ejs-diagram>`
 })
-export class AppComponent {
+export class App {
   @ViewChild("diagram")
-  public dataSourceSettings: DataSourceModel;
+  public diagram!: DiagramComponent;
   public data: Object[] = [
     {
       Name: "Elizabeth",
@@ -365,19 +382,18 @@ export class AppComponent {
       Role: "Lead"
     }
   ];
-  ngOnInit(): void {
-    this.dataSourceSettings = {
+
+  public dataSourceSettings: DataSourceModel = {
       id: "Name",
       parentId: "ReportingPerson",
-      dataManager: new DataManager(this.data as JSON[])
+    dataManager: new DataManager(this.data as JSON[]),
     };
-  }
 }
 ```
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, set the [`type`](../api/diagram/layoutType/) of layout as `OrganizationalChart`. The following code example shows how DataManager generates layouts based on the DataSourceSettings of the Diagram:
+To create an organizational chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layouttype) of layout as `OrganizationalChart`. The following code example shows how DataManager generates layouts based on the DataSourceSettings of the Diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -393,7 +409,7 @@ To create an organizational chart, set the [`type`](../api/diagram/layoutType/) 
 
 ### Customize employee appearance
 
-The following code examples show how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) method updates each node based on employee data:
+The following code examples show how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#setnodetemplate) method updates each node based on employee data:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

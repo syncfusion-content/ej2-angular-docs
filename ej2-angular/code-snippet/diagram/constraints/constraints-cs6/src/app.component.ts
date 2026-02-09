@@ -2,6 +2,7 @@ import {
   DiagramModule,
   SnapConstraints,
   SnapSettingsModel,
+  SnappingService,
   DiagramComponent, 
   NodeModel
 } from '@syncfusion/ej2-angular-diagrams';
@@ -11,7 +12,7 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 @Component({
   imports: [DiagramModule],
 
-  providers: [],
+  providers: [SnappingService],
   standalone: true,
   selector: 'app-container',
   template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]='nodes' [getNodeDefaults] ='getNodeDefaults' [snapSettings]='snapSettings'>

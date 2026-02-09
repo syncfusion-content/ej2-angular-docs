@@ -31,7 +31,9 @@ Below is the list of minimum dependencies required to use the Linear Gauge compo
 
 ## Setup Angular Environment
 
-[`Angular CLI`](https://github.com/angular/angular-cli) can be used to setup the Angular applications. To install Angular CLI use the following command.
+Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
+
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
 
 ```bash
 npm install -g @angular/cli
@@ -39,7 +41,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application with the Angular CLI:
 
 ```bash
 ng new my-app
@@ -48,17 +50,17 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Linear Gauge package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
 
-Add [`@syncfusion/ej2-angular-lineargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-lineargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-lineargauge --save
@@ -66,21 +68,21 @@ npm install @syncfusion/ej2-angular-lineargauge --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions earlier than 12, use the legacy ngcc package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the ngcc package with:
 
-Add [`@syncfusion/ej2-angular-lineargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-lineargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-lineargauge@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
 
 ```bash
-@syncfusion/ej2-angular-lineargauge:"20.2.38-ngcc"
+@syncfusion/ej2-angular-lineargauge:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
 
 ## Add LinearGauge component
 
@@ -159,7 +161,7 @@ These modules should be injected in the providers section of the **app.component
 
 ## Add Gauge Title
 
-The title can be added to the Linear Gauge component using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel/#title-string) property in the Linear Gauge.
+The title can be added to the Linear Gauge component using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel#title-string) property in the Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -175,7 +177,7 @@ The title can be added to the Linear Gauge component using the [`title`](https:/
 
 ## Axis Range
 
-The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis/#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis/#maximum-number) properties in the Linear Gauge.
+The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#maximum-number) properties in the Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,9 +191,9 @@ The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.co
   
 {% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs3" %}
 
-To denote the axis labels with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/labelModel/#format-string) property in the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#labelstyle-labelmodel) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
+To denote the axis labels with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/labelModel#format-string) property in the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#labelstyle-labelmodel) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
 
-To change the pointer value from the default value of the gauge, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer/#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel/) object of the axis.
+To change the pointer value from the default value of the gauge, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) object of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -207,7 +209,7 @@ To change the pointer value from the default value of the gauge, set the [`value
 
 ## Setting the value of pointer
 
-The pointer value is changed in the below sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer/#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer) object of the axis.
+The pointer value is changed in the below sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer) object of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
