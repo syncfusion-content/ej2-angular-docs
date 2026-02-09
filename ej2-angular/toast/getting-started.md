@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Toast component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Toast component of Syncfusion Essential JS 2 and more details.
+description: Get started with the Angular Toast component in Syncfusion. Learn how to set up an Angular project, install packages, add styles, and display a basic toast.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Toast component
 
-This section briefly explains about how to create a simple **Toast** and configure its available functionalities in Angular using Angular quickstart.
+This section briefly explains how to create a simple **Toast** and configure its available functionalities in Angular using the Angular CLI quickstart.
 
-## Getting Started with Angular CLI
+## Getting started with Angular CLI
 
-The following section explains the steps required to create a simple `angular-cli` application and how to configure `Toast` component.
+The following section explains the steps required to create a simple `angular-cli` application and how to configure the `Toast` component.
 
 ### Prerequisites
 
@@ -23,61 +23,66 @@ To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI 
 * Angular : 6+
 * TypeScript : 2.6+
 
-### Setting up an Angular project
+## Dependencies
 
-Angular provides an easiest way to setup project using Angular CLI [Angular CLI](https://github.com/angular/angular-cli) tool.
-
-Install the CLI application globally in your machine.
+The following dependencies are required to use the Toast component in your application.
 
 ```javascript
+|-- @syncfusion/ej2-angular-notifications
+    |-- @syncfusion/ej2-angular-base
+    |-- @syncfusion/ej2-notifications
+        |-- @syncfusion/ej2-base
+        |-- @syncfusion/ej2-button
+        |-- @syncfusion/ej2-popups
+```
 
-  npm install -g @angular/cli
+### Setting up an Angular project
 
+Angular provides an easy way to set up a project using the [Angular CLI](https://github.com/angular/angular-cli) tool.
+
+Install the CLI application globally on your machine.
+
+```bash
+npm install -g @angular/cli
 ```
 
 ### Create a new application
 
-```javascript
-
-  ng new syncfusion-angular-app
-
+```bash
+ng new syncfusion-angular-app
 ```
 
-Once you have executed the above command you may ask for following options,
+After running the above command, you may be asked the following options:
 * Would you like to add Angular routing?
 * Which stylesheet format would you like to use?
 
-By default it install the CSS style base application. To setup with SCSS, pass --style=SCSS argument on create project.
+By default, it installs a CSS-based application. To set up with SCSS, pass the --style=scss argument when creating the project.
 
-Example code snippet.
+Example:
 
-```javascript
-
-  ng new syncfusion-angular-app --style=SCSS
-
+```bash
+ng new syncfusion-angular-app --style=scss
 ```
 
 Navigate to the created project folder.
 
-```javascript
-
-  cd syncfusion-angular-app
-
+```bash
+cd syncfusion-angular-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> notifications Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Notifications package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. See the npm page for [Syncfusion Angular packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
 
-Add [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.2.38) package to the application.
+Add the [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications --save
@@ -85,9 +90,9 @@ npm install @syncfusion/ej2-angular-notifications --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following.
 
-Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/32.1.19-ngcc) to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications@ngcc --save
@@ -95,74 +100,64 @@ npm install @syncfusion/ej2-angular-notifications@ngcc --save
 
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
-```bash
-@syncfusion/ej2-angular-notifications:"20.2.38-ngcc"
+```json
+"@syncfusion/ej2-angular-notifications": "32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified while installing the package, the Ivy library package will be installed and this package may throw a warning.
 
 ## Adding Toast component
 
-Add the Toast component snippet in `app.component.ts` as follows.
+Use the following snippet in the `src/app/app.ts` file to import the Toast component.
 
 ```typescript
-
 import { ToastModule } from '@syncfusion/ej2-angular-notifications'
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-         ToastModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-toast #element (created)="onCreate()">
-      <ng-template #title>
-        <div>Sample Toast Title</div>
-      </ng-template>
-      <ng-template #content>
-        <div>Sample Toast Content</div>
-      </ng-template>
-      </ejs-toast>`
+  imports: [ToastModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-toast #element (created)="onCreate()">
+    <ng-template #title>
+      <div>Sample Toast Title</div>
+    </ng-template>
+    <ng-template #content>
+      <div>Sample Toast Content</div>
+    </ng-template>
+  </ejs-toast>`
 })
 
-export class AppComponent {
-@ViewChild('element') element: any;
+export class App {
+  @ViewChild('element') element: any;
 
   onCreate() {
-  this.element.show();
+    this.element.show();
+  }
 }
-
-constructor() {
-}
-}
-
 ```
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in the `../node_modules/@syncfusion` package folder. These can be referenced in `src/styles.css` using the following code.
 
 ```css
-
-      @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
-
-
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material3.css';
 ```
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
 ## Initialize the Toast with message
 
-The Toast message can be rendered by defining an `title` or `content`.
+The Toast message can be rendered by defining a `title` or `content`.
 
 ## Running the application
 
-Run the `ng serve` command in command window, it will serve your application and you can open the browser window. Output will appear as follows.
+Run the `ng serve` command in a command window; it will serve your application and you can open the browser window. The output will appear as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

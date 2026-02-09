@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
-import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-		DialogModule
-    ],
-
-
-standalone: true,
-    selector: 'app-root',
-    template: `
+  imports: [DialogModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `
       <div id="dialog-container">
         <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
         <ejs-dialog id='dialog' #ejDialog target="#dialog-container" header='Dialog' [showCloseIcon]='true' content='This is a Dialog content'
@@ -27,9 +16,9 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   // Reference the Dialog element
-  @ViewChild('ejDialog') ejDialog: DialogComponent |any;
+  @ViewChild('ejDialog') ejDialog: DialogComponent | any;
 
   // Show the Dialog when click the button
   public onOpenDialog = (event: any): void => {

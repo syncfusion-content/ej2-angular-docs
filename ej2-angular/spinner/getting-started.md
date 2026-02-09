@@ -1,83 +1,72 @@
 ---
 layout: post
-title: Getting started with Angular Spinner component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Spinner component of Syncfusion Essential JS 2 and more details.
+title: Getting started with the Angular Spinner component | Syncfusion
+description: Learn how to get started with the Angular Spinner component in Syncfusion, including basic usage with createSpinner, showSpinner, and hideSpinner.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Spinner component
+# Getting started with the Angular Spinner component
 
-This section explains the steps to create a simple **Spinner** and configure its functionalities in Angular.
+This section explains how to create a simple **Spinner** and configure its functionality in Angular.
 
 ## Getting Started with Angular CLI
 
-The following section explains the steps required to create a simple angular-cli application and how to configure the `Spinner'.
+The following steps show how to create an Angular CLI application and configure the `Spinner`.
 
 ### Prerequisites
 
-To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
-
-* Angular : 6+
-* TypeScript : 2.6+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ### Setting up an Angular project
 
-Angular provides an easiest way to setup project using Angular CLI [Angular CLI](https://github.com/angular/angular-cli) tool.
+Angular provides an easy way to set up a project using the [Angular CLI](https://github.com/angular/angular-cli).
 
-Install the CLI application globally in your machine.
+Install the CLI globally:
 
-```javascript
-
-  npm install -g @angular/cli
-
+```bash
+npm install -g @angular/cli
 ```
 
 ### Create a new application
 
-```javascript
-
-  ng new syncfusion-angular-app
-
+```bash
+ng new syncfusion-angular-app
 ```
 
-Once you have executed the above command you may ask for following options,
+After running the above command, the CLI prompts for the following options:
 * Would you like to add Angular routing?
 * Which stylesheet format would you like to use?
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=SCSS argument on create project.
+By default, it installs a CSS-based application. To use SCSS, pass the `--style=SCSS` option when creating the project.
 
-Example code snippet.
+Example:
 
-```javascript
-
-  ng new syncfusion-angular-app --style=SCSS
-
+```bash
+ng new syncfusion-angular-app --style=SCSS
 ```
 
-Use below command to Navigate into the created project folder.
+Navigate into the created project folder:
 
-```javascript
-
-  cd syncfusion-angular-app
-
+```bash
+cd syncfusion-angular-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Popups package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Spinner package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. Browse all Angular packages on npm: https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package formats for Angular components:
+1. Ivy library distribution package ([Angular package format](https://v17.angular.io/guide/angular-package-format#angular-package-format))
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>= 20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and above. Install the package using the following command:
 
-Add [`@syncfusion/ej2-angular-popups`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-popups`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-popups --save
@@ -85,60 +74,71 @@ npm install @syncfusion/ej2-angular-popups --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-popups@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38-ngcc) package to the application.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the `ngcc` package using the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-popups@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version as shown below:
 
 ```bash
-@syncfusion/ej2-angular-popups:"20.2.38-ngcc"
+@syncfusion/ej2-angular-popups:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the `ngcc` tag is not specified while installing the package, the Ivy library package will be installed, which may produce a warning in non-Ivy projects.
 
 ## Adding CSS reference
 
-The following CSS files can be referenced in [src/styles.css] file.
+Reference the following CSS file in `src/styles.css`:
 
 ```css
-
-       @import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
-
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 ```
 
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
-## Adding Spinner
+## Adding Spinner component
 
-Initialize the Spinner using "createSpinner" method and show/hide the spinner using "showSpinner" and "hideSpinner" methods accordingly. Set the target to the spinner to render it based on specific target.
-
-The following steps explains you on how to create and how to show/hide your Spinner.
-
-* Import the "createSpinner" method from "ej2-popups" library into your file as shown in below.
+Use the following snippet in the `src/app/app.ts` file to import the Spinner component.
 
 ```typescript
-import { createSpinner } from '@syncfusion/ej2-angular-popups';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
+
+@Component({
+  standalone: true,
+  selector: 'app-root',
+  template: `
+    <div #spinnerHost
+         style="height: 200px; position: relative; border: 1px solid #ddd; overflow: hidden;">
+      <p style="padding: 12px;">Loading content...</p>
+    </div>
+  `
+})
+export class App implements AfterViewInit {
+  @ViewChild('spinnerHost', { static: true }) spinnerHost!: ElementRef<HTMLElement>;
+
+  ngAfterViewInit(): void {
+    const target = this.spinnerHost.nativeElement;
+    createSpinner({ target });
+    setTimeout(() => showSpinner(target));
+    setTimeout(() => hideSpinner(target), 10000);
+  }
+}
 ```
 
-* Show and hide this spinner by using "showSpinner" and "hideSpinner" methods for loading in your page and import them in your file as shown in below.
+## Running the application
 
-```typescript
-import { showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
+After completing the configuration required to render a basic Spinner, run the following command to display the output in your default browser.
+
+```
+ng serve
 ```
 
-## Create the Spinner globally
-
-The Spinner can be render globally in a page using public exported functions of the "ej2-popups" package.
-
-```typescript
-import { showSpinner, hideSpinner } from '@syncfusion/ej2-angular-popups';
-```
+The following example illustrates the output in your browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

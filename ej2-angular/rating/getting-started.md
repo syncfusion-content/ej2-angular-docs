@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Getting started with Angular Rating component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Rating component of Syncfusion Essential JS 2 and more details.
+description: Check out and learn how to get started with the Angular Rating component from Syncfusion Essential JS 2.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Rating component
 
-This section explains how to create a default Rating and demonstrate the basic usage of the Rating module.
+This section explains how to create a default Rating and demonstrates the basic usage of the Rating module.
 
-To get started quickly with Angular rating component, you can check out this video:
+To get started quickly with the Angular Rating component, see the following video:
 {% youtube "https://www.youtube.com/watch?v=PqverjTfSt8&ab_channel=Syncfusion%2CInc" %}
 
 ## Dependencies
@@ -22,14 +22,14 @@ The list of dependencies required to use the Rating module in your application i
 ```javascript
 |-- @syncfusion/ej2-angular-inputs
     |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-popups
+        |-- @syncfusion/ej2-base
+        |-- @syncfusion/ej2-popups
 ```
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use the Angular CLI (https://angular.io/cli) to set up an Angular application. To install the Angular CLI, run:
 
 ```
 npm install -g @angular/cli
@@ -37,7 +37,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI commands.
 
 ```
 ng new my-app
@@ -46,17 +46,17 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Rating package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. Find Syncfusion Angular packages on npm: https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package formats for Angular components:
+1. Ivy library distribution package [format](https://v12.angular.io/guide/ivy)
+2. Angular compatibility compiler (ngcc) package (legacy compilation and rendering pipeline)
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) have been distributed as Ivy libraries to support the Angular Ivy rendering engine. These packages are compatible with Angular version 12 and above. To install the package, run:
 
-Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package to the application.
+Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs --save
@@ -64,48 +64,45 @@ npm install @syncfusion/ej2-angular-inputs --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To install the `ngcc` package, run:
 
-Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-inputs@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To specify the ngcc package in `package.json`, add the suffix `-ngcc` to the package version as shown below.
 
 ```bash
-@syncfusion/ej2-angular-inputs:"20.4.38-ngcc"
+@syncfusion/ej2-angular-inputs:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc suffix is not specified while installing the package, the Ivy library package will be installed and the installer may emit a warning.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Rating component
 
-Modify the template in `app.component.ts` file to render the Rating component.
+Use the following snippet in the `src/app/app.ts` file to import the Rating component.
 
-```typescript
-
-import { FormsModule } from '@angular/forms'
-import { RatingModule } from '@syncfusion/ej2-angular-inputs'
+```ts
+import { FormsModule } from '@angular/forms';
+import { RatingModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-         FormsModule, RatingModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<!-- To render Rating. -->
-             <input ejs-rating id="rating" />`
+  imports: [FormsModule, RatingModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<!-- To render Rating. -->
+    <input ejs-rating id="rating" />`
 })
-export class AppComponent  { }
 
+export class App { }
 ```
 
 ## Adding CSS reference
 
-Add Rating component's styles as given below in `style.css`.
+Add the Rating component's styles as shown below in `style.css`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';

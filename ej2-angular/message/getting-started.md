@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular Message component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Message component of Syncfusion Essential JS 2 and more details.
+description: Get started with the Angular Message component in Syncfusion. Learn how to set up an Angular project, install packages, add styles, and render a basic message.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -14,9 +14,9 @@ This section explains the steps required to create a simple Angular Message comp
 
 ## Setup Angular Environment
 
-Use [`Angular CLI`](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up Angular applications. To install Angular CLI, use the following command.
 
-```
+```bash
 npm install -g @angular/cli
 ```
 
@@ -24,23 +24,23 @@ npm install -g @angular/cli
 
 Start a new Angular application using the following Angular CLI command.
 
-```
+```bash
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Notification package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Notifications package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. See the npm page for [Syncfusion Angular packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components. They are:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format).
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package, use the following command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
 
-Add [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.3.47) package to the application.
+Add the [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications --save
@@ -48,9 +48,9 @@ npm install @syncfusion/ej2-angular-notifications --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following command.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following command.
 
-Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.3.47-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications@ngcc --save
@@ -58,41 +58,36 @@ npm install @syncfusion/ej2-angular-notifications@ngcc --save
 
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows.
 
-```bash
-@syncfusion/ej2-angular-notifications:"20.3.47-ngcc"
+```json
+"@syncfusion/ej2-angular-notifications": "32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified while installing the package, the Ivy library package will be installed and this package may throw a warning.
 
 ## Adding CSS Reference
 
-Add Message component’s styles as given in the following `styles.css.`
+Add the Message component’s styles as shown in the following `styles.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/message/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/message/material3.css';
 ```
 
 ## Add Message component
 
-Modify the template in the [src/app/app.component.ts] file to render the Message component. Add the Angular Message by using the `<ejs-message>` selector in the `template` section of the app.component.ts file.
+Use the following snippet in the `src/app/app.ts` file to import the Message component.
 
 ```typescript
-
-import { MessageModule } from '@syncfusion/ej2-angular-notifications'
+import { MessageModule } from '@syncfusion/ej2-angular-notifications';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-         MessageModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: '<ejs-message content="Please read the comments carefully"></ejs-message>'
+  imports: [MessageModule],
+  standalone: true,
+  selector: 'app-root',
+  template: '<ejs-message content="Please read the comments carefully"></ejs-message>'
 })
-export class AppComponent{
-}
-
+export class App { }
 ```
 
 ## Run the application
@@ -100,7 +95,6 @@ export class AppComponent{
 Use the following command to run the application in the browser.
 
 ```bash
-
 ng serve --open
 ```
 

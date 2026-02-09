@@ -1,58 +1,58 @@
 ---
 layout: post
-title: Getting started with Angular Switch component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Switch component of Syncfusion Essential JS 2 and more details.
+title: Getting started with the Angular Switch component | Syncfusion
+description: Learn how to get started with the Angular Switch component in Syncfusion Essential JS 2, including installation, setup, and basic usage.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Switch component
+# Getting started with the Angular Switch component
 
-This section explains how to create a simple Switch, and demonstrate the basic usage of the Switch module in an Angular environment.
+This section explains how to create a simple Switch and demonstrates the basic usage of the Switch component in an Angular application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the Switch module in your application.
+The following list of dependencies is required to use the Switch component in your application.
 
  ```typescript
 |-- @syncfusion/ej2-angular-buttons
     |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-buttons
+        |-- @syncfusion/ej2-base
 ```
 
-## Setup Angular environment
+## Set up Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up the Angular application. Install Angular CLI with the following command.
 
-```
+```bash
 npm install -g @angular/cli
 ```
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI commands.
 
-```
+```bash
 ng new my-app
 cd my-app
 ```
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Switch package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm using the search page (https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>= 20.2.36) have moved to the Ivy distribution to support the Angular [Ivy](https://angular.io/guide/ivy) rendering engine and are compatible with Angular version 12 and above. Install the package with the following command.
 
-Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons --save
@@ -60,9 +60,9 @@ npm install @syncfusion/ej2-angular-buttons --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the `ngcc` package with the following command.
 
-Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons@ngcc --save
@@ -71,33 +71,29 @@ npm install @syncfusion/ej2-angular-buttons@ngcc --save
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
-@syncfusion/ej2-angular-buttons:"20.2.38-ngcc"
+"@syncfusion/ej2-angular-buttons": "32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified when installing the package, the Ivy library package will be installed, which may show a warning in Angular versions below 12.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Switch component
 
-Modify the template in `app.component.ts` file to render the Switch component.
+Use the following snippet in the `src/app/app.ts` file to import the Switch component.
 
- ```typescript
- 
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
+ ```ts
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [        
-        SwitchModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<div class="e-section-control">
-                <!-- To Render Switch with checked state. -->
-               <ejs-switch [checked]="true"></ejs-switch></div>`
+  imports: [SwitchModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<div class="e-section-control">
+    <!-- To Render Switch with checked state. -->
+    <ejs-switch [checked]="true"></ejs-switch></div>`
 })
 
 export class AppComponent { }
-
 ```
 
 ## Adding CSS reference

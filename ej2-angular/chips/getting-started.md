@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Getting started with Angular Chips component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Chips component of Syncfusion Essential JS 2 and more details.
+description:  Check out how to get started with the Angular Chips component in Syncfusion Essential JS 2, including installation, styling, and a basic example.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Chips component
 
-This section explains the steps required to create a simple `Chips` and demonstrate the basic usage of the Chips component in an Angular environment.
+This section explains the steps required to create a simple `Chips` instance and demonstrates the basic usage of the Chips component in an Angular environment.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to set up your Angular application.
 To install Angular CLI, use the following command.
 
 ```bash
@@ -23,7 +23,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the following Angular CLI commands.
 
 ```bash
 ng new my-app
@@ -32,17 +32,17 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Chips package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm: [Angular packages on npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. Use the following command to install the package.
 
-Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons --save
@@ -50,25 +50,25 @@ npm install @syncfusion/ej2-angular-buttons --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Use the following command to install the `ngcc` package.
 
-Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons@ngcc --save
 ```
 
-To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in the **package.json** file, add the suffix `-ngcc` to the package version as below.
 
 ```bash
-@syncfusion/ej2-angular-buttons:"20.2.38-ngcc"
+@syncfusion/ej2-angular-buttons:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+>Note: If the ngcc tag is not specified during installation, the Ivy library package will be installed, which may produce a warning.
 
 ## Adding CSS reference
 
-Add `Chips` component CSS using the following code in **src/styles.css**.
+Add `Chips` component CSS by including the following in **src/styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-angular-base/styles/material.css";
@@ -84,40 +84,34 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 ## Add Chips component
 
-Modify the template in **src/app/app.component.ts** file to render the `Chips` component. Add the Angular `Chips` by using `<e-chip>` child selector with text attribute inside of `Chips` component selector `<ejs-chiplist>` in `template` section of the **app.component.ts** file.
+Use the following snippet in the `src/app/app.ts` file to import the Chip component.
 
-```typescript
-
-import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
+```ts
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ChipListModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the Chips component
-    template: `<ejs-chiplist text="Janet Leverling"></ejs-chiplist>`
+  imports: [ChipListModule],
+  standalone: true,
+  selector: 'app-root',
+  // specifies the template string for the Chips component
+  template: `<ejs-chiplist text="Janet Leverling"></ejs-chiplist>`
 })
-export class AppComponent {
 
-}
-
+export class AppComponent { }
 ```
 
-Now, the basic `Chips` is included in Angular CLI application.
+Now, the basic `Chips` component is included in the Angular CLI application.
 
 ## Run the application
 
 Use the following command to run the application in the browser.
 
-```javascript
+```bash
 ng serve --open
 ```
 
-The output will appear as follows.
+The output appears as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

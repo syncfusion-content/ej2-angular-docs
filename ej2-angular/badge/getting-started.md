@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular Badge component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Badge component of Syncfusion Essential JS 2 and more details.
+description: Get started with the Angular Badge component in Syncfusion. Learn how to set up an Angular project, install packages, add styles, and run a basic badge.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,41 +12,46 @@ domainurl: ##DomainURL##
 
 The following section explains the steps required to create a simple **Badge** component using styles and demonstrate its basic usage.
 
-## Setting up angular project
+## Setting up Angular project
 
-Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
+Angular provides an easy way to set up Angular CLI projects using the Angular CLI tool.
 
-Install the CLI application globally to your machine by using following command.
+Install the CLI application globally by using the following command.
 
 ```sh
 npm install -g @angular/cli
 ```
 
-Create a new angular application
+Create a new Angular application.
 
 ```sh
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder by using following command.
+Navigate to the created project folder by using the following command.
 
 ```sh
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+> Note: Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to learn more about setting up an `angular-cli` project.
 
 ## Dependencies
 
-The `Badge` component is pure CSS component which doesn't need specific dependencies to render.
+The `Badge` component is a pure CSS component and does not require additional dependencies to render.
 
 ```javascript
-|-- @syncfusion/ej2-notifications
+|-- @syncfusion/ej2-angular-notifications
+    |-- @syncfusion/ej2-angular-base
+    |-- @syncfusion/ej2-notifications
+        |-- @syncfusion/ej2-base
+        |-- @syncfusion/ej2-button
+        |-- @syncfusion/ej2-popups
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> notifications Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Notifications package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. See the npm page for [Syncfusion Angular packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
@@ -54,9 +59,9 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
 
-Add [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.2.38) package to the application.
+Add the [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications --save
@@ -64,9 +69,9 @@ npm install @syncfusion/ej2-angular-notifications --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following.
 
-Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/32.1.19-ngcc) to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-notifications@ngcc --save
@@ -74,61 +79,55 @@ npm install @syncfusion/ej2-angular-notifications@ngcc --save
 
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
-```bash
-@syncfusion/ej2-angular-notifications:"20.2.38-ngcc"
+```json
+"@syncfusion/ej2-angular-notifications": "32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified while installing the package, the Ivy library package will be installed and this package may throw a warning.
 
-## Adding style sheet to the application
+## Adding stylesheet to the application
 
-To render the Badge component, import the Badge and its dependent component's styles as given below in `[src/styles.css]`.
+To render the Badge component, import the Badge and its dependent components' styles as shown below in `src/styles.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material3.css';
 ```
 
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-notifications/styles/material3.css';
 ```
 
->Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> Note: To reference the combined component styles, use the Syncfusion<sup style="font-size:70%">&reg;</sup> [CRG](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Add Badge into application
+## Add the Badge to the application
 
-Modify the `template` in `app.component.ts` file to render the Badge component.
-
-`[src/app/app.component.ts]`
+Use the following snippet in the `src/app/app.ts` file to import the Badge component.
 
 ```typescript
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<div id='element'><h1>Badge Component <span class="e-badge">New</span></h1></div>`
+  imports: [],
+  standalone: true,
+  selector: 'app-root',
+  template: `<div id='element'><h1>Badge Component <span class="e-badge">New</span></h1></div>`
 })
 
-export class AppComponent {}
-
+export class App { }
 ```
 
 ## Run the application
 
 Run the application in the browser using the following command.
 
-```html
-npm start
+```bash
+ng serve
 ```
 
 The following example shows a basic badge component.
@@ -149,4 +148,4 @@ The following example shows a basic badge component.
   
 {% previewsample "page.domainurl/samples/badge/getting-started-cs1" %}
 
-> You can refer to our [Angular Badge](https://www.syncfusion.com/angular-components/angular-badge) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Badge example](https://ej2.syncfusion.com/angular/demos/#/material/badge/default) to knows how to present and manipulate data.
+> You can refer to the [Angular Badge](https://www.syncfusion.com/angular-components/angular-badge) feature tour page for its key features. You can also explore the [Angular Badge example](https://ej2.syncfusion.com/angular/demos/#/material3/badge/default) to learn how to present and manipulate data.

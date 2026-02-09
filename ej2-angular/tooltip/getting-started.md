@@ -1,33 +1,33 @@
 ---
 layout: post
-title: Getting started with Angular Tooltip component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Tooltip component of Syncfusion Essential JS 2 and more details.
+title: Getting started with the Angular Tooltip component | Syncfusion
+description: Learn how to get started with the Angular Tooltip component in Syncfusion Essential JS 2, including installation, module registration, styling, and basic usage.
 platform: ej2-angular
-control: Tooltip 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Tooltip component
+# Getting started with the Angular Tooltip component
 
-This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in Angular.
+This section explains how to create a simple **Tooltip** and configure its functionality in Angular.
 
 ## Dependencies
 
-The following list of dependencies are required to use Tooltip component in your application.
+The following dependencies are required to use the Tooltip component in an application.
 
-```javascript
+```text
 |-- @syncfusion/ej2-angular-popups
-    |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-angular-base
     |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
+      |-- @syncfusion/ej2-base
+      |-- @syncfusion/ej2-buttons
 ```
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI, use the following command.
+You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up Angular applications.
+To install Angular CLI, use the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -35,7 +35,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI commands:
 
 ```bash
 ng new my-app
@@ -44,17 +44,17 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Tooltip package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. Browse all Angular packages on npm: https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
+1. Ivy library distribution package ([Angular package format](https://v17.angular.io/guide/angular-package-format#angular-package-format))
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>= 20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and above. Install the package using the following command:
 
-Add [`@syncfusion/ej2-angular-popups`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-popups`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/32.1.19) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-popups --save
@@ -62,46 +62,25 @@ npm install @syncfusion/ej2-angular-popups --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the `ngcc` package using the following command:
 
-Add [`@syncfusion/ej2-angular-popups@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-popups@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/32.1.19-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-popups@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in the `package.json` file, add the `-ngcc` suffix to the package version as shown below:
 
 ```bash
-@syncfusion/ej2-angular-popups:"20.2.38-ngcc"
+@syncfusion/ej2-angular-popups:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Registering Tooltip Module
-
-* Import Tooltip module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-popups`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-//Syncfusion ej2-angular-popups module
-import { TooltipModule } from '@syncfusion/ej2-angular-popups';
-
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, TooltipModule ], //declaration of TooltipModule module into NgModule
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+> Note: If the `ngcc` tag is not specified while installing the package, the Ivy library package will be installed, which may produce a warning in non-Ivy projects.
 
 ## Adding CSS Reference
 
-* Add the Tooltip component's styles as given below in `styles.css`.
+* Add the Tooltip component styles in `styles.css`:
 
 `[style.css]`
 
@@ -118,35 +97,38 @@ Alternatively, based on the location of your CSS file, you can import the styles
 @import "node_modules/@syncfusion/ej2-angular-popups/styles/material.css";
 ```
 
-> We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) can generate combined component styles.
 
 ## Add Tooltip component
 
-Modify the template in `app.component.ts` file to render the `Tooltip` component. Add the Angular Tooltip by using `<ejs-tooltip>` selector in `template` section of the app.component.ts file.
+Use the following snippet in the `src/app/app.ts` file to import the Tooltip component.
 
-```javascript
+```ts
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 
 @Component({
-  selector: 'my-app',
+  imports: [TooltipModule],
+  standalone: true,
+  selector: 'app-root',
   template: `
-        <ejs-tooltip id='tooltip' content='Tooltip content'>
-            Hover Me
-        </ejs-tooltip>`,
+    <ejs-tooltip id='tooltip' content='Tooltip content'>
+        Hover Me
+    </ejs-tooltip>`,
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent  { }
+export class App { }
 ```
 
 ## Run the application
 
-* Now, run the application in the browser using the following command.
+* Run the application in the browser using the following command:
 
-```shell
+```bash
 ng serve --open
 ```
 
-The following code example depicts the way to initialize Tooltip on a single element.
+The following example shows how to initialize a Tooltip on a single element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,9 +144,9 @@ The following code example depicts the way to initialize Tooltip on a single ele
 
 ### Initialize Tooltip within a container
 
-It is possible to create Tooltip on multiple targets within a container. To do so, define the `selector` property with specific target elements - so that the Tooltip will be initialized only on those matched targets within a container. In this case, the Tooltip content gets assigned from the `title` attribute of the target element.
+Create a Tooltip on multiple targets within a container by defining the `selector` property with specific target elements, so the Tooltip initializes only on those matches. In this case, the Tooltip content is taken from the target element’s `title` attribute.
 
-Refer the following code example, to create a Tooltip on multiple targets within a container.
+Use the following example to create a Tooltip on multiple targets within a container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,7 +162,7 @@ Refer the following code example, to create a Tooltip on multiple targets within
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs8" %}
 
-> In the above sample, `details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
+> In the above sample, `details` refers to the container's ID, and the target `.e-info` refers to the target elements available within that container.
 
 ## See Also
 

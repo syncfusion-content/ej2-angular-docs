@@ -1,33 +1,21 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { DialogUtility } from '@syncfusion/ej2-popups';
 
 @Component({
-imports: [
-        
-        DialogModule,
-        ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'app-root',
-    template: `<button ejs-button cssClass="e-success" #confirmButton (click)="confirmBtnClick()">Confirm</button><span id="statusText"></span>`
+  imports: [DialogModule, ButtonModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<button ejs-button cssClass="e-success" #confirmButton (click)="confirmBtnClick()">Confirm</button><span id="statusText"></span>`
 })
 
 export class AppComponent implements OnInit {
-    ngOnInit(): void {
-      throw new Error('Method not implemented.');
-    }
-    public dialogObj :any;
-    public confirmBtnClick = (): void => {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  public dialogObj: any;
+  public confirmBtnClick = (): void => {
     document.getElementById('statusText')!.style.display = 'none';
     this.dialogObj = DialogUtility.confirm({
       title: 'Delete Multiple Items',
@@ -50,6 +38,3 @@ export class AppComponent implements OnInit {
     document.getElementById('statusText')!.style.display = 'block';
   }
 }
-
-
-

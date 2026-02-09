@@ -1,38 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { DialogUtility } from '@syncfusion/ej2-popups';
 
 @Component({
-imports: [
-        
-        DialogModule,
-        ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'app-root',
-    template: `<button ejs-button [isPrimary]="true" #promptButton (click)="promptBtnClick()">Prompt</button><span id="statusText"></span>`
+  imports: [DialogModule, ButtonModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<button ejs-button [isPrimary]="true" #promptButton (click)="promptBtnClick()">Prompt</button><span id="statusText"></span>`
 })
 
 export class AppComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-    public dialogObj : any;
-    public promptBtnClick = (): void => {
+  public dialogObj: any;
+  public promptBtnClick = (): void => {
     document.getElementById('statusText')!.style.display = 'none';
     this.dialogObj = DialogUtility.confirm({
       title: 'Join Chat Group',
       width: '300px',
-      content:'<p>Enter your name:</p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
+      content: '<p>Enter your name:</p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
       okButton: { click: this.promptOkAction.bind(this) },
       cancelButton: { click: this.promptCancelAction.bind(this) },
     });
@@ -59,6 +47,3 @@ export class AppComponent implements OnInit {
     document.getElementById('statusText')!.style.display = 'block';
   }
 }
-
-
-

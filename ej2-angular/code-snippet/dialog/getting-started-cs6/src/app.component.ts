@@ -1,21 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
-import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-
-		DialogModule
-    ],
-
-
-standalone: true,
+  imports: [DialogModule],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div id="dialog-container">
@@ -27,7 +16,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   // Reference the Dialog element
   @ViewChild('ejDialog') ejDialog: DialogComponent | any;
 
