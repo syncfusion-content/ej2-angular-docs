@@ -9,9 +9,11 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
   providers: [],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
+  template: `
+    <button (click) = "CloneNode()">Clone Node</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
     </ejs-diagram>
-    <button (click) = "CloneNode()">Clone Node</button>`,
+   `,
   styles: [
     `button {
       margin-left: 10px;

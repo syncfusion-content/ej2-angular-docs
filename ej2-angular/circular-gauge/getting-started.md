@@ -10,12 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Circular gauge component
 
-This section explains you the steps required to create a simple circular gauge and demonstrate the basic usage of circular gauge control.
+This article describes the steps to create a simple Circular Gauge and demonstrates its basic usage.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
+
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
 
 ```bash
 npm install -g @angular/cli
@@ -23,52 +24,51 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application with the Angular CLI:
 
 ```bash
 ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Circular Gauge package
+## Installing Syncfusion® Circular Gauge package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion® packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion® Angular packages (>= 20.2.36) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
 
-Add [`@syncfusion/ej2-angular-circulargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-circulargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19) to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-circulargauge --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions earlier than 12, use the legacy ngcc package of the Syncfusion® Angular components. Install the ngcc package with:
 
-Add [`@syncfusion/ej2-angular-circulargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-circulargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19-ngcc) to the application:
 
 ```bash
 npm install @syncfusion/ej2-angular-circulargauge@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
 
 ```bash
-@syncfusion/ej2-angular-circulargauge:"20.2.38-ngcc"
+@syncfusion/ej2-angular-circulargauge:"32.1.19-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
 
 ## Add Circular Gauge component
 
-Modify the template in `app.component.ts` file to render the `ej2-angular-circulargauge` component `[src/app/app.component.ts]`.
+Register and render the Circular Gauge component in the application root component. Update `app.component.ts` to include the `ej2-angular-circulargauge` module and render the control as shown in the sample below (`src/app/app.component.ts`).
 
 ```javascript
 
@@ -91,21 +91,20 @@ export class AppComponent  { }
 
 ```
 
-<!-- markdownlint-disable MD033 -->
 
-Now use the <code>app-container</code> in the index.html instead of default one.
+Replace the default root element in `index.html` with the component selector:
 
 ```
 <app-container></app-container>
 ```
 
-* Now run the application in the browser using the below command.
+Run the application using the Angular development server. If the project provides an `npm start` script, that command may be used; otherwise run the development server directly:
 
-```
-npm start
+```bash
+ng serve --open
 ```
 
-The below example shows a basic Circular Gauge.
+The following example shows a basic Circular Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,7 +120,7 @@ The below example shows a basic Circular Gauge.
 
 ## Set Pointer Value
 
-Pointer value is used to indicate the gauge value using [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
+Set a pointer value using the `value` property on a pointer. See the pointer API reference for details: [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer#value) in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
