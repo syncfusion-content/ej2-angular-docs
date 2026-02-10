@@ -18,7 +18,7 @@ To get started quickly with Angular Chart using CLI and Schematics, view the fol
 
 {% youtube "https://www.youtube.com/watch?v=uAubTKfbBy8" %}
 
-## Setup Angular environment
+## Setup angular environment
 
 Use the [`Angular CLI`](https://github.com/angular/angular-cli) to set up an Angular application. For more details about Angular CLI and Node versions, please refer to this [page](https://ej2.syncfusion.com/angular/documentation/system-requirement).<br>
 
@@ -28,7 +28,7 @@ To install the Angular CLI, use the following command.
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an angular application
 
 Start a new Angular application using below Angular CLI command.
 
@@ -37,7 +37,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Chart package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> chart package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
@@ -79,8 +79,8 @@ Modify the template in `app.component.ts` file to render the Charts component `[
 
 ```javascript
 
-import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [ChartModule, ChartAllModule],
@@ -130,7 +130,7 @@ Chart component are segregated into individual feature-wise modules. In order to
 * `DataLabelService` - Inject this provider to use datalabel feature.
 * `CategoryService`  - Inject this provider to use category feature.
 
-Now import the above-mentioned modules from the chart package and inject them into the Chart component through the provider section.
+Now import the above-mentioned modules from the chart package and inject them into the Chart component through the `provider` section.
 
  ```javascript
     import { Component } from '@angular/core';
@@ -145,7 +145,7 @@ Now import the above-mentioned modules from the chart package and inject them in
 
 ## Populate chart with data
 
-This section explains how to plot the following JSON data to the chart.
+This section explains how to plot the following JSON data to the Chart.
 
 ```javascript
     export class AppComponent implements OnInit {

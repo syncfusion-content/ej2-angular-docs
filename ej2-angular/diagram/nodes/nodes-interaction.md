@@ -20,7 +20,7 @@ Node selection is fundamental to diagram interaction. Users can select nodes by 
 
 ### Programmatic Node Selection
 
-Nodes can be selected at runtime using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#select) method. The selection can be cleared using either the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clearselection) method to clear all selections or the [`unSelect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#unselect) method to remove specific objects from selection.
+Nodes can be selected at runtime using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#select) method. The selection can be cleared using either the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#clearselection) method to clear all selections or the [`unSelect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#unselect) method to remove specific objects from selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,8 +38,8 @@ Nodes can be selected at runtime using the [`select`](https://ej2.syncfusion.com
 
 |Method | Parameter | Description|
 |----|----|----|
-|[`unSelect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#unselect)| NodeModel/ConnectorModel | Removes the specified object from the current selection.|
-|[`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clearselection)| - | Clears all selected objects in the diagram.|
+|[`unSelect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#unselect)| NodeModel/ConnectorModel | Removes the specified object from the current selection.|
+|[`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#clearselection)| - | Clears all selected objects in the diagram.|
 
 ## Drag
 
@@ -49,7 +49,7 @@ Node dragging allows users to reposition nodes within the diagram canvas. Users 
 
 ### Programmatic Node Dragging
 
-Nodes can be moved programmatically using the [`drag`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drag) method, which accepts the target object and new position coordinates.
+Nodes can be moved programmatically using the [`drag`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#drag) method, which accepts the target object and new position coordinates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,7 +71,7 @@ When a node is selected, resize handles appear on all sides, allowing users to m
 
 ### Programmatic Node Resizing
 
-Node dimensions can be modified at runtime using the [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#scale) method, which applies scaling factors to adjust the node size proportionally.
+Node dimensions can be modified at runtime using the [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#scale) method, which applies scaling factors to adjust the node size proportionally.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,7 +93,7 @@ Node rotation is performed interactively by clicking and dragging the rotate han
 
 ### Programmatic Node Rotation
 
-Nodes can be rotated at runtime using the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#rotate) method, which accepts the target object and rotation angle in degrees.
+Nodes can be rotated at runtime using the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#rotate) method, which accepts the target object and rotation angle in degrees.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,15 +109,15 @@ Nodes can be rotated at runtime using the [`rotate`](https://ej2.syncfusion.com/
 
 ## Flip
 
-The diagram component supports node flipping operations to create mirrored images of nodes. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#flip) property controls the flip direction and behavior.
+The diagram component supports node flipping operations to create mirrored images of nodes. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#flip) property controls the flip direction and behavior.
 
 ### Flip Directions
 
 | Flip Direction | Description |
 | -------- | ----------- |
-|HorizontalFlip |[`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) mirrors the node across the horizontal axis.|
-|VerticalFlip|[`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) mirrors the node across the vertical axis.|
-|Both|[`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) mirrors the node across both horizontal and vertical axes.|
+|HorizontalFlip |[`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipdirection) mirrors the node across the horizontal axis.|
+|VerticalFlip|[`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipdirection) mirrors the node across the vertical axis.|
+|Both|[`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipdirection) mirrors the node across both horizontal and vertical axes.|
 |None|Disables all flip operations for the node.|
 
 The following example demonstrates how to apply flip transformations to nodes:
@@ -152,7 +152,7 @@ Node flip properties can be updated dynamically at runtime using the `^` operato
 
 ### Flip Modes
 
-The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipMode/) property controls which elements are affected during flip operations, determining whether ports, labels, and label text are flipped along with the node.
+The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipmode) property controls which elements are affected during flip operations, determining whether ports, labels, and label text are flipped along with the node.
 
 | FlipMode | Description | 
 | -------- | -------- |
@@ -195,6 +195,7 @@ The following table demonstrates how different flip modes affect node appearance
 | Both | PortAndLabel |![Both PortAndLabel](../images/Vertical-All.jpg)|![BothFlip PortAndLabel](../images/BothFlip-PortAndLabel.jpg)| 
 | Both | PortAndLabelText |![Both PortAndLabelText](../images/Vertical-All.jpg)|![BothFlip PortAndLabelText](../images/BothFlip-PortAndLabelText.jpg)| 
 | Both | LabelAndLabelText |![Both LabelAndLabelText](../images/Vertical-All.jpg)|![BothFlip LabelAndLabelText](../images/BothFlip-LabelAndLabelText.jpg)| 
+
 The following example demonstrates implementing different flip modes:
 
 {% tabs %}

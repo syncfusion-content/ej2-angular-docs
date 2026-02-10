@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Progress bar component
+# Getting started with Angular Progress Bar Component
 
-This section explains you the steps required to create a progressbar and demonstrate the basic usage of the progressbar control.
+This section explains the steps required to create a progress bar and demonstrate the basic usage of the Progress bar component. By the end of this guide, you will have a fully functional progress bar running in your Angular application.
 
 ## Dependencies
 
@@ -23,9 +23,13 @@ Below is the list of minimum dependencies required to use the progressbar compon
     |-- @syncfusion/ej2-svg-base
 ```
 
+## Prerequisites
+
+Before you begin, ensure that Node.js and npm are installed on your system.
+
 ## Installation and Configuration
 
-* You can use `Angular CLI` to setup your angular applications.
+* You can use `Angular CLI` to set up your Angular applications.
 
   ```shell
   npm install -g @angular/cli
@@ -41,9 +45,9 @@ Start a new Angular application using below Angular CLI command.
 ng new my-app
 cd my-app
 ```
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> progressbar package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Progress Bar Package
 
-* Install progressbar packages using below command.
+* Install the Progress bar package using the following command:
 
   ```javascript
   npm install @syncfusion/ej2-angular-progressbar --save
@@ -51,11 +55,11 @@ cd my-app
 
  The above package installs `progressbar dependencies` which are required to render the component in Angular environment
 
-## Add Progressbar component
+## Add Progress Bar Component
 
-Modify the template in `app.component.ts` file to render the `ej2-ng-progressbar` component
+Modify the template in `app.component.ts` file to render the `ej2-ng-progressbar` component.
 
-`[src/app/app.component.ts]`.
+File: `src/app/app.component.ts`
 
 ```javascript
 
@@ -85,10 +89,12 @@ Now use the **app-container** in the index.html instead of default one.
 * Now run the application in the browser using the below command.
 
 ```
-npm start
+ng serve
 ```
 
-The below example shows a basic Progressbar.
+After the development server starts, open your browser and navigate to `http://localhost:4200/`. You should see the basic progress bar component displayed on the page.
+
+The following example demonstrates a basic Progress bar component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

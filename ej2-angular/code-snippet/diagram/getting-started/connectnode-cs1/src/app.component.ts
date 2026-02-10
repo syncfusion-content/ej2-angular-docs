@@ -2,13 +2,10 @@ import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagram
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 
 @Component({
-imports: [
-         DiagramModule
-    ],
-
-providers: [ ],
-standalone: true,
-  selector: "app-container",
+  imports: [DiagramModule],
+  providers: [],
+  standalone: true,
+  selector: "app-root",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" mode="SVG">
     <e-nodes>
         <e-node id='node1' [height]=60 [width]=100 [offsetX]=300 [offsetY]=80 >
@@ -20,7 +17,7 @@ standalone: true,
   </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class App {
   @ViewChild("diagram")
   public diagram?: DiagramComponent;
   ngOnInit(): void {

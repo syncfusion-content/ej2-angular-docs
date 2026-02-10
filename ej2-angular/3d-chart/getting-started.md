@@ -21,7 +21,7 @@ To install the Angular CLI, use the following command.
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an angular application
 
 Start a new Angular application using below Angular CLI command.
 
@@ -30,7 +30,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> 3D Chart package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> 3D chart package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
@@ -66,13 +66,13 @@ To reference the ngcc package in `package.json`, append the suffix `-ngcc` to th
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Add 3D Chart component
+## Add 3D chart component
 
 Modify the template in `app.component.ts` file to render the 3D Charts component `[src/app/app.component.ts]`.
 
 ```javascript
 import { Component, ViewEncapsulation } from '@angular/core';
-import { Chart3DModule, Chart3DAllModule } from '@syncfusion/ej2-angular-charts'
+import { Chart3DModule, Chart3DAllModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [Chart3DModule, Chart3DAllModule],
@@ -121,12 +121,10 @@ The below example shows a basic 3D Chart.
 * `DataLabel3DService` - Inject this provider to use datalabel feature.
 * `Category3DService`  - Inject this provider to use category feature.
 
-Now import the above-mentioned modules from the chart package and inject them into the Chart3D component through the provider section.
+Now import the above-mentioned modules from the chart package and inject them into the Chart3D component through the `provider` section.
 
  ```javascript
-    import { Chart3DModule } from '@syncfusion/ej2-angular-charts'
-    import { ColumnSeries3DService, Legend3DService, Tooltip3DService, DataLabel3DService, Category3DService } from '@syncfusion/ej2-angular-charts';
-    import {  } from '@syncfusion/ej2-angular-charts';
+    import { Chart3DModule, ColumnSeries3DService, Legend3DService, Tooltip3DService, DataLabel3DService, Category3DService } from '@syncfusion/ej2-angular-charts';
     import { Component } from '@angular/core';
 
     @Component({
@@ -175,7 +173,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
   
 {% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs2" %}
 
-## Add 3D Chart title
+## Add 3D chart title
 
 You can add a title using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3dmodel#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 

@@ -29,7 +29,7 @@ Before creating nodes, understanding their core properties helps in effective di
 
 ### Add nodes through nodes collection
 
-To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#node) object and add it to the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/) collection of the diagram model. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#id) property serves as the unique identifier for runtime operations and customization.
+To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#node) object and add it to the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodemodel) collection of the diagram model. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#id) property serves as the unique identifier for runtime operations and customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,7 +47,7 @@ N> Node ID must begin with a letter, remain unique across all shapes and connect
 
 ### Create nodes from data source
 
-Nodes can be generated automatically using the dataSource property. Default properties for these nodes are retrieved from [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getnodedefaults) settings. For detailed information about data binding, refer to [DataBinding](./data-binding).
+Nodes can be generated automatically using the dataSource property. Default properties for these nodes are retrieved from [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#getnodedefaults) settings. For detailed information about data binding, refer to [DataBinding](https://ej2.syncfusion.com/angular/documentation/diagram/data-binding).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,7 +63,7 @@ Nodes can be generated automatically using the dataSource property. Default prop
 
 ### Add nodes from symbol palette
 
-Nodes can be predefined in a symbol palette and dragged into the diagram as needed. This approach provides users with a library of reusable components. For comprehensive guidance on symbol palette integration, refer to [Symbol Palette](https://ej2.syncfusion.com/angular/documentation/diagram/symbol-palette).
+Nodes can be predefined in a symbol palette and dragged into the diagram as needed. This approach provides users with a library of reusable components. For comprehensive guidance on symbol palette integration, refer to [Symbol Palette](https://ej2.syncfusion.com/angular/documentation/diagram/symbol-palette/symbol-palette).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,7 +79,7 @@ Nodes can be predefined in a symbol palette and dragged into the diagram as need
 
 ### Draw nodes interactively
 
-To enable interactive node drawing, activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property and configure the node template using the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property.
+To enable interactive node drawing, activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tool) property and configure the node template using the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#drawingobject) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +97,7 @@ To enable interactive node drawing, activate the drawing tool by setting `DrawOn
 
 ### Add and remove individual nodes
 
-Nodes can be dynamically added using the [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#add) method and removed using the [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#remove) method. Both operations trigger the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event, allowing for custom handling of diagram modifications.
+Nodes can be dynamically added using the [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#add) method and removed using the [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#remove) method. Both operations trigger the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#collectionchange) event, allowing for custom handling of diagram modifications.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,7 +113,7 @@ Nodes can be dynamically added using the [`add`](https://ej2.syncfusion.com/angu
 
 ### Add multiple nodes simultaneously
 
-Collections of nodes can be efficiently added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method. This approach is optimal for bulk operations and triggers the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionchange) event for each added element.
+Collections of nodes can be efficiently added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addelements) method. This approach is optimal for bulk operations and triggers the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#collectionchange) event for each added element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,7 +147,7 @@ N> Call the `dataBind` method after property updates to ensure immediate reflect
 
 ### Clone nodes
 
-Node cloning creates new instances with identical properties and attributes. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#copy) and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) methods to duplicate existing nodes programmatically.
+Node cloning creates new instances with identical properties and attributes. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#copy) and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#paste) methods to duplicate existing nodes programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -165,7 +165,7 @@ Node cloning creates new instances with identical properties and attributes. Use
 
 ### Import nodes from external components
 
-Custom [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragenter) functionality enables conversion of elements from other components, such as tree views, into diagram nodes based on the dragged element's data properties.
+Custom [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#dragenter) functionality enables conversion of elements from other components, such as tree views, into diagram nodes based on the dragged element's data properties.
 
 ## See Also
 

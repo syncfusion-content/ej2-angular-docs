@@ -386,7 +386,7 @@ export class App {
   public dataSourceSettings: DataSourceModel = {
       id: "Name",
       parentId: "ReportingPerson",
-    dataManager: new DataManager(this.data as JSON[]),
+      dataManager: new DataManager(this.data as JSON[]),
     };
 }
 ```

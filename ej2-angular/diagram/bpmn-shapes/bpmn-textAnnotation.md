@@ -14,17 +14,17 @@ domainurl: ##DomainURL##
 
 A BPMN object can be associated with a text annotation that provides additional details about objects within a flow without affecting the actual process flow. Text annotations serve as documentation elements that help explain or clarify specific aspects of the BPMN diagram.
 
-A TextAnnotation points to or references another BPMN shape through the [`textAnnotationTarget`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnTextAnnotation/#textannotationtarget) property. When the target shape is moved or deleted, any TextAnnotations attached to the shape will automatically move or be deleted as well. This ensures that TextAnnotations remain associated with their target shapes, though the TextAnnotation can be repositioned to any offset from its target.
+A TextAnnotation points to or references another BPMN shape through the [`textAnnotationTarget`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmntextannotation#textannotationtarget) property. When the target shape is moved or deleted, any TextAnnotations attached to the shape will automatically move or be deleted as well. This ensures that TextAnnotations remain associated with their target shapes, though the TextAnnotation can be repositioned to any offset from its target.
 
 The annotation element can be switched from one BPMN node to another by simply dragging the source end of the annotation connector to the desired BPMN node. By default, the TextAnnotation shape includes a connection to its target.
 
 ## Key properties
 
-The [`textAnnotationDirection`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnTextAnnotation/#textannotationdirection) property controls the shape direction of the text annotation. By default, this property is set to `Auto`, which automatically determines the optimal direction based on the target's position.
+The [`textAnnotationDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmntextannotation#textannotationdirection) property controls the shape direction of the text annotation. By default, this property is set to `Auto`, which automatically determines the optimal direction based on the target's position.
 
-To set the size for text annotation, use the [`width`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/node/#width) and [`height`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/node/#height) properties of the node.
+To set the size for text annotation, use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#height) properties of the node.
 
-The [`offsetX`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnTextAnnotation/#offsetx) and [`offsetY`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnTextAnnotation/#offsety) properties determine the distance between the BPMN node and the TextAnnotation.
+The [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodemodel#offsetx) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodemodel#offsety) properties determine the distance between the BPMN node and the TextAnnotation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +76,7 @@ The text annotation supports several directional orientations to optimize the vi
 
 ## Add Text Annotation at Runtime
 
-Text annotations can be added dynamically using either the [`addTextAnnotation`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#addtextannotation) method or the [`add`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#add) method of the diagram. The following example shows how to use these methods to add a text annotation node programmatically.
+Text annotations can be added dynamically using either the [`addTextAnnotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addtextannotation) method or the [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#add) method of the diagram. The following example shows how to use these methods to add a text annotation node programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
