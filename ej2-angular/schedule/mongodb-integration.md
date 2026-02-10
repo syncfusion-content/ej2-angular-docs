@@ -2,8 +2,8 @@
 layout: post
 title: Getting started with Angular Schedule and MongoDB | Syncfusion
 description: Checkout and learn about Getting started with Angular Schedule component of Syncfusion Essential JS 2 in the MEAN project.
-control: MongoDB
-platform: ej2-react
+control: Scheduler
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -19,10 +19,10 @@ MEAN is a full‑stack JavaScript technology stack consisting of MongoDB, Expres
 ## Overview
 This integration enables full CRUD (Create, Read, Update, Delete) operations for calendar events using:
 
-* Frontend: Angular + Syncfusion Angular Scheduler
-* Backend: Node.js + Express
-* Database: MongoDB
-* Communication: REST APIs via Syncfusion DataManager
+* Frontend: **Angular + Syncfusion Angular Scheduler**
+* Backend: **Node.js + Express**
+* Database: **MongoDB**
+* Communication: **REST APIs via Syncfusion DataManager**
 
 Users can create, edit, and delete appointments in the Scheduler UI, with all changes persisted in MongoDB.
 
@@ -58,8 +58,7 @@ Required for storing and retrieving application data. Supports both local instal
 4. MongoDB stores event data
 5. Updated data is sent back to Scheduler UI
 
-## Database Setup
-**MongoDB**   
+## Database Setup 
 Follow the steps below to set up the MongoDB database for the application:
 
 1. Download the MongoDB Community Edition from the official website: [MongoDB](https://www.mongodb.com/try/download/community)
@@ -76,7 +75,7 @@ Follow the steps below to set up the MongoDB database for the application:
     ![mongodb-database-collection](./images/schedule-mongodb-database-collection.png)
     *Image illustrating the MongoDB database & collection*
 
-6. Ensure the database connection status shows as Connected in MongoDB Compass.
+6. Confirm that MongoDB Compass shows the database in the connected state, as illustrated in the screenshot.
     ![mongodb-connectivity](./images/schedule-mongodb-connectivity.png)
     *Image illustrating the MongoDB connectivity*
 
@@ -86,58 +85,17 @@ To create a new Angular application, use Angular CLI — it provides a modern, o
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-ng new mean-angular-app
+ng new mean-angular-app   
+cd mean-angular-app
 
 {% endhighlight %}
 {% endtabs %}
 
-Running the above command will prompt you to configure the project as shown below.
-
-1. **Setup configuration**  
-    {% tabs %}
-    {% highlight bash tabtitle="CMD" %}
-
-    Which stylesheet system would you like to use?     
-    **CSS**
-
-    Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?  
-    **NO**
-
-    Which AI tools do you want to configure with Angular best practices?   
-    **None**
-
-    {% endhighlight %}
-    {% endtabs %}
-
-2. **Navigate to the project directory**   
-    Once the project is created successfully, move into the application folder using the following command:
-
-    {% tabs %}
-    {% highlight bash tabtitle="CMD" %}
-
-    cd mean-angular-app
-    
-    {% endhighlight %}
-    {% endtabs %}
-
-3.  **Start the development server**   
-    Launch the Angular development server.
-
-    {% tabs %}
-    {% highlight bash tabtitle="CMD" %}
-
-    ng serve
-    
-    {% endhighlight %}
-    {% endtabs %}
-
-After executing the above commands, the application will be available at: `http://localhost:4200`
-
-The Angular application is now created and running with default settings.
+The Angular application is now created with default settings.
 Next, we will proceed with integrating Syncfusion® Angular Scheduler component into the project after setting up the server.
 
-## Create the Node.js server application
-1. **To set up the backend for the MEAN application, Install the required packages and make a new directory for server in the angular project folder itself.**
+## Create a Server Application
+1. To set up the backend for the MEAN application, Install the required packages and make a new directory for server in the Angular project folder `mean-angular-app/` itself:
 
     {% tabs %}
     {% highlight bash tabtitle="CMD" %}
@@ -147,9 +105,9 @@ Next, we will proceed with integrating Syncfusion® Angular Scheduler component 
     {% endhighlight %}
     {% endtabs %}
 
-    * Express – A minimal and flexible web framework used to build API endpoints
-    * MongoDB (Node.js Driver) – The official MongoDB driver that allows your server to communicate with the database
-    * CORS – A package that enables your application (running on a different port) to access the server’s API
+    - Express – A minimal and flexible web framework used to build API endpoints
+    - MongoDB (Node.js Driver) – The official MongoDB driver that allows your server to communicate with the database
+    - CORS – A package that enables your application (running on a different port) to access the server’s API
 
     {% tabs %}
     {% highlight bash tabtitle="CMD" %}
@@ -159,8 +117,8 @@ Next, we will proceed with integrating Syncfusion® Angular Scheduler component 
     {% endhighlight %}
     {% endtabs %}
 
-2. **Create a file server.js**   
-Create a new file named `server.js` inside the directory `server` created above and add the following code to set up the server:   
+2. Create a file **server.js**:   
+Create a new file named `server.js` inside the directory `server` created above and add the following code to set up the server.   
     
     {% tabs %}
     {% highlight js tabtitle="server.js" %}
@@ -209,6 +167,7 @@ Create a new file named `server.js` inside the directory `server` created above 
         try {
         const body = req.body;
         let events = [];
+
         // INSERT
         if (body.action === 'insert' || (body.added && body.added.length)) {
             events = body.added || [body.value];
@@ -218,6 +177,7 @@ Create a new file named `server.js` inside the directory `server` created above 
             await collection.insertOne(e);
             }
         }
+
         // UPDATE
         if (body.action === 'update' || (body.changed && body.changed.length)) {
             events = body.changed || [body.value];
@@ -231,6 +191,7 @@ Create a new file named `server.js` inside the directory `server` created above 
             );
             }
         }
+
         // DELETE
         if (body.action === 'remove' || (body.deleted && body.deleted.length)) {
             events = body.deleted || [{ Id: body.key }];
@@ -250,8 +211,8 @@ Create a new file named `server.js` inside the directory `server` created above 
 
     Here database name is `mydb` and collection name is `ScheduleData`, both were previously created during the database setup process.
     
-3. **Add Server Script to package.json**    
-To enable running the Node.js backend directly from the Angular project’s root, add the following script inside your root `package.json` under the "scripts" section:
+3. Add **server script** to `package.json`:    
+To enable running the Node.js backend directly from the Angular project’s root, add the following script inside your root `package.json` under the "scripts" section.
 
     {% tabs %}
     {% highlight json tabtitle="package.json" %}
@@ -266,10 +227,7 @@ To enable running the Node.js backend directly from the Angular project’s root
 ## Integrating Syncfusion Angular Scheduler to MEAN Application
 This section integrates [Syncfusion Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) to the above created MEAN application.
 
-1. **Clean Up Default Angular Files**  
-    Remove default assets and boilerplate of the angular application.
-
-2. **Install the required [Syncfusion Angular Scheduler Package](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule)** 
+1. Install the required [Syncfusion Angular Scheduler Package](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule): 
     
     {% tabs %}
     {% highlight bash tabtitle="NPM" %}
@@ -279,8 +237,8 @@ This section integrates [Syncfusion Angular Scheduler](https://www.syncfusion.co
     {% endhighlight %}
     {% endtabs %}
 
-3. **Adding CSS references for Schedule**   
-Add CSS references needed for a Schedule in `src/styles.css` from the `../node_modules/@syncfusion` package folder.
+2. Add CSS references:   
+    Add CSS references for the Schedule in `src/styles.css`.
 
     {% tabs %}
     {% highlight css tabtitle="styles.css" %}
@@ -298,9 +256,42 @@ Add CSS references needed for a Schedule in `src/styles.css` from the `../node_m
     {% endhighlight %}
     {% endtabs %}
 
-4. **Add the Schedule Component**  
-    In the `src/app/app.ts` file, use the following code snippet to render the Syncfusion Angular Schedule control:
+3. Add the Schedule component:  
+    In the `src/app/app.ts` file, use the following code snippet to render the Syncfusion Angular Schedule component.
     
+    {% tabs %}
+    {% highlight ts tabtitle="app.ts" %}
+
+    import { Component } from '@angular/core';
+    import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
+
+    @Component({
+    selector: 'app-root',
+    templateUrl: 'app.html',
+    imports: [ScheduleModule],
+    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+    })
+
+    export class App {
+        // you can add functionalities here....
+    } 
+   
+    {% endhighlight %}
+    {% endtabs %}
+
+    Create a template for the component in `src/app/app.html` and make reference in `src/app/app.ts`.
+    
+    {% tabs %}
+    {% highlight html tabtitle="app.html" %}
+
+    <ejs-schedule width="100%" height="550px"></ejs-schedule>
+    
+    {% endhighlight %}
+    {% endtabs %}
+
+4. Perform CRUD operations using Syncfusion's DataManager URL Adaptor:  
+    This connects the scheduler to your backend through REST endpoints and enables create, read, update, and delete from the UI.
+
     {% tabs %}
     {% highlight ts tabtitle="app.ts" %}
 
@@ -332,7 +323,7 @@ Add CSS references needed for a Schedule in `src/styles.css` from the `../node_m
     {% endhighlight %}
     {% endtabs %}
 
-    Create a template for the component in `src/app/app.html` and make reference in `src/app/app.ts`
+    Modify the template of the component to perform CRUD operations.
     
     {% tabs %}
     {% highlight html tabtitle="app.html" %}
@@ -342,9 +333,17 @@ Add CSS references needed for a Schedule in `src/styles.css` from the `../node_m
     {% endhighlight %}
     {% endtabs %}
 
+    - The Scheduler is connected to a backend service using **Syncfusion’s DataManager**, a powerful data-handling component built to seamlessly manage remote data operations.
+    - DataManager is configured with two API endpoints:
+        - url → to read event data
+        - crudUrl → to handle create, update, and delete actions
+    - The UrlAdaptor ensures standard REST-style communication with your server.
+    - Once this is set, the Scheduler automatically sends requests when users add, edit, drag, resize, or delete events.
+    - The server processes these operations and returns updated event data, allowing the Scheduler to stay perfectly in sync with the backend.
+
 ## Run the MEAN Application
 
-1. **From the project folder `mean-angular-app/`, Run the Backend Server:**
+1. From the project folder `mean-angular-app/`, run the backend server:
     
     {% tabs %}
     {% highlight bash tabtitle="NPM" %}
@@ -354,21 +353,21 @@ Add CSS references needed for a Schedule in `src/styles.css` from the `../node_m
     {% endhighlight %}
     {% endtabs %}
 
-    node server started running on http://localhost:5000/
+    The Node server started running on http://localhost:5000/
 
-2. **Open another terminal from the same project folder `mean-angular-app/` and Run the Angular Application:**
+2. Open another terminal from the same project folder `mean-angular-app/` and run the Angular application:
     
     {% tabs %}
     {% highlight bash tabtitle="NPM" %}
 
-    ng serve
+    npm start
     
     {% endhighlight %}
     {% endtabs %}
 
-    angular application started running on http://localhost:4200/
+    The Angular application started running on http://localhost:4200/
 
-3. **You can create, read, update and delete events in the Angular Scheduler and able to see the changes in DB as well.**
+3. You can create, read, update and delete events in the Angular Scheduler and able to see the changes in DB as well.
 
 ## Output Preview
 **Syncfusion Angular Scheduler**
@@ -381,29 +380,27 @@ Add CSS references needed for a Schedule in `src/styles.css` from the `../node_m
 
 ## Common pitfalls & solutions
 
-1. **CORS blocked**   
+1. CORS blocked   
 Register app.use(cors(...)) before routes, and match origin with your Angular dev URL (http://localhost:4200). Enable credentials only if you send cookies/Authorization and configure headers in DataManager.
 
-2. **Dates stored as strings**   
+2. Dates stored as strings   
 Convert StartTime/EndTime to Date objects on the server before inserting/updating. Otherwise, Scheduler rendering/timezone math may be off.
 
-3. **Immutable _id on update**   
+3. Immutable _id on update   
 Remove _id from payload prior to updateOne (MongoDB forbids changing _id). [MongoDB.com](https://www.mongodb.com/docs/drivers/node/v6.15/usage-examples/updateOne/)
 
-4. **Missing CSS → broken editor/pickers**   
+4. Missing CSS → broken editor/pickers   
 Include Scheduler CSS (via ng add or styles.css) per getting‑started docs. [Adding CSS references](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference)
 
-5. **ID collisions**   
+5. ID collisions   
 Scheduler uses Id for CRUD tracking; ensure uniqueness (generate server‑side or enforce unique index). [help.syncfusion.com](https://help.syncfusion.com/angular/schedule/data-binding)
 
-6. **Load‑on‑demand windows**   
+6. Load‑on‑demand windows   
 The Scheduler can load data on demand; if you implement date‑range filtering server‑side, respect DataManager query params for ranges.
  
-7. **Recurring events not persisting exceptions**   
+7. Recurring events not persisting exceptions   
 Persist RecurrenceRule, RecurrenceID, RecurrenceException to support repeats and exceptions. [Scheduler events](https://help.syncfusion.com/angular/schedule/data-binding#appointment-fields)
 
-## Syncfusion Sample Repository
+<br>
 
-1. Complete MEAN Stack Sample – A Syncfusion reference implementation that integrates MongoDB with the Angular Scheduler component.
-    
-    GitHub: [SyncfusionExamples/ej2-angular-scheduler-with-mongodb](https://github.com/SyncfusionExamples/ej2-angular-scheduler-mongodb)
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/ej2-angular-scheduler-mongodb)

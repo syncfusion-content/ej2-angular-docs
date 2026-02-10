@@ -12,16 +12,13 @@ domainurl: ##DomainURL##
 
 This section briefly explains how to create a simple **Toast** and configure its available functionalities in Angular using the Angular CLI quickstart.
 
-## Getting started with Angular CLI
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
-The following section explains the steps required to create a simple `angular-cli` application and how to configure the `Toast` component.
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
-### Prerequisites
+## Prerequisites
 
-To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
-
-* Angular : 6+
-* TypeScript : 2.6+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
 
 ## Dependencies
 
@@ -36,75 +33,114 @@ The following dependencies are required to use the Toast component in your appli
         |-- @syncfusion/ej2-popups
 ```
 
-### Setting up an Angular project
+## SetUp the Angular application
 
-Angular provides an easy way to set up a project using the [Angular CLI](https://github.com/angular/angular-cli) tool.
-
-Install the CLI application globally on your machine.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### Create a new application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-After running the above command, you may be asked the following options:
-* Would you like to add Angular routing?
-* Which stylesheet format would you like to use?
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
-By default, it installs a CSS-based application. To set up with SCSS, pass the --style=scss argument when creating the project.
+```bash
 
-Example:
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
-Navigate to the created project folder.
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
 
 ```bash
 cd syncfusion-angular-app
 ```
 
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Notifications package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. See the npm page for [Syncfusion Angular packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
-
-Add the [`@syncfusion/ej2-angular-notifications`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications) package to the application.
+This guide uses the [Angular Toast component](https://www.syncfusion.com/angular-components/angular-toast) for demonstration. Add the Angular Toast component component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-notifications --save
+ng add @syncfusion/ej2-angular-notifications
 ```
 
-### Angular compatibility compiled package(ngcc)
+This command will perform the following configurations:
 
-For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following.
+- Add the `@syncfusion/ej2-angular-notifications` package and peer dependencies to your `package.json`.
+- Import the Toast component component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material3 theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-notifications@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications/v/32.1.19-ngcc) to the application.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-notifications@ngcc --save
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-notifications
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-notifications@32.1.19-ngcc		
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+## Adding CSS reference
 
-```json
-"@syncfusion/ej2-angular-notifications": "32.1.19-ngcc"
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material3` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Toast component:
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material3.css';
 ```
 
-> Note: If the ngcc tag is not specified while installing the package, the Ivy library package will be installed and this package may throw a warning.
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Adding Toast component
 
@@ -136,20 +172,6 @@ export class App {
   }
 }
 ```
-
-## Adding CSS reference
-
-The following CSS files are available in the `../node_modules/@syncfusion` package folder. These can be referenced in `src/styles.css` using the following code.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material3.css';
-```
-
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
 
 ## Initialize the Toast with message
 

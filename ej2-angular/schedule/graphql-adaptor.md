@@ -108,7 +108,7 @@ Define the `Appointment` type, a `ReturnType` wrapper for query responses, a `Da
 
 **[src/schema.graphql]**
 
-```graphql
+```
 # --- Domain model ---
 type Appointment {
   Id: Int!

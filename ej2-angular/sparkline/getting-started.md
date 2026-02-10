@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Sparkline component
 
-This section explains you the steps required to create a Sparkline and demonstrate the basic usage of the Sparkline control.
+This section explains the steps required to create a Sparkline and demonstrates basic usage of the Sparkline control.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to set up Angular applications. Install the CLI with the following command and ensure a compatible Node.js (LTS) and Angular version are installed; the `standalone: true` examples require Angular 14 or later. Verify compatibility between the installed Angular version and `@syncfusion/ej2-angular-charts`; Angular version 21 and above is recommended.
 
 ```bash
 npm install -g @angular/cli
@@ -22,7 +22,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI commands.
 
 ```bash
 ng new my-app
@@ -31,9 +31,7 @@ cd my-app
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Sparkline package
 
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
-
-To install sparkline component, use the following command.
+All Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published on the npm registry. To install the Sparkline package, use the following command. Verify the package's peer dependencies for Angular compatibility before installation.
 
 ```bash
 npm install @syncfusion/ej2-angular-charts --save
@@ -43,8 +41,7 @@ npm install @syncfusion/ej2-angular-charts --save
 
 ## Add Sparkline component
 
-Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
-
+Modify the `app.component.ts` file to render the Sparkline component (`ejs-sparkline`). Ensure the component selector used in `index.html` matches the `selector` value defined in the component (for example `<app-root>` when `selector: 'app-root'`).
   ```javascript
 
 import { SparklineModule } from '@syncfusion/ej2-angular-charts'
@@ -66,20 +63,19 @@ imports: [
 
   <!-- markdownlint-disable MD033 -->
 
-  Now use the <code>app-container</code> in the index.html instead of default one.
+  Use the component selector defined in `app.component.ts` (for example `<app-root>`) in `index.html` so the root component mounts correctly.
 
   ```html
   <app-container></app-container>
   ```
 
-Now run the application in the browser using the below command.
+Run the development server. Use `ng serve` for the Angular dev server. Alternatively, `npm start` works if a `start` script is configured in `package.json`.
 
   ```
   npm start
   ```
 
 The below example shows a basic Sparkline.
-
 ```typescript
 
 import { SparklineModule } from '@syncfusion/ej2-angular-charts'
@@ -98,38 +94,34 @@ imports: [
 
 ```
 
-As we didn't specify dataSource to the Sparkline, no shape will be rendered and only an empty SVG element is appended to the Sparkline container.
+Because no `dataSource` is specified, the Sparkline renders an empty SVG element. To render a Sparkline provide a `dataSource` (an array of numbers or an array of objects) and map fields using `xName` and `yName`. For example, when using an array of objects such as `{ x: 'Jan', y: 10 }`, set `xName='x'` and `yName='y'`.
 
 ## Module Injection
 
-Sparkline component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. Find the relevant feature service available in Sparkline and its description as follows.
+Sparkline features are provided by optional services. To enable a feature, register its service either in the application module `providers` (module-based applications) or in a standalone component's `providers` array. Relevant services include:
 
-* SparklineTooltipService - Inject this provider to use tooltip series.
+* SparklineTooltipService - Inject this provider to enable tooltip support for the Sparkline.
 
-  In the current application, we are going to modify the above basic Sparkline to visualize the sparkline types.
-
-  For this application we are going to use tooltip features of the Sparkline.
-  Now import the SparklineTooltipService from Sparkline package and inject it into the AppModule.
+The following examples demonstrate enabling tooltip support and other feature services. Import `SparklineTooltipService` from `@syncfusion/ej2-angular-charts` and provide it according to the application architecture (module providers or component `providers`).
 
   ```javascript
 
-      import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
-      import { Component } from '@angular/core';
+    import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
+    import { Component } from '@angular/core';
 
-      @Component({
-          imports: [
-              SparklineModule,
-          ],
-          standalone: true,
-          providers: [ SparklineTooltipService ]
-      })
+    @Component({
+      imports: [
+        SparklineModule,
+      ],
+      standalone: true,
+      providers: [ SparklineTooltipService ]
+    })
 
   ```
 
 ## Bind data source to Sparkline
 
-The [`dataSource`] property is used for binding data source to Sparkline. This property takes collection value as input. For example, the list of objects can be provided as input.
-
+The `dataSource` property binds data to the Sparkline. This property accepts an array of primitive values or an array of objects. For object arrays, set `xName` and `yName` to map object fields to the Sparkline's X and Y values. Example data shape: `{ x: 'Jan', y: 10 }` with `xName='x'` and `yName='y'`.
 [`app.component.ts`]
 
 {% tabs %}
