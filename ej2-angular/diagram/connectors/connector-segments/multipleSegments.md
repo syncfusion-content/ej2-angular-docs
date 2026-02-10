@@ -18,7 +18,7 @@ A connector segment represents a portion of the connector's path. By combining m
 
 ## Create Multiple Segments
 
-Multiple segments can be defined sequentially to form a complete connector path. To create a connector with multiple segments, define and add the segments to the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection.
+Multiple segments can be defined sequentially to form a complete connector path. To create a connector with multiple segments, define and add the segments to the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection.
 
 The following example demonstrates how to create a connector with multiple segments that forms a custom routing path:
 
@@ -69,10 +69,3 @@ The following example demonstrates undo and redo functionality for connector seg
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectors-segundo" %}
-
-## Related topics
-
-* [Connector segments overview](./segments)
-* [Orthogonal segments](./orthogonal-segments)
-* [Bezier segments](./bezier-segments)
-* [Connector routing](../connector-routing)

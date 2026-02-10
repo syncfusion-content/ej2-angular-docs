@@ -23,6 +23,7 @@ domainurl: ##DomainURL##
 [Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) is a fast and efficient JavaScript runtime built on Google’s V8 engine. It enables JavaScript to run on the server, making it a popular platform for building web APIs, real‑time applications, and modern backend services. Node.js offers a non‑blocking, event‑driven architecture that supports high performance and scalability.
 
 ## Prerequisites
+
 | Software / Package          | Recommended version          | Purpose                                 |
 |-----------------------------|------------------------------|--------------------------------------   |
 | Node.js                     | 20.x LTS or later            | Backend runtime                         |
@@ -102,6 +103,7 @@ The **GraphQLServer** folder is now created, required packages are installed, an
 The `GraphQL` schema defines the structure of the "product" data model and the server‑side operations available for performing CRUD actions.
 
 **Instructions:**
+
 1. Create a new schema file (**src/schema.graphql**) in the **GraphQLServer** folder.
 2. Add type definition for **Product**:
 
@@ -194,6 +196,7 @@ Since Syncfusion’s [DataManager](https://ej2.syncfusion.com/angular/documentat
 This structure allows the backend to return only the required records, improving performance, reducing payload size, and enabling efficient data handling.
 
 Here are the details of **DataManagerInput** parameter type.
+
 | Parameters       | Description                                                                     |
 | ---------------- | ------------------------------------------------------------------------------- |
 | `requiresCounts` | If it is "true" then the total count of records will be included in response. |
@@ -215,6 +218,7 @@ A resolver in `GraphQL` is a function responsible for fetching the data for a sp
 When a client sends a `GraphQL` query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema. 
 
 **Instructions:**
+
 1. Create a new resolver file (**src/resolvers.js**) inside the **GraphQLServer** folder.
 2. Import the required data source (**e.g., productDetails**) from the data file.
 3. Implement the "getProducts" resolver to handle the logic for the "getProducts" query defined in the schema.
@@ -243,6 +247,7 @@ Mutations in `GraphQL` are used to modify data on the server, such as creating, 
 Previously, the CRUD mutation types were defined in the **schema.graphql** file. The next step is to implement these mutation actions inside the **resolver.js** file.
 
 **Instructions:**
+
 1. Open the (**src/resolvers.js**) file.
 2. Implement the "createProduct" mutation:
 
@@ -256,6 +261,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
     ```
 
     **"createProduct" - code breakdown:**
+
     | Step | Purpose | Implementation |
     |------|---------|-----------------|
     | **1. Receive Input** | Accept "product" data from the client. | The argument { `value` } contains all fields needed to create a new "product" (e.g., "productName", "category", etc). |
@@ -277,6 +283,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
     ```
 
     **"updateProduct" - code breakdown:**
+
     | Step | Purpose | Implementation |
     |------|---------|-----------------|
     | **1. Receive Input** | Accept the `key`, `keyColumn`, and updated field values. | The resolver receives { `key`, `keyColumn`, `value` }, where value contains the partial "product" updates. |
@@ -298,6 +305,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
       }
     ```
     **"deleteProduct" - code breakdown:**
+
     | Step | Purpose | Implementation |
     |------|---------|-----------------|
     | **1. Receive Key** | Backend receives only the primary key value from client. | Resolver parameters: `key`, `keyColumn` = '`productId`. |
@@ -353,13 +361,13 @@ For this project, the `Tailwind` theme is used. A different theme can be selecte
 
 ### Step 3: Configure GraphQL Adaptor
 
-Syncfusion provides a built‑in [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) that translates the user interaction into GraphQL requests, enabling efficient communication with `GraphQL` servers which helps in integrating the Grid component with the `GraphQL` server.
+Syncfusion provides a built‑in [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) that translates Grid interactions into GraphQL requests, enabling efficient communication with GraphQL servers and helping integrate the Grid component with the `GraphQL` server.
 
 **What is a GraphQL Adaptor?**
 
 An adaptor is a translator between two different systems. The `GraphQLAdaptor` specifically:
 
-- Receives interaction events from the Grid (user clicks Add, Edit, Delete, sorts, filters, etc).
+- Receives interaction events from the Grid (such as Add, Edit, Delete, sorting, filtering, etc.).
 - Converts these actions into `GraphQL` query or mutation syntax.
 - Sends the `GraphQL` request to the backend `GraphQL` endpoint.
 - Receives the response data from the backend.
@@ -376,7 +384,7 @@ The required response format includes:
   - **result**: The list of data to be displayed in the current Grid view.
   - **count**: The total number of records available in the dataset.
 
-The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to convert the user interaction into `GraphQL` compatible requests. To enable this setup, configure the `DataManager` with the `GraphQLAdaptor`, specify the `GraphQL` server’s response format, and define the query. Finally, assign this `DataManager` instance to the Grid component.
+The `GraphQLAdaptor` needs to be configured in the Syncfusion `DataManager` to convert Grid interactions into `GraphQL`‑compatible requests. To enable this setup, configure the `DataManager` with the `GraphQLAdaptor`, specify the `GraphQL` server’s response format, and define the query. Finally, assign this `DataManager` instance to the Grid component.
 
 **Instructions:**
 
@@ -422,7 +430,7 @@ The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to c
                     }
                 `,
             })
-            });
+          });
         }
     ```
 
@@ -496,6 +504,7 @@ When the backend executes the query, it returns a JSON response in this exact st
 ```
 
 **Response structure explanation:**
+
 | Part | Purpose | Example |
 |------|---------|---------|
 | `data` | Root object returned for every successful `GraphQL` query. | Always present in successful response |
@@ -510,6 +519,7 @@ When the backend executes the query, it returns a JSON response in this exact st
 The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) provides buttons for adding, editing, deleting records, and searching the data.
 
 **Instructions:**
+
 1. Open the **app.component.html** file.
 2. Update the `Grid` component to include the `toolbar` property with CRUD and search options:
 
@@ -601,6 +611,7 @@ During pagination, the `GraphQLAdaptor` sends the paging details though "skip" a
     export default resolvers;
     ```
     **Page logic breakdown:**
+
     | Part | Purpose |
     |------|---------|
     | ``datamanager.skip`` | Number of records to skip from the start of the dataset. |
@@ -675,6 +686,7 @@ When a search action is performed in the Grid, the `GraphQLAdaptor` sends the se
     }
     ```
     **Search logic breakdown:**
+
     | Part | Purpose |
     |------|---------|
     | ``datamanager.search`` | JSON‑stringified array of search instructions sent by the Grid via `GraphQLAdaptor`. |
@@ -692,7 +704,7 @@ The resolver applies the search query parameters received from the Grid and retu
 
 ### Step 7: Implement sorting feature
 
-Sorting allows the user to organize records by clicking on column headers to arrange data in ascending or descending order.
+The sorting feature in the Grid allows records to be organized in ascending or descending order based on one or more columns.
 
 The `GraphQLAdaptor` automatically passes the sorting details to the server through the "sorted" parameter of the **DataManagerInput** and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
 
@@ -769,6 +781,7 @@ The `GraphQLAdaptor` automatically passes the sorting details to the server thro
     ```
 
     **Sorting logic breakdown:**
+
     | Part | Purpose |
     |------|---------|
     | ``datamanager.sorted`` | Array of sort instructions sent by the Grid via `GraphQLAdaptor`. |
@@ -788,11 +801,12 @@ The resolver processes the sorting parameters and returns the result in the requ
 
 ### Step 8: Implement filtering feature
 
-Filtering allows the user to narrow down records by specifying conditions on column values. Users can filter by selecting checkbox filters or using comparison operators like equals, greater than, less than, etc.
+Filtering narrows down records by specifying conditions on column values. Records can be filtered by selecting checkbox filters or using comparison operators such as equals, greater than, or less than.
 
 The `GraphQLAdaptor` automatically passes the filter conditions to the server through the "where" parameter of the **DataManagerInput**. In the server, the filter parameters are converted to the Syncfusion [filter query](https://ej2.syncfusion.com/angular/documentation/data/querying#filtering) and executed through the `DataManager` to get the filtered data.
 
  **Instructions:**
+
 1. Enable the Grid with filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to "true".
 
     ```html
@@ -950,6 +964,7 @@ The `GraphQLAdaptor` automatically passes the filter conditions to the server th
     ```
 
     **Filter logic breakdown:**
+
     | Part | Purpose |
     |------|---------|
     | ``dataManager.Where`` | List of filter conditions from the Grid. |
@@ -966,6 +981,7 @@ The `GraphQLAdaptor` automatically passes the filter conditions to the server th
     |``query.where(combinedPredicate)``| Applies the final merged Predicate to the Syncfusion query.|
 
 **Supported filter operators:**
+
 | Operator | Purpose | Example |
 |----------|---------|---------|
 | ``equal`` | Exact match | "productId" equals PROD-ELC-0001 |
@@ -986,7 +1002,7 @@ The image illustrates the serialized "where" condition passed from the DataManag
 
 **Filter logic with multiple checkbox selections:**
 
-When a user selects multiple checkbox values for the same column (e.g., (category = "Electronics" OR category = "Accessories")), the Grid sends a nested predicate block where all selected values are combined using OR logic.
+When multiple checkbox values are selected for the same column (e.g., category = "Electronics" OR category = "Accessories"), the Grid sends a nested predicate block where all selected values are combined using OR logic.
 
 - Top‑level predicates across different fields are combined using **AND** logic.
 - Nested predicates within the same field are combined using **OR** logic.
@@ -997,7 +1013,7 @@ The resolver handles the filter conditions passed from the Grid and returns the 
 
 ### Perform CRUD operations
 
-CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Grid. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
+CRUD operations (Create, Read, Update, Delete) are supported in the Grid for managing data. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
 
 Enable editing operations in the Grid by configuring `editSettings` and setting `allowEditing`, `allowAdding`, and `allowDeleting` to "true".
 
@@ -1153,6 +1169,7 @@ When the `Delete` button is clicked, a row is selected for deletion, and the act
 Open a terminal or Command prompt. Run the server application first, then start the client application.
 
 ### Run the GraphQL server
+
 - Run the following commands to start the server:
 
 ```bash
@@ -1181,7 +1198,7 @@ For a complete working implementation of this example, refer to the following Gi
 This guide demonstrates:
 
 1. Setting up and Configuring the `GraphQL` backend using Node.js. [🔗](#setting-up-the-graphql-backend-using-nodejs)
-2. Integrating Syncfusion Angular Grid with `Graphql` [🔗](#integrating-syncfusion-angular-grid-with-graphql)
+2. Integrating Syncfusion Angular Grid with `GraphQl` [🔗](#integrating-syncfusion-angular-grid-with-graphql)
 3. Configure `GraphQLAdaptor`. [🔗](#step-3-configure-graphql-adaptor)
 4. Implement data operations such as filtering, searching, sorting, and paging. [🔗](#step-4-add-toolbar-with-crud-and-search-options)
 5. Perform CRUD operations. [🔗](#perform-crud-operations)
@@ -1189,6 +1206,7 @@ This guide demonstrates:
 The application now provides a fully integrated "product" management workflow using the Syncfusion Angular Grid connected to a Node.js GraphQL backend.
 
 ## See also
-- [Organizes related records by grouping rows based on column values, offering structured and categorized data views.](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
-- [Exports grid data to Excel format, enabling convenient data sharing and offline analysis.](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
-- [Integrates seamlessly with various filter UIs, ensuring consistent behavior across all grid configurations.](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)
+
+- [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
+- [Excel Export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
+- [Integration with Filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)

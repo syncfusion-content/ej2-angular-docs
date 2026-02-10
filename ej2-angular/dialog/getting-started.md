@@ -1,174 +1,167 @@
 ---
 layout: post
-title: Getting started with Angular Dialog component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Dialog component of Syncfusion Essential JS 2 and more details.
+title: Getting started with the Angular Dialog component | Syncfusion
+description: Learn how to get started with the Angular Dialog component in Syncfusion Essential JS 2, including installation, setup, and core features.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Dialog component
+# Getting started with the Angular Dialog component
 
 This section explains the steps to create a simple **Dialog** component and configure its available functionalities in Angular.
 
-## Getting Started with Angular CLI
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
-The following section explains the steps required to create a simple angular-cli application and how to configure `Dialog` component.
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
-### Prerequisites
+## Prerequisites
 
-To get started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
 
-* Angular : 6+
-* TypeScript : 2.6+
+## SetUp the Angular application
 
-### Setting up an Angular project
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
-Angular provides an easiest way to setup project using Angular CLI [Angular CLI](https://github.com/angular/angular-cli) tool.
+```bash
+npm install -g @angular/cli
+```
 
-Install the CLI application globally in your machine.
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-```javascript
+### Installing a specific version
 
-  npm install -g @angular/cli
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 
 ```
 
-### Create a new application
+* By default, a CSS-based application is created. Use SCSS if required:
 
-```javascript
-
-  ng new syncfusion-angular-app
-
+```bash
+ng new syncfusion-angular-app --style=scss
 ```
 
-Once you have executed the above command you may ask for following options,
-* Would you like to add Angular routing?
-* Which stylesheet format would you like to use?
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-By default, it install the CSS style base application. To setup with SCSS, pass --style=SCSS argument on create project.
+![Initial_setup](images/SSR.png)
 
-Example code snippet.
+* Select the required AI tool or 'none' if you do not need any AI tool.
 
-```javascript
+![Initial_setup](images/Ai.png)
 
-  ng new syncfusion-angular-app --style=SCSS
+* Navigate to your newly created application directory:
 
+```bash
+cd syncfusion-angular-app
 ```
 
-Use below command to Navigate into the created project folder.
-
-```javascript
-
-  cd syncfusion-angular-app
-
-```
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Popups package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-popups`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38) package to the application.
+This guide uses the [Angular Dialog component](https://www.syncfusion.com/angular-components/angular-modal-dialog) for demonstration. Add the Angular Dialog component component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-popups --save
+ng add @syncfusion/ej2-angular-popups
 ```
 
-### Angular compatibility compiled package(ngcc)
+This command will perform the following configurations:
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+- Add the `@syncfusion/ej2-angular-popups` package and peer dependencies to your `package.json`.
+- Import the Dialog component component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-popups@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-popups/v/20.2.38-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-popups@ngcc --save
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-popups
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-popups@32.1.19-ngcc		
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+## Adding CSS reference
 
-```bash
-@syncfusion/ej2-angular-popups:"20.2.38-ngcc"
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Dialog component:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Ensure that the import order aligns with the component's dependency sequence.
 
-## Adding Dialog module
-
-Once you have successfully installed the popups package, the component modules are ready to configure in your application from the installed location. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/dialog/how-to/render-a-dialog-using-ng-content) to learn about `ngModules`.
-
-Refer to the following snippet to import the `DialogModule` in `app.module.ts` from the `@syncfusion/ej2-angular-popups`.
-
-```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// Imported syncfusion DialogModule from popups package
-import { DialogModule } from '@syncfusion/ej2-angular-popups';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // Registering EJ2 Dialog Module
-    DialogModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-```
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Adding Dialog component
 
-Add the Dialog component snippet in `app.component.ts` as follows.
+Use the following snippet in the `src/app/app.ts` file to import the Dialog component.
 
-```javascript
-
-import { Component, ViewChild, OnInit, ElementRef  } from '@angular/core';
-import { DialogComponent } from '@syncfusion/ej2-angular-popups';
-import { EmitType } from '@syncfusion/ej2-base';
+```ts
+import { Component, ViewChild } from '@angular/core';
+import { DialogModule, DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   selector: 'app-root',
+  imports: [DialogModule],
   template: `
     <div id="dialog-container">
-        <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open
-          Dialog</button>
-        <ejs-dialog id='dialog' #ejDialog target="#dialog-container" [showCloseIcon]='true' content='This is a Dialog content'
-          width='350px'>
-        </ejs-dialog>
-    </div>`
+      <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog()">Open Dialog</button>
+      <ejs-dialog id="dialog" #ejDialog target="#dialog-container" [showCloseIcon]="true" content="This is a Dialog content"
+        width="350px">
+      </ejs-dialog>
+    </div>
+  `
 })
-export class AppComponent implements OnInit {
-  // Create element reference for dialog target element.
-  @ViewChild('ejDialog') ejDialog: DialogComponent;
-  
-  public onOpenDialog = function(event: any): void {
-      // Call the show method to open the Dialog
-      this.ejDialog.show();
-  };
-}
+export class App {
+  // Element reference for the Dialog instance
+  @ViewChild('ejDialog') public ejDialog!: DialogComponent;
 
+  public onOpenDialog(): void {
+    // Call the show method to open the Dialog
+    this.ejDialog.show();
+  }
+}
 ```
 
-Add following styles in corresponding css file. The below mentioned styles are used in styles.css file,
+Add the following styles in the corresponding CSS file (for example, `styles.css`):
 
 ```css
 #dialog-container {
@@ -176,27 +169,17 @@ Add following styles in corresponding css file. The below mentioned styles are u
 }
 ```
 
->Note: Please do the necessary change in `index.html` file. In this demo we used id selector in `<app-root id='dialog-container'></app-root>`
-
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
-
-```css
-
-       @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-       @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
-       @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-       @import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
-
-```
-
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
+> Note: Ensure that the element with the id `dialog-container` exists and wraps the dialog. For example, set the id on the root element in `index.html` if needed: `<app-root id='dialog-container'></app-root>`.
 
 ## Running the application
 
-Run the `ng serve` command in command window, it will serve your application and you can open the browser window. Output will appear as follows.
+Run the `ng serve` command in a terminal to serve your application, then open it in a browser. 
+
+```bash
+ng serve
+```
+
+The following example shows a basic Dialog component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -210,24 +193,22 @@ Run the `ng serve` command in command window, it will serve your application and
   
 {% previewsample "page.domainurl/samples/dialog/getting-started-cs2" %}
 
-> In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
-If the dialog is rendered based on the body, then the dialog will get the height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
+> The dialog's max-height is calculated based on the dialog target element's height. If the `target` property is not configured, `document.body` is considered the target. To display the dialog at a proper height, add a `min-height` to the target element.
+If the dialog is rendered against `body` and its height exceeds the body's height, the dialog's height will not be set automatically. In this scenario, set CSS on the `html` and `body` elements to provide full height.
 
 ```css
-
 html, body {
    height: 100%;
 }
-
 ```
 
 ## Modal Dialog
 
-A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog#ismodal) shows an overlay behind the Dialog, so the user must interact with the dialog before interacting with the rest of the application.
 
-While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog#overlayclick) event. In the below sample the Dialog close action is performed while clicking on the overlay.
+When the user clicks the overlay, handle the action through the [`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog#overlayclick) event. In the sample below, clicking the overlay closes the dialog.
 
-> When the modal Dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
+> When a modal dialog is opened, scrolling on the dialog's target is disabled and re-enabled after the dialog is closed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -243,7 +224,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog#header) property.
+Enable the Dialog header by providing text or HTML content through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog#header) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,15 +238,15 @@ The Dialog header can be enabled by adding the header content as text or HTML co
   
 {% previewsample "page.domainurl/samples/dialog/getting-started-cs4" %}
 
-## Enable default footer Buttons
+## Enable default footer buttons
 
-The Dialog provides built-in support to render the `buttons` on the footer (for ex: ‘OK’ or ‘Cancel’ buttons). Each Dialog button allows the user to perform any action while clicking on it.
+The Dialog provides built-in support to render `buttons` in the footer (for example, “OK” or “Cancel”). Each Dialog button can trigger actions when clicked.
 
-The primary button will be focused automatically when open the Dialog and add the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps#click) event to handle the actions
+The primary button is automatically focused when the Dialog opens. Use the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps#click) event to handle actions.
 
-> When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
+> When the Dialog initializes with more than one primary button, the first primary button receives focus when the Dialog opens.
 
-The below sample render with button and its click event.
+The sample below renders footer buttons and handles their click events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -281,10 +262,10 @@ The below sample render with button and its click event.
 
 ## Draggable
 
-The Angular Dialog supports to [drag](https://ej2.syncfusion.com/angular/documentation/api/dialog#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Angular Dialog supports [dragging](https://ej2.syncfusion.com/angular/documentation/api/dialog#allowdragging) within its target container by grabbing the Dialog header, allowing the user to reposition the Dialog dynamically.
 
 > The Dialog can be draggable only when the Dialog header is enabled.
-From `16.2.x` version, enabled draggable support for modal Dialog also.
+Starting from v16.2.x, draggable is also supported for modal dialogs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -300,10 +281,10 @@ From `16.2.x` version, enabled draggable support for modal Dialog also.
 
 ## Positioning
 
-The Angular Dialog can be positioned using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
+The Angular Dialog can be positioned using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog#position) property by providing the X and Y coordinates. It can be positioned inside the target container or the `<body>` element based on the given X and Y values.
 
-* for X is: left, center, right (or) any offset value
-* for Y is: top, center, bottom (or) any offset value
+* For X: left, center, right, or any offset value
+* For Y: top, center, bottom, or any offset value
 
 The below example demonstrates the different Dialog positions.
 
@@ -319,12 +300,12 @@ The below example demonstrates the different Dialog positions.
   
 {% previewsample "page.domainurl/samples/dialog/position-cs1" %}
 
-> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/dialog/default) that shows how to render the dialog.
+> Refer to the [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for a summary of features. You can also explore the [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/dialog/default) that shows how to render the dialog.
 
 ## See Also
 
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [How to position the dialog at the center of the page while scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
+* [Close dialog when clicking outside the dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 

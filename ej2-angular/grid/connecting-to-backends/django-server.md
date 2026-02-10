@@ -38,6 +38,7 @@ The Django REST Framework backend serves as the core data service, managing API 
 ### Step 1: Set up the Django REST Framework server and install required packages
 
 **Instructions:**
+
 1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command prompt opened with  <kbd>Win+R</kbd> or macOS terminal launched with <kbd>Cmd+Space</kbd> ).
 
 2. Before creating the `Django` project, set up a virtual environment. A virtual environment keeps project dependencies isolated, ensuring that package installations do not affect other projects.
@@ -72,6 +73,7 @@ The file (**django_server/settings.py**) is automatically generated when a Djang
 This step updates the file to establish the SQL Server connection and enable essential Django REST Framework features such as CORS, filtering, and pagination.
 
 **Instructions:**
+
 1. Opens the (**django_server/settings.py**) file.
 2. Define the SQL server database connection: 
 
@@ -192,6 +194,7 @@ This step updates the file to establish the SQL Server connection and enable ess
 A `Django` model defines the way data is stored and accessed in the database. Each model maps to a database table and exposes its fields as structured records that can be queried, created, updated, and deleted by the application and API.
 
 **Instructions:**
+
 1. Open the (**library/models.py**) file. This file contains the model definitions for the library app.
 
 2. Add the "BookLending" model.
@@ -234,44 +237,46 @@ A `Django` model defines the way data is stored and accessed in the database. Ea
 
     `Django` migrations are the mechanism that convert model definitions into real SQL Server tables and columns. Whenever a model is created or modified, migrations ensure the database structure stays updated.
 
-    - **Generate a new migration**
+    **Generate a new migration**
 
-        Open the Visual Studio Code terminal and run the following command:
+    Open the Visual Studio Code terminal and run the following command:
 
+    ```bash
+    python manage.py makemigrations
+    ```
+    **Explanation:**
+    
+    - Scans the **models.py** file for any new or updated models.
+    - Creates a migration file inside the (**library/migrations**) folder.
+    - This migration file acts as a blueprint describing the required database changes.
+
+    **Apply the migration to the database**
+
+    After the migration file is created, run the next command:
+
+    ```bash
+    python manage.py migrate
+    ```
+    **Explanation:**
+
+    - Reads the migration blueprint created earlier.
+    - Creates the required SQL Server tables.
+    - Adds all fields defined in the model.
+    - Updates or modifies existing tables if the model structure changed.
+
+    This step updates the actual database and ensures the structure matches the "BookLending" model.
+
+    **Purpose of migrations:**
+
+    Migrations act as a bridge between the `Python` models and the SQL Server database.
+    - Every change in a model (new field, renamed field, removed field, new model) is recorded as a migration.
+    - These changes are applied safely without writing SQL manually.
+    - The database structure remains consistent across all environments (development, staging, production).
+    - Whenever a model is modified in the future:
         ```bash
-        python manage.py makemigrations
+        makemigrations → migrate
         ```
-        **Explanation:**
-        - Scans the **models.py** file for any new or updated models.
-        - Creates a migration file inside the (**library/migrations**) folder.
-        - This migration file acts as a blueprint describing the required database changes.
-
-    - **Apply the migration to the database**
-
-        After the migration file is created, run the next command:
-
-        ```bash
-        python manage.py migrate
-        ```
-        **Explanation:**
-        - Reads the migration blueprint created earlier.
-        - Creates the required SQL Server tables.
-        - Adds all fields defined in the model.
-        - Updates or modifies existing tables if the model structure changed.
-
-        This step updates the actual database and ensures the structure matches the "BookLending" model.
-
-    - **Purpose of migrations:**
-
-        Migrations act as a bridge between the `Python` models and the SQL Server database.
-        - Every change in a model (new field, renamed field, removed field, new model) is recorded as a migration.
-        - These changes are applied safely without writing SQL manually.
-        - The database structure remains consistent across all environments (development, staging, production).
-        - Whenever a model is modified in the future:
-            ```bash
-            makemigrations → migrate
-            ```
-        - This sequence updates the database schema automatically.
+    - This sequence updates the database schema automatically.
 
 ### Step 4: Configure API routing
 
@@ -280,6 +285,7 @@ API routing defines the URLs through which the application exposes CRUD operatio
 A Django REST Framework router automatically generates RESTful routes for the "BookLendingViewSet", allowing the API to handle listing, retrieving, creating, updating, and deleting records under a single endpoint.
 
 **Instructions:**
+
 1. Open the following auto generated file named (**django_server/urls.py**). This file controls all top‑level routes in the Django project.
 
 2. Register the "BookLendingViewSet" with a DRF router:
@@ -303,6 +309,7 @@ A Django REST Framework router automatically generates RESTful routes for the "B
     ]
     ```
     **Explanation:**
+
     - The router connects the "BookLendingViewSet" to the URL path `api/lendings`.
     - Standard REST routes (list, retrieve, create, update, delete) are generated automatically.
     - No manual URL writing for each action is required.
@@ -428,6 +435,7 @@ When using `DataManager` with `UrlAdaptor`, the server is expected to return a s
 This response format ensures seamless interaction between the Angular Grid and backend services, enabling all data operations to work consistently.
 
 **Instructions:**
+
 1. Open the **app.component.ts** file.
 2. Create a `DataManager` instance with the `UrlAdaptor` inside the Angular component and point it to the DRF endpoint. This `DataManager` will serialize all Grid interactions (data and CRUD) and post them to the DRF server.
 
@@ -452,6 +460,7 @@ This response format ensures seamless interaction between the Angular Grid and b
 
     ```
     **Explanation:**
+
     - **url** - Base API endpoint exposed by the `Django` router.
     - **adaptor** - Converts Grid operations into standard REST requests.
     - **crossDomain** - Enables communication with a backend running on a different port.
@@ -476,6 +485,7 @@ This response format ensures seamless interaction between the Angular Grid and b
 The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) provides buttons for adding, editing, deleting records, and searching the data.
 
 **Instructions:**
+
 1. Open the **app.component.html** file.
 2. Update the Grid component to include the `toolbar` property with CRUD and search options.
 
@@ -509,6 +519,7 @@ The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-de
 Paging divides large datasets into smaller pages to improve performance and usability.
 
 **Instructions:**
+
 1. Enable paging by setting [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) to "true" on the Grid so that paging requests include the required `skip` and `take` parameters.
 
     ```html
@@ -588,6 +599,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
     > All `DataManager` operations searching, filtering, sorting, and paging are invoked through the `read()` method of the `DataManagerEngine` class in (**library/services/datamanager/engine.py**) file.
 
     **Explanation:**
+
     - The **read()** method calculates the total number of matching records after applying search, filters, and sorting.
     - The queryset is sliced using the skip and take values to obtain the current page.
     - When requiresCounts is present, the result includes:
@@ -605,7 +617,8 @@ Paging feature is now active with "12" records per page.
 Searching allows locating rows by supplying a term that can be checked against one or more fields, making it easy to find relevant records quickly.
 
 **Instructions:**
-1. Ensure the `toolbar` includes the "Search" item.
+
+1. Ensure the `toolbar` includes the `Search` item.
 
     ```html
     [app.component.html]
@@ -690,6 +703,7 @@ Searching allows locating rows by supplying a term that can be checked against o
 Sorting allows records to be organized by clicking on column headers to arrange data in ascending or descending order.
 
 **Instructions:**
+
 1. Enable sorting by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) to "true" on the Grid so that sort changes are emitted.
 
     ```html
@@ -747,6 +761,7 @@ Sorting allows records to be organized by clicking on column headers to arrange 
     ```
 
     **Explanation:**
+    
     - `DataManagerEngine.read()` invokes "apply_sorting()" after searching and filtering.
     - "apply_sorting()" builds an `order_by()` list and orders the query set prior to paging.
 
@@ -761,6 +776,7 @@ Sorting allows records to be organized by clicking on column headers to arrange 
 Filtering helps refine records by applying conditions on column values. It allows selecting specific values or using simple comparison options such as equals, greater than, or less than to display only the matching data.
 
 **Instructions:**
+
 1. Enable filtering by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) to "true" on the Grid so that filter interactions are sent to the server. Optionally configure the filtering user interface (for example, Menu, CheckBox, or Excel style) by setting the[filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#filtersettings) property.
 
     ```html
@@ -861,6 +877,7 @@ Filtering helps refine records by applying conditions on column values. It allow
         ```
 
         **Explanation:**
+
         - The view set detects `DataManager` request and forwards the payload to `DataManagerEngine.read()`.
         - Inside "read()", the function "build_q_from_where()" converts the tree into Django `Q` predicates, and the query set is filtered before sorting and paging.
 
@@ -870,7 +887,7 @@ Filtering helps refine records by applying conditions on column values. It allow
 
 **Filter logic with multiple checkbox selections:**
 
-When a user selects multiple checkbox values for the same column (e.g., (book-title = "Verdant Gold" OR author_name = "Mia Lee")), the Grid sends a nested predicate block where all selected values are combined using OR logic.
+When multiple checkbox values are selected for the same column (e.g., (book-title = "Verdant Gold" OR author_name = "Mia Lee")), the Grid sends a nested predicate block where all selected values are combined using OR logic.
 
 - Top‑level predicates across different fields are combined using AND logic.
 - Nested predicates within the same field are combined using OR logic.
@@ -882,6 +899,7 @@ When a user selects multiple checkbox values for the same column (e.g., (book-ti
 CRUD operations allow creating, updating, and deleting rows directly in the Grid, with changes persisted to the database through DRF.
 
 **Instructions:**
+
 1. Enable editing by configuring the Grid’s [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#editsettings) with the required properties such as [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettingsmodel#allowadding), [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettingsmodel#allowediting), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettingsmodel#allowdeleting) so that the Grid can initiate add, edit, and delete actions from the toolbar or row UI.
 
 2. Make sure to include the `EditService` in the component’s providers array to fully enable CRUD functionality.
@@ -941,6 +959,7 @@ CRUD operations allow creating, updating, and deleting rows directly in the Grid
     ```
 
     **Explanation:**
+
     - The "handle_crud_action" function reads the action field from the incoming Grid payload.
     - Based on the action (insert, update, remove/delete), it routes the request to the corresponding handler function.
     - Each handler performs the actual database operation.
@@ -971,7 +990,8 @@ def _handle_insert(viewset, payload) -> Response:
 ```
 
 **Explanation:**
-- When a user creates a new record in the Grid, the Grid posts a payload that includes `action: 'insert'` and a `value` object that contains the new field values to be saved.
+
+- When a new record is created in the Grid, the Grid posts a payload that includes `action: 'insert'` and a `value` object that contains the new field values to be saved.
 - The insert action calls the "_handle_insert()" function, which validates the values with the serializer and writes the record inside a database transaction to ensure consistency.
 - After the record is created, "_handle_insert()" refreshes the instance from the database, serializes the completed row, and returns it so that the Grid can immediately display the new record with any server‑side defaults applied.
 
@@ -1008,7 +1028,8 @@ def _handle_update(viewset, payload) -> Response:
 ```
 
 **Explanation:**
-- When a user edits a record and saves the changes in the Grid, the Grid posts a payload that contains `action: 'update'`, the primary key in `key`, and the changed fields in `value`.
+
+- When a record is edited and saved in the Grid, the Grid posts a payload that contains `action: 'update'`, the primary key in `key`, and the changed fields in `value`.
 - The update action calls the "_handle_update()" function, which loads the targeted instance, validates the new values with the serializer, and persists the changes inside a transaction.
 - After the update, "_handle_update()" refreshes the instance from the database, serializes the updated row, and returns it so that the Grid remains synchronized with the authoritative values stored on the server.
 
@@ -1041,9 +1062,10 @@ def _handle_remove(viewset, payload) -> Response:
 ``` 
 
 **Explanation:**
-- When a user deletes a record in the Grid, the Grid posts a payload that specifies `action: 'remove'` together with the primary key that identifies the record to be deleted.
+
+- When a record is deleted in the Grid, the Grid posts a payload that specifies `action: 'remove'` together with the primary key that identifies the record to be deleted.
 - The delete action calls the "_handle_remove()" function, which serializes the target instance, deletes it inside a transaction, and prepares a confirmation payload.
-- The "_handle_remove()" function returns the confirmation payload to the client so that the Grid can remove the row from the UI and the user can see that the deletion has been completed successfully.
+- The "_handle_remove()" function returns the confirmation payload to the client so that the Grid can remove the row from the UI and confirm that the deletion has been completed successfully.
 
 **Below image shows the deleted key passed to the DRF:**
 
@@ -1084,8 +1106,8 @@ For a complete working implementation of this example, refer to the following Gi
 This guide walks through the following key areas:
 
 1. Prerequisites. [🔗](#prerequisites)
-2. Set up Django REST Framework and connect it to a Microsoft SQL Server database. [🔗](#setting-up-the-django-rest-framework-for-microsoft-sql-database) - 
-3. Create and configure the Angular application with the Syncfusion Angular Grid. [🔗](#integrate-syncfusion-angular-grid-with-django-rest-framework) - 
+2. Set up Django REST Framework and connect it to a Microsoft SQL Server database. [🔗](#setting-up-the-django-rest-framework-for-microsoft-sql-database)
+3. Create and configure the Angular application with the Syncfusion Angular Grid. [🔗](#integrate-syncfusion-angular-grid-with-django-rest-framework)
 4. Handle server‑side data operations such as filtering, searching, sorting, and paging. [🔗](#perform-data-operations) 
 5. Enable create, update, and delete operations from the Grid using DRF. [🔗](#performing-crud-operations) 
 6. Run the Django and Angular applications locally for development. [🔗](#running-the-application) 
@@ -1094,6 +1116,7 @@ This guide walks through the following key areas:
 The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion Angular Grid front end.
 
 ## See also
-- [Enables customization of Grid cell appearance with templates for text, images, icons, and advanced UI elements.](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
-- [Optimizes performance by rendering only the visible rows or columns instead of the entire dataset.](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling)
-- [Facilitates bulk data modifications by allowing multiple records to be edited and saved in a single batch update.](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing)
+
+- [Grid cell customization with templates](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
+- [Optimized performance with virtual scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling)
+- [Bulk data modifications with batch editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing)

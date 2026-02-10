@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Scroll Settings in Angular Diagram Component
 
-The diagram component provides comprehensive scrolling capabilities through both vertical and horizontal scrollbars, as well as mouse wheel navigation. The diagram's [`scrollSettings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/) enable developers to monitor the current scroll status, viewport dimensions, zoom levels, and programmatically control diagram navigation. These settings are essential for managing large diagrams and providing smooth user interaction experiences.
+The diagram component provides comprehensive scrolling capabilities through both vertical and horizontal scrollbars, as well as mouse wheel navigation. The diagram's [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel) enable developers to monitor the current scroll status, viewport dimensions, zoom levels, and programmatically control diagram navigation. These settings are essential for managing large diagrams and providing smooth user interaction experiences.
 
 ## Access and Customize Scroll Settings
 
-Scroll settings in a diagram provide access to various properties that control navigation and viewport behavior, including [`horizontalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#horizontaloffset), [`verticalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#verticaloffset), [`viewPortWidth`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#viewportwidth), [`viewPortHeight`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#viewportheight), [`currentZoom`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#currentzoom), [`zoomFactor`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#zoomfactor), [`maxZoom`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#maxzoom), [`minZoom`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#minzoom), [`scrollLimit`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#scrolllimit), [`canAutoScroll`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#canautoscroll), [`autoScrollBorder`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/), [`autoScrollFrequency`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#autoscrollfrequency), [`padding`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/), and [`scrollableArea`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/rect/).
+Scroll settings in a diagram provide access to various properties that control navigation and viewport behavior, including [`horizontalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#horizontaloffset), [`verticalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#verticaloffset), [`viewPortWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#viewportwidth), [`viewPortHeight`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#viewportheight), [`currentZoom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#currentzoom), [`zoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#zoomfactor), [`maxZoom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#maxzoom), [`minZoom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#minzoom), [`scrollLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#scrolllimit), [`canAutoScroll`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#canautoscroll), [`autoScrollBorder`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginmodel), [`autoScrollFrequency`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#autoscrollfrequency), [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginmodel), and [`scrollableArea`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rect).
 
-These properties enable developers to read and adjust the scroll status, scroll offsets, zoom levels, and scrolling behavior. For a comprehensive overview of all available properties, refer to the [`Scroll Settings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/) API documentation.
+These properties enable developers to read and adjust the scroll status, scroll offsets, zoom levels, and scrolling behavior. For a comprehensive overview of all available properties, refer to the [`Scroll Settings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel) API documentation.
 
 ## Define Scroll Offset
 
-The diagram allows developers to set the initial scroll position before loading, ensuring that any desired region of a large diagram is immediately visible. The initial scroll position can be programmatically configured using the [`horizontalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#horizontaloffset) and [`verticalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#verticaloffset) properties of the scroll settings. The following code illustrates how to programmatically set the diagram's initial scroll position upon initialization, with `scrollLimit` defined as 'Infinity' to enable infinite scrolling. To learn more about scroll limits, refer to the [`scrollLimit`](https://helpej2.syncfusion.com/angular/documentation/diagram/scroll-settings#scroll-limit) section.
+The diagram allows developers to set the initial scroll position before loading, ensuring that any desired region of a large diagram is immediately visible. The initial scroll position can be programmatically configured using the [`horizontalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#horizontaloffset) and [`verticalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#verticaloffset) properties of the scroll settings. The following code illustrates how to programmatically set the diagram's initial scroll position upon initialization, with `scrollLimit` defined as 'Infinity' to enable infinite scrolling. To learn more about scroll limits, refer to the [`scrollLimit`](https://ej2.syncfusion.com/angular/documentation/diagram/scroll-settings#scroll-limit) section.
 
 In the example below, the vertical scrollbar is positioned 100 pixels down, and the horizontal scrollbar is positioned 100 pixels to the right.
 
@@ -42,12 +42,12 @@ The diagram provides multiple methods to update scroll offsets during runtime:
 
 * **Scrollbar**: Use the horizontal and vertical scrollbars of the diagram for direct navigation.
 * **Mouse wheel**: Scroll vertically with the mouse wheel. Hold the Shift key while scrolling to scroll horizontally.
-* **Pan Tool**: Activate the ZoomPan [`tool`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTools/) in the diagram to scroll by panning.
+* **Pan Tool**: Activate the ZoomPan [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtools) in the diagram to scroll by panning.
 * **Touch**: Use touch pad gestures for smooth scrolling on touch-enabled devices.
 
 ### Programmatically Update Scroll Offset
 
-The scroll offsets of the diagram can be programmatically modified by customizing the [`horizontalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#horizontaloffset) and [`verticalOffset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#verticaloffset) properties of [`Scroll Settings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/) at runtime. The following code demonstrates how to change the scroll offsets dynamically.
+The scroll offsets of the diagram can be programmatically modified by customizing the [`horizontalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#horizontaloffset) and [`verticalOffset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#verticaloffset) properties of [`Scroll Settings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel) at runtime. The following code demonstrates how to change the scroll offsets dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,11 +81,11 @@ Keyboard shortcuts offer a quick and efficient way to zoom the diagram without u
 
 ### Programmatically Update Zoom
 
-The current zoom level of the diagram can be programmatically modified by utilizing the [`zoomTo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#zoomto) public method.
+The current zoom level of the diagram can be programmatically modified by utilizing the [`zoomTo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#zoomto) public method.
 
 #### ZoomOptions
 
-The [`zoomTo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#zoomto) method accepts one parameter: [`zoomOptions`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/zoomOptions/). Within zoomOptions, developers can specify the [`focusPoint`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pointModel/), [`type`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/zoomTypes/), and [`zoomFactor`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/zoomOptions/#zoomfactor).
+The [`zoomTo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#zoomto) method accepts one parameter: [`zoomOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/zoomoptions). Within zoomOptions, developers can specify the [`focusPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointmodel), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/zoomtypes), and [`zoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/zoomoptions#zoomfactor).
 
 The following example demonstrates how to zoom in and zoom out of the diagram using the zoomTo method:
 
@@ -113,13 +113,13 @@ The autoscroll behavior activates automatically when any of the following action
 - Connector control point editing
 - Rubber band selection
 
-The client-side event [`ScrollChange`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/iScrollChangeEventArgs/) is triggered when autoscroll occurs, enabling custom behavior implementation. Refer to the [`scrollChange event`](https://helpej2.syncfusion.com/angular/documentation/diagram/scroll-settings#scroll-change-event) section for more information.
+The client-side event [`ScrollChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iscrollchangeeventargs) is triggered when autoscroll occurs, enabling custom behavior implementation. Refer to the [`scrollChange event`](https://ej2.syncfusion.com/angular/documentation/diagram/scroll-settings#scroll-change-event) section for more information.
 
-Autoscroll behavior can be enabled or disabled using the [`canAutoScroll`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#canautoscroll) property of the diagram.
+Autoscroll behavior can be enabled or disabled using the [`canAutoScroll`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#canautoscroll) property of the diagram.
 
 ## Autoscroll Border
 
-The autoscroll border defines the maximum distance from the mouse pointer to the diagram edge that triggers autoscroll behavior. By default, this distance is set to 15 pixels for all sides (left, right, top, and bottom). This distance can be customized using the [`autoScrollBorder`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property of the scroll settings.
+The autoscroll border defines the maximum distance from the mouse pointer to the diagram edge that triggers autoscroll behavior. By default, this distance is set to 15 pixels for all sides (left, right, top, and bottom). This distance can be customized using the [`autoScrollBorder`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginmodel) property of the scroll settings.
 
 The following example demonstrates how to configure autoscroll with custom border settings:
 
@@ -139,13 +139,13 @@ N> To use autoscroll, the scrollLimit should be set as 'Infinity'.
 
 ## Controlling Autoscroll Speed
 
-The frequency of automatic scrolling in the Diagram component during autoscroll behavior can be precisely controlled. The scrolling frequency can be adjusted from slow and smooth to quick and rapid to suit different requirements. Configure this by setting a value in milliseconds to the [`autoScrollFrequency`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#autoscrollfrequency) property within the scrollSettings, allowing precise control over autoscroll timing.
+The frequency of automatic scrolling in the Diagram component during autoscroll behavior can be precisely controlled. The scrolling frequency can be adjusted from slow and smooth to quick and rapid to suit different requirements. Configure this by setting a value in milliseconds to the [`autoScrollFrequency`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#autoscrollfrequency) property within the scrollSettings, allowing precise control over autoscroll timing.
 
 ![AutoscrollFrequency](./images/AutoscrollFrequency.gif)
 
 ## Scroll Limit
 
-The [`scrollLimit`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/#scrolllimit) property allows developers to define the scrollable region of the diagram. It includes the following options:
+The [`scrollLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel#scrolllimit) property allows developers to define the scrollable region of the diagram. It includes the following options:
 
 * **Infinity**: Allows scrolling in all directions without any restriction.
 * **Diagram**: Allows scrolling within the diagram region only.
@@ -155,7 +155,7 @@ The `scrollLimit` property in scroll settings helps to define these scrolling bo
 
 ### Scrollable Area
 
-Scrolling beyond a particular rectangular area can be restricted by using the [`scrollableArea`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/rect/) property in [`scrollSettings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel/). To restrict scrolling beyond a custom region, set the scrollLimit to "limited" and define the desired bounds in the `scrollableArea` property.
+Scrolling beyond a particular rectangular area can be restricted by using the [`scrollableArea`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rect) property in [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollsettingsmodel). To restrict scrolling beyond a custom region, set the scrollLimit to "limited" and define the desired bounds in the `scrollableArea` property.
 
 The following code example illustrates how to specify the scroll limit and customize the scrollable area:
 
@@ -173,7 +173,7 @@ The following code example illustrates how to specify the scroll limit and custo
 
 ## Scroll Padding
 
-The [`padding`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property of the scroll settings allows developers to extend the scrollable region based on the scroll limit. This property is useful for adding extra space around the diagram content, making it easier to navigate and interact with elements near the edges.
+The [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginmodel) property of the scroll settings allows developers to extend the scrollable region based on the scroll limit. This property is useful for adding extra space around the diagram content, making it easier to navigate and interact with elements near the edges.
 
 The following code example illustrates how to set scroll padding for the diagram region:
 
@@ -191,7 +191,7 @@ The following code example illustrates how to set scroll padding for the diagram
 
 ## Reset Scroll and Zoom Settings
 
-The [`reset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#reset) method resets both the zoom level and scroller offsets to their default values. This is useful for returning the diagram to its initial state after user interactions.
+The [`reset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#reset) method resets both the zoom level and scroller offsets to their default values. This is useful for returning the diagram to its initial state after user interactions.
 
 ```javascript
 //Resets the scroll and zoom to default values
@@ -200,7 +200,7 @@ The [`reset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#
 
 ## Update Viewport Dimensions
 
-The [`updateViewPort`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#updateviewport) method is used to update the dimensions of the diagram viewport. This method is typically called when the diagram container size changes or when dynamic resizing is required.
+The [`updateViewPort`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#updateviewport) method is used to update the dimensions of the diagram viewport. This method is typically called when the diagram container size changes or when dynamic resizing is required.
 
 ```javascript
 //Updates diagram viewport dimensions
@@ -211,7 +211,7 @@ The [`updateViewPort`](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ### Scroll Change Event
 
-The [`scrollChange`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/iScrollChangeEventArgs/) event is triggered whenever the scrollbar is updated. This event occurs during actions such as zooming in, zooming out, using the mouse wheel, or panning. The following example shows how to capture and handle the `scrollChange` event:
+The [`scrollChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iscrollchangeeventargs) event is triggered whenever the scrollbar is updated. This event occurs during actions such as zooming in, zooming out, using the mouse wheel, or panning. The following example shows how to capture and handle the `scrollChange` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

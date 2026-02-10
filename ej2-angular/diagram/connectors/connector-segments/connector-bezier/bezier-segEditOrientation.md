@@ -14,20 +14,20 @@ Bezier connectors in diagrams provide smooth, curved connections between nodes w
 
 ## Interactive Editing of Bezier Segments
 
-The intermediate control points between adjacent bezier segments can be edited interactively during runtime based on the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegmentEditOrientation/) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel/) configuration. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
+The intermediate control points between adjacent bezier segments can be edited interactively during runtime based on the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersegmenteditorientation) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersettingsmodel) configuration. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
 
 ### Segment Edit Orientation Options
 
 The following table describes the available orientation modes and their interactive behavior:
 
-| SegmentEditOrientation Value | Description | Interactive Behavior | Visual Example |
-|-------- | -------- | -------- | -------- |
+| SegmentEditOrientation Value | Description | Output |
+|-------- | -------- | -------- |
 | Bidirectional | Constrains intermediate point movement to either vertical or horizontal directions only. Users can drag points along a single axis at a time, providing precise alignment control. | ![Bidirectional bezier segment editing showing constrained movement along single axis](../../../images/bez-bidirectional.gif) |
 | Freeform | Allows unrestricted movement of intermediate points in any direction. Users can drag points freely to create custom curves and complex path shapes. | ![Freeform bezier segment editing showing unrestricted point movement in all directions](../../../images/bez-freeform.gif) |
 
 ## Implementation Example
 
-The following code demonstrates how to configure bezier connectors with interactive segment editing using both the [`smoothness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSmoothness/) property for curve refinement and the `segmentEditOrientation` property for interaction control:
+The following code demonstrates how to configure bezier connectors with interactive segment editing using both the [`smoothness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersmoothness) property for curve refinement and the `segmentEditOrientation` property for interaction control:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

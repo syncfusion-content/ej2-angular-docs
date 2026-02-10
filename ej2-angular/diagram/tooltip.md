@@ -30,7 +30,7 @@ The following images illustrate how the diagram displays node information during
 
 ### Disable default tooltip
 
-The default tooltip that appears while interacting with nodes can be disabled by removing the tooltip constraints from the [`selectorConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/selectorConstraints/) of the [`selectedItems`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/) property of the diagram.
+The default tooltip that appears while interacting with nodes can be disabled by removing the tooltip constraints from the [`selectorConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorconstraints) of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectormodel) property of the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ The default tooltip that appears while interacting with nodes can be disabled by
 
 ## Tooltip for specific nodes and connectors
 
-The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property of the node or connector with the tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position). The following code example illustrates how to customize the tooltip for individual elements.
+The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip) property of the node or connector with the tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#content) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#position). The following code example illustrates how to customize the tooltip for individual elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ The tooltip can be customized for each node and connector. To show different too
 
 ## Inherit diagram tooltip
 
-The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property with the tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
+The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip) property with the tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#content) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ The diagram supports inheriting the diagram tooltip when the mouse hovers over a
 
 ### Disable tooltip at runtime
 
-The tooltip on mouse over can be disabled by assigning the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
+The tooltip on mouse over can be disabled by assigning the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip) property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
 
 ```typescript
 
@@ -102,9 +102,9 @@ export class AppComponent {
 
 The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
 
-To display tooltips on mouseover, set the desired tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property.
+To display tooltips on mouseover, set the desired tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#content) by utilizing the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip) property.
 
-Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/port/#constraints) Tooltip property.
+Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints) Tooltip property.
 
 ```ts
 let ports: [{
@@ -169,7 +169,7 @@ The following code example illustrates how to add formatted HTML content to the 
 
 ### Tooltip relative to object
 
-The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position) property of the tooltip. The [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
+The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#position) property of the tooltip. The [`relativeMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
 
 The following code example illustrates how to position the tooltip around object.
 
@@ -187,7 +187,7 @@ The following code example illustrates how to position the tooltip around object
 
 ### Tooltip relative to mouse position
 
-To display the tooltip at mouse position, need to set **mouse** option to the [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#relativemode) property of the tooltip.
+To display the tooltip at mouse position, need to set **mouse** option to the [`relativeMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#relativemode) property of the tooltip.
 
 The following code example illustrates how to show tooltip at mouse position.
 
@@ -205,7 +205,7 @@ The following code example illustrates how to show tooltip at mouse position.
 
 ## Tooltip animation
 
-To animate the tooltip, a set of specific animation effects are available, and it can be controlled by using the [`animation`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip/#animation) property. The animation property also allows you to set delay, duration, and various other effects of your choice.
+To animate the tooltip, a set of specific animation effects are available, and it can be controlled by using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#animation) property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 
 Refer the following sample where we used zoomIn animation for tooltip open and zoomOut animation for tooltip close with delay and duration. 
 
@@ -223,7 +223,7 @@ Refer the following sample where we used zoomIn animation for tooltip open and z
 
 ## Sticky tooltip
 
-A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#issticky) property of the tooltip. 
+A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltipmodel#issticky) property of the tooltip. 
 
 The following example shows how to render sticky tooltip. 
 
@@ -241,7 +241,7 @@ The following example shows how to render sticky tooltip.
 
 ## Hide tooltip pointer
 
-The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
+The [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltipmodel#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,7 +257,7 @@ The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ## Tooltip size
 
-By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the [`width`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width) and [`height`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height) properties of the tooltip.
+By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltipmodel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltipmodel#height) properties of the tooltip.
 
 The following code example shows how to set the size for the tooltip:
 
@@ -275,7 +275,7 @@ The following code example shows how to set the size for the tooltip:
 
 ## Show/Hide tooltip at runtime
 
-You can show or hide the tooltip dynamically using a button click with the [`showTooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#showtooltip) and [`hideTooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#hidetooltip) methods of the diagram. This allows you to control the tooltip visibility programmatically rather than relying on user hover actions. In some cases, you may want to display the tooltip without requiring the user to hover over the object.
+You can show or hide the tooltip dynamically using a button click with the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#showtooltip) and [`hideTooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#hidetooltip) methods of the diagram. This allows you to control the tooltip visibility programmatically rather than relying on user hover actions. In some cases, you may want to display the tooltip without requiring the user to hover over the object.
 
 The following example demonstrates how to show or hide the tooltip at runtime:
 
@@ -294,8 +294,8 @@ The following example demonstrates how to show or hide the tooltip at runtime:
 ## Tooltip for Annotation
 
 Tooltips can be added to annotations to display additional information on mouseover. 
-To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip) property of the annotation.
-Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints/#AnnotationConstraints) property as [`Tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#tooltip). 
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip) property of the annotation.
+Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationconstraints#AnnotationConstraints) property as [`Tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#tooltip). 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
