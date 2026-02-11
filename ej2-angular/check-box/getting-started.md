@@ -10,7 +10,15 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular CheckBox component
 
-This section explains how to create a simple CheckBox and demonstrate the basic usage of the CheckBox component in an Angular environment.
+This guide demonstrates how to create a simple CheckBox and demonstrate the basic usage of the CheckBox component in an Angular environment.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ## Dependencies
 
@@ -23,58 +31,113 @@ The following dependencies are required to use the CheckBox component in your ap
         |-- @syncfusion/ej2-base
 ```
 
-## Set up Angular environment
+## SetUp the Angular application
 
-You can use [Angular CLI](https://v17.angular.io/cli) to set up your Angular applications. Use the following command to install Angular CLI.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
-```
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Use the following Angular CLI commands to create a new application.
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 
 ```
-ng new my-app
-cd my-app
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
 ```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> CheckBox package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. Find all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm: [Angular packages on npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. The Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine, and the packages are compatible with Angular versions 12 and above. Use the following command to install the package.
-
-Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/32.1.19) package to the application.
+This guide uses the [Angular CheckBox Component](https://www.syncfusion.com/angular-components/angular-checkbox) for demonstration. Add the Angular CheckBox component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-buttons --save
+ng add @syncfusion/ej2-angular-buttons
 ```
 
-### Angular compatibility compiled package (ngcc)
+This command will perform the following configurations:
 
-For Angular versions below 12, use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Use the following command to install the `ngcc` package.
+- Add the `@syncfusion/ej2-angular-buttons` package and peer dependencies to your `package.json`.
+- Import the CheckBox component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/32.1.19-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-buttons@ngcc --save
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-buttons		
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-buttons@32.1.19-ngcc		
 ```
 
-To reference the ngcc package in the `package.json` file, add the suffix `-ngcc` to the package version as shown below.
+## Adding CSS reference
 
-```bash
-@syncfusion/ej2-angular-buttons:"32.1.19-ngcc"
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the CheckBox component:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
 
-> Note: If the ngcc tag is not specified when installing the package, the Ivy package will be installed and it will emit a warning.
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> CheckBox component
 
@@ -95,15 +158,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent { }
-```
-
-## Adding CSS reference
-
-Add the CheckBox component styles in `styles.css` as shown below.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
 
 ## Running the application
