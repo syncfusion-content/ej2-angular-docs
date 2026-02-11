@@ -14,7 +14,7 @@ WProofreader enables real-time spelling, grammar, and style checks inside the Ri
 
 ## Prerequisites
 
-Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers Angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with Angular Rich Text Editor](getting-started.md).
+Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers Angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with Angular Rich Text Editor](../getting-started.md).
 
 ## Key features
 
@@ -79,5 +79,5 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
 ## Additional resources
 
-- GitHub Repository: [Angular Rich Text Editor with Web Spell Checker](https://github.com/SyncfusionExamples/richtexteditor-integrations/tree/master/angular/web-spell-checker)
+- GitHub Repository: [Angular Rich Text Editor with Web Spell Checker](https://github.com/SyncfusionExamples/angular-richtexteditor-webspellchecker/tree/master)
 - WProofreader SDK: https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js

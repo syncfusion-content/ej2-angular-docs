@@ -1,0 +1,71 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+
+body.e-content li {
+    margin-bottom: 10px !important;
+    padding: unset !important;
+}
+
+body.e-content ul {
+    list-style-type: disc !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol {
+    list-style-type: decimal !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ul[style*="list-style-type: circle"]{
+    list-style-type: circle !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ul[style*="list-style-type: square"]{
+    list-style-type: square !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol[style*="list-style-type: lower-greek"]{
+    list-style-type: lower-greek !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol[style*="list-style-type: upper-alpha"]{
+    list-style-type: upper-alpha !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol[style*="list-style-type: lower-alpha"]{
+    list-style-type: lower-alpha !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol[style*="list-style-type: upper-roman"]{
+    list-style-type: upper-roman !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
+
+body.e-content ol[style*="list-style-type: lower-roman"]{
+    list-style-type: lower-roman !important;
+    padding: unset !important;
+    margin-left: 40px;
+}
