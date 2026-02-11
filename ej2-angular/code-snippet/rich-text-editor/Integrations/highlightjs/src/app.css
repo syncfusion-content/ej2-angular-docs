@@ -1,0 +1,6 @@
+.e-richtexteditor .e-rte-content .e-content pre code, 
+.e-richtexteditor .e-rte-content .e-content pre[data-language], 
+.e-richtexteditor .e-rte-content .e-content pre[data-language] code{
+    color: #abb2bf;
+    background-color: #282c34;
+}

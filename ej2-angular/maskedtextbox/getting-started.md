@@ -1,16 +1,24 @@
 ---
 layout: post
-title: Getting started with Angular Maskedtextbox component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Maskedtextbox component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular MaskedTextBox component | Syncfusion
+description: Learn how to add and configure the Angular MaskedTextBox component from Syncfusion Essential JS 2, including setup, configuration, and basic usage.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Maskedtextbox component
+# Getting started with Angular MaskedTextBox component
 
-The following section explains the steps required to create the MaskedTextBox component and also it demonstrates the basic usage of the MaskedTextBox.
+This guide demonstrates how to add the MaskedTextBox component and shows basic usage.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
 
 ## Dependencies
 
@@ -29,76 +37,104 @@ The following list of dependencies are required to use the MaskedTextBox compone
         |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Setup angular environment
+## SetUp the Angular application
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
-
-Install the CLI application globally to your machine.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
 ## Create a new application
 
-```bash
-ng new syncfusion-angular-maskedtextbox
-```
-
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-ng new syncfusion-angular-maskedtextbox --style=scss
+ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-cd syncfusion-angular-maskedtextbox
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> MaskedTextBox Package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38) package to the application.
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs --save
+ng new syncfusion-angular-app --style=scss
 ```
 
-### Angular compatibility compiled package(ngcc)
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+![Initial_setup](images/SSR.png)
 
-Add [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.2.38-ngcc) package to the application.
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs@ngcc --save
+cd syncfusion-angular-app
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> MaskedTextBox package
+
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
+
+This guide uses the [Angular MaskedTextBox component](https://www.syncfusion.com/angular-components/angular-input-mask) for demonstration. Add the Angular MaskedTextBox component component with:
 
 ```bash
-@syncfusion/ej2-angular-inputs:"20.2.38-ngcc"
+ng add @syncfusion/ej2-angular-inputs
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+This command will perform the following configurations:
+
+- Add the `@syncfusion/ej2-angular-inputs` package and peer dependencies to your `package.json`.
+- Import the MaskedTextBox component component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material theme in `angular.json`.
+
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-inputs
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc		
+```
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the MaskedTextBox component:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -109,65 +145,56 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 ```
 
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+
 ## Adding MaskedTextBox component
 
-Modify the template in [src/app/app.component.ts] file to render the MaskedTextBox component.
-Add the Angular MaskedTextBox by using `<ejs-maskedtextbox>` selector in `template` section of the app.component.ts file..
+Use the following snippet in the `src/app/app.ts` file to import the MaskedTextBox component.
 
-```javascript
-
-import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+```ts
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-    MaskedTextBoxModule
-  ],
+  imports: [MaskedTextBoxModule],
   standalone: true,
   selector: 'app-root',
   template: `<ejs-maskedtextbox></ejs-maskedtextbox>`
 })
-export class AppComponent  { }
 
+export class App { }
 ```
 
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in your application.
 
 ## Set the mask
 
-You can set the mask to the MaskedTextBox to validate the user input by using the [`mask`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#mask) property.
-For more information about the usage of mask and configuration, refer to this [link](./mask-configuration/).
+Use the [`mask`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox/index-default#mask) property to validate user input.
+For details on mask configuration, see the mask configuration guide.
 
-The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
+The following example shows the mask element `0`, which accepts a single digit (0–9).
 
-```typescript
-
-import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+```ts
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-    MaskedTextBoxModule
-  ],
+  imports: [MaskedTextBoxModule],
   standalone: true,
-  selector: 'app-root',
-  // sets mask format to the MaskedTextBox
-  template: `
-        <ejs-maskedtextbox mask='000-000-0000'></ejs-maskedtextbox>
-        `
+  selector: 'app-root',
+  template: `<ejs-maskedtextbox mask='000-000-0000'></ejs-maskedtextbox>`
 })
-export class AppComponent {
-    constructor() {
-    }
-}
 
+export class App { }
 ```
 
 ## Running the application
 
-After completing the configuration required to render a basic MaskedTextBox, run the following command to display the output in your default browser.
+After configuring the MaskedTextBox, run the application with:
 
-```
+```bash
 ng serve
 ```
 
@@ -185,10 +212,9 @@ The following example illustrates the output in your browser.
   
 {% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs1" %}
 
-## Two way binding
+## Two-way binding
 
-In MaskedTextBox, the `value` property supports two-way binding functionality.
-The following example demonstrates two-way binding functionality with the MaskedTextBox and HTML input element.
+The `value` property supports two-way binding. The example demonstrates two-way binding between the MaskedTextBox and a component property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,13 +230,11 @@ The following example demonstrates two-way binding functionality with the Masked
 
 ## Reactive form
 
-MaskedTextBox is a form component and validation is playing vital role in forms to get the valid data.
-Here to showcase the MaskedTextBox with form validations we have used the reactive form.
-For more details about Reactive Forms refer: [`https://angular.dev/guide/forms/reactive-forms`](https://angular.dev/guide/forms/reactive-forms).
+MaskedTextBox is a form component and commonly used with form validation. The examples use reactive forms. For more information, see the Angular reactive forms guide.
 
-* To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array. In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
-* The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object, that can contain sub-form-groups and `FormControls`.
-* The `FormControl` is used to declare `formControlName` for form controls.
+- Import `ReactiveFormsModule` from `@angular/forms` and add it to the NgModule `imports` array. Also import `FormGroup` and `FormControl` in the component.
+- Create a `FormGroup` instance in the component and bind it to the template using the `[formGroup]` directive.
+- Use `formControlName` on input elements to bind `FormControl` instances defined in the `FormGroup`.
 
 The following example demonstrates how to use the reactive forms.
 
@@ -228,7 +252,7 @@ The following example demonstrates how to use the reactive forms.
 
 ## See Also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox/)
-* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices/)
+* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control)
+* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox)
+* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices)

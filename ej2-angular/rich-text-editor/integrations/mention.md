@@ -15,7 +15,7 @@ The Mention component enables tagging within the Rich Text Editor by linking its
 
 ## Prerequisites
 
-Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers Angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with Angular Rich Text Editor](getting-started.md).
+Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers Angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with Angular Rich Text Editor](../getting-started.md).
 
 ## Key features
 
@@ -191,7 +191,7 @@ return Ok(payload);
 
 ## Additional resources
 
-- GitHub Repository: [Angular Rich Text Editor integrations samples](https://github.com/SyncfusionExamples/richtexteditor-integrations/tree/master/angular)
+- GitHub Repository: [Angular Rich Text Editor integrations samples](https://github.com/SyncfusionExamples/angular-richtexteditor-mention/tree/master)
 - Syncfusion Mention getting started: https://ej2.syncfusion.com/angular/documentation/mention/getting-started/  
 - Syncfusion Mention API: https://ej2.syncfusion.com/angular/documentation/api/mention/  
 - Syncfusion Rich Text Editor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/

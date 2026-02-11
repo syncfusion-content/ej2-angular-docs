@@ -1,0 +1,6 @@
+.e-rte-code-mirror-enabled .rte-code-mirror {
+    display: block !important; /* To show the custom source code view. */
+}
+.e-rte-code-mirror-enabled .e-rte-content {
+    display: none !important;  /* To hide the editor area when custom source code enabled. */
+}

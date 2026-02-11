@@ -1,113 +1,177 @@
 ---
 layout: post
 title: Getting started with Angular Button group component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Button group component of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about getting started with the Angular Button Group component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Button group component
 
-This section explains how to create a simple CSS ButtonGroup, and demonstrate the basic usage of the CSS ButtonGroup component in an Angular environment.
+This guide demonstrates how to create a simple ButtonGroup and demonstrates the basic usage of the ButtonGroup component in an Angular environment.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ## Dependencies
 
-The following list of dependencies are required to use the ButtonGroup component in your application.
+The following dependency is required to use the ButtonGroup component in your application.
 
-```js
-|-- @syncfusion/ej2-splitbuttons
+```typescript
+|-- @syncfusion/ej2-angular-splitbuttons
+  |-- @syncfusion/ej2-angular-base
+  |-- @syncfusion/ej2-splitbuttons
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-buttons
 ```
 
-## Setup Angular environment
+## SetUp the Angular application
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
-```
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Start a new Angular application using below Angular CLI command.
+### Installing a specific version
 
-```
-ng new my-app
-cd my-app
-```
-
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ButtonGroup package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38) package to the application.
+To install a particular version of Angular CLI, use:
 
 ```bash
-npm install @syncfusion/ej2-angular-buttons --save
+npm install -g @angular/cli@21.0.0
 ```
 
-### Angular compatibility compiled package(ngcc)
+## Create a new application
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.2.38-ngcc) package to the application.
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-npm install @syncfusion/ej2-angular-buttons@ngcc --save
+ng new syncfusion-angular-app
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-@syncfusion/ej2-angular-buttons:"20.2.38-ngcc"
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
+
+This guide uses the [Angular ButtonGroup Component](https://www.syncfusion.com/angular-components/angular-button-group) for demonstration. Add the Angular ButtonGroup component with:
+
+```bash
+ng add @syncfusion/ej2-angular-buttons
+```
+
+This command will perform the following configurations:
+
+- Add the `@syncfusion/ej2-angular-buttons` package and peer dependencies to your `package.json`.
+- Import the ButtonGroup component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
+
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-buttons		
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-buttons@32.1.19-ngcc		
+```
+
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the ButtonGroup component:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+```
+
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ButtonGroup component
 
-Modify the template in `app.component.ts`  file to render the ButtonGroup Component.
+Use the following snippet in the `src/app/app.ts` file to import the ButtonGroup component.
 
  ```typescript
-
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ButtonModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<div class="e-section-control">
-                <!-- To render ButtonGroup. -->
-                  <div class='e-btn-group'>
-                    <button ejs-button>HTML</button>
-                    <button ejs-button>CSS</button>
-                    <button ejs-button>Javascript</button>
-                  </div>
-                </div>`
+  imports: [ButtonModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `<div class="e-section-control">
+    <!-- To render ButtonGroup. -->
+      <div class='e-btn-group'>
+        <button ejs-button>HTML</button>
+        <button ejs-button>CSS</button>
+        <button ejs-button>JavaScript</button>
+      </div>
+    </div>`
 })
 
 export class AppComponent { }
-
 ```
 
-> To render Button in CSS ButtonGroup component, import Button module into the angular application(app.module.ts) from the package `@syncfusion/ej2-angular-buttons` and its styles in `style.css`.
+> To render buttons in the ButtonGroup component, import `ButtonModule` into your Angular application (either in a standalone component's `imports` array or in an NgModule) from the package `@syncfusion/ej2-angular-buttons`, and include the component styles in `styles.css`.
 
 ## Adding CSS reference
 
-Add ButtonGroup component's styles as given below in `style.css`.
+Add the ButtonGroup component styles in `styles.css` as shown below.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -139,11 +203,11 @@ The following example shows a basic ButtonGroup component.
 
 ## Orientation
 
-ButtonGroup can be arranged both in a vertical and horizontal orientation. By default, it is horizontally oriented.
+ButtonGroup can be arranged in either vertical or horizontal orientation. By default, it is horizontal.
 
 ### Vertical Orientation
 
-ButtonGroup can be aligned vertically by using the built-in CSS `e-vertical` to the target element.
+Apply the built-in `e-vertical` class to the target element to align the ButtonGroup vertically.
 
 The following example illustrates how to achieve vertical orientation in ButtonGroup.
 
@@ -159,4 +223,4 @@ The following example illustrates how to achieve vertical orientation in ButtonG
   
 {% previewsample "page.domainurl/samples/button-group/default-cs2" %}
 
-> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
+> ButtonGroup does not support nesting the SplitButton component in a vertical orientation.

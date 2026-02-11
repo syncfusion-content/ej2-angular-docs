@@ -168,7 +168,7 @@ Output will be displayed as follows
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/rich-text-editor/editor-with-toolbar" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started/editor-with-toolbar" %}
 
 ## See also
 

@@ -1,111 +1,136 @@
 ---
 layout: post
-title: Getting started with Angular Progress button component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Progress button component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Progress Button Component | Syncfusion
+description:  Check out and learn how to get started with the Angular Progress Button component of Syncfusion Essential JS 2.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Progress button component
+# Getting Started with the Angular Progress Button Component
 
-This section explains how to create a simple ProgressButton and demonstrate the basic usage of the ProgressButton component in an Angular environment.
+This guide demonstrates how to create a simple ProgressButton and demonstrates its basic usage in an Angular application.
+
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ## Dependencies
 
-The list of dependencies required to use the ProgressButton component in your application is given as follows:
+The list of dependencies required to use the ProgressButton component in the application is shown below:
 
- ```typescript
+```typescript
 |-- @syncfusion/ej2-angular-splitbuttons
     |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-splitbuttons
+        |-- @syncfusion/ej2-base
         |-- @syncfusion/ej2-popups
-            |-- @syncfusion/ej2-buttons
+        |-- @syncfusion/ej2-buttons
 ```
 
-## Setup Angular environment
+## SetUp the Angular application
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
-```
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Start a new Angular application using below Angular CLI command.
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 
 ```
-ng new my-app
-cd my-app
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
 ```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ProgressButton package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-splitbuttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-splitbuttons/v/20.2.38) package to the application.
+This guide uses the [Angular ProgressButton Component](https://www.syncfusion.com/angular-components/angular-progress-button) for demonstration. Add the Angular ProgressButton component with:
 
 ```bash
-npm install @syncfusion/ej2-angular-splitbuttons --save
+ng add @syncfusion/ej2-angular-splitbuttons
 ```
 
-### Angular compatibility compiled package(ngcc)
+This command will perform the following configurations:
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+- Add the `@syncfusion/ej2-angular-split-buttons` package and peer dependencies to your `package.json`.
+- Import the ProgressButton component in your application.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 
-Add [`@syncfusion/ej2-angular-splitbuttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-splitbuttons/v/20.2.38-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
-```bash
-npm install @syncfusion/ej2-angular-splitbuttons@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-splitbuttons:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ProgressButton component
-
-Modify the template in `app.component.ts` file to render the ProgressButton component.
-
-```typescript
-
-import { ProgressButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
-import { Component } from '@angular/core';
-
-@Component({
-imports: [        
-        ProgressButtonModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-                <!-- To render progress button. -->
-               <button ejs-progressbutton content='Spin Left'></button>`
-})
-
-export class AppComponent {
-}
-
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
+```bash		
+ng add @syncfusion/ej2-angular-splitbuttons	
+```		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+```bash		
+npm add @syncfusion/ej2-angular-splitbuttons@32.1.19-ngcc		
 ```
 
 ## Adding CSS reference
 
-Add ProgressButton component's styles as given below in `style.css`.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+
+The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+
+To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the ProgressButton component:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -114,15 +139,39 @@ Add ProgressButton component's styles as given below in `style.css`.
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 ```
 
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ProgressButton component
+
+Use the following snippet in the `src/app/app.ts` file to import the ProgressButton component.
+
+```ts
+import { ProgressButtonModule } from '@syncfusion/ej2-angular-splitbuttons';
+import { Component } from '@angular/core';
+
+@Component({
+  imports: [ProgressButtonModule],
+  standalone: true,
+  selector: 'app-root',
+  template: `
+    <!-- To render progress button. -->
+    <button ejs-progressbutton content='Spin Left'></button>`
+})
+
+export class AppComponent { }
+```
+
 ## Running the application
 
 Run the application in the browser using the following command:
 
-```
+```bash
 ng serve
 ```
 
-The below example shows a basic ProgressButton component.
+The following example shows a basic ProgressButton component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +185,7 @@ The below example shows a basic ProgressButton component.
   
 {% previewsample "page.domainurl/samples/progress-button/default-cs2" %}
 
-> ProgressButton supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/angular/documentation/button/). In addition, it also supports `top` and `bottom` icon positions.
+> ProgressButton supports different styles, types, and sizes similar to [`Button`](https://ej2.syncfusion.com/angular/documentation/button). In addition, it also supports `top` and `bottom` icon positions.
 
 ## Enable progress in button
 
