@@ -109,7 +109,7 @@ Modify the template in the [src/app/app.component.ts] file to render the Rich Te
 {% endhighlight %}
 
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor/getting-started/basic-editor/src/styles.css %}
+{% include code-snippet/rich-text-editor/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -164,7 +164,7 @@ Output will be displayed as follows
 {% endhighlight %}
 
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor/getting-started/editor-with-toolbar/src/styles.css %}
+{% include code-snippet/rich-text-editor/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
