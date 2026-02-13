@@ -20,12 +20,13 @@ Below is the list of minimum dependencies required to use the DataManager.
     |-- es6-promise (Required when window.Promise is not available)
 ```
 
-> **@syncfusion/ej2-data** requires the presence of a Promise feature in global environment. In the browser, window.Promise must be available.
+> **@syncfusion/ej2-data** requires the presence of a Promise feature in global environment. In the browser, "window.Promise" must be available.
 
 ## Setup Angular Environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+[Angular CLI](https://github.com/angular/angular-cli) can be used to setup Angular applications.
+
+Install Angular CLI using the following command:
 
 ```bash
 npm install -g @angular/cli@16.0.1
@@ -33,19 +34,19 @@ npm install -g @angular/cli@16.0.1
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Create a new Angular application using the following Angular CLI command:
 
 ```bash
 ng new data-app
 ```
 
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+The command prompts for project settings such as Angular routing and stylesheet format preferences.
 
 ![Initial_setup](images/Initial-setup.png)
 
-By default, it will create a CSS-based application.
+By default, a CSS-based application is created.
 
-Next, navigate to the created project folder:
+Navigate to the created project folder:
 
 ```
 cd data-app
@@ -61,7 +62,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package, use the below command.
 
 Add [@syncfusion/ej2-data](https://www.npmjs.com/package/@syncfusion/ej2-data/v/20.2.38) package to the application.
 
@@ -89,13 +90,13 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Connection to a data source
 
-The DataManager can act as gateway for both local and remote data source which will uses the query to interact with the data source.
+DataManager acts as a gateway for both local and remote data sources, using queries to interact with the data source.
 
 ### Binding to JSON data
 
-**DataManager** can be bound to local data source by assigning the array of JavaScript objects to the **json** property or simply passing them to the constructor while instantiating.
+**DataManager** can be bound to local data sources by assigning an array of JavaScript objects to the **json** property or by passing them to the constructor during instantiation.
 
-Create a [src/app/datasource.ts] file and utilize the following dataset to provide JSON data.
+Create a `src/app/datasource.ts` file and use the following dataset to provide JSON data:
 
 ```typescript
 export let data: Object[] = [
@@ -200,8 +201,8 @@ export let data: Object[] = [
 
 ### Binding to OData
 
-**DataManager** can be bound to remote data source by assigning service end point URL to the **url** property.
-Now all **DataManager** operations will address the provided service end point.
+**DataManager** can be bound to remote data source by assigning service endpoint URL to the **url** property.
+Now all **DataManager** operations will address the provided service endpoint.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,8 +228,8 @@ Now all **DataManager** operations will address the provided service end point.
 
 ## Filter
 
-The data filtering is a trivial operation which will let us to get reduced view of data based on filter criteria.
-The filter expression can be built easily using **where** method of **Query** class.
+Data filtering enables a reduced view of data based on specified filter criteria.
+Filter expressions can be built using the **where** method of the **Query** class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -254,7 +255,7 @@ The filter expression can be built easily using **where** method of **Query** cl
 
 ## Sort
 
-The data can be ordered either in ascending or descending using **sortBy** method of **Query** class.
+Data can be ordered in ascending or descending sequence using the **sortBy** method of the **Query** class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -280,7 +281,7 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 
 ## Page
 
-The **page** method of the Query class is used to get range of data based on the page number and the total page size.
+The **page** method of the **Query** class retrieves a range of data based on the page number and page size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -306,9 +307,9 @@ The **page** method of the Query class is used to get range of data based on the
 
 ## Component binding
 
-DataManager component can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components which supports data binding.
+DataManager can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components that support data binding.
 
-In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
+The following samples demonstrate grid component binding. Refer to the [Grid Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation for complete grid configuration details.
 
 ### Local data binding
 
@@ -328,7 +329,7 @@ A DataSource can be created in-line with other Syncfusion<sup style="font-size:7
 
 ### Remote data binding
 
-To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
+To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -30,5 +30,5 @@ Switch between SVG and Canvas rendering by using the `enableCanvas` option. The 
 **Limitations**
 
 * Animation is not supported in canvas mode.
-\
-Note: Canvas rendering improves performance for very large datasets or high-frequency updates but may limit certain SVG-specific features.
+
+> Note: Canvas rendering improves performance for very large datasets or high-frequency updates but may limit certain SVG-specific features.

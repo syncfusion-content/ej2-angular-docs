@@ -234,7 +234,7 @@ Configure angular.json with required styles and scripts:
 "styles": [
   "node_modules/bootstrap/dist/css/bootstrap.min.css",
   "src/styles.css",
-  "node_modules/@syncfusion/ej2-material-theme/styles/material.css"
+  "node_modules/@syncfusion/ej2-material-theme/styles/material3.css"
 ],
 "scripts": ["node_modules/jquery/dist/jquery.min.js"]
 ```

@@ -17,15 +17,15 @@ The Angular Chart component supports multiple data binding approaches to suit di
 ## Choosing a data binding approach
 | Method | Best For | Advantages | Considerations |
 |--------|----------|------------|-----------------|
-| **Local data** | Small to medium datasets | Simple setup, no network latency, instant rendering | All data must be in memory |
-| **Common datasource** | Multiple series sharing data | Reduces redundancy, single update point | Limited to data common across series |
-| **Lazy loading** | Large datasets with scrolling | Loads only visible data, better performance | Requires server-side pagination |
-| **Remote data (OData/WebAPI)** | Backend-driven data | Scalable, centralized data management, real-time updates | Network latency, requires service setup |
-| **Offline mode** | Data caching with client-side actions | Eliminates repeated requests, faster interactions | Initial load time, memory constraints |
+| Local data | Small to medium datasets | Simple setup, no network latency, instant rendering | All data must be in memory |
+| Common datasource | Multiple series sharing data | Reduces redundancy, single update point | Limited to data common across series |
+| Lazy loading | Large datasets with scrolling | Loads only visible data, better performance | Requires server-side pagination |
+| Remote data (OData/WebAPI) | Backend-driven data | Scalable, centralized data management, real-time updates | Network latency, requires service setup |
+| Offline mode | Data caching with client-side actions | Eliminates repeated requests, faster interactions | Initial load time, memory constraints |
 
 ## Local data
 
-Bind simple JSON data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property in the series configuration. Map the JSON fields to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties to specify which data fields represent the x and y axis values.
+Bind simple JSON data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property in the series configuration. Map the JSON fields to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to specify which data fields represent the x and y axis values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

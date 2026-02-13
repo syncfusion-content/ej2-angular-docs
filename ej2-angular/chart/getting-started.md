@@ -194,19 +194,3 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs5" %}
-
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipsettingsmodel#enable) property as `true` in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartmodel#tooltip) object and by injecting `TooltipService` into the `@NgModule.providers`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs2" %}
-
-> You can refer to our [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Charts example](https://ej2.syncfusion.com/angular/demos/#/material/chart/line) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.
