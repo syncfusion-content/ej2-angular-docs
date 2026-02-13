@@ -189,6 +189,8 @@ return Ok(payload);
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/samples/rich-text-editor/Integrations/mention-remote-data" %}
+
 ## Additional resources
 
 - GitHub Repository: [Angular Rich Text Editor integrations samples](https://github.com/SyncfusionExamples/angular-richtexteditor-mention/tree/master)
