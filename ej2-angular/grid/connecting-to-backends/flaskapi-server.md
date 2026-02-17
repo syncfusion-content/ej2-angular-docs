@@ -29,6 +29,17 @@ domainurl: ##DomainURL##
 | TypeScript                  | 5.x or later                 | Client-side type safety                 |
 | Angular CLI                 | 18.x or later                | Angular development tool                |
 
+## Key Topcis
+
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Setting up and configuring the Flask backend using Python | [View](#setting-up-the-flask-backend-using-python) |
+| 2 | Performing data operations in server with filtering, searching, sorting, and paging for efficient data processing | [View](#perform-data-operations-in-server) |
+| 3 | Performing CRUD operations in server with REST endpoints | [View](#perform-crud-operations-in-server) |
+| 4 | Connecting Syncfusion Angular Grid with Flask API and configuring Syncfusion Grid with custom binding | [View](#connecting-syncfusion-angular-grid-with-flask-api) |
+| 5 | Running the application by starting servers locally and accessing the frontend | [View](#run-the-application) |
+| 6 | Exploring a complete working sample in the complete sample repository on GitHub | [View](#complete-sample-repository) |
+
 ## Setting up the Flask backend using Python
 
 The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion Angular Grid.
@@ -291,7 +302,7 @@ def apply_paging(rows, skip, take):
 
 ### GET request endpoint
 
-The Flask "GET" endpoint retrieves task data with applied filtering, searching, sorting, and paging operations. The endpoint accepts a grid state parameter containing all operation details and returns the result in the standardized format.
+The Flask GET endpoint retrieves task data with applied filtering, searching, sorting, and paging operations. The endpoint accepts a grid state parameter containing all operation details and returns the result in the standardized format.
 
 Ensure the response follows a structured format that includes both the current view dataset and the total data count. This approach supports on-demand data loading and enables the client to handle operations such as paging or filtering effectively when using Syncfusion custom data binding.
 
@@ -329,11 +340,11 @@ def list_tasks():
 ```
 
 This endpoint processes all Grid operations in sequence:
-1. **Filter**: Apply filter predicates to exclude non-matching records
-2. **Search**: Apply search queries across specified fields
-3. **Count**: Calculate total count before paging (for pagination info)
-4. **Sort**: Arrange records by sort descriptors
-5. **Page**: Extract the specific page using skip and take parameters
+1. **Filter**: Apply filter predicates to exclude non-matching records.
+2. **Search**: Apply search queries across specified fields.
+3. **Count**: Calculate total count before paging (for pagination info).
+4. **Sort**: Arrange records by sort descriptors.
+5. **Page**: Extract the specific page using skip and take parameters.
 
 ## Perform CRUD operations in server
 
@@ -395,7 +406,7 @@ The "delete_task" function finds the record by its primary key, removes it from 
 
 ### Running the Flask server
 
-To run the Flask application, execute the following command in the `server` directory:
+To run the Flask application, execute the following command in the **server** directory:
 
 ```bash
 python app.py
@@ -536,7 +547,7 @@ export class AppComponent implements AfterViewInit {
 }
 ```
 
-This component includes the `ngAfterViewInit` lifecycle hook that loads the initial data when the component initializes. The "initialState" object defines the starting grid state with default values for skip (0), take (12), and empty arrays for sorting, filtering, and searching. The "fetchData" function sends the grid state to the Flask API via a "GET" request and retrieves the data in the required format.
+This component includes the `ngAfterViewInit` lifecycle hook that loads the initial data when the component initializes. The "initialState" object defines the starting grid state with default values for skip (0), take (12), and empty arrays for sorting, filtering, and searching. The "fetchData" function sends the grid state to the Flask API via a GET request and retrieves the data in the required format.
 
 **API response format:**
 
@@ -553,10 +564,10 @@ This format has already been implemented in the Flask server during the backend 
 The `dataStateChange` event is the primary mechanism for handling Grid state changes like paging, sorting, filtering, and searching. This event is triggered whenever the Grid state changes and provides the current state details that need to be sent to the server.
 
 The event handler is responsible for:
-1. Collecting the current grid state (skip, take, sorted, where, search)
-2. Sending this state to the Flask API via a "GET" request
-3. Processing the response and binding data to the Grid
-4. Handling special cases like filter dropdown requests
+1. Collecting the current grid state (skip, take, sorted, where, search).
+2. Sending this state to the Flask API via a GET request.
+3. Processing the response and binding data to the Grid.
+4. Handling special cases like filter dropdown requests.
 
 Configure the Grid to use the `dataStateChange` event handler by adding it as a property:
 
@@ -627,10 +638,10 @@ The `dataStateChange` event handler collects the current grid state parameters (
 The `dataSourceChanged` event is triggered during CRUD operations. This event provides the affected record along with the action type, which is sent to the Flask API to execute the corresponding operation.
 
 The event handler is responsible for:
-1. Identifying the type of operation (add, edit, or delete)
-2. Extracting the record data from the event arguments
-3. Sending the appropriate HTTP request ("POST" for insert, "PUT" for update, "DELETE" for delete)
-4. Calling `endEdit()` to notify the Grid that the operation is complete
+1. Identifying the type of operation (add, edit, or delete).
+2. Extracting the record data from the event arguments.
+3. Sending the appropriate HTTP request (POST for insert, PUT for update, DELETE for delete).
+4. Calling `endEdit()` to notify the Grid that the operation is complete.
 
 Configure the Grid to use the `dataSourceChanged` event handler by adding it as a property:
 
@@ -712,11 +723,11 @@ export class AppComponent implements AfterViewInit {
 </ejs-grid>
 ```
 
-The `dataSourceChanged` event handler checks the action type from the event arguments to determine whether a create, update, or delete operation is being performed. For insert operations, a "POST" request is sent to the "/tasks" endpoint with the new record data. For update operations, a PUT request is sent to "/tasks/{id}" with the modified data. For delete operations, a "DELETE" request is sent to "/tasks/{id}" to remove the record. After each operation completes successfully, the `endEdit()` method is called to notify the Grid that the operation is complete.
+The `dataSourceChanged` event handler checks the action type from the event arguments to determine whether a create, update, or delete operation is being performed. For insert operations, a POST request is sent to the "/tasks" endpoint with the new record data. For update operations, a PUT request is sent to "/tasks/{id}" with the modified data. For delete operations, a DELETE request is sent to "/tasks/{id}" to remove the record. After each operation completes successfully, the `endEdit()` method is called to notify the Grid that the operation is complete.
 
 ### Step 8: Enable Paging
 
-The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to "true" and injecting the `PageService` module in the `providers` property. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
+The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` and injecting the `PageService` module in the `providers` property. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
 
 **app.component.ts:**
 
@@ -762,7 +773,7 @@ The image illustrates that the page state is passed to the `skip` and `take` pro
 
 ### Step 9: Enable Filtering
 
-The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to "true" and injecting the `FilterService` module in the `providers` property. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
+The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and injecting the `FilterService` module in the `providers` property. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
 
 **app.component.ts:**
 ```ts
@@ -845,7 +856,7 @@ The image illustrates that the search state is passed to the `search` property o
 
 ### Step 11: Enable Sorting
 
-The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to "true" and injecting the `SortService` module in the `providers` property.
+The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` and injecting the `SortService` module in the `providers` property.
 
 **app.component.ts:**
 ```ts
@@ -1016,22 +1027,9 @@ angular-grid-flask-api/
 
 ## Complete sample repository
 
-For a complete working implementation, refer to the GitHub repository:
-[Syncfusion Angular Grid with Flask API Backend Sample](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-flaskapi-server)
+For a complete working implementation, refer to the [GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-flaskapi-server) repository.
 
 The repository contains the complete Flask backend implementation with all API endpoints, business logic, data models, and a ready-to-run Angular frontend application.
-
-## Summary
-
-This guide demonstrates:
-
-1. Prerequisites for building the application with required tools, frameworks, and versions. [🔗](#prerequisites)
-2. Setting up and configuring the Flask backend using Python. [🔗](#setting-up-the-flask-backend-using-python)
-3. Performing data operations in server with filtering, searching, sorting, and paging for efficient data processing. [🔗](#perform-data-operations-in-server)
-4. Performing CRUD operations in server with REST endpoints. [🔗](#perform-crud-operations-in-server)
-5. Connecting Syncfusion Angular Grid with Flask API and configuring Syncfusion Grid with custom data binding. [🔗](#connecting-syncfusion-angular-grid-with-flask-api)
-6. Running the application by starting servers locally and accessing the frontend. [🔗](#run-the-application)
-7. Exploring a complete working sample in the complete sample repository on GitHub. [🔗](#complete-sample-repository)
 
 The application now provides a complete solution for integrating the Syncfusion Angular Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
 

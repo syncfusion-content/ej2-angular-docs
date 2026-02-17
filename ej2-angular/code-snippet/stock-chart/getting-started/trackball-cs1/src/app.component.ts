@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule, StockChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { DateTimeService, LineSeriesService } from '@syncfusion/ej2-angular-charts'
-import { LegendService, DataLabelService, TooltipService, CrosshairService } from '@syncfusion/ej2-angular-charts'
-
+import { DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts'
+import { TooltipService, CrosshairService } from '@syncfusion/ej2-angular-charts'
 
 
 
@@ -14,7 +13,7 @@ imports: [
          ChartModule, StockChartAllModule, ChartAllModule
     ],
 
-providers: [ DateTimeService, LineSeriesService, LegendService, DataLabelService,
+providers: [ DateTimeService, CandleSeriesService,
                  TooltipService, CrosshairService],
 standalone: true,
     selector: 'app-container',
@@ -61,7 +60,7 @@ export class AppComponent implements OnInit {
         this.tooltip = { enable: true, shared: true, format: '${series.name} : ${point.x} : ${point.y}' };
         this.crosshair = { enable: true, lineType: 'Vertical' };
         this.marker = { visible: true };
-        this.title = 'Average Sales per Person';
+        this.title = 'Average Sales per Pern';
     }
 
 }
