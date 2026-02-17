@@ -22,6 +22,17 @@ domainurl: ##DomainURL##
 | Node.js            | 20.x LTS or later   | Angular tooling and runtime |
 | npm                | 10.x+               | Package manager |
 
+## Key topics
+
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Configure a FastAPI REST backend that implements the Syncfusion DataManager POST contract | [View](#setting-up-the-fastapi-backend) |
+| 2 | Implement server‑side data operations—including paging, sorting, searching, filtering | [View](#perform-server-side-data-operations) |
+| 3 | Add full CRUD support with insert, update, and delete operations persisted on the server | [View](#perform-server-side-crud-operations) |
+| 4 | Integrate the Syncfusion Angular Grid with the backend using DataManager and the UrlAdaptor | [View](#integrating-syncfusion-angular-grid-with-fastapi) |
+| 5 | Run the FastAPI and Angular applications locally for development | [View](#running-the-application) |
+| 6 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
+
 ## Setting up the FastAPI backend
 
 The FastAPI backend serves as the central data service for the Angular Grid. It receives every grid action through a single transport contract, performs validation and server‑side processing, and returns compact JSON responses that the Grid can render immediately.
@@ -699,11 +710,11 @@ At this point, the server configuration supports all Grid data operations, inclu
 
 ## Integrating Syncfusion Angular Grid with FastAPI
 
-This section demonstrates binding the Syncfusion React Grid to a FastAPI endpoint using the DataManager and the `UrlAdaptor`. The DataManager standardizes the way the Grid serializes its actions into a request body, and the `UrlAdaptor` formats the transport to align with a RESTful endpoint that accepts POST requests for both reads and mutations.
+This section demonstrates binding the Syncfusion Angular Grid to a FastAPI endpoint using the DataManager and the `UrlAdaptor`. The DataManager standardizes the way the Grid serializes its actions into a request body, and the `UrlAdaptor` formats the transport to align with a RESTful endpoint that accepts POST requests for both reads and mutations.
 
 [DataManager]((https://ej2.syncfusion.com/angular/documentation/data/getting-started)) is a data layer that sends all Grid actions (read, sort, filter, search, paging, CRUD) to the backend. It standardizes the way components communicate with remote services and handles query serialization.
 
-Before configuring the Grid component, confirm that the React application has been created and the required Syncfusion packages are installed.
+Before configuring the Grid component, confirm that the Angular application has been created and the required Syncfusion packages are installed.
 
 ### Step 1: Create Angular application and install dependencies
 
@@ -824,7 +835,7 @@ export class AppComponent {
 
 **Explanations:**
 
-- The DataManager converts Grid actions—such as paging, filtering, sorting, searching, and editing—into a single POST request directed to the /"products/" endpoint.
+- The DataManager converts Grid actions—such as paging, filtering, sorting, searching, and editing—into a single POST request directed to the "/products" endpoint.
 - The injected services enable features like Page, Sort, Filter, Edit, and Toolbar on the client, while the server performs the corresponding operations.
 - A primary key is enabled for the "ID" column to support CRUD operations, and this configuration is mandatory.
 
@@ -833,7 +844,7 @@ The Grid client is now ready, and every interaction flows seamlessly to the Fast
 
 ### Step 4: Enable paging feature
 
-The paging feature allows efficient loading of large data sets through on‑demand loading. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to "true".
+The paging feature allows efficient loading of large data sets through on‑demand loading. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true`.
 
 ```html
 <ejs-grid
@@ -871,7 +882,7 @@ The image illustrates the paging details (`skip` and `take`) included in the ser
 
 ### Step 5: Enable sorting feature
 
-The sorting feature in the Grid allows records to be organized in ascending or descending order based on one or more columns. Sorting is enabled by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to "true" and injecting the Sort module.
+The sorting feature in the Grid allows records to be organized in ascending or descending order based on one or more columns. Sorting is enabled by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
 
 ```html
 <ejs-grid
@@ -928,7 +939,7 @@ The image below displays the `search` parameter values.
 
 ### Step 7: Enable filtering feature
 
-The Grid supports filtering through a menu interface that restricts data based on column values. Filtering is enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to "true".
+The Grid supports filtering through a menu interface that restricts data based on column values. Filtering is enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to `true`.
 
 ```html
 <ejs-grid
@@ -964,7 +975,7 @@ The image illustrates the serialized `where` condition passed from the DataManag
 
 CRUD operations allow adding new products, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route the request to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [Edit Settings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to "true" in the **app.component.html**.
+Editing operations in the Grid are enabled through configuring the [Edit Settings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**.
 
 ```html
 <ejs-grid
@@ -1033,16 +1044,7 @@ Open the URL shown in the terminal which is typically http://localhost:4200/.
 
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following GitHub repository.
-
-[Syncfusion Grid with FastAPI Sample](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-fastapi-server)
-
-## Summary
-
-1. Configured a FastAPI REST backend that implements the Syncfusion DataManager POST contract. [🔗](#setting-up-the-fastapi-backend)
-2. Implemented server‑side data operations—including paging, sorting, searching, filtering, and selecting—via dedicated helper pipelines. [🔗](#perform-server-side-data-operations)
-3. Added full CRUD support with insert, update, and delete operations persisted on the server. [🔗](#perform-server-side-crud-operations)
-4. Integrated the Syncfusion Angular Grid with the backend using DataManager and the UrlAdaptor. [🔗](#integrating-syncfusion-angular-grid-with-fastapi)
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-fastapi-server) repository.
 
 The application demonstrates a complete product management workflow with a Syncfusion Angular Grid connected to a Python FastAPI REST backend through a single, predictable transport.
 

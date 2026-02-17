@@ -31,6 +31,18 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 - **Django** 5.2+, **Django REST Framework**
 - **Microsoft SQL Server** (or adapt to Postgre/MySQL/SQLite)
 
+## Key topics
+
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Set up Django REST Framework and connect it to a Microsoft SQL Server database | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
+| 2 | Create and configure the Angular application with the Syncfusion Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework) |
+| 3 | Handle server‑side data operations such as filtering, searching, sorting, and paging | [View](#perform-data-operations) |
+| 4 | Enable create, update, and delete operations from the Grid using DRF | [View](#performing-crud-operations) |
+| 5 | Run the Django and Angular applications | [View](#running-the-application) |
+| 6 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
+
+
 ## Setting up the Django REST Framework for Microsoft SQL database
 
 The Django REST Framework backend serves as the core data service, managing API requests that provide the data powering the Syncfusion Angular Grid.
@@ -61,7 +73,7 @@ The Django REST Framework backend serves as the core data service, managing API 
     For this guide, a `Django` project named **django_server** is created, along with a new application module, using the following commands:
 
     ```bash
-    django-admin startproject django_server .
+    django-admin startproject django_server
     python manage.py startapp library
     ```
 The **django_server** folder is now created. This initializes the project structure and creates the library app, which will contain the models, views, and API logic for the Django REST Framework backend.
@@ -95,7 +107,7 @@ This step updates the file to establish the SQL Server connection and enable ess
     }
     ```
     **Line breakdown:**
-    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to `"mssql"`.
+    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to `mssql`.
     - **NAME**: Database name to connect to (e.g., **LibraryDB**).
     - **USER**: SQL Server login used by `Django`.
     - **PASSWORD**: Password for the above user.
@@ -520,7 +532,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
 
 **Instructions:**
 
-1. Enable paging by setting [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) to "true" on the Grid so that paging requests include the required `skip` and `take` parameters.
+1. Enable paging by setting [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) to `true` on the Grid so that paging requests include the required `skip` and `take` parameters.
 
     ```html
     [app.component.html]
@@ -596,7 +608,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
             return 'rows', paged_queryset, total_count, requires_counts
     ```
 
-    > All `DataManager` operations searching, filtering, sorting, and paging are invoked through the `read()` method of the `DataManagerEngine` class in (**library/services/datamanager/engine.py**) file.
+    > All `DataManager` operations searching, filtering, sorting, and paging are invoked through the `read()` method of the "DataManagerEngine" class in (**library/services/datamanager/engine.py**) file.
 
     **Explanation:**
 
@@ -688,7 +700,7 @@ Searching allows locating rows by supplying a term that can be checked against o
         ```
         **Explanation:**
             
-        - The ViewSet passes the request payload to `DataManagerEngine.read()`.
+        - The ViewSet passes the request payload to "DataManagerEngine.read()".
         - The read engine calls "apply_search()" before filtering, sorting, or paging.
         - Each search block creates a set of **OR** conditions for its fields.
         - Multiple blocks are combined using **AND**.
@@ -704,7 +716,7 @@ Sorting allows records to be organized by clicking on column headers to arrange 
 
 **Instructions:**
 
-1. Enable sorting by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) to "true" on the Grid so that sort changes are emitted.
+1. Enable sorting by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) to `true` on the Grid so that sort changes are emitted.
 
     ```html
     <ejs-grid [dataSource]='data' [allowSorting]="true">
@@ -762,7 +774,7 @@ Sorting allows records to be organized by clicking on column headers to arrange 
 
     **Explanation:**
     
-    - `DataManagerEngine.read()` invokes "apply_sorting()" after searching and filtering.
+    - "DataManagerEngine.read()" invokes "apply_sorting()" after searching and filtering.
     - "apply_sorting()" builds an `order_by()` list and orders the query set prior to paging.
 
 **Below image shows the "sort" query passed to the DRF:**
@@ -777,7 +789,7 @@ Filtering helps refine records by applying conditions on column values. It allow
 
 **Instructions:**
 
-1. Enable filtering by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) to "true" on the Grid so that filter interactions are sent to the server. Optionally configure the filtering user interface (for example, Menu, CheckBox, or Excel style) by setting the[filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#filtersettings) property.
+1. Enable filtering by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) to `true` on the Grid so that filter interactions are sent to the server. Optionally configure the filtering user interface (for example, Menu, CheckBox, or Excel style) by setting the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#filtersettings) property.
 
     ```html
     <ejs-grid [dataSource]='data' [allowFiltering]="true" [filterSettings]="{ type: 'CheckBox' }">
@@ -878,7 +890,7 @@ Filtering helps refine records by applying conditions on column values. It allow
 
         **Explanation:**
 
-        - The view set detects `DataManager` request and forwards the payload to `DataManagerEngine.read()`.
+        - The view set detects `DataManager` request and forwards the payload to "DataManagerEngine.read()".
         - Inside "read()", the function "build_q_from_where()" converts the tree into Django `Q` predicates, and the query set is filtered before sorting and paging.
 
 **Below image shows the "filter" query passed to the DRF:**
@@ -1097,26 +1109,12 @@ ng serve
 
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following GitHub repository:
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20Django%20and%20UrlAdaptor) repository:
 
-[Syncfusion DataGrid with DRF Sample](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20Django%20and%20UrlAdaptor)
-
-## Summary
-
-This guide walks through the following key areas:
-
-1. Prerequisites. [🔗](#prerequisites)
-2. Set up Django REST Framework and connect it to a Microsoft SQL Server database. [🔗](#setting-up-the-django-rest-framework-for-microsoft-sql-database)
-3. Create and configure the Angular application with the Syncfusion Angular Grid. [🔗](#integrate-syncfusion-angular-grid-with-django-rest-framework)
-4. Handle server‑side data operations such as filtering, searching, sorting, and paging. [🔗](#perform-data-operations) 
-5. Enable create, update, and delete operations from the Grid using DRF. [🔗](#performing-crud-operations) 
-6. Run the Django and Angular applications locally for development. [🔗](#running-the-application) 
-7. Explore a complete working sample available on GitHub. [🔗](#complete-sample-repository) 
 
 The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion Angular Grid front end.
 
 ## See also
-
+- [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
 - [Grid cell customization with templates](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
 - [Optimized performance with virtual scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling)
-- [Bulk data modifications with batch editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing)
