@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Prompt Library for Syncfusion AI Coding Assistant – Angular
-description: Ready-to-use prompt templates for Syncfusion Angular components using the AI Coding Assistant.
-control: AI Coding Assistant
+title: Syncfusion AI Coding Assistant Prompt Library | Syncfusion
+description: Explore the AI Coding Assistant Prompt Library to boost Angular development productivity with code generation, configuration examples, and contextual guidance.
+control: Syncfusion AI Coding Assistant Prompt Library
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
@@ -10,25 +10,23 @@ domainurl: ##DomainURL##
 
 # Prompt Library - AI Coding Assistant
 
-Speed up your Angular projects with these ready-made prompts tailored for popular Syncfusion<sup style="font-size:70%">&reg;</sup> components. Each prompt is concise, clear, and focused on common real-world tasks such as initial setup, feature configuration, customization, and troubleshooting.
+Speed up Angular development using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 
 ## How to Use
 
-Ensure the SyncfusionAngularAssistant MCP Server is installed, configured with your API key, and running before you begin.
+Before starting, make sure your MCP server is set up and running.
 
-1. Select a prompt that matches your requirement.
-2. Copy the entire prompt, including the `#SyncfusionAngularAssistant` prefix.
-3. Customize the prompt with your specific component properties, data structure, or use case details as needed.
-4. Submit the prompt through your MCP-compatible client (e.g., IDE extension).
-5. Review the generated code carefully, test it in your application, and make adjustments before production use.
-
-> **Important:** AI-generated code should always be validated for correctness, security, and performance before integration.
+* Choose a prompt that fits your needs.
+* Copy the full prompt, including the `#SyncfusionAngularAssistant` / `#sf_angular_component` handle.
+* Customize the prompt for your specific use case.
+* Execute the prompt via the MCP server.
+* Always review and test the generated code before adding it to your project.
 
 ## Component-Specific Prompts
 
 ### Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides high-performance, feature-rich tabular data presentation with sorting, filtering, grouping, editing, virtualization, and export capabilities.
+The Syncfusion Angular Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
 
 {% promptcards %}
 {% promptcard Paging and Sorting %}
@@ -53,7 +51,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides 
 #SyncfusionAngularAssistant How can I integrate a chat widget inside each row of the Syncfusion Grid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
-#SyncfusionAngularAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling
+#SyncfusionAngularAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
 {% promptcard Troubleshooting Grid Export %}
 #SyncfusionAngularAssistant Why isn’t my Grid exporting to PDF and Excel correctly?
@@ -71,7 +69,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides 
 
 ### Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart offers over 80 chart types with rich interactivity, zooming, panning, tooltips, legends, and export options.
+The Syncfusion Angular Chart suite offers versatile visualization tools across various series types for insightful data representation.
 
 {% promptcards %}
 {% promptcard Local and Remote Data %}
@@ -81,7 +79,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart offers over 8
 #SyncfusionAngularAssistant Show me how to enable range selection in a Syncfusion Angular Chart.
 {% endpromptcard %}
 {% promptcard Chart Types Overview %}
-#SyncfusionAngularAssistant What chart types are available in Syncfusion Angular Chart and how to configure them?
+#SyncfusionAngularAssistant What chart types are available in Syncfusion Chart, and how do I configure them?
 {% endpromptcard %}
 {% promptcard Markers and Data Labels %}
 #SyncfusionAngularAssistant How can I display markers and data labels on a line chart?
@@ -93,7 +91,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart offers over 8
 #SyncfusionAngularAssistant How do I export a Syncfusion Chart to PDF or image format?
 {% endpromptcard %}
 {% promptcard Print Support %}
-#SyncfusionAngularAssistant Enable print functionality for a Syncfusion Angular Chart component.
+#SyncfusionAngularAssistant Enable print functionality for a Syncfusion Chart component.
 {% endpromptcard %}
 {% promptcard Dynamic Chart with Remote Data %}
 #SyncfusionAngularAssistant Create a chart that updates dynamically with remote API data.
@@ -114,7 +112,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart offers over 8
 
 ### Schedule
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component supports day, week, month, timeline, and agenda views with event management, drag-and-drop, resizing, and resource grouping.
+The Syncfusion Angular Schedule component helps manage events, resources, and timelines with powerful views and customization.
 
 {% promptcards %}
 {% promptcard Module Injection %}
@@ -130,7 +128,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component 
 #SyncfusionAngularAssistant Enable virtual scrolling for large event datasets in the Schedule view.
 {% endpromptcard %}
 {% promptcard Timezone Support %}
-#SyncfusionAngularAssistant How can I configure timezone support in the Syncfusion Angular Schedule?
+#SyncfusionAngularAssistant How can I configure timezone support in the Syncfusion Schedule?
 {% endpromptcard %}
 {% promptcard Export Schedule to PDF or Excel %}
 #SyncfusionAngularAssistant Add export functionality to download the Schedule view as PDF or Excel.
@@ -139,7 +137,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component 
 #SyncfusionAngularAssistant How do I customize timeline header rows in the Schedule component?
 {% endpromptcard %}
 {% promptcard Multiple Module Injection %}
-#SyncfusionAngularAssistant Inject multiple modules like Day, Week, and Timeline views into Schedule.
+#SyncfusionAngularAssistant Inject multiple modules like Day, Week, and Timeline views into the Schedule component.
 {% endpromptcard %}
 {% promptcard Troubleshooting Schedule CRUD %}
 #SyncfusionAngularAssistant Why aren’t my CRUD actions working correctly in the Schedule component?
@@ -157,7 +155,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component 
 
 ### Kanban
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Kanban board enables agile project management with columns, swimlanes, drag-and-drop and card templates
+The Syncfusion Angular Kanban organizes tasks in columns with drag-and-drop, swimlanes, and templating for agile workflows.
 
 {% promptcards %}
 {% promptcard Data Binding %}
@@ -185,13 +183,13 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Kanban board enable
 #SyncfusionAngularAssistant Create a Kanban board with swimlane grouping and sortable cards.
 {% endpromptcard %}
 {% promptcard Editable Cards and Localization %}
-#SyncfusionAngularAssistant Show me how to edit cards and apply localization in Kanban.
+#SyncfusionAngularAssistant Show me how to edit cards and apply localization in the Kanban component.
 {% endpromptcard %}
 {% promptcard Troubleshooting Kanban Drag and Drop %}
 #SyncfusionAngularAssistant Why isn’t drag-and-drop working correctly in my Kanban board?
 {% endpromptcard %}
 {% promptcard Remote Data and Virtualization %}
-#SyncfusionAngularAssistant Bind remote data to Kanban and enable virtualization for performance.
+#SyncfusionAngularAssistant Bind remote data to the Kanban component and enable virtualization for performance.
 {% endpromptcard %}
 {% promptcard Advanced Kanban Setup %}
 #SyncfusionAngularAssistant Create a Kanban board with data binding, swimlane, card editing, and drag-and-drop.
@@ -200,26 +198,26 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Kanban board enable
 
 ### RichTextEditor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular RichTextEditor delivers a full-featured WYSIWYG editor with toolbar customization, media embedding, tables, markdown support, and content validation.
+The Syncfusion Angular RichTextEditor offers a modern WYSIWYG editor with extensive formatting, media, and integration features.
 
 {% promptcards %}
 {% promptcard Toolbar Configuration %}
 #SyncfusionAngularAssistant How do I customize the toolbar options in the Syncfusion RichTextEditor?
 {% endpromptcard %}
 {% promptcard Link Manipulation %}
-#SyncfusionAngularAssistant Show me how to add, edit, and remove hyperlinks in RichTextEditor content.
+#SyncfusionAngularAssistant Show me how to add, edit, and remove hyperlinks in the RichTextEditor content.
 {% endpromptcard %}
 {% promptcard Iframe Mode %}
 #SyncfusionAngularAssistant How can I render the RichTextEditor inside an iframe for isolated styling?
 {% endpromptcard %}
 {% promptcard Module Injection %}
-#SyncfusionAngularAssistant Inject feature modules like toolbar, link, and image into RichTextEditor.
+#SyncfusionAngularAssistant Inject feature modules like toolbar, link, and image into the RichTextEditor.
 {% endpromptcard %}
 {% promptcard Undo and Redo %}
 #SyncfusionAngularAssistant Enable undo and redo functionality in the RichTextEditor toolbar.
 {% endpromptcard %}
 {% promptcard Forms Integration %}
-#SyncfusionAngularAssistant How do I integrate a Angular form and validate input?
+#SyncfusionAngularAssistant How do I integrate an Angular form and validate input?
 {% endpromptcard %}
 {% promptcard Content Import and Export %}
 #SyncfusionAngularAssistant Export RichTextEditor content to HTML or import existing HTML content.
@@ -228,10 +226,10 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular RichTextEditor deli
 #SyncfusionAngularAssistant Create a RichTextEditor with toolbar options for formatting, links, and undo/redo.
 {% endpromptcard %}
 {% promptcard Iframe and Forms Support %}
-#SyncfusionAngularAssistant Use RichTextEditor in iframe mode and bind it to a form for submission.
+#SyncfusionAngularAssistant Use the RichTextEditor in iframe mode and bind it to a form for submission.
 {% endpromptcard %}
 {% promptcard Undo/Redo and Export %}
-#SyncfusionAngularAssistant Enable undo/redo and export content to HTML in RichTextEditor.
+#SyncfusionAngularAssistant Enable undo/redo and export content to HTML in the RichTextEditor.
 {% endpromptcard %}
 {% promptcard Module Injection and Link Editing %}
 #SyncfusionAngularAssistant Inject toolbar and link modules to enable rich link editing in the editor.
@@ -240,7 +238,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular RichTextEditor deli
 
 ### Calendar
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Calendar offers flexible date selection, range picking, multi-date support, globalization, and custom cell rendering.
+The Syncfusion Angular Calendar supports flexible date selection, localization, and custom rendering.
 
 {% promptcards %}
 {% promptcard Date Range Selection %}
@@ -268,7 +266,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Calendar offers fle
 #SyncfusionAngularAssistant Highlight weekends in the Calendar with a different background color.
 {% endpromptcard %}
 {% promptcard Globalization and Islamic Calendar %}
-#SyncfusionAngularAssistant Configure the Calendar for Arabic culture using Islamic calendar and localization.
+#SyncfusionAngularAssistant Configure the Calendar for Arabic culture using the Islamic calendar and localization.
 {% endpromptcard %}
 {% promptcard Multi-Selection and Range %}
 #SyncfusionAngularAssistant Enable both multi-date selection and range selection in the Calendar.
@@ -283,6 +281,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Calendar offers fle
 
 ## See Also
 
-- [AI Coding Assistant Overview](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
-- [SyncfusionAngularAssistant MCP Server](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/mcp-server)
-- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation Home](https://ej2.syncfusion.com/angular/documentation)
+- [AI Coding Assistant - Getting Started](./getting-started)
+- [Agentic UI Builder - Getting Started](../agentic-ui-builder/getting-started)
+- [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
