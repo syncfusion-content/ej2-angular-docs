@@ -49,7 +49,7 @@ Start the development server by running the below command:
 ```bash 
 npm run dev
 ```
-Now the project has been successfully launched, and the application is available at `http://localhost:3000`.
+Now the project has been successfully launched, and the application is available at **http://localhost:3000**.
 
 ## Configuring Next.js server
 
@@ -101,7 +101,7 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-> Browsers enforce the same-origin policy, which blocks scripts from one origin (for example, the Angular application running at `http://localhost:4200`) from accessing resources on a different origin (such as a Next.js server at `http://localhost:3000`) unless the server explicitly allows it. By enabling the appropriate **CORS headers** on the Next.js backend, the Angular client can safely make API requests, perform CRUD operations, and communicate seamlessly across different ports or origins.
+> Browsers enforce the same-origin policy, which blocks scripts from one origin (for example, the Angular application running at **http://localhost:4200**) from accessing resources on a different origin (such as a Next.js server at **http://localhost:3000**) unless the server explicitly allows it. By enabling the appropriate **CORS headers** on the Next.js backend, the Angular client can safely make API requests, perform CRUD operations, and communicate seamlessly across different ports or origins.
 
 ## Connecting Syncfusion Angular Grid with Next.js
 
@@ -841,7 +841,7 @@ cd next_js_server
 npm run dev
 ```
 
-The server is now running at `http://localhost:3000`.
+The server is now running at **http://localhost:3000**.
 
 Execute the below commands to run the client application:
 
@@ -850,11 +850,11 @@ cd angular_client
 ng serve
 ```
 
-Open `http://localhost:4200` in the browser.
+Open **http://localhost:4200** in the browser.
 
 ## Complete sample repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding_Next_JS_Server)
+A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding_Next_JS_Server) repository.
   
 The application now provides a complete solution for integrating the Syncfusion Angular Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
 

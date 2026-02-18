@@ -1,57 +1,51 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { closest } from '@syncfusion/ej2-base';
 import { CardSettingsModel, DragEventArgs, KanbanComponent } from '@syncfusion/ej2-angular-kanban';
 import { kanbanAData, kanbanBData } from './datasource';
 @Component({
-imports: [
-        
-        KanbanModule
+    imports: [
+      KanbanModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-        <h4>Kanban A</h4>
-        <ejs-kanban id='KanbanA' #KanbanA keyField='Status' [dataSource]='dataA' [externalDropId]='externalKanbanADropId'
-          [cardSettings]='cardSettings' (dragStop)='onKanbanADragStop($event)'>
-          <e-columns>
-            <e-column headerText='To do' keyField='Open'></e-column>
-            <e-column headerText='Done' keyField='Close'></e-column>
-          </e-columns>
-        </ejs-kanban>
-      </div>
-        <div class="col-sm-6">
-        <h4>Kanban B</h4>
-        <ejs-kanban id='KanbanB' #KanbanB keyField='Status' [dataSource]='dataB' [externalDropId]='externalKanbanBDropId'
-          [cardSettings]='cardSettings' (dragStop)='onKanbanBDragStop($event)'>
-          <e-columns>
-            <e-column headerText='To do' keyField='Open'></e-column>
-            <e-column headerText='Done' keyField='Close'></e-column>
-          </e-columns>
-        </ejs-kanban>
-      </div>
-      </div>
-    </div>`
+    standalone: true,
+    selector: 'app-root',
+    template: `<div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+          <h4>Kanban A</h4>
+          <ejs-kanban id='KanbanA' #KanbanA keyField='Status' [dataSource]='dataA' [externalDropId]='externalKanbanADropId'
+            [cardSettings]='cardSettings' (dragStop)='onKanbanADragStop($event)'>
+            <e-columns>
+              <e-column headerText='To do' keyField='Open'></e-column>
+              <e-column headerText='Done' keyField='Close'></e-column>
+            </e-columns>
+          </ejs-kanban>
+        </div>
+          <div class="col-sm-6">
+          <h4>Kanban B</h4>
+          <ejs-kanban id='KanbanB' #KanbanB keyField='Status' [dataSource]='dataB' [externalDropId]='externalKanbanBDropId'
+            [cardSettings]='cardSettings' (dragStop)='onKanbanBDragStop($event)'>
+            <e-columns>
+              <e-column headerText='To do' keyField='Open'></e-column>
+              <e-column headerText='Done' keyField='Close'></e-column>
+            </e-columns>
+          </ejs-kanban>
+        </div>
+        </div>
+      </div>`
 })
 export class AppComponent {
-  @ViewChild('KanbanA')
+    @ViewChild('KanbanA')
     public kanbanObjA?: KanbanComponent;
     @ViewChild('KanbanB')
     public kanbanObjB?: KanbanComponent;
     public dataA: Object[] = kanbanAData;
     public dataB: Object[] = kanbanBData;
     public cardSettings: CardSettingsModel = {
-        contentField: 'Summary',
-        headerField: 'Id'
+      contentField: 'Summary',
+      headerField: 'Id'
     };
     public externalKanbanADropId: string[] = ["#KanbanB"];
     public externalKanbanBDropId: string[] = ["#KanbanA"];
@@ -61,7 +55,7 @@ export class AppComponent {
         (this.kanbanObjA as KanbanComponent).deleteCard(args.data);
         (this.kanbanObjB as KanbanComponent).addCard(args.data, args.dropIndex);
         args.cancel = true;
-    }
+      }
     };
     onKanbanBDragStop(args: DragEventArgs) {
       let kanbanAElement: Element = <Element>closest(args.event.target as Element, '#KanbanA');
@@ -69,9 +63,6 @@ export class AppComponent {
         (this.kanbanObjB as KanbanComponent).deleteCard(args.data);
         (this.kanbanObjA as KanbanComponent).addCard(args.data, args.dropIndex);
         args.cancel = true;
-    }
+      }
     };
 }
-
-
-

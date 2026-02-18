@@ -1,39 +1,33 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { CardSettingsModel, KanbanComponent } from '@syncfusion/ej2-angular-kanban';
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        KanbanModule
+    imports: [
+      KanbanModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban #Kanban keyField='Status' [dataSource]='dataManager' [cardSettings]='cardSettings'  (actionFailure)="onActionFailure($event)">
-                <e-columns>
-                  <e-column headerText='To do' keyField='Open'></e-column>
-                  <e-column headerText='In Progress' keyField='InProgress'></e-column>
-                  <e-column headerText='Testing' keyField='Testing'></e-column>
-                  <e-column headerText='Done' keyField='Close'></e-column>
-                </e-columns>
-            </ejs-kanban>`
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban #Kanban keyField='Status' [dataSource]='dataManager' [cardSettings]='cardSettings'  (actionFailure)="onActionFailure($event)">
+                  <e-columns>
+                    <e-column headerText='To do' keyField='Open'></e-column>
+                    <e-column headerText='In Progress' keyField='InProgress'></e-column>
+                    <e-column headerText='Testing' keyField='Testing'></e-column>
+                    <e-column headerText='Done' keyField='Close'></e-column>
+                  </e-columns>
+              </ejs-kanban>`
 })
 export class AppComponent {
     @ViewChild('Kanban') public kanban?: KanbanComponent;
     public cardSettings: CardSettingsModel = {
-        contentField: 'Summary',
-        headerField: 'Id'
+      contentField: 'Summary',
+      headerField: 'Id'
     };
     public dataManager: DataManager = new DataManager({
-       url: 'http://some.com/invalidUrl'
+      url: 'http://some.com/invalidUrl'
     });
     onActionFailure(e: Error): void {
       let span: HTMLElement = document.createElement('span');

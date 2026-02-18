@@ -117,7 +117,7 @@ if __name__ == "__main__":
     app.run(host="localhost", port=5000, debug=True)
 ```
 
-The Flask server will start on `http://localhost:5000`.
+The Flask server will start on **http://localhost:5000**.
 
 ### Step 3: Create sample data file
 
@@ -412,7 +412,7 @@ To run the Flask application, execute the following command in the **server** di
 python app.py
 ```
 
-The server will start on `http://localhost:5000` and the tasks endpoint is `http://localhost:5000/tasks`.
+The server will start on **http://localhost:5000** and the tasks endpoint is **http://localhost:5000/tasks**.
 
 ## Connecting Syncfusion Angular Grid with Flask API
 
@@ -984,7 +984,7 @@ cd angular-grid-flask-api/server
 python app.py
 ```
 
-The server will start on `http://localhost:5000` and the tasks endpoint is `http://localhost:5000/tasks`.
+The server will start on **http://localhost:5000** and the tasks endpoint is **http://localhost:5000/tasks**.
 
 ### Step 2: Start the Angular frontend application
 
@@ -995,9 +995,9 @@ cd angular-grid-flask-api/client
 ng serve
 ```
 
-The Angular application will start on `http://localhost:4200`.
+The Angular application will start on **http://localhost:4200**.
 
-The complete folder structure looks like below:
+**The complete folder structure looks like below:**
 
 ```
 angular-grid-flask-api/

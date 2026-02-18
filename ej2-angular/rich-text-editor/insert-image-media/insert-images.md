@@ -48,30 +48,17 @@ The images can be saved as `Blob` or `Base64` URL by using the [insertImageSetti
 
 The code snippet below illustrates the configuration of the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettingsModel#saveformat) property in the Rich Text Editor.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/image-cs2/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, ImageSettingsModel, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
-@Component({
-    imports: [
-        RichTextEditorModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor [toolbarSettings]='tools' [insertImageSettings]='imageSettingsModel' [(value)]='value'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
-})
-export class AppComponent {
-    public value: string = "<p>The Rich Text Editor component is a WYSIWYG (\"what you see is what you get\") editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p> <p><b>Key features:</b></p> <ul><li>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes</li><li>Capable of handling markdown editing.</li><li>Contains a modular library to load the necessary functionality on demand.</li><li>Provides a fully customizable toolbar.</li><li>Provides HTML view to edit the source directly for developers.</li><li>Supports third-party library integration.</li><li>Allows preview of modified content before saving it.</li><li>Handles images, hyperlinks, videos, uploads, etc.</li><li>Contains undo/redo manager.</li><li>Creates bulleted and numbered lists.</li></ul>";
-    public tools: ToolbarSettingsModel = {
-        items: ['Image']
-    };
-    public imageSettingsModel: ImageSettingsModel = {
-        saveFormat: 'Base64'
-    }
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/image-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/image-cs2" %}
 
 ## Inserting images from web URLs
 
@@ -184,7 +171,7 @@ public class HomeController : Controller
                         string filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
                         filename = hostingEnv.WebRootPath + "\\Uploads" + $@"\{filename}";
 
-                        // Create a new directory, if it does not exists
+                        // Create a new directory, if it does not exist
                         if (!Directory.Exists(hostingEnv.WebRootPath + "\\Uploads"))
                         {
                             Directory.CreateDirectory(hostingEnv.WebRootPath + "\\Uploads");
@@ -251,7 +238,7 @@ export class AppComponent {
     path: "[SERVICE_HOSTED_PATH]/Files/"
   };
   public onImageUpload = (args: UploadingEventArgs) => {
-   args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
+    args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
   };
 }
 
@@ -384,7 +371,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 
 ## Hyperlinking images
 
-Images can serve as hyperlinks. The quick toolbar provides options to edit, remove, or open the link. For further details about link, see the [link documentation](../link) documentation.
+Images can serve as hyperlinks. The quick toolbar provides options to edit, remove, or open the link. For further details about link, see the [link](../link) documentation.
 
 ![Rich Text Editor image with link](../images/image-link.png)
 

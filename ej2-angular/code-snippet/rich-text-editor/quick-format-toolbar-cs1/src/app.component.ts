@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, RichTextEditorComponent, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService, RichTextEditorComponent, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [
@@ -7,8 +7,8 @@ import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEd
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor #imageEditor id='imageEditor' [quickToolbarSettings]='quickToolbarSettings' (quickToolbarSettingsChange)=' quickToolbarSettingsChange' [(value)]='value'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    template: `<ejs-richtexteditor #imageEditor id='imageEditor' [quickToolbarSettings]='quickToolbarSettings' [(value)]='value'></ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 
 export class AppComponent {
@@ -17,5 +17,4 @@ export class AppComponent {
     public quickToolbarSettings: QuickToolbarSettingsModel = {
         text: ['Bold', 'Italic', 'Underline', 'FontColor', 'BackgroundColor', 'Alignments', '|', 'FontSize', 'FontName', 'Formats', 'OrderedList', 'UnorderedList', 'FormatPainter']
     };
-    public quickToolbarSettingsChange: QuickToolbarSettingsModel = {}
 }

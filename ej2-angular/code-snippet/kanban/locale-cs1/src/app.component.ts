@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
-
-
-
 import { Component } from '@angular/core';
 import { L10n } from '@syncfusion/ej2-base';
 import { CardSettingsModel, SwimlaneSettingsModel } from '@syncfusion/ej2-angular-kanban';
@@ -31,15 +28,12 @@ L10n.load({
     }
 });
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings' locale='de' [swimlaneSettings]='swimlaneSettings'>
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings' locale='de' [swimlaneSettings]='swimlaneSettings'>
                 <e-columns>
                   <e-column headerText='To do' keyField='Open' minCount='6'></e-column>
                   <e-column headerText='In Progress' keyField='InProgress' maxCount='3'></e-column>

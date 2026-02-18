@@ -1030,7 +1030,7 @@ cd server
 uvicorn main:app --reload --port 8000
 ```
 
-The server is now running at http://localhost:8000/.
+The server is now running at **http://localhost:8000/**.
 
 
 Execute the below commands to run the client application:
@@ -1040,7 +1040,7 @@ cd client
 ng serve
 ```
 
-Open the URL shown in the terminal which is typically http://localhost:4200/.
+Open the URL shown in the terminal which is typically **http://localhost:4200/**.
 
 ## Complete Sample Repository
 

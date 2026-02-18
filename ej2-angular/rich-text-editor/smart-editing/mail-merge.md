@@ -132,50 +132,6 @@ export class AppComponent {
 
 When the **Merge Data** button is clicked, the editor content is processed to replace all placeholders with actual values from the `placeholderData` object. This is done using a regular expression in the `replacePlaceholders()` function.
 
-```typescript
-{% raw %}
-
-@Component({
-  imports: [
-    RichTextEditorAllModule, MentionModule
-  ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<button class="e-control e-lib e-btn e-formats-tbar-btn e-rte-elements e-tbar-btn" tabindex="-1"
-        id="merge_data" style="width:100%" (click)="onClickHandler()">
-        <span style="display:inline-flex"><span class="e-tbar-btn-text">Merge Data</span></span>
-    </button>`,
-  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
-})
-
-export class AppComponent {
-    onClickHandler(): void {
-        if (this.mailMergeEditor) {
-            let editorContent = this.mailMergeEditor.value;
-            let mergedContent = this.replacePlaceholders(editorContent, this.placeholderData);
-            if ((this.mailMergeEditor as any).formatter.getUndoRedoStack().length === 0) {
-                (this.mailMergeEditor as any).formatter.saveData();
-            }
-            this.mailMergeEditor.value = mergedContent;
-            this.mailMergeEditor.dataBind();
-            (this.mailMergeEditor as any).formatter.saveData();
-        } else {
-            console.log('MailMergeEditor is not initialized.');
-        }
-    }
-
-    replacePlaceholders(template: string, data: { [key: string]: string }): string {
-        return template.replace(/{{\s*(\w+)\s*}}/g, (match, key) => {
-            const value = data[key.trim()];
-            const result = value !== undefined ? value : match;
-            return result;
-        });
-    }
-
-}
-{% endraw %}
-```
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}

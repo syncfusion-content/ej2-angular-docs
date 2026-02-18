@@ -153,25 +153,18 @@ To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusi
 
 The [enableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
-```typescript
-import { Component, ViewChild } from '@angular/core';
-import { RichTextEditorComponent ToolbarService, LinkService, ImageService, HtmlEditorService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/editor-value-cs4/src/app.component.ts %}
+{% endhighlight %}
 
-@Component({
-  imports: [
-    RichTextEditorModule
-  ],
-  selector: 'app-root',
-  template: `<ejs-richtexteditor #Editor [enableHtmlEncode]="true" [value]="value"></ejs-richtexteditor>`,
-  styleUrls: ['./app.component.css'],
-  standalone: true,
-  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
-})
-export class AppComponent {
-  public value: string = "&lt;p&gt;Rich Text Editor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.&lt;/p&gt;&lt;p&gt;&lt;b&gt;API’s:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;maxLength - allows restricting the maximum length to be entered.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;readOnly - allows to change it as a non-editable state.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;enabled - enable or disable the RTE component.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;enableHtmlEncode - Get the encoded string value through value property and source code panel&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;getValue - get the value of RTE.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;getSelection - get the selected text of RTE.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;selectAll - select all content in RTE.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;";
-}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/editor-value-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/editor-value-cs4" %}
 
-```
 ## Styling editor content
 
 By default, the content styles of the Rich Text Editor are not included when retrieving the HTML value from the editor. This can result in the styles not being applied when using the HTML content outside of the editor. To ensure that the styles are correctly applied, you can copy and use the following styles directly in your application: These styles are used in the UI elements of the Rich Text Editor.

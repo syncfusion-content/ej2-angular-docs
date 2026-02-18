@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { KanbanComponent, CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
@@ -12,16 +9,13 @@ import { Query } from '@syncfusion/ej2-data';
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         KanbanModule,
         TextBoxModule
     ],
-
-
-standalone: true,
-  selector: 'app-root',
-  template: `<table>
+    standalone: true,
+    selector: 'app-root',
+    template: `<table>
                 <tbody>
                     <td style="width: 200px">
                     <ejs-textbox id="search" #search placeholder="Enter search text" [showClearButton]="true" (keyup)="searchClick($event)"></ejs-textbox>

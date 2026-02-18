@@ -14,10 +14,10 @@ import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, Au
     providers: [
         ToolbarService, QuickToolbarService, LinkService, AudioService, HtmlEditorService,
     ],
-} )
+})
 export class AppComponent {
     public toolbarSettings: object = {
-        items: [ 'Audio' ]
+        items: ['Audio']
     };
 
     public value: string = `<p>The Syncfudion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>

@@ -1,18 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { Chart3DAllModule} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { Chart3DAllModule } from '@syncfusion/ej2-angular-charts';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-         Chart3DAllModule
-    ],
-
-providers: [Chart3DAllModule]
-standalone: true,
+    imports: [Chart3DAllModule],
+    standalone: true,
     selector: 'app-container',
     // specifies the template string for the Chart component
     template: `<ejs-chart3d style='display:block;' align='center' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
@@ -48,5 +39,3 @@ export class AppComponent {
         this.title = 'Top Selling Electric Cars in China';
     }
 }
-
-

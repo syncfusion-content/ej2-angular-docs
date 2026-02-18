@@ -1,25 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { SmithchartModule, TooltipRenderService, SmithchartLegendService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component } from '@angular/core';
+import { SmithchartModule, TooltipRenderService, SmithchartLegendService } from '@syncfusion/ej2-angular-charts';
 import { TitleModel } from '@syncfusion/ej2-charts';
 
 @Component({
-imports: [
-         SmithchartModule
-    ],
-
-providers: [TooltipRenderService, SmithchartLegendService],
-standalone: true,
+    imports: [SmithchartModule],
+    providers: [TooltipRenderService, SmithchartLegendService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-smithchart style='display: block;' id='container' [title]='title' height='350px'>
-    <e-seriesCollection>
-        <e-series [dataSource]='seriesdata1' name='Transmission1' reactance='reactance' resistance='resistance'> </e-series>
-        <e-series [points]='seriespoints' name='Transmission2'> </e-series>
-    </e-seriesCollection>
+        <e-seriesCollection>
+            <e-series [dataSource]='seriesdata1' name='Transmission1' reactance='reactance' resistance='resistance'></e-series>
+            <e-series [points]='seriespoints' name='Transmission2'></e-series>
+        </e-seriesCollection>
     </ejs-smithchart>`
 })
 export class AppComponent {

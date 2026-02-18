@@ -7,14 +7,13 @@ import { CardSettingsModel, ColumnsModel } from '@syncfusion/ej2-angular-kanban'
 import { kanbanData } from './datasource';
 
 @Component({
-imports: [
+    imports: [
         CommonModule
         KanbanModule
     ],
-
-standalone: true,
-  selector: 'app-root',
-  template: `<ejs-kanban keyField='Status' cssClass='kanban-header-template' [dataSource]='data' [cardSettings]='cardSettings'>
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-kanban keyField='Status' cssClass='kanban-header-template' [dataSource]='data' [cardSettings]='cardSettings'>
                 <e-columns>
                     <e-column *ngFor="let column of columns;" headerText={{column.headerText}} keyField='{{column.keyField}}'>
                         <ng-template #template let-data>

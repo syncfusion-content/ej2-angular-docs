@@ -138,7 +138,7 @@ The table quicktoolbar provides options for table editing within the Rich Text E
 | RemoveTable | ![RemoveTable icon](../images/table-remove.png) | Removes the selected table and its contents. | quickToolbarSettings: { table: ['TableRemove']} |
 | TableHeader | ![TableHeader icon](../images/table-headers.png) | Allows you to add a table header. | quickToolbarSettings: { table: ['TableHeader']} |
 | TableColumns | ![TableColumns icon](../images/table-columns.png) | Shows the dropdown to insert a column or delete the selected column. | quickToolbarSettings: { table: ['TableColumns']} |
-| TableRows | ![TableRows icon](../images/table-row.png) | Shows the dropdown to insert a row ors delete the selected row. | quickToolbarSettings: { table: ['TableRows']} |
+| TableRows | ![TableRows icon](../images/table-row.png) | Shows the dropdown to insert a row or delete the selected row. | quickToolbarSettings: { table: ['TableRows']} |
 | TableCellHorizontalAlign | ![TableCellHorizontalAlign icon](../images/alignments.png) | Allows the table cell content to be aligned horizontally. | quickToolbarSettings: { table: ['TableCellHorizontalAlign']} |
 | TableCellVerticalAlign | ![TableCellVerticalAlign icon](../images/vertical-align.png) | Allows the table cell content to be aligned vertically. | quickToolbarSettings: { table: ['TableCellVerticalAlign']} |
 | TableEditProperties | ![TableEditProperties icon](../images/table-edit.png) | Allows you to change the table width, padding, and cell spacing styles. | quickToolbarSettings: { table: ['TableEditProperties']} |
@@ -179,28 +179,14 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 Customize the toolbar by specifying desired items in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items), removing unwanted tools. Below is an example of a tailored toolbar:
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/built-in-toolbar/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component, AfterViewInit } from '@angular/core';
-import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/built-in-toolbar/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-@Component({
-    imports: [RichTextEditorModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [value]='value'>
-  </ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService,  TableService]
-})
-export class AppComponent implements AfterViewInit {
-
-    public value: string = "<p>The Rich Text Editor component is WYSIWYG (\"what you see is what you get\") editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p><p><b>Key features:</b></p><ul><li><p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes</p></li><li><p>Capable of handling markdown editing.</p></li><li><p>Contains a modular library to load the necessary functionality on demand.</p></li><li><p>Provides a fully customizable toolbar.</p></li><li><p>Provides HTML view to edit the source directly for developers.</p></li><li><p>Supports third-party library integration.</p></li><li><p>Allows preview of modified content before saving it.</p></li><li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li><li><p>Contains undo/redo manager.</p></li><li><p>Creates bulleted and numbered lists.</p></li></ul>";
-
-    public tools: object = {
-        items: ['Undo', 'Redo', '|', 'Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName', 'FontSize', 'FontColor', 'BackgroundColor'
-        ],
-    };
-}
-
-```
+{% previewsample "page.domainurl/samples/rich-text-editor/built-in-toolbar" %}
