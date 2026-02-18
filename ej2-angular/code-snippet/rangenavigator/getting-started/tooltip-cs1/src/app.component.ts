@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartModule, RangeNavigatorModule, AreaSeriesService, DateTimeService, RangeTooltipService } from '@syncfusion/ej2-angular-charts';
-import { datasrc } from './datasource';
+import { datasrc } from './data';
 
 @Component({
     imports: [ChartModule, RangeNavigatorModule],

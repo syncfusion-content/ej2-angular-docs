@@ -1,20 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
+import { SparklineModule, SparklineTooltipService, SparklineTooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 import { Component } from '@angular/core';
-import { SparklineTooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-imports: [
-         SparklineModule
-    ],
-
-providers: [SparklineTooltipService],
-standalone: true,
+    imports: [SparklineModule],
+    providers: [SparklineTooltipService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="xval" yName="yval" type="Area"
     [tooltipSettings]="tooltipSettings">
@@ -31,13 +21,10 @@ export class AppComponent {
         { xval: 7, yval: 21766710 },
         { xval: 8, yval: 22015580 },
         { xval: 9, yval: 22262500 },
-        { xval: 10, yval: 22507620 },
+        { xval: 10, yval: 22507620 }
     ];
     public tooltipSettings: SparklineTooltipSettingsModel = {
         visible: true,
         format: '${xval} : ${yval}'
     };
 }
-
-
-
