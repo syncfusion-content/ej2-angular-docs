@@ -14,7 +14,7 @@ The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** is 
 
 ## Installation
 
-Follow the [Installation Guide](../installation) to set up the AI Tools in your development environment.
+Follow the [Installation Guide](../installation) to set up the MCP Tools in your development environment.
 
 ## Usage
 
@@ -23,8 +23,6 @@ Activate the AI Coding Assistant in your IDE by using the `#sf_angular_assistant
 ```
 #sf_angular_assistant How do I enable paging and sorting in the Syncfusion Angular Grid?
 ```
-
-> The `#sf_angular_assistant` command serves as a handle that invokes the `sf_angular_component` tool, which retrieves component-specific documentation, API references, and implementation examples from the Syncfusion Angular library. This intelligent routing ensures that your queries are processed with the most relevant context and technical specifications for accurate code generation and guidance.
 
 ### Common Use Cases
 
@@ -52,8 +50,3 @@ Now that you've set up the AI Coding Assistant, explore these resources:
 - **[Prompt Library](./prompt-library)** - Ready-to-use prompts for common scenarios
 - **[Component Examples](https://ej2.syncfusion.com/angular/demos/#/grid/overview)** - Interactive demos of Syncfusion Angular components
 - **[API Documentation](https://ej2.syncfusion.com/angular/documentation/api)** - Complete API reference
-
-## See also
-
-- [Prompt Library](./prompt-library)
-- [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)

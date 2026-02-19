@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Speed up Angular development using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 
-## How to Use
+## How to use
 
 Before starting, make sure your MCP server is set up and running.
 
@@ -22,7 +22,7 @@ Before starting, make sure your MCP server is set up and running.
 * Execute the prompt via the MCP server.
 * Always review and test the generated code before adding it to your project.
 
-## Component-Specific Prompts
+## Component-specific Prompts
 
 ### Grid
 
@@ -283,4 +283,3 @@ The Syncfusion Angular Calendar supports flexible date selection, localization, 
 
 - [AI Coding Assistant - Getting Started](./getting-started)
 - [Agentic UI Builder - Getting Started](../agentic-ui-builder/getting-started)
-- [Syncfusion Angular Documentation](https://ej2.syncfusion.com/angular/documentation)

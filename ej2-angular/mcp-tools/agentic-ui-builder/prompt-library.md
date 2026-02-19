@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Prompt Library - Agentic UI Builder
 
-The Syncfusion Angular Agentic UI Builder Prompt Library provides professionally crafted prompts to streamline your Angular application development. These prompts leverage the power of AI to generate complete applications, individual components, custom styling, and more — all optimized for Syncfusion's comprehensive Angular component suite.
+Speed up Angular development with ready-made prompts for common scenarios. Use them to generate complete applications, components, layouts, and custom styling.
 
 ## How to Use
 
@@ -53,7 +53,7 @@ This section provides targeted prompt examples for directly invoking individual 
 
 ### Layout Tool
 
-The Layout Tool orchestrates page structure, element positioning, and responsive behavior. Use `#sf_angular_layout` when working with spatial arrangement and viewport adaptation.
+The Layout tool orchestrates page structure, element positioning, and responsive behavior. Use `#sf_angular_layout` when working with spatial arrangement and viewport adaptation.
 
 {% promptcards %}
 {% promptcard Book Library Statistics Panel %}
@@ -72,7 +72,7 @@ The Layout Tool orchestrates page structure, element positioning, and responsive
 
 ### Component Tool
 
-The Component Tool implements specific Syncfusion Angular components with configured properties and event handlers. Use `#sf_angular_component` for targeted component integration.
+The Component tool implements specific Syncfusion Angular components with configured properties and event handlers. Use `#sf_angular_component` for targeted component integration.
 
 {% promptcards %}
 {% promptcard Advanced Data Grid Setup %}
@@ -91,7 +91,7 @@ The Component Tool implements specific Syncfusion Angular components with config
 
 ### Styling Tool
 
-The Styling Tool applies custom themes, color schemes, visual treatments, and iconography across your application. Use `#sf_angular_style` for branding and aesthetic customization, and icon integration.
+The Styling tool applies custom themes, color schemes, visual treatments, and iconography across your application. Use `#sf_angular_style` for branding and aesthetic customization, and icon integration.
 
 {% promptcards %}
 {% promptcard Tailwind3 Dark Mode Setup %}
@@ -121,4 +121,3 @@ The Styling Tool applies custom themes, color schemes, visual treatments, and ic
 
 * [Agentic UI Builder - Getting Started](./getting-started)
 * [AI Coding Assistant - Getting Started](../ai-coding-assistant/getting-started)
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)
