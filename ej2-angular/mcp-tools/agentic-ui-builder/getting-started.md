@@ -28,7 +28,7 @@ Once installed, open your AI assistant in the IDE and describe what you want to 
 
 The UI Builder generates complete implementations including layout, components, and styling.
 
-**Note:** Using the `#sf_angular_ui_builder` handle ensures the Agentic UI Builder is invoked directly. Alternatively, you can use natural language without the handle—just make sure to include the "Syncfusion" keyword in your prompt so the AI model can automatically recognize and call the appropriate generator.
+> Note: Using the `#sf_angular_ui_builder` handle ensures the Agentic UI Builder is invoked directly. Alternatively, you can use natural language without the handle—just make sure to include the "Syncfusion" keyword in your prompt so the AI model can automatically recognize and call the appropriate generator.
 
 ## Individual Tools
 
@@ -40,7 +40,13 @@ For targeted assistance, you can call individual tools directly using their spec
 | `#sf_angular_component` | Answers questions and provides metadata about Syncfusion Angular components. Delivers component APIs, inputs, methods, and configuration options. Use this tool when you need to implement or configure specific components like DataGrid, Scheduler, Charts, etc. | #sf_angular_component How do I implement data binding with Syncfusion Angular Scheduler? |
 | `#sf_angular_style` | Generates theme configurations, icons and styling guidance for your application. Provides Syncfusion theme customization using third-party CSS frameworks: Tailwind CSS utilities (Tailwind 3, Fluent 2, Material 3 themes) or Bootstrap CSS utilities (Bootstrap 5.3 theme). Use this tool when you need to apply themes, customize colors, or modify the visual design of components, or integrate icons into your UI. | #sf_angular_style How do I apply the Syncfusion Tailwind 3 dark theme and add a communication icon inside a button? |
 
-**Note:** When building custom design projects where you need full control over the structure, you can bypass the Layout Tool by including "skip the layout" in your query. This generates only component implementations without pre-built layout patterns.
+## Custom Design
+
+When writing your query, simply add `skip the layout` to take full control over your custom design in your project. Adding this instruction tells the AI to bypass the Layout Tool and avoid using any pre‑built layout patterns. As a result, the system produces only Syncfusion component implementations, allowing you complete freedom to design and structure the page exactly the way you want.
+
+```
+#sf_angular_ui_builder Create a dashboard with a sales data grid and monthly trend chart.
+```
 
 ## Best Practices
 
@@ -64,7 +70,7 @@ Now that you've set up the Agentic UI Builder, explore these resources:
 * **[Showcase Sample Projects](https://www.syncfusion.com/showcase-apps)** - Full application examples
 * **[Component Examples](https://ej2.syncfusion.com/angular/demos/#/grid/overview)** - Interactive demos of Syncfusion Angular components
 
-## See Also
+## See also
 
 * [Prompt Library](./prompt-library)
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)

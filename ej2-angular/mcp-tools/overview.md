@@ -30,13 +30,13 @@ Syncfusion AI Tools are delivered as an npm-based Model Context Protocol (MCP) s
 **Agentic UI Builder** (`#sf_angular_ui_builder`)  
 Build complete Angular UIs with coordinated tools for layout, components, styling, and icons. Ideal for creating pages, dashboards, and complex sections from scratch.
 
-**AI Coding Assistant** (`#SyncfusionAngularAssistant`)  
+**AI Coding Assistant** (`#sf_angular_assistant`)  
 Implement individual Angular components with focused API guidance, usage examples, and integration tips. Best for adding features to existing Angular projects and troubleshooting.
 
 ## Getting Started
 
 1. **Install** the MCP server package in your AI-powered IDE.
-2. **Choose your mode** — `#sf_angular_ui_builder` for full-page UIs or `#SyncfusionAngularAssistant` for component-specific help.
+2. **Choose your mode** — `#sf_angular_ui_builder` for full-page UIs or `#sf_angular_assistant` for component-specific help.
 3. **Describe** what you want to build — the AI generates Angular production-ready code, including module imports, templates, and styles that follow best practices.
 
 For detailed setup instructions, see the [Installation Guide](installation.md).
@@ -78,7 +78,7 @@ The Syncfusion AI Tools are designed with privacy considerations:
 
 The MCP server acts purely as a knowledge bridge, connecting your AI model with Syncfusion Angular expertise while respecting your privacy and maintaining security.
 
-## See Also
+## See also
 
 - [Installation](./installation)
 - [Agentic UI Builder - Getting Started](./agentic-ui-builder/getting-started)

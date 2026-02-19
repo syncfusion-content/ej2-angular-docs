@@ -117,7 +117,7 @@ The Styling Tool applies custom themes, color schemes, visual treatments, and ic
 {% endpromptcard %}
 {% endpromptcards %}
 
-## See Also
+## See also
 
 * [Agentic UI Builder - Getting Started](./getting-started)
 * [AI Coding Assistant - Getting Started](../ai-coding-assistant/getting-started)

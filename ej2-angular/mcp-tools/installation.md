@@ -91,12 +91,9 @@ The following sections provide detailed setup instructions for popular developme
 ### Global Configuration
 
 To make the Syncfusion MCP server available across all workspaces:
-
-<a target="_blank" href="https://insiders.vscode.dev/redirect/mcp/install?name=sf-angular-mcp&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40syncfusion%2Fangular-assistant%40latest%22%5D%2C%22env%22%3A%7B%22Syncfusion_API_Key%22%3A%22YOUR_API_KEY%22%7D%7D" style="display: inline-block; padding: 8px 16px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; margin-bottom: 10px;">VS Code</a>
-<br/>
-<a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL2FuZ3VsYXItYXNzaXN0YW50QGxhdGVzdCJdLCJlbnYiOnsic3luY2Z1c2lvbl9BcGlfS2V5IjoiWU9VUl9BUElfS0VZIn19" style="display: inline-block; padding: 8px 16px; background-color: #0078d4; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; margin-bottom: 10px;">Cursor</a>
-
-- In [Code Studio](https://www.syncfusion.com/code-studio/), open the MCP Marketplace, find `Angular UI Builder`, and click Install.  
+- For VS Code, click <a target="_blank" href="https://insiders.vscode.dev/redirect/mcp/install?name=sf-angular-mcp&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40syncfusion%2Fangular-assistant%40latest%22%5D%2C%22env%22%3A%7B%22Syncfusion_API_Key%22%3A%22YOUR_API_KEY%22%7D%7D">here</a>.
+- For Cursor, click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL2FuZ3VsYXItYXNzaXN0YW50QGxhdGVzdCJdLCJlbnYiOnsic3luY2Z1c2lvbl9BcGlfS2V5IjoiWU9VUl9BUElfS0VZIn19">here</a>.
+- In [Code Studio](https://www.syncfusion.com/code-studio/), open the MCP Marketplace, find `Syncfusion Angular Assistant`, and click Install.  
 - When prompted, provide your [Syncfusion API key](https://syncfusion.com/account/api-key) to register the MCP.  
 - The server installs locally and is available in the Installed list—it is then ready to use. See [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/marketplace) for details.
 
@@ -109,7 +106,7 @@ To install the server for a specific project, create a configuration file in you
 {% tabs %}
 {% highlight bash tabtitle="VS Code" %}
 
-Create a `.vscode/mcp.json` file in your workspace with the MCP server configuration:
+// Create a `.vscode/mcp.json` file in your workspace with the MCP server configuration:
 
 {
   "servers": {
@@ -129,7 +126,7 @@ Create a `.vscode/mcp.json` file in your workspace with the MCP server configura
 {% endhighlight %}
 {% highlight bash tabtitle="Cursor" %}
 
-Create a `.cursor/mcp.json` file in your workspace with the MCP server configuration:
+// Create a `.cursor/mcp.json` file in your workspace with the MCP server configuration:
 
 {
   "mcpServers": {
@@ -148,8 +145,8 @@ Create a `.cursor/mcp.json` file in your workspace with the MCP server configura
 {% endhighlight %}
 {% highlight bash tabtitle="JetBrains IDEs" %}
 
-1. Go to Settings → Tools → AI Assistant → Model Context Protocol (MCP)
-2. Add a new MCP server and paste the JSON configuration (use `npx` command on Windows with `npx.cmd` if required)
+// Go to Settings → Tools → AI Assistant → Model Context Protocol (MCP)
+// Add a new MCP server and paste the JSON configuration (use `npx` command on Windows with `npx.cmd` if required)
 
 {
   "mcpServers": {
@@ -189,7 +186,7 @@ If you encounter issues during installation or while using the MCP server, refer
 | **Server failed to start** | Update to Node.js 18+, verify JSON syntax in config file, and restart your IDE |
 | **Invalid API key** | Verify your key is active at [Syncfusion Account Page](https://syncfusion.com/account/api-key) |
 | **Incorrect API key config** | For the file path: Verify file location and content. For inline key: Check key is properly updated |
-| **Wrong config file location** | VS Code: `.vscode/mcp.json` • CodeStudio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root |
+| **Wrong config file location** | VS Code: `.vscode/mcp.json` <br/> CodeStudio: `.codestudio/mcp.json` <br/>Cursor: `.cursor/mcp.json` in the workspace root |
 | **Check IDE logs** | VS Code/CodeStudio: Output panel → "MCP" • Cursor: Developer Console for MCP errors |
 
 ## Support
@@ -201,7 +198,7 @@ Product support is available through the following media.
 - [Request feature or report bug](https://www.syncfusion.com/feedback/javascript)
 - Live chat
 
-## See Also
+## See also
 
 - [AI Tools Overview](./overview)
 - [Agentic UI Builder - Getting Started](./agentic-ui-builder/getting-started)
