@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule} from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService} from '@syncfusion/ej2-angular-charts'
-
-
-
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
     [legendSettings]='legendSettings' [tooltip]='tooltip' [title]='title'>
@@ -51,7 +42,7 @@ export class AppComponent implements OnInit {
             labelFormat: '${value}K'
         };
         this.marker = {
-            dataLabel:{
+            dataLabel: {
                 visible: true
             }
         };
@@ -60,8 +51,4 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Sales Analysis';
     }
-
 }
-
-
-

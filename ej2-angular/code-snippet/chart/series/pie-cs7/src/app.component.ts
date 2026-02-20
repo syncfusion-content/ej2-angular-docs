@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
-  AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
+import { PieSeriesService, AccumulationLegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-imports: [
-         AccumulationChartModule
-    ],
-
-providers: [PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,
-     AccumulationAnnotationService],
-standalone: true,
+    imports: [AccumulationChartModule],
+    providers: [PieSeriesService, AccumulationLegendService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
@@ -28,18 +18,14 @@ export class AppComponent implements OnInit {
     public legendSettings?: Object;
     ngOnInit(): void {
         this.piedata = [
-                { x: 'Jan', y: 3, text: 'Jan: 3' }, { x: 'Feb', y: 3.5, text: 'Feb: 3.5' },
-                { x: 'Mar', y: 7, text: 'Mar: 7' }, { x: 'Apr', y: 13.5, text: 'Apr: 13.5' },
-                { x: 'May', y: 19, text: 'May: 19' }, { x: 'Jun', y: 23.5, text: 'Jun: 23.5' },
-                { x: 'Jul', y: 26, text: 'Jul: 26' }, { x: 'Aug', y: 25, text: 'Aug: 25' },
-                { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' },
-                { x: 'Nov', y: 9, text: 'Nov: 9' }, { x: 'Dec', y: 3.5, text: 'Dec: 3.5' }];
-
+            { x: 'Jan', y: 3, text: 'Jan: 3' }, { x: 'Feb', y: 3.5, text: 'Feb: 3.5' },
+            { x: 'Mar', y: 7, text: 'Mar: 7' }, { x: 'Apr', y: 13.5, text: 'Apr: 13.5' },
+            { x: 'May', y: 19, text: 'May: 19' }, { x: 'Jun', y: 23.5, text: 'Jun: 23.5' },
+            { x: 'Jul', y: 26, text: 'Jul: 26' }, { x: 'Aug', y: 25, text: 'Aug: 25' },
+            { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' },
+            { x: 'Nov', y: 9, text: 'Nov: 9' }, { x: 'Dec', y: 3.5, text: 'Dec: 3.5' }];
         this.legendSettings = {
             visible: false
         };
     }
-
 }
-
-

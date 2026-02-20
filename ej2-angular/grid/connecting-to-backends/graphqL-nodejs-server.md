@@ -1182,7 +1182,7 @@ Open a terminal or Command prompt. Run the server application first, then start 
   cd GraphQLServer
   npm start
 ```
-- The server is now running at http://localhost:4205/.
+- The server is now running at **http://localhost:4205/**.
 
 ### Run the client
 - Execute the below commands to run the client application:
@@ -1191,7 +1191,7 @@ Open a terminal or Command prompt. Run the server application first, then start 
   cd GridClient
   npm start
 ```
-- Open http://localhost:4200/ in the browser.
+- Open **http://localhost:4200/** in the browser.
  
 ## Complete Sample Repository
 
