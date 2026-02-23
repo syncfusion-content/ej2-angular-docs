@@ -1,6 +1,6 @@
 # Syncfusion Angular MCP Server Release Notes
 
-This document provides information about the changes and new features included in each version of to the [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) MCP server package.
+This document provides information about the changes and new features included in each version of the [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) MCP server package.
 
 ## (v2.0.0) – February 23, 2026
 
