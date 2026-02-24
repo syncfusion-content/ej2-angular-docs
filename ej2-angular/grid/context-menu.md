@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Context menu in Angular Grid component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Context Menu | Syncfusion
+description: Angular Grid context menu supports, adding custom actions, and managing events to enhance interactions for rows and cells.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Grid component
+# Context Menu in Angular Grid Component
 
-The Syncfusion Angular Grid component provides a context menu feature that appears on right-click within the grid. This feature enhances the experience by offering quick access to relevant actions and operations for the displayed data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component includes a context menu that appears on right-click anywhere within the grid. The context menu provides quick access to actions such as sorting, filtering, and editing without navigating away from the grid.
 
-Manage interactions with custom items using the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event. This property accepts either an array of predefined context menu item names or an array of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel) objects for custom items.
+Enable the context menu by configuring the grid's [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuitems) property. The property accepts the default set of menu items or a custom collection of objects.
 
 To use the context menu, inject the **ContextMenuService** in the provider section of **AppModule**.
 
@@ -24,13 +24,13 @@ import { ContextMenuService } from '@syncfusion/ej2-angular-grids';
 })
 ```
 
-## Context menu areas
+The context menu appears when right-clicking different areas of the grid, including:
 
-The context menu appears when right-clicking on different grid areas:
+- **Header**: the grid header section.
+- **Content**: the main grid content area.
+- **Pager**: the pager section.
 
-* **Header**: Right-click on column headers
-* **Content**: Right-click on data rows and cells  
-* **Pager**: Right-click on pagination controls
+Context menu items vary by the clicked area; header items differ from content or pager items.
 
 ## Default context menu items
 
@@ -73,7 +73,7 @@ The default context menu items available in the grid pager area are:
 | `LastPage`  | Navigate to the last page of the grid.     |
 | `NextPage`  | Navigate to the next page of the grid.     |
 
-The following example demonstrates how to enable the context menu feature in the grid:
+The following example demonstrates enabling the context menu feature in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,13 +88,11 @@ The following example demonstrates how to enable the context menu feature in the
 
 ## Custom context menu items
 
-The Syncfusion Angular Grid allows you to add custom context menu items to the default context menu. These customized options enable you to tailor the context menu to meet your application's specific requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports adding custom context menu items to the default menu.
 
-To add custom context menu items, configure the [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) property with an array of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel) objects. This allows you to define the appearance and behavior of additional context menu items.
+Custom items are defined by setting the `contextMenuItems` property to a collection of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenumodule) objects. Menu item actions are handled through the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuclick) event.
 
-Handle user interactions with custom items using the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event. This event provides access to the clicked menu item and enables you to execute specific actions when custom items are selected.
-
-The following example demonstrates how to add custom context menu items in the Grid component:
+The following example demonstrates adding custom context menu items in the Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,11 +109,11 @@ The following example demonstrates how to add custom context menu items in the G
 
 The Syncfusion Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
 
-This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event and the context menu's `beforeOpen` event.
+This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's `beforeOpen` event.
 
-Using the `onclick` event listener of the Grid, you can capture clicked position values through the `ngAfterViewInit` method. This method is suitable for DOM interactions and operations requiring access to rendered elements. The captured positions are then passed to the `open` method of the context menu within the `onclick` event. Additionally, the default right-click behavior is prevented using the `created` event of the Grid.
+Using the `onclick` event listener of the grid, you can capture clicked position values through the `ngAfterViewInit` method. This method is suitable for DOM interactions and operations requiring access to rendered elements. The captured positions are then passed to the `open` method of the context menu within the `onclick` event. Additionally, the default right-click behavior is prevented using the `created` event of the grid.
 
-The following example demonstrates how to show the context menu on left click using the `created` event:
+The following example demonstrates showing the context menu on left click using the `created` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,15 +126,13 @@ The following example demonstrates how to show the context menu on left click us
   
 {% previewsample "page.domainurl/samples/grid/context-menu-cs3" %}
 
-> You can hide or show an item in the context menu for specific areas inside the grid by defining the [target](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
+> Control the visibility of a context menu item for a particular grid area by setting the [target](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel#target) property.
 
 ## Enable or disable context menu items
 
-The Syncfusion Angular Grid enables dynamic enabling or disabling of both default and custom context menu items. This feature offers flexibility to control the behavior of context menu items based on specific conditions or interactions within the application.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports enabling or disabling default and custom context menu items via the context menu's [enableItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#enableitems) method. Call `enableItems` with `true` to enable items or `false` to disable them.
 
-This functionality is achieved using the [enableItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#enableitems) method of the context menu. Set the enable parameter to **true** to enable context menu items, or **false** to disable them. You can conditionally enable or disable context menu items using the `enableItems` method based on your specific requirements.
-
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable and disable context menu items using the `enableItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered, and the **Copy** item is updated accordingly.
+The example below uses the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component to toggle a menu item. When the switch changes state, the `change` event updates the `Copy` item by calling `enableItems`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -151,11 +147,9 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Show or hide context menu items
 
-The Syncfusion Angular Grid enables dynamic showing or hiding of both default and custom context menu items. This feature allows customization of context menu items based on various conditions or interactions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports showing or hiding default and custom context menu items using the context menu's [showItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#showitems) and [hideItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#hideitems) methods. Pass the target items as an argument to these methods.
 
-This functionality is achieved using the [showItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#showitems) and [hideItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#hideitems) methods of the context menu. Specify the item you want to show or hide as an argument to these methods.
-
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to show or hide context menu items using the `showItems` and `hideItems` methods. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered, and the **Edit** and **Delete** items are updated accordingly.
+The example below demonstrates the use of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component. Its `change` event triggers either `showItems` or `hideItems` to modify the `Edit Record` and `Delete Record` items accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting Real-Time Data to Angular Gantt Chart Using SignalR | Syncfusion
-description: Connect real-time data updates to the Syncfusion Angular Gantt Chart using ASP.NET Core SignalR. Enable instant synchronization of project tasks, progress, and changes across multiple users without page reloads.
+title: Angular Gantt Chart with Real-time Updates Using SignalR | Syncfusion
+description: Real-time Syncfusion Angular Gantt Chart updates with ASP.NET Core SignalR. Sync tasks, progress, and changes instantly across users without page reloads.
 platform: ej2-angular
 control: SignalR
 documentation: ug
@@ -407,5 +407,4 @@ dotnet run
 5. **WebSocket Support**: Verify WebSocket protocol is enabled on your hosting environment
 6. **Error Handling**: Implement comprehensive try-catch blocks and error logging
 7. **Proper Disposal**: Clean up connections in `ngOnDestroy()` to prevent memory leaks
-
 

@@ -8,7 +8,6 @@ import { MapsModule } from '@syncfusion/ej2-angular-maps'
 import { Component, OnInit } from '@angular/core';
 import { usa_map } from './usa';
 import { world_map } from './world-map';
-import { california } from './california';
 
 @Component({
 imports: [
