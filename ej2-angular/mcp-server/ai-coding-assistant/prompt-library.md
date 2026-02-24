@@ -17,7 +17,7 @@ Speed up Angular development using these ready-made prompts for popular Syncfusi
 Before starting, make sure your MCP server is set up and running.
 
 * Choose a prompt that fits your needs.
-* Copy the full prompt, including the `#sf_angular_assistant` / `#sf_angular_component` tool.
+* Copy the full prompt, including the `#sf_angular_assistant` tool.
 * Customize the prompt for your specific use case.
 * Execute the prompt via the MCP server.
 * Always review and test the generated code before adding it to your project.

@@ -92,8 +92,7 @@ The following sections provide detailed setup instructions for popular developme
 
 Configure the Syncfusion MCP Server globally to make it available across all workspaces in your IDE.
 
-{% tabs %}
-{% highlight bash tabtitle="VS Code" %}
+#### VS Code
 
 1. Click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL2FuZ3VsYXItYXNzaXN0YW50QGxhdGVzdCJdLCJlbnYiOnsic3luY2Z1c2lvbl9BcGlfS2V5IjoiWU9VUl9BUElfS0VZIn19">here</a> to open the installation link.
 2. Replace `YOUR_API_KEY` with your actual Syncfusion API key.
@@ -101,8 +100,7 @@ Configure the Syncfusion MCP Server globally to make it available across all wor
 
 For more information, see the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
 
-{% endhighlight %}
-{% highlight bash tabtitle="Cursor" %}
+#### Cursor
 
 1. Click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL3JlYWN0LWFzc2lzdGFudEBsYXRlc3QiXSwiZW52Ijp7IlN5bmNmdXNpb25fQVBJX0tleV9QYXRoIjoiWU9VUl9BUElfS0VZX0ZJTEVfUEFUSCJ9fQ==">here</a> to open the installation link.
 2. Update the `YOUR_API_KEY_FILE_PATH` with the path to your API key file.
@@ -110,8 +108,7 @@ For more information, see the [VS Code MCP documentation](https://code.visualstu
 
 For more information, see the [Cursor MCP documentation](https://cursor.com/docs/context/mcp).
 
-{% endhighlight %}
-{% highlight bash tabtitle="Code Studio" %}
+#### Code Studio
 
 1. Open the [MCP Marketplace](https://www.syncfusion.com/code-studio/) in Code Studio.
 2. Search for `Syncfusion Angular Assistant` and click **Install**.
@@ -119,9 +116,6 @@ For more information, see the [Cursor MCP documentation](https://cursor.com/docs
 4. The server installs and appears in the Installed list.
 
 For more information, see the [Code Studio MCP documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/marketplace).
-
-{% endhighlight %}
-{% endtabs %}
 
 ### Workspace Configuration
 
@@ -197,7 +191,7 @@ If you encounter issues during installation or while using the MCP server, refer
 
 Product support is available through the following media.
 
-- [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed response in 24 hours | Unlimited tickets | Holiday support
+- [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed response in 24 hours \| Unlimited tickets \| Holiday support
 - [Community forum](https://www.syncfusion.com/forums/essential-js2)
 - [Request feature or report bug](https://www.syncfusion.com/feedback/javascript)
 - [Live chat](https://www.syncfusion.com/support)
