@@ -88,8 +88,4 @@ Now that you've set up the Agentic UI Builder, explore these resources:
 * **[Prompt Library](./prompt-library)** - Ready-to-use prompts for common scenarios
 * **[Showcase Sample Projects](https://www.syncfusion.com/showcase-apps)** - Full application examples
 * **[Component Examples](https://ej2.syncfusion.com/angular/demos/#/grid/overview)** - Interactive demos of Syncfusion Angular components
-
-## See also
-
-* [Prompt Library](./prompt-library)
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Documentation](https://ej2.syncfusion.com/angular/documentation)

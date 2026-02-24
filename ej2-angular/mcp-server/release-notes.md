@@ -1,3 +1,13 @@
+---
+layout: post
+title: Release Notes | Syncfusion Angular MCP Server
+description: Version history and release notes for the Syncfusion Angular MCP Server, including new features, breaking changes, and updates for the AI-powered Angular development assistant.
+control: Release Notes
+platform: ej2-angular
+documentation: ug
+domainurl: ##DomainURL##
+---
+
 # Syncfusion Angular MCP Server Release Notes
 
 This document provides information about the changes and new features included in each version of the [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) MCP server package.
