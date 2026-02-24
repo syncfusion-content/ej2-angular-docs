@@ -39,7 +39,7 @@ Implement individual Angular components with focused API guidance, usage example
 2. **Choose your mode** — `#sf_angular_ui_builder` for full-page UIs or `#sf_angular_assistant` for component-specific help.
 3. **Describe** what you want to build — the AI generates Angular production-ready code, including module imports, templates, and styles that follow best practices.
 
-For detailed setup instructions, see the [Installation Guide](installation.md).
+For detailed setup instructions, see the [Installation Guide](./installation).
 
 ## Available Tools
 
