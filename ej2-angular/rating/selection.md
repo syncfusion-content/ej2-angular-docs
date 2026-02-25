@@ -26,7 +26,7 @@ The rating component allows users to rate something using a visual scale, and th
 
 ## Min value
 
-You can use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/rating#min) property of the rating component to set the minimum possible rating value the user can select. If you set the `min` property to 2, then you will not be able to select a rating lower than 2.
+Set the minimum selectable rating value using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/rating#min) property. Users cannot select ratings below this value. For example, setting `min` to 2 prevents users from rating below 2 stars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ You can use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/rat
 
 ## Single selection
 
-You can use the [`enableSingleSelection`](https://ej2.syncfusion.com/angular/documentation/api/rating#enablesingleselection) property of the rating component to select only one item at a time. When the `enableSingleSelection` property is set to `true`, only the selected item will be considered to be in the selected state, while all other items will be unselected.
+Enable single-item selection mode using the [`enableSingleSelection`](https://ej2.syncfusion.com/angular/documentation/api/rating#enablesingleselection) property. When set to `true`, only one rating item is selected at a time; previously selected items are automatically deselected.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ You can use the [`enableSingleSelection`](https://ej2.syncfusion.com/angular/doc
 
 ## Show or hide reset button
 
-You can reset the rating value to its default by using the [`allowReset`](https://ej2.syncfusion.com/angular/documentation/api/rating#allowreset) property of the rating component. When the `allowReset` property is set to `true`, a reset button will be shown that allows the user to reset the rating value to its default.
+Control the visibility of the reset button using the [`allowReset`](https://ej2.syncfusion.com/angular/documentation/api/rating#allowreset) property. When set to `true`, a reset button appears, allowing users to clear their rating selection and return to the default state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

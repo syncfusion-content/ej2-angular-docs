@@ -30,9 +30,9 @@ You can specify the length of OTP by using the [length](https://ej2.syncfusion.c
 
 {% previewsample "page.domainurl/samples/otp-input/appearance/length" %}
 
-## Disable inputs
+## Disabling OTP Input
 
-You can disable the OTP Input component by using the [disabled](https://ej2.syncfusion.com/angular/documentation/api/otp-input#disabled) property. By default the value is `false`.
+You can disable the OTP Input component by using the [disabled](https://ej2.syncfusion.com/angular/documentation/api/otp-input#disabled) property. By default, the value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +48,9 @@ You can disable the OTP Input component by using the [disabled](https://ej2.sync
 
 {% previewsample "page.domainurl/samples/otp-input/appearance/disabled" %}
 
-## CssClass
+## CSS classes
 
-You can customize the appearance of the OTP Input component, such as by changing its colors, fonts, sizes or other visual aspects by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/otp-input#cssclass) property.
+You can customize the appearance of the OTP Input component, such as by changing its colors, fonts, sizes, or other visual aspects by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/otp-input#cssclass) property.
 
 The OTP input component supports the following predefined styles that can be defined using the `cssClass` property. You can customize by replacing the `cssClass` property with the below defined class names.
 

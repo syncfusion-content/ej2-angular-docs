@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Trigger click event of input file in Angular Uploader component
 
-You can trigger the click event of input file from external button using `click` event of button. In the below sample, triggered click event of input file from **Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Button**.
+You can trigger the click event of the file input element from an external button using the button's `click` event. In the following example, the file input's click event is triggered when an external button is clicked, allowing users to open the file browser without using the default Uploader button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Date Range Slider in Angular
 
-The Date formatting can be achieved in [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) and [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/slider/#tooltip) using [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) and [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider/#tooltipchange) events respectively. The process of formatting is explained in the below sample.
+Create a Range Slider that displays date values by formatting ticks and tooltips. Use the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels as dates and the [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider/#tooltipchange) event to format tooltip text. The following sample demonstrates how to implement date formatting in a slider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

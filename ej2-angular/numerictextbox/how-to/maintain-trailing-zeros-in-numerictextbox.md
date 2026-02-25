@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain trailing zeros in numerictextbox in Angular Numerictextbox component
+# Maintain trailing zeros in NumericTextBox in Angular NumericTextBox component
 
-By default, trailing zeros disappear when the NumericTextBox gets focus. However, you can use the following sample to maintain the trailing zeros while focusing the NumericTextBox.
+By default, trailing zeros are removed when the NumericTextBox receives focus. Use the following approach to preserve trailing zeros during focus.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

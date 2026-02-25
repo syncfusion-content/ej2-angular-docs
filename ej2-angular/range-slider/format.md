@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Format in Angular Range Slider component
 
-The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel#format) feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
+The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel#format) property customizes how Slider values are displayed. Formatted values are also applied to ARIA attributes for accessibility. Two approaches are available for implementing value formatting.
 
-* Use the format API of slider which utilizes our [Internationalization](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) to format values.
+* **Using the format property**: Leverage the built-in [Internationalization](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) support to apply predefined formats to slider values.
 
-* Customize using the events namely [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider#renderingticks) and [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltipchange).
+* **Using events**: Customize formatting with the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider#renderingticks) and [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltipchange) events for more advanced transformations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticks
 
 ## Using format API
 
-In this method, we have different predefined formatting styles like Numeric (N), Percentage (P), Currency (C) and `#` specifiers. In this below example, we have formatted the [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider#ticks) and [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltip) values into percentage.
+The format API provides predefined formatting styles including Numeric (N), Percentage (P), Currency (C), and custom specifiers. The following example demonstrates how to format [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider#ticks) and [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltip) values as percentages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,8 +46,7 @@ In this method, we have different predefined formatting styles like Numeric (N),
 
 ## Using Events
 
-In this method, we will be retrieving the values from the slider events then process them to desired formatted the values.
-In this sample we have customized the [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider#ticks) values into weekdays as one formatting and [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltip) values into day of the week as another formatting.
+With this approach, intercept slider events to apply custom formatting logic. The following sample demonstrates how to format [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider#ticks) as weekday names and [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/slider#tooltip) values as full day names.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

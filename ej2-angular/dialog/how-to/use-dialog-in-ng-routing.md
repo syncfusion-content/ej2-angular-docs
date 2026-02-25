@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use dialog in ng routing in Angular Dialog component
+# Use dialog in Angular routing in Angular Dialog component
 
-You can use dialog inside the angular routing application. For more details, refer to the [Angular Documentation](https://angular.io/guide/router).
+Use the dialog component within an Angular routing application. For more details, refer to the [Angular Documentation](https://angular.io/guide/router).
 
-The following example demonstrates how to update the dialog content using angular service in routing application.
+The following example demonstrates how to update the dialog content using an Angular service in a routing application.
 
 [Dialog with ng-routing sample](https://stackblitz.com/edit/angular-router-example-ks2ltv?file=app%2Fapp.component.ts)

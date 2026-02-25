@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextBox control
+# Adornments in ##Platform_Name## TextBox Control
 
-Adornments allow you to add custom elements before or after the TextBox using `prependTemplate` and `appendTemplate`. These elements can include icons, text labels, or action buttons to improve usability and provide visual context.
+The TextBox component supports adornments that allow you to add custom elements before or after the textbox using `prependTemplate` and `appendTemplate`. Adornment elements can include icons, text labels, or action buttons to improve usability and provide visual context.
 
 ## Overview
 
@@ -32,10 +32,10 @@ Adornments are useful for:
 
 ## Adding Adornments to TextBox
 
-Use `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the TextBox.
+Use the `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the textbox.
 
-- **`prependTemplate`**: Renders elements before the TextBox.
-- **`appendTemplate`**: Renders elements after the TextBox.
+- **`prependTemplate`**: Renders elements before the textbox input.
+- **`appendTemplate`**: Renders elements after the textbox input.
 
 The following example demonstrates how to add adornments in the TextBox control.
 

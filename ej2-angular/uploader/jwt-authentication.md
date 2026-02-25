@@ -8,19 +8,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File Upload Using JWT Authentication
+# File upload using JWT authentication
 
-JSON Web Token (JWT) is an open standard for securely transmitting information between parties as a JSON object. JWTs are commonly used for authorization, where the client includes a JWT in the request header for the server to validate before processing the request. This approach adds an extra layer of security, ensuring only authenticated users can upload or remove files.
+A JSON Web Token (JWT) is an open standard for securely transmitting information between parties as a JSON object. JWTs are commonly used for authentication and authorization. Clients include a JWT in request headers, which the server validates before processing. This approach adds a security layer, ensuring only authenticated users can upload or remove files.
 
-This guide covers how to implement JWT authentication in a file upload scenario using the `Uploader` component in a Angular app. The server is set up in .NET Core to validate the JWT token before saving or removing files.
+This guide demonstrates how to implement JWT authentication with the Uploader component in an Angular application. The server-side example uses .NET Core to validate JWT tokens before allowing file uploads or deletions.
 
-## Client-Side Setup
+## Client-side setup
 
-To set up the file uploader with JWT authentication, we'll use the `uploading` and `removing` events of the uploader component. The `asyncSettings` is used to configure the URLs for saving and removing files on the server. A property named `token` stores the JWT.
+To implement JWT authentication with the Uploader, use the `uploading` and `removing` events. Configure save and remove URLs using `asyncSettings`. Store the JWT in a component property.
 
-Using the `uploading` and `removing` event argument's, `currentRequest` property and `setRequestHeader` method, the JWT token is added to the request header during the save and remove actions.
+The `currentRequest` property and `setRequestHeader` method are used to add the JWT token to request headers during save and remove operations.
 
-The following code snippet provides the client-side logic for adding a JWT token during the save and remove actions.
+The following code example demonstrates client-side JWT implementation:
 
 ```html
 <ejs-uploader
@@ -46,15 +46,15 @@ public onFileRemove(args: any): void {
     args.currentRequest.setRequestHeader('Authorization',`Bearer ${this.token}`);
 }
 ```
-> Replace `Your.JWT.Token` with a valid JWT issued by your authentication system for production use.
+> Replace `Your.JWT.Token` with a valid JWT from your authentication system for production environments.
 
-## Server-Side Controller (ASP.NET Core)
+## Server-side controller (ASP.NET Core)
 
-The server-side controller receives and validates the JWT from the request headers. If valid, the server saves or removes the file; otherwise, it returns an unauthorized response.
+The server-side controller receives and validates the JWT from request headers. If the token is valid, the server processes the file operation; otherwise, it returns an unauthorized response.
 
-The `Save` method checks JWT authorization before saving files. If authorized, the file is saved in the `Uploaded Files` directory. The `Remove` method verifies the JWT authorization before attempting to delete a file.
+The `Save` method validates the JWT before saving files to the `Uploaded Files` directory. The `Remove` method verifies JWT authorization before deleting files.
 
-The `IsAuthorized` method extracts and validates the JWT from the `Authorization` header. You can replace `Your.JWT.Token` with a method that verifies tokens. The `SaveFileAsync` method handles file saving, with support for appending data when dealing with chunked uploads.
+The `IsAuthorized` method extracts and validates the JWT from the `Authorization` header. Replace `Your.JWT.Token` with your token verification logic. The `SaveFileAsync` method handles file persistence, including support for chunked uploads.
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiline TextBox in Angular TextBox component
+# Multiline TextBox in Angular TextBox Component
 
-The multiline TextBox feature transforms the standard single-line input into a versatile text area that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, feedback, and detailed user input where space and formatting flexibility are required.
+The multiline TextBox feature transforms the standard single-line input into a versatile textarea that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, and feedback where space and formatting flexibility are required.
 
 ## Key Features Overview
 
@@ -23,7 +23,7 @@ The multiline TextBox provides several enhanced capabilities:
 
 ## Prerequisites
 
-Before implementing multiline TextBox, ensure the TextBox module is imported and configured in the Angular application.
+Before implementing a multiline TextBox, ensure the TextBox module is imported and configured in your Angular application.
 
 ## Create multiline TextBox
 
@@ -70,7 +70,7 @@ This approach ensures the textarea expands and contracts smoothly, accommodating
   
 {% previewsample "page.domainurl/samples/textbox/resize-cs1" %}
 
-## Disable resizing
+## Disable Resizing
 
 Prevent users from manually resizing the multiline TextBox by applying CSS styles that disable the resize functionality. This approach maintains consistent layout design and prevents potential UI disruption.
 
@@ -104,11 +104,11 @@ textarea.e-input,
   
 {% previewsample "page.domainurl/samples/textbox/disable-cs1" %}
 
-## Limit the text length
+## Limit the Text Length
 
-Control text input length by implementing character limits on the multiline TextBox. This feature helps maintain data consistency and prevents excessive input that might impact performance or storage requirements.
+Control text input length by implementing character limits on the multiline TextBox. This feature helps maintain data consistency and prevents excessive input that might impact performance or storage.
 
-### Setting character limits
+### Setting Character Limits
 
 Set the maximum character limit using the `maxLength` attribute through the [addAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addattributes) method. The TextBox automatically prevents additional input once the limit is reached.
 
@@ -117,7 +117,7 @@ Set the maximum character limit using the `maxLength` attribute through the [add
 this.textboxObject.addAttributes({ maxLength: '100' });
 ```
 
-### Removing character limits
+### Removing Character Limits
 
 Use the [`removeAttribute`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#removeattributes) method to dynamically remove character restrictions when unlimited text input is required. This provides flexibility for conditional input scenarios.
 
@@ -139,16 +139,16 @@ this.textboxObject.removeAttribute('maxLength');
   
 {% previewsample "page.domainurl/samples/textbox/maxlength-cs1" %}
 
-## Count characters
+## Count Characters
 
 Provide real-time feedback to users with a character counter that displays current text length and remaining available characters. This feature enhances user experience by showing input progress and helping users stay within defined limits.
 
-The character count updates dynamically during text input, deletion, and paste operations. Implementation involves monitoring the [`input`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#input) event of the multiline TextBox and calculating the current character count against any defined maximum limits.
+The character count updates dynamically during text input, deletion, and paste operations. Monitor the [`input`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#input) event of the multiline TextBox and calculate the current character count against any defined maximum limits.
 
 Benefits of character counting include:
-- **User guidance**: Clear indication of input limits and remaining space
-- **Data validation**: Prevention of form submission errors due to length constraints
-- **User experience**: Immediate feedback without requiring form validation
+- **User Guidance**: Clear indication of input limits and remaining space
+- **Data Validation**: Prevention of form submission errors due to length constraints
+- **User Experience**: Immediate feedback without requiring form validation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,7 +164,7 @@ Benefits of character counting include:
 
 ## Best Practices
 
-- **Performance**: For auto-resizing TextBoxes, consider applying throttling to resize calculations to maintain responsiveness during rapid input.
+- **Performance**: For auto-resizing TextBoxes, apply throttling to resize calculations to maintain responsiveness during rapid input
 - **Validation**: Combine character limits with proper error messaging for comprehensive input validation
 - **Responsive Design**: Test multiline TextBox behavior across different screen sizes and orientations
 - **User Experience**: Provide clear visual feedback for character limits and validation states

@@ -10,29 +10,27 @@ domainurl: ##DomainURL##
 
 # Open mode in Angular Tooltip component
 
-You can decide the mode on which the Tooltip is to be opened on a page, i.e., on hovering, focusing, or clicking on the target elements.
+Control how the tooltip opens on the page—on hover, focus, or click—on target elements.
 
 > On mobile devices, Tooltips appear when you tap and hold the element, even if the `opensOn` option is assigned with `Hover`.
 > Tooltips are also displayed as long as you continue to tap and hold the element. On lift, it  disappears in the next 1.5 seconds.
 > If there is another action before that time ends, then the Tooltip disappears.
 
-The `opensOn` property can take either a single or a combination of multiple values, separated by space from the following options.
-The table  below explains how the Tooltip opens on both desktop and mobile based on the value(s) assigned to the `opensOn` property.
-By default, it takes `Auto` value.
+The `opensOn` property accepts either a single value or multiple values separated by a space. The table below explains how the tooltip opens on desktop and mobile based on the `opensOn` property value. By default, it is set to `Auto`.
 
 | Values | Desktop | Mobile |
 | ------------- | ------------- | ------------- |
-| `Auto` | Tooltip appears when you hover over the target or when the target element receives the focus. | Tooltip opens on tap and hold of the target element. |
-| `Hover` | Tooltip appears when you hover over the target. | Tooltip opens on tap and hold of the target element. |
-| `Click` | Tooltip appears when you click a target element. | Tooltip appears when you single tap the target element. |
-| `Focus` | Tooltip appears when you focus (say through tab key) on a target element. | Tooltip appears with a single tap on the target element. |
-| `Custom` | Tooltip is not triggered by any default action. So, you have to bind your own events and use either `open` or `close` public methods. | Same as Desktop. |
+| `Auto` | Tooltip appears on hover or focus. | Tooltip opens on tap and hold. |
+| `Hover` | Tooltip appears on hover. | Tooltip opens on tap and hold. |
+| `Click` | Tooltip appears on click. | Tooltip appears on single tap. |
+| `Focus` | Tooltip appears on focus (e.g., through Tab key). | Tooltip appears on single tap. |
+| `Custom` | Tooltip is not triggered by default. Bind your own events and use the `open` or `close` methods. | Same as Desktop. |
 
-To open the Tooltip for multiple actions, say while hovering over or clicking on a target element, the `opensOn` property can be assigned with multiple values, separated by space as `hover click`.
+To open the tooltip on multiple actions (e.g., hover or click), assign the `opensOn` property with multiple space-separated values, such as `hover click`.
 
-> `Auto` value cannot be used with any combination for multiple values.
+> The `Auto` value cannot be combined with other values.
 
-The following code example shows how to set the open mode for Tooltips.
+The following code example demonstrates how to set the open mode for tooltips.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +46,9 @@ The following code example shows how to set the open mode for Tooltips.
 
 ## Custom open mode
 
-Other than the above specified options, the `custom` mode makes the Tooltip appear on screen for user-defined custom actions such as `right-click`, `double-click`, and so on. Here, the tooltip is not triggered by any default action, and you have to bind your own events and use either `open` or `close` public methods to show or hide the Tooltips.
+The `custom` mode allows the tooltip to appear on user-defined custom actions such as `right-click` or `double-click`. The tooltip is not triggered by any default action. Bind your own events and use the `open` or `close` methods to show or hide the tooltip.
 
-The following code example shows how to define custom open mode for the Tooltip.
+The following code example demonstrates how to define custom open mode for the tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

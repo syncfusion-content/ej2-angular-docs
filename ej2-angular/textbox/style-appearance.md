@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and Appearance Customization for Angular TextBox
 
-Easily customize the appearance of the [Syncfusion Angular TextBox](https://ej2.syncfusion.com/angular/documentation/textbox) to match your application's theme and usability requirements. This guide covers fundamental and advanced styling techniques including CSS class usage, validation state colors, floating labels, dynamic value-based color changes, rounded corners, password visibility toggling, and accessibility best practices.
+Customize the appearance of the [Syncfusion Angular TextBox](https://ej2.syncfusion.com/angular/documentation/textbox) to match your application's theme and usability requirements. This guide covers fundamental and advanced styling techniques including CSS class usage, validation state colors, floating labels, dynamic value-based color changes, rounded corners, password visibility toggling, and accessibility best practices.
 
 ## Understanding TextBox CSS Structure
 
@@ -21,9 +21,9 @@ The TextBox component uses a hierarchical CSS class structure that allows target
 - `.e-input-group` - Input group container
 - `.e-control-wrapper` - Primary wrapper element
 
-**Tip:** Use browser DevTools to inspect elements and identify these classes for easier targeting.
+**Tip**: Use browser DevTools to inspect elements and identify these classes for easier targeting.
 
-## Customizing the TextBox wrapper element
+## Customizing the TextBox Wrapper Element
 
 The wrapper element controls the overall appearance and layout of the TextBox. Use the following approaches to customize its appearance:
 
@@ -37,7 +37,7 @@ The wrapper element controls the overall appearance and layout of the TextBox. U
 }
 ```
 
-## Customizing the TextBox placeholder
+## Customizing the TextBox Placeholder
 
 Placeholder text can be styled for both floating and static label scenarios:
 
@@ -93,9 +93,9 @@ The following example demonstrates how to configure TextBox components with floa
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs7" %}
 
-## Set the rounded corner in Angular TextBox component
+## Set the Rounded Corner in Angular TextBox Component
 
-The TextBox component can be rendered with rounded corners by adding the `e-corner` CSS class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property. This styling enhancement improves the visual appearance and provides a modern look to the input field.
+The TextBox component can be rendered with rounded corners by adding the `e-corner` CSS class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property. This styling enhancement improves visual appearance and provides a modern look to the input field.
 
 > **Note**: The rounded corner styling is visible only in box model input components (standard input elements with visible borders).
 
@@ -111,13 +111,13 @@ The TextBox component can be rendered with rounded corners by adding the `e-corn
   
 {% previewsample "page.domainurl/samples/textbox/rounded-corner-cs1" %}
 
-## Toggle password visibility using eye icon
+## Toggle Password Visibility Using Eye Icon
 
 The TextBox component supports password visibility toggling through icon integration. This feature allows users to show or hide password text by clicking an eye icon.
 
 ### Implementation Steps
 
-Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method and handle click events to toggle text visibility by changing the input element's [type](https://ej2.syncfusion.com/react/documentation/api/textbox/#type) attribute.
+Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method and handle click events to toggle text visibility by changing the input element's [type](https://ej2.syncfusion.com/react/documentation/api/textbox/#type) attribute between `password` and `text`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,7 +133,7 @@ Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documenta
 
 ## Change TextBox Color Based on Its Value in Angular
 
-Dynamically changing the TextBox color based on user input provides immediate visual feedback and enhances user experience. This technique is particularly useful for form validation, data entry scenarios, and creating interactive interfaces where color coding helps users understand input requirements or validity status.
+Dynamically change the TextBox color based on user input to provide immediate visual feedback and enhance user experience. This technique is particularly useful for form validation, data entry scenarios, and creating interactive interfaces where color coding helps users understand input requirements or validity status.
 
 ### Implementation Overview
 

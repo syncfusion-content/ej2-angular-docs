@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Determine whether uploader has file input in Angular Uploader component
+# Determine whether the Uploader has file input in Angular Uploader component
 
-By setting **required** attribute to uploader input element, you can validate the file input has any value in it.
-In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
+By setting the **required** attribute on the uploader input element, you can validate that the file input contains a value before submission.
+In the following example, the **required** attribute is applied to the uploader input element, and a validation failure message is displayed using the `data-required-message` attribute.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

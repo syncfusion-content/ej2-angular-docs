@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set cursor position while focus on the input textbox in Angular Maskedtextbox component
+# Set cursor position on focus in Angular MaskedTextBox component
 
-By default, on focusing the MaskedTextBox the entire mask gets selected. You can customize by using any one of the following methods:
+By default, the entire mask is selected when the MaskedTextBox receives focus. Use the [`focus`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#focus) event to customize the cursor position by using any of the following methods:
 
-* Setting cursor position at the start of the MaskedTextBox.
-* Setting cursor position at the end of the MaskedTextBox.
-* Setting cursor at the specified position in the MaskedTextBox.
+* Set cursor position at the start of the MaskedTextBox
+* Set cursor position at the end of the MaskedTextBox
+* Set cursor position at a specific location within the MaskedTextBox
 
-> The **selectionStart** and **selectionEnd** set to **0** instead of the input element value's length, when we focus on a MaskedTextBox control filled with all mask characters. This is the default behavior of the HTML 5 input element.
+> When the MaskedTextBox contains only mask characters, **selectionStart** and **selectionEnd** are set to **0** instead of the input value's length. This is the default behavior of the HTML 5 input element and occurs because the input technically contains no data.
 
-Following is an example that demonstrates the above cases to set cursor position in the MaskedTextBox using [`focus`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#focus) event.
+The following example demonstrates how to set the cursor position in the MaskedTextBox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

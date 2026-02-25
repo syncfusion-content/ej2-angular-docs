@@ -1,1930 +1,1760 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Syncfusion Grid
-description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
-platform: ej2-angular
+title: Angular Grid - Microsoft SQL Server | Syncfusion
+description: Angular Grid Microsoft SQL Server integration supports using SQL Server queries and backend patterns to supply, manage, and update grid data.
 control: grid
-keywords: adaptors, customadaptor, urladaptor, mssql, remotedata 
+keywords: adaptors, customadaptor, microsoftSQL, remotedata  
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connect Microsoft SQL Server Data to Syncfusion Angular Grid
+# Connecting SQL Server to Angular Grid Using ASP.NET Core Web API
 
-This section explains how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient), and bind it to the Syncfusion Angular Grid component.
+The [Syncfusion® Angular Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
 
-A Microsoft SQL Server database can be bound to the Grid in several ways—including the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property, custom adaptor, and remote data binding via supported adaptors. This document examines two approaches for connecting SQL Server data to a Grid. Both methods can handle data manipulation and CRUD operations using built-in or custom logic.
+**What is Microsoft SqlClient?**
 
-**1. Using UrlAdaptor**
+[Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) is the official .NET data provider used to connect ASP.NET Core applications to Microsoft SQL Server. It enables applications to execute SQL queries, call stored procedures, and read or write data securely using strongly supported APIs from Microsoft. SqlClient is commonly used in Web APIs where precise control over database access, performance, and security is required.
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) is the base adaptor for remote data service communication, enabling remote binding for the Syncfusion Angular Grid by connecting to a pre-configured API service linked to SQL Server. Other adaptors such as [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor) are also supported. The `UrlAdaptor` is especially useful when a custom API service with bespoke data and CRUD handling logic is required, returning Grid-appropriate response objects with `result` and `count` properties.
+**Key benefits of SqlClient:**
 
-**2. Using CustomAdaptor**
+- **Secure by Design**: Enforces parameterized queries to help prevent SQL injection attacks.
+- **High Performance**: Provides efficient, low‑level access to SQL Server with minimal overhead.
+- **Asynchronous Support**: Supports async database operations for better scalability in web APIs.
+- **Full SQL Control**: Allows precise control over SQL queries, stored procedures, and transactions.
+- **Official Microsoft Provider**: Maintained and supported by Microsoft for long‑term compatibility with SQL Server.
 
-The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) provides a bridge between the Grid UI and the database. While direct binding via `dataSource` is supported, the CustomAdaptor is preferred when full customization of data and CRUD operations is needed. The Grid sends requests for every action to the CustomAdaptor, which can perform operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging**, and **grouping** using built-in or custom procedures. All responses must use the `result` and `count` format for seamless Grid integration. CRUD logic can be overridden as required.
+## Prerequisites
 
-## Bind Data from Microsoft SQL Server Using an API Service
+Ensure the following software and packages are installed before proceeding:
 
-This section outlines step-by-step guidance for retrieving data from SQL Server via an API service and binding it to the Syncfusion Angular Grid.
+| Software/Package | Version | Purpose |
+| ------------------ | --------- | --------- |
+| Node.js | 18.x or later | Angular development runtime |
+| Angular CLI | 16 or later | Create and run Angular apps |
+| .NET SDK | 8.0 or later | Build and run ASP.NET Core Web API |
+| SQL Server | 2019 or later | Database server |
+| @syncfusion/ej2-angular-grids | Latest | Angular Grid component |
+| @syncfusion/ej2-data | Latest | DataManager and adaptors |
+| Microsoft.Data.SqlClient (NuGet) | Latest | SQL Server connectivity |
+| Syncfusion.EJ2 (NuGet) | Latest | Server helpers (DataManagerRequest, DataOperations) |
 
-### Creating an API Service
+## Key topics
 
-**1.** Open Visual Studio and create a new Angular & ASP.NET Core project called **Grid_MSSQL**. See [the Visual Studio ASP.NET + Angular guide](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for details.
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Setting up and configuring a Microsoft SQL Server–backed ASP.NET Core Web API using ADO.NET SqlClient | [View](#setting-up-the-sql-server-environment-for-sqlclient) |
+| 2 | Integrating the Syncfusion Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
+| 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
+| 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
 
-**2.** Install [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) in your ASP.NET Core backend via NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution).
 
-**3.** Create an API controller (for example, GridController.cs) in the **Controllers** folder to exchange Grid data.
+## Setting up the SQL server environment for SqlClient
 
-**4.** In the controller, connect to SQL Server within a **GetOrderData()** method using **SqlConnection**. Execute a SQL query with **SqlCommand** and **SqlDataAdapter**, filling a **DataTable** whose rows are mapped into the `Orders` object used by the Grid.
+First, the **SQL Server database** structure must be created to store ticket records.
 
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
+**Instructions:**
 
-using Microsoft.AspNetCore.Mvc;
+1. Open SQL Server Management Studio (SSMS) or any SQL Server client.
+2. Create a new database named "NetworkSupportDB".
+3. Define a "Tickets" table with the specified schema.
+4. Insert sample data for testing.
+
+Run the following SQL script:
+
+```sql
+-- Create Database
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'NetworkSupportDB')
+BEGIN
+    CREATE DATABASE NetworkSupportDB;
+END
+GO
+
+USE NetworkSupportDB;
+GO
+
+-- Create Tickets Table
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Tickets')
+BEGIN
+    CREATE TABLE dbo.Tickets (
+        TicketId INT PRIMARY KEY IDENTITY(1,1),
+        PublicTicketId VARCHAR(50) NOT NULL UNIQUE,
+        Title VARCHAR(200) NULL,
+        Description TEXT NULL,
+        Category VARCHAR(100) NULL,
+        Department VARCHAR(100) NULL,
+        Assignee VARCHAR(100) NULL,
+        CreatedBy VARCHAR(100) NULL,
+        Status VARCHAR(50) NOT NULL DEFAULT 'Open',
+        Priority VARCHAR(50) NOT NULL DEFAULT 'Medium',
+        ResponseDue DATETIME2 NULL,
+        DueDate DATETIME2 NULL,
+        CreatedAt DATETIME2 NOT NULL DEFAULT GETDATE(),
+        UpdatedAt DATETIME2 NOT NULL DEFAULT GETDATE()
+    );
+END
+GO
+
+-- Insert Sample Data (Optional)
+INSERT INTO dbo.Tickets (PublicTicketId, Title, Description, Category, Department, Assignee, CreatedBy, Status, Priority, ResponseDue, DueDate, CreatedAt, UpdatedAt)
+VALUES
+('NET-1001', 'Network Connectivity Issue', 'Users unable to connect to the VPN', 'Network Issue', 'Network Ops', 'John Doe', 'Alice Smith', 'Open', 'High', '2026-01-14 10:00:00', '2026-01-15 17:00:00', '2026-01-13 10:15:30', '2026-01-13 10:15:30'),
+('NET-1002', 'Server Performance Degradation', 'Email server responding slowly', 'Performance', 'Infrastructure', 'Emily White', 'Bob Johnson', 'InProgress', 'Critical', '2026-01-13 15:00:00', '2026-01-14 17:00:00', '2026-01-13 11:20:10', '2026-01-13 11:20:10');
+GO
+```
+
+After executing this script, the ticket records are stored in the "Tickets" table within the "NetworkSupportDB" database. The database is now ready for integration with the application.
+
+## Step 1: Create the ASP.NET Core Web API project
+
+To connect the Syncfusion® Angular Grid to Microsoft SQL Server, the **ASP.NET Core Web API server** must be configured with the required NuGet packages. The server application is responsible for handling HTTP requests from the Grid and accessing data from SQL Server.
+
+An ASP.NET Core Web API project includes essential files such as **Program.cs**, **appsettings.json**, and a **Controllers** folder. These components manage application startup, configuration, and API endpoints.
+
+In this guide, an ASP.NET Core Web API project named **Grid_MSSQL.Server** is used. After the server project is available, install the required NuGet packages to enable SQL Server connectivity and server‑side grid operations.
+
+To create a new ASP.NET Core Web API project using the .NET CLI, execute the below command in terminal.
+
+```bash
+dotnet new webapi -n Grid_MSSQL.Server
+cd Grid_MSSQL.Server
+```
+
+Add the SQL Server client library and Syncfusion server‑side helper packages.
+
+```bash
+dotnet add package Microsoft.Data.SqlClient
+dotnet add package Syncfusion.EJ2
+```
+
+The Web API exposes HTTP endpoints that are used by the Grid to perform read and data modification operations. The Syncfusion server helper package provides the required types for processing grid requests and applying data operations on the server.
+
+### Step 2: Create the data model
+
+A data model is a C# class that represents the structure of a database table. This model defines the properties that correspond to the columns in the "Tickets" table.
+
+**Instructions:**
+
+1. Create a new folder named "Data" in the application project.
+2. Inside the "Data" folder, create a new file named **Tickets.cs**.
+3. Define the **Tickets** class with the following code:
+
+```csharp
 using System.ComponentModel.DataAnnotations;
-using System.Data;
-using Syncfusion.EJ2.Base;
+
+namespace Grid_MSSQL.Server.Data
+{
+    /// <summary>
+    /// Represents a ticket record mapped to the 'Tickets' table in the database.
+    /// This model defines the structure of ticket-related data used throughout the application.
+    /// </summary>
+    public class Tickets
+    {
+        /// <summary>
+        /// Gets or sets the unique identifier for the ticket record.
+        /// </summary>
+        [Key]
+        public int TicketId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the public-facing ticket identifier (e.g., NET-1001).
+        /// </summary>
+        public string? PublicTicketId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ticket title or subject.
+        /// </summary>
+        public string? Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets a detailed description of the ticket.
+        /// </summary>
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Gets or sets the category of the issue (e.g., Network, Hardware, Software).
+        /// </summary>
+        public string? Category { get; set; }
+
+        /// <summary>
+        /// Gets or sets the department responsible for handling the ticket.
+        /// </summary>
+        public string? Department { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the agent assigned to the ticket.
+        /// </summary>
+        public string? Assignee { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the person who created the ticket.
+        /// </summary>
+        public string? CreatedBy { get; set; }
+
+        /// <summary>
+        /// Gets or sets the current status of the ticket (e.g., Open, In Progress, Resolved, Closed).
+        /// </summary>
+        public string? Status { get; set; }
+
+        /// <summary>
+        /// Gets or sets the priority level of the ticket (e.g., Critical, High, Medium, Low).
+        /// </summary>
+        public string? Priority { get; set; }
+
+        /// <summary>
+        /// Gets or sets the deadline for responding to the ticket.
+        /// </summary>
+        public DateTime? ResponseDue { get; set; }
+
+        /// <summary>
+        /// Gets or sets the deadline for resolving the ticket.
+        /// </summary>
+        public DateTime? DueDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets the timestamp indicating when the ticket was created.
+        /// </summary>
+        public DateTime? CreatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or sets the timestamp indicating when the ticket was last updated.
+        /// </summary>
+        public DateTime? UpdatedAt { get; set; }
+    }
+}
+```
+
+**Explanation:**
+
+- The "[Key]" attribute marks the "TicketId" property as the primary key (a unique identifier for each record).
+- Each property represents a column in the database table.
+- The "?" symbol indicates that a property is nullable (can be empty).
+- The model includes comprehensive XML documentation for each property.
+
+The data model has been successfully created.
+
+### Step 3: Create the Repository class
+
+A repository class is an intermediary layer that handles all database operations. This class uses SqlClient to communicate with the database.
+
+**Instructions:**
+
+1. Inside the "Data" folder, create a new file named **TicketRepository.cs**.
+2. Define the **TicketRepository** class with the following code:
+
+```csharp
 using Microsoft.Data.SqlClient;
 
-namespace Grid_MSSQL.Server.Controllers 
+namespace Grid_MSSQL.Server.Data
 {
-  [ApiController]
-  public class GridController : ControllerBase 
-  {
-    string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
-    [HttpPost]
-    [Route("api/[controller]")]
-    public object Post([FromBody] DataManagerRequest DataManagerRequest)
+    public class TicketRepository
     {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+        private readonly string _connectionString;
 
-      // Get the total count of records.
-      int totalRecordsCount = DataSource.Count();
+        // Public Ticket ID Configuration
+        private const string PublicTicketIdPrefix = "NET";
+        private const string PublicTicketIdSeparator = "-";
+        private const int PublicTicketIdStartNumber = 1001;
 
-      // Return data based on the request.
-      return new { result = DataSource, count = totalRecordsCount };
-    }
-
-    /// <summary>
-    /// Retrieves the order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    [HttpGet]
-    [Route("api/[controller]")]
-    public List<Orders> GetOrderData()
-    {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-      SqlConnection sqlConnection = new(ConnectionString);
-      sqlConnection.Open();
-      SqlCommand sqlCommand = new(queryStr, sqlConnection);
-      SqlDataAdapter DataAdapter = new(sqlCommand);
-      DataTable DataTable = new();
-      DataAdapter.Fill(DataTable);
-      sqlConnection.Close();
-
-      // Map data to a list.
-      List<Orders> dataSource = (from DataRow Data in DataTable.Rows
-        select new Orders()
+        /// <summary>
+        /// Initializes the repository with a connection string from configuration.
+        /// </summary>
+        public TicketRepository(IConfiguration configuration)
         {
-          OrderID = Convert.ToInt32(Data["OrderID"]),
-          CustomerID = Data["CustomerID"].ToString(),
-          EmployeeID = Convert.IsDBNull(Data["EmployeeID"]) ? 0 : Convert.ToUInt16(Data["EmployeeID"]),
-          ShipCity = Data["ShipCity"].ToString(),
-          Freight = Convert.ToDecimal(Data["Freight"])
-        }).ToList();
-      return dataSource;
-    }
+            _connectionString = configuration.GetConnectionString("TicketDb")!;
+        }
 
-    public class Orders
-    {
-      [Key]
-      public int? OrderID { get; set; }
-      public string? CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string? ShipCity { get; set; }
+        /// <summary>
+        /// Creates a new SQL connection using the configured connection string.
+        /// </summary>
+        private SqlConnection GetConnection() => new SqlConnection(_connectionString);
+
+        /// <summary>
+        /// Returns all tickets ordered by TicketId.
+        /// </summary>
+        public async Task<List<Tickets>> GetTicketsAsync()
+        {
+            var list = new List<Tickets>();
+            const string sql =
+                @"SELECT TicketId, PublicTicketId, Title, Description, Category, Department, Assignee, 
+                                        CreatedBy, Status, Priority, ResponseDue, DueDate, CreatedAt, UpdatedAt
+                                 FROM dbo.Tickets ORDER BY TicketId";
+
+            await using var conn = GetConnection();
+            await conn.OpenAsync();
+            await using var cmd = new SqlCommand(sql, conn);
+            await using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                list.Add(
+                    new Tickets
+                    {
+                        TicketId = reader.GetInt32(reader.GetOrdinal("TicketId")),
+                        PublicTicketId = reader["PublicTicketId"] as string,
+                        Title = reader["Title"] as string,
+                        Description = reader["Description"] as string,
+                        Category = reader["Category"] as string,
+                        Department = reader["Department"] as string,
+                        Assignee = reader["Assignee"] as string,
+                        CreatedBy = reader["CreatedBy"] as string,
+                        Status = reader["Status"] as string,
+                        Priority = reader["Priority"] as string,
+                        ResponseDue =
+                            reader["ResponseDue"] == DBNull.Value
+                                ? null
+                                : Convert.ToDateTime(reader["ResponseDue"]),
+                        DueDate =
+                            reader["DueDate"] == DBNull.Value
+                                ? null
+                                : Convert.ToDateTime(reader["DueDate"]),
+                        CreatedAt =
+                            reader["CreatedAt"] == DBNull.Value
+                                ? null
+                                : Convert.ToDateTime(reader["CreatedAt"]),
+                        UpdatedAt =
+                            reader["UpdatedAt"] == DBNull.Value
+                                ? null
+                                : Convert.ToDateTime(reader["UpdatedAt"]),
+                    }
+                );
+            }
+            return list;
+        }
+
+        /// <summary>
+        /// Generates the next public ticket ID (e.g., NET-1002) by reading the current max numeric suffix.
+        /// </summary>
+        private async Task<string> GeneratePublicTicketIdAsync()
+        {
+            // Efficiently get max numeric suffix with SQL
+            string like = $"{PublicTicketIdPrefix}{PublicTicketIdSeparator}%";
+            const string sql =
+                @"
+                SELECT MAX(TRY_CAST(SUBSTRING(PublicTicketId, LEN(@prefix) + LEN(@sep) + 1, 50) AS INT))
+                FROM dbo.Tickets
+                WHERE PublicTicketId LIKE @like";
+            int? maxNumber = null;
+
+            await using var conn = GetConnection();
+            await conn.OpenAsync();
+            await using var cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@prefix", PublicTicketIdPrefix);
+            cmd.Parameters.AddWithValue("@sep", PublicTicketIdSeparator);
+            cmd.Parameters.AddWithValue("@like", like);
+
+            var result = await cmd.ExecuteScalarAsync();
+            if (result != DBNull.Value && result != null)
+            {
+                maxNumber = Convert.ToInt32(result);
+            }
+
+            int next = (maxNumber ?? (PublicTicketIdStartNumber - 1)) + 1;
+            return $"{PublicTicketIdPrefix}{PublicTicketIdSeparator}{next}";
+        }
+
+        /// <summary>
+        /// Inserts a new ticket and returns the created entity with its TicketId.
+        /// </summary>
+        public async Task<Tickets> InsertAsync(Tickets value)
+        {
+            // Auto-generate PublicTicketId if empty
+            if (string.IsNullOrWhiteSpace(value.PublicTicketId))
+            {
+                value.PublicTicketId = await GeneratePublicTicketIdAsync();
+            }
+
+            // Default timestamps
+            value.CreatedAt ??= DateTime.UtcNow;
+            value.UpdatedAt ??= DateTime.UtcNow;
+
+            const string sql =
+                @"
+                INSERT INTO dbo.Tickets
+                (PublicTicketId, Title, Description, Category, Department, Assignee, CreatedBy, Status, Priority, ResponseDue, DueDate, CreatedAt, UpdatedAt)
+                OUTPUT INSERTED.TicketId
+                VALUES
+                (@PublicTicketId, @Title, @Description, @Category, @Department, @Assignee, @CreatedBy, @Status, @Priority, @ResponseDue, @DueDate, @CreatedAt, @UpdatedAt);";
+
+            await using var conn = GetConnection();
+            await conn.OpenAsync();
+            await using var cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue(
+                "@PublicTicketId",
+                (object?)value.PublicTicketId ?? DBNull.Value
+            );
+            cmd.Parameters.AddWithValue("@Title", (object?)value.Title ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Description", (object?)value.Description ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Category", (object?)value.Category ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Department", (object?)value.Department ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Assignee", (object?)value.Assignee ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@CreatedBy", (object?)value.CreatedBy ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Status", (object?)value.Status ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Priority", (object?)value.Priority ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@ResponseDue", (object?)value.ResponseDue ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@DueDate", (object?)value.DueDate ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@CreatedAt", (object?)value.CreatedAt ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@UpdatedAt", (object?)value.UpdatedAt ?? DBNull.Value);
+
+            value.TicketId = Convert.ToInt32(await cmd.ExecuteScalarAsync());
+            return value;
+        }
+
+        /// <summary>
+        /// Updates an existing ticket by TicketId and returns the updated entity.
+        /// </summary>
+        public async Task<Tickets> UpdateAsync(Tickets value)
+        {
+            value.UpdatedAt ??= DateTime.UtcNow;
+
+            const string sql =
+                @"
+                UPDATE dbo.Tickets
+                   SET PublicTicketId = @PublicTicketId,
+                       Title         = @Title,
+                       Description   = @Description,
+                       Category      = @Category,
+                       Department    = @Department,
+                       Assignee      = @Assignee,
+                       CreatedBy     = @CreatedBy,
+                       Status        = @Status,
+                       Priority      = @Priority,
+                       ResponseDue   = @ResponseDue,
+                       DueDate       = @DueDate,
+                       UpdatedAt     = @UpdatedAt
+                 WHERE TicketId     = @TicketId;";
+
+            await using var conn = GetConnection();
+            await conn.OpenAsync();
+            await using var cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@TicketId", value.TicketId);
+            cmd.Parameters.AddWithValue(
+                "@PublicTicketId",
+                (object?)value.PublicTicketId ?? DBNull.Value
+            );
+            cmd.Parameters.AddWithValue("@Title", (object?)value.Title ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Description", (object?)value.Description ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Category", (object?)value.Category ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Department", (object?)value.Department ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Assignee", (object?)value.Assignee ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@CreatedBy", (object?)value.CreatedBy ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Status", (object?)value.Status ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@Priority", (object?)value.Priority ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@ResponseDue", (object?)value.ResponseDue ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@DueDate", (object?)value.DueDate ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@UpdatedAt", (object?)value.UpdatedAt ?? DBNull.Value);
+
+            await cmd.ExecuteNonQueryAsync();
+            return value;
+        }
+
+        /// <summary>
+        /// Deletes a ticket by TicketId. Returns affected rows (0 or 1).
+        /// </summary>
+        public async Task<int> DeleteAsync(int ticketId)
+        {
+            const string sql = @"DELETE FROM dbo.Tickets WHERE TicketId = @TicketId;";
+            await using var conn = GetConnection();
+            await conn.OpenAsync();
+            await using var cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@TicketId", ticketId);
+            return await cmd.ExecuteNonQueryAsync();
+        }
     }
-  }
+}
+```
+
+**Explanation:**
+
+- **TicketRepository**: Reads the "TicketDb" connection string from configuration and stores it for later use.
+
+- **GetConnection**: Creates a new "SqlConnection" using the stored connection string.
+
+- **GetTicketsAsync**: Executes a SELECT on "Tickets", maps rows to "Tickets" objects (handling NULLs), and returns the full list ordered by "TicketId".
+
+- **GeneratePublicTicketIdAsync**: Finds the current max numeric suffix in "PublicTicketId" (format "NET-####") and returns the next ID; starts at "NET-1001" if none exist.
+
+- **InsertAsync**: Ensures "PublicTicketId" exists (auto-generates if blank), sets default timestamps, inserts the ticket, and returns the entity with the generated "TicketId".
+
+- **UpdateAsync**: Updates all mutable fields for an existing ticket by "TicketId", refreshes "UpdatedAt", and returns the updated entity.
+
+- **DeleteAsync**: Deletes the ticket matching "TicketId" and returns the number of affected rows (0 or 1).
+
+The repository class has been created.
+
+### Step 4: Configure the connection string
+
+A connection string contains the information needed to connect the application to the SQL Server database, including the server address, database name, and authentication credentials.
+
+**Instructions:**
+
+1. Open the **appsettings.json** file in the project root.
+2. Add or update the `ConnectionStrings` section with the SQL Server connection details:
+
+```json
+{
+  "ConnectionStrings": {
+    "TicketDb": "Data Source=localhost;Initial Catalog=NetworkSupportDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
+
+**Connection string components:**
+
+| Component | Description |
+| ----------- | ------------- |
+| Data Source | The address of the SQL Server instance (server name, IP address, or localhost) |
+| Initial Catalog | The database name (in this case, "NetworkSupportDB") |
+| Integrated Security | Set to "True" for Windows Authentication; use "False" with Username/Password for SQL Authentication |
+| Connect Timeout | Connection timeout in seconds (default is 15) |
+| Encrypt | Enables encryption for the connection (set to "True" for production environments) |
+| Trust Server Certificate | Whether to trust the server certificate (set to "False" for security) |
+| Application Intent | Set to "ReadWrite" for normal operations or "ReadOnly" for read-only scenarios |
+| Multi Subnet Failover | Used in failover clustering scenarios (typically "False") |
+
+The database connection string has been configured successfully.
+
+### Step 5: Register services
+
+The **Program.cs** file is where application services are registered and configured. This file must be updated to register services and the repository for dependency injection.
+
+**Instructions:**
+
+1. Open the **Program.cs** file at the project root.
+2. Replace the existing content with the following configuration:
+
+```csharp
+using Grid_MSSQL.Server.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add controllers and keep JSON property names as-is (PascalCase)
+builder
+    .Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        options.JsonSerializerOptions.DictionaryKeyPolicy = null;
+        options.JsonSerializerOptions.ReferenceHandler = null;
+    });
+
+// (Optional) Swagger for API exploration in Development
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// CORS: allow all (simple for local dev / separate frontend)
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
+
+// Register repository for DI
+builder.Services.AddScoped<TicketRepository>();
+
+var app = builder.Build();
+
+// Swagger only in Development
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-{% endhighlight %}
-{% endtabs %}
+// Enable CORS and map controllers
+app.UseCors();
+app.MapControllers();
 
-**5.** Run the app; it is hosted at a URL like `https://localhost:xxxx`.
+app.Run();
+```
 
-**6.** The API endpoint serving data is at `https://localhost:xxxx/api/Grid`.
+**Explanation:**
 
-![Screenshot showing the hosted API URL for SQL Server data returned by the controller](../images/Ms-Sql-data.png)
+- **Create the app builder**: Initializes the ASP.NET Core application and prepares services and configuration.
 
-### Connect Syncfusion Angular Grid to the API Service
+- **Add Controllers**: Enables API controllers so the app can handle HTTP requests.
 
-To wire up the Syncfusion Angular Grid to the API service in your Angular app:
+- **JSON Options**: Keeps JSON property names exactly as defined in your C# models (PascalCase).
 
-**Step 1: Install Syncfusion Packages**
+- **Swagger**: Adds Swagger support so you can test APIs easily during development.
 
-Open the terminal in the client folder and run:
+- **CORS**: Allows requests from any frontend (useful when frontend and backend are on different ports/domains).
+
+- **Register TicketRepository**: Registers the repository with Dependency Injection so controllers can use it.
+
+- **Build the app**: Finalizes all configurations and services.
+
+- **Enable Swagger (Dev only)**: Shows Swagger UI only when running in development mode.
+
+- **Use CORS**: Applies the CORS rules to incoming requests.
+
+- **Map Controllers**: Connects controller routes (e.g., api/tickets) to the app.
+
+- **Run the app**: Starts the web server and listens for requests.
+
+This setup registers controllers, enables a permissive CORS policy for development, exposes Swagger UI, and wires the "TicketRepository" for dependency injection.
+
+## Integrating Syncfusion Angular Grid
+
+The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
+
+### Step 1: Creating the Angular client application
+
+Open a Visual Studio Code terminal or Command prompt and run the below command to create an Angular application:
+
+```bash
+ng new grid_mssql.client
+cd grid_mssql.client
+```
+
+### Step 2: Adding Syncfusion packages
+
+Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-**Step 2: Import Grid Module**
+After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the (**src/styles.css**) file to ensure proper styling of the Grid component.
 
-Import and register **GridModule** in your Angular app's main module.
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.3.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.3.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.3.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
+```
 
-**Step 3: Add CSS References**
+For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
-In your `styles.css`, reference Syncfusion stylesheets:
+### Step 3: Add Syncfusion Angular Grid
 
-{% tabs %}
-{% highlight css tabtitle="styles.css" %}
+The Angular Grid component can be added to the application by following these steps. To get started, add the Grid component to the application using the following code in (**src/app/app.component.ts**):
 
-  @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-  @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
+```ts
+import { Component } from "@angular/core";
+import { CommonModule, DatePipe } from "@angular/common";
+import { GridModule } from "@syncfusion/ej2-angular-grids";
+import { DataManager } from "@syncfusion/ej2-data";
+import { CustomAdaptor } from "./custom-adaptor";
 
-{% endhighlight %}
-{% endtabs %}
-
-**2.** In your component file (e.g., **app.component.ts**), import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/grid) using the `url` property and set the adaptor `UrlAdaptor`.
-
-**3.** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
-
-**4.** The `UrlAdaptor` acts as the base adaptor for interacting with remote data service. Most of the built-in adaptors are derived from the `UrlAdaptor`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
+const BASE_URL = "http://localhost:5239/api/tickets";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: "app-root",
   standalone: true,
-  imports: [GridModule],
+  imports: [CommonModule, GridModule],
+  templateUrl: "app.component.html",
+  styleUrls: ["app.component.css"],
 })
 export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new UrlAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight cs tabtitle="GridController.cs" %}
-
-using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-
-namespace Grid_MSSQL.Server.Controllers 
-{
-  [ApiController]
-  public class GridController : ControllerBase 
-  {
-    string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
-    [HttpPost]
-    [Route("api/[controller]")]
-    public object Post([FromBody] DataManagerRequest DataManagerRequest)
-    {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-      // Get the total count of records.
-      int totalRecordsCount = DataSource.Count();
-
-      // Return data based on the request.
-      return new { result = DataSource, count = totalRecordsCount };
-    }
-
-    /// <summary>
-    /// Retrieves the order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    [HttpGet]
-    [Route("api/[controller]")]
-    public List<Orders> GetOrderData()
-    {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-      SqlConnection sqlConnection = new(ConnectionString);
-      sqlConnection.Open();
-      SqlCommand sqlCommand = new(queryStr, sqlConnection);
-      SqlDataAdapter DataAdapter = new(sqlCommand);
-      DataTable DataTable = new();
-      DataAdapter.Fill(DataTable);
-      sqlConnection.Close();
-
-      // Map data to a list.
-      List<Orders> dataSource = (from DataRow Data in DataTable.Rows
-        select new Orders()
-        {
-          OrderID = Convert.ToInt32(Data["OrderID"]),
-          CustomerID = Data["CustomerID"].ToString(),
-          EmployeeID = Convert.IsDBNull(Data["EmployeeID"]) ? 0 : Convert.ToUInt16(Data["EmployeeID"]),
-          ShipCity = Data["ShipCity"].ToString(),
-          Freight = Convert.ToDecimal(Data["Freight"])
-        }).ToList();
-      return dataSource;
-    }
-
-    public class Orders
-    {
-      [Key]
-      public int? OrderID { get; set; }
-      public string? CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string? ShipCity { get; set; }
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-> **Note:** Replace `https://localhost:xxxx/api/grid` with the actual API endpoint providing the data.
-
-**5.** Run your application. It will be available at `https://localhost:xxxx` or similar.
-
-> Ensure your API service is configured to handle CORS (Cross-Origin Resource Sharing), if necessary.
-
-  ```cs
-  [program.cs]
-  builder.Services.AddCors(options =>
-  {
-    options.AddDefaultPolicy(builder =>
-    {
-      builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-    });
+  public dataManager: DataManager = new DataManager({
+    url: `${BASE_URL}`,
+    adaptor: new CustomAdaptor(),
   });
-  var app = builder.Build();
-  app.UseCors();
-  ```
-
-> * The Syncfusion Angular Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) package. Let’s explore how to manage these data operations using the `UrlAdaptor`.
-> * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-> * To access `DataManagerRequest` and `QueryableOperation`, import `Syncfusion.EJ2.Base` in `GridController.cs` file.
- 
-### Handling searching operation
-
-To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform searching operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
-
-  // Handling searching operation.
-  if(DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0) 
-  {
-    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
 }
+```
 
-{% endhighlight %}
+And update (**src/app/app.component.html**):
 
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, ToolbarItems, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [ToolbarService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new UrlAdaptor()
-    });
-    this.toolbar = ['Search'];
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" height="348px">
+```html
+<ejs-grid #grid [dataSource]="dataManager">
   <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
+    <e-column field="TicketId" headerText="ID" isPrimaryKey="true" width="80" textAlign="Right"></e-column>
+    <!-- Additional columns -->
   </e-columns>
 </ejs-grid>
+```
 
-{% endhighlight %}
-{% endtabs %}
+This completes the Angular UI setup required to display and manage ticket data using the Syncfusion Angular Grid.
 
-### Handling filtering operation
+### Step 4: Implement the CustomAdaptor
 
-To handle filtering operation, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
+The Syncfusion Angular Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
+The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using ADO.NET SqlClient to query the SQL Server database and return the results.
 
-/// <summary>
-/// Processes the DataManager request to perform filtering operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+**Instructions:**
 
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
+1. Create a new **custom-adaptor.ts** file in the (**src/app**) folder.
+2. Add the following code inside this file:
 
-  // Handling filtering operation.
-  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) 
-  {
-    foreach (WhereFilter condition in DataManagerRequest.Where) 
-    {
-      foreach (WhereFilter predicate in condition.predicates) 
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-        //Add custom logic here if needed and remove above method.
-      }
-    }
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, FilterService, GridModule } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [FilterService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new UrlAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowFiltering="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling sorting operation
-
-To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform sorting operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
-
-  // Handling sorting operation.
-  if(DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) 
-  {
-    DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, SortService, GridModule } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [SortService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new UrlAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowSorting="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling paging operation
-
-To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform paging operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-  
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Handling paging operation.
-  if (DataManagerRequest.Skip != 0) 
-  {
-    DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
-    //Add custom logic here if needed and remove above method.
-  }
-  if (DataManagerRequest.Take != 0) 
-  {
-    DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, PageService, GridModule } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [PageService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new UrlAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowPaging="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling CRUD operations
-
-The Syncfusion Angular Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl` and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
-
-**CRUD Operations Mapping**
-
-CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
-
-1. **insertUrl**: Specifies the URL for inserting new data.
-2. **removeUrl**: Specifies the URL for removing existing data.
-3. **updateUrl**: Specifies the URL for updating existing data.
-4. **batchUrl**: Specifies the URL for batch editing.
-
-To enable editing in Grid, refer to the editing [documentation](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) is enabled and [toolbar](https://helpej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent, EditSettingsModel,GridModule, ToolbarItems,EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [EditService, ToolbarService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-  public editSettings?: EditSettingsModel;
-  public toolbar?: ToolbarItems[];
-  public employeeIDRules?: Object;
-  public customerIDRules?: Object;
-  public freightRules?: Object;
-  public shipCityRules?: Object;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove', 
-      // Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate', 
-      adaptor: new UrlAdaptor()
-    });
-    this.employeeIDRules = { required: true, number: true };
-    this.customerIDRules = { required: true };
-    this.freightRules = { required: true, min: 1, max: 1000 };
-    this.shipCityRules = { required: true };
-    this.toolbar = ['Add', 'Update', 'Delete', 'Cancel', 'Search'];
-    this.editSettings = { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' };
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" [editSettings]="editSettings" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' [validationRules]='shipCityRules' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-> * Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
-
-**Insert Operation:**
-
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Inserts a new data item into the data collection.
-/// </summary>
-/// <param name="value">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/Insert")]
-public void Insert([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.value.CustomerID}','{value.value.Freight}','{value.value.ShipCity}','{value.value.EmployeeID}')";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Update Operation:**
-
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Update a existing data item from the data collection.
-/// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/Update")]
-public void Update([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = $"Update Orders set CustomerID='{value.value.CustomerID}', Freight='{value.value.Freight}',EmployeeID='{value.value.EmployeeID}',ShipCity='{value.value.ShipCity}' where OrderID='{value.value.OrderID}'";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Delete Operation:**
-
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Remove a specific data item from the data collection.
-/// </summary>
-/// <param name="value">It contains the specific record detail which is need to be removed.</param>
-/// <return>Returns void.</return>
-[HttpPost]
-[Route("api/[controller]/Remove")]
-public void Remove([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = $"Delete from Orders where OrderID={value.key}";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Batch Operation:**
-
-To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
-/// </summary>
-/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/BatchUpdate")]
-public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value) 
-{
-  if (value.changed != null && value.changed.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.changed) 
-    {
-      //Create query to update the changes into the database by accessing its properties.
-      string queryStr = $"Update Orders set CustomerID='{Record.CustomerID}', Freight='{Record.Freight}',EmployeeID='{Record.EmployeeID}',ShipCity='{Record.ShipCity}' where OrderID='{Record.OrderID}'";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
-
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
-
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  if (value.added != null && value.added.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.added) 
-    {
-      //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{Record.CustomerID}','{Record.Freight}','{Record.ShipCity}','{Record.EmployeeID}')";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
-
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
-
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  if (value.deleted != null && value.deleted.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.deleted) 
-    {
-      //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = $"Delete from Orders where OrderID={Record.OrderID}";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
-
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
-      
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  return new JsonResult(value);
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-When you run the application, the resultant Syncfusion Angular Grid will look like this
-
-![Syncfusion Angular Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
-
-> Find a reference implementation at [this GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20UrlAdaptor/Grid_MSSQL).
-
-## Bind Data from Microsoft SQL Server Using CustomAdaptor
-
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
-
-**1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion Angular Grid to an API service](#connecting-syncfusion-angular-grid-to-an-api-service)
-
-**2.** To connect a Microsoft SQL Server database using the Microsoft SQL driver in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-
-**3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
-
-  * Create a `CustomAdaptor` that extends the `UrlAdaptor` class.
-  * Override the `processResponse` method to process server responses.
-
-**4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
-
-  * In this **GetOrderData** method, fetch data from the Microsoft SQL Server database using the **SqlDataAdapter** class.
-
-  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the **DataAdapter**, followed by conversion of the **DataSet** into a List.
-
-  * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-    
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
-      adaptor: new CustomAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="CustomAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
+```ts
+import { BatchChanges } from '@syncfusion/ej2-angular-grids';
+import {
+  DataManager,
+  UrlAdaptor,
+  Query,
+  ReturnOption,
+  DataResult,
+} from '@syncfusion/ej2-data';
 
 export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-}
-
-{% endhighlight %}
-
-{% highlight cs tabtitle="GridController.cs" %}
-
-using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using Syncfusion.EJ2.Base;
-using Microsoft.Data.SqlClient;
-
-namespace Grid_MSSQL.Server.Controllers 
-{
-  [ApiController]
-  public class GridController : ControllerBase 
-  {
-    string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
-    [HttpPost]
-    [Route("api/[controller]")]
-    public object Post([FromBody] DataManagerRequest DataManagerRequest)
-    {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
- 
-      // Get the total count of records.
-      int totalRecordsCount = DataSource.Count();
-
-      // Return data based on the request.
-      return new { result = DataSource, count = totalRecordsCount };
+  public override processResponse(data: DataResult): ReturnOption {
+    const original = data as any;
+    if (original && original.result) {
+      let i = 0;
+      original.result.forEach((item: any) => (item.SNo = ++i));
     }
-
-    /// <summary>
-    /// Retrieves the order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    [HttpGet]
-    [Route("api/[controller]")]
-    public List<Orders> GetOrderData()
-    {
-      string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-      SqlConnection sqlConnection = new(ConnectionString);
-      sqlConnection.Open();
-      SqlCommand sqlCommand = new(queryStr, sqlConnection);
-      SqlDataAdapter DataAdapter = new(sqlCommand);
-      DataTable DataTable = new();
-      DataAdapter.Fill(DataTable);
-      sqlConnection.Close();
-
-      // Map data to a list.
-      List<Orders> dataSource = (from DataRow Data in DataTable.Rows
-        select new Orders()
-        {
-          OrderID = Convert.ToInt32(Data["OrderID"]),
-          CustomerID = Data["CustomerID"].ToString(),
-          EmployeeID = Convert.IsDBNull(Data["EmployeeID"]) ? 0 : Convert.ToUInt16(Data["EmployeeID"]),
-          ShipCity = Data["ShipCity"].ToString(),
-          Freight = Convert.ToDecimal(Data["Freight"])
-        }).ToList();
-      return dataSource;
-    }
-
-    public class Orders
-    {
-      [Key]
-      public int? OrderID { get; set; }
-      public string? CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string? ShipCity { get; set; }
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-> * The `DataManagerRequest` encompasses details about the Grid actions such as searching, filtering, sorting, aggregate, paging and grouping.
-
-### Handling searching operation
-
-When utilizing the `CustomAdaptor` in Angular, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class. 
-
-In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Syncfusion Angular Grid.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform searching operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
-
-  // Handling searching operation.                                       
-  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0) 
-  {
-    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, ToolbarItems, ToolbarService, GridModule} from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [ToolbarService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-  public toolbar?: ToolbarItems[];
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid', // Replace your hosted link.
-      adaptor: new CustomAdaptor()
-    });
-    this.toolbar = ['Search'];
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="customAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling filtering operation
-
-When utilizing the `CustomAdaptor` in Angular, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
-
-In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Syncfusion Angular Grid.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform filtering operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
-
-  // Handling filtering operation.
-  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) 
-  {
-    foreach (WhereFilter condition in DataManagerRequest.Where) 
-    {
-      foreach (WhereFilter predicate in condition.predicates) 
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-        //Add custom logic here if needed and remove above method.
-      }
-    }
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, FilterService, GridModule } from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [FilterService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid')public grid?: GridComponent;
-  public data?: DataManager;
-
- public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-      adaptor: new CustomAdaptor()
-    });
-  }
-}
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowFiltering="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="customAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling sorting operation
-
-When utilizing the `CustomAdaptor` in Angular, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
-
-In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Syncfusion Angular Grid.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform sorting operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();      
-
-  // Handling sorting operation.
-  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) 
-  {
-    DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, SortService, GridModule } from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [SortService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-      adaptor: new CustomAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowSorting="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="customAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling paging operation
-
-When utilizing the `CustomAdaptor` in Angular, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
-
-In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Syncfusion Angular Grid.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Processes the DataManager request to perform paging operation.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
-public object Post([FromBody] DataManagerRequest DataManagerRequest) 
-{
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
-
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
-
-  // Handling paging operation.
-  if (DataManagerRequest.Skip != 0) 
-  {
-    DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
-    //Add custom logic here if needed and remove above method.
-  }
-  if (DataManagerRequest.Take != 0) 
-  {
-    DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
-    //Add custom logic here if needed and remove above method.
-  }
-
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, PageService, GridModule } from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [PageService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-      adaptor: new CustomAdaptor()
-    });
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' allowPaging="true" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-
-{% highlight ts tabtitle="customAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Handling CRUD operations
-
-To enable editing in the Syncfusion Angular Grid, utilize the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) documentation.
-
-In this scenario, the inline edit `mode` and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property configured to display toolbar items for editing purpose.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-
-import { Component, ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { GridComponent, EditSettingsModel, ToolbarItems,EditService, ToolbarService, GridModule } from '@syncfusion/ej2-angular-grids';
-import { CustomAdaptor } from './CustomAdaptor'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  providers: [EditService, ToolbarService],
-  imports: [GridModule],
-})
-export class AppComponent {
-  @ViewChild('grid') public grid?: GridComponent;
-  public data?: DataManager;
-  public editSettings?: EditSettingsModel;
-  public toolbar?: ToolbarItems[];
-  public employeeIDRules?: Object;
-  public customerIDRules?: Object;
-  public freightRules?: Object;
-  public shipCityRules?: Object;
-
-  public ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:xxxx/api/grid',
-      insertUrl: 'https://localhost:xxxx/api/grid/Insert',
-      updateUrl: 'https://localhost:xxxx/api/grid/Update',
-      removeUrl: 'https://localhost:xxxx/api/grid/Remove',
-      // Enable batch URL when batch editing is enabled.
-      //batchUrl: 'https://localhost:xxxx/api/grid/BatchUpdate',
-      adaptor: new CustomAdaptor()
-    });
-    this.employeeIDRules = { required: true, number: true };
-    this.customerIDRules = { required: true };
-    this.freightRules = { required: true, min: 1, max: 1000 };
-    this.shipCityRules = { required: true };
-    this.toolbar = ['Add', 'Update', 'Delete', 'Cancel', 'Search'];
-    this.editSettings = { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' };
-  }
-}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-<ejs-grid #grid [dataSource]='data' [toolbar]="toolbar" [editSettings]="editSettings" height="348px">
-  <e-columns>
-    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-column>
-    <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width='160'></e-column>
-    <e-column field='EmployeeID' headerText='Employee ID' [validationRules]='employeeIDRules' width='160' textAlign='Right'></e-column>
-    <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' format="C2" width='160' textAlign='Right'></e-column>
-    <e-column field='ShipCity' headerText='Ship City' [validationRules]='shipCityRules' width='150'></e-column>
-  </e-columns>
-</ejs-grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-> * Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
-
-The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
-
-* insert
-* remove
-* update
-* batchRequest
-
-Let’s see how to perform CRUD operation using Microsoft SQL Server data with Syncfusion Angular Grid.
-
-**Insert Operation:**
-
-To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
-
-{% tabs %}
-{% highlight ts tabtitle="CustomAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    const original: any = super.processResponse.apply(this, arguments as any);
     return original;
   }
 
-  public override insert(dm: any, data: any): any {
+  public override beforeSend(
+    dm: DataManager,
+    request: Request,
+    settings?: any,
+  ): void {
+    super.beforeSend(dm, request, settings);
+  }
+
+  public override insert(dm: DataManager, data: DataResult) {
     return {
-      url: dm.dataSource.insertUrl || dm.dataSource.url,
-      data: JSON.stringify({
-        __RequestVerificationToken: "Syncfusion",
-        value: data,
-        action: 'insert'
-      }),
-      type: 'POST'
+      url: `${dm.dataSource['insertUrl']}`,
+      type: 'POST',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({ value: data }),
     };
   }
-}
-{% endhighlight %}
 
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Inserts a new data item into the data collection.
-/// </summary>
-/// <param name="value">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/Insert")]
-public void Insert([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.value.CustomerID}','{value.value.Freight}','{value.value.ShipCity}','{value.value.EmployeeID}')";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Update Operation:**
-
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
-
-{% tabs %}
-{% highlight ts tabtitle="CustomAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-
-  public override update(dm: any, keyField: string, value: any): any {
+  public override update(dm: DataManager, _keyField: string, value: any) {
     return {
-      url: dm.dataSource.updateUrl || dm.dataSource.url,
-      data: JSON.stringify({
-        __RequestVerificationToken: "Syncfusion",
-        value: value,
-        action: 'update'
-      }),
-      type: 'POST'
+      url: `${dm.dataSource['updateUrl']}`,
+      type: 'POST',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({ value }),
     };
   }
-}
 
-{% endhighlight %}
-
-{% highlight cs tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Update a existing data item from the data collection.
-/// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/Update")]
-public void Update([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = $"Update Orders set CustomerID='{value.value.CustomerID}', Freight='{value.value.Freight}',EmployeeID='{value.value.EmployeeID}',ShipCity='{value.value.ShipCity}' where OrderID='{value.value.OrderID}'";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Delete Operation:**
-
-To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
-
-{% tabs %}
-{% highlight ts tabtitle="CustomAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-
-  public override remove(dm: any, keyField: string, value: any): any {
+  public override remove(dm: DataManager, keyField: string, value: any) {
+    const keyValue =
+      value && typeof value === 'object' ? value[keyField] : value;
     return {
-      url: dm.dataSource.removeUrl || dm.dataSource.url,
-      data: JSON.stringify({
-        __RequestVerificationToken: "Syncfusion",
-        key: value,
-        keyColumn: keyField,
-        action: 'remove'
-      }),
-      type: 'POST'
+      url: `${dm.dataSource['removeUrl']}`,
+      type: 'POST',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({ key: keyValue }),
     };
   }
-}
 
-{% endhighlight %}
-
-{% highlight ts tabtitle="GridController.cs" %}
-
-/// <summary>
-/// Remove a specific data item from the data collection.
-/// </summary>
-/// <param name="value">It contains the specific record detail which is need to be removed.</param>
-/// <return>Returns void.</return>
-[HttpPost]
-[Route("api/[controller]/Remove")]
-public void Remove([FromBody] CRUDModel<Orders> value) 
-{
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = $"Delete from Orders where OrderID={value.key}";
-  SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-  SqlConnection.Open();
-
-  //Execute the SQL command.
-  SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-  //Execute this code to reflect the changes into the database.
-  SqlCommand.ExecuteNonQuery();
-  SqlConnection.Close();
-
-  //Add custom logic here if needed and remove above method.
-}
-
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Batch Operation:**
-
-To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
-
-{% tabs %}
-{% highlight ts tabtitle="CustomAdaptor.ts" %}
-
-import { UrlAdaptor } from '@syncfusion/ej2-data';
-
-export class CustomAdaptor extends UrlAdaptor {
-  public override processResponse(): any {
-    // Calling base class processResponse function.
-    const original: any = super.processResponse.apply(this, arguments as any);
-    return original;
-  }
-
-  public override batchRequest(dm:any, changes: any, e:any, query: any, original?: Object): Object {
+  public override batchRequest(dm: DataManager, changes: BatchChanges) {
     return {
-      url: dm.dataSource.batchUrl || dm.dataSource.url,
+      url: `${dm.dataSource['batchUrl']}`,
+      type: 'POST',
+      contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
-        __RequestVerificationToken: "Syncfusion",
         added: changes.addedRecords,
         changed: changes.changedRecords,
         deleted: changes.deletedRecords,
-        key: e.key,
-        action: 'batch'
       }),
-      type: 'POST'
     };
   }
 }
+```
 
-{% endhighlight %}
+The `CustomAdaptor` class has been successfully implemented with all data operations.
 
-{% highlight cs tabtitle="GridController.cs" %}
+### Step 5: Add toolbar with CRUD and search options
 
-/// <summary>
-/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
-/// </summary>
-/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
-/// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/BatchUpdate")]
-public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value) 
-{
-  if (value.changed != null && value.changed.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.changed) 
-    {
-      //Create query to update the changes into the database by accessing its properties.
-      string queryStr = $"Update Orders set CustomerID='{Record.CustomerID}', Freight='{Record.Freight}',EmployeeID='{Record.EmployeeID}',ShipCity='{Record.ShipCity}' where OrderID='{Record.OrderID}'";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
+The toolbar provides buttons for adding, editing, deleting records, and searching the data.
 
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
+**Instructions:**
 
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
+1. Open the (**src/app/app.component.ts**) file and create a property with CRUD and search options.
+2. And Inject the `ToolbarService` modules in the component `providers` property.
+3. Then in Grid component (**src/app/app.component.html**) include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property.
 
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  if (value.added != null && value.added.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.added) 
-    {
-      //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{Record.CustomerID}','{Record.Freight}','{Record.ShipCity}','{Record.EmployeeID}')";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
+**src/app/app.component.ts**:
 
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
+```ts
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { DataManager } from '@syncfusion/ej2-data';
+import { CustomAdaptor } from './custom-adaptor';
 
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
+const BASE_URL = 'http://localhost:5239/api/tickets';
 
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  if (value.deleted != null && value.deleted.Count > 0) 
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.deleted) 
-    {
-      //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = $"Delete from Orders where OrderID={Record.OrderID}";
-      SqlConnection SqlConnection = new SqlConnection(ConnectionString);
-      SqlConnection.Open();
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  templateUrl: './app.component.html',
+  imports: [CommonModule, GridModule],
+  providers: [ToolbarService],
+})
+export class AppComponent implements OnInit {
+  public dataManager: DataManager = new DataManager({
+    url: `${BASE_URL}`,
+    adaptor: new CustomAdaptor()
+  });
 
-      //Execute the SQL command.
-      SqlCommand SqlCommand = new SqlCommand(queryStr, SqlConnection);
-
-      //Execute this code to reflect the changes into the database.
-      SqlCommand.ExecuteNonQuery();
-      SqlConnection.Close();
-
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  return new JsonResult(value);
+  public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
 }
+```
 
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+```html
+<ejs-grid #grid [dataSource]="dataManager" [toolbar]="toolbar">
+  <e-columns>
+    <e-column field="TicketId" headerText="ID" width="80" [isPrimaryKey]="true" textAlign="Right"></e-column>
+    <!-- Additional columns -->
+  </e-columns>
+</ejs-grid>
+```
+
+**Toolbar items explanation:**
+
+| Item | Function |
+| ------ | ---------- |
+| `Add` | Opens a form row to add a new ticket. |
+| `Edit` | Enables editing of the selected ticket. |
+| `Delete` | Deletes the selected ticket. |
+| `Update` | Saves changes made to the selected row. |
+| `Cancel` | Cancels the current edit or add action. |
+| `Search` | Displays a search box to find records. |
+
+The toolbar has been successfully added.
+
+### Step 6: Implement paging feature
+
+Paging divides large datasets into smaller pages to improve performance and usability.
+
+**Instructions:**
+
+1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true` and inject the `PageService` module in the providers property to enable paging in the Grid.
+
+    Update (**app.component.ts**):
+
+    ```typescript
+    import { Component } from '@angular/core';
+    import { GridComponent, GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
+    import { DataManager } from '@syncfusion/ej2-data';
+    import { CustomAdaptor } from './custom-adaptor';
+
+    const BASE_URL = 'http://localhost:5239/api/tickets';
+
+    @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [GridModule],
+      templateUrl: "app.component.html",
+      providers: [ToolbarService, PageService],
+    })
+    export class AppComponent {
+      public dataManager: DataManager = new DataManager({
+        url: `${BASE_URL}`,
+        adaptor: new CustomAdaptor()
+      });
+
+      public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+
+      public pageSettings = { pageSize: 12 };
+    }
+    ```
+
+    Update (**app.component.html**):
+
+    ```html
+    <ejs-grid
+      [dataSource]="dataManager"
+      [allowPaging]="true"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar">
+      <e-columns>
+        <e-column field="TicketId" headerText="ID" width="90" textAlign="Right" isPrimaryKey="true" isIdentity="true"></e-column>
+        <!-- Additional columns -->
+      </e-columns>
+    </ejs-grid>
+    ```
+
+2. On the API controller create a file **TicketsController.cs** and add the **Task** method provided below and handle paging using `DataOperations.PerformSkip` and `DataOperations.PerformTake`.
+
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using Syncfusion.EJ2.Base;
+    using Grid_MSSQL.Server.Data;
+
+    namespace Grid_MSSQL.Server.Controllers
+    {
+        [ApiController]
+        [Route("api/[controller]")]
+        public class TicketsController : ControllerBase
+        {
+            private readonly TicketRepository _repo;
+            private readonly DataOperations _dataOps = new DataOperations();
+
+            // POST: api/tickets
+            [HttpPost]
+            public async Task<IActionResult> List([FromBody] DataManagerRequest dm)
+            {
+                IEnumerable<Tickets> data = await _repo.GetTicketsAsync();
+
+                // Count BEFORE paging
+                int count = data.Count();
+
+                // Paging
+                if (dm.Skip != 0) data = _dataOps.PerformSkip(data, dm.Skip);
+                if (dm.Take != 0) data = _dataOps.PerformTake(data, dm.Take);
+
+                return Ok(dm.RequiresCounts ? new { result = data, count } : data);
+            }
+        }
+    }
+    ```
+
+**Paging details:**
+
+- The Grid sends `skip` and `take` values to the server through the `CustomAdaptor`.
+- The controller receives a `DataManagerRequest` and applies `PerformSkip` and `PerformTake`.
+- `count` is calculated before paging, and `{ result, count }` is returned when `RequiresCounts = true`.
+- The Grid renders the requested page and navigation controls based on the returned shape.
+
+When paging is performed in the Grid, a request is sent to the server with the following payload.
+
+![Paging Operation Payload](../images/mssql-grid-paging.png)
+
+### Step 7: Implement searching feature
+
+Searching allows finding records by entering keywords in the search box.
+
+**Instructions:**
+
+1. Include the `Search` item in the toolbar and inject the `ToolbarService` service.
+
+    Update (**app.component.ts**):
+
+    ```typescript
+    import { Component } from '@angular/core';
+    import { GridComponent, GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
+    import { DataManager } from '@syncfusion/ej2-data';
+    import { CustomAdaptor } from './custom-adaptor';
+
+    const BASE_URL = 'http://localhost:5239/api/tickets';
+
+    @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [GridModule],
+      templateUrl: "app.component.html",
+      providers: [ToolbarService, PageService],
+    })
+    export class AppComponent {
+      public dataManager: DataManager = new DataManager({
+        url: `${BASE_URL}`,
+        adaptor: new CustomAdaptor()
+      });
+
+      public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+
+      public pageSettings = { pageSize: 12 };
+    }
+    ```
+
+    Update (**app.component.html**):
+
+    ```html
+    <ejs-grid
+      [dataSource]="dataManager"
+      [allowPaging]="true"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar">
+      <e-columns>
+        <e-column field="TicketId" headerText="ID" width="90" textAlign="Right" isPrimaryKey="true" isIdentity="true"></e-column>
+        <!-- Additional columns -->
+      </e-columns>
+    </ejs-grid>
+    ```
+
+2. Apply `PerformSearching` in the server action using the `DataManagerRequest.Search` property.
+
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using Syncfusion.EJ2.Base;
+    using Grid_MSSQL.Server.Data;
+
+    namespace Grid_MSSQL.Server.Controllers
+    {
+        [ApiController]
+        [Route("api/[controller]")]
+        public class TicketsController : ControllerBase
+        {
+            private readonly TicketRepository _repo;
+            private readonly DataOperations _dataOps = new DataOperations();
+
+            // POST: api/tickets
+            [HttpPost]
+            public async Task<IActionResult> List([FromBody] DataManagerRequest dm)
+            {
+                IEnumerable<Tickets> data = await _repo.GetTicketsAsync();
+
+                // Searching
+                if (dm.Search != null && dm.Search.Count > 0)
+                    data = _dataOps.PerformSearching(data, dm.Search);
+
+                // Other operations (filter, sort, paging)...
+                int count = data.Count();
+                if (dm.Skip != 0) data = _dataOps.PerformSkip(data, dm.Skip);
+                if (dm.Take != 0) data = _dataOps.PerformTake(data, dm.Take);
+
+                return Ok(dm.RequiresCounts ? new { result = data, count } : data);
+            }
+        }
+    }
+    ```
+
+**Searching details:**
+
+- Entering a term and pressing **Enter** sends search descriptors in the `Search` property.
+- `DataOperations.PerformSearching()` applies the search term across all searchable fields.
+- Filtered data is counted and then paged; the shaped response is returned to the client.
+
+When searching is performed in the Grid, a request is sent to the server with the following payload.
+
+![Searching Operation Payload](../images/mssql-grid-searching.png)
+
+### Step 8: Implement filtering feature
+
+Filtering allows restricting data based on column values using the Excel filter UI.
+
+**Instructions:**
+
+1. Enable filtering by setting **[allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering)** and injecting the `FilterService` module.
+2. Configure **[filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettingsmodel)** for customizing filter type.
+
+    Update (**app.component.ts**):
+
+    ```typescript
+    import { Component } from '@angular/core';
+    import { GridComponent, GridModule, ToolbarService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
+    import { DataManager } from '@syncfusion/ej2-data';
+    import { CustomAdaptor } from './custom-adaptor';
+
+    const BASE_URL = 'http://localhost:5239/api/tickets';
+
+    @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [GridModule],
+      templateUrl: "app.component.html",
+      providers: [ToolbarService, PageService, FilterService],
+    })
+    export class AppComponent {
+      public dataManager: DataManager = new DataManager({
+        url: `${BASE_URL}`,
+        adaptor: new CustomAdaptor()
+      });
+
+      public pageSettings = { pageSize: 12 };
+      public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+      public filterSettings = { type: 'Excel' };
+    }
+    ```
+
+    Update (**app.component.html**):
+
+    ```html
+    <ejs-grid
+      [dataSource]="dataManager"
+      [allowPaging]="true"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [allowFiltering]="true"
+      [filterSettings]="filterSettings">
+      <e-columns>
+        <e-column field="TicketId" headerText="ID" width="90" textAlign="Right" isPrimaryKey="true" isIdentity="true" [allowFiltering]="false"></e-column>
+        <!-- Additional columns -->
+      </e-columns>
+    </ejs-grid>
+    ```
+
+3. Apply `PerformFiltering` using the `Where` property in the controller.
+
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using Syncfusion.EJ2.Base;
+    using Grid_MSSQL.Server.Data;
+
+    namespace Grid_MSSQL.Server.Controllers
+    {
+        [ApiController]
+        [Route("api/[controller]")]
+        public class TicketsController : ControllerBase
+        {
+            private readonly TicketRepository _repo;
+            private readonly DataOperations _dataOps = new DataOperations();
+
+            // POST: api/tickets
+            [HttpPost]
+            public async Task<IActionResult> List([FromBody] DataManagerRequest dm)
+            {
+                IEnumerable<Tickets> data = await _repo.GetTicketsAsync();
+
+                // Filtering
+                if (dm.Where != null && dm.Where.Count > 0)
+                    data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+
+                // Other operations (search, sort, paging)...
+                int count = data.Count();
+                if (dm.Skip != 0) data = _dataOps.PerformSkip(data, dm.Skip);
+                if (dm.Take != 0) data = _dataOps.PerformTake(data, dm.Take);
+
+                return Ok(dm.RequiresCounts ? new { result = data, count } : data);
+            }
+        }
+    }
+    ```
+
+**Filtering details:**
+
+- The Excel filter UI builds filter predicates on the client and sends them in the `Where` property.
+- `DataOperations.PerformFiltering()` applies predicates against the in-memory data set.
+- Filtering executes before count and paging to ensure accurate total counts.
+
+When filtering is performed in the Grid, a request is sent to the server with the following payload.
+
+![Filtering Operation Payload](../images/mssql-grid-filtering.png)
+
+### Step 9: Implement sorting feature
+
+Sorting enables arranging records in ascending or descending order based on column values.
+
+**Instructions:**
+
+1. Enable sorting with **[allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting)** set to `true` and inject the `SortService` module.
+
+    Update (**app.component.ts**):
+
+    ```typescript
+    import { Component } from '@angular/core';
+    import { GridComponent, GridModule, ToolbarService, PageService, FilterService, SortService } from '@syncfusion/ej2-angular-grids';
+    import { DataManager } from '@syncfusion/ej2-data';
+    import { CustomAdaptor } from './custom-adaptor';
+
+    const BASE_URL = 'http://localhost:5239/api/tickets';
+
+    @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [GridModule],
+      templateUrl: "app.component.html",
+      providers: [ToolbarService, PageService, FilterService, SortService],
+    })
+    export class AppComponent {
+      public dataManager: DataManager = new DataManager({
+        url: `${BASE_URL}`,
+        adaptor: new CustomAdaptor()
+      });
+
+      public pageSettings = { pageSize: 12 };
+      public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+      public filterSettings = { type: 'Excel' };
+    }
+    ```
+
+    Update (**app.component.html**):
+
+    ```html
+    <ejs-grid
+      [dataSource]="dataManager"
+      [allowPaging]="true"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      [allowFiltering]="true"
+      [filterSettings]="filterSettings"
+      [allowSorting]="true">
+      <e-columns>
+        <e-column field="TicketId" headerText="ID" width="90" textAlign="Right" isPrimaryKey="true" isIdentity="true" [allowSorting]="false"></e-column>
+        <!-- Additional columns -->
+      </e-columns>
+    </ejs-grid>
+    ```
+
+2. Apply `PerformSorting` using the `Sorted` property on the server.
+
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using Syncfusion.EJ2.Base;
+    using Grid_MSSQL.Server.Data;
+
+    namespace Grid_MSSQL.Server.Controllers
+    {
+        [ApiController]
+        [Route("api/[controller]")]
+        public class TicketsController : ControllerBase
+        {
+            private readonly TicketRepository _repo;
+            private readonly DataOperations _dataOps = new DataOperations();
+
+            // POST: api/tickets
+            [HttpPost]
+            public async Task<IActionResult> List([FromBody] DataManagerRequest dm)
+            {
+                IEnumerable<Tickets> data = await _repo.GetTicketsAsync();
+
+                // Sorting
+                if (dm.Sorted != null && dm.Sorted.Count > 0)
+                    data = _dataOps.PerformSorting(data, dm.Sorted);
+
+                // Other operations (search, filter, paging)...
+                int count = data.Count();
+                if (dm.Skip != 0) data = _dataOps.PerformSkip(data, dm.Skip);
+                if (dm.Take != 0) data = _dataOps.PerformTake(data, dm.Take);
+
+                return Ok(dm.RequiresCounts ? new { result = data, count } : data);
+            }
+        }
+    }
+    ```
+
+**Sorting details:**
+
+- Clicking a column header creates sort descriptors that arrive in the `Sorted` property.
+- `DataOperations.PerformSorting()` orders the sequence based on field name and sort direction.
+- Sorting executes before count and paging to return correct page slices.
+
+When sorting is performed in the Grid, a request is sent to the server with the following payload.
+
+![Sorting Operation Payload](../images/mssql-grid-sorting.png)
+
+### Step 10: Perform CRUD operations
+
+CRUD operations enable creating, reading, updating, and deleting tickets directly through the Grid component. The `CustomAdaptor` routes these actions to ASP.NET Core API endpoints, which then call ADO.NET repository methods in **TicketRepository.cs**.
+
+Update (**app.component.ts**):
+
+```typescript
+import { Component } from '@angular/core';
+import { GridComponent, GridModule, ToolbarService, PageService, FilterService, SortService, EditService } from '@syncfusion/ej2-angular-grids';
+import { DataManager } from '@syncfusion/ej2-data';
+import { CustomAdaptor } from './custom-adaptor';
+
+const BASE_URL = 'http://localhost:5239/api/tickets';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [GridModule],
+  templateUrl: "app.component.html",
+  providers: [ToolbarService, PageService, FilterService, SortService, EditService],
+})
+export class AppComponent {
+  public dataManager: DataManager = new DataManager({
+    url: `${BASE_URL}`,
+    insertUrl: `${BASE_URL}/insert`,
+    updateUrl: `${BASE_URL}/update`,
+    removeUrl: `${BASE_URL}/remove`,
+    batchUrl: `${BASE_URL}/batch`,
+    adaptor: new CustomAdaptor()
+  });
+
+  public pageSettings = { pageSize: 12 };
+  public toolbar = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+  public editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+  public filterSettings = { type: "Excel" };
 }
+```
 
-{% endhighlight %}
-{% endtabs %}
+Update (**app.component.html**):
 
-![Syncfusion Angular Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
+```html
+<ejs-grid
+  [dataSource]="dataManager"
+  [allowPaging]="true"
+  [pageSettings]="pageSettings"
+  [toolbar]="toolbar"
+  [allowFiltering]="true"
+  [filterSettings]="filterSettings"
+  [allowSorting]="true"
+  [editSettings]="editSettings">
+  <e-columns>
+    <e-column field="TicketId" headerText="ID" width="90" textAlign="Right" isPrimaryKey="true" isIdentity="true" [allowSorting]="false"></e-column>
+    <!-- Additional columns -->
+  </e-columns>
+</ejs-grid>
+```
 
-> Reference a working sample at [this GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20CustomAdaptor/Grid_MSSQL).
+**Insert:**
+
+Record insertion allows new tickets to be added directly through the Grid component. The server generates defaults (public ticket ID and timestamps) and persists the record using ADO.NET.
+
+```csharp
+// TicketsController.cs
+[HttpPost("insert")]
+public async Task<IActionResult> Insert([FromBody] CRUDModel<Tickets> args)
+{
+    if (args?.Value == null)
+        return BadRequest("Invalid payload.");
+    var created = await _repo.InsertAsync(args.Value);
+    return Ok(created);
+}
+```
+
+**Insert action details:**
+
+1. The Grid collects row values and posts a `CRUDModel<Tickets>` payload to `/insert`.
+2. The controller validates the payload and calls `InsertAsync`.
+3. The repository generates `PublicTicketId` when missing and sets timestamps.
+4. ADO.NET executes the `INSERT` statement and returns the new `TicketId`.
+5. The API returns the created record; the Grid refreshes and displays the new row.
+
+When a new record added in the Grid, a request is sent to the server with the following payload.
+
+![Insert Operation Payload](../images/mssql-grid-add.png)
+
+**Update:**
+
+Record modification allows ticket details to be updated directly within the Grid. The server validates the ID and applies changes using ADO.NET.
+
+```csharp
+// TicketsController.cs
+[HttpPost("update")]
+public async Task<IActionResult> Update([FromBody] CRUDModel<Tickets> args)
+{
+    if (args?.Value == null)
+        return BadRequest("Invalid payload.");
+    if (args.Value.TicketId <= 0)
+        return BadRequest("TicketId is required for update.");
+    var updated = await _repo.UpdateAsync(args.Value);
+    return Ok(updated);
+}
+```
+
+**Update action details:**
+
+1. The Grid posts the updated row via `CRUDModel<Tickets>` to `/update`.
+2. The controller validates the payload and `TicketId`.
+3. The repository updates fields and sets `UpdatedAt`.
+4. ADO.NET executes the `UPDATE` statement.
+5. The API returns the updated entity; the Grid reflects the modification.
+
+When a record updated in the Grid, a request is sent to the server with the following payload.
+
+![Update Operation Payload](../images/mssql-grid-edit.png)
+
+**Delete:**
+
+Record deletion allows tickets to be removed directly from the Grid. The server accepts a key value and deletes the record by ID.
+
+```csharp
+// TicketsController.cs
+[HttpPost("remove")]
+public async Task<IActionResult> Remove([FromBody] CRUDModel<Tickets> args)
+{
+    if (args == null || args.Key == null)
+        return BadRequest("Key is required.");
+    if (!int.TryParse(args.Key.ToString(), out var id))
+        return BadRequest("Invalid key format.");
+
+    await _repo.DeleteAsync(id);
+    return Ok(new { TicketId = id });
+}
+```
+
+**Delete action details:**
+
+1. A record is selected and the `Delete` button is clicked.
+2. The Grid posts the key to `/remove` using `CRUDModel`.
+3. The controller parses the key and calls `DeleteAsync`.
+4. ADO.NET executes the `DELETE` statement.
+5. The API returns acknowledgment; the Grid removes the row.
+
+When a record deleted in the Grid, a request is sent to the server with the following payload.
+
+![Delete Operation Payload](../images/mssql-grid-delete.png)
+
+**Batch update:**
+
+Batch operations combine multiple insert, update, and delete actions into a single request, minimizing network overhead and ensuring transactional consistency by applying all changes atomically to the SQL Server database.
+
+```csharp
+// TicketsController.cs
+[HttpPost("batch")]
+public async Task<IActionResult> Batch([FromBody] CRUDModel<Tickets> args)
+{
+    if (args == null)
+        return BadRequest("Invalid payload.");
+
+    if (args.Changed != null)
+    {
+        foreach (var t in args.Changed)
+            await _repo.UpdateAsync(t);
+    }
+
+    if (args.Added != null)
+    {
+        for (int i = 0; i < args.Added.Count; i++)
+            args.Added[i] = await _repo.InsertAsync(args.Added[i]);
+    }
+
+    if (args.Deleted != null)
+    {
+        foreach (var t in args.Deleted)
+            await _repo.DeleteAsync(t.TicketId);
+    }
+
+    return Ok(new { status = "ok" });
+}
+```
+
+**Batch update details:**
+
+- The Grid collects pending changes and posts the combined payload.
+- The server iterates and applies ADO.NET operations in sequence.
+- The Grid refreshes to reflect bulk modifications.
+
+> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) Edit mode.
+
+When a batch update is performed in the Grid, a request is sent to the server with the following payload.
+
+![Update Operation Payload](../images/mssql-grid-batch.png)
+
+### Step 11: Complete code
+
+The following snippets assemble the final Angular Grid configuration used in the sample project.
+
+**App template:**
+
+```html
+<!-- app.component.html -->
+
+<ejs-grid #grid width="100%" height="400" [dataSource]="dataManager"
+  [allowSorting]="true" [allowFiltering]="true" [allowPaging]="true"
+  [toolbar]="toolbar" [editSettings]="editSettings" [filterSettings]="filterSettings">
+  <e-columns>
+    <e-column field="TicketId" headerText="ID" isPrimaryKey="true"
+      width="80" textAlign="Right" [visible]="true" [validationRules]="validationRules.ticketId"></e-column>
+    <e-column field="PublicTicketId" headerText="Ticket ID" width="130"
+      textAlign="Right" [allowEditing]="false">
+      <ng-template #template let-data>
+        <a class="status-text status-ticket-id">{{ data.PublicTicketId }}</a>
+      </ng-template>
+    </e-column>
+    <e-column field="Title" headerText="Subject" width="280"
+      clipMode="EllipsisWithTooltip" [validationRules]="validationRules.title"></e-column>
+    <e-column field="Status" headerText="Status" width="180"
+      editType="dropdownedit" [validationRules]="validationRules.status">
+      <ng-template #template let-data>
+        <span class="status-text {{ getStatusClass(data) }}"
+          [title]="getStatusDescription(data)">{{ data.Status }}</span>
+      </ng-template>
+    </e-column>
+    <e-column field="Priority" headerText="Priority" width="160"
+      editType="dropdownedit" [validationRules]="validationRules.priority">
+      <ng-template #template let-data>
+        <span class="priority-pill {{ getPriorityClass(data) }}"
+          [title]="getPriorityDescription(data)">
+          <span class="priority-icon" aria-hidden="true"></span>{{ data.Priority }}
+        </span>
+      </ng-template>
+    </e-column>
+    <e-column field="Category" headerText="Category" width="180"
+      editType="dropdownedit" [validationRules]="validationRules.category">
+      <ng-template #template let-data>
+        <span class="chip {{ getCategoryClass(data) }}">{{ data.Category }}</span>
+      </ng-template>
+    </e-column>
+    <e-column field="Department" headerText="Department" width="170"
+      editType="dropdownedit" [validationRules]="validationRules.department"></e-column>
+    <e-column field="CreatedBy" headerText="Requested By" width="180"
+      editType="dropdownedit" [validationRules]="validationRules.createdBy"></e-column>
+    <e-column field="Assignee" headerText="Agent" width="160"
+      editType="dropdownedit" [validationRules]="validationRules.assignee"></e-column>
+    <e-column field="DueDate" headerText="Resolution Due" width="200"
+      type="dateTime" format="MMM d, yyyy, h:mm a" editType="datetimepickeredit"
+      [validationRules]="validationRules.dueDate"></e-column>
+    <e-column field="ResponseDue" headerText="Response Due" width="200" format="MMM d, yyyy, h:mm a"
+      editType="datetimepickeredit" [validationRules]="validationRules.responseDue">
+      <ng-template #template let-data>
+        <span class="response-due">
+          {{ data.ResponseDue ? (data.ResponseDue | date:'MMM d, yyyy, h:mm a') : '' }}
+        </span>
+      </ng-template>
+    </e-column>
+    <e-column field="UpdatedAt" headerText="Last Modified" width="200"
+      type="dateTime" format="MMM d, yyyy, h:mm a" editType="datetimepickeredit"></e-column>
+    <e-column field="CreatedAt" headerText="Created On" width="200"
+      type="dateTime" format="MMM d, yyyy, h:mm a" editType="datetimepickeredit"></e-column>
+  </e-columns>
+</ejs-grid>
+
+```
+
+> - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` for a column that contains unique values.
+> - Set [IsIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isidentity) to `true` for auto-generated columns to disable editing during add or update operations.
+> - The [EditType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+> - The behavior of default editors can be customized using the [edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the Grid column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types#customizing-the-textbox-component-for-stringedit-type)
+> - [Type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property specifies the data type of a Grid column.
+> - The [Template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that allows rendering custom elements in a column instead of the default field value.(https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
+
+
+**App component:**
+
+```ts
+import { Component } from "@angular/core";
+import { CommonModule, DatePipe } from "@angular/common";
+import {
+  GridModule,
+  FilterService,
+  SortService,
+  EditService,
+  ToolbarService,
+  PageService,
+  ToolbarItems,
+  EditSettingsModel,
+  FilterSettingsModel,
+} from "@syncfusion/ej2-angular-grids";
+import { TicketRow } from "./app.types";
+import { DataManager } from "@syncfusion/ej2-data";
+import { CustomAdaptor } from "./custom-adaptor";
+
+const BASE_URL = "http://localhost:5239/api/tickets";
+
+@Component({
+  selector: "app-root",
+  standalone: true,
+  imports: [CommonModule, DatePipe, GridModule],
+  templateUrl: "app.component.html",
+  styleUrls: ["app.component.css"],
+  providers: [PageService, FilterService, SortService, EditService, ToolbarService],
+})
+export class AppComponent {
+  public dataManager: DataManager = new DataManager({
+    url: `${BASE_URL}`,
+    insertUrl: `${BASE_URL}/insert`,
+    updateUrl: `${BASE_URL}/update`,
+    removeUrl: `${BASE_URL}/remove`,
+    batchUrl: `${BASE_URL}/batch`,
+    adaptor: new CustomAdaptor(),
+  });
+
+  public toolbar: ToolbarItems[] = ["Add", "Edit", "Delete", "Update", "Cancel", "Search"];
+  public editSettings: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true };
+  public filterSettings: FilterSettingsModel = { type: "Excel" };
+
+  public validationRules = {
+    ticketId: { required: true },
+    title: { required: true },
+    status: { required: true },
+    priority: { required: true },
+    category: { required: true },
+    department: { required: true },
+    createdBy: { required: true },
+    assignee: { required: true },
+    dueDate: { required: true },
+    responseDue: { required: true }
+  };
+
+  getStatusClass(row: TicketRow): string {
+    const map: Record<string, string> = { Open: "status-open", Closed: "status-closed", Pending: "status-pending" };
+    return map[row.Status] ?? "";
+  }
+
+  getStatusDescription(row: TicketRow): string {
+    return `Status: ${row.Status}`;
+  }
+
+  getPriorityClass(row: TicketRow): string {
+    const map: Record<string, string> = { High: "priority-high", Medium: "priority-medium", Low: "priority-low" };
+    return map[row.Priority] ?? "";
+  }
+
+  getPriorityDescription(row: TicketRow): string {
+    return `Priority: ${row.Priority}`;
+  }
+
+  getCategoryClass(row: TicketRow): string {
+    const map: Record<string, string> = { Bug: "chip-bug", Feature: "chip-feature", Task: "chip-task" };
+    return map[row.Category] ?? "";
+  }
+}
+```
+
+Here is the complete Controller **TicketsController.cs** file:
+
+```csharp
+using Grid_MSSQL.Server.Data;
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+
+namespace Grid_MSSQL.Server.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TicketsController : ControllerBase
+    {
+        private readonly TicketRepository _repo;
+        private readonly DataOperations _dataOps = new DataOperations();
+
+        public TicketsController(TicketRepository repo)
+        {
+            _repo = repo;
+        }
+
+        // READ (DataManager + UrlAdaptor expects POST)
+        // POST api/tickets
+        [HttpPost]
+        public async Task<IActionResult> List([FromBody] DataManagerRequest dm)
+        {
+            IEnumerable<Tickets> data = await _repo.GetTicketsAsync();
+
+            // Searching
+            if (dm.Search != null && dm.Search.Count > 0)
+            {
+                data = _dataOps.PerformSearching(data, dm.Search);
+            }
+
+            // Filtering
+            if (dm.Where != null && dm.Where.Count > 0)
+            {
+                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+            }
+
+            // Sorting
+            if (dm.Sorted != null && dm.Sorted.Count > 0)
+            {
+                data = _dataOps.PerformSorting(data, dm.Sorted);
+            }
+
+            // Count BEFORE paging
+            int count = data.Count();
+
+            // Paging
+            if (dm.Skip != 0)
+                data = _dataOps.PerformSkip(data, dm.Skip);
+            if (dm.Take != 0)
+                data = _dataOps.PerformTake(data, dm.Take);
+
+            // Final shape required by UrlAdaptor
+            return Ok(dm.RequiresCounts ? new { result = data, count } : data);
+        }
+
+        // INSERT
+        // POST api/tickets/insert
+        [HttpPost("insert")]
+        public async Task<IActionResult> Insert([FromBody] CRUDModel<Tickets> args)
+        {
+            if (args?.Value == null)
+                return BadRequest("Invalid payload.");
+            var created = await _repo.InsertAsync(args.Value);
+            return Ok(created);
+        }
+
+        // UPDATE
+        // POST api/tickets/update
+        [HttpPost("update")]
+        public async Task<IActionResult> Update([FromBody] CRUDModel<Tickets> args)
+        {
+            if (args?.Value == null)
+                return BadRequest("Invalid payload.");
+            if (args.Value.TicketId <= 0)
+                return BadRequest("TicketId is required for update.");
+            var updated = await _repo.UpdateAsync(args.Value);
+            return Ok(updated);
+        }
+
+        // REMOVE
+        // POST api/tickets/remove
+        // UrlAdaptor sends { key: <id>, keyColumn: "TicketId", action: "remove" }
+        [HttpPost("remove")]
+        public async Task<IActionResult> Remove([FromBody] CRUDModel<Tickets> args)
+        {
+            if (args == null || args.Key == null)
+                return BadRequest("Key is required.");
+            if (!int.TryParse(args.Key.ToString(), out var id))
+                return BadRequest("Invalid key format.");
+
+            await _repo.DeleteAsync(id);
+            return Ok(new { TicketId = id });
+        }
+
+        // BATCH
+        // POST api/tickets/batch
+        [HttpPost("batch")]
+        public async Task<IActionResult> Batch([FromBody] CRUDModel<Tickets> args)
+        {
+            if (args == null)
+                return BadRequest("Invalid payload.");
+
+            if (args.Changed != null)
+            {
+                foreach (var t in args.Changed)
+                    await _repo.UpdateAsync(t);
+            }
+
+            if (args.Added != null)
+            {
+                for (int i = 0; i < args.Added.Count; i++)
+                    args.Added[i] = await _repo.InsertAsync(args.Added[i]);
+            }
+
+            if (args.Deleted != null)
+            {
+                foreach (var t in args.Deleted)
+                    await _repo.DeleteAsync(t.TicketId);
+            }
+
+            return Ok(new { status = "ok" });
+        }
+    }
+}
+```
+
+## Running the application
+
+**Step 1: Build and run the ASP.NET Core server:**
+
+1. Configure the "TicketDb" connection string in **appsettings.json**.
+2. From the server project folder, run the following command in a terminal:
+
+```bash
+dotnet build
+dotnet run
+```
+
+**Explanation:**
+
+- The API exposes endpoints at a base similar to **https://localhost:7000/api/tickets** (adjust ports as necessary).
+- This endpoint is configured in the DataManager `url` property.
+
+**Step 2: Run the Angular client:**
+
+1. From the client folder, install dependencies and start the Angular dev server:
+
+```bash
+npm install
+ng serve --open
+```
+
+**Step 3: Access the application:**
+
+1. Open a web browser.
+2. Navigate to the URL shown in the terminal (typically **http://localhost:4200**).
+3. The Network Support Ticket System is now running and ready to use.
+
+**Available features:**
+
+- **View Data**: All tickets from the SQL Server database are displayed in the Grid.
+- **Search**: Use the search box to find tickets by any field.
+- **Filter**: Click on column headers to apply filters.
+- **Sort**: Click on column headers to sort data in ascending or descending order.
+- **Pagination**: Navigate through records using page numbers.
+- **Add**: Click the "Add" button to create a new ticket.
+- **Edit**: Click the "Edit" button to modify existing tickets.
+- **Delete**: Click the "Delete" button to remove tickets.
+
+## Complete sample repository
+
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MSSQL).
+
+The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.

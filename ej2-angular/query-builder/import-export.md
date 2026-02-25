@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Importing and Exporting in Angular Query builder component
 
-Importing facilitates the viewing or editing of predefined conditions available in JSON, SQL, and MongoDB query formats, while exporting enables obtaining the created rules in the query builder as JSON, SQL, and MongoDB queries.
+Import predefined query conditions and export constructed rules in multiple formats: JSON, SQL, and MongoDB. This streamlines query management and enables seamless integration with external systems and saved configurations.
 
 ## Importing
 
-Importing enables users to bring predefined conditions into the system for viewing or editing, available in formats such as JSON, SQL, and MongoDB query. It facilitates the quick incorporation of pre-defined rules or parameters into workflows, streamlining the setup process by importing directly from external sources or saved configurations.
+Import predefined conditions into the Query Builder for viewing or editing. Supported formats include JSON, SQL (Inline, Parameter, and Named Parameter), and MongoDB queries. Importing accelerates setup by allowing you to load pre-configured rules from external sources or saved states.
 
 ### Importing from JSON Object
 
-Importing from JSON enables users to bring predefined conditions encoded in JSON format into the system. This feature streamlines the process by providing a standardized format for importing data, ensuring compatibility, and ease of use
+Import conditions stored in JSON format for standardized data exchange and compatibility. JSON import simplifies the process of loading predefined query configurations.
 
 #### Initial rendering
 
-To initially apply conditions, you can establish the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) by importing a structured JSON object and defining its properties.
+Initialize the Query Builder with predefined conditions by setting the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) property with a structured JSON object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,9 +36,9 @@ To initially apply conditions, you can establish the [`rule`](https://ej2.syncfu
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs8" %}
 
-#### Post rendering
+#### Runtime updates
 
-You can set the conditions from structured JSON object through the [`setRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrules) method.
+Update Query Builder conditions after rendering using the [`setRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrules) method with a structured JSON object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +54,11 @@ You can set the conditions from structured JSON object through the [`setRules`](
 
 ### Importing from SQL Query
 
-Importing from SQL involves integrating predefined conditions or data stored in a SQL database into the Query Builder. This enables the direct integration of SQL queries, thereby improving workflow efficiency and data accuracy within the application. SQL importing supports various types, including Inline SQL, Parameter SQL, and Named Parameter SQL.
+Import SQL queries into the Query Builder for direct integration and conversion to Query Builder rules. SQL import supports three types: Inline SQL, Parameter SQL, and Named Parameter SQL, enhancing workflow efficiency and data accuracy.
 
 #### Importing from Inline SQL Query
 
-Importing from Inline SQL involves integrating SQL queries directly into the Query Builder. This method streamlines the process by enabling users to input SQL statements directly into the application for analysis, manipulation, or further processing within the Query Builder. Conditions can be set from Inline SQL queries using the [`setRulesFromSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrulesfromsql) method.
+Convert Inline SQL queries directly into Query Builder rules using the [`setRulesFromSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrulesfromsql) method. This approach streamlines SQL-to-query-builder conversion for analysis and further processing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

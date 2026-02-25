@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add a minimize maximize buttons in Angular Dialog component
+# Add minimize and maximize buttons to Angular Dialog component
 
-Angular Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/#headertemplate) property and handle the actions in the button click events, as shown in the following sample.
+The Angular Dialog component enables users to minimize or maximize the dialog window. Add minimize and maximize custom buttons near the close icon in the dialog header using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/#headertemplate) property, and handle button click events as shown in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

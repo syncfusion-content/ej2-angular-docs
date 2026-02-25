@@ -8,20 +8,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api tooltipAnimationSettings in Angular Tooltip component
+# API tooltipAnimationSettings in Angular Tooltip component
 
-Animation options that are common for both open and close actions of the Tooltip.
+Animation options common to both open and close actions of the Tooltip.
 
 ## Properties
 
 ### delay `number`
 
-It is used to denote the delay value in milliseconds and indicating the waiting time before animation begins.
+Specifies the delay value in milliseconds before the animation begins.
 
 ### duration `number`
 
-It is used to denote the duration of the animation that is completed per animation cycle.
+Specifies the duration in milliseconds for one animation cycle to complete.
 
 ### effect [`Effect`](https://ej2.syncfusion.com/angular/documentation/api-effect.html)
 
-It is used to apply the Animation effect on the Tooltip, during open and close actions.
+Specifies the animation effect to apply to the tooltip during open and close actions.

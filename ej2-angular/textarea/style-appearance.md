@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Sizing in Angular TextArea Component
 
-you can adjust the size of the TextArea by applying specific classes:
+Adjust the size of the TextArea by applying specific CSS classes:
 
 | Property  | Description |
 | -- | -- |
-| Small  | Add the `e-small` class to the input element or its container to render a smaller-sized TextArea. |
-| Bigger | Add the `e-bigger` class to the input element or its container to render a larger-sized TextArea. |
+| Small  | Add the `e-small` class to render a smaller-sized TextArea. |
+| Bigger | Add the `e-bigger` class to render a larger-sized TextArea. |
 
-By applying these classes, users can easily customize the appearance of the TextArea to better fit their application's design requirements.
+Apply these classes to customize the TextArea appearance to match your application's design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,10 +31,9 @@ By applying these classes, users can easily customize the appearance of the Text
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs1" %}
 
-## Filled and outline mode
+## Filled and Outline Mode
 
-The Filled and Outline modes can be enabled in the TextArea component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cssClass) API.
-By adding these classes, users can choose between a filled or outline appearance for the TextArea component, aligning with the design aesthetics of their application.
+Enable filled and outline modes in the TextArea component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cssClass) property. These classes allow you to choose between filled or outline appearance, aligning with your application's design.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,11 +49,9 @@ By adding these classes, users can choose between a filled or outline appearance
 
 >Note: Filled and Outline theme customization are available only with Material themes.
 
-## Custom styling with cssClass API in TextArea
+## Custom Styling with CssClass Property in TextArea
 
-The `cssClass` Api provides a powerful way to apply custom styling to the TextArea component, allowing users to customize its appearance and layout according to their design requirements.
-
-By utilizing the `cssClass` API, users can apply custom CSS classes to the TextArea component's container, enabling control over its styling properties such as color, padding, margins, borders, and more.
+The `cssClass` property provides a powerful way to apply custom styling to the TextArea component. Use this property to apply custom CSS classes to the textarea container, enabling control over styling properties such as color, padding, margins, borders, and more.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,9 +65,9 @@ By utilizing the `cssClass` API, users can apply custom CSS classes to the TextA
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs3" %}
 
-## Setting the disabled state in TextArea
+## Setting the Disabled State in TextArea
 
-To disable the TextArea, you can utilize the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textarea/#enabled) property. When set to `false`, the TextArea becomes disabled, preventing user interaction.
+Disable the TextArea using the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textarea/#enabled) property. Set this property to `false` to disable the textarea and prevent user interaction.
 
 ```typescript
 
@@ -88,9 +85,9 @@ export class AppComponent { }
 
 ```
 
-## Set the readonly TextArea
+## Set the Read-Only TextArea
 
-To make the TextArea read-only , you can use the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textarea/#readonly) property. When set to `true`, it prevents users from editing the content of the TextArea.
+Make the TextArea read-only using the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textarea/#readonly) property. Set this property to `true` to prevent users from editing the textarea content.
 
 ```typescript
 
@@ -108,11 +105,11 @@ export class AppComponent { }
 
 ```
 
-## Set the rounded corner in TextArea
+## Set the Rounded Corner in TextArea
 
-Render the TextArea with `rounded corner` by adding the `e-corner` class to the input parent element.
+Render the TextArea with rounded corners by adding the `e-corner` class to the textarea container.
 
->This rounded corner is visible only in box model input component
+> Rounded corners are visible only in box model textarea components.
 
 ```typescript
 
@@ -132,9 +129,9 @@ export class AppComponent { }
 
 ```
 
-## Static clear button in TextArea
+## Static Clear Button in TextArea
 
-To display a static clear button in the TextArea component, you can add the `e-static-clear` class to the `cssClass` property. This class ensures that the clear button remains visible at all times, providing users with the ability to easily clear the TextArea content without needing to focus on the control.
+Display a static clear button in the TextArea component by adding the `e-static-clear` class to the `cssClass` property. This class ensures the clear button remains visible at all times, allowing users to easily clear the textarea content without focusing on the control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,9 +145,9 @@ To display a static clear button in the TextArea component, you can add the `e-s
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs4" %}
 
-## Customize the TextArea background color and text color
+## Customize the TextArea Background Color and Text Color
 
-You can customize the TextArea styles such as background-color, text-color and border-color by overriding its default styles to achieve the desired appearance for the TextArea.
+Customize TextArea styles such as background color, text color, and border color by overriding the default styles to achieve your desired appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,9 +161,9 @@ You can customize the TextArea styles such as background-color, text-color and b
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs5" %}
 
-## Change the floating label color of the TextArea
+## Change the Floating Label Color of the TextArea
 
-You can change the floating label color of the TextArea for both `success` and `warning` validation states by applying the following CSS styles.
+Change the floating label color for both `success` and `warning` validation states by applying the following CSS styles.
 
 ```css
 

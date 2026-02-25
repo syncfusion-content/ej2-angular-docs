@@ -46,7 +46,7 @@ You can disable the rating component by using the [`disabled`](https://ej2.syncf
 
 ## Visible
 
-You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/rating#visible) property of the rating component to component the visibility of the component. When the `visible` property is set to `true`, the rating component will be visible on the page. When it is set to `false`, the component will be hidden.
+can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/rating#visible) property of the rating component to control the visibility of the component. When the `visible` property is set to `true`, the rating component is displayed on the page. When it is set to `false`, the component is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api
 
 ## Read only
 
-You can use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/rating#readonly) property of the rating component to make the component non-interactive and prevent the user from changing the rating value.
+Use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/rating#readonly) property to render the rating component in a non-interactive state, preventing users from modifying the rating value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,13 +76,13 @@ You can use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% previewsample "page.domainurl/samples/rating/appearance/readonly-cs" %}
 
-## CssClass
+## CSS classes
 
-You can customize the appearance of the rating component, such as by changing its colors, fonts, sizes, or other visual aspects by using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/rating#cssclass) property.
+Customize the rating component's appearance—including colors, fonts, sizes, and other visual aspects—using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/rating#cssclass) property. The following sections demonstrate common customization techniques.
 
 ### Changing rating symbol border color
 
-You can change the rating icon border color in rating component, you can use the `cssClass` property and set the `text-stroke` CSS property of `.e-rating-icon` to your desired border color.
+Modify the rating icon border color by applying the `cssClass` property and setting the `text-stroke` CSS property of `.e-rating-icon` to your desired color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,7 +101,7 @@ You can change the rating icon border color in rating component, you can use the
 
 ### Changing rated/un-rated symbol fill color
 
-You can customize the fill colors of rated and un-rated icons in the rating component using the `cssClass` property and the `linear-gradient` color-stops in the `background` CSS property of `.e-rating-icon`. The **first** color-stop defines the rated fill color and the **second** defines the un-rated fill color.
+Customize the fill colors of rated and unrated icons by using the `cssClass` property and applying `linear-gradient` color-stops in the `background` CSS property of `.e-rating-icon`. The **first** color-stop defines the rated fill color and the **second** color-stop defines the unrated fill color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -118,11 +118,11 @@ You can customize the fill colors of rated and un-rated icons in the rating comp
 
 {% previewsample "page.domainurl/samples/rating/appearance/fill-color-cs" %}
 
-This will customize the rated fill color to `#ffe814` and un-rated fill color to `#d8d7d4`. `--rating-value` in the linear-gradient provides the current value of the rating item.
+This customizes the rated fill color to `#ffe814` and unrated fill color to `#d8d7d4`. The `--rating-value` variable in the linear-gradient represents the current rating value.
 
 ### Changing the item spacing
 
-You can change the space between the rating items in rating component, by using the `cssClass` property and setting the `margin` / `padding` CSS property of `.e-rating-item-container` to your desired size.
+Adjust the space between rating items by using the `cssClass` property and setting the `margin` or `padding` CSS properties of `.e-rating-item-container` to your desired value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,9 +139,9 @@ You can change the space between the rating items in rating component, by using 
 
 {% previewsample "page.domainurl/samples/rating/appearance/spacing-cs" %}
 
-## Changing icon using CssClass
+## Changing icon using CSS classes
 
-You can change the rating item icon in rating component, you can use the `cssClass` property and set the `content` CSS property of `.e-icons.e-star-filled:before` to your desired font icon.
+Replace the default rating item icon by using the `cssClass` property and setting the `content` CSS property of `.e-icons.e-star-filled:before` to your desired font icon character code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

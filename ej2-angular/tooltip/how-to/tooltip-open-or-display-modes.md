@@ -10,33 +10,33 @@ domainurl: ##DomainURL##
 
 # Tooltip open or display modes in Angular Tooltip component
 
-The open mode property of Tooltip can be defined for hovering, focusing, or clicking on a target. The Tooltip component has the following types of open mode:
+The `openMode` property of the Tooltip defines the trigger action: hovering, focusing, or clicking on a target. The Tooltip component supports the following open modes:
 
-    * Auto
-    * Hover
-    * Click
-    * Focus
-    * Custom
+* Auto
+* Hover
+* Click
+* Focus
+* Custom
 
 **Auto**
 
-Tooltip appears on hover or when the target element receives focus.
+The tooltip appears on hover or when the target element receives focus.
 
 **Hover**
 
-Tooltip appears when you hover over the target.
+The tooltip appears when you hover over the target element.
 
 **Click**
 
-Tooltip appears when you click a target element.
+The tooltip appears when you click a target element.
 
 **Focus**
 
-Tooltip appears when you focus (say through tab key) on a target element.
+The tooltip appears when you focus on a target element (e.g., through the Tab key).
 
 **Custom**
 
-Tooltip is not triggered by any default action. You need to bind your own events and use either the open or close public methods.
+The tooltip does not trigger by any default action. Bind your own events and use the `open()` or `close()` methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

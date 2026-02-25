@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Convert image into binary format in Angular Uploader
+# Convert Image into Binary Format in Angular Uploader
 
-By default, the file upload component saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images.
-To retrieve binary format of image files, convert the posted file’s input stream into binary reader and read as bytes using ReadBytes method.
+By default, the Uploader component saves uploaded image files to physical directories. You can also convert images to binary format on the server before saving them.
+To obtain binary data for an uploaded image, read the file's input stream on the server using a BinaryReader and call ReadBytes.
 
-Refer to the below server-side code snippet
+Refer to the server-side code snippet below.
 
-``` csharp
+```csharp
 
 [AcceptVerbs("Post")]
 public void Save()

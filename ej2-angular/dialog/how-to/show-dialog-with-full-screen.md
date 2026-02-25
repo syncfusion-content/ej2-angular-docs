@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show dialog with full screen in Angular Dialog component
+# Display dialog in fullscreen in Angular Dialog component
 
-You can show the dialog in fullscreen by passing `true` as argument to the dialog [`show`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#show) method.
+Display the dialog in fullscreen mode by passing `true` as an argument to the dialog's [`show`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#show) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

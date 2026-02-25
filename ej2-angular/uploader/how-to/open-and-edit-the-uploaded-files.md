@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and edit the uploaded files in Angular Uploader component
+# Open and edit uploaded files in Angular Uploader component
 
-The uploader component allows you to modify the file after uploading to the server, which can be achieved using success event of the uploader.
+The Uploader component allows you to open and edit files after uploading them to the server. This functionality is accomplished by using the `success` event of the Uploader.
 
-You can retrieve the saved file path in the uploader success event and assign it to custom attribute (data-file-name) value of the respective file list element to open the uploaded file. Click the respective file element to create a new request along with saved file path using http header. In the server-side, get the file path from the header and open the file using `process.start` method.
+You can retrieve the saved file path in the Uploader's `success` event and assign it to a custom attribute (`data-file-name`) on the respective file list element. When users click a file element, a new request is created with the saved file path passed via an HTTP header. On the server side, retrieve the file path from the header and open the file using the appropriate file handling method.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -57,7 +57,9 @@ export class AppComponent {
 }
 ```
 
-## Server side for open and edit the uploaded files
+## Server-side implementation
+
+**Note:** The following examples show C# server-side code for file handling. Adapt the implementation based on your server platform.
 
 ```csharp
 public void Save() {

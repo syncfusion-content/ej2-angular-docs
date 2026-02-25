@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent opening of the dialog in Angular Dialog component
+# Prevent the dialog from opening in Angular Dialog component
 
-You can prevent opening of the dialog by setting the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#beforeopen) event argument cancel value to true.
-In the following sample, the success dialog is opened when you enter the username value with minimum 4 characters. Otherwise, it will not be opened.
+Prevent the dialog from opening by setting the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#beforeopen) event argument's cancel property to `true`.
+The following sample opens the success dialog only when you enter a username with a minimum of 4 characters; otherwise, it does not open.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

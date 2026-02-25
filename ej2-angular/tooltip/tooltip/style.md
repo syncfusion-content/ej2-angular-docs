@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style in Angular Tooltip component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following CSS structure allows you to customize the tooltip appearance based on your preferences.
 
 ## Customizing the tooltip
 
-Use the following CSS to customize the tooltip.
+Customize the tooltip using the following CSS:
 
 ```css
 .e-tooltip-wrap {
@@ -25,7 +25,7 @@ Use the following CSS to customize the tooltip.
 
 ## Customizing the tooltip popup
 
-Use the following CSS to customize the tooltip popup properties.
+Customize tooltip popup properties using the following CSS:
 
 ```css
 .e-tooltip-wrap.e-popup {
@@ -36,7 +36,7 @@ Use the following CSS to customize the tooltip popup properties.
 
 ## Customizing the tooltip content
 
-Use the following CSS to customize the tooltip content.
+Customize tooltip content using the following CSS:
 
 ```css
 .e-tooltip-wrap .e-tip-content {
@@ -48,10 +48,10 @@ Use the following CSS to customize the tooltip content.
 
 ## Customizing the tooltip arrow tip
 
-Use the following CSS to customize the tooltip arrow tip.
+Customize the tooltip arrow tip using the following CSS:
 
 ```css
-/* To customize the arrow tip at bottom */
+/* Customize arrow tip at bottom */
 .e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
     height: 12px;
     left: 50%;
@@ -59,7 +59,7 @@ Use the following CSS to customize the tooltip arrow tip.
     width: 24px;
 }
 
-/* To customize the arrow tip at top */
+/* Customize arrow tip at top */
 .e-tooltip-wrap .e-arrow-tip.e-tip-top {
     height: 12px;
     left: 50%;
@@ -67,7 +67,7 @@ Use the following CSS to customize the tooltip arrow tip.
     width: 24px;
 }
 
-/* To customize the arrow tip at left */
+/* Customize arrow tip at left */
 .e-tooltip-wrap .e-arrow-tip.e-tip-left {
     height: 24px;
     left: -9px;
@@ -75,7 +75,7 @@ Use the following CSS to customize the tooltip arrow tip.
     width: 12px;
 }
 
-/* To customize the arrow tip at right */
+/* Customize arrow tip at right */
 .e-tooltip-wrap .e-arrow-tip.e-tip-right {
     height: 24px;
     left: 100%;
@@ -86,7 +86,7 @@ Use the following CSS to customize the tooltip arrow tip.
 
 ## Customizing the tooltip inner tip
 
-Use the following CSS to customize the tooltip inner tip.
+Customize the tooltip inner tip using the following CSS:
 
 ```css
 .e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
@@ -97,31 +97,31 @@ Use the following CSS to customize the tooltip inner tip.
 
 ## Customizing the tooltip outer tip
 
-Use the following CSS to customize the tooltip outer tip.
+Customize the tooltip outer tip using the following CSS:
 
 ```css
-/* To customize the arrow tip at bottom */
+/* Customize arrow tip at bottom */
 .e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
     border-left: 12px solid transparent;
     border-right: 14px solid transparent;
     border-top: 12px solid #000;
 }
 
-/* To customize the arrow tip at top */
+/* Customize arrow tip at top */
 .e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
     border-bottom: 12px solid #000;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
 }
 
-/* To customize the arrow tip at left */
+/* Customize arrow tip at left */
 .e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
     border-bottom: 12px solid transparent;
     border-right: 12px solid #000;
     border-top: 12px solid transparent;
 }
 
-/* To customize the arrow tip at right */
+/* Customize arrow tip at right */
 .e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
     border-bottom: 12px solid transparent;
     border-left: 12px solid #000;

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bind the event to the buttons in footer in Angular Dialog component
+# Bind events to footer buttons in Angular Dialog component
 
-You can bind the actions to the buttons inside the footer using the buttons property. In the following example,dialog will be closed when you click on the buttons.
+Bind actions to footer buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/#buttons) property. In the following example, the dialog closes when you click the buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,4 +24,4 @@ You can bind the actions to the buttons inside the footer using the buttons prop
   
 {% previewsample "page.domainurl/samples/dialog/button-actions-cs1" %}
 
-To access the current component within the button actions, add **bind(this)** along with function name in action binding.
+To access the current component within button actions, include **bind(this)** with the function name in the action binding.

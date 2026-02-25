@@ -10,32 +10,30 @@ domainurl: ##DomainURL##
 
 # User interaction in Angular Signature component
 
-The below interactions were available in Signature, and we can walk through one by one.
+The Signature component supports the following user interactions to enhance the signing experience:
 
-* Undo and Redo
-* Clear
-* Disabled
-* ReadOnly
+* **Undo and Redo** - Navigate through signature history
+* **Clear** - Erase the signature
+* **Disabled** - Disable signature input
+* **Read-only** - View-only mode
 
 ## Undo
 
-In the Signature, every action can be maintained as a snap for undo and redo operations. And maintained SnapIndex for indexing the snap collection.
+The Signature component maintains a history of actions (snapshots) to support undo/redo functionality. Use the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#undo) method to revert the last action by moving to the previous snapshot. Check if undo is available using [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo) before enabling the undo button.
 
-The [`undo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#undo) method reverts the last action of signature by decreasing SnapIndex value to  index previous snap. Here, [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo) method is used to ensure whether undo can be performed or not.
-
-The [`redo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#redo) method reverts the last undo action of the signature by increasing the SnapIndex to  get the next snap. Here, [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo) method is used to ensure whether redo can be performed or not.
+Use the [`redo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#redo) method to repeat the last undone action by moving to the next snapshot. Check if redo is available using [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo) before enabling the redo button.
 
 ## Clear
 
-The [`clear`](https://ej2.syncfusion.com/angular/documentation/api/signature/#clear) method is used to clears the signature and makes the canvas empty. This is also considered in Undo/ Redo. Here, [`isEmpty`](https://ej2.syncfusion.com/documentation/api/signature/#isempty) method is used to ensure whether the signature is empty or not.
+The [`clear`](https://ej2.syncfusion.com/angular/documentation/api/signature/#clear) method erases the entire signature and resets the canvas. This action is tracked in the undo/redo history. Use [`isEmpty`](https://ej2.syncfusion.com/documentation/api/signature/#isempty) to check if the signature is empty before performing validation.
 
 ## Disabled
 
-The [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/signature/#disabled) property is used to enables/disables the signature component. In the disabled state, the user is not allowed to draw signature. And it can’t be focused until the user enabled the signature.
+Use the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/signature/#disabled) property to enable or disable signature input. When disabled, users cannot draw, and the component cannot receive focus until re-enabled.
 
-## ReadOnly
+## Read-only
 
-The [`isReadOnly`](https://ej2.syncfusion.com/angular/documentation/api/signature/#isreadonly) property is used to enables/disables the ReadOnly Signature. It can be focused but it prevents drawing in Signature.
+Use the [`isReadOnly`](https://ej2.syncfusion.com/angular/documentation/api/signature/#isreadonly) property to enable read-only mode. The component remains focusable but prevents any drawing operations, allowing users to view signatures without modification.
 
 The following sample explains about user interactions available in signature.
 

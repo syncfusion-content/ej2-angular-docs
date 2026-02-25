@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add confirm dialog to remove the files in Angular Uploader component
+# Add Confirm Dialog to Remove Files in Angular Uploader Component
 
-You can customize the uploader component using confirm dialog before removing the files.
-Here, ej2 dialog is used as confirm dialog. Refer to the following example.
+Customize the uploader to show a confirmation dialog before removing files. The following example uses the EJ2 Dialog component as a confirm dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

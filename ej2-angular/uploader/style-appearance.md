@@ -8,28 +8,28 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular Uploader component
+# Style and appearance in Angular Uploader component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
+The following CSS structure allows you to customize the Uploader component's appearance to match your design preferences.
 
-## Customizing the appearance of File Upload wrapper element
+## Customize the Uploader wrapper element
 
-Use the following CSS to customize the appearance of wrapper element.
+Use the following CSS to customize the wrapper element's dimensions:
 
 ```css
-/* To specify height */
+/* To specify height and width */
 .e-upload.e-control-wrapper, .e-bigger.e-small .e-upload.e-control-wrapper {
         height: 300px;
         width: 300px;
 }
 ```
 
-## Customizing the File Upload browse button
+## Customize the browse button
 
-Use the following CSS to customize the File Upload browse button
+Use the following CSS to customize the browse button's styling:
 
 ```css
-/* To specify font size and color */
+/* To specify font family, size, and color */
 .e-upload .e-file-select-wrap .e-btn, .e-upload .e-upload-actions .e-btn, .e-bigger.e-small .e-upload .e-file-select-wrap .e-btn, .e-bigger.e-small .e-upload .e-upload-actions .e-btn {
         font-family: cursive;
         height: 40px;
@@ -38,9 +38,9 @@ Use the following CSS to customize the File Upload browse button
 }
 ```
 
-## Customizing the File Upload content
+## Customize the drop area content
 
-Use the following CSS to customize the File Upload content
+Use the following CSS to customize the drop area text styling:
 
 ```css
 /* To specify font size and color */
@@ -50,9 +50,9 @@ Use the following CSS to customize the File Upload content
 }
 ```
 
-## Customizing the uploaded file container in File Upload
+## Customize the file list container
 
-Use the following CSS to customize the uploaded file container in File Upload
+Use the following CSS to customize the uploaded file list appearance:
 
 ```css
 /* To specify background color */

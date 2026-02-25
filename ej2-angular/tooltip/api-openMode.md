@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api openMode in Angular Tooltip component
+# API openMode in Angular Tooltip component
 
-Set of open modes available for Tooltip.
+Available open modes for the Tooltip component:
 * Auto
 * Hover
 * Click

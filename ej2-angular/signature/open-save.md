@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open save in Angular Signature component
+# Open and save signatures in Angular Signature component
 
-The Signature component supports to open the signature by using hosted/online URL or base64. And it also supports various save options like image, base64, and blob.
+The Signature component supports opening pre-drawn signatures from base64 or hosted URLs, and saving signatures in multiple formats including images, base64, and blob.
 
 ## Open Signature
 
-The signature component opens a pre-drawn signature as either base64 or hosted/ online URL using the [`load`](https://ej2.syncfusion.com/angular/documentation/api/signature/#load) method. It supports the PNG, JPEG, and SVG image’s base64.
+Load a pre-drawn signature using the [`load`](https://ej2.syncfusion.com/angular/documentation/api/signature/#load) method. It accepts base64-encoded images or hosted/online URLs. Supported formats: PNG, JPEG, and SVG base64 encoding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,11 +30,11 @@ The signature component opens a pre-drawn signature as either base64 or hosted/ 
 
 ## Save Signature
 
-The Signature component saves the signature as base64, blob, and image like PNG, JPEG, and SVG.
+Save signatures in multiple formats using the Signature component.
 
 ### Save as Base64
 
-The `getSignature` method is used to get the signature as base64 with the PNG, JPEG, and SVG type. This can be loaded to signature using [`load`](https://ej2.syncfusion.com/angular/documentation/api/signature/#load) method.
+Use the `getSignature` method to export the signature as base64. This format supports PNG, JPEG, and SVG types and can be reloaded using the [`load`](https://ej2.syncfusion.com/angular/documentation/api/signature/#load) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,11 +50,11 @@ The `getSignature` method is used to get the signature as base64 with the PNG, J
 
 ### Save as Blob
 
-The [`saveAsBlob`](https://ej2.syncfusion.com/angular/documentation/api/signature/#saveasblob) method is used to saves the signature as Blob. It is defined as the chunk of binary data stored as a single entity in a database system.
+Use the [`saveAsBlob`](https://ej2.syncfusion.com/angular/documentation/api/signature/#saveasblob) method to export the signature as binary blob data for storage in databases or backend systems.
 
-### Save As Image
+### Save as Image
 
-The [`save`](https://ej2.syncfusion.com/angular/documentation/api/signature/#save) method is used to saves the signature as an image. And it accepts file name and file type as parameter. The file type parameter supports PNG, JPEG, and SVG and the default file type is PNG.
+Use the [`save`](https://ej2.syncfusion.com/angular/documentation/api/signature/#save) method to download the signature as an image file. This method accepts filename and file type parameters. Supported formats: PNG (default), JPEG, and SVG.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,9 +70,9 @@ The [`save`](https://ej2.syncfusion.com/angular/documentation/api/signature/#sav
 
 ## Save With Background
 
-The [`saveWithBackground`](https://ej2.syncfusion.com/angular/documentation/api/signature/#savewithbackground) property is used to saves the signature with its background and its default value is true. So, by default the signature is saved with its background.
+Use the [`saveWithBackground`](https://ej2.syncfusion.com/angular/documentation/api/signature/#savewithbackground) property to include or exclude the background when saving. Default value: `true` (background is saved by default).
 
-In the following sample, the background color is set as ‘rgb(103 58 183)’ and save with background as true.
+The following example sets a purple background and saves the signature with it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

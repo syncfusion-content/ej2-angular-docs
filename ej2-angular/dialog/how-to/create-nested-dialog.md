@@ -10,19 +10,13 @@ domainurl: ##DomainURL##
 
 # Create nested dialog in Angular Dialog component
 
-A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
+A Dialog can be nested within another Dialog. The following sample contains a parent and child dialog (inner dialog).
 
-**Step 1**:
+**Step 1**: Create two div elements with id `#dialog` and `#innerDialog`.
 
-Create two div elements with id `#dialog` and `#innerDialog`.
+**Step 2**: Initialize the dialogs as shown in the sample below.
 
-**Step 2**:
-
-Initialize the Dialog as mentioned in the below sample.
-
-**Step 3**:
-
-Set the inner Dialog target as `#dialog`.
+**Step 3**: Set the inner dialog target as `#dialog`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

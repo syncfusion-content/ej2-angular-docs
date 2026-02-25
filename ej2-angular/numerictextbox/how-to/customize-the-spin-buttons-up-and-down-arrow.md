@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the spin buttons up and down arrow in Angular Numerictextbox component
+# Customize the spin buttons up and down arrow in Angular NumericTextBox component
 
-This section explains about how to change/customize spin up and down icons. You can customize spin button icons using `e-spin-up` and `e-spin-down` classes of those buttons.
-
-You can override the default icons of `e-spin-up` and `e-spin-down` classes using the following CSS code snippets.
+The spin button icons can be customized by overriding the `e-spin-up` and `e-spin-down` CSS classes. The following example demonstrates how to change the spin up and down icons using custom CSS.
 
 ```css
   .e-numeric .e-input-group-icon.e-spin-up:before {

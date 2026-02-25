@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Predefined dialogs component
 
-You can customize the predefined dialogs buttons by using below properties.
-* `okButton` - Use this property to customize **OK** button text.
-* `cancelButton` - Use this property to customize **Cancel** button text.
+Customize predefined dialog buttons using the following properties:
+* `okButton` - Customize the OK button text.
+* `cancelButton` - Customize the Cancel button text.
 
-Use the following code snippet for **alert**, **confirm**  and **prompt** to customize the predefined dialogs action buttons.
+The following code samples demonstrate customizing action buttons for alert, confirm, and prompt dialogs.
 
-For alert dialog , customized the default dialog button content as `Dismiss` by using the `text` property.
+For alert dialogs, customize the button content as `Dismiss` using the `text` property.
 
-For confirm dialog, customized the default dialog buttons content as `Yes` and `No` by using the `text` property and also customized the dialog button icons by using `icon` property.
+For confirm dialogs, customize button content as `Yes` and `No` using the `text` property, and customize button icons using the `icon` property.
 
-For prompt dialog , customized the default dialog buttons content as `Connect` and `Close` by using `text` property.
+For prompt dialogs, customize button content as `Connect` and `Close` using the `text` property.
 
 ## Alert action button
 
@@ -66,14 +66,14 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 ## Show or hide dialog close button
 
-When rendering the predefined dialogs through utility methods, You can close the dialog using the following ways. The default values of `closeOnEscape` and `showCloseIcon` is `false`.
+When rendering predefined dialogs through utility methods, close the dialog using the following methods. The default values for `closeOnEscape` and `showCloseIcon` are `false`.
 
-* By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property is enabled.
-* By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property is enabled.
+* Press the Esc key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property is enabled.
+* Click the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property is enabled.
 
-You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
+Manually close dialogs by creating an instance and calling the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
 
-Use the following code for **alert**, **confirm** and **prompt** to demonstrates the different ways of hiding the utility dialog.
+The following code samples demonstrate different ways to close utility dialogs for alert, confirm, and prompt.
 
 ## Alert dialog close button
 
@@ -119,9 +119,9 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 ## Customize dialog content
 
-You can load custom content in predefined dialogs using the `content` property.
+Load custom content in predefined dialogs using the `content` property.
 
-Use the following code to customize the dialog content to render the custom TextBox component inside the prompt dialog to get the username from the user.
+The following code customizes the dialog content to render a custom TextBox component inside the prompt dialog to get the username from the user.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

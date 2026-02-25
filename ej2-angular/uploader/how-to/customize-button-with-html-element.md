@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize button with html element in Angular Uploader component
+# Customize buttons with HTML elements in Angular Uploader component
 
-The uploader component allows you to customize the action buttons by using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/uploader/#buttons) &nbsp;property. Refer to the following example.
+The Uploader component allows you to customize the action buttons by using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/uploader/#buttons) property. Refer to the following example for implementation details.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

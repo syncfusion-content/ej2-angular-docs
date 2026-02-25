@@ -134,16 +134,16 @@ To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> compon
 `[style.css]`
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-angular-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-angular-popups/styles/material3.css";
 ```
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import "node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
-@import "node_modules/@syncfusion/ej2-angular-popups/styles/material.css";
+@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css";
+@import "node_modules/@syncfusion/ej2-angular-popups/styles/material3.css";
 ```
 
 > Ensure that the import order aligns with the component's dependency sequence.

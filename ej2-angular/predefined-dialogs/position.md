@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Position in Angular Predefined dialogs component
 
-Customize the dialog position by using the `position` property. The position can be represented with specific `X` and `Y` values.
+Customize the dialog position using the `position` property with specific `X` and `Y` values.
 
-* The `PositionDataModel.X` can be configured with a left, center, right, or offset value. By default, the value is set as `center`.
-* The `PositionDataModel.Y` can be configured with a top, center, bottom, or offset value. By default, the value is set as `center`.
+* `PositionDataModel.X` - Configure with `left`, `center`, `right`, or an offset value. The default value is `center`.
+* `PositionDataModel.Y` - Configure with `top`, `center`, `bottom`, or an offset value. The default value is `center`.
 
 ## Alert position
 

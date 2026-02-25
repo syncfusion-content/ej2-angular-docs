@@ -12,10 +12,10 @@ domainurl: ##DomainURL##
 
 ## Paste to upload
 
-The uploader component allows you to upload the files using the select or drop files option from the file explorer.  It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
+The Uploader component allows you to upload files by selecting or dragging files from your file system. It also supports pasting images directly from the clipboard. You can upload any image currently copied in your clipboard.
 
-> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed in the server end. You can generate a random name for the file name using `getUniqueID` method.
-Refer to the following example.
+> When you paste an image, it is saved on the server with the default filename `image.png`. You can rename the file on the server side. Use the `getUniqueID` method to generate a unique filename.
+Refer to the following example for implementation details.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +54,11 @@ public void Save() {
 
 ## Directory upload
 
-The uploader component allows you to upload all files in the folders to server by using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#directoryupload) property. When this property is enabled, the uploader component processes the files by iterating through the files and sub-directories in a directory.
-It allows you to select only folders instead of files to upload.
+The Uploader component allows you to upload all files in a directory (and its subdirectories) to the server using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#directoryupload) property. When enabled, the Uploader iterates through all files and subdirectories in the selected folder.
+This feature allows you to select entire folders instead of individual files.
 
-> The directory upload is available only in browsers that supports **HTML5 directory**. The uploader will process directory upload by dragging and dropping in the Edge browser.
-Refer to the following example to upload files to the server.
+> Directory upload is supported only in browsers that support HTML5 directory selection. In Microsoft Edge, you can use drag-and-drop to upload directories.
+Refer to the following example to implement directory upload functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,15 +112,15 @@ public void Save() {
 
 ## Drag and drop
 
-The uploader component allows you to drag and drop the files to upload.
-You can drag the files from file explorer and drop into the drop area.
-By default, the Uploader component act as drop area element.
-The drop area gets highlighted when you drag the files over drop area.
+The Uploader component supports drag-and-drop file uploads.
+You can drag files from your file system and drop them into the drop area.
+By default, the Uploader component itself acts as the drop area.
+The drop area is highlighted when you drag files over it.
 
 ### Custom drop area
 
-The uploader component allows you to set external target element as drop area using the `dropArea` property.
-The element can be represented as HTML element or element’s ID.
+The Uploader component allows you to set an external HTML element as the drop area using the `dropArea` property.
+The element can be specified as an HTML element reference or an element ID string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,8 +136,8 @@ The element can be represented as HTML element or element’s ID.
 
 ### Customize drop area
 
-You can customize the appearance of drop area by overriding the default drop area styles.
-The class **e-upload-drag-hover** is available to handle this customization.
+customize the drop area's appearance by overriding the default styles.
+Use the **e-upload-drag-hover** CSS class to style the drop area when files are dragged over it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

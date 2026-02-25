@@ -8,12 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add additional data on upload in Angular Uploader component
+# Add Additional Data on Upload in Angular Uploader Component
 
-The uploader component allows you to add additional data on file upload, which is used to get in the server-side.
-By using the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event and its customFormData argument, you can achieve this behavior. Refer to the following example
-
-In the following code snippet, explains about how to add additional data on file upload.
+The Uploader lets you include additional form data with file uploads. Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event and set the `customFormData` argument to send extra key–value pairs to the server. See the example below.
 
 ```typescript
 import { Component } from '@angular/core';

@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Signature component
 
-The Signature component draws stroke/path using moveTo() and lineTo() methods to connect one or more points while drawing in canvas. The stroke width can be modified by using its color and width. And the background can be modified by using its background color and background image.
+Customize the Signature component's appearance by modifying stroke properties, background colors, and images. The component uses Canvas API methods (moveTo and lineTo) to render strokes with customizable width, color, and background styling.
 
 ## Stroke Width
 
-The variable stroke width is based on the values of [`maxStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/signature/#maxstrokewidth), [`minStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/signature/#minstrokewidth) and [`velocity`](https://ej2.syncfusion.com/angular/documentation/api/signature/#velocity) for smoother and realistic signature. The default value of minimum stroke width is set as 0.5, maximum stroke width is set as 2.5 and velocity is set as 0.7.
-
-In the following example, minimum stroke width is set as 0.5, maximum stroke width is set as 3 and velocity is set as 0.7.
+Control stroke width dynamically using the [`maxStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/signature/#maxstrokewidth), [`minStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/signature/#minstrokewidth), and [`velocity`](https://ej2.syncfusion.com/angular/documentation/api/signature/#velocity) properties for smooth, realistic signatures. Default values: `minStrokeWidth` = 0.5, `maxStrokeWidth` = 2.5, `velocity` = 0.7. The following example customizes these values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +30,7 @@ In the following example, minimum stroke width is set as 0.5, maximum stroke wid
 
 ## Stroke Color
 
-Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/signature/#strokecolor) property and it accepts hexadecimal code, RGB, and text. The default value of this property is “#000000”.
+Specify the stroke color using the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/signature/#strokecolor) property. It accepts hexadecimal codes, RGB values, and color names. Default value: `#000000` (black).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +46,7 @@ Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfu
 
 ## Background Color
 
-Background color of a signature can be specified by using [`backgroundColor`](https://ej2.syncfusion.com/angular/documentation/api/signature/#backgroundcolor) property and it accepts hexadecimal code, RGB, and text. The default value of this property is “#ffffff”.
+Set the background color using the [`backgroundColor`](https://ej2.syncfusion.com/angular/documentation/api/signature/#backgroundcolor) property. It accepts hexadecimal codes, RGB values, and color names. Default value: `#ffffff` (white).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +62,7 @@ Background color of a signature can be specified by using [`backgroundColor`](ht
 
 ## Background Image
 
-Background image of a signature can be specified by using [`backgroundImage`](https://ej2.syncfusion.com/angular/documentation/api/signature/#backgroundimage) property. The background image can be set by either hosting the image in our local IIS or online image.
+Set a background image using the [`backgroundImage`](https://ej2.syncfusion.com/angular/documentation/api/signature/#backgroundimage) property. The image can be hosted locally or retrieved from an online source via URL.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Uploader component
 
-The Uploader component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Uploader component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are used to evaluate accessibility.
 
-The accessibility compliance for the Uploader component is outlined below.
+The following table outlines the accessibility compliance status of the Uploader component:
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,14 +40,14 @@ The accessibility compliance for the Uploader component is outlined below.
 
 ## Keyboard interaction
 
-The following are the standard keys that works on uploader component.
+The following table lists the standard keyboard shortcuts supported by the Uploader component:
 
-| **Keyboard shortcuts** | **Actions** |
+| **Keyboard shortcut** | **Action** |
 | --- | --- |
-| <kbd>Tab</kbd> | Move focus to next element. |
-| <kbd>Shift + Tab</kbd> | Move focus to previous element. |
-| <kbd>Enter</kbd> | Triggers corresponding action to button element. |
-| <kbd>Esc</kbd> | Close the file browser dialog alone and cancels the upload on drop the file. |
+| <kbd>Tab</kbd> | Move focus to the next element. |
+| <kbd>Shift + Tab</kbd> | Move focus to the previous element. |
+| <kbd>Enter</kbd> | Trigger the action associated with the focused button element. |
+| <kbd>Esc</kbd> | Close the file browser dialog and cancel the upload operation. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,9 +65,9 @@ The following are the standard keys that works on uploader component.
 
 ## Ensuring accessibility
 
-The Uploader component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Uploader component's accessibility compliance is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The accessibility compliance of the Uploader component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) in a new window to evaluate the accessibility of the Uploader component with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Uploader component. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) in a new window to evaluate the component's accessibility using industry-standard tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/uploader.html" %}
 

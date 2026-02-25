@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Query Builder component
 
-The Query Builder component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Query Builder component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA](https://www.w3.org/TR/wai-aria/) roles, ensuring an inclusive experience for all users.
 
-The accessibility compliance for the Query Builder component is outlined below.
+The following table outlines the accessibility compliance features of the Query Builder component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,9 +40,9 @@ The accessibility compliance for the Query Builder component is outlined below.
 
 ## WAI-ARIA attributes
 
-WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
+WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) provides semantics for describing component roles, states, and functionality. These attributes enhance accessibility for assistive technologies, enabling better support for users with disabilities.
 
-The following list of ARIA attributes is used in Query Builder.
+The Query Builder uses the following WAI-ARIA attributes:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -50,7 +50,7 @@ The following list of ARIA attributes is used in Query Builder.
 
 ## Keyboard interaction
 
-The Query Builder component followed the keyboard interaction guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Query Builder component.
+The Query Builder supports full keyboard navigation, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all features. The following keyboard shortcuts are available:
 
 | **Press** | **To do this** |
 | --- | --- |

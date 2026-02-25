@@ -10,11 +10,9 @@ domainurl: ##DomainURL##
 
 # Slider with ngmodel in Angular
 
-Slider component supports one and two-way property binding. Slider two way binding can be achieved through [ngModel](https://angular.io/api/forms/NgModel) Angular directive.
+Implement two-way data binding between a Range Slider and other form controls using the [ngModel](https://angular.io/api/forms/NgModel) directive. Changes to the slider value automatically update bound properties, and vice versa. Follow the steps below to set up two-way binding.
 
-Follow the below steps to perform two-way binding with ngModel.
-
-* Create simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and binds the value property using ngModel. Refer to the below code snippet.
+* Create a [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and bind its value property using ngModel. Refer to the code snippet below.
 
   ```
 
@@ -22,7 +20,7 @@ Follow the below steps to perform two-way binding with ngModel.
  
   ```
 
-* Create numeric text box and bind the value using ngModel.
+* Create a numeric input field and bind its value using ngModel to the same property.
 
   ```
 
@@ -30,9 +28,8 @@ Follow the below steps to perform two-way binding with ngModel.
 
   ```
 
-* And name the same variable name in both slider and numeric text box. Which will help to view the two-way binding i.e. changing value in slider will change the numeric textbox value and vice versa.
-
-* Initialize the value of the variable in component file, while will be bound to slider and text box initially. The values will be changed synchronously while changing any one (slider or text-box) value.
+* Use the same property name in both the slider and numeric input. This enables two-way binding, so adjusting the slider updates the input and vice versa.
+* Initialize the property with a default value in the component. Both controls will reflect changes synchronously.
 
   ```typescript
 

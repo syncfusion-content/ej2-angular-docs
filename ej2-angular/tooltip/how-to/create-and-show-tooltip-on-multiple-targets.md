@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Implementing multiple target Tooltips in Angular
+# Implementing multiple target tooltips in Angular
 
-Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the the [`target`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#target) property. This way, the Tooltip is initialized only on the matched targets within the container.
+Create and display tooltips on multiple targets within a container by defining specific target elements using the [`target`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#target) property. The tooltip initializes only on matched targets within the container.
 
-In this case, the Tooltip content is assigned from the title attribute of the target element.
+The tooltip content is sourced from the title attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

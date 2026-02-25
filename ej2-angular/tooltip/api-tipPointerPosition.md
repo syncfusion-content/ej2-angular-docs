@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api tipPointerPosition in Angular Tooltip component
+# API tipPointerPosition in Angular Tooltip component
 
-Applicable tip positions attached to the Tooltip.
+Applicable tip positions for the Tooltip pointer:
 * Auto
 * Start
 * Middle

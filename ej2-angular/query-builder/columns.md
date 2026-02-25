@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Query builder component
 
-The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete group they are performed based on the column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#field) property of the columns is necessary to map the data source values in the query builder columns.
+Column definitions define the schema for the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) and control how the Query Builder renders and processes data. All Query Builder operations—such as creating/deleting conditions and groups—are based on these definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#field) property maps columns to data source values.
 
-> If the column field is not specified in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource), the column values will be empty.
+> If the column `field` property is not specified, the corresponding column values will be empty in the Query Builder.
 
 ## Auto generation
 
@@ -34,11 +34,11 @@ The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/query-build
 
 ## Labels
 
-By default, the column label is displayed from the column [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#field) value. To override the default label, you have to define the [`label`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#label) value.
+By default, the Query Builder displays the column label from the [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#field) property. To customize the label, set the [`label`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#label) property.
 
 ## Operators
 
-The operator for a column can be defined in the [`operators`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#operators) property. The available operators and its supported data types are:
+Define available operators for each column using the [`operators`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#operators) property. The following table lists all available operators and their supported data types:
 
 | Operators | Description | Supported Types |
 | ------------ | ----------------------- | ------------------ |

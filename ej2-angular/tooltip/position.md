@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Position in Angular Tooltip component
 
-Tooltips can be attached to 12 static locations around the target element. On initializing the Tooltip, you can set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#position) property with any one of the following values:
+Attach tooltips to 12 static locations around the target element. When initializing the Tooltip, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#position) property to one of the following values:
 
 * `TopLeft`
 
@@ -52,7 +52,7 @@ Tooltips can be attached to 12 static locations around the target element. On in
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property. Pointer positions can be adjusted using the [`tipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#tippointerposition) property, which can be assigned one of the following values:
+Attach or detach the tooltip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property. Adjust pointer positions using the [`tipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#tippointerposition) property, which accepts one of the following values:
 
 * `Auto`
 
@@ -62,7 +62,7 @@ The Tooltip pointer can be attached or detached from the Tooltip by using the [`
 
 * `End`
 
-The following code example illustrates how to set the pointer to the start position of the Tooltip.
+The following code example demonstrates how to set the pointer to the start position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target element. This can be achieved by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#refresh) method, which auto adjusts the Tooltip over the target.
+Position the tooltip and its tip pointer dynamically based on the target element. Use the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#refresh) method to automatically adjust the tooltip position relative to the target.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 ## Mouse trailing
 
-Tooltips can be positioned relative to the mouse pointer when this feature is enabled. This behavior can be enabled or disabled by using the [`mouseTrail`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#mousetrail) property. By default, it is set to `false`.
+Position tooltips relative to the mouse pointer by enabling this feature. Enable or disable this behavior using the [`mouseTrail`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#mousetrail) property. By default, it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,12 +114,12 @@ Tooltips can be positioned relative to the mouse pointer when this feature is en
 
 ## Setting offset values
 
-Offset values are used to specify the distance between the target and Tooltip element. [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsetx) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsety) properties are used to specify the offset left and top values.
+Use offset values to specify the distance between the target and tooltip element. The [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsetx) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsety) properties set the horizontal and vertical offset values.
 
-* `offsetX` specifies the distance between the target and Tooltip element in X axis.
-* `offsetY` specifies the distance between the target and Tooltip element in Y axis.
+* `offsetX` specifies the horizontal distance between the target and tooltip element.
+* `offsetY` specifies the vertical distance between the target and tooltip element.
 
-The following code example illustrates how to set offset values.
+The following code example demonstrates how to set offset values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

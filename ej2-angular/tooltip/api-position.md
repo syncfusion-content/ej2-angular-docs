@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api position in Angular Tooltip component
+# API position in Angular Tooltip component
 
-Applicable positions where the Tooltip can be displayed over specific target elements.
+Applicable positions for displaying the Tooltip over target elements:
 * TopLeft
 * TopCenter
 * TopRight

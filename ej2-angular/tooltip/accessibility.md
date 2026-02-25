@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Tooltip component
 
-The Tooltip component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Tooltip component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
 
 The accessibility compliance for the Tooltip component is outlined below.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the Tooltip component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Tooltip component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) patterns to meet the accessibility. The following ARIA attributes are used in the Tooltip component.
+The Tooltip component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Tooltip component.
 
 | Attributes | Description |
 | --- | --- |

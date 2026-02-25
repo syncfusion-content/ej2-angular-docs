@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom validation using form validator in Angular Maskedtextbox component
+# Perform custom validation using form validator in Angular MaskedTextBox component
 
-To perform custom validation on the MaskedTextBox use the FormValidator along with custom validation rules.
-
-In the following example, the MaskedTextBox is validated for invalid mobile number by adding custom validation in the rules collection of the FormValidator.
+Custom validation can be performed on the MaskedTextBox by using the FormValidator component with custom validation rules. The following example demonstrates validating the MaskedTextBox for invalid mobile numbers by adding custom validation rules to the FormValidator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

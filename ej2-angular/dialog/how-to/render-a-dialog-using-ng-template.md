@@ -8,26 +8,26 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog using ng template in Angular Dialog component
+# Render a dialog using ng-template in Angular Dialog component
 
-You can provide the HTML elements as header, footer, and content of the dialog using ng-template directives. For more details, refer to the [Angular Documentation](https://angular.io/guide/structural-directives#the-ng-template).
+Provide HTML elements as the dialog header, footer, and content using `ng-template` directives. For more details, refer to the [Angular Documentation](https://angular.io/guide/structural-directives#the-ng-template).
 
-In this [example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/template), dialog header, footer, and content are rendered using ng-template directives
+In this [example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/template), the dialog header, footer, and content are rendered using `ng-template` directives.
 
-## How to destroy the dialog component when navigate pages using Angular routing
+## Destroy the dialog component when navigating pages using Angular routing
 
-By default, the dialog component appends into the body element when you did not specify any target to the dialog.  When navigate pages using Angular routing, the elements inside the routing pages gets destroyed. So, the dialog elements are not destroyed properly while routing. It will cause the memory leak problem in DOM when continuously navigating the pages.
+By default, the dialog component appends to the body element when no target is specified. When navigating between pages using Angular routing, the elements inside routing pages are destroyed, but the dialog elements may not be destroyed properly, causing a memory leak in the DOM.
 
-You can avoid this problem using one of the following solutions:
+Avoid this problem using one of the following solutions:
 
 ### Solution 1
 
-Set the target to the dialog component to solve the destroy related issue in the DOM.  If you set the target property to dialog component, the dialog appends inside the target element that is placed on the routing partial page. It destroys both dialog component and it’s all elements when switching between the routing component page.  
+Set the target property to the dialog component to resolve the destroy issue in the DOM. When you specify a target, the dialog appends inside the target element placed on the routing page, and both the dialog component and its elements are destroyed when switching between routing pages.
 
 Refer to this [sample](https://stackblitz.com/edit/angular-router-example-fcrp53?file=app/app.component.html).
 
 ### Solution 2
 
-If you do not want to set the target property to dialog, use this solution.  Destroy the dialog elements using the ngOnDestroy method from your application. The ngOnDestroy method is called before the component/directive destroy by Angular.
+If you prefer not to set the target property, destroy the dialog elements using the `ngOnDestroy` lifecycle hook in your application. The `ngOnDestroy` hook is called before Angular destroys the component or directive.
 
 Refer to this [sample](https://stackblitz.com/edit/angular-router-example-9yc2on?file=app/app.component.html).

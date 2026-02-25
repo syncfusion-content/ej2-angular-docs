@@ -10,33 +10,28 @@ domainurl: ##DomainURL##
 
 # Template in Angular Spinner component
 
-You can use custom templates on the Spinner instead of the default Spinner by specifying the template in the `setSpinner` method.
+Use custom templates for the Spinner instead of the default spinner by specifying the template in the `setSpinner` method.
 
-The following steps explains you on how to define template for Spinner.
+The following steps describe how to define a custom template for the Spinner:
 
-* Import the `setSpinner` method from `ej2-angular-popups` library into your `app.component.ts` as shown in below.
+**Step 1:** Import the `setSpinner` method from the `ej2-angular-popups` library into your `app.component.ts`.
 
 ```typescript
 import { setSpinner } from '@syncfusion/ej2-angular-popups';
 ```
 
-* Pass your custom template to the `setSpinner` method like as below.
+**Step 2:** Pass your custom template to the `setSpinner` method.
 
 ```typescript
-
-// Specify the template content to be displayed in the Spinner
-
+// Specify the template content to display in the Spinner
 setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rolling"><div></div></div>'});
 ```
 
-> You should set the template to the Spinner before creating the respective Essential<sup style="font-size:70%">&reg;</sup> JS 2 component.
-> Also,until we replace `setSpinner` template, the further Essential<sup style="font-size:70%">&reg;</sup> JS 2 component rendering is created
-> with given template only.
+> Set the spinner template before creating the respective Essential JS 2 component. Until you replace the `setSpinner` template, all subsequent Essential JS 2 component rendering uses the specified template.
 
-* Now, render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component. It's render the Spinner with the template specified in the `setSpinner` method.
+**Step 3:** Render the Essential JS 2 component. The Spinner displays with the template specified in the `setSpinner` method.
 
-> In the below sample, we have rendered the Grid component with custom Spinner using `setSpinner` method.
-> You have to define the styles for the template in `index.css`.
+> The following sample renders a Grid component with a custom spinner using the `setSpinner` method. Define the styles for the template in `index.css`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

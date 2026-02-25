@@ -851,7 +851,7 @@ ej2-angular-grid-with-express-js/
 
 ## Complete sample repository
 
-For a complete working implementation, refer to the [GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-expressjs-server) repository.
+For a complete working implementation, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-expressjs-server) repository.
 
 The repository contains the complete Express.js backend implementation with all controller methods, API routes, TypeScript interfaces, and data models, plus a ready-to-run Angular frontend application.
 

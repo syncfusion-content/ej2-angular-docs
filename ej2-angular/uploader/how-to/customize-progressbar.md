@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progressbar in Angular Uploader component
+# Customize progress bar in Angular Uploader component
 
-You can customize the progress bar’s size, color, and background by overriding the styles in uploader component. Refer to the following example.
+You can customize the progress bar's size, color, and background by overriding the default Uploader component styles. Refer to the following example to apply custom styling to the progress indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

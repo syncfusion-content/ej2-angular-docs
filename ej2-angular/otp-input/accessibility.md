@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular OTP Input component
 
-The OTP Input component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The OTP Input component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
 The accessibility compliance for the OTP Input component is outlined below.
 
@@ -45,7 +45,7 @@ The following ARIA attributes are used in the OTP Input component:
 | Attributes | Purpose |
 | ------------ | ----------------------- |
 | `role=group` | Attributes used to form a collection of items.|
-| `aria-label` | Attributes provides the text label for the Otp inputs. |
+| `aria-label` | Provides the text label for the OTP inputs. |
 
 ## Keyboard interaction
 
@@ -60,7 +60,7 @@ The following keyboard shortcuts are supported by the OTP Input component.
 
 ## Ensuring accessibility
 
-The OTP Input component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The OTP Input component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. To ensure your implementation is accessible, use semantic HTML attributes, provide clear ARIA labels via the `ariaLabels` property, and test with assistive technologies and accessibility validators.
 
 ## See also
 

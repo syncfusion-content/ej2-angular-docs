@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Query builder component
 
-To modify the QueryBuilder appearance, you need to override the default CSS of QueryBuilder component. Please find the list of CSS classes and its corresponding section in QueryBuilder component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+Customize the Query Builder's appearance by overriding default CSS classes or creating a custom theme. The following table lists the primary CSS classes and their purposes. For advanced customization, use the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material) to create and download custom themes.
 
 |CSS Class | Purpose of Class |
 |-----|----- |

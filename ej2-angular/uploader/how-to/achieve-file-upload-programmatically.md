@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Achieve file upload programmatically in Angular Uploader component
+# Achieve File Upload Programmatically in Angular Uploader Component
 
-You can upload a file programmatically using [upload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#upload) method.
-The selected files data, get from [getFilesData](https://ej2.syncfusion.com/angular/documentation/api/uploader/#getfilesdata) public method in uploader.
+Upload files programmatically using the [upload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#upload) method. Retrieve the selected files using the public [getFilesData](https://ej2.syncfusion.com/angular/documentation/api/uploader/#getfilesdata) method.
 
 The upload method behaves differently based on its arguments.
 * If this method receives any files as arguments, those files only start to upload.

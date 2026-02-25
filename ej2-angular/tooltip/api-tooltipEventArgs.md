@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api tooltipEventArgs in Angular Tooltip component
+# API tooltipEventArgs in Angular Tooltip component
 
 Interface for Tooltip event arguments.
 
@@ -16,24 +16,24 @@ Interface for Tooltip event arguments.
 
 ### cancel `Boolean`
 
-It illustrates whether the current action needs to be prevented or not.
+Indicates whether to prevent the current action.
 
 ### collidedPosition `string`
 
-It is used to denote the Collided Tooltip position
+Denotes the collided tooltip position.
 
 ### event `Event`
 
-It is used to specify the current event object.
+Specifies the current event object.
 
 ### name `string`
 
-Specifies name of the event.
+Specifies the name of the event.
 
 ### target `HTMLElement`
 
-It is used to denote the current target element where the Tooltip is to be displayed.
+Denotes the target element where the tooltip displays.
 
 ### type `String`
 
-It is used to denote the type of the triggered event.
+Denotes the type of the triggered event.

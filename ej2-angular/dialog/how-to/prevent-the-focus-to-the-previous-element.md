@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent focus to the previous element in Angular Dialog component
+# Prevent focus from returning to previous element in Angular Dialog component
 
-By default, when the dialog is closed, focus returns to the element that was previously focused before the dialog opened. You can prevent this behavior using the `beforeClose` event and setting the `preventFocus` argument to `true`.
+By default, when the dialog closes, focus returns to the element that had focus before the dialog opened. Prevent this behavior using the `beforeClose` event by setting the `preventFocus` argument to `true`.
 
-Bind the `beforeClose` event and enable the `preventFocus` argument as shown in the sample below.
+Bind the `beforeClose` event and enable the `preventFocus` argument as shown in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

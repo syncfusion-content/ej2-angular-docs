@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Fancy customization of Angular Tooltip component
 
-The arrow of the Tooltip can be customized as needed by customizing CSS in the sample level.
+Customize the tooltip arrow by overriding CSS at the sample level.
 
-The EJ2 Tooltip component is styled using CSS3 and positions the tip arrow according to the Tooltip positions such as `TopCenter`, `BottomLeft`, `RightTop`, and others.
+The Tooltip component is styled using CSS3 and positions the tip arrow according to tooltip positions such as `TopCenter`, `BottomLeft`, `RightTop`, and others.
 
-Here, the tip arrow is customized as Curved Tooltip and Bubble Tooltip.
+The following sample demonstrates customizing the tip arrow as a Curved Tooltip and Bubble Tooltip.
 
 **Curved tip**
 
-The content for the tip pointer arrow has been added. To customize the curved tip arrow, override the following CSS class of tip arrow.
+Content is added for the tip pointer arrow. To customize the curved tip arrow, override the following CSS class.
 
 ```typescript
 
@@ -37,7 +37,7 @@ The content for the tip pointer arrow has been added. To customize the curved ti
 
 **Bubble tip**
 
-The two `divs`(inner div and outer div) have been added to achieve the bubble tip arrow. To customize the bubble tip arrow, override the following CSS class of tip arrow.
+Two `div` elements (inner and outer) are used to create the bubble tip arrow. To customize the bubble tip arrow, override the following CSS class.
 
 ```typescript
 
@@ -57,9 +57,9 @@ The two `divs`(inner div and outer div) have been added to achieve the bubble ti
 
 ```
 
-These tip arrow customizations have been achieved through CSS changes in the sample level. The Tooltip position can be changed by using the radio button click event.
+These tip arrow customizations are achieved through CSS changes at the sample level. Change the tooltip position by using the radio button click event.
 
-The arrow tip pointer can also be disabled using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property.
+Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

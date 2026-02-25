@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## MaskedTextBox control | Syncfusion
-description: Learn here all about Adornments in Syncfusion ##Platform_Name## MaskedTextBox control of Syncfusion Essential JS 2 and more.
+title: Adornments in Angular MaskedTextBox control | Syncfusion
+description: Learn here all about Adornments in Syncfusion Angular MaskedTextBox control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adornments
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## MaskedTextBox control
+# Adornments in Angular MaskedTextBox control
 
-Adornments in the MaskedTextBox control allow you to add custom elements before or after the masked input using the `prependTemplate` and `appendTemplate` properties. These elements can include prefixes, suffix labels, or action icons to provide context, guide user input, and offer quick actions while preserving mask validation and float label behavior.
+Adornments allow you to add custom elements before or after the MaskedTextBox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving mask validation and float label functionality.
 
 ## Common Use Cases
 
-- **Entry Guidance**: Add icons/text to hint the expected input (e.g., user icon for username/login).
-- **Quick Actions**: Include buttons to submit, clear, or copy the masked value.
-- **Context Labels**: Add static prefixes/suffixes like country code, domain, or unit suffix.
-- **Visual Feedback**: Show status indicators without interfering with the mask.
+- **Entry Guidance**: Display icons or text that hints at the expected input format (e.g., a user icon for login fields).
+- **Quick Actions**: Include buttons for common operations such as submit, clear, or copy.
+- **Context Labels**: Add static text like country codes, domain names, or measurement units.
+- **Visual Feedback**: Show status indicators without affecting mask behavior.
 
 ## Adding Adornments to MaskedTextBox
 
-Use `prependTemplate` and `appendTemplate` to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
+Use `prependTemplate` to render elements before the masked input, and `appendTemplate` to render elements after it. These templates support any inline HTML or icon markup and do not interfere with mask validation.
 
-- **prependTemplate**: Renders elements before the masked input.
-- **appendTemplate**: Renders elements after the masked input.
+- **prependTemplate**: Renders HTML content before the input field
+- **appendTemplate**: Renders HTML content after the input field
 
-The following example demonstrates how to add adornments in the MaskedTextBox control.
+The following example shows how to implement adornments in the MaskedTextBox:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

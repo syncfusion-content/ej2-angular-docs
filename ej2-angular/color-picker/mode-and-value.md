@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Mode and value in Angular Color picker component | Syncfusion
-description: Learn here all about Mode and value in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Mode and value in Angular Color Picker component | Syncfusion
+description: Details on configuring mode and value for the Syncfusion Angular Color Picker (Essential JS 2).
 platform: ej2-angular
-control: Mode and value 
+control: Color Picker
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mode and value in Angular Color picker component
+# Mode and value in Angular Color Picker component
 
 ## Rendering palette at initial load
 
-By default, the `Picker` area will be rendered at initial load. To render the Palette area while opening the ColorPicker pop-up, and specify the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property as `Palette`.
+By default, the ColorPicker displays the Picker area when opened. To display the Palette area instead, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette`.
 
-In the following sample, it will render the `Palette` at initial load.
+The following sample demonstrates rendering the Palette on initial load.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +30,13 @@ In the following sample, it will render the `Palette` at initial load.
 
 ## Color value
 
-The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property can be used to specify the color value to the ColorPicker. It supports either `three` or `six` digit hex codes. To include `opacity`, set the color value as `four` or `eight` digit hex code.
+Use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property to set the ColorPicker's selected color. The property accepts hex color codes in the following formats:
+- **3-digit hex**: `#RGB` (e.g., `#F00` for red)
+- **6-digit hex**: `#RRGGBB` (e.g., `#FF0000` for red)
+- **4-digit hex with alpha**: `#RGBA` (e.g., `#F00F` for opaque red)
+- **8-digit hex with alpha**: `#RRGGBBAA` (e.g., `#FF0000FF` for opaque red)
 
-In the following sample, the color value sets as `four` digit hex code, the last digit represents the `opacity` value.
+The following sample uses a 4-digit hex code where the last digit represents opacity (alpha).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +50,7 @@ In the following sample, the color value sets as `four` digit hex code, the last
   
 {% previewsample "page.domainurl/samples/colorpicker/value-cs1" %}
 
->> The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property supports hex code with or without `#` prefix.
+> The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property accepts hex codes with or without the `#` prefix.
 
 ## See Also
 

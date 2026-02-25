@@ -15,9 +15,9 @@ The value will be displayed in the specified format when the component is in foc
 
 ## Standard formats
 
-From the [standard Numeric Formats](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) of MSDN, you can use the numeric related format specifiers such as `n`,`p` and `c` in the NumericTextBox component. By using these format specifiers, you can achieve the percentage and currency textbox behavior also.
+Standard numeric formats use specifiers like `n` (number), `p` (percentage), and `c` (currency) to format values in the NumericTextBox. By using these format specifiers, you can create percentage and currency input behaviors.
 
-The below example demonstrates percentage and currency formats.
+The following example demonstrates percentage and currency format usage:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,9 +33,9 @@ The below example demonstrates percentage and currency formats.
 
 ## Custom formats
 
-From the [custom numeric format string](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) of MSDN, you can provide any custom format by combining one or more custom specifiers.
+Custom numeric formats can be created by combining format specifiers like `#` (optional digit) and `0` (required digit) to meet specific requirements.
 
-The below examples demonstrate format the value by using currency format string `#` and `0`.
+The following examples demonstrate custom format usage:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

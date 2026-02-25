@@ -14,8 +14,7 @@ domainurl: ##DomainURL##
 
 ### Date Format
 
-The Date formatting can be achieved in `ticks` and `tooltip` using `renderingTicks` and `tooltipChange` events respectively.
-The process of formatting is explained in the below sample.
+Format slider values as dates using the `renderingTicks` and `tooltipChange` events to customize tick labels and tooltip text. The following sample demonstrates date formatting implementation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,7 +30,7 @@ The process of formatting is explained in the below sample.
 
 ### Time Format
 
-The time formatting can be achieved same as the date formatting using `renderingTicks` and `change` events. The process of time formatting is explained in the below sample.
+Implement time formatting using the `renderingTicks` and `change` events, similar to date formatting. The following sample shows how to display slider values as time values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,8 +46,7 @@ The time formatting can be achieved same as the date formatting using `rendering
 
 ### Numeric Value Customization
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units.
-The Numeric processing is demonstrated below.
+Format numeric slider values with custom decimal precision, fixed whole numbers, or unit representations (e.g., "$100", "50%"). The following sample demonstrates various numeric formatting techniques.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,29 +62,12 @@ The Numeric processing is demonstrated below.
 
 ## Slider with ngModel
 
-Slider component supports one and two-way property binding. Slider two way binding can be achieved through [ngModel](https://angular.io/api/forms/NgModel) Angular directive.
+Implement two-way data binding between a Range Slider and other form controls using the [ngModel](https://angular.io/api/forms/NgModel) directive. Changes to the slider value automatically update bound properties, and vice versa. Follow the steps below to set up two-way binding.
 
-Follow the below steps to perform two-way binding with ngModel.
-
-* Create simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and binds the value property using ngModel. Refer to the below code snippet.
-
-```
-
-<ejs-slider class="form-control" id='slider' [ticks]="ticks" [(ngModel)]="slidervalue" name="slider" required #slider="ngModel"></ejs-slider>
-
-```
-
-* Create numeric text box and bind the value using ngModel.
-
-```
-
-<input type="number" id="name" name="name" class="form-control" required [(ngModel)]="slidervalue" #slider="ngModel">
-
-```
-
-* And name the same variable name in both slider and numeric text box. Which will help to view the two-way binding i.e. changing value in slider will change the numeric textbox value and vice versa.
-
-* Initialize the value of the variable in component file, while will be bound to slider and text box initially. The values will be changed synchronously while changing any one (slider or text-box) value.
+* Create a [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and bind its value property using ngModel.
+* Create a numeric input field and bind it to the same ngModel property.
+* Use the same variable name for both controls to enable synchronous value updates between slider and text box.
+* Initialize the variable in the component file to set the initial value for both controls.
 
 ```typescript
 
@@ -116,9 +97,7 @@ export class AppComponent {
 
 ## Slider in Angular reactive form
 
-Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms) forms. Here the sample shown slider validation state based on Angular form [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
-
-Follow below steps to validate slider within reactive forms.
+Implement Range Slider validation within Angular [Reactive](https://angular.io/guide/reactive-forms) forms to enforce validation rules and provide real-time feedback. The following sample demonstrates slider state tracking using Angular form validation [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel). Follow the steps below to integrate and validate a slider within a reactive form.
 
 * Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
 
@@ -180,9 +159,9 @@ Slider value choosen as: {{value}}
 
 ## Slider validation using Template-driven Forms
 
-Slider can be validated in Angular using [Template-driven](https://angular.io/guide/form-validation#template-driven-validation) forms.
+Implement Range Slider validation within Angular [Template-driven](https://angular.io/guide/form-validation#template-driven-validation) forms using directives and validation rules for a simpler form validation approach.
 
-* The following [CSS classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel) will be added on Slider component based on the action done by user.
+* Angular automatically applies [CSS classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel) to the Slider component based on user interactions and validation state.
 
 | **Class if true** | **Class if false** | **state** |
 | --- | --- | --- |
@@ -204,16 +183,12 @@ Slider can be validated in Angular using [Template-driven](https://angular.io/gu
 
 ## Slider validation using FormValidator
 
-We can validate the Slider component using our `FormValidator`. The following steps walk-through for slider validation.
+Validate Range Slider values using the built-in `FormValidator`. Follow the steps below to implement slider validation within a form.
 
-* Render Slider component inside form.
-
-* Bind [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed) event in the Slider component to validate the slider value when the value changes.
-
-* Initialize and render FormValidator for the form using form ID.
-
-* Set required property in the FormValidator `rules` collection.
-Here, we set the [min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min) property of Slider which sets the minimum value in Slider component and it has hidden input since enable `validateHidden` property as true.
+* Render the Slider component inside a form element.
+* Bind the [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed) event to trigger validation when the slider value changes.
+* Initialize FormValidator and reference the form ID.
+* Define validation rules in the FormValidator `rules` collection. Set minimum/maximum values using the [min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min) property and enable `validateHidden` to validate hidden slider inputs.
 
 ```typescript
 

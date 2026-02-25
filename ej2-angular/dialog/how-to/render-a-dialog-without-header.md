@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Render a dialog without header in Angular Dialog component
 
-The dialog can be rendered without header by setting the header property value as empty string or null.  By default, dialog is rendered without header.
+Render the dialog without a header by setting the [header](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property to an empty string or `null`. By default, the dialog renders without a header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

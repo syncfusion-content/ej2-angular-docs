@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Prevent focus on the first element in Angular Dialog component
 
-By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [open](https://ej2.syncfusion.com/angular/documentation/api/dialog/#open) event and by enabling the `preventFocus` argument.
+By default, the dialog focuses on the first focusable element in the content area. Prevent this default behavior using the [open](https://ej2.syncfusion.com/angular/documentation/api/dialog/#open) event by enabling the `preventFocus` argument.
 
-Bind the open event and enable the preventFocus argument within an event like the below sample.
+Bind the `open` event and enable the `preventFocus` argument as shown in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

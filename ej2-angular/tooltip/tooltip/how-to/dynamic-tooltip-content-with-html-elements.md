@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Dynamic tooltip content with html elements in Angular Tooltip component
 
-The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) template.
+Load HTML tags into the tooltip using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) template.
 
-The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
+You can use HTML tags such as `<div>`, `<span>`, `<b>`, `<i>`, `<u>`, and more. You can also apply style attributes to HTML tags.
 
-Here, Bold, Italic, Underline, and Anchor tags are used.
+This example uses Bold, Italic, Underline, and Anchor tags.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check the mime type of file before upload it in Angular Uploader component
+# Check the MIME type of file before uploading in Angular Uploader component
 
-By using [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event, you can get the file MIME type before uploading it to server.
-In the below sample, file MIME type is shown in the alert box before file start to upload.
+By using the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event, you can retrieve the file MIME type before the upload process begins on the server.
+In the following example, the file MIME type is displayed in an alert dialog before the file starts uploading.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

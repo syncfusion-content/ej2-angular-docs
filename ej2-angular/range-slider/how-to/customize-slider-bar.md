@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize bar in Angular Range Slider component
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can be overridden with our own color values like the following code snippet.
+Customize the Range Slider bar appearance by overriding CSS classes. By default, the slider bar uses the `e-slider-track` class. Override this class to apply custom colors, gradients, or themes to the slider bar. The following code snippet demonstrates how to apply a gradient color to the slider bar.
 
 ```css
 

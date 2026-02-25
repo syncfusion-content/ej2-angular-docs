@@ -1109,7 +1109,7 @@ ng serve
 
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding%20MS%20SQL%20database%20using%20Django%20and%20UrlAdaptor) repository.
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-django-server) repository.
 
 
 The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion Angular Grid front end.

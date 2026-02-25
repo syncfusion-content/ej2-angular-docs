@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dialog component
 
-The Dialog component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
 
 The accessibility compliance for the Dialog component is outlined below.
 
@@ -40,21 +40,21 @@ The accessibility compliance for the Dialog component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dialog characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
+The Dialog is characterized by complete ARIA accessibility support, enabling screen readers and other assistive technology devices to access the component. This component is designed based on the guidelines documented in [WAI-ARIA Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
 
-The Dialog component uses the `Dialog` role and following ARIA properties to its element based on its state.
+The Dialog component uses the `Dialog` role and the following ARIA properties on its elements based on their state.
 
 | **Property** | **Functionalities** |
 | --- | --- |
-| aria-describedby | It indicates the Dialog content description is notified to the user through assistive technologies. |
-| aria-labelledby | The Dialog title is notified to the user through assistive technologies. |
-| aria-modal | For modal dialog it's value is true and non-modal dialog its value is false |
-| aria-grabbed | Enable the draggable Dialog and starts dragging it is value is true and stopping the drag its value is false |
+| aria-describedby | Indicates that the dialog content description is conveyed to the user through assistive technologies. |
+| aria-labelledby | Identifies the dialog title to assistive technologies. |
+| aria-modal | Set to `true` for modal dialogs and `false` for non-modal dialogs. |
+| aria-grabbed | Set to `true` when the dialog is being dragged and `false` when dragging stops. |
 
 ## Keyboard interaction
 
-Keyboard interaction of Dialog component has designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) described for Dialog.
-User can use the following shortcut keys to interact with the Dialog.
+The Dialog component's keyboard interaction is designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) for dialogs.
+Users can interact with the Dialog using the following shortcut keys.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -70,16 +70,11 @@ Closes the Dialog. This functionality can be controlled by using
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
-When the Dialog button or any input (except text area) is in focus state, when
-pressing the Enter key, the click event associated with the primary button or button will
-trigger. Enter key is not working when the Dialog content contains any text area with
-initial focus</td></tr>
+When a dialog button or any input field (except text area) has focus, pressing Enter triggers the click event on the primary button. Enter does not work when the dialog content contains a text area with initial focus.</td></tr>
 <tr>
 <td>
 <kbd>Ctrl + Enter</kbd></td><td>
-When the Dialog content contains text area and it is in focus state, and press the Ctrl + Enter
-key to call the click event
-function associated with primary button</td></tr>
+When the dialog content contains a text area with focus, press Ctrl + Enter to trigger the click event on the primary button.</td></tr>
 <tr>
 <td>
 <kbd>Tab</kbd></td><td>
@@ -87,9 +82,7 @@ Focus will be changed within the Dialog elements</td></tr>
 <tr>
 <td>
 <kbd>Shift + Tab</kbd></td><td>
-The Focus will be changed previous focusable element within the Dialog elements. When focusing a
-first focusable element in the Dialog, then press the shift + tab key, it will change the focus
-to last focusable element</td></tr>
+Moves focus to the previous focusable element within the dialog. When the first focusable element has focus, pressing Shift + Tab moves focus to the last focusable element.</td></tr>
 </table>
 
 {% tabs %}
@@ -110,9 +103,9 @@ to last focusable element</td></tr>
 
 ## Ensuring accessibility
 
-The Dialog component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Dialog component's accessibility is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The accessibility compliance of the Dialog component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/dialog.html) in a new window to evaluate the accessibility of the Dialog component with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Dialog component. Open the [sample](https://ej2.syncfusion.com/accessibility/dialog.html) in a new window to evaluate the Dialog component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/dialog.html" %}
 

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Create and show tooltip on multiple targets in Angular Tooltip component
 
-Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the tooltip is initialized only on matched targets within a container.
+Create and display tooltips on multiple targets within a container by assigning specific target elements to the `target` property. The tooltip initializes only on matched targets within the container.
 
-In this case, the tooltip content is assigned from the title attribute of the target element.
+The tooltip content is derived from the `title` attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

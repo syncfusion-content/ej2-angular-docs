@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize images before upload to server.
+# Resize images before uploading to the server
 
-You can customize the dimension of the images before uploading it to the server.
-By using selected event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
+You can customize image dimensions before uploading them to the server.
+By using the `selected` event, you can retrieve the selected file information as an object. From this file data, create a new canvas element and render the image with custom dimensions. Refer to the following code example for implementation details.
 
 ```typescript
 

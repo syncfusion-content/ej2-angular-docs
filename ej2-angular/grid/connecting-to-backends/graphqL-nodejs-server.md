@@ -1195,7 +1195,7 @@ Open a terminal or Command prompt. Run the server application first, then start 
  
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-GraphQLAdaptor) repository.
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-server) repository.
 
 The application now provides a fully integrated "product" management workflow using the Syncfusion Angular Grid connected to a Node.js GraphQL backend.
 

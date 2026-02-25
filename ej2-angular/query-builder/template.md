@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Template in Angular Query builder component
 
-Templates allows users to define customized header and own user interface for columns.
+Customize the Query Builder's header and column interfaces using templates. Templates enable you to replace default UI elements with custom components, providing complete control over the user experience.
 
 ## Header Template
 
-Header Template allows to define your own user interface for Header, which includes creating or deleting rules and groups and to customize the AND/OR condition and NOT condition options. To implement header template you can create the user interface using `ngTemplate` and  assign the values when requestType is header-template-create in `actionBegin` event.
+Replace the default header with a custom interface by defining a header template. The custom header can include buttons for creating/deleting rules and groups, along with AND/OR and NOT condition controls. Implement header templates using `ngTemplate` and configure the template in the `actionBegin` event when `requestType` is `header-template-create`.
 
 The `#headerTemplate` template variable identifies the NgTemplate content as the header.
 
@@ -61,13 +61,13 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 
 ## Column Template
 
-Template allows you to define your own input widgets for columns. To implement [`template`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#template), you can define the following functions
+Define custom input widgets for specific columns using column templates. Implement the [`template`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#template) property with the following functions:
 
-* `create`: Creates the custom component.
-* `write`: Wire events for the custom component.
-* `Destroy`:  Destroy the custom component.
+* `create`: Initialize the custom component.
+* `write`: Bind events to the custom component.
+* `destroy`: Clean up the custom component.
 
-In the following sample, dropdown is used as the custom component in the PaymentMode column.
+The following example demonstrates using a dropdown as a custom component in the PaymentMode column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,9 +81,9 @@ In the following sample, dropdown is used as the custom component in the Payment
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs11" %}
 
-### Using Template
+### Using NgTemplate
 
-The value template for a particular column can be specified using the content of the NgTemplate. The `#template` template variable identifies the NgTemplate content as the corresponding column.
+Define column value templates using NgTemplate. The template variable (e.g., `#template`) identifies the NgTemplate content for the corresponding column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

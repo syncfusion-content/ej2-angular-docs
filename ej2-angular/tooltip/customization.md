@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Tooltip component
 
-The Tooltip can be customized by using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#cssclass) property, which accepts custom CSS class names that define specific user-defined styles and themes to be applied to the Tooltip element.
+Customize the tooltip using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#cssclass) property, which accepts custom CSS class names to define user-defined styles and themes.
 
 ## Tip pointer customization
 
-The tip pointer's size, background, and border colors can be styled using the `cssClass` property, as shown below.
+Style the tip pointer's size, background, and border colors using the `cssClass` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,8 +30,7 @@ The tip pointer's size, background, and border colors can be styled using the `c
 
 ## Tooltip customization
 
-The complete look and feel of the Tooltip can be customized by changing its background color, opacity, content font, etc.
-The following code example demonstrates how to achieve this customization.
+Customize the complete appearance of the tooltip by changing its background color, opacity, content font, and more. The following code example demonstrates this customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

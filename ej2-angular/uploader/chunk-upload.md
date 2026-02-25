@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Chunk upload in Angular Uploader component
 
-The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
+The Uploader splits large files into smaller chunks and transmits them to the server using AJAX. You can pause, resume, and retry failed chunk uploads.
 
-> * The chunk upload works in asynchronous upload only.
-* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
+> * Chunk upload works only with asynchronous upload mode.
+* This feature is available from Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release and later.
 
 To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#chunksize) option of the upload and it receives the value in `bytes`.
 
@@ -29,19 +29,19 @@ To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/uploader/chunk-cs1" %}
 
-The chunk upload functionality separates the selected files into blobs of the data or chunks. These chunks are transmitted to the server using an AJAX request.
-The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunksuccess) of the previous chunk. If any one of the chunk failed, then the remaining chunk cannot be sent to the server.
-The [chunkSuccess](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunksuccess) or [chunkFailure](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunkfailure) &nbsp;event will be triggered when the chunk is sent to the server successfully or failed. If all the chunks are sent to the server successfully, the uploader success event is triggered.
+The chunk upload functionality divides selected files into manageable data chunks. These chunks are transmitted to the server sequentially using AJAX requests.
+Chunks are sent in sequential order; the next chunk is transmitted only after the previous chunk succeeds. If any chunk fails, the remaining chunks are not sent to the server.
+The [chunkSuccess](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunksuccess) or [chunkFailure](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunkfailure) event is triggered when each chunk is successfully transmitted or fails. When all chunks are successfully uploaded, the `success` event is triggered.
 
-> Chunk upload will work when the selected file size is greater than the specified chunk size. otherwise, it upload the files normally.
+> Chunk upload is used only when the selected file size exceeds the specified chunk size. Files smaller than the chunk size are uploaded normally without chunking.
 
 ## Additional configurations
 
-To modify the chunk upload, the following options can be used.
+To customize chunk upload behavior, the following options are available:
 
-* **RetryAfterDelay** - If error occurs while sending any chunk request from JavaScript, hold the operation for 500 milliseconds (by default), and retry the operation using chunk. This can be achieved by using the [asyncSettings.retryAfterDelay](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#retryafterdelay) &nbsp;property. You can modify the holding time interval in milliseconds.
+* **RetryAfterDelay** — When a chunk request fails, the Uploader waits 500 milliseconds (by default) before retrying. Configure this delay using the [asyncSettings.retryAfterDelay](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#retryafterdelay) property. You can modify the delay duration in milliseconds.
 
-* **RetryCount** - Specifies the number of retry actions performed when the file fails to upload. By default, [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#retrycount) action is performed 3 times. If the file fails to upload continuously, the request is aborted and the uploader [failure](https://ej2.syncfusion.com/angular/documentation/api/uploader/#failure) event will trigger.
+* **RetryCount** — Specifies the number of retry attempts for failed uploads. By default, the [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#retrycount) action is performed up to 3 times. If the upload continues to fail after all retries, the request is aborted and the [failure](https://ej2.syncfusion.com/angular/documentation/api/uploader/#failure) event is triggered.
 
 The following sample specifies the chunk upload delay with 3000 milliseconds and the retry count is 5. The failure event is triggered as the wrong saveUrl is used.
 
@@ -59,9 +59,9 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 
 ## Resumable upload
 
-Allows you to resume an upload operation after a network failure or manually interrupts (pause) the upload. You can perform pause and resume upload actions using public methods ([pause](https://ej2.syncfusion.com/angular/documentation/api/uploader/#pause) and [resume](https://ej2.syncfusion.com/angular/documentation/api/uploader/#resume)) and UI interaction. The pause icon is enabled after the upload begins.
+The Uploader allows you to resume upload operations after network interruptions or manual pauses. You can pause and resume uploads using the public methods [pause](https://ej2.syncfusion.com/angular/documentation/api/uploader/#pause) and [resume](https://ej2.syncfusion.com/angular/documentation/api/uploader/#resume), or through the UI interaction. The pause icon appears after the upload begins.
 
-> This pause and resume features available only when the chunk upload is enabled.
+> Pause and resume functionality is available only when chunk upload is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,9 +77,9 @@ Allows you to resume an upload operation after a network failure or manually int
 
 ## Cancel upload
 
-The uploader component allows you to cancel the uploading file. This can be achieved by clicking the cancel icon or using the [cancel](https://ej2.syncfusion.com/angular/documentation/api/uploader/#cancel) method. The [canceling](https://ej2.syncfusion.com/angular/documentation/api/uploader/#cancelling) event will be fired whenever the file upload request is canceled. While canceling the upload request, the partially uploaded file is removed from the server.
+The Uploader allows you to cancel file uploads by clicking the cancel icon or using the [cancel](https://ej2.syncfusion.com/angular/documentation/api/uploader/#cancel) method. The [canceling](https://ej2.syncfusion.com/angular/documentation/api/uploader/#cancelling) event is triggered when an upload is canceled. When canceled, partially uploaded files are removed from the server.
 
-When the request fails, the pause icon is changed to retry icon. By clicking the retry icon, sends the failed chunk request again to the server and upload started from where it is failed. You can retry the canceled upload request again using retry UI or [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/#retry) methods. But, if you retry this, the file upload action again starts from initial.
+When a chunk upload fails, the pause icon changes to a retry icon. Click the retry icon to resend the failed chunk and resume uploading from the failure point. You can retry canceled uploads using the retry UI or the [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/#retry) method. If you retry, the file upload restarts from the beginning.
 
 The following example explains about chunk upload with cancel support.
 
@@ -95,15 +95,15 @@ The following example explains about chunk upload with cancel support.
   
 {% previewsample "page.domainurl/samples/uploader/cancel-cs1" %}
 
-> The retry action has different working behavior for chunk upload and default upload.
-* Chunk upload - Retries to upload the failed request where it is failed previously.
-* Default upload - Retries to upload the failed file again from initial.
+> The retry action behaves differently depending on the upload mode:
+* **Chunk upload** — Resumes from the failed chunk without restarting the entire file.
+* **Default upload** — Restarts the file upload from the beginning.
 
-## Server-Side configurations
+## Server-side configuration
 
-The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader components.
+Server-side implementation varies based on your application requirements and business logic. The following code example demonstrates how to handle chunk uploads on the server using the Uploader component.
 
->The `chunk-index` and `total-chunk` values are accessible through the form data using `Request.Form`, which retrieves these details from the incoming request.
+> The `chunk-index` and `total-chunk` values are accessible through form data using `Request.Form`, which retrieves these values from the incoming upload request.
 * `chunk-index` - Indicates the index of the current chunk being received.
 * `total-chunk` - Represents the total number of chunks for the file being uploaded.
 

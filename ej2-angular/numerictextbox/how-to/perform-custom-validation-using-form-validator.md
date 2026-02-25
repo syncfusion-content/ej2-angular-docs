@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom validation using form validator in Angular Numerictextbox component
+# Perform custom validation using form validator in Angular NumericTextBox component
 
-This section explains how to perform custom validation on the NumericTextBox using FormValidator. The NumericTextBox will be validated when the value changes or the user clicks the submit button.
-Validation can be performed by adding custom validation in the rules collection of the FormValidator.
+Custom validation on the NumericTextBox can be implemented using the FormValidator component. Validation is triggered when the value changes or when the user submits the form. The following example shows how to add custom validation rules to the FormValidator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

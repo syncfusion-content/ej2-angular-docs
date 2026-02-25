@@ -10,14 +10,12 @@ domainurl: ##DomainURL##
 
 # Custom tooltip with dynamic html in Angular Tooltip component
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property, which supports both string and HTML tags.
+Load HTML pages into the tooltip using HTML tags such as iframe, video, and map. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property accepts both string and HTML tags.
 
-To load an `iframe` element in tooltip, set the required iframe in the `content` of tooltip while initializing the tooltip component. Refer to the following code.
+To load an `iframe` element in the tooltip, set the required iframe in the `content` property when initializing the tooltip component. Refer to the following code:
 
 ```typescript
-
-content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>
-
+content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>'
 ```
 
 {% tabs %}

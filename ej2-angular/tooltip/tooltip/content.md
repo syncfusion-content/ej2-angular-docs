@@ -10,16 +10,15 @@ domainurl: ##DomainURL##
 
 # Content in Angular Tooltip component
 
-A text or a piece of information assigned to the Tooltip's `content` property will be displayed as the main text stream of the Tooltip.
-It can be a string or a template content. If the `content` property is not provided with any specific value, then it takes the value assigned to the `title` attribute of the target element on which the Tooltip was initialized. The content can also dynamically be assigned to the Tooltip via AJAX.
+Assign text or information to the Tooltip's `content` property to display as the main content. The content can be a string or template. If the `content` property is not specified, the tooltip uses the value from the `title` attribute of the target element. You can also dynamically assign content to the tooltip via AJAX.
 
 ## Template content
 
-Any text or image can be added to the Tooltip, by default. To customize the Tooltip layout or to create your own visualized element on the Tooltip, `template` can be used.
+Add any text or image to the tooltip by default. Use the `template` property to customize the tooltip layout or create custom visualized elements.
 
-Tooltip template content can be rendered using the `ng-template`. If needed it can be rendered using the `HTML` elements also.
+Render tooltip template content using the `ng-template` or HTML elements.
 
-The following sample demonstrates how to add content template in tooltip.
+The following sample demonstrates how to add a content template to the tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +34,7 @@ The following sample demonstrates how to add content template in tooltip.
 
 ## Dynamic content via AJAX
 
-The Tooltip content can be dynamically loaded  by making use of the AJAX call. The AJAX request is usually made within the `beforeRender` event of the Tooltip, and then the Tooltip's `content` is assigned the value retrieved on it's success.
+Dynamically load tooltip content using AJAX calls. Make the AJAX request within the `beforeRender` event, and assign the retrieved data to the Tooltip's `content` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

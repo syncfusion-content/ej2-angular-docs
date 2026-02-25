@@ -26,7 +26,7 @@ The rating component supports tooltip to show additional information in rating i
 
 ## Tooltip template
 
-You can use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#tooltiptemplate) tag directive to specify a custom template for the `tooltip` of the rating. The current value of the rating will be passed as the `value` property in the template context when building the content of the tooltip. This allows you to include dynamic information about the rating in the template.
+Use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#tooltiptemplate) tag directive to customize the tooltip content. The template context provides the current rating `value` as a property, enabling dynamic and contextual tooltip messages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

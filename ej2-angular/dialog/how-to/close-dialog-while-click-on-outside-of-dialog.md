@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close dialog while click on outside of dialog in Angular Dialog component
+# Close dialog when clicking outside in Angular Dialog component
 
-By default, dialog can be closed by pressing Esc key and clicking the close icon on the right of dialog header. It can also be closed by clicking outside of the dialog using hide method.
+By default, the dialog closes when you press the Esc key or click the close icon in the dialog header. Close the dialog by clicking outside the dialog area using the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
 
-> Set the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property value to false to prevent closing of the dialog when pressing Esc key.
+> Set the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property to `false` to prevent the dialog from closing when pressing the Esc key.
 
-In the following sample, dialog is closed when clicking outside the dialog area using [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
+The following sample demonstrates closing the dialog when clicking outside the dialog area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ In the following sample, dialog is closed when clicking outside the dialog area 
   
 {% previewsample "page.domainurl/samples/dialog/dlg-close-cs1" %}
 
-In the following sample, the dialog is rendered based on the target container. It can also be closed by clicking outside of the dialog.
+The following sample demonstrates rendering the dialog within a target container and closing it by clicking outside the dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
