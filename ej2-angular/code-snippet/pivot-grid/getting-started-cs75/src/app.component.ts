@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = {
             dataSource: Pivot_Data as IDataSet[],
             expandAll: true,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            columns: [{ name: 'Year', caption: 'Production Year' }],
             rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             values: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
 
         this.button.element.onclick = (): void => {
             let excelExportProperties: ExcelExportProperties = { };
-            this.pivotGridObj?.excelExport(excelExportProperties, false, null, true);
+            this.pivotGridObj?.excelExport(excelExportProperties, false, undefined, true);
         };
     }
 }

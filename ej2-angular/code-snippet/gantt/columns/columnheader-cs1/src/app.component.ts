@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { projectNewData } from './data';
+import { GanttData } from './data';
 
 @Component({
   selector: 'app-root',
@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   public splitterSettings?: object;
 
   ngOnInit(): void {
-    this.data = projectNewData;
+    this.data = GanttData;
     this.taskSettings = {
       id: 'TaskID',
       name: 'TaskName',

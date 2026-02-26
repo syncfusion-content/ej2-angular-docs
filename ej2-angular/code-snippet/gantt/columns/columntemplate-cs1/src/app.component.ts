@@ -101,7 +101,7 @@ export class AppComponent implements OnInit {
 
   public dataBound(): void {
     if (this.isRowDropped) {
-      this.ganttInstance.enableAutoWbsUpdate = false;
+      (this.ganttInstance as GanttComponent).enableAutoWbsUpdate = false;
       this.isRowDropped = false;
     }
   }
@@ -109,7 +109,7 @@ export class AppComponent implements OnInit {
   public actionBegin(args: any): void {
     if (args.requestType === "beforeDrop") {
       this.isRowDropped = true;
-      this.ganttInstance.enableAutoWbsUpdate = true;
+      (this.ganttInstance as GanttComponent).enableAutoWbsUpdate = true;
     }
   }
 }

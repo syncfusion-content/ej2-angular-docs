@@ -20,8 +20,7 @@ standalone: true,
     template: `
       <div id="dialog-container">
         <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
-        <ejs-dialog id='dialog' #ejDialog target="#dialog-container" header='Dialog' [showCloseIcon]='true' content='This is a Dialog content'
-          width='350px'">
+          <ejs-dialog id='dialog' #ejDialog target="#dialog-container" header='Dialog' [showCloseIcon]='true' content='This is a Dialog content' width='350px'>
         </ejs-dialog>
       </div>`
 })

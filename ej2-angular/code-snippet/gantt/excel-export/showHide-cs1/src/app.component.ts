@@ -44,12 +44,12 @@ export class AppComponent implements OnInit {
 
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_excelexport') {
-      (this.ganttInstance as GanttComponent).treeGrid.grid.columns[0].visible = true;
-      (this.ganttInstance as GanttComponent).treeGrid.grid.columns[3].visible = false;
+      ((this.ganttInstance as GanttComponent).treeGrid.grid.columns[0] as Column).visible = true;
+      ((this.ganttInstance as GanttComponent).treeGrid.grid.columns[3] as Column).visible = false;
       (this.ganttInstance as GanttComponent).excelExport();
     } else if (args.item.id === 'ganttDefault_csvexport') {
-      (this.ganttInstance as GanttComponent).treeGrid.grid.columns[0].visible = true;
-      (this.ganttInstance as GanttComponent).treeGrid.grid.columns[3].visible = false;
+      ((this.ganttInstance as GanttComponent).treeGrid.grid.columns[0] as Column).visible = true;
+      ((this.ganttInstance as GanttComponent).treeGrid.grid.columns[3] as Column).visible = false;
       (this.ganttInstance as GanttComponent).csvExport();
     }
   };
