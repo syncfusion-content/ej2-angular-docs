@@ -32,7 +32,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
   selector: 'app-root',
   template: `
-        <div style="padding: 20px">
+        <div>
           <label>Enable/Disable show delete confirmation dialog</label>
           <ejs-switch id="switch1" [(checked)]="enableShowDeleteConfirmDialog" 
           (change)="toggleShowDeleteConfirmDialog()"></ejs-switch>

@@ -20,13 +20,13 @@ standalone: true,
   selector: 'app-root',
   template: `
         <div style="display: flex">
-          <label style="padding: 30px 17px 0 0">Choose selection mode:</label>
-          <ejs-dropdownlist style="padding: 26px 0 0 0" index="0" width="150" 
+          <label style="padding: 5px 5px 0 0">Choose selection mode:</label>
+          <ejs-dropdownlist index="0" width="150" 
           [dataSource]="dropdownData" (change)="valueChange($event)">
           </ejs-dropdownlist>
         </div>
-        <div style="padding: 20px 0px 0px 0px">
-        <ejs-grid #grid [dataSource]="data" height="315px">
+        <div style="padding: 5px 0px 0px 0px">
+        <ejs-grid #grid [dataSource]="data" height="295px">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
             width="120"></e-column>

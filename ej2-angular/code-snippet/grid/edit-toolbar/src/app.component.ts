@@ -45,9 +45,9 @@ standalone: true,
           </e-items>
       </ejs-toolbar>
       </div>
-      <div style="padding-top:20px">
+      <div >
           <ejs-grid #grid id='Batchgrid' [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings'
-            [editSettings]='editSettings'>
+            [editSettings]='editSettings' height='220px'>
             <e-columns>
               <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true'
                 [validationRules]='orderIDRules'></e-column>

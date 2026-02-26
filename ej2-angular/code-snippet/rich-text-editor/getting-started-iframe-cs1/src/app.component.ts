@@ -5,15 +5,12 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   template:  `<ejs-richtexteditor id='iframeRTE' [toolbarSettings]='tools' [iframeSettings]='iframe' [height]='height' [value]="value"></ejs-richtexteditor>`,
-  styleUrls: ['./app.component.css'],
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService],
   imports: [RichTextEditorModule]
 })
 
-@NgModule({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
-})
 
 export class AppComponent {
   public tools: object = {

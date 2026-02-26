@@ -12,7 +12,7 @@ const SERVICE_URI: string = 'https://services.syncfusion.com/angular/production/
   providers: [PageService, FilterService, SortService],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid #grid [dataSource]='data' [query]='query' allowSorting='true' allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings' [filterSettings]='filterSettings'>
+  template: `<ejs-grid #grid [dataSource]='data' [query]='query' allowSorting='true' allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings' [filterSettings]='filterSettings' height='273px'>
               <e-columns>
                   <e-column field='EmployeeID' headerText='Employee ID' width='120' textAlign='Right'></e-column>
                   <e-column field='Employees' headerText='Employee Name' width='150'></e-column>

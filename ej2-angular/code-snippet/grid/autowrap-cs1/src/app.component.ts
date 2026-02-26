@@ -21,16 +21,15 @@ standalone: true,
   selector: 'app-root',
   template: ` 
     <div style="display: flex">
-    <label style="padding: 10px 10px 26px 0"> Change the wrapmode of auto wrap feature: </label> 
+    <label style="padding: 5px 5px 5px 0"> Change the wrapmode of auto wrap feature: </label> 
     <ejs-dropdownlist
-    style="margin-top:5px"
     index="0"
     width="100"
     [dataSource]="ddlData"
     (change)="valueChange($event)">
   </ejs-dropdownlist>
   </div>
-    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' allowPaging='true' allowTextWrap='true' [textWrapSettings]='wrapSettings' height='400'>
+    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' allowPaging='true' allowTextWrap='true' [textWrapSettings]='wrapSettings' height='255'>
         <e-columns>
             <e-column field='Inventor' headerText='Inventor Name' width='180' textAlign="Right"></e-column>
             <e-column field='NumberofPatentFamilies' headerText="Number of Patent Families" width='180' textAlign="Right"></e-column>

@@ -435,7 +435,7 @@ providers: [EditService, ToolbarService, SortService, PageService, ForeignKeySer
 standalone: true,
     selector: 'app-root',
     template: `
-            <ejs-grid #grid [dataSource]="data" [allowPaging]="true" [pageSettings]="pageSettings" (actionBegin)="actionBegin($event)" [editSettings]="editOptions" [toolbar]="toolbarItems" >
+            <ejs-grid #grid [dataSource]="data" [allowPaging]="true" [pageSettings]="pageSettings" (actionBegin)="actionBegin($event)" [editSettings]="editOptions" [toolbar]="toolbarItems" height="220" >
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" [validationRules]="orderIDRules" isPrimaryKey="true"></e-column>
                 <e-column field="EmployeeID" foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeeData' headerText="Employee Name" width="220">
@@ -766,7 +766,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)='actionBegin($event)'>
+        <ejs-grid [dataSource]='data' allowPaging='true' height='220px' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)='actionBegin($event)'>
             <e-columns>
                 <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                 <e-column field='FirstName' headerText='First Name' textAlign='Left'  width=120></e-column>

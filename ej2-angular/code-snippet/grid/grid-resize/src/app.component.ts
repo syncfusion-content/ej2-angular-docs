@@ -41,7 +41,7 @@ standalone: true,
     </button>
   </div>  
   <div id="parent">
-    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height='100%'>
+    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height='273'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

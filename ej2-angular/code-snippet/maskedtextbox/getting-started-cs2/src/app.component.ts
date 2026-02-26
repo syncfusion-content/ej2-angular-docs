@@ -22,6 +22,6 @@ import { Component } from '@angular/core';
     </ejs-maskedtextbox>
   `
 })
-export class App {
+export class AppComponent {
   public value: string = '';
 }

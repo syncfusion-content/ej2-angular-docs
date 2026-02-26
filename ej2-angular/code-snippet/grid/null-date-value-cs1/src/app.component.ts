@@ -11,7 +11,7 @@ let action: string;
     providers: [SortService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' allowSorting='true' (actionBegin)='actionBegin($event)' >
+    template: `<ejs-grid [dataSource]='data' allowSorting='true' (actionBegin)='actionBegin($event)' height='300px'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' width='100'></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width='120'></e-column>

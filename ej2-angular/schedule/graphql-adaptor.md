@@ -8,20 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connect the Syncfusion Angular Scheduler to a Node.js GraphQL Backend
+# Connecting Syncfusion Angular Scheduler to GraphQL backend in Node.js
 
-This guide shows you how to wire up the **Syncfusion Angular Scheduler** to a **Node.js GraphQL** backend using the **GraphQLAdaptor** for efficient, typed, and scalable CRUD. It’s beginner‑friendly, but production‑ready: we’ll cover **schema design**, **resolvers**, **adaptor configuration**, and **common pitfalls**.
+[GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
----
+**Traditional REST APIs** and `GraphQL` differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while `GraphQL` uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes `GraphQL` especially useful for **Angular Scheduler integration**, the **reason** is that data‑centric UI components require well‑structured and selective datasets to minimize network usage and ensure smooth, high‑performance interactions.
 
-## What You’ll Build
-- A **GraphQL server (Node.js)** exposing queries and mutations for Scheduler events
-- An **Angular app** that uses **DataManager + GraphQLAdaptor** to:
-  - Load events for a given date range
-  - Add, update, and delete events (batch mutation)
-- A clean, maintainable integration pattern you can extend with your data store later
+**Key GraphQL concepts:**
 
----
+- **Queries**: A query is a request to read data. Queries do not modify data; they only retrieve it.
+- **Mutations**: A mutation is a request to modify data. Mutations create, update, or delete records.
+- **Resolvers**: Each query or mutation is handled by a resolver, which is a function responsible for fetching data or executing an operation. **Query resolvers** handle **read operations**, while **mutation resolvers** handle **write operations**.
+- **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify the way data can be retrieved, and mutation definitions specify the way data can be modified. 
+
+[Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) is a fast and efficient JavaScript runtime built on Google’s V8 engine. It enables JavaScript to run on the server, making it a popular platform for building web APIs, real‑time applications, and modern backend services. Node.js offers a non‑blocking, event‑driven architecture that supports high performance and scalability.
+
 ## Prerequisites
 
 | Software / Package          | Recommended version          |
@@ -30,32 +31,42 @@ This guide shows you how to wire up the **Syncfusion Angular Scheduler** to a **
 | npm                         | Latest (11.x+)               |
 | Angular CLI                 | 18.x or later                |
 
-## Project Layout
-This project keep frontend and backend in separate folders:
-
-```
-./GraphQLServer   # Node.js GraphQL backend
-./SchedulerApp    # Angular app with Syncfusion Scheduler
-```
-
----
 ## Setting up the GraphQL backend using Node.js
 
 The `GraphQL` backend acts as the central data service, handling queries and mutations that power the Syncfusion Angular Scheduler.
 
-### 1) Create the project and install dependencies
+### Step 1: Create the GraphQL server and install required packages
+
+Before configuring the `GraphQL` API, a new folder must be created to host the `GraphQL` server. This folder will contain the server configuration, required dependencies, and sample data used for processing `GraphQL` queries.
+
+For this guide, a `GraphQL` server named **GraphQLServer** is created using Node.js.
+
+**Create project folder**
+
+Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the project folder:
 
 ```bash
 mkdir GraphQLServer
 cd GraphQLServer
-npm init -y
-npm i graphpack
-npm i @syncfusion/ej2-data --save
 ```
 
-Add these scripts to **package.json**:
+**Initialize and Install required packages**
 
-```json
+The `GraphQL` server is set up using graphpack, a lightweight development tool for building GraphQL APIs. The Syncfusion `ej2-data` package is included to support the Scheduler’s data operations, enabling structured and selective data retrieval that minimizes network usage and ensures smooth, high‑performance event loading and updates.
+
+Run the following commands in the terminal window to initialize and install the required packages:
+
+```bash
+npm init -y
+npm i graphpack
+npm install @syncfusion/ej2-data --save
+```
+- **npm init -y** – Initializes a new Node.js project by automatically generating a default package.json file without prompting for user input.
+- **graphpack** – Lightweight `GraphQL` server and development environment.
+- **@syncfusion/ej2-data** – Provides data utilities for advanced data operations.
+
+Add this lines in `scripts` in `package.json` to defines commands with npm
+```package.json
 
 "scripts": {
       "dev": "graphpack --port 4400",
@@ -63,20 +74,21 @@ Add these scripts to **package.json**:
     }
 
 ```
-### 2) Create the folder structure
+**Create src folder**
+
+Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the `src` folder:
+
+```bash
+mkdir src
+cd src
 ```
-GraphQLServer/
-└─ src/
-   ├─ db.js
-   ├─ schema.graphql
-   └─ resolvers.js
-```
 
-### 3) Add sample data 
+**Create sample datasource** 
 
-> In‑memory data keeps the tutorial simple. You can swap this for a database later.
+After installing the required packages, create a new file named **db.js** inside the **src** folder. This file acts as an in‑memory datasource for the `GraphQL` server.
 
-**[src/db.js]**
+[db.js]
+
 ```js
 
 export let eventsData = [
@@ -102,206 +114,302 @@ export let eventsData = [
 ];
 
 ```
-### 4) Define the schema 
+The **GraphQLServer** folder is now created, required packages are installed, and a sample data source is configured. The project is ready for defining the `GraphQL` schema, resolvers, and server configuration.
 
-Define the `Appointment` type, a `ReturnType` wrapper for query responses, a `DataManager` input to capture Scheduler operations, and a batch mutation for CRUD.
+### Step 2: Configuring schema in GraphQL
 
-**[src/schema.graphql]**
+The `GraphQL` schema defines the structure of the "Appointment" data model and the server‑side operations available for performing CRUD actions.
 
-```
-# --- Domain model ---
-type Appointment {
-  Id: Int!
-  Subject: String
-  StartTime: String!
-  EndTime: String!
-  Location: String
-  IsAllDay: Boolean
-  RecurrenceRule: String
-  StartTimezone: String
-  EndTimezone: String
-}
+**Instructions:**
+1. Create a new schema file (**src/schema.graphql**) in the **GraphQLServer** folder.
+2. Add type definition for "Appointment".
 
-# --- Query wrapper expected by GraphQLAdaptor ---
-type ReturnType {
-  result: [Appointment]
-}
+    ```
+    # --- Appointment type definition ---
+    type Appointment {
+      Id: Int!
+      Subject: String
+      StartTime: String!
+      EndTime: String!
+      Location: String
+      IsAllDay: Boolean
+      RecurrenceRule: String
+      StartTimezone: String
+      EndTimezone: String
+      RecurrenceID: Int
+      RecurrenceException: String
+      FollowingID: Int
+      IsReadonly:String
+      IsBlock:String
+    }
+    ```
+3. Add type definition for "ReturnType".
 
-# --- Sorting input (optional) ---
-input Sort {
-  name: String!
-  direction: String!
-}
+    ```
+    type ReturnType {
+      result: [Appointment]
+    }
+    ```
+4. Add type definition for "DataManager".
 
-# --- Aggregation input (optional) ---
-input Aggregate {
-  field: String!
-  type: String!
-}
+    ```
+    # --- Syncfusion DataManager payload ---
+    input DataManager {
+        skip: Int
+        take: Int
+        sorted: [Sort]
+        group: [String]
+        table: String
+        select: [String]
+        where: String
+        search: String
+        requiresCounts: Boolean
+        aggregates: [Aggregate]
+        params: String
+    }
+    ```
+> For detailed information about **DataManager** type refer to [Configuring Syncfusion DataManager schema](#step-3-configuring-syncfusion-DataManager-schema).
 
-# --- Syncfusion DataManager payload ---
-input DataManager {
-  skip: Int
-  take: Int
-  sorted: [Sort]
-  group: [String]
-  table: String
-  select: [String]
-  where: String
-  search: String
-  requiresCounts: Boolean
-  aggregates: [Aggregate]
-  params: String
-}
+5. Add type definition for "Appointment field names".
 
-# --- Inputs used by batch CRUD ---
-input AppointmentFields {
-  Id: Int!
-  Subject: String
-  StartTime: String!
-  EndTime: String!
-  Location: String
-  IsAllDay: Boolean
-  Guid: String
-  RecurrenceRule: String
-  StartTimezone: String
-  EndTimezone: String
-}
+    ```
+    # --- Schedule Appointment field names ---
+    input AppointmentFields {
+      Id: Int!
+      Subject: String
+      StartTime: String!
+      EndTime: String!
+      Location: String
+      IsAllDay: Boolean
+      Guid: String
+      RecurrenceRule: String
+      StartTimezone: String
+      EndTimezone: String
+      RecurrenceID: Int
+      RecurrenceException: String
+      FollowingID: Int
+      IsReadonly:String
+      IsBlock:String
+    }
+    ```
 
-# --- Operations ---
-type Query {
-  getEvents(datamanager: DataManager): ReturnType
-}
+6. Define the Query type to expose the "getEvents" operation that returns the list of "Events".
 
-type Mutation {
-  batchUpdate(
-    added: [AppointmentFields]
-    changed: [AppointmentFields]
-    deleted: [AppointmentFields]
-  ): Appointment
-}
-```
-### 5) Implement resolvers 
-Read the Scheduler’s requested date range from `datamanager.params` (JSON) and filter accordingly. The batch mutation handles **add**, **update**, and **delete** in one roundtrip.
+    ```
+    type Query {
+      getEvents(datamanager: DataManager): ReturnType 
+    }
+    ```
+7. Define Mutation types for CRUD operations.
 
-**[src/resolvers.js]**
+    ```
+    type Mutation {
+      batchUpdate(added: [AppointmentFields],changed: [AppointmentFields],deleted: [AppointmentFields]): [Appointment]
+    }
+    ```
 
-```js
-import { eventsData } from "./db";
-function sameId(a, b) {
-  if (a === undefined || a === null || b === undefined || b === null) return false;
-  return String(a) === String(b);
-}
-const resolvers = {
-  Query: {
+
+### Step 3: Configuring Syncfusion DataManager schema
+
+Syncfusion Scheduler sends all operation details as a single request object. `GraphQL` requires a clear, typed structure to understand these values. 
+
+Since Syncfusion’s [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) already has a fixed structure for sending operation details, the `GraphQL` backend define a matching typical input type.
+
+**DataManager** serves as the input type that matches the structure of the `DataManager` request, ensuring that all operation details are correctly received by the `GraphQL` API.
+
+**Purpose:**
+The **DataManager** schema provides a standard format for delivering Scheduler operation parameters to the `GraphQL` server.
+This structure allows the backend to return only the required records, improving performance, reducing payload size, and enabling efficient data handling.
+
+### Step 4: GraphQL Query resolvers
+
+A resolver in `GraphQL` is a function responsible for fetching the data for a specific field in a `GraphQL` schema.
+
+When a client sends a `GraphQL` query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema. 
+
+**Instructions:**
+1. Create a new resolver file **(src/resolvers.js)** inside the **GraphQLServer** folder.
+2. Import the required data source **(e.g., AppointmentDetails)** from the data file.
+3. Implement the "getEvents" resolver to handle the logic for the "getEvents" query defined in the schema.
+4. Ensure the resolver returns the processed list of "Appointments" in the structure specified by the schema.
+
+    [resolvers.js]
+
+    ```js
+    import { eventsData } from "./db";
+    Query: {
     getEvents: (parent, datamanager, context, info) => { 
-      const dataArgs = datamanager;
-      const params = JSON.parse(dataArgs.datamanager.params);
-      console.log('startDate: ' + params.StartDate + ' EndDate: ' + params.EndDate);
-      var data = eventsData.filter(x => new Date(x.StartTime) >= new Date(params.StartDate) && new Date(x.EndTime) <= new Date(params.EndDate));
-      return {result: data || eventsData};
+          const dataArgs = datamanager;
+          const params = JSON.parse(dataArgs.datamanager.params);
+          console.log('startDate: ' + params.StartDate + ' EndDate: ' + params.EndDate);
+          var data = eventsData.filter(x => new Date(x.StartTime) >= new Date(params.StartDate) && new Date(x.EndTime) <= new Date(params.EndDate));
+          return {result: data || eventsData};
+        }
+    },
+    ```
+### Step 5: GraphQL Mutation resolvers
+
+Mutations in `GraphQL` are used to modify data on the server, such as creating, updating, or deleting records.
+
+Previously, the CRUD mutation types were defined in the (**schema.graphql**) file. The next step is to implement these mutation actions inside the (**resolver.js**) file.
+
+**Instructions:**
+1. Open the **(src/resolvers.js)** file.
+2. Implement the **Scheduler Resolvers**:
+
+    [resolvers.js]
+
+    ```js
+    import { eventsData } from "./db";
+    function sameId(a, b) {
+      if (a === undefined || a === null || b === undefined || b === null) return false;
+      return String(a) === String(b);
     }
-  },
-  Mutation: {
-    batchUpdate: (parent, { added, changed, deleted }, context, info) => {
-      if (added && added.length > 0) {
-        console.log('added: ' + added.length);
-        added.forEach((order) => {
-          let existingIndex = -1;
-          for (let i = 0; i < eventsData.length; i++) {
-            if (sameId(eventsData[i].Id, order && order.Id)) {
-              existingIndex = i;
-              break;
+    const resolvers = {
+      Query: {
+        getEvents: (parent, datamanager, context, info) => { 
+          const dataArgs = datamanager;
+          const params = JSON.parse(dataArgs.datamanager.params);
+          console.log('startDate: ' + params.StartDate + ' EndDate: ' + params.EndDate);
+          var data = eventsData.filter(x => new Date(x.StartTime) >= new Date(params.StartDate) && new Date(x.EndTime) <= new Date(params.EndDate));
+          return {result: data || eventsData};
+        }
+      },
+       Mutation: {
+        batchUpdate: (argument, { added = [], changed = [], deleted = [] }) => {
+          for (const item of [...added, ...changed]) {
+            const id = item.Id;
+            const recId = item.RecurrenceID;
+            const start = item.StartTime;
+
+            const idx = eventsData.findIndex(e => sameId(e.Id, id));
+
+            if (idx === -1) {
+              if (recId) {
+                const parent = eventsData.find(p => sameId(p.Id, recId));
+                if (parent && start) {
+                  const stamp = new Date(start).toISOString()
+                    .replace(/[-:T.]/g, '')
+                    .slice(0, 15) + 'Z';
+
+                  let ex = (parent.RecurrenceException || '').split(',').filter(Boolean);
+                  if (!ex.includes(stamp)) {
+                    parent.RecurrenceException = ex.length ? ex.concat(stamp).join(',') : stamp;
+                  }
+                }
+              }
+              eventsData.push({ ...item });
+              continue;
+            }
+
+            Object.assign(eventsData[idx], item);
+
+            if (eventsData[idx].RecurrenceID && eventsData[idx].StartTime) {
+              const parent = eventsData.find(p => sameId(p.Id, eventsData[idx].RecurrenceID));
+              if (parent) {
+                const stamp = new Date(eventsData[idx].StartTime).toISOString()
+                  .replace(/[-:T.]/g, '')
+                  .slice(0, 15) + 'Z';
+
+                let ex = (parent.RecurrenceException || '').split(',').filter(Boolean);
+                if (!ex.includes(stamp)) {
+                  parent.RecurrenceException = ex.length ? ex.concat(stamp).join(',') : stamp;
+                }
+              }
             }
           }
-          if (existingIndex >= 0) {
-            const target = eventsData[existingIndex];
-            if ('Id' in order) target.Id = order.Id;
-            if ('Subject' in order) target.Subject = order.Subject;
-            if ('StartTime' in order) target.StartTime = order.StartTime;
-            if ('EndTime' in order) target.EndTime = order.EndTime;
-            if ('Location' in order) target.Location = order.Location;
-            if ('IsAllDay' in order) target.IsAllDay = order.IsAllDay;
-            if ('RecurrenceRule' in order) target.RecurrenceRule = order.RecurrenceRule;
-            if ('StartTimezone' in order) target.StartTimezone = order.StartTimezone;
-            if ('EndTimezone' in order) target.EndTimezone = order.EndTimezone;
-          } else {
-            eventsData.push(order);
-          }
-        });
-      }
-      if (changed && changed.length > 0) {
-        console.log('changed: ' + changed.length);
-        changed.forEach((order) => {
-          let target = null;
-          for (let i = 0; i < eventsData.length; i++) {
-            if (sameId(eventsData[i].Id, order && order.Id)) {
-              target = eventsData[i];
-              break;
+          for (const item of deleted) {
+            let id = (typeof item === 'object' && item !== null) ? item.Id : item;
+            if (!id) continue;
+
+            const isOccurrenceDelete = (typeof item === 'object' && !!item.RecurrenceID);
+
+            if (isOccurrenceDelete) {
+              const idx = eventsData.findIndex(e => sameId(e.Id, id));
+              if (idx !== -1) eventsData.splice(idx, 1);
+            } else {
+
+              for (let i = eventsData.length - 1; i >= 0; i--) {
+                const ev = eventsData[i];
+                if (sameId(ev.Id, id) || sameId(ev.RecurrenceID, id)) {
+                  eventsData.splice(i, 1);
+                }
+              }
             }
           }
-          if (!target) {
-            console.log('Change skipped: app not found for Id:', order && order.Id);
-            return;
-          }
-          if ('Id' in order) target.Id = order.Id;
-          if ('Subject' in order) target.Subject = order.Subject;
-          if ('StartTime' in order) target.StartTime = order.StartTime;
-          if ('EndTime' in order) target.EndTime = order.EndTime;
-          if ('Location' in order) target.Location = order.Location;
-          if ('IsAllDay' in order) target.IsAllDay = order.IsAllDay;
-          if ('RecurrenceRule' in order) target.RecurrenceRule = order.RecurrenceRule;
-          if ('StartTimezone' in order) target.StartTimezone = order.StartTimezone;
-          if ('EndTimezone' in order) target.EndTimezone = order.EndTimezone;
-        });
+
+          return eventsData;
+        }
       }
-      if (deleted && deleted.length > 0) {
-        console.log('deleted: ' + deleted.length);
-        deleted.forEach((order) => {
-          const eventID = (order && typeof order === 'object') ? order.Id : order;
-          let idx = -1;
-          for (let i = 0; i < eventsData.length; i++) {
-            if (sameId(eventsData[i].Id, eventID)) {
-              idx = i;
-              break;
-            }
-          }
-          if (idx === -1) {
-            console.log("Delete skipped: app not found.", eventID);
-            return;
-          }
-          eventsData.splice(idx, 1);
-        });
-      }
-    }
-  }
-};
-export default resolvers;
-```
-### 6) Run the GraphQL server
+    };
+    export default resolvers;
+    ```
+3. batchUpdate — Code Breakdown
+
+This single mutation covers the three CRUD actions via three optional arrays: **added, changed, deleted**.
+
+### A) Added (Create)
+
+| Step | Purpose | Definition |
+|------|----------|-------------|
+| **1. Detect Added Items** | Ensure the added array contains new records to process. | Validate that `added` exists and has length. |
+| **2. Determine New vs Existing** | Identify whether the incoming event is new or already exists by Id. | Use Id comparison to check if a record already exists. |
+| **3. Handle New Normal Event** | Insert a new event that is not part of a recurrence override. | Add the item directly into the event collection. |
+| **4. Handle New Occurrence Override** | When an added item belongs to a recurring series (`RecurrenceID` present). | Find the parent event and mark the overridden occurrence as excluded by updating `RecurrenceException`. |
+| **5. Insert Added Item** | Persist the new event or override. | Push the new event into the collection. |
+
+---
+
+### B) Changed (Update)
+
+| Step | Purpose | Definition |
+|------|----------|-------------|
+| **1. Detect Changed Items** | Ensure the changed array contains updates to process. | Validate that `changed` exists and has length. |
+| **2. Locate Event to Update** | Identify the event to be updated using its Id. | Compare Ids to find the correct event. |
+| **3. Handle Missing Target** | Process an update even if the target does not exist (may be an override creation). | If the event doesn’t exist, treat it like a new insert. |
+| **4. Merge Updates** | Apply all fields from the incoming event to the existing event. | Perform shallow merge of updated fields. |
+| **5. Handle Recurrence Override Update** | Maintain correct exclusion list for modified occurrence. | Add/update the exception stamp in the parent’s `RecurrenceException` when `RecurrenceID` is present. |
+
+---
+
+### C) Deleted (Delete)
+
+| Step | Purpose | Definition |
+|------|----------|-------------|
+| **1. Detect Deleted Items** | Ensure the deleted array contains items to process. | Validate that `deleted` exists and has length. |
+| **2. Normalize Input** | Allow deletion via either a full event object or raw Id. | Extract Id whether the input is an object or primitive. |
+| **3. Identify Occurrence Delete** | Determine if deletion targets a single overridden instance. | Check if the deleted item has a `RecurrenceID`. |
+| **4. Remove Occurrence** | Safely remove only the overridden instance. | Delete only the row whose Id matches the override. |
+| **5. Remove Normal Event or Entire Series** | Cleanly delete one-time events or full recurrence parents. | Delete the parent event and all events whose `RecurrenceID` matches the parent Id. |
+---
+
+## Integrating Syncfusion Angular Scheduler with GraphQL
+
+Open a Visual Studio Code terminal or Command prompt and run the below command:
+
 ```bash
-npm run dev
-```
-You should see the server on **http://localhost:4400** (GraphQL endpoint is **/graphql**).
-
-> **CORS**: If your browser reports CORS errors, consider using an Angular proxy (recommended) or switch to an Express + Apollo server where you control headers. For dev, the Angular proxy is the simplest.
-
-## Frontend: Integrate the Angular Scheduler with GraphQL
-
-### 1) Create the Angular app
-```bash
-ng new SchedulerApp --style=css --routing=false
+ng new SchedulerApp
 cd SchedulerApp
 ```
-### 2) Install the Scheduler package
+This command creates a Angular application named **SchedulerApp** with the essential folder structure and files required to begin development immediately.
+
+### Step 1: Adding Syncfusion packages
+
+Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt:
+
 ```bash
 npm install @syncfusion/ej2-angular-schedule --save
 ```
+- **@syncfusion/ej2-angular-schedule** – Required for using the Syncfusion Angular Scheduler component.
 
+### Step 2: Including required Syncfusion stylesheets
 
-### 3) Include required CSS
-Add to **src/styles.css**:
+Once the dependencies are installed, the required CSS files are made available in the (**../node_modules/@syncfusion**) package directory, and the corresponding CSS references are included in the **styles.css** file.
+
+[src/styles.css]
+
 ```css
+
 @import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
 @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
 @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
@@ -313,183 +421,297 @@ Add to **src/styles.css**:
 @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
 @import "../node_modules/@syncfusion/ej2-angular-schedule/styles/tailwind3.css";
 ```
-> You can switch themes at any time; see Syncfusion’s Theme Studio if you need custom theming.
 
-### 4) Add the Scheduler to the template 
+For this project, the "Tailwind" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
-**[src/app/app.html]**
+### Step 3: Configure GraphQL Adaptor
 
-```html
-<ejs-schedule
-  #scheduleObj
-  width="100%"
-  height="550px"
-  [selectedDate]="selectedDate"
-  [eventSettings]="eventSettings">
-</ejs-schedule>
-```
+Syncfusion provides a built‑in [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) that translates the user interaction into GraphQL requests, enabling efficient communication with `GraphQL` servers which helps in integrating the Scheduler component with the `GraphQL` server.
 
-### 5) Configure DataManager with GraphQLAdaptor
+**What is a GraphQL Adaptor?**
 
-The GraphQLAdaptor converts Scheduler actions into GraphQL requests and maps responses back.
+An adaptor is a translator between two different systems. The `GraphQLAdaptor` specifically:
 
- **[src/app/app.ts]**
+- Receives interaction events from the Scheduler (user clicks Add, Edit, Delete).
+- Converts these actions into `GraphQL` query or mutation syntax.
+- Sends the `GraphQL` request to the backend `GraphQL` endpoint.
+- Receives the response data from the backend.
+- Formats the response back into a structure the Scheduler understands.
+- Updates the Scheduler display with the new data.
 
-```ts
-import { Component, ViewChild } from '@angular/core';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-import { ScheduleModule,DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, EventSettingsModel } from '@syncfusion/ej2-angular-schedule';
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.html',
-  imports:[ScheduleModule],
-  providers: [ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService]
-})
-export class App {
-  @ViewChild('scheduleObj') scheduleObj!: ScheduleComponent;
-  public dataSource!: DataManager;
-  public eventSettings!: EventSettingsModel;
-  title!: string;
-  ngOnInit(): void {
-    this.dataSource = new DataManager({
-      url: 'http://localhost:xxxx/', //xxxx represents the port number.
-      adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getEvents.result',
-        },
-        query:`query getEvents($datamanager: DataManager) {
-          getEvents(datamanager: $datamanager) {
-              result { Id, Subject, StartTime, EndTime, Location, IsAllDay, RecurrenceRule, StartTimezone, EndTimezone }
-          }
-        }`,
-        getMutation: function (action: any): string {
-          if (action === 'batch') {
-            return `mutation BatchUpdate($added: [AppointmentFields], $changed: [AppointmentFields], $deleted: [AppointmentFields]){
-              batchUpdate(added: $added, changed: $changed, deleted: $deleted) {
-                Id, Subject, StartTime, EndTime, Location, IsAllDay, RecurrenceRule, StartTimezone, EndTimezone
+The adaptor enables bi-directional communication between the frontend (Scheduler) and backend (`GraphQL` server).
+
+![GraphQL-NodeJs-DataFlow-Diagram](./images/angular-graphql-flow.jpg)
+
+When using the `GraphQLAdaptor`, the Scheduler expects the response from the server in a specific structure so that the Scheduler can process and render the results correctly.
+
+The required response format includes:
+  - **result**: The list of data to be displayed in the current Scheduler view.
+
+The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to convert the user interaction into `GraphQL` compatible requests. To enable this setup, configure the `DataManager` with the `GraphQLAdaptor`, specify the `GraphQL` server’s response format, and define the query. Finally, assign this `DataManager` instance to the Scheduler component.
+
+**Instructions:**
+
+1. In the (**app.html**) file render the Scheduler component.
+
+    [app.component.html]
+    ```html
+      <ejs-schedule #scheduleObj width="100%" height="650px" [(selectedDate)]="selectedDate" [eventSettings]="eventSettings" [allowDragAndDrop] = "true" [allowResizing] = "true">
+      </ejs-schedule>
+    ```
+
+2. In the (**app.ts**) file to configure the `DataManager` with the `GraphQLAdaptor`.
+
+    [app.ts]
+    ```ts
+    import { Component, ViewChild } from '@angular/core';
+    import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
+    import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, EventSettingsModel, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.scss'],
+      providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService]
+    })
+    export class AppComponent {
+      @ViewChild('scheduleObj') scheduleObj: ScheduleComponent;
+      public dataSource: DataManager;
+      public eventSettings: EventSettingsModel;
+      title: string;
+      ngOnInit(): void {
+        this.dataSource = new DataManager({
+          url: 'http://localhost:xxxx/', //xxxx represents the port number.
+          adaptor: new GraphQLAdaptor({
+            query: `
+          query getEvents($datamanager: DataManager) {
+            getEvents(datamanager: $datamanager) {
+              result {
+                Id, Subject, StartTime, EndTime, Location, IsAllDay,
+                StartTimezone, EndTimezone,
+                RecurrenceRule, RecurrenceID, RecurrenceException, FollowingID,IsReadonly,IsBlock
               }
-            }`;
+            }
           }
-          return '';
-        }
-      })
-    });
-    this.eventSettings = { dataSource: this.dataSource };
+        `,
+            response: {
+              result: 'getEvents.result',
+            },
+            getMutation: (action: any): string => {
+              if (action === 'batch') {
+                return `
+              mutation BatchUpdate($added: [AppointmentFields], $changed: [AppointmentFields], $deleted: [AppointmentFields]) {
+                batchUpdate(added: $added, changed: $changed, deleted: $deleted) {
+                  Id, Subject, StartTime, EndTime, Location, IsAllDay,
+                  StartTimezone, EndTimezone,
+                  RecurrenceRule, RecurrenceID, RecurrenceException, FollowingID,IsReadonly,IsBlock
+                }
+              }
+            `;
+              }
+              return '';
+            }
+          })
+        });
+
+        this.eventSettings = {
+          dataSource: this.dataSource,
+          fields: {
+            id: 'Id',
+            subject: { name: 'Subject' },
+            startTime: { name: 'StartTime' },
+            endTime: { name: 'EndTime' },
+            isAllDay: { name: 'IsAllDay' },
+            location: { name: 'Location' },
+            startTimezone: { name: 'StartTimezone' },
+            endTimezone: { name: 'EndTimezone' },
+            recurrenceRule: { name: 'RecurrenceRule' },
+            recurrenceID: { name: 'RecurrenceID' },
+            recurrenceException: { name: 'RecurrenceException' },
+            followingID: 'FollowingID',
+            isReadonly: 'IsReadonly',
+            isBlock: 'IsBlock'
+          }
+        };
+      }
+      public selectedDate: Date = new Date(2026, 1, 11);
+    }
+    ```
+
+**GraphQL Query structure explained in detail:**
+
+The `Query` property is critical for understanding the data flows. Let's break down each component:
+
+```
+query getEvents($datamanager: DataManager) {}
+```
+
+**Line breakdown:**
+- `getEvents(...)` - Calls the resolver method in backend.
+- `dataManager: $dataManager` - Passes the "$dataManager" variable to the resolver.
+- The resolver receives this object and uses it to apply filters, sorts, searches, and pagination.
+
+```
+result {
+    Id, Subject, StartTime, EndTime, Location, IsAllDay,StartTimezone, EndTimezone,RecurrenceRule, RecurrenceID, RecurrenceException, FollowingID,IsReadonly,IsBlock
   }
-  public selectedDate: Date = new Date(2026, 1, 11);
-}
 ```
 
-> **Note**: If you prefer NgModule instead of a standalone component, import `ScheduleModule` in your AppModule and move providers there.
-
----
-
-## Data Flow Overview
+**Line breakdown:**
+- `result` - Contains the array of event records.
+  - `{ ... }` - List of fields to return for each record.
+  - Only requested fields are returned (no over-fetching).
 ```
-Angular (Scheduler) ── DataManager + GraphQLAdaptor ──▶ GraphQL Server
-      ▲                                                   │
-      └────────────── JSON (result mapping) ◀─────────────┘
-```
-- Scheduler sends DataManager payloads (with date range, paging, etc.)
-- GraphQLAdaptor turns them into a query or mutation
-- Server resolvers filter/process data and respond in `{ result: [...] }`
-
----
-
-## Running the Apps
-
-### 1) Start the GraphQL server
-```bash
-cd GraphQLServer
-npm run dev
-```
-GraphQL endpoint: **http://localhost:4400/graphql**
-
-### 2) Start the Angular app
-```bash
-cd ../SchedulerApp
-npm start
-```
-Angular dev server: **http://localhost:4200/**
-
-> If you face CORS errors, set up an Angular dev proxy (recommended) to forward `/graphql` to `http://localhost:4400/graphql`.
-
----
-
-## Troubleshooting & Tips
-
-**CORS errors**
-- Use an Angular proxy: create `proxy.conf.json` and run `ng serve --proxy-config proxy.conf.json`.
-
-**Wrong endpoint URL**
-- Ensure `url: 'http://localhost:4400/graphql'` in the DataManager configuration.
-
-**No data showing**
-- Check that `response.result = 'getEvents.result'` matches the GraphQL response path.
-- Verify the date range (Scheduler sends StartDate/EndDate in `datamanager.params`).
-
-**Schema mismatch**
-- Field names and types in Angular query must match `schema.graphql` exactly.
-
-**In‑memory resets**
-- The demo data resets on server restart. Hook up a database for persistence.
-
----
-
-## Appendix A: Example DataManager Payload
-Below is a simplified example of what the Adaptor might send for reads (actual shape can vary by action):
-
-```json
-{
-  "query": "query getEvents($datamanager: DataManager) { getEvents(datamanager: $datamanager) { result { Id Subject StartTime EndTime Location } } }",
-  "variables": {
-    "datamanager": {
-      "skip": 0,
-      "take": 50,
-      "params": "{"StartDate":"2026-02-11T00:00:00.000Z","EndDate":"2026-02-18T00:00:00.000Z"}"
+"data": {
+    "getEvents": {
+        "result": [
+            {
+                "Id": "1",
+                "Subject": "Server Maintenance",
+                "StartTime": "new Date(2026, 1, 11, 10, 0).toISOString()",
+                "EndTime": "new Date(2026, 1, 11, 11, 30).toISOString()",
+                "Location": "Seattle"
+            },
+        ]
     }
   }
-}
 ```
 
+**Response structure explanation:**
+
+| Part | Purpose | Example |
+|------|---------|---------|
+| `data` | Root object returned for every successful `GraphQL` query. | Always present in successful response |
+| `getEvents` | Matches the `GraphQL` query name; contains event data. | Contains **result**. |
+| `result` | Array of "events" objects. | [ {...}, {...} ] |
+| Each field in result | Matches `GraphQL` query field names. | Field values from database. |
+
+### Perform CRUD operations
+
+CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Scheduler. The Scheduler provides built-in features to perform these operations, while the backend resolvers handle the actual data modifications.
+
+The `getMutation` function in the `GraphQLAdaptor` handles the Scheduler CRUD actions by sending the appropriate mutation for each action (insert, update, or delete) to the `GraphQL` server.
+
+> Previously, the required mutation definitions and schema for CRUD operations were created in the (**resolver.js**) and (**schema.graphql**) files. The next step is to enable CRUD actions in the Data Scheduler by using the `GraphQLAdaptor`.
+
+**Insert:**
+
+The insert operation enables adding new "Event" records to the existing list. When the user clicks on an empty time slot, the Scheduler opens the Add Event dialog. After the dialog is filled with the required event details and the dialog is saved.
+
+After the required data is saved, the `GraphQL` mutation sends the new "Event" record to the backend for processing and storage.
+
+**Update:**
+
+The Update operation enables editing of existing "Event" records. When a user clicks on an event, an action menu is displayed with options such as Edit, Delete, and Cancel. Selecting the Edit option opens the Edit Event dialog, which is automatically populated with the current values of the selected event.Users can update one or more fields within the dialog and save the changes.
+
+After the required modifications are submitted, a `GraphQL` mutation sends the updated record to the backend for processing.
+
+**Delete:**
+
+The Delete operation enables removal of "Event" records from the application. When a user clicks on an event, an action menu appears displaying options such as Delete, Edit, and Cancel. Upon selecting the Delete option, a confirmation prompt is shown to ensure that the deletion is intentional.
+
+After confirmation, a `GraphQL` mutation sends a delete request to the backend containing only the primary key value.
+
+Open the (**app.ts**) file and configure the `getMutation` function in the `GraphQLAdaptor` to return the `GraphQL` mutation for the insert, Update and Delete action.
+
+  [app.ts]
+
+  ```ts
+
+      // mutation to perform add, update, delete.
+      this.dataSource = new DataManager({
+          url: 'http://localhost:xxxx/', //xxxx represents the port number.
+          adaptor: new GraphQLAdaptor({
+            query: `
+          query getEvents($datamanager: DataManager) {
+            getEvents(datamanager: $datamanager) {
+              result {
+                Id, Subject, StartTime, EndTime, Location, IsAllDay,
+                StartTimezone, EndTimezone,
+                RecurrenceRule, RecurrenceID, RecurrenceException, FollowingID,IsReadonly,IsBlock
+              }
+            }
+          }
+        `,
+            response: {
+              result: 'getEvents.result',
+            },
+            getMutation: (action: any): string => {
+              if (action === 'batch') {
+                return `
+              mutation BatchUpdate($added: [AppointmentFields], $changed: [AppointmentFields], $deleted: [AppointmentFields]) {
+                batchUpdate(added: $added, changed: $changed, deleted: $deleted) {
+                  Id, Subject, StartTime, EndTime, Location, IsAllDay,
+                  StartTimezone, EndTimezone,
+                  RecurrenceRule, RecurrenceID, RecurrenceException, FollowingID,IsReadonly,IsBlock
+                }
+              }
+            `;
+              }
+              return '';
+            }
+          })
+        });
+  ```
+
+**Insert mutation request parameters:**
+
+When the user clicks on an empty time slot, the dialog is filled, and the data is saved, the `GraphQL` adaptor constructs the mutation using these parameters:
+
+![GraphQL-Nodejs-inserting](./images/graphql-added.png)
+
+
+
+**Update mutation request parameters:**
+
+When a user clicks on an event,Selecting the Edit option opens the Edit Event dialog, which is automatically populated with the current values of the selected event, the dialog is modified, and the changes are saved, the `GraphQLAdaptor` constructs the mutation using these parameters:
+
+![GraphQL-Nodejs-updating](./images/graphql-changed.png)
+
+
+**Delete mutation request parameters:**
+
+When a user clicks on an event,Selecting the Delete option, and the action is confirmed, the `GraphQLAdaptor` constructs the mutation using minimal parameters:
+
+![GraphQL-Nodejs-deleteRecord](./images/graphql-deleted.png)
+
+ 
 ---
 
-## Appendix B: Complete Folder Structures
 
-**GraphQLServer**
-```
-GraphQLServer/
-├─ package.json
-└─ src/
-   ├─ db.js
-   ├─ resolvers.js
-   └─ schema.graphql
-```
+## Running the application
 
-**SchedulerApp** (key files only)
-```
-SchedulerApp/
-├─ src/
-│  ├─ app/
-│  │  ├─ app.html
-│  │  └─ app.ts
-│  └─ styles.css
-└─ package.json
-```
+Open a terminal or Command Prompt. Run the GraphQL server application first, then start the Scheduler application.
 
----
+ ### Run the GraphQL server
+- Run the following commands to start the server:
+```bash
+  cd GraphQLServer
+  npm run dev
+```
+- The server is now running at http://localhost:4400/.
+
+ ### Run the Scheduler
+ - Execute the below commands to run the Scheduler application:
+```bash
+  cd SchedulerApp
+  npm start
+```
+- Open http://localhost:4200/ in the browser.
+ 
+## Complete Sample Repository
+
+For a complete working implementation of this example, refer to the following GitHub repository:
+ 
+[Syncfusion Scheduler with GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-scheduler-crud-graphql-adaptor)
 
 ## Summary
-- You created a **Node.js GraphQL** server with a clean schema and resolvers
-- You configured Angular’s **DataManager + GraphQLAdaptor** to translate Scheduler actions into GraphQL operations
-- You enabled **full CRUD** in a single, efficient batch mutation
 
-This structure provides a maintainable foundation you can extend with authentication, databases, and advanced filtering.
+This guide demonstrates:
 
----
+1. Setting up and Configuring the `GraphQL` backend using Node.js. [🔗](#setting-up-the-graphql-backend-using-nodejs)
+2. Integrating Syncfusion Angular Scheduler with `Graphql` [🔗](#integrating-syncfusion-angular-scheduler-with-graphql)
+3. Configure `GraphQLAdaptor`. [🔗](#step-3-configure-graphql-adaptor)
+4. Perform CRUD operations. [🔗](#perform-crud-operations)
 
-## Reference Sample Repository
-A complete working sample:
-
-**Syncfusion Scheduler with GraphQL Sample**
-https://github.com/SyncfusionExamples/ej2-angular-scheduler-crud-graphql-adaptor
+The application now provides a fully integrated "Appointment" management workflow using the Syncfusion Angular Scheduler connected to a Node.js GraphQL backend.

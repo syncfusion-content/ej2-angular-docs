@@ -6,6 +6,14 @@ import {
     ImageService,
     HtmlEditorService,
     IFrameSettingsModel,
+    QuickToolbarService,
+    EmojiPickerService,
+    PasteCleanupService,
+    VideoService,
+    AudioService,
+    FormatPainterService,
+    TableService,
+    SlashMenuService
   } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({

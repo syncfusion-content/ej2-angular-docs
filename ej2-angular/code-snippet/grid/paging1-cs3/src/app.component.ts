@@ -42,7 +42,7 @@ standalone: true,
            <div style="display: flex">
                <label style="padding: 30px 20px 0 0" > Select initialBlocks count: :</label>
                <ejs-dropdownlist #dropdown id='value' style="padding: 26px 0 0 0" #sample index='0' 
-               width='220' [dataSource]='dropDownData' (change)='valueChange($event)' >
+               width='220' [dataSource]='dropDownData' (change)='valueChange($event)' height='220px' >
                </ejs-dropdownlist>
             </div>
             <div style="padding: 30px 17px 0 0">

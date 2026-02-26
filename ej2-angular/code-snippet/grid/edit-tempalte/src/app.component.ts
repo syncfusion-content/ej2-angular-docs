@@ -36,7 +36,7 @@ providers: [EditService, ToolbarService, SortService, ForeignKeyService,PageServ
 standalone: true,
   selector: 'app-root',
   template: `
-        <ejs-grid [dataSource]="data" height="315" [editSettings]="editSettings"  [allowPaging]="true" [toolbar]="toolbar" (actionBegin)=" actionBegin($event)">
+        <ejs-grid [dataSource]="data" height="220" [editSettings]="editSettings"  [allowPaging]="true" [toolbar]="toolbar" (actionBegin)=" actionBegin($event)">
           <e-columns>
               <e-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-column>
               <e-column field="EmployeeID" headerText="Employee Name" foreignKeyValue='FirstName'  [dataSource]="employeeData" width="150">

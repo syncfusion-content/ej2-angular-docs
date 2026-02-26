@@ -38,6 +38,7 @@ standalone: true,
       [allowFiltering]="true"
       [allowPaging]="true"
       [filterSettings]="filterOptions"
+      height='273px'
     >
       <e-columns>
         <e-column

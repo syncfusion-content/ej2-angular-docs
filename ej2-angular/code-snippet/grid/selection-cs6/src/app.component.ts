@@ -19,15 +19,15 @@ providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
   selector: 'app-root',
   template: `
-      <div style="padding: 0px 0px 20px 0px">
+      <div style="padding: 0px 0px 5px 0px">
         <label>Enable/Disable column selection</label>
         <ejs-switch id="switch" [(checked)]="columnSelection" 
         (change)="toggleColumnSelection()">
         </ejs-switch>
       </div>
-      <div style="padding: 20px 0px 0px 0px">
+      <div style="padding: 5px 0px 0px 0px">
       <ejs-grid #grid [dataSource]="data" [selectionSettings]="selectionOptions" 
-      height="315px">
+      height="300px">
         <e-columns>
           <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
           width="120"></e-column>

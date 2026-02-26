@@ -89,13 +89,12 @@ Here is an example of how to integrate version-based persistence into your Angul
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
+import { GridModule,FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
 import { enableVersionBasedPersistence } from '@syncfusion/ej2-base';
 
 enableVersionBasedPersistence(true);
@@ -107,7 +106,7 @@ enableVersionBasedPersistence(true);
     template: `<h4 id='message'>{{message}}</h4>
     <button ejs-button *ngFor="let v of versions" [id]="'restore' + v" (click)="clickHandler('v.' + v)">Version {{ v }}</button>
                <ejs-grid #grid id="OrderDetails" [dataSource]='data' [enablePersistence]='true' [ej2StatePersistenceVersion]='gridversion' 
-               [allowPaging]='true' [allowFiltering]='true' [allowReordering]='true' [allowSorting]='true' [allowGrouping]='true' height='210px'>
+               [allowPaging]='true' [allowFiltering]='true' [allowReordering]='true' [allowSorting]='true' [allowGrouping]='true' height='160px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -175,7 +174,7 @@ The provided code demonstrates how to save and restore the previous state of a S
     <ejs-grid #Orders id="Orders" [dataSource]="data" allowPaging="true" allowSorting="true" allowFiltering="true"
         [allowGrouping]="true" [editSettings]="editSettings" [groupSettings]="groupOptions"
         [filterSettings]="filterOptions" [toolbar]="toolbar" [pageSettings]="pageSettings" [enablePersistence]="true"
-        height="320" (actionBegin)="actionBegin()">
+        height="200" (actionBegin)="actionBegin()">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
                 [validationRules]="orderidrules"></e-column>

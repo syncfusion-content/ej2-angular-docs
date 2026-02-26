@@ -27,7 +27,7 @@ standalone: true,
                     <label for="checked"> <b> Show filter bar operator </b> </label>
                     <ejs-switch id="checked" (change)="onChange($event)"></ejs-switch>
                 </div>
-                <ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [allowFiltering]='true' height='273px' [filterSettings]='filterSettings'>
+                <ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [allowFiltering]='true' height='150px' [filterSettings]='filterSettings'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
   }
 
   // Fires while dragging
-  onDrag(args: IDataEditingEventArgs): void {
+  onDragEnd(args: IDataEditingEventArgs): void {
     // You can live-validate or show feedback here
      console.log('drag event was triggered');
   }

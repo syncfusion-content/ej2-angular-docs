@@ -31,7 +31,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
   selector: 'app-root',
   template: `
-    <ejs-grid #grid [dataSource]="data" [height]="315" [editSettings]="editSettings" [toolbar]="toolbar">
+    <ejs-grid #grid [dataSource]="data" [height]="200px" [editSettings]="editSettings" [toolbar]="toolbar" >
       <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-column>
         <e-column field="Name.FirstName" headerText="First Name" width="200">

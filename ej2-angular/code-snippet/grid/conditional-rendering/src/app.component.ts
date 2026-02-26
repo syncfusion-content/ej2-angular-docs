@@ -17,7 +17,7 @@ import { data } from './datasource';
     </div>
 
     <div *ngIf="data.length > 0; else noData">
-      <ejs-grid [dataSource]="data" allowPaging="true">
+      <ejs-grid [dataSource]="data" allowPaging="true" height='250'>
         <e-columns>
           <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
           <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>

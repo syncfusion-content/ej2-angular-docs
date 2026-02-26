@@ -139,13 +139,13 @@ The `Material` theme is added to your `styles.css` when you run `ng add` (this h
 To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the DropDownList component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material3.css';
 ```
 
 > Ensure that the import order aligns with the component's dependency sequence.

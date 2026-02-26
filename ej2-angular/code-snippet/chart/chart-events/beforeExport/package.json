@@ -16,6 +16,8 @@
     "@syncfusion/ej2-angular-charts": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-charts": "*",
+    "@syncfusion/ej2-angular-buttons": "*",
+    "@syncfusion/ej2-buttons": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

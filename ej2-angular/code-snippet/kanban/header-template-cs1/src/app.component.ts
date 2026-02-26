@@ -8,7 +8,7 @@ import { kanbanData } from './datasource';
 
 @Component({
     imports: [
-        CommonModule
+        CommonModule,
         KanbanModule
     ],
     standalone: true,

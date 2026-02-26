@@ -35,7 +35,7 @@ standalone: true,
     selector: 'app-root',
     template: `
         <ejs-grid #normalgrid [dataSource]="data" allowPaging="true" [pageSettings]="pageOptions"
-        [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)">
+        [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)" height='220px'>
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" width="100" textAlign="Right" isPrimaryKey="true"
                     [validationRules]="orderIDRules">

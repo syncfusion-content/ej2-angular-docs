@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 # Getting Started with Angular and Electron with Syncfusion Scheduler
 
-This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the `Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule component`.
+This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule component.
 
 ## Prerequisites
 
@@ -197,14 +197,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-s
 ![image](images/schedule-electron-output.png)
 
 > Note: For a complete example, see the [Angular sample with Electron in GitHub](https://github.com/SyncfusionExamples/How-to-integrate-Syncfusion-Angular-Scheduler-with-Electron).
+
+
 ## Troubleshooting
 **Problem:**
-Angular **Bundle Exceeded Maximum Budge** Error
+Angular **Bundle Exceeded Maximum Budget** Error
 
 **Solution:**
 Change the budget of the **maximumWarning** and **maximumError** size to high.
-
-**EG** 
+ 
 ```bash
 "maximumWarning": "5MB",
 "maximumError": "6MB"

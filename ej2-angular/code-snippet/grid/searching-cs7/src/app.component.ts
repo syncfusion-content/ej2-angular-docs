@@ -17,7 +17,7 @@ imports: [
 providers: [SearchService, ToolbarService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #Grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchOptions'(actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)" height='400' width='100%'>
+    template: `<ejs-grid #Grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchOptions'(actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)" height='273' width='100%'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

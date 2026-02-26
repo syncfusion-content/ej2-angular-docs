@@ -29,7 +29,7 @@ standalone: true,
 			    <label for='fields' class='label'>Select Filter Mode</label>
 			    <ejs-dropdownlist #field id='fields' [dataSource]='filterModesData' (change)='onModeChange($event)'></ejs-dropdownlist>
                </div>
-               <ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]="pageSettings" [allowFiltering]='true' height='273px' [filterSettings]='filterSettings'>
+               <ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]="pageSettings" [allowFiltering]='true' height='150px' [filterSettings]='filterSettings'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

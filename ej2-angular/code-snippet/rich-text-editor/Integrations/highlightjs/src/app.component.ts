@@ -1,5 +1,5 @@
 import { RichTextEditorComponent, RichTextEditorModule, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, CodeBlockService } from '@syncfusion/ej2-angular-richtexteditor';
 import highlight from 'highlight.js/lib/common';
 

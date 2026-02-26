@@ -31,7 +31,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
   selector: 'app-root',
   template: `
-        <ejs-grid [dataSource]="data"  [editSettings]="editSettings" [toolbar]="toolbar" (actionComplete)="access($event)">
+        <ejs-grid [dataSource]="data"  height='250px' [editSettings]="editSettings" [toolbar]="toolbar" (actionComplete)="access($event)">
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-column>                
                 <e-column field="CustomerID" headerText="Customer ID" type="string" [validationRules]='customeridrules' 
