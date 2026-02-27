@@ -28,7 +28,7 @@ import { TabModule } from '@syncfusion/ej2-angular-navigations'
   </e-tabitems>
 </ejs-tab>
    `,
-   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, AudioService, VideoService, EmojiPickerService]]
+   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, AudioService, VideoService, EmojiPickerService]
 })
 
 export class AppComponent {
