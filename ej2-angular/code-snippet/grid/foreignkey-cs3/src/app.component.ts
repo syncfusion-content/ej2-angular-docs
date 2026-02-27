@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { GridComponent, ForeignKeyService, FilterService, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
@@ -11,10 +9,7 @@ import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns
 import { data, fEmployeeData } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule ],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='260' [allowFiltering]='true'>

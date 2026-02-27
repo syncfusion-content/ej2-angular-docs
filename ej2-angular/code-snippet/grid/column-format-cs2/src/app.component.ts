@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
         };
         this.dateFormatOptions = {
             // Custom format for date columns
-            type: 'Date',
+            type: 'date',
             format: "EEE, MMM d, ''yy",
         };
     }

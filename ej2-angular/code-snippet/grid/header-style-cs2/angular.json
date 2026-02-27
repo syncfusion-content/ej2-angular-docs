@@ -18,8 +18,7 @@
             "main": "src/main.ts",
             "tsConfig": "tsconfig.json",
             "styles": [
-              "src/styles.css",
-              "src/app.component.css"
+              "src/styles.css"
             ]
           },
           "configurations": {

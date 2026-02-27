@@ -15,7 +15,7 @@ import { shiftPlanData } from './datasource';
       <div class="doctor-designation">{{ data.Designation }}</div>
     </ng-template>
 
-    <ejs-grid #grid [dataSource]="shiftPlanData" gridLines="Both" [allowSorting]="true" [enableColumnSpan]="true" [allowTextWrap]="true" [textWrapSettings]="{ wrapMode: 'Content' }" height="450" width="auto">
+    <ejs-grid #grid [dataSource]="shiftPlanData" gridLines="Both" [allowSorting]="true" [enableColumnSpan]="true" [allowTextWrap]="true" [textWrapSettings]="{ wrapMode: 'Content' }" height="315" width="auto">
       <e-columns>
         <e-column field="Name" headerText="Doctor Name" width="170" textAlign="Center" freeze="Left" [template]="doctorTemplate"></e-column>
         <e-column field="Time9AM" headerText="9:00 AM" width="120" textAlign="Center" [allowSorting]="false"></e-column>

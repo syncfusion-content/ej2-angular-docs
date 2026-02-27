@@ -34,7 +34,7 @@ standalone: true,
         <ejs-grid [dataSource]="data"  height='250px' [editSettings]="editSettings" [toolbar]="toolbar" (actionComplete)="access($event)">
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-column>                
-                <e-column field="CustomerID" headerText="Customer ID" type="string" [validationRules]='customeridrules' 
+                <e-column field="CustomerID" headerText="Customer ID" type="string" [validationRules]='customerIDRules' 
                 width="120"></e-column>                
                 <e-column field="Freight" headerText="Freight" textAlign="Right" [validationRules]='freightRules' 
                 format="C2" editType='numericedit' width="120" ></e-column>                               

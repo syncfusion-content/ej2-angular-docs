@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, FilterService, PageService,  IFilterCreate, IFilterWrite, IFilterRead, } from '@syncfusion/ej2-angular-grids'
 import { MultiSelectModule, CheckBoxSelectionService, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 
@@ -14,14 +14,12 @@ import { createElement } from '@syncfusion/ej2-base';
 import {
   FilterSettingsModel,
   IFilter,
-  Filter,
   GridComponent,
   Column,
   PredicateModel,
 } from '@syncfusion/ej2-angular-grids';
 @Component({
-imports: [
-        
+imports: [ 
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
@@ -84,13 +82,17 @@ export class AppComponent implements OnInit {
     };
     this.filter = {
       ui: {
-        create: (args: { target: Element; column: object }) => {
+        create: (args: IFilterCreate): void => {
           const flValInput: HTMLElement = createElement('input', {
             className: 'flm-input',
           });
+          if (!args.target) return;
           args.target.appendChild(flValInput);
           const fieldName: string = (args.column as Column).field;
-          const dropdownData: string[] = DataUtil.distinct(data, fieldName) as string[];
+          const dropdownData: string[] = DataUtil.distinct(
+            data,
+            fieldName
+          ) as string[];
           this.dropInstance = new MultiSelect({
             dataSource: dropdownData,
             placeholder: 'Select a value',
@@ -100,25 +102,32 @@ export class AppComponent implements OnInit {
           });
           this.dropInstance.appendTo(flValInput);
         },
-        write: (args:{column:Column}) => {
-          const fieldName: string = (args.column.field);
+        write: (args: IFilterWrite): void => {
+          const fieldName = args.column?.field;
+          if (!fieldName) return;
+
           const filteredValue: string[] = [];
-          (this.grid as GridComponent).filterSettings.columns.forEach((item: PredicateModel) => {
+          const cols =
+            (this.grid as GridComponent).filterSettings?.columns ?? [];
+          cols.forEach((item: PredicateModel) => {
             if (item.field === fieldName && item.value) {
-              filteredValue.push(item.value as string);
+              filteredValue.push(String(item.value));
             }
           });
-          if (filteredValue.length > 0) {
+
+          if (filteredValue.length && this.dropInstance) {
             (this.dropInstance as MultiSelect).value = filteredValue;
           }
         },
-        read: (args: {column:Column,operator:string,fltrObj:Filter}) => {
-          (this.grid as GridComponent).removeFilteredColsByField(args.column.field);
-          args.fltrObj.filterByColumn(
-            args.column.field,
-            args.operator,
-            this.dropInstance?.value as string[]
-          );
+        read: (args: IFilterRead): void => {
+          const field = args.column?.field ?? '';
+          const value = (this.dropInstance?.value ?? '') as string;
+          const operator = args.operator ?? 'equal';
+
+          (this.grid as GridComponent).removeFilteredColsByField(field);
+
+          if (!field || !args.fltrObj) return;
+          args.fltrObj.filterByColumn(field, operator, value);
         },
       },
     };

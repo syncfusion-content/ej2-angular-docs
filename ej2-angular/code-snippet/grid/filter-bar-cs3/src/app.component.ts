@@ -40,7 +40,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public filterSettings: FilterSettingsModel;
+    public filterSettings!: FilterSettingsModel;
     public pageSettings: PageSettingsModel = { pageSize: 5 };
 
     ngOnInit(): void {

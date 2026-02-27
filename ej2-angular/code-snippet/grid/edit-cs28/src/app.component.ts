@@ -4,7 +4,7 @@ import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data,  columnDataType } from './datasource';
 import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     imports: [ GridModule, ButtonModule],

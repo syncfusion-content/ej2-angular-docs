@@ -10,13 +10,9 @@ import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule ],
 
-providers: [PageService,
-                FilterService,],
+providers: [PageService, FilterService,],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowFiltering]="true" [pageSettings]="pageSettings" [filterSettings]="filterOptions">

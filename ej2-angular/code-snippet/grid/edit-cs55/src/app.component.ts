@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   public orderIDRules?: object;
   public customerIDRules?: object;
 
-  public orderIdCustomValidation(args: any): void {
+  public orderIdCustomValidation(args: any): boolean {
     return (this.grid?.dataSource as Object[]).every((data: any) => {
       return data['OrderID'] + '' !== args['value'] || data['OrderID'] === (this.grid as any).editModule.editModule.args.rowData['OrderID']
     });

@@ -23,8 +23,8 @@ const SERVICE_URI: string = 'https://services.syncfusion.com/angular/production/
 })
 export class AppComponent {
 
-  public data: DataManager;
-  public query: Query;
+  public data!: DataManager;
+  public query!: Query;
   public pageSettings: Object | undefined;
   public filterSettings: Object | undefined;
 

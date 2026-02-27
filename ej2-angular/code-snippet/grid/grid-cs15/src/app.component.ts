@@ -28,7 +28,7 @@ standalone: true,
         </label>
         <ejs-switch id="switch" (change)="change($event)"></ejs-switch>
     </div>
-    <ejs-grid #grid [dataSource]='data' height='315px' style="padding: 10px 10px">
+    <ejs-grid #grid [dataSource]='data' height='300px' style="padding: 5px 5px">
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=140></e-column>

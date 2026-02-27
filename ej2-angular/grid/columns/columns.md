@@ -200,8 +200,10 @@ Template columns in Grid provide a way to customize the appearance of column val
 {% raw %}
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { CommonModule } from '@angular/common';
 
 @Component({
+    imports: [GridModule, CommonModule],
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height="315px">
                 <e-columns>

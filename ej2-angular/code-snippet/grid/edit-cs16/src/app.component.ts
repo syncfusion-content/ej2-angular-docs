@@ -15,10 +15,11 @@ import { columnDataType, data } from './datasource';
 import { EditSettingsModel, ToolbarItems, SaveEventArgs, IEditCell, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { FocusInEventArgs } from '@syncfusion/ej2-angular-inputs';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule,
         GridModule,
         DatePickerAllModule,
         FormsModule,

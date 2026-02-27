@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridModule,EditService, ToolbarService, PageService, getObject, GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridModule,EditService, ToolbarService, PageService, getObject, GridComponent, EditEventArgs,SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule],

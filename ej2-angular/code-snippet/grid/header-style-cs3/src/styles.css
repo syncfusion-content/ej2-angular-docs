@@ -8,7 +8,6 @@
 @import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-notifications/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 .e-grid .e-headercell.customcss {
     color: rgb(14, 10, 10);

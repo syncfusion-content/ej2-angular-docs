@@ -8,11 +8,7 @@ import { data } from './datasource';
 import { SelectionSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
+imports: [ GridModule, ButtonModule ],
 
 standalone: true,
     selector: 'app-root',

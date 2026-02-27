@@ -9,15 +9,11 @@ import { data } from './datasource';
 import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule ],
 providers: [ResizeService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowResizing]='true' height='315px'>
+    template: `<ejs-grid [dataSource]='data' [allowResizing]='true' height='295px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='100' textAlign="Center" minWidth=10></e-column>
                     <e-column headerText='Order Details' [columns]='orderColumns'></e-column>

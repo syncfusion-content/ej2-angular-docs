@@ -8,7 +8,7 @@ import { orderDetails, customerData } from './datasource';
   imports: [CommonModule, GridModule],
   selector: 'app-root',
   template: `    
-    <ejs-grid #grid id="Grid" [dataSource]="data" height="400px">
+    <ejs-grid #grid id="Grid" [dataSource]="data" height="320px">
       <e-columns>
         <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-column>
         <e-column field="CustomerID" headerText="Customer Name" width="150" foreignKeyField="CustomerID" foreignKeyValue="ContactName" [dataSource]="customerData">

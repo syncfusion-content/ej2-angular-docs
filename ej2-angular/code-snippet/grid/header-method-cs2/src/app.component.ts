@@ -11,7 +11,7 @@ import { orderDetails } from './datasource';
   selector: 'app-root',
   template: `<div class="control-section">
               <ejs-grid #grid [dataSource]="data" allowPaging="true" 
-              (dataBound)="dataBound()" height="320">
+              (dataBound)="dataBound()" height="290">
                 <e-columns>
                   <e-column field="OrderID" headerText="Order ID" width="120" 
                   textAlign="Right"></e-column>

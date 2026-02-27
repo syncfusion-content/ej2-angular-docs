@@ -15,7 +15,7 @@ imports: [
 providers:[PageService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' (rowDataBound)='rowDataBound($event)' [editSettings]='editSettings' allowPaging="true" [pageSettings]="pageSettings">
+    template: `<ejs-grid #grid [dataSource]='data' (rowDataBound)='rowDataBound($event)' [editSettings]='editSettings' allowPaging="true" [pageSettings]="pageSettings"  [height]='295'>
                 <e-columns>
                     <e-column field='S.No' textAlign='Center' width=120></e-column>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>

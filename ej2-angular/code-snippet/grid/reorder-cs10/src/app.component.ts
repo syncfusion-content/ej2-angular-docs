@@ -16,7 +16,7 @@ standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='reorderColumn' cssClass="e-info" (click)='reorderColumnUsingColumnModel()'>Reorder Column</button>
      <button ejs-button id='reorderChildColumn' cssClass="e-info" (click)='reorderChildColumnUsingColumnModel()'>Reorder Stacked ChildColumn</button>
-    <ejs-grid #grid [dataSource]='data' [allowReordering]='true' height='280px'>
+    <ejs-grid #grid [dataSource]='data' [allowReordering]='true' height='268px'>
         <e-columns>
         <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>

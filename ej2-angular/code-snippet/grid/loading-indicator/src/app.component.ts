@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService, SortService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
