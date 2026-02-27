@@ -12,6 +12,12 @@ domainurl: ##DomainURL##
 
 This document provides information about the changes and new features included in each version of the [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) MCP server package.
 
+## (v2.0.1) – February 26, 2026
+
+### Bug Fixes
+
+- Resolved tool identifier issue and updated package dependencies for improved stability.
+
 ## (v2.0.0) – February 23, 2026
 
 ### Features
