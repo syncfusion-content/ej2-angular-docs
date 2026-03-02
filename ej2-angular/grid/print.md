@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Print in Angular Grid component | Syncfusion
-description: Learn here all about Print in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Print | Syncfusion
+description: Angular Grid printing prepares grid data, applies print‑focused styles, and uses configurable options to produce clean, readable printed output.
 platform: ej2-angular
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in Angular Grid component
+# Print in Angular Grid Component
 
-The printing feature in Syncfusion Grid allows you to easily generate and print a representation of the grid's content for physical documentation and offline reference. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
+The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid generates a printable representation of the grid for offline access or documentation. Enable printing via the grid's toolbar or by calling the [print](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#print) method.
 
-To add the printing option to the grid's toolbar, include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property in your grid configuration and add **Print** as a toolbar item. This allows you to directly initiate the printing process when clicking on the Print item from the toolbar.
+Enable printing in the grid by configuring the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property and adding `Print` to the list of toolbar items. This displays a `Print` button on the grid toolbar, and clicking it triggers the grid’s printing functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,16 +28,16 @@ To add the printing option to the grid's toolbar, include the [toolbar](https://
 
 ## Page setup
 
-When printing a webpage, print options such as layout, paper size, and margin settings cannot be configured through JavaScript code due to browser security restrictions. Instead, you need to customize these settings using the browser's page setup dialog. Below are links to the page setup guides for popular web browsers:
+Some print options (layout, paper size, margins) cannot be set via JavaScript; use the browser's print or page setup dialog instead. Below are links to page setup and printing guides for the most common browsers.
 
 * [Chrome](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
 * [Safari](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
 * [IE](http://www.helpteaching.com/help/print/index.htm)
 
-## Print using external button
+## Print by external button
 
-You can print the grid's content using an external button by utilizing the [print](https://ej2.syncfusion.com/angular/documentation/api/grid/#print) method. This method allows you to trigger the printing process programmatically without requiring the built-in toolbar.
+The Grid's content can be printed using an external button by calling the `print` method. This method triggers printing programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,9 +51,9 @@ You can print the grid's content using an external button by utilizing the [prin
   
 {% previewsample "page.domainurl/samples/grid/print-cs2" %}
 
-## Print current visible page only
+## Print visible page 
 
-By default, the Syncfusion Angular Grid prints all pages of the grid data. The [printMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#printmode) property allows you to control the printing scope. To print only the current visible page, set the [printMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#printmode) property to **CurrentPage**.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid prints all pages. Use the [printMode](https://ej2.syncfusion.com/angular/documentation/api/grid#printmode) property to control what is printed. To print only the current visible page, set `printMode` to `CurrentPage`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,9 +69,7 @@ By default, the Syncfusion Angular Grid prints all pages of the grid data. The [
 
 ## Print only selected records
 
-By default, the Syncfusion Angular Grid prints all data bound to its dataSource. However, you can print only the selected records from the grid by handling the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeprint) event, where you can replace the rows of the printing grid with the selected rows.
-
-The following example demonstrates how to print only the selected records from the Angular Grid:
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid prints all data bound to its [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource). In scenarios where only selected records should be printed, bind to the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeprint) event and replace the rows of the printing grid with the selected rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -85,11 +83,11 @@ The following example demonstrates how to print only the selected records from t
   
 {% previewsample "page.domainurl/samples/grid/print-cs4" %}
 
-## Print hierarchy grids
+## Print the hierarchy grids
 
-The Syncfusion Angular Grid supports printing hierarchy grids, which consist of a parent grid and its child grids. By default, when you print a hierarchy grid, it includes the parent grid and expanded child grids only. You can customize the print behavior using the [hierarchyPrintMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#hierarchyprintmode) property.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports printing hierarchy grids (a parent grid and its child grids). By default, printing includes the parent grid and expanded child grids only. The print behavior can be customized using the [hierarchyPrintMode](https://ej2.syncfusion.com/angular/documentation/api/grid#hierarchyprintmode) property.
 
-The `hierarchyPrintMode` property allows you to control the printing behavior for hierarchy grids. You can choose from three options:
+The `hierarchyPrintMode` property in the Angular Grid controls printing behavior for hierarchy grids. Options:
 
 | Mode     | Behavior                                                                         |
 | -------- | -------------------------------------------------------------------------------  |
@@ -111,9 +109,9 @@ The `hierarchyPrintMode` property allows you to control the printing behavior fo
 
 ## Print master detail grids
 
-The Syncfusion Angular Grid provides the option to visualize details of a record in another grid in a master-detail manner. By default, when you print a master-detail grid, only the master grid is included in the print output. You can customize the print behavior to include both the master and detail grids using the `beforePrint` event of the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the option to visualize details of a record in another grid in a master-detail manner. By default, printing a master-detail grid includes only the master grid. The print output can be modified to include both master and detail grids using the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeprint) event.
 
-The [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeprint) event triggers before the actual printing process begins. You can handle this event to customize the print output. By adding the detail grid to the `element` argument of the `beforePrint` event, you can ensure that both the master and detail grids are printed on the page.
+The `beforePrint` event fires before printing. Handling this event and adding the detail grid to the `element` argument ensures both master and detail grids appear in the print output.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -127,23 +125,23 @@ The [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#bef
   
 {% previewsample "page.domainurl/samples/grid/print-cs6" %}
 
-## Print grids with many columns
+## Print large number of columns
 
-When printing a grid with a large number of columns, the browser's default page size (usually A4) might not be sufficient to display all columns properly. As a result, the browser's print preview may automatically hide the overflowed content, leading to a cut-off appearance.
+When printing a grid with a large number of columns, the browser's default page size (usually A4) might not be sufficient to display all the columns properly. As a result, the browser's print preview may automatically hide the overflowed content, leading to a cut-off appearance.
 
-To display all columns when printing, you can adjust the scale option from the print option panel based on your content size. This allows you to fit the entire grid content within the printable area.
+For wide grids, adjust the **print scale** in the browser's print dialog to fits content within the printable area.
 
 ![Scale Option Setting](./images/print-preview.png)
 
 ## Show or hide columns during printing
 
-In the Syncfusion Angular Grid, you have the flexibility to control column visibility during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) and [printComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#printcomplete) events. This capability allows you to tailor the printed grid to your specific requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides control over column visibility during printing. Columns can be shown or hidden dynamically using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) and [printComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#printcomplete) events. This allows tailoring of the printed grid output.
 
-In the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event, you can show or hide columns by setting the [column.visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** respectively.
+In the `toolbarClick` event, columns can be shown or hidden by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column#visible) property to `true` or `false` respectively.
 
-In the `printComplete` event, the column visibility state is reset back to its original configuration.
+The `printComplete` event resets column visibility to the original configuration.
 
-The following example demonstrates how to show a hidden column (CustomerID) and hide a visible column (ShipCity) during printing and then reset their visibility after printing:
+The following example demonstrates showing a hidden column (Customer ID) and hiding a visible column (Ship City) during printing, then restoring their visibility once printing is complete:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,9 +157,9 @@ The following example demonstrates how to show a hidden column (CustomerID) and 
 
 ## Add title to print header
 
-You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeprint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
+Add a title to the printed header by utilizing the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeprint) event. This event allows customization of the print layout, including adding a title element to make the printed document informative and visually appealing.
 
-The following example shows how to add a title to your Grid when using the print function:
+Example: adding a title to the grid print output:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -175,15 +173,13 @@ The following example shows how to add a title to your Grid when using the print
   
 {% previewsample "page.domainurl/samples/grid/print-method" %}
 
-## Limitations when printing large datasets
+## Optimized Approaches for Printing Full Data Sets
 
-Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, virtualization for both rows and columns is not feasible during the printing process.
-
-If printing all data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](https://ej2.syncfusion.com/angular/documentation/grid/excel-exporting/), [CSV](https://ej2.syncfusion.com/angular/documentation/grid/excel-exporting/), or [PDF](https://ej2.syncfusion.com/angular/documentation/grid/pdf-export/) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
+Printing very large datasets can cause browser performance issues because rendering many DOM elements may slow or hang the browser. The Grid supports virtualization for interactive viewing, but virtualization (rows and columns) is not supported for printing. If all data must be printed, export to [Excel](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting), [CSV](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting), or [PDF](https://ej2.syncfusion.com/angular/documentation/grid/pdf-export/pdf-export) and print the exported file with a desktop application.
 
 ## Retain grid styles while printing
 
-The Syncfusion Angular Grid provides a [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeprint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance during the printing process.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeprint) event that enables customization of the grid's appearance and styles before printing. Handling this event ensures the grid retains its styles and appearance in the printed output.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -197,11 +193,9 @@ The Syncfusion Angular Grid provides a [beforePrint](https://ej2.syncfusion.com/
   
 {% previewsample "page.domainurl/samples/grid/print-cs8" %}
 
-## Print grid with other components
+## Print grid along with other components
 
-To print the Syncfusion Angular Grid along with another component, such as a chart, you can use the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeprint) event of the grid. In this event, you can clone the content of the other component and append it to the print document.
-
-The following example shows how to print grid along with chart component:
+To print the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid together with other components (for example, a `Chart`), use the [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeprint) event to append cloned content from those components to the print document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

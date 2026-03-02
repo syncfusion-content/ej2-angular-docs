@@ -1,22 +1,24 @@
 ---
 layout: post
-title: Cell selection in Angular Grid component | Syncfusion
-description: Learn cell selection in Syncfusion Angular Grid for interactive, programmatic, and event-driven single, multiple, and range selections.
+title: Angular Grid - Cell selection | Syncfusion
+description: Angular Grid cell selection covers selecting single or multiple cells, selection APIs, and keyboard interactions for fine-grained selection control.
 platform: ej2-angular
 control: Cell selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell Selection in Angular Grid component
+# Cell Selection in Angular Grid Component
 
-Cell selection in the Grid component enables interactive selection of specific cells or ranges of cells within the grid. You can select cells using mouse clicks or arrow keys (up, down, left, right). This is valuable for highlighting, manipulating, or performing operations on particular grid cells.
+Cell selection in the Grid component allows interactive selection of specific cells or ranges of cells within the grid. Selection can be performed through mouse clicks or arrow keys (up, down, left, and right). This functionality allows highlighting, manipulating, or performing actions on specific cells within the grid.
 
-> To enable cell selection, set [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to **Cell** or **Both**.
+> To enable cell selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to either `Cell` or `Both`. This property determines the selection mode of the grid.
 
 ## Single cell selection
 
-Single cell selection allows selection of one cell at a time. To configure this, set [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to **Cell** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Single**. 
+Single cell selection provides selection of a single cell within a grid. This functionality focuses on a specific cell or allows actions on individual cells within the grid.
+
+To configure single cell selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to `Cell` and the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Single`. This configuration allows selection of a single cell at a time within the grid.
 
 The following example demonstrates single cell selection:
 
@@ -34,9 +36,11 @@ The following example demonstrates single cell selection:
 
 ## Multiple cell selection
 
-Multiple cell selection permits selection of multiple cells at once. Set [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to **Cell** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
+Multiple cell selection provides selection of multiple cells within a grid. This feature is useful for performing actions on multiple cells simultaneously or focusing on specific areas of data.
 
-The following example demonstrates how to enable multiple cell selection:
+To configure multiple cell selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to `Cell` and the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Multiple`. This configuration allows selection and interaction with multiple cells within the grid.
+
+The following example demonstrates multiple cell selection:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,15 +56,20 @@ The following example demonstrates how to enable multiple cell selection:
 
 ## Cell selection mode
 
-Cell selection mode controls how cells or ranges are selected. Set the desired mode using [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#cellselectionmode):
+The cell selection mode allows interactive selection of specific cells or ranges of cells within the grid. This feature is particularly useful for performing actions on specific cells or obtaining data from selected cells.
 
-* **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
-* **Box**: Selects a rectangular range covering specified rows and columns.
-* **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
+The Grid supports three types of cell selection mode which can be configured using [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#cellselectionmode). These modes are:
 
-> For cell selection modes, `selectionSettings.mode` must be **Cell** or **Both**, and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) must be **Multiple**.
+* `Flow`: This is the default mode. It allows selection of a range of cells between the start index and end index, including all cells in between the rows. It provides a continuous flow of cell selection.
+* `Box`: In this mode, selection of a range of cells is possible within the start and end column indexes, including all cells in between the rows within the specified range. This mode is useful for selecting cells within specific columns.
+* `BoxWithBorder`: This mode is similar to the `Box` mode, but it adds borders to the selected range of cells. This visual distinction makes it easy to identify the selected cells within the grid.
 
-You can dynamically update `cellSelectionMode` with a `DropDownList` component, as shown in this example:
+> Cell Selection requires the `selectionSettings.mode` to be `Cell` or  `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
+
+> To select a range of cells in the UI using the keyboard, hold the **Shift key** and click on the start cell, then click on the end cell to complete the selection. This will apply the currently configured `cellSelectionMode` (Flow, Box, or BoxWithBorder) to the selected range.
+
+The following example demonstrates dynamically enabling and changing the `cellSelectionMode` using the `DropDownList` component:
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,15 +83,15 @@ You can dynamically update `cellSelectionMode` with a `DropDownList` component, 
 
 {% previewsample "page.domainurl/samples/grid/selection-cs1" %}
 
-## Select cells externally
+## Select cells programmatically
 
-You can programmatically select single cells, multiple cells, or a range of cells using built-in methods. This is useful for custom UI interactions or workflows.
+Single cell selection, multiple cell selection, and range of cell selection can be performed externally in a grid using built-in methods. This feature allows interaction with specific cells within the grid. The following section demonstrates achieving cell selection using methods.
 
 ### Single cell selection
 
-Select a cell by index using the [selectCell](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcell) method.
+The [selectCell](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcell) method allows selection of a single cell based on row and cell index values. This method-based approach provides programmatic control for selecting specific cells within the grid.
 
-The example below shows selecting a cell from the input (row and cell index):
+The following example demonstrates programmatic single cell selection by passing row and cell index values to the `selectCell` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,9 +107,9 @@ The example below shows selecting a cell from the input (row and cell index):
 
 ### Multiple cell selection
 
-Select several cells by providing row and column indexes using [selectCells](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcells).
+The [selectCells](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcells) method allows selection of multiple cells based on a collection of row and column indexes. This method provides programmatic control for selecting multiple cells simultaneously within the grid.
 
-The following example enables multiple cell selection programmatically:
+The following example demonstrates selecting multiple cells in the grid by calling the `selectCells` method within the button click event and passing a collection of row and column indexes as arguments:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,16 +123,16 @@ The following example enables multiple cell selection programmatically:
 
 {% previewsample "page.domainurl/samples/grid/selection-cell-cs6" %}
 
-> For multiple cell selection and range selection, set `selectionSettings.mode` to **Cell** or **Both** and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
+> Cell Selection requires the `selectionSettings.mode` to be `Cell` or `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
 
 ### Range of cell selection
 
-Select a continuous cell range using [selectCellsByRange](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcellsbyrange) by supplying start and end row/cell indexes.
+The [selectCellsByRange](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcellsbyrange) method allows selection of a continuous range of cells based on start and end index values. This method provides programmatic control for selecting multiple cells within a defined range.
 
-> In **Box** mode, range selection highlights a boxed area. In **Flow** mode, the range selection includes every cell within the row range between start and end.
-> Set `selectionSettings.mode` to **Cell** or **Both** and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
+>* Range cell selection allows selection of multiple cells in box mode when `cellSelectionMode` is set to `Box`. However, when `cellSelectionMode` is set to `Flow`, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
+> * Cell Selection requires the `selectionSettings.mode` to be `Cell` or `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
 
-Below is an example that demonstrates selecting a cell range using values from the input:
+The following example demonstrates programmatic range selection by passing start and end row/cell index values to the `selectCellsByRange` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,11 +146,11 @@ Below is an example that demonstrates selecting a cell range using values from t
 
 {% previewsample "page.domainurl/samples/grid/selection-cell-cs5" %}
 
-## How to get selected row cell indexes
+## Get selected row cell indexes
 
-You can retrieve all currently selected cell indexes using the [getSelectedRowCellIndexes](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrowcellindexes) method. This is useful for processing or displaying information about selected row and cell coordinates.
+The collection of selected row and cell indexes of the currently selected cells in the Grid component can be retrieved. This is useful for performing various actions or manipulations on the selected cells within the grid. To achieve this, the [getSelectedRowCellIndexes](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrowcellindexes) method can be utilized. 
 
-Below is an example demonstrating how to obtain selected cell indexes and display them in a dialog:
+The following example demonstrates obtaining the selected row cell indexes using the `getSelectedRowCellIndexes` method and displaying them in a dialog when a button is clicked:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -241,11 +250,11 @@ export class AppComponent implements OnInit {
 
 ## Clear cell selection programmatically
 
-Clear any current cell selections using [clearCellSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearcellselection). This is useful for resetting or preparing the grid for new selections.
+Clearing cell selection programmatically in the Grid component is a useful feature for removing any existing cell selections. To achieve this, the [clearCellSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#clearcellselection) method can be used.
 
-> `clearCellSelection` is supported for both **Multiple** and **Single** selection types.
+> The `clearCellSelection` method is applicable when the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) is set to `Multiple` or `Single`.
 
-Example of programmatic cell selection clearing:
+The following example demonstrates clearing cell selection by calling the `clearCellSelection` method in the button click event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -261,16 +270,17 @@ Example of programmatic cell selection clearing:
 
 ## Cell selection events
 
-Several events help you customize cell selection interactions:
+The Grid provides several events related to cell selection, allowing customization of the cell selection behavior. The following are the available cell selection events:
 
-* [cellSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid/#cellselecting): Triggered before a cell selection, allowing logic or validation to control selection.
-* [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/#cellselected): Triggered after cell selection is completed.
-* [cellDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid/#celldeselecting): Triggered before a selected cell is deselected, enabling custom logic or cancellation.
-* [cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid/#celldeselected): Triggered after a selected cell is deselected.
+[cellSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid#cellselecting): This event is triggered before any cell selection occurs. It provides an opportunity to implement custom logic or validation before a cell is selected, allowing control of the selection process.
 
-In the example below:
-- Cell selection is blocked via `cellSelecting` if **ShipCountry** equals **France**.
-- Background color updates on selection/deselection events to illustrate the event life cycle.
+[cellSelected](https://ej2.syncfusion.com/angular/documentation/api/grid#cellselected): This event is triggered after a cell is successfully selected. This event can be used to perform actions or updates when a cell is selected.
+
+[cellDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#celldeselecting): This event is triggered just before a selected cell is deselected. It allows implementation of custom logic or validation to decide whether the cell should be deselected or not.
+
+[cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#celldeselected): This event is triggered when a particular selected cell is deselected. This event can be used to perform actions or validations when a cell is no longer selected.
+
+In the following example, cell selection is canceled when the value of "Ship Country" is equal to "France" within the `cellSelecting` event. The background color changes to green when the `cellSelected` event is triggered, and it changes to red when the `cellDeselecting` event is triggered. Furthermore, the text color switches to white when the `cellDeselected` event is triggered. A notification message is displayed to indicate which event was triggered whenever a cell is selected:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

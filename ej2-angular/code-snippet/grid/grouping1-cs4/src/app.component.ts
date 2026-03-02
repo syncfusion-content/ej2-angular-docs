@@ -6,10 +6,7 @@ import {
     CheckBoxModule,
     RadioButtonModule,
     SwitchModule,
-} from '@syncfusion/ej2-angular-buttons'
-
-
-
+} from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -17,7 +14,6 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
 imports: [
-        
         GridModule,
         ButtonModule,
         CheckBoxModule,
@@ -35,7 +31,7 @@ standalone: true,
       </label>
       <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
     </div>
-    <ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
+    <ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='270px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

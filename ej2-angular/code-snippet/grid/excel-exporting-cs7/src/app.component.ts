@@ -8,16 +8,13 @@ import { GridComponent, ToolbarItems, ExcelExportProperties } from '@syncfusion/
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [GridModule],
 
 providers: [ExcelExportService, ToolbarService, FilterService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowFiltering]='true' 
-               [toolbar]='toolbarOptions' height='272px'
+               [toolbar]='toolbarOptions' height='225px'
                [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 

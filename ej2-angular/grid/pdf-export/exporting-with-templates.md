@@ -16,7 +16,7 @@ The Syncfusion Grid enables exporting column, detail, and caption templates—in
 
 The PDF export feature supports exporting Grid columns with images, hyperlinks, and custom text to PDF.
 
-In the example below, hyperlinks and images are exported using the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfquerycellinfo) event.
+In the example below, hyperlinks and images are exported using the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event.
 
 > PDF export supports base64 strings for exporting images.
 
@@ -47,7 +47,7 @@ interface ColumnDataType {
                         <e-column headerText='Employee Image' width='150' textAlign='Center'>
                             <ng-template #template let-data>
                                 <div class="image">
-                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
+                                   <img src="https://ej2.syncfusion.com/angular/demos/assets/grid/images/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
                                 </div>
                             </ng-template>
                         </e-column>
@@ -121,12 +121,12 @@ By default, the Grid exports the parent rows with only expanded detail rows. The
 | All      | Exports the parent grid with all detail rows. |
 | None     | Exports the parent grid alone. |
 
-Detail rows in the exported PDF can be customized using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportdetailtemplate) event. In this event, you can format the detail rows of the PDF document based on the parent row details.
+Detail rows in the exported PDF can be customized using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetailtemplate) event. In this event, you can format the detail rows of the PDF document based on the parent row details.
 
-In the sample below, detail row content is formatted using the [columnCount](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties/#columncount), [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties/#columnheader), and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties/#rows) properties. Custom cell styles can be applied using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#style) property.
+In the sample below, detail row content is formatted using the [columnCount](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columncount), [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columnheader), and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#rows) properties. Custom cell styles can be applied using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#style) property.
 
-> If `columnCount` is not specified, the detail row columns are generated based on the count of the `columnHeader` or the first row's [cells](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateRow/#cells).
-> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#rowspan), ensure the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#index) is provided for correct results.
+> If `columnCount` is not specified, the detail row columns are generated based on the count of the `columnHeader` or the first row's [cells](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateRow#cells).
+> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#rowspan), ensure the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#index) is provided for correct results.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -384,7 +384,7 @@ export class AppComponent implements OnInit {
 
 The PDF export supports exporting Grids with caption templates to a PDF document.
 
-In the example below, the customized caption text is exported using the [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs/#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportgroupcaption) event.
+In the example below, the customized caption text is exported using the [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgroupcaption) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -398,7 +398,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
     selector: 'app-root',
     template: `<ejs-grid #grid id="CaptionTemplateGrid" [dataSource]="data" [allowGrouping]="true" [groupSettings]="groupOptions"
                [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" [allowPdfExport]="true"
-               (exportGroupCaption)="exportGroupCaption($event)" height='273px'>
+               (exportGroupCaption)="exportGroupCaption($event)" height='245px'>
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' width='140'></e-column>
                     <e-column field='FirstName' headerText='First Name' width='120'></e-column>

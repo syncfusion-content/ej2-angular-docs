@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -21,15 +18,12 @@ L10n.load({
 setCulture('ar');
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [GridModule],
 
 providers: [GroupService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='315px'>
+    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='290px'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

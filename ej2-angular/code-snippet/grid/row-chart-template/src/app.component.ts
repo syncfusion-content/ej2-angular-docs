@@ -9,7 +9,7 @@ import { employeeData, employeePerformanceData } from './datasource';
   selector: 'app-root',
   template: `
   <div>
-    <ejs-grid #grid [dataSource]="data" height="400">
+    <ejs-grid #grid [dataSource]="data" height="335">
       <e-columns>
           <e-column field="Name" headerText="Employee Name" width="150"></e-column>
           <e-column field="Designation" headerText="Designation" width="150"></e-column>

@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
@@ -12,27 +9,21 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
+imports: [ GridModule, DropDownListAllModule],
 providers: [PdfExportService, ToolbarService],
 standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-    <label style="padding: 10px 10px 26px 0"> Change the page orientation property: </label> 
+    <label style="padding: 5px 5px 5px 0"> Change the page orientation property: </label> 
     <ejs-dropdownlist
-    style="margin-top:5px"
     #dropDownList
     index="0"
     width="100"
     [dataSource]="ddlData">
     </ejs-dropdownlist>
     </div>
-    <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
+    <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='255px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

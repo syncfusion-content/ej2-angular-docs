@@ -8,7 +8,7 @@ import { orderDetails } from './datasource';
 
 @Component({
 imports: [GridModule,TextBoxModule,ButtonModule],
-providers: [PageService, ToolbarService, EditService],
+providers: [PageService],
 standalone: true,
   selector: 'app-root',
   template: `
@@ -17,8 +17,8 @@ standalone: true,
           <ejs-textbox #textbox width="120"></ejs-textbox>
           <button ejs-button #button id="button" (created)=clickHandler($event)>click button</button>
         </div>
-        <div style="padding:20px 0 0 0">
-          <ejs-grid #grid id="PagingGrid" [dataSource]="data" [allowPaging]="true" height="325">
+        <div style="padding:5px 0 0 0">
+          <ejs-grid #grid id="PagingGrid" [dataSource]="data" [allowPaging]="true" height="250">
             <e-columns>
               <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120">
               </e-column>

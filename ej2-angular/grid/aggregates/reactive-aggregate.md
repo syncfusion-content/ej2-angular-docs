@@ -34,7 +34,7 @@ imports: [ GridModule],
 providers: [AggregateService, GroupService, PageService, ToolbarService, EditService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='290px' [allowPaging]='true' [toolbar]='toolbar' [allowGrouping]="true" [groupSettings]="groupOptions" [editSettings]='editSettings'>
+    template: `<ejs-grid #grid [dataSource]='data' height='210px' [allowPaging]='true' [toolbar]='toolbar' [allowGrouping]="true" [groupSettings]="groupOptions" [editSettings]='editSettings'>
     <e-columns>
         <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='right' width=120></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -109,7 +109,7 @@ imports: [GridModule],
 providers: [AggregateService, GroupService, PageService, ToolbarService, EditService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='290px' [allowPaging]='true' [toolbar]='toolbar' [editSettings]='editSettings' (actionBegin)='actionBegin($event)'>
+    template: `<ejs-grid #grid [dataSource]='data' height='212px' [allowPaging]='true' [toolbar]='toolbar' [editSettings]='editSettings' (actionBegin)='actionBegin($event)'>
     <e-columns>
         <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='right' width=120></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>

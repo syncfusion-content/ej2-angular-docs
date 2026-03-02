@@ -1,20 +1,18 @@
 ---
 layout: post
-title: Column selection in Angular Grid component | Syncfusion
-description: Learn how to enable and use column selection in the Syncfusion Angular Grid component, including single, multiple, range, and programmatic column selections.
+title: Angular Grid - Column selection | Syncfusion
+description: Angular Grid column selection supports selecting entire columns, configuration options, and examples for applying operations or styling to selected columns.
 platform: ej2-angular
 control: Column selection 
 documentation: ug
 domainurl: ##DomainURL## 
 ---
 
-# Column selection in Angular Grid component
+# Column Selection in Angular Grid Component
 
-Column selection in the Grid component allows the selection of one or more columns using mouse interactions or arrow keys. This feature is useful for highlighting, manipulating, or performing actions on specific columns within the Grid.
+Column selection in the Grid allows selecting one or more columns by clicking the column header or using keyboard navigation. This feature is useful for highlighting, manipulating, or performing actions on specific columns within the grid. Press <kbd>Esc</kbd> to clear the current column selection.
 
-To enable column selection, set the [`selectionSettings.allowColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#allowcolumnselection) property to **true**.
-
-Example: Enable column selection using `allowColumnSelection`:
+To enable column selection in the grid, set the [selectionSettings.allowColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#allowcolumnselection) property to `true`. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +28,15 @@ Example: Enable column selection using `allowColumnSelection`:
 
 ## Single column selection
 
-To select a single column at a time, set [`selectionSettings.allowColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#allowcolumnselection) to **true** and [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Single**.
+Single column selection allows selecting one column at a time within the grid. This capability is particularly useful when focusing on specific columns or performing actions on the data within a particular column.
 
-Example: Enable single column selection:
+To enable single column selection, set the [selectionSettings.allowColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#allowcolumnselection) property to `true`. Additionally, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Single`. This configuration provides single column selection at a time within the grid.
+
+**Mouse interaction:** Click on any column header to select a single column.
+
+**Keyboard navigation:** 
+* Navigate between columns using the <kbd>Left</kbd> and <kbd>Right</kbd> arrow keys when a column header is focused.
+* Press the <kbd>Enter</kbd> key to select the focused column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +52,15 @@ Example: Enable single column selection:
 
 ## Multiple column selection
 
-To select multiple columns simultaneously, set [`selectionSettings.allowColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#allowcolumnselection) to **true** and [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
+Multiple column selection allows selecting several columns simultaneously within the grid. This capability is particularly useful when focusing on or performing actions on multiple columns at once.
 
-Example: Enable multiple column selection:
+To enable multiple column selection, set the [selectionSettings.allowColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#allowcolumnselection) property to `true`. Additionally, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Multiple`. This configuration provides multiple column selection within the grid.
+
+**Mouse interactions:**
+* Hold the <kbd>Ctrl</kbd> key and click on different column headers to select multiple non-consecutive columns.
+* Hold the <kbd>Shift</kbd> key and click on the start column header, then click on the end column header to select a continuous range of columns.
+
+**Keyboard navigation:** Hold the <kbd>Shift</kbd> key and use the <kbd>Left</kbd> or <kbd>Right</kbd> arrow keys to extend the selection to multiple columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,17 +74,19 @@ Example: Enable multiple column selection:
 
 {% previewsample "page.domainurl/samples/grid/selection-column-cs8" %}
 
-## Select columns externally
+## Select columns programmatically
 
-You can select single, multiple, or a range of columns externally using the available methods.
+The Grid supports externally performing single column selection, multiple column selection, and range of column selection using built-in methods. This capability allows interaction with specific columns within the grid. The following topic demonstrates how these selections can be achieved using methods.
 
 ### Single column selection
 
-Use the [`selectColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcolumn) method to select a column by its index.
+column within the grid. This capability is particularly useful when focusing on specific columns or performing actions on the data within a particular column.
 
-> Column selection requires `allowColumnSelection` set to **true** and `type` to **Single**.
+To achieve single column selection, use the [selectColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcolumn) method. This method selects the column by passing the column index as a parameter.
 
-Example: Select a column programmatically:
+> Column selection requires the [selectionSettings.allowColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#allowcolumnselection) property to `true` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Single`.
+
+The following example demonstrates selecting a single column within the grid. The selected column index is obtained through a `textbox` component and passed as an argument to the `selectColumn` method. When the button event is triggered by clicking the "Select Column" button, a single column is selected within the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,11 +102,13 @@ Example: Select a column programmatically:
 
 ### Multiple column selection
 
-Use the [`selectColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcolumns) method to select columns by passing an array of column indexes.
+Multiple column selection in the grid enables programmatic selection of several columns at once, allowing operations to be performed on multiple columns simultaneously. This capability is particularly useful for scenarios that require highlighting, manipulating, or applying actions across more than one column in the grid.
 
-> For multiple column selection, set `allowColumnSelection` to **true** and `type` to **Multiple**.
+To achieve multiple column selection, use the [selectColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcolumns) method. This method selects columns by passing an array of column indexes as a parameter.
 
-Example: Select multiple columns by index array:
+> Column selection requires the [selectionSettings.allowColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#allowcolumnselection) property to `true` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
+
+The following example demonstrates selecting multiple columns in the grid by calling the `selectColumns` method within the button click event and passing an array of column indexes as arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,9 +124,11 @@ Example: Select multiple columns by index array:
 
 ### Range of column selection
 
-Use the [`selectColumnsByRange`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcolumnsbyrange) method to select columns from a start index to an end index.
+Range of column selection provides selecting a group of consecutive columns within the grid. This capability is particularly useful when performing actions on a consecutive set of columns or focusing on specific column ranges.
 
-Example: Select a range of columns:
+To achieve range of column selection, use the [selectColumnsByRange](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcolumnsbyrange) method. This method selects columns by specifying the start and end column indexes.
+
+The following example demonstrates selecting a range of columns within the grid. The selected column's start index and end index are obtained through `textbox` components and passed as arguments to the `selectColumnsByRange` method. When the button event is triggered by clicking the "Select Columns" button, a range of columns is selected within the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,9 +144,11 @@ Example: Select a range of columns:
 
 ### Select with existing column
 
-The [`selectColumnWithExisting`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectcolumnwithexisting) method allows you to add a column to the current selection without clearing the existing selected columns.
+Select with existing column provides adding a column to the current selection without clearing the existing column selection in the Grid component. This capability is valuable when expanding the selection to include additional columns while preserving previously selected columns.
 
-Example: Add a column to the current selection:
+To achieve this, use the [selectColumnWithExisting](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcolumnwithexisting) method. This method selects a column along with an existing column by specifying the column index as a parameter.
+
+The following example demonstrates selecting a column with an existing column. The selected column index is obtained through a `textbox` component and passed as an argument to the `selectColumnWithExisting` method. When the button event is triggered by clicking the "Select Columns" button, the specified column is selected along with any existing selections within the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,11 +164,11 @@ Example: Add a column to the current selection:
 
 ## Clear column selection programmatically
 
-To clear column selections, use the [`clearColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearcolumnselection) method.
+Clearing column selection programmatically in the Grid component is useful for removing any existing column selections. To achieve this, use the [clearColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#clearcolumnselection) method.
 
-> The `clearColumnSelection` method works for both **Multiple** and **Single** selection types.
+> The `clearColumnSelection` method is applicable when the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) is set to `Multiple` or `Single`.
 
-Example: Clear column selection:
+The following example demonstrates clearing column selection by calling the `clearColumnSelection` method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,14 +184,18 @@ Example: Clear column selection:
 
 ## Column selection events
 
-The Angular Grid component provides several column selection events for further customization and handling:
+he Grid provides several events related to column selection that allow responding to and customizing the behavior of column selection. The following are the available column selection events:
 
-- [`columnSelecting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnselecting): Fires before a column is selected, allowing cancellation or validation.
-- [`columnSelected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnselected): Fires after a column is selected.
-- [`columnDeselecting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndeselecting): Fires just before a selected column is deselected, offering an opportunity for custom logic.
-- [`columnDeselected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndeselected): Fires after a column is deselected.
+[columnSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid#columnselecting): This event is triggered before any column selection occurs. It provides an opportunity to implement custom logic or validation before a column is selected, allowing control of the selection process.
 
-In this example, column selection is canceled if `field` equals **CustomerID** in the `columnSelecting` event. The **headerCell** background turns green upon the `columnSelected` event and red upon the `columnDeselecting` event. A message indicates the column selection event that was triggered.
+[columnSelected](https://ej2.syncfusion.com/angular/documentation/api/grid#columnselected): This event is triggered after a column is successfully selected. Use this event to perform actions or updates when a column is selected.
+
+[columnDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#columndeselecting): This event is triggered just before a selected column is deselected. It allows performing custom logic or validation to decide whether the column should be deselected or not.
+
+[columnDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#columndeselected): This event is triggered when a particular selected column is deselected. Use this event to perform actions or validations when a column is no longer selected.
+
+In the following example, column selection is canceled when the value of `field` is equal to "CustomerID" within the `columnSelecting` event. The "headerCell" background color changes to green when the `columnSelected` event is triggered and changes to red when the `columnDeselecting` event is triggered. A notification message is displayed to indicate which event was triggered whenever a column is selected.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

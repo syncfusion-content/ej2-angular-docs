@@ -5,11 +5,8 @@ import {
     CheckBoxModule,
     RadioButtonModule,
     SwitchModule,
-} from '@syncfusion/ej2-angular-buttons'
+} from '@syncfusion/ej2-angular-buttons';
 import { GridModule, PageService, ToolbarService, EditService, GroupService, FilterService, SortService, ReorderService, ColumnMenuService, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { L10n, setCulture } from '@syncfusion/ej2-base';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';

@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule],
 providers: [AggregateService, GroupService],
 standalone: true,
     selector: 'app-root',

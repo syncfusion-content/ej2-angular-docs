@@ -3,16 +3,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
 import { FormsModule } from '@angular/forms'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+imports: [ 
         GridModule,
         FormsModule,
         ButtonModule
@@ -36,7 +32,7 @@ standalone: true,
       <p style="color:red; ">{{ message }}</p>
     </div>
   
-  <ejs-grid #grid style="padding-top: 5px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' height='240px'>
+  <ejs-grid #grid style="padding-top: 5px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' height='235px'>
     <e-columns>
       <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90 [allowGrouping]='false'></e-column>
       <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

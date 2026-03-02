@@ -111,7 +111,7 @@ Example: Disabling page wise aggregates in grouped Syncfusion Angular Grid:
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
 {% raw %}
-<ejs-grid [dataSource]='data' height='350px' [allowPaging]="true" [allowGrouping]="true" [groupSettings]="groupOptions" [pageSettings]="pageOptions">
+<ejs-grid [dataSource]='data' height='255px' [allowPaging]="true" [allowGrouping]="true" [groupSettings]="groupOptions" [pageSettings]="pageOptions">
     <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Aggregates in Angular Grid component
 
-The Aggregates feature in the Syncfusion Angular Grid component enables displaying summary values in the grid's footer, group footer, and group caption areas. Aggregates provide calculations on specific columns, making it easy to present totals, averages, and other summary information. Aggregates are configured using the **e-aggregates** directive. Each aggregate column definition must include the required properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type).
+The Aggregates feature in the Syncfusion Angular Grid component enables displaying summary values in the grid's footer, group footer, and group caption areas. Aggregates provide calculations on specific columns, making it easy to present totals, averages, and other summary information. Aggregates are configured using the **e-aggregates** directive. Each aggregate column definition must include the required properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#field) and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type).
 
 To use the aggregate feature, inject the **AggregateService** module into the **@NgModule.providers** section.
 
@@ -18,9 +18,9 @@ To use the aggregate feature, inject the **AggregateService** module into the **
 
 By default, aggregate values are shown in the footer, group footer, and group caption cells of the grid. You can control where the aggregate value is displayed using these properties:
 
-* **[footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#footertemplate):** Defines a template to display the aggregate value in the footer cell, supporting custom formatting.
-* **[groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupfootertemplate):** Sets a template for the group footer cell, allowing custom presentation of the aggregate value in grouped rows.
-* **[groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupcaptiontemplate):** Specifies a template for the group caption cell, where the aggregate value can be formatted as required.
+* **[footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate):** Defines a template to display the aggregate value in the footer cell, supporting custom formatting.
+* **[groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupfootertemplate):** Sets a template for the group footer cell, allowing custom presentation of the aggregate value in grouped rows.
+* **[groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate):** Specifies a template for the group caption cell, where the aggregate value can be formatted as required.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,12 +59,12 @@ By default, aggregate values are shown in the footer, group footer, and group ca
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs1" %}
 
-> * For local data, the aggregate values are calculated over the entire dataset currently loaded in the grid. Summary values reflect calculations across all grid rows.
->
+>* For local data, the aggregate values are calculated over the entire dataset currently loaded in the grid. Summary values reflect calculations across all grid rows.
 > * With remote data and paging enabled, aggregate values in the footer are calculated based on records displayed in the current page. This means the summary reflects only the visible rows, not the entire dataset.
+
 ## Built-in aggregate types
 
-The Syncfusion Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
+The Syncfusion Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
 
 Available built-in aggregate types include:
 
@@ -84,7 +84,7 @@ Below is an example illustrating usage of built-in aggregate types in the Syncfu
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
 {% raw %}
-<ejs-grid [dataSource]="data" height="290px" [allowGrouping]="true" [groupSettings]="groupOptions">
+<ejs-grid [dataSource]="data" height="285px" [allowGrouping]="true" [groupSettings]="groupOptions">
     <e-columns>
         <e-column field="OrderID" headerText="Order ID" textAlign="right" width="120"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
@@ -127,7 +127,7 @@ Below is an example illustrating usage of built-in aggregate types in the Syncfu
 
 Multiple aggregate types can be specified for a single column, allowing the Grid to calculate and display different summary values together for the same column. This is useful when you need to show several aggregates (such as sum, average, min, max, or custom calculations) for one field at the same time.
 
-You can define multiple aggregates in the Syncfusion Angular Grid by providing an array to the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property in the column definition.
+You can define multiple aggregates in the Syncfusion Angular Grid by providing an array to the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property in the column definition.
 
 The following example demonstrates how to configure multiple aggregates for a column:
 

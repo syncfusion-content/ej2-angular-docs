@@ -7,17 +7,13 @@ import { orderDetails } from './datasource';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
+imports: [GridModule],
+    providers: [PageService, SelectionService, RowDDService],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
                 <ejs-grid [dataSource]='data' [allowRowDragAndDrop]='true'
-                [selectionSettings]='selectionOptions' height='400'>
+                [selectionSettings]='selectionOptions' height='335'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' width='120'
                         textAlign='Right'></e-column>

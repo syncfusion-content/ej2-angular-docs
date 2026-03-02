@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, } from '@syncfusion/ej2-angular-grids'
-
-
 import { Component, OnInit } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { ForeignKeyService, EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
@@ -12,10 +10,7 @@ import { data, employeeData } from './datasource';
 
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [GridModule ],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='270' [editSettings]='editoption' [toolbar]='toolbar'>
@@ -32,7 +27,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public employeeData?: object[];
+    public employeeData?: ForeignKeyDataType[];
     public editoption: EditSettingsModel = { allowEditing: true };
     public autoComplete?: AutoComplete;
     toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
@@ -43,8 +38,9 @@ export class AppComponent implements OnInit {
         read: () => { // return edited value to update data source
 
             const EmployeeID = 'EmployeeID';
-            const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', (this.autoComplete as AutoComplete).value));
-            return value.length && (value[0] as ForeignKeyDataType)[EmployeeID]; // to convert foreign key value to local value.
+            const acValue = (this.autoComplete as AutoComplete).value as string | number | boolean | Date | null | undefined;
+            const value = new DataManager(this.employeeData as ForeignKeyDataType[]).executeLocal(new Query().where('FirstName', 'equal', acValue));
+            return value.length ? (value[0] as ForeignKeyDataType)[EmployeeID] : null; // to convert foreign key value to local value.
         },
         destroy: () => { // to destroy the custom component.
             (this.autoComplete as AutoComplete).destroy();
@@ -54,7 +50,7 @@ export class AppComponent implements OnInit {
             element: HTMLTableCellElement
         }) => {
             this.autoComplete = new AutoComplete({
-                dataSource: employeeData as string[],
+                dataSource: this.employeeData as unknown as { [key: string]: Object }[],
                 fields: { value: args.column.foreignKeyValue },
                 value: args.foreignKeyData[0].FirstName
             });
@@ -64,7 +60,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.employeeData = employeeData;
+        this.employeeData = employeeData as ForeignKeyDataType[];
     }
 }
 interface ForeignKeyDataType{
