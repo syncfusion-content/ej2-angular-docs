@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { GridModule, IFilterCreate, IFilterWrite } from '@syncfusion/ej2-angular-grids'
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     public filteroption: FilterSettingsModel = { type: 'Menu'};
     public filter: IFilter = {
         ui: {
-            create: (args: { target: Element, column: object }) => {
+           create: (args: IFilterCreate) => {
                 const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
                 (args as any).target.appendChild(flValInput);
                 this.dropInstance = new DropDownList({
@@ -50,10 +50,7 @@ export class AppComponent implements OnInit {
                 });
                 this.dropInstance.appendTo(flValInput);
             },
-            write: (args: {
-                column: object, target: Element, parent: any,
-                filteredValue: number | string
-            }) => {
+            write: (args: IFilterWrite): void => {
                 (this.dropInstance as DropDownList).text = (args as any).filteredValue as string || '';
             },
             read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {

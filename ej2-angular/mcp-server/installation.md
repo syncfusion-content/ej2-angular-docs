@@ -94,7 +94,7 @@ Configure the Syncfusion MCP Server globally to make it available across all wor
 
 #### VS Code
 
-1. Click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL2FuZ3VsYXItYXNzaXN0YW50QGxhdGVzdCJdLCJlbnYiOnsic3luY2Z1c2lvbl9BcGlfS2V5IjoiWU9VUl9BUElfS0VZIn19">here</a> to open the installation link.
+1. Click <a target="_blank" href="https://insiders.vscode.dev/redirect/mcp/install?name=sf-angular-mcp&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40syncfusion%2Fangular-assistant%40latest%22%5D%2C%22env%22%3A%7B%22Syncfusion_API_Key%22%3A%22YOUR_API_KEY%22%7D%7D">here</a> to open the installation link.
 2. Replace `YOUR_API_KEY` with your actual Syncfusion API key.
 3. Follow the prompts to complete the installation.
 
@@ -102,7 +102,7 @@ For more information, see the [VS Code MCP documentation](https://code.visualstu
 
 #### Cursor
 
-1. Click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL3JlYWN0LWFzc2lzdGFudEBsYXRlc3QiXSwiZW52Ijp7IlN5bmNmdXNpb25fQVBJX0tleV9QYXRoIjoiWU9VUl9BUElfS0VZX0ZJTEVfUEFUSCJ9fQ==">here</a> to open the installation link.
+1. Click <a target="_blank" href="https://cursor.com/en/install-mcp?name=sf-angular-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBzeW5jZnVzaW9uL2FuZ3VsYXItYXNzaXN0YW50QGxhdGVzdCJdLCJlbnYiOnsiU3luY2Z1c2lvbl9BUElfS2V5IjoiWU9VUl9BUElfS0VZIn19">here</a> to open the installation link.
 2. Update the `YOUR_API_KEY_FILE_PATH` with the path to your API key file.
 3. Follow the prompts to complete the installation.
 
@@ -192,8 +192,8 @@ If you encounter issues during installation or while using the MCP server, refer
 Product support is available through the following media.
 
 - [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed response in 24 hours \| Unlimited tickets \| Holiday support
-- [Community forum](https://www.syncfusion.com/forums/essential-js2)
-- [Request feature or report bug](https://www.syncfusion.com/feedback/javascript)
+- [Community forum](https://www.syncfusion.com/forums/angular-js2)
+- [Request feature or report bug](https://www.syncfusion.com/feedback/angular)
 - [Live chat](https://www.syncfusion.com/support)
 
 ## See also

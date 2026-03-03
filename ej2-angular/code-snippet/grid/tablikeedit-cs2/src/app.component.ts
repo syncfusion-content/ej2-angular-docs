@@ -4,19 +4,17 @@ import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule, CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule,
         ButtonModule,
         CheckBoxAllModule,
         TabAllModule,

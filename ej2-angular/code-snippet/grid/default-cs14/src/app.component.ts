@@ -10,15 +10,8 @@ import { data, employeeData } from './datasource';
 import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-        SortService,
-        FilterService,
-        GroupService],
+imports: [ GridModule],
+providers: [PageService,DetailRowService, ToolbarService,SortService,FilterService,GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' [toolbar]='["Print"]' hierarchyPrintMode='All'>
@@ -30,7 +23,6 @@ standalone: true,
                     </e-columns>
                 </ejs-grid>
                 `,
-    providers: [DetailRowService, ToolbarService]
 })
 export class AppComponent implements OnInit {
 

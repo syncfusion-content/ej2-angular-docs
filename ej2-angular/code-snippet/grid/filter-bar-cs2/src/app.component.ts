@@ -39,7 +39,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public filterSettings: FilterSettingsModel;
+    public filterSettings!: FilterSettingsModel;
     public pageSettings: PageSettingsModel = { pageSize: 5 };
     public filterModesData: { text: string; value: FilterBarMode }[] = [
         { text: 'Immediate', value: 'Immediate' },

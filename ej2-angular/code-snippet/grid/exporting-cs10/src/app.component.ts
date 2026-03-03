@@ -15,7 +15,7 @@ imports: [
         GridModule
     ],
 
-providers: [PdfExportService, ToolbarService],
+providers: [PdfExportService, ToolbarService,PageService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true' [toolbar]='toolbarOptions' height='220px'
@@ -27,7 +27,6 @@ standalone: true,
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [PageService]
 })
 export class AppComponent implements OnInit {
 
