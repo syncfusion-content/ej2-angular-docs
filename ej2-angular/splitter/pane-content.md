@@ -32,11 +32,11 @@ You can use `ng-template` to render HTML elements directly inside the Splitter p
 
 Angular UI components can be embedded within Splitter panes, supporting their native behaviors and event bindings.
 
-You can refer [Accordion within splitter](https://ej2.syncfusion.com/angular/demos/#/material/splitter/accordion-navigation-menu) and [Listview within splitter](https://ej2.syncfusion.com/angular/demos/#/material/splitter/details-view) samples.
+Refer to the [Accordion within splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/accordion-navigation-menu) and [Listview within splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/details-view) samples.
 
 ## Plain content
 
-You can insert plain text into a pane using either inner HTML or the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
+Plain text content can be added to panes using either inner HTML or the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#content) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,7 +52,7 @@ You can insert plain text into a pane using either inner HTML or the [content](h
 
 ## HTML Markup
 
-Splitter is a layout-based container component. You can dynamically populate pane content using existing HTML markup, making it easy to update content without modifying component logic.
+The Splitter is a layout-based container component. Populate pane content dynamically using existing HTML markup, making it easy to update content without modifying component logic.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,7 +68,7 @@ Splitter is a layout-based container component. You can dynamically populate pan
 
 ## Pane content using selector
 
-You can assign pane [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) using query selectors such as element IDs or CSS class names. The example below demonstrates how to load an element into a pane using its ID.
+Pane [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#content) can be assigned using query selectors such as element IDs or CSS class names. The following example demonstrates how to load an element into a pane using its ID.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

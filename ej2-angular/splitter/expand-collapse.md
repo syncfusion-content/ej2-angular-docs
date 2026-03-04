@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Collapsible panes
 
-The Angular Splitter component supports built-in expand and collapse functionality for its panes. By default, this behavior is disabled. To enable it, set the [collapsible](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#collapsible) property within `paneSettings`. This displays expand and collapse icons in the panes. You can dynamically expand and collapse the panes by clicking on the corresponding icons
+The Angular Splitter component provides built-in expand and collapse functionality for its panes. By default, this behavior is disabled. To enable it, set the [collapsible](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#collapsible) property within `paneSettings`. This displays expand and collapse icons in the panes. users can dynamically expand and collapse the panes by clicking on the corresponding icons
 
 The following example demonstrates how to enable collapsible behavior:
 
@@ -30,9 +30,9 @@ The following example demonstrates how to enable collapsible behavior:
 
 ## Programmatically control the expand and collapse action
 
-You can also control pane visibility programmatically using the Splitter’s public methods: [expand](https://ej2.syncfusion.com/angular/documentation/api/splitter/#expand) and [collapse](https://ej2.syncfusion.com/angular/documentation/api/splitter/#collapse). These methods allow you to dynamically toggle panes based on application logic.
+Pane visibility can be controlled by programmatically using the Splitter’s public methods: [expand](https://ej2.syncfusion.com/angular/documentation/api/splitter#expand) and [collapse](https://ej2.syncfusion.com/angular/documentation/api/splitter#collapse). These methods allow you to dynamically toggle panes based on application logic.
 
-Here’s an example of using these methods:
+The following example demonstrates using these methods:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ Here’s an example of using these methods:
 
 ## Set initial collapsed state
 
-To render a pane in a collapsed state on initial load, set the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/splitter/#collapsed) property to `true`. This is useful for customizing the default layout based on user preferences or screen size.
+To render a pane in a collapsed state on initial load, set the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/splitter#collapsed) property to `true`. This is useful for customizing the default layout based on user preferences or screen size.
 
 In the following example, the second pane is rendered in a collapsed state:
 
@@ -64,7 +64,7 @@ In the following example, the second pane is rendered in a collapsed state:
 
 {% previewsample "page.domainurl/samples/splitter/collapsed-cs1" %}
 
-> Explore our [Angular Splitter Expand and Collapse example](https://ej2.syncfusion.com/angular/demos/#/material/splitter/expand-and-collapse) to see this feature in action.
+> Explore our [Angular Splitter Expand and Collapse example](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/expand-and-collapse) to see this feature in action.
 
 ## See Also
 

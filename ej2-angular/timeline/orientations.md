@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Orientations in Angular Timeline component
 
-The Timeline component supports displaying items in both horizontal and vertical directions using the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property. This flexibility allows you to choose the most suitable layout based on your application's design requirements and available space.
+The Timeline component supports displaying items in both horizontal and vertical directions using the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline#orientation) property. This flexibility allows selection of the most suitable layout based on your application's design requirements and available space.
 
 ## Vertical
 
-Display timeline items vertically in a top-to-bottom sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
+Display timeline items vertically in a top-to-bottom sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,8 +36,7 @@ Display timeline items vertically in a top-to-bottom sequence by setting the [or
 
 ## Horizontal
 
-Display timeline items horizontally in a left-to-right sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline/#orientation) property to `Horizontal`. The horizontal layout works particularly well on desktop screens and wide containers.
-
+Display timeline items horizontally in a left-to-right sequence by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline#orientation) property to `Horizontal`. The horizontal layout is especially effective for desktop screens and wide containers, providing a clear horizontal timeline visualization.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/orientations/horizontal/src/app.component.ts %}

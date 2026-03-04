@@ -22,9 +22,9 @@
             ],
             "assets": [
               {
-                "glob": "*.css",
-                "input": "",
-                "output": ""
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
               }
             ]
           },

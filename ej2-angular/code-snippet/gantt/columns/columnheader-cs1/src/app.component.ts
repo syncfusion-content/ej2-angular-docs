@@ -6,28 +6,30 @@ import { GanttData } from './data';
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
-  template: `
-    <ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
-      <e-columns>
+  template: `<ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
+    <e-columns>
         <e-column field="TaskName" width="290">
-          <ng-template #headerTemplate let-data>
-          {{data.Name}}
-            <div>
-               <img src="assets/images/Name.png" width="20" height="20" />
-            </div> 
+            <ng-template #headerTemplate let-column>
+                {{ column.headerText }}
+                <div>
+                    <img src="assets/images/TaskName.png" width="20" height="20" />
+                </div>
             </ng-template>
         </e-column>
-        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right"></e-column>
+        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right">
+        </e-column>
         <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
-          <ng-template #headerTemplate>
-            <div>
-               <img src="assets/images/Duration.png" width="20" height="20" />
-            </div>
+            <ng-template #headerTemplate let-column>
+                {{ column.headerText }}
+                <div>
+                    <img src="assets/images/Duration.png" width="20" height="20">
+                </div>
             </ng-template>
         </e-column>
-        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right"></e-column>
-      </e-columns>
-    </ejs-gantt>`,
+        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
+        </e-column>
+    </e-columns>
+</ejs-gantt>`,
   encapsulation: ViewEncapsulation.None
 })
 

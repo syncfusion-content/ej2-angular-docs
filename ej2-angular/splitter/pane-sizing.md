@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Pane sizing in Angular Splitter component
 
-The Angular Splitter component allows you to define pane sizes using pixel values, percentage values, or automatic sizing based on layout behavior.
+The Angular Splitter component provides flexible pane sizing options using pixel values, percentage values, or automatic sizing based on layout behavior.
 
 ## Set pane size in pixels
 
-To assign fixed pixel values to panes, use the `size` property in `paneSettings`. This ensures consistent pane dimensions regardless of container size.
+Fixed pixel values can be assigned to panes using the  `size` property in `paneSettings`. This approach maintains consistent pane dimensions regardless of container size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ To assign fixed pixel values to panes, use the `size` property in `paneSettings`
 
 ## Set pane size in percentage
 
-You can also define pane sizes as percentages. This approach ensures responsive behavior across different screen sizes.
+Pane sizes can be defined as percentages. This approach ensures responsive behavior across different screen sizes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ When no explicit size is provided, panes automatically adjust based on available
 
 ## Fixed pane
 
-You can configure panes with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Splitter treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
+Multiple panes can be configured with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Splitter automatically treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

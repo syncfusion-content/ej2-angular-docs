@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The Dashboard Layout component provides the ability to save the current layout configuration and restore it later, enabling users to persist their preferred panel arrangements across sessions or create reusable dashboard templates.
 
 ## Save Layout State
-The current layout structure of the Dashboard Layout component can be obtained and saved using the [`serialize`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#serialize) public method of the component. This can be used to construct another dashboard with the same panel structure. This method returns the component's current panel settings which can be used to construct a dashboard with the same layout settings.
+The current layout structure of the Dashboard Layout component can be obtained using the [`serialize`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#serialize) public method of the component. This can be used to construct another dashboard with the same panel structure. This method returns the component's current panel settings which can be used to construct a dashboard with the same layout settings.
 
 ## Implementation Example
 
@@ -35,4 +35,4 @@ The following sample demonstrates how to save and restore panel states using the
   
 {% previewsample "page.domainurl/samples/dashboard-layout/save-restore-cs1" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.
+> Refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material3/dashboard-layout/default) to learn how to present and manipulate data.

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Split panes in Angular Splitter component
 
-This section explains the behavior of split panes in the Angular Splitter component.
+The Splitter component divides a container into resizable panes separated by draggable bars. This section covers pane orientation, layout configuration, separator customization, nested splitters, and dynamic pane manipulation.
 
 ## Horizontal layout
 
-By default, the Splitter renders in horizontal orientation, dividing the container into panes with a vertical separator.
+By default, the Splitter renders in horizontal orientation. This layout divides the container into side-by-side panes separated by a vertical separator bar (a vertical line between horizontal panes).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ By default, the Splitter renders in horizontal orientation, dividing the contain
 
 ## Vertical layout
 
-Set the [orientation](https://ej2.syncfusion.com/angular/documentation/api/splitter/#orientation) property to `Vertical` to render the Splitter in vertical orientation, dividing the container into panes with a horizontal separator.
+Setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/splitter#orientation) property to `Vertical` to render the Splitter in vertical orientation, dividing the container into panes with a horizontal separator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ Set the [orientation](https://ej2.syncfusion.com/angular/documentation/api/split
 
 ## Multiple panes
 
-You can render multiple panes in both `Horizontal` and `Vertical` orientations.
+The Splitter supports any number of panes in both `Horizontal` and `Vertical` orientations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ You can render multiple panes in both `Horizontal` and `Vertical` orientations.
 
 ## Separator
 
-By default, the pane separator is rendered with a `1px` width/height. You can customize the separator size using the [separatorSize](https://ej2.syncfusion.com/angular/documentation/api/splitter/#separatorsize) property.
+By default, the pane separator is rendered with a `1px` width/height. The separator size can be customized using the [separatorSize](https://ej2.syncfusion.com/angular/documentation/api/splitter#separatorsize) property.
 
 - For horizontal orientation, this defines the separator’s width.
 - For vertical orientation, this defines the separator’s height.
@@ -81,7 +81,7 @@ By default, the pane separator is rendered with a `1px` width/height. You can cu
 
 ## Nested Splitter
 
-Splitter supports nested panes for complex layouts. You can use the same `<div>` element for both the parent pane and the nested Splitter.
+Splitter components can be nested within panes to create complex multi-level layouts. The same `<div>` element used for both the parent pane and the nested Splitter.
 
 > Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
 
@@ -99,11 +99,11 @@ Splitter supports nested panes for complex layouts. You can use the same `<div>`
 
 ## Add or remove pane
 
-You can add or remove panes programmatically using the [addPane](https://ej2.syncfusion.com/angular/documentation/api/splitter/#addpane) and [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter/#removepane) methods.
+Panes can be added or removed programmatically using the [addPane](https://ej2.syncfusion.com/angular/documentation/api/splitter#addpane) and [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter#removepane) methods.
 
 ### Add pane
 
-You can add the panes dynamically in the splitter by passing [pane properties](https://ej2.syncfusion.com/documentation/api/splitter/panePropertiesModel/) along with index to the addPane method.
+Panes can be added dynamically in the splitter by passing [pane properties](https://ej2.syncfusion.com/documentation/api/splitter/panePropertiesModel) along with index to the addPane method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,7 +119,7 @@ You can add the panes dynamically in the splitter by passing [pane properties](h
 
 ### Remove pane
 
-You can remove the split panes dynamically by passing the pane index to [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter/#removepane) method.
+Panes can be removed dynamically by passing the pane index to [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter#removepane) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -94,7 +94,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/column-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,7 +174,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/column-template-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -283,7 +283,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/column-template-cs9/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs9/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -305,7 +305,7 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 {% include code-snippet/gantt/columns/column-template-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -325,7 +325,7 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 {% include code-snippet/gantt/columns/column-template-cs4/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -345,7 +345,7 @@ The following example demonstrates how to render the Chips component in the **Ta
 {% include code-snippet/gantt/columns/column-template-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -474,7 +474,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/column-template-cs7/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -549,7 +549,7 @@ export class AppComponent implements OnInit {
 {% include code-snippet/gantt/columns/column-template-cs8/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt/columns/column-template-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   

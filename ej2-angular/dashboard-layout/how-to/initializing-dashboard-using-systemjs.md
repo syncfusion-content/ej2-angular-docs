@@ -98,18 +98,18 @@ Configure the Syncfusion<sup style="font-size:70%">&reg;</sup> [ej2-angular-layo
 
 ## Adding style sheet to the application
 
-To render the DashboardLayout component, import the DashboardLayout and its dependent component's styles as given below in `[src/styles.css]`.
+To render the DashboardLayout component, import the DashboardLayout and its dependent component styles as shown below in `[src/styles.css]`.
 
 ```css
 @import "../../node_modules/@syncfusion/ej2-base/styles/material3.css";
 @import "../../node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css";
 ```
 
->Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: To refer to combined component styles, use the Syncfusion [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in the application.
 
 ## Add DashboardLayout to the application
 
-You can render the DashboardLayout component by adding the panels property as the attribute to the HTML element directly. Add the HTML div element with panel definition for DashboardLayout into your `app.template.html` file.
+Render the DashboardLayout component by adding the panels property as the attribute to the HTML element directly. Add the HTML div element with panel definition for DashboardLayout into the `app.template.html` file.
 
 `[src/app/app.template.html]`
 
@@ -168,7 +168,7 @@ You can render the DashboardLayout component by adding the panels property as th
 </div>
 ```
 
-Now, modify the `templateUrl` in `app.component.ts` file to render DashboardLayout component.
+Now, modify the `templateUrl` in `app.component.ts` file to render the DashboardLayout component.
 
 `[src/app/app.component.ts]`
 
@@ -204,7 +204,7 @@ export class AppModule { }
 
 ## Run the application
 
-Now, use the `npm start` command to run the application in the browser.
+Use the `npm start` command to run the application in the browser.
 
 ```html
 npm start
@@ -228,4 +228,4 @@ The following example demonstrates a basic DashboardLayout by adding the panels 
   
 {% previewsample "page.domainurl/samples/dashboard-layout/getting-started-cs2" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.
+> Refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material3/dashboard-layout/default) to learn how to present and manipulate data.

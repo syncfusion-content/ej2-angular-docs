@@ -77,7 +77,7 @@ Follow the steps below to set up the MongoDB database for the application:
 To create a new Angular application, use Angular CLI — it provides a modern, optimized build system with faster builds, hot reload (HMR), and an improved developer experience.
 
 {% tabs %}
-{% highlight bash tabtitle="NPM" %}
+{% highlight bash tabtitle="CMD" %}
 
 ng new angular-app   
 cd angular-app
@@ -89,7 +89,7 @@ The Angular application is now created with default settings.
 Next, we will proceed with integrating Syncfusion® Angular Scheduler component into the project after setting up the server.
 
 ## Create a Server Application
-### Step 1: Install required libraries:
+### Step 1: Install required libraries
 To set up the backend for the application, Install the required packages and make a new directory for server in the Angular project folder itself.
 
 {% tabs %}
@@ -112,8 +112,8 @@ mkdir server
 {% endhighlight %}
 {% endtabs %}
 
-### Step 2: Create a file **server.js**:
-Create a new file named `server.js` inside the directory `server` created above and add the following code to set up the server.   
+### Step 2: Create a file server.js
+Create a new file named `server.js` inside the directory `server` created above and add the following code to set up the server.
     
 {% tabs %}
 {% highlight js tabtitle="server.js" %}
@@ -206,7 +206,7 @@ app.listen(PORT, () => {
 
 Here database name is `mydb` and collection name is `ScheduleData`, both were previously created during the database setup process.
     
-### Step 3: Add **server script** to `package.json`:
+### Step 3: Add server script to package.json
 To enable running the Node.js backend directly from the Angular project’s root, add the following script inside your root `package.json` under the "scripts" section.
 
 {% tabs %}
@@ -222,7 +222,7 @@ To enable running the Node.js backend directly from the Angular project’s root
 ## Integrating Syncfusion Angular Scheduler
 This section integrates [Syncfusion Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) to the above created application.
 
-### Step 1: Install required libraries:
+### Step 1: Install required libraries
 Install the required [Syncfusion Angular Scheduler package](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule) by the following command.
     
 {% tabs %}
@@ -233,7 +233,7 @@ npm install @syncfusion/ej2-angular-schedule
 {% endhighlight %}
 {% endtabs %}
 
-### Step 2: Add CSS references:
+### Step 2: Add CSS references
 Add CSS references for the Schedule in `src/styles.css`.
 
 {% tabs %}
@@ -252,7 +252,7 @@ Add CSS references for the Schedule in `src/styles.css`.
 {% endhighlight %}
 {% endtabs %}
 
-### Step 3: Add the Schedule component:
+### Step 3: Add the Schedule component
 In the `src/app/app.ts` file, use the following code snippet to render the Syncfusion Angular Schedule component.
 
 {% tabs %}
@@ -285,7 +285,7 @@ Create a template for the component in `src/app/app.html` and make reference in 
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Perform CRUD operations using Syncfusion's DataManager URL Adaptor:
+### Step 4: Perform CRUD operations using Syncfusion's DataManager URL Adaptor
 This connects the scheduler to your backend through REST endpoints and enables create, read, update, and delete from the UI.
 
 {% tabs %}
@@ -338,7 +338,7 @@ Modify the template of the component to perform CRUD operations.
 * The server processes these operations and returns updated event data, allowing the Scheduler to stay perfectly in sync with the backend.
 
 ## Run the Application
-### Step 1: Start the Backend Server:
+### Step 1: Start the backend server
 From the project directory `angular-app/`, start the backend server.
 
 {% tabs %}
@@ -349,10 +349,9 @@ npm run server
 {% endhighlight %}
 {% endtabs %}
 
-Once started, the Node.js backend will be available at:
-http://localhost:5000/
+Once started, the Node.js backend will be available at: `http://localhost:5000/`
 
-### Step 2: Start the Angular Application:
+### Step 2: Start the Angular application
 Open a new terminal window from the same `angular-app/` directory and run the Angular application.
     
 {% tabs %}
@@ -363,8 +362,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-After the build completes, the Angular application will run at:
-http://localhost:4200/
+After the build completes, the Angular application will run at: `http://localhost:4200/`
 
 You can now create, read, update, and delete events directly in the **Syncfusion Angular Scheduler**.
 All changes will be reflected in the connected **MongoDB** database in real time.
