@@ -1,29 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
-
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, ToolbarService, PdfExportService ,GridComponent, ToolbarItems,PageService} from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService],
+imports: [GridModule],
+providers: [PdfExportService, ToolbarService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
     <ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true'
-    [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' [allowExcelExport]='true'
+    [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true'
     (pdfExportComplete)='pdfExportComplete()' (toolbarClick)='toolbarClick($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>

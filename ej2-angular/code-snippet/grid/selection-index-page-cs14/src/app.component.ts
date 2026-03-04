@@ -19,15 +19,15 @@ providers: [EditService, ToolbarService, PageService, FilterService, SelectionSe
 standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
-               <label style="padding: 30px 20px 0 0" > Select Row :</label>
-               <ejs-dropdownlist id='value' style="padding: 26px 0 0 0" #sample index='0' 
+               <label style="padding: 5px 5px 0 0" > Select Row :</label>
+               <ejs-dropdownlist id='value' #sample index='0' 
                width='220' [dataSource]='ddlData' (change)='valueChange($event)' >
                </ejs-dropdownlist>
               </div>
-              <div style="padding: 20px 17px 0 0">
+              <div style="padding: 5px 5px 0 0">
                   <ejs-grid #grid [dataSource]='data' 
                   (actionComplete)='actioncomplete($event)' allowPaging='true' 
-                  height=365 [pageSettings]='initialPage'>
+                  height=250 [pageSettings]='initialPage'>
                       <e-columns>
                           <e-column field='OrderID' headerText='Order ID' width='120' 
                           textAlign='Right'></e-column>

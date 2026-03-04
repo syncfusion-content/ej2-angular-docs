@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Avatar customization in Angular Avatar component
 
-The Angular Avatar component offers extensive customization options including colors, sizes, and media formats. This section demonstrates how to modify the avatar's appearance to match specific design requirements and integrate various content types.
+The Angular Avatar component provides extensive customization capabilities for colors, sizes, shapes, and media formats. This section demonstrates how to modify the avatar's appearance to match specific design requirements and integrate various content types.
 
 ## Color customization
 
-The avatar displays with a default grey background color. Customize this to any desired color by adding a custom CSS class or directly targeting the avatar class in the stylesheet.
+The avatar displays with a default grey background color. This can be customized to any desired color by adding a custom CSS class or directly targeting the avatar class in the stylesheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The avatar displays with a default grey background color. Customize this to any 
 
 ## Customize avatar sizes
 
-Although the avatar comes with five predefined sizes, sometimes these are not sufficient. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
+The avatar component includes five predefined size classes. For sizes beyond these predefined options, the avatar is designed with width and height relative to font-size. Changing the `font-size` of the avatar element automatically adjusts its width and height proportionally.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ Although the avatar comes with five predefined sizes, sometimes these are not su
 
 ## Using various media formats
 
-Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words, etc. Some of them are given below.
+Avatars support a wide variety of media formats including SVG, font icons, images, letters, and words. The following example demonstrates these different content types.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,8 +74,7 @@ Avatars can be used with a wide variety of media formats like SVG, font-icons, i
 
 ## Dynamic avatar rendering from data source
 
-We can render avatar component dynamically from a data-source. In this sample we have rendered the avatar component using a data-source which contains the image source in different sizes dynamically. This is applicable also for data-source from the server or remote data or AJAX. We have also rendered the avatar using `CSS` property
-`background-image` and using image tag.
+Avatar components can be rendered dynamically from a data source. The following example demonstrates rendering avatars using a data source that contains image sources in different sizes. This approach is applicable to data sources from servers, remote endpoints, or AJAX calls. The example also demonstrates rendering avatars using the CSS `background-image` property and using image tags.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

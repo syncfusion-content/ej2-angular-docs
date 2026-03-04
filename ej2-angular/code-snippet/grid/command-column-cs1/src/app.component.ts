@@ -1,19 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { CommandModel, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule, CommonModule ],
 providers: [EditService, CommandColumnService],
 standalone: true,
     selector: 'app-root',

@@ -8,15 +8,11 @@ import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule],
 providers: [PdfExportService, ToolbarService,AggregateService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='245px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

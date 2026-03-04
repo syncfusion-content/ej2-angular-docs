@@ -30,7 +30,7 @@ providers: [EditService, ToolbarService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' 
-               [toolbar]='toolbar' height='315px'>
+               [toolbar]='toolbar' height='250px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
                     isPrimaryKey='true' [validationRules]='orderIDRules' width=100>

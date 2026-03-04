@@ -14,7 +14,7 @@ import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
       <div class="control-section">
         <ejs-grid #grid [dataSource]="data" [showColumnChooser]='true' [allowMultiSorting]='true' [columnChooserSettings]='columnChooserSettings' [toolbar]='toolbar'>
           <e-columns>
-            <e-column field='CustomerID' headerText='Customer ID' width='160' textAlign="Right" minWidth=20  isPrimaryKey='true' [showInColumnChooser]='false'></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width='160' height='250' textAlign="Right" minWidth=20  isPrimaryKey='true' [showInColumnChooser]='false'></e-column>
             <e-column field='CustomerName' headerText='Name' width='100'></e-column>
             <e-column headerText='Order Details' [columns]='orderColumns' textAlign="Center"></e-column>
             <e-column headerText='Shipping Details' [columns]='shipColumns' textAlign="Center"></e-column>

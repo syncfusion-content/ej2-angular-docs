@@ -38,8 +38,8 @@ standalone: true,
             [dataSource]="positionData" (change)="changePosition($event)">
             </ejs-dropdownlist>
         </div>
-        <div style="padding-top:20px">
-            <ejs-grid #batchgrid id='Batchgrid' [dataSource]='data' allowPaging='true' [editSettings]="editSettings" [pageSettings]='pageSettings' [toolbar]='toolbar' >
+        <div>
+            <ejs-grid #batchgrid id='Batchgrid' [dataSource]='data' allowPaging='true' [editSettings]="editSettings" [pageSettings]='pageSettings' [toolbar]='toolbar' height='185'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width='120' [validationRules]='customerIDRules'></e-column>

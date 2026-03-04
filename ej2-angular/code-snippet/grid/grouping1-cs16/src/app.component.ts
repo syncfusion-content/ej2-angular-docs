@@ -17,7 +17,7 @@ standalone: true,
       </label>
       <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
     </div>
-    <ejs-grid #grid style="padding: 10px 10px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
+    <ejs-grid #grid style="padding: 10px 10px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='250px'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

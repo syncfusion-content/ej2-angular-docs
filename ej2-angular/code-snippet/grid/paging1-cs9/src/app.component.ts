@@ -48,7 +48,7 @@ imports: [
 providers: [PageService, ToolbarService, EditService, VirtualScrollService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height=300 [enableColumnVirtualization]=true
+    template: `<ejs-grid [dataSource]='data' height='290px' [enableColumnVirtualization]=true
                 [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
                     <e-column field='SNo' headerText='S.No' width=140 isPrimaryKey='true' [validationRules]='rules'></e-column>

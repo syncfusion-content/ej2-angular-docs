@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Splitter component
 
-The Angular Splitter component adheres to major accessibility standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [ARIA roles](https://www.w3.org/TR/wai-aria/#roles), ensuring inclusive user experiences across platforms.
+The Angular Splitter component implements and complies with major accessibility standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [ARIA roles](https://www.w3.org/TR/wai-aria#roles), ensuring inclusive user experiences across platforms.
 
 ## Accessibility compliance overview
 
@@ -54,9 +54,9 @@ Use the following keyboard shortcuts to navigate and interact with the Splitter 
 
 ## Ensuring accessibility
 
-The Splitter component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Splitter component has been validated for accessibility compliance using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Splitter component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/splitter.html) in a new window to evaluate the accessibility of the Splitter component with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Splitter component. Open the [sample](https://ej2.syncfusion.com/accessibility/splitter.html) in a new window to evaluate the accessibility of the Splitter component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/splitter.html" %}
 

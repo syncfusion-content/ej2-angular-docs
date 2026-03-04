@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService,FilterSettingsModel, IFilter, Filter,Column} from '@syncfusion/ej2-angular-grids'
+import { GridModule, FilterService, PageService,FilterSettingsModel, IFilter, IFilterCreate, IFilterWrite, IFilterRead } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule,DropDownList } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -34,29 +34,39 @@ export class AppComponent implements OnInit {
             type: 'Menu'
         };
         this.filter = {
-            ui: {
-                create: (args: { target: Element, column: object }) => {
-                    const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                    args.target.appendChild(flValInput);
-                    this.dropInstance = new DropDownList({
-                        dataSource: new DataManager(data),
-                        fields: { text: 'CustomerID', value: 'CustomerID' },
-                        placeholder: 'Select a value',
-                        popupHeight: '200px'
-                    });
-                    (this.dropInstance as DropDownList).appendTo(flValInput);
-                },
-                write: (args: {
-                    column: object, target: Element,
-                    filteredValue: string
-                }) => {
-                    (this.dropInstance as DropDownList).value = (args).filteredValue as string;
-                },
-                read: (args: { target: Element, column: Column, operator: string, fltrObj: Filter }) => {
-                    args.fltrObj.filterByColumn(args.column.field, args.operator, ((this.dropInstance as DropDownList).value as string));
+      ui: {
+        create: (args: IFilterCreate): void => {
+          const flValInput: HTMLElement = createElement('input', {
+            className: 'flm-input',
+          });
+        
 
-                }
-            }
-        };
+          const target = (args.target ?? undefined) as HTMLElement | undefined;
+          if (!target) {
+            return;
+          }
+          this.dropInstance = new DropDownList({
+            dataSource: new DataManager(data),
+            fields: { text: 'CustomerID', value: 'CustomerID' },
+            placeholder: 'Select a value',
+            popupHeight: '200px',
+          });
+          (this.dropInstance as DropDownList).appendTo(flValInput);
+        },
+        write: (args: IFilterWrite): void => {
+          (this.dropInstance as DropDownList).value =
+            args.filteredValue as string;
+        },
+
+        read: (args: IFilterRead): void => {
+          const field = args.column?.field ?? '';
+          const operator = args.operator ?? 'equal';
+          const value = (this.dropInstance?.value ?? '') as string;
+
+          if (!field || !args.fltrObj) return;
+          args.fltrObj.filterByColumn(field, operator, value);
+        },
+      },
+    };
     }
 }

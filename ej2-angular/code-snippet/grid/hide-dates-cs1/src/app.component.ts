@@ -30,7 +30,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="315px"   (actionBegin)='actionBegin($event)'>
+        <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="250px"   (actionBegin)='actionBegin($event)'>
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120" [validationRules]='orderIDRules'></e-column>
             <e-column field="CustomerID" headerText="Customer Name" width="120" [validationRules]='customerIDRules'></e-column>

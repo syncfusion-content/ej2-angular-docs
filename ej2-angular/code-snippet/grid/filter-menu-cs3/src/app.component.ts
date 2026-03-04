@@ -27,6 +27,7 @@ standalone: true,
     [pageSettings]="pageSettings"
     [filterSettings]="filterSettings"
     (actionComplete)="actionComplete($event)"
+    height='273px'
   >
   <e-columns>
       <e-column

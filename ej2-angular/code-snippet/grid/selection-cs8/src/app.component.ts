@@ -19,11 +19,11 @@ providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
   selector: 'app-root',
   template: ` 
-        <div style="padding: 10px 0px 20px 0px">
+        <div style="padding: 5px 0px 5px 0px">
           <button ejs-button class="btn" (click)="click()">Get selected row indexes</button>
         </div>
         <p id="message" *ngIf="showMessage">Selected row indexes: {{ selectedRowIndexes }}</p>
-        <ejs-grid #grid [dataSource]="data" height="315px" 
+        <ejs-grid #grid [dataSource]="data" height="300px" 
         [selectionSettings]="selectionOptions">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" 

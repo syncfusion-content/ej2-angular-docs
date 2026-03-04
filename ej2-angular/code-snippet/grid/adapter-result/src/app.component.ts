@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
+import { CommonModule } from '@angular/common';
 
 const SERVICE_URI: string = 'https://ej2services.syncfusion.com/production/web-services/';
 
@@ -15,7 +16,7 @@ interface Order {
 }
 
 @Component({
-    imports: [ GridModule],
+    imports: [ GridModule, CommonModule ],
     providers: [PageService],
     standalone: true,
     selector: 'app-root',
@@ -37,7 +38,7 @@ interface Order {
 
 export class AppComponent implements OnInit {
     public statusMessage: string = '';
-    public getData: DataManager;
+    public getData!: DataManager;
     public result: Order[] = [];
 
     public ngOnInit(): void {

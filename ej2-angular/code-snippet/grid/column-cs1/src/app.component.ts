@@ -3,24 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ColumnModel, TextAlign } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
+imports: [GridModule, ButtonModule ],
+providers: [PageService, SortService, FilterService, GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id="btnId" cssClass="e-info" (click)='updateColumns()'> Update Columns </button>
@@ -40,15 +29,17 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
     }
-    updateColumns(): void {
-      // Modifying column properties
-      (this.grid as GridComponent).columns[0].textAlign = 'Center';
-      (this.grid as GridComponent).columns[0].width = '100';
-      (this.grid as GridComponent).columns[2].visible = false;
-      (this.grid as GridComponent).columns[1].customAttributes = { class: 'customcss' };
-      // Applying changes to the grid
-      (this.grid as GridComponent).refreshColumns();
-    }
+    
+     updateColumns(): void {
+        const grid = this.grid!;
+        const cols = grid.getColumns() as ColumnModel[];
+        cols[0].textAlign = 'Center' as TextAlign; // Center/Left/Right/Justify
+        cols[0].width = 100; // width is number, not string
+        cols[2].visible = false;
+        cols[1].customAttributes = { class: 'customcss' };
+
+        grid.refreshColumns();
+     }
 }
 
 

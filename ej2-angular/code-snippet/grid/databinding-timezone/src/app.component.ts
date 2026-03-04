@@ -21,7 +21,7 @@ let hostUrl: string = 'https://services.syncfusion.com/js/production/api/orders'
         <div style="margin-bottom: 20px;">
             <ejs-checkbox #timezoneCheckbox label="Prevent Timezone Conversion"  (change)="onCheckboxChange($event)"></ejs-checkbox>
         </div>
-        <ejs-grid #grid [dataSource]='data' height='315px' (load)="onLoad()">
+        <ejs-grid #grid [dataSource]='data' height='250px' (load)="onLoad()">
           <e-columns>
               <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
               <e-column field='CustomerID' headerText='Customer ID' width=140></e-column>

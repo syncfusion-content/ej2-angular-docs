@@ -12,13 +12,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
     standalone: true,
     selector: 'app-root',
     template: `
-            <div style="padding: 0px 0 20px 0">
+            <div style="padding: 0px 0 5px 0">
             <label style="padding: 30px 17px 0 0">Enter file name: </label>
             <ejs-textbox #textbox placeholder="Enter file name" width="120">
             </ejs-textbox>
             </div>
             <ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true' 
-            [toolbar]='toolbarOptions' height='220px' [allowPaging]='true' 
+            [toolbar]='toolbarOptions' height='200px' [allowPaging]='true' 
             [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 

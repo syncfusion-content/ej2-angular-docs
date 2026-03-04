@@ -139,7 +139,7 @@ Alternatively, import the styles directly relative to the **node_modules** folde
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
 ```
 
->Note: To use combined component styles, refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) for your application.
+>Note: To use combined component styles, refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) for your application.
 
 ## Adding Avatar to the application
 

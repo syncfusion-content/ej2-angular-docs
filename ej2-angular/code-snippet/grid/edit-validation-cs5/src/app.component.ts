@@ -11,7 +11,7 @@ import { data } from './datasource';
     template: `
         <div class="control-section">
         <div class="col-lg-9">
-            <ejs-grid #normalgrid id='Normalgrid' [dataSource]='data' allowPaging='true' (actionComplete)="onActionComplete($event)" [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'  (actionComplete)='onActionComplete($event)'>
+            <ejs-grid #normalgrid id='Normalgrid' height='220px' [dataSource]='data' allowPaging='true' (actionComplete)="onActionComplete($event)" [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'  (actionComplete)='onActionComplete($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width='140' [validationRules]='customerIDRules'></e-column>

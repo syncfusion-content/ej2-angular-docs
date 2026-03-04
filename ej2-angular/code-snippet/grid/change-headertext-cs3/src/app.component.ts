@@ -1,21 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
-
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-,
+imports: [GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<button ej-button class='e-flat' (click)='add()'> Add </button>

@@ -11,7 +11,7 @@ import { ActionEventArgs, GridComponent, ToolbarItems } from '@syncfusion/ej2-an
   standalone: true,
   selector: 'app-root',
   template: `
-    <ejs-grid #grid [dataSource]="data" height="350px" [allowPaging]="true"
+    <ejs-grid #grid [dataSource]="data" height="245px" [allowPaging]="true"
     [toolbar]="toolbarItems" (actionComplete)="onActionComplete($event)" [showColumnChooser]= 'true'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>

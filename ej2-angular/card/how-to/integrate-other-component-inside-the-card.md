@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate other component inside the card in Angular Card component
 
-The Card component provides a flexible container that can host any other component within its content area. This approach enables rich, interactive interfaces by combining the structured layout benefits of cards with the functionality of other components. Here, the ListView component is integrated inside the card to create an organized To-Do list interface, demonstrating how cards can enhance content presentation and user experience.
+The Card component provides a flexible container that can host any other component within its content area. This approach enables rich, interactive interfaces by combining the structured layout benefits of cards with the functionality of other components. The example demonstrates integrating a ListView component inside a card to create a To-Do list interface.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

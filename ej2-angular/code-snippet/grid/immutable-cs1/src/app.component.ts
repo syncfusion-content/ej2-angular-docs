@@ -39,7 +39,7 @@ standalone: true,
       <button style="margin-left: 20px" #addbottom ejs-button class="e-control e-btn e-lib e-info" (click)="updateEvent()">Update Freight Data</button>
       <div id="message"> {{ message }}</div>
       <div  style="padding-top: 20px">
-        <ejs-grid #immutable [dataSource]='rowData' [enableHover]="false" height='350' [enableImmutableMode]="true" allowPaging="true" [selectionSettings]="selectionOptions"
+        <ejs-grid #immutable [dataSource]='rowData' [enableHover]="false" height='220' [enableImmutableMode]="true" allowPaging="true" [selectionSettings]="selectionOptions"
           [pageSettings]="pageSettings"  (rowDataBound)="rowDataBound($event)" (queryCellInfo)="queryCellInfo($event)">
           <e-columns>
             <e-column field='OrderID' headerText='Order ID' isPrimaryKey="true" width='120'
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
   public rowData?: DataType[];
   @ViewChild("immutable")
   public immutablegrid?: GridComponent;
-  public intervalId: NodeJS.Timeout;
+  public intervalId?: number;
   public selectionOptions?: SelectionSettingsModel;
   public message: string = '';
 

@@ -1,22 +1,16 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
-    GridComponent, ToolbarItems, ToolbarService, ExcelExportService, PdfExportService,
+    GridComponent, ToolbarItems, ToolbarService, ExcelExportService, PdfExportService,GridModule,
     ExcelExportCompleteArgs, PdfExportCompleteArgs
 } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService],
+imports: [ GridModule ],
+providers: [PdfExportService, ToolbarService,ExcelExportService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowExcelExport]='true'
@@ -28,7 +22,6 @@ standalone: true,
                     <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [ToolbarService, ExcelExportService, PdfExportService]
 })
 export class AppComponent implements OnInit {
 

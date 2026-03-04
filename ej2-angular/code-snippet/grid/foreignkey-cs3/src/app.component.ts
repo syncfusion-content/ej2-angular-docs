@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
+import { GridModule, IFilterCreate, IFilterWrite } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { GridComponent, ForeignKeyService, FilterService, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
@@ -11,10 +9,7 @@ import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns
 import { data, fEmployeeData } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule ],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='260' [allowFiltering]='true'>
@@ -34,10 +29,10 @@ export class AppComponent implements OnInit {
     public grid?: GridComponent;
     public employeeData?: object[];
     public filter: IFilterUI = {
-        create: (args: { element: Element, column: Column }) => {
-            return createElement('input', { className: 'flm-input' });
+        create: (args: IFilterCreate): HTMLElement => {
+              return createElement('input', { className: 'flm-input' });
         },
-        write: (args: { element: Element, column: Column }) => {
+        write: (args: IFilterWrite): void => {
             fEmployeeData.splice(0, 0, { FirstName: 'All' }); // for clear filtering
             const dropInstance: DropDownList = new DropDownList({
                 dataSource: new DataManager(fEmployeeData),
@@ -46,14 +41,15 @@ export class AppComponent implements OnInit {
                 popupHeight: '200px',
                 index: 0,
                 change: (e: ChangeEventArgs) => {
-                    if (e.value !== 'All') {
-                        (this.grid as GridComponent).filterByColumn('EmployeeID', 'equal', e.value);
+                    if (e.value !== 'All' && e.value != null) {
+                        const filterValue: string = String(e.value);
+                        (this.grid as GridComponent).filterByColumn('EmployeeID', 'equal', filterValue);
                     } else {
                         (this.grid as GridComponent).removeFilteredColsByField('EmployeeID');
                     }
                 }
             });
-            dropInstance.appendTo(args.element as HTMLTableCellElement);
+            dropInstance.appendTo((args as any).element as HTMLTableCellElement);
         }
     };
     ngOnInit(): void {

@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, SortService, PageService } from '@syncfusion/ej2-angular-grids';
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, ViewChild } from '@angular/core';
 import { columnDataType, data, employeeData } from './datasource';
 import { GridComponent, EditService, ToolbarService, ToolbarItems, EditSettingsModel, ForeignKeyService, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -51,7 +50,6 @@ standalone: true,
                 <e-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit"></e-column>
             </e-columns>
             </ejs-grid>`,
-    providers: [EditService, ToolbarService, ForeignKeyService],
 })
 export class AppComponent {
 

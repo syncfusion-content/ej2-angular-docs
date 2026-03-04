@@ -12,7 +12,7 @@ providers: [ PdfExportService, ToolbarService],
 standalone: true,
     selector: 'app-root',
     template: `
-      <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' (pdfExportComplete)='pdfExportComplete()' (toolbarClick)='toolbarClick($event)'>
+      <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='250px' [allowPdfExport]='true' (pdfExportComplete)='pdfExportComplete()' (toolbarClick)='toolbarClick($event)'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
           <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=100></e-column>

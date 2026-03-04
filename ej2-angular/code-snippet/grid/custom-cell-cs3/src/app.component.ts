@@ -34,7 +34,7 @@ standalone: true,
     </label>
     <ejs-switch id="switch" (change)="change($event)"></ejs-switch>
     </div>
-    <ejs-grid #grid [dataSource]='data' [height]='315' style="padding: 10px 10px">
+    <ejs-grid #grid [dataSource]='data' [height]='300' style="padding: 5px 5px">
         <e-columns>
             <e-column field='OrderID' headerText= 'Order ID' textAlign='Right' width=140></e-column>
             <e-column field='CustomerID' headerText="<strong> Customer ID </strong>" width=120></e-column>

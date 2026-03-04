@@ -10,10 +10,7 @@ import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule ],
 
 providers: [PageService,
                 SortService,

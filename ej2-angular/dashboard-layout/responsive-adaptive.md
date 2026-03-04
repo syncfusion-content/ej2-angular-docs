@@ -14,13 +14,13 @@ The Angular Dashboard Layout component provides built-in responsive support that
 
 ## Adaptive Layout Behavior
 
-The dashboard layout automatically transforms into a stacked layout when the screen resolution decreases. In a stacked layout, all panels are arranged vertically in a single column, ensuring optimal viewing on smaller screens. By default, this transformation occurs when the screen resolution reaches 600px or below.
+The dashboard layout automatically transforms into a stacked layout when the screen resolution decreases. In a stacked layout, all panels are arranged vertically in a single column, ensuring optimal viewing on smaller screens such as tablets and mobile devices. By default, this transformation occurs when the screen resolution reaches 600px or below.
 
 ## Customizing Responsive Breakpoints
 
-The default responsive breakpoint can be customized using the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#mediaquery) property. This property accepts a CSS media query string that defines when the layout should transform to its stacked state.
+The default responsive breakpoint can be customized using the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#mediaquery) property. This property accepts a CSS media query string that defines when the layout should transform to its stacked state.
 
-The following example demonstrates how to configure the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#mediaquery) property to trigger the stacked layout at 700px screen width:
+The following example demonstrates how to configure the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#mediaquery) property to trigger the stacked layout at 700px screen width:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,4 +38,4 @@ The following example demonstrates how to configure the [`mediaQuery`](https://e
   
 {% previewsample "page.domainurl/samples/dashboard-layout/responsive-adaptive-cs1" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.
+> Refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material3/dashboard-layout/default) to learn how to present and manipulate data.

@@ -34,7 +34,7 @@ standalone: true,
     </label>
     <ejs-switch id="switch" (change)="switchChange($event)"></ejs-switch>
     </div>
-    <ejs-grid  #grid style="padding: 10px 10px" [dataSource]='data' id="grid" allowPaging='true' height='265px'
+    <ejs-grid  #grid style="padding: 5px 5px" [dataSource]='data' id="grid" allowPaging='true' height='260px'
             [contextMenuItems]="contextMenuItems" [editSettings]='editing' >
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='90' textAlign="Right" isPrimaryKey='true'></e-column>

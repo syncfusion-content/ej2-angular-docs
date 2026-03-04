@@ -11,8 +11,7 @@ import { GridComponent, freezeDirection } from '@syncfusion/ej2-angular-grids'
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
+imports: [ 
         GridModule,
         ButtonModule,
         DropDownListAllModule
@@ -23,7 +22,7 @@ standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-    <label style="padding: 10px 10px 26px 0"> Change column: </label>
+    <label style="padding: 5px 5px 5px 0"> Change column: </label>
     <ejs-dropdownlist
       id="columnDropDown"
       #columnDropDown
@@ -32,7 +31,7 @@ standalone: true,
       [fields]="fields"
       width="100px"
     ></ejs-dropdownlist>
-    <label style="padding: 10px 10px 26px 0; margin-left:5px">
+    <label style="padding: 5px 5px 5px 0; margin-left:5px">
       Change freeze direction:
     </label>
     <ejs-dropdownlist
@@ -47,7 +46,7 @@ standalone: true,
         <button style="margin-left:5px" ejs-button (click)="freezeDirectionFn()">Update</button>
       </div>
     </div>
-    <ejs-grid #grid id='grid' style="padding: 5px 5px" [dataSource]='data' height='315' [enableHover]='false'>
+    <ejs-grid #grid id='grid' style="padding: 5px 5px" [dataSource]='data' height='290' [enableHover]='false'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' width='90' textAlign='Right'></e-column>
           <e-column field='Freight' headerText='Freight' width='90' format='C2' textAlign='Right' freeze='Fixed'></e-column>

@@ -24,7 +24,7 @@ L10n.load({
   selector: 'app-root',
   template: `
     <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" 
-        (toolbarClick)="toolbarClick($event)">
+        (toolbarClick)="toolbarClick($event)" height='250px'>
       <e-columns>
         <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>

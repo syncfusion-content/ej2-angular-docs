@@ -55,7 +55,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' 
-               [toolbar]='toolbar'(load)="load()" (actionBegin)="actionBegin($event)" >
+               [toolbar]='toolbar'(load)="load()" (actionBegin)="actionBegin($event)" height='273px'>
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right'
                      isPrimaryKey='true' width=120></e-column>

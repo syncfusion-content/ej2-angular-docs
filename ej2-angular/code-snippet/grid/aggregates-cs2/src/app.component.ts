@@ -6,13 +6,11 @@ import { AggregateService, GroupService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule, CommonModule],
 providers: [AggregateService, GroupService],
 standalone: true,
     selector: 'app-root',

@@ -17,17 +17,18 @@ export class OrdersService extends Subject<DataStateChangeEventArgs> {
     const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
     let sortQuery: string = '';
     let filterQuery = '';
-    if (state.sorted && state.sorted.length) {
-      sortQuery =
-        `&$orderby=` +
-        state.sorted
-          .map((obj: Sorts) => {
-            return obj.direction.toLowerCase() === 'descending'
-              ? `${obj.name} desc`
-              : obj.name;
-          })
-          .reverse()
-          .join(',');
+     if (state.sorted && state.sorted.length) {
+      const sorts = state.sorted as Sorts[];
+
+      const orderby = sorts
+        .map((obj) => {
+          const direction = (obj.direction ?? 'Ascending').toLowerCase();
+          return direction === 'descending' ? `${obj.name} desc` : obj.name;
+        })
+        .reverse()
+        .join(',');
+
+      sortQuery = `&$orderby=${orderby}`;
     }
     if (state.where) {
       filterQuery =

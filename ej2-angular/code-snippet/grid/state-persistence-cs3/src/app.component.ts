@@ -1,20 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
 import { enableVersionBasedPersistence } from '@syncfusion/ej2-base';
+import { CommonModule } from '@angular/common';
 
 enableVersionBasedPersistence(true);
 
 @Component({
 imports: [
-        
+        CommonModule,
         GridModule,
         ButtonModule
     ],
@@ -24,7 +21,7 @@ standalone: true,
     template: `<h4 id='message'>{{message}}</h4>
     <button ejs-button *ngFor="let v of versions" [id]="'restore' + v" (click)="clickHandler('v.' + v)">Version {{ v }}</button>
                <ejs-grid #grid id="OrderDetails" [dataSource]='data' [enablePersistence]='true' [ej2StatePersistenceVersion]='gridversion' 
-               [allowPaging]='true' [allowFiltering]='true' [allowReordering]='true' [allowSorting]='true' [allowGrouping]='true' height='210px'>
+               [allowPaging]='true' [allowFiltering]='true' [allowReordering]='true' [allowSorting]='true' [allowGrouping]='true' height='160px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>

@@ -28,7 +28,7 @@ import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, 
   standalone: true,
   selector: 'app-root',
   template: `
-    <ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
+    <ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='220px'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true'  width=100></e-column>
         <e-column field='CustomerID' headerText='Customer ID' type= 'string' [edit]='daParams' width=140></e-column>

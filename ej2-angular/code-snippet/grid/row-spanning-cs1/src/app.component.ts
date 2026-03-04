@@ -10,7 +10,7 @@ import { telecastData } from './datasource';
   imports: [GridModule],
   providers: [FreezeService, SortService],
   template: `
-    <ejs-grid #grid [dataSource]="telecastData" gridLines="Both" [enableHover]="false" [allowSelection]="false" [allowSorting]="true" [enableRowSpan]="true" [allowTextWrap]="true" [textWrapSettings]="{ wrapMode: 'Content' }" height="450" width="auto">
+    <ejs-grid #grid [dataSource]="telecastData" gridLines="Both" [enableHover]="false" [allowSelection]="false" [allowSorting]="true" [enableRowSpan]="true" [allowTextWrap]="true" [textWrapSettings]="{ wrapMode: 'Content' }" height="335" width="auto">
       <e-columns>
         <e-column field="Channel" headerText="Channel" width="150" freeze="Left" isPrimaryKey="true"></e-column>
         <e-column field="Genre" headerText="Genre" width="120" freeze="Left"></e-column>

@@ -10,12 +10,7 @@ import { Sparkline } from '@syncfusion/ej2-angular-charts';
 import { GridComponent,} from '@syncfusion/ej2-angular-grids'
 
 @Component({
-imports: [
-        
-        GridModule,
-        SparklineAllModule
-    ],
-
+imports: [ GridModule, SparklineAllModule ],
 providers: [PageService,
                 SortService,
                 FilterService,

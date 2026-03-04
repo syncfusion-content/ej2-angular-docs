@@ -10,17 +10,14 @@ import { GridComponent, GroupSettingsModel, ExportGroupCaptionEventArgs } from '
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [GridModule],
 
 providers: [GroupService, ToolbarService, PdfExportService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id="CaptionTemplateGrid" [dataSource]="data" [allowGrouping]="true" [groupSettings]="groupOptions"
                [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" [allowPdfExport]="true"
-               (exportGroupCaption)="exportGroupCaption($event)" height='273px'>
+               (exportGroupCaption)="exportGroupCaption($event)" height='245px'>
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' width='140'></e-column>
                     <e-column field='FirstName' headerText='First Name' width='120'></e-column>

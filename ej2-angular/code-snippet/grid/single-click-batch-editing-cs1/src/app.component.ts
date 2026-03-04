@@ -11,7 +11,7 @@ import { data } from './datasource';
     standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load()'>
+        <ejs-grid #grid [dataSource]='data' height='220px' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load()'>
             <e-columns>
                 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100 isPrimaryKey='true'></e-column>
                 <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

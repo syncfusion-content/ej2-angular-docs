@@ -19,7 +19,7 @@ During resizing, the adjacent panes automatically adjust their dimensions to acc
 
 ## Minimum and Maximum size constraints
 
-You can define minimum and maximum sizes for each pane. Resizing is restricted within these boundaries to maintain layout integrity.
+Minimum and maximum size boundaries can be defined for each pane. Resizing is restricted within these boundaries to maintain layout integrity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +35,7 @@ You can define minimum and maximum sizes for each pane. Resizing is restricted w
 
 ## Disabling pane resizing
 
-You can disable the resizing for the pane by setting `false` to the [resizable](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#resizable) property within paneSettings.
+Resizing can be disabled for individual panes by setting `false` to the [resizable](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#resizable) property within paneSettings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,15 +53,15 @@ You can disable the resizing for the pane by setting `false` to the [resizable](
 
 ## Refreshing content during resize
 
-You can refresh pane content dynamically during resizing by using the following events:
+Pane content can be refreshed dynamically during resizing by using the following events:
 
-- [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart)
-- [`resizing`](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizing)
-- [`resizeStop`](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestop)
+- [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/splitter#resizestart)
+- [`resizing`](https://ej2.syncfusion.com/angular/documentation/api/splitter#resizing)
+- [`resizeStop`](https://ej2.syncfusion.com/angular/documentation/api/splitter#resizestop)
 
 ## Customizing Resize-gripper and Cursor
 
-You can style the resize gripper icon and cursor using CSS to match your application's design.
+The resize gripper icon and cursor can be customized using CSS to match application design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

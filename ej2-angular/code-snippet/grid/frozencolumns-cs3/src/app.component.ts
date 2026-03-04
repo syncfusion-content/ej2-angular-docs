@@ -12,7 +12,6 @@ import { data } from './datasource';
 
 @Component({
 imports: [
-        
         GridModule,
         DropDownListAllModule,
         ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule
@@ -23,9 +22,8 @@ standalone: true,
   selector: 'app-root',
   template: `
     <div style="display:flex;">
-    <label style="padding: 10px 10px 26px 0">Change the frozen column: </label>
+    <label style="padding: 5px 5px 5px 0">Change the frozen column: </label>
     <ejs-dropdownlist
-      style="margin-top:5px"
       id="dropdown"
       #dropdown
       index="0"
@@ -36,7 +34,7 @@ standalone: true,
       width="100px"
     ></ejs-dropdownlist>
   </div>  
-  <ejs-grid #grid id="grid" style="padding: 5px 5px" [dataSource]='data' height=315 [allowSelection]='false'  [enableHover]='false'>
+  <ejs-grid #grid id="grid" style="padding: 5px 5px" [dataSource]='data' height=290 [allowSelection]='false'  [enableHover]='false'>
     <e-columns>
       <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
       <e-column field='CustomerID' headerText='Customer ID' width=100 [isFrozen]="true"></e-column>

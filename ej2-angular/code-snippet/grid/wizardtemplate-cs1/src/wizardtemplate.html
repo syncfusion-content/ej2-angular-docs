@@ -1,5 +1,5 @@
 <ejs-grid #grid [dataSource]="data" allowPaging="true" [editSettings]="editSettings" [toolbar]="toolbar"
-  (actionComplete)="actionComplete($event)">
+  (actionComplete)="actionComplete($event)" height='273px'>
   <e-columns>
     <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-column>
     <e-column field="CustomerID" headerText="Customer Name" width="120"></e-column>

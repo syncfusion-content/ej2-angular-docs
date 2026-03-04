@@ -11,7 +11,7 @@ imports: [GridModule],
 providers: [PdfExportService, ToolbarService, GroupService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' 
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='245px' [allowPdfExport]='true' 
     [allowGrouping]='true' [groupSettings]='groupOptions' (toolbarClick)='toolbarClick($event)'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>

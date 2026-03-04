@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Images
 
-The Card component supports including images within its elements. You can add an image as a direct element anywhere inside the card root by adding the `e-card-image` class to a `div` element. Using this class, you can write CSS styles to load images into that element.
+The Card component supports including images within its elements. Images are added by applying the `e-card-image` class to a `div` element anywhere inside the card root. Using this class, write CSS styles to load images into that element.
 
 > By default, card images occupy the full width of their parent element.
 
@@ -49,7 +49,7 @@ Card images support including a title or caption for the image. By default, the 
 
 ## Divider
 
-Dividers are used to separate elements inside the card. You can add a divider inside the card elements to create visual separation between different sections.
+Dividers provide visual separation between different sections within the card. Add a divider inside the card elements to create visual separation between different sections.
 
 * Place a `div` element with the `e-card-separator` class inside the card element to add a divider.
 

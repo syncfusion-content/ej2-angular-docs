@@ -21,15 +21,15 @@ standalone: true,
   selector: 'app-root',
   template: `
               <div style="display: flex ">
-                <label style="padding: 30px 17px 0 0" >Choose checkbox selection mode:
+                <label style="padding: 5px 5px 0 0" >Choose checkbox selection mode:
                 </label>
-                <ejs-dropdownlist style="padding: 26px 0 0 0" index="0" width="150" 
+                <ejs-dropdownlist index="0" width="150" 
                 [dataSource]=" dropdownData" (change)="valueChange($event)">
                 </ejs-dropdownlist>
               </div>
-            <div style="padding: 20px 0px 0px 0px">
+            <div style="padding: 5px 0px 0px 0px">
                 <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionOptions' 
-                height='315px'>
+                height='295px'>
                     <e-columns>
                         <e-column type='checkbox' width='50'></e-column>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' 

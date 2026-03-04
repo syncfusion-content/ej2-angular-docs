@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate avatar into badge in Angular Avatar component
 
-The badge component serves as a dependent and supportive element that can be integrated with avatars to create notification avatars. This combination displays user profiles alongside status indicators, message counts, or alert notifications.
+The Badge component can be integrated with the Avatar component to create notification avatars that display user profiles alongside visual indicators. This combination is ideal for showing status notifications, message counts, status indicators, or alert notifications.
 
 ## Implementation
 The default avatar (`e-avatar`) and circle avatar (`e-avatar-circle`) classes work seamlessly with notification badges (`e-badge-notification`) to create these enhanced user interface elements.

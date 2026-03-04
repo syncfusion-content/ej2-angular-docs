@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Header
 
-The Card component can be created with header title, subtitle, and images. To add a header, create a `div` element with the class `e-card-header`.
+The Card component supports headers containing titles, subtitles, and images to provide context and visual hierarchy. The header section is created by adding a `div` element with the `e-card-header` class.
 
 The Card provides the following elements and corresponding class definitions to include header content:
 
@@ -33,15 +33,15 @@ Class   | Description
 
 To add a header to the Card component, create a wrapper `div` element with the `e-card-header-caption` class.
 
-* Place a `div` element with the `e-card-header-title` class inside the header caption for the main title.
+* Place a `div` element with the `e-card-header-title` class inside the header caption to define the main title text.
 
-* Place a `div` element with the `e-card-sub-title` class inside the header caption element for the subtitle.
+* Place a `div` element with the `e-card-sub-title` class inside the caption element to define supplementary subtitle text.
 
 ### Header Image
 
 The Card header provides an option for adding images within the header section. Images are positioned either before or after the header caption based on the HTML element's position in the header structure.
 
-* Add a header image by creating a `div` element with the `e-card-header-image` class, which can be placed before or after the header caption wrapper element.
+* Add a header image by creating a `div` element with the `e-card-header-image` class, positioned either before or after the header caption wrapper element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

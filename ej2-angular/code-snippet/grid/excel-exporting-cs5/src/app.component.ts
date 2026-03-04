@@ -19,7 +19,7 @@ standalone: true,
             <ejs-switch #switch id="switch"></ejs-switch>
             </div>
             <ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true' 
-            [toolbar]='toolbarOptions' height='272px' [allowExcelExport]='true' 
+            [toolbar]='toolbarOptions' height='225px' [allowExcelExport]='true' 
             (toolbarClick)='toolbarClick($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 

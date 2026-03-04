@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ContextMenuClickEventArgs, ContextMenuService, GridModule, ContextMenuItem, GridComponent} from '@syncfusion/ej2-angular-grids';
+import { ContextMenuClickEventArgs, ContextMenuService, GridModule, ContextMenuItem, GridComponent, IGrid} from '@syncfusion/ej2-angular-grids';
 import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart, UpdateChartArgs } from '@syncfusion/ej2-grid-chart';
 import { ChartModel, AccumulationChartModel, ILoadedEventArgs } from '@syncfusion/ej2-charts';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   contextMenuClick(args: ContextMenuClickEventArgs) {
     if (args.chartType) {
       const chartArgs: ChartPopupArgs = {
-        gridInstance: (args.gridInstance as GridComponent),
+        gridInstance: (args.gridInstance as IGrid),
         chartType: args.chartType,
         records: (args.records as SalesRecord[]),
       };

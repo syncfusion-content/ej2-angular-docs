@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ToolbarService],
 standalone: true,
   selector: 'app-root',

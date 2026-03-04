@@ -4,7 +4,7 @@ import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data,  columnDataType } from './datasource';
 import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     imports: [ GridModule, ButtonModule],
@@ -18,7 +18,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-grids';
         <button ejs-button id='updaterow' (click)='clickEvents($event)'>Update Row</button>
         <button ejs-button id='updatecell' (click)='clickEvents($event)'>Update cell</button>
         <div class="control-section"  style="padding-top:20px">
-            <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings'>
+            <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings' height='273'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
                     width=120 [validationRules]='orderIDRules' isPrimaryKey='true'>

@@ -14,16 +14,12 @@ export interface RowData {
 }
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService],
-standalone: true,
+imports: [GridModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<div>
-                 <ejs-grid [dataSource]='data' height="290" [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
+                 <ejs-grid [dataSource]='data' height="250" [allowPaging]="true" [pageSettings]="pageSettings" [isRowPinned]="isRowPinned">
                     <e-columns>
                         <e-column field="TaskID" headerText="ID" width="80" isPrimaryKey="true" textAlign="Right"></e-column>        
                         <e-column field="Title" headerText="Title" width="100"></e-column>
@@ -38,7 +34,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public pageSettings: PageSettingsModel;
+    public pageSettings!: PageSettingsModel;
     ngOnInit(): void {
         this.data = data;
         this.pageSettings={pageSize:10};

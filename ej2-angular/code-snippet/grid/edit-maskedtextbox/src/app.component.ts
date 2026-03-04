@@ -33,7 +33,7 @@ providers: [EditService, ToolbarService, SortService, PageService, ForeignKeySer
 standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid #grid [dataSource]='data' [allowPaging]='true' 
+        <ejs-grid #grid [dataSource]='data' [allowPaging]='true' height='220px'
             [editSettings]='editSettings' [toolbar]='toolbar' 
             (actionBegin)='actionBegin($event)'>
             <e-columns>

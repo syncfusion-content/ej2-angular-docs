@@ -8,6 +8,7 @@ import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { AppRoutingModule } from './app-routing.module'
 
 @Component({
 imports: [
