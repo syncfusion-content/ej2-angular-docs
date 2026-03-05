@@ -62,7 +62,7 @@ export class AppComponent {
         e.cancel = true;
       }
     }
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+    public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 
 }
 

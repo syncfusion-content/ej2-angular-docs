@@ -10,7 +10,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 
 
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormsModule, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -97,13 +97,13 @@ standalone: true,
                             <div style="padding:30px;">
                                 <form #form="ngForm">
                                     <div class="form-group">
-                                        <ejs-dropdownlist name="skillname" [(ngModel)]='skillForm.skillname'
+                                        <ejs-dropdownlist name="skillname" formControlName="skillname"
                                             [dataSource]='skillset' [placeholder]='placeholder' floatLabelType='Auto'>
                                         </ejs-dropdownlist>
                                     </div>
                                     <div class="form-group" style="padding-top:10px;">
                                         <div class="e-float-input">
-                                            <input type="text" [(ngModel)]="skillForm.sname" name="sname"
+                                            <input type="text" formControlName="sname"
                                                 maxlength="10" />
                                             <span class="e-float-line e-label-top"></span>
                                             <label class="e-float-text e-label-top">Name:</label>
@@ -111,7 +111,7 @@ standalone: true,
                                     </div>
                                     <div class="form-group" style="padding-top:10px;">
                                         <div class="e-float-input">
-                                            <input type="text" [(ngModel)]="skillForm.smail" name="smail"
+                                            <input type="text" formControlName="smail"
                                                 maxlength="15" />
                                             <span class="e-float-line e-label-top"></span>
                                             <label class="e-float-text e-label-top">Email:</label>
@@ -133,17 +133,17 @@ standalone: true,
                                 <div class="form-group">
                                     <span style="font-weight:800;">Selected Language: </span>
                                     <span style="font-style:oblique;color:#8a2be2;">
-                                        {{ skillForm.skillname }}</span>
+                                        {{ skillForm.get('skillname')?.value }}</span>
                                 </div>
                                 <div class="form-group" style="padding-top:50px;">
                                     <span style="font-weight:800;">Buyer Name: </span>
                                     <span style="font-style:oblique;color:#8a2be2;">
-                                        {{ skillForm.sname }}</span>
+                                        {{ skillForm.get('sname')?.value }}</span>
                                 </div>
                                 <div class="form-group" style="padding-top:50px;">
                                     <span style="font-weight:800;">Buyer Mail ID: </span>
                                     <span style="font-style:oblique;color:#8a2be2;">
-                                        {{ skillForm.smail }}</span>
+                                        {{ skillForm.get('smail')?.value }}</span>
                                 </div>
                             </div>
                         </div>
@@ -167,6 +167,7 @@ export class AppComponent {
         'J#', 'Lisp', 'Logo', 'PHP'
     ];
 
+    
 
     public placeholder: String = 'Select a language';
     public skillForm!: FormGroup;

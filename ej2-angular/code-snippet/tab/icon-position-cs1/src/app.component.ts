@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
+import {  TabItemsDirective, TabItemDirective,TabAllModule } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListComponent,DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 
 import { Component, ViewChild } from '@angular/core';
 import { DropDownListModel, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+
 /**
  * Adaptive Tab Component
  */
 
 @Component({
 imports: [
-        FormsModule
+        FormsModule,DropDownListModule,TabAllModule
     ],
 
 
@@ -75,7 +72,7 @@ standalone: true,
 export class AppComponent {
     @ViewChild('element') tabObj?: TabComponent;
     @ViewChild('iconPosition') listObj?: DropDownListComponent;
-    public positionData: Object[] = [
+    public positionData: object = [
         { position: 'left', text: 'Left' },
         { position: 'right', text: 'Right'},
         { position: 'top',text: 'Top' },
@@ -90,7 +87,7 @@ export class AppComponent {
              items[i].header.iconPosition = this.listObj?.value;
           }
     }
-    public headerText: Object = [{ 'text': 'Twitter', 'iconCss': 'e-twitter' }, { 'text': 'Facebook', 'iconCss': 'e-facebook' },{ 'text': 'WhatsApp', 'iconCss': 'e-whatsapp' }];
+    public headerText: { text: string; iconCss: string }[] = [{ 'text': 'Twitter', 'iconCss': 'e-twitter' }, { 'text': 'Facebook', 'iconCss': 'e-facebook' },{ 'text': 'WhatsApp', 'iconCss': 'e-whatsapp' }];
 
 }
 

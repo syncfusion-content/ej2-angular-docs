@@ -10,6 +10,7 @@ import {
   WorkWeekService,
   MonthService,
   AgendaService,
+  ScheduleModule,
   PrintService
 } from '@syncfusion/ej2-angular-schedule';
 import { ItemModel } from '@syncfusion/ej2-angular-navigations';
@@ -17,6 +18,8 @@ import { scheduleData } from './datasource';
 
 @Component({
   selector: 'app-root',
+  imports: [ScheduleModule],
+  standalone: true,
   template: `
     <ejs-schedule #scheduleObj id="schedule" width="100%" height="550px" 
       [selectedDate]="selectedDate" [eventSettings]="eventSettings" 
@@ -46,7 +49,7 @@ export class AppComponent {
         cssClass: 'e-schedule-print',
         click: this.onPrintIconClick.bind(this)
       };
-      args.items.push(printItem);
+      args.items?.push(printItem);
     }
   }
 
@@ -64,10 +67,10 @@ export class AppComponent {
     headerElement.style.backgroundColor = this.getDepartmentColor(this.currentUser.department);
     headerElement.style.color = 'white';
     headerElement.style.padding = '10px';
-    args.printElement.insertBefore(headerElement, args.printElement.firstChild);
+    args.printElement?.insertBefore(headerElement, args.printElement.firstChild);
 
-    const highPriorityEvents = args.printElement.querySelectorAll('.e-appointment.high-priority');
-    highPriorityEvents.forEach(event => {
+    const highPriorityEvents = args.printElement?.querySelectorAll('.e-appointment.high-priority');
+    highPriorityEvents?.forEach(event => {
       (event as HTMLElement).style.border = '2px solid red';
     });
 
@@ -75,15 +78,15 @@ export class AppComponent {
     const summaryElement = document.createElement('div');
     summaryElement.innerHTML = `
       <p>Total Events: ${events.length}</p>
-      <p>High Priority Events: ${events.filter(e => e.priority === 'high').length}</p>
+      <p>High Priority Events: ${events.filter(e => e['priority'] === 'high').length}</p>
     `;
-    args.printElement.appendChild(summaryElement);
+    args.printElement?.appendChild(summaryElement);
 
     if (this.currentUser.userRole === 'Manager') {
       const managerNote = document.createElement('div');
       managerNote.textContent = 'Confidential - For managerial use only';
       managerNote.style.color = 'red';
-      args.printElement.appendChild(managerNote);
+      args.printElement?.appendChild(managerNote);
     }
   }
 

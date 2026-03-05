@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
 
-
+import { TabModule } from '@syncfusion/ej2-angular-navigations';
 
 
 import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-imports: [
+imports: [TabModule
         
     ],
 
@@ -50,7 +50,7 @@ standalone: true,
 })
 
 export class AppComponent {
-  public headerText: Object = [{ text: "Twitter"}, { text: "Facebook" }, { text: "WhatsApp" }];
+  public headerText: { text: string }[] = [{ text: "Twitter"}, { text: "Facebook" }, { text: "WhatsApp" }];
   
   // Disabling tab animation
   public animation: object = {

@@ -27,7 +27,7 @@ standalone: true,
                                             </div>
                                             <div style="padding: 0 0 5px 0;">
                                                 <a class="sidebar-brand" href="#settings-dropdown">
-                                                    john.doe@gmail.com
+                                                    john.doe&#64;gmail.com
                                                 </a>
                                                 <span class="sf-icon-down icon"></span>
                                             </div>

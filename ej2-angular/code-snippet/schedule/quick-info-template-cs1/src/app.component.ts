@@ -4,6 +4,7 @@ import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { TextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
 import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+import { CommonModule } from '@angular/common'
 
 
 
@@ -21,7 +22,8 @@ imports: [
         ScheduleModule,
         DropDownListAllModule,
         TextBoxAllModule,
-        ButtonAllModule
+        ButtonAllModule,
+        CommonModule
     ],
 standalone: true,
   selector: 'app-root',
@@ -178,7 +180,7 @@ export class AppComponent {
             addObj['StartTime'] = new Date(+cellDetails.startTime);
             addObj['EndTime'] = new Date(+cellDetails.endTime);
             addObj['Description'] = (this.notesObj as TextBoxComponent).value;
-            addObj['RoomId'] = (this.eventTypeObj as DropDownListComponent).value;
+            addObj['RoomId'] = (this.eventTypeObj as DropDownListComponent).value!;
             return addObj;
         };
         if ((e.target as HTMLElement).id === 'add') {

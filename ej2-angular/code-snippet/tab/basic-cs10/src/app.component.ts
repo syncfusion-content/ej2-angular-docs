@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
             }
         });
     }
-     public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+     public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
     public content0: string = 'Twitter is an online social networking service that enables users to send and read short 140-character ' +
             'messages called "tweets". Registered users can read and post tweets, but those who are unregistered can only read ' +
             'them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San ' +

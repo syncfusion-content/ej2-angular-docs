@@ -18,7 +18,7 @@ imports: [
 standalone: true,
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: 'app/app.component.html'
+    templateUrl: './app.component.html'
     })
 export class AppComponent {
     @ViewChild('element') tabObj?: TabComponent;
