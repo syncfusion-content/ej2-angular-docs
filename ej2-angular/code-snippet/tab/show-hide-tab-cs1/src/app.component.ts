@@ -88,7 +88,7 @@ export class AppComponent {
   public addButton?: ButtonComponent;
   public isBool: boolean = false;
   // Mapping Tab items Header property
-  public headerText: Object = [
+  public headerText: { text: string; iconCss?: string }[] = [
     { text: 'Twitter', iconCss: 'e-twitter' },
     { text: 'Facebook', iconCss: 'e-facebook' },
     { text: 'WhatsApp', iconCss: 'e-whatsapp' },

@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+import {  TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
 
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { HeightStyles, TabComponent } from '@syncfusion/ej2-angular-navigations';
+import {  DropDownListModule,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { TabAllModule,HeightStyles, TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
 imports: [
-        FormsModule
+        FormsModule,DropDownListModule,TabAllModule
     ],
 
 
 standalone: true,
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: 'app/app.component.html'
+    templateUrl: './app.component.html',
 })
 export class AppComponent {
     @ViewChild('element') tabObj?: TabComponent;
@@ -34,5 +34,5 @@ export class AppComponent {
     public onChange(args: ChangeEventArgs): void {
         (this.tabObj as TabComponent).heightAdjustMode = (this.listObj as DropDownListComponent).value as string as HeightStyles;
     }
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' }, { 'text': 'WhatsApp' }];
+    public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' }, { 'text': 'WhatsApp' }];
 }

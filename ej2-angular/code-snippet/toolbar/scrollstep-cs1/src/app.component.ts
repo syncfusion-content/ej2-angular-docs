@@ -19,7 +19,7 @@ standalone: true,
     templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class DefaultToolbarComponent {
+export class AppComponent {
 }
 
 

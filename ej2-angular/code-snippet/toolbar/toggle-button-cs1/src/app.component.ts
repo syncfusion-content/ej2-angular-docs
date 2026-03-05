@@ -21,7 +21,7 @@ standalone: true,
     templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class DefaultToolbarComponent {
+export class AppComponent {
     @ViewChild('playButton') public mediaBtn!: ButtonComponent;
     @ViewChild('zoom') public zoomBtn!: ButtonComponent;
     @ViewChild('undo') public undoBtn!: ButtonComponent;

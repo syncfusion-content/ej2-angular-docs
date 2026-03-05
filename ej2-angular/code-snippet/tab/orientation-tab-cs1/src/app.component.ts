@@ -19,7 +19,7 @@ imports: [
 
 standalone: true,
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
 
     public modeValue: string = 'scrollable';
 
-     public headerText: Object = [{ 'text': 'HTML' }, { 'text': 'C Sharp(C#)' },{ 'text': 'Java' },{ 'text': 'VB.Net' }, { 'text': 'Xamarin' }, { 'text': 'ASP.NET' },
+     public headerText: { text: string }[] = [{ 'text': 'HTML' }, { 'text': 'C Sharp(C#)' },{ 'text': 'Java' },{ 'text': 'VB.Net' }, { 'text': 'Xamarin' }, { 'text': 'ASP.NET' },
     { 'text': 'ASP.NET MVC' }, { 'text': 'JavaScript' }];
     public content0: string = 'HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web ' +
                 'pages. Along with CSS, and JavaScript, HTML is a cornerstone technology, used by most websites to create visually ' +

@@ -1,26 +1,26 @@
 <ng-template #DatePickertemplateRef>
-    <date-picker></date-picker>
+  <ejs-datepicker></ejs-datepicker>
 </ng-template>
 
 <ng-template #FirstDropDowntemplateRef>
-  <drop-down [data]="firstDropDownData"></drop-down>
+  <ejs-dropdownlist [dataSource]="firstDropDownData"></ejs-dropdownlist>
 </ng-template>
 
 <ng-template #SecondDropDowntemplateRef>
-  <drop-down [data]="secondDropDownData"></drop-down>
+  <ejs-dropdownlist [dataSource]="secondDropDownData"></ejs-dropdownlist>
 </ng-template>
 
 <ng-template #ThirdDropDowntemplateRef>
-  <drop-down [data]="thirdDropDownData"></drop-down>
+  <ejs-dropdownlist [dataSource]="thirdDropDownData"></ejs-dropdownlist>
 </ng-template>
 
-<button id='add' class='e-btn' (click)='addButtonClicked($event)'>Click to add</button>
-<button id='remove' class='e-btn' (click)='removeButtonClicked($event)'>Click to remove</button>
+<button id="add" class="e-btn" (click)="addButtonClicked($event)">Click to add</button>
+<button id="remove" class="e-btn" (click)="removeButtonClicked($event)">Click to remove</button>
 
 <ejs-tab id="element" #element>
-	<e-tabitems>
-		<e-tabitem [header]='tabItemsHeaderText[0]' [content]="DatePickertemplate"></e-tabitem>
-		<e-tabitem [header]='tabItemsHeaderText[1]' [content]="FirstDropDowntemplate"></e-tabitem>
-		<e-tabitem [header]='tabItemsHeaderText[2]' [content]="SecondDropDowntemplate"></e-tabitem>
-	</e-tabitems>
+  <e-tabitems>
+    <e-tabitem [header]="tabItemsHeaderText[0]" [content]="DatePickertemplateRef"></e-tabitem>
+    <e-tabitem [header]="tabItemsHeaderText[1]" [content]="FirstDropDowntemplateRef"></e-tabitem>
+    <e-tabitem [header]="tabItemsHeaderText[2]" [content]="SecondDropDowntemplateRef"></e-tabitem>
+  </e-tabitems>
 </ejs-tab>

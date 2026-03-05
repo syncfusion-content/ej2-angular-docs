@@ -15,8 +15,8 @@ enableRipple(false);
 imports: [ MenuModule, ButtonModule],
 
 providers: [
-    { provide: 'sourceFiles', useValue: {files: []
-standalone: true,
+    { provide: 'sourceFiles', useValue: {files: []}}],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./template.css'],
     template: `<div class="e-section-control">
