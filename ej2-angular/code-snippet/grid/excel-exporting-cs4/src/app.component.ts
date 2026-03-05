@@ -13,17 +13,16 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
   selector: 'app-root',
   template: `
         <div style="display: flex">
-            <label style="padding: 10px 10px 26px 0"> Change export type: </label>
+            <label style="padding: 5px 5px 5px 0"> Change export type: </label>
             <ejs-dropdownlist
-            style="margin-top:5px"
             #dropDownList
             index="0"
             width="150"
             [dataSource]="dropDownData"></ejs-dropdownlist>
           </div>
-          <div style="padding: 0px 0 20px 0">
+          <div style="padding: 0px 0 5px 0">
             <ejs-grid #grid id='Grid' [dataSource]='data' allowPaging='true' [pageSettings]='initialPage'[toolbar]='toolbarOptions' 
-            height='220px' [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
+            height='200px' [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=90></e-column>
                     <e-column field='FirstName' headerText='FirstName' width=100></e-column>

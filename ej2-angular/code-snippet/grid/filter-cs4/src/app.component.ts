@@ -19,7 +19,7 @@ providers: [PageService,
                 FilterService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' >
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px' >
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=140></e-column>
                     <e-column field='Name' headerText='Name' width=140></e-column>

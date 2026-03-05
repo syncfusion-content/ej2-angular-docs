@@ -22,13 +22,13 @@ providers: [DetailRowService],
 standalone: true,
   selector: 'app-root',
   template: `
-        <div style="display: inline-block; padding: 0px 30px 0px 0px">
+        <div style="display: inline-block; padding: 0px 5px 0px 0px">
           <ejs-textbox #textbox placeholder="Enter the row Index" width="250px" 
           floatLabelType="Auto"></ejs-textbox>
         </div>
         <button ejs-button id="sample" (click)="btnClick()">Expand</button>
-        <div style="padding: 20px 0px 0px 0px">
-          <ejs-grid #grid [dataSource]="data" height="315" width="auto">
+        <div style="padding: 5px 0px 0px 0px">
+          <ejs-grid #grid [dataSource]="data" height="285" width="auto">
             <e-columns>
               <e-column field="FirstName" headerText="First Name" width="140"></e-column>
               <e-column field="LastName" headerText="Last Name" width="140"></e-column>
@@ -102,7 +102,11 @@ export class AppComponent implements OnInit {
     this.data = employeeData;
   }
   public btnClick(): void {
-    (this.grid as GridComponent).detailRowModule.expand((this.textbox as TextBoxComponent).value); 
+    const value = (this.textbox as TextBoxComponent).value;
+    const index = typeof value === 'string' ? parseInt(value, 10) : Number(value);
+    if (!isNaN(index)) {
+      (this.grid as GridComponent).detailRowModule.expand(index);
+    }
     // Expand the detail row of the specified row index
   }
 }

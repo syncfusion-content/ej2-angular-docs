@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Alignment in Angular Timeline component
 
-The Timeline component allows you to control the positioning of content using the [align](../api/timeline/#align) property, which accepts values `Before`, `After`, `Alternate`, or `AlternateReverse`. When items include both content and oppositeContent properties, the oppositeContent displays parallel to the main content, creating a balanced layout on opposite sides of the timeline.
+The Timeline component controls content positioning using the [align](../api/timeline#align) property, which accepts values `Before`, `After`, `Alternate`, or `AlternateReverse`. When items include both content and oppositeContent properties, the oppositeContent displays parallel to the main content, creating a balanced layout on opposite sides of the timeline.
 
 ## Before
 
-The [Before](../api/timeline/timelineAlign/) alignment positions content strategically based on orientation. For `horizontal` orientation, the main content appears at the top with oppositeContent at the bottom. For `vertical` orientation, content is positioned on the left side while oppositeContent appears on the right side.
+The [Before](../api/timeline/timelineAlign) alignment positions content based on orientation. For `horizontal` orientation, the main content appears at the top with oppositeContent at the bottom. For `vertical` orientation, content is positioned on the left side while oppositeContent appears on the right side.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +35,7 @@ The [Before](../api/timeline/timelineAlign/) alignment positions content strateg
 
 ## After
 
-The [After](../api/timeline/timelineAlign/) alignment reverses the content positioning compared to Before alignment. For `horizontal` orientation, the main content is placed at the bottom with oppositeContent at the top. For `vertical` orientation, content appears on the right side while oppositeContent is positioned on the left side.
+The [After](../api/timeline/timelineAlign) alignment reverses the content positioning compared to Before alignment. For `horizontal` orientation, the main content is placed at the bottom with oppositeContent at the top. For `vertical` orientation, content appears on the right side while oppositeContent is positioned on the left side.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,7 +56,7 @@ The [After](../api/timeline/timelineAlign/) alignment reverses the content posit
 
 ## Alternate
 
-The [Alternate](../api/timeline/timelineAlign/) alignment creates a dynamic zigzag pattern where timeline items switch positions alternately. This arrangement provides visual variety and works effectively for showcasing parallel events or comparisons, regardless of whether the Timeline orientation is horizontal or vertical.
+The [Alternate](../api/timeline/timelineAlign) alignment creates a dynamic zigzag pattern where timeline items switch positions alternately. This arrangement provides visual variety and works effectively for showcasing parallel events or comparisons in both horizontal or vertical orientations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,7 +77,7 @@ The [Alternate](../api/timeline/timelineAlign/) alignment creates a dynamic zigz
 
 ## Alternate reverse
 
-The [AlternateReverse](../api/timeline/timelineAlign/) alignment creates the opposite pattern of Alternate alignment, where timeline items are arranged in reverse alternating order. This provides another visual variation for displaying data with an inverted alternating pattern, maintaining effectiveness across both Timeline orientations.
+The [AlternateReverse](../api/timeline/timelineAlign) alignment creates the reverse pattern of Alternate alignment, where timeline items are arranged in reverse alternating order. This provides another visual variation for displaying data with an inverted alternating pattern, maintaining effectiveness across both Timeline orientations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

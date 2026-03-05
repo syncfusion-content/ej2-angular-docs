@@ -17,7 +17,7 @@ imports: [
 providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowPaging]='true' height='315px' 
+    template: `<ejs-grid [dataSource]='data' [allowPaging]='true' height='290px' 
                [selectionSettings]='selectionOptions'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' 

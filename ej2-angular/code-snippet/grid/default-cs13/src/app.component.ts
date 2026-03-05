@@ -17,10 +17,7 @@ imports: [
         GridModule
     ],
 
-providers: [PageService,
-        SortService,
-        FilterService,
-        GroupService],
+providers: [PageService,SortService,FilterService,DetailRowService, ToolbarService,GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='pData' [childGrid]='childGrid' [toolbar]='["Print"]'
@@ -33,7 +30,6 @@ standalone: true,
                     </e-columns>
                 </ejs-grid>
                 `,
-    providers: [DetailRowService, ToolbarService]
 })
 export class AppComponent implements OnInit {
 

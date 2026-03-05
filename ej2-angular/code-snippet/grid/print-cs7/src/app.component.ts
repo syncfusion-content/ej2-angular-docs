@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import {ClickEventArgs} from '@syncfusion/ej2-inputs'
 import { ToolbarItems, PageSettingsModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 
 @Component({

@@ -1,15 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule,
-    ],
+imports: [ CommonModule,GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='300'>

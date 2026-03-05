@@ -14,7 +14,7 @@ This section describes the Timeline events that trigger when appropriate actions
 
 ## created
 
-The Timeline component triggers the [created](../api/timeline/#created) event when the component rendering process is completed and the Timeline is ready for interaction.
+The Timeline component triggers the [created](../api/timeline#created) event when the component rendering is complete and the Timeline is ready for interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ The Timeline component triggers the [created](../api/timeline/#created) event wh
 
 ## beforeItemRender
 
-The Timeline component triggers the [beforeItemRender](../api/timeline/#beforeitemrender) event before rendering each timeline item, allowing customization of individual items during the rendering process.
+The Timeline component triggers the [beforeItemRender](../api/timeline#beforeitemrender) event before rendering each timeline item, allowing customization of individual items during rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

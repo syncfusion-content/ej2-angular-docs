@@ -10,12 +10,7 @@ import { data } from './datasource';
 
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-,
+imports: [GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<button ej-button class='e-flat' (click)='click()'>Change Header Text</button>

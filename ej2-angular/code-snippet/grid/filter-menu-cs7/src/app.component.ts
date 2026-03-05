@@ -22,7 +22,7 @@ imports: [
 providers: [FilterService, PageService,CheckBoxSelectionService],
 standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption' >
+  template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption' height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' ></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' [filter]='filterParams'></e-column>

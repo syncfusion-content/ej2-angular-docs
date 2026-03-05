@@ -10,12 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Timeline component
 
-The Timeline component offers extensive customization options for visual styling including dot appearance, connector lines, borders, spacing, and color schemes. This section demonstrates various approaches to customize Timeline items and create visually distinctive event displays.
-
+The Timeline component provides extensive customization for visual styling, including dot appearance, connector lines, borders, spacing, and color schemes. This section demonstrates approaches to customize Timeline items and create visually distinctive event displays.
 ## Connector styling
 ### Common styling
 
-Define styles that apply to all Timeline item connectors for consistent visual presentation across the entire Timeline.
+Define styles that apply to all Timeline item connectors for consistent presentation across the Timeline.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +59,7 @@ Apply unique styles to specific connectors to differentiate particular items wit
 ## Dot styling
 ### Dot color
 
-You can modify the color of the dots to highlight the specific Timeline items.
+Modify dot colors to highlight specific Timeline items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +81,7 @@ You can modify the color of the dots to highlight the specific Timeline items.
 
 ### Dot size
 
-Adjust dot dimensions using the `--dot-size` CSS custom property to create visual emphasis or maintain design consistency with different Timeline layouts.
+Adjust dot dimensions using the `--dot-size` CSS custom property to create emphasis or maintain design consistency across different Timeline layouts.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +125,7 @@ Create visually engaging Timeline dots by adding shadow effects using the `--dot
 
 ### Dot variant
 
-Create different dot appearances by customizing border, outline, and background color properties of Timeline dots. This enables distinct visual styles for different types of events.
+Create different dot appearances by customizing border, outline, and background color properties. This enables distinct visual styles for different event types.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +147,7 @@ Create different dot appearances by customizing border, outline, and background 
 
 ### Dot outline
 
-Apply the `e-outline` class to the Timeline [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timeline/#cssclass) property to enable outline-style dots to have an outline state.
+Apply the `e-outline` class via the Timeline [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timeline#cssclass) property to enable outline-style dots to have an outline state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

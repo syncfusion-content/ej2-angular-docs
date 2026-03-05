@@ -16,7 +16,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
     selector: 'app-root',
     template: `
     <button ejs-button id="button" cssClass="e-outline" (click)="addTemplateColumn()">Add Column</button>
-    <ejs-grid style="margin-top: 10px" id='grid' #grid [dataSource]='dataSet' height='315px'>
+    <ejs-grid style="margin-top: 5px" id='grid' #grid [dataSource]='dataSet' height='300px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' width=80></e-column>
             <e-column field='CustomerID' headerText='Customer Name' width=100>

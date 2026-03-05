@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   public toolbar?: string[];
   public editSettings?: Object;
   public datePickerParams?: Object;
-  public datePickerObj: DatePicker;
+  public datePickerObj!: DatePicker;
   ngOnInit(): void {
     this.data=data;
     this.pageSettings = { pageCount: 5 };
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
   public destroyDatePicker = (): void => {
     this.datePickerObj.destroy();
   };
-  public writeDatePicker = (args): void => {
+  public writeDatePicker = (args:any): void => {
     this.datePickerObj = new DatePicker({
       value: new Date(args.rowData[args.column.field]),
       floatLabelType: 'Never',

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Splitter component
 
-The Angular Splitter component supports globalization features, including right-to-left (RTL) rendering for languages such as Arabic and Hebrew.
+The Angular Splitter component provides globalization features, including right-to-left (RTL) rendering for languages such as Arabic and Hebrew.
 
 ## Right-to-Left (RTL) support
 
 To enable RTL layout, set the `enableRtl` property to `true`. This adjusts the direction of the Splitter panes and split bars to accommodate RTL writing systems.
 
-The following code shows how to enable RTL behavior.
+The following code demonstrates how to enable RTL behavior.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

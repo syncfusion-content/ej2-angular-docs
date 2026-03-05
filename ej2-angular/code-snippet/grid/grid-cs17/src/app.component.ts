@@ -4,7 +4,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, Column, TextAlign } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
@@ -19,10 +19,10 @@ standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-        <label style="padding: 30px 17px 0 0;">Align the text for columns :</label>
-        <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" [dataSource]="alignmentData" (change) ="changeAlignment($event)"></ejs-dropdownlist>
+        <label style="padding: 5px 5px 0 0;">Align the text for columns :</label>
+        <ejs-dropdownlist index="0" width="100" [dataSource]="alignmentData" (change) ="changeAlignment($event)" [fields]="{ text: 'text', value: 'value' }"></ejs-dropdownlist>
    </div>
-   <ejs-grid #grid [dataSource]='data' height='315px'  style="padding-top:20px">
+   <ejs-grid #grid [dataSource]='data' height='295px'  style="padding-top:5px">
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' type='number'  width=120></e-column>
             <e-column field='CustomerID' headerText='Customer ID' type='string' width=90></e-column>
@@ -41,11 +41,17 @@ export class AppComponent implements OnInit {
         { text: 'Justify', value: 'Justify' },
     ];
     public changeAlignment(args: ChangeEventArgs): void {
-        (this.grid as GridComponent).columns.forEach((col: Column) => {
-            col.textAlign = args.value as string;
+        const align: TextAlign = (
+        typeof args.value === 'string' ? args.value : 'Left'
+        ) as TextAlign;
+
+        const cols: Column[] = (this.grid as GridComponent).getColumns();
+
+        cols.forEach((col: { textAlign: TextAlign; }) => {
+        col.textAlign = align;
         });
         (this.grid as GridComponent).refreshColumns();
-    }
+  }
     ngOnInit(): void {
         this.data = data;
     }

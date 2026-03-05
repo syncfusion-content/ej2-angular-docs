@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Different layouts in Angular Splitter component
 
-Using the Angular Splitter component, you can create complex layouts with multiple and nested panes.
+The Angular Splitter component enables the creation of complex layouts with multiple and nested panes.
 
 ## Code editor style layout
 
@@ -82,11 +82,11 @@ Using the Angular Splitter component, you can create complex layouts with multip
     }
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/angular/demos/#/material/splitter/code-editor-layout)
+Once the above configurations have been completed, you will get the output like [this](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/code-editor-layout)
 
 ## Outlook style layout
 
-**Step 1**: Create an element with three panes and place the required components inside each pane to render `TreeView`, `ListView`, and `Rich Text Editor`.
+**Step 1**: Create an element with three panes and integrate the required components inside each pane to render `TreeView`, `ListView`, and `Rich Text Editor`.
 
 ```html
     <ejs-splitter  id="splitter1" #splitter1 height='493px' width='100%'>
@@ -222,7 +222,7 @@ Once the above configurations has been completed, you will get the output like [
     }
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/angular/demos/#/material/splitter/outlook-style-layout).
+Once the above configurations have been completed, you will get the output like [this](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/outlook-style-layout).
 
 ## See Also
 

@@ -5,7 +5,7 @@
     <ejs-grid #Orders id="Orders" [dataSource]="data" allowPaging="true" allowSorting="true" allowFiltering="true"
         [allowGrouping]="true" [editSettings]="editSettings" [groupSettings]="groupOptions"
         [filterSettings]="filterOptions" [toolbar]="toolbar" [pageSettings]="pageSettings" [enablePersistence]="true"
-        height="320" (actionBegin)="actionBegin()">
+        height="200" (actionBegin)="actionBegin()">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
                 [validationRules]="orderidrules"></e-column>

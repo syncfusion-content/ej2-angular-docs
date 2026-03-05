@@ -11,16 +11,13 @@ import frFRLocalization from './locale.json';
 L10n.load(frFRLocalization);
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule] ,
 
 providers: [GroupService, PageService, EditService, ToolbarService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='locale' [allowGrouping]='true' [allowPaging]='true'
-             [pageSettings]='pageOptions' [editSettings]='editSettings' [toolbar]='toolbar' height='220px'>
+             [pageSettings]='pageOptions' [editSettings]='editSettings' [toolbar]='toolbar' height='200px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

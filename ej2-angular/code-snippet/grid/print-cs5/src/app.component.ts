@@ -13,7 +13,7 @@ import { data, employeeData } from './datasource';
     selector: 'app-root',
     template: `<div class='container'><h4>Select Mode</h4>
         <ejs-dropdownlist style="margin: 14px; width:250px; "  #sample [dataSource]='dropdownData' (change)='onModeChange($event)' popupHeight='220px'></ejs-dropdownlist></div>
-        <ejs-grid #grid [dataSource]='parentData' height='265px' [childGrid]='childGrid' [toolbar]='["Print"]' [hierarchyPrintMode]='hierarchyPrintMode'>
+        <ejs-grid #grid [dataSource]='parentData' height='230px' [childGrid]='childGrid' [toolbar]='["Print"]' [hierarchyPrintMode]='hierarchyPrintMode'>
             <e-columns>
                 <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                 <e-column field='FirstName' headerText='FirstName' width=150></e-column>

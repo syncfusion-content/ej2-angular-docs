@@ -1,23 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent,Column } from '@syncfusion/ej2-angular-grids';
+import { GridComponent,ColumnModel } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
-
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
+imports: [ GridModule, ButtonModule ],
 providers: [PageService,
                 SortService,
                 FilterService,
@@ -45,15 +36,20 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     addColumns(): void {
-        var newColumns = [
-            { field: 'EmployeeID', headerText: 'EmployeeID', width: 120 },
-            { field: 'OrderDate', headerText: 'Order Date', width: 120, format: 'yMd' },
-          ];
-          newColumns.forEach((col) => {
-            (this.grid as GridComponent).columns.push(col as Column);
-          });
-          (this.grid as GridComponent).refreshColumns();
-    }
+    const grid = this.grid!;
+    const cols = grid.columns as ColumnModel[];
+    cols.push(
+      { field: 'EmployeeID', headerText: 'EmployeeID', width: 120 },
+      {
+        field: 'OrderDate',
+        headerText: 'Order Date',
+        width: 120,
+        type: 'date',
+        format: 'yMd',
+      }
+    );
+    grid.refreshColumns();
+  }
     deleteColumns(): void {
         (this.grid as GridComponent).columns.pop();
         (this.grid as GridComponent).refreshColumns();

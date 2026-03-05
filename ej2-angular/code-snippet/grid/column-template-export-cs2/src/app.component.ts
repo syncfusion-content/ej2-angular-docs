@@ -19,7 +19,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
                         <e-column headerText='Employee Image' width='150' textAlign='Center'>
                             <ng-template #template let-data>
                                 <div class="image">
-                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
+                                   <img src="https://ej2.syncfusion.com/angular/demos/assets/grid/images/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
                                 </div>
                             </ng-template>
                         </e-column>

@@ -9,12 +9,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        CheckBoxModule
-    ],
-
+imports: [ GridModule,  CheckBoxModule],
 standalone: true,
   selector: 'app-root',
   template: `<div style="padding:2px 0px 0px 0px">
@@ -22,7 +17,7 @@ standalone: true,
                 (change)="onCheckBoxChange($event)"></ejs-checkbox>
             </div>
             <p id="message">{{ message }}</p>
-            <ejs-grid #grid [dataSource]='data' height='350'>
+            <ejs-grid #grid [dataSource]='data' height='265'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='120' 
                     textAlign='Right'></e-column>

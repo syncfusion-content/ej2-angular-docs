@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
-@Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
+type PrintMode = 'AllPages' | 'CurrentPage';
 
+@Component({
+imports: [ GridModule, DropDownListAllModule],
 providers: [ToolbarService, PageService],
 standalone: true,
     selector: 'app-root',
@@ -28,6 +22,7 @@ standalone: true,
       #dropdown
       index="0"
       width="120"
+    [fields]="{ text: 'text', value: 'value' }"
       [dataSource]="dropdownlist"
       (change)="onChange($event)"
     ></ejs-dropdownlist></div>
@@ -47,7 +42,10 @@ export class AppComponent implements OnInit {
     public toolbarOptions?: ToolbarItems[];
     public pageOptions?: PageSettingsModel;
     public printMode: string = 'CurrentPage';
-    public dropdownlist: string[] = ['AllPages', 'CurrentPage'];
+    public dropdownlist: Array<{ text: string; value: PrintMode }> = [
+        { text: 'All Pages', value: 'AllPages' },
+        { text: 'Current Page', value: 'CurrentPage' },
+    ];
 
     ngOnInit(): void {
         this.data = data;
@@ -55,6 +53,6 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 6 };
     }
     onChange(args: ChangeEventArgs): void {
-        this.printMode = args.value;
+        this.printMode = args.value as PrintMode;
     }
 }

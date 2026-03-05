@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule} from '@syncfusion/ej2-angular-grids'
+import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data ,Order} from './datasource';
 import { GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';

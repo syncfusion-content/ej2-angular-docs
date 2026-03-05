@@ -16,7 +16,7 @@ providers: [EditService, PageService, ToolbarService],
 standalone: true,
   selector: 'app-root',
   template: `
-    <ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load($event)' (actionComplete)='onActionComplete($event)'>
+    <ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load($event)' (actionComplete)='onActionComplete($event)' height='220px'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100 isPrimaryKey='true'></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

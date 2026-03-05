@@ -7,10 +7,7 @@ import { GridComponent, EditSettingsModel, EditService, Column, PageService } fr
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [ GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
@@ -20,10 +17,9 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public editSettings: EditSettingsModel;
+    public editSettings!: EditSettingsModel;
     @ViewChild('grid')
     public grid?: GridComponent;
-
 
     ngOnInit(): void {
         this.data = data;

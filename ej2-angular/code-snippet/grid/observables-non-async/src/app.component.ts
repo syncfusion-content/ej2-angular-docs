@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   template: `
-  <div style="padding-top:100px">
+  <div>
     <ejs-grid #grid [dataSource]='data' allowPaging="true" allowGrouping="true" [groupSettings]="groupOptions" 
     allowSorting="true" [sortSettings]="sortOptions" allowFiltering="true" [filterSettings]="filterOptions" [editSettings]='editSettings' [toolbar]='toolbar'
-    (dataSourceChanged)='dataSourceChanged($event)' (dataStateChange)= 'dataStateChange($event)' height='315px'>
+    (dataSourceChanged)='dataSourceChanged($event)' (dataStateChange)= 'dataStateChange($event)' height='120px'>
       <e-columns>
         <e-column field='id' headerText='Order ID' width='90' textAlign='Right' [validationRules]='orderIDRules' isPrimaryKey='true'></e-column>
         <e-column field="CustomerName" headerText="Customer Name" width="100"></e-column>

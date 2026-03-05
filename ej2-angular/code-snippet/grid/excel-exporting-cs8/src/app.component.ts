@@ -11,7 +11,7 @@ imports: [GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' 
-               height='220px' [allowGrouping]='true' [groupSettings]='groupOptions' 
+               height='200px' [allowGrouping]='true' [groupSettings]='groupOptions' 
                [allowPaging]='true' [allowExcelExport]='true' 
                (toolbarClick)='toolbarClick($event)'>
                 <e-columns>

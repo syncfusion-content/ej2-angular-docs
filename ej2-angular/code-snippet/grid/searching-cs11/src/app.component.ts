@@ -36,7 +36,7 @@ standalone: true,
       (change)="valueChange($event)"
     ></ejs-dropdownlist>
   </div>
-  <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]="searchSettings" height='272px'>
+  <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]="searchSettings" height='220px'>
     <e-columns>
       <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
       <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

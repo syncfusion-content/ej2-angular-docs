@@ -15,10 +15,11 @@ import { columnDataType, data } from './datasource';
 import { EditSettingsModel, ToolbarItems, SaveEventArgs, IEditCell, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { FocusInEventArgs } from '@syncfusion/ej2-angular-inputs';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule,
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -35,7 +36,7 @@ standalone: true,
     selector: 'app-root',
     template: `
         <ejs-grid #normalgrid [dataSource]="data" allowPaging="true" [pageSettings]="pageOptions"
-        [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)">
+        [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)" height='220px'>
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" width="100" textAlign="Right" isPrimaryKey="true"
                     [validationRules]="orderIDRules">

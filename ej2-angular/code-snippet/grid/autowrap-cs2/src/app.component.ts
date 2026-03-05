@@ -21,9 +21,8 @@ standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-    <label style="padding:  10px 10px 26px 0"> Change the grid lines: </label> 
+    <label style="padding:  5px 5px 5px 0"> Change the grid lines: </label> 
     <ejs-dropdownlist
-    style="margin-top:5px"
     id="value"
     #dropdown
     index="0"
@@ -31,7 +30,7 @@ standalone: true,
     [dataSource]="ddlData"
     (change)="valueChange($event)"></ejs-dropdownlist>
     </div>
-    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height='315' gridLines='Default'>
+    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height='290' gridLines='Default'>
         <e-columns>
             <e-column field='Inventor' headerText='Inventor Name' width='180' textAlign="Right"></e-column>
             <e-column field='NumberofPatentFamilies' headerText="Number of Patent Families" width='180' textAlign="Right"></e-column>

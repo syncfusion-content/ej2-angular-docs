@@ -3,23 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 
 @Component({
-imports: [
-        
-        ButtonModule,
-        GridModule
-    ],
+imports: [  ButtonModule, GridModule ],
 
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
+providers: [ PageService, SortService, FilterService, GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height='315px'>
@@ -27,7 +17,7 @@ standalone: true,
                         <e-column headerText='Employee Image' width='150' textAlign='Center'>
                             <ng-template #template let-data>
                                 <div class="image">
-                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
+                                     <img src="https://ej2.syncfusion.com/angular/demos/assets/grid/images/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
                                 </div>
                             </ng-template>
                         </e-column>

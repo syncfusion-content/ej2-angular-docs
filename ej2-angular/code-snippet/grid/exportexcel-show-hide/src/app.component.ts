@@ -12,7 +12,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
     standalone: true,
     selector: 'app-root',
     template: `
-      <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowExcelExport]='true' (excelExportComplete)='excelExportComplete()' (toolbarClick)='toolbarClick($event)'>
+      <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='225px' [allowExcelExport]='true' (excelExportComplete)='excelExportComplete()' (toolbarClick)='toolbarClick($event)'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
           <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=100></e-column>

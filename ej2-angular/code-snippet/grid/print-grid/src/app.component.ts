@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { BrowserModule } from '@angular/platform-browser';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, customerData } from './datasource';
-import { DetailRowService, ToolbarService, GridComponent, ToolbarItems, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, GridComponent, ToolbarItems, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
 
 type carType = { CustomerID: string, CustomerName: string, ContactName: string };
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ToolbarService],
 standalone: true,
     selector: 'app-root',

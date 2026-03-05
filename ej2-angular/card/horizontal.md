@@ -16,7 +16,7 @@ To achieve horizontal alignment, add the `e-card-horizontal` class to the root c
 
 ## Stacked cards
 
-* An horizontally aligned card can push a specific column to align vertical using `e-card-stacked` class.
+* A horizontally aligned card can include specific column to align vertical using `e-card-stacked` class.
 This will align the stacked section vertically aligned differentiating from horizontal layout.
 
 Class   | Description

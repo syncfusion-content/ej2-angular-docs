@@ -32,7 +32,7 @@ imports: [
 providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
     selector: 'app-root',
-    template: `<div style='padding:2px 2px 20px 3px'>
+    template: `<div>
                 <ejs-checkbox #checkbox label="Enable/Disable validation rule for customerID coulumn" [checked]="true"></ejs-checkbox>
             </div>
             <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273"

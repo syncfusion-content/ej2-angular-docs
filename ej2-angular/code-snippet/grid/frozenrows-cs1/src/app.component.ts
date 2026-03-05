@@ -12,7 +12,6 @@ import { data } from './datasource';
 
 @Component({
 imports: [
-        
         GridModule,
         NumericTextBoxAllModule,
         RatingAllModule,
@@ -23,7 +22,7 @@ providers: [FreezeService, SelectionService, EditService, ToolbarService],
 standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
-    <label style="padding: 10px 10px 26px 0"> Change the frozen rows: </label>
+    <label style="padding: 5px 5px 5px 0"> Change the frozen rows: </label>
     <ejs-numerictextbox
       #frozenRows
       min="0"
@@ -40,7 +39,7 @@ standalone: true,
       </button>
     </div>
   </div>
-  <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height=315 [frozenRows]='2' [allowSelection]='false'  [enableHover]='false'>
+  <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height=290 [frozenRows]='2' [allowSelection]='false'  [enableHover]='false'>
     <e-columns>
       <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
       <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

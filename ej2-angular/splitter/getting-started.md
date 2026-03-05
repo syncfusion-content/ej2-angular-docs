@@ -120,8 +120,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 After installing the layouts package, import the required module in your application. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages offer multiple NgModule options.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) for more details.
-
 Refer to the following snippet to import the `SplitterModule` in `app.module.ts` from the `@syncfusion/ej2-angular-layouts`.
 
 ```javascript
@@ -200,12 +198,12 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 
 ```
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
 ## Load content to the pane
 
-You can load the pane content using either HTML element or string values via the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
+You can load the pane content using either HTML element or string values via the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#content) property.
 
 For detailed information, refer to the [Pane Content](./pane-content) section.
 

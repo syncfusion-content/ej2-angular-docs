@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService, SortService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -57,7 +54,7 @@ export class AppComponent implements OnInit {
     ]
 
     ngOnInit(): void {
-        this.data = new DataManager({ url: 'https://services.syncfusion.com/angular/production/api/orders', adaptor: new UrlAdaptor });
+        this.data = new DataManager({ url: 'https://services.syncfusion.com/angular/production/api/UrlDatasource', adaptor: new UrlAdaptor });
         this.loadingIndicator = { indicatorType: 'Spinner' };
         this.pageSettings = { pageCount: 3 };
     }

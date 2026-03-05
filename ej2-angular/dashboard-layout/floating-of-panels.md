@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Floating of panels in Angular Dashboard layout component
 
-The floating functionality enables panels to move upward automatically to fill empty spaces left by panels in previous rows, maximizing space utilization within the dashboard layout. When floating is enabled, panels dynamically reposition themselves to eliminate gaps and create a more compact layout arrangement.
+The floating functionality allows panels to move upward automatically to fill empty spaces left by panels in previous rows, maximizing space utilization within the dashboard. When enabled, panels dynamically reposition themselves to eliminate gaps and create a compact layout arrangement.
 
-This behavior can be controlled using the [`allowFloating`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#allowfloating) property, which accepts a boolean value (default: `true`).
+This behavior is controlled using the [`allowFloating`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowfloating) property, which accepts a boolean value (default: `true`).
 
 ## How floating works
 
@@ -41,4 +41,4 @@ The following sample demonstrates how to enable or disable the floating of panel
   
 {% previewsample "page.domainurl/samples/dashboard-layout/floating-of-panels-cs1" %}
 
-> You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to know how to present and manipulate data.
+> Refer to the [Angular Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material3/dashboard-layout/default) to learn how to present and manipulate data.

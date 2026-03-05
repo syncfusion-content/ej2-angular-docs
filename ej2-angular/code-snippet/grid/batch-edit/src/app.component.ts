@@ -30,7 +30,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
     providers: [EditService, ToolbarService, SortService, PageService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid style="padding:70px" #grid id="grid" [dataSource]='data' height='272px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
+    template: `<ejs-grid  #grid id="grid" [dataSource]='data' height='220px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
     (created)="created()" (load)="load()">
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right'

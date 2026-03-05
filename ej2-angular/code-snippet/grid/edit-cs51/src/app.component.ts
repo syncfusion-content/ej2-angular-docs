@@ -19,7 +19,7 @@ imports: [
 providers: [EditService, ToolbarService, GroupService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid  #grid [dataSource]='data' (keyPressed)="keyPressed($event)" [editSettings]='editSettings' [toolbar]='toolbar' height='273px' allowGrouping="true" [selectionSettings]='selectionOptions' >
+    template: `<ejs-grid  #grid [dataSource]='data' (keyPressed)="keyPressed($event)" [editSettings]='editSettings' [toolbar]='toolbar' height='247px' allowGrouping="true" [selectionSettings]='selectionOptions' >
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

@@ -42,7 +42,7 @@ standalone: true,
             <label>Enable/Disable Cache mode</label>
             <ejs-switch #switch id="switch" (change)="toggleCacheMode($event)"></ejs-switch>
             </div>
-            <ejs-grid #grid [dataSource]='data' height=300 [enableInfiniteScrolling]=true  [pageSettings]='options'>
+            <ejs-grid #grid [dataSource]='data' height='275px' [enableInfiniteScrolling]=true  [pageSettings]='options'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=70></e-column>
                     <e-column field='Engineer' width=100></e-column>

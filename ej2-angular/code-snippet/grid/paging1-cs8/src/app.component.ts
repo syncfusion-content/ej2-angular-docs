@@ -36,7 +36,7 @@ imports: [
 providers: [PageService, ToolbarService, EditService, VirtualScrollService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height=300 [enableVirtualization]=true [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
+    template: `<ejs-grid [dataSource]='data' height='290px' [enableVirtualization]=true [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=100 isPrimaryKey='true' [validationRules]='rules'></e-column>
                     <e-column field='Engineer' width=100></e-column>

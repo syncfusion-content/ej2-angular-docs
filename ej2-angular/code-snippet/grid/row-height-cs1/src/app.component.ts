@@ -16,8 +16,8 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
           <button ejs-button  id="big" cssClass="e-small" (click)="clickHandler($event)">
           Change height 60px</button>
       </div>
-      <div class="control-section"  style="padding-top:20px">
-          <ejs-grid #grid [dataSource]='data' rowHeight='42' height='400'>
+      <div class="control-section"  style="padding-top:5px">
+          <ejs-grid #grid [dataSource]='data' rowHeight='42' height='300'>
               <e-columns>
                   <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'>
                   </e-column>

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Types in Angular Avatar component
 
-The Angular Avatar component provides different sizes and visual styles to suit various design requirements. This section covers the available avatar sizes and shape types that can be customized using CSS classes.
+The Avatar component provides different sizes and visual styles to suit various design requirements. This section explains the available avatar sizes and shape types that can be customized using CSS classes.
 
 ## Avatar size
 
@@ -42,14 +42,14 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar provides predefi
 
 ## Avatar types
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar supports two distinct shape styles to accommodate different design preferences:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar supports two shape styles to match different design preferences:
 
 * Default (Rectangular with rounded corners)
 * Circle
 
 ### Default
 
-The default avatar style features a rectangular shape with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
+The default avatar shape is rectangular with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +69,7 @@ The default avatar style features a rectangular shape with rounded corners, prov
 
 ### Circle
 
-The circular avatar style creates a perfectly round appearance, ideal for profile pictures and user representations. Apply this style by adding the modifier class `.e-avatar-circle` along with the base `.e-avatar` class to the target element.
+The circular avatar style creates a perfectly round appearance, commonly used for profile pictures and user representations. Apply this style by adding the modifier class `.e-avatar-circle` along with the base `.e-avatar` class to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

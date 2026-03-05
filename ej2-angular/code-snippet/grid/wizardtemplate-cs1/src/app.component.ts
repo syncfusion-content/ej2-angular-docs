@@ -12,10 +12,11 @@ import { data } from './datasource';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Dialog } from '@syncfusion/ej2-popups';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule,
         CheckBoxAllModule,
         GridModule,
         ButtonModule,

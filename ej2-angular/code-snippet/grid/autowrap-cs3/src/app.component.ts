@@ -13,14 +13,14 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
   standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
-              <label style="padding: 30px 17px 0 0" >Autowrap for header column :</label>
-              <ejs-dropdownlist style="padding: 26px 0 0 0" index="0" width="100" 
+              <label style="padding: 5px 5px 0 0" >Autowrap for header column :</label>
+              <ejs-dropdownlist index="0" width="100" 
               [dataSource]=" dropdownData" (change)="valueChange($event)">
               </ejs-dropdownlist>
             </div>
-            <div style="padding-top:20px">
+            <div style="padding-top:5px">
               <ejs-grid #grid [dataSource]='data' allowPaging='true' allowTextWrap='true' 
-              [textWrapSettings]='wrapSettings' height='400'>
+              [textWrapSettings]='wrapSettings' height='250'>
                 <e-columns>
                   <e-column field='Inventor' headerText='Inventor Name' width='180' 
                   textAlign="Right">

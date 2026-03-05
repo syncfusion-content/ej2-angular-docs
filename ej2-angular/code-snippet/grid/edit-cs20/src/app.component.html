@@ -4,9 +4,9 @@
       [dataSource]="alignmentData" [fields]="dropdownFields" (change)="changeAlignment($event)">
     </ejs-dropdownlist>
   </div>
-<div style="padding-top:20px">
+<div>
     <ejs-grid #grid id='Batchgrid' [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings'
-      [editSettings]='editSettings' [toolbar]='toolbar'>
+      [editSettings]='editSettings' [toolbar]='toolbar' height='180px'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true'
           [validationRules]='orderIDRules'></e-column>

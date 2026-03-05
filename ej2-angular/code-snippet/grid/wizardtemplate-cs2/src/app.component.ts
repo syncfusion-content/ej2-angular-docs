@@ -3,20 +3,17 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { CheckBoxAllModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { data } from './datasource';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule,
         CheckBoxAllModule,
         GridModule,
         ButtonModule,

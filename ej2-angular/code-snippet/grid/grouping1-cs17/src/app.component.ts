@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel,GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -13,7 +10,6 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
 imports: [
-        
         GridModule,
         ButtonModule,
         DropDownListAllModule
@@ -24,10 +20,9 @@ standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-      <label style="padding: 30px 20px 0 0"> Column name :</label>
+      <label style="padding: 5px 5px 0 0"> Column name :</label>
       <ejs-dropdownlist
         #dropdown
-        style="padding: 26px 0 0 0"
         index="0"
         width="120"
         [dataSource]="columns"
@@ -35,7 +30,7 @@ standalone: true,
       ></ejs-dropdownlist>
     </div>
     <button
-      style="margin-top: 10px "
+      style="margin-top: 5px "
       ejs-button
       id="button"
       cssClass="e-outline"
@@ -44,7 +39,7 @@ standalone: true,
       Group column
     </button>
     <button
-      style="margin-top: 10px "
+      style="margin-top: 5px "
       ejs-button
       id="button"
       cssClass="e-outline"
@@ -52,7 +47,7 @@ standalone: true,
     >
       UnGroup column
     </button>
-    <ejs-grid #grid style="padding: 10px 10px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
+    <ejs-grid #grid style="padding: 10px 10px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='250px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

@@ -17,15 +17,11 @@ import deDELocalization from './locale.json'
 L10n.load(deDELocalization);
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule ],
 providers: [GroupService, PageService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowGrouping]="true" height='315px'>
+    template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowGrouping]="true" height='240px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

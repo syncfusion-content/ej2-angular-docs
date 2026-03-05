@@ -9,18 +9,18 @@ import { getStateEventArgument } from '@syncfusion/ej2-grids';
 imports: [ GridModule, AsyncPipe],
 standalone: true,
 selector: 'app-root',
-template: `<ejs-grid #persistGrid height="400" id="persistGrid" [dataSource]="data | async" [enablePersistence]="true" allowPaging="true" [pageSettings]="pageSettings" allowSorting="true" [sortSettings]="sortSettings" allowFiltering="true" [filterSettings]="filterSettings" allowGrouping="true" [groupSettings]="groupSettings" (created)="created()" (dataStateChange)="dataStateChange($event)">
+template: `<ejs-grid #persistGrid height="170" id="persistGrid" [dataSource]="data | async" [enablePersistence]="true" allowPaging="true" [pageSettings]="pageSettings" allowSorting="true" [sortSettings]="sortSettings" allowFiltering="true" [filterSettings]="filterSettings" allowGrouping="true" [groupSettings]="groupSettings" (created)="created()" (dataStateChange)="dataStateChange($event)">
               <e-columns>
                 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 ></e-column>
                 <e-column field='CustomerID' headerText='Customer ID' width=150 ></e-column>
                 <e-column field='ShipCity' headerText='Ship City' width=150 ></e-column>
-                <e-column field='ShipName' headerText='Ship Name' width=150 template='#template' ></e-column>
+                <e-column field='ShipName' headerText='Ship Name' width=150 ></e-column>
               </e-columns>
             </ejs-grid>`,
     providers: [GroupService, SortService, FilterService, PageService]
 })
-export class AppComponent implements OnInit {
-    @ViewChild('persistGrid', { static: true }) grid: GridComponent;
+export class AppComponent {
+    @ViewChild('persistGrid', { static: true }) grid!: GridComponent;
     public data: Observable<DataStateChangeEventArgs>;
     public pageSettings = { pageSize: 12, currentPage: 2 };
     public sortSettings = {

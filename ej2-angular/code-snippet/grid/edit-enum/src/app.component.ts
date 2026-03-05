@@ -31,7 +31,7 @@ imports: [
 providers: [EditService, ToolbarService, SortService, ForeignKeyService,PageService],
 standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid [dataSource]="details" [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)">
+  template: `<ejs-grid [dataSource]="details" [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)" height='250px'>
     <e-columns>
       <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="90"></e-column>
       <e-column field="CustomerID" headerText="Employee Name" textAlign="Left" width="100"></e-column>

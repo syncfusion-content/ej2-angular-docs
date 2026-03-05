@@ -1,11 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
-import { PageService, GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridModule, PageService, GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({

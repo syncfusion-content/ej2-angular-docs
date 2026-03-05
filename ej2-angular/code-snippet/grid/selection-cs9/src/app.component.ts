@@ -19,13 +19,13 @@ providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
   selector: 'app-root',
   template: `
-        <div style="padding: 0px 0px 20px 0px">
+        <div style="padding: 0px 0px 10px 0px">
           <label>Enable/Disable simple multiple row selection</label>
           <ejs-switch id="switch" [(checked)]="enableSelection" 
           (change)="toggleRowSelection()"></ejs-switch>
         </div>
         <ejs-grid #grid [dataSource]="data" [selectionSettings]="selectionOptions" 
-        height="315px">
+        height="300px">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
             width="120"></e-column>

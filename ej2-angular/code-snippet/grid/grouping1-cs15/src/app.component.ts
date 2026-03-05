@@ -10,18 +10,13 @@ import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
+imports: [ GridModule,ButtonModule]
 providers: [GroupService],
 standalone: true,
     selector: 'app-root',
     template: `
     <button ejs-button id="button" cssClass="e-outline" (click)="onExternalGroup()"> Clear Grouping </button>
-    <ejs-grid #grid style="padding: 10px 10px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
+    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='250px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>

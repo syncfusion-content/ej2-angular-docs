@@ -43,7 +43,7 @@ standalone: true,
     >
     Remove sort column
     </button>
-    <ejs-grid style="padding: 10px 10px" #grid [dataSource]='data' [allowSorting]='true' [sortSettings]="sortOptions" height='315px'>
+    <ejs-grid style="padding: 10px 10px" #grid [dataSource]='data' [allowSorting]='true' [sortSettings]="sortOptions" height='200px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

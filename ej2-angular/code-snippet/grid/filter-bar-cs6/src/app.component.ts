@@ -13,7 +13,7 @@ providers: [PageService,SortService,FilterService,GroupService],
 standalone: true,
   selector: 'app-root',
   template: `
-  <ejs-grid #grid [dataSource]="data" allowFiltering="true" height="350" (load)="load()" allowPaging="true">
+  <ejs-grid #grid [dataSource]="data" allowFiltering="true" height="220" (load)="load()" allowPaging="true">
   <e-columns>
       <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-column>
       <e-column field="CustomerID" headerText="Customer Name" width="150"></e-column>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { GridModule,IFilterCreate,IFilterWrite, IFilterRead } from '@syncfusion/ej2-angular-grids'
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -39,8 +39,9 @@ export class AppComponent implements OnInit {
     public filteroption: FilterSettingsModel = { type: 'Menu'};
     public filter: IFilter = {
         ui: {
-            create: (args: { target: Element, column: object }) => {
+            create: (args: IFilterCreate): void => {
                 const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
+                if (!args.target) { return; }
                 args.target.appendChild(flValInput);
                 this.dropInstance = new DropDownList({
                     dataSource: new DataManager(fEmployeeData),
@@ -50,14 +51,15 @@ export class AppComponent implements OnInit {
                 });
                 this.dropInstance.appendTo(flValInput);
             },
-            write: (args: {
-                column: object, target: Element,
-                filteredValue: number | string
-            }) => {
+            write: (args: IFilterWrite): void => {
                 (this.dropInstance as DropDownList).text = args.filteredValue as string || '';
             },
-            read: (args: { target: Element, column: Column, operator: string, fltrObj: Filter }) => {
-               (this.grid as GridComponent).filterByColumn(args.column.field, args.operator, (this.dropInstance as DropDownList).text);
+            read: (args: IFilterRead): void => {
+                if (!args.column || !args.column.field) { return; }
+                const field: string = args.column.field as string;
+                const operator: string = args.operator ?? 'equal';
+                const value: string = (this.dropInstance as DropDownList).text ?? '';
+                (this.grid as GridComponent).filterByColumn(field, operator, value);
             }
         }
     };

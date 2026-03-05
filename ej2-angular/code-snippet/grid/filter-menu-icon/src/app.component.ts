@@ -16,7 +16,7 @@ standalone: true,
   <button ejs-button id='performFilter' (click)='filterAction($event)'>Filter Customer ID Column</button>
   <button ejs-button id='clearFilter' (click)='filterAction($event)'>Clear Filter</button>
   </div>
-  <ejs-grid #grid style='margin-top:10px' [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption' >
+  <ejs-grid #grid style='margin-top:10px' [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption' height='250px'>
     <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' ></e-column>
         <e-column field='CustomerID' headerText='Customer ID'></e-column>

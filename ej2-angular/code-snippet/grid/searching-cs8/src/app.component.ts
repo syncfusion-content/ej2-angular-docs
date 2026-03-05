@@ -27,7 +27,7 @@ imports: [
 providers: [SearchService, ToolbarService],
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (actionBegin)="actionBegin($event)" (queryCellInfo)="queryCellInfo($event)" height='400' width='100%'>
+    template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (actionBegin)="actionBegin($event)" (queryCellInfo)="queryCellInfo($event)" height='273' width='100%'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
@@ -54,24 +54,27 @@ export class AppComponent implements OnInit {
         }
     }
     queryCellInfo(args: QueryCellInfoEventArgs) {
-        if ((this.key as string) != '') {
-          var cellContent = (args.data as ColumnData)[(args.column as Column).field];
-          var parsedContent = cellContent.toString().toLowerCase();
-          if (parsedContent.includes((this.key as string).toLowerCase())) {
-            var i = 0;
-            var searchStr = '';
-            while (i < (this.key as string).length) {
-              var index = parsedContent.indexOf((this.key as string)[i]);
-              searchStr = searchStr + cellContent.toString()[index];
-              i++;
-            }
-            (args.cell as HTMLElement).innerHTML = (args.cell as HTMLElement).innerText.replaceAll(
-              searchStr,
-              "<span class='customcss'>" + searchStr + '</span>'
-            );
-          }
-        }
-    }
+        const key = (this.key as string) ?? '';
+        if (!key) return;
+
+        const cellEl = args.cell as HTMLElement | null | undefined;
+        if (!cellEl) return;
+
+        const col = args.column as Column;
+        const data = args.data as Record<string, unknown>;
+        const cellContent = (data?.[col.field] ?? '') as string;
+        if (!cellContent) return;
+
+        const baseText = cellEl.innerText ?? '';
+        const escapedKey = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        const highlighted = baseText.replace(
+          new RegExp(escapedKey, 'gi'),
+          (match) => `<span class="customcss">${match}</span>`
+        );
+
+        cellEl.innerHTML = highlighted;
+   }
 }
 
 

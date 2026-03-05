@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule ],
 providers: [PageService,
                 SortService,
                 FilterService,
