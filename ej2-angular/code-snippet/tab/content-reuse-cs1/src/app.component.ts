@@ -5,8 +5,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
 import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
 
-
-
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'; 
 
 
 
@@ -22,13 +21,13 @@ enableRipple(true);
  */
 
 @Component({
-imports: [TabAllModule,  FormsModule, DatePickerModule ],
+imports: [TabAllModule,  FormsModule, DatePickerModule,DropDownListModule, TabAllModule ],
 
 
 standalone: true,
   selector: 'my-app',
-  templateUrl: 'app/app.component.html',
-  styleUrls: ['app.component.css'],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 
 export class AppComponent {
@@ -65,7 +64,7 @@ export class AppComponent {
     'Hockey'
   ];
 
-  public tabItemsHeaderText: Object = [{ 'text': 'DatePicker' }, { 'text': 'Dropdown' }, { 'text': 'Reused Dropdown' }];
+  public tabItemsHeaderText: { text: string }[] = [{ 'text': 'DatePicker' }, { 'text': 'Dropdown' }, { 'text': 'Reused Dropdown' }];
 
   public addButtonClicked(e: any): void {
     var newtabItem = [

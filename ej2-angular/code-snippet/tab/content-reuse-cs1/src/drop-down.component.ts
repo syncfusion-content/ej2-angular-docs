@@ -1,11 +1,13 @@
 import { Component, Input, ViewChild } from '@angular/core';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent,DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 export let ddlObject: DropDownListComponent;
 
 @Component({
   selector: 'drop-down',
+  standalone: true,
+ imports: [DropDownListModule],
   templateUrl: './drop-down.component.html',
   styles: [`h1 { font-family: Lato; }`]
 })
@@ -16,6 +18,7 @@ export class DropDownComponent  {
   public height: string = '220px';
      // defined the array of data
   @Input() data?: string[];
+  @Input() placeholder: string = 'Select an option';
    public changed(e: any){
     ddlObject = this.ddlObj as DropDownListComponent;   
   }

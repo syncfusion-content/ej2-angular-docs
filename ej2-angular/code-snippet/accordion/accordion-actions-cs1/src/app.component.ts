@@ -5,7 +5,7 @@ import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective, Ac
 
 
 import { Component, ViewChild } from '@angular/core';
-import { AccordionComponent, AccordionItemModel } from '@syncfusion/ej2-angular-navigations';
+import { AccordionItemModel } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({

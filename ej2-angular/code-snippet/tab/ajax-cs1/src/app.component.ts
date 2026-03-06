@@ -49,7 +49,7 @@ standalone: true,
 })
 export class AppComponent {
     @ViewChild('tab_html_markup') tabObj?: TabComponent;
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+    public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 
    ngOnInit() {
     let ajax: Ajax = new Ajax('./ajax.html', 'GET', true);

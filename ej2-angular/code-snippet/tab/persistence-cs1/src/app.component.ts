@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+import { TabComponent, TabItemsDirective, TabItemDirective,TabModule } from '@syncfusion/ej2-angular-navigations'
 
 
 
 
 import { Component } from '@angular/core';
-import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
 imports: [
-        FormsModule
+        FormsModule,TabModule
     ],
 
 
@@ -51,7 +50,7 @@ standalone: true,
             </ejs-tab>`
 })
 export class AppComponent {
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+    public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 }
 
 

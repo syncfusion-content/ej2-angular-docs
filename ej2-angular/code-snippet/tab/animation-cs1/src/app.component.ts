@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-
 
 
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
-import { TabActionSettingsModel, TabComponent } from '@syncfusion/ej2-angular-navigations';
+
+import { FormsModule } from '@angular/forms';
+
+import { DropDownListModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { TabModule, TabActionSettingsModel } from '@syncfusion/ej2-angular-navigations';
+
 
 @Component({
-imports: [
-        
-    ],
-
-
+imports: [DropDownListModule,TabModule],
 standalone: true,
     selector: 'app-container',
     template: `
@@ -72,7 +70,7 @@ export class AppComponent {
     @ViewChild('element') tabInstance?: TabComponent;
     @ViewChild('previousAnimation') previousInstance?: DropDownListComponent;
     @ViewChild('nextAnimation') nextInstance?: DropDownListComponent;
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+    public headerText: { text: string }[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
     public animationData: string[] = ['SlideLeftIn', 'SlideRightIn', 'FadeIn', 'FadeOut', 'FadeZoomIn', 'FadeZoomOut', 'ZoomIn', 'ZoomOut', 'None'];
     public previousAnimationChange(): void {
        ((this.tabInstance as TabComponent).animation.previous as TabActionSettingsModel).effect = (this.previousInstance as DropDownListComponent).value as any;
