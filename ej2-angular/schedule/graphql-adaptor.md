@@ -66,7 +66,8 @@ npm install @syncfusion/ej2-data --save
 - **@syncfusion/ej2-data** – Provides data utilities for advanced data operations.
 
 Add this lines in `scripts` in `package.json` to defines commands with npm
-```package.json
+
+```
 
 "scripts": {
       "dev": "graphpack --port 4400",

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview: Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular
+# Overview: Essential<sup>&reg;</sup> UI Kit for Angular
 
-The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular offers a collection of over 260 responsive, ready-to-use, and customizable blocks designed to accelerate web application development. Each block is implemented using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, providing robust functionality with ease of integration. The UI Kit is compatible with both Tailwind CSS and Bootstrap 5.3 CSS frameworks, and supports both light and dark modes, ensuring seamless adaptation to a variety of user preferences and environments.
+The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises over 260 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind CSS and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
 
 <table>
   <tr>
@@ -110,10 +110,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular offers a 
   </tr>
 </table>
 
-> The Essential UI Kit delivers pre-designed blocks for rapid web application development. Customization and integration of specific business logic should be performed to meet individual project requirements.
+> These provide pre-designed blocks for the quick implementation of web applications. However, customization and the integration of business logic must be handled on your end to meet your specific requirements.
 
 ## Supported Angular Versions
-The blocks showcased are built using Angular 18. However, as they are primarily developed with HTML, CSS, and TypeScript, they can be adapted for use with other Angular versions to streamline the creation of web applications. For details on compatible Angular and Syncfusion<sup style="font-size:70%">&reg;</sup> component versions, refer to the [Angular Supported Versions](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-supported-versions) documentation.
+The blocks designed and showcased are built using Angular 18, but you can use other versions of Angular as well, since they are primarily developed with HTML, CSS, and TypeScript to facilitate building your web applications. Additionally, for using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, the compatible Angular and Syncfusion<sup style="font-size:70%">&reg;</sup> versions are outlined in this [link](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-supported-versions) for your reference.
 
 ## Supported Browsers
 
@@ -127,4 +127,4 @@ The blocks showcased are built using Angular 18. However, as they are primarily 
 - Tailwind CSS
 - Bootstrap 5.3
 
-Both **Tailwind CSS** and **Bootstrap 5.3** offer support for **light** and **dark** modes, enabling seamless adaptation of blocks to user preferences or system settings. This ensures a consistent and accessible user experience across diverse devices and environments.
+Both **Tailwind CSS** and **Bootstrap 5.3** support **Light** and **Dark** modes, allowing you to seamlessly adapt the blocks to your web applications based on user preferences or system settings. This flexibility ensures a consistent and optimal user experience across different environments and devices.
