@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Conditional Grid rendering with the *ngIf directive | Syncfusion
-description: Learn how to use Angular *ngIf to conditionally render the Syncfusion EJ2 Angular Grid, displaying it only when data is available for a cleaner user interface.
+title: Angular Grid - Conditional Grid rendering with the *ngIf | Syncfusion
+description: Angular Grid uses *ngIf to conditionally render, displaying it only when data is available for a cleaner user interface.
 platform: ej2-angular
 control: Grid
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Conditional Grid rendering with the *ngIf directive
+# Conditional Grid Rendering with the *ngIf Directive
 
 When working with dynamic data sources, it is best practice to render the Syncfusion Angular Grid only when actual data is present. Avoiding the display of an empty grid improves user interface clarity and reduces potential confusion.
 

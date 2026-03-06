@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create a routing sample in Angular Grid component | Syncfusion
-description: Learn how to implement Angular routing in your application with the Syncfusion Angular Grid, including navigation setup, route configuration, and viewing multiple grid components.
+title: Angular Grid – Create Routing Example | Syncfusion
+description: Angular Grid provides routing sample patterns, state preservation techniques, routing integration examples, and guidance for route-driven grid scenarios.
 platform: ej2-angular
 control: Create a routing sample
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## How to use Angular routing
+# Routing sample in Angular Grid Component
 
 Angular routing is a core feature that manages navigation within a single-page application (SPA), providing seamless transitions between different views or components without refreshing the page.
 
@@ -21,7 +21,7 @@ Begin by creating a new Angular project and enabling routing during setup. Follo
 ```
 ng generate component component-name
 ```
-Replace **component-name** with your desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for your component. Repeat for each component you wish to create.
+Replace `component-name` with your desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for your component. Repeat for each component you wish to create.
 
 **2. Defining routes:**
 
@@ -49,7 +49,7 @@ export class AppRoutingModule { }
 
 **3. Configuring the router module:**
 
-In the root module (**app.module.ts**) file import the **AppRoutingModule** and add it to the imports array.
+In the root module (`app.module.ts`) file import the `AppRoutingModule` and add it to the imports array.
 
 ```
 import { AboutComponent } from './about.component';

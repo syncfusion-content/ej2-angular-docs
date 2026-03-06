@@ -1,26 +1,38 @@
 ---
 layout: post
-title: Aggregates in Angular Grid component | Syncfusion
-description: Explore how to configure and display aggregates in the Syncfusion Angular Grid, including footer, group footer, group caption summaries, built-in and multiple aggregates, and customization options.
+title: Angular Grid - Aggregates | Syncfusion
+description: Angular Grid provides column aggregate functions, footer and group summaries, custom aggregate calculations, and formatting options.
 platform: ej2-angular
 control: Aggregates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregates in Angular Grid component
+# Aggregates in Angular Grid Component
 
-The Aggregates feature in the Syncfusion Angular Grid component enables displaying summary values in the grid's footer, group footer, and group caption areas. Aggregates provide calculations on specific columns, making it easy to present totals, averages, and other summary information. Aggregates are configured using the **e-aggregates** directive. Each aggregate column definition must include the required properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#field) and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type).
+The Aggregates feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides built-in calculations such as sum, average, count, minimum, and maximum for specific columns. The results can be displayed in different sections of the grid.
 
-To use the aggregate feature, inject the **AggregateService** module into the **@NgModule.providers** section.
+- `Footer`: overall summary values for the entire grid.
+- `Group Footer`: aggregate values for each group of records.
+- `Group Caption`: summary information shown alongside the group title.
 
-**Displaying aggregate values**
+The aggregate feature is enabled by injecting the `AggregateService` module into the `@NgModule.providers` section.
 
-By default, aggregate values are shown in the footer, group footer, and group caption cells of the grid. You can control where the aggregate value is displayed using these properties:
+Aggregates in the Angular Grid are linked to columns using a few key properties:
 
-* **[footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate):** Defines a template to display the aggregate value in the footer cell, supporting custom formatting.
-* **[groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupfootertemplate):** Sets a template for the group footer cell, allowing custom presentation of the aggregate value in grouped rows.
-* **[groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate):** Specifies a template for the group caption cell, where the aggregate value can be formatted as required.
+- `field`: Defines the field name of the column on which the aggregation is performed. The value must match the column’s data source field.
+- `type`: Defines the type of aggregate calculation for the column.for example Sum, Average, Min, Max, or Count.
+- `Templates`: Decide where the result is displayed in the grid in `footerTemplate`, `groupFooterTemplate`, `groupCaptionTemplate`.
+- `format`: Applies formatting to numeric and date columns when displaying aggregate values.
+
+**Directives for aggregate configuration:**
+
+- `e-aggregates`: Root container for all aggregate definitions.
+- `e-aggregate`: Defines one aggregate row (can contain multiple columns).
+- `e-columns`: Wraps one or more aggregate column definitions.
+- `e-column`: Defines a single aggregate for a specific field and type.
+
+Aggregates can also be integrated using the [aggregates](https://ej2.syncfusion.com/angular/documentation/api/grid#aggregates) property of the grid instead of using directives. For example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,24 +71,68 @@ By default, aggregate values are shown in the footer, group footer, and group ca
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs1" %}
 
+
+**Displaying aggregate values**
+
+By default, aggregate values are shown in the footer, group footer, and group caption cells of the grid. Control where the aggregate value is displayed using these properties:
+
+* [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate): Displays the aggregate value in the footer cell.
+* [groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupfootertemplate): Displays the aggregate value in the group footer cell.
+* [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate): Displays the aggregate value in the group caption cell.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/aggregates-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='290px' [allowGrouping]='true' [allowPaging]='true' [groupSettings]='groupOptions'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field='Freight' type='sum'>
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                </e-column>
+                <e-column field='Freight' type='max'>
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+
+{% endraw %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/aggregates-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/aggregates-cs1" %}
+
 >* For local data, the aggregate values are calculated over the entire dataset currently loaded in the grid. Summary values reflect calculations across all grid rows.
-> * With remote data and paging enabled, aggregate values in the footer are calculated based on records displayed in the current page. This means the summary reflects only the visible rows, not the entire dataset.
+>* With remote data and paging enabled, aggregate values in the footer are calculated based on records displayed in the current page. This means the summary reflects only the visible rows, not the entire dataset.
 
 ## Built-in aggregate types
 
 The Syncfusion Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
 
-Available built-in aggregate types include:
+- `Sum`: Calculates the total of all values in the column.
+- `Average`: Calculates the mean of all values.
+- `Min`: Returns the smallest value.
+- `Max`: Returns the largest value.
+- `Count`: Counts the total number of records.
+- `TrueCount`: Counts the number of true values in the column.
+- `FalseCount`: Counts the number of false values in the column.
 
-* **Sum:** Returns the total sum of all values in the column.
-* **Average:** Calculates the average value in the column.
-* **Min:** Returns the minimum value.
-* **Max:** Returns the maximum value.
-* **Count:** Provides the total count of values.
-* **TrueCount:** Counts the number of `true` values.
-* **FalseCount:** Counts the number of `false` values.
-
-Below is an example illustrating usage of built-in aggregate types in the Syncfusion Grid:
+The following example demonstrates using built-in aggregate types in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,13 +179,11 @@ Below is an example illustrating usage of built-in aggregate types in the Syncfu
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs2" %}
 
-## Multiple aggregates
+## Multiple aggregates for a column
 
-Multiple aggregate types can be specified for a single column, allowing the Grid to calculate and display different summary values together for the same column. This is useful when you need to show several aggregates (such as sum, average, min, max, or custom calculations) for one field at the same time.
+A grid column typically supports a single aggregate function such as Sum, Average, or Count, which produces one summary value for the entire column. In cases where different summary values are required at the same time, multiple aggregates can be configured. This feature makes it possible to calculate and display several values such as Sum, Average, Minimum, Maximum, or custom calculations concurrently for a specific column.
 
-You can define multiple aggregates in the Syncfusion Angular Grid by providing an array to the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property in the column definition.
-
-The following example demonstrates how to configure multiple aggregates for a column:
+- By specifying the aggregate `type` as an array, which allows multiple values to be shown together in a single summary row. For example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,7 +200,8 @@ The following example demonstrates how to configure multiple aggregates for a co
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs3" %}
 
-## See Also
-
-* [Tooltip for aggregate footer in Angular Grid](https://www.syncfusion.com/forums/154190/tooltip-for-aggregate-footer-in-angular-grid)
-* [How to export aggregate footer and apply outer border on excel data in Angular Grid](https://www.syncfusion.com/forums/151023/how-to-export-aggregate-footer-and-apply-outer-border-on-excel-data-in-angular-grid)
+## See also
+- [Custom aggregates](./custom-aggregate)
+- [Reactive aggregates](./reactive-aggregate)
+- [Group and caption aggregates](./group-and-caption-aggregate)
+- [Aggregates API](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregatecolumn)

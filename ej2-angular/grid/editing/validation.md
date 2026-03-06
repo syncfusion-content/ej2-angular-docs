@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Validation in Angular Grid component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Validation | Syncfusion
+description: Angular Grid validation supports built-in and custom rules, clear error messages, and safeguards that block invalid entries during editing.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Grid component
+# Validation in Angular Grid Component
 
-Validation is essential for ensuring data integrity in applications. The Syncfusion Angular Grid component provides robust, built-in support for data validation, helping guarantee that data entered or edited in the grid meets predefined criteria and maintaining accuracy across all records.
+Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in validation support to make this process easy and effective.
+
+> For basic grid editing setup and configuration, refer to the [Editing Feature Setup](../editing/edit.md#set-up-editing) section first.
 
 ## Column validation
 
-Column validation verifies edited or newly added data against field-specific rules before saving. By applying rules to individual columns, erroneous data is prevented, error messages are shown, and only valid records are committed. Syncfusion Grid leverages the **Form Validator** component for this purpose. Use the [columns.validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#validationrules) property to define validation logic for columns.
+Column validation applies validation rules to individual columns during edit operations, ensuring data accuracy before saving. Invalid data displays error messages and prevents saving. The [FormValidator](https://ej2.syncfusion.com/angular/documentation/api/form-validator) component validates data using rules defined in the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column#validationrules) property for each column.
 
 Example of applying validation rules to a grid column:
 
@@ -32,9 +34,9 @@ Example of applying validation rules to a grid column:
 
 ## Custom validation
 
-Custom validation allows you to implement specific logic for validating column data, beyond built-in rules. Using the **Form Validator custom rules**, custom validation logic and tailored error messages can be presented to users for any field.
+Custom validation rules apply specific rules to grid columns beyond standard built-in validation. The [FormValidator](https://ej2.syncfusion.com/angular/documentation/api/form-validator) component applies these rules and displays error messages for invalid fields. Custom validation supports dependent field validation and numeric range validation for various application scenarios.
 
-Example: Custom validation for the **CustomerID** column:
+The following example demonstrates custom validation for the "Customer ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,9 +52,9 @@ Example: Custom validation for the **CustomerID** column:
 
 ### Custom validation based on dropdown change
 
-Validation rules can be dynamically applied to one column based on the value of another—for example, altering **Salary** validation based on the selection in a **Role** dropdown.
+Dependent validation rules adjust based on selections in other columns, enabling linked column validation. The "Salary" column validation adjusts based on the "Role" column selection, ensuring both columns validate correctly together.
 
-Example applying dependent validation between **Role** and **Salary** columns:
+Example applying dependent validation between "Role" and "Salary" columns:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,9 +70,7 @@ Example applying dependent validation between **Role** and **Salary** columns:
 
 ### Custom validation for numeric columns
 
-Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
-
-In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `change` event of the numeric column is bound to the [validate](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#validate) method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
+Numeric column validation applies rules for numeric data such as positive values, minimum/maximum ranges, or decimal limits. This example uses "customFn" and "customFn1" functions configured through the "freightRules" object to validate numeric values. The numeric columns are bound to the `change` event, which calls the [validate](https://ej2.syncfusion.com/angular/documentation/api/form-validator#validate) method to check the value and display error messages whenever the data changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,9 +86,9 @@ In the following example, custom validation functions, namely **customFn** and *
 
 ## Dynamically add or remove validation rules from the form
 
-Validation rules can be adjusted at runtime based on application logic or user interaction. Use [addRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#addrules) to attach rules or [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#removerules) to detach them, by targeting the input name attribute.
+Validation rules can be added or removed from input elements based on application scenarios or data conditions. The [addRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#addrules) method adds validation rules dynamically to input elements using the name attribute.
 
-Example: Dynamically toggle required validation with a **checkbox** selection:
+The following example demonstrates dynamic addition or removal of validation rules for an input field based on a checkbox selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,13 +102,13 @@ Example: Dynamically toggle required validation with a **checkbox** selection:
   
 {% previewsample "page.domainurl/samples/grid/edit-validation-cs3" %}
 
-> To remove an existing validation rule from an input element, use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator/#removerules) method.
+> To remove an existing validation rule from an input element, use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#removerules) method.
 
 ## Change the position of validation error messages
 
-The default placement for validation error messages is below the input field. To customize error message position (for example, above or beside the input), implement the [customPlacement](https://ej2.syncfusion.com/documentation/api/form-validator/#customplacement) event.
+Error message positioning customizes where validation messages appear in the grid. By default, messages display below the input field. The [customPlacement](https://ej2.syncfusion.com/angular/documentation/api/form-validator#customplacement) event repositions messages to custom locations based on application needs.
 
-Example displaying error messages at the top of the input field:
+The following example demonstrates moving validation messages to the top of the input field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ Example displaying error messages at the top of the input field:
 
 ## Show custom error message for failed CRUD actions
 
-During CRUD operations, errors (such as validation failures or server exceptions) can be handled and presented to users via custom messages. Use the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event to intercept failures, extract server messages, and display them appropriately in the UI.
+Error handling for CRUD operations in the grid displays helpful error messages when operations fail. The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid#actionfailure) event triggers on operation failures, providing access to error messages from server responses for display.
 
 Example showing server error feedback in Angular Grid:
 

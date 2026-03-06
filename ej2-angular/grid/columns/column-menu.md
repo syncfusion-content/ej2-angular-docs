@@ -1,31 +1,29 @@
 ---
 layout: post
-title: Column menu in Angular Grid component | Syncfusion
-description: Learn here all about Column menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Column Menu | Syncfusion
+description: Angular Grid column menu describes configuring column menus, adding actions like sorting and filtering, and customizing menu items and icons.
 platform: ej2-angular
 control: Column menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column menu in Angular Grid component
+# Column menu in Angular Grid Component
 
-The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When the column header's menu icon is clicked, a menu displays with these integrated features. To enable the column menu, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnmenu) property to **true** in the Grid configuration.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a built-in column menu that offers quick access to essential column operations, such as sorting, grouping, filtering, column chooser, and autofit. This menu appears when the menu icon in a column header is clicked, enabling streamlined interaction with grid data. The column menu can be enabled by setting the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumnmenu) property to `true` in the Grid configuration and injecting the `ColumnMenuService` module in the provider section of `AppModule`.
 
-To use the column menu, inject the **ColumnMenuService** in the provider section of **AppModule**.
-
-The default column menu items are displayed in the following table:
+The default column menu items are displayed in the following table.
 
 | Item | Description |
 |-----|-----|
-| **SortAscending** | Sort the current column in ascending order. |
-| **SortDescending** | Sort the current column in descending order. |
-| **Group** | Group the current column. |
-| **Ungroup** | Ungroup the current column. |
-| **AutoFit** | Autofit the current column. |
-| **AutoFitAll** | Autofit all columns. |
-| **ColumnChooser** | Choose the column visibility. |
-| **Filter** | Show the filter option as given in [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#type) |
+| `SortAscending` | Sort the current column in ascending order. |
+| `SortDescending` | Sort the current column in descending order. |
+| `Group` | Group the current column. |
+| `Ungroup` | Ungroup the current column. |
+| `AutoFit` | Autofit the current column. |
+| `AutoFitAll` | Autofit all columns. |
+| `ColumnChooser` | Choose the column visibility. |
+| `Filter` | Show the filter option as given in [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#type). |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,16 +37,14 @@ The default column menu items are displayed in the following table:
   
 {% previewsample "page.domainurl/samples/grid/grid-cs6" %}
 
-> * The column menu can be disabled for a particular column by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) to false.
-> * The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) with required items.
+>* The column menu can be disabled for a particular column by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column#showcolumnmenu) to `false`.
+>* The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) with required items.
 
 ## Prevent column menu for particular column
 
-The Syncfusion Angular Grid component provides the ability to prevent the column menu from appearing for specific columns. This feature is useful when certain columns should not be customizable through the column menu.
+The column menu in Grid can be controlled at both the Grid level and the column level. When the Grid's `showColumnMenu` property is enabled, every column displays its menu by default. To prevent the menu from appearing for a particular column, the column definition itself must explicitly set the `showColumnMenu` property to `false`.
 
-To prevent the column menu for a particular column, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) property to **false** for that specific column configuration. This disables the column menu options specifically for the designated column, while other columns retain the column menu functionality.
-
-The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**:
+The following example demonstrates disabling the column menu for the "Order ID" column by setting the `showColumnMenu` property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,11 +57,13 @@ The following example demonstrates how to prevent the column menu for a specific
 
 {% previewsample "page.domainurl/samples/grid/prevent-column-menu" %}
 
-## Add custom column menu item
+## Adding custom column menu items
 
-The custom column menu item feature allows addition of additional menu items to the column menu in the Syncfusion Grid. These custom menu items can be defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel/) objects. Actions for these custom items can be defined in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuclick) event.
+The custom column menu item feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows extending the default column menu with additional options or replacing it entirely with custom items, depending on requirements. These items are defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel) objects. Each object specifies attributes such as `text`, `id`, and `iconCss` to represent the custom menu item.
 
-The following example demonstrates how to add a custom column menu item to clear the sorting of the Grid:
+The functionality of these items is implemented through the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuclick) event. This event is triggered whenever a menu item is selected, enabling identification of the item by its `id` and execution of the corresponding action.
+
+The following example demonstrates adding a custom column menu item to clear sorting in the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,9 +79,9 @@ The following example demonstrates how to add a custom column menu item to clear
 
 ## Customize menu items for particular columns
 
-In scenarios where specific items need to be hidden from the column menu for particular columns, set the [columnMenuOpenEventArgs.hide](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuOpenEventArgs) property to true in the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuopen) event.
+The Grid allows menu items to be shown or hidden for individual columns, ensuring that only relevant options are displayed. This customization is achieved through the [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuopen) event, where the [ColumnMenuOpenEventArgs.ColumnMenuItemModel.hide](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmenuitemmodel) property can be set to `true` for any item that should not appear in the menu of a particular column. This approach provides fine-grained control, making the column menu context-aware and preventing unnecessary actions from being presented in columns where they are not applicable.
 
-The following example demonstrates hiding the **Filter** item in the column menu when it opens for the **OrderID** column:
+The following example demonstrates hiding the `Filter` item in the column menu for the "Order ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,11 +97,9 @@ The following example demonstrates hiding the **Filter** item in the column menu
 
 ## Render nested column menu
 
-The nested column menu feature provides an extended menu option in the grid column headers, allowing access to additional actions and options related to the columns.
+Nested column menus in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provide an organized way to display extended options within column headers. Instead of listing all actions at the same level, items can be grouped into sub-menus, making the menu easier to navigate and more structured. This feature is enabled through the `columnMenuItems` property, which accepts an array of built-in menu item strings or custom menu item objects. By defining items with nested structures, additional actions related to a column can be grouped logically under sub-menus.
 
-To enable the nested column menu feature, define the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) property in the component. The `columnMenuItems` property is an array that contains the items for the column menu. Each item can be a string representing a built-in menu item or an object defining a custom menu item.
-
-Here is an example of how to configure the `columnMenuItems` property to include a nested menu:
+The `columnMenuItems` property can be set up to include a nested menu, such as "Sub Menu", alongside the existing default column menu items. This allows the column menu to display both the standard options and additional grouped actions within a structured sub-menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,11 +115,11 @@ Here is an example of how to configure the `columnMenuItems` property to include
 
 ## Customize the icon of column menu
 
-To customize the column menu icon, override the default grid class **.e-icons.e-columnmenu** with a custom CSS property called **content**. By specifying a Unicode character or an icon font's CSS class, the icon displayed in the column menu can be changed.
+The column menu icon in Grid can be changed by overriding the default CSS class `.e-icons.e-columnmenu`. This is done using the CSS `content` property, where either a Unicode character or an icon font class can be specified to replace the default icon.
 
-To customize the column menu icon, follow these steps:
+**Customization steps:**
 
-1. Add the necessary CSS code to override the default grid class:
+1. Add the CSS code to override the default grid class:
 
 ```css
 .e-grid .e-columnheader .e-icons.e-columnmenu::before {
@@ -131,14 +127,14 @@ To customize the column menu icon, follow these steps:
 }
 ```
 
-2. Import the required icon stylesheets. Either the material or bootstrap5 style can be used, depending on preference. Add the following code to import the stylesheets:
+2. Import the required icon stylesheets (material or bootstrap5 style):
 
 ```html
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material3.css" rel="stylesheet" />
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
 ```
 
-Here is an example that demonstrates how to customize the column menu icon in the Syncfusion Grid:
+Here is an example that demonstrates customizing the column menu icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,11 +150,12 @@ Here is an example that demonstrates how to customize the column menu icon in th
 
 ## Column menu events
 
-The column menu in Syncfusion Angular Grid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. These events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
+Column menu events in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provide ways to customize behavior when the menu is opened or when an item is clicked. These events make it possible to extend functionality or apply specific logic based on user interactions.
 
-1. The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuopen) event triggers before the column menu opens.
-
-2. The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuclick)  event triggers when the column menu of the grid is clicked.
+| Event | Description |
+|-------|-------------|
+| [`columnMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuopen) | Triggers before the column menu opens. |
+| [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuclick) | Triggers when a column menu item is clicked. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

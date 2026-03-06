@@ -1,22 +1,20 @@
 ---
 layout: post
-title: Reactive aggregate in Angular Grid component | Syncfusion
-description: Learn how to implement reactive aggregate values in the Syncfusion Angular Grid, with auto and manual aggregate refresh based on different editing modes.
+title: Angular Grid - Reactive Aggregate | Syncfusion
+description: Angular Grid reactive aggregate supports live aggregate updates during editing or data changes, ensuring summaries always represent the current grid state.
 platform: ej2-angular
 control: Reactive aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive aggregate in Angular Grid component
+# Reactive Aggregate in Angular Grid Component
 
-The Syncfusion Angular Grid component supports reactive aggregates, enabling dynamic updates of aggregate values as data changes. Aggregate summaries in the footer, group footer, and group caption cells are automatically or manually refreshed, depending on the Grid’s editing configuration and event handling.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports reactive aggregates, which automatically recalculate and update aggregate values in real time whenever the data changes.
 
-## Automatic update of aggregates in batch editing
+## Auto-update aggregates in Batch editing
 
-When the grid operates in **batch editing** mode, aggregate values in the footer, group footer, and group caption cells are refreshed automatically every time a cell is saved. This ensures that aggregate values remain accurate as edits occur, supporting real-time data analysis within the grid.
-
-Example: Automatic aggregate updates in batch editing mode:
+When the Grid is in batch editing mode, aggregate values in the footer, group footer, and group caption rows are automatically refreshed after every cell save, ensuring the aggregate values always reflect the latest edited data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,7 +86,12 @@ export class AppComponent implements OnInit {
 
 ## Manual aggregate refresh in inline and dialog editing
 
-By default, aggregate values are **not** automatically updated in **inline** and **dialog** editing modes, since value changes cannot be detected in real time during editing. In these scenarios, you can manually refresh the aggregates by calling the aggregate module’s refresh method in response to editor change events.
+By default, reactive aggregate updates are not supported in Inline and Dialog edit modes because value changes cannot be automatically detected for all editor types.
+
+To ensure aggregates are updated correctly, they must be refreshed manually using the `aggregateModule.refresh()` method:
+
+- **Inline edit mode:** Register an `input` event on the editor (for example, the Freight column). Whenever the value changes, call `aggregateModule.refresh()` to update the aggregate values.
+- **Dialog edit mode:** Since multiple editors are rendered inside a dialog, aggregates are refreshed automatically after the data is saved by clicking the Save button. In special cases where an immediate refresh is required for a particular editor before saving, apply the same approach as in Inline mode: bind an `input` event to that editor and call `aggregateModule.refresh()` to update the aggregate values instantly.
 
 Example: Manually refreshing aggregates in inline editing mode:
 
@@ -173,3 +176,10 @@ interface ItemType{
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-inlineedit-cs1" %}
 
 > In inline and dialog editing, manually invoke the aggregate module’s `refresh` method to update aggregates after data changes. Access aggregate values in template cells by their type key (e.g., `data.sum`, `data.max`).
+
+
+## See also
+- [Aggregates overview](./aggregates)
+- [Batch editing](../editing/batch-editing)
+- [Inline editing](../editing/in-line-editing)
+- [Aggregates API](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn)

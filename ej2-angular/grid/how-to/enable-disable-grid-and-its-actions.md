@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Enable or disable grid and its actions in Angular Grid component | Syncfusion
-description: Learn how to enable or disable the Syncfusion Angular Grid and its actions through CSS and event handling for improved user interaction control.
+title: Angular Grid – Enable or Disable Actions | Syncfusion
+description: Angular Grid provides options and API examples to enable or disable actions, configure behavior, and control grid interactions.
 platform: ej2-angular
 control: Enable disable grid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or disable grid and its actions in Angular Grid component
+# Enable or Disable Grid and its Actions in Angular Grid Component
 
-You can enable or disable the Syncfusion Angular Grid and its actions by applying or removing appropriate CSS styles on user interaction.
+Enabling or disabling the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid and its actions is essential for managing interaction based on application state. This approach enhances usability and ensures controlled access to grid operations.
 
 To control the enabled or disabled state of the grid and its actions, follow these steps:
 
-**Step 1:** Define a CSS class to visually and functionally disable the Grid.
+**Step 1:** Define a CSS class to visually and functionally disable the grid.
 
 ```css
     .disablegrid {
@@ -43,7 +43,7 @@ To control the enabled or disabled state of the grid and its actions, follow the
 
 ```
 
-In the following example, clicking the button toggles enabling or disabling the Grid and all its actions.
+In the following example, clicking the button toggles enabling or disabling the grid and all its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

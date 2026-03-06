@@ -1,36 +1,37 @@
 ---
 layout: post
-title: Filter bar in Angular Grid component | Syncfusion
-description: Learn here all about Filter bar in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Filter Bar | Syncfusion
+description: Angular Grid filter bar enables filtering with expression operators, configurable modes, column settings, custom templates, and active filter status display.
 platform: ej2-angular
 control: Filter bar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter bar in Angular Grid component
+# Filter Bar in Angular Grid Component
 
-The filter bar feature in the Syncfusion Angular Grid provides an intuitive and immediate way to filter data by displaying input fields directly below each column header. This filtering approach allows users to enter filter criteria and instantly view filtered results, making it ideal for scenarios requiring quick data searches and real-time filtering feedback.
+The filter bar feature provides a row of input fields directly below the grid headers, enabling instant data filtering. Each column displays an input field where filter criteria can be entered, and the grid updates immediately to show matching results.
 
-The filter bar is particularly effective for applications where users need to perform frequent filtering operations or when working with datasets that require immediate visual feedback during the filtering process. Unlike other filtering methods, the filter bar maintains visibility of filter criteria, providing users with a clear understanding of applied filters at all times.
+For grid filtering setup and configuration, refer to the [Filtering](filtering#set-up-filtering).
 
-To enable the filter bar, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property to true. This renders a filter bar row next to the header, allowing users to filter records using different expressions based on column data types.
+To activate the filter bar, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true`.
 
 **Filter bar expressions:**
-You can enter the following filter expressions(operators) manually in the filter bar.
 
-Expression |Example |Description |Column Type
------|-----|-----|-----
-= |=value |equal |Number
-!= |!=value |notequal |Number
-> |>value |greaterthan |Number
-< |<value |lessthan |Number
->= |>=value |greaterthanorequal |Number
-<=|<=value|lessthanorequal |Number
-* |*value |startswith |String
-% |%value |endswith |String
-N/A |N/A |Always **equal** operator will be used for Date filter |Date
-N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
+Filter expressions are operators that define how the grid compares entered values against data. The available operators depend on the column data type.
+
+| Expression | Example | Description | Column Type |
+|------------|---------|-------------|-------------|
+| = | =value | Matches values exactly equal to the entered value | Number |
+| != | !=value | Matches values not equal to the entered value | Number |
+| > | >value | Matches values greater than the entered value | Number |
+| < | <value | Matches values less than the entered value | Number |
+| >= | >=value | Matches values greater than or equal to the entered value | Number |
+| <= | <=value | Matches values less than or equal to the entered value | Number |
+| * | *value | Matches values that start with the entered text | String |
+| % | %value | Matches values that end with the entered text | String |
+| N/A | N/A | Always uses equal operator for Date columns | Date |
+| N/A | N/A | Always uses equal operator for Boolean columns | Boolean |
 
 The following example demonstrates basic filter bar activation in the grid:
 
@@ -46,7 +47,7 @@ The following example demonstrates basic filter bar activation in the grid:
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs1" %}
 
-> To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings/#type) as **FilterBar**.
+> To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings#type) as `FilterBar` mode.
 
 ## Filter bar modes
 
@@ -54,7 +55,7 @@ The Syncfusion Angular Grid filter bar operates in two distinct modes that deter
 
 **OnEnter Mode:**
 
-When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#mode) is set to **OnEnter**, the filter bar captures filter criteria but delays filtering execution until the **Enter** key is pressed. This mode is beneficial when:
+When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#mode) is set to `OnEnter`, the filter bar captures filter criteria but delays filtering execution until the <kbd>Enter</kbd> key is pressed. This mode is beneficial when:
 
 - Users need to enter complex filter criteria without triggering multiple filtering operations
 - Working with large datasets where immediate filtering might cause performance issues
@@ -62,7 +63,7 @@ When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Immediate Mode:**
 
-When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#mode) is set to **Immediate**, the filter bar applies filtering instantly as users type or modify filter criteria. This mode provides:
+When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#mode) is set to `Immediate`, the filter bar applies filtering instantly as users type or modify filter criteria. This mode provides:
 
 - Real-time filtering feedback and immediate result previews
 - Enhanced user experience for quick data searches
@@ -82,9 +83,11 @@ When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/
 
 ## Display filter text in pager
 
-The Syncfusion Angular Grid provides functionality to display current filter status within the pager component. This feature helps users understand applied filters and filtering criteria without examining individual filter bar cells.
+The [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#showfilterbarstatus) property displays the current filter criteria in the grid pager area. This provides a clear summary of active filters without examining each column's filter bar input.
 
-Enable this feature by setting the [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#showfilterbarstatus) property to true within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) configuration. The pager will then display a summary of active filters, providing clear visibility into the current filtering state.
+**When to use**: Enable this when working with complex multi-column filters to maintain awareness of all active filtering criteria. This is particularly useful when filters are applied across columns that are scrolled out of view.
+
+The following example shows filter status display in the pager:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,11 +103,9 @@ Enable this feature by setting the [showFilterBarStatus](https://ej2.syncfusion.
 
 ## Show or hide filter bar operator in filter bar cell
 
-The Syncfusion Angular Grid allows users to modify filter operators directly within the filter bar cells during the filtering process. This feature enables dynamic operator changes without accessing separate dialog boxes or menus.
+The [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#showfilterbaroperator) property displays a dropdown in each filter bar cell, allowing the filter operator to be changed directly in the UI. By default, string columns use the `startswith` operator, but this can be changed to `contains`, `endswith`, `equal`, etc.
 
-For example, while the default operator for string-type columns is "startswith," users can change this to other operators like "contains," "endswith," or "equal" directly within the filter bar interface.
-
-Enable this functionality by setting the [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#showfilterbaroperator) property to true within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) configuration.
+To display the operator dropdown in filter bar cells, set the [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#showfilterbaroperator) property of the `filterSettings` configuration to `true`. By default, this property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,11 +121,9 @@ Enable this functionality by setting the [showFilterBarOperator](https://ej2.syn
 
 ## Prevent filtering for particular column
 
-You can disable filtering for specific columns by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property to false within the [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) configuration. This feature is useful when certain columns contain data that should not be filtered, such as action columns or calculated fields.
+Set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowfiltering) property to `false` on a [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column) to disable the filter bar input for that specific column. Disable filtering on non-filterable columns like action (button) columns, image columns, etc.
 
-When filtering is disabled for a column, the filter bar input field for that column will not be rendered, providing a cleaner interface and preventing unnecessary filtering attempts.
-
-The following example demonstrates how to disable the filter bar for the **CustomerID** column:
+The following example disables filtering for the "Customer ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,11 +139,9 @@ The following example demonstrates how to disable the filter bar for the **Custo
 
 ## Hide filter bar for template column
 
-By default, the filter bar is disabled for template columns since template content may not correspond directly to filterable data. However, you can explicitly hide the filter bar for template columns to provide a cleaner interface.
+Template columns can be used to render images, action buttons, or other custom components that are inherently non-filterable. To completely hide the filter bar input for a template column, use the [filterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) property with an empty element.
 
-Use the [filterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate) property of the [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) to define custom filter bar behavior for template columns. Setting this property to an empty template effectively hides the filter bar for that column.
-
-The following example demonstrates how to hide the filter bar for a template column:
+The following example demonstrates to hide the filter bar for a template column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,13 +157,13 @@ The following example demonstrates how to hide the filter bar for a template col
 
 ## Filter bar template with custom component
 
-The [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) feature enables you to replace the default text box in filter bar cells with custom components. This powerful customization option allows you to implement specialized filtering interfaces using various Syncfusion components such as DatePicker, NumericTextBox, ComboBox, or MultiSelect.
+The [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filterbartemplate) property replaces the default text input with a custom component in the filter bar. This allows using specialized input controls like date pickers, dropdowns, or numeric inputs that provide a better filtering experience for specific data types.
 
 Custom filter bar templates are particularly useful when:
-- Default text input doesn't provide optimal user experience for specific data types
-- You need specialized filtering controls for complex data structures
-- Application design requires consistent component usage across the interface
-- Users need guided input through dropdown selections or date pickers
+- Default text input doesn't provide optimal user experience for specific data types.
+- Specialized filtering controls are required for complex data structures.
+- Application design requires consistent component usage across the interface.
+- Users need guided input through dropdown selections or date pickers.
 
 To implement a custom filter bar template, define the `filterBarTemplate` property within the column configuration:
 
@@ -187,5 +184,5 @@ To implement a custom filter bar template, define the `filterBarTemplate` proper
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
 * [How to change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)

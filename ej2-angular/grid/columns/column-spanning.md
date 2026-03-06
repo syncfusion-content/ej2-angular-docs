@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Column spanning in Angular Grid component | Syncfusion
-description: Learn here all about Column spanning in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Column Spanning | Syncfusion
+description: Angular Grid column spanning supports merging header or cell columns, configuration for colspan behavior, and customization for complex multi-column layouts.
 platform: ej2-angular
 control: Column spanning 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column spanning in Angular Grid component
+# Column Spanning in Angular Grid Component
 
-The column spanning feature in the Syncfusion Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#colspan) attribute in the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the grid.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows adjacent cells to be merged horizontally, creating a more informative and visually appealing layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute within the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, cells can be spanned and the appearance of the Grid can be customized effectively.
 
-In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
+In the following demo, Employee "Davolio" doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 
 ## Change the border color while column spanning
 
-To customize the border color of spanned cells, utilize the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event is triggered before each cell element is appended to the Grid, allowing you to modify cell styles, such as border color, for merged cells.
+The border color of spanned cells can be customized through the  [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event. This event is triggered before the cell element is appended to the Grid, which makes it possible to apply styles programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ To customize the border color of spanned cells, utilize the [QueryCellInfo](http
 
 ## Limitations
 
-* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support column spanning.
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method does not support column spanning.
 * Column spanning is not supported with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
@@ -53,11 +53,11 @@ To customize the border color of spanned cells, utilize the [QueryCellInfo](http
 
 ## column spanning using enableColumnSpan property    
 
-The Syncfusion Angular Grid introduces a simplified approach to horizontally merge cells using the `enableColumnSpan` property. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces a simplified approach to horizontally merge cells using the [enableColumnSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablecolumnspan) property. 
 
 When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event. These merged cells are visually combined into a single cell, improving readability.
 
-Here is an example of how to use the `enableColumnSpan` property to merge cells horizontally:
+Here is an example of using the `enableColumnSpan` property to merge cells horizontally:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,7 +71,7 @@ Here is an example of how to use the `enableColumnSpan` property to merge cells 
   
 {% previewsample "page.domainurl/samples/grid/column-spanning-cs1" %}
 
-> You can also control spanning at the column level. To prevent merging for specific columns, set `enableColumnSpan` to **false** in the column definition.
+> To control spanning at the column level, the [enableColumnSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablecolumnspan) property can be disabled in the column definition. Setting `enableColumnSpan` to `false` prevents merging for that specific column.
 
 ### Limitations
 

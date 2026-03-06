@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Pdf export in Angular Grid component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - PDF Export | Syncfusion
+description: Angular Grid PDF export explains exporting grid data to PDF, configuration, and examples to generate printable and shareable PDF documents.
 platform: ej2-angular
 control: Pdf export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export in Angular Grid component
+# PDF Export in Angular Grid Component
 
-The PDF export feature in the Syncfusion Angular Grid enables exporting grid data to a PDF document, allowing easy creation of printable reports or sharing data in a standardized format.
+The PDF export feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid exporting grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 
-To enable PDF export in the grid, set the [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpdfexport) property to **true** and use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gri#pdfexport) method to initiate exporting.
+To enable PDF export in the Grid, set the [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpdfexport) property to `true` and use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method.
 
-Make sure to inject **PdfExportService** in the providers section of the **AppModule** to use the export feature.
+To use PDF export, inject the `PdfExport` module in the Grid.
 
 The following example demonstrates performing a PDF export action in the grid.
 
@@ -32,11 +32,15 @@ The following example demonstrates performing a PDF export action in the grid.
 
 ## Show spinner while exporting
 
-Displaying a spinner during the export process provides a visual indication of export progress in the Syncfusion Angular Grid.
+Displaying a spinner while exporting in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enhances the experience by providing visual indication during the export process. This indicates the export progress and prevents confusion about operation status.
 
-To show or hide a spinner while exporting, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#hidespinner) methods. Call `showSpinner` on the Grid instance in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event when the PDF Export toolbar item is clicked. Hide the spinner after the export completes by binding the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexportcomplete) event and calling `hideSpinner`.
+To show or hide a spinner while exporting the grid, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#hidespinner) methods within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event.
 
-Example of showing and hiding the spinner during PDF export:
+The `toolbarClick` event triggers when a toolbar item in the Grid is clicked. Within the event handler, verify if the clicked "item" relates to PDF export by checking for the `Grid_pdfexport` identifier. When matched, call the `showSpinner` method on the Grid instance to display the spinner.
+
+To hide the spinner after export completes, bind the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexportcomplete) event and call the `hideSpinner` method on the Grid instance.
+
+The following example demonstrates showing and hiding the spinner during PDF export in the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,11 +56,11 @@ Example of showing and hiding the spinner during PDF export:
 
 ## Binding custom data source while exporting
 
-The Syncfusion Angular Grid allows exporting a custom data source to PDF, even if that data is not already bound to the grid. This enables exporting dynamically generated or application-derived data.
+The PDF export feature provides an option to define a custom data source during export. This enables exporting data not bound to the Grid, which can be generated or retrieved based on application logic.
 
-Specify the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) property within the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object. This property determines the data source for the PDF export operation.
+To export data, define the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) property within the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) object. This property specifies the data source for PDF export.
 
-Example demonstrating export with a dynamically defined data source:
+The following example demonstrates rendering a custom data source during PDF export. By utilizing the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method with the `pdfExportProperties` object through the Grid instance, the data exports to PDF using the dynamically defined data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,17 +74,17 @@ Example demonstrating export with a dynamically defined data source:
   
 {% previewsample "page.domainurl/samples/grid/exporting-cs20" %}
 
-> Ensure to use field names in the custom data source that match the [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) properties of the grid columns for correct export.
+> Make sure to utilize the [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) property that is declared in the Grid columns when modifying the data source for exporting.
 
 ## Exporting with custom aggregate
 
-Custom aggregates in the Syncfusion Angular Grid enable exporting data with additional calculated values, providing more comprehensive information in the exported file.
+Custom aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid export grid data with additional calculated values based on specific requirements. This feature displays a comprehensive data view in the exported file by incorporating aggregated information needed for analysis or reporting purposes.
 
-To use custom aggregation, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property to **Custom** and provide your aggregate function via the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#customaggregate) property.
+To utilize custom aggregation, specify the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property as `Custom` and provide the `customAggregate` function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
-Within your custom function, calculate and return results (such as counts, sums, etc.) as needed.
+Within the `customAggregateFn` function, receive input data containing a `result` property. The function calculates the count of objects where the "Ship Country" field equals "Brazil" and returns the count with a descriptive label.
 
-Example: Exporting the grid with a custom aggregate showing the count of **Brazil** in the **ShipCountry** column.
+The following example shows exporting the Grid with a custom aggregate that calculates the "Brazil" count in the "Ship Country" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,11 +172,11 @@ interface itemType {
 
 ## Exporting with cell and row spanning
 
-Exporting cell and row spans from the Syncfusion Angular Grid maintains the merged structure in the exported PDF. This is useful for preserving the layout of merged cells.
+Exporting data from the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with cell and row spanning maintains cell and row layout in the exported data. This feature is useful when the Grid contains merged cells or rows and the same structure needs preservation in the exported file.
 
-Specify [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/querycellinfoeventargs#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event. Customize export cell appearance using [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo).
+To achieve this, utilize the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/querycellinfoeventargs#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) properties in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event of the Grid. This event allows definition of span values for specific cells. Additionally, customize the appearance of Grid cells during export using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event of the Grid.
 
-Example for exporting with cell and row spanning:
+The following example demonstrates export with cell and row spanning using `queryCellInfo` and `pdfQueryCellInfo` events of the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,13 +190,13 @@ Example for exporting with cell and row spanning:
   
 {% previewsample "page.domainurl/samples/grid/exporting-cs24" %}
 
-> * The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method does not support row and column spanning.
+> The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method does not support row and column spanning.
 
-## Merge duplicate cells in a specific column before exporting
+## Merge duplicate cells in specific column and export in Grid
 
-Merge duplicate cells in a specified column by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event and use [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) during export for PDF formatting. This improves readability and presents grouped data visually.
+Duplicate cells(based on their values) in a specific column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can be merged based on their values. This can be achieved by enabling the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Grid. Additionally, duplicate cells in the specified column can be merged during PDF export by using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event. This feature enhances data readability and provides a clearer visual presentation both in the UI and in exported documents.
 
-Example: Merging duplicate cells in the **OrderID** column in both Grid view and export:
+The following example demonstrates merging duplicate cells in the "Order ID" column in both Grid view and export:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,9 +212,11 @@ Example: Merging duplicate cells in the **OrderID** column in both Grid view and
 
 ## Exporting with custom date format
 
-You can export grid data with a custom date format by using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property for grid columns. Define a custom format in the format options to format date values.
+The exporting functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid exports grid data with custom date formats. This feature is useful when exporting grid data requires customized date values.
 
-Example: The **OrderDate** column is exported in the format day-of-the-week, month abbreviation, day, and 2-digit year (e.g., Thu, Jul 4, '96).
+To apply a custom date format to Grid columns during export, use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property. This property allows definition of a custom format using format options.
+
+The following example demonstrates exporting Grid data with a custom date format. In this example, the formatOptions object is used as the `format` property for the "Order Date" column. This custom date format displays the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g., Thu, Jul 4, '96).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,13 +232,13 @@ Example: The **OrderDate** column is exported in the format day-of-the-week, mon
 
 ## Exporting multiple grids
 
-The Syncfusion Angular Grid makes it possible to export multiple grids for comparison, either on the same page or different pages of a PDF.
+Exporting multiple grids in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component exports different grids for side-by-side comparison in external applications on the same or different pages of a PDF file. Each grid is identified by its unique ID. Specify which grids to export by listing their "IDs" in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgrids) property.
 
 ### Same page
 
-Export multiple grids to a single PDF page using [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#type) set to **AppendToPage**, and [multipleExport.blankSpace](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#blankspace) to define space between grids.
+PDF exporting supports exporting multiple grids on the same page. To export grids on the same page, set the [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#type) property to `AppendToPage` in the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#multipleexport). An option exists to provide blank space between grids using the [multipleExport.blankSpace](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#blankspace) property.
 
-Example of exporting multiple grids to the same page:
+The following example demonstrates exporting multiple grids to the same page in a PDF file when a toolbar item is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,15 +254,17 @@ Example of exporting multiple grids to the same page:
 
 ### New page
 
-Export multiple grids to separate PDF pages with [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#type) set to **NewPage**.
+The PDF export functionality enables exporting multiple grids into separate pages (each grid on a new page) within the PDF file.
 
-**Steps:**
+To achieve this:
 
 1. Access the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#multipleexport) of the Grid component.
-2. Set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#type) to **NewPage**.
-3. Trigger the PDF export.
 
-Example for exporting multiple grids to separate pages:
+2. Set the [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multiplePdfExport#type) property to `NewPage`.
+
+3. Trigger the PDF export operation.
+
+The following example demonstrates exporting multiple grids to a PDF file when a toolbar item is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,19 +280,23 @@ Example for exporting multiple grids to separate pages:
 
 ### Limitations
 
-* Multiple grids exporting is not supported with server-side exporting.
+* Multiple grids exporting feature is not supported with server side exporting.
 
 ## Exporting hierarchy grid
 
-Export hierarchy data, including master and child grids, to PDF using the [pdfExportProperties.hierarchyExportMode](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#hierarchyexportmode) property. Control export with these options:
+Exporting a hierarchy grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component generates a PDF document that includes the master grid along with its child grids. This feature is useful when exporting hierarchical data with its related details.
+
+To achieve this, customize the exporting behavior by using the `pdfExportProperties.hierarchyExportMode` property of the Grid.
+
+The `hierarchyExportMode` property specifies the exporting behavior for the hierarchy grid. Available options are:
 
 | Mode     | Behavior    |
 |----------|-------------|
-| Expanded | Exports the master grid with expanded child grids. |
-| All      | Exports the master grid with all child grids, regardless of their expanded state. |
-| None     | Exports only the master grid. |
+| `Expanded` | Exports the master grid with expanded child grids. |
+| `All`      | Exports the master grid with all child grids, expanded or not. |
+| `None`     | Exports only the master grid without any child grids. |
 
-Example: Configure hierarchy export mode using a [DropDownList](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) in the UI to change `hierarchyExportMode` for PDF export.
+The following example demonstrates exporting a hierarchical grid to a PDF document. Change the `pdfExportProperties.hierarchyExportMode` property by using the [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -300,9 +312,9 @@ Example: Configure hierarchy export mode using a [DropDownList](https://ej2.sync
 
 ### Format the child grid columns before exporting
 
-Use the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event to customize child grid columns when exporting hierarchy grids. Adjust column formatting before the export, such as setting date formats.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event, which triggers for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
 
-Example: The **OrderDate** column in the child grid is formatted as `dd/MM/yyyy` during PDF export:
+In the following example, the `exportDetailDataBound` event modifies the "Order Date" column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property, the date values display as `dd/MM/yyyy` when exported to PDF document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -318,9 +330,11 @@ Example: The **OrderDate** column in the child grid is formatted as `dd/MM/yyyy`
 
 ## Remove header row while exporting
 
-To export grid data without a header row, handle the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfheaderquerycellinfo) event and omit content and height for header cells. This ensures only data rows are included in the exported PDF.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid PDF exporting feature provides option to remove the header row from the exported file. This is useful when exporting grid data without including the header values in the exported document.
 
-Example of export without a header row:
+To achieve this, utilize the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfheaderquerycellinfo) event of the Grid. This event allows customization of the header cells during the PDF export process. By handling this event, remove the header row from the exported file by not providing any content and height for the header cells. This ensures that the exported file contains only the data rows without header information.
+
+The following example demonstrates performing export without a header using the `pdfHeaderQueryCellInfo` event of the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -336,4 +350,4 @@ Example of export without a header row:
 
 ## See also
 
-* [Exporting Grid in Cordova application](https://ej2.syncfusion.com/angular/documentation/grid/how-to/exporting-grid-in-cordova-application)
+[Exporting Grid in Cordova application](https://ej2.syncfusion.com/angular/documentation/grid/how-to/exporting-grid-in-cordova-application)

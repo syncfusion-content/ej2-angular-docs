@@ -1475,11 +1475,6 @@ The following snippets assemble the final Angular Grid configuration used in the
       [validationRules]="validationRules.dueDate"></e-column>
     <e-column field="ResponseDue" headerText="Response Due" width="200" format="MMM d, yyyy, h:mm a"
       editType="datetimepickeredit" [validationRules]="validationRules.responseDue">
-      <ng-template #template let-data>
-        <span class="response-due">
-          {{ data.ResponseDue ? (data.ResponseDue | date:'MMM d, yyyy, h:mm a') : '' }}
-        </span>
-      </ng-template>
     </e-column>
     <e-column field="UpdatedAt" headerText="Last Modified" width="200"
       type="dateTime" format="MMM d, yyyy, h:mm a" editType="datetimepickeredit"></e-column>

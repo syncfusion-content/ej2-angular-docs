@@ -304,7 +304,7 @@ loadCldr(
   numberingSystems
 );
 ```
-**Step 2:** To import **json** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to `true` to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to `true` as shown below:
+**Step 2:** To import JSON files, enable JSON module resolution in TypeScript by setting `resolveJsonModule` to `true` in `tsconfig.json`. Also set `esModuleInterop` to `true` to improve module interoperability, as shown below:
 
 ```ts
 {
@@ -372,7 +372,7 @@ The Right-to-Left (RTL) feature switches text direction and layout from left-to-
 
 Enable RTL by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/grid#enablertl) property to `true`. This adjusts the Grid's text direction and layout for right-to-left languages.
 
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to `true` to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to `true` as shown below:
+To work with JSON files, enable JSON module resolution in TypeScript by setting `resolveJsonModule` to `true` in `tsconfig.json`. Also set `esModuleInterop` to `true` to improve module interoperability, as shown below:
 
 ```ts
 {

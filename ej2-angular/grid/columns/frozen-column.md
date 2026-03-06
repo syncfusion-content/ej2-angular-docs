@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column pinning (Frozen) in Angular Grid Component | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion Angular Grid Component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Frozen Column | Syncfusion
+description: Angular Grid frozen column keeps key fields visible while scrolling, offering flexible configuration to sync with scrollable content.
 platform: ej2-angular
 control: Column pinning (Frozen) 
 documentation: ug
@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Column Pinning (Frozen) in Angular Grid Component
 
-The Syncfusion Angular Grid component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
 
 > Frozen columns require careful configuration to avoid rendering issues. Ensure they are within the grid’s viewport and test rendering across different screen sizes for responsiveness.
 
 ## Freeze multiple columns
 
-The Syncfusion Angular Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
 
-The following example sets the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property to **2**, freezing the first two columns on the left side of the grid.
+The following example sets the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property to "2", freezing the first two columns on the left side of the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,16 +35,15 @@ The following example sets the [frozenColumns](https://ej2.syncfusion.com/angula
 > * Frozen columns must not be set outside the grid’s viewport.
 > * The Grid supports column virtualization with frozen columns, improving performance for large datasets.
 > * Frozen columns are supported only for columns visible in the current view.
-> * Both [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) properties can be used together.
-> * When column virtualization and frozen columns are enabled, horizontal scrolling via touchpad gestures (e.g., two-finger swipe) is not supported. Use the horizontal scrollbar instead.
+> * Both [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) and [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid#frozenrows) properties can be used together.
+> * When column virtualization and frozen columns are enabled, horizontal scrolling via touch pad gestures (e.g., two-finger swipe) is not supported. Use the horizontal scrollbar instead.
 
 ## Freeze particular columns
 
-The Syncfusion Angular Grid allows freezing specific columns using the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property, enabling selected columns to remain fixed on the left side while others scroll horizontally. Unlike the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) property, which freezes columns in their initial order, `isFrozen` provides flexibility to freeze columns at any index.
+The Grid provides a straightforward way to freeze individual columns on the left side using the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isfrozen) property in the column definition. When this property is set to `true`, the chosen column is locked at the leftmost position of the Grid and remains visible while scrolling horizontally.
 
-To freeze a particular column in the grid, you can utilize the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property of the grid component as **true**.
 
-The following example demonstrates freezing a specific column using the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) property, controlled via the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component. The [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) method retrieves the column, and the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method updates the grid. For large datasets, minimize frequent calls to `refreshColumns` to optimize performance.
+The following example demonstrates freezing a particular column using the `isFrozen` property. Initially, the "OrderID" column is frozen. The [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the [`DropDownList`](https://ej2.syncfusion.com/angular/demos/#bootstrap5/drop-down-list/default) component allows dynamically changing which column is frozen. The selected column's `isFrozen` property is modified using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield) method, and the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method updates the display.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,19 +59,17 @@ The following example demonstrates freezing a specific column using the [isFroze
 
 ## Freeze direction
 
-In the Syncfusion Angular Grid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
+The Grid supports different freeze directions, which determine where frozen columns appear. By setting the [`freeze`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#freeze) property in a column definition, columns can be pinned to the left, right, or fixed in place. This makes it easy to keep important columns visible while scrolling and gives flexibility when designing grids with multiple frozen sections.
 
-To achieve this, you can utilize the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#freeze) property. This property is used to specify the freeze direction for individual columns. The grid will adjust the column positions based on the `column.freeze` value.
+The Grid supports three freeze direction types:
 
-The types of the `column.freeze` directions:
+| Direction | Description | Behavior |
+|-----------|-------------|----------|
+| `Left` | Freezes columns on the left side | Frozen columns remain fixed on the left while other columns scroll horizontally |
+| `Right` | Freezes columns on the right side | Frozen columns remain fixed on the right while other columns scroll horizontally |
+| `Fixed` | Locks columns at a specific position | Frozen columns stay fixed in their position, creating a locked section between scrollable areas
 
-* **Left**: When you set the `column.freeze` property to **Left**, specific columns will be frozen on the left side of the grid. The remaining columns will be movable.
-
-* **Right**: When you set the `column.freeze` property to **Right**, certain columns will be frozen on the right side of the grid, while the rest of the columns remain movable.
-
-* **Fixed**: The Fixed direction locks a column at a fixed position within the grid. This ensures that the column is always visible during horizontal scroll.
-
-In the following example, the **ShipCountry** column is frozen on the left side, the **CustomerID** column is frozen on the right side and the **Freight** column is frozen on the fixed of the content table. Additionally, you can modify the `column.freeze` property to **Left**, **Right** and **Fixed** based on the selected column by utilizing the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component.
+In the following example, the "ShipCountry" column is frozen on the left side, the "CustomerID" column is frozen on the right side and the "Freight" column is frozen on the fixed of the content table. Additionally, the `column.freeze` property to `Left`, `Right` and `Fixed` based on the selected column by utilizing the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the `DropDownList` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,29 +83,30 @@ In the following example, the **ShipCountry** column is frozen on the left side,
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs2" %}
 
-> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) properties.
 
-## Change default frozen line color
+## Customize frozen line color
 
-You can customize the frozen line borders of frozen columns in the Syncfusion Grid component by applying custom CSS styles to the specific frozen column. This allows you to change the border color of the left frozen columns, right frozen columns, and fixed frozen columns to match your application's design and theme.
+The visual separator between frozen and scrollable columns (the "frozen line") can be customized to match application design requirements. Custom CSS styles can be applied to change the border color for left, right, and fixed frozen columns. The Grid applies specific CSS classes to frozen column borders based on their freeze direction. These classes can be targeted to customize the frozen line appearance.
 
-To change default frozen line color, use the following class name and apply the border color based on your requirement.
-
-For left frozen columns: 
+**For left frozen columns:**
 
 ```css
 .e-grid .e-leftfreeze.e-freezeleftborder {
     border-right-color: rgb(198, 30, 204);
 }
 ```
-For right frozen columns:
+**For right frozen columns:**
 
 ```css
 .e-grid .e-rightfreeze.e-freezerightborder {
     border-left-color: rgb(19, 228, 243);
 }
 ```
-For fixed frozen columns, you need to specify both left and right border as mentioned below
+**For fixed frozen columns:**
+
+Specify both left and right borders:
+
 
 ```css
 .e-grid .e-fixedfreeze.e-freezeleftborder{
@@ -119,7 +117,7 @@ For fixed frozen columns, you need to specify both left and right border as ment
     border-right-color: rgb(10, 224, 10);
 }
 ```
-The following example demonstrates how to change the default frozen line color using CSS.
+The following example demonstrates changing the default frozen line color using CSS.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,14 +131,20 @@ The following example demonstrates how to change the default frozen line color u
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs4" %}
 
-## Render DatePicker in frozen columns
+## Render custom editors in frozen columns
 
-The Syncfusion Angular Grid supports rendering a [DatePicker](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) component within frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property, which defines custom `create`, `write`, `read`, and `destroy` methods to manage the DatePicker’s lifecycle. These methods handle initialization, value setting, value retrieval, and cleanup, respectively.
+Custom edit controls, such as a [DatePicker](https://ej2.syncfusion.com/angular/demos/#bootstrap5/datepicker/default), can be rendered inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the column definition, which accepts an object with custom editor methods.
 
-To enable editing, configure the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings) for details.
+**Custom editor methods:**
 
-The following example renders a DatePicker in the **OrderDate** column, which is frozen, by appending the DatePicker to the input element in the editing row.
+| Method | Description | Purpose |
+|--------|-------------|---------|
+| `create` | Creates and returns the editor element | Initializes the custom editor control (e.g., DatePicker) |
+| `read` | Retrieves the value from the editor | Extracts the current value from the editor when saving |
+| `write` | Writes the value to the editor | Sets the initial or updated value in the editor |
+| `destroy` | Destroys the editor instance | Cleans up resources when editing is complete |
 
+The following example demonstrates rendering a DatePicker component in the frozen "OrderDate" column. The DatePicker allows date selection during edit mode and properly integrates with the grid's editing life cycle.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/frozencolumns-cs5/src/app.component.ts %}
@@ -155,20 +159,22 @@ The following example renders a DatePicker in the **OrderDate** column, which is
 
 ## Deprecated methods
 
-Previous | Current | Explanation 
- ---  | --- | --- 
-`getMovableRows()` gridInstance.getMovableRows()[0].querySelectorAll('.e-unfreeze') | `getRows()` gridInstance.getRows()[0].querySelectorAll('.e-unfreeze') | The previous architecture used separate tables for left, right, and movable contents, returning only movable rows when calling the method, whereas the current architecture combines them into one table, returning all rows and introduces the `e-unfreeze` class for selecting movable rows
-`getFrozenRightRows()` gridInstance.getFrozenRightRows()[0].querySelectorAll('.e-rightfreeze') | `getRows()` gridInstance.getRows()[0].querySelectorAll('.e-rightfreeze') | In the previous architecture, it returned only the table rows from the right freeze table, but in the current architecture, all rows of the entire table are returned, introducing the `e-rightfreeze` class for selecting right freeze rows. 
-`getMovableRowByIndex()` <br> `getFrozenRowByIndex()` <br> `getFrozenRightRowByIndex()` | `getRowByIndex()` gridInstance.getRowByIndex(1).querySelectorAll('.e-unfreeze') | In the previous architecture, separate methods were used to select rows from different table sections, while in the current architecture, the `getMovableRowByIndex()`, `getFrozenRightRowByIndex()`, and `getFrozenRowByIndex()` methods now return the same table row based on the given index. Additionally, class names for table cells (td's) have been separated into `e-leftfreeze`, `e-unfreeze`, and `e-rightfreeze`, making it easier to customize cells within a row.
-`getMovableCellFromIndex()` <br> `getFrozenRightCellFromIndex()` | `getCellFromIndex()` gridInstance.getCellFromIndex(1,1) | In the previous approach, the `getMovableCellFromIndex()` method was used to choose a specific cell within the movable table, and the `getFrozenRightCellFromIndex()` method was utilized to target a particular cell within the right freeze table. However, in the current architecture, you have the flexibility to select a specific cell in either the movable or right freeze table by using both the `getFrozenRightCellFromIndex()` and `getMovableCellFromIndex()` methods. This new method simplifies the process of selecting and retrieving specific cells within these tables, offering more versatility and convenience.
-`getMovableDataRows()` <br> `getFrozenRightDataRows()` <br> `getFrozenDataRows()` | `getDataRows()` gridInstance.getDataRows()[0].querySelectorAll('.e-unfreeze') | In the previous approach, there were separate methods (`getMovableDataRows()`, `getFrozenRightDataRows()`, and `getFrozenDataRows()`) for obtaining viewport data rows from the freeze, movable, and right tables individually. However, in the new approach, these methods have been enhanced to return the entire viewport data rows for all sections together, simplifying data retrieval. You can now extract specific cells within these rows using selectors such as `e-leftfreeze` for the **left freeze**, `e-unfreeze` for the **movable**, and `e-rightfreeze` for the **right freeze** tables, providing greater flexibility in working with the data.
-`getMovableColumnHeaderByIndex()` <br> `getFrozenRightColumnHeaderByIndex()` <br> `getFrozenLeftColumnHeaderByIndex()` | `getColumnHeaderByIndex()` gridInstance.getColumnHeaderByIndex(1) | In the previous architecture, the methods selected movable, right freeze, and left freeze headers separately. However, in the new approach, when using the `getMovableColumnHeaderByIndex()`, `getFrozenRightColumnHeaderByIndex()`, and `getFrozenLeftColumnHeaderByIndex()` methods, you will still obtain the same results as in the previous architecture.
+The Grid's frozen column implementation has evolved to use a unified table architecture instead of separate tables for different freeze sections. This change improves performance and simplifies the API. The following methods from the previous architecture are now deprecated in favor of new methods with CSS class-based selectors.
+
+| Deprecated Method | Current Method | Explanation |
+|-------------------|----------------|-------------|
+| `getMovableRows()` | `getRows()` with CSS selector | **Previous:** `gridInstance.getMovableRows()[0].querySelectorAll('.e-unfreeze')`<br>**Current:** `gridInstance.getRows()[0].querySelectorAll('.e-unfreeze')`<br><br>The previous architecture used separate tables for left, right, and movable contents, returning only movable rows. The current architecture combines them into one table, returning all rows. Use the `e-unfreeze` class to select movable (non-frozen) rows. |
+| `getFrozenRightRows()` | `getRows()` with CSS selector | **Previous:** `gridInstance.getFrozenRightRows()[0].querySelectorAll('.e-rightfreeze')`<br>**Current:** `gridInstance.getRows()[0].querySelectorAll('.e-rightfreeze')`<br><br>The previous architecture returned only rows from the right freeze table. The current architecture returns all rows. Use the `e-rightfreeze` class to select right-frozen rows. |
+| `getMovableRowByIndex()`<br>`getFrozenRowByIndex()`<br>`getFrozenRightRowByIndex()` | `getRowByIndex()` with CSS selector | **Previous:** Three separate methods for different table sections<br>**Current:** `gridInstance.getRowByIndex(1).querySelectorAll('.e-unfreeze')`<br><br>The current architecture methods return the same table row based on the given index. Use CSS class selectors to target specific cell types:<br>• `e-leftfreeze` - Left-frozen cells<br>• `e-unfreeze` - Movable cells<br>• `e-rightfreeze` - Right-frozen cells |
+| `getMovableCellFromIndex()`<br>`getFrozenRightCellFromIndex()` | `getCellFromIndex()` | **Previous:** Separate methods for movable and right-frozen cells<br>**Current:** `gridInstance.getCellFromIndex(1, 1)`<br><br>The current architecture allows selecting any cell using a single method, simplifying cell selection and retrieval regardless of freeze status. |
+| `getMovableDataRows()`<br>`getFrozenRightDataRows()`<br>`getFrozenDataRows()` | `getDataRows()` with CSS selector | **Previous:** Separate methods for each table section<br>**Current:** `gridInstance.getDataRows()[0].querySelectorAll('.e-unfreeze')`<br><br>The current approach returns entire viewport data rows for all sections together. Extract specific cells using:<br>• `e-leftfreeze` - Left-frozen cells<br>• `e-unfreeze` - Movable cells<br>• `e-rightfreeze` - Right-frozen cells |
+| `getMovableColumnHeaderByIndex()`<br>`getFrozenRightColumnHeaderByIndex()`<br>`getFrozenLeftColumnHeaderByIndex()` | `getColumnHeaderByIndex()` | **Previous:** Separate methods for each header section<br>**Current:** `gridInstance.getColumnHeaderByIndex(1)`<br><br>The current approach returns the same results but through a unified method that works across all freeze sections. |
 
 > When a validation message is displayed in the frozen part (Left, Right, Fixed) of the table, scrolling is prevented until the validation message is cleared.
 
 ## Limitations
 
-While freezing columns in the Syncfusion Angular Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
+The following features are not supported when using frozen columns:
 
 * Detail Template
 * Hierarchy Grid

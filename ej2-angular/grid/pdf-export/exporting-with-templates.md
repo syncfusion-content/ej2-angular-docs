@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Exporting Templates in Angular Grid control | Syncfusion
-description: Learn here all about Exporting grids with templates in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Exporting templates | Syncfusion
+description: Angular Grid PDF exporting with templates describes using templates to customize PDF layout, headers, and cell formatting when exporting grid data.
 platform: ej2-angular
 control: Exporting grid with templates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid with templates in Angular Grid control
+# Exporting with Templates in Angular Grid Control
 
-The Syncfusion Grid enables exporting column, detail, and caption templates—including images, hyperlinks, and customized text—to PDF documents.
+The Angular Grid component allows exporting column, detail, and caption templates to PDF documents. Exported templates can include images, hyperlinks, and customized text formatting.
 
 ## Exporting with column template
 
-The PDF export feature supports exporting Grid columns with images, hyperlinks, and custom text to PDF.
+The PDF export functionality allows exporting Grid columns that include images, hyperlinks, and custom text to a PDF document. The [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event enables customization of cell content during export.
 
-In the example below, hyperlinks and images are exported using the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event.
+The following sample demonstrates exporting hyperlinks and images to PDF using the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfQueryCellInfoEventArgs#image) properties in the `pdfQueryCellInfo` event.
 
 > PDF export supports base64 strings for exporting images.
 
@@ -109,24 +109,24 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/column-template-export-cs1" %}
 
-![Exporting a Grid Column Template with Image and Hyperlink](../images/colTemp_pdf_expt.gif)
+![ColumnTemplateExport](../images/colTemp_pdf_expt.gif)
 
 ## Exporting with detail template
 
-By default, the Grid exports the parent rows with only expanded detail rows. The export can be further customized using the `PdfExportProperties.hierarchyExportMode` property with the following options:
+By default, the Grid exports the parent grid with expanded detail rows. Control this behavior by setting the `PdfExportProperties.hierarchyExportMode` property. The available options are:
 
 | Mode     | Behavior    |
 |----------|-------------|
-| Expanded | Exports the parent grid with expanded detail rows. |
-| All      | Exports the parent grid with all detail rows. |
-| None     | Exports the parent grid alone. |
+| `Expanded` | Exports the parent grid with expanded detail rows. |
+| `All`      | Exports the parent grid with all detail rows. |
+| `None`     | Exports the parent grid alone. |
 
-Detail rows in the exported PDF can be customized using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetailtemplate) event. In this event, you can format the detail rows of the PDF document based on the parent row details.
+The detail rows in the exported PDF can be customized and formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetailtemplate) event. This event formats detail rows based on parent row data.
 
-In the sample below, detail row content is formatted using the [columnCount](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columncount), [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columnheader), and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#rows) properties. Custom cell styles can be applied using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#style) property.
+The following sample configures detail row formatting using the [columnCount](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columncount), [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailtemplateproperties#columnheader), and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#rows) properties using its [parentRow](https://ej2.syncfusion.com/angular/documentation/api/grid/exportDetailTemplateEventArgs#parentrow) details. This allows for the creation of detail rows in the PDF document. Custom cell styling is applied using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#style) property.
 
-> If `columnCount` is not specified, the detail row columns are generated based on the count of the `columnHeader` or the first row's [cells](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateRow#cells).
-> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#rowspan), ensure the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#index) is provided for correct results.
+> If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's [cells](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateRow#cells).
+> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#index) for proper functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -378,13 +378,13 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/detail-template-export-cs1" %}
 
-![Exporting a Grid Detail Template](../images/detailTemp_pdf_expt.gif)
+![DetailTemplateExport](../images/detailTemp_pdf_expt.gif)
 
 ## Exporting with caption template
 
-The PDF export supports exporting Grids with caption templates to a PDF document.
+The PDF export feature enables exporting Grid with caption templates to PDF documents. The [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgroupcaption) event allows customization of caption text during export.
 
-In the example below, the customized caption text is exported using the [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgroupcaption) event.
+The following sample demonstrates exporting customized caption text using the [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the `exportGroupCaption` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -448,4 +448,4 @@ interface CaptionDataStructure {
   
 {% previewsample "page.domainurl/samples/grid/caption-template-export-cs1" %}
 
-![Exporting a Grid Caption Template](../images/captionTemp_pdf_expt.gif)
+![CaptionTemplateExport](../images/captionTemp_pdf_expt.gif)

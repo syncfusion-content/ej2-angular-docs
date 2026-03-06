@@ -8,49 +8,48 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Build your first Angular app with Syncfusion UI Kit Blocks
+# Build your first Angular app with our blocks
 
-This tutorial guides you through building an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup>'s UI Kit blocks. It covers setting up a new Angular project, choosing between Tailwind CSS or Bootstrap 5.3 themes, and integrating a sign-in block. The goal is to help developers quickly build responsive, modern web apps with a variety of prebuilt blocks and minimal effort.
+This tutorial guides you through building an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup>'s UI Kit blocks. It demonstrates how to set up a new Angular project, choose between Tailwind CSS or Bootstrap 5.3 themes, and add a sign-in block in your application. The goal is to help developers quickly build responsive, modern web apps using a variety of prebuilt blocks with minimal effort.
 
-## Use Case Example
+## Before You Start: Real-Life Use Case  
 
-Before starting, review a real-world example: building a **Customer Support Portal** using the Angular UI Kit. This video tutorial demonstrates the process step by step.
+Before diving into the setup, let's explore a **real-life use case** — building a **Customer Support Portal** using our Angular UI Kit. This video tutorial walks you through the process step by step.  
 
 {% youtube "https://www.youtube.com/watch?v=EWGZJ9T7K40" %}  
 
-After watching the use case, proceed to set up an Angular app and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
+Once you’ve seen this use case in action, the next step is to set up an Angular app and integrate Syncfusion<sup style="font-size:70%">&reg;</sup> UI Kit blocks.
 
 ## Create a new Angular app
-
-To create a new Angular app, see the official [Angular setup guide](https://angular.dev/installation#instructions). In this example, a new app named **my-angular-app** is used to demonstrate the process of adding a simple sign-in block.
+To create a new Angular app, refer to the official Angular setup guide [here](https://angular.dev/installation#instructions) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
 
-## Theme Selection: Tailwind CSS or Bootstrap 5.3
+## Setting up Tailwind CSS or Bootstrap 5.3 theme in the app
 
-Once the Angular app (**my-angular-app**) is created, open it in Visual Studio Code. Before proceeding, open **src/app/app.component.html** and remove the existing template HTML, keeping only the `<router-outlet />` if present.
+After creating the new Angular app named **my-angular-app**, open it in Visual Studio Code (which will be used throughout this walkthrough). Once the app is open, before proceeding further, navigate to the **src -> app -> app.component.html** file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
 
-Next, select a theme for your application—**Tailwind CSS** or **Bootstrap 5.3**—and follow the corresponding configuration instructions.
+The next step is to choose a theme, either **Tailwind CSS** or **Bootstrap 5.3**, in either light or dark mode, and configure the app accordingly.
 
-### Tailwind CSS Configuration
+### Tailwind CSS configuration
 
-Follow these steps to configure Tailwind CSS:
+If you choose **Tailwind CSS** theme, follow these steps to configure it.
 
-1. In **src/index.html**, set the HTML class for light or dark mode:
+1. In **src -> index.html** file, add the following code for light mode (`class="light"`) and dark mode (`class="dark"`) in the `<html>` tag.
 
-    - **Light mode:**
+    - For **light mode**:
 
     ```html
     <html lang="en" class="light">
     ```
 
-    - **Dark mode:**
+    - For **dark mode**:
 
     ```html
     <html lang="en" class="dark">
     ```
 
-2. In the same file, add Tailwind scripts in the `<head>` section to generate the required CSS and define primary colors:
+2. In **src -> index.html** file, add the following scripts in the `<head>` tag. The main purpose of these scripts is to dynamically generate the appropriate Tailwind CSS classes at runtime based on the styles used in the application, and to replace the primary (highlight) color in the CSS with a custom indigo color palette.
 
     ```html
     <script src="https://cdn.tailwindcss.com"></script>
@@ -80,72 +79,74 @@ Follow these steps to configure Tailwind CSS:
       }
     </script>
     ```
-    > Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses **Indigo** for light mode and **Cyan** for dark mode. Adjust the primary color as needed for a consistent appearance.
+    > The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components uses **Indigo** for light mode and **Cyan** for dark mode. To maintain a uniform appearance, change the primary color accordingly.
 
 
-3. Add the theme-specific Syncfusion<sup style="font-size:70%">&reg;</sup> stylesheet in the `<head>` tag:
+3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in the `<head>` tag.
 
-   - **Light mode:**
-
-     ```html
-     <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css" rel="stylesheet" />
-     ```
-
-   - **Dark mode:**
+   - For **light mode**:
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css" rel="stylesheet" />
      ```
 
-4. (Optional) To use font icons for Tailwind CSS, include:
+   - For **dark mode**:
+
+     ```html
+     <link href="https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css" rel="stylesheet" />
+     ```
+
+4. **OPTIONAL**: If you wish to use our font icons prepared for **Tailwind CSS**, you can include the following CDN link:
 
     ```html
     <link href="https://cdn.syncfusion.com/ej2/angular/ui-kit/font-icons/tailwind-icons.css" rel="stylesheet" />
     ```
-
+     
 You can refer to the consolidated screenshot below for more details.
 
 ![Tailwind CSS configuration](images/tailwind-configuration.png)
 
-### Bootstrap 5.3 Configuration
+Now that the **Tailwind CSS** theme is configured for either light or dark mode of your choice, the app is ready for the next set of processes.
 
-For the Bootstrap 5.3 theme, follow these steps:
+### Bootstrap 5.3 configuration
 
-1. In **src/index.html**, set the `data-bs-theme` attribute for light or dark mode:
+If you choose **Bootstrap 5.3** theme, follow these steps to configure it.
 
-   - **Light mode:**
+1. In **src -> index.html** file, add the following code for light mode (`data-bs-theme="light"`) and dark mode (`data-bs-theme="dark"`) in the `<html>` tag.
+
+    - For **light mode**:
 
     ```html
     <html lang="en" data-bs-theme="light">
     ```
 
-   - **Dark mode:**
+    - For **dark mode**:
 
     ```html
     <html lang="en" data-bs-theme="dark">
     ```
 
-2. Add the Bootstrap 5.3 stylesheet in the `<head>` tag:
+2. In **src -> index.html** file, add the style oriented CDN link for **Bootstrap 5.3** theme in the `<head>` tag.
 
      ```html
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      ```
 
-3. Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap 5.3 stylesheet:
+3. In **src -> index.html** file, add the style oriented CDN link for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components in the `<head>` tag.
 
-   - **Light mode:**
-
-     ```html
-     <link href="https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css" rel="stylesheet">
-     ```
-
-   - **Dark mode:**
+   - For **light mode**:
 
      ```html
-     <link href="https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css" rel="stylesheet">
      ```
 
-4. (Optional) To use font icons for Bootstrap 5.3, include:
+   - For **dark mode**:
+
+     ```html
+     <link href="https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css" rel="stylesheet" />
+     ```
+
+4. **OPTIONAL**: If you wish to use our font icons prepared for **Bootstrap 5.3**, you can include the following CDN link:
 
     ```html
     <link href="https://cdn.syncfusion.com/ej2/angular/ui-kit/font-icons/bootstrap5.3-icons.css" rel="stylesheet" />
@@ -155,32 +156,37 @@ You can refer to the consolidated screenshot below for more details.
 
 ![Bootstrap 5.3 configuration](images/bootstrap-5.3-configuration.png)
 
+Now that the **Bootstrap 5.3** theme is configured for either light or dark mode of your choice, the app is ready for the next set of processes.
+
 ## Steps to explore and copy block code snippets
 
-With the desired theme configured, you can now copy and add sign-in block code to the Angular app.
+Now that **my-angular-app** is set up with the desired theme configuration, the next step is to copy and paste the pre-built simple sign-in block code into the Angular app for quick development. Here are a couple of ways to achieve this.
 
 ### Steps to explore and copy block code snippets from the online demo
 
-1. Open the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks), navigate to the "Authentication" category, and select the "Sign In" block.
+1. In the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks), navigate to the "Authentication" category and select the "Sign In" block. This will direct you to the appropriate demo page.
 
     ![Navigate to the sign-in block demo](images/navigate-to-the-sign-in-block-demo.png)
 
-2. Choose a theme, then go to the "Code" tab, and copy the HTML code.
+2. On the demo page, go to the first demo, which showcases a simple sign-in block. Choose the desired theme, then switch from the "Preview" tab to the "Code" tab.
 
     ![Choose Tailwind CSS or Bootstrap theme](images/choose-tailwind-or-bootstrap-theme.png)
+
+3. In the "Code" tab, copy the HTML code using the "Copy to clipboard" option and paste it into the **src -> app -> app.component.html** file.
+
     ![Copy HTML code snippet to clipboard](images/copy-HTML-code-snippet-to-clipboard.png)
 
-3. Paste the HTML into **src/app/app.component.html**.
-
-4. If CSS is provided, copy it into **src/app/app.component.css**.
+4. If CSS is provided, copy the CSS code and paste it into the **src -> app -> app.component.css** file; otherwise, ignore it.
 
 ### Steps to explore and copy block code snippets from the GitHub source
 
-1. After downloading the [GitHub source](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening it in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
+1. On [downloading](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening the GitHub source in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
 
     ![Downloaded GitHub app in Visual Studio Code](images/downloaded-github-app-in-visual-studio-code.png)
 
-2. Navigate to **src/blocks-section/signin/signin-1**. Copy the HTML, CSS, and TS code for the sign-in block.
+2. Inside, you'll find a list of folders, each corresponding to a specific block. Open the "signin" block folder, where you'll see the demo arranged sequentially.
+
+3. Go to the first folder, **src/blocks-section/signin/signin-1**, where you'll find the HTML, CSS, and TS files of the simple sign-in block. You can copy the code directly from these files.
 
     ![View the sign-in block demo files](images/view-the-sign-in-block-demo-files.png)
 
@@ -189,17 +195,15 @@ With the desired theme configured, you can now copy and add sign-in block code t
 > 1. In the HTML, the **Tailwind CSS** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
 > 2. Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
-## Installing and Configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+## Steps to install and configure Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
 
-After adding the block code, ensure all required Syncfusion component packages are installed. For the sign-in block, common components include textbox, checkbox, and button. Add packages like `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs` to your **package.json**.
+While copying and pasting the HTML code, you'll notice that Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src -> app -> app.component.ts** file for the app to run.
+
+In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
 
 ![Adding required packages for Syncfusion components](images/adding-required-packages-for-syncfusion-components.png)
 
-Install these packages from the terminal:
-
-```bash
-npm install
-```
+Once the necessary packages are added, run the `npm install` command via the terminal to install those packages in the **node_modules** folder.
 
 ![Install Syncfusion component packages](images/install-syncfusion-component-packages.png)
 
@@ -207,24 +211,18 @@ Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui
 
 ![Import Syncfusion component module in TypeScript](images/import-syncfusion-component-module-in-typescript.png)
 
-> Ignore code within "SB Code - Start" and "SB Code - End" comments—this code is provided only for the sample browser.
+> Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
-## Downloading and Using Assets
+## Steps to download and add assets to the app
 
-To use the example images shown in block designs, download the **assets** folder from the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular/tree/master/ui-blocks/src). Place it under **src** in your application and ensure any image URLs in copied code are updated as needed.
+If you want to view and experience the images used in our design, you can download the **assets** folder from the following [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular/tree/master/ui-blocks/src), place it inside the **src** folder of **my-angular-app**, and modify the image URLs in the HTML if necessary.
 
-## Running the Application
+## Steps to run the app
 
-Once setup is complete—HTML, TypeScript, CSS, and optional assets—you can build and run the app:
-
-```bash
-ng serve
-```
-
-The Angular development server provides a localhost URL. Open this URL in your browser to view and interact with the sign-in block.
+Now that everything is set up in **my-angular-app** — the HTML, TS, CSS (if applicable), and assets (optional) — you are ready to build and launch the app. Type the `ng serve` command in the terminal, and you will see a localhost URL provided by the Angular development server.
 
 ![Build and launch the app](images/build-and-launch-the-app.png)
 
-It will shown the output below:
+To view the app in your browser, simply **Ctrl + Click** (or **Cmd + Click** on macOS) on the localhost URL displayed in the terminal. This will open the app in your default browser, allowing you to view and experience the simple sign-in block.
 
 ![View the app in the browser using the localhost URL](images/view-the-app-in-the-browser-using-the-localhost-URL.png)

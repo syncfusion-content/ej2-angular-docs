@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Foreign key column in Angular Grid Component | Syncfusion
-description: Learn here all about Foreign key column in Syncfusion Angular Grid Component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Foreign Key Column | Syncfusion
+description: Angular Grid foreign key column supports mapping related data and binding local or remote sources to display associated values in grid cells. 
 platform: ej2-angular
 control: Foreign key column 
 documentation: ug
@@ -10,11 +10,12 @@ domainurl: ##DomainURL##
 
 # Foreign Key Column in Angular Grid Component
 
-A foreign key column in the Syncfusion Angular Grid allows the display of related data from an external (foreign key) data source. This feature is essential for showing meaningful values in place of raw key fields and for representing relationships between different data tables.
+The foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component displays related data from a foreign key data source. This feature enables representation of foreign key relationships between data sources, displaying meaningful values instead of raw key identifiers.
 
-To configure a foreign key column in the Angular Grid, follow these steps:
+To enable the foreign key column in the Grid:
 
-1. **Inject the ForeignKeyService** in the `AppModule` providers:
+**Step 1: Inject the ForeignKey module**
+ Inject the `ForeignKeyService` in the `AppModule` providers
 
    ```typescript
    import { ForeignKeyService } from '@syncfusion/ej2-angular-grids';
@@ -25,13 +26,15 @@ To configure a foreign key column in the Angular Grid, follow these steps:
    export class AppModule { }
    ```
 
-2. **Define the foreign key column** using these essential properties:
+**Step 2: Define the foreign key column**
 
-   * [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource): Specifies the external data source containing the related data.
+Configure the foreign key column using three essential properties:
 
-   * [foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield): Maps the column field in the grid to the corresponding field in the foreign data source that represents the foreign key relationship.
+* [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource): The external data source containing the related information (e.g., employee details).
 
-   * [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue): Specifies the field from the foreign data source that should be displayed in the grid as the related data.
+* [foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield): The field in the foreign data source that matches the ID in the main Grid (e.g., "EmployeeID" in both sources).
+
+* [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue): The field from the foreign data source to display in the Grid (e.g., "FirstName" to show employee names).
 
    ```html
    <e-column field='EmployeeID' headerText='Employee ID' foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeesData'></e-column>
@@ -41,9 +44,14 @@ To configure a foreign key column in the Angular Grid, follow these steps:
 
 ## Binding local data
 
-The Syncfusion Grid component provides a convenient way to bind local data to a foreign key column. This allows display of related data from a local data source within the grid.
+The Grid supports binding local data to a foreign key column, enabling display of related data from a local data source.
 
-In the following example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `field` property of the column is set to **EmployeeID**, which represents the foreign key value in the **data**. The `foreignKeyValue` property is set to **FirstName**, which represents the field name in the **employeeData** that will be displayed in the foreign key column.
+In the following example:
+- **Main Data (orders)**: Contains order records with "EmployeeID" values (1, 2, 3, etc.).
+- **Foreign Data (employees)**: Contains employee records with "EmployeeID" and "FirstName" fields.
+- **Result**: The Grid displays employee first names instead of numeric IDs.
+
+For instance, if an order has "EmployeeID: 1", the Grid looks up the employee with "EmployeeID: 1" in the "employeeData" and displays their "FirstName" (e.g., "Nancy").
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,11 +65,13 @@ In the following example, **data** is the local data source for the Grid, and **
   
 {% previewsample "page.domainurl/samples/grid/grid-cs19" %}
 
+> If `foreignKeyField` is not defined, the column uses [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
+
 ## Binding remote data
 
-A foreign key column in the Syncfusion Grid allows binding of remote data for the foreign key column. You can assign the service data as an instance of `DataManager` to the `dataSource` property and provide the endpoint `URL` as the data source URL.
+Foreign key column supports binding remote data, enabling it to fetch related data from web services or APIs instead of local arrays. To achieve this, assign the service data as an instance of `DataManager` to the `dataSource` property, and provide the endpoint `URL` as the data source URL.
 
-The following example demonstrates how to use a foreign key column with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
+The following example demonstrates foreign key column implementation with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service):
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,14 +85,19 @@ The following example demonstrates how to use a foreign key column with remote d
   
 {% previewsample "page.domainurl/samples/grid/foreignkey-cs12" %}
 
-> * For remote data, sorting and grouping are performed based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
-> * If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) is not defined, the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field).
+>* For remote data, sorting and grouping are performed based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue).
+>* If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) is not defined, the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
 
 ## Use edit template in foreign key column
 
-The Syncfusion Grid provides support for using an edit template in a foreign key column. By default, a dropdown component is used for editing foreign key columns. However, you can render a different component for editing by using the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
+The Grid supports custom edit templates for foreign key columns. By default, a `DropDownList` component renders for editing. Alternative components can be rendered using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property. The `edit` property accepts an object with four callback functions:
 
-In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/auto-complete/default) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property of the AutoComplete component is set to the employees data, and the fields property is configured to display the **FirstName** field as the value.
+- **`create`**: Creates the input element when editing begins.
+- **`write`**: Initializes the component with the current value.
+- **`read`**: Retrieves the selected value from the component when editing ends.
+- **`destroy`**: Cleans up the component when editing ends.
+
+In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/auto-complete/default) component is rendered as the edit template for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#datasource) property of the `AutoComplete` component is set to the employees data, and the `fields` property is configured to display the "FirstName" field as the value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,9 +113,14 @@ In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/d
 
 ## Customize filter UI of foreign key column
 
-The Syncfusion Grid allows customization of the filtering user interface (UI) for foreign key columns by using the [column.filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) property. By default, a dropdown component is used for filtering foreign key columns. However, you can create a custom filtering UI by specifying a template function for the `column.filter` property.
+The Grid supports customization of the filtering UI for foreign key columns using the [filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filter) property. By default, an `AutoComplete` component renders for filtering. Custom filtering UI can be created by specifying a template function for the `filter` property. The `filter` property requires the following callback functions:
 
-In the following example, a [DropDownList](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/drop-down-list/default) component is rendered as the filter UI for the **EmployeeID** foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) property of the DropDownList component is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#text) and **EmployeeID** field as the [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value). The `value` property is set to the current filter value of the column.
+- **`ui.create`**: Generates the filter input element.
+- **`ui.write`**: Initializes the filter component with existing filter values.
+- **`ui.read`**: Extracts the filter value when filtering is applied.
+
+In the following example, a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is rendered as the filter UI for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) property of the `DropDownList` component is set to the employees data, with the `fields` property configured to display the "FirstName" field as the `text` and the "EmployeeID" field as the `value`. The `value` property is bound to the current filter value of the column.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,10 +136,14 @@ In the following example, a [DropDownList](https://ej2.syncfusion.com/angular/de
 
 ## Use filter bar template in foreign key column
 
-You can use the filter bar template in a foreign key column in the Grid by defining the [column.filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property. This allows customization of the filter bar for the foreign key column with a custom component or HTML template.
+The filter bar for foreign key columns can be customized using the [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filterbartemplate) property. This enables customization of the filter bar with a custom component or HTML template.
 
-In the following example, the **EmployeeID** column is a foreign key column, and the **filter** function is used as the filter bar template for this column. The `filter` function can be defined in your component code and should return the desired component or HTML template for the filter bar. The column header shows the custom filter bar template and you can select filter value using the **DropDown** options.
+**Filter Bar vs Filter Menu:**
 
+- **Filter Bar**: A simple input field that appears directly below each column header.
+- **Filter Menu**: Opens a popup with advanced filtering options.
+
+In the following example, the "EmployeeID" column is a foreign key column with the `filter` function defined as the filter bar template. The `filter` function returns a `DropDownList` component for the filter bar. When filtering, an employee name is selected from the dropdown, and the Grid filters rows based on the selected "EmployeeID".
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs3/src/app.component.ts %}
@@ -134,17 +158,22 @@ In the following example, the **EmployeeID** column is a foreign key column, and
 
 ## Perform aggregation in foreign key column
 
-By default, aggregations are not supported in a foreign key column in the Syncfusion Grid. However, you can achieve aggregation for a foreign key column by using [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#customaggregate).
+By default, aggregations (sum, average, count, etc.) are not supported in foreign key columns because they display text values from related data sources. Aggregation can be achieved using [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate).
 
-To perform aggregation in a foreign key column, follow these steps:
+**Steps to aggregate foreign key data:**
 
 1. Define a foreign key column in the Grid.
 2. Implement a custom aggregate function to calculate the aggregation for the foreign key column.
-3. Set the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#customaggregate) property of the column to the custom aggregate function.
+3. Set the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#customaggregate) property to the custom aggregate function.
 
-The following example demonstrates how to perform aggregation in a foreign key column:
+**Custom aggregate behavior:**
 
-In the provided example, the `customAggregateFn` function is used to filter the data based on the **FirstName** field of the foreign key column, using the `getForeignData` internal function. The function then counts the occurrences of **Margaret**. The result is displayed in the grid's footer template using the ng-template with the `#footerTemplate` reference.
+The custom aggregate function receives the Grid data and processes it to calculate a meaningful result. In the following example, the `customAggregateFn` function:
+
+1. Calls `getForeignData` to get related data from the foreign source based on "EmployeeID".
+2. Filters the data to find all records with "FirstName: Margaret".
+3. Counts the occurrences of "Margaret".
+4. Displays the result ("Margaret: 8") in the Grid footer using the `#footerTemplate` reference.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -219,11 +248,11 @@ export class AppComponent implements OnInit {
 
 ## Render foreign key value in column template
 
-The Syncfusion Angular Grid allows rendering of foreign key values within a column template, enhancing the display of related data in a clear format. This feature is particularly useful when you want to show a more meaningful representation of a foreign key instead of its underlying value.
+Foreign key values can be rendered within column templates to enhance display of related data. This enables more meaningful representation with custom formatting, styling, or additional information beyond just displaying the foreign key value. 
 
-To render foreign key values in a column template, define a template for the column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. The `template` property can accept either an HTML element or a function that returns the desired HTML element.
+To render foreign key values in a column template, define the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property for the column. The `template` property accepts either an HTML element or a function that returns the desired HTML element. Within the template, access the foreign key data using the row data properties.
 
-The following example demonstrates how to render foreign key values in a column template within the Grid:
+The following example demonstrates rendering foreign key values in a column template within the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -239,9 +268,9 @@ The following example demonstrates how to render foreign key values in a column 
 
 ## Enable multiple foreign key columns
 
-The Syncfusion Grid component supports enabling multiple foreign key columns with editing options. This allows display of columns from foreign data sources in the Grid component.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component supports enabling multiple foreign key columns with editing options. This allows display of columns from foreign data sources in the Grid component.
 
-In the following example, **Customer Name** and **Ship City** are foreign key columns that display the **ContactName** and **City** columns from foreign data.
+In the following example, "Customer Name" and "Ship City" are foreign key columns displaying the "ContactName" and "City" columns from their respective foreign data sources. This demonstrates that a single Grid row can display related information from multiple external data sources.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,15 +286,15 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 ## Edit template in foreign key column using remote data
 
-The Syncfusion Grid allows customization of the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is used for editing foreign key columns. However, you can render a different component by configuring the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows customization of the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is used for editing foreign key columns. However, a different component can be rendered by configuring the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property.
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property of the **AutoComplete** component is set to the employees data, and the [field](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+The following example demonstrates a complete implementation with Angular and ASP.NET Core. An [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component is rendered as the edit template for the "EmployeeID" foreign key column. The `dataSource` property of the `AutoComplete` component is set to the employees data from the remote API, and the [field](https://helpej2.syncfusion.com/angular/documentation/api/grid/column#field) property is configured to display the "FirstName" field as the value.
 
-**Step 1:** Open Visual Studio and create an **Angular and ASP.NET Core** project named **EditTemplate**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**Step 1:** Open Visual Studio and create an **Angular and ASP.NET Core** project named **EditTemplate**. Refer to the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
-**Step 2:** Create a simple Syncfusion Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
+**Step 2:** Create a simple Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
-**Step 3:** In your Angular component HTML file (e.g., **src/app.component.html**), define the Syncfusion Angular Grid with the necessary configurations, including a foreign key column for **EmployeeID**:
+**Step 3:** In the Angular component HTML file (e.g., **src/app.component.html**), define the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the necessary configurations, including a foreign key column for "EmployeeID":
 
 ```typescript
 <ejs-grid #grid [dataSource]='data' [height]='260' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging="true">
@@ -278,7 +307,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 </ejs-grid>
 ```
 
-**Step 4:** In your Angular component styles file (**src/styles.css**), include the following styles to import necessary Syncfusion styles:
+**Step 4:** In the Angular component styles file (**styles.css**), include the following styles to import necessary Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -292,7 +321,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 ```
 
-**Step 5:** In your Angular component (e.g., **app.component.ts**), implement the following logic:
+**Step 5:** In the Angular component (e.g., **app.component.ts**), implement the following logic:
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -597,7 +626,8 @@ namespace EditTemplate.Server.Models
 }
 ```
 
-**Step 8:** In the **Program.cs** file, add the following code:
+**Step 8:** Add the following configuration in the **Program.cs** file.
+
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

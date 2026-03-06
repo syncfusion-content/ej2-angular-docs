@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Unit Jasmine testing in Angular Grid component | Syncfusion
-description: Learn how to perform unit testing with Jasmine in the Syncfusion Angular Grid component of Essential JS 2.
+title: Angular Grid - Unit Jasmine testing | Syncfusion
+description: Perform unit testing of the Angular Grid using Jasmine to verify component behavior, ensure data accuracy, and validate grid functionality.
 platform: ej2-angular
 control: Unit Jasmine testing
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Unit Jasmine testing in Angular Grid component
+# Unit Jasmine Testing in Angular Grid Component
 
-Jasmine test cases are typically executed synchronously, which can cause issues when testing asynchronous code. For example, if a Grid component takes time to render and populate data, a test case may fail if it runs before the Grid has finished loading. To address this, write asynchronous test cases using Jasmine's async features.
+Jasmine test cases are typically executed synchronously, which can cause issues when testing asynchronous code. For example, if a Grid component takes time to render and populate data, a test case may fail if it runs before the grid has finished loading. To address this, write asynchronous test cases using Jasmine's async features.
 
-When testing asynchronous operations, ensure the test waits for those operations to complete before making assertions. Jasmine provides the [fakeAsync](https://angular.io/api/core/testing/fakeAsync) utility, which simulates the passage of time and controls asynchronous execution within a synchronous test. This creates a "fake" zone where time can be manipulated. To create a Jasmine test case for the Grid component, follow these steps:
+When testing asynchronous operations, ensure the test waits for those operations to complete before making assertions. Jasmine provides the fakeAsync utility, which simulates the passage of time and controls asynchronous execution within a synchronous test. This creates a "fake" zone where time can be manipulated. To create a Jasmine test case for the Grid component, follow these steps:
 
 **Step 1: Set up the Jasmine testing environment**
 
@@ -44,9 +44,9 @@ npx karma init
 
 Write Jasmine test cases in files with the `.spec.ts` extension. Use the `describe` function to define the test suite and the `it` function for individual test cases.
 
-For more details, see the official [Angular testing documentation](https://angular.io/guide/testing#set-up-testing).
+For more details, see the official [Angular testing documentation](https://v17.angular.io/guide/testing#set-up-testing).
 
-**Step 2: Create a Grid component**
+**Step 2: Create a Grid Component**
 
 Use the following code to create a Grid component. For setup instructions, refer to the [Getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
@@ -127,7 +127,7 @@ Access the GridComponent instance using `@ViewChild('Grid')`. In `beforeEach`, c
 
 **IV. Write the test case in an `it` block:**
 
-The `it` block is used to define a test case for the "Length of the record". It uses the `fakeAsync` function. Within the test case, the `detectChanges` method is used to trigger change detection in the component. The `tick` function is used to simulate the passage of time by updating the virtual clock by 1000 milliseconds. We check that the data grid in the data source has the appropriate number of data records. The [currentViewData](https://ej2.syncfusion.com/angular/documentation/api/grid/#currentviewdata) property is employed to retrieve the length of data for the current page view. By utilizing this property, one can verify the accurate population of data in the grid component.
+The `it` block is used to define a test case for the "Length of the record". It uses the `fakeAsync` function. Within the test case, the `detectChanges` method is used to trigger change detection in the component. The `tick` function is used to simulate the passage of time by updating the virtual clock by 1000 milliseconds. We check that the data grid in the data source has the appropriate number of data records. The [currentViewData](https://ej2.syncfusion.com/angular/documentation/api/grid#currentviewdata) property is employed to retrieve the length of data for the current page view. By utilizing this property, one can verify the accurate population of data in the grid component.
 
 ```typescript
  it(`Length of the record`, fakeAsync(async () => {
@@ -137,7 +137,7 @@ The `it` block is used to define a test case for the "Length of the record". It 
     }));
 ```
 
-The following example demonstrates how to create the grid sample and write a Jasmine test case:
+The following example demonstrates to create the grid sample and write a Jasmine test case:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
