@@ -14,7 +14,7 @@ import { ScheduleComponent, DayService, WeekService, WorkWeekService, MonthServi
   selector: 'app-root',
   template: `<div class="control-section">
     <div class="col-lg-12 content-wrapper">
-     <ejs-schedule #scheduleObj width='100%' height='750px' [selectedDate]="selectedDate" [eventSettings]="eventSettings"(dataBound)="dataBound($event)" ></ejs-schedule>
+     <ejs-schedule #scheduleObj width='100%' height='750px' [selectedDate]="selectedDate" [eventSettings]="eventSettings"(dataBound)="dataBound()" ></ejs-schedule>
     </div>
   </div>`,
   encapsulation: ViewEncapsulation.None,
