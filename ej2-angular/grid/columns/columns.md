@@ -47,8 +47,8 @@ Column types can be explicitly defined using the `type` property. For example:
 
 {% previewsample "page.domainurl/samples/grid/column-type-cs1" %}
 
->* If [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is not defined, the grid detects it from the first record in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
->* In case the first record's value for a column is null or blank, define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) for accurate filtering and editing dialogs.
+> * If [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is not defined, the grid detects it from the first record in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
+> * In case the first record's value for a column is null or blank, define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) for accurate filtering and editing dialogs.
 
 ### Difference between boolean type and checkbox type column 
 
@@ -358,7 +358,7 @@ To enable the rendering of boolean values as checkboxes, set the `displayAsCheck
 
 {% previewsample "page.domainurl/samples/grid/grid-cs14" %}
 
-> * The `displayAsCheckBox` property applies only to boolean columns. Checked = true; unchecked = false.
+> The `displayAsCheckBox` property applies only to boolean columns. Checked = true; unchecked = false.
 
 ## Preventing checkbox in blank rows
 
@@ -510,7 +510,7 @@ In the below example, the "Ship City" column is defined with `visible` property 
 {% previewsample "page.domainurl/samples/grid/grid-cs15" %}
 
 > * Hiding a column using the `visible` property only affects the UI representation of the Grid. The data for hidden columns still exists in the data source and can be accessed or modified through code.
->* When a column is hidden, its width is not included in the calculation of the total grid width.
+> * When a column is hidden, its width is not included in the calculation of the total grid width.
 > * Columns can be permanently hidden by setting the `visible` property to `false` in the column definition, or by removing the column entirely.
 
 ### Using methods

@@ -39,7 +39,7 @@ Below is the list of minimum dependencies required to integrate chart functional
 
 ### Setup Angular Environment
 
-Use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. Install Angular CLI using the following command:
+Use [Angular CLI](https://github.com/angular/angular-cli) to setup Angular applications. Install Angular CLI using the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -53,7 +53,7 @@ Start a new Angular application using the Angular CLI command:
 ng new my-app
 ```
 
-This command will prompt you for project settings such as Angular routing and stylesheet format preferences.
+This command will prompt for project settings such as Angular routing and stylesheet format preferences.
 
 ![Initial_setup](images/Initial-setup.png)
 
@@ -101,7 +101,7 @@ To use the **Material** theme, add the following imports to the **src/styles.css
 
 ## Chart Integration via Context Menu in Grid
 
-This section explains how the grid can render charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular grid using the context menu. **Right-clicking** on selected rows presents chart types such as bar, pie, or line for immediate visualization. This enhances interactivity and provides a quick analytical view.
+This section explains grid rendering of charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular grid using the context menu. **Right-clicking** on selected rows presents chart types such as bar, pie, or line for immediate visualization. This enhances interactivity and provides a quick analytical view.
 
 For example, in a sales dashboard, selecting records for specific products can display a comparative bar or pie chart that shows online sales versus retail sales or revenue trends across months.
 

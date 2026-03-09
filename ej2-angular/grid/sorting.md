@@ -14,7 +14,7 @@ The Grid component provides built-in support for sorting data-bound columns in a
 
 Sorting a particular column is accomplished by clicking on its column header. Each click on the header toggles the sort order between `Ascending` and `Descending`.
 
-To use the sorting feature, you need to inject the `SortService` in the provider section of `AppModule`.
+To use the sorting feature, inject the `SortService` in the provider section of **AppModule**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,8 +28,8 @@ To use the sorting feature, you need to inject the `SortService` in the provider
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs1" %}
 
-> * Grid column sorted in `Ascending` order. If you click on an already sorted column, then toggles the sort direction.
-> * You can apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) methods.
+> * Grid column sorted in `Ascending` order. If a click occurs on an already sorted column, the sort direction toggles.
+> * Apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) methods.
 > * To disable sorting for a specific column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowsorting) property to `false`.
 
 ## Initial sorting
@@ -117,7 +117,7 @@ The following example demonstrates defining a custom `sortComparer` function for
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs5" %}
 
-> The "customSortComparer" function takes two parameters: a and b, which are the values being compared. The function returns -1, 0, or 1, depending on the comparison result.
+> The "customSortComparer" function takes two parameters: a and b, which are the values being compared. The function returns "-1", "0", or "1", depending on the comparison result.
 
 ### Display null values always at bottom 
 
@@ -139,7 +139,7 @@ The example below demonstrates displaying "null" values at the bottom of the gri
 
 ## Touch interaction
 
-When you tap grid header on touch screen devices, then the selected column header is sorted and display a popup ![Sorting](images/sorting.jpg) for multi-column sorting, tap on the popup to sort multiple columns ![Multi Sorting](images/msorting.jpg) and then tap the desired grid headers.
+When tapping the grid header on touch devices, the selected column header is sorted and displays a popup ![Sorting](images/sorting.jpg) for multi-column sorting; tap the popup to sort multiple columns ![Multi Sorting](images/msorting.jpg) and then tap the desired grid headers.
 
 > The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) should be `true` then only the popup will be shown.
 
@@ -169,7 +169,7 @@ The following example demonstrates sorting with a foreign key column enabled, wh
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs10" %}
 
-> Make sure to inject the `ForeignKeyService` in the provider section of the `AppModule` to ensure its availability throughout your application.
+> Make sure to inject the `ForeignKeyService` in the provider section of the **AppModule** to ensure its availability throughout the application.
 
 **Sort foreign key column based on text for remote data**
 
@@ -305,7 +305,7 @@ The following sample demonstrates a grid rendered with a customized sort icon.
 
 ## Sort columns externally
 
-The Grid component in Syncfusion's Angular suite allows you to customize the sorting of columns and provides flexibility in sorting based on external interactions. You can sort columns, remove a sort column, and clear sorting using an external button click.
+The Grid component in Syncfusion's Angular suite allows customization of column sorting and provides flexibility in sorting based on external interactions. Sort columns, remove a sort column, and clear sorting using an external button click.
 
 ### Add sort columns
 
@@ -382,10 +382,7 @@ import { data } from './datasource';
 import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [SortService],
 standalone: true,
     selector: 'app-root',

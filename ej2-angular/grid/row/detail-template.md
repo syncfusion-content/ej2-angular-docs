@@ -172,13 +172,7 @@ import { employeeData } from './datasource';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule ,
-        TextBoxModule       
-    ],
-
+imports: [GridModule, ButtonModule ,TextBoxModule],
 providers: [DetailRowService],
 standalone: true,
   selector: 'app-root',

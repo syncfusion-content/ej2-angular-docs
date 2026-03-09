@@ -76,7 +76,7 @@ To enable multiple column selection, set the [selectionSettings.allowColumnSelec
 
 ## Select columns programmatically
 
-The Grid supports externally performing single column selection, multiple column selection, and range of column selection using built-in methods. This capability allows interaction with specific columns within the grid. The following topic demonstrates how these selections can be achieved using methods.
+The Grid supports externally performing single column selection, multiple column selection, and range of column selection using built-in methods. This capability allows interaction with specific columns within the grid. The following topic demonstrates achieving these selections using methods.
 
 ### Single column selection
 

@@ -104,11 +104,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule]
 providers: [ExcelExportService, ToolbarService,AggregateService],
 standalone: true,
   selector: 'app-root',
@@ -262,7 +258,7 @@ The following example demonstrates exporting multiple grids to the same page in 
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-cs12" %}
 
->By default, `multipleExport.blankRows` value is 5.
+> By default, `multipleExport.blankRows` value is "5".
 
 ### New sheet
 

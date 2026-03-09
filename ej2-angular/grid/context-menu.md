@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component incl
 
 Enable the context menu by configuring the grid's [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuitems) property. The property accepts the default set of menu items or a custom collection of objects.
 
-To use the context menu, inject the **ContextMenuService** in the provider section of **AppModule**.
+To use the context menu, inject the `ContextMenuService` in the provider section of **AppModule**.
 
 ```typescript
 import { ContextMenuService } from '@syncfusion/ej2-angular-grids';
@@ -109,7 +109,7 @@ The following example demonstrates adding custom context menu items in the Grid 
 
 The Syncfusion Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
 
-This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's `beforeOpen` event.
+This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#beforeopen) event.
 
 Using the `onclick` event listener of the grid, you can capture clicked position values through the `ngAfterViewInit` method. This method is suitable for DOM interactions and operations requiring access to rendered elements. The captured positions are then passed to the `open` method of the context menu within the `onclick` event. Additionally, the default right-click behavior is prevented using the `created` event of the grid.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Grid Component
 
-TThe Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component follows major accessibility guidelines and standards, including the [Americans with Disabilities Act (ADA)](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [WAI‑ARIA roles](https://www.w3.org/TR/wai-aria#roles). These standards ensure the grid is usable with assistive technologies and keyboard‑only navigation.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component follows major accessibility guidelines and standards, including the [Americans with Disabilities Act (ADA)](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [WAI‑ARIA roles](https://www.w3.org/TR/wai-aria#roles). These standards ensure the grid is usable with assistive technologies and keyboard‑only navigation.
 
 The accessibility compliance for the Grid component is outlined below.
 
@@ -70,11 +70,11 @@ The Angular Grid follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns
 
 The Syncfusion Grid component is structured with a two-table architecture for its header and content. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for both the grid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools. It's important to note that these limitations do not affect the readability of the grid content over screen readers.
 
-The accessibility checker tools highlights the following known issues:
+The accessibility checker tools highlight the following known issues:
 
 * aria-required-children: This warning appears when rendering the grid without any features, as it contains textarea and grid content. Additionally, it appears when enabling features such as the toolbar and grouping.
 
-* color-contrast: This warning appears when you are enabling the search item in the grid's toolbar.
+* color-contrast: This warning appears when enabling the search item in the grid's toolbar.
 
 * An explicit ARIA 'role' is not valid for `<tr>` element within an ARIA role 'grid' per the ARIA in HTML specification.
 
@@ -88,7 +88,7 @@ The accessibility checker tools highlights the following known issues:
 
 * Multiple elements with "search" role do not have unique labels.
 
-* Text contrast of 4.10 with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of 400.
+* Text contrast of "4.10" with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of "400".
 
 * Interactive component with ARIA role 'grid' does not have a programmatically associated name.
 
@@ -199,17 +199,15 @@ The Grid provides keyboard navigation and follows WAI‑ARIA [keyboard interacti
 <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Removes sorting from the currently focused header column.
 <br>
 
-> * The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + Down Arrow</kbd>.
+> The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + Down Arrow</kbd>.
 
 ### Preventing Default Key Actions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the capability to disable the default key action behavior according to your needs.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the capability to disable the default key action behavior according to application needs.
 
 This allows the application to intercept and modify the response when specific keys are pressed within the web interface.
 
 To disable the default key action in the grid, use the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#keypressed) event.
-
-This allows the application to intercept and modify the response when specific keys are pressed within the web interface. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,20 +232,20 @@ Use the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/i
 The example below demonstrates using shortcut keys to execute grid actions via the `keyPressed` event. Define the following custom shortcuts within the event to execute different grid actions:
 
 * Pressing N adds a new record.
-* Pressing Ctrl + S saves a record by calling `endEdit`.
-* Pressing Ctrl + D deletes a record.
-* Pressing Ctrl + A selects all rows.
-* Pressing Ctrl + G groups the grid by a selected column.
+* Pressing <kbd>Ctrl + S</kbd> saves a record by calling `endEdit`.
+* Pressing <kbd>Ctrl + D</kbd> deletes a record.
+* Pressing <kbd>Ctrl + A</kbd> selects all rows.
+* Pressing <kbd>Ctrl + G<kbd> groups the grid by a selected column.
 
 Additionally, the default actions for these keyboard shortcuts related to grouping and editing are prevented:
 
-* Ctrl + Space
-* Insert
-* F2
-* Delete
-* Enter
+* <kbd>Ctrl + Space</kbd>
+* <kbd>Insert</kbd>
+* <kbd>F2</kbd>
+* <kbd>Delete</kbd>
+* <kbd>Enter</kbd>
 
-You can add further custom shortcuts and actions as required to enhance the capabilities of your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+Add further custom shortcuts and actions as required to enhance the capabilities of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -282,13 +280,9 @@ import { PageSettingsModel, ToolbarItems, SearchSettingsModel, SelectionSettings
   
 
 @Component({
-imports: [
-        
-        GridModule
-    
-    ],
-
-providers: [PageService,
+imports: [GridModule],
+providers: [
+        PageService,
         SortService,
         ReorderService,
         FilterService,
@@ -376,4 +370,4 @@ export class AppComponent implements OnInit {
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+[Accessibility in Syncfusion Angular components](../common/accessibility)

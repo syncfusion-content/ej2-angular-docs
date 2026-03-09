@@ -38,8 +38,8 @@ The following example demonstrates row spanning in action:
   
 {% previewsample "page.domainurl/samples/grid/spanning-cs2" %}
 
->* Spanning can be disabled for a particular Grid page by using the `requestType` value from the `queryCellInfo` event argument.
->* The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
+> * Spanning can be disabled for a particular Grid page by using the `requestType` value from the `queryCellInfo` event argument.
+> * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
 
 ## Limitations
 

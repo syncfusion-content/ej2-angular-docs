@@ -118,7 +118,7 @@ Replace (**GridServer/tsconfig.json**) file content with the following configura
 
 To configure the GraphQL server with `Apollo`, begin by installing the essential `Apollo` and server‑side packages. 
 
-Run the following commands to add them to your project:
+Run the following commands to add them to the project:
 
 ```bash
 npm install graphql @apollo/server @graphql-tools/schema graphql-type-json
@@ -172,7 +172,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
 **Instructions:**
 
 1. Create a new schema file (**src/schema.graphql**) in the **GridServer** folder.
-2. Add type definition for "Expense" type.
+2. Add type definition for **Expense** type:
 
     ```
       #--- Expense type definition ---
@@ -182,7 +182,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
         #include additional fields
       }
     ```
-3. Add type definition for "ExpenseResult" type.
+3. Add type definition for **ExpenseResult** type:
 
     ```
     # --- Return type for Grid paging ---
@@ -191,7 +191,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       count: Int!
     }
     ```
-4. Add type definition for "SortInput".
+4. Add type definition for **SortInput**:
 
     ```
     input SortInput {
@@ -199,7 +199,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       direction: String!
     }
     ```
-5. Add type definition for "ExpenseInput".
+5. Add type definition for **ExpenseInput**:
 
     ```
     input ExpenseInput {
@@ -208,7 +208,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       #include additional fields
     }
     ```
-6. Add type definition for "FilterInput".
+6. Add type definition for **FilterInput**:
 
     ```
     input FilterInput {
@@ -219,7 +219,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       matchCase: Boolean
     }
     ```
-7. Add type definition for "DataManagerInput".
+7. Add type definition for **DataManagerInput**:
 
     ```
     # Add additional parameters (e.g., group, aggregates) here if needed
@@ -234,16 +234,16 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       params: JSON
     }
     ```
-    > For detailed information about "DataManagerInput" type refer to [Configuring Syncfusion DataManagerInput schema](#step-3-configuring-syncfusion-datamanagerinput-schema)
+    > For detailed information about **DataManagerInput** type refer to [Configuring Syncfusion DataManagerInput schema](#step-3-configuring-syncfusion-datamanagerinput-schema)
 
-8. Define the Query type to expose the "getExpenses" operation that returns the list of "expenses".
+8. Define the Query type to expose the "getExpenses" operation that returns the list of "expenses":
 
     ```
     type Query {
       getExpenses(datamanager: DataManagerInput): ExpenseResult!
     }
     ```
-9. Define Mutation types for CRUD operations.
+9. Define Mutation types for CRUD operations:
 
     ```
     type Mutation {
@@ -590,7 +590,7 @@ The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to c
         </e-columns> 
     </ejs-grid>
     ```
-2. In the (**app.component.ts**) file to configure the `DataManager` with the `GraphQLAdaptor`.
+2. In the **app.component.ts** file to configure the `DataManager` with the `GraphQLAdaptor`.
 
     ```ts
     [app.component.ts]
@@ -735,7 +735,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
     </e-columns> 
     </ejs-grid>
     ```
-2. Open the (**app.component.ts**) file, inject the `ToolbarService`, `EditService` to the providers.
+2. Open the **app.component.ts** file, inject the `ToolbarService`, `EditService` to the providers.
 
     ```ts
     import { GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
@@ -864,7 +864,7 @@ When a search action is performed in the Grid, the `GraphQLAdaptor` sends the se
 
 **Instructions:**
 
-1. Enable searching in the Grid, add the "Search" in the Grid’s `toolbar` items. 
+1. Enable searching in the Grid, add the `Search` in the Grid’s `toolbar` items. 
 
     ```html
     <ejs-grid
@@ -986,7 +986,7 @@ The `GraphQLAdaptor` automatically passes the sorting details to the server thro
     })
     ```
 
-2. Implement the sort logic within the "getExpenses" resolver function located in the (**resolver.ts**) file.
+2. Implement the sort logic within the "getExpenses" resolver function located in the **resolver.ts** file.
 
     ```ts
     import { expenses } from './data';

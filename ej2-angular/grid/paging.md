@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in Angular Grid component | Syncfusion
-description: Learn here all about Paging in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Paging | Syncfusion
+description: Angular Grid paging supports client and server paging with options, templates, and performance features to navigate large data sets efficiently.
 platform: ej2-angular
 control: Paging 
 documentation: ug
@@ -93,7 +93,7 @@ The example below demonstrates updating the page count dynamically using a textb
 
 ### Change current page
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports programmatic page navigation through the [pageSettings.currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#currentpage) property. The default value is **1**, indicating the first page. This property can be modified during initial rendering or updated later to navigate to a specific page based on interaction.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports programmatic page navigation through the [pageSettings.currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#currentpage) property. The default value is "1", indicating the first page. This property can be modified during initial rendering or updated later to navigate to a specific page based on interaction.
 
 The following example demonstrates dynamically changing the current page using a textbox value and an external button click:
 
@@ -260,7 +260,7 @@ The example below demonstrates navigating to a specific page by using `goToPage`
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs16" %}
 
-## How to get the pager element
+## Get the pager element
 
 The pager element in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid can be obtained using the [getPager](https://ej2.syncfusion.com/angular/documentation/api/grid#getpager) method which returns an HTML element representing the pager. This enables customizing the pager's appearance or behavior to meet application requirements.
 

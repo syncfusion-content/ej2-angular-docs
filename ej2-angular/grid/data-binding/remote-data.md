@@ -24,7 +24,7 @@ The Syncfusion Grid component delivers comprehensive functionality for handling 
 
 **Using the `dataStateChange` event**
 
-The `dataStateChange` event triggers whenever you perform actions that modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
+The `dataStateChange` event triggers whenever actions modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
 
 To implement the `dataStateChange` event effectively:
 
@@ -137,7 +137,7 @@ getAllData(state: any, action: any): Observable<any> {
 
 ![Filtering Multiple Values](../images/observables-multiple-filtering.png)
 
-When filtering multiple values, you can retrieve predicates as arguments in the `dataStateChange` event. Create your predicate execution based on the predicates values.
+When filtering multiple values, predicates can be retrieved as arguments in the `dataStateChange` event. Create predicate execution based on the predicate values.
 
 ### Handling sorting operation
 
@@ -298,7 +298,7 @@ public ngOnInit(): void {
 }
 ```
 
-Based on the initial state, you can access the arguments as shown below:
+Based on the initial state, access the arguments as shown below:
 
 ![Lazy load group](../images/observables-lazy-load-grouping.png)
 
@@ -447,13 +447,13 @@ The following example demonstrates binding observable data using the async pipe 
 
 > * While working with grid edit operation, defining the `isPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
-> * You can refer to the guidelines for CRUD using observables [here](https://www.youtube.com/watch?v=yGLdi_Es0ac)
+> * Refer to the guidelines for CRUD using observables [here](https://www.youtube.com/watch?v=yGLdi_Es0ac)
 
 ### Export all records in client side
 
 Exporting all records with async pipe proves especially beneficial when dealing with large datasets that require export for offline analysis or sharing purposes.
 
-By default, the Syncfusion Angular Grid component exports only the records available on the current page. However, the Grid component allows you to export all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) in conjunction with the Async Pipe for data binding.
+By default, the Syncfusion Angular Grid component exports only the records available on the current page. However, the Grid component allows exporting all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) in conjunction with the Async Pipe for data binding.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -608,7 +608,7 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Binding observable data without using async pipe
 
-In Angular, Observables data can be bound to UI elements using the [AsyncPipe](https://angular.dev/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
+In Angular, Observables data can be bound to UI elements using the [AsyncPipe](https://angular.dev/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where it is necessary to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
 
 To bind observable data without using the async pipe in the grid, follow these steps:
 
@@ -719,7 +719,7 @@ getAllData(state: any, action: any): Observable<any> {
 
 ![Filtering Multiple Values](../images/observables-multiple-filtering.png)
 
-When filtering multiple values, you can retrieve predicates as arguments in the `dataStateChange` event. Create your predicate execution based on the predicates values.
+When filtering multiple values, predicates can be retrieved as arguments in the `dataStateChange` event. Create predicate execution based on the predicate values.
 
 ### Handling sorting operation
 
@@ -727,7 +727,7 @@ When a sorting operation is performed in the grid, the `dataStateChange` event i
 
 ![Sorting](../images/observables-sorting.png)
 
-When performing multi-column sorting, you can access the following referenced arguments in the `dataStateChange` event:
+When performing multi-column sorting, access the following referenced arguments in the `dataStateChange` event:
 
 ![Multi Sorting](../images/observables-multi-sorting.png)
 
@@ -880,11 +880,11 @@ public ngOnInit(): void {
 }
 ```
 
-Based on the initial state, you can access the arguments as shown below:
+Based on the initial state, access the arguments as shown below:
 
 ![Lazy load group](../images/observables-lazy-load-grouping.png)
 
-You can modify the Observable based on the grid state:
+Modify the Observable based on the grid state:
 
 ```typescript
 private applyGrouping(query: Query, group: any): void {
@@ -1191,9 +1191,9 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Sending additional parameters to the server
 
-The Syncfusion Grid component enables you to include custom parameters in data requests. This feature proves particularly useful when providing additional information to the server for enhanced processing capabilities.
+The Syncfusion Grid component enables inclusion of custom parameters in data requests. This feature proves particularly useful when providing additional information to the server for enhanced processing capabilities.
 
-By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property of the grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every grid action.
+By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property of the grid along with the `addParams` method of the Query class, custom parameters can be incorporated into data requests for every grid action.
 
 To enable custom parameters in data requests for the grid component:
 
@@ -1257,9 +1257,9 @@ export class AppComponent implements OnInit {
 
 ## Fetch result from the DataManager query using external button 
 
-By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data loads into the grid.
+By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, it may be necessary to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data loads into the grid.
 
-To achieve this, you can use the `executeQuery` method of `DataManager` with a query object. This method enables you to run a custom query and retrieve results dynamically.
+To achieve this, use the `executeQuery` method of `DataManager` with a query object. This method enables running a custom query and retrieving results dynamically.
 
 The following example demonstrates the process of fetching data from the server when an external button is clicked and displaying a status message indicating the data fetch status:
 

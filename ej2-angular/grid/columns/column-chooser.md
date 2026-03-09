@@ -49,8 +49,8 @@ In this example, the `showInColumnChooser` property is set to `false` for the "O
   
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs2" %}
 
->* The `columns.showInColumnChooser` property must be set individually for each `<e-column>` element  that should be hidden. 
->* At least one column in the grid must remain in a visible state to allow showing and hiding columns.
+> * The `columns.showInColumnChooser` property must be set individually for each `<e-column>` element  that should be hidden. 
+> * At least one column in the grid must remain in a visible state to allow showing and hiding columns.
 
 ## Open column chooser externally
 

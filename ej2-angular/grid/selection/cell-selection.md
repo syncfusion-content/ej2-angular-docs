@@ -64,9 +64,9 @@ The Grid supports three types of cell selection mode which can be configured usi
 * `Box`: In this mode, selection of a range of cells is possible within the start and end column indexes, including all cells in between the rows within the specified range. This mode is useful for selecting cells within specific columns.
 * `BoxWithBorder`: This mode is similar to the `Box` mode, but it adds borders to the selected range of cells. This visual distinction makes it easy to identify the selected cells within the grid.
 
-> Cell Selection requires the `selectionSettings.mode` to be `Cell` or  `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
+> * Cell Selection requires the `selectionSettings.mode` to be `Cell` or  `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
 
-> To select a range of cells in the UI using the keyboard, hold the **Shift key** and click on the start cell, then click on the end cell to complete the selection. This will apply the currently configured `cellSelectionMode` (Flow, Box, or BoxWithBorder) to the selected range.
+> * To select a range of cells in the UI using the keyboard, hold the <kbd>Shift</kbd> key and click on the start cell, then click on the end cell to complete the selection. This will apply the currently configured `cellSelectionMode` (Flow, Box, or BoxWithBorder) to the selected range.
 
 The following example demonstrates dynamically enabling and changing the `cellSelectionMode` using the `DropDownList` component:
 
@@ -129,7 +129,7 @@ The following example demonstrates selecting multiple cells in the grid by calli
 
 The [selectCellsByRange](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectcellsbyrange) method allows selection of a continuous range of cells based on start and end index values. This method provides programmatic control for selecting multiple cells within a defined range.
 
->* Range cell selection allows selection of multiple cells in box mode when `cellSelectionMode` is set to `Box`. However, when `cellSelectionMode` is set to `Flow`, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
+> * Range cell selection allows selection of multiple cells in box mode when `cellSelectionMode` is set to `Box`. However, when `cellSelectionMode` is set to `Flow`, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
 > * Cell Selection requires the `selectionSettings.mode` to be `Cell` or `Both` and [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) should be `Multiple`.
 
 The following example demonstrates programmatic range selection by passing start and end row/cell index values to the `selectCellsByRange` method:

@@ -18,17 +18,17 @@ Built-in toolbar items in the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 
 | Built-in Toolbar Items | Actions |
 |------------------------|---------|
-| Add | Adds a new row to the grid.|
-| Edit | Enables editing mode for the selected row in the grid.|
-| Update | Saves any changes made during editing mode.|
-| Delete | Deletes the selected record from the grid.|
-| Cancel | Discards modifications made during editing mode.|
-| Search | Displays a search box to filter grid records.|
-| Print | Prints the grid content.|
-| ColumnChooser | Opens a dialog to select column visibility.|
-| PdfExport | Exports grid data as a PDF file.|
-| ExcelExport | Exports grid data as an Excel file.|
-| CsvExport | Exports grid data as a CSV file.|
+| `Add` | Adds a new row to the grid.|
+| `Edit` | Enables editing mode for the selected row in the grid.|
+| `Update` | Saves any changes made during editing mode.|
+| `Delete` | Deletes the selected record from the grid.|
+| `Cancel` | Discards modifications made during editing mode.|
+| `Search` | Displays a search box to filter grid records.|
+| `Print` | Prints the grid content.|
+| `ColumnChooser` | Opens a dialog to select column visibility.|
+| `PdfExport` | Exports grid data as a PDF file.|
+| `ExcelExport` | Exports grid data as an Excel file.|
+| `CsvExport` | Exports grid data as a CSV file.|
 
 The following example demonstrates enabling built-in toolbar items such as `Print` and `Search` in the grid.
 
@@ -90,7 +90,6 @@ import { data } from './datasource';
 
 @Component({
 imports: [GridModule],
-
 providers: [ToolbarService],
 standalone: true,
     selector: 'app-root',
@@ -183,11 +182,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { ToolbarItems,EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ToolbarService, EditService],
 standalone: true,
     selector: 'app-root',
@@ -236,7 +231,7 @@ export class AppComponent implements OnInit {
 
 The Syncfusion Angular Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Custom UI elements such as buttons, dropdowns, or input controls can be added directly into the toolbar, alongside built-in actions like `Add`, `Edit`, and `Delete` to enhance user interaction and provide seamless integration with grid operations.
 
- In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) is rendered in the toolbar using an Angular `ng-template`, which is passed to the toolbar item's `template` property through a "TemplateRef". The `AutoComplete` is populated with unique "Ship City" values from the grid’s data. When a value is selected from the `AutoComplete`, the grid is updated by invoking its `search` method, dynamically filtering the displayed records based on the input. Using `ng-template` together with Angular’s "@ViewChild", you can embed interactive controls such as dropdowns or search fields and control the grid programmatically.
+In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) is rendered in the toolbar using an Angular `ng-template`, which is passed to the toolbar item's `template` property through a "TemplateRef". The `AutoComplete` is populated with unique "Ship City" values from the grid’s data. When a value is selected from the `AutoComplete`, the grid is updated by invoking its `search` method, dynamically filtering the displayed records in the "Ship City" column based on the input. Using `ng-template` together with Angular’s "@ViewChild" enables embedding interactive controls such as dropdowns or search fields and controlling the grid programmatically.
 
  Additionally, the [change](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#change) event of the `AutoComplete` is used to trigger a search operation within the grid. When a value is selected or typed, the event handler invokes the grid's [search](https://ej2.syncfusion.com/angular/documentation/api/grid#search) method, dynamically filtering the displayed records in the "Ship City" column based on the input.
 

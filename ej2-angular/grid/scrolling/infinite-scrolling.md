@@ -25,8 +25,8 @@ import { Inject, InfiniteScroll } from '@syncfusion/ej2-angular-grids';
 
 Infinite scrolling feature can be enabled by setting the [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid#enableinfinitescrolling) property to `true`. The [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) property must also be specified to define the scrollable area of the grid. Refer to this [section](./scrolling#set-width-and-height) for grid basic scrolling setup and configurations.
 
-> The Grid does not send a new data request when revisiting the same page in infinite scroll mode.
-> The `height` property must be defined when enabling `enableInfiniteScrolling`.
+> * The Grid does not send a new data request when revisiting the same page in infinite scroll mode.
+> * The `height` property must be defined when enabling `enableInfiniteScrolling`.
 
 The following example demonstrates to enable infinite scroll in the grid:
 

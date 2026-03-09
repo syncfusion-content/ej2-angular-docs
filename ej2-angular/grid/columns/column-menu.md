@@ -37,8 +37,8 @@ The default column menu items are displayed in the following table.
   
 {% previewsample "page.domainurl/samples/grid/grid-cs6" %}
 
->* The column menu can be disabled for a particular column by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column#showcolumnmenu) to `false`.
->* The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) with required items.
+> * The column menu can be disabled for a particular column by setting [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column#showcolumnmenu) to `false`.
+> * The default items can be customized by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) with required items.
 
 ## Prevent column menu for particular column
 

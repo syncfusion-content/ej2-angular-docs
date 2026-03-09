@@ -85,8 +85,8 @@ The following example demonstrates foreign key column implementation with remote
   
 {% previewsample "page.domainurl/samples/grid/foreignkey-cs12" %}
 
->* For remote data, sorting and grouping are performed based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue).
->* If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) is not defined, the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
+> * For remote data, sorting and grouping are performed based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue).
+> * If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) is not defined, the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
 
 ## Use edit template in foreign key column
 
@@ -187,10 +187,7 @@ import { data, employeeData } from './datasource';
 import { getValue } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
+imports: [GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='280'>

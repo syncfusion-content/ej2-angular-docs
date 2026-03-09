@@ -199,4 +199,4 @@ The following example renders a tab component inside the edit dialog. The tab co
 
 ## See also
 
->[angular-template-driven-vs-reactive-forms](https://www.syncfusion.com/blogs/post/angular-template-driven-vs-reactive-forms.aspx)
+[angular-template-driven-vs-reactive-forms](https://www.syncfusion.com/blogs/post/angular-template-driven-vs-reactive-forms.aspx)

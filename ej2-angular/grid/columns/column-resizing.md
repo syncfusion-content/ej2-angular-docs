@@ -26,9 +26,9 @@ To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/
   
 {% previewsample "page.domainurl/samples/grid/resize-cs2" %}
 
->* Resizing can be disabled for a particular column by specifying [columns.allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#allowresizing) to `false`.
->* In RTL mode, click and drag the left edge of the header cell to resize the column.
->* The `width` property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, the default width can be overridden by manually resizing the columns.
+> * Resizing can be disabled for a particular column by specifying [columns.allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#allowresizing) to `false`.
+> * In RTL mode, click and drag the left edge of the header cell to resize the column.
+> * The `width` property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, the default width can be overridden by manually resizing the columns.
 
 ## Set column resizing limits
 
@@ -59,9 +59,9 @@ In the following example, resize constraints are applied to multiple columns:
   
 {% previewsample "page.domainurl/samples/grid/resize-cs3" %}
 
->* The [columns.minWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#minwidth) and [columns.maxWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#maxwidth) properties are applied only during column resizing. They are not considered when resizing the window, as columns cannot be re-rendered dynamically during that process.
->* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for the data and layout requirements.
->* The specified `minWidth` and `maxWidth` values take precedence over any user-initiated resizing attempts that fall outside the defined range.
+> * The [columns.minWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#minwidth) and [columns.maxWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#maxwidth) properties are applied only during column resizing. They are not considered when resizing the window, as columns cannot be re-rendered dynamically during that process.
+> * When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for the data and layout requirements.
+> * The specified `minWidth` and `maxWidth` values take precedence over any user-initiated resizing attempts that fall outside the defined range.
 
 ## Prevent resizing for specific column
 
@@ -209,11 +209,7 @@ import { GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ResizeService],
 standalone: true,
     selector: 'app-root',
@@ -278,5 +274,5 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/resize-cs5" %}
 
->* The `ResizeArgs` object provides comprehensive information such as the current column width, new column width, column index, and the original DOM event.
->* The `resizing` event is triggered continuously during drag operations, potentially triggering dozens of times per second. Avoid heavy computations or DOM manipulations in this event handler to maintain smooth performance.
+> * The `ResizeArgs` object provides comprehensive information such as the current column width, new column width, column index, and the original DOM event.
+> * The `resizing` event is triggered continuously during drag operations, potentially triggering dozens of times per second. Avoid heavy computations or DOM manipulations in this event handler to maintain smooth performance.

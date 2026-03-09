@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The appearance of the header elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the grid header, header cell, and header cell div element.
 
-## Customize the Grid Header Root
+## Customize the Grid header root
 
 The `.e-gridheader` class is used to style the root element of the grid header.
 
@@ -24,7 +24,7 @@ The `.e-gridheader` class is used to style the root element of the grid header.
 
 ![Grid header](../images/grid-header.png)
 
-## Customize the Grid Header Cell
+## Customize the Grid header cell
 
 The `.e-headercell` class is used to style the root element of the header cell elements.
 
@@ -37,7 +37,7 @@ The `.e-headercell` class is used to style the root element of the header cell e
 
 ![Grid header cell](../images/grid-header-cell.png)
 
-## Customize the Grid Header Cell Content
+## Customize the Grid header cell content
 
 The `.e-headercelldiv` class is used to apply custom styles to the div element inside each grid header cell.
 

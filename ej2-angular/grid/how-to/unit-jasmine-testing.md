@@ -91,7 +91,7 @@ import { GridComponent, GridAllModule } from '@syncfusion/ej2-angular-grids';
 
 **II. Define the test suite:**
 
-The `describe` function is utilized to define the test suite. Within the `describe` function, you can use the `beforeEach` function. This function to execute the before each test case. Inside the `beforeEach` function, the `TestBed.configureTestingModule` method is used to configure the testing module. So, You need to import the `GridAllModule` in the import property and declared the `AppComponent` and ` GridComponent` in the declaration property.
+The `describe` function is utilized to define the test suite. Within the `describe` function, the `beforeEach` function can be used. This function executes before each test case. Inside the `beforeEach` function, the `TestBed.configureTestingModule` method is used to configure the testing module. Import the `GridAllModule` in the import property and declare the `AppComponent` and ` GridComponent` in the declaration property.
 
 ```typescript
 describe('AppComponent', () => {
@@ -137,7 +137,7 @@ The `it` block is used to define a test case for the "Length of the record". It 
     }));
 ```
 
-The following example demonstrates to create the grid sample and write a Jasmine test case:
+The following example demonstrates creating the grid sample and writing a Jasmine test case:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,4 +160,4 @@ The test command is defined in the `scripts` section of `package.json` as `test`
 ng test
 ```
 
->You can find a sample of Unit Jasmine testing in DataGrid [here](https://github.com/SyncfusionExamples/DataGrid-unit-testing-angular)
+>A sample of Unit Jasmine testing in DataGrid can be found [here](https://github.com/SyncfusionExamples/DataGrid-unit-testing-angular).

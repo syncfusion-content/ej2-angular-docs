@@ -312,11 +312,7 @@ import { GridComponent, GroupSettingsModel, ExportGroupCaptionEventArgs } from '
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [GroupService, ToolbarService, ExcelExportService],
 standalone: true,
     selector: 'app-root',

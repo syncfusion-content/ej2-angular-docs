@@ -30,9 +30,9 @@ To enable the `headerText` property, define it in the `e-column` element. The fo
   
 {% previewsample "page.domainurl/samples/grid/grid-cs20" %}
 
->* The `headerText` property is optional. If not defined, the corresponding column's field value is set as header text for that column.  
->* The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) property can be used to apply custom HTML content to the header cell.
->* If both the `field` and `headerText` are not defined in the column, the column renders with **empty** header text.
+> * The `headerText` property is optional. If not defined, the corresponding column's field value is set as header text for that column.  
+> * The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) property can be used to apply custom HTML content to the header cell.
+> * If both the `field` and `headerText` are not defined in the column, the column renders with **empty** header text.
 
 ## Header template
 
@@ -113,8 +113,8 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/header-template-cs1" %}
 
->* The `headerTemplate` property applies only to Grid columns that have a header element.
->* Any HTML or Angular component can be used in the header template to add functionality to the header element.
+> * The `headerTemplate` property applies only to Grid columns that have a header element.
+> * Any HTML or Angular component can be used in the header template to add functionality to the header element.
 
 ## Stacked header 
 
@@ -252,8 +252,8 @@ The following example demonstrates dynamically changing the alignment of the hea
   
 {% previewsample "page.domainurl/samples/grid/grid-cs26" %}
 
->* The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column#textalign) property.
->* The `headerTextAlign` property also works with the stacked header feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, aligning the header text in sub-headers as well.
+> * The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column#textalign) property.
+> * The `headerTextAlign` property also works with the stacked header feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, aligning the header text in sub-headers as well.
 
 ## Autowrap the header text
 
@@ -267,9 +267,9 @@ Grid provides the below three options for configuring:
 * `Header`: With this option, only the grid header text is wrapped.
 * `Content`: With this option, only the grid content is wrapped.
 
->* If a `ColumnDirective` width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
->* If a `ColumnDirective` header text contains no white space, the text may not be wrapped.
->* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
+> * If a `ColumnDirective` width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
+> * If a `ColumnDirective` header text contains no white space, the text may not be wrapped.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
 
 In the following example, the `textWrapSettings.wrapMode` property is set to `Header` to wrap only the grid header text to the next line.
 
@@ -315,8 +315,8 @@ To dynamically adjust the header height, use the [getHeaderContent](https://ej2.
   
 {% previewsample "page.domainurl/samples/grid/grid-cs28" %}
 
->* The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadertable) method can also be used to access the header table element for adjustment.
->* The header row height cannot be reduced below the default height of "42px" using the `e-columnheader` class.
+> * The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadertable) method can also be used to access the header table element for adjustment.
+> * The header row height cannot be reduced below the default height of "42px" using the `e-columnheader` class.
 
 ## Change header text dynamically
 
@@ -345,8 +345,8 @@ The Grid component provides several methods to change column header text dynamic
 | 6 | [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnindexbyuid)          | Retrieves the column index by unique identifier. Use with `getColumnByIndex` to modify the `headerText` property. |
 | 7 | [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyuid)         | Retrieves the header element by its unique identifier. Modify the `textContent` property to change header text. If the column has only a template without a defined field, this method provides access to the header element. |
 	
->* When header text is changed dynamically, the Grid must be refreshed by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method to reflect the changes.
->* UIDs are automatically generated by the Grid component and may change when the grid is refreshed or updated.
+> * When header text is changed dynamically, the Grid must be refreshed by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method to reflect the changes.
+> * UIDs are automatically generated by the Grid component and may change when the grid is refreshed or updated.
 
 Here is an example of changing the header text of a column using the `getColumnByField` method:
 
@@ -369,10 +369,10 @@ The column `headerValueAccessor` property in Syncfusion<sup style="font-size:70%
   * `field`: Represents the current field of the column.
   * `column`: Represents the current column object.
 
->* Use `headerValueAccessor` only to modify header text; avoid DOM operations such as adding or manipulating elements. Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event for DOM-related customizations.
->* The callback function should return a string representing the new header text.
->* The [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method can be used to refresh only the column header after dynamically changing the header content.
->* This property can be applied to individual columns or for all columns by adding it to the grid's properties.
+> * Use `headerValueAccessor` only to modify header text; avoid DOM operations such as adding or manipulating elements. Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event for DOM-related customizations.
+> * The callback function should return a string representing the new header text.
+> * The [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method can be used to refresh only the column header after dynamically changing the header content.
+> * This property can be applied to individual columns or for all columns by adding it to the grid's properties.
   
 Here's an example of using the `headerValueAccessor` property to change the header text of a column:
 
@@ -976,8 +976,8 @@ The following example demonstrates using the `refreshHeader` method to update th
   
 {% previewsample "page.domainurl/samples/grid/refresh-header-cs1" %}
 
->* The `refreshHeader` method updates only the grid header and not the entire grid.
->* To refresh the entire grid, use the `refresh` method instead.
+> * The `refreshHeader` method updates only the grid header and not the entire grid.
+> * To refresh the entire grid, use the `refresh` method instead.
 
 ## Get header element 
 

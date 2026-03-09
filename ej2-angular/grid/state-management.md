@@ -74,7 +74,6 @@ Clearing the local storage associated with the grid component resets the grid by
 
 ## Restore to specific state version
 
-
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports version-based persistence for restoration to a specific state. 
 
 Steps to enable version-based persistence in the Angular Grid:
@@ -303,7 +302,7 @@ When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/ap
   
 {% previewsample "page.domainurl/samples/grid/state-persistence-cs7" %}
 
-> * Adding new columns using `ColumnDirectives` directly in the grid initialization is not recommended when intending to persist new columns with the existing columns list. 
+> Adding new columns using `ColumnDirectives` directly in the grid initialization is not recommended when intending to persist new columns with the existing columns list. 
 
 ### Persist the column template, header template and header text
 
@@ -324,12 +323,8 @@ import { data } from './datasource';
 import { FilterService, PageService, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonAllModule
-    ],
-
+imports: [ GridModule, ButtonAllModule],
+providers: [GroupService, FilterService, PageService]
 standalone: true,
     selector: 'app-root',
     template: `<div id='message'>{{message}}</div><button ejs-button id='save' (click)='save()'>Save column settings</button><button ejs-button id='restore' (click)='restore()'>Restore column settings</button>
@@ -345,7 +340,7 @@ standalone: true,
                     </e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [GroupService, FilterService, PageService]
+    
 })
 export class AppComponent implements OnInit {
 
@@ -382,7 +377,6 @@ export class AppComponent implements OnInit {
             this.message = 'No saved settings found.';
         }
     }
-
 }
 {% endraw %}
 {% endhighlight %}

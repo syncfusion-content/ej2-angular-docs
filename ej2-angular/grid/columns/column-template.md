@@ -520,10 +520,7 @@ import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 
 @Component({
-imports: [
-    ChipListModule,
-    GridModule
-],
+imports: [ChipListModule,GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height='315px'>

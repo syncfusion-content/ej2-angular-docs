@@ -60,13 +60,13 @@ The following example demonstrates row drag and drop between different Grid comp
 {% previewsample "page.domainurl/samples/grid/dragndrop-cs1" %}
 
 > * Row drag and drop functionality is not supported with virtual scrolling and frozen rows and columns mode.
-> * The **RowDDService** must be injected in the provider section of **AppModule** to enable row drag and drop features.
+> * The `RowDDService` must be injected in the provider section of **AppModule** to enable row drag and drop features.
 
 ## Drag and drop to custom component 
 
 The Grid supports row drag-and-drop into custom components, enabling seamless data transfer without manual copy-paste. To enable this feature, set the `allowRowDragAndDrop` property to `true` and specify the target component's "ID" in the `targetID` property of the `rowDropSettings` object.
 
-In the following example, selected grid rows are dragged and dropped into a TreeView component using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrop) event. Upon successful drop, the corresponding grid row is removed and its data is inserted into the custom component:
+In the following example, selected grid rows are dragged and dropped into a TreeView component using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrop) event. Upon successful drop, the corresponding grid row is removed and its data is inserted into the custom component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ In the following example, selected grid rows are dragged and dropped into a Tree
   
 {% previewsample "page.domainurl/samples/grid/dragndrop-cs5" %}
 
-> * The `rowDrop` event triggers when a row is dropped onto a custom component, regardless of drop success. Use the `args.cancel` property to prevent the default action and implement custom handling logic.
+> The `rowDrop` event triggers when a row is dropped onto a custom component, regardless of drop success. Use the `args.cancel` property to prevent the default action and implement custom handling logic.
 
 ## Hide drag and drop icons
 
@@ -103,19 +103,19 @@ The following example demonstrates hide drag and drop icons in the Syncfusion<su
 {% previewsample "page.domainurl/samples/grid/dragndrop-cs2" %}
 
 > * The selection feature must be enabled to allow users to select rows before performing drag and drop operations.
-> * For multiple row selection, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) property to **Multiple**. Users can then select multiple rows by clicking and dragging within the grid.
+> * For multiple row selection, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Multiple`. Users can then select multiple rows by clicking and dragging within the grid.
 
 ## Drag and drop events
 
 The Grid component provides powerful events that trigger during row drag and drop operations. These events enable customization of drag elements, tracking of drag progress, and execution of actions when rows are dropped on target elements. The following events are available:
 
-1. [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdragstarthelper): Triggers when clicking on the drag icon or grid row, allowing customization of the drag element based on specific criteria.
+1. [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdragstarthelper): Triggers when clicking on the drag icon or grid row, allowing customization of the drag element based on specific criteria.
 
-2. [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdragstart): Triggers when grid row dragging begins, providing opportunity to initialize drag-specific logic.
+2. [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdragstart): Triggers when grid row dragging begins, providing opportunity to initialize drag-specific logic.
 
-3. [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrag): Triggers continuously while the grid row is being dragged, enabling real-time feedback and validation.
+3. [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrag): Triggers continuously while the grid row is being dragged, enabling real-time feedback and validation.
 
-4. [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrop): Triggers when a drag element is dropped onto a target element, allowing custom drop handling and data manipulation.
+4. [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrop): Triggers when a drag element is dropped onto a target element, allowing custom drop handling and data manipulation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,5 +217,5 @@ The row drag and drop feature offers focused functionality, working seamlessly w
 
 ## See also
 
-[Sorting data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/sorting)
-[Filtering data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/filtering)
+- [Sorting data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/sorting)
+- [Filtering data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/filtering)

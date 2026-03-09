@@ -280,7 +280,7 @@ The following example demonstrates exporting multiple grids to a PDF file when a
 
 ### Limitations
 
-* Multiple grids exporting feature is not supported with server side exporting.
+Multiple grids exporting feature is not supported with server side exporting.
 
 ## Exporting hierarchy grid
 

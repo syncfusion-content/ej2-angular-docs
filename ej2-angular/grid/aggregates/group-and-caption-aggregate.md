@@ -17,8 +17,8 @@ To configure this in the grid, use the following properties on the `AggregateCol
 - [groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupfootertemplate): Display aggregate values in the group footer section.
 - [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate): Renders aggregate values in the group caption section.
 
-> - Set [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowgrouping) to `true` in the grid to enable column grouping.
-> - Set [showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showgroupedcolumn) to `true` in `groupSettings` to display grouped columns in the grid.
+> * Set [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowgrouping) to `true` in the grid to enable column grouping.
+> * Set [showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showgroupedcolumn) to `true` in `groupSettings` to display grouped columns in the grid.
 
 ## Group footer aggregates
 

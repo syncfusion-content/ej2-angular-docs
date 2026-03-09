@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Grid - Hierarchy Grid | Syncfusion
-description:  Angular Grid hierarchy view enables nested grids, parent‑child relationships, and data binding to create structured hierarchical layouts.
+description: Angular Grid hierarchy view enables nested grids, parent‑child relationships, and data binding to create structured hierarchical layouts.
 platform: ej2-angular
 control: Hierarchy grid 
 documentation: ug
@@ -16,11 +16,11 @@ This structure enhances data readability and navigation, especially when working
 
 To enable the Hierarchy Grid feature:
 
-1. Inject the **DetailRowService** in the provider section of your **AppModule**. This service is essential for handling the hierarchy grid functionality.
+1. Inject the `DetailRowService` in the provider section of the **AppModule**. This service is essential for handling the hierarchy grid functionality.
 
 2. Define the [childGrid](https://ej2.syncfusion.com/angular/documentation/api/grid#childgrid) property in the grid configuration. This property contains the settings for the child grid, such as its columns and data source.
 
-3. Set the [childGrid.queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property to link the parent and child records using a common field. This defines how child data is retrieved based on the parent row.
+3. Set the [childGrid.queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property to link the parent and child records using a common field. This defines the retrieval of child data based on the parent row.
 
 The following example demonstrates enabling the hierarchy feature in the grid, which helps present structured data in a clean and interactive format for improved organization and navigation.
 
@@ -87,7 +87,7 @@ In the provided example, the third record of the grid is expanded by utilizing t
 
 Dynamically loading child grid data improves performance, optimizes data transmission, and enhances the experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, improving overall application efficiency.
 
-To achieve this, use the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the parent grid. This event allows assigning the `dataSource` for the child grid dynamically based on the parent row's data. The following example demonstrates how to dynamically load child grid data using the `load` event.
+To achieve this, use the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the parent grid. This event allows assigning the `dataSource` for the child grid dynamically based on the parent row's data. The following example demonstrates dynamically loading child grid data using the `load` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,17 +155,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { PageService, SortService, FilterService, GroupService,DetailRowService } from '@syncfusion/ej2-angular-grids'
 
-
-
 import { Component, OnInit, ViewChild, ViewContainerRef, Inject, AfterViewInit } from '@angular/core';
 import { data, employeeData } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [PageService,
         SortService,
         FilterService,
@@ -232,7 +226,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 Accessing parent row details within a child grid enables contextual data presentation and supports scenarios where parent information is required for calculations or conditional rendering.
 
-This can be accomplished through the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event, which is triggered when the child grid is initialized. Within this event, parent row data can be obtained using `this.parentDetails.parentRowData`. The example below demonstrates how parent details can be accessed and utilized in the child grid.
+This can be accomplished through the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event, which is triggered when the child grid is initialized. Within this event, parent row data can be obtained using `this.parentDetails.parentRowData`. The example below demonstrates accessing parent details for use in the child grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +263,7 @@ The following example demonstrates rendering aggregates in a child grid to displ
 
 The Hierarchy Grid in the Data Grid component supports expanding all child grid rows through an external button, providing a comprehensive view of hierarchical data without requiring manual interaction.
 
-By default, all child grids are rendered in a collapsed state. To programmatically expand or collapse all child rows, use the [expandAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expandall) and [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#collapseall) methods provided by the `DetailRow` module. The following example demonstrates how these methods can be triggered via external button clicks. 
+By default, all child grids are rendered in a collapsed state. To programmatically expand or collapse all child rows, use the [expandAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expandall) and [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#collapseall) methods provided by the `DetailRow` module. The following example demonstrates triggering these methods via external button clicks. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,15 +283,15 @@ By default, all child grids are rendered in a collapsed state. To programmatical
 
 The default expand/collapse icons in the Hierarchy Grid can be customized by applying custom CSS to the expand and collapse icon classes. Add the following styles to the **index.css** file to replace the default icons with custom ones.
 
-```
-    .e-grid .e-icon-grightarrow::before,
-    .e-grid-menu .e-icon-grightarrow::before {
+```css
+.e-grid .e-icon-grightarrow::before,
+.e-grid-menu .e-icon-grightarrow::before {
     content: '\e85f';
-    }
-    .e-grid .e-icon-gdownarrow::before,
-    .e-grid-menu .e-icon-gdownarrow::before {
+}
+.e-grid .e-icon-gdownarrow::before,
+.e-grid-menu .e-icon-gdownarrow::before {
     content: '\e83f';
-    }
+}
 
 ```
 
@@ -389,7 +383,7 @@ The child grid’s appearance within the parent grid can be customized using CSS
 
 ### Header
 
-The appearance of the header elements in the child grid can be customized using CSS. Here are examples of how to customize the child grid header, header cell, and header cell div element.
+The appearance of the header elements in the child grid can be customized using CSS. Here are examples for customizing the child grid header, header cell, and header cell div element.
 
 **Customizing the child grid header**
 
@@ -432,7 +426,7 @@ To style the inner `div` of the child grid's header cells, use the following CSS
 
 ### Paging
 
-The paging elements of the child grid can be customized using CSS. The following examples show how to style the pager root, pager container, navigation elements, numeric links, and the current page indicator.
+The paging elements of the child grid can be customized using CSS. The following examples show styling for the pager root, pager container, navigation elements, numeric links, and the current page indicator.
 
 **Customizing the child grid pager root element**
 
@@ -552,7 +546,7 @@ To style the multi sorting icon in the child grid header, apply the following CS
 
 ### Filtering
 
-The appearance of filtering elements in the child grid can be customized using CSS. The following examples demonstrate how to style key filtering components, including filter bar cells, filter inputs, focus states, clear icons, filter icons, filter dialog content and footer, dialog input elements, dialog buttons, and excel filter number options.
+The appearance of filtering elements in the child grid can be customized using CSS. The following examples demonstrate styling key filtering components, including filter bar cells, filter inputs, focus states, clear icons, filter icons, filter dialog content and footer, dialog input elements, dialog buttons, and excel filter number options.
 
 **Customizing the child grid filter bar cell element**
 
@@ -904,4 +898,4 @@ The column selection background in the child grid can be customized by applying 
 
 ## See Also
 
-* [Multiple queryString in hierarchy child grid in Angular Grid](https://www.syncfusion.com/forums/165124/multiple-querystring-in-hierarchy-child-grid-in-angular-grid)
+[Multiple queryString in hierarchy child grid in Angular Grid](https://www.syncfusion.com/forums/165124/multiple-querystring-in-hierarchy-child-grid-in-angular-grid)

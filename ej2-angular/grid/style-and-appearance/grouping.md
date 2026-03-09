@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The appearance of grouping elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
-## Customize the Group Drop Area Header
+## Customize the group drop area header
 
 The `.e-groupdroparea` class is used to style the group header element.
 
@@ -24,7 +24,7 @@ The `.e-groupdroparea` class is used to style the group header element.
 
 ![Group header](../images/group-header.png)
 
-## Customize the Group Expand and Collapse Icons
+## Customize the group expand and collapse icons
 
 The `.e-icon-gdownarrow` and `.e-icon-grightarrow` classes are used to style the expand and collapse icons.
 
@@ -41,7 +41,7 @@ In this example, the `content` property is modified to change the icon displayed
 
 ![Group expand or collapse icons](../images/group-expand-or-collapse-icons.png)
 
-## Customize the Group Caption Row
+## Customize the group caption row
 
 The `.e-groupcaption` class is used to style the group caption row element, and the `.e-recordplusexpand` and `.e-recordpluscollapse` classes are used for the icons indicating record expansion or collapse.
 
@@ -58,7 +58,7 @@ The `.e-groupcaption` class is used to style the group caption row element, and 
 
 ![Group caption row](../images/group-caption-row.png)
 
-## Customize the Grouping Indent Cell
+## Customize the grouping indent cell
 
 The `.e-indentcell` class is used to style the indent cell that appears in grouped grid rows.
 

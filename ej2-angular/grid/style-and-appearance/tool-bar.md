@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The appearance of the toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
 
-## Customize the Toolbar Root Element
+## Customize the toolbar root element
 
 The `.e-toolbar-items` class is used to style the toolbar root element.
 
@@ -24,7 +24,7 @@ The `.e-toolbar-items` class is used to style the toolbar root element.
 
 ![Grid toolbar root element](../images/grid-toolbar-root-element.png)
 
-## Customize the Toolbar Button Element
+## Customize the toolbar button element
 
 The `.e-toolbar .e-btn` selector is used to style the toolbar button elements.
 

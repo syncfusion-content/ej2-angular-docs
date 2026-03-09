@@ -71,12 +71,7 @@ import { data } from './datasource';
 import { CommandModel, CommandClickEventArgs, GridComponent, Column, IRow, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DialogModule
-    ],
-
+imports: [GridModule, DialogModule],
 providers: [EditService, CommandColumnService],
 standalone: true,
   selector: 'app-root',

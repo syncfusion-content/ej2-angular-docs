@@ -117,8 +117,8 @@ By default, aggregate values are shown in the footer, group footer, and group ca
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs1" %}
 
->* For local data, the aggregate values are calculated over the entire dataset currently loaded in the grid. Summary values reflect calculations across all grid rows.
->* With remote data and paging enabled, aggregate values in the footer are calculated based on records displayed in the current page. This means the summary reflects only the visible rows, not the entire dataset.
+> * For local data, the aggregate values are calculated over the entire dataset currently loaded in the grid. Summary values reflect calculations across all grid rows.
+> * With remote data and paging enabled, aggregate values in the footer are calculated based on records displayed in the current page. This means the summary reflects only the visible rows, not the entire dataset.
 
 ## Built-in aggregate types
 
@@ -183,7 +183,7 @@ The following example demonstrates using built-in aggregate types in the grid:
 
 A grid column typically supports a single aggregate function such as Sum, Average, or Count, which produces one summary value for the entire column. In cases where different summary values are required at the same time, multiple aggregates can be configured. This feature makes it possible to calculate and display several values such as Sum, Average, Minimum, Maximum, or custom calculations concurrently for a specific column.
 
-- By specifying the aggregate `type` as an array, which allows multiple values to be shown together in a single summary row. For example:
+By specifying the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregatecolumndirective#type) as an array, which allows multiple values to be shown together in a single summary row. For example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -100,7 +100,7 @@ The following example demonstrates adding the [queryCellInfo](https://ej2.syncfu
   
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs1" %}
 
-> * The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event is triggered for every cell of the grid, so it may impact grid performance when used to modify a large number of cells.
+> The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event is triggered for every cell of the grid, so it may impact grid performance when used to modify a large number of cells.
 
 ### Using CSS
 

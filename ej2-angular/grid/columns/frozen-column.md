@@ -83,7 +83,7 @@ In the following example, the "ShipCountry" column is frozen on the left side, t
   
 {% previewsample "page.domainurl/samples/grid/frozencolumns-cs2" %}
 
-> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) properties.
+> Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) properties.
 
 ## Customize frozen line color
 

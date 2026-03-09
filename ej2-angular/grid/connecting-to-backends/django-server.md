@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Grid with Django REST Framework (DRF)
+# Syncfusion Angular Grid with Django REST Binding POST Request Data
 
 The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The Syncfusion Angular Grid delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
 
@@ -1053,7 +1053,7 @@ def _handle_update(viewset, payload) -> Response:
 
 Delete operation removes an existing record from the database based on the primary key provided by the Grid.
 
-Open the **(library/services/ej2_crud.py)** file and include the following code:
+Open the (**library/services/ej2_crud.py**) file and include the following code:
 
 ```python
 from rest_framework import status
@@ -1087,7 +1087,7 @@ def _handle_remove(viewset, payload) -> Response:
 
 ## Running the application
 
-- Open a terminal or Command prompt. Start the `Django` server first and then run the Angular client.
+Open a terminal or Command prompt. Start the Django server first and then run the Angular client.
 
 ### Run the Django server
 

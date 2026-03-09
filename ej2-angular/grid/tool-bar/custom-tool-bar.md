@@ -32,7 +32,7 @@ Rendering an image with text in custom toolbar in Syncfusion<sup style="font-siz
 
 Use `ng-template` along with the `DomSanitizer` service and the `bypassSecurityTrustResourceUrl` method to securely present an image as a base64-encoded string.
 
-- **DomSanitizer**: Angular's `DomSanitizer` service allows you to mark a value as trusted, enabling secure rendering for specific contexts. This is crucial for preventing XSS attacks.
+- **DomSanitizer**: Angular's `DomSanitizer` service allows marking a value as trusted, enabling secure rendering for specific contexts. This is crucial for preventing XSS attacks.
 - **bypassSecurityTrustResourceUrl**: Marks a URL—including a base64 image— as safe for use as a resource.
 
 The following example demonstrates rendering an image in the toolbar using `ng-template`:
@@ -53,7 +53,7 @@ The following example demonstrates rendering an image in the toolbar using `ng-t
 
 ## Render DropDownList in Custom Toolbar
 
-Render DropDownList in custom toolbar in Syncfusion Angular Grid enables you to extend the functionality of the custom toolbar by incorporating a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component, allowing you to perform various actions within the grid based on their selections.
+Render DropDownList in custom toolbar in Syncfusion Angular Grid enables extending the custom toolbar by incorporating a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component, allowing various actions to be performed within the grid based on selections.
 
 Implement this using `ng-template`. In the example below, the `DropDownList` component is included in the custom toolbar. Its [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event is bound to an `onChange` method.
 

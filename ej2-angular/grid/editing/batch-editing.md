@@ -80,11 +80,11 @@ In the following demo, CRUD operations are prevented based on the "Role" column 
 
 The Grid can be configured to add new rows at the bottom of the data set, making it convenient to insert new records at the end. Set the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#newrowposition) property in `editSettings` to `Bottom` to activate this option.
 
->* When `newRowPosition` is set to `Bottom`, the <kbd>TAB</kbd> key facilitates data entry across cells or rows while in edit mode. Entering data and pressing <kbd>TAB</kbd> automatically creates new rows below the current one, allowing efficient entry for multiple records.
->* When `newRowPosition` is set to `Top`, a blank row is displayed at the top for data entry. Upon saving, the new record appears at the end of the grid.
->* If paging is enabled, updating the row causes it to move to the last page, depending on page size. This behavior applies to both local and remote data sources.
->* With scrolling enabled, the <kbd>TAB</kbd> key allows adding new rows, even beyond the visible portion of the grid.
->* The `newRowPosition` property is supported in both `Normal` and `Batch` editing modes.
+> * When `newRowPosition` is set to `Bottom`, the <kbd>TAB</kbd> key facilitates data entry across cells or rows while in edit mode. Entering data and pressing <kbd>TAB</kbd> automatically creates new rows below the current one, allowing efficient entry for multiple records.
+> * When `newRowPosition` is set to `Top`, a blank row is displayed at the top for data entry. Upon saving, the new record appears at the end of the grid.
+> * If paging is enabled, updating the row causes it to move to the last page, depending on page size. This behavior applies to both local and remote data sources.
+> * With scrolling enabled, the <kbd>TAB</kbd> key allows adding new rows, even beyond the visible portion of the grid.
+> * The `newRowPosition` property is supported in both `Normal` and `Batch` editing modes.
 
 The following example illustrates to enable the addition of new rows at the bottom of the grid with the `newRowPosition` property:
 

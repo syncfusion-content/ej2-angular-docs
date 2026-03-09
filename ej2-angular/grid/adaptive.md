@@ -36,7 +36,7 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
 
->The default row rendering mode is `Horizontal`.
+> The default row rendering mode is `Horizontal`.
 
 The following sample demonstrates dynamic switching between `Vertical` and `Horizontal` row rendering modes using a DropDownList:
 
@@ -54,12 +54,7 @@ import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule
-    ],
-
+imports: [GridModule,DropDownListModule],
 providers: [PageService,
                 SortService,
                 FilterService,
@@ -285,4 +280,4 @@ export class AppComponent implements OnInit {
 
 ## See Also
 
-* [Effective ways to utilize responsiveness](https://www.syncfusion.com/blogs/post/essential-js-2-effective-ways-to-utilize-responsiveness-in-the-angular-grid.aspx)
+[Effective ways to utilize responsiveness](https://www.syncfusion.com/blogs/post/essential-js-2-effective-ways-to-utilize-responsiveness-in-the-angular-grid.aspx)

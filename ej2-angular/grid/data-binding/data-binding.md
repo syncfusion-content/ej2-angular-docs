@@ -19,7 +19,7 @@ The Grid supports two primary data binding methods:
 * Local data
 * Remote data
 
-To learn about binding local, remote, or observable data to the Angular Grid, you can check this video:
+To learn about binding local, remote, or observable data to the Angular Grid, see this video:
 
 {% youtube "https://www.youtube.com/watch?v=Xkq1tXOXL7k" %}
 
@@ -179,12 +179,12 @@ this.gridInstance.changeDataSource(employeeData);
   
 {% previewsample "page.domainurl/samples/grid/data-datasource" %}
 
->* The Grid state persistence feature does not support the `changeDataSource` method.
->* In this document, the above sample uses local data for the `changeDataSource` method. For those using remote data sources, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/flexible-data) resource.
+> * The Grid state persistence feature does not support the `changeDataSource` method.
+> * In this document, the above sample uses local data for the `changeDataSource` method. For those using remote data sources, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/flexible-data) resource.
 
 ## Prevent converting local time zone format for date column
 
-By default, the Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without timezone conversion.
+By default, the Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, it may be necessary to display the original date as received from the server without timezone conversion.
 
 To prevent timezone conversion for date columns, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to "0" ensures dates remain in the original format received from the server without conversion to the local timezone.
 

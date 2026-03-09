@@ -19,7 +19,7 @@ Custom CSS can override the default styles of the Grid component. This allows ch
 A basic example demonstrates overriding the grid’s header background color:
 
 ```css
-/* In your component's CSS file */
+/* In the component's CSS file */
 .e-grid .e-headercell {
     background-color: #333; /* Override the header background color */
     color: #fff;
@@ -37,7 +37,7 @@ Syncfusion's Theme Studio tool allows creation of custom themes for all controls
 3. Customize various aspects of the control's appearance, such as colors, typography, and spacing.
 4. Download the generated CSS file and include it in the Angular project.
 
-## Customize the Grid Root Element
+## Customize the Grid Root element
 
 The `.e-grid` class is used to style the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 
@@ -66,4 +66,4 @@ The `.e-grid` class is used to style the root element of the Syncfusion<sup styl
 
 ## See Also
 
-* [Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/style-and-appearance)
+[Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/style-and-appearance)

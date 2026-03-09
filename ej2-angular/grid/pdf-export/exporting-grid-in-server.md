@@ -104,7 +104,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-> Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
+> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
 
 
 ## Export grid as memory stream

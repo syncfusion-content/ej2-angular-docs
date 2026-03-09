@@ -27,7 +27,7 @@ Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</
 
 ### Using event
 
-The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event provides the most flexible approach for row styling, triggering for every row during data binding. This event handler receives [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) containing row details, enabling conditional styling based on data values.
+The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event provides the most flexible approach for row styling, triggering for every row during data binding. This event handler receives [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) containing row details, enabling conditional styling based on data values.
 
 Here's an example of customizing the rows styles based on the value of the "Freight" column using the `rowDataBound` event. This example involves checking the value of the "Freight" column for each row and adding a CSS class to the row based on the value. The CSS classes "below-30", "below-80", and "above-80" can be defined in the stylesheet to apply the desired styles to the rows.
 
@@ -43,7 +43,7 @@ Here's an example of customizing the rows styles based on the value of the "Frei
   
 {% previewsample "page.domainurl/samples/grid/row-css-cs11" %}
 
->The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event provides similar functionality for individual cell customization and can be combined with row-level styling for comprehensive appearance control.
+> The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event provides similar functionality for individual cell customization and can be combined with row-level styling for comprehensive appearance control.
 
 ### Using CSS
 
@@ -61,7 +61,7 @@ To change the background color of the alternate rows, add the following CSS code
 }
 ```
 
-Here's an example of how to use the `.e-altrow` class to style alternate rows:
+The following example demonstrates using the `.e-altrow` class to style alternate rows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,9 +146,9 @@ The following example demonstrates dynamically changing the height of the rows u
   
 {% previewsample "page.domainurl/samples/grid/row-height-cs1" %}
 
->* The `rowHeight` property can only be used to set the height of the entire grid row, not individual cells within a row.
->* The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
->*	Row-specific height customization requires the `rowDataBound` event approach.
+> * The `rowHeight` property can only be used to set the height of the entire grid row, not individual cells within a row.
+> * The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
+> *	Row-specific height customization requires the `rowDataBound` event approach.
 
 ### Customize row height for a specific row
 
@@ -168,13 +168,13 @@ In the following example, the row height for the row with "OrderID" as "10249" i
   
 {% previewsample "page.domainurl/samples/grid/row-height-cs8" %}
 
->* In virtual scrolling mode, it is not applicable to set different row heights.
->* The row height of multiple rows can be customized by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
->* In the `rowDataBound` event handler, the current row can be accessed using the [args.row](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs#row) property and the `rowHeight` property can be set for that row using the `setAttribute` method.
+> * In virtual scrolling mode, it is not applicable to set different row heights.
+> * The row height of multiple rows can be customized by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
+> * In the `rowDataBound` event handler, the current row can be accessed using the [args.row](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs#row) property and the `rowHeight` property can be set for that row using the `setAttribute` method.
 
 ## Row hover
 
-Row hover functionality provides visual feedback during mouse interaction, enhancing data readability and user experience. The [enableHover](https://ej2.syncfusion.com/documentation/api/grid/#enablehover) property controls hover effect availability across the entire Grid.
+Row hover functionality provides visual feedback during mouse interaction, enhancing data readability and user experience. The [enableHover](https://ej2.syncfusion.com/documentation/api/grid#enablehover) property controls hover effect availability across the entire Grid.
 
 The following example demonstrates hover effect control through a Switch component:
 
@@ -303,9 +303,9 @@ Here’s an example that demonstrates adding a new row using the addRecord metho
   
 {% previewsample "page.domainurl/samples/grid/add-new-row-cs1" %}
 
->* When working with remote data, it is impossible to add a new row between the existing rows.
->* To add a new record to the beginning of the data source, pass "0" as the second parameter to the `addRecord` method.
->* If no index is specified, the new row will be added at the end of the grid.
+> * When working with remote data, it is impossible to add a new row between the existing rows.
+> * To add a new record to the beginning of the data source, pass "0" as the second parameter to the `addRecord` method.
+> * If no index is specified, the new row will be added at the end of the grid.
 
 ## Show or hide a row using external actions
 
@@ -313,7 +313,7 @@ In the Grid, rows can be shown or hidden based on some external action, such as 
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the grid. This method can be used to iterate through all the rows and access their data and index.
 
-The [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getrowbyindex) method returns the HTML element of a row at the specified index. This method can be used to retrieve a specific row and apply changes to it.
+The [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#getrowbyindex) method returns the HTML element of a row at the specified index. This method can be used to retrieve a specific row and apply changes to it.
 
 In the following example, the "onCheckBoxChange" method checks whether the checkbox is checked or not. If it is checked, the method iterates through all the rows in the grid using the `getRowsObject` method. For each row, it checks whether the value in the "CustomerID" column is equal to "VINET". If it is, the index of that row is obtained using the `getRowByIndex` method and hidden by setting its display style to "none". The index of the hidden row is also added to an array called "hiddenRows".
 
@@ -332,12 +332,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        CheckBoxModule
-    ],
-
+imports: [GridModule,CheckBoxModule],
 standalone: true,
   selector: 'app-root',
   template: `<div style="padding:2px 0px 0px 0px">
@@ -416,36 +411,36 @@ export class AppComponent {
 
 Grid provides several methods to retrieve row data and elements. This feature is useful when needing to access specific rows, perform custom operations, or manipulate the data displayed in the grid.
 
-1. [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid/#getrowbyindex): This method returns the HTML element of a row at the specified index. It can be used to retrieve the element of a specific row in the grid.
+1. [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid#getrowbyindex): This method returns the HTML element of a row at the specified index. It can be used to retrieve the element of a specific row in the grid.
 
     ```ts
     const rowElement = this.grid.getRowByIndex(rowIndex);
     ```
 
-2. [getRowIndexByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/#getrowindexbyprimarykey):The method allows the row index to be retrieved based on a specific primary key value or row data.
+2. [getRowIndexByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid#getrowindexbyprimarykey):The method allows the row index to be retrieved based on a specific primary key value or row data.
 
     ```ts
     const rowIndex = this.grid.getRowIndexByPrimaryKey(primaryKey);
     ```
 
-3. [getRowInfo](https://ej2.syncfusion.com/documentation/api/grid/#getrowinfo):This method allows row information to be retrieved based on a cell target element.
+3. [getRowInfo](https://ej2.syncfusion.com/documentation/api/grid#getrowinfo):This method allows row information to be retrieved based on a cell target element.
 
     ```ts
     const rowInformation = this.grid.getRowInfo(targetElement);
     ```
 
-4. [getRows](https://ej2.syncfusion.com/documentation/api/grid/#getrows): This method returns an array of all the row elements in the Grid. To retrieve both row data and row elements, the `getRows` method can be combined with the `getRowInfo` method.
+4. [getRows](https://ej2.syncfusion.com/documentation/api/grid#getrows): This method returns an array of all the row elements in the Grid. To retrieve both row data and row elements, the `getRows` method can be combined with the `getRowInfo` method.
 
     ```ts
      const rowElements = this.grid.getRows();
     ```
 
-5. [getSelectedRowIndexes](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrowindexes): This method allows the collection of indexes of the selected rows to be retrieved. However, it does not directly provide the row elements or the associated data. To access both the row elements and the data of the selected rows, the `getSelectedRowIndexes` method can be combined with the `getRowByIndex` and `getRowInfo` methods.
+5. [getSelectedRowIndexes](https://ej2.syncfusion.com/documentation/api/grid#getselectedrowindexes): This method allows the collection of indexes of the selected rows to be retrieved. However, it does not directly provide the row elements or the associated data. To access both the row elements and the data of the selected rows, the `getSelectedRowIndexes` method can be combined with the `getRowByIndex` and `getRowInfo` methods.
 
     ```ts
     const selectedIndexes = this.grid.getSelectedRowIndexes();
     ```
-6. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrows): This method returns an array of HTML elements representing the selected rows in the grid. By iterating over this array, each row element and its data can be accessed using the `getRowInfo` method. In this way, both the row elements and their associated data for the selected rows can be retrieved.
+6. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/grid#getselectedrows): This method returns an array of HTML elements representing the selected rows in the grid. By iterating over this array, each row element and its data can be accessed using the `getRowInfo` method. In this way, both the row elements and their associated data for the selected rows can be retrieved.
 
     ```ts
     const selectedRowElements = this.grid.getSelectedRows();
@@ -455,7 +450,7 @@ These methods can be combined for comprehensive row data access and manipulation
 
 ## See Also
 
-* [How to customize the row height in Angular Grid](https://www.syncfusion.com/forums/138140/how-to-customize-the-row-height-in-angular-grid)
-* [How to set font size and padding of Angular Grid's toolbar and filter bar](https://www.syncfusion.com/forums/150181/how-to-set-font-size-and-padding-of-angular-grids-toolbar-and-filter-bar)
-* [How to displaying serial number in Angular Grid](https://www.syncfusion.com/forums/166563/how-to-displaying-serial-number-in-angular-grid)
-* [How to add/update a new row programmatically in Angular Grid](https://www.syncfusion.com/forums/144356/how-to-add-update-a-new-row-programmatically-in-angular-grid)
+* [Customizing row height in Angular Grid](https://www.syncfusion.com/forums/138140/how-to-customize-the-row-height-in-angular-grid)
+* [Setting font size and padding of Angular Grid's toolbar and filter bar](https://www.syncfusion.com/forums/150181/how-to-set-font-size-and-padding-of-angular-grids-toolbar-and-filter-bar)
+* [Displaying serial number in Angular Grid](https://www.syncfusion.com/forums/166563/how-to-displaying-serial-number-in-angular-grid)
+* [Adding/updating a new row programmatically in Angular Grid](https://www.syncfusion.com/forums/144356/how-to-add-update-a-new-row-programmatically-in-angular-grid)

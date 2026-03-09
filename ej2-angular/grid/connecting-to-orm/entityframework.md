@@ -491,7 +491,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 
 ```
 
-For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -1628,46 +1628,23 @@ namespace Grid_EntityFramework.Server.Controllers
 
 ### Running the ASP.NET Core backend server
 
-**Step 1: Build the backend:**
-
-1. Open the terminal or Package Manager Console.
-2. Navigate to the **Grid_EntityFramework.Server** project directory.
-3. Run the following command:
+- Open a terminal or Package Manager Console, navigate to the **Grid_EntityFramework.Server** project directory, and run the following commands to build and start the backend server:
 
 ```powershell
 dotnet build
-```
-
-**Step 2: Run the backend server:**
-
-Execute the following command:
-
-```powershell
 dotnet run
 ```
-
-**Step 3: Verify backend is Running:**
-
-- The backend server should start and listen on **http://localhost:5018** (or the port shown in the terminal).
-- Test the API endpoint: **http://localhost:5018/api/tickets/url**
+- The backend server starts on **http://localhost:5018** (or the displayed port), and the API can be tested at **http://localhost:5018/api/tickets/url**.
 
 ### Running the Angular frontend Client
 
-1. Open a new terminal.
-2. Navigate to the **grid_EntityFramework.client** directory.
-3. Run the following command:
-
+- Open a terminal, navigate to the **grid_EntityFramework.client** directory, and run the following command:
 
 ```bash
 ng serve
 ```
 
-**Step 3: Access the Application:**
-
-1. Open a web browser.
-2. Navigate to **http://localhost:4200** or the port shown in the terminal.
-3. The application will automatically connect to the backend API at **http://localhost:5018/api/tickets/url**.
-4. The ticket management application is now running and ready to use.
+- Open a browser, go to **http://localhost:4200** (or the shown port), where the app connects to **http://localhost:5018/api/tickets/url** and becomes ready for use.
 
 **Available Features:**
 
@@ -1682,4 +1659,10 @@ ng serve
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-EntityFrameWork).
+A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-EntityFrameWork) repository.
+
+## See also
+
+- [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
+- [Excel Export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
+- [Integration with Filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)

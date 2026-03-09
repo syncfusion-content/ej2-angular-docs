@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Reorder in Angular Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` in the provider section of `AppModule`.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` in the provider section of **AppModule**.
 
 To enable column reordering in the Grid, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property to `true` in the grid.
 
@@ -34,8 +34,8 @@ The following example demonstrates column reordering in the Grid component:
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs1" %}
 
->* The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrop) events.
->* When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
+> * The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrop) events.
+> * When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
 
 ## Prevent reordering for particular column
 
@@ -205,11 +205,7 @@ import { data } from './datasource';
 import { GridComponent, ColumnDragEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ReorderService],
 standalone: true,
   selector: 'app-root',

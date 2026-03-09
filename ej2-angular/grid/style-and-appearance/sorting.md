@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The appearance of the sorting icons and multi sorting icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) can be used based on the active theme.
 
-## Customize the Grid Sorting Icon
+## Customize the Grid sorting icon
 
 The `.e-icon-ascending::before` and `.e-icon-descending::before` classes are used to style the sorting icons for ascending and descending order.
 
@@ -27,7 +27,7 @@ The `.e-icon-ascending::before` and `.e-icon-descending::before` classes are use
 
 ![Grid sorting icon](../images/grid-sorting-icons.png)
 
-## Customize the Grid Multi Sorting Icon
+## Customize the Grid multi sorting icon
 
 The `.e-sortnumber` class is used to style the multi sorting icon.
 

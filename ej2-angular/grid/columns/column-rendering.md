@@ -54,8 +54,8 @@ The following code snippet enables auto-generated columns in the Syncfusion<sup 
 
 {% previewsample "page.domainurl/samples/grid/grid-cs3" %}
 
->* When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
->* Auto-generating columns for large datasets can affect performance. To improve efficiency, columns can be defined manually in the `columns` option during initialization. Alternatively, the column virtualization feature can be enabled by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid#enablecolumnvirtualization) to `true`.
+> * When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
+> * Auto-generating columns for large datasets can affect performance. To improve efficiency, columns can be defined manually in the `columns` option during initialization. Alternatively, the column virtualization feature can be enabled by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid#enablecolumnvirtualization) to `true`.
 
 ### Set primary key for auto-generated columns in editing
 

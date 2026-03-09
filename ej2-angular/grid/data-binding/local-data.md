@@ -57,7 +57,7 @@ namespace SignalRChat.Hubs
 }
 ```
 
-**Step 3:** Configure the SignalR server to route requests to the SignalR hub. In the "Program.cs" file, add the following configuration:
+**Step 3:** Configure the SignalR server to route requests to the SignalR hub. In the **Program.cs** file, add the following configuration:
 
 ```cs
 using SignalRChat.Hubs;
@@ -87,7 +87,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days. Consider changing this for production scenarios; see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 app.UseCors("CORSPolicy");
@@ -402,7 +402,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a sea
 
 To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, follow these steps:
 
-**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid in your HTML with necessary configurations:
+**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid in the HTML with necessary configurations:
 
 ```html
 <button ejs-button (click)="click()">Bind data via Fetch</button>
@@ -718,7 +718,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a sea
 
 To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, follow these steps:
 
-**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid in your HTML with necessary configurations:
+**Step 1:** Include the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid in the HTML with necessary configurations:
 
 ```html
 <button ejs-button (click)="click()">Bind data via AJAX</button>

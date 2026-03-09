@@ -44,5 +44,6 @@ The `.e-columnselection` class is used to style the column selection background.
 .e-grid .e-columnselection {
     background-color: #aec2ec;
 }
+```
 
 ![Cell selection](../images/column-selection.png)

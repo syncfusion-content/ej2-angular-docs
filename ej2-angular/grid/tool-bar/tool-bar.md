@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing users to generate downloadable files in formats like Excel, CSV, or PDF.
 
-Enable the toolbar by injecting **ToolbarService** in the provider section of your **AppModule**. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items.
+Enable the toolbar by injecting `ToolbarService` in the provider section of the **AppModule**. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items.
 
 The following example demonstrates enabling toolbar items in the grid:
 
@@ -96,6 +96,6 @@ The following example demonstrates changing the background color of the `Add`, `
 ## See Also
 
 * [Toolbar Component](https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started)
-* [How to add a router link in the toolbar in Angular Grid](https://www.syncfusion.com/forums/154693/how-to-add-a-router-link-in-the-toolbar-in-angular-grid)
-* [How to show or hide the delete button in the toolbar in Angular Grid](https://www.syncfusion.com/forums/158052/how-to-show-or-hide-the-delete-button-in-the-toolbar-in-angular-grid)
-* [How to display column as radio button in dialog editing in Angular Grid](https://www.syncfusion.com/forums/153052/how-to-display-column-as-radio-button-in-dialog-editing-in-angular-grid)
+* [Add router link in toolbar](https://www.syncfusion.com/forums/154693/how-to-add-a-router-link-in-the-toolbar-in-angular-grid)
+* [Show/hide delete button in toolbar](https://www.syncfusion.com/forums/158052/how-to-show-or-hide-the-delete-button-in-the-toolbar-in-angular-grid)
+* [Display column as radio button in dialog editing](https://www.syncfusion.com/forums/153052/how-to-display-column-as-radio-button-in-dialog-editing-in-angular-grid)

@@ -25,9 +25,9 @@ To enable in-line editing in the grid component, set the [editSettings.mode](htt
 {% endtabs %}
 {% previewsample "page.domainurl/samples/grid/edit-cs25" %}
 
->* `Normal` edit mode is default mode of editing.
->* When enabling editing, it is necessary to set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#isprimarykey) property value to `true` for the unique column.
-> For basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
+> * `Normal` edit mode is default mode of editing.
+> * When enabling editing, it is necessary to set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#isprimarykey) property value to `true` for the unique column.
+> * For basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
 
 ## Automatically update a specific column based on changes in another column
 
@@ -94,7 +94,7 @@ Programmatic CRUD operations enable creating, reading, updating, and deleting da
 | [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid#setcellvalue) | Update a particular cell in a row | Provide the primary key value, field name, and new value. Changes appear visually in the UI only (not persisted). Useful for unbound columns, auto-calculated columns, and formula columns |
 | [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) | Remove a selected row from the grid | First select the row, then invoke this method. The selected row is immediately removed. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for delete operation" dialog appears |
 
-> In both normal and dialog editing modes, these methods can be used.
+> In both `Normal` and `Dialog` editing modes, these methods can be used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,8 +217,8 @@ Example using `newRowPosition`:
   
 {% previewsample "page.domainurl/samples/grid/edit-cs31" %}
 
->* The [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#newrowposition) property is supported for `Normal` and `Batch` editing modes.
->* When [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#newrowposition) is set to `Bottom`, the grid displays a blank row form at the bottom by default for data entry. However, when the data is saved or updated, it is inserted at the top of the grid.
+> * The [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#newrowposition) property is supported for `Normal` and `Batch` editing modes.
+> * When [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#newrowposition) is set to `Bottom`, the grid displays a blank row form at the bottom by default for data entry. However, when the data is saved or updated, it is inserted at the top of the grid.
 
 
 ## Show add new row always in grid
