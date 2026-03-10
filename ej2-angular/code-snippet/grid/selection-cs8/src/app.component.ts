@@ -23,7 +23,7 @@ standalone: true,
           <button ejs-button class="btn" (click)="click()">Get selected row indexes</button>
         </div>
         <p id="message" *ngIf="showMessage">Selected row indexes: {{ selectedRowIndexes }}</p>
-        <ejs-grid #grid [dataSource]="data" height="300px" 
+        <ejs-grid #grid [dataSource]="data" height="280px" 
         [selectionSettings]="selectionOptions">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" 

@@ -1,14 +1,10 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids';
+import { DatePickerAllModule, TimePickerModule  } from '@syncfusion/ej2-angular-calendars';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { AutoCompleteModule, MultiSelectModule, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, ViewChild } from '@angular/core';
 import { GridComponent, NewRowPosition } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
@@ -33,12 +29,12 @@ standalone: true,
     selector: 'app-root',
     template: `
         <div style="display: flex">
-            <label style="padding: 30px 17px 0 0;"> Select new row position:</label>
-            <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" 
+            <label style="padding: 5px 5px 0 0;"> Select new row position:</label>
+            <ejs-dropdownlist index="0" width="100" 
             [dataSource]="positionData" (change)="changePosition($event)">
             </ejs-dropdownlist>
       </div>
-      <div style="padding-top:20px">
+      <div style="padding-top:5px">
         <ejs-grid #batchgrid id='Batchgrid' [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar' >
             <e-columns>
                 <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>

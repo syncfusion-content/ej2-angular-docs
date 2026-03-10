@@ -20,7 +20,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
             </div>
             <div style="padding-top:5px">
               <ejs-grid #grid [dataSource]='data' allowPaging='true' allowTextWrap='true' 
-              [textWrapSettings]='wrapSettings' height='250'>
+              [textWrapSettings]='wrapSettings' height='240'>
                 <e-columns>
                   <e-column field='Inventor' headerText='Inventor Name' width='180' 
                   textAlign="Right">

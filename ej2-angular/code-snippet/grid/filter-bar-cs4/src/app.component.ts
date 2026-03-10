@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, CheckBoxModule, SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids';
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonModule, CheckBoxModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { FilterSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
@@ -40,7 +39,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public filterSettings: FilterSettingsModel;
+    public filterSettings!: FilterSettingsModel;
     public pageSettings: PageSettingsModel = { pageSize: 5 };
 
     ngOnInit(): void {

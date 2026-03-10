@@ -45,7 +45,7 @@ standalone: true,
                 <tbody>
                   <tr>
                     <td class="rowphoto" rowspan="4" style="text-align: center">
-                      <img src="{{ data.EmployeeID }}.png" alt="{{ data.EmployeeID }}" />
+                     <img src="https://ej2.syncfusion.com/angular/demos/assets/grid/images/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
                     </td>
                     <td>
                       <span style="font-weight: 500">First Name:</span>

@@ -19,7 +19,7 @@ standalone: true,
                 <ejs-dropdownlist id='ddlelement' #ddlelement placeholder='Select a degree' [dataSource]='degree'>
                 </ejs-dropdownlist>
             </div>
-            <div style="padding:20px 0px 0px 0px">
+            <div style="padding:px 0px 0px 0px">
                 <ejs-grid #grid id="Grid" [dataSource]='data' [height]='240' (created)='setHeaderHeight()' (excelQueryCellInfo)='excelQueryCellInfo($event)' (excelHeaderQueryCellInfo)='excelHeaderQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)' [toolbar]='toolbarOptions' [allowExcelExport]='true'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>

@@ -12,13 +12,13 @@ import { data } from './datasource';
     selector: 'app-root',
     template: `   
             <div style="display: flex">
-                <label style="padding: 30px 20px 0 0" > Select row index :</label>
-                <ejs-dropdownlist #dropdown id='value' style="padding: 26px 0 0 0" #sample index='0' 
+                <label style="padding: 5px 5px 0 0" > Select row index :</label>
+                <ejs-dropdownlist #dropdown id='value' #sample index='0' 
                 width='220' [dataSource]='dropDownData' (change)='valueChange($event)' height='250px'>
                 </ejs-dropdownlist>
             </div>
-            <div style="padding: 20px 17px 0 0">
-                <ejs-grid #grid [dataSource]='data' height='315' width='100%' (rowSelected)='rowSelected($event)'>
+            <div style="padding: 5px 5px 0 0">
+                <ejs-grid #grid [dataSource]='data' height='300' width='100%' (rowSelected)='rowSelected($event)'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>

@@ -278,7 +278,7 @@ To persist the selection across pages, enable the [persistSelection](https://ej2
 
 To retrieve the selected records from different pages, use the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method. This method returns an array of the selected records.
 
-The following example demonstrates retrieving selected records from various pages using the `getSelectedRecords` method and displaying the “Order ID” values of those records in a dialog when the "Show Selected Records" button is clicked:
+The following example demonstrates retrieving selected records from various pages using the `getSelectedRecords` method and displaying the "Order ID" values of those records in a dialog when the "Show Selected Records" button is clicked:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
