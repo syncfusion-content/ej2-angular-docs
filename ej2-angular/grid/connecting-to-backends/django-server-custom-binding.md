@@ -1128,7 +1128,7 @@ Then open the browser and navigate to **http://localhost:4200**.
 
 The complete folder structure looks like below:
 
-```txt
+```
 ├── client
 │   ├── public
 │   ├── src

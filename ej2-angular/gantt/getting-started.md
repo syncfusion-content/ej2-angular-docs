@@ -144,20 +144,20 @@ The `Tailwind3` theme is added to your `styles.css` when you run `ng add` (this 
 To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Gantt Chart component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-treegrid/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-gantt/styles/material3.css';
 ```
 > Ensure that the import order aligns with the component's dependency sequence.
 

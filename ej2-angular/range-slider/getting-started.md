@@ -124,19 +124,19 @@ The `Material` theme is added to your `styles.css` when you run `ng add` (this h
 To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Slider component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material3.css';
 ```
 
 Alternatively, based on the location of your CSS file, you can import the styles as shown below:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material3.css';
 ```
 
 > Ensure that the import order aligns with the component's dependency sequence.
