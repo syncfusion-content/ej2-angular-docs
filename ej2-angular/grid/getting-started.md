@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Grid component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Grid component of Syncfusion Essential JS 2 and more details.
+title: Angular Grid Getting Started (Quick Setup Guide) | Syncfusion
+description: Learn how to install and configure the Syncfusion Angular Grid. Set up a new Angular app and enable paging, sorting, filtering, and grouping.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -18,7 +18,7 @@ This guide demonstrates how to set up and configure the Syncfusion Angular Grid 
 
 To get started quickly with Angular Grid using CLI and Schematics, you can check on this video:
 
-{% youtube "https://www.youtube.com/watch?v=lk83TlHQ95c" %}
+{% youtube "https://www.youtube.com/watch?v=gdOUcWO9-ME" %}
 
 ## Prerequisites
 
