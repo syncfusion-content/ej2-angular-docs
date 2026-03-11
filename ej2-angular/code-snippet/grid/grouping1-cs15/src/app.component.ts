@@ -10,7 +10,7 @@ import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule,ButtonModule]
+imports: [ GridModule,ButtonModule],
 providers: [GroupService],
 standalone: true,
     selector: 'app-root',
