@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { CategoryService, ColumnSeriesService, ExportService, LegendService, DataLabelService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { CategoryService, ColumnSeriesService, ExportService, LegendService, DataLabelService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 @Component({
@@ -54,9 +49,9 @@ export class AppComponent implements OnInit {
             width: 0
         }
     };
-    
+
     public title: string = 'Top 10 Countries Using Solar Power';
-   
+
     public onClick(e: Event): void {
         let svg: any = document.querySelector("#chartcontainer_svg");
         var svgData = new XMLSerializer().serializeToString(svg);
@@ -76,8 +71,6 @@ export class AppComponent implements OnInit {
         };
     }
     ngOnInit(): void {
-        
+
     }
 }
-
-

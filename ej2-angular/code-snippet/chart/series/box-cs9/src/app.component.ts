@@ -32,6 +32,3 @@ export class AppComponent implements OnInit {
         this.tooltip = { enable: true };
     }
 }
-
-
-

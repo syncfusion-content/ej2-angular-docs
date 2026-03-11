@@ -80,13 +80,13 @@ export class AppComponent implements OnInit {
 
   // axisRangeCalculated: modify the computed min/max/interval for axes
   public onAxisRangeCalculated(args: IAxisRangeCalculatedEventArgs): void {
-    console.log("Axis range calculated event was trigger");
-    
+    console.log('Axis range calculated event was triggered');
+
     if (args.axis.valueType === 'Category' && args.axis.name === 'primaryXAxis') {
-      args.minimum = 1;    
-      args.maximum = 5;    
-      args.interval = 2;   
-      return;              
+      args.minimum = 1;
+      args.maximum = 5;
+      args.interval = 2;
+      return;
     }
 
     // For Y axis (numeric), add 10% headroom and compute a clean interval

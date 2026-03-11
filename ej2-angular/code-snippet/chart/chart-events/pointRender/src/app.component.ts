@@ -55,6 +55,6 @@ export class AppComponent implements OnInit {
 
   // pointRender: customize each point's appearance before rendering
   public onPointRender(args: IPointRenderEventArgs): void {
-    console.log("point Render event was triggered");
+    console.log('Point render event was triggered');
   }
 }

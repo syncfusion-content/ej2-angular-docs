@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { HistogramSeriesService } from '@syncfusion/ej2-angular-charts'
 import { points } from './datasource'
-
-
 import { Component, OnInit } from '@angular/core';
 import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
@@ -47,5 +43,3 @@ export class AppComponent implements OnInit {
 
     }
 }
-
-

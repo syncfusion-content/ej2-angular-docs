@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService, 
+import { LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
        StepAreaSeriesService,ChartAnnotationService, LegendService, TooltipService} from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -46,5 +43,3 @@ export class AppComponent implements OnInit {
         this.title = 'Sales Rate in USA';
     }
 }
-
-

@@ -1,13 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { IAxisLabelRenderEventArgs } from '@syncfusion/ej2-angular-charts';
-
 
 let chartData: any[] = [
     {x: new Date('2012-10-15'), open: 90.3357, high: 93.2557, low: 87.0885,close: 87.12,volume: 646996264},
@@ -124,5 +118,3 @@ crosshair: any;
     }
 ;
 }
-
-

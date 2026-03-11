@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { BarSeriesService, StackingBarSeriesService, CategoryService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { BarSeriesService, StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 @Component({
@@ -35,7 +30,7 @@ export class AppComponent implements OnInit {
             valueType: 'Category',
             title: 'Months'
         };
-        this.title = 'Sales by year';    
+        this.title = 'Sales by year';
     }
     public pointRender(args: IPointRenderEventArgs) {
         if (args.point.index === 1 && args.point.series.index === 1) {
@@ -52,5 +47,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-

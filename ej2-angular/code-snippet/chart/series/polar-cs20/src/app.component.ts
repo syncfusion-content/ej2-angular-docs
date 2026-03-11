@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 
@@ -22,7 +17,7 @@ standalone: true,
             <e-series-collection>
                 <e-series [dataSource]='exportData' type='Column' xName='x' yName='y' width=2> </e-series>
             </e-series-collection>
-    </ejs-chart>   
+    </ejs-chart>
     <button ej-button id='print' (click)='export()'>Export</button>`
 })
 export class AppComponent implements OnInit {
@@ -61,6 +56,3 @@ export class AppComponent implements OnInit {
         this.chart?.exportModule.export('PDF', 'Chart', 1, [this.chart as ChartComponent], undefined, undefined, true, header, footer);
     }
 }
-
-
-

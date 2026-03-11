@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import {
     ColumnSeriesService, DataLabelService, CategoryService, LegendService, TooltipService, LastValueLabelService
 } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -52,5 +49,3 @@ export class AppComponent implements OnInit {
         this.title = 'Efficiency of oil-fired power production';
     }
 }
-
-

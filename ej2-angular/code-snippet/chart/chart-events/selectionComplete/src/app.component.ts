@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule} from '@syncfusion/ej2-angular-charts'
-import { CategoryService, ColumnSeriesService, ISelectionCompleteEventArgs} from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, ColumnSeriesService, ISelectionCompleteEventArgs } from '@syncfusion/ej2-angular-charts'
 import { LegendService, SelectionService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 @Component({
 imports: [
@@ -16,7 +10,7 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryXAxis' [title]='title' selectionMode='Point' (selectionComplete)="onSelectionComplete($event)">
+    template: `<ejs-chart id="chart-container" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [title]="title" selectionMode="Point" (selectionComplete)="onSelectionComplete($event)">
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' ></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
@@ -50,6 +44,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

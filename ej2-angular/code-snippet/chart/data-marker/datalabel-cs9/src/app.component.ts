@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, CategoryService, LineSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
 import { LegendService, DataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { IPointRenderEventArgs, ITextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 import { columnData } from './datasource';
@@ -53,5 +48,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

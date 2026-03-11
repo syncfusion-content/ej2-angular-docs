@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule, ExportService } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 
@@ -41,5 +36,3 @@ export class AppComponent implements OnInit {
             this.chartObj?.print();
        }
     }
-
-

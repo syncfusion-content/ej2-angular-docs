@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ColumnSeriesService, AreaSeriesService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ColumnSeriesService, AreaSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
@@ -42,5 +37,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

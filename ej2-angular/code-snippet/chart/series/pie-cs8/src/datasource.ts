@@ -18,7 +18,7 @@ export  let  variespiedata: Object[] = [
         { x: 'Egypt', y: 301000, r: '150.8' },
         { x: 'Kazakhstan', y: 300000, r: '155.5' },
         { x: 'Somalia', y: 357022, r: '160.6' }
-    ]; 
+    ];
 export let piechart: Object[] = [
         { 'x': 'Net-tution', y: 21, text: '21%' },
         { 'x': 'Private Gifts', y: 8, text: '8%' },
@@ -27,4 +27,4 @@ export let piechart: Object[] = [
         { 'x': 'State Revenue', y: 21, text: '21%' },
         { 'x': 'Federal Revenue', y: 16, text: '16%' },
         { 'x': 'Self-supporting Operations', y: 21, text: '21%' }
-    ];    
+    ];

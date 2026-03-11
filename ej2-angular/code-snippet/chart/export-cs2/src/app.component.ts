@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, IExportEventArgs ,SplineSeriesService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, IExportEventArgs , SplineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
@@ -19,7 +14,7 @@ standalone: true,
     selector: 'app-container',
     template: `<div class="col-md-8">
     <ejs-chart id='chart-container'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (loaded)='loaded($event)'
-            [title]='title' 
+            [title]='title'
             (beforeExport)='beforeExport($event)' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Radar' xName='x' yName='y' drawType='Line'> </e-series>
@@ -60,6 +55,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
 import { ChartComponent, LineSeriesService, CategoryService, TooltipService, DataLabelService, IAxisRangeCalculatedEventArgs, Series, IMouseEventArgs } from '@syncfusion/ej2-angular-charts';
-import { Component, OnInit, ViewChild  } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({
 imports: [
          ChartModule
@@ -25,7 +22,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public primaryYAxis?: Object;
     public chartData?: Object[] = [
-        { x: 20, y: 20 }, 
+        { x: 20, y: 20 },
         { x: 80, y: 80 }
     ];
     public title?: string;
@@ -34,26 +31,26 @@ export class AppComponent implements OnInit {
     public tooltip?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
-            edgeLabelPlacement: 'Shift', 
-            rangePadding: 'Additional', 
+            edgeLabelPlacement: 'Shift',
+            rangePadding: 'Additional',
             majorGridLines: { width: 0 }
         };
         this.primaryYAxis = {
-            title: 'Value', 
-            interval: 20, 
-            lineStyle: { width: 0 }, 
+            title: 'Value',
+            interval: 20,
+            lineStyle: { width: 0 },
             majorTickLines: { width: 0 }
         };
         this.title = 'User supplied data';
-        this.marker = { 
-            visible: true, 
-            isFilled: true, 
-            border: { 
-                width: 2, 
-                color: 'White' 
-            }, 
-            width: 13, 
-            height: 13 
+        this.marker = {
+            visible: true,
+            isFilled: true,
+            border: {
+                width: 2,
+                color: 'White'
+            },
+            width: 13,
+            height: 13
         };
         this.chartArea = {
             border: { width: 0 }
@@ -110,5 +107,3 @@ export class AppComponent implements OnInit {
         }
     };
 }
-
-

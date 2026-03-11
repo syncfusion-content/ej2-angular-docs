@@ -56,9 +56,9 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales (Drag a point to edit)';
   }
 
-  // Fires while dragging
-  onDragEnd(args: IDataEditingEventArgs): void {
-    // You can live-validate or show feedback here
-     console.log('drag event was triggered');
+  // Fires when the drag operation completes and the final value is committed
+  public onDragEnd(args: IDataEditingEventArgs): void {
+    // Persist or process the final value here
+    console.log('Drag end event was triggered');
   }
 }

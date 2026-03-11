@@ -20,7 +20,7 @@ import {
         [primaryXAxis]="primaryXAxis"
         [primaryYAxis]="primaryYAxis"
         [title]="title"
-        (dragStart)="onDragStart($event)">
+        (drag)="onDrag($event)">
         <e-series-collection>
           <e-series
             [dataSource]="chartData"
@@ -56,8 +56,8 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales (Drag a point to edit)';
   }
 
-  // Fires when user starts dragging a data point
-  onDragStart(args: IDataEditingEventArgs): void {
-    console.log('dragStart event was triggered');
+  // Fires while a point is being dragged (continuous)
+  public onDrag(args: IDataEditingEventArgs): void {
+    console.log('Drag event was triggered');
   }
 }

@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { radarData } from './datasource';
 @Component({
@@ -43,6 +38,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

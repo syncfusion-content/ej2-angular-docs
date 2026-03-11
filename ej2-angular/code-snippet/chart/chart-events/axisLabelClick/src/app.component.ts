@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, IAxisLabelClickEventArgs } from '@syncfusion/ej2-angular-charts'
 import { CategoryService, LegendService, DataLabelService, LineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   imports: [
     ChartModule

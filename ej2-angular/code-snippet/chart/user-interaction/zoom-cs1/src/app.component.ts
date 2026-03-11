@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, AreaSeriesService } from '@syncfusion/ej2-angular-charts'
 import { LegendService, ZoomService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { L10n } from '@syncfusion/ej2-base';
 
@@ -29,7 +24,7 @@ imports: [
 providers: [ DateTimeService, AreaSeriesService, LegendService, ZoomService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' locale='ar-AR' [zoomSettings]='zoom'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' locale='ar-AR' [zoomSettings]='zoom'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product X' ></e-series>
             <e-series [dataSource]='chartData' type='Area' xName='x' yName='y1' name='Product Y'></e-series>
@@ -38,7 +33,7 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
-   
+
     public chartData?: Object[];
     public title?: string;
     public marker?: Object;
@@ -61,11 +56,10 @@ export class AppComponent implements OnInit {
             enableMouseWheelZooming: true,
             enableDeferredZooming: true,
             enablePinchZooming: true,
-            enableSelectionZooming: true
-        }
+            enableSelectionZooming: true,
+            toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+        };
         this.title = 'Average Sales Comparison';
     }
 
 }
-
-

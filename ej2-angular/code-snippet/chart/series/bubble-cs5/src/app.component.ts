@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { BubbleSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { bubbleData } from './datasource';
 @Component({
@@ -36,6 +31,3 @@ export class AppComponent implements OnInit {
     this.title = 'GDP vs Literacy Rate';
     }
 }
-
-
-

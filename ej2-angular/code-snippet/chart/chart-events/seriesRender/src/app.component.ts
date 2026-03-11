@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
 
     // seriesRender is deprecated, but this shows how to customize series before render
     public onSeriesRender(args: ISeriesRenderEventArgs): void {
-        console.log("series Render event was triggered");
+      console.log('Series render event was triggered');
         const palette = ['#f9c74f', '#90be6d', '#577590'];
         args.series.fill = palette[args.series.index] || '#7f8c8d';
         args.series.opacity = 0.9;

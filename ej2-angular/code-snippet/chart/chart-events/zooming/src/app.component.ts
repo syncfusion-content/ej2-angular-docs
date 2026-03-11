@@ -1,5 +1,4 @@
-import { NgModule, Component, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core';
 import {
   ChartModule,
   IZoomingEventArgs,

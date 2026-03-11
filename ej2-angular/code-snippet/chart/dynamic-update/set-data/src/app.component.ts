@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
 import { ChartComponent, ColumnSeriesService, CategoryService, IAxisRangeCalculatedEventArgs } from '@syncfusion/ej2-angular-charts';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { Component, OnInit, ViewChild  } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({
 imports: [
          ChartModule, ButtonModule
@@ -42,18 +39,18 @@ export class AppComponent implements OnInit {
     }
     ngOnInit(): void {
         this.primaryXAxis = {
-            valueType: 'Category', 
-            majorGridLines: { width: 0 }, 
-            labelStyle: { size: '12px' }, 
+            valueType: 'Category',
+            majorGridLines: { width: 0 },
+            labelStyle: { size: '12px' },
             labelIntersectAction: 'Rotate90'
         };
         this.primaryYAxis = {
-            title: 'Sales (in percentage)', 
-            labelFormat: '{value}%', 
-            lineStyle: { width: 0 }, 
-            majorTickLines: { width: 0 }, 
-            interval: 5, 
-            minimum: 0, 
+            title: 'Sales (in percentage)',
+            labelFormat: '{value}%',
+            lineStyle: { width: 0 },
+            majorTickLines: { width: 0 },
+            interval: 5,
+            minimum: 0,
             maximum: 100
         };
         this.title = 'Sales by product';
@@ -86,5 +83,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-

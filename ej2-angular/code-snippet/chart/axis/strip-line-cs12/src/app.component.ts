@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AreaSeriesService, ChartModule } from '@syncfusion/ej2-angular-charts';
 import {
   StripLineService,

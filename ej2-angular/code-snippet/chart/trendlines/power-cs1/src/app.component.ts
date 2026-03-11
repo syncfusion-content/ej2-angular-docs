@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 let series1 : any[] =[];
 let yValue = [7.66, 8.03, 8.41, 8.97, 8.77, 8.20, 8.16, 7.89, 8.68, 9.48, 10.11, 11.36, 12.34, 12.60, 12.95,
@@ -60,6 +55,3 @@ export class AppComponent implements OnInit {
     }
 ;
 }
-
-
-

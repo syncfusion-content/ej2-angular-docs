@@ -54,11 +54,11 @@ export class AppComponent implements OnInit {
 
   // chartMouseMove: fires on mouse move within the chart area
   public onChartMouseMove(args: IMouseEventArgs): void {
-    console.log('chartMouseDown:', {
+    console.log('chartMouseMove:', {
         target: args.target,
         x: args.x,
         y: args.y
       });
-    
+
   }
 }

@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
 
   // beforeResize event: fires before the chart starts its resize re-layout
   public onBeforeResize(args: IResizeEventArgs): void {
-    
+
     console.log('beforeResize:', {
       currentSize: (args as any).currentSize,
       previousSize: (args as any).previousSize

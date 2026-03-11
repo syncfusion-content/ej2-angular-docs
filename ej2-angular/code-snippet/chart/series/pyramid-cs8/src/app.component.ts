@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { PyramidSeriesService,CategoryService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
+import { PyramidSeriesService, CategoryService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -38,6 +32,3 @@ export class AppComponent implements OnInit {
                 { x: 'Germany', y: 27, text: 'Germany 27%' }];
     }
 }
-
-
-

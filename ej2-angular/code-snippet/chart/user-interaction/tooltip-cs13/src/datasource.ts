@@ -7,4 +7,4 @@ export let chartData: Object[] = [
         { x: new Date(2000, 0, 1), y: 14,   y1: 6,   y2: 1.5 },
         { x: new Date(2005, 0, 1), y: 10,   y1: 3.5, y2: 2.5 },
         { x: new Date(2010, 0, 1), y: 16,   y1: 7,   y2: 3.7 }
-];         
+];

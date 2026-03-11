@@ -1,18 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule, ChartAllModule, AccumulationChartModule  } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, ChartAllModule, AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 import { Chart } from '@syncfusion/ej2-charts';
 
 @Component({
 imports: [
-         ChartModule, ButtonModule, ChartAllModule, AccumulationChartModule 
+         ChartModule, ButtonModule, ChartAllModule, AccumulationChartModule
     ],
 
 providers: [ AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService],
@@ -36,7 +31,7 @@ standalone: true,
             <e-accumulation-series [dataSource]='data3' xName='x' yName='y' [dataLabel]='datalabel' radius='70%' startAngle=0 endAngle=360 name='Project'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>
-    
+
     <button ej-button id='print' (click)='export()'>Export</button>`
 })
 export class AppComponent implements OnInit {
@@ -123,6 +118,3 @@ export class AppComponent implements OnInit {
         this.chart?.exportModule.export('PDF', 'Chart', undefined, [this.chart as Chart, this.chart1 as Chart, this.chart2 as Chart], undefined, undefined, true, undefined, undefined, true);
     }
 }
-
-
-

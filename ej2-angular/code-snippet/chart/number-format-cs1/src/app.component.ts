@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule} from '@syncfusion/ej2-angular-charts'
-import { LegendService, TooltipService, DataLabelService, ColumnSeriesService, DateTimeService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { LegendService, TooltipService, DataLabelService, ColumnSeriesService, DateTimeService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { setCurrencyCode } from '@syncfusion/ej2-base';
 setCurrencyCode('EUR');
@@ -57,5 +52,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

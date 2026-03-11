@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, LineSeriesService, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { SelectionService, ZoomService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { IMouseEventArgs, ChartComponent, IZoomCompleteEventArgs, ISelectionCompleteEventArgs } from '@syncfusion/ej2-angular-charts';
 import { synchronizedData } from './datasource';
@@ -146,6 +140,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

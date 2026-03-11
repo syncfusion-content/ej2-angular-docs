@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
   AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -29,10 +26,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.piedata = pieData;
         this.tooltip = {
-            enable: true,  
+            enable: true,
             location: { x: 200, y: 20 }
         }
     };
 }
-
-

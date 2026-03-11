@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { BarSeriesService, StackingBarSeriesService, CategoryService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { BarSeriesService, StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 @Component({
@@ -40,9 +35,7 @@ export class AppComponent implements OnInit {
         this.border = { width: 2, color: '#ff4251', dashArray: '2,5' };
         this.border1 = { width: 2, color: '#4C4C4C', dashArray: '2,5' };
         this.border2 = { width: 2, color: '#794F1B', dashArray: '2,5' };
-        this.title = 'Sales Comparison';    
+        this.title = 'Sales Comparison';
     }
 
 }
-
-

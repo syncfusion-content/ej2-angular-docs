@@ -89,8 +89,8 @@ export class AppComponent implements OnInit {
     this.title = 'Olympic Medals';
   }
 
-  // axisMultiLabelRender: customize or cancel multi-level labels at render time
-  public onMultiLevelLabelClick(args: IAxisMultiLabelRenderEventArgs): void {
-    console.log("Axis MultiLevel Label Click Event was triggered");
+  // multiLevelLabelClick: event when a multi-level label segment is clicked
+  public onMultiLevelLabelClick(args: IMultiLevelLabelClickEventArgs): void {
+    console.log('MultiLevel label click event was triggered');
   }
 }

@@ -60,4 +60,4 @@ export class AppComponent implements OnInit {
       y: args.y
     });
   }
-}    
+}

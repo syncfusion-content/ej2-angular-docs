@@ -87,7 +87,7 @@ export class AppComponent implements OnInit {
 
   // legendRender: customize legend items before they are rendered
   public onLegendRender(args: ILegendRenderEventArgs): void {
-    console.log("legend render event was triggered");
+    console.log('Legend render event was triggered');
     switch (args.text) {
       case 'Gold':
         args.text = 'Gold (Au)';

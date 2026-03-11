@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, AreaSeriesService, LineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { TooltipService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { IMouseEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts';
 import { synchronizedData } from './datasource';
@@ -33,7 +27,7 @@ standalone: true,
         </div>
         <div class="col" >
             <ejs-chart #chart2 style='display:block;' id="container2" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis2'
-                [title]='title2' [titleStyle]="titleStyle" [tooltip]="tooltip2" 
+                [title]='title2' [titleStyle]="titleStyle" [tooltip]="tooltip2"
                 (chartMouseLeave)= 'chart2MouseLeave($event)' (chartMouseMove)='chart2MouseMove($event)' (chartMouseUp)='chart2MouseUp($event)'>
                 <e-series-collection>
                     <e-series [dataSource]='chartData' type='Area' xName='USD' yName='INR' opacity=0.6
@@ -137,6 +131,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

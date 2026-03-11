@@ -53,8 +53,8 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales';
   }
 
-  // pointRender: customize each point's appearance before rendering
+  // pointClick: handle point click actions
   public onPointClick(args: IPointEventArgs): void {
-    console.log("point Click event was triggered");
+    console.log('Point click event was triggered');
   }
 }

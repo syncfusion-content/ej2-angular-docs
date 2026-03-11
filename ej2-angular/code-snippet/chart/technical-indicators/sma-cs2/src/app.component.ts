@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 let chartData: any[] = [
@@ -110,5 +105,3 @@ export class AppComponent implements OnInit {
     }
 ;
 }
-
-

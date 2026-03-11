@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
@@ -8,7 +6,6 @@ import {
     StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
     SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
 } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -53,5 +50,3 @@ export class AppComponent implements OnInit {
      this.i++;
   }
 }
-
-

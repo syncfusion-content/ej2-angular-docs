@@ -5,4 +5,4 @@ export let pyramidData: Object[] = [
     { x: 'India',     y: 24 },
     { x: 'Japan',     y: 25 },
     { x: 'Germany',   y: 27 }
-];    
+];

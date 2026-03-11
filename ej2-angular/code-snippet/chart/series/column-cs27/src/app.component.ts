@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService,
     ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
  } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -18,7 +15,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService, 
+providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService,
         ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
 standalone: true,
     selector: 'app-container',
@@ -118,6 +115,3 @@ crosshair: any;
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 };
-
-
-

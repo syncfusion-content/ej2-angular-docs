@@ -11,4 +11,4 @@ export let chartData: Object[] = [
         { x: 'Oct', high: 22, low: 12 },
         { x: 'Nov', high: 20, low: 10 },
         { x: 'Dec', high: 17, low: 7 }
-    ];  
+    ];

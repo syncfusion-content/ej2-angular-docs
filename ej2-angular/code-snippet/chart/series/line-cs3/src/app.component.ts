@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
     SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
 
 
-
 import { Component, OnInit } from '@angular/core';
-import { chartData} from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -49,5 +46,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

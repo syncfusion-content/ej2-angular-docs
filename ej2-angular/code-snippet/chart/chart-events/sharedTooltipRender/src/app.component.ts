@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import {
   ChartModule,
   DateTimeService,
@@ -84,7 +82,7 @@ export class AppComponent implements OnInit {
 
   // Event: customize the shared tooltip before it renders
   public onSharedTooltipRender(args: ISharedTooltipRenderEventArgs): void {
-    console.log("Share tooltip rendered event was triggered");
+    console.log('Shared tooltip rendered event was triggered');
     // Update the header text
     args.headerText = 'Shared Tooltip';
     // Customize each line of the shared tooltip text
