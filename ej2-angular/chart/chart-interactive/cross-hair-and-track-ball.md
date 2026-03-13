@@ -116,3 +116,32 @@ The [`highlightCategory`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs10" %}
+
+## Crosshair Label Customization
+
+The [`crosshairLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#crosshairlabelrender) event fires before each crosshair axis label is rendered, allowing you to customize the label's appearance or content, or to prevent it from being displayed.
+
+Event arguments:
+- `text` – The label text that can be modified.
+- `value` – The data value at the crosshair position.
+- `axisName` – The axis identifier (e.g., `primaryXAxis`).
+- `axisOrientation` – Either `Horizontal` or `Vertical`.
+- `textStyle` – Font properties for customization.
+- `fill` – Background color of the label.
+- `cancel` – Set to **true** to skip rendering the label.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/crosshair-label-render/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/crosshair-label-render/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/user-interaction/crosshair-label-render/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-label-render" %}

@@ -294,6 +294,23 @@ The [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legend
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs53" %}
 
+## Legend template
+
+Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
+
+You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://ej2.syncfusion.com/angular/documentation/api/chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/axis/category-cs55/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/axis/category-cs55/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/chart/axis/category-cs55" %}
+
 >Note: To use legend feature, inject `LegendService` into the `@NgModule.Providers`.
 
 ## Customize each shape in legend

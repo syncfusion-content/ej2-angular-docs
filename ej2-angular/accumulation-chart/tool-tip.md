@@ -155,3 +155,25 @@ By setting the [`enableHighlight`](https://ej2.syncfusion.com/angular/documentat
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs45" %}
+
+## Follow pointer
+
+The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the accumulation chart. This provides a more dynamic and intuitive experience by keeping the tooltip close to the user's point of interaction.
+
+Enable this feature by setting the `followPointer` property to **true**:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/follow-pointer-accumulation/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/follow-pointer-accumulation/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/user-interaction/follow-pointer-accumulation/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/user-interaction/follow-pointer-accumulation" %}
