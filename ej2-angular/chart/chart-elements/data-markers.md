@@ -12,12 +12,11 @@ domainurl: ##DomainURL##
 
 Data markers are visual indicators placed at each data point on a series, helping to clearly identify and highlight individual values in your chart. Markers improve readability and accessibility, especially in line and area charts where data points may otherwise be unclear. Customize marker shape, color, size, and appearance to match your design requirements.
 
-<img src="../../images/marker.png" alt="Chart markers highlighting data points">">
-
+<img src="../../images/marker.png" alt="Chart markers highlighting data points">
 
 ## Marker
 
-Enable markers for data points by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#visible) option to `true` in the marker property. Each series receives distinct markers by default, improving visual differentiation.
+Enable markers for data points by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#visible) option to `true` in the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#marker) property. Each series receives distinct markers by default, improving visual differentiation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,7 +66,7 @@ Apart from the shapes, you can also add custom images to mark the data point usi
 
 ## Customization
 
-Marker's color and border can be customized using `fill` and `border` properties.
+Marker's color and border can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#border) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +82,7 @@ Marker's color and border can be customized using `fill` and `border` properties
 
 ## Customizing specific point
 
-You can also customize the specific marker and label using [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender-emittypeipointrendereventargs) event. The `pointRender` event allows you to change the shape, color and border for a point.
+You can also customize the specific marker and label using [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) event. The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) event allows you to change the shape, color and border for a point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +98,7 @@ You can also customize the specific marker and label using [`pointRender`](https
 
 ## Fill marker with series color
 
-Marker can be filled with the series color by setting the [`isFilled`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#isFilled-boolean) property to <b>true</b>.
+Marker can be filled with the series color by setting the [`isFilled`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#isfilled) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

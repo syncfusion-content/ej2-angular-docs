@@ -57,10 +57,10 @@ Bind the same JSON data to all series by setting the [`dataSource`](https://ej2.
 
 ## Lazy loading
 
-Lazy loading enables on-demand data retrieval, loading only the data required for the currently visible range. The chart fires the `scrollEnd` event when the user scrolls near the edge of the visible data range. In this event handler, retrieve the minimum and maximum values from the scrolled axis, request the corresponding data from your server, and append it to the chart. This approach is ideal for large datasets that would be expensive to load entirely into memory.
+Lazy loading enables on-demand data retrieval, loading only the data required for the currently visible range. The chart fires the [`scrollEnd`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#scrollend) event when the user scrolls near the edge of the visible data range. In this event handler, retrieve the minimum and maximum values from the scrolled axis, request the corresponding data from your server, and append it to the chart. This approach is ideal for large datasets that would be expensive to load entirely into memory.
 **How lazy loading works:**
 1. User scrolls the chart to view a different data range
-2. `scrollEnd` event fires with current axis range information
+2. [`scrollEnd`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#scrollend) event fires with current axis range information
 3. Fetch the corresponding data from your server
 4. Append new data to the existing dataset
 5. Chart automatically re-renders with the updated data
@@ -79,7 +79,7 @@ Lazy loading enables on-demand data retrieval, loading only the data required fo
 
 ## Remote data
 
-You can also bind remote data to the chart using `DataManager`. The DataManager requires Bind remote data from a web service by using the `DataManager` class. The DataManager simplifies communication with REST APIs, OData services, and custom web endpoints. It requires minimal configuration—typically just the service URL and an appropriate adaptor—then handles all request/response processing. Assign the DataManager instance to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#datasource) property in the series, and map the response fields to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) Use the optional [`query`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#query) property to filter, sort, or paginate data on the server.
+Bind remote data from a web service by using the [`DataManager`](https://ej2.syncfusion.com/angular/documentation/api/data/dataManager) class. The DataManager simplifies communication with REST APIs, OData services, and custom web endpoints. It requires minimal configuration—typically just the service URL and an appropriate adaptor—then handles all request/response processing. Assign the DataManager instance to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#datasource) property in the series, and map the response fields to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname). Use the optional [`query`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#query) property to filter, sort, or paginate data on the server.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 
 ## Binding data using ODataAdaptor
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from an OData service using the DataManager. Refer to the following code example for remote data binding using an OData service.
+[`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from an OData service using the [`DataManager`](https://ej2.syncfusion.com/angular/documentation/api/data/dataManager). Refer to the following code example for remote data binding using an OData service.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -175,7 +175,7 @@ Create a custom adaptor by extending one of the built-in adaptors (typically ODa
 
 ## Offline mode
 
-When using remote data binding, all filtering, sorting, and pagination normally happen on the server. To improve responsiveness and reduce server load, enable offline mode: the chart loads all data once during initialization, then handles all interactions client-side. Set the `offline` property of DataManager to `true` to activate this behavior.
+When using remote data binding, all filtering, sorting, and pagination normally happen on the server. To improve responsiveness and reduce server load, enable offline mode: the chart loads all data once during initialization, then handles all interactions client-side. Set the [`offline`](https://ej2.syncfusion.com/angular/documentation/api/data/dataManager#offline) property of [`DataManager`](https://ej2.syncfusion.com/angular/documentation/api/data/dataManager) to `true` to activate this behavior.
 **Use offline mode when:**
 - Your dataset is relatively small (fits comfortably in browser memory)
 - You want instant filtering and sorting without server round-trips
@@ -197,7 +197,7 @@ When using remote data binding, all filtering, sorting, and pagination normally 
 
 ## Empty points
 
-Data points with `null` or `undefined` values are treated as empty points. Empty data points are skipped and not rendered in the chart. When using the `points` property to define individual data items, customize empty points with the `emptyPointSettings` property in the series configuration. By default, empty points create a gap in the series line or bar.
+Data points with `null` or `undefined` values are treated as empty points. Empty data points are skipped and not rendered in the chart. When using the [`points`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#points) property to define individual data items, customize empty points with the [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#emptypointsettings) property in the series configuration. By default, empty points create a gap in the series line or bar.
 **Default behavior:** Empty points use the `Gap` mode, which leaves a blank space in the chart visualization.
 
 {% tabs %}
@@ -214,7 +214,7 @@ Data points with `null` or `undefined` values are treated as empty points. Empty
 
 **Customizing empty point**
 
-Assign a specific color to empty points by setting the `fill` property in the `emptyPointSettings` object. This allows you to visually distinguish empty data points from regular data in your chart.
+Assign a specific color to empty points by setting the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettings#fill) property in the [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#emptypointsettings) object. This allows you to visually distinguish empty data points from regular data in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,7 +230,7 @@ Assign a specific color to empty points by setting the `fill` property in the `e
 
 ## Handling No Data
 
-When the chart has no data available to render, use the `noDataTemplate` property to display a custom layout within the chart area. This template can include messages, images, icons, or interactive elements (such as a load button) to guide the user. The template maintains design consistency and improves user experience when data is unavailable. Once data becomes available, the chart automatically updates and replaces the template with the visualization.
+When the chart has no data available to render, use the [`noDataTemplate`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#nodatatemplate) property to display a custom layout within the chart area. This template can include messages, images, icons, or interactive elements (such as a load button) to guide the user. The template maintains design consistency and improves user experience when data is unavailable. Once data becomes available, the chart automatically updates and replaces the template with the visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

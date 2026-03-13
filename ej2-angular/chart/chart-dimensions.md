@@ -10,14 +10,16 @@ domainurl: ##DomainURL##
 
 # Chart Dimensions in Angular Chart Component
 
-## Size for Container
+## Container Size
+
+Charts render to the size of their parent container. You can control sizing via the parent container (CSS or inline style) or by using the chart's `width` and `height` properties directly.
 
 Chart can render to its container size. You can set the size via inline or CSS as demonstrated below.
 
-```
-    <div style="width:650px; height:350px;">
-        <ejs-chart id="chart-container"></ejs-chart>
-    </div>
+```html
+<div style="width:650px; height:350px;">
+  <ejs-chart id="chart-container"></ejs-chart>
+</div>
 ```
 
 ```javascript
@@ -31,10 +33,6 @@ import { Component, OnInit } from '@angular/core';
     </div>`
 })
 export class AppComponent {
-    constructor(){
-        /*
-        */
-    }
 }
 ```
 
@@ -50,7 +48,7 @@ export class AppComponent {
   
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs1" %}
 
-## Size for Chart
+## Chart Size
 
 You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart#height) properties.
 

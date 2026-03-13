@@ -40,7 +40,7 @@ To render an [area](https://www.syncfusion.com/angular-components/angular-charts
 
 ## Data binding for area series
 
-Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to ensure proper data visualization.
+To display meaningful data in your area chart, connect your data source to the series. Use the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This property supports JSON datasets and remote data sources. Map the data fields to the chart series using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties to ensure proper data visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -279,7 +279,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/area-cs19" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

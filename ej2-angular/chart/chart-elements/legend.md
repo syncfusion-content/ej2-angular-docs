@@ -34,7 +34,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs38" %}
 
-Custom positioning allows the legend to be placed anywhere in the chart using `x` and `y` coordinates.
+Custom positioning allows the legend to be placed anywhere in the chart using [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#y) coordinates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ To change the legend icon shape, use the [`legendShape`](https://ej2.syncfusion.
 
 ### Legend size
 
-By default, the legend occupies approximately 20%–25% of the chart height when positioned at the top or bottom, and 20%–25% of the chart width when positioned at the left or right. Change the default size using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#height) properties of `legendSettings`.
+By default, the legend occupies approximately 20%–25% of the chart height when positioned at the top or bottom, and 20%–25% of the chart width when positioned at the left or right. Change the default size using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#height) properties of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#legendsettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,7 +200,7 @@ By default, clicking a legend item toggles the visibility of its series. To sele
 
 ## Enable animation
 
-You can customize the animation while clicking legend by setting enableAnimation as true or false using `enableAnimation` property in chart.
+You can customize the animation while clicking legend by setting [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableanimation) as true or false using the [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableanimation) property in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -232,7 +232,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 
 ## Legend title
 
-You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+You can set title for legend using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#title) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#legendsettings). You can also customize the [`fontStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#fontstyle), [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#size), [`fontWeight`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#fontweight), [`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#color), [`textAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#textalignment), [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#fontfamily), [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#opacity) and [`textOverflow`](https://ej2.syncfusion.com/angular/documentation/api/chart/fontModel#textoverflow) of legend title. [`titlePosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#titleposition) is used to set the legend position in `Top`, `Left` and `Right` position. [`maximumTitleWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#maximumtitlewidth) is used to set the width of the legend title. By default, it will be `100px`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +248,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 
 ## Arrow page navigation
 
-By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
+By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to [`enablePages`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enablepages) to get this support.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

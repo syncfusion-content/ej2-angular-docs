@@ -58,7 +58,7 @@ The following available modules should be injected to extend the Chart's functio
 | [`EMAIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the exponential moving average (EMA) indicator.|
 | [`MomentumIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the momentum indicator.|
 | [`MACDIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the moving average convergence divergence (MACD) indicator.|
-| [`RsiIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the relative Strength index (Rsi) indicator.|
+| [`RsiIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the Relative Strength Index (Rsi) indicator.|
 | [`SmaIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the simple moving average (SMA) indicator.|
 | [`StochasticIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the stochastic indicator.|
 | [`TmaIndicatorService`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalindicator)| Inject this module to use the triangular moving average indicator.|

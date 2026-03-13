@@ -58,7 +58,7 @@ When setting `labelIntersectAction` as `Rotate90`, the labels are rotated vertic
 
 ## Axis labels positioning
 
-By default, axis labels are positioned `outside` the axis line. Labels can also be placed `inside` the axis line using the `labelPosition` property, which is useful when optimizing space within the chart area.
+By default, axis labels are positioned `outside` the axis line. Labels can also be placed `inside` the axis line using the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#labelposition) property, which is useful when optimizing space within the chart area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,7 +74,7 @@ By default, axis labels are positioned `outside` the axis line. Labels can also 
 
 ## Multilevel labels
 
-Multiple levels of labels can be displayed on an axis using the `multiLevelLabels` property. This feature is useful for grouping related categories and improving data interpretation. The following configuration options are available:
+Multiple levels of labels can be displayed on an axis using the [`multiLevelLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#multilevellabels) property. This feature is useful for grouping related categories and improving data interpretation. The following configuration options are available:
 
 • Categories
 • Overflow
@@ -82,11 +82,11 @@ Multiple levels of labels can be displayed on an axis using the `multiLevelLabel
 • Text style
 • Border
 
->Note: To use multilevel label feature, inject `MultiLevelLabel` into the`@NgModule.providers`.
+>Note: To use multilevel label feature, inject `MultiLevelLabel` into the `@NgModule.providers`.
 
 ### Categories
 
-Using the categories property, the `start`, `end`, `text`, and `maximumTextWidth` values of multilevel labels can be configured to define the label range and content.
+Using the [`categories`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#categories) property, the [`start`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelCategoriesModel#start), [`end`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelCategoriesModel#end), [`text`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelCategoriesModel#text), and [`maximumTextWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelCategoriesModel#maximumtextwidth) values of multilevel labels can be configured to define the label range and content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ Using the categories property, the `start`, `end`, `text`, and `maximumTextWidth
 
 ### Overflow
 
-Using the `overflow` property, multilevel labels can be configured to either `trim` or `wrap` when the text exceeds the available space.
+Using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#overflow) property, multilevel labels can be configured to either `trim` or `wrap` when the text exceeds the available space.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -118,7 +118,7 @@ Using the `overflow` property, multilevel labels can be configured to either `tr
 
 ### Alignment
 
-The `alignment` property provides options to position multilevel labels at `far`, `center`, or `near` relative to the axis.
+The [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#alignment) property provides options to position multilevel labels at `far`, `center`, or `near` relative to the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ The `alignment` property provides options to position multilevel labels at `far`
 
 ### Text customization
 
-The `textStyle` property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow`.
+The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#textstyle) property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,7 +150,7 @@ The `textStyle` property of multilevel labels provides options to customize the 
 
 ### Border customization
 
-Using the `border` property, the `width`, `color`, and `type` of the multilevel label border can be customized. The supported border types are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder`, and `CurlyBrace`.
+Using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#border) property, the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel#width), [`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel#color), and [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiLevelLabelsModel#border) of the multilevel label border can be customized. The supported border types are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder`, and `CurlyBrace`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -182,7 +182,7 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 ## Trim using maximum label width
 
-You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#enabletrim) property and width of the labels can also be customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabelwidth) property in the axis, the value maximum label width is `34` by default.
+You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#enabletrim) property and width of the labels can also be customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabelwidth) property in the axis, the default value of maximum label width is `34`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,7 +200,7 @@ You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/d
 
 The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size`, and `font-weight` of axis labels.
 
-To known more about labels customization, you can check on this video:
+To know more about labels customization, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=gjO67nmQIwY" %}
 
@@ -218,7 +218,7 @@ To known more about labels customization, you can check on this video:
 
 ### Label rotation
 
-The axis labels can be rotated based on the `labelRotation` property in `primaryXAxis`.
+The axis labels can be rotated based on the [`labelRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#labelrotation) property in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +234,7 @@ The axis labels can be rotated based on the `labelRotation` property in `primary
 
 ## Customizing specific point
 
-Specific axis label text can be customized using the `axisLabelRender` event, which allows conditional formatting or dynamic text updates during label rendering.
+Specific axis label text can be customized using the [`axisLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#axislabelrender) event, which allows conditional formatting or dynamic text updates during label rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,7 +266,7 @@ The line break feature is used to display long axis label text across multiple l
 
 ## Maximum labels
 
-`MaximumLabels` property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and maximumLabels, then the priority goes to range only. If you haven’t set the range, then we have considered priority to maximumLabels property.
+The [`maximumLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabels) property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and [`maximumLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabels), then the priority goes to range only. If you haven't set the range, then priority is given to the [`maximumLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximumlabels) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

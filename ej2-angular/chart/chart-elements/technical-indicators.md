@@ -20,9 +20,9 @@ Chart supports 10 types of technical indicators.
 
 ## Accumulation Distribution
 
-Accumulation Distribution combines price and volume to show how money may be flowing into or out of stock.
-To render a Accumulation Distribution Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `AccumulationDistribution` and inject `AccumulationDistributionIndicatorService` into the `@NgModule.providers`.
-To calculate the signal line [`volume`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) field is additionally added with `dataSource`.
+The Accumulation Distribution combines price and volume to show how money may be flowing into or out of a stock.
+To render an Accumulation Distribution Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `AccumulationDistribution` and inject `AccumulationDistributionIndicatorService` into the `@NgModule.providers`.
+To calculate the signal line, the [`volume`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#volume) field is additionally added with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#datasource).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +38,7 @@ To calculate the signal line [`volume`](https://ej2.syncfusion.com/angular/docum
 
 ## Average True Range (ATR)
 
-ATR measures the stock volatility by comparing the current value with the previous value. To render a Average True Range (ATR) Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `Atr` and inject `AtrIndicatorService` into the `@NgModule.providers`.
+ATR measures the stock volatility by comparing the current value with the previous value. To render an Average True Range (ATR) Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Atr` and inject `AtrIndicatorService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,8 +55,8 @@ ATR measures the stock volatility by comparing the current value with the previo
 ## Bollinger Band
 
 A chart overlay that shows the upper and lower limits of normal price movements based on the standard deviation of prices.
-To render a Bollinger Band, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `BollingerBand` and inject `BollingerBandsService` into the `@NgModule.providers`.
-Bollinger band will be represented by three lines (upperLine, lowerLine, signalLine).Bollinger Band default values of the [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) is 14 and [`standardDeviations`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) is 2.
+To render a Bollinger Band, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `BollingerBand` and inject `BollingerBandsService` into the `@NgModule.providers`.
+Bollinger band will be represented by three lines (upperLine, lowerLine, signalLine). Bollinger Band default values of the [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) is 14 and [`standardDeviations`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#standarddeviation) is 2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,7 +72,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 
 **Customization of BollingerBand**
 
-`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/), and the lowerLine can be customized by using [`lowerLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties of indicator.
+`stroke`, `stroke-width`, and `color` of upperLine can be customized by using [`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#upperline), and the lowerLine can be customized by using [`lowerLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#lowerline) properties of indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,7 +88,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 
 ## Exponential Moving Average (EMA)
 
-Moving average Indicators are used to define the direction of the trend. To render a EMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `Ema` and inject `EMAIndicatorService` into the `@NgModule.providers`.
+Moving average Indicators are used to define the direction of the trend. To render an EMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Ema` and inject `EMAIndicatorService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 
 ## Momentum
 
-Momentum shows the speed at which the price of the stock is changing. To render a Momentum indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `Momentum`and inject `MomentumIndicatorService` into the `@NgModule.providers`. Momentum indicator will be represented by two lines (upperLine, signalLine).In momentum indicator the upperBand value is always render at the value 100.
+Momentum shows the speed at which the price of the stock is changing. To render a Momentum indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Momentum` and inject `MomentumIndicatorService` into the `@NgModule.providers`. Momentum indicator will be represented by two lines (upperLine, signalLine). In momentum indicator the upperBand value is always rendered at the value 100.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 
 **Customization of MomentumIndicator**
 
-`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/), property of indicator.
+`stroke`, `stroke-width`, and `color` of upperLine can be customized by using [`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#upperline) property of indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +136,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 
 ## Moving Average Convergence Divergence (MACD)
 
-MACD is based on the difference between two EMA's. To render a MACD Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `MACD` and inject `MACDIndicatorService` into the `@NgModule.providers`.MACD indicator will be represented by MACD line,signal line, MACD histogram. MACD histogram is used to differentiate MACD line and signal line.
+MACD is based on the difference between two EMA's. To render a MACD Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `MACD` and inject `MACDIndicatorService` into the `@NgModule.providers`. MACD indicator will be represented by MACD line, signal line, and MACD histogram. MACD histogram is used to differentiate MACD line and signal line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,7 +152,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 
 **Customization of MACD**
 
-`stroke`, `stroke-width`, and `color`of macdLine can be customized by using,[`macdLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/), property of indicator. The positive and negative changes of histogram can be customized by [`macdPositiveColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`macdNegativeColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties. The [`macdType`] is used to define the type of MACD indicator. To customize the MACD period using [`slowPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`fastPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties.
+`stroke`, `stroke-width`, and `color` of macdLine can be customized by using [`macdLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#macdline) property of indicator. The positive and negative changes of histogram can be customized by [`macdPositiveColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#macdpositivecolor) and [`macdNegativeColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#macdnegativecolor) properties. The [`macdType`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#macdtype) is used to define the type of MACD indicator. To customize the MACD period using [`slowPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#slowperiod) and [`fastPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#fastperiod) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,7 +168,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 
 ## Relative Strength Index (RSI)
 
-RSI shows how strongly a stock is moving in its current direction. To render a RSI Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as`Rsi` and inject `RsiIndicatorService` into the `@NgModule.providers`.RSI indicator will be represented by three lines (upperBand, lowerBand, signalLine). The upperBand and lowerBand values are customized by [`overBought`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`overSold`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties of indicator and the signalLine is calculated by RSI formula.
+RSI shows how strongly a stock is moving in its current direction. To render a RSI Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Rsi` and inject `RsiIndicatorService` into the `@NgModule.providers`. RSI indicator will be represented by three lines (upperBand, lowerBand, signalLine). The upperBand and lowerBand values are customized by [`overBought`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#overbought) and [`overSold`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#oversold) properties of indicator and the signalLine is calculated by RSI formula.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ RSI shows how strongly a stock is moving in its current direction. To render a R
 
 ## Simple Moving Average (SMA)
 
-Moving average Indicators are used to define the direction of the trend. To render a SMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `Sma` and inject `SmaIndicatorService` module using `@NgModule.providers`.
+Moving average Indicators are used to define the direction of the trend. To render a SMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Sma` and inject `SmaIndicatorService` module using `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,9 +200,9 @@ Moving average Indicators are used to define the direction of the trend. To rend
 
 ## Stochastic
 
-It shows how a stock is, when compared to previous state. To render a Stochastic indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `Stochastic` and inject `StochasticIndicatorService` module using `@NgModule.providers` method.
-stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine).
-In stochastic indicator the upperBand value and lowerBand value is customized by [`overBought`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`overBought`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/)properties of indicators and the periodLine and signalLine is render based on stochastic formula.
+It shows how a stock is performing when compared to its previous state. To render a Stochastic indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Stochastic` and inject `StochasticIndicatorService` module using `@NgModule.providers` method.
+Stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine).
+In stochastic indicator the upperBand value and lowerBand value are customized by [`overBought`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#overbought) and [`overSold`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#oversold) properties of indicators and the periodLine and signalLine are rendered based on stochastic formula.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -218,7 +218,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 
 **Customization of StochasticIndicator**
 
-`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/), the lowerLine can be customized by using [`lowerLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and the periodLine can be customized by using [`periodLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties of indicator. To customize the period to find the average price using [`kPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`dPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties.
+`stroke`, `stroke-width`, and `color` of upperLine can be customized by using [`upperLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#upperline), the lowerLine can be customized by using [`lowerLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#lowerline) and the periodLine can be customized by using [`periodLine`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#periodline) properties of indicator. To customize the period to find the average price using [`kPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#kperiod) and [`dPeriod`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#dperiod) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +234,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 
 ## Triangular Moving Average (TMA)
 
-Moving average indicators are used to define the direction of the trend. To render a TMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) as `TMA` and inject `TmaIndicatorService` module using `@NgModule.providers`.
+Moving average indicators are used to define the direction of the trend. To render a TMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `TMA` and inject `TmaIndicatorService` module using `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,7 +250,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 
 **Customization of Technical Indicators**
 
-`stroke`, `stroke-width`, and `color` of signalLine can be customized by using,[`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) properties. and the [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) property is used to predict the data forecast calculations. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) value is used to the compare the current price with previous price. It is applicable to Bollinger bands and moving averages. The [`showZones`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property is used to shows/Hides the overBought and overSold regions. It is applicable for RSI and stochastic indicators.
+`stroke`, `stroke-width`, and `color` of signalLine can be customized by using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#fill), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#width) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#dasharray) properties. The [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) property is used to predict the data forecast calculations. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#field) value is used to compare the current price with previous price. It is applicable to Bollinger bands and moving averages. The [`showZones`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#showzones) property is used to show/hide the overBought and overSold regions. It is applicable for RSI and stochastic indicators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,9 +266,9 @@ Moving average indicators are used to define the direction of the trend. To rend
 
 **Data Source**
 
-Usually technical indicators are added along with a financial series. The [`seriesName`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) represents the series, the data of which has to be analysed through indicators.
+Usually technical indicators are added along with a financial series. The [`seriesName`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#seriesname) represents the series, the data of which has to be analyzed through indicators.
 
-Technical indicators can also be added without series using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel/) property of indicator.
+Technical indicators can also be added without series using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#datasource) property of indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -283,5 +283,6 @@ Technical indicators can also be added without series using [`dataSource`](https
 {% previewsample "page.domainurl/samples/chart/technical-indicators/sma-cs3" %}
 
 **Module Dependencies**
-To render a Indicator, it is mandatory to inject `LineSeriesService` module..
+
+To render an Indicator, it is mandatory to inject `LineSeriesService` module.
 In addition to that, MACD Indicator requires `ColumnSeriesService` and BollingerBands requires `RangeAreaSeriesService`.

@@ -92,7 +92,7 @@ The [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 To render a spline draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`]([../../api/chart/series/#drawtype](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#drawtype)) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
+1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
 
 2. **Inject the SplineSeries Module**: Use the `@NgModule.providers` method to inject the `SplineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline series are available in your chart.
 
@@ -129,8 +129,8 @@ To render an area draw type, you need to follow a few steps to configure it corr
 {% include code-snippet/chart/series/polar-cs5/src/main.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs5/src/main.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/polar-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -390,7 +390,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -410,7 +410,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -430,5 +430,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

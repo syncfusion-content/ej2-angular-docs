@@ -16,9 +16,9 @@ The chart provides selection support for both series and individual data points 
 
 ![Selection](../../images/selection.gif)
 
->When Mouse is clicked on the data points, the corresponding series legend will also be selected.
+>When the mouse is clicked on the data points, the corresponding series legend will also be selected.
 
-We have different type of selection mode for selecting the data. They are,
+We have different types of selection modes for selecting the data. They are,
 
 * None
 * Point
@@ -30,7 +30,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Point
 
- You can select a point, by setting `selectionMode` to point.
+ You can select a point, by setting [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) to point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Series
 
- You can select a series, by setting `selectionMode` to series.
+ You can select a series, by setting [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) to series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Cluster
 
-You can select the points that corresponds to the same index in all the series, by setting `selectionMode` to cluster.
+You can select the points that corresponds to the same index in all the series, by setting [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) to cluster.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,14 +82,13 @@ You can select the points that corresponds to the same index in all the series, 
 
 **DragXY, DragX and DragY**
 
-To fetch the collection of data under a particular region, you have to set `selectionMode` as `DragXY`.
+To fetch the collection of data under a particular region, you have to set [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) as `DragXY`.
 
 * DragXY - Allows us to select data with respect to horizontal and vertical axis.
 * DragX - Allows us to select data with respect to horizontal axis.
 * DragY - Allows us to select data with respect to vertical axis.
 
-The selected data’s are returned as an array collection in the [`dragComplete`]
-(https://ej2.syncfusion.com/angular/documentation/api/chart/iDragCompleteEventArgs) event.
+The selected data is returned as an array collection in the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/iDragCompleteEventArgs) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,7 +104,7 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 
 ## Lasso selection
 
-To select a region by drawing freehand shapes to fetch a collection of data use [selectionMode](https://ej2.syncfusion.com/angular/documentation/api/chart/selectionmode) as `Lasso`. You can also select multiple regions on the chart through this mode.
+To select a region by drawing freehand shapes to fetch a collection of data use [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) as `Lasso`. You can also select multiple regions on the chart through this mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,7 +120,7 @@ To select a region by drawing freehand shapes to fetch a collection of data use 
 
 ## Multi-region selection
 
-To select multiple region on the chart, set the `allowMultiSelection` property to true.
+To select multiple region on the chart, set the [`allowMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#allowmultiselection) property to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -153,7 +152,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 
 ## Selection on load
 
-You can able to select a point or series programmatically on a chart using [`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart#selecteddataindexes) property.
+You can select a point or series programmatically on a chart using [`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart#selecteddataindexes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,9 +166,9 @@ You can able to select a point or series programmatically on a chart using [`sel
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs5" %}
 
-## Selection through on legend
+## Selection through legend
 
-You can able to select a point or series through on legend using [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#toggleVisibility) property. Also, use [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableHighlight) property for highlighting the series through legend.
+You can select a point or series through the legend using [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#toggleVisibility) property. Also, use [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableHighlight) property for highlighting the series through legend.
 
 >When [`highlightMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/highlightmode) is set to 'Series', 'Cluster' or 'Point', legend highlighting will still occur even when [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableHighlight) is set to false. This is because, the [`highlightMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/highlightmode) takes precedence, so hovering over legend items will trigger highlighting of the corresponding series regardless of the legend [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableHighlight) setting.
 
@@ -203,4 +202,4 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 
 ## See Also
 
-* [Display selected data for range selection](./how-to/selected-data-grid#display-selected-data-for-range-selection)
+* [Display selected data for range selection](../how-to/selected-data-grid#display-selected-data-for-range-selection)

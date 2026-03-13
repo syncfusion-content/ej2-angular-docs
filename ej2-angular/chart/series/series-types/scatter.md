@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Scatter
 
-A scatter chart plots individual data points based on their x and y values, drawing a separate marker for each data point.
+A scatter chart plots individual data points based on their x and y values, rendering a separate marker for each data point.
 
 <img src="../../../../images/scatter.png" alt="Scatter plot showing relationship between two variables">
 
@@ -56,7 +56,7 @@ The following properties can be used to customize the `scatter` series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,7 +72,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,7 +88,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Shape**
 
-The [shape](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#shape) property allows you to customize the appearance of the markers by specifying different shapes.
+The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#shape) property allows you to customize the appearance of the markers by specifying different shapes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,7 +170,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,7 +190,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -210,5 +210,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

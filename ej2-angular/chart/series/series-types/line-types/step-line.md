@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StepLine` in your chart configuration. This indicates that the data should be represented as a step line chart, which connects data points with horizontal and vertical lines, creating a staircase effect. This type is ideal for displaying data that changes at distinct points.
 
-2. **Inject the StepLineSeries module**: Use the `@NgModule.providers` method to inject the `StepLineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step line series are available in your chart.
+2. **Inject the StepLineSeries module**: Inject the `StepLineSeriesService` into your component using the `providers` array in the `@NgModule` decorator. This step is essential, as it ensures that the necessary functionalities for rendering step line series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +84,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property can be used to apply a gradient color to the step line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property can be used to apply a gradient color to the step line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Dash array**
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
+The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -144,7 +144,7 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 **Width**
 
-The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property specifies the stroke width applied to the series.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property specifies the stroke width applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -270,7 +270,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,7 +290,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -308,7 +308,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs10" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Adding a new data point
 
-Use the `addPoint` method to dynamically append a new data point to a series. This is useful for real-time data streams, user interactions, or incremental data loading. The method accepts the following parameters:
+Use the [`addPoint`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#addpoint) method to dynamically append a new data point to a series. This is useful for real-time data streams, user interactions, or incremental data loading. The method accepts the following parameters:
  
-* **Data point** (required): The new data object to append to the series (must match the datasource structure)
+* **Data point** (required): The new data object to append to the series (must match the data source structure)
 * **Animation duration** (optional): Duration in milliseconds for the entry animation
 
 {% tabs %}
@@ -31,7 +31,7 @@ Use the `addPoint` method to dynamically append a new data point to a series. Th
 
 ## Removing an existing data point
 
-Use the `removePoint` method to dynamically delete a data point from a series by its index. This is useful for filtering data, removing outliers, or responding to user actions. The method accepts the following parameters:
+Use the [`removePoint`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#removepoint) method to dynamically delete a data point from a series by its index. This is useful for filtering data, removing outliers, or responding to user actions. The method accepts the following parameters:
  
 * **Point index** (required): The zero-based index of the data point to remove
 * **Animation duration** (optional): Duration in milliseconds for the exit animation
@@ -50,7 +50,7 @@ Use the `removePoint` method to dynamically delete a data point from a series by
 
 ## Replacing entire data points
 
-Use the `setData` method to replace all data points in a series with a new dataset. This is useful for category switching, time range changes, or complete data refreshes. The method accepts the following parameters:
+Use the [`setData`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#setdata) method to replace all data points in a series with a new dataset. This is useful for category switching, time range changes, or complete data refreshes. The method accepts the following parameters:
 
 * **New data source** (required): The complete new dataset array to display
 * **Animation duration** (optional): Duration in milliseconds for the transition animation
@@ -69,9 +69,9 @@ Use the `setData` method to replace all data points in a series with a new datas
 
 ## Click to add or remove a data point
 
-Enable users to add or remove data points by clicking on the chart. Listen to the `chartMouseClick` event to capture click coordinates and point information. When a user clicks within the chart area, extract the x and y axis values from the event arguments. If the location is empty, use `addPoint` to add a new data point at those coordinates. If a user clicks on an existing data point, identify its index and use `removePoint` to delete it. This creates an intuitive interface for data exploration and editing.
+Enable users to add or remove data points by clicking on the chart. Listen to the [`chartMouseClick`](https://ej2.syncfusion.com/angular/documentation/api/chart#chartmouseclick) event to capture click coordinates and point information. When a user clicks within the chart area, extract the x and y axis values from the event arguments. If the location is empty, use [`addPoint`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#addpoint) to add a new data point at those coordinates. If a user clicks on an existing data point, identify its index and use [`removePoint`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#removepoint) to delete it. This creates an intuitive interface for data exploration and editing.
 
-To remove a data point from the existing data source, simply click on the desired data point. To achieve this, first, verify whether the clicked data point obtained from `chartMouseClick` already exists in the data source. If it does, remove it by utilizing the `removePoint` method based on its index.
+To remove a data point from the existing data source, simply click on the desired data point. To achieve this, first, verify whether the clicked data point obtained from [`chartMouseClick`](https://ej2.syncfusion.com/angular/documentation/api/chart#chartmouseclick) already exists in the data source. If it does, remove it by utilizing the [`removePoint`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#removepoint) method based on its index.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

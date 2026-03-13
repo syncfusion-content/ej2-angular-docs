@@ -18,7 +18,7 @@ The box and whisker chart is a statistical visualization tool that displays the 
 
 To render a `box and whisker` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
-**Set the series type**: Define the series [type](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
+1. **Set the series type**: Define the series [type](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
 
 2. **Inject the BoxAndWhiskerSeries module**: Use the `@NgModule.providers` method to inject the `BoxAndWhiskerSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
 
@@ -71,7 +71,7 @@ Connect your data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Box plot mode
 
-The [`boxPlotMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/boxplotmode) property determines how the quartiles are calculated for the box and whisker series. The default value is `Exclusive`. The available options are:
+The [`boxPlotMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#boxplotmode) property determines how the quartiles are calculated for the box and whisker series. The default value is `Exclusive`. The available options are:
 
 - **Exclusive**: Excludes the median when calculating quartiles (default method).
 - **Inclusive**: Includes the median in quartile calculations.
@@ -239,7 +239,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/box-cs10" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

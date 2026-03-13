@@ -147,7 +147,7 @@ To render a multicolored line series in your chart, you need to follow a few ste
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
 
-2. **Inject the MultiColoredLineSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredLineSeriesService` module in your chart. This step is essential, as it ensures that the necessary functionalities for rendering line series are available in your chart.
+2. **Inject the MultiColoredLineSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredLineSeriesService` module in your chart. This step is essential, as it ensures that the necessary functionalities for rendering multicolored line series are available in your chart.
 
 3. **Map individual colors**: Utilize the `pointColorMapping` property to assign individual colors to each data point. This allows you to customize the color of each segment of the line based on your data.
 
@@ -235,7 +235,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -255,7 +255,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -275,5 +275,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

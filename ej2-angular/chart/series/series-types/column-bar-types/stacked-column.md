@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## 100% Stacked Column
 
-A 100% stacked column chart stacks vertical columns so their total is always 100% at each point.
+A 100% stacked column chart displays data in vertical columns where each column represents 100% of the data at that point, with individual series shown as segments proportional to their contribution.
 
-<img src="../../../../images/stacked100-column.png" alt="Stack column chart showing data trends over time">
+<img src="../../../../images/stacked100-column.png" alt="100% stacked column chart showing percentage contribution of data series">
 
 To render a [100% stacked column](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-column-chart) series in your chart, you need to follow a few steps to configure it correctly.
 
@@ -102,7 +102,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Border**
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color, and dashArray of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,7 +227,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for column series. This allows you to create columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the columns using the `topLeft`, `topRight`, `bottomLeft`, and `bottomRight` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -247,7 +247,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -308,7 +308,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs9" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

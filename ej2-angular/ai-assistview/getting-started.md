@@ -82,11 +82,11 @@ To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix
 The required CSS files are available in the `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using the following import statements.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import '../node_modules/@syncfusion/ej2-interactive-chat/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
 ```
 
 ## Adding AI AssistView component
@@ -131,7 +131,7 @@ The following example illustrates the output in your browser.
 
 ## Configure suggestions and responses
 
-Use the [promptSuggestions](../api/ai-assistview/#promptsuggestions) property to display a list of predefined suggestion chips. To provide custom responses, handle the [promptRequest](../api/ai-assistview/#promptrequest) event, which is triggered when a user query is sent.
+Use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to display a list of predefined suggestion chips. To provide custom responses, handle the [promptRequest](../api/ai-assistview#promptrequest) event, which is triggered when a user query is sent.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

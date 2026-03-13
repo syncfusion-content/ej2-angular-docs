@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 # Numeric axis in Angular Chart component
 
-The numeric axis is used to represent numeric values in a chart. By default, the `valueType` of an axis is set to `Double`, which is suitable for displaying continuous numerical data.
+The numeric axis displays numerical values along the chart's x-axis or y-axis. By default, the `valueType` of an axis is set to `Double`, which is suitable for displaying continuous numerical data such as temperatures, measurements, sales figures, or any decimal values.
 
-To known about numeric axis, you can check on this video:
+To learn more about numeric axes, you can watch this video:
 
 {% youtube "https://www.youtube.com/watch?v=OWDrA0M8j7Q" %}
 
@@ -30,9 +30,21 @@ To known about numeric axis, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/double-cs9" %}
 
+## Automatic Axis Calculation
+
+By default, the chart automatically calculates optimal axis ranges and tick positions to ensure data is displayed clearly and the axis labels use "nice" round numbers. The automatic calculation follows these principles:
+
+* **Range Calculation**: The axis extends slightly beyond your data's minimum and maximum values to prevent data points from appearing at the edges
+* **Tick Positioning**: Tick marks are placed at round values (such as 0, 5, 10, 20, 50, 100) rather than arbitrary numbers, making the chart easier to read
+* **Interval Selection**: The interval between ticks is chosen to provide clear spacing while showing enough detail
+
+For example, if your data values range from 12 to 87, the axis might automatically display from 0 to 100 with tick marks at 0, 20, 40, 60, 80, and 100. This behavior can be overridden using the properties described in the following sections.
+
 ## Range
 
-The range of the axis is calculated automatically based on the provided data. You can also customize the visible range by using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#maximum), and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#interval) properties of the axis.
+The range of the axis is calculated automatically based on the provided data, with the chart determining optimal minimum and maximum values to display all data points clearly. For example, if your data ranges from 15 to 95, the axis might automatically display from 0 to 100 with appropriate intervals for better readability.
+
+You can customize the visible range by using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#maximum), and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#interval) properties of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +70,7 @@ Padding can be applied to the minimum and maximum values of the axis range by us
 
 **Numeric - None**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `None`, the minimum and maximum values of the axis are derived directly from the data.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `None`, the minimum and maximum values of the axis are derived directly from the data without any additional padding. This displays exactly the data range, which is useful when you want to maximize the data display area or when your data naturally fits within clean boundaries.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,7 +86,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Round**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest values divisible by the interval. For example, if the minimum value is 3.5 and the interval is 1, the minimum value is rounded to 3.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest values divisible by the interval, creating cleaner axis boundaries. For example, if the minimum value is 3.5 and the interval is 1, the minimum value is rounded down to 3. Similarly, if the maximum is 48.7, it would be rounded up to 49.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,7 +102,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Additional**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range. This ensures extra space around your data, preventing data points from appearing too close to the axis edges, which improves visual clarity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +118,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Normal**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Normal`, padding is applied to the axis based on the default range calculation.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Normal`, padding is applied to the axis based on the default range calculation. This provides a balanced amount of padding suitable for most chart scenarios, ensuring data points are clearly visible without excessive white space.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +134,12 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Auto**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Auto`, the horizontal numeric axis uses `None` as padding, while the vertical numeric axis uses `Normal` padding.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Auto`, the chart applies different padding strategies based on axis orientation for optimal visualization:
+
+* **Horizontal axis (X-axis)**: Uses `None` padding to maximize data display width
+* **Vertical axis (Y-axis)**: Uses `Normal` padding to prevent data points from touching chart edges
+
+This is the recommended default setting for most scenarios as it provides optimal spacing for each axis type.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -213,11 +230,25 @@ The following table shows examples of commonly used numeric label formats and th
 <td>$1000.00</td>
 <td>Currency format with 2 decimal places</td>
 </tr>
+<tr>
+<td>0.5</td>
+<td>p0</td>
+<td>50%</td>
+<td>Percentage without decimal places</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>n0</td>
+<td>1000</td>
+<td>Number without decimal places</td>
+</tr>
 </table>
 
-## GroupingSeparator
+> **Note**: The currency symbol and thousand separator format vary based on the application's culture settings. For example, `c2` displays as `$1,000.00` in en-US culture and `1.000,00 €` in de-DE culture.
 
-To separate groups of thousands in numeric labels, enable the [`useGroupingSeparator`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#usegroupingseparator) property in the chart.
+## Grouping Separator
+
+To improve readability of large numbers, you can enable thousand separators by setting the [`useGroupingSeparator`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#usegroupingseparator) property to `true` in the chart. This formats numbers like `1000000` as `1,000,000`, making them easier to read. The separator character automatically adjusts based on the application's culture settings (e.g., comma for en-US, period for de-DE).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -233,7 +264,7 @@ To separate groups of thousands in numeric labels, enable the [`useGroupingSepar
 
 ## Custom Label Format
 
-The numeric axis also supports custom label formats by using placeholders such as `{value}°C`, where `{value}` represents the numeric axis label. For example, the value `20` is displayed as `20°C`.
+The numeric axis also supports custom label formats by using placeholders such as `{value}°C`, where `{value}` represents the numeric axis label. For example, the value `20` is displayed as `20°C`. This is useful for adding units of measurement or other custom text to your axis labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,3 +277,12 @@ The numeric axis also supports custom label formats by using placeholders such a
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/axis/double-cs18" %}
+
+## See Also
+
+* [Axis Customization](../axis-customization): Learn about additional axis customization options such as title, label style, and positioning
+* [Category Axis](./category-axis): Use category axis for discrete text-based categories
+* [DateTime Axis](./datetime-axis): Use datetime axis for time-series data
+* [Logarithmic Axis](./logarithmic-axis): Use logarithmic axis for data that spans multiple orders of magnitude
+* [Multiple Axes](../multiple-axes): Learn how to add and configure multiple axes in a single chart
+* [API Reference - Axis](https://ej2.syncfusion.com/angular/documentation/api/chart/axis): Complete API documentation for axis properties and methods

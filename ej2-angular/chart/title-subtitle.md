@@ -76,9 +76,9 @@ Align the chart title to the near, center, or far side of the chart using the [`
   
 {% previewsample "page.domainurl/samples/chart/chart-title-cs7" %}
 
-### Title wrap
+### Title styling
 
-Customize the title’s appearance using the `textStyle` property. Options include `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow` to control how the title is rendered within the chart area.
+Customize the title’s appearance using the `titleStyle` property. Options include `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow` to control how the title is rendered within the chart area. The `textOverflow: 'Wrap'` option enables wrapping when the title width exceeds available space.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

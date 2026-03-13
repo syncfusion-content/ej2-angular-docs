@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 ## Stacked Step Area
 
-A stacked step area chart stacks multiple step‑shaped area series to show cumulative values with interval‑based transitions.
+A stacked step area chart stacks multiple step-shaped area series to show cumulative values with interval-based transitions.
 
-<img src="../../../../images/stacked-step-area.png" alt="Stack Step Area chart showing data trends over time">
+<img src="../../../../images/stacked-step-area.png" alt="Stacked Step Area chart showing data trends over time">
 
 To render a stacked step area series in your chart, you need to follow a few steps to configure it correctly.
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step like appearance.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step-like appearance.
 
 2. **Inject the StackingStepAreaSeries module**: Use the `@NgModule.providers` method to inject the `StackingStepAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked step area series are available in your chart.
 
@@ -247,7 +247,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Stack labels
 
-The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+Stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stack point has negative values, the stack labels are displayed below the point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,14 +266,15 @@ The stack labels in stacked charts display cumulative total values for stack seg
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs11" %}
 
 ### Stack labels customization
-Stack labels have various properties for customization to enhance the visual based on your requirements:
 
-* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
-* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
-* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#format) - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
-* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#angle) - Specifies the rotation angle for stack labels in degrees. Default is 0.
-* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
-* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+Stack labels have various properties for customization to enhance the visuals based on your requirements:
+
+* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#visible) - Specifies whether stack labels are visible. Setting to `true` will display the labels. Default is `false`.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is `transparent`.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#format) - Formats the text displayed in the stack labels. Supports placeholders like `{value}`. Default is `null`.
+* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#angle) - Specifies the rotation angle for stack labels in degrees. Default is `0`.
+* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is `5`.
+* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is `5`.
 * [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#margin) - Configures the margin around the stack label (left, right, top, and bottom).
 * [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#border) - Configures the appearance of the stack label's border.
 * [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#font) - Customizes the stack label text, including font size, color, style, weight, and family.
@@ -337,7 +338,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs10" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

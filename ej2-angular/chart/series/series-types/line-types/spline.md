@@ -29,10 +29,10 @@ Here's a concise guide on how to do this:
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs5/src/datasource.ts %}
+{% include code-snippet/chart/series/line-cs5/src/main.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
+{% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/line-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
@@ -49,10 +49,10 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs5/src/datasource.ts %}
+{% include code-snippet/chart/series/line-cs5/src/main.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
+{% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/line-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
@@ -249,7 +249,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +269,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,5 +289,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

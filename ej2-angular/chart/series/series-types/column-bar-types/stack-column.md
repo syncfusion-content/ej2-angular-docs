@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 ## Stacked Column
 
-A stacked column chart displays vertical bars stacked with multiple series on top of each other.
-It highlights both the overall total and the contribution of each series.
+A stacked column chart displays vertical bars with multiple series stacked on top of each other.
+It highlights both the overall total and the contribution of each individual series.
 
 <img src="../../../../images/stacked-column.png" alt="Stack column chart showing data trends over time">
 
@@ -250,7 +250,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Stack labels
 
-The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+The stack labels in stacked charts display the cumulative total values for stacked segments. If a stacked point has negative values, the stack labels are displayed below the point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +269,7 @@ The stack labels in stacked charts display cumulative total values for stack seg
 {% previewsample "page.domainurl/samples/chart/series/column-cs53" %}
 
 ### Stack labels customization
-Stack labels have various properties for customization to enhance the visual based on your requirements:
+Stack labels have various properties for customization to enhance the visual appearance based on your requirements:
 
 * [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
 * [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
@@ -299,7 +299,7 @@ Stack labels have various properties for customization to enhance the visual bas
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for stacked column series. This allows you to create columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the columns using the `topLeft`, `topRight`, `bottomLeft`, and `bottomRight` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -319,7 +319,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -381,7 +381,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/stackedcolumn-cs9" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

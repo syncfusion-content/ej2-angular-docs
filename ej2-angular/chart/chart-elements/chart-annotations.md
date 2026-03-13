@@ -14,9 +14,9 @@ Chart annotations allow highlighting specific areas of the chart using text, sha
 
 <img src="../../images/annotation.png" alt="Chart displaying annotation example">
 
-Annotations are added using the `annotations` option. Set the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) property to reference the element that should be rendered within the chart.
+Annotations are added using the [`annotations`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#annotations) option. Set the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) property to reference the element that should be rendered within the chart.
 
-To known more about annotations, you can check on this video:
+To know more about annotations, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=8JSZW9mZVpY" %}
 
@@ -36,7 +36,7 @@ To known more about annotations, you can check on this video:
 
 ## Region
 
-Annotations can be positioned relative to either the overall `Chart` area or a specific `Series`. When placed relative to the chart, the annotation uses the chart’s coordinate system. When placed relative to a series, the annotation aligns with that series' data points. By default, annotations are placed with respect to the chart.
+Annotations can be positioned relative to either the overall `Chart` area or a specific `Series` using the [`region`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#region) property. When placed relative to the chart, the annotation uses the chart's coordinate system. When placed relative to a series, the annotation aligns with that series' data points. By default, annotations are placed with respect to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,9 +52,9 @@ Annotations can be positioned relative to either the overall `Chart` area or a s
 
 ## Co-ordinate Units
 
-Use the `coordinateUnits` property to define how annotation coordinates are interpreted. Choose between:
+Use the [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) property to define how annotation coordinates are interpreted. Choose between:
 - **Pixel** – The annotation is positioned using fixed pixel values within the chart area.  
-- **Point** – The annotation is positioned based on chart data points (x and y values).
+- **Point** – The annotation is positioned based on chart data points ([`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) values).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ Use the `coordinateUnits` property to define how annotation coordinates are inte
 
 ## Alignment
 
-Annotation provides `verticalAlignment` and `horizontalAlignment`. The `verticalAlignment` can be customized via `Top`, `Bottom` or `Middle` and the `horizontalAlignment` can be customized via `Near`, `Far` or `Center`.
+Annotation provides [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#verticalalignment) and [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#horizontalalignment). The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#verticalalignment) can be customized via `Top`, `Bottom` or `Middle` and the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#horizontalalignment) can be customized via `Near`, `Far` or `Center`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,9 +84,9 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs10" %}
 
-## Adding y-axis sub title through on annotation
+## Adding y-axis sub title through annotation
 
-By setting text div in the `content` option of annotation object you can add sub title to chart y-axis. Specified the `coordinate` value as `pixel` and customize x and y location of the text.
+By setting text div in the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) option of annotation object, you can add a sub title to the chart y-axis. Specify the [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) value as `Pixel` and customize the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) location of the text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ By setting text div in the `content` option of annotation object you can add sub
 
 ### Dotted line in Angular Chart component
 
-Set the annotation [coordinateUnits](https://ej2.syncfusion.com/angular/documentation/api/chart/chartannotationsettingsmodel#coordinateunits) to `Point` to place dotted lines at specific data point positions using their x and y values.
+Set the annotation [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) to `Point` to place dotted lines at specific data point positions using their [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ Set the annotation [coordinateUnits](https://ej2.syncfusion.com/angular/document
 
 ### Footer in Angular Chart component
 
-Use annotations to add both a watermark and a footer to the chart. Initialize custom elements with the `annotation` property and provide the HTML to render via the `content` option. For a watermark, supply the text "syncfusion" and position it using the desired coordinate unit.
+Use annotations to add both a watermark and a footer to the chart. Initialize custom elements with the [`annotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel) property and provide the HTML to render via the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) option. For a watermark, supply the text "syncfusion" and position it using the desired [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits).
 
 ```bash
     #  watermark for chart
@@ -131,7 +131,7 @@ Use annotations to add both a watermark and a footer to the chart. Initialize cu
         </e-annotations>
 ```
 
-Use the `x` and `y` option of the annotation object to create footer for chart.
+Use the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) option of the annotation object to create a footer for the chart.
 
 ```bash
 <e-annotations>

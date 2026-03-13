@@ -10,15 +10,17 @@ domainurl: ##DomainURL##
 
 # Add series in Angular Chart component
 
-You can add or remove the chart series dynamically by using the `addSeries` or `removeSeries` method.
+You can add or remove the chart series dynamically by using the [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart/#addseries) or [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart/#removeseries) method.
 
 To add or remove the series dynamically, follow the given steps:
 
-**Step 1**:
+**Step 1**: Add a new series
 
-To add a new series to chart dynamically, pass the series value to the `addSeries` method.
+To add a new series to the chart dynamically, pass the series value to the [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart/#addseries) method.
 
-To remove the new series from chart dynamically, pass the series index to the `removeSeries` method.
+**Step 2**: Remove a series
+
+To remove a series from the chart dynamically, pass the series index to the [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart/#removeseries) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

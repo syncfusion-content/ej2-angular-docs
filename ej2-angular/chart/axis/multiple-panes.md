@@ -18,7 +18,7 @@ To split the chart area vertically into multiple rows, use the [`rows`](https://
 
 - Space for each row can be allocated by using the [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/row#height) property. The value can be specified either in pixels or as a percentage.
 - To associate a vertical axis with a specific row, assign the corresponding index using the [`rowIndex`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rowindex) property of the axis.
-- To customize the bottom line of each row, use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#border) property.
+- To customize the bottom line of each row, use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/row#border) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

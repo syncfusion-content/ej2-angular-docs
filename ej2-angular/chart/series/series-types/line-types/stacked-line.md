@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 ## 100% Stacked Line
 
-A 100% stacked line chart shows the relative percentage contribution of each series, with the total normalized to 100% at every point.
+A 100% stacked line chart displays the relative percentage contribution of each series, with the total normalized to 100% at every point.
 
-<img src="../../../../images/stacked100-line.png" alt="100% Stack line chart showing data trends">
+<img src="../../../../images/stacked100-line.png" alt="100% Stacked line chart showing data trends">
 
 To render a [100% stacked line](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-line-chart) series in your chart, you need to follow a few steps to configure it correctly.
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingLine100` in your chart configuration. This indicates that the data should be represented as a 100% stacked line chart, with each data series shown as a percentage of the total. This chart type ensures that all lines are stacked to always reach 100% at each data point, allowing for easy comparison of the proportional relationships between the series without the influence of absolute values.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingLine100` in your chart configuration. This indicates that the data should be represented as a 100% stacked line chart, with each data series shown as a percentage of the total. This chart type ensures that all lines are stacked to always reach 100% at each data point, allowing for easy comparison of the proportional relationships between series without the influence of absolute values.
 
 2. **Inject the StackingLineSeries module**: Use the `@NgModule.providers` method to inject the `StackingLineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering 100% stacked line series are available in your chart.
 
@@ -62,11 +62,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `100% stacked line` series.
+The following properties can be used to customize the 100% stacked line series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +84,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedline-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property can be used to apply a gradient color to the 100% stacked line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property can be used to apply a gradient color to the 100% stacked line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Dash array**
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
+The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -144,7 +144,7 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 **Width**
 
-The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property specifies the stroke width applied to the series.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property specifies the stroke width applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,7 +230,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartComponent/#seriesrender) event allows you to customize series properties, such as [`data`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/#data), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/#fill), and [`name`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs/#name), before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -251,7 +251,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartComponent/#pointrender) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -271,5 +271,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { Component } from '@angular/core';
-import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
+import { CardSettingsModel } from '@syncfusion/ej2-kanban';
 import { kanbanData } from './datasource';
 
 @Component({

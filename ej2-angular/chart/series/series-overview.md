@@ -12,17 +12,17 @@ domainurl: ##DomainURL##
 
 ## **What is a series?**
 
-A series represents a set of related data points visualized together on a chart. Each series is plotted using a specific rendering type such as Line, Column, Area, Spline, or Scatter. A single chart can contain one or multiple series, allowing you to compare trends or relationships across datasets.
+A series represents a set of related data points visualized together on a chart. Each series is plotted using a specific rendering type, such as Line, Column, Area, Spline, or Scatter. A single chart can contain one or multiple series, allowing you to compare trends or relationships across datasets.
 
-## Single Series:
+## Single Series
 
 A single series refers to a chart that displays only one set of data points. It represents one continuous dataset plotted on the chart, allowing you to visualize trends or values from a single source of data.
 
 <img src="../../images/singleseries.png" alt="Single-series chart showing one dataset trend">
 
-## Multiple Series:
+## Multiple series
 
-A multiple series chart displays two or more datasets together, allows to compare trends or values across different series.
+A multiple series chart displays two or more datasets together, allowing you to compare trends or values across different series.
  
 <img src="../../images/line.png" alt="Multi-series chart showing multiple dataset trend">
 
@@ -56,7 +56,7 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 | [xName](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname) | Field name in the data source used for X-axis values. |
 | [yName](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#yname) | Field name in the data source used for Y-axis values. |
 | [name](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#name) | Series label shown in the legend and tooltips. |
-| [visible](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#visible) | Determines whether a chart series is displayed on the chart, controlling its visibility in chart. |
+| [visible](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#visible) | Determines whether the series is displayed on the chart. |
 | [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) | Fill color or gradient for the series. |
 | [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#width) | Stroke width for line-type series. |
 | [marker](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#marker) | Object configuring data point markers (visibility, size, shape, fill). |
@@ -71,5 +71,5 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 | [emptyPointSettings](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#emptypointsettings) | How to render empty/null points (gap, zero, average, etc.). |
 | [errorBar](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#errorbar) | Configuration to render error bars for each point. |
 | [trendlines](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#trendlines) | Add trendlines (Linear, Polynomial, Moving Average, etc.). |
-| [Marker](https://ej2.syncfusion.com/angular/documentation/api/chart/markersettingsmodel) | Highlights individual data points with symbols (circle, diamond, etc.) |
-| [DataLabel](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelsettingsmodel) | Displays the value of each data point directly on the chart. |
+| [marker](https://ej2.syncfusion.com/angular/documentation/api/chart/markersettingsmodel) | Configuration object for highlighting individual data points with symbols (circle, diamond, etc.). |
+| [dataLabel](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelsettingsmodel) | Configuration object for displaying the value of each data point directly on the chart. |

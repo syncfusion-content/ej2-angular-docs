@@ -91,11 +91,11 @@ export class AppComponent {}
 Combined CSS files are available in the Essential JS 2 package root folder. Reference these in your [src/styles.css] file using the following code:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material.css';
-@import "../node_modules/@syncfusion/ej2-angular-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-angular-base/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
 ```
 
 ## Add Diagram component
@@ -221,7 +221,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 The Syncfusion diagram component provides support to render many built-in shapes. Refer to [Shapes](shapes) to learn about built-in shapes.
 
-Customize the appearance of a node by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number), [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number) properties:
+Customize the appearance of a node by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth), [`borderColor`](../api/diagram/node#borderColor-string), [`borderWidth`](../api/diagram/node#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-number), [`opacity`](../api/diagram/shapeStyleModel#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel#shadow-number) properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -254,7 +254,7 @@ Add multiple nodes with different shapes to create a comprehensive diagram:
 
 ### Connect flow chart nodes
 
-Connect nodes by adding connectors using the [`connectors`](../api/diagram/connectorModel/) property of the diagram. Reference the source and target endpoints using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties. Combine the required nodes and connectors to form a complete flow diagram:
+Connect nodes by adding connectors using the [`connectors`](../api/diagram/connectorModel) property of the diagram. Reference the source and target endpoints using the [`sourceID`](../api/diagram/connectorModel#sourceid) and [`targetID`](../api/diagram/connectorModel#targetid) properties. Combine the required nodes and connectors to form a complete flow diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,7 +268,7 @@ Connect nodes by adding connectors using the [`connectors`](../api/diagram/conne
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/flowdiagram-cs1" %}
 
-Set default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, move such properties into `getNodeDefaults`.
+Set default values for all [`nodes`](../api/diagram/nodemodel) and [`connectors`](../api/diagram/connectorModel) using the [`getNodeDefaults`](../api/diagram#getnodedefaults) and [`getConnectorDefaults`](../api/diagram#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, move such properties into `getNodeDefaults`.
 
 ## Automatic Organization Chart
 
@@ -319,7 +319,7 @@ Define Employee Information as JSON data. The following code example shows an em
 
 ### Map data source
 
-Configure the above "Employee Information" with the diagram so that nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel/) to map [`id`](../api/diagram/dataSourceModel/#id) and [`parentId`](../api/diagram/dataSourceModel/#parentid) with the corresponding property names of employee information:
+Configure the above "Employee Information" with the diagram so that nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel) to map [`id`](../api/diagram/dataSourceModel#id) and [`parentId`](../api/diagram/dataSourceModel#parentid) with the corresponding property names of employee information:
 
 ```typescript
 @Component({
@@ -377,7 +377,7 @@ export class AppComponent {
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, set the [`type`](../api/diagram/layoutType/) of layout as `OrganizationalChart`. The following code example shows how DataManager generates layouts based on the DataSourceSettings of the Diagram:
+To create an organizational chart, set the [`type`](../api/diagram/layoutType) of layout as `OrganizationalChart`. The following code example shows how DataManager generates layouts based on the DataSourceSettings of the Diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -393,7 +393,7 @@ To create an organizational chart, set the [`type`](../api/diagram/layoutType/) 
 
 ### Customize employee appearance
 
-The following code examples show how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) method updates each node based on employee data:
+The following code examples show how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram#setnodetemplate) method updates each node based on employee data:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

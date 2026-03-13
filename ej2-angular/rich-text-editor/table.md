@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Table in Angular Rich Text Editor Component
 
-The Syncfusion Angular Rich Text Editor allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel/)
+The Syncfusion Angular Rich Text Editor allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel)
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add an `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -96,6 +96,54 @@ The Rich Text Editor offers a simple and intuitive way to add rows and columns t
 
 ![Rich Text Editor table row quick insert](images/table_row_quick_insert.gif)
 
+## Table, row, and column selection
+
+The Rich Text Editor provides a simple and intuitive way to select table rows, columns, and entire table. Users can now select table rows and columns without dragging the mouse between cells.
+
+### Selecting an Entire Row
+
+Entire rows can be selected using the icons that appears on hover.
+
+**To select a row:**
+- **Where to hover**: Move the mouse pointer over the first column of the table..
+- **What you'll see**: A selection handle appears on the left side of the corresponding row.
+- **How to select**: Click the handle to select the entire row.
+
+![Rich Text Editor table row selection](images/table_row_selection.gif)
+
+### Selecting an Entire Column
+
+Entire columns can be selected using the icons that appears on hover.
+
+**To select a column:**
+
+- **Where to hover**: Move the mouse pointer over the first row of the table.
+- **What you'll see**: A selection handle appears at the top of the corresponding column.
+- **How to select**: Click the handle to select the entire column.
+
+![Rich Text Editor table column selection](images/table_column_selection.gif)
+
+### Selecting the Entire Table
+
+The entire table can be selected using the table selection icon that appears on hover.
+
+**To select the entire table:**
+
+- **Where to hover**: Move the mouse pointer anywhere over the table.
+- **What you'll see**: A selection handle appears at the top-left corner of the table.
+- **How to select**: Click the handle to select the entire table.
+
+![Rich Text Editor entire table selection](images/table_entire_selection.gif)
+
+### Keyboard Shortcuts
+
+The `Ctrl + A` shortcut provides progressive selection behavior when used inside a table.
+
+* **First press:** Selects the current cell
+* **Second press:** Selects the row containing the current cell
+* **Third press:** Selects the entire table
+* **Fourth press:** Selects all content in the Rich Text Editor
+
 ## Setting cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
@@ -134,11 +182,86 @@ By Default, provides Dashed border and Alternate rows.
 
 ## Setting table and cell dimensions
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/).
+Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings).
 
 Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
 ![Rich Text Editor table settings](images/table_properties.png)
+
+## Setting individual cell dimensions and borders
+
+The Rich Text Editor provides advanced options to customize individual table cell dimensions and borders. This feature enables fine-grained control over cell sizes, spacing, alignment, and border styling for both single and multiple cell selections.
+
+### Configuring the table cell properties in quick toolbar
+
+To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#table) property:
+
+```typescript
+quickToolbarSettings: { table: ['TableCellProperties'] }
+```
+
+### Individual cell properties dialog
+
+Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehensive dialog with the following customization options:
+
+**Dimension settings:**
+
+* **Width**: Set custom cell width with flexible unit selection (px, %, auto). The width is calculated based on the col group element's percentage of the selected cell. This setting applies to both single and multiple cell selections.
+
+* **Height**: Define custom cell height with unit options (px, %, auto). When the cell height value is applied, it appears in the UI only when the table has an explicitly defined height. Provides granular control over vertical cell dimensions.
+
+* **Cell padding**: Adjust the internal spacing inside cells to improve readability and visual appearance.
+
+**Alignment options:**
+
+* **Horizontal alignment**: Four alignment options are available:
+  - Align left
+  - Align center
+  - Align right
+  - Align justify
+  
+* **Vertical alignment**: Position cell content vertically with the following options:
+  - Align top
+  - Align middle
+  - Align bottom
+
+**Border customization:**
+
+* **Border Style**: Select the desired border line style (default is double).
+* **Border Width**: Specify the border thickness in pixels (default is 1px).
+* **Border Color**: Apply custom colors for cell borders to match design requirements.
+
+**Cell appearance:**
+
+* **Background color**: Apply individual cell background colors to highlight important data or improve visual organization.
+
+### Applying properties to cells
+
+The `TableCellProperties` enables modification of properties for both single and multiple selected cells. When multiple cells are selected, property changes apply uniformly to all selected cells, maintaining consistency across the table layout.
+
+### Live preview
+
+All changes made in the Table Cell Properties dialog are instantly reflected in the editor as a live preview, providing real-time visual feedback before finalizing the modifications.
+
+![Rich Text Editor table settings](images/table_cell_properties.png)
+
+In the following sample, the table cell properties feature has been provided from table module.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/table-cell-properties-sample/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/table-cell-properties-sample/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor/table-cell-properties-sample/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/table-cell-properties-sample" %}
 
 ## Table cell selection and formatting
 
@@ -201,7 +324,7 @@ Users can select multiple table cells by dragging the mouse or by holding the <k
 
 The Rich Text Editor allows users to modify table appearance by merging or splitting cells.
 
-Configure the `TableCell` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#table) property to display merge/split icons when selecting table cells.
+Configure the `TableCell` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#table) property to display merge/split icons when selecting table cells.
 
 ### Merging table cells
 

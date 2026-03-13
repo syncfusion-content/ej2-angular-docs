@@ -180,7 +180,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`]([../../api/chart#pointrender](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs)) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,5 +200,5 @@ The [`pointRender`]([../../api/chart#pointrender](https://ej2.syncfusion.com/ang
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

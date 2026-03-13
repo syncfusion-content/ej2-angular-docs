@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 2. **Inject the HiloSeries module**: Use the `@NgModule.providers` method to inject the `HiloSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering hilo series are available in your chart.
 
-3. **Provide high and low values**: The `Hilo` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
+3. **Provide high and low values**: The `Hilo` series requires two y-values for each data point. You need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`]([../../api/chart/series/#datasource](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource)) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ You can bind data to the chart using the [`dataSource`]([../../api/chart/series/
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
   
 {% previewsample "page.domainurl/samples/chart/series/hilo-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the hilo series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the hilo series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,5 +208,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

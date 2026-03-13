@@ -19,7 +19,7 @@ To render a [spline range area](https://www.syncfusion.com/angular-components/an
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`]([../../api/chart/series/#type](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type)) as `SplineRangeArea` in your chart configuration. This indicates that the data should be represented as a spline range area chart, which is ideal for visualizing continuous data points as a set of splines that vary between high and low values over intervals of time and across different categories.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `SplineRangeArea` in your chart configuration. This indicates that the data should be represented as a spline range area chart, which is ideal for visualizing continuous data points as a set of splines that vary between high and low values over intervals of time and across different categories.
 
 2. **Inject the SplineRangeAreaSeries module**: Use the `@NgModule.providers` method to inject the `SplineRangeAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline range area series are available in your chart.
 
@@ -41,7 +41,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`]([../../api/chart/series/#datasource](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource)) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`]([../../api/chart/series/#xname](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname)), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -191,7 +191,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,5 +231,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

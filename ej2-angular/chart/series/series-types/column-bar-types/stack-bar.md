@@ -66,7 +66,7 @@ The following properties can be used to customize the `stacked bar` series.
 
 **Fill**
 
-The [fill](../../api/chart/series#fill) property determines the color applied to the series.
+The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -298,7 +298,7 @@ Stack labels have various properties for customization to enhance the visual bas
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the `topLeft`, `topRight`, `bottomLeft`, and `bottomRight` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -314,11 +314,11 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/chart/series/bar-cs10A" %}
+{% previewsample "page.domainurl/samples/chart/series/stackbar-cs10A" %}
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -334,13 +334,13 @@ We can customize the corner radius for individual points in the chart series usi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/chart/series/bar-cs10B" %}
+{% previewsample "page.domainurl/samples/chart/series/stackbar-cs10B" %}
 
 ## Events
 
-### Series render 
+### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -360,7 +360,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -376,12 +376,11 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/chart/series/bar-cs10" %}
-
+{% previewsample "page.domainurl/samples/chart/series/stackbar-cs10" %}
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
 * [Add a Header to the Tooltip in Angular Stacked Bar Chart](https://support.syncfusion.com/kb/article/21516/how-to-add-a-header-to-the-tooltip-in-angular-stacked-bar-chart)
 * [Dynamically Add Series to Angular Chart](https://support.syncfusion.com/kb/article/21485/how-to-dynamically-add-series-to-angular-chart-component)

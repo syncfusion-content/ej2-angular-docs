@@ -14,7 +14,7 @@ Data labels display the values of data points directly on the chart, reducing th
 
 <img src="../../images/datalabel.png" alt="Chart with data labels displayed">
 
-Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
+Data labels can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/markersettingsmodel#datalabel). By default, the labels will arrange smartly without overlapping.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 
 ## Position
 
-Use the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#position) property to place data labels at `Top`, `Middle`, `Bottom`, or `Outer` (applicable to column and bar series). Appropriate label positioning enhances clarity and preserves chart readability.
+Use the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#position) property to place data labels at `Top`, `Middle`, `Bottom`, or `Outer` (applicable only to column and bar series). Appropriate label positioning enhances clarity and preserves chart readability.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,7 +167,7 @@ Apply number or date formatting using the  [`format`](https://ej2.syncfusion.com
 
 ## Text Mapping
 
-Display custom text using the `name` property, which maps label text from a specific field in the data source. This feature is useful for descriptive or category‑based labels.
+Display custom text using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#name) property, which maps label text from a specific field in the data source. This feature is useful for descriptive or category‑based labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -183,7 +183,7 @@ Display custom text using the `name` property, which maps label text from a spec
 
 ## Margin
 
-Adjust spacing around labels using the `margin` property, which includes `left`, `right`, `bottom`, and `top` values. Margins help prevent labels from overlapping chart elements.
+Adjust spacing around labels using the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#margin) property, which includes [`left`](https://ej2.syncfusion.com/angular/documentation/api/chart/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/chart/marginModel#right), [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/chart/marginModel#bottom), and [`top`](https://ej2.syncfusion.com/angular/documentation/api/chart/marginModel#top) values. Margins help prevent labels from overlapping chart elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,7 +199,7 @@ Adjust spacing around labels using the `margin` property, which includes `left`,
 
 ## Data label rotation
 
-Rotate data labels using the `angle` property. Rotation improves readability when labels are long or when space is limited.
+Rotate data labels using the [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#angle) property. Rotation improves readability when labels are long or when space is limited.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -215,7 +215,7 @@ Rotate data labels using the `angle` property. Rotation improves readability whe
 
 ## Customization
 
-Enhance label appearance using properties such as `fill` (background), `border`, and corner radius (`rx`, `ry`). Refine text appearance using the `font` settings, which support `color`, `fontFamily`, `fontWeight`, and `size`.
+Enhance label appearance using properties such as [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#fill) (background), [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#border), and corner radius ([`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#rx), [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#ry)). Refine text appearance using the [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#font) settings, which support `color`, `fontFamily`, `fontWeight`, and `size`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,13 +229,13 @@ Enhance label appearance using properties such as `fill` (background), `border`,
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs8" %}
 
- Note: The `rx` and `ry` properties require non‑null `border` values.
+>Note: The [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#rx) and [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#ry) properties require non‑null [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#border) values.
 
 ## Customizing specific point
 
 Customize individual markers or labels using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs)and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iTextRenderEventArgs) events.  
-- `pointRender` modifies shape, color, or border of a point.  
-- `textRender` customizes the label text for specific points.
+- [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) modifies shape, color, or border of a point.  
+- [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) customizes the label text for specific points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -251,9 +251,9 @@ Customize individual markers or labels using the [`pointRender`](https://ej2.syn
 
 ## Show percentage based on each series points
 
-Calculate and display percentage values based on each series’ total using the `seriesRender` and `textRender` events.  
-- In `seriesRender`, compute the total of `y` values.  
-- In `textRender`, calculate the percentage for each point and update the label text.
+Calculate and display percentage values based on each series' total using the [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) events.  
+- In [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender), compute the total of `y` values.  
+- In [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender), calculate the percentage for each point and update the label text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,11 +269,11 @@ Calculate and display percentage values based on each series’ total using the 
 
 ## Last value label
 
-The `lastValueLabel` in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
+The [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
 
 ### Enable last value label
 
-To show the last value label, make sure the `enable` property inside the `lastValueLabel` settings is set to `true` within the series configuration.
+To show the last value label, make sure the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#enable) property inside the [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) settings is set to `true` within the series configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -291,7 +291,7 @@ To show the last value label, make sure the `enable` property inside the `lastVa
 
 ### Customization in last label
 
-The appearance of the last value label can be customized using style properties such as `font`, `background`, `border`, `dashArray`, `lineWidth`, `lineColor`, `rx`, and `ry` in the lastValueLabel property of the chart series. These settings allow you to tailor the label’s look to align with your desired visual presentation.
+The appearance of the last value label can be customized using style properties such as [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#font), [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#background), [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#border), [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#dasharray), [`lineWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#linewidth), [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#linecolor), [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#rx), and [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#ry) in the [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) property of the chart series. These settings allow you to tailor the label's look to align with your desired visual presentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -308,8 +308,6 @@ The appearance of the last value label can be customized using style properties 
 ## Prevent data label in Angular Chart component
 
 Hide data labels for points whose value is 0 using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) event. In the handler, check `args.point.y` and set `args.cancel` to `true` when it equals 0.
-
-The output will appear as follows,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

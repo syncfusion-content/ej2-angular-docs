@@ -17,6 +17,6 @@ export class AppComponent {
         items: ['CreateTable'],
     };
     public quickToolbarSettings: QuickToolbarSettingsModel = {
-        table: ['TableHeader', 'TableRemove', '|', 'TableRows', 'TableColumns', 'TableCell', '|', 'Styles', 'BackgroundColor', 'Alignments', 'TableCellVerticalAlign']
+        table: ['TableHeader', 'TableRemove', '|', 'TableRows', 'TableColumns', 'TableCell', '|', 'TableEditProperties', 'TableCellProperties', 'Styles', 'BackgroundColor', 'Alignments', 'TableCellVerticalAlign']
     };
 }

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 A 100% stacked bar chart displays horizontal stacked bars normalized to a total of 100% for each category.
 It is used to compare percentage contributions across categories.
 
-<img src="../../../../images/stacked100-bar.png" alt="Stack bar chart showing data trends over time">
+<img src="../../../../images/stacked100-bar.png" alt="100% stacked bar chart showing percentage contributions across categories">
 
 To render a [100% stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly.
 
@@ -309,7 +309,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs9" %}
 
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

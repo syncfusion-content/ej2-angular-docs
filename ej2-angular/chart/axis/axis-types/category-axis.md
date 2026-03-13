@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The category axis is used to represent string-based values instead of numeric values. It is commonly used for displaying discrete categories such as names, labels, or textual groupings along an axis.
 
-To known about category axis, you can check on this video:
+To know about category axis, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=7U7X1m_fBrA" %}
 
@@ -54,7 +54,7 @@ By default, category labels are positioned between the axis tick marks. They can
 
 ## Range
 
-The visible range of the category axis can be customized by using the  [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#interval) properties of the axis. These properties control the start value, end value, and spacing between category labels.
+The visible range of the category axis can be customized by using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#interval) properties of the axis. These properties control the start value, end value, and spacing between category labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ The visible range of the category axis can be customized by using the  [`minimum
 
 ## Indexed category axis
 
-The category axis can also be rendered based on the index values of the data source. This behavior can be enabled by setting the `isIndexed` property of the axis to **true**, which positions data points according to their index instead of their actual category values.
+The category axis can also be rendered based on the index values of the data source. This behavior can be enabled by setting the [`isIndexed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#isindexed) property of the axis to **true**, which positions data points according to their index instead of their actual category values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

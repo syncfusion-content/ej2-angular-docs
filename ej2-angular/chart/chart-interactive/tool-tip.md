@@ -18,9 +18,9 @@ The chart displays detailed information about a data point through a tooltip whe
 
 ## Default tooltip
 
-By default, tooltip is not visible. You can enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to **true** and by injecting `TooltipService` into the `NgModule.providers`.
+By default, tooltip is not visible. You can enable the tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#enable) property to **true** and by injecting `TooltipService` into the `@NgModule.providers`.
 
-To known about tooltip, you can check on this video:
+To know about tooltip, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=GaJ16060GZ8" %}
 
@@ -40,7 +40,7 @@ To known about tooltip, you can check on this video:
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#location) property.
+By default, the tooltip tracks the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#location) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,9 +78,9 @@ By default, the tooltip displays the x- and y-values of a data point. Additional
 
 <!-- markdownlint-disable MD013 -->
 
-You can format the each series tooltip separately using series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) property.
+You can format each series tooltip separately using the series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#tooltipformat) property.
 
->Note: If series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) is given, it shows the tooltip for that series in that format, or else it will take tooltip format.
+>Note: If the series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#tooltipformat) is given, it shows the tooltip for that series in that format, or else it will take the chart's global tooltip format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,7 +98,7 @@ You can format the each series tooltip separately using series [`tooltipFormat`]
 
 ## Tooltip template
 
-Custom HTML content can be rendered in the tooltip by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#template) property. The `${x}` and `${y}` placeholders can be used within the template to display the x- and y-values of the corresponding data point.
+Custom HTML content can be rendered in the tooltip using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#template) property. You can use placeholders like `${x}` and `${y}` within the template to display the x- and y-values of the corresponding data point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ By setting the [`enableHighlight`](https://ej2.syncfusion.com/angular/documentat
 
 ## Tooltip mapping name
 
-By default, the tooltip displays only the x- and y-values of a data point. Additional information from the data source can be shown by using the [`tooltipMappingName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#tooltipmappingname) property of the series. Use the `${point.tooltip}` placeholder in the tooltip format to display the mapped value.
+By default, the tooltip displays only the x- and y-values of a data point. Additional information from the data source can be shown using the [`tooltipMappingName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#tooltipmappingname) property of the series. Use the `${point.tooltip}` placeholder in the tooltip format to display the mapped value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,10 +146,12 @@ By default, the tooltip displays only the x- and y-values of a data point. Addit
 
 ## Customize the appearance of tooltip
 
-The appearance of the tooltip can be customized by using the following properties:
-- [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#fill) to set the background color
-- [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#border) to configure the tooltip border
-- [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#textstyle) to customize the tooltip text style
+The appearance of the tooltip can be customized using the following properties:
+
+- [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#fill) - Specifies the background color of the tooltip.
+- [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#border) - Configures the tooltip border.
+- [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#textstyle) - Customizes the tooltip text style.
+
 The [`highlightColor`](https://ej2.syncfusion.com/angular/documentation/api/chart#highlightcolor) property is used to change the color of a data point when it is highlighted during tooltip interaction.
 
 {% tabs %}
@@ -166,7 +168,7 @@ The [`highlightColor`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 ## Hide tooltip in Angular Chart component
 
-Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event to hide tooltips for deselected series. When a series is deselected, cancel the tooltip in the event.
+Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to hide tooltips for deselected series. When a series is deselected, cancel the tooltip in the event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -182,7 +184,7 @@ Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 ## Percentage tooltip in Angular Chart component
 
-Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event to display percentage values for pie points. Compute the percentage from `args.point.y` and `args.series.sumOfPoints`, then set the formatted result on `args.content`.
+Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to display percentage values for pie points. Compute the percentage from `args.point.y` and `args.series.sumOfPoints`, then set the formatted result on `args.content`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -198,7 +200,7 @@ Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 ## Tooltip format in Angular Chart component
 
-Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event to read the current point's x value and format it with `formatDate` for display in the tooltip.
+Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to read the current point's x value and format it with `formatDate` for display in the tooltip.
 
 The output will appear as follows,
 
@@ -247,7 +249,7 @@ Render a table in the tooltip using the tooltip template.
 
 ## Closest tooltip
 
-The [`showNearestTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#shownearesttooltip) property displays the tooltip for the data point nearest to the pointer, even when the pointer is not directly positioned over the point.
+The [`showNearestTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#shownearesttooltip) property displays the tooltip for the data point nearest to the mouse pointer, even when the pointer is not directly positioned over the point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

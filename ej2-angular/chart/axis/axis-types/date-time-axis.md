@@ -16,7 +16,7 @@ domainurl: ##DomainURL##
 
 The DateTime axis uses a date-time scale and displays date-time values as axis labels based on the specified format. This axis type is ideal for visualizing time-based data such as trends, timelines, and time-series data.
 
-To known about dateTime axis, you can check on this video:
+To know about the DateTime axis, you can watch this video:
 
 {% youtube "https://www.youtube.com/watch?v=AoxGQlE_WtE" %}
 
@@ -54,7 +54,7 @@ The DateTimeCategory axis is used to render date-time values with non-linear int
 
 ### Range
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using[`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum),[`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and[`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
+Range for an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

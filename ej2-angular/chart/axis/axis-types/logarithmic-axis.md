@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The logarithmic axis uses a logarithmic scale and is particularly useful for visualizing data that spans a wide range of values. It effectively represents datasets that include both very small values (for example, 10<sup>-6</sup>) and very large values (for example, 10<sup>6</sup>) within the same chart, improving readability and comparison.
 
-To known about logarithmic axis, you can check on this video:
+To know about logarithmic axis, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=t8HoJ8yxIdc" %}
 
@@ -30,7 +30,7 @@ To known about logarithmic axis, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/log-cs5" %}
 
-> Note: To use the logarithmic axis, inject `LogarithmicService`into the`@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype) property of the axis to `Logarithmic`.
+> Note: To use the logarithmic axis, inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype) property of the axis to `Logarithmic`.
 
 ## Range
 

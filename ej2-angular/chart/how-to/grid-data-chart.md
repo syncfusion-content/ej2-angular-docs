@@ -10,18 +10,18 @@ domainurl: ##DomainURL##
 
 # Grid data chart in Angular Chart component
 
-You can visualize the data that returned by grid in chart.
+You can visualize the data that is returned by the grid in the chart.
 
-To visualize the data in chart, follow the given steps:
+To visualize the data in the chart, follow the given steps:
 
 **Step 1**:
 
-Initialize the grid with datasource.
+Initialize the grid with a `dataSource`.
 
 **Step 2**:
 
-By using the grid’s `actionComplete` event and `getCurrentViewRecords` method, you can get the current page records.
-By using the grid’s `databound` event, you can update the current page records into the chart’s datasource and visualize the grid data in chart.
+By using the grid's [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event and [`getCurrentViewRecords`](https://ej2.syncfusion.com/angular/documentation/api/grid#getcurrentviewrecords) method, you can get the current page records whenever paging, sorting, or filtering occurs.
+By using the grid's [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event, you can update the current page records into the chart's `dataSource` and visualize the grid data in the chart on initial load.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

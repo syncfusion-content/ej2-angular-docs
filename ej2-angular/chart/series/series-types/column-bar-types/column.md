@@ -20,7 +20,7 @@ To render a [column](https://www.syncfusion.com/angular-components/angular-chart
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `Column` in your chart configuration. This indicates that the data should be represented as a column chart, which is ideal for visualizing for comparing different categories of data or tracking changes over time.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Column` in your chart configuration. This indicates that the data should be represented as a column chart, which is ideal for comparing different categories of data or tracking changes over time.
 
 2. **Inject the ColumnSeries module**: Use the `@NgModule.providers` method to inject the `ColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering column series are available in your chart.
 
@@ -144,7 +144,7 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 ## Column spacing and width
 
-Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property in the series to adjust the space between columns.
+Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnspacing) property in the series to adjust the space between columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +289,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 **Border**
 
-Use the [`border`](../../api/chart/emptyPointSettings#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -309,7 +309,7 @@ Use the [`border`](../../api/chart/emptyPointSettings#border) property to custom
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) property in the chart series is used to customize the corner radius for column series. This allows you to create columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the columns using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -392,6 +392,6 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
 * [Apply Corner Radius to Specific Points in Column Series](https://support.syncfusion.com/kb/article/21476/how-to-apply-rounded-corners-to-column-series-points-in-angular-chart)

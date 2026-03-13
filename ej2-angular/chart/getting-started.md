@@ -119,13 +119,25 @@ For applications not compiled with Ivy, use the `ngcc` tagged packages:
 
 > The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
 
-```bash		
-npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc		
+```bash
+npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc
+```
+
+Or add the dependency to `package.json`:
+
+```json
+{
+  "dependencies": {
+    "@syncfusion/ej2-angular-charts": "32.1.19-ngcc"
+  }
+}
 ```
 
 ## Add Chart component
 
 Modify the template in `app.component.ts` file to render the Charts component `[src/app/app.component.ts]`.
+
+Note: `ChartAllModule` exports all chart feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `LineSeriesService`, `LegendService`, etc.). `ChartModule` is the core module; `ChartAllModule` bundles all features for convenience.
 
 ```javascript
 

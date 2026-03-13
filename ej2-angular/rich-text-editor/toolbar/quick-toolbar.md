@@ -16,7 +16,7 @@ The Rich Text Editor has quick toolbars that act as context-menus, appearing whe
 
 ## Image quick toolbar
 
-Customize the image quick toolbar using the `image` property in [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#image). The Rich Text Editor provides essential tools such as "Replace", "Align", "Caption", "Remove", "InsertLink", "Display", "AltText", and "Dimension", "OpenImageLink", "EditImageLink", "RemoveImageLink", allowing seamless image management and editing directly within the content.
+Customize the image quick toolbar using the `image` property in [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#image). The Rich Text Editor provides essential tools such as "Replace", "Align", "WrapText", "Caption", "Remove", "InsertLink", "Display", "AltText", and "Dimension", "OpenImageLink", "EditImageLink", "RemoveImageLink", allowing seamless image management and editing directly within the content.
 
 By configuring these options in the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings) property, you can enhance the editor’s functionality, ensuring a user-friendly experience for efficiently handling image elements.
 
@@ -56,7 +56,7 @@ The following example demonstrates how to customize the link quick toolbar using
 
 The table quick toolbar opens when you click anywhere within a table. Customize its items using the `table` property in the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table). 
 
-The Rich Text Editor provides essential tools in the table quick toolbar, such as 'Tableheader', 'TableRemove', 'TableRows', 'TableColumns', 'TableCell', 'Styles', 'BackgroundColor', 'Alignments', 'TableCellVerticalAlign'.
+The Rich Text Editor provides essential tools in the table quick toolbar, such as 'Tableheader', 'TableRemove', 'TableRows', 'TableColumns', 'TableCell', 'Styles', 'BackgroundColor', 'Alignments', 'TableCellVerticalAlign', 'TableEditProperties', 'TableCellProperties'.
 
 The following example demonstrates how to customize the table quick toolbar using the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings) property.
 

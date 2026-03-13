@@ -18,9 +18,9 @@ Pareto charts are used to find the cumulative values of data in different catego
 
 To render a `pareto` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Pareto` in your chart configuration. This indicates that the data should be represented as a pareto chart, will use a combination of column and line series.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Pareto` in your chart configuration. This indicates that the data should be represented as a Pareto chart, which uses a combination of column and line series.
 
-2. **Inject the necessary modules**: Use the `@NgModule.providers` method to inject the `ParetoSeriesServices`, `ColumnSeriesServices`, `LineSeriesServices` modules into your chart. This step is essential, as it ensures that the necessary functionalities for rendering pareto series are available in your chart.
+2. **Inject the necessary modules**: Use the `@NgModule.providers` method to inject the `ParetoSeriesServices`, `ColumnSeriesServices`, `LineSeriesServices` modules into your chart. This step is essential, as it ensures that the necessary functionalities for rendering Pareto series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ To render a `pareto` series in your chart, you need to follow a few steps to con
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`]([../../api/chart/series/#datasource](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource)) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ You can bind data to the chart using the [`dataSource`]([../../api/chart/series/
 
 ### Fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#fill) property to apply a color to the pareto line. By default, a color based on the theme is used.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#fill) property to apply a color to the Pareto line. By default, a color based on the theme is used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/pare
 
 ### Width
 
-Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#width) property to control the thickness of the line for the pareto series, which affects its visual weight on the chart.
+Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#width) property to control the thickness of the line for the Pareto series, which affects its visual weight on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/par
 
 ### Dash array
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#dasharray) property determines the pattern of dashes and gaps in the pareto line series.
+The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#dasharray) property determines the pattern of dashes and gaps in the Pareto line series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +123,7 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/paret
 
 ### Marker
 
-Use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#marker) property to display and customize markers for individual points in a pareto line.
+Use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#marker) property to display and customize markers for individual points in a Pareto line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +143,7 @@ Use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/pa
 
 ### Show axis
 
-Use the [`showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#showaxis) property to show or hide the secondary axis for the pareto series.
+Use the [`showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#showaxis) property to show or hide the secondary axis for the Pareto series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,7 +229,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,7 +249,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -267,7 +267,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs30" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

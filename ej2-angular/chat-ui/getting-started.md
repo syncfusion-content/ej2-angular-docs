@@ -89,13 +89,13 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 This can be referenced in [src/styles.css] using following code.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material3.css';
 ```
 
 ## Adding Chat UI component

@@ -21,7 +21,7 @@ Charts support six types of trendlines: **Linear**, **Exponential**, **Logarithm
 
 ## Linear
 
-A linear trendline is a straight, best‑fit line used to describe data with a constant rate of increase or decrease. Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline#type) to `Linear` and inject the `Trendlines` module using `Chart.Inject(Trendlines)`.
+A linear trendline is a straight, best‑fit line used to describe data with a constant rate of increase or decrease. Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Linear` and inject the `TrendlinesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +39,7 @@ A linear trendline is a straight, best‑fit line used to describe data with a c
 
 An exponential trendline displays a curved pattern useful when data rises or falls at increasing rates. Exponential trendlines cannot be generated if the dataset includes zero or negative values.
 
-Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Exponential` and inject the `Trendlines` module.
+Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Exponential` and inject the `TrendlinesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,9 +57,7 @@ Set the trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/
 
 A logarithmic trendline is a best‑fit curved line suitable when the data increases or decreases quickly and then stabilizes. It supports both positive and negative values.
 
-A logarithmic trendline can use negative and/or positive values.
-
-Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline#type) to `Logarithmic` and inject the `Trendlines` module.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Logarithmic` and inject the `TrendlinesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,9 +75,7 @@ Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlin
 
 A polynomial trendline is useful when data fluctuates. It uses a curved line that can model more complex datasets.
 
-Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Polynomial` and inject the `Trendlines` module. Use [`polynomialOrder`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#polynomialorder) to define the degree of the polynomial.
-
-`polynomialOrder` used to define the polynomial value.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Polynomial` and inject the `TrendlinesService` into the `@NgModule.providers`. Use [`polynomialOrder`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#polynomialorder) to define the degree of the polynomial.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +93,7 @@ Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlin
 
 A power trendline is ideal for datasets where measurements increase at a constant rate. It displays a curved line that best fits exponential growth or decay patterns.
 
-Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Power` and inject the `Trendlines` module.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `Power` and inject the `TrendlinesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,9 +111,7 @@ Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlin
 
 A moving average trendline smooths fluctuations to reveal overall trends more clearly. The [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#period) property specifies the number of data points used to calculate each average.
 
-Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `MovingAverage` and inject the `Trendlines` module.
-
-`period` property defines the period to find the moving average.
+Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendlineModel#type) to `MovingAverage` and inject the `TrendlinesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

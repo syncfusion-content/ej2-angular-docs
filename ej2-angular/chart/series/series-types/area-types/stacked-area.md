@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 A 100% stacked area chart normalizes stacked values so the total is always 100% at each point.
 It is used to compare the percentage contribution of each series over time.
 
-<img src="../../../../images/stacked100-area.png" alt="Stack Area chart showing data trends over time">
+<img src="../../../../images/stacked100-area.png" alt="100% Stacked Area chart showing data trends over time">
 
 To render a [100% stacked area](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-area-chart) series in your chart, you need to follow a few steps to configure it correctly.
 
@@ -250,5 +250,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

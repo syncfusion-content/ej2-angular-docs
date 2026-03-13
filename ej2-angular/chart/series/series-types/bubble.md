@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 ## Bubble
 
-A bubble series displays data as bubbles whose radii are proportional to a third value (z-value), positioned based on the given x and y values.
+A bubble series displays data as bubbles where the size of each bubble is proportional to a third value (z-value), and the position is determined by the x and y values.
 
-<img src="../../../../images/bubble.png" alt="Bubble chart visualizing data with three dimensions">
+<img src="../../../../images/bubble.png" alt="Bubble chart displaying data points with varying sizes representing three-dimensional data">
 
 To render a [bubble](https://www.syncfusion.com/angular-components/angular-charts/chart-types/bubble-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Bubble` in your chart configuration. This indicates that the data should be displayed as a bubble series in the chart.
 
-2. **Inject the BubbleSeries module**: Use the `@NgModule.providers` method to inject the `BubbleSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
+2. **Inject the BubbleSeries module**: Inject the `BubbleSeriesService` into your chart using the `@NgModule.providers` array. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ To render a [bubble](https://www.syncfusion.com/angular-components/angular-chart
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname), and [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#size) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ The following properties can be used to customize the `bubble` series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +84,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,7 +128,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,5 +230,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

@@ -14,14 +14,13 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-The Angular Chart component supports horizontal and vertical strip lines, providing visual guides to highlight specific ranges in the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements. To use strip line features, inject `StriplineService`into the `@NgModule.providers`
+The Angular Chart component supports horizontal and vertical strip lines, providing visual guides to highlight specific ranges in the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements. To use strip line features, inject `StriplineService` into the `@NgModule.providers`.
 
 <img src="../../images/stripline.png" alt="Chart with striplines emphasizing ranges">
 
 ## Horizontal Strip lines
 
-Horizontal strip lines are created by adding the `stripline` configuration to the vertical axis and setting the `visible` property to `true`. They highlight horizontal ranges in the chart, and multiple strip lines can be added to the same axis.
-
+Horizontal strip lines are created by adding the [`stripline`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) configuration to the vertical axis and setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#visible) property to `true`. They highlight horizontal ranges in the chart, and multiple strip lines can be added to the same axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +36,7 @@ Horizontal strip lines are created by adding the `stripline` configuration to th
 
 ## Vertical Striplines
 
-Vertical strip lines are created by adding the `stripline` configuration to the horizontal axis and enabling the `visible` property. They highlight vertical regions in the chart and support multiple entries for an axis.
+Vertical strip lines are created by adding the [`stripline`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) configuration to the horizontal axis and enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#visible) property. They highlight vertical regions in the chart and support multiple entries for an axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,7 +52,7 @@ Vertical strip lines are created by adding the `stripline` configuration to the 
 
 ## Stripline as band and line
 
-We can utilize the stripline to visualize both the frequency band and transmission line characteristics by specifying its [start](https://ej2.syncfusion.com/angular/documentation/api/chart/striplinesettingsmodel#start) and [end](https://ej2.syncfusion.com/angular/documentation/api/chart/striplinesettingsmodel#end) properties in `StripLineSettingsModel`.
+You can utilize the stripline to visualize both the frequency band and transmission line characteristics by specifying its [`start`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#start) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#end) properties in [`StripLineSettingsModel`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,12 +69,12 @@ We can utilize the stripline to visualize both the frequency band and transmissi
 ## Customize the strip line
 
 Strip lines can be customized to highlight specific regions more effectively:
-- Use `start` to set the beginning value of the strip line.
-- Use `end` to define the ending value.
-- Use `startFromOrigin` to begin the strip line from the axis origin.
-- Use `size` to specify the strip line height or width (based on orientation).
-- Use `border` to customize border appearance.
-- Use `zIndex` to control whether the strip line appears behind or above chart series.
+- Use [`start`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#start) to set the beginning value of the strip line.
+- Use [`end`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#end) to define the ending value.
+- Use [`startFromOrigin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#startfromorigin) to begin the strip line from the axis origin.
+- Use [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#size) to specify the strip line height or width (based on orientation).
+- Use [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#border) to customize border appearance.
+- Use [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#zindex) to control whether the strip line appears behind or above chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,9 +91,9 @@ Strip lines can be customized to highlight specific regions more effectively:
 ## Customize the stripline text
 
 Strip line text labels can be customized for readability and visual presentation:
-- Use `textStyle` to set text appearance.
-- Use `rotation` to rotate the strip line text.
-- Use `horizontalAlignment` and `verticalAlignment` to adjust label placement.
+- Use [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#textstyle) to set text appearance.
+- Use [`rotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#rotation) to rotate the strip line text.
+- Use [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#verticalalignment) to adjust label placement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,7 +109,7 @@ Strip line text labels can be customized for readability and visual presentation
 
 ## Dash Array
 
-Dashed strip lines can be rendered using the `dashArray` property. The dash pattern is defined using a series of numbers representing dash and gap lengths.
+Dashed strip lines can be rendered using the [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#dasharray) property. The dash pattern is defined using a series of numbers representing dash and gap lengths.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,11 +125,11 @@ Dashed strip lines can be rendered using the `dashArray` property. The dash patt
 
 ## Recurrence Stripline
 
-The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+Strip lines can be drawn repeatedly at regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
-* `isRepeat`       - It is used for enable / disable the recurrence strip line.
-* `repeatEvery`    - It is used for mention the stripline interval.
-* `repeatUntil`    - It specifies the end value at which point strip line has to stop repeating.
+* [`isRepeat`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#isrepeat) - It is used to enable / disable the recurrence strip line.
+* [`repeatEvery`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#repeatevery) - It is used to mention the stripline interval.
+* [`repeatUntil`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#repeatuntil) - It specifies the end value at which point strip line has to stop repeating.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,7 +145,7 @@ The strip lines to be drawn repeatedly at the regular intervals – this will be
 
 ## Size Type
 
-The `sizeType` property determines how strip line size is interpreted. Supported units include:
+The [`sizeType`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#sizetype) property determines how strip line size is interpreted. Supported units include:
 
 * `Auto`
 * `Pixel`
@@ -171,12 +170,12 @@ The `sizeType` property determines how strip line size is interpreted. Supported
 
 ## Segment stripline
 
-You can create stripline in a particular region with respect to segment. You can enable the segment stripline using `isSegmented` property. The start and end value of this type of stripline can be defined using `segmentStart` and `segmentEnd` properties.
+You can create stripline in a particular region with respect to segment. You can enable the segment stripline using [`isSegmented`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#issegmented) property. The start and end value of this type of stripline can be defined using [`segmentStart`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#segmentstart) and [`segmentEnd`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#segmentend) properties.
 
-* `isSegmented`     - It is used for enable the segment stripline.
-* `segmentStart`    - Used to change the segment start value. Value correspond to associated axis.
-* `segmentEnd`      - Used to change the segment end value. Value correspond to associated axis.
-* `segmentAxisName` - Used to specify the name of the associated axis.
+* [`isSegmented`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#issegmented) - It is used to enable the segment stripline.
+* [`segmentStart`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#segmentstart) - Used to change the segment start value. Value correspond to associated axis.
+* [`segmentEnd`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#segmentend) - Used to change the segment end value. Value correspond to associated axis.
+* [`segmentAxisName`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#segmentaxisname) - Used to specify the name of the associated axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,4 +191,4 @@ You can create stripline in a particular region with respect to segment. You can
 
 ## See Also
 
-* [Mark the threshold in chart](./how-to/threshold#mark-a-threshold-in-chart)
+* [Mark the threshold in chart](../how-to/threshold#mark-a-threshold-in-chart)

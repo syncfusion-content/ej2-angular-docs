@@ -29,7 +29,7 @@ The series are rendered in the order as it is added to the series array.
 
 ## Combination Series
 
-Combination of different types like Line, column etc, can be rendered in a chart.
+Combinations of different types like Line, Column, etc., can be rendered in a chart.
 
 >Bar series cannot be combined with any other series as the axis orientation is different from other series.
 
@@ -47,7 +47,7 @@ Combination of different types like Line, column etc, can be rendered in a chart
 
 ## Enable Complex Property in Series
 
-By setting `enableComplexProperty` value as `true` in series you can bind complex data to the chart.
+By setting the [`enableComplexProperty`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#enablecomplexproperty) value as `true` in series, you can bind complex data to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -16,12 +16,14 @@ Synchronized charts allow multiple chart instances to share common interactions 
 
 ## Tooltip synchronization
 
-The tooltip can be synchronized across multiple charts using the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/#showtooltip) and [`hideTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/#hidetooltip) methods. When we hover over a data point in one chart, we call the `showTooltip` method for the other charts to display related information in other connected charts simultaneously.
+The tooltip can be synchronized across multiple charts using the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart#showtooltip) and [`hideTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart#hidetooltip) methods. When you hover over a data point in one chart, the `showTooltip` method can be called for the other charts to display related information in other connected charts simultaneously.
 
-In the `showTooltip` method, specify the following parameters programmatically to enable tooltip for a particular chart:
+To use tooltip synchronization, inject the `TooltipService` into the `@NgModule.providers`.
 
-* `x` - Data point x-value or x-coordinate value.
-* `y` - Data point y-value or y-coordinate value.
+In the `showTooltip` method, specify the following parameters programmatically to enable the tooltip for a particular chart:
+
+* `x` - Specifies the data point x-value or x-coordinate value.
+* `y` - Specifies the data point y-value or y-coordinate value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,9 +39,11 @@ In the `showTooltip` method, specify the following parameters programmatically t
 
 ## Crosshair synchronization
 
-The crosshair can be synchronized across multiple charts using the [`showCrosshair`](https://ej2.syncfusion.com/angular/documentation/api/chart/#showcrosshair) and [`hideCrosshair`](https://ej2.syncfusion.com/angular/documentation/api/chart/#hidecrosshair) methods. When we hover over one chart, we call the `showCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
+The crosshair can be synchronized across multiple charts using the [`showCrosshair`](https://ej2.syncfusion.com/angular/documentation/api/chart#showcrosshair) and [`hideCrosshair`](https://ej2.syncfusion.com/angular/documentation/api/chart#hidecrosshair) methods. When you hover over one chart, the `showCrosshair` method can be called for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
 
-In the `showCrosshair` method, specify the following parameters programmatically to enable crosshair for a particular chart:
+To use crosshair synchronization, inject the `CrosshairService` into the `@NgModule.providers`.
+
+In the `showCrosshair` method, specify the following parameters programmatically to enable the crosshair for a particular chart:
 
 * `x` - Specifies the x-value of the point or x-coordinate.
 * `y` - Specifies the y-value of the point or y-coordinate.
@@ -58,8 +62,9 @@ In the `showCrosshair` method, specify the following parameters programmatically
 
 ## Zooming synchronization
 
-Zoom levels can be synchronized across multiple charts by using the [`zoomComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs) event. In the `zoomComplete` event, retrieve the [`zoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs#currentzoomfactor) and [`zoomPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs#currentzoomposition) values from the zoomed chart.
-These values can then be applied to the other charts to ensure that all synchronized charts maintain the same zoom state during user interaction.
+Zoom levels can be synchronized across multiple charts using the [`zoomComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs) event. In the `zoomComplete` event, retrieve the [`currentZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs#currentzoomfactor) and [`currentZoomPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/iZoomCompleteEventArgs#currentzoomposition) values from the zoomed chart. These values can then be applied to the other charts using the [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettings) property to ensure that all synchronized charts maintain the same zoom state during user interaction.
+
+To use zooming synchronization, inject the `ZoomService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,8 +80,9 @@ These values can then be applied to the other charts to ensure that all synchron
 
 ## Selection synchronization
 
-Selection can be synchronized across multiple charts by using the [`selectionComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSelectionCompleteEventArgs) event. In the `selectionComplete` event, retrieve the selected data values or region from the active chart and apply the same selection state to the other charts.
-This ensures consistent selection behavior across all connected charts and helps maintain a unified analysis experience.
+Selection can be synchronized across multiple charts using the [`selectionComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSelectionCompleteEventArgs) event. In the `selectionComplete` event, retrieve the selected data values or region from the active chart and apply the same selection state to the other charts. This ensures consistent selection behavior across all connected charts and helps maintain a unified analysis experience.
+
+To use selection synchronization, inject the `SelectionService` into the `@NgModule.providers`. Additionally, enable selection by setting the [`selectionMode`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#selectionmode) property in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

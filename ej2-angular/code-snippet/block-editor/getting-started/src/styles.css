@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import 'node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-angular-blockeditor/styles/tailwind3.css';
+@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-lists/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import 'node_modules/@syncfusion/ej2-angular-blockeditor/styles/material3.css';
 
 #container {
     margin: 50px;

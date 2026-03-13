@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Radar
 
-A radar chart displays values on multiple axes arranged radially around a center point.
-It compares multiple variables across categories in a star‑shaped form.
+A radar chart displays values on multiple axes arranged radially around a center point. It compares multiple variables across categories in a star-shaped form.
 
 <img src="../../../../images/radar.png" alt="Radar chart comparing multivariate data">
 
@@ -41,7 +40,7 @@ To render a [radar](https://www.syncfusion.com/angular-components/angular-charts
 
 ### Draw type
 
-Similar to the polar chart, use the [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#drawtype) property to change the series plotting type in a Radar chart to line, column, area, range column, spline, scatter, stacking area, spline area, or stacking column. The default value of `drawType` is `Line`.
+Similar to the polar chart, use the [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#drawtype) property to change the series plotting type in a radar chart to `Line`, `Column`, `Area`, `RangeColumn`, `Spline`, `Scatter`, `StackingArea`, `SplineArea`, or `StackingColumn`. The default value of `drawType` is `Line`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,9 +80,9 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-### Start Angle
+### Start angle
 
-You can customize the start angle of the radar series using [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
+You can customize the start angle of the radar series using the [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,7 +102,7 @@ You can customize the start angle of the radar series using [`startAngle`](https
 
 ### Radius
 
-You can customize the radius of the radar series using [`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property. By default, `coefficient` is 100.
+You can customize the radius of the radar series using the [`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property. By default, `coefficient` is 100.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,7 +188,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs/) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,7 +208,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkl
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,5 +228,5 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../../chart-elements/data-labels)
+* [Tooltip](../../chart-interactive/tool-tip)

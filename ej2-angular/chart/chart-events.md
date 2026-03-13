@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart Event
+# Chart Event in Angular Chart Component
 
-Chart events are callback functions that the Syncfusion EJ2 Chart component triggers at different stages of its lifecycle. They allow developers to respond to user interactions, customize rendering, control behavior, and extend chart functionality without modifying the core control.These events enable developers to implement custom logic, enhance interactivity, and tailor the chart's behavior to specific requirements, thereby providing a more dynamic and responsive user experience.
+Chart events are callback functions that the Syncfusion EJ2 Chart component triggers at different stages of its life cycle. They allow developers to respond to user interactions, customize rendering, control behavior, and extend chart functionality without modifying the core control. These events enable developers to implement custom logic, enhance interactivity, and tailor the chart's behavior to specific requirements, thereby providing a more dynamic and responsive user experience.
 
 
 ## Animation
@@ -500,7 +500,7 @@ The chartDoubleClick event will be triggered when a double-click occurs within t
 
 {% previewsample "page.domainurl/samples/chart/chart-events/chartDoubleClick" %}
 
-## Lifecycle and Layout
+## Life cycle and Layout
 
 ### load
 Before the chart starts initial rendering, the load event will be triggered. Use this event to set themes, localization, palettes, or modify chart/series properties programmatically prior to rendering. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iloadedeventargs).
@@ -563,7 +563,7 @@ After the chart has been resized, the resized event will be triggered. To know m
 {% previewsample "page.domainurl/samples/chart/chart-events/resized" %}
 
 ### beforePrint
-The beforePrint event will be triggered before the chart is printed, providing access to the HTML content being printed. To know more about the arguments of this event, refer the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iprinteventargs).
+The beforePrint event will be triggered before the chart is printed, providing access to the HTML content being printed. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iprinteventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

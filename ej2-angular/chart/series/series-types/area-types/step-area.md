@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 ## Step Area
 
-A step area chart fills the area under a step line, forming block‑like segments.
+A step area chart fills the area under a step line, forming block-like segments.
 
 <img src="../../../../images/step-area.png" alt="Step Area chart showing data trends over time">
 
@@ -19,7 +19,7 @@ To render a [step area](https://www.syncfusion.com/angular-components/angular-ch
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step like appearance.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step-like appearance.
 
 2. **Inject the StepAreaSeries module**: Use the `@NgModule.providers` method to inject the `StepAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step area series are available in your chart.
 
@@ -65,7 +65,7 @@ The following properties can be used to customize the `step area` series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the step area series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the step area series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,7 +103,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +123,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Border**
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color, and dasharray of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +289,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs9" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)

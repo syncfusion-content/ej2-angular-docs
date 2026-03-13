@@ -21,7 +21,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `RangeStepArea` in your chart configuration. This indicates that the data should be represented as a range step area chart, which is ideal for displaying data points as a range with high and low values. It connects these points with vertical and horizontal lines, creating a step like appearance.
 
-2. **Inject the RangeStepAreaSeries module**: Use the `@NgModule.providers` method to inject the `RangeAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range step area series are available in your chart.
+2. **Inject the RangeStepAreaSeries module**: Use the `@NgModule.providers` method to inject the `RangeStepAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range step area series are available in your chart.
 
 3. **Provide high and low values**: The `RangeStepArea` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the area for each point on the chart.
 
@@ -108,7 +108,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Border**
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color, and dasharray of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +234,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/iSeriesRenderingEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,7 +272,7 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/rangesteparea-cs9" %}
 
-## See also
+## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
