@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Footer aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Footer Aggregate | Syncfusion
+description: Angular Grid footer aggregate enables setting footer values, applying formatting, and combining multiple aggregates for each column.
+control: Footer aggregate
 platform: ej2-angular
 control: Footer aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Footer aggregate in Angular Grid component
+# Footer Aggregate in Angular Grid Component
 
-The Syncfusion Angular Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) property to render the aggregate value in the footer cells.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports calculating and displaying aggregate values in the footer cells. These footer aggregates are computed from all rows in the grid. The [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate) property can be used to customize the rendering of aggregate values in the footer cells, allowing formatted text or custom layouts to be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,12 +53,12 @@ The Syncfusion Angular Grid component allows you to calculate and display aggreg
   
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs1" %}
 
-> * Use the template reference variable name **#footerTemplate** to specify the footer template.
-> * Inside the template, access the aggregate values using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name. For example, to access the sum and max aggregate values, use **data.sum** and **data.max**.
 
-## Format the aggregate value
+> Inside the template, access each aggregate value using its [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) name. For example, use `props.Sum` to read the sum aggregate.
 
-To format the aggregate value result in the Syncfusion Angular Grid component, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+## Format aggregate value
+
+Aggregate values displayed in footer cells can be formatted using the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#format) property of the `AggregateColumnDirective`. This property accepts a format string that defines the appearance of the aggregate value, such as specifying currency, number of decimal places, or percentage format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,11 +100,9 @@ To format the aggregate value result in the Syncfusion Angular Grid component, y
   
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs2" %}
 
-## How to place aggregates on top of the Grid
+## Display aggregates in the header
 
-By default, the aggregated values are placed at the bottom of the footer section. It is possible to place the aggregated values at the top of the header. This is achieved by using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event, [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadercontent), and [getFooterContent](https://ej2.syncfusion.com/angular/documentation/api/grid/#getfootercontent) methods of the Grid.
-
-In the following, footer content is appended to the header content using the `dataBound` event of the Grid.
+By default, aggregate values are displayed at the bottom of the grid in the footer section. It is also possible to place these values at the top of the header. This can be achieved by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event of the Grid and using the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadercontent), and [getFooterContent](https://ej2.syncfusion.com/angular/documentation/api/grid#getfootercontent) methods. In this approach, the footer content is programmatically appended to the header content once the grid has finished rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,3 +167,9 @@ export class AppComponent implements OnInit {
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs3" %}
+
+## See also
+- [Aggregates overview](./aggregates)
+- [Group and caption aggregates](./group-and-caption-aggregate)
+- [Reactive aggregates](./reactive-aggregate)
+- [Aggregates API](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn)

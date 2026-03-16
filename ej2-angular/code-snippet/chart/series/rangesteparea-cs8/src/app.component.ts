@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
-import { AreaSeriesService, RangeStepAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService, 
+import { AreaSeriesService, RangeStepAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
     DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
 import { chartData } from './datasource'
 
@@ -50,6 +48,3 @@ export class AppComponent implements OnInit {
         args.fill = '#ff6347';
     }
 }
-
-
-

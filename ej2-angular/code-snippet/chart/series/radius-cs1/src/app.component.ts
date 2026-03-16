@@ -1,13 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule, ExportService } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import {
-    AccumulationChart, AccumulationChartComponent, 
+    AccumulationChart, AccumulationChartComponent,
      IAccLoadedEventArgs} from '@syncfusion/ej2-angular-charts';
 
 @Component({

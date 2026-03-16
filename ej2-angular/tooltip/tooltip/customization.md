@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Tooltip component
 
-The Tooltip can be customized by using the `cssClass` property, which accepts custom CSS class names that define specific user-defined styles and themes to be applied on the Tooltip element.
+Customize the tooltip using the `cssClass` property, which accepts custom CSS class names to apply user-defined styles and themes to the tooltip element.
 
 ## Tip pointer customization
 
-Styling the tip pointer's size, background, and border colors can be done using the `cssClass` property, as given below.
+Style the tip pointer's size, background, and border colors using the `cssClass` property as shown below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,8 +30,7 @@ Styling the tip pointer's size, background, and border colors can be done using 
 
 ## Tooltip customization
 
-The complete look and feel of the Tooltip can be customized by changing it's background color, opacity, content font, etc.
-The following code example shows the way to achieve it.
+Customize the tooltip's complete appearance by changing its background color, opacity, content font, and more. The following code example shows how to achieve this.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

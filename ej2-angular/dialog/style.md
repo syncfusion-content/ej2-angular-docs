@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style in Angular Dialog component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following CSS structure can be used to customize the dialog component's appearance based on your requirements.
 
 ## Customizing the dialog header
 

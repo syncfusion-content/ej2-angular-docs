@@ -854,7 +854,7 @@ Open **http://localhost:4200** in the browser.
 
 ## Complete sample repository
 
-A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/connecting-databases-to-angular-grid/tree/master/Binding_Next_JS_Server) repository.
+A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-nextjs-server) repository.
   
 The application now provides a complete solution for integrating the Syncfusion Angular Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
 

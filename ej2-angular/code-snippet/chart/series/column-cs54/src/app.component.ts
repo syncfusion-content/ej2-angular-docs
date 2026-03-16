@@ -1,10 +1,8 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { ViewChild } from '@angular/core'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService,
     ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
  } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -15,7 +13,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService, 
+providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService,
         ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
 standalone: true,
     selector: 'app-container',
@@ -25,7 +23,7 @@ standalone: true,
         </e-series-collection>
         <ng-template #noDataTemplate>
                 <div id="noDataTemplateContainer">
-                    <div class="template-align">    
+                    <div class="template-align">
                         <img src="./no-data.png" alt="No Data"/>
                     </div>
                     <div class="template-align">
@@ -44,7 +42,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public data: Object[] = [];
     public chartData?: Object[];
-    
+
     ngOnInit(): void {
         this.chartData = [];
         this.primaryXAxis = {

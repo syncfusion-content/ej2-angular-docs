@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular TextBox component
+# Validation in Angular TextBox Component
 
 The Angular TextBox component provides visual feedback for form validation through three distinct validation states: `error`, `warning`, and `success`. These visual states help users understand the validation status of their input and improve the overall form experience.
 
@@ -34,7 +34,7 @@ The TextBox component supports visual validation states that can be applied by a
 
 ## Adding Mandatory Asterisk to Labels
 
-For required fields, add a visual asterisk indicator to placeholder text and float labels using CSS. This provides clear visual cues about mandatory form fields.
+For required fields, add a visual asterisk indicator to placeholder text and floating labels using CSS. This provides clear visual cues about mandatory form fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

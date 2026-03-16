@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display numeric keypad when focus on mobile devices in Angular Maskedtextbox component
+# Display numeric keypad on mobile devices in Angular MaskedTextBox component
 
-By default, on focusing the MaskedTextBox, alphanumeric keypad will be displayed on mobile devices. Sometimes only numeric keypad for number values is needed, and this can be achieved by setting "type" property to `tel`.
-Refer to the following example to enable numeric keypad in MaskedTextBox.
+By default, the MaskedTextBox displays an alphanumeric keypad when focused on mobile devices. To display only a numeric keypad, set the `type` property to `tel`. The following example demonstrates how to enable the numeric keypad in the MaskedTextBox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

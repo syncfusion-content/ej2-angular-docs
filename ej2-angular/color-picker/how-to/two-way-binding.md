@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding in Angular Color picker component
+# Two-way binding in Angular Color picker component
 
-ColorPicker component supports two-way property binding.
+The ColorPicker component supports two-way property binding, allowing the color value to synchronize between the ColorPicker and other components in real time.
 
-The steps to perform two-way binding.
+## Implementing two-way binding
 
-* Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property as like the below code snippet.
+* Create a [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and bind the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property using two-way binding as shown in the following code snippet.
 
   ```
 
@@ -22,7 +22,7 @@ The steps to perform two-way binding.
 
   ```
 
-* Create text box and bind the value using ngModel.
+* Create a text input and bind the same value property using `ngModel`.
 
   ```
 
@@ -30,9 +30,9 @@ The steps to perform two-way binding.
 
   ```
 
-* And name the same variable name in both color picker and text box. Which will help to view the two-way binding i.e. changing value in color picker will change the textbox value and vice versa.
+* Use the same variable name in both the ColorPicker and text input. This synchronizes the value: changing the color in the ColorPicker updates the text input, and editing the text input updates the ColorPicker.
 
-* Initialize the value of the variable in component file, while will be bound to color picker and text box initially. The values will be changed synchronously while changing any one (color picker or text-box) value.
+* Initialize the variable value in the component file. This value is bound to both the ColorPicker and text input. Any change to either component automatically updates the other.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,4 +50,4 @@ The steps to perform two-way binding.
   
 {% previewsample "page.domainurl/samples/colorpicker/ng-model-cs1" %}
 
->> By default, the selected color value returns 8 digit hex code in [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property. Some browser like IE won't support the 8 digit hex code. In such case, you can use getter setter method to change the value to supported format as like the above sample.
+> By default, the selected color value returns an 8-digit hex code (with alpha channel) in the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property. Some browsers, such as Internet Explorer, do not support 8-digit hex codes. In such cases, use getter and setter methods to convert the value to a compatible format, as shown in the sample above.

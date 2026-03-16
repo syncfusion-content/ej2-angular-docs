@@ -1,18 +1,24 @@
 ---
 layout: post
-title: Column reorder in Angular Grid component | Syncfusion
-description: Learn here all about Column reorder in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Column Reorder | Syncfusion
+description: Angular Grid column reorder enables drag‑and‑drop movement, configurable restrictions, and events to track and persist updated column order.
 platform: ej2-angular
 control: Column reorder 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column reorder in Angular Grid component
+# Column Reorder in Angular Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows reordering columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the **ReorderService** in the provider section of **AppModule**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` in the provider section of **AppModule**.
 
-To reorder the columns, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowreordering) property to **true** in the grid.
+To enable column reordering in the Grid, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property to `true` in the grid.
+
+Once enabled, columns can be reordered by:
+
+- Selecting a column header.
+- Dragging it to the desired position.
+- Dropping it at the new position to update the order.
 
 The following example demonstrates column reordering in the Grid component:
 
@@ -28,14 +34,14 @@ The following example demonstrates column reordering in the Grid component:
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs1" %}
 
->* The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) events.
->* When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
+> * The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrop) events.
+> * When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
 
 ## Prevent reordering for particular column
 
-By default, all columns in the Syncfusion Angular Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that should not be reordered. In such cases, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
+By default, all columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can be reordered when the grid-level [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property is set to `true`. However, there may be specific columns that should remain in a fixed position and not be reordered. To prevent reordering for a particular column, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowreordering) property of that column to `false` in the column definition.
 
-In this example, the **ShipCity** column is prevented from being reordered by setting the `allowReordering` property to **false**:
+In the following example, the "ShipCity" column is prevented from being reordered by setting its [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowreordering) property to `false`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,20 +57,23 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 
 ## Reorder columns externally
 
-The Syncfusion Grid Angular allows reordering of columns externally, which means that using methods, columns can be programmatically moved around within the grid, based on their index or target index, or by using their field name.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Angular allows reordering of columns externally, which means that using methods, columns can be programmatically moved around within the grid, based on their index or target index, or by using their field name.
 
-> When reordering columns externally, the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) property of the grid must be set to **true**.
+> When reordering columns externally, the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowreordering) property of the grid must be set to `true`.
 
-### Reorder column based on index
+### Reorder columns by index
 
-The [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbyindex) method can be used to reorder columns based on their current index. This method takes two arguments:
+The [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method reorders columns by moving them from their current index to a new index. This is useful when the exact positions of the columns are known, as it allows direct control over the column order without using drag-and-drop.
 
-* **fromIndex** : Current index of the column to be reordered
-* **toIndex** : New index of the column after the reordering
+**Method signature:**
+```typescript
+reorderColumnByIndex(fromIndex: number, toIndex: number): void
+```
 
-Here is an example of how to use the `reorderColumnByIndex` method:
+* `fromIndex`: The current index of the column to move.
+* `toIndex`: The new index where the column should be moved.
 
-In this example, the column at index **1** is moved to index **3**:
+In this example, the "Customer ID" column, located at index 1, is moved to index 3 when clicking the "Reorder Column by Index" button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,14 +87,20 @@ In this example, the column at index **1** is moved to index **3**:
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs7" %}
 
-### Reorder column based on target index
+### Reorder columns by target index
 
-The [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbytargetindex) method can also be used to reorder single column or multiple columns based on the target index. This method takes two arguments:
+The [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method enables reordering of one or more columns to a specific target index. This method is particularly useful when moving columns based on their field names rather than their current index positions.
 
-* **fieldName**: Field name of the column to be reordered
-* **toIndex**: New index of the column after the reordering
+**Method signature:**
+```typescript
+reorderColumnByTargetIndex(fieldName: string | string[], toIndex: number): void
+```
 
-Here is an example of how to use the `reorderColumnByTargetIndex` method to reorder single column and multiple columns based on target index:
+**Parameters:**
+* `fieldName`: The field name (or array of field names) of the column(s) to be reordered.
+* `toIndex`: The target index where the column(s) should be moved.
+
+The following example demonstrates the use of the `reorderColumnByTargetIndex` method to reorder both single and multiple columns:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,14 +114,20 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs8" %}
 
-### Reorder column based on field names
+### Reorder columns by field names
 
-The [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumns) method of the Grid allows reordering of single column or list of columns based on their field names. This method takes two arguments: 
+The [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumns) method provides a way to reorder columns using their field names instead of index positions. This method is particularly useful when the exact column positions are unknown, but the field names are available. By specifying the source column field name and the target column field name, the grid updates the order automatically.
 
-* **fromFName**: The field name of the column to move.
-* **toFName**: The field name of the column before which the first column should be moved.
+**Method signature:**
+```typescript
+reorderColumns(fromFName: string | string[], toFName: string): void
+```
 
-Here is an example of how to use the `reorderColumns` method to reorder single column and multiple columns based on field names:
+**Parameters:**
+* `fromFName`: The field name (or array of field names) of the column(s) to be moved.
+* `toFName`: The field name of the target column before which the source column(s) should be placed.
+
+The following example demonstrates the use of the `reorderColumns` method to reorder both single and multiple columns based on field names by clicking the respective buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,18 +141,32 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs9" %}
 
-### Reorder columns using the column model (ideal for stacked headers)
+### Reorder columns using column model
 
-Previously, column reordering in the Grid was handled using methods like [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbyindex), [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumns), and [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbytargetindex). These methods allowed reordering based on field names or index positions and were suitable for simple, flat column structures.
+The [reorderColumnByModel](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbymodel) method provides an advanced way to reorder columns by working with complete column model objects. This method is specifically designed to handle complex column structures, particularly [stacked header columns](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-headers#stacked-header), but it also works seamlessly with normal column configurations. While methods like `reorderColumnByIndex`, `reorderColumns`, and `reorderColumnByTargetIndex` are suitable for simple, flat column structures, `reorderColumnByModel` is the preferred approach when working with hierarchical column arrangements.
 
-To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support [stacked header columns](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-headers#stacked-header), but it also works with normal column configurations.
+**Method signature:**
+```typescript
+reorderColumnByModel(fromColumn: Column, toColumn: Column): void
+```
 
-The `reorderColumnByModel` method accepts two arguments:
+**Parameters:**
+* `fromColumn`: The column object to move.
+* `toColumn`: The target column object before which the `fromColumn` should be placed.
 
-* **fromColumn**: The column object to move.
-* **toColumn**: The target column object before which the **fromColumn** should be placed.
+**When to use this method:**
 
-In this example, **Order Details** is moved before **Customer Name**, and **Ship Country** is moved before **Ship Name** within **Ship Details**, demonstrating how the `reorderColumnByModel` method reorders both normal and stacked header columns using a button click:
+- Moving entire column groups.
+- Handling complex column hierarchies.
+- Working directly with column objects rather than field names or indices.
+
+In this example:
+
+- "Order Details" stacked header is moved before "Customer ID".
+- "Ship Country" is moved before "Ship Name" within the "Ship Details" stacked header.
+
+This shows the method handling reordering of both normal and stacked header columns.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,17 +180,19 @@ In this example, **Order Details** is moved before **Customer Name**, and **Ship
 
 {% previewsample "page.domainurl/samples/grid/reorder-cs10" %}
 
-## Reorder events
+## Column Reorder events
 
-When reordering columns in the Syncfusion Angular Grid component, specific actions can be taken in response to the drag and drop events. To handle these events, event handlers can be defined for the following events:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides events that are triggered during different stages of the column reordering process. These events make it possible to run custom actions or show the current status while columns are being reordered through drag-and-drop.
 
-1. The [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndragstart) event triggers when column header element drag (move) starts.
+The Grid component supports the following column reorder events:
 
-2. The [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) event triggers when column header element is dragged (moved) continuously.
+| Event | Description |
+|-------|-------------|
+| [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/grid#columndragstart) | Triggers when column header element drag starts. |
+| [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrag) | Triggers continuously while a column header is being dragged. |
+| [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrop) | Triggered when a column header is dropped into its new position. |
 
-3. The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) event triggers when a column header element is dropped on the target column.
-
-In the following example, the `columnDragStart`, `columnDrag`, and `columnDrop` events are implemented in the Syncfusion Grid component:
+In the following example, the `columnDragStart`, `columnDrag`, and `columnDrop` events are implemented in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,11 +205,7 @@ import { data } from './datasource';
 import { GridComponent, ColumnDragEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [ReorderService],
 standalone: true,
   selector: 'app-root',

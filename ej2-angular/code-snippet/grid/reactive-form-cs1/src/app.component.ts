@@ -1,6 +1,6 @@
 
 import { CommonModule } from '@angular/common'; 
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
@@ -20,7 +20,7 @@ imports: [
         DropDownListAllModule, ReactiveFormsModule, FormsModule,TextAreaModule
     ],
 
-providers: [EditService, ToolbarService],
+providers: [EditService, ToolbarService, PageService],
 standalone: true,
     selector: 'app-root',
     templateUrl: `reactive-form.html`

@@ -14,7 +14,7 @@ export class AppComponent {
     public value: string = "<p>Rich Text Editor allows inserting images from online sources as well as from a local computer into your content.</p><p><b>Get started with the Quick Toolbar by clicking on the image</b></p><p>Custom styles can be added to the selected image inside the Rich Text Editor through the quick toolbar.</p><img id='editorImageID' style='width:300px; height:300px; transform: rotate(0deg);' alt='Logo' src='https://ej2.syncfusion.com/demos/src/rich-text-editor/images/RTEImage-Feather.png'>";
     public quickToolbarSettings: QuickToolbarSettingsModel = {
         image: [
-            'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '|',
+            'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '|',
             'EditImageLink', 'RemoveImageLink', 'Display', 'AltText', 'Dimension'
         ]
     };

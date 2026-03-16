@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Height and width
 
-The Tooltip can either be assigned auto height and width values or specific pixel values. The [`width`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) properties are used to set the outer dimension of the Tooltip element. The default value for both properties is `auto`. They also accept string and number values in pixels.
+Set the tooltip to auto or specific pixel values for height and width. The [`width`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) properties set the outer dimensions of the tooltip element. Both properties default to `auto` and accept string and number values in pixels.
 
-The following sample explains how to set dimensions for the Tooltip.
+The following sample demonstrates setting tooltip dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

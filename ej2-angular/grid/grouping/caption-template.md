@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Caption template in Angular Grid component | Syncfusion
-description: Learn all about the caption template feature in the Syncfusion Angular Grid component, including customization options for grouping captions, advanced template integration, and localization support.
+title: Angular Grid - Caption Template | Syncfusion
+description: Angular Grid caption template explains customizing group captions, templates for group headers, and formatting group display with examples.
 platform: ej2-angular
 control: Caption template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Caption template in Angular Grid component
+# Group Row Title Customization in Angular Grid
 
-The caption template feature in the Syncfusion Angular Grid enables full customization of the group caption row, allowing the display of detailed information about grouped data such as counts or grouped values. Caption templates support a wide range of custom content, including images, icons, and other HTML elements. This capability allows you to create visually rich and informative group captions directly within the Grid component.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property to customize the text shown in group row titles.  This feature enhances the visual presentation of grouped data by allowing the display of grouped values, record counts, and custom HTML elements such as icons or images.
 
-The [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#captiontemplate) property allows for flexible customization. By utilizing the `data` parameter within the template, you can reference properties such as `field` (the column's field name), `headerText` (column's header display text), `key` (grouped value), and `count` (number of grouped records). These properties provide dynamic values that can be integrated into the caption for context-aware display.
+The [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property allows for flexible customization. The `data` parameter within the template provides access to properties such as `field` (the column's field name), `headerText` (column's header display text), `key` (grouped value), and `count` (number of grouped records). These properties provide dynamic values that can be integrated into the caption for context-aware display.
 
-The following example demonstrates how to customize the group header caption in the Grid using the `captionTemplate` property. It displays the **headerText**, **key**, and **count** of the grouped columns.
+The following example illustrates displaying the `headerText`, `key`, and `count` within a customized group caption.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,9 +58,9 @@ export class AppComponent implements OnInit {
 
 ## Adding custom text in group caption
 
-The Syncfusion Angular Grid makes it straightforward to enhance group captions by adding custom text, resulting in a more informative and meaningful representation of grouped data. With the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#captiontemplate) property, you can define specific text or additional information in the group caption, providing maximum flexibility.
+The Grid supports adding custom text to group captions through the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property. This feature makes group captions more informative by including grouped values, record counts, or descriptive text, and can also display custom HTML elements such as icons or image.
 
-The following example demonstrates how to augment the group caption by combining custom text with values from the `data` parameter, such as **key**, **count**, and **headerText** of the grouped column.
+In the example below, the data parameter is used to display the `key`, `count`, and `headerText` of the grouped column, along with custom text within the caption.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='315px'>
+    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='290px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Name' width=100></e-column>
@@ -102,11 +102,9 @@ export class AppComponent implements OnInit {
 
 ## Customize group caption text using locale
 
-The Syncfusion Angular Grid includes built-in localization support to customize the group caption text according to different languages or regions. This makes it possible to provide a translated or culture-specific group caption for globalized applications.
+The Grid supports localization of group caption text based on the locale. This enables the display of translated or region-specific content within group captions.
 
-To implement localization, use the `L10n.load()` method to define localized strings and the `setCulture` method from `@syncfusion/ej2-base` to apply the locale (for example, the **"ar"** culture for Arabic). You can localize group captions and other Grid messages for a seamless multi-language experience.
-
-The following example demonstrates custom group caption text based on the **"ar"** locale.
+Localization can be achieved using the `L10n.load()` and `setCulture()` methods from the `@syncfusion/ej2-base package`. The `L10n.load()` method defines localized strings, while `setCulture()` applies the desired locale to the Grid. The following example demonstrates customizing group caption text for the "ar" (Arabic) locale.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,11 +120,9 @@ The following example demonstrates custom group caption text based on the **"ar"
 
 ## Render custom component in group caption
 
-The Syncfusion Angular Grid offers advanced customization by enabling the rendering of custom Angular components in the group caption row. This feature allows you to add functional UI elements such as buttons, icons, dropdowns, or other interactive components, supporting a broader range of scenarios and improved user interaction directly in grouped captions.
+The Grid supports rendering custom components within group captions using the `captionTemplate` property. This functionality enables the integration of interactive UI elements such as buttons, icons, or dropdowns directly within the group caption row, enhancing both functionality and presentation.
 
-To render a custom component in the group caption row, use the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#captiontemplate) property. With this approach, you can fully replace traditional caption text with custom Angular content for greater flexibility.
-
-The following example illustrates adding a custom component to the group caption by referencing the [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component, with its content bound to the current group key.
+In the example below, the [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component is rendered through the caption template, with its text value dynamically assigned based on the group key.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,3 +135,7 @@ The following example illustrates adding a custom component to the group caption
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs14" %}
+
+## See also
+- [Grouping overview](./grouping)
+- [GroupSettings API](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate)

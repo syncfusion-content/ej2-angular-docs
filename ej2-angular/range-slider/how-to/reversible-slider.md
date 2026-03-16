@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Reversible Range Slider in Angular
 
-You can create a Range Slider rendered with values in reverse order by setting the [min](https://ej2.syncfusion.com/angular/documentation/api/slider#min) property to the maximum value and the [max](https://ej2.syncfusion.com/angular/documentation/api/slider#max) property to the minimum value. An example of how to achieve a reversible Range Slider is shown below
+Create a Range Slider with reversed value ordering by swapping the [min](https://ej2.syncfusion.com/angular/documentation/api/slider#min) and [max](https://ej2.syncfusion.com/angular/documentation/api/slider#max) properties. Set `min` to the maximum value and `max` to the minimum value. The following example demonstrates this approach.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,4 +27,4 @@ You can create a Range Slider rendered with values in reverse order by setting t
   
 {% previewsample "page.domainurl/samples/slider/reversible-cs1" %}
 
-> Reversible order can be achieved with [Horizontal](https://ej2.syncfusion.com/angular/documentation/api/slider/sliderOrientation/) orientation Range Slider by setting [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/slider#enablertl) as true.
+> **Note**: For [Horizontal](https://ej2.syncfusion.com/angular/documentation/api/slider/sliderOrientation/) orientation sliders, you can alternatively achieve reversed order by enabling right-to-left support via the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/slider#enablertl) property.

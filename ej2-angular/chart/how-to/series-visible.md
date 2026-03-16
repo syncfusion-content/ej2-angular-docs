@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Series visible in Angular Chart component | Syncfusion
-description: Learn here all about Series visible in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Show or hide series in Angular Chart component | Syncfusion
+description: Learn how to dynamically show or hide chart series by handling legend click events in the Syncfusion Angular Chart component.
 platform: ej2-angular
 control: Series visible 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series visible in Angular Chart component
+# Show or hide series in Angular Chart component
 
-By using the `chartMouseClick` event, you can show the series based on respective legend click. In this event, you can get the legend target id, using which you can get the current series index. Based on the index, you can set value of `visible` to `true` or `false`.
+By using the [`chartMouseClick`](https://ej2.syncfusion.com/angular/documentation/api/chart/#chartmouseclick) event, you can show or hide series based on a legend item click. In this event, you can get the legend target ID, which allows you to retrieve the current series index. Based on the index, you can set the value of the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#visible) property to `true` or `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -21,5 +21,5 @@ By using the `chartMouseClick` event, you can show the series based on respectiv
 {% include code-snippet/chart/how-to-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/how-to-cs18" %}

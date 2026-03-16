@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Localization in Angular Color picker component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Color Picker component | Syncfusion
+description: Details on localizing text and RTL support for the Syncfusion Angular Color Picker (Essential JS 2).
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Color picker component
+# Localization in Angular Color Picker component
 
 ## Localization
 
-The `Localization` library allows you to localize default text content of the ColorPicker. The ColorPicker component has static text for `control buttons (apply / cancel)` and `mode switcher` that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) value and translation object.
+The `Localization` library enables translation of default text used by the ColorPicker. The ColorPicker component includes static text for control buttons (Apply and Cancel) and the mode switcher. These strings can be translated to other languages (Arabic, German, French, etc.) by setting the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) property and providing a translation object.
 
-The following list of properties and its values are used in the ColorPicker.
+The following list shows the locale keys and corresponding default text used by the Color Picker.
 
 Locale key words |Text
 -----|-----
@@ -24,9 +24,9 @@ ModeSwitcher |Switch Mode
 
 ### Loading translations
 
-To load translation object in an application use `load` function of `L10n` class.
+To load a translation object in an application, use the `load` function of the `L10n` class.
 
-The below example demonstrates the ColorPicker in `Deutsch` culture.
+The following example demonstrates the ColorPicker configured for German (Deutsch) culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,12 +40,11 @@ The below example demonstrates the ColorPicker in `Deutsch` culture.
   
 {% previewsample "page.domainurl/samples/colorpicker/how-to-cs5" %}
 
-## Right to Left - RTL
+## Right-to-left (RTL)
 
-ColorPicker component has `RTL` support. It helps to render the ColorPicker from right-to-left direction.
-It improves the user experiences and accessibility for users who use right-to-left languages(Arabic, Farsi, Urdu, etc). This can be achieved by setting the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#enablertl) property to `true`.
+The ColorPicker component supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). Set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#enablertl) property to `true` to enable RTL mode.
 
-The following example illustrates how to enable right-to-left support in ColorPicker component.
+The following example shows how to enable RTL support for the ColorPicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -37,7 +37,7 @@ standalone: true,
           <ejs-switch id="switch1" [(checked)]="enableShowDeleteConfirmDialog" 
           (change)="toggleShowDeleteConfirmDialog()"></ejs-switch>
         </div>
-        <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273px">
+        <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="270px">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" [validationRules]="orderIDRules"
               isPrimaryKey="true" width="100"></e-column>

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Create a routing sample in Angular Grid component | Syncfusion
-description: Learn how to implement Angular routing in your application with the Syncfusion Angular Grid, including navigation setup, route configuration, and viewing multiple grid components.
+title: Angular Grid – Create Routing Example | Syncfusion
+description: Angular Grid provides routing sample patterns, state preservation techniques, routing integration examples, and guidance for route-driven grid scenarios.
 platform: ej2-angular
 control: Create a routing sample
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## How to use Angular routing
+# Routing sample in Angular Grid Component
 
 Angular routing is a core feature that manages navigation within a single-page application (SPA), providing seamless transitions between different views or components without refreshing the page.
 
-With routing, you configure different routes mapped to URL paths and specify which component should render for each path—enabling dynamic loading and a responsive user interface.
+With routing, different routes are configured to URL paths and the component that should render for each path is specified—enabling dynamic loading and a responsive user interface.
 
 **1. Creating an Angular application and integrating Syncfusion Grid:**
 
@@ -21,11 +21,11 @@ Begin by creating a new Angular project and enabling routing during setup. Follo
 ```
 ng generate component component-name
 ```
-Replace **component-name** with your desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for your component. Repeat for each component you wish to create.
+Replace `component-name` with a desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for the component. Repeat for each component to create.
 
 **2. Defining routes:**
 
-Create an `app-routing.module.ts` file in the app directory. Import your components and define a `Routes` array mapping URL paths to components. For example:
+Create an `app-routing.module.ts` file in the app directory. Import the components and define a `Routes` array mapping URL paths to components. For example:
 
 ```
 import { NgModule } from '@angular/core';
@@ -49,7 +49,7 @@ export class AppRoutingModule { }
 
 **3. Configuring the router module:**
 
-In the root module (**app.module.ts**) file import the **AppRoutingModule** and add it to the imports array.
+In the root module (**app.module.ts**) file import the `AppRoutingModule` and add it to the imports array.
 
 ```
 import { AboutComponent } from './about.component';
@@ -57,7 +57,7 @@ import { AboutComponent } from './about.component';
 
 **4. Setting up navigation:**
 
-Add router links to your component template using the `routerLink` attribute on anchor tags. Use `<router-outlet>` in the root template where the active component should be rendered.
+Add router links to the component template using the `routerLink` attribute on anchor tags. Use `<router-outlet>` in the root template where the active component should be rendered.
 
 ```
 <nav>

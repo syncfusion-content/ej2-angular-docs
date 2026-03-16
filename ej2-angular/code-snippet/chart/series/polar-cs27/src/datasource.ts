@@ -1,5 +1,4 @@
 
-
 export let radarData: Object[] = [{ x: 2005, y: 28 },
 { x: 2006, y: 25 },
 { x: 2007, y: 26 },

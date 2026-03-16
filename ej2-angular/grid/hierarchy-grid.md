@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Hierarchy grid in Angular Grid component | Syncfusion
-description: Learn here all about Hierarchy grid in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Hierarchy Grid | Syncfusion
+description: Angular Grid hierarchy view enables nested grids, parent‑child relationships, and data binding to create structured hierarchical layouts.
 platform: ej2-angular
 control: Hierarchy grid 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hierarchy grid in Angular Grid component
+# Hierarchy Grid in Angular Grid Component
 
-The Hierarchy Grid in an Angular Grid component displays hierarchical data in a tabular format with expandable and collapsible rows. This feature represents parent and child relationships within the grid, making it easier to navigate and understand structured data with multiple levels.
+The Hierarchy Grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is designed to display hierarchical or nested data structures within a tabular layout. It enables the representation of parent-child relationships by allowing rows to be expanded or collapsed, revealing related child records beneath their corresponding parent rows.
 
-This feature is enabled by utilizing the [childGrid](https://ej2.syncfusion.com/angular/documentation/api/grid#childgrid) and [childGrid.queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) properties of the grid component.
+This structure enhances data readability and navigation, especially when working with datasets that include multiple levels of related information. Each parent row can be expanded to display its associated child grid, which can itself be configured with columns, templates, and features similar to the main grid.
 
 To enable the Hierarchy Grid feature:
 
-1. Inject the **DetailRowService** in the provider section of your **AppModule**. This service is essential for handling the hierarchy grid functionality.
+1. Inject the `DetailRowService` in the provider section of the **AppModule**. This service is essential for handling the hierarchy grid functionality.
 
-2. Define the `childGrid` property within the Grid component configuration. This property describes the complete configuration options of the child grid.
+2. Define the [childGrid](https://ej2.syncfusion.com/angular/documentation/api/grid#childgrid) property in the grid configuration. This property contains the settings for the child grid, such as its columns and data source.
 
-3. Specify the `childGrid.queryString` property to establish the relationship between the parent and child grids and visualize the data in a hierarchical structure. This property determines how child records are fetched based on the parent record's key field value.
+3. Set the [childGrid.queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property to link the parent and child records using a common field. This defines the retrieval of child data based on the parent row.
 
-The following example demonstrates how to enable the hierarchy feature in the grid
+The following example demonstrates enabling the hierarchy feature in the grid, which helps present structured data in a clean and interactive format for improved organization and navigation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,17 +36,16 @@ The following example demonstrates how to enable the hierarchy feature in the gr
   
 {% previewsample "page.domainurl/samples/grid/default-cs5" %}
 
-> * Grid supports n levels of child grids for complex hierarchical data structures.
+> * The Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#detailtemplate) is enabled.
-> * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
-## Bind hierarchy grid with different field
+## Mapping Parent-Child Grids with different field names
 
-By default, the parent and child grids use the same field name to map and render a hierarchical grid. However, the component supports establishing a parent-child relationship between grids with different field names. This feature is beneficial when creating a parent-child relationship between grids while using distinct field names for data mapping. This allows for flexible establishment of the desired relationship between parent and child grids, even with different field names for data mapping.
+By default, the Grid uses the same field name in both the parent and child grids to establish a hierarchical relationship through the [queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property. However, it also supports scenarios where the parent and child data sources use different key fields.
 
-By default, the parent and child grid relationship is maintained using the [queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property, which requires the same field name for both grids. However, to achieve the parent and child relationship with different fields, modify the mapping value in the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the child grid. 
+When the parent and child data sources use different key fields, this relationship can still be configured by handling the child grid's [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event. In this event, the required value (e.g., Employee ID) can be retrieved from `parentDetails.parentRowData` and dynamically assigned to the appropriate field in the child grid's query. This approach enables flexible hierarchical binding even when the key fields differ between parent and child grids.
 
-In the following example, the `load` event is utilized to customize the mapping value for the child grid. By accessing the `parentDetails` property and its **parentKeyFieldValue**, the desired mapping value can be set. The `parentRowData` property contains the data of the parent row, and by using the **EmployeeID** field name, the corresponding value can be extracted from the parent row data.
+In the following example, the `load` event is used to customize the mapping value for the child grid. The `parentDetails` property provides access to the parent row's data, including the `parentKeyFieldValue`, which can be used to set the appropriate mapping field. By referencing the "Employee ID" field from the `parentRowData`, the corresponding value is extracted and applied to construct the query for the child grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,13 +59,13 @@ In the following example, the `load` event is utilized to customize the mapping 
   
 {% previewsample "page.domainurl/samples/grid/default-cs9" %}
 
-> Make sure to adjust the field name according to the specific data structure and requirements.
+> Make sure to adjust the field name according to the specific scenario.
 
 ## Expand child grid initially
 
-Expanding the child grid initially in the Data Grid component provides immediate visibility into hierarchical data without requiring manual expansion of each child row. This approach enhances data visibility and improves the overall experience upon grid load.
+Child rows in a hierarchical grid can be expanded automatically during the initial load by calling the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method within the grid's [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event. This ensures that nested data becomes visible when the grid is rendered, without requiring manual interaction.
 
-To achieve this, use the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method with the desired target index (number) in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event of the grid. 
+In the following example, the third record is expanded on load by using the `expand` method inside the `dataBound` event. 
 
 In the provided example, the third record of the grid is expanded by utilizing the `expand` method within the `dataBound` event.
 
@@ -82,15 +81,13 @@ In the provided example, the third record of the grid is expanded by utilizing t
   
 {% previewsample "page.domainurl/samples/grid/default-cs7" %}
 
-> Index values begin with **"0"**, allowing specification of the desired target index to expand a specific child grid initially.
+> Index values begin with "0", allowing provision of the desired target index to expand a specific child grid initially.
 
 ## Dynamically load child grid data
 
-Dynamically loading child grid data in the Data Grid improves performance, optimizes data transmission, and enables on-demand access to relevant information. This approach also adds flexibility in data presentation, enhancing the overall efficiency of the application.
+Dynamically loading child grid data improves performance, optimizes data transmission, and enhances the experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, improving overall application efficiency.
 
-To dynamically load the `dataSource` of a child grid in the Grid, utilize the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the parent grid. This event allows customization of the loading behavior of the child grid based on the data of the parent grid.
-
-The following example demonstrates how to dynamically load child grid data using the `load` event.
+To achieve this, use the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the parent grid. This event allows assigning the `dataSource` for the child grid dynamically based on the parent row's data. The following example demonstrates dynamically loading child grid data using the `load` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,13 +101,11 @@ The following example demonstrates how to dynamically load child grid data using
   
 {% previewsample "page.domainurl/samples/grid/default-cs8" %}
 
-## Dynamically bind data to child grid based on parent row data
+## Dynamic data binding in Child Grids using parent row values
 
-Dynamically binding data to a child grid based on the parent row data in the Data Grid component is useful when displaying child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
+A child grid can be bound dynamically to display data that corresponds to its parent row. Instead of relying on the `queryString` property, this can be handled through the  [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#detaildatabound) event, which is triggered whenever a child grid expands.
 
-To dynamically bind data to the child grid based on the parent row data instead of using the [queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property, utilize the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#detaildatabound) event of the grid. This event is triggered when expanding the child grid.
-
-In the `detailDataBound` event handler, the child grid's dataSource can be filtered based on the **EmployeeID** column value of the parent row data. This can be achieved by using the `DataManager` plugin and applying a filter to the child grid's dataSource. The filtered data can be assigned as the new dataSource for the child grid. This can be demonstrated by the following sample.
+Within the `detailDataBound` event, the child grid’s [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) is filtered based on the parent row’s "Employee ID". The `DataManager` is used to apply the filter, and the filtered result is then assigned to the child grid’s `dataSource`. This ensures that each child grid shows only the records related to its parent, creating a contextual and flexible hierarchical display.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,11 +121,9 @@ In the `detailDataBound` event handler, the child grid's dataSource can be filte
 
 ## Adding record in child grid
 
-Adding a record in a child grid within the Data Grid component is useful when providing the ability to add new records to the child grid. This feature allows input and saving of additional data specific to each parent row.
+Adding a record to a child grid allows additional data to be maintained for the corresponding parent row. To preserve the parent–child relationship, the appropriate `queryString` value must be included in the new record.
 
-To maintain the parent-child relationship in the Grid when adding a record to the child grid, set the value for the `queryString` in the added data. This can be done using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event.
-
-In the following example, the parent and child grids are related by the **EmployeeID** field. To add a new record in the child grid, the **EmployeeID** field needs to be set with the value of the parent record's `queryString` in the `actionBegin` event. 
+This is accomplished through the grid's [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event. In the example, the parent and child grids are related by "Employee ID", so the child record's "Employee ID" is assigned the parent row's `queryString` value using the `actionBegin` event to ensure relational consistency.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,11 +141,11 @@ In the following example, the parent and child grids are related by the **Employ
 
 A template column in a child grid within the Data Grid component is valuable when customizing the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property of a column to display a custom element instead of a field value in the Grid. Template columns defined in the child grid will be null in the **ngOnInit** method, which means they will not be shown in the UI. They will be rendered after the entire HTML view rendering process, and can be accessed and utilized in the **ngAfterViewInit** method to display the template columns in the child grid.
+To achieve this, utilize the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property of a column to display a custom element instead of a field value in the grid. Template columns defined in the child grid will be null in the `ngOnInit` method, which means they will not be shown in the UI. They will be rendered after the entire HTML view rendering process, and can be accessed and utilized in the `ngAfterViewInit` method to display the template columns in the child grid.
 
-During the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the child grid, it is necessary to set the 'registeredTemplate' to empty. This action will remove any previously existing templates. By doing so, templates can be dynamically applied to the grid's cells based on different conditions or requirements.
+During the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) event of the child grid, it is necessary to set the `registeredTemplate` to empty. This action will remove any previously existing templates. By doing so, templates can be dynamically applied to the grid's cells based on different conditions or requirements.
 
-The following example demonstrates how to show a custom image in the **Employee Image** column of the child grid by utilizing the `template` property of the column.
+In the example below, a custom image is rendered in the "Employee Image" column of the child grid using the `template` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,17 +155,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { PageService, SortService, FilterService, GroupService,DetailRowService } from '@syncfusion/ej2-angular-grids'
 
-
-
 import { Component, OnInit, ViewChild, ViewContainerRef, Inject, AfterViewInit } from '@angular/core';
 import { data, employeeData } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [PageService,
         SortService,
         FilterService,
@@ -235,13 +222,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   
 {% previewsample "page.domainurl/samples/grid/default-cs11" %}
 
-## How to get parent details in child grid
+## Getting parent details in the child grid
 
-Getting parent details in a child grid in an Angular Grid component is useful when displaying and utilizing information from the parent row within the child grid. This can be beneficial in scenarios where additional context is needed or calculations are performed based on the parent row's data.
+Accessing parent row details within a child grid enables contextual data presentation and supports scenarios where parent information is required for calculations or conditional rendering.
 
-To achieve this, utilize the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event. This event is triggered when the child grid is created and can be used to handle the child grid initialization.
-
-The following example demonstrates how to obtain parent details in a child grid using the `created` event. Within the `created` event, the parent row data can be accessed using `this.parentDetails.parentRowData` and the desired details can be displayed in the message.
+This can be accomplished through the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event, which is triggered when the child grid is initialized. Within this event, parent row data can be obtained using `this.parentDetails.parentRowData`. The example below demonstrates accessing parent details for use in the child grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -261,7 +246,7 @@ The Aggregates feature in the Data Grid component allows displaying aggregate va
 
 Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
 
-The following example demonstrates how to render aggregates in a child grid to display the sum and maximum values of the **Freight** column.
+The following example demonstrates rendering aggregates in a child grid to display the sum and maximum values of the "Freight" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -274,13 +259,11 @@ The following example demonstrates how to render aggregates in a child grid to d
 
 {% previewsample "page.domainurl/samples/grid/child-grid-aggregate" %}
 
-## Expand all by external button
+## Expand and collapse all child grids dynamically
 
-The Hierarchy Grid in the Data Grid component allows expanding all child grid rows using an external button. This feature provides a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
+The Hierarchy Grid in the Data Grid component supports expanding all child grid rows through an external button, providing a comprehensive view of hierarchical data without requiring manual interaction.
 
-By default, Grid renders all child grid rows in collapsed state. To expand all child grid rows in the Grid using an external button, utilize the [expandAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expandall) method provided by the DetailRow module. Similarly, to collapse all grid rows, use the [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#collapseall) method. 
-
-The following example demonstrates how to expand and collapse the hierarchy grid using an external button click function.
+By default, all child grids are rendered in a collapsed state. To programmatically expand or collapse all child rows, use the [expandAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expandall) and [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#collapseall) methods provided by the `DetailRow` module. The following example demonstrates triggering these methods via external button clicks. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -296,19 +279,19 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 > The `expandAll` and `collapseAll` methods are not recommended for large datasets due to the considerable time required to update the changes in the UI.
 
-## Customize hierarchy grid icons
+## Change hierarchy grid icon in Grid
 
-The default expand/collapse icons in the Hierarchy Grid of Syncfusion Grid component can be customized using custom CSS, allowing modification of their visual representation. To achieve this, add the following CSS to the index.html file:
+The default expand/collapse icons in the Hierarchy Grid can be customized by applying custom CSS to the expand and collapse icon classes. Add the following styles to the **index.css** file to replace the default icons with custom ones.
 
-```
-    .e-grid .e-icon-grightarrow::before,
-    .e-grid-menu .e-icon-grightarrow::before {
+```css
+.e-grid .e-icon-grightarrow::before,
+.e-grid-menu .e-icon-grightarrow::before {
     content: '\e85f';
-    }
-    .e-grid .e-icon-gdownarrow::before,
-    .e-grid-menu .e-icon-gdownarrow::before {
+}
+.e-grid .e-icon-gdownarrow::before,
+.e-grid-menu .e-icon-gdownarrow::before {
     content: '\e83f';
-    }
+}
 
 ```
 
@@ -328,13 +311,13 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 
 ## Hide the expand/collapse icon in parent row when no record in child grid
 
-The Data Grid allows hiding the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, hiding the expand/collapse icon for parent rows that do not have any child records provides a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
+The Data Grid supports hiding the expand/collapse icon in parent rows when there are no child records, providing a cleaner and more intuitive interface.
 
-To achieve this, utilize the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event to hide the icon when there are no records in the child grid.
+To achieve this, the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event can be utilized to hide the icon when there are no records in the child grid.
 
 To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
 
-1. **Create a CSS Class with Custom Style**: Define a CSS class that overrides the default appearance of the Grid. This class will be used to customize the background color of the parent row when it is selected and when hovering over rows.
+1. Create a CSS class with custom style: Define a CSS class to override the default appearance of the expand/collapse cell. This style is used to adjust the look of the parent row when selected or hovered.
 
 ```css
     .e-row[aria-selected="true"] .e-customizedexpandcell {
@@ -346,7 +329,7 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
     }
 ```
 
-2. **Implement the rowDataBound Event Handler:** This event is triggered for each row in the grid when data is bound, allowing customization of the row's appearance and behavior. In the provided code, the handler checks if the current row has any child records associated with it. If not, it hides the content of the first element, which contains the expand/collapse icon, and applies a custom CSS class (e-customizedexpandcell) to modify its appearance.
+2. Implement the `rowDataBound` event handler: The `rowDataBound` event is triggered for each row as data is bound. In this event, verify whether the parent row has any corresponding child records. If no child records are found, clear the cell containing the expand/collapse icon and apply the custom CSS class.
 
 ```typescript
     public rowDataBound(args: RowDataBoundEventArgs) {
@@ -363,7 +346,7 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
     }
 ```
 
-The following example demonstrates how to hide the expand/collapse icon in the row with **EmployeeID** as **1**, which does not have record in child Grid.
+The following example demonstrates hiding the expand/collapse icon for the row where the "Employee ID" is "1", since it has no corresponding child records.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -377,9 +360,9 @@ The following example demonstrates how to hide the expand/collapse icon in the r
   
 {% previewsample "page.domainurl/samples/grid/template-cs4" %}
 
-## Detail row events
+## Child Grid expand and collapse events
 
-The Grid control's `detailExpand` and `detailCollapse` events fire before a detail row actually expands or collapses, allowing you a chance to control whether the action should continue. The `detailExpand` event is raised just before a row expands, and `detailCollapse` fires just before a row collapses, with both events providing respective details through their event arguments.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides [detailExpand](https://ej2.syncfusion.com/angular/documentation/api/grid#detailexpand) and [detailCollapse](https://ej2.syncfusion.com/angular/documentation/api/grid#detailcollapse) events, triggered before a detail row(parent row) is expanded or collapsed. These events provide control over the expand/collapse behavior by allowing conditional logic through event arguments.
 
 In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
 
@@ -396,28 +379,27 @@ In the example below, expansion is prevented for the "Nancy" row, and collapse i
 
 ## Customize the child grid
 
-The Data Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, use the **.e-detailcell** class selector, which targets the child grid.
+The child grid’s appearance within the parent grid can be customized using CSS. The `.e-detailcell` selector targets the child grid container and enables modification of properties such as background color, borders, and font styles.
 
 ### Header
 
-The appearance of the header elements in the child grid can be customized using CSS. Here are examples of how to customize the child grid header, header cell, and header cell div element.
+The appearance of the header elements in the child grid can be customized using CSS. Here are examples for customizing the child grid header, header cell, and header cell div element.
 
 **Customizing the child grid header**
 
-To customize the appearance of the child grid header root element, use the following CSS code:
+To modify the header of the child grid, use the following CSS. The `.e-detailcell` class targets the child grid, and `.e-headercontent` targets the header container. Updating the `border` property customizes the line between the header and content.
 
 ```css
 .e-detailcell .e-grid .e-headercontent{
     border: 2px solid green;
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and **.e-headercontent** targets its header root element. The `border` property can be modified to change the style of the header border. This customization allows overriding the thin line between the header and content of the child grid.
 
 ![Child header Grid in Angular.](images/angular-grid-child-header.png)
 
 **Customizing the child grid header cell**
 
-To customize the appearance of the grid header cell elements, use the following CSS code:
+To style the child grid's header cells, use the following CSS. The `.e-headercell` selector targets the header cell, allows to change the text `color` and `background`.
 
 ```css
 .e-detailcell .e-grid .e-headercontent .e-headercell{
@@ -425,13 +407,12 @@ To customize the appearance of the grid header cell elements, use the following 
     background-color: #1ea8bd;
 }
 ```
-In this example, the **.e-headercell** class targets the header cell elements. The `color` and `background-color` properties can be modified to change the text color and background of the child grid's header cells.
 
 ![Customize the child Grid header cell in Angular.](images/angular-grid-child-header-cell.png)
 
 **Customizing the child grid header cell div element**
 
-To customize the appearance of the child grid header cell div element, use the following CSS code:
+To style the inner `div` of the child grid's header cells, use the following CSS. The `.e-headercelldiv` selector targets the header cell content and allows customization of `font size`, `weight`, and `color`.
 
 ```css
 .e-detailcell .e-grid .e-headercelldiv {
@@ -440,17 +421,16 @@ To customize the appearance of the child grid header cell div element, use the f
     color: darkblue;
 }
 ```
-In this example, the **.e-headercelldiv** class targets the div element within the header cell of the child grid. The `font-size`, `font-weight`, `color` properties can be modified to change the font size, font-weight and color of the header text content.
 
 ![Child Grid header cell div element in Angular.](images/angular-grid-child-header-cell-div-element.png)
 
 ### Paging
 
-The appearance of the paging elements in the child grid can be customized using CSS. Here are examples of how to customize the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and pager current page numeric element of the child grid.
+The paging elements of the child grid can be customized using CSS. The following examples show styling for the pager root, pager container, navigation elements, numeric links, and the current page indicator.
 
 **Customizing the child grid pager root element**
 
-To customize the appearance of the child grid pager root element, use the following CSS code:
+To style the child grid's pager root, use the following CSS. The `.e-detailcell` class targets the child grid, and `.e-gridpager` selects the pager container. The `font-family` and `background-color` properties define the font and background styling.
 
 ```css
 .e-detailcell .e-grid  .e-gridpager {
@@ -458,13 +438,12 @@ To customize the appearance of the child grid pager root element, use the follow
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-gridpager** class targets the pager root element. The `font-family` can be modified to change the font family and `background-color` property can be modified to change the background color of the pager.
 
 ![Angular Grid pager root element.](images/angular-grid-pager-root-element.png)
 
 **Customizing the child grid pager container element**
 
-To customize the appearance of the child grid pager container element, use the following CSS code:
+To style the child grid's pager container, apply the following CSS. The `.e-pagercontainer` selector modifies the border and font of the pager section.
 
 ```css
 .e-detailcell .e-grid .e-pagercontainer {
@@ -473,13 +452,11 @@ To customize the appearance of the child grid pager container element, use the f
 }
 ```
 
-In this example, the **.e-pagercontainer** class targets the pager container element. The `border` property and `font-family` property can be modified to change the border color and font family of the pager container.
-
 ![Angular Grid pager container element.](images/angular-grid-child-pager-container-element.png)
 
 **Customizing the child grid pager navigation elements**
 
-To customize the appearance of the child grid pager navigation elements, use the following CSS code:
+To style the child grid's pager navigation buttons, apply the following CSS. These selectors target all navigation states, allowing customization of their `background color`.
 
 ```css
 .e-detailcell .e-grid .e-gridpager .e-prevpagedisabled,
@@ -494,13 +471,13 @@ To customize the appearance of the child grid pager navigation elements, use the
 }
 ```
 
-In this example, the classes **.e-prevpagedisabled, .e-prevpage, .e-nextpage, .e-nextpagedisabled, .e-lastpagedisabled, .e-lastpage, .e-firstpage,** and **.e-firstpagedisabled** target the various pager navigation elements of the child grid. The `background-color` property can be modified to change the background color of these elements.
-
 ![Angular Grid pager navigation elements.](images/angular-grid-child-pager-navigation-element.png)
 
 **Customizing the child grid pager page numeric link elements**
 
-To customize the appearance of the child grid pager current page numeric link elements, use the following CSS code:
+To style the child grid's pager numeric link elements, use the following CSS. The `.e-numericitem` selector targets each page number, allowing customization of `background-color`, `color`, and hover effects.
+
+To customize the appearance of the child grid pager page numeric link elements, the following CSS code can be used:
 
 ```css
 .e-detailcell .e-grid .e-gridpager .e-numericitem {
@@ -515,13 +492,13 @@ To customize the appearance of the child grid pager current page numeric link el
 }
 ```
 
-In this example, the **.e-numericitem** class targets the page numeric link elements. The `background-color`, `color` properties can be modified to change the background color and text color of these elements.
-
 ![Angular Grid pager numeric link elements.](images/angular-grid-child-page-numeric-link-elements.png)
 
 **Customizing the child grid pager current page numeric element**
 
-To customize the appearance of the child grid pager current page numeric element, use the following CSS code:
+To style the current page number in the child grid pager, use the following CSS. The `.e-currentitem` selector targets the active numeric item and allows customization of its `background-color` and `color`.
+
+To customize the appearance of the child grid pager current page numeric element, the following CSS code can be used:
 
 ```css
 .e-detailcell .e-grid .e-gridpager .e-currentitem {
@@ -530,17 +507,15 @@ To customize the appearance of the child grid pager current page numeric element
 }
 ```
 
-In this example, the **.e-currentitem** class targets the current page numeric item. The `background-color` property can be modified to change the background color of this element and `color` property can be modified to change the text color.
-
 ![Angular Grid current pager numeric element.](images/angular-grid-child-current-page-numeric-element.png)
 
 ### Sorting
 
-The appearance of the sorting icons and multi sorting icons in the child grid can be customized using CSS. The available Syncfusion [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) based on the theme can be used. Here's how to do it:
+The appearance of sorting icons in the child grid can be customized using CSS. Syncfusion<sup style="font-size:70%">&reg;</sup> provides a set of built-in [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#tailwind-34) that can be used based on the theme.
 
 **Customizing the child grid sorting icon**
 
-To customize the sorting icon that appears in the child grid header when sorting is applied, use the following CSS code:
+To change the sorting icons in the child grid header, apply the following CSS. The `.e-icon-ascending::before` and `.e-icon-descending::before` selectors target the icons for ascending and descending sort states, allowing custom icon codes.
 
 ```css
 .e-detailcell .e-grid .e-icon-ascending::before {
@@ -553,13 +528,12 @@ To customize the sorting icon that appears in the child grid header when sorting
     /* Icon code for descending order */
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-icon-ascending::before** class targets the sorting icon for ascending order, and the **.e-icon-descending::before** class targets the sorting icon for descending order.
 
 ![Angular Grid sorting icon.](images/angular-grid-child-sorting-icons.png)
 
 **Customizing the child grid multi sorting icon**
 
-To customize the multi sorting icon that appears in the child grid header when multiple columns are sorted, use the following CSS code:
+To style the multi sorting icon in the child grid header, apply the following CSS. The `.e-sortnumber` selector targets the icon, allowing customization of its `background-color` and font style.
 
 ```css
 .e-detailcell .e-grid .e-sortnumber {
@@ -568,17 +542,15 @@ To customize the multi sorting icon that appears in the child grid header when m
 }
 ```
 
-In this example, the **.e-sortnumber** class targets the background color and font family of the multi sorting icon. The `background-color` and `font-family` properties can be modified to customize the appearance of the multi sorting icon.
-
 ![Angular Grid multi sorting icon.](images/angular-grid-child-multi-sorting-icon.png)
 
 ### Filtering
 
-The appearance of filtering elements in the child grid can be customized using CSS. Below are examples of how to customize various filtering elements, including filter bar cell elements, filter bar input elements, focus styles, clear icons, filter icons, filter dialog content, filter dialog footer, filter dialog input elements, filter dialog button elements, and Excel filter dialog number filters.
+The appearance of filtering elements in the child grid can be customized using CSS. The following examples demonstrate styling key filtering components, including filter bar cells, filter inputs, focus states, clear icons, filter icons, filter dialog content and footer, dialog input elements, dialog buttons, and excel filter number options.
 
 **Customizing the child grid filter bar cell element**
 
-To customize the appearance of the filter bar cell element in the child grid header, use the following CSS code:
+To style the filter bar cell in the child grid header, apply the following CSS. The `.e-filterbarcell` selector targets the cell, allowing customization of its `background-color`.
 
 ```css
 .e-detailcell .e-grid .e-filterbar .e-filterbarcell {
@@ -586,147 +558,136 @@ To customize the appearance of the filter bar cell element in the child grid hea
 }
 
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-filterbarcell** class targets the filter bar cell element in the child grid header. The `background-color` property can be modified to change the color of the filter bar cell element.
 
 ![Angular Grid filter bar cell element.](images/angular-grid-child-filter-bar-cell-element.png)
 
 **Customizing the child grid filter bar input element**
 
-To customize the appearance of the filter bar input element in the child grid header, use the following CSS code:
+To style the input field within the child grid's filter bar, use the following CSS. The `.e-input` selector targets the input element, allowing customization of its font.
 
 ```css
 .e-detailcell .e-grid .e-filterbarcell .e-input-group input.e-input{
     font-family: cursive;
 }
 ```
-In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input** class targets the input element within the cell. The `font-family` property can be modified to change the font of the filter bar input element.
 
 ![Angular Grid filter bar input element.](images/angular-grid-child-filter-bar-input-element.png)
 
 **Customizing the child grid filter bar input focus**
 
-To customize the appearance of the child grid's filter bar input element's focus highlight, use the following CSS code:
+To style the focus highlight of the filter bar input in the child grid, use the following CSS. The `.e-input-focus` selector targets the input when it's active, allowing customization of its `background-color`.
 
 ```css
 .e-detailcell .e-grid .e-filterbarcell .e-input-group.e-input-focus{
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input-group.e-input-focus** class targets the focused input element. The `background-color` property can be modified to change the color of the focus highlight.
 
 ![Angular Grid filter bar input focus.](images/angular-grid-child-filter-bar-input-element-focus.png)
 
 **Customizing the child grid filter bar input clear icon**
 
-To customize the appearance of the child grid's filter bar input element's clear icon, use the following CSS code:
+To modify the clear icon in the child grid's filter bar input, apply the following CSS. The `.e-clear-icon::before` selector allows changing the icon using a custom Unicode value.
 
 ```css
 .e-detailcell .e-grid .e-filterbarcell .e-input-group .e-clear-icon::before {
     content: '\e72c';
 }
 ```
-In this example, the **.e-clear-icon** class targets the clear icon element within the input group. The `content` property can be modified to change the icon displayed.
 
 ![Angular Grid filter bar input clear icon.](images/angular-grid-filter-bar-input-clear-icon.png)
 
 **Customizing the child grid filtering icon**
 
-To customize the appearance of the filtering icon in the child grid header, use the following CSS code:
+To style the filtering icon in the child grid header, use the `.e-icon-filter::before` selector. The `content` property defines the icon and can be updated to display a different symbol.
 
 ```css
 .e-detailcell .e-grid .e-icon-filter::before{
     content: '\e81e';
 }
 ```
-In this example, the **.e-icon-filter** class targets the filtering icon element. The `content` property can be modified to change the icon displayed.
 
 ![Angular Grid filtering icon.](images/angular-grid-child-filtering-icon.png)
 
 **Customizing the child grid filter dialog content**
 
-To customize the appearance of the child grid's filter dialog's content element, use the following CSS code:
+To style the content area of the child grid's filter dialog, use the `.e-filter-popup .e-dlg-content` selector with the `background-color` property.
 
 ```css
 .e-detailcell .e-grid .e-filter-popup .e-dlg-content {
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-filter-popup .e-dlg-content** classes target the content element within the filter dialog. The `background-color` property can be modified to change the color of the dialog's content.
 
 ![Angular Grid filter dialog content.](images/angular-grid-child-filter-dialog-content.png)
 
 **Customizing the child grid filter dialog footer**
 
-To customize the appearance of the child grid's filter dialog's footer element, use the following CSS code:
+To customize the footer of the child grid's filter dialog, apply the `background-color` property to the .`e-filter-popup .e-footer-content` element using the following CSS.
 
 ```css
 .e-detailcell .e-grid .e-filter-popup .e-footer-content {
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-filter-popup .e-footer-content** classes target the footer element within the filter dialog. The `background-color` property can be modified to change the color of the dialog's footer.
 
 ![Angular Grid filter dialog footer.](images/angular-grid-filter-dialog-footer.png)
 
 **Customizing the child grid filter dialog input element**
 
-To customize the appearance of the child grid's filter dialog's input elements, use the following CSS code:
+To customize the input elements in the child grid's filter dialog, apply the `font-family` property to the `.e-filter-popup .e-input` selector using the following CSS.
 
 ```css
 .e-detailcell .e-grid .e-filter-popup .e-input-group input.e-input{
     font-family: cursive;
 }
 ```
-In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-input** class targets the input elements within the dialog. The `font-family` property can be modified to change the font of the input elements.
 
 ![Angular Grid filter dialog input element.](images/angular-grid-child-filter-dialog-input-element.png)
 
 **Customizing the child grid filter dialog button element**
 
-To customize the appearance of the child grid's filter dialog's button elements, use the following CSS code:
+The filter dialog's buttons can be styled by targeting `.e-filter-popup` and `.e-btn`, applying a `font-family` to change their font.
 
 ```css
 .e-detailcell .e-grid .e-filter-popup .e-btn{
     font-family: cursive;
 }
 ```
-In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-btn** class targets the button elements within the dialog. The `font-family` property can be modified to change the font of the button elements.
 
 ![Angular Grid filter dialog button element.](images/angular-grid-child-filter-dialog-button-element.png)
 
 **Customizing the child grid excel filter dialog number filters element**
 
-To customize the appearance of the excel filter dialog's number filters in the child grid, use the following CSS code:
+The number filter options in the child grid's excel filter dialog can be styled by applying a `background-color` to the `.e-filter-popup .e-contextmenu-wrapper ul` element as below:
 
 ```css
 .e-detailcell .e-grid .e-filter-popup .e-contextmenu-wrapper ul{
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-filter-popup .e-contextmenu-wrapper** ul classes target the number filter elements within the excel filter dialog. The `background-color` property can be modified to change the color of these elements.
 
 ![Angular Grid excel filter dialog number filters element.](images/angular-grid-child-excel-filter-dialog-element.png)
 
 ### Grouping
 
-The appearance of grouping elements in the child grid can be customized using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
+The grouping-related elements in the child grid can be styled through CSS. This includes the group header, expand/collapse icons, group caption row, and indent cells.
 
 **Customizing the child grid group header**
 
-To customize the appearance of the child grid's group header element, use the following CSS code:
+To customize the appearance of the child grid's group header, target the `.e-groupdroparea` element and apply the desired background-color:
 
 ```css
 .e-detailcell .e-grid .e-groupdroparea {
     background-color: #132f49;
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-groupdroparea** class targets the group header element. The `background-color` property can be modified to change the color of the group header.
 
 ![Child Grid group header in Angular.](images/angular-grid-child-group-header.png)
 
 **Customizing the child grid group expand or collapse icons**
 
-To customize the appearance of the group expand/collapse icons in the child grid, use the following CSS code:
+To change the expand and collapse icons in the child grid's group header, use the `content` property on `.e-icon-gdownarrow::before` and `.e-icon-grightarrow::before`:
 
 ```css
 .e-detailcell .e-grid .e-icon-gdownarrow::before{
@@ -737,13 +698,11 @@ To customize the appearance of the group expand/collapse icons in the child grid
 }
 ```
 
-In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. The `content` property can be modified to change the icon displayed. The available Syncfusion icons based on the theme can be used.
-
 ![Child Grid group expand or collapse icons in Angular.](images/angular-grid-child-group-expand-or-collapse-icons.png)
 
 **Customizing the child grid group caption row**
 
-To customize the appearance of the child grid's group caption row and the icons indicating record expansion or collapse, use the following CSS code:
+To style the child grid's group caption row and its expand/collapse icons, use the `background-color` property on the following elements:
 
 ```css
 .e-detailcell .e-grid .e-groupcaption {
@@ -756,13 +715,11 @@ To customize the appearance of the child grid's group caption row and the icons 
 }
 ```
 
-In this example, the **.e-groupcaption** class targets the group caption row element, and the **.e-recordplusexpand** and **.e-recordpluscollapse** classes target the icons indicating record expansion or collapse. The `background-color` property can be modified to change the color of these elements.
-
 ![Child Grid group caption row in Angular.](images/angular-child-grid-group-caption-row.png)
 
 **Customizing the child grid grouping indent cell**
 
-To customize the appearance of the child grid's grouping indent cell element, use the following CSS code:
+To style the child grid's grouping indent cell, target the `.e-indentcell` element and apply the desired `background-color`:
 
 ```css
 .e-detailcell .e-grid .e-indentcell {
@@ -770,17 +727,15 @@ To customize the appearance of the child grid's grouping indent cell element, us
 }
 ```
 
-In this example, the **.e-indentcell** class targets the grouping indent cell element. The `background-color` property can be modified to change the color of the indent cell.
-
 ![child Grid grouping indent cell in Angular.](images/angular-child-grid-indent-cell.png)
 
 ### Toolbar
 
-The appearance of the toolbar in the child grid can be customized using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
+The toolbar in the child grid can be styled through CSS. The following examples demonstrate customization of the toolbar's root element and its button elements.
 
 **Customizing the child grid toolbar root element**
 
-To customize the appearance of the child grid's toolbar root element, use the following CSS code:
+The toolbar's root element in the child grid can be styled by applying a `background-color` to the `.e-toolbar-items` selector.
 
 ```css
 .e-detailcell .e-grid .e-toolbar-items {
@@ -788,13 +743,11 @@ To customize the appearance of the child grid's toolbar root element, use the fo
 }
 ```
 
-In this example, the **.e-detailcell** class targets the child grid and the **.e-toolbar-items** class targets the background color of the toolbar root element. The `background-color` property can be modified to change the background color of the toolbar.
-
 ![Child Grid toolbar root element in Angular.](images/angular-child-grid-toolbar-root-element.png)
 
 **Customizing the child grid toolbar button element**
 
-To customize the appearance of the child grid's toolbar buttons, use the following CSS code:
+The toolbar buttons in the child grid can be styled by applying a `background-color` to the `.e-toolbar .e-btn` selector.
 
 ```css
 .e-detailcell .e-grid .e-toolbar .e-btn {
@@ -802,17 +755,15 @@ To customize the appearance of the child grid's toolbar buttons, use the followi
 }
 ```
 
-In this example, the **.e-toolbar .e-btn** selector targets the background color of the toolbar button elements. The `background-color` property can be modified to change the background color of the toolbar buttons.
-
 ![Child Grid toolbar button element in Angular.](images/angular-child-grid-toolbar-button-element.png)
 
 ### Editing
 
-The appearance of editing-related elements in the child grid can be customized using CSS. Below are examples of how to customize various editing-related elements.
+The appearance of editing-related elements in the child grid can be customized using CSS. This includes input fields, dialog components, and action buttons.
 
 **Customizing the child grid edited and added row element**
 
-To customize the appearance of edited and added row table elements in the child grid, use the following CSS code:
+The edited and added rows in the child grid can be styled by applying a `background-color` to the `.e-editedrow table` and `.e-addedrow table` selectors.
 
 ```css
 .e-detailcell .e-grid .e-editedrow table, 
@@ -820,14 +771,13 @@ To customize the appearance of edited and added row table elements in the child 
 	background-color: #62b2eb;
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-editedrow** class represents the edited row element, and the **.e-addedrow** class represents the added row element. The `background-color` property can be modified to change the color of these row table elements.
 
 ![Child Grid customizing the edited row element in Angular.](images/angular-child-grid-edited-row-element.png)
 ![Child Grid customizing the added row element in Angular.](images/angular-child-grid-added-row-element.png)
 
 **Customizing the child grid edited row input element**
 
-To customize the appearance of edited row input elements in the child grid, use the following CSS code:
+To style input fields within edited rows in the child grid, target the `.e-input` elements inside `.e-editedrow` and apply properties like `font-family` and `color`:
 
 ```css
 .e-detailcell .e-grid .e-editedrow .e-input-group input.e-input{
@@ -835,39 +785,36 @@ To customize the appearance of edited row input elements in the child grid, use 
   color:rgb(214, 33, 123)
 }
 ```
-In this example, the **.e-editedrow** class represents the edited row element, and the **.e-input** class represents the input elements within the form. The `font-family` property can be modified to change the font and `color` property can be modified to change text color of the input elements.
 
 ![Child Grid customizing the edited row input element in Angular.](images/angular-child-grid-edited-row-input-element.png)
 
 **Customizing the child grid edit dialog header element**
 
-To customize the appearance of the edit dialog header element in the child grid, use the following CSS code:
+The edit dialog's header in the child grid can be styled by applying a `background-color` to the `.e-edit-dialog .e-dlg-header-content` selector.
 
 ```css
 .e-edit-dialog .e-dlg-header-content {
     background-color: #deecf9;
 }
 ```
-In this example, the **.e-edit-dialog** class represents the edit dialog, and the **.e-dlg-header-content** class targets the header content within the dialog. The `background-color` property can be modified to change the color of the header element.
 
 ![Child Grid customizing the edit dialog header element in Angular.](images/angular-child-grid-edit-dialog-header-element.png)
 
 **Customizing the child grid edited row input element in dialog edit mode**
 
-To customize the appearance of the child grid's edited row input elements in dialog edit mode, use the following CSS code:
+The input fields in dialog edit mode can be styled by applying a `font-family` to the `.e-gridform .e-float-input .e-field` selector.
 
 ```css
 .e-grid .e-gridform .e-rowcell .e-float-input .e-field {
     font-family: cursive;
 }
 ```
-In this example, the **.e-gridform** class represents the editing form, and the **.e-float-input** class targets the floating input elements within the form. The `font-family` property can be modified to change the font of the input elements.
 
 ![Child Angular Grid edited row input element in dialog.](images/angular-child-grid-edited-row-input-element-in-dialog.png)
 
 **Customizing the child grid command column buttons**
 
-To customize the appearance of the child grid's command column buttons such as edit, delete, update, and cancel, use the following CSS code:
+To style the command column buttons (edit, delete, update, and cancel) in the child grid, target their respective classes and apply the desired `color`:
 
 ```css
 .e-detailcell .e-grid .e-delete::before ,.e-grid .e-cancel-icon::before{
@@ -877,18 +824,17 @@ To customize the appearance of the child grid's command column buttons such as e
     color: #077005;
 }
 ```
-In this example, the **.e-edit, .e-delete, .e-update, and .e-cancel-icon** classes represent the respective command column buttons. The `color` property can be modified to change the color of these buttons.
 
 ![Child Grid customize command column button in Angular.](images/angular-child-grid-command-button.png)
 ![Child Grid customize command column button in Angular.](images/angular-child-grid-next-command-button.png)
 
 ### Aggregate
 
-The appearance of aggregate elements in the child grid can be customized using CSS. Below are examples of how to customize the aggregate root element and the aggregate cell elements.
+Aggregate elements in the child grid can be styled through CSS. The following examples demonstrate customization options for both the aggregate root element and individual aggregate cells.
 
 **Customizing the child grid aggregate root element**
 
-To customize the appearance of the child grid's aggregate root elements, use the following CSS code:
+Styling the child grid's aggregate root element can be achieved by applying CSS properties such as `font-family` to the `.e-gridfooter` selector.
 
 ```css
 .e-detailcell .e-grid .e-gridfooter {
@@ -896,13 +842,11 @@ To customize the appearance of the child grid's aggregate root elements, use the
 }
 ```
 
-In this example, the **.e-detailcell** class targets the child grid and the **e-gridfooter** class represents the root element of the aggregate row in the grid footer. The `font-family` property can be modified to change the font of the aggregate root element.
-
 ![Child Grid customize aggregate root element in Angular.](images/angular-child-grid-aggregate-root-element.png)
 
 **Customizing the child grid aggregate cell elements**
 
-To customize the appearance of the child grid's aggregate cell elements (summary row cell elements), use the following CSS code:
+The `.e-summarycell` class within the `.e-summaryrow` of the child grid can be styled using properties like `background-color` to modify the appearance of individual aggregate cells:
 
 ```css
 .e-detailcell .e-grid .e-summaryrow .e-summarycell {
@@ -910,30 +854,27 @@ To customize the appearance of the child grid's aggregate cell elements (summary
 }
 ```
 
-In this example, the **e-summaryrow** class represents the summary row containing aggregate cells, and the **e-summarycell** class targets individual aggregate cells within the summary row. The `background-color` property can be modified to change the `color` of the aggregate cell elements.
-
 ![Child Grid customize aggregate cell element in Angular.](images/angular-child-grid-aggregate-cell-element.png)
 
 ### Selection
 
-The appearance of the selection in the child grid can be customized using CSS. Here are examples of how to customize the row selection background, cell selection background, and column selection background.
+The appearance of selection within the child grid can be customized by applying CSS properties to modify the background of selected rows, cells, or columns.
 
 **Customizing the child grid row selection background**
 
-To customize the appearance of the child grid's row selection, use the following CSS code:
+The `.e-selectionbackground` class within the child grid can be styled using `background-color` property to modify the appearance of selected rows:
 
 ```css
 .e-detailcell .e-grid td.e-selectionbackground {
     background-color: #00b7ea;
 }
 ```
-In this example, the **.e-detailcell** class targets the child grid and the **.e-selectionbackground** class targets the background color of the row selection. The `background-color` property can be modified to change the background color of the selected rows.
 
 ![Child Grid row selection in Angular.](images/angular-child-grid-row-selection.png)
 
 **Customizing the child grid cell selection background**
 
-To customize the appearance of the child grid's cell selection, use the following CSS code:
+The cell selection background in the child grid can be customized by applying the `background-color` property to the `td.e-cellselectionbackground` selector.
 
 ```css
 .e-detailcell .e-grid td.e-cellselectionbackground {
@@ -941,23 +882,20 @@ To customize the appearance of the child grid's cell selection, use the followin
 }
 ```
 
-In this example, the **.e-cellselectionbackground** class targets the background color of the cell selection. The `background-color` property can be modified to change the background color of the selected cells.
-
 ![Child Grid cell selection in Angular.](images/angular-child-grid-cell-selection.png)
 
 **Customizing the child grid column selection background**
 
-To customize the appearance of the child grid's column selection, use the following CSS code:
+The column selection background in the child grid can be customized by applying the `background-color` property to the `.e-columnselection` selector.
 
 ```css
 .e-detailcell .e-grid .e-columnselection {
     background-color: #aec2ec;
 }
 ```
-In this example, the **.e-columnselection** class targets the background color of the column selection. The `background-color` property can be modified to change the background color of the selected columns.
 
 ![Child Grid cell selection in Angular.](images/angular-child-grid-column-selection.png)
 
 ## See Also
 
-* [Multiple queryString in hierarchy child grid in Angular Grid](https://www.syncfusion.com/forums/165124/multiple-querystring-in-hierarchy-child-grid-in-angular-grid)
+[Multiple queryString in hierarchy child grid in Angular Grid](https://www.syncfusion.com/forums/165124/multiple-querystring-in-hierarchy-child-grid-in-angular-grid)

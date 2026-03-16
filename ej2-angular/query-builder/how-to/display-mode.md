@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display mode in Angular Query builder component
+# Display modes in Angular Query builder component
 
-Display options allow you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#displaymode) property.
+The Query Builder supports two distinct layout orientations: vertical and horizontal. Use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#displaymode) property to switch between these display modes based on your application's layout requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,5 +24,5 @@ Display options allow you to view the Query Builder in Vertically or Horizontall
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs7" %}
 
-> * The default view the query builder component is Horizontal.
-> * The default view the query builder component in Vertical.
+> * The default display mode of the Query Builder component is Horizontal.
+> * Use the displayMode property to switch to Vertical layout when needed.

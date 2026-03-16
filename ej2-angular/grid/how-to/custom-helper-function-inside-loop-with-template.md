@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Use custom helper inside the loop with templates in Angular Grid component | Syncfusion
-description: Learn how to use custom helper functions with ng-template and ngFor to display dynamic templates, such as star ratings, in the Syncfusion Angular Grid component.
+title: Angular Grid – Customizable Column Templates | Syncfusion
+description: Angular Grid provides template helper usage, rendering examples, and guidance to incorporate helper functions within templates safely and efficiently.
 platform: ej2-angular
 control: Use custom helper inside the loop with templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use custom helper inside the loop with templates in Angular Grid component
+# Displaying Custom Templates in Angular Grid component
 
-The Syncfusion Angular Grid permits the use of custom helper functions within `ng-template` directives inside column templates. This enables you to create complex, data-driven templates and integrate utility logic for formatting or display customization.
+The Syncfusion Angular Grid permits the use of custom helper functions within `ng-template` directives inside column templates. This enables creating complex, data-driven templates and integrating utility logic for formatting or display customization.
 
-In the example below, the **Customer Rating** column uses a custom template with the `*ngFor` directive to iterate through an array and generate a collection of `<span>` elements representing stars. The `ngClass` directive is used in conjunction with a helper method (such as **isRatingGreater**) to dynamically set CSS classes for each star, supporting custom logic for interactive or conditionally styled UI.
+In the example below, the "Customer Rating" column uses a custom template with the `*ngFor` directive to iterate through an array and generate a collection of `<span>` elements representing stars. The `ngClass` directive is used in conjunction with a helper method (such as `isRatingGreater`) to dynamically set CSS classes for each star, supporting custom logic for interactive or conditionally styled UI.
 
 CSS rules to render stars and apply highlighting:
 
@@ -27,7 +27,7 @@ CSS rules to render stars and apply highlighting:
 }
 ```
 
-The `ngClass` directive dynamically assigns classes based on the result of the **isRatingGreater** method, highlighting the star using the CSS below:
+The `ngClass` directive dynamically assigns classes based on the result of the `isRatingGreater` method, highlighting the star using the CSS below:
 
 ```css
 .e-grid .rating .star.checked {

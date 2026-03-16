@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Filter menu in Angular Grid component | Syncfusion
-description: Learn here all about Filter menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Filter Menu | Syncfusion
+description: Angular Grid filter menu offers column‑level filtering with configurable dialogs, custom components, operator options, and multi‑value filtering control.
 platform: ej2-angular
 control: Filter menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter menu in Angular Grid component
+# Filter Menu in Angular Grid Component
 
-The filter menu in the Syncfusion Angular Grid component provides a comprehensive and user-friendly interface for advanced data filtering operations. Unlike the filter bar, which offers immediate filtering through input fields, the filter menu presents a dialog-based approach with sophisticated filtering options including multiple operators, custom components, and complex filter conditions.
+The filter menu in the Angular Grid component provides a dialog-based filtering interface that appears when clicking the filter icon in column headers. This menu displays dropdown operators (such as equals, contains, startswith) and an input field for entering filter values, giving precise control over data filtering.
 
-The filter menu is particularly beneficial for applications requiring detailed filtering capabilities, multiple filter conditions per column, or when users need access to various filtering operators based on column data types. This filtering method provides greater control and flexibility compared to other filtering approaches.
+> For basic filtering setup and configuration, refer to the [Filter Feature Guide](filtering#set-up-filtering).
 
-To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to **Menu**. This property determines the type of filter UI that will be rendered, allowing users to apply filters using different operators tailored to each column's data type.
+## Enable filter menu
+
+To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to `Menu`. This property determines the type of filter UI that will be rendered, allowing users to apply filters using different operators tailored to each column's data type.
 
 The following example demonstrates basic filter menu usage in the Syncfusion Angular Grid:
 
@@ -30,12 +32,12 @@ The following example demonstrates basic filter menu usage in the Syncfusion Ang
   
 {% previewsample "page.domainurl/samples/grid/filter-menu-cs1" %}
 
-> * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) must be set as true to enable filter menu.
-> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) must be set as `true` to enable filter menu.
+> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowfiltering) as `false` will prevent filter menu rendering for a particular column.
 
 ## Custom component in filter menu
 
-The filter menu provides enhanced customization capabilities by allowing you to replace default filter components with custom ones. This enables you to create more intuitive filtering experiences tailored to your specific data and user requirements.
+The filter menu provides enhanced customization capabilities by allowing replacement of default filter components with custom ones. This enables creation of more intuitive filtering experiences tailored to specific data and user requirements.
 
 By default, the filter menu provides:
 - **AutoComplete** component for string type columns
@@ -44,13 +46,13 @@ By default, the filter menu provides:
 - **DatePicker** for date type columns
 - **DateTimePicker** for datetime type columns
 
-To implement custom filter components, use the [column.filter.ui](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) property and define the following functions:
+To implement custom filter components, use the [column.filter.ui](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filter) property and define the following functions:
 
-* **create**: Creates the custom component for the filter
-* **write**: Wires events for the custom component to handle user interactions
-* **read**: Reads the filter value from the custom component
+* `create`: Creates the custom component for the filter.
+* `write`: Connects event handlers for the custom component. This function handles changes in the custom filter UI and updates filter behavior accordingly.
+* `read`: Reads the filter value from the custom component. This retrieves the selected filter value when the filter is applied.
 
-The following example demonstrates how to render a DropDownList component for the **CustomerID** column instead of the default AutoComplete:
+The following example demonstrates rendering a DropDownList component for the "Customer ID" column instead of the default AutoComplete:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,9 +73,11 @@ The following example demonstrates how to render a DropDownList component for th
 
 ## Show 24 hours time format in filter dialog
 
-The Syncfusion Angular Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype) as [filterafteropen](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog.
 
-Here is an example that demonstrates how to show 24 hours time format in filter dialog:
+By default, the filter dialog displays time in 12-hour format (AM/PM) for date or datetime columns. To customize this, set the column type as `datetime` and format as "M/d/y HH:mm". Then, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as `filterafteropen` and set the `timeFormat` of the `DateTimepicker` to "HH:mm".
+
+Here is an example that demonstrates the 24-hour time format in the filter dialog:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,16 +93,23 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ## Customizing filter menu operators list
 
-The Syncfusion Angular Grid enables you to customize the default filter operator list by utilizing the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
+Filter operators are comparison methods that determine the match between the filter value and data. Examples include:
 
-The available options for customization are:
+- `equals`: Exact match
+- `contains`: Partial match (substring search)
+- `startswith`: Matches beginning of value
+- `greaterthan`: Numeric/date comparison
 
-* **stringOperator**- defines customized string operator list.
-* **numberOperator** - defines customized number operator list.
-* **dateOperator** - defines customized date operator list.
-* **booleanOperator** - defines customized boolean operator list.
+The Grid enables customizing the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#operators) property. This feature defines custom sets of operators available in the filter menu, allowing restriction or simplification of filtering methods for specific columns.
+
+Customize operators for string, number, date, and boolean data types using these options:
+
+* `stringOperator` - defines customized string operator list.
+* `numberOperator` - defines customized number operator list.
+* `dateOperator` - defines customized date operator list.
+* `booleanOperator` - defines customized boolean operator list.
   
-Here is an example of how to customize the filter operators list in Syncfusion Angular Grid:
+Here is an example to customize the filter operators list in Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,9 +125,9 @@ Here is an example of how to customize the filter operators list in Syncfusion A
 
 ## Filter by multiple keywords using filter menu
 
-The Syncfusion Angular Grid supports filtering by multiple keywords simultaneously through the filter menu dialog. This advanced filtering capability enables users to search for multiple values within a single column, providing more flexible data retrieval options.
+The Grid allows filtering based on multiple keywords simultaneously, rather than a single keyword. This is useful when users need to filter by selecting multiple values from a list.
 
-To enable multiple keyword filtering, set [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#type) as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
+To enable this feature, set [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#type) as `Menu` and render the `MultiSelect` component as a custom component in the filter menu dialog using the `filter.ui` property.
 
 The following example demonstrates multiple keyword filtering implementation:
 
@@ -134,11 +145,13 @@ The following example demonstrates multiple keyword filtering implementation:
 
 ## Customize the default input component of filter menu dialog
 
-You can customize the default settings of input components within the filter menu by utilizing the `params` property within the column definition [filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter). This allows you to modify the behavior of specific filter components to better suit your application requirements.
+The default settings of input components within the filter menu can be customized by utilizing the `params` property within the column definition [filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filter). This allows modification of specific filter component behavior to better suit application requirements.
+
+Each column type uses a default component in the filter menu, which can be customized with specific parameters:
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel/) |
+| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel) |
 | Number      | [NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox)                 |
 | Boolean     | [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list)                   |
 | Date        | [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/angular/documentation/api/datepicker)                         |
@@ -146,7 +159,7 @@ You can customize the default settings of input components within the filter men
 
 > Refer to the Getting Started documentation and API Reference for complete feature details
 
-In the following example, the **OrderID** and **Freight** columns are numeric columns. When you open the filter dialog for these columns, a `NumericTextBox` with a spin button displays by default. Using the `params` property, you can hide the spin button specifically for the **OrderID** column while maintaining it for the **Freight** column.
+In the example provided below, the "Order ID" and "Freight" columns are numeric columns. When the filter dialog opens for these columns, a `NumericTextBox` with a spin button displays by default. However, using the `params` property, the spin button is hidden specifically for the "Order ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,9 +175,7 @@ In the following example, the **OrderID** and **Freight** columns are numeric co
 
 ### Prevent autofill option in autocomplete of menu filter
 
-By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component in the filter menu dialog automatically fills suggestions as users type. However, you may want to disable this autofill behavior to provide a more controlled user experience or when working with specific data patterns.
-
-Disable the autofill feature by setting the [autofill](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition [filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter). 
+By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component in the filter menu dialog automatically fills suggestions as users type. To disable this autofill behavior, set the [autofill](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#autofill) parameter to `false` using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filter).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,9 +191,9 @@ Disable the autofill feature by setting the [autofill](https://ej2.syncfusion.co
 
 ## Hide default filter icons while perform filtering through method
 
-When performing filtering programmatically using methods in the Syncfusion Angular Grid component, you may want to hide the default filter icons to provide a simpler interface.
+When filtering is performed programmatically using grid methods, the default filter icons can be hidden to provide a simpler interface.
 
-To customize the filter icon in the Grid, use the **display** property of the **filtermenu** as mentioned below
+To hide the filter icon in the grid, apply the following CSS rule to the filter menu class:
 
 ```css
 .e-filtermenudiv.e-icons.e-icon-filter {
@@ -190,7 +201,7 @@ To customize the filter icon in the Grid, use the **display** property of the **
 }
 ```
 
-The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
+The following example demonstrates hiding the default filter icons while filtering the "Customer ID" column programmatically using a method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,14 +216,15 @@ The following example demonstrate how to hide the default filter icons while fil
 
 ## Filter menu events
 
-The Syncfusion Angular Grid provides [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events that offer detailed information about filtering actions. These events include a `requestType` argument that specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) being executed.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
 
-**Available filter menu event types:**
-* **filtering** - Triggered during the filtering process
-* **filterbeforeopen** - Triggered before the filter dialog opens
-* **filterafteropen** - Triggered after the filter dialog opens
+**Event types and their purposes**:
 
-These events enable you to implement custom logic, show messages, or modify filter behavior based on specific requirements.
+* `filterbeforeopen` - Triggered before the filter menu dialog opens. Use this to modify menu settings, pre-populate values, or prevent the dialog from opening based on conditions.
+* `filterafteropen` - Triggered after the filter menu dialog opens. Use this to customize the dialog appearance, focus specific input fields, or add additional UI elements.
+* `filtering` - Triggered when a filter is applied. Use this to log filter actions, display custom notifications, or perform additional data processing.
+
+These events enable implementation of custom logic, display of messages, or modification of filter behavior based on specific requirements.
 
 The following example demonstrates filter menu event handling in the Syncfusion Angular Grid:
 
@@ -325,5 +337,5 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
 * [How to change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)

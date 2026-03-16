@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tooltip content template in Angular Tooltip component
 
-The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) can be loaded through template support. Refer to the below code snippet.
+The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) can be loaded through template support. The following code snippet demonstrates this.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

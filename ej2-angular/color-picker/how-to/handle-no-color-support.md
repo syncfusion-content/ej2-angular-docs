@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Handle no color support in Angular Color picker component
 
-The ColorPicker component supports no color functionality. By clicking the no color tile from palette, the selected color becomes `empty` and considered as no color has been selected from color picker.
+The ColorPicker component supports a no color option, allowing users to clear the selection. When the no color tile is clicked from the palette, the color value is cleared, indicating that no color has been selected.
 
 ## Default no color
 
@@ -34,7 +34,7 @@ In the following sample, the first tile of the color palette represents the no c
 
 ## Custom no color
 
-The following sample show the color palette with custom no color option.
+The following sample shows a color palette with a custom no color option.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

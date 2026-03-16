@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog using ng content in Angular Dialog component
+# Render a dialog using ng-content in Angular Dialog component
 
-You can render your own custom component to the dialog content. The below example shows that rendering child element in your custom component, by using ng-content.
+Render custom components in the dialog content using `ng-content`. The following example demonstrates rendering child elements in a custom component using `ng-content`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

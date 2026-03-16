@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
 import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
     SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -34,7 +31,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public marker?: Object;
     public series?: Object;
-    public chartData?: Object[]; 
+    public chartData?: Object[];
     public emptyPointSettings?: Object;
     public emptyPointSettings1?: Object;
     ngOnInit(): void {
@@ -49,7 +46,7 @@ export class AppComponent implements OnInit {
         },
         this.chartData = chartData;
         this.marker = { visible: true };
-        
+
     }
     public seriesRender(args: ISeriesRenderEventArgs) {
         if (args.series.index === 0) {
@@ -67,5 +64,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

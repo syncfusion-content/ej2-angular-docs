@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Position in Angular Tooltip component
 
-Tooltips can be attached to 12 static locations around the target.
-On initializing the Tooltip, you can set the position property with any one of the following values:
+Attach tooltips to 12 static locations around the target. Set the position property to any of the following values when initializing the tooltip:
 
 * `TopLeft`
 
@@ -53,8 +52,7 @@ On initializing the Tooltip, you can set the position property with any one of
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the `showTipPointer` property.
-Pointer positions can be adjusted using the `tipPointerPosition` property that can be assigned to one of the following values:
+Attach or detach the tooltip pointer using the `showTipPointer` property. Adjust pointer positions using the `tipPointerPosition` property, which accepts one of the following values:
 
 * `Auto`
 
@@ -64,7 +62,7 @@ Pointer positions can be adjusted using the `tipPointerPosition` property that c
 
 * `End`
 
-The following code example illustrates how to set the pointer to the start position of the Tooltip.
+The following code example demonstrates how to set the pointer to the start position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +80,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh` method, which auto adjusts the Tooltip over the target.
+Position the tooltip and its tip pointer dynamically based on the target's location. Use the `refresh` method to automatically adjust the tooltip position relative to the target.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,8 +96,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 ## Mouse trailing
 
-Tooltips can be positioned relative to the mouse pointer. This behavior can be enabled or disabled by using the `mouseTrail` property.
-By default, it is set to `false`.
+Position tooltips relative to the mouse pointer by enabling this feature. Enable or disable this behavior using the `mouseTrail` property. By default, it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Maskedtextbox component
+# Accessibility in Angular MaskedTextBox component
 
-The Maskedtextbox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
-
-The accessibility compliance for the Maskedtextbox component is outlined below.
+The MaskedTextBox component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the MaskedTextBox component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,27 +38,27 @@ The accessibility compliance for the Maskedtextbox component is outlined below.
 
 ## WAI-ARIA attributes
 
-The MaskedTextBox is characterized with complete ARIA Accessibility support that helps to access through the on-screen readers and other assistive technology devices. This component is designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox).
+The MaskedTextBox includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox) guidelines for textbox elements.
 
-The MaskedTextBox uses the `textbox` role and following ARIA properties for its element based on its state.
+The MaskedTextBox uses the `textbox` role and the following ARIA properties based on component state:
 
 | **Property** | **Functionality** |
 | --- | --- |
-| aria-live | The `aria-live` attribute indicates the priority of updates to a live region. |
-| aria-disabled | The `aria-disabled` property indicates the disabled state of the MaskedTextBox. |
-| aria-valuenow | The `aria-valuenow` property specifies the current value of the MaskedTextBox. |
-| aria-invalid | The `aria-invalid` property indicates that the user input is incorrect or not within the acceptable ranges. |
-| aria-placeholder | The `aria-placeholder` is a short hint to help the users with data entry when the MaskedTextBox has no value. |
-| aria-labelledby | The `aria-labelledby` property indicates the floating label element of the MaskedTextBox. |
+| aria-live | Indicates the priority of updates to a live region. |
+| aria-disabled | Indicates the disabled state of the MaskedTextBox. |
+| aria-valuenow | Specifies the current value of the MaskedTextBox. |
+| aria-invalid | Indicates that the user input is incorrect or outside acceptable ranges. |
+| aria-placeholder | Provides a short hint for data entry when the MaskedTextBox has no value. |
+| aria-labelledby | References the floating label element associated with the MaskedTextBox. |
 
 ## Ensuring accessibility
 
-The MaskedTextBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The MaskedTextBox component's accessibility is validated using industry-standard tools including [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
 
-The accessibility compliance of the MaskedTextBox component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/masked-textbox.html) in a new window to evaluate the accessibility of the MaskedTextBox component with accessibility tools.
+The accessibility compliance of the MaskedTextBox is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/masked-textbox.html) in a new window to evaluate the MaskedTextBox's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/masked-textbox.html" %}
 
-## See also
+## See Also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)

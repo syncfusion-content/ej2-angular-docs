@@ -1,24 +1,18 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule, ReactiveFormsModule  } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-imports: [
-        FormsModule,ReactiveFormsModule, NumericTextBoxModule, ButtonModule
-    ],
-
-
-standalone: true,
+    imports: [FormsModule, ReactiveFormsModule, NumericTextBoxModule, ButtonModule],
+    standalone: true,
     selector: 'app-root',
     templateUrl: './template.html',
 })
+
 export class AppComponent {
     skillForm?: FormGroup | any;
     build: FormBuilder;
@@ -28,17 +22,14 @@ export class AppComponent {
     }
     createForm() {
         this.skillForm = this.build.group({
-          numeric: ['', Validators.required],
-          username: ['', Validators.required],
+            numeric: ['', Validators.required],
+            username: ['', Validators.required],
         });
     }
     get username() { return this.skillForm?.get('username'); }
     get numeric() { return this.skillForm?.get('numeric'); }
 
     onSubmit() {
-       alert("You have entered the value: " + this.numeric?.value );
-  }
+        alert("You have entered the value: " + this.numeric?.value);
+    }
 }
-
-
-

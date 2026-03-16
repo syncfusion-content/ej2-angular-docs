@@ -367,7 +367,7 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/tailwind.css';
 ```
 
-For this project, the `Tailwind` theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
+For this project, the "Tailwind" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
 ### Step 3: Configure GraphQL Adaptor
 
@@ -645,7 +645,7 @@ Searching provides the capability to find specific records by entering keywords 
 When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the "search" parameter of the **DataManagerInput**. These values are converted as the [search query](https://ej2.syncfusion.com/angular/documentation/data/querying#searching) and processed through the `DataManager`.
 
 **Instruction:**
-1. Enable searching in the Grid, add the "Search" in the Grid’s `toolbar` items. 
+1. Enable searching in the Grid, add the `Search` in the Grid’s `toolbar` items. 
 
     ```html
     [app.component.html]
@@ -718,6 +718,7 @@ The sorting feature in the Grid allows records to be organized in ascending or d
 The `GraphQLAdaptor` automatically passes the sorting details to the server through the "sorted" parameter of the **DataManagerInput** and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
 
 **Instruction:**
+
 1. Enable sorting in the Grid by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
 
     ```html
@@ -1195,7 +1196,7 @@ Open a terminal or Command prompt. Run the server application first, then start 
  
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-GraphQLAdaptor) repository.
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-server) repository.
 
 The application now provides a fully integrated "product" management workflow using the Syncfusion Angular Grid connected to a Node.js GraphQL backend.
 

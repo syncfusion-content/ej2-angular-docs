@@ -706,7 +706,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 
 ```
 
-For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -1831,43 +1831,19 @@ Follow the steps below to set up and run both the backend server and the Angular
 
 ### Running the ASP.NET Core backend server
 
-**Step 1: Build the backend:**
-
-1. Open the terminal or Package Manager Console.
-2. Navigate to the **Grid_Dapper.Server** project directory.
-3. Run the following command:
+- Open a terminal or Package Manager Console, navigate to the **Grid_Dapper.Server** project directory, and run the following commands to build and start the backend server:
 
 ```bash
 dotnet build
-```
-
-**Step 2: Run the backend server:**
-
-Execute the following command:
-
-```bash
 dotnet run
 ```
 
-**Step 3: Verify backend is running:**
-
 - The backend server should start and listen on **https://localhost:7000** (or the port shown in the terminal).
-- Test the API endpoint by opening **https://localhost:7000/api/rooms/ping** in a browser.
-- You should see a JSON response like: `{"ok": true, "time": "2025-03-02T10:30:00Z"}`.
+- Test the API endpoint by opening **https://localhost:7000/api/rooms/ping** in a browser, where you should see a JSON response similar to `{\"ok\": true, \"time\": \"2025-03-02T10:30:00Z\"}`.
 
 ### Running the Angular frontend client
 
-**Step 1: Install dependencies:**
-
-1. Open a new terminal.
-2. Navigate to the **grid_dapper.client** directory.
-3. Run the following command to install all required packages:
-
-```bash
-npm install
-```
-
-**Step 2: Run the Angular development server:**
+- Open a terminal, navigate to the **grid_dapper.client** directory, and run the following command to start the development server:
 
 Execute the following command:
 
@@ -1875,12 +1851,8 @@ Execute the following command:
 ng serve
 ```
 
-**Step 3: Access the application:**
+- Navigate to **http://localhost:4200** (Angular default port), where the application automatically connects to the backend API at **https://localhost:7000/api/rooms**.
 
-1. Open a web browser.
-2. Navigate to **http://localhost:4200** (Angular default port).
-3. The application will automatically connect to the backend API at **https://localhost:7000/api/rooms**.
-4. The hotel reservation management application is now running and ready to use.
 
 **Available features:**
 

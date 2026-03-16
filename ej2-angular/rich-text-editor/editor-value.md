@@ -14,7 +14,7 @@ The Angular Rich Text Editor allows flexible management of content through prope
 
 ## Set placeholder text
 
-The [placeholder](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#placeholder) property specifies text displayed when the editor's content area is empty.
+The [placeholder](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#placeholder) property specifies text displayed when the editor's content area is empty.
 
 You can customize the placeholder's appearance by targeting the `e-rte-placeholder` class in your CSS. This allows you to modify properties such as font family, color, and other styles.
 
@@ -43,15 +43,15 @@ You can customize the placeholder's appearance by targeting the `e-rte-placehold
 
 Set initial content in the Rich Text Editor using one of these approaches:
 
-* The [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property directly sets the editor's content as a string.
+* The [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#value) property directly sets the editor's content as a string.
 
-* The `ng-template` as the [valuetemplate](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#valuetemplate) property allows you to customize the content of the Rich Text Editor.
+* The `ng-template` as the [valuetemplate](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
 To get the content from the Rich Text Editor, use the following approaches:
 
-* Using the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property: This returns the current content of the editor.
+* Using the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#value) property: This returns the current content of the editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,7 @@ To get the content from the Rich Text Editor, use the following approaches:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/editor-value-cs1" %}
 
-* Using the [change](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#change) event: The `change` event is triggered when the Rich Text Editor loses focus and its content has been modified. This event allows you to capture and handle content changes dynamically.
+* Using the [change](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#change) event: The `change` event is triggered when the Rich Text Editor loses focus and its content has been modified. This event allows you to capture and handle content changes dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +116,7 @@ With this setup, any changes made in the Rich Text Editor will update the `edito
 
 ## Auto save
 
-The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#saveinterval) property's value, which is specified in milliseconds.
+The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#saveinterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
 
@@ -134,7 +134,7 @@ The change event will be triggered if the content has been modified since the la
 
 ## Programmatic content access
 
-You can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gethtml) public method to retrieve the Rich Text Editor content.
+You can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#gethtml) public method to retrieve the Rich Text Editor content.
 
 ```typescript
 
@@ -142,7 +142,7 @@ You can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/r
 
 ```
 
-To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gettext) method.
+To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#gettext) method.
 
 ```typescript
 
@@ -151,7 +151,7 @@ To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusi
 ```
 ## Encoded editor value
 
-The [enableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
+The [enableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -261,84 +261,6 @@ By default, the content styles of the Rich Text Editor are not included when ret
   margin-top: 00.6em;
 }
 
-.e-rte-content .e-rte-image.e-imgbreak {
-  border: 0;
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image {
-  border: 0;
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image.e-imginline {
-  display: inline-block;
-  float: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  max-width: calc(100% - (2 * 5px));
-  vertical-align: bottom;
-}
-
-.e-rte-content .e-rte-image.e-imgcenter {
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image.e-imgleft {
-  float: left;
-  margin: 0 5px 0 0;
-  text-align: left;
-}
-
-.e-rte-content .e-rte-image.e-imgright {
-  float: right;
-  margin: 0 0 0 5px;
-  text-align: right;
-}
-
-.e-rte-content .e-rte-img-caption {
-  display: inline-block;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-img-caption.e-caption-inline {
-  display: inline-block;
-  margin: 5px auto;
-  margin-left: 5px;
-  margin-right: 5px;
-  max-width: calc(100% - (2 * 5px));
-  position: relative;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-.e-rte-content .e-rte-img-caption.e-imgcenter {
-  display: block;
-}
-
-.e-rte-content .e-rte-img-caption .e-rte-image.e-imgright,
-.e-rte-content .e-rte-img-caption .e-rte-image.e-imgleft {
-  float: none;
-  margin: 0;
-}
-
 .e-rte-content .e-rte-table {
   border-collapse: collapse;
   empty-cells: show;
@@ -358,11 +280,81 @@ By default, the content styles of the Rich Text Editor are not included when ret
   border-style: dashed;
 }
 
-.e-rte-content .e-rte-img-caption .e-img-inner {
+.e-rte-image.e-img-inline,
+.e-img-caption-container.e-img-inline {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  float: none;
+  max-width: 100%;
+  padding: 1px;
+  vertical-align: bottom;
+}
+
+.e-rte-image.e-img-center,
+.e-rte-image.e-img-break,
+.e-img-caption-container.e-img-center,
+.e-img-caption-container.e-img-break {
+  cursor: pointer;
+  display: block;
+  float: none;
+  margin: 5px auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.e-rte-content .e-rte-image.e-img-left-wrap,
+.e-rte-content .e-img-caption-container.e-img-left-wrap {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+.e-rte-content .e-rte-image.e-img-right-wrap,
+.e-rte-content .e-img-caption-container.e-img-right-wrap {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+
+.e-rte-content .e-rte-image.e-img-left,
+.e-rte-content .e-rte-image.e-img-right,
+.e-rte-content .e-img-caption-container.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-right {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.e-rte-content .e-rte-image.e-img-right,
+.e-rte-content .e-img-caption-container.e-img-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.e-rte-content .e-rte-image.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.e-rte-content .e-img-caption-container.e-img-left-wrap,
+.e-rte-content .e-img-caption-container.e-img-left-wrap {
+  display: inline-block;
+}
+
+.e-rte-content .e-img-caption-container.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-left {
+  display: block;
+}
+
+.e-rte-content .e-img-caption-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.e-rte-content .e-img-caption-container .e-img-caption-text {
   box-sizing: border-box;
   display: block;
   font-size: 16px;
-  font-weight: initial;
+  font-weight: 400;
   margin: auto;
   opacity: .9;
   position: relative;
@@ -370,11 +362,19 @@ By default, the content styles of the Rich Text Editor are not included when ret
   width: 100%;
 }
 
-.e-rte-content .e-rte-img-caption .e-img-wrap {
-  display: inline-block;
-  margin: auto;
-  padding: 0;
-  width: 100%;
+.e-rte-content .e-img-caption-container.e-img-left-wrap .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-right-wrap .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-left .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-right .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-center .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-break .e-img-wrap img {
+  margin-bottom: 0;
+}
+
+.e-rte-content .e-img-caption-container.e-img-center,
+.e-rte-content .e-img-caption-container.e-img-break {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .e-rte-content blockquote {
@@ -397,13 +397,13 @@ The Character Count feature in the Rich Text Editor allows you to track and disp
 
 ### How to enable character count
 
-To enable the character count feature, set the [showCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#showcharcount) property to `true` (default: `false`) to display the character count in the bottom-right corner of the editor.
+To enable the character count feature, set the [showCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#showcharcount) property to `true` (default: `false`) to display the character count in the bottom-right corner of the editor.
 
 >To use quick `Character Count` feature, configure `CountService` in the provider section.
 
 ### Understanding character count color indicators
 
-The character count color changes based on the content length relative to the [maxLength](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#maxlength) property:
+The character count color changes based on the content length relative to the [maxLength](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#maxlength) property:
 
 | Status | Description |
 |---------|----------------|
@@ -425,13 +425,13 @@ The character count color changes based on the content length relative to the [m
 
 ### Setting maximum character limit
 
-You can restrict the number of characters entered in the editor by setting the  [maxLength](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#maxlength) property to a specific numeric value. When set, the maximum allowable character count is displayed alongside the current count at the bottom right of the editor.
+You can restrict the number of characters entered in the editor by setting the  [maxLength](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#maxlength) property to a specific numeric value. When set, the maximum allowable character count is displayed alongside the current count at the bottom right of the editor.
 
 If `maxLength` is not set, there is no limit to the character count in the editor.
 
 ### Retrieving character count programmatically
 
-You can programmatically get the current character count in the editor using the [getCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#getcharcount) public method.
+You can programmatically get the current character count in the editor using the [getCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#getcharcount) public method.
 
 ```typescript
 
@@ -448,7 +448,7 @@ The source code is presented with enhanced formatting and consistent indentation
 
 ### Configuring source code tool in the toolbar
 
-You can add the `SourceCode` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `SourceCode` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -464,7 +464,7 @@ You can add the `SourceCode` tool in the Rich Text Editor using the [toolbarSett
 
 >This functionality can also be enabled through the use of the [CodeMirror](https://codemirror.net/) plugin. It helps to highlight the HTML content and ensures that any modifications in the code view are instantly reflected in the preview mode.
 
-The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#showsourcecode) method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
+The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#showsourcecode) method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
 
 ## See also
 

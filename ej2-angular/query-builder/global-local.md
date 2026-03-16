@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Global local in Angular Query builder component | Syncfusion
-description: Learn here all about Global local in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Query builder component | Syncfusion
+description: Learn here all about Localization in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Global local 
+control: Localization
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in Angular Query builder component
+# Localization in Angular Query builder component
 
-The `Localization` library allows you to localize default text content of the Query Builder. The Query Builder component has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object.
+Localize the Query Builder component to support different languages and cultures. The `Localization` library enables you to customize all UI text in the Query Builder, including labels, buttons, and messages. Define locale values and translation objects to support languages such as Arabic, German, French, and others.
 
 The following list of properties and its values are used in the Query Builder.
 

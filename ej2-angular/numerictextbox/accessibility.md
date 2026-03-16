@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Numerictextbox component
+# Accessibility in Angular NumericTextBox component
 
-The Numerictextbox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
-
-The accessibility compliance for the Numerictextbox component is outlined below.
+The NumericTextBox component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the NumericTextBox component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,31 +38,31 @@ The accessibility compliance for the Numerictextbox component is outlined below.
 
 ## WAI-ARIA attributes
 
-The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton).
+The NumericTextBox includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton) guidelines for spinbutton elements.
 
-The NumericTextBox uses the `spinbutton` role and following ARIA properties to its element based on its state.
+The NumericTextBox uses the `spinbutton` role and the following ARIA properties based on component state:
 
 | **Property** | **Functionality** |
 | --- | --- |
-| aria-live | The `aria-live` attribute indicates the priority of updates to a live region |
-| aria-valuemin | The `aria-valuemin` property specifies the minimum allowable range of the NumericTextBox.|
-| aria-valuemax | The `aria-valuemax` property specifies the maximum allowable range of the NumericTextBox. |
-| aria-disabled | The `aria-disabled` property indicates disabled state of the NumericTextBox. |
-| aria-readonly | The `aria-readonly` property indicates the read-only state of the NumericTextBox. |
-| aria-valuenow | The `aria-valuenow` property specifies the current value of the NumericTextBox. |
-| aria-invalid | The `aria-invalid` property indicates that the user input is incorrect or not within acceptable ranges. |
-| aria-label | The `aria-label` property indicates a string value that labels the NumericTextBox. |
+| aria-live | Indicates the priority of updates to a live region. |
+| aria-valuemin | Specifies the minimum allowable value. |
+| aria-valuemax | Specifies the maximum allowable value. |
+| aria-disabled | Indicates the disabled state of the NumericTextBox. |
+| aria-readonly | Indicates the read-only state of the NumericTextBox. |
+| aria-valuenow | Specifies the current value of the NumericTextBox. |
+| aria-invalid | Indicates that the user input is incorrect or outside acceptable ranges. |
+| aria-label | Provides an accessible label for the NumericTextBox. |
 
 ## Keyboard interaction
 
-Keyboard interaction of the NumericTextBox component has been designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/#spinbutton) described for the NumericTextBox and it is an alternative to mouse actions to interact with the NumericTextBox.
+The NumericTextBox keyboard interaction is based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/#spinbutton) guidelines for spinbutton elements, providing keyboard-only access as an alternative to mouse interaction.
 
-The below table shows shortcut keys and its corresponding usage.
+The following table shows the supported keyboard shortcuts:
 
-| **Keyboard shortcuts** | **Actions** |
+| **Keyboard Shortcut** | **Action** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | Increments the value. |
-| <kbd>Arrow Up</kbd> | Decrements the value |
+| <kbd>Arrow Up</kbd> | Increments the value. |
+| <kbd>Arrow Down</kbd> | Decrements the value. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

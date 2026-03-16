@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Resize in Angular Dialog component
 
-The Dialog supports resizing feature. To resize the dialog, we have to select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
+The Dialog supports resizing. Resize the dialog by selecting and dragging its handle (grip) or any of its edges or borders within the container.
 
-The resizable dialog can be created by setting the [enableResize](https://ej2.syncfusion.com/angular/documentation/api/dialog/#enableresize) property to true, which is used to change the size of a dialog dynamically and view its content with expanded mode. The [resizeHandles](https://ej2.syncfusion.com/angular/documentation/api/dialog/#resizehandles) property can also be configured for all the which directions in which the dialog should be resized. When you configure the target property along with the [enableResize](https://ej2.syncfusion.com/angular/documentation/api/dialog/#enableresize) property, the dialog can be resized within its specified target container.
+Create a resizable dialog by setting the [enableResize](https://ej2.syncfusion.com/angular/documentation/api/dialog/#enableresize) property to `true`. This allows you to change the dialog size dynamically and view content in expanded mode. The [resizeHandles](https://ej2.syncfusion.com/angular/documentation/api/dialog/#resizehandles) property configures the directions in which the dialog can be resized. When you set the target property along with [enableResize](https://ej2.syncfusion.com/angular/documentation/api/dialog/#enableresize), the dialog resizes within the specified target container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,14 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { DateTimeService, LineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { LegendService, DataLabelService, TooltipService, CrosshairService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
 import { Component, OnInit } from '@angular/core';
-
 
 @Component({
 imports: [
@@ -76,6 +69,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

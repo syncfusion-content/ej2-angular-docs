@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion® Angular Chart component visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
 
-The chart component exposes attributes that enable accessibility customization, including:
+The chart component provides properties that enable accessibility customization, including:
 
 * [`accessibilityDescription`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilitydescription) - Provides a text description for the chart, improving support for screen readers.
 * [`accessibilityRole`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilityrole) - Specifies the role of the chart, helping screen readers to identify the element appropriately.
@@ -58,7 +58,7 @@ The [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart#series
 
 ## Title and subtitle
 
-In the Angular chart component, the [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart#titlestyle) and [`subTitleStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart#subtitlestyle) attributes allow you to customize the accessibility of the chart's title and subtitle. The following [`accessibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/titleSettingsModel#accessibility) properties in [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart#titlestyle) and [`subTitleStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart#subtitlestyle) can be customized for accessibility:
+In the Angular chart component, the [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart#title) and [`subTitle`](https://ej2.syncfusion.com/angular/documentation/api/chart#subtitle) properties allow you to customize the accessibility of the chart's title and subtitle. The following [`accessibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/titleSettingsModel#accessibility) properties in [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart#title) and [`subTitle`](https://ej2.syncfusion.com/angular/documentation/api/chart#subtitle) can be customized for accessibility:
 
 * [`accessibilityDescription`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilitydescription) - Provides a text description for the chart title and subtitle, enhancing support for screen readers.
 * [`accessibilityRole`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilityrole) - Specifies the role of the chart title and subtitle, helping screen readers to identify the element appropriately.
@@ -121,7 +121,7 @@ The [`trendlines`](https://ej2.syncfusion.com/angular/documentation/api/chart#tr
 
 ## Zooming
 
-The [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#zoomsettings) attributes allow you to adjust the chart's zooming capability. The following [`accessibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#accessibility) properties in [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#zoomsettings) offer the parameters for accessibility customization:
+The [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#zoomsettings) property allows you to adjust the chart's zooming capability. The following [`accessibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel#accessibility) properties in [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#zoomsettings) offer the parameters for accessibility customization:
 
 * [`accessibilityDescription`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilitydescription) - Provides a text description for the zoom toolkit items, enhancing support for screen readers.
 * [`accessibilityRole`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilityModel#accessibilityrole) - Specifies the role of the zoom toolkit items, helping screen readers to identify the element appropriately.

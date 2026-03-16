@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Template in Angular Uploader component
 
-You can customize the default appearance of the uploader using a template along with buttons.
+You can customize the Uploader's appearance using templates and custom buttons.
 
 ## File list template
 
-The `template` property is used to customize the default appearance of each file in the list. It can be represented as the HTML element or string. The selected or dropped files are displayed as per the template layout provided. The remove and progress bar action is handled using the corresponding events when the template is defined.
+The `template` property customizes the appearance of each file in the list. You can provide an HTML element or string template. Selected or dropped files display according to your template layout. Remove and progress bar actions are handled through corresponding events when a template is defined.
 
 For example, you can display file type icon along with default UI elements.
 
@@ -32,14 +32,13 @@ For example, you can display file type icon along with default UI elements.
 
 ## Custom template
 
-You can design the own template by preventing the default file list including buttons.
-The `showFileList` property is used to display whether the default file list or own file list when you use custom template to upload or remove the files, pass the custom UI argument as true to call `upload`/`remove` public method as follows:
+You can create a completely custom template by hiding the default file list and buttons.
+Set the `showFileList` property to control whether to display the default or custom file list. When using a custom template for upload or remove operations, pass `true` as the second parameter to the `upload` and `remove` methods:
 
-* UploaderObj.upload(filesData, true);
+* `UploaderObj.upload(filesData, true);`
+* `UploaderObj.remove(filesData, true);`
 
-* UploaderObj.remove(filesData, true);
-
-Refer to the following code sample.
+Refer to the following example for implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

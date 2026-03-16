@@ -5,4 +5,4 @@ export let pieData: Object[] = [
     { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
     { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
     { x: 'Nov', y: 15 }, { x: 'Dec', y: 15 }
-];    
+];

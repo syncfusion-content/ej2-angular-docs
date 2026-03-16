@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Time Range Slider in Angular
 
-The time formatting can be achieved same as the date formatting using [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) and [`change`](https://ej2.syncfusion.com/angular/documentation/api/slider/#change) events. The process of time formatting is explained in the below sample.
+Format Range Slider values as time by using the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels and the [`change`](https://ej2.syncfusion.com/angular/documentation/api/slider/#change) event to format tooltips. The following sample demonstrates how to implement time formatting in a slider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

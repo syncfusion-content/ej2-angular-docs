@@ -39,11 +39,11 @@ export class AppComponent implements OnInit {
             {
                 value: 2008,
                 color: '#f7a35c'
-            }, 
+            },
             {
                 value: 2016,
                 color: '#7cb5ec'
-            }, 
+            },
             {
                 color: '#90ed7d'
             }

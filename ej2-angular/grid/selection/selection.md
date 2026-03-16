@@ -1,26 +1,32 @@
 ---
 layout: post
-title: Selection in Angular Grid component | Syncfusion
-description: Learn how to enable and use selection in the Syncfusion Angular Grid component, including selecting rows, cells, columns, touch interactions, toggling selection, and selection persistence.
+title: Angular Grid - Selection | Syncfusion
+description: Angular Grid selection provides a complete overview of selection modes, APIs, and configuration to control selection lifecycle and UI feedback.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Grid component
+# Selection in Angular Grid Component
 
-Selection in the Grid component enables the selection of specific cells, rows, or columns interactively using mouse clicks, arrow keys, or touch gestures. This feature is useful for highlighting, manipulating, or performing actions on selected items in the Grid.
+Selection in the Grid component provides interactive selection of specific cells, rows, or columns within the grid. Selection can be performed through mouse clicks, arrow keys (up, down, left, and right), or touch. This functionality highlights and allows manipulation or actions on specific cells, rows, or columns within the grid.
 
-To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowselection) property to **false**.
+**Disabling selection**
 
-The selection type is set using [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type):
+To disable selection in the grid, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid#allowselection) property to `false`.
 
-* **Single** (default): Only a single row, cell, or column can be selected at a time.
-* **Multiple**: Allows multiple selection for rows, cells, or columns.
+**Selection types**
 
-For multi-selection: press and hold CTRL and click desired rows/cells/columns.  
-To select a range: press and hold SHIFT and click the desired range.
+The Grid supports two selection types, configurable via the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property:
+
+* `Single`: Enables selection of only one row, cell, or column at a time.
+* `Multiple`: Enables selection of multiple rows, cells, or columns.
+
+**Multi-selection controls**
+
+* <kbd>CTRL</kbd> **+ Click:** Select or deselect separate rows, cells or columns.
+* <kbd>SHIFT</kbd> **+ Click:** Select a range of rows, cells or columns between two points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,17 +40,19 @@ To select a range: press and hold SHIFT and click the desired range.
 
 {% previewsample "page.domainurl/samples/grid/selection-cs13" %}
 
-> The Grid loads basic selection features and the `SelectionService` automatically, so you do not need to inject it manually.
+> By default, the Grid component includes essential selection functionality. The Selection module is automatically available without requiring explicit injection. Refer to the [Selection API](https://ej2.syncfusion.com/angular/documentation/api/grid/selection) for complete configuration options.
 
 ## Selection mode
 
-The Grid lets you control the selection mode with [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode):
+The selection mode feature allows switching between different modes for selecting rows, cells, or both within the grid based on specific requirements. This feature highlights and manipulates specific rows or cells in the grid.
 
-* **Row** (default): Allows selection of rows only.
-* **Cell**: Allows selection of cells only.
-* **Both**: Allows selection of rows and cells at the same time.
+To configure selection mode, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property. The Grid component supports three types of selection modes:
 
-Example: Change selection mode dynamically with DropDownList:
+* `Row`: Enables row selection only (default mode).
+* `Cell`: Enables cell selection only.
+* `Both`: Enables simultaneous row and cell selection.
+
+The following example demonstrates dynamically enabling and changing the `selectionSettings.mode` using the `DropDownList` component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,27 +68,39 @@ Example: Change selection mode dynamically with DropDownList:
 
 ## Touch interaction
 
-Grid selection supports touch devices:
+The touch interaction feature in grid provides easy interaction with the grid on touch screen devices. This feature improves the experience on mobile devices and tablets, making it easier to navigate and interact with the grid's content using touch gestures.
 
-**Single Row Selection**: Tap a row to select it.
+**Single Row Selection**: 
 
-**Multi-Row Selection**: Tap a row, then the floating popup, then tap additional rows to select multiple.
+Tapping on a row selects it immediately, providing efficient single-row selection on touch interfaces.
+
+**Multi-Row Selection**: 
+
+Multiple rows can be selected by tapping a row, which triggers a popup as shown in the image. Once the popup is tapped, additional rows can be selected by tapping the required rows, enabling efficient multi-row interaction.
 
 ![Multi row selection](../images/selection.jpg) 
 
-**Multi-Row or Cell Selection**: Use the floating popup to choose and tap to select multiple rows/cells.
+**Multi-Row or Cell Selection**: 
+
+The Grid supports selecting both multiple rows and cells. Tap the popup to switch to multi-row or cell selection mode, then tap desired rows or cells to select them, as shown in the following image:
 
 ![Multi row or cell selection](../images/mselection.jpg)
 
-> Multi-selection requires the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to be **Multiple**.
+> For multi-selection, it requires the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) to be `Multiple`.
+
+**Touch selection example**
+
+The following screenshot illustrates how touch selection appears on a device:
 
 ![Touch Interaction](../images/touch-selection.jpg)
 
 ## Toggle selection
 
-Enable row/cell/column toggling by setting [`selectionSettings.enableToggle`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#enabletoggle) to **true**. Click a selected row, cell, or column to unselect it, and vice versa.
+Toggle selection provides efficient selection state switching by enabling single-click selection and deselection. When this feature is enabled, clicking a selected item deselects it, and clicking an unselected item selects it.
 
-Example:
+To enable the toggle selection feature, set the [selectionSettings.enableToggle](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#enabletoggle) property to `true`.
+
+The following example demonstrates the toggle selection for cells and rows using the `selectionSettings.enableToggle` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,14 +114,14 @@ Example:
 
 {% previewsample "page.domainurl/samples/grid/selection-cs10" %}
 
-> * In multi-selection mode, clicking a selected row without the Ctrl key deselects all other rows, keeping only that row selected. A second click       deselects it.
-> * Toggle selection works for all types. If `checkboxOnly` is **true**, toggle selection from direct click is disabled.
+> * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
+> * Toggle selection is a feature that can be applied to all types of selections. When the [checkboxOnly](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionsettings#checkboxonly) property restricts row or cell selection to only occur through checkbox clicks. When this property is set to `true`, users cannot select rows or cells by clicking directly on them; instead, selection is only possible by clicking the corresponding checkboxes. Refer to the [Checkbox Selection](./check-box-selection#allow-selection-only-through-checkbox-click) feature to learn more about implementing checkbox-only selection.
 
 ## Clear all selection programmatically
 
-Use the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearselection) method to remove all selected rows, cells, or columns.
+Use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/grid#clearselection) method to programmatically clear selected rows, cells, or columns.
 
-Example:
+The following example demonstrates clearing selection by calling the `clearSelection` method in a button click event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,19 +135,20 @@ Example:
 
 {% previewsample "page.domainurl/samples/grid/selection-cs11" %}
 
-> In **Both** mode, calling `clearCellSelection` first clears cell selections, then `clearRowSelection` clears row selections. The order determines which is cleared first.
-> Use `clearRowSelection`, `clearCellSelection`, and `clearColumnSelection` to clear row, cell, or column selections specifically.
+> - In `Both` mode, if calling [clearCellSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#clearcellselection) first, it will clear cell selections, and then if calling [clearRowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#clearrowselection), it will clear row selections. The order of method calls determines which type of selection is cleared first.
+> - To remove a specific selection in a row, cell, or column, utilize the following methods: `clearRowSelection` for clearing row selections, `clearCellSelection` for clearing cell selections, and [clearColumnSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#clearcolumnselection) for clearing column selections.
 
 ## Persist selection
 
-The Persist Selection feature retains selected items in a grid during operations like sorting, filtering, or refreshing. It ensures seamless tracking of selections across grid updates.
+Persist selection maintains selected items across data manipulation and grid refresh operations. This functionality maintains tracking of the selected items across different grid operations.
 
-Set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#persistselection) to **true** to retain selected items after data operations or grid refresh.
+To enable persist selection, set the [selectionSettings.persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) property to `true`.
 
-> * For persist selection, ensure at least one column is a primary key.
-> * Persistence is not supported for cell selection, only for multiple row/column selection.
+> * Persist selection requires at least one "primary key" column in the grid for proper identification and retention of selected items. set the [column.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#isprimarykey) as `true` to define the "primary key" column.
+> * The `persistSelection` feature is not supported for cell selections in the Syncfusion<sup style="font-size:70%">&reg;</sup> angular Grid component.
+> * The `persistSelection` feature is only supported for grid `Multiple` type selections.
 
-Example:
+The following example demonstrates persist selection for rows and columns using the `selectionSettings.persistSelection` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,10 +164,10 @@ Example:
 
 ## See Also
 
-* [Animate the Grid selected row in Angular Grid](https://www.syncfusion.com/forums/156448/animate-the-grid-selected-row-in-angular-grid)
-* [How can I disable the row selection on context menu click in Angular Grid](https://www.syncfusion.com/forums/143449/how-can-i-disable-the-row-selection-on-context-menu-click-in-angular-grid)
-* [How to retrieve the selected records in the Grid in Angular Grid](https://www.syncfusion.com/forums/150200/how-to-retrieve-the-selected-records-in-the-grid-in-angular-grid)
-* [How to prevent tab to focus on a cell when inside a grid in Angular Grid](https://www.syncfusion.com/forums/156333/how-to-prevent-tab-to-focus-on-a-cell-when-inside-a-grid-in-angular-grid)
-* [How to select the first row of the Grid, after the grid refreshed in Angular Grid](https://www.syncfusion.com/forums/152715/how-to-select-the-first-row-of-the-grid-after-the-grid-refreshed-in-angular-grid)
-* [How to select the multiple row at initial render in Angular Grid](https://www.syncfusion.com/forums/156142/how-to-select-the-multiple-row-at-initial-render-in-angular-grid)
-* [How to cancel the selection of first record while adding a new record in Angular Grid](https://www.syncfusion.com/forums/163325/how-to-cancel-the-selection-of-first-record-while-adding-a-new-record-in-angular-grid)
+* [Animate selected row](https://www.syncfusion.com/forums/156448/animate-the-grid-selected-row-in-angular-grid)
+* [Disable row selection on context menu click](https://www.syncfusion.com/forums/143449/how-can-i-disable-the-row-selection-on-context-menu-click-in-angular-grid)
+* [Retrieve selected records](https://www.syncfusion.com/forums/150200/how-to-retrieve-the-selected-records-in-the-grid-in-angular-grid)
+* [Prevent tab focus inside grid](https://www.syncfusion.com/forums/156333/how-to-prevent-tab-to-focus-on-a-cell-when-inside-a-grid-in-angular-grid)
+* [Select first row after refresh](https://www.syncfusion.com/forums/152715/how-to-select-the-first-row-of-the-grid-after-the-grid-refreshed-in-angular-grid)
+* [Select multiple rows at initial render](https://www.syncfusion.com/forums/156142/how-to-select-the-multiple-row-at-initial-render-in-angular-grid)
+* [Cancel selection when adding a new record](https://www.syncfusion.com/forums/163325/how-to-cancel-the-selection-of-first-record-while-adding-a-new-record-in-angular-grid)

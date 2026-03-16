@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { FunnelSeriesService, AccumulationTooltipService, CategoryService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -40,6 +34,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

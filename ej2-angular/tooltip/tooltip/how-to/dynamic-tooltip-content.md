@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Dynamic tooltip content in Angular Tooltip component
 
-The tooltip content can be changed dynamically using the Fetch request.
+Change tooltip content dynamically using Fetch requests.
 
-The Fetch request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property of the tooltip.
+Make the Fetch request within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event. On success, assign the retrieved data to the [content](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property.
 
-When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
+When hovering over icons, the corresponding data is retrieved dynamically and assigned to the tooltip's content.
 
-Refer to the following code snippet to change the tooltip content dynamically.
+Refer to the following code snippet to implement dynamic tooltip content.
 
 ```typescript
 

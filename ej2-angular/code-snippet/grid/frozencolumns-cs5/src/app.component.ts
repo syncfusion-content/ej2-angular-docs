@@ -10,7 +10,7 @@ providers: [FreezeService, PageService, EditService, ToolbarService],
 standalone: true,
     selector: 'app-root',
     template: `
-    <ejs-grid [dataSource]='data' height=315 [frozenColumns]='2' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' [pageSettings]='pageSettings'>
+    <ejs-grid [dataSource]='data' height='250px' [frozenColumns]='2' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' [pageSettings]='pageSettings'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90 isPrimaryKey="true"></e-column>
         <e-column field='OrderDate' headerText='Order Date' width=100 format='yMd' [edit]='datePickerParams'></e-column>

@@ -7,11 +7,11 @@ control: TextBox
 documentation: ug
 ---
 
-# Configure TextBox options in Angular TextBox
+# Configure TextBox Options in Angular TextBox
 
 The Syncfusion Angular TextBox component provides essential features to enhance user experience, including a built-in clear button for quick input reset and the ability to configure custom HTML attributes. This guide covers these primary features along with additional state management capabilities.
 
-## Add a clear button to the TextBox
+## Add a Clear Button to the TextBox
 
 The TextBox component includes a clear button feature that allows users to quickly reset the input value with a single click. The clear button automatically appears when the field contains text and disappears when the field is empty, providing a clean and intuitive user interface.
 
@@ -28,11 +28,11 @@ To enable the clear button functionality, set the [showClearButton](https://ej2.
   
 {% previewsample "page.domainurl/samples/textbox/textbox-component-clearicons-cs1" %}
 
-## Set HTML attributes
+## Set HTML Attributes
 
-The TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) property. This property accepts an object where keys represent attribute names and values represent the corresponding attribute values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
+The TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) property. This property accepts an object where keys represent attribute names and values represent attribute values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
 
-When an attribute is configured through both a dedicated component property and the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) object, the component prioritizes the value set in the dedicated property.
+When an attribute is configured through both a dedicated component property and the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) object, the component prioritizes the dedicated property value.
 
 The following example demonstrates how to configure common HTML attributes for a TextBox:
 
@@ -61,9 +61,9 @@ export class AppComponent {
 }
 ```
 
-## Configure TextBox states
+## Configure TextBox States
 
-### Set the disabled state
+### Set the Disabled State
 
 To disable the TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/#enabled) property to `false`.
 
@@ -79,9 +79,9 @@ To disable the TextBox and prevent user interaction, set the [enabled](https://e
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs8" %}
 
-### Set the read-only state
+### Set the Read-Only State
 
-To make the TextBox read-only while maintaining its visual appearance and allowing text selection, set the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/#readonly) property to `true`.
+Make the TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/#readonly) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,9 +95,9 @@ To make the TextBox read-only while maintaining its visual appearance and allowi
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs9" %}
 
-## TextBox methods
+## TextBox Methods
 
-### Focus management
+### Focus Management
 
 Control the focus state of the TextBox programmatically using the focus methods:
 
@@ -136,9 +136,9 @@ export class AppComponent {
 }
 ```
 
-### Component life cycle methods
+### Component Life Cycle Methods
 
-#### Destroy the component
+#### Destroy the Component
 
 The [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#destroy) method removes the component from the DOM and detaches all event handlers while maintaining the original input element. This method is useful when dynamically removing TextBox components.
 
@@ -169,9 +169,9 @@ export class AppComponent {
 }
 ```
 
-#### Get persist data
+#### Get Persist Data
 
-The [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#getpersistdata) method returns the properties that should be maintained in the persisted state. This is useful when implementing custom persistence logic.
+The [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#getpersistdata) method returns the properties that should be maintained in the persisted state. Use this method when implementing custom persistence logic.
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -202,33 +202,33 @@ export class AppComponent {
 }
 ```
 
-## Add textbox programmatically in Angular Textbox component
+## Add TextBox Programmatically in Angular TextBox Component
 
-The Angular Textbox component can be created programmatically using the `createInput` method from the `ej2-inputs` library. This approach is useful when building dynamic forms or when textbox elements need to be generated based on runtime conditions.
+Create the Angular TextBox component programmatically using the `createInput` method from the `ej2-inputs` library. This approach is useful when building dynamic forms or when textbox elements need to be generated based on runtime conditions.
 
-### Steps to create textbox programmatically
+### Steps to Create TextBox Programmatically
 
-Follow these steps to create a textbox component programmatically:
+Follow these steps to create a TextBox component programmatically:
 
-### Step 1: Import the Input module
+### Step 1: Import the Input Module
 
-Import the `Input` modules from the `ej2-inputs` library as shown below.
+Import the `Input` module from the `ej2-inputs` library as shown below.
 
 ```typescript
 import {Input} from '@syncfusion/ej2-inputs';
 ```
 
-### Step 2: Create the textbox using createInput method
+### Step 2: Create the TextBox Using createInput Method
 
-Pass the HTML Input element as a parameter to the `createInput` method. This method transforms a standard HTML input element into a Syncfusion Textbox component with enhanced styling and functionality.
+Pass the HTML Input element as a parameter to the `createInput` method. This method transforms a standard HTML input element into a Syncfusion TextBox component with enhanced styling and functionality.
 
-### Step 3: Add icons (optional)
+### Step 3: Add Icons (Optional)
 
-Icons can be added to the input by passing the `buttons` property value with the class name `e-input-group-icon` as a parameter to the `createInput` method. This creates input groups with integrated icon buttons for enhanced user interaction.
+Add icons to the input by passing the `buttons` property value with the class name `e-input-group-icon` as a parameter to the `createInput` method. This creates input groups with integrated icon buttons for enhanced user interaction.
 
-### Implementation example
+### Implementation Example
 
-The following example demonstrates how to create textbox components programmatically with and without icons:
+The following example demonstrates how to create TextBox components programmatically with and without icons:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -242,11 +242,11 @@ The following example demonstrates how to create textbox components programmatic
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs5" %}
 
-### Use cases
+### Use Cases
 
-Programmatic textbox creation is particularly beneficial in the following scenarios:
+Programmatic TextBox creation is particularly beneficial in the following scenarios:
 
 - Building dynamic forms where the number of input fields varies based on user selections
 - Creating input components in response to API data or configuration changes
 - Implementing custom form builders or survey applications
-- Adding textbox elements to dynamically generated content areas
+- Adding TextBox elements to dynamically generated content areas

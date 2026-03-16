@@ -20,7 +20,7 @@
     "@angular/router": "17.1.2",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-buttons": "*",
-    "@syncfusion/ej2-angular-grids": "^1.194.0",
+    "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-navigations": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",

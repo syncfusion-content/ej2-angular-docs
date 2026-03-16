@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent nullable input in numerictextbox in Angular Numerictextbox component
+# Prevent nullable input in NumericTextBox in Angular NumericTextBox component
 
-By default, the value of the NumericTextBox sets to null. In some applications, the value of the NumericTextBox should not be null at any instance. In such cases, following sample can be used to prevent nullable input in NumericTextBox.
+By default, the NumericTextBox value can be set to `null`. To ensure the NumericTextBox always contains a value, use the following approach to prevent nullable input.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

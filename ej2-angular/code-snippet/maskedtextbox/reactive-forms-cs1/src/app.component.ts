@@ -1,25 +1,16 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule, ReactiveFormsModule  } from '@angular/forms'
-import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaskedTextBoxModule, MaskedTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, Inject } from '@angular/core';
-import {MaskedTextBoxComponent  } from '@syncfusion/ej2-angular-inputs';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-imports: [
-        FormsModule,ReactiveFormsModule, MaskedTextBoxModule, ButtonModule
-    ],
-
-
-standalone: true,
+    imports: [FormsModule, ReactiveFormsModule, MaskedTextBoxModule, ButtonModule],
+    standalone: true,
     selector: 'app-root',
     templateUrl: './template.html',
 })
+
 export class AppComponent {
     skillForm?: FormGroup | any;
     build: FormBuilder;
@@ -29,17 +20,14 @@ export class AppComponent {
     }
     createForm() {
         this.skillForm = this.build.group({
-          mask: ['', Validators.required],
-          username: ['', Validators.required],
+            mask: ['', Validators.required],
+            username: ['', Validators.required],
         });
     }
     get username() { return this.skillForm?.get('username'); }
     get mask() { return this.skillForm?.get('mask'); }
 
     onSubmit() {
-      alert("You have entered the value: " + this.mask?.value );
-  }
+        alert("You have entered the value: " + this.mask?.value);
+    }
 }
-
-
-

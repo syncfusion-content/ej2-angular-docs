@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
 import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
 import {

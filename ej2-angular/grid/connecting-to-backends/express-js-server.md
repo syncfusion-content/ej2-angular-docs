@@ -95,10 +95,10 @@ npm install -D typescript ts-node nodemon @types/express @types/cors @types/node
 ```
 
 **Package descriptions:**
-- **express** – Web framework for building REST APIs and defining HTTP routes.
-- **cors** – Enables cross-origin requests from the Angular client to the Express server.
-- **typescript, ts-node, nodemon** – Enables TypeScript-based development with auto-reload on file changes.
-- **@types/express, @types/cors, @types/node** – Type definitions for Express, CORS, and Node.js.
+- `express` – Web framework for building REST APIs and defining HTTP routes.
+- `cors` – Enables cross-origin requests from the Angular client to the Express server.
+- `typescript, ts-node, nodemon` – Enables TypeScript-based development with auto-reload on file changes.
+- `@types/express, @types/cors, @types/node` – Type definitions for Express, CORS, and Node.js.
 
 The **server** folder is now created with all required subdirectories, and packages are installed. The project is ready for setting up TypeScript configuration, defining data interfaces, creating API routes, and implementing controller logic.
 
@@ -295,7 +295,7 @@ export default router;
 
 In the Angular application, interactions with the Grid trigger the `UrlAdaptor` to generate structured HTTP request payloads, which the Express.js  backend processes to perform filtering, searching, sorting, and paging operations on the server side.
 
-Create the controller file at **server/src/controllers/patients.controller.ts** to handle all server request operations for data actions. The complete code is available [here](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-expressjs-server/blob/master/server/src/controllers/patients.controller.ts).
+Create the controller file at (**server/src/controllers/patients.controller.ts**) to handle all server request operations for data actions. The complete code is available [here](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-expressjs-server/blob/master/server/src/controllers/patients.controller.ts).
 
 ### Filtering
 
@@ -851,7 +851,7 @@ ej2-angular-grid-with-express-js/
 
 ## Complete sample repository
 
-For a complete working implementation, refer to the [GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-expressjs-server) repository.
+For a complete working implementation, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-expressjs-server) repository.
 
 The repository contains the complete Express.js backend implementation with all controller methods, API routes, TypeScript interfaces, and data models, plus a ready-to-run Angular frontend application.
 

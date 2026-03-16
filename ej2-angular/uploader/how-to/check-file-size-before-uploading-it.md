@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check file size before uploading it in Angular Uploader component
+# Check File Size Before Uploading in Angular Uploader Component
 
-By using [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event, you can get the file size before upload it to server.
-File object contains the file size in bytes only.
-You can convert the size to standard formats (`KB` or `MB`) using [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/#bytestosize) method.
+Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event to obtain file sizes before uploading to the server. The `file` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/#bytestosize) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

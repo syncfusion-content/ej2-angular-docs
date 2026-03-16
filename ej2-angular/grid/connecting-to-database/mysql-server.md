@@ -52,6 +52,8 @@ Ensure the following software and packages are installed before proceeding:
 | 4 | Configure connection strings and register services | [View](#step-5-configure-the-dataconnection) |
 | 5 | Create a Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-angular-grid) |
 | 6 | Handle bulk operations and batch updates | [View](#step-10-perform-crud-operations) |
+| 7 | Run the applications | [View](#running-the-application) |
+| 8 | Explore a complete working sample | [View](#complete-sample-repository) |
 
 ## Setting up the MySQL environment
 
@@ -116,8 +118,8 @@ Before installing NuGet packages, a new ASP.NET Core Web Application must be cre
 3. Search for **ASP.NET Core Web API**.
 4. Select the template and click **Next**.
 5. Configure the project:
-   - **Project name**: "Grid_MySQL.Server" (or your preferred name)
-   - **Location**: Choose your desired folder
+   - **Project name**: "Grid_MySQL.Server" (or a preferred name)
+   - **Location**: Choose a folder
    - **Framework**: Select .NET 8.0 (or latest available)
 6. Click **Create**.
 
@@ -344,7 +346,7 @@ builder.Services.AddLinqToDB(
         )
 );
 
-// 2) Register your typed DataConnection so controllers can inject it
+// 2) Register the typed DataConnection so controllers can inject it
 builder.Services.AddScoped<AppDataConnection>();
 
 var app = builder.Build();
@@ -404,7 +406,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -781,9 +783,9 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle se
         {
             try
             {
-                // Get IQueryable<Transaction> using LinqToDB raw SQL (to match your original pattern)
+                // Get IQueryable<Transaction> using LinqToDB raw SQL (to match the original pattern)
                 IQueryable<Transaction> query = _db.FromSql<Transaction>(
-                    "SELECT * FROM transactiondb.transactions"
+                  "SELECT * FROM transactiondb.transactions"
                 );
 
                 var operation = new QueryableOperation();
@@ -891,9 +893,9 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle fi
         {
             try
             {
-                // Get IQueryable<Transaction> using LinqToDB raw SQL (to match your original pattern)
+                // Get IQueryable<Transaction> using LinqToDB raw SQL (to match the original pattern)
                 IQueryable<Transaction> query = _db.FromSql<Transaction>(
-                    "SELECT * FROM transactiondb.transactions"
+                  "SELECT * FROM transactiondb.transactions"
                 );
 
                 var operation = new QueryableOperation();
@@ -1413,7 +1415,7 @@ export class AppComponent implements OnInit {
 </ejs-grid>
 ```
 
-> - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/grid/columns#isprimarykey) to **true** for a column that contains unique values.
+> - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/grid/columns#isprimarykey) to `true` for a column that contains unique values.
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/grid/columns#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
 > - [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
 
@@ -1566,7 +1568,7 @@ namespace Grid_MySQL.Server.Controllers
                         .Set(t => t.CurrencyCode, r.CurrencyCode)
                         .Set(t => t.TransactionType, r.TransactionType)
                         .Set(t => t.PaymentGateway, r.PaymentGateway)
-                        .Set(t => t.CreatedAt, r.CreatedAt) // keep if you intentionally allow updating CreatedAt
+                        .Set(t => t.CreatedAt, r.CreatedAt) // keep if intentionally allowing updates to CreatedAt
                         .Set(t => t.CompletedAt, r.CompletedAt)
                         .Set(t => t.Status, r.Status)
                         .UpdateAsync();
@@ -1591,43 +1593,20 @@ namespace Grid_MySQL.Server.Controllers
 
 The application consists of two parts: the ASP.NET Core backend server and the Angular frontend client. Both need to be running for the complete application to work.
 
-### Running the ASP.NET Core backend server
+**Run the Server:**
 
-**Step 1: Build the server application:**
-
-1. Open the terminal or Package Manager Console.
-2. Navigate to the **Grid_MySQL.Server** project directory.
-3. Run the following command:
+Open a terminal or Package Manager Console, navigate to the **Grid_MySQL.Server** project directory, and run the following command:
 
 ```powershell
-dotnet build
-```
-
-**Step 2: Run the server application:**
-
-Execute the following command:
-
-```powershell
-dotnet run
+    dotnet build
+    dotnet run
 ```
 
 The server will start and listen on **http://localhost:5283** (or the port shown in the terminal). Keep this terminal open.
 
-### Running the Angular frontend client
+**Run the Angular client:**
 
-**Step 1: Install client dependencies:**
-
-1. Open a new terminal or command prompt.
-2. Navigate to the **grid_mysql.client** directory.
-3. Install the required npm packages:
-
-```bash
-npm install
-```
-
-**Step 2: Run the Angular development server:**
-
-Execute the following command:
+Open a terminal, navigate to the **grid_mysql.client** directory, and run the following command to start the client:
 
 ```bash
 ng serve
@@ -1635,12 +1614,6 @@ ng serve
 
 The Angular development server will start and typically run on **http://localhost:4200**.
 
-### Step 3: Access the application
-
-1. Open a web browser.
-2. Navigate to **http://localhost:4200** to access the Angular Grid application.
-3. The application will automatically connect to the backend API at **http://localhost:5283/api/grid**.
-4. The transaction management application is now running and ready to use.
 
 **Available features:**
 
@@ -1658,3 +1631,9 @@ The Angular development server will start and typically run on **http://localhos
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MySQL).
 
 The application now provides a complete solution for managing transaction data with a modern, user-friendly interface.
+
+## See also
+
+  - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

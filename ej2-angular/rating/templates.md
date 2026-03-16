@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates with Angular Rating component | Syncfusion
-description:  Learn here all about SeleTemplatesction with Angular Rating component of Syncfusion Essential JS 2 and more details.
+description:  Learn here all about Templates with Angular Rating component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Templates
 documentation: ug
@@ -19,9 +19,7 @@ The rating component supports below templates for item customization.
 
 ## Empty (unrated) symbol template
 
-To customize the appearance of **unrated** items, you can use the `emptyTemplate` tag directive. It allows you to specify the desired custom content for the unrated items.
-The `value` and `index` are available in the template context for accessing information about the un-rated item.
-If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the default for both rated and unrated items. You can apply custom styles to differentiate between the rated and unrated states of the items.
+Use the `emptyTemplate` tag directive to customize the appearance of **unrated** rating items. The template context provides `value` and `index` properties for accessing item information. If `fullTemplate` is not defined, `emptyTemplate` serves as the default template for both rated and unrated states. Apply custom styles to visually distinguish between these states.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,8 +40,7 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 
 ## Full (rated) symbol template
 
-To customize the appearance of **rated** items in the rating component, you can use the `fullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
-The `value` and `index` are available in the template context for accessing information about the rated item.
+Use the `fullTemplate` tag directive to customize the appearance of **rated** rating items. The template context provides `value` and `index` properties for accessing item information. This allows complete control over the visual representation of selected/filled items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

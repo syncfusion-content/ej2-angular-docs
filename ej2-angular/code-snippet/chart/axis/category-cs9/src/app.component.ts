@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule} from '@syncfusion/ej2-angular-charts'
-import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService, LegendService, DataLabelService, MultiLevelLabelService, SelectionService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { categoryData } from './datasource';
 @Component({
@@ -26,7 +21,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis: any;
-    
+
     ngOnInit(): void {
         this.chartData = categoryData;
         this.primaryXAxis = {
@@ -38,5 +33,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

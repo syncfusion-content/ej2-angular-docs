@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Angular reactive form in Angular Range Slider component
 
-Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms) forms. Here the sample shown slider validation state based on Angular form [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
+Implement Range Slider validation within Angular [Reactive](https://angular.io/guide/reactive-forms) forms to enforce validation rules and provide real-time feedback. The following sample demonstrates slider state tracking using Angular form validation [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 
-Follow below steps to validate slider within reactive forms.
+Follow the steps below to integrate and validate a slider within a reactive form.
 
 * Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
 

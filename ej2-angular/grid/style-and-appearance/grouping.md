@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Grouping in Angular Grid component | Syncfusion
-description: Learn here all about Grouping in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Grouping Style | Syncfusion
+description: Angular Grid grouping style covers visual customization of group headers, captions, and aggregates to present grouped data consistently.
 platform: ej2-angular
 control: Grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Grid component
+# Grouping Customization in Angular Grid component
 
-Customize the appearance of grouping elements in the Syncfusion Angular Grid component using CSS. This includes modifying the group drop area header, expand/collapse icons, group caption row, and grouping indent cells.
+The appearance of grouping elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
-## Customize the Group Drop Area Header
+## Customize the group drop area header
 
-Modify the appearance of the group drop area header using the following CSS:
+The `.e-groupdroparea` class is used to style the group header element.
 
 ```css
 .e-grid .e-groupdroparea {
     background-color: #132f49;
 }
 ```
-In this CSS, the **.e-groupdroparea** selector applies the background color to the group drop area header.
 
-![Screenshot displaying the customized group drop area header](../images/group-header.png)
+![Group header](../images/group-header.png)
 
-## Customize the Group Expand and Collapse Icons
+## Customize the group expand and collapse icons
 
-Adjust the appearance of the group expand and collapse icons using this CSS:
+The `.e-icon-gdownarrow` and `.e-icon-grightarrow` classes are used to style the expand and collapse icons.
 
 ```css
 .e-grid .e-icon-gdownarrow::before{
@@ -38,13 +37,13 @@ Adjust the appearance of the group expand and collapse icons using this CSS:
 }
 ```
 
-The **.e-icon-gdownarrow** and **.e-icon-grightarrow** selectors target the group expand and collapse icons, respectively. The `content` property sets the Unicode icon; available icon codes may vary depending on the theme. Refer to Syncfusion icon documentation for icon selection.
+In this example, the `content` property is modified to change the icon displayed. Available Syncfusion<sup style="font-size:70%">&reg;</sup> icons can be used based on the active theme.
 
-![Screenshot showing customized group expand or collapse icons](../images/group-expand-or-collapse-icons.png)
+![Group expand or collapse icons](../images/group-expand-or-collapse-icons.png)
 
-## Customize the Group Caption Row and Record Icons
+## Customize the group caption row
 
-Change the appearance of both the group caption row and the associated expand/collapse record icons with the following CSS:
+The `.e-groupcaption` class is used to style the group caption row element, and the `.e-recordplusexpand` and `.e-recordpluscollapse` classes are used for the icons indicating record expansion or collapse.
 
 ```css
 .e-grid .e-groupcaption {
@@ -57,13 +56,11 @@ Change the appearance of both the group caption row and the associated expand/co
 }
 ```
 
-The **.e-groupcaption** selector targets the group caption row, while **.e-recordplusexpand** and **.e-recordpluscollapse** modify the background color of the record expand/collapse icons within the caption row.
+![Group caption row](../images/group-caption-row.png)
 
-![Screenshot illustrating the customized group caption row](../images/group-caption-row.png)
+## Customize the grouping indent cell
 
-## Customize the Grouping Indent Cell
-
-To modify the appearance of the grouping indent cell, use the following CSS:
+The `.e-indentcell` class is used to style the indent cell that appears in grouped grid rows.
 
 ```css
 .e-grid .e-indentcell {
@@ -71,6 +68,4 @@ To modify the appearance of the grouping indent cell, use the following CSS:
 }
 ```
 
-Here, **.e-indentcell** applies a background color to the grouping indent cell.
-
-![Screenshot of the grouping indent cell with custom background color](../images/indent-cell.png)
+![Grouping indent cell](../images/indent-cell.png)

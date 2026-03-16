@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Numeric Range Slider in Angular
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units. The numeric processing is demonstrated below.
+Format numeric values displayed in Range Slider to meet your application requirements. Apply decimal precision, fixed whole numbers, or unit representations (e.g., "$100", "50%"). The following sample demonstrates numeric formatting techniques.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

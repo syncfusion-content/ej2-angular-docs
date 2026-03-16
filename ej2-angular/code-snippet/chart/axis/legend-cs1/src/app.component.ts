@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { CategoryService, LineSeriesService, LegendService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -68,5 +63,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

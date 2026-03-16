@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Dialog editing in Angular Grid component | Syncfusion
-description: Learn here all about Dialog editing in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Dialog Editing | Syncfusion
+description: Angular Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: ej2-angular
 control: Dialog editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dialog editing in Angular Grid component
+# Dialog Editing in Angular Grid Component
 
-Dialog editing is a feature in the Grid component that enables editing of the selected row's data through a dialog window. This approach allows for convenient modification of cell values and saving changes directly to the data source. Dialog editing is especially effective in scenarios where rapid data modification is needed without navigating away from the current context, facilitating efficient updates to multiple fields at once.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component dialog editing provides a powerful, efficient way to edit row data through a dedicated modal dialog window that focuses attention on the editing form. Instead of editing cells directly in the grid, multiple field values can be entered and modified at once in a clean, organized form. The grid automatically saves all changes to the data source without navigating away from the current page making data entry faster, more intuitive, and less error-prone, especially when dealing with complex records that span multiple columns.
 
-To enable dialog editing, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) property to **Dialog**. This property specifies the editing mode for the grid, and when set to **Dialog**, activates the dialog editing feature.
+To enable dialog editing in the grid component, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) property to `Dialog`. This property determines the editing mode for the grid.
 
-The following example demonstrates how to enable dialog editing in the Angular Grid component:
+The following example demonstrates to enable dialog editing in the Angular Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,13 +30,25 @@ The following example demonstrates how to enable dialog editing in the Angular G
 
 ## Customize the edit dialog
 
-The edit dialog can be customized to change its appearance and behavior based on the type of action performed, such as editing or adding a record. Properties like header text, showCloseIcon, and height can be tailored to specific requirements. Additionally, localization strings can be overridden to provide custom text for dialog buttons and elements.
+The edit dialog is a modal window that isolates the editing form and prevents grid interaction until the dialog closes. Customize this dialog to match application needs by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event.
 
-To customize the edit dialog, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event in the Grid component. Use the **requestType** parameter within the event handler to identify the current action (such as **beginEdit** for editing or **add** for record creation), and apply desired customizations accordingly.
+**Customizable options**:
+- Header text, close button visibility, and height
+- Button text and localization strings
+- Dialog behavior based on the editing action
 
-> Refer to the Grid [Default text](../global-local/) list for localization options.
+Use the `requestType` parameter to identify which action triggered the event and apply appropriate customizations:
 
-The following example demonstrates how to customize the edit dialog using the `actionComplete` event:
+| Request Type | Description |
+|--------------|-------------|
+| `beginEdit` | Editing an existing record |
+| `add` | Creating a new record |
+| `save` | Updating a new or existing record |
+| `delete` | Deleting an existing record |
+
+> Refer to the Grid [Default text](../global-local) list for localization options.
+
+The following example demonstrates to customize the edit dialog using the `actionComplete` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +66,16 @@ The following example demonstrates how to customize the edit dialog using the `a
 
 ## Show or hide columns in dialog editing
 
-The grid component supports dynamic show or hide functionality for columns within the dialog editing interface. This flexibility allows selective visibility based on the editing context—such as displaying certain columns only during add or edit operations. To achieve this, handle the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event in the Grid.
+Column visibility can be dynamically controlled in dialog editing mode. The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event enables showing or hiding specific columns based on whether an existing record is being edited or a new record is being added.
 
-The `actionBegin` event triggers with every grid action (edit, add, delete, etc.). Within the event handler, evaluate the **requestType** property to determine the context (`beginEdit` or `add`, for example) and then set the `column.visible` property on targeted columns to control their visibility. Reset these properties after saving as needed.
+The `actionBegin` event is triggered whenever an action is initiated in the grid (editing, adding, or deleting a record). Within the event `requestType` parameter determines to manage column visibility in the event handler:
 
-In this example, the **CustomerID** column is initially hidden, and the **ShipCountry** column is visible. When entering edit mode, **CustomerID** becomes visible and **ShipCountry** is hidden:
+| Request Type | Action | Column Visibility Control |
+|---|---|---|
+| `beginEdit` or `add` | Editing or creating a record | Modify visibility using the `visible` property |
+| `save` | Saving the record | Reset columns to initial visibility state using `visible` property |
+
+In the following example, the "Customer ID" column is rendered as a hidden column, and the "Ship Country" column is rendered as a visible column. In the edit mode, the "Customer ID" column will be changed to a visible state and the "Ship Country" column will be changed to a hidden state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,11 +91,14 @@ In this example, the **CustomerID** column is initially hidden, and the **ShipCo
 
 ## Wizard-like dialog editing
 
-Wizard-like dialog editing enables step-by-step form entry within the Grid, segmenting complex forms into manageable sections. This structured approach guides users efficiently through the data entry process and improves accuracy in scenarios requiring multiple input stages.
+Wizard-like dialog editing divides complex forms into manageable step-by-step sections with efficient navigation. The [editSettings.template](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#template) property enables custom form templates with multiple steps:
 
-To implement wizard-like dialog editing, use the dialog template feature. Assign [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) to **Dialog** and provide a custom template using the [editSettingsTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) property. This template organizes different fields or steps within the wizard flow.
+1. Set [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) to `Dialog`.
+2. Define template sections for each form step.
+3. Add navigation buttons (Previous, Next, Save) between steps.
+4. Implement validation for each step.
 
-The example below demonstrates wizard-like dialog editing in the grid using unobtrusive validation:
+The example below demonstrates the wizard-like dialog editing in the grid using unobtrusive validation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,11 +117,9 @@ The example below demonstrates wizard-like dialog editing in the grid using unob
 
 ## Customize add/edit dialog footer
 
-The grid component allows customization of the dialog's footer section, which appears when editing or adding a row. By default, the footer includes Save and Cancel buttons, but you can add custom buttons, modify their appearance, or introduce specialized actions for the dialog.
+The dialog footer can be customized to add custom buttons or modify button appearance with effortless integration. The default footer displays Save and Cancel buttons. The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event enables adding custom buttons, changing button text, or implementing custom button actions in the dialog footer.
 
-Customize the dialog's footer by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event and utilizing the `dialog` argument to modify the footer content as desired.
-
-In the following sample, the footer section is customized, and action logic is handled via the `dialog` argument in the `actionComplete` event:
+In the following sample, using the `dialog` argument of the `actionComplete` event, the action for the custom button can be customized.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

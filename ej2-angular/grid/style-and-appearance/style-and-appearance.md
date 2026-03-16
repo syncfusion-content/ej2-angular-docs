@@ -1,57 +1,53 @@
 ---
 layout: post
-title: Style and appearance in Angular Grid component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Style and Appearance | Syncfusion
+description: Angular Grid style and appearance provides a consolidated guide to theming, CSS customization, and style tokens to match application design.
 platform: ej2-angular
 control: Style and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Grid component
+# Style and Appearance in Angular Grid Component
 
-The Syncfusion Angular Grid component allows a wide range of appearance customizations using CSS and theming tools. This includes default CSS overrides, comprehensive theme customization, and direct styling of grid elements.
+The Grid component offers various ways to customize its appearance using both default CSS and custom themes. Common approaches:
 
 **Default CSS Overrides**
 
-Apply custom CSS to override the Grid's default styles. This approach enables changes to colors, fonts, spacing, and more. Use browser developer tools to inspect the grid's HTML and identify the necessary CSS classes for styling.
+Custom CSS can override the default styles of the Grid component. This allows changes to colors, fonts, paddings, and more. Inspect the generated HTML of the grid using browser developer tools to identify the relevant CSS classes and styles.
 
-Example: Override the header background color and header text color:
+A basic example demonstrates overriding the grid’s header background color:
 
 ```css
-/* In your component's CSS file */
+/* In the component's CSS file */
 .e-grid .e-headercell {
     background-color: #333; /* Override the header background color */
     color: #fff;
 }
 ```
 
-![Screenshot showing the modified grid header background color](../images/header-background.png)
+![Change header background](../images/header-background.png)
 
 **Using Theme Studio**
 
-Syncfusion Theme Studio enables the creation of custom themes for all controls, including the Grid. This tool provides advanced options to maintain consistent application styling.
+Syncfusion's Theme Studio tool allows creation of custom themes for all controls, including the grid. This advanced approach defines a comprehensive set of styles to achieve a consistent look and feel across an application.
 
-1. Go to [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
-2. Select the Grid control in the left panel.
-3. Customize colors, typography, spacing, and other appearance settings.
-4. Download the generated CSS and include it in your Angular project for consistent theme application.
+1. Visit the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
+2. Select the grid control from the left panel.
+3. Customize various aspects of the control's appearance, such as colors, typography, and spacing.
+4. Download the generated CSS file and include it in the Angular project.
 
-## Customize the Grid Root Element
+## Customize the Grid Root element
 
-Directly style the Syncfusion Angular Grid root element using CSS. For example, update the font family and global appearance:
+The `.e-grid` class is used to style the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 
 ```css
 .e-grid {
-      font-family: cursive;
+    font-family: cursive;
 }
 ```
 
-![Screenshot of the customized Grid root element](../images/whole-grid.png)
-
-In this example, the **.e-grid** class targets the Grid's root element, and the `font-family` is set for all grid content.
-
-In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
+![grid root element](../images/whole-grid.png)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,4 +66,4 @@ In the following sample, the font family of grid content is changed to **cursive
 
 ## See Also
 
-* [Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/style-and-appearance)
+[Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/style-and-appearance)

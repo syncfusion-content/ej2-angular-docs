@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Disabled in Angular Color picker component
 
-To achieve disabled state in ColorPicker, set the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
+To disable the ColorPicker, set the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#disabled) property to `true`. When disabled, the ColorPicker cannot be opened and is not interactive.
 
-The following example shows the `disabled` state of ColorPicker component.
+The following example demonstrates a disabled ColorPicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

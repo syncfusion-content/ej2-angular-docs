@@ -11,7 +11,7 @@ import { GridModule,EditService, ToolbarService, PageService, getObject, GridCom
     selector: 'app-root',
     template: `
         <div class="control-section">
-            <ejs-grid #grid [dataSource]='data' (actionComplete)='onActionComplete($event)' allowPaging='true' [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
+            <ejs-grid #grid [dataSource]='data' (actionComplete)='onActionComplete($event)' allowPaging='true' [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar' height='250px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' [validationRules]='orderIDRules' isPrimaryKey='true' ></e-column>
                     <e-column field='CustomerID' headerText='Customer Name' width='120' [validationRules]='customerIDRules'></e-column>

@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { IAccTextRenderEventArgs, IAccPointRenderEventArgs } from '@syncfusion/ej2-charts';
 
@@ -48,5 +43,3 @@ export class AppComponent implements OnInit {
                 { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' }];
     }
 }
-
-

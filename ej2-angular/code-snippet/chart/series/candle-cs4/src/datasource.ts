@@ -5,4 +5,3 @@ export let chartData: Object[] = [
     { x: 'Apr', open: 160, high: 180, low: 120, close: 140 },
     { x: 'May', open: 150, high: 170, low: 110, close: 130 },
   ];
-  

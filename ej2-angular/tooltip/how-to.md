@@ -12,10 +12,11 @@ domainurl: ##DomainURL##
 
 ## Show Tooltip on disabled elements
 
-By default, Tooltips will not be displayed on disabled elements. However, it is possible to enable this behavior by following the steps below.
-1. Add a disabled element like the `button` element into a div whose display style is set to `inline-block`.
-2. Set the pointer event as `none` for the disabled element (button) through CSS.
-3. Now, initialize the Tooltip for outer div element that holds the disabled button element.
+By default, tooltips do not display on disabled elements. Enable this behavior by following these steps:
+
+1. Wrap the disabled element (e.g., `button`) in a div with `display: inline-block`.
+2. Set the pointer event to `none` for the disabled element using CSS.
+3. Initialize the Tooltip on the outer div element that wraps the disabled button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,11 +32,11 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 
 ## Load HTML tags into Tooltip
 
-The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) template.
+Load HTML tags into the tooltip using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) template.
 
-The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
+You can use HTML tags such as `<div>`, `<span>`, `<b>`, `<i>`, `<u>`, and more. You can also apply style attributes to HTML tags.
 
-Here, Bold, Italic, Underline, and Anchor tags are used.
+This example uses Bold, Italic, Underline, and Anchor tags.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,34 +52,13 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
 
 ## Define Tooltip open mode property
 
-The open mode property of tooltip can be defined on a target that is hovering, focusing, or clicking.
-Tooltip component have the following types of open mode:
+Define the tooltip's open mode to control when it displays on hover, focus, or click actions. The tooltip component supports the following open modes:
 
-    * Auto
-    * Hover
-    * Click
-    * Focus
-    * Custom
-
-** Auto **
-
-Tooltip appears when you hover over the target or when the target element receives the focus.
-
-** Hover **
-
-Tooltip appears when you hover over the target.
-
-** Click **
-
-Tooltip appears when you click a target element.
-
-** Focus **
-
-Tooltip appears when you focus (say through tab key) on a target element.
-
-** Custom **
-
-Tooltip is not triggered by any default action. So, bind your own events and use either open or close public methods.
+* **Auto** - Tooltip appears on hover or when the target element receives focus.
+* **Hover** - Tooltip appears on hover.
+* **Click** - Tooltip appears when you click the target element.
+* **Focus** - Tooltip appears when you focus the target (e.g., using Tab key).
+* **Custom** - Tooltip is not triggered by default actions. Bind your own events and use the `open` or `close` methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,9 +74,9 @@ Tooltip is not triggered by any default action. So, bind your own events and use
 
 ## Create and show Tooltip on multiple targets
 
-Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the Tooltip is initialized only on matched targets within a container.
+Create and display tooltips on multiple targets within a container by assigning specific target elements to the `target` property. The tooltip initializes only on matched targets within the container.
 
-In this case, the Tooltip content is assigned from the title attribute of the target element.
+The tooltip content is derived from the `title` attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,13 +92,13 @@ In this case, the Tooltip content is assigned from the title attribute of the ta
 
 ## Change Tooltip content dynamically
 
-The Tooltip content can be changed dynamically using the [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) request.
+Change tooltip content dynamically using [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) requests.
 
-The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property of the Tooltip.
+Make the AJAX request within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event. On success, assign the retrieved data to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property.
 
-When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
+When hovering over icons, the corresponding data is retrieved dynamically and assigned to the tooltip's content.
 
-Refer to the following code snippet to change the Tooltip content dynamically.
+Refer to the following code snippet to implement dynamic tooltip content.
 
 ```typescript
 
@@ -160,7 +140,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 
 ## Tooltip Content Template
 
-The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) can be loaded through template support. Refer to the below code snippet.
+Load tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) using template support. Refer to the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -176,54 +156,47 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 
 ## Customize Tooltip
 
-The arrow of the Tooltip can be customized as needed by customizing CSS in the sample-side.
-The EJ2 Tooltip component is achieved through CSS3 format and positioned the tip arrow according to the Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
+Customize the tooltip arrow by modifying CSS. The EJ2 Tooltip component uses CSS3 and positions the tip arrow according to tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 
-Here, the tip arrow is customized as Curved Tooltip and Bubble Tooltip.
+This example customizes the tip arrow as a Curved Tooltip and a Bubble Tooltip.
 
-** Curved tip **
+**Curved tip**
 
-The content for the tip pointer arrow has been added. To customize the curved tip arrow, override the following CSS class of tip arrow.
-
-```typescript
-
-      .e-arrow-tip-outer.e-tip-bottom,
-      .e-arrow-tip-outer.e-tip-top {
-           border-left: none !important;
-           border-right: none !important;
-           border-top: none !important;
-      }
-      .e-arrow-tip.e-tip-top {
-           transform: rotate(170deg);
-      }
-
-```
-
-** Bubble tip **
-
-The two `divs`(inner div and outer div) have been added to achieve the bubble tip arrow. To customize the bubble tip arrow, override the following CSS class of tip arrow.
+To customize the curved tip arrow, override the following CSS class:
 
 ```typescript
-
-    .e-arrow-tip-outer.e-tip-bottom, .e-arrow-tip-outer.e-tip-top
-      {
-         border-radius: 50px;
-         height: 10px;
-         width: 10px;
-      }
-
-      .e-arrow-tip-inner.e-tip-bottom, .e-arrow-tip-inner.e-tip-top
-        {
-         border-radius: 50px;
-         height: 10px;
-         width: 10px;
-        }
-
+.e-arrow-tip-outer.e-tip-bottom,
+.e-arrow-tip-outer.e-tip-top {
+     border-left: none !important;
+     border-right: none !important;
+     border-top: none !important;
+}
+.e-arrow-tip.e-tip-top {
+     transform: rotate(170deg);
+}
 ```
 
-These tip arrow customizations have been achieved through CSS changes in the sample level. The Tooltip position can be changed by using the radio button click event.
+**Bubble tip**
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property in a Tooltip.
+Two divs (inner and outer) create the bubble tip arrow. Override the following CSS class to customize:
+
+```typescript
+.e-arrow-tip-outer.e-tip-bottom, .e-arrow-tip-outer.e-tip-top {
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+}
+
+.e-arrow-tip-inner.e-tip-bottom, .e-arrow-tip-inner.e-tip-top {
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+}
+```
+
+Customize tip arrow styling through CSS modifications at the sample level. Change the tooltip position using radio button click events.
+
+Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -239,28 +212,28 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
 
 ## Display Tooltip on SVG and canvas elements
 
-Tooltip can be displayed on both SVG and Canvas elements. You can directly attach the `<svg>` or `<canvas>` elements to show tooltips on data visualization elements.
+Display tooltips on both SVG and Canvas elements. Attach `<svg>` or `<canvas>` elements directly to show tooltips on data visualization elements.
 
-** SVG **
+**SVG**
 
-Create the SVG square element and refer to the following code snippet to render the tooltip on SVG square.
+Create an SVG square element and render the tooltip on it using the following code:
 
 ```typescript
-        <ejs-tooltip cssClass='e-tooltip-css' content='SVG Square' target='#square'>
-            <svg>
-                <rect id="square" class="shape" x="50" y="20" width="50" height="50" style="fill:#FDA600;stroke:none;stroke-width:5;stroke-opacity:0.9" />
-            </svg>
-        </ejs-tooltip>
+<ejs-tooltip cssClass='e-tooltip-css' content='SVG Square' target='#square'>
+    <svg>
+        <rect id="square" class="shape" x="50" y="20" width="50" height="50" style="fill:#FDA600;stroke:none;stroke-width:5;stroke-opacity:0.9" />
+    </svg>
+</ejs-tooltip>
 ```
 
-** Canvas **
+**Canvas**
 
-Create the canvas circle element and refer to the following code snippet to render the Tooltip on Canvas circle.
+Create a canvas circle element and render the tooltip on it using the following code:
 
 ```typescript
-        <ejs-tooltip cssClass='e-tooltip-css' content='Canvas Circle' target='#circle'>
-            <canvas #circle id="circle" class="shape" width="60" height="60"></canvas>
-        </ejs-tooltip>
+<ejs-tooltip cssClass='e-tooltip-css' content='Canvas Circle' target='#circle'>
+    <canvas #circle id="circle" class="shape" width="60" height="60"></canvas>
+</ejs-tooltip>
 ```
 
 {% tabs %}
@@ -277,14 +250,12 @@ Create the canvas circle element and refer to the following code snippet to rend
 
 ## Load HTML pages into Tooltip
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property, which supports both string and HTML tags.
+Load HTML pages into the tooltip using HTML tags such as iframe, video, and map. The [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property accepts both string and HTML tags.
 
-To load an `iframe` element in Tooltip, set the required iframe in the `content` of Tooltip while initializing the Tooltip component. Refer to the following code.
+To load an `iframe` element in the tooltip, set the required iframe in the `content` property when initializing the tooltip component. Refer to the following code:
 
 ```typescript
-
-content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>
-
+content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>'
 ```
 
 {% tabs %}

@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the ui appearance of the control in Angular Maskedtextbox component
+# Customize the UI appearance of the MaskedTextBox in Angular MaskedTextBox component
 
-The appearance of the MaskedTextBox can be changed by adding custom `cssClass` to the component and enabling styles.
-Refer to the following example to change the appearance of the MaskedTextBox.
+The MaskedTextBox appearance can be customized by adding a custom `cssClass` to the component and applying custom styles. The following example demonstrates how to customize the MaskedTextBox appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

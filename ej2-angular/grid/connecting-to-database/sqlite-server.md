@@ -1724,4 +1724,4 @@ The asset management application is now running and ready to use.
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-SQLite).
+A complete, working sample implementation is available in the [GitHub repository]().

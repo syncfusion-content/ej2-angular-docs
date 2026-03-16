@@ -37,7 +37,7 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)='actionBegin($event)'>
+        <ejs-grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)='actionBegin($event)' height='250px'>
             <e-columns>
                 <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                 <e-column field='FirstName' headerText='First Name' textAlign='Left'  width=120></e-column>

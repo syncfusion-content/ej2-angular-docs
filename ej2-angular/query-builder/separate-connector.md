@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Separate Connector in Angular Query builder component
 
-The Query Builder provides the functionality to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as users can connect rules or groups using different connectors, enhancing the complexity and precision of query construction. You can use [`enableSeparateConnector`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#enableSeparateConnector) to perform separate connector functionality.
+Use different connectors (AND/OR) between individual rules and groups within the same parent group. This allows for greater precision in query construction, enabling more complex filtering logic. Enable this feature using the [`enableSeparateConnector`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#enableSeparateConnector) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

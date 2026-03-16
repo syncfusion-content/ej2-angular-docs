@@ -34,6 +34,3 @@ export class AppComponent implements OnInit {
         args.fill = '#ff6347';
     };
 }
-
-
-

@@ -1,5 +1,4 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { ViewChild } from '@angular/core'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
   AccumulationDataLabelService, AccumulationChartComponent } from '@syncfusion/ej2-angular-charts'
@@ -19,7 +18,7 @@ standalone: true,
         </e-accumulation-series-collection>
         <ng-template #noDataTemplate>
                 <div id="noDataTemplateContainer">
-                    <div class="template-align">    
+                    <div class="template-align">
                         <img src="./no-data.png" alt="No Data"/>
                     </div>
                     <div class="template-align">

@@ -16,7 +16,7 @@ import { FormGroup } from '@angular/forms';
 imports: [
         
         GridModule,
-        NumericTextBoxAllModule, DatePickerAllModule, DropDownListAllModule, BrowserModule,ReactiveFormsModule, FormsModule,CommonModule
+        NumericTextBoxAllModule, DatePickerAllModule, DropDownListAllModule,ReactiveFormsModule, FormsModule,CommonModule
     ],
 
 providers: [EditService, ToolbarService],

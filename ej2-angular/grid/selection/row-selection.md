@@ -1,24 +1,26 @@
 ---
 layout: post
-title: Row selection in Angular Grid component | Syncfusion
-description: Learn row selection in Syncfusion Angular Grid for interactive, programmatic, and event-driven single, multiple, and range selections.
+title: Angular Grid - Row selection | Syncfusion
+description: Angular Grid row selection explains single and multi-row selection modes, keyboard behaviors, and events to handle selection changes.
 platform: ej2-angular
 control: Row selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row selection in Angular Grid component
+# Row Selection in Angular Grid Component
 
-Row selection in the Grid component enables the selection of specific rows or ranges of rows through mouse clicks or keyboard navigation (up, down, left, right arrows). This is useful for highlighting, manipulating, or performing actions on specific rows.
+Row selection in the Grid component provides interactive selection of specific rows or ranges of rows within the grid. Row selection can be performed effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when highlighting, manipulating, or performing actions on specific rows within the grid.
 
-> To enable row selection, set the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) property to either **Row** or **Both**.
+> To enable row selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to either `Row` or `Both`. This property determines the selection mode of the grid.
 
 ## Single row selection
 
-To select one row at a time, set [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to **Row** and [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Single**.
+Single row selection provides selecting a single row at a time within the grid. This feature is useful when focusing on specific rows or performing actions on the data within a particular row.
 
-Example:
+To configure single row selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to `Row` and the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Single`. This configuration allows selecting only one row at a time within the grid.
+
+The following example demonstrates single row selection in grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,9 +36,11 @@ Example:
 
 ## Multiple row selection
 
-To allow selecting multiple rows simultaneously, set [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to **Row** and [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to **Multiple**.
+To allow selecting multiple rows simultaneously, set Multiple row selection provides option to select multiple rows within the grid. This feature is useful when performing actions on several rows simultaneously or focusing on specific data areas.
 
-Example:
+To configure multiple row selection, set the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) property to `Row` and the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Multiple`. This configuration allows selecting multiple rows at a time within the grid.
+
+The following example demonstrates multiple rows selection in grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,9 +56,9 @@ Example:
 
 ## Select row at initial rendering
 
-Use the [`selectedRowIndex`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectedrowindex) property to highlight or pre-select a specific row when the Grid is initially rendered.
+A specific row can be selected during the initial rendering of the Grid component. This feature is particularly useful when highlighting or pre-selecting a specific row in the grid. To achieve this, utilize the [selectedRowIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#selectedrowindex) property provided by the Grid component.
 
-Example:
+The following example demonstrates selecting a row at initial rendering:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,13 +74,13 @@ Example:
 
 ## Select rows in any page based on index value
 
-The Grid allows you to select rows in any page based on their index value. This feature is useful when you want to perform specific actions on rows, such as highlighting, applying styles, or executing operations, regardless of their location across multiple pages within the grid.
+The Grid allows selecting rows in any page based on their index value. This feature is useful when performing specific actions on rows, such as highlighting, applying styles, or executing operations, regardless of their location across multiple pages within the grid.
 
-To achieve this, you can utilize the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) method and the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method of the Grid control. By handling the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of `DropDownList` component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
+To achieve this, utilize the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid#selectrow) method and the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid#gotopage) method of the grid control. By handling the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the `DropDownList` component, implement the logic to navigate to the desired page and select the row based on the index value. 
 
-Additionally, by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid, you can maintain the selection of the desired row after completing the paging action.
+Additionally, by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, maintain the selection of the desired row after completing the paging action.
 
-Example:
+The following example demonstrates selecting rows on any page based on their index value using the actionComplete and change events:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,9 +96,11 @@ Example:
 
 ## Multiple row selection by single click
 
-Set [`selectionSettings.enableSimpleMultiRowSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#enablesimplemultirowselection) to **true** to select or deselect multiple rows with single clicks (no need for CTRL or SHIFT keys).
+The Grid component allows multiple row selection by simply clicking on rows one by one without pressing <kbd>CTRL</kbd> or <kbd>SHIFT</kbd> keys. When clicking on a row, it becomes selected, and clicking on another row adds it to the selection without deselecting the previously selected rows. To deselect a previously selected row, click on the row again.
 
-Example:
+To configure simple multiple row selection, set the [selectionSettings.enableSimpleMultiRowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#enablesimplemultirowselection) property to `true`. 
+
+The following example demonstrates configuring multiple row selection with a single click on a grid row using the `enableSimpleMultiRowSelection` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,15 +114,15 @@ Example:
 
 {% previewsample "page.domainurl/samples/grid/selection-cs9" %}
 
-## Select rows externally
+## Select rows programmatically
 
-You can programmatically select single rows, multiple rows, and ranges of rows.
+Single row selection, multiple row selection, and range of row selection can be performed externally in a grid using built-in methods. This feature allows interacting with specific rows within the grid programmatically.
 
 ### Single row selection
 
-Use the [`selectRow`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectrow) method with an index to select a single row.
+To achieve single row selection, use the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectrow) method. This method allows programmatic selection of a specific row within the grid by specifying the row index.
 
-Example:
+The example below demonstrates single row selection in the grid. The row index is obtained from a textbox component and passed to the `selectRow` method. Upon clicking the "Select Row" button, the corresponding row is selected:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,9 +138,9 @@ Example:
 
 ### Multiple rows selection
 
-Use the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectrows) method with an array of indexes.
+To achieve multiple row selection, use the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectrows) method. This method allows selecting a collection of rows by specifying their indexes, providing the ability to interact with multiple rows together.
 
-Example:
+The following example demonstrates selecting multiple rows in the grid by calling the `selectRows` method within the button click event and passing an array of row indexes as arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,9 +156,11 @@ Example:
 
 ### Range of rows selection
 
-Use the [`selectRowsByRange`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#selectrowsbyrange) method to select a range of rows by their start and end indexes.
+Range selection in the grid provides selecting a continuous range of rows within the grid. This feature is particularly useful when performing actions on multiple rows simultaneously or focusing on a specific range of data.
 
-Example:
+To achieve range selection, use the [selectRowsByRange](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#selectrowsbyrange) method. This method selects a range of rows from start and end row indexes.
+ 
+The following example demonstrates selecting a range of rows within the grid by obtaining the selected rows start index and end index through textbox components. Then pass these start index and end index as arguments to the `selectRowsByRange` method. When the "Select Rows" button is clicked, a range of rows is selected within the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,9 +176,9 @@ Example:
 
 ## Select grid rows based on certain condition
 
-Rows can be selected programmatically based on data conditions using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) and [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) events. Combine this with `rowDataBound` to identify target rows.
+Specific rows in the Angular Grid component can be programmatically selected based on a certain condition. This feature is particularly useful when dynamically highlighting or manipulating specific rows in the grid based on custom conditions. This functionality can be achieved using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid#selectrows) method in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event of the grid.
 
-Example: Select grid rows where **EmployeeID** is greater than **3**:
+The following example demonstrates selecting grid rows only when the "Employee ID" column value is greater than "3".
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,11 +192,13 @@ Example: Select grid rows where **EmployeeID** is greater than **3**:
 
 {% previewsample "page.domainurl/samples/grid/custom-column-cs5" %}
 
-## How to get selected row indexes
+## Get selected row indexes 
 
-Retrieve the indexes of selected rows in the Grid using [`getSelectedRowIndexes`](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrowindexes).
+The indexes of the currently selected rows in the Grid component can be retrieved. This feature is particularly useful when performing actions or operations specifically on the selected rows. 
 
-Example:
+To achieve this, invoke the [getSelectedRowIndexes](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrowindexes) method, which returns an array of selected row indexes.
+
+The following example demonstrates getting selected row indexes using the `getSelectedRowIndexes` method: 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -213,11 +223,11 @@ providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
   selector: 'app-root',
   template: ` 
-        <div style="padding: 10px 0px 20px 0px">
+        <div style="padding: 5px 0px 5px 0px">
           <button ejs-button class="btn" (click)="click()">Get selected row indexes</button>
         </div>
         <p id="message" *ngIf="showMessage">Selected row indexes: {{ selectedRowIndexes }}</p>
-        <ejs-grid #grid [dataSource]="data" height="315px" 
+        <ejs-grid #grid [dataSource]="data" height="300px" 
         [selectionSettings]="selectionOptions">
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
@@ -260,11 +270,15 @@ export class AppComponent implements OnInit {
 
 {% previewsample "page.domainurl/samples/grid/selection-cs8" %}
 
-## How to get selected records on various pages
+## Get selected records on various pages
 
-Enable [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#persistselection)the property to **true** and retrieve selected records even after navigating between grid pages, using [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords).
+The Grid component allows retrieving the selected records even when navigating to different pages. This feature is useful when working with large data sets and allows performing actions on the selected records across multiple pages. 
 
-Example:
+To persist the selection across pages, enable the [persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) property. By default, this property is set to `false`. To enable it, set the value to `true` in the `selectionSettings` property of the Grid component.
+
+To retrieve the selected records from different pages, use the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method. This method returns an array of the selected records.
+
+The following example demonstrates retrieving selected records from various pages using the `getSelectedRecords` method and displaying the "Order ID" values of those records in a dialog when the "Show Selected Records" button is clicked:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -359,13 +373,15 @@ interface Order {
 
 {% previewsample "page.domainurl/samples/grid/selection-cs12" %}
 
-> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/#columns) property.
+> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property.
 
-## How to get selected records
+## Get selected records
 
-Retrieve the data objects of selected rows using [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords).
+Getting selected records enables retrieving the data of the selected rows from the Grid component. This is particularly useful when performing actions on the selected data or displaying specific information based on the selected rows.
 
-Example: Show the selected record count:
+To retrieve the selected records, use the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method. This method enables obtaining an array of objects representing the selected records.
+
+The following example displays the selected row count using the `getSelectedRecords` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -381,10 +397,7 @@ import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-g
 import { CommonModule } from '@angular/common';
 
 @Component({
-imports: [
-        GridModule,CommonModule,
-        ButtonModule
-    ],
+imports: [GridModule,CommonModule,ButtonModule],
 providers: [EditService, ToolbarService, PageService, FilterService],
 standalone: true,
   selector: 'app-root',
@@ -441,9 +454,11 @@ export class AppComponent implements OnInit {
 
 ## Clear row selection programmatically
 
-Use the [`clearRowSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearrowselection) method to clear any existing row selections. Works for both **Multiple** and **Single** selection types.
+Clearing row selection programmatically in the Grid component is a useful feature when removing any existing row selections. To achieve this, use the [clearRowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#clearrowselection) method.
 
-Example:
+> The `clearRowSelection` method is applicable when the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) is set to `Multiple` or `Single`.
+
+The following example demonstrates clearing row selection by calling the `clearRowSelection` method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -459,14 +474,17 @@ Example:
 
 ## Row selection events
 
-The Angular Grid provides several row selection events:
+The Grid provides several events related to row selection that allow responding to and customizing the behavior of row selection. These events provide control over various aspects of row selection. The following are the available row selection events:
 
-- [`rowSelecting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselecting): Fires before a row is selected, allows cancellation or validation.
-- [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected): Fires after a row is selected.
-- [`rowDeselecting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdeselecting): Fires just before a selected row is deselected, allows custom logic.
-- [`rowDeselected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdeselected): Fires after a row is deselected.
+[rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselecting): This event is triggered before any row selection occurs. It provides an opportunity to implement custom logic or validation before a row is selected, allowing control over the selection process.
 
-Example: Row selection is canceled if **CustomerID** is **VINET** in `rowSelecting`, and the background color changes are handled according to **Freight** values in other events.
+[rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselected): This event is triggered after a row is successfully selected. Use this event to perform actions or updates when a row is selected.
+
+[rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselecting): This event is triggered just before a selected row is deselected. It allows performing custom logic or validation to decide whether the row should be deselected or not.
+
+[rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected): This event is triggered when a particular selected row is deselected. Use this event to perform actions or validations when a row is no longer selected.
+
+In the following example, row selection is canceled when the value of "Customer ID" is equal to "VINET" within the `rowSelecting` event. The background color changes to green when the value of "Freight" is greater than 10 and less than or equal to 140, triggering the `rowDeselected` event. The background color changes to red when the value of "Freight" is less than or equal to 10 during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of "Freight" is greater than 140 during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -557,15 +575,15 @@ export class AppComponent implements OnInit {
 
 ## Pass selected records to server using AJAX
 
-The Syncfusion Angular Grid allows you to select multiple or single records and send them to the server using AJAX requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+The Syncfusion Angular Grid allows selecting multiple or single records and sending them to the server using AJAX requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
 
-To achieve passing selected records to the server using AJAX requests in the Syncfusion Angular Grid, follow these steps:
+To pass selected records to the server using AJAX requests in the Syncfusion Angular Grid, follow these steps:
 
-**Step 1:** Open Visual Studio and create an **Angular and ASP.NET Core** project named **SelectedRecord**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**Step 1:** Open Visual Studio and create an "Angular and ASP.NET Core" project named "SelectedRecord". To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **Step 2 :** Create a simple Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation link.
 
-**Step 3:** In your Angular component HTML file (e.g., **app.component.html**), add a button to trigger the AJAX call and include the Syncfusion Angular Grid with necessary configurations:
+**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the AJAX call and include the Syncfusion Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using AJAX.
 
 ```html
 <button ejs-button (click)="click($event)">Pass the selected records to controller</button>
@@ -580,8 +598,6 @@ To achieve passing selected records to the server using AJAX requests in the Syn
   </ejs-grid>
 </div>
 ```
-
-**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button/#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using AJAX. Add the following code:
 
 ```ts
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -621,7 +637,7 @@ export class AppComponent {
 
 ```
 
-**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -707,7 +723,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -771,7 +787,7 @@ namespace SelectedReacord.Server.Models
 
 ```
 
-**Step 7:** In the **Program.cs** file, add the following code:
+**Step 7:** In the "Program.cs" file, add the following code:
 
 ```cs
 
@@ -805,21 +821,21 @@ app.Run();
 
 ```
 
-The following screenshot shows how to pass selected records to the server:
+The following screenshot shows passing of selected records to the server:
 
 ![Pass selected records to server using ajax](../grid/images/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
-The Syncfusion Angular Grid allows you to select multiple or single records and send them to the server using Fetch requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+The Syncfusion Angular Grid allows selecting multiple or single records and sending them to the server using Fetch requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
 
-To achieve passing selected records to the server using Fetch requests in the Syncfusion Angular Grid, follow these steps:
+To pass selected records to the server using Fetch requests in the Syncfusion Angular Grid, follow these steps:
 
-**Step 1:** Open Visual Studio and create an **Angular and ASP.NET Core** project named **SelectedRecord**. To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
+**Step 1:** Open Visual Studio and create an "Angular and ASP.NET Core" project named "SelectedRecord". To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **Step 2 :** Create a simple Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation link.
 
-**Step 3:** In your Angular component HTML file (e.g., **app.component.html**), add a button to trigger the Fetch call and include the Syncfusion Angular Grid with necessary configurations:
+**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the Fetch call and include the Syncfusion Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using Fetch.
 
 ```html
 <button ejs-button (click)="click($event)">Pass the selected records to controller</button>
@@ -834,8 +850,6 @@ To achieve passing selected records to the server using Fetch requests in the Sy
   </ejs-grid>
 </div>
 ```
-
-**Step 4:** In your Angular component (**app.component.ts**), you need to handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button/#click) event. When clicked, retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method from the Syncfusion Angular Grid and send them to the server using Fetch. Add the following code:
 
 ```ts
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -875,7 +889,7 @@ export class AppComponent {
 
 ```
 
-**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -961,7 +975,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -1025,7 +1039,7 @@ namespace SelectedReacord.Server.Models
 
 ```
 
-**Step 7:** In the **Program.cs** file, add the following code:
+**Step 6:** In the "Program.cs" file, add the following code:
 
 ```cs
 
@@ -1059,6 +1073,6 @@ app.Run();
 
 ```
 
-The following screenshot shows how to pass selected records to the server:
+The following screenshot shows passing selected records to the server:
 
 ![Pass selected records to server using fetch](../grid/images/row-selected-record.png)

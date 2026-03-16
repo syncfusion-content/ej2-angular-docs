@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Checkbox selection in Angular Grid component | Syncfusion
-description: Learn how to enable and customize checkbox selection in Syncfusion Angular Grid, including row selection, limits, and header customization.
+title: Angular Grid - Check box selection | Syncfusion
+description: Angular Grid check box selection explains enabling checkbox columns, select-all behavior, and integration with selection APIs to manage multi-select scenarios.
 platform: ej2-angular
 control: Check box selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox selection in Angular Grid component
+# Check box Selection in Angular Grid Component
 
-Checkbox selection in the Grid component enables the selection of multiple records by displaying a checkbox in each row. This feature is particularly helpful for performing bulk actions or operations on selected records.
+Checkbox selection provides functionality to select multiple grid records through checkboxes in each row. This selection method allows efficient bulk operations on selected records within the grid.
 
-To add a checkbox in each row, use a column with [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property set to **checkbox**.
+To render checkboxes in each grid row, configure a checkbox column by setting the column [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property to `checkbox`.
 
-Example: Enable checkbox selection using the `type` property in the Grid component:
+Here's an example of enabling checkbox selection using the `type` property in the Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,17 +28,16 @@ Example: Enable checkbox selection using the `type` property in the Grid compone
 
 {% previewsample "page.domainurl/samples/grid/selection-cs3" %}
 
-> By default, selection is allowed by clicking either a grid row or the checkbox within that row. To restrict selection so it is only possible via checkboxes, set [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxonly) to **true**.
-> To persist selection across operations, set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) to **true**. Persisted selection requires a primary key column defined via [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey).
+> Selection can be persisted on all the operations using [selectionSettings.persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) property. For persisting selection on the grid, any one of the column should be defined as a primary key using [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property.
 
 ## Checkbox selection mode
 
-Checkbox selection mode allows selecting rows via checkboxes or clicking directly on the rows. This can be controlled with [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxmode):
+The checkbox selection mode provides two options that can be configured through the [selectionSettings.checkboxMode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxmode) property:
 
-* **Default**: Multiple rows can be selected by clicking one row at a time. Clicking a row toggles its checkbox.
-* **ResetOnRowClick**: Clicking a row resets previous selections. To select multiple rows, press and hold the CTRL key; to select a range, hold SHIFT and click the rows.
+* `Default`: This mode allows multiple row selection by clicking rows sequentially. When a row is clicked, the associated checkbox switches to the "checked" state.
+* `ResetOnRowClick`: This mode resets previously selected rows when a new row is clicked. Multiple selections remain possible using <kbd>CTRL</kbd> **+ Click** for individual rows or <kbd>SHIFT</kbd> **+ Click** for row ranges.
 
-Example: Dynamically enable and change the `checkboxMode` using the DropDownList component:
+In the following example, it demonstrates dynamically configuring the `checkboxMode` using the `DropDownList` component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,9 +53,9 @@ Example: Dynamically enable and change the `checkboxMode` using the DropDownList
 
 ## Hide select-all checkbox in column header
 
-The select-all checkbox in the column header can be hidden for customization by defining an empty [`HeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) in the grid column.
+When the column type is set to [checkbox](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type), a select-all checkbox appears in the column header by default. To hide the select-all checkbox, define an empty [HeaderTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) directive in the grid column.
 
-Example: Hide the select-all checkbox using an empty `HeaderTemplate`:
+Here's an example of hiding selectall checkbox in column header using empty `HeaderTemplate` directive in the Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,13 +71,13 @@ Example: Hide the select-all checkbox using an empty `HeaderTemplate`:
 
 ## Conditional row selection
 
-The `isRowSelectable` callback determines which rows in the Data Grid can be selected. It evaluates each row's data and returns **true** for rows that should be selectable and **false** for those that should not.
+The `isRowSelectable` callback determines which rows can be selected by evaluating each row's data and returning `true` for selectable rows and `false` for those that should not be selectable.
 
-**Local data:** The callback runs once when the grid initializes and evaluates all records because the full dataset is already available on the client.
+**Local data:** The callback executes once during grid initialization, evaluating all records because the full dataset is available on the client side.
 
-**Remote data:** The callback runs only for the rows displayed on the current page when the grid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
+**Remote data:** The callback executes only for rows displayed on the current page when the grid first loads. The callback re-executes whenever the grid fetches new data, such as during paging, filtering, or sorting operations, to re-evaluate newly visible rows.
 
-In the example below, it prevents selection of rows with canceled orders.
+The example below prevents selection of rows with canceled orders:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,11 +92,13 @@ In the example below, it prevents selection of rows with canceled orders.
 
 ## Select a single row in checkbox selection mode
 
-To allow only one row to be selected at a time in checkbox selection mode, use the [`rowSelecting`](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselecting) event to call the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid#clearselection) method before making a new selection.
+Single-row selection in checkbox mode ensures that only one row remains selected at a time, with any previous selections cleared when a new row is selected.
 
-> With [`checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxmode) set to **ResetOnRowClick**, the previously selected row is reset automatically when a new row is selected (row only, not checkbox).
+To configure single-row selection in checkbox mode, handle the [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselecting) event and use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/grid#clearselection) method to clear previous selections before selecting a new row.
 
-Example: Enable single-row selection using the `clearSelection` method in `rowSelecting`:
+> When the [checkboxMode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxmode) property is set to `ResetOnRowClick`, clicking a new row automatically resets the previously selected row. This behavior applies to row clicks rather than checkbox clicks and represents the default grid behavior.
+
+Here's an example of selecting a single row in checkbox selection mode using the `clearSelection` method along with the `rowSelecting` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,9 +114,7 @@ Example: Enable single-row selection using the `clearSelection` method in `rowSe
 
 ## Allow selection only through checkbox click
 
-To restrict selection so it is only performed by clicking on checkboxes, set [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxonly) to **true**.
-
-Here's an example of how to enable selection only through checkbox click using `checkboxOnly` property:
+By default, the Grid component allows selection by clicking either a grid row or the checkbox within that row. To restrict selection to checkbox clicks only, set the [selectionSettings.checkboxOnly](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#checkboxonly) property to `true`.
  
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

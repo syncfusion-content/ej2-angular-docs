@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Model dialog with rte in Angular Dialog component
+# Modal dialog with rich text editor in Angular Dialog component
 
-This section explains how to render model dialog with the Rich Text Editor component. when you render model dialog with the Rich Text Editor component, the first row of the content will be hidden because the dialog container and its wrapper elements are styled with display as none. so, the editor’s toolbar does not get proper offset width and rendered above the edit area container. In this scenario, we could use the `refreshUI` method on the Dialog `open` event.
+This section explains how to render a modal dialog with the Rich Text Editor component. When rendering a modal dialog with the Rich Text Editor, the first row of content may be hidden because the dialog container and its wrapper elements are styled with `display: none`. As a result, the editor's toolbar does not get proper offset width and renders above the edit area. In this scenario, use the `refreshUI` method on the Dialog `open` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

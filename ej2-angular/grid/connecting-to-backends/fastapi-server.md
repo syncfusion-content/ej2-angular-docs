@@ -138,9 +138,8 @@ app.include_router(
 )
 ```
 
-> 
-- CORS configuration → All origins are permitted during development, ensuring the local Angular app can communicate without preflight issues.
-- Router registration → The "products" router is mounted under the "/products" prefix, ensuring the API endpoints remain organized and easy to navigate.  
+> * CORS configuration → All origins are permitted during development, ensuring the local Angular app can communicate without preflight issues.
+> * Router registration → The "products" router is mounted under the "/products" prefix, ensuring the API endpoints remain organized and easy to navigate.  
 
 The application starts successfully and serves product endpoints under the configured "/products" prefix.
 
@@ -1044,7 +1043,7 @@ Open the URL shown in the terminal which is typically **http://localhost:4200/**
 
 ## Complete Sample Repository
 
-For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-grid-with-fastapi-server) repository.
+For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-fastapi-server-master) repository.
 
 The application demonstrates a complete product management workflow with a Syncfusion Angular Grid connected to a Python FastAPI REST backend through a single, predictable transport.
 

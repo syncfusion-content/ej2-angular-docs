@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting max height to the dialog in Angular Dialog component
+# Set max height for the dialog in Angular Dialog component
 
-By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. We have an option to set the maxHeight of the Dialog in the [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/dialog/#beforeOpen) event.
+By default, the dialog's maximum height is calculated based on the target container. If no target is specified, the dialog uses the body as the target and calculates the maximum height accordingly. Set the dialog's maximum height using the [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/dialog/#beforeopen) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Ticks in Angular Range Slider component
 
-The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) in Slider supports you to easily identify the current value/values of the Slider. It contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#largestep). The value of the major ticks alone will be displayed in the slider. In order to enable/disable the small ticks, use the [`showSmallTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#showsmallticks) property.
+The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) property adds visual reference points to the slider, helping users identify available values. Ticks are configured using [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#smallstep) (minor ticks) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#largestep) (major ticks). By default, only major tick values are displayed. Use the [`showSmallTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#showsmallticks) property to show or hide minor ticks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks
 
 ## Step
 
-When the Slider is moved, it increases/decreases the value based on the step value. By default, the value is increased/decreased by 1. Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/slider/#step) property to change the increment step value.
+The [`step`](https://ej2.syncfusion.com/angular/documentation/api/slider/#step) property controls the increment value when the slider is moved. By default, values increase or decrease by 1. Customize this value to suit your application requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ When the Slider is moved, it increases/decreases the value based on the step val
 
 ## Min and Max
 
-Enables the minimum/starting and maximum/ending value of the Slider, by using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/slider/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/slider/#max) property. By default, the minimum value is 1 and maximum value is 100. In the following sample the slider is rendered with the min value as 100 and max value as 1000.
+Set the minimum and maximum values of the Range Slider using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/slider/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/slider/#max) properties. By default, the minimum value is 1 and the maximum value is 100. The following sample demonstrates a slider configured with a minimum of 100 and maximum of 1000.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

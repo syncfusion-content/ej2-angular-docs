@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Database data in Angular Chart component
 
-* Create the chart data table using database. You can find the database table below,
+* Create the chart data table using a database. You can find the database table below.
 
 ![Chart data](./images/chart-data.png)
 
-You can assign data from the data base to the chart. The **series.dataSource** property should be provided with the data from the server, it accepts **JavaScript array of objects**.
+You can assign data from the database to the chart. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property of the series should be provided with the data from the server; it accepts a **JavaScript array of objects**.
 
-```bash
+```typescript
   [
     { ID: 1, Date: "2000-06-11", Product_A: 10, Product_B: 40, Product_C: 80 },
     { ID: 2, Date: "2002-03-07", Product_A: 40, Product_B: 60, Product_C: 82 },
@@ -28,7 +28,7 @@ You can assign data from the data base to the chart. The **series.dataSource** p
 
 ```
 
-* Using the Angular CLI, we have used to service to get data from database
+* Using the Angular CLI, use a service to get data from the database.
 
 ```bash
 ng generate service chart
@@ -50,18 +50,23 @@ export class ChartService {
 
 ```
 
-* Create a function call inside ngOnInit() to fetch the chart data from the service in app.componnet.ts file.
+* Create a function call inside [`ngOnInit()`](https://angular.io/api/core/OnInit#ngOnInit) to fetch the chart data from the service in `app.component.ts` file.
+
+app.component.ts (partial)
 
 ```typescript
-
 ngOnInit(): void {
   this.getData();
 }
- getData(): void {
-    this.chartService.get().subscribe(data => {
-      this.data = data;
-    });
+
+getData(): void {
+  this.chartService.get().subscribe(data => {
+    this.data = data;
+  });
+}
 ```
+
+app.module.ts
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -71,7 +76,7 @@ import { ChartModule, DateTimeService, LineSeriesService, DateTimeCategoryServic
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartService } from './chart.service';
-import { HttpClientModule, HttpClientJsonpModule   } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -79,16 +84,16 @@ import { HttpClientModule, HttpClientJsonpModule   } from '@angular/common/http'
     AppComponent
   ],
   imports: [
-    BrowserModule, ChartModule, HttpClientModule , HttpClientJsonpModule,
+    BrowserModule, ChartModule, HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ChartService,  DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService],
+  providers: [ChartService, DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
 
-Angular **HttpClient** method returns an **Observable**.
+The Angular [`HttpClient`](https://angular.io/api/common/http/HttpClient) method returns an [`Observable`](https://rxjs.dev/guide/observable).
 
 chart.service.ts
 
@@ -101,20 +106,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChartService {
+  constructor(private http: HttpClient) { }
+
   get(): Observable<any> {
     return this.http.get('YOUR BACKEND URL');
-  }
-  constructor(private http: HttpClient) { }
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-      console.error(error);
-      console.log(`${operation} failed: ${error.message}`);
-      return (result as any);
-    };
   }
 }
 
 ```
+
+In `app.component.ts`, configure the [`primaryXAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#primaryxaxis) and [`primaryYAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#primaryyaxis) properties to define the chart axes, and set the [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#title) property to display a chart heading. The [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype) and [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#labelformat) properties are configured on the X-axis to parse the date values correctly. Each series uses the [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type), [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname), [`name`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#name), and [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#marker) properties to define how the data is rendered.
 
 app.component.ts
 
@@ -124,18 +125,17 @@ import { ChartService } from './chart.service';
 
 @Component({
   selector: 'app-root',
-  template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+  template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
                 <e-series-collection>
-                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_A' name='Sales'></e-series>
-                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_B' name='Sales'></e-series>
-                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_C' name='Sales'></e-series>
+                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_A' name='Product A'></e-series>
+                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_B' name='Product B'></e-series>
+                  <e-series [dataSource]='data' type='Line' xName='Date' [marker]='marker' yName='Product_C' name='Product C'></e-series>
                 </e-series-collection>
               </ejs-chart>`,
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
   public primaryXAxis: object;
-  public chartData: object[];
   public title: string;
   public primaryYAxis: object;
   public marker: object;
@@ -163,6 +163,6 @@ export class AppComponent implements OnInit {
 
 ```
 
- The below screenshot shows the chart, that can fetched the data from the server,
+The following screenshot shows the chart that fetches the data from the server.
 
 ![Formatted Chart data from database](./images/chart.png)

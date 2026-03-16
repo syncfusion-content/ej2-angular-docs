@@ -8,10 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Async in Angular Uploader component
+# Asynchronous file upload in Angular Uploader component
 
-The uploader component allows you to upload the files asynchronously.
-The upload process requires save and remove action URL to manage the upload process in the server.
+The Uploader component supports asynchronous file uploads to the server.
+The upload process requires save and remove action URLs to manage file operations on the server.
 
     *   The save action is necessary to handle the upload operation.
     *   The remove action is optional, one can handle the removed files from server.
@@ -20,8 +20,8 @@ The File can be upload automatically or manually. For more information, you can 
 
 ## Multiple file upload
 
-By Default, the uploader component allows you to select and upload multiple files simultaneously.
-The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about `multiple` file upload settings.
+By default, the Uploader component allows you to select and upload multiple files simultaneously.
+The selected files are displayed in a list and persist until you clear them by clicking the clear button in the footer. The `multiple` attribute is added to the input element to enable multiple file selection. The following example demonstrates multiple file upload configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,10 +38,10 @@ The selected files are organized in a list for every file selection until you cl
 ## Single file upload
 
 You can select and upload a single file by disabling the multiple file selection property.
-The file list item is removed for every selection and it always maintain a single file to upload.
-You can remove the multiple attributes form the original input element of file by enabling the single file upload property.
+When single file upload is enabled, the previously selected file is replaced with each new selection, ensuring only one file exists in the list.
+The `multiple` attribute is removed from the input element to restrict file selection to a single file.
 
-The following example explains about single file upload settings.
+The following example demonstrates single file upload configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,14 +57,14 @@ The following example explains about single file upload settings.
 
 ## Save action
 
-The save action handler upload the files that needs to be specified in the `saveUrl` property.
-The save handler receives the submitted files and manages the save process in server.
-After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
+The save action handler processes file uploads specified in the `saveUrl` property.
+The save handler receives submitted files and manages the save operation on the server.
+After successfully uploading files to the server, the file name text color changes to green and the remove icon changes to a delete icon.
 
-    *   When the file is uploaded successfully, the event **success** triggers to handle the operation after upload.
-    *   When the file is failed to upload, the event **failure** triggers with information, which cause this failure.
+* When a file uploads successfully, the `success` event is triggered to handle post-upload operations.
+* When a file fails to upload, the `failure` event is triggered with details about the error.
 
-You can cancel the upload process by setting the upload event argument **eventargs.cancel** to true.
+You can cancel the upload process by setting the `cancel` property of the event argument to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,15 +186,15 @@ The following example demonstrates the client-side action for saving files on th
 
 ## Remove action
 
-The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handle the remove operation in server.
+The remove action is optional. Specify the URL to handle the removal of files from the server. The remove handler receives file information and processes the deletion operation on the server.
 
-    * When the files are removed successfully from server, the success event triggers to denote the process has completed.
-    * When remove action fails, the event **failure** triggers with information, which cause failure in remove process.
+* When files are successfully removed from the server, the `success` event is triggered to confirm the operation is complete.
+* When a remove operation fails, the `failure` event is triggered with details about the error.
 
-> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments **eventArgs.operation**.
+> You can differentiate between save and remove operations by checking the `operation` property in the `success` or `failure` event arguments.
 
-You can remove the files which is not uploaded locally by clicking the remove icon.
-In this case, the success or failure events will not be triggered.
+You can remove files that have not been uploaded to the server by clicking the remove icon.
+In this case, the `success` or `failure` events are not triggered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

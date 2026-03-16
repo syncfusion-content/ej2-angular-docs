@@ -10,14 +10,16 @@ domainurl: ##DomainURL##
 
 # Chart Dimensions in Angular Chart Component
 
-## Size for Container
+## Container Size
 
-The chart can render to its container size. Set the size via inline styles or CSS as shown below.
+Charts render to the size of their parent container. You can control sizing via the parent container (CSS or inline style) or by using the chart's `width` and `height` properties directly.
 
-```
-    <div style="width:650px; height:350px;">
-        <ejs-chart id="chart-container"></ejs-chart>
-    </div>
+Chart can render to its container size. You can set the size via inline or CSS as demonstrated below.
+
+```html
+<div style="width:650px; height:350px;">
+  <ejs-chart id="chart-container"></ejs-chart>
+</div>
 ```
 
 ```javascript
@@ -31,10 +33,6 @@ import { Component, OnInit } from '@angular/core';
     </div>`
 })
 export class AppComponent {
-    constructor(){
-        /*
-        */
-    }
 }
 ```
 
@@ -50,9 +48,9 @@ export class AppComponent {
   
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs1" %}
 
-## Size for Chart
+## Chart Size
 
-Set the chart size directly using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart#height) properties.
+You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart#height) properties.
 
 <!-- markdownlint-disable MD036 -->
 **In Pixel**
@@ -74,7 +72,8 @@ You can set the size of chart in pixel as demonstrated below.
 
 **In Percentage**
 
-When percentage values are used, the chart dimensions are relative to the container. For example, a height of `50%` renders the chart to half the container height.
+By setting value in percentage, chart gets its dimension with respect to its container. For example,
+when the height is ‘50%’, chart renders to half of the container height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,4 +88,3 @@ When percentage values are used, the chart dimensions are relative to the contai
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs3" %}
 
 > Note:  When you do not specify the size, it takes `450px` as the height and window size as its width.
-> Note: When no size is specified, the chart defaults to a height of `450px` and uses the window width.

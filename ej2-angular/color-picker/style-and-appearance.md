@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Color picker component
 
-To modify the ColorPicker appearance, you need to override the default CSS of ColorPicker component. Please find the list of CSS classes and its corresponding section in ColorPicker component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+Customize the ColorPicker appearance by overriding its default CSS styles. The following table lists the CSS classes used to style different ColorPicker elements. Alternatively, create a custom theme using the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
-| CSS Class | Purpose of Class |
+| CSS Class | Purpose |
 |-----|-----|
-|.e-custom-picker .e-container .e-handler|To customized Color Picker selection handler|
-|.color-picker.e-dropdown-popup ul .e-container|To customize the Color Picker container|
-|.color-picker.e-dropdown-popup ul .e-item.e-palette-item|To customize the Color Picker pallete item|
-|.color-picker.e-dropdown-popup .e-container .e-switch|To customize the Color Picker switch control|
-|.color-picker.e-dropdown-popup .e-container .e-slider-preview|To customize the Color Picker slider control|
+|.e-custom-picker .e-container .e-handler|Customizes the color selection handler appearance|
+|.color-picker.e-dropdown-popup ul .e-container|Customizes the main ColorPicker container|
+|.color-picker.e-dropdown-popup ul .e-item.e-palette-item|Customizes individual palette color tiles|
+|.color-picker.e-dropdown-popup .e-container .e-switch|Customizes the mode switcher button|
+|.color-picker.e-dropdown-popup .e-container .e-slider-preview|Customizes the slider and color preview area|

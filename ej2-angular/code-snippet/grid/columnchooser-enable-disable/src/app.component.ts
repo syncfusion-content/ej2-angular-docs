@@ -13,12 +13,12 @@ import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
     standalone: true,
     selector: 'app-root',
     template: `
-      <div style="padding: 20px 0px 20px 0px">
+      <div style="padding: 5px 0px 5px 0px">
         <label style="padding-right: 10px">Enable and disable search option</label>
         <ejs-switch #switch id="switch" [checked]="true" (change)="change($event)">
         </ejs-switch>
       </div>
-      <ejs-grid [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [showColumnChooser]= 'true'>
+      <ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' height='260px' [showColumnChooser]= 'true'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' width='120' textAlign="Right"></e-column>
             <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign="Right"></e-column>

@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Adaptive in Angular Grid component | Syncfusion
-description: Learn here all about Adaptive in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Adaptive | Syncfusion
+description: Angular Grid adaptive explains responsive behavior, layout adjustments, and configuration to optimize grid usability on mobile and small screens with examples.
 platform: ej2-angular
 control: Adaptive 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptive in Angular Grid component
+# Adaptive in Angular Grid Component
 
-The Grid component features a redesigned user interface optimized for smaller screens and mobile devices. This adaptive interface automatically adjusts filter, sort, column chooser, column menu (supported only when `rowRenderingMode` is set to Horizontal), and edit dialogs to provide optimal usability across different screen sizes. Additionally, the grid can render row elements vertically to maximize data visibility on narrow screens.
+The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
 ## Render adaptive dialogs
 
-The Syncfusion Angular Grid provides adaptive dialog rendering to enhance the experience on devices with limited screen space. Enable this functionality using the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property, which renders filter, sort, and edit dialogs in full-screen mode on smaller screens.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance usability on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
 
-To activate the adaptive view, apply the `e-bigger` CSS class to the grid's parent element.
+Additionally, apply the `e-bigger` class to the grid's parent element to enable the adaptive view.
 
-The following sample demonstrates how to enable adaptive dialogs in the Syncfusion Angular Grid:
+The following sample demonstrates to enable adaptive dialogs in the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,11 +34,11 @@ The following sample demonstrates how to enable adaptive dialogs in the Syncfusi
 
 ## Vertical row rendering
 
-The Grid component supports vertical row rendering, which displays row elements in a vertical layout rather than the traditional horizontal format. This feature improves data readability on narrow screens by stacking cell content vertically. Enable vertical rendering by setting the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to **Vertical**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
 
->The default row rendering mode is **Horizontal**.
+> The default row rendering mode is `Horizontal`.
 
-The following sample demonstrates dynamic switching between **Vertical** and **Horizontal** row rendering modes using a DropDownList:
+The following sample demonstrates dynamic switching between `Vertical` and `Horizontal` row rendering modes using a DropDownList:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,12 +54,7 @@ import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule
-    ],
-
+imports: [GridModule,DropDownListModule],
 providers: [PageService,
                 SortService,
                 FilterService,
@@ -164,11 +159,11 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/adaptive-cs2" %}
 
-> The [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property must be enabled for vertical row rendering to function properly.
+> The [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property must be enabled for vertical row rendering to function properly.
 
 ### Supported features by vertical row rendering
 
-Vertical row rendering supports the following Grid features:
+Vertical row rendering supports the following grid features:
 
 * Paging, including page size dropdown
 * Sorting
@@ -177,7 +172,7 @@ Vertical row rendering supports the following Grid features:
 * Dialog editing
 * Aggregates
 * Infinite scrolling
-* Toolbar - Available options include **Add**, **Filter**, **Sort**, **Edit**, **Delete**, **Search**, and **Toolbar template** when their respective features are enabled. The toolbar displays a three-dotted icon containing additional features such as **ColumnChooser**, **Print**, **PdfExport**, **ExcelExport**, or **CsvExport** once these features are activated. Refer to the following image for reference.
+* Toolbar - Options like `Add`, `Filter`, `Sort`, `Edit`, `Delete`, `Search` and `toolbarTemplate` are available when their respective features are enabled. The toolbar dynamically includes a three-dotted icon, containing additional features like `ColumnChooser`, `Print`, `PdfExport`, `ExcelExport`, or `CsvExport`, once these features are enabled. Please refer to the following snapshot.
 
 ![VerticalmodeColumnMenu](./images/VerticalmodeColumnMenu.gif)
 
@@ -185,13 +180,13 @@ The following image shows the adaptive grid with enabled paging and pager dropdo
 
 ![AdaptivePagerDropdown](./images/PagerDropdown_Adaptive.gif)
 
-> The Column Menu feature, including grouping, sorting, autofit, filter, and column chooser operations, is exclusively available when the Grid uses **Horizontal** [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode).
+> The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the grid in `Horizontal` [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#rowrenderingmode).
 
 ## Rendering an adaptive layout for smaller screens alone
 
-By default, the adaptive UI layout renders on both mobile devices and desktop browsers when [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) is set to **true**. The Grid provides an option to render the adaptive layout exclusively for mobile screen sizes by setting the [adaptiveUIMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#adaptiveuimode) property to **Mobile**. The default value is **Both**.
+By default, adaptive UI layout is rendered in both mobile devices and desktop mode too while setting the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property as `true`. Now the DataGrid component has an option to render an adaptive layout only for mobile screen sizes. This can be achieved by specifying the `AdaptiveUIMode` property value as `Mobile`. The default value of the `AdaptiveUIMode` property is `Both`.
 
-> The [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property behavior depends on the [adaptiveUIMode](https://ej2.syncfusion.com/angular/documentation/api/grid/#adaptiveuimode) setting.
+> The [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property behavior depends on the [adaptiveUIMode](https://ej2.syncfusion.com/angular/documentation/api/grid#adaptiveuimode) setting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -285,4 +280,4 @@ export class AppComponent implements OnInit {
 
 ## See Also
 
-* [Effective ways to utilize responsiveness](https://www.syncfusion.com/blogs/post/essential-js-2-effective-ways-to-utilize-responsiveness-in-the-angular-grid.aspx)
+[Effective ways to utilize responsiveness](https://www.syncfusion.com/blogs/post/essential-js-2-effective-ways-to-utilize-responsiveness-in-the-angular-grid.aspx)

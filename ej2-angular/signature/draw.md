@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Draw
 
-The [`draw`](https://ej2.syncfusion.com/angular/documentation/api/signature/#draw) method is used to drawn a text as signature with different font families like Arial, Serif, with different font sizes. It accepts text, font family, font size as its parameters. The default font family is “Arial”, and the default font size is “30”.
+The [`draw`](https://ej2.syncfusion.com/angular/documentation/api/signature/#draw) method renders text as a signature with customizable font properties. It accepts text, font family, and font size as parameters. Default values: `fontFamily` = "Arial", `fontSize` = "30".
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

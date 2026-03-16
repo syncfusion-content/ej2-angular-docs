@@ -10,12 +10,7 @@ import { GridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
+imports: [ GridModule, DropDownListAllModule],
 providers: [PageService],
 standalone: true,
   selector: 'app-root',
@@ -29,7 +24,7 @@ standalone: true,
     (change)="valueChange($event)">
   </ejs-dropdownlist>
   </div>
-    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' allowPaging='true' allowTextWrap='true' [textWrapSettings]='wrapSettings' height='255'>
+    <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' allowPaging='true' allowTextWrap='true' [textWrapSettings]='wrapSettings' height='237'>
         <e-columns>
             <e-column field='Inventor' headerText='Inventor Name' width='180' textAlign="Right"></e-column>
             <e-column field='NumberofPatentFamilies' headerText="Number of Patent Families" width='180' textAlign="Right"></e-column>

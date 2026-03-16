@@ -407,3 +407,4 @@ dotnet run
 5. **WebSocket Support**: Verify WebSocket protocol is enabled on your hosting environment
 6. **Error Handling**: Implement comprehensive try-catch blocks and error logging
 7. **Proper Disposal**: Clean up connections in `ngOnDestroy()` to prevent memory leaks
+

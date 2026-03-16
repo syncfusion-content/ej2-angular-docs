@@ -8,4 +8,3 @@ export let stepData: Object[] = [
     { x: 2011, y: 365 },
     { x: 2012, y: 350 },
   ];
-  

@@ -3,18 +3,18 @@ layout: post
 title: Attachments in Angular Chat UI component | Syncfusion
 description: Checkout and learn about attachments with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Chat UI 
+control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File Attachments in ##Platform_Name## Chat UI component
+# File Attachments in Angular Chat UI component
 
-The Chat UI component supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#enableattachments) property and customize the behavior through the [attachmentSettings](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#attachmentsettings) configuration.
+The Chat UI component supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#enableattachments) property and customize the behavior through the [attachmentSettings](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#attachmentsettings) configuration.
 
 ## Enable file attachments
 
-Enable file attachment support by setting the [enableAttachments](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#enableattachments) property to `true`. By default, it is `false`.
+Enable file attachment support by setting the [enableAttachments](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#enableattachments) property to `true`. By default, it is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ Enable file attachment support by setting the [enableAttachments](https://ej2.sy
 
 ## Configure attachment settings
 
-Use the [attachmentSettings](https://ej2.syncfusion.com/react/documentation/api/chat-ui/index-default#attachmentsettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
+Use the [attachmentSettings](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#attachmentsettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
 
 ### Setting saveUrl and removeUrl
 

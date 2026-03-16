@@ -2,18 +2,13 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { CommandModel, CommandClickEventArgs, GridComponent, Column, IRow, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DialogModule
-    ],
-
+imports: [GridModule,DialogModule, CommonModule],
 providers: [EditService, CommandColumnService],
 standalone: true,
   selector: 'app-root',

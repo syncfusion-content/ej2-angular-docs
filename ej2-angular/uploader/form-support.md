@@ -8,18 +8,18 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form Support in Angular Uploader Component
+# Form support in Angular Uploader component
 
-The uploader component works with HTML form like default file input.
-The following configuration is must to make the uploader work inside the form.
+The Uploader component integrates seamlessly with HTML forms, functioning like a standard file input.
+The following configuration is required to use the Uploader within a form:
 
-    *   `saveUrl` and `removeUrl` must be null.
-    *   `autoUpload` must be disabled.
-    *   `name` attribute must be added in input element.
+* Set `saveUrl` and `removeUrl` to `null`.
+* Disable `autoUpload`.
+* Add a `name` attribute to the input element.
 
-The selected or dropped files are received as a collection in form action when the form is submitted.
-The form action handles the server-side operations that manage the file upload process.
-When you reset the form, the file list and data will be cleared.
+When the form is submitted, selected or dropped files are received as a collection in the form action.
+The form action handles server-side operations for file upload processing.
+Resetting the form clears the file list and associated data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,10 +35,10 @@ When you reset the form, the file list and data will be cleared.
 
 ## Template-driven forms
 
-By using `ngModel` directive, you can bind the model to the uploader in template-driven forms.
-For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms)
+Use the `ngModel` directive to bind the model to the Uploader in template-driven forms.
+For more information, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms).
 
-The following sample demonstrates how to render uploader component with required validation inside the template-driven forms.
+The following example demonstrates how to integrate the Uploader component with required validation in a template-driven form:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +54,11 @@ The following sample demonstrates how to render uploader component with required
 
 ## Reactive forms
 
-You can render the uploader component inside the reactive forms.
-The reactive forms rendered with the help of `FormGroup`.
-For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/reactive-forms)
+You can integrate the Uploader component within reactive forms.
+Reactive forms are created using the `FormGroup` class.
+For more information, refer to the [Angular Documentation](https://v17.angular.io/guide/reactive-forms).
 
-The following sample demonstrates how to render uploader component with required validation inside the `reactive forms`.
+The following example demonstrates how to integrate the Uploader component with required validation in a reactive form:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Exporting Templates in Angular Grid control | Syncfusion
-description: Learn here all about Exporting grids with templates in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Excel Exporting Templates | Syncfusion
+description: Angular Grid Excel export with templates customizes cell content and layout using column, detail, and caption templates with images, links, and formatting.
 platform: ej2-angular
 control: Exporting grid with templates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid with templates in Angular Grid control
+# Exporting with Templates
 
-The Syncfusion Angular Grid allows exporting column, detail, and caption templates—including images, hyperlinks, and custom text—to Excel documents.
+The Grid offers powerful export capabilities that preserve column, detail, and caption templates in Excel documents. Templates enable rich content rendering including images, hyperlinks, and customized text. Column templates customize individual cell content, detail templates display nested hierarchical data, and caption templates customize group headers for enhanced presentation.
 
 ## Exporting with column template
 
-The Excel export feature supports exporting Grid columns that contain images, hyperlinks, and custom text to Excel.
+Column template export enables Grid columns with complex content including images, hyperlinks, and custom text to be seamlessly exported to Excel documents. This feature is ideal when visual elements or interactive content need to be preserved in exported files.
 
-In the example below, hyperlinks and images are exported using the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/#image) properties in the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelquerycellinfo) event.
+In the following sample, the hyperlinks and images are exported to Excel using [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs#image) properties in the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelquerycellinfo) event.
 
 > Excel Export supports exporting images as base64 strings.
 
@@ -36,19 +36,21 @@ In the example below, hyperlinks and images are exported using the [hyperlink](h
 
 ## Exporting with detail template
 
-By default, the Grid exports the parent grid with only expanded detail rows. The detail row export can be customized using the `ExcelExportProperties.hierarchyExportMode` property with the following options:
+Detail template export configuration allows control over hierarchical data rendering in Excel documents. By default, the grid exports the parent grid with expanded detail rows alone. Change the exporting behavior by using the `ExcelExportProperties.hierarchyExportMode` property. This feature is particularly useful for master-detail scenarios where controlling the level of exported detail enhances document clarity.
+
+The available export modes are:
 
 | Mode     | Behavior    |
 |----------|-------------|
-| Expanded | Exports the parent grid with expanded detail rows. |
-| All      | Exports the parent grid with all detail rows. |
-| None     | Exports the parent grid alone. |
+| `Expanded` | Exports the parent grid with expanded detail rows. |
+| `All`      | Exports the parent grid with all the detail rows. |
+| `None`     | Exports the parent grid alone. |
 
-Detail rows in the exported Excel file can be customized using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportdetailtemplate) event. In this event, you can format the detail rows based on parent row details.
+The detail rows in the exported Excel can be customized or formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetailtemplate) event. In this event, the detail rows of the Excel document are formatted in accordance with their parent row details.
 
-In the following sample, the detail row content is formatted by specifying the [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties/#columnheader) and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties/#rows) properties using its [parentRow](https://ej2.syncfusion.com/angular/documentation/api/grid/exportDetailTemplateEventArgs/#parentrow) details. This allows for the creation of detail rows in the Excel document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#style) property.
+In the following sample, the detail row content is formatted by specifying the [columnHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#columnheader) (defines the header structure for detail rows) and [rows](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateProperties#rows) properties using its [parentRow](https://ej2.syncfusion.com/angular/documentation/api/grid/exportDetailTemplateEventArgs#parentrow) details. This allows for the creation of detail rows in the Excel document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#style) property.
 
-> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#rowspan), ensure the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell/#index) is supplied for proper functionality.
+> When using [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#rowspan) (merges multiple rows vertically), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](https://ej2.syncfusion.com/angular/documentation/api/grid/detailTemplateCell#index) for proper functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,13 +292,13 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/detail-template-export-cs2" %}
 
-![Exporting a Grid Detail Template](../images/detailTemp_excel_expt.gif)
+![DetailTemplateExport](../images/detailTemp_excel_expt.gif)
 
 ## Exporting with caption template
 
-The Excel export feature allows exporting Grids with caption templates to Excel.
+Caption template export provides customization of group headers in Excel documents. The Grid exports customized caption templates to Excel, enabling enhanced header presentation for grouped data that improves document readability.
 
-In the following example, custom caption text is exported using the [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs/#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportgroupcaption) event.
+In the following sample, the customized caption text is exported to Excel using [captionText](https://ej2.syncfusion.com/angular/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgroupcaption) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -310,11 +312,7 @@ import { GridComponent, GroupSettingsModel, ExportGroupCaptionEventArgs } from '
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [GroupService, ToolbarService, ExcelExportService],
 standalone: true,
     selector: 'app-root',
@@ -365,5 +363,5 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/caption-template-export-cs2" %}
 
-![Exporting a Grid Caption Template](../images/captionTemp_excel_expt.gif)
+![CaptionTemplateExport](../images/captionTemp_excel_expt.gif)
 

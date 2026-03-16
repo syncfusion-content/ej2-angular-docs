@@ -98,7 +98,7 @@ This command will perform the following configurations:
 
 - Add the `@syncfusion/ej2-angular-grids` package and peer dependencies to your `package.json`.
 - Import the Grid component in your application.
-- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material3 theme in `angular.json`.
 
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
@@ -119,22 +119,22 @@ npm add @syncfusion/ej2-angular-grids@32.1.19-ngcc
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
-The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+The `Material3` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
 
 To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Grid component:
  
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 ```
 
 > Ensure that the import order aligns with the component's dependency sequence.

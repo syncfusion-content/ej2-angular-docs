@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Rating component
 
-The Rating component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Rating component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
 The accessibility compliance for the Rating component is outlined below.
 
@@ -44,17 +44,17 @@ The Rating component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pat
 
 | Attributes | Purpose |
 | ------------ | ----------------------- |
-| `role=slider` | It defines an input where the user selects a value from within a specified range. |
-| `role=button` | Specifies that the reset is a clickable element that resets the rating to its minimum value. |
-| `aria-label` | Provides an accessible name for Rating. |
-| `aria-valuemin` | It defines the minimum value of rating. |
-| `aria-valuemax` | It defines the maximum value of rating. |
-| `aria-valuenow` | It defines the current value of rating. |
-| `aria-hidden` | It specifies whether the reset button is interactive or not. |
+| `role=slider` | Defines an interactive input where users select values within a specified range. |
+| `role=button` | Identifies the reset button as a clickable element that resets the rating to its minimum value. |
+| `aria-label` | Provides an accessible name for the Rating component. |
+| `aria-valuemin` | Indicates the minimum value of the rating. |
+| `aria-valuemax` | Indicates the maximum value of the rating. |
+| `aria-valuenow` | Indicates the current value of the rating. |
+| `aria-hidden` | Specifies whether the reset button is interactive. |
 
 ## Keyboard interaction
 
-The Rating component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/slider/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rating component.
+The Rating component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/slider/#keyboardinteraction) guidelines to support users of assistive technologies and keyboard-only navigation. The following keyboard shortcuts enable efficient rating control.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -66,9 +66,7 @@ The Rating component followed the [keyboard interaction](https://www.w3.org/WAI/
 
 ## Ensuring accessibility
 
-The Rating component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
-
-The accessibility compliance of the Rating component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rating.html) in a new window to evaluate the accessibility of the Rating component with accessibility tools.
+The Rating component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. The following sample demonstrates the accessibility features of the Rating component. Open the [sample](https://ej2.syncfusion.com/accessibility/rating.html) in a new window to evaluate component accessibility with accessibility validation tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rating.html" %}
 

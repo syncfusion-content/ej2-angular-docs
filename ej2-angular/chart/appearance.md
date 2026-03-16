@@ -12,7 +12,8 @@ domainurl: ##DomainURL##
 
 ## Custom Color Palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#palettes) property
+Customize the default color of series or points by providing a custom color palette using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#palettes) property.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,9 +27,32 @@ You can customize the default color of series or points by providing a custom co
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs1" %}
 
-## Point Level Customization
+## Point and Text Customization
 
-Marker, datalabel and fill color of each data point can be customized with [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#pointrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#textrender) event.
+Individual data point elements such as markers, fill colors, and data labels can be customized dynamically using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) events.
+
+* **pointRender**: Triggered before each point is rendered. Use this to change point-level properties like `fill`, `border`, or `marker` shape and size based on data values.
+* **textRender**: Triggered before each data label is rendered. Use this to customize label `text`, `color`, `border`, or `font` styles.
+
+Example — dynamic fill and marker customization via `pointRender`:
+
+```typescript
+public onPointRender(args: IPointRenderEventArgs): void {
+    if (args.point.y > 50) {
+        args.fill = '#ff4081'; // Change fill color
+        args.shape = 'Triangle'; // Change marker shape
+    }
+};
+```
+
+Example — custom label text via `textRender`:
+
+```typescript
+public onTextRender(args: ITextRenderEventArgs): void {
+    args.text = args.text + ' units'; // Append suffix to labels
+    args.color = 'blue'; // Customize label color
+};
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,10 +72,11 @@ Marker, datalabel and fill color of each data point can be customized with [`poi
 
 <!-- markdownlint-disable MD036 -->
 
-**Customize the Chart Background**
+**Customize the Chart Background and Border**
 
 <!-- markdownlint-disable MD013 -->
-Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#background) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#border) properties, you can change the background color and border of the chart.
+Use the [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#background) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#border) properties on the chart to change its background color and border.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,7 +92,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 **Chart Margin**
 
-You can set margin for chart from its container through [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#margin) property.
+Set the chart margin relative to its container using the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#margin) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +108,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 
 **Chart Area Customization**
 
-Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#background) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#border) properties, you can change the background color and border of the chart area. Width for the chart area can be customized using [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#width) property.
+To customize the plotting region (chart area), use the [`chartArea`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartarea) properties: [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel#background) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel#border) change the chart area's appearance, and [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel#height) adjust its size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,9 +122,23 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs4" %}
 
-## Animation
+## Series Animation
 
-You can customize animation for a particular series using [`animation`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#enableanimation) property. You can enable or disable animation of the series using `enable` property, `duration` specifies the duration of an animation and `delay` allows us to start the animation at desire time.
+Control how data series appear on load using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#animation) property.
+
+* `enable`: Set to `true` (default) or `false` to toggle animation.
+* `duration`: Specifies the animation length in milliseconds (e.g., `2000` for 2 seconds).
+* `delay`: Sets the time to wait before starting the animation in milliseconds.
+
+Example:
+
+```typescript
+public animation: Object = {
+    enable: true,
+    duration: 1500,
+    delay: 100
+};
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,41 +151,3 @@ You can customize animation for a particular series using [`animation`](https://
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs5" %}
-
-## Chart Title
-
-Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#title) property, to show the information about the data plotted.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/chart-title-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/chart-title-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/chart-title-cs1" %}
-
-## Annotation
-
-Annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
-
-<!-- markdownlint-disable MD033 -->
-
-You can add annotations to the chart by using the <code>annotations</code> option. By using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel/#content) option of annotation object, you can specify the id of the element that needs to be displayed in the chart area.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs6/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs6/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/column-cs6" %}
-
->Note: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.

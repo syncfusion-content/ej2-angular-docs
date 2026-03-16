@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Signature component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular Signature component, from initial installation through capturing and managing digital signatures. The Signature component allows users to draw signatures in a canvas with support for smooth stroke rendering, undo/redo operations, and signature download/export functionality.
+This guide demonstrates how to set up and configure the Syncfusion Angular Signature component for capturing and managing digital signatures. The component provides smooth stroke rendering on a canvas, undo/redo operations, and export functionality for saving signatures in multiple formats.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
@@ -34,9 +34,9 @@ The list of dependencies required to use the Signature module in your applicatio
         |-- @syncfusion/ej2-splitbuttons
 ```
 
-## SetUp the Angular application
+## Set up the Angular application
 
-A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+The fastest way to start with Angular is to use the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -54,13 +54,13 @@ npm install -g @angular/cli@21.0.0
 
 ## Create a new application
 
-With Angular CLI installed, execute this command to generate a new application:
+With Angular CLI installed, execute the following command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+* This command prompts you to configure settings such as enabling Angular routing and selecting a stylesheet format.
 
 ```bash
 
@@ -72,17 +72,17 @@ ng new syncfusion-angular-app
 
 ```
 
-* By default, a CSS-based application is created. Use SCSS if required:
+* By default, a CSS-based application is created. To use SCSS instead, run:
 
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
-* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+* During project setup, configure Server-side rendering (SSR) if needed.
 
 ![Initial_setup](images/SSR.png)
 
-* Select the required AI tool or 'none' if you do not need any AI tool.
+* Select an AI tool or choose 'none' if not needed.
 
 ![Initial_setup](images/Ai.png)
 
@@ -92,13 +92,13 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
-> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+> **Note**: Angular 19 and below use `app.component.ts`, `app.component.html`, and `app.component.css`. Angular 20+ generates a simpler structure: `src/app/app.ts`, `app.html`, and `app.css` (without `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Signature Package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-This guide uses the [Angular Signature component](https://www.syncfusion.com/angular-components/angular-signature) for demonstration. Add the Angular Signature component component with:
+This guide uses the [Angular Signature component](https://www.syncfusion.com/angular-components/angular-signature) for demonstration. Install the package with:
 
 ```bash
 ng add @syncfusion/ej2-angular-inputs
@@ -112,35 +112,41 @@ This command will perform the following configurations:
 
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
-```bash		
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package distributions for Angular components:
+
+1. **Ivy library format** ([Angular package format](https://angular.dev/tools/libraries/angular-package-format)) - Recommended
+2. **Angular compatibility compiler (ngcc)** - Legacy compilation pipeline
+
+Latest Syncfusion<sup style="font-size:70%">&reg;</sup> packages are Ivy-compatible and recommended for Angular 12+. Install using:
+
+```bash
 ng add @syncfusion/ej2-angular-inputs
-```		
-For applications not compiled with Ivy, use the `ngcc` tagged packages:		
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
-```bash		
-npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc		
+```
+
+For legacy projects using ngcc:
+
+> **Note**: ngcc packages are compatible with Angular CLI 15 and below but may generate deprecation warnings. Starting from Angular 16, ngcc support has been removed. Refer to the [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility) for more information.
+
+```bash
+npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc
 ```
 
 ## Import Syncfusion CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+Apply Syncfusion<sup style="font-size:70%">&reg;</sup> themes via CSS/SCSS from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
-The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+The `Material` theme is automatically added to `styles.css` when you run `ng add`.
 
-To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Signature component:
+To import only the styles required for the Signature component, add these imports:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
 ```
 
-> Ensure that the import order aligns with the component's dependency sequence.
+> **Important**: Maintain the import order to respect component dependencies.
 
-For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+For SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Signature component
 

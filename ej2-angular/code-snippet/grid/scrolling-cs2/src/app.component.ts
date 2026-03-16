@@ -15,7 +15,7 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `
-         <div style="height:500px;width:600px">
+         <div style="height:380px;width:600px">
            <ejs-grid [dataSource]='data' height='100%' width='100%'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>

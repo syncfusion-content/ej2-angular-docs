@@ -40,12 +40,12 @@ standalone: true,
     selector: 'app-root',
     template: `
            <div style="display: flex">
-               <label style="padding: 30px 20px 0 0" > Select initialBlocks count: :</label>
-               <ejs-dropdownlist #dropdown id='value' style="padding: 26px 0 0 0" #sample index='0' 
+               <label style="padding: 5px 5px 0 0" > Select initialBlocks count: :</label>
+               <ejs-dropdownlist #dropdown id='value' #sample index='0' 
                width='220' [dataSource]='dropDownData' (change)='valueChange($event)' height='220px' >
                </ejs-dropdownlist>
             </div>
-            <div style="padding: 30px 17px 0 0">
+            <div style="padding: 5px 5px 0 0">
              <ejs-grid #grid [dataSource]='data' height=300 [enableInfiniteScrolling]=true [pageSettings]='options'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=70></e-column>

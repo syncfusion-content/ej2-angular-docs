@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CandleSeriesService, LineSeriesService, AtrIndicatorService, DateTimeService, CrosshairService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { CandleSeriesService, LineSeriesService, AtrIndicatorService, DateTimeService, CrosshairService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 let chartData: Object[] = [
@@ -119,7 +114,5 @@ period: any;
         majorGridLines: { width: 0 },
             }];
         }
-  
+
     }
-
-

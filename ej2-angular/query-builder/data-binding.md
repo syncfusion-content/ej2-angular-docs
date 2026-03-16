@@ -10,14 +10,11 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Query builder component
 
-The Query Builder uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of binding:
-
-* Local data
-* Remote data
+The Query Builder uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property with either a `DataManager` instance or a JavaScript object array.
 
 ## Local data
 
-To bind local data to the query builder, you can assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property  with a JavaScript object array. The local data source can also be provided as an instance of the `DataManager`.
+Bind local data by assigning a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property. Alternatively, create a `DataManager` instance with local data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +32,7 @@ To bind local data to the query builder, you can assign the [`dataSource`](https
 
 ## Remote data
 
-To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property. To interact with remote data source, provide the endpoint `url`.
+Bind remote data by assigning a `DataManager` instance configured with a service endpoint to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property. Provide the endpoint URL to enable communication with the remote data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,7 +50,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 
 ### Binding with OData services
 
-[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for data consumption and creation. Retrieve data from OData services using the `DataManager`. The following example demonstrates remote data binding with OData.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +66,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 
 ### Binding with OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the `ODataV4Adaptor`.
+OData v4 is an improved version of the OData protocol. The `DataManager` supports OData v4 services for advanced data retrieval and consumption. To bind OData v4 services, use the `ODataV4Adaptor`. For detailed information, refer to the [`OData v4 specification`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

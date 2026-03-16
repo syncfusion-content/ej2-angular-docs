@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # Threshold in Angular Chart component
 
-You can mark a threshold in chart by using the `stripline`.
+You can mark a threshold in a chart by using the [`striplines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) property. Thresholds help visualize important reference values or ranges in your chart data, such as target goals, safety limits, or alert zones.
 
-By using the start and end properties in `striplines` object, you can mark the threshold line in the horizontal axis of the chart as follows,
+To mark a horizontal threshold line, configure the [`striplines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) property on the vertical (Y) axis. By using the [`start`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#start) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#end) properties, you can define the exact position and range of the threshold line:
+
+> **Note:** To use strip line features in your chart, you need to inject the [`StriplineService`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripline) into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,3 +27,8 @@ By using the start and end properties in `striplines` object, you can mark the t
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs20" %}
+
+## See Also
+
+* [Strip Line](../chart-elements/strip-line)
+* [Axis Customization](../chart-axis#strip-lines)

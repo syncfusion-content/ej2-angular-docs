@@ -10,22 +10,21 @@ domainurl: ##DomainURL##
 
 # Types in Angular Spinner component
 
-By default, the Spinner is loaded in the applicable Essential<sup style="font-size:70%">&reg;</sup> JS 2 component based on the theme imported into the page. Based on the theme, the type is set to the Spinner.
+By default, the Spinner type is automatically set based on the theme imported into the page. The spinner loads in the applicable Essential JS 2 component according to the selected theme.
 
-The available types are:
+The available spinner types are:
 * Material
 * Fabric
 * Bootstrap
 
-You can change the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component spinner type by passing the type of the spinner as parameter to the `setSpinner` method like as below.
+Change the spinner type by passing the type as a parameter to the `setSpinner` method.
 
 ```typescript
-
-// Specify the type of the Spinner to be displayed
-setSpinner({ type: 'Bootstrap'});
+// Specify the spinner type to display
+setSpinner({ type: 'Bootstrap' });
 ```
 
-> After Essential<sup style="font-size:70%">&reg;</sup> JS 2 component creation only, you can change the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component spinner type.
+> Change the spinner type only after the Essential JS 2 component is created.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting SQL Server to Angular Grid Using ASP.NET Core Web API
 
-The [Syncfusion® Angular Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
+The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
 
 **What is Microsoft SqlClient?**
 
@@ -48,6 +48,8 @@ Ensure the following software and packages are installed before proceeding:
 | 2 | Integrating the Syncfusion Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
 | 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
 | 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
+| 6 | Run the applications | [View](#running-the-application) |
+| 7 | Explore a complete working sample | [View](#complete-sample-repository) |
 
 
 ## Setting up the SQL server environment for SqlClient
@@ -638,7 +640,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -1015,7 +1017,7 @@ Searching allows finding records by entering keywords in the search box.
 
 **Searching details:**
 
-- Entering a term and pressing **Enter** sends search descriptors in the `Search` property.
+- Entering a term and pressing **Enter** sends search descriptors in the `search` property.
 - `DataOperations.PerformSearching()` applies the search term across all searchable fields.
 - Filtered data is counted and then paged; the shaped response is returned to the client.
 
@@ -1117,7 +1119,7 @@ Filtering allows restricting data based on column values using the Excel filter 
 
 **Filtering details:**
 
-- The Excel filter UI builds filter predicates on the client and sends them in the `Where` property.
+- The Excel filter UI builds filter predicates on the client and sends them in the `where` property.
 - `DataOperations.PerformFiltering()` applies predicates against the in-memory data set.
 - Filtering executes before count and paging to ensure accurate total counts.
 
@@ -1219,7 +1221,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 
 **Sorting details:**
 
-- Clicking a column header creates sort descriptors that arrive in the `Sorted` property.
+- Clicking a column header creates sort descriptors that arrive in the `sorted` property.
 - `DataOperations.PerformSorting()` orders the sequence based on field name and sort direction.
 - Sorting executes before count and paging to return correct page slices.
 
@@ -1475,11 +1477,6 @@ The following snippets assemble the final Angular Grid configuration used in the
       [validationRules]="validationRules.dueDate"></e-column>
     <e-column field="ResponseDue" headerText="Response Due" width="200" format="MMM d, yyyy, h:mm a"
       editType="datetimepickeredit" [validationRules]="validationRules.responseDue">
-      <ng-template #template let-data>
-        <span class="response-due">
-          {{ data.ResponseDue ? (data.ResponseDue | date:'MMM d, yyyy, h:mm a') : '' }}
-        </span>
-      </ng-template>
     </e-column>
     <e-column field="UpdatedAt" headerText="Last Modified" width="200"
       type="dateTime" format="MMM d, yyyy, h:mm a" editType="datetimepickeredit"></e-column>
@@ -1492,10 +1489,10 @@ The following snippets assemble the final Angular Grid configuration used in the
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` for a column that contains unique values.
 > - Set [IsIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isidentity) to `true` for auto-generated columns to disable editing during add or update operations.
-> - The [EditType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-> - The behavior of default editors can be customized using the [edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the Grid column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types#customizing-the-textbox-component-for-stringedit-type)
+> - The [EditType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.
+> - The behavior of default editors can be customized using the [edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the Grid column.
 > - [Type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property specifies the data type of a Grid column.
-> - The [Template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that allows rendering custom elements in a column instead of the default field value.(https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
+> - The [Template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that allows rendering custom elements in a column instead of the default field value.
 
 
 **App component:**
@@ -1712,35 +1709,27 @@ namespace Grid_MSSQL.Server.Controllers
 
 ## Running the application
 
-**Step 1: Build and run the ASP.NET Core server:**
+**Run the Server:**
 
-1. Configure the "TicketDb" connection string in **appsettings.json**.
-2. From the server project folder, run the following command in a terminal:
+- Configure the **TicketDb** connection string in **appsettings.json**, then open a terminal in the server project folder and run the following command:
 
 ```bash
 dotnet build
 dotnet run
 ```
 
-**Explanation:**
-
 - The API exposes endpoints at a base similar to **https://localhost:7000/api/tickets** (adjust ports as necessary).
-- This endpoint is configured in the DataManager `url` property.
 
-**Step 2: Run the Angular client:**
+**Run the Angular client:**
 
-1. From the client folder, install dependencies and start the Angular dev server:
+- From the client folder, install dependencies and start the Angular dev server:
 
 ```bash
-npm install
 ng serve --open
 ```
 
-**Step 3: Access the application:**
+- The Angular development server will start and typically run on **http://localhost:4200**.
 
-1. Open a web browser.
-2. Navigate to the URL shown in the terminal (typically **http://localhost:4200**).
-3. The Network Support Ticket System is now running and ready to use.
 
 **Available features:**
 
@@ -1758,3 +1747,9 @@ ng serve --open
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MSSQL).
 
 The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.
+
+## See also
+
+  - [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

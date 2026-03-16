@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Styling Modes in Angular OTP Input component
 
-Styling modes specify the style variants for the input fields in the OTP Input component. These modes allows you to customize the appearance of the OTP input fields.
+Styling modes define the visual presentation of the OTP input fields. Choose a styling mode based on your design requirements and user experience goals. Three predefined modes are available: outlined (default), filled, and underlined.
 
-## Outline mode
+## Outlined mode
 
-You can use the outline style by setting the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [outlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/). The default styling mode is `outlined`.
+The outlined style displays input fields with a visible border and background. This is the default styling mode and provides clear visual boundaries for each OTP field. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [outlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ You can use the outline style by setting the [stylingMode](https://ej2.syncfusio
 
 ## Filled mode
 
-You can use the filled style by setting the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [filled](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/).
+The filled style displays input fields with a solid background color and no border, creating a modern, compact appearance. Use this mode for designs that emphasize background-based separation. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [filled](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,9 +48,9 @@ You can use the filled style by setting the [stylingMode](https://ej2.syncfusion
 
 {% previewsample "page.domainurl/samples/otp-input/styling-modes/filled" %}
 
-## Underline mode
+## Underlined mode
 
-You can use the underline style by setting the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [underlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/).
+The underlined style displays input fields with only a bottom border, creating a minimalist appearance. This mode is useful for space-constrained interfaces or mobile applications. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [underlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

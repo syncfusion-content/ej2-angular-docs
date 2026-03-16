@@ -26,7 +26,7 @@ standalone: true,
     <label for="unchecked"> Enable Case Sensitivity </label>
     <ejs-switch id="unchecked" (change)="onToggleCaseSensitive()"></ejs-switch>
 </div>
-<ejs-grid [dataSource]='data' #grid [allowFiltering]='true' [filterSettings]='filterOptions'>
+<ejs-grid [dataSource]='data' #grid [allowFiltering]='true' [filterSettings]='filterOptions' height='270px'>
     <e-columns>
         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

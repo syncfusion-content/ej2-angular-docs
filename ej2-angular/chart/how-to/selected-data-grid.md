@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Selected data grid in Angular Chart component
 
-By using the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete), you can get the selected data values for range selection.
+By using the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete) event, you can get the selected data values for range selection.
 
-To display the selected data value, follow the given steps:
+To display the selected data values, follow the given steps:
 
 **Step 1**:
 
-Get the selected data point values and display the values through grid component by using the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete) event.
+Get the selected data point values and display the values through the [grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) component by using the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,5 +27,5 @@ Get the selected data point values and display the values through grid component
 {% include code-snippet/chart/how-to-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/how-to-cs17" %}

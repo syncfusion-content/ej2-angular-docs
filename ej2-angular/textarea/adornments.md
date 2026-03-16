@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextArea control
+# Adornments in ##Platform_Name## TextArea Control
 
-Adornments allow you to add custom elements before or after the TextArea using the `prependTemplate` and `appendTemplate` properties. These elements can include icons, text labels, or action buttons for formatting and content management. With orientation support, you can arrange adornments horizontally or vertically using `adornmentFlow` and `adornmentOrientation` for flexible layouts.
+The TextArea component supports adornments that allow you to add custom elements before or after the textarea using the `prependTemplate` and `appendTemplate` properties. Adornment elements can include icons, text labels, or action buttons for formatting and content management. You can arrange adornments horizontally or vertically using the `adornmentFlow` and `adornmentOrientation` properties for flexible layouts.
 
 ## Common Use Cases
 
@@ -23,13 +23,13 @@ Adornments allow you to add custom elements before or after the TextArea using t
 
 ## Adding Adornments with Orientation to TextArea
 
-Use `prependTemplate` and `appendTemplate` to add custom HTML content before and after the TextArea.
+Use the `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the TextArea.
 
-- **`prependTemplate`**: Renders elements before the textarea.
+- **`prependTemplate`**: Renders elements before the textarea input.
 
-- **`appendTemplate`**: Renders elements after the textarea.
+- **`appendTemplate`**: Renders elements after the textarea input.
 
-You can control how adornments are positioned and arranged using the `adornmentFlow` and `adornmentOrientation` properties. Both properties accept only `Horizontal` or `Vertical` values defined in the `AdornmentsDirection` type.
+Control how adornments are positioned and arranged using the `adornmentFlow` and `adornmentOrientation` properties. Both properties accept only `Horizontal` or `Vertical` values as defined in the `AdornmentsDirection` type.
 
 - **`adornmentFlow`**: Defines where adornments appear around the TextArea.
   - **Horizontal**: Prepend on the left, append on the right.

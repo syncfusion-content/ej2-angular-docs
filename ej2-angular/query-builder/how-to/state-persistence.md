@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # State persistence in Angular Query builder component
 
-State persistence allows you to maintain the current state in the browser’s `localStorage` even if the browser is refreshed or if you move to the next page within the browser. State persistence stores the Query Builder’s [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/vue/documentation/state-persistence/) is defined to true.
+State persistence maintains the Query Builder's current configuration in the browser's `localStorage` across page refreshes and navigation. When enabled, the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) object is stored in local storage. To enable state persistence, set the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#enablepersistence) property to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

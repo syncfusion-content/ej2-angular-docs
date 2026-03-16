@@ -7,4 +7,4 @@ export  let  variespiedata: Object[] = [
         { x: 'Egypt', y: 301000, r: '150.8' },
         { x: 'Kazakhstan', y: 300000, r: '155.5' },
         { x: 'Somalia', y: 357022, r: '160.6' }
-    ]; 
+    ];

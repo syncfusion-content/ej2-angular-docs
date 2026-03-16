@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Style in Angular Spinner component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following CSS structure can be used to customize the spinner component's appearance based on your requirements.
 
-## Customizing the spinner
+## Customize the spinner
 
 Use the following CSS to customize the spinner stroke color.
 

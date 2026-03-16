@@ -1,9 +1,7 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { ViewChild } from '@angular/core'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
   AccumulationDataLabelService, AccumulationChartComponent } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -39,5 +37,3 @@ export class AppComponent implements OnInit {
         (this.chart as any).series[0].addPoint({ x: 'Dec', y: 15 });
       }
 }
-
-

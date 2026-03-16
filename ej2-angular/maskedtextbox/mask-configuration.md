@@ -22,20 +22,20 @@ The mask can be formed by combining any one or more of these mask elements.
 
 | Mask Element | Description |
 | ------------- | ------------- |
-| 0 | Digit required. This element will accept any single digit from **0** to **9**. |
+| 0 | Digit required (0-9). |
 | 9 | Digit or space, optional. |
-| # | Digit or space, optional, Plus(**+**) and minus(**-**) signs are allowed. |
-| L | Letter required. It will accept letters **a-z** and **A-Z**. |
+| # | Digit, space, plus, or minus sign, optional. |
+| L | Letter required (a-z, A-Z). |
 | ? | Letter or space, optional. |
-| & | Requires a character. |
+| & | Character required. |
 | C | Character or space, optional. |
-| A | Alphanumeric **(A-Za-z0-9)** required.|
-| a | Alphanumeric **(A-Za-z0-9)** or space, optional. |
-| < | Shift down. Converts all characters to lower case. |
-| > | Shift up. Converts all characters to upper case. |
-| &#124; | Disable a previous shift up or shift down. |
-| \\\\ | Escapes a mask character, turning it into a literal. |
-| All other characters | Literals. All non-mask elements (literals) will appear as themselves within MaskedTextBox. |
+| A | Alphanumeric (A-Za-z0-9) required. |
+| a | Alphanumeric (A-Za-z0-9) or space, optional. |
+| < | Shift down (convert to lowercase). |
+| > | Shift up (convert to uppercase). |
+| &#124; | Disable previous shift up or down. |
+| \\\\ | Escape character (literal mask character). |
+| All other characters | Literal characters displayed as-is in the MaskedTextBox. |
 
 The following example demonstrates the usage of standard mask elements.
 

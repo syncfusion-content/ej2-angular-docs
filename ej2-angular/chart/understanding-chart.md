@@ -7,12 +7,12 @@ control: Understanding
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Understanding of Angular Chart
+# Understanding the Angular Chart component
 
 The Angular Chart component is a versatile visualization tool that presents data using a wide range of graphical formats. Each chart is composed of essential elements—such as the title, series, tooltip, legend, and axes—that work together to provide clear, interactive, and meaningful insights. Understanding these elements helps in configuring and customizing charts for various analytical needs.
 
 The following image highlights the primary elements of a chart:
-<img src="../images/chart_elements.png" alt="Annotated visual showing the main elements of a angular Chart component, including the title, series area, axes, legend, and tooltip" />
+<img src="../images/chart_elements.png" alt="Annotated visual showing the main elements of an Angular Chart component, including the title, series area, axes, legend, and tooltip" />
 
 ## Title
 
@@ -36,4 +36,14 @@ For more details, see the [Legend](https://ej2.syncfusion.com/angular/documentat
 
 ## Axes
 
-Axes structure and organize chart data. Standard Cartesian charts include an x-axis for independent variables and a y-axis for dependent variables. Three-dimensional charts add a z-axis to represent depth. Polar and radar charts instead use radial axes to measure distance from the center and angular axes to define direction. These axes help translate complex datasets into a readable graphical format.
+Axes organize and scale chart data.
+
+### Cartesian axes
+
+Standard rectangular (Cartesian) charts include a horizontal x-axis (for independent or category values) and a vertical y-axis (for dependent or numeric values). Cartesian axes support tick labels, gridlines, ranges, and formatting such as numeric or datetime label formats.
+
+### Polar & Radar axes
+
+Polar and radar charts use radial and angular axes. A radial axis measures distance from the chart center, while an angular axis defines the angular position or category around the circle.
+
+These axes translate dataset values into positions on the chart so points, bars, and areas can be rendered accurately.

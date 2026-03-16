@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Customize thumb in Angular Range Slider component
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle, oval shapes, and background image has also been customized.
+Customize the Range Slider thumb (handle) appearance by overriding the `e-handle` CSS class. The following example demonstrates how to apply various thumb shapes—square, circle, and oval—and custom background images. Choose the shape that best suits your application design.
 
-```typescript
+```css
 
 .e-control.e-slider .e-handle {
     background-image: url('https://ej2.syncfusion.com/demos/src/slider/images/thumb.png');

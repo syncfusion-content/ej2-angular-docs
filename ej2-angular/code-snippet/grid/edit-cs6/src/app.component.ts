@@ -33,17 +33,17 @@ providers: [EditService, ToolbarService, SortService, PageService],
 standalone: true,
   selector: 'app-root',
   template: `
-      <div style="padding: 20px">
+      <div style="padding: 5px">
         <label>Enable/Disable show confirmation dialog</label>
         <ejs-switch id="switch" [(checked)]="enableShowConfirmDialog" 
         (change)="toggleShowConfirmDialog($event)"></ejs-switch>
       </div>
-      <div style="padding: 20px">
+      <div style="padding: 5px">
         <label>Enable/Disable show delete confirmation dialog</label>
         <ejs-switch id="switch1" [(checked)]="enableShowDeleteConfirmDialog" 
         (change)="toggleShowDeleteConfirmDialog($event)"></ejs-switch>
       </div>
-      <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273px">
+      <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="220px">
         <e-columns>
           <e-column field="OrderID" headerText="Order ID" textAlign="Right" [validationRules]="orderIDRules"
             isPrimaryKey="true" width="100"></e-column>

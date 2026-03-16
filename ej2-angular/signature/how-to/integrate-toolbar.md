@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate toolbar in Angular Signature component
 
-The Signature component integrates with the toolbar and the interaction performed using the `change` event of the toolbar.
-In that, [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo), [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo) and [`isEmpty`](https://ej2.syncfusion.com/angular/documentation/api/signature/#isempty) methods were used to enable/disable undo, redo, and clear buttons.
+Integrate a Toolbar with the Signature component to provide undo, redo, and clear functionality. Handle toolbar actions using the `change` event and use the [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo), [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo), and [`isEmpty`](https://ej2.syncfusion.com/angular/documentation/api/signature/#isempty) methods to manage button states.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

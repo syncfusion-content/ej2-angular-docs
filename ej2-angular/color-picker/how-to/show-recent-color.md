@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Show Recent color in Angular Color picker component | Syncfusion
-description: Learn here all about Show Recent color in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Show Recent colors in Angular Color picker component | Syncfusion
+description: Learn here all about showing recent colors in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Hide control buttons 
+control: Show Recent colors 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show Recent color in Angular Color picker component
+# Show Recent colors in Angular Color picker component
 
-The showRecentColors property enables the display of recently selected colors in the ColorPicker when in palette mode. This feature helps users quickly access their most frequently used colors.
+The `showRecentColors` property enables the display of recently selected colors in the ColorPicker when in palette mode. This feature improves user workflow by providing quick access to previously used colors without searching through the entire palette.
 
 >Note: The [`showRecentColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#showRecentColors) feature displays up to 10 recent colors as tiles and is available only in `palette` mode.
 
-In the following sample, the [`showRecentColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#showRecentColors) property is enabled to display recent colors in the `palette` area.
+In the following sample, the [`showRecentColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#showRecentColors) property is enabled to display the user's recently selected colors in the palette area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

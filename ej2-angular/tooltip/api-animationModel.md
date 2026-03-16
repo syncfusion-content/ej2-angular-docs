@@ -8,16 +8,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api animationModel in Angular Tooltip component
+# API animationModel in Angular Tooltip component
 
-Interface for a class Animation
+Interface for the Animation class.
 
 ## Properties
 
 ### close [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api-tooltipAnimationSettings.html)
 
-Animation settings to be applied on the Tooltip, when it is closed.
+Animation settings applied to the tooltip when it closes.
 
 ### open [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api-tooltipAnimationSettings.html)
 
-Animation settings to be applied on the Tooltip, while it is being shown over the target.
+Animation settings applied to the tooltip when it displays over the target.

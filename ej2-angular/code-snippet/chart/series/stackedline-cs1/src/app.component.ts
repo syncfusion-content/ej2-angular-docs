@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
     SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
 
 
 import { Component, OnInit } from '@angular/core';
@@ -27,7 +24,7 @@ standalone: true,
             </linearGradient>
         </defs>
     </svg>
-    
+
     <svg style="width:1px; height:1px">
         <defs>
             <linearGradient id="gradient2">
@@ -36,7 +33,7 @@ standalone: true,
             </linearGradient>
         </defs>
     </svg>
-    
+
     <svg style="width:1px; height:1px">
         <defs>
             <linearGradient id="gradient3">
@@ -45,7 +42,7 @@ standalone: true,
             </linearGradient>
         </defs>
     </svg>
-    
+
     <svg style="width:1px; height:1px">
         <defs>
             <linearGradient id="gradient4">
@@ -69,7 +66,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public marker?: Object;
     public series?: Object;
-    public chartData?: Object[]; 
+    public chartData?: Object[];
     ngOnInit(): void {
         this.primaryXAxis = {
             interval: 1, valueType: 'Category'
@@ -85,5 +82,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-

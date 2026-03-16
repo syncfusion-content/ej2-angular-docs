@@ -10,10 +10,8 @@ domainurl: ##DomainURL##
 
 # Get the total size of selected files in Angular Uploader component
 
-You can get the total size of selected files before uploading it to the designated server.
-This can be achieved by using the selected event. Refer to the following example to calculate the total file size.
-
-In the following example, explains about how to calculate total file size before upload.
+You can calculate the total size of selected files before uploading them to the server.
+This functionality is achieved by using the `selected` event, which fires when files are selected. Refer to the following example to implement total file size calculation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,34 +1,33 @@
 ---
 layout: post
-title: Editing in Angular Grid component | Syncfusion
-description: Learn how to customize the appearance of editing elements in the Syncfusion Angular Grid component using CSS for rows, inputs, dialogs, and command column buttons.
+title: Angular Grid - Editing Style | Syncfusion
+description: Angular Grid editing style supports customizing editor appearance and adjusting layouts to enhance the overall edit mode experience.
 platform: ej2-angular
 control: Editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing in Angular Grid component
+# Editing Customization in Angular Grid Component
 
-You can tailor the appearance of editing elements in the Syncfusion Angular Grid component using CSS. Below are examples of how to customize various editing-related elements.
+The appearance of editing-related elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Below are examples for customizing various editing-related elements.
 
 ## Customizing the edited and added row element
 
-Style the background of edited or newly added row table elements with:
+The `.e-editedrow` and `.e-addedrow` classes are used to style edited and added row table elements.
 
 ```css
 .e-grid .e-editedrow table, .e-grid .e-addedrow table {
     background-color: #62b2eb;
 }
 ```
-Here, **.e-editedrow** targets edited rows and **.e-addedrow** targets added rows. Adjust `background-color` as desired.
 
 ![Customizing the added row element](../images/edited-added-row-element.png)
 ![Customizing the edited row element](../images/edited-added-row-element-2.png)
 
 ## Customizing the edited row input element
 
-Set font and color for the input fields within edited rows:
+The `.e-gridform` and `.e-input` classes are used to style edited form row input element.
 
 ```css
 .e-grid .e-gridform .e-rowcell .e-input-group .e-input.e-field {
@@ -36,39 +35,36 @@ Set font and color for the input fields within edited rows:
     color:rgb(214, 33, 123)
 }
 ```
-The **.e-gridform** and **.e-input** classes target inputs within the editing form.
 
 ![Customizing the edited and added row element](../images/edited-row-input-element.png)
 
 ## Customizing the edit dialog header element
 
-Change the appearance of the edit dialog header:
+The `.e-edit-dialog` and `.e-dlg-header-content` classes are used to style the dialog header element.
 
 ```css
 .e-edit-dialog .e-dlg-header-content {
     background-color: #deecf9;
 }
 ```
-Use **.e-edit-dialog** **.e-dlg-header-content** to target the dialog header.
 
 ![Customizing the edit dialog header element](../images/edit-dialog-header-element.png)
 
 ## Customizing the edited row input element in dialog edit mode
 
-Style input fields in dialog edit mode:
+The `.e-gridform` and `.e-float-input` classes are used to customize the input elements within the edit dialog.
 
 ```css
 .e-gridform .e-rowcell .e-float-input .e-field {
     font-family: cursive;
 }
 ```
-This targets floating input fields within the edit dialog.
 
 ![Customizing the edited row input element in dialog](../images/edited-row-input-element-in-dialog.png)
 
 ## Customizing the command column buttons
 
-Set custom colors for Edit, Delete, Update, and Cancel command buttons:
+The  `.e-edit`, `.e-delete`, `.e-update`, and `.e-cancel-icon`  classes are used to style the respective command column buttons in the grid.
 
 ```css
 
@@ -79,7 +75,6 @@ Set custom colors for Edit, Delete, Update, and Cancel command buttons:
     color: #077005;
 }
 ```
-In this example, the **.e-edit, .e-delete, .e-update, and .e-cancel-icon** classes represent the respective command column buttons. You can modify the `color` property to change the color of these buttons.
 
 ![Customize command column button](../images/commandbutton-1.png)
 ![Customize command column button](../images/commandbutton-2.png)

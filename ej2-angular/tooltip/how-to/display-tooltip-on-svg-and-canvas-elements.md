@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display Angular Tooltip component on svg and canvas elements
+# Display Angular Tooltip component on SVG and canvas elements
 
-Tooltip can be displayed on both the SVG and Canvas elements. You can directly attach the `<svg>` or `<canvas>` elements to show them on data visualization elements.
+The Tooltip component can display on both SVG and canvas elements. Attach `<svg>` or `<canvas>` elements directly to show tooltips on data visualization elements.
 
 **SVG**
 
-Create the SVG square element and refer to the following code snippet to render the Tooltip on SVG square.
+Create an SVG square element and use the following code snippet to render the tooltip on the SVG square.
 
 ```typescript
 <ejs-tooltip cssClass='e-tooltip-css' content='SVG Square' target='#square'>
@@ -26,7 +26,7 @@ Create the SVG square element and refer to the following code snippet to render 
 
 **Canvas**
 
-Create the canvas circle element and refer to the following code snippet to render the Tooltip on Canvas circle.
+Create a canvas circle element and use the following code snippet to render the tooltip on the canvas circle.
 
 ```typescript
 <ejs-tooltip cssClass='e-tooltip-css' content='Canvas Circle' target='#circle'>

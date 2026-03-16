@@ -1,0 +1,41 @@
+---
+layout: post
+title: Data editing in Angular Chart component | Syncfusion
+description: Learn here all about Data editing in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Data editing 
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+<!-- markdownlint-disable MD036 -->
+
+# Data editing in Angular Chart component
+
+Data editing allows users to modify chart data points interactively by dragging and dropping the rendered points. This functionality is enabled by injecting the [`DataEditing`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataEditing) module into the chart provider, which adds drag-and-drop support for data points.
+
+![DataEditing](../../images/data-edit.gif)
+
+## Enable Data Editing
+
+To activate data editing, set the [enable](https://ej2.syncfusion.com/angular/documentation/api/chart/dragsettingsmodel#enable) property to **true** in the [dragSettings](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#dragsettings) of the corresponding series.
+
+Additionally, the following properties can be used to customize the data editing behavior and appearance:
+- Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/dragsettingsmodel#fill) property to set the color of the editable data points.
+- Use the [`minY`](https://ej2.syncfusion.com/angular/documentation/api/chart/dragsettingsmodel#miny) and [`maxY`](https://ej2.syncfusion.com/angular/documentation/api/chart/dragsettingsmodel#maxy) properties to define the minimum and maximum allowable range for editing the data points.
+
+These options help control both the visual feedback and the valid value range while editing data directly on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/data-editing-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/data-editing-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/user-interaction/data-editing-cs1" %}
+
+>Note: To use data editing feature, inject `DataEditingService` into the `@NgModule.providers`.

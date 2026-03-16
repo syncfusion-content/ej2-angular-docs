@@ -1,29 +1,26 @@
 ---
 layout: post
-title: Custom aggregate in Angular Grid component | Syncfusion
-description: Learn how to implement and configure custom aggregates in the Syncfusion Angular Grid, including custom calculation logic and usage with templates and distinct value counts.
+title: Angular Grid - Custom Aggregate | Syncfusion
+description: Angular Grid custom aggregate enables defining custom aggregate functions, applying them to columns, and displaying computed summaries.
 platform: ej2-angular
 control: Custom aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom aggregate in Angular Grid component
+# Custom Aggregate in Angular Grid Component
 
-The custom aggregate feature in the Syncfusion Angular Grid component enables calculation of summary values using defined functions. This is especially useful when built-in aggregate types do not meet specific calculation requirements. To configure a custom aggregate, follow the steps below:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports custom aggregate functions for scenarios where built-in options do not meet specific requirements. This allows for tailored logic to compute aggregate values.
 
-* Set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to **Custom** in the [e-aggregate -> e-column](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/).
-* Provide a custom aggregate function using the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#CustomAggregate) property.
+To configure a custom aggregate, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property to "Custom" in the `AggregateColumnDirective` and provide the custom aggregation logic using the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
-Custom aggregate functions are invoked differently for total and group aggregations:
+The custom aggregate function in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is executed differently based on the aggregation context:
 
-**Total Aggregation:** The custom aggregate function receives the entire dataset and the current aggregate column object as arguments.
+- **Total Aggregation:** The function is executed with the entire dataset and the corresponding aggregate column object.
 
-**Group Aggregation:** The custom aggregate function is called with the current group details and the aggregate column object as arguments.
+- **Group Aggregation:** The function is executed with the current group details and the aggregate column object.
 
-The key **Custom** in any aggregate template binds to the return value of the custom aggregate function.
-
-The following example demonstrates use of the custom aggregate feature in the Angular Grid component:
+The following example demonstrates implementing and using a custom aggregate function in the grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,11 +57,11 @@ The following example demonstrates use of the custom aggregate feature in the An
 
 > In footer, group footer, or caption templates, the custom aggregate value is accessed using the key **Custom**.
 
-## Counting distinct values using a custom aggregate
+## Displaying distinct value count in aggregate row
 
-A custom aggregate function can be used to calculate the count of distinct values for a specified column. By setting the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to **Custom** and providing a suitable function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#CustomAggregate) property, distinct value counts can be displayed in aggregate rows.
+To display the count of distinct values in an aggregate row for a column, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) to "Custom" and provide a custom function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property that returns the number of unique values.
 
-The example below shows how to display the count of distinct values for the **ShipCountry** column using a custom aggregate function:
+The following example demonstrates displaying the distinct count for the "Ship Country" column using a custom aggregate.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,4 +96,9 @@ The example below shows how to display the count of distinct values for the **Sh
   
 {% previewsample "page.domainurl/samples/grid/aggregates-custom-cs2" %}
 
-> The [columnName](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn/#columnname) property specifies the target column for displaying the aggregate value. If not defined, the field property value is used as the `columnName`.
+> To display the aggregate value of the current column in another column, use the [columnName](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.
+
+## See also
+- [Aggregates overview](./aggregates)
+- [Reactive aggregates](./reactive-aggregate)
+- [Aggregates API](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregatecolumn)

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Tool bar in Angular Grid component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Toolbar Style | Syncfusion
+description: Angular Grid toolbar style explains styling toolbar items, templates, and layout options to present actionable controls consistently.
 platform: ej2-angular
-control: Tool bar 
+control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in Angular Grid component
+# Toolbar Customization in Angular Grid Component
 
-Customize the appearance of the toolbar in the Syncfusion Angular Grid component using CSS. The following examples show how to style the toolbar root element and the toolbar button elements.
+The appearance of the toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
 
-## Customize the Toolbar Root Element
+## Customize the toolbar root element
 
-Change the toolbar's background color with this CSS:
+The `.e-toolbar-items` class is used to style the toolbar root element.
 
 ```css
 .e-grid .e-toolbar-items {
@@ -22,13 +22,11 @@ Change the toolbar's background color with this CSS:
 }
 ```
 
-The **.e-toolbar-items** class sets the background color for the toolbar's root element.
+![Grid toolbar root element](../images/grid-toolbar-root-element.png)
 
-![Screenshot of the customized grid toolbar root element](../images/grid-toolbar-root-element.png)
+## Customize the toolbar button element
 
-## Customize the Toolbar Button Element
-
-Modify the appearance of toolbar buttons using the following CSS:
+The `.e-toolbar .e-btn` selector is used to style the toolbar button elements.
 
 ```css
 .e-grid .e-toolbar .e-btn {
@@ -36,6 +34,4 @@ Modify the appearance of toolbar buttons using the following CSS:
 }
 ```
 
-Here, **.e-toolbar .e-btn** targets the background color of all button elements inside the toolbar.
-
-![Screenshot showing the styled grid toolbar button element](../images/grid-toolbar-button-element.png)
+![Grid toolbar button element](../images/grid-toolbar-button-element.png)

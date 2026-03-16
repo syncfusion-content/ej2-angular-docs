@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Selection in Angular Grid component | Syncfusion
-description: Learn how to customize the appearance of selection in the Syncfusion Angular Grid component using CSS for row, cell, and column selection backgrounds.
+title: Angular Grid - Selection Style | Syncfusion
+description: Angular Grid selection style customizes visuals and templates for selected rows, cells, and columns, ensuring consistent and intuitive selection.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Grid component
+# Selection Customization in Angular Grid Component
 
-You can customize the selection appearance in the Syncfusion Angular Grid component with CSS. The following examples show how to style the row, cell, and column selection backgrounds.
+The appearance of selection in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the row selection background, cell selection background, and column selection background.
 
 ## Customizing the row selection background
 
-To change the background color of selected rows, use the following CSS:
+The `.e-selectionbackground` class is used to style the row selection background.
 
 ```css
 .e-grid td.e-selectionbackground {
     background-color: #00b7ea;
 }
 ```
-The **.e-selectionbackground** class targets the selection background in rows. Adjust the `background-color` property as desired.
 
 ![Row selection](../images/row-selection.png)
 
 ## Customizing the cell selection background
 
-To style the background of selected cells, use this CSS:
+The `.e-cellselectionbackground` class is used to style the cell selection background.
 
 ```css
 .e-grid td.e-cellselectionbackground {
@@ -35,19 +34,16 @@ To style the background of selected cells, use this CSS:
 }
 ```
 
-The **.e-cellselectionbackground** class controls the background color for selected cells. Update the `background-color` property to customize the cell selection.
-
 ![Cell selection](../images/cell-selection.png)
 
 ## Customizing the column selection background
 
-To modify the column selection's background color, apply the following CSS:
+The `.e-columnselection` class is used to style the column selection background.
 
 ```css
 .e-grid .e-columnselection {
     background-color: #aec2ec;
 }
 ```
-The **.e-columnselection** class targets the background for selected columns. Change the `background-color` as needed for your column selection styling.
 
 ![Cell selection](../images/column-selection.png)

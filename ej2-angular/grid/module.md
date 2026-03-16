@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module in Angular Grid component | Syncfusion
-description: Learn here all about Module in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid – Modules and Feature Injection | Syncfusion
+description: Modules and services to enable Syncfusion Angular Grid features like paging, sorting, filtering, grouping, editing, and export.
 platform: ej2-angular
 control: Module 
 documentation: ug
@@ -39,4 +39,4 @@ To enable specific features in the Angular Grid component, inject the required v
 | `ExcelExportService` | Inject this service to enable Excel export functionality. |
 | `PdfExportService` | Inject this service to enable PDF export functionality. |
 
-Add the required modules to the **providers** array in the root **NgModule** or directly in the component class to enable the corresponding Grid features.
+Add the required modules to the `providers` array in the root `NgModule` or directly in the component class to enable the corresponding Grid features.

@@ -26,14 +26,12 @@ You can use the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Label position
 
-The rating component allows you to place the label on the top, bottom, left, or right side of the rating using the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/rating#labelposition) property.
+Position the rating label using the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/rating#labelposition) property. The following positions are supported:
 
-The following label positions are supported:
-
-* Top: The label is placed on the top of the rating.
-* Bottom: The label is placed on the bottom of the rating.
-* Left: The label is placed on the left side of the rating.
-* Right: The label is placed on the right side of the rating.
+* **Top**: Label appears above the rating items.
+* **Bottom**: Label appears below the rating items.
+* **Left**: Label appears to the left of the rating items.
+* **Right**: Label appears to the right of the rating items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

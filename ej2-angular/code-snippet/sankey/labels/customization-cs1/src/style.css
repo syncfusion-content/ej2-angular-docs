@@ -1,0 +1,7 @@
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

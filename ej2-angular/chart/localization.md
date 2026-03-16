@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Chart component
 
-The localization library localizes the Chart's default text content. Static text used by chart features (for example, zoom toolbar labels) can be translated by providing a locale value and a translation object.
+Localization enables the chart component to adapt its text content to different languages and regions. The chart's default text content, such as zoom toolbar labels and other static text elements, can be localized by providing locale-specific translation objects.
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
-<td><b>Locale keys</b></td>
+<td><b>Locale key</b></td>
 <td><b>Text to display</b></td>
 </tr>
 <tr>

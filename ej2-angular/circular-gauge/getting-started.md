@@ -8,170 +8,103 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Circular Gauge Component
+# Getting started with Angular Circular gauge component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular Circular Gauge component, from initial installation through enabling core features like pointers, ranges, and annotations.
+This article describes the steps to create a simple Circular Gauge and demonstrates its basic usage.
 
-> Note: This guide supports Angular 21 and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+## Setup Angular Environment
 
-## Prerequisites
+Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
 
-Ensure your development environment meets the [System Requirements for Syncfusion® Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
-
-## Setup the Angular application
-
-A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
 
 ```bash
 npm install -g @angular/cli
 ```
 
-> Angular 21 Standalone Architecture: Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+## Create an Angular Application
 
-### Installing a specific version
-
-To install a particular version of Angular CLI, use:
+Create a new Angular application with the Angular CLI:
 
 ```bash
-npm install -g @angular/cli@21.0.0
+ng new my-app
+cd my-app
 ```
 
-## Create a new application
+## Installing Syncfusion® Circular Gauge package
 
-With Angular CLI installed, execute this command to generate a new application:
-
-```bash
-ng new syncfusion-angular-app
-```
-
-* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
-
-```
-? Which stylesheet format would you like to use? (Use arrow keys)
-> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
-  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
-  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
-  Less            [ http://lesscss.org                                             ]
-```
-
-* By default, a CSS-based application is created. Use SCSS if required:
-
-```bash
-ng new syncfusion-angular-app --style=scss
-```
-
-* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
-
-![Initial_setup](./images/SSR.png)
-
-* Select the required AI tool or 'none' if you do not need any AI tool.
-
-![Initial_setup](./images/Ai.png)
-
-* Navigate to your newly created application directory:
-
-```bash
-cd syncfusion-angular-app
-```
-
-> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
-
-## Adding Syncfusion® Angular packages
-
-Syncfusion®'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion® Angular components, install the necessary package.
-
-This guide uses the [Angular Circular Gauge Component](https://www.syncfusion.com/angular-components/angular-circular-gauge) for demonstration. Add the Angular Circular Gauge component with:
-
-```bash
-ng add @syncfusion/ej2-angular-circulargauge
-```
-
-This command will perform the following configurations:
-
-* Add the `@syncfusion/ej2-angular-circulargauge` package and peer dependencies to your `package.json`.
-* Import the Circular Gauge component in your application.
-* Register the default Syncfusion® Material theme in `angular.json`.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-Syncfusion® offers two package structures for Angular components:
+Syncfusion® packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
 
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.
+2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
 
-Syncfusion®'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
+### Ivy library distribution package
 
-```bash
-ng add @syncfusion/ej2-angular-circulargauge
-```
+Syncfusion® Angular packages (>= 20.2.36) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
 
-For applications not compiled with Ivy, use the `ngcc` tagged packages:
-
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
+Add [`@syncfusion/ej2-angular-circulargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19) to the application:
 
 ```bash
-npm add @syncfusion/ej2-angular-circulargauge@32.1.19-ngcc
+npm install @syncfusion/ej2-angular-circulargauge --save
 ```
+
+### Angular compatibility compiled package (ngcc)
+
+For Angular versions earlier than 12, use the legacy ngcc package of the Syncfusion® Angular components. Install the ngcc package with:
+
+Add [`@syncfusion/ej2-angular-circulargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19-ngcc) to the application:
+
+```bash
+npm install @syncfusion/ej2-angular-circulargauge@ngcc --save
+```
+
+To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
+
+```bash
+@syncfusion/ej2-angular-circulargauge:"32.1.19-ngcc"
+```
+
+> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
 
 ## Add Circular Gauge component
 
-Modify the template in the [src/app/app.ts] file to render the Circular Gauge component. Add the Angular Circular Gauge by using `<ejs-circulargauge>` selector in template section of the app.ts file.
+Register and render the Circular Gauge component in the application root component. Update `app.component.ts` to include the `ej2-angular-circulargauge` module and render the control as shown in the sample below (`src/app/app.component.ts`).
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge';
+```javascript
 
-@Component({
-    imports: [CircularGaugeModule],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the CircularGauge component
-    template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`
-})
-export class AppComponent implements OnInit {
-    ngOnInit(): void {
-    }
-}
-```
-
-## Module injection
-
-To create a Circular Gauge with additional features, inject the required modules. The following modules extend the Circular Gauge's basic functionality:
-
-* **GaugeTooltipService** - Inject this module to enable tooltip features.
-* **AnnotationsService** - Inject this module to enable annotations features.
-* **LegendService** - Inject this module to enable legend features.
-
-These modules should be injected into the providers section of the component class.
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { CircularGaugeModule, GaugeTooltipService, AnnotationsService, LegendService } from '@syncfusion/ej2-angular-circulargauge';
+import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
+import { GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    imports: [CircularGaugeModule],
-    providers: [GaugeTooltipService, AnnotationsService, LegendService],
+imports: [
+         CircularGaugeModule
+    ],
+    providers: [ GaugeTooltipService ],
     standalone: true,
-    selector: 'app-root',
-    template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`
+    selector: 'app-container',
+    // specifies the template string for the Charts component
+    template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit {
-    ngOnInit(): void {
-    }
-}
+export class AppComponent  { }
+
 ```
 
-> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge).
 
-## Run the application
+Replace the default root element in `index.html` with the component selector:
 
-Use the following command to run the application in the browser.
+```
+<app-container></app-container>
+```
+
+Run the application using the Angular development server. If the project provides an `npm start` script, that command may be used; otherwise run the development server directly:
 
 ```bash
 ng serve --open
 ```
 
-The following example shows a basic Circular Gauge. By default, the Circular Gauge displays a scale from 0 to 100.
+The following example shows a basic Circular Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,13 +120,7 @@ The following example shows a basic Circular Gauge. By default, the Circular Gau
 
 ## Set Pointer Value
 
-The Circular Gauge displays data using pointers on an axis. You can customize the pointer's appearance and position using various properties.
-
-Set a pointer value using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer#value) property in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer) collection. The Circular Gauge uses a hierarchical structure:
-
-* **Axes** - The circular scale containing pointers and ranges
-* **Pointers** - Indicators that point to values on the axis
-* **Ranges** - Colored segments that highlight specific value ranges
+Set a pointer value using the `value` property on a pointer. See the pointer API reference for details: [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer#value) in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,10 +133,3 @@ Set a pointer value using the [`value`](https://ej2.syncfusion.com/angular/docum
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/circulargauge/getting-started-cs2" %}
-
-## See also
-
-• [Circular Gauge Axes](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-axes)
-• [Circular Gauge Pointers](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-pointers)
-• [Circular Gauge Ranges](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-ranges)
-• [Circular Gauge Annotations](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-annotations)

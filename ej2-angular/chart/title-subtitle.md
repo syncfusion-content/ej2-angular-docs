@@ -9,7 +9,10 @@ domainurl: ##DomainURL##
 ---
 
 # Title and Subtitle in Angular Chart Component
+
 Chart titles and subtitles help provide context for the visualized data. The title typically indicates the main subject or metric represented in the chart, while the subtitle adds supporting details such as data sources, time ranges, or explanatory notes. Both elements can be customized in terms of position, alignment, and style to align with application design requirements.
+
+<img src="../images/titleandsubtitle.png" alt="Chart with title and subtitle formatting example">
 
 ## Chart title
 
@@ -73,9 +76,9 @@ Align the chart title to the near, center, or far side of the chart using the [`
   
 {% previewsample "page.domainurl/samples/chart/chart-title-cs7" %}
 
-### Title wrap
+### Title styling
 
-Customize the title’s appearance using the `textStyle` property. Options include `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow` to control how the title is rendered within the chart area.
+Customize the title’s appearance using the `titleStyle` property. Options include `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment`, and `textOverflow` to control how the title is rendered within the chart area. The `textOverflow: 'Wrap'` option enables wrapping when the title width exceeds available space.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

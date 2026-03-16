@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Model binding in Angular Query builder component
 
-Model binding allows to bind properties for the components used in field, operator, and value columns. To implement model binding, assign fieldModel, operatorModel, and valueModel properties in QueryBuilder.
+Model binding enables two-way data binding between the Query Builder and custom components used in the field, operator, and value columns. Implement model binding by configuring the `fieldModel`, `operatorModel`, and `valueModel` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

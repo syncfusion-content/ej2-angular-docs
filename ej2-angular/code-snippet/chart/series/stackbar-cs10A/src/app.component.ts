@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { BarSeriesService, StackingBarSeriesService, CategoryService} from '@syncfusion/ej2-angular-charts'
-
-
-
+import { BarSeriesService, StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 @Component({
@@ -29,7 +24,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     primaryYAxis: any;
-    public cornerRadius?: object; 
+    public cornerRadius?: object;
     ngOnInit(): void {
         this.chartData = stackedData;
         this.primaryXAxis = {
@@ -37,7 +32,7 @@ export class AppComponent implements OnInit {
             title: 'Months'
         };
         this.cornerRadius = { topRight: 10, bottomRight: 10 };
-        this.title = 'Sales by year';    
+        this.title = 'Sales by year';
     }
     public pointRender(args: IPointRenderEventArgs) {
         if (args.point.index % 2 !== 0) {
@@ -48,5 +43,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-

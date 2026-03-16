@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Hide default drop area in Angular Uploader component
 
-You can achieve this behavior by override the corresponding uploader styles. In the following example, override the below styles to hide the default drop area behavior.
+You can hide the default drop area by overriding the corresponding Uploader component styles. In the following example, the styles listed below are overridden to conceal the default drop area:
 
-    * .e-upload.e-control
-    * .e-upload .e-file-select
-    * .e-upload .e-file-drop
+* `.e-upload.e-control` — Main Uploader container
+* `.e-upload .e-file-select` — File selection area
+* `.e-upload .e-file-drop` — Drag-and-drop zone
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

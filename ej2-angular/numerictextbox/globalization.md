@@ -40,10 +40,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 
 ## Internationalization
 
-Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization).
-
-By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2  component are specific to English culture ('en-US').
-If you want to go with the different culture other than `English`, follow the below steps.
+The NumericTextBox uses the Unicode CLDR (Common Locale Data Repository) data for formatting and parsing numbers according to different cultures. By default, the component is configured for English ('en-US') culture. To use a different culture, follow the steps below.
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
@@ -84,9 +81,9 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
   
 {% previewsample "page.domainurl/samples/numerictextbox/internationalization-cs1" %}
 
-## Right to Left(RTL)
+## Right-to-left (RTL)
 
-RTL provides an option to switch the text direction and layout of the NumericTextBox component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL NumericTextBox, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#enablertl) to true.
+The NumericTextBox supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). To enable RTL mode, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#enablertl) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

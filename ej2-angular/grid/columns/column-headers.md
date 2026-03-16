@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Headers in Angular Grid component | Syncfusion
-description: Learn here all about Headers in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid - Column Headers | Syncfusion
+description: Angular Grid column headers support header templates, tooltips, multi-line layouts, and customization options for enhanced header appearance and interactions.
 platform: ej2-angular
 control: Column headers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headers in Angular Grid component
+# Headers in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides comprehensive options to customize and manage column headers efficiently. Headers play a crucial role in organizing and presenting data effectively within the grid structure.
+Column headers in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid display the titles for each column, making it clear what data is shown. They provide context and make the grid easier to read and navigate. Headers can be customized by adjusting text alignment, applying templates, stacking multiple headers, or updating them dynamically, offering flexibility to design the grid as needed.
 
 ## Header text
 
-By default, the header text of a column in Grid displays the column's [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) value. However, the default header title can be overridden by providing custom header text using the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) property.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property of the `ColumnDirective` defines the label shown in a column’s header; when this property is not set, the column automatically displays its [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) value, so assigning header text provides a more descriptive label in place of the field name.
 
-To enable the `headerText` property, define it in the **e-column** element. The following example demonstrates how to enable header text for a Grid column.
+To enable the `headerText` property, define it in the `e-column` element. The following example demonstrates enabling header text for a Grid column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,15 +30,15 @@ To enable the `headerText` property, define it in the **e-column** element. The 
   
 {% previewsample "page.domainurl/samples/grid/grid-cs20" %}
 
->* The `headerText` property is optional. If not defined, the corresponding column's field value is set as header text for that column.  
->* The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) property can be used to apply custom HTML content to the header cell.
->* If both the `field` and `headerText` are not defined in the column, the column renders with **empty** header text.
+> * The `headerText` property is optional. If not defined, the corresponding column's field value is set as header text for that column.  
+> * The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) property can be used to apply custom HTML content to the header cell.
+> * If both the `field` and `headerText` are not defined in the column, the column renders with **empty** header text.
 
 ## Header template
 
-The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) property customizes the header element of a Grid column. This property allows rendering of custom HTML elements or Angular components within the header element, enabling enhanced functionality such as sorting or filtering controls.
+The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) property provides full control over customizing column header cells. Instead of plain text, the header can render custom HTML elements or Angular components, such as icons, styled labels, or interactive elements, to create a richer and more engaging design.
 
-In this example, custom elements are rendered for both **CustomerID** and **OrderDate** column headers.
+The following example demonstrates custom elements rendered for the "Customer ID", "Freight", and "Order Date" column headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,14 +113,14 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/header-template-cs1" %}
 
->* The `headerTemplate` property applies only to Grid columns that have a header element.
->* Any HTML or Angular component can be used in the header template to add functionality to the header element.
+> * The `headerTemplate` property applies only to Grid columns that have a header element.
+> * Any HTML or Angular component can be used in the header template to add functionality to the header element.
 
 ## Stacked header 
 
-Grid supports grouping multiple levels of column headers by stacking columns. This feature organizes Grid columns in a more structured and understandable way. This is achieved by setting the [columns->columns](https://ej2.syncfusion.com/documentation/api/grid/column/#columns) property. Within this property, define an array of column objects to group together as sub-headers under a main header. The `headerText` property of each sub-header column sets the text for that sub-header.
+Stacked headers enable hierarchical organization of column headers by grouping related columns under parent headers. This feature is useful for complex data layouts where columns need logical grouping for better readability and organization. Stacked headers are implemented using the [ColumnDirective](https://ej2.syncfusion.com/documentation/api/grid/column#columns) property to define an array of column objects as sub-headers under a main header. 
 
-The appearance of stacked header elements can be customized using the headerTemplate property. This property accepts an ng-template reference, allowing definition of custom HTML elements or Angular components for the header element. Here's an example of using stacked headers with a custom `headerTemplate` in Syncfusion Grid.
+The `headerText` property of each sub-header column sets the display text. The appearance of stacked header elements can be customized using the `headerTemplate` property, which accepts a template reference enabling definition of custom HTML elements or Angular components.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,16 +229,16 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/stacked-header-cs2" %}
 
-## Align the text of header text
+## Header text alignment
 
-The Grid component allows horizontal alignment of text in column headers using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertextalign) property. By default, the text is left-aligned, but this can be changed by setting the `headerTextAlign` property to one of the following options:
+Header text alignment improves readability and visual organization of the grid. The [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertextalign) property controls text positioning inside column headers. By default, header text is aligned to the left, but it can be changed to better match the data or design. Supported options are:
 
-* **Left**: Aligns the text to the left (default).
-* **Center**: Aligns the text to the center.
-* **Right**: Aligns the text to the right.
-* **Justify**: Header text is justified.
+* `Left`: Aligns text to the left (default).
+* `Center`: Aligns text to the center.
+* `Right`: Aligns text to the right.
+* `Justify`: Justifies header text.
 
-The following example demonstrates how to dynamically change the alignment of the header text based on DropDown selection:
+The following example demonstrates dynamically changing the alignment of the header text based on DropDown selection:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,26 +252,26 @@ The following example demonstrates how to dynamically change the alignment of th
   
 {% previewsample "page.domainurl/samples/grid/grid-cs26" %}
 
->* The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column/#textalign) property.
->* The `headerTextAlign` property also works with the stacked header feature in Syncfusion Grid, aligning the header text in sub-headers as well.
+> * The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column#textalign) property.
+> * The `headerTextAlign` property also works with the stacked header feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, aligning the header text in sub-headers as well.
 
 ## Autowrap the header text
 
-Autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. Cell content wrapping works based on the position of white space between words. To support autowrap functionality in Syncfusion Grid, set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+Header text wrapping enables proper display of lengthy column names or descriptive labels within defined column widths. When content exceeds boundary limits, automatic wrapping to multiple lines maintains readability and prevents text overflow. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports configurable text wrapping with options to wrap headers only, content only, or both, optimizing space usage without sacrificing information clarity.
 
-To enable autowrap, set the `allowTextWrap` property to **true**. Configure the auto wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property.
+To enable autowrap, set the `allowTextWrap` property to `true`. The auto wrap mode can be configured using the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings#wrapmode) property.
 
-Grid provides three options for configuration:
+Grid provides the below three options for configuring:
 
-* **Both**: This is the default value for wrapMode. Both the grid header text and content are wrapped.
-* **Header**: Only the grid header text is wrapped.
-* **Content**: Only the grid content is wrapped.
+* `Both`: This is the default value for wrapMode. With this option, both the grid header text and content is wrapped.
+* `Header`: With this option, only the grid header text is wrapped.
+* `Content`: With this option, only the grid content is wrapped.
 
->* If a column width is not specified, autowrap of columns will be adjusted with respect to the grid's width.
->* If a column's header text contains no white space, the text may not wrap.
->* If the content of a cell contains HTML tags, the autowrap functionality may not work as expected. In such cases, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
+> * If a `ColumnDirective` width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
+> * If a `ColumnDirective` header text contains no white space, the text may not be wrapped.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
 
-The following example demonstrates how to dynamically change the auto-wrap of the header text based on DropDown selection:
+In the following example, the `textWrapSettings.wrapMode` property is set to `Header` to wrap only the grid header text to the next line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -287,11 +287,11 @@ The following example demonstrates how to dynamically change the auto-wrap of th
 
 ## Change the height of header
 
-Changing the height of the header can be useful when the default height is insufficient to display the header content cell. For example, if a header contains extensive text or an image, increasing the header height may be necessary to accommodate the content. This can be achieved by changing the height of the header using CSS or by dynamically adjusting the height using methods.
+When the default header height is not sufficient to display content, it can be adjusted to fit the design requirements. This is especially useful when headers are customized with a header template that includes icons, images, or multi‑line text. Header height can be modified using CSS styles or dynamic methods, ensuring that all content is visible and the grid remains well‑organized.
 
 **Using CSS**
 
-Use CSS to override the default height of the **.e-grid .e-headercell** class to change the height of the header. Here is an example code snippet:
+Use CSS to override the default height of the `.e-grid .e-headercell` class to change the height of the header.
 
 ```css
 .e-grid .e-headercell {
@@ -301,7 +301,7 @@ Use CSS to override the default height of the **.e-grid .e-headercell** class to
 
 **Using methods**
 
-To change the height of the header dynamically, use the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadercontent) method to get the header content element of the Syncfusion Grid. Then, use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, loop through each header cell element and set its style property to adjust the height.
+To dynamically adjust the header height, use the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadercontent) method to retrieve the header content element. Then use `querySelectorAll` to access all header cell elements with the class `e-headercell` and adjust their height via the style property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,46 +315,40 @@ To change the height of the header dynamically, use the [getHeaderContent](https
   
 {% previewsample "page.domainurl/samples/grid/grid-cs28" %}
 
->* The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadertable) method can also be used to get the table element of the header and adjust the height.
->* The height of a row cannot be changed below the default height of 42px using the **e-columnheader** class.
+> * The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadertable) method can also be used to access the header table element for adjustment.
+> * The header row height cannot be reduced below the default height of "42px" using the `e-columnheader` class.
 
 ## Change header text dynamically
 
-The Syncfusion Grid component provides methods to modify the header text of a corresponding column in real-time based on events or other interactions. This feature is useful in scenarios such as displaying custom header text for a specific column or updating it dynamically based on input. Dynamic changes to the header text offer a more flexible and customizable experience.
+Dynamic header modification is essential for interactive grids where header content needs to change based on input, runtime conditions, or business logic. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component enables real-time modification of column header text through events or property accessors. This feature is particularly useful in scenarios such as localization, conditional labeling, or updating headers based on applied filters or grouping.
 
-**Using Event**
+**Using Event:**
 
-To modify the header text of a corresponding column dynamically, use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event provided by the Syncfusion Grid. This event is triggered for each header cell element rendered in the Grid.
+The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables modification of header text dynamically. This event triggers for each header cell element rendered in the Grid. When the `headerCellInfo` event triggers, it provides a `HeaderCellInfoEventArgs` object containing the following properties:
 
-When the `headerCellInfo` event is triggered, it provides a **HeaderCellInfoEventArgs** object as a parameter. This object contains the following properties:
+* `cell`: Defines the header cell that is being modified.
+* `node`: Defines the DOM element of the header cell that is being modified.
 
-* **cell**: Defines the header cell that is being modified.
-* **node**: Defines the DOM element of the header cell that is being modified.
+These properties can be used to access and modify the header text of the corresponding column. Once the header text is modified, refresh the Grid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/grid#refreshheader) method of the Grid.
 
-These properties can be used to access and modify the header text of the corresponding column. Once the header text is modified, refresh the Grid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/grid/#refreshheader) method of the Grid.
+**Using method:**
 
-**Using method**
+The Grid component provides several methods to change column header text dynamically:
 
-The Grid component provides several methods that allow dynamic changes to the column header text. Here are some of the methods available:
-
-1. [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield): This method takes a field name as a parameter and returns the entire column object that corresponds to that field name, including properties such as headerText, width, and alignment. This method can be used to modify any aspect of the column.
-
-2.	[getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyfield): Retrieves the header element of a column based on its field name. Modify the **textContent** property of the header element to change the header text. This method returns only the header element, not a reference to the column object.
-
-3.	[getColumnIndexByField](https://ej2.syncfusion.com/documentation/api/grid/#getcolumnindexbyfield): Retrieves the index of a column based on its field name. Use the `getColumnByIndex` method to retrieve the column object and modify its `headerText` property to change the header text.
-
-4.	[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyuid): Retrieves the column object based on its unique identifier. Modify the `headerText` property of the column object to change the header text.
-
-5.	[getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyindex): Retrieves the header element of a column based on its zero-based index. Modify the **textContent** property of the header element to change the header text. This method returns only the header element, not a reference to the column object.
-
-6.	[getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnindexbyuid): Retrieves the index of a column based on its unique identifier. Use the `getColumnByIndex` method to retrieve the column object and modify its `headerText` property to change the header text.
-
-7.	[getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyuid): Retrieves the header element of a column based on its unique identifier. Modify the **textContent** property of the header element to change the header text. This method returns only the header element, not a reference to the column object. If only an `ng-template` for the column header exists, and the column itself is not defined with a `field`, use the `getColumnHeaderByUid` method to get a reference to the header element and modify its text content to change the header text.
+| # | Method                          | Description                                                                                                           |
+|---|---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 1 | [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield)             | Returns the entire column object corresponding to a field name, including properties such as header text, width, and alignment. |
+| 2 | [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyfield)        | Retrieves the header element of a column by its field name. Modify the `textContent` property to change header text. This method returns only the header element reference, not the column object. |
+| 3 |  [getColumnIndexByField](https://ej2.syncfusion.com/documentation/api/grid#getcolumnindexbyfield)         | Retrieves the column index by field name. Use with `getColumnByIndex` to retrieve the column object and modify its `headerText` property. |
+| 4 | [getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyuid)               | Retrieves the column object by its unique identifier (UID). Modify the `headerText` property to change header text. |
+| 5 | [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyindex)        | Retrieves the header element by its zero-based index. Modify the `textContent` property to change header text. |
+| 6 | [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnindexbyuid)          | Retrieves the column index by unique identifier. Use with `getColumnByIndex` to modify the `headerText` property. |
+| 7 | [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyuid)         | Retrieves the header element by its unique identifier. Modify the `textContent` property to change header text. If the column has only a template without a defined field, this method provides access to the header element. |
 	
->* When changing the header text dynamically, **refresh** the Grid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshheader) method.
->* The unique identifier is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
+> * When header text is changed dynamically, the Grid must be refreshed by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method to reflect the changes.
+> * UIDs are automatically generated by the Grid component and may change when the grid is refreshed or updated.
 
-Here is an example of how to change the header text of a column using the `getColumnByField` method:
+Here is an example of changing the header text of a column using the `getColumnByField` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -368,22 +362,19 @@ Here is an example of how to change the header text of a column using the `getCo
   
 {% previewsample "page.domainurl/samples/grid/change-headertext-cs1" %}
 
-**Changing header text using headerValueAccessor property**
+**Conditional header text customization**
 
-The `headerValueAccessor` property in Syncfusion Grid allows customization of the text of a column header cell, which can be useful in scenarios where you want to change the text to display it in a different language, format, or add additional information to the header. This property is triggered every time the header cell is rendered.
+The column `headerValueAccessor` property in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables customization of column header cell text. This is useful in scenarios requiring alternate language display, specific formatting, or additional header information. This property triggers every time the header cell renders. This property accepts a callback function with two arguments:
 
-To enable the `headerValueAccessor` property, set the [headerValueAccessor](https://ej2.syncfusion.com/angular/documentation/api/grid/headervalueaccessor/) property of the corresponding column. This property accepts a callback function that takes two arguments:
+  * `field`: Represents the current field of the column.
+  * `column`: Represents the current column object.
 
-  * **field**: Represents the current field of the column.
-  * **column**: Represents the current column object.
-
->* The `headerValueAccessor` property should only be used to change the text of the header and not to perform any DOM-oriented operations such as adding or manipulating DOM elements in the header. In such cases, use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event instead.
->* The `headerValueAccessor` property is triggered every time the header cell is rendered or refreshed.
->* The callback function defined for the `headerValueAccessor` property should return a string that represents the new text of the column header.
->* To refresh only the column header, dynamically change the header content using the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshheader) method.
->* This property can be used for individual columns or for all columns by adding it to the grid's properties.
+> * Use `headerValueAccessor` only to modify header text; avoid DOM operations such as adding or manipulating elements. Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event for DOM-related customizations.
+> * The callback function should return a string representing the new header text.
+> * The [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method can be used to refresh only the column header after dynamically changing the header content.
+> * This property can be applied to individual columns or for all columns by adding it to the grid's properties.
   
-Here's an example of how to use the `headerValueAccessor` property to change the header text of a column:
+Here's an example of using the `headerValueAccessor` property to change the header text of a column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -399,7 +390,7 @@ Here's an example of how to use the `headerValueAccessor` property to change the
 
 **Changing the header text of all columns**
 
-To change the header text of all columns in the grid, loop through the Columns collection of the grid and set the `headerText` property for each column. Here is an example:
+To change header text for all columns, loop through the columns collection and set the `headerText` property for each column.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -415,13 +406,13 @@ To change the header text of all columns in the grid, loop through the Columns c
 
 ## Change the orientation of header text
 
-By default, the text in the column headers of the Syncfusion Grid control is oriented horizontally. However, in some cases, changing the orientation of the header text to vertical, diagonal, or at a custom angle may be desired. This can be achieved by adding a custom CSS class to the column header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property of the Grid columns.
+By default, column header text in the Grid is oriented horizontally. In data visualization scenarios—especially grids with many columns where horizontal headers consume excessive space—rotating the header text vertically, diagonally, or at a custom angle optimizes layout and enhances visual hierarchy and readability. This can be achieved by applying a custom CSS class to the header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property, then defining CSS transformations.
 
-Follow the steps below to change the orientation of the header text in Grid:
+Follow these steps to change header text orientation in Grid:
 
-**Step 1**: **Create a CSS class with orientation style for grid header cell**
+**Step 1: Create a CSS class with orientation style for grid header cell**
 
-To `rotate` the header text, create a CSS class with the `transform` property that rotates the header text 90 degrees. This class will be added to the header cell using the `customAttributes` property.
+Create a CSS class with the `transform` property to rotate header text "90" degrees. This class will be applied to the header cell using the `customAttributes` property.
 
 ```css
 .orientation .e-headercelldiv {
@@ -429,19 +420,19 @@ To `rotate` the header text, create a CSS class with the `transform` property th
 }
 ```
 
-**Step 2**: **Add the custom CSS class to the grid column**
+**Step 2: Add the custom CSS class to the grid column**
 
-Once the CSS class is created, add it to the particular column by using the `customAttributes` property. This property allows addition of any custom attribute to the grid column.
+Add the custom CSS class to a column using the `customAttributes` property. 
 
-For example, to add the orientation class to the Freight column, use the following code:
+For example, to add the "orientationcss" class to the "Freight" column:
 
 ```typescript
 <e-column field='Freight' headerText='Freight' textAlign='Center' format='C2' [customAttributes]='customAttributes' width=80></e-column>
 ```
 
-**Step 3**: **Resize the header cell height**
+**Step 3: Resize the header cell height**
 
-After adding the custom CSS class to a column, resize the header cell height so that the rotated header text is fully visible. This can be done using the following code:
+After adding the custom CSS class to a column, resize the header cell height to ensure the rotated header text displays fully using the following code:
 
 ```typescript
 setHeaderHeight(args) {
@@ -454,7 +445,7 @@ setHeaderHeight(args) {
 
 ```
 
-The following example demonstrates how to change the orientation of the **Freight** column header text to 90 degrees:
+The following example demonstrates changing the orientation of the "Freight" column header text to 90 degrees:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -470,13 +461,13 @@ The following example demonstrates how to change the orientation of the **Freigh
 
 ## Translate header text using ngx-translate 
 
-The ngx-translate library provides **internationalization (i18n)** and **localization (l10n)** support for Angular applications. With ngx-translate, Angular applications can be easily translated into multiple languages.
+The ngx-translate library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With ngx-translate, Angular applications can be easily translated into multiple languages.
 
-In the context of the Syncfusion Angular Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
+In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
 
 ### Through header text  
 
-To translate the header text of the Grid's columns using **ngx-translate** through header text, use the **translate** pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) property.
+To translate the header text of the Grid's columns using `gx-translate` through header text, use the `translate` pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
@@ -572,7 +563,7 @@ export class AppComponent {
 {% endtabs %}
 
 
-**Step 3**: Import the **TranslateModule** and **TranslateLoader** in the app.module.ts file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
+**Step 3**: Import the `TranslateModule` and `TranslateLoader` in the app.module.ts file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
 
 ```ts
 
@@ -614,7 +605,7 @@ export class AppModule {}
 
 ```
 
-In the above code, the required modules are imported and a function called **HttpLoaderFactory** is defined that returns an instance of **TranslateHttpLoader**, which is used to load translation files.
+In the above code, the required modules are imported and a function called `HttpLoaderFactory` is defined that returns an instance of `TranslateHttpLoader`, which is used to load translation files.
 
 **Step 4**: Add the json file with the translation text in the required languages:
 
@@ -655,11 +646,11 @@ The following screenshot represents the translation of the header text of a Sync
 
 ### Through header template
 
-To translate the header text of the Grid's columns using **ngx-translate** through header template, use the **translate** pipe in the header templates of the Grid component.
+To translate the header text of the Grid's columns using `ngx-translate` through header template, use the `translate` pipe in the header templates of the Grid component.
 
 Here are the steps to use ngx-translate pipe for Grid's header template in Angular Grid component:
 
-**Step 1**: Create and Configure the TranslateService
+**Step 1**: Create and Configure the `TranslateService`
 
 ````typescript
 import { Component, ViewChild } from '@angular/core';
@@ -713,7 +704,7 @@ export class AppComponent {
 
 ````
 
-**Step 2**: Use the ngx-translate pipe in Angular Grid component header templates to translate the headers dynamically.
+**Step 2**: Use the `ngx-translate` pipe in Angular Grid component header templates to translate the headers dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.html" %}
@@ -829,17 +820,17 @@ de.json {
 
 ```
 
-The following screenshot represents the translation of the header text of a Syncfusion Angular Grid component to multiple languages using ngx-translate:
+The following screenshot represents the translation of the header text of a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component to multiple languages using ngx-translate:
 
 ![ng-translate-headerTemplate](../images/ng-translate-headerTemplate.gif)
 
 ## Custom tooltip for header
 
-Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion Grid. This can be useful in situations where there is insufficient space to display all information related to a column, or when additional context may be helpful.
+Tooltips in headers provide contextual information that helps understand the purpose or content of each column without cluttering the UI. Custom tooltips for headers display additional information when hovering over column headers in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, particularly useful when space limitations prevent full descriptions in headers or when additional column metadata needs to be communicated.
 
-To enable custom tooltips for headers, use the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeRender) event of the Grid component. This event is triggered for each header cell before it is rendered, allowing addition of a custom tooltip to the header cell using the [tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/content) component.
+Custom tooltips can be enabled using the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeRender) event of the Grid component. This event triggers before each header cell renders, enabling addition of a custom tooltip using the [tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/content) component.
 
-Here's an example of how to use the `beforeRender` event to add a custom tooltip to a header cell:
+Here's an example of using the `beforeRender` event to add a custom tooltip to a header cell:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -853,15 +844,15 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
   
 {% previewsample "page.domainurl/samples/grid/grid-cs27" %}
 
-> * The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+> The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
 ## Customize header text styles 
 
-Customizing the grid header styles allows modification of the appearance of the column header in the Grid control to meet design requirements. The font, background color, and other styles of the header cells can be customized. To customize the header styles in the grid, use CSS, properties, methods, or event support provided by the Syncfusion Angular Grid component.
+Header styling enables visual distinction and emphasizes important columns or data categories within the grid. Customizing header appearance through font, background color, and other styles meets specific design requirements and improves information hierarchy. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides multiple approaches for header customization through CSS, properties, methods, or event-based styling.
 
 ### Using CSS
 
-Styles can be applied to the header cells using CSS selectors. The Grid provides a class name for each header cell element, which can be used to apply styles to that specific header cell. The **.e-headercell** class can be used to change the background color and text color of the column header.
+Styles can be applied to header cells using CSS selectors. The Grid assigns the `.e-headercell` class to each header cell element, which can be used to change the background color and text color of column headers.
 
 ```CSS
   .e-grid .e-headercell {
@@ -869,7 +860,7 @@ Styles can be applied to the header cells using CSS selectors. The Grid provides
     color:rgb(3, 2, 2);
   }
 ```
-Here's an example that demonstrates how to customize the appearance of a column header in the Grid using **className**:
+Here's an example that demonstrates customizing the appearance of a column header in the Grid using **className**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -885,11 +876,11 @@ Here's an example that demonstrates how to customize the appearance of a column 
 
 ### Using property 
 
-The appearance of the column headers in Grid can be customized using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid header cells. Multiple CSS properties can also be set to the custom class using the `customAttributes` property.
+Column header appearance in Grid can be customized using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property. This property accepts an object with name-value pairs to customize CSS properties for grid header cells. Multiple CSS properties can be set to the custom class using the `customAttributes` property.
 
-To customize the header of a column, follow the steps below:
+To customize column headers, follow these steps:
 
-Step 1: Define a CSS class that specifies the styles to apply to the header cell of the column. For example, to change the background color and text color of the header cell, define a CSS class like this:
+**Step 1:** Define a CSS class specifying the desired styles for header cells.
 
   ```CSS
     .e-grid .e-headercell.custom {
@@ -899,7 +890,7 @@ Step 1: Define a CSS class that specifies the styles to apply to the header cell
 
   ```
 
-Step 2: Set the **customAttributes** property of the desired column to an object that contains the CSS class **custom**. This CSS class will be applied to the header cell of the specified column in the Grid.
+**Step 2:** Set the `customAttributes` property of the column to an object containing the CSS class "customcss". This class will be applied to the column's header cell.
 
   ```ts
 
@@ -907,7 +898,7 @@ Step 2: Set the **customAttributes** property of the desired column to an object
 
   ```
 
-The following example demonstrates how to customize the appearance of the **OrderID** and **OrderDate** columns using custom attributes:
+The following example demonstrates customizing the appearance of the "OrderID" and "OrderDate" columns using custom attributes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -923,18 +914,17 @@ The following example demonstrates how to customize the appearance of the **Orde
 
 ### Using method 
 
-The Syncfusion Grid provides methods to customize the appearance of the grid column headers:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides methods to customize column header appearance:
 
-1. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyindex): This method customizes the appearance of a specific column header in the grid by specifying the index of the column for which to customize the header.
+| # | Method | Description |
+|---|--------|-------------|
+| 1 | [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyindex) | Customizes a specific column header by specifying the column index. |
+| 2 | [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyfield) | Retrieves the header element by field name to customize its appearance. |
+| 3 | [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyuid) | Retrieves the header element by unique ID to customize its appearance. |
+| 4 | [getColumnIndexByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnindexbyfield) | Retrieves the column index by field name to access and customize the header element. |
+| 5 | [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnindexbyuid) | Retrieves the column index by unique ID to access and customize the header element. |
 
-2. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyfield): This method retrieves the header element of a specific column by its field name. The retrieved element can be used to customize the appearance of the header element.
-3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyuid): This method retrieves the header element of a specific column by its unique ID. The retrieved element can be used to customize the appearance of the header element.
-
- 4. [getColumnIndexByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnindexbyfield): This method retrieves the index of a specific column by its field name. The retrieved index can be used to access the header element and customize its appearance.
-
- 5. [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnindexbyuid): This method retrieves the index of a specific column by its unique ID. The retrieved index can be used to access the header element and customize its appearance.
-
-Here's an example of how to use these methods to change the style of a specific column header:
+Here's an example of using these methods to change the style of a specific column header:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -948,13 +938,13 @@ Here's an example of how to use these methods to change the style of a specific 
   
 {% previewsample "page.domainurl/samples/grid/header-method-cs2" %}
 
->* The unique identifier is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
+> The UID is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
 
 ### Using event
 
-To customize the appearance of the grid header, handle the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. This object can be used to modify the styles of the header column.
+To customize the appearance of the grid header, handle the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. This object can be used to modify the styles of the header column.
 
-The following example demonstrates how to add a `headerCellInfo` event handler to the grid. In the event handler, it checks whether the current header column is the **Order Date** field and then applies the appropriate CSS class to the cell based on its value:
+The following example demonstrates adding a `headerCellInfo` event handler to the grid. In the event handler, it checks whether the current header column is the "Order Date" field and then applies the appropriate CSS class to the cell based on its value:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -968,13 +958,11 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
   
 {% previewsample "page.domainurl/samples/grid/header-style-cs3" %}
 
-## How to refresh header 
+## Refresh header 
 
-The refresh header feature in the Syncfusion Angular Grid allows updating of the header section of the grid whenever changes are made to the grid's columns. This feature is useful when reflecting changes in the header immediately, such as modifying the column header text, width, or alignment.
+Header refresh functionality enables synchronization between the visual display and underlying column definitions. Whenever column properties are programmatically modified (such as header text, width, or alignment), refreshing the header ensures the UI reflects all changes immediately. The [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshheader) method provides a lightweight approach to update only the header section without reloading the entire grid.
 
-To use the refresh header feature, call the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshheader) method of the Grid component. This method updates the grid header with the latest changes made to the columns.
-
-The following example demonstrates how to use the `refreshHeader` method to update the grid header:
+The following example demonstrates using the `refreshHeader` method to update the grid header:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -988,39 +976,19 @@ The following example demonstrates how to use the `refreshHeader` method to upda
   
 {% previewsample "page.domainurl/samples/grid/refresh-header-cs1" %}
 
->* The `refreshHeader` method updates only the grid header and not the entire grid.
->* To refresh the entire grid, use the `refresh` method instead.
+> * The `refreshHeader` method updates only the grid header and not the entire grid.
+> * To refresh the entire grid, use the `refresh` method instead.
 
-## How to get header element 
+## Get header element 
 
-To get the header element in a Syncfusion Grid, use one of the following methods:
+Accessing header elements programmatically is necessary for advanced customizations, styling, or interaction handling that go beyond built-in configuration options. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides multiple methods to retrieve specific header elements by various identifiers, enabling direct DOM manipulation or reading header metadata.
 
-1. [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadercontent): This method returns the header div element of the Grid. This method can be used to access the entire header content of the Grid.
+| # | Method | Description | Example |
+|---|--------|-------------|---------|
+| 1 | [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadercontent) | Returns the header div element of the Grid, providing access to the entire header content. | `const headerElement = grid.getHeaderContent();` |
+| 2 | [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadertable) | Returns the header table element of the Grid, providing access only to the header table. | `const headerTableElement = grid.getHeaderTable();` |
+| 3 | [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnindexbyuid) | Returns the column header element by its unique identifier. | `const columnHeaderElement = grid.getColumnHeaderByUid("e-grid2");` |
+| 4 | [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyindex) | Returns the column header element by its index. | `const columnHeaderElement = grid.getColumnHeaderByIndex(0);` |
+| 5 | [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnheaderbyfield) | Returns the column header element by its field name. | `const columnHeaderElement = grid.getColumnHeaderByField("OrderID");` |
 
-    ```ts
-    const headerElement = this.grid.getHeaderContent();    
-    ```
-2. [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadertable): This method returns the header table element of the Grid. This method can be used to access only the header table of the Grid.
-
-   ```ts
-    const headerTableElement = grid.getHeaderTable();
-   ```
-
-3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnindexbyuid): This method returns the column header element by its unique identifier.
-
-   ```ts
-    const columnHeaderElement = grid.getColumnHeaderByUid("e-grid2");
-   ```
-
-4. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyindex): This method returns the column header element by its index.
-
-   ```ts
-    const columnHeaderElement = grid.getColumnHeaderByIndex(0);
-   ```
-5. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyfield): This method returns the column header element by its field name.
-
-   ```ts
-    const columnHeaderElement = grid.getColumnHeaderByField("OrderID"); 
-   ```
-
->* The unique identifier is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
+> The UID is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.

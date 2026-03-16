@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position the dialog on center of the page on scrolling in Angular Dialog component
+# Position the dialog at center when scrolling in Angular Dialog component
 
-By default, when scroll the page/container Dialog also scrolled along with the page/container.
-When a user expects to display the Dialog in the same position without scrolling achieving this in sample level as like below. Here added 'e-fixed' class to Dialog element and prevent the scrolling.
+By default, the dialog scrolls along with the page or container. To keep the dialog in a fixed position without scrolling, add the `e-fixed` class to the dialog element and prevent scrolling as shown in the sample below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

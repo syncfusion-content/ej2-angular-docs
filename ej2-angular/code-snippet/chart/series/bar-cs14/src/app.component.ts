@@ -72,9 +72,9 @@ export class AppComponent implements OnInit {
             }
         };
         this.border = {
-            width: 2, 
-            color: '#ff4251', 
-            dashArray: '2,5' 
+            width: 2,
+            color: '#ff4251',
+            dashArray: '2,5'
         };
     }
 }

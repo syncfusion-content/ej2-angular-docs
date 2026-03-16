@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
 import { ChartComponent, SplineSeriesService, CategoryService, LegendService, DataLabelService } from '@syncfusion/ej2-angular-charts';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { Component, OnInit, ViewChild  } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({
 imports: [
          ChartModule, ButtonModule
@@ -41,25 +38,25 @@ export class AppComponent implements OnInit {
     public chartArea?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
-            valueType: 'Category', 
-            enableTrim: false, 
-            majorTickLines: { width: 0 }, 
+            valueType: 'Category',
+            enableTrim: false,
+            majorTickLines: { width: 0 },
             majorGridLines: { width: 0 }
         };
         this.primaryYAxis = {
-            minimum: 0, 
-            maximum: 800, 
-            labelFormat: '{value}M', 
+            minimum: 0,
+            maximum: 800,
+            labelFormat: '{value}M',
             edgeLabelPlacement: 'Shift'
         };
         this.title = 'Internet Users - 2016';
-        this.marker = { 
-            visible: true, 
-            dataLabel: { 
-                visible: true, 
-                position: 'Top', 
-                font: { fontWeight: '600' } 
-            } 
+        this.marker = {
+            visible: true,
+            dataLabel: {
+                visible: true,
+                position: 'Top',
+                font: { fontWeight: '600' }
+            }
         };
         this.legendSettings = { visible: false };
         this.chartArea = {
@@ -71,8 +68,6 @@ export class AppComponent implements OnInit {
             if (typeof this.chart.series[0].addPoint === 'function') {
             this.chart?.series[0].addPoint({ x: 'Japan', y: 118.2 });
             }
-        } 
+        }
     }
 }
-
-

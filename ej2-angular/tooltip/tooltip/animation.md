@@ -10,14 +10,13 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Tooltip component
 
-To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property. The animation property also allows you to set delay, duration, and various other effects of your choice.
+Animate the tooltip using specific animation effects controlled by the `animation` property. Set the delay, duration, and various animation effects of your choice.
 
-[`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel) is derived from base to apply the chosen animation effect, duration, etc. on Tooltips.
+[`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel) applies the chosen animation effect and duration to tooltips.
 
-By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing function. It exits also at 150 ms, but uses `ease-in` timing function.
+By default, the tooltip entrance occurs over 150 ms using the `ease-out` timing function and exits at 150 ms using the `ease-in` timing function.
 
-The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action.
-The default `duration` is set to 150 ms and `delay` is set to 0.
+The default animation effects are `FadeIn` for opening and `FadeOut` for closing. The default `duration` is 150 ms and `delay` is 0.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,7 +32,7 @@ The default `duration` is set to 150 ms and `delay` is set to 0.
 
 ## Animation effects
 
-The animation effects that are applicable to Tooltips are:
+The following animation effects are available for tooltips:
 
 * FadeIn
 * FadeOut
@@ -51,16 +50,15 @@ The animation effects that are applicable to Tooltips are:
 * ZoomOut
 * None
 
-When the `effect` is specified as `none`, no effect will be applied to the Tooltip, and animation is considered to be set to `off`.
+When `effect` is set to `none`, no animation is applied to the tooltip.
 
-> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
-> This can be achieved by setting the `showTipPointer` to false.
+> Some animation effects work better when the tip pointer is hidden. Set `showTipPointer` to `false` to hide it.
 
 ## Animating via open/close methods
 
-Animations can also be applied on Tooltips dynamically through `open` and `close` methods. These methods accept the animation model as an optional parameter. If you pass `TooltipAnimationSettings`, animation takes this model; otherwise, it takes the values from the `animation` property. It is also possible to pass different animations for Tooltips on each target.
+Apply animations dynamically to tooltips using the `open` and `close` methods. These methods accept the animation model as an optional parameter. If you pass `TooltipAnimationSettings`, that model is used; otherwise, the values from the `animation` property are used. You can apply different animations to tooltips on each target.
 
-Refer to the code snippet below to apply animations using public methods.
+Refer to the following code snippet to apply animations using public methods:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +74,7 @@ Refer to the code snippet below to apply animations using public methods.
 
 ## Apply transition
 
-The transition effect can be applied on Tooltips by using the `beforeOpen` event as given in the  following work-around code example.
+Apply transition effects to tooltips using the `beforeOpen` event as shown in the following code example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

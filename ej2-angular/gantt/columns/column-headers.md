@@ -18,7 +18,63 @@ By default, column headers in the Gantt chart display the value defined in the [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs1/src/app.component.ts %}
+{% raw %}
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { GanttData } from './data';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [GanttModule],
+  template: `<ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
+    <e-columns>
+        <e-column field="TaskName" width="290">
+            <ng-template #headerTemplate let-column>
+                {{ column.headerText }}
+                <div>
+                    <img src="assets/images/TaskName.png" width="20" height="20" />
+                </div>
+            </ng-template>
+        </e-column>
+        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right">
+        </e-column>
+        <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
+            <ng-template #headerTemplate let-column>
+                {{ column.headerText }}
+                <div>
+                    <img src="assets/images/Duration.png" width="20" height="20">
+                </div>
+            </ng-template>
+        </e-column>
+        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
+        </e-column>
+    </e-columns>
+</ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None
+})
+
+export class AppComponent implements OnInit {
+  public data?: object[];
+  public taskSettings?: object;
+  public splitterSettings?: object;
+
+  ngOnInit(): void {
+    this.data = GanttData;
+    this.taskSettings = {
+      id: 'TaskID',
+      name: 'TaskName',
+      startDate: 'StartDate',
+      duration: 'Duration',
+      progress: 'Progress',
+      child: 'subtasks'
+    };
+    this.splitterSettings = {
+      position: '75%'
+    };
+  }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

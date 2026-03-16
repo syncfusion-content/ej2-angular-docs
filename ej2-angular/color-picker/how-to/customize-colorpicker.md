@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Custom palette
 
-By default, the Palette will be rendered with default colors. To load custom colors in the palette, specify the colors in the [`presetColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#presetcolors) property. To customize the color palette, add a custom class to palette tiles using [`BeforeTileRender`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#beforetilerender) event.
+By default, the ColorPicker palette displays a set of predefined colors. To load custom colors, specify them in the [`presetColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#presetcolors) property. To apply custom styling to palette tiles, use the [`BeforeTileRender`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#beforetilerender) event to add custom CSS classes.
 
 The following sample demonstrates the above functionalities.
 
@@ -48,7 +48,7 @@ In the following sample, the ColorPicker is rendered without input area.
 
 ## Custom handle
 
-Color picker handle shape and UI can be customized. Here, we have customized the handle as `svg icon`. The same way you can customize the handle based on your requirement.
+The ColorPicker handle shape and appearance can be customized using CSS or custom SVG elements. In the following sample, the handle is styled with an SVG icon. The same approach can be applied to create other custom handle designs based on specific requirements.
 
 The following sample show the customized color picker handle.
 
@@ -66,9 +66,9 @@ The following sample show the customized color picker handle.
 
 ## Custom primary button
 
-By default, the applied color will be updated in primary button of the color picker. You can customize that as `icon`.
+By default, the ColorPicker's primary button displays the selected color. You can customize the button to display an icon instead.
 
-In the following sample, the `picker` icon is added to primary button and using [`change`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#change) event the selected color will be updated in bottom portion of the icon.
+In the following sample, a picker icon is added to the primary button. The [`change`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#change) event updates the selected color in the bottom portion of the icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,7 +86,7 @@ In the following sample, the `picker` icon is added to primary button and using 
 
 ## Display hex code in input
 
-The color picker input element can be showcased in the place of primary button. The applied color hex code will be updated in the primary button input.
+The ColorPicker's input element can be displayed in place of the primary button, allowing direct visualization of the selected color's hex code. The input automatically updates with the applied color value.
 
 The following sample shows the color picker with input.
 
@@ -104,7 +104,7 @@ The following sample shows the color picker with input.
 
 ## Custom UI
 
-The color picker UI can be customized in all possible ways. The following sample shows the excel like UI customization with help of SplitButton and Dialog component. In that by clicking the more colors option from color palette, the dialog contains color picker will open.
+The ColorPicker UI can be customized extensively to match specific design requirements. The following sample demonstrates an Excel-like UI customization using the SplitButton and Dialog components. When the "More colors" option is selected from the palette, a dialog opens with the ColorPicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

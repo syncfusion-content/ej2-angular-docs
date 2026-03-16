@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Tooltip component
 
-To animate the Tooltip, a set of specific animation effects is available, and it can be controlled using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#animation) property. The **animation** property also allows you to set the delay, the duration, and various other effects of your choice.
+Animate the Tooltip using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#animation) property to control specific animation effects. This property allows you to set the delay, duration, and various other effects.
 
-The [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel) is derived from base to apply the chosen animation effect, duration, etc. on Tooltips.
+The [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel) applies the chosen animation effect, duration, and other settings to tooltips.
 
-By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing function. It exits also at 150 ms, but uses `ease-in` timing function.
-
-The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action.The default `duration` is set to 150 ms and `delay` is set to 0.
+By default, the tooltip enters over 150 ms using the `ease-out` timing function and exits at 150 ms using the `ease-in` timing function. The default animation effect is `FadeIn` for open actions and `FadeOut` for close actions, with a duration of 150 ms and delay of 0.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,16 +48,15 @@ The animation effects that are applicable to Tooltips are:
 * ZoomOut
 * None
 
-When the [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipAnimationSettings/#effect) is specified as `none`, no effect will be applied to the Tooltip, and the animation will be considered to be turned `off`.
+When the [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipAnimationSettings/#effect) is set to `none`, no animation is applied to the tooltip.
 
-> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
-> This can be achieved by setting the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) to false.
+> Some animation effects work better when the tooltip tip pointer is hidden. Achieve this by setting [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) to `false`.
 
 ## Animating via open/close methods
 
-Animations can also be applied on Tooltips dynamically through [`open`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#open) and[ `close`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#close) methods. These methods accept the animation model as an optional parameter. If you pass [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipAnimationSettings/#tooltipanimationsettings), the animation uses this model; otherwise, it uses the values from the `animation` property. It is also possible to pass different animations for Tooltips on each target.
+Apply animations dynamically using the [`open`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#open) and [`close`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#close) methods. These methods accept an optional animation model parameter. If you pass [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipAnimationSettings/#tooltipanimationsettings), it uses this model; otherwise, it uses values from the `animation` property. You can apply different animations to tooltips on each target.
 
-Refer to the code snippet below to apply animations using public methods.
+The following code snippet demonstrates applying animations using these methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api effect in Angular Tooltip component
+# API effect in Angular Tooltip component
 
 Animation effects that are applicable for Tooltip.
 * FadeIn
