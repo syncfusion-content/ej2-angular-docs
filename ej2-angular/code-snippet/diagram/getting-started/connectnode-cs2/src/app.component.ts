@@ -7,10 +7,13 @@ import {
 } from "@syncfusion/ej2-angular-diagrams";
 
 @Component({
-  imports: [DiagramModule],
-  providers: [],
-  standalone: true,
-  selector: "app-root",
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
+  selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
     <e-nodes>
         <e-node id='node1' [offsetX]=300 [offsetY]=50 [shape]='terminator'>
@@ -32,7 +35,7 @@ import {
 </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
-export class App {
+export class AppComponent {
   @ViewChild("diagram")
   public diagram?: DiagramComponent;
   public terminator?: FlowShapeModel;
@@ -41,7 +44,7 @@ export class App {
   public nodeDefaults(node: NodeModel): NodeModel {
     node.height = 50;
     node.width = 140;
-    node.style = { fill: 'skyblue', strokeColor: 'skyblue' };
+    node.style = {fill:'skyblue', strokeColor: 'skyblue'};
     return node;
   }
 

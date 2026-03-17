@@ -1,4 +1,4 @@
-import { ConnectorModel, DataBinding, DataSourceModel, Diagram, DiagramComponent, DiagramModule, HierarchicalTree, LayoutModel, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams'
+import { ConnectorModel, DataBinding, DataSourceModel, Diagram, DiagramComponent, DiagramModule,HierarchicalTree,LayoutModel, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 import { DataManager } from "@syncfusion/ej2-data";
 export interface EmployeeInfo {
@@ -6,22 +6,24 @@ export interface EmployeeInfo {
   Role: string;
   color: string;
 }
-Diagram.Inject(DataBinding, HierarchicalTree);
+Diagram.Inject(DataBinding,HierarchicalTree);
 @Component({
-  imports: [DiagramModule],
-  standalone: true,
-  selector: "app-root",
+imports: [
+         DiagramModule
+    ],
+standalone: true,
+  selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [layout]='layout' [dataSourceSettings]='dataSourceSettings' [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
 </ejs-diagram>`
 })
-export class App {
+export class AppComponent {
   @ViewChild("diagram")
   public diagram?: DiagramComponent;
   public data: Object[] = [
     {
       Name: "Elizabeth",
       Role: "Director",
-      ReportingPerson: null
+      ReportingPerson:null
     },
     {
       Name: "Christina",
@@ -66,7 +68,7 @@ export class App {
   };
 
   public layout: LayoutModel = {
-    type: 'OrganizationalChart'
+    type:'OrganizationalChart'
   };
   public nodeDefaults(node: NodeModel): NodeModel {
     let codes: Object = {

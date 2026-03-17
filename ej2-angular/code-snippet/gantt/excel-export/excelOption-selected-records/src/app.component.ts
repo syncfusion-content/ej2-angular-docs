@@ -3,7 +3,6 @@ import { GanttModule, GanttComponent, ToolbarItem, ToolbarService, ExcelExportSe
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   imports: [GanttModule],

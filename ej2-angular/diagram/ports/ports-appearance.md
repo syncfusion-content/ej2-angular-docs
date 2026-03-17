@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-Ports serve as connection points on diagram nodes where connectors can be attached. The appearance of ports can be customized using the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#strokewidth), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#fill) and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#opacity) properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#height) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility) property allows you to define when the port should be visible.
+Ports serve as connection points on diagram nodes where connectors can be attached. The appearance of ports can be customized using the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokecolor/), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokewidth/), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#fill/) and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#opacity/) properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#width/) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#height/) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility/) property allows you to define when the port should be visible.
 
 For more information about port visibility, refer to the [Port Visibility](#port-visibility) section below.
 
@@ -48,7 +48,7 @@ The appearance of port can be changed at runtime by customizing the style proper
 
 ## Port visibility
 
-The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portvisibility) enum. This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
+The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portVisibility/) enum. This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
 
 | Property | Definition | Use Case |
 |----|----|----|
@@ -59,7 +59,7 @@ The visibility of the ports is determined by the [`visibility`](https://ej2.sync
 
 ## Port shape 
 
-The shape of port can be changed by using its shape property. To explore the different types of port shapes, refer to [`Port Shapes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portshapes). By default the port shape is `Square`. Different shapes help distinguish between different types of connections or data flow directions.
+The shape of port can be changed by using its shape property. To explore the different types of port shapes, refer to [`Port Shapes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portShapes/). By default the port shape is `Square`. Different shapes help distinguish between different types of connections or data flow directions.
 
 ### Types of port shapes
 
@@ -74,7 +74,7 @@ The following basic built-in `PortShapes` are available for ports:
 
 Custom shape support has been provided for port. You can add custom path data instead of built-in shapes when you need specific visual indicators that match your application's design requirements or represent particular data types. 
 
-If you need to render a custom shape, then you can set shape as `Custom` and define path using [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointportmodel#pathdata) property of port.
+If you need to render a custom shape, then you can set shape as `Custom` and define path using [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointPortModel/#pathdata) property of port.
 
 The following code illustrates how to set custom shape to the port.
 
@@ -92,7 +92,7 @@ The following code illustrates how to set custom shape to the port.
 
 ## Constraints
 
-The constraints property allows you to enable or disable certain behaviors of ports, providing fine-grained control over port functionality. For more information about port constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portconstraints).
+The constraints property allows you to enable or disable certain behaviors of ports, providing fine-grained control over port functionality. For more information about port constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/).
 
 The PortConstraints may have multiple behaviors as listed below:
 

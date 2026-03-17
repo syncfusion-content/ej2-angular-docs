@@ -95,6 +95,9 @@ export class AppComponent {
     }
     
     public onElementDraw(args: IElementDrawEventArgs): void {
+        if (args.state === 'Start' && args.source instanceof Connector) {
+          args.cancel = true; // Prevents connector drawing from connector port
+        }
         // customize as needed
         console.log('Element draw event');
     }
