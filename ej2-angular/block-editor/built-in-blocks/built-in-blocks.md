@@ -38,6 +38,8 @@ The Block Editor supports multiple block types, each offering different formatti
 | Image                                   | Block for displaying images.                                                |
 | Template                                | Renders custom content using predefined templates, allowing for user-defined block structures. |
 
+> For blocks such as `code`, `callout`, `table`, `image`, and `collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
+
 ## Configure indent
 
 You can specify the indentation level of a block using the [indent](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.

@@ -67,7 +67,7 @@ The required CSS files are available in the `../node_modules/@syncfusion` packag
 
 ## Adding Inline AI Assist component
 
-Modify the template in the `src/app/app.component.ts` file to render the Angular Inline AI Assist component. Add the component by applying the `ejs-inlineaiassist` attribute directive to a `div` element within the `template` section of the `app.component.ts` file.
+Modify the template in the `src/app/app.component.ts` file to render the Angular Inline AI Assist component. Add the component by using the tags within the `template` section of the `app.component.ts` file.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -78,8 +78,7 @@ import { InlineAIAssistModule } from '@syncfusion/ej2-angular-interactive-chat';
     standalone: true,
     selector: 'app-root',
     template: `
-      <input id="messageInput" placeholder="Type a message..." />
-      <div ejs-inlineaiassist id='inlineAssist'></div>
+      <ejs-inlineaiassist id='inlineAssist'></ejs-inlineaiassist>
     `
 })
 export class AppComponent  { }
@@ -125,7 +124,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 
 ## Configure target property
 
-You can use the `target` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
+The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,7 +140,7 @@ You can use the `target` property to position the Inline AI Assist relative to a
 
 ## Response display modes
 
-The Inline AI Assist supports two response display modes: `Inline` (renders responses at the caret position) and `Popup` (shows responses in a popup near the prompt). Choose `Inline` for in-context editing and `Popup` when you prefer a detached response view. The component exposes a `responseMode` property so you can switch modes at runtime.
+Responses can be shown in two modes: `Inline` (updates content in-place) and `Popup` (shows responses in a floating popup). Toggle this behavior with the `responseMode` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
